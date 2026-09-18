@@ -1,19 +1,21 @@
 "use client";
 
-import { ArrowUpRight, Plus, UserCircle } from "lucide-react";
+import { ArrowUpRight, Link2, Plus, UserCircle } from "lucide-react";
 import type { Character, Scene } from "@/lib/types";
 import { CastAvatar, RelationChips } from "./relations";
+import { relatedCast } from "@/lib/relations";
 
-export function CharactersView({ project, characters, scenes, onEdit, onAdd }: { project: { title: string; format: string }; characters: Character[]; scenes: Scene[]; onEdit: (c: Character) => void; onAdd?: () => void }) {
+export function CharactersView({ project, characters, scenes, onEdit, onAdd, onRelate }: { project: { title: string; format: string }; characters: Character[]; scenes: Scene[]; onEdit: (c: Character) => void; onAdd?: () => void; onRelate?: () => void }) {
   const getScenePresence = (charId: string) => scenes.filter(s => s.characters?.includes(charId)).length;
-  return <section className="view-enter"><div className="section-heading"><div><div className="section-title-row"><h2>The Cast</h2><span className="count-badge">{characters.length}</span></div><p>The people who make this film matter.</p></div>{onAdd && <button className="button button-primary" onClick={onAdd}><Plus size={16} />Add character</button>}</div>
+  const links = characters.reduce((sum, character) => sum + relatedCast(character.id, characters).length, 0) / 2;
+  return <section className="view-enter"><div className="section-heading"><div><div className="section-title-row"><h2>The Cast</h2><span className="count-badge">{characters.length}</span></div><p>The people who make this film matter.</p></div><div className="section-actions">{onRelate && characters.length > 1 && <button className="button" onClick={onRelate}><Link2 size={15} />Relationships{links ? ` · ${links}` : ""}</button>}{onAdd && <button className="button button-primary" onClick={onAdd}><Plus size={16} />Add character</button>}</div></div>
     {characters.length === 0 ? (
       <div className="empty-state"><span className="empty-icon"><UserCircle size={30} strokeWidth={1.2} /></span><h3>Every great story starts with someone.</h3><p>Build your cast. Define their roles. See which scenes they live in.</p></div>
     ) : (
       <div className="notes-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(290px, 1fr))" }}>
         {characters.map(char => (
-          <button key={char.id} className="note-card" style={{ minHeight: 265 }} onClick={() => onEdit(char)}>
-            <div className="note-card-top cast-card-top" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <button key={char.id} className="note-card cast-card" onClick={() => onEdit(char)}>
+            <div className="note-card-top cast-card-top">
               <span className={`cast-portrait ${char.color}`}><CastAvatar character={char} /></span>
               <span className="cast-card-role" style={{ fontSize: 10, letterSpacing: 1.1, color: char.color === "rose" ? "#b89a86" : char.color === "clay" ? "#967a55" : char.color === "sand" ? "#b0a378" : "#8aa671", fontWeight: 500 }}>{char.role.toUpperCase()}</span>
             </div>

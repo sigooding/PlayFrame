@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
-import { IMAGE_FALLBACK_SCRIPT } from "@/lib/image";
 
 export const metadata: Metadata = {
   title: "Frame — A little structure. A lot of possibility.",
@@ -11,5 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return <html lang="en"><head><script dangerouslySetInnerHTML={{ __html: IMAGE_FALLBACK_SCRIPT }} /></head><body>{children}</body></html>;
+  /**
+   * No inline scripts and no browser-only values above the fold: server HTML and the first client
+   * render must be identical. Missing images are healed after hydration instead (see lib/image.ts).
+   */
+  return <html lang="en"><body>{children}</body></html>;
 }

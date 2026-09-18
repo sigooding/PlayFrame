@@ -7,9 +7,18 @@ const refs = new Set();
 const walk = dir => { for (const name of readdirSync(dir)) { const p = join(dir, name); if (statSync(p).isDirectory()) walk(p); else if (/\.(tsx?|css)$/.test(name)) { const text = readFileSync(p, "utf8"); for (const m of text.matchAll(/["'(]\/(images|fonts)\/([^"')\s]+)["')]/g)) refs.add(`/${m[1]}/${m[2]}`); } } };
 walk(join(root, "src"));
 
+/** Read the retired-image map out of lib/image.ts so its keys are not reported as missing files. */
+function legacyImages() {
+  const text = readFileSync(join(root, "src", "lib", "image.ts"), "utf8");
+  const block = /const RETIRED_IMAGES[\s\S]*?\n\};/.exec(text)?.[0] || "";
+  return new Set([...block.matchAll(/"([^"]+)":\s*"/g)].map(m => m[1]));
+}
+
 // Photos the UI can live without: the lighting library falls back to a colour swatch per look.
 const optional = f => /^\/images\/lighting\//.test(f);
-const missing = [...refs].filter(r => !r.endsWith("/") && !existsSync(join(root, "public", r)) && !optional(r));
+// Paths that only exist so older projects keep working (lib/image.ts maps them to live files).
+const legacy = legacyImages();
+const missing = [...refs].filter(r => !r.endsWith("/") && !existsSync(join(root, "public", r)) && !optional(r) && !legacy.has(r));
 const missingOptional = [...refs].filter(r => optional(r) && !existsSync(join(root, "public", r)));
 const present = refs.size - missing.length - [...refs].filter(r => r.endsWith("/")).length;
 console.log(`Checked ${present + missing.length} asset references — ${present} present, ${missing.length} missing.`);

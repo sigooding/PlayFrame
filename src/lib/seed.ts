@@ -2,14 +2,14 @@ import type { Act, BrainstormNode, Character, MoodBoard, ProjectNote, Scene, Sto
 
 export const sampleCharacters: Character[] = [
   {
-    id: "char-1", name: "Ella Voss", role: "Protagonist", age: "29", description: "A documentary photographer returning to the coast after a decade away. She carries her father's old brass key and his final letter.", traits: ["Quiet", "Resilient", "Observant"], color: "sage", image: "/images/woman-car.jpg", createdAt: "2026-06-10T09:00:00.000Z",
+    id: "char-1", name: "Ella Voss", role: "Protagonist", age: "29", description: "A documentary photographer returning to the coast after a decade away. She carries her father's old brass key and his final letter.", traits: ["Quiet", "Resilient", "Observant"], color: "sage", image: "/images/shots/medium-close-up.jpg", createdAt: "2026-06-10T09:00:00.000Z",
     relations: [
       { id: "rel-1", targetId: "char-2", kind: "Parent", note: "The letter she never answered." },
       { id: "rel-2", targetId: "char-3", kind: "Estranged", note: "Her uncle — the only family left, and the hardest call to make." },
     ],
   },
   {
-    id: "char-2", name: "Thomas Voss", role: "Mentor / Father", age: "58 (deceased)", description: "A lighthouse keeper who raised Ella on the edge of the ocean. His presence lives on through objects and the memories tied to the lighthouse.", traits: ["Steady", "Quiet", "Devoted"], color: "clay", image: "/images/lighthouse.jpg", createdAt: "2026-06-10T09:15:00.000Z",
+    id: "char-2", name: "Thomas Voss", role: "Mentor / Father", age: "58 (deceased)", description: "A lighthouse keeper who raised Ella on the edge of the ocean. His presence lives on through objects and the memories tied to the lighthouse.", traits: ["Steady", "Quiet", "Devoted"], color: "clay", image: "/images/shots/extreme-wide.jpg", createdAt: "2026-06-10T09:15:00.000Z",
     relations: [
       { id: "rel-3", targetId: "char-1", kind: "Child", note: "He taught her the light." },
       { id: "rel-4", targetId: "char-3", kind: "Sibling", note: "Two brothers, one lighthouse." },
@@ -19,6 +19,7 @@ export const sampleCharacters: Character[] = [
     id: "char-3", name: "Elias Voss", role: "Supporting", age: "54", description: "Thomas's younger brother, who stayed in the village and kept the boats running. Blunt, practical, and quietly proud of a niece he never knew how to talk to.", traits: ["Blunt", "Practical", "Loyal"], color: "sand", createdAt: "2026-06-11T08:30:00.000Z",
     relations: [
       { id: "rel-5", targetId: "char-2", kind: "Sibling", note: "The brother who stayed on land." },
+      { id: "rel-6", targetId: "char-1", kind: "Estranged", note: "His brother's daughter — the family he never learned how to talk to." },
     ],
   },
 ];
@@ -35,10 +36,10 @@ export const sampleMoodboards: MoodBoard[] = [
     title: "The look of the film",
     description: "Pale gold, sea mist, olive grass. Natural light only. Nothing performed — we observe.",
     items: [
-      { id: "mi-1", image: "/images/woman-car.jpg", caption: "Window light on a face — no fill, no score yet" },
-      { id: "mi-2", image: "/images/coastal-road.jpg", caption: "The road as a leading line" },
+      { id: "mi-1", image: "/images/shots/medium-close-up.jpg", caption: "Window light on a face — no fill, no score yet" },
+      { id: "mi-2", image: "/images/shots/establishing.jpg", caption: "The road as a leading line" },
       { id: "mi-3", image: "/images/shots/insert.jpg", caption: "Prop texture: aged paper, soft edges" },
-      { id: "mi-4", image: "/images/lighthouse.jpg", caption: "The reveal — hold it longer than feels right" },
+      { id: "mi-4", image: "/images/shots/extreme-wide.jpg", caption: "The reveal — hold it longer than feels right" },
     ],
     createdAt: "2026-06-14T09:00:00.000Z",
   },
@@ -48,8 +49,8 @@ export const sampleMoodboards: MoodBoard[] = [
     description: "Small figures, big landscape. Wind in the frame, sound in the mix.",
     actId: "act-2",
     items: [
-      { id: "mi-5", image: "/images/cliffside.jpg", caption: "Keep her tiny in the frame" },
-      { id: "mi-6", image: "/images/lighthouse-path.jpg", caption: "Handheld, at walking pace" },
+      { id: "mi-5", image: "/images/shots/wide.jpg", caption: "Keep her tiny in the frame" },
+      { id: "mi-6", image: "/images/shots/full.jpg", caption: "Handheld, at walking pace" },
       { id: "mi-7", image: "/images/shots/extreme-wide.jpg", caption: "Reference for the wide on the cliff" },
     ],
     createdAt: "2026-06-14T09:30:00.000Z",
@@ -73,13 +74,13 @@ export const sampleScenes: Scene[] = [
 ];
 
 export const sampleFrames: StoryFrame[] = [
-  { id: "frame-0", sceneId: "scene-0", title: "The last transmission", description: "The lamp turns over black water. A keeper listens to static.", image: "/images/shots/low-key.jpg", shotType: "Medium close-up", movement: "Dolly in", duration: 5, status: "Ready", notes: "Cold open. Practical lamp only. Let the radio run under the titles.", characters: ["char-2"], angle: "Eye level", lens: "50mm", lighting: "Practical night", transition: "Fade in", mood: "Patient, waiting." },
-  { id: "frame-1", sceneId: "scene-1", title: "The road back", description: "A quiet coastal road. One car, heading home.", image: "/images/coastal-road.jpg", shotType: "Establishing", movement: "Tracking", duration: 6, status: "Ready", notes: "Open with ocean ambience. No score until we see the car. Shoot just before sunrise.", characters: ["char-1"], angle: "High angle", lens: "24mm", lighting: "Golden hour", transition: "Cut", mood: "Quiet anticipation. The world is waking up." },
-  { id: "frame-2", sceneId: "scene-2", title: "A familiar stranger", description: "Ella watches the coastline slip past her window.", image: "/images/woman-car.jpg", shotType: "Medium close-up", movement: "Static", duration: 4, status: "Ready", notes: "Passenger-side profile. Let the changing light carry the emotion.", characters: ["char-1"], angle: "Eye level", lens: "50mm", lighting: "Golden hour", transition: "Cut", mood: "Held breath. Something unresolved." },
+  { id: "frame-0", sceneId: "scene-0", title: "The last transmission", description: "The lamp turns over black water. A keeper listens to static.", image: "/images/lighting/practical-night.jpg", shotType: "Medium close-up", movement: "Dolly in", duration: 5, status: "Ready", notes: "Cold open. Practical lamp only. Let the radio run under the titles.", characters: ["char-2"], angle: "Eye level", lens: "50mm", lighting: "Practical night", transition: "Fade in", mood: "Patient, waiting." },
+  { id: "frame-1", sceneId: "scene-1", title: "The road back", description: "A quiet coastal road. One car, heading home.", image: "/images/shots/establishing.jpg", shotType: "Establishing", movement: "Tracking", duration: 6, status: "Ready", notes: "Open with ocean ambience. No score until we see the car. Shoot just before sunrise.", characters: ["char-1"], angle: "High angle", lens: "24mm", lighting: "Golden hour", transition: "Cut", mood: "Quiet anticipation. The world is waking up." },
+  { id: "frame-2", sceneId: "scene-2", title: "A familiar stranger", description: "Ella watches the coastline slip past her window.", image: "/images/shots/medium-close-up.jpg", shotType: "Medium close-up", movement: "Static", duration: 4, status: "Ready", notes: "Passenger-side profile. Let the changing light carry the emotion.", characters: ["char-1"], angle: "Eye level", lens: "50mm", lighting: "Golden hour", transition: "Cut", mood: "Held breath. Something unresolved." },
   { id: "frame-3", sceneId: "scene-2", title: "Words left unsaid", description: "An old letter. A lifetime between the lines.", image: "/images/shots/insert.jpg", shotType: "Insert", movement: "Static", duration: 3, status: "Needs review", notes: "Use the handwritten prop letter, with the photo barely visible. Check continuity.", characters: ["char-1"], angle: "High angle", lens: "85mm", lighting: "Natural daylight", transition: "Match cut", mood: "Tender, fragile, intimate." },
-  { id: "frame-4", sceneId: "scene-3", title: "The edge of everything", description: "For a moment, the whole world stands still.", image: "/images/cliffside.jpg", shotType: "Extreme wide", movement: "Dolly in", duration: 8, status: "Ready", notes: "Keep Ella small in the frame. Slow, almost imperceptible push. Wind in the sound design.", characters: ["char-1", "char-2"], angle: "Eye level", lens: "35mm", lighting: "Golden hour", transition: "Dissolve", mood: "Release. Vast and still." },
-  { id: "frame-5", sceneId: "scene-4", title: "One step closer", description: "She knows this path. It still remembers her. Elias keeps to the gate, pretending not to watch.", image: "/images/lighthouse-path.jpg", shotType: "Medium wide", movement: "Tracking", duration: 5, status: "Draft", notes: "Follow at walking pace. A little handheld texture is welcome here. Keep Elias small in the background.", characters: ["char-1", "char-3"], angle: "Low angle", lens: "35mm", lighting: "Natural daylight", transition: "Cut", mood: "Memory rising with every step." },
-  { id: "frame-6", sceneId: "scene-5", title: "Where the light lives", description: "Some things wait for you to find your way back.", image: "/images/lighthouse.jpg", shotType: "Establishing", movement: "Crane up", duration: 7, status: "Draft", notes: "The reveal. Hold on the lighthouse for a beat before cutting inside.", characters: ["char-1", "char-2"], angle: "Low angle", lens: "24mm", lighting: "Golden hour", transition: "Cut", mood: "Reverent. The reveal." },
+  { id: "frame-4", sceneId: "scene-3", title: "The edge of everything", description: "For a moment, the whole world stands still.", image: "/images/shots/extreme-wide.jpg", shotType: "Extreme wide", movement: "Dolly in", duration: 8, status: "Ready", notes: "Keep Ella small in the frame. Slow, almost imperceptible push. Wind in the sound design.", characters: ["char-1", "char-2"], angle: "Eye level", lens: "35mm", lighting: "Golden hour", transition: "Dissolve", mood: "Release. Vast and still." },
+  { id: "frame-5", sceneId: "scene-4", title: "One step closer", description: "She knows this path. It still remembers her. Elias keeps to the gate, pretending not to watch.", image: "/images/shots/medium-wide.jpg", shotType: "Medium wide", movement: "Tracking", duration: 5, status: "Draft", notes: "Follow at walking pace. A little handheld texture is welcome here. Keep Elias small in the background.", characters: ["char-1", "char-3"], angle: "Low angle", lens: "35mm", lighting: "Natural daylight", transition: "Cut", mood: "Memory rising with every step." },
+  { id: "frame-6", sceneId: "scene-5", title: "Where the light lives", description: "Some things wait for you to find your way back.", image: "/images/shots/establishing.jpg", shotType: "Establishing", movement: "Crane up", duration: 7, status: "Draft", notes: "The reveal. Hold on the lighthouse for a beat before cutting inside.", characters: ["char-1", "char-2"], angle: "Low angle", lens: "24mm", lighting: "Golden hour", transition: "Cut", mood: "Reverent. The reveal." },
 ];
 
 export const sampleScript = `THE LAST LIGHT
@@ -174,7 +175,7 @@ export const sampleNotes: ProjectNote[] = [
 ];
 
 export const starterProjects = [
-  { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5001", title: "The Last Light", description: "Some journeys lead you back to yourself.", genre: "Drama", format: "Short film", status: "In development", coverImage: "/images/coastal-road.jpg", acts: sampleActs, scenes: sampleScenes, frames: sampleFrames, script: sampleScript, notes: sampleNotes, characters: sampleCharacters, brainstorm: sampleBrainstorm, moodboards: sampleMoodboards },
-  { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5002", title: "Paper Planes", description: "A little imagination can take you a long way.", genre: "Coming of age", format: "Short film", status: "First draft", coverImage: "/images/cliffside.jpg", acts: [], scenes: [{ id: "paper-scene-1", title: "A small beginning", location: "INT. CLASSROOM", time: "DAY", description: "A paper plane lands on an empty desk." }], frames: [], script: "PAPER PLANES\n\nWritten by Jamie Parker\n\nFADE IN:\n\n1. INT. CLASSROOM - DAY\n\nSunlight falls across rows of empty desks. A paper plane glides into frame.\n", notes: [], characters: [], brainstorm: [], moodboards: [] },
-  { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5003", title: "A Place in Between", description: "A documentary about the places we call home.", genre: "Documentary", format: "Documentary", status: "Idea", coverImage: "/images/lighthouse.jpg", acts: [], scenes: [], frames: [], script: "A PLACE IN BETWEEN\n\nDocumentary outline\n\nWhat makes a place feel like home?\n", notes: [], characters: [], brainstorm: [], moodboards: [] },
+  { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5001", title: "The Last Light", description: "Some journeys lead you back to yourself.", genre: "Drama", format: "Short film", status: "In development", coverImage: "/images/shots/establishing.jpg", acts: sampleActs, scenes: sampleScenes, frames: sampleFrames, script: sampleScript, notes: sampleNotes, characters: sampleCharacters, brainstorm: sampleBrainstorm, moodboards: sampleMoodboards },
+  { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5002", title: "Paper Planes", description: "A little imagination can take you a long way.", genre: "Coming of age", format: "Short film", status: "First draft", coverImage: "/images/shots/wide.jpg", acts: [], scenes: [{ id: "paper-scene-1", title: "A small beginning", location: "INT. CLASSROOM", time: "DAY", description: "A paper plane lands on an empty desk." }], frames: [], script: "PAPER PLANES\n\nWritten by Jamie Parker\n\nFADE IN:\n\n1. INT. CLASSROOM - DAY\n\nSunlight falls across rows of empty desks. A paper plane glides into frame.\n", notes: [], characters: [], brainstorm: [], moodboards: [] },
+  { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5003", title: "A Place in Between", description: "A documentary about the places we call home.", genre: "Documentary", format: "Documentary", status: "Idea", coverImage: "/images/shots/extreme-wide.jpg", acts: [], scenes: [], frames: [], script: "A PLACE IN BETWEEN\n\nDocumentary outline\n\nWhat makes a place feel like home?\n", notes: [], characters: [], brainstorm: [], moodboards: [] },
 ];

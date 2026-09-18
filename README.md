@@ -21,19 +21,21 @@ Check the folder exists in your GitHub repo and contains these files:
 
 ```
 public/images/
-  cliffside.jpg  coastal-road.jpg  letter.jpg  lighthouse-path.jpg  lighthouse.jpg  woman-car.jpg
   lighting/
     natural-daylight.jpg  golden-hour.jpg  blue-hour.jpg  overcast-soft.jpg
     low-key.jpg  high-key.jpg  practical-night.jpg  backlit-silhouette.jpg
   shots/
     establishing.jpg  extreme-wide.jpg  wide.jpg  full.jpg  medium-wide.jpg  medium.jpg
-    medium-close-up.jpg  close-up.jpg  extreme-close-up.jpg  insert.jpg  low-key.jpg
-    over-the-shoulder.svg  two-shot.svg  pov.svg  aerial.svg
-public/fonts/   (six .ttf files)
+    medium-close-up.jpg  close-up.jpg  extreme-close-up.jpg  insert.jpg
+    over-the-shoulder.jpg  two-shot.jpg  over-the-shoulder.svg  two-shot.svg
+    pov.svg  aerial.svg
+public/fonts/   (six .ttf files: DM Sans 400/500/600/700, Instrument Serif regular + italic)
 ```
 
 The lighting photos are optional: if one is missing the lighting tile falls back to its own
-colour swatch, and the app never shows a broken image.
+colour swatch, and the app never shows a broken image. Pictures from earlier versions
+(`/images/coastal-road.jpg`, `/images/lighthouse.jpg`, …) are mapped to the current library
+automatically, so projects saved back then still look right.
 
 Common causes when they are missing:
 
@@ -50,6 +52,8 @@ A quick way to confirm from a terminal in the repo:
 
 ```bash
 git ls-files public/images            # should list every file from the table above
+npm run check:assets                  # every referenced picture and font is on disk
+node scripts/verify7.mjs              # …and every one of them is actually served
 ```
 
 If a picture is missing at runtime the app now shows a labelled placeholder instead of a broken icon, and `npm run check:assets` lists exactly which files are absent.
@@ -61,21 +65,34 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run dev` | development server |
 | `npm run build` / `npm start` | production build and serve |
 | `npm run check:assets` | verifies every image the code references exists on disk |
-| `node scripts/verify6.mjs` | checks relationships, lighting and shot-reference images (needs the dev server running) |
+| `node scripts/verify7.mjs` | checks assets, the lighting library, every shot reference and the relationship screens (needs the dev server running, no browser required) |
+| `node scripts/verify6.mjs` | the same ground covered through a real browser, with screenshots (needs Playwright) |
 | `npx drizzle-kit push` | apply schema changes to the database |
 
 ## Character relationships, lighting and shot references
 
 - **Shot types** — all fourteen shot types (from Establishing to Aerial) carry a photographic reference
-  that matches the framing. The four camera-position shots (over the shoulder, two-shot, POV, aerial)
-  also show a small framing diagram on the corner of the photo.
+  that matches the framing: twelve stills, plus a framing diagram for POV and Aerial where camera
+  position matters more than lens length. Over-the-shoulder and Two-shot show a photo with their
+  diagram tucked into the corner. Changing a shot type updates the frame image automatically while
+  the frame is still using a library reference.
 - **Lighting** — eight looks (natural daylight, golden hour, blue hour, overcast soft, low key, high key,
   practical night, backlit silhouette) each with a reference photograph, shown in the Shot design tab of
   a frame and as a scene default in the scene dialog. New frames inherit their scene's light; shots can
   override it. The chosen look and its full description go into the AI prompt.
-- **Relationships** — link cast members from a character card (parent, sibling, mentor, rival, estranged…).
-  Links are stored on both cards with the correct wording on each side, appear as chips on the cast cards,
-  render as a map on the **Relationships** tab, and are named in AI prompts when both people share a shot.
+- **Relationships** — link cast members from a character card (parent, sibling, mentor, rival, estranged…)
+  or with **Add a relationship** on the Relationships tab. Every link is stored on both cards with the
+  correct wording on each side ("Thomas is Ella's parent", "Ella is Thomas's child"), so the cast cards,
+  the map, the pair-by-pair list and the per-character storylines all agree. Links are named in AI prompts
+  when both people share a shot.
+- **Deep links** — `/?project=<id>&tab=relationships` opens straight onto a project and a section
+  (sections: `overview`, `screenplay`, `characters`, `relationships`, `storyboard`, `shot-list`, `notes`,
+  `brainstorm`, `mood-boards`).
+
+## Editing on the web
+
+Every section can be opened by URL, and the address bar follows the tab you click, so a link always
+sends someone to the screen you were looking at.
 
 ## Data
 

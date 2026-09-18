@@ -44,9 +44,43 @@ export const MISSING_IMAGE = "data:image/svg+xml;utf8," + encodeURIComponent(
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9eee1"/><stop offset="1" stop-color="#d5ddcb"/></linearGradient></defs><rect width="640" height="360" fill="url(#g)"/><g fill="none" stroke="#8fa47c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="230" y="120" width="180" height="120" rx="10"/><circle cx="275" cy="160" r="12"/><path d="M240 225l50-50 35 35 30-25 45 40"/></g><text x="320" y="285" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#6f8360">image not found</text><text x="320" y="308" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#93a586">add it to public/images or upload a new one</text></svg>'
 );
 
-/** Replace a broken image with the placeholder exactly once. */
+/**
+ * Pictures that older versions of Frame referenced but that are no longer shipped. Projects saved
+ * before the switch still point at them, so every render resolves through here and the app never
+ * shows a broken frame just because the library moved on.
+ */
+const RETIRED_IMAGES: Record<string, string> = {
+  "/images/woman-car.jpg": "/images/shots/medium-close-up.jpg",
+  "/images/coastal-road.jpg": "/images/shots/establishing.jpg",
+  "/images/lighthouse.jpg": "/images/shots/extreme-wide.jpg",
+  "/images/cliffside.jpg": "/images/shots/wide.jpg",
+  "/images/lighthouse-path.jpg": "/images/shots/full.jpg",
+  "/images/shots/low-key.jpg": "/images/lighting/practical-night.jpg",
+  "/images/shots/natural-daylight.jpg": "/images/lighting/natural-daylight.jpg",
+  "/images/shots/golden-hour.jpg": "/images/lighting/golden-hour.jpg",
+};
+
+export const resolveImage = (src?: string) => (src && RETIRED_IMAGES[src]) || src || "";
+
+/** Rewrites retired image paths anywhere in a project. Pure, so server and client agree. */
+export function healProjectImages<T extends { coverImage?: string; frames?: { image: string }[]; characters?: { image?: string }[]; moodboards?: { items: { image: string }[] }[] }>(project: T): T {
+  const cover = resolveImage(project.coverImage);
+  return {
+    ...project,
+    coverImage: cover || project.coverImage,
+    frames: project.frames?.map(frame => frame.image === resolveImage(frame.image) ? frame : { ...frame, image: resolveImage(frame.image) }),
+    characters: project.characters?.map(character => character.image && character.image !== resolveImage(character.image) ? { ...character, image: resolveImage(character.image) } : character),
+    moodboards: project.moodboards?.map(board => ({ ...board, items: board.items.map(item => item.image === resolveImage(item.image) ? item : { ...item, image: resolveImage(item.image) }) })),
+  } as T;
+}
+
+/** True once React has hydrated. Guards DOM writes so server HTML and client markup stay identical. */
+let hydrated = false;
+export const markHydrated = () => { hydrated = true; };
+
+/** Replace a broken image with the placeholder exactly once — only after hydration has finished. */
 export function applyImageFallback(el: HTMLImageElement) {
-  if (el.dataset.fallback === "1") return;
+  if (!hydrated || el.dataset.fallback === "1") return;
   el.dataset.fallback = "1";
   el.src = MISSING_IMAGE;
 }
@@ -57,7 +91,13 @@ export function onImageError(event: React.SyntheticEvent<HTMLImageElement>) {
 }
 
 /**
- * Inline script for the document <head>. Image errors on server-rendered markup fire before React hydrates,
- * so a React onError alone would miss them. This captures them at the document level from the very first byte.
+ * Images that failed before React took over still need fixing. Run this once on mount:
+ * an image whose bytes already arrived broken is `complete` with no intrinsic width.
  */
-export const IMAGE_FALLBACK_SCRIPT = `(function(){var P=${JSON.stringify(MISSING_IMAGE)};function fix(el){if(!el||el.tagName!=="IMG"||el.dataset.fallback==="1")return;el.dataset.fallback="1";el.src=P;}document.addEventListener("error",function(e){fix(e.target);},true);document.addEventListener("DOMContentLoaded",function(){var imgs=document.images;for(var i=0;i<imgs.length;i++){if(imgs[i].complete&&imgs[i].naturalWidth===0&&imgs[i].getAttribute("src"))fix(imgs[i]);}});})();`;
+export function sweepBrokenImages(root: ParentNode = document) {
+  if (typeof document === "undefined") return;
+  markHydrated();
+  for (const node of Array.from(root.querySelectorAll("img"))) {
+    if (node.complete && node.naturalWidth === 0 && node.getAttribute("src")) applyImageFallback(node);
+  }
+}
