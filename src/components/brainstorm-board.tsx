@@ -137,7 +137,18 @@ export function BrainstormBoard({ nodes, onEdit, onAdd, onChange, onDelete }: Pr
       const clash = boxes.some(bx => x < bx.x + bx.w + 24 && x + NODE_WIDTH + 24 > bx.x && y < bx.y + bx.h + 24 && y + 150 + 24 > bx.y);
       if (!clash) return { x, y };
     }
-    return { x: 40 + Math.random() * 400, y: 40 + Math.random() * 300 };
+    // Deterministic fallback: walk outwards from the middle of the canvas so the position is the
+    // same on the server and in the browser (a random spot would hydrate differently every time).
+    for (let ring = 0; ring < 8; ring++) {
+      for (let step = 0; step < 8; step++) {
+        const angle = (step / 8) * Math.PI * 2;
+        const x = Math.max(40, Math.min(CANVAS_W - NODE_WIDTH - 40, CANVAS_W / 2 + Math.cos(angle) * (160 + ring * 120) - NODE_WIDTH / 2));
+        const y = Math.max(40, Math.min(CANVAS_H - 190, CANVAS_H / 2 + Math.sin(angle) * (120 + ring * 100) - 60));
+        const clash = boxes.some(bx => x < bx.x + bx.w + 24 && x + NODE_WIDTH + 24 > bx.x && y < bx.y + bx.h + 24 && y + 150 + 24 > bx.y);
+        if (!clash) return { x, y };
+      }
+    }
+    return { x: Math.round(CANVAS_W / 2 - NODE_WIDTH / 2), y: Math.round(CANVAS_H / 2) };
   }
   const links = pairs.length;
   return <section className="view-enter"><div className="section-heading"><div><div className="section-title-row"><h2>Brainstorm map</h2><span className="count-badge">{nodes.length}</span></div><p>A visual web of ideas — connect characters, scenes, and themes.</p></div><div className="section-actions"><button type="button" className={`button ${linkMode ? "button-primary" : ""}`} onClick={() => { setLinkMode(!linkMode); setLinkSource(null); }} aria-pressed={linkMode}><Link2 size={14} />{linkMode ? (linkSource ? "Now pick the second idea" : "Pick the first idea") : "Connect ideas"}</button><button type="button" className="button button-primary" onClick={() => { const p = freeSpot(); onAdd(Math.round(p.x), Math.round(p.y)); }}><Plus size={14} />Add idea</button></div></div>

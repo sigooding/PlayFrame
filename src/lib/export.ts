@@ -1,5 +1,6 @@
 import type { FilmProject } from "./types";
 import { actOf, kindOf, partOf } from "./structure";
+import { relationLines, relationNoun } from "./relations";
 
 export const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "film";
 
@@ -17,7 +18,7 @@ export function downloadFile(content: string, filename: string, type = "text/pla
 export function exportShotList(project: FilmProject) {
   const escape = (value: string | number) => `"${String(value ?? "").replace(/"/g, '""')}"`;
   const rows = [
-    ["Shot", "Act", "Sequence", "Scene", "Kind", "Title", "Description", "Shot type", "Camera angle", "Lens", "Camera movement", "Lighting", "Cut in", "Duration (s)", "Cast", "Mood", "Status", "Production notes"],
+    ["Shot", "Act", "Sequence", "Scene", "Kind", "Title", "Description", "Shot type", "Camera angle", "Lens", "Camera movement", "Lighting", "Cut in", "Duration (s)", "Cast", "Relationships", "Mood", "Status", "Production notes"],
     ...project.frames.map((frame, i) => {
       const scene = project.scenes.find(s => s.id === frame.sceneId);
       const act = scene ? actOf(project, scene) : undefined;
@@ -27,6 +28,7 @@ export function exportShotList(project: FilmProject) {
         frame.title, frame.description, frame.shotType, frame.angle || "Eye level", frame.lens || "", frame.movement,
         frame.lighting || "", frame.transition || "Cut", frame.duration,
         (frame.characters || []).map(id => project.characters.find(c => c.id === id)?.name).filter(Boolean).join(" / "),
+        relationLines(project, frame.characters || [], 6).join(" / "),
         frame.mood || "", frame.status, frame.notes,
       ];
     }),
@@ -63,7 +65,13 @@ export function printProject(project: FilmProject, kind: PrintKind = "storyboard
     return `<section class="board"><h3>${escapeHtml(board.title)}</h3>${board.description ? `<p>${escapeHtml(board.description)}</p>` : ""}<div class="mosaic">${items}</div></section>`;
   }).join("");
 
-  const cast = project.characters.map(c => `<div class="person"><strong>${escapeHtml(c.name)}</strong><span>${escapeHtml(c.role)}${c.age ? ` · ${escapeHtml(c.age)}` : ""}</span><p>${escapeHtml(c.description)}${c.traits.length ? ` Traits: ${escapeHtml(c.traits.join(", "))}.` : ""}</p></div>`).join("");
+  const cast = project.characters.map(c => {
+    const links = (c.relations || []).map(r => {
+      const target = project.characters.find(o => o.id === r.targetId);
+      return target ? `${escapeHtml(target.name)} is ${escapeHtml(c.name)}'s ${escapeHtml(relationNoun[r.kind])}${r.note ? ` (${escapeHtml(r.note)})` : ""}` : "";
+    }).filter(Boolean);
+    return `<div class="person"><strong>${escapeHtml(c.name)}</strong><span>${escapeHtml(c.role)}${c.age ? ` · ${escapeHtml(c.age)}` : ""}</span><p>${escapeHtml(c.description)}${c.traits.length ? ` Traits: ${escapeHtml(c.traits.join(", "))}.` : ""}</p>${links.length ? `<p class="links">${links.join(" · ")}</p>` : ""}</div>`;
+  }).join("");
 
   const structure = project.acts.map((act, i) => {
     const scenes = project.scenes.filter(s => s.actId === act.id);
@@ -92,7 +100,7 @@ footer{padding-top:10px;border-top:1px solid #eee;font-size:10px}
 .board{break-inside:avoid;margin-bottom:24px}.board>h3{font:26px Georgia,serif;margin:0 0 6px}.board>p{font-size:11px;color:#66715c;margin:0 0 12px}
 .mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}figure{margin:0}figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:5px;display:block}
 figcaption{font-size:9px;color:#6c7565;margin-top:5px}
-.people{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.person{border:1px solid #e0e4da;border-radius:6px;padding:12px}.person strong{display:block;font-size:14px}.person span{font-size:10px;color:#767f6d}.person p{font-size:10px;margin-top:6px}
+.people{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.person{border:1px solid #e0e4da;border-radius:6px;padding:12px}.person strong{display:block;font-size:14px}.person span{font-size:10px;color:#767f6d}.person p{font-size:10px;margin-top:6px}.person .links{color:#41613f;border-top:1px solid #e6eadd;padding-top:5px}
 .actblock{border-left:2px solid #d8ded0;padding:2px 0 2px 12px;margin-bottom:12px}.actblock h4{margin:0;font-size:13px}.actblock p,.actblock li{font-size:10px;color:#6c7565}.actblock ul{margin:4px 0;padding-left:16px}.scenes{margin-top:4px}
 pre{max-width:650px;margin:40px auto;white-space:pre-wrap;font:12pt/1.6 'Courier New',monospace}
 .print-button{position:fixed;right:24px;bottom:24px;border:0;background:#294c3c;color:white;border-radius:6px;padding:14px 24px;cursor:pointer}
