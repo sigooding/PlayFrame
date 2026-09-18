@@ -10,6 +10,9 @@ out/
 .env.local
 .env.*.local
 
+# typescript incremental build info
+tsconfig.tsbuildinfo
+
 # test artifacts and screenshots
 artifacts/
 playwright-report/

@@ -2,7 +2,7 @@ import { chromium, expect } from '@playwright/test';
 import { mkdir } from 'node:fs/promises';
 
 const base = process.env.TEST_BASE_URL || 'http://localhost:3000';
-const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH, headless: true, args: ['--no-sandbox'] });
 const context = await browser.newContext({ viewport: { width: 1441, height: 1000 }, permissions: ['clipboard-read', 'clipboard-write'] });
 const page = await context.newPage();
 const errors = [];

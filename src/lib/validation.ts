@@ -1,6 +1,6 @@
 import {
-  CAMERA_ANGLES, CAMERA_MOVEMENTS, LENSES, LIGHTING, SCENE_KINDS, SHOT_TYPES, TRANSITIONS,
-  type Act, type ActPart, type BrainstormNode, type CameraAngle, type CameraMovement, type Character, type Lens, type Lighting, type MoodBoard, type ProjectNote, type ProjectPatch, type Scene, type SceneKind, type ShotType, type StoryFrame, type Transition,
+  CAMERA_ANGLES, CAMERA_MOVEMENTS, LENSES, LIGHTING, RELATION_KINDS, SCENE_KINDS, SHOT_TYPES, TRANSITIONS,
+  type Act, type ActPart, type BrainstormNode, type CameraAngle, type CameraMovement, type Character, type CharacterRelation, type Lens, type Lighting, type MoodBoard, type ProjectNote, type ProjectPatch, type RelationKind, type Scene, type SceneKind, type ShotType, type StoryFrame, type Transition,
 } from "./types";
 
 const frameStatuses = ["Draft", "Ready", "Needs review"];
@@ -15,11 +15,12 @@ const optionalIn = (value: unknown, list: readonly string[]) => value === undefi
 const optionalId = (value: unknown) => value === undefined || value === null || value === "" || string(value, 100);
 const strings = (value: unknown, max = 100) => value === undefined || value === null || (Array.isArray(value) && value.every(v => string(v, max)));
 
-const sceneOk = (s: Scene) => s && string(s.id, 100) && string(s.title, 300) && string(s.location, 300) && string(s.time, 100) && string(s.description) && strings(s.characters) && optionalId(s.actId) && optionalId(s.partId) && optionalIn(s.kind, SCENE_KINDS);
+const sceneOk = (s: Scene) => s && string(s.id, 100) && string(s.title, 300) && string(s.location, 300) && string(s.time, 100) && string(s.description) && strings(s.characters) && optionalId(s.actId) && optionalId(s.partId) && optionalIn(s.kind, SCENE_KINDS) && optionalIn(s.lighting, LIGHTING);
 const actOk = (a: Act) => a && string(a.id, 100) && string(a.title, 120) && a.title.trim() && string(a.description, 2000) && (a.parts === undefined || (Array.isArray(a.parts) && a.parts.length <= 30 && a.parts.every((p: ActPart) => p && string(p.id, 100) && string(p.title, 160) && p.title.trim() && string(p.description, 1000))));
 const frameOk = (f: StoryFrame) => f && string(f.id, 100) && string(f.sceneId, 100) && string(f.title, 300) && string(f.description) && image(f.image) && SHOT_TYPES.includes(f.shotType) && CAMERA_MOVEMENTS.includes(f.movement) && frameStatuses.includes(f.status) && Number.isFinite(f.duration) && f.duration > 0 && f.duration <= 3600 && string(f.notes) && strings(f.characters) && optionalIn(f.angle, CAMERA_ANGLES) && optionalIn(f.lens, LENSES) && optionalIn(f.lighting, LIGHTING) && optionalIn(f.transition, TRANSITIONS) && (f.mood === undefined || string(f.mood, 300));
 const noteOk = (n: ProjectNote) => n && string(n.id, 100) && string(n.title, 300) && string(n.content) && noteColors.includes(n.color) && string(n.createdAt, 100) && strings(n.tags, 40) && (n.connections === undefined || (Array.isArray(n.connections) && n.connections.every(c => c && string(c.targetId, 100) && string(c.label, 80))));
-const characterOk = (c: Character) => c && string(c.id, 100) && string(c.name, 120) && c.name.trim() && string(c.role, 80) && string(c.age, 40) && string(c.description, 700) && Array.isArray(c.traits) && c.traits.every(t => string(t, 50)) && entityColors.includes(c.color) && (c.image === undefined || image(c.image)) && string(c.createdAt, 100);
+const relationOk = (r: CharacterRelation) => r && string(r.id, 100) && string(r.targetId, 100) && RELATION_KINDS.includes(r.kind) && (r.note === undefined || string(r.note, 120));
+const characterOk = (c: Character) => c && string(c.id, 100) && string(c.name, 120) && c.name.trim() && string(c.role, 80) && string(c.age, 40) && string(c.description, 700) && Array.isArray(c.traits) && c.traits.every(t => string(t, 50)) && entityColors.includes(c.color) && (c.image === undefined || image(c.image)) && (c.relations === undefined || (Array.isArray(c.relations) && c.relations.length <= 40 && c.relations.every(relationOk))) && string(c.createdAt, 100);
 const nodeOk = (b: BrainstormNode) => b && string(b.id, 100) && string(b.title, 200) && string(b.content, 3000) && nodeColors.includes(b.color) && Array.isArray(b.tags) && b.tags.every(t => string(t, 40)) && Array.isArray(b.connections) && b.connections.every(id => string(id, 100)) && Number.isFinite(b.x) && Number.isFinite(b.y) && Math.abs(b.x) < 20000 && Math.abs(b.y) < 20000 && string(b.createdAt, 100);
 const boardOk = (m: MoodBoard) => m && string(m.id, 100) && string(m.title, 200) && m.title.trim() && string(m.description, 2000) && optionalId(m.actId) && optionalId(m.sceneId) && string(m.createdAt, 100) && Array.isArray(m.items) && m.items.length <= 40 && m.items.every(i => i && string(i.id, 100) && image(i.image) && string(i.caption, 300));
 
@@ -107,6 +108,7 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
       actId: typeof sc.actId === "string" && actIds.has(sc.actId) ? sc.actId : undefined,
       partId: typeof sc.partId === "string" && partIds.has(sc.partId) ? sc.partId : undefined,
       kind,
+      lighting: LIGHTING.includes(sc.lighting as Lighting) ? (sc.lighting as Lighting) : undefined,
     };
   });
 
@@ -161,6 +163,15 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
       traits: list(c_.traits).filter((t): t is string => typeof t === "string").slice(0, 5).map(t => t.slice(0, 50)),
       color: entityColors.includes(c_.color as string) ? (c_.color as Character["color"]) : "sage",
       image: image(c_.image) ? (c_.image as string) : undefined,
+      relations: list(c_.relations).slice(0, 40).map(r => {
+        const r_ = (r || {}) as Record<string, unknown>;
+        return {
+          id: id(r_.id),
+          targetId: text(r_.targetId, 100),
+          kind: RELATION_KINDS.includes(r_.kind as RelationKind) ? (r_.kind as RelationKind) : "Friend",
+          note: text(r_.note, 120) || undefined,
+        };
+      }).filter(r => r.targetId),
       createdAt: typeof c_.createdAt === "string" ? c_.createdAt : new Date().toISOString(),
     };
   });

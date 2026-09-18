@@ -1,8 +1,26 @@
 import type { Act, BrainstormNode, Character, MoodBoard, ProjectNote, Scene, StoryFrame } from "./types";
 
 export const sampleCharacters: Character[] = [
-  { id: "char-1", name: "Ella Voss", role: "Protagonist", age: "29", description: "A documentary photographer returning to the coast after a decade away. She carries her father's old brass key and his final letter.", traits: ["Quiet", "Resilient", "Observant"], color: "sage", image: "/images/woman-car.jpg", createdAt: "2026-06-10T09:00:00.000Z" },
-  { id: "char-2", name: "Thomas Voss", role: "Mentor / Father", age: "58 (deceased)", description: "A lighthouse keeper who raised Ella on the edge of the ocean. His presence lives on through objects and the memories tied to the lighthouse.", traits: ["Steady", "Quiet", "Devoted"], color: "clay", image: "/images/lighthouse.jpg", createdAt: "2026-06-10T09:15:00.000Z" },
+  {
+    id: "char-1", name: "Ella Voss", role: "Protagonist", age: "29", description: "A documentary photographer returning to the coast after a decade away. She carries her father's old brass key and his final letter.", traits: ["Quiet", "Resilient", "Observant"], color: "sage", image: "/images/woman-car.jpg", createdAt: "2026-06-10T09:00:00.000Z",
+    relations: [
+      { id: "rel-1", targetId: "char-2", kind: "Parent", note: "The letter she never answered." },
+      { id: "rel-2", targetId: "char-3", kind: "Estranged", note: "Her uncle — the only family left, and the hardest call to make." },
+    ],
+  },
+  {
+    id: "char-2", name: "Thomas Voss", role: "Mentor / Father", age: "58 (deceased)", description: "A lighthouse keeper who raised Ella on the edge of the ocean. His presence lives on through objects and the memories tied to the lighthouse.", traits: ["Steady", "Quiet", "Devoted"], color: "clay", image: "/images/lighthouse.jpg", createdAt: "2026-06-10T09:15:00.000Z",
+    relations: [
+      { id: "rel-3", targetId: "char-1", kind: "Child", note: "He taught her the light." },
+      { id: "rel-4", targetId: "char-3", kind: "Sibling", note: "Two brothers, one lighthouse." },
+    ],
+  },
+  {
+    id: "char-3", name: "Elias Voss", role: "Supporting", age: "54", description: "Thomas's younger brother, who stayed in the village and kept the boats running. Blunt, practical, and quietly proud of a niece he never knew how to talk to.", traits: ["Blunt", "Practical", "Loyal"], color: "sand", createdAt: "2026-06-11T08:30:00.000Z",
+    relations: [
+      { id: "rel-5", targetId: "char-2", kind: "Sibling", note: "The brother who stayed on land." },
+    ],
+  },
 ];
 
 export const sampleActs: Act[] = [
@@ -45,13 +63,13 @@ export const sampleBrainstorm: BrainstormNode[] = [
 ];
 
 export const sampleScenes: Scene[] = [
-  { id: "scene-0", title: "The last transmission", location: "INT. LIGHTHOUSE CONTROL ROOM", time: "NIGHT", description: "Cold open. A radio crackles in a dark room. A man's hand switches it off, then back on. He listens for a voice that does not come.", characters: ["char-2"], kind: "Cold open" },
-  { id: "scene-1", title: "The road back", location: "EXT. COASTAL ROAD", time: "DAWN", description: "An empty road follows the edge of the Pacific. After ten years, a familiar car is coming home.", characters: ["char-1"], actId: "act-1", partId: "part-1" },
-  { id: "scene-2", title: "Things we carry", location: "INT. ELLA'S CAR", time: "DAWN", description: "Ella drives in silence. A letter on the passenger seat holds the words she never got to hear.", characters: ["char-1"], actId: "act-1", partId: "part-2" },
-  { id: "scene-3", title: "The edge of everything", location: "EXT. CLIFFSIDE", time: "MORNING", description: "At the edge of the ocean, Ella lets herself stop running.", characters: ["char-1", "char-2"], actId: "act-2", partId: "part-3" },
-  { id: "scene-4", title: "One step closer", location: "EXT. LIGHTHOUSE PATH", time: "MORNING", description: "She follows the old path. Every step feels like a memory.", characters: ["char-1"], actId: "act-2", partId: "part-4" },
-  { id: "scene-5", title: "Where the light lives", location: "EXT. LIGHTHOUSE", time: "MORNING", description: "The lighthouse emerges from the mist, unchanged by the years.", characters: ["char-1", "char-2"], actId: "act-3" },
-  { id: "scene-6", title: "A new beginning", location: "INT. LIGHTHOUSE", time: "MORNING", description: "Ella opens the door. This time, she is ready to stay.", characters: ["char-1", "char-2"], actId: "act-3" },
+  { id: "scene-0", title: "The last transmission", location: "INT. LIGHTHOUSE CONTROL ROOM", time: "NIGHT", description: "Cold open. A radio crackles in a dark room. A man's hand switches it off, then back on. He listens for a voice that does not come.", characters: ["char-2"], kind: "Cold open" , lighting: "Practical night" },
+  { id: "scene-1", title: "The road back", location: "EXT. COASTAL ROAD", time: "DAWN", description: "An empty road follows the edge of the Pacific. After ten years, a familiar car is coming home.", characters: ["char-1"], actId: "act-1", partId: "part-1" , lighting: "Golden hour" },
+  { id: "scene-2", title: "Things we carry", location: "INT. ELLA'S CAR", time: "DAWN", description: "Ella drives in silence. A letter on the passenger seat holds the words she never got to hear.", characters: ["char-1"], actId: "act-1", partId: "part-2" , lighting: "Golden hour" },
+  { id: "scene-3", title: "The edge of everything", location: "EXT. CLIFFSIDE", time: "MORNING", description: "At the edge of the ocean, Ella lets herself stop running.", characters: ["char-1", "char-2"], actId: "act-2", partId: "part-3" , lighting: "Golden hour" },
+  { id: "scene-4", title: "One step closer", location: "EXT. LIGHTHOUSE PATH", time: "MORNING", description: "She follows the old path. Every step feels like a memory. Elias is mending a net by the gate, pretending not to watch her.", characters: ["char-1", "char-3"], actId: "act-2", partId: "part-4" , lighting: "Natural daylight" },
+  { id: "scene-5", title: "Where the light lives", location: "EXT. LIGHTHOUSE", time: "MORNING", description: "The lighthouse emerges from the mist, unchanged by the years.", characters: ["char-1", "char-2"], actId: "act-3" , lighting: "Golden hour" },
+  { id: "scene-6", title: "A new beginning", location: "INT. LIGHTHOUSE", time: "MORNING", description: "Ella opens the door. This time, she is ready to stay. Elias follows her in, carrying two mugs.", characters: ["char-1", "char-2", "char-3"], actId: "act-3" , lighting: "High key" },
 ];
 
 export const sampleFrames: StoryFrame[] = [
@@ -60,7 +78,7 @@ export const sampleFrames: StoryFrame[] = [
   { id: "frame-2", sceneId: "scene-2", title: "A familiar stranger", description: "Ella watches the coastline slip past her window.", image: "/images/woman-car.jpg", shotType: "Medium close-up", movement: "Static", duration: 4, status: "Ready", notes: "Passenger-side profile. Let the changing light carry the emotion.", characters: ["char-1"], angle: "Eye level", lens: "50mm", lighting: "Golden hour", transition: "Cut", mood: "Held breath. Something unresolved." },
   { id: "frame-3", sceneId: "scene-2", title: "Words left unsaid", description: "An old letter. A lifetime between the lines.", image: "/images/shots/insert.jpg", shotType: "Insert", movement: "Static", duration: 3, status: "Needs review", notes: "Use the handwritten prop letter, with the photo barely visible. Check continuity.", characters: ["char-1"], angle: "High angle", lens: "85mm", lighting: "Natural daylight", transition: "Match cut", mood: "Tender, fragile, intimate." },
   { id: "frame-4", sceneId: "scene-3", title: "The edge of everything", description: "For a moment, the whole world stands still.", image: "/images/cliffside.jpg", shotType: "Extreme wide", movement: "Dolly in", duration: 8, status: "Ready", notes: "Keep Ella small in the frame. Slow, almost imperceptible push. Wind in the sound design.", characters: ["char-1", "char-2"], angle: "Eye level", lens: "35mm", lighting: "Golden hour", transition: "Dissolve", mood: "Release. Vast and still." },
-  { id: "frame-5", sceneId: "scene-4", title: "One step closer", description: "She knows this path. It still remembers her.", image: "/images/lighthouse-path.jpg", shotType: "Medium wide", movement: "Tracking", duration: 5, status: "Draft", notes: "Follow at walking pace. A little handheld texture is welcome here.", characters: ["char-1"], angle: "Low angle", lens: "35mm", lighting: "Natural daylight", transition: "Cut", mood: "Memory rising with every step." },
+  { id: "frame-5", sceneId: "scene-4", title: "One step closer", description: "She knows this path. It still remembers her. Elias keeps to the gate, pretending not to watch.", image: "/images/lighthouse-path.jpg", shotType: "Medium wide", movement: "Tracking", duration: 5, status: "Draft", notes: "Follow at walking pace. A little handheld texture is welcome here. Keep Elias small in the background.", characters: ["char-1", "char-3"], angle: "Low angle", lens: "35mm", lighting: "Natural daylight", transition: "Cut", mood: "Memory rising with every step." },
   { id: "frame-6", sceneId: "scene-5", title: "Where the light lives", description: "Some things wait for you to find your way back.", image: "/images/lighthouse.jpg", shotType: "Establishing", movement: "Crane up", duration: 7, status: "Draft", notes: "The reveal. Hold on the lighthouse for a beat before cutting inside.", characters: ["char-1", "char-2"], angle: "Low angle", lens: "24mm", lighting: "Golden hour", transition: "Cut", mood: "Reverent. The reveal." },
 ];
 

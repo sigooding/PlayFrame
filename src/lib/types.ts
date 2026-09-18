@@ -19,6 +19,23 @@ export type Lighting = (typeof LIGHTING)[number];
 export const SCENE_KINDS = ["Standard", "Cold open", "Flashback", "Dream", "Montage", "Title card", "Tag"] as const;
 export type SceneKind = (typeof SCENE_KINDS)[number];
 
+/** How one character sees another. "Parent" means the linked character is this person's parent. */
+export const RELATION_KINDS = [
+  "Parent", "Child", "Sibling", "Grandparent", "Grandchild", "Partner", "Spouse", "Friend", "Best friend",
+  "Mentor", "Student", "Colleague", "Rival", "Enemy", "Ally", "Neighbour", "Estranged",
+] as const;
+export type RelationKind = (typeof RELATION_KINDS)[number];
+
+export interface CharacterRelation {
+  id: string;
+  /** the other character in the cast */
+  targetId: string;
+  /** who that person is to this character */
+  kind: RelationKind;
+  /** optional context — how the relationship plays on screen */
+  note?: string;
+}
+
 export type FrameStatus = "Draft" | "Ready" | "Needs review";
 
 export interface ActPart {
@@ -44,6 +61,8 @@ export interface Scene {
   actId?: string;
   partId?: string;
   kind?: SceneKind;
+  /** the light this scene is lit in — inherited by its shots unless a shot overrides it */
+  lighting?: Lighting;
 }
 
 export interface Character {
@@ -55,6 +74,7 @@ export interface Character {
   traits: string[];
   color: "sage" | "sand" | "rose" | "clay";
   image?: string;
+  relations?: CharacterRelation[];
   createdAt: string;
 }
 

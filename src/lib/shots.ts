@@ -4,6 +4,8 @@ export interface ShotGuideEntry {
   image: string;
   /** true when the reference is a framing diagram rather than photographic footage */
   diagram?: boolean;
+  /** optional framing diagram shown beside the summary when the thumbnail is a photograph */
+  framing?: string;
   summary: string;
   useFor: string;
   prompt: string;
