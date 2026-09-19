@@ -1,6 +1,6 @@
 # frame.
 
-A writer/director's pre-production studio: screenplay, acts & sequences, cast with a relationship map, storyboard with a shot-type library and a lighting library, shot list, mood boards, brainstorm map, and AI video-prompt generation (MiniMax Hailuo, Seedance, Kling, Runway, Veo).
+A writer/director's pre-production studio: screenplay, acts & sequences, cast with a relationship map, storyboard with a shot-type library, a lighting library and a thirty-look visual style library, shot list, mood boards, brainstorm map, and a prompt studio that batches any set of shots into ready-to-paste prompts for video (MiniMax Hailuo, Seedance, Kling, Runway, Veo) and image models (SDXL, SD 1.5, SD 3.5, Krea 2, FLUX, Midjourney, DALL-E, Leonardo, Ideogram) in thirty visual styles (Realistic, Anime, Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting, Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8, Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco, Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid).
 
 ## Run it locally
 
@@ -29,8 +29,28 @@ public/images/
     medium-close-up.jpg  close-up.jpg  extreme-close-up.jpg  insert.jpg
     over-the-shoulder.jpg  two-shot.jpg  over-the-shoulder.svg  two-shot.svg
     pov.svg  aerial.svg
+  styles/
+    cinematic-realistic.jpg  anime.jpg  comic-book.jpg  animation-3d.jpg  watercolor.jpg
+    film-noir.jpg  cyberpunk.jpg  claymation.jpg  pixel-art.jpg  oil-painting.jpg
+    classic-cartoon.jpg  documentary.jpg  rotoscoped.jpg  ukiyo-e.jpg  line-art.jpg
+    poster.jpg  super8.jpg  synthwave.jpg  charcoal.jpg  collage.jpg
+    ghibli.jpg  manga.jpg  hanna-barbera.jpg  isometric.jpg  art-deco.jpg
+    impressionist.jpg  pop-art.jpg  stained-glass.jpg  technicolor.jpg  polaroid.jpg
+  templates/
+    short-film.jpg  feature-film.jpg  documentary.jpg
 public/fonts/   (six .ttf files: DM Sans 400/500/600/700, Instrument Serif regular + italic)
 ```
+
+The `styles/` pictures are the example thumbnails for the thirty visual styles (Realistic, Anime,
+Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting,
+Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8,
+Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco,
+Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid) shown in the prompt studio. If one
+is missing the tile falls back to its colour swatch.
+
+The prompt studio (Storyboard → "Prompts", or any frame's AI-prompt tab) lets you pick a look,
+choose a model, select any set of shots — from one scene or the whole project — and copy or
+download all of their prompts in a single batch.
 
 The lighting photos are optional: if one is missing the lighting tile falls back to its own
 colour swatch, and the app never shows a broken image. Pictures from earlier versions
@@ -65,6 +85,8 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run dev` | development server |
 | `npm run build` / `npm start` | production build and serve |
 | `npm run check:assets` | verifies every image the code references exists on disk |
+| `npm run verify:features` | checks the AI prompt models, the thirty visual styles, and drives the real screenplay editor's undo/redo in jsdom (no server, no browser needed) |
+| `npm run verify:features:live` | the same, plus a check that `/?tab=screenplay` server-renders (needs the dev server running) |
 | `node scripts/verify7.mjs` | checks assets, the lighting library, every shot reference and the relationship screens (needs the dev server running, no browser required) |
 | `node scripts/verify6.mjs` | the same ground covered through a real browser, with screenshots (needs Playwright) |
 | `npx drizzle-kit push` | apply schema changes to the database |

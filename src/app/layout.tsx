@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { ThemeApplier } from "@/components/theme";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,5 +15,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
    * No inline scripts and no browser-only values above the fold: server HTML and the first client
    * render must be identical. Missing images are healed after hydration instead (see lib/image.ts).
    */
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body><ThemeApplier />{children}</body></html>;
 }

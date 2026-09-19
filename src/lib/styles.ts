@@ -1,0 +1,448 @@
+// The visual style library. A style steers how every AI model should render the shot —
+// its look, its finish, and (just as importantly) what must NOT go in the negative prompt.
+//
+// Each entry carries an example image under public/images/styles/. If one is missing at
+// runtime the picker falls back to `swatch`, mirroring the lighting library's behaviour.
+import type { FilmProject } from "./types";
+
+export interface VisualStyleEntry {
+  id: string;
+  name: string;
+  /** example image in public/images/styles/ */
+  image: string;
+  /** gradient shown if the example image is not on disk */
+  swatch: string;
+  summary: string;
+  useFor: string;
+  /** look tokens written into the positive prompt */
+  prompt: string;
+  /** render/finish descriptor used by the image models (replaces the default photoreal finish) */
+  finish: string;
+  /** true when the style should keep "photorealistic / 35mm" language and its negatives */
+  photoreal: boolean;
+  /** negative tokens that would fight this style and must be dropped from base negatives */
+  conflicts: string[];
+  /** extra negative tokens that protect this style from collapsing back to realism */
+  negative: string;
+}
+
+export const DEFAULT_STYLE_ID = "cinematic";
+
+export const VISUAL_STYLES: readonly VisualStyleEntry[] = [
+  {
+    id: "cinematic",
+    name: "Cinematic Realistic",
+    image: "/images/styles/cinematic-realistic.jpg",
+    swatch: "linear-gradient(135deg,#2b3440,#4a5a6b 55%,#8fa3b8)",
+    summary: "Photoreal 35mm film still with true-to-life texture and colour.",
+    useFor: "The default look. Grounded drama, anything that must feel real.",
+    prompt: "cinematic realism, photorealistic, natural light, shallow depth of field, true skin tones",
+    finish: "photorealistic, shot on 35mm film, masterclass color grading, subtle film grain, natural skin textures, optical depth of field",
+    photoreal: true,
+    conflicts: [],
+    negative: "",
+  },
+  {
+    id: "anime",
+    name: "Anime",
+    image: "/images/styles/anime.jpg",
+    swatch: "linear-gradient(135deg,#f8b26a,#c06b8e 55%,#5b4b8a)",
+    summary: "Hand-drawn 2D cel shading, luminous painted skies.",
+    useFor: "Heightened emotion, dreamlike sequences, stylised worlds.",
+    prompt: "japanese anime style, hand-drawn 2d cel animation, crisp line art, flat cel shading, luminous painted sky",
+    finish: "2d anime cel animation, clean line work, cel shading, vibrant anime color grade, studio-quality key visual",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, real photograph, 3d render, cgi",
+  },
+  {
+    id: "comic",
+    name: "Comic Book",
+    image: "/images/styles/comic-book.jpg",
+    swatch: "linear-gradient(135deg,#e8d33a,#c23b2e 55%,#1f2a44)",
+    summary: "Inked graphic-novel panel with halftone shading.",
+    useFor: "Punchy action, stylised violence, bold graphic storytelling.",
+    prompt: "american comic book style, bold ink outlines, halftone dot shading, limited print palette, graphic novel inking",
+    finish: "comic book illustration, heavy black inks, ben-day halftone dots, dynamic panel linework, printed color palette",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, real photograph, 3d render, smooth gradients",
+  },
+  {
+    id: "animation-3d",
+    name: "3D Animation",
+    image: "/images/styles/animation-3d.jpg",
+    swatch: "linear-gradient(135deg,#7fb2e5,#4a7bc8 55%,#2c4a80)",
+    summary: "Stylised CGI feature render with soft rounded forms.",
+    useFor: "Family-friendly tone, playful characters, animated features.",
+    prompt: "stylized 3d animated feature style, soft rounded forms, subsurface scattering, plush material textures, feature-quality cgi lighting",
+    finish: "3d animated feature render, stylized proportions, global illumination, soft cinematic cgi lighting, high-end render quality",
+    photoreal: false,
+    conflicts: ["3d render", "cartoon", "anime"],
+    negative: "photorealistic, live action, real photograph, uncanny, flat 2d",
+  },
+  {
+    id: "watercolor",
+    name: "Watercolor",
+    image: "/images/styles/watercolor.jpg",
+    swatch: "linear-gradient(135deg,#dce8ef,#9fb6c9 55%,#6d8aa5)",
+    summary: "Soft wet-on-wet washes with paper texture.",
+    useFor: "Memory, tenderness, dream and flashback passages.",
+    prompt: "loose watercolor painting, wet-on-wet pigment blooms, soft bleeding edges, visible paper tooth, muted washes",
+    finish: "traditional watercolor on paper, granulating pigment, soft edges, white reserves, delicate color washes",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, live action, hard edges, digital 3d, sharp vector lines",
+  },
+  {
+    id: "film-noir",
+    name: "Film Noir",
+    image: "/images/styles/film-noir.jpg",
+    swatch: "linear-gradient(135deg,#e8e8e8,#7a7a7a 45%,#0a0a0a)",
+    summary: "High-contrast black and white, hard shadows.",
+    useFor: "Mystery, moral ambiguity, period thrillers.",
+    prompt: "classic film noir, black and white, high contrast chiaroscuro, hard single-source key light, deep shadow, silver halide grain",
+    finish: "monochrome 35mm noir cinematography, crushed blacks, hard shadows, film grain, dramatic chiaroscuro",
+    photoreal: true,
+    conflicts: [],
+    negative: "color, saturated color, cartoon, anime, 3d render",
+  },
+  {
+    id: "cyberpunk",
+    name: "Cyberpunk Neon",
+    image: "/images/styles/cyberpunk.jpg",
+    swatch: "linear-gradient(135deg,#120b2e,#7a1fa2 45%,#00c2d1)",
+    summary: "Rain-slick neon in magenta and cyan.",
+    useFor: "Near-future settings, tech-noir, night city stories.",
+    prompt: "cyberpunk neon aesthetic, saturated magenta and cyan light, reflective wet surfaces, volumetric haze, anamorphic lens flare",
+    finish: "cinematic cyberpunk grade, neon-lit night, reflective rain-slick surfaces, atmospheric haze, anamorphic flare",
+    photoreal: true,
+    conflicts: [],
+    negative: "cartoon, anime, 3d render, daylight, flat lighting",
+  },
+  {
+    id: "claymation",
+    name: "Claymation",
+    image: "/images/styles/claymation.jpg",
+    swatch: "linear-gradient(135deg,#d8b98a,#b08968 55%,#7f5539)",
+    summary: "Stop-motion clay with visible fingerprint texture.",
+    useFor: "Whimsy, handmade charm, tactile children's worlds.",
+    prompt: "stop-motion claymation, handcrafted plasticine figures, visible fingerprint texture, miniature practical set, macro depth of field",
+    finish: "aardman-style stop motion, clay and plasticine textures, miniature diorama, warm practical studio lighting",
+    photoreal: false,
+    conflicts: ["3d render", "cartoon", "anime"],
+    negative: "photorealistic, live action, cgi smoothness, digital 3d",
+  },
+  {
+    id: "pixel-art",
+    name: "Pixel Art",
+    image: "/images/styles/pixel-art.jpg",
+    swatch: "linear-gradient(135deg,#1a1a2e,#3d5a80 50%,#ee6c4d)",
+    summary: "Chunky 16-bit pixels with a dithered palette.",
+    useFor: "Retro games, nostalgic tone, lo-fi charm.",
+    prompt: "16-bit pixel art, chunky visible square pixels, limited dithered palette, hard-edged color banding, snes-era game background",
+    finish: "retro pixel art, crisp pixel grid, dithering, limited color palette, no anti-aliasing",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render", "blurry"],
+    negative: "photorealistic, live action, smooth gradients, anti-aliasing, 3d render",
+  },
+  {
+    id: "oil-painting",
+    name: "Oil Painting",
+    image: "/images/styles/oil-painting.jpg",
+    swatch: "linear-gradient(135deg,#5c4632,#8a6642 50%,#c9a227)",
+    summary: "Classical impasto brushwork on linen.",
+    useFor: "Period pieces, painterly lyricism, gallery-grade stills.",
+    prompt: "classical impasto oil painting, thick confident brushstrokes, palette knife texture, warm chiaroscuro glazing, rich earth pigments",
+    finish: "traditional oil painting on linen, visible brushwork, chiaroscuro glazing, luminous old-master light, canvas texture",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, live action, digital 3d, flat color, photograph",
+  },
+  {
+    id: "classic-cartoon",
+    name: "Classic Cartoon",
+    image: "/images/styles/classic-cartoon.jpg",
+    swatch: "linear-gradient(135deg,#f2b134,#e2574c 55%,#2b6cb0)",
+    summary: "Bold flat 2D cartoon with saturday-morning energy.",
+    useFor: "Comedy, kids, playful exaggeration, title gags.",
+    prompt: "classic 2d cartoon, bold flat saturated colors, thick confident outlines, exaggerated squash-and-stretch proportions, saturday-morning cartoon",
+    finish: "vintage hand-drawn cartoon, flat cel color, bold outlines, expressive exaggerated poses",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, 3d render, subtle realism",
+  },
+  {
+    id: "documentary",
+    name: "Documentary",
+    image: "/images/styles/documentary.jpg",
+    swatch: "linear-gradient(135deg,#b8b3a8,#8a857a 55%,#5c584f)",
+    summary: "Handheld vérité, available light, unpolished and real.",
+    useFor: "Nonfiction tone, grounded realism, found-footage intimacy.",
+    prompt: "documentary vérité, handheld available-light framing, observational composition, real locations, natural muted color",
+    finish: "documentary cinematography, handheld available-light realism, unpolished vérité texture, natural color",
+    photoreal: true,
+    conflicts: [],
+    negative: "studio lighting, staged, cgi, cartoon, anime",
+  },
+  {
+    id: "rotoscoped",
+    name: "Rotoscoped",
+    image: "/images/styles/rotoscoped.jpg",
+    swatch: "linear-gradient(135deg,#8a9bb0,#5c6b80 55%,#31404f)",
+    summary: "Hand-traced linework shimmering over live action.",
+    useFor: "Dreamlike realism, memory, altered-perception sequences.",
+    prompt: "rotoscoped animation, hand-traced shimmering contour lines over live action, shifting painted outlines, muted realistic color",
+    finish: "rotoscope animation, traced-over-film linework, shifting painted contours, a scanner darkly look",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, clean vector, 3d render, flat cel",
+  },
+  {
+    id: "ukiyo-e",
+    name: "Ukiyo-e Woodblock",
+    image: "/images/styles/ukiyo-e.jpg",
+    swatch: "linear-gradient(135deg,#d9c8a9,#a9805b 50%,#31567a)",
+    summary: "Japanese woodblock print with flat color planes.",
+    useFor: "Period Japan, poetic landscapes, gallery-grade stills.",
+    prompt: "japanese ukiyo-e woodblock print, flat planes of color, bold carved contour lines, washi paper texture, hokusai-inspired linework",
+    finish: "ukiyo-e woodblock print, flat color planes, carved outlines, mineral pigment palette, paper grain",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, 3d, gradient shading, live action",
+  },
+  {
+    id: "line-art",
+    name: "Line Art",
+    image: "/images/styles/line-art.jpg",
+    swatch: "linear-gradient(135deg,#ffffff,#e8e8e8 60%,#c9c9c9)",
+    summary: "Single continuous black line on white, no shading.",
+    useFor: "Minimalist title cards, elegant transitions, graphic motifs.",
+    prompt: "minimalist single-line art, one continuous black ink contour on white, no shading, generous negative space",
+    finish: "clean single-line illustration, black ink on white, no fill, refined negative space",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render", "blurry"],
+    negative: "photorealistic, color, shading, 3d, busy detail",
+  },
+  {
+    id: "poster",
+    name: "Mid-century Poster",
+    image: "/images/styles/poster.jpg",
+    swatch: "linear-gradient(135deg,#2a9d8f,#e9c46a 55%,#e76f51)",
+    summary: "Flat gouache shapes in a retro limited palette.",
+    useFor: "Stylised key art, title sequences, retro marketing beats.",
+    prompt: "mid-century modern poster illustration, flat gouache geometric shapes, limited retro palette, simplified bold forms, screen-print texture",
+    finish: "mid-century gouache poster, flat geometric shapes, retro limited palette, screen-print grain",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, 3d, fine photographic detail, live action",
+  },
+  {
+    id: "super8",
+    name: "Super 8 Home Movie",
+    image: "/images/styles/super8.jpg",
+    swatch: "linear-gradient(135deg,#e8c39a,#c98a5e 55%,#8a5a3b)",
+    summary: "Faded kodachrome, gate weave, dust and scratches.",
+    useFor: "Memory, nostalgia, found-footage, period flashbacks.",
+    prompt: "vintage super 8 home movie, faded kodachrome color, gate weave, dust and scratches, overexposed highlights, nostalgic grain",
+    finish: "super 8 film look, faded kodachrome, gate weave, dust and scratches, home-movie grain",
+    photoreal: true,
+    conflicts: [],
+    negative: "cgi, cartoon, anime, clean digital, sharp 4k",
+  },
+  {
+    id: "synthwave",
+    name: "Synthwave",
+    image: "/images/styles/synthwave.jpg",
+    swatch: "linear-gradient(135deg,#2b1055,#7597de 0%,#ff2975 60%,#24c6dc)",
+    summary: "Neon grid horizon, chrome, magenta-cyan sunset.",
+    useFor: "Retro-future, dream sequences, 80s pastiche.",
+    prompt: "retro 80s synthwave, neon grid horizon, chrome accents, magenta and cyan sunset, striped sun, subtle scanlines, outrun aesthetic",
+    finish: "synthwave digital art, neon grid, chrome highlights, magenta-cyan grade, scanlines",
+    photoreal: false,
+    conflicts: ["3d render", "cartoon", "anime"],
+    negative: "photorealistic, natural color, daylight, muted palette",
+  },
+  {
+    id: "charcoal",
+    name: "Charcoal Sketch",
+    image: "/images/styles/charcoal.jpg",
+    swatch: "linear-gradient(135deg,#e8e8e8,#7a7a7a 45%,#141414)",
+    summary: "Gestural charcoal strokes, smudged and high-contrast.",
+    useFor: "Somber drama, internal states, storyboard roughs as final look.",
+    prompt: "expressive charcoal sketch, heavy gestural strokes, smudged graphite shading, high contrast on textured paper",
+    finish: "charcoal drawing, gestural strokes, smudged shading, textured paper, dramatic contrast",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, color, clean lines, 3d, smooth gradients",
+  },
+  {
+    id: "collage",
+    name: "Paper Collage",
+    image: "/images/styles/collage.jpg",
+    swatch: "linear-gradient(135deg,#d9a5a5,#a5b8d9 50%,#a5d9b8)",
+    summary: "Torn magazine paper, layered cut edges, mixed media.",
+    useFor: "Playful montage, scrapbook memory, handmade texture.",
+    prompt: "handmade paper cutout collage, torn magazine textures, layered cut paper, visible torn edges, mixed media",
+    finish: "paper collage, torn edges, layered cut paper, mixed-media texture, visible glue marks",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, 3d, seamless digital, smooth gradients",
+  },
+  {
+    id: "ghibli",
+    name: "Studio Ghibli",
+    image: "/images/styles/ghibli.jpg",
+    swatch: "linear-gradient(135deg,#a8d5a2,#6fae7c 55%,#3d7a5c)",
+    summary: "Lush painterly pastoral with soft gouache light.",
+    useFor: "Wonder, gentle fantasy, nature-forward storytelling.",
+    prompt: "studio ghibli style, lush painterly pastoral backgrounds, soft gouache light, gentle whimsical detail, hand-painted clouds and foliage",
+    finish: "ghibli-esque painterly animation, soft gouache backgrounds, warm natural light, whimsical hand-painted detail",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, 3d render, harsh digital",
+  },
+  {
+    id: "manga",
+    name: "Manga",
+    image: "/images/styles/manga.jpg",
+    swatch: "linear-gradient(135deg,#f5f5f5,#bdbdbd 50%,#1a1a1a)",
+    summary: "Black-and-white ink panels with screentone.",
+    useFor: "Graphic-novel beats, dramatic inner monologue, action.",
+    prompt: "black and white manga panel, dynamic ink linework, screentone shading, speed lines, high-contrast japanese comic storytelling",
+    finish: "manga ink art, screentone gradients, expressive linework, high-contrast black and white",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, color, 3d render",
+  },
+  {
+    id: "hanna-barbera",
+    name: "Hanna-Barbera",
+    image: "/images/styles/hanna-barbera.jpg",
+    swatch: "linear-gradient(135deg,#f4a259,#e76f51 55%,#264653)",
+    summary: "60s limited-animation TV cartoon, flat and bold.",
+    useFor: "Retro comedy, nostalgic TV pastiche, simple gags.",
+    prompt: "1960s hanna-barbera limited animation, flat simple shapes, bold outlines, minimal retro tv backgrounds, saturday-morning economy",
+    finish: "vintage limited-animation tv cartoon, flat color fields, bold outlines, simple retro backgrounds",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, 3d render, detailed shading",
+  },
+  {
+    id: "isometric",
+    name: "Isometric",
+    image: "/images/styles/isometric.jpg",
+    swatch: "linear-gradient(135deg,#cdeac0,#a2d5f2 55%,#f4a9a8)",
+    summary: "Clean isometric diorama, miniature scale-model.",
+    useFor: "Explainers, world-building maps, playful overviews.",
+    prompt: "isometric 3d diorama, clean isometric projection, miniature scale-model geometry, soft even studio lighting",
+    finish: "isometric vector-style 3d diorama, crisp geometry, miniature scale-model look, soft studio light",
+    photoreal: false,
+    conflicts: ["3d render", "cartoon", "anime"],
+    negative: "photorealistic, live action, perspective distortion",
+  },
+  {
+    id: "art-deco",
+    name: "Art Deco",
+    image: "/images/styles/art-deco.jpg",
+    swatch: "linear-gradient(135deg,#1a1a1a,#c9a227 55%,#0f5257)",
+    summary: "Geometric gold-and-black 1920s symmetry.",
+    useFor: "Period glamour, title cards, elegant transitions.",
+    prompt: "art deco poster, geometric symmetry, gold and black palette, sunburst and chevron motifs, elegant 1920s glamour",
+    finish: "art deco illustration, geometric symmetry, metallic gold accents, streamlined 1920s ornament",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, 3d, organic clutter, live action",
+  },
+  {
+    id: "impressionist",
+    name: "Impressionist",
+    image: "/images/styles/impressionist.jpg",
+    swatch: "linear-gradient(135deg,#bfe3f2,#8fc1e3 50%,#e8b4c8)",
+    summary: "Dappled light and broken visible brushstrokes.",
+    useFor: "Memory, atmosphere, painterly lyricism.",
+    prompt: "impressionist oil painting, dappled light, broken visible brushstrokes, shimmering color, plein-air atmosphere",
+    finish: "impressionist painting, dappled light, loose broken brushwork, luminous color vibration",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, sharp focus, clean lines, 3d",
+  },
+  {
+    id: "pop-art",
+    name: "Pop Art",
+    image: "/images/styles/pop-art.jpg",
+    swatch: "linear-gradient(135deg,#f94144,#f9c74f 50%,#277da1)",
+    summary: "Bold primaries and Ben-Day dots, Warhol punch.",
+    useFor: "Ironic beats, media commentary, bold graphic moments.",
+    prompt: "pop art screen print, bold flat primary colors, ben-day dots, thick black outlines, warhol-lichtenstein graphic punch",
+    finish: "pop art screen print, flat primaries, ben-day dots, bold outlines",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, muted color, 3d render, subtle gradients",
+  },
+  {
+    id: "stained-glass",
+    name: "Stained Glass",
+    image: "/images/styles/stained-glass.jpg",
+    swatch: "linear-gradient(135deg,#9d0208,#03045e 50%,#ffba08)",
+    summary: "Leaded colored glass glowing with backlight.",
+    useFor: "Mythic or sacred beats, cathedral light, allegory.",
+    prompt: "stained glass window, leaded colored glass panes, luminous backlight, cathedral jewel tones",
+    finish: "stained glass artwork, lead lines, translucent colored glass, glowing backlight",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration", "3d render"],
+    negative: "photorealistic, 3d, matte flat lighting, live action",
+  },
+  {
+    id: "technicolor",
+    name: "Technicolor",
+    image: "/images/styles/technicolor.jpg",
+    swatch: "linear-gradient(135deg,#e63946,#f1faee 50%,#457b9d)",
+    summary: "Hyper-saturated three-strip studio-era color.",
+    useFor: "Musicals, heightened period romance, dreamlike gloss.",
+    prompt: "three-strip technicolor film still, hyper-saturated primary colors, glossy studio-era sheen, 1950s musical richness",
+    finish: "three-strip technicolor look, saturated primaries, glossy studio-era color, rich contrast",
+    photoreal: true,
+    conflicts: [],
+    negative: "desaturated, muted color, cartoon, anime, 3d render",
+  },
+  {
+    id: "polaroid",
+    name: "Polaroid",
+    image: "/images/styles/polaroid.jpg",
+    swatch: "linear-gradient(135deg,#e9e5da,#c9c2b2 55%,#9a9180)",
+    summary: "Faded instant-film snapshot with soft flash.",
+    useFor: "Intimate memory, found-footage inserts, nostalgia.",
+    prompt: "instant film photograph, faded nostalgic color cast, soft flash falloff, slight white vignette, amateur snapshot charm",
+    finish: "instant film look, faded color cast, soft flash, snapshot grain and vignette",
+    photoreal: true,
+    conflicts: [],
+    negative: "cgi, cartoon, anime, clean digital, sharp studio",
+  },
+] as const;
+
+export function visualStyle(id?: string): VisualStyleEntry {
+  return VISUAL_STYLES.find(s => s.id === id) || VISUAL_STYLES.find(s => s.id === DEFAULT_STYLE_ID)!;
+}
+
+/** The look line written into every prompt for the chosen style. */
+export function stylePromptLine(project: FilmProject, entry: VisualStyleEntry): string {
+  const genre = `${project.genre.toLowerCase()} ${project.format.toLowerCase()}`;
+  const paletteNote = project.notes.find(n => /visual|look|style|palette|cinematograph/i.test(`${n.title} ${(n.tags || []).join(" ")}`));
+  const palette = paletteNote ? (paletteNote.content || "").split(/(?<=[.!?])\s/).slice(0, 2).join(" ").replace(/[.!?]+$/, "").trim() : "";
+  return `${genre}, ${entry.prompt}${palette ? `. ${palette}` : ""}`;
+}
+
+/** Strip negative tokens that would contradict the style, then add the style's own guards. */
+export function negativeFor(base: string, entry: VisualStyleEntry): string {
+  if (entry.photoreal && !entry.negative) return base;
+  const kept = base
+    .split(",")
+    .map(s => s.trim())
+    .filter(Boolean)
+    .filter(tok => !entry.conflicts.some(c => tok.toLowerCase().includes(c)));
+  const extra = entry.negative ? entry.negative.split(",").map(s => s.trim()).filter(Boolean) : [];
+  const merged = [...kept, ...extra];
+  // de-duplicate, preserving order
+  return [...new Set(merged)].join(", ");
+}

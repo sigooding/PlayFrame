@@ -63,6 +63,8 @@ export interface Scene {
   kind?: SceneKind;
   /** the light this scene is lit in — inherited by its shots unless a shot overrides it */
   lighting?: Lighting;
+  /** default visual style for this scene's shots — inherited unless a shot overrides it */
+  style?: string;
 }
 
 export interface Character {
@@ -93,6 +95,8 @@ export interface StoryFrame {
   angle?: CameraAngle;
   lens?: Lens;
   lighting?: Lighting;
+  /** the visual style this shot is rendered in — persisted so storyboards remember their look */
+  style?: string;
   transition?: Transition;
   mood?: string;
 }
