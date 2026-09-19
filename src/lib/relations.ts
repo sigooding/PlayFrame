@@ -69,6 +69,8 @@ export interface CastLink {
   kinds: RelationKind[];
   /** a sentence a reader instantly understands: "Ella is Thomas's child" */
   gist: string;
+  /** both perspectives on the relationship */
+  sentences: string[];
   /** true when the link only exists on one of the two cards */
   oneSided: boolean;
   notes: string[];
@@ -91,7 +93,7 @@ export function castLinks(characters: Character[]): CastLink[] {
       if (!target || target.id === owner.id) continue;
       const key = pairKey(owner.id, target.id);
       const [first, second] = owner.id < target.id ? [owner, target] : [target, owner];
-      const link = links.get(key) || { id: key, a: first, b: second, labels: [], kinds: [], gist: "", oneSided: true, notes: [], tone: relationTone[relation.kind] };
+      const link = links.get(key) || { id: key, a: first, b: second, labels: [], kinds: [], gist: "", sentences: [], oneSided: true, notes: [], tone: relationTone[relation.kind] };
       if (!link.labels.some(l => l.owner.id === owner.id && l.kind === relation.kind)) link.labels.push({ owner, kind: relation.kind, note: relation.note });
       if (!link.kinds.includes(relation.kind)) link.kinds.push(relation.kind);
       if (relation.note && !link.notes.includes(relation.note)) link.notes.push(relation.note);
@@ -104,15 +106,23 @@ export function castLinks(characters: Character[]): CastLink[] {
     // Two sides are consistent when each one says the converse of the other.
     link.oneSided = !(aSays && bSays);
     // a's card holds a's wording, which describes b: "Thomas is Ella's parent".
-    const fromA = aSays ? `${link.b.name} is ${link.a.name}'s ${relationNoun[aSays.kind]}` : "";
-    const fromB = bSays ? `${link.a.name} is ${link.b.name}'s ${relationNoun[bSays.kind]}` : "";
-    // Prefer one sentence. Symmetrical relationships read best as "A and B are siblings".
+    const fromA = aSays
+      ? `${link.b.name} is ${link.a.name}'s ${relationNoun[aSays.kind]}`
+      : (bSays ? `${link.b.name} is ${link.a.name}'s ${relationNoun[converseRelation[bSays.kind]]}` : "");
+    const fromB = bSays
+      ? `${link.a.name} is ${link.b.name}'s ${relationNoun[bSays.kind]}`
+      : (aSays ? `${link.a.name} is ${link.b.name}'s ${relationNoun[converseRelation[aSays.kind]]}` : "");
+
+    // Prefer one sentence for gist. Symmetrical relationships read best as "A and B are siblings".
     const shared = aSays && bSays && aSays.kind === bSays.kind ? pluralNoun[aSays.kind] : undefined;
     link.gist = shared
       ? `${link.a.name} and ${link.b.name} are ${shared}`
-      : aSays && bSays && converseRelation[aSays.kind] === bSays.kind
-        ? fromA
-        : [fromA, fromB].filter(Boolean).join(" · ") || `${link.a.name} and ${link.b.name}`;
+      : fromA || fromB || `${link.a.name} and ${link.b.name}`;
+
+    const sentences: string[] = [];
+    if (fromA) sentences.push(fromA);
+    if (fromB && fromB !== fromA) sentences.push(fromB);
+    link.sentences = sentences;
     link.tone = relationTone[link.kinds[0]];
   }
   return [...links.values()].sort((x, y) => x.a.name.localeCompare(y.a.name) || x.b.name.localeCompare(y.b.name));
