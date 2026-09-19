@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Check, CheckCheck, ClipboardCopy, Info, Sparkles } from "lucide-react";
+import { Check, CheckCheck, ChevronDown, ChevronUp, ClipboardCopy, Info, LayoutGrid, List, Pencil, Plus, Sparkles, Table2 } from "lucide-react";
 import type { FilmProject, StoryFrame } from "@/lib/types";
 import { downloadFile, slugify } from "@/lib/export";
 import { onImageError } from "@/lib/image";
 import { VisualStylePicker } from "./style-picker";
 import { DEFAULT_STYLE_ID, VISUAL_STYLES, visualStyle } from "@/lib/styles";
 import { buildFramePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
+import { FrameTable } from "./storyboard";
 
 const LS_STYLE = "frame-last-style";
 const LS_PLATFORM = "frame-last-platform";
@@ -21,10 +22,13 @@ const writeLS = (key: string, value: string) => { try { if (typeof window !== "u
  * visual style is persisted onto the selected shots (and remembered for next time), so a
  * storyboard keeps its look across sessions. Used both as a top-level tab and inside a modal.
  */
-export function PromptStudio({ project, initialSceneId, onApplyStyle, onClose }: {
+export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot, onEditShot, onUpdateShot, onClose }: {
   project: FilmProject;
   initialSceneId?: string;
   onApplyStyle: (frameIds: string[], styleId: string) => void;
+  onAddShot?: (sceneId?: string) => void;
+  onEditShot?: (frame: StoryFrame) => void;
+  onUpdateShot?: (frame: StoryFrame) => void;
   onClose?: () => void;
 }) {
   const [sceneId, setSceneId] = useState(initialSceneId || project.scenes[0]?.id || "");
@@ -33,6 +37,7 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onClose }:
   const [scope, setScope] = useState<"scene" | "project">("scene");
   const [selected, setSelected] = useState<string[] | null>(null);
   const [styleOverride, setStyleOverride] = useState<string | null>(null);
+  const [showTable, setShowTable] = useState(false);
   const [rememberedStyle] = useState<string | null>(() => { const s = readLS(LS_STYLE); return hasStyle(s) ? s : null; });
   const [platform, setPlatform] = useState<PlatformId>(() => {
     const saved = readLS(LS_PLATFORM) as PlatformId | null;
@@ -105,6 +110,17 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onClose }:
         <div className="studio-scope">
           <div className="select-wrap"><select aria-label="Scope for prompts" value={scope} onChange={e => { setScope(e.target.value as "scene" | "project"); setSelected(null); setStyleOverride(null); }}><option value="scene">This scene</option><option value="project">Whole project</option></select></div>
           {scope === "scene" && <div className="select-wrap scene-filter"><select aria-label="Scene for prompts" value={sceneId} onChange={e => { setSceneId(e.target.value); setSelected(null); setStyleOverride(null); }}>{project.scenes.map((s, i) => <option key={s.id} value={s.id}>{String(i + 1).padStart(2, "0")} · {s.title} — {s.location}</option>)}</select></div>}
+          {onAddShot && (
+            <button
+              type="button"
+              className="button button-small prompt-add-shot-btn"
+              onClick={() => onAddShot(scope === "scene" ? sceneId : undefined)}
+              title="Add shot to this project or scene"
+            >
+              <Plus size={14} />
+              Add shot
+            </button>
+          )}
         </div>
         <div className="platform-picker" role="tablist" aria-label="AI model">
           {visiblePlatforms.map(p => (
@@ -125,22 +141,30 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onClose }:
 
       {scopeFrames.length === 0 ? <div className="empty-state">
         <h3>No shots here yet.</h3>
-        <p>Add frames on the storyboard, then batch their prompts in the studio.</p>
+        <p>Add frames to batch their prompts in the studio.</p>
+        {onAddShot && <button type="button" className="button button-primary" onClick={() => onAddShot(scope === "scene" ? sceneId : undefined)}><Plus size={15} />Add shot</button>}
       </div> : <div className="studio-grid">
         <div className="studio-shots">
           <div className="studio-shots-head">
             <span className="eyebrow">SHOTS · {chosen.length}/{scopeFrames.length} selected</span>
-            <span className="studio-shots-actions"><button type="button" className="text-button" onClick={() => setSelected(scopeFrames.map(f => f.id))}>All</button><button type="button" className="text-button" onClick={() => setSelected([])}>None</button></span>
+            <span className="studio-shots-actions">
+              {onAddShot && <button type="button" className="text-button prompt-studio-add-shot" onClick={() => onAddShot(scope === "scene" ? sceneId : undefined)} title="Add a shot"><Plus size={13} />Add shot</button>}
+              <button type="button" className="text-button" onClick={() => setSelected(scopeFrames.map(f => f.id))}>All</button>
+              <button type="button" className="text-button" onClick={() => setSelected([])}>None</button>
+            </span>
           </div>
           <div className="studio-shot-list">
             {scopeFrames.map(f => {
               const on = selectedIds.includes(f.id);
               const sc = project.scenes.find(s => s.id === f.sceneId);
-              return <button type="button" key={f.id} className={`studio-shot-row ${on ? "selected" : ""}`} aria-pressed={on} onClick={() => toggle(f.id)}>
-                <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
-                <span className="studio-shot-text"><strong>{f.title}</strong><small>{scope === "project" && sc ? `${sc.title} · ` : ""}{f.shotType} · {f.duration}s{hasStyle(f.style) ? ` · ${visualStyle(f.style).name}` : ""}</small></span>
-                {on && <Check size={14} />}
-              </button>;
+              return <div key={f.id} className={`studio-shot-item ${on ? "selected" : ""}`}>
+                <button type="button" className="studio-shot-row" aria-pressed={on} onClick={() => toggle(f.id)}>
+                  <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
+                  <span className="studio-shot-text"><strong>{f.title}</strong><small>{scope === "project" && sc ? `${sc.title} · ` : ""}{f.shotType} · {f.duration}s{hasStyle(f.style) ? ` · ${visualStyle(f.style).name}` : ""}</small></span>
+                  {on && <Check size={14} className="studio-shot-check" />}
+                </button>
+                {onEditShot && <button type="button" className="studio-shot-edit" aria-label={`Edit ${f.title}`} title={`Edit ${f.title}`} onClick={() => onEditShot(f)}><Pencil size={12} /></button>}
+              </div>;
             })}
           </div>
         </div>
@@ -159,6 +183,43 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onClose }:
           <textarea className="prompt-output studio-output-text" readOnly rows={16} value={combined} aria-label="Combined prompts for the selected shots" onFocus={e => e.target.select()} />
         </div>
       </div>}
+
+      {scopeFrames.length > 0 && (
+        <section className="prompt-studio-shotlist-section">
+          <div className="prompt-studio-shotlist-head">
+            <button
+              type="button"
+              className="prompt-studio-shotlist-toggle"
+              onClick={() => setShowTable(!showTable)}
+              aria-expanded={showTable}
+            >
+              <Table2 size={16} />
+              <span>Shot list details ({scopeFrames.length} shots)</span>
+              {showTable ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+            </button>
+            {onAddShot && (
+              <button
+                type="button"
+                className="button button-small"
+                onClick={() => onAddShot(scope === "scene" ? sceneId : undefined)}
+              >
+                <Plus size={14} />
+                Add shot
+              </button>
+            )}
+          </div>
+          {showTable && (
+            <div className="prompt-studio-table-wrap">
+              <FrameTable
+                project={project}
+                frames={scopeFrames}
+                onEdit={f => (onEditShot ? onEditShot(f) : undefined)}
+                onUpdate={onUpdateShot}
+              />
+            </div>
+          )}
+        </section>
+      )}
     </div>
     <div className="modal-footer">
       <span className="footer-left export-meta"><Sparkles size={13} /> Prompts update as you change the style, model, or selection. The look is saved to your shots.</span>

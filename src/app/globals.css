@@ -543,6 +543,20 @@ img{display:block;max-width:100%}
 .studio-shots-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .studio-shots-actions{display:inline-flex;gap:10px}
 .studio-shot-list{display:flex;flex-direction:column;gap:6px;max-height:400px;overflow:auto;padding-right:4px}
+.studio-shot-item{display:flex;align-items:center;position:relative;border:1px solid #e3e8db;border-radius:7px;background:#fbfdf8;transition:border-color .15s,background .15s}
+.studio-shot-item:hover{border-color:#b3c79d}
+.studio-shot-item.selected{border-color:#486e44;background:#f0f6ec;box-shadow:0 0 0 2px #486e4420}
+.studio-shot-item .studio-shot-row{flex:1;min-width:0;display:flex;align-items:center;gap:9px;padding:6px;border:none;background:transparent;box-shadow:none;text-align:left;cursor:pointer}
+.studio-shot-edit{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:4px;color:#7c8c70;background:transparent;margin-right:6px;flex-shrink:0;cursor:pointer;transition:all .15s}
+.studio-shot-edit:hover{background:#e3ebd9;color:#355440}
+.studio-shot-check{margin-right:2px;color:#486e44;flex-shrink:0}
+.prompt-studio-add-shot{font-weight:600;display:inline-flex;align-items:center;gap:4px;color:#486e44}
+.prompt-add-shot-btn{margin-left:4px;gap:5px}
+.prompt-studio-shotlist-section{margin-top:16px;border-top:1px solid #dfe7d5;padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.prompt-studio-shotlist-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.prompt-studio-shotlist-toggle{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;color:#355440;background:#f0f6ec;border:1px solid #d4e2cd;padding:7px 12px;border-radius:6px;cursor:pointer;transition:all .15s}
+.prompt-studio-shotlist-toggle:hover{background:#e3ebd9}
+.prompt-studio-table-wrap{border-radius:7px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
 .studio-shot-row{display:flex;align-items:center;gap:9px;padding:6px;border:1px solid #e3e8db;border-radius:7px;background:#fbfdf8;text-align:left;transition:border-color .15s,background .15s;cursor:pointer}
 .studio-shot-row:hover{border-color:#b3c79d}
 .studio-shot-row.selected{border-color:#486e44;background:#f0f6ec;box-shadow:0 0 0 2px #486e4420}

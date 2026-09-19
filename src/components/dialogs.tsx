@@ -185,8 +185,8 @@ export function ActsDialog({ acts, scenes, onClose, onSave }: { acts: Act[]; sce
   </Modal>;
 }
 
-export function PromptDialog({ project, initialSceneId, onClose, onApplyStyle }: { project: FilmProject; initialSceneId?: string; onClose: () => void; onApplyStyle: (frameIds: string[], styleId: string) => void }) {
+export function PromptDialog({ project, initialSceneId, onClose, onApplyStyle, onAddShot, onEditShot, onUpdateShot }: { project: FilmProject; initialSceneId?: string; onClose: () => void; onApplyStyle: (frameIds: string[], styleId: string) => void; onAddShot?: (sceneId?: string) => void; onEditShot?: (frame: StoryFrame) => void; onUpdateShot?: (frame: StoryFrame) => void }) {
   return <Modal wide title="The prompt studio." subtitle="Pick the shots, choose a look and a model, and copy every prompt in one go." onClose={onClose} className="prompt-modal">
-    <PromptStudio project={project} initialSceneId={initialSceneId} onApplyStyle={onApplyStyle} onClose={onClose} />
+    <PromptStudio project={project} initialSceneId={initialSceneId} onApplyStyle={onApplyStyle} onAddShot={onAddShot} onEditShot={onEditShot} onUpdateShot={onUpdateShot} onClose={onClose} />
   </Modal>;
 }
