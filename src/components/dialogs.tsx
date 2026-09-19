@@ -7,7 +7,7 @@ import { LightingPicker } from "./lighting-picker";
 import { downloadFile, exportShotList, printProject, slugify } from "@/lib/export";
 import type { Act, ActPart, FilmProject, ProjectNote, Scene, SceneKind } from "@/lib/types";
 import { kindMeta, sceneKinds } from "@/lib/structure";
-import { buildFramePrompt, buildScenePrompt, PLATFORMS, type PlatformId } from "@/lib/prompt";
+import { buildFramePrompt, buildScenePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { onImageError } from "@/lib/image";
 
 type ProjectInput = { title: string; description: string; genre: string; format: string; template: string };
@@ -188,14 +188,114 @@ export function ActsDialog({ acts, scenes, onClose, onSave }: { acts: Act[]; sce
 export function PromptDialog({ project, initialSceneId, onClose }: { project: FilmProject; initialSceneId?: string; onClose: () => void }) {
   const [sceneId, setSceneId] = useState(initialSceneId || project.scenes[0]?.id || "");
   const [platform, setPlatform] = useState<PlatformId>("seedance");
+  const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copied, setCopied] = useState<string | null>(null);
+
   const scene = project.scenes.find(s => s.id === sceneId);
   const frames = project.frames.filter(f => f.sceneId === sceneId);
+  const currentModel = PLATFORMS.find(p => p.id === platform) || PLATFORMS[0];
   const scenePrompt = scene ? buildScenePrompt(project, scene, platform) : "";
-  async function copy(text: string, key: string) { try { await navigator.clipboard.writeText(text); setCopied(key); setTimeout(() => setCopied(null), 2000); } catch { /* selection fallback */ } }
+
+  async function copy(text: string, key: string) {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(key);
+      setTimeout(() => setCopied(null), 2000);
+    } catch {
+      /* selection fallback */
+    }
+  }
+
   function downloadAll() {
-    const body = [`${project.title.toUpperCase()} — AI VIDEO PROMPTS (${PLATFORMS.find(p => p.id === platform)?.name})`, "", "=== SCENE SEQUENCE ===", scenePrompt, "", ...frames.flatMap((f, i) => [`=== SHOT ${i + 1}: ${f.title} ===`, buildFramePrompt(project, f, platform), ""])].join("\n");
+    const isImage = currentModel?.kind === "image";
+    const body = [
+      `${project.title.toUpperCase()} — ${isImage ? "AI IMAGE & STORYBOARD PROMPTS" : "AI VIDEO PROMPTS"} (${currentModel?.name})`,
+      "",
+      "=== SCENE SEQUENCE ===",
+      scenePrompt,
+      "",
+      ...frames.flatMap((f, i) => [`=== SHOT ${i + 1}: ${f.title} ===`, buildFramePrompt(project, f, platform), ""]),
+    ].join("\n");
     downloadFile(body, `${slugify(project.title)}-${slugify(scene?.title || "scene")}-prompts.txt`);
   }
-  return <Modal wide title="From storyboard to generated video." subtitle="Ready-to-paste prompts for MiniMax Hailuo, Seedance, Kling, Runway, and Veo — built from everything in the scene." onClose={onClose} className="prompt-modal"><div className="modal-body prompt-studio"><div className="prompt-toolbar"><div className="select-wrap scene-filter"><select aria-label="Scene for prompts" value={sceneId} onChange={e => setSceneId(e.target.value)}>{project.scenes.map((s, i) => <option key={s.id} value={s.id}>{String(i + 1).padStart(2, "0")} · {s.title} — {s.location}</option>)}</select></div><div className="platform-picker" role="tablist" aria-label="Video model">{PLATFORMS.map(p => <button type="button" key={p.id} role="tab" aria-selected={platform === p.id} className={platform === p.id ? "active" : ""} onClick={() => setPlatform(p.id)}>{p.name}</button>)}</div></div><p className="platform-hint"><Info size={13} />{PLATFORMS.find(p => p.id === platform)?.hint}</p>{!scene ? <div className="empty-state"><h3>Add a scene first.</h3><p>Prompts are built from the scene, its cast, and its shots.</p></div> : <><div className="prompt-block"><div className="prompt-block-head"><div><span className="eyebrow">WHOLE SCENE · {frames.length} SHOT{frames.length === 1 ? "" : "S"}</span><h3>{scene.title}</h3></div><button type="button" className="button button-primary" onClick={() => copy(scenePrompt, "scene")}>{copied === "scene" ? <CheckCheck size={15} /> : <ClipboardCopy size={15} />}{copied === "scene" ? "Copied" : "Copy sequence"}</button></div><textarea className="prompt-output" readOnly rows={10} value={scenePrompt} aria-label="Scene sequence prompt" onFocus={e => e.target.select()} /></div><div className="prompt-shots"><span className="eyebrow">SHOT BY SHOT</span>{frames.length === 0 && <p className="chip-hint">No shots in this scene yet. Add frames on the storyboard to generate per-shot prompts.</p>}{frames.map((f, i) => { const text = buildFramePrompt(project, f, platform); return <div key={f.id} className="prompt-shot"><img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} /><div className="prompt-shot-body"><div className="prompt-shot-head"><strong>Shot {i + 1} · {f.title}</strong><span>{f.shotType} · {f.movement} · {f.duration}s{f.transition ? ` · ${f.transition} in` : ""}</span><button type="button" className="button button-small" onClick={() => copy(text, f.id)}>{copied === f.id ? <CheckCheck size={13} /> : <ClipboardCopy size={13} />}{copied === f.id ? "Copied" : "Copy"}</button></div><pre>{text}</pre></div></div>; })}</div></>}</div><div className="modal-footer"><span className="footer-left export-meta"><Sparkles size={13} /> Prompts update automatically as you refine shots.</span>{scene && <button type="button" className="button" onClick={downloadAll}>Download all as .txt</button>}<button type="button" className="button button-primary" onClick={onClose}>Done</button></div></Modal>;
+
+  const visiblePlatforms = categoryFilter === "all" ? PLATFORMS : PLATFORMS.filter(p => p.kind === categoryFilter);
+
+  return <Modal wide title="From storyboard to generated imagery & video." subtitle="Ready-to-paste prompts for Stable Diffusion (SDXL, SD 1.5, SD 3.5), Krea 2, FLUX.1, Midjourney, DALL-E 3, MiniMax Hailuo, Seedance, Kling, Runway, and Veo." onClose={onClose} className="prompt-modal">
+    <div className="modal-body prompt-studio">
+      <div className="prompt-category-bar">
+        <button type="button" className={`prompt-category-pill ${categoryFilter === "all" ? "active" : ""}`} onClick={() => setCategoryFilter("all")}>All Models ({PLATFORMS.length})</button>
+        <button type="button" className={`prompt-category-pill ${categoryFilter === "image" ? "active" : ""}`} onClick={() => setCategoryFilter("image")}>AI Image Models ({PLATFORMS.filter(p => p.kind === "image").length})</button>
+        <button type="button" className={`prompt-category-pill ${categoryFilter === "video" ? "active" : ""}`} onClick={() => setCategoryFilter("video")}>AI Video Models ({PLATFORMS.filter(p => p.kind === "video").length})</button>
+      </div>
+
+      <div className="prompt-toolbar">
+        <div className="select-wrap scene-filter">
+          <select aria-label="Scene for prompts" value={sceneId} onChange={e => setSceneId(e.target.value)}>
+            {project.scenes.map((s, i) => <option key={s.id} value={s.id}>{String(i + 1).padStart(2, "0")} · {s.title} — {s.location}</option>)}
+          </select>
+        </div>
+        <div className="platform-picker" role="tablist" aria-label="Video model">
+          {visiblePlatforms.map(p => (
+            <button type="button" key={p.id} role="tab" aria-selected={platform === p.id} className={platform === p.id ? "active" : ""} onClick={() => setPlatform(p.id)}>
+              {p.name}
+              <span className={`prompt-model-badge ${p.kind}`}>{p.kind}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <p className="platform-hint">
+        <Info size={13} />
+        {currentModel?.hint}
+        {currentModel?.aspectRatio && <span> · Aspect: <strong>{currentModel.aspectRatio}</strong></span>}
+      </p>
+
+      {!scene ? <div className="empty-state">
+        <h3>Add a scene first.</h3>
+        <p>Prompts are built from the scene, its cast, and its shots.</p>
+      </div> : <>
+        <div className="prompt-block">
+          <div className="prompt-block-head">
+            <div>
+              <span className="eyebrow">{currentModel.kind === "image" ? "STORYBOARD STILLS" : "WHOLE SCENE"} · {frames.length} SHOT{frames.length === 1 ? "" : "S"}</span>
+              <h3>{scene.title}</h3>
+            </div>
+            <button type="button" className="button button-primary" onClick={() => copy(scenePrompt, "scene")}>
+              {copied === "scene" ? <CheckCheck size={15} /> : <ClipboardCopy size={15} />}
+              {copied === "scene" ? "Copied" : currentModel.kind === "image" ? "Copy all shot prompts" : "Copy sequence"}
+            </button>
+          </div>
+          <textarea className="prompt-output" readOnly rows={10} value={scenePrompt} aria-label="Scene sequence prompt" onFocus={e => e.target.select()} />
+        </div>
+
+        <div className="prompt-shots">
+          <span className="eyebrow">SHOT BY SHOT · {currentModel.name.toUpperCase()}</span>
+          {frames.length === 0 && <p className="chip-hint">No shots in this scene yet. Add frames on the storyboard to generate per-shot prompts.</p>}
+          {frames.map((f, i) => {
+            const text = buildFramePrompt(project, f, platform);
+            return <div key={f.id} className="prompt-shot">
+              <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
+              <div className="prompt-shot-body">
+                <div className="prompt-shot-head">
+                  <strong>Shot {i + 1} · {f.title}</strong>
+                  <span>{f.shotType} · {f.movement} · {f.duration}s{f.transition ? ` · ${f.transition} in` : ""}</span>
+                  <button type="button" className="button button-small" onClick={() => copy(text, f.id)}>
+                    {copied === f.id ? <CheckCheck size={13} /> : <ClipboardCopy size={13} />}
+                    {copied === f.id ? "Copied" : "Copy"}
+                  </button>
+                </div>
+                <pre>{text}</pre>
+              </div>
+            </div>;
+          })}
+        </div>
+      </>}
+    </div>
+    <div className="modal-footer">
+      <span className="footer-left export-meta"><Sparkles size={13} /> Prompts update automatically as you refine shots.</span>
+      {scene && <button type="button" className="button" onClick={downloadAll}>Download all as .txt</button>}
+      <button type="button" className="button button-primary" onClick={onClose}>Done</button>
+    </div>
+  </Modal>;
 }

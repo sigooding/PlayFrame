@@ -21,16 +21,22 @@ export function StoryboardPlayer({ project, frames, onClose }: { project: FilmPr
       const current = performance.now();
       const delta = (current - previous) / 1000;
       previous = current;
-      setElapsed(value => value + delta);
+      setElapsed(value => {
+        const nextElapsed = value + delta;
+        if (nextElapsed >= frame.duration) {
+          if (index < frames.length - 1) {
+            setIndex(i => i + 1);
+            return 0;
+          } else {
+            setPlaying(false);
+            return frame.duration;
+          }
+        }
+        return nextElapsed;
+      });
     }, 50);
     return () => clearInterval(timer);
-  }, [playing, index, frame]);
-
-  useEffect(() => {
-    if (!frame || !playing || elapsed < frame.duration) return;
-    if (index < frames.length - 1) { setIndex(value => value + 1); setElapsed(0); }
-    else { setPlaying(false); setElapsed(frame.duration); }
-  }, [elapsed, frame, frames.length, index, playing]);
+  }, [playing, index, frame, frames.length]);
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;

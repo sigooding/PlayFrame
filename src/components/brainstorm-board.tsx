@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { Plus, Trash2, Sparkles, GripVertical, ZoomIn, ZoomOut, Move3d, RotateCcw, Link2, X, Unlink } from "lucide-react";
 import type { BrainstormNode } from "@/lib/types";
 
@@ -36,17 +36,19 @@ export function BrainstormBoard({ nodes, onEdit, onAdd, onChange, onDelete }: Pr
   const boardRef = useRef<HTMLDivElement>(null);
   const nodeRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
+  const observeNode = useCallback((id: string, el: HTMLDivElement | null) => {
+    nodeRefs.current[id] = el;
+    if (el) {
+      const h = el.offsetHeight;
+      if (h) {
+        setSizes(prev => (prev[id] === h ? prev : { ...prev, [id]: h }));
+      }
+    }
+  }, []);
+
   const pos = (n: BrainstormNode): Point => positions[n.id] || { x: n.x, y: n.y };
   const height = (id: string) => sizes[id] || 120;
   const center = (n: BrainstormNode): Point => ({ x: pos(n).x + NODE_WIDTH / 2, y: pos(n).y + height(n.id) / 2 });
-
-  useLayoutEffect(() => {
-    const next: Record<string, number> = {};
-    let changed = false;
-    for (const n of nodes) { const h = nodeRefs.current[n.id]?.offsetHeight; if (h) { next[n.id] = h; if (sizes[n.id] !== h) changed = true; } }
-    if (changed) setSizes(s => ({ ...s, ...next }));
-  });
-  useEffect(() => { setPositions({}); }, [nodes]);
 
   function canvasPoint(e: React.MouseEvent): Point {
     const rect = boardRef.current!.getBoundingClientRect();
@@ -167,7 +169,7 @@ export function BrainstormBoard({ nodes, onEdit, onAdd, onChange, onDelete }: Pr
             const colors = colorConfig[node.color] || colorConfig.sage;
             const p = pos(node);
             const isSource = linkSource === node.id || linking?.from === node.id;
-            return <div key={node.id} ref={el => { nodeRefs.current[node.id] = el; }} role="button" tabIndex={0} aria-label={`Edit idea: ${node.title}`} className={`brain-node ${drag?.id === node.id ? "is-dragging" : ""} ${isSource ? "is-source" : ""} ${(linking || linkMode) && !isSource ? "is-target" : ""}`} style={{ left: p.x, top: p.y, width: NODE_WIDTH, borderColor: colors.border, background: colors.bg, color: colors.text }} onMouseDown={e => startDrag(e, node)} onMouseUp={e => nodeMouseUp(e, node)} onClick={() => nodeClick(node)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nodeClick(node); } }} onMouseEnter={() => setHovered(node.id)} onMouseLeave={() => setHovered(null)}>
+            return <div key={node.id} ref={el => observeNode(node.id, el)} role="button" tabIndex={0} aria-label={`Edit idea: ${node.title}`} className={`brain-node ${drag?.id === node.id ? "is-dragging" : ""} ${isSource ? "is-source" : ""} ${(linking || linkMode) && !isSource ? "is-target" : ""}`} style={{ left: p.x, top: p.y, width: NODE_WIDTH, borderColor: colors.border, background: colors.bg, color: colors.text }} onMouseDown={e => startDrag(e, node)} onMouseUp={e => nodeMouseUp(e, node)} onClick={() => nodeClick(node)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nodeClick(node); } }} onMouseEnter={() => setHovered(node.id)} onMouseLeave={() => setHovered(null)}>
               <div className="brain-node-top"><span>{node.tags.slice(0, 2).join(" · ") || "IDEA"}</span><GripVertical size={12} /></div>
               <h3>{node.title}</h3>
               {node.content && <p>{node.content}</p>}

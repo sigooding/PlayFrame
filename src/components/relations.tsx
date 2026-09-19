@@ -63,17 +63,18 @@ export function RelationEditor({ character, characters, onChange }: { character:
 
     {relations.length > 0 && first && <p className="relation-reads-as"><ArrowLeftRight size={13} />Reads as: <strong>{linkSentence(character, first, relations[0].kind)}</strong> — and {first.name}&apos;s card will say “{character.name} is {first.name}&apos;s {relationNoun[converseRelation[relations[0].kind]]}”.</p>}
 
-    {available.length > 0 ? <div className="relation-add">
-      <select aria-label="Add a relationship with" value={targetId} onChange={e => setTargetId(e.target.value)}>
-        <option value="">Choose someone…</option>
+    <div className="relation-add">
+      <select aria-label="Add a relationship with" value={targetId} onChange={e => setTargetId(e.target.value)} disabled={available.length === 0}>
+        <option value="">{available.length > 0 ? "Choose someone…" : "Everyone in cast is already linked"}</option>
         {available.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
       </select>
-      <select aria-label="Who that person is to this character" value={kind} onChange={e => setKind(e.target.value as RelationKind)}>
+      <select aria-label="They are this character's" value={kind} onChange={e => setKind(e.target.value as RelationKind)} disabled={available.length === 0}>
         {RELATION_KINDS.map(k => <option key={k}>{k}</option>)}
       </select>
       <button type="button" className="button button-small" onClick={add} disabled={!targetId}><Plus size={14} />Link</button>
       {targetId && <span className="chip-hint">{linkSentence(character, characters.find(c => c.id === targetId) as Character, kind)}</span>}
-    </div> : others.length > 0 && <p className="chip-hint">Everyone else is already linked — {linked.size === 1 ? "that link is" : "those links are"} held on the other card{linked.size === 1 ? "" : "s"}.</p>}
+    </div>
+    {others.length > 0 && available.length === 0 && <p className="chip-hint">Everyone else is already linked — {linked.size === 1 ? "that link is" : "those links are"} held on the other card{linked.size === 1 ? "" : "s"}.</p>}
 
     {incoming.length > 0 && <div className="relation-incoming"><span className="eyebrow">SET FROM THE OTHER SIDE</span><div className="chip-row">{incoming.map(({ relation, owner }) => <span key={`${owner.id}-${relation.id}`} className={`chip chip-static tone-${relationTone[relation.kind]}`} title={`${owner.name} lists ${character.name || "this character"} as their ${relationNoun[relation.kind]}`}>{character.name || "This character"} is {owner.name}&apos;s {relationNoun[relation.kind]}<Check size={12} /></span>)}</div></div>}
   </div>;
@@ -217,7 +218,7 @@ export function RelationsMap({ project, onOpen, onAdd, onLink, onUnlink }: {
         {placed.map(({ item, x, y }) => {
           const isFocused = focus === item.id;
           const related = !focus || isFocused || links.some(l => (l.a.id === focus && l.b.id === item.id) || (l.b.id === focus && l.a.id === item.id));
-          return <button key={item.id} data-cast-node={item.id} className={`cast-node ${item.color} ${isFocused ? "focused" : ""} ${related ? "" : "dim"}`} style={{ left: `${x}%`, top: `${y}%` }} onClick={() => setFocus(isFocused ? null : item.id)} title={`Focus ${item.name}'s relationships`} aria-pressed={isFocused}>
+          return <button key={item.id} data-cast-node={item.id} className={`cast-node ${item.color} ${isFocused ? "focused" : ""} ${related ? "" : "dim"}`} style={{ left: `${x}%`, top: `${y}%` }} onClick={() => onOpen(item)} title={`Open ${item.name}'s character card`} aria-pressed={isFocused}>
             <CastAvatar character={item} />
             <strong>{item.name}</strong>
             <small>{item.role}</small>
@@ -227,20 +228,30 @@ export function RelationsMap({ project, onOpen, onAdd, onLink, onUnlink }: {
       {links.length === 0 ? <p className="cast-map-empty">No links yet — choose <strong>Add a relationship</strong>, or open a character card and say who everyone is to them.</p>
         : <div className="cast-map-foot">
           <div className="relation-legend">{(Object.keys(toneLabel) as (keyof typeof toneLabel)[]).map(tone => <span key={tone} className={`relation-legend-item tone-${tone}`}><i />{toneLabel[tone]}</span>)}</div>
-          <p>{focus ? <>Showing <strong>{characters.find(c => c.id === focus)?.name}</strong>&apos;s links. <button className="text-button" onClick={() => onOpen(characters.find(c => c.id === focus)!)}>Open their card</button></> : "Tap a name to focus their links."}</p>
+          <p>{focus ? <>Showing <strong>{characters.find(c => c.id === focus)?.name}</strong>&apos;s links. <button className="text-button" onClick={() => onOpen(characters.find(c => c.id === focus)!)}>Open their card</button></> : "Click any character node to open their details."}</p>
         </div>}
     </div>
 
     {links.length > 0 && <div className="relations-section">
       <div className="relations-section-head"><h3>Who knows who</h3><span>{links.length} {links.length === 1 ? "link" : "links"}</span></div>
       <div className="cast-link-list">
-        {visibleLinks.map(link => <article key={link.id} className={`relation-card tone-${link.tone}`} data-relation-card={link.id}>
+        {visibleLinks.map(link => <article key={link.id} className={`relation-card cast-link-row tone-${link.tone}`} data-relation-card={link.id}>
           <div className="relation-card-people">
             <button className="cast-link-person" onClick={() => onOpen(link.a)} title={`Open ${link.a.name}`}><CastAvatar character={link.a} />{link.a.name}</button>
             <Link2 size={14} className="relation-card-tie" />
             <button className="cast-link-person" onClick={() => onOpen(link.b)} title={`Open ${link.b.name}`}><CastAvatar character={link.b} />{link.b.name}</button>
           </div>
-          <p className="relation-card-gist" data-relation-gist={link.gist}>{link.kinds.map(kind => <span key={kind} className={`relation-chip tone-${relationTone[kind]}`}>{relationNoun[kind]}</span>)}{link.gist}</p>
+          <p className="relation-card-gist" data-relation-gist={link.gist}>
+            {link.kinds.map(kind => <span key={kind} className={`relation-chip tone-${relationTone[kind]}`}>{relationNoun[kind]}</span>)}
+            {link.gist}
+          </p>
+          {link.sentences && link.sentences.length > 1 && (
+            <div className="relation-card-sentences" style={{ display: "flex", flexDirection: "column", gap: 3, fontSize: "11px", color: "#7a8d6e" }}>
+              {link.sentences.map((s, idx) => (
+                <span key={idx} className="relation-sentence-item">{s}</span>
+              ))}
+            </div>
+          )}
           {link.oneSided && <p className="relation-card-warn">Only one card carries this link — the map shows it, but the other card is empty. <button className="text-button" onClick={() => onLink(link.a.id, link.b.id, link.labels[0].kind, link.labels[0].note)}>Write it on both cards</button></p>}
           {link.notes.length > 0 && editingNote !== link.id && <p className="relation-card-note">“{link.notes[0]}”</p>}
           {editingNote === link.id

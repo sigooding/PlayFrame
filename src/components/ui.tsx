@@ -19,7 +19,9 @@ export function Avatar({ name = "Jamie Parker", small = false }: { name?: string
 export function Modal({ children, title, subtitle, onClose, wide = false, className = "" }: { children: ReactNode; title: string; subtitle?: string; onClose: () => void; wide?: boolean; className?: string }) {
   const panel = useRef<HTMLDivElement>(null);
   const closeRef = useRef(onClose);
-  closeRef.current = onClose;
+  useEffect(() => {
+    closeRef.current = onClose;
+  }, [onClose]);
   useEffect(() => {
     const previous = document.activeElement as HTMLElement;
     const previousOverflow = document.body.style.overflow;

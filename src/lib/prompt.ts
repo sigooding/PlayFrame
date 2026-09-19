@@ -3,15 +3,40 @@ import { angleDescriptions, hailuoCommands, movementDescriptions, shotGuide } fr
 import { lightingGuide } from "./lighting";
 import { relationLines } from "./relations";
 
-export const PLATFORMS = [
-  { id: "hailuo", name: "MiniMax Hailuo", hint: "Uses bracketed camera commands. One shot per generation, 6–10s." },
-  { id: "seedance", name: "Seedance", hint: "Natural language. Supports multi-shot sequences in one prompt." },
-  { id: "kling", name: "Kling", hint: "Prose prompt plus a negative prompt." },
-  { id: "runway", name: "Runway Gen", hint: "Lead with camera movement, keep it direct, no negatives." },
-  { id: "veo", name: "Google Veo", hint: "Prose with optional audio direction." },
-  { id: "generic", name: "Universal", hint: "Full structured prompt that works almost anywhere." },
+export type PlatformKind = "image" | "video";
+
+export interface PlatformConfig {
+  id: string;
+  name: string;
+  kind: PlatformKind;
+  hint: string;
+  badge?: string;
+  aspectRatio?: string;
+  defaultNegative?: string;
+}
+
+export const PLATFORMS: readonly PlatformConfig[] = [
+  // AI Video Models
+  { id: "hailuo", name: "MiniMax Hailuo", kind: "video", hint: "Uses bracketed camera commands. One shot per generation, 6–10s.", badge: "Video" },
+  { id: "seedance", name: "Seedance", kind: "video", hint: "Natural language. Supports multi-shot sequences in one prompt.", badge: "Video" },
+  { id: "kling", name: "Kling", kind: "video", hint: "Prose prompt plus a negative prompt.", badge: "Video" },
+  { id: "runway", name: "Runway Gen", kind: "video", hint: "Lead with camera movement, keep it direct, no negatives.", badge: "Video" },
+  { id: "veo", name: "Google Veo", kind: "video", hint: "Prose with optional audio direction.", badge: "Video" },
+  { id: "generic", name: "Universal", kind: "video", hint: "Full structured prompt that works almost anywhere.", badge: "Video" },
+
+  // AI Image Models
+  { id: "flux", name: "FLUX.1", kind: "image", hint: "Black Forest Labs FLUX. Natural prose, exceptional photorealism, and 35mm cinematics.", badge: "Image", aspectRatio: "16:9" },
+  { id: "sdxl", name: "Stable Diffusion XL", kind: "image", hint: "SDXL photographic syntax with composition tags, 35mm film grain, and negative prompt.", badge: "Image", aspectRatio: "16:9 (1344x768 / 1024x576)", defaultNegative: "blurry, low quality, distorted, deformed eyes, extra limbs, bad anatomy, overexposed, watermark, text, signature, duplicate, cropped, bad art" },
+  { id: "sd15", name: "Stable Diffusion 1.5", kind: "image", hint: "Classic weighted prompt syntax with quality tokens and comprehensive negative prompt.", badge: "Image", aspectRatio: "16:9 (768x432)", defaultNegative: "(worst quality, low quality:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limbs, missing limbs, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, bad eyes, text, watermark, signature, cropped, bad framing" },
+  { id: "sd35", name: "Stable Diffusion 3.5", kind: "image", hint: "SD 3.5 Large / Medium natural language prompt with precise lighting and spatial depth.", badge: "Image", aspectRatio: "16:9", defaultNegative: "text, watermark, low quality, blurry, deformed, cartoon, anime, illustration, oversaturated, amateur photography" },
+  { id: "krea2", name: "Krea 2", kind: "image", hint: "Krea AI generation & realtime prompt format with cinematic styling, depth, and color grade.", badge: "Image", aspectRatio: "16:9" },
+  { id: "midjourney", name: "Midjourney v6", kind: "image", hint: "Cinematic shot syntax formatted with parameters: --ar 16:9 --style raw --v 6.1 --stylize 125.", badge: "Image", aspectRatio: "--ar 16:9" },
+  { id: "dalle3", name: "DALL-E 3", kind: "image", hint: "Rich narrative photography description formatted for OpenAI's DALL-E 3 image generation.", badge: "Image", aspectRatio: "1792x1024 (16:9)" },
+  { id: "leonardo", name: "Leonardo AI", kind: "image", hint: "Cinematic photorealism with camera optics, volumetric depth, and negative prompt.", badge: "Image", aspectRatio: "16:9", defaultNegative: "blurry, low quality, distorted faces, extra fingers, cartoon, 3d render, watermark, text" },
+  { id: "ideogram", name: "Ideogram 2", kind: "image", hint: "High-consistency cinematic framing, realistic environmental lighting, and typography.", badge: "Image", aspectRatio: "16:9" },
 ] as const;
-export type PlatformId = (typeof PLATFORMS)[number]["id"];
+
+export type PlatformId = string;
 
 const clean = (value?: string) => (value || "").replace(/\s+/g, " ").trim();
 const sentence = (value: string) => { const v = clean(value).replace(/\.{2,}/g, "."); return v ? (/[.!?…]$/.test(v) ? v : `${v}.`) : ""; };
@@ -77,6 +102,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
   const duration = `${frame.duration} second${frame.duration === 1 ? "" : "s"}`;
   const avoid = "text, captions, watermarks, logos, distorted faces, extra limbs, morphing";
 
+  // ===== Video Models =====
   if (platform === "hailuo") {
     return [`${hailuoCommands[frame.movement] || "[Static shot]"} ${p.shot}. ${p.setting ? `${p.setting[0].toUpperCase()}${p.setting.slice(1)}, ${p.light}.` : ""}`, p.cast ? `Characters: ${p.cast}.` : "", p.relations, p.action, p.mood ? `Mood: ${sentence(p.mood)}` : "", `Style: ${p.style}. ${duration}, 16:9. No ${avoid}.`].filter(Boolean).join(" ");
   }
@@ -93,7 +119,168 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
   if (platform === "seedance") {
     return [`Shot ${ctx.index + 1} of ${ctx.total} — ${duration}.`, `${p.shot}, ${p.camera}.`, p.setting ? `${p.setting[0].toUpperCase()}${p.setting.slice(1)}, ${p.light}.` : "", p.cast ? `${p.cast}.` : "", p.relations, p.action, p.mood ? `Mood: ${sentence(p.mood)}` : "", `${p.transitionIn ? sentence(p.transitionIn) + " " : ""}${sentence(p.transitionOut)}`, `Style: ${p.style}. 16:9. Avoid ${avoid}.`].filter(Boolean).join(" ");
   }
-  // generic
+
+  // ===== Image Models =====
+  if (platform === "flux") {
+    return [
+      `A cinematic 35mm film still of a ${p.shot}.`,
+      p.cast ? `Featuring ${p.cast}.` : "",
+      p.relations ? `Context: ${p.relations}` : "",
+      p.action ? p.action : "",
+      p.setting ? `Location: ${p.setting}.` : "",
+      `Lighting: ${p.light}.`,
+      p.mood ? `Atmosphere: ${sentence(p.mood)}` : "",
+      `Cinematography: ${p.style}, shot on 35mm Kodak film stock, masterclass color grading, subtle film grain, natural skin textures, optical depth of field. Aspect ratio 16:9.`,
+    ].filter(Boolean).join(" ");
+  }
+  if (platform === "sdxl") {
+    const positive = [
+      `cinematic film still, ${p.shot}`,
+      p.cast ? `${p.cast}` : "cinematic character portrait",
+      p.action ? `${p.action}` : "",
+      p.relations ? `${p.relations}` : "",
+      p.setting ? `set in ${p.setting}` : "",
+      `${p.light}`,
+      p.mood ? `${p.mood} atmosphere` : "",
+      `${p.style}, 35mm photography, sharp focus, 8k resolution, cinematic lighting, photorealistic, color graded`,
+    ].filter(Boolean).join(", ");
+    const neg = `blurry, low quality, distorted, bad anatomy, deformed eyes, extra limbs, overexposed, underexposed, watermark, text, signature, duplicate, cropped, cartoon, 3d render`;
+    return [
+      `PROMPT:`,
+      positive,
+      ``,
+      `NEGATIVE PROMPT:`,
+      neg,
+      ``,
+      `PARAMETERS:`,
+      `Size: 1344x768 (16:9) | CFG: 7.0 | Steps: 30 | Sampler: DPM++ 2M Karras`,
+    ].join("\n");
+  }
+  if (platform === "sd15") {
+    const positive = [
+      `(masterpiece:1.2), (best quality:1.2), (highly detailed 8k cinematic still:1.2)`,
+      `${p.shot}`,
+      p.cast ? `${p.cast}` : "detailed character portrait",
+      p.action ? `${p.action}` : "",
+      p.relations ? `${p.relations}` : "",
+      p.setting ? `${p.setting}` : "",
+      `${p.light}`,
+      p.mood ? `(${p.mood} mood:1.1)` : "",
+      `photorealistic, 35mm film, anamorphic lens, award winning cinematography, shallow depth of field, dramatic lighting, sharp focus`,
+    ].filter(Boolean).join(", ");
+    const neg = `(worst quality, low quality:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limbs, missing limbs, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, blurry, amputation, bad eyes, text, watermark, signature, cropped, bad framing`;
+    return [
+      `PROMPT:`,
+      positive,
+      ``,
+      `NEGATIVE PROMPT:`,
+      neg,
+      ``,
+      `PARAMETERS:`,
+      `Size: 768x432 (or 512x512 with Hires.fix 1.5x) | CFG: 7.5 | Steps: 28 | Sampler: Euler a / DPM++ 2M SDE`,
+    ].join("\n");
+  }
+  if (platform === "sd35") {
+    const positive = [
+      `A high-end cinematic photograph of a ${p.shot}.`,
+      p.cast ? `Character: ${p.cast}.` : "",
+      p.relations ? `Context: ${p.relations}` : "",
+      p.action ? `Action: ${p.action}` : "",
+      p.setting ? `Environment: ${p.setting}.` : "",
+      `Lighting setup: ${p.light}.`,
+      p.mood ? `Mood: ${sentence(p.mood)}` : "",
+      `Style: ${p.style}, crisp optical clarity, photorealistic textures, volumetric atmosphere, 16:9 cinematic framing.`,
+    ].filter(Boolean).join(" ");
+    const neg = `text, watermark, low quality, blurry, deformed, cartoon, anime, illustration, oversaturated, amateur photography`;
+    return [
+      `PROMPT:`,
+      positive,
+      ``,
+      `NEGATIVE PROMPT:`,
+      neg,
+      ``,
+      `PARAMETERS:`,
+      `Aspect ratio: 16:9 (1024x576 or 1536x864) | CFG: 4.5 | Steps: 28 | Shift: 3.0`,
+    ].join("\n");
+  }
+  if (platform === "krea2") {
+    const promptText = [
+      `cinematic still, ${p.shot}`,
+      p.cast ? `portrait of ${p.cast}` : "",
+      p.action ? `${p.action}` : "",
+      p.relations ? `${p.relations}` : "",
+      p.setting ? `in ${p.setting}` : "",
+      `${p.light}`,
+      p.mood ? `${p.mood} atmosphere` : "",
+      `35mm film aesthetic, rich tones, cinematic grade, volumetric depth, photorealistic, 8k, highly detailed, masterwork cinematography`,
+    ].filter(Boolean).join(", ");
+    return [
+      promptText,
+      ``,
+      `Style: Photoreal / Cinematic | Aspect: 16:9 | AI Strength: 0.75`,
+    ].join("\n");
+  }
+  if (platform === "midjourney") {
+    const mjPrompt = [
+      `A cinematic movie still of ${p.shot},`,
+      p.cast ? `featuring ${p.cast},` : "",
+      p.action ? `${p.action},` : "",
+      p.relations ? `${p.relations},` : "",
+      p.setting ? `set in ${p.setting},` : "",
+      `${p.light},`,
+      p.mood ? `${sentence(p.mood)}` : "",
+      `${p.style}, shot on 35mm anamorphic lens, Kodak Vision3 500T, award-winning cinematography, photorealistic, intricate detail --ar 16:9 --style raw --v 6.1 --stylize 125`,
+    ].filter(Boolean).join(" ").replace(/\s+,/g, ",");
+    return mjPrompt;
+  }
+  if (platform === "dalle3") {
+    return [
+      `A wide 16:9 cinematic film photograph capturing a ${p.shot}.`,
+      p.cast ? `The subject is ${p.cast}.` : "",
+      p.relations ? `${p.relations}` : "",
+      p.action ? `${p.action}` : "",
+      p.setting ? `The scene takes place in ${p.setting}.` : "",
+      `The lighting is ${p.light}.`,
+      p.mood ? `The mood conveys ${p.mood.toLowerCase()}.` : "",
+      `The overall aesthetic is ${p.style}, exhibiting authentic 35mm film grain, realistic skin textures, rich optical depth of field, and grounded realism without artificial stylization.`,
+    ].filter(Boolean).join(" ");
+  }
+  if (platform === "leonardo") {
+    const positive = [
+      `cinematic movie still, ${p.shot}`,
+      p.cast ? `${p.cast}` : "",
+      p.action ? `${p.action}` : "",
+      p.relations ? `${p.relations}` : "",
+      p.setting ? `in ${p.setting}` : "",
+      `${p.light}`,
+      p.mood ? `${p.mood} tone` : "",
+      `photorealistic, Leonardo Kino XL cinematic style, 35mm lens, atmospheric depth, 8k resolution`,
+    ].filter(Boolean).join(", ");
+    const neg = `blurry, low quality, distorted faces, extra fingers, cartoon, 3d render, watermark, text`;
+    return [
+      `PROMPT:`,
+      positive,
+      ``,
+      `NEGATIVE PROMPT:`,
+      neg,
+      ``,
+      `PRESET: Leonardo Phoenix / Kino XL | Aspect Ratio: 16:9`,
+    ].join("\n");
+  }
+  if (platform === "ideogram") {
+    return [
+      `A cinematic photo of a ${p.shot},`,
+      p.cast ? `showing ${p.cast},` : "",
+      p.action ? `${p.action},` : "",
+      p.relations ? `${p.relations},` : "",
+      p.setting ? `in ${p.setting},` : "",
+      `${p.light},`,
+      p.mood ? `${sentence(p.mood)}` : "",
+      `${p.style}, 35mm lens, photorealistic film look. Aspect Ratio: 16:9. Style: Realistic.`,
+    ].filter(Boolean).join(" ").replace(/\s+,/g, ",");
+  }
+
+  // generic / universal fallback
   return [
     `SHOT: ${p.shot}.`,
     `CAMERA: ${p.camera}.`,
@@ -112,8 +299,31 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
 export function buildScenePrompt(project: FilmProject, scene: Scene, platform: PlatformId): string {
   const frames = project.frames.filter(f => f.sceneId === scene.id);
   const cast = castLine(project, scene.characters);
-  const header = [`SCENE: ${scene.title.toUpperCase()} — ${describeLocation(scene.location)} at ${timeOfDay(scene.time)}.`, sentence(scene.description), cast ? `CHARACTERS: ${cast}.` : "", `STYLE: ${styleLine(project, Boolean(scene.lighting || frames[0]?.lighting))}.`, `TOTAL RUNTIME: ${frames.reduce((s, f) => s + f.duration, 0)} seconds across ${frames.length} shot${frames.length === 1 ? "" : "s"}. Aspect 16:9.`].filter(Boolean).join("\n");
-  if (!frames.length) return `${header}\n\nNo shots planned yet. Add frames to this scene to generate a shot-by-shot sequence.`;
+  const selectedPlatform = PLATFORMS.find(p => p.id === platform);
+  const isImageModel = selectedPlatform?.kind === "image";
+
+  const header = [
+    `SCENE: ${scene.title.toUpperCase()} — ${describeLocation(scene.location)} at ${timeOfDay(scene.time)}.`,
+    sentence(scene.description),
+    cast ? `CHARACTERS: ${cast}.` : "",
+    `STYLE: ${styleLine(project, Boolean(scene.lighting || frames[0]?.lighting))}.`,
+    isImageModel
+      ? `TOTAL SHOTS: ${frames.length} frame${frames.length === 1 ? "" : "s"} (${selectedPlatform?.name || "AI Image"} prompts for keyframes & storyboard).`
+      : `TOTAL RUNTIME: ${frames.reduce((s, f) => s + f.duration, 0)} seconds across ${frames.length} shot${frames.length === 1 ? "" : "s"}. Aspect 16:9.`,
+  ].filter(Boolean).join("\n");
+
+  if (!frames.length) {
+    return `${header}\n\nNo shots planned yet. Add frames to this scene to generate a shot-by-shot sequence.`;
+  }
+
+  if (isImageModel) {
+    const shots = frames.map((frame, i) => {
+      const shotPrompt = buildFramePrompt(project, frame, platform);
+      return `=== SHOT ${i + 1}: ${frame.title} (${frame.shotType} · ${frame.lighting || "Natural light"}) ===\n${shotPrompt}`;
+    });
+    return `${header}\n\n${shots.join("\n\n")}`;
+  }
+
   const shots = frames.map((frame, i) => {
     const ctx = frameContext(project, frame);
     const p = parts(project, frame, ctx);
@@ -123,4 +333,14 @@ export function buildScenePrompt(project: FilmProject, scene: Scene, platform: P
   const closing = platform === "kling" ? `\n\nNegative prompt: text, watermarks, logos, distorted faces, extra limbs, morphing, blurry.` : "";
   const note = platform === "hailuo" ? `\n\n(Hailuo generates one shot at a time — copy each shot prompt separately from the list below.)` : platform === "seedance" ? `\n\n(Seedance can render this as a single multi-shot sequence.)` : "";
   return `${header}\n\n${shots.join("\n\n")}${closing}${note}`;
+}
+
+export function extractPositivePrompt(fullText: string): string {
+  const match = fullText.match(/PROMPT:\s*\n([\s\S]*?)(?=\n\s*(?:NEGATIVE PROMPT|PARAMETERS|PRESET):|$)/i);
+  return match ? match[1].trim() : fullText.trim();
+}
+
+export function extractNegativePrompt(fullText: string): string | null {
+  const match = fullText.match(/NEGATIVE PROMPT:\s*\n([\s\S]*?)(?=\n\s*(?:PARAMETERS|PRESET):|$)/i);
+  return match ? match[1].trim() : null;
 }

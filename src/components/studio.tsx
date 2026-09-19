@@ -73,13 +73,12 @@ export default function Studio({ initialProjects, initialTab, initialProjectId }
   const [saveState, setSaveState] = useState<"saved" | "saving" | "error">("saved");
   const pendingCount = useRef(0);
   const saveQueues = useRef<Record<string, Promise<unknown>>>({});
-  const [profileName, setProfileName] = useState("Jamie Parker");
+  const [profileName, setProfileName] = useState(() => (typeof window !== "undefined" ? localStorage.getItem("frame-profile-name") || "Jamie Parker" : "Jamie Parker"));
   const [mobileNav, setMobileNav] = useState(false);
   const [scriptJump, setScriptJump] = useState<{ start: number; end: number; stamp: number } | null>(null);
   const [notificationsOpen, setNotificationsOpen] = useState(false);
   const project = projects.find(p => p.id === activeId) || projects[0];
 
-  useEffect(() => { const name = localStorage.getItem("frame-profile-name"); if (name) setProfileName(name); }, []);
   useEffect(() => { projectsRef.current = projects; }, [projects]);
   /**
    * Images that were already broken when the server sent them stay broken until we sweep them,
