@@ -8,6 +8,7 @@ export const PROJECT_TABS = [
   { name: "Characters", slug: "characters" },
   { name: "Relationships", slug: "relationships" },
   { name: "Storyboard", slug: "storyboard" },
+  { name: "Prompt Studio", slug: "prompt-studio" },
   { name: "Shot list", slug: "shot-list" },
   { name: "Notes", slug: "notes" },
   { name: "Brainstorm", slug: "brainstorm" },

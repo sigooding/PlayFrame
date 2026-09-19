@@ -950,3 +950,5 @@ img{display:block;max-width:100%}
   .cast-link-list,.storyline-grid{grid-template-columns:1fr}
   .relation-card-people{gap:6px}
 }
+
+.prompt-style-note { display: block; margin-top: 4px; font-size: 11px; color: #6b7280; }

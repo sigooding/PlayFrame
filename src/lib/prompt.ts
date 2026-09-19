@@ -92,7 +92,9 @@ function parts(project: FilmProject, frame: StoryFrame, ctx: PromptContext, entr
 }
 
 export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platform: PlatformId, style?: string): string {
-  const entry = visualStyle(style);
+  // Explicit style wins; otherwise inherit the shot's persisted style, then its scene's, then the default.
+  const frameScene = project.scenes.find(s => s.id === frame.sceneId);
+  const entry = visualStyle(style || frame.style || frameScene?.style);
   const styleNeg = (base: string) => negativeFor(base, entry);
   const artLower = entry.name.toLowerCase();
   const anCap = /^[aeiou]/.test(artLower) ? "An" : "A";
@@ -296,7 +298,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
 }
 
 export function buildScenePrompt(project: FilmProject, scene: Scene, platform: PlatformId, style?: string): string {
-  const entry = visualStyle(style);
+  const entry = visualStyle(style || scene.style);
   const frames = project.frames.filter(f => f.sceneId === scene.id);
   const cast = castLine(project, scene.characters);
   const selectedPlatform = PLATFORMS.find(p => p.id === platform);
