@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Check, CheckCheck, ClipboardCopy, Info, Pencil, Plus, Sparkles } from "lucide-react";
+import { Check, CheckCheck, ChevronDown, ChevronUp, ClipboardCopy, Info, LayoutGrid, List, Pencil, Plus, Sparkles, Table2 } from "lucide-react";
 import type { FilmProject, StoryFrame } from "@/lib/types";
 import { downloadFile, slugify } from "@/lib/export";
 import { onImageError } from "@/lib/image";
 import { VisualStylePicker } from "./style-picker";
 import { DEFAULT_STYLE_ID, VISUAL_STYLES, visualStyle } from "@/lib/styles";
 import { buildFramePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
+import { FrameTable } from "./storyboard";
 
 const LS_STYLE = "frame-last-style";
 const LS_PLATFORM = "frame-last-platform";
@@ -21,12 +22,13 @@ const writeLS = (key: string, value: string) => { try { if (typeof window !== "u
  * visual style is persisted onto the selected shots (and remembered for next time), so a
  * storyboard keeps its look across sessions. Used both as a top-level tab and inside a modal.
  */
-export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot, onEditShot, onClose }: {
+export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot, onEditShot, onUpdateShot, onClose }: {
   project: FilmProject;
   initialSceneId?: string;
   onApplyStyle: (frameIds: string[], styleId: string) => void;
   onAddShot?: (sceneId?: string) => void;
   onEditShot?: (frame: StoryFrame) => void;
+  onUpdateShot?: (frame: StoryFrame) => void;
   onClose?: () => void;
 }) {
   const [sceneId, setSceneId] = useState(initialSceneId || project.scenes[0]?.id || "");
@@ -35,6 +37,7 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
   const [scope, setScope] = useState<"scene" | "project">("scene");
   const [selected, setSelected] = useState<string[] | null>(null);
   const [styleOverride, setStyleOverride] = useState<string | null>(null);
+  const [showTable, setShowTable] = useState(false);
   const [rememberedStyle] = useState<string | null>(() => { const s = readLS(LS_STYLE); return hasStyle(s) ? s : null; });
   const [platform, setPlatform] = useState<PlatformId>(() => {
     const saved = readLS(LS_PLATFORM) as PlatformId | null;
@@ -180,6 +183,43 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
           <textarea className="prompt-output studio-output-text" readOnly rows={16} value={combined} aria-label="Combined prompts for the selected shots" onFocus={e => e.target.select()} />
         </div>
       </div>}
+
+      {scopeFrames.length > 0 && (
+        <section className="prompt-studio-shotlist-section">
+          <div className="prompt-studio-shotlist-head">
+            <button
+              type="button"
+              className="prompt-studio-shotlist-toggle"
+              onClick={() => setShowTable(!showTable)}
+              aria-expanded={showTable}
+            >
+              <Table2 size={16} />
+              <span>Shot list details ({scopeFrames.length} shots)</span>
+              {showTable ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+            </button>
+            {onAddShot && (
+              <button
+                type="button"
+                className="button button-small"
+                onClick={() => onAddShot(scope === "scene" ? sceneId : undefined)}
+              >
+                <Plus size={14} />
+                Add shot
+              </button>
+            )}
+          </div>
+          {showTable && (
+            <div className="prompt-studio-table-wrap">
+              <FrameTable
+                project={project}
+                frames={scopeFrames}
+                onEdit={f => (onEditShot ? onEditShot(f) : undefined)}
+                onUpdate={onUpdateShot}
+              />
+            </div>
+          )}
+        </section>
+      )}
     </div>
     <div className="modal-footer">
       <span className="footer-left export-meta"><Sparkles size={13} /> Prompts update as you change the style, model, or selection. The look is saved to your shots.</span>
