@@ -36,6 +36,8 @@ public/images/
     poster.jpg  super8.jpg  synthwave.jpg  charcoal.jpg  collage.jpg
     ghibli.jpg  manga.jpg  hanna-barbera.jpg  isometric.jpg  art-deco.jpg
     impressionist.jpg  pop-art.jpg  stained-glass.jpg  technicolor.jpg  polaroid.jpg
+  templates/
+    short-film.jpg  feature-film.jpg  documentary.jpg
 public/fonts/   (six .ttf files: DM Sans 400/500/600/700, Instrument Serif regular + italic)
 ```
 
