@@ -1,8 +1,12 @@
 # RAPTURE — canon (locked)
 
-A social-realist horror set in northern England after the Rapture. The left-behind world
-runs on bureaucracy — Limbo intake halls, one form per family, a Hell intake floor — and
-on the red light in the letterbox of every raptured house.
+**Master style document: `show-bible.md`** — LET THE RAPTURES COMMENCE, 8-part British
+black comedy. That document is the source of truth for tone, cast, cosmology, the season
+clock and the per-thread visual grammars. Scenes live in `scenes/`.
+
+A social-realist frame under a black-comedy engine: the left-behind world runs on
+bureaucracy — Limbo intake halls, one form per family, a Hell intake floor — and on the
+red light in the letterbox of every raptured house. The grim is texture, never pathos.
 
 ## Characters — locked
 
