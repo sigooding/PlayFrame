@@ -71,10 +71,10 @@ console.log("=== Verifying Screenplay Undo / Redo & AI Image Prompt Models ===")
 console.log("\n1. Prompt models");
 
 const prompt = await loadBundled(
-  `export * from "@/lib/prompt";\nexport { starterProjects } from "@/lib/seed";\n`,
+  `export * from "@/lib/prompt";\nexport * from "@/lib/styles";\nexport { starterProjects } from "@/lib/seed";\n`,
   "prompt-shim",
 );
-const { PLATFORMS, buildFramePrompt, buildScenePrompt, extractPositivePrompt, extractNegativePrompt, starterProjects } = prompt;
+const { PLATFORMS, buildFramePrompt, buildScenePrompt, extractPositivePrompt, extractNegativePrompt, VISUAL_STYLES, visualStyle, negativeFor, DEFAULT_STYLE_ID, starterProjects } = prompt;
 
 const project = starterProjects[0];
 const frame = project.frames[0];
@@ -127,6 +127,68 @@ assert(mjPrompt.includes("--ar 16:9") && mjPrompt.includes("--v 6.1"), "Midjourn
 const fluxPrompt = buildFramePrompt(project, frame, "flux");
 assert(fluxPrompt.includes("35mm") && fluxPrompt.includes("16:9"), "FLUX prompt should include cinematic 35mm prose");
 console.log("  PASS  model-specific syntax, parameters and negative prompts verified");
+
+// ---------------------------------------------------------------------------
+// 1b. Visual style library (anime, realistic, comic, ...)
+// ---------------------------------------------------------------------------
+console.log("\n1b. Visual style library");
+
+assert(Array.isArray(VISUAL_STYLES), "VISUAL_STYLES should be an array");
+assert.strictEqual(VISUAL_STYLES.length, 10, `Expected exactly 10 styles, got ${VISUAL_STYLES.length}`);
+const ids = new Set(VISUAL_STYLES.map(s => s.id));
+assert.strictEqual(ids.size, 10, "style ids must be unique");
+
+for (const s of VISUAL_STYLES) {
+  assert(s.name && s.prompt && s.finish && s.swatch, `style ${s.id} is missing metadata`);
+  assert(s.image.startsWith("/images/styles/"), `style ${s.id} image should live in /images/styles/`);
+  assert(existsSync(join(root, "public", s.image)), `style example image not on disk: ${s.image}`);
+}
+console.log(`  PASS  10 styles, each with a unique id, tokens, and an example image on disk`);
+
+// The three the user named must exist.
+for (const [id, name] of [["cinematic", "realistic"], ["anime", "anime"], ["comic", "comic"]]) {
+  const found = VISUAL_STYLES.find(s => s.id === id);
+  assert(found, `missing style ${id}`);
+  assert(found.name.toLowerCase().includes(name) || id === "cinematic", `style ${id} should read as ${name}`);
+}
+console.log("  PASS  realistic / anime / comic all present");
+
+// Default stays photoreal so existing prompts keep their meaning.
+const def = visualStyle(DEFAULT_STYLE_ID);
+assert(def.photoreal === true, "default style must be photoreal");
+assert(visualStyle(undefined).id === DEFAULT_STYLE_ID, "missing style falls back to the default");
+assert(visualStyle("nope").id === DEFAULT_STYLE_ID, "unknown style falls back to the default");
+
+// Negative-prompt conflict handling.
+const anime = visualStyle("anime");
+assert(anime.photoreal === false, "anime must not be photoreal");
+const animeNeg = negativeFor("blurry, low quality, cartoon, anime, illustration, photorealistic", anime);
+assert(!/\banime\b|\bcartoon\b|\billustration\b/.test(animeNeg), `anime negative should drop its own style tokens: ${animeNeg}`);
+assert(animeNeg.includes("photorealistic") || animeNeg.includes("live action"), "anime negative should guard against collapsing to realism");
+const keepNeg = negativeFor("blurry, cartoon, anime", def);
+assert(keepNeg.includes("cartoon") && keepNeg.includes("anime"), "photoreal default should keep anti-cartoon negatives");
+
+// Prompts actually change with the style.
+for (const model of PLATFORMS) {
+  const base = buildFramePrompt(project, frame, model.id);
+  const styled = buildFramePrompt(project, frame, model.id, "anime");
+  assert(styled !== base, `${model.id} prompt should differ when a style is applied`);
+  assert(/anime/i.test(styled), `${model.id} prompt should carry the anime style`);
+  assert(!/undefined|NaN|\[object Object\]/.test(styled), `${model.id} styled prompt has a leaked value`);
+}
+console.log(`  PASS  every one of the ${PLATFORMS.length} models applies the style to its prompt`);
+
+const animeFlux = buildFramePrompt(project, frame, "flux", "anime");
+assert(!/35mm film still/i.test(animeFlux), "anime FLUX prompt should not call itself a film still");
+const animeSdxlNeg = extractNegativePrompt(buildFramePrompt(project, frame, "sdxl", "anime"));
+assert(animeSdxlNeg && !/\bcartoon\b/.test(animeSdxlNeg), "anime SDXL negative should not forbid cartoon");
+const animeSdxlPos = extractPositivePrompt(buildFramePrompt(project, frame, "sdxl", "anime"));
+assert(/anime/.test(animeSdxlPos), "anime SDXL positive should carry the style");
+console.log("  PASS  image-model finish + negative prompts adapt to the style");
+
+const sceneAnime = buildScenePrompt(project, scene, "midjourney", "anime");
+assert(/anime/i.test(sceneAnime), "scene prompt should carry the style");
+console.log("  PASS  scene-level prompts carry the style too");
 
 // ---------------------------------------------------------------------------
 // 2. Screenplay undo / redo — the real component, driven in jsdom

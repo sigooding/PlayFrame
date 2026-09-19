@@ -4,6 +4,8 @@ import { useState } from "react";
 import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, ChevronDown, Images, UserRound, Check, CheckCheck, ClipboardCopy, Info, ListOrdered, Sparkles, Clapperboard, Clipboard, Download, FileJson, FileText, Film, Globe2, LayoutGrid, Link2, LoaderCircle, LockKeyhole, MessageSquare, Plus, Search, ShieldCheck, SunMedium, Table2, Trash2, WandSparkles } from "lucide-react";
 import { Field, Modal } from "./ui";
 import { LightingPicker } from "./lighting-picker";
+import { VisualStylePicker } from "./style-picker";
+import { DEFAULT_STYLE_ID } from "@/lib/styles";
 import { downloadFile, exportShotList, printProject, slugify } from "@/lib/export";
 import type { Act, ActPart, FilmProject, ProjectNote, Scene, SceneKind } from "@/lib/types";
 import { kindMeta, sceneKinds } from "@/lib/structure";
@@ -188,13 +190,14 @@ export function ActsDialog({ acts, scenes, onClose, onSave }: { acts: Act[]; sce
 export function PromptDialog({ project, initialSceneId, onClose }: { project: FilmProject; initialSceneId?: string; onClose: () => void }) {
   const [sceneId, setSceneId] = useState(initialSceneId || project.scenes[0]?.id || "");
   const [platform, setPlatform] = useState<PlatformId>("seedance");
+  const [style, setStyle] = useState<string>(DEFAULT_STYLE_ID);
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copied, setCopied] = useState<string | null>(null);
 
   const scene = project.scenes.find(s => s.id === sceneId);
   const frames = project.frames.filter(f => f.sceneId === sceneId);
   const currentModel = PLATFORMS.find(p => p.id === platform) || PLATFORMS[0];
-  const scenePrompt = scene ? buildScenePrompt(project, scene, platform) : "";
+  const scenePrompt = scene ? buildScenePrompt(project, scene, platform, style) : "";
 
   async function copy(text: string, key: string) {
     try {
@@ -214,7 +217,7 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
       "=== SCENE SEQUENCE ===",
       scenePrompt,
       "",
-      ...frames.flatMap((f, i) => [`=== SHOT ${i + 1}: ${f.title} ===`, buildFramePrompt(project, f, platform), ""]),
+      ...frames.flatMap((f, i) => [`=== SHOT ${i + 1}: ${f.title} ===`, buildFramePrompt(project, f, platform, style), ""]),
     ].join("\n");
     downloadFile(body, `${slugify(project.title)}-${slugify(scene?.title || "scene")}-prompts.txt`);
   }
@@ -228,6 +231,8 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
         <button type="button" className={`prompt-category-pill ${categoryFilter === "image" ? "active" : ""}`} onClick={() => setCategoryFilter("image")}>AI Image Models ({PLATFORMS.filter(p => p.kind === "image").length})</button>
         <button type="button" className={`prompt-category-pill ${categoryFilter === "video" ? "active" : ""}`} onClick={() => setCategoryFilter("video")}>AI Video Models ({PLATFORMS.filter(p => p.kind === "video").length})</button>
       </div>
+
+      <div className="field prompt-style-field"><span>Visual style</span><VisualStylePicker value={style} onChange={setStyle} /></div>
 
       <div className="prompt-toolbar">
         <div className="select-wrap scene-filter">
@@ -273,7 +278,7 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
           <span className="eyebrow">SHOT BY SHOT · {currentModel.name.toUpperCase()}</span>
           {frames.length === 0 && <p className="chip-hint">No shots in this scene yet. Add frames on the storyboard to generate per-shot prompts.</p>}
           {frames.map((f, i) => {
-            const text = buildFramePrompt(project, f, platform);
+            const text = buildFramePrompt(project, f, platform, style);
             return <div key={f.id} className="prompt-shot">
               <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
               <div className="prompt-shot-body">

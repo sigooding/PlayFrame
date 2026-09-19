@@ -764,6 +764,11 @@ img{display:block;max-width:100%}
 .lighting-option.selected strong{color:#355440;font-weight:600}
 .lighting-summary{margin-top:2px}
 .frame-fields>.field .lighting-grid{grid-template-columns:repeat(auto-fill,minmax(84px,1fr))}
+/* visual style library — a little wider than lighting so ten looks stay legible */
+.style-grid{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+.style-option strong{font-size:10.8px}
+.prompt-style-field{margin:0}
+.prompt-style-field>span{font-size:11px;font-weight:600;color:#6b7d5d;letter-spacing:.04em;text-transform:uppercase;margin-bottom:6px;display:block}
 
 /* ===== Relationships: editor, connect panel, map, pair cards, storylines ===== */
 .relation-editor{display:flex;flex-direction:column;gap:9px}

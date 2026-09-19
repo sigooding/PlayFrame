@@ -6,6 +6,8 @@ import { Field, Modal } from "./ui";
 import { CAMERA_ANGLES, CAMERA_MOVEMENTS, LENSES, SHOT_TYPES, TRANSITIONS, type CameraAngle, type CameraMovement, type Character, type FilmProject, type FrameStatus, type Lens, type Scene, type ShotType, type StoryFrame, type Transition } from "@/lib/types";
 import { applyShotType, isShotReference, shotGuide } from "@/lib/shots";
 import { LightingPicker } from "./lighting-picker";
+import { VisualStylePicker } from "./style-picker";
+import { DEFAULT_STYLE_ID } from "@/lib/styles";
 import { relationLines } from "@/lib/relations";
 import { buildFramePrompt, extractNegativePrompt, extractPositivePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { IMAGE_TYPES, projectImages, resizeImage } from "@/lib/image";
@@ -41,12 +43,13 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
   const [error, setError] = useState("");
   const [showUrl, setShowUrl] = useState(false);
   const [platform, setPlatform] = useState<PlatformId>("hailuo");
+  const [style, setStyle] = useState<string>(DEFAULT_STYLE_ID);
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const uploadRef = useRef<HTMLInputElement>(null);
   const set = <K extends keyof StoryFrame>(key: K, value: StoryFrame[K]) => setDraft(prev => ({ ...prev, [key]: value }));
   const usingReference = !draft.image || isShotReference(draft.image);
-  const prompt = buildFramePrompt(project, draft, platform);
+  const prompt = buildFramePrompt(project, draft, platform, style);
   const currentModel = PLATFORMS.find(p => p.id === platform) || PLATFORMS[0];
   const library = projectImages(project);
 
@@ -120,6 +123,8 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
         <button type="button" className={`prompt-category-pill ${categoryFilter === "image" ? "active" : ""}`} onClick={() => setCategoryFilter("image")}>AI Image Models ({PLATFORMS.filter(p => p.kind === "image").length})</button>
         <button type="button" className={`prompt-category-pill ${categoryFilter === "video" ? "active" : ""}`} onClick={() => setCategoryFilter("video")}>AI Video Models ({PLATFORMS.filter(p => p.kind === "video").length})</button>
       </div>
+
+      <div className="field prompt-style-field"><span>Visual style</span><VisualStylePicker value={style} onChange={setStyle} /></div>
 
       <div className="prompt-toolbar">
         <div className="platform-picker" role="tablist" aria-label="Video model">
