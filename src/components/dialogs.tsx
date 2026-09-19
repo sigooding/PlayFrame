@@ -5,11 +5,11 @@ import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, ChevronDown, Images, User
 import { Field, Modal } from "./ui";
 import { LightingPicker } from "./lighting-picker";
 import { VisualStylePicker } from "./style-picker";
-import { DEFAULT_STYLE_ID } from "@/lib/styles";
+import { DEFAULT_STYLE_ID, visualStyle } from "@/lib/styles";
 import { downloadFile, exportShotList, printProject, slugify } from "@/lib/export";
-import type { Act, ActPart, FilmProject, ProjectNote, Scene, SceneKind } from "@/lib/types";
+import type { Act, ActPart, FilmProject, ProjectNote, Scene, SceneKind, StoryFrame } from "@/lib/types";
 import { kindMeta, sceneKinds } from "@/lib/structure";
-import { buildFramePrompt, buildScenePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
+import { buildFramePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { onImageError } from "@/lib/image";
 
 type ProjectInput = { title: string; description: string; genre: string; format: string; template: string };
@@ -193,11 +193,27 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
   const [style, setStyle] = useState<string>(DEFAULT_STYLE_ID);
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copied, setCopied] = useState<string | null>(null);
+  const [scope, setScope] = useState<"scene" | "project">("scene");
+  const [selected, setSelected] = useState<string[] | null>(null); // null = "everything in scope"
 
   const scene = project.scenes.find(s => s.id === sceneId);
-  const frames = project.frames.filter(f => f.sceneId === sceneId);
+  const scopeFrames = scope === "project" ? project.frames : project.frames.filter(f => f.sceneId === sceneId);
+  const selectedIds = selected ?? scopeFrames.map(f => f.id);
+  const chosen = scopeFrames.filter(f => selectedIds.includes(f.id));
   const currentModel = PLATFORMS.find(p => p.id === platform) || PLATFORMS[0];
-  const scenePrompt = scene ? buildScenePrompt(project, scene, platform, style) : "";
+  const styleName = visualStyle(style).name;
+
+  const toggle = (id: string) => setSelected(prev => {
+    const cur = prev ?? scopeFrames.map(f => f.id);
+    return cur.includes(id) ? cur.filter(x => x !== id) : [...cur, id];
+  });
+
+  const shotBlock = (f: StoryFrame, i: number) => `=== SHOT ${i + 1}: ${f.title} (${f.shotType}) ===\n${buildFramePrompt(project, f, platform, style)}`;
+  const combined = [
+    `${project.title.toUpperCase()} — ${currentModel?.name} · ${styleName} · ${scope === "project" ? "WHOLE PROJECT" : (scene?.title || "Scene").toUpperCase()}`,
+    "",
+    ...chosen.map((f, i) => shotBlock(f, i)),
+  ].join("\n\n");
 
   async function copy(text: string, key: string) {
     try {
@@ -212,19 +228,16 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
   function downloadAll() {
     const isImage = currentModel?.kind === "image";
     const body = [
-      `${project.title.toUpperCase()} — ${isImage ? "AI IMAGE & STORYBOARD PROMPTS" : "AI VIDEO PROMPTS"} (${currentModel?.name})`,
+      `${project.title.toUpperCase()} — ${isImage ? "AI IMAGE & STORYBOARD PROMPTS" : "AI VIDEO PROMPTS"} (${currentModel?.name} · ${styleName})`,
       "",
-      "=== SCENE SEQUENCE ===",
-      scenePrompt,
-      "",
-      ...frames.flatMap((f, i) => [`=== SHOT ${i + 1}: ${f.title} ===`, buildFramePrompt(project, f, platform, style), ""]),
+      ...chosen.flatMap((f, i) => [shotBlock(f, i), ""]),
     ].join("\n");
-    downloadFile(body, `${slugify(project.title)}-${slugify(scene?.title || "scene")}-prompts.txt`);
+    downloadFile(body, `${slugify(project.title)}-${scope === "project" ? "project" : slugify(scene?.title || "scene")}-prompts.txt`);
   }
 
   const visiblePlatforms = categoryFilter === "all" ? PLATFORMS : PLATFORMS.filter(p => p.kind === categoryFilter);
 
-  return <Modal wide title="From storyboard to generated imagery & video." subtitle="Ready-to-paste prompts for Stable Diffusion (SDXL, SD 1.5, SD 3.5), Krea 2, FLUX.1, Midjourney, DALL-E 3, MiniMax Hailuo, Seedance, Kling, Runway, and Veo." onClose={onClose} className="prompt-modal">
+  return <Modal wide title="The prompt studio." subtitle="Pick the shots, choose a look and a model, and copy every prompt in one go." onClose={onClose} className="prompt-modal">
     <div className="modal-body prompt-studio">
       <div className="prompt-category-bar">
         <button type="button" className={`prompt-category-pill ${categoryFilter === "all" ? "active" : ""}`} onClick={() => setCategoryFilter("all")}>All Models ({PLATFORMS.length})</button>
@@ -235,12 +248,11 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
       <div className="field prompt-style-field"><span>Visual style</span><VisualStylePicker value={style} onChange={setStyle} /></div>
 
       <div className="prompt-toolbar">
-        <div className="select-wrap scene-filter">
-          <select aria-label="Scene for prompts" value={sceneId} onChange={e => setSceneId(e.target.value)}>
-            {project.scenes.map((s, i) => <option key={s.id} value={s.id}>{String(i + 1).padStart(2, "0")} · {s.title} — {s.location}</option>)}
-          </select>
+        <div className="studio-scope">
+          <div className="select-wrap"><select aria-label="Scope for prompts" value={scope} onChange={e => { setScope(e.target.value as "scene" | "project"); setSelected(null); }}><option value="scene">This scene</option><option value="project">Whole project</option></select></div>
+          {scope === "scene" && <div className="select-wrap scene-filter"><select aria-label="Scene for prompts" value={sceneId} onChange={e => { setSceneId(e.target.value); setSelected(null); }}>{project.scenes.map((s, i) => <option key={s.id} value={s.id}>{String(i + 1).padStart(2, "0")} · {s.title} — {s.location}</option>)}</select></div>}
         </div>
-        <div className="platform-picker" role="tablist" aria-label="Video model">
+        <div className="platform-picker" role="tablist" aria-label="AI model">
           {visiblePlatforms.map(p => (
             <button type="button" key={p.id} role="tab" aria-selected={platform === p.id} className={platform === p.id ? "active" : ""} onClick={() => setPlatform(p.id)}>
               {p.name}
@@ -254,52 +266,49 @@ export function PromptDialog({ project, initialSceneId, onClose }: { project: Fi
         <Info size={13} />
         {currentModel?.hint}
         {currentModel?.aspectRatio && <span> · Aspect: <strong>{currentModel.aspectRatio}</strong></span>}
+        <span> · Style: <strong>{styleName}</strong></span>
       </p>
 
-      {!scene ? <div className="empty-state">
-        <h3>Add a scene first.</h3>
-        <p>Prompts are built from the scene, its cast, and its shots.</p>
-      </div> : <>
-        <div className="prompt-block">
-          <div className="prompt-block-head">
-            <div>
-              <span className="eyebrow">{currentModel.kind === "image" ? "STORYBOARD STILLS" : "WHOLE SCENE"} · {frames.length} SHOT{frames.length === 1 ? "" : "S"}</span>
-              <h3>{scene.title}</h3>
-            </div>
-            <button type="button" className="button button-primary" onClick={() => copy(scenePrompt, "scene")}>
-              {copied === "scene" ? <CheckCheck size={15} /> : <ClipboardCopy size={15} />}
-              {copied === "scene" ? "Copied" : currentModel.kind === "image" ? "Copy all shot prompts" : "Copy sequence"}
-            </button>
+      {scopeFrames.length === 0 ? <div className="empty-state">
+        <h3>No shots here yet.</h3>
+        <p>Add frames on the storyboard, then batch their prompts in the studio.</p>
+      </div> : <div className="studio-grid">
+        <div className="studio-shots">
+          <div className="studio-shots-head">
+            <span className="eyebrow">SHOTS · {chosen.length}/{scopeFrames.length} selected</span>
+            <span className="studio-shots-actions"><button type="button" className="text-button" onClick={() => setSelected(scopeFrames.map(f => f.id))}>All</button><button type="button" className="text-button" onClick={() => setSelected([])}>None</button></span>
           </div>
-          <textarea className="prompt-output" readOnly rows={10} value={scenePrompt} aria-label="Scene sequence prompt" onFocus={e => e.target.select()} />
+          <div className="studio-shot-list">
+            {scopeFrames.map(f => {
+              const on = selectedIds.includes(f.id);
+              const sc = project.scenes.find(s => s.id === f.sceneId);
+              return <button type="button" key={f.id} className={`studio-shot-row ${on ? "selected" : ""}`} aria-pressed={on} onClick={() => toggle(f.id)}>
+                <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
+                <span className="studio-shot-text"><strong>{f.title}</strong><small>{scope === "project" && sc ? `${sc.title} · ` : ""}{f.shotType} · {f.duration}s</small></span>
+                {on && <Check size={14} />}
+              </button>;
+            })}
+          </div>
         </div>
 
-        <div className="prompt-shots">
-          <span className="eyebrow">SHOT BY SHOT · {currentModel.name.toUpperCase()}</span>
-          {frames.length === 0 && <p className="chip-hint">No shots in this scene yet. Add frames on the storyboard to generate per-shot prompts.</p>}
-          {frames.map((f, i) => {
-            const text = buildFramePrompt(project, f, platform, style);
-            return <div key={f.id} className="prompt-shot">
-              <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
-              <div className="prompt-shot-body">
-                <div className="prompt-shot-head">
-                  <strong>Shot {i + 1} · {f.title}</strong>
-                  <span>{f.shotType} · {f.movement} · {f.duration}s{f.transition ? ` · ${f.transition} in` : ""}</span>
-                  <button type="button" className="button button-small" onClick={() => copy(text, f.id)}>
-                    {copied === f.id ? <CheckCheck size={13} /> : <ClipboardCopy size={13} />}
-                    {copied === f.id ? "Copied" : "Copy"}
-                  </button>
-                </div>
-                <pre>{text}</pre>
-              </div>
-            </div>;
-          })}
+        <div className="studio-output">
+          <div className="prompt-block-head">
+            <div>
+              <span className="eyebrow">{currentModel.kind === "image" ? "STILLS" : "SEQUENCE"} · {chosen.length} SHOT{chosen.length === 1 ? "" : "S"} · {styleName}</span>
+              <h3>{scope === "project" ? "Whole project" : scene?.title}</h3>
+            </div>
+            <button type="button" className="button button-primary" onClick={() => copy(combined, "all")}>
+              {copied === "all" ? <CheckCheck size={15} /> : <ClipboardCopy size={15} />}
+              {copied === "all" ? "Copied" : "Copy batch"}
+            </button>
+          </div>
+          <textarea className="prompt-output studio-output-text" readOnly rows={16} value={combined} aria-label="Combined prompts for the selected shots" onFocus={e => e.target.select()} />
         </div>
-      </>}
+      </div>}
     </div>
     <div className="modal-footer">
-      <span className="footer-left export-meta"><Sparkles size={13} /> Prompts update automatically as you refine shots.</span>
-      {scene && <button type="button" className="button" onClick={downloadAll}>Download all as .txt</button>}
+      <span className="footer-left export-meta"><Sparkles size={13} /> Prompts update as you change the style, model, or selection.</span>
+      {chosen.length > 0 && <button type="button" className="button" onClick={downloadAll}>Download batch as .txt</button>}
       <button type="button" className="button button-primary" onClick={onClose}>Done</button>
     </div>
   </Modal>;

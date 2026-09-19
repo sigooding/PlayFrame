@@ -526,6 +526,23 @@ img{display:block;max-width:100%}
 .prompt-model-badge.image{background:#dbe8d2;color:#34552c}
 .prompt-model-badge.video{background:#d8e4f0;color:#2c4b68}
 .platform-hint{display:flex;align-items:center;gap:7px;font-size:11.5px;color:#8f9e82;margin:-4px 0 0;flex-wrap:wrap}
+/* prompt studio — shot selection on the left, combined output on the right */
+.studio-scope{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.studio-grid{display:grid;grid-template-columns:minmax(240px,330px) 1fr;gap:16px;align-items:start}
+.studio-shots{display:flex;flex-direction:column;gap:8px;min-width:0}
+.studio-shots-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.studio-shots-actions{display:inline-flex;gap:10px}
+.studio-shot-list{display:flex;flex-direction:column;gap:6px;max-height:400px;overflow:auto;padding-right:4px}
+.studio-shot-row{display:flex;align-items:center;gap:9px;padding:6px;border:1px solid #e3e8db;border-radius:7px;background:#fbfdf8;text-align:left;transition:border-color .15s,background .15s;cursor:pointer}
+.studio-shot-row:hover{border-color:#b3c79d}
+.studio-shot-row.selected{border-color:#486e44;background:#f0f6ec;box-shadow:0 0 0 2px #486e4420}
+.studio-shot-row img{width:56px;height:32px;object-fit:cover;border-radius:4px;flex:none}
+.studio-shot-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.studio-shot-text strong{font-size:12px;color:#355440;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.studio-shot-text small{font-size:10.6px;color:#8f9e82}
+.studio-output{display:flex;flex-direction:column;gap:10px;min-width:0}
+.studio-output-text{min-height:320px}
+@media(max-width:760px){.studio-grid{grid-template-columns:1fr}.studio-shot-list{max-height:240px}}
 .prompt-output{width:100%;border:1px solid #dfe7d5;border-radius:7px;background:#fff;padding:14px 16px;font:12.5px/1.7 'Courier New',Courier,monospace;color:#4a5a44;resize:vertical;min-height:180px;outline:none}
 .prompt-output:focus{border-color:#8fa777;box-shadow:0 0 0 3px #8fa77712}
 .prompt-includes{background:#f4f7ef;border:1px solid #e5ecdb;border-radius:7px;padding:13px 14px}
