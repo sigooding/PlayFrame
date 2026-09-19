@@ -53,7 +53,7 @@ export function ExportDialog({ project, onClose }: { project: FilmProject; onClo
     { id: "screenplay", title: "Screenplay", detail: "Fountain · Works with screenwriting apps", icon: FileText },
     { id: "shots", title: "Shot list", detail: "CSV · Ready for your production team", icon: Table2 },
     { id: "look", title: "Look book", detail: "Mood boards, structure & cast · PDF", icon: Images },
-    { id: "backup", title: "Project backup", detail: "JSON · Everything, for re-import", icon: FileJson },
+    { id: "backup", title: "Project backup", detail: "JSON · Everything incl. your uploaded images · Re-importable", icon: FileJson },
   ];
   function exportFile() {
     try {

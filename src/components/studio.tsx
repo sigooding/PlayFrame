@@ -249,7 +249,7 @@ export default function Studio({ initialProjects, initialTab, initialProjectId }
   async function importProjectFile(file?: File) {
     if (!file) return;
     if (!/\.json$/i.test(file.name)) { notify("Choose a frame. project backup (.json).", true); return; }
-    if (file.size > 4 * 1024 * 1024) { notify("That backup is larger than 4 MB.", true); return; }
+    if (file.size > 25 * 1024 * 1024) { notify("That backup is larger than 25 MB. Export again with fewer uploaded images.", true); return; }
     try {
       const created = await request<FilmProject & { imported?: Record<string, number> }>("/api/projects/import", { method: "POST", body: await file.text() });
       updateLocal(current => [...current, created]);
