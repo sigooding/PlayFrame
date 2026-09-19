@@ -65,6 +65,8 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run dev` | development server |
 | `npm run build` / `npm start` | production build and serve |
 | `npm run check:assets` | verifies every image the code references exists on disk |
+| `npm run verify:features` | checks the AI prompt models and drives the real screenplay editor's undo/redo in jsdom (no server, no browser needed) |
+| `npm run verify:features:live` | the same, plus a check that `/?tab=screenplay` server-renders (needs the dev server running) |
 | `node scripts/verify7.mjs` | checks assets, the lighting library, every shot reference and the relationship screens (needs the dev server running, no browser required) |
 | `node scripts/verify6.mjs` | the same ground covered through a real browser, with screenshots (needs Playwright) |
 | `npx drizzle-kit push` | apply schema changes to the database |
