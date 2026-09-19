@@ -94,6 +94,8 @@ function parts(project: FilmProject, frame: StoryFrame, ctx: PromptContext, entr
 export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platform: PlatformId, style?: string): string {
   const entry = visualStyle(style);
   const styleNeg = (base: string) => negativeFor(base, entry);
+  const artLower = entry.name.toLowerCase();
+  const anCap = /^[aeiou]/.test(artLower) ? "An" : "A";
   const ctx = frameContext(project, frame);
   const p = parts(project, frame, ctx, entry);
   const duration = `${frame.duration} second${frame.duration === 1 ? "" : "s"}`;
@@ -120,7 +122,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
   // ===== Image Models =====
   if (platform === "flux") {
     return [
-      `A ${entry.photoreal ? "cinematic 35mm film still" : `${entry.name.toLowerCase()} artwork`} of a ${p.shot}.`,
+      `${entry.photoreal ? "A cinematic 35mm film still" : `${anCap} ${artLower} artwork`} of a ${p.shot}.`,
       p.cast ? `Featuring ${p.cast}.` : "",
       p.relations ? `Context: ${p.relations}` : "",
       p.action ? p.action : "",
@@ -266,7 +268,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
   }
   if (platform === "ideogram") {
     return [
-      `A ${entry.photoreal ? "cinematic photo" : `${entry.name.toLowerCase()} illustration`} of a ${p.shot},`,
+      `${entry.photoreal ? "A cinematic photo" : `${anCap} ${artLower} illustration`} of a ${p.shot},`,
       p.cast ? `showing ${p.cast},` : "",
       p.action ? `${p.action},` : "",
       p.relations ? `${p.relations},` : "",
