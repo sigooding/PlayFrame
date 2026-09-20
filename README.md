@@ -25,8 +25,9 @@ workspace, not just a folder of images:
   cold open's contented blank) from both.
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
   thirteen new AI-generated studies, one keyframe per shot.
-- **Cold open (episode four):** the numbered 17-shot fixed-surveillance screenplay,
-  ten AI studies on disk and seven placeholder slots pending their studies.
+- **Cold opens:** the numbered episode-four surveillance screenplay (17 shots, all
+  studied) and the episode-three angel advert screenplay (15 shots, ten studied,
+  five placeholder slots pending).
 - The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.

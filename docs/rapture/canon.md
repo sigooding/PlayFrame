@@ -12,6 +12,13 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
+- **Episode-three cold open:** [numbered scene](scenes/ep3-cold-open.md),
+  15 static setups in immaculate advert grammar: locked off, centred, too
+  symmetrical, beautiful light. The recovery angels are now **named by the
+  source: Harriel (40s, linen) and Soqed (30s, slightly behind him always)**;
+  no further backstory is supplied. The unnamed MAN (60s, cardigan) between
+  the pallets of bark chippings is a blank who belongs to nobody and joins no
+  cast list. Ten AI studies are on disk; five shots hold placeholder cards.
 - **The first wrong lockup:** [numbered scene](scenes/ep2-first-wrong-lockup.md),
   31 shots in episode two. Nina drives out on a pendant bearing, opens two wrong
   lockups, and acquires Alan. Thirty-one AI-generated studies board the scene;
@@ -42,6 +49,11 @@ comedy in every thread; this is not noir and not a tragedy.
   cardigan, shirt and tie, corduroys, slippers. Content, helpful, unfazed;
   never frightened. No surname, and **not** Alan and **not** the chained/rescued
   blank — no identity link has been supplied.
+- **Harriel — 40s — and Soqed — 30s.** The Michael-adjacent recovery pair,
+  linen, immaculate, of no use whatsoever. Named in the episode-three cold
+  open; Soqed is always slightly behind Harriel. Neither has read the report.
+  No identity sheets exist yet; the studies fix linen suits, Harriel's greying
+  neat hair and Soqed's sandy hair as the working reference.
 
 ## Current Crane grammar
 
@@ -79,6 +91,14 @@ and, in 15, Graham mid-word. Check the timecode digits against the source
 values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.
+
+Ten **angel cold-open AI studies** in `public/images/rapture/ep3-cold-open/`
+board the first ten shots of the episode-three cold open; five shots hold
+"keyframe missing" placeholder cards until their studies are generated. All
+fifteen carry the immaculate advert grammar: locked off, centred, slightly
+too symmetrical, wide lenses, everything in focus, beautiful light — the
+opposite of Hell's surveillance. Check the linen continuity between Harriel
+and Soqed and the too-perfect symmetry before approving.
 
 Only written pauses are locked. Number Fourteen's **~175 seconds** and the lockup's
 **~271 seconds** are editorial playback estimates for those scenes, **not** finished
