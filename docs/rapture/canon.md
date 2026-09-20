@@ -12,13 +12,26 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
-- **Episode-four cold open — Pat alone:** [numbered scene](scenes/ep4-pat-cold-open.md),
-  12 dialogue-free surveillance shots of Pat keeping house before anyone
-  arrives: the photographs with three different men, the sweet tin, the
-  cupboard of bottled water, the doilies, and one smile at an empty window.
-  The old-lady sequence becomes **Scene 2** of the episode; its 32 shots are
-  held by the outline until the numbered source is supplied. All twelve
-  shots carry AI studies.
+- **Episode-four cold open — Pat's house at dusk:** [numbered scene](scenes/ep4-pat-cold-open.md),
+  16 surveillance shots of Pat and Malcolm keeping house while the light
+  goes, with Graham already chained under the floor: the photographs with
+  three different men, the sweet tin, the cupboard of bottled water she
+  never drinks, Malcolm washing to the elbow, the eight-line argument about
+  method, Graham's apology from behind the locked cellar door, and one
+  smile at an empty window. She is waiting for nothing; the burglars pick
+  her house by chance. Scene 2 — the old-lady sequence — is now
+  [numbered](scenes/ep4-pat-house.md): 35 shots, two grammars never blended
+  within a shot. The dialogue-free Pat-alone v1 is preserved in
+  [archive](scenes/archive/ep4-pat-cold-open-v1.md). All sixteen shots carry
+  AI studies.
+- **Episode-four Scene 2 — the old lady:** [numbered scene](scenes/ep4-pat-house.md),
+  35 shots at dusk into night. Front room: lamplit, warm, flat, frontal,
+  static, tidy — Pat auditing Jodie over squash. Kitchen and garden:
+  handheld, close, dark, red torchlight — Danny finding the water. Shots
+  31–32 are fixed 4:3 surveillance (Malcolm up, the cupboard ajar, I've made
+  a friend); 33–35 snap back to the Crane grammar. The violence is silent
+  and domestic, the exact rhythm of someone eating a meal. This is NOT
+  Number Fourteen. All thirty-five shots carry AI studies.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -69,8 +82,17 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Graham — 50s.** A blank interviewed in **episode three** (the interview
   moved from the episode-four cold open in the restructure). Beige
   cardigan, shirt and tie, corduroys, slippers. Content, helpful, unfazed;
-  never frightened. No surname, and **not** Alan and **not** the chained/rescued
-  blank — no identity link has been supplied.
+  never frightened. No surname, and **not** Alan. By the episode-four cold
+  open he is the man chained under Pat's floor: his apology comes up
+  through the locked cellar door, heard and never seen. Whether the blank
+  Danny and Jodie rescue in episode five is also Graham has not been
+  supplied.
+- **Pat — 70s disguise.** White permed curls, far too much pink rouge, pearl
+  necklace, lilac patterned house dress, beige stockings, sensible shoes.
+  Reference: `public/images/rapture/sheets/pat.jpg`.
+- **Malcolm — 70s.** Pat's other half: beige cardigan over shirt and tie,
+  grey slacks, slippers, perfectly ordinary. Reference:
+  `public/images/rapture/sheets/malcolm.jpg`.
 - **Hariel — 40s — and Soqed — 30s.** The Michael-adjacent recovery pair,
   linen, immaculate, of no use whatsoever. Named in the episode-three cold
   open; Soqed is always slightly behind Hariel. Neither has read the report.
@@ -114,12 +136,25 @@ values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.
 
-Twelve **Pat cold-open AI studies** in `public/images/rapture/ep4-pat-cold-open/`
-board the episode-four cold open, one keyframe per shot. All carry the demon surveillance
-grammar with no dialogue and no score: the horror is that nothing happens.
-Shot 10's smile is the only thing Pat does that isn't domestic. Check the
-photograph row (the same woman, three different men) and the water cupboard
-against the settee scene's sweet tin and gate bottles before approving.
+Sixteen **Pat cold-open AI studies** in `public/images/rapture/ep4-pat-cold-open/`
+board the episode-four cold open at dusk, one keyframe per shot. All carry the demon
+surveillance grammar and the light going from dusk to dark; no score, and the
+argument in shots 7–8 is the only conversation. Shot 11 shows only the locked
+cellar door — Graham is heard, never seen — and shot 14's smile is the only
+thing Pat does that isn't domestic. Check Pat and Malcolm against their
+identity sheets in every shot, the photograph row (the same woman, three
+different men) and the water cupboard against the settee scene's sweet tin
+and gate bottles before approving.
+
+Thirty-five **Scene 2 AI studies** in `public/images/rapture/ep4-pat-house/`
+board the old-lady sequence, one keyframe per shot. The front room is lamplit,
+warm, flat, frontal and static; the kitchen and garden are handheld, close,
+dark, red torchlight; the cut between rooms is a cut between two different
+programmes. Shots 31–32 are fixed 4:3 surveillance with burnt-in timecode;
+33–35 snap back to handheld, abruptly. Check Pat, Malcolm, Danny and Jodie
+against their identity sheets in every shot, shot 28 against shot 1's framing,
+the mug on the lino and the fork in the sink against shots 10 and 20, and the
+fork wound against the scout hut's sleeve/arm continuity before approving.
 
 Fifteen **angel cold-open AI studies** in `public/images/rapture/ep3-cold-open/`
 board the episode-three cold open, one keyframe per shot. All carry the
@@ -145,10 +180,16 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
   and two recovery angels remain unnamed.
 - Episode-four Number Fourteen has a *locally intermittent* upstairs tap; the
   series-wide upstairs failure remains episode five.
-- Pat's cold open is unwitnessed: no character sees it, and it invents no
-  dialogue. The audience knows what she is from the first minute; nobody in
-  the episode ever does. The settee scene's props (sweet tin, gate bottles)
-  are pre-established by it, not contradicted.
+- Pat's cold open is unwitnessed by the episode's humans: nobody outside the
+  house sees it, and the burglars pick her house by chance. The audience
+  knows what she is — and who is under the floor — from the first minute;
+  nobody in the episode ever does. The settee scene's props (sweet tin, gate
+  bottles) are pre-established by it, not contradicted.
+- Graham's cellar timeline: the episode-three interview plays before the
+  episode-four cold open chains him under Pat's floor. Whether the
+  interview's front room is Pat's front room, and whether the blank Danny
+  and Jodie rescue in episode five (laminate flooring) is also Graham, has
+  not been supplied; no link is asserted.
 - The correction is an **auction bid, not a rewind**. Limbo is outside time and
   keeps its queue. No epilogue or resolved faces are added.
 
