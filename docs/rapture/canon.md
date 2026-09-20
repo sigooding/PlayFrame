@@ -32,6 +32,25 @@ comedy in every thread; this is not noir and not a tragedy.
   a friend); 33–35 snap back to the Crane grammar. The violence is silent
   and domestic, the exact rhythm of someone eating a meal. This is NOT
   Number Fourteen. All thirty-five shots carry AI studies.
+- **Episode-two Danny and Jodie raid:** [numbered scene](scenes/ep2-danny-jodie.md), 21
+  handheld shots at dusk into a dark house. Their grammar exactly: handheld, tight, dark,
+  one red practical — a bike light clipped to a child's strap — and never a clean wide, so
+  the audience is never allowed the geography a burglary scene usually hands it. Three
+  weeks in and it is their first appearance, so the scene is allowed to establish only two
+  things: they do this now, and she is better at it. The second is never said. Her
+  competence is played as maintenance (the handle, the cistern, the water she does not drop),
+  how she opens the door is deliberately not shown, and the householders are never seen —
+  upstairs is a thump and nothing more. Two wides in twenty-one shots, both handheld: the
+  stairwell where nothing is visible, and the exit. It supersedes the legacy first-raid
+  board as coverage; the board stays reference only. Eleven of twenty-one shots carry AI
+  studies. - **Episode-one cops beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6
+  shots, ninety seconds exactly as instructed. Their grammar with no compromise: static
+  two-shot from the bonnet through the windscreen, the same framing three times, the same
+  exterior twice, one insert of the four-pint bottle in the cup holder that neither of them
+  has drunk. Its only job is to end the episode's comic thread on a worse note than it
+  started, so it sits immediately before the 1980 tag; the form conversation resolves
+  nothing and neither of them notices, and Kath's "Us" is played with no hesitation and is
+  not a punchline. No studies yet: six placeholders.
 - **Episode-four scene 4 — the housing estate:** [numbered scene](scenes/ep4-housing-estate.md),
   36 locked-off shots at dusk. Nina's grammar, the wrong hour for the first time: she is sent to a
   child's bedroom with no number and no name, so she audits a cul-de-sac of thirty identical semis
@@ -216,7 +235,26 @@ spelled — so the audience can do the arithmetic. Every close-up inside the bed
   pale walls, grey bed, the dead CRT on the desk — because the model defaults to a generic spare
   bedroom the moment the wide is not in the reference set; where the poster is not the subject it is
   left out of frame rather than drawn half-legible, and no frame carries burnt-in words.
-## Boundaries not silently resolved
+#Twenty-one **raid studies** in `public/images/rapture/ep2-danny-jodie/` board the scene, one
+keyframe per shot. Their grammar is not a look, it is a restriction: one small red practical,
+everything else black, framing that stays inside two metres, and no clean wide anywhere — the
+two wides are the stairwell and the exit and both are handheld. Check Danny's olive waxed
+jacket and satchel, Jodie's navy hoodie under the oversized olive jacket with the red bike
+light on her strap, and that the four-pint bottle is half full. The bottle is the same prop
+that sits untouched in the cops' cup holder in episode one's second beat: the object travels,
+the threads do not meet, and no scene draws the line.
+
+Five supplied fixes are recorded against the scenes they touch, and none of them invents a
+shot: the 1980 prologue pockets the tracker at shot 12 with one montage flash of him
+fastening it round a girl's neck, and shot 31 is cut so the sequence goes straight from ERROR
+to UNDO? — logged on the 1980 tag, because the prologue itself is not boarded in this
+workspace; the washing-up board's shot 23 is corrected so the pendant is her mother's and she
+always had it, never found on Deborah's bedside; the episode-four cold open is already at
+dusk, running continuously into Scene 2 at dusk into night, so no change was needed beyond
+the note; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has
+had to sit in Max's room for the eight weeks the doorstep scene counts — which also settles
+what the empty bedroom in the doorstep scene is.
+# Boundaries not silently resolved
 
 - Episode four scene 4 does not say which bedroom the pendant wanted, whether there was one, or
   why a laid table for four stops her. The boy inferred by shot 15 and the boy in the school
