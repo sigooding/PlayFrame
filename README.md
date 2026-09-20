@@ -23,7 +23,7 @@ workspace, not just a folder of images:
 - Twenty cast entries with reciprocal family/colleague links; the woman at Number
   Fourteen is kept separate from Pat, and the rescued blank from Alan.
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
-  ten new AI-generated studies and three explicitly labelled reference slots.
+  thirteen new AI-generated studies, one keyframe per shot.
 - The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.
@@ -42,7 +42,7 @@ Sources and continuity decisions are indexed in [`docs/rapture/canon.md`](docs/r
 The latest bible supersedes the old sodium/teal and wide Crane boards. The two old
 wide framings in Number Fourteen are tightened; all dialogue and pauses remain unchanged,
 and the original scene is archived. New images are **draft AI studies**, not approved coverage;
-shots 9, 10 and 13 still need dedicated keyframes.
+check the review pointers in the shot notes before approving any of them.
 
 ```bash
 npm run build:rapture             # regenerate the JSON from the bible, script and production plan

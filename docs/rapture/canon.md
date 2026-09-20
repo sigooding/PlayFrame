@@ -48,15 +48,15 @@ coverage merely because the files remain in the repository.
 
 ## New images and honest status
 
-Ten **AI-generated storyboard studies** in `public/images/rapture/ep4/` cover shots
-1–8, 11 and 12. They are draft references pending production review, not finished
-photography. Check unwanted fill, practical-source motivation, hand anatomy,
-prop counts, van geography and bottle air gap before approving them.
+Thirteen **AI-generated storyboard studies** in `public/images/rapture/ep4/` cover
+all thirteen shots, one keyframe each. They are draft references pending
+production review, not finished photography. Check unwanted fill,
+practical-source motivation, hand anatomy, prop counts, van geography and
+bottle air gap before approving them. For the three newest studies, also check
+card legibility and the pocketless jacket in shot 9, the bottle fill line in
+shot 10, and door colour against shot 4 in shot 13.
 
-Shots **9, 10 and 13** use clearly labelled references from shots 2, 8 and 4;
-these have **Needs review** status. Dedicated keyframes are still needed. The
-image service's per-turn generation cap was reached; no duplicates are counted
-as newly generated coverage. Unpictured cast roles use the app's initials avatar.
+Unpictured cast roles use the app's initials avatar.
 
 Only written pauses are locked. The board's **~175 seconds** is an editorial
 playback estimate for this scene, **not** a finished episode runtime. Other scenes

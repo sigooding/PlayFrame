@@ -645,9 +645,9 @@
     {
       "id": "rapture-ep4-shot-09",
       "sceneId": "rapture-ep4-number-fourteen",
-      "title": "No pocket — reference",
+      "title": "No pocket",
       "description": "Danny. A slow blink. He looks at his card.",
-      "image": "/images/rapture/ep4/02-card.jpg",
+      "image": "/images/rapture/ep4/09-no-pocket.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -656,20 +656,20 @@
       "style": "cinematic",
       "duration": 25,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "REFERENCE ONLY: cab/card still from shot 2; not final kitchen coverage. Needs a dedicated CU of Danny, card and pocketless jacket, with Jodie's hand entering frame. Keep the slow blink and both 2-second pauses in one setup.\n\nImage: reused reference, not a completed keyframe.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. CU, 50mm, handheld — Danny. A slow blink. He looks at his card.\n   DANNY: I don't have a biscuit.\n   A 2-second pause.\n   JODIE: I have a biscuit.\n   Jodie produces a biscuit from Danny's jacket.\n   DANNY: That's from the tin.\n   JODIE: The tin's in the van. That's from my pocket.\n   Danny looks at the jacket. There is no pocket.\n   A 2-second pause.\n   Danny writes something on the card."
+      "notes": "Dedicated CU: Danny, the card and the pocketless jacket, with Jodie's hand entering frame holding the biscuit. Keep the slow blink and both 2-second pauses in one setup. Check card legibility and jacket-pocket continuity before approving.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. CU, 50mm, handheld — Danny. A slow blink. He looks at his card.\n   DANNY: I don't have a biscuit.\n   A 2-second pause.\n   JODIE: I have a biscuit.\n   Jodie produces a biscuit from Danny's jacket.\n   DANNY: That's from the tin.\n   JODIE: The tin's in the van. That's from my pocket.\n   Danny looks at the jacket. There is no pocket.\n   A 2-second pause.\n   Danny writes something on the card."
     },
     {
       "id": "rapture-ep4-shot-10",
       "sceneId": "rapture-ep4-number-fourteen",
-      "title": "The pipes — reference",
+      "title": "The pipes",
       "description": "the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.",
-      "image": "/images/rapture/ep4/08-biscuit-rule.jpg",
+      "image": "/images/rapture/ep4/10-the-pipes.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -678,14 +678,14 @@
       "style": "cinematic",
       "duration": 22,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
       "characters": [
         "rapture-jodie",
         "rapture-woman-fourteen"
       ],
-      "notes": "REFERENCE ONLY: sink still from shot 8, before the exchange. Needs a dedicated biscuit/bottle handover keyframe. Bottle returned full, cold, no air gap; no magical flash. Danny is off camera.\n\nImage: reused reference, not a completed keyframe.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 22s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. MS, 35mm, handheld — the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.\n    THE WOMAN: Don't come back on a Tuesday.\n    DANNY: Why not?\n    THE WOMAN: The pipes.\n    A 2-second pause.\n    JODIE: That's not a reason.\n    A 2-second pause.\n    THE WOMAN: It's a reason."
+      "notes": "Dedicated biscuit/bottle handover keyframe at the sink. Bottle returned full, cold, no air gap; no magical flash. Danny is off camera. Check the bottle fill line before approving.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 22s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. MS, 35mm, handheld — the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.\n    THE WOMAN: Don't come back on a Tuesday.\n    DANNY: Why not?\n    THE WOMAN: The pipes.\n    A 2-second pause.\n    JODIE: That's not a reason.\n    A 2-second pause.\n    THE WOMAN: It's a reason."
     },
     {
       "id": "rapture-ep4-shot-11",
@@ -733,9 +733,9 @@
     {
       "id": "rapture-ep4-shot-13",
       "sceneId": "rapture-ep4-number-fourteen",
-      "title": "The unfinished complaint — reference",
+      "title": "The unfinished complaint",
       "description": "number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.",
-      "image": "/images/rapture/ep4/04-mid-sentence.jpg",
+      "image": "/images/rapture/ep4/13-complaint.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -744,13 +744,13 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
       "characters": [
         "rapture-woman-fourteen"
       ],
-      "notes": "REFERENCE ONLY: doorway still from shot 4. Needs the final mid-complaint pose. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade.\n\nImage: reused reference, not a completed keyframe.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.\n    THE WOMAN: — and that's why I'm telling the council, the parking, the noise, the —\n    A 2-second pause.\n    The door closes.\n    CUT TO BLACK."
+      "notes": "Final mid-complaint pose at the door, from the street. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade. Check door colour against shot 4 and keep red the only practical before approving.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.\n    THE WOMAN: — and that's why I'm telling the council, the parking, the noise, the —\n    A 2-second pause.\n    The door closes.\n    CUT TO BLACK."
     }
   ],
   "characters": [
@@ -1200,7 +1200,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one numbered scene, with 13 shots. Its 175-second animatic is a working estimate, not a locked runtime. Each explicit pause remains exactly as written.\n\nTen new AI-generated stills cover shots 1–8, 11 and 12. Shots 9, 10 and 13 reuse reference stills and are marked Needs review; dedicated keyframes are still needed. All images are production studies, not approved final coverage. Existing character sheets and legacy thread images are references only. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one numbered scene, with 13 shots. Its 175-second animatic is a working estimate, not a locked runtime. Each explicit pause remains exactly as written.\n\nThirteen new AI-generated stills cover all 13 shots. All images are production studies, not approved final coverage. Existing character sheets and legacy thread images are references only. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -1447,7 +1447,7 @@
       "sceneId": "rapture-ep4-number-fourteen",
       "actId": "rapture-episode-4",
       "createdAt": "2026-09-20T00:00:00.000Z",
-      "description": "Ten newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room. References for shots 9, 10 and 13 are excluded from this board to avoid presenting duplicate images as new coverage.",
+      "description": "Thirteen newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room.",
       "items": [
         {
           "id": "look-rapture-ep4-shot-01",
@@ -1490,6 +1490,16 @@
           "caption": "Rule one is biscuit — AI-generated study, not final coverage."
         },
         {
+          "id": "look-rapture-ep4-shot-09",
+          "image": "/images/rapture/ep4/09-no-pocket.jpg",
+          "caption": "No pocket — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-10",
+          "image": "/images/rapture/ep4/10-the-pipes.jpg",
+          "caption": "The pipes — AI-generated study, not final coverage."
+        },
+        {
           "id": "look-rapture-ep4-shot-11",
           "image": "/images/rapture/ep4/11-council.jpg",
           "caption": "About the council — AI-generated study, not final coverage."
@@ -1498,6 +1508,11 @@
           "id": "look-rapture-ep4-shot-12",
           "image": "/images/rapture/ep4/12-passing-door.jpg",
           "caption": "The light stays on — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-13",
+          "image": "/images/rapture/ep4/13-complaint.jpg",
+          "caption": "The unfinished complaint — AI-generated study, not final coverage."
         }
       ]
     },
