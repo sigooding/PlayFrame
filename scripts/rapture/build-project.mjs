@@ -46,8 +46,8 @@ const numberFourteen = blocks.map(([, n, type, lens, , body], i) => {
 });
 assert(numberFourteen.every(frame => ["Close-up", "Medium"].includes(frame.shotType)), "Current Crane grammar prohibits wide shots");
 const lockupBlocks = [...lockupScreenplay.matchAll(/^(\d+)\. (STATIC WIDE|STATIC MEDIUM|MEDIUM|CLOSE|FLASH), (\d+mm), (locked off|static|handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(lockupBlocks.length, 29, "The lockup source must have twenty-nine numbered shots");
-assert.equal(lockupPlan.length, 29, "The lockup plan must cover all twenty-nine shots");
+assert.equal(lockupBlocks.length, 31, "The lockup source must have thirty-one numbered shots");
+assert.equal(lockupPlan.length, 31, "The lockup plan must cover all thirty-one shots");
 // Source lenses outside the app's library map to the closest option; the exact lens stays in the notes.
 const lockupLens = { "135mm": "135mm", "50mm": "50mm", "35mm": "35mm", "24mm": "24mm", "40mm": "35mm", "65mm": "85mm", "28mm": "24mm", "25mm": "24mm" };
 const lockupSetup = { "STATIC WIDE": "Wide", "STATIC MEDIUM": "Medium", "MEDIUM": "Medium", "CLOSE": "Close-up", "FLASH": "Insert" };
@@ -62,7 +62,7 @@ const lockupFrames = lockupBlocks.map(([, n, setup, lens, movement, body], i) =>
     id: `rapture-ep2-lockup-${String(n).padStart(2, "0")}`, sceneId: lockupSceneId,
     title: plan.title,
     description: body.split("\n")[0].trim(),
-    image: "",
+    image: `/images/rapture/ep2-lockup/${plan.image}`,
     shotType: lockupSetup[setup],
     movement: handheld ? "Handheld" : "Static", lens: lockupLens[lens], angle: plan.angle || "Eye level",
     lighting: plan.lighting || "Natural daylight",
@@ -70,12 +70,13 @@ const lockupFrames = lockupBlocks.map(([, n, setup, lens, movement, body], i) =>
     status: "Draft", transition: "Cut",
     mood: "Dry and procedural; Nina is unimpressed throughout, never amazed or afraid",
     characters: plan.characters.map(characterId),
-    notes: `${plan.note}\n\nImage: no keyframe yet — the storyboard shows the shot-type guide until one is boarded.${lockupLens[lens] === lens ? "" : `\n\nSource lens: ${lens}; closest library lens ${lockupLens[lens]} shown.`}\n\n${lockupGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked (none are timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    notes: `${plan.note}\n\nImage: AI-generated storyboard study; continuity and production approval pending.${lockupLens[lens] === lens ? "" : `\n\nSource lens: ${lens}; closest library lens ${lockupLens[lens]} shown.`}\n\n${lockupGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked (none are timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
-assert(lockupFrames.every(frame => !frame.image), "Lockup keyframes are pending; the guide fallback must show, not a blank");
+assert(lockupFrames.every(frame => frame.image.startsWith("/images/rapture/ep2-lockup/")), "Lockup keyframes live under /images/rapture/ep2-lockup/");
+assert.equal(new Set(lockupFrames.map(frame => frame.image)).size, 31, "One dedicated keyframe per lockup shot");
 const lockupTotal = lockupFrames.reduce((n, f) => n + f.duration, 0);
-assert.equal(lockupTotal, 249, "Update the timing note when lockup editorial estimates change");
+assert.equal(lockupTotal, 271, "Update the timing note when lockup editorial estimates change");
 
 const scene = {
   id: sceneId, title: "Number Fourteen", location: "EXT./INT. NUMBER FOURTEEN", time: "NIGHT",
@@ -110,7 +111,7 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
 scenes.splice(scenes.findIndex(s => s.actId === "rapture-episode-4"), 0, scene);
 const lockupScene = {
   id: lockupSceneId, title: "The first wrong lockup", location: "EXT./INT. ROADS AND AN INDUSTRIAL ESTATE", time: "DAY",
-  description: `Nina drives out on a pendant bearing, opens two wrong lockups, and acquires Alan. ${lockupGrammar} The vision is the tracker's recorded view, not divine revelation. Shot 29's source ends mid-line; the remainder is pending.`,
+  description: `Nina drives out on a pendant bearing, opens two wrong lockups, and acquires Alan. ${lockupGrammar} The vision is the tracker's recorded view, not divine revelation.`,
   characters: ["nina", "alan"].map(characterId), actId: "rapture-episode-2",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: "Daylight throughout, deep focus, symmetrical locked-off framings. Long lenses for the road. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss.", style: "cinematic",
 };
@@ -162,13 +163,13 @@ const legacyKeyframes = legacyFrames.filter(frame => frame.image).length;
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one fully boarded scene, with 13 shots and a 175-second working animatic estimate. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate) with keyframes pending; its shot 29 source ends mid-line. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
+  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one fully boarded scene, with 13 shots and a 175-second working animatic estimate. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate) ), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
   id: "rapture-continuity", title: "Continuity decisions and open questions", color: "rose", createdAt,
   tags: ["Continuity", "Needs review"], connections: [],
-  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}\n\nThe first wrong lockup's shot 29 ends mid-line in the source (MAN: Al); shot count and dialogue will grow when the remainder arrives.`,
+  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}`,
 });
 
 const brainstorm = [
@@ -183,6 +184,10 @@ const moodboards = [{
   id: "rapture-look-number-fourteen", title: "Number Fourteen — red is a source", sceneId, actId: "rapture-episode-4", createdAt,
   description: "Thirteen newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room.",
   items: numberFourteen.filter((_, i) => !shotPlan[i].reference).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-lockup", title: "The first wrong lockup — locked off daylight", sceneId: lockupSceneId, actId: "rapture-episode-2", createdAt,
+  description: "Thirty-one AI-generated storyboard studies. Locked off, wide, deep focus, daylight, symmetrical; only the vision is handheld.",
+  items: lockupFrames.map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
 }, ...referenceBoards.map(board => ({
   id: `rapture-look-${board.id}`, title: board.title, description: board.description, createdAt,
   items: board.items.map(([image, caption], i) => ({ id: `rapture-${board.id}-ref-${i + 1}`, image, caption })),

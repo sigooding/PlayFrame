@@ -28,14 +28,14 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 20);
-assert.equal(project.frames.length, 239, "13 boarded shots plus 29 lockup shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.frames.length, 241, "13 boarded shots plus 31 lockup shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
 assert.equal(project.scenes.length, 34);
-assert.equal(project.moodboards.length, 9);
+assert.equal(project.moodboards.length, 10);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
 const lockup = project.frames.filter(f => f.sceneId === "rapture-ep2-alan");
 const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
-assert.equal(lockup.length, 29);
+assert.equal(lockup.length, 31);
 assert.equal(legacy.length, 197);
 assert.equal(starterProjects.length, 4);
 assert.equal(starterProjects.filter(p => p.id === project.id).length, 1);
@@ -44,7 +44,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 239);
+assert.equal(imported.frames.length, 241);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -133,18 +133,18 @@ pass("nine legacy boards in scene order, numeric within each board, three missin
 
 // The first wrong lockup: numbered, scripted, keyframes pending, shot 29 truncated.
 lockup.forEach((frame, i) => assert.equal(frame.id, `rapture-ep2-lockup-${String(i + 1).padStart(2, "0")}`, "Lockup numbering must be contiguous"));
-assert(lockup.every(f => f.image === ""), "Lockup frames show the shot-type guide until keyframes are boarded");
+assert(lockup.every(f => f.image.startsWith("/images/rapture/ep2-lockup/")), "Every lockup shot carries its own keyframe");
+assert.equal(new Set(lockup.map(f => f.image)).size, 31);
 assert(lockup.every(f => f.status === "Draft" && f.durationIsEstimate === true));
-assert.equal(lockup.reduce((n, f) => n + f.duration, 0), 249);
+assert.equal(lockup.reduce((n, f) => n + f.duration, 0), 271);
 assert(lockup.every(f => (f.movement === "Handheld") === (f.shotType === "Insert")), "Only the vision flashes are handheld");
-assert(lockup[28].title.endsWith("(source truncated)") && lockup[28].notes.includes("TRUNCATED"));
-assert(lockup[28].notes.includes("MAN: Al"));
+assert(lockup[28].notes.includes("MAN: Alan.") && lockup[28].notes.includes("I can only apologise"));
 assert(!lockup.some(f => f.characters.includes("rapture-max") || f.characters.includes("rapture-pat")));
-pass("lockup scene numbered 1–29 in order, keyframes pending, truncation flagged");
+pass("lockup scene numbered 1–31 in order, one keyframe per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 249 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 271 + 197 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -179,13 +179,24 @@ for (const platform of PLATFORMS) {
     const prompt = buildFramePrompt(project, frame, platform.id);
     assert(!prompt.includes("undefined") && !prompt.includes("NaN"), `${platform.id} lockup prompt must render cleanly`);
   }
+  if (platform.id === "hailuo") {
+    const board = buildFramePrompt(project, legacy.find(f => f.image), "hailuo");
+    assert(board.includes("First frame: <picture 1>."), "Hailuo must reference the keyframe slot, not the filename");
+    assert(!board.includes(".jpg") && !board.includes("not approved coverage") && !board.includes("OUTLINE ONLY") && !board.includes("LEGACY BOARD") && !board.includes("Review every keyframe"), "Hailuo prompts must not carry production metadata or filenames");
+    assert(board.includes("Audio:"), "Hailuo prompts carry audio direction");
+    assert(!buildFramePrompt(project, legacy.find(f => !f.image), "hailuo").includes("<picture 1>"), "Missing keyframes have no first-frame slot");
+    assert(buildFramePrompt(project, ep4[1], "hailuo").includes("Audio: dialogue as scripted"), "Hailuo keeps scripted dialogue in its audio line");
+  }
+  if (platform.id === "generic") {
+    assert(!buildFramePrompt(project, legacy.find(f => f.image), "generic").includes("shot-01.jpg"), "Prompts must not leak keyframe filenames");
+  }
   assert(buildFramePrompt(project, lockup[0], platform.id).includes("Only the vision breaks the grammar"), `${platform.id} must inherit Nina's locked-off grammar`);
   const whole = buildScenePrompt(project, scene, platform.id);
   assert(whole.includes("Red practical sources only"));
   if (platform.kind === "video") assert(whole.includes("ESTIMATED RUNTIME: 175"));
   const lockupWhole = buildScenePrompt(project, lockupScene, platform.id);
   assert(lockupWhole.includes("Only the vision breaks the grammar"));
-  if (platform.kind === "video") assert(lockupWhole.includes("ESTIMATED RUNTIME: 249"));
+  if (platform.kind === "video") assert(lockupWhole.includes("ESTIMATED RUNTIME: 271"));
 }
 const tap = ep4[6];
 assert(buildFramePrompt(project, { ...tap, lightingNotes: "One blue task light only" }, "generic").includes("One blue task light only"));
@@ -201,6 +212,7 @@ assert(csv.includes('"No pocket"'));
 assert(csv.includes("The door closes."));
 assert(csv.includes("Forty-one, or forty-seven?"));
 assert(csv.includes("Bag for life"));
+assert(csv.includes("I can only apologise"));
 assert(buildFramePrompt(project, tap, "generic").includes("approximately 11 seconds"));
 pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction, empty cast and estimated timing`);
 
@@ -213,7 +225,8 @@ assert(ep4.every(f => f.status === "Draft"));
 assert(legacy.every(f => f.image === "" || f.image.startsWith("/images/rapture/")), "Legacy keyframes live under /images/rapture/");
 assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 194);
 assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board covers all thirteen studies");
-pass(`${paths.length} image references on disk; thirteen dedicated studies plus 194 ordered legacy keyframes`);
+assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies and 194 ordered legacy keyframes`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
@@ -234,7 +247,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 239);
+      assert.equal(opened.frames.length, 241);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -247,7 +260,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 239);
+      assert.equal(restored.frames.length, 241);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');

@@ -91,5 +91,14 @@ Grammar: locked off, wide, deep focus, daylight, symmetrical. The camera never f
 
 29. STATIC MEDIUM, 40mm, locked off — Interior. He gets in. Sits perfectly upright. Puts the bag on his knees. Faces forward, exactly like the dog.
     NINA: Name?
-    MAN: Al
-    [Source ends mid-line — remainder pending.]
+    MAN: Alan.
+    NINA: Right.
+    ALAN: Am I in the way?
+    NINA: No.
+    ALAN: (immediately, warmly) I can only apologise.
+
+30. CLOSE, 65mm, static — On NINA. She looks at him. Nothing registers. She has no idea what that means.
+    She starts the engine.
+
+31. STATIC WIDE, 135mm, locked off — EXT. ROAD. Long lens, heat shimmer. The bus, tiny, pulling away down a long straight road.
+    Hold.
