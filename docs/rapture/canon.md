@@ -38,7 +38,19 @@ comedy in every thread; this is not noir and not a tragedy.
   the way she would check a building for a gas leak. The laid table is the only thing that lands and
   she does not stop for it; the poster matches the vision and does not; nothing answers twice. All
   thirty-six shots carry AI studies.
-
+- **Episode-four scene 5 — the doorstep:** [numbered scene](scenes/ep4-doorstep.md), 32
+  locked-off shots, day. Two grammars in one building that the film never resolves. Hers is
+  on the street and at the door — wide, symmetrical, deep focus, flat midday daylight, and
+  the three knocks are the same frame three times, because the repetition IS the joke. His is
+  indoors — fluorescent, flat, the framing a hair off-centre so it looks found rather than
+  composed. They are never blended inside one shot; the threshold in shot 8 is the only cut
+  that means anything. The machine is planted in an ordinary insert (shot 18) and she does
+  not clock it, so neither does the camera: no push-in, no light change, no sting, and the
+  audience gets there first. The snapped-off badge gap (shot 26) sits in one frame and is
+  never mentioned by anybody, in the scene or in the notes, ever. Martin's son is alive,
+  unseen and unflashbacked — the empty bed is the whole performance — and "Water's brown" is
+  the season's water clock ticking, deliberately unemphasised. Thirteen of the thirty-two
+  shots carry AI studies; the rest hold numbered placeholder cards.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -189,6 +201,19 @@ passenger side, facing forward. The van is squared to camera in every exterior (
 battered rear doors, the four untouched places at the table in shot 21, and the poster spelling in
 shot 24 against the fragment in shot 7 before approving any of them.
 
+Thirty-two **doorstep studies** in `public/images/rapture/ep4-doorstep/` board episode four
+scene 5, one keyframe per shot. Check them against the two grammars, not against taste. Shots
+1-3 must be the same camera setup at three doors: same height, same distance, the elevation
+squared dead centre, the white Transit in the middle of the road, and only the open door
+allowed to change; a frame that varies is a failed frame. Shots 4-8 stay hers (daylight,
+symmetrical, 50mm and 24mm only) even when the hall is visible behind him, and shot 9 is
+where his grammar starts. Alan and the dog appear twice only, both in her daylight, both
+through the minibus windscreen on the passenger side (shots 6 and 32), facing forward, nobody
+looking at anybody. The terminal (18, 24) is a beige unbranded 1990s box, dusty, plugged in,
+shot flat like a rental inventory photo. The pendant (22) is the only frame in the scene lit
+from inside the shot: a hard small filament, no bloom, no lens flare, no particles. The
+poster in 14 is the estate scene's shot-24 design — different house, same team, correctly
+spelled — so the audience can do the arithmetic.
 ## Boundaries not silently resolved
 
 - Episode four scene 4 does not say which bedroom the pendant wanted, whether there was one, or
@@ -198,6 +223,12 @@ shot 24 against the fragment in shot 7 before approving any of them.
   barks off shot 13 is not hers. Max has no identity sheet at all, so the boy caught mid-blink in shot
   29 cannot drift into being him. The scene keeps thirty identical houses as written; no number was
   invented.
+- Episode four scene 5 does not say whether her cul-de-sac is the dusk street of scene 4: the
+  light and the row of houses are different and no link is asserted. The machine is never
+  named on screen, the snapped-off badge gap is never mentioned by anybody in any scene, the
+  brown water is not escalated into an event, and the auction is only ever an auction.
+  Martin's son is not cast, not flashbacked and not in the room; his eight weeks of silence
+  are his own and are not explained to her.
 - Max: flashbacks only, alive and unreachable. Episode eight says he knows the
   fields; no present-day reunion or delivery mechanism has been invented.
 - 1980, death five years later and forty-five years later are retained as written;
