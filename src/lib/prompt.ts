@@ -124,20 +124,25 @@ const hasKeyframeImage = (frame: StoryFrame) => !!frame.image && !isLibraryRefer
 
 /** Scripted cue lines ("DANNY: …") become speaker-ID sentences with <d> blocks.
  *  A speaker keeps one stable ID across the whole prompt; known cast members
- *  are matched by name so the identifier reads naturally. */
+ *  are matched by name so the identifier reads naturally. A leading parenthetical
+ *  is delivery direction, so it stays outside the <d> block per the H3 guide. */
 function h3Dialogue(project: FilmProject, frame: StoryFrame, castIds: string[] | undefined): string {
   const cues = (frame.notes || "").split("\n").map(l => l.trim()).filter(isScriptCue);
   if (!cues.length) return "";
   const cast = (castIds || []).map(id => project.characters.find(c => c.id === id)).filter(Boolean);
   const ids = new Map<string, string>();
   return cues.map(cue => {
-    const [, raw, content] = cue.match(/^([A-Z][A-Z'.\-() ]{0,24}):\s*(.+)$/) || [];
+    const [, raw, full] = cue.match(/^([A-Z][A-Z'.\-() ]{0,24}):\s*(.+)$/) || [];
     const key = (raw || cue).trim().toUpperCase();
     if (!ids.has(key)) ids.set(key, `S${ids.size + 1}`);
     const known = cast.find(c => c!.name.toUpperCase() === key || c!.name.toUpperCase().split(/\s+/)[0] === key);
     const name = known ? known!.name : (raw || "").trim().split(/\s+/).map(w => w.charAt(0) + w.slice(1).toLowerCase()).join(" ");
-    const spoken = /[.!?]$/.test(content || "") ? content : `${content}.`;
-    return `${name} (${ids.get(key)}) says: <d>[English] ${spoken}</d>`;
+    const paren = full?.match(/^\(([^)]+)\)\s*([\s\S]*)$/);
+    const delivery = paren ? ` in a ${paren[1].replace(/^after a /, "measured ")} manner` : "";
+    const spoken = (paren ? paren[2] : full) || "";
+    if (!spoken.trim()) return "";
+    const ending = /[.!?]$/.test(spoken.trim()) ? spoken.trim() : `${spoken.trim()}.`;
+    return `${name} (${ids.get(key)}) says${delivery}: <d>[English] ${ending}</d>`;
   }).join(" ");
 }
 
@@ -184,7 +189,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
       hailuoMotion[frame.movement] || hailuoMotion.Static,
       p.action,
       spoken,
-      p.mood ? `The overall mood is ${p.mood.toLowerCase()}.` : "",
+      p.mood ? `The overall mood is ${p.mood}.` : "",
     ].filter(Boolean).join(" ");
     const fields = [
       `integrated_multimodal_description: ${body}`,

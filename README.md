@@ -19,11 +19,14 @@ The series opens by default when present; an explicit `?project=<id>` always win
 The current **8 × 45min British black comedy** series prompt is integrated as an editable
 workspace, not just a folder of images:
 
-- Eight episode outlines and 32 scene/outline entries (not eight completed scripts).
-- Twenty cast entries with reciprocal family/colleague links; the woman at Number
-  Fourteen is kept separate from Pat, and the rescued blank from Alan.
+- Eight episode outlines and 32 outline entries (not eight completed scripts).
+- Twenty-one cast entries with reciprocal family/colleague links; the woman at Number
+  Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham (the
+  cold open's contented blank) from both.
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
   thirteen new AI-generated studies, one keyframe per shot.
+- **Cold open (episode four):** the numbered 17-shot fixed-surveillance screenplay,
+  ten AI studies on disk and seven placeholder slots pending their studies.
 - The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.

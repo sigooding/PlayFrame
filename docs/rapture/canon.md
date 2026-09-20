@@ -38,6 +38,10 @@ comedy in every thread; this is not noir and not a tragedy.
   Reference: `public/images/rapture/sheets/crazed-woman.jpg` (legacy filename).
 - **Van:** weathered 1990s Ford Transit, faded grey-green. Unify number plates
   before approving final coverage. Check jacket-pocket continuity in shot 9.
+- **Graham — 50s.** A blank interviewed in the episode-four cold open. Beige
+  cardigan, shirt and tie, corduroys, slippers. Content, helpful, unfazed;
+  never frightened. No surname, and **not** Alan and **not** the chained/rescued
+  blank — no identity link has been supplied.
 
 ## Current Crane grammar
 
@@ -65,6 +69,14 @@ and shot list as ordered reference frames (status **Needs review**), grouped by
 scene in story order and numbered inside each board. Their shot type, movement,
 lens and 5s durations are working placeholders. Three keyframes are missing
 from disk and hold placeholder cards: `ep2s2-15`, `ep2s3-15`, `ep2s3-16`.
+
+Ten **cold-open AI studies** in `public/images/rapture/ep4-cold-open/` board the
+first ten shots of the episode-four cold open; the remaining seven shots hold
+"keyframe missing" placeholder cards so the board numbering stays contiguous
+until their studies are generated. All seventeen carry the fixed-surveillance
+grammar: 4:3, high-corner fixed angles, slight fisheye, faint burnt-in timecode
+that runs on across the cuts. Check the timecode digits against the source
+values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.
 
