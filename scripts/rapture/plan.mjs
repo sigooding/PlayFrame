@@ -73,12 +73,14 @@ export const shotPlan = [
 export const outlinePlan = [
   [1, "mugging", "The mugging", "EXT. ALLEY", "NIGHT", [], "The mugging. The knife starts its journey through the old woman's handbag and the support group.", "Cold open"],
   [1, "st-judes", "St Jude's and the rapture", "INT. ST JUDE'S", "DAY", ["nina"], "Nina at St Jude's; the rapture. One ignored complaint about water pressure. Locked off, wide, deep focus, daylight, symmetrical."],
+  [1, "washing-up", "Washing up", "INT./EXT. ST JUDE'S", "DAY", ["nina"], "Clearing the hall and collecting water around St Jude's. Nina's locked-off daylight grammar applies."],
   [1, "cops", "Birds, arrest ourselves, the taser", "INT. POLICE CAR", "DAY", ["kath", "ray"], "Birds; arrest ourselves; the taser. Static windscreen two-shot from the bonnet and a wide across the car park. Handheld only during violence, then identical static framing. No reaction cuts."],
   [1, "bearing", "The pendant and first vision", "INT./EXT. ST JUDE'S / ROAD", "DAY", ["nina"], "Nina's aftermath, the pendant, the first vision; she drives. The vision is the tracker's recorded view, not divine revelation. Only this interruption breaks Nina's grammar."],
   [1, "storage", "Martin at the storage unit", "INT. STORAGE UNIT", "DAY", ["martin"], "Martin at the storage unit. No mechanism revealed. Flat fluorescent light, locked off, slightly off-centre."],
   [1, "no", "1980 thread — NO", "INT. HOTEL ROOM", "NIGHT", ["absconder"], "Tag for the 1980 thread, ending on NO. Preserve the bible's five-years-later death chronology; do not silently date the hotel scene 1980. Warm, grainy anamorphic practical light.", "Tag"],
   [2, "limbo", "The family at the desk", "INT. LIMBO CATHEDRAL", "CONTINUOUS", ["brenda", "gordon"], "The family, branches of Christianity, seventy-two virgins, husband led away. Frontal proscenium, vast vertical space, hard cut to the flat close desk. Four-second reverberation."],
   [2, "raid", "The first raid", "INT. HOUSE", "NIGHT", ["danny", "jodie"], "Danny and Jodie's first raid for water. Handheld, tight and dark, red practical sources only. Never a whole room."],
+  [2, "night-drive", "Night drive (Wave 3)", "EXT./INT. VAN / ROAD", "NIGHT", ["danny", "jodie"], "An earlier night-drive board for the Crane thread. Its horror framing and non-red night lighting are superseded, and its episode-two placement is provisional."],
   [2, "intake", "The intake floor", "INT. HELL INTAKE", "CONTINUOUS", ["vassago", "reek", "tamsin"], "Hell's intake collapse goes unnoticed behind balloon concerns. Fixed high-corner surveillance, 4:3, slight fisheye, faint timecode. Never close."],
   [2, "alan", "The first wrong lockup", "EXT. LOCKUP", "DAY", ["nina", "alan"], "Nina's first wrong lockup; she acquires Alan. Nina's locked-off daylight grammar."],
   [3, "arrivals", "Both sides come down", "EXT. EARTH — LOCATION TBC", "DAY", ["angel-one", "angel-two", "pat", "field-officer"], "Demons and angels arrive, badly. Keep faction coverage separate; no invented shared scene. Demons retain fixed surveillance grammar on earth."],
@@ -102,6 +104,22 @@ export const outlinePlan = [
   [8, "arcade", "Everyone is wrong", "INT. ARCADE", "DAY", ["martin", "kath", "ray", "angel-one", "angel-two", "vassago", "reek", "tamsin"], "Martin defends his collection, cops arrest people in sequence, demons and angels arrive together and each assumes the other is the target. All grammars collapse to neutral ordinary coverage."],
   [8, "upstairs", "The menu / the desk / ENTER", "INT. ARCADE UPSTAIRS / LIMBO DESK", "CONTINUOUS", ["jodie", "nina"], "Jodie gets through because she is eleven and ignored. Nina cannot read the menu; Max knows where the fields are, but the bible retains flashbacks only. Limbo protects the outage. Nina wins an argument at a desk. The correction is an auction bid outbidding Martin, not a rewind. ENTER. No flash, sound or score."],
   [8, "last", "SOLD / just one question", "INT. STORAGE UNIT / LIMBO", "CONTINUOUS", [], "Shutter down, machine unopened in the dark. Lot sticker: number, date, SOLD. Then timeless Limbo, the same queue, a man at the desk with one question. No epilogue, no faces, no resolution for anyone.", "Tag"],
+];
+
+// Legacy reference boards wired into the storyboard in filename order. The build reads
+// public/images/rapture/<prefix>-NN.jpg from disk, so adding a keyframe only needs a
+// rebuild; a number with no file becomes a "keyframe missing" card holding its slot.
+// Shot type, movement, lens and durations on these frames are working placeholders.
+export const legacyBoards = [
+  { prefix: "shot", scene: "rapture-ep1-mugging", board: "Cold open", lighting: "Practical night", cast: [], review: "Night alley under sodium streetlight and shopfront spill; the old woman, the handbag and the knife's journey." },
+  { prefix: "a1s1", scene: "rapture-ep1-st-judes", board: "St Jude's", lighting: "Natural daylight", cast: ["nina"], review: "Daylight interiors at St Jude's; locked-off wide grammar, never follow Nina." },
+  { prefix: "a1s3", scene: "rapture-ep1-washing-up", board: "Washing up", lighting: "Natural daylight", cast: ["nina"], review: "Clearing the hall and collecting water around St Jude's; Nina's daylight grammar." },
+  { prefix: "a1s4", scene: "rapture-ep1-storage", board: "Storage facility", lighting: "High key", cast: ["martin"], review: "Flat institutional fluorescent look, locked off, slightly off-centre; aggrieved, never grieving." },
+  { prefix: "a2s1", scene: "rapture-ep1-cops", board: "Police / car park", lighting: "Overcast soft", cast: ["kath", "ray"], review: "Static windscreen two-shot and car-park wide; handheld only for violence, no reaction cuts." },
+  { prefix: "ep2s1", scene: "rapture-ep2-limbo", board: "Limbo", lighting: "High key", cast: ["brenda", "gordon"], review: "Cathedral scale against the flat close desk; four-second spoken reverberation; Limbo is outside time." },
+  { prefix: "ep2s2", scene: "rapture-ep2-raid", board: "First raid", lighting: "Practical night", cast: ["danny", "jodie"], review: "Tight red-practical handheld night coverage; never a whole room." },
+  { prefix: "ep2s3", scene: "rapture-ep2-intake", board: "Hell intake", lighting: "High key", cast: ["vassago", "reek", "tamsin"], review: "Fixed high-corner 4:3 surveillance, slight fisheye, faint timecode; never moves, never close." },
+  { prefix: "w3", scene: "rapture-ep2-night-drive", board: "Night drive (Wave 3)", lighting: "Practical night", cast: ["danny", "jodie"], review: "Earlier night-drive coverage; teal/sodium elements and horror framing are superseded — review against the current Crane grammar. The background figure is an earlier visual idea, not a character." },
 ];
 
 // Existing assets are references, not newly generated or newly approved series coverage.

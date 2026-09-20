@@ -28,6 +28,10 @@ try {
   const opened = await api.post("/api/projects/rapture");
   assert.equal(opened.status(), 200);
   await go(project.id, "storyboard");
+  await expect(page.locator(".frame-card")).toHaveCount(210);
+  await expect(page.locator(".frame-card h3").first()).toHaveText("Cold open — board 01");
+  await expect(page.locator(".frame-card h3").last()).toHaveText("The unfinished complaint");
+  await page.getByLabel("Filter by scene").selectOption("rapture-ep4-number-fourteen");
   await expect(page.locator(".frame-card")).toHaveCount(13);
   await page.locator(".frame-card").last().scrollIntoViewIfNeeded();
   await page.locator(".frame-card").first().scrollIntoViewIfNeeded();
@@ -38,12 +42,14 @@ try {
   await expect.poll(() => images.evaluateAll(nodes => nodes.every(image => image.complete && image.naturalWidth > 0 && image.dataset.fallback !== "1"))).toBe(true);
   await page.screenshot({ path: join(root, "artifacts/rapture-board.png"), fullPage: true });
 
-  // A partly outlined series should open prompts on its boarded scene, not on an empty outline.
+  // Prompt Studio opens on the first boarded scene; the red-light board is one selection away.
   await tabs().getByRole("button", { name: /Prompt Studio/ }).click();
-  await expect(page.getByLabel("Scene for prompts")).toHaveValue("rapture-ep4-number-fourteen");
+  await expect(page.getByLabel("Scene for prompts")).toHaveValue("rapture-ep1-mugging");
+  await expect(page.locator(".studio-shot-item")).toHaveCount(19);
+  await page.getByLabel("Scene for prompts").selectOption("rapture-ep4-number-fourteen");
   await expect(page.locator(".studio-shot-item")).toHaveCount(13);
   await expect(page.getByLabel("Combined prompts for the selected shots")).toContainText("Red practical sources only");
-  console.log("PASS desktop storyboard, 13 prompts, visible estimate labels, images and layout");
+  console.log("PASS desktop storyboard, 210 frames in story order, prompts, visible estimate labels, images and layout");
 
   // Disposable copy for real form persistence and import/export exercises.
   const response = await api.post("/api/projects/import", { data: { ...project, title: "Rapture browser verification — disposable" } });
@@ -51,8 +57,8 @@ try {
   copyId = (await response.json()).id;
   assert.notEqual(copyId, project.id);
   await go(copyId, "storyboard");
-  await page.getByRole("button", { name: "Edit frame 7: Brown, then clear", exact: true }).click();
-  const modal = page.getByRole("dialog", { name: "Frame 07", exact: true });
+  await page.getByRole("button", { name: "Edit frame 204: Brown, then clear", exact: true }).click();
+  const modal = page.getByRole("dialog", { name: "Frame 204", exact: true });
   await expect(modal.getByLabel("Working duration estimate (not locked)")).toBeChecked();
   await modal.getByLabel("Working duration estimate (not locked)").uncheck();
   await modal.getByLabel("Duration (seconds)").fill("12");
@@ -67,7 +73,7 @@ try {
   await modal.getByRole("button", { name: "Save changes", exact: true }).click();
   await expect(modal).toBeHidden();
   await page.reload();
-  await page.getByRole("button", { name: "Edit frame 7: Brown, then clear", exact: true }).click();
+  await page.getByRole("button", { name: "Edit frame 204: Brown, then clear", exact: true }).click();
   await expect(modal.getByLabel("Duration (seconds)")).toHaveValue("12");
   await expect(modal.getByLabel("Working duration estimate (not locked)")).not.toBeChecked();
   await modal.getByRole("button", { name: "Shot design", exact: true }).click();
@@ -90,15 +96,15 @@ try {
   await expect(page.getByRole("dialog").getByLabel("Lighting direction")).toHaveValue("Red letterbox practical only. No white or blue fill.");
   await page.getByRole("button", { name: "Close dialog" }).click();
   const saved = await (await api.get(`/api/projects/${copyId}`)).json();
-  assert.equal(saved.frames[6].lightingNotes, "Red kettle indicator only. No white fill.");
-  assert.equal(saved.frames[6].durationIsEstimate, false);
+  assert.equal(saved.frames[203].lightingNotes, "Red kettle indicator only. No white fill.");
+  assert.equal(saved.frames[203].durationIsEstimate, false);
   assert.equal(saved.script, project.script);
   console.log("PASS real frame and scene form saves, reload, lighting inheritance/override, empty cast and unchanged script");
 
   await page.getByRole("navigation", { name: "Workspace navigation" }).getByRole("button", { name: /Templates/ }).click();
   await page.getByRole("button", { name: "Open series workspace", exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`project=${project.id}`));
-  await expect(page.locator(".frame-card")).toHaveCount(13);
+  await expect(page.locator(".frame-card")).toHaveCount(210);
   const restored = await (await api.get(`/api/projects/${project.id}`)).json();
   assert.equal(restored.script, (await opened.json()).script, "Template action must preserve the existing series");
   console.log("PASS template opens the saved series without duplicates or replacing its screenplay");
@@ -106,7 +112,7 @@ try {
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   mobile.on("pageerror", error => errors.push(error.message));
   await mobile.goto(`${baseURL}/?project=${project.id}&tab=storyboard`);
-  await expect(mobile.locator(".frame-card")).toHaveCount(13);
+  await expect(mobile.locator(".frame-card")).toHaveCount(210);
   await assertNoOverflow(mobile);
   await mobile.getByRole("button", { name: "Open navigation", exact: true }).click();
   await expect(mobile.getByRole("navigation", { name: "Workspace navigation" })).toBeVisible();
