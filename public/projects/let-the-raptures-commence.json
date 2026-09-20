@@ -4973,9 +4973,9 @@
     {
       "id": "rapture-ep3co-11",
       "sceneId": "rapture-ep3-cold-open",
-      "title": "Neither approaches (keyframe missing)",
+      "title": "Neither approaches",
       "description": "The blank continues facing nothing. Neither angel approaches him.",
-      "image": "",
+      "image": "/images/rapture/ep3-cold-open/11-no-approach.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -4984,21 +4984,21 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, immaculate advert comedy; tremendous composition, of no use whatsoever",
       "characters": [
         "rapture-angel-one",
         "rapture-angel-two"
       ],
-      "notes": "KEYFRAME MISSING — 11-no-approach.jpg is not in public/images/rapture/ep3-cold-open, so this card holds slot 11 of 15. Add the study and rebuild.\n\nThe blank continues facing nothing. Neither angel approaches him.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. STATIC WIDE — 28mm, locked off\nThe blank continues facing nothing. Neither angel approaches him."
+      "notes": "The blank continues facing nothing. Neither angel approaches him.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. STATIC WIDE — 28mm, locked off\nThe blank continues facing nothing. Neither angel approaches him."
     },
     {
       "id": "rapture-ep3co-12",
       "sceneId": "rapture-ep3-cold-open",
-      "title": "The blank's eyes (keyframe missing)",
+      "title": "The blank's eyes",
       "description": "The blank's eyes. Nothing wrong with them. Nothing behind them either.",
-      "image": "",
+      "image": "/images/rapture/ep3-cold-open/12-eyes.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -5007,18 +5007,18 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, immaculate advert comedy; tremendous composition, of no use whatsoever",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 12-eyes.jpg is not in public/images/rapture/ep3-cold-open, so this card holds slot 12 of 15. Add the study and rebuild.\n\nInsert: the blank's eyes. Nothing wrong with them. Nothing behind them either.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. INSERT — 85mm, static\nThe blank's eyes. Nothing wrong with them. Nothing behind them either."
+      "notes": "Insert: the blank's eyes. Nothing wrong with them. Nothing behind them either.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. INSERT — 85mm, static\nThe blank's eyes. Nothing wrong with them. Nothing behind them either."
     },
     {
       "id": "rapture-ep3co-13",
       "sceneId": "rapture-ep3-cold-open",
-      "title": "Because they haven't (keyframe missing)",
+      "title": "Because they haven't",
       "description": "SOQED: So what's the plan?",
-      "image": "",
+      "image": "/images/rapture/ep3-cold-open/13-the-plan.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "50mm",
@@ -5027,21 +5027,21 @@
       "style": "cinematic",
       "duration": 14,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, immaculate advert comedy; tremendous composition, of no use whatsoever",
       "characters": [
         "rapture-angel-one",
         "rapture-angel-two"
       ],
-      "notes": "KEYFRAME MISSING — 13-the-plan.jpg is not in public/images/rapture/ep3-cold-open, so this card holds slot 13 of 15. Add the study and rebuild.\n\nFrontal two-shot. Locate the equipment, recover the equipment, go home; the permissions are the whole argument, delivered with total confidence.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC TWO-SHOT — 50mm, frontal\n   SOQED: So what's the plan?\n   HARIEL: We locate the equipment, we recover the equipment, we go home.\n   SOQED: And if someone's using it?\n   HARIEL: Nobody's using it. They haven't got the permissions.\n   SOQED: How do you know?\n   HARIEL: (with total confidence) Because they haven't."
+      "notes": "Frontal two-shot. Locate the equipment, recover the equipment, go home; the permissions are the whole argument, delivered with total confidence.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC TWO-SHOT — 50mm, frontal\n   SOQED: So what's the plan?\n   HARIEL: We locate the equipment, we recover the equipment, we go home.\n   SOQED: And if someone's using it?\n   HARIEL: Nobody's using it. They haven't got the permissions.\n   SOQED: How do you know?\n   HARIEL: (with total confidence) Because they haven't."
     },
     {
       "id": "rapture-ep3co-14",
       "sceneId": "rapture-ep3-cold-open",
-      "title": "The wrong direction (keyframe missing)",
+      "title": "The wrong direction",
       "description": "The two of them walking away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction.",
-      "image": "",
+      "image": "/images/rapture/ep3-cold-open/14-wrong-direction.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -5050,21 +5050,21 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, immaculate advert comedy; tremendous composition, of no use whatsoever",
       "characters": [
         "rapture-angel-one",
         "rapture-angel-two"
       ],
-      "notes": "KEYFRAME MISSING — 14-wrong-direction.jpg is not in public/images/rapture/ep3-cold-open, so this card holds slot 14 of 15. Add the study and rebuild.\n\nThey walk away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction. Hold.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC WIDE — 24mm, locked off, deep perspective, aisles\nThe two of them walking away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction.\n\nHold."
+      "notes": "They walk away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction. Hold.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC WIDE — 24mm, locked off, deep perspective, aisles\nThe two of them walking away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction.\n\nHold."
     },
     {
       "id": "rapture-ep3co-15",
       "sceneId": "rapture-ep3-cold-open",
-      "title": "Black — title card (keyframe missing)",
+      "title": "Black — title card",
       "description": "BLACK. TITLE CARD.",
-      "image": "",
+      "image": "/images/rapture/ep3-cold-open/15-black.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "24mm",
@@ -5073,11 +5073,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, immaculate advert comedy; tremendous composition, of no use whatsoever",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 15-black.jpg is not in public/images/rapture/ep3-cold-open, so this card holds slot 15 of 15. Add the study and rebuild.\n\nBlack. Title card. No timecode burn-in; that grammar belongs to Hell.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. BLACK. TITLE CARD."
+      "notes": "Black. Title card. No timecode burn-in; that grammar belongs to Hell.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nThe opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. BLACK. TITLE CARD."
     },
     {
       "id": "rapture-ep2-lockup-01",

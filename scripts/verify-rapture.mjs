@@ -171,14 +171,14 @@ pass("cold open numbered 1-17 in order, timecode verbatim, one AI study per shot
 const angelStudies = angelOpen.filter(f => f.image);
 const angelMissing = angelOpen.filter(f => !f.image);
 assert.equal(angelOpen.length, 15);
-assert.equal(angelStudies.length, 10, "Ten angel AI studies are on disk so far");
-assert.equal(angelMissing.length, 5, "Five angel shots hold placeholder cards until their studies are generated");
-assert(angelMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Angel placeholder cards hold their numbered slots honestly");
-assert(angelStudies.every(f => f.status === "Draft" && f.image.startsWith("/images/rapture/ep3-cold-open/")), "Generated angel studies are draft keyframes in the right folder");
+assert.equal(angelStudies.length, 15, "All fifteen angel shots carry their AI study");
+assert.equal(angelMissing.length, 0, "No angel placeholder cards remain");
+assert(angelStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep3-cold-open/")), "Angel studies are draft keyframes in the right folder");
 assert(angelOpen.every((f, i) => f.id === "rapture-ep3co-" + String(i + 1).padStart(2, "0")), "Angel cold-open numbering must be contiguous");
 assert(angelOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "The angels' cameras never move and all timings are estimates");
 assert(angelOpen.every(f => ["Wide", "Medium", "Insert", "Two-shot"].includes(f.shotType)), "The angel grammar stays composed");
 assert.equal(angelOpen.reduce((n, f) => n + f.duration, 0), 125);
+assert(angelOpen[11].shotType === "Insert" && angelOpen[11].notes.includes("Nothing wrong with them"), "The eyes insert keeps its joke intact");
 assert(angelOpen[0].notes.includes("(8s)"), "The eight-second pause stays locked in the timing notes");
 assert(angelOpen[0].notes.includes("Where would you keep a computer") && angelOpen[9].notes.includes("He's nobody's") && angelOpen[12].notes.includes("Because they haven't"), "The angel dialogue survives verbatim into the notes");
 assert(angelOpen.every(f => f.characters.every(id => id === "rapture-angel-one" || id === "rapture-angel-two")), "Only the named pair is cast in the angel cold open");
@@ -188,7 +188,7 @@ assert(harriel.name === "Harriel" && soqed.name === "Soqed", "The recovery angel
 assert(harriel.relations.some(r => r.targetId === soqed.id) && soqed.relations.some(r => r.targetId === harriel.id), "The pair keeps its reciprocal link");
 assert(angelOpen[3].notes.includes("broken glass") && angelOpen[3].notes.includes("dog"), "The ignored high-street details stay in shot 4");
 assert(angelOpen[13].notes.includes("wrong direction") && angelOpen[13].notes.includes("Hold"), "Shot 14 holds on the wrong direction");
-pass("angel cold open numbered 1-15 in order, advert grammar, five placeholder slots awaiting studies");
+pass("angel cold open numbered 1-15 in order, advert grammar, one AI study per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
@@ -281,7 +281,7 @@ const paths = [...new Set([project.coverImage, ...project.characters.map(c => c.
 for (const image of paths) assert(existsSync(join(root, "public", image)), `Image not on disk: ${image}`);
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 10, "Ten angel studies on disk so far");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 15, "Fifteen angel studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));

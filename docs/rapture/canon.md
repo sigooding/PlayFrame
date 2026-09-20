@@ -18,7 +18,7 @@ comedy in every thread; this is not noir and not a tragedy.
   source: Harriel (40s, linen) and Soqed (30s, slightly behind him always)**;
   no further backstory is supplied. The unnamed MAN (60s, cardigan) between
   the pallets of bark chippings is a blank who belongs to nobody and joins no
-  cast list. Ten AI studies are on disk; five shots hold placeholder cards.
+  cast list. All fifteen shots carry AI studies.
 - **The first wrong lockup:** [numbered scene](scenes/ep2-first-wrong-lockup.md),
   31 shots in episode two. Nina drives out on a pendant bearing, opens two wrong
   lockups, and acquires Alan. Thirty-one AI-generated studies board the scene;
@@ -92,13 +92,14 @@ values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.
 
-Ten **angel cold-open AI studies** in `public/images/rapture/ep3-cold-open/`
-board the first ten shots of the episode-three cold open; five shots hold
-"keyframe missing" placeholder cards until their studies are generated. All
-fifteen carry the immaculate advert grammar: locked off, centred, slightly
-too symmetrical, wide lenses, everything in focus, beautiful light — the
-opposite of Hell's surveillance. Check the linen continuity between Harriel
-and Soqed and the too-perfect symmetry before approving.
+Fifteen **angel cold-open AI studies** in `public/images/rapture/ep3-cold-open/`
+board the episode-three cold open, one keyframe per shot. All carry the
+immaculate advert grammar: locked off, centred, slightly too symmetrical,
+wide lenses, everything in focus, beautiful light — the opposite of Hell's
+surveillance, and no timecode burn-in. Shot 12 (the blank's eyes) is the
+linchpin insert: nothing wrong with them, nothing behind them either. Check
+the linen continuity between Harriel and Soqed, the too-perfect symmetry,
+and the blank's stillness across shots 9, 11 and 14 before approving.
 
 Only written pauses are locked. Number Fourteen's **~175 seconds** and the lockup's
 **~271 seconds** are editorial playback estimates for those scenes, **not** finished
