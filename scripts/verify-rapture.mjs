@@ -181,11 +181,14 @@ for (const platform of PLATFORMS) {
   }
   if (platform.id === "hailuo") {
     const board = buildFramePrompt(project, legacy.find(f => f.image), "hailuo");
-    assert(board.includes("First frame: <picture 1>."), "Hailuo must reference the keyframe slot, not the filename");
-    assert(!board.includes(".jpg") && !board.includes("not approved coverage") && !board.includes("OUTLINE ONLY") && !board.includes("LEGACY BOARD") && !board.includes("Review every keyframe"), "Hailuo prompts must not carry production metadata or filenames");
-    assert(board.includes("Audio:"), "Hailuo prompts carry audio direction");
-    assert(!buildFramePrompt(project, legacy.find(f => !f.image), "hailuo").includes("<picture 1>"), "Missing keyframes have no first-frame slot");
-    assert(buildFramePrompt(project, ep4[1], "hailuo").includes("Audio: dialogue as scripted"), "Hailuo keeps scripted dialogue in its audio line");
+    assert(board.startsWith("For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1]"), "MiniMax H3 opens with the fixed I2VA first-frame instruction and three-field structure, not a filename");
+    assert(board.includes("overall_soundscape:") && board.includes("non_diegetic_music:"), "H3 prompts carry the guide's overall_soundscape and non_diegetic_music fields");
+    assert(!board.includes(".jpg") && !board.includes("not approved coverage") && !board.includes("OUTLINE ONLY") && !board.includes("LEGACY BOARD") && !board.includes("Review every keyframe"), "H3 prompts must not carry production metadata or filenames");
+    assert(!/\[[A-Z][a-z]+ [a-z]+\]/.test(board), "H3 uses natural-English camera motion, not the bracketed commands of older Hailuo models");
+    assert(!buildFramePrompt(project, legacy.find(f => !f.image), "hailuo").includes("<Picture 1>"), "Missing keyframes have no first-frame slot");
+    const spoken = buildFramePrompt(project, ep4[1], "hailuo");
+    assert(spoken.includes("Danny Crane (S1) says: <d>[English] Number 14. The taps run there.</d>") && spoken.includes("(S2) says:"), "H3 keeps scripted dialogue in <d> blocks with stable speaker IDs");
+    assert(spoken.includes("non_diegetic_music: N/A"), "Explicit no-score direction lands as N/A non-diegetic music");
   }
   if (platform.id === "generic") {
     assert(!buildFramePrompt(project, legacy.find(f => f.image), "generic").includes("shot-01.jpg"), "Prompts must not leak keyframe filenames");

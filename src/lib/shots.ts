@@ -61,7 +61,21 @@ export const angleDescriptions: Record<CameraAngle, string> = {
   "Worm's eye": "extreme low worm's-eye view from the ground",
 };
 
-/** MiniMax Hailuo bracketed camera commands */
-export const hailuoCommands: Record<CameraMovement, string> = {
-  "Static": "[Static shot]", "Pan": "[Pan left]", "Tilt": "[Tilt up]", "Tracking": "[Tracking shot]", "Dolly in": "[Push in]", "Dolly out": "[Pull out]", "Crane up": "[Pedestal up]", "Crane down": "[Pedestal down]", "Handheld": "[Shake]", "Steadicam": "[Tracking shot]", "Orbit": "[Truck left]", "Zoom in": "[Zoom in]", "Zoom out": "[Zoom out]",
+/** MiniMax H3 camera motion — natural English inside the shot, as motion type +
+ *  amplitude + speed (VIDEO_PROMPT_WRITING_GUIDE_base_en.md §4.3). H3 does not use
+ *  the bracketed commands of earlier Hailuo models. */
+export const hailuoMotion: Record<CameraMovement, string> = {
+  "Static": "The camera holds a static shot.",
+  "Pan": "The camera pans slowly across the scene.",
+  "Tilt": "The camera tilts gently across the scene.",
+  "Tracking": "The camera tracks smoothly alongside the subject.",
+  "Dolly in": "The camera pushes in slowly toward the subject.",
+  "Dolly out": "The camera pulls back slowly from the subject.",
+  "Crane up": "The camera rises upward in a smooth pedestal move, revealing more of the scene.",
+  "Crane down": "The camera descends slowly toward the subject.",
+  "Handheld": "The camera shakes slightly with organic handheld movement.",
+  "Steadicam": "The camera glides in a fluid steadicam tracking shot.",
+  "Orbit": "The camera moves in a slow arc around the subject.",
+  "Zoom in": "The camera zooms in slowly on the subject.",
+  "Zoom out": "The camera zooms out slowly, widening the framing.",
 };

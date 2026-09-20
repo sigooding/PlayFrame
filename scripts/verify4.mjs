@@ -69,7 +69,7 @@ try {
   await expect(page.getByLabel('Scene sequence prompt')).toHaveValue(/SCENE: THE ROAD BACK/);
   await expect(page.getByLabel('Scene sequence prompt')).toHaveValue(/SHOT 2 \(/);
   await expect(page.locator('.prompt-shot')).toHaveCount(2);
-  await page.getByRole('tab', { name: 'MiniMax Hailuo' }).click();
+  await page.getByRole('tab', { name: 'MiniMax H3' }).click();
   await expect(page.getByLabel('Scene sequence prompt')).toHaveValue(/one shot at a time/);
   check('Scene prompt studio builds a multi-shot sequence and per-shot prompts');
   await page.getByRole('button', { name: 'Done' }).click();
