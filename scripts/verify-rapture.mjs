@@ -28,9 +28,9 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 22);
-assert.equal(project.frames.length, 436, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat, 17 scout-hut, 36 housing-estate, 32 doorstep, 21 raid and 6 cops-beat shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
-assert.equal(project.scenes.length, 42);
-assert.equal(project.moodboards.length, 14);
+assert.equal(project.frames.length, 459, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat, 17 scout-hut, 36 housing-estate, 32 doorstep, 21 raid, 6 cops-beat and 23 kitchen shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.scenes.length, 43);
+assert.equal(project.moodboards.length, 15);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
 const lockup = project.frames.filter(f => f.sceneId === "rapture-ep2-alan");
 const coldOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-interview");
@@ -42,6 +42,7 @@ const estate = project.frames.filter(f => f.sceneId === "rapture-ep4-estate");
 const doorstep = project.frames.filter(f => f.sceneId === "rapture-ep4-doorstep");
 const dannyJodie = project.frames.filter(f => f.sceneId === "rapture-ep2-danny-jodie");
 const copsBeat = project.frames.filter(f => f.sceneId === "rapture-ep1-cops-beat");
+const kitchen = project.frames.filter(f => f.sceneId === "rapture-ep4-kitchen");
 const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
 assert.equal(coldOpen.length, 17);
@@ -54,7 +55,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 436);
+assert.equal(imported.frames.length, 459);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -118,7 +119,7 @@ assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, estate[0].sceneId, doorstep[0].sceneId, dannyJodie[0].sceneId, copsBeat[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, estate[0].sceneId, doorstep[0].sceneId, dannyJodie[0].sceneId, copsBeat[0].sceneId, kitchen[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
 assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");
@@ -129,7 +130,7 @@ pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/M
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
 assert.equal(new Set(legacy.map(f => f.sceneId)).size, 9);
-assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 20);
+assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 21);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
 for (const frame of project.frames) {
@@ -364,10 +365,32 @@ assert(copsBeat[4].notes.includes("Us."), "Her answer survives into the prompt s
 assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep1-cops-beat") < project.scenes.findIndex(s2 => s2.id === "rapture-ep1-no"), "The beat precedes the 1980 tag so the tag closes the episode");
 assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep2-raid") < project.scenes.findIndex(s2 => s2.id === "rapture-ep2-danny-jodie"), "The numbered raid follows the legacy board it supersedes");
 pass("cops beat 6 shots at exactly 90 seconds, static, before the 1980 tag");
+// Episode four scene 6: the kitchen. His grammar for twenty-one frames and hers only on the street,
+// the two protected beats asserted rather than trusted, the brown water stated once and never paid off
+// with a cut, and the machine put on the bus for the rest of the series.
+assert.equal(kitchen.length, 23, "The kitchen is boarded with twenty-three shots");
+assert(kitchen.every(f => f.image), "All twenty-three kitchen shots carry their AI study");
+assert(kitchen.every((f, i) => f.id === "rapture-ep4kit-" + String(i + 1).padStart(2, "0")), "Kitchen numbering must be contiguous");
+assert(kitchen.every(f => f.movement === "Static"), "Locked off all the way through");
+assert(kitchen.every((f, i) => (f.lighting === "Natural daylight") === (i >= 21)), "Fluorescent in the house, daylight on the street");
+assert(kitchen.every((f, i) => (f.lightingNotes.includes("a hair wrong") !== (i >= 21)) && (f.lightingNotes.includes("symmetrical, dead centre") === (i >= 21))), "Every kitchen frame inherits exactly one grammar");
+assert(kitchen.every(f => f.characters.every(id => ["rapture-nina", "rapture-martin"].includes(id))), "Nobody else is in the kitchen");
+assert.equal(kitchen.reduce((n, f) => n + f.duration, 0), 353, "The kitchen's editorial estimate is 353 seconds");
+assert.deepEqual(kitchen.map((f, i) => f.shotType === "Insert" ? i : -1).filter(i => i >= 0), [1, 8], "The tap and the untouched mug are the only inserts; the machine is never cut to");
+assert(kitchen[14].duration >= 16, "The eight-second wait in shot 15 cannot be cut for length without asking first");
+assert(kitchen[14].notes.includes("eight seconds"), "The wait is written into the card so it survives to the animatic");
+assert(kitchen[18].notes.includes("It's mine.") && kitchen.filter(f => /It's mine\./.test(f.notes)).length === 1, "The most honest thing Martin says stays in one frame");
+assert(kitchen.filter(f => f.notes.includes("2011")).length === 1, "2011 is stated once, in the grievance");
+assert(kitchen[21].notes.includes("back of the bus"), "STANDING RULE: the machine travels in the back of the bus from here on");
+assert(kitchen.filter(f => /brown/i.test(f.description)).length === 1, "The brown water is stated once and unemphasised");
+assert(kitchen.every(f => f.shotType !== "Establishing" && f.shotType !== "Extreme wide"), "No wide is allowed to explain the room");
+assert(kitchen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-kitchen/")), "Kitchen studies live in their own folder");
+assert.equal(new Set(kitchen.map(f => f.image)).size, 23, "One dedicated keyframe per kitchen shot");
+pass("kitchen boarded 1-23, his grammar held, both protections asserted, the machine on the bus");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 308 + 377 + 260 + 90 + 271 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 308 + 377 + 260 + 90 + 353 + 271 + 197 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -424,6 +447,11 @@ assert(buildFramePrompt(project, patHouse[0], platform.id).includes("the camera 
 assert(buildFramePrompt(project, patHouse[3], platform.id).includes("Red practical sources only"), `${platform.id} must inherit the Crane red grammar in the kitchen`);
 const patPrompt = buildFramePrompt(project, patOpen[0], platform.id);
 assert(patPrompt.includes("burglars pick her house by chance"), `${platform.id} must inherit Pat's dusk surveillance grammar`);
+const kitHisPrompt = buildFramePrompt(project, kitchen[2], platform.id);
+assert(kitHisPrompt.includes("a hair wrong"), `${platform.id} must inherit his grammar in the kitchen`);
+const kitHerPrompt = buildFramePrompt(project, kitchen[22], platform.id);
+assert(kitHerPrompt.includes("symmetrical, dead centre"), `${platform.id} must hand the street back to her grammar`);
+assert(!kitHisPrompt.includes(kitchen[22].lightingNotes) && !kitHerPrompt.includes(kitchen[2].lightingNotes), `${platform.id} must never receive the wrong grammar in the kitchen`);
 const djPrompt = buildFramePrompt(project, dannyJodie[0], platform.id);
 assert(djPrompt.includes("Never a clean wide"), `${platform.id} must inherit the raid grammar on every frame`);
 const copsPrompt = buildFramePrompt(project, copsBeat[0], platform.id);
@@ -471,6 +499,9 @@ assert(doorWhole.includes("never blended inside a shot"), "The scene prompt carr
 const djWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep2-danny-jodie"), platform.id);
 assert(djWhole.includes("never a clean wide"), "The raid scene prompt carries the one rule the scene is built on");
 if (platform.kind === "video") assert(djWhole.includes("ESTIMATED RUNTIME: 260"));
+const kitWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-kitchen"), platform.id);
+assert(kitWhole.includes("never cut to for emphasis") || kitWhole.includes("off-centre"), "The kitchen scene prompt carries his grammar");
+if (platform.kind === "video") assert(kitWhole.includes("ESTIMATED RUNTIME: 353"));
 const copsWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep1-cops-beat"), platform.id);
 if (platform.kind === "video") assert(copsWhole.includes("ESTIMATED RUNTIME: 90"), "Ninety seconds is the instruction and the runtime line must say so");
 if (platform.kind === "video") assert(doorWhole.includes("ESTIMATED RUNTIME: 377"));
@@ -498,6 +529,7 @@ assert(csv.includes("Bag for life"));
 assert(csv.includes("I can only apologise"));
 assert(csv.includes("Are we looking for somewhere?") && csv.includes("These things take time"), "Scene 4 dialogue reaches the shot-list CSV");
 assert(csv.includes("INT./EXT. A HOUSE") && csv.includes("Header tank's better."), "The raid location and its punchline reach the shot-list CSV");
+assert(csv.includes("INT. MARTIN'S HOUSE — KITCHEN") && csv.includes("He's in a queue.") && csv.includes("And I bid against him."), "The kitchen location and its two hinge lines reach the shot-list CSV");
 assert(csv.includes("INT./EXT. POLICE CAR") && csv.includes("Then there isn't a form."), "The cops beat and its last line reach the shot-list CSV");
 assert(csv.includes("EXT./INT. MARTIN'S HOUSE") && csv.includes("Have you got a warrant?") && csv.includes("He borrowed it. For a poster."), "Scene 5 location and its two hinge lines reach the shot-list CSV");
 assert(csv.includes("EXT./INT. A HOUSING ESTATE") && csv.includes("Dusk, not daylight, for the first time in her thread"), "Scene 4 carries its location and its dusk lighting direction into the shot list");
@@ -517,6 +549,7 @@ assert.equal(readdirSync(join(root, "public/images/rapture/ep4-estate")).filter(
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-doorstep")).filter(p => p.endsWith(".jpg")).length, 32, "Thirty-two doorstep studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep2-danny-jodie")).filter(p => p.endsWith(".jpg")).length, 21, "Twenty-one raid studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep1-cops-beat")).filter(p => p.endsWith(".jpg")).length, 6, "Six cops-beat studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-kitchen")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 23, "Twenty-three kitchen studies on disk, rejects kept separately");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
@@ -528,7 +561,8 @@ assert(project.moodboards.some(b => b.id === "rapture-look-estate" && b.items.le
 assert(project.moodboards.some(b => b.id === "rapture-look-doorstep" && b.items.length === 32), "The doorstep board covers all thirty-two studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-danny-jodie" && b.items.length === 21), "The raid board covers all twenty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-cops-beat" && b.items.length === 6), "The cops board covers all six studies");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate studies, thirty-two doorstep studies, twenty-one raid studies, six cops-beat studies and 194 ordered legacy keyframes`);
+assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.length === 23), "The kitchen board covers all twenty-three studies");
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate studies, thirty-two doorstep studies, twenty-one raid studies, six cops-beat studies, twenty-three kitchen studies and 194 ordered legacy keyframes`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
@@ -549,7 +583,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 436);
+      assert.equal(opened.frames.length, 459);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -562,7 +596,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 436);
+      assert.equal(restored.frames.length, 459);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');

@@ -31,18 +31,20 @@ workspace, not just a folder of images:
   beat of exactly ninety seconds, static two-shot from the bonnet, ending the episode's comic
   thread on a worse note than it started before the 1980 tag closes it.
 - **Nina's thread:** the first wrong lockup (31 shots), **Episode four Scene 4 — the housing
-  estate** (36 shots, all boarded) and **Scene 5 — the doorstep** (32 shots, 13 boarded so
-  far) are numbered scenes in her locked-off grammar. The estate is the first time her thread
-  is shot at dusk; the doorstep is where her grammar and Martin's share one building and
-  refuse to resolve, her symmetrical daylight on the street and his flat fluorescent indoors
-  never blended in a single shot.
+  estate** (36 shots, all boarded), **Scene 5 — the doorstep** (32 shots, all boarded) and
+  **Scene 6 — the kitchen** (23 shots, 7 boarded so far) are numbered scenes in her locked-off
+  grammar. The estate is the first time her thread is shot at dusk; the doorstep is where her
+  grammar and Martin's share one building and refuse to resolve, her symmetrical daylight on the
+  street and his flat fluorescent indoors never blended in a single shot; the kitchen is his house
+  on his terms — twenty-one frames of off-centre fluorescent before the street takes her grammar
+  back — and it is the scene that puts the machine in the back of the bus for good.
 - **Cold opens:** three numbered scenes — the episode-four Pat-alone open
   (12 dialogue-free surveillance shots, fully studied), the
   episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
   to episode three), and the scout-hut scene 3
   (17 shots, fully studied). The old-lady sequence is Scene 2 of episode
   four; its 32 shots are held by the outline, not yet boarded.
-- The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
+- The complete bible in Notes, a six-object brainstorm map, and fifteen visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.
 

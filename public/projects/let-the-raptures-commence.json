@@ -618,6 +618,22 @@
       "style": "cinematic"
     },
     {
+      "id": "rapture-ep4-kitchen",
+      "title": "The kitchen",
+      "location": "INT. MARTIN'S HOUSE — KITCHEN",
+      "time": "DAY",
+      "description": "Scene 6, the same afternoon: a man is told his son is in a queue that is not moving, that the beige box upstairs is the only thing that might get him out, and that the only person who could work it is the brother he has not spoken to since outbidding him at an auction in 2011. His grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off. She asks once and then waits, and the most honest thing he says in the series is four words about a computer.",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "actId": "rapture-episode-4",
+      "kind": "Standard",
+      "lighting": "High key",
+      "lightingNotes": "His grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.",
+      "style": "cinematic"
+    },
+    {
       "id": "rapture-ep8-last",
       "title": "SOLD / just one question — outline",
       "location": "INT. STORAGE UNIT / LIMBO",
@@ -10182,6 +10198,537 @@
         "rapture-martin"
       ],
       "notes": "Back to her grammar from the road: the house, the pavement, the minibus squared in the street, Alan upright in the passenger seat having sat through all of it facing forward. Hold. Match the bus position against shot 1 exactly. Here the van is broadside with its left side to camera, so the near-side windows are the passenger side and Alan reads; the driver is on the far side of the cab and never seen.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHer grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. The camera never follows her, and repeated framings are repeated exactly.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n32. STATIC WIDE — EXT. CUL-DE-SAC — 28mm, locked off, her grammar, symmetrical, from the road\nThe house. The bus. Alan still facing forward in the passenger seat, hasn't moved, hasn't noticed anything.\nHold."
+    },
+    {
+      "id": "rapture-ep4kit-01",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "A courtesy",
+      "description": "A kitchen. Two mugs. Nina's own water container on the table between them, which is now a courtesy.",
+      "image": "/images/rapture/ep4-kitchen/01-two-mugs.jpg",
+      "shotType": "Wide",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "The kitchen, off-centre by a hair: two mugs and Nina's own water container standing on the table between them, which is now a courtesy. The container is the scene's flag — she brought the water, she is not drinking his.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 24mm, locked off, slightly off-centre\nA kitchen. Two mugs. Nina's own water container on the table between them, which is now a courtesy."
+    },
+    {
+      "id": "rapture-ep4kit-02",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Nobody turns it off",
+      "description": "The tap, running brown into the sink. Nobody turns it off.",
+      "image": "/images/rapture/ep4-kitchen/02-brown-tap.jpg",
+      "shotType": "Insert",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [],
+      "notes": "Macro insert, flat: the tap running brown into a sink with a washing-up bowl in it. Nobody turns it off in this frame or any later one, and it is never cut to for emphasis. The season's water clock, ticking in a kitchen while a man is told his son is in a queue.\n\nSource lens: 100mm macro; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. INSERT — 100mm macro, static\nThe tap, running brown into the sink. Nobody turns it off."
+    },
+    {
+      "id": "rapture-ep4kit-03",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "He's at his nan's",
+      "description": "MARTIN: He's at his nan's.",
+      "image": "/images/rapture/ep4-kitchen/03-nans.jpg",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 18,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "Across the table, both of them in frame, the mugs in the foreground: \"He's at his nan's.\" / \"Is he?\" / \"No.\" is the lie withdrawn inside three words, and the camera does not move to reward it.\n\nSource lens: 40mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 18s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC TWO-SHOT — 40mm, locked off, across the table\n   MARTIN: He's at his nan's.\n   NINA: Is he?\n   MARTIN: (a beat) No."
+    },
+    {
+      "id": "rapture-ep4kit-04",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Well. Enough.",
+      "description": "MARTIN: Everyone went. Didn't they.",
+      "image": "/images/rapture/ep4-kitchen/04-enough.jpg",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "Close on Martin, flatly lit. He is not asking whether everyone went; he is telling her the arithmetic he has already done. Nina's two lines are off-screen voice only, so she stays out of frame and the shot does not become a reaction shot.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. CLOSE — 65mm, static, on MARTIN\n   MARTIN: Everyone went. Didn't they.\n   NINA: Not everyone.\n   MARTIN: Well. Enough."
+    },
+    {
+      "id": "rapture-ep4kit-05",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "He's in a queue (keyframe missing)",
+      "description": "She puts both hands round her mug. She's about to tell a man something and she's not going to dress it up.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 26,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina"
+      ],
+      "notes": "KEYFRAME MISSING — 05-a-queue.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 5 of 23. Add the study and rebuild.\n\nBoth hands round the mug, and she is about to tell a man something without dressing it up: \"He's not dead.\" / \"He's in a queue.\" The six-second pause after it is locked and must be held in the animatic — the silence is where he decides whether to believe her. \"Sorting\" is the whole cosmology in one word, said flat.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 26s is a working total-shot estimate for animatic playback. Only written pauses are locked (6s), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC MEDIUM — 50mm, locked off, on NINA\nShe puts both hands round her mug. She's about to tell a man something and she's not going to dress it up.\n   NINA: He's not dead.\n   MARTIN: Right.\n   NINA: He's in a queue.\n(Pause. Six seconds.)\n   MARTIN: A queue.\n   NINA: Mm.\n   MARTIN: For what?\n   NINA: Sorting."
+    },
+    {
+      "id": "rapture-ep4kit-06",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "It isn't moving",
+      "description": "A man who has been alone for eight weeks being told this by a nun in his kitchen. And the appalling thing is he's already halfway to believing it.",
+      "image": "/images/rapture/ep4-kitchen/06-it-isnt-moving.jpg",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "A man alone eight weeks being told this by a nun in his kitchen, and the appalling thing is that he is already halfway to believing it. His face has to do the believing; the line \"It isn't moving\" lands after the relief, not instead of it.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. CLOSE — 65mm, static, on MARTIN\nA man who has been alone for eight weeks being told this by a nun in his kitchen. And the appalling thing is he's already halfway to believing it.\n   MARTIN: How long's the queue?\n   NINA: It isn't moving."
+    },
+    {
+      "id": "rapture-ep4kit-07",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "He would be (keyframe missing)",
+      "description": "MARTIN: Is he all right?",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 07-he-would-be.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 7 of 23. Add the study and rebuild.\n\n\"Is he all right?\" / \"He'll be bored.\" / \"He would be.\" The closest the scene comes to warmth and it is entirely about an eleven-year-old's patience; neither of them smiles and the frame does not soften.\n\nSource lens: 40mm; closest library lens 35mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. STATIC TWO-SHOT — 40mm, locked off\n   MARTIN: Is he all right?\n   NINA: He'll be bored.\n   MARTIN: (nodding slowly) He would be."
+    },
+    {
+      "id": "rapture-ep4kit-08",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Does that matter?",
+      "description": "MARTIN: Will he remember it? After.",
+      "image": "/images/rapture/ep4-kitchen/08-remember-it.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 20,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "\"Will he remember it? After.\" / \"I don't know. Probably not.\" / \"Does that matter?\" / \"I don't know that either.\" Her honesty is the only unusual thing in the frame and it is played as routine. No insert of the ceiling, no cut to the poster in his son's room.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 20s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. STATIC MEDIUM — 50mm, locked off, on MARTIN\n   MARTIN: Will he remember it? After.\n   NINA: I don't know. Probably not.\n   MARTIN: (a beat) Does that matter?\n   NINA: (honestly) I don't know that either."
+    },
+    {
+      "id": "rapture-ep4kit-09",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "She hasn't drunk any",
+      "description": "Her mug. She hasn't drunk any of it.",
+      "image": "/images/rapture/ep4-kitchen/09-untouched-mug.jpg",
+      "shotType": "Insert",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [],
+      "notes": "Insert of her mug, full, untouched, a skin forming on the tea. It rhymes with the bottle of water in the cops' car without ever being pointed at: two people refusing somebody else's hospitality for two entirely different reasons.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. INSERT — 85mm, static\nHer mug. She hasn't drunk any of it."
+    },
+    {
+      "id": "rapture-ep4kit-10",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "It's from a storage unit in Wakefield (keyframe missing)",
+      "description": "MARTIN: And you can get him out.",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 30,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 10-storage-unit.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 10 of 23. Add the study and rebuild.\n\nThe scene's hinge: \"That thing upstairs can get him out.\" / \"The computer.\" / \"Yes.\" / \"It's from a storage unit in Wakefield.\" / \"I know.\" / \"There's no badge on it.\" / \"I know.\" Keep both of them in one flat frame while he realises she has already understood more than he has, and do not let the last two lines become a reveal — the badge gap was planted in the doorstep scene and stays unmentioned by anybody.\n\nSource lens: 40mm; closest library lens 35mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 30s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC TWO-SHOT — 40mm, locked off\n   MARTIN: And you can get him out.\n   NINA: No.\n   MARTIN: You just said —\n   NINA: That thing upstairs can get him out.\n(Pause.)\n   MARTIN: The computer.\n   NINA: Yes.\n   MARTIN: (flatly) It's from a storage unit in Wakefield.\n   NINA: I know.\n   MARTIN: There's no badge on it.\n   NINA: I know."
+    },
+    {
+      "id": "rapture-ep4kit-11",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "It's just a cursor (keyframe missing)",
+      "description": "He looks at the ceiling. At his son's room above them.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 24,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 11-just-a-cursor.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 11 of 23. Add the study and rebuild.\n\nHe looks up at the ceiling, at his son's room, and defends an object he does not understand: \"It's just a cursor.\" / \"So it's broken.\" / \"It's not broken.\" / \"What is it then.\" / \"It's broken.\" The long pause before the reversal is the joke and the surrender at once; the camera stays put and does not cut to the machine.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 24s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. CLOSE — 65mm, static, on MARTIN\nHe looks at the ceiling. At his son's room above them.\n   MARTIN: It doesn't do anything. I've had it on for weeks. It's just a cursor.\n   NINA: So it's broken.\n   MARTIN: (defensive, immediately) It's not broken.\n   NINA: What is it then?\n   MARTIN: (a long pause) It's broken."
+    },
+    {
+      "id": "rapture-ep4kit-12",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "The tap runs (keyframe missing)",
+      "description": "Neither of them says anything for a while. The tap runs.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 12-the-tap-runs.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 12 of 23. Add the study and rebuild.\n\nWide, off-centre, nobody speaking for a while, the tap still running brown in the background. Two people and a machine they are not looking at. Nothing in the frame is allowed to become meaningful.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. STATIC WIDE — 24mm, locked off, off-centre\nNeither of them says anything for a while. The tap runs."
+    },
+    {
+      "id": "rapture-ep4kit-13",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Do you know anybody (keyframe missing)",
+      "description": "NINA: Do you know anybody who could work it?",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina"
+      ],
+      "notes": "KEYFRAME MISSING — 13-anybody-who-could.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 13 of 23. Add the study and rebuild.\n\nOne line, no setup: \"Do you know anybody who could work it?\" She asks a practical question in a flat voice and the scene's whole second movement turns on it.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC MEDIUM — 50mm, locked off, on NINA\n   NINA: Do you know anybody who could work it?"
+    },
+    {
+      "id": "rapture-ep4kit-14",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "The worst moment of his day (keyframe missing)",
+      "description": "And this is the worst moment of his day.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 14-no.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 14 of 23. Add the study and rebuild.\n\n\"No.\" Six seconds, no push-in, no score: the worst moment of his day is a one-word lie he does not commit to.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. CLOSE — 65mm, static, on MARTIN\nAnd this is the worst moment of his day.\n   MARTIN: No."
+    },
+    {
+      "id": "rapture-ep4kit-15",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "She doesn't push. She waits. (keyframe missing)",
+      "description": "She looks at him. Twenty years of people lying to her in kitchens.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 16,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina"
+      ],
+      "notes": "KEYFRAME MISSING — 15-eight-seconds.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 15 of 23. Add the study and rebuild.\n\nPROTECTION. She looks at him with twenty years of people lying to her in kitchens behind her face, says \"Right\", and then waits eight seconds. She asks once; the pressure is silence, and it is the most aggressive thing she does in the episode. Do not cut away during it and do not shorten it in the animatic.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (8s), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC MEDIUM — 50mm, locked off, on NINA\nShe looks at him. Twenty years of people lying to her in kitchens.\n   NINA: Right.\n(She doesn't push. She waits. Eight seconds.)"
+    },
+    {
+      "id": "rapture-ep4kit-16",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "He's got an arcade (keyframe missing)",
+      "description": "MARTIN: My brother.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 22,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 16-my-brother.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 16 of 23. Add the study and rebuild.\n\n\"My brother.\" The admission arrives sideways: an arcade, machines, cabinets, the old stuff, and then the practical obstacle course — phones down, so they will drive. The arcade is the episode-eight location named here for the first time and the scene must not make that feel like a setup.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 22s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. CLOSE — 65mm, static, on MARTIN\n   MARTIN: My brother.\n   NINA: Where's he?\n   MARTIN: He's got an arcade. Machines, cabinets, all the old stuff. He keeps it going.\n   NINA: Ring him.\n   MARTIN: Phones are down.\n   NINA: Then we'll drive."
+    },
+    {
+      "id": "rapture-ep4kit-17",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "And I bid against him (keyframe missing)",
+      "description": "Martin does not move.",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 32,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 17-i-bid-against-him.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 17 of 23. Add the study and rebuild.\n\nMartin does not move, which is the whole performance. The grievance is stated in fragments — 2011, a lot came up, a job lot, \"And I bid against him\" — and her \"And you won.\" is not a judgement, just the arithmetic. This is where the pre-rapture auction from episode one becomes the show's engine: the machine has been in his house for fifteen years and out of his son's reach of repair for spite.\n\nSource lens: 40mm; closest library lens 35mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 32s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. STATIC TWO-SHOT — 40mm, locked off\nMartin does not move.\n   NINA: What.\n   MARTIN: Nothing.\n   NINA: You've gone a funny colour.\n   MARTIN: We don't speak.\n   NINA: Why not?\n   MARTIN: (a beat) There was a lot came up. In 2011.\n   NINA: A lot of what?\n   MARTIN: A lot. At auction. A job lot.\n   NINA: And?\n   MARTIN: And I bid against him.\n(Pause.)\n   NINA: And you won.\n   MARTIN: (quietly) I did, yeah."
+    },
+    {
+      "id": "rapture-ep4kit-18",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Too fast (keyframe missing)",
+      "description": "A woman being told that the end of the world is going to be fixed or not fixed depending on a fifteen-year-old grievance about a box of old computers.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "lens": "85mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina"
+      ],
+      "notes": "KEYFRAME MISSING — 18-too-fast.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 18 of 23. Add the study and rebuild.\n\nA woman being told the end of the world may turn on a fifteen-year-old grudge about a box of old computers. Her \"Is that why you never showed him that?\" is asked once, kindly, and his \"No\" comes too fast. She does not call it out.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. CLOSE — 65mm, static, on NINA\nA woman being told that the end of the world is going to be fixed or not fixed depending on a fifteen-year-old grievance about a box of old computers.\n   NINA: Martin.\n   MARTIN: Mm.\n   NINA: Is that why you never showed him that?\n   MARTIN: (too fast) No."
+    },
+    {
+      "id": "rapture-ep4kit-19",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "It's mine (keyframe missing)",
+      "description": "Held. He doesn't look at her.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 19-its-mine.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 19 of 23. Add the study and rebuild.\n\nPROTECTION. Held, off-centre, he does not look at her: \"It's mine.\" The most honest thing Martin says in the series — he has had the answer to everything in his house for two months and kept it from his brother out of spite — and the frame gives it no weight it has not earned: no push-in, no music, no cut.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. STATIC WIDE — 24mm, locked off, off-centre\nHeld. He doesn't look at her.\n   MARTIN: (eventually) It's mine."
+    },
+    {
+      "id": "rapture-ep4kit-20",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Get a bag (keyframe missing)",
+      "description": "She stands. Picks up her water container off the table.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 16,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-nina"
+      ],
+      "notes": "KEYFRAME MISSING — 20-get-a-bag.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 20 of 23. Add the study and rebuild.\n\nShe stands and takes her own water container off the table: \"Get a bag. It's a long way and the petrol's going off.\" / \"I haven't said I'm coming.\" / \"No.\" She does not look round for agreement. The container leaving the table closes the courtesy from shot 1.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. STATIC MEDIUM — 50mm, locked off, on NINA\nShe stands. Picks up her water container off the table.\n   NINA: Get a bag. It's a long way and the petrol's going off.\n   MARTIN: I haven't said I'm coming.\n   NINA: (already leaving) No."
+    },
+    {
+      "id": "rapture-ep4kit-21",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Then he gets up (keyframe missing)",
+      "description": "He sits alone in his kitchen for a moment. Then he gets up.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "High key",
+      "lightingNotes": "His grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+      "characters": [
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 21-then-he-gets-up.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 21 of 23. Add the study and rebuild.\n\nFrom the hall: he sits alone in his own kitchen for a moment, and then he gets up. Ten seconds for a man deciding nothing, which is the same as deciding.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. STATIC WIDE — 28mm, locked off, the hall\nHe sits alone in his kitchen for a moment. Then he gets up."
+    },
+    {
+      "id": "rapture-ep4kit-22",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "It's coming (keyframe missing)",
+      "description": "The bus. Nina loading. Martin comes out of the house with a holdall in one hand and, inexplicably, a guitar case in the other.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "Natural daylight",
+      "lightingNotes": "Her grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. It is only allowed on the street, and it does not fix anything.",
+      "style": "cinematic",
+      "duration": 18,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Squared up at last, and no better for it",
+      "characters": [
+        "rapture-nina",
+        "rapture-martin"
+      ],
+      "notes": "KEYFRAME MISSING — 22-the-guitar-case.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 22 of 23. Add the study and rebuild.\n\nHer grammar at last, symmetrical on the street: the battered white Transit, Nina loading, Martin coming out with a holdall in one hand and a guitar case in the other. \"No.\" / \"It's coming.\" / \"It isn't.\" / \"It's coming.\" He gets in with it. Alan and the dog keep the passenger bench; the beige terminal and CRT are now strapped in the back of the bus and stay there for the rest of the series — every later bus frame must show them, and no scene explains it.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHer grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. It is only allowed on the street, and it does not fix anything.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 18s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. EXT. CUL-DE-SAC — STATIC WIDE — 28mm, locked off, symmetrical — her grammar\nThe bus. Nina loading. Martin comes out of the house with a holdall in one hand and, inexplicably, a guitar case in the other.\n   NINA: No.\n   MARTIN: It's coming.\n   NINA: It isn't.\n   MARTIN: (getting in with it) It's coming."
+    },
+    {
+      "id": "rapture-ep4kit-23",
+      "sceneId": "rapture-ep4-kitchen",
+      "title": "Nobody shuts it (keyframe missing)",
+      "description": "The bus pulls away. The front door of the house is still open. Nobody shuts it.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "Natural daylight",
+      "lightingNotes": "Her grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. It is only allowed on the street, and it does not fix anything.",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Squared up at last, and no better for it",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — 23-nobody-shuts-it.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 23 of 23. Add the study and rebuild.\n\nFrom the road, symmetrical: the bus pulls away and the front door of the house is still open. Nobody shuts it. Hold past comfort — an empty house with its door open in a cul-de-sac where nobody has knocked in eight weeks.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHer grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. It is only allowed on the street, and it does not fix anything.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n23. STATIC WIDE — 28mm, locked off, from the road\nThe bus pulls away. The front door of the house is still open. Nobody shuts it.\nHold."
     }
   ],
   "characters": [
@@ -10678,7 +11225,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (32 shots, 377-second estimate), fully studied: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Episode two's Danny and Jodie raid is numbered from the supplied scene (21 shots, 260-second estimate), with 10 AI studies on disk and 11 placeholder cards still to generate, and episode one gains the cops' second beat (6 shots, 90 seconds exactly, as instructed), with 0 AI studies on disk and 6 placeholder cards still to generate; the raid supersedes the legacy first-raid board as the scene's coverage and the board stays reference only. Each explicit pause remains exactly as written.\n\nSupplied fixes recorded against the outlines: the 1980 prologue pockets the tracker at shot 12, with a single montage flash of him fastening it round a girl's neck, and shot 31 is cut so the sequence goes straight from ERROR to UNDO?; the episode-one washing-up board's shot 23 is corrected so the pendant is her mother's and she always had it, never found on Deborah's bedside; the episode-four cold open is already at dusk, running continuously into scene 2 at dusk into night; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has to have sat in Max's room for the eight weeks the doorstep scene counts.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (32 shots, 377-second estimate), fully studied: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Scene 6 — the kitchen — is numbered and boarded (23 shots, 353-second estimate), with 7 AI studies on disk and 16 placeholder cards still to generate: his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. Episode two's Danny and Jodie raid is numbered from the supplied scene (21 shots, 260-second estimate), with 10 AI studies on disk and 11 placeholder cards still to generate, and episode one gains the cops' second beat (6 shots, 90 seconds exactly, as instructed), with 0 AI studies on disk and 6 placeholder cards still to generate; the raid supersedes the legacy first-raid board as the scene's coverage and the board stays reference only. Each explicit pause remains exactly as written.\n\nSupplied fixes recorded against the outlines: the 1980 prologue pockets the tracker at shot 12, with a single montage flash of him fastening it round a girl's neck, and shot 31 is cut so the sequence goes straight from ERROR to UNDO?; the episode-one washing-up board's shot 23 is corrected so the pendant is her mother's and she always had it, never found on Deborah's bedside; the episode-four cold open is already at dusk, running continuously into scene 2 at dusk into night; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has to have sat in Max's room for the eight weeks the doorstep scene counts.\n\nThe kitchen scene is where the auction stops being a purchase and becomes a grudge: 2011, a job lot, Martin outbidding his own brother, and an arcade named as the place the machine might be read. It states the cosmology once, in one word — \"Sorting\" — and never explains it. From its final frame the beige terminal and CRT travel in the back of the bus, with Martin's guitar case beside them, and every later bus frame has to show them.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -10816,7 +11363,7 @@
         "Needs review"
       ],
       "connections": [],
-      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers.\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the empty bedroom is Max's, the bible naming him as Martin's fourteen-year-old, and no flashback is cut into the scene. Because the machine has had to sit in that room for the eight weeks the scene counts, the storage-unit auction is marked pre-rapture.\n\nDanny and Jodie's first raid is three weeks in and establishes only that they do this now and that she is better at it; nothing in the scene explains where the householders are, and upstairs is never seen or heard as anything other than a thump. Her competence is played as maintenance and is never dramatised: how she opens the door is deliberately not shown. The four-pint bottle he finds in the cupboard is the same prop that sits untouched in the cops' cup holder in episode one's second beat — the object travels, the threads do not meet, and no scene draws the line between them. Whether the photograph wall in shot 11 belongs to the family still living there or to a house they have already stripped is not supplied and is not asserted.\n\nThe cops' second beat is ninety seconds by instruction and its only job is to end episode one's comic thread on a worse note than it started; it sits before the 1980 tag and sets up nothing. Kath's answer is played with no hesitation and is not a punchline, and neither of them notices that the form conversation resolves nothing."
+      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers. 16 kitchen keyframes remain outstanding: He's in a queue, He would be, It's from a storage unit in Wakefield, It's just a cursor, The tap runs, Do you know anybody, The worst moment of his day, She doesn't push. She waits., He's got an arcade, And I bid against him, Too fast, It's mine, Get a bag, Then he gets up, It's coming, Nobody shuts it.\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the empty bedroom is Max's, the bible naming him as Martin's fourteen-year-old, and no flashback is cut into the scene. Because the machine has had to sit in that room for the eight weeks the scene counts, the storage-unit auction is marked pre-rapture.\n\nDanny and Jodie's first raid is three weeks in and establishes only that they do this now and that she is better at it; nothing in the scene explains where the householders are, and upstairs is never seen or heard as anything other than a thump. Her competence is played as maintenance and is never dramatised: how she opens the door is deliberately not shown. The four-pint bottle he finds in the cupboard is the same prop that sits untouched in the cops' cup holder in episode one's second beat — the object travels, the threads do not meet, and no scene draws the line between them. Whether the photograph wall in shot 11 belongs to the family still living there or to a house they have already stripped is not supplied and is not asserted.\n\nThe cops' second beat is ninety seconds by instruction and its only job is to end episode one's comic thread on a worse note than it started; it sits before the 1980 tag and sets up nothing. Kath's answer is played with no hesitation and is not a punchline, and neither of them notices that the form conversation resolves nothing."
     }
   ],
   "brainstorm": [
@@ -11227,6 +11774,51 @@
       "createdAt": "2026-09-20T00:00:00.000Z",
       "description": "Six AI-generated storyboard studies. The same two-shot three times, the same wide twice, one insert of a bottle nobody has drunk.",
       "items": []
+    },
+    {
+      "id": "rapture-look-kitchen",
+      "title": "The kitchen — his grammar, and one street",
+      "sceneId": "rapture-ep4-kitchen",
+      "actId": "rapture-episode-4",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "description": "Twenty-three AI-generated storyboard studies. Fluorescent, flat, off-centre and locked off inside; symmetrical daylight only once they reach the street.",
+      "items": [
+        {
+          "id": "look-rapture-ep4kit-01",
+          "image": "/images/rapture/ep4-kitchen/01-two-mugs.jpg",
+          "caption": "A courtesy — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-02",
+          "image": "/images/rapture/ep4-kitchen/02-brown-tap.jpg",
+          "caption": "Nobody turns it off — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-03",
+          "image": "/images/rapture/ep4-kitchen/03-nans.jpg",
+          "caption": "He's at his nan's — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-04",
+          "image": "/images/rapture/ep4-kitchen/04-enough.jpg",
+          "caption": "Well. Enough. — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-06",
+          "image": "/images/rapture/ep4-kitchen/06-it-isnt-moving.jpg",
+          "caption": "It isn't moving — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-08",
+          "image": "/images/rapture/ep4-kitchen/08-remember-it.jpg",
+          "caption": "Does that matter? — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-09",
+          "image": "/images/rapture/ep4-kitchen/09-untouched-mug.jpg",
+          "caption": "She hasn't drunk any — AI-generated study, not final coverage."
+        }
+      ]
     },
     {
       "id": "rapture-look-doorstep",
