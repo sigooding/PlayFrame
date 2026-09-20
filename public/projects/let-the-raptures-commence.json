@@ -9171,9 +9171,9 @@
     {
       "id": "rapture-ep4door-18",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "Beige, unbranded, dusty (keyframe missing)",
+      "title": "Beige, unbranded, dusty",
       "description": "The desk. And on it, plugged in, dusty: a beige unbranded terminal and a CRT.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/18-the-machine.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -9182,11 +9182,11 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 18-the-machine.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 18 of 32. Add the study and rebuild.\n\nThe desk: a beige unbranded terminal and a CRT, plugged in, dusty, filed as period junk. Shot like an insert like any other — no push-in, no light change, no music. The audience will find it before she does; the camera must not.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. INSERT — INT. BEDROOM — 85mm, static\nThe desk. And on it, plugged in, dusty: a beige unbranded terminal and a CRT."
+      "notes": "The desk: a beige unbranded terminal and a CRT, plugged in, dusty, filed as period junk. Shot like an insert like any other — no push-in, no light change, no music. The audience will find it before she does; the camera must not.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. INSERT — INT. BEDROOM — 85mm, static\nThe desk. And on it, plugged in, dusty: a beige unbranded terminal and a CRT."
     },
     {
       "id": "rapture-ep4door-19",
@@ -9213,9 +9213,9 @@
     {
       "id": "rapture-ep4door-20",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "She moves past it. And stops. (keyframe missing)",
+      "title": "She moves past it. And stops.",
       "description": "She moves past it toward the window.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/20-and-stops.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -9224,13 +9224,13 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 20-and-stops.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 20 of 32. Add the study and rebuild.\n\nHalfway to the window the body stops before the face does. No sound, no cut-in, nothing else moves in the room.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. STATIC MEDIUM — INT. BEDROOM — 50mm, locked off\nShe moves past it toward the window.\nAnd stops."
+      "notes": "Halfway to the window the body stops before the face does. No sound, no cut-in, nothing else moves in the room.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. STATIC MEDIUM — INT. BEDROOM — 50mm, locked off\nShe moves past it toward the window.\nAnd stops."
     },
     {
       "id": "rapture-ep4door-21",
@@ -9299,9 +9299,9 @@
     {
       "id": "rapture-ep4door-24",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "She turns to the beige box (keyframe missing)",
+      "title": "She turns to the beige box",
       "description": "She turns and looks at the beige box on the desk.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/24-the-box.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -9310,13 +9310,13 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 24-the-box.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 24 of 32. Add the study and rebuild.\n\nFirst time the machine is looked at directly. Same framing rules as the rest of his grammar: off-centre, flat, no push-in.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n24. STATIC WIDE — INT. BEDROOM — 28mm, locked off\nShe turns and looks at the beige box on the desk."
+      "notes": "First time the machine is looked at directly. Same framing rules as the rest of his grammar: off-centre, flat, no push-in.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n24. STATIC WIDE — INT. BEDROOM — 28mm, locked off\nShe turns and looks at the beige box on the desk."
     },
     {
       "id": "rapture-ep4door-25",
@@ -9344,9 +9344,9 @@
     {
       "id": "rapture-ep4door-26",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "Where something has been snapped off (keyframe missing)",
+      "title": "Where something has been snapped off",
       "description": "The casing. And on the top, a small rectangular gap in the plastic where something has been snapped off.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/26-snapped-off.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -9355,18 +9355,18 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 26-snapped-off.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 26 of 32. Add the study and rebuild.\n\nThe casing: a small rectangular gap in the plastic on top where a badge has been snapped off. Nobody mentions it, in this scene or any other, and nobody is meant to explain it. Lit flat, like a rental inventory photo.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n26. INSERT — INT. BEDROOM — 85mm, static\nThe casing. And on the top, a small rectangular gap in the plastic where something has been snapped off."
+      "notes": "The casing: a small rectangular gap in the plastic on top where a badge has been snapped off. Nobody mentions it, in this scene or any other, and nobody is meant to explain it. Lit flat, like a rental inventory photo.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n26. INSERT — INT. BEDROOM — 85mm, static\nThe casing. And on the top, a small rectangular gap in the plastic where something has been snapped off."
     },
     {
       "id": "rapture-ep4door-27",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "She says nothing at all (keyframe missing)",
+      "title": "She says nothing at all",
       "description": "She looks at the gap. She looks at the thing in her hand.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/27-says-nothing.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "lens": "85mm",
@@ -9375,13 +9375,13 @@
       "style": "cinematic",
       "duration": 9,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 27-says-nothing.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 27 of 32. Add the study and rebuild.\n\nGap, then the thing in her hand, then nothing. The scene's biggest beat is played with no line at all; do not let the study add a flicker of awe.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 9s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n27. CLOSE — INT. BEDROOM — 65mm, static, on NINA\nShe looks at the gap. She looks at the thing in her hand.\nShe says nothing at all."
+      "notes": "Gap, then the thing in her hand, then nothing. The scene's biggest beat is played with no line at all; do not let the study add a flicker of awe.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 9s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n27. CLOSE — INT. BEDROOM — 65mm, static, on NINA\nShe looks at the gap. She looks at the thing in her hand.\nShe says nothing at all."
     },
     {
       "id": "rapture-ep4door-28",
@@ -9409,9 +9409,9 @@
     {
       "id": "rapture-ep4door-29",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "He borrowed it (keyframe missing)",
+      "title": "He borrowed it",
       "description": "He looks at her. Then at the machine. Then at his son's empty bed.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/29-for-a-poster.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -9420,20 +9420,20 @@
       "style": "cinematic",
       "duration": 9,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [
         "rapture-martin"
       ],
-      "notes": "KEYFRAME MISSING — 29-for-a-poster.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 29 of 32. Add the study and rebuild.\n\nHer, the machine, his son's empty bed, in that order, and then the line that turns the room over. Delivered as a fact about a laptop, nothing more.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 9s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n29. STATIC MEDIUM — INT. BEDROOM DOORWAY — 50mm, locked off\nHe looks at her. Then at the machine. Then at his son's empty bed.\n   MARTIN: He borrowed it. For a poster."
+      "notes": "Her, the machine, his son's empty bed, in that order, and then the line that turns the room over. Delivered as a fact about a laptop, nothing more.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 9s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n29. STATIC MEDIUM — INT. BEDROOM DOORWAY — 50mm, locked off\nHe looks at her. Then at the machine. Then at his son's empty bed.\n   MARTIN: He borrowed it. For a poster."
     },
     {
       "id": "rapture-ep4door-30",
       "sceneId": "rapture-ep4-doorstep",
-      "title": "Did he (keyframe missing)",
+      "title": "Did he",
       "description": "The first thing anyone has said to her in eight weeks that means something.",
-      "image": "",
+      "image": "/images/rapture/ep4-doorstep/30-did-he.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "lens": "85mm",
@@ -9442,13 +9442,13 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 30-did-he.jpg is not in public/images/rapture/ep4-doorstep, so this card holds slot 30 of 32. Add the study and rebuild.\n\nThe first thing anyone has said to her in eight weeks that means something, answered in two words. No music under it.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n30. CLOSE — INT. BEDROOM — 65mm, static, on NINA\nThe first thing anyone has said to her in eight weeks that means something.\n   NINA: Did he."
+      "notes": "The first thing anyone has said to her in eight weeks that means something, answered in two words. No music under it.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, the framings slightly off-centre, everything a hair wrong in the composition and nothing about it underlined. Nothing moves.\n\nTwo grammars in the same building, never blended inside a shot. Her grammar on the street and at the door: locked off, wide, deep focus, symmetrical, dead centre, flat daylight; the camera never follows her. His grammar in the house: fluorescent, flat, framings slightly off-centre, everything slightly wrong in the composition. They sit badly together and the film does not resolve it. Nothing moves in either grammar; the only violence in the scene is the cut between them. Dry, deadpan British black comedy; no awe, no score, no reaction inserts.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot; every other pause in the scene is a working pause)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n30. CLOSE — INT. BEDROOM — 65mm, static, on NINA\nThe first thing anyone has said to her in eight weeks that means something.\n   NINA: Did he."
     },
     {
       "id": "rapture-ep4door-31",
@@ -9991,7 +9991,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (32 shots, 377-second estimate), with 20 AI studies on disk and 12 placeholder cards still to generate: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (32 shots, 377-second estimate), with 27 AI studies on disk and 5 placeholder cards still to generate: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -10129,7 +10129,7 @@
         "Needs review"
       ],
       "connections": [],
-      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers. 12 doorstep keyframes remain outstanding: Nobody's been in yet, Beige, unbranded, dusty, She moves past it. And stops., She turns to the beige box, It's a job lot, Where something has been snapped off, She says nothing at all, Water's brown, He borrowed it, Did he, Because I'm coming back up, Hasn't noticed anything.\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the bedroom is empty, the bed is his, and no flashback is cut into the scene."
+      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers. 5 doorstep keyframes remain outstanding: Nobody's been in yet, It's a job lot, Water's brown, Because I'm coming back up, Hasn't noticed anything.\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the bedroom is empty, the bed is his, and no flashback is cut into the scene."
     }
   ],
   "brainstorm": [
@@ -10561,9 +10561,19 @@
           "caption": "Working, not moved — AI-generated study, not final coverage."
         },
         {
+          "id": "look-rapture-ep4door-18",
+          "image": "/images/rapture/ep4-doorstep/18-the-machine.jpg",
+          "caption": "Beige, unbranded, dusty — AI-generated study, not final coverage."
+        },
+        {
           "id": "look-rapture-ep4door-19",
           "image": "/images/rapture/ep4-doorstep/19-a-printer.jpg",
           "caption": "The way you'd glance at a printer — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4door-20",
+          "image": "/images/rapture/ep4-doorstep/20-and-stops.jpg",
+          "caption": "She moves past it. And stops. — AI-generated study, not final coverage."
         },
         {
           "id": "look-rapture-ep4door-21",
@@ -10579,6 +10589,31 @@
           "id": "look-rapture-ep4door-23",
           "image": "/images/rapture/ep4-doorstep/23-vindication.jpg",
           "caption": "Eleven houses — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4door-24",
+          "image": "/images/rapture/ep4-doorstep/24-the-box.jpg",
+          "caption": "She turns to the beige box — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4door-26",
+          "image": "/images/rapture/ep4-doorstep/26-snapped-off.jpg",
+          "caption": "Where something has been snapped off — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4door-27",
+          "image": "/images/rapture/ep4-doorstep/27-says-nothing.jpg",
+          "caption": "She says nothing at all — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4door-29",
+          "image": "/images/rapture/ep4-doorstep/29-for-a-poster.jpg",
+          "caption": "He borrowed it — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4door-30",
+          "image": "/images/rapture/ep4-doorstep/30-did-he.jpg",
+          "caption": "Did he — AI-generated study, not final coverage."
         }
       ]
     },
