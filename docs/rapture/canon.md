@@ -177,17 +177,17 @@ Only written pauses are locked. Number Fourteen's **~175 seconds** and the locku
 episode runtimes. Other scenes
 are explicitly labelled outlines. There are not eight finished 45-minute scripts.
 
-Thirty-six **housing-estate AI studies** in `public/images/rapture/ep4-estate/` board episode four
-scene 4, one keyframe per shot. Everything is locked off and dead centre except the five vision
-flashes (shots 6–10), which are deliberately wrong: 4:3-ish, blown out, tilted, torn by a dropped
-frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy work coat at dusk
-for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
+Thirty-six **housing-estate AI studies** in `public/images/rapture/ep4-estate/` board episode
+four scene 4, one keyframe per shot. Everything is locked off and dead centre except the five
+vision flashes (shots 6–10), which are deliberately wrong: 4:3-ish, blown out, tilted, torn by a
+dropped frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy work coat
+at dusk for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
 interiors (2 and 34) and at the bus in 32, Nina is at the wheel on the far side (right-hand
 drive), the front passenger seat is empty, and Alan and the dog sit on the bench behind it on the
-passenger side, facing forward. Check Nina's face and coat, Alan's bag, the passenger-side
-seating, the bus's battered rear doors and its nose-on orientation across 3, 4, 5, 11, 12 and 32,
-the four places at the table in shot 21, and the poster spelling in shot 24 against the fragment in shot 7
-before approving any of them.
+passenger side, facing forward. The van is squared to camera in every exterior (3, 4, 5, 11, 12,
+32) and is never silver. Check Nina's face and coat, Alan's bag, the passenger-side seating, the
+battered rear doors, the four untouched places at the table in shot 21, and the poster spelling in
+shot 24 against the fragment in shot 7 before approving any of them.
 
 ## Boundaries not silently resolved
 
