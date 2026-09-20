@@ -25,6 +25,9 @@ workspace, not just a folder of images:
   (the interview's contented blank, now an episode-three scene) from both.
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
   thirteen new AI-generated studies, one keyframe per shot.
+- **Nina's thread:** the first wrong lockup (31 shots) and **Episode four Scene 4 — the housing
+  estate** (36 shots, all boarded) are numbered scenes in her locked-off grammar, the estate scene
+  being the first time her thread is shot at dusk.
 - **Cold opens:** three numbered scenes — the episode-four Pat-alone open
   (12 dialogue-free surveillance shots, fully studied), the
   episode-three angels (15 shots) and Graham's interview (17 shots, re-homed

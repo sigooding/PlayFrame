@@ -28,9 +28,9 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 22);
-assert.equal(project.frames.length, 341, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat and 17 scout-hut shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
-assert.equal(project.scenes.length, 38);
-assert.equal(project.moodboards.length, 10);
+assert.equal(project.frames.length, 377, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat, 17 scout-hut and 36 housing-estate shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.scenes.length, 39);
+assert.equal(project.moodboards.length, 11);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
 const lockup = project.frames.filter(f => f.sceneId === "rapture-ep2-alan");
 const coldOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-interview");
@@ -38,6 +38,7 @@ const angelOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-cold-ope
 const patOpen = project.frames.filter(f => f.sceneId === "rapture-ep4-pat-cold-open");
 const patHouse = project.frames.filter(f => f.sceneId === "rapture-ep4-pat");
 const scoutHut = project.frames.filter(f => f.sceneId === "rapture-ep4-scout-hut");
+const estate = project.frames.filter(f => f.sceneId === "rapture-ep4-estate");
 const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
 assert.equal(coldOpen.length, 17);
@@ -50,7 +51,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 341);
+assert.equal(imported.frames.length, 377);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -114,7 +115,7 @@ assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, estate[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
 assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");
@@ -125,7 +126,7 @@ pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/M
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
 assert.equal(new Set(legacy.map(f => f.sceneId)).size, 9);
-assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 16);
+assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 17);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
 for (const frame of project.frames) {
@@ -272,10 +273,37 @@ assert(scoutHut[15].notes.includes("Not in his handwriting"), "The rota insert k
 assert(scoutHut.every(f => f.characters.every(id => id === "rapture-danny" || id === "rapture-jodie")), "The hi-vis MAN and the WOMAN are cast nowhere");
 assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat-cold-open") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") && project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-scout-hut"), "Episode four runs Pat, then the old-lady outline, then the scout hut");
 pass("scout hut numbered 1-17 in order, all handheld, one AI study per shot");
+// Episode four scene 4: the housing estate at dusk. Thirty-six numbered shots, one AI study
+// each, her locked-off grammar untouched and the hour wrong for the first time; only the vision
+// moves. Nothing in the scene is allowed to explain itself.
+const estateStudies = estate.filter(f => f.image);
+const estateMissingCards = estate.filter(f => !f.image);
+assert.equal(estate.length, 36, "Scene 4 is boarded with thirty-six shots");
+assert.equal(estateStudies.length, 36, "All thirty-six estate shots carry their AI study");
+assert.equal(estateMissingCards.length, 0, "No estate placeholder cards remain");
+assert(estateMissingCards.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Estate placeholder cards hold their numbered slots honestly");
+assert(estate.every((f, i) => f.id === "rapture-ep4est-" + String(i + 1).padStart(2, "0")), "Estate numbering must be contiguous");
+assert(estate.every((f, i) => (f.movement === "Handheld") === (i >= 5 && i <= 9)), "Only the five vision flashes break the locked-off grammar");
+assert(estateStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-estate/")), "Estate studies are draft keyframes in the right folder");
+assert.equal(new Set(estate.map(f => f.image)).size, 36, "One dedicated keyframe per estate shot");
+assert.equal(estate.reduce((n, f) => n + f.duration, 0), 308, "Scene 4's editorial estimate is 308 seconds");
+assert(estate.every(f => f.shotType !== "Establishing" && f.shotType !== "Extreme wide"), "Her grammar composes the frame itself: no establishing card");
+assert(estate.every(f => f.characters.every(id => id === "rapture-nina" || id === "rapture-alan")), "Only Nina and Alan are cast on the estate; the dog is cast nowhere");
+assert(!estate.some(f => f.characters.includes("rapture-max")), "The boy in the fourth house is never cast as Max");
+assert.equal(estate.filter(f => f.lighting === "Blue hour").length, 8, "The exteriors are dusk for the first time in her thread");
+assert(estate.every(f => f.lighting !== "Natural daylight"), "Not one daylight frame in the scene");
+assert(estate[1].notes.includes("(6s)"), "The six-second hold in shot 2 is the scene's only written pause");
+assert(estate[1].notes.includes("ALAN: Whose?") && estate[33].notes.includes("ALAN: (no hesitation at all) I'd wait."), "Both bus exchanges survive verbatim into the notes");
+assert(estate[11].notes.includes("Which one.") && estate[26].notes.includes("Is it this one?"), "Her two questions hang unanswered in the notes");
+assert(estate[6].notes.includes("PTOR") && estate[23].notes.includes("THE RAPTORS"), "The fragment and the poster are both held and neither completes the other");
+assert(estate[20].notes.includes("laid for four") && estate[21].notes.includes("carries on"), "Shot 21's table and shot 22's refusal to stop for it stay in the notes");
+assert(estate[28].notes.includes("mid-blink") && estate[29].notes.includes("Wrong boy."), "The wrong boy stays wrong");
+assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep4-number-fourteen") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-estate"), "Scene 4 follows Number Fourteen in episode four");
+pass("estate scene numbered 1-36 in order, dusk grammar held, one AI study per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 271 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 308 + 271 + 197 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -332,9 +360,14 @@ assert(buildFramePrompt(project, patHouse[0], platform.id).includes("the camera 
 assert(buildFramePrompt(project, patHouse[3], platform.id).includes("Red practical sources only"), `${platform.id} must inherit the Crane red grammar in the kitchen`);
 const patPrompt = buildFramePrompt(project, patOpen[0], platform.id);
 assert(patPrompt.includes("burglars pick her house by chance"), `${platform.id} must inherit Pat's dusk surveillance grammar`);
+const estatePrompt = buildFramePrompt(project, estate[0], platform.id);
+assert(estatePrompt.includes("Dusk, not daylight, for the first time in her thread"), `${platform.id} must inherit the estate grammar`);
+assert(!estatePrompt.includes("undefined") && !estatePrompt.includes("NaN"), `${platform.id} estate prompt must render cleanly`);
 const hutPrompt = buildFramePrompt(project, scoutHut[0], platform.id);
 assert(hutPrompt.includes("Never a clean wide"), `${platform.id} must inherit the scout-hut grammar`);
 if (platform.id === "hailuo") assert(buildFramePrompt(project, scoutHut[1], platform.id).includes("Tomorrow"), "H3 keeps the scout-hut dialogue in d blocks");
+if (platform.id === "hailuo") assert(buildFramePrompt(project, estate[1], platform.id).includes("A bedroom."), "H3 keeps Nina's one-word answer in a <d> block");
+if (platform.id === "hailuo") assert(!buildFramePrompt(project, estate[0], platform.id).includes("<d>"), "The opening long lens has no dialogue to set");
 if (platform.id === "hailuo") assert(!patPrompt.includes("<d>"), "Pat's still opening shot generates no H3 dialogue");
 if (platform.id === "hailuo") assert(buildFramePrompt(project, patOpen[6], platform.id).includes("<d>"), "H3 keeps the demon argument in <d> blocks");
 if (platform.id === "hailuo") assert(buildFramePrompt(project, patOpen[10], platform.id).includes("Graham") && buildFramePrompt(project, patOpen[10], platform.id).includes("<d>[English] I can only apologise.</d>"), "H3 keeps Graham's locked-door apology in a <d> block");
@@ -357,6 +390,9 @@ if (platform.kind === "video") assert(patWhole.includes("ESTIMATED RUNTIME: 151"
 const patHouseWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-pat"), platform.id);
 assert(patHouseWhole.includes("the camera never moves") && patHouseWhole.includes("Red practical sources only") && patHouseWhole.includes("Fixed high-corner surveillance cameras"), "The scene prompt carries all three grammars, shot by shot");
 if (platform.kind === "video") assert(patHouseWhole.includes("ESTIMATED RUNTIME: 305"));
+const estateWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-estate"), platform.id);
+assert(estateWhole.includes("Dusk, not daylight, for the first time in her thread"), "The scene prompt carries the estate grammar");
+if (platform.kind === "video") assert(estateWhole.includes("ESTIMATED RUNTIME: 308"));
 const hutWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-scout-hut"), platform.id);
 assert(hutWhole.includes("Never a clean wide"));
 if (platform.kind === "video") assert(hutWhole.includes("ESTIMATED RUNTIME: 159"));
@@ -376,6 +412,8 @@ assert(csv.includes("The door closes."));
 assert(csv.includes("Forty-one, or forty-seven?"));
 assert(csv.includes("Bag for life"));
 assert(csv.includes("I can only apologise"));
+assert(csv.includes("Are we looking for somewhere?") && csv.includes("These things take time"), "Scene 4 dialogue reaches the shot-list CSV");
+assert(csv.includes("Housing estate") || csv.includes("housing estate"), "Scene 4 is in the shot list");
 assert(buildFramePrompt(project, tap, "generic").includes("approximately 11 seconds"));
 pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction, empty cast and estimated timing`);
 
@@ -387,6 +425,7 @@ assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filt
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 16, "Sixteen Pat studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-house")).filter(p => p.endsWith(".jpg")).length, 35, "Thirty-five Scene 2 studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen scout-hut studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-estate")).filter(p => p.endsWith(".jpg")).length, 36, "Thirty-six estate studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
@@ -394,7 +433,8 @@ assert(legacy.every(f => f.image === "" || f.image.startsWith("/images/rapture/"
 assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 194);
 assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board covers all thirteen studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies and 194 ordered legacy keyframes`);
+assert(project.moodboards.some(b => b.id === "rapture-look-estate" && b.items.length === 36), "The estate board covers all thirty-six studies");
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate studies and 194 ordered legacy keyframes`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
@@ -415,7 +455,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 341);
+      assert.equal(opened.frames.length, 377);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -428,7 +468,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 341);
+      assert.equal(restored.frames.length, 377);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');

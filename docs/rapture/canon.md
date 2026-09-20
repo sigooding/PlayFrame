@@ -32,6 +32,13 @@ comedy in every thread; this is not noir and not a tragedy.
   a friend); 33–35 snap back to the Crane grammar. The violence is silent
   and domestic, the exact rhythm of someone eating a meal. This is NOT
   Number Fourteen. All thirty-five shots carry AI studies.
+- **Episode-four scene 4 — the housing estate:** [numbered scene](scenes/ep4-housing-estate.md),
+  36 locked-off shots at dusk. Nina's grammar, the wrong hour for the first time: she is sent to a
+  child's bedroom with no number and no name, so she audits a cul-de-sac of thirty identical semis
+  the way she would check a building for a gas leak. The laid table is the only thing that lands and
+  she does not stop for it; the poster matches the vision and does not; nothing answers twice. All
+  thirty-six shots carry AI studies.
+
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -170,8 +177,25 @@ Only written pauses are locked. Number Fourteen's **~175 seconds** and the locku
 episode runtimes. Other scenes
 are explicitly labelled outlines. There are not eight finished 45-minute scripts.
 
+Thirty-six **housing-estate AI studies** in `public/images/rapture/ep4-estate/` board episode four
+scene 4, one keyframe per shot. Everything is locked off and dead centre except the five vision
+flashes (shots 6–10), which are deliberately wrong: 4:3-ish, blown out, tilted, torn by a dropped
+frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy work coat at dusk
+for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
+interiors (2 and 34) and at the bus in 32, Nina is at the wheel on the far side (right-hand
+drive), the front passenger seat is empty, and Alan and the dog sit on the bench behind it on the
+passenger side, facing forward. Check Nina's face and coat, Alan's bag, the passenger-side seating, the bus's battered rear doors, the four places at
+the table in shot 21, and the poster spelling in shot 24 against the fragment in shot 7 before
+approving any of them.
+
 ## Boundaries not silently resolved
 
+- Episode four scene 4 does not say which bedroom the pendant wanted, whether there was one, or
+  why a laid table for four stops her. The boy inferred by shot 15 and the boy in the school
+  photograph in shot 29 are uncast and are deliberately not Max; the vision's `PTOR` fragment and
+  the correctly spelled poster in shot 24 are held side by side and never reconciled. The dog that
+  barks off shot 13 is not hers. The scene keeps thirty identical houses as written; no number was
+  invented.
 - Max: flashbacks only, alive and unreachable. Episode eight says he knows the
   fields; no present-day reunion or delivery mechanism has been invented.
 - 1980, death five years later and forty-five years later are retained as written;

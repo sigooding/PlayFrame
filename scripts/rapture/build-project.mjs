@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, lockupGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, lockupGrammar, estateGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -14,6 +14,7 @@ const patColdOpenScreenplay = read("docs/rapture/scenes/ep4-pat-cold-open.md");
 const patHouseScreenplay = read("docs/rapture/scenes/ep4-pat-house.md");
 const scoutHutScreenplay = read("docs/rapture/scenes/ep4-scout-hut.md");
 const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
+const estateScreenplay = read("docs/rapture/scenes/ep4-housing-estate.md");
 const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
 const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
 const episodes = sections.find(section => section.title === "EPISODES");
@@ -236,6 +237,51 @@ assert(scoutHut.every(f => f.characters.every(id => id === characterId("danny") 
 assert(scoutHut[1].notes.includes("MAN: How much?") && scoutHut[9].notes.includes("WOMAN: Let's have a look.") && scoutHut[10].notes.includes("WOMAN: That wants antibiotics."), "The unnamed group members' dialogue survives verbatim");
 assert(scoutHut[12].notes.includes("She leaves them by the gate") && scoutHut[6].notes.includes("Window frame."), "The gate arrangement and the whole of Danny's lie stay intact");
 
+// Episode four scene 4: the housing estate at dusk. Nina's grammar is unchanged and the hour is
+// wrong for the first time: the pendant gives her a bedroom and no address, so she works thirty
+// identical houses in order. Shot 2's six-second hold is the only written pause in the scene;
+// shots 6–10 are the vision and the only handheld frames. Shots 8–10 carry no lens in the source.
+const estateBlocks = [...estateScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(estateBlocks.length, 36, "The estate source must have thirty-six numbered shots");
+assert.equal(estatePlan.length, 36, "The estate plan must cover all thirty-six shots");
+const estate = estateBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Estate shot order must be contiguous");
+  const plan = estatePlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const handheld = header.startsWith("FLASH"); // the source marks the vision block handheld once, in its section line; FLASH is the per-shot flag
+  assert(handheld === (i >= 5 && i <= 9), "Only the five vision flashes break the locked-off grammar");
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Estate duration must cover action and dialogue, not only the hold");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const file = `/images/rapture/ep4-estate/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  const assumedLens = /\d+mm/.test(header) ? "" : `\n\nLens: not specified in the source; ${plan.lens} is a working choice for the study, not a script direction.`;
+  return {
+    id: `rapture-ep4est-${String(n).padStart(2, "0")}`, sceneId: estateSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: handheld ? "Handheld" : "Static", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-estate, so this card holds slot ${n} of ${estatePlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}${assumedLens}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${estateGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none in this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(estate.reduce((n, f) => n + f.duration, 0), 308, "Update the timing note when estate editorial estimates change");
+assert(estate.every((f, i) => (f.movement === "Handheld") === (i >= 5 && i <= 9)), "Nina's cameras never move; only the vision does");
+assert(estate.every(f => f.shotType !== "Establishing"), "Her grammar composes the frame itself: no establishing card");
+assert(estate.every(f => f.characters.every(id => id === characterId("nina") || id === characterId("alan"))), "Only Nina and Alan are cast on the estate; the dog is not a cast entity");
+assert(estate.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-estate/")), "Estate keyframes live under /images/rapture/ep4-estate/");
+assert(estate[1].notes.includes("NINA: A bedroom.") && estate[33].notes.includes("ALAN: (warmly) Well. As long as it took."), "The bus dialogue survives verbatim into the notes");
+assert(estate[11].notes.includes("Which one.") && estate[26].notes.includes("Is it this one?"), "Her two questions to the estate stay in the notes");
+assert(estate[6].notes.includes("PTOR") && estate[23].notes.includes("THE RAPTORS"), "The fragment and the poster are both in the notes and neither completes the other");
+assert(!estate.some(f => f.characters.includes(characterId("max"))), "The boy in the fourth house is never cast as Max");
+assert(estate[1].notes.includes("(6s)"), "The six-second hold in shot 2 stays locked in the timing note");
+
 assert(coldOpen.every(frame => frame.movement === "Static"), "Cold-open cameras never move");
 assert(coldOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-cold-open/")), "Cold-open keyframes live under /images/rapture/ep4-cold-open/");
 const lockupBlocks = [...lockupScreenplay.matchAll(/^(\d+)\. (STATIC WIDE|STATIC MEDIUM|MEDIUM|CLOSE|FLASH), (\d+mm), (locked off|static|handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
@@ -295,6 +341,14 @@ const scoutHutScene = {
   characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-4",
   kind: "Standard", lighting: "Practical night", lightingNotes: scoutHutGrammar, style: "cinematic",
 };
+// Scene 4: the housing estate at dusk. The pendant gives her a bedroom and no address, so she
+// audits thirty identical semis the way she would check a building for a gas leak.
+const estateScene = {
+  id: estateSceneId, title: "The housing estate", location: "EXT./INT. A HOUSING ESTATE", time: "DUSK",
+  description: "Scene 4: she is looking for a child's bedroom and has no idea whose or why. A cul-de-sac of thirty identical semis with not one light on, a vision that arrives as wallpaper and half a word, a table laid for four nobody sits at, a correctly spelled poster in the wrong house, and a passenger whose only advice is to wait as long as it takes.",
+  characters: ["nina", "alan"].map(characterId), actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Blue hour", lightingNotes: "Dusk, not daylight, for the first time in her thread: flat blue hour with no warmth and no sun, the only hard sources being the bus's headlights and her own torch. Locked off, wide, deep focus, symmetrical, dead centre. The camera never follows her and long lenses hold the road. Only the vision goes handheld: broken, wrong aspect ratio, dropped frames, blown out, a hiss. Nothing about the hour is remarked upon.", style: "cinematic",
+};
 const coldOpenScene = {
   id: coldOpenSceneId, title: "The interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
   description: "Episode three circles what a blank is from three angles and gets it wrong three times: the angels' cold open, the cops' worthless test, and Hell's five-hour interview that leaves with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
@@ -345,6 +399,7 @@ scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-meetings"), 0, patHous
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-pat"), 0, patColdOpenScene);
 scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId), 0, scoutHutScene);
 scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId) + 1, 0, scene);
+scenes.splice(scenes.findIndex(s => s.id === sceneId) + 1, 0, estateScene); // scene 4 follows Number Fourteen in episode four
 const lockupScene = {
   id: lockupSceneId, title: "The first wrong lockup", location: "EXT./INT. ROADS AND AN INDUSTRIAL ESTATE", time: "DAY",
   description: `Nina drives out on a pendant bearing, opens two wrong lockups, and acquires Alan. ${lockupGrammar} The vision is the tracker's recorded view, not divine revelation.`,
@@ -382,12 +437,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...patOpen, ...patHouse, ...scoutHut, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...patOpen, ...patHouse, ...scoutHut, ...estate, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, patOpen.length + patHouse.length + scoutHut.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, patOpen.length + patHouse.length + scoutHut.length + estate.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
@@ -403,16 +458,18 @@ const patOpenTotal = patOpen.reduce((n, f) => n + f.duration, 0);
 const patHouseTotal = patHouse.reduce((n, f) => n + f.duration, 0);
 const scoutHutMissing = scoutHut.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
 const scoutHutTotal = scoutHut.reduce((n, f) => n + f.duration, 0);
+const estateMissing = estate.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const estateTotal = estate.reduce((n, f) => n + f.duration, 0);
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-and-Malcolm dusk open (${patOpen.length} shots, ${patOpenTotal}-second estimate, Graham already chained under the floor)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}, and Scene 2 — the old-lady sequence — is numbered (${patHouse.length} shots, ${patHouseTotal}-second estimate), two grammars never blended within a shot${patHouseMissing.length ? `, with ${patHouse.length - patHouseMissing.length} AI studies on disk and ${patHouseMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
+  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-and-Malcolm dusk open (${patOpen.length} shots, ${patOpenTotal}-second estimate, Graham already chained under the floor)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}, and Scene 2 — the old-lady sequence — is numbered (${patHouse.length} shots, ${patHouseTotal}-second estimate), two grammars never blended within a shot${patHouseMissing.length ? `, with ${patHouse.length - patHouseMissing.length} AI studies on disk and ${patHouseMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (${estate.length} shots, ${estateTotal}-second estimate) — is numbered and boarded${estateMissing.length ? `, with ${estate.length - estateMissing.length} AI studies on disk and ${estateMissing.length} placeholder cards still to generate` : ", fully studied"}; the hour is the only thing about her grammar that has changed. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
   id: "rapture-continuity", title: "Continuity decisions and open questions", color: "rose", createdAt,
   tags: ["Continuity", "Needs review"], connections: [],
-  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}`,
+  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers.${estateMissing.length ? ` ${estateMissing.length} estate keyframes remain outstanding: ${estateMissing.join(", ")}.` : ""}`,
 });
 
 const brainstorm = [
@@ -431,6 +488,10 @@ const moodboards = [{
   id: "rapture-look-lockup", title: "The first wrong lockup — locked off daylight", sceneId: lockupSceneId, actId: "rapture-episode-2", createdAt,
   description: "Thirty-one AI-generated storyboard studies. Locked off, wide, deep focus, daylight, symmetrical; only the vision is handheld.",
   items: lockupFrames.map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-estate", title: "The housing estate — her grammar, the wrong hour", sceneId: estateSceneId, actId: "rapture-episode-4", createdAt,
+  description: "Thirty-six AI-generated storyboard studies. Locked off, wide, deep focus, symmetrical, dead centre, at dusk for the first time in her thread; only the vision goes handheld.",
+  items: estate.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
 }, ...referenceBoards.map(board => ({
   id: `rapture-look-${board.id}`, title: board.title, description: board.description, createdAt,
   items: board.items.map(([image, caption], i) => ({ id: `rapture-${board.id}-ref-${i + 1}`, image, caption })),
@@ -441,7 +502,7 @@ const project = {
   description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; the episode-three and episode-four cold opens (15 + 17 shots) and Number Fourteen (13 shots) are the working scenes.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
-  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
+  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay, estateScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
   shareId: null, createdAt, updatedAt: createdAt,
 };
 
