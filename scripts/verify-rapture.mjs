@@ -27,8 +27,8 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
-assert.equal(project.characters.length, 21);
-assert.equal(project.frames.length, 302, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 12 Pat and 17 scout-hut shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.characters.length, 22);
+assert.equal(project.frames.length, 341, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat and 17 scout-hut shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
 assert.equal(project.scenes.length, 38);
 assert.equal(project.moodboards.length, 10);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
@@ -36,6 +36,7 @@ const lockup = project.frames.filter(f => f.sceneId === "rapture-ep2-alan");
 const coldOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-interview");
 const angelOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-cold-open");
 const patOpen = project.frames.filter(f => f.sceneId === "rapture-ep4-pat-cold-open");
+const patHouse = project.frames.filter(f => f.sceneId === "rapture-ep4-pat");
 const scoutHut = project.frames.filter(f => f.sceneId === "rapture-ep4-scout-hut");
 const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
@@ -49,7 +50,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 302);
+assert.equal(imported.frames.length, 341);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -113,18 +114,18 @@ assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, lockup[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
-assert.equal(patOpen.length, 12, "The Pat cold open is boarded with twelve shots");
-assert(patOpen.every(f => f.characters.length === 0 || f.characters[0] === "rapture-pat"), "Pat appears only in her own cold open");
-assert(!ep4.some(f => f.characters.includes("rapture-pat")), "Number Fourteen still never shows Pat");
+assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");
+assert(patOpen.every(f => f.characters.every(id => ["rapture-pat", "rapture-malcolm", "rapture-graham"].includes(id))), "Only Pat, Malcolm and the heard-not-seen Graham appear in her cold open");
+assert(!ep4.some(f => f.characters.includes("rapture-pat") || f.characters.includes("rapture-malcolm")), "Number Fourteen still never shows Pat or Malcolm");
 assert(!project.scenes.filter(s => s.actId === "rapture-episode-8").some(s => s.characters.includes("rapture-max")));
 pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/Max boundaries intact");
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
 assert.equal(new Set(legacy.map(f => f.sceneId)).size, 9);
-assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 15);
+assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 16);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
 for (const frame of project.frames) {
@@ -185,7 +186,7 @@ const interviewScene = project.scenes.find(s2 => s2.id === "rapture-ep3-intervie
 assert(interviewScene && interviewScene.characters.includes("rapture-graham"), "Graham's interview scene keeps its cast under its episode-three id");
 assert(interviewScene.actId === "rapture-episode-3", "The interview moved to episode three");
 assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep3-test") < project.scenes.findIndex(s2 => s2.id === "rapture-ep3-interview"), "The interview follows the cops' test in episode three");
-assert(!project.scenes.some(s2 => s2.characters.includes("rapture-graham") && s2.id !== "rapture-ep3-interview"), "Graham belongs to the interview only");
+assert(!project.scenes.some(s2 => s2.characters.includes("rapture-graham") && s2.id !== "rapture-ep3-interview" && s2.id !== "rapture-ep4-pat-cold-open"), "Graham belongs to the interview and Pat's cold open only");
 pass("cold open numbered 1-17 in order, timecode verbatim, one AI study per shot");
 // Episode-three cold open: the recovery angels' first appearance. Immaculate advert grammar,
 // static setups only, and the garden-centre blank joins no cast list.
@@ -210,23 +211,47 @@ assert(harriel.relations.some(r => r.targetId === soqed.id) && soqed.relations.s
 assert(angelOpen[3].notes.includes("broken glass") && angelOpen[3].notes.includes("dog"), "The ignored high-street details stay in shot 4");
 assert(angelOpen[13].notes.includes("wrong direction") && angelOpen[13].notes.includes("Hold"), "Shot 14 holds on the wrong direction");
 pass("angel cold open numbered 1-15 in order, advert grammar, one AI study per shot");
-// Episode-four cold open: Pat alone, twelve dialogue-free surveillance shots. The holds are
-// locked, the timecode burn-ins are verbatim, and only Pat is in the room.
+// Episode-four cold open: Pat and Malcolm at dusk, sixteen surveillance shots with the
+// blank already under the floor. The holds are locked, the evening timecode burn-ins are
+// verbatim, and only Pat and Malcolm are in the house.
 const patStudies = patOpen.filter(f => f.image);
 const patMissing = patOpen.filter(f => !f.image);
-assert.equal(patStudies.length, 12, "All twelve Pat shots carry their AI study");
+assert.equal(patStudies.length, 16, "All sixteen Pat shots carry their AI study");
 assert.equal(patMissing.length, 0, "No Pat placeholder cards remain");
 assert(patMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Pat placeholder cards hold their numbered slots honestly");
 assert(patStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-pat-cold-open/")), "Pat studies are draft keyframes in the right folder");
 assert(patOpen.every((f, i) => f.id === "rapture-ep4pco-" + String(i + 1).padStart(2, "0")), "Pat cold-open numbering must be contiguous");
 assert(patOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "Pat cameras never move and all timings are estimates");
-assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 109);
-assert(patOpen[0].notes.includes("(10s)") && patOpen[9].notes.includes("(12s)"), "The ten-second and twelve-second holds stay locked in the timing notes");
-assert(patOpen[0].notes.includes("06:12:04") && patOpen[1].notes.includes("07:40:19") && patOpen[2].notes.includes("08:03:55") && patOpen[8].notes.includes("09:51:32"), "The burnt-in timecode values are reproduced verbatim");
-assert(patOpen[9].notes.includes("smiles at the window") && patOpen[9].notes.includes("nobody at the window"), "Shot 10 keeps the smile and its empty window");
-assert(patOpen[3].notes.includes("Three different men") && patOpen[5].notes.includes("slabs of bottled water"), "The photographs and the water cupboard survive into the notes");
-assert(!patOpen.some(f => f.notes.includes("<d>")), "The Pat cold open carries no dialogue at all");
-pass("Pat cold open numbered 1-12 in order, no dialogue, holds locked, one AI study per shot");
+assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 151);
+assert(patOpen[0].notes.includes("(10s)") && patOpen[10].notes.includes("(10s)") && patOpen[13].notes.includes("(12s)"), "The two ten-second holds and the twelve-second hold stay locked in the timing notes");
+assert(patOpen[0].notes.includes("16:12:04") && patOpen[1].notes.includes("17:40:19") && patOpen[13].notes.includes("19:51:32"), "The burnt-in evening timecode values are reproduced verbatim");
+assert(patOpen[13].notes.includes("smiles at the window") && patOpen[13].notes.includes("nobody at the window"), "Shot 14 keeps the smile and its empty window");
+assert(patOpen[2].notes.includes("Three different men") && patOpen[4].notes.includes("slabs of bottled water"), "The photographs and the water cupboard survive into the notes");
+assert(patOpen[5].notes.includes("Malcolm comes up out of it") && patOpen[10].notes.includes("GRAHAM: (o.s.) I can only apologise."), "The cellar is planted before anyone knocks and Graham's apology comes through the locked door");
+assert(patOpen[6].notes.includes("MALCOLM: He's apologised again.") && patOpen[7].notes.includes("Then why does he keep apologising?"), "The eight-line argument about method survives verbatim");
+pass("Pat cold open numbered 1-16 in order at dusk, holds locked, Graham behind the cellar door, one AI study per shot");
+// Episode four Scene 2: the old-lady sequence, 35 shots, two grammars never blended
+// within a shot. Front-room indices (0-based) are her static lamplit programme; 30-31
+// are the demon surveillance shots; everything else is Crane handheld red torchlight.
+const patHouseStudies = patHouse.filter(f => f.image);
+const patHouseMissingCards = patHouse.filter(f => !f.image);
+assert.equal(patHouse.length, 35, "Scene 2 is boarded with thirty-five shots");
+assert.equal(patHouseStudies.length, 35, "All thirty-five Scene 2 shots carry their AI study");
+assert.equal(patHouseMissingCards.length, 0, "No Scene 2 placeholder cards remain");
+assert(patHouseMissingCards.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Scene 2 placeholder cards hold their numbered slots honestly");
+assert(patHouse.every((f, i) => f.id === "rapture-ep4ph-" + String(i + 1).padStart(2, "0")), "Scene 2 numbering must be contiguous");
+assert.equal(patHouse.reduce((n, f) => n + f.duration, 0), 305);
+const frontShots = [0, 1, 2, 4, 5, 6, 7, 10, 11, 22, 23, 24, 25, 26, 27, 28, 29];
+const demonShots = [30, 31];
+assert(patHouse.every((f, i) => (frontShots.includes(i) || demonShots.includes(i)) ? f.movement === "Static" : f.movement === "Handheld"), "Her grammar and the demon grammar never move; the Crane grammar always does");
+assert(frontShots.every(i => patHouse[i].notes.includes("the camera never moves")), "Front-room shots carry her static grammar");
+assert(demonShots.every(i => patHouse[i].notes.includes("Fixed high-corner surveillance cameras")), "Shots 31-32 carry the demon surveillance grammar");
+assert(patHouse.every((f, i) => (frontShots.includes(i) || demonShots.includes(i)) || f.notes.includes("Red practical sources only")), "Crane shots keep the red torchlight rule");
+assert(patHouse[0].notes.includes("Isn't that nice.") && patHouse[6].notes.includes("Malcolm's the other one.") && patHouse[22].notes.includes("I'll leave the bottles by the gate, love.") && patHouse[31].notes.includes("I've made a friend.") && patHouse[32].notes.includes("She's leaving the rest by the gate."), "Scene 2 dialogue survives verbatim");
+assert(patHouse[19].notes.includes("fork goes through his forearm") && patHouse[23].notes.includes("water comes out brown"), "The fork and the brown water survive");
+assert(patHouse[27].notes.includes("Same framing as shot 1") && patHouse[28].notes.includes("door under the stairs"), "Shot 28 mirrors shot 1; Jodie passes the cellar door without looking");
+assert(patHouse[30].characters.join() === "rapture-malcolm" && patHouse.filter(f => f.characters.includes("rapture-malcolm")).length === 2, "Malcolm is seen only in the two surveillance shots");
+pass("Scene 2 numbered 1-35 in order, two grammars never blended, one AI study per shot");
 // Episode-four scene 3: the scout hut, the scene after the violence. All handheld, dialogue
 // verbatim, the unnamed group members cast nowhere, and the whole of Danny's lie intact.
 const hutStudies = scoutHut.filter(f => f.image);
@@ -250,7 +275,7 @@ pass("scout hut numbered 1-17 in order, all handheld, one AI study per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 109 + 159 + 271 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 271 + 197 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -303,12 +328,16 @@ for (const platform of PLATFORMS) {
   assert(buildFramePrompt(project, lockup[0], platform.id).includes("Only the vision breaks the grammar"), `${platform.id} must inherit Nina's locked-off grammar`);
 assert(buildFramePrompt(project, coldOpen[0], platform.id).includes("Fixed high-corner surveillance cameras"), `${platform.id} must inherit the cold-open surveillance grammar`);
 assert(buildFramePrompt(project, angelOpen[0], platform.id).includes("immaculate"), `${platform.id} must inherit the angel advert grammar`);
+assert(buildFramePrompt(project, patHouse[0], platform.id).includes("the camera never moves"), `${platform.id} must inherit Pat's front-room grammar`);
+assert(buildFramePrompt(project, patHouse[3], platform.id).includes("Red practical sources only"), `${platform.id} must inherit the Crane red grammar in the kitchen`);
 const patPrompt = buildFramePrompt(project, patOpen[0], platform.id);
-assert(patPrompt.includes("No dialogue anywhere"), `${platform.id} must inherit Pat's no-dialogue rule`);
+assert(patPrompt.includes("burglars pick her house by chance"), `${platform.id} must inherit Pat's dusk surveillance grammar`);
 const hutPrompt = buildFramePrompt(project, scoutHut[0], platform.id);
 assert(hutPrompt.includes("Never a clean wide"), `${platform.id} must inherit the scout-hut grammar`);
 if (platform.id === "hailuo") assert(buildFramePrompt(project, scoutHut[1], platform.id).includes("Tomorrow"), "H3 keeps the scout-hut dialogue in d blocks");
-if (platform.id === "hailuo") assert(!patPrompt.includes("<d>"), "Pat's cold open generates no H3 dialogue");
+if (platform.id === "hailuo") assert(!patPrompt.includes("<d>"), "Pat's still opening shot generates no H3 dialogue");
+if (platform.id === "hailuo") assert(buildFramePrompt(project, patOpen[6], platform.id).includes("<d>"), "H3 keeps the demon argument in <d> blocks");
+if (platform.id === "hailuo") assert(buildFramePrompt(project, patOpen[10], platform.id).includes("Graham") && buildFramePrompt(project, patOpen[10], platform.id).includes("<d>[English] I can only apologise.</d>"), "H3 keeps Graham's locked-door apology in a <d> block");
 assert(buildFramePrompt(project, coldOpen[6], platform.id).includes("Tamsin") === false || true);
   const whole = buildScenePrompt(project, scene, platform.id);
   assert(whole.includes("Red practical sources only"));
@@ -323,8 +352,11 @@ const angelWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id ===
 assert(angelWhole.includes("immaculate"));
 if (platform.kind === "video") assert(angelWhole.includes("ESTIMATED RUNTIME: 125"));
 const patWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-pat-cold-open"), platform.id);
-assert(patWhole.includes("No dialogue anywhere"));
-if (platform.kind === "video") assert(patWhole.includes("ESTIMATED RUNTIME: 109"));
+assert(patWhole.includes("burglars pick her house by chance"));
+if (platform.kind === "video") assert(patWhole.includes("ESTIMATED RUNTIME: 151"));
+const patHouseWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-pat"), platform.id);
+assert(patHouseWhole.includes("the camera never moves") && patHouseWhole.includes("Red practical sources only") && patHouseWhole.includes("Fixed high-corner surveillance cameras"), "The scene prompt carries all three grammars, shot by shot");
+if (platform.kind === "video") assert(patHouseWhole.includes("ESTIMATED RUNTIME: 305"));
 const hutWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-scout-hut"), platform.id);
 assert(hutWhole.includes("Never a clean wide"));
 if (platform.kind === "video") assert(hutWhole.includes("ESTIMATED RUNTIME: 159"));
@@ -352,7 +384,8 @@ for (const image of paths) assert(existsSync(join(root, "public", image)), `Imag
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 15, "Fifteen angel studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 12, "Twelve Pat studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 16, "Sixteen Pat studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-house")).filter(p => p.endsWith(".jpg")).length, 35, "Thirty-five Scene 2 studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen scout-hut studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
@@ -382,7 +415,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 302);
+      assert.equal(opened.frames.length, 341);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -395,7 +428,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 302);
+      assert.equal(restored.frames.length, 341);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');
