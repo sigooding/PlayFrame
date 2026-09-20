@@ -36,7 +36,7 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Episode-three cold open:** [numbered scene](scenes/ep3-cold-open.md),
   15 static setups in immaculate advert grammar: locked off, centred, too
   symmetrical, beautiful light. The recovery angels are now **named by the
-  source: Harriel (40s, linen) and Soqed (30s, slightly behind him always)**;
+  source: Hariel (40s, linen) and Soqed (30s, slightly behind him always)**;
   no further backstory is supplied. The unnamed MAN (60s, cardigan) between
   the pallets of bark chippings is a blank who belongs to nobody and joins no
   cast list. All fifteen shots carry AI studies.
@@ -71,10 +71,10 @@ comedy in every thread; this is not noir and not a tragedy.
   cardigan, shirt and tie, corduroys, slippers. Content, helpful, unfazed;
   never frightened. No surname, and **not** Alan and **not** the chained/rescued
   blank — no identity link has been supplied.
-- **Harriel — 40s — and Soqed — 30s.** The Michael-adjacent recovery pair,
+- **Hariel — 40s — and Soqed — 30s.** The Michael-adjacent recovery pair,
   linen, immaculate, of no use whatsoever. Named in the episode-three cold
-  open; Soqed is always slightly behind Harriel. Neither has read the report.
-  No identity sheets exist yet; the studies fix linen suits, Harriel's greying
+  open; Soqed is always slightly behind Hariel. Neither has read the report.
+  No identity sheets exist yet; the studies fix linen suits, Hariel's greying
   neat hair and Soqed's sandy hair as the working reference.
 
 ## Current Crane grammar
@@ -127,7 +127,7 @@ immaculate advert grammar: locked off, centred, slightly too symmetrical,
 wide lenses, everything in focus, beautiful light — the opposite of Hell's
 surveillance, and no timecode burn-in. Shot 12 (the blank's eyes) is the
 linchpin insert: nothing wrong with them, nothing behind them either. Check
-the linen continuity between Harriel and Soqed, the too-perfect symmetry,
+the linen continuity between Hariel and Soqed, the too-perfect symmetry,
 and the blank's stillness across shots 9, 11 and 14 before approving.
 
 Only written pauses are locked. Number Fourteen's **~175 seconds** and the lockup's

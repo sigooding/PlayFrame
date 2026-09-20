@@ -205,7 +205,7 @@ assert(angelOpen[0].notes.includes("Where would you keep a computer") && angelOp
 assert(angelOpen.every(f => f.characters.every(id => id === "rapture-angel-one" || id === "rapture-angel-two")), "Only the named pair is cast in the angel cold open");
 const harriel = project.characters.find(c => c.id === "rapture-angel-one");
 const soqed = project.characters.find(c => c.id === "rapture-angel-two");
-assert(harriel.name === "Harriel" && soqed.name === "Soqed", "The recovery angels are named by the new source");
+assert(harriel.name === "Hariel" && soqed.name === "Soqed", "The recovery angels are named by the new source");
 assert(harriel.relations.some(r => r.targetId === soqed.id) && soqed.relations.some(r => r.targetId === harriel.id), "The pair keeps its reciprocal link");
 assert(angelOpen[3].notes.includes("broken glass") && angelOpen[3].notes.includes("dog"), "The ignored high-street details stay in shot 4");
 assert(angelOpen[13].notes.includes("wrong direction") && angelOpen[13].notes.includes("Hold"), "Shot 14 holds on the wrong direction");
