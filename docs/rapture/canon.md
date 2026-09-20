@@ -19,6 +19,13 @@ comedy in every thread; this is not noir and not a tragedy.
   The old-lady sequence becomes **Scene 2** of the episode; its 32 shots are
   held by the outline until the numbered source is supplied. Ten AI studies
   are on disk; two shots hold placeholder cards.
+- **Episode-four scene 3 — the scout hut:**
+  [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
+  after the violence: twelve litres counted, four punctures nobody mentions,
+  window frame said twice, the gate arrangement stated aloud, and DANNY
+  written on the rota in someone else's handwriting. The hi-vis MAN and the
+  WOMAN who once did a course are unnamed group members, cast nowhere. Eight
+  AI studies are on disk; nine shots hold placeholder cards.
 - **The interview (episode three):** [numbered scene](scenes/ep4-cold-open.md),
   Graham's 17-shot Hell interview, re-homed to episode three so it sits with
   the angels' cold open and the cops' test: three scenes circling what a

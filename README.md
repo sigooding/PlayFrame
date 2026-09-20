@@ -28,7 +28,8 @@ workspace, not just a folder of images:
 - **Cold opens:** three numbered scenes — the episode-four Pat-alone open
   (12 dialogue-free surveillance shots, ten studies, two pending), the
   episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
-  to episode three). The old-lady sequence is Scene 2 of episode four; its
+  to episode three), and the scout-hut scene 3 (17 shots, eight studies,
+  nine pending). The old-lady sequence is Scene 2 of episode four; its
   32 shots are held by the outline, not yet boarded.
 - The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.

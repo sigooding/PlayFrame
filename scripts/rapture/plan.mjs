@@ -12,7 +12,9 @@ export const redLight = "Red practical sources only: the letterbox, red dashboar
 export const coldOpenGrammar = "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.";
 export const ep3ColdOpenSceneId = "rapture-ep3-cold-open";
 export const patColdOpenSceneId = "rapture-ep4-pat-cold-open";
+export const scoutHutSceneId = "rapture-ep4-scout-hut";
 export const patColdOpenGrammar = "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.";
+export const scoutHutGrammar = "Handheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.";
 export const angelGrammar = "The opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.";
 
 // First sentences carry the visual identity into the prompt studio. No invented names for unnamed roles.
@@ -76,6 +78,29 @@ export const shotPlan = [
   { title: "About the council", duration: 13, characters: ["danny", "jodie"], image: "11-council.jpg", note: "Inside the moving cab. Vehicle exterior lights off. No reflective ending or grief." },
   { title: "The light stays on", duration: 5, characters: [], image: "12-passing-door.jpg", note: "MS replaces the superseded WS. Only a passing van panel and a slice of door, never a street establishing shot. No exterior van lights." },
   { title: "The unfinished complaint", duration: 10, characters: ["woman-fourteen"], image: "13-complaint.jpg", note: "Final mid-complaint pose at the door, from the street. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade. Check door colour against shot 4 and keep red the only practical before approving." },
+];
+
+// Titles, working running times and setups for the seventeen numbered source shots of the
+// episode-four scout hut: the scene after the violence. All handheld; the hi-vis MAN and the
+// WOMAN who once did a course are unnamed group members, not cast entities, like the dog.
+export const scoutHutPlan = [
+  { title: "Four bottles", duration: 6, characters: ["danny", "jodie"], image: "01-doorway.jpg", shotType: "Medium", lens: "35mm", note: "The doorway. Danny and Jodie come in with four full bottles between them; Jodie is carrying three of them." },
+  { title: "Twelve litre", duration: 14, characters: ["danny", "jodie"], image: "02-clipboard.jpg", shotType: "Medium close-up", lens: "28mm", note: "The hi-vis MAN with the clipboard is on them immediately. Twelve litre, genuinely impressive. Danny promises more coming tomorrow before he has decided it." },
+  { title: "He said it first", duration: 6, characters: ["danny", "jodie"], image: "03-jodie-look.jpg", shotType: "Close-up", lens: "50mm", note: "On Jodie. She looks at her father. He said it before he'd decided it." },
+  { title: "Nobody asks where from", duration: 8, characters: ["danny", "jodie"], image: "04-table.jpg", shotType: "Medium", lens: "35mm", note: "People come to the table. The bottles go. Somebody says well done. Nobody asks where from." },
+  { title: "The sleeve is stuck", duration: 8, characters: ["danny"], image: "05-camp-bed.jpg", shotType: "Medium", lens: "28mm", note: "A corner of the hut. Danny sits on a camp bed and gets his coat off with difficulty. The sleeve is stuck to his arm." },
+  { title: "Four puncture wounds", duration: 4, characters: [], image: "06-bandage.jpg", shotType: "Insert", lens: "85mm", note: "Insert, red light: the bandage. Soaked through. Four puncture wounds in a neat row." },
+  { title: "Window frame", duration: 14, characters: ["danny", "jodie"], image: "07-window-frame.jpg", shotType: "Close-up", lens: "50mm", note: "On Jodie with the first aid kit, not squeamish, already working out that four holes in a row is going to need explaining. Window frame, twice, with no elaboration." },
+  { title: "An extravagant thing", duration: 6, characters: ["danny", "jodie"], image: "08-cleaning.jpg", shotType: "Medium", lens: "35mm", note: "She cleans it with bottled water, which is now an extravagant thing to do, and both of them know it." },
+  { title: "Who taught you that", duration: 10, characters: ["danny", "jodie"], image: "09-taught.jpg", shotType: "Close-up", lens: "50mm", note: "On Danny. He watches her do it properly, tightly, the way someone's shown her. You did. Did I? No." },
+  { title: "Once did a course", duration: 8, characters: ["danny", "jodie"], image: "10-the-woman.jpg", shotType: "Medium", lens: "28mm", note: "A WOMAN (40s) appears with a mug: the nearest thing this group has to a nurse, which is to say she once did a course." },
+  { title: "Tell someone", duration: 16, characters: ["danny", "jodie"], image: "11-antibiotics.jpg", shotType: "Close-up", lens: "50mm", note: "On the WOMAN. She looks at four punctures in a row, looks at Danny, and says nothing about it. Keep it clean; if it goes red up the arm, tell someone. And then what? Tell someone." },
+  { title: "The rota argument", duration: 10, characters: ["danny"], image: "12-hut-carries-on.jpg", shotType: "Medium", lens: "35mm", note: "Wider. She goes. Danny sits with his arm out. The hut carries on around him: the kettle, the rota, an argument about the rota." },
+  { title: "She leaves them by the gate", duration: 16, characters: ["danny", "jodie"], image: "13-by-the-gate.jpg", shotType: "Two-shot", lens: "50mm", note: "Very close two-shot, quiet. A long untimed pause; he doesn't have a lie ready. She leaves them by the gate." },
+  { title: "She likes me", duration: 12, characters: ["danny", "jodie"], image: "14-she-likes-me.jpg", shotType: "Close-up", lens: "50mm", note: "On Jodie. Eleven years old, working out that her father has entered into an arrangement with the thing that stabbed him, and that it's the right decision. She does though." },
+  { title: "Tea money", duration: 8, characters: ["danny"], image: "15-the-hut.jpg", shotType: "Medium", lens: "35mm", note: "He doesn't answer. He looks at the hut. Twenty-odd people drinking tea made from water he got by being stabbed." },
+  { title: "Not in his handwriting", duration: 5, characters: [], image: "16-rota.jpg", shotType: "Insert", lens: "85mm", note: "Insert: the rota on the wall. Someone has written DANNY in the WATER column for tomorrow. Not in his handwriting." },
+  { title: "Hold — cut", duration: 8, characters: ["danny", "jodie"], image: "17-hold.jpg", shotType: "Wide", lens: "28mm", note: "Red light, the hut, the one deliberate wide the grammar allows because it is handheld: him on the camp bed with his arm out, her packing the first aid kit away neatly. Hold. CUT." },
 ];
 
 // Titles, working running times and setups for the twelve numbered source shots of the
