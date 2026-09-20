@@ -184,9 +184,9 @@ frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy
 for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
 interiors (2 and 34) and at the bus in 32, Nina is at the wheel on the far side (right-hand
 drive), the front passenger seat is empty, and Alan and the dog sit on the bench behind it on the
-passenger side, facing forward. Check Nina's face and coat, Alan's bag, the passenger-side seating,
-the bus's battered rear doors and its nose-on orientation across 3, 4, 5, 11, 12 and 32, the four
-places at the table in shot 21, and the poster spelling in shot 24 against the fragment in shot 7
+passenger side, facing forward. Check Nina's face and coat, Alan's bag, the passenger-side
+seating, the bus's battered rear doors and its nose-on orientation across 3, 4, 5, 11, 12 and 32,
+the four places at the table in shot 21, and the poster spelling in shot 24 against the fragment in shot 7
 before approving any of them.
 
 ## Boundaries not silently resolved
