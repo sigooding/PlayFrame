@@ -2,9 +2,11 @@
 // Run npm run build:rapture to rebuild the portable project; --check detects source drift.
 export const projectId = "74a9cb34-9e80-4a04-a614-000000000014";
 export const sceneId = "rapture-ep4-number-fourteen";
+export const lockupSceneId = "rapture-ep2-alan";
 export const createdAt = "2026-09-20T00:00:00.000Z";
 export const characterId = name => `rapture-${name}`;
 export const grammar = "Handheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.";
+export const lockupGrammar = "Locked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.";
 export const redLight = "Red practical sources only: the letterbox, red dashboard indicators and the kettle's red indicator. Deep darkness outside those small pools. No white, blue, teal, sodium or daylight fill; red is a physical source, never an overall colour grade. Jodie's collar headlamp stays off.";
 
 // First sentences carry the visual identity into the prompt studio. No invented names for unnamed roles.
@@ -69,6 +71,41 @@ export const shotPlan = [
   { title: "The unfinished complaint", duration: 10, characters: ["woman-fourteen"], image: "13-complaint.jpg", note: "Final mid-complaint pose at the door, from the street. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade. Check door colour against shot 4 and keep red the only practical before approving." },
 ];
 
+// Titles, working running times and on-camera cast for the first wrong lockup's
+// numbered source shots. Durations are editorial estimates. The dog appears in
+// several shots but is not a cast entity; shot 29's source ends mid-line.
+export const lockupPlan = [
+  { title: "The minibus on the empty road", duration: 12, characters: [], note: "Long lens, heat shimmer. The bus takes a long time to reach mid-frame; Nina is inside but not seen." },
+  { title: "Don't look at me", duration: 6, characters: ["nina"], note: "From the passenger side. The dog sits upright like a passenger." },
+  { title: "The church queue", duration: 10, characters: [], note: "Forty deep, trestle table, bad clipboard organisation, two men arguing. The bus doesn't slow." },
+  { title: "The roadblock", duration: 10, characters: [], note: "Three wheelie bins, a garden bench, one boy with a cricket bat. Around it on the verge." },
+  { title: "Unbothered", duration: 5, characters: ["nina"], note: "The dog watches the boy go past." },
+  { title: "We are the chosen ones", duration: 6, characters: [], note: "Footbridge sheets: WE ARE THE CHOSEN ONES over ROOMS AVAILABLE." },
+  { title: "The pendant", duration: 12, characters: ["nina"], note: "Pulls over, kills the engine, holds the pendant like it owes her money." },
+  { title: "Braced", duration: 5, characters: ["nina"], note: "Not reverent — a dreaded phone call." },
+  { title: "Flash: the orange shutter", duration: 2, characters: [], lighting: "High key", note: "Vision footage: broken, wrong aspect, dropped frames, blown out, a hiss." },
+  { title: "Flash: strip lights", duration: 2, characters: [], lighting: "High key", note: "One flickering." },
+  { title: "Flash: the bay number", duration: 2, characters: [], lighting: "High key", note: "Two digits, held a beat too briefly to be certain." },
+  { title: "Flash: carpet and radiator", duration: 2, characters: [], lighting: "High key", angle: "Low angle", note: "Six inches off the floor. Wrong decade." },
+  { title: "Forty-one, or forty-seven?", duration: 7, characters: ["nina"], note: "Eyes open, breathing hard, profoundly unimpressed." },
+  { title: "Right.", duration: 12, characters: ["nina"], note: "Untimed pause, repeated line, engine start." },
+  { title: "The industrial estate", duration: 8, characters: [], note: "Low unit behind chain link. Not Martin's unit; similar enough. Barrier down, weeds." },
+  { title: "The bolt cutters", duration: 12, characters: ["nina"], note: "The gate chain dealt with in about nine seconds." },
+  { title: "The orange corridor", duration: 12, characters: ["nina"], note: "Orange roller doors to a vanishing point, one strip light flickering. She walks away down the middle. Same composition as Martin's corridor; wrong building." },
+  { title: "Forty-one", duration: 12, characters: ["nina"], note: "Three padlock attempts." },
+  { title: "Four hundred garden chairs", duration: 6, characters: [], note: "Low: the shutter goes up on roughly four hundred plastic garden chairs." },
+  { title: "Nina looks at the chairs", duration: 5, characters: ["nina"], note: "Held on her taking it in." },
+  { title: "Forty-seven", duration: 10, characters: ["nina"], note: "Walks to 47. Cuts that padlock too." },
+  { title: "Empty", duration: 6, characters: [], note: "Low: concrete floor and a dead wasp." },
+  { title: "One of the other forty?", duration: 7, characters: ["nina"], note: "Upward, conversational." },
+  { title: "The long corridor", duration: 10, characters: ["nina"], note: "Same framing as 17. Her small at the far end. Hold." },
+  { title: "Back at the bus", duration: 8, characters: ["nina"], note: "Loads the bolt cutters. Stops." },
+  { title: "Here since Tuesday", duration: 30, characters: ["nina", "alan"], note: "The man by the bus, perfectly still, bag in hand. The full exchange, with an untimed pause." },
+  { title: "Bag for life", duration: 12, characters: ["nina", "alan"], note: "On Nina. Twenty years of front-door assessments." },
+  { title: "The passenger door", duration: 10, characters: ["nina", "alan"], note: "She properly considers leaving him. Then opens the door." },
+  { title: "Name? (source truncated)", duration: 8, characters: ["nina", "alan"], note: "TRUNCATED — the source ends mid-line at MAN: Al. Interior; he sits upright like the dog. Shot count and dialogue will grow when the remainder arrives." },
+];
+
 // Planning outlines, not invented finished scripts. Locations/times are provisional except for explicit bible grammar.
 export const outlinePlan = [
   [1, "mugging", "The mugging", "EXT. ALLEY", "NIGHT", [], "The mugging. The knife starts its journey through the old woman's handbag and the support group.", "Cold open"],
@@ -82,7 +119,6 @@ export const outlinePlan = [
   [2, "raid", "The first raid", "INT. HOUSE", "NIGHT", ["danny", "jodie"], "Danny and Jodie's first raid for water. Handheld, tight and dark, red practical sources only. Never a whole room."],
   [2, "night-drive", "Night drive (Wave 3)", "EXT./INT. VAN / ROAD", "NIGHT", ["danny", "jodie"], "An earlier night-drive board for the Crane thread. Its horror framing and non-red night lighting are superseded, and its episode-two placement is provisional."],
   [2, "intake", "The intake floor", "INT. HELL INTAKE", "CONTINUOUS", ["vassago", "reek", "tamsin"], "Hell's intake collapse goes unnoticed behind balloon concerns. Fixed high-corner surveillance, 4:3, slight fisheye, faint timecode. Never close."],
-  [2, "alan", "The first wrong lockup", "EXT. LOCKUP", "DAY", ["nina", "alan"], "Nina's first wrong lockup; she acquires Alan. Nina's locked-off daylight grammar."],
   [3, "arrivals", "Both sides come down", "EXT. EARTH — LOCATION TBC", "DAY", ["angel-one", "angel-two", "pat", "field-officer"], "Demons and angels arrive, badly. Keep faction coverage separate; no invented shared scene. Demons retain fixed surveillance grammar on earth."],
   [3, "test", "A worthless screening method", "INT. POLICE CAR", "DAY", ["kath", "ray"], "Blanks established. The cops invent a test around I can only apologise and never doubt it. Half of real humanity says it too."],
   [3, "group", "Recruited / brown water", "INT. UNDERGROUND MEETING PLACE", "NIGHT", ["danny", "jodie"], "Danny and Jodie recruited by the underground group. Brown water. Tight red practical handheld coverage; no full-room tableau."],

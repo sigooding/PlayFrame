@@ -12,6 +12,10 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
+- **The first wrong lockup:** [numbered scene](scenes/ep2-first-wrong-lockup.md),
+  29 shots in episode two. Nina drives out on a pendant bearing, opens two wrong
+  lockups, and acquires Alan. Keyframes are pending; shot 29's source ends
+  mid-line.
 - **Original scene:** [v1 archive](scenes/archive/ep4-number-fourteen-v1.md).
   The current version tightens shot 1 to a CU/50mm of the headlight switch and
   shot 12 to a MS/35mm of the passing van panel. Dialogue, beats and every explicit
@@ -64,8 +68,9 @@ from disk and hold placeholder cards: `ep2s2-15`, `ep2s3-15`, `ep2s3-16`.
 
 Unpictured cast roles use the app's initials avatar.
 
-Only written pauses are locked. Number Fourteen's **~175 seconds** is an editorial
-playback estimate for that scene, **not** a finished episode runtime. Other scenes
+Only written pauses are locked. Number Fourteen's **~175 seconds** and the lockup's
+**~249 seconds** are editorial playback estimates for those scenes, **not** finished
+episode runtimes. Other scenes
 are explicitly labelled outlines. There are not eight finished 45-minute scripts.
 
 ## Boundaries not silently resolved

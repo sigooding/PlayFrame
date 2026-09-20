@@ -28,7 +28,7 @@ try {
   const opened = await api.post("/api/projects/rapture");
   assert.equal(opened.status(), 200);
   await go(project.id, "storyboard");
-  await expect(page.locator(".frame-card")).toHaveCount(210);
+  await expect(page.locator(".frame-card")).toHaveCount(239);
   await expect(page.locator(".frame-card h3").first()).toHaveText("Cold open — board 01");
   await expect(page.locator(".frame-card h3").last()).toHaveText("The unfinished complaint");
   await page.getByLabel("Filter by scene").selectOption("rapture-ep4-number-fourteen");
@@ -57,8 +57,8 @@ try {
   copyId = (await response.json()).id;
   assert.notEqual(copyId, project.id);
   await go(copyId, "storyboard");
-  await page.getByRole("button", { name: "Edit frame 204: Brown, then clear", exact: true }).click();
-  const modal = page.getByRole("dialog", { name: "Frame 204", exact: true });
+  await page.getByRole("button", { name: "Edit frame 233: Brown, then clear", exact: true }).click();
+  const modal = page.getByRole("dialog", { name: "Frame 233", exact: true });
   await expect(modal.getByLabel("Working duration estimate (not locked)")).toBeChecked();
   await modal.getByLabel("Working duration estimate (not locked)").uncheck();
   await modal.getByLabel("Duration (seconds)").fill("12");
@@ -73,7 +73,7 @@ try {
   await modal.getByRole("button", { name: "Save changes", exact: true }).click();
   await expect(modal).toBeHidden();
   await page.reload();
-  await page.getByRole("button", { name: "Edit frame 204: Brown, then clear", exact: true }).click();
+  await page.getByRole("button", { name: "Edit frame 233: Brown, then clear", exact: true }).click();
   await expect(modal.getByLabel("Duration (seconds)")).toHaveValue("12");
   await expect(modal.getByLabel("Working duration estimate (not locked)")).not.toBeChecked();
   await modal.getByRole("button", { name: "Shot design", exact: true }).click();
@@ -86,7 +86,7 @@ try {
 
   await tabs().getByRole("button", { name: /^Screenplay/ }).click();
   await expect(page.getByLabel("Screenplay editor")).toHaveValue(project.script);
-  await expect(page.locator(".scene-nav-item.selected strong")).toHaveText("Number Fourteen");
+  await expect(page.locator(".scene-nav-item.selected strong")).toHaveText("The first wrong lockup");
   await page.getByRole("button", { name: "Edit scene Number Fourteen", exact: true }).click();
   await page.getByRole("dialog").getByLabel("Lighting direction").fill("Red letterbox practical only. No white or blue fill.");
   await page.getByRole("button", { name: "Save scene", exact: true }).click();
@@ -96,15 +96,15 @@ try {
   await expect(page.getByRole("dialog").getByLabel("Lighting direction")).toHaveValue("Red letterbox practical only. No white or blue fill.");
   await page.getByRole("button", { name: "Close dialog" }).click();
   const saved = await (await api.get(`/api/projects/${copyId}`)).json();
-  assert.equal(saved.frames[203].lightingNotes, "Red kettle indicator only. No white fill.");
-  assert.equal(saved.frames[203].durationIsEstimate, false);
+  assert.equal(saved.frames[232].lightingNotes, "Red kettle indicator only. No white fill.");
+  assert.equal(saved.frames[232].durationIsEstimate, false);
   assert.equal(saved.script, project.script);
   console.log("PASS real frame and scene form saves, reload, lighting inheritance/override, empty cast and unchanged script");
 
   await page.getByRole("navigation", { name: "Workspace navigation" }).getByRole("button", { name: /Templates/ }).click();
   await page.getByRole("button", { name: "Open series workspace", exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`project=${project.id}`));
-  await expect(page.locator(".frame-card")).toHaveCount(210);
+  await expect(page.locator(".frame-card")).toHaveCount(239);
   const restored = await (await api.get(`/api/projects/${project.id}`)).json();
   assert.equal(restored.script, (await opened.json()).script, "Template action must preserve the existing series");
   console.log("PASS template opens the saved series without duplicates or replacing its screenplay");
@@ -112,7 +112,7 @@ try {
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   mobile.on("pageerror", error => errors.push(error.message));
   await mobile.goto(`${baseURL}/?project=${project.id}&tab=storyboard`);
-  await expect(mobile.locator(".frame-card")).toHaveCount(210);
+  await expect(mobile.locator(".frame-card")).toHaveCount(239);
   await assertNoOverflow(mobile);
   await mobile.getByRole("button", { name: "Open navigation", exact: true }).click();
   await expect(mobile.getByRole("navigation", { name: "Workspace navigation" })).toBeVisible();
