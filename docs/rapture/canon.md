@@ -70,12 +70,12 @@ scene in story order and numbered inside each board. Their shot type, movement,
 lens and 5s durations are working placeholders. Three keyframes are missing
 from disk and hold placeholder cards: `ep2s2-15`, `ep2s3-15`, `ep2s3-16`.
 
-Ten **cold-open AI studies** in `public/images/rapture/ep4-cold-open/` board the
-first ten shots of the episode-four cold open; the remaining seven shots hold
-"keyframe missing" placeholder cards so the board numbering stays contiguous
-until their studies are generated. All seventeen carry the fixed-surveillance
-grammar: 4:3, high-corner fixed angles, slight fisheye, faint burnt-in timecode
-that runs on across the cuts. Check the timecode digits against the source
+Seventeen **cold-open AI studies** in `public/images/rapture/ep4-cold-open/`
+board the episode-four cold open, one keyframe per shot. All carry the
+fixed-surveillance grammar: 4:3, high-corner fixed angles, slight fisheye,
+faint burnt-in timecode that runs on across the cuts. The three held shots
+(15–16) deliberately reuse the same frame with only the timecode advanced —
+and, in 15, Graham mid-word. Check the timecode digits against the source
 values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.

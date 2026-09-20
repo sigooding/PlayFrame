@@ -5605,9 +5605,9 @@
     {
       "id": "rapture-ep4co-10",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "Come unstuck (keyframe missing)",
+      "title": "Come unstuck",
       "description": "Nobody has moved. Graham is still talking. The mugs have gone cold.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/10-wide-still.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -5616,7 +5616,7 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [
@@ -5624,14 +5624,14 @@
         "rapture-tamsin",
         "rapture-graham"
       ],
-      "notes": "KEYFRAME MISSING — 10-wide-still.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 10 of 17. Add the study and rebuild.\n\nThe widest fixed angle. Nobody has moved, the mugs have gone cold, and the clause most firms come unstuck lands into total stillness. Shot 15 repeats it exactly.\n\nBurnt-in timecode: 15:31:52.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. FIXED CAM — a wide fixed angle, timecode 15:31:52\nNobody has moved. Graham is still talking. The mugs have gone cold.\n   GRAHAM: — which is where most firms come unstuck."
+      "notes": "The widest fixed angle. Nobody has moved, the mugs have gone cold, and the clause most firms come unstuck lands into total stillness. Shot 15 repeats it exactly.\n\nBurnt-in timecode: 15:31:52.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. FIXED CAM — a wide fixed angle, timecode 15:31:52\nNobody has moved. Graham is still talking. The mugs have gone cold.\n   GRAHAM: — which is where most firms come unstuck."
     },
     {
       "id": "rapture-ep4co-11",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "Have you ever made a decision (keyframe missing)",
+      "title": "Have you ever made a decision",
       "description": "Reek gets up and walks out of frame. A door goes. Tamsin remains, alone with Graham.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/11-exit.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "24mm",
@@ -5640,7 +5640,7 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [
@@ -5648,7 +5648,7 @@
         "rapture-tamsin",
         "rapture-graham"
       ],
-      "notes": "KEYFRAME MISSING — 11-exit.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 11 of 17. Add the study and rebuild.\n\nReek gets up and walks out of frame; a door goes. Tamsin remains, alone with Graham, and gets I can only apologise with no pause at all.\n\nBurnt-in timecode: 16:14:08.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. FIXED CAM — high corner, timecode 16:14:08\nReek gets up and walks out of frame. A door goes. Tamsin remains, alone with Graham.\n   TAMSIN: (carefully) Graham. Have you ever made a decision?\n   GRAHAM: (no pause at all) I can only apologise."
+      "notes": "Reek gets up and walks out of frame; a door goes. Tamsin remains, alone with Graham, and gets I can only apologise with no pause at all.\n\nBurnt-in timecode: 16:14:08.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. FIXED CAM — high corner, timecode 16:14:08\nReek gets up and walks out of frame. A door goes. Tamsin remains, alone with Graham.\n   TAMSIN: (carefully) Graham. Have you ever made a decision?\n   GRAHAM: (no pause at all) I can only apologise."
     },
     {
       "id": "rapture-ep4co-12",
@@ -5675,9 +5675,9 @@
     {
       "id": "rapture-ep4co-13",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "He's not given us Wales (keyframe missing)",
+      "title": "He's not given us Wales",
       "description": "Reek back in the doorway, coat on.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/13-doorway-coat.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "24mm",
@@ -5686,21 +5686,21 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [
         "rapture-reek",
         "rapture-tamsin"
       ],
-      "notes": "KEYFRAME MISSING — 13-doorway-coat.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 13 of 17. Add the study and rebuild.\n\nFixed angle on the doorway: Reek back in the doorway, coat on. The only lead is defended.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. FIXED CAM — the doorway\nReek back in the doorway, coat on.\n   REEK: Nothing in there.\n   TAMSIN: He's given us Wales.\n   REEK: He's not given us Wales.\n   TAMSIN: (defensive) It's the only lead we've got."
+      "notes": "Fixed angle on the doorway: Reek back in the doorway, coat on. The only lead is defended.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. FIXED CAM — the doorway\nReek back in the doorway, coat on.\n   REEK: Nothing in there.\n   TAMSIN: He's given us Wales.\n   REEK: He's not given us Wales.\n   TAMSIN: (defensive) It's the only lead we've got."
     },
     {
       "id": "rapture-ep4co-14",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "Graham alone (keyframe missing)",
+      "title": "Graham alone",
       "description": "They leave. The front door goes. Graham, alone in his armchair, hands back on his knees.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/14-alone.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -5709,20 +5709,20 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [
         "rapture-graham"
       ],
-      "notes": "KEYFRAME MISSING — 14-alone.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 14 of 17. Add the study and rebuild.\n\nThey leave; the front door goes. Graham, alone in his armchair, hands back on his knees. He does not get up, look round, or change the direction he was facing.\n\nBurnt-in timecode: 16:14:08.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. FIXED CAM — high corner, wide\nThey leave. The front door goes. Graham, alone in his armchair, hands back on his knees.\n\nHe does not get up. He does not look round. He continues facing exactly where he was facing."
+      "notes": "They leave; the front door goes. Graham, alone in his armchair, hands back on his knees. He does not get up, look round, or change the direction he was facing.\n\nBurnt-in timecode: 16:14:08.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. FIXED CAM — high corner, wide\nThey leave. The front door goes. Graham, alone in his armchair, hands back on his knees.\n\nHe does not get up. He does not look round. He continues facing exactly where he was facing."
     },
     {
       "id": "rapture-ep4co-15",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "The glitch (keyframe missing)",
+      "title": "The glitch",
       "description": "Hold. Twelve seconds of a man sitting in a chair.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/15-glitch.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -5731,20 +5731,20 @@
       "style": "cinematic",
       "duration": 15,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [
         "rapture-graham"
       ],
-      "notes": "KEYFRAME MISSING — 15-glitch.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 15 of 17. Add the study and rebuild.\n\nHold. The twelve-second hold is locked, then — no sound, no cut — Graham says the next clause of his shot-10 sentence in exactly the same intonation. The first glitch the audience sees, played completely flat: no music sting, no camera move.\n\nBurnt-in timecode: 16:15:47, still running.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (12s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. FIXED CAM — held. Timecode running.\nHold. Twelve seconds of a man sitting in a chair.\n\nThen — no sound, no cut — he says the next clause of his sentence from shot 10, in exactly the same intonation.\n   GRAHAM: — which is where most firms come unstuck."
+      "notes": "Hold. The twelve-second hold is locked, then — no sound, no cut — Graham says the next clause of his shot-10 sentence in exactly the same intonation. The first glitch the audience sees, played completely flat: no music sting, no camera move.\n\nBurnt-in timecode: 16:15:47, still running.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (12s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. FIXED CAM — held. Timecode running.\nHold. Twelve seconds of a man sitting in a chair.\n\nThen — no sound, no cut — he says the next clause of his sentence from shot 10, in exactly the same intonation.\n   GRAHAM: — which is where most firms come unstuck."
     },
     {
       "id": "rapture-ep4co-16",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "Held (keyframe missing)",
+      "title": "Held",
       "description": "Nothing. Timecode ticking.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/16-held.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -5753,20 +5753,20 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [
         "rapture-graham"
       ],
-      "notes": "KEYFRAME MISSING — 16-held.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 16 of 17. Add the study and rebuild.\n\nNothing. The same held fixed angle; the timecode ticking is the only event.\n\nBurnt-in timecode: 16:21:05, still running.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. FIXED CAM — held\nNothing. Timecode ticking."
+      "notes": "Nothing. The same held fixed angle; the timecode ticking is the only event.\n\nBurnt-in timecode: 16:21:05, still running.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. FIXED CAM — held\nNothing. Timecode ticking."
     },
     {
       "id": "rapture-ep4co-17",
       "sceneId": "rapture-ep4-cold-open",
-      "title": "Black — title card (keyframe missing)",
+      "title": "Black — title card",
       "description": "BLACK. TITLE CARD.",
-      "image": "",
+      "image": "/images/rapture/ep4-cold-open/17-black.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "24mm",
@@ -5775,11 +5775,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 17-black.jpg is not in public/images/rapture/ep4-cold-open, so this card holds slot 17 of 17. Add the study and rebuild.\n\nBlack. Title card. Only the burnt-in timecode confirms the tape never stopped.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. BLACK. TITLE CARD."
+      "notes": "Black. Title card. Only the burnt-in timecode confirms the tape never stopped.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. BLACK. TITLE CARD."
     },
     {
       "id": "rapture-ep4-shot-01",
@@ -6531,7 +6531,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate), and the episode-four cold open is the second numbered scene (17 fixed surveillance shots, 172-second estimate), with 10 AI studies on disk and 7 placeholder cards holding their slots (Come unstuck, Have you ever made a decision, He's not given us Wales, Graham alone, The glitch, Held, Black — title card). The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md and docs/rapture/scenes/ep4-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate), and the episode-four cold open is the second numbered scene (17 fixed surveillance shots, 172-second estimate), boarded with AI-generated studies pending production review. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md and docs/rapture/scenes/ep4-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",

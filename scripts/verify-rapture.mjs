@@ -150,9 +150,9 @@ assert(!coldOpen.some(f => f.characters.includes("rapture-pat") || f.characters.
 // placeholder cards only where a study has not been generated yet.
 const coStudies = coldOpen.filter(f => f.image);
 const coMissing = coldOpen.filter(f => !f.image);
-assert.equal(coStudies.length, 10, "Ten cold-open AI studies are on disk so far");
-assert.equal(coMissing.length, 7, "Seven cold-open shots hold placeholder cards until their studies are generated");
-assert(coMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Cold-open placeholder cards hold their numbered slots honestly");
+assert.equal(coStudies.length, 17, "All seventeen cold-open shots carry their AI study");
+assert.equal(coMissing.length, 0, "No cold-open placeholder cards remain");
+assert(coStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)")), "Cold-open studies are draft keyframes without placeholder titles");
 assert(coStudies.every(f => f.status === "Draft" && f.image.startsWith("/images/rapture/ep4-cold-open/")), "Generated cold-open studies are draft keyframes in the right folder");
 assert(coldOpen.every((f, i) => f.id === "rapture-ep4co-" + String(i + 1).padStart(2, "0")), "Cold-open numbering must be contiguous");
 assert(coldOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "Cold-open cameras never move and all timings are estimates");
@@ -164,7 +164,7 @@ assert(coldOpen[5].notes.includes("Wales") && coldOpen[6].notes.includes("WALES"
 assert(coldOpen[10].notes.includes("I can only apologise"));
 assert(project.characters.some(c => c.id === "rapture-graham"), "Graham is cast");
 assert(project.scenes.find(s2 => s2.id === "rapture-ep4-cold-open").characters.includes("rapture-graham"));
-pass("cold open numbered 1-17 in order, timecode verbatim, seven placeholder slots awaiting studies");
+pass("cold open numbered 1-17 in order, timecode verbatim, one AI study per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
@@ -252,7 +252,7 @@ pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction
 const paths = [...new Set([project.coverImage, ...project.characters.map(c => c.image).filter(Boolean), ...project.frames.map(f => f.image).filter(Boolean), ...project.moodboards.flatMap(b => b.items.map(i => i.image))])];
 for (const image of paths) assert(existsSync(join(root, "public", image)), `Image not on disk: ${image}`);
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 10, "Ten cold-open studies on disk so far");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
