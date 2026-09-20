@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, lockupGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, lockupGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, dannyJodiePlan, copsBeatPlan, kitchenPlan, kitchenSceneId, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyPlan, therapySceneId, therapyGrammar, therapyRed, dannyJodieSceneId, copsBeatSceneId, dannyJodieGrammar, copsBeatGrammar, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -14,6 +14,12 @@ const patColdOpenScreenplay = read("docs/rapture/scenes/ep4-pat-cold-open.md");
 const patHouseScreenplay = read("docs/rapture/scenes/ep4-pat-house.md");
 const scoutHutScreenplay = read("docs/rapture/scenes/ep4-scout-hut.md");
 const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
+const estateScreenplay = read("docs/rapture/scenes/ep4-housing-estate.md");
+const doorstepScreenplay = read("docs/rapture/scenes/ep4-doorstep.md");
+const dannyJodieScreenplay = read("docs/rapture/scenes/ep2-danny-jodie.md");
+const copsBeatScreenplay = read("docs/rapture/scenes/ep1-cops-second-beat.md");
+const kitchenScreenplay = read("docs/rapture/scenes/ep4-kitchen.md");
+const therapyScreenplay = read("docs/rapture/scenes/ep5-therapy-class.md");
 const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
 const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
 const episodes = sections.find(section => section.title === "EPISODES");
@@ -236,6 +242,304 @@ assert(scoutHut.every(f => f.characters.every(id => id === characterId("danny") 
 assert(scoutHut[1].notes.includes("MAN: How much?") && scoutHut[9].notes.includes("WOMAN: Let's have a look.") && scoutHut[10].notes.includes("WOMAN: That wants antibiotics."), "The unnamed group members' dialogue survives verbatim");
 assert(scoutHut[12].notes.includes("She leaves them by the gate") && scoutHut[6].notes.includes("Window frame."), "The gate arrangement and the whole of Danny's lie stay intact");
 
+// Episode four scene 4: the housing estate at dusk. Nina's grammar is unchanged and the hour is
+// wrong for the first time: the pendant gives her a bedroom and no address, so she works thirty
+// identical houses in order. Shot 2's six-second hold is the only written pause in the scene;
+// shots 6–10 are the vision and the only handheld frames. Shots 8–10 carry no lens in the source.
+const estateBlocks = [...estateScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(estateBlocks.length, 36, "The estate source must have thirty-six numbered shots");
+assert.equal(estatePlan.length, 36, "The estate plan must cover all thirty-six shots");
+const estate = estateBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Estate shot order must be contiguous");
+  const plan = estatePlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const handheld = header.startsWith("FLASH"); // the source marks the vision block handheld once, in its section line; FLASH is the per-shot flag
+  assert(handheld === (i >= 5 && i <= 9), "Only the five vision flashes break the locked-off grammar");
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Estate duration must cover action and dialogue, not only the hold");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const file = `/images/rapture/ep4-estate/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  const assumedLens = /\d+mm/.test(header) ? "" : `\n\nLens: not specified in the source; ${plan.lens} is a working choice for the study, not a script direction.`;
+  return {
+    id: `rapture-ep4est-${String(n).padStart(2, "0")}`, sceneId: estateSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: handheld ? "Handheld" : "Static", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-estate, so this card holds slot ${n} of ${estatePlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}${assumedLens}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${estateGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none in this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(estate.reduce((n, f) => n + f.duration, 0), 308, "Update the timing note when estate editorial estimates change");
+assert(estate.every((f, i) => (f.movement === "Handheld") === (i >= 5 && i <= 9)), "Nina's cameras never move; only the vision does");
+assert(estate.every(f => f.shotType !== "Establishing"), "Her grammar composes the frame itself: no establishing card");
+assert(estate.every(f => f.characters.every(id => id === characterId("nina") || id === characterId("alan"))), "Only Nina and Alan are cast on the estate; the dog is not a cast entity");
+assert(estate.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-estate/")), "Estate keyframes live under /images/rapture/ep4-estate/");
+assert(estate[1].notes.includes("NINA: A bedroom.") && estate[33].notes.includes("ALAN: (warmly) Well. As long as it took."), "The bus dialogue survives verbatim into the notes");
+assert(estate[11].notes.includes("Which one.") && estate[26].notes.includes("Is it this one?"), "Her two questions to the estate stay in the notes");
+assert(estate[6].notes.includes("PTOR") && estate[23].notes.includes("THE RAPTORS"), "The fragment and the poster are both in the notes and neither completes the other");
+assert(!estate.some(f => f.characters.includes(characterId("max"))), "The boy in the fourth house is never cast as Max");
+assert(estate[1].notes.includes("(6s)"), "The six-second hold in shot 2 stays locked in the timing note");
+// Episode four scene 5: the doorstep. Two grammars in one building — her flat symmetrical daylight
+// on the street and at the door, his off-centre fluorescent indoors — never blended inside a shot.
+// Nothing moves in either one, the machine is planted without being noticed, and the snapped-off
+// badge gap is never mentioned by anybody.
+const doorstepBlocks = [...doorstepScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(doorstepBlocks.length, 32, "The doorstep source must have thirty-two numbered shots");
+assert.equal(doorstepPlan.length, 32, "The doorstep plan must cover all thirty-two shots");
+const doorstepIsHers = i => i < 8 || i === 31; // the street and the door are hers, the house is his, and the road takes her back
+const doorstep = doorstepBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Doorstep shot order must be contiguous");
+  const plan = doorstepPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Doorstep duration must cover action and dialogue, not only pauses");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const grammarFor = doorstepIsHers(i) ? doorstepHerGrammar : doorstepHisGrammar;
+  const file = `/images/rapture/ep4-doorstep/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep4door-${String(n).padStart(2, "0")}`, sceneId: doorstepSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    // The frame inherits ONE grammar, its own, so a prompt built from this card cannot receive the wrong one.
+    lightingNotes: grammarFor,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: doorstepIsHers(i) ? "Plain, level, daylight; a site inspection with a stranger in the way" : "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-doorstep, so this card holds slot ${n} of ${doorstepPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${grammarFor}\n\n${doorstepGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(px => `${px}s`).join(" + ")})` : " (none in this shot; every other pause in the scene is a working pause)"}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(doorstep.reduce((sum, f) => sum + f.duration, 0), 377, "Update the timing note when doorstep editorial estimates change");
+assert(doorstep.every(f => f.movement === "Static"), "Neither grammar moves: the only violence here is the cut between them");
+assert(doorstep.every((f, i) => (f.lighting === "Natural daylight") === doorstepIsHers(i) || i === 21), "The street is daylight, the house is flat fluorescent, and the pendant is the one frame lit from inside the shot");
+assert(doorstep.every(f => f.characters.every(id => [characterId("nina"), characterId("martin"), characterId("alan")].includes(id))), "The doorstep is cast with Nina, Martin and Alan in the bus only");
+assert.deepEqual(doorstep.map((f, i) => f.characters.includes(characterId("alan")) ? i : -1).filter(i => i >= 0), [5, 31], "Alan is seen only through the bus glass: the doorstep and the last frame on the road");
+assert(doorstep.every(f => f.shotType !== "Establishing"), "Both grammars compose the frame themselves: no establishing card");
+assert(doorstep.every((f, i) => (f.lightingNotes === doorstepHerGrammar) === doorstepIsHers(i)), "Every doorstep frame inherits exactly one grammar, never both and never neither");
+assert(doorstep[8].notes.includes("a hair wrong in the composition") && !doorstep[7].notes.includes("a hair wrong in the composition"), "His grammar starts at shot 9 and her street never takes it on");
+assert(doorstep[17].notes.includes("unbranded") && doorstep[18].notes.includes("printer"), "The machine is planted in an ordinary insert and she does not clock it");
+assert(doorstep[21].notes.includes("no lens flare") && doorstep[21].notes.includes("forty-five years"), "The pendant light is mechanical, not miraculous");
+assert.equal(doorstep.filter(f => /snapped off/i.test(f.description)).length, 1, "The snapped-off badge gap appears in the insert and is mentioned by nobody, ever");
+assert(doorstep[13].notes.includes("THE RAPTORS") && doorstep[13].notes.includes("Correctly spelled"), "The poster is in the shot source and spelled correctly, unlike the vision fragment");
+assert(doorstep.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-doorstep/")), "Doorstep keyframes live under /images/rapture/ep4-doorstep/");
+assert(new Set(doorstep.filter(f => f.image).map(f => f.image)).size === doorstep.filter(f => f.image).length, "One dedicated keyframe per doorstep shot");
+
+// Episode two, three weeks in: Danny and Jodie's first appearance. A back-door burglary in a house
+// that looks empty and is not, in twenty-one handheld frames that never once allow a clean wide. The
+// scene is allowed to establish exactly two things — they do this now, and the eleven-year-old is
+// better at it — and it is not allowed to say the second part out loud. Her competence is played as
+// maintenance (the handle, the cistern, the water she does not drop), his panic is played as fact.
+const dannyJodieBlocks = [...dannyJodieScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(dannyJodieBlocks.length, 21, "The Danny and Jodie source must have twenty-one numbered shots");
+assert.equal(dannyJodiePlan.length, 21, "The Danny and Jodie plan must cover all twenty-one shots");
+const dannyJodieDusk = i => [0, 1, 4, 18, 19, 20].includes(i); // the fence, the door, and the alley afterwards
+const dannyJodie = dannyJodieBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Danny and Jodie shot order must be contiguous");
+  const plan = dannyJodiePlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Danny and Jodie durations must cover action and dialogue, not only written pauses");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const file = `/images/rapture/ep2-danny-jodie/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep2dj-${String(n).padStart(2, "0")}`, sceneId: dannyJodieSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Handheld", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    lightingNotes: dannyJodieGrammar,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Cornered, red-lit and too close together; a burglary shot like bad documentary",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep2-danny-jodie, so this card holds slot ${n} of ${dannyJodiePlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource && plan.lensSource !== plan.lens ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${dannyJodieGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(px => `${px}s`).join(" + ")})` : " (none in this shot)"}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(dannyJodie.reduce((sum, f) => sum + f.duration, 0), 260, "Update the timing note when the Danny and Jodie editorial estimates change");
+assert(dannyJodie.every(f => f.movement === "Handheld"), "Their grammar is handheld in every frame, including both wides");
+assert(dannyJodie.every((f, i) => (f.lighting === "Blue hour") === dannyJodieDusk(i)), "Dusk at the fence, the door and the alley; red-lit dark inside, and nothing in between");
+assert.deepEqual(dannyJodie.map((f, i) => f.shotType === "Wide" ? i : -1).filter(i => i >= 0), [16, 20], "Two wides in twenty-one shots, both handheld, neither an establishing frame");
+assert(dannyJodie[3].shotType === "Medium", "How she opens the door is never shown: no insert of her hands, no technique, no skill montage");
+assert([dannyJodie[2], dannyJodie[6], dannyJodie[12]].every(f => f.shotType === "Insert"), "The three inserts are the slipped screwdriver, the chutney and the cistern");
+assert(/chutney/i.test(dannyJodie[6].description), "Abundance, nothing useful: three weeks in and the prize in a British kitchen is still the water");
+assert(dannyJodie.every(f => f.characters.every(id => [characterId("danny"), characterId("jodie")].includes(id))), "The householders are never seen: the scene is two people and a photograph wall");
+assert(!dannyJodie.some(f => f.shotType === "Establishing"), "Never a clean wide means never an establishing card either");
+assert(dannyJodie[19].notes.includes("Don't tell anyone about the door."), "His last line protects the lock, not the girl, and it is the scene's judgement of him");
+assert(dannyJodie[18].notes.includes("Header tank's better."), "She ends the scene being right out loud and he asks what it means");
+assert(dannyJodie.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep2-danny-jodie/")), "Danny and Jodie keyframes live under /images/rapture/ep2-danny-jodie/");
+assert(new Set(dannyJodie.filter(f => f.image).map(f => f.image)).size === dannyJodie.filter(f => f.image).length, "One dedicated keyframe per Danny and Jodie shot");
+
+// Episode four scene 6: the kitchen. He is told his son is in a queue, that the machine upstairs is the
+// only thing that might get him out, and that the answer is his brother — the brother he has not spoken to
+// since bidding against him at the same kind of auction in 2011. His grammar holds all the way through:
+// fluorescent, flat, off-centre, locked off, so her symmetry never organises his house. Two protections are
+// enforced below: she asks once and waits (shot 15), and "It's mine" is played with no emphasis at all
+// (shot 19). From the last frame of this scene the machine travels in the back of the bus.
+const kitchenBlocks = [...kitchenScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(kitchenBlocks.length, 23, "The kitchen source must have twenty-three numbered shots");
+assert.equal(kitchenPlan.length, 23, "The kitchen plan must cover all twenty-three shots");
+const kitchenIsHers = i => i >= 21; // the street only: the house stays his
+const kitchen = kitchenBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Kitchen shot order must be contiguous");
+  const plan = kitchenPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Kitchen durations must cover dialogue as well as the written pauses");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const grammarFor = kitchenIsHers(i) ? kitchenHerGrammar : kitchenHisGrammar;
+  const file = `/images/rapture/ep4-kitchen/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep4kit-${String(n).padStart(2, "0")}`, sceneId: kitchenSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    lightingNotes: grammarFor,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: kitchenIsHers(i) ? "Squared up at last, and no better for it" : "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-kitchen, so this card holds slot ${n} of ${kitchenPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource && plan.lensSource !== plan.lens ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${grammarFor}\n\n${kitchenGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(px => `${px}s`).join(" + ")})` : " (none in this shot)"}, and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(kitchen.reduce((sum, f) => sum + f.duration, 0), 353, "Update the timing note when the kitchen editorial estimates change");
+assert(kitchen.every(f => f.movement === "Static"), "Locked off all the way through: the scene has no camera movement at all");
+assert(kitchen.every((f, i) => (f.lighting === "Natural daylight") === kitchenIsHers(i)), "Fluorescent in the house, daylight on the street, and nothing in between");
+assert(kitchen.every((f, i) => (f.lightingNotes === kitchenHerGrammar) === kitchenIsHers(i)), "Every kitchen frame inherits exactly one grammar, never both and never neither");
+assert(kitchen.filter((f, i) => !kitchenIsHers(i)).every(f => f.description.length > 0), "His grammar holds even in the frames that are only furniture");
+assert.deepEqual(kitchen.map((f, i) => f.shotType === "Insert" ? i : -1).filter(i => i >= 0), [1, 8], "The tap and the mug are the only inserts: the scene refuses to cut to the machine");
+assert(/brown/i.test(kitchen[1].description) && /Nobody turns it off/i.test(kitchen[1].description), "The tap runs brown and the refusal to shut it off stays in shot 2, exactly where the script put it");
+assert(kitchen.filter(f => /turn(?:s|ed)? it off/i.test(f.description)).length === 1 && kitchen.filter(f => /brown/i.test(f.description)).length === 1, "The brown water is stated once, unemphasised, and is never paid off with a cut");
+assert(kitchen[12].description.includes("Do you know anybody who could work it?"), "She asks once");
+assert(kitchen[14].notes.includes("Eight seconds") || kitchen[14].notes.includes("eight seconds"), "The eight-second wait is written into the card so it survives the animatic");
+assert(kitchen[14].duration >= 16, "The wait cannot be cut for length without asking first");
+assert(kitchen[18].notes.includes("It's mine.") && kitchen.filter(f => /It's mine\./.test(f.notes)).length === 1, "The most honest thing Martin says in the series sits in one frame and is quoted nowhere else");
+assert(kitchen.filter(f => /2011/.test(f.description + f.notes)).length === 1, "2011 is stated once, in the grievance, and nowhere else");
+assert(kitchen[16].notes.includes("bid against him"), "The auction becomes the show's engine in shot 17 and stays a family quarrel");
+assert(kitchen[21].notes.includes("back of the bus") && kitchen[21].notes.includes("terminal"), "STANDING RULE: the machine travels in the back of the bus from this frame onward");
+assert(/still open/i.test(kitchen[22].description) && /Nobody shuts it/i.test(kitchen[22].description), "The house is left with its door open and the scene declines to close it");
+assert(kitchen.every(f => f.characters.every(id => [characterId("nina"), characterId("martin")].includes(id))), "Nobody else is in the kitchen");
+assert.deepEqual(kitchen.map((f, i) => f.characters.includes(characterId("nina")) && !f.characters.includes(characterId("martin")) ? i : -1).filter(i => i >= 0), [4, 12, 14, 17, 19], "Her alone frames are the ones where she is deciding, not reacting");
+assert(kitchen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-kitchen/")), "Kitchen keyframes live under /images/rapture/ep4-kitchen/");
+assert(new Set(kitchen.filter(f => f.image).map(f => f.image)).size === kitchen.filter(f => f.image).length, "One dedicated keyframe per kitchen shot");
+
+
+// Episode five scene 5: the therapy class. Fourteen people argue their own case for why they were left, a
+// dead dog demolishes every theory, and the room rebuilds it as a job. One grammar, never blended: handheld,
+// inside two metres, one red practical, and never a clean establishing wide — the only wide is the last shot
+// and it gives nobody the geography. Three protections are enforced below: the long hold at 13, the doctrine
+// visibly invented on the spot at 14, and Carl never saying what he did.
+const therapyBlocks = [...therapyScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(therapyBlocks.length, 26, "The therapy class source must have twenty-six numbered shots");
+assert.equal(therapyPlan.length, 26, "The therapy class plan must cover all twenty-six shots");
+const therapy = therapyBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Therapy class shot order must be contiguous");
+  const plan = therapyPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Therapy class durations must cover dialogue as well as any written pause");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const file = `/images/rapture/ep5-therapy/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep5th-0${n}`.replace(/-0(\d\d)$/, "-$1"), sceneId: therapySceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Handheld", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    lightingNotes: therapyRed,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Red from one practical; faces half-lit, the rest of the hut black; nobody lit to be understood",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep5-therapy, so this card holds shot ${n} of ${therapyPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource && plan.lensSource !== plan.lens ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${therapyRed}\n\n${therapyGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(px => `${px}s`).join(" + ")})` : " (none in this shot)"}, and the hold in shot 13 is not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(therapy.reduce((sum, f) => sum + f.duration, 0), 420, "Update the timing note when the therapy class editorial estimates change");
+assert(therapy.every(f => f.movement === "Handheld"), "The whole scene is handheld; nothing in it is allowed to settle");
+assert(therapy.every(f => f.lighting === "Low key" && f.lightingNotes === therapyRed), "One grammar, one light source, on every card in the scene");
+assert.deepEqual(therapy.map((f, i) => f.shotType === "Wide" ? i : -1).filter(i => i >= 0), [25], "Never a clean establishing wide: the only wide is the last shot and it is red and useless as geography");
+assert(/nobody is addressing/i.test(therapy[0].description) && /safe space/i.test(therapy[0].notes), "The empty chair is planted as a fact in shot 1, not as a clue");
+assert(/The camera finds it/.test(therapy[21].description), "The chair is found by the camera twenty-one shots later, unannounced");
+assert(therapy.filter(f => /Brian/i.test(f.notes)).length === 1 && /went out Tuesday/.test(therapy[21].notes), "Brian is mentioned once and nobody follows it up, in the frame or in the notes");
+assert(therapy[12].duration >= 20 && /long hold/i.test(therapy[12].notes), "PROTECTION: the silence after the dead dog is long enough to rebuild a theology in");
+assert(/self-interested/i.test(therapy[13].notes) && therapy[13].notes.includes("invented on the spot"), "PROTECTION: what we're for is visibly invented in the telling and never delivered as doctrine");
+assert(!therapy.some(f => /CARL:[^\n]*(what I did|I did it|because I)/i.test(f.notes)), "PROTECTION: Carl never says what he did, in this scene or any other");
+assert(therapy.filter(f => /Nothing they'd take you for/i.test(f.notes)).length === 1, "The near-confession is one line in one frame and the room misreads it as modesty");
+assert(therapy.filter(f => /Rosemary/i.test(f.notes)).length === 1, "The dog story is told once, flatly, by one man, and it is the hinge");
+assert(/divine mandate/i.test(therapy[16].description) && /Maintain order/.test(therapy[15].notes), "The room reasons backwards from a dead dog to a mandate, and the mandate is written down");
+assert(/brown and rationed/i.test(therapy[25].description) && !therapy.some(f => /two days of water/i.test(f.notes)), "Moved to episode five: the water is brown and rationed here, not two days from empty");
+assert(therapy[23].characters.includes(characterId("jodie")) && !therapy[23].characters.includes(characterId("danny")), "Jodie's frame is hers alone: she is the only one who heard Carl");
+assert(therapy[24].characters.includes(characterId("danny")) && !therapy[24].characters.includes(characterId("jodie")), "Danny's frame is his alone, sleeve down, saying nothing about anything");
+assert(therapy.every(f => f.characters.every(id => [characterId("danny"), characterId("jodie")].includes(id))), "Nobody else in the circle is cast: Sue, Carl, Derek, Pauline and the rest stay un-named faces");
+assert(therapy.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep5-therapy/")), "Therapy class keyframes live under /images/rapture/ep5-therapy/");
+assert(new Set(therapy.filter(f => f.image).map(f => f.image)).size === therapy.filter(f => f.image).length, "One dedicated keyframe per shot in the class");
+
+
+// Episode one's last comic beat: the cops, parked, ninety seconds, six shots. Their grammar exactly —
+// static two-shot from the bonnet, the same framing every time — and one insert of a bottle of water
+// nobody has drunk. The thread ends on a worse note than it started, then the 1980 tag closes it.
+const copsBeatBlocks = [...copsBeatScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(copsBeatBlocks.length, 6, "The cops' second beat must have six numbered shots");
+assert.equal(copsBeatPlan.length, 6, "The cops' second beat plan must cover all six shots");
+const copsBeat = copsBeatBlocks.map(([, n, header, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Cops beat shot order must be contiguous");
+  const plan = copsBeatPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "The cops beat's holds are locked inside its shot durations");
+  const description = body.split("\n").map(line => line.trim()).find(line => line) || header.split(" — ")[1];
+  const file = `/images/rapture/ep1-cops-beat/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep1cb-${String(n).padStart(2, "0")}`, sceneId: copsBeatSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens: plan.lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    lightingNotes: copsBeatGrammar,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: i === 5 ? "Cut" : "Cut",
+    mood: "Two people in a lit box in an empty street, agreeing not to do paperwork",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-cops-beat, so this card holds slot ${n} of ${copsBeatPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource && plan.lensSource !== plan.lens ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${copsBeatGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate; the written holds and pauses inside it are locked${pauses.length ? ` (${pauses.map(px => `${px}s`).join(" + ")})` : ""}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(copsBeat.reduce((sum, f) => sum + f.duration, 0), 90, "The beat is ninety seconds by instruction; update the read-me if that changes");
+assert(copsBeat.every(f => f.movement === "Static"), "Their grammar exactly: nothing in this scene moves");
+assert.deepEqual(copsBeat.map(f => f.shotType), ["Two-shot", "Wide", "Two-shot", "Insert", "Two-shot", "Wide"], "Three identical two-shots, two identical wides, one insert, in that order");
+assert(copsBeat.filter(f => f.shotType === "Two-shot").every(f => f.lens === "35mm"), "Every two-shot is the same 32mm lens from the bonnet, snapped to the library's 35mm");
+assert(copsBeat[1].lens === copsBeat[5].lens && copsBeat[1].shotType === copsBeat[5].shotType, "The two exteriors are the same framing on purpose, so the hold at the end reads as repetition and not as coverage");
+assert.equal(copsBeat.filter(f => /cup holder/i.test(f.description)).length, 1, "The untouched bottle is one insert and is never explained");
+assert.deepEqual(copsBeat.map((f, i) => f.characters.length === 0 ? i : -1).filter(i => i >= 0), [1, 3, 5], "Nobody is in frame in the two exteriors or the insert");
+assert(copsBeat[0].notes.includes("Hold. Four seconds.") && copsBeat[0].notes.includes("Pause. Six seconds."), "The two silences in shot 1 are written, not editorial");
+assert(copsBeat[4].notes.includes("Us."), "Her answer has no hesitation and must not be played as a punchline");
+assert(copsBeat.every(f => f.characters.every(id => [characterId("kath"), characterId("ray")].includes(id))), "The beat is Kath and Ray only");
+
+
+
 assert(coldOpen.every(frame => frame.movement === "Static"), "Cold-open cameras never move");
 assert(coldOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-cold-open/")), "Cold-open keyframes live under /images/rapture/ep4-cold-open/");
 const lockupBlocks = [...lockupScreenplay.matchAll(/^(\d+)\. (STATIC WIDE|STATIC MEDIUM|MEDIUM|CLOSE|FLASH), (\d+mm), (locked off|static|handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
@@ -295,6 +599,45 @@ const scoutHutScene = {
   characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-4",
   kind: "Standard", lighting: "Practical night", lightingNotes: scoutHutGrammar, style: "cinematic",
 };
+// Scene 5: the twelfth house opens on Martin, and the bedroom she was sent to has the machine in it.
+const kitchenScene = {
+  id: kitchenSceneId, title: "The kitchen", location: "INT. MARTIN'S HOUSE — KITCHEN", time: "DAY",
+  description: `Scene 6, the same afternoon: a man is told his son is in a queue that is not moving, that the beige box upstairs is the only thing that might get him out, and that the only person who could work it is the brother he has not spoken to since outbidding him at an auction in 2011. ${kitchenGrammar} She asks once and then waits, and the most honest thing he says in the series is four words about a computer.`,
+  characters: ["nina", "martin"].map(characterId), actId: "rapture-episode-4",
+  kind: "Standard", lighting: "High key", lightingNotes: kitchenGrammar, style: "cinematic",
+};
+const therapyScene = {
+  id: therapySceneId, title: "The therapy class", location: "INT. THE SCOUT HUT", time: "DAY",
+  description: `Episode five's ensemble set-piece, moved here from six: fourteen people in a circle that is not quite a circle, each arguing their own case for why they were left, until one man's story about a dog demolishes every theory in the room and they rebuild it as a job. ${therapyGrammar} It ends with a laminated mandate, an empty chair nobody mentions, and two children who have worked out that every adult in the building is guessing.`,
+  characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-5",
+  kind: "Standard", lighting: "Low key", lightingNotes: therapyGrammar, style: "cinematic",
+};
+const dannyJodieScene = {
+  id: dannyJodieSceneId, title: "Danny and Jodie's first raid", location: "INT./EXT. A HOUSE", time: "DUSK",
+  description: `Three weeks in, their first appearance: a back-door burglary in a house that looks empty and is not, in twenty-one handheld frames that never allow a clean wide. ${dannyJodieGrammar} It establishes that they do this now, and that she is better at it, and it never says the second half out loud.`,
+  characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-2",
+  kind: "Standard", lighting: "Practical night", lightingNotes: dannyJodieGrammar, style: "cinematic",
+};
+const copsBeatScene = {
+  id: copsBeatSceneId, title: "The cops, second beat", location: "INT./EXT. POLICE CAR", time: "NIGHT",
+  description: `Episode one's comic thread closed on a worse note than it started: two people in a parked car, lit by the dashboard, agreeing that a form does not exist and that they are in charge now. ${copsBeatGrammar} Ninety seconds, six shots, and the same four-pint bottle of water in the cup holder, untouched.`,
+  characters: ["kath", "ray"].map(characterId), actId: "rapture-episode-1",
+  kind: "Standard", lighting: "Practical night", lightingNotes: copsBeatGrammar, style: "cinematic",
+};
+const doorstepScene = {
+  id: doorstepSceneId, title: "The doorstep", location: "EXT./INT. MARTIN'S HOUSE", time: "DAY",
+  description: `Scene 5, the eleventh-morning audit ending at the wrong door on the right house: a man who has not spoken to anybody in eight weeks, a bedroom with a correctly spelled poster and a dusty beige terminal he bought at auction as a job lot, and a pendant that lights up while she is looking past it. ${doorstepGrammar}`,
+  characters: ["nina", "martin", "alan"].map(characterId), actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Natural daylight", lightingNotes: doorstepGrammar, style: "cinematic",
+};
+// Scene 4: the housing estate at dusk. The pendant gives her a bedroom and no address, so she
+// audits thirty identical semis the way she would check a building for a gas leak.
+const estateScene = {
+  id: estateSceneId, title: "The housing estate", location: "EXT./INT. A HOUSING ESTATE", time: "DUSK",
+  description: "Scene 4: she is looking for a child's bedroom and has no idea whose or why. A cul-de-sac of thirty identical semis with not one light on, a vision that arrives as wallpaper and half a word, a table laid for four nobody sits at, a correctly spelled poster in the wrong house, and a passenger whose only advice is to wait as long as it takes.",
+  characters: ["nina", "alan"].map(characterId), actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Blue hour", lightingNotes: "Dusk, not daylight, for the first time in her thread: flat blue hour with no warmth and no sun, the only hard sources being the bus's headlights and her own torch. Locked off, wide, deep focus, symmetrical, dead centre. The camera never follows her and long lenses hold the road. Only the vision goes handheld: broken, wrong aspect ratio, dropped frames, blown out, a hiss. Nothing about the hour is remarked upon.", style: "cinematic",
+};
 const coldOpenScene = {
   id: coldOpenSceneId, title: "The interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
   description: "Episode three circles what a blank is from three angles and gets it wrong three times: the angels' cold open, the cops' worthless test, and Hell's five-hour interview that leaves with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
@@ -345,6 +688,10 @@ scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-meetings"), 0, patHous
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-pat"), 0, patColdOpenScene);
 scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId), 0, scoutHutScene);
 scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId) + 1, 0, scene);
+scenes.splice(scenes.findIndex(s => s.id === sceneId) + 1, 0, estateScene, doorstepScene, kitchenScene); // scenes 4, 5 and 6 follow Number Fourteen in episode four
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep2-raid") + 1, 0, dannyJodieScene); // the numbered raid follows the legacy board it supersedes
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep5-misspelling") + 1, 0, therapyScene); // the class is episode five's last boarded scene, after the taps have gone brown
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep1-no"), 0, copsBeatScene); // the beat ends the comic thread before the 1980 tag closes episode one
 const lockupScene = {
   id: lockupSceneId, title: "The first wrong lockup", location: "EXT./INT. ROADS AND AN INDUSTRIAL ESTATE", time: "DAY",
   description: `Nina drives out on a pendant bearing, opens two wrong lockups, and acquires Alan. ${lockupGrammar} The vision is the tracker's recorded view, not divine revelation.`,
@@ -382,12 +729,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...patOpen, ...patHouse, ...scoutHut, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...patOpen, ...patHouse, ...scoutHut, ...estate, ...doorstep, ...kitchen, ...therapy, ...dannyJodie, ...copsBeat, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, patOpen.length + patHouse.length + scoutHut.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, patOpen.length + patHouse.length + scoutHut.length + estate.length + doorstep.length + kitchen.length + therapy.length + dannyJodie.length + copsBeat.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
@@ -403,16 +750,30 @@ const patOpenTotal = patOpen.reduce((n, f) => n + f.duration, 0);
 const patHouseTotal = patHouse.reduce((n, f) => n + f.duration, 0);
 const scoutHutMissing = scoutHut.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
 const scoutHutTotal = scoutHut.reduce((n, f) => n + f.duration, 0);
+const estateMissing = estate.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const estateTotal = estate.reduce((n, f) => n + f.duration, 0);
+const doorstepMissing = doorstep.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const doorstepTotal = doorstep.reduce((n, f) => n + f.duration, 0);
+const kitchenMissing = kitchen.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const kitchenTotal = kitchen.reduce((n, f) => n + f.duration, 0);
+const therapyMissing = therapy.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const therapyTotal = therapy.reduce((n, f) => n + f.duration, 0);
+const dannyJodieMissing = dannyJodie.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const dannyJodieTotal = dannyJodie.reduce((n, f) => n + f.duration, 0);
+const copsBeatMissing = copsBeat.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const copsBeatTotal = copsBeat.reduce((n, f) => n + f.duration, 0);
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-and-Malcolm dusk open (${patOpen.length} shots, ${patOpenTotal}-second estimate, Graham already chained under the floor)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}, and Scene 2 — the old-lady sequence — is numbered (${patHouse.length} shots, ${patHouseTotal}-second estimate), two grammars never blended within a shot${patHouseMissing.length ? `, with ${patHouse.length - patHouseMissing.length} AI studies on disk and ${patHouseMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
+  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-and-Malcolm dusk open (${patOpen.length} shots, ${patOpenTotal}-second estimate, Graham already chained under the floor)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}, and Scene 2 — the old-lady sequence — is numbered (${patHouse.length} shots, ${patHouseTotal}-second estimate), two grammars never blended within a shot${patHouseMissing.length ? `, with ${patHouse.length - patHouseMissing.length} AI studies on disk and ${patHouseMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (${estate.length} shots, ${estateTotal}-second estimate) — is numbered and boarded${estateMissing.length ? `, with ${estate.length - estateMissing.length} AI studies on disk and ${estateMissing.length} placeholder cards still to generate` : ", fully studied"}; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (${doorstep.length} shots, ${doorstepTotal}-second estimate)${doorstepMissing.length ? `, with ${doorstep.length - doorstepMissing.length} AI studies on disk and ${doorstepMissing.length} placeholder cards still to generate` : ", fully studied"}: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Scene 6 — the kitchen — is numbered and boarded (${kitchen.length} shots, ${kitchenTotal}-second estimate)${kitchenMissing.length ? `, with ${kitchen.length - kitchenMissing.length} AI studies on disk and ${kitchenMissing.length} placeholder cards still to generate` : ", fully studied"}: his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. Episode two's Danny and Jodie raid is numbered from the supplied scene (${dannyJodie.length} shots, ${dannyJodieTotal}-second estimate)${dannyJodieMissing.length ? `, with ${dannyJodie.length - dannyJodieMissing.length} AI studies on disk and ${dannyJodieMissing.length} placeholder cards still to generate` : ", fully studied"}, Episode five's therapy class is numbered from the supplied scene (${therapy.length} shots, ${therapyTotal}-second estimate)${therapyMissing.length ? `, with ${therapy.length - therapyMissing.length} AI studies on disk and ${therapyMissing.length} placeholder cards still to generate` : ", fully studied"}: one question, fourteen self-serving answers, and a dead dog that ends the argument; it moved from episode six so the maintain-order doctrine has two episodes to harden, and episode one gains the cops' second beat (${copsBeat.length} shots, ${copsBeatTotal} seconds exactly, as instructed)${copsBeatMissing.length ? `, with ${copsBeat.length - copsBeatMissing.length} AI studies on disk and ${copsBeatMissing.length} placeholder cards still to generate` : ", fully studied"}; the raid supersedes the legacy first-raid board as the scene's coverage and the board stays reference only. Each explicit pause remains exactly as written.\n\nSupplied fixes recorded against the outlines: the 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage (his hands fastening something round a laughing girl's neck, the object never clear), and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant, and the connection to Nina lands in her own episode-one scene instead — the empty-gap flash was considered and rejected; the episode-one washing-up board's shot 23 is corrected so the pendant is her mother's and she always had it, never found on Deborah's bedside; the episode-four cold open is already at dusk, running continuously into scene 2 at dusk into night; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has to have sat in Max's room for the eight weeks the doorstep scene counts.\n\nThe kitchen scene is where the auction stops being a purchase and becomes a grudge: 2011, a job lot, Martin outbidding his own brother, and an arcade named as the place the machine might be read. It states the cosmology once, in one word — \"Sorting\" — and never explains it. From its final frame the beige terminal and CRT travel in the back of the bus, with Martin's guitar case beside them, and every later bus frame has to show them.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
   id: "rapture-continuity", title: "Continuity decisions and open questions", color: "rose", createdAt,
   tags: ["Continuity", "Needs review"], connections: [],
-  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}`,
+  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers.${estateMissing.length ? ` ${estateMissing.length} estate keyframes remain outstanding: ${estateMissing.join(", ")}.` : ""}${doorstepMissing.length ? ` ${doorstepMissing.length} doorstep keyframes remain outstanding: ${doorstepMissing.join(", ")}.` : ""}${kitchenMissing.length ? ` ${kitchenMissing.length} kitchen keyframes remain outstanding: ${kitchenMissing.join(", ")}.` : ""}\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the empty bedroom is Max's, the bible naming him as Martin's fourteen-year-old, and no flashback is cut into the scene. Because the machine has had to sit in that room for the eight weeks the scene counts, the storage-unit auction is marked pre-rapture.\n\nDanny and Jodie's first raid is three weeks in and establishes only that they do this now and that she is better at it; nothing in the scene explains where the householders are, and upstairs is never seen or heard as anything other than a thump. Her competence is played as maintenance and is never dramatised: how she opens the door is deliberately not shown. The four-pint bottle he finds in the cupboard is the same prop that sits untouched in the cops' cup holder in episode one's second beat — the object travels, the threads do not meet, and no scene draws the line between them. Whether the photograph wall in shot 11 belongs to the family still living there or to a house they have already stripped is not supplied and is not asserted.\n\nThe therapy class sits in episode five, not six, on purpose: the water is brown and rationed by then, which is where episode five already is, and hi-vis gets two episodes to build a religion out of \"maintain order\" before seven and eight act on it. The scene is one question — why us — and everybody in the circle is arguing their own case, so every answer is self-serving: Sue's blameless grievance, Carl's unsaid thing, Pauline's clerical error, Derek's promotion, hi-vis's need for a purpose with someone in charge of it. The grandma-and-the-dog story lives here and nowhere else, which is what makes it demolition rather than anecdote, and the episode three meeting is therefore recruitment only. Three protections: the long hold at shot 13, the doctrine visibly invented at shot 14, and Carl never saying what he did in this scene or any other. Brian went out Tuesday and nobody asks a follow-up question, in the room or in the notes.
+
+The cops' second beat is ninety seconds by instruction and its only job is to end episode one's comic thread on a worse note than it started; it sits before the 1980 tag and sets up nothing. Kath's answer is played with no hesitation and is not a punchline, and neither of them notices that the form conversation resolves nothing.`,
 });
 
 const brainstorm = [
@@ -431,6 +792,30 @@ const moodboards = [{
   id: "rapture-look-lockup", title: "The first wrong lockup — locked off daylight", sceneId: lockupSceneId, actId: "rapture-episode-2", createdAt,
   description: "Thirty-one AI-generated storyboard studies. Locked off, wide, deep focus, daylight, symmetrical; only the vision is handheld.",
   items: lockupFrames.map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-danny-jodie", title: "Danny and Jodie — the raid, red and handheld", sceneId: dannyJodieSceneId, actId: "rapture-episode-2", createdAt,
+  description: "Twenty-one AI-generated storyboard studies. Handheld, tight, dark, one red practical, never a clean wide.",
+  items: dannyJodie.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-cops-beat", title: "The cops, second beat — locked off in a lit box", sceneId: copsBeatSceneId, actId: "rapture-episode-1", createdAt,
+  description: "Six AI-generated storyboard studies. The same two-shot three times, the same wide twice, one insert of a bottle nobody has drunk.",
+  items: copsBeat.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-kitchen", title: "The kitchen — his grammar, and one street", sceneId: kitchenSceneId, actId: "rapture-episode-4", createdAt,
+  description: "Twenty-three AI-generated storyboard studies. Fluorescent, flat, off-centre and locked off inside; symmetrical daylight only once they reach the street.",
+  items: kitchen.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-therapy", title: "The therapy class — one question, one red bulb", sceneId: therapySceneId, actId: "rapture-episode-5", createdAt,
+  description: "Twenty-six AI-generated storyboard studies. Handheld and inside two metres, lit by a fire-door red and a tarpaulin, with exactly one wide in the scene and it is the last one.",
+  items: therapy.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-doorstep", title: "The doorstep — two grammars, one building", sceneId: doorstepSceneId, actId: "rapture-episode-4", createdAt,
+  description: "Thirty-two AI-generated storyboard studies. Hers is symmetrical daylight on the street; his is flat, fluorescent and slightly off-centre indoors. They are never blended inside a shot.",
+  items: doorstep.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, {
+  id: "rapture-look-estate", title: "The housing estate — her grammar, the wrong hour", sceneId: estateSceneId, actId: "rapture-episode-4", createdAt,
+  description: "Thirty-six AI-generated storyboard studies. Locked off, wide, deep focus, symmetrical, dead centre, at dusk for the first time in her thread; only the vision goes handheld.",
+  items: estate.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
 }, ...referenceBoards.map(board => ({
   id: `rapture-look-${board.id}`, title: board.title, description: board.description, createdAt,
   items: board.items.map(([image, caption], i) => ({ id: `rapture-${board.id}-ref-${i + 1}`, image, caption })),
@@ -441,7 +826,7 @@ const project = {
   description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; the episode-three and episode-four cold opens (15 + 17 shots) and Number Fourteen (13 shots) are the working scenes.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
-  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
+  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay, estateScreenplay, doorstepScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
   shareId: null, createdAt, updatedAt: createdAt,
 };
 

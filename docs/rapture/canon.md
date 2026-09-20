@@ -32,6 +32,86 @@ comedy in every thread; this is not noir and not a tragedy.
   a friend); 33–35 snap back to the Crane grammar. The violence is silent
   and domestic, the exact rhythm of someone eating a meal. This is NOT
   Number Fourteen. All thirty-five shots carry AI studies.
+- **Episode-two Danny and Jodie raid:** [numbered scene](scenes/ep2-danny-jodie.md), 21
+  handheld shots at dusk into a dark house. Their grammar exactly: handheld, tight, dark,
+  one red practical — a bike light clipped to a child's strap — and never a clean wide, so
+  the audience is never allowed the geography a burglary scene usually hands it. Three
+  weeks in and it is their first appearance, so the scene is allowed to establish only two
+  things: they do this now, and she is better at it. The second is never said. Her
+  competence is played as maintenance (the handle, the cistern, the water she does not drop),
+  how she opens the door is deliberately not shown, and the householders are never seen —
+  upstairs is a thump and nothing more. Two wides in twenty-one shots, both handheld: the
+  stairwell where nothing is visible, and the exit. It supersedes the legacy first-raid
+  board as coverage; the board stays reference only. Eleven of twenty-one shots carry AI studies, and one more was rejected for showing a gallery wall of
+strangers where the script calls for the same two people twenty times. Danny is an ADULT in this scene —
+the sheets and every accepted frame say so — and the model drifts him towards a boy in close-ups, which is
+why shot 15 is on the reject pile: Jodie's brother is her father's keeper, not a second child.
+- **Episode-one cops beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6
+  shots, ninety seconds exactly as instructed. Their grammar with no compromise: static
+  two-shot from the bonnet through the windscreen, the same framing three times, the same
+  exterior twice, one insert of the four-pint bottle in the cup holder that neither of them
+  has drunk. Its only job is to end the episode's comic thread on a worse note than it
+  started, so it sits immediately before the 1980 tag; the form conversation resolves
+  nothing and neither of them notices, and Kath's "Us" is played with no hesitation and is
+  not a punchline. No studies yet: six placeholders.
+- **Episode-four scene 4 — the housing estate:** [numbered scene](scenes/ep4-housing-estate.md),
+  36 locked-off shots at dusk. Nina's grammar, the wrong hour for the first time: she is sent to a
+  child's bedroom with no number and no name, so she audits a cul-de-sac of thirty identical semis
+  the way she would check a building for a gas leak. The laid table is the only thing that lands and
+  she does not stop for it; the poster matches the vision and does not; nothing answers twice. All
+  thirty-six shots carry AI studies.
+- **Episode-four scene 5 — the doorstep:** [numbered scene](scenes/ep4-doorstep.md), 32
+  locked-off shots, day. Two grammars in one building that the film never resolves. Hers is
+  on the street and at the door — wide, symmetrical, deep focus, flat midday daylight, and
+  the three knocks are the same frame three times, because the repetition IS the joke. His is
+  indoors — fluorescent, flat, the framing a hair off-centre so it looks found rather than
+  composed. They are never blended inside one shot; the threshold in shot 8 is the only cut
+  that means anything. The machine is planted in an ordinary insert (shot 18) and she does
+  not clock it, so neither does the camera: no push-in, no light change, no sting, and the
+  audience gets there first. The snapped-off badge gap (shot 26) sits in one frame and is
+  never mentioned by anybody, in the scene or in the notes, ever. Martin's son is alive,
+  unseen and unflashbacked — the empty bed is the whole performance — and "Water's brown" is
+  the season's water clock ticking, deliberately unemphasised. All thirty-two shots carry AI studies.
+- **Episode-five scene 5 — the therapy class:** [numbered scene](scenes/ep5-therapy-class.md), 26 handheld
+  shots in the scout hut. One question — why us — and fourteen people arguing their own case for being left,
+  which is the engine: Sue's blameless grievance, Carl's unsaid thing, Pauline's clerical error, Derek's
+  promotion, hi-vis's need for a purpose with somebody in charge of it. It sits in FIVE, not six, for two
+  reasons the user gave: it is the funniest ensemble scene in the season and fourteen people should not wait
+  that long, and the maintain-order doctrine needs two episodes to harden before seven and eight act on it.
+  The consequence of the move is that the water in the last shot is brown and rationed rather than two days
+  from empty, which is exactly where the bible's clock has episode five (brown by three, upstairs dead by
+  five, dry by six). This supersedes the bible's episode-four line about the survivors' meetings reporting
+  the dog, and it kills the nun: there is no nun rumour anywhere in the workspace now. The episode-three
+  meeting is therefore recruitment only — water counted in, clipboard, rota, tins don't count, Jodie working
+  out who is stealing — because the theorising has moved here and cannot be said twice.
+  Three protections, asserted in the builder and the verifier: shot 13's silence is long enough to rebuild a
+  theology in (duration floored at 20 seconds); shot 14's "It's what we're for" is visibly invented in the
+  telling and never delivered as doctrine; and **Carl never says what he did, in this scene or in any other
+  scene, and the show never finds out on camera.** The grandma-and-the-dog story is told once, flatly, by one
+  sweating man, and it is what demolishes every theory at once — rather than accept that, the room decides it
+  must mean they are here for a job, which is how a dead dog becomes a marching order in ninety seconds with
+  no objections. Derek's moment of clarity is kept and moved with it, because it earns its place. The empty
+  chair is planted in shot 1 as a fact and found by the camera in shot 22, twenty-one shots later,
+  unannounced: Brian went out Tuesday, nobody follows it up in the room and the notes do not either. Seven
+  of twenty-six shots carry AI studies. Two are on the reject pile for the usual reasons: a 35mm medium on
+  Carl arrived as a whole-ring view in which two men sit in the same hunched pose, so the frame has no
+  subject. One exception is deliberate: the laminated sheet in shot 2 is the prop in a close-up, so its
+  handwriting is rendered as unreadable script rather than left out of frame — the no-legible-words rule
+  governs background signage, not the object a shot is about.
+- **Episode-four scene 6 — the kitchen:** [numbered scene](scenes/ep4-kitchen.md), 23 locked-off
+  shots, day. His grammar for twenty-one frames — fluorescent, flat, the framing a hair
+  off-centre — and her symmetry is never allowed to organise his rooms: the street in shots 22–23
+  is the only place the film squares up. Two protections, asserted in the builder and the verifier rather than
+  trusted: shot 15, where she asks once and then waits eight seconds, may not be cut for length
+  without asking; shot 19's "It's mine." is the most honest thing Martin says in the series, gets no
+  push-in, no light change and no second home in any other frame. The brown tap is stated once (shot
+  2) and the scene refuses to pay it off with a cut; her mug stays untouched the way the cops'
+  bottle does, and no scene points at the rhyme. The grievance is 2011, a job lot, "I bid against him" /
+  "And you won" — the year said once in the whole series, which corroborates the auction as
+  PRE-RAPTURE. The brother has an arcade, named flatly as the episode-eight location and not as a
+  setup. **Standing rule from shot 22: the machine travels in the back of the bus**, with Martin's
+  guitar case, from here on — every later bus frame shows it and none of them explains it. Shot 23
+  leaves the front door open and nobody shuts it. Twenty-one of twenty-three shots carry AI studies.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -170,8 +250,108 @@ Only written pauses are locked. Number Fourteen's **~175 seconds** and the locku
 episode runtimes. Other scenes
 are explicitly labelled outlines. There are not eight finished 45-minute scripts.
 
-## Boundaries not silently resolved
+Thirty-six **housing-estate AI studies** in `public/images/rapture/ep4-estate/` board episode
+four scene 4, one keyframe per shot. Everything is locked off and dead centre except the five
+vision flashes (shots 6–10), which are deliberately wrong: 4:3-ish, blown out, tilted, torn by a
+dropped frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy work coat
+at dusk for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
+interiors (2 and 34) and at the bus in 32, Nina is at the wheel on the far side (right-hand
+drive), the front passenger seat is empty, and Alan and the dog sit on the bench behind it on the
+passenger side, facing forward. The van is squared to camera in every exterior (3, 4, 5, 11, 12,
+32) and is never silver. Check Nina's face and coat, Alan's bag, the passenger-side seating, the
+battered rear doors, the four untouched places at the table in shot 21, and the poster spelling in
+shot 24 against the fragment in shot 7 before approving any of them.
 
+Thirty-two **doorstep studies** in `public/images/rapture/ep4-doorstep/` board episode four
+scene 5, one keyframe per shot. Check them against the two grammars, not against taste. Shots
+1-3 must be the same camera setup at three doors: same height, same distance, the elevation
+squared dead centre, the white Transit in the middle of the road, and only the open door
+allowed to change; a frame that varies is a failed frame. Shots 4-8 stay hers (daylight,
+symmetrical, 50mm and 24mm only) even when the hall is visible behind him, and shot 9 is
+where his grammar starts. Alan and the dog appear twice only, both in her daylight, both
+through the minibus windscreen on the passenger side (shots 6 and 32), facing forward, nobody
+looking at anybody. The terminal (18, 24) is a beige unbranded 1990s box, dusty, plugged in,
+shot flat like a rental inventory photo. The pendant (22) is the only frame in the scene lit
+from inside the shot: a hard small filament, no bloom, no lens flare, no particles. The
+poster in 14 is the estate scene's shot-24 design — different house, same team, correctly
+spelled — so the audience can do the arithmetic. Every close-up inside the bedroom has to carry the same room —
+  pale walls, grey bed, the dead CRT on the desk — because the model defaults to a generic spare
+  bedroom the moment the wide is not in the reference set; where the poster is not the subject it is
+  left out of frame rather than drawn half-legible, and no frame carries burnt-in words.
+Eleven of twenty-one **raid studies** in `public/images/rapture/ep2-danny-jodie/` board the scene
+so far, one keyframe per shot; shot 11 and shots 13–21 are placeholders. Shot 11's first attempt is on
+disk as `.reject.jpg`: it came back as a gallery wall of strangers when the script calls for the SAME
+two people twenty times, and the repetition is the only thing that frame exists to say. Their grammar
+is not a look, it is a restriction: one small red practical,
+everything else black, framing that stays inside two metres, and no clean wide anywhere — the
+two wides are the stairwell and the exit and both are handheld. Check Danny's olive waxed
+jacket and satchel, Jodie's navy hoodie under the oversized olive jacket with the red bike
+light on her strap, and that the four-pint bottle is half full. The bottle is the same prop
+that sits untouched in the cops' cup holder in episode one's second beat: the object travels,
+the threads do not meet, and no scene draws the line.
+
+Five supplied fixes are recorded against the scenes they touch, and none of them invents a
+shot: the 1980 prologue pockets the tracker at shot 12 — he snaps it off the casing, looks at a
+small dull thing with a slow red pulse, and puts it in his jacket pocket without much thought —
+so there is no shot of a beacon on a carpet, because it is not there. One half-second flash is
+added near the end of the fame montage as shot 24f: 16mm handheld, over-exposed, his hands
+fastening something round a young woman's neck from behind, her laughing at him, the object
+never clear. And shot 31 is cut, so the sequence runs 30 → 32: USER PARAMETERS, ERROR, then the
+slow push to UNDO? — all of it logged on the 1980 tag, because the prologue itself is not boarded
+in this workspace.
+
+The consequence is accepted rather than papered over: the prologue no longer ends on an object
+that connects to Nina. Its last three shots are ERROR, UNDO? and NO, which is a stronger exit — a
+refusal, not a plant — and the connection lands on the audience in episode one's Nina scene, when
+she has the same object round her own neck. The alternative plant, a flash of the empty
+snapped-off gap in the casing, was considered and rejected. Do not reinstate it. the washing-up board's shot 23 is corrected so the pendant is her mother's and she
+always had it, never found on Deborah's bedside; the episode-four cold open is already at
+dusk, running continuously into Scene 2 at dusk into night, so no change was needed beyond
+the note; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has
+had to sit in Max's room for the eight weeks the doorstep scene counts — which also settles
+what the empty bedroom in the doorstep scene is.
+Twenty-one **kitchen studies** in `public/images/rapture/ep4-kitchen/` board the scene, one keyframe
+per shot; 15 and 20 are the last two placeholders. **Screen direction is fixed in this room: Martin sits
+screen left, Nina screen right, in every frame, from the wide to the insert.** A frame that flips them is
+a re-shoot, not an alternate angle — shot 15 was rejected for exactly that, and it matters most there,
+because the eight-second wait has to read as the same held silence the audience has been sitting in.
+Shot 20 was rejected twice for the same class of error: the card is a 50mm medium on her alone as she
+takes her own water container off the table, and the model keeps putting Martin in the frame. Check them against his grammar and nothing else: flat overhead fluorescent, no
+warmth, no composition anyone would call a composition, locked off, and nothing in the room is
+permitted to look eerie — a beautiful frame here is a wrong frame. Shots 1, 3 and 6 are the same
+table from three set-ups and must not read as re-shoots of one another. Eight studies have been
+rejected and are kept on disk as `.reject.jpg` rather than deleted, and not one of them is a matter of
+taste: 05 came back a wide when the card says medium, 07 landed on 03's camera position, 13 framed her
+opposite an empty chair when Martin is in the scene to lie to, 17 was cut as a 40mm two-shot and came
+back a wide duplicating 12, 12's first tap ran clear and its second did not run at all when shot 2
+established it brown, 20 came back a medium-wide when the card says a 50mm medium on her alone, and 22
+loaded the Transit with a bunch of bananas, weeds in the load bay and a second identical van in shot.
+A rejected study stays off the board instead of standing in because it looks nice. The mug in 09 is cold, skinned over and undrunk — the scene's only rhyme with
+the cops' bottle, and the rhyme is not underlined.
+
+- What Carl did is not decided, not hinted at and not recoverable from coverage. He nearly says it in shot
+  9 of the therapy class and the room reads the near-miss as modesty; the scene is written so that the
+  audience's curiosity is never paid off, and no later episode may pay it off as a fact. Whether Brian was
+  taken or simply went out is likewise unresolved: "He went out Tuesday" is the whole of it, and the scene's
+  rule is that nobody chases it. Whether Rosemary's dog story is true, and whether going up has anything to
+  do with being good, is not answered by the cosmology — the room's conclusion that they were kept back for
+  work is a conclusion the room arrived at, not a fact the show confirms.
+
+# Boundaries not silently resolved
+
+- Episode four scene 4 does not say which bedroom the pendant wanted, whether there was one, or
+  why a laid table for four stops her. The boy inferred by shot 15 and the boy in the school
+  photograph in shot 29 are uncast and are deliberately not Max; the vision's `PTOR` fragment and
+  the correctly spelled poster in shot 24 are held side by side and never reconciled. The dog that
+  barks off shot 13 is not hers. Max has no identity sheet at all, so the boy caught mid-blink in shot
+  29 cannot drift into being him. The scene keeps thirty identical houses as written; no number was
+  invented.
+- Episode four scene 5 does not say whether her cul-de-sac is the dusk street of scene 4: the
+  light and the row of houses are different and no link is asserted. The machine is never
+  named on screen, the snapped-off badge gap is never mentioned by anybody in any scene, the
+  brown water is not escalated into an event, and the auction is only ever an auction.
+  Martin's son is not cast, not flashbacked and not in the room; his eight weeks of silence
+  are his own and are not explained to her.
 - Max: flashbacks only, alive and unreachable. Episode eight says he knows the
   fields; no present-day reunion or delivery mechanism has been invented.
 - 1980, death five years later and forty-five years later are retained as written;
