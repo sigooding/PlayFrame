@@ -31,7 +31,6 @@ workspace, not just a folder of images:
   is shot at dusk; the doorstep is where her grammar and Martin's share one building and
   refuse to resolve, her symmetrical daylight on the street and his flat fluorescent indoors
   never blended in a single shot.
-
 - **Cold opens:** three numbered scenes — the episode-four Pat-alone open
   (12 dialogue-free surveillance shots, fully studied), the
   episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
