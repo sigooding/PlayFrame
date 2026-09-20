@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAPTURE — Ep.101 Cold Open</title>
+<style>
+  :root{
+    --bg:#0a0c10; --panel:#12151b; --line:#232a33;
+    --amber:#e8a33d; --amber-soft:#f2b25c;
+    --text:#cfd3d8; --muted:#8b9199; --bone:#cdc7bb;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.6 ui-sans-serif,system-ui,"Helvetica Neue",Arial,sans-serif}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px 90px}
+  header{padding:70px 0 30px;text-align:center}
+  header h1{margin:0;font-weight:300;letter-spacing:.55em;text-indent:.55em;
+    font-size:clamp(30px,6vw,54px);color:var(--bone)}
+  header .sub{margin-top:14px;letter-spacing:.35em;text-indent:.35em;
+    font-size:12px;color:var(--muted);text-transform:uppercase}
+  header .meta{margin-top:26px}
+  button{cursor:pointer;background:none;border:1px solid var(--line);color:var(--amber-soft);
+    letter-spacing:.25em;text-indent:.25em;text-transform:uppercase;font-size:11px;
+    padding:12px 26px;transition:border-color .2s,color .2s}
+  button:hover{border-color:var(--amber);color:var(--amber)}
+  nav{display:flex;gap:14px;justify-content:center;margin:34px 0 0;flex-wrap:wrap}
+  nav a{color:var(--muted);text-decoration:none;letter-spacing:.25em;text-transform:uppercase;
+    font-size:11px;border:1px solid var(--line);padding:10px 18px;transition:border-color .2s,color .2s}
+  nav a:hover{color:var(--amber);border-color:var(--amber)}
+  h2{font-weight:400;letter-spacing:.3em;text-transform:uppercase;font-size:12px;
+    color:var(--amber);margin:64px 0 18px;border-top:1px solid var(--line);padding-top:26px}
+  .bible{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;
+    background:var(--line);border:1px solid var(--line)}
+  .bible div{background:var(--panel);padding:14px 16px}
+  .bible b{display:block;color:var(--bone);font-weight:600;font-size:11px;
+    letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
+  .bible span{color:var(--muted);font-size:13px}
+  .cast{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:start}
+  @media(max-width:800px){.cast{grid-template-columns:1fr}}
+  .cast img{width:100%;display:block;border:1px solid var(--line)}
+  .cast p{margin:0 0 14px;font-size:13.5px;color:var(--muted)}
+  .cast p b{color:var(--bone);letter-spacing:.12em}
+  .shot{margin:0 0 34px;background:var(--panel);border:1px solid var(--line)}
+  .shot .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+    padding:12px 16px;border-bottom:1px solid var(--line)}
+  .shot .num{color:var(--amber);font-size:12px;letter-spacing:.2em;margin-right:6px}
+  .chip{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+    border:1px solid var(--line);padding:4px 9px}
+  .chip.lens{color:var(--amber-soft);border-color:#3a3325}
+  .shot figure{margin:0;position:relative;background:#000}
+  .shot img{display:block;width:100%;aspect-ratio:2.39/1;object-fit:cover;cursor:zoom-in;
+    filter:saturate(.96)}
+  .shot figcaption{padding:14px 18px 16px;color:var(--muted);font-size:14px}
+  .shot figcaption em{color:var(--bone);font-style:normal}
+  .note{margin:10px 0 0;font-size:12px;color:var(--muted)}
+  footer{margin-top:70px;border-top:1px solid var(--line);padding-top:22px;
+    color:var(--muted);font-size:12px;letter-spacing:.08em}
+  /* player overlay */
+  #player{position:fixed;inset:0;background:#000f;display:none;z-index:50;
+    flex-direction:column;align-items:center;justify-content:center;gap:14px}
+  #player.on{display:flex}
+  #player img{max-width:94vw;max-height:76vh;border:1px solid #1c2129;box-shadow:0 30px 80px #000}
+  #player .cap{max-width:900px;text-align:center;color:var(--muted);font-size:13px;padding:0 16px}
+  #player .cap .n{color:var(--amber);letter-spacing:.2em;margin-right:10px}
+  #player .ctl{display:flex;gap:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>RAPTURE</h1>
+    <div class="sub">Ep.101 — Cold Open · Ext. Side Street — Night</div>
+    <div class="meta"><button id="playBtn">▶ Run the sequence</button></div>
+  </header>
+
+  <nav>
+    <a href="#cold-open">Cold Open</a>
+    <a href="#act-1-sc-1">Act One · Scene 1</a>
+  </nav>
+
+  <h2>The Look</h2>
+  <div class="bible">
+    <div><b>Format</b><span>2.39:1 anamorphic widescreen</span></div>
+    <div><b>Grade</b><span>Sodium amber key, halation bloom; inky blue-grey shadows</span></div>
+    <div><b>Texture</b><span>Painterly nocturne, fine grain, mirror-wet asphalt</span></div>
+    <div><b>Score</b><span>None. The knife's ring at shot 10 is the only real sound.</span></div>
+    <div><b>The Event</b><span>No flash, no glow, no wind. The camera just loses him.</span></div>
+    <div><b>Camera</b><span>Handheld where marked; static frames CCTV-still. After 9 it hunts.</span></div>
+  </div>
+
+  <h2>Cast</h2>
+  <div class="cast">
+    <img src="shots/character-sheet.png" alt="Character reference sheet: the victim and the mugger">
+    <div>
+      <p><b>THE VICTIM — woman, mid-70s.</b> Short neatly set white hair, wire-rimmed glasses, good dove-grey wool coat, muted floral silk scarf, dark woollen skirt, sensible black lace-up shoes, worn brown leather clasp handbag over her left forearm. She never panics. Almost disappointed in him.</p>
+      <p><b>THE MUGGER — male, 19.</b> Skinny, hood of a black track top up, pale face with acne scarring, dark circles, thin gold earring, black tracksuit bottoms with a white piping line. Knife held low and tight to his own body — never raised. More frightened than she is.</p>
+      <p class="note">Continuity spines — the handbag: forearm → unclipped → held out → still offered → clipped shut → receives the knife in a tissue. The knife: low and tight → shaking → ringing on tarmac → her shoe beside it → lifted in a tissue, into her bag. The street keeps nothing of him.</p>
+    </div>
+  </div>
+
+  <section id="cold-open" data-scene="COLD OPEN">
+  <h2>Cold Open — 19 Shots</h2>
+
+  <div class="shot"><div class="bar"><span class="num">01</span><span class="chip">Static Wide</span><span class="chip lens">28mm</span><span class="chip">locked off · across the road</span></div>
+    <figure><img src="shots/shot-01.jpg" alt="Shot 1"></figure>
+    <figcaption>Bins. A cashpoint light. An <em>OLD WOMAN</em> (70s, good coat, handbag over her forearm) walks toward camera at her own pace. Hold — like CCTV, like nothing.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">02</span><span class="chip">Medium Tracking</span><span class="chip lens">40mm</span><span class="chip">handheld · alongside</span></div>
+    <figure><img src="shots/shot-02.jpg" alt="Shot 2"></figure>
+    <figcaption>Loose. She's in no hurry.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">03</span><span class="chip">Whip Pan</span><span class="chip lens">handheld</span><span class="chip">hard left</span></div>
+    <figure><img src="shots/shot-03.jpg" alt="Shot 3"></figure>
+    <figcaption>A figure out of a doorway. Caught badly, half out of frame.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">04</span><span class="chip">Handheld Medium</span><span class="chip lens">35mm</span><span class="chip">close · unsteady · on the mugger</span></div>
+    <figure><img src="shots/shot-04.jpg" alt="Shot 4"></figure>
+    <figcaption>Young, wired, hood up. Knife held low and tight to his body. Under-rehearsed. More frightened than she is.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">05</span><span class="chip">Reverse</span><span class="chip lens">50mm</span><span class="chip">handheld · on her</span></div>
+    <figure><img src="shots/shot-05.jpg" alt="Shot 5"></figure>
+    <figcaption>She stops. Takes him in. Not panicking. Almost disappointed in him.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">06</span><span class="chip">Insert</span><span class="chip lens">85mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/shot-06.jpg" alt="Shot 6"></figure>
+    <figcaption>The knife. Shaking. <span class="note">Derived as a 2.39 crop of shot 04 — same hand, same knife, same grade.</span></figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">07</span><span class="chip">Two-Shot</span><span class="chip lens">35mm</span><span class="chip">handheld · tight · awkward</span></div>
+    <figure><img src="shots/shot-07.jpg" alt="Shot 7"></figure>
+    <figcaption>Traffic covers the words. He jerks his free hand — <em>bag</em>. She's already unclipping it, calmly, like she's been asked for a bus pass.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">08</span><span class="chip">Insert</span><span class="chip lens">65mm</span><span class="chip">static</span></div>
+    <figure><img src="shots/shot-08.jpg" alt="Shot 8"></figure>
+    <figcaption>The handbag, held out toward him. Her other hand still steadying the clasp.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">09</span><span class="chip">Close</span><span class="chip lens">65mm</span><span class="chip">handheld · on the mugger</span></div>
+    <figure><img src="shots/shot-09.jpg" alt="Shot 9"></figure>
+    <figcaption>Mid-word. Mouth open. Gone. No flash. No sound. The camera drifts, hunting for him, the way an operator would if their subject walked out of frame.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">10</span><span class="chip">Insert</span><span class="chip lens">65mm</span><span class="chip">static · low</span></div>
+    <figure><img src="shots/shot-10.jpg" alt="Shot 10"></figure>
+    <figcaption>The knife hits the pavement. Bounces once. Rings. Still. <em>The only real sound in the sequence.</em></figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">11</span><span class="chip">Close</span><span class="chip lens">65mm</span><span class="chip">handheld · on her</span></div>
+    <figure><img src="shots/shot-11.jpg" alt="Shot 11"></figure>
+    <figcaption>Arm still extended. Bag still offered. She hasn't moved.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">12</span><span class="chip">Wide</span><span class="chip lens">28mm</span><span class="chip">static · anchor of shot 1</span></div>
+    <figure><img src="shots/shot-12.jpg" alt="Shot 12"></figure>
+    <figcaption>Empty street. One woman alone in the middle of it, holding out a handbag. Hold. Nothing comes.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">13</span><span class="chip">Medium</span><span class="chip lens">40mm</span><span class="chip">handheld · slow orbit</span></div>
+    <figure><img src="shots/shot-13.jpg" alt="Shot 13"></figure>
+    <figcaption>She turns. Looks behind her. Looks up — briefly, instinctively — then slightly embarrassed about having done it. Looks for someone to tell. Nobody.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">14</span><span class="chip">Close</span><span class="chip lens">65mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/shot-14.jpg" alt="Shot 14"></figure>
+    <figcaption>She looks at the empty patch of pavement where he was. Concern. For <em>him</em>.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">15</span><span class="chip">Medium</span><span class="chip lens">40mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/shot-15.jpg" alt="Shot 15"></figure>
+    <figcaption>She clips her handbag shut. Smooths her coat. Looks down.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">16</span><span class="chip">Insert</span><span class="chip lens">100mm macro</span><span class="chip">static</span></div>
+    <figure><img src="shots/shot-16.jpg" alt="Shot 16"></figure>
+    <figcaption>The knife on the tarmac. Her shoe beside it.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">17</span><span class="chip">Medium</span><span class="chip lens">40mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/shot-17.jpg" alt="Shot 17"></figure>
+    <figcaption>She takes a tissue from her sleeve, crouches carefully — one hand on her knee — picks the knife up in the tissue, and puts it in her bag.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">18</span><span class="chip">Wide</span><span class="chip lens">28mm</span><span class="chip">static · anchor</span></div>
+    <figure><img src="shots/shot-18.jpg" alt="Shot 18"></figure>
+    <figcaption>She walks out of frame at her own pace. Empty street, lit orange. Hold.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">19</span><span class="chip">Black</span><span class="chip">title card</span></div>
+    <figure><img src="shots/shot-19-title.png" alt="Shot 19 — title card" style="object-fit:contain;background:#000"></figure>
+    <figcaption>Black. Title card.</figcaption></div>
+
+  </section>
+
+  <section id="act-1-sc-1" data-scene="ACT 1 · SC 1">
+  <h2>Act One, Scene 1 — St Jude's House · Morning (all 22 shots on disk)</h2>
+  <p class="note" style="margin:0 0 26px">The only place in Nina's thread that moves. Handheld, busy, following her through the building — the stillness later means nothing unless we've seen this. Built as two or three long takes; these frames are beats within them.</p>
+  <div style="margin:0 0 30px"><img src="shots/a1s1-cast.png" alt="St Jude's cast sheet: Nina, Col, the volunteer" style="width:100%;display:block;border:1px solid var(--line)"></div>
+
+  <div class="shot"><div class="bar"><span class="num">01</span><span class="chip">Ext. Wide</span><span class="chip lens">28mm</span><span class="chip">handheld · low</span></div>
+    <figure><img src="shots/a1s1-01.jpg" alt="A1S1 shot 1"></figure>
+    <figcaption>Pebbledash, a wheelie bin, a hand-painted sign. Somebody's trainers on the wall. A window open with steam coming out of it. Noise from inside.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">02</span><span class="chip">Int. Kitchen</span><span class="chip lens">35mm</span><span class="chip">handheld · following</span></div>
+    <figure><img src="shots/a1s1-02.jpg" alt="A1S1 shot 2"></figure>
+    <figcaption>Push through the door into it. Nine people. Toast, radio, an argument. Camera finds <em>NINA</em> (45) at the sink with her sleeves up. — <em>RESIDENT (o.s.):</em> I'm only saying it was in my room — <em>NINA:</em> It's in the lounge, under the settee, where you left it. Sit down.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">03</span><span class="chip">Close</span><span class="chip lens">50mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-03.jpg" alt="A1S1 shot 3"></figure>
+    <figcaption>Her. Wet hands. Not warm, not unkind. Entirely occupied.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">04</span><span class="chip">Handheld Follow</span><span class="chip lens">35mm</span><span class="chip">into the hall</span></div>
+    <figure><img src="shots/a1s1-04.jpg" alt="A1S1 shot 4"></figure>
+    <figcaption>She walks and people intercept her. She resolves each in about four words and keeps moving. A woman shows her a letter. She reads it while walking. — <em>NINA:</em> That's nothing. Bin it. <em>WOMAN:</em> It says final — <em>NINA:</em> It's always final. Bin it.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">05</span><span class="chip">Medium</span><span class="chip lens">50mm</span><span class="chip">foot of the stairs</span></div>
+    <figure><img src="shots/a1s1-05.jpg" alt="A1S1 shot 5"></figure>
+    <figcaption>She stops. Looks up at <em>COL</em> coming down — tidy, shaved, holding a mug carefully. — <em>NINA:</em> You look well. <em>COL:</em> Four weeks Thursday. <em>NINA:</em> I know what day it is, Col. … Don't get comfortable.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">06</span><span class="chip">Insert</span><span class="chip lens">85mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-06.jpg" alt="A1S1 shot 6"></figure>
+    <figcaption>His hand on the mug. Steady. Just about.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">07</span><span class="chip">Int. Office</span><span class="chip lens">40mm</span><span class="chip">handheld · static-ish</span></div>
+    <figure><img src="shots/a1s1-07.jpg" alt="A1S1 shot 7"></figure>
+    <figcaption>Cramped. Paperwork in drifts. She's on a landline, wedged between a filing cabinet and a fax machine that shouldn't still exist. — <em>NINA (warm, pleasant, completely lying):</em> Fourteen. No, fourteen. Well, your records are wrong then, love. … Send someone if you like. Tuesday's no good. <em>(She hangs up. Writes "22" in the ledger.)</em></figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">08</span><span class="chip">Insert</span><span class="chip lens">100mm macro</span><span class="chip">static</span></div>
+    <figure><img src="shots/a1s1-08.jpg" alt="A1S1 shot 8"></figure>
+    <figcaption>The ledger. Neat handwriting. Columns. Years of it.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">09</span><span class="chip">Handheld Follow</span><span class="chip lens">28mm</span><span class="chip">back into the hall</span></div>
+    <figure><img src="shots/a1s1-09.jpg" alt="A1S1 shot 9"></figure>
+    <figcaption>She's got a crate of tinned food on her hip. A young <em>VOLUNTEER</em> (20s, lanyard, keen) appears. — Let me take that. / <em>NINA:</em> No. / It's heavy. / <em>NINA:</em> I know. / I'll do the upstairs bins then! / <em>NINA (not turning):</em> Did them.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">10</span><span class="chip">Medium</span><span class="chip lens">50mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-10.jpg" alt="A1S1 shot 10"></figure>
+    <figcaption>The volunteer, left standing. He puts his hands in his pockets. He is going to be gone in nine minutes and nobody will ever thank him.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">11</span><span class="chip">Int. Utility</span><span class="chip lens">40mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-11.jpg" alt="A1S1 shot 11"></figure>
+    <figcaption>She dumps the crate. A RESIDENT (60s, cardigan, one of the long-termers) is running a tap. It's spluttering. — Pressure's gone again. / <em>NINA:</em> I'll look at it. / You said that Tuesday. / <em>NINA:</em> And I'll look at it.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">12</span><span class="chip">Insert</span><span class="chip lens">100mm macro</span><span class="chip">static</span></div>
+    <figure><img src="shots/a1s1-12.jpg" alt="A1S1 shot 12"></figure>
+    <figcaption>The tap. A cough of air. Water, then not, then water. <em>(The season's clock, starting here, unnoticed.)</em></figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">13</span><span class="chip">Int. Dining · Wide</span><span class="chip lens">24mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-13.jpg" alt="A1S1 shot 13"></figure>
+    <figcaption>The long table. Twenty people at it. Genuine noise and warmth — this is the one shot that has to make the audience like the place.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">14</span><span class="chip">Medium Two-Shot</span><span class="chip lens">50mm</span><span class="chip">handheld · sat down</span></div>
+    <figure><img src="shots/a1s1-14.jpg" alt="A1S1 shot 14"></figure>
+    <figcaption>A YOUNG WOMAN (20s) beside her. Quiet. — Can I ask you something religious? / <em>NINA:</em> You can ask. / Why'd he let it happen. To my mum. / <em>NINA:</em> I don't know. … If anyone tells you they know, they're selling you something. Eat your breakfast.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">15</span><span class="chip">Close</span><span class="chip lens">65mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-15.jpg" alt="A1S1 shot 15"></figure>
+    <figcaption>Nina. A flicker of something — she knows that wasn't enough. She lets it go.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">16</span><span class="chip">Wide</span><span class="chip lens">24mm</span><span class="chip">handheld · dining</span></div>
+    <figure><img src="shots/a1s1-16.jpg" alt="A1S1 shot 16"></figure>
+    <figcaption><em>THE RAPTURE.</em> Nina stands. Reaches for a stack of plates. Someone at the far end is mid-anecdote. — so I said to him, that's not a dog, mate, that's a —</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">17</span><span class="chip">Handheld</span><span class="chip lens">35mm</span><span class="chip">camera hunts</span></div>
+    <figure><img src="shots/a1s1-17.jpg" alt="A1S1 shot 17"></figure>
+    <figcaption>Nothing. No flash. No sound. No wind. The table is empty. Twenty chairs pushed back. Food on plates. One knife still spinning on a plate rim. The camera keeps operating — drifts, corrects, hunts along the length of the table for people who've left frame.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">18</span><span class="chip">Close</span><span class="chip lens">65mm</span><span class="chip">handheld</span></div>
+    <figure><img src="shots/a1s1-18.jpg" alt="A1S1 shot 18"></figure>
+    <figcaption>Nina. Both hands on a stack of plates. She hasn't moved. She's still angled toward the man who was talking.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">19</span><span class="chip">Insert</span><span class="chip lens">85mm</span><span class="chip">static</span></div>
+    <figure><img src="shots/a1s1-19.jpg" alt="A1S1 shot 19"></figure>
+    <figcaption>A cup, still rocking. It settles.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">20</span><span class="chip">Wide</span><span class="chip lens">24mm</span><span class="chip">handheld · steadying</span></div>
+    <figure><img src="shots/a1s1-20.jpg" alt="A1S1 shot 20"></figure>
+    <figcaption>She's alone in a room laid for twenty. The radio is still going in the kitchen.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">21</span><span class="chip">Handheld Follow</span><span class="chip lens">35mm</span><span class="chip">the last handheld in her thread</span></div>
+    <figure><img src="shots/a1s1-21.jpg" alt="A1S1 shot 21"></figure>
+    <figcaption>She walks out. Kitchen: empty, tap running. Stairs: a mug on the third step, upright, full. Utility: the crate where she dumped it. The camera settles, and stops moving, and doesn't move again.</figcaption></div>
+
+  <div class="shot"><div class="bar"><span class="num">22</span><span class="chip">Static Wide</span><span class="chip lens">28mm</span><span class="chip">locked off · corridor</span></div>
+    <figure><img src="shots/a1s1-22.jpg" alt="A1S1 shot 22"></figure>
+    <figcaption>Long hallway. Doors open. Sunlight in bars. Nina small at the far end. Hold. <em>(Shot 1 of the aftermath list — from here on, her thread is locked off and wide.)</em></figcaption></div>
+  </section>
+
+  <footer>RAPTURE · Ep.101 · full script &amp; production logs in SCRIPT.md and ACT1-SC1.md · frames in shots/</footer>
+</div>
+
+<div id="player">
+  <img id="pImg" src="" alt="">
+  <div class="cap"><span class="n" id="pNum"></span><span id="pCap"></span></div>
+  <div class="ctl">
+    <button id="pPrev">‹ Prev</button>
+    <button id="pPlay">❚❚ Pause</button>
+    <button id="pNext">Next ›</button>
+    <button id="pClose">Close</button>
+  </div>
+</div>
+
+<script>
+  const shots=[...document.querySelectorAll('.shot')].map(el=>{
+    const sec=el.closest('section');
+    return {
+      src:el.querySelector('img').src,
+      num:el.querySelector('.num').textContent,
+      scene:sec?sec.dataset.scene:'',
+      cap:el.querySelector('figcaption').textContent.replace(/\s+/g,' ').trim()
+    };
+  });
+  const P=document.getElementById('player'),I=document.getElementById('pImg'),
+        N=document.getElementById('pNum'),C=document.getElementById('pCap');
+  let i=0,timer=null,playing=false;
+  function show(n){i=(n+shots.length)%shots.length;
+    I.src=shots[i].src;N.textContent=(shots[i].scene?shots[i].scene+' · ':'')+'SHOT '+shots[i].num;C.textContent=shots[i].cap;}
+  function tick(){show(i+1);}
+  function setPlay(on){playing=on;
+    document.getElementById('pPlay').textContent=on?'❚❚ Pause':'▶ Play';
+    if(on){timer=setInterval(tick,3000);}else{clearInterval(timer);timer=null;}}
+  function open(n){show(n);P.classList.add('on');setPlay(true);}
+  function close(){setPlay(false);P.classList.remove('on');}
+  document.getElementById('playBtn').onclick=()=>open(0);
+  document.getElementById('pPrev').onclick=()=>show(i-1);
+  document.getElementById('pNext').onclick=()=>show(i+1);
+  document.getElementById('pPlay').onclick=()=>setPlay(!playing);
+  document.getElementById('pClose').onclick=close;
+  document.querySelectorAll('.shot img').forEach((img,k)=>img.onclick=()=>open(k));
+  addEventListener('keydown',e=>{
+    if(!P.classList.contains('on'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowRight')show(i+1);
+    if(e.key==='ArrowLeft')show(i-1);
+    if(e.key===' ')setPlay(!playing);
+  });
+</script>
+</body>
+</html>
