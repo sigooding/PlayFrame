@@ -413,7 +413,8 @@ assert(csv.includes("Forty-one, or forty-seven?"));
 assert(csv.includes("Bag for life"));
 assert(csv.includes("I can only apologise"));
 assert(csv.includes("Are we looking for somewhere?") && csv.includes("These things take time"), "Scene 4 dialogue reaches the shot-list CSV");
-assert(csv.includes("Housing estate") || csv.includes("housing estate"), "Scene 4 is in the shot list");
+assert(csv.includes("EXT./INT. A HOUSING ESTATE") && csv.includes("Dusk, not daylight, for the first time in her thread"), "Scene 4 carries its location and its dusk lighting direction into the shot list");
+assert(csv.includes("Blue hour") && csv.includes("rapture-ep4-estate") === false, "Scene 4 rows are blue-hour exteriors and practical interiors");
 assert(buildFramePrompt(project, tap, "generic").includes("approximately 11 seconds"));
 pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction, empty cast and estimated timing`);
 

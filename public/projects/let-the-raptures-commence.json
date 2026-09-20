@@ -8584,9 +8584,9 @@
     {
       "id": "rapture-ep4est-28",
       "sceneId": "rapture-ep4-estate",
-      "title": "The room is just a room (keyframe missing)",
+      "title": "The room is just a room",
       "description": "Nothing. The room is just a room.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/28-just-a-room.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -8595,18 +8595,18 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 28-just-a-room.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 28 of 36. Add the study and rebuild.\n\nThe same room wider and entirely unremarkable. Hold on an ordinary bedroom until the hold is uncomfortable.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n28. STATIC WIDE — INT. FOURTH HOUSE — 28mm, locked off\nNothing. The room is just a room."
+      "notes": "The same room wider and entirely unremarkable. Hold on an ordinary bedroom until the hold is uncomfortable.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n28. STATIC WIDE — INT. FOURTH HOUSE — 28mm, locked off\nNothing. The room is just a room."
     },
     {
       "id": "rapture-ep4est-29",
       "sceneId": "rapture-ep4-estate",
-      "title": "Mid-blink (keyframe missing)",
+      "title": "Mid-blink",
       "description": "On a shelf: a framed school photograph. A boy, twelve or so, in a blazer, mid-blink.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/29-mid-blink.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -8615,18 +8615,18 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 29-mid-blink.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 29 of 36. Add the study and rebuild.\n\nA framed school photograph on a shelf: a boy of about twelve in a blazer, caught mid-blink. Wrong boy on purpose; do not match him to any cast face.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n29. INSERT — INT. FOURTH HOUSE — 85mm, static\nOn a shelf: a framed school photograph. A boy, twelve or so, in a blazer, mid-blink."
+      "notes": "A framed school photograph on a shelf: a boy of about twelve in a blazer, caught mid-blink. Wrong boy on purpose; do not match him to any cast face.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n29. INSERT — INT. FOURTH HOUSE — 85mm, static\nOn a shelf: a framed school photograph. A boy, twelve or so, in a blazer, mid-blink."
     },
     {
       "id": "rapture-ep4est-30",
       "sceneId": "rapture-ep4-estate",
-      "title": "Wrong boy. Wrong house. (keyframe missing)",
+      "title": "Wrong boy. Wrong house.",
       "description": "Wrong boy. Wrong house. Wrong poster. She's in a dead stranger's bedroom in the dark for no reason.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/30-wrong-boy.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "lens": "85mm",
@@ -8635,20 +8635,20 @@
       "style": "cinematic",
       "duration": 11,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 30-wrong-boy.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 30 of 36. Add the study and rebuild.\n\nShe is in a dead stranger's bedroom in the dark for no reason and the flatness is the comedy. Her line to the ceiling is sharp, not despairing.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 11s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n30. CLOSE — INT. FOURTH HOUSE — 65mm, static, on NINA\nWrong boy. Wrong house. Wrong poster. She's in a dead stranger's bedroom in the dark for no reason.\n   NINA: (to the ceiling, sharply) There's thirty of them on this road."
+      "notes": "She is in a dead stranger's bedroom in the dark for no reason and the flatness is the comedy. Her line to the ceiling is sharp, not despairing.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 11s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n30. CLOSE — INT. FOURTH HOUSE — 65mm, static, on NINA\nWrong boy. Wrong house. Wrong poster. She's in a dead stranger's bedroom in the dark for no reason.\n   NINA: (to the ceiling, sharply) There's thirty of them on this road."
     },
     {
       "id": "rapture-ep4est-31",
       "sceneId": "rapture-ep4-estate",
-      "title": "Nothing answers, again (keyframe missing)",
+      "title": "Nothing answers, again",
       "description": "Nothing answers.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/31-nothing-answers-again.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -8657,18 +8657,18 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 31-nothing-answers-again.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 31 of 36. Add the study and rebuild.\n\nThe same dead-centre framing as shot 13, indoors. The second silence is as unhelpful as the first and is not answered by anything.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n31. STATIC WIDE — INT. FOURTH HOUSE — 24mm, locked off\nNothing answers."
+      "notes": "The same dead-centre framing as shot 13, indoors. The second silence is as unhelpful as the first and is not answered by anything.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n31. STATIC WIDE — INT. FOURTH HOUSE — 24mm, locked off\nNothing answers."
     },
     {
       "id": "rapture-ep4est-32",
       "sceneId": "rapture-ep4-estate",
-      "title": "These things take time (keyframe missing)",
+      "title": "These things take time",
       "description": "She comes out. Alan is standing in the middle of the road facing the wrong way. The dog is barking in the bus.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/32-facing-the-wrong-way.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -8677,20 +8677,20 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [
         "rapture-alan"
       ],
-      "notes": "KEYFRAME MISSING — 32-facing-the-wrong-way.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 32 of 36. Add the study and rebuild.\n\nShe comes out into the headlights. Alan stands dead centre in the road facing the wrong way, perfectly content. The dog barks inside the bus, visible through the passenger-side window, and the driver’s door is still open from shot 4.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n32. STATIC WIDE — EXT. CUL-DE-SAC — 28mm, locked off, headlights\nShe comes out. Alan is standing in the middle of the road facing the wrong way. The dog is barking in the bus.\n   ALAN: Any luck?\n   NINA: No.\n   ALAN: (cheerfully) These things take time."
+      "notes": "She comes out into the headlights. Alan stands dead centre in the road facing the wrong way, perfectly content. The dog barks inside the bus and the driver’s door is still open from shot 4. In the current study the dog is framed at the windscreen rather than the passenger-side window and Alan reads as facing back along the road rather than away from the houses: re-shoot before approval, or accept the funnier reading and record it here.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n32. STATIC WIDE — EXT. CUL-DE-SAC — 28mm, locked off, headlights\nShe comes out. Alan is standing in the middle of the road facing the wrong way. The dog is barking in the bus.\n   ALAN: Any luck?\n   NINA: No.\n   ALAN: (cheerfully) These things take time."
     },
     {
       "id": "rapture-ep4est-33",
       "sceneId": "rapture-ep4-estate",
-      "title": "Genuinely considers it (keyframe missing)",
+      "title": "Genuinely considers it",
       "description": "She looks at him. Genuinely considers leaving him on this estate.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/33-properly-considering.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "lens": "85mm",
@@ -8699,20 +8699,20 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 33-properly-considering.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 33 of 36. Add the study and rebuild.\n\nShe looks at him and properly considers leaving him on this estate. Same register as the lockup's consideration; she never decides on her face, she just opens the door.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n33. CLOSE — EXT. CUL-DE-SAC — 65mm, static, on NINA\nShe looks at him. Genuinely considers leaving him on this estate."
+      "notes": "She looks at him and properly considers leaving him on this estate. Same register as the lockup's consideration; she never decides on her face, she just opens the door.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n33. CLOSE — EXT. CUL-DE-SAC — 65mm, static, on NINA\nShe looks at him. Genuinely considers leaving him on this estate."
     },
     {
       "id": "rapture-ep4est-34",
       "sceneId": "rapture-ep4-estate",
-      "title": "I'd wait. (keyframe missing)",
+      "title": "I'd wait.",
       "description": "Both in. She doesn't start the engine. She sits with both hands on the wheel.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/34-id-wait.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "35mm",
@@ -8721,21 +8721,21 @@
       "style": "cinematic",
       "duration": 34,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [
         "rapture-nina",
         "rapture-alan"
       ],
-      "notes": "KEYFRAME MISSING — 34-id-wait.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 34 of 36. Add the study and rebuild.\n\nBoth in, engine off, both hands on the wheel. Same cab geography as shot 2: Nina on the far side at the wheel, the front passenger seat empty, Alan and the dog on the bench behind it on the passenger side, dusk through the windscreen. The whole exchange plays in one static setup with no cutaways; Alan answers with no hesitation at all.\n\nSource lens: 40mm; closest library lens 35mm shown.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 34s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n34. STATIC MEDIUM — INT. BUS — 40mm, locked off\nBoth in. She doesn't start the engine. She sits with both hands on the wheel.\n   NINA: Alan.\n   ALAN: Yes.\n   NINA: If somebody sent you somewhere and didn't tell you where, what would you do?\n   ALAN: (no hesitation at all) I'd wait.\n   NINA: For how long?\n   ALAN: (warmly) Well. As long as it took."
+      "notes": "Both in, engine off, both hands on the wheel. Same cab geography as shot 2: Nina on the far side at the wheel, the front passenger seat empty, Alan and the dog on the bench behind it on the passenger side, dusk through the windscreen. The whole exchange plays in one static setup with no cutaways; Alan answers with no hesitation at all.\n\nSource lens: 40mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 34s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n34. STATIC MEDIUM — INT. BUS — 40mm, locked off\nBoth in. She doesn't start the engine. She sits with both hands on the wheel.\n   NINA: Alan.\n   ALAN: Yes.\n   NINA: If somebody sent you somewhere and didn't tell you where, what would you do?\n   ALAN: (no hesitation at all) I'd wait.\n   NINA: For how long?\n   ALAN: (warmly) Well. As long as it took."
     },
     {
       "id": "rapture-ep4est-35",
       "sceneId": "rapture-ep4-estate",
-      "title": "Can't argue with any of it (keyframe missing)",
+      "title": "Can't argue with any of it",
       "description": "A woman who has just been given the worst advice available, by a man with no interior, and can't argue with any of it.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/35-worst-advice.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "lens": "85mm",
@@ -8744,20 +8744,20 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 35-worst-advice.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 35 of 36. Add the study and rebuild.\n\nA woman who has just been given the worst advice available by a man with no interior. Hold on the arithmetic of it, not on hurt.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n35. CLOSE — INT. BUS — 65mm, static, on NINA\nA woman who has just been given the worst advice available, by a man with no interior, and can't argue with any of it."
+      "notes": "A woman who has just been given the worst advice available by a man with no interior. Hold on the arithmetic of it, not on hurt.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n35. CLOSE — INT. BUS — 65mm, static, on NINA\nA woman who has just been given the worst advice available, by a man with no interior, and can't argue with any of it."
     },
     {
       "id": "rapture-ep4est-36",
       "sceneId": "rapture-ep4-estate",
-      "title": "Headlights receding (keyframe missing)",
+      "title": "Headlights receding",
       "description": "The bus pulling away down a long dark road, headlights receding.",
-      "image": "",
+      "image": "/images/rapture/ep4-estate/36-receding.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "135mm",
@@ -8766,11 +8766,11 @@
       "style": "cinematic",
       "duration": 12,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry and procedural at the wrong hour: she is unimpressed, never spooked, and the estate never explains itself",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 36-receding.jpg is not in public/images/rapture/ep4-estate, so this card holds slot 36 of 36. Add the study and rebuild.\n\nLong lens: the bus, tiny, pulling away down a long dark road, headlights going away from camera. Hold. The scene ends as the lockup did, at the wrong hour.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n36. STATIC WIDE — EXT. ROAD — 135mm, locked off\nThe bus pulling away down a long dark road, headlights receding.\nHold."
+      "notes": "Long lens: the bus, tiny, pulling away down a long dark road, headlights going away from camera. Hold. The scene ends as the lockup did, at the wrong hour.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, symmetrical, dead centre. The camera never follows Nina. Long lenses for the road. Dusk, not daylight, for the first time in her thread: her light is supposed to be flat and bright, and the wrongness of the hour is never remarked upon. Only the vision breaks the grammar: handheld, broken, wrong aspect ratio, dropped frames, blown out, a hiss. Dry and procedural; Nina audits thirty identical houses the way she would check a building for a gas leak, and is never amazed, never afraid.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n36. STATIC WIDE — EXT. ROAD — 135mm, locked off\nThe bus pulling away down a long dark road, headlights receding.\nHold."
     }
   ],
   "characters": [
@@ -9267,7 +9267,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, with 27 AI studies on disk and 9 placeholder cards still to generate; the hour is the only thing about her grammar that has changed. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -9405,7 +9405,7 @@
         "Needs review"
       ],
       "connections": [],
-      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers. 9 estate keyframes remain outstanding: The room is just a room, Mid-blink, Wrong boy. Wrong house., Nothing answers, again, These things take time, Genuinely considers it, I'd wait., Can't argue with any of it, Headlights receding."
+      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers."
     }
   ],
   "brainstorm": [
@@ -9890,6 +9890,51 @@
           "id": "look-rapture-ep4est-27",
           "image": "/images/rapture/ep4-estate/27-is-it-this-one.jpg",
           "caption": "Is it this one? — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-28",
+          "image": "/images/rapture/ep4-estate/28-just-a-room.jpg",
+          "caption": "The room is just a room — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-29",
+          "image": "/images/rapture/ep4-estate/29-mid-blink.jpg",
+          "caption": "Mid-blink — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-30",
+          "image": "/images/rapture/ep4-estate/30-wrong-boy.jpg",
+          "caption": "Wrong boy. Wrong house. — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-31",
+          "image": "/images/rapture/ep4-estate/31-nothing-answers-again.jpg",
+          "caption": "Nothing answers, again — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-32",
+          "image": "/images/rapture/ep4-estate/32-facing-the-wrong-way.jpg",
+          "caption": "These things take time — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-33",
+          "image": "/images/rapture/ep4-estate/33-properly-considering.jpg",
+          "caption": "Genuinely considers it — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-34",
+          "image": "/images/rapture/ep4-estate/34-id-wait.jpg",
+          "caption": "I'd wait. — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-35",
+          "image": "/images/rapture/ep4-estate/35-worst-advice.jpg",
+          "caption": "Can't argue with any of it — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4est-36",
+          "image": "/images/rapture/ep4-estate/36-receding.jpg",
+          "caption": "Headlights receding — AI-generated study, not final coverage."
         }
       ]
     },
