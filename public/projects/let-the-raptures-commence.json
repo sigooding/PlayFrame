@@ -3046,9 +3046,9 @@
     {
       "id": "rapture-ep1dj-01",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "The fence (keyframe missing)",
+      "title": "The fence",
       "description": "EXT. BACK GARDEN — HANDHELD, 35mm, dusk",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/01-fence.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -3057,21 +3057,21 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 01-fence.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 1 of 21. Add the study and rebuild.\n\nEXT. BACK GARDEN — dusk. A fence. Danny goes over it badly, catching his coat. Jodie goes over it in one movement and waits. Handheld, tight, dark, red practical light. Never a clean wide.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. EXT. BACK GARDEN — HANDHELD, 35mm, dusk\nA fence. Danny goes over it badly, catching his coat. Jodie goes over it in one movement and waits."
+      "notes": "EXT. BACK GARDEN — dusk. A fence. Danny goes over it badly, catching his coat. Jodie goes over it in one movement and waits. Handheld, tight, dark, red practical light. Never a clean wide.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. EXT. BACK GARDEN — HANDHELD, 35mm, dusk\nA fence. Danny goes over it badly, catching his coat. Jodie goes over it in one movement and waits."
     },
     {
       "id": "rapture-ep1dj-02",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Not that sort of lock (keyframe missing)",
+      "title": "Not that sort of lock",
       "description": "HANDHELD — 28mm, close, the back door",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/02-back-door.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3080,21 +3080,21 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 02-back-door.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 2 of 21. Add the study and rebuild.\n\nHANDHELD — 28mm, close, the back door. He's got a screwdriver. It isn't going well. She watches. JODIE: It's not that sort of lock. DANNY: It is. JODIE: It's the other sort.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. HANDHELD — 28mm, close, the back door\nHe's got a screwdriver in the frame. It isn't going well. She watches.\n   JODIE: It's not that sort of lock.\n   DANNY: It is.\n   JODIE: It's the other sort."
+      "notes": "HANDHELD — 28mm, close, the back door. He's got a screwdriver. It isn't going well. She watches. JODIE: It's not that sort of lock. DANNY: It is. JODIE: It's the other sort.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. HANDHELD — 28mm, close, the back door\nHe's got a screwdriver in the frame. It isn't going well. She watches.\n   JODIE: It's not that sort of lock.\n   DANNY: It is.\n   JODIE: It's the other sort."
     },
     {
       "id": "rapture-ep1dj-03",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "The knuckle (keyframe missing)",
+      "title": "The knuckle",
       "description": "INSERT — 85mm, handheld",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/03-knuckle.jpg",
       "shotType": "Insert",
       "movement": "Handheld",
       "lens": "85mm",
@@ -3103,20 +3103,20 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 03-knuckle.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 3 of 21. Add the study and rebuild.\n\nINSERT — 85mm, handheld. The screwdriver slips. His knuckle goes into the frame.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. INSERT — 85mm, handheld\nThe screwdriver slips. His knuckle goes into the frame."
+      "notes": "INSERT — 85mm, handheld. The screwdriver slips. His knuckle goes into the frame.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. INSERT — 85mm, handheld\nThe screwdriver slips. His knuckle goes into the frame."
     },
     {
       "id": "rapture-ep1dj-04",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "The handle (keyframe missing)",
+      "title": "The handle",
       "description": "HANDHELD — 28mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/04-handle.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3125,21 +3125,21 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 04-handle.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 4 of 21. Add the study and rebuild.\n\nHANDHELD — 28mm. Jodie leans past him, does something to the handle, and the door opens.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. HANDHELD — 28mm\nJodie leans past him, does something to the handle, and the door opens."
+      "notes": "HANDHELD — 28mm. Jodie leans past him, does something to the handle, and the door opens.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. HANDHELD — 28mm\nJodie leans past him, does something to the handle, and the door opens."
     },
     {
       "id": "rapture-ep1dj-05",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Already — (keyframe missing)",
+      "title": "Already —",
       "description": "HANDHELD CLOSE — 50mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/05-open-door.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -3148,21 +3148,21 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 05-open-door.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 5 of 21. Add the study and rebuild.\n\nHANDHELD CLOSE — 50mm. Danny holding a screwdriver, looking at an open door. DANNY: It was already — JODIE: Mm.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. HANDHELD CLOSE — 50mm\nDanny holding a screwdriver, looking at an open door.\n   DANNY: It was already —\n   JODIE: Mm."
+      "notes": "HANDHELD CLOSE — 50mm. Danny holding a screwdriver, looking at an open door. DANNY: It was already — JODIE: Mm.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. HANDHELD CLOSE — 50mm\nDanny holding a screwdriver, looking at an open door.\n   DANNY: It was already —\n   JODIE: Mm."
     },
     {
       "id": "rapture-ep1dj-06",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Rules (keyframe missing)",
+      "title": "Rules",
       "description": "INT. KITCHEN — HANDHELD, 28mm, red torchlight",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/06-rules.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3171,21 +3171,21 @@
       "style": "cinematic",
       "duration": 12,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 06-rules.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 6 of 21. Add the study and rebuild.\n\nINT. KITCHEN — HANDHELD, 28mm, red torchlight. Close and shifting. Cupboard door, corner of worktop, half a calendar. Never the room. DANNY: (low) Rules. JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs. DANNY: And? JODIE: And check the cistern.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. INT. KITCHEN — HANDHELD, 28mm, red torchlight\nInside. Close and shifting. A cupboard door, a corner of worktop, half a calendar. Never the room.\n   DANNY: (low) Rules.\n   JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs.\n   DANNY: And?\n   JODIE: And check the cistern."
+      "notes": "INT. KITCHEN — HANDHELD, 28mm, red torchlight. Close and shifting. Cupboard door, corner of worktop, half a calendar. Never the room. DANNY: (low) Rules. JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs. DANNY: And? JODIE: And check the cistern.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. INT. KITCHEN — HANDHELD, 28mm, red torchlight\nInside. Close and shifting. A cupboard door, a corner of worktop, half a calendar. Never the room.\n   DANNY: (low) Rules.\n   JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs.\n   DANNY: And?\n   JODIE: And check the cistern."
     },
     {
       "id": "rapture-ep1dj-07",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Chutney (keyframe missing)",
+      "title": "Chutney",
       "description": "INSERT — 100mm macro, handheld",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/07-chutney.jpg",
       "shotType": "Insert",
       "movement": "Handheld",
       "lens": "85mm",
@@ -3194,18 +3194,18 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 07-chutney.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 7 of 21. Add the study and rebuild.\n\nINSERT — 100mm macro, handheld. Cupboards opening. Tins. A great deal of chutney. Nothing useful.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. INSERT — 100mm macro, handheld\nCupboards opening. Tins. A great deal of chutney. Nothing useful."
+      "notes": "INSERT — 100mm macro, handheld. Cupboards opening. Tins. A great deal of chutney. Nothing useful.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. INSERT — 100mm macro, handheld\nCupboards opening. Tins. A great deal of chutney. Nothing useful."
     },
     {
       "id": "rapture-ep1dj-08",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Four-pint bottle (keyframe missing)",
+      "title": "Four-pint bottle",
       "description": "HANDHELD — 35mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/08-bottle.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -3214,20 +3214,20 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 08-bottle.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 8 of 21. Add the study and rebuild.\n\nHANDHELD — 35mm. Danny finds a four-pint bottle of water at the back of a cupboard. Half full. He's thrilled and trying not to show it.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. HANDHELD — 35mm\nDanny finds a four-pint bottle of water at the back of a cupboard. Half full. He's thrilled and trying not to show it."
+      "notes": "HANDHELD — 35mm. Danny finds a four-pint bottle of water at the back of a cupboard. Half full. He's thrilled and trying not to show it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. HANDHELD — 35mm\nDanny finds a four-pint bottle of water at the back of a cupboard. Half full. He's thrilled and trying not to show it."
     },
     {
       "id": "rapture-ep1dj-09",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Going-out coat (keyframe missing)",
+      "title": "Going-out coat",
       "description": "HANDHELD CLOSE — 50mm, on JODIE",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/09-coat.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -3236,21 +3236,21 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 09-coat.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 9 of 21. Add the study and rebuild.\n\nHANDHELD CLOSE — 50mm, on JODIE. She's looking at the ceiling. JODIE: There's a coat on the bannister. DANNY: So? JODIE: It's a going-out coat.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. HANDHELD CLOSE — 50mm, on JODIE\nShe's looking at the ceiling.\n   JODIE: There's a coat on the bannister.\n   DANNY: So?\n   JODIE: It's a going-out coat."
+      "notes": "HANDHELD CLOSE — 50mm, on JODIE. She's looking at the ceiling. JODIE: There's a coat on the bannister. DANNY: So? JODIE: It's a going-out coat.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. HANDHELD CLOSE — 50mm, on JODIE\nShe's looking at the ceiling.\n   JODIE: There's a coat on the bannister.\n   DANNY: So?\n   JODIE: It's a going-out coat."
     },
     {
       "id": "rapture-ep1dj-10",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Everyone's gone (keyframe missing)",
+      "title": "Everyone's gone",
       "description": "HANDHELD — 28mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/10-listening.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3259,21 +3259,21 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 10-listening.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 10 of 21. Add the study and rebuild.\n\nHANDHELD — 28mm. He stops. Listens. House still. DANNY: They're gone. JODIE: You don't know that. DANNY: Everyone's gone. JODIE: Not everyone.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. HANDHELD — 28mm\nHe stops. Listens. The house is completely still.\n   DANNY: They're gone.\n   JODIE: You don't know that.\n   DANNY: Everyone's gone.\n   JODIE: Not everyone."
+      "notes": "HANDHELD — 28mm. He stops. Listens. House still. DANNY: They're gone. JODIE: You don't know that. DANNY: Everyone's gone. JODIE: Not everyone.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. HANDHELD — 28mm\nHe stops. Listens. The house is completely still.\n   DANNY: They're gone.\n   JODIE: You don't know that.\n   DANNY: Everyone's gone.\n   JODIE: Not everyone."
     },
     {
       "id": "rapture-ep1dj-11",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Wall of photographs (keyframe missing)",
+      "title": "Wall of photographs",
       "description": "HANDHELD — 35mm, hallway, very dark",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/11-photographs.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -3282,20 +3282,20 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 11-photographs.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 11 of 21. Add the study and rebuild.\n\nHANDHELD — 35mm, hallway, very dark. Jodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. HANDHELD — 35mm, hallway, very dark\nJodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people."
+      "notes": "HANDHELD — 35mm, hallway, very dark. Jodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. HANDHELD — 35mm, hallway, very dark\nJodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people."
     },
     {
       "id": "rapture-ep1dj-12",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "How many still here (keyframe missing)",
+      "title": "How many still here",
       "description": "HANDHELD CLOSE — 50mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/12-how-many.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -3304,21 +3304,21 @@
       "style": "cinematic",
       "duration": 12,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 12-how-many.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 12 of 21. Add the study and rebuild.\n\nHANDHELD CLOSE — 50mm. She stops. Not moved. Assessing. JODIE: (calling, not loud) Dad. DANNY: (o.s.) What. JODIE: How many people d'you reckon are still here? DANNY: (o.s.) Don't know. JODIE: One in ten? One in twenty? DANNY: (o.s.) Do the cistern, Jodie.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. HANDHELD CLOSE — 50mm\nShe stops. Not moved. Assessing.\n   JODIE: (calling, not loud) Dad.\n   DANNY: (o.s.) What.\n   JODIE: How many people d'you reckon are still here?\n   DANNY: (o.s.) Don't know.\n   JODIE: One in ten? One in twenty?\n   DANNY: (o.s.) Do the cistern, Jodie."
+      "notes": "HANDHELD CLOSE — 50mm. She stops. Not moved. Assessing. JODIE: (calling, not loud) Dad. DANNY: (o.s.) What. JODIE: How many people d'you reckon are still here? DANNY: (o.s.) Don't know. JODIE: One in ten? One in twenty? DANNY: (o.s.) Do the cistern, Jodie.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. HANDHELD CLOSE — 50mm\nShe stops. Not moved. Assessing.\n   JODIE: (calling, not loud) Dad.\n   DANNY: (o.s.) What.\n   JODIE: How many people d'you reckon are still here?\n   DANNY: (o.s.) Don't know.\n   JODIE: One in ten? One in twenty?\n   DANNY: (o.s.) Do the cistern, Jodie."
     },
     {
       "id": "rapture-ep1dj-13",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "The cistern (keyframe missing)",
+      "title": "The cistern",
       "description": "INSERT — 85mm, handheld",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/13-cistern.jpg",
       "shotType": "Insert",
       "movement": "Handheld",
       "lens": "85mm",
@@ -3327,20 +3327,20 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 13-cistern.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 13 of 21. Add the study and rebuild.\n\nINSERT — 85mm, handheld. The cistern lid off. She dips a bottle and fills it, entirely unbothered.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. INSERT — 85mm, handheld\nThe cistern lid off. She dips a bottle and fills it, entirely unbothered."
+      "notes": "INSERT — 85mm, handheld. The cistern lid off. She dips a bottle and fills it, entirely unbothered.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. INSERT — 85mm, handheld\nThe cistern lid off. She dips a bottle and fills it, entirely unbothered."
     },
     {
       "id": "rapture-ep1dj-14",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Thump (keyframe missing)",
+      "title": "Thump",
       "description": "HANDHELD — 28mm, kitchen",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/14-thump.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3349,18 +3349,18 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 14-thump.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 14 of 21. Add the study and rebuild.\n\nHANDHELD — 28mm, kitchen. A sound upstairs. One dull thump.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD — 28mm, kitchen\nA sound upstairs. One dull thump."
+      "notes": "HANDHELD — 28mm, kitchen. A sound upstairs. One dull thump.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD — 28mm, kitchen\nA sound upstairs. One dull thump."
     },
     {
       "id": "rapture-ep1dj-15",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Rigid (keyframe missing)",
+      "title": "Rigid",
       "description": "HANDHELD CLOSE — 50mm, on DANNY",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/15-rigid.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -3369,20 +3369,20 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 15-rigid.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 15 of 21. Add the study and rebuild.\n\nHANDHELD CLOSE — 50mm, on DANNY. Rigid. Not brave.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. HANDHELD CLOSE — 50mm, on DANNY\nRigid. Not brave."
+      "notes": "HANDHELD CLOSE — 50mm, on DANNY. Rigid. Not brave.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. HANDHELD CLOSE — 50mm, on DANNY\nRigid. Not brave."
     },
     {
       "id": "rapture-ep1dj-16",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Out. Now. (keyframe missing)",
+      "title": "Out. Now.",
       "description": "HANDHELD — 28mm, foot of the stairs",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/16-stairs.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3391,21 +3391,21 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 16-stairs.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 16 of 21. Add the study and rebuild.\n\nHANDHELD — 28mm, foot of the stairs. Two of them, close, whispering. DANNY: Out. Now. JODIE: It'll be a cat. DANNY: Out. JODIE: It's always a cat. DANNY: (hissing) One time it wasn't a cat.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. HANDHELD — 28mm, foot of the stairs\nThe two of them, close, whispering.\n   DANNY: Out. Now.\n   JODIE: It'll be a cat.\n   DANNY: Out.\n   JODIE: It's always a cat.\n   DANNY: (hissing) One time it wasn't a cat."
+      "notes": "HANDHELD — 28mm, foot of the stairs. Two of them, close, whispering. DANNY: Out. Now. JODIE: It'll be a cat. DANNY: Out. JODIE: It's always a cat. DANNY: (hissing) One time it wasn't a cat.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. HANDHELD — 28mm, foot of the stairs\nThe two of them, close, whispering.\n   DANNY: Out. Now.\n   JODIE: It'll be a cat.\n   DANNY: Out.\n   JODIE: It's always a cat.\n   DANNY: (hissing) One time it wasn't a cat."
     },
     {
       "id": "rapture-ep1dj-17",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Up the stairwell (keyframe missing)",
+      "title": "Up the stairwell",
       "description": "HANDHELD — 35mm, up the stairwell, red, nothing visible",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/17-stairwell.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -3414,18 +3414,18 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 17-stairwell.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 17 of 21. Add the study and rebuild.\n\nHANDHELD — 35mm, up the stairwell, red, nothing visible. Hold. Then another thump, and something falling over.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. HANDHELD — 35mm, up the stairwell, red, nothing visible\nHold. Then another thump, and something falling over."
+      "notes": "HANDHELD — 35mm, up the stairwell, red, nothing visible. Hold. Then another thump, and something falling over.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. HANDHELD — 35mm, up the stairwell, red, nothing visible\nHold. Then another thump, and something falling over."
     },
     {
       "id": "rapture-ep1dj-18",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Fast and badly (keyframe missing)",
+      "title": "Fast and badly",
       "description": "HANDHELD — chaotic, 28mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/18-escape.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3434,21 +3434,21 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 18-escape.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 18 of 21. Add the study and rebuild.\n\nHANDHELD — chaotic, 28mm. They go, fast and badly, knocking into things. He drops the screwdriver. She doesn't drop the water.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. HANDHELD — chaotic, 28mm\nThey go, fast and badly, knocking into things. He drops the screwdriver. She doesn't drop the water."
+      "notes": "HANDHELD — chaotic, 28mm. They go, fast and badly, knocking into things. He drops the screwdriver. She doesn't drop the water.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. HANDHELD — chaotic, 28mm\nThey go, fast and badly, knocking into things. He drops the screwdriver. She doesn't drop the water."
     },
     {
       "id": "rapture-ep1dj-19",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Header tank (keyframe missing)",
+      "title": "Header tank",
       "description": "EXT. ALLEY — HANDHELD, 35mm",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/19-alley-wall.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -3457,21 +3457,21 @@
       "style": "cinematic",
       "duration": 15,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 19-alley-wall.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 19 of 21. Add the study and rebuild.\n\nEXT. ALLEY — HANDHELD, 35mm. Both against a wall, breathing hard. Bags between feet. JODIE: It was a cat. DANNY: You don't know that. JODIE: (holding up cistern bottle) We could've had the upstairs one. Header tank's better. DANNY: (a beat) What's a header tank? JODIE: (genuinely pleased) Exactly.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. EXT. ALLEY — HANDHELD, 35mm\nBoth against a wall, breathing hard. Bags between their feet.\n   JODIE: It was a cat.\n   DANNY: You don't know that.\n   JODIE: (holding up the cistern bottle) We could've had the upstairs one. Header tank's better.\n   DANNY: (a beat) What's a header tank?\n   JODIE: (genuinely pleased) Exactly."
+      "notes": "EXT. ALLEY — HANDHELD, 35mm. Both against a wall, breathing hard. Bags between feet. JODIE: It was a cat. DANNY: You don't know that. JODIE: (holding up cistern bottle) We could've had the upstairs one. Header tank's better. DANNY: (a beat) What's a header tank? JODIE: (genuinely pleased) Exactly.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. EXT. ALLEY — HANDHELD, 35mm\nBoth against a wall, breathing hard. Bags between their feet.\n   JODIE: It was a cat.\n   DANNY: You don't know that.\n   JODIE: (holding up the cistern bottle) We could've had the upstairs one. Header tank's better.\n   DANNY: (a beat) What's a header tank?\n   JODIE: (genuinely pleased) Exactly."
     },
     {
       "id": "rapture-ep1dj-20",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Don't tell anyone about the door (keyframe missing)",
+      "title": "Don't tell anyone about the door",
       "description": "HANDHELD CLOSE — 50mm, on DANNY",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/20-overtaken.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -3480,20 +3480,20 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 20-overtaken.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 20 of 21. Add the study and rebuild.\n\nHANDHELD CLOSE — 50mm, on DANNY. A man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it. DANNY: Don't tell anyone about the door.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. HANDHELD CLOSE — 50mm, on DANNY\nA man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it.\n   DANNY: Don't tell anyone about the door."
+      "notes": "HANDHELD CLOSE — 50mm, on DANNY. A man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it. DANNY: Don't tell anyone about the door.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. HANDHELD CLOSE — 50mm, on DANNY\nA man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it.\n   DANNY: Don't tell anyone about the door."
     },
     {
       "id": "rapture-ep1dj-21",
       "sceneId": "rapture-ep1-danny-jodie",
-      "title": "Walking away (keyframe missing)",
+      "title": "Walking away",
       "description": "HANDHELD WIDE — 28mm, alley",
-      "image": "",
+      "image": "/images/rapture/ep1-danny-jodie/21-walking-away.jpg",
       "shotType": "Wide",
       "movement": "Handheld",
       "lens": "24mm",
@@ -3502,21 +3502,21 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 21-walking-away.jpg is not in public/images/rapture/ep1-danny-jodie, so this card holds slot 21 of 21. Add the study and rebuild.\n\nHANDHELD WIDE — 28mm, alley. Two of them walking away, red bike light bobbing, bags in hand. Completely dark street. Hold.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. HANDHELD WIDE — 28mm, alley\nThe two of them walking away, red bike light bobbing, bags in hand. A completely dark street.\nHold."
+      "notes": "HANDHELD WIDE — 28mm, alley. Two of them walking away, red bike light bobbing, bags in hand. Completely dark street. Hold.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. HANDHELD WIDE — 28mm, alley\nThe two of them walking away, red bike light bobbing, bags in hand. A completely dark street.\nHold."
     },
     {
       "id": "rapture-ep1c2-01",
       "sceneId": "rapture-ep1-cops-second",
-      "title": "He'll be all right (keyframe missing)",
+      "title": "He'll be all right",
       "description": "STATIC TWO-SHOT — 32mm, locked off, through the windscreen",
-      "image": "",
+      "image": "/images/rapture/ep1-cops-second/01-windscreen.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -3525,21 +3525,21 @@
       "style": "cinematic",
       "duration": 30,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 01-windscreen.jpg is not in public/images/rapture/ep1-cops-second, so this card holds slot 1 of 6. Add the study and rebuild.\n\nSTATIC TWO-SHOT — 32mm, locked off, through the windscreen. Dark. Both lit by dashboard. Kath eating. Ray not. Hold four seconds. KATH: He'll be all right, that lad. RAY: Which lad? KATH: The one from the car park. RAY: He was thirty-odd. KATH: He looked younger. RAY: They do. Pause six seconds. KATH: I only tasered him. RAY: I know. KATH: People get tasered. RAY: They do.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 30s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC TWO-SHOT — 32mm, locked off, through the windscreen\nDark. Both of them lit by the dashboard. Kath eating. Ray not.\n\nHold. Four seconds.\n   KATH: He'll be all right, that lad.\n   RAY: Which lad?\n   KATH: The one from the car park.\n   RAY: He was thirty-odd.\n   KATH: He looked younger.\n   RAY: They do.\n\n(Pause. Six seconds.)\n   KATH: I only tasered him.\n   RAY: I know.\n   KATH: People get tasered.\n   RAY: They do."
+      "notes": "STATIC TWO-SHOT — 32mm, locked off, through the windscreen. Dark. Both lit by dashboard. Kath eating. Ray not. Hold four seconds. KATH: He'll be all right, that lad. RAY: Which lad? KATH: The one from the car park. RAY: He was thirty-odd. KATH: He looked younger. RAY: They do. Pause six seconds. KATH: I only tasered him. RAY: I know. KATH: People get tasered. RAY: They do.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 30s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC TWO-SHOT — 32mm, locked off, through the windscreen\nDark. Both of them lit by the dashboard. Kath eating. Ray not.\n\nHold. Four seconds.\n   KATH: He'll be all right, that lad.\n   RAY: Which lad?\n   KATH: The one from the car park.\n   RAY: He was thirty-odd.\n   KATH: He looked younger.\n   RAY: They do.\n\n(Pause. Six seconds.)\n   KATH: I only tasered him.\n   RAY: I know.\n   KATH: People get tasered.\n   RAY: They do."
     },
     {
       "id": "rapture-ep1c2-02",
       "sceneId": "rapture-ep1-cops-second",
-      "title": "The car alone (keyframe missing)",
+      "title": "The car alone",
       "description": "STATIC WIDE — 24mm, exterior, from across the road",
-      "image": "",
+      "image": "/images/rapture/ep1-cops-second/02-exterior-wide.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -3548,21 +3548,21 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 02-exterior-wide.jpg is not in public/images/rapture/ep1-cops-second, so this card holds slot 2 of 6. Add the study and rebuild.\n\nSTATIC WIDE — 24mm, exterior, from across the road. The car, alone, parked across two bays in an empty street. Interior light on.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 24mm, exterior, from across the road\nThe car, alone, parked across two bays in an empty street. Interior light on."
+      "notes": "STATIC WIDE — 24mm, exterior, from across the road. The car, alone, parked across two bays in an empty street. Interior light on.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 24mm, exterior, from across the road\nThe car, alone, parked across two bays in an empty street. Interior light on."
     },
     {
       "id": "rapture-ep1c2-03",
       "sceneId": "rapture-ep1-cops-second",
-      "title": "There's a form (keyframe missing)",
+      "title": "There's a form",
       "description": "STATIC TWO-SHOT — as 1",
-      "image": "",
+      "image": "/images/rapture/ep1-cops-second/03-form.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -3571,21 +3571,21 @@
       "style": "cinematic",
       "duration": 25,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 03-form.jpg is not in public/images/rapture/ep1-cops-second, so this card holds slot 3 of 6. Add the study and rebuild.\n\nSTATIC TWO-SHOT — as 1. RAY: There's a form. KATH: Ray. RAY: I'm only saying there's a form. KATH: (a beat) Have you got the form? RAY: (immediately) No. Pause. KATH: Then there isn't a form.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC TWO-SHOT — as 1\n   RAY: There's a form.\n   KATH: Ray.\n   RAY: I'm only saying there's a form.\n   KATH: (a beat) Have you got the form?\n   RAY: (immediately) No.\n\n(Pause.)\n   KATH: Then there isn't a form."
+      "notes": "STATIC TWO-SHOT — as 1. RAY: There's a form. KATH: Ray. RAY: I'm only saying there's a form. KATH: (a beat) Have you got the form? RAY: (immediately) No. Pause. KATH: Then there isn't a form.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC TWO-SHOT — as 1\n   RAY: There's a form.\n   KATH: Ray.\n   RAY: I'm only saying there's a form.\n   KATH: (a beat) Have you got the form?\n   RAY: (immediately) No.\n\n(Pause.)\n   KATH: Then there isn't a form."
     },
     {
       "id": "rapture-ep1c2-04",
       "sceneId": "rapture-ep1-cops-second",
-      "title": "The bottle untouched (keyframe missing)",
+      "title": "The bottle untouched",
       "description": "INSERT — 85mm, static",
-      "image": "",
+      "image": "/images/rapture/ep1-cops-second/04-bottle.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -3594,18 +3594,18 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 04-bottle.jpg is not in public/images/rapture/ep1-cops-second, so this card holds slot 4 of 6. Add the study and rebuild.\n\nINSERT — 85mm, static. The bottle in the cup holder. Neither has drunk any of it.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. INSERT — 85mm, static\nThe bottle in the cup holder. Neither of them has drunk any of it."
+      "notes": "INSERT — 85mm, static. The bottle in the cup holder. Neither has drunk any of it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. INSERT — 85mm, static\nThe bottle in the cup holder. Neither of them has drunk any of it."
     },
     {
       "id": "rapture-ep1c2-05",
       "sceneId": "rapture-ep1-cops-second",
-      "title": "Who's in charge (keyframe missing)",
+      "title": "Who's in charge",
       "description": "STATIC TWO-SHOT — as 1",
-      "image": "",
+      "image": "/images/rapture/ep1-cops-second/05-in-charge.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -3614,21 +3614,21 @@
       "style": "cinematic",
       "duration": 17,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 05-in-charge.jpg is not in public/images/rapture/ep1-cops-second, so this card holds slot 5 of 6. Add the study and rebuild.\n\nSTATIC TWO-SHOT — as 1. Hold five seconds. RAY: Kath. KATH: Mm. RAY: Who do you think's in charge now? KATH: (no hesitation) Us.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 17s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC TWO-SHOT — as 1\nHold. Five seconds.\n   RAY: Kath.\n   KATH: Mm.\n   RAY: Who do you think's in charge now?\n   KATH: (no hesitation whatsoever) Us."
+      "notes": "STATIC TWO-SHOT — as 1. Hold five seconds. RAY: Kath. KATH: Mm. RAY: Who do you think's in charge now? KATH: (no hesitation) Us.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 17s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC TWO-SHOT — as 1\nHold. Five seconds.\n   RAY: Kath.\n   KATH: Mm.\n   RAY: Who do you think's in charge now?\n   KATH: (no hesitation whatsoever) Us."
     },
     {
       "id": "rapture-ep1c2-06",
       "sceneId": "rapture-ep1-cops-second",
-      "title": "Empty street, interior light on (keyframe missing)",
+      "title": "Empty street, interior light on",
       "description": "STATIC WIDE — 24mm, exterior — same framing as shot 2",
-      "image": "",
+      "image": "/images/rapture/ep1-cops-second/06-same-exterior.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -3637,14 +3637,14 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 06-same-exterior.jpg is not in public/images/rapture/ep1-cops-second, so this card holds slot 6 of 6. Add the study and rebuild.\n\nSTATIC WIDE — 24mm, exterior — same framing as shot 2. The car in an empty street, interior light on, two people sat in it. Hold. CUT.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC WIDE — 24mm, exterior — same framing as shot 2\nThe car in an empty street, interior light on, two people sat in it.\nHold. CUT."
+      "notes": "STATIC WIDE — 24mm, exterior — same framing as shot 2. The car in an empty street, interior light on, two people sat in it. Hold. CUT.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC WIDE — 24mm, exterior — same framing as shot 2\nThe car in an empty street, interior light on, two people sat in it.\nHold. CUT."
     },
     {
       "id": "rapture-board-ep2s1-01",
