@@ -24,8 +24,11 @@ comedy in every thread; this is not noir and not a tragedy.
   after the violence: twelve litres counted, four punctures nobody mentions,
   window frame said twice, the gate arrangement stated aloud, and DANNY
   written on the rota in someone else's handwriting. The hi-vis MAN and the
-  WOMAN who once did a course are unnamed group members, cast nowhere. Eight
-  AI studies are on disk; nine shots hold placeholder cards.
+  WOMAN who once did a course are unnamed group members, cast nowhere. All
+  seventeen shots carry AI studies; shot 6's insert is deliberately oblique
+  aftercare still-life, and shot 16's rota is the forgery played as
+  paperwork. Check the rota handwriting difference and the sleeve/arm
+  continuity against Number Fourteen's card shot before approving.
 - **The interview (episode three):** [numbered scene](scenes/ep4-cold-open.md),
   Graham's 17-shot Hell interview, re-homed to episode three so it sits with
   the angels' cold open and the cops' test: three scenes circling what a

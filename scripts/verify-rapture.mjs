@@ -232,8 +232,8 @@ pass("Pat cold open numbered 1-12 in order, no dialogue, holds locked, two place
 const hutStudies = scoutHut.filter(f => f.image);
 const hutMissing = scoutHut.filter(f => !f.image);
 assert.equal(scoutHut.length, 17);
-assert.equal(hutStudies.length, 8, "Eight scout-hut AI studies are on disk so far");
-assert.equal(hutMissing.length, 9, "Nine scout-hut shots hold placeholder cards until their studies are generated");
+assert.equal(hutStudies.length, 17, "All seventeen scout-hut shots carry their AI study");
+assert.equal(hutMissing.length, 0, "No scout-hut placeholder cards remain");
 assert(hutMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Scout-hut placeholder cards hold their numbered slots honestly");
 assert(hutStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-scout-hut/")), "Scout-hut studies are draft keyframes in the right folder");
 assert(scoutHut.every((f, i) => f.id === "rapture-ep4hut-" + String(i + 1).padStart(2, "0")), "Scout-hut numbering must be contiguous");
@@ -246,7 +246,7 @@ assert(scoutHut[13].notes.includes("She does though"), "Jodie's last word surviv
 assert(scoutHut[15].notes.includes("Not in his handwriting"), "The rota insert keeps its point");
 assert(scoutHut.every(f => f.characters.every(id => id === "rapture-danny" || id === "rapture-jodie")), "The hi-vis MAN and the WOMAN are cast nowhere");
 assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat-cold-open") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") && project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-scout-hut"), "Episode four runs Pat, then the old-lady outline, then the scout hut");
-pass("scout hut numbered 1-17 in order, all handheld, nine placeholder slots awaiting studies");
+pass("scout hut numbered 1-17 in order, all handheld, one AI study per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
@@ -353,7 +353,7 @@ assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 15, "Fifteen angel studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 10, "Ten Pat studies on disk so far");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 8, "Eight scout-hut studies on disk so far");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen scout-hut studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));

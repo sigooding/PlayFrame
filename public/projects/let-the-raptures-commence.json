@@ -6557,9 +6557,9 @@
     {
       "id": "rapture-ep4hut-07",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "Window frame (keyframe missing)",
+      "title": "Window frame",
       "description": "She's got the first aid kit. She's not squeamish. She's already working out that four holes in a row is going to need explaining.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/07-window-frame.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -6568,14 +6568,14 @@
       "style": "cinematic",
       "duration": 14,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 07-window-frame.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 7 of 17. Add the study and rebuild.\n\nOn Jodie with the first aid kit, not squeamish, already working out that four holes in a row is going to need explaining. Window frame, twice, with no elaboration.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. HANDHELD CLOSE — 50mm, on JODIE\nShe's got the first aid kit. She's not squeamish. She's already working out that four holes in a row is going to need explaining.\n   JODIE: That's a fork.\n   DANNY: Window frame.\n   JODIE: It's four holes in a line, Dad.\n   DANNY: Window frame.\n\n   (Pause.)\n\n   JODIE: Right."
+      "notes": "On Jodie with the first aid kit, not squeamish, already working out that four holes in a row is going to need explaining. Window frame, twice, with no elaboration.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. HANDHELD CLOSE — 50mm, on JODIE\nShe's got the first aid kit. She's not squeamish. She's already working out that four holes in a row is going to need explaining.\n   JODIE: That's a fork.\n   DANNY: Window frame.\n   JODIE: It's four holes in a line, Dad.\n   DANNY: Window frame.\n\n   (Pause.)\n\n   JODIE: Right."
     },
     {
       "id": "rapture-ep4hut-08",
@@ -6626,9 +6626,9 @@
     {
       "id": "rapture-ep4hut-10",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "Once did a course (keyframe missing)",
+      "title": "Once did a course",
       "description": "A WOMAN (40s) appears with a mug. She's the nearest thing this group has to a nurse, which is to say she once did a course.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/10-the-woman.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -6637,21 +6637,21 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 10-the-woman.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 10 of 17. Add the study and rebuild.\n\nA WOMAN (40s) appears with a mug: the nearest thing this group has to a nurse, which is to say she once did a course.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. HANDHELD — 28mm\nA WOMAN (40s) appears with a mug. She's the nearest thing this group has to a nurse, which is to say she once did a course.\n   WOMAN: Let's have a look.\n   DANNY: It's fine.\n   WOMAN: Let's have a look anyway."
+      "notes": "A WOMAN (40s) appears with a mug: the nearest thing this group has to a nurse, which is to say she once did a course.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. HANDHELD — 28mm\nA WOMAN (40s) appears with a mug. She's the nearest thing this group has to a nurse, which is to say she once did a course.\n   WOMAN: Let's have a look.\n   DANNY: It's fine.\n   WOMAN: Let's have a look anyway."
     },
     {
       "id": "rapture-ep4hut-11",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "Tell someone (keyframe missing)",
+      "title": "Tell someone",
       "description": "She looks at four punctures in a row. She looks at Danny. She says nothing about it.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/11-antibiotics.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -6660,21 +6660,21 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 11-antibiotics.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 11 of 17. Add the study and rebuild.\n\nOn the WOMAN. She looks at four punctures in a row, looks at Danny, and says nothing about it. Keep it clean; if it goes red up the arm, tell someone. And then what? Tell someone.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. HANDHELD CLOSE — 50mm, on the WOMAN\nShe looks at four punctures in a row. She looks at Danny. She says nothing about it.\n   WOMAN: That wants antibiotics.\n   DANNY: Right.\n   WOMAN: We haven't got any.\n   DANNY: Right.\n   WOMAN: (entirely practical) So keep it clean and if it goes red up the arm, tell someone.\n   DANNY: And then what?\n   WOMAN: (a beat) Tell someone."
+      "notes": "On the WOMAN. She looks at four punctures in a row, looks at Danny, and says nothing about it. Keep it clean; if it goes red up the arm, tell someone. And then what? Tell someone.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. HANDHELD CLOSE — 50mm, on the WOMAN\nShe looks at four punctures in a row. She looks at Danny. She says nothing about it.\n   WOMAN: That wants antibiotics.\n   DANNY: Right.\n   WOMAN: We haven't got any.\n   DANNY: Right.\n   WOMAN: (entirely practical) So keep it clean and if it goes red up the arm, tell someone.\n   DANNY: And then what?\n   WOMAN: (a beat) Tell someone."
     },
     {
       "id": "rapture-ep4hut-12",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "The rota argument (keyframe missing)",
+      "title": "The rota argument",
       "description": "She goes. Danny sits with his arm out. The hut carries on around him — the kettle, the rota, an argument about the rota.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/12-hut-carries-on.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -6683,20 +6683,20 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 12-hut-carries-on.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 12 of 17. Add the study and rebuild.\n\nWider. She goes. Danny sits with his arm out. The hut carries on around him: the kettle, the rota, an argument about the rota.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. HANDHELD — 35mm, wider\nShe goes. Danny sits with his arm out. The hut carries on around him — the kettle, the rota, an argument about the rota."
+      "notes": "Wider. She goes. Danny sits with his arm out. The hut carries on around him: the kettle, the rota, an argument about the rota.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. HANDHELD — 35mm, wider\nShe goes. Danny sits with his arm out. The hut carries on around him — the kettle, the rota, an argument about the rota."
     },
     {
       "id": "rapture-ep4hut-13",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "She leaves them by the gate (keyframe missing)",
+      "title": "She leaves them by the gate",
       "description": "JODIE: We're going back, aren't we.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/13-by-the-gate.jpg",
       "shotType": "Two-shot",
       "movement": "Handheld",
       "lens": "50mm",
@@ -6705,21 +6705,21 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 13-by-the-gate.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 13 of 17. Add the study and rebuild.\n\nVery close two-shot, quiet. A long untimed pause; he doesn't have a lie ready. She leaves them by the gate.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. HANDHELD CLOSE — 50mm, two-shot, very close, quiet\n   JODIE: We're going back, aren't we.\n   DANNY: No.\n   JODIE: You said there's more coming tomorrow.\n   DANNY: There is.\n   JODIE: From where?\n\n   (A long pause. He doesn't have a lie ready.)\n\n   DANNY: She leaves them by the gate."
+      "notes": "Very close two-shot, quiet. A long untimed pause; he doesn't have a lie ready. She leaves them by the gate.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. HANDHELD CLOSE — 50mm, two-shot, very close, quiet\n   JODIE: We're going back, aren't we.\n   DANNY: No.\n   JODIE: You said there's more coming tomorrow.\n   DANNY: There is.\n   JODIE: From where?\n\n   (A long pause. He doesn't have a lie ready.)\n\n   DANNY: She leaves them by the gate."
     },
     {
       "id": "rapture-ep4hut-14",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "She likes me (keyframe missing)",
+      "title": "She likes me",
       "description": "Eleven years old, working out that her father has entered into an arrangement with the thing that stabbed him, and that it's the right decision.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/14-she-likes-me.jpg",
       "shotType": "Close-up",
       "movement": "Handheld",
       "lens": "50mm",
@@ -6728,21 +6728,21 @@
       "style": "cinematic",
       "duration": 12,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 14-she-likes-me.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 14 of 17. Add the study and rebuild.\n\nOn Jodie. Eleven years old, working out that her father has entered into an arrangement with the thing that stabbed him, and that it's the right decision. She does though.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD CLOSE — 50mm, on JODIE\nEleven years old, working out that her father has entered into an arrangement with the thing that stabbed him, and that it's the right decision.\n   JODIE: I'll come.\n   DANNY: You won't.\n   JODIE: She likes me.\n   DANNY: (sharper than he means) Jodie.\n   JODIE: She does though."
+      "notes": "On Jodie. Eleven years old, working out that her father has entered into an arrangement with the thing that stabbed him, and that it's the right decision. She does though.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD CLOSE — 50mm, on JODIE\nEleven years old, working out that her father has entered into an arrangement with the thing that stabbed him, and that it's the right decision.\n   JODIE: I'll come.\n   DANNY: You won't.\n   JODIE: She likes me.\n   DANNY: (sharper than he means) Jodie.\n   JODIE: She does though."
     },
     {
       "id": "rapture-ep4hut-15",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "Tea money (keyframe missing)",
+      "title": "Tea money",
       "description": "He doesn't answer. He looks at the hut. Twenty-odd people drinking tea made from water he got by being stabbed.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/15-the-hut.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -6751,20 +6751,20 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 15-the-hut.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 15 of 17. Add the study and rebuild.\n\nHe doesn't answer. He looks at the hut. Twenty-odd people drinking tea made from water he got by being stabbed.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. HANDHELD — 35mm\nHe doesn't answer. He looks at the hut. Twenty-odd people drinking tea made from water he got by being stabbed."
+      "notes": "He doesn't answer. He looks at the hut. Twenty-odd people drinking tea made from water he got by being stabbed.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. HANDHELD — 35mm\nHe doesn't answer. He looks at the hut. Twenty-odd people drinking tea made from water he got by being stabbed."
     },
     {
       "id": "rapture-ep4hut-16",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "Not in his handwriting (keyframe missing)",
+      "title": "Not in his handwriting",
       "description": "The rota on the wall. Someone has written DANNY in the WATER column for tomorrow. Not in his handwriting.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/16-rota.jpg",
       "shotType": "Insert",
       "movement": "Handheld",
       "lens": "85mm",
@@ -6773,18 +6773,18 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 16-rota.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 16 of 17. Add the study and rebuild.\n\nInsert: the rota on the wall. Someone has written DANNY in the WATER column for tomorrow. Not in his handwriting.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. INSERT — 85mm, handheld\nThe rota on the wall. Someone has written DANNY in the WATER column for tomorrow. Not in his handwriting."
+      "notes": "Insert: the rota on the wall. Someone has written DANNY in the WATER column for tomorrow. Not in his handwriting.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. INSERT — 85mm, handheld\nThe rota on the wall. Someone has written DANNY in the WATER column for tomorrow. Not in his handwriting."
     },
     {
       "id": "rapture-ep4hut-17",
       "sceneId": "rapture-ep4-scout-hut",
-      "title": "Hold — cut (keyframe missing)",
+      "title": "Hold — cut",
       "description": "Him on the camp bed with his arm out. Her packing the first aid kit away neatly.",
-      "image": "",
+      "image": "/images/rapture/ep4-scout-hut/17-hold.jpg",
       "shotType": "Wide",
       "movement": "Handheld",
       "lens": "24mm",
@@ -6793,14 +6793,14 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 17-hold.jpg is not in public/images/rapture/ep4-scout-hut, so this card holds slot 17 of 17. Add the study and rebuild.\n\nRed light, the hut, the one deliberate wide the grammar allows because it is handheld: him on the camp bed with his arm out, her packing the first aid kit away neatly. Hold. CUT.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. HANDHELD WIDE — 28mm, red light, the hut\nHim on the camp bed with his arm out. Her packing the first aid kit away neatly.\nHold. CUT."
+      "notes": "Red light, the hut, the one deliberate wide the grammar allows because it is handheld: him on the camp bed with his arm out, her packing the first aid kit away neatly. Hold. CUT.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, close, red practical sources only: a camping lantern and the fire door light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance. No score, no reaction inserts; nobody asks where anything came from.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. HANDHELD WIDE — 28mm, red light, the hut\nHim on the camp bed with his arm out. Her packing the first aid kit away neatly.\nHold. CUT."
     },
     {
       "id": "rapture-ep4-shot-01",
@@ -7552,7 +7552,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-alone open (12 shots, 109-second estimate, no dialogue), with 10 AI studies on disk and 2 placeholder cards, and the scout-hut scene 3 (17 shots, 159-second estimate), with 8 AI studies on disk and 9 placeholder cards. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-alone open (12 shots, 109-second estimate, no dialogue), with 10 AI studies on disk and 2 placeholder cards, and the scout-hut scene 3 (17 shots, 159-second estimate), fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
