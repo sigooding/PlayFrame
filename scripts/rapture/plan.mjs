@@ -2,7 +2,7 @@
 // Run npm run build:rapture to rebuild the portable project; --check detects source drift.
 export const projectId = "74a9cb34-9e80-4a04-a614-000000000014";
 export const sceneId = "rapture-ep4-number-fourteen";
-export const coldOpenSceneId = "rapture-ep4-cold-open";
+export const coldOpenSceneId = "rapture-ep3-interview";
 export const lockupSceneId = "rapture-ep2-alan";
 export const createdAt = "2026-09-20T00:00:00.000Z";
 export const characterId = name => `rapture-${name}`;
@@ -11,6 +11,8 @@ export const lockupGrammar = "Locked off, wide, deep focus, daylight, symmetrica
 export const redLight = "Red practical sources only: the letterbox, red dashboard indicators and the kettle's red indicator. Deep darkness outside those small pools. No white, blue, teal, sodium or daylight fill; red is a physical source, never an overall colour grade. Jodie's collar headlamp stays off.";
 export const coldOpenGrammar = "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.";
 export const ep3ColdOpenSceneId = "rapture-ep3-cold-open";
+export const patColdOpenSceneId = "rapture-ep4-pat-cold-open";
+export const patColdOpenGrammar = "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.";
 export const angelGrammar = "The opposite of Hell's surveillance: immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert, and that is the joke: the angels have made themselves look tremendous and they are of no use whatsoever. No score, no stings; nothing is remarked upon.";
 
 // First sentences carry the visual identity into the prompt studio. No invented names for unnamed roles.
@@ -74,6 +76,24 @@ export const shotPlan = [
   { title: "About the council", duration: 13, characters: ["danny", "jodie"], image: "11-council.jpg", note: "Inside the moving cab. Vehicle exterior lights off. No reflective ending or grief." },
   { title: "The light stays on", duration: 5, characters: [], image: "12-passing-door.jpg", note: "MS replaces the superseded WS. Only a passing van panel and a slice of door, never a street establishing shot. No exterior van lights." },
   { title: "The unfinished complaint", duration: 10, characters: ["woman-fourteen"], image: "13-complaint.jpg", note: "Final mid-complaint pose at the door, from the street. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade. Check door colour against shot 4 and keep red the only practical before approving." },
+];
+
+// Titles, working running times and setups for the twelve numbered source shots of the
+// episode-four cold open: Pat alone in her house before anyone arrives. No dialogue at all;
+// only the ten-second hold in shot 1 and the twelve-second hold in shot 10 are locked.
+export const patColdOpenPlan = [
+  { title: "Standing in the dark", duration: 14, characters: ["pat"], image: "01-standing-dark.jpg", shotType: "Medium", angle: "High angle", camera: "high corner", timecode: "06:12:04", lighting: "Low key", note: "A pensioner's front room in the dark. Curtains shut. Every surface immaculate. Pat stands in the middle of the room facing the fireplace, perfectly still. The ten-second hold is locked: she does not move at all." },
+  { title: "Curtains open", duration: 8, characters: ["pat"], image: "02-curtains-open.jpg", shotType: "Medium", angle: "High angle", camera: "opposite high corner", timecode: "07:40:19", note: "The curtains are open now. Same position, same stance, still facing the fireplace." },
+  { title: "The wedding photograph", duration: 10, characters: ["pat"], image: "03-wedding-photo.jpg", shotType: "Medium", angle: "High angle", camera: "high corner", timecode: "08:03:55", note: "She turns, crosses to the sideboard, picks up a framed wedding photograph and looks at it. Puts it down turned slightly differently; picks it up again; puts it back the way it was." },
+  { title: "Three different men", duration: 6, characters: [], image: "04-photographs.jpg", shotType: "Insert", angle: "Eye level", camera: "the sideboard", lighting: "Overcast soft", note: "Fixed insert on the sideboard: a row of framed photographs. The same woman in all of them. Three different men." },
+  { title: "The sweet tin", duration: 12, characters: ["pat"], image: "05-sweet-tin.jpg", shotType: "Medium", angle: "High angle", camera: "high corner, the kitchen", lighting: "Overcast soft", note: "She takes down a sweet tin. Empty. Tips in a whole bag of boiled sweets, then another, and another. Only boiled sweets, nothing else, and she levels the top with her hand, carefully, so they sit flat." },
+  { title: "The cupboard of water", duration: 8, characters: ["pat"], image: "06-water-cupboard.jpg", shotType: "Medium", angle: "High angle", camera: "the kitchen, opposite angle", lighting: "Overcast soft", note: "She opens the cupboard beside it: slabs of bottled water, floor to shelf, dozens of them. She looks at them for a moment. Closes the cupboard." },
+  { title: "Doilies", duration: 8, characters: ["pat"], image: "07-doilies.jpg", shotType: "Medium", angle: "High angle", camera: "high corner, the front room", lighting: "Overcast soft", note: "She sits down in the armchair and arranges the doilies on the arms so they're square, then adds another doily to a small table that already has one on it." },
+  { title: "The front door", duration: 10, characters: ["pat"], image: "08-front-door.jpg", shotType: "Medium", angle: "Eye level", camera: "the hall", lighting: "Overcast soft", note: "She goes to the door, opens it, looks out at an empty street. Nothing there. Closes it. Opens it again. Looks out. Closes it." },
+  { title: "Facing the window", duration: 8, characters: ["pat"], image: "09-armchair.jpg", shotType: "Medium", angle: "High angle", camera: "high corner, the front room", timecode: "09:51:32", lighting: "Overcast soft", note: "Back in the armchair, facing the window, hands on the arms of the chair. Perfectly still." },
+  { title: "The smile", duration: 16, characters: ["pat"], image: "10-the-smile.jpg", shotType: "Medium", angle: "High angle", camera: "held", lighting: "Overcast soft", note: "Hold. The twelve-second hold is locked: nothing moves in the frame at all. Then, without any change in her posture, she smiles at the window. There is nobody at the window." },
+  { title: "The empty path", duration: 5, characters: [], image: "11-the-window.jpg", shotType: "Insert", angle: "Eye level", camera: "the window, from inside", lighting: "Overcast soft", note: "Fixed insert from inside: an empty front path. A gate. A street." },
+  { title: "Black — title card", duration: 4, characters: [], image: "12-black.jpg", shotType: "Insert", angle: "Eye level", camera: "black", lighting: "Low key", note: "Black. Title card. The burnt-in timecode is the only thing that has kept the morning honestly." },
 ];
 
 // Titles, working running times and setups for the fifteen numbered source shots of the
@@ -177,7 +197,7 @@ export const outlinePlan = [
   [3, "test", "A worthless screening method", "INT. POLICE CAR", "DAY", ["kath", "ray"], "Blanks established. The cops invent a test around I can only apologise and never doubt it. Half of real humanity says it too."],
   [3, "group", "Recruited / brown water", "INT. UNDERGROUND MEETING PLACE", "NIGHT", ["danny", "jodie"], "Danny and Jodie recruited by the underground group. Brown water. Tight red practical handheld coverage; no full-room tableau."],
   [3, "home", "A collection and no son", "INT. MARTIN'S HOME", "DAY", ["martin"], "Martin comes home to a collection and no son. Aggrieved, not grieving. Flat, fluorescent, off-centre."],
-  [4, "pat", "Pat's house — the old lady", "INT./EXT. PAT'S HOUSE / GATE", "NIGHT", ["pat", "danny", "jodie"], "Jodie on the settee, Danny in the kitchen, knife and fork, fork through the forearm, bottles by the gate. This is NOT Number Fourteen. Demon viewpoints retain fixed high-corner 4:3 surveillance; Crane viewpoints stay tight red handheld. Do not blend the grammars within a shot."],
+  [4, "pat", "Pat's house — the old lady", "INT./EXT. PAT'S HOUSE / GATE", "NIGHT", ["pat", "danny", "jodie"], "Scene 2 of the episode, after Pat's cold open: Jodie on the settee with the squash and the sweet tin, Danny in the kitchen, knife and fork, fork through the forearm, bottles by the gate. This is NOT Number Fourteen. The sequence runs 32 shots as written; the numbered source is not yet in the workspace, so this outline holds its place and invents no shots. Demon viewpoints retain fixed high-corner 4:3 surveillance; Crane viewpoints stay tight red handheld. Do not blend the grammars within a shot."],
   [4, "meetings", "Survivors' meetings", "INT. MEETING PLACE", "DAY", [], "Grandma and the dog are reported as proof they are here to maintain order. Someone mentions a nun. No mechanism explanation or catch-up scene."],
   [5, "basement", "The interrogation", "INT. CELLAR", "NIGHT", ["field-officer", "rescued-blank"], "The chained blank. The interrogation goes nowhere. The officer has notes and thinks she is close. Fixed high-corner surveillance, never close; the violence is not spectacular."],
   [5, "rescue", "Laminate flooring", "INT. CELLAR / EXIT", "NIGHT", ["danny", "jodie", "rescued-blank"], "Danny and Jodie rescue the man who talks about laminate flooring. Hell is watching through him. Upstairs taps are dead. The Crane coverage remains tight red handheld."],

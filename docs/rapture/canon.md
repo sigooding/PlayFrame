@@ -12,6 +12,17 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
+- **Episode-four cold open — Pat alone:** [numbered scene](scenes/ep4-pat-cold-open.md),
+  12 dialogue-free surveillance shots of Pat keeping house before anyone
+  arrives: the photographs with three different men, the sweet tin, the
+  cupboard of bottled water, the doilies, and one smile at an empty window.
+  The old-lady sequence becomes **Scene 2** of the episode; its 32 shots are
+  held by the outline until the numbered source is supplied. Ten AI studies
+  are on disk; two shots hold placeholder cards.
+- **The interview (episode three):** [numbered scene](scenes/ep4-cold-open.md),
+  Graham's 17-shot Hell interview, re-homed to episode three so it sits with
+  the angels' cold open and the cops' test: three scenes circling what a
+  blank is, from three angles, none of them getting it.
 - **Episode-three cold open:** [numbered scene](scenes/ep3-cold-open.md),
   15 static setups in immaculate advert grammar: locked off, centred, too
   symmetrical, beautiful light. The recovery angels are now **named by the
@@ -45,7 +56,8 @@ comedy in every thread; this is not noir and not a tragedy.
   Reference: `public/images/rapture/sheets/crazed-woman.jpg` (legacy filename).
 - **Van:** weathered 1990s Ford Transit, faded grey-green. Unify number plates
   before approving final coverage. Check jacket-pocket continuity in shot 9.
-- **Graham — 50s.** A blank interviewed in the episode-four cold open. Beige
+- **Graham — 50s.** A blank interviewed in **episode three** (the interview
+  moved from the episode-four cold open in the restructure). Beige
   cardigan, shirt and tie, corduroys, slippers. Content, helpful, unfazed;
   never frightened. No surname, and **not** Alan and **not** the chained/rescued
   blank — no identity link has been supplied.
@@ -92,6 +104,14 @@ values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.
 
+Ten **Pat cold-open AI studies** in `public/images/rapture/ep4-pat-cold-open/`
+board the episode-four cold open, one keyframe per shot except shots 11–12,
+which hold placeholder cards until generated. All carry the demon surveillance
+grammar with no dialogue and no score: the horror is that nothing happens.
+Shot 10's smile is the only thing Pat does that isn't domestic. Check the
+photograph row (the same woman, three different men) and the water cupboard
+against the settee scene's sweet tin and gate bottles before approving.
+
 Fifteen **angel cold-open AI studies** in `public/images/rapture/ep3-cold-open/`
 board the episode-three cold open, one keyframe per shot. All carry the
 immaculate advert grammar: locked off, centred, slightly too symmetrical,
@@ -116,6 +136,10 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
   and two recovery angels remain unnamed.
 - Episode-four Number Fourteen has a *locally intermittent* upstairs tap; the
   series-wide upstairs failure remains episode five.
+- Pat's cold open is unwitnessed: no character sees it, and it invents no
+  dialogue. The audience knows what she is from the first minute; nobody in
+  the episode ever does. The settee scene's props (sweet tin, gate bottles)
+  are pre-established by it, not contradicted.
 - The correction is an **auction bid, not a rewind**. Limbo is outside time and
   keeps its queue. No epilogue or resolved faces are added.
 

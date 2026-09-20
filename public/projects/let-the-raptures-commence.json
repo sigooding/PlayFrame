@@ -254,6 +254,23 @@
       "kind": "Standard"
     },
     {
+      "id": "rapture-ep3-interview",
+      "title": "The interview",
+      "location": "INT. SUBURBAN FRONT ROOM",
+      "time": "DAY",
+      "description": "Episode three circles what a blank is from three angles and gets it wrong three times: the angels' cold open, the cops' worthless test, and Hell's five-hour interview that leaves with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
+      "characters": [
+        "rapture-reek",
+        "rapture-tamsin",
+        "rapture-graham"
+      ],
+      "actId": "rapture-episode-3",
+      "kind": "Standard",
+      "lighting": "Overcast soft",
+      "lightingNotes": "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.",
+      "style": "cinematic"
+    },
+    {
       "id": "rapture-ep3-group",
       "title": "Recruited / brown water — outline",
       "location": "INT. UNDERGROUND MEETING PLACE",
@@ -279,20 +296,18 @@
       "kind": "Standard"
     },
     {
-      "id": "rapture-ep4-cold-open",
-      "title": "Cold open — the interview",
-      "location": "INT. SUBURBAN FRONT ROOM",
-      "time": "DAY",
-      "description": "Three afterlives employees interview a contented blank for five hours and leave with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
+      "id": "rapture-ep4-pat-cold-open",
+      "title": "Cold open — Pat alone",
+      "location": "INT. PAT'S HOUSE",
+      "time": "MORNING",
+      "description": "No dialogue. A demon keeping house: the tin, the water, the doilies, and one smile at an empty window. Surveillance grammar tells the audience which side she is on without a word.",
       "characters": [
-        "rapture-reek",
-        "rapture-tamsin",
-        "rapture-graham"
+        "rapture-pat"
       ],
       "actId": "rapture-episode-4",
       "kind": "Standard",
-      "lighting": "Overcast soft",
-      "lightingNotes": "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.",
+      "lighting": "Low key",
+      "lightingNotes": "Fixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.",
       "style": "cinematic"
     },
     {
@@ -317,7 +332,7 @@
       "title": "Pat's house — the old lady — outline",
       "location": "INT./EXT. PAT'S HOUSE / GATE",
       "time": "NIGHT",
-      "description": "OUTLINE ONLY — not a numbered shooting script. Jodie on the settee, Danny in the kitchen, knife and fork, fork through the forearm, bottles by the gate. This is NOT Number Fourteen. Demon viewpoints retain fixed high-corner 4:3 surveillance; Crane viewpoints stay tight red handheld. Do not blend the grammars within a shot. Location/time are provisional unless specified by the bible.",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Scene 2 of the episode, after Pat's cold open: Jodie on the settee with the squash and the sweet tin, Danny in the kitchen, knife and fork, fork through the forearm, bottles by the gate. This is NOT Number Fourteen. The sequence runs 32 shots as written; the numbered source is not yet in the workspace, so this outline holds its place and invents no shots. Demon viewpoints retain fixed high-corner 4:3 surveillance; Crane viewpoints stay tight red handheld. Do not blend the grammars within a shot. Location/time are provisional unless specified by the bible.",
       "characters": [
         "rapture-pat",
         "rapture-danny",
@@ -5743,7 +5758,7 @@
     },
     {
       "id": "rapture-ep4co-01",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Where did they go",
       "description": "A front room. Graham in the armchair, hands on his knees, facing slightly away from anyone. Reek and Tamsin on the settee, sitting too upright, like people who have been told how chairs work.",
       "image": "/images/rapture/ep4-cold-open/01-room.jpg",
@@ -5767,7 +5782,7 @@
     },
     {
       "id": "rapture-ep4co-02",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "The pen",
       "description": "Same positions. Tamsin has her folder open on her knee.",
       "image": "/images/rapture/ep4-cold-open/02-folder.jpg",
@@ -5791,7 +5806,7 @@
     },
     {
       "id": "rapture-ep4co-03",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Look at me",
       "description": "Reek has got up and is standing over him. Tamsin is still writing.",
       "image": "/images/rapture/ep4-cold-open/03-look-at-me.jpg",
@@ -5815,7 +5830,7 @@
     },
     {
       "id": "rapture-ep4co-04",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "He might be being clever",
       "description": "Graham has gone to make drinks. Reek and Tamsin stand in the middle of the room.",
       "image": "/images/rapture/ep4-cold-open/04-doorway.jpg",
@@ -5838,7 +5853,7 @@
     },
     {
       "id": "rapture-ep4co-05",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Three mugs",
       "description": "All three seated again. Three mugs. Nobody has touched theirs.",
       "image": "/images/rapture/ep4-cold-open/05-three-mugs.jpg",
@@ -5862,7 +5877,7 @@
     },
     {
       "id": "rapture-ep4co-06",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Wales?",
       "description": "The light in the room has changed. Nobody has moved.",
       "image": "/images/rapture/ep4-cold-open/06-light-changed.jpg",
@@ -5886,7 +5901,7 @@
     },
     {
       "id": "rapture-ep4co-07",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "WALES, underlined",
       "description": "She writes WALES and underlines it.",
       "image": "/images/rapture/ep4-cold-open/07-wales.jpg",
@@ -5908,7 +5923,7 @@
     },
     {
       "id": "rapture-ep4co-08",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Payroll",
       "description": "Reek is sitting on the floor with his back against the wall. Tamsin is still going.",
       "image": "/images/rapture/ep4-cold-open/08-floor.jpg",
@@ -5932,7 +5947,7 @@
     },
     {
       "id": "rapture-ep4co-09",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Salary sacrifice",
       "description": "Graham is still talking. Reek's head is tipped back against the wall. Tamsin's pen has stopped.",
       "image": "/images/rapture/ep4-cold-open/09-payroll.jpg",
@@ -5956,7 +5971,7 @@
     },
     {
       "id": "rapture-ep4co-10",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Come unstuck",
       "description": "Nobody has moved. Graham is still talking. The mugs have gone cold.",
       "image": "/images/rapture/ep4-cold-open/10-wide-still.jpg",
@@ -5980,7 +5995,7 @@
     },
     {
       "id": "rapture-ep4co-11",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Have you ever made a decision",
       "description": "Reek gets up and walks out of frame. A door goes. Tamsin remains, alone with Graham.",
       "image": "/images/rapture/ep4-cold-open/11-exit.jpg",
@@ -6004,7 +6019,7 @@
     },
     {
       "id": "rapture-ep4co-12",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Writes it down",
       "description": "She looks at him. She writes it down. She has no idea what it means.",
       "image": "/images/rapture/ep4-cold-open/12-decision.jpg",
@@ -6026,7 +6041,7 @@
     },
     {
       "id": "rapture-ep4co-13",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "He's not given us Wales",
       "description": "Reek back in the doorway, coat on.",
       "image": "/images/rapture/ep4-cold-open/13-doorway-coat.jpg",
@@ -6049,7 +6064,7 @@
     },
     {
       "id": "rapture-ep4co-14",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Graham alone",
       "description": "They leave. The front door goes. Graham, alone in his armchair, hands back on his knees.",
       "image": "/images/rapture/ep4-cold-open/14-alone.jpg",
@@ -6071,7 +6086,7 @@
     },
     {
       "id": "rapture-ep4co-15",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "The glitch",
       "description": "Hold. Twelve seconds of a man sitting in a chair.",
       "image": "/images/rapture/ep4-cold-open/15-glitch.jpg",
@@ -6093,7 +6108,7 @@
     },
     {
       "id": "rapture-ep4co-16",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Held",
       "description": "Nothing. Timecode ticking.",
       "image": "/images/rapture/ep4-cold-open/16-held.jpg",
@@ -6115,7 +6130,7 @@
     },
     {
       "id": "rapture-ep4co-17",
-      "sceneId": "rapture-ep4-cold-open",
+      "sceneId": "rapture-ep3-interview",
       "title": "Black — title card",
       "description": "BLACK. TITLE CARD.",
       "image": "/images/rapture/ep4-cold-open/17-black.jpg",
@@ -6132,6 +6147,262 @@
       "mood": "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
       "characters": [],
       "notes": "Black. Title card. Only the burnt-in timecode confirms the tape never stopped.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. The timecode runs on across the cuts so the audience can see how long this has been going. Dry, deadpan British black comedy; no score, no stings, no reaction inserts.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. BLACK. TITLE CARD."
+    },
+    {
+      "id": "rapture-ep4pco-01",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "Standing in the dark",
+      "description": "A pensioner's front room in the dark. Curtains shut. Every surface immaculate.",
+      "image": "/images/rapture/ep4-pat-cold-open/01-standing-dark.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "lighting": "Low key",
+      "style": "cinematic",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "A pensioner's front room in the dark. Curtains shut. Every surface immaculate. Pat stands in the middle of the room facing the fireplace, perfectly still. The ten-second hold is locked: she does not move at all.\n\nBurnt-in timecode: 06:12:04.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (10s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. FIXED CAM — high corner, 4:3, timecode 06:12:04\nA pensioner's front room in the dark. Curtains shut. Every surface immaculate.\nPat is standing in the middle of the room. Not sitting. Standing, facing the fireplace, perfectly still.\n\nHold. Ten seconds. She does not move at all."
+    },
+    {
+      "id": "rapture-ep4pco-02",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "Curtains open",
+      "description": "The curtains are open now. Same position. Same stance. Still facing the fireplace.",
+      "image": "/images/rapture/ep4-pat-cold-open/02-curtains-open.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "style": "cinematic",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "The curtains are open now. Same position, same stance, still facing the fireplace.\n\nBurnt-in timecode: 07:40:19.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. FIXED CAM — opposite high corner, timecode 07:40:19\nThe curtains are open now. Same position. Same stance. Still facing the fireplace."
+    },
+    {
+      "id": "rapture-ep4pco-03",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "The wedding photograph",
+      "description": "She turns and crosses to the sideboard. Picks up a framed wedding photograph. Looks at it.",
+      "image": "/images/rapture/ep4-pat-cold-open/03-wedding-photo.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "She turns, crosses to the sideboard, picks up a framed wedding photograph and looks at it. Puts it down turned slightly differently; picks it up again; puts it back the way it was.\n\nBurnt-in timecode: 08:03:55.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. FIXED CAM — high corner, timecode 08:03:55\nShe turns and crosses to the sideboard. Picks up a framed wedding photograph. Looks at it.\nPuts it down turned slightly differently.\nPicks it up again. Puts it back the way it was."
+    },
+    {
+      "id": "rapture-ep4pco-04",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "Three different men",
+      "description": "A row of framed photographs. The same woman in all of them. Three different men.",
+      "image": "/images/rapture/ep4-pat-cold-open/04-photographs.jpg",
+      "shotType": "Insert",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [],
+      "notes": "Fixed insert on the sideboard: a row of framed photographs. The same woman in all of them. Three different men.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. FIXED CAM — the sideboard, fixed, slightly fisheyed\nA row of framed photographs. The same woman in all of them. Three different men."
+    },
+    {
+      "id": "rapture-ep4pco-05",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "The sweet tin",
+      "description": "She takes down a sweet tin. Opens it. Empty.",
+      "image": "/images/rapture/ep4-pat-cold-open/05-sweet-tin.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "She takes down a sweet tin. Empty. Tips in a whole bag of boiled sweets, then another, and another. Only boiled sweets, nothing else, and she levels the top with her hand, carefully, so they sit flat.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. FIXED CAM — high corner, the kitchen\nShe takes down a sweet tin. Opens it. Empty.\nShe opens a cupboard and takes out a bag of boiled sweets. Tips the whole bag in.\nThen another bag. And another. Only boiled sweets. Nothing else.\nShe levels the top of them with her hand, carefully, so they sit flat."
+    },
+    {
+      "id": "rapture-ep4pco-06",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "The cupboard of water",
+      "description": "She opens the cupboard beside it. Inside: slabs of bottled water, floor to shelf. Dozens of them.",
+      "image": "/images/rapture/ep4-pat-cold-open/06-water-cupboard.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "She opens the cupboard beside it: slabs of bottled water, floor to shelf, dozens of them. She looks at them for a moment. Closes the cupboard.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. FIXED CAM — the kitchen, opposite angle\nShe opens the cupboard beside it. Inside: slabs of bottled water, floor to shelf. Dozens of them.\nShe looks at them for a moment. Closes the cupboard."
+    },
+    {
+      "id": "rapture-ep4pco-07",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "Doilies",
+      "description": "She sits down in the armchair. Arranges the doilies on the arms so they're square.",
+      "image": "/images/rapture/ep4-pat-cold-open/07-doilies.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "She sits down in the armchair and arranges the doilies on the arms so they're square, then adds another doily to a small table that already has one on it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. FIXED CAM — high corner, the front room\nShe sits down in the armchair. Arranges the doilies on the arms so they're square.\nThen she adds another doily to a small table that already has one on it."
+    },
+    {
+      "id": "rapture-ep4pco-08",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "The front door",
+      "description": "She goes to the door. Opens it. Looks out at an empty street. Nothing there.",
+      "image": "/images/rapture/ep4-pat-cold-open/08-front-door.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "She goes to the door, opens it, looks out at an empty street. Nothing there. Closes it. Opens it again. Looks out. Closes it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. FIXED CAM — the hall, fixed, looking at the front door\nShe goes to the door. Opens it. Looks out at an empty street. Nothing there.\nShe closes it. Opens it again. Looks out.\nCloses it."
+    },
+    {
+      "id": "rapture-ep4pco-09",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "Facing the window",
+      "description": "Back in the armchair, facing the window, hands on the arms of the chair.",
+      "image": "/images/rapture/ep4-pat-cold-open/09-armchair.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "Back in the armchair, facing the window, hands on the arms of the chair. Perfectly still.\n\nBurnt-in timecode: 09:51:32.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. FIXED CAM — high corner, the front room, timecode 09:51:32\nBack in the armchair, facing the window, hands on the arms of the chair.\nPerfectly still."
+    },
+    {
+      "id": "rapture-ep4pco-10",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "The smile",
+      "description": "Hold. Twelve seconds. Nothing moves in the frame at all.",
+      "image": "/images/rapture/ep4-pat-cold-open/10-the-smile.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "High angle",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 16,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [
+        "rapture-pat"
+      ],
+      "notes": "Hold. The twelve-second hold is locked: nothing moves in the frame at all. Then, without any change in her posture, she smiles at the window. There is nobody at the window.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (12s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. FIXED CAM — held, timecode running\nHold. Twelve seconds. Nothing moves in the frame at all.\n\nThen, without any change in her posture, she smiles at the window.\n\nThere is nobody at the window."
+    },
+    {
+      "id": "rapture-ep4pco-11",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "The empty path (keyframe missing)",
+      "description": "An empty front path. A gate. A street.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "Overcast soft",
+      "style": "cinematic",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — 11-the-window.jpg is not in public/images/rapture/ep4-pat-cold-open, so this card holds slot 11 of 12. Add the study and rebuild.\n\nFixed insert from inside: an empty front path. A gate. A street.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. FIXED CAM — the window, from inside, fixed\nAn empty front path. A gate. A street."
+    },
+    {
+      "id": "rapture-ep4pco-12",
+      "sceneId": "rapture-ep4-pat-cold-open",
+      "title": "Black — title card (keyframe missing)",
+      "description": "BLACK. TITLE CARD.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "lens": "24mm",
+      "angle": "Eye level",
+      "lighting": "Low key",
+      "style": "cinematic",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — 12-black.jpg is not in public/images/rapture/ep4-pat-cold-open, so this card holds slot 12 of 12. Add the study and rebuild.\n\nBlack. Title card. The burnt-in timecode is the only thing that has kept the morning honestly.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. BLACK. TITLE CARD."
     },
     {
       "id": "rapture-ep4-shot-01",
@@ -6883,7 +7154,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate), and the episode-four cold open is the second numbered scene (17 fixed surveillance shots, 172-second estimate), boarded with AI-generated studies pending production review. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, and the episode-four Pat-alone open (12 shots, 109-second estimate, no dialogue), with 10 AI studies on disk and 2 placeholder cards. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -7491,7 +7762,7 @@
       "items": []
     }
   ],
-  "script": "LET THE RAPTURES COMMENCE\nEPISODE 2 — \"THE FIRST WRONG LOCKUP\"\n\nEXT./INT. ROADS AND AN INDUSTRIAL ESTATE — DAY\nCast: NINA (45), ALAN (50s)\nGrammar: locked off, wide, deep focus, daylight, symmetrical. The camera never follows her. Long lenses for the road. Only the vision is handheld: broken, wrong aspect ratio, dropped frames, blown out, a hiss.\n\n\n1. STATIC WIDE, 135mm, locked off — EXT. DUAL CARRIAGEWAY. Long lens, heat shimmer. The minibus, tiny, on an empty three-lane road. It takes a long time to reach the middle of frame.\n\n2. STATIC MEDIUM, 40mm, locked off — INT. BUS. From the passenger side. Nina driving. The dog on the seat beside her, upright, facing forward like a passenger.\n   NINA: Don't look at me.\n\n3. STATIC WIDE, 50mm, locked off — EXT. ROAD. Roadside. She passes a church. A queue outside it, forty people deep. A trestle table. Someone with a clipboard organising badly. Two men arguing at the front.\n   The bus goes by without slowing.\n\n4. STATIC WIDE, 35mm, locked off — EXT. ROAD. A roadblock made of three wheelie bins and a garden bench. A teenage boy in a hi-vis vest stands beside it with a cricket bat, entirely alone, guarding a road that goes nowhere.\n   The bus drives around it across the grass verge.\n\n5. STATIC MEDIUM, 40mm, locked off — INT. BUS. Nina, unbothered. The dog watches the boy go past.\n\n6. STATIC WIDE, 135mm, locked off — EXT. ROAD. Hand-painted sheets tied to a footbridge. WE ARE THE CHOSEN ONES. Below it, on a second sheet: ROOMS AVAILABLE.\n\n7. STATIC MEDIUM, 40mm, locked off — INT. BUS. She pulls over. Kills the engine. Takes the pendant out of her collar and holds it in her fist like it owes her money.\n\n8. CLOSE, 65mm, static — Her face. Braced. Not reverent. The expression of someone about to get a phone call they've been dreading.\n\n9. FLASH, 25mm, handheld — An orange roller shutter.\n\n10. FLASH, 50mm, handheld — Strip lights in a corridor. One flickering.\n\n11. FLASH, 50mm, handheld — A painted bay number. Two digits. Held a beat too briefly to be certain of the second one.\n\n12. FLASH, 24mm, handheld — Low, six inches off the floor. A carpet. A radiator. Wrong decade.\n\n13. CLOSE, 65mm, static — Nina. Eyes open. Breathing hard. She looks profoundly unimpressed.\n    NINA: (to the windscreen) Forty-one, or forty-seven?\n\n14. STATIC MEDIUM, 40mm, locked off — Nothing happens. The dog looks at her.\n    NINA: Forty-one or forty-seven?\n    (Pause.)\n    NINA: (starting the engine) Right.\n\n15. STATIC WIDE, 28mm, locked off — EXT. INDUSTRIAL ESTATE. A low unit behind chain link. Not the one Martin visited. Similar enough. Barrier arm down. Weeds.\n\n16. STATIC WIDE, 24mm, locked off — She gets out. Looks at the barrier. Gets a pair of bolt cutters out of the bus and deals with the chain on the gate in about nine seconds.\n\n17. STATIC WIDE, 24mm, locked off — INT. CORRIDOR. Deep perspective. A corridor of orange roller doors receding to a vanishing point. Strip lights. One flickering.\n    She walks away from camera down the middle of it.\n    (Same composition as Martin's corridor. Wrong building.)\n\n18. MEDIUM, 50mm, static — She stops at 41. Looks at it. Cuts the padlock. Three attempts — she's stronger than Martin but it's still a padlock.\n\n19. STATIC WIDE, 28mm, locked off — Low. The shutter goes up on a unit containing approximately four hundred plastic garden chairs.\n\n20. MEDIUM, 50mm, static — Nina looks at four hundred garden chairs.\n\n21. STATIC WIDE, 24mm, locked off — Corridor. She walks to 47. Cuts that padlock too.\n\n22. STATIC WIDE, 28mm, locked off — Low. Shutter up. Empty. Completely empty. A concrete floor and a dead wasp.\n\n23. CLOSE, 65mm, static — Nina in the doorway of an empty unit.\n    NINA: (upward, conversational) Was it one of the other forty, then?\n\n24. STATIC WIDE, 24mm, locked off — Corridor. Same framing as 17. Her, small, at the far end, in front of a corridor of identical shutters that goes on for a very long way.\n    Hold.\n\n25. STATIC WIDE, 28mm, locked off — EXT. ESTATE. She comes out. Loads the bolt cutters. Stops.\n\n26. STATIC MEDIUM, 50mm, locked off — A MAN (50s, fleece, sensible shoes, holding a carrier bag) is standing beside the minibus. Perfectly still. He has been there some time. The dog is looking at him through the window.\n    MAN: Is this yours?\n    NINA: It is.\n    MAN: I thought it might be.\n    (Pause. He doesn't move or explain himself.)\n    NINA: Can I help you?\n    MAN: I've been here since Tuesday.\n    NINA: Doing what?\n    MAN: (a genuine pause, thinking hard) Waiting.\n    NINA: For what?\n    MAN: (cheerfully) Well. Nothing's come.\n\n27. CLOSE, 65mm, static — On NINA. She looks at him. Twenty years of assessing people at a front door.\n    NINA: What's in the bag?\n    MAN: Bag for life.\n    NINA: What's *in* it?\n    MAN: (looking) Oh. Another bag.\n\n28. STATIC WIDE, 28mm, locked off — Nina considers leaving him there. Properly considers it.\n    Then she opens the passenger door.\n\n29. STATIC MEDIUM, 40mm, locked off — Interior. He gets in. Sits perfectly upright. Puts the bag on his knees. Faces forward, exactly like the dog.\n    NINA: Name?\n    MAN: Alan.\n    NINA: Right.\n    ALAN: Am I in the way?\n    NINA: No.\n    ALAN: (immediately, warmly) I can only apologise.\n\n30. CLOSE, 65mm, static — On NINA. She looks at him. Nothing registers. She has no idea what that means.\n    She starts the engine.\n\n31. STATIC WIDE, 135mm, locked off — EXT. ROAD. Long lens, heat shimmer. The bus, tiny, pulling away down a long straight road.\n    Hold.\n\nLET THE RAPTURES COMMENCE\nEPISODE 3 — COLD OPEN\n\nEXT./INT. A PARK AND A GARDEN CENTRE — DAY\nCast: HARIEL (40s, linen, immaculate), SOQED (30s, likewise, slightly behind him always)\nGrammar: the opposite of Hell's. Not surveillance — immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert. That's the joke: they've made themselves look tremendous and they are of no use whatsoever.\n\n\n1. EXT. PARK — STATIC WIDE — 28mm, locked off, dead centre, golden light\nAn empty municipal park. A bandstand. Beautiful.\nTwo men are standing in the middle of the grass, perfectly composed, facing the same direction. They have been there for some time.\n   HARIEL: Right.\n   SOQED: Right.\n\n   (Pause. Eight seconds.)\n\n   HARIEL: Where would you keep a computer?\n\n2. STATIC WIDE — 24mm, locked off, symmetrical\nThe two of them, centred, the bandstand exactly behind them.\n   SOQED: I don't know what one looks like.\n   HARIEL: You've seen one.\n   SOQED: Have I?\n   HARIEL: In the report.\n   SOQED: I didn't read the report.\n\n   (Pause.)\n\n   HARIEL: (entirely unbothered) No. Nor did I.\n\n3. STATIC MEDIUM — 50mm, locked off, frontal, two-shot\nBoth facing camera. Nothing behind the eyes, but well-lit.\n   HARIEL: It's beige.\n   SOQED: Beige.\n   HARIEL: That's the main thing about it.\n\n4. EXT. HIGH STREET — STATIC WIDE — 28mm, locked off, centred, lovely light\nAn empty high street. The two of them walking down the middle of it in perfect step. Broken glass, an overturned bin, a dog in a doorway. Neither of them looks at any of it.\n\n5. STATIC WIDE — 24mm, locked off\nThey stop outside a shop. Look in the window.\n\n6. INSERT — 85mm, static\nA window display of beige garden furniture.\n\n7. STATIC MEDIUM — 50mm, frontal\n   SOQED: (quietly, to himself) Beige.\n   HARIEL: Not that sort of beige.\n\n8. INT. GARDEN CENTRE — STATIC WIDE — 24mm, locked off, deep perspective, aisles\nEnormous, empty, strip-lit. Racks of compost. The two of them walk down the centre aisle, still in step.\n\n9. STATIC WIDE — 28mm, locked off\nThey stop. In the middle distance, standing between two pallets of bark chippings, facing nothing: a MAN (60s, cardigan, still).\n\n10. STATIC MEDIUM — 50mm, frontal, on the two angels\n   HARIEL: There's one.\n   SOQED: Is he ours or theirs?\n   HARIEL: He's nobody's.\n   SOQED: (a beat) Can we use him?\n   HARIEL: Everyone's using them. That's what they're for.\n\n11. STATIC WIDE — 28mm, locked off\nThe blank continues facing nothing. Neither angel approaches him.\n\n12. INSERT — 85mm, static\nThe blank's eyes. Nothing wrong with them. Nothing behind them either.\n\n13. STATIC TWO-SHOT — 50mm, frontal\n   SOQED: So what's the plan?\n   HARIEL: We locate the equipment, we recover the equipment, we go home.\n   SOQED: And if someone's using it?\n   HARIEL: Nobody's using it. They haven't got the permissions.\n   SOQED: How do you know?\n   HARIEL: (with total confidence) Because they haven't.\n\n14. STATIC WIDE — 24mm, locked off, deep perspective, aisles\nThe two of them walking away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction.\n\nHold.\n\n15. BLACK. TITLE CARD.\n\nLET THE RAPTURES COMMENCE\nEPISODE 4 — \"NUMBER FOURTEEN\"\n\nEXT./INT. NUMBER FOURTEEN — NIGHT\nCast: DANNY (40), JODIE (11), THE WOMAN (number 14, 50s)\nGrammar: handheld, tight, dark, red practical sources only.\n\n\n1. CU, 50mm, handheld — Danny's hand on the headlight switch. The red letterbox light on the wet side window. A 2-second pause. He turns the switch off.\n\n2. MS, 35mm, handheld — the cab. Danny, a laminated card in his hand.\n   DANNY: Number 14. The taps run there.\n   JODIE: The letterbox is on.\n   DANNY: So is the dashboard.\n   A 2-second pause.\n   DANNY: Rule two. No lights on the street.\n\n3. MS, 35mm, handheld — Danny on the step, red light off the letterbox on his face. He knocks three times.\n   A 3-second pause.\n   DANNY: (to the door) It's cold.\n   A 2-second pause.\n   DANNY: (to Jodie, over his shoulder) It's very cold.\n\n4. MS, 35mm, handheld — the door opens. THE WOMAN (50s, rumpled housecoat over a floral blouse, a Tesco bag stuffed with crumpled papers) holding the door for someone.\n   THE WOMAN: Oh, sorry, I'm mid-sentence.\n   She steps back into the hall, lets the door swing, and reopens it.\n\n5. MS, 35mm, handheld — the hall, over her shoulder. A table set for six, plates on it.\n   THE WOMAN: Number 14.\n   DANNY: That's what the card says.\n   THE WOMAN: I know what the card says.\n\n6. MS, 35mm, handheld — the kitchen, red light only: the letterbox light under the door, the red light of the kettle on. Six cups on the counter.\n   THE WOMAN: You want water.\n   DANNY: We're looking for water.\n   THE WOMAN: The tap. (points) Not the upstairs.\n   DANNY: Why not?\n   THE WOMAN: Dead most days.\n   A 2-second pause.\n   THE WOMAN: Was fine on Tuesday. That was Thursday.\n\n7. CU, 50mm, handheld — the tap. The water comes out brown. A 4-second pause of brown water. The water comes out clear.\n   JODIE: (quietly) It's doing it again.\n   DANNY: Rule nine. Write it down.\n   JODIE: I am.\n\n8. MS, 35mm, handheld — Jodie filling the bottle at the sink. The woman watching.\n   THE WOMAN: Biscuit.\n   A 2-second pause.\n   DANNY: We haven't broken any rules.\n   THE WOMAN: Rule one is biscuit.\n\n9. CU, 50mm, handheld — Danny. A slow blink. He looks at his card.\n   DANNY: I don't have a biscuit.\n   A 2-second pause.\n   JODIE: I have a biscuit.\n   Jodie produces a biscuit from Danny's jacket.\n   DANNY: That's from the tin.\n   JODIE: The tin's in the van. That's from my pocket.\n   Danny looks at the jacket. There is no pocket.\n   A 2-second pause.\n   Danny writes something on the card.\n\n10. MS, 35mm, handheld — the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.\n    THE WOMAN: Don't come back on a Tuesday.\n    DANNY: Why not?\n    THE WOMAN: The pipes.\n    A 2-second pause.\n    JODIE: That's not a reason.\n    A 2-second pause.\n    THE WOMAN: It's a reason.\n\n11. MS, 35mm, handheld — the cab. Danny driving. Jodie holding the bottle.\n    JODIE: What was she saying?\n    DANNY: I think it was about the council.\n    JODIE: To who?\n    A 2-second pause.\n    DANNY: I don't know.\n\n12. MS, 35mm, handheld — the wet side panel of the van passing the door, no lights. The red letterbox light stays on.\n    A 2-second pause.\n\n13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.\n    THE WOMAN: — and that's why I'm telling the council, the parking, the noise, the —\n    A 2-second pause.\n    The door closes.\n    CUT TO BLACK.\n\nLET THE RAPTURES COMMENCE\nEPISODE 4 — COLD OPEN\n\nINT. SUBURBAN FRONT ROOM — DAY\nCast: REEK (30s), TAMSIN (20s), GRAHAM (50s, a blank)\nGrammar: fixed high-corner surveillance cameras, 4:3, faint burnt-in timecode, slight fisheye. Cut between fixed angles only. Never moves, never close. The timecode runs on across the cuts, so the audience can see how long this has been going.\n\nProtections: the timecode does the heavy lifting — five hours pass and the joke is entirely in the numbers. \"Wales\" needs no reaction from anyone but Tamsin writing it down. Shot 15 is the first glitch the audience sees, played completely flat: no music sting, no camera move, just a man repeating a clause about payroll to an empty room.\n\n\n1. FIXED CAM — high corner, 4:3, timecode 11:04:22\nA front room. Graham in the armchair, hands on his knees, facing slightly away from anyone. Reek and Tamsin on the settee, sitting too upright, like people who have been told how chairs work.\n   REEK: So. Where did they go.\n   GRAHAM: Who's that?\n   REEK: The bad ones.\n   GRAHAM: (after a genuine pause) Bad ones.\n   REEK: The wicked. The unrighteous.\n   GRAHAM: (brightening) Oh, I don't know any of them.\n\n2. FIXED CAM — opposite high corner, timecode 11:19:51\nSame positions. Tamsin has her folder open on her knee.\n   TAMSIN: Have you ever done anything wrong?\n   GRAHAM: I took a pen from the office.\n   TAMSIN: (writing it down) Right.\n   GRAHAM: It was a rollerball.\n   TAMSIN: When was this?\n   GRAHAM: Ninety-eight.\n\n3. FIXED CAM — high corner, timecode 11:41:07\nReek has got up and is standing over him. Tamsin is still writing.\n   REEK: I want you to look at me.\n   GRAHAM: Righto.\n   REEK: (leaning in, doing something demonic and enormous with his face and voice) LOOK AT ME.\n   GRAHAM: (looking at him) Yes.\n\n   (Pause. Six seconds.)\n\n   GRAHAM: Would you like a drink?\n\n4. FIXED CAM — a different angle, the doorway, timecode 11:52:30\nGraham has gone to make drinks. Reek and Tamsin stand in the middle of the room.\n   TAMSIN: He's not frightened.\n   REEK: They're all frightened. That's the whole thing about them.\n   TAMSIN: He's offered us a drink.\n   REEK: (a beat) He might be being clever.\n\n5. FIXED CAM — high corner, timecode 12:08:14\nAll three seated again. Three mugs. Nobody has touched theirs.\n   TAMSIN: Are you dead?\n   GRAHAM: I don't think so.\n   TAMSIN: Are you sure?\n   GRAHAM: (considering it properly, for a long time) I'd have heard.\n\n6. FIXED CAM — opposite corner, timecode 13:26:48\nThe light in the room has changed. Nobody has moved.\n   REEK: Right. Once more. Four billion people went. Upstairs got the good ones. Where did ours go?\n   GRAHAM: Ours?\n   REEK: Hell's.\n   GRAHAM: Oh, I couldn't say.\n   REEK: Have a guess.\n   GRAHAM: (a long pause, then, helpfully) Wales?\n\n7. FIXED CAM — on Tamsin's folder\nShe writes WALES and underlines it.\n\n8. FIXED CAM — high corner, timecode 14:02:33\nReek is sitting on the floor with his back against the wall. Tamsin is still going.\n   TAMSIN: What do you do, Graham?\n   GRAHAM: Payroll.\n   TAMSIN: What's that?\n   GRAHAM: (the most animated he has been) Well. It's the wages, but it's the deductions as well.\n   TAMSIN: Deductions.\n   GRAHAM: Statutory and voluntary.\n\n9. FIXED CAM — opposite corner, timecode 14:47:19\nGraham is still talking. Reek's head is tipped back against the wall. Tamsin's pen has stopped.\n   GRAHAM: — and that's before you get to the salary sacrifice.\n\n10. FIXED CAM — a wide fixed angle, timecode 15:31:52\nNobody has moved. Graham is still talking. The mugs have gone cold.\n   GRAHAM: — which is where most firms come unstuck.\n\n11. FIXED CAM — high corner, timecode 16:14:08\nReek gets up and walks out of frame. A door goes. Tamsin remains, alone with Graham.\n   TAMSIN: (carefully) Graham. Have you ever made a decision?\n   GRAHAM: (no pause at all) I can only apologise.\n\n12. FIXED CAM — on TAMSIN\nShe looks at him. She writes it down. She has no idea what it means.\n\n13. FIXED CAM — the doorway\nReek back in the doorway, coat on.\n   REEK: Nothing in there.\n   TAMSIN: He's given us Wales.\n   REEK: He's not given us Wales.\n   TAMSIN: (defensive) It's the only lead we've got.\n\n14. FIXED CAM — high corner, wide\nThey leave. The front door goes. Graham, alone in his armchair, hands back on his knees.\n\nHe does not get up. He does not look round. He continues facing exactly where he was facing.\n\n15. FIXED CAM — held. Timecode running.\nHold. Twelve seconds of a man sitting in a chair.\n\nThen — no sound, no cut — he says the next clause of his sentence from shot 10, in exactly the same intonation.\n   GRAHAM: — which is where most firms come unstuck.\n\n16. FIXED CAM — held\nNothing. Timecode ticking.\n\n17. BLACK. TITLE CARD.",
+  "script": "LET THE RAPTURES COMMENCE\nEPISODE 2 — \"THE FIRST WRONG LOCKUP\"\n\nEXT./INT. ROADS AND AN INDUSTRIAL ESTATE — DAY\nCast: NINA (45), ALAN (50s)\nGrammar: locked off, wide, deep focus, daylight, symmetrical. The camera never follows her. Long lenses for the road. Only the vision is handheld: broken, wrong aspect ratio, dropped frames, blown out, a hiss.\n\n\n1. STATIC WIDE, 135mm, locked off — EXT. DUAL CARRIAGEWAY. Long lens, heat shimmer. The minibus, tiny, on an empty three-lane road. It takes a long time to reach the middle of frame.\n\n2. STATIC MEDIUM, 40mm, locked off — INT. BUS. From the passenger side. Nina driving. The dog on the seat beside her, upright, facing forward like a passenger.\n   NINA: Don't look at me.\n\n3. STATIC WIDE, 50mm, locked off — EXT. ROAD. Roadside. She passes a church. A queue outside it, forty people deep. A trestle table. Someone with a clipboard organising badly. Two men arguing at the front.\n   The bus goes by without slowing.\n\n4. STATIC WIDE, 35mm, locked off — EXT. ROAD. A roadblock made of three wheelie bins and a garden bench. A teenage boy in a hi-vis vest stands beside it with a cricket bat, entirely alone, guarding a road that goes nowhere.\n   The bus drives around it across the grass verge.\n\n5. STATIC MEDIUM, 40mm, locked off — INT. BUS. Nina, unbothered. The dog watches the boy go past.\n\n6. STATIC WIDE, 135mm, locked off — EXT. ROAD. Hand-painted sheets tied to a footbridge. WE ARE THE CHOSEN ONES. Below it, on a second sheet: ROOMS AVAILABLE.\n\n7. STATIC MEDIUM, 40mm, locked off — INT. BUS. She pulls over. Kills the engine. Takes the pendant out of her collar and holds it in her fist like it owes her money.\n\n8. CLOSE, 65mm, static — Her face. Braced. Not reverent. The expression of someone about to get a phone call they've been dreading.\n\n9. FLASH, 25mm, handheld — An orange roller shutter.\n\n10. FLASH, 50mm, handheld — Strip lights in a corridor. One flickering.\n\n11. FLASH, 50mm, handheld — A painted bay number. Two digits. Held a beat too briefly to be certain of the second one.\n\n12. FLASH, 24mm, handheld — Low, six inches off the floor. A carpet. A radiator. Wrong decade.\n\n13. CLOSE, 65mm, static — Nina. Eyes open. Breathing hard. She looks profoundly unimpressed.\n    NINA: (to the windscreen) Forty-one, or forty-seven?\n\n14. STATIC MEDIUM, 40mm, locked off — Nothing happens. The dog looks at her.\n    NINA: Forty-one or forty-seven?\n    (Pause.)\n    NINA: (starting the engine) Right.\n\n15. STATIC WIDE, 28mm, locked off — EXT. INDUSTRIAL ESTATE. A low unit behind chain link. Not the one Martin visited. Similar enough. Barrier arm down. Weeds.\n\n16. STATIC WIDE, 24mm, locked off — She gets out. Looks at the barrier. Gets a pair of bolt cutters out of the bus and deals with the chain on the gate in about nine seconds.\n\n17. STATIC WIDE, 24mm, locked off — INT. CORRIDOR. Deep perspective. A corridor of orange roller doors receding to a vanishing point. Strip lights. One flickering.\n    She walks away from camera down the middle of it.\n    (Same composition as Martin's corridor. Wrong building.)\n\n18. MEDIUM, 50mm, static — She stops at 41. Looks at it. Cuts the padlock. Three attempts — she's stronger than Martin but it's still a padlock.\n\n19. STATIC WIDE, 28mm, locked off — Low. The shutter goes up on a unit containing approximately four hundred plastic garden chairs.\n\n20. MEDIUM, 50mm, static — Nina looks at four hundred garden chairs.\n\n21. STATIC WIDE, 24mm, locked off — Corridor. She walks to 47. Cuts that padlock too.\n\n22. STATIC WIDE, 28mm, locked off — Low. Shutter up. Empty. Completely empty. A concrete floor and a dead wasp.\n\n23. CLOSE, 65mm, static — Nina in the doorway of an empty unit.\n    NINA: (upward, conversational) Was it one of the other forty, then?\n\n24. STATIC WIDE, 24mm, locked off — Corridor. Same framing as 17. Her, small, at the far end, in front of a corridor of identical shutters that goes on for a very long way.\n    Hold.\n\n25. STATIC WIDE, 28mm, locked off — EXT. ESTATE. She comes out. Loads the bolt cutters. Stops.\n\n26. STATIC MEDIUM, 50mm, locked off — A MAN (50s, fleece, sensible shoes, holding a carrier bag) is standing beside the minibus. Perfectly still. He has been there some time. The dog is looking at him through the window.\n    MAN: Is this yours?\n    NINA: It is.\n    MAN: I thought it might be.\n    (Pause. He doesn't move or explain himself.)\n    NINA: Can I help you?\n    MAN: I've been here since Tuesday.\n    NINA: Doing what?\n    MAN: (a genuine pause, thinking hard) Waiting.\n    NINA: For what?\n    MAN: (cheerfully) Well. Nothing's come.\n\n27. CLOSE, 65mm, static — On NINA. She looks at him. Twenty years of assessing people at a front door.\n    NINA: What's in the bag?\n    MAN: Bag for life.\n    NINA: What's *in* it?\n    MAN: (looking) Oh. Another bag.\n\n28. STATIC WIDE, 28mm, locked off — Nina considers leaving him there. Properly considers it.\n    Then she opens the passenger door.\n\n29. STATIC MEDIUM, 40mm, locked off — Interior. He gets in. Sits perfectly upright. Puts the bag on his knees. Faces forward, exactly like the dog.\n    NINA: Name?\n    MAN: Alan.\n    NINA: Right.\n    ALAN: Am I in the way?\n    NINA: No.\n    ALAN: (immediately, warmly) I can only apologise.\n\n30. CLOSE, 65mm, static — On NINA. She looks at him. Nothing registers. She has no idea what that means.\n    She starts the engine.\n\n31. STATIC WIDE, 135mm, locked off — EXT. ROAD. Long lens, heat shimmer. The bus, tiny, pulling away down a long straight road.\n    Hold.\n\nLET THE RAPTURES COMMENCE\nEPISODE 3 — COLD OPEN\n\nEXT./INT. A PARK AND A GARDEN CENTRE — DAY\nCast: HARIEL (40s, linen, immaculate), SOQED (30s, likewise, slightly behind him always)\nGrammar: the opposite of Hell's. Not surveillance — immaculate. Locked off, perfectly composed, centred, slightly too symmetrical. Wide lenses, everything in focus, beautiful light. It looks like an advert. That's the joke: they've made themselves look tremendous and they are of no use whatsoever.\n\n\n1. EXT. PARK — STATIC WIDE — 28mm, locked off, dead centre, golden light\nAn empty municipal park. A bandstand. Beautiful.\nTwo men are standing in the middle of the grass, perfectly composed, facing the same direction. They have been there for some time.\n   HARIEL: Right.\n   SOQED: Right.\n\n   (Pause. Eight seconds.)\n\n   HARIEL: Where would you keep a computer?\n\n2. STATIC WIDE — 24mm, locked off, symmetrical\nThe two of them, centred, the bandstand exactly behind them.\n   SOQED: I don't know what one looks like.\n   HARIEL: You've seen one.\n   SOQED: Have I?\n   HARIEL: In the report.\n   SOQED: I didn't read the report.\n\n   (Pause.)\n\n   HARIEL: (entirely unbothered) No. Nor did I.\n\n3. STATIC MEDIUM — 50mm, locked off, frontal, two-shot\nBoth facing camera. Nothing behind the eyes, but well-lit.\n   HARIEL: It's beige.\n   SOQED: Beige.\n   HARIEL: That's the main thing about it.\n\n4. EXT. HIGH STREET — STATIC WIDE — 28mm, locked off, centred, lovely light\nAn empty high street. The two of them walking down the middle of it in perfect step. Broken glass, an overturned bin, a dog in a doorway. Neither of them looks at any of it.\n\n5. STATIC WIDE — 24mm, locked off\nThey stop outside a shop. Look in the window.\n\n6. INSERT — 85mm, static\nA window display of beige garden furniture.\n\n7. STATIC MEDIUM — 50mm, frontal\n   SOQED: (quietly, to himself) Beige.\n   HARIEL: Not that sort of beige.\n\n8. INT. GARDEN CENTRE — STATIC WIDE — 24mm, locked off, deep perspective, aisles\nEnormous, empty, strip-lit. Racks of compost. The two of them walk down the centre aisle, still in step.\n\n9. STATIC WIDE — 28mm, locked off\nThey stop. In the middle distance, standing between two pallets of bark chippings, facing nothing: a MAN (60s, cardigan, still).\n\n10. STATIC MEDIUM — 50mm, frontal, on the two angels\n   HARIEL: There's one.\n   SOQED: Is he ours or theirs?\n   HARIEL: He's nobody's.\n   SOQED: (a beat) Can we use him?\n   HARIEL: Everyone's using them. That's what they're for.\n\n11. STATIC WIDE — 28mm, locked off\nThe blank continues facing nothing. Neither angel approaches him.\n\n12. INSERT — 85mm, static\nThe blank's eyes. Nothing wrong with them. Nothing behind them either.\n\n13. STATIC TWO-SHOT — 50mm, frontal\n   SOQED: So what's the plan?\n   HARIEL: We locate the equipment, we recover the equipment, we go home.\n   SOQED: And if someone's using it?\n   HARIEL: Nobody's using it. They haven't got the permissions.\n   SOQED: How do you know?\n   HARIEL: (with total confidence) Because they haven't.\n\n14. STATIC WIDE — 24mm, locked off, deep perspective, aisles\nThe two of them walking away down the centre aisle, in step, immaculate, past the motionless man, in entirely the wrong direction.\n\nHold.\n\n15. BLACK. TITLE CARD.\n\nLET THE RAPTURES COMMENCE\nEPISODE 4 — \"NUMBER FOURTEEN\"\n\nEXT./INT. NUMBER FOURTEEN — NIGHT\nCast: DANNY (40), JODIE (11), THE WOMAN (number 14, 50s)\nGrammar: handheld, tight, dark, red practical sources only.\n\n\n1. CU, 50mm, handheld — Danny's hand on the headlight switch. The red letterbox light on the wet side window. A 2-second pause. He turns the switch off.\n\n2. MS, 35mm, handheld — the cab. Danny, a laminated card in his hand.\n   DANNY: Number 14. The taps run there.\n   JODIE: The letterbox is on.\n   DANNY: So is the dashboard.\n   A 2-second pause.\n   DANNY: Rule two. No lights on the street.\n\n3. MS, 35mm, handheld — Danny on the step, red light off the letterbox on his face. He knocks three times.\n   A 3-second pause.\n   DANNY: (to the door) It's cold.\n   A 2-second pause.\n   DANNY: (to Jodie, over his shoulder) It's very cold.\n\n4. MS, 35mm, handheld — the door opens. THE WOMAN (50s, rumpled housecoat over a floral blouse, a Tesco bag stuffed with crumpled papers) holding the door for someone.\n   THE WOMAN: Oh, sorry, I'm mid-sentence.\n   She steps back into the hall, lets the door swing, and reopens it.\n\n5. MS, 35mm, handheld — the hall, over her shoulder. A table set for six, plates on it.\n   THE WOMAN: Number 14.\n   DANNY: That's what the card says.\n   THE WOMAN: I know what the card says.\n\n6. MS, 35mm, handheld — the kitchen, red light only: the letterbox light under the door, the red light of the kettle on. Six cups on the counter.\n   THE WOMAN: You want water.\n   DANNY: We're looking for water.\n   THE WOMAN: The tap. (points) Not the upstairs.\n   DANNY: Why not?\n   THE WOMAN: Dead most days.\n   A 2-second pause.\n   THE WOMAN: Was fine on Tuesday. That was Thursday.\n\n7. CU, 50mm, handheld — the tap. The water comes out brown. A 4-second pause of brown water. The water comes out clear.\n   JODIE: (quietly) It's doing it again.\n   DANNY: Rule nine. Write it down.\n   JODIE: I am.\n\n8. MS, 35mm, handheld — Jodie filling the bottle at the sink. The woman watching.\n   THE WOMAN: Biscuit.\n   A 2-second pause.\n   DANNY: We haven't broken any rules.\n   THE WOMAN: Rule one is biscuit.\n\n9. CU, 50mm, handheld — Danny. A slow blink. He looks at his card.\n   DANNY: I don't have a biscuit.\n   A 2-second pause.\n   JODIE: I have a biscuit.\n   Jodie produces a biscuit from Danny's jacket.\n   DANNY: That's from the tin.\n   JODIE: The tin's in the van. That's from my pocket.\n   Danny looks at the jacket. There is no pocket.\n   A 2-second pause.\n   Danny writes something on the card.\n\n10. MS, 35mm, handheld — the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.\n    THE WOMAN: Don't come back on a Tuesday.\n    DANNY: Why not?\n    THE WOMAN: The pipes.\n    A 2-second pause.\n    JODIE: That's not a reason.\n    A 2-second pause.\n    THE WOMAN: It's a reason.\n\n11. MS, 35mm, handheld — the cab. Danny driving. Jodie holding the bottle.\n    JODIE: What was she saying?\n    DANNY: I think it was about the council.\n    JODIE: To who?\n    A 2-second pause.\n    DANNY: I don't know.\n\n12. MS, 35mm, handheld — the wet side panel of the van passing the door, no lights. The red letterbox light stays on.\n    A 2-second pause.\n\n13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.\n    THE WOMAN: — and that's why I'm telling the council, the parking, the noise, the —\n    A 2-second pause.\n    The door closes.\n    CUT TO BLACK.\n\nLET THE RAPTURES COMMENCE\nEPISODE 4 — COLD OPEN\n\nINT. SUBURBAN FRONT ROOM — DAY\nCast: REEK (30s), TAMSIN (20s), GRAHAM (50s, a blank)\nGrammar: fixed high-corner surveillance cameras, 4:3, faint burnt-in timecode, slight fisheye. Cut between fixed angles only. Never moves, never close. The timecode runs on across the cuts, so the audience can see how long this has been going.\n\nProtections: the timecode does the heavy lifting — five hours pass and the joke is entirely in the numbers. \"Wales\" needs no reaction from anyone but Tamsin writing it down. Shot 15 is the first glitch the audience sees, played completely flat: no music sting, no camera move, just a man repeating a clause about payroll to an empty room.\n\n\n1. FIXED CAM — high corner, 4:3, timecode 11:04:22\nA front room. Graham in the armchair, hands on his knees, facing slightly away from anyone. Reek and Tamsin on the settee, sitting too upright, like people who have been told how chairs work.\n   REEK: So. Where did they go.\n   GRAHAM: Who's that?\n   REEK: The bad ones.\n   GRAHAM: (after a genuine pause) Bad ones.\n   REEK: The wicked. The unrighteous.\n   GRAHAM: (brightening) Oh, I don't know any of them.\n\n2. FIXED CAM — opposite high corner, timecode 11:19:51\nSame positions. Tamsin has her folder open on her knee.\n   TAMSIN: Have you ever done anything wrong?\n   GRAHAM: I took a pen from the office.\n   TAMSIN: (writing it down) Right.\n   GRAHAM: It was a rollerball.\n   TAMSIN: When was this?\n   GRAHAM: Ninety-eight.\n\n3. FIXED CAM — high corner, timecode 11:41:07\nReek has got up and is standing over him. Tamsin is still writing.\n   REEK: I want you to look at me.\n   GRAHAM: Righto.\n   REEK: (leaning in, doing something demonic and enormous with his face and voice) LOOK AT ME.\n   GRAHAM: (looking at him) Yes.\n\n   (Pause. Six seconds.)\n\n   GRAHAM: Would you like a drink?\n\n4. FIXED CAM — a different angle, the doorway, timecode 11:52:30\nGraham has gone to make drinks. Reek and Tamsin stand in the middle of the room.\n   TAMSIN: He's not frightened.\n   REEK: They're all frightened. That's the whole thing about them.\n   TAMSIN: He's offered us a drink.\n   REEK: (a beat) He might be being clever.\n\n5. FIXED CAM — high corner, timecode 12:08:14\nAll three seated again. Three mugs. Nobody has touched theirs.\n   TAMSIN: Are you dead?\n   GRAHAM: I don't think so.\n   TAMSIN: Are you sure?\n   GRAHAM: (considering it properly, for a long time) I'd have heard.\n\n6. FIXED CAM — opposite corner, timecode 13:26:48\nThe light in the room has changed. Nobody has moved.\n   REEK: Right. Once more. Four billion people went. Upstairs got the good ones. Where did ours go?\n   GRAHAM: Ours?\n   REEK: Hell's.\n   GRAHAM: Oh, I couldn't say.\n   REEK: Have a guess.\n   GRAHAM: (a long pause, then, helpfully) Wales?\n\n7. FIXED CAM — on Tamsin's folder\nShe writes WALES and underlines it.\n\n8. FIXED CAM — high corner, timecode 14:02:33\nReek is sitting on the floor with his back against the wall. Tamsin is still going.\n   TAMSIN: What do you do, Graham?\n   GRAHAM: Payroll.\n   TAMSIN: What's that?\n   GRAHAM: (the most animated he has been) Well. It's the wages, but it's the deductions as well.\n   TAMSIN: Deductions.\n   GRAHAM: Statutory and voluntary.\n\n9. FIXED CAM — opposite corner, timecode 14:47:19\nGraham is still talking. Reek's head is tipped back against the wall. Tamsin's pen has stopped.\n   GRAHAM: — and that's before you get to the salary sacrifice.\n\n10. FIXED CAM — a wide fixed angle, timecode 15:31:52\nNobody has moved. Graham is still talking. The mugs have gone cold.\n   GRAHAM: — which is where most firms come unstuck.\n\n11. FIXED CAM — high corner, timecode 16:14:08\nReek gets up and walks out of frame. A door goes. Tamsin remains, alone with Graham.\n   TAMSIN: (carefully) Graham. Have you ever made a decision?\n   GRAHAM: (no pause at all) I can only apologise.\n\n12. FIXED CAM — on TAMSIN\nShe looks at him. She writes it down. She has no idea what it means.\n\n13. FIXED CAM — the doorway\nReek back in the doorway, coat on.\n   REEK: Nothing in there.\n   TAMSIN: He's given us Wales.\n   REEK: He's not given us Wales.\n   TAMSIN: (defensive) It's the only lead we've got.\n\n14. FIXED CAM — high corner, wide\nThey leave. The front door goes. Graham, alone in his armchair, hands back on his knees.\n\nHe does not get up. He does not look round. He continues facing exactly where he was facing.\n\n15. FIXED CAM — held. Timecode running.\nHold. Twelve seconds of a man sitting in a chair.\n\nThen — no sound, no cut — he says the next clause of his sentence from shot 10, in exactly the same intonation.\n   GRAHAM: — which is where most firms come unstuck.\n\n16. FIXED CAM — held\nNothing. Timecode ticking.\n\n17. BLACK. TITLE CARD.\n\nLET THE RAPTURES COMMENCE\nEPISODE 4 — COLD OPEN\n\nINT. PAT'S HOUSE — MORNING\nCast: PAT (70s disguise)\nGrammar: surveillance grammar, because she's a demon: fixed high-corner cameras, 4:3, faint burnt-in timecode, slight fisheye. Cut between fixed angles only. Never moves, never close. No dialogue.\n\nThe point: the audience learns what she is before anyone in the episode does. Protections: there is no dialogue in the entire cold open, so it plays as pure watching — and the surveillance grammar tells the audience which side she's on without a word. Shot 10's smile is the only thing she does that isn't domestic; everything else is a woman who has studied old ladies rather than been one.\n\nThen Scene 2 is the old lady sequence as written — Jodie on the settee with the squash and the sweet tin, Danny in the kitchen, the knife and fork, the fork through the forearm, the bottles by the gate. 32 shots, already done.\n\n\n1. FIXED CAM — high corner, 4:3, timecode 06:12:04\nA pensioner's front room in the dark. Curtains shut. Every surface immaculate.\nPat is standing in the middle of the room. Not sitting. Standing, facing the fireplace, perfectly still.\n\nHold. Ten seconds. She does not move at all.\n\n2. FIXED CAM — opposite high corner, timecode 07:40:19\nThe curtains are open now. Same position. Same stance. Still facing the fireplace.\n\n3. FIXED CAM — high corner, timecode 08:03:55\nShe turns and crosses to the sideboard. Picks up a framed wedding photograph. Looks at it.\nPuts it down turned slightly differently.\nPicks it up again. Puts it back the way it was.\n\n4. FIXED CAM — the sideboard, fixed, slightly fisheyed\nA row of framed photographs. The same woman in all of them. Three different men.\n\n5. FIXED CAM — high corner, the kitchen\nShe takes down a sweet tin. Opens it. Empty.\nShe opens a cupboard and takes out a bag of boiled sweets. Tips the whole bag in.\nThen another bag. And another. Only boiled sweets. Nothing else.\nShe levels the top of them with her hand, carefully, so they sit flat.\n\n6. FIXED CAM — the kitchen, opposite angle\nShe opens the cupboard beside it. Inside: slabs of bottled water, floor to shelf. Dozens of them.\nShe looks at them for a moment. Closes the cupboard.\n\n7. FIXED CAM — high corner, the front room\nShe sits down in the armchair. Arranges the doilies on the arms so they're square.\nThen she adds another doily to a small table that already has one on it.\n\n8. FIXED CAM — the hall, fixed, looking at the front door\nShe goes to the door. Opens it. Looks out at an empty street. Nothing there.\nShe closes it. Opens it again. Looks out.\nCloses it.\n\n9. FIXED CAM — high corner, the front room, timecode 09:51:32\nBack in the armchair, facing the window, hands on the arms of the chair.\nPerfectly still.\n\n10. FIXED CAM — held, timecode running\nHold. Twelve seconds. Nothing moves in the frame at all.\n\nThen, without any change in her posture, she smiles at the window.\n\nThere is nobody at the window.\n\n11. FIXED CAM — the window, from inside, fixed\nAn empty front path. A gate. A street.\n\n12. BLACK. TITLE CARD.",
   "shareId": null,
   "createdAt": "2026-09-20T00:00:00.000Z",
   "updatedAt": "2026-09-20T00:00:00.000Z"

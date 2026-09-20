@@ -28,13 +28,16 @@ try {
   const opened = await api.post("/api/projects/rapture");
   assert.equal(opened.status(), 200);
   await go(project.id, "storyboard");
-  await expect(page.locator(".frame-card")).toHaveCount(273);
+  await expect(page.locator(".frame-card")).toHaveCount(285);
   await expect(page.locator(".frame-card h3").first()).toHaveText("Cold open — board 01");
   await expect(page.locator(".frame-card h3").last()).toHaveText("The unfinished complaint");
   await page.getByLabel("Filter by scene").selectOption("rapture-ep3-cold-open");
   await expect(page.locator(".frame-card")).toHaveCount(15);
   await expect(page.locator(".frame-card h3").first()).toHaveText("Where would you keep a computer");
-  await page.getByLabel("Filter by scene").selectOption("rapture-ep4-cold-open");
+  await page.getByLabel("Filter by scene").selectOption("rapture-ep4-pat-cold-open");
+  await expect(page.locator(".frame-card")).toHaveCount(12);
+  await expect(page.locator(".frame-card h3").first()).toHaveText("Standing in the dark");
+  await page.getByLabel("Filter by scene").selectOption("rapture-ep3-interview");
   await expect(page.locator(".frame-card")).toHaveCount(17);
   await expect(page.locator(".frame-card h3").first()).toHaveText("Where did they go");
   await expect(page.locator(".frame-card h3").last()).toHaveText("Black — title card");
@@ -59,7 +62,7 @@ try {
   await page.getByLabel("Scene for prompts").selectOption("rapture-ep3-cold-open");
   await expect(page.locator(".studio-shot-item")).toHaveCount(15);
   await expect(page.getByLabel("Combined prompts for the selected shots")).toContainText("immaculate");
-  console.log("PASS desktop storyboard, 273 frames in story order incl. both cold opens, prompts, estimates, images and layout");
+  console.log("PASS desktop storyboard, 285 frames in story order incl. all three cold opens, prompts, estimates, images and layout");
 
   // Disposable copy for real form persistence and import/export exercises.
   const response = await api.post("/api/projects/import", { data: { ...project, title: "Rapture browser verification — disposable" } });
@@ -114,7 +117,7 @@ try {
   await page.getByRole("navigation", { name: "Workspace navigation" }).getByRole("button", { name: /Templates/ }).click();
   await page.getByRole("button", { name: "Open series workspace", exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`project=${project.id}`));
-  await expect(page.locator(".frame-card")).toHaveCount(273);
+  await expect(page.locator(".frame-card")).toHaveCount(285);
   const restored = await (await api.get(`/api/projects/${project.id}`)).json();
   assert.equal(restored.script, (await opened.json()).script, "Template action must preserve the existing series");
   console.log("PASS template opens the saved series without duplicates or replacing its screenplay");
@@ -122,7 +125,7 @@ try {
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   mobile.on("pageerror", error => errors.push(error.message));
   await mobile.goto(`${baseURL}/?project=${project.id}&tab=storyboard`);
-  await expect(mobile.locator(".frame-card")).toHaveCount(273);
+  await expect(mobile.locator(".frame-card")).toHaveCount(285);
   await assertNoOverflow(mobile);
   await mobile.getByRole("button", { name: "Open navigation", exact: true }).click();
   await expect(mobile.getByRole("navigation", { name: "Workspace navigation" })).toBeVisible();

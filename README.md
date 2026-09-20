@@ -21,12 +21,15 @@ workspace, not just a folder of images:
 
 - Eight episode outlines and 32 outline entries (not eight completed scripts).
 - Twenty-one cast entries with reciprocal family/colleague links; the woman at Number
-  Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham (the
-  cold open's contented blank) from both.
+  Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
+  (the interview's contented blank, now an episode-three scene) from both.
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
   thirteen new AI-generated studies, one keyframe per shot.
-- **Cold opens:** the numbered episode-four surveillance screenplay and the
-  episode-three angel advert screenplay (17 + 15 shots, both fully studied).
+- **Cold opens:** three numbered scenes — the episode-four Pat-alone open
+  (12 dialogue-free surveillance shots, ten studies, two pending), the
+  episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
+  to episode three). The old-lady sequence is Scene 2 of episode four; its
+  32 shots are held by the outline, not yet boarded.
 - The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.

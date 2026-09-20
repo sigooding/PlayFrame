@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, angelGrammar, lockupGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, angelGrammar, lockupGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -10,6 +10,7 @@ const bible = read("docs/rapture/show-bible.md");
 const screenplay = read("docs/rapture/scenes/ep4-number-fourteen.md");
 const coldOpenScreenplay = read("docs/rapture/scenes/ep4-cold-open.md");
 const ep3ColdOpenScreenplay = read("docs/rapture/scenes/ep3-cold-open.md");
+const patColdOpenScreenplay = read("docs/rapture/scenes/ep4-pat-cold-open.md");
 const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
 const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
 const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
@@ -52,13 +53,13 @@ assert(numberFourteen.every(frame => ["Close-up", "Medium"].includes(frame.shotT
 const coldOpenBlocks = [...coldOpenScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
 assert.equal(coldOpenBlocks.length, 17, "The cold-open source must have seventeen numbered shots");
 assert.equal(coldOpenPlan.length, 17, "The cold-open plan must cover all seventeen shots");
-const spelledPause = value => { const v = value.toLowerCase(); return v === "six" ? 6 : v === "eight" ? 8 : v === "twelve" ? 12 : Number(v); };
+const spelledPause = value => { const v = value.toLowerCase(); return v === "six" ? 6 : v === "eight" ? 8 : v === "ten" ? 10 : v === "twelve" ? 12 : Number(v); };
 const coldOpen = coldOpenBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Cold-open shot order must be contiguous");
   const plan = coldOpenPlan[i];
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
-  const pauses = [...source.matchAll(/(\d+|six|eight|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
   assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Cold-open duration must include action/dialogue, not just pauses");
   const firstLines = body.split("\n").map(l => l.trim());
   const description = (firstLines[0].startsWith("FIXED CAM") ? firstLines[1] || firstLines[0] : firstLines[0]);
@@ -117,6 +118,42 @@ assert.equal(ep3ColdOpen.reduce((n, f) => n + f.duration, 0), 125, "Update the t
 assert(ep3ColdOpen.every(frame => frame.movement === "Static"), "The angels' cameras never move");
 assert(ep3ColdOpen.every(frame => ["Wide", "Medium", "Insert", "Two-shot"].includes(frame.shotType)), "The angel grammar stays composed: wides, mediums, inserts and two-shots only");
 assert(ep3ColdOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep3-cold-open/")), "Angel keyframes live under /images/rapture/ep3-cold-open/");
+// Episode-four cold open: Pat alone, before Jodie and Danny arrive. Dialogue-free surveillance;
+// the audience learns what she is before anyone in the episode does.
+const patColdOpenBlocks = [...patColdOpenScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(patColdOpenBlocks.length, 12, "The Pat cold-open source must have twelve numbered shots");
+assert.equal(patColdOpenPlan.length, 12, "The Pat cold-open plan must cover all twelve shots");
+const patOpen = patColdOpenBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Pat cold-open shot order must be contiguous");
+  const plan = patColdOpenPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Pat cold-open duration must include the hold, not only it");
+  const firstLines = body.split("\n").map(l => l.trim());
+  const description = (firstLines[0].startsWith("FIXED CAM") ? firstLines[1] || firstLines[0] : firstLines[0]);
+  const file = `/images/rapture/ep4-pat-cold-open/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep4pco-${String(n).padStart(2, "0")}`, sceneId: patColdOpenSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens: "24mm",
+    angle: plan.angle, lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-pat-cold-open, so this card holds slot ${n} of ${patColdOpenPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.timecode ? `\n\nBurnt-in timecode: ${plan.timecode}${plan.camera === "held" ? ", still running" : ""}.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${patColdOpenGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none specified for this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 109, "Update the timing note when Pat cold-open editorial estimates change");
+assert(patOpen.every(frame => frame.movement === "Static"), "Pat's cameras never move");
+assert(patOpen.every(frame => frame.notes.includes("No dialogue")), "Every Pat shot carries the no-dialogue rule");
+assert(patOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-pat-cold-open/")), "Pat keyframes live under /images/rapture/ep4-pat-cold-open/");
+assert(patOpen.every((f, i) => f.characters.length === 0 || (f.characters.length === 1 && f.characters[0] === characterId("pat"))), "Nobody but Pat is in Pat's cold open");
+
 assert(coldOpen.every(frame => frame.movement === "Static"), "Cold-open cameras never move");
 assert(coldOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-cold-open/")), "Cold-open keyframes live under /images/rapture/ep4-cold-open/");
 const lockupBlocks = [...lockupScreenplay.matchAll(/^(\d+)\. (STATIC WIDE|STATIC MEDIUM|MEDIUM|CLOSE|FLASH), (\d+mm), (locked off|static|handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
@@ -161,10 +198,17 @@ const ep3ColdOpenScene = {
   characters: ["angel-one", "angel-two"].map(characterId), actId: "rapture-episode-3",
   kind: "Standard", lighting: "Golden hour", lightingNotes: angelGrammar, style: "cinematic",
 };
+// Pat alone before the settee scene: the audience knows first, the characters never do.
+const patColdOpenScene = {
+  id: patColdOpenSceneId, title: "Cold open — Pat alone", location: "INT. PAT'S HOUSE", time: "MORNING",
+  description: "No dialogue. A demon keeping house: the tin, the water, the doilies, and one smile at an empty window. Surveillance grammar tells the audience which side she is on without a word.",
+  characters: [characterId("pat")], actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Low key", lightingNotes: patColdOpenGrammar, style: "cinematic",
+};
 const coldOpenScene = {
-  id: coldOpenSceneId, title: "Cold open — the interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
-  description: "Three afterlives employees interview a contented blank for five hours and leave with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
-  characters: ["reek", "tamsin", "graham"].map(characterId), actId: "rapture-episode-4",
+  id: coldOpenSceneId, title: "The interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
+  description: "Episode three circles what a blank is from three angles and gets it wrong three times: the angels' cold open, the cops' worthless test, and Hell's five-hour interview that leaves with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
+  characters: ["reek", "tamsin", "graham"].map(characterId), actId: "rapture-episode-3",
   kind: "Standard", lighting: "Overcast soft", lightingNotes: coldOpenGrammar, style: "cinematic",
 };
 
@@ -198,9 +242,10 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
     characters: cast.map(characterId), actId: `rapture-episode-${ep}`, kind: kind || "Standard",
   };
 });
-scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-pat"), 0, coldOpenScene);
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-test") + 1, 0, coldOpenScene);
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-arrivals"), 0, ep3ColdOpenScene);
-scenes.splice(scenes.findIndex(s => s.id === coldOpenSceneId) + 1, 0, scene);
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-pat"), 0, patColdOpenScene);
+scenes.splice(scenes.findIndex(s => s.id === patColdOpenSceneId) + 1, 0, scene);
 const lockupScene = {
   id: lockupSceneId, title: "The first wrong lockup", location: "EXT./INT. ROADS AND AN INDUSTRIAL ESTATE", time: "DAY",
   description: `Nina drives out on a pendant bearing, opens two wrong lockups, and acquires Alan. ${lockupGrammar} The vision is the tracker's recorded view, not divine revelation.`,
@@ -238,12 +283,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...patOpen, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, patOpen.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
@@ -253,10 +298,12 @@ const notes = sections.map(({ title, text }, i) => ({
 }));
 const legacyKeyframes = legacyFrames.filter(frame => frame.image).length;
 const coldOpenMissing = coldOpen.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const patOpenMissing = patOpen.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const patOpenTotal = patOpen.reduce((n, f) => n + f.duration, 0);
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate), and the episode-four cold open is the second numbered scene (${coldOpen.length} fixed surveillance shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards holding their slots (${coldOpenMissing.join(", ")})` : ", boarded with AI-generated studies pending production review"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
+  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, and the episode-four Pat-alone open (${patOpen.length} shots, ${patOpenTotal}-second estimate, no dialogue)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
@@ -291,7 +338,7 @@ const project = {
   description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; the episode-three and episode-four cold opens (15 + 17 shots) and Number Fourteen (13 shots) are the working scenes.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
-  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
+  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
   shareId: null, createdAt, updatedAt: createdAt,
 };
 
