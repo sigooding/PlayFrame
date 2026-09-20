@@ -66,7 +66,7 @@ const notes = sections.map(({ title, text }, i) => ({
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one numbered scene, with 13 shots. Its 175-second animatic is a working estimate, not a locked runtime. Each explicit pause remains exactly as written.\n\nTen new AI-generated stills cover shots 1–8, 11 and 12. Shots 9, 10 and 13 reuse reference stills and are marked Needs review; dedicated keyframes are still needed. All images are production studies, not approved final coverage. Existing character sheets and legacy thread images are references only. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+  content: "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one numbered scene, with 13 shots. Its 175-second animatic is a working estimate, not a locked runtime. Each explicit pause remains exactly as written.\n\nThirteen new AI-generated stills cover all 13 shots. All images are production studies, not approved final coverage. Existing character sheets and legacy thread images are references only. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
@@ -85,7 +85,7 @@ const brainstorm = [
 ].map(([key, x, y, title, content, color, tags, connections]) => ({ id: `rapture-object-${key}`, x, y, title, content, color, tags, connections: connections.map(id => `rapture-object-${id}`), createdAt }));
 const moodboards = [{
   id: "rapture-look-number-fourteen", title: "Number Fourteen — red is a source", sceneId, actId: "rapture-episode-4", createdAt,
-  description: "Ten newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room. References for shots 9, 10 and 13 are excluded from this board to avoid presenting duplicate images as new coverage.",
+  description: "Thirteen newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room.",
   items: frames.filter((_, i) => !shotPlan[i].reference).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
 }, ...referenceBoards.map(board => ({
   id: `rapture-look-${board.id}`, title: board.title, description: board.description, createdAt,

@@ -31,7 +31,7 @@ try {
   await expect(page.locator(".frame-card")).toHaveCount(13);
   await page.locator(".frame-card").last().scrollIntoViewIfNeeded();
   await page.locator(".frame-card").first().scrollIntoViewIfNeeded();
-  await expect(page.locator('.frame-card h3').filter({ hasText: /— reference$/ })).toHaveCount(3);
+  await expect(page.locator('.frame-card h3').filter({ hasText: /— reference$/ })).toHaveCount(0);
   await expect(page.locator(".frame-duration").first()).toContainText("~5s");
   await assertNoOverflow(page);
   const images = page.locator(".frame-card img");
@@ -43,7 +43,7 @@ try {
   await expect(page.getByLabel("Scene for prompts")).toHaveValue("rapture-ep4-number-fourteen");
   await expect(page.locator(".studio-shot-item")).toHaveCount(13);
   await expect(page.getByLabel("Combined prompts for the selected shots")).toContainText("Red practical sources only");
-  console.log("PASS desktop storyboard, 13 prompts, visible estimate/reference labels, images and layout");
+  console.log("PASS desktop storyboard, 13 prompts, visible estimate labels, images and layout");
 
   // Disposable copy for real form persistence and import/export exercises.
   const response = await api.post("/api/projects/import", { data: { ...project, title: "Rapture browser verification — disposable" } });

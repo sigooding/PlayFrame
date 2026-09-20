@@ -136,18 +136,19 @@ assert(buildFramePrompt(genericProject, { ...tap, lighting: undefined }, "generi
 const csv = shotListCsv(project);
 assert(csv.includes('"Lighting direction"') && csv.includes('"Duration is estimate"'));
 assert(csv.includes(scene.lightingNotes));
-assert(csv.includes('"No pocket — reference"'));
+assert(csv.includes('"No pocket"'));
 assert(csv.includes("The door closes."));
 assert(buildFramePrompt(project, tap, "generic").includes("approximately 11 seconds"));
 pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction, empty cast and estimated timing`);
 
 const paths = [...new Set([project.coverImage, ...project.characters.map(c => c.image).filter(Boolean), ...project.frames.map(f => f.image), ...project.moodboards.flatMap(b => b.items.map(i => i.image))])];
 for (const image of paths) assert(existsSync(join(root, "public", image)), `Image not on disk: ${image}`);
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 10);
-assert.equal(new Set(project.frames.map(f => f.image)).size, 10);
-assert.deepEqual(project.frames.filter(f => f.status === "Needs review").map(f => f.id), ["rapture-ep4-shot-09", "rapture-ep4-shot-10", "rapture-ep4-shot-13"]);
-assert(project.frames.filter(f => f.status === "Needs review").every(f => f.title.endsWith("— reference") && f.notes.includes("REFERENCE ONLY")));
-pass(`${paths.length} image references on disk; ten new studies, three honestly labelled reference shots`);
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
+assert.equal(new Set(project.frames.map(f => f.image)).size, 13);
+assert(project.frames.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every shot must carry its own dedicated keyframe");
+assert(project.frames.every(f => f.status === "Draft"));
+assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board covers all thirteen studies");
+pass(`${paths.length} image references on disk; thirteen dedicated studies, one per shot`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
