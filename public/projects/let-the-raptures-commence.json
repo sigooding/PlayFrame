@@ -6383,9 +6383,9 @@
     {
       "id": "rapture-ep4pco-11",
       "sceneId": "rapture-ep4-pat-cold-open",
-      "title": "The empty path (keyframe missing)",
+      "title": "The empty path",
       "description": "An empty front path. A gate. A street.",
-      "image": "",
+      "image": "/images/rapture/ep4-pat-cold-open/11-the-window.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "24mm",
@@ -6394,18 +6394,18 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 11-the-window.jpg is not in public/images/rapture/ep4-pat-cold-open, so this card holds slot 11 of 12. Add the study and rebuild.\n\nFixed insert from inside: an empty front path. A gate. A street.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. FIXED CAM — the window, from inside, fixed\nAn empty front path. A gate. A street."
+      "notes": "Fixed insert from inside: an empty front path. A gate. A street.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. FIXED CAM — the window, from inside, fixed\nAn empty front path. A gate. A street."
     },
     {
       "id": "rapture-ep4pco-12",
       "sceneId": "rapture-ep4-pat-cold-open",
-      "title": "Black — title card (keyframe missing)",
+      "title": "Black — title card",
       "description": "BLACK. TITLE CARD.",
-      "image": "",
+      "image": "/images/rapture/ep4-pat-cold-open/12-black.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "24mm",
@@ -6414,11 +6414,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 12-black.jpg is not in public/images/rapture/ep4-pat-cold-open, so this card holds slot 12 of 12. Add the study and rebuild.\n\nBlack. Title card. The burnt-in timecode is the only thing that has kept the morning honestly.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. BLACK. TITLE CARD."
+      "notes": "Black. Title card. The burnt-in timecode is the only thing that has kept the morning honestly.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nFixed high-corner surveillance cameras, 4:3, slight fisheye, faint burnt-in timecode. Cut between fixed angles only. The camera never moves and never gets close. No dialogue anywhere: the audience learns what she is before anyone in the episode does. Dry, deadpan British black comedy; no score, no stings.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. BLACK. TITLE CARD."
     },
     {
       "id": "rapture-ep4hut-01",
@@ -7552,7 +7552,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-alone open (12 shots, 109-second estimate, no dialogue), with 10 AI studies on disk and 2 placeholder cards, and the scout-hut scene 3 (17 shots, 159-second estimate), fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-alone open (12 shots, 109-second estimate, no dialogue), fully studied, and the scout-hut scene 3 (17 shots, 159-second estimate), fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",

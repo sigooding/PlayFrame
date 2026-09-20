@@ -26,7 +26,7 @@ workspace, not just a folder of images:
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
   thirteen new AI-generated studies, one keyframe per shot.
 - **Cold opens:** three numbered scenes — the episode-four Pat-alone open
-  (12 dialogue-free surveillance shots, ten studies, two pending), the
+  (12 dialogue-free surveillance shots, fully studied), the
   episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
   to episode three), and the scout-hut scene 3
   (17 shots, fully studied). The old-lady sequence is Scene 2 of episode

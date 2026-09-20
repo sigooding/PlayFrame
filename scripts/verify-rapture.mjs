@@ -214,8 +214,8 @@ pass("angel cold open numbered 1-15 in order, advert grammar, one AI study per s
 // locked, the timecode burn-ins are verbatim, and only Pat is in the room.
 const patStudies = patOpen.filter(f => f.image);
 const patMissing = patOpen.filter(f => !f.image);
-assert.equal(patStudies.length, 10, "Ten Pat AI studies are on disk so far");
-assert.equal(patMissing.length, 2, "Two Pat shots hold placeholder cards until their studies are generated");
+assert.equal(patStudies.length, 12, "All twelve Pat shots carry their AI study");
+assert.equal(patMissing.length, 0, "No Pat placeholder cards remain");
 assert(patMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Pat placeholder cards hold their numbered slots honestly");
 assert(patStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-pat-cold-open/")), "Pat studies are draft keyframes in the right folder");
 assert(patOpen.every((f, i) => f.id === "rapture-ep4pco-" + String(i + 1).padStart(2, "0")), "Pat cold-open numbering must be contiguous");
@@ -226,7 +226,7 @@ assert(patOpen[0].notes.includes("06:12:04") && patOpen[1].notes.includes("07:40
 assert(patOpen[9].notes.includes("smiles at the window") && patOpen[9].notes.includes("nobody at the window"), "Shot 10 keeps the smile and its empty window");
 assert(patOpen[3].notes.includes("Three different men") && patOpen[5].notes.includes("slabs of bottled water"), "The photographs and the water cupboard survive into the notes");
 assert(!patOpen.some(f => f.notes.includes("<d>")), "The Pat cold open carries no dialogue at all");
-pass("Pat cold open numbered 1-12 in order, no dialogue, holds locked, two placeholder slots awaiting studies");
+pass("Pat cold open numbered 1-12 in order, no dialogue, holds locked, one AI study per shot");
 // Episode-four scene 3: the scout hut, the scene after the violence. All handheld, dialogue
 // verbatim, the unnamed group members cast nowhere, and the whole of Danny's lie intact.
 const hutStudies = scoutHut.filter(f => f.image);
@@ -352,7 +352,7 @@ for (const image of paths) assert(existsSync(join(root, "public", image)), `Imag
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 15, "Fifteen angel studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 10, "Ten Pat studies on disk so far");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 12, "Twelve Pat studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen scout-hut studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");

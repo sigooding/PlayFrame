@@ -17,8 +17,8 @@ comedy in every thread; this is not noir and not a tragedy.
   arrives: the photographs with three different men, the sweet tin, the
   cupboard of bottled water, the doilies, and one smile at an empty window.
   The old-lady sequence becomes **Scene 2** of the episode; its 32 shots are
-  held by the outline until the numbered source is supplied. Ten AI studies
-  are on disk; two shots hold placeholder cards.
+  held by the outline until the numbered source is supplied. All twelve
+  shots carry AI studies.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -114,9 +114,8 @@ values and Reek/Tamsin against their identity sheets before approving.
 
 Unpictured cast roles use the app's initials avatar.
 
-Ten **Pat cold-open AI studies** in `public/images/rapture/ep4-pat-cold-open/`
-board the episode-four cold open, one keyframe per shot except shots 11–12,
-which hold placeholder cards until generated. All carry the demon surveillance
+Twelve **Pat cold-open AI studies** in `public/images/rapture/ep4-pat-cold-open/`
+board the episode-four cold open, one keyframe per shot. All carry the demon surveillance
 grammar with no dialogue and no score: the horror is that nothing happens.
 Shot 10's smile is the only thing Pat does that isn't domestic. Check the
 photograph row (the same woman, three different men) and the water cupboard
