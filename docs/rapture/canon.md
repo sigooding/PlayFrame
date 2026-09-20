@@ -12,6 +12,34 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
+- **Episode-four cold open — Pat alone:** [numbered scene](scenes/ep4-pat-cold-open.md),
+  12 dialogue-free surveillance shots of Pat keeping house before anyone
+  arrives: the photographs with three different men, the sweet tin, the
+  cupboard of bottled water, the doilies, and one smile at an empty window.
+  The old-lady sequence becomes **Scene 2** of the episode; its 32 shots are
+  held by the outline until the numbered source is supplied. All twelve
+  shots carry AI studies.
+- **Episode-four scene 3 — the scout hut:**
+  [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
+  after the violence: twelve litres counted, four punctures nobody mentions,
+  window frame said twice, the gate arrangement stated aloud, and DANNY
+  written on the rota in someone else's handwriting. The hi-vis MAN and the
+  WOMAN who once did a course are unnamed group members, cast nowhere. All
+  seventeen shots carry AI studies; shot 6's insert is deliberately oblique
+  aftercare still-life, and shot 16's rota is the forgery played as
+  paperwork. Check the rota handwriting difference and the sleeve/arm
+  continuity against Number Fourteen's card shot before approving.
+- **The interview (episode three):** [numbered scene](scenes/ep4-cold-open.md),
+  Graham's 17-shot Hell interview, re-homed to episode three so it sits with
+  the angels' cold open and the cops' test: three scenes circling what a
+  blank is, from three angles, none of them getting it.
+- **Episode-three cold open:** [numbered scene](scenes/ep3-cold-open.md),
+  15 static setups in immaculate advert grammar: locked off, centred, too
+  symmetrical, beautiful light. The recovery angels are now **named by the
+  source: Hariel (40s, linen) and Soqed (30s, slightly behind him always)**;
+  no further backstory is supplied. The unnamed MAN (60s, cardigan) between
+  the pallets of bark chippings is a blank who belongs to nobody and joins no
+  cast list. All fifteen shots carry AI studies.
 - **The first wrong lockup:** [numbered scene](scenes/ep2-first-wrong-lockup.md),
   31 shots in episode two. Nina drives out on a pendant bearing, opens two wrong
   lockups, and acquires Alan. Thirty-one AI-generated studies board the scene;
@@ -38,6 +66,16 @@ comedy in every thread; this is not noir and not a tragedy.
   Reference: `public/images/rapture/sheets/crazed-woman.jpg` (legacy filename).
 - **Van:** weathered 1990s Ford Transit, faded grey-green. Unify number plates
   before approving final coverage. Check jacket-pocket continuity in shot 9.
+- **Graham — 50s.** A blank interviewed in **episode three** (the interview
+  moved from the episode-four cold open in the restructure). Beige
+  cardigan, shirt and tie, corduroys, slippers. Content, helpful, unfazed;
+  never frightened. No surname, and **not** Alan and **not** the chained/rescued
+  blank — no identity link has been supplied.
+- **Hariel — 40s — and Soqed — 30s.** The Michael-adjacent recovery pair,
+  linen, immaculate, of no use whatsoever. Named in the episode-three cold
+  open; Soqed is always slightly behind Hariel. Neither has read the report.
+  No identity sheets exist yet; the studies fix linen suits, Hariel's greying
+  neat hair and Soqed's sandy hair as the working reference.
 
 ## Current Crane grammar
 
@@ -66,7 +104,31 @@ scene in story order and numbered inside each board. Their shot type, movement,
 lens and 5s durations are working placeholders. Three keyframes are missing
 from disk and hold placeholder cards: `ep2s2-15`, `ep2s3-15`, `ep2s3-16`.
 
+Seventeen **cold-open AI studies** in `public/images/rapture/ep4-cold-open/`
+board the episode-four cold open, one keyframe per shot. All carry the
+fixed-surveillance grammar: 4:3, high-corner fixed angles, slight fisheye,
+faint burnt-in timecode that runs on across the cuts. The three held shots
+(15–16) deliberately reuse the same frame with only the timecode advanced —
+and, in 15, Graham mid-word. Check the timecode digits against the source
+values and Reek/Tamsin against their identity sheets before approving.
+
 Unpictured cast roles use the app's initials avatar.
+
+Twelve **Pat cold-open AI studies** in `public/images/rapture/ep4-pat-cold-open/`
+board the episode-four cold open, one keyframe per shot. All carry the demon surveillance
+grammar with no dialogue and no score: the horror is that nothing happens.
+Shot 10's smile is the only thing Pat does that isn't domestic. Check the
+photograph row (the same woman, three different men) and the water cupboard
+against the settee scene's sweet tin and gate bottles before approving.
+
+Fifteen **angel cold-open AI studies** in `public/images/rapture/ep3-cold-open/`
+board the episode-three cold open, one keyframe per shot. All carry the
+immaculate advert grammar: locked off, centred, slightly too symmetrical,
+wide lenses, everything in focus, beautiful light — the opposite of Hell's
+surveillance, and no timecode burn-in. Shot 12 (the blank's eyes) is the
+linchpin insert: nothing wrong with them, nothing behind them either. Check
+the linen continuity between Hariel and Soqed, the too-perfect symmetry,
+and the blank's stillness across shots 9, 11 and 14 before approving.
 
 Only written pauses are locked. Number Fourteen's **~175 seconds** and the lockup's
 **~271 seconds** are editorial playback estimates for those scenes, **not** finished
@@ -83,6 +145,10 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
   and two recovery angels remain unnamed.
 - Episode-four Number Fourteen has a *locally intermittent* upstairs tap; the
   series-wide upstairs failure remains episode five.
+- Pat's cold open is unwitnessed: no character sees it, and it invents no
+  dialogue. The audience knows what she is from the first minute; nobody in
+  the episode ever does. The settee scene's props (sweet tin, gate bottles)
+  are pre-established by it, not contradicted.
 - The correction is an **auction bid, not a rewind**. Limbo is outside time and
   keeps its queue. No epilogue or resolved faces are added.
 

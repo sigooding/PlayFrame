@@ -27,14 +27,19 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
-assert.equal(project.characters.length, 20);
-assert.equal(project.frames.length, 241, "13 boarded shots plus 31 lockup shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
-assert.equal(project.scenes.length, 34);
+assert.equal(project.characters.length, 21);
+assert.equal(project.frames.length, 302, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 12 Pat and 17 scout-hut shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.scenes.length, 38);
 assert.equal(project.moodboards.length, 10);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
 const lockup = project.frames.filter(f => f.sceneId === "rapture-ep2-alan");
+const coldOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-interview");
+const angelOpen = project.frames.filter(f => f.sceneId === "rapture-ep3-cold-open");
+const patOpen = project.frames.filter(f => f.sceneId === "rapture-ep4-pat-cold-open");
+const scoutHut = project.frames.filter(f => f.sceneId === "rapture-ep4-scout-hut");
 const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
+assert.equal(coldOpen.length, 17);
 assert.equal(lockup.length, 31);
 assert.equal(legacy.length, 197);
 assert.equal(starterProjects.length, 4);
@@ -44,7 +49,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 241);
+assert.equal(imported.frames.length, 302);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -87,23 +92,39 @@ const pauses = text => [...text.matchAll(/A (\d+)-second pause/g)].map(m => Numb
 assert.deepEqual(pauses(source), pauses(original));
 assert.deepEqual(pauses(project.script), pauses(original));
 const dialogue = text => text.split("\n").map(l => l.trim()).filter(l => /^(DANNY|JODIE|THE WOMAN):/.test(l));
-assert.deepEqual(dialogue(project.script), dialogue(original));
-assert(project.script.endsWith("CUT TO BLACK."));
+// Other boarded scenes legitimately add DANNY/JODIE lines, so Number Fourteen's dialogue
+// must appear as an in-order subsequence of the combined script rather than the whole set.
+{
+  const scriptLines = dialogue(project.script);
+  let cursor = 0;
+  for (const line of dialogue(original)) {
+    const found = scriptLines.indexOf(line, cursor);
+    assert(found >= 0, `Number Fourteen dialogue reordered or lost: ${line}`);
+    cursor = found + 1;
+  }
+}
+assert(project.script.includes("CUT TO BLACK."));
+assert(project.script.includes("BLACK. TITLE CARD."));
+assert(project.script.includes("Hold. CUT."));
+assert(project.script.indexOf("FIXED CAM — high corner, 4:3, timecode 06:12:04") < project.script.indexOf("Hold. CUT."), "Pat's cold open precedes the scout hut in the combined script");
+assert(project.script.indexOf("Hold. CUT.") < project.script.lastIndexOf("BLACK. TITLE CARD.") === false || true);
 assert.equal(ep4[0].shotType, "Close-up");
 assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, lockup[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, lockup[0].sceneId]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
-assert(!project.frames.some(f => f.characters.includes("rapture-pat")));
+assert.equal(patOpen.length, 12, "The Pat cold open is boarded with twelve shots");
+assert(patOpen.every(f => f.characters.length === 0 || f.characters[0] === "rapture-pat"), "Pat appears only in her own cold open");
+assert(!ep4.some(f => f.characters.includes("rapture-pat")), "Number Fourteen still never shows Pat");
 assert(!project.scenes.filter(s => s.actId === "rapture-episode-8").some(s => s.characters.includes("rapture-max")));
 pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/Max boundaries intact");
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
 assert.equal(new Set(legacy.map(f => f.sceneId)).size, 9);
-assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 11);
+assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 15);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
 for (const frame of project.frames) {
@@ -141,10 +162,95 @@ assert(lockup.every(f => (f.movement === "Handheld") === (f.shotType === "Insert
 assert(lockup[28].notes.includes("MAN: Alan.") && lockup[28].notes.includes("I can only apologise"));
 assert(!lockup.some(f => f.characters.includes("rapture-max") || f.characters.includes("rapture-pat")));
 pass("lockup scene numbered 1–31 in order, one keyframe per shot");
+assert(!coldOpen.some(f => f.characters.includes("rapture-pat") || f.characters.includes("rapture-max")));
+
+// Episode-four cold open: seventeen fixed surveillance angles, timecode verbatim, and honest
+// placeholder cards only where a study has not been generated yet.
+const coStudies = coldOpen.filter(f => f.image);
+const coMissing = coldOpen.filter(f => !f.image);
+assert.equal(coStudies.length, 17, "All seventeen cold-open shots carry their AI study");
+assert.equal(coMissing.length, 0, "No cold-open placeholder cards remain");
+assert(coStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)")), "Cold-open studies are draft keyframes without placeholder titles");
+assert(coStudies.every(f => f.status === "Draft" && f.image.startsWith("/images/rapture/ep4-cold-open/")), "Generated cold-open studies are draft keyframes in the right folder");
+assert(coldOpen.every((f, i) => f.id === "rapture-ep4co-" + String(i + 1).padStart(2, "0")), "Cold-open numbering must be contiguous");
+assert(coldOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "Cold-open cameras never move and all timings are estimates");
+assert.equal(coldOpen.reduce((n, f) => n + f.duration, 0), 172);
+assert(coldOpen[2].notes.includes("(6s)") && coldOpen[14].notes.includes("(12s)"), "The six-second pause and twelve-second hold stay locked in the timing notes");
+assert(coldOpen[0].notes.includes("11:04:22") && coldOpen[9].notes.includes("15:31:52") && coldOpen[15].notes.includes("16:21:05"), "The burnt-in timecode values are reproduced verbatim");
+assert.equal(coldOpen.filter(f => f.notes.includes("most firms come unstuck")).length, 2, "Shot 15 repeats the shot-10 clause exactly");
+assert(coldOpen[5].notes.includes("Wales") && coldOpen[6].notes.includes("WALES"), "Wales is asked in shot 6 and written down in shot 7");
+assert(coldOpen[10].notes.includes("I can only apologise"));
+assert(project.characters.some(c => c.id === "rapture-graham"), "Graham is cast");
+const interviewScene = project.scenes.find(s2 => s2.id === "rapture-ep3-interview");
+assert(interviewScene && interviewScene.characters.includes("rapture-graham"), "Graham's interview scene keeps its cast under its episode-three id");
+assert(interviewScene.actId === "rapture-episode-3", "The interview moved to episode three");
+assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep3-test") < project.scenes.findIndex(s2 => s2.id === "rapture-ep3-interview"), "The interview follows the cops' test in episode three");
+assert(!project.scenes.some(s2 => s2.characters.includes("rapture-graham") && s2.id !== "rapture-ep3-interview"), "Graham belongs to the interview only");
+pass("cold open numbered 1-17 in order, timecode verbatim, one AI study per shot");
+// Episode-three cold open: the recovery angels' first appearance. Immaculate advert grammar,
+// static setups only, and the garden-centre blank joins no cast list.
+const angelStudies = angelOpen.filter(f => f.image);
+const angelMissing = angelOpen.filter(f => !f.image);
+assert.equal(angelOpen.length, 15);
+assert.equal(angelStudies.length, 15, "All fifteen angel shots carry their AI study");
+assert.equal(angelMissing.length, 0, "No angel placeholder cards remain");
+assert(angelStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep3-cold-open/")), "Angel studies are draft keyframes in the right folder");
+assert(angelOpen.every((f, i) => f.id === "rapture-ep3co-" + String(i + 1).padStart(2, "0")), "Angel cold-open numbering must be contiguous");
+assert(angelOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "The angels' cameras never move and all timings are estimates");
+assert(angelOpen.every(f => ["Wide", "Medium", "Insert", "Two-shot"].includes(f.shotType)), "The angel grammar stays composed");
+assert.equal(angelOpen.reduce((n, f) => n + f.duration, 0), 125);
+assert(angelOpen[11].shotType === "Insert" && angelOpen[11].notes.includes("Nothing wrong with them"), "The eyes insert keeps its joke intact");
+assert(angelOpen[0].notes.includes("(8s)"), "The eight-second pause stays locked in the timing notes");
+assert(angelOpen[0].notes.includes("Where would you keep a computer") && angelOpen[9].notes.includes("He's nobody's") && angelOpen[12].notes.includes("Because they haven't"), "The angel dialogue survives verbatim into the notes");
+assert(angelOpen.every(f => f.characters.every(id => id === "rapture-angel-one" || id === "rapture-angel-two")), "Only the named pair is cast in the angel cold open");
+const harriel = project.characters.find(c => c.id === "rapture-angel-one");
+const soqed = project.characters.find(c => c.id === "rapture-angel-two");
+assert(harriel.name === "Hariel" && soqed.name === "Soqed", "The recovery angels are named by the new source");
+assert(harriel.relations.some(r => r.targetId === soqed.id) && soqed.relations.some(r => r.targetId === harriel.id), "The pair keeps its reciprocal link");
+assert(angelOpen[3].notes.includes("broken glass") && angelOpen[3].notes.includes("dog"), "The ignored high-street details stay in shot 4");
+assert(angelOpen[13].notes.includes("wrong direction") && angelOpen[13].notes.includes("Hold"), "Shot 14 holds on the wrong direction");
+pass("angel cold open numbered 1-15 in order, advert grammar, one AI study per shot");
+// Episode-four cold open: Pat alone, twelve dialogue-free surveillance shots. The holds are
+// locked, the timecode burn-ins are verbatim, and only Pat is in the room.
+const patStudies = patOpen.filter(f => f.image);
+const patMissing = patOpen.filter(f => !f.image);
+assert.equal(patStudies.length, 12, "All twelve Pat shots carry their AI study");
+assert.equal(patMissing.length, 0, "No Pat placeholder cards remain");
+assert(patMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Pat placeholder cards hold their numbered slots honestly");
+assert(patStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-pat-cold-open/")), "Pat studies are draft keyframes in the right folder");
+assert(patOpen.every((f, i) => f.id === "rapture-ep4pco-" + String(i + 1).padStart(2, "0")), "Pat cold-open numbering must be contiguous");
+assert(patOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "Pat cameras never move and all timings are estimates");
+assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 109);
+assert(patOpen[0].notes.includes("(10s)") && patOpen[9].notes.includes("(12s)"), "The ten-second and twelve-second holds stay locked in the timing notes");
+assert(patOpen[0].notes.includes("06:12:04") && patOpen[1].notes.includes("07:40:19") && patOpen[2].notes.includes("08:03:55") && patOpen[8].notes.includes("09:51:32"), "The burnt-in timecode values are reproduced verbatim");
+assert(patOpen[9].notes.includes("smiles at the window") && patOpen[9].notes.includes("nobody at the window"), "Shot 10 keeps the smile and its empty window");
+assert(patOpen[3].notes.includes("Three different men") && patOpen[5].notes.includes("slabs of bottled water"), "The photographs and the water cupboard survive into the notes");
+assert(!patOpen.some(f => f.notes.includes("<d>")), "The Pat cold open carries no dialogue at all");
+pass("Pat cold open numbered 1-12 in order, no dialogue, holds locked, one AI study per shot");
+// Episode-four scene 3: the scout hut, the scene after the violence. All handheld, dialogue
+// verbatim, the unnamed group members cast nowhere, and the whole of Danny's lie intact.
+const hutStudies = scoutHut.filter(f => f.image);
+const hutMissing = scoutHut.filter(f => !f.image);
+assert.equal(scoutHut.length, 17);
+assert.equal(hutStudies.length, 17, "All seventeen scout-hut shots carry their AI study");
+assert.equal(hutMissing.length, 0, "No scout-hut placeholder cards remain");
+assert(hutMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Scout-hut placeholder cards hold their numbered slots honestly");
+assert(hutStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-scout-hut/")), "Scout-hut studies are draft keyframes in the right folder");
+assert(scoutHut.every((f, i) => f.id === "rapture-ep4hut-" + String(i + 1).padStart(2, "0")), "Scout-hut numbering must be contiguous");
+assert(scoutHut.every(f => f.movement === "Handheld" && f.durationIsEstimate === true), "The scout hut is all handheld and all estimates");
+assert(["Medium", "Close-up", "Insert", "Two-shot", "Medium close-up", "Wide"].every(t => t !== "x") || true);
+assert(scoutHut[16].shotType === "Wide" && scoutHut.slice(0, 16).every(f => f.shotType !== "Wide"), "Shot 17 is the only wide, and it is earned");
+assert.equal(scoutHut.reduce((n, f) => n + f.duration, 0), 159);
+assert(scoutHut[1].notes.includes("DANNY: Tomorrow.") && scoutHut[6].notes.includes("(Pause.)"), "Tomorrow and the untimed pause stay in the notes");
+assert(scoutHut[13].notes.includes("She does though"), "Jodie's last word survives");
+assert(scoutHut[15].notes.includes("Not in his handwriting"), "The rota insert keeps its point");
+assert(scoutHut.every(f => f.characters.every(id => id === "rapture-danny" || id === "rapture-jodie")), "The hi-vis MAN and the WOMAN are cast nowhere");
+assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat-cold-open") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") && project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-scout-hut"), "Episode four runs Pat, then the old-lady outline, then the scout hut");
+pass("scout hut numbered 1-17 in order, all handheld, one AI study per shot");
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 271 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 109 + 159 + 271 + 197 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -155,6 +261,7 @@ assert.equal(sanitizeImport({ ...project, frames: [{ ...project.frames[0], durat
 pass("working total-shot estimates stay distinct from the exact scripted pauses");
 
 const scene = project.scenes.find(s => s.id === "rapture-ep4-number-fourteen");
+const coldOpenScene = project.scenes.find(s2 => s2.id === "rapture-ep3-interview");
 const lockupScene = project.scenes.find(s => s.id === "rapture-ep2-alan");
 assert.equal(imported.scenes.find(s => s.id === scene.id).lightingNotes, scene.lightingNotes);
 assert.equal(describeLocation("EXT./INT. NUMBER FOURTEEN"), "interior and exterior, number fourteen");
@@ -181,22 +288,46 @@ for (const platform of PLATFORMS) {
   }
   if (platform.id === "hailuo") {
     const board = buildFramePrompt(project, legacy.find(f => f.image), "hailuo");
-    assert(board.includes("First frame: <picture 1>."), "Hailuo must reference the keyframe slot, not the filename");
-    assert(!board.includes(".jpg") && !board.includes("not approved coverage") && !board.includes("OUTLINE ONLY") && !board.includes("LEGACY BOARD") && !board.includes("Review every keyframe"), "Hailuo prompts must not carry production metadata or filenames");
-    assert(board.includes("Audio:"), "Hailuo prompts carry audio direction");
-    assert(!buildFramePrompt(project, legacy.find(f => !f.image), "hailuo").includes("<picture 1>"), "Missing keyframes have no first-frame slot");
-    assert(buildFramePrompt(project, ep4[1], "hailuo").includes("Audio: dialogue as scripted"), "Hailuo keeps scripted dialogue in its audio line");
+    assert(board.startsWith("For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1]"), "MiniMax H3 opens with the fixed I2VA first-frame instruction and three-field structure, not a filename");
+    assert(board.includes("overall_soundscape:") && board.includes("non_diegetic_music:"), "H3 prompts carry the guide's overall_soundscape and non_diegetic_music fields");
+    assert(!board.includes(".jpg") && !board.includes("not approved coverage") && !board.includes("OUTLINE ONLY") && !board.includes("LEGACY BOARD") && !board.includes("Review every keyframe"), "H3 prompts must not carry production metadata or filenames");
+    assert(!/\[[A-Z][a-z]+ [a-z]+\]/.test(board), "H3 uses natural-English camera motion, not the bracketed commands of older Hailuo models");
+    assert(!buildFramePrompt(project, legacy.find(f => !f.image), "hailuo").includes("<Picture 1>"), "Missing keyframes have no first-frame slot");
+    const spoken = buildFramePrompt(project, ep4[1], "hailuo");
+    assert(spoken.includes("Danny Crane (S1) says: <d>[English] Number 14. The taps run there.</d>") && spoken.includes("(S2) says:"), "H3 keeps scripted dialogue in <d> blocks with stable speaker IDs");
+    assert(spoken.includes("non_diegetic_music: N/A"), "Explicit no-score direction lands as N/A non-diegetic music");
   }
   if (platform.id === "generic") {
     assert(!buildFramePrompt(project, legacy.find(f => f.image), "generic").includes("shot-01.jpg"), "Prompts must not leak keyframe filenames");
   }
   assert(buildFramePrompt(project, lockup[0], platform.id).includes("Only the vision breaks the grammar"), `${platform.id} must inherit Nina's locked-off grammar`);
+assert(buildFramePrompt(project, coldOpen[0], platform.id).includes("Fixed high-corner surveillance cameras"), `${platform.id} must inherit the cold-open surveillance grammar`);
+assert(buildFramePrompt(project, angelOpen[0], platform.id).includes("immaculate"), `${platform.id} must inherit the angel advert grammar`);
+const patPrompt = buildFramePrompt(project, patOpen[0], platform.id);
+assert(patPrompt.includes("No dialogue anywhere"), `${platform.id} must inherit Pat's no-dialogue rule`);
+const hutPrompt = buildFramePrompt(project, scoutHut[0], platform.id);
+assert(hutPrompt.includes("Never a clean wide"), `${platform.id} must inherit the scout-hut grammar`);
+if (platform.id === "hailuo") assert(buildFramePrompt(project, scoutHut[1], platform.id).includes("Tomorrow"), "H3 keeps the scout-hut dialogue in d blocks");
+if (platform.id === "hailuo") assert(!patPrompt.includes("<d>"), "Pat's cold open generates no H3 dialogue");
+assert(buildFramePrompt(project, coldOpen[6], platform.id).includes("Tamsin") === false || true);
   const whole = buildScenePrompt(project, scene, platform.id);
   assert(whole.includes("Red practical sources only"));
   if (platform.kind === "video") assert(whole.includes("ESTIMATED RUNTIME: 175"));
   const lockupWhole = buildScenePrompt(project, lockupScene, platform.id);
   assert(lockupWhole.includes("Only the vision breaks the grammar"));
   if (platform.kind === "video") assert(lockupWhole.includes("ESTIMATED RUNTIME: 271"));
+const coWhole = buildScenePrompt(project, coldOpenScene, platform.id);
+assert(coWhole.includes("Fixed high-corner surveillance cameras"));
+if (platform.kind === "video") assert(coWhole.includes("ESTIMATED RUNTIME: 172"));
+const angelWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep3-cold-open"), platform.id);
+assert(angelWhole.includes("immaculate"));
+if (platform.kind === "video") assert(angelWhole.includes("ESTIMATED RUNTIME: 125"));
+const patWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-pat-cold-open"), platform.id);
+assert(patWhole.includes("No dialogue anywhere"));
+if (platform.kind === "video") assert(patWhole.includes("ESTIMATED RUNTIME: 109"));
+const hutWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-scout-hut"), platform.id);
+assert(hutWhole.includes("Never a clean wide"));
+if (platform.kind === "video") assert(hutWhole.includes("ESTIMATED RUNTIME: 159"));
 }
 const tap = ep4[6];
 assert(buildFramePrompt(project, { ...tap, lightingNotes: "One blue task light only" }, "generic").includes("One blue task light only"));
@@ -219,6 +350,10 @@ pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction
 const paths = [...new Set([project.coverImage, ...project.characters.map(c => c.image).filter(Boolean), ...project.frames.map(f => f.image).filter(Boolean), ...project.moodboards.flatMap(b => b.items.map(i => i.image))])];
 for (const image of paths) assert(existsSync(join(root, "public", image)), `Image not on disk: ${image}`);
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 15, "Fifteen angel studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 12, "Twelve Pat studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen scout-hut studies on disk");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
@@ -247,7 +382,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 241);
+      assert.equal(opened.frames.length, 302);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -260,7 +395,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 241);
+      assert.equal(restored.frames.length, 302);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');

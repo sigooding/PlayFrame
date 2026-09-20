@@ -2,12 +2,16 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, lockupSceneId, createdAt, characterId, characters, grammar, lockupGrammar, redLight, shotPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, scoutHutSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, angelGrammar, scoutHutGrammar, lockupGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, scoutHutPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
 const bible = read("docs/rapture/show-bible.md");
 const screenplay = read("docs/rapture/scenes/ep4-number-fourteen.md");
+const coldOpenScreenplay = read("docs/rapture/scenes/ep4-cold-open.md");
+const ep3ColdOpenScreenplay = read("docs/rapture/scenes/ep3-cold-open.md");
+const patColdOpenScreenplay = read("docs/rapture/scenes/ep4-pat-cold-open.md");
+const scoutHutScreenplay = read("docs/rapture/scenes/ep4-scout-hut.md");
 const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
 const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
 const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
@@ -45,6 +49,154 @@ const numberFourteen = blocks.map(([, n, type, lens, , body], i) => {
   };
 });
 assert(numberFourteen.every(frame => ["Close-up", "Medium"].includes(frame.shotType)), "Current Crane grammar prohibits wide shots");
+// Episode-four cold open: seventeen fixed surveillance angles. The comedy's timing lives in the
+// burnt-in timecode, so the timecode values are reproduced verbatim; spelled pauses are honoured.
+const coldOpenBlocks = [...coldOpenScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(coldOpenBlocks.length, 17, "The cold-open source must have seventeen numbered shots");
+assert.equal(coldOpenPlan.length, 17, "The cold-open plan must cover all seventeen shots");
+const spelledPause = value => { const v = value.toLowerCase(); return v === "six" ? 6 : v === "eight" ? 8 : v === "ten" ? 10 : v === "twelve" ? 12 : Number(v); };
+const coldOpen = coldOpenBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Cold-open shot order must be contiguous");
+  const plan = coldOpenPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Cold-open duration must include action/dialogue, not just pauses");
+  const firstLines = body.split("\n").map(l => l.trim());
+  const description = (firstLines[0].startsWith("FIXED CAM") ? firstLines[1] || firstLines[0] : firstLines[0]);
+  const file = `/images/rapture/ep4-cold-open/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep4co-${String(n).padStart(2, "0")}`, sceneId: coldOpenSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens: plan.lens || "24mm",
+    angle: plan.angle, lighting: plan.lighting || "Overcast soft",
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, deadpan surveillance comedy; the timecode does the heavy lifting and nobody reacts except Tamsin's pen",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-cold-open, so this card holds slot ${n} of ${coldOpenPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.timecode ? `\n\nBurnt-in timecode: ${plan.timecode}${plan.camera === "held" ? ", still running" : ""}.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${coldOpenGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none specified for this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+const coldOpenTotal = coldOpen.reduce((n, f) => n + f.duration, 0);
+assert.equal(coldOpenTotal, 172, "Update the timing note when cold-open editorial estimates change");
+// Episode-three cold open: the recovery angels' first appearance, in immaculate advert
+// grammar. Static setups only; source lenses outside the library map to the closest option.
+const ep3ColdOpenBlocks = [...ep3ColdOpenScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(ep3ColdOpenBlocks.length, 15, "The episode-three cold-open source must have fifteen numbered shots");
+assert.equal(ep3ColdOpenPlan.length, 15, "The episode-three cold-open plan must cover all fifteen shots");
+const ep3Lens = { "24mm": "24mm", "50mm": "50mm", "85mm": "85mm", "28mm": "24mm" };
+const ep3ColdOpen = ep3ColdOpenBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Episode-three cold-open shot order must be contiguous");
+  const plan = ep3ColdOpenPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Episode-three cold-open duration must include action/dialogue, not just pauses");
+  const firstLines = body.split("\n").map(l => l.trim());
+  const description = (firstLines[0].includes("—") || firstLines[0] === "BLACK. TITLE CARD." ? firstLines[1] || firstLines[0] : firstLines[0]);
+  const file = `/images/rapture/ep3-cold-open/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  const lens = (plan.lens && ep3Lens[plan.lens]) || "24mm";
+  assert(!plan.lens || ep3Lens[plan.lens], `No library lens mapped for the angel source lens: ${plan.lens}`);
+  return {
+    id: `rapture-ep3co-${String(n).padStart(2, "0")}`, sceneId: ep3ColdOpenSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens,
+    angle: "Eye level", lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, immaculate advert comedy; tremendous composition, of no use whatsoever",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep3-cold-open, so this card holds slot ${n} of ${ep3ColdOpenPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${ep3Lens[plan.lens] === plan.lens ? "" : `\n\nSource lens: ${plan.lens}; closest library lens ${lens} shown.`}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${angelGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none specified for this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(ep3ColdOpen.reduce((n, f) => n + f.duration, 0), 125, "Update the timing note when angel editorial estimates change");
+assert(ep3ColdOpen.every(frame => frame.movement === "Static"), "The angels' cameras never move");
+assert(ep3ColdOpen.every(frame => ["Wide", "Medium", "Insert", "Two-shot"].includes(frame.shotType)), "The angel grammar stays composed: wides, mediums, inserts and two-shots only");
+assert(ep3ColdOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep3-cold-open/")), "Angel keyframes live under /images/rapture/ep3-cold-open/");
+// Episode-four cold open: Pat alone, before Jodie and Danny arrive. Dialogue-free surveillance;
+// the audience learns what she is before anyone in the episode does.
+const patColdOpenBlocks = [...patColdOpenScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(patColdOpenBlocks.length, 12, "The Pat cold-open source must have twelve numbered shots");
+assert.equal(patColdOpenPlan.length, 12, "The Pat cold-open plan must cover all twelve shots");
+const patOpen = patColdOpenBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Pat cold-open shot order must be contiguous");
+  const plan = patColdOpenPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Pat cold-open duration must include the hold, not only it");
+  const firstLines = body.split("\n").map(l => l.trim());
+  const description = (firstLines[0].startsWith("FIXED CAM") ? firstLines[1] || firstLines[0] : firstLines[0]);
+  const file = `/images/rapture/ep4-pat-cold-open/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep4pco-${String(n).padStart(2, "0")}`, sceneId: patColdOpenSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Static", lens: "24mm",
+    angle: plan.angle, lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Pure watching: domestic, immaculate and wrong; the smile is the only thing that is not domestic",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-pat-cold-open, so this card holds slot ${n} of ${patColdOpenPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.timecode ? `\n\nBurnt-in timecode: ${plan.timecode}${plan.camera === "held" ? ", still running" : ""}.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${patColdOpenGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none specified for this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 109, "Update the timing note when Pat cold-open editorial estimates change");
+assert(patOpen.every(frame => frame.movement === "Static"), "Pat's cameras never move");
+assert(patOpen.every(frame => frame.notes.includes("No dialogue")), "Every Pat shot carries the no-dialogue rule");
+assert(patOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-pat-cold-open/")), "Pat keyframes live under /images/rapture/ep4-pat-cold-open/");
+assert(patOpen.every((f, i) => f.characters.length === 0 || (f.characters.length === 1 && f.characters[0] === characterId("pat"))), "Nobody but Pat is in Pat's cold open");
+
+// Episode-four scene 3: the scout hut, the scene after the violence. All handheld, tight and
+// red; the hi-vis MAN and the WOMAN who once did a course are unnamed group members, not cast.
+const scoutHutBlocks = [...scoutHutScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(scoutHutBlocks.length, 17, "The scout-hut source must have seventeen numbered shots");
+assert.equal(scoutHutPlan.length, 17, "The scout-hut plan must cover all seventeen shots");
+const scoutHutLens = { "24mm": "24mm", "28mm": "24mm", "35mm": "35mm", "50mm": "50mm", "85mm": "85mm" };
+const scoutHut = scoutHutBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Scout-hut shot order must be contiguous");
+  assert(scoutHutLens[scoutHutPlan[i].lens], `No library lens mapped for the scout-hut source lens: ${scoutHutPlan[i].lens}`);
+  const plan = scoutHutPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const pauses = [...source.matchAll(/(\d+|six|eight|ten|twelve)[- ]second/gi)].map(m => spelledPause(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Scout-hut duration must include action/dialogue, not only pauses");
+  const firstLines = body.split("\n").map(l => l.trim());
+  const description = (firstLines[0].startsWith("HANDHELD") || firstLines[0].startsWith("INSERT") ? firstLines[1] || firstLines[0] : firstLines[0]);
+  const file = `/images/rapture/ep4-scout-hut/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep4hut-${String(n).padStart(2, "0")}`, sceneId: scoutHutSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description,
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: "Handheld", lens: scoutHutLens[plan.lens],
+    angle: "Eye level", lighting: "Practical night",
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, procedural aftercare; the group only cares about the water and nobody enquires",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-scout-hut, so this card holds slot ${n} of ${scoutHutPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${scoutHutLens[plan.lens] === plan.lens ? "" : `\n\nSource lens: ${plan.lens}; closest library lens ${scoutHutLens[plan.lens]} shown.`}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${scoutHutGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none specified for this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(scoutHut.reduce((n, f) => n + f.duration, 0), 159, "Update the timing note when scout-hut editorial estimates change");
+assert(scoutHut.every(frame => frame.movement === "Handheld"), "The scout hut is all handheld");
+assert(scoutHut.every(frame => frame.shotType !== "Extreme wide" && frame.shotType !== "Establishing"), "Never a clean wide");
+assert(scoutHut.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-scout-hut/")), "Scout-hut keyframes live under /images/rapture/ep4-scout-hut/");
+assert(scoutHut.every(f => f.characters.every(id => id === characterId("danny") || id === characterId("jodie"))), "Only the Cranes are cast in the scout hut");
+assert(scoutHut[1].notes.includes("MAN: How much?") && scoutHut[9].notes.includes("WOMAN: Let's have a look.") && scoutHut[10].notes.includes("WOMAN: That wants antibiotics."), "The unnamed group members' dialogue survives verbatim");
+assert(scoutHut[12].notes.includes("She leaves them by the gate") && scoutHut[6].notes.includes("Window frame."), "The gate arrangement and the whole of Danny's lie stay intact");
+
+assert(coldOpen.every(frame => frame.movement === "Static"), "Cold-open cameras never move");
+assert(coldOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-cold-open/")), "Cold-open keyframes live under /images/rapture/ep4-cold-open/");
 const lockupBlocks = [...lockupScreenplay.matchAll(/^(\d+)\. (STATIC WIDE|STATIC MEDIUM|MEDIUM|CLOSE|FLASH), (\d+mm), (locked off|static|handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
 assert.equal(lockupBlocks.length, 31, "The lockup source must have thirty-one numbered shots");
 assert.equal(lockupPlan.length, 31, "The lockup plan must cover all thirty-one shots");
@@ -78,6 +230,36 @@ assert.equal(new Set(lockupFrames.map(frame => frame.image)).size, 31, "One dedi
 const lockupTotal = lockupFrames.reduce((n, f) => n + f.duration, 0);
 assert.equal(lockupTotal, 271, "Update the timing note when lockup editorial estimates change");
 
+// The cold open precedes Number Fourteen in episode four: five hours of fixed surveillance,
+// then the water stop. Not Pat's house, and not the chained blank's cellar.
+// The angels' cold open precedes the episode-three outline: immaculate, useless, in step.
+const ep3ColdOpenScene = {
+  id: ep3ColdOpenSceneId, title: "Cold open — the recovery angels", location: "EXT./INT. A PARK AND A GARDEN CENTRE", time: "DAY",
+  description: "Hariel and Soqed locate nothing in an advert. The unnamed blank between the pallets is nobody's and joins no cast list.",
+  characters: ["angel-one", "angel-two"].map(characterId), actId: "rapture-episode-3",
+  kind: "Standard", lighting: "Golden hour", lightingNotes: angelGrammar, style: "cinematic",
+};
+// Pat alone before the settee scene: the audience knows first, the characters never do.
+const patColdOpenScene = {
+  id: patColdOpenSceneId, title: "Cold open — Pat alone", location: "INT. PAT'S HOUSE", time: "MORNING",
+  description: "No dialogue. A demon keeping house: the tin, the water, the doilies, and one smile at an empty window. Surveillance grammar tells the audience which side she is on without a word.",
+  characters: [characterId("pat")], actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Low key", lightingNotes: patColdOpenGrammar, style: "cinematic",
+};
+// Scene 3: the scout hut after the violence. Nobody asks where the water came from.
+const scoutHutScene = {
+  id: scoutHutSceneId, title: "The scout hut", location: "INT. THE SCOUT HUT", time: "EVENING",
+  description: "The scene after the violence. He is bleeding, he has to explain nothing to anyone, and the group's only interest is the water. Four holes in a row that everyone decides not to see.",
+  characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Practical night", lightingNotes: scoutHutGrammar, style: "cinematic",
+};
+const coldOpenScene = {
+  id: coldOpenSceneId, title: "The interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
+  description: "Episode three circles what a blank is from three angles and gets it wrong three times: the angels' cold open, the cops' worthless test, and Hell's five-hour interview that leaves with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
+  characters: ["reek", "tamsin", "graham"].map(characterId), actId: "rapture-episode-3",
+  kind: "Standard", lighting: "Overcast soft", lightingNotes: coldOpenGrammar, style: "cinematic",
+};
+
 const scene = {
   id: sceneId, title: "Number Fourteen", location: "EXT./INT. NUMBER FOURTEEN", time: "NIGHT",
   description: `A water stop governed by house rules and an unfinished complaint to the council. ${grammar} The table set for six is not played; the listener is never shown. This is not Pat's house.`,
@@ -108,7 +290,11 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
     characters: cast.map(characterId), actId: `rapture-episode-${ep}`, kind: kind || "Standard",
   };
 });
-scenes.splice(scenes.findIndex(s => s.actId === "rapture-episode-4"), 0, scene);
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-test") + 1, 0, coldOpenScene);
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-arrivals"), 0, ep3ColdOpenScene);
+scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-pat"), 0, patColdOpenScene);
+scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId), 0, scoutHutScene);
+scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId) + 1, 0, scene);
 const lockupScene = {
   id: lockupSceneId, title: "The first wrong lockup", location: "EXT./INT. ROADS AND AN INDUSTRIAL ESTATE", time: "DAY",
   description: `Nina drives out on a pendant bearing, opens two wrong lockups, and acquires Alan. ${lockupGrammar} The vision is the tracker's recorded view, not divine revelation.`,
@@ -146,12 +332,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...patOpen, ...scoutHut, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, patOpen.length + scoutHut.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
@@ -160,16 +346,21 @@ const notes = sections.map(({ title, text }, i) => ({
   tags: ["Series bible", "Source"], connections: [],
 }));
 const legacyKeyframes = legacyFrames.filter(frame => frame.image).length;
+const coldOpenMissing = coldOpen.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const patOpenMissing = patOpen.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const patOpenTotal = patOpen.reduce((n, f) => n + f.duration, 0);
+const scoutHutMissing = scoutHut.filter(frame => !frame.image).map(frame => frame.title.replace(" (keyframe missing)", ""));
+const scoutHutTotal = scoutHut.reduce((n, f) => n + f.duration, 0);
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one fully boarded scene, with 13 shots and a 175-second working animatic estimate. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate) ), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
+  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-alone open (${patOpen.length} shots, ${patOpenTotal}-second estimate, no dialogue)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, and the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
   id: "rapture-continuity", title: "Continuity decisions and open questions", color: "rose", createdAt,
   tags: ["Continuity", "Needs review"], connections: [],
-  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}`,
+  content: `The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nThe episode-four cold open's Graham is his own blank: not Alan, not the chained/rescued blank, and given no surname or backstory beyond the interview. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.${missingKeyframes.length ? `\n\n${missingKeyframes.length} legacy keyframes are missing from disk and hold placeholder slots: ${missingKeyframes.join(", ")}.` : ""}`,
 });
 
 const brainstorm = [
@@ -195,10 +386,10 @@ const moodboards = [{
 
 const project = {
   id: projectId, title: "Let the Raptures Commence",
-  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Number Fourteen is the 13-shot working scene.",
+  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; the episode-three and episode-four cold opens (15 + 17 shots) and Number Fourteen (13 shots) are the working scenes.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
-  script: [lockupScreenplay, screenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
+  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
   shareId: null, createdAt, updatedAt: createdAt,
 };
 

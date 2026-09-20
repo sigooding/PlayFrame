@@ -28,9 +28,19 @@ try {
   const opened = await api.post("/api/projects/rapture");
   assert.equal(opened.status(), 200);
   await go(project.id, "storyboard");
-  await expect(page.locator(".frame-card")).toHaveCount(241);
+  await expect(page.locator(".frame-card")).toHaveCount(285);
   await expect(page.locator(".frame-card h3").first()).toHaveText("Cold open — board 01");
   await expect(page.locator(".frame-card h3").last()).toHaveText("The unfinished complaint");
+  await page.getByLabel("Filter by scene").selectOption("rapture-ep3-cold-open");
+  await expect(page.locator(".frame-card")).toHaveCount(15);
+  await expect(page.locator(".frame-card h3").first()).toHaveText("Where would you keep a computer");
+  await page.getByLabel("Filter by scene").selectOption("rapture-ep4-pat-cold-open");
+  await expect(page.locator(".frame-card")).toHaveCount(12);
+  await expect(page.locator(".frame-card h3").first()).toHaveText("Standing in the dark");
+  await page.getByLabel("Filter by scene").selectOption("rapture-ep3-interview");
+  await expect(page.locator(".frame-card")).toHaveCount(17);
+  await expect(page.locator(".frame-card h3").first()).toHaveText("Where did they go");
+  await expect(page.locator(".frame-card h3").last()).toHaveText("Black — title card");
   await page.getByLabel("Filter by scene").selectOption("rapture-ep4-number-fourteen");
   await expect(page.locator(".frame-card")).toHaveCount(13);
   await page.locator(".frame-card").last().scrollIntoViewIfNeeded();
@@ -49,7 +59,10 @@ try {
   await page.getByLabel("Scene for prompts").selectOption("rapture-ep4-number-fourteen");
   await expect(page.locator(".studio-shot-item")).toHaveCount(13);
   await expect(page.getByLabel("Combined prompts for the selected shots")).toContainText("Red practical sources only");
-  console.log("PASS desktop storyboard, 210 frames in story order, prompts, visible estimate labels, images and layout");
+  await page.getByLabel("Scene for prompts").selectOption("rapture-ep3-cold-open");
+  await expect(page.locator(".studio-shot-item")).toHaveCount(15);
+  await expect(page.getByLabel("Combined prompts for the selected shots")).toContainText("immaculate");
+  console.log("PASS desktop storyboard, 285 frames in story order incl. all three cold opens, prompts, estimates, images and layout");
 
   // Disposable copy for real form persistence and import/export exercises.
   const response = await api.post("/api/projects/import", { data: { ...project, title: "Rapture browser verification — disposable" } });
@@ -57,8 +70,8 @@ try {
   copyId = (await response.json()).id;
   assert.notEqual(copyId, project.id);
   await go(copyId, "storyboard");
-  await page.getByRole("button", { name: "Edit frame 235: Brown, then clear", exact: true }).click();
-  const modal = page.getByRole("dialog", { name: "Frame 235", exact: true });
+  await page.getByRole("button", { name: "Edit frame 267: Brown, then clear", exact: true }).click();
+  const modal = page.getByRole("dialog", { name: "Frame 267", exact: true });
   await expect(modal.getByLabel("Working duration estimate (not locked)")).toBeChecked();
   await modal.getByLabel("Working duration estimate (not locked)").uncheck();
   await modal.getByLabel("Duration (seconds)").fill("12");
@@ -73,7 +86,7 @@ try {
   await modal.getByRole("button", { name: "Save changes", exact: true }).click();
   await expect(modal).toBeHidden();
   await page.reload();
-  await page.getByRole("button", { name: "Edit frame 235: Brown, then clear", exact: true }).click();
+  await page.getByRole("button", { name: "Edit frame 267: Brown, then clear", exact: true }).click();
   await expect(modal.getByLabel("Duration (seconds)")).toHaveValue("12");
   await expect(modal.getByLabel("Working duration estimate (not locked)")).not.toBeChecked();
   await modal.getByRole("button", { name: "Shot design", exact: true }).click();
@@ -96,15 +109,15 @@ try {
   await expect(page.getByRole("dialog").getByLabel("Lighting direction")).toHaveValue("Red letterbox practical only. No white or blue fill.");
   await page.getByRole("button", { name: "Close dialog" }).click();
   const saved = await (await api.get(`/api/projects/${copyId}`)).json();
-  assert.equal(saved.frames[234].lightingNotes, "Red kettle indicator only. No white fill.");
-  assert.equal(saved.frames[234].durationIsEstimate, false);
+  assert.equal(saved.frames[266].lightingNotes, "Red kettle indicator only. No white fill.");
+  assert.equal(saved.frames[266].durationIsEstimate, false);
   assert.equal(saved.script, project.script);
   console.log("PASS real frame and scene form saves, reload, lighting inheritance/override, empty cast and unchanged script");
 
   await page.getByRole("navigation", { name: "Workspace navigation" }).getByRole("button", { name: /Templates/ }).click();
   await page.getByRole("button", { name: "Open series workspace", exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`project=${project.id}`));
-  await expect(page.locator(".frame-card")).toHaveCount(241);
+  await expect(page.locator(".frame-card")).toHaveCount(285);
   const restored = await (await api.get(`/api/projects/${project.id}`)).json();
   assert.equal(restored.script, (await opened.json()).script, "Template action must preserve the existing series");
   console.log("PASS template opens the saved series without duplicates or replacing its screenplay");
@@ -112,7 +125,7 @@ try {
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   mobile.on("pageerror", error => errors.push(error.message));
   await mobile.goto(`${baseURL}/?project=${project.id}&tab=storyboard`);
-  await expect(mobile.locator(".frame-card")).toHaveCount(241);
+  await expect(mobile.locator(".frame-card")).toHaveCount(285);
   await assertNoOverflow(mobile);
   await mobile.getByRole("button", { name: "Open navigation", exact: true }).click();
   await expect(mobile.getByRole("navigation", { name: "Workspace navigation" })).toBeVisible();

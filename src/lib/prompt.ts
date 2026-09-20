@@ -1,5 +1,5 @@
 import type { FilmProject, Scene, StoryFrame } from "./types";
-import { angleDescriptions, hailuoCommands, movementDescriptions, shotGuide } from "./shots";
+import { angleDescriptions, hailuoMotion, movementDescriptions, shotGuide } from "./shots";
 import { lightingGuide } from "./lighting";
 import { relationLines } from "./relations";
 import { negativeFor, stylePromptLine, visualStyle, type VisualStyleEntry } from "./styles";
@@ -18,7 +18,7 @@ export interface PlatformConfig {
 
 export const PLATFORMS: readonly PlatformConfig[] = [
   // AI Video Models
-  { id: "hailuo", name: "MiniMax Hailuo", kind: "video", hint: "Bracketed camera commands, first-frame image (<picture 1>) and audio direction. One shot per generation, 6–10s.", badge: "Video" },
+  { id: "hailuo", name: "MiniMax H3", kind: "video", hint: "H3 three-field format — integrated_multimodal_description, overall_soundscape, non_diegetic_music — with natural camera motion, (S1) speaker IDs, <d> dialogue and <Picture 1> first frames. One shot per generation, 4–15s.", badge: "Video" },
   { id: "seedance", name: "Seedance", kind: "video", hint: "Natural language. Supports multi-shot sequences in one prompt.", badge: "Video" },
   { id: "kling", name: "Kling", kind: "video", hint: "Prose prompt plus a negative prompt.", badge: "Video" },
   { id: "runway", name: "Runway Gen", kind: "video", hint: "Lead with camera movement, keep it direct, no negatives.", badge: "Video" },
@@ -103,13 +103,60 @@ function parts(project: FilmProject, frame: StoryFrame, ctx: PromptContext, entr
   return { shot, camera, setting, light, cast, relations, action, mood, transitionIn, transitionOut, style: stylePromptLine(project, entry), finish: entry.finish };
 }
 
-function hailuoAudio(frame: StoryFrame): string {
-  const lines = (frame.notes || "").split("\n").map(l => l.trim()).filter(Boolean);
-  const isCue = (l: string) => /^([A-Z][A-Z'.\-() ]{0,24}):\s+\S/.test(l) && !/SCRIPT/i.test(l);
-  const dialogue = lines.filter(isCue);
-  const ambient = lines.find(l => !isCue(l) && /ambien|sound|score|wind|silence|music/i.test(l) && !/no (score|music|dialogue)/i.test(l))?.replace(/[.!?]+$/, "");
-  if (dialogue.length) return `dialogue as scripted — “${dialogue.join(" ")}”${ambient ? ` over ${ambient[0].toLowerCase()}${ambient.slice(1)}` : ""}, no music`;
-  return `${ambient || "natural ambient sound of the location"}, no dialogue, no music`;
+// --- MiniMax H3 (Hailuo) helpers -------------------------------------------------
+// MiniMax H3 abandons the bracketed-command style of earlier Hailuo models.
+// Per docs/VIDEO_PROMPT_WRITING_GUIDE_base_en.md (T2VA / I2VA / FL2VA / L2VA):
+//   • the prompt is three core fields: integrated_multimodal_description,
+//     overall_soundscape, non_diegetic_music;
+//   • camera motion is a natural-English sentence (motion + amplitude + speed);
+//   • dialogue uses stable speaker IDs (S1), (S2)… with the words verbatim
+//     inside <d>[Language] …</d>, delivery kept outside the tags;
+//   • a first-frame keyframe adds the fixed I2VA instruction line first and is
+//     cited as <Picture 1>. Durations of 4–15s are an API setting, not prompt text.
+
+const isScriptCue = (l: string) => /^([A-Z][A-Z'.\-() ]{0,24}):\s+\S/.test(l) && !/SCRIPT/i.test(l);
+
+/** Built-in library pictures (shot diagrams, lighting and style swatches) illustrate the
+ *  framing or look — they are not first frames the director will upload. Only real keyframe
+ *  art (approved studies, uploads, external stills) becomes H3's <Picture 1>. */
+const isLibraryReference = (image?: string) => !!image && /^\/images\/(shots|lighting|styles)\//.test(image);
+const hasKeyframeImage = (frame: StoryFrame) => !!frame.image && !isLibraryReference(frame.image);
+
+/** Scripted cue lines ("DANNY: …") become speaker-ID sentences with <d> blocks.
+ *  A speaker keeps one stable ID across the whole prompt; known cast members
+ *  are matched by name so the identifier reads naturally. A leading parenthetical
+ *  is delivery direction, so it stays outside the <d> block per the H3 guide. */
+function h3Dialogue(project: FilmProject, frame: StoryFrame, castIds: string[] | undefined): string {
+  const cues = (frame.notes || "").split("\n").map(l => l.trim()).filter(isScriptCue);
+  if (!cues.length) return "";
+  const cast = (castIds || []).map(id => project.characters.find(c => c.id === id)).filter(Boolean);
+  const ids = new Map<string, string>();
+  return cues.map(cue => {
+    const [, raw, full] = cue.match(/^([A-Z][A-Z'.\-() ]{0,24}):\s*(.+)$/) || [];
+    const key = (raw || cue).trim().toUpperCase();
+    if (!ids.has(key)) ids.set(key, `S${ids.size + 1}`);
+    const known = cast.find(c => c!.name.toUpperCase() === key || c!.name.toUpperCase().split(/\s+/)[0] === key);
+    const name = known ? known!.name : (raw || "").trim().split(/\s+/).map(w => w.charAt(0) + w.slice(1).toLowerCase()).join(" ");
+    const paren = full?.match(/^\(([^)]+)\)\s*([\s\S]*)$/);
+    const delivery = paren ? ` in a ${paren[1].replace(/^after a /, "measured ")} manner` : "";
+    const spoken = (paren ? paren[2] : full) || "";
+    if (!spoken.trim()) return "";
+    const ending = /[.!?]$/.test(spoken.trim()) ? spoken.trim() : `${spoken.trim()}.`;
+    return `${name} (${ids.get(key)}) says${delivery}: <d>[English] ${ending}</d>`;
+  }).join(" ");
+}
+
+/** Split shot-note sound direction into the guide's two audio fields. Ambience
+ *  and physical sounds go to overall_soundscape; audience-only score goes to
+ *  non_diegetic_music. N/A only when silence (or no music) is the direction. */
+function h3Sound(frame: StoryFrame): { soundscape: string; music: string } {
+  const prose = (frame.notes || "").split("\n").map(l => l.trim()).filter(Boolean).filter(l => !isScriptCue(l));
+  const all = prose.join(" ");
+  const music = prose.find(l => /music|score|soundtrack|underscore|theme song/i.test(l) && !/no (score|music|theme)/i.test(l));
+  const ambient = prose.find(l => l !== music && /ambien|sound|room tone|wind|rain|hum|traffic|silence/i.test(l) && !/no (score|music|dialogue)/i.test(l));
+  const silence = /complete silence|no (ambient|diegetic) sound|silent throughout/i.test(all);
+  const soundscape = silence ? "N/A" : sentence(ambient || "Natural ambient sound of the location continues throughout");
+  return { soundscape, music: music ? sentence(music) : "N/A" };
 }
 
 export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platform: PlatformId, style?: string): string {
@@ -126,7 +173,33 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
 
   // ===== Video Models =====
   if (platform === "hailuo") {
-    return [`${hailuoCommands[frame.movement] || "[Static shot]"} ${p.shot}.`, frame.image ? `First frame: <picture 1>.` : "", p.setting ? `${p.setting[0].toUpperCase()}${p.setting.slice(1)}, ${p.light}.` : "", p.cast ? `Characters: ${p.cast}.` : "", p.relations, p.action, p.mood ? `Mood: ${sentence(p.mood)}` : "", `Audio: ${hailuoAudio(frame)}.`, `Style: ${p.style}. ${duration}, 16:9. No ${avoid}.`].filter(Boolean).join(" ");
+    // MiniMax H3 format (Video Prompt Writing Guide, T2VA / I2VA): three core fields,
+    // style stated at the start of [Shot 1], natural camera motion, <d> dialogue.
+    const keyframe = hasKeyframeImage(frame);
+    const spoken = h3Dialogue(project, frame, frame.characters ?? frameScene?.characters);
+    const sound = h3Sound(frame);
+    const styleLead = sentence(p.style);
+    const body = [
+      `[Shot 1] ${styleLead.charAt(0).toUpperCase()}${styleLead.slice(1)}`,
+      keyframe ? "The shot begins from <Picture 1>." : "",
+      `A ${p.shot}.`,
+      p.setting ? `${p.setting[0].toUpperCase()}${p.setting.slice(1)}, ${p.light}.` : "",
+      p.cast ? `${p.cast}.` : "",
+      p.relations,
+      hailuoMotion[frame.movement] || hailuoMotion.Static,
+      p.action,
+      spoken,
+      p.mood ? `The overall mood is ${p.mood}.` : "",
+    ].filter(Boolean).join(" ");
+    const fields = [
+      `integrated_multimodal_description: ${body}`,
+      `overall_soundscape: ${sound.soundscape}`,
+      `non_diegetic_music: ${sound.music}`,
+    ].join("\n\n");
+    // I2VA: the fixed first-frame instruction is the first line of the final prompt.
+    return keyframe
+      ? `For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\n${fields}`
+      : fields;
   }
   if (platform === "runway") {
     return [`${p.camera[0].toUpperCase()}${p.camera.slice(1)}: ${p.shot} of ${p.cast ? p.cast.split(" (")[0] : "the subject"}${p.setting ? ` in ${p.setting}` : ""}.`, p.action, p.relations, `${p.light[0].toUpperCase()}${p.light.slice(1)}. ${p.style}.`].filter(Boolean).join(" ");
@@ -354,7 +427,7 @@ export function buildScenePrompt(project: FilmProject, scene: Scene, platform: P
     return `${transition} SHOT ${i + 1} (${frame.durationIsEstimate ? "~" : ""}${frame.duration}s): ${p.shot}, ${p.camera}, ${p.light}. ${p.cast ? `${p.cast}. ` : ""}${p.relations ? `${p.relations} ` : ""}${p.action}${p.mood ? ` Mood: ${sentence(p.mood)}` : ""}`;
   });
   const closing = platform === "kling" ? `\n\nNegative prompt: ${negativeFor("text, watermarks, logos, distorted faces, extra limbs, morphing, blurry", entry)}.` : "";
-  const note = platform === "hailuo" ? `\n\n(Hailuo generates one shot at a time — copy each shot prompt separately from the list below.)` : platform === "seedance" ? `\n\n(Seedance can render this as a single multi-shot sequence.)` : "";
+  const note = platform === "hailuo" ? `\n\n(MiniMax H3 generates one shot at a time — copy each shot prompt separately from the list below.)` : platform === "seedance" ? `\n\n(Seedance can render this as a single multi-shot sequence.)` : "";
   return `${header}\n\n${shots.join("\n\n")}${closing}${note}`;
 }
 

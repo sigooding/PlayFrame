@@ -108,6 +108,14 @@ for (const model of PLATFORMS) {
 }
 console.log(`  PASS  all ${PLATFORMS.length} models generate clean frame and scene prompts`);
 
+// MiniMax H3: <Picture 1> is reserved for real keyframe art. Built-in library
+// references (shot diagrams, lighting/style swatches) are storyboard aids, not
+// first frames, so they must never trigger the I2VA first-frame instruction.
+const hailuoStarter = buildFramePrompt(project, frame, "hailuo");
+assert(!hailuoStarter.includes("<Picture 1>") && !hailuoStarter.includes("fully referenced"), "MiniMax H3 must not treat built-in library reference images as I2VA keyframes");
+assert(hailuoStarter.includes("integrated_multimodal_description:") && hailuoStarter.includes("overall_soundscape:") && hailuoStarter.includes("non_diegetic_music:"), "MiniMax H3 prompts use the guide's three core fields");
+console.log("  PASS  MiniMax H3 three-field format with library references excluded from <Picture 1>");
+
 const sdxlPrompt = buildFramePrompt(project, frame, "sdxl");
 assert(sdxlPrompt.includes("NEGATIVE PROMPT:"), "SDXL prompt should contain a negative prompt section");
 assert(sdxlPrompt.includes("1344x768"), "SDXL prompt should specify 16:9 parameters");

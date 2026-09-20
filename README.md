@@ -1,6 +1,6 @@
 # frame.
 
-A writer/director's pre-production studio: screenplay, acts & sequences, cast with a relationship map, storyboard with a shot-type library, a lighting library and a thirty-look visual style library, shot list, mood boards, brainstorm map, and a prompt studio that batches any set of shots into ready-to-paste prompts for video (MiniMax Hailuo, Seedance, Kling, Runway, Veo) and image models (SDXL, SD 1.5, SD 3.5, Krea 2, FLUX, Midjourney, DALL-E, Leonardo, Ideogram) in thirty visual styles (Realistic, Anime, Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting, Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8, Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco, Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid).
+A writer/director's pre-production studio: screenplay, acts & sequences, cast with a relationship map, storyboard with a shot-type library, a lighting library and a thirty-look visual style library, shot list, mood boards, brainstorm map, and a prompt studio that batches any set of shots into ready-to-paste prompts for video (MiniMax H3, Seedance, Kling, Runway, Veo) and image models (SDXL, SD 1.5, SD 3.5, Krea 2, FLUX, Midjourney, DALL-E, Leonardo, Ideogram) in thirty visual styles (Realistic, Anime, Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting, Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8, Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco, Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid).
 
 ## Run it locally
 
@@ -19,11 +19,18 @@ The series opens by default when present; an explicit `?project=<id>` always win
 The current **8 × 45min British black comedy** series prompt is integrated as an editable
 workspace, not just a folder of images:
 
-- Eight episode outlines and 32 scene/outline entries (not eight completed scripts).
-- Twenty cast entries with reciprocal family/colleague links; the woman at Number
-  Fourteen is kept separate from Pat, and the rescued blank from Alan.
+- Eight episode outlines and 32 outline entries (not eight completed scripts).
+- Twenty-one cast entries with reciprocal family/colleague links; the woman at Number
+  Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
+  (the interview's contented blank, now an episode-three scene) from both.
 - **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
   thirteen new AI-generated studies, one keyframe per shot.
+- **Cold opens:** three numbered scenes — the episode-four Pat-alone open
+  (12 dialogue-free surveillance shots, fully studied), the
+  episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
+  to episode three), and the scout-hut scene 3
+  (17 shots, fully studied). The old-lady sequence is Scene 2 of episode
+  four; its 32 shots are held by the outline, not yet boarded.
 - The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.
