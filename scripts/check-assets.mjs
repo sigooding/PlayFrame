@@ -4,8 +4,9 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const refs = new Set();
-const walk = dir => { for (const name of readdirSync(dir)) { const p = join(dir, name); if (statSync(p).isDirectory()) walk(p); else if (/\.(tsx?|css)$/.test(name)) { const text = readFileSync(p, "utf8"); for (const m of text.matchAll(/["'(]\/(images|fonts)\/([^"')\s]+)["')]/g)) refs.add(`/${m[1]}/${m[2]}`); } } };
+const walk = dir => { for (const name of readdirSync(dir)) { const p = join(dir, name); if (statSync(p).isDirectory()) walk(p); else if (/\.(tsx?|css|json)$/.test(name)) { const text = readFileSync(p, "utf8"); for (const m of text.matchAll(/["'(]\/(images|fonts)\/([^"')\s]+)["')]/g)) refs.add(`/${m[1]}/${m[2]}`); } } };
 walk(join(root, "src"));
+if (existsSync(join(root, "public", "projects"))) walk(join(root, "public", "projects"));
 
 /** Read the retired-image map out of lib/image.ts so its keys are not reported as missing files. */
 function legacyImages() {

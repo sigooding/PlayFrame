@@ -15,9 +15,9 @@ const optionalIn = (value: unknown, list: readonly string[]) => value === undefi
 const optionalId = (value: unknown) => value === undefined || value === null || value === "" || string(value, 100);
 const strings = (value: unknown, max = 100) => value === undefined || value === null || (Array.isArray(value) && value.every(v => string(v, max)));
 
-const sceneOk = (s: Scene) => s && string(s.id, 100) && string(s.title, 300) && string(s.location, 300) && string(s.time, 100) && string(s.description) && strings(s.characters) && optionalId(s.actId) && optionalId(s.partId) && optionalIn(s.kind, SCENE_KINDS) && optionalIn(s.lighting, LIGHTING) && (s.style === undefined || string(s.style, 60));
+const sceneOk = (s: Scene) => s && string(s.id, 100) && string(s.title, 300) && string(s.location, 300) && string(s.time, 100) && string(s.description) && strings(s.characters) && optionalId(s.actId) && optionalId(s.partId) && optionalIn(s.kind, SCENE_KINDS) && optionalIn(s.lighting, LIGHTING) && (s.lightingNotes === undefined || string(s.lightingNotes, 1000)) && (s.style === undefined || string(s.style, 60));
 const actOk = (a: Act) => a && string(a.id, 100) && string(a.title, 120) && a.title.trim() && string(a.description, 2000) && (a.parts === undefined || (Array.isArray(a.parts) && a.parts.length <= 30 && a.parts.every((p: ActPart) => p && string(p.id, 100) && string(p.title, 160) && p.title.trim() && string(p.description, 1000))));
-const frameOk = (f: StoryFrame) => f && string(f.id, 100) && string(f.sceneId, 100) && string(f.title, 300) && string(f.description) && image(f.image) && SHOT_TYPES.includes(f.shotType) && CAMERA_MOVEMENTS.includes(f.movement) && frameStatuses.includes(f.status) && Number.isFinite(f.duration) && f.duration > 0 && f.duration <= 3600 && string(f.notes) && strings(f.characters) && optionalIn(f.angle, CAMERA_ANGLES) && optionalIn(f.lens, LENSES) && optionalIn(f.lighting, LIGHTING) && optionalIn(f.transition, TRANSITIONS) && (f.style === undefined || string(f.style, 60)) && (f.mood === undefined || string(f.mood, 300));
+const frameOk = (f: StoryFrame) => f && string(f.id, 100) && string(f.sceneId, 100) && string(f.title, 300) && string(f.description) && image(f.image) && SHOT_TYPES.includes(f.shotType) && CAMERA_MOVEMENTS.includes(f.movement) && frameStatuses.includes(f.status) && Number.isFinite(f.duration) && f.duration > 0 && f.duration <= 3600 && string(f.notes) && strings(f.characters) && optionalIn(f.angle, CAMERA_ANGLES) && optionalIn(f.lens, LENSES) && optionalIn(f.lighting, LIGHTING) && (f.lightingNotes === undefined || string(f.lightingNotes, 1000)) && (f.durationIsEstimate === undefined || typeof f.durationIsEstimate === "boolean") && optionalIn(f.transition, TRANSITIONS) && (f.style === undefined || string(f.style, 60)) && (f.mood === undefined || string(f.mood, 300));
 const noteOk = (n: ProjectNote) => n && string(n.id, 100) && string(n.title, 300) && string(n.content) && noteColors.includes(n.color) && string(n.createdAt, 100) && strings(n.tags, 40) && (n.connections === undefined || (Array.isArray(n.connections) && n.connections.every(c => c && string(c.targetId, 100) && string(c.label, 80))));
 const relationOk = (r: CharacterRelation) => r && string(r.id, 100) && string(r.targetId, 100) && RELATION_KINDS.includes(r.kind) && (r.note === undefined || string(r.note, 120));
 const characterOk = (c: Character) => c && string(c.id, 100) && string(c.name, 120) && c.name.trim() && string(c.role, 80) && string(c.age, 40) && string(c.description, 700) && Array.isArray(c.traits) && c.traits.every(t => string(t, 50)) && entityColors.includes(c.color) && (c.image === undefined || image(c.image)) && (c.relations === undefined || (Array.isArray(c.relations) && c.relations.length <= 40 && c.relations.every(relationOk))) && string(c.createdAt, 100);
@@ -109,6 +109,7 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
       partId: typeof sc.partId === "string" && partIds.has(sc.partId) ? sc.partId : undefined,
       kind,
       lighting: LIGHTING.includes(sc.lighting as Lighting) ? (sc.lighting as Lighting) : undefined,
+      lightingNotes: text(sc.lightingNotes, 1000) || undefined,
       style: text(sc.style, 60) || undefined,
     };
   });
@@ -128,6 +129,8 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
       angle: CAMERA_ANGLES.includes(f_.angle as CameraAngle) ? (f_.angle as CameraAngle) : undefined,
       lens: LENSES.includes(f_.lens as Lens) ? (f_.lens as Lens) : undefined,
       lighting: LIGHTING.includes(f_.lighting as Lighting) ? (f_.lighting as Lighting) : undefined,
+      lightingNotes: text(f_.lightingNotes, 1000) || undefined,
+      durationIsEstimate: typeof f_.durationIsEstimate === "boolean" ? f_.durationIsEstimate : undefined,
       style: text(f_.style, 60) || undefined,
       transition: TRANSITIONS.includes(f_.transition as Transition) ? (f_.transition as Transition) : undefined,
       mood: text(f_.mood, 300) || undefined,

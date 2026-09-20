@@ -3,6 +3,7 @@ import { ensureSchema } from "@/db/bootstrap";
 import { filmProjects } from "@/db/schema";
 import { asc, eq } from "drizzle-orm";
 import { starterProjects } from "./seed";
+import { raptureProject } from "./rapture";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
 
@@ -14,10 +15,22 @@ export async function listProjects() {
   await ensureSchema();
   let rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
   if (rows.length === 0) {
-    await db.insert(filmProjects).values(starterProjects).onConflictDoNothing();
+    // Single-row inserts also work with the local JSON adapter, which does not implement batch VALUES.
+    for (const project of starterProjects) {
+      await db.insert(filmProjects).values(project).onConflictDoNothing();
+    }
     rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
   }
   return rows.map(serialize);
+}
+
+/** Opt-in for existing databases; never reseed on every page load or replace edited material. */
+export async function openRaptureProject() {
+  await ensureSchema();
+  await db.insert(filmProjects).values(raptureProject).onConflictDoNothing();
+  const project = await getProject(raptureProject.id);
+  if (!project) throw new Error("The series project was not created.");
+  return project;
 }
 
 export async function getProject(id: string) {

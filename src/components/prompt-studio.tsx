@@ -31,7 +31,7 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
   onUpdateShot?: (frame: StoryFrame) => void;
   onClose?: () => void;
 }) {
-  const [sceneId, setSceneId] = useState(initialSceneId || project.scenes[0]?.id || "");
+  const [sceneId, setSceneId] = useState(initialSceneId || project.frames[0]?.sceneId || project.scenes[0]?.id || "");
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copied, setCopied] = useState<string | null>(null);
   const [scope, setScope] = useState<"scene" | "project">("scene");
@@ -160,7 +160,7 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
               return <div key={f.id} className={`studio-shot-item ${on ? "selected" : ""}`}>
                 <button type="button" className="studio-shot-row" aria-pressed={on} onClick={() => toggle(f.id)}>
                   <img src={f.image || "/images/shots/wide.jpg"} alt="" onError={onImageError} />
-                  <span className="studio-shot-text"><strong>{f.title}</strong><small>{scope === "project" && sc ? `${sc.title} · ` : ""}{f.shotType} · {f.duration}s{hasStyle(f.style) ? ` · ${visualStyle(f.style).name}` : ""}</small></span>
+                  <span className="studio-shot-text"><strong>{f.title}</strong><small>{scope === "project" && sc ? `${sc.title} · ` : ""}{f.shotType} · {f.durationIsEstimate ? "~" : ""}{f.duration}s{hasStyle(f.style) ? ` · ${visualStyle(f.style).name}` : ""}</small></span>
                   {on && <Check size={14} className="studio-shot-check" />}
                 </button>
                 {onEditShot && <button type="button" className="studio-shot-edit" aria-label={`Edit ${f.title}`} title={`Edit ${f.title}`} onClick={() => onEditShot(f)}><Pencil size={12} /></button>}

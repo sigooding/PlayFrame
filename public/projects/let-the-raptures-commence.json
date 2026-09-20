@@ -1,0 +1,1635 @@
+{
+  "id": "74a9cb34-9e80-4a04-a614-000000000014",
+  "title": "Let the Raptures Commence",
+  "description": "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Number Fourteen is the 13-shot working scene.",
+  "genre": "Comedy",
+  "format": "Series",
+  "status": "In development",
+  "coverImage": "/images/rapture/ep4/04-mid-sentence.jpg",
+  "acts": [
+    {
+      "id": "rapture-episode-1",
+      "title": "Episode 1 — No mechanism revealed",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nThe mugging. Nina at St Jude's and the rapture. The cops: birds, arrest ourselves, the taser. Nina's aftermath, the pendant, the first vision, she drives. Martin at the storage unit. Tag: 1980, ending on NO.",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-2",
+      "title": "Episode 2 — There's an afterlife and it's badly run",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nLimbo: the family, the branches of Christianity, the seventy-two virgins, the husband led away. Danny and Jodie's first raid. Hell's intake floor. Nina's first wrong lockup; she acquires Alan.",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-3",
+      "title": "Episode 3 — Blanks, and both sides come down",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nDemons and angels arrive, badly. The blanks established. The cops invent a worthless test. Danny and Jodie recruited by the underground group. Brown water. Martin comes home to a collection and no son.",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-4",
+      "title": "Episode 4 — The old lady",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nJodie on the settee, Danny in the kitchen, the knife and fork, the fork through the forearm, the bottles by the gate. Survivors' meetings begin; grandma and the dog is reported as proof they're here to maintain order. Someone mentions a nun.",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-5",
+      "title": "Episode 5 — The basement",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nThe chained blank, the interrogation that goes nowhere, the rescue of a man who talks about laminate flooring. The cops pick up Danny's scent. Max flashback: the misspelling.",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-6",
+      "title": "Episode 6 — Dry",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nThe taps fail. The group turns on itself; a moment of clarity. Nina gets a bearing that isn't wrong and is found by people who've decided she's a saint. The cops arrest a demon and the paperwork won't stick. Max flashback: the stat bars.",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-7",
+      "title": "Episode 7 — Convergence",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nFour parties, four wrong reasons, one postcode. Martin already there with the machine plugged in, trying to make it play something. Limbo: someone in administration realises nobody is auditing them either. Max flashback: \"just clear our past attempts.\"",
+      "parts": []
+    },
+    {
+      "id": "rapture-episode-8",
+      "title": "Episode 8 — The arcade",
+      "description": "45-minute episode outline, not a completed shooting script.\n\nEveryone in one building, all wrong about why. Martin defends his collection from people trying to save the world. The cops arrest people in sequence. Demons and angels arrive simultaneously and each assumes the other is what they came for. Upstairs: Jodie gets through because she's eleven and ignored; Nina can't read the menu; Max knows where the fields are. The reversal won't authorise — Limbo administration is protecting the outage, because a stalled queue means nobody audits them. Nina wins an argument at a desk. Then the correction: not a rewind, but a bid on an auction lot, placed by a nun, outbidding Martin for the box the machine is in. ENTER. No flash, no sound.",
+      "parts": []
+    }
+  ],
+  "scenes": [
+    {
+      "id": "rapture-ep1-mugging",
+      "title": "The mugging — outline",
+      "location": "EXT. ALLEY",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. The mugging. The knife starts its journey through the old woman's handbag and the support group. Location/time are provisional unless specified by the bible.",
+      "characters": [],
+      "actId": "rapture-episode-1",
+      "kind": "Cold open"
+    },
+    {
+      "id": "rapture-ep1-st-judes",
+      "title": "St Jude's and the rapture — outline",
+      "location": "INT. ST JUDE'S",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Nina at St Jude's; the rapture. One ignored complaint about water pressure. Locked off, wide, deep focus, daylight, symmetrical. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-nina"
+      ],
+      "actId": "rapture-episode-1",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep1-cops",
+      "title": "Birds, arrest ourselves, the taser — outline",
+      "location": "INT. POLICE CAR",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Birds; arrest ourselves; the taser. Static windscreen two-shot from the bonnet and a wide across the car park. Handheld only during violence, then identical static framing. No reaction cuts. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-kath",
+        "rapture-ray"
+      ],
+      "actId": "rapture-episode-1",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep1-bearing",
+      "title": "The pendant and first vision — outline",
+      "location": "INT./EXT. ST JUDE'S / ROAD",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Nina's aftermath, the pendant, the first vision; she drives. The vision is the tracker's recorded view, not divine revelation. Only this interruption breaks Nina's grammar. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-nina"
+      ],
+      "actId": "rapture-episode-1",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep1-storage",
+      "title": "Martin at the storage unit — outline",
+      "location": "INT. STORAGE UNIT",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Martin at the storage unit. No mechanism revealed. Flat fluorescent light, locked off, slightly off-centre. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-martin"
+      ],
+      "actId": "rapture-episode-1",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep1-no",
+      "title": "1980 thread — NO — outline",
+      "location": "INT. HOTEL ROOM",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Tag for the 1980 thread, ending on NO. Preserve the bible's five-years-later death chronology; do not silently date the hotel scene 1980. Warm, grainy anamorphic practical light. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-absconder"
+      ],
+      "actId": "rapture-episode-1",
+      "kind": "Tag"
+    },
+    {
+      "id": "rapture-ep2-limbo",
+      "title": "The family at the desk — outline",
+      "location": "INT. LIMBO CATHEDRAL",
+      "time": "CONTINUOUS",
+      "description": "OUTLINE ONLY — not a numbered shooting script. The family, branches of Christianity, seventy-two virgins, husband led away. Frontal proscenium, vast vertical space, hard cut to the flat close desk. Four-second reverberation. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-brenda",
+        "rapture-gordon"
+      ],
+      "actId": "rapture-episode-2",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep2-raid",
+      "title": "The first raid — outline",
+      "location": "INT. HOUSE",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Danny and Jodie's first raid for water. Handheld, tight and dark, red practical sources only. Never a whole room. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie"
+      ],
+      "actId": "rapture-episode-2",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep2-intake",
+      "title": "The intake floor — outline",
+      "location": "INT. HELL INTAKE",
+      "time": "CONTINUOUS",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Hell's intake collapse goes unnoticed behind balloon concerns. Fixed high-corner surveillance, 4:3, slight fisheye, faint timecode. Never close. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-vassago",
+        "rapture-reek",
+        "rapture-tamsin"
+      ],
+      "actId": "rapture-episode-2",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep2-alan",
+      "title": "The first wrong lockup — outline",
+      "location": "EXT. LOCKUP",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Nina's first wrong lockup; she acquires Alan. Nina's locked-off daylight grammar. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-nina",
+        "rapture-alan"
+      ],
+      "actId": "rapture-episode-2",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep3-arrivals",
+      "title": "Both sides come down — outline",
+      "location": "EXT. EARTH — LOCATION TBC",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Demons and angels arrive, badly. Keep faction coverage separate; no invented shared scene. Demons retain fixed surveillance grammar on earth. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-angel-one",
+        "rapture-angel-two",
+        "rapture-pat",
+        "rapture-field-officer"
+      ],
+      "actId": "rapture-episode-3",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep3-test",
+      "title": "A worthless screening method — outline",
+      "location": "INT. POLICE CAR",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Blanks established. The cops invent a test around I can only apologise and never doubt it. Half of real humanity says it too. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-kath",
+        "rapture-ray"
+      ],
+      "actId": "rapture-episode-3",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep3-group",
+      "title": "Recruited / brown water — outline",
+      "location": "INT. UNDERGROUND MEETING PLACE",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Danny and Jodie recruited by the underground group. Brown water. Tight red practical handheld coverage; no full-room tableau. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie"
+      ],
+      "actId": "rapture-episode-3",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep3-home",
+      "title": "A collection and no son — outline",
+      "location": "INT. MARTIN'S HOME",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Martin comes home to a collection and no son. Aggrieved, not grieving. Flat, fluorescent, off-centre. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-martin"
+      ],
+      "actId": "rapture-episode-3",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep4-number-fourteen",
+      "title": "Number Fourteen",
+      "location": "EXT./INT. NUMBER FOURTEEN",
+      "time": "NIGHT",
+      "description": "A water stop governed by house rules and an unfinished complaint to the council. Handheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts. The table set for six is not played; the listener is never shown. This is not Pat's house.",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie",
+        "rapture-woman-fourteen"
+      ],
+      "actId": "rapture-episode-4",
+      "kind": "Standard",
+      "lighting": "Practical night",
+      "lightingNotes": "Red practical sources only: the letterbox, red dashboard indicators and the kettle's red indicator. Deep darkness outside those small pools. No white, blue, teal, sodium or daylight fill; red is a physical source, never an overall colour grade. Jodie's collar headlamp stays off.",
+      "style": "cinematic"
+    },
+    {
+      "id": "rapture-ep4-pat",
+      "title": "Pat's house — the old lady — outline",
+      "location": "INT./EXT. PAT'S HOUSE / GATE",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Jodie on the settee, Danny in the kitchen, knife and fork, fork through the forearm, bottles by the gate. This is NOT Number Fourteen. Demon viewpoints retain fixed high-corner 4:3 surveillance; Crane viewpoints stay tight red handheld. Do not blend the grammars within a shot. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-pat",
+        "rapture-danny",
+        "rapture-jodie"
+      ],
+      "actId": "rapture-episode-4",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep4-meetings",
+      "title": "Survivors' meetings — outline",
+      "location": "INT. MEETING PLACE",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Grandma and the dog are reported as proof they are here to maintain order. Someone mentions a nun. No mechanism explanation or catch-up scene. Location/time are provisional unless specified by the bible.",
+      "characters": [],
+      "actId": "rapture-episode-4",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep5-basement",
+      "title": "The interrogation — outline",
+      "location": "INT. CELLAR",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. The chained blank. The interrogation goes nowhere. The officer has notes and thinks she is close. Fixed high-corner surveillance, never close; the violence is not spectacular. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-field-officer",
+        "rapture-rescued-blank"
+      ],
+      "actId": "rapture-episode-5",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep5-rescue",
+      "title": "Laminate flooring — outline",
+      "location": "INT. CELLAR / EXIT",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Danny and Jodie rescue the man who talks about laminate flooring. Hell is watching through him. Upstairs taps are dead. The Crane coverage remains tight red handheld. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie",
+        "rapture-rescued-blank"
+      ],
+      "actId": "rapture-episode-5",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep5-scent",
+      "title": "The cops pick up Danny's scent — outline",
+      "location": "INT. POLICE CAR",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Property-law enforcement over water scavenging. Static windscreen two-shot; wrong details pursued sincerely. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-kath",
+        "rapture-ray"
+      ],
+      "actId": "rapture-episode-5",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep5-misspelling",
+      "title": "RAPTURES — outline",
+      "location": "INT. MAX'S ROOM",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Max flashback: the misspelling of The Raptors. He is alive and unreachable, not a present-day participant. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-max"
+      ],
+      "actId": "rapture-episode-5",
+      "kind": "Flashback"
+    },
+    {
+      "id": "rapture-ep6-dry",
+      "title": "The taps fail — outline",
+      "location": "INT. MEETING PLACE",
+      "time": "NIGHT",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Dry taps. The group turns on itself; a moment of clarity. The apocalypse as a maintenance backlog, never a tragic performance. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie"
+      ],
+      "actId": "rapture-episode-6",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep6-saint",
+      "title": "A bearing that isn't wrong — outline",
+      "location": "EXT. ROAD",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Nina gets a correct bearing and is found by people who have decided she is a saint. Her annoyance is practical. Every pendant use gives away her position. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-nina",
+        "rapture-alan"
+      ],
+      "actId": "rapture-episode-6",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep6-paperwork",
+      "title": "The paperwork won't stick — outline",
+      "location": "INT. POLICE CAR",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. The cops arrest a demon and the paperwork will not stick. The arrested demon is not named in the source; do not silently choose one. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-kath",
+        "rapture-ray"
+      ],
+      "actId": "rapture-episode-6",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep6-bars",
+      "title": "The stat bars — outline",
+      "location": "INT. MAX'S ROOM",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Max flashback: the moral values arranged so the bars look balanced, below average to make the enemies weak. The criteria are decoupled from the values. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-max"
+      ],
+      "actId": "rapture-episode-6",
+      "kind": "Flashback"
+    },
+    {
+      "id": "rapture-ep7-postcode",
+      "title": "Four wrong reasons — outline",
+      "location": "EXT. ARCADE POSTCODE",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Four parties converge on one postcode for four wrong reasons. People dying of water failure dully. No shared explanatory scene; separate thread grammars until episode eight. Location/time are provisional unless specified by the bible.",
+      "characters": [],
+      "actId": "rapture-episode-7",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep7-play",
+      "title": "Make it play something — outline",
+      "location": "INT. ARCADE",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Martin is already there with the machine plugged in, trying to make it play something. His fluorescent, flat, off-centre grammar still applies in episode seven. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-martin"
+      ],
+      "actId": "rapture-episode-7",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep7-audit",
+      "title": "Nobody is auditing us — outline",
+      "location": "INT. LIMBO ADMINISTRATION",
+      "time": "CONTINUOUS",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Someone in administration realises nobody is auditing them either. This official is not silently assigned to Brenda or Gordon. Limbo is unaffected by time. Location/time are provisional unless specified by the bible.",
+      "characters": [],
+      "actId": "rapture-episode-7",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep7-attempts",
+      "title": "Just clear our past attempts — outline",
+      "location": "INT. MAX'S ROOM",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Max flashback: just clear our past attempts. He means two seasons of bad placements. Minimising the window sends the signal. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-max"
+      ],
+      "actId": "rapture-episode-7",
+      "kind": "Flashback"
+    },
+    {
+      "id": "rapture-ep8-arcade",
+      "title": "Everyone is wrong — outline",
+      "location": "INT. ARCADE",
+      "time": "DAY",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Martin defends his collection, cops arrest people in sequence, demons and angels arrive together and each assumes the other is the target. All grammars collapse to neutral ordinary coverage. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-martin",
+        "rapture-kath",
+        "rapture-ray",
+        "rapture-angel-one",
+        "rapture-angel-two",
+        "rapture-vassago",
+        "rapture-reek",
+        "rapture-tamsin"
+      ],
+      "actId": "rapture-episode-8",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep8-upstairs",
+      "title": "The menu / the desk / ENTER — outline",
+      "location": "INT. ARCADE UPSTAIRS / LIMBO DESK",
+      "time": "CONTINUOUS",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Jodie gets through because she is eleven and ignored. Nina cannot read the menu; Max knows where the fields are, but the bible retains flashbacks only. Limbo protects the outage. Nina wins an argument at a desk. The correction is an auction bid outbidding Martin, not a rewind. ENTER. No flash, sound or score. Location/time are provisional unless specified by the bible.",
+      "characters": [
+        "rapture-jodie",
+        "rapture-nina"
+      ],
+      "actId": "rapture-episode-8",
+      "kind": "Standard"
+    },
+    {
+      "id": "rapture-ep8-last",
+      "title": "SOLD / just one question — outline",
+      "location": "INT. STORAGE UNIT / LIMBO",
+      "time": "CONTINUOUS",
+      "description": "OUTLINE ONLY — not a numbered shooting script. Shutter down, machine unopened in the dark. Lot sticker: number, date, SOLD. Then timeless Limbo, the same queue, a man at the desk with one question. No epilogue, no faces, no resolution for anyone. Location/time are provisional unless specified by the bible.",
+      "characters": [],
+      "actId": "rapture-episode-8",
+      "kind": "Tag"
+    }
+  ],
+  "frames": [
+    {
+      "id": "rapture-ep4-shot-01",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "The headlight switch",
+      "description": "Danny's hand on the headlight switch. The red letterbox light on the wet side window. A 2-second pause. He turns the switch off.",
+      "image": "/images/rapture/ep4/01-switch.jpg",
+      "shotType": "Close-up",
+      "movement": "Handheld",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [],
+      "notes": "CU replaces the superseded WS. Headlight state is conveyed by the switch; no white beam is shown. Danny's hand only.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. CU, 50mm, handheld — Danny's hand on the headlight switch. The red letterbox light on the wet side window. A 2-second pause. He turns the switch off."
+    },
+    {
+      "id": "rapture-ep4-shot-02",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "Rule two",
+      "description": "the cab. Danny, a laminated card in his hand.",
+      "image": "/images/rapture/ep4/02-card.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 15,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie"
+      ],
+      "notes": "Inside the cab, not the cops' bonnet-mounted two-shot. Small red dashboard practical only.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. MS, 35mm, handheld — the cab. Danny, a laminated card in his hand.\n   DANNY: Number 14. The taps run there.\n   JODIE: The letterbox is on.\n   DANNY: So is the dashboard.\n   A 2-second pause.\n   DANNY: Rule two. No lights on the street."
+    },
+    {
+      "id": "rapture-ep4-shot-03",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "It's very cold",
+      "description": "Danny on the step, red light off the letterbox on his face. He knocks three times.",
+      "image": "/images/rapture/ep4/03-knocks.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 15,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-danny"
+      ],
+      "notes": "Three knocks, then the full 3-second and 2-second pauses. Jodie stays off camera.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (3s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. MS, 35mm, handheld — Danny on the step, red light off the letterbox on his face. He knocks three times.\n   A 3-second pause.\n   DANNY: (to the door) It's cold.\n   A 2-second pause.\n   DANNY: (to Jodie, over his shoulder) It's very cold."
+    },
+    {
+      "id": "rapture-ep4-shot-04",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "Mid-sentence",
+      "description": "the door opens. THE WOMAN (50s, rumpled housecoat over a floral blouse, a Tesco bag stuffed with crumpled papers) holding the door for someone.",
+      "image": "/images/rapture/ep4/04-mid-sentence.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-woman-fourteen"
+      ],
+      "notes": "Door swing and reopening occur within this setup. No listener, shadow-person or reaction insert.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. MS, 35mm, handheld — the door opens. THE WOMAN (50s, rumpled housecoat over a floral blouse, a Tesco bag stuffed with crumpled papers) holding the door for someone.\n   THE WOMAN: Oh, sorry, I'm mid-sentence.\n   She steps back into the hall, lets the door swing, and reopens it."
+    },
+    {
+      "id": "rapture-ep4-shot-05",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "Six places",
+      "description": "the hall, over her shoulder. A table set for six, plates on it.",
+      "image": "/images/rapture/ep4/05-six-places.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-woman-fourteen",
+        "rapture-danny"
+      ],
+      "notes": "Over the woman's shoulder without changing the source's MS designation. Table remains an unremarked cropped background detail; never show a whole room.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none specified for this shot).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. MS, 35mm, handheld — the hall, over her shoulder. A table set for six, plates on it.\n   THE WOMAN: Number 14.\n   DANNY: That's what the card says.\n   THE WOMAN: I know what the card says."
+    },
+    {
+      "id": "rapture-ep4-shot-06",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "Tuesday was Thursday",
+      "description": "the kitchen, red light only: the letterbox light under the door, the red light of the kettle on. Six cups on the counter.",
+      "image": "/images/rapture/ep4/06-six-cups.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 23,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-woman-fourteen",
+        "rapture-danny"
+      ],
+      "notes": "Six cups. Kettle indicator and letterbox spill only. Upstairs is intermittently dead locally, not yet the episode-five system-wide milestone.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 23s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. MS, 35mm, handheld — the kitchen, red light only: the letterbox light under the door, the red light of the kettle on. Six cups on the counter.\n   THE WOMAN: You want water.\n   DANNY: We're looking for water.\n   THE WOMAN: The tap. (points) Not the upstairs.\n   DANNY: Why not?\n   THE WOMAN: Dead most days.\n   A 2-second pause.\n   THE WOMAN: Was fine on Tuesday. That was Thursday."
+    },
+    {
+      "id": "rapture-ep4-shot-07",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "Brown, then clear",
+      "description": "the tap. The water comes out brown. A 4-second pause of brown water. The water comes out clear.",
+      "image": "/images/rapture/ep4/07-brown-water.jpg",
+      "shotType": "Close-up",
+      "movement": "Handheld",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 11,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [],
+      "notes": "Only the tap is on camera. Hold brown water for four full seconds before it clears. All three lines are off camera.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 11s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (4s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. CU, 50mm, handheld — the tap. The water comes out brown. A 4-second pause of brown water. The water comes out clear.\n   JODIE: (quietly) It's doing it again.\n   DANNY: Rule nine. Write it down.\n   JODIE: I am."
+    },
+    {
+      "id": "rapture-ep4-shot-08",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "Rule one is biscuit",
+      "description": "Jodie filling the bottle at the sink. The woman watching.",
+      "image": "/images/rapture/ep4/08-biscuit-rule.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 11,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-jodie",
+        "rapture-woman-fourteen"
+      ],
+      "notes": "Danny's line is off camera. No reaction cut.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 11s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. MS, 35mm, handheld — Jodie filling the bottle at the sink. The woman watching.\n   THE WOMAN: Biscuit.\n   A 2-second pause.\n   DANNY: We haven't broken any rules.\n   THE WOMAN: Rule one is biscuit."
+    },
+    {
+      "id": "rapture-ep4-shot-09",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "No pocket — reference",
+      "description": "Danny. A slow blink. He looks at his card.",
+      "image": "/images/rapture/ep4/02-card.jpg",
+      "shotType": "Close-up",
+      "movement": "Handheld",
+      "lens": "50mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 25,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-danny"
+      ],
+      "notes": "REFERENCE ONLY: cab/card still from shot 2; not final kitchen coverage. Needs a dedicated CU of Danny, card and pocketless jacket, with Jodie's hand entering frame. Keep the slow blink and both 2-second pauses in one setup.\n\nImage: reused reference, not a completed keyframe.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. CU, 50mm, handheld — Danny. A slow blink. He looks at his card.\n   DANNY: I don't have a biscuit.\n   A 2-second pause.\n   JODIE: I have a biscuit.\n   Jodie produces a biscuit from Danny's jacket.\n   DANNY: That's from the tin.\n   JODIE: The tin's in the van. That's from my pocket.\n   Danny looks at the jacket. There is no pocket.\n   A 2-second pause.\n   Danny writes something on the card."
+    },
+    {
+      "id": "rapture-ep4-shot-10",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "The pipes — reference",
+      "description": "the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.",
+      "image": "/images/rapture/ep4/08-biscuit-rule.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 22,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-jodie",
+        "rapture-woman-fourteen"
+      ],
+      "notes": "REFERENCE ONLY: sink still from shot 8, before the exchange. Needs a dedicated biscuit/bottle handover keyframe. Bottle returned full, cold, no air gap; no magical flash. Danny is off camera.\n\nImage: reused reference, not a completed keyframe.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 22s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s + 2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. MS, 35mm, handheld — the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.\n    THE WOMAN: Don't come back on a Tuesday.\n    DANNY: Why not?\n    THE WOMAN: The pipes.\n    A 2-second pause.\n    JODIE: That's not a reason.\n    A 2-second pause.\n    THE WOMAN: It's a reason."
+    },
+    {
+      "id": "rapture-ep4-shot-11",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "About the council",
+      "description": "the cab. Danny driving. Jodie holding the bottle.",
+      "image": "/images/rapture/ep4/11-council.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 13,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-danny",
+        "rapture-jodie"
+      ],
+      "notes": "Inside the moving cab. Vehicle exterior lights off. No reflective ending or grief.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 13s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. MS, 35mm, handheld — the cab. Danny driving. Jodie holding the bottle.\n    JODIE: What was she saying?\n    DANNY: I think it was about the council.\n    JODIE: To who?\n    A 2-second pause.\n    DANNY: I don't know."
+    },
+    {
+      "id": "rapture-ep4-shot-12",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "The light stays on",
+      "description": "the wet side panel of the van passing the door, no lights. The red letterbox light stays on.",
+      "image": "/images/rapture/ep4/12-passing-door.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [],
+      "notes": "MS replaces the superseded WS. Only a passing van panel and a slice of door, never a street establishing shot. No exterior van lights.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. MS, 35mm, handheld — the wet side panel of the van passing the door, no lights. The red letterbox light stays on.\n    A 2-second pause."
+    },
+    {
+      "id": "rapture-ep4-shot-13",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "title": "The unfinished complaint — reference",
+      "description": "number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.",
+      "image": "/images/rapture/ep4/04-mid-sentence.jpg",
+      "shotType": "Medium",
+      "movement": "Handheld",
+      "lens": "35mm",
+      "angle": "Eye level",
+      "lighting": "Practical night",
+      "style": "cinematic",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+      "characters": [
+        "rapture-woman-fourteen"
+      ],
+      "notes": "REFERENCE ONLY: doorway still from shot 4. Needs the final mid-complaint pose. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade.\n\nImage: reused reference, not a completed keyframe.\n\nHandheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (2s).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.\n    THE WOMAN: — and that's why I'm telling the council, the parking, the noise, the —\n    A 2-second pause.\n    The door closes.\n    CUT TO BLACK."
+    }
+  ],
+  "characters": [
+    {
+      "id": "rapture-nina",
+      "name": "Sister Nina Doyle",
+      "role": "Protagonist / St Jude's",
+      "age": "45",
+      "description": "Runs St Jude's, a residential house for people the system gave up on. Self-sufficient, can re-plumb a building, lies fluently to authority; gentle with the genuinely broken, brutal with anyone coasting. Daughter of the absconding rockstar, whom she never knew. Half-angel and ineligible for sorting: nepotism, not tragedy. Faith is functional; God is her employer and she has views about management. Treats divine instruction as an unreliable supplier. Finds being called a saint ridiculous.",
+      "traits": [
+        "Practical",
+        "Stubborn",
+        "Self-sufficient"
+      ],
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/nina.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-nina-absconder",
+          "targetId": "rapture-absconder",
+          "kind": "Parent",
+          "note": "Nina never knew her father; the pendant was the terminal's tracker."
+        }
+      ]
+    },
+    {
+      "id": "rapture-kath",
+      "name": "PC Kath Bridges",
+      "role": "Police / moral justice",
+      "age": "30s",
+      "description": "White British police officer in her thirties. Sincerely believes she was left behind to teach moral justice; cannot remember who said so. Maintains paperwork and cites vanished superiors. Notices the wrong details with total commitment. Mild grievance, never fear or amazement. Thinks Ray is the one who gets carried away.",
+      "traits": [
+        "Sincere",
+        "Pedantic",
+        "Aggrieved"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/kath.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-kath-ray",
+          "targetId": "rapture-ray",
+          "kind": "Colleague",
+          "note": "Each thinks the other gets carried away."
+        }
+      ]
+    },
+    {
+      "id": "rapture-ray",
+      "name": "PC Ray Okonjo",
+      "role": "Police / moral justice",
+      "age": "30s",
+      "description": "Black British police officer in his thirties. Sincerely believes he was left behind to teach moral justice; cannot remember who said so. Maintains paperwork and cites vanished superiors. Follows the wrong details nowhere. Mild grievance, never fear or amazement. Thinks Kath is the one who gets carried away.",
+      "traits": [
+        "Sincere",
+        "Pedantic",
+        "Aggrieved"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/ray.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-ray-kath",
+          "targetId": "rapture-kath",
+          "kind": "Colleague",
+          "note": "Each thinks the other gets carried away."
+        }
+      ]
+    },
+    {
+      "id": "rapture-danny",
+      "name": "Danny Crane",
+      "role": "Father / water scavenger",
+      "age": "40",
+      "description": "Forty, olive waxed jacket, canvas satchel, untidy dark hair and stubble. Scavenging for water with his daughter Jodie. Has rules: nothing off anyone still alive. Cannot let her be right because the rules are the last bit of parenting he has. Keeps a laminated rules card. Dry and occupied by logistics, never played for grief.",
+      "traits": [
+        "Rule-bound",
+        "Practical",
+        "Protective"
+      ],
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/danny.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-danny-jodie",
+          "targetId": "rapture-jodie",
+          "kind": "Child",
+          "note": "Father and daughter scavenging for water; rules versus practical experience."
+        }
+      ]
+    },
+    {
+      "id": "rapture-jodie",
+      "name": "Jodie Crane",
+      "role": "Daughter / water scavenger",
+      "age": "11",
+      "description": "Eleven, short sandy hair, navy hoodie under an oversized olive jacket, backpack and a headlamp on her collar. The headlamp stays off in Number Fourteen. Better at crime than Danny and knows it without cruelty. Sees his rules will get them killed. Her mother was raptured and judged worthy. No pathos performance.",
+      "traits": [
+        "Observant",
+        "Resourceful",
+        "Direct"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/jodie.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-jodie-danny",
+          "targetId": "rapture-danny",
+          "kind": "Parent",
+          "note": "Father and daughter scavenging for water; rules versus practical experience."
+        }
+      ]
+    },
+    {
+      "id": "rapture-martin",
+      "name": "Martin",
+      "role": "Collector / Max's father",
+      "age": "40s",
+      "description": "Failed musician in a denim jacket correct in 1994, hair long at the back on principle. Four guitars, nothing written in eleven years. Collected the rockstar's belongings at estate sales; won the terminal at auction and has it filed as period junk. Cannot reach his son. Aggrieved rather than grieving. Never learns what the machine is.",
+      "traits": [
+        "Possessive",
+        "Aggrieved",
+        "Persistent"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/martin.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-martin-max",
+          "targetId": "rapture-max",
+          "kind": "Child",
+          "note": "Martin cannot reach his son; Max borrowed the terminal for a poster."
+        }
+      ]
+    },
+    {
+      "id": "rapture-max",
+      "name": "Max",
+      "role": "Flashbacks / accidental operator",
+      "age": "14",
+      "description": "Fourteen-year-old son of Martin, making a retro poster for his esports team The Raptors. Misspells it RAPTURES, balances moral-criterion bars as graphic design, sets opponents weak, asks to clear past attempts, then minimises the window. Alive, unreachable; flashbacks only. Worried he is in trouble, not wracked with guilt. The series does not laugh at him.",
+      "traits": [
+        "Unaware",
+        "Competitive",
+        "Practical"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": [
+        {
+          "id": "rapture-link-max-martin",
+          "targetId": "rapture-martin",
+          "kind": "Parent",
+          "note": "Martin cannot reach his son; Max borrowed the terminal for a poster."
+        }
+      ]
+    },
+    {
+      "id": "rapture-brenda",
+      "name": "Brenda",
+      "role": "Limbo guide",
+      "age": "50s",
+      "description": "Limbo guide in her fifties, cardigan over robes behind a folding table. Thirty years in post; customer-service warmth. Sincere and bored. Cannot tell the religions apart any more. Has no records on anyone. Talks over the cathedral's four-second reverberation.",
+      "traits": [
+        "Sincere",
+        "Bored",
+        "Courteous"
+      ],
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/brenda.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-brenda-gordon",
+          "targetId": "rapture-gordon",
+          "kind": "Colleague",
+          "note": "Thirty years behind the desk, no records on anyone."
+        }
+      ]
+    },
+    {
+      "id": "rapture-gordon",
+      "name": "Gordon",
+      "role": "Limbo guide",
+      "age": "60s",
+      "description": "Limbo guide in his sixties, cardigan over robes behind a folding table. Thirty years in post; customer-service warmth. Sincere and bored. Cannot tell the religions apart any more. Has no records on anyone. Talks over the cathedral's four-second reverberation.",
+      "traits": [
+        "Sincere",
+        "Bored",
+        "Courteous"
+      ],
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/gordon.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-gordon-brenda",
+          "targetId": "rapture-brenda",
+          "kind": "Colleague",
+          "note": "Thirty years behind the desk, no records on anyone."
+        }
+      ]
+    },
+    {
+      "id": "rapture-vassago",
+      "name": "Vassago",
+      "role": "Hell / intake manager",
+      "age": "50s",
+      "description": "Hell's intake manager in his fifties, short sleeves and a lanyard. In charge, no idea. More concerned with deflating birthday balloons than the intake collapse. Instantly accepts Tamsin's theory that Heaven stole the damned for its numbers. Investigates entirely the wrong thing.",
+      "traits": [
+        "Bureaucratic",
+        "Certain",
+        "Incompetent"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/vassago.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-vassago-reek",
+          "targetId": "rapture-reek",
+          "kind": "Colleague",
+          "note": "Hell's intake floor."
+        },
+        {
+          "id": "rapture-link-vassago-tamsin",
+          "targetId": "rapture-tamsin",
+          "kind": "Colleague",
+          "note": "He adopts her stolen-queue theory immediately."
+        }
+      ]
+    },
+    {
+      "id": "rapture-reek",
+      "name": "Reek",
+      "role": "Hell / intake",
+      "age": "30s",
+      "description": "Hell intake employee in his thirties. Has no opinions. Works on a grey corporate open-plan floor with a blank target board and deflating birthday balloons. Goes along with the theory that Heaven stole their queue.",
+      "traits": [
+        "Compliant",
+        "Uncurious",
+        "Bureaucratic"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/reek.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-reek-vassago",
+          "targetId": "rapture-vassago",
+          "kind": "Colleague",
+          "note": "Hell's intake floor."
+        },
+        {
+          "id": "rapture-link-reek-tamsin",
+          "targetId": "rapture-tamsin",
+          "kind": "Colleague",
+          "note": "Investigating the wrong thing together."
+        }
+      ]
+    },
+    {
+      "id": "rapture-tamsin",
+      "name": "Tamsin",
+      "role": "Hell / intake investigator",
+      "age": "20s",
+      "description": "Keen Hell intake employee in her twenties carrying a folder. Proposes that Heaven stole the damned to improve its numbers. Her idea becomes the working theory immediately. Investigates the wrong thing all season. Starts enjoying being a person.",
+      "traits": [
+        "Keen",
+        "Sincere",
+        "Mistaken"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/tamsin.jpg",
+      "relations": [
+        {
+          "id": "rapture-link-tamsin-vassago",
+          "targetId": "rapture-vassago",
+          "kind": "Colleague",
+          "note": "He adopts her stolen-queue theory immediately."
+        },
+        {
+          "id": "rapture-link-tamsin-reek",
+          "targetId": "rapture-reek",
+          "kind": "Colleague",
+          "note": "Investigating the wrong thing together."
+        }
+      ]
+    },
+    {
+      "id": "rapture-pat",
+      "name": "Pat",
+      "role": "Hell / undercover auditor",
+      "age": "70s disguise",
+      "description": "A demon disguised as an old lady in her seventies. Too much rouge, too many doilies, a tin containing only boiled sweets and a husband whose name changes. Uses water as bait for an audit. Keeps an arrangement going after violence but is frosty as after a parking dispute. Distinct from the woman at Number Fourteen; never substitute that woman's sheet for Pat.",
+      "traits": [
+        "Nosy",
+        "Overcommitted",
+        "Businesslike"
+      ],
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "rapture-field-officer",
+      "name": "Hell's third field officer",
+      "role": "Hell / basement interrogation",
+      "age": "",
+      "description": "A female demon with a blank chained in a cellar. Interrogating him about the missing damned, gets only the apology. Reads it as resistance by the system rather than a man doing what he is told. Has notes and thinks she is close. Surveillance grammar, never moving or close.",
+      "traits": [
+        "Certain",
+        "Thorough",
+        "Mistaken"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "rapture-angel-one",
+      "name": "First recovery angel",
+      "role": "Heaven / equipment recovery",
+      "age": "",
+      "description": "One of two angels sent down to recover the absconder's equipment. Smug rather than stupid and equally useless. Has permissions, not power. No name, age or independent backstory supplied.",
+      "traits": [
+        "Smug",
+        "Authorised",
+        "Useless"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": [
+        {
+          "id": "rapture-link-angel-one-angel-two",
+          "targetId": "rapture-angel-two",
+          "kind": "Colleague",
+          "note": "Recover the missing equipment."
+        }
+      ]
+    },
+    {
+      "id": "rapture-angel-two",
+      "name": "Second recovery angel",
+      "role": "Heaven / equipment recovery",
+      "age": "",
+      "description": "One of two angels sent down to recover the absconder's equipment. Smug rather than stupid and equally useless. Has permissions, not power. No name, age or independent backstory supplied.",
+      "traits": [
+        "Smug",
+        "Authorised",
+        "Useless"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": [
+        {
+          "id": "rapture-link-angel-two-angel-one",
+          "targetId": "rapture-angel-one",
+          "kind": "Colleague",
+          "note": "Recover the missing equipment."
+        }
+      ]
+    },
+    {
+      "id": "rapture-alan",
+      "name": "Alan",
+      "role": "Blank / Nina's passenger",
+      "age": "50s",
+      "description": "A blank in his fifties, fleece and sensible shoes, carrying a bag for life containing another bag. Nina picks him up at a wrong lockup. The apology is not a reliable test. Not automatically the chained man from the basement; no identity link has been supplied.",
+      "traits": [
+        "Boring",
+        "Compliant",
+        "Ordinary"
+      ],
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "rapture-absconder",
+      "name": "The absconder",
+      "role": "1980 / angel turned rockstar",
+      "age": "",
+      "description": "An angel who steals a terminal to live inside creation in 1980. Edits appearance, charisma, confidence and musical ability to the ceiling, leaves social status at default. Conjures a guitar; writes by entering tempo and key. Gives the detached tracker to a woman he loves. Nina's father. Dies five years later and declines undo with NO. Appearance and age are not locked.",
+      "traits": [
+        "Wilful",
+        "Charismatic",
+        "Decisive"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": [
+        {
+          "id": "rapture-link-absconder-nina",
+          "targetId": "rapture-nina",
+          "kind": "Child",
+          "note": "Nina never knew her father; the pendant was the terminal's tracker."
+        }
+      ]
+    },
+    {
+      "id": "rapture-woman-fourteen",
+      "name": "The Woman — Number Fourteen",
+      "role": "Number Fourteen / house rules",
+      "age": "50s",
+      "description": "Woman in her fifties with grey-brown hair in an untidy bun, rumpled tan housecoat over a floral blouse, and a Tesco bag stuffed with crumpled papers. Mid-sentence when the door opens. Plays her situation as house rules and a complaint to the council. The table set for six is never played. No visible listener. This supporting character is not Pat and is not identified as a blank or demon.",
+      "traits": [
+        "Matter-of-fact",
+        "Occupied",
+        "Insistent"
+      ],
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "image": "/images/rapture/sheets/crazed-woman.jpg",
+      "relations": []
+    },
+    {
+      "id": "rapture-rescued-blank",
+      "name": "The rescued blank",
+      "role": "Basement / surveillance window",
+      "age": "",
+      "description": "A man chained in a cellar by Hell's third field officer. Gives the apology, doing what he is told. Rescued by Danny and Jodie; talks about laminate flooring. Hell watches through him, putting the rescuers on its map. Do not assume this is Alan. No name or age supplied.",
+      "traits": [
+        "Compliant",
+        "Tedious",
+        "Ordinary"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "relations": []
+    }
+  ],
+  "notes": [
+    {
+      "id": "rapture-read-me",
+      "title": "Start here — scope, timing and image status",
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Production",
+        "Read first"
+      ],
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one numbered scene, with 13 shots. Its 175-second animatic is a working estimate, not a locked runtime. Each explicit pause remains exactly as written.\n\nTen new AI-generated stills cover shots 1–8, 11 and 12. Shots 9, 10 and 13 reuse reference stills and are marked Needs review; dedicated keyframes are still needed. All images are production studies, not approved final coverage. Existing character sheets and legacy thread images are references only. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "connections": [
+        {
+          "targetId": "rapture-ep4-number-fourteen",
+          "label": "Number Fourteen"
+        }
+      ]
+    },
+    {
+      "id": "rapture-bible-1",
+      "title": "Series bible — the cause",
+      "content": "In 1980 an angel absconds. He doesn't want to administer creation, he wants to live inside it — so he steals a terminal, comes down, and edits his own appearance, confidence, charisma and musical ability to the ceiling. He leaves social status at default and never touches it. He conjures a guitar, writes a song by entering tempo and key, and becomes a rock star. He snaps the tracker off the machine's casing and gives it to a girl he loves as a keepsake. Five years later he dies of a heart attack in a hotel room, and when the machine asks whether he'd like to undo it, he says no.\n\nThe terminal passes through an estate into unclaimed storage. Forty-five years later Martin, a failed musician who has spent his life collecting that rockstar's belongings, wins the lot at auction and brings home a beige box he assumes is period junk. His fourteen-year-old son Max asks to borrow something authentically old for an esports team poster. Max misspells his team name — The Raptors — as RAPTURES, types the tagline LET THE RAPTURES COMMENCE, and is presented with a parameter menu he takes for a character-stat card. The fields are moral criteria: mercy, honesty, restraint, charity. He shuffles the values between fields so the bars look balanced on the poster, sets them below average because in a game you want the enemies weak, and asks the machine to clear his team's past attempts — meaning two seasons of bad placements he doesn't want on the card. Then he minimises the window, which sends the signal.\n\nFour billion people are sorted by a child's layout decision. The criteria are decoupled from their values, so the sorting is not corrupt, it is arbitrary — and nobody on earth or in the afterlife can find the pattern, because there isn't one. Nobody is logged in above the dead angel to stop any of it.",
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-2",
+      "title": "Series bible — tone",
+      "content": "Black comedy. Dry, deadpan, English. Douglas Adams and Dirk Gently for the bureaucracy. The police are stupid in the manner of Dirk Gently or Common Side Effects — loose dialogue, wrong details noticed at length, long pauses, no punchlines.\n\nThis is not noir and not a tragedy. The visual styles differ by thread; the register never does. Every thread is the same comedy, shot differently. No pathos beats, no quiet melancholy inserts, no reflective endings, no grief. The grim material is texture.\n\nNobody in the series knows they're in an apocalypse — they know they're in a situation, and each character has translated the end of the world into the terms they already used. The cops got a promotion. Hell has a reporting problem. Grandma was vindicated. Martin's provenance has been ruined.\n\nLet the funny thing be the sad thing and don't choose between them. Let the bureaucracy be sincere — the guides genuinely need the branch of Christianity for the form. Nothing dramatic ever happens dramatically: the rapture, the violence and the correction all occur with no flash, no sound and no score, and the camera keeps operating as though the subject has merely walked out of frame.",
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-3",
+      "title": "Series bible — cosmology",
+      "content": "No God and no AI god. Separate universes for each religion, and an administration between them. Nobody ever meets God; nobody can get one on the phone. The whole thing has been running on an administrative layer left on autopilot — angels don't have power, they have permissions.\n\nLimbo is a cathedral: stone, vaulting, stained glass a hundred feet up throwing coloured light on everyone, ceiling vanishing into haze. And bolted into it, the admin — rope barriers screwed into marble, a ticket dispenser cable-tied to a pillar, folding tables with laminated signs, a modern LED departures board zip-tied over something ancient. Packed with four billion irritated people of every religion, all absorbed in the queue rather than the fact of being dead, none of them looking up. Four desks open. Now serving: 41. Sorting has stalled, so nothing moves, and the guides have no records on anyone.\n\nHell is a corporate open-plan floor. Grey carpet tiles, hot desks, one strip light out, a blank target board, somebody's deflating birthday balloons. Intake has collapsed. Everyone there is thick as fuck.\n\nLimbo is unaffected by time.",
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-4",
+      "title": "Series bible — the blanks (npcs)",
+      "content": "They always existed — accountants, the ones who bore you to death, the men who do everything their wife tells them and apologise if they get it wrong. Baseline. The rapture didn't damage them; a few started glitching afterwards, and Heaven and Hell now use them as cameras, because an unrendered person is an unguarded window.\n\nTheir tell is \"I can only apologise\" — a complete response with nothing behind it. No reason, no excuse, no defensiveness, nothing to argue with. Half of real humanity says it too, which makes every test for them worthless, and the cops will build a screening method out of it and never doubt it. Limbo has no records on them. Nobody can be told apart from a merely tedious man. Nicknames vary by faction: extras, blanks, monos, greycoats.",
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-5",
+      "title": "Series bible — season clock: the water",
+      "content": "Nobody's left who knows how to run a pump, and nobody is dosing the reservoirs. Fine in ep1 (one ignored complaint about pressure), brown by ep3, upstairs taps dead by ep5, dry by ep6, people dying of it dully by ep7. The apocalypse is a maintenance backlog. The only clean water left is sitting in houses, which is what makes the burglaries inevitable and what the cops are enforcing property law over.",
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-6",
+      "title": "Series bible — cast",
+      "content": "Sister Nina Doyle, 45. Runs St Jude's, a residential house for people the system gave up on. Stubborn, self-sufficient, won't accept help, lies fluently to authority, can re-plumb a building. Says a thing once and acts as though it's settled. Gentle with the genuinely broken, brutal with anyone coasting. Her faith is functional — God is her employer and she has views about the management. Daughter of the 1980 rockstar; never knew him, and assumed her mother's story was a fantasy. Half-angel, therefore ineligible for sorting, which she'd find annoying rather than tragic — forty-five years of vocation and it turns out to be nepotism. Treats divine instruction as an unreliable supplier sending vague orders, and complains upward. Other people start calling her a saint. She finds this ridiculous and can't get rid of them.\n\nPC Kath Bridges (white, 30s) and PC Ray Okonjo (black, 30s). Sincerely believe they were left behind to teach moral justice and can't remember who told them that. Terrible officers. Never frightened, never amazed; their emotional response to the apocalypse is mild grievance. They maintain paperwork religiously and cite superiors who no longer exist. They notice the wrong things with total commitment and follow them nowhere. Each thinks the other is the one who gets carried away.\n\nDanny, 40, and Jodie, 11. Scavenging for water. He has rules — nothing off anyone still alive — and she can already see the rules are going to get them killed. She's better at crime than he is and knows it, without cruelty. He can't let her be right because the rules are the last bit of parenting he's got. Her mother was raptured.\n\nMartin, 40s. Failed musician. Denim jacket correct in 1994, hair long at the back on principle, four guitars, nothing written in eleven years. Spent his life hunting the rockstar's belongings at estate sales. Owns the machine and has it filed as period junk. Can't reach his son. Aggrieved rather than grieving. Never finds out what the machine is.\n\nMax, 14. Flashbacks only, alive, unreachable. Not wracked with guilt over four billion people — worried he's in trouble. Trash-talks his mates while setting their values. The one character the series doesn't laugh at.\n\nBrenda (50s) and Gordon (60s). Limbo guides. Folding table, cardigans over robes, customer-service warmth, thirty years in post. Sincere. Bored. Cannot tell the religions apart any more.\n\nVassago (50s, short sleeves, lanyard, in charge, no idea), Reek (30s, no opinions), Tamsin (20s, keen, folder). Hell's intake. They don't notice the collapse for ages because they're worried about the balloons. Tamsin proposes that Heaven has stolen their damned for the numbers; it becomes the working theory instantly, and they investigate entirely the wrong thing all season. Tamsin starts enjoying being a person.\n\nPat, 70s. A demon running Hell's audit disguised as an old lady, because nobody suspects her and she can ask the most invasive questions on earth and have it read as nosiness. Disguise overcommitted: too many doilies, a tin containing only boiled sweets, too much rouge, a husband whose name changes. She has water, which is bait. She'll keep an arrangement going after violence and be a bit frosty about it, like a neighbour after a parking dispute.\n\nHell's third field officer. Has a blank chained in a cellar and is interrogating it to find out where the damned went. All she gets is the apology, which she reads as the system refusing to break. It's just a man doing what he's told. She has notes. She thinks she's close.\n\nTwo angels. Sent down to recover the absconder's missing equipment. Smug rather than stupid, and equally useless.\n\nAlan, 50s. A blank Nina picks up. Fleece, sensible shoes, a bag for life containing another bag.",
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-7",
+      "title": "Series bible — visual grammar — one per thread, never mixed",
+      "content": "- Nina — locked off, wide, deep focus, daylight, symmetrical. The camera never follows her; she walks into frames and out of them. Long lenses on the road. The only handheld in her thread is the vision.\n- Cops — static two-shot through the windscreen from the bonnet, plus a wide from across the car park. Sitcom frame, boring, symmetrical. Handheld only when they commit violence, then straight back to the identical framing as if nothing happened. No reaction cuts.\n- Danny & Jodie — handheld, tight, dark. Red practical sources only: a bike light, a torch with a red filter, a standby LED. Never a wide establishing shot; we never see a whole room.\n- Limbo — frontal, proscenium, Python staging. Vertical compositions with people tiny at the base, very low angles looking up into nothing, then hard cuts to the desk, flat and close. Every word at the desk reverberates four seconds; the guides talk over it, nobody else has learned to. Crowded.\n- Hell / demons on earth — surveillance. Fixed high-corner cameras, 4:3, faint burnt-in timecode, slight fisheye. Cut between fixed angles only. Never moves, never close.\n- Martin — fluorescent, flat, unlovely. Locked off, framings slightly off-centre. Institutional beige.\n- 1980 — warm, grainy, anamorphic, heavy practical sources through net curtains. Sodium and tungsten. Deliberately beautiful.\n- The visions — total break in style. Wrong aspect ratio, dropped frames, blown out, a hiss. Badly exposed home video, not white light and choral swell. She's receiving the tracker's recorded view, not God's plan.\n- Episode eight, the arcade — all grammars collapse. Neutral, ordinary, unstyled. The only location in the series shot in no style at all.",
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-8",
+      "title": "Series bible — connective objects",
+      "content": "Things travel between threads; characters mostly don't. The knife from the cold open, in the old woman's handbag, into the support group, and eventually to Jodie. The pendant, which is Nina's bearing and everyone else's tracker — every use lights her up for Heaven and Hell, so every clue costs her a head start. Max's minimised window, whose signal draws all four factions to the same postcode. The boring blank Danny and Jodie rescue, which Hell is watching through — so the kindest act in the series puts the group on Hell's map.\n\nNobody ever explains the whole thing to anyone. No catch-up scenes. Each character ends the season understanding about 30% of what happened. The audience is the only one holding all of it.",
+      "color": "sand",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-9",
+      "title": "Series bible — episodes",
+      "content": "1 — no mechanism revealed. The mugging. Nina at St Jude's and the rapture. The cops: birds, arrest ourselves, the taser. Nina's aftermath, the pendant, the first vision, she drives. Martin at the storage unit. Tag: 1980, ending on NO.\n\n2 — there's an afterlife and it's badly run. Limbo: the family, the branches of Christianity, the seventy-two virgins, the husband led away. Danny and Jodie's first raid. Hell's intake floor. Nina's first wrong lockup; she acquires Alan.\n\n3 — blanks, and both sides come down. Demons and angels arrive, badly. The blanks established. The cops invent a worthless test. Danny and Jodie recruited by the underground group. Brown water. Martin comes home to a collection and no son.\n\n4 — the old lady. Jodie on the settee, Danny in the kitchen, the knife and fork, the fork through the forearm, the bottles by the gate. Survivors' meetings begin; grandma and the dog is reported as proof they're here to maintain order. Someone mentions a nun.\n\n5 — the basement. The chained blank, the interrogation that goes nowhere, the rescue of a man who talks about laminate flooring. The cops pick up Danny's scent. Max flashback: the misspelling.\n\n6 — dry. The taps fail. The group turns on itself; a moment of clarity. Nina gets a bearing that isn't wrong and is found by people who've decided she's a saint. The cops arrest a demon and the paperwork won't stick. Max flashback: the stat bars.\n\n7 — convergence. Four parties, four wrong reasons, one postcode. Martin already there with the machine plugged in, trying to make it play something. Limbo: someone in administration realises nobody is auditing them either. Max flashback: \"just clear our past attempts.\"\n\n8 — the arcade. Everyone in one building, all wrong about why. Martin defends his collection from people trying to save the world. The cops arrest people in sequence. Demons and angels arrive simultaneously and each assumes the other is what they came for. Upstairs: Jodie gets through because she's eleven and ignored; Nina can't read the menu; Max knows where the fields are. The reversal won't authorise — Limbo administration is protecting the outage, because a stalled queue means nobody audits them. Nina wins an argument at a desk. Then the correction: not a rewind, but a bid on an auction lot, placed by a nun, outbidding Martin for the box the machine is in. ENTER. No flash, no sound.\n\nLast shots. The storage unit, shutter down, the machine unopened in the dark. The lot sticker: a number, a date, SOLD. Then Limbo, untouched by time, the queue exactly as it was, and a man at the desk saying he's just got one question. No epilogue, no faces, nothing resolved for anyone.",
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-bible-10",
+      "title": "Series bible — output format",
+      "content": "Numbered shots. Each shot: shot type, lens, how the camera is mounted, then a short plain description. Dialogue indented beneath the shot it falls in. Mark pauses in seconds where the pause is the joke. No scene-setting prose, no camera poetry, no explanation of subtext.",
+      "color": "sage",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Series bible",
+        "Source"
+      ],
+      "connections": []
+    },
+    {
+      "id": "rapture-continuity",
+      "title": "Continuity decisions and open questions",
+      "color": "rose",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "tags": [
+        "Continuity",
+        "Needs review"
+      ],
+      "connections": [],
+      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images."
+    }
+  ],
+  "brainstorm": [
+    {
+      "id": "rapture-object-knife",
+      "x": 60,
+      "y": 80,
+      "title": "The knife",
+      "content": "Cold open → old woman's handbag → support group → Jodie. A connective object, not a catch-up conversation.",
+      "color": "clay",
+      "tags": [
+        "Object",
+        "Continuity"
+      ],
+      "connections": [
+        "rapture-object-water"
+      ],
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "rapture-object-pendant",
+      "x": 460,
+      "y": 60,
+      "title": "The pendant / tracker",
+      "content": "Nina's bearing, everyone else's tracker. Each use costs a head start. Visions are recordings, not God's plan.",
+      "color": "rose",
+      "tags": [
+        "Object",
+        "Permissions"
+      ],
+      "connections": [
+        "rapture-object-window"
+      ],
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "rapture-object-window",
+      "x": 880,
+      "y": 80,
+      "title": "The minimised window",
+      "content": "RAPTURES → balanced stat bars → clear past attempts → minimise. The signal draws four factions to one postcode.",
+      "color": "sand",
+      "tags": [
+        "Cause",
+        "Convergence"
+      ],
+      "connections": [
+        "rapture-object-pendant",
+        "rapture-object-auction"
+      ],
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "rapture-object-water",
+      "x": 60,
+      "y": 390,
+      "title": "The water clock",
+      "content": "Ep1 pressure complaint ignored; ep3 brown; ep5 upstairs dead; ep6 dry; ep7 dull deaths. Clean water in houses drives crime and property enforcement.",
+      "color": "sage",
+      "tags": [
+        "Season clock"
+      ],
+      "connections": [
+        "rapture-object-knife",
+        "rapture-object-blank"
+      ],
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "rapture-object-blank",
+      "x": 460,
+      "y": 390,
+      "title": "The rescued blank",
+      "content": "The kindest act puts the group on Hell's map. A boring man discussing laminate flooring is an unguarded window.",
+      "color": "clay",
+      "tags": [
+        "Surveillance"
+      ],
+      "connections": [
+        "rapture-object-water",
+        "rapture-object-window"
+      ],
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "rapture-object-auction",
+      "x": 880,
+      "y": 390,
+      "title": "Correction ≠ rewind",
+      "content": "Nina outbids Martin for the box at auction. ENTER. No flash, sound or score. Machine unopened. Limbo queue unchanged, outside time.",
+      "color": "ink",
+      "tags": [
+        "Ending",
+        "Permissions"
+      ],
+      "connections": [
+        "rapture-object-window"
+      ],
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    }
+  ],
+  "moodboards": [
+    {
+      "id": "rapture-look-number-fourteen",
+      "title": "Number Fourteen — red is a source",
+      "sceneId": "rapture-ep4-number-fourteen",
+      "actId": "rapture-episode-4",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "description": "Ten newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room. References for shots 9, 10 and 13 are excluded from this board to avoid presenting duplicate images as new coverage.",
+      "items": [
+        {
+          "id": "look-rapture-ep4-shot-01",
+          "image": "/images/rapture/ep4/01-switch.jpg",
+          "caption": "The headlight switch — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-02",
+          "image": "/images/rapture/ep4/02-card.jpg",
+          "caption": "Rule two — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-03",
+          "image": "/images/rapture/ep4/03-knocks.jpg",
+          "caption": "It's very cold — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-04",
+          "image": "/images/rapture/ep4/04-mid-sentence.jpg",
+          "caption": "Mid-sentence — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-05",
+          "image": "/images/rapture/ep4/05-six-places.jpg",
+          "caption": "Six places — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-06",
+          "image": "/images/rapture/ep4/06-six-cups.jpg",
+          "caption": "Tuesday was Thursday — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-07",
+          "image": "/images/rapture/ep4/07-brown-water.jpg",
+          "caption": "Brown, then clear — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-08",
+          "image": "/images/rapture/ep4/08-biscuit-rule.jpg",
+          "caption": "Rule one is biscuit — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-11",
+          "image": "/images/rapture/ep4/11-council.jpg",
+          "caption": "About the council — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4-shot-12",
+          "image": "/images/rapture/ep4/12-passing-door.jpg",
+          "caption": "The light stays on — AI-generated study, not final coverage."
+        }
+      ]
+    },
+    {
+      "id": "rapture-look-nina",
+      "title": "Nina — locked off, daylight",
+      "description": "Wide, symmetrical, deep focus; she enters and leaves frames. Never follow her. Only the vision goes handheld.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": [
+        {
+          "id": "rapture-nina-ref-1",
+          "image": "/images/rapture/sheets/nina.jpg",
+          "caption": "Existing character sheet; not a camera setup."
+        },
+        {
+          "id": "rapture-nina-ref-2",
+          "image": "/images/rapture/a1s1-01.jpg",
+          "caption": "Legacy St Jude's reference; review against the current grammar before production."
+        }
+      ]
+    },
+    {
+      "id": "rapture-look-cops",
+      "title": "Cops — the identical two-shot",
+      "description": "Static windscreen two-shot from the bonnet and a wide across the car park. Handheld only for violence, then back. No reaction cuts.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": [
+        {
+          "id": "rapture-cops-ref-1",
+          "image": "/images/rapture/a2s1-01.jpg",
+          "caption": "Existing police sequence reference, not newly boarded coverage."
+        },
+        {
+          "id": "rapture-cops-ref-2",
+          "image": "/images/rapture/sheets/kath.jpg",
+          "caption": "Kath — existing identity sheet."
+        },
+        {
+          "id": "rapture-cops-ref-3",
+          "image": "/images/rapture/sheets/ray.jpg",
+          "caption": "Ray — existing identity sheet."
+        }
+      ]
+    },
+    {
+      "id": "rapture-look-limbo",
+      "title": "Limbo — cathedral plus admin",
+      "description": "Frontal proscenium, vast vertical scale and packed queues; hard cuts to the flat close desk. Four desks, serving 41. Four-second spoken reverberation. Time does not affect Limbo.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": [
+        {
+          "id": "rapture-limbo-ref-1",
+          "image": "/images/rapture/ep2s1-01.jpg",
+          "caption": "Legacy hall image: review cathedral scale, modern fittings and crowd against current bible."
+        },
+        {
+          "id": "rapture-limbo-ref-2",
+          "image": "/images/rapture/sheets/brenda.jpg",
+          "caption": "Brenda — existing identity sheet."
+        },
+        {
+          "id": "rapture-limbo-ref-3",
+          "image": "/images/rapture/sheets/gordon.jpg",
+          "caption": "Gordon — existing identity sheet."
+        }
+      ]
+    },
+    {
+      "id": "rapture-look-hell",
+      "title": "Hell — fixed surveillance",
+      "description": "Grey corporate office, blank target board, deflating balloons. 4:3, fixed high corner, slight fisheye, faint timecode. Never moves, never close. Same grammar for demons on earth.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": [
+        {
+          "id": "rapture-hell-ref-1",
+          "image": "/images/rapture/ep2s3-01.jpg",
+          "caption": "Legacy Hell image, reference only; verify 4:3 high-corner framing before use."
+        },
+        {
+          "id": "rapture-hell-ref-2",
+          "image": "/images/rapture/sheets/vassago.jpg",
+          "caption": "Vassago — existing identity sheet."
+        },
+        {
+          "id": "rapture-hell-ref-3",
+          "image": "/images/rapture/sheets/reek.jpg",
+          "caption": "Reek — existing identity sheet."
+        },
+        {
+          "id": "rapture-hell-ref-4",
+          "image": "/images/rapture/sheets/tamsin.jpg",
+          "caption": "Tamsin — existing identity sheet."
+        }
+      ]
+    },
+    {
+      "id": "rapture-look-martin",
+      "title": "Martin — flat fluorescent",
+      "description": "Locked off, slightly off-centre, institutional beige. Four guitars, no output in eleven years. Aggrieved, never grieving.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": [
+        {
+          "id": "rapture-martin-ref-1",
+          "image": "/images/rapture/sheets/martin.jpg",
+          "caption": "Existing Martin identity sheet; no dedicated new keyframe generated."
+        }
+      ]
+    },
+    {
+      "id": "rapture-look-1980",
+      "title": "1980 — the beautiful exception",
+      "description": "Warm, grainy, anamorphic. Heavy practical sodium and tungsten through net curtains. No dedicated reference selected yet; do not borrow the Crane red look.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": []
+    },
+    {
+      "id": "rapture-look-visions",
+      "title": "Visions — recorded, not divine",
+      "description": "Wrong aspect ratio, dropped frames, blown exposure and hiss. Bad home video from the tracker's recorded view. Not white light and choral swell. No dedicated reference selected yet.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": []
+    },
+    {
+      "id": "rapture-look-arcade",
+      "title": "Episode eight — no style",
+      "description": "Neutral, ordinary, unstyled. All threads' grammars collapse here, and only here. No dedicated reference selected yet.",
+      "createdAt": "2026-09-20T00:00:00.000Z",
+      "items": []
+    }
+  ],
+  "script": "LET THE RAPTURES COMMENCE\nEPISODE 4 — \"NUMBER FOURTEEN\"\n\nEXT./INT. NUMBER FOURTEEN — NIGHT\nCast: DANNY (40), JODIE (11), THE WOMAN (number 14, 50s)\nGrammar: handheld, tight, dark, red practical sources only.\n\n\n1. CU, 50mm, handheld — Danny's hand on the headlight switch. The red letterbox light on the wet side window. A 2-second pause. He turns the switch off.\n\n2. MS, 35mm, handheld — the cab. Danny, a laminated card in his hand.\n   DANNY: Number 14. The taps run there.\n   JODIE: The letterbox is on.\n   DANNY: So is the dashboard.\n   A 2-second pause.\n   DANNY: Rule two. No lights on the street.\n\n3. MS, 35mm, handheld — Danny on the step, red light off the letterbox on his face. He knocks three times.\n   A 3-second pause.\n   DANNY: (to the door) It's cold.\n   A 2-second pause.\n   DANNY: (to Jodie, over his shoulder) It's very cold.\n\n4. MS, 35mm, handheld — the door opens. THE WOMAN (50s, rumpled housecoat over a floral blouse, a Tesco bag stuffed with crumpled papers) holding the door for someone.\n   THE WOMAN: Oh, sorry, I'm mid-sentence.\n   She steps back into the hall, lets the door swing, and reopens it.\n\n5. MS, 35mm, handheld — the hall, over her shoulder. A table set for six, plates on it.\n   THE WOMAN: Number 14.\n   DANNY: That's what the card says.\n   THE WOMAN: I know what the card says.\n\n6. MS, 35mm, handheld — the kitchen, red light only: the letterbox light under the door, the red light of the kettle on. Six cups on the counter.\n   THE WOMAN: You want water.\n   DANNY: We're looking for water.\n   THE WOMAN: The tap. (points) Not the upstairs.\n   DANNY: Why not?\n   THE WOMAN: Dead most days.\n   A 2-second pause.\n   THE WOMAN: Was fine on Tuesday. That was Thursday.\n\n7. CU, 50mm, handheld — the tap. The water comes out brown. A 4-second pause of brown water. The water comes out clear.\n   JODIE: (quietly) It's doing it again.\n   DANNY: Rule nine. Write it down.\n   JODIE: I am.\n\n8. MS, 35mm, handheld — Jodie filling the bottle at the sink. The woman watching.\n   THE WOMAN: Biscuit.\n   A 2-second pause.\n   DANNY: We haven't broken any rules.\n   THE WOMAN: Rule one is biscuit.\n\n9. CU, 50mm, handheld — Danny. A slow blink. He looks at his card.\n   DANNY: I don't have a biscuit.\n   A 2-second pause.\n   JODIE: I have a biscuit.\n   Jodie produces a biscuit from Danny's jacket.\n   DANNY: That's from the tin.\n   JODIE: The tin's in the van. That's from my pocket.\n   Danny looks at the jacket. There is no pocket.\n   A 2-second pause.\n   Danny writes something on the card.\n\n10. MS, 35mm, handheld — the sink. Jodie offers the biscuit. The woman takes it, eats it, and hands the bottle back. It's full and cold and has the air out of it.\n    THE WOMAN: Don't come back on a Tuesday.\n    DANNY: Why not?\n    THE WOMAN: The pipes.\n    A 2-second pause.\n    JODIE: That's not a reason.\n    A 2-second pause.\n    THE WOMAN: It's a reason.\n\n11. MS, 35mm, handheld — the cab. Danny driving. Jodie holding the bottle.\n    JODIE: What was she saying?\n    DANNY: I think it was about the council.\n    JODIE: To who?\n    A 2-second pause.\n    DANNY: I don't know.\n\n12. MS, 35mm, handheld — the wet side panel of the van passing the door, no lights. The red letterbox light stays on.\n    A 2-second pause.\n\n13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.\n    THE WOMAN: — and that's why I'm telling the council, the parking, the noise, the —\n    A 2-second pause.\n    The door closes.\n    CUT TO BLACK.",
+  "shareId": null,
+  "createdAt": "2026-09-20T00:00:00.000Z",
+  "updatedAt": "2026-09-20T00:00:00.000Z"
+}

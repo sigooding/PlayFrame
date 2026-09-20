@@ -9,7 +9,10 @@
     "typecheck": "tsc --noEmit",
     "check:assets": "node scripts/check-assets.mjs",
     "verify:features": "node scripts/verify-undo-and-prompts.mjs --no-server",
-    "verify:features:live": "node scripts/verify-undo-and-prompts.mjs"
+    "verify:features:live": "node scripts/verify-undo-and-prompts.mjs",
+    "build:rapture": "node scripts/rapture/build-project.mjs",
+    "verify:rapture": "node scripts/verify-rapture.mjs",
+    "verify:rapture:browser": "node scripts/verify-rapture-browser.mjs"
   },
   "dependencies": {
     "@playwright/test": "^1.63.0",
