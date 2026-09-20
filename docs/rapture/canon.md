@@ -42,7 +42,10 @@ comedy in every thread; this is not noir and not a tragedy.
   how she opens the door is deliberately not shown, and the householders are never seen —
   upstairs is a thump and nothing more. Two wides in twenty-one shots, both handheld: the
   stairwell where nothing is visible, and the exit. It supersedes the legacy first-raid
-  board as coverage; the board stays reference only. Eleven of twenty-one shots carry AI studies.
+  board as coverage; the board stays reference only. Eleven of twenty-one shots carry AI studies, and one more was rejected for showing a gallery wall of
+strangers where the script calls for the same two people twenty times. Danny is an ADULT in this scene —
+the sheets and every accepted frame say so — and the model drifts him towards a boy in close-ups, which is
+why shot 15 is on the reject pile: Jodie's brother is her father's keeper, not a second child.
 - **Episode-one cops beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6
   shots, ninety seconds exactly as instructed. Their grammar with no compromise: static
   two-shot from the bonnet through the windscreen, the same framing three times, the same
@@ -82,7 +85,7 @@ comedy in every thread; this is not noir and not a tragedy.
   PRE-RAPTURE. The brother has an arcade, named flatly as the episode-eight location and not as a
   setup. **Standing rule from shot 22: the machine travels in the back of the bus**, with Martin's
   guitar case, from here on — every later bus frame shows it and none of them explains it. Shot 23
-  leaves the front door open and nobody shuts it. Nineteen of twenty-three shots carry AI studies.
+  leaves the front door open and nobody shuts it. Twenty-one of twenty-three shots carry AI studies.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -271,10 +274,13 @@ dusk, running continuously into Scene 2 at dusk into night, so no change was nee
 the note; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has
 had to sit in Max's room for the eight weeks the doorstep scene counts — which also settles
 what the empty bedroom in the doorstep scene is.
-Nineteen **kitchen studies** in `public/images/rapture/ep4-kitchen/` board the scene so far, one
-keyframe per shot; 12, 15, 20 and 22 are placeholders until their re-shoots land. Shot 15, the
-eight-second wait, is the only protected beat still unboarded, and it will be boarded as a held frame,
-not as a pretty one. Check them against his grammar and nothing else: flat overhead fluorescent, no
+Twenty-one **kitchen studies** in `public/images/rapture/ep4-kitchen/` board the scene, one keyframe
+per shot; 15 and 20 are the last two placeholders. **Screen direction is fixed in this room: Martin sits
+screen left, Nina screen right, in every frame, from the wide to the insert.** A frame that flips them is
+a re-shoot, not an alternate angle — shot 15 was rejected for exactly that, and it matters most there,
+because the eight-second wait has to read as the same held silence the audience has been sitting in.
+Shot 20 was rejected twice for the same class of error: the card is a 50mm medium on her alone as she
+takes her own water container off the table, and the model keeps putting Martin in the frame. Check them against his grammar and nothing else: flat overhead fluorescent, no
 warmth, no composition anyone would call a composition, locked off, and nothing in the room is
 permitted to look eerie — a beautiful frame here is a wrong frame. Shots 1, 3 and 6 are the same
 table from three set-ups and must not read as re-shoots of one another. Eight studies have been

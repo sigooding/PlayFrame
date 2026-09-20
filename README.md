@@ -29,11 +29,11 @@ workspace, not just a folder of images:
   — handheld, tight, dark, one red practical, never a clean wide — and it supersedes the
   legacy first-raid board as the coverage for that scene. Episode one gains a six-shot cops
   beat of exactly ninety seconds, static two-shot from the bonnet, ending the episode's comic
-  thread on a worse note than it started before the 1980 tag closes it. Eleven of the raid's
+  thread on a worse note than it started before the 1980 tag closes it. Sixteen of the raid's
   21 shots are boarded.
 - **Nina's thread:** the first wrong lockup (31 shots), **Episode four Scene 4 — the housing
   estate** (36 shots, all boarded), **Scene 5 — the doorstep** (32 shots, all boarded) and
-  **Scene 6 — the kitchen** (23 shots, 19 boarded so far) are numbered scenes in her locked-off
+  **Scene 6 — the kitchen** (23 shots, 21 boarded so far) are numbered scenes in her locked-off
   grammar. The estate is the first time her thread is shot at dusk; the doorstep is where her
   grammar and Martin's share one building and refuse to resolve, her symmetrical daylight on the
   street and his flat fluorescent indoors never blended in a single shot; the kitchen is his house

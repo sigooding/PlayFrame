@@ -4486,9 +4486,9 @@
     {
       "id": "rapture-ep2dj-11",
       "sceneId": "rapture-ep2-danny-jodie",
-      "title": "Twenty of the same two people (keyframe missing)",
+      "title": "Twenty of the same two people",
       "description": "Jodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people.",
-      "image": "",
+      "image": "/images/rapture/ep2-danny-jodie/11-twenty-photographs.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -4498,13 +4498,13 @@
       "style": "cinematic",
       "duration": 14,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Cornered, red-lit and too close together; a burglary shot like bad documentary",
       "characters": [
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 11-twenty-photographs.jpg is not in public/images/rapture/ep2-danny-jodie, so this card holds slot 11 of 21. Add the study and rebuild.\n\nVery dark hallway, her bike light swinging across a wall of framed photographs — twenty of them, the same two people. The red light on glass is the only beauty in the scene and the shot does not linger on it. The family being gone is stated by the photographs, not by dialogue.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. HANDHELD — INT. HALLWAY — 35mm, very dark\nJodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people."
+      "notes": "Very dark hallway, her bike light swinging across a wall of framed photographs — twenty of them, the same two people. The red light on glass is the only beauty in the scene and the shot does not linger on it. The family being gone is stated by the photographs, not by dialogue.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. HANDHELD — INT. HALLWAY — 35mm, very dark\nJodie goes toward the downstairs loo. Her bike light swings across a wall of framed photographs. Twenty of them, the same two people."
     },
     {
       "id": "rapture-ep2dj-12",
@@ -4532,9 +4532,9 @@
     {
       "id": "rapture-ep2dj-13",
       "sceneId": "rapture-ep2-danny-jodie",
-      "title": "Entirely unbothered (keyframe missing)",
+      "title": "Entirely unbothered",
       "description": "The cistern lid off. She dips a bottle and fills it, entirely unbothered.",
-      "image": "",
+      "image": "/images/rapture/ep2-danny-jodie/13-the-cistern.jpg",
       "shotType": "Insert",
       "movement": "Handheld",
       "lens": "85mm",
@@ -4544,20 +4544,20 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Cornered, red-lit and too close together; a burglary shot like bad documentary",
       "characters": [
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 13-the-cistern.jpg is not in public/images/rapture/ep2-danny-jodie, so this card holds slot 13 of 21. Add the study and rebuild.\n\nThe cistern lid off, she dips a bottle and fills it. No squeamishness, no gag, no reaction. This is the shot that proves she is better at this than he is, and it is played as maintenance.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. INSERT — 85mm, handheld\nThe cistern lid off. She dips a bottle and fills it, entirely unbothered."
+      "notes": "The cistern lid off, she dips a bottle and fills it. No squeamishness, no gag, no reaction. This is the shot that proves she is better at this than he is, and it is played as maintenance.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. INSERT — 85mm, handheld\nThe cistern lid off. She dips a bottle and fills it, entirely unbothered."
     },
     {
       "id": "rapture-ep2dj-14",
       "sceneId": "rapture-ep2-danny-jodie",
-      "title": "One dull thump (keyframe missing)",
+      "title": "One dull thump",
       "description": "A sound upstairs. One dull thump.",
-      "image": "",
+      "image": "/images/rapture/ep2-danny-jodie/14-one-dull-thump.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -4567,14 +4567,14 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Cornered, red-lit and too close together; a burglary shot like bad documentary",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 14-one-dull-thump.jpg is not in public/images/rapture/ep2-danny-jodie, so this card holds slot 14 of 21. Add the study and rebuild.\n\nKitchen. A sound upstairs: one dull thump. The frame does not tilt toward it and the focus does not rack. The audience hears it at exactly the same moment the two of them do.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD — INT. KITCHEN — 28mm\nA sound upstairs. One dull thump."
+      "notes": "Kitchen. A sound upstairs: one dull thump. The frame does not tilt toward it and the focus does not rack. The audience hears it at exactly the same moment the two of them do.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD — INT. KITCHEN — 28mm\nA sound upstairs. One dull thump."
     },
     {
       "id": "rapture-ep2dj-15",
@@ -4602,9 +4602,9 @@
     {
       "id": "rapture-ep2dj-16",
       "sceneId": "rapture-ep2-danny-jodie",
-      "title": "It's always a cat (keyframe missing)",
+      "title": "It's always a cat",
       "description": "The two of them, close, whispering.",
-      "image": "",
+      "image": "/images/rapture/ep2-danny-jodie/16-foot-of-the-stairs.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "24mm",
@@ -4614,21 +4614,21 @@
       "style": "cinematic",
       "duration": 18,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Cornered, red-lit and too close together; a burglary shot like bad documentary",
       "characters": [
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 16-foot-of-the-stairs.jpg is not in public/images/rapture/ep2-danny-jodie, so this card holds slot 16 of 21. Add the study and rebuild.\n\nFoot of the stairs, close, whispering. She uses the cat line as a shield and he dismantles it with one sentence: \"One time it wasn't a cat.\" No music under it, no push-in on either face.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 18s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. HANDHELD — INT. HALLWAY, FOOT OF THE STAIRS — 28mm\nThe two of them, close, whispering.\n   DANNY: Out. Now.\n   JODIE: It'll be a cat.\n   DANNY: Out.\n   JODIE: It's always a cat.\n   DANNY: (hissing) One time it wasn't a cat."
+      "notes": "Foot of the stairs, close, whispering. She uses the cat line as a shield and he dismantles it with one sentence: \"One time it wasn't a cat.\" No music under it, no push-in on either face.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 18s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. HANDHELD — INT. HALLWAY, FOOT OF THE STAIRS — 28mm\nThe two of them, close, whispering.\n   DANNY: Out. Now.\n   JODIE: It'll be a cat.\n   DANNY: Out.\n   JODIE: It's always a cat.\n   DANNY: (hissing) One time it wasn't a cat."
     },
     {
       "id": "rapture-ep2dj-17",
       "sceneId": "rapture-ep2-danny-jodie",
-      "title": "Red, nothing visible (keyframe missing)",
+      "title": "Red, nothing visible",
       "description": "Hold. Then another thump, and something falling over.",
-      "image": "",
+      "image": "/images/rapture/ep2-danny-jodie/17-the-stairwell.jpg",
       "shotType": "Wide",
       "movement": "Handheld",
       "lens": "35mm",
@@ -4638,11 +4638,11 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Cornered, red-lit and too close together; a burglary shot like bad documentary",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 17-the-stairwell.jpg is not in public/images/rapture/ep2-danny-jodie, so this card holds slot 17 of 21. Add the study and rebuild.\n\nUp the stairwell: red light, nothing visible, hold. Then another thump and something falling over. The frame must not resolve the upstairs into an image the audience could read — this is the scene's only horror beat and it is deliberately uninformative.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. HANDHELD — INT. STAIRWELL — 35mm, red, nothing visible\nHold. Then another thump, and something falling over."
+      "notes": "Up the stairwell: red light, nothing visible, hold. Then another thump and something falling over. The frame must not resolve the upstairs into an image the audience could read — this is the scene's only horror beat and it is deliberately uninformative.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide, and the one wide in the scene is still handheld. Two people framed too close together in somebody else's house. No score, no establishing shot, no geography the audience is allowed to keep.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot)\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. HANDHELD — INT. STAIRWELL — 35mm, red, nothing visible\nHold. Then another thump, and something falling over."
     },
     {
       "id": "rapture-ep2dj-18",
@@ -10455,9 +10455,9 @@
     {
       "id": "rapture-ep4kit-12",
       "sceneId": "rapture-ep4-kitchen",
-      "title": "The tap runs (keyframe missing)",
+      "title": "The tap runs",
       "description": "Neither of them says anything for a while. The tap runs.",
-      "image": "",
+      "image": "/images/rapture/ep4-kitchen/12-the-tap-runs.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -10467,14 +10467,14 @@
       "style": "cinematic",
       "duration": 14,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
       "characters": [
         "rapture-nina",
         "rapture-martin"
       ],
-      "notes": "KEYFRAME MISSING — 12-the-tap-runs.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 12 of 23. Add the study and rebuild.\n\nWide, off-centre, nobody speaking for a while, the tap still running brown in the background. Two people and a machine they are not looking at. Nothing in the frame is allowed to become meaningful.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. STATIC WIDE — 24mm, locked off, off-centre\nNeither of them says anything for a while. The tap runs."
+      "notes": "Wide, off-centre, nobody speaking for a while, the tap still running brown in the background. Two people and a machine they are not looking at. Nothing in the frame is allowed to become meaningful.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 14s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. STATIC WIDE — 24mm, locked off, off-centre\nNeither of them says anything for a while. The tap runs."
     },
     {
       "id": "rapture-ep4kit-13",
@@ -10688,9 +10688,9 @@
     {
       "id": "rapture-ep4kit-22",
       "sceneId": "rapture-ep4-kitchen",
-      "title": "It's coming (keyframe missing)",
+      "title": "It's coming",
       "description": "The bus. Nina loading. Martin comes out of the house with a holdall in one hand and, inexplicably, a guitar case in the other.",
-      "image": "",
+      "image": "/images/rapture/ep4-kitchen/22-the-guitar-case.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -10700,14 +10700,14 @@
       "style": "cinematic",
       "duration": 18,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Squared up at last, and no better for it",
       "characters": [
         "rapture-nina",
         "rapture-martin"
       ],
-      "notes": "KEYFRAME MISSING — 22-the-guitar-case.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 22 of 23. Add the study and rebuild.\n\nHer grammar at last, symmetrical on the street: the battered white Transit, Nina loading, Martin coming out with a holdall in one hand and a guitar case in the other. \"No.\" / \"It's coming.\" / \"It isn't.\" / \"It's coming.\" He gets in with it. Alan and the dog keep the passenger bench; the beige terminal and CRT are now strapped in the back of the bus and stay there for the rest of the series — every later bus frame must show them, and no scene explains it.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nHer grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. It is only allowed on the street, and it does not fix anything.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 18s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. EXT. CUL-DE-SAC — STATIC WIDE — 28mm, locked off, symmetrical — her grammar\nThe bus. Nina loading. Martin comes out of the house with a holdall in one hand and, inexplicably, a guitar case in the other.\n   NINA: No.\n   MARTIN: It's coming.\n   NINA: It isn't.\n   MARTIN: (getting in with it) It's coming."
+      "notes": "Her grammar at last, symmetrical on the street: the battered white Transit, Nina loading, Martin coming out with a holdall in one hand and a guitar case in the other. \"No.\" / \"It's coming.\" / \"It isn't.\" / \"It's coming.\" He gets in with it. Alan and the dog keep the passenger bench; the beige terminal and CRT are now strapped in the back of the bus and stay there for the rest of the series — every later bus frame must show them, and no scene explains it.\n\nSource lens: 28mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHer grammar: locked off, wide, deep focus, symmetrical, dead centre, flat daylight. It is only allowed on the street, and it does not fix anything.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 18s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. EXT. CUL-DE-SAC — STATIC WIDE — 28mm, locked off, symmetrical — her grammar\nThe bus. Nina loading. Martin comes out of the house with a holdall in one hand and, inexplicably, a guitar case in the other.\n   NINA: No.\n   MARTIN: It's coming.\n   NINA: It isn't.\n   MARTIN: (getting in with it) It's coming."
     },
     {
       "id": "rapture-ep4kit-23",
@@ -11225,7 +11225,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (32 shots, 377-second estimate), fully studied: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Scene 6 — the kitchen — is numbered and boarded (23 shots, 353-second estimate), with 19 AI studies on disk and 4 placeholder cards still to generate: his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. Episode two's Danny and Jodie raid is numbered from the supplied scene (21 shots, 260-second estimate), with 11 AI studies on disk and 10 placeholder cards still to generate, and episode one gains the cops' second beat (6 shots, 90 seconds exactly, as instructed), with 0 AI studies on disk and 6 placeholder cards still to generate; the raid supersedes the legacy first-raid board as the scene's coverage and the board stays reference only. Each explicit pause remains exactly as written.\n\nSupplied fixes recorded against the outlines: the 1980 prologue pockets the tracker at shot 12, with a single montage flash of him fastening it round a girl's neck, and shot 31 is cut so the sequence goes straight from ERROR to UNDO?; the episode-one washing-up board's shot 23 is corrected so the pendant is her mother's and she always had it, never found on Deborah's bedside; the episode-four cold open is already at dusk, running continuously into scene 2 at dusk into night; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has to have sat in Max's room for the eight weeks the doorstep scene counts.\n\nThe kitchen scene is where the auction stops being a purchase and becomes a grudge: 2011, a job lot, Martin outbidding his own brother, and an arcade named as the place the machine might be read. It states the cosmology once, in one word — \"Sorting\" — and never explains it. From its final frame the beige terminal and CRT travel in the back of the bus, with Martin's guitar case beside them, and every later bus frame has to show them.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (17 shots, 172-second estimate), fully studied, the episode-four Pat-and-Malcolm dusk open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied, the scout-hut scene 3 (17 shots, 159-second estimate), fully studied, and Scene 2 — the old-lady sequence — is numbered (35 shots, 305-second estimate), two grammars never blended within a shot, fully studied. The first wrong lockup is numbered (31 shots, 271-second estimate), boarded with AI-generated studies pending production review. Episode four's scene 4 — the housing estate at dusk (36 shots, 308-second estimate) — is numbered and boarded, fully studied; the hour is the only thing about her grammar that has changed. Scene 5 — the doorstep — is numbered and boarded (32 shots, 377-second estimate), fully studied: two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film. Scene 6 — the kitchen — is numbered and boarded (23 shots, 353-second estimate), with 21 AI studies on disk and 2 placeholder cards still to generate: his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. Episode two's Danny and Jodie raid is numbered from the supplied scene (21 shots, 260-second estimate), with 16 AI studies on disk and 5 placeholder cards still to generate, and episode one gains the cops' second beat (6 shots, 90 seconds exactly, as instructed), with 0 AI studies on disk and 6 placeholder cards still to generate; the raid supersedes the legacy first-raid board as the scene's coverage and the board stays reference only. Each explicit pause remains exactly as written.\n\nSupplied fixes recorded against the outlines: the 1980 prologue pockets the tracker at shot 12, with a single montage flash of him fastening it round a girl's neck, and shot 31 is cut so the sequence goes straight from ERROR to UNDO?; the episode-one washing-up board's shot 23 is corrected so the pendant is her mother's and she always had it, never found on Deborah's bedside; the episode-four cold open is already at dusk, running continuously into scene 2 at dusk into night; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has to have sat in Max's room for the eight weeks the doorstep scene counts.\n\nThe kitchen scene is where the auction stops being a purchase and becomes a grudge: 2011, a job lot, Martin outbidding his own brother, and an arcade named as the place the machine might be read. It states the cosmology once, in one word — \"Sorting\" — and never explains it. From its final frame the beige terminal and CRT travel in the back of the bus, with Martin's guitar case beside them, and every later bus frame has to show them.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 194 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md, docs/rapture/scenes/ep4-housing-estate.md, docs/rapture/scenes/ep4-doorstep.md, docs/rapture/scenes/ep2-first-wrong-lockup.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -11363,7 +11363,7 @@
         "Needs review"
       ],
       "connections": [],
-      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers. 4 kitchen keyframes remain outstanding: The tap runs, She doesn't push. She waits., Get a bag, It's coming.\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the empty bedroom is Max's, the bible naming him as Martin's fourteen-year-old, and no flashback is cut into the scene. Because the machine has had to sit in that room for the eight weeks the scene counts, the storage-unit auction is marked pre-rapture.\n\nDanny and Jodie's first raid is three weeks in and establishes only that they do this now and that she is better at it; nothing in the scene explains where the householders are, and upstairs is never seen or heard as anything other than a thump. Her competence is played as maintenance and is never dramatised: how she opens the door is deliberately not shown. The four-pint bottle he finds in the cupboard is the same prop that sits untouched in the cops' cup holder in episode one's second beat — the object travels, the threads do not meet, and no scene draws the line between them. Whether the photograph wall in shot 11 belongs to the family still living there or to a house they have already stripped is not supplied and is not asserted.\n\nThe cops' second beat is ninety seconds by instruction and its only job is to end episode one's comic thread on a worse note than it started; it sits before the 1980 tag and sets up nothing. Kath's answer is played with no hesitation and is not a punchline, and neither of them notices that the form conversation resolves nothing."
+      "content": "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.\n\nIn the episode-four cold open Graham is the blank chained under Pat's floor: the apology he gave Hell's intake with no pause at all now arrives from behind the locked cellar door at dusk, muffled and entirely calm, heard and never seen. He remains not Alan and has no surname; whether the episode-three interview's front room is Pat's front room, and whether the blank Danny and Jodie rescue in episode five is also Graham, has not been supplied and no link is asserted. His glitch — repeating the shot-10 clause to an empty room in shot 15 — is played completely flat with no sting, no cut and no camera move; the timecode burn-in carries the five-hour jump. Reek and Tamsin keep their intake-floor surveillance grammar in the field: 4:3 high-corner framing, slight fisheye and a visible advancing timecode.\n\nThe episode-three cold open names the recovery angels Hariel and Soqed; no further backstory is supplied. Their grammar is the opposite of Hell's: immaculate, centred, advert-like, no timecode. The unnamed MAN (60s, cardigan) between the pallets of bark chippings is a blank who belongs to nobody and joins no cast list. The two cold opens never share a frame with another faction; the episode-eight collapse to neutral coverage has not happened yet.\n\n3 legacy keyframes are missing from disk and hold placeholder slots: ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg.\n\nEpisode four scene 4 puts Nina's locked-off grammar at dusk for the first time; nothing in the scene explains the hour, the pendant or the estate. The child inferred by shot 15 and the boy in the school photograph in shot 29 are both uncast and are deliberately not Max, and the poster in shot 24 is correctly spelled while shot 7's vision keeps only its middle letters: that near-miss is the whole scene and is never resolved. The laid table in shot 21 is not explained, is never returned to and stays four places. The dog is in the bus throughout, is cast nowhere, and the dog that barks off shot 13 is not hers. 2 kitchen keyframes remain outstanding: She doesn't push. She waits., Get a bag.\n\nThe doorstep scene keeps Martin's collection, the auction terminal and the brown water exactly as the bible has them, and adds nothing: the machine is never named, the snapped-off badge gap is never mentioned by anybody in any scene, and whether the cul-de-sac she audits here is the same street as the dusk estate scene is not supplied and is not assumed. Martin's son remains alive, unreachable and unseen — the empty bedroom is Max's, the bible naming him as Martin's fourteen-year-old, and no flashback is cut into the scene. Because the machine has had to sit in that room for the eight weeks the scene counts, the storage-unit auction is marked pre-rapture.\n\nDanny and Jodie's first raid is three weeks in and establishes only that they do this now and that she is better at it; nothing in the scene explains where the householders are, and upstairs is never seen or heard as anything other than a thump. Her competence is played as maintenance and is never dramatised: how she opens the door is deliberately not shown. The four-pint bottle he finds in the cupboard is the same prop that sits untouched in the cops' cup holder in episode one's second beat — the object travels, the threads do not meet, and no scene draws the line between them. Whether the photograph wall in shot 11 belongs to the family still living there or to a house they have already stripped is not supplied and is not asserted.\n\nThe cops' second beat is ninety seconds by instruction and its only job is to end episode one's comic thread on a worse note than it started; it sits before the 1980 tag and sets up nothing. Kath's answer is played with no hesitation and is not a punchline, and neither of them notices that the form conversation resolves nothing."
     }
   ],
   "brainstorm": [
@@ -11765,9 +11765,34 @@
           "caption": "Not everyone — AI-generated study, not final coverage."
         },
         {
+          "id": "look-rapture-ep2dj-11",
+          "image": "/images/rapture/ep2-danny-jodie/11-twenty-photographs.jpg",
+          "caption": "Twenty of the same two people — AI-generated study, not final coverage."
+        },
+        {
           "id": "look-rapture-ep2dj-12",
           "image": "/images/rapture/ep2-danny-jodie/12-do-the-cistern.jpg",
           "caption": "Do the cistern, Jodie — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep2dj-13",
+          "image": "/images/rapture/ep2-danny-jodie/13-the-cistern.jpg",
+          "caption": "Entirely unbothered — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep2dj-14",
+          "image": "/images/rapture/ep2-danny-jodie/14-one-dull-thump.jpg",
+          "caption": "One dull thump — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep2dj-16",
+          "image": "/images/rapture/ep2-danny-jodie/16-foot-of-the-stairs.jpg",
+          "caption": "It's always a cat — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep2dj-17",
+          "image": "/images/rapture/ep2-danny-jodie/17-the-stairwell.jpg",
+          "caption": "Red, nothing visible — AI-generated study, not final coverage."
         }
       ]
     },
@@ -11844,6 +11869,11 @@
           "caption": "It's just a cursor — AI-generated study, not final coverage."
         },
         {
+          "id": "look-rapture-ep4kit-12",
+          "image": "/images/rapture/ep4-kitchen/12-the-tap-runs.jpg",
+          "caption": "The tap runs — AI-generated study, not final coverage."
+        },
+        {
           "id": "look-rapture-ep4kit-13",
           "image": "/images/rapture/ep4-kitchen/13-anybody-who-could.jpg",
           "caption": "Do you know anybody — AI-generated study, not final coverage."
@@ -11877,6 +11907,11 @@
           "id": "look-rapture-ep4kit-21",
           "image": "/images/rapture/ep4-kitchen/21-then-he-gets-up.jpg",
           "caption": "Then he gets up — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-22",
+          "image": "/images/rapture/ep4-kitchen/22-the-guitar-case.jpg",
+          "caption": "It's coming — AI-generated study, not final coverage."
         },
         {
           "id": "look-rapture-ep4kit-23",
