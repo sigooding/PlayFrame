@@ -212,7 +212,10 @@ looking at anybody. The terminal (18, 24) is a beige unbranded 1990s box, dusty,
 shot flat like a rental inventory photo. The pendant (22) is the only frame in the scene lit
 from inside the shot: a hard small filament, no bloom, no lens flare, no particles. The
 poster in 14 is the estate scene's shot-24 design — different house, same team, correctly
-spelled — so the audience can do the arithmetic.
+spelled — so the audience can do the arithmetic. Every close-up inside the bedroom has to carry the same room —
+  pale walls, grey bed, the dead CRT on the desk — because the model defaults to a generic spare
+  bedroom the moment the wide is not in the reference set; where the poster is not the subject it is
+  left out of frame rather than drawn half-legible, and no frame carries burnt-in words.
 ## Boundaries not silently resolved
 
 - Episode four scene 4 does not say which bedroom the pendant wanted, whether there was one, or
