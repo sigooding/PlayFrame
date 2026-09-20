@@ -12,16 +12,16 @@ comedy in every thread; this is not noir and not a tragedy.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
-- **Episode-four cold open — Pat's house at dusk:** [numbered scene](scenes/ep4-pat-cold-open.md),
+- **Episode-four cold open — Pat's house at dusk (moved to dusk to run continuously into Scene 2):** [numbered scene](scenes/ep4-pat-cold-open.md),
   16 surveillance shots of Pat and Malcolm keeping house while the light
-  goes, with Graham already chained under the floor: the photographs with
+  goes from dusk to dark, with Graham already chained under the floor: the photographs with
   three different men, the sweet tin, the cupboard of bottled water she
   never drinks, Malcolm washing to the elbow, the eight-line argument about
   method, Graham's apology from behind the locked cellar door, and one
   smile at an empty window. She is waiting for nothing; the burglars pick
-  her house by chance. Scene 2 — the old-lady sequence — is now
+  her house by chance. Runs continuously into Scene 2. Scene 2 — the old-lady sequence — is now
   [numbered](scenes/ep4-pat-house.md): 35 shots, two grammars never blended
-  within a shot. The dialogue-free Pat-alone v1 is preserved in
+  within a shot, dusk into night. The dialogue-free Pat-alone v1 is preserved in
   [archive](scenes/archive/ep4-pat-cold-open-v1.md). All sixteen shots carry
   AI studies.
 - **Episode-four Scene 2 — the old lady:** [numbered scene](scenes/ep4-pat-house.md),
@@ -53,8 +53,11 @@ comedy in every thread; this is not noir and not a tragedy.
   no further backstory is supplied. The unnamed MAN (60s, cardigan) between
   the pallets of bark chippings is a blank who belongs to nobody and joins no
   cast list. All fifteen shots carry AI studies.
+- **Episode One revised running order (42 min before tag):** mugging cold open, St Jude's (Nina Sc 1), cops first beat, washing up (Nina Sc 3 — pendant is mother's always had it, not Deborah's bedside), Martin's storage marked as pre-rapture flashback (machine eight weeks in Max's room), Danny and Jodie first appearance, cops second beat (90s, ends comic thread worse), then 1980 tag.
+- **Danny and Jodie — first appearance, three weeks in:** [numbered scene](scenes/ep1-danny-jodie.md), 21 handheld shots at dusk: fence, screwdriver, door, rules (nothing off anyone still alive, nothing off the dead that's got a name on it, no upstairs, check the cistern), chutney, four-pint bottle, going-out coat, wall of photographs, cistern, thump, out now/cat, stairwell, escape, header tank, don't tell anyone about the door, walking away with red bike light. Grammar: handheld, tight, dark, red practical light, never a clean wide. Establishes only two things: they do this now, and she's better at it.
+- **The cops, second beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6 static shots at night parked: 32mm windscreen two-shot (dashboard lit, Kath eating, Ray not, taser lad thirty-odd, pause six seconds), 24mm exterior wide across two bays empty street interior light on, 32mm two-shot form/no form, 85mm insert bottle untouched in cup holder, 32mm two-shot who's in charge now — Us (no hesitation), 24mm exterior same framing hold CUT. Grammar exactly static bonnet two-shot, same bottle untouched. Ninety seconds, ends comic thread worse.
 - **The first wrong lockup:** [numbered scene](scenes/ep2-first-wrong-lockup.md),
-  31 shots in episode two. Nina drives out on a pendant bearing, opens two wrong
+  31 shots in episode two. Nina drives out on a pendant bearing (mother's always had it), opens two wrong
   lockups, and acquires Alan. Thirty-one AI-generated studies board the scene;
   check minibus, dog and chair-count continuity before approving them.
 - **Original scene:** [v1 archive](scenes/archive/ep4-number-fourteen-v1.md).
@@ -173,9 +176,11 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
 ## Boundaries not silently resolved
 
 - Max: flashbacks only, alive and unreachable. Episode eight says he knows the
-  fields; no present-day reunion or delivery mechanism has been invented.
+  fields; no present-day reunion or delivery mechanism has been invented. Prologue fix: shot 12 pockets tracker plus flash montage of fastening round girl's neck; shot 31 cut straight from ERROR to UNDO?.
 - 1980, death five years later and forty-five years later are retained as written;
-  the present-day calendar year is not inferred. Nina remains 45.
+  the present-day calendar year is not inferred. Nina remains 45. Pendant is her mother's, always had it, not found on Deborah's bedside (Ep1 Sc3 shot 23 fix).
+- Martin's auction/storage scene is marked as pre-rapture flashback: machine must have been in Max's room for eight weeks by present.
+- Episode-four cold open moved to dusk to run continuously into Scene 2.
 - The chained/rescued blank is not automatically Alan. The third field officer
   and two recovery angels remain unnamed.
 - Episode-four Number Fourteen has a *locally intermittent* upstairs tap; the

@@ -28,8 +28,8 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 22);
-assert.equal(project.frames.length, 341, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat and 17 scout-hut shots plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
-assert.equal(project.scenes.length, 38);
+assert.equal(project.frames.length, 368, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat and 17 scout-hut shots plus 21 Danny and Jodie and 6 cops second beat plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.scenes.length, 39);
 assert.equal(project.moodboards.length, 10);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
 const lockup = project.frames.filter(f => f.sceneId === "rapture-ep2-alan");
@@ -50,7 +50,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 341);
+assert.equal(imported.frames.length, 368);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -114,7 +114,7 @@ assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-danny-jodie", "rapture-ep1-cops-second"]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
 assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");
@@ -125,7 +125,7 @@ pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/M
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
 assert.equal(new Set(legacy.map(f => f.sceneId)).size, 9);
-assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 16);
+assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 18);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
 for (const frame of project.frames) {
@@ -273,9 +273,25 @@ assert(scoutHut.every(f => f.characters.every(id => id === "rapture-danny" || id
 assert(project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat-cold-open") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") && project.scenes.findIndex(s2 => s2.id === "rapture-ep4-pat") < project.scenes.findIndex(s2 => s2.id === "rapture-ep4-scout-hut"), "Episode four runs Pat, then the old-lady outline, then the scout hut");
 pass("scout hut numbered 1-17 in order, all handheld, one AI study per shot");
 
+// Episode One new scenes — Danny and Jodie (21) and Cops second beat (6)
+const dannyJodie = project.frames.filter(f => f.sceneId === "rapture-ep1-danny-jodie");
+const copsSecond = project.frames.filter(f => f.sceneId === "rapture-ep1-cops-second");
+assert.equal(dannyJodie.length, 21, "Danny and Jodie first appearance is 21 shots");
+assert.equal(copsSecond.length, 6, "Cops second beat is 6 shots");
+assert.equal(dannyJodie.reduce((n, f) => n + f.duration, 0), 148, "Danny and Jodie total 148s");
+assert.equal(copsSecond.reduce((n, f) => n + f.duration, 0), 90, "Cops second beat total 90s");
+assert(dannyJodie.every(f => f.movement === "Handheld"), "Danny and Jodie all handheld");
+assert(copsSecond.every(f => f.movement === "Static"), "Cops second beat all static");
+assert(project.scenes.find(s => s.id === "rapture-ep1-danny-jodie").actId === "rapture-episode-1", "Danny and Jodie in episode one");
+assert(project.scenes.find(s => s.id === "rapture-ep1-cops-second").actId === "rapture-episode-1", "Cops second beat in episode one");
+assert(project.scenes.findIndex(s => s.id === "rapture-ep1-storage") < project.scenes.findIndex(s => s.id === "rapture-ep1-danny-jodie"), "Martin storage (pre-rapture flashback) precedes Danny and Jodie");
+assert(project.scenes.findIndex(s => s.id === "rapture-ep1-danny-jodie") < project.scenes.findIndex(s => s.id === "rapture-ep1-cops-second"), "Danny and Jodie precedes cops second beat");
+assert(project.scenes.findIndex(s => s.id === "rapture-ep1-cops-second") < project.scenes.findIndex(s => s.id === "rapture-ep1-no"), "Cops second beat precedes 1980 tag");
+pass("Episode One revised running order: Danny and Jodie (21) and cops second beat (6) boarded, Martin marked pre-rapture flashback");
+
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 271 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 271 + 148 + 90 + 197 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -415,7 +431,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 341);
+      assert.equal(opened.frames.length, 368);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -428,7 +444,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 341);
+      assert.equal(restored.frames.length, 368);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');
