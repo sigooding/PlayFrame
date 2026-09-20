@@ -63,6 +63,8 @@ export interface Scene {
   kind?: SceneKind;
   /** the light this scene is lit in — inherited by its shots unless a shot overrides it */
   lighting?: Lighting;
+  /** Specific practical sources / restrictions; overrides generic lighting-library prose in prompts. */
+  lightingNotes?: string;
   /** default visual style for this scene's shots — inherited unless a shot overrides it */
   style?: string;
 }
@@ -89,12 +91,16 @@ export interface StoryFrame {
   shotType: ShotType;
   movement: CameraMovement;
   duration: number;
+  /** Editorial playback estimate, not a locked shooting duration. */
+  durationIsEstimate?: boolean;
   status: FrameStatus;
   notes: string;
   characters?: string[];
   angle?: CameraAngle;
   lens?: Lens;
   lighting?: Lighting;
+  /** Specific practical sources / restrictions; overrides generic lighting-library prose in prompts. */
+  lightingNotes?: string;
   /** the visual style this shot is rendered in — persisted so storyboards remember their look */
   style?: string;
   transition?: Transition;

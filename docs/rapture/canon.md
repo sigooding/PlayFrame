@@ -1,50 +1,96 @@
-# RAPTURE — canon (locked)
+# LET THE RAPTURES COMMENCE — canon and production index
 
-**Master style document: `show-bible.md`** — LET THE RAPTURES COMMENCE, 8-part British
-black comedy. That document is the source of truth for tone, cast, cosmology, the season
-clock and the per-thread visual grammars. Scenes live in `scenes/`.
+**Source of truth: [show-bible.md](show-bible.md), the full current series prompt.**
+8 × 45min British black comedy. The latest series prompt supersedes conflicting
+lighting, framing or story assumptions in older boards. The tone is the same dry
+comedy in every thread; this is not noir and not a tragedy.
 
-A social-realist frame under a black-comedy engine: the left-behind world runs on
-bureaucracy — Limbo intake halls, one form per family, a Hell intake floor — and on the
-red light in the letterbox of every raptured house. The grim is texture, never pathos.
+## Current working material
 
-## Characters — locked
+- **Series bible:** the complete cause, tone, cosmology, blanks, water clock, cast,
+  nine visual grammars, connective objects, eight episode outlines and final shots.
+- **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
+  13 shots in episode four. This remains a supporting water-stop scene, **not** the
+  Pat / fork / gate sequence in the current episode outline.
+- **Original scene:** [v1 archive](scenes/archive/ep4-number-fourteen-v1.md).
+  The current version tightens shot 1 to a CU/50mm of the headlight switch and
+  shot 12 to a MS/35mm of the passing van panel. Dialogue, beats and every explicit
+  pause are unchanged. No white headlight beam is shown.
+- **App bundle:** `public/projects/let-the-raptures-commence.json`. Rebuild with
+  `npm run build:rapture`; verify with `npm run verify:rapture`.
+- **Production plan:** `scripts/rapture/plan.mjs`. Holds cast, links, outline
+  locations, reference selection and editorial timing estimates, not a second script.
 
-- **Danny Crane** — 40. Father. The one left behind. Olive waxed jacket, canvas satchel,
-  folding knife. Sheet: `public/images/rapture/sheets/danny.jpg`
-- **Jodie Crane** — 11. Daughter. Headlamp on the collar of her hoodie, backpack, too
-  old for the things she's seen. Sheet: `public/images/rapture/sheets/jodie.jpg`
-- **Jodie's mother — raptured, judged worthy.** Locked. This gives Jodie her line:
-  *"Her mum was judged worthy, and her dad wasn't."*
-- **Surname: CRANE.** Locked. The crane is the one bird that rises — it sits on a family
-  where the mother went up and the father stayed. And it reads clean in the one place it
-  has to: a police file. **CRANE, DANNY. CRANE, JODIE.** (Rejected: Marsh, Harker.)
+## Retained identity details
 
-## Visual canon
+- **Danny Crane — 40.** Father, left behind. Olive waxed jacket, canvas satchel.
+  Reference: `public/images/rapture/sheets/danny.jpg`.
+- **Jodie Crane — 11.** Daughter. Hoodie, collar headlamp, backpack. Her mother
+  was raptured and judged worthy. The surname **CRANE** remains locked.
+  Reference: `public/images/rapture/sheets/jodie.jpg`.
+- **The Woman at Number Fourteen — 50s.** Rumpled housecoat, floral blouse,
+  Tesco bag of crumpled papers. The sheet-27 character, **not Pat**. No blank,
+  demon or afterlife identity has been assigned to her.
+  Reference: `public/images/rapture/sheets/crazed-woman.jpg` (legacy filename).
+- **Van:** weathered 1990s Ford Transit, faded grey-green. Unify number plates
+  before approving final coverage. Check jacket-pocket continuity in shot 9.
 
-- **All night** for the Crane material: sodium orange, desaturated teal, wet surfaces.
-- **Red is a practical, never a look** — the letterbox light in a raptured house, the
-  photo wall. Red means *the family is gone and something is still on*.
-- **The Crane van**: weathered 1990s Ford Transit, faded grey-green, old number plates.
-  Prop note: unify the plates across all Crane van stills before the shot list is final.
-- 2.39:1 letterbox for the wide and horror beats; clean 16:9 for the cab interiors.
+## Current Crane grammar
 
-## Rulings
+Handheld, tight, dark. **Red practical sources only. Never a wide establishing
+shot; never a whole room.** Red is a source, not a colour grade. For Number Fourteen:
+letterbox, red dash indicators, kettle indicator. Jodie's collar headlamp stays off.
+Cab coverage is handheld from inside, not the cops' static bonnet two-shot.
 
-- **w3-08** (the red light through the window): the figure standing in the red light
-  outside is **kept**. It is not a character we know; it stays ambiguous. It is the show's
-  warning that raptured houses are not empty.
+The former sodium-orange / desaturated-teal look and wide establishing coverage
+are **superseded**, including in legacy Wave 3 images. They are not newly approved
+coverage merely because the files remain in the repository.
 
-## Wave boards (stills in `public/images/rapture/`)
+## New images and honest status
 
-- **Episode One** — cold open (`shot-01`–`19`, the alley and the reversal, title card
-  `shot-13`), St Jude's (`a1s1`), washing up (`a1s3`), storage facility (`a1s4`),
-  car park / police (`a2s1`).
-- **Episode Two** — Limbo reception hall (`ep2s1`), the stranger's house / the raid
-  (`ep2s2`), Hell intake floor (`ep2s3`). Danny and Jodie are in the raid.
-- **Wave 3 — the horror and the denouement** (`w3-01`–`11`, all night, starting in the
-  old van): the closed storage lot → the cab, a red light ahead → the country road →
-  the dark terraced house with the red letterbox → the two of them in the headlight
-  beam → Danny's face in the letterbox red (the horror beat) → the red light through
-  the window, the figure outside → driving away → asleep in the cab → the van alone
-  on the black plain.
+Ten **AI-generated storyboard studies** in `public/images/rapture/ep4/` cover shots
+1–8, 11 and 12. They are draft references pending production review, not finished
+photography. Check unwanted fill, practical-source motivation, hand anatomy,
+prop counts, van geography and bottle air gap before approving them.
+
+Shots **9, 10 and 13** use clearly labelled references from shots 2, 8 and 4;
+these have **Needs review** status. Dedicated keyframes are still needed. The
+image service's per-turn generation cap was reached; no duplicates are counted
+as newly generated coverage. Unpictured cast roles use the app's initials avatar.
+
+Only written pauses are locked. The board's **~175 seconds** is an editorial
+playback estimate for this scene, **not** a finished episode runtime. Other scenes
+are explicitly labelled outlines. There are not eight finished 45-minute scripts.
+
+## Boundaries not silently resolved
+
+- Max: flashbacks only, alive and unreachable. Episode eight says he knows the
+  fields; no present-day reunion or delivery mechanism has been invented.
+- 1980, death five years later and forty-five years later are retained as written;
+  the present-day calendar year is not inferred. Nina remains 45.
+- The chained/rescued blank is not automatically Alan. The third field officer
+  and two recovery angels remain unnamed.
+- Episode-four Number Fourteen has a *locally intermittent* upstairs tap; the
+  series-wide upstairs failure remains episode five.
+- The correction is an **auction bid, not a rewind**. Limbo is outside time and
+  keeps its queue. No epilogue or resolved faces are added.
+
+## Legacy boards (kept for reference)
+
+- Episode one: cold open (`shot-01`–`19`), St Jude's (`a1s1`), washing up (`a1s3`),
+  storage facility (`a1s4`), police/car park (`a2s1`).
+- Episode two: Limbo (`ep2s1`), first raid (`ep2s2`), Hell (`ep2s3`).
+- Wave 3 (`w3-*`): older horror/night sequence. Its prior framing and lighting are
+  not the current Crane grammar. The ambiguous figure in `w3-08` remains an
+  earlier visual idea, not an added character or listener in Number Fourteen.
+
+## Opening the workspace
+
+Fresh installations seed the series alongside the existing samples. In an existing
+workspace, choose **Templates → Let the Raptures Commence → Open series workspace**.
+This is idempotent: the fixed project ID is inserted only if absent. Existing edits,
+other projects and public share state are never replaced. Deletion is respected until
+you explicitly open the bundled workspace again.
+
+Alternatively, import `public/projects/let-the-raptures-commence.json` through the
+existing **Import project** control to create a separate editable copy.

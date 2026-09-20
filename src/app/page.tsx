@@ -1,6 +1,7 @@
 import Studio from "@/components/studio";
 import { listProjects } from "@/lib/projects";
 import { PROJECT_TABS } from "@/lib/tabs";
+import { raptureProject } from "@/lib/rapture";
 
 export const dynamic = "force-dynamic";
 
@@ -14,5 +15,5 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
   const wanted = Array.isArray(params.tab) ? params.tab[0] : params.tab;
   const match = PROJECT_TABS.find(tab => tab.slug === wanted?.toLowerCase() || tab.name.toLowerCase() === wanted?.toLowerCase());
   const project = Array.isArray(params.project) ? params.project[0] : params.project;
-  return <Studio initialProjects={projects} initialTab={match?.name} initialProjectId={project} />;
+  return <Studio initialProjects={projects} initialTab={match?.name} initialProjectId={project || projects.find(p => p.id === raptureProject.id)?.id} />;
 }

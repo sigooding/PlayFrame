@@ -19,7 +19,7 @@ export function Screenplay({ project, onSave, onAddScene, onEditScene, onImport,
   const [draft, setDraft] = useState(project.script);
   const [saveState, setSaveState] = useState<"saved" | "saving" | "error">("saved");
   const [focused, setFocused] = useState(false);
-  const [selectedScene, setSelectedScene] = useState(project.scenes[0]?.id || "");
+  const [selectedScene, setSelectedScene] = useState(project.scenes.find(scene => project.script.includes(scene.location))?.id || project.scenes[0]?.id || "");
   const [history, setHistory] = useState<HistoryEntry[]>([{ text: project.script, sel: [0, 0] }]);
   const [historyIndex, setHistoryIndex] = useState(0);
 

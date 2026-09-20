@@ -11,7 +11,54 @@ npx drizzle-kit push         # creates the film_projects table
 npm run dev                  # http://localhost:3000
 ```
 
-The first load seeds a sample film ("The Last Light") so every screen has something in it.
+The first load seeds the existing sample projects plus **Let the Raptures Commence**.
+The series opens by default when present; an explicit `?project=<id>` always wins.
+
+## Let the Raptures Commence
+
+The current **8 × 45min British black comedy** series prompt is integrated as an editable
+workspace, not just a folder of images:
+
+- Eight episode outlines and 32 scene/outline entries (not eight completed scripts).
+- Twenty cast entries with reciprocal family/colleague links; the woman at Number
+  Fourteen is kept separate from Pat, and the rescued blank from Alan.
+- **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
+  ten new AI-generated studies and three explicitly labelled reference slots.
+- The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
+- Exact scripted pauses; other durations are visibly marked as **working estimates**.
+  Scene/shot lighting direction survives save, import, CSV and prompt generation.
+
+In an existing workspace: **Templates → Let the Raptures Commence → Open series workspace**.
+This inserts the bundled project only if absent; re-opening it never overwrites edits,
+other projects or share settings. Deletion is respected until you explicitly open it again.
+The built-in project ID is `74a9cb34-9e80-4a04-a614-000000000014`.
+
+For an independent copy, import
+[`public/projects/let-the-raptures-commence.json`](public/projects/let-the-raptures-commence.json)
+using **Import project**. No external image host or credentials are needed.
+Export → Project backup preserves subsequent edits.
+
+Sources and continuity decisions are indexed in [`docs/rapture/canon.md`](docs/rapture/canon.md).
+The latest bible supersedes the old sodium/teal and wide Crane boards. The two old
+wide framings in Number Fourteen are tightened; all dialogue and pauses remain unchanged,
+and the original scene is archived. New images are **draft AI studies**, not approved coverage;
+shots 9, 10 and 13 still need dedicated keyframes.
+
+```bash
+npm run build:rapture             # regenerate the JSON from the bible, script and production plan
+npm run verify:rapture            # offline fidelity/schema/assets/prompts/CSV/persistence checks
+npm run verify:rapture -- --live   # also check every app tab and image; dev server must be running
+npm run verify:rapture:browser     # real desktop/mobile form, template and reload checks
+```
+
+The browser check needs `npx playwright install chromium` (or `BROWSER_EXECUTABLE_PATH`).
+It edits only a disposable imported copy and removes it afterwards. Screenshots go to
+ignored `artifacts/`; the offline check and production build run in CI.
+
+`NODE_ENV=test FRAME_LOCAL_DB_FILE=...` selects an isolated file for tests of the
+no-Postgres adapter. The default remains `/tmp/arena_projects.json`; export a backup
+for work you need to retain outside that local runtime. The committed series bundle is
+always reproducible and never depends on that temporary file.
 
 ## If images don't appear after cloning / uploading to GitHub
 

@@ -168,8 +168,8 @@ img{display:block;max-width:100%}
 .project-header-actions .button-primary{padding:8px 16px}
 .save-status{font-size:10.7px;color:#87977a;display:flex;align-items:center;gap:5px;margin-top:26px}
 .save-status svg{color:#8b9a7e}
-.project-tabs{display:flex;align-items:stretch;gap:25px;border-bottom:1px solid #e3e8dc;margin-top:20px;min-height:43px}
-.project-tabs>button{display:flex;align-items:center;gap:7px;position:relative;padding:0 1px 13px;color:#7f8d70;font-size:12.4px;white-space:nowrap}
+.project-tabs{display:flex;align-items:stretch;gap:25px;overflow-x:auto;scrollbar-width:thin;border-bottom:1px solid #e3e8dc;margin-top:20px;min-height:43px}
+.project-tabs>button{display:flex;flex-shrink:0;align-items:center;gap:7px;position:relative;padding:0 1px 13px;color:#7f8d70;font-size:12.4px;white-space:nowrap}
 .project-tabs>button>svg{stroke-width:1.6}
 .project-tabs>button:hover{color:var(--green)}
 .project-tabs>button.active{color:#3c5d3f;font-weight:600}
@@ -976,3 +976,7 @@ img{display:block;max-width:100%}
 }
 
 .prompt-style-note { display: block; margin-top: 4px; font-size: 11px; color: #6b7280; }
+
+/* Editorial estimates stay distinct from scripted pauses. */
+.estimate-checkbox { display:flex; align-items:center; gap:8px; font-size:12px; line-height:1.5; }
+.estimate-checkbox input { width:15px; height:15px; flex-shrink:0; }

@@ -37,5 +37,8 @@ jobs:
       - name: Feature verification (prompt models, 30 styles, undo/redo)
         run: npm run verify:features
 
+      - name: Rapture canon, assets, prompts and persistence
+        run: npm run verify:rapture
+
       - name: Production build
         run: npm run build

@@ -8,7 +8,10 @@ const globalForDb = globalThis as typeof globalThis & {
   __arenaNextJsPostgresqlPool?: Pool;
 };
 
-const DB_FILE = "/tmp/arena_projects.json";
+// Isolate test fixtures without making production file tracing depend on an arbitrary environment path.
+const DB_FILE = process.env.NODE_ENV === "test" && process.env.FRAME_LOCAL_DB_FILE
+  ? process.env.FRAME_LOCAL_DB_FILE
+  : "/tmp/arena_projects.json";
 
 function loadProjects(): Record<string, unknown>[] {
   try {

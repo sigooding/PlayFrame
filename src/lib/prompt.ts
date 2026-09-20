@@ -44,8 +44,9 @@ const sentence = (value: string) => { const v = clean(value).replace(/\.{2,}/g, 
 
 export function describeLocation(location: string) {
   const l = clean(location);
-  const prefix = /^INT\.?\/EXT\.?/i.test(l) ? "interior and exterior" : /^INT/i.test(l) ? "interior" : /^EXT/i.test(l) ? "exterior" : "";
-  const place = l.replace(/^(INT\.?\/EXT\.?|INT\.?|EXT\.?)\s*/i, "").toLowerCase();
+  const mixed = /^(?:INT\.?\/EXT\.?|EXT\.?\/INT\.?)/i;
+  const prefix = mixed.test(l) ? "interior and exterior" : /^INT/i.test(l) ? "interior" : /^EXT/i.test(l) ? "exterior" : "";
+  const place = l.replace(/^(INT\.?\/EXT\.?|EXT\.?\/INT\.?|INT\.?|EXT\.?)\s*/i, "").toLowerCase();
   return prefix ? `${prefix}, ${place}` : place;
 }
 
@@ -78,10 +79,12 @@ function parts(project: FilmProject, frame: StoryFrame, ctx: PromptContext, entr
   const shot = `${shotGuide[frame.shotType]?.prompt || `${frame.shotType.toLowerCase()} shot`}${frame.angle && frame.angle !== "Eye level" ? `, ${angleDescriptions[frame.angle]}` : ""}${frame.lens ? `, ${frame.lens} lens` : ""}`;
   const camera = movementDescriptions[frame.movement] || frame.movement.toLowerCase();
   const setting = ctx.scene ? `${describeLocation(ctx.scene.location)} at ${timeOfDay(ctx.scene.time)}` : "";
-  const light = frame.lighting
-    ? lightingGuide[frame.lighting]?.prompt || `${frame.lighting.toLowerCase()} lighting`
-    : (ctx.scene && /dawn|morning|sunset|dusk/i.test(ctx.scene.time) ? "soft golden natural light" : "natural lighting");
-  const castIds = frame.characters?.length ? frame.characters : (ctx.scene?.characters || []);
+  const lighting = frame.lighting || ctx.scene?.lighting;
+  const light = clean(frame.lightingNotes) || clean(ctx.scene?.lightingNotes) || (lighting
+    ? lightingGuide[lighting]?.prompt || `${lighting.toLowerCase()} lighting`
+    : (ctx.scene && /dawn|morning|sunset|dusk/i.test(ctx.scene.time) ? "soft golden natural light" : "natural lighting"));
+  // An explicit empty cast is an insert/empty frame, not a request for everyone in the scene.
+  const castIds = frame.characters ?? ctx.scene?.characters ?? [];
   const cast = castLine(project, castIds);
   const relations = sentence(relationLines(project, castIds).join("; "));
   const action = [sentence(frame.description), ctx.scene && clean(ctx.scene.description) !== clean(frame.description) ? sentence(ctx.scene.description) : ""].filter(Boolean).join(" ");
@@ -100,7 +103,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
   const anCap = /^[aeiou]/.test(artLower) ? "An" : "A";
   const ctx = frameContext(project, frame);
   const p = parts(project, frame, ctx, entry);
-  const duration = `${frame.duration} second${frame.duration === 1 ? "" : "s"}`;
+  const duration = `${frame.durationIsEstimate ? "approximately " : ""}${frame.duration} second${frame.duration === 1 ? "" : "s"}`;
   const avoid = "text, captions, watermarks, logos, distorted faces, extra limbs, morphing";
 
   // ===== Video Models =====
@@ -137,7 +140,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
   if (platform === "sdxl") {
     const positive = [
       `cinematic film still, ${p.shot}`,
-      p.cast ? `${p.cast}` : "cinematic character portrait",
+      p.cast ? `${p.cast}` : "",
       p.action ? `${p.action}` : "",
       p.relations ? `${p.relations}` : "",
       p.setting ? `set in ${p.setting}` : "",
@@ -161,7 +164,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
     const positive = [
       `(masterpiece:1.2), (best quality:1.2), (highly detailed 8k cinematic still:1.2)`,
       `${p.shot}`,
-      p.cast ? `${p.cast}` : "detailed character portrait",
+      p.cast ? `${p.cast}` : "",
       p.action ? `${p.action}` : "",
       p.relations ? `${p.relations}` : "",
       p.setting ? `${p.setting}` : "",
@@ -311,7 +314,7 @@ export function buildScenePrompt(project: FilmProject, scene: Scene, platform: P
     `STYLE: ${stylePromptLine(project, entry)}.`,
     isImageModel
       ? `TOTAL SHOTS: ${frames.length} frame${frames.length === 1 ? "" : "s"} (${selectedPlatform?.name || "AI Image"} prompts for keyframes & storyboard).`
-      : `TOTAL RUNTIME: ${frames.reduce((s, f) => s + f.duration, 0)} seconds across ${frames.length} shot${frames.length === 1 ? "" : "s"}. Aspect 16:9.`,
+      : `TOTAL ${frames.some(f => f.durationIsEstimate) ? "ESTIMATED RUNTIME" : "RUNTIME"}: ${frames.reduce((s, f) => s + f.duration, 0)} seconds across ${frames.length} shot${frames.length === 1 ? "" : "s"}. Aspect 16:9.`,
   ].filter(Boolean).join("\n");
 
   if (!frames.length) {
@@ -330,7 +333,7 @@ export function buildScenePrompt(project: FilmProject, scene: Scene, platform: P
     const ctx = frameContext(project, frame);
     const p = parts(project, frame, ctx, entry);
     const transition = i === 0 ? (frame.transition ? `${frame.transition}.` : "Open.") : `${frame.transition || "Cut"}.`;
-    return `${transition} SHOT ${i + 1} (${frame.duration}s): ${p.shot}, ${p.camera}, ${p.light}. ${p.cast ? `${p.cast}. ` : ""}${p.relations ? `${p.relations} ` : ""}${p.action}${p.mood ? ` Mood: ${sentence(p.mood)}` : ""}`;
+    return `${transition} SHOT ${i + 1} (${frame.durationIsEstimate ? "~" : ""}${frame.duration}s): ${p.shot}, ${p.camera}, ${p.light}. ${p.cast ? `${p.cast}. ` : ""}${p.relations ? `${p.relations} ` : ""}${p.action}${p.mood ? ` Mood: ${sentence(p.mood)}` : ""}`;
   });
   const closing = platform === "kling" ? `\n\nNegative prompt: ${negativeFor("text, watermarks, logos, distorted faces, extra limbs, morphing, blurry", entry)}.` : "";
   const note = platform === "hailuo" ? `\n\n(Hailuo generates one shot at a time — copy each shot prompt separately from the list below.)` : platform === "seedance" ? `\n\n(Seedance can render this as a single multi-shot sequence.)` : "";

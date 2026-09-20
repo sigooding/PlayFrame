@@ -7,7 +7,7 @@ Grammar: handheld, tight, dark, red practical sources only.
 
 ---
 
-1. CU, 50mm, handheld — Danny's hand on the headlight switch. The red letterbox light on the wet side window. A 2-second pause. He turns the switch off.
+1. WS, 24mm, handheld — the old van, stopped outside number 14 on a wet street. Headlights on. The red letterbox light on the front door. A 2-second pause. The headlights cut out.
 
 2. MS, 35mm, handheld — the cab. Danny, a laminated card in his hand.
    DANNY: Number 14. The taps run there.
@@ -78,7 +78,7 @@ Grammar: handheld, tight, dark, red practical sources only.
     A 2-second pause.
     DANNY: I don't know.
 
-12. MS, 35mm, handheld — the wet side panel of the van passing the door, no lights. The red letterbox light stays on.
+12. WS, 24mm, handheld — the street. The van pulls away, no lights. The red letterbox light on number 14, on.
     A 2-second pause.
 
 13. MS, 35mm, handheld — number 14's front door, from the street. The door opens. THE WOMAN, mid-sentence.

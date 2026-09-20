@@ -1,0 +1,118 @@
+import assert from "node:assert/strict";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { projectId, sceneId, createdAt, characterId, characters, grammar, redLight, shotPlan, outlinePlan, referenceBoards } from "./plan.mjs";
+
+const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
+const read = name => readFileSync(resolve(root, name), "utf8");
+const bible = read("docs/rapture/show-bible.md");
+const screenplay = read("docs/rapture/scenes/ep4-number-fourteen.md");
+const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
+const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
+const episodes = sections.find(section => section.title === "EPISODES");
+assert(episodes, "Bible must contain EPISODES");
+const episodeRows = [...episodes.text.matchAll(/^\*\*(\d) — (.+?)\.\*\* (.+)$/gm)];
+assert.equal(episodeRows.length, 8, "Exactly eight episode outlines are required");
+
+const acts = episodeRows.map(([, n, title, description]) => ({
+  id: `rapture-episode-${n}`,
+  title: `Episode ${n} — ${title[0].toUpperCase()}${title.slice(1)}`,
+  description: `45-minute episode outline, not a completed shooting script.\n\n${plain(description)}`,
+  parts: [],
+}));
+const blocks = [...screenplay.matchAll(/^(\d+)\. (CU|MS|WS), (\d+mm), (handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(blocks.length, 13, "The source must have thirteen numbered shots");
+const frames = blocks.map(([, n, type, lens, , body], i) => {
+  assert.equal(Number(n), i + 1, "Shot order must be contiguous");
+  const plan = shotPlan[i];
+  const source = `${n}. ${type}, ${lens}, handheld — ${body.trimEnd()}`;
+  const pauses = [...source.matchAll(/A (\d+)-second pause/g)].map(m => Number(m[1]));
+  assert(plan.duration > pauses.reduce((sum, value) => sum + value, 0), "Duration must include action/dialogue, not just pauses");
+  return {
+    id: `rapture-ep4-shot-${String(n).padStart(2, "0")}`, sceneId,
+    title: `${plan.title}${plan.reference ? " — reference" : ""}`,
+    description: body.split("\n")[0].trim(),
+    image: `/images/rapture/ep4/${plan.image}`,
+    shotType: { CU: "Close-up", MS: "Medium", WS: "Wide" }[type],
+    movement: "Handheld", lens, angle: "Eye level", lighting: "Practical night",
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: plan.reference ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, deadpan, ordinary logistics; never grief or a horror performance",
+    characters: plan.characters.map(characterId),
+    notes: `${plan.note}\n\n${plan.reference ? "Image: reused reference, not a completed keyframe." : "Image: AI-generated storyboard study; continuity and production approval pending."}\n\n${grammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked${pauses.length ? ` (${pauses.map(p => `${p}s`).join(" + ")})` : " (none specified for this shot)"}.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert(frames.every(frame => ["Close-up", "Medium"].includes(frame.shotType)), "Current Crane grammar prohibits wide shots");
+
+const scene = {
+  id: sceneId, title: "Number Fourteen", location: "EXT./INT. NUMBER FOURTEEN", time: "NIGHT",
+  description: `A water stop governed by house rules and an unfinished complaint to the council. ${grammar} The table set for six is not played; the listener is never shown. This is not Pat's house.`,
+  characters: ["danny", "jodie", "woman-fourteen"].map(characterId), actId: "rapture-episode-4",
+  kind: "Standard", lighting: "Practical night", lightingNotes: redLight, style: "cinematic",
+};
+const scenes = outlinePlan.map(([ep, key, title, location, time, cast, description, kind]) => ({
+  id: `rapture-ep${ep}-${key}`, title: `${title} — outline`, location, time,
+  description: `OUTLINE ONLY — not a numbered shooting script. ${description} Location/time are provisional unless specified by the bible.`,
+  characters: cast.map(characterId), actId: `rapture-episode-${ep}`, kind: kind || "Standard",
+}));
+scenes.splice(scenes.findIndex(s => s.actId === "rapture-episode-4"), 0, scene);
+
+const notes = sections.map(({ title, text }, i) => ({
+  id: `rapture-bible-${i + 1}`, title: `Series bible — ${title.toLowerCase()}`,
+  content: plain(text), color: i % 3 === 0 ? "sage" : i % 3 === 1 ? "sand" : "rose", createdAt,
+  tags: ["Series bible", "Source"], connections: [],
+}));
+notes.unshift({
+  id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
+  tags: ["Production", "Read first"],
+  content: "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is the one numbered scene, with 13 shots. Its 175-second animatic is a working estimate, not a locked runtime. Each explicit pause remains exactly as written.\n\nTen new AI-generated stills cover shots 1–8, 11 and 12. Shots 9, 10 and 13 reuse reference stills and are marked Needs review; dedicated keyframes are still needed. All images are production studies, not approved final coverage. Existing character sheets and legacy thread images are references only. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay source is docs/rapture/scenes/ep4-number-fourteen.md. The original scene is preserved in scenes/archive/ep4-number-fourteen-v1.md. Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.",
+  connections: [{ targetId: sceneId, label: "Number Fourteen" }],
+});
+notes.push({
+  id: "rapture-continuity", title: "Continuity decisions and open questions", color: "rose", createdAt,
+  tags: ["Continuity", "Needs review"], connections: [],
+  content: "The latest series prompt takes precedence over the earlier visual canon. Danny and Jodie now have no wide establishing shots, no complete-room views and no sodium/teal look. In Number Fourteen, shot 1 is a CU/50mm of the headlight switch and shot 12 a MS/35mm of the passing van panel. All dialogue, numbered beats and pauses are unchanged. White headlights are not shown. The old version remains archived.\n\nNumber Fourteen's woman is the sheet-27 house-rules character, not Pat. The new episode-four Pat sequence remains a separate outline and has not been silently replaced by this scene. No blanks or afterlife appear in Number Fourteen. No cosmology is added to its dialogue.\n\nThe woman describes a locally intermittent upstairs tap in episode four; the series-wide upstairs failure remains episode five.\n\nMax remains flashbacks only, alive and unreachable. Episode eight says he knows where the fields are; how that knowledge reaches the upstairs action is not specified, so no present-day reunion has been invented.\n\nThe cause retains 1980, death five years later and forty-five years later exactly as supplied. A present-day calendar year has not been silently inferred. Nina remains 45.\n\nThe chained/rescued blank is not silently identified as Alan. The third field officer and the recovery angels remain unnamed. The 1980 absconder's appearance is not locked. Confirm exact van plates and jacket-pocket continuity before approving images.",
+});
+
+const brainstorm = [
+  ["knife", 60, 80, "The knife", "Cold open → old woman's handbag → support group → Jodie. A connective object, not a catch-up conversation.", "clay", ["Object", "Continuity"], ["water"]],
+  ["pendant", 460, 60, "The pendant / tracker", "Nina's bearing, everyone else's tracker. Each use costs a head start. Visions are recordings, not God's plan.", "rose", ["Object", "Permissions"], ["window"]],
+  ["window", 880, 80, "The minimised window", "RAPTURES → balanced stat bars → clear past attempts → minimise. The signal draws four factions to one postcode.", "sand", ["Cause", "Convergence"], ["pendant", "auction"]],
+  ["water", 60, 390, "The water clock", "Ep1 pressure complaint ignored; ep3 brown; ep5 upstairs dead; ep6 dry; ep7 dull deaths. Clean water in houses drives crime and property enforcement.", "sage", ["Season clock"], ["knife", "blank"]],
+  ["blank", 460, 390, "The rescued blank", "The kindest act puts the group on Hell's map. A boring man discussing laminate flooring is an unguarded window.", "clay", ["Surveillance"], ["water", "window"]],
+  ["auction", 880, 390, "Correction ≠ rewind", "Nina outbids Martin for the box at auction. ENTER. No flash, sound or score. Machine unopened. Limbo queue unchanged, outside time.", "ink", ["Ending", "Permissions"], ["window"]],
+].map(([key, x, y, title, content, color, tags, connections]) => ({ id: `rapture-object-${key}`, x, y, title, content, color, tags, connections: connections.map(id => `rapture-object-${id}`), createdAt }));
+const moodboards = [{
+  id: "rapture-look-number-fourteen", title: "Number Fourteen — red is a source", sceneId, actId: "rapture-episode-4", createdAt,
+  description: "Ten newly generated AI storyboard studies. Red practical sources, tight handheld, never a whole room. References for shots 9, 10 and 13 are excluded from this board to avoid presenting duplicate images as new coverage.",
+  items: frames.filter((_, i) => !shotPlan[i].reference).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
+}, ...referenceBoards.map(board => ({
+  id: `rapture-look-${board.id}`, title: board.title, description: board.description, createdAt,
+  items: board.items.map(([image, caption], i) => ({ id: `rapture-${board.id}-ref-${i + 1}`, image, caption })),
+}))];
+
+const project = {
+  id: projectId, title: "Let the Raptures Commence",
+  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Number Fourteen is the 13-shot working scene.",
+  genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
+  acts, scenes, frames, characters, notes, brainstorm, moodboards,
+  script: screenplay.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim(),
+  shareId: null, createdAt, updatedAt: createdAt,
+};
+
+const imagePaths = new Set([project.coverImage, ...frames.map(f => f.image), ...characters.map(c => c.image).filter(Boolean), ...moodboards.flatMap(b => b.items.map(i => i.image))]);
+for (const image of imagePaths) assert(existsSync(resolve(root, `public${image}`)), `Missing image: ${image}`);
+for (const c of characters) assert(c.description.length <= 700, `Shorten character description: ${c.name}`);
+assert.equal(frames.reduce((n, f) => n + f.duration, 0), 175, "Update the timing note when editorial estimates change");
+const output = resolve(root, "public/projects/let-the-raptures-commence.json");
+const encoded = JSON.stringify(project, null, 2) + "\n";
+if (process.argv.includes("--check")) {
+  assert(existsSync(output), "Run npm run build:rapture first");
+  assert.equal(readFileSync(output, "utf8"), encoded, "Bundled project has drifted. Run npm run build:rapture and commit the result.");
+  console.log(`Rapture bundle current: ${acts.length} episode outlines, ${scenes.length} scenes/outlines, ${characters.length} cast, ${frames.length} shots, ${imagePaths.size} image references.`);
+} else {
+  mkdirSync(dirname(output), { recursive: true });
+  writeFileSync(output, encoded);
+  console.log(`Wrote ${output} (${Math.round(Buffer.byteLength(encoded) / 1024)} KB).`);
+}
