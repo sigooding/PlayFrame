@@ -57,8 +57,10 @@ export function printProject(project: FilmProject, kind: PrintKind = "storyboard
   };
 
   const frames = project.frames.map((frame, i) => {
-    const source = frame.image.startsWith("/") ? `${window.location.origin}${frame.image}` : frame.image;
-    return `<article><img src="${escapeHtml(source)}" alt="${escapeHtml(frame.title)}" /><div class="card-content"><small>FRAME ${String(i + 1).padStart(2, "0")} · ${escapeHtml(sceneLabel(frame.sceneId))}</small><h3>${escapeHtml(frame.title)}</h3><p>${escapeHtml(frame.description)}</p><footer>${escapeHtml(frame.shotType)} · ${escapeHtml(frame.angle || "Eye level")}${frame.lens ? ` · ${escapeHtml(frame.lens)}` : ""} · ${escapeHtml(frame.movement)} · ${frame.durationIsEstimate ? "~" : ""}${frame.duration}s${frame.transition && frame.transition !== "Cut" ? ` · ${escapeHtml(frame.transition)}` : ""}</footer>${frame.notes ? `<p class="note">${escapeHtml(frame.notes)}</p>` : ""}</div></article>`;
+    const visual = frame.image
+      ? `<img src="${escapeHtml(frame.image.startsWith("/") ? `${window.location.origin}${frame.image}` : frame.image)}" alt="${escapeHtml(frame.title)}" />`
+      : `<div class="missing-frame">Keyframe missing — this card holds the numbered slot</div>`;
+    return `<article>${visual}<div class="card-content"><small>FRAME ${String(i + 1).padStart(2, "0")} · ${escapeHtml(sceneLabel(frame.sceneId))}</small><h3>${escapeHtml(frame.title)}</h3><p>${escapeHtml(frame.description)}</p><footer>${escapeHtml(frame.shotType)} · ${escapeHtml(frame.angle || "Eye level")}${frame.lens ? ` · ${escapeHtml(frame.lens)}` : ""} · ${escapeHtml(frame.movement)} · ${frame.durationIsEstimate ? "~" : ""}${frame.duration}s${frame.transition && frame.transition !== "Cut" ? ` · ${escapeHtml(frame.transition)}` : ""}</footer>${frame.notes ? `<p class="note">${escapeHtml(frame.notes)}</p>` : ""}</div></article>`;
   }).join("");
 
   const boards = project.moodboards.map(board => {
@@ -97,6 +99,7 @@ h1{font:42px Georgia,serif;margin:0 0 8px}header p{margin:0;color:#74786e}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 article{border:1px solid #deded5;border-radius:7px;overflow:hidden;break-inside:avoid}
 article img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.missing-frame{display:flex;align-items:center;justify-content:center;min-height:120px;background:#eef1e7;color:#6f8360;font-size:11px;padding:20px;text-align:center}
 .card-content{padding:13px}small{font-size:9px;letter-spacing:1px;color:#73776d}
 h3{font-size:14px;margin:9px 0}h2{font-size:18px}p{line-height:1.6}
 footer{padding-top:10px;border-top:1px solid #eee;font-size:10px}

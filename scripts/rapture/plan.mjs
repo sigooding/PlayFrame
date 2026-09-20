@@ -2,9 +2,11 @@
 // Run npm run build:rapture to rebuild the portable project; --check detects source drift.
 export const projectId = "74a9cb34-9e80-4a04-a614-000000000014";
 export const sceneId = "rapture-ep4-number-fourteen";
+export const lockupSceneId = "rapture-ep2-alan";
 export const createdAt = "2026-09-20T00:00:00.000Z";
 export const characterId = name => `rapture-${name}`;
 export const grammar = "Handheld, tight, dark. Red practical sources only. Never a wide establishing shot; never show a whole room. Dry, deadpan British black comedy, not noir, horror performance or tragedy. No pathos, no grief, no score, no reaction inserts.";
+export const lockupGrammar = "Locked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.";
 export const redLight = "Red practical sources only: the letterbox, red dashboard indicators and the kettle's red indicator. Deep darkness outside those small pools. No white, blue, teal, sodium or daylight fill; red is a physical source, never an overall colour grade. Jodie's collar headlamp stays off.";
 
 // First sentences carry the visual identity into the prompt studio. No invented names for unnamed roles.
@@ -25,7 +27,7 @@ const cast = [
   ["field-officer", "Hell's third field officer", "Hell / basement interrogation", "", "A female demon with a blank chained in a cellar. Interrogating him about the missing damned, gets only the apology. Reads it as resistance by the system rather than a man doing what he is told. Has notes and thinks she is close. Surveillance grammar, never moving or close.", ["Certain", "Thorough", "Mistaken"], "clay"],
   ["angel-one", "First recovery angel", "Heaven / equipment recovery", "", "One of two angels sent down to recover the absconder's equipment. Smug rather than stupid and equally useless. Has permissions, not power. No name, age or independent backstory supplied.", ["Smug", "Authorised", "Useless"], "sand"],
   ["angel-two", "Second recovery angel", "Heaven / equipment recovery", "", "One of two angels sent down to recover the absconder's equipment. Smug rather than stupid and equally useless. Has permissions, not power. No name, age or independent backstory supplied.", ["Smug", "Authorised", "Useless"], "sand"],
-  ["alan", "Alan", "Blank / Nina's passenger", "50s", "A blank in his fifties, fleece and sensible shoes, carrying a bag for life containing another bag. Nina picks him up at a wrong lockup. The apology is not a reliable test. Not automatically the chained man from the basement; no identity link has been supplied.", ["Boring", "Compliant", "Ordinary"], "sage"],
+  ["alan", "Alan", "Blank / Nina's passenger", "50s", "A blank in his fifties, fleece and sensible shoes, carrying a bag for life containing another bag. Nina picks him up at a wrong lockup. The apology is not a reliable test. Not automatically the chained man from the basement; no identity link has been supplied.", ["Boring", "Compliant", "Ordinary"], "sage", "alan"],
   ["absconder", "The absconder", "1980 / angel turned rockstar", "", "An angel who steals a terminal to live inside creation in 1980. Edits appearance, charisma, confidence and musical ability to the ceiling, leaves social status at default. Conjures a guitar; writes by entering tempo and key. Gives the detached tracker to a woman he loves. Nina's father. Dies five years later and declines undo with NO. Appearance and age are not locked.", ["Wilful", "Charismatic", "Decisive"], "clay"],
   ["woman-fourteen", "The Woman — Number Fourteen", "Number Fourteen / house rules", "50s", "Woman in her fifties with grey-brown hair in an untidy bun, rumpled tan housecoat over a floral blouse, and a Tesco bag stuffed with crumpled papers. Mid-sentence when the door opens. Plays her situation as house rules and a complaint to the council. The table set for six is never played. No visible listener. This supporting character is not Pat and is not identified as a blank or demon.", ["Matter-of-fact", "Occupied", "Insistent"], "rose", "crazed-woman"],
   ["rescued-blank", "The rescued blank", "Basement / surveillance window", "", "A man chained in a cellar by Hell's third field officer. Gives the apology, doing what he is told. Rescued by Danny and Jodie; talks about laminate flooring. Hell watches through him, putting the rescuers on its map. Do not assume this is Alan. No name or age supplied.", ["Compliant", "Tedious", "Ordinary"], "sand"],
@@ -69,18 +71,56 @@ export const shotPlan = [
   { title: "The unfinished complaint", duration: 10, characters: ["woman-fourteen"], image: "13-complaint.jpg", note: "Final mid-complaint pose at the door, from the street. No listener is revealed. The door closes after the 2-second pause, then a hard CUT TO BLACK, not a fade. Check door colour against shot 4 and keep red the only practical before approving." },
 ];
 
+// Titles, working running times and on-camera cast for the first wrong lockup's
+// numbered source shots. Durations are editorial estimates. The dog appears in
+// several shots but is not a cast entity; shot 29's source ends mid-line.
+export const lockupPlan = [
+  { image: "01-minibus.jpg", title: "The minibus on the empty road", duration: 12, characters: [], note: "Long lens, heat shimmer. The bus takes a long time to reach mid-frame; Nina is inside but not seen." },
+  { image: "02-dont-look.jpg", title: "Don't look at me", duration: 6, characters: ["nina"], note: "From the passenger side. The dog sits upright like a passenger." },
+  { image: "03-church.jpg", title: "The church queue", duration: 10, characters: [], note: "Forty deep, trestle table, bad clipboard organisation, two men arguing. The bus doesn't slow." },
+  { image: "04-roadblock.jpg", title: "The roadblock", duration: 10, characters: [], note: "Three wheelie bins, a garden bench, one boy with a cricket bat. Around it on the verge." },
+  { image: "05-unbothered.jpg", title: "Unbothered", duration: 5, characters: ["nina"], note: "The dog watches the boy go past." },
+  { image: "06-chosen.jpg", title: "We are the chosen ones", duration: 6, characters: [], note: "Footbridge sheets: WE ARE THE CHOSEN ONES over ROOMS AVAILABLE." },
+  { image: "07-pendant.jpg", title: "The pendant", duration: 12, characters: ["nina"], note: "Pulls over, kills the engine, holds the pendant like it owes her money." },
+  { image: "08-braced.jpg", title: "Braced", duration: 5, characters: ["nina"], note: "Not reverent — a dreaded phone call." },
+  { image: "09-shutter.jpg", title: "Flash: the orange shutter", duration: 2, characters: [], lighting: "High key", note: "Vision footage: broken, wrong aspect, dropped frames, blown out, a hiss." },
+  { image: "10-strips.jpg", title: "Flash: strip lights", duration: 2, characters: [], lighting: "High key", note: "One flickering." },
+  { image: "11-bay.jpg", title: "Flash: the bay number", duration: 2, characters: [], lighting: "High key", note: "Two digits, held a beat too briefly to be certain." },
+  { image: "12-carpet.jpg", title: "Flash: carpet and radiator", duration: 2, characters: [], lighting: "High key", angle: "Low angle", note: "Six inches off the floor. Wrong decade." },
+  { image: "13-forty-one.jpg", title: "Forty-one, or forty-seven?", duration: 7, characters: ["nina"], note: "Eyes open, breathing hard, profoundly unimpressed." },
+  { image: "14-right.jpg", title: "Right.", duration: 12, characters: ["nina"], note: "Untimed pause, repeated line, engine start." },
+  { image: "15-estate.jpg", title: "The industrial estate", duration: 8, characters: [], note: "Low unit behind chain link. Not Martin's unit; similar enough. Barrier down, weeds." },
+  { image: "16-cutters.jpg", title: "The bolt cutters", duration: 12, characters: ["nina"], note: "The gate chain dealt with in about nine seconds." },
+  { image: "17-corridor.jpg", title: "The orange corridor", duration: 12, characters: ["nina"], note: "Orange roller doors to a vanishing point, one strip light flickering. She walks away down the middle. Same composition as Martin's corridor; wrong building." },
+  { image: "18-forty-one.jpg", title: "Forty-one", duration: 12, characters: ["nina"], note: "Three padlock attempts." },
+  { image: "19-chairs.jpg", title: "Four hundred garden chairs", duration: 6, characters: [], note: "Low: the shutter goes up on roughly four hundred plastic garden chairs." },
+  { image: "20-chairs-look.jpg", title: "Nina looks at the chairs", duration: 5, characters: ["nina"], note: "Held on her taking it in." },
+  { image: "21-forty-seven.jpg", title: "Forty-seven", duration: 10, characters: ["nina"], note: "Walks to 47. Cuts that padlock too." },
+  { image: "22-empty.jpg", title: "Empty", duration: 6, characters: [], note: "Low: concrete floor and a dead wasp." },
+  { image: "23-other-forty.jpg", title: "One of the other forty?", duration: 7, characters: ["nina"], note: "Upward, conversational." },
+  { image: "24-long-corridor.jpg", title: "The long corridor", duration: 10, characters: ["nina"], note: "Same framing as 17. Her small at the far end. Hold." },
+  { image: "25-back-bus.jpg", title: "Back at the bus", duration: 8, characters: ["nina"], note: "Loads the bolt cutters. Stops." },
+  { image: "26-tuesday.jpg", title: "Here since Tuesday", duration: 30, characters: ["nina", "alan"], note: "The man by the bus, perfectly still, bag in hand. The full exchange, with an untimed pause." },
+  { image: "27-bag.jpg", title: "Bag for life", duration: 12, characters: ["nina", "alan"], note: "On Nina. Twenty years of front-door assessments." },
+  { image: "28-door.jpg", title: "The passenger door", duration: 10, characters: ["nina", "alan"], note: "She properly considers leaving him. Then opens the door." },
+  { image: "29-name.jpg", title: "Name?", duration: 14, characters: ["nina", "alan"], note: "The full exchange, ending on I can only apologise. Interior; he sits upright like the dog." },
+  { image: "30-engine.jpg", title: "Nothing registers", duration: 6, characters: ["nina"], note: "She has no idea what that means. She starts the engine." },
+  { image: "31-away.jpg", title: "Pulling away", duration: 10, characters: [], note: "The bus, tiny, down a long straight road. Heat shimmer. Hold." },
+];
+
 // Planning outlines, not invented finished scripts. Locations/times are provisional except for explicit bible grammar.
 export const outlinePlan = [
   [1, "mugging", "The mugging", "EXT. ALLEY", "NIGHT", [], "The mugging. The knife starts its journey through the old woman's handbag and the support group.", "Cold open"],
   [1, "st-judes", "St Jude's and the rapture", "INT. ST JUDE'S", "DAY", ["nina"], "Nina at St Jude's; the rapture. One ignored complaint about water pressure. Locked off, wide, deep focus, daylight, symmetrical."],
+  [1, "washing-up", "Washing up", "INT./EXT. ST JUDE'S", "DAY", ["nina"], "Clearing the hall and collecting water around St Jude's. Nina's locked-off daylight grammar applies."],
   [1, "cops", "Birds, arrest ourselves, the taser", "INT. POLICE CAR", "DAY", ["kath", "ray"], "Birds; arrest ourselves; the taser. Static windscreen two-shot from the bonnet and a wide across the car park. Handheld only during violence, then identical static framing. No reaction cuts."],
   [1, "bearing", "The pendant and first vision", "INT./EXT. ST JUDE'S / ROAD", "DAY", ["nina"], "Nina's aftermath, the pendant, the first vision; she drives. The vision is the tracker's recorded view, not divine revelation. Only this interruption breaks Nina's grammar."],
   [1, "storage", "Martin at the storage unit", "INT. STORAGE UNIT", "DAY", ["martin"], "Martin at the storage unit. No mechanism revealed. Flat fluorescent light, locked off, slightly off-centre."],
   [1, "no", "1980 thread — NO", "INT. HOTEL ROOM", "NIGHT", ["absconder"], "Tag for the 1980 thread, ending on NO. Preserve the bible's five-years-later death chronology; do not silently date the hotel scene 1980. Warm, grainy anamorphic practical light.", "Tag"],
   [2, "limbo", "The family at the desk", "INT. LIMBO CATHEDRAL", "CONTINUOUS", ["brenda", "gordon"], "The family, branches of Christianity, seventy-two virgins, husband led away. Frontal proscenium, vast vertical space, hard cut to the flat close desk. Four-second reverberation."],
   [2, "raid", "The first raid", "INT. HOUSE", "NIGHT", ["danny", "jodie"], "Danny and Jodie's first raid for water. Handheld, tight and dark, red practical sources only. Never a whole room."],
+  [2, "night-drive", "Night drive (Wave 3)", "EXT./INT. VAN / ROAD", "NIGHT", ["danny", "jodie"], "An earlier night-drive board for the Crane thread. Its horror framing and non-red night lighting are superseded, and its episode-two placement is provisional."],
   [2, "intake", "The intake floor", "INT. HELL INTAKE", "CONTINUOUS", ["vassago", "reek", "tamsin"], "Hell's intake collapse goes unnoticed behind balloon concerns. Fixed high-corner surveillance, 4:3, slight fisheye, faint timecode. Never close."],
-  [2, "alan", "The first wrong lockup", "EXT. LOCKUP", "DAY", ["nina", "alan"], "Nina's first wrong lockup; she acquires Alan. Nina's locked-off daylight grammar."],
   [3, "arrivals", "Both sides come down", "EXT. EARTH — LOCATION TBC", "DAY", ["angel-one", "angel-two", "pat", "field-officer"], "Demons and angels arrive, badly. Keep faction coverage separate; no invented shared scene. Demons retain fixed surveillance grammar on earth."],
   [3, "test", "A worthless screening method", "INT. POLICE CAR", "DAY", ["kath", "ray"], "Blanks established. The cops invent a test around I can only apologise and never doubt it. Half of real humanity says it too."],
   [3, "group", "Recruited / brown water", "INT. UNDERGROUND MEETING PLACE", "NIGHT", ["danny", "jodie"], "Danny and Jodie recruited by the underground group. Brown water. Tight red practical handheld coverage; no full-room tableau."],
@@ -102,6 +142,22 @@ export const outlinePlan = [
   [8, "arcade", "Everyone is wrong", "INT. ARCADE", "DAY", ["martin", "kath", "ray", "angel-one", "angel-two", "vassago", "reek", "tamsin"], "Martin defends his collection, cops arrest people in sequence, demons and angels arrive together and each assumes the other is the target. All grammars collapse to neutral ordinary coverage."],
   [8, "upstairs", "The menu / the desk / ENTER", "INT. ARCADE UPSTAIRS / LIMBO DESK", "CONTINUOUS", ["jodie", "nina"], "Jodie gets through because she is eleven and ignored. Nina cannot read the menu; Max knows where the fields are, but the bible retains flashbacks only. Limbo protects the outage. Nina wins an argument at a desk. The correction is an auction bid outbidding Martin, not a rewind. ENTER. No flash, sound or score."],
   [8, "last", "SOLD / just one question", "INT. STORAGE UNIT / LIMBO", "CONTINUOUS", [], "Shutter down, machine unopened in the dark. Lot sticker: number, date, SOLD. Then timeless Limbo, the same queue, a man at the desk with one question. No epilogue, no faces, no resolution for anyone.", "Tag"],
+];
+
+// Legacy reference boards wired into the storyboard in filename order. The build reads
+// public/images/rapture/<prefix>-NN.jpg from disk, so adding a keyframe only needs a
+// rebuild; a number with no file becomes a "keyframe missing" card holding its slot.
+// Shot type, movement, lens and durations on these frames are working placeholders.
+export const legacyBoards = [
+  { prefix: "shot", scene: "rapture-ep1-mugging", board: "Cold open", lighting: "Practical night", cast: [], review: "Night alley under sodium streetlight and shopfront spill; the old woman, the handbag and the knife's journey." },
+  { prefix: "a1s1", scene: "rapture-ep1-st-judes", board: "St Jude's", lighting: "Natural daylight", cast: ["nina"], review: "Daylight interiors at St Jude's; locked-off wide grammar, never follow Nina." },
+  { prefix: "a1s3", scene: "rapture-ep1-washing-up", board: "Washing up", lighting: "Natural daylight", cast: ["nina"], review: "Clearing the hall and collecting water around St Jude's; Nina's daylight grammar." },
+  { prefix: "a1s4", scene: "rapture-ep1-storage", board: "Storage facility", lighting: "High key", cast: ["martin"], review: "Flat institutional fluorescent look, locked off, slightly off-centre; aggrieved, never grieving." },
+  { prefix: "a2s1", scene: "rapture-ep1-cops", board: "Police / car park", lighting: "Overcast soft", cast: ["kath", "ray"], review: "Static windscreen two-shot and car-park wide; handheld only for violence, no reaction cuts." },
+  { prefix: "ep2s1", scene: "rapture-ep2-limbo", board: "Limbo", lighting: "High key", cast: ["brenda", "gordon"], review: "Cathedral scale against the flat close desk; four-second spoken reverberation; Limbo is outside time." },
+  { prefix: "ep2s2", scene: "rapture-ep2-raid", board: "First raid", lighting: "Practical night", cast: ["danny", "jodie"], review: "Tight red-practical handheld night coverage; never a whole room." },
+  { prefix: "ep2s3", scene: "rapture-ep2-intake", board: "Hell intake", lighting: "High key", cast: ["vassago", "reek", "tamsin"], review: "Fixed high-corner 4:3 surveillance, slight fisheye, faint timecode; never moves, never close." },
+  { prefix: "w3", scene: "rapture-ep2-night-drive", board: "Night drive (Wave 3)", lighting: "Practical night", cast: ["danny", "jodie"], review: "Earlier night-drive coverage; teal/sodium elements and horror framing are superseded — review against the current Crane grammar. The background figure is an earlier visual idea, not a character." },
 ];
 
 // Existing assets are references, not newly generated or newly approved series coverage.

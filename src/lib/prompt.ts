@@ -18,7 +18,7 @@ export interface PlatformConfig {
 
 export const PLATFORMS: readonly PlatformConfig[] = [
   // AI Video Models
-  { id: "hailuo", name: "MiniMax Hailuo", kind: "video", hint: "Uses bracketed camera commands. One shot per generation, 6–10s.", badge: "Video" },
+  { id: "hailuo", name: "MiniMax Hailuo", kind: "video", hint: "Bracketed camera commands, first-frame image (<picture 1>) and audio direction. One shot per generation, 6–10s.", badge: "Video" },
   { id: "seedance", name: "Seedance", kind: "video", hint: "Natural language. Supports multi-shot sequences in one prompt.", badge: "Video" },
   { id: "kling", name: "Kling", kind: "video", hint: "Prose prompt plus a negative prompt.", badge: "Video" },
   { id: "runway", name: "Runway Gen", kind: "video", hint: "Lead with camera movement, keep it direct, no negatives.", badge: "Video" },
@@ -75,23 +75,41 @@ export function frameContext(project: FilmProject, frame: StoryFrame): PromptCon
   return { scene, previous, next, index, total: isNew ? siblings.length + 1 : siblings.length };
 }
 
+// Production metadata (outline banners, board ranges, filenames) is never valid model input.
+const stripProductionMeta = (value?: string) => clean(value || "")
+  .replace(/^OUTLINE ONLY — [^.]+\.\s*/, "")
+  .replace(/^LEGACY BOARD — [^.]+\.\s*/, "")
+  .replace(/^KEYFRAME MISSING — [^.]+\.\s*/, "")
+  .replace(/\s*\([A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)\)/gi, "")
+  .replace(/Review every keyframe against the current grammar before production\.\s*/g, "")
+  .trim();
+
 function parts(project: FilmProject, frame: StoryFrame, ctx: PromptContext, entry: VisualStyleEntry = visualStyle()) {
   const shot = `${shotGuide[frame.shotType]?.prompt || `${frame.shotType.toLowerCase()} shot`}${frame.angle && frame.angle !== "Eye level" ? `, ${angleDescriptions[frame.angle]}` : ""}${frame.lens ? `, ${frame.lens} lens` : ""}`;
   const camera = movementDescriptions[frame.movement] || frame.movement.toLowerCase();
   const setting = ctx.scene ? `${describeLocation(ctx.scene.location)} at ${timeOfDay(ctx.scene.time)}` : "";
   const lighting = frame.lighting || ctx.scene?.lighting;
-  const light = clean(frame.lightingNotes) || clean(ctx.scene?.lightingNotes) || (lighting
+  const light = (clean(frame.lightingNotes) || clean(ctx.scene?.lightingNotes) || (lighting
     ? lightingGuide[lighting]?.prompt || `${lighting.toLowerCase()} lighting`
-    : (ctx.scene && /dawn|morning|sunset|dusk/i.test(ctx.scene.time) ? "soft golden natural light" : "natural lighting"));
+    : (ctx.scene && /dawn|morning|sunset|dusk/i.test(ctx.scene.time) ? "soft golden natural light" : "natural lighting"))).replace(/\.+$/, "");
   // An explicit empty cast is an insert/empty frame, not a request for everyone in the scene.
   const castIds = frame.characters ?? ctx.scene?.characters ?? [];
   const cast = castLine(project, castIds);
   const relations = sentence(relationLines(project, castIds).join("; "));
-  const action = [sentence(frame.description), ctx.scene && clean(ctx.scene.description) !== clean(frame.description) ? sentence(ctx.scene.description) : ""].filter(Boolean).join(" ");
-  const mood = (clean(frame.mood) || (frame.notes ? clean(frame.notes).split(/(?<=[.!?])\s/)[0] : "")).replace(/[.!?]+$/, "");
+  const action = [sentence(stripProductionMeta(frame.description)), ctx.scene && clean(ctx.scene.description) !== clean(frame.description) ? sentence(stripProductionMeta(ctx.scene.description)) : ""].filter(Boolean).join(" ");
+  const mood = (clean(frame.mood) || (frame.notes ? stripProductionMeta(clean(frame.notes).split(/(?<=[.!?])\s/)[0]) : "")).replace(/[.!?]+$/, "");
   const transitionIn = frame.transition ? (ctx.previous ? `${frame.transition} from the previous shot (${ctx.previous.shotType.toLowerCase()} — “${ctx.previous.title}”)` : `Begins with a ${frame.transition.toLowerCase()}`) : (ctx.previous ? `Cut from previous shot (${ctx.previous.shotType.toLowerCase()} — “${ctx.previous.title}”)` : "");
   const transitionOut = ctx.next ? `${ctx.next.transition || "Cut"} to next shot: ${ctx.next.shotType.toLowerCase()} — “${ctx.next.title}”` : "Scene ends on this shot";
   return { shot, camera, setting, light, cast, relations, action, mood, transitionIn, transitionOut, style: stylePromptLine(project, entry), finish: entry.finish };
+}
+
+function hailuoAudio(frame: StoryFrame): string {
+  const lines = (frame.notes || "").split("\n").map(l => l.trim()).filter(Boolean);
+  const isCue = (l: string) => /^([A-Z][A-Z'.\-() ]{0,24}):\s+\S/.test(l) && !/SCRIPT/i.test(l);
+  const dialogue = lines.filter(isCue);
+  const ambient = lines.find(l => !isCue(l) && /ambien|sound|score|wind|silence|music/i.test(l) && !/no (score|music|dialogue)/i.test(l))?.replace(/[.!?]+$/, "");
+  if (dialogue.length) return `dialogue as scripted — “${dialogue.join(" ")}”${ambient ? ` over ${ambient[0].toLowerCase()}${ambient.slice(1)}` : ""}, no music`;
+  return `${ambient || "natural ambient sound of the location"}, no dialogue, no music`;
 }
 
 export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platform: PlatformId, style?: string): string {
@@ -108,7 +126,7 @@ export function buildFramePrompt(project: FilmProject, frame: StoryFrame, platfo
 
   // ===== Video Models =====
   if (platform === "hailuo") {
-    return [`${hailuoCommands[frame.movement] || "[Static shot]"} ${p.shot}. ${p.setting ? `${p.setting[0].toUpperCase()}${p.setting.slice(1)}, ${p.light}.` : ""}`, p.cast ? `Characters: ${p.cast}.` : "", p.relations, p.action, p.mood ? `Mood: ${sentence(p.mood)}` : "", `Style: ${p.style}. ${duration}, 16:9. No ${avoid}.`].filter(Boolean).join(" ");
+    return [`${hailuoCommands[frame.movement] || "[Static shot]"} ${p.shot}.`, frame.image ? `First frame: <picture 1>.` : "", p.setting ? `${p.setting[0].toUpperCase()}${p.setting.slice(1)}, ${p.light}.` : "", p.cast ? `Characters: ${p.cast}.` : "", p.relations, p.action, p.mood ? `Mood: ${sentence(p.mood)}` : "", `Audio: ${hailuoAudio(frame)}.`, `Style: ${p.style}. ${duration}, 16:9. No ${avoid}.`].filter(Boolean).join(" ");
   }
   if (platform === "runway") {
     return [`${p.camera[0].toUpperCase()}${p.camera.slice(1)}: ${p.shot} of ${p.cast ? p.cast.split(" (")[0] : "the subject"}${p.setting ? ` in ${p.setting}` : ""}.`, p.action, p.relations, `${p.light[0].toUpperCase()}${p.light.slice(1)}. ${p.style}.`].filter(Boolean).join(" ");
