@@ -42,7 +42,7 @@ comedy in every thread; this is not noir and not a tragedy.
   how she opens the door is deliberately not shown, and the householders are never seen —
   upstairs is a thump and nothing more. Two wides in twenty-one shots, both handheld: the
   stairwell where nothing is visible, and the exit. It supersedes the legacy first-raid
-  board as coverage; the board stays reference only. Ten of twenty-one shots carry AI studies.
+  board as coverage; the board stays reference only. Eleven of twenty-one shots carry AI studies.
 - **Episode-one cops beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6
   shots, ninety seconds exactly as instructed. Their grammar with no compromise: static
   two-shot from the bonnet through the windscreen, the same framing three times, the same
@@ -82,7 +82,7 @@ comedy in every thread; this is not noir and not a tragedy.
   PRE-RAPTURE. The brother has an arcade, named flatly as the episode-eight location and not as a
   setup. **Standing rule from shot 22: the machine travels in the back of the bus**, with Martin's
   guitar case, from here on — every later bus frame shows it and none of them explains it. Shot 23
-  leaves the front door open and nobody shuts it. Seven of twenty-three shots carry AI studies.
+  leaves the front door open and nobody shuts it. Nineteen of twenty-three shots carry AI studies.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
@@ -249,8 +249,10 @@ spelled — so the audience can do the arithmetic. Every close-up inside the bed
   pale walls, grey bed, the dead CRT on the desk — because the model defaults to a generic spare
   bedroom the moment the wide is not in the reference set; where the poster is not the subject it is
   left out of frame rather than drawn half-legible, and no frame carries burnt-in words.
-Ten of twenty-one **raid studies** in `public/images/rapture/ep2-danny-jodie/` board the scene so
-far, one keyframe per shot; shots 11–21 are placeholders until their studies exist. Their grammar
+Eleven of twenty-one **raid studies** in `public/images/rapture/ep2-danny-jodie/` board the scene
+so far, one keyframe per shot; shot 11 and shots 13–21 are placeholders. Shot 11's first attempt is on
+disk as `.reject.jpg`: it came back as a gallery wall of strangers when the script calls for the SAME
+two people twenty times, and the repetition is the only thing that frame exists to say. Their grammar
 is not a look, it is a restriction: one small red practical,
 everything else black, framing that stays inside two metres, and no clean wide anywhere — the
 two wides are the stairwell and the exit and both are handheld. Check Danny's olive waxed
@@ -269,14 +271,20 @@ dusk, running continuously into Scene 2 at dusk into night, so no change was nee
 the note; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has
 had to sit in Max's room for the eight weeks the doorstep scene counts — which also settles
 what the empty bedroom in the doorstep scene is.
-Seven **kitchen studies** in `public/images/rapture/ep4-kitchen/` board shots 1-9 so far, one
-keyframe per shot. Check them against his grammar and nothing else: flat overhead fluorescent, no
+Nineteen **kitchen studies** in `public/images/rapture/ep4-kitchen/` board the scene so far, one
+keyframe per shot; 12, 15, 20 and 22 are placeholders until their re-shoots land. Shot 15, the
+eight-second wait, is the only protected beat still unboarded, and it will be boarded as a held frame,
+not as a pretty one. Check them against his grammar and nothing else: flat overhead fluorescent, no
 warmth, no composition anyone would call a composition, locked off, and nothing in the room is
 permitted to look eerie — a beautiful frame here is a wrong frame. Shots 1, 3 and 6 are the same
-table from three set-ups and must not read as re-shoots of one another. Two studies were rejected
-and are kept on disk as `.reject.jpg` rather than deleted (05 came back a wide when the card says
-medium; 07 landed on 03's camera position): a rejected study stays off the board instead of
-standing in because it looks nice. The mug in 09 is cold, skinned over and undrunk — the scene's only rhyme with
+table from three set-ups and must not read as re-shoots of one another. Eight studies have been
+rejected and are kept on disk as `.reject.jpg` rather than deleted, and not one of them is a matter of
+taste: 05 came back a wide when the card says medium, 07 landed on 03's camera position, 13 framed her
+opposite an empty chair when Martin is in the scene to lie to, 17 was cut as a 40mm two-shot and came
+back a wide duplicating 12, 12's first tap ran clear and its second did not run at all when shot 2
+established it brown, 20 came back a medium-wide when the card says a 50mm medium on her alone, and 22
+loaded the Transit with a bunch of bananas, weeds in the load bay and a second identical van in shot.
+A rejected study stays off the board instead of standing in because it looks nice. The mug in 09 is cold, skinned over and undrunk — the scene's only rhyme with
 the cops' bottle, and the rhyme is not underlined.
 
 # Boundaries not silently resolved

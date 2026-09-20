@@ -539,16 +539,16 @@ pass(`${PLATFORMS.length} prompt models and CSV export retain lighting direction
 
 const paths = [...new Set([project.coverImage, ...project.characters.map(c => c.image).filter(Boolean), ...project.frames.map(f => f.image).filter(Boolean), ...project.moodboards.flatMap(b => b.items.map(i => i.image))])];
 for (const image of paths) assert(existsSync(join(root, "public", image)), `Image not on disk: ${image}`);
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg")).length, 13);
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen cold-open studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg")).length, 15, "Fifteen angel studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg")).length, 16, "Sixteen Pat studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-house")).filter(p => p.endsWith(".jpg")).length, 35, "Thirty-five Scene 2 studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg")).length, 17, "Seventeen scout-hut studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-estate")).filter(p => p.endsWith(".jpg")).length, 36, "Thirty-six estate studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep4-doorstep")).filter(p => p.endsWith(".jpg")).length, 32, "Thirty-two doorstep studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep2-danny-jodie")).filter(p => p.endsWith(".jpg")).length, 21, "Twenty-one raid studies on disk");
-assert.equal(readdirSync(join(root, "public/images/rapture/ep1-cops-beat")).filter(p => p.endsWith(".jpg")).length, 6, "Six cops-beat studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 13);
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-cold-open")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 17, "Seventeen cold-open studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep3-cold-open")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 15, "Fifteen angel studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-cold-open")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 16, "Sixteen Pat studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-pat-house")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 35, "Thirty-five Scene 2 studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-scout-hut")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 17, "Seventeen scout-hut studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-estate")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 36, "Thirty-six estate studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep4-doorstep")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 32, "Thirty-two doorstep studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep2-danny-jodie")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 21, "Twenty-one raid studies on disk");
+assert.equal(readdirSync(join(root, "public/images/rapture/ep1-cops-beat")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 6, "Six cops-beat studies on disk");
 assert.equal(readdirSync(join(root, "public/images/rapture/ep4-kitchen")).filter(p => p.endsWith(".jpg") && !p.includes(".reject.")).length, 23, "Twenty-three kitchen studies on disk, rejects kept separately");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
