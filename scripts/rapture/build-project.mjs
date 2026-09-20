@@ -308,6 +308,8 @@ const doorstep = doorstepBlocks.map(([, n, header, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: "Static", lens: plan.lens,
     angle: plan.angle || "Eye level", lighting: plan.lighting,
+    // The frame inherits ONE grammar, its own, so a prompt built from this card cannot receive the wrong one.
+    lightingNotes: grammarFor,
     style: "cinematic", duration: plan.duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: doorstepIsHers(i) ? "Plain, level, daylight; a site inspection with a stranger in the way" : "Flat, off-centre and slightly wrong; a man's house arranged around a collection",
@@ -321,6 +323,7 @@ assert(doorstep.every((f, i) => (f.lighting === "Natural daylight") === doorstep
 assert(doorstep.every(f => f.characters.every(id => [characterId("nina"), characterId("martin"), characterId("alan")].includes(id))), "The doorstep is cast with Nina, Martin and Alan in the bus only");
 assert.deepEqual(doorstep.map((f, i) => f.characters.includes(characterId("alan")) ? i : -1).filter(i => i >= 0), [5, 31], "Alan is seen only through the bus glass: the doorstep and the last frame on the road");
 assert(doorstep.every(f => f.shotType !== "Establishing"), "Both grammars compose the frame themselves: no establishing card");
+assert(doorstep.every((f, i) => (f.lightingNotes === doorstepHerGrammar) === doorstepIsHers(i)), "Every doorstep frame inherits exactly one grammar, never both and never neither");
 assert(doorstep[8].notes.includes("a hair wrong in the composition") && !doorstep[7].notes.includes("a hair wrong in the composition"), "His grammar starts at shot 9 and her street never takes it on");
 assert(doorstep[17].notes.includes("unbranded") && doorstep[18].notes.includes("printer"), "The machine is planted in an ordinary insert and she does not clock it");
 assert(doorstep[21].notes.includes("no lens flare") && doorstep[21].notes.includes("forty-five years"), "The pendant light is mechanical, not miraculous");

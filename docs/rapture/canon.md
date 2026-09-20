@@ -49,8 +49,7 @@ comedy in every thread; this is not noir and not a tragedy.
   audience gets there first. The snapped-off badge gap (shot 26) sits in one frame and is
   never mentioned by anybody, in the scene or in the notes, ever. Martin's son is alive,
   unseen and unflashbacked — the empty bed is the whole performance — and "Water's brown" is
-  the season's water clock ticking, deliberately unemphasised. Thirteen of the thirty-two
-  shots carry AI studies; the rest hold numbered placeholder cards.
+  the season's water clock ticking, deliberately unemphasised. All thirty-two shots carry AI studies.
 - **Episode-four scene 3 — the scout hut:**
   [numbered scene](scenes/ep4-scout-hut.md), 17 handheld shots of the scene
   after the violence: twelve litres counted, four punctures nobody mentions,
