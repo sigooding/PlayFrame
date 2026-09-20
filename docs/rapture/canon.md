@@ -72,6 +72,32 @@ why shot 15 is on the reject pile: Jodie's brother is her father's keeper, not a
   never mentioned by anybody, in the scene or in the notes, ever. Martin's son is alive,
   unseen and unflashbacked — the empty bed is the whole performance — and "Water's brown" is
   the season's water clock ticking, deliberately unemphasised. All thirty-two shots carry AI studies.
+- **Episode-five scene 5 — the therapy class:** [numbered scene](scenes/ep5-therapy-class.md), 26 handheld
+  shots in the scout hut. One question — why us — and fourteen people arguing their own case for being left,
+  which is the engine: Sue's blameless grievance, Carl's unsaid thing, Pauline's clerical error, Derek's
+  promotion, hi-vis's need for a purpose with somebody in charge of it. It sits in FIVE, not six, for two
+  reasons the user gave: it is the funniest ensemble scene in the season and fourteen people should not wait
+  that long, and the maintain-order doctrine needs two episodes to harden before seven and eight act on it.
+  The consequence of the move is that the water in the last shot is brown and rationed rather than two days
+  from empty, which is exactly where the bible's clock has episode five (brown by three, upstairs dead by
+  five, dry by six). This supersedes the bible's episode-four line about the survivors' meetings reporting
+  the dog, and it kills the nun: there is no nun rumour anywhere in the workspace now. The episode-three
+  meeting is therefore recruitment only — water counted in, clipboard, rota, tins don't count, Jodie working
+  out who is stealing — because the theorising has moved here and cannot be said twice.
+  Three protections, asserted in the builder and the verifier: shot 13's silence is long enough to rebuild a
+  theology in (duration floored at 20 seconds); shot 14's "It's what we're for" is visibly invented in the
+  telling and never delivered as doctrine; and **Carl never says what he did, in this scene or in any other
+  scene, and the show never finds out on camera.** The grandma-and-the-dog story is told once, flatly, by one
+  sweating man, and it is what demolishes every theory at once — rather than accept that, the room decides it
+  must mean they are here for a job, which is how a dead dog becomes a marching order in ninety seconds with
+  no objections. Derek's moment of clarity is kept and moved with it, because it earns its place. The empty
+  chair is planted in shot 1 as a fact and found by the camera in shot 22, twenty-one shots later,
+  unannounced: Brian went out Tuesday, nobody follows it up in the room and the notes do not either. Seven
+  of twenty-six shots carry AI studies. Two are on the reject pile for the usual reasons: a 35mm medium on
+  Carl arrived as a whole-ring view in which two men sit in the same hunched pose, so the frame has no
+  subject. One exception is deliberate: the laminated sheet in shot 2 is the prop in a close-up, so its
+  handwriting is rendered as unreadable script rather than left out of frame — the no-legible-words rule
+  governs background signage, not the object a shot is about.
 - **Episode-four scene 6 — the kitchen:** [numbered scene](scenes/ep4-kitchen.md), 23 locked-off
   shots, day. His grammar for twenty-one frames — fluorescent, flat, the framing a hair
   off-centre — and her symmetry is never allowed to organise his rooms: the street in shots 22–23
@@ -265,10 +291,20 @@ that sits untouched in the cops' cup holder in episode one's second beat: the ob
 the threads do not meet, and no scene draws the line.
 
 Five supplied fixes are recorded against the scenes they touch, and none of them invents a
-shot: the 1980 prologue pockets the tracker at shot 12 with one montage flash of him
-fastening it round a girl's neck, and shot 31 is cut so the sequence goes straight from ERROR
-to UNDO? — logged on the 1980 tag, because the prologue itself is not boarded in this
-workspace; the washing-up board's shot 23 is corrected so the pendant is her mother's and she
+shot: the 1980 prologue pockets the tracker at shot 12 — he snaps it off the casing, looks at a
+small dull thing with a slow red pulse, and puts it in his jacket pocket without much thought —
+so there is no shot of a beacon on a carpet, because it is not there. One half-second flash is
+added near the end of the fame montage as shot 24f: 16mm handheld, over-exposed, his hands
+fastening something round a young woman's neck from behind, her laughing at him, the object
+never clear. And shot 31 is cut, so the sequence runs 30 → 32: USER PARAMETERS, ERROR, then the
+slow push to UNDO? — all of it logged on the 1980 tag, because the prologue itself is not boarded
+in this workspace.
+
+The consequence is accepted rather than papered over: the prologue no longer ends on an object
+that connects to Nina. Its last three shots are ERROR, UNDO? and NO, which is a stronger exit — a
+refusal, not a plant — and the connection lands on the audience in episode one's Nina scene, when
+she has the same object round her own neck. The alternative plant, a flash of the empty
+snapped-off gap in the casing, was considered and rejected. Do not reinstate it. the washing-up board's shot 23 is corrected so the pendant is her mother's and she
 always had it, never found on Deborah's bedside; the episode-four cold open is already at
 dusk, running continuously into Scene 2 at dusk into night, so no change was needed beyond
 the note; and Martin's storage-unit auction is marked PRE-RAPTURE, because the machine has
@@ -292,6 +328,14 @@ established it brown, 20 came back a medium-wide when the card says a 50mm mediu
 loaded the Transit with a bunch of bananas, weeds in the load bay and a second identical van in shot.
 A rejected study stays off the board instead of standing in because it looks nice. The mug in 09 is cold, skinned over and undrunk — the scene's only rhyme with
 the cops' bottle, and the rhyme is not underlined.
+
+- What Carl did is not decided, not hinted at and not recoverable from coverage. He nearly says it in shot
+  9 of the therapy class and the room reads the near-miss as modesty; the scene is written so that the
+  audience's curiosity is never paid off, and no later episode may pay it off as a fact. Whether Brian was
+  taken or simply went out is likewise unresolved: "He went out Tuesday" is the whole of it, and the scene's
+  rule is that nobody chases it. Whether Rosemary's dog story is true, and whether going up has anything to
+  do with being good, is not answered by the cosmology — the room's conclusion that they were kept back for
+  work is a conclusion the room arrived at, not a fact the show confirms.
 
 # Boundaries not silently resolved
 

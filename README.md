@@ -31,6 +31,12 @@ workspace, not just a folder of images:
   beat of exactly ninety seconds, static two-shot from the bonnet, ending the episode's comic
   thread on a worse note than it started before the 1980 tag closes it. Sixteen of the raid's
   21 shots are boarded.
+- **The therapy class:** Episode five's ensemble scene is a numbered 26-shot scene in the scout hut — one
+  question, fourteen self-serving answers, one sweating man's dead dog demolishing every theory in the room,
+  and ninety seconds of a group reasoning its way into a divine mandate with no objections. Three
+  protections hold on the cards: the long silence, the doctrine visibly invented on the spot, and Carl never
+  saying what he did. It moved from episode six so the doctrine has time to harden, which pushed the episode
+  three meeting back to recruitment only. Seven of its 26 shots are boarded.
 - **Nina's thread:** the first wrong lockup (31 shots), **Episode four Scene 4 — the housing
   estate** (36 shots, all boarded), **Scene 5 — the doorstep** (32 shots, all boarded) and
   **Scene 6 — the kitchen** (23 shots, 21 boarded so far) are numbered scenes in her locked-off
@@ -45,7 +51,7 @@ workspace, not just a folder of images:
   to episode three), and the scout-hut scene 3
   (17 shots, fully studied). The old-lady sequence is Scene 2 of episode
   four; its 32 shots are held by the outline, not yet boarded.
-- The complete bible in Notes, a six-object brainstorm map, and fifteen visual-reference boards.
+- The complete bible in Notes, a six-object brainstorm map, and sixteen visual-reference boards.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.
 
