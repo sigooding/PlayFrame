@@ -184,9 +184,10 @@ frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy
 for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
 interiors (2 and 34) and at the bus in 32, Nina is at the wheel on the far side (right-hand
 drive), the front passenger seat is empty, and Alan and the dog sit on the bench behind it on the
-passenger side, facing forward. Check Nina's face and coat, Alan's bag, the passenger-side seating, the bus's battered rear doors, the four places at
-the table in shot 21, and the poster spelling in shot 24 against the fragment in shot 7 before
-approving any of them.
+passenger side, facing forward. Check Nina's face and coat, Alan's bag, the passenger-side seating,
+the bus's battered rear doors and its nose-on orientation across 3, 4, 5, 11, 12 and 32, the four
+places at the table in shot 21, and the poster spelling in shot 24 against the fragment in shot 7
+before approving any of them.
 
 ## Boundaries not silently resolved
 
@@ -194,7 +195,8 @@ approving any of them.
   why a laid table for four stops her. The boy inferred by shot 15 and the boy in the school
   photograph in shot 29 are uncast and are deliberately not Max; the vision's `PTOR` fragment and
   the correctly spelled poster in shot 24 are held side by side and never reconciled. The dog that
-  barks off shot 13 is not hers. The scene keeps thirty identical houses as written; no number was
+  barks off shot 13 is not hers. Max has no identity sheet at all, so the boy caught mid-blink in shot
+  29 cannot drift into being him. The scene keeps thirty identical houses as written; no number was
   invented.
 - Max: flashbacks only, alive and unreachable. Episode eight says he knows the
   fields; no present-day reunion or delivery mechanism has been invented.
