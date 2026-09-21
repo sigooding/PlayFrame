@@ -9232,9 +9232,9 @@
     {
       "id": "rapture-ep5pn-40",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Running out (keyframe missing)",
+      "title": "Running out",
       "description": "HANDHELD — chaotic, 28mm",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/40-running-out.jpg",
       "shotType": "Wide",
       "movement": "Handheld",
       "lens": "35mm",
@@ -9243,21 +9243,21 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Handheld close dark red torchlight, demons only ever seen in someone's torch beam",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 40-running-out.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 40 of 51. Add the study and rebuild.\n\nHANDHELD chaotic 28mm. Two police officers running out of pensioner's house.\n\nSource lens: 28mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 4s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n40. HANDHELD — chaotic, 28mm\nTwo police officers running out of a pensioner's house."
+      "notes": "HANDHELD chaotic 28mm. Two police officers running out of pensioner's house.\n\nSource lens: 28mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 4s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n40. HANDHELD — chaotic, 28mm\nTwo police officers running out of a pensioner's house."
     },
     {
       "id": "rapture-ep5pn-41",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Everyone in (keyframe missing)",
+      "title": "Everyone in",
       "description": "EXT. ROAD — HANDHELD, 28mm",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/41-road-sprint.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -9266,7 +9266,7 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Handheld close dark red torchlight, demons only ever seen in someone's torch beam",
       "characters": [
@@ -9276,14 +9276,14 @@
         "rapture-jodie",
         "rapture-rescued-blank"
       ],
-      "notes": "KEYFRAME MISSING — 41-road-sprint.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 41 of 51. Add the study and rebuild.\n\nEXT. ROAD HANDHELD 28mm. Across road at sprint. Kath gets back door open. KATH: In! In! Everyone in! Danny still cuffed bundled in. Jodie dives after him. Neil gets in last and puts seatbelt on.\n\nSource lens: 28mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n41. EXT. ROAD — HANDHELD, 28mm\nAcross the road at a sprint. Kath gets the back door open.\nKATH: In! In! Everyone in!\nDanny, still cuffed, bundled in. Jodie dives in after him. Neil gets in last and puts his seatbelt on."
+      "notes": "EXT. ROAD HANDHELD 28mm. Across road at sprint. Kath gets back door open. KATH: In! In! Everyone in! Danny still cuffed bundled in. Jodie dives after him. Neil gets in last and puts seatbelt on.\n\nSource lens: 28mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n41. EXT. ROAD — HANDHELD, 28mm\nAcross the road at a sprint. Kath gets the back door open.\nKATH: In! In! Everyone in!\nDanny, still cuffed, bundled in. Jodie dives in after him. Neil gets in last and puts his seatbelt on."
     },
     {
       "id": "rapture-ep5pn-42",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "It doesn't start it starts (keyframe missing)",
+      "title": "It doesn't start it starts",
       "description": "HANDHELD — 35mm, through the windscreen",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/42-windscreen-keys.jpg",
       "shotType": "Medium",
       "movement": "Handheld",
       "lens": "35mm",
@@ -9292,20 +9292,20 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Handheld close dark red torchlight, demons only ever seen in someone's torch beam",
       "characters": [
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 42-windscreen-keys.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 42 of 51. Add the study and rebuild.\n\nHANDHELD 35mm through windscreen. Ray in driver's seat. Keys. It doesn't start. It starts.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 5s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n42. HANDHELD — 35mm, through the windscreen\nRay in the driver's seat. Keys. It doesn't start. It starts."
+      "notes": "HANDHELD 35mm through windscreen. Ray in driver's seat. Keys. It doesn't start. It starts.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 5s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n42. HANDHELD — 35mm, through the windscreen\nRay in the driver's seat. Keys. It doesn't start. It starts."
     },
     {
       "id": "rapture-ep5pn-43",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Bring my bottles back (keyframe missing)",
+      "title": "Bring my bottles back",
       "description": "STATIC WIDE — 24mm, locked off, from behind the car — same framing as shot 2",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/43-pulling-away.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -9314,20 +9314,20 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
         "rapture-pat"
       ],
-      "notes": "KEYFRAME MISSING — 43-pulling-away.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 43 of 51. Add the study and rebuild.\n\nSTATIC WIDE 24mm locked off from behind car — same framing as shot 2. Car pulls away hard. In lit doorway house Pat back to normal cardigan straight raising one hand. PAT: (calling pleasantly) Bring my bottles back love!\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n43. STATIC WIDE — 24mm, locked off, from behind the car — same framing as shot 2\nThe car pulls away hard. In the lit doorway of the house, Pat, back to normal, cardigan straight, raising one hand.\nPAT: (calling, pleasantly) Bring my bottles back, love!"
+      "notes": "STATIC WIDE 24mm locked off from behind car — same framing as shot 2. Car pulls away hard. In lit doorway house Pat back to normal cardigan straight raising one hand. PAT: (calling pleasantly) Bring my bottles back love!\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n43. STATIC WIDE — 24mm, locked off, from behind the car — same framing as shot 2\nThe car pulls away hard. In the lit doorway of the house, Pat, back to normal, cardigan straight, raising one hand.\nPAT: (calling, pleasantly) Bring my bottles back, love!"
     },
     {
       "id": "rapture-ep5pn-44",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "That was drugs (keyframe missing)",
+      "title": "That was drugs",
       "description": "INT. POLICE CAR — STATIC TWO-SHOT, 32mm, locked off, through the windscreen — their grammar, restored, five people in it now",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/44-five-in-car.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -9336,7 +9336,7 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
@@ -9346,14 +9346,14 @@
         "rapture-jodie",
         "rapture-rescued-blank"
       ],
-      "notes": "KEYFRAME MISSING — 44-five-in-car.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 44 of 51. Add the study and rebuild.\n\nINT. POLICE CAR STATIC TWO-SHOT 32mm locked off through windscreen — their grammar restored five people in it now. Kath and Ray front. Back squashed: Danny in cuffs Jodie Neil with seatbelt on. Nobody speaks. Hold eight seconds. KATH: That was drugs. RAY: Some sort of condition. KATH: Old people get conditions. RAY: They do.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 16s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n44. INT. POLICE CAR — STATIC TWO-SHOT, 32mm, locked off, through the windscreen — their grammar, restored, five people in it now\nKath and Ray in the front. In the back, squashed: Danny in cuffs, Jodie, Neil with his seatbelt on. Nobody speaks.\nHold. Eight seconds.\nKATH: That was drugs.\nRAY: Some sort of condition.\nKATH: Old people get conditions.\nRAY: They do."
+      "notes": "INT. POLICE CAR STATIC TWO-SHOT 32mm locked off through windscreen — their grammar restored five people in it now. Kath and Ray front. Back squashed: Danny in cuffs Jodie Neil with seatbelt on. Nobody speaks. Hold eight seconds. KATH: That was drugs. RAY: Some sort of condition. KATH: Old people get conditions. RAY: They do.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 16s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n44. INT. POLICE CAR — STATIC TWO-SHOT, 32mm, locked off, through the windscreen — their grammar, restored, five people in it now\nKath and Ray in the front. In the back, squashed: Danny in cuffs, Jodie, Neil with his seatbelt on. Nobody speaks.\nHold. Eight seconds.\nKATH: That was drugs.\nRAY: Some sort of condition.\nKATH: Old people get conditions.\nRAY: They do."
     },
     {
       "id": "rapture-ep5pn-45",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Arrested forever (keyframe missing)",
+      "title": "Arrested forever",
       "description": "STATIC TWO-SHOT — as 44",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/45-arrested.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -9362,7 +9362,7 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
@@ -9370,14 +9370,14 @@
         "rapture-ray",
         "rapture-danny"
       ],
-      "notes": "KEYFRAME MISSING — 45-arrested.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 45 of 51. Add the study and rebuild.\n\nSTATIC TWO-SHOT as 44. DANNY: Am I still under arrest? KATH: Yes. DANNY: After that? RAY: Can't un-arrest you. There's nobody to process it. DANNY: So I'm arrested forever? RAY: (considering it) Till something opens.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n45. STATIC TWO-SHOT — as 44\nDANNY: Am I still under arrest?\nKATH: Yes.\nDANNY: After that?\nRAY: Can't un-arrest you. There's nobody to process it.\nDANNY: So I'm arrested forever?\nRAY: (considering it) Till something opens."
+      "notes": "STATIC TWO-SHOT as 44. DANNY: Am I still under arrest? KATH: Yes. DANNY: After that? RAY: Can't un-arrest you. There's nobody to process it. DANNY: So I'm arrested forever? RAY: (considering it) Till something opens.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n45. STATIC TWO-SHOT — as 44\nDANNY: Am I still under arrest?\nKATH: Yes.\nDANNY: After that?\nRAY: Can't un-arrest you. There's nobody to process it.\nDANNY: So I'm arrested forever?\nRAY: (considering it) Till something opens."
     },
     {
       "id": "rapture-ep5pn-46",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Say sorry (keyframe missing)",
+      "title": "Say sorry",
       "description": "STATIC TWO-SHOT — as 44",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/46-say-sorry.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -9386,21 +9386,21 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
         "rapture-kath",
         "rapture-rescued-blank"
       ],
-      "notes": "KEYFRAME MISSING — 46-say-sorry.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 46 of 51. Add the study and rebuild.\n\nSTATIC TWO-SHOT as 44. Kath turns round in seat looks at Neil. KATH: You. NEIL: Hello. KATH: Say sorry. NEIL: I can only apologise.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n46. STATIC TWO-SHOT — as 44\nKath turns round in her seat. Looks at Neil.\nKATH: You.\nNEIL: Hello.\nKATH: Say sorry.\nNEIL: I can only apologise."
+      "notes": "STATIC TWO-SHOT as 44. Kath turns round in seat looks at Neil. KATH: You. NEIL: Hello. KATH: Say sorry. NEIL: I can only apologise.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n46. STATIC TWO-SHOT — as 44\nKath turns round in her seat. Looks at Neil.\nKATH: You.\nNEIL: Hello.\nKATH: Say sorry.\nNEIL: I can only apologise."
     },
     {
       "id": "rapture-ep5pn-47",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "That's our first one (keyframe missing)",
+      "title": "That's our first one",
       "description": "CLOSE — 65mm, static, on KATH",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/47-delighted.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "lens": "85mm",
@@ -9409,21 +9409,21 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "KEYFRAME MISSING — 47-delighted.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 47 of 51. Add the study and rebuild.\n\nCLOSE 65mm static on KATH. Genuinely delighted. KATH: (to Ray) There. RAY: That's one. KATH: That's our first one.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n47. CLOSE — 65mm, static, on KATH\nGenuinely delighted.\nKATH: (to Ray) There.\nRAY: That's one.\nKATH: That's our first one."
+      "notes": "CLOSE 65mm static on KATH. Genuinely delighted. KATH: (to Ray) There. RAY: That's one. KATH: That's our first one.\n\nSource lens: 65mm; closest library lens 85mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 6s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n47. CLOSE — 65mm, static, on KATH\nGenuinely delighted.\nKATH: (to Ray) There.\nRAY: That's one.\nKATH: That's our first one."
     },
     {
       "id": "rapture-ep5pn-48",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Evidence (keyframe missing)",
+      "title": "Evidence",
       "description": "INSERT — 85mm, static",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/48-cup-holder.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -9432,18 +9432,18 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 48-cup-holder.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 48 of 51. Add the study and rebuild.\n\nINSERT 85mm static. Cup holder. Jodie's hand comes through from back takes bottle and unscrews it.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 3s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n48. INSERT — 85mm, static\nThe cup holder. Jodie's hand comes through from the back, takes the bottle, and unscrews it."
+      "notes": "INSERT 85mm static. Cup holder. Jodie's hand comes through from back takes bottle and unscrews it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 3s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n48. INSERT — 85mm, static\nThe cup holder. Jodie's hand comes through from the back, takes the bottle, and unscrews it."
     },
     {
       "id": "rapture-ep5pn-49",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "I'd have to check (keyframe missing)",
+      "title": "I'd have to check",
       "description": "STATIC TWO-SHOT — as 44",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/49-evidence.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -9452,7 +9452,7 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
@@ -9460,7 +9460,7 @@
         "rapture-ray",
         "rapture-jodie"
       ],
-      "notes": "KEYFRAME MISSING — 49-evidence.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 49 of 51. Add the study and rebuild.\n\nSTATIC TWO-SHOT as 44. Nobody stops her. Ray watches her drink it in mirror. RAY: That's evidence that. JODIE: (still drinking) Of what? RAY: (long pause) I'd have to check.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n49. STATIC TWO-SHOT — as 44\nNobody stops her. Ray watches her drink it in the mirror.\nRAY: That's evidence, that.\nJODIE: (still drinking) Of what?\nRAY: (long pause) I'd have to check."
+      "notes": "STATIC TWO-SHOT as 44. Nobody stops her. Ray watches her drink it in mirror. RAY: That's evidence that. JODIE: (still drinking) Of what? RAY: (long pause) I'd have to check.\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 10s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n49. STATIC TWO-SHOT — as 44\nNobody stops her. Ray watches her drink it in the mirror.\nRAY: That's evidence, that.\nJODIE: (still drinking) Of what?\nRAY: (long pause) I'd have to check."
     },
     {
       "id": "rapture-ep5pn-50",
@@ -12697,7 +12697,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 26 shots, 136s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), 26 placeholder cards still to generate, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 148s, moved here from episode two), fully studied, the cops' second beat (6 shots, 90s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 305-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 159-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (23 shots, 353-second estimate), 21 AI studies and 2 placeholder cards, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 270-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 327-second estimate), 39 AI studies on disk and 12 placeholder cards still to generate, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Eight ordered boards (cold open, St Jude's, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 157 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 26 shots, 136s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), 26 placeholder cards still to generate, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 148s, moved here from episode two), fully studied, the cops' second beat (6 shots, 90s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 305-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 159-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (23 shots, 353-second estimate), 21 AI studies and 2 placeholder cards, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 270-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 327-second estimate), 49 AI studies on disk and 2 placeholder cards still to generate, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Eight ordered boards (cold open, St Jude's, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 157 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
