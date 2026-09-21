@@ -40,7 +40,7 @@ pass(`the bundled series fits the app's ceilings (${project.frames.length}/${MAX
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 22);
-assert.equal(project.frames.length, 526, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 24 kitchen from the retained episode-four Nina thread (22a terminal into bus), plus 21 Danny and Jodie, 6 cops second beat and 26 washing up FIX 4 in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 160 legacy slots (157 keyframes, 3 missing)");
+assert.equal(project.frames.length, 526, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 24 kitchen from the retained episode-four Nina thread (22a terminal into bus), plus 19 mugging, 19 St Jude's, 21 Danny and Jodie, 6 cops second beat and 26 washing up FIX 4 in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 122 legacy slots (119 keyframes, 3 missing)");
 assert.equal(project.scenes.length, 42);
 assert.equal(project.moodboards.length, 16);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
@@ -57,7 +57,7 @@ const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
 assert.equal(coldOpen.length, 17);
 assert.equal(lockup.length, 31);
-assert.equal(legacy.length, 160);
+assert.equal(legacy.length, 122);
 assert.equal(starterProjects.length, 4);
 assert.equal(starterProjects.filter(p => p.id === project.id).length, 1);
 assert.equal(starterProjects[0].title, "The Last Light", "Existing starter ordering must not change");
@@ -104,7 +104,7 @@ for (let i = 0; i < currentShots.length; i++) {
   if (i !== 0 && i !== 11) assert.equal(currentShots[i], oldShots[i], `Shot ${i + 1} must not be rewritten`);
   assert(ep4[i].notes.includes(currentShots[i]));
 }
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up", "rapture-ep5-pats-night", estate[0].sceneId, doorstep[0].sceneId, kitchen[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-mugging", "rapture-ep1-st-judes", "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up", "rapture-ep5-pats-night", estate[0].sceneId, doorstep[0].sceneId, kitchen[0].sceneId]);
 // The Screenplay tab is only as good as the script it carries: every scene with a written source
 // must be in it, exactly once, in episode order, read as its own block — and no outline may match
 // a neighbour's block, which is what sent "Therapy class" into episode four and left four written
@@ -120,10 +120,11 @@ for (const id of inScript.keys()) assert(fullScenes.has(id), `A scene with no wr
   assert(ordered.every(hit => !hit.approximate), "Every scripted scene must read as its own block, not a loose line match");
   assert.equal(ordered.length, fullScenes.size);
   for (let i = 1; i < ordered.length; i++) assert(actIndex(ordered[i - 1].sceneId) <= actIndex(ordered[i].sceneId), `The screenplay must run in episode order: ${ordered[i - 1].sceneId} then ${ordered[i].sceneId}`);
-  assert.equal(ordered[0].sceneId, "rapture-ep1-washing-up", "Episode one opens the screenplay with washing up");
+  assert.equal(ordered[0].sceneId, "rapture-ep1-mugging", "Episode one opens the screenplay with the mugging");
   assert.equal(ordered[ordered.length - 1].sceneId, "rapture-ep5-pats-night", "Episode five's night at Pat's closes the screenplay");
   assert(ordered[ordered.length - 1].blockEnd === project.script.length, "Nothing may follow the last scene's block");
-  assert(blockOf(ordered[0].sceneId).includes("1. STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY"), "Washing up keeps its numbered opening shot");
+  assert(blockOf(ordered[0].sceneId).includes("1. STATIC WIDE — 28mm"), "The mugging opens with its numbered alley shot");
+  assert(blockOf("rapture-ep1-washing-up").includes("1. STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY"), "Washing up keeps its numbered opening shot");
   assert(blockOf("rapture-ep4-pat-cold-open").includes("FIXED CAM"), "Pat's cold open is the fixed-camera scene");
   assert(blockOf("rapture-ep4-scout-hut").includes("Hold. CUT."), "The scout hut ends on Hold. CUT.");
   assert(inScript.get("rapture-ep4-pat-cold-open").blockStart < inScript.get("rapture-ep4-scout-hut").blockStart, "Pat's cold open precedes the scout hut in the combined script");
@@ -163,7 +164,7 @@ assert(!project.scenes.filter(s => s.actId === "rapture-episode-8").some(s => s.
 pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/Max boundaries intact");
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
-assert.equal(new Set(legacy.map(f => f.sceneId)).size, 8);
+assert.equal(new Set(legacy.map(f => f.sceneId)).size, 6);
 assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 23);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
@@ -177,7 +178,7 @@ for (const frame of legacy) {
   const [, prefix, n] = /^rapture-board-(.+)-(\d+)$/.exec(frame.id);
   (boards[prefix] = boards[prefix] || []).push([Number(n), frame]);
 }
-assert.equal(Object.keys(boards).length, 8);
+assert.equal(Object.keys(boards).length, 6);
 const missing = [];
 for (const [prefix, slots] of Object.entries(boards)) {
   slots.sort((a, b) => a[0] - b[0]);
@@ -190,7 +191,7 @@ for (const [prefix, slots] of Object.entries(boards)) {
 assert.deepEqual(missing.sort(), ["ep2s2-15.jpg", "ep2s3-15.jpg", "ep2s3-16.jpg"]);
 assert(legacy.every(f => f.image === "" ? (f.title.endsWith("(keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING")) : f.notes.startsWith("LEGACY BOARD")));
 assert(legacy.every(f => f.status === "Needs review" && f.durationIsEstimate === true && f.duration === 5));
-pass("eight legacy boards in scene order, numeric within each board, three missing-keyframe cards holding their slots; the retired washing-up board is no longer wired");
+pass("six legacy boards in scene order, numeric within each board, three missing-keyframe cards holding their slots; the retired washing-up, mugging and St Jude's boards are no longer wired");
 
 // The first wrong lockup: numbered, scripted, keyframes pending, shot 29 truncated.
 lockup.forEach((frame, i) => assert.equal(frame.id, `rapture-ep2-lockup-${String(i + 1).padStart(2, "0")}`, "Lockup numbering must be contiguous"));
@@ -416,7 +417,7 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 270 + 327 + 271 + 148 + 90 + 136 + 308 + 377 + 365 + 160 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 120 + 111 + 270 + 327 + 271 + 148 + 90 + 136 + 308 + 377 + 365 + 122 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -550,7 +551,7 @@ assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
 assert(legacy.every(f => f.image === "" || f.image.startsWith("/images/rapture/")), "Legacy keyframes live under /images/rapture/");
-assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 157);
+assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 119);
 assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board covers all thirteen studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-estate" && b.items.length === 36), "The estate board covers all thirty-six studies");
@@ -559,7 +560,7 @@ assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.l
 assert(project.moodboards.some(b => b.id === "rapture-look-danny-jodie" && b.items.length === 21), "The raid board covers all twenty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-cops-second" && b.items.length === 6), "The cops board covers all six studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-therapy" && b.items.length === 0), "The therapy-class board exists and honestly holds no studies yet");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-four kitchen studies from the retained Nina thread, 157 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-four kitchen studies from the retained Nina thread, 119 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");

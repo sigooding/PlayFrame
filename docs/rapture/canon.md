@@ -9,6 +9,18 @@ comedy in every thread; this is not noir and not a tragedy.
 
 - **Series bible:** the complete cause, tone, cosmology, blanks, water clock, cast,
   nine visual grammars, connective objects, eight episode outlines and final shots.
+- **The mugging:** [current numbered scene](scenes/ep1-mugging.md),
+  19 static shots in episode one's cold open. Sodium streetlight and shopfront spill;
+  the camera keeps operating after the violence as though the subject has merely
+  walked out of frame. The knife starts its journey through the old woman's handbag
+  and the support group. No mechanism revealed. No cast assigned. The19 legacy
+  keyframes (`shot-01`–`shot-19`) are now wired as scripted frames; the legacy board
+  is retired. All nineteen shots carry the legacy keyframes as draft references.
+- **St Jude's and the rapture:** [current numbered scene](scenes/ep1-st-judes.md),
+  19 locked-off daylight shots in episode one. Nina at St Jude's during the rapture;
+  people are there and then they aren't. One ignored complaint about water pressure.
+  The clipboard keeps swinging. The19 legacy keyframes (`a1s1-01`–`a1s1-19`) are
+  now wired as scripted frames; the legacy board is retired.
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
@@ -104,8 +116,8 @@ comedy in every thread; this is not noir and not a tragedy.
 - **App bundle:** `public/projects/let-the-raptures-commence.json`. Rebuild with
   `npm run build:rapture`; verify with `npm run verify:rapture`.
 - **The Screenplay tab is assembled from the scene sources, not typed separately.** The
-  builder joins every scene that has a written document — fifteen of them, from ep1 washing
-  up to ep5 the night at Pat's — in the workspace's own order (episode, then scene order), so
+  builder joins every scene that has a written document — seventeen of them, from ep1 the mugging
+  to ep5 the night at Pat's — in the workspace's own order (episode, then scene order), so
   the scene navigator, the storyboard and the episode export all read the same running order.
   A scene is located in the script by its slugline as a whole, never by its location as a
   substring: the therapy class and the episode-four scout hut share `INT. THE SCOUT HUT`, and
@@ -341,11 +353,10 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
 
 ## Legacy boards (wired into the storyboard as reference frames)
 
-Eight legacy boards plus fully boarded washing up, in story order, each in numeric filename order inside its scene:
+Six **legacy boards** plus fully boarded washing up, in story order, each in numeric filename order inside its scene:
 
-- Episode one: cold open (`shot-01`–`19` → The mugging), St Jude's (`a1s1-01`–`19`),
-  washing up now fully boarded as 26-shot scene (FIX 4) with placeholder cards until studies generated (`a1s3-01`–`37` legacy files remain on disk as reference but not wired), storage facility (`a1s4-01`–`24`),
-  police/car park (`a2s1-01`–`19`).
+- Episode one: storage facility (`a1s4-01`–`24`),
+  police/car park (`a2s1-01`–`19`). The mugging cold open (`shot-01`–`19`) and St Jude's (`a1s1-01`–`19`) are retired: their legacy keyframes are now wired as scripted frames in the numbered mugging and St Jude's scenes.
 - Episode two: Limbo (`ep2s1-01`–`30`), first raid (`ep2s2-01`–`16`, `15` missing),
   Hell intake (`ep2s3-01`–`19`, `15`–`16` missing), night drive (`w3-01`–`14`, its
   own legacy scene; episode-two placement is provisional).
