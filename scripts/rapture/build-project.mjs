@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, lockupSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, lockupGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, lockupPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, therapyClassSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, therapyClassGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, therapyClassPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -13,7 +13,10 @@ const ep3ColdOpenScreenplay = read("docs/rapture/scenes/ep3-cold-open.md");
 const patColdOpenScreenplay = read("docs/rapture/scenes/ep4-pat-cold-open.md");
 const patHouseScreenplay = read("docs/rapture/scenes/ep4-pat-house.md");
 const scoutHutScreenplay = read("docs/rapture/scenes/ep4-scout-hut.md");
+const therapyClassScreenplay = read("docs/rapture/scenes/ep5-therapy-class.md");
 const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
+const dannyJodieScreenplay = read("docs/rapture/scenes/ep1-danny-jodie.md");
+const copsSecondBeatScreenplay = read("docs/rapture/scenes/ep1-cops-second-beat.md");
 const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
 const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
 const episodes = sections.find(section => section.title === "EPISODES");
@@ -236,6 +239,36 @@ assert(scoutHut.every(f => f.characters.every(id => id === characterId("danny") 
 assert(scoutHut[1].notes.includes("MAN: How much?") && scoutHut[9].notes.includes("WOMAN: Let's have a look.") && scoutHut[10].notes.includes("WOMAN: That wants antibiotics."), "The unnamed group members' dialogue survives verbatim");
 assert(scoutHut[12].notes.includes("She leaves them by the gate") && scoutHut[6].notes.includes("Window frame."), "The gate arrangement and the whole of Danny's lie stay intact");
 
+// Therapy class — episode five, 26 shots, handheld close faces
+const therapyClassBlocks = [...therapyClassScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(therapyClassBlocks.length, 26, "Therapy class source must have 26 numbered shots");
+assert.equal(therapyClassPlan.length, 26, "Therapy class plan must cover all 26 shots");
+const therapyClassLens = { "35mm": "35mm", "50mm": "50mm", "28mm": "24mm" };
+const therapyClass = therapyClassBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Therapy class shot order must be contiguous");
+  assert(therapyClassLens[therapyClassPlan[i].lens], `No library lens mapped for therapy class source lens: ${therapyClassPlan[i].lens}`);
+  const plan = therapyClassPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const file = `/images/rapture/ep5-therapy-class/${plan.image}`;
+  const missing = true;
+  return {
+    id: `rapture-ep5tc-${String(n).padStart(2, "0")}`, sceneId: therapyClassSceneId,
+    title: `${plan.title} (keyframe missing)`,
+    description: body.split("\n")[0].trim(),
+    image: "",
+    shotType: plan.shotType, movement: "Handheld", lens: therapyClassLens[plan.lens],
+    angle: "Eye level", lighting: "Practical night",
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: "Needs review", transition: "Cut",
+    mood: "Dry, deadpan ensemble, funniest scene reasoning backwards from dead dog to divine mandate",
+    characters: plan.characters.map(characterId),
+    notes: `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep5-therapy-class, so this card holds slot ${n} of ${therapyClassPlan.length}. Add the study and rebuild.\n\n${plan.note}\n\n${therapyClassGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except long hold in 13).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(therapyClass.reduce((n, f) => n + f.duration, 0), 270, "Update timing when therapy class estimates change");
+
+
 assert(coldOpen.every(frame => frame.movement === "Static"), "Cold-open cameras never move");
 assert(coldOpen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-cold-open/")), "Cold-open keyframes live under /images/rapture/ep4-cold-open/");
 const lockupBlocks = [...lockupScreenplay.matchAll(/^(\d+)\. (STATIC WIDE|STATIC MEDIUM|MEDIUM|CLOSE|FLASH), (\d+mm), (locked off|static|handheld) — ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
@@ -271,9 +304,81 @@ assert.equal(new Set(lockupFrames.map(frame => frame.image)).size, 31, "One dedi
 const lockupTotal = lockupFrames.reduce((n, f) => n + f.duration, 0);
 assert.equal(lockupTotal, 271, "Update the timing note when lockup editorial estimates change");
 
+// Episode One new scenes — Danny and Jodie (21 shots) and Cops second beat (6 shots)
+// Both use the same parsing pattern as other scenes; lenses outside library map to closest.
+
+const dannyJodieBlocks = [...dannyJodieScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(dannyJodieBlocks.length, 21, "Danny and Jodie source must have 21 numbered shots");
+assert.equal(dannyJodiePlan.length, 21, "Danny and Jodie plan must cover all 21 shots");
+const dannyJodieLensMap = { "28mm": "24mm", "35mm": "35mm", "50mm": "50mm", "85mm": "85mm", "100mm": "85mm" };
+const dannyJodieFrames = dannyJodieBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Danny and Jodie shot order must be contiguous");
+  const plan = dannyJodiePlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const file = `/images/rapture/ep1-danny-jodie/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  const lens = dannyJodieLensMap[plan.lens] || plan.lens;
+  return {
+    id: `rapture-ep1dj-${String(n).padStart(2, "0")}`, sceneId: ep1DannyJodieSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description: body.split("\n")[0].trim(),
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: plan.movement, lens,
+    angle: plan.angle || "Eye level", lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-danny-jodie, so this card holds slot ${n} of ${dannyJodiePlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${dannyJodieLensMap[plan.lens] === plan.lens ? "" : `\n\nSource lens: ${plan.lens}; closest library lens ${lens} shown.`}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${dannyJodieGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+const dannyJodieTotal = dannyJodieFrames.reduce((n, f) => n + f.duration, 0);
+
+const copsSecondBeatBlocks = [...copsSecondBeatScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(copsSecondBeatBlocks.length, 6, "Cops second beat source must have 6 numbered shots");
+assert.equal(copsSecondBeatPlan.length, 6, "Cops second beat plan must cover all 6 shots");
+const copsSecondBeatFrames = copsSecondBeatBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Cops second beat shot order must be contiguous");
+  const plan = copsSecondBeatPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const file = `/images/rapture/ep1-cops-second/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep1c2-${String(n).padStart(2, "0")}`, sceneId: ep1CopsSecondBeatSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description: body.split("\n")[0].trim(),
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
+    angle: "Eye level", lighting: plan.lighting,
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, deadpan, worse note than it started; the bottle untouched",
+    characters: plan.characters.map(characterId),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-cops-second, so this card holds slot ${n} of ${copsSecondBeatPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${copsSecondBeatGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+const copsSecondBeatTotal = copsSecondBeatFrames.reduce((n, f) => n + f.duration, 0);
+
+
 // The cold open precedes Number Fourteen in episode four: five hours of fixed surveillance,
 // then the water stop. Not Pat's house, and not the chained blank's cellar.
 // The angels' cold open precedes the episode-three outline: immaculate, useless, in step.
+// Episode One new scenes — revised running order
+const dannyJodieScene = {
+  id: ep1DannyJodieSceneId, title: "Danny and Jodie", location: "INT./EXT. A HOUSE", time: "DUSK",
+  description: "Three weeks in, first appearance. They do this now, and she's better at it. Handheld, tight, dark, red practical light. Never a clean wide. Rules: nothing off anyone still alive, nothing off the dead that's got a name on it, no upstairs, and check the cistern. Header tank's better.",
+  characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-1",
+  kind: "Standard", lighting: "Practical night", lightingNotes: dannyJodieGrammar, style: "cinematic",
+};
+const copsSecondBeatScene = {
+  id: ep1CopsSecondBeatSceneId, title: "The cops, second beat", location: "INT. POLICE CAR — NIGHT (PARKED)", time: "NIGHT",
+  description: "Ninety seconds. Static two-shot from the bonnet, same bottle untouched. Ends the episode's comic thread on a worse note than it started: taser form, who is in charge — Us.",
+  characters: ["kath", "ray"].map(characterId), actId: "rapture-episode-1",
+  kind: "Standard", lighting: "Practical night", lightingNotes: copsSecondBeatGrammar, style: "cinematic",
+};
+
 const ep3ColdOpenScene = {
   id: ep3ColdOpenSceneId, title: "Cold open — the recovery angels", location: "EXT./INT. A PARK AND A GARDEN CENTRE", time: "DAY",
   description: "Hariel and Soqed locate nothing in an advert. The unnamed blank between the pallets is nobody's and joins no cast list.",
@@ -294,6 +399,12 @@ const scoutHutScene = {
   description: "The scene after the violence. He is bleeding, he has to explain nothing to anyone, and the group's only interest is the water. Four holes in a row that everyone decides not to see.",
   characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-4",
   kind: "Standard", lighting: "Practical night", lightingNotes: scoutHutGrammar, style: "cinematic",
+};
+const therapyClassScene = {
+  id: therapyClassSceneId, title: "Therapy class", location: "INT. THE SCOUT HUT", time: "DAY",
+  description: "Revised therapy class — 26 shots, handheld close faces, circle not quite circle, red fire door light + tarpaulin, never wide. Episode five placement, water brown and rationed. Protections: shot 13 silence long, hi-vis what we're for invented on spot, Carl never says what he did.",
+  characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-5",
+  kind: "Standard", lighting: "Practical night", lightingNotes: therapyClassGrammar, style: "cinematic",
 };
 const coldOpenScene = {
   id: coldOpenSceneId, title: "The interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
@@ -332,6 +443,13 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
     characters: cast.map(characterId), actId: `rapture-episode-${ep}`, kind: kind || "Standard",
   };
 });
+// Replace Episode One outline placeholders for new scenes with detailed scene objects
+{
+  const djIdx = scenes.findIndex(s => s.id === ep1DannyJodieSceneId);
+  if (djIdx !== -1) scenes[djIdx] = dannyJodieScene;
+  const c2Idx = scenes.findIndex(s => s.id === ep1CopsSecondBeatSceneId);
+  if (c2Idx !== -1) scenes[c2Idx] = copsSecondBeatScene;
+}
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-test") + 1, 0, coldOpenScene);
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-arrivals"), 0, ep3ColdOpenScene);
 // Scene 2 takes the outline's place in episode four; the cold open precedes it.
@@ -344,6 +462,10 @@ const patHouseScene = {
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-meetings"), 0, patHouseScene);
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep4-pat"), 0, patColdOpenScene);
 scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId), 0, scoutHutScene);
+{
+  const tcIdx = scenes.findIndex(s => s.id === therapyClassSceneId);
+  if (tcIdx !== -1) scenes[tcIdx] = therapyClassScene;
+}
 scenes.splice(scenes.findIndex(s => s.id === scoutHutSceneId) + 1, 0, scene);
 const lockupScene = {
   id: lockupSceneId, title: "The first wrong lockup", location: "EXT./INT. ROADS AND AN INDUSTRIAL ESTATE", time: "DAY",
@@ -382,12 +504,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...patOpen, ...patHouse, ...scoutHut, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...dannyJodieFrames, ...copsSecondBeatFrames, ...patOpen, ...patHouse, ...scoutHut, ...therapyClass, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, patOpen.length + patHouse.length + scoutHut.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, dannyJodieFrames.length + copsSecondBeatFrames.length + patOpen.length + patHouse.length + scoutHut.length + therapyClass.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
@@ -406,7 +528,7 @@ const scoutHutTotal = scoutHut.reduce((n, f) => n + f.duration, 0);
 notes.unshift({
   id: "rapture-read-me", title: "Start here — scope, timing and image status", color: "sage", createdAt,
   tags: ["Production", "Read first"],
-  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-and-Malcolm dusk open (${patOpen.length} shots, ${patOpenTotal}-second estimate, Graham already chained under the floor)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}, and Scene 2 — the old-lady sequence — is numbered (${patHouse.length} shots, ${patHouseTotal}-second estimate), two grammars never blended within a shot${patHouseMissing.length ? `, with ${patHouse.length - patHouseMissing.length} AI studies on disk and ${patHouseMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
+  content: `8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts. Episode One revised running order: mugging, St Jude's, cops (first beat), washing up (Nina Sc3, pendant is mother's always had it), Martin storage as pre-rapture flashback (machine eight weeks in Max's room), Danny and Jodie first appearance (${dannyJodieFrames.length} shots, ${dannyJodieTotal}s), cops second beat (${copsSecondBeatFrames.length} shots, ${copsSecondBeatTotal}s, 90s), then 1980 tag — roughly 42 minutes. Number Fourteen is fully boarded (13 shots, 175-second working estimate). The numbered cold opens: the episode-three angels (15 shots, 125-second estimate), Graham's interview — an episode-three scene since the restructure, circling what a blank is with the cops' test (${coldOpen.length} shots, ${coldOpenTotal}-second estimate)${coldOpenMissing.length ? `, with ${coldOpen.length - coldOpenMissing.length} AI studies on disk and ${coldOpenMissing.length} placeholder cards` : ", fully studied"}, the episode-four Pat-and-Malcolm dusk open (${patOpen.length} shots, ${patOpenTotal}-second estimate, Graham already chained under the floor)${patOpenMissing.length ? `, with ${patOpen.length - patOpenMissing.length} AI studies on disk and ${patOpenMissing.length} placeholder cards` : ", fully studied"}, the scout-hut scene 3 (${scoutHut.length} shots, ${scoutHutTotal}-second estimate)${scoutHutMissing.length ? `, with ${scoutHut.length - scoutHutMissing.length} AI studies on disk and ${scoutHutMissing.length} placeholder cards` : ", fully studied"}, and Scene 2 — the old-lady sequence — is numbered (${patHouse.length} shots, ${patHouseTotal}-second estimate), two grammars never blended within a shot${patHouseMissing.length ? `, with ${patHouse.length - patHouseMissing.length} AI studies on disk and ${patHouseMissing.length} placeholder cards` : ", fully studied"}. The first wrong lockup is numbered (${lockupFrames.length} shots, ${lockupTotal}-second estimate), boarded with AI-generated studies pending production review. Each explicit pause remains exactly as written.\n\nNine legacy reference boards (cold open, St Jude's, washing up, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — ${legacyKeyframes} keyframes${missingKeyframes.length ? ` plus ${missingKeyframes.length} cards holding the slots of missing files (${missingKeyframes.join(", ")})` : ""}. Shot type, movement, lens and the 5s durations on those boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md. The screenplay sources are docs/rapture/scenes/ep4-number-fourteen.md, docs/rapture/scenes/ep4-cold-open.md, docs/rapture/scenes/ep4-pat-cold-open.md, docs/rapture/scenes/ep4-pat-house.md, docs/rapture/scenes/ep4-scout-hut.md and docs/rapture/scenes/ep3-cold-open.md. The original scenes are preserved in scenes/archive/ep4-number-fourteen-v1.md and scenes/archive/ep4-pat-cold-open-v1.md (the dialogue-free Pat-alone open). Use Export → Project backup to retain your edits. Re-opening the bundled workspace never overwrites a saved project.`,
   connections: [{ targetId: sceneId, label: "Number Fourteen" }],
 });
 notes.push({
@@ -438,10 +560,10 @@ const moodboards = [{
 
 const project = {
   id: projectId, title: "Let the Raptures Commence",
-  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; the episode-three and episode-four cold opens (15 + 17 shots) and Number Fourteen (13 shots) are the working scenes.",
+  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with Danny and Jodie first appearance and cops second beat; the episode-three and episode-four cold opens (15 + 17 shots) and Number Fourteen (13 shots) are the working scenes plus Episode Five therapy class (26 shots, brown and rationed water). Fixes: prologue 12 pockets tracker (65mm static) + flash 24f fastening round girl neck (16mm over-exposed half second), shot 31 cut ERROR→UNDO? (30→32), Ep1 Sc3 shot 18 cut + 23-24 replaced own room bedside drawer practical decision, Ep4 cold open dusk continuous, Martin auction pre-rapture, Ep3 meeting trimmed to recruitment only (grandma/dog+nun moved to Ep5).",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
-  script: [lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
+  script: [dannyJodieScreenplay, copsSecondBeatScreenplay, lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
   shareId: null, createdAt, updatedAt: createdAt,
 };
 
