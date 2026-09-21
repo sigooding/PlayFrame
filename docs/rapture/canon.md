@@ -42,6 +42,39 @@ comedy in every thread; this is not noir and not a tragedy.
   aftercare still-life, and shot 16's rota is the forgery played as
   paperwork. Check the rota handwriting difference and the sleeve/arm
   continuity against Number Fourteen's card shot before approving.
+- **Episode-four scene 4 — the housing estate (retained):** [numbered scene](scenes/ep4-housing-estate.md),
+  36 locked-off shots at dusk. Nina's grammar, the wrong hour for the first time: she is sent to a
+  child's bedroom with no number and no name, so she audits a cul-de-sac of thirty identical semis
+  the way she would check a building for a gas leak. The laid table is the only thing that lands and
+  she does not stop for it; the poster matches the vision and does not; nothing answers twice. All
+  thirty-six shots carry AI studies.
+- **Episode-four scene 5 — the doorstep (retained):** [numbered scene](scenes/ep4-doorstep.md), 32
+  locked-off shots, day. Two grammars in one building that the film never resolves. Hers is
+  on the street and at the door — wide, symmetrical, deep focus, flat midday daylight, and
+  the three knocks are the same frame three times, because the repetition IS the joke. His is
+  indoors — fluorescent, flat, the framing a hair off-centre so it looks found rather than
+  composed. They are never blended inside one shot; the threshold in shot 8 is the only cut
+  that means anything. The machine is planted in an ordinary insert (shot 18) and she does
+  not clock it, so neither does the camera: no push-in, no light change, no sting, and the
+  audience gets there first. The snapped-off badge gap (shot 26) sits in one frame and is
+  never mentioned by anybody, in the scene or in the notes, ever. Martin's son is alive,
+  unseen and unflashbacked — the empty bed is the whole performance — and "Water's brown" is
+  the season's water clock ticking, deliberately unemphasised. All thirty-two shots carry AI studies.
+- **Episode-four scene 6 — the kitchen (retained):** [numbered scene](scenes/ep4-kitchen.md), 23 locked-off
+  shots, day. His grammar for twenty-one frames — fluorescent, flat, the framing a hair
+  off-centre — and her symmetry is never allowed to organise his rooms: the street in shots 22–23
+  is the only place the film squares up. Two protections, asserted in the builder and the verifier rather than
+  trusted: shot 15, where she asks once and then waits eight seconds, may not be cut for length
+  without asking; shot 19's "It's mine." is the most honest thing Martin says in the series, gets no
+  push-in, no light change and no second home in any other frame. The brown tap is stated once (shot
+  2) and the scene refuses to pay it off with a cut; her mug stays untouched the way the cops'
+  bottle does, and no scene points at the rhyme. The grievance is 2011, a job lot, "I bid against him" /
+  "And you won" — the year said once in the whole series, which corroborates the auction as
+  PRE-RAPTURE. The brother has an arcade, named flatly as the episode-eight location and not as a
+  setup. **Standing rule from shot 22: the machine travels in the back of the bus**, with Martin's
+  guitar case, from here on — every later bus frame shows it and none of them explains it. Shot 23
+  leaves the front door open and nobody shuts it. Twenty-one of twenty-three shots carry AI studies;
+  15 and 20 are the last two placeholders.
 - **The interview (episode three):** [numbered scene](scenes/ep4-cold-open.md),
   Graham's 17-shot Hell interview, re-homed to episode three so it sits with
   the angels' cold open and the cops' test: three scenes circling what a
@@ -174,6 +207,85 @@ linchpin insert: nothing wrong with them, nothing behind them either. Check
 the linen continuity between Hariel and Soqed, the too-perfect symmetry,
 and the blank's stillness across shots 9, 11 and 14 before approving.
 
+Thirty-six **housing-estate AI studies** in `public/images/rapture/ep4-estate/` board episode
+four scene 4, one keyframe per shot. Everything is locked off and dead centre except the five
+vision flashes (shots 6–10), which are deliberately wrong: 4:3-ish, blown out, tilted, torn by a
+dropped frame, matted into the 16:9 frame rather than cropped clean. Nina is in her navy work coat
+at dusk for the first time; Alan keeps the beige fleece and the Tesco bag for life. In both cab
+interiors (2 and 34) and at the bus in 32, Nina is at the wheel on the far side (right-hand
+drive), the front passenger seat is empty, and Alan and the dog sit on the bench behind it on the
+passenger side, facing forward. The van is squared to camera in every exterior (3, 4, 5, 11, 12,
+32) and is never silver. Check Nina's face and coat, Alan's bag, the passenger-side seating, the
+battered rear doors, the four untouched places at the table in shot 21, and the poster spelling in
+shot 24 against the fragment in shot 7 before approving any of them.
+
+Thirty-two **doorstep studies** in `public/images/rapture/ep4-doorstep/` board episode four
+scene 5, one keyframe per shot. Check them against the two grammars, not against taste. Shots
+1-3 must be the same camera setup at three doors: same height, same distance, the elevation
+squared dead centre, the white Transit in the middle of the road, and only the open door
+allowed to change; a frame that varies is a failed frame. Shots 4-8 stay hers (daylight,
+symmetrical, 50mm and 24mm only) even when the hall is visible behind him, and shot 9 is
+where his grammar starts. Alan and the dog appear twice only, both in her daylight, both
+through the minibus windscreen on the passenger side (shots 6 and 32), facing forward, nobody
+looking at anybody. The terminal (18, 24) is a beige unbranded 1990s box, dusty, plugged in,
+shot flat like a rental inventory photo. The pendant (22) is the only frame in the scene lit
+from inside the shot: a hard small filament, no bloom, no lens flare, no particles. The
+poster in 14 is the estate scene's shot-24 design — different house, same team, correctly
+spelled — so the audience can do the arithmetic. Every close-up inside the bedroom has to carry
+the same room — pale walls, grey bed, the dead CRT on the desk — because the model defaults to a
+generic spare bedroom the moment the wide is not in the reference set; where the poster is not the
+subject it is left out of frame rather than drawn half-legible, and no frame carries burnt-in words.
+
+Twenty-one **kitchen studies** in `public/images/rapture/ep4-kitchen/` board the scene, one keyframe
+per shot; 15 and 20 are the last two placeholders. **Screen direction is fixed in this room: Martin sits
+screen left, Nina screen right, in every frame, from the wide to the insert.** A frame that flips them is
+a re-shoot, not an alternate angle — shot 15 was rejected for exactly that, and it matters most there,
+because the eight-second wait has to read as the same held silence the audience has been sitting in.
+Shot 20 was rejected twice for the same class of error: the card is a 50mm medium on her alone as she
+takes her own water container off the table, and the model keeps putting Martin in the frame. Check them
+against his grammar and nothing else: flat overhead fluorescent, no warmth, no composition anyone would
+call a composition, locked off, and nothing in the room is permitted to look eerie — a beautiful frame
+here is a wrong frame. Shots 1, 3 and 6 are the same table from three set-ups and must not read as
+re-shoots of one another. Ten rejected takes are kept on disk as `.reject.jpg` and `.reject2.jpg` rather
+than deleted, and the builder and verifier both count them as rejects, never as studies: 05 came back a
+wide when the card says medium, 07 landed on 03's camera position, 13 framed her opposite an empty chair
+when Martin is in the scene to lie to, 17 was cut as a 40mm two-shot and came back a wide duplicating 12,
+12's first tap ran clear and its second did not run at all when shot 2 established it brown, 20 came back
+a medium-wide when the card says a 50mm medium on her alone, and 22 loaded the Transit with a bunch of
+bananas, weeds in the load bay and a second identical van in shot. A rejected study stays off the board
+instead of standing in because it looks nice. The mug in 09 is cold, skinned over and undrunk — the
+scene's only rhyme with the cops' bottle, and the rhyme is not underlined.
+
+Twenty-one **raid studies** in `public/images/rapture/ep1-danny-jodie/` board Danny and Jodie's first
+appearance, one keyframe per shot, all twenty-one present since the scene moved from episode two and was
+regenerated with the cast sheets in the reference set. Their grammar is not a look, it is a restriction:
+one small red practical, everything else black, framing that stays inside two metres, and no clean wide
+anywhere — the two wides are the stairwell and the exit and both are handheld. Check Danny's olive waxed
+jacket and satchel, Jodie's navy hoodie under the oversized olive jacket with the red bike light on her
+strap, and that the four-pint bottle is half full. The bottle is the same prop that sits untouched in the
+cops' cup holder in the second beat: the object travels, the threads do not meet, and no scene draws the
+line. The superseded episode-two folder is gone; the legacy `ep2s2` board remains as reference only.
+
+Six **cops second-beat studies** in `public/images/rapture/ep1-cops-second/` board all six shots: the same
+static two-shot from the bonnet three times, the same wide across two bays twice, and one insert of a
+bottle nobody has drunk. The repetition is the scene, so a frame that varies the setup is a failed frame.
+
+Thirty-nine **Night at Pat's studies** in `public/images/rapture/ep5-pats-night/` board shots 1–39 with the
+cast sheets in the reference set, so Kath, Ray, Danny, Jodie, Pat, Malcolm and Neil hold across the
+sequence. Shots 40–51 are honest placeholder cards: `40-running-out`, `41-road-sprint`, `42-windscreen-keys`,
+`43-pulling-away`, `44-five-in-car`, `45-arrested`, `46-say-sorry`, `47-delighted`, `48-cup-holder`,
+`49-evidence`, `50-laminate` and `51-tiny`. The builder checks the disk for every shot, so the thirty-nine
+present are Draft and the twelve absent are Needs review with the missing filename named on the card.
+
+Twenty-six **therapy-class placeholder cards** and twenty-six **washing-up placeholder cards** are numbered
+and hold their slots with no studies on disk yet: `public/images/rapture/ep5-therapy-class/` and
+`public/images/rapture/ep1-washing-up/` do not exist. Both scenes are fully written and fully boarded as
+cards, so the numbering, grammar and timing survive; only the images are outstanding. The nine earlier
+studies in `public/images/rapture/ep5-therapy/` were for the superseded therapy-class staging and have been
+removed rather than left to stand in for a different shot list — a rejected study stays off the board
+instead of standing in because it looks nice. The retired washing-up legacy board (`a1s3-01`–`37`) is still
+on disk and still unwired.
+
 Only written pauses are locked. Number Fourteen's **~175 seconds** and the lockup's
 **~271 seconds** are editorial playback estimates for those scenes, **not** finished
 episode runtimes. Other scenes
@@ -207,6 +319,15 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
   not been supplied; no link is asserted.
 - The correction is an **auction bid, not a rewind**. Limbo is outside time and
   keeps its queue. No epilogue or resolved faces are added.
+- **The retained episode-four Nina thread is not reconciled with the episode-five restructure, and
+  nothing here pretends otherwise.** Episode four keeps the housing estate, the doorstep and the
+  kitchen as boarded, so the machine still goes into the back of the bus in scene 6; episode five
+  takes the revised therapy class and the fifty-one-shot night at Pat's, which replaces the earlier
+  Pat's-house coverage and the basement, rescue and scent outlines, so Neil is still chained in
+  Pat's cellar. Whether Nina's audit and the rescue fall in the same week, and whether the terminal
+  in the bus is the terminal Max is using in the flashbacks, has not been supplied and is not
+  asserted. Episode one's pendant-and-first-vision outline is kept as a SUPERSEDED POSITION because
+  the beat now lives inside the boarded washing-up scene.
 
 ## Legacy boards (wired into the storyboard as reference frames)
 

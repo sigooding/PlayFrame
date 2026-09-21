@@ -3,6 +3,16 @@ import {
   type Act, type ActPart, type BrainstormNode, type CameraAngle, type CameraMovement, type Character, type CharacterRelation, type Lens, type Lighting, type MoodBoard, type ProjectNote, type ProjectPatch, type RelationKind, type Scene, type SceneKind, type ShotType, type StoryFrame, type Transition,
 } from "./types";
 
+// Collection ceilings. validatePatch rejects anything above them and sanitizeImport truncates to
+// them, so the two must never disagree. MAX_FRAMES is 1000 rather than 500 because a whole-series
+// storyboard is legitimately that long: the bundled Let the Raptures Commence workspace carries 525
+// numbered shots and legacy reference boards across eight episodes, and silently truncating it on
+// import would drop the tail of the season.
+export const MAX_ACTS = 20;
+export const MAX_SCENES = 500;
+export const MAX_FRAMES = 1000;
+export const MAX_NOTES = 500;
+
 const frameStatuses = ["Draft", "Ready", "Needs review"];
 const noteColors = ["sage", "sand", "rose"];
 const entityColors = ["sage", "sand", "rose", "clay"];
@@ -39,19 +49,19 @@ export function validatePatch(input: Record<string, unknown>): ProjectPatch {
     patch.coverImage = input.coverImage;
   }
   if (input.acts !== undefined) {
-    if (!Array.isArray(input.acts) || input.acts.length > 20 || !input.acts.every(actOk)) throw new Error("Please check your act and sequence details.");
+    if (!Array.isArray(input.acts) || input.acts.length > MAX_ACTS || !input.acts.every(actOk)) throw new Error("Please check your act and sequence details.");
     patch.acts = input.acts as Act[];
   }
   if (input.scenes !== undefined) {
-    if (!Array.isArray(input.scenes) || input.scenes.length > 500 || !input.scenes.every(sceneOk)) throw new Error("Please check your scene details.");
+    if (!Array.isArray(input.scenes) || input.scenes.length > MAX_SCENES || !input.scenes.every(sceneOk)) throw new Error("Please check your scene details.");
     patch.scenes = input.scenes as Scene[];
   }
   if (input.frames !== undefined) {
-    if (!Array.isArray(input.frames) || input.frames.length > 500 || !input.frames.every(frameOk)) throw new Error("Please check your frame details. Duration must be between 1 and 3,600 seconds.");
+    if (!Array.isArray(input.frames) || input.frames.length > MAX_FRAMES || !input.frames.every(frameOk)) throw new Error("Please check your frame details. Duration must be between 1 and 3,600 seconds.");
     patch.frames = input.frames as StoryFrame[];
   }
   if (input.notes !== undefined) {
-    if (!Array.isArray(input.notes) || input.notes.length > 500 || !input.notes.every(noteOk)) throw new Error("Please check your note details.");
+    if (!Array.isArray(input.notes) || input.notes.length > MAX_NOTES || !input.notes.every(noteOk)) throw new Error("Please check your note details.");
     patch.notes = input.notes as ProjectNote[];
   }
   if (input.characters !== undefined) {
@@ -95,7 +105,7 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
   const actIds = new Set(acts.map(a => a.id));
   const partIds = new Set(acts.flatMap(a => (a.parts || []).map(p => p.id)));
 
-  const scenes: Scene[] = list(input.scenes).slice(0, 500).map(s => {
+  const scenes: Scene[] = list(input.scenes).slice(0, MAX_SCENES).map(s => {
     const sc = (s || {}) as Record<string, unknown>;
     const kind = SCENE_KINDS.includes(sc.kind as SceneKind) ? (sc.kind as SceneKind) : undefined;
     return {
@@ -115,7 +125,7 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
   });
 
   const sceneIds = new Set(scenes.map(s => s.id));
-  const frames: StoryFrame[] = list(input.frames).slice(0, 500).map(f => {
+  const frames: StoryFrame[] = list(input.frames).slice(0, MAX_FRAMES).map(f => {
     const f_ = (f || {}) as Record<string, unknown>;
     const duration = Number(f_.duration);
     return {
@@ -141,7 +151,7 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
     };
   });
 
-  const notes: ProjectNote[] = list(input.notes).slice(0, 500).map(n => {
+  const notes: ProjectNote[] = list(input.notes).slice(0, MAX_NOTES).map(n => {
     const n_ = (n || {}) as Record<string, unknown>;
     return {
       id: id(n_.id),

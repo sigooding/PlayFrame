@@ -19,19 +19,30 @@ The series opens by default when present; an explicit `?project=<id>` always win
 The current **8 × 45min British black comedy** series prompt is integrated as an editable
 workspace, not just a folder of images:
 
-- Eight episode outlines and 32 outline entries (not eight completed scripts).
-- Twenty-one cast entries with reciprocal family/colleague links; the woman at Number
-  Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
+- **42 scenes and outlines, 525 numbered shots, 22 cast entries**, and eight episode
+  outlines that are not eight completed scripts. Cast links are reciprocal; the woman at
+  Number Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
   (the interview's contented blank, now an episode-three scene) from both.
-- **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
-  thirteen new AI-generated studies, one keyframe per shot.
-- **Cold opens:** three numbered scenes — the episode-four Pat-alone open
-  (12 dialogue-free surveillance shots, fully studied), the
-  episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
-  to episode three), and the scout-hut scene 3
-  (17 shots, fully studied). The old-lady sequence is Scene 2 of episode
-  four; its 32 shots are held by the outline, not yet boarded.
-- The complete bible in Notes, a six-object brainstorm map, and nine visual-reference boards.
+- **Episode One, revised running order (about 42 minutes before the tag):** washing up
+  (26 shots, FIX 4 — the pendant is her mother's and she always had it, shot 18 cut and
+  holding its slot), Danny and Jodie's first appearance (21 shots, moved here from episode
+  two) and the cops' second beat (6 shots, exactly ninety seconds), with Martin's storage
+  unit marked as a pre-rapture flashback.
+- **Episode Four:** the Pat-and-Malcolm cold open at dusk (16 shots) running continuously
+  into Scene 2, the old-lady sequence (35 shots); the scout hut (17 shots); **Number
+  Fourteen** (13 shots); then Nina's thread, retained and fully boarded — the housing
+  estate at dusk (36 shots), the doorstep (32 shots) and the kitchen (23 shots, 21 studied),
+  which is where the machine goes into the back of the bus for good.
+- **Episode Five:** the therapy class (26 shots, moved from episode six so the
+  maintain-order doctrine has time to harden, with its three protections asserted in the
+  builder and the verifier) and the night at Pat's (51 shots, 39 studied), which replaces
+  the earlier Pat's-house coverage and the basement, rescue and scent outlines. No CCTV
+  anywhere and two grammars only.
+- **Also numbered:** the episode-three angels (15 shots), Graham's interview (17 shots) and
+  the first wrong lockup (31 shots, one dedicated keyframe each).
+- The complete bible in Notes, a six-object brainstorm map, and sixteen visual-reference
+  boards. Every shot still to generate is an honest placeholder card that names the missing
+  file rather than borrowing a neighbouring study.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.
 
@@ -44,6 +55,11 @@ For an independent copy, import
 [`public/projects/let-the-raptures-commence.json`](public/projects/let-the-raptures-commence.json)
 using **Import project**. No external image host or credentials are needed.
 Export → Project backup preserves subsequent edits.
+
+Episode four's Nina thread and episode five's restructure are both current and are **not**
+merged into one another: the kitchen still ends with the terminal going into the back of the
+bus, and the night at Pat's still puts Neil in the cellar under the stairs. That boundary is
+recorded in the canon index rather than silently resolved.
 
 Sources and continuity decisions are indexed in [`docs/rapture/canon.md`](docs/rapture/canon.md).
 The latest bible supersedes the old sodium/teal and wide Crane boards. The two old
