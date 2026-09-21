@@ -19,15 +19,25 @@ The series opens by default when present; an explicit `?project=<id>` always win
 The current **8 × 45min British black comedy** series prompt is integrated as an editable
 workspace, not just a folder of images:
 
-- **42 scenes and outlines, 525 numbered shots, 22 cast entries**, and eight episode
-  outlines that are not eight completed scripts. Cast links are reciprocal; the woman at
+- **42 scenes and outlines, 526 numbered shots, 27 cast entries**, eight episode
+  outlines that are not eight completed scripts — and **one completed script: episode one**. Cast links are reciprocal; the woman at
   Number Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
   (the interview's contented blank, now an episode-three scene) from both.
-- **Episode One, revised running order (about 42 minutes before the tag):** washing up
-  (26 shots, FIX 4 — the pendant is her mother's and she always had it, shot 18 cut and
-  holding its slot), Danny and Jodie's first appearance (21 shots, moved here from episode
-  two) and the cops' second beat (6 shots, exactly ninety seconds), with Martin's storage
-  unit marked as a pre-rapture flashback.
+- **Episode One is written.** [`docs/rapture/ep1-screenplay.md`](docs/rapture/ep1-screenplay.md)
+  is the screenplay draft of 21 September 2026, and the Screenplay tab carries it verbatim as
+  eight per-scene pages in [`docs/rapture/screenplay/`](docs/rapture/screenplay/): the cold open on
+  the side street, St Jude's and the rapture at breakfast, the cops in the supermarket car park,
+  `ST JUDE'S - AFTER`, Martin at the storage facility (`SUPER: THREE MONTHS EARLIER`), Danny and
+  Jodie, the cops at night and the 1980 tag. `npm run build:rapture` fails unless the pages rebuild
+  the draft byte for byte; `node scripts/rapture/split-ep1-screenplay.mjs` regenerates them after an
+  edit to the draft.
+- **Episode One's boards are older than its script and are not re-boarded.** The mugging (19 shots),
+  St Jude's (19) and washing up (26 shots, FIX 4 — the pendant is her mother's and she always had it,
+  shot 18 cut and holding its slot) were written against earlier versions of those scenes, and the
+  cops' first beat, the storage facility and the tag have no board at all — they are marked
+  **WRITTEN, NOT BOARDED**. Episode one is still 9 scenes, 134 shots and about 820 seconds of
+  animatic estimates, with Danny and Jodie (21 shots) and the cops' second beat (6 shots, exactly
+  ninety seconds) matching the draft beat for beat.
 - **Episode Four:** the Pat-and-Malcolm cold open at dusk (16 shots) running continuously
   into Scene 2, the old-lady sequence (35 shots); the scout hut (17 shots); **Number
   Fourteen** (13 shots); then Nina's thread, retained and fully boarded — the housing
@@ -40,13 +50,15 @@ workspace, not just a folder of images:
   anywhere and two grammars only.
 - **Also numbered:** the episode-three angels (15 shots), Graham's interview (17 shots) and
   the first wrong lockup (31 shots, one dedicated keyframe each).
-- **The screenplay is the workspace's running order:** all fifteen written scenes — from
-  episode one's washing up, Danny and Jodie and the cops' second beat through episode five's
-  therapy class and the night at Pat's — are concatenated in episode order, so the scene
-  navigator, the storyboard and the episode export walk the script the same way. Clicking a
-  scene selects its own slugline (two scenes share `INT. THE SCOUT HUT` and are still told
-  apart), and the twenty-seven scenes that are outlines are marked **Outline** in the
-  navigator and say they have no page instead of landing in another episode's scene.
+- **The screenplay is the workspace's running order:** all twenty written scenes — episode one's
+  eight draft pages plus the twelve numbered scene documents from episode two's first wrong lockup
+  through episode five's night at Pat's — are concatenated in episode order, so the scene navigator,
+  the storyboard and the episode export walk the script the same way. Clicking a scene selects its
+  own slugline (two scenes share `INT. THE SCOUT HUT` and are still told apart, and episode one's
+  two parked police cars are told apart by day and night), and the twenty-two scenes that are still
+  outlines are marked **Outline** in the navigator and say they have no page instead of landing in
+  another episode's scene. A block starts at an `EPISODE …` line at column 0, so the draft's indented
+  `Episode One` title line stays text and never splits a scene in two.
 - The complete bible in Notes, a six-object brainstorm map, and sixteen visual-reference
   boards. Every shot still to generate is an honest placeholder card that names the missing
   file rather than borrowing a neighbouring study.
@@ -68,7 +80,10 @@ merged into one another: the kitchen still ends with the terminal going into the
 bus, and the night at Pat's still puts Neil in the cellar under the stairs. That boundary is
 recorded in the canon index rather than silently resolved.
 
-Sources and continuity decisions are indexed in [`docs/rapture/canon.md`](docs/rapture/canon.md).
+Sources and continuity decisions are indexed in [`docs/rapture/canon.md`](docs/rapture/canon.md),
+including what episode one's draft changes against the older boards and the boundaries it leaves
+open (the tag's `MONTHS LATER` against the bible's five years, `THREE MONTHS EARLIER` against eight
+weeks in Max's room, and `GABE HOLLAND` on the auction sheet).
 The latest bible supersedes the old sodium/teal and wide Crane boards. The two old
 wide framings in Number Fourteen are tightened; all dialogue and pauses remain unchanged,
 and the original scene is archived. New images are **draft AI studies**, not approved coverage;
@@ -76,6 +91,7 @@ check the review pointers in the shot notes before approving any of them.
 
 ```bash
 npm run build:rapture             # regenerate the JSON from the bible, script and production plan
+node scripts/rapture/split-ep1-screenplay.mjs   # re-split the episode-one draft into its eight pages
 npm run verify:rapture            # offline fidelity/schema/assets/prompts/CSV/persistence checks
 npm run verify:rapture -- --live   # also check every app tab and image; dev server must be running
 npm run verify:rapture:browser     # real desktop/mobile form, template and reload checks
@@ -162,7 +178,7 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run dev` | development server |
 | `npm run build` / `npm start` | production build and serve |
 | `npm run check:assets` | verifies every image the code references exists on disk |
-| `npm run export:episode -- --episode 1` | exports one episode of the series to a folder (`exports/episode-1/`): a single `episode-1.json` with the episode, scenes, shots, keyframes, screenplay, cast and mood boards, plus copies of every keyframe and the screenplay sources. `--out`, `--project`, `--json-only` and `--clean` are available; `--help` lists them |
+| `npm run export:episode -- --episode 1` | exports one episode of the series to a folder (`exports/episode-1/`): a single `episode-1.json` with the episode, scenes, shots, keyframes, screenplay, cast and mood boards, plus copies of every keyframe and the screenplay sources — the scene's own page first (`screenplay.kind: "page"`) and the numbered shot documents the storyboard was built from beside it (`storyboardSources`, `kind: "board"`). `--out`, `--project`, `--json-only` and `--clean` are available; `--help` lists them |
 | `npm run export:episode -- --reel` | the same export as **one self-contained file**, `exports/episode-1/reel.json`: no `images/` or `screenplay/` folder beside it, every keyframe and cast sheet embedded as a base64 data URI and the screenplay inlined (7 MB for episode 1, from 22 MB of images). Images are re-encoded to `--reel-width` (default 800px, JPEG `--reel-quality` 62) first — needs ImageMagick (`magick`/`convert`) on PATH, otherwise the originals are embedded as-is. `--reel-full` embeds untouched originals, `--name` renames the file |
 | `npm run verify:features` | checks the AI prompt models, the thirty visual styles, drives the real screenplay editor's undo/redo in jsdom, and maps every written scene in the bundled projects onto its own page of the screenplay (no server, no browser needed) |
 | `npm run verify:features:live` | the same, plus a check that `/?tab=screenplay` server-renders (needs the dev server running) |

@@ -78,8 +78,12 @@ export function frameContext(project: FilmProject, frame: StoryFrame): PromptCon
 // Production metadata (outline banners, board ranges, filenames) is never valid model input.
 const stripProductionMeta = (value?: string) => clean(value || "")
   .replace(/^OUTLINE ONLY — [^.]+\.\s*/, "")
+  .replace(/^WRITTEN, NOT BOARDED — [^.]+\.\s*/, "")
   .replace(/^LEGACY BOARD — [^.]+\.\s*/, "")
   .replace(/^KEYFRAME MISSING — [^.]+\.\s*/, "")
+  // Legacy reference boards: their status and their key range are production notes, not model input.
+  .replace(/\s*\([a-z0-9]+-\d+(?: to [a-z0-9]+-\d+)?\)/gi, "")
+  .replace(/[,;]?\s*(?:is\s+)?not approved coverage\.?/gi, "")
   .replace(/\s*\([A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)\)/gi, "")
   .replace(/Review every keyframe against the current grammar before production\.\s*/g, "")
   .trim();

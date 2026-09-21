@@ -23,7 +23,7 @@ await build({
   stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations"; export * from "./src/lib/structure";', resolveDir: root },
   outfile: exportsFile, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning",
 });
-const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
+const { validatePatch, sanitizeImport, isUuid, sceneHeadings, normaliseSlugline, episodeNumberOf, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
 
 // The bundled workspace has to fit inside the app's own ceilings: validatePatch rejects anything
 // above them and sanitizeImport truncates to them, so a series that outgrows a cap cannot be
@@ -39,7 +39,7 @@ pass(`the bundled series fits the app's ceilings (${project.frames.length}/${MAX
 
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
-assert.equal(project.characters.length, 22);
+assert.equal(project.characters.length, 27, "22 series cast plus Brian, Terry, Col, Deborah and Maureen from the episode-one draft");
 assert.equal(project.frames.length, 526, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 24 kitchen from the retained episode-four Nina thread (22a terminal into bus), plus 19 mugging, 19 St Jude's, 21 Danny and Jodie, 6 cops second beat and 26 washing up FIX 4 in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 122 legacy slots (119 keyframes, 3 missing)");
 assert.equal(project.scenes.length, 42);
 assert.equal(project.moodboards.length, 16);
@@ -104,7 +104,7 @@ for (let i = 0; i < currentShots.length; i++) {
   if (i !== 0 && i !== 11) assert.equal(currentShots[i], oldShots[i], `Shot ${i + 1} must not be rewritten`);
   assert(ep4[i].notes.includes(currentShots[i]));
 }
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-mugging", "rapture-ep1-st-judes", "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up", "rapture-ep5-pats-night", estate[0].sceneId, doorstep[0].sceneId, kitchen[0].sceneId]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-mugging", "rapture-ep1-st-judes", "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up", "rapture-ep5-pats-night", estate[0].sceneId, doorstep[0].sceneId, kitchen[0].sceneId, "rapture-ep1-cops", "rapture-ep1-storage", "rapture-ep1-no"]);
 // The Screenplay tab is only as good as the script it carries: every scene with a written source
 // must be in it, exactly once, in episode order, read as its own block — and no outline may match
 // a neighbour's block, which is what sent "Therapy class" into episode four and left four written
@@ -123,12 +123,101 @@ for (const id of inScript.keys()) assert(fullScenes.has(id), `A scene with no wr
   assert.equal(ordered[0].sceneId, "rapture-ep1-mugging", "Episode one opens the screenplay with the mugging");
   assert.equal(ordered[ordered.length - 1].sceneId, "rapture-ep5-pats-night", "Episode five's night at Pat's closes the screenplay");
   assert(ordered[ordered.length - 1].blockEnd === project.script.length, "Nothing may follow the last scene's block");
-  assert(blockOf(ordered[0].sceneId).includes("1. STATIC WIDE — 28mm"), "The mugging opens with its numbered alley shot");
-  assert(blockOf("rapture-ep1-washing-up").includes("1. STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY"), "Washing up keeps its numbered opening shot");
+  assert(blockOf(ordered[0].sceneId).includes("EXT. SIDE STREET — EARLY MORNING") && blockOf(ordered[0].sceneId).includes("Still dark. Sodium light. Bins."), "Episode one opens on the draft's side street, not the retired alley board");
+  assert(blockOf("rapture-ep1-washing-up").includes("INT. ST JUDE'S HOUSE - DINING ROOM - LATER"), "Washing up carries the draft's ST JUDE'S - AFTER section");
   assert(blockOf("rapture-ep4-pat-cold-open").includes("FIXED CAM"), "Pat's cold open is the fixed-camera scene");
   assert(blockOf("rapture-ep4-scout-hut").includes("Hold. CUT."), "The scout hut ends on Hold. CUT.");
   assert(inScript.get("rapture-ep4-pat-cold-open").blockStart < inScript.get("rapture-ep4-scout-hut").blockStart, "Pat's cold open precedes the scout hut in the combined script");
   pass(`the screenplay carries all ${fullScenes.size} scripted scenes in episode order and no outline borrows a page`);
+}
+
+// ---------------------------------------------------------------------------
+// Episode one: the draft of 21 September 2026 IS the screenplay
+// ---------------------------------------------------------------------------
+{
+  const draft = read("docs/rapture/ep1-screenplay.md");
+  const pagesDir = join(root, "docs", "rapture", "screenplay");
+  const pageFiles = readdirSync(pagesDir).filter(name => name.endsWith(".md")).sort();
+  assert.deepEqual(pageFiles, ["ep1-01-side-street.md", "ep1-02-st-judes-house.md", "ep1-03-police-car-day.md", "ep1-04-st-judes-after.md", "ep1-06-storage-facility.md", "ep1-07-danny-and-jodie.md", "ep1-08-police-car-night.md", "ep1-09-hotel-room.md"], "Episode one's draft is split into eight pages, numbered by scene and named for the draft's own sections");
+  const pages = pageFiles.map(name => ({ name, text: read(`docs/rapture/screenplay/${name}`) }));
+  // A page is the draft verbatim under an injected production header, and the draft's own "==="
+  // separator belongs to the page before it — so the bodies re-join into the draft byte for byte.
+  const HEADER = /^(LET THE RAPTURES COMMENCE|EPISODE ONE |EXT\.|INT\.|Source: |The numbered shot board |No numbered shot board |Cast: |Grammar: |$)/;
+  const bodies = pages.map(page => page.text.split("\n").filter((line, i) => !(i < 9 && HEADER.test(line))).join("\n").trim());
+  assert.equal(bodies.join("\n\n") + "\n", draft, "The pages must rebuild docs/rapture/ep1-screenplay.md exactly — regenerate them with scripts/rapture/split-ep1-screenplay.mjs");
+  for (const page of pages) {
+    const lines = page.text.split("\n");
+    assert.equal(lines[0], "LET THE RAPTURES COMMENCE", `${page.name} must open with the series line`);
+    assert(/^EPISODE ONE — /.test(lines[1]), `${page.name} must carry an EPISODE ONE line so the screenplay reads it as one block`);
+    assert.equal(lines.filter(line => episodeNumberOf(line) !== null).length, 1, `${page.name} must carry exactly one episode heading, or the screenplay splits the scene in two — the draft's indented "Episode One" title line is text and must stay indented`);
+    assert(page.text.includes("Source: the episode-one screenplay draft of 21 September 2026"), `${page.name} must name its source`);
+  }
+  // Page order is the draft's running order, which is also the order the workspace lists the scenes:
+  // the cops' first beat sits between St Jude's and the clearing-up run that follows it.
+  const ep1Ids = ["rapture-ep1-mugging", "rapture-ep1-st-judes", "rapture-ep1-cops", "rapture-ep1-washing-up", "rapture-ep1-storage", "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep1-no"];
+  pages.forEach((page, i) => {
+    const scene = project.scenes.find(candidate => candidate.id === ep1Ids[i]);
+    const hit = inScript.get(scene.id);
+    assert(hit, `${scene.title} has no page in the assembled screenplay`);
+    assert(hit.heading.startsWith(scene.location.toUpperCase()), `${scene.title} must select its own slugline, got ${JSON.stringify(hit.heading)}`);
+    assert.equal(hit.heading, page.text.split("\n")[3], `${scene.title}'s navigator heading must be its page's first slugline`);
+    assert(sceneHeadings(scene).includes(normaliseSlugline(hit.heading)), `${scene.title}'s slugline must match its page`);
+    // The assembled script is the page as the app renders it: markdown heading markers stripped and
+    // the trailing "===" separator (which belongs between pages) dropped. Nothing else may change.
+    const asScript = text => text.replace(/^#{1,2} /gm, "").replace(/(?:\n+=)+\n*$/, "");
+    assert.equal(project.script.slice(hit.blockStart, hit.blockEnd), asScript(page.text), `${scene.title}'s page must reach the Screenplay tab unchanged`);
+  });
+  const draftOrder = pages.map((page, i) => inScript.get(ep1Ids[i]).blockStart);
+  assert(draftOrder.every((start, i) => i === 0 || start > draftOrder[i - 1]), "Episode one runs in the draft's own order: cold open, St Jude's, the cops, after, Martin, Danny and Jodie, the cops at night, the tag");
+  const sceneOrder = ep1Ids.map(id => project.scenes.findIndex(scene => scene.id === id));
+  assert(sceneOrder.every((at, i) => i === 0 || at > sceneOrder[i - 1]), "The workspace lists episode one's scenes in the draft's order, so the navigator and the script agree");
+  assert(!inScript.has("rapture-ep1-bearing"), "The superseded pendant-and-first-vision outline still has no page of its own");
+  const written = lines => blockOf(lines).split("\n").map(line => line.trim());
+  for (const line of [
+    "And he isn't there.",
+    "The knife drops. Hits the pavement. Rings. Lies still.",
+    "picks up the knife in the tissue, and puts it in her handbag.",
+    "> LET THE RAPTURES COMMENCE <",
+    "NO VISITORS BEFORE 10. THIS MEANS YOU, TERRY.",
+    "She hangs up and writes 22 in a ledger without pausing.",
+    "You want Deborah's room because it's got the aerial. No.",
+    "Especially the inconvenience bit.",
+    "— so I said to him, that's not a dog, mate, that's a —",
+    "A knife spinning slowly on a plate rim.",
+    "There's no court yet.",
+    "GONE OUT. DO NOT TOUCH THE BOILER. — N.",
+    "She does not put them back. She takes both.",
+    "That's not an address.",
+    "underlined twice: GABE HOLLAND.",
+    "MAX: what time u back",
+    "He runs his thumb over the gap. Shrugs. Drops it in with three other dead machines.",
+    "It's not that sort of lock.",
+    "And check the cistern.",
+    "What's a header tank?",
+    "Then there isn't a form.",
+    "Who do you think's in charge now?",
+    "SOCIAL STATUS 50",
+    "CHORD PROGRESSION IV-V-vi-IV",
+    "IMAGE = ROCK STAR",
+    "The cursor blinks. It blinks for a long time.",
+    "> END OF EPISODE ONE <",
+  ]) assert(project.script.includes(line), `Episode one's draft lost a line: ${line}`);
+  const stJudes = project.scenes.find(s => s.id === "rapture-ep1-st-judes");
+  for (const key of ["brian", "terry", "col", "deborah", "maureen"]) assert(stJudes.characters.includes(`rapture-${key}`), `St Jude's must be cast with the draft's residents: ${key}`);
+  const brian = project.characters.find(c => c.id === "rapture-brian"), terry = project.characters.find(c => c.id === "rapture-terry");
+  const col = project.characters.find(c => c.id === "rapture-col"), deborah = project.characters.find(c => c.id === "rapture-deborah");
+  assert(brian.relations.some(r => r.targetId === terry.id && r.kind === "Rival") && terry.relations.some(r => r.targetId === brian.id && r.kind === "Rival"), "The charger dispute is a reciprocal rivalry");
+  assert(col.relations.some(r => r.targetId === deborah.id && r.kind === "Rival") && deborah.relations.some(r => r.targetId === col.id && r.kind === "Rival"), "The room with the aerial is a reciprocal rivalry");
+  const mugging = project.scenes.find(s => s.id === "rapture-ep1-mugging");
+  assert.equal(mugging.time, "EARLY MORNING", "The cold open moved from the retired board's alley night to the draft's side street");
+  assert.equal(project.scenes.find(s => s.id === "rapture-ep1-no").time, "DAY", "The 1980 tag is a day scene with the curtains shut mid-afternoon");
+  // The draft rewrites the mugging and St Jude's; the boards behind them were not re-shot, and the
+  // workspace must say so rather than let a stale card read as coverage of the new page.
+  for (const id of ["rapture-ep1-mugging", "rapture-ep1-st-judes"]) {
+    const scene = project.scenes.find(candidate => candidate.id === id);
+    assert(/not been re-boarded|predates this page/.test(scene.description), `${scene.title} must say its board predates the draft`);
+  }
+  pass("episode one's draft of 21 September 2026 is the screenplay: eight pages, verbatim, in the draft's own order, with the St Jude's residents cast");
 }
 const pauses = text => [...text.matchAll(/A (\d+)-second pause/g)].map(m => Number(m[1]));
 assert.deepEqual(pauses(source), pauses(original));
@@ -156,6 +245,15 @@ assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
+// Episode one's draft writes three scenes this workspace has never boarded. They carry a page and a
+// grammar, so they must not be labelled as outlines — and they must not claim to be boarded either.
+for (const id of ["rapture-ep1-cops", "rapture-ep1-storage", "rapture-ep1-no"]) {
+  const scene = project.scenes.find(candidate => candidate.id === id);
+  assert(scene.description.startsWith("WRITTEN, NOT BOARDED"), `${scene.title} is written now, so it is neither an outline nor a board`);
+  assert(!scene.title.endsWith("— outline"), `${scene.title} must not be titled as an outline`);
+  assert(inScript.has(id), `${scene.title} has a page, so the navigator must find it`);
+}
+assert(project.scenes.filter(s => s.actId === "rapture-episode-1" && s.id !== "rapture-ep1-bearing").every(s => inScript.has(s.id)), "Every episode-one scene except the superseded bearing outline has a page");
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
 assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");
 assert(patOpen.every(f => f.characters.every(id => ["rapture-pat", "rapture-malcolm", "rapture-graham"].includes(id))), "Only Pat, Malcolm and the heard-not-seen Graham appear in her cold open");

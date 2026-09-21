@@ -10,7 +10,11 @@ import { formatCount } from "@/lib/format";
 
 type Jump = { start: number; end: number; stamp: number };
 
-/** The series bundle labels a scene that is planned but not written: "OUTLINE ONLY — ...". */
+/**
+ * The series bundle labels a scene that is planned but not written "OUTLINE ONLY — ...". A scene
+ * the draft has written but nobody has boarded yet says "WRITTEN, NOT BOARDED — ...": it has a
+ * page, so the navigator must not tell the writer it is still an outline.
+ */
 const isOutline = (scene: Scene) => /^OUTLINE ONLY\b/.test(scene.description.trim());
 
 interface HistoryEntry {

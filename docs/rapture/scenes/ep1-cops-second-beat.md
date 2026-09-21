@@ -1,7 +1,10 @@
 # LET THE RAPTURES COMMENCE
+
+> **Board, not script.** The screenplay page for this scene is [ep1-08-police-car-night.md](../screenplay/ep1-08-police-car-night.md). The episode-one draft of 21 September 2026 carries this scene verbatim — all six shots and every pause. The page is the script; this document is the shot board behind it.
+
 ## EPISODE ONE — THE COPS, SECOND BEAT
 
-Scene: INT. POLICE CAR — NIGHT (PARKED)
+Scene: INT. POLICE CAR (PARKED) — NIGHT
 Cast: KATH (30s), RAY (30s)
 Grammar: static two-shot from the bonnet. The same bottle of water in the cup holder, untouched.
 

@@ -1,4 +1,7 @@
 # LET THE RAPTURES COMMENCE
+
+> **Board, not script.** The screenplay page for this scene is [ep1-02-st-judes-house.md](../screenplay/ep1-02-st-judes-house.md). The scene is now written as an ensemble breakfast in the episode-one draft of 21 September 2026 — Brian, Terry, Col, Deborah, Maureen and a volunteer, with the rapture landing mid-anecdote on Terry at a table of twenty. This board was a two-hander and is **reference only**; it has not been re-boarded.
+
 ## EPISODE 1 — SCENE 2 — ST JUDE'S AND THE RAPTURE
 
 Scene: INT. ST JUDE'S — DAY

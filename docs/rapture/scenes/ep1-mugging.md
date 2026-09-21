@@ -1,4 +1,7 @@
 # LET THE RAPTURES COMMENCE
+
+> **Board, not script.** The screenplay page for this scene is [ep1-01-side-street.md](../screenplay/ep1-01-side-street.md). The scene is now written as `EXT. SIDE STREET - EARLY MORNING` in the episode-one draft of 21 September 2026: the mugger is 19, she hands the bag over, he goes mid-reach, and she bags his knife in a tissue. This board was written for the alley at night and is **reference only** — it has not been re-boarded, and none of its keyframes is coverage of the page.
+
 ## EPISODE ONE — THE MUGGING
 
 Scene: EXT. ALLEY — NIGHT

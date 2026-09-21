@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards, copsFirstBeatGrammar, storageGrammar, tagGrammar } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -24,6 +24,33 @@ const dannyJodieScreenplay = read("docs/rapture/scenes/ep1-danny-jodie.md");
 const copsSecondBeatScreenplay = read("docs/rapture/scenes/ep1-cops-second-beat.md");
 const muggingScreenplay = read("docs/rapture/scenes/ep1-mugging.md");
 const stJudesScreenplay = read("docs/rapture/scenes/ep1-st-judes.md");
+
+// ---------------------------------------------------------------- episode one's screenplay pages
+// The episode-one draft of 21 September 2026 (docs/rapture/ep1-screenplay.md) is the Screenplay
+// tab's source for all eight of the episode's written scenes. docs/rapture/scenes/ep1-*.md stay as
+// they are: numbered shot boards that the storyboard is built from, and nothing else. A page is
+// verbatim draft text under an injected production header, so the header is the only thing the
+// builder is allowed to remove, and what is left has to rebuild the draft byte for byte.
+const ep1Draft = read("docs/rapture/ep1-screenplay.md");
+const ep1PageFiles = [
+  "ep1-01-side-street.md", "ep1-02-st-judes-house.md", "ep1-03-police-car-day.md", "ep1-04-st-judes-after.md",
+  "ep1-06-storage-facility.md", "ep1-07-danny-and-jodie.md", "ep1-08-police-car-night.md", "ep1-09-hotel-room.md",
+];
+// Page order is the workspace's scene order, which is the draft's own running order.
+const ep1PageScenes = [muggingSceneId, stJudesSceneId, "rapture-ep1-cops", washingUpSceneId, "rapture-ep1-storage", ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, "rapture-ep1-no"];
+const ep1Pages = ep1PageFiles.map((file, i) => ({ file, sceneId: ep1PageScenes[i], text: read(`docs/rapture/screenplay/${file}`) }));
+const EP1_PAGE_HEADER = /^(LET THE RAPTURES COMMENCE|EPISODE ONE |EXT\.|INT\.|Source: |The numbered shot board |No numbered shot board |Cast: |Grammar: |$)/;
+const ep1PageBody = page => page.text.split("\n").filter((line, i) => !(i < 9 && EP1_PAGE_HEADER.test(line))).join("\n").trim();
+assert.equal(ep1Pages.map(ep1PageBody).join("\n\n") + "\n", ep1Draft, "The episode-one pages must rebuild the draft of 21 September 2026 exactly — regenerate them with scripts/rapture/split-ep1-screenplay.mjs");
+for (const page of ep1Pages) {
+  const lines = page.text.split("\n");
+  assert.equal(lines[0], "LET THE RAPTURES COMMENCE", `${page.file} must open with the series line`);
+  assert(/^EPISODE ONE — /.test(lines[1]), `${page.file} must carry an EPISODE ONE line so the screenplay reads it as its own block`);
+  assert(/^(INT|EXT)\./.test(lines[3]), `${page.file} must put the scene's own slugline first: ${lines[3]}`);
+  // One unindented episode line per page: a second one would split the scene into two blocks and
+  // the navigator would select the stub. The draft's title page indents "EPISODE ONE" for this reason.
+  assert.equal(lines.filter(line => /^\s*episode\s+(one|1)\b/i.test(line) && !/^\s/.test(line)).length, 1, `${page.file} must carry exactly one episode heading at column 0`);
+}
 const plain = value => value.replace(/\*\*/g, "").replace(/(?<!\*)\*([^*\n]+)\*/g, "$1").replace(/`/g, "");
 const sections = [...bible.matchAll(/^## (.+)\n+([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(([, title, text]) => ({ title, text: text.trim() }));
 const episodes = sections.find(section => section.title === "EPISODES");
@@ -657,27 +684,49 @@ for (const [name, map] of Object.entries({ ep3Lens, scoutHutLens, therapyClassLe
 // Episode One new scenes — revised running order
 const dannyJodieScene = {
   id: ep1DannyJodieSceneId, title: "Danny and Jodie", location: "INT./EXT. A HOUSE", time: "DUSK",
-  description: "Three weeks in, first appearance. They do this now, and she's better at it. Handheld, tight, dark, red practical light. Never a clean wide. Rules: nothing off anyone still alive, nothing off the dead that's got a name on it, no upstairs, and check the cistern. Header tank's better.",
+  description: "Three weeks in, first appearance. They do this now, and she's better at it. Handheld, tight, dark, red practical light — her bike light clipped to her coat in the draft. Never a clean wide. Rules: nothing off anyone who's still alive, nothing off the dead that's got a name on it, no upstairs, and check the cistern. A going-out coat on the bannister, twenty photographs of the same two people, one dull thump, and header tank's better.",
   characters: ["danny", "jodie"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Practical night", lightingNotes: dannyJodieGrammar, style: "cinematic",
 };
 const copsSecondBeatScene = {
-  id: ep1CopsSecondBeatSceneId, title: "The cops, second beat", location: "INT. POLICE CAR — NIGHT (PARKED)", time: "NIGHT",
-  description: "Ninety seconds. Static two-shot from the bonnet, same bottle untouched. Ends the episode's comic thread on a worse note than it started: taser form, who is in charge — Us.",
+  id: ep1CopsSecondBeatSceneId, title: "The cops, second beat", location: "INT. POLICE CAR (PARKED)", time: "NIGHT",
+  description: "Ninety seconds, written verbatim in the episode-one draft. Static two-shot from the bonnet, same bottle untouched. He'll be all right, that lad; I only tasered him; there's a form — have you got the form — no — then there isn't a form. Ends the episode's comic thread on a worse note than it started: who do you think's in charge now, Us, with no hesitation whatsoever.",
   characters: ["kath", "ray"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Practical night", lightingNotes: copsSecondBeatGrammar, style: "cinematic",
 };
 const muggingScene = {
-  id: muggingSceneId, title: "The mugging", location: "EXT. ALLEY", time: "NIGHT",
-  description: "Cold open. The knife starts its journey through the old woman's handbag and the support group. No mechanism revealed; the violence is treated with the same flatness as everything else.",
+  id: muggingSceneId, title: "The mugging", location: "EXT. SIDE STREET", time: "EARLY MORNING",
+  description: "Cold open, written in the episode-one draft of 21 September 2026: still dark, sodium light, a cashpoint glowing to itself. She hands the bag over the way you'd hand over a bus pass and he isn't there mid-reach. The knife drops, rings, lies still; she looks up, is embarrassed to have done it, and bags the knife in a tissue. It starts its journey through her handbag and the support group. No mechanism revealed, no cast assigned. The nineteen-shot alley board is superseded by this page and has not been re-boarded.",
   characters: [], actId: "rapture-episode-1",
   kind: "Cold open", lighting: "Practical night", lightingNotes: muggingGrammar, style: "cinematic",
 };
 const stJudesScene = {
-  id: stJudesSceneId, title: "St Jude's and the rapture", location: "INT. ST JUDE'S", time: "DAY",
-  description: "Nina at St Jude's. The rapture happens with no flash, no sound, no score — people are there and then they aren't. One ignored complaint about water pressure. The clipboard keeps swinging.",
-  characters: ["nina"].map(characterId), actId: "rapture-episode-1",
+  id: stJudesSceneId, title: "St Jude's and the rapture", location: "INT./EXT. ST JUDE'S HOUSE", time: "MORNING",
+  description: "Written in the episode-one draft: pebbledash, a wheelie bin on its side, and a sign that means Terry personally. The charger, four weeks Thursday, fourteen on the phone and twenty-two in the ledger, the upstairs bins already done, forty minutes of water pressure timed, and Maureen's hypothetical. Then twenty residents at breakfast and the rapture mid-anecdote — no flash, no sound, no score, the radio carries on and the dog stays under the table. All that food. The nineteen-shot board predates this page and has not been re-boarded.",
+  characters: ["nina", "brian", "terry", "col", "deborah", "maureen"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: stJudesGrammar, style: "cinematic",
+};
+// Three scenes the episode-one draft writes that this workspace has never boarded: the cops' first
+// beat, Martin at the storage facility and the 1980 tag. They get their page, their slugline and
+// their grammar; their shots stay exactly as they are, which for two of them is a legacy reference
+// board belonging to the older outline.
+const copsFirstBeatScene = {
+  id: "rapture-ep1-cops", title: "The cops — birds, arrest ourselves, the taser", location: "INT. POLICE CAR (PARKED)", time: "DAY",
+  description: "WRITTEN, NOT BOARDED — no numbered shot board yet. Written in the episode-one draft: a patrol car across two bays in a car park full of abandoned cars. There's no birds; some of them'll have been in cages; we should arrest ourselves; it's what we signed up for; to teach moral justice — you did — sounds like me. Then the man in the blue coat, a quarter of a tonne of water, the taser fired at a man already stopping, the caution recited to nobody, and there's no court yet. The ordered legacy reference board (a1s4) belongs to the older outline, is not approved coverage, and stays needs review.",
+  characters: ["kath", "ray"].map(characterId), actId: "rapture-episode-1",
+  kind: "Standard", lighting: "Natural daylight", lightingNotes: copsFirstBeatGrammar, style: "cinematic",
+};
+const storageScene = {
+  id: "rapture-ep1-storage", title: "Martin at the storage facility", location: "INT. STORAGE FACILITY", time: "DAY",
+  description: "WRITTEN, NOT BOARDED — no numbered shot board yet. Written in the episode-one draft as SUPER: THREE MONTHS EARLIER, a pre-rapture flashback, because the machine has to have sat in Max's room for eight weeks by the present. DECEASED ESTATE — ELECTRICALS, MISC, GABE HOLLAND underlined twice in biro; the padlock takes three attempts; the itemised 1980 hotel bill read like scripture; the tour jacket tried on, folded badly and put back; four bars of DON'T CALL ME HOME played badly; MAX: what time u back, ringing out. The unbranded beige housing with something snapped off the top goes in with three other dead machines and is never remarked on. The ordered legacy reference board (a1s4 storage facility) belongs to the older outline and stays needs review.",
+  characters: ["martin"].map(characterId), actId: "rapture-episode-1",
+  kind: "Flashback", lighting: "High key", lightingNotes: storageGrammar, style: "cinematic",
+};
+const tagScene = {
+  id: "rapture-ep1-no", title: "Tag — 1980", location: "INT. HOTEL ROOM", time: "DAY",
+  description: "WRITTEN, NOT BOARDED — no numbered shot board yet. Written in the episode-one draft as SUPER: 1980: an ordinary hotel room, the air distorting near the foot of the bed, a man assembling like a photograph developing. The tracker snapped off the casing and pocketed without much thought; USER PARAMETERS with SOCIAL STATUS left alone; the beard approved; the guitar arriving; four months of afternoon going dark while DON'T CALL ME HOME comes together; IMAGE = ROCK STAR; the half-second backstage flash of something fastened round a laughing young woman's neck. Months later, a different hotel, the same geometry: ERROR, UNDO?, a cursor blinking for a long time, NO. The bible's five-years-later death chronology and this page's MONTHS LATER are both recorded and not silently reconciled.",
+  characters: ["absconder"].map(characterId), actId: "rapture-episode-1",
+  kind: "Tag", lighting: "Practical night", lightingNotes: tagGrammar, style: "cinematic",
 };
 
 const ep3ColdOpenScene = {
@@ -708,8 +757,8 @@ const therapyClassScene = {
   kind: "Standard", lighting: "Practical night", lightingNotes: therapyClassGrammar, style: "cinematic",
 };
 const washingUpScene = {
-  id: washingUpSceneId, title: "Washing up", location: "INT./EXT. ST JUDE'S", time: "DAY",
-  description: "Nina Sc 3 — clearing hall and collecting water, pendant is her mother's always had it not Deborah's bedside. Shot 18 cut, shots 23-24 replaced own room drawer practical decision. Vision beat same corridor hand to chest.",
+  id: washingUpSceneId, title: "Washing up", location: "INT./EXT. ST JUDE'S", time: "LATER",
+  description: "Nina Sc 3 — the draft's ST JUDE'S - AFTER: twenty breakfasts scraped into a bin bag including Terry's, twenty covers washed up, the dog, the gas off at the meter and on again to be sure, six beds stripped, Col's drawer, Maureen's two jars, three digits and no answer, GONE OUT. DO NOT TOUCH THE BOILER. — N., the minibus catching on the second turn, weak brown water, the pendant her mother's from her own bedside drawer, the first vision in the corridor, and the road. FIX 4 stands: the pendant is her mother's and she always had it, shot 18 is cut and holds its slot, shots 23-24 are her own room and a practical decision. The 26-shot board is not yet re-ordered to this page.",
   characters: ["nina"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: washingUpGrammar, style: "cinematic",
 };
@@ -790,6 +839,20 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
   if (mgIdx !== -1) scenes[mgIdx] = muggingScene;
   const sjIdx = scenes.findIndex(s => s.id === stJudesSceneId);
   if (sjIdx !== -1) scenes[sjIdx] = stJudesScene;
+  const c1Idx = scenes.findIndex(s => s.id === copsFirstBeatScene.id);
+  if (c1Idx !== -1) scenes[c1Idx] = copsFirstBeatScene;
+  const stIdx = scenes.findIndex(s => s.id === storageScene.id);
+  if (stIdx !== -1) scenes[stIdx] = storageScene;
+  const noIdx = scenes.findIndex(s => s.id === tagScene.id);
+  if (noIdx !== -1) scenes[noIdx] = tagScene;
+}
+// The three written-but-unboarded episode-one scenes keep any legacy reference board they arrived
+// with, so their titles must not claim to be outlines and their descriptions must not claim to be
+// unwritten: the page is the source, the board is reference material from the older outline.
+for (const id of ["rapture-ep1-cops", "rapture-ep1-storage", "rapture-ep1-no"]) {
+  const scene = scenes.find(candidate => candidate.id === id);
+  assert(scene && scene.description.startsWith("WRITTEN, NOT BOARDED"), `Episode one's written scene lost its status: ${id}`);
+  assert(!scene.title.endsWith("— outline"), `A written scene must not be titled as an outline: ${scene.title}`);
 }
 {
   const pnIdx = scenes.findIndex(s => s.id === patsNightSceneId);
@@ -949,6 +1012,8 @@ const moodboards = [{
 // A source document that is never joined here is a scene the app reports as missing — washing
 // up, Pat's house Scene 2, the therapy class and the night at Pat's were exactly that.
 const asScreenplay = text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim();
+// Episode one is carried by its screenplay pages; every other episode is carried by the numbered
+// scene document its storyboard was built from.
 const screenplayByScene = new Map([
   [washingUpSceneId, washingUpScreenplay],
   [muggingSceneId, muggingScreenplay],
@@ -967,7 +1032,16 @@ const screenplayByScene = new Map([
   [kitchenSceneId, kitchenScreenplay],
   [therapyClassSceneId, therapyClassScreenplay],
   [patsNightSceneId, patsNightScreenplay],
+  // Episode one's pages go last so they win: the draft, not the numbered board, is the script.
+  ...ep1Pages.map(page => [page.sceneId, page.text]),
 ]);
+for (const page of ep1Pages) {
+  const scene = scenes.find(candidate => candidate.id === page.sceneId);
+  assert(scene, `An episode-one page has no scene to belong to: ${page.sceneId}`);
+  assert.equal(screenplayByScene.get(page.sceneId), page.text, `Episode one's page must be the screenplay source for ${scene.title}, not its numbered board`);
+  const slugline = page.text.split("\n")[3];
+  assert(slugline.startsWith(`${scene.location} — ${scene.time}`), `${page.file} must open with ${scene.title}'s own slugline so the navigator selects it; got "${slugline}"`);
+}
 for (const id of screenplayByScene.keys()) assert(scenes.some(scene => scene.id === id), `A screenplay source has no scene to belong to: ${id}`);
 const actOrder = new Map(acts.map((act, i) => [act.id, i]));
 // Episode order, then the order the scenes are listed in — the same order the screenplay
@@ -986,7 +1060,7 @@ for (let i = 1; i < scriptedScenes.length; i++) {
 
 const project = {
   id: projectId, title: "Let the Raptures Commence",
-  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with the mugging cold open (19 shots, static sodium), St Jude's and the rapture (19 shots, Nina's daylight grammar), washing up (26 shots, FIX 4 — the pendant is her mother's, she always had it), Danny and Jodie (21) and the cops' second beat (6); ep3 cold open angels 15 shots; ep4 Pat cold open dusk 16 shots continuous into Scene 2 the old lady 35 shots, then Nina's thread retained and fully boarded — the housing estate (36), the doorstep (32) and the kitchen (24); ep5 therapy class 26 shots and the night at Pat's 51 shots, no CCTV, two grammars only. Fixes: prologue 12 pockets the tracker plus the 24f flash, shot 31 cut ERROR to UNDO?, Ep1 Sc3 shot 18 cut with 23-24 in her own room, Martin's auction marked pre-rapture, Ep3 meeting trimmed to recruitment only.",
+  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines, and Episode One is now written: docs/rapture/ep1-screenplay.md (draft of 21 September 2026) is carried page by page in docs/rapture/screenplay/ and is what the Screenplay tab shows — cold open on the side street, St Jude's and the rapture at breakfast, the cops' first beat in the supermarket car park, ST JUDE'S - AFTER, Martin at the storage facility three months earlier, Danny and Jodie, the cops at night and the 1980 tag. The mugging (19 shots), St Jude's (19) and washing up (26, FIX 4 — the pendant is her mother's, she always had it) boards predate that page and are not re-boarded; the cops' first beat, Martin and the tag are written and not boarded at all. Also in the revised 42-minute order: Danny and Jodie (21) and the cops' second beat (6); ep3 cold open angels 15 shots; ep4 Pat cold open dusk 16 shots continuous into Scene 2 the old lady 35 shots, then Nina's thread retained and fully boarded — the housing estate (36), the doorstep (32) and the kitchen (24); ep5 therapy class 26 shots and the night at Pat's 51 shots, no CCTV, two grammars only. Fixes: prologue 12 pockets the tracker plus the 24f flash, shot 31 cut ERROR to UNDO?, Ep1 Sc3 shot 18 cut with 23-24 in her own room, Martin's auction marked pre-rapture, Ep3 meeting trimmed to recruitment only.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
   script,
@@ -996,6 +1070,12 @@ const project = {
 const imagePaths = new Set([project.coverImage, ...frames.map(f => f.image).filter(Boolean), ...characters.map(c => c.image).filter(Boolean), ...moodboards.flatMap(b => b.items.map(i => i.image))]);
 for (const image of imagePaths) assert(existsSync(resolve(root, `public${image}`)), `Missing image: ${image}`);
 for (const c of characters) assert(c.description.length <= 700, `Shorten character description: ${c.name}`);
+// The app's own ceilings, checked here rather than at runtime: validatePatch rejects the bundle.
+for (const c of characters) {
+  assert(c.role.length <= 80 && c.name.length <= 120 && (c.age || "").length <= 40, `Cast field over the app's limit: ${c.name}`);
+  for (const relation of c.relations || []) assert((relation.note || "").length <= 120, `Shorten relationship note: ${c.name} → ${relation.targetId}`);
+}
+for (const scene of scenes) assert(scene.title.length <= 300 && scene.location.length <= 300 && scene.time.length <= 100, `Scene field over the app's limit: ${scene.title}`);
 assert.equal(numberFourteen.reduce((n, f) => n + f.duration, 0), 175, "Update the timing note when editorial estimates change");
 const output = resolve(root, "public/projects/let-the-raptures-commence.json");
 const encoded = JSON.stringify(project, null, 2) + "\n";
