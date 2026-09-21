@@ -103,6 +103,16 @@ comedy in every thread; this is not noir and not a tragedy.
   pause are unchanged. No white headlight beam is shown.
 - **App bundle:** `public/projects/let-the-raptures-commence.json`. Rebuild with
   `npm run build:rapture`; verify with `npm run verify:rapture`.
+- **The Screenplay tab is assembled from the scene sources, not typed separately.** The
+  builder joins every scene that has a written document — fifteen of them, from ep1 washing
+  up to ep5 the night at Pat's — in the workspace's own order (episode, then scene order), so
+  the scene navigator, the storyboard and the episode export all read the same running order.
+  A scene is located in the script by its slugline as a whole, never by its location as a
+  substring: the therapy class and the episode-four scout hut share `INT. THE SCOUT HUT`, and
+  the outlines that share a location with a written scene (`INT. POLICE CAR`, `INT. ST JUDE'S`)
+  must not borrow that scene's page. `scripts/verify-rapture.mjs` asserts the fifteen blocks,
+  their order and that no outline matches one; the scenes with no document stay labelled
+  outlines and the navigator says they have no page yet.
 - **Production plan:** `scripts/rapture/plan.mjs`. Holds cast, links, outline
   locations, reference selection and editorial timing estimates, not a second script.
 

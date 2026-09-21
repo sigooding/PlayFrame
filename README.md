@@ -40,6 +40,13 @@ workspace, not just a folder of images:
   anywhere and two grammars only.
 - **Also numbered:** the episode-three angels (15 shots), Graham's interview (17 shots) and
   the first wrong lockup (31 shots, one dedicated keyframe each).
+- **The screenplay is the workspace's running order:** all fifteen written scenes — from
+  episode one's washing up, Danny and Jodie and the cops' second beat through episode five's
+  therapy class and the night at Pat's — are concatenated in episode order, so the scene
+  navigator, the storyboard and the episode export walk the script the same way. Clicking a
+  scene selects its own slugline (two scenes share `INT. THE SCOUT HUT` and are still told
+  apart), and the twenty-seven scenes that are outlines are marked **Outline** in the
+  navigator and say they have no page instead of landing in another episode's scene.
 - The complete bible in Notes, a six-object brainstorm map, and sixteen visual-reference
   boards. Every shot still to generate is an honest placeholder card that names the missing
   file rather than borrowing a neighbouring study.
@@ -157,7 +164,7 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run check:assets` | verifies every image the code references exists on disk |
 | `npm run export:episode -- --episode 1` | exports one episode of the series to a folder (`exports/episode-1/`): a single `episode-1.json` with the episode, scenes, shots, keyframes, screenplay, cast and mood boards, plus copies of every keyframe and the screenplay sources. `--out`, `--project`, `--json-only` and `--clean` are available; `--help` lists them |
 | `npm run export:episode -- --reel` | the same export as **one self-contained file**, `exports/episode-1/reel.json`: no `images/` or `screenplay/` folder beside it, every keyframe and cast sheet embedded as a base64 data URI and the screenplay inlined (7 MB for episode 1, from 22 MB of images). Images are re-encoded to `--reel-width` (default 800px, JPEG `--reel-quality` 62) first — needs ImageMagick (`magick`/`convert`) on PATH, otherwise the originals are embedded as-is. `--reel-full` embeds untouched originals, `--name` renames the file |
-| `npm run verify:features` | checks the AI prompt models, the thirty visual styles, and drives the real screenplay editor's undo/redo in jsdom (no server, no browser needed) |
+| `npm run verify:features` | checks the AI prompt models, the thirty visual styles, drives the real screenplay editor's undo/redo in jsdom, and maps every written scene in the bundled projects onto its own page of the screenplay (no server, no browser needed) |
 | `npm run verify:features:live` | the same, plus a check that `/?tab=screenplay` server-renders (needs the dev server running) |
 | `node scripts/verify7.mjs` | checks assets, the lighting library, every shot reference and the relationship screens (needs the dev server running, no browser required) |
 | `node scripts/verify6.mjs` | the same ground covered through a real browser, with screenshots (needs Playwright) |

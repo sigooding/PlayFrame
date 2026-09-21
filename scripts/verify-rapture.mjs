@@ -20,10 +20,10 @@ execFileSync(process.execPath, ["scripts/rapture/build-project.mjs", "--check"],
 
 const exportsFile = join(cache, "project.mjs");
 await build({
-  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations";', resolveDir: root },
+  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations"; export * from "./src/lib/structure";', resolveDir: root },
   outfile: exportsFile, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning",
 });
-const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
+const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
 
 // The bundled workspace has to fit inside the app's own ceilings: validatePatch rejects anything
 // above them and sanitizeImport truncates to them, so a series that outgrows a cap cannot be
@@ -104,32 +104,56 @@ for (let i = 0; i < currentShots.length; i++) {
   if (i !== 0 && i !== 11) assert.equal(currentShots[i], oldShots[i], `Shot ${i + 1} must not be rewritten`);
   assert(ep4[i].notes.includes(currentShots[i]));
 }
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up", "rapture-ep5-pats-night", estate[0].sceneId, doorstep[0].sceneId, kitchen[0].sceneId]);
+// The Screenplay tab is only as good as the script it carries: every scene with a written source
+// must be in it, exactly once, in episode order, read as its own block — and no outline may match
+// a neighbour's block, which is what sent "Therapy class" into episode four and left four written
+// scenes reported as "isn't in the screenplay yet".
+const inScript = scenesInScript(project, project.script);
+const blockOf = id => { const hit = inScript.get(id); return hit ? project.script.slice(hit.blockStart, hit.blockEnd) : ""; };
+assert.equal(inScript.size, fullScenes.size, `The screenplay must carry exactly the ${fullScenes.size} scripted scenes; found ${inScript.size}`);
+for (const id of fullScenes) assert(inScript.has(id), `The screenplay dropped a scripted scene: ${id}`);
+for (const id of inScript.keys()) assert(fullScenes.has(id), `A scene with no written source matched a screenplay block: ${id}`);
+{
+  const actIndex = id => project.acts.findIndex(act => act.id === project.scenes.find(scene => scene.id === id)?.actId);
+  const ordered = [...inScript.values()].sort((a, b) => a.blockStart - b.blockStart);
+  assert(ordered.every(hit => !hit.approximate), "Every scripted scene must read as its own block, not a loose line match");
+  assert.equal(ordered.length, fullScenes.size);
+  for (let i = 1; i < ordered.length; i++) assert(actIndex(ordered[i - 1].sceneId) <= actIndex(ordered[i].sceneId), `The screenplay must run in episode order: ${ordered[i - 1].sceneId} then ${ordered[i].sceneId}`);
+  assert.equal(ordered[0].sceneId, "rapture-ep1-washing-up", "Episode one opens the screenplay with washing up");
+  assert.equal(ordered[ordered.length - 1].sceneId, "rapture-ep5-pats-night", "Episode five's night at Pat's closes the screenplay");
+  assert(ordered[ordered.length - 1].blockEnd === project.script.length, "Nothing may follow the last scene's block");
+  assert(blockOf(ordered[0].sceneId).includes("1. STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY"), "Washing up keeps its numbered opening shot");
+  assert(blockOf("rapture-ep4-pat-cold-open").includes("FIXED CAM"), "Pat's cold open is the fixed-camera scene");
+  assert(blockOf("rapture-ep4-scout-hut").includes("Hold. CUT."), "The scout hut ends on Hold. CUT.");
+  assert(inScript.get("rapture-ep4-pat-cold-open").blockStart < inScript.get("rapture-ep4-scout-hut").blockStart, "Pat's cold open precedes the scout hut in the combined script");
+  pass(`the screenplay carries all ${fullScenes.size} scripted scenes in episode order and no outline borrows a page`);
+}
 const pauses = text => [...text.matchAll(/A (\d+)-second pause/g)].map(m => Number(m[1]));
 assert.deepEqual(pauses(source), pauses(original));
 assert.deepEqual(pauses(project.script), pauses(original));
 const dialogue = text => text.split("\n").map(l => l.trim()).filter(l => /^(DANNY|JODIE|THE WOMAN):/.test(l));
-// Other boarded scenes legitimately add DANNY/JODIE lines, so Number Fourteen's dialogue
-// must appear as an in-order subsequence of the combined script rather than the whole set.
+// Other boarded scenes legitimately add DANNY/JODIE lines, so Number Fourteen's dialogue is
+// checked against its own block: the scene's lines must survive in order, and in no other scene.
 {
-  const scriptLines = dialogue(project.script);
+  const scriptLines = dialogue(blockOf(ep4[0].sceneId));
   let cursor = 0;
   for (const line of dialogue(original)) {
     const found = scriptLines.indexOf(line, cursor);
     assert(found >= 0, `Number Fourteen dialogue reordered or lost: ${line}`);
     cursor = found + 1;
   }
+  const elsewhere = [...fullScenes].filter(id => id !== ep4[0].sceneId).flatMap(id => dialogue(blockOf(id)));
+  for (const line of dialogue(original)) assert(!elsewhere.includes(line), `Number Fourteen dialogue may not appear in another scene: ${line}`);
 }
 assert(project.script.includes("CUT TO BLACK."));
 assert(project.script.includes("BLACK. TITLE CARD."));
 assert(project.script.includes("Hold. CUT."));
-assert(project.script.indexOf("FIXED CAM — high corner, 4:3, timecode 06:12:04") < project.script.indexOf("Hold. CUT."), "Pat's cold open precedes the scout hut in the combined script");
-assert(project.script.indexOf("Hold. CUT.") < project.script.lastIndexOf("BLACK. TITLE CARD.") === false || true);
 assert.equal(ep4[0].shotType, "Close-up");
 assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up", "rapture-ep5-pats-night", estate[0].sceneId, doorstep[0].sceneId, kitchen[0].sceneId]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
 assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");

@@ -872,12 +872,52 @@ const moodboards = [{
   items: board.items.map(([image, caption], i) => ({ id: `rapture-${board.id}-ref-${i + 1}`, image, caption })),
 }))];
 
+// ---------------------------------------------------------------- the screenplay
+// The Screenplay tab is the project's own running order: every scene that has a written source
+// contributes its text, in episode order and then the order the workspace lists the scenes, so
+// the scene navigator, the storyboard and the episode export all walk the script the same way.
+// A source document that is never joined here is a scene the app reports as missing — washing
+// up, Pat's house Scene 2, the therapy class and the night at Pat's were exactly that.
+const asScreenplay = text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim();
+const screenplayByScene = new Map([
+  [washingUpSceneId, washingUpScreenplay],
+  [ep1DannyJodieSceneId, dannyJodieScreenplay],
+  [ep1CopsSecondBeatSceneId, copsSecondBeatScreenplay],
+  [lockupSceneId, lockupScreenplay],
+  [ep3ColdOpenSceneId, ep3ColdOpenScreenplay],
+  [coldOpenSceneId, coldOpenScreenplay],
+  [patColdOpenSceneId, patColdOpenScreenplay],
+  [patHouseSceneId, patHouseScreenplay],
+  [scoutHutSceneId, scoutHutScreenplay],
+  [sceneId, screenplay],
+  [estateSceneId, estateScreenplay],
+  [doorstepSceneId, doorstepScreenplay],
+  [kitchenSceneId, kitchenScreenplay],
+  [therapyClassSceneId, therapyClassScreenplay],
+  [patsNightSceneId, patsNightScreenplay],
+]);
+for (const id of screenplayByScene.keys()) assert(scenes.some(scene => scene.id === id), `A screenplay source has no scene to belong to: ${id}`);
+const actOrder = new Map(acts.map((act, i) => [act.id, i]));
+// Episode order, then the order the scenes are listed in — the same order the screenplay
+// navigator reads them in, so clicking a scene never jumps backwards through the script.
+const scriptedScenes = scenes
+  .map((scene, index) => ({ scene, index }))
+  .filter(({ scene }) => screenplayByScene.has(scene.id))
+  .sort((a, b) => (actOrder.get(a.scene.actId) ?? acts.length) - (actOrder.get(b.scene.actId) ?? acts.length) || a.index - b.index);
+const script = scriptedScenes.map(({ scene }) => asScreenplay(screenplayByScene.get(scene.id))).join("\n\n");
+for (const [id, text] of screenplayByScene) assert(script.includes(asScreenplay(text)), `The screenplay dropped the scene: ${id}`);
+assert.equal(scriptedScenes.length, screenplayByScene.size, "Each scripted scene must bring exactly one screenplay source");
+for (let i = 1; i < scriptedScenes.length; i++) {
+  const before = actOrder.get(scriptedScenes[i - 1].scene.actId), after = actOrder.get(scriptedScenes[i].scene.actId);
+  assert(before !== undefined && after !== undefined && before <= after, "The screenplay must run in episode order");
+}
+
 const project = {
   id: projectId, title: "Let the Raptures Commence",
   description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with washing up (26 shots, FIX 4 — the pendant is her mother's, she always had it), Danny and Jodie (21) and the cops' second beat (6); ep3 cold open angels 15 shots; ep4 Pat cold open dusk 16 shots continuous into Scene 2 the old lady 35 shots, then Nina's thread retained and fully boarded — the housing estate (36), the doorstep (32) and the kitchen (24); ep5 therapy class 26 shots and the night at Pat's 51 shots, no CCTV, two grammars only. Fixes: prologue 12 pockets the tracker plus the 24f flash, shot 31 cut ERROR to UNDO?, Ep1 Sc3 shot 18 cut with 23-24 in her own room, Martin's auction marked pre-rapture, Ep3 meeting trimmed to recruitment only.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
-  script: [dannyJodieScreenplay, copsSecondBeatScreenplay, lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay, estateScreenplay, doorstepScreenplay, kitchenScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
+  script,
   shareId: null, createdAt, updatedAt: createdAt,
 };
 

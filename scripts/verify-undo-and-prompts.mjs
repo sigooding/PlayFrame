@@ -71,10 +71,10 @@ console.log("=== Verifying Screenplay Undo / Redo & AI Image Prompt Models ===")
 console.log("\n1. Prompt models");
 
 const prompt = await loadBundled(
-  `export * from "@/lib/prompt";\nexport * from "@/lib/styles";\nexport { starterProjects } from "@/lib/seed";\n`,
+  `export * from "@/lib/prompt";\nexport * from "@/lib/styles";\nexport * from "@/lib/structure";\nexport { starterProjects } from "@/lib/seed";\n`,
   "prompt-shim",
 );
-const { PLATFORMS, buildFramePrompt, buildScenePrompt, extractPositivePrompt, extractNegativePrompt, VISUAL_STYLES, visualStyle, negativeFor, DEFAULT_STYLE_ID, starterProjects } = prompt;
+const { PLATFORMS, buildFramePrompt, buildScenePrompt, extractPositivePrompt, extractNegativePrompt, VISUAL_STYLES, visualStyle, negativeFor, DEFAULT_STYLE_ID, starterProjects, scenesInScript } = prompt;
 
 const project = starterProjects[0];
 const frame = project.frames[0];
@@ -209,9 +209,36 @@ const undoResult = await harness.run();
 assert.strictEqual(undoResult.failed, 0, `${undoResult.failed} undo/redo check(s) failed`);
 
 // ---------------------------------------------------------------------------
-// 3. The screenplay tab still server-renders
+// 3. Scene ↔ screenplay: the navigator can find every written scene
 // ---------------------------------------------------------------------------
-console.log("\n3. Server rendering");
+console.log("\n3. Scene → screenplay map");
+
+// A hand-typed or imported screenplay has no episode blocks, so the free-text path is what most
+// projects rely on; the series bundle exercises the one-block-per-scene path in verify:rapture.
+for (const project of starterProjects) {
+  const map = scenesInScript(project, project.script);
+  const written = project.scenes.filter(scene => !scene.description.trim().startsWith("OUTLINE ONLY"));
+  assert.strictEqual(map.size, written.length, `${project.title}: the screenplay should carry exactly its ${written.length} written scenes, found ${map.size}`);
+  for (const scene of written) {
+    const hit = map.get(scene.id);
+    assert(hit, `${project.title}: "${scene.title}" was not found in the screenplay`);
+    const line = project.script.slice(project.script.lastIndexOf("\n", hit.start) + 1, hit.end);
+    assert(line.toUpperCase().includes(scene.location.toUpperCase()), `${project.title}: "${scene.title}" should select its own heading, got ${JSON.stringify(line)}`);
+  }
+  console.log(`  PASS  ${project.title}: ${map.size}/${project.scenes.length} scenes found, each selecting its own heading${written.length < project.scenes.length ? ` (${project.scenes.length - written.length} outlines have no page)` : ""}`);
+}
+
+// An outline — a scene with no page — must not borrow a neighbour's block.
+const outlineProject = { ...starterProjects[0], scenes: [...starterProjects[0].scenes, { id: "outline-1", title: "The raid", location: "INT. LIGHTHOUSE CONTROL ROOM", time: "NIGHT", description: "OUTLINE ONLY — not a numbered shooting script." }] };
+const outlineMap = scenesInScript(outlineProject, outlineProject.script);
+assert(!outlineMap.has("outline-1"), "A scene with no page must not match a block that belongs to another scene");
+assert.deepEqual([...outlineMap.keys()], [...outlineProject.scenes.filter(s => s.id !== "outline-1").map(s => s.id)].filter(id => outlineMap.has(id)), "Every written scene must still be found when an outline shares its location");
+console.log("  PASS  an outline sharing a written scene's location does not steal its page");
+
+// ---------------------------------------------------------------------------
+// 4. The screenplay tab still server-renders
+// ---------------------------------------------------------------------------
+console.log("\n4. Server rendering");
 
 if (!wantsServer) {
   console.log("  SKIP  --no-server given");
