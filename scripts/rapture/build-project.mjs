@@ -347,12 +347,13 @@ assert(new Set(doorstep.filter(f => f.image).map(f => f.image)).size === doorste
 // fluorescent, flat, off-centre, locked off, so her symmetry never organises his house. Two protections are
 // enforced below: she asks once and waits (shot 15), and "It's mine" is played with no emphasis at all
 // (shot 19). From the last frame of this scene the machine travels in the back of the bus.
-const kitchenBlocks = [...kitchenScreenplay.matchAll(/^(\d+)\. ([^\n]+)\n([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(kitchenBlocks.length, 23, "The kitchen source must have twenty-three numbered shots");
-assert.equal(kitchenPlan.length, 23, "The kitchen plan must cover all twenty-three shots");
+const kitchenBlocks = [...kitchenScreenplay.matchAll(/^(\d+[a-z]?)\. ([^\n]+)\n([\s\S]*?)(?=^\d+[a-z]?\. |$(?![\s\S]))/gm)];
+assert.equal(kitchenBlocks.length, 24, "The kitchen source must have twenty-four numbered shots");
+assert.equal(kitchenPlan.length, 24, "The kitchen plan must cover all twenty-four shots");
 const kitchenIsHers = i => i >= 21; // the street only: the house stays his
 const kitchen = kitchenBlocks.map(([, n, header, rawBody], i) => {
-  assert.equal(Number(n), i + 1, "Kitchen shot order must be contiguous");
+  const expectedOrder = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","22a","23"];
+  assert.equal(n, expectedOrder[i], `Kitchen shot order must be contiguous, expected ${expectedOrder[i]} got ${n}`);
   const plan = kitchenPlan[i];
   const body = rawBody.trimEnd();
   const source = `${n}. ${header}${body ? `\n${body}` : ""}`;
@@ -377,7 +378,7 @@ const kitchen = kitchenBlocks.map(([, n, header, rawBody], i) => {
     notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep4-kitchen, so this card holds slot ${n} of ${kitchenPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${plan.lensSource && plan.lensSource !== plan.lens ? `\n\nSource lens: ${plan.lensSource}; closest library lens ${plan.lens} shown.` : ""}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${grammarFor}\n\n${kitchenGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only written pauses are locked${pauses.length ? ` (${pauses.map(px => `${px}s`).join(" + ")})` : " (none in this shot)"}, and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
-assert.equal(kitchen.reduce((sum, f) => sum + f.duration, 0), 353, "Update the timing note when the kitchen editorial estimates change");
+assert.equal(kitchen.reduce((sum, f) => sum + f.duration, 0), 365, "Update the timing note when the kitchen editorial estimates change");
 assert(kitchen.every(f => f.movement === "Static"), "Locked off all the way through: the scene has no camera movement at all");
 assert(kitchen.every((f, i) => (f.lighting === "Natural daylight") === kitchenIsHers(i)), "Fluorescent in the house, daylight on the street, and nothing in between");
 assert(kitchen.every((f, i) => (f.lightingNotes === kitchenHerGrammar) === kitchenIsHers(i)), "Every kitchen frame inherits exactly one grammar, never both and never neither");
@@ -392,7 +393,8 @@ assert(kitchen[18].notes.includes("It's mine.") && kitchen.filter(f => /It's min
 assert(kitchen.filter(f => /2011/.test(f.description + f.notes)).length === 1, "2011 is stated once, in the grievance, and nowhere else");
 assert(kitchen[16].notes.includes("bid against him"), "The auction becomes the show's engine in shot 17 and stays a family quarrel");
 assert(kitchen[21].notes.includes("back of the bus") && kitchen[21].notes.includes("terminal"), "STANDING RULE: the machine travels in the back of the bus from this frame onward");
-assert(/still open/i.test(kitchen[22].description) && /Nobody shuts it/i.test(kitchen[22].description), "The house is left with its door open and the scene declines to close it");
+assert(kitchen[22].notes.includes("back of the bus") && /terminal/i.test(kitchen[22].notes), "22a makes explicit the terminal wrapped in the duvet going into the back between water containers");
+assert(/still open/i.test(kitchen[23].description) && /Nobody shuts it/i.test(kitchen[23].description), "The house is left with its door open and the scene declines to close it");
 assert(kitchen.every(f => f.characters.every(id => [characterId("nina"), characterId("martin")].includes(id))), "Nobody else is in the kitchen");
 assert.deepEqual(kitchen.map((f, i) => f.characters.includes(characterId("nina")) && !f.characters.includes(characterId("martin")) ? i : -1).filter(i => i >= 0), [4, 12, 14, 17, 19], "Her alone frames are the ones where she is deciding, not reacting");
 assert(kitchen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-kitchen/")), "Kitchen keyframes live under /images/rapture/ep4-kitchen/");
@@ -851,7 +853,7 @@ const moodboards = [{
   items: doorstep.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
 }, {
   id: "rapture-look-kitchen", title: "The kitchen — his grammar, and one street", sceneId: kitchenSceneId, actId: "rapture-episode-4", createdAt,
-  description: "Twenty-three AI-generated storyboard studies. Fluorescent, flat, off-centre and locked off inside; symmetrical daylight only once they reach the street.",
+  description: "Twenty-four AI-generated storyboard studies (22a pending). Fluorescent, flat, off-centre and locked off inside; symmetrical daylight only once they reach the street.",
   items: kitchen.filter(frame => frame.image).map(frame => ({ id: `look-${frame.id}`, image: frame.image, caption: `${frame.title} — AI-generated study, not final coverage.` })),
 }, {
   id: "rapture-look-danny-jodie", title: "Danny and Jodie — the raid, red and handheld", sceneId: ep1DannyJodieSceneId, actId: "rapture-episode-1", createdAt,
@@ -872,7 +874,7 @@ const moodboards = [{
 
 const project = {
   id: projectId, title: "Let the Raptures Commence",
-  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with washing up (26 shots, FIX 4 — the pendant is her mother's, she always had it), Danny and Jodie (21) and the cops' second beat (6); ep3 cold open angels 15 shots; ep4 Pat cold open dusk 16 shots continuous into Scene 2 the old lady 35 shots, then Nina's thread retained and fully boarded — the housing estate (36), the doorstep (32) and the kitchen (23); ep5 therapy class 26 shots and the night at Pat's 51 shots, no CCTV, two grammars only. Fixes: prologue 12 pockets the tracker plus the 24f flash, shot 31 cut ERROR to UNDO?, Ep1 Sc3 shot 18 cut with 23-24 in her own room, Martin's auction marked pre-rapture, Ep3 meeting trimmed to recruitment only.",
+  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with washing up (26 shots, FIX 4 — the pendant is her mother's, she always had it), Danny and Jodie (21) and the cops' second beat (6); ep3 cold open angels 15 shots; ep4 Pat cold open dusk 16 shots continuous into Scene 2 the old lady 35 shots, then Nina's thread retained and fully boarded — the housing estate (36), the doorstep (32) and the kitchen (24); ep5 therapy class 26 shots and the night at Pat's 51 shots, no CCTV, two grammars only. Fixes: prologue 12 pockets the tracker plus the 24f flash, shot 31 cut ERROR to UNDO?, Ep1 Sc3 shot 18 cut with 23-24 in her own room, Martin's auction marked pre-rapture, Ep3 meeting trimmed to recruitment only.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
   script: [dannyJodieScreenplay, copsSecondBeatScreenplay, lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay, estateScreenplay, doorstepScreenplay, kitchenScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),

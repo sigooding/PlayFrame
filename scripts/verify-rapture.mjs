@@ -40,7 +40,7 @@ pass(`the bundled series fits the app's ceilings (${project.frames.length}/${MAX
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 22);
-assert.equal(project.frames.length, 525, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 23 kitchen from the retained episode-four Nina thread, plus 21 Danny and Jodie, 6 cops second beat and 26 washing up FIX 4 in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 160 legacy slots (157 keyframes, 3 missing)");
+assert.equal(project.frames.length, 526, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 24 kitchen from the retained episode-four Nina thread (22a terminal into bus), plus 21 Danny and Jodie, 6 cops second beat and 26 washing up FIX 4 in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 160 legacy slots (157 keyframes, 3 missing)");
 assert.equal(project.scenes.length, 42);
 assert.equal(project.moodboards.length, 16);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
@@ -65,7 +65,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 525);
+assert.equal(imported.frames.length, 526);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -349,18 +349,18 @@ pass("doorstep numbered 1-32 in order, two grammars never blended, one AI study 
 // Episode four scene 6: the kitchen. His grammar for twenty-one frames and hers only on the street,
 // the two protected beats asserted rather than trusted, the brown water stated once and never paid off
 // with a cut, and the machine put on the bus for the rest of the series.
-assert.equal(kitchen.length, 23, "The kitchen is boarded with twenty-three shots");
+assert.equal(kitchen.length, 24, "The kitchen is boarded with twenty-four shots (22a inserted)");
 const kitchenStudies = kitchen.filter(f => f.image);
 const kitchenMissingCards = kitchen.filter(f => !f.image);
-assert.equal(kitchenStudies.length, 23, "Twenty-three of the twenty-three kitchen shots carry their AI study");
+assert.equal(kitchenStudies.length, 24, "Twenty-four of the twenty-four kitchen shots carry their AI study");
 assert.equal(kitchenMissingCards.length, 0, "No kitchen placeholder cards remain");
 assert(kitchenMissingCards.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Kitchen placeholder cards are honest about what is missing");
-assert(kitchen.every((f, i) => f.id === "rapture-ep4kit-" + String(i + 1).padStart(2, "0")), "Kitchen numbering must be contiguous");
+assert.deepEqual(kitchen.map(f=>f.id), ["rapture-ep4kit-01","rapture-ep4kit-02","rapture-ep4kit-03","rapture-ep4kit-04","rapture-ep4kit-05","rapture-ep4kit-06","rapture-ep4kit-07","rapture-ep4kit-08","rapture-ep4kit-09","rapture-ep4kit-10","rapture-ep4kit-11","rapture-ep4kit-12","rapture-ep4kit-13","rapture-ep4kit-14","rapture-ep4kit-15","rapture-ep4kit-16","rapture-ep4kit-17","rapture-ep4kit-18","rapture-ep4kit-19","rapture-ep4kit-20","rapture-ep4kit-21","rapture-ep4kit-22","rapture-ep4kit-22a","rapture-ep4kit-23"], "Kitchen numbering must be contiguous with 22a inserted");
 assert(kitchen.every(f => f.movement === "Static"), "Locked off all the way through");
 assert(kitchen.every((f, i) => (f.lighting === "Natural daylight") === (i >= 21)), "Fluorescent in the house, daylight on the street");
 assert(kitchen.every((f, i) => (f.lightingNotes.includes("a hair wrong") !== (i >= 21)) && (f.lightingNotes.includes("symmetrical, dead centre") === (i >= 21))), "Every kitchen frame inherits exactly one grammar");
 assert(kitchen.every(f => f.characters.every(id => ["rapture-nina", "rapture-martin"].includes(id))), "Nobody else is in the kitchen");
-assert.equal(kitchen.reduce((n, f) => n + f.duration, 0), 353, "The kitchen's editorial estimate is 353 seconds");
+assert.equal(kitchen.reduce((n, f) => n + f.duration, 0), 365, "The kitchen's editorial estimate is 365 seconds (353 + 12 for 22a)");
 assert.deepEqual(kitchen.map((f, i) => f.shotType === "Insert" ? i : -1).filter(i => i >= 0), [1, 8], "The tap and the untouched mug are the only inserts; the machine is never cut to");
 assert(kitchen[14].duration >= 16, "The eight-second wait in shot 15 cannot be cut for length without asking first");
 assert(kitchen[14].notes.includes("eight seconds"), "The wait is written into the card so it survives to the animatic");
@@ -370,9 +370,9 @@ assert(kitchen[21].notes.includes("back of the bus"), "STANDING RULE: the machin
 assert(kitchen.filter(f => /brown/i.test(f.description)).length === 1, "The brown water is stated once and unemphasised");
 assert(kitchen.every(f => f.shotType !== "Establishing" && f.shotType !== "Extreme wide"), "No wide is allowed to explain the room");
 assert(kitchen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-kitchen/")), "Kitchen studies live in their own folder");
-assert.equal(new Set(kitchenStudies.map(f => f.image)).size, 23, "One dedicated keyframe per studied kitchen shot");
+assert.equal(new Set(kitchenStudies.map(f => f.image)).size, 24, "One dedicated keyframe per studied kitchen shot");
 assert(kitchenStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)")), "Kitchen studies are draft keyframes, not placeholders");
-pass("kitchen boarded 1-23, his grammar held, both protections asserted, the machine on the bus, 23 of 23 studied");
+pass("kitchen boarded 1-24 (22a), his grammar held, both protections asserted, the machine on the bus, 24 of 24 studied");
 
 // Episode One new scenes — Danny and Jodie (21) and Cops second beat (6)
 const dannyJodie = project.frames.filter(f => f.sceneId === "rapture-ep1-danny-jodie");
@@ -392,7 +392,7 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 270 + 327 + 271 + 148 + 90 + 136 + 308 + 377 + 353 + 160 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 270 + 327 + 271 + 148 + 90 + 136 + 308 + 377 + 365 + 160 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -515,7 +515,7 @@ assert.equal(studies("ep4-pat-house"), 35, "Thirty-five Scene 2 studies on disk"
 assert.equal(studies("ep4-scout-hut"), 17, "Seventeen scout-hut studies on disk");
 assert.equal(studies("ep4-estate"), 36, "Thirty-six estate studies on disk");
 assert.equal(studies("ep4-doorstep"), 32, "Thirty-two doorstep studies on disk");
-assert.equal(studies("ep4-kitchen"), 23, "Twenty-three kitchen studies on disk");
+assert.equal(studies("ep4-kitchen"), 24, "Twenty-four kitchen studies on disk");
 assert.equal(rejects("ep4-kitchen"), 10, "Ten rejected kitchen takes stay on disk and are never counted as studies");
 assert.equal(studies("ep1-danny-jodie"), 21, "Twenty-one episode-one raid studies on disk");
 assert.equal(studies("ep1-cops-second"), 6, "Six cops second-beat studies on disk");
@@ -531,11 +531,11 @@ assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board 
 assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-estate" && b.items.length === 36), "The estate board covers all thirty-six studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-doorstep" && b.items.length === 32), "The doorstep board covers all thirty-two studies");
-assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.length === 23), "The kitchen board covers the twenty-three studies on disk");
+assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.length === 24), "The kitchen board covers the twenty-four studies on disk");
 assert(project.moodboards.some(b => b.id === "rapture-look-danny-jodie" && b.items.length === 21), "The raid board covers all twenty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-cops-second" && b.items.length === 6), "The cops board covers all six studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-therapy" && b.items.length === 0), "The therapy-class board exists and honestly holds no studies yet");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-three kitchen studies from the retained Nina thread, 157 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-four kitchen studies from the retained Nina thread, 157 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
@@ -556,7 +556,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 525);
+      assert.equal(opened.frames.length, 526);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -569,7 +569,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 525);
+      assert.equal(restored.frames.length, 526);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');
