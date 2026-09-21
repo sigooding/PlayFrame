@@ -6,9 +6,9 @@ A writer/director's pre-production studio: screenplay, acts & sequences, cast wi
 
 ```bash
 npm install
-cp .env.example .env # then point DATABASE_URL at your PostgreSQL
-npx drizzle-kit push # creates the film_projects table
-npm run dev # http://localhost:3000
+cp .env.example .env         # then point DATABASE_URL at your PostgreSQL
+npx drizzle-kit push         # creates the film_projects table
+npm run dev                  # http://localhost:3000
 ```
 
 The first load seeds the existing sample projects plus **Let the Raptures Commence**.
@@ -19,39 +19,30 @@ The series opens by default when present; an explicit `?project=<id>` always win
 The current **8 × 45min British black comedy** series prompt is integrated as an editable
 workspace, not just a folder of images:
 
-- Eight episode outlines and 32 outline entries (not eight completed scripts).
-- Twenty-one cast entries with reciprocal family/colleague links; the woman at Number
-  Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
+- **42 scenes and outlines, 525 numbered shots, 22 cast entries**, and eight episode
+  outlines that are not eight completed scripts. Cast links are reciprocal; the woman at
+  Number Fourteen is kept separate from Pat, the rescued blank from Alan, and Graham
   (the interview's contented blank, now an episode-three scene) from both.
-- **Number Fourteen:** the numbered screenplay, 13 storyboard/shot-list entries,
-  thirteen new AI-generated studies, one keyframe per shot.
-- **Danny and Jodie:** Episode two's first raid is a numbered 21-shot scene in their grammar
-  — handheld, tight, dark, one red practical, never a clean wide — and it supersedes the
-  legacy first-raid board as the coverage for that scene. Episode one gains a six-shot cops
-  beat of exactly ninety seconds, static two-shot from the bonnet, ending the episode's comic
-  thread on a worse note than it started before the 1980 tag closes it. Sixteen of the raid's
-  21 shots are boarded.
-- **The therapy class:** Episode five's ensemble scene is a numbered 26-shot scene in the scout hut — one
-  question, fourteen self-serving answers, one sweating man's dead dog demolishing every theory in the room,
-  and ninety seconds of a group reasoning its way into a divine mandate with no objections. Three
-  protections hold on the cards: the long silence, the doctrine visibly invented on the spot, and Carl never
-  saying what he did. It moved from episode six so the doctrine has time to harden, which pushed the episode
-  three meeting back to recruitment only. Seven of its 26 shots are boarded.
-- **Nina's thread:** the first wrong lockup (31 shots), **Episode four Scene 4 — the housing
-  estate** (36 shots, all boarded), **Scene 5 — the doorstep** (32 shots, all boarded) and
-  **Scene 6 — the kitchen** (23 shots, 21 boarded so far) are numbered scenes in her locked-off
-  grammar. The estate is the first time her thread is shot at dusk; the doorstep is where her
-  grammar and Martin's share one building and refuse to resolve, her symmetrical daylight on the
-  street and his flat fluorescent indoors never blended in a single shot; the kitchen is his house
-  on his terms — twenty-one frames of off-centre fluorescent before the street takes her grammar
-  back — and it is the scene that puts the machine in the back of the bus for good.
-- **Cold opens:** three numbered scenes — the episode-four Pat-alone open
-  (12 dialogue-free surveillance shots, fully studied), the
-  episode-three angels (15 shots) and Graham's interview (17 shots, re-homed
-  to episode three), and the scout-hut scene 3
-  (17 shots, fully studied). The old-lady sequence is Scene 2 of episode
-  four; its 32 shots are held by the outline, not yet boarded.
-- The complete bible in Notes, a six-object brainstorm map, and sixteen visual-reference boards.
+- **Episode One, revised running order (about 42 minutes before the tag):** washing up
+  (26 shots, FIX 4 — the pendant is her mother's and she always had it, shot 18 cut and
+  holding its slot), Danny and Jodie's first appearance (21 shots, moved here from episode
+  two) and the cops' second beat (6 shots, exactly ninety seconds), with Martin's storage
+  unit marked as a pre-rapture flashback.
+- **Episode Four:** the Pat-and-Malcolm cold open at dusk (16 shots) running continuously
+  into Scene 2, the old-lady sequence (35 shots); the scout hut (17 shots); **Number
+  Fourteen** (13 shots); then Nina's thread, retained and fully boarded — the housing
+  estate at dusk (36 shots), the doorstep (32 shots) and the kitchen (23 shots, 21 studied),
+  which is where the machine goes into the back of the bus for good.
+- **Episode Five:** the therapy class (26 shots, moved from episode six so the
+  maintain-order doctrine has time to harden, with its three protections asserted in the
+  builder and the verifier) and the night at Pat's (51 shots, 39 studied), which replaces
+  the earlier Pat's-house coverage and the basement, rescue and scent outlines. No CCTV
+  anywhere and two grammars only.
+- **Also numbered:** the episode-three angels (15 shots), Graham's interview (17 shots) and
+  the first wrong lockup (31 shots, one dedicated keyframe each).
+- The complete bible in Notes, a six-object brainstorm map, and sixteen visual-reference
+  boards. Every shot still to generate is an honest placeholder card that names the missing
+  file rather than borrowing a neighbouring study.
 - Exact scripted pauses; other durations are visibly marked as **working estimates**.
   Scene/shot lighting direction survives save, import, CSV and prompt generation.
 
@@ -65,6 +56,11 @@ For an independent copy, import
 using **Import project**. No external image host or credentials are needed.
 Export → Project backup preserves subsequent edits.
 
+Episode four's Nina thread and episode five's restructure are both current and are **not**
+merged into one another: the kitchen still ends with the terminal going into the back of the
+bus, and the night at Pat's still puts Neil in the cellar under the stairs. That boundary is
+recorded in the canon index rather than silently resolved.
+
 Sources and continuity decisions are indexed in [`docs/rapture/canon.md`](docs/rapture/canon.md).
 The latest bible supersedes the old sodium/teal and wide Crane boards. The two old
 wide framings in Number Fourteen are tightened; all dialogue and pauses remain unchanged,
@@ -72,10 +68,10 @@ and the original scene is archived. New images are **draft AI studies**, not app
 check the review pointers in the shot notes before approving any of them.
 
 ```bash
-npm run build:rapture # regenerate the JSON from the bible, script and production plan
-npm run verify:rapture # offline fidelity/schema/assets/prompts/CSV/persistence checks
-npm run verify:rapture -- --live # also check every app tab and image; dev server must be running
-npm run verify:rapture:browser # real desktop/mobile form, template and reload checks
+npm run build:rapture             # regenerate the JSON from the bible, script and production plan
+npm run verify:rapture            # offline fidelity/schema/assets/prompts/CSV/persistence checks
+npm run verify:rapture -- --live   # also check every app tab and image; dev server must be running
+npm run verify:rapture:browser     # real desktop/mobile form, template and reload checks
 ```
 
 The browser check needs `npx playwright install chromium` (or `BROWSER_EXECUTABLE_PATH`).
@@ -96,23 +92,23 @@ Check the folder exists in your GitHub repo and contains these files:
 ```
 public/images/
   lighting/
-    natural-daylight.jpg golden-hour.jpg blue-hour.jpg overcast-soft.jpg
-    low-key.jpg high-key.jpg practical-night.jpg backlit-silhouette.jpg
+    natural-daylight.jpg  golden-hour.jpg  blue-hour.jpg  overcast-soft.jpg
+    low-key.jpg  high-key.jpg  practical-night.jpg  backlit-silhouette.jpg
   shots/
-    establishing.jpg extreme-wide.jpg wide.jpg full.jpg medium-wide.jpg medium.jpg
-    medium-close-up.jpg close-up.jpg extreme-close-up.jpg insert.jpg
-    over-the-shoulder.jpg two-shot.jpg over-the-shoulder.svg two-shot.svg
-    pov.svg aerial.svg
+    establishing.jpg  extreme-wide.jpg  wide.jpg  full.jpg  medium-wide.jpg  medium.jpg
+    medium-close-up.jpg  close-up.jpg  extreme-close-up.jpg  insert.jpg
+    over-the-shoulder.jpg  two-shot.jpg  over-the-shoulder.svg  two-shot.svg
+    pov.svg  aerial.svg
   styles/
-    cinematic-realistic.jpg anime.jpg comic-book.jpg animation-3d.jpg watercolor.jpg
-    film-noir.jpg cyberpunk.jpg claymation.jpg pixel-art.jpg oil-painting.jpg
-    classic-cartoon.jpg documentary.jpg rotoscoped.jpg ukiyo-e.jpg line-art.jpg
-    poster.jpg super8.jpg synthwave.jpg charcoal.jpg collage.jpg
-    ghibli.jpg manga.jpg hanna-barbera.jpg isometric.jpg art-deco.jpg
-    impressionist.jpg pop-art.jpg stained-glass.jpg technicolor.jpg polaroid.jpg
+    cinematic-realistic.jpg  anime.jpg  comic-book.jpg  animation-3d.jpg  watercolor.jpg
+    film-noir.jpg  cyberpunk.jpg  claymation.jpg  pixel-art.jpg  oil-painting.jpg
+    classic-cartoon.jpg  documentary.jpg  rotoscoped.jpg  ukiyo-e.jpg  line-art.jpg
+    poster.jpg  super8.jpg  synthwave.jpg  charcoal.jpg  collage.jpg
+    ghibli.jpg  manga.jpg  hanna-barbera.jpg  isometric.jpg  art-deco.jpg
+    impressionist.jpg  pop-art.jpg  stained-glass.jpg  technicolor.jpg  polaroid.jpg
   templates/
-    short-film.jpg feature-film.jpg documentary.jpg
-public/fonts/ (six .ttf files: DM Sans 400/500/600/700, Instrument Serif regular + italic)
+    short-film.jpg  feature-film.jpg  documentary.jpg
+public/fonts/   (six .ttf files: DM Sans 400/500/600/700, Instrument Serif regular + italic)
 ```
 
 The `styles/` pictures are the example thumbnails for the thirty visual styles (Realistic, Anime,
@@ -145,9 +141,9 @@ Common causes when they are missing:
 A quick way to confirm from a terminal in the repo:
 
 ```bash
-git ls-files public/images # should list every file from the table above
-npm run check:assets # every referenced picture and font is on disk
-node scripts/verify7.mjs # …and every one of them is actually served
+git ls-files public/images            # should list every file from the table above
+npm run check:assets                  # every referenced picture and font is on disk
+node scripts/verify7.mjs              # …and every one of them is actually served
 ```
 
 If a picture is missing at runtime the app now shows a labelled placeholder instead of a broken icon, and `npm run check:assets` lists exactly which files are absent.

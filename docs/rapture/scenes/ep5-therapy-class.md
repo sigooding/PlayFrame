@@ -1,23 +1,13 @@
-# NEW SCENE — THE THERAPY CLASS — Episode 5, scene 5
+# LET THE RAPTURES COMMENCE
+## EPISODE 5 — THERAPY CLASS
 
-INT. THE SCOUT HUT — DAY. Handheld, close, faces. A circle of chairs that isn't quite a circle. Red from
-the fire door light and a tarpaulin over a window. Never a clean establishing wide.
+Scene: INT. THE SCOUT HUT — DAY
+Cast: HI-VIS (clipboard, self-appointed facilitator), SUE (50s, blameless, furious), CARL (30s, knows exactly what he did), DEREK (60s, sober twenty-two years, insufferable), PAULINE (40s, wants to write to someone), DANNY (40), JODIE (11), MAN (40s, sweating)
+Grammar: handheld, close, faces. A circle of chairs that isn't quite a circle. Red from the fire door light and a tarpaulin over a window. Never a clean establishing wide.
 
-This replaces the version written for episode six, and it replaces the theorising half of the episode
-three meeting. The question in the room is one question — why us — and everybody in the circle is arguing
-their own case for being left, which is a better engine than a rota argument, because every answer is
-self-serving. The grandma-and-the-dog story belongs here rather than in the meeting, because it demolishes
-everyone's theory at once; and rather than accept that, the room decides it must mean they are here for a
-job. Fourteen people reasoning backwards from a dead dog to a divine mandate.
+Protections: Shot 13's silence has to be long — the dead dog demolishes the room and they need a beat before they rebuild. Hi-vis's "what we're for" must be visibly invented on the spot, not delivered as doctrine. And Carl never says what he did, in this scene or any other.
 
-Three protections. Shot 13's silence has to be long — the dead dog demolishes the room and they need a beat
-before they rebuild. Hi-vis's "what we're for" (shot 14) must be visibly invented on the spot, not delivered
-as doctrine. And Carl never says what he did, in this scene or in any other.
-
-Cast: HI-VIS (clipboard, self-appointed facilitator, no qualifications). SUE (50s, blameless, furious).
-CARL (30s, knows exactly what he did). DEREK (60s, sober twenty-two years, insufferable). PAULINE (40s,
-wants to write to someone). A MAN (40s, sweating). DANNY and JODIE, at the edge, not participating. None of
-the group is cast anywhere; they are named here and nowhere else.
+This is episode five, with the last shot changed from "two days of water left" to the water being brown and rationed — which is where episode five sits anyway.
 
 ---
 
@@ -48,7 +38,7 @@ Arms folded. She's been waiting eight weeks for someone to ask.
    HI-VIS: Who's Linda?
    SUE: From work. Linda. She was horrible.
 
-(Pause.)
+   (Pause.)
 
    SUE: So what was it all for?
 
@@ -69,7 +59,7 @@ Entirely serious.
    HI-VIS: (thrown) About what?
    PAULINE: About being left. Who do you write to.
 
-(A genuine pause. Nobody has considered this and now several of them want to know.)
+   (A genuine pause. Nobody has considered this and now several of them want to know.)
 
    HI-VIS: I'll find out.
    PAULINE: Will you?
@@ -138,7 +128,7 @@ Hand up. He does not need to put his hand up.
    HI-VIS: Done what?
    DEREK: All of it. Everything gone, nothing left, no idea how you get through the day.
 
-(Pause.)
+   (Pause.)
 
    DEREK: I did it in 2003.
 
@@ -152,7 +142,7 @@ Nobody says anything. Derek is enjoying himself enormously.
 20. HANDHELD CLOSE — 50mm, on DEREK
    DEREK: One day at a time. That's all any of it is. You don't think about tomorrow and you turn up.
 
-(A long pause. And the awful thing is that it is the single most useful thing anybody has said in this room in eight weeks.)
+   (A long pause. And the awful thing is that it is the single most useful thing anybody has said in this room in eight weeks.)
 
 21. HANDHELD — 35mm, on HI-VIS
 He writes it down. Underlines it. He is not pleased about it.
