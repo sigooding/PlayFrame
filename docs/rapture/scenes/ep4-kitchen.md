@@ -141,6 +141,9 @@ The bus. Nina loading. Martin comes out of the house with a holdall in one hand 
    NINA: It isn't.
    MARTIN: (getting in with it) It's coming.
 
+22a. EXT. CUL-DE-SAC — STATIC WIDE — 28mm, locked off
+Nina comes out of the front door carrying the terminal wrapped in the duvet off Max's bed. Martin behind her with the monitor. They load it into the back of the bus, carefully, between the water containers. The pendant stays round her neck.
+
 23. STATIC WIDE — 28mm, locked off, from the road
 The bus pulls away. The front door of the house is still open. Nobody shuts it.
 Hold.
