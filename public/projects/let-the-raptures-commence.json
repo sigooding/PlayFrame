@@ -1411,9 +1411,9 @@
     {
       "id": "rapture-ep1wu-01",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Hall after rapture (keyframe missing)",
+      "title": "Hall after rapture",
       "description": "STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/01-hall.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "35mm",
@@ -1422,20 +1422,20 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 01-hall.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 1 of 26. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY. Chairs stacked, mop bucket, clipboard with ignored water pressure complaint.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY\nThe hall after the rapture. Chairs stacked against the wall. A mop bucket in the middle of the floor. On a clipboard by the door, one ignored complaint about water pressure from earlier — still there. Hold."
+      "notes": "STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY. Chairs stacked, mop bucket, clipboard with ignored water pressure complaint.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 35mm, locked off — INT. ST JUDE'S HALL — DAY\nThe hall after the rapture. Chairs stacked against the wall. A mop bucket in the middle of the floor. On a clipboard by the door, one ignored complaint about water pressure from earlier — still there. Hold."
     },
     {
       "id": "rapture-ep1wu-02",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Washing up (keyframe missing)",
+      "title": "Washing up",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/02-kitchen.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1444,20 +1444,20 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 02-kitchen.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 2 of 26. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY. Nina washing up, tap brown then clear, methodical.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY\nNina washing up. Methodical. The tap runs brown, then clear. She doesn't react. Stacks a plate. The radio is off."
+      "notes": "STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY. Nina washing up, tap brown then clear, methodical.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY\nNina washing up. Methodical. The tap runs brown, then clear. She doesn't react. Stacks a plate. The radio is off."
     },
     {
       "id": "rapture-ep1wu-03",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Tea towel (keyframe missing)",
+      "title": "Tea towel",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/03-tea-towel.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1466,20 +1466,20 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 03-tea-towel.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 3 of 26. Add the study and rebuild.\n\nSTATIC MEDIUM — dries plates with ST JUDE'S tea towel, folds square, back on hook.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY\nShe dries the plates with a tea towel that says ST JUDE'S. Folds it afterwards, square. Puts it back on its hook."
+      "notes": "STATIC MEDIUM — dries plates with ST JUDE'S tea towel, folds square, back on hook.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — DAY\nShe dries the plates with a tea towel that says ST JUDE'S. Folds it afterwards, square. Puts it back on its hook."
     },
     {
       "id": "rapture-ep1wu-04",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Mugs (keyframe missing)",
+      "title": "Mugs",
       "description": "STATIC WIDE — 35mm, locked off — INT. HALL — DAY",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/04-mugs.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "35mm",
@@ -1488,20 +1488,20 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 04-mugs.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 4 of 26. Add the study and rebuild.\n\nSTATIC WIDE — collects mugs from hall, carries two at a time, years of habit.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. STATIC WIDE — 35mm, locked off — INT. HALL — DAY\nShe collects mugs from the hall. Three of them, all with different slogans. She carries them two at a time, like someone who has done this every day for years."
+      "notes": "STATIC WIDE — collects mugs from hall, carries two at a time, years of habit.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. STATIC WIDE — 35mm, locked off — INT. HALL — DAY\nShe collects mugs from the hall. Three of them, all with different slogans. She carries them two at a time, like someone who has done this every day for years."
     },
     {
       "id": "rapture-ep1wu-05",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Water butt (keyframe missing)",
+      "title": "Water butt",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. UTILITY — DAY",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/05-water-butt.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1510,20 +1510,20 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 05-water-butt.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 5 of 26. Add the study and rebuild.\n\nSTATIC MEDIUM — checks water butt by back door, tops up two bottles, labels KITCHEN.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC MEDIUM — 50mm, locked off — INT. UTILITY — DAY\nShe checks the water butt by the back door. Half full. She tops up two bottles from it, labels them with masking tape: KITCHEN."
+      "notes": "STATIC MEDIUM — checks water butt by back door, tops up two bottles, labels KITCHEN.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC MEDIUM — 50mm, locked off — INT. UTILITY — DAY\nShe checks the water butt by the back door. Half full. She tops up two bottles from it, labels them with masking tape: KITCHEN."
     },
     {
       "id": "rapture-ep1wu-06",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Masking tape (keyframe missing)",
+      "title": "Masking tape",
       "description": "INSERT — 85mm, static — INT. UTILITY",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/06-tape.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -1532,11 +1532,11 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 06-tape.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 6 of 26. Add the study and rebuild.\n\nINSERT — 85mm, static — masking tape roll, marker pen, small practical handwriting.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. INSERT — 85mm, static — INT. UTILITY\nThe masking tape roll. The marker pen. Her handwriting, practical, small."
+      "notes": "INSERT — 85mm, static — masking tape roll, marker pen, small practical handwriting.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. INSERT — 85mm, static — INT. UTILITY\nThe masking tape roll. The marker pen. Her handwriting, practical, small."
     },
     {
       "id": "rapture-ep1wu-07",
@@ -9465,9 +9465,9 @@
     {
       "id": "rapture-ep5pn-50",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Laminate (keyframe missing)",
+      "title": "Laminate",
       "description": "STATIC TWO-SHOT — as 44",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/50-laminate.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "35mm",
@@ -9476,20 +9476,20 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
         "rapture-rescued-blank"
       ],
-      "notes": "KEYFRAME MISSING — 50-laminate.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 50 of 51. Add the study and rebuild.\n\nSTATIC TWO-SHOT as 44. Hold five seconds. NEIL: (pleasantly to everyone) Have any of you ever thought about laminate?\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n50. STATIC TWO-SHOT — as 44\nHold. Five seconds.\nNEIL: (pleasantly, to everyone) Have any of you ever thought about laminate?"
+      "notes": "STATIC TWO-SHOT as 44. Hold five seconds. NEIL: (pleasantly to everyone) Have any of you ever thought about laminate?\n\nSource lens: 32mm; closest library lens 35mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n50. STATIC TWO-SHOT — as 44\nHold. Five seconds.\nNEIL: (pleasantly, to everyone) Have any of you ever thought about laminate?"
     },
     {
       "id": "rapture-ep5pn-51",
       "sceneId": "rapture-ep5-pats-night",
-      "title": "Tiny headlights (keyframe missing)",
+      "title": "Tiny headlights",
       "description": "EXT. ROAD — STATIC WIDE, 135mm long lens, locked off",
-      "image": "",
+      "image": "/images/rapture/ep5-pats-night/51-tiny.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "135mm",
@@ -9498,7 +9498,7 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, deadpan static two-shot through windscreen, five people in it now",
       "characters": [
@@ -9508,7 +9508,7 @@
         "rapture-jodie",
         "rapture-rescued-blank"
       ],
-      "notes": "KEYFRAME MISSING — 51-tiny.jpg is not in public/images/rapture/ep5-pats-night, so this card holds slot 51 of 51. Add the study and rebuild.\n\nEXT. ROAD STATIC WIDE 135mm long lens locked off. Police car tiny headlights on on empty road. Hold. CUT.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n51. EXT. ROAD — STATIC WIDE, 135mm long lens, locked off\nThe police car, tiny, headlights on, on an empty road.\nHold. CUT."
+      "notes": "EXT. ROAD STATIC WIDE 135mm long lens locked off. Police car tiny headlights on on empty road. Hold. CUT.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nNo CCTV anywhere. Two grammars only. The cops: static two-shot through the windscreen, 32mm locked off, handheld only for violence. Danny and Jodie: handheld, close, dark, red torchlight. The demons are only ever seen in someone's torch beam. Dry, deadpan British black comedy, never grief or horror performance. No score, no reaction inserts.\n\nTiming: 8s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n51. EXT. ROAD — STATIC WIDE, 135mm long lens, locked off\nThe police car, tiny, headlights on, on an empty road.\nHold. CUT."
     },
     {
       "id": "rapture-ep4hut-01",
@@ -11997,9 +11997,9 @@
     {
       "id": "rapture-ep4kit-15",
       "sceneId": "rapture-ep4-kitchen",
-      "title": "She doesn't push. She waits. (keyframe missing)",
+      "title": "She doesn't push. She waits.",
       "description": "She looks at him. Twenty years of people lying to her in kitchens.",
-      "image": "",
+      "image": "/images/rapture/ep4-kitchen/15-eight-seconds.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -12009,13 +12009,13 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 15-eight-seconds.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 15 of 23. Add the study and rebuild.\n\nPROTECTION. She looks at him with twenty years of people lying to her in kitchens behind her face, says \"Right\", and then waits eight seconds. She asks once; the pressure is silence, and it is the most aggressive thing she does in the episode. Do not cut away during it and do not shorten it in the animatic.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (8s), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC MEDIUM — 50mm, locked off, on NINA\nShe looks at him. Twenty years of people lying to her in kitchens.\n   NINA: Right.\n(She doesn't push. She waits. Eight seconds.)"
+      "notes": "PROTECTION. She looks at him with twenty years of people lying to her in kitchens behind her face, says \"Right\", and then waits eight seconds. She asks once; the pressure is silence, and it is the most aggressive thing she does in the episode. Do not cut away during it and do not shorten it in the animatic.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (8s), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC MEDIUM — 50mm, locked off, on NINA\nShe looks at him. Twenty years of people lying to her in kitchens.\n   NINA: Right.\n(She doesn't push. She waits. Eight seconds.)"
     },
     {
       "id": "rapture-ep4kit-16",
@@ -12114,9 +12114,9 @@
     {
       "id": "rapture-ep4kit-20",
       "sceneId": "rapture-ep4-kitchen",
-      "title": "Get a bag (keyframe missing)",
+      "title": "Get a bag",
       "description": "She stands. Picks up her water container off the table.",
-      "image": "",
+      "image": "/images/rapture/ep4-kitchen/20-get-a-bag.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -12126,13 +12126,13 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Fluorescent, flat, a hair wrong; a kitchen that will not line up",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 20-get-a-bag.jpg is not in public/images/rapture/ep4-kitchen, so this card holds slot 20 of 23. Add the study and rebuild.\n\nShe stands and takes her own water container off the table: \"Get a bag. It's a long way and the petrol's going off.\" / \"I haven't said I'm coming.\" / \"No.\" She does not look round for agreement. The container leaving the table closes the courtesy from shot 1.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. STATIC MEDIUM — 50mm, locked off, on NINA\nShe stands. Picks up her water container off the table.\n   NINA: Get a bag. It's a long way and the petrol's going off.\n   MARTIN: I haven't said I'm coming.\n   NINA: (already leaving) No."
+      "notes": "She stands and takes her own water container off the table: \"Get a bag. It's a long way and the petrol's going off.\" / \"I haven't said I'm coming.\" / \"No.\" She does not look round for agreement. The container leaving the table closes the courtesy from shot 1.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHis grammar: fluorescent, flat, off-centre, locked off. The composition sits a hair wrong and nothing about it is underlined. Nothing moves.\n\nHis grammar in his own house: fluorescent, flat, off-centre, locked off. Nothing squares up, and the frames stay slightly wrong all the way through because her symmetry is not allowed to organise his rooms. Only the street at the end is allowed to line up. No music, no stings, no cut to the tap for emphasis; the tap runs and nobody turns it off.\n\nTiming: 16s is a working total-shot estimate for animatic playback. Only written pauses are locked (none in this shot), and the two silences in shots 5 and 15 are not to be shortened.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. STATIC MEDIUM — 50mm, locked off, on NINA\nShe stands. Picks up her water container off the table.\n   NINA: Get a bag. It's a long way and the petrol's going off.\n   MARTIN: I haven't said I'm coming.\n   NINA: (already leaving) No."
     },
     {
       "id": "rapture-ep4kit-21",
@@ -12697,7 +12697,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 26 shots, 136s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), 26 placeholder cards still to generate, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 148s, moved here from episode two), fully studied, the cops' second beat (6 shots, 90s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 305-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 159-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (23 shots, 353-second estimate), 21 AI studies and 2 placeholder cards, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 270-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 327-second estimate), 49 AI studies on disk and 2 placeholder cards still to generate, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Eight ordered boards (cold open, St Jude's, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 157 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 26 shots, 136s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), 20 placeholder cards still to generate, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 148s, moved here from episode two), fully studied, the cops' second beat (6 shots, 90s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 305-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 159-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (23 shots, 353-second estimate), every shot studied, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 270-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 327-second estimate), fully studied, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Eight ordered boards (cold open, St Jude's, storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 157 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",
@@ -13617,6 +13617,11 @@
           "caption": "The worst moment of his day — AI-generated study, not final coverage."
         },
         {
+          "id": "look-rapture-ep4kit-15",
+          "image": "/images/rapture/ep4-kitchen/15-eight-seconds.jpg",
+          "caption": "She doesn't push. She waits. — AI-generated study, not final coverage."
+        },
+        {
           "id": "look-rapture-ep4kit-16",
           "image": "/images/rapture/ep4-kitchen/16-my-brother.jpg",
           "caption": "He's got an arcade — AI-generated study, not final coverage."
@@ -13635,6 +13640,11 @@
           "id": "look-rapture-ep4kit-19",
           "image": "/images/rapture/ep4-kitchen/19-its-mine.jpg",
           "caption": "It's mine — AI-generated study, not final coverage."
+        },
+        {
+          "id": "look-rapture-ep4kit-20",
+          "image": "/images/rapture/ep4-kitchen/20-get-a-bag.jpg",
+          "caption": "Get a bag — AI-generated study, not final coverage."
         },
         {
           "id": "look-rapture-ep4kit-21",
