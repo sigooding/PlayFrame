@@ -666,6 +666,8 @@ img{display:block;max-width:100%}
 .kind-cold{background:#2f4a58;color:#e9f3f7}.kind-flash{background:#efe4f0;color:#7a5280}.kind-dream{background:#e9ecf7;color:#566099}
 .kind-montage{background:#f4ecdd;color:#8a6c35}.kind-card{background:#e6ebe0;color:#4f5c46}.kind-tag{background:#eef3e6;color:#6c8153}
 .kind-plain{display:none}
+/* Scenes the screenplay does not carry yet: planned outlines and pages still to write. */
+.page-badge{display:inline-flex;align-items:center;margin-left:6px;font-style:normal;font-size:8px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;padding:2px 6px;border-radius:3px;vertical-align:2px;white-space:nowrap;background:#f1efe7;color:#a29a86;border:1px solid #e8e5da}
 .kind-row{display:flex;align-items:center;gap:10px}
 .kind-row select{flex:1}
 .act-hint{display:block;margin-top:6px;font-size:9.5px;color:#8b9c7b}
