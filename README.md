@@ -155,6 +155,7 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run dev` | development server |
 | `npm run build` / `npm start` | production build and serve |
 | `npm run check:assets` | verifies every image the code references exists on disk |
+| `npm run export:episode -- --episode 1` | exports one episode of the series to a self-contained folder (`exports/episode-1/`): a single `episode-1.json` with the episode, scenes, shots, keyframes, screenplay, cast and mood boards, plus copies of every keyframe and the screenplay sources. `--out`, `--project`, `--json-only` and `--clean` are available; `--help` lists them |
 | `npm run verify:features` | checks the AI prompt models, the thirty visual styles, and drives the real screenplay editor's undo/redo in jsdom (no server, no browser needed) |
 | `npm run verify:features:live` | the same, plus a check that `/?tab=screenplay` server-renders (needs the dev server running) |
 | `node scripts/verify7.mjs` | checks assets, the lighting library, every shot reference and the relationship screens (needs the dev server running, no browser required) |
