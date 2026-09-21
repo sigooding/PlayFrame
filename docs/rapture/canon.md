@@ -9,18 +9,38 @@ comedy in every thread; this is not noir and not a tragedy.
 
 - **Series bible:** the complete cause, tone, cosmology, blanks, water clock, cast,
   nine visual grammars, connective objects, eight episode outlines and final shots.
-- **The mugging:** [current numbered scene](scenes/ep1-mugging.md),
-  19 static shots in episode one's cold open. Sodium streetlight and shopfront spill;
-  the camera keeps operating after the violence as though the subject has merely
-  walked out of frame. The knife starts its journey through the old woman's handbag
-  and the support group. No mechanism revealed. No cast assigned. The19 legacy
-  keyframes (`shot-01`–`shot-19`) are now wired as scripted frames; the legacy board
-  is retired. All nineteen shots carry the legacy keyframes as draft references.
-- **St Jude's and the rapture:** [current numbered scene](scenes/ep1-st-judes.md),
-  19 locked-off daylight shots in episode one. Nina at St Jude's during the rapture;
-  people are there and then they aren't. One ignored complaint about water pressure.
-  The clipboard keeps swinging. The19 legacy keyframes (`a1s1-01`–`a1s1-19`) are
-  now wired as scripted frames; the legacy board is retired.
+- **Episode One is written:** [ep1-screenplay.md](ep1-screenplay.md), the screenplay
+  draft of 21 September 2026 — the cold open on the side street, St Jude's and the
+  rapture at breakfast, the cops in the supermarket car park, `ST JUDE'S - AFTER`,
+  Martin at the storage facility `THREE MONTHS EARLIER`, Danny and Jodie, the cops at
+  night and the 1980 tag. It is the episode's authority: the Screenplay tab carries it
+  page by page from [screenplay/](screenplay/), eight files named for the workspace's
+  scenes (`ep1-01`…`ep1-09`, there is no scene 5 page because the pendant-and-first-vision
+  outline stays superseded), and `npm run build:rapture` fails unless those pages rebuild
+  the draft byte for byte. Regenerate them after any edit to the draft with
+  `node scripts/rapture/split-ep1-screenplay.mjs`. A page is verbatim draft text under a
+  short production header — series line, `EPISODE ONE — <scene>` at column 0, the scene's
+  own slugline, then source, board, cast and grammar — and that header is the only text the
+  builder may add.
+- **The mugging:** [screenplay page](screenplay/ep1-01-side-street.md), with the
+  [numbered board](scenes/ep1-mugging.md) kept as reference only. The board's 19 static
+  shots (`shot-01`–`shot-19` as draft references) were written for `EXT. ALLEY — NIGHT`,
+  a mugger in his thirties and a tug-of-war over the bag; the draft moves the scene to
+  `EXT. SIDE STREET - EARLY MORNING`, makes the mugger 19 and more frightened than she is,
+  has her hand the bag over like a bus pass, takes him mid-reach with no flash and no sound,
+  and has her bag his dropped knife in a tissue. **The board has not been re-boarded to the
+  page** and no keyframe in it is coverage of the new scene. No mechanism revealed. No cast
+  assigned: the Old Woman and the Mugger stay unnamed.
+- **St Jude's and the rapture:** [screenplay page](screenplay/ep1-02-st-judes-house.md),
+  with the [numbered board](scenes/ep1-st-judes.md) kept as reference only. The board's 19
+  locked-off daylight shots (`a1s1-01`–`a1s1-19`) were a two-hander — Nina, one resident
+  called Malcolm, one called Deborah, tea, laundry, a postman's trolley, two names crossed
+  off a board. The draft is an ensemble breakfast: Brian and Terry and the charger, Col's
+  four weeks Thursday and the room with the aerial, fourteen on the phone and twenty-two in
+  the ledger, the volunteer who is beaten to the upstairs bins, Deborah's forty minutes of
+  water pressure, Maureen's hypothetical, twenty residents, a dog under the table — and the
+  rapture lands mid-anecdote on Terry, leaving twenty untouched breakfasts and a knife
+  spinning on a plate rim. **The board has not been re-boarded to the page.**
 - **Number Fourteen:** [current numbered scene](scenes/ep4-number-fourteen.md),
   13 shots in episode four. This remains a supporting water-stop scene, **not** the
   Pat / fork / gate sequence in the current episode outline.
@@ -98,9 +118,52 @@ comedy in every thread; this is not noir and not a tragedy.
   no further backstory is supplied. The unnamed MAN (60s, cardigan) between
   the pallets of bark chippings is a blank who belongs to nobody and joins no
   cast list. All fifteen shots carry AI studies.
-- **Episode One revised running order (42 min before tag):** mugging cold open, St Jude's (Nina Sc 1), cops first beat, washing up (Nina Sc 3 — 26 shots, FIX 4: pendant is mother's always had it not Deborah's bedside, shot 18 cut, shots 23-24 replaced own room drawer practical decision 23 STATIC MEDIUM 50mm bed cross crooked drawer elastic bands rosary broken link nail file pendant dull, 24 CLOSE 65mm picks up for torch batteries forty years never worn puts on practical smaller round neck, vision beat same corridor hand to chest), Martin's storage marked as pre-rapture flashback (machine eight weeks in Max's room, flat fluorescent locked off slightly off-centre), Danny and Jodie first appearance (21 shots), cops second beat (6 shots, 90s, ends comic thread worse), then 1980 tag. Episode Five now therapy (26) + Night at Pat's (51) no CCTV two grammars only.
-- **Danny and Jodie — first appearance, three weeks in:** [numbered scene](scenes/ep1-danny-jodie.md), 21 handheld shots at dusk: fence, screwdriver, door, rules (nothing off anyone still alive, nothing off the dead that's got a name on it, no upstairs, check the cistern), chutney, four-pint bottle, going-out coat, wall of photographs, cistern, thump, out now/cat, stairwell, escape, header tank, don't tell anyone about the door, walking away with red bike light. Grammar: handheld, tight, dark, red practical light, never a clean wide. Establishes only two things: they do this now, and she's better at it.
-- **The cops, second beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6 static shots at night parked: 32mm windscreen two-shot (dashboard lit, Kath eating, Ray not, taser lad thirty-odd, pause six seconds), 24mm exterior wide across two bays empty street interior light on, 32mm two-shot form/no form, 85mm insert bottle untouched in cup holder, 32mm two-shot who's in charge now — Us (no hesitation), 24mm exterior same framing hold CUT. Grammar exactly static bonnet two-shot, same bottle untouched. Ninety seconds, ends comic thread worse.
+- **Episode One running order — the draft's, and now the workspace's:** mugging cold open
+  (`EXT. SIDE STREET - EARLY MORNING`), St Jude's and the rapture (`INT./EXT. ST JUDE'S HOUSE — MORNING`),
+  the cops' first beat (`INT. POLICE CAR (PARKED) — DAY`, the supermarket car park),
+  `ST JUDE'S - AFTER` which is the washing-up scene (`INT./EXT. ST JUDE'S — LATER`), Martin at the
+  storage facility (`INT. STORAGE FACILITY — DAY`, `SUPER: THREE MONTHS EARLIER`, pre-rapture
+  flashback), Danny and Jodie (`INT./EXT. A HOUSE — DUSK`), the cops' second beat
+  (`INT. POLICE CAR (PARKED) — NIGHT`) and the tag (`INT. HOTEL ROOM — DAY`, `SUPER: 1980`).
+  The plan row for the cops' first beat moved above the washing-up row so the scene navigator,
+  the storyboard and the script all read the draft's order; the superseded pendant-and-first-vision
+  outline sits between the clearing-up run and Martin and still has no page. Episode one is
+  9 scenes, 134 shots and roughly 820 seconds of animatic estimates — none of which the draft
+  changed, because it changed pages, not boards. The earlier summary follows, with the washing-up
+  detail it was written for: washing up (Nina Sc 3 — 26 shots, FIX 4: pendant is mother's always had it not Deborah's bedside, shot 18 cut, shots 23-24 replaced own room drawer practical decision 23 STATIC MEDIUM 50mm bed cross crooked drawer elastic bands rosary broken link nail file pendant dull, 24 CLOSE 65mm picks up for torch batteries forty years never worn puts on practical smaller round neck, vision beat same corridor hand to chest), Martin's storage marked as pre-rapture flashback (machine eight weeks in Max's room, flat fluorescent locked off slightly off-centre), Danny and Jodie first appearance (21 shots), cops second beat (6 shots, 90s, ends comic thread worse), then 1980 tag. Episode Five now therapy (26) + Night at Pat's (51) no CCTV two grammars only.
+- **Danny and Jodie — first appearance, three weeks in:** [screenplay page](screenplay/ep1-07-danny-and-jodie.md)
+  and [numbered scene](scenes/ep1-danny-jodie.md) — the draft matches the board beat for beat, with trims only (no macro insert, the red bike light clipped to her coat, "nothing off anyone **who's** still alive"). 21 handheld shots at dusk: fence, screwdriver, door, rules (nothing off anyone still alive, nothing off the dead that's got a name on it, no upstairs, check the cistern), chutney, four-pint bottle, going-out coat, wall of photographs, cistern, thump, out now/cat, stairwell, escape, header tank, don't tell anyone about the door, walking away with red bike light. Grammar: handheld, tight, dark, red practical light, never a clean wide. Establishes only two things: they do this now, and she's better at it.
+- **The cops' first beat:** [screenplay page](screenplay/ep1-03-police-car-day.md), **written and not
+  boarded**. There's no birds / some of them'll have been in cages; everyone that's left is guilty
+  though, surely; we should arrest ourselves; it's what we signed up for; to teach moral justice —
+  you did — sounds like me; the man in a blue coat and a quarter of a tonne of water; the taser fired
+  at a man already stopping; the caution recited to nobody; there's no court yet; and the bottle Ray
+  picks up off the tarmac, which the second beat finds untouched. The scene keeps the 19 ordered
+  legacy reference keyframes (`a2s1`) that belonged to the older outline, status Needs review.
+- **The cops, second beat:** [screenplay page](screenplay/ep1-08-police-car-night.md) and
+  [numbered scene](scenes/ep1-cops-second-beat.md) — the draft is the board, verbatim, all six shots
+  and every pause. 6 static shots at night parked: 32mm windscreen two-shot (dashboard lit, Kath eating, Ray not, taser lad thirty-odd, pause six seconds), 24mm exterior wide across two bays empty street interior light on, 32mm two-shot form/no form, 85mm insert bottle untouched in cup holder, 32mm two-shot who's in charge now — Us (no hesitation), 24mm exterior same framing hold CUT. Grammar exactly static bonnet two-shot, same bottle untouched. Ninety seconds, ends comic thread worse.
+- **Martin at the storage facility:** [screenplay page](screenplay/ep1-06-storage-facility.md),
+  **written and not boarded**, and marked `SUPER: THREE MONTHS EARLIER` — a pre-rapture flashback,
+  because the machine has to have sat in Max's room for eight weeks by the present. `DECEASED ESTATE
+  — ELECTRICALS, MISC` with **GABE HOLLAND** underlined twice in biro in the margin; the padlock
+  takes three attempts; a gold disc in bubble wrap; `PERSONAL EFFECTS — DO NOT SELL`; the itemised
+  1980 hotel bill read like scripture — two bottles of Scotch, a club sandwich, room service, 4 a.m.;
+  the tour jacket tried on, folded badly and put back; four bars of `DON'T CALL ME HOME` played badly;
+  `MAX: what time u back`, ringing out, "Course."; and the beige housing with a serial plate, no
+  manufacturer and a small rectangular gap where something has been snapped off, dropped in with three
+  other dead machines and never remarked on. The scene keeps the 24 ordered legacy reference keyframes
+  (`a1s4`) from the older outline, status Needs review.
+- **Tag — 1980:** [screenplay page](screenplay/ep1-09-hotel-room.md), **written and not boarded**.
+  `SUPER: 1980`; an ordinary hotel room; the air distorting near the foot of the bed; a man assembling
+  like a photograph developing, checking his own hands like they're borrowed. The tracker snapped off
+  the casing and pocketed without much thought. `USER PARAMETERS` with `SOCIAL STATUS 50` left alone;
+  the beard approved; the guitar arriving; `SONG PARAMETERS`, `TEMPO 120`, `KEY G MAJOR`,
+  `CHORD PROGRESSION IV-V-vi-IV`; afternoon going dark while the song comes together; `IMAGE = ROCK STAR`
+  and no smile; the montage with its half-second backstage flash of something fastened round a laughing
+  young woman's neck; then `MONTHS LATER`, a different hotel with the same geometry, `ERROR`, `UNDO?`, a
+  cursor blinking for a long time, `NO`, `CUT TO BLACK`, and credits over the 1980 studio recording of
+  "Don't Call Me Home". This is the scene the workspace listed as the outline `1980 thread — NO`.
 - **Therapy class (Episode Five revised):** [numbered scene](scenes/ep5-therapy-class.md),
   26 shots, INT. THE SCOUT HUT DAY, handheld close faces circle not quite circle red fire door light tarpaulin never wide. Episode five placement water brown and rationed not two days left. Grandma Rosemary dog rug story (shot 13 long hold protection), hi-vis what we're for invented on spot, kept us back maintain order doctrine, Derek 2003 divorce one day at a time most useful, Brian went out Tuesday, Jodie at edge, Danny sleeve over bandage. Protections: Carl never says what he did. Doctrine hardens before 7-8. All 26 placeholder cards until studies generated (0/26 images present, pending generation).
 - **The night at Pat's (Episode Five — replaces previous Pat's house version):** [numbered scene](scenes/ep5-pats-night.md),
@@ -113,18 +176,36 @@ comedy in every thread; this is not noir and not a tragedy.
   The current version tightens shot 1 to a CU/50mm of the headlight switch and
   shot 12 to a MS/35mm of the passing van panel. Dialogue, beats and every explicit
   pause are unchanged. No white headlight beam is shown.
+- **New cast from the draft (27 entries now, was 22):** Brian (50s) and Terry (50s), Col (30s),
+  Deborah (60s) and Maureen (40s) — the St Jude's residents, cast in the St Jude's scene, with
+  Brian↔Terry and Col↔Deborah as reciprocal rivalries (the charger; the room with the aerial).
+  No sheets and no keyframes exist for any of them, so their cards use the initials avatar. The
+  Volunteer, the Man in a Blue Coat, the storage Attendant, the Old Woman, the Mugger and the Young
+  Woman in the montage stay unnamed and are cast nowhere, per the house rule. Nina, Martin and the
+  absconder carry the draft's new details in their descriptions; the absconder's records that the
+  auction sheet names the estate GABE HOLLAND.
 - **App bundle:** `public/projects/let-the-raptures-commence.json`. Rebuild with
   `npm run build:rapture`; verify with `npm run verify:rapture`.
-- **The Screenplay tab is assembled from the scene sources, not typed separately.** The
-  builder joins every scene that has a written document — seventeen of them, from ep1 the mugging
-  to ep5 the night at Pat's — in the workspace's own order (episode, then scene order), so
-  the scene navigator, the storyboard and the episode export all read the same running order.
+- **The Screenplay tab is assembled from its sources, not typed separately.** The builder joins
+  every scene that has a written document — **twenty of them now**, from ep1 the mugging to ep5 the
+  night at Pat's — in the workspace's own order (episode, then scene order), so the scene navigator,
+  the storyboard and the episode export all read the same running order. **Episode one's eight sources
+  are the draft's pages** in `docs/rapture/screenplay/`; the other twelve remain the numbered scene
+  documents in `docs/rapture/scenes/` that the storyboard was built from. Episode one's numbered
+  documents are still read — the builder parses their shots — but they no longer supply script text.
   A scene is located in the script by its slugline as a whole, never by its location as a
   substring: the therapy class and the episode-four scout hut share `INT. THE SCOUT HUT`, and
   the outlines that share a location with a written scene (`INT. POLICE CAR`, `INT. ST JUDE'S`)
-  must not borrow that scene's page. `scripts/verify-rapture.mjs` asserts the fifteen blocks,
-  their order and that no outline matches one; the scenes with no document stay labelled
-  outlines and the navigator says they have no page yet.
+  must not borrow that scene's page. Every page therefore opens with its scene's own slugline, and
+  episode one's scene locations and times were set from the draft so the navigator selects the right
+  heading. A block starts at an `EPISODE …` line **at column 0** — `episodeNumberOf` no longer
+  tolerates leading whitespace, because an indented "Episode One" on the draft's title page used to
+  be reported as the line above it and split the cold open in two. `scripts/verify-rapture.mjs`
+  asserts the twenty blocks, their order, each episode-one page against its file and its scene, that
+  the pages rebuild the draft byte for byte, and that no outline matches a block; the scenes with no
+  document stay labelled outlines and the navigator says they have no page yet. A scene the draft has
+  written but nobody has boarded says **WRITTEN, NOT BOARDED** instead, so it is not offered as an
+  outline, and that banner is stripped from AI prompts like the other production metadata.
 - **Production plan:** `scripts/rapture/plan.mjs`. Holds cast, links, outline
   locations, reference selection and editorial timing estimates, not a second script.
 
@@ -349,7 +430,22 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
   Pat's cellar. Whether Nina's audit and the rescue fall in the same week, and whether the terminal
   in the bus is the terminal Max is using in the flashbacks, has not been supplied and is not
   asserted. Episode one's pendant-and-first-vision outline is kept as a SUPERSEDED POSITION because
-  the beat now lives inside the boarded washing-up scene.
+  the beat now lives inside the `ST JUDE'S - AFTER` page and its washing-up board.
+- **The 1980 tag's chronology is not reconciled.** The draft's tag is dated `SUPER: 1980` and reaches
+  his death `MONTHS LATER`; the bible retains his death five years after the prologue, and the older
+  outline row warned against dating the hotel scene 1980 at all. The page is the draft verbatim and
+  the outline row is unchanged, so both readings are in the workspace and neither is asserted.
+- **`THREE MONTHS EARLIER` against eight weeks.** The draft dates Martin's storage scene three months
+  before the present; the plan still records that the machine must have been in Max's room for eight
+  weeks by the present. The two are compatible only if it reached Max about a month after the auction,
+  which nobody has supplied. Both numbers are retained as written.
+- **GABE HOLLAND** is new canon from the draft: the name in biro, underlined twice, on the auction
+  sheet for `DECEASED ESTATE — ELECTRICALS, MISC`. It is recorded as the name the listing carries, not
+  asserted as the absconder's name in any other scene, and no other document uses it.
+- **Episode one's pages are script, not coverage.** The mugging, St Jude's and washing-up boards and
+  their keyframes predate the draft and have not been re-boarded; the cops' first beat, the storage
+  facility and the tag have no board at all. Nothing in the storyboard should be read as approved
+  coverage of the new pages, and the scene cards say so.
 
 ## Legacy boards (wired into the storyboard as reference frames)
 

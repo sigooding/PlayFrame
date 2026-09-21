@@ -1,4 +1,7 @@
 # LET THE RAPTURES COMMENCE
+
+> **Board, not script.** The screenplay page for this scene is [ep1-07-danny-and-jodie.md](../screenplay/ep1-07-danny-and-jodie.md). The episode-one draft of 21 September 2026 matches this board beat for beat, with trims only (no macro insert, the red bike light clipped to her coat, "nothing off anyone who's still alive"). The page is the script; this document is the shot board behind it.
+
 ## EPISODE ONE — DANNY AND JODIE
 
 Scene: INT./EXT. A HOUSE — DUSK

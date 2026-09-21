@@ -104,7 +104,10 @@ const ORDINAL_EPISODES: Record<string, number> = { one: 1, two: 2, three: 3, fou
 
 /** "Episode 4 — The old lady", "EPISODE FOUR — SCENE 5", "Episode One" → 4 / 4 / 1; anything else → null. */
 export function episodeNumberOf(text: string): number | null {
-  const m = /^\s*episode\s+([a-z]+|\d+)\b/i.exec(text || "");
+  // No leading whitespace and no `\s*`: an indented "Episode One" — a title page, a character's
+  // line, a quotation — is not a scene heading, and `\s*` would even eat the previous line's
+  // newline and report the heading one line early, splitting a scene block in two.
+  const m = /^episode\s+([a-z]+|\d+)\b/i.exec(text || "");
   if (!m) return null;
   const token = m[1].toLowerCase();
   return /^\d+$/.test(token) ? Number(token) : ORDINAL_EPISODES[token] ?? null;

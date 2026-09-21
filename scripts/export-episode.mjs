@@ -67,6 +67,8 @@ const jsonName = option("name", reel ? "reel.json" : `episode-${episodeNumber}.j
 const copyFiles = !jsonOnly && !reel;
 const publicDir = join(root, "public");
 const sceneSourcesDir = join(root, "docs", "rapture", "scenes");
+/** Episode screenplay pages — the draft text the Screenplay tab carries, one file per scene. */
+const pageSourcesDir = join(root, "docs", "rapture", "screenplay");
 
 // ---------------------------------------------------------------- helpers
 const slugify = title => title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "untitled";
@@ -74,7 +76,8 @@ const pad = n => String(n).padStart(2, "0");
 const ORDINALS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12 };
 /** "Episode 4 — The old lady", "EPISODE FOUR — SCENE 5", "Episode One" → 4 / 4 / 1; anything else → null. */
 const episodeNumberOf = text => {
-  const m = /^\s*episode\s+([a-z]+|\d+)\b/i.exec(text || "");
+  // Column 0 only, like src/lib/structure.ts: an indented "Episode One" is text, not a heading.
+  const m = /^episode\s+([a-z]+|\d+)\b/i.exec(text || "");
   if (!m) return null;
   const token = m[1].toLowerCase();
   return /^\d+$/.test(token) ? Number(token) : ORDINALS[token] ?? null;
@@ -251,8 +254,25 @@ const sceneSources = sceneSourceFiles.map(name => {
   const named = name.startsWith(prefix);
   // A file named for another episode is only adopted on an exact slugline match.
   const scene = sceneForSlugline(slugline, { exactOnly: !named });
-  return { file: `screenplay/${name}`, sourcePath: relative(root, join(sceneSourcesDir, name)).split("\\").join("/"), heading, slugline, text, sceneId: scene?.id || null, named };
+  return { kind: "board", file: `screenplay/${name}`, sourcePath: relative(root, join(sceneSourcesDir, name)).split("\\").join("/"), heading, slugline, text, sceneId: scene?.id || null, named };
 }).filter((source, i, all) => (source.sceneId && all.findIndex(o => o.sceneId === source.sceneId) === i) || (!source.sceneId && source.named));
+// A scene's screenplay page is what the app's Screenplay tab carries, so it wins over the numbered
+// shot board when both exist — episode one is written as a draft and boarded from older documents.
+const pageSourceFiles = existsSync(pageSourcesDir)
+  ? readdirSync(pageSourcesDir).filter(name => name.endsWith(".md")).sort((a, b) => Number(b.startsWith(prefix)) - Number(a.startsWith(prefix)) || a.localeCompare(b))
+  : [];
+const pageSources = pageSourceFiles.map(name => {
+  const text = readFileSync(join(pageSourcesDir, name), "utf8");
+  const lines = text.split("\n");
+  const heading = (lines.find(line => /^#{0,2}\s*episode/i.test(line.trim()) && !/^\s/.test(line)) || "").replace(/^#+\s*/, "").trim();
+  const sceneLine = lines.find(line => /^(INT|EXT)\b/i.test(line.trim())) || "";
+  const slugline = normalise(sceneLine);
+  const named = name.startsWith(prefix);
+  const scene = sceneForSlugline(slugline, { exactOnly: !named });
+  return { kind: "page", file: `screenplay/${name}`, sourcePath: relative(root, join(pageSourcesDir, name)).split("\\").join("/"), heading, slugline, text, sceneId: scene?.id || null, named };
+});
+const sourcesFor = sceneId => [...pageSources.filter(s => s.sceneId === sceneId), ...sceneSources.filter(s => s.sceneId === sceneId)];
+const allSources = [...pageSources, ...sceneSources].filter((source, i, all) => all.findIndex(o => o.sourcePath === source.sourcePath) === i);
 /** Where a stale ep<N>- file really belongs, for the warning. */
 const elsewhere = slugline => {
   const scene = sceneForSlugline(slugline, { exactOnly: true, among: project.scenes.filter(sc => sc.actId !== act.id) });
@@ -264,7 +284,7 @@ const exportedScenes = scenes.map((scene, i) => {
   const number = i + 1;
   const folder = `images/keyframes/${pad(number)}-${slugify(scene.title)}`;
   const frames = project.frames.filter(f => f.sceneId === scene.id);
-  const source = sceneSources.find(s => s.sceneId === scene.id);
+  const source = sourcesFor(scene.id)[0];
 
   const shots = frames.map((frame, j) => {
     episodeShotNumber += 1;
@@ -319,7 +339,8 @@ const exportedScenes = scenes.map((scene, i) => {
     keyframesOnDisk: shots.filter(s => s.keyframe?.present).length,
     estimatedDurationSeconds: shots.reduce((sum, s) => sum + (Number(s.duration) || 0), 0),
     allDurationsAreEstimates: shots.length > 0 && shots.every(s => s.durationIsEstimate),
-    screenplay: source ? { file: copyFiles ? source.file : null, sourcePath: source.sourcePath, heading: source.heading } : null,
+    screenplay: source ? { file: copyFiles ? source.file : null, sourcePath: source.sourcePath, heading: source.heading, kind: source.kind } : null,
+    storyboardSources: sourcesFor(scene.id).filter(s => s.kind === "board").map(s => ({ file: copyFiles ? s.file : null, sourcePath: s.sourcePath, heading: s.heading })),
     moodboards: boards,
     keyframesFolder: shots.length ? folder : null,
     shots,
@@ -351,7 +372,7 @@ const episodeTextFile = `screenplay/episode-${episodeNumber}.txt`;
 if (copyFiles) {
   mkdirSync(join(outDir, "screenplay"), { recursive: true });
   writeFileSync(join(outDir, episodeTextFile), episodeText ? `${episodeText}\n` : "");
-  for (const source of sceneSources) writeFileSync(join(outDir, source.file), source.text);
+  for (const source of allSources) writeFileSync(join(outDir, source.file), source.text);
 }
 for (const section of sections) {
   const scene = exportedScenes.find(s => s.id === section.sceneId);
@@ -409,9 +430,9 @@ ${reel ? `- \`${jsonName}\` — the whole export in one self-contained file: epi
       : `- \`${jsonName}\` — everything below in one file: episode, scenes, shots, keyframes, screenplay, cast, mood boards and an image manifest (relative \`file\` paths plus the original \`source\` app paths).
 - \`images/keyframes/<scene>/\` — one keyframe per shot, one folder per scene, in shot order (${keyframesOnDisk} files).
 - \`images/cast/\` — character sheets for the ${cast.length} cast members who appear in this episode.
-- \`screenplay/episode-${episodeNumber}.txt\` — this episode's part of the project's Screenplay tab; \`screenplay/*.md\` are the numbered scene sources the storyboard was built from.`}
+- \`screenplay/episode-${episodeNumber}.txt\` — this episode's part of the project's Screenplay tab; \`screenplay/*.md\` are its sources — the screenplay pages the tab carries and the numbered scene documents the storyboard was built from.`}
 
-${exportedScenes.map(s => `${s.number}. **${s.title}** — ${s.slugline} (${s.kind}) — ${s.shotCount ? `${s.shotCount} shots, ~${s.estimatedDurationSeconds}s estimated` : "outline only, not boarded"}${s.screenplay ? "" : " — no screenplay yet"}`).join("\n")}
+${exportedScenes.map(s => `${s.number}. **${s.title}** — ${s.slugline} (${s.kind}) — ${s.shotCount ? `${s.shotCount} shots, ~${s.estimatedDurationSeconds}s estimated` : s.screenplay ? "written, not boarded" : "outline only, not boarded"}${s.screenplay ? "" : " — no screenplay yet"}`).join("\n")}
 
 Durations marked as estimates are working animatic totals, not locked shooting lengths. Legacy "board" shots (status *Needs review*) are ordered reference keyframes, not approved coverage.
 `;
@@ -443,11 +464,11 @@ const output = {
   shots,
   keyframes: shots.filter(s => s.keyframe).map(s => ({ shotId: s.id, sceneId: s.sceneId, sceneNumber: exportedScenes.find(sc => sc.id === s.sceneId).number, shotNumber: s.number, episodeShotNumber: s.episodeShotNumber, title: s.title, ...s.keyframe })),
   screenplay: {
-    note: "`episodeText` is this episode's part of the project's Screenplay tab. `sources` are the numbered scene documents the storyboard was built from; scenes marked outline-only have no screenplay yet.",
+    note: "`episodeText` is this episode's part of the project's Screenplay tab. `sources` are the documents behind it: `kind: page` files are the screenplay pages the tab carries, `kind: board` files are the numbered shot documents the storyboard was built from. Scenes with neither have no screenplay yet.",
     episodeTextFile: copyFiles ? episodeTextFile : null,
     episodeText,
     sections,
-    sources: sceneSources.map(s => ({ file: copyFiles ? s.file : null, sourcePath: s.sourcePath, heading: s.heading, sceneId: s.sceneId, text: s.text })),
+    sources: allSources.map(s => ({ kind: s.kind, file: copyFiles ? s.file : null, sourcePath: s.sourcePath, heading: s.heading, sceneId: s.sceneId, text: s.text })),
   },
   cast,
   moodboards,
@@ -458,7 +479,7 @@ const output = {
     ...reelWarnings,
     ...missing.map(i => `Missing on disk: ${i.source} (${i.kind})`),
     ...unknownCast.map(id => `Cast id "${id}" is referenced but not in the project's characters`),
-    ...sceneSources.filter(s => !s.sceneId).map(s => `Screenplay source ${s.sourcePath} is named for this episode but matches none of its scenes${elsewhere(s.slugline)}`),
+    ...allSources.filter(s => !s.sceneId && s.named).map(s => `Screenplay source ${s.sourcePath} is named for this episode but matches none of its scenes${elsewhere(s.slugline)}${s.kind === "board" && pageSources.some(p => p.named) ? " — its scene is written from a screenplay page now, so this numbered board is reference only" : ""}`),
     ...sections.filter(s => !s.sceneId).map(s => `Screenplay section "${s.heading}" could not be matched to a scene by its slugline`),
   ],
 };
@@ -473,7 +494,7 @@ const mb = bytes => `${(bytes / 1024 / 1024).toFixed(1)} MB`;
 const where = relative(root, outDir) || ".";
 console.log(`${project.title} — ${act.title}`);
 console.log(`  ${exportedScenes.length} scenes (${output.episode.boardedSceneCount} boarded), ${shots.length} shots, ${output.episode.keyframesOnDisk} keyframes, ~${output.episode.estimatedDurationSeconds}s estimated`);
-console.log(`  ${sections.length} screenplay section${sections.length === 1 ? "" : "s"} from the project script, ${sceneSources.length} scene source file${sceneSources.length === 1 ? "" : "s"}, ${cast.length} cast, ${moodboards.length} mood board${moodboards.length === 1 ? "" : "s"}`);
+console.log(`  ${sections.length} screenplay section${sections.length === 1 ? "" : "s"} from the project script, ${allSources.length} screenplay source file${allSources.length === 1 ? "" : "s"} (${pageSources.length} page${pageSources.length === 1 ? "" : "s"}, ${sceneSources.length} numbered board${sceneSources.length === 1 ? "" : "s"}), ${cast.length} cast, ${moodboards.length} mood board${moodboards.length === 1 ? "" : "s"}`);
 if (reel) {
   const shrink = images.filter(i => i.originalBytes).reduce((n, i) => n + i.originalBytes, 0);
   console.log(`  ${embedded.length} images embedded (${mb(embeddedBytes)} as data URIs, from ${mb(shrink)} of originals)` +

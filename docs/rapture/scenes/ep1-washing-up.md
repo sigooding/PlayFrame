@@ -1,4 +1,7 @@
 # LET THE RAPTURES COMMENCE
+
+> **Board, not script.** The screenplay page for this scene is [ep1-04-st-judes-after.md](../screenplay/ep1-04-st-judes-after.md). The scene is now written as `ST JUDE'S - AFTER` in the episode-one draft of 21 September 2026, in a different order and with new beats (the dog, the gas meter, six beds, Col's aerial, Maureen's two jars, the dead landline, the note, the fuel line, four containers). FIX 4 stands. This board is **reference only**; it has not been re-ordered to the page.
+
 ## EPISODE 1 — SCENE 3 — WASHING UP (revised — FIX 4)
 
 Scene: INT./EXT. ST JUDE'S — DAY
