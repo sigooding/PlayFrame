@@ -28,7 +28,7 @@ const { validatePatch, sanitizeImport, isUuid, PLATFORMS, buildFramePrompt, buil
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 22);
-assert.equal(project.frames.length, 394, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat and 17 scout-hut shots plus 21 Danny and Jodie and 6 cops second beat plus 26 therapy class plus 197 legacy slots (194 keyframes, 3 missing-keyframe cards)");
+assert.equal(project.frames.length, 383, "13 Number Fourteen shots plus 31 lockup shots plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut plus 21 Danny and Jodie and 6 cops second beat plus 26 therapy class plus 26 washing up FIX 4 plus 160 legacy slots (157 keyframes, 3 missing)");
 assert.equal(project.scenes.length, 40);
 assert.equal(project.moodboards.length, 10);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
@@ -42,7 +42,7 @@ const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
 assert.equal(coldOpen.length, 17);
 assert.equal(lockup.length, 31);
-assert.equal(legacy.length, 197);
+assert.equal(legacy.length, 160);
 assert.equal(starterProjects.length, 4);
 assert.equal(starterProjects.filter(p => p.id === project.id).length, 1);
 assert.equal(starterProjects[0].title, "The Last Light", "Existing starter ordering must not change");
@@ -50,7 +50,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 394);
+assert.equal(imported.frames.length, 383);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -114,7 +114,7 @@ assert.equal(ep4[0].lens, "50mm");
 assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
-const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy"]);
+const fullScenes = new Set([ep4[0].sceneId, scoutHut[0].sceneId, coldOpen[0].sceneId, angelOpen[0].sceneId, patOpen[0].sceneId, patHouse[0].sceneId, lockup[0].sceneId, "rapture-ep1-danny-jodie", "rapture-ep1-cops-second", "rapture-ep5-therapy", "rapture-ep1-washing-up"]);
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
 assert(project.scenes.some(s => s.id === "rapture-ep4-pat"));
 assert.equal(patOpen.length, 16, "The Pat cold open is boarded with sixteen shots");
@@ -124,7 +124,7 @@ assert(!project.scenes.filter(s => s.actId === "rapture-episode-8").some(s => s.
 pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/Max boundaries intact");
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
-assert.equal(new Set(legacy.map(f => f.sceneId)).size, 9);
+assert.equal(new Set(legacy.map(f => f.sceneId)).size, 8);
 assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 19);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
@@ -151,7 +151,7 @@ for (const [prefix, slots] of Object.entries(boards)) {
 assert.deepEqual(missing.sort(), ["ep2s2-15.jpg", "ep2s3-15.jpg", "ep2s3-16.jpg"]);
 assert(legacy.every(f => f.image === "" ? (f.title.endsWith("(keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING")) : f.notes.startsWith("LEGACY BOARD")));
 assert(legacy.every(f => f.status === "Needs review" && f.durationIsEstimate === true && f.duration === 5));
-pass("nine legacy boards in scene order, numeric within each board, three missing-keyframe cards holding their slots");
+pass("eight legacy boards in scene order, numeric within each board, three missing-keyframe cards holding their slots");
 
 // The first wrong lockup: numbered, scripted, keyframes pending, shot 29 truncated.
 lockup.forEach((frame, i) => assert.equal(frame.id, `rapture-ep2-lockup-${String(i + 1).padStart(2, "0")}`, "Lockup numbering must be contiguous"));
@@ -291,7 +291,7 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 270 + 271 + 148 + 90 + 197 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 270 + 271 + 148 + 90 + 136 + 160 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -407,10 +407,10 @@ assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
 assert(legacy.every(f => f.image === "" || f.image.startsWith("/images/rapture/")), "Legacy keyframes live under /images/rapture/");
-assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 194);
+assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 157);
 assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board covers all thirteen studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies and 194 ordered legacy keyframes`);
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies and 157 ordered legacy keyframes plus 26 washing-up and 26 therapy placeholder cards`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
@@ -431,7 +431,7 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 394);
+      assert.equal(opened.frames.length, 383);
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -444,7 +444,7 @@ try {
       assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 394);
+      assert.equal(restored.frames.length, 383);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');

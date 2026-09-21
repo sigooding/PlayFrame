@@ -53,7 +53,7 @@ comedy in every thread; this is not noir and not a tragedy.
   no further backstory is supplied. The unnamed MAN (60s, cardigan) between
   the pallets of bark chippings is a blank who belongs to nobody and joins no
   cast list. All fifteen shots carry AI studies.
-- **Episode One revised running order (42 min before tag):** mugging cold open, St Jude's (Nina Sc 1), cops first beat, washing up (Nina Sc 3 — pendant is mother's always had it, not Deborah's bedside), Martin's storage marked as pre-rapture flashback (machine eight weeks in Max's room), Danny and Jodie first appearance, cops second beat (90s, ends comic thread worse), then 1980 tag.
+- **Episode One revised running order (42 min before tag):** mugging cold open, St Jude's (Nina Sc 1), cops first beat, washing up (Nina Sc 3 — 26 shots, FIX 4: pendant is mother's always had it not Deborah's bedside, shot 18 cut, shots 23-24 replaced own room drawer practical decision 23 STATIC MEDIUM 50mm bed cross crooked drawer elastic bands rosary broken link nail file pendant dull, 24 CLOSE 65mm picks up for torch batteries forty years never worn puts on practical smaller round neck, vision beat same corridor hand to chest), Martin's storage marked as pre-rapture flashback (machine eight weeks in Max's room, flat fluorescent locked off slightly off-centre), Danny and Jodie first appearance (21 shots), cops second beat (6 shots, 90s, ends comic thread worse), then 1980 tag.
 - **Danny and Jodie — first appearance, three weeks in:** [numbered scene](scenes/ep1-danny-jodie.md), 21 handheld shots at dusk: fence, screwdriver, door, rules (nothing off anyone still alive, nothing off the dead that's got a name on it, no upstairs, check the cistern), chutney, four-pint bottle, going-out coat, wall of photographs, cistern, thump, out now/cat, stairwell, escape, header tank, don't tell anyone about the door, walking away with red bike light. Grammar: handheld, tight, dark, red practical light, never a clean wide. Establishes only two things: they do this now, and she's better at it.
 - **The cops, second beat:** [numbered scene](scenes/ep1-cops-second-beat.md), 6 static shots at night parked: 32mm windscreen two-shot (dashboard lit, Kath eating, Ray not, taser lad thirty-odd, pause six seconds), 24mm exterior wide across two bays empty street interior light on, 32mm two-shot form/no form, 85mm insert bottle untouched in cup holder, 32mm two-shot who's in charge now — Us (no hesitation), 24mm exterior same framing hold CUT. Grammar exactly static bonnet two-shot, same bottle untouched. Ninety seconds, ends comic thread worse.
 - **Therapy class (Episode Five revised):** [numbered scene](scenes/ep5-therapy-class.md),
@@ -125,7 +125,7 @@ bottle air gap before approving them. For the three newest studies, also check
 card legibility and the pocketless jacket in shot 9, the bottle fill line in
 shot 10, and door colour against shot 4 in shot 13.
 
-194 **legacy keyframes** in `public/images/rapture/` are wired into the storyboard
+157 **legacy keyframes** in `public/images/rapture/` are wired into the storyboard (was 194, minus 37 washing-up now fully boarded)
 and shot list as ordered reference frames (status **Needs review**), grouped by
 scene in story order and numbered inside each board. Their shot type, movement,
 lens and 5s durations are working placeholders. Three keyframes are missing
@@ -150,6 +150,8 @@ thing Pat does that isn't domestic. Check Pat and Malcolm against their
 identity sheets in every shot, the photograph row (the same woman, three
 different men) and the water cupboard against the settee scene's sweet tin
 and gate bottles before approving.
+
+Twenty-six **washing-up placeholder cards** in `public/images/rapture/ep1-washing-up/` — FIX 4 implemented: shot 18 CUT (pendant among dead woman's things removed), shots 23-24 replaced as own-room drawer discovery, pendant mother's always had it, practical decision, vision beat same corridor hand to chest. Grammar locked off wide deep focus daylight symmetrical, only vision handheld. All 26 cards until studies generated.
 
 Thirty-five **Scene 2 AI studies** in `public/images/rapture/ep4-pat-house/`
 board the old-lady sequence, one keyframe per shot. The front room is lamplit,
@@ -181,8 +183,8 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
   fields; no present-day reunion or delivery mechanism has been invented. Prologue fix: shot 12 pockets tracker plus flash montage of fastening round girl's neck; shot 31 cut straight from ERROR to UNDO?.
 - 1980, death five years later and forty-five years later are retained as written;
   the present-day calendar year is not inferred. Nina remains 45. Pendant is her mother's, always had it, not found on Deborah's bedside (Ep1 Sc3 shot 23 fix).
-- Martin's auction/storage scene is marked as pre-rapture flashback: machine must have been in Max's room for eight weeks by present.
-- Episode-four cold open moved to dusk to run continuously into Scene 2.
+- Martin's auction/storage scene is marked as pre-rapture flashback: machine must have been in Max's room for eight weeks by present. Flat fluorescent locked off slightly off-centre, aggrieved not grieving, outline kind Flashback.
+- Episode-four cold open moved to dusk to run continuously into Scene 2: Pat's house at dusk, timecodes 16:12:04 dusk to 19:51:32 dark, surveillance grammar, Graham already chained under floor, runs straight into Scene 2 old-lady sequence.
 - Episode Five therapy class 26 shots brown and rationed water, protections: shot 13 silence long, hi-vis what we're for invented, Carl never says what he did.
 - Episode Three meeting trimmed to recruitment only — grandma/dog + nun moved to Ep5 therapy.
 - Prologue shot 12: CLOSE 65mm static tracker on casing snaps off small dull thing slow red pulse pockets without much thought. Flash 24f: 16mm handheld close over-exposed hotel corridor/dressing room fastening round girl's neck from behind laughing hands chain not object clearly half second. Shot 31 cut: 30 SCREEN INSERT USER PARAMETERS STATUS ACTIVE red ERROR → 32 SLOW PUSH 40mm dolly to screen ignoring body UNDO?. Ends ERROR UNDO? NO refusal not plant, connection lands on audience when Nina has same object round neck.
@@ -206,10 +208,10 @@ are explicitly labelled outlines. There are not eight finished 45-minute scripts
 
 ## Legacy boards (wired into the storyboard as reference frames)
 
-Nine boards, in story order, each in numeric filename order inside its scene:
+Eight legacy boards plus fully boarded washing up, in story order, each in numeric filename order inside its scene:
 
 - Episode one: cold open (`shot-01`–`19` → The mugging), St Jude's (`a1s1-01`–`19`),
-  washing up (`a1s3-01`–`37`, its own legacy scene), storage facility (`a1s4-01`–`24`),
+  washing up now fully boarded as 26-shot scene (FIX 4) with placeholder cards until studies generated (`a1s3-01`–`37` legacy files remain on disk as reference but not wired), storage facility (`a1s4-01`–`24`),
   police/car park (`a2s1-01`–`19`).
 - Episode two: Limbo (`ep2s1-01`–`30`), first raid (`ep2s2-01`–`16`, `15` missing),
   Hell intake (`ep2s3-01`–`19`, `15`–`16` missing), night drive (`w3-01`–`14`, its
