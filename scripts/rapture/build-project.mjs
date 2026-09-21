@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, therapyClassSceneId, washingUpSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, therapyClassGrammar, washingUpGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, therapyClassPlan, washingUpPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, outlinePlan, legacyBoards, referenceBoards } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -15,6 +15,7 @@ const patHouseScreenplay = read("docs/rapture/scenes/ep4-pat-house.md");
 const scoutHutScreenplay = read("docs/rapture/scenes/ep4-scout-hut.md");
 const therapyClassScreenplay = read("docs/rapture/scenes/ep5-therapy-class.md");
 const washingUpScreenplay = read("docs/rapture/scenes/ep1-washing-up.md");
+const patsNightScreenplay = read("docs/rapture/scenes/ep5-pats-night.md");
 const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
 const dannyJodieScreenplay = read("docs/rapture/scenes/ep1-danny-jodie.md");
 const copsSecondBeatScreenplay = read("docs/rapture/scenes/ep1-cops-second-beat.md");
@@ -298,6 +299,36 @@ const washingUp = washingUpBlocks.map(([, n, rawBody], i) => {
 });
 assert.equal(washingUp.reduce((n, f) => n + f.duration, 0), washingUpPlan.reduce((n, p) => n + p.duration, 0), "Update timing when washing up estimates change");
 
+// The night at Pat's — Episode Five, 51 shots, no CCTV, two grammars only
+const patsNightBlocks = [...patsNightScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(patsNightBlocks.length, 51, "Pat's night source must have 51 numbered shots");
+assert.equal(patsNightPlan.length, 51, "Pat's night plan must cover all 51 shots");
+const patsNightLens = { "32mm": "32mm", "24mm": "24mm", "35mm": "35mm", "50mm": "50mm", "28mm": "24mm", "65mm": "65mm", "85mm": "85mm", "135mm": "135mm" };
+const patsNight = patsNightBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Pat's night shot order must be contiguous");
+  assert(patsNightLens[patsNightPlan[i].lens], `No library lens mapped for Pat's night source lens: ${patsNightPlan[i].lens}`);
+  const plan = patsNightPlan[i];
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const file = `/images/rapture/ep5-pats-night/${plan.image}`;
+  const missing = true;
+  return {
+    id: `rapture-ep5pn-${String(n).padStart(2, "0")}`, sceneId: patsNightSceneId,
+    title: `${plan.title} (keyframe missing)`,
+    description: body.split("\n")[0].trim(),
+    image: "",
+    shotType: plan.shotType, movement: plan.movement, lens: patsNightLens[plan.lens],
+    angle: plan.angle || "Eye level", lighting: plan.lighting || "Practical night",
+    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    status: "Needs review", transition: "Cut",
+    mood: plan.movement === "Static" ? "Dry, deadpan static two-shot through windscreen, five people in it now" : "Handheld close dark red torchlight, demons only ever seen in someone's torch beam",
+    characters: plan.characters.map(characterId),
+    notes: `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep5-pats-night, so this card holds slot ${n} of ${patsNightPlan.length}. Add the study and rebuild.\n\n${plan.note}\n\n${patsNightGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+assert.equal(patsNight.reduce((n, f) => n + f.duration, 0), patsNightPlan.reduce((n, p) => n + p.duration, 0), "Update timing when Pat's night estimates change");
+
+
 
 
 assert(coldOpen.every(frame => frame.movement === "Static"), "Cold-open cameras never move");
@@ -443,6 +474,12 @@ const washingUpScene = {
   characters: ["nina"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: washingUpGrammar, style: "cinematic",
 };
+const patsNightScene = {
+  id: patsNightSceneId, title: "The night at Pat's", location: "EXT./INT. PAT'S ROAD AND HOUSE", time: "NIGHT",
+  description: "Replaces previous Pat's house version. No CCTV anywhere. Two grammars only: cops static two-shot through windscreen 32mm locked off handheld only for violence, Danny and Jodie handheld close dark red torchlight, demons only ever seen in someone's torch beam. 51 shots: stakeout, six bottles at gate, Jodie door under stairs, Neil chained bike lock 1234 laminate, slippers tea mouth too wide, chaotic, head turned all way round, first handheld for cops, taser form, secure premises, knife fork fish slice black eyes smiling, Out, Bring my bottles back love, five people in car grammar restored, That was drugs, arrested forever, Say sorry I can only apologise first one, evidence, laminate, tiny headlights 135mm CUT.",
+  characters: ["kath", "ray", "danny", "jodie", "pat", "malcolm", "rescued-blank"].map(characterId), actId: "rapture-episode-5",
+  kind: "Standard", lighting: "Practical night", lightingNotes: patsNightGrammar, style: "cinematic",
+};
 const coldOpenScene = {
   id: coldOpenSceneId, title: "The interview", location: "INT. SUBURBAN FRONT ROOM", time: "DAY",
   description: "Episode three circles what a blank is from three angles and gets it wrong three times: the angels' cold open, the cops' worthless test, and Hell's five-hour interview that leaves with Wales. The comedy is in the timecode and the stillness; nothing reacts except Tamsin's pen.",
@@ -488,6 +525,10 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
   if (djIdx !== -1) scenes[djIdx] = dannyJodieScene;
   const c2Idx = scenes.findIndex(s => s.id === ep1CopsSecondBeatSceneId);
   if (c2Idx !== -1) scenes[c2Idx] = copsSecondBeatScene;
+}
+{
+  const pnIdx = scenes.findIndex(s => s.id === patsNightSceneId);
+  if (pnIdx !== -1) scenes[pnIdx] = patsNightScene;
 }
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-test") + 1, 0, coldOpenScene);
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-arrivals"), 0, ep3ColdOpenScene);
@@ -543,12 +584,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...washingUp, ...dannyJodieFrames, ...copsSecondBeatFrames, ...patOpen, ...patHouse, ...scoutHut, ...therapyClass, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...washingUp, ...dannyJodieFrames, ...copsSecondBeatFrames, ...patOpen, ...patHouse, ...scoutHut, ...therapyClass, ...patsNight, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, washingUp.length + dannyJodieFrames.length + copsSecondBeatFrames.length + patOpen.length + patHouse.length + scoutHut.length + therapyClass.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, washingUp.length + dannyJodieFrames.length + copsSecondBeatFrames.length + patOpen.length + patHouse.length + scoutHut.length + therapyClass.length + patsNight.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
@@ -599,7 +640,7 @@ const moodboards = [{
 
 const project = {
   id: projectId, title: "Let the Raptures Commence",
-  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with washing up (26 shots FIX 4 pendant mother always had it shot18 cut 23-24 own room drawer practical), Danny and Jodie first appearance (21 shots) and cops second beat (6 shots); the episode-three and episode-four cold opens (15 + 16 shots dusk continuous) and Number Fourteen (13 shots) are the working scenes plus Episode Five therapy class (26 shots brown rationed). Fixes: prologue 12 pockets tracker (65mm static) + flash 24f fastening round girl neck (16mm over-exposed half second), shot31 cut ERROR→UNDO? (30→32), Martin auction marked pre-rapture flashback (machine 8 weeks in Max room), Ep3 meeting trimmed recruitment only.",
+  description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines; Episode One revised to 42min with washing up (26 shots FIX 4 pendant mother always had it), Danny and Jodie (21) and cops second beat (6); ep3 cold open angels 15 shots, ep4 Pat cold open dusk 16 shots continuous into Scene 2 old lady 35 shots replaced by ep5 Night at Pat's 51 shots no CCTV two grammars only (cops static 32mm windscreen handheld only for violence, Danny/Jodie handheld close dark red torchlight, demons only in torch beam), Number Fourteen 13 shots, therapy class 26 shots brown rationed. Fixes: prologue 12 pockets tracker + flash 24f fastening, shot31 cut ERROR→UNDO?, Ep1 Sc3 shot18 cut +23-24 own room drawer practical, Martin auction pre-rapture flashback, Ep3 meeting trimmed recruitment only.",
   genre: "Comedy", format: "Series", status: "In development", coverImage: "/images/rapture/ep4/04-mid-sentence.jpg",
   acts, scenes, frames, characters, notes, brainstorm, moodboards,
   script: [dannyJodieScreenplay, copsSecondBeatScreenplay, lockupScreenplay, ep3ColdOpenScreenplay, screenplay, coldOpenScreenplay, patColdOpenScreenplay, scoutHutScreenplay].map(text => text.replace(/^#{1,2} /gm, "").replace(/^Scene: /m, "").replace(/\n---\n/g, "\n").trim()).join("\n\n"),
