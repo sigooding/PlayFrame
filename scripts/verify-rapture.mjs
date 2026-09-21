@@ -352,8 +352,8 @@ pass("doorstep numbered 1-32 in order, two grammars never blended, one AI study 
 assert.equal(kitchen.length, 23, "The kitchen is boarded with twenty-three shots");
 const kitchenStudies = kitchen.filter(f => f.image);
 const kitchenMissingCards = kitchen.filter(f => !f.image);
-assert.equal(kitchenStudies.length, 21, "Twenty-one of the twenty-three kitchen shots carry their AI study");
-assert.equal(kitchenMissingCards.length, 2, "Two kitchen placeholder cards hold their numbered slots");
+assert.equal(kitchenStudies.length, 23, "Twenty-three of the twenty-three kitchen shots carry their AI study");
+assert.equal(kitchenMissingCards.length, 0, "No kitchen placeholder cards remain");
 assert(kitchenMissingCards.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Kitchen placeholder cards are honest about what is missing");
 assert(kitchen.every((f, i) => f.id === "rapture-ep4kit-" + String(i + 1).padStart(2, "0")), "Kitchen numbering must be contiguous");
 assert(kitchen.every(f => f.movement === "Static"), "Locked off all the way through");
@@ -370,9 +370,9 @@ assert(kitchen[21].notes.includes("back of the bus"), "STANDING RULE: the machin
 assert(kitchen.filter(f => /brown/i.test(f.description)).length === 1, "The brown water is stated once and unemphasised");
 assert(kitchen.every(f => f.shotType !== "Establishing" && f.shotType !== "Extreme wide"), "No wide is allowed to explain the room");
 assert(kitchen.filter(f => f.image).every(f => f.image.startsWith("/images/rapture/ep4-kitchen/")), "Kitchen studies live in their own folder");
-assert.equal(new Set(kitchenStudies.map(f => f.image)).size, 21, "One dedicated keyframe per studied kitchen shot");
+assert.equal(new Set(kitchenStudies.map(f => f.image)).size, 23, "One dedicated keyframe per studied kitchen shot");
 assert(kitchenStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)")), "Kitchen studies are draft keyframes, not placeholders");
-pass("kitchen boarded 1-23, his grammar held, both protections asserted, the machine on the bus, 21 of 23 studied");
+pass("kitchen boarded 1-23, his grammar held, both protections asserted, the machine on the bus, 23 of 23 studied");
 
 // Episode One new scenes — Danny and Jodie (21) and Cops second beat (6)
 const dannyJodie = project.frames.filter(f => f.sceneId === "rapture-ep1-danny-jodie");
@@ -515,11 +515,11 @@ assert.equal(studies("ep4-pat-house"), 35, "Thirty-five Scene 2 studies on disk"
 assert.equal(studies("ep4-scout-hut"), 17, "Seventeen scout-hut studies on disk");
 assert.equal(studies("ep4-estate"), 36, "Thirty-six estate studies on disk");
 assert.equal(studies("ep4-doorstep"), 32, "Thirty-two doorstep studies on disk");
-assert.equal(studies("ep4-kitchen"), 21, "Twenty-one kitchen studies on disk");
+assert.equal(studies("ep4-kitchen"), 23, "Twenty-three kitchen studies on disk");
 assert.equal(rejects("ep4-kitchen"), 10, "Ten rejected kitchen takes stay on disk and are never counted as studies");
 assert.equal(studies("ep1-danny-jodie"), 21, "Twenty-one episode-one raid studies on disk");
 assert.equal(studies("ep1-cops-second"), 6, "Six cops second-beat studies on disk");
-assert.equal(studies("ep5-pats-night"), 39, "Thirty-nine of the fifty-one Night at Pat's studies on disk");
+assert.equal(studies("ep5-pats-night"), 51, "Fifty-one of the fifty-one Night at Pat's studies on disk");
 assert(!existsSync(join(root, "public/images/rapture/ep5-therapy")), "The superseded therapy-class studies are gone: the revised scene is numbered from its own source");
 assert(!existsSync(join(root, "public/images/rapture/ep2-danny-jodie")), "The raid moved to episode one and took its folder with it");
 assert.equal(new Set(ep4.map(f => f.image)).size, 13);
@@ -531,11 +531,11 @@ assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board 
 assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-estate" && b.items.length === 36), "The estate board covers all thirty-six studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-doorstep" && b.items.length === 32), "The doorstep board covers all thirty-two studies");
-assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.length === 21), "The kitchen board covers the twenty-one studies on disk");
+assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.length === 23), "The kitchen board covers the twenty-three studies on disk");
 assert(project.moodboards.some(b => b.id === "rapture-look-danny-jodie" && b.items.length === 21), "The raid board covers all twenty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-cops-second" && b.items.length === 6), "The cops board covers all six studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-therapy" && b.items.length === 0), "The therapy-class board exists and honestly holds no studies yet");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-one kitchen studies from the retained Nina thread, 157 ordered legacy keyframes, and honest placeholder cards for the 26 washing-up, 26 therapy-class and 12 Night at Pat's shots still to generate`);
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-three kitchen studies from the retained Nina thread, 157 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
