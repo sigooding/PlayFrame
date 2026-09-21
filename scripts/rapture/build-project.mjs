@@ -253,12 +253,12 @@ const therapyClass = therapyClassBlocks.map(([, n, rawBody], i) => {
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/ep5-therapy-class/${plan.image}`;
-  const missing = true;
+  const missing = !existsSync(resolve(root, `public${file}`));
   return {
     id: `rapture-ep5tc-${String(n).padStart(2, "0")}`, sceneId: therapyClassSceneId,
-    title: `${plan.title} (keyframe missing)`,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
     description: body.split("\n")[0].trim(),
-    image: "",
+    image: missing ? "" : file,
     shotType: plan.shotType, movement: "Handheld", lens: therapyClassLens[plan.lens],
     angle: "Eye level", lighting: "Practical night",
     style: "cinematic", duration: plan.duration, durationIsEstimate: true,
@@ -282,12 +282,12 @@ const washingUp = washingUpBlocks.map(([, n, rawBody], i) => {
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/ep1-washing-up/${plan.image}`;
-  const missing = true; // placeholder cards until studies generated
+  const missing = !existsSync(resolve(root, `public${file}`));
   return {
     id: `rapture-ep1wu-${String(n).padStart(2, "0")}`, sceneId: washingUpSceneId,
     title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
     description: body.split("\n")[0].trim(),
-    image: "",
+    image: missing ? "" : file,
     shotType: plan.shotType, movement: "Static", lens: washingUpLens[plan.lens],
     angle: "Eye level", lighting: "Natural daylight",
     style: "cinematic", duration: plan.duration, durationIsEstimate: true,
@@ -311,12 +311,12 @@ const patsNight = patsNightBlocks.map(([, n, rawBody], i) => {
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/ep5-pats-night/${plan.image}`;
-  const missing = true;
+  const missing = !existsSync(resolve(root, `public${file}`));
   return {
     id: `rapture-ep5pn-${String(n).padStart(2, "0")}`, sceneId: patsNightSceneId,
-    title: `${plan.title} (keyframe missing)`,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
     description: body.split("\n")[0].trim(),
-    image: "",
+    image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens: patsNightLens[plan.lens],
     angle: plan.angle || "Eye level", lighting: plan.lighting || "Practical night",
     style: "cinematic", duration: plan.duration, durationIsEstimate: true,
