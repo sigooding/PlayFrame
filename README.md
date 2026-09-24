@@ -50,10 +50,9 @@ npm run verify:neonoire           # offline: pages, schema, screenplay map, lens
 node scripts/neonoire/build-project.mjs --check   # fail if the bundle has drifted
 ```
 
-Notes on the workspace live in [docs/neonoire/README.md](docs/neonoire/README.md); the style block,
-the negative prompt and the nine studio keys are in
-[docs/neonoire/studio-brief.md](docs/neonoire/studio-brief.md); and
-[docs/neonoire/handoff.md](docs/neonoire/handoff.md) plus
+Notes on the workspace live in [docs/neonoire/README.md](docs/neonoire/README.md); the Neo-Noir Tokyo
+style block and negative prompt are defined in [src/lib/styles.ts](src/lib/styles.ts), the nine studio
+keys are in `public/images/neonoire/keys/`; and [docs/neonoire/handoff.md](docs/neonoire/handoff.md) plus
 [docs/neonoire/passes/](docs/neonoire/passes) carry everything needed to generate the remaining
 keyframes, one pass of ten at a time.
 

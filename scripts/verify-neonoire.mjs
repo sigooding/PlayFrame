@@ -235,9 +235,13 @@ for (const frame of awaiting) {
   assert(brief.includes(`### Shot ${n} — `), `Pass ${Math.ceil(n / 10)} should carry a brief for shot ${n}`);
   assert(brief.includes(`public/images/neonoire/`), `Shot ${n}'s brief should name the file to write`);
 }
-const passText = awaiting.map(frame => { const n = Number(frame.id.replace(/\D/g, "")); return readFileSync(join(root, "docs", "neonoire", "passes", `pass-${Math.ceil(n / 10)}.md`), "utf8"); }).join("\n");
-assert(passText.includes("35mm Kodak Vision3 500T"), "Every pass brief should carry the style block");
-assert(passText.includes("glossy cyberpunk"), "Every pass brief should carry the negative prompt");
-pass(`${awaiting.length} remaining shots have a self-contained pass brief, carrying the style block and the negative prompt`);
+if (awaiting.length) {
+  const passText = awaiting.map(frame => { const n = Number(frame.id.replace(/\D/g, "")); return readFileSync(join(root, "docs", "neonoire", "passes", `pass-${Math.ceil(n / 10)}.md`), "utf8"); }).join("\n");
+  assert(passText.includes("35mm Kodak Vision3 500T"), "Every pass brief should carry the style block");
+  assert(passText.includes("glossy cyberpunk"), "Every pass brief should carry the negative prompt");
+  pass(`${awaiting.length} remaining shots have a self-contained pass brief, carrying the style block and the negative prompt`);
+} else {
+  pass("all 65 keyframes are on disk; no remaining pass brief is required");
+}
 
 console.log("\nAll NEONOIRE checks passed.");

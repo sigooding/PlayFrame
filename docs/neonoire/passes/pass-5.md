@@ -121,7 +121,7 @@ Scene grammar: Institutional green-white fluorescent with one tube flickering. E
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 12s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- The Young Officer — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
 
 **Prompt**
 
@@ -146,7 +146,7 @@ Scene grammar: Institutional green-white fluorescent with one tube flickering. E
 - **File**: `public/images/neonoire/s5/46-mara-voss-on-screen.jpg` — write it exactly here, 46-mara-voss-on-screen.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Insert, 85mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- The Young Officer — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
 
 **Prompt**
 
@@ -171,7 +171,7 @@ Scene grammar: Institutional green-white fluorescent with one tube flickering. E
 - **File**: `public/images/neonoire/s5/47-he-stops-typing.jpg` — write it exactly here, 47-he-stops-typing.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 7s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- The Young Officer — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
 
 **Prompt**
 
@@ -196,7 +196,7 @@ Scene grammar: Institutional green-white fluorescent with one tube flickering. E
 - **File**: `public/images/neonoire/s5/48-the-quiet-phone-call.jpg` — write it exactly here, 48-the-quiet-phone-call.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 10s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- The Young Officer — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
 
 **Prompt**
 
@@ -222,7 +222,7 @@ Scene grammar: Institutional green-white fluorescent with one tube flickering. E
 - **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- The Young Officer — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
 
 **Prompt**
 

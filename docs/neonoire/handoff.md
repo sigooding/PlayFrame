@@ -1,8 +1,8 @@
 # NEONOIRE — handoff
 
 For the agent taking over the keyframes. Everything below is what already exists, what is missing,
-what the film has to look like, and how to land your work without breaking the app. Read
-[`studio-brief.md`](studio-brief.md) next, then the pass you are generating in
+what the film has to look like, and how to land your work without breaking the app. Read the
+`neonoire` style in [`src/lib/styles.ts`](../../src/lib/styles.ts) next, then the pass you are generating in
 [`passes/`](passes).
 
 ---
@@ -21,7 +21,7 @@ turned into:
 | --- | --- |
 | **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — verbatim; a build step fails if it ever drifts from the fountain |
 | **board** | 65 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 22 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
+| **keyframes** | 65 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
 | **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE |
 
 Story: Kanda, night. Mara Voss (24, American) declines her sister's call, watches two masked men
@@ -35,9 +35,9 @@ workspace's.
 
 ## 2. What you are being asked to do
 
-**Generate keyframes for passes 3–7 — 43 shots — and improve on the 22 that exist where they fall
-short.** Start with [`passes/README.md`](passes/README.md): it lists each pass, its shots, the exact
-filenames, the framing, the cast sheets to attach, a ready prompt per shot, and the negative prompt.
+**All 65 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
+numbered boards, continuity sheets and the app style in [`src/lib/styles.ts`](../../src/lib/styles.ts) remain
+the source of truth for any regeneration.
 
 Work one pass at a time, in screenplay order. A pass is at most ten frames.
 
@@ -62,9 +62,8 @@ typo check. The app fills a placeholder in automatically the next time the works
 
 ## 3. The look — non-negotiable
 
-The full style block and negative prompt are in [`studio-brief.md`](studio-brief.md), and they are
-also the **`neonoire` visual style inside the app** (`src/lib/styles.ts`), which is what every frame
-in the bundle carries. In short: 2.39:1 anamorphic, 35mm Kodak Vision3 500T, visible fine grain,
+The full style block and negative prompt are the **`neonoire` visual style inside the app**
+(`src/lib/styles.ts`), which is what every frame in the bundle carries. In short: 2.39:1 anamorphic, 35mm Kodak Vision3 500T, visible fine grain,
 halation around every practical light, crushed but never muddy blacks, muted desaturated palette,
 cold steady rain on black reflective asphalt, lit by vending machines, sodium streetlights and sick
 fluorescent green — **never by the sky**. Wide and patient, figure small, lots of negative space,
@@ -97,6 +96,12 @@ Do not rename, move or delete anything the board names. The filename *is* the sh
   shorter hair with a fringe, a charcoal wool coat, a cream high-neck knit, navy trousers and brown
   boots. She carries Mara's pale-blue umbrella: bone dry on the shelf, dripping on police linoleum.
   Sheet `sheets/vera.jpg`; face crop `sheets/vera-face.jpg`.
+- **The Young Officer (20s)** — the recurring front-counter officer now has a canonical sheet and
+  face crop: `sheets/young-officer.jpg` and `sheets/young-officer-face.jpg`. Neat black hair, navy
+  police uniform, ordinary polite face; keep him fixed across shots 45–50.
+- **Detective Ishida (50s)** — the recurring detective now has a canonical sheet and face crop:
+  `sheets/ishida.jpg` and `sheets/ishida-face.jpg`. Short salt-and-pepper hair, lean build,
+  charcoal suit, tired kindness; keep him fixed across shots 52–65.
 - **Jack Voss** — their American father, present only inside one framed photograph in scene 4
   (rumpled suit, both small daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty
   years ago). He is the only saturated warm colour in the film so far and is never spoken about.
