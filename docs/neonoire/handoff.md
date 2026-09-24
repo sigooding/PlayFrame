@@ -21,7 +21,7 @@ turned into:
 | --- | --- |
 | **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — verbatim; a build step fails if it ever drifts from the fountain |
 | **board** | 65 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 50 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
+| **keyframes** | 65 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
 | **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE |
 
 Story: Kanda, night. Mara Voss (24, American) declines her sister's call, watches two masked men
@@ -35,9 +35,9 @@ workspace's.
 
 ## 2. What you are being asked to do
 
-**Generate the remaining keyframes for passes 6–7 — 15 shots — and improve on any existing frame that falls
-short.** Start with [`passes/README.md`](passes/README.md): it lists each pass, its shots, the exact
-filenames, the framing, the cast sheets to attach, a ready prompt per shot, and the negative prompt.
+**All 65 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
+numbered boards, continuity sheets and the app style in [`src/lib/styles.ts`](../../src/lib/styles.ts) remain
+the source of truth for any regeneration.
 
 Work one pass at a time, in screenplay order. A pass is at most ten frames.
 
