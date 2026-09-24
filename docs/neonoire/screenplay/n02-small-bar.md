@@ -58,6 +58,8 @@ The shoes leave. The door swings shut.
 
 Mara stays exactly where she is. She is shaking so hard the bottles in the crate beside her begin to CLINK. She presses her hand flat against them to make them stop.
 
+Her red bird hair clip slides loose and drops silently between the crates. She doesn't notice.
+
 The TV audience laughs again.
 
 HOLD on her face in the blue TV glow: a young woman who has just understood that this was not random.

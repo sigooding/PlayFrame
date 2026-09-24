@@ -25,7 +25,7 @@ export const grammar =
   "Tokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.";
 
 const cast = [
-  ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
+  ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird, arms folded, no umbrella. The clip drops between the crates of the bar and she never notices. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
   ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter.", ["Careful", "Steady", "Alone"], "sand", "vera"],
   ["jack", "Jack Voss", "The photograph", "40s, twenty years ago", "American. The girls' father, and the only warm-coloured thing in Vera's apartment: a rumpled suit, both daughters' hands in his, a smile, a noodle-shop sign behind them. Twenty years ago, in a frame on a shelf. He appears nowhere else in the opening and is never spoken about.", ["Warm", "In one frame only"], "clay", undefined],
   ["old-man", "The Old Man", "Cold open", "70s", "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.", ["Hunted", "Resigned", "Deliberate"], "sand", undefined],
@@ -61,7 +61,7 @@ export const SCENES = [
     page: "n01-backstreet.md", board: "n01-backstreet.md",
     cast: ["Mara Voss", "The Old Man", "The Masked Men"],
     grammar: "Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.",
-    description: "Cold open. Rain in a Kanda backstreet. Mara declines her sister's call, ducks into the doorway of a closed barbershop, and watches two masked men shoot an old man without hurrying — then kneels beside him and takes a coin-locker key out of his hand. BOARDED — 18 shots. The draft's own scene 1; nothing is explained, and nobody names the key.",
+    description: "Cold open. Rain in a Kanda backstreet. Mara declines her sister's call, ducks into the doorway of a closed barbershop, and watches two masked men shoot an old man without hurrying — then kneels beside him and takes a coin-locker key out of his hand. BOARDED — 19 shots. The draft's own scene 1; nothing is explained, and nobody names the key.",
     lightingNotes: "The vending machine is the brightest source in the film's first minute. Sodium orange street lamps, one cold white vending machine, green fluorescent spill at the corner. No white beams in frame, ever.",
   },
   {
@@ -71,7 +71,7 @@ export const SCENES = [
     page: "n02-small-bar.md", board: "n02-small-bar.md",
     cast: ["Mara Voss", "The Journalist", "The Masked Men"],
     grammar: "The room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.",
-    description: "Continuous. Mara hides behind the far end of the counter with the key in her fist. Two pairs of wet black shoes come in softly, ask where is he, and shoot the journalist on the far side of the counter while the television audience laughs. The notebook leaves with them. BOARDED — 10 shots, ending on the blue TV glow and the title card.",
+    description: "Continuous. Mara hides behind the far end of the counter with the key in her fist. Two pairs of wet black shoes come in softly, ask where is he, and shoot the journalist on the far side of the counter while the television audience laughs. The notebook leaves with them — and Mara's red bird hair clip drops between the crates, unnoticed. BOARDED — 11 shots, ending on the blue TV glow and the title card.",
     lightingNotes: "Amber bottle shelves, the CRT's blue flicker on the ceiling, and the open back door's pale light. No overhead light is ever switched on.",
   },
   {
@@ -132,7 +132,7 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The opening — Kanda to the detectives' room",
-  description: "Seven scenes from the first draft's opening: a backstreet in Kanda at night, a small bar, Vera's apartment three days later, and a police station that already knows Mara's name. 65 numbered shots; every frame is a draft study, not approved coverage.",
+  description: "Seven scenes from the first draft's opening: a backstreet in Kanda at night, a small bar, Vera's apartment three days later, and a police station that already knows Mara's name. 67 numbered shots; every frame is a draft study, not approved coverage.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
@@ -274,7 +274,7 @@ export function parseBoard(markdown, scene) {
   }
   flush();
   if (!shots.length) throw new Error(`Scene ${scene.n} has no numbered shots`);
-  // Shot numbers run 1..65 straight through the opening, so a scene's board starts wherever the
+  // Shot numbers run 1..67 straight through the opening, so a scene's board starts wherever the
   // scene before it stopped; the builder checks the run is unbroken across all seven.
   for (const [i, shot] of shots.entries()) {
     if (shot.n !== shots[0].n + i) throw new Error(`Scene ${scene.n} shot numbers must run contiguously from ${shots[0].n} (found ${shot.n} at position ${i + 1})`);

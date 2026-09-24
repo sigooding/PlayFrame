@@ -14,19 +14,20 @@ storyboard, shot list, mood boards, prompt studio). NEONOIRE — the opening sce
 feature set in Tokyo — is one of the projects it ships, and it is a *separate, self-contained*
 workspace from the series project that was already in the repo.
 
-The draft (`Neonoire_Opening.fountain`, repository root) is seven scenes, 401 lines. It has been
-turned into:
+The draft (`Neonoire_Opening.fountain`, repository root) is seven scenes, 403 lines — its title page
+reads *First Draft — Scenes 1-12*, and seven of the twelve are written. It has been turned into:
 
 | | |
 | --- | --- |
 | **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — verbatim; a build step fails if it ever drifts from the fountain |
-| **board** | 65 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 65 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
+| **board** | 67 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
+| **keyframes** | 67 of 67 generated, plus 9 studio keys — in `public/images/neonoire/` |
 | **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE |
 
 Story: Kanda, night. Mara Voss (24, American) declines her sister's call, watches two masked men
 shoot an old man in the rain, takes a coin-locker key out of his hand and hides behind a bar counter
-while a journalist is killed in front of a laughing television. Three days later her sister Vera
+while a journalist is killed in front of a laughing television — losing her red bird hair clip
+between the crates without noticing. Three days later her sister Vera
 reports her missing; a detective with her sister's purse already in his desk drawer tells her to call
 any time. The opening ends there. **Nothing is explained** — that is the film's rule, and it is the
 workspace's.
@@ -35,9 +36,10 @@ workspace's.
 
 ## 2. What you are being asked to do
 
-**All 65 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
+**All 67 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
 numbered boards, continuity sheets and the app style in [`src/lib/styles.ts`](../../src/lib/styles.ts) remain
-the source of truth for any regeneration.
+the source of truth for any regeneration — and `node scripts/neonoire/pass-prompts.mjs --all` rewrites
+every pass as a regeneration brief.
 
 Work one pass at a time, in screenplay order. A pass is at most ten frames.
 
@@ -45,6 +47,7 @@ Work one pass at a time, in screenplay order. A pass is at most ten frames.
 npm install                                  # the sandbox wipes node_modules between sessions
 node scripts/neonoire/pass-prompts.mjs       # regenerate the pass briefs from the board
 node scripts/neonoire/pass-prompts.mjs --pass 3   # or print one pass
+node scripts/neonoire/pass-prompts.mjs --all      # or every pass, as regeneration briefs
 ```
 
 After your frames are on disk:
@@ -88,20 +91,22 @@ Do not rename, move or delete anything the board names. The filename *is* the sh
 
 ## 4. Continuity — the thing that breaks first
 
-- **Mara Voss (24)** — American. Long wavy ash-blonde hair, soaked flat for the whole opening, pale
-  blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin black cord
-  necklace. Sheet `sheets/mara.jpg`; face crop `sheets/mara-face.jpg`. **Attach the face crop to
-  every generation she is in.**
+- **Mara Voss (24)** — American. Long wavy ash-blonde hair, soaked flat for the whole opening and
+  held back by a cheap enamel clip shaped like a small red bird (shot 4 plants it; shot 29 drops it
+  between the crates, unseen), pale blue eyes, indigo denim jacket, heather-grey tee, black jeans,
+  white trainers, thin black cord necklace. Sheet `sheets/mara.jpg`; face crop `sheets/mara-face.jpg`.
+  **Attach the face crop to every generation she is in, and the shot 4 study to any frame that shows
+  the clip.**
 - **Vera Voss (29)** — American, her older sister, same blonde hair and blue eyes, told apart by
   shorter hair with a fringe, a charcoal wool coat, a cream high-neck knit, navy trousers and brown
   boots. She carries Mara's pale-blue umbrella: bone dry on the shelf, dripping on police linoleum.
   Sheet `sheets/vera.jpg`; face crop `sheets/vera-face.jpg`.
 - **The Young Officer (20s)** — the recurring front-counter officer now has a canonical sheet and
   face crop: `sheets/young-officer.jpg` and `sheets/young-officer-face.jpg`. Neat black hair, navy
-  police uniform, ordinary polite face; keep him fixed across shots 45–50.
+  police uniform, ordinary polite face; keep him fixed across shots 47–52.
 - **Detective Ishida (50s)** — the recurring detective now has a canonical sheet and face crop:
   `sheets/ishida.jpg` and `sheets/ishida-face.jpg`. Short salt-and-pepper hair, lean build,
-  charcoal suit, tired kindness; keep him fixed across shots 52–65.
+  charcoal suit, tired kindness; keep him fixed across shots 54–67.
 - **Jack Voss** — their American father, present only inside one framed photograph in scene 4
   (rumpled suit, both small daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty
   years ago). He is the only saturated warm colour in the film so far and is never spoken about.
@@ -119,21 +124,26 @@ actor's face to fix a composition.
 
 Honest assessment, in the order worth fixing:
 
-1. **Shots 1–12 were generated in 16:9 and centre-cropped to 2.39:1.** Their compositions were
-   decided for a taller frame. They hold up, but a native 2.39 generation will always beat them —
-   the draft asks for wide, patient framing with the figure small, and that is a widescreen decision.
-2. **Shot 14 (she kneels)** puts vending machines on both sides of the street. The draft has **one**
+1. **The first twelve frames generated (now shots 1–3 and 5–13) were made in 16:9 and
+   centre-cropped to 2.39:1.** Their compositions were decided for a taller frame. They hold up, but a
+   native 2.39 generation will always beat them — the draft asks for wide, patient framing with the
+   figure small, and that is a widescreen decision.
+2. **Shot 15 (she kneels)** puts vending machines on both sides of the street. The draft has **one**
    vending machine, at the corner, and it is the brightest thing in the film's first minute. Keep it
-   singular and let shots 13–18 stay emptier than feels comfortable.
-3. **Shot 15 (the grip)** reads as a hand on a shoulder rather than a dying man's grip on a wrist with
+   singular and let shots 14–19 stay emptier than feels comfortable.
+3. **Shot 16 (the grip)** reads as a hand on a shoulder rather than a dying man's grip on a wrist with
    something pressed into a palm. It wants to be tighter and less legible.
-4. **The bar (shots 19–22, and 23–28 to come)** is lit too cosily in places. The scene is amber
-   bottles, one CRT's blue flicker, no overhead light, and the floor's-eye view does most of the
-   work. The murder happens *off* the centre of frame while the television audience laughs — the
-   camera must never be interested in the violence.
-5. **Vera has only two frames so far** (keys 4 and 5). Her thread — the apartment, the counter, the
-   interview room — is 27 shots of the board and it is the first time the film looks directly at
-   somebody's face. Get her right in pass 4 and 5 and the second half of the opening works.
+4. **The bar (shots 20–30)** is lit too cosily in places. The scene is amber bottles, one CRT's blue
+   flicker, no overhead light, and the floor's-eye view does most of the work. The murder happens
+   *off* the centre of frame while the television audience laughs — the camera must never be
+   interested in the violence.
+5. **Vera's thread — the apartment, the counter, the interview room — is 31 shots of the board** and
+   it is the first time the film looks directly at somebody's face. The pass 4 and 5 studies carry
+   it; check them against her sheet before approving anything.
+6. **The two red bird frames are brand new studies.** Shot 4 (the clip in her hair) and shot 29 (the
+   clip dropping between the crates) were generated against the Mara face crop, the bar key and each
+   other — but they are draft studies like every other frame, and the clip's bird shape and chipped
+   enamel must match between them before either is approved.
 
 ---
 
@@ -164,6 +174,7 @@ storyboard, the shot list and every generated prompt pick the frames up with no 
 - **Nine studio keys** — `public/images/neonoire/keys/`, generated from the brief. These are the bar
   for quality and tone; if your frame looks glossier, cleaner or more neon than these, it is wrong.
   They are the first nine entries of the *The style block — nine keys* mood board in the app.
-- **Twenty-two board keyframes** — `public/images/neonoire/s1/` (1–18) and `s2/` (19–22), with each
-  frame's notes naming its pass and the continuity sheet it was generated against.
+- **All sixty-seven board keyframes** — `public/images/neonoire/s1/` (1–19), `s2/` (20–30) and
+  `s3 … s7/` (31–67), with each frame's notes naming its pass and the continuity sheet it was
+  generated against. The two newest are `s1/04-the-red-bird.jpg` and `s2/29-the-red-bird-drops.jpg`.
 - **Continuity sheets and face crops** — `public/images/neonoire/sheets/`.

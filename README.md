@@ -16,7 +16,7 @@ The series opens by default when present; an explicit `?project=<id>` always win
 
 ## NEONOIRE — the opening scenes
 
-The first draft's opening scenes are an editable workspace of their own: **7 scenes, 65 numbered
+The first draft's opening scenes are an editable workspace of their own: **7 scenes, 67 numbered
 shots**, and the screenplay carried page by page from
 [`Neonoire_Opening.fountain`](Neonoire_Opening.fountain).
 
@@ -26,13 +26,15 @@ shots**, and the screenplay carried page by page from
   The only change the workspace makes to the text is dropping its own ` #1#` … ` #7#` scene markers,
   so every scene selects its own slugline in the screenplay navigator.
 - **Every shot declares its grammar.** [`docs/neonoire/scenes/`](docs/neonoire/scenes/) is the numbered
-  board (Kanda backstreet 18 shots, the small bar 10, Vera's building 4, her apartment 10, the police
+  board (Kanda backstreet 19 shots, the small bar 11, Vera's building 4, her apartment 10, the police
   station counter 8, the interview room 9, the detectives' room 6): shot type, lens, camera angle,
   movement, cast, lighting, a working duration, the keyframe filename, and the direction — with the
   draft's own words quoted per shot, checked against the fountain at build time.
 - **Keyframes arrive ten at a time, in screenplay order.** Every frame is an AI-generated draft study
   held to a continuity sheet: Mara and Vera Voss are both American — blonde, blue eyes, told apart by
-  hair, wardrobe and the umbrella — and Jack Voss, their father, exists only inside the photograph in
+  hair, wardrobe and the umbrella — Mara's soaked hair is held back by a cheap red bird enamel clip,
+  planted by the close-up at shot 4 and lost between the bar's crates at shot 29 without anyone
+  noticing, and Jack Voss, their father, exists only inside the photograph in
   scene 4. Frames whose study has not been generated yet are labelled placeholders that name the file
   they are waiting for, never a neighbour's picture.
 - **Nothing is explained**, because the film does not explain it: what the key opens, what the men are
@@ -53,7 +55,7 @@ node scripts/neonoire/build-project.mjs --check   # fail if the bundle has drift
 Notes on the workspace live in [docs/neonoire/README.md](docs/neonoire/README.md); the Neo-Noir Tokyo
 style block and negative prompt are defined in [src/lib/styles.ts](src/lib/styles.ts), the nine studio
 keys are in `public/images/neonoire/keys/`; and [docs/neonoire/handoff.md](docs/neonoire/handoff.md) plus
-[docs/neonoire/passes/](docs/neonoire/passes) carry everything needed to generate the remaining
+[docs/neonoire/passes/](docs/neonoire/passes) carry everything needed to review and regenerate the
 keyframes, one pass of ten at a time.
 
 ## Let the Raptures Commence

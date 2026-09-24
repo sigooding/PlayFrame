@@ -1,8 +1,8 @@
 # NEONOIRE — the opening scenes
 
-The first draft's opening scenes, carried into Frame as an editable workspace: **7 scenes, 65 numbered
+The first draft's opening scenes, carried into Frame as an editable workspace: **7 scenes, 67 numbered
 shots**, a screenplay tab that is the draft itself, and keyframes generated **ten at a time** against
-two continuity sheets.
+the cast continuity sheets.
 
 ## Where everything lives
 
@@ -16,11 +16,12 @@ two continuity sheets.
 
 ## Handing the keyframes on
 
-[`handoff.md`](handoff.md) is what another agent (or another person) needs to finish the board:
-what exists, what is missing, the look, the continuity rules, where the current frames fall short,
+[`handoff.md`](handoff.md) is what another agent (or another person) needs to work the board:
+what exists, what is weak, the look, the continuity rules, where the current frames fall short,
 and what must not be touched. [`passes/`](passes) holds a self-contained brief per pass — filenames,
-framing, cast sheets, a ready prompt and the negative prompt for every shot still to generate,
-regenerated from the board with `node scripts/neonoire/pass-prompts.mjs`.
+framing, cast sheets, a ready prompt and the negative prompt for every shot — regenerated from the
+board with `node scripts/neonoire/pass-prompts.mjs`, or with `--all` for every pass as regeneration
+briefs.
 
 ## Commands
 
@@ -29,7 +30,7 @@ npm run split:neonoire      # rewrite the seven screenplay pages from the draft
 npm run build:neonoire      # rebuild the workspace bundle (also lists every keyframe still missing)
 npm run verify:neonoire     # offline: bundle in step, schema, screenplay map, lenses, CSV, prompts
 npm run check:assets        # every referenced picture and font is on disk
-node scripts/neonoire/pass-prompts.mjs   # rewrite the remaining-keyframe briefs in docs/neonoire/passes/
+node scripts/neonoire/pass-prompts.mjs   # rewrite the per-pass briefs in docs/neonoire/passes/ (--all: every pass)
 ```
 
 `npm run build:neonoire -- --check` fails if the bundle has drifted from the draft, the boards or the
@@ -60,7 +61,7 @@ anyone having to paste it again.
 ## Passes
 
 Keyframes are generated ten at a time, in screenplay order, with the cast sheets attached as
-references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on to pass 7 (shots 61–65). Each pass is
+references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on to pass 7 (shots 61–67). Each pass is
 listed at the foot of its scene's board, and every frame's notes name the pass it came from.
 
 ## Continuity
@@ -68,6 +69,8 @@ listed at the foot of its scene's board, and every frame's notes name the pass i
 - **Mara Voss (24)** and **Vera Voss (29)** are both American — blonde, pale blue eyes, sisters who
   can be told apart at a glance. Sheets: `sheets/mara.jpg`, `sheets/vera.jpg`; the face crops
   (`sheets/mara-face.jpg`, `sheets/vera-face.jpg`) are attached to every generation they appear in.
+  Mara's soaked hair is held back by a cheap enamel clip shaped like a small red bird — planted by the
+  extreme close-up at shot 4, and lost between the bar's crates at shot 29 without anyone noticing.
 - **The Young Officer (20s)** has a canonical sheet and face crop in `sheets/young-officer.jpg` and
   `sheets/young-officer-face.jpg`: neat black hair, navy police uniform, ordinary polite face. Keep
   his appearance fixed across the front-counter shots.
@@ -82,6 +85,7 @@ listed at the foot of its scene's board, and every frame's notes name the pass i
 
 ## What this workspace is not
 
-The draft contains the opening scenes only. Everything after `CUT TO:` at the end of scene 7 —
-who the men are, what the key opens, what happened twenty years ago — is not in the film yet, and the
-workspace does not invent it.
+The draft contains the opening scenes only. Its title page reads *First Draft — Scenes 1-12*; seven
+of those scenes are written, and the workspace carries the seven that exist. Everything after
+`CUT TO:` at the end of scene 7 — who the men are, what the key opens, what happened twenty years
+ago — is not in the film yet, and the workspace does not invent it.

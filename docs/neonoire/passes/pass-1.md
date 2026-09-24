@@ -1,6 +1,6 @@
-# NEONOIRE — keyframe pass 5
+# NEONOIRE — keyframe pass 1
 
-10 shots in this pass (shots 41–50, scene 4 (INT. VERA'S APARTMENT) and scene 5 (INT. POLICE STATION, FRONT COUNTER)). Every keyframe is already on disk — this brief is for regeneration and review, not missing coverage.
+10 shots in this pass (shots 1–10, scene 1 (EXT. BACKSTREET, KANDA)). Every keyframe is already on disk — this brief is for regeneration and review, not missing coverage.
 
 **Before you start**
 
@@ -14,251 +14,250 @@
 - British/American spelling is irrelevant here; **no text at all** unless the board quotes a super.
 - When the frame is on disk, run `npm run build:neonoire` and `npm run verify:neonoire` from the repository root. The builder will tell you if a file is missing or misnamed.
 
-### Shot 41 — The message
+### Shot 1 — Backstreet
 
-**Scene 4 · INT. VERA'S APARTMENT — CONTINUOUS**
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
 
-- **File**: `public/images/neonoire/s4/41-the-message.jpg` — write it exactly here, 41-the-message.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium close-up, 50mm, Static, Eye level. Lighting: Overcast soft. Working duration 14s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/04-veras-apartment.jpg`
-- Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — "It's me again. I'm not angry anymore. I wasn't really angry then, either. I just —" She stops herself. "You left your umbrella. You'll get soaked. Just call me. You don't have to say anything. Just call, so I know." The apology is the scene's engine: the first of the film's two sisters is asking, the second is running from a doorway in Kanda. Keep the performance small and unsentimental.
-FRAMING — Medium close-up, 50mm, Static, Eye level, lit by overcast soft.
-DRAFT — the draft's own words for this shot: "You left your umbrella. You'll get soaked."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.
-
----
-
-### Shot 42 — The television
-
-**Scene 4 · INT. VERA'S APARTMENT — CONTINUOUS**
-
-- **File**: `public/images/neonoire/s4/42-the-television.jpg` — write it exactly here, 42-the-television.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium, 50mm, Static, Eye level. Lighting: Overcast soft. Working duration 8s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/04-veras-apartment.jpg` — none, the city carries the shot
+- **File**: `public/images/neonoire/s1/01-backstreet.jpg` — write it exactly here, 01-backstreet.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Establishing, 24mm, Static, Eye level. Lighting: Practical night. Working duration 8s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg` — none, the city carries the shot
 
 **Prompt**
 
 ```
 cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
-SUBJECT — She hangs up. The old television murmurs to itself: the weather announcer, in Japanese, with rain continuing through the rest of the week. The television is the film's chorus: it explains nothing and is always on. Its light is the room's second source, on the ceiling, exactly as the bar's CRT was.
-FRAMING — Medium, 50mm, Static, Eye level, lit by overcast soft.
-DRAFT — the draft's own words for this shot: "...rain continuing through the rest of the week..."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.
-
----
-
-### Shot 43 — Three looks
-
-**Scene 4 · INT. VERA'S APARTMENT — CONTINUOUS**
-
-- **File**: `public/images/neonoire/s4/43-three-looks.jpg` — write it exactly here, 43-three-looks.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Insert, 85mm, Static, Eye level. Lighting: Overcast soft. Working duration 9s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/04-veras-apartment.jpg`
-- Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — The umbrella by the door. The clean empty cup. The photograph. She looks at them in that order. One insert carrying all three objects in depth — umbrella sharp by the door, cups mid-ground, photograph soft on the shelf — so the shot does the looking for her.
-FRAMING — Insert, 85mm, Static, Eye level, lit by overcast soft.
-DRAFT — the draft's own words for this shot: "She looks at the umbrella by the door. At the clean, empty cup. At the photograph."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.
-
----
-
-### Shot 44 — Takes the umbrella
-
-**Scene 4 · INT. VERA'S APARTMENT — CONTINUOUS**
-
-- **File**: `public/images/neonoire/s4/44-takes-the-umbrella.jpg` — write it exactly here, 44-takes-the-umbrella.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium, 35mm, Static, Eye level. Lighting: Overcast soft. Working duration 11s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/04-veras-apartment.jpg`
-- Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — She stands. Puts on her coat. Hesitates at the door. Then she takes the blue umbrella — Mara's umbrella — and goes. The hesitation is the last beat of Vera's indecision in the film; after this she is looking for her sister and she never stops. Cut on the empty stand.
-FRAMING — Medium, 35mm, Static, Eye level, lit by overcast soft.
-DRAFT — the draft's own words for this shot: "Then she takes the blue umbrella. Mara's umbrella."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.
-
----
-
-### Shot 45 — The front counter
-
-**Scene 5 · INT. POLICE STATION, FRONT COUNTER — NIGHT**
-
-- **File**: `public/images/neonoire/s5/45-the-front-counter.jpg` — write it exactly here, 45-the-front-counter.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Establishing, 24mm, Static, Eye level. Lighting: Practical night. Working duration 9s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg` — none, the city carries the shot
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — Fluorescent tubes, one of them flickering. A long counter. Faded posters about pickpockets and traffic safety. An old fax machine beside a new flat monitor. A wall clock that runs a minute fast. Nothing in this room has been replaced since the nineties except the monitor, and the monitor is the only thing that matters. The clock is in frame from the first shot of the scene and again in the last of scene 7.
+SUBJECT — A narrow street of shuttered shops that could belong to any year of the last forty. Hand-painted signs, tangled wires overhead, wet black asphalt, and at the corner the old vending machine throwing cold white light across the road with rain falling through it in columns. Nobody in frame. Hold the empty street long enough that the audience notices they are alone in it. The vending machine is the brightest thing in the film's first minute; no other light source competes.
 FRAMING — Establishing, 24mm, Static, Eye level, lit by practical night.
-DRAFT — the draft's own words for this shot: "Fluorescent tubes, one of them flickering. A long counter."
+DRAFT — the draft's own words for this shot: "A narrow street of shuttered shops that could belong to any year of the last forty."
 
 AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
 ```
 
-Scene grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
 
 ---
 
-### Shot 46 — Dripping umbrella
+### Shot 2 — Vending
 
-**Scene 5 · INT. POLICE STATION, FRONT COUNTER — NIGHT**
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
 
-- **File**: `public/images/neonoire/s5/46-dripping-umbrella.jpg` — write it exactly here, 46-dripping-umbrella.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium wide, 35mm, Static, Eye level. Lighting: Practical night. Working duration 9s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — She stands at the counter with the closed blue umbrella dripping onto the linoleum. A small puddle is already forming at her feet. The umbrella she took from the stand in scene 4 is in every shot of the police station. It is the only thing she brought with her.
-FRAMING — Medium wide, 35mm, Static, Eye level, lit by practical night.
-DRAFT — the draft's own words for this shot: "Vera stands at the counter, the closed blue umbrella dripping onto the linoleum."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.
-
----
-
-### Shot 47 — The young officer
-
-**Scene 5 · INT. POLICE STATION, FRONT COUNTER — NIGHT**
-
-- **File**: `public/images/neonoire/s5/47-the-young-officer.jpg` — write it exactly here, 47-the-young-officer.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 12s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — Polite boredom. He asks for her sister's age; she says twenty-four, in careful, formal Japanese, learned as a child and relearned as an adult. Nothing about him is sinister yet; he is a young man at the end of a shift. The change in him arrives only after the monitor shows him the name.
-FRAMING — Medium, 50mm, Static, Eye level, lit by practical night.
-DRAFT — the draft's own words for this shot: "A YOUNG OFFICER takes her details with polite boredom."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.
-
----
-
-### Shot 48 — Mara voss on screen
-
-**Scene 5 · INT. POLICE STATION, FRONT COUNTER — NIGHT**
-
-- **File**: `public/images/neonoire/s5/48-mara-voss-on-screen.jpg` — write it exactly here, 48-mara-voss-on-screen.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s1/02-vending.jpg` — write it exactly here, 02-vending.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Insert, 85mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg` — none, the city carries the shot
 
 **Prompt**
 
 ```
 cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
-SUBJECT — He types the name. ON THE MONITOR: MARA VOSS. The name is the film's hinge and the only text on a screen anywhere in the opening. Legible, unglamorous, an ordinary records system.
+SUBJECT — Rain falls through the machine's cold white face in visible columns. Its hum is the loudest thing here. Chipped paint, a grid of glowing cans behind rain-streaked glass, water running off the metal onto the asphalt. This is the sound of the film's opening and its recurring return. Leave room in the frame for the hum — no people, no traffic, no music.
 FRAMING — Insert, 85mm, Static, Eye level, lit by practical night.
-DRAFT — the draft's own words for this shot: "He types the name. ON THE MONITOR: MARA VOSS."
+DRAFT — the draft's own words for this shot: "Its HUM is the loudest thing here."
 
 AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
 ```
 
-Scene grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
 
 ---
 
-### Shot 49 — He stops typing
+### Shot 3 — Mara walks
 
-**Scene 5 · INT. POLICE STATION, FRONT COUNTER — NIGHT**
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
 
-- **File**: `public/images/neonoire/s5/49-he-stops-typing.jpg` — write it exactly here, 49-he-stops-typing.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 7s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
+- **File**: `public/images/neonoire/s1/03-mara-walks.jpg` — write it exactly here, 03-mara-walks.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Medium wide, 35mm, Tracking, Eye level. Lighting: Practical night. Working duration 9s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- Mara Voss — public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)
 
 **Prompt**
 
 ```
 cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
-SUBJECT — He stops typing. He looks at the screen a moment too long. The pause is the whole performance. The audience must see the second thought arrive before he does anything about it.
-FRAMING — Medium close-up, 85mm, Static, Eye level, lit by practical night.
-DRAFT — the draft's own words for this shot: "He looks at the screen a moment too long."
+SUBJECT — MARA VOSS walks fast, crossing the frame, arms folded, no umbrella, hair soaked flat. She has been crying, or she is about to. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond. Track with her at her own pace and keep the wide framing — she is inside the city, not apart from it. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace, the red bird enamel clip in her hair.
+FRAMING — Medium wide, 35mm, Tracking, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "MARA VOSS (24), American, walks fast, arms folded, no umbrella. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to."
 
 AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
 ```
 
-Scene grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
 
 ---
 
-### Shot 50 — The quiet phone call
+### Shot 4 — The red bird
 
-**Scene 5 · INT. POLICE STATION, FRONT COUNTER — NIGHT**
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
 
-- **File**: `public/images/neonoire/s5/50-the-quiet-phone-call.jpg` — write it exactly here, 50-the-quiet-phone-call.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 10s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- The Young Officer — public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)
+- **File**: `public/images/neonoire/s1/04-the-red-bird.jpg` — write it exactly here, 04-the-red-bird.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Extreme close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 5s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- Mara Voss — public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)
 
 **Prompt**
 
 ```
 cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
-SUBJECT — He picks up the desk phone and turns away from her, quietly: "Yes. That name. Yes — the sister is here now." He hangs up, and his manner has changed. Politer. Turned away from her, three-quarter to camera, the words half-audible in the mix — the audience gets exactly as much as Vera does.
+SUBJECT — Her soaked hair, held back by a cheap enamel clip shaped like a small red bird. Rain beads on the wet strands; the vending machine's cold white light and the sodium orange cross her temple. A small point of enamel red in a street that has none. A plant for scene 2, where the clip drops between the crates unseen. The film's close-ups are rare so they count, and this one is small and ordinary — never held like a clue. Keep the bird legible and the enamel cheap: chipped red paint, a dime-store clasp. The clip is too small to read in the wider shots around it, which is the point.
+FRAMING — Extreme close-up, 85mm, Static, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird."
+
+AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
+```
+
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
+
+---
+
+### Shot 5 — Mara phone
+
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
+
+- **File**: `public/images/neonoire/s1/05-mara-phone.jpg` — write it exactly here, 05-mara-phone.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- Mara Voss — public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)
+
+**Prompt**
+
+```
+cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+
+SUBJECT — Her phone buzzes; the screen shows the caller, too small and softly blurred to read. Rain on the glass and on her hands. She looks at it. Lets it ring. Screen light does the work. Keep her face in three-quarter and let the street fall to sodium and green out of focus behind her.
+FRAMING — Close-up, 85mm, Static, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "Her phone BUZZES. The screen: VERA."
+
+AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
+```
+
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
+
+---
+
+### Shot 6 — Phone off
+
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
+
+- **File**: `public/images/neonoire/s1/06-phone-off.jpg` — write it exactly here, 06-phone-off.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Medium close-up, 50mm, Static, Eye level. Lighting: Practical night. Working duration 8s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- Mara Voss — public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)
+
+**Prompt**
+
+```
+cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+
+SUBJECT — She answers nobody: "Not tonight." Then she switches the phone off and shoves it down into her purse, her eyes already back on the empty street. Play the line to the dead phone, flatly, as a decision rather than a plea. Her sister's name is established here by the phone and nowhere else.
+FRAMING — Medium close-up, 50mm, Static, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "She switches it off and shoves it into her purse."
+
+AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
+```
+
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
+
+---
+
+### Shot 7 — Barbershop doorway
+
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
+
+- **File**: `public/images/neonoire/s1/07-barbershop-doorway.jpg` — write it exactly here, 07-barbershop-doorway.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Wide, 35mm, Static, Eye level. Lighting: Practical night. Working duration 7s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- Mara Voss — public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)
+
+**Prompt**
+
+```
+cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+
+SUBJECT — The rain thickens. She ducks into the recessed doorway of a closed barbershop — the striped pole dark and still beside her — and presses back into the shadow. Going nowhere. The empty wet street holds the rest of the frame. The doorway has to read as a place she could stay for the whole scene. The barbershop pole returns in shot 18 — keep its position and colour consistent.
+FRAMING — Wide, 35mm, Static, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "She ducks into the recessed doorway of a closed barbershop, its striped pole dark and still, and presses back into the shadow. Going nowhere."
+
+AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
+```
+
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
+
+---
+
+### Shot 8 — Old man
+
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
+
+- **File**: `public/images/neonoire/s1/08-old-man.jpg` — write it exactly here, 08-old-man.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Full, 50mm, Static, Eye level. Lighting: Practical night. Working duration 8s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- The Old Man — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+
+**Prompt**
+
+```
+cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+
+SUBJECT — An OLD MAN in a cheap raincoat, one hand pressed to his side as if something is hidden there, walks hurriedly across the street, glancing back over his shoulder. He passes Mara's doorway without seeing her. He must pass within a metre of her and still not see her. No reaction from her in this shot — the doorway stays in shadow.
+FRAMING — Full, 50mm, Static, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "An OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back."
+
+AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
+```
+
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
+
+---
+
+### Shot 9 — Sedan arrives
+
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
+
+- **File**: `public/images/neonoire/s1/09-sedan-arrives.jpg` — write it exactly here, 09-sedan-arrives.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 9s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- The Masked Men — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+
+**Prompt**
+
+```
+cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+
+SUBJECT — Headlights sweep the wet street. A black sedan rolls in and stops without hurry; two men in black clothes and plain masks step out. They don't run. The car and the men fill the frame at car height, rain lit across the beams. No urgency anywhere in this shot. If the sedan looks like a chase car the scene is wrong; it is a car that has done this before.
 FRAMING — Medium, 50mm, Static, Eye level, lit by practical night.
-DRAFT — the draft's own words for this shot: "Yes. That name. Yes -- the sister is here now."
+DRAFT — the draft's own words for this shot: "Headlights sweep the wet street. A black sedan rolls in and stops without hurry."
 
 AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
 ```
 
-Scene grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
+
+---
+
+### Shot 10 — Old man stops
+
+**Scene 1 · EXT. BACKSTREET, KANDA — NIGHT**
+
+- **File**: `public/images/neonoire/s1/10-old-man-stops.jpg` — write it exactly here, 10-old-man-stops.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **Framing**: Medium close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 7s (not a locked time).
+- **Continuity references to attach**: `public/images/neonoire/keys/01-the-doorway.jpg`, `public/images/neonoire/keys/07-the-rain-scene.jpg`, `public/images/neonoire/keys/08-ozu-cutaway.jpg`
+- The Old Man — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+
+**Prompt**
+
+```
+cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+
+SUBJECT — He has stopped in the middle of the wet street, seen from behind: he doesn't turn around. He seems to know there is no point. Keep the headlights as a soft glow on the wet road, never a white beam in frame — the film never shows where the light comes from.
+FRAMING — Medium close-up, 85mm, Static, Eye level, lit by practical night.
+DRAFT — the draft's own words for this shot: "The old man stops. He doesn't turn around. He seems to know there is no point."
+
+AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
+```
+
+Scene grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.
 
 ---
