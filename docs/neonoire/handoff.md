@@ -1,8 +1,8 @@
 # NEONOIRE — handoff
 
 For the agent taking over the keyframes. Everything below is what already exists, what is missing,
-what the film has to look like, and how to land your work without breaking the app. Read
-[`studio-brief.md`](studio-brief.md) next, then the pass you are generating in
+what the film has to look like, and how to land your work without breaking the app. Read the
+`neonoire` style in [`src/lib/styles.ts`](../../src/lib/styles.ts) next, then the pass you are generating in
 [`passes/`](passes).
 
 ---
@@ -62,9 +62,8 @@ typo check. The app fills a placeholder in automatically the next time the works
 
 ## 3. The look — non-negotiable
 
-The full style block and negative prompt are in [`studio-brief.md`](studio-brief.md), and they are
-also the **`neonoire` visual style inside the app** (`src/lib/styles.ts`), which is what every frame
-in the bundle carries. In short: 2.39:1 anamorphic, 35mm Kodak Vision3 500T, visible fine grain,
+The full style block and negative prompt are the **`neonoire` visual style inside the app**
+(`src/lib/styles.ts`), which is what every frame in the bundle carries. In short: 2.39:1 anamorphic, 35mm Kodak Vision3 500T, visible fine grain,
 halation around every practical light, crushed but never muddy blacks, muted desaturated palette,
 cold steady rain on black reflective asphalt, lit by vending machines, sodium streetlights and sick
 fluorescent green — **never by the sky**. Wide and patient, figure small, lots of negative space,

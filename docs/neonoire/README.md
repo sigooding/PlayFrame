@@ -51,11 +51,11 @@ keyframes on disk, which is what CI runs.
 
 ## The look
 
-Every frame is generated with the studio brief in [`studio-brief.md`](studio-brief.md): the style
-block, the negative prompt, and the nine keys it produced. The same block is the `neonoire` entry in
-the app's visual-style library (**Neo-Noir Tokyo**), and every scene and frame in the bundle carries
-that style id — so the prompt studio writes the brief into any batch generated from this project
-without anyone having to paste it again.
+Every frame is generated with the `neonoire` style defined in [`src/lib/styles.ts`](../../src/lib/styles.ts):
+the style block and negative prompt are the app's **Neo-Noir Tokyo** visual library entry, while the
+nine generated keys live in `public/images/neonoire/keys/`. Every scene and frame in the bundle carries
+that style id, so the prompt studio writes the look into any batch generated from this project without
+anyone having to paste it again.
 
 ## Passes
 
