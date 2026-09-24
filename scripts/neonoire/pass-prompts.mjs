@@ -40,6 +40,8 @@ const sheets = new Map([
   ["Mara Voss", "public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)"],
   ["Vera Voss", "public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)"],
   ["Jack Voss", "public/images/neonoire/sheets/vera.jpg  (he is in the photograph in scene 4; no sheet of his own yet)"],
+  ["The Young Officer", "public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)"],
+  ["Detective Ishida", "public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)"],
 ]);
 
 const passOf = n => Math.ceil(n / PASS_SIZE);

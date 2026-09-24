@@ -68,6 +68,12 @@ listed at the foot of its scene's board, and every frame's notes name the pass i
 - **Mara Voss (24)** and **Vera Voss (29)** are both American — blonde, pale blue eyes, sisters who
   can be told apart at a glance. Sheets: `sheets/mara.jpg`, `sheets/vera.jpg`; the face crops
   (`sheets/mara-face.jpg`, `sheets/vera-face.jpg`) are attached to every generation they appear in.
+- **The Young Officer (20s)** has a canonical sheet and face crop in `sheets/young-officer.jpg` and
+  `sheets/young-officer-face.jpg`: neat black hair, navy police uniform, ordinary polite face. Keep
+  his appearance fixed across the front-counter shots.
+- **Detective Ishida (50s)** has a canonical sheet and face crop in `sheets/ishida.jpg` and
+  `sheets/ishida-face.jpg`: short salt-and-pepper hair, lean build, charcoal suit, tired kindness.
+  Keep his appearance fixed across the interview and detectives' room shots.
 - **Jack Voss**, their father, exists only inside the framed photograph in scene 4.
 - The masked men never get faces. The old man and the journalist are unnamed on purpose.
 - Language: English between the sisters; everything marked *(in Japanese)* is spoken in Japanese and

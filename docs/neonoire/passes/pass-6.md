@@ -46,7 +46,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 10s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -95,7 +95,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **File**: `public/images/neonoire/s6/54-you-must-be-cold.jpg` — write it exactly here, 54-you-must-be-cold.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 7s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -121,7 +121,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **Framing**: Medium close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 12s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -147,7 +147,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **Framing**: Two-shot, 35mm, Static, Eye level. Lighting: Practical night. Working duration 16s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -172,7 +172,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **File**: `public/images/neonoire/s6/57-he-waits.jpg` — write it exactly here, 57-he-waits.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 9s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -198,7 +198,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 14s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -224,7 +224,7 @@ Scene grammar: One table, two chairs, a box of tissues nobody has touched in yea
 - **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 15s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Vera Voss — public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 

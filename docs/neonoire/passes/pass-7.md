@@ -21,7 +21,7 @@
 - **File**: `public/images/neonoire/s7/61-the-bottom-drawer.jpg` — write it exactly here, 61-the-bottom-drawer.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -70,7 +70,7 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 - **File**: `public/images/neonoire/s7/63-he-looks-at-it.jpg` — write it exactly here, 63-he-looks-at-it.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 8s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 
@@ -95,7 +95,7 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 - **File**: `public/images/neonoire/s7/64-drawer-closed.jpg` — write it exactly here, 64-drawer-closed.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 5s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
-- Detective Ishida — no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)
+- Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
 **Prompt**
 

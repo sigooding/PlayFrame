@@ -21,7 +21,7 @@ turned into:
 | --- | --- |
 | **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — verbatim; a build step fails if it ever drifts from the fountain |
 | **board** | 65 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 22 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
+| **keyframes** | 50 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
 | **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE |
 
 Story: Kanda, night. Mara Voss (24, American) declines her sister's call, watches two masked men
@@ -35,7 +35,7 @@ workspace's.
 
 ## 2. What you are being asked to do
 
-**Generate keyframes for passes 3–7 — 43 shots — and improve on the 22 that exist where they fall
+**Generate the remaining keyframes for passes 6–7 — 15 shots — and improve on any existing frame that falls
 short.** Start with [`passes/README.md`](passes/README.md): it lists each pass, its shots, the exact
 filenames, the framing, the cast sheets to attach, a ready prompt per shot, and the negative prompt.
 
@@ -97,6 +97,12 @@ Do not rename, move or delete anything the board names. The filename *is* the sh
   shorter hair with a fringe, a charcoal wool coat, a cream high-neck knit, navy trousers and brown
   boots. She carries Mara's pale-blue umbrella: bone dry on the shelf, dripping on police linoleum.
   Sheet `sheets/vera.jpg`; face crop `sheets/vera-face.jpg`.
+- **The Young Officer (20s)** — the recurring front-counter officer now has a canonical sheet and
+  face crop: `sheets/young-officer.jpg` and `sheets/young-officer-face.jpg`. Neat black hair, navy
+  police uniform, ordinary polite face; keep him fixed across shots 45–50.
+- **Detective Ishida (50s)** — the recurring detective now has a canonical sheet and face crop:
+  `sheets/ishida.jpg` and `sheets/ishida-face.jpg`. Short salt-and-pepper hair, lean build,
+  charcoal suit, tired kindness; keep him fixed across shots 52–65.
 - **Jack Voss** — their American father, present only inside one framed photograph in scene 4
   (rumpled suit, both small daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty
   years ago). He is the only saturated warm colour in the film so far and is never spoken about.
