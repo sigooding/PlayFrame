@@ -4,6 +4,7 @@ import { filmProjects } from "@/db/schema";
 import { asc, eq } from "drizzle-orm";
 import { starterProjects } from "./seed";
 import { raptureProject } from "./rapture";
+import { neonoireProject } from "./neonoire";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
 
@@ -30,6 +31,15 @@ export async function openRaptureProject() {
   await db.insert(filmProjects).values(raptureProject).onConflictDoNothing();
   const project = await getProject(raptureProject.id);
   if (!project) throw new Error("The series project was not created.");
+  return project;
+}
+
+/** The NEONOIRE opening-scenes workspace, opened the same way and with the same guarantees. */
+export async function openNeonoireProject() {
+  await ensureSchema();
+  await db.insert(filmProjects).values(neonoireProject).onConflictDoNothing();
+  const project = await getProject(neonoireProject.id);
+  if (!project) throw new Error("The NEONOIRE project was not created.");
   return project;
 }
 

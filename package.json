@@ -13,7 +13,10 @@
     "build:rapture": "node scripts/rapture/build-project.mjs",
     "export:episode": "node scripts/export-episode.mjs",
     "verify:rapture": "node scripts/verify-rapture.mjs",
-    "verify:rapture:browser": "node scripts/verify-rapture-browser.mjs"
+    "verify:rapture:browser": "node scripts/verify-rapture-browser.mjs",
+    "build:neonoire": "node scripts/neonoire/build-project.mjs",
+    "split:neonoire": "node scripts/neonoire/split-opening.mjs",
+    "verify:neonoire": "node scripts/verify-neonoire.mjs"
   },
   "dependencies": {
     "@playwright/test": "^1.63.0",
