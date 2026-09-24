@@ -148,13 +148,19 @@ export default function Studio({ initialProjects, initialTab, initialProjectId }
   }, [notify, updateLocal]);
 
   async function openTemplate(template: string) {
-    if (template !== "rapture") { setDialog({ type: "newProject", template }); return; }
+    if (template !== "rapture" && template !== "neonoire") { setDialog({ type: "newProject", template }); return; }
+    const bundled = template === "rapture"
+      ? { url: "/api/projects/rapture", tab: "Storyboard", label: "Series workspace opened. Existing edits are preserved.", error: "The series workspace couldn't be opened." }
+      : { url: "/api/projects/neonoire", tab: "Screenplay", label: "NEONOIRE opened on its screenplay. Existing edits are preserved.", error: "The NEONOIRE workspace couldn't be opened." };
     try {
-      const saved = await request<FilmProject>("/api/projects/rapture", { method: "POST" });
+      const saved = await request<FilmProject>(bundled.url, { method: "POST" });
       updateLocal(current => current.some(p => p.id === saved.id) ? current : [...current, saved]);
-      openProject(saved.id);
-      notify("Series workspace opened. Existing edits are preserved.");
-    } catch (error) { notify(error instanceof Error ? error.message : "The series workspace couldn't be opened.", true); }
+      setActiveId(saved.id);
+      setScreen("project");
+      setTab(bundled.tab);
+      setMobileNav(false);
+      notify(bundled.label);
+    } catch (error) { notify(error instanceof Error ? error.message : bundled.error, true); }
   }
 
   function openProject(id: string) { setActiveId(id); setScreen("project"); setTab("Storyboard"); setMobileNav(false); }

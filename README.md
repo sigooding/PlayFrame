@@ -1,6 +1,6 @@
 # frame.
 
-A writer/director's pre-production studio: screenplay, acts & sequences, cast with a relationship map, storyboard with a shot-type library, a lighting library and a thirty-look visual style library, shot list, mood boards, brainstorm map, and a prompt studio that batches any set of shots into ready-to-paste prompts for video (MiniMax H3, Seedance, Kling, Runway, Veo) and image models (SDXL, SD 1.5, SD 3.5, Krea 2, FLUX, Midjourney, DALL-E, Leonardo, Ideogram) in thirty visual styles (Realistic, Anime, Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting, Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8, Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco, Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid).
+A writer/director's pre-production studio: screenplay, acts & sequences, cast with a relationship map, storyboard with a shot-type library, a lighting library and a thirty-one-look visual style library, shot list, mood boards, brainstorm map, and a prompt studio that batches any set of shots into ready-to-paste prompts for video (MiniMax H3, Seedance, Kling, Runway, Veo) and image models (SDXL, SD 1.5, SD 3.5, Krea 2, FLUX, Midjourney, DALL-E, Leonardo, Ideogram) in thirty-one visual styles (Realistic, Anime, Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting, Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8, Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco, Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid).
 
 ## Run it locally
 
@@ -13,6 +13,49 @@ npm run dev                  # http://localhost:3000
 
 The first load seeds the existing sample projects plus **Let the Raptures Commence**.
 The series opens by default when present; an explicit `?project=<id>` always wins.
+
+## NEONOIRE — the opening scenes
+
+The first draft's opening scenes are an editable workspace of their own: **7 scenes, 65 numbered
+shots**, and the screenplay carried page by page from
+[`Neonoire_Opening.fountain`](Neonoire_Opening.fountain).
+
+- **The draft is the script.** The Screenplay tab shows it scene by scene in
+  [`docs/neonoire/screenplay/`](docs/neonoire/screenplay/); `npm run split:neonoire` regenerates those
+  pages and `npm run build:neonoire` refuses to build unless they rebuild the fountain byte for byte.
+  The only change the workspace makes to the text is dropping its own ` #1#` … ` #7#` scene markers,
+  so every scene selects its own slugline in the screenplay navigator.
+- **Every shot declares its grammar.** [`docs/neonoire/scenes/`](docs/neonoire/scenes/) is the numbered
+  board (Kanda backstreet 18 shots, the small bar 10, Vera's building 4, her apartment 10, the police
+  station counter 8, the interview room 9, the detectives' room 6): shot type, lens, camera angle,
+  movement, cast, lighting, a working duration, the keyframe filename, and the direction — with the
+  draft's own words quoted per shot, checked against the fountain at build time.
+- **Keyframes arrive ten at a time, in screenplay order.** Every frame is an AI-generated draft study
+  held to a continuity sheet: Mara and Vera Voss are both American — blonde, blue eyes, told apart by
+  hair, wardrobe and the umbrella — and Jack Voss, their father, exists only inside the photograph in
+  scene 4. Frames whose study has not been generated yet are labelled placeholders that name the file
+  they are waiting for, never a neighbour's picture.
+- **Nothing is explained**, because the film does not explain it: what the key opens, what the men are
+  counting towards, and what a clock that runs a minute fast is doing in a police station are all left
+  where the draft leaves them.
+
+Open the workspace from **Templates → NEONOIRE → Open the opening scenes** (the card opens the
+Screenplay tab) or import
+[`public/projects/neonoire-opening.json`](public/projects/neonoire-opening.json) with **Import project**.
+
+```bash
+npm run split:neonoire            # regenerate the seven screenplay pages from the draft
+npm run build:neonoire            # rebuild the bundle, and list every keyframe still to generate
+npm run verify:neonoire           # offline: pages, schema, screenplay map, lenses, CSV, prompts
+node scripts/neonoire/build-project.mjs --check   # fail if the bundle has drifted
+```
+
+Notes on the workspace live in [docs/neonoire/README.md](docs/neonoire/README.md); the style block,
+the negative prompt and the nine studio keys are in
+[docs/neonoire/studio-brief.md](docs/neonoire/studio-brief.md); and
+[docs/neonoire/handoff.md](docs/neonoire/handoff.md) plus
+[docs/neonoire/passes/](docs/neonoire/passes) carry everything needed to generate the remaining
+keyframes, one pass of ten at a time.
 
 ## Let the Raptures Commence
 
@@ -129,16 +172,17 @@ public/images/
     poster.jpg  super8.jpg  synthwave.jpg  charcoal.jpg  collage.jpg
     ghibli.jpg  manga.jpg  hanna-barbera.jpg  isometric.jpg  art-deco.jpg
     impressionist.jpg  pop-art.jpg  stained-glass.jpg  technicolor.jpg  polaroid.jpg
+    neo-noir-tokyo.jpg
   templates/
     short-film.jpg  feature-film.jpg  documentary.jpg
 public/fonts/   (six .ttf files: DM Sans 400/500/600/700, Instrument Serif regular + italic)
 ```
 
-The `styles/` pictures are the example thumbnails for the thirty visual styles (Realistic, Anime,
+The `styles/` pictures are the example thumbnails for the thirty-one visual styles (Realistic, Anime,
 Comic, 3D Animation, Watercolor, Film Noir, Cyberpunk, Claymation, Pixel Art, Oil Painting,
 Classic Cartoon, Documentary, Rotoscoped, Ukiyo-e, Line Art, Mid-century Poster, Super 8,
 Synthwave, Charcoal, Paper Collage, Studio Ghibli, Manga, Hanna-Barbera, Isometric, Art Deco,
-Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid) shown in the prompt studio. If one
+Impressionist, Pop Art, Stained Glass, Technicolor, Polaroid, Neo-Noir Tokyo) shown in the prompt studio. If one
 is missing the tile falls back to its colour swatch.
 
 The prompt studio (Storyboard → "Prompts", or any frame's AI-prompt tab) lets you pick a look,
@@ -180,7 +224,7 @@ If a picture is missing at runtime the app now shows a labelled placeholder inst
 | `npm run check:assets` | verifies every image the code references exists on disk |
 | `npm run export:episode -- --episode 1` | exports one episode of the series to a folder (`exports/episode-1/`): a single `episode-1.json` with the episode, scenes, shots, keyframes, screenplay, cast and mood boards, plus copies of every keyframe and the screenplay sources — the scene's own page first (`screenplay.kind: "page"`) and the numbered shot documents the storyboard was built from beside it (`storyboardSources`, `kind: "board"`). `--out`, `--project`, `--json-only` and `--clean` are available; `--help` lists them |
 | `npm run export:episode -- --reel` | the same export as **one self-contained file**, `exports/episode-1/reel.json`: no `images/` or `screenplay/` folder beside it, every keyframe and cast sheet embedded as a base64 data URI and the screenplay inlined (7 MB for episode 1, from 22 MB of images). Images are re-encoded to `--reel-width` (default 800px, JPEG `--reel-quality` 62) first — needs ImageMagick (`magick`/`convert`) on PATH, otherwise the originals are embedded as-is. `--reel-full` embeds untouched originals, `--name` renames the file |
-| `npm run verify:features` | checks the AI prompt models, the thirty visual styles, drives the real screenplay editor's undo/redo in jsdom, and maps every written scene in the bundled projects onto its own page of the screenplay (no server, no browser needed) |
+| `npm run verify:features` | checks the AI prompt models, the thirty-one visual styles, drives the real screenplay editor's undo/redo in jsdom, and maps every written scene in the bundled projects onto its own page of the screenplay (no server, no browser needed) |
 | `npm run verify:features:live` | the same, plus a check that `/?tab=screenplay` server-renders (needs the dev server running) |
 | `node scripts/verify7.mjs` | checks assets, the lighting library, every shot reference and the relationship screens (needs the dev server running, no browser required) |
 | `node scripts/verify6.mjs` | the same ground covered through a real browser, with screenshots (needs Playwright) |

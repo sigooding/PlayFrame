@@ -4,6 +4,7 @@ import { filmProjects } from "@/db/schema";
 import { asc, eq } from "drizzle-orm";
 import { starterProjects } from "./seed";
 import { raptureProject } from "./rapture";
+import { neonoireProject } from "./neonoire";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
 
@@ -31,6 +32,34 @@ export async function openRaptureProject() {
   const project = await getProject(raptureProject.id);
   if (!project) throw new Error("The series project was not created.");
   return project;
+}
+
+/** A slot that is still waiting for its keyframe: empty, labelled, and marked in its notes. */
+const isAwaitingKeyframe = (frame: { image: string; title: string; notes: string }) =>
+  !frame.image && /\(keyframe missing\)$/.test(frame.title) && frame.notes.includes("KEYFRAME MISSING");
+
+/**
+ * The NEONOIRE opening-scenes workspace, opened the same way the series workspace is — the bundle
+ * is inserted only if it is absent, and re-opening never overwrites what a writer has changed.
+ *
+ * Keyframes arrive ten at a time, and a workspace opened before a pass landed would otherwise keep
+ * its placeholders for ever. So slots that are still untouched placeholders are filled in from the
+ * bundle on the way through, and nothing else is touched.
+ */
+export async function openNeonoireProject() {
+  await ensureSchema();
+  await db.insert(filmProjects).values(neonoireProject).onConflictDoNothing();
+  const existing = await getProject(neonoireProject.id);
+  if (!existing) throw new Error("The NEONOIRE project was not created.");
+  const bundleFrames = new Map(neonoireProject.frames.map(frame => [frame.id, frame]));
+  const frames = existing.frames.map(frame => {
+    if (!isAwaitingKeyframe(frame)) return frame;
+    const arrived = bundleFrames.get(frame.id);
+    return arrived?.image ? { ...frame, image: arrived.image, title: arrived.title, status: arrived.status, notes: arrived.notes } : frame;
+  });
+  if (!frames.some((frame, i) => frame !== existing.frames[i])) return existing;
+  const [row] = await db.update(filmProjects).set({ frames, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
+  return serialize(row);
 }
 
 export async function getProject(id: string) {

@@ -1,4 +1,5 @@
 import { raptureProject } from "./rapture";
+import { neonoireProject } from "./neonoire";
 import type { Act, BrainstormNode, Character, MoodBoard, ProjectNote, Scene, StoryFrame } from "./types";
 
 export const sampleCharacters: Character[] = [
@@ -180,4 +181,5 @@ export const starterProjects = [
   { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5002", title: "Paper Planes", description: "A little imagination can take you a long way.", genre: "Coming of age", format: "Short film", status: "First draft", coverImage: "/images/shots/wide.jpg", acts: [], scenes: [{ id: "paper-scene-1", title: "A small beginning", location: "INT. CLASSROOM", time: "DAY", description: "A paper plane lands on an empty desk." }], frames: [], script: "PAPER PLANES\n\nWritten by Jamie Parker\n\nFADE IN:\n\n1. INT. CLASSROOM - DAY\n\nSunlight falls across rows of empty desks. A paper plane glides into frame.\n", notes: [], characters: [], brainstorm: [], moodboards: [] },
   { id: "3c7bfa6f-0f9a-4dce-a861-51e58f9a5003", title: "A Place in Between", description: "A documentary about the places we call home.", genre: "Documentary", format: "Documentary", status: "Idea", coverImage: "/images/shots/extreme-wide.jpg", acts: [], scenes: [], frames: [], script: "A PLACE IN BETWEEN\n\nDocumentary outline\n\nWhat makes a place feel like home?\n", notes: [], characters: [], brainstorm: [], moodboards: [] },
   raptureProject,
+  neonoireProject,
 ];

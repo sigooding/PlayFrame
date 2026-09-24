@@ -58,9 +58,11 @@ assert.equal(ep4.length, 13);
 assert.equal(coldOpen.length, 17);
 assert.equal(lockup.length, 31);
 assert.equal(legacy.length, 122);
-assert.equal(starterProjects.length, 4);
+// Five starters since NEONOIRE joined the samples; the first four and their order must not change.
+assert.equal(starterProjects.length, 5);
 assert.equal(starterProjects.filter(p => p.id === project.id).length, 1);
-assert.equal(starterProjects[0].title, "The Last Light", "Existing starter ordering must not change");
+assert.deepEqual(starterProjects.slice(0, 4).map(p => p.title), ["The Last Light", "Paper Planes", "A Place in Between", "Let the Raptures Commence"], "Existing starter ordering must not change");
+assert.equal(starterProjects[4].title, "NEONOIRE", "NEONOIRE is seeded after the series, so nothing already in a workspace moves");
 validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
@@ -675,7 +677,8 @@ try {
     (async () => {
       const id = ${JSON.stringify(project.id)};
       const initial = await api.listProjects();
-      assert.equal(initial.length, 4, 'Fresh local databases must seed all four projects');
+      assert.equal(initial.length, 5, 'Fresh local databases must seed all five projects');
+      assert(initial.some(p => p.title === 'NEONOIRE'), 'NEONOIRE is seeded alongside the series');
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
@@ -686,10 +689,10 @@ try {
       assert.equal(again.script, 'My preserved words');
       assert.equal(again.title, 'My edited Rapture');
       assert.equal(again.shareId, shared.shareId);
-      assert.equal((await api.listProjects()).length, 4, 'Opening repeatedly must not duplicate');
+      assert.equal((await api.listProjects()).length, 5, 'Opening repeatedly must not duplicate');
       assert.deepEqual(await api.getProject(originalSample.id), originalSample, 'Other projects are untouched');
       await api.deleteProject(id);
-      assert.equal((await api.listProjects()).length, 3, 'Ordinary page loads respect deletion');
+      assert.equal((await api.listProjects()).length, 4, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
       assert.equal(restored.frames.length, 526);

@@ -419,6 +419,21 @@ export const VISUAL_STYLES: readonly VisualStyleEntry[] = [
     conflicts: [],
     negative: "cgi, cartoon, anime, clean digital, sharp studio",
   },
+  {
+    // Written for NEONOIRE, and the house look of the bundled opening-scenes workspace: the film's
+    // own THE LOOK block, verbatim in meaning and close to it in wording, with its negative prompt.
+    id: "neonoire",
+    name: "Neo-Noir Tokyo",
+    image: "/images/styles/neo-noir-tokyo.jpg",
+    swatch: "linear-gradient(135deg,#0b1113,#1d2b23 45%,#c9752a)",
+    summary: "Memory-lit neo-noir Tokyo: practical light, cold rain, muted 35mm grain.",
+    useFor: "Night cities, quiet thrillers, anything lit by the place rather than the sky.",
+    prompt: "cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, neo-noir Tokyo at night that feels like a memory rather than a specific year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, old CRT televisions beside modern details, cold steady rain, wet black asphalt with long mirror reflections, lit almost entirely by practical sources — cold white vending machine glow, sodium-vapor orange streetlights, sickly fluorescent green from shop windows, no moonlight, wide patient composition with the figure small in the frame and lots of negative space, quiet, melancholic, nostalgic, restrained, lonely, ordinary city life hinted at in the background: one lit apartment window, laundry on a balcony, a distant train",
+    finish: "35mm Kodak Vision3 500T anamorphic night photography, halated practicals, crushed blacks, muted desaturated grade, fine grain",
+    photoreal: true,
+    conflicts: [],
+    negative: "lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style",
+  },
 ] as const;
 
 export function visualStyle(id?: string): VisualStyleEntry {

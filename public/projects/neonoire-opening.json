@@ -1,0 +1,2116 @@
+{
+  "id": "74a9cb34-9e80-4a04-a614-000000000065",
+  "title": "NEONOIRE",
+  "description": "The opening scenes, first draft (September 2026): 7 scenes and 65 numbered shots from a Kanda backstreet to a detectives' room three days later. The screenplay tab carries the draft page by page; the storyboard is generated in passes of ten keyframes, with Mara and Vera held to their continuity sheets. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained.",
+  "genre": "Neo-noir",
+  "format": "Feature",
+  "status": "In development",
+  "coverImage": "/images/neonoire/s1/01-backstreet.jpg",
+  "acts": [
+    {
+      "id": "neonoire-opening",
+      "title": "The opening — Kanda to the detectives' room",
+      "description": "Seven scenes from the first draft's opening: a backstreet in Kanda at night, a small bar, Vera's apartment three days later, and a police station that already knows Mara's name. 65 numbered shots; every frame is a draft study, not approved coverage.",
+      "parts": [
+        {
+          "id": "neonoire-part-1",
+          "title": "Kanda, night",
+          "description": "The cold open and the bar: the killing, the key, and the notebook that leaves with them."
+        },
+        {
+          "id": "neonoire-part-2",
+          "title": "Three days later",
+          "description": "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry."
+        },
+        {
+          "id": "neonoire-part-3",
+          "title": "The police station",
+          "description": "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse."
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "neonoire-s1",
+      "title": "The backstreet",
+      "location": "EXT. BACKSTREET, KANDA",
+      "time": "NIGHT",
+      "description": "Cold open. Rain in a Kanda backstreet. Mara declines her sister's call, ducks into the doorway of a closed barbershop, and watches two masked men shoot an old man without hurrying — then kneels beside him and takes a coin-locker key out of his hand. BOARDED — 18 shots. The draft's own scene 1; nothing is explained, and nobody names the key.",
+      "characters": [
+        "neonoire-mara",
+        "neonoire-old-man",
+        "neonoire-masked-men"
+      ],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-1",
+      "kind": "Cold open",
+      "lighting": "Practical night",
+      "lightingNotes": "The vending machine is the brightest source in the film's first minute. Sodium orange street lamps, one cold white vending machine, green fluorescent spill at the corner. No white beams in frame, ever.",
+      "style": "neonoire"
+    },
+    {
+      "id": "neonoire-s2",
+      "title": "The small bar",
+      "location": "INT. SMALL BAR, KANDA",
+      "time": "CONTINUOUS",
+      "description": "Continuous. Mara hides behind the far end of the counter with the key in her fist. Two pairs of wet black shoes come in softly, ask where is he, and shoot the journalist on the far side of the counter while the television audience laughs. The notebook leaves with them. BOARDED — 10 shots, ending on the blue TV glow and the title card.",
+      "characters": [
+        "neonoire-journalist",
+        "neonoire-mara",
+        "neonoire-masked-men"
+      ],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-1",
+      "kind": "Standard",
+      "lighting": "Practical night",
+      "lightingNotes": "Amber bottle shelves, the CRT's blue flicker on the ceiling, and the open back door's pale light. No overhead light is ever switched on.",
+      "style": "neonoire"
+    },
+    {
+      "id": "neonoire-s3",
+      "title": "Three days later",
+      "location": "EXT. VERA'S APARTMENT BUILDING",
+      "time": "DUSK",
+      "description": "SUPER: THREE DAYS LATER. An old four-story block squeezed between newer buildings, laundry left out and getting rained on, a train sliding past behind it — and one window on the third floor lit. BOARDED — 4 shots.",
+      "characters": [],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-2",
+      "kind": "Standard",
+      "lighting": "Blue hour",
+      "lightingNotes": "Blue hour with practical sodium beginning at street level and the single warm window on the third floor. Rain in the air; no direct sun, no golden hour.",
+      "style": "neonoire"
+    },
+    {
+      "id": "neonoire-s4",
+      "title": "Vera's apartment",
+      "location": "INT. VERA'S APARTMENT",
+      "time": "CONTINUOUS",
+      "description": "Continuous. Vera calls her sister and gets the recording: I'm not angry anymore, you left your umbrella, you'll get soaked, just call me. The television murmurs rain for the rest of the week, two cups sit on the table for one person and the photograph of Jack and his two small daughters holds the room — then she takes Mara's bone-dry blue umbrella and goes out. BOARDED — 10 shots.",
+      "characters": [
+        "neonoire-jack",
+        "neonoire-vera",
+        "neonoire-mara"
+      ],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-2",
+      "kind": "Standard",
+      "lighting": "Overcast soft",
+      "lightingNotes": "Flat grey rain light from the window, the CRT's cold glow on the ceiling, one lamp. The framed photograph is the only saturated warm colour in the frame.",
+      "style": "neonoire"
+    },
+    {
+      "id": "neonoire-s5",
+      "title": "The front counter",
+      "location": "INT. POLICE STATION, FRONT COUNTER",
+      "time": "NIGHT",
+      "description": "Night. Vera reports her sister missing, umbrella dripping on the linoleum. A young officer takes her details with polite boredom until the name Mara Voss reaches his monitor; he looks at it a moment too long, turns away, and makes a quiet phone call. He comes back politer. BOARDED — 8 shots.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-young-officer"
+      ],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-3",
+      "kind": "Standard",
+      "lighting": "Practical night",
+      "lightingNotes": "Ceiling fluorescent tubes, one visibly flickering, plus the flat monitor's glow on his face. No sodium in here; the station is its own climate.",
+      "style": "neonoire"
+    },
+    {
+      "id": "neonoire-s6",
+      "title": "The interview room",
+      "location": "INT. POLICE STATION, INTERVIEW ROOM",
+      "time": "MOMENTS LATER",
+      "description": "Moments later. Detective Ishida sets a paper cup of tea in front of Vera and offers her English. She answers in Japanese. He asks where she grew up, when she last saw her sister, whether the name Kanda means anything — and gets: three days ago, we had dinner, normal. He gives her his card and tells her to call at any hour. BOARDED — 9 shots.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-ishida"
+      ],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-3",
+      "kind": "Standard",
+      "lighting": "Practical night",
+      "lightingNotes": "One ceiling fixture and the frosted window's blue-grey rain light; the paper cup is the only warm note. No flicker in this room.",
+      "style": "neonoire"
+    },
+    {
+      "id": "neonoire-s7",
+      "title": "The detectives' room",
+      "location": "INT. POLICE STATION, DETECTIVES' ROOM",
+      "time": "CONTINUOUS",
+      "description": "Continuous. Alone in the detectives' room, Ishida opens his bottom drawer: sealed in an evidence bag, Mara's purse — the torn strap coiled beside it, still damp. He looks at it a long moment. Closes the drawer. On the wall, the clock runs a minute fast. BOARDED — 6 shots.",
+      "characters": [
+        "neonoire-ishida"
+      ],
+      "actId": "neonoire-opening",
+      "partId": "neonoire-part-3",
+      "kind": "Standard",
+      "lighting": "Practical night",
+      "lightingNotes": "Humming fluorescent rows, the desk lamp over the drawer, the radio's green dial. The evidence bag is lit plainly, like an exhibit.",
+      "style": "neonoire"
+    }
+  ],
+  "frames": [
+    {
+      "id": "neonoire-shot-01",
+      "sceneId": "neonoire-s1",
+      "title": "Backstreet",
+      "description": "A narrow street of shuttered shops that could belong to any year of the last forty. Hand-painted signs, tangled wires overhead, wet black asphalt, and at the corner the old vending machine throwing cold white light across the road with rain falling through it in columns. Nobody in frame.",
+      "image": "/images/neonoire/s1/01-backstreet.jpg",
+      "shotType": "Establishing",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Fade in",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nHold the empty street long enough that the audience notices they are alone in it. The vending machine is the brightest thing in the film's first minute; no other light source competes.\n\nSCRIPT — the draft's own words for this shot:\n\"A narrow street of shuttered shops that could belong to any year of the last forty.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 1 of 65."
+    },
+    {
+      "id": "neonoire-shot-02",
+      "sceneId": "neonoire-s1",
+      "title": "Vending",
+      "description": "Rain falls through the machine's cold white face in visible columns. Its hum is the loudest thing here. Chipped paint, a grid of glowing cans behind rain-streaked glass, water running off the metal onto the asphalt.",
+      "image": "/images/neonoire/s1/02-vending.jpg",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThis is the sound of the film's opening and its recurring return. Leave room in the frame for the hum — no people, no traffic, no music.\n\nSCRIPT — the draft's own words for this shot:\n\"Its HUM is the loudest thing here.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 2 of 65."
+    },
+    {
+      "id": "neonoire-shot-03",
+      "sceneId": "neonoire-s1",
+      "title": "Mara walks",
+      "description": "MARA VOSS walks fast, crossing the frame, arms folded, no umbrella, hair soaked flat. She has been crying, or she is about to. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond.",
+      "image": "/images/neonoire/s1/03-mara-walks.jpg",
+      "shotType": "Medium wide",
+      "movement": "Tracking",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nTrack with her at her own pace and keep the wide framing — she is inside the city, not apart from it. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace.\n\nSCRIPT — the draft's own words for this shot:\n\"MARA VOSS (24), American, walks fast, arms folded, no umbrella. Hair soaked flat. She has been crying, or she is about to.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 3 of 65."
+    },
+    {
+      "id": "neonoire-shot-04",
+      "sceneId": "neonoire-s1",
+      "title": "Mara phone",
+      "description": "Her phone buzzes; the screen shows the caller, too small and softly blurred to read. Rain on the glass and on her hands. She looks at it. Lets it ring.",
+      "image": "/images/neonoire/s1/04-mara-phone.jpg",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nScreen light does the work. Keep her face in three-quarter and let the street fall to sodium and green out of focus behind her.\n\nSCRIPT — the draft's own words for this shot:\n\"Her phone BUZZES. The screen: VERA.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 4 of 65."
+    },
+    {
+      "id": "neonoire-shot-05",
+      "sceneId": "neonoire-s1",
+      "title": "Phone off",
+      "description": "She answers nobody: \"Not tonight.\" Then she switches the phone off and shoves it down into her purse, her eyes already back on the empty street.",
+      "image": "/images/neonoire/s1/05-phone-off.jpg",
+      "shotType": "Medium close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nPlay the line to the dead phone, flatly, as a decision rather than a plea. Her sister's name is established here by the phone and nowhere else.\n\nSCRIPT — the draft's own words for this shot:\n\"She switches it off and shoves it into her purse.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 5 of 65."
+    },
+    {
+      "id": "neonoire-shot-06",
+      "sceneId": "neonoire-s1",
+      "title": "Barbershop doorway",
+      "description": "The rain thickens. She ducks into the recessed doorway of a closed barbershop — the striped pole dark and still beside her — and presses back into the shadow. Going nowhere. The empty wet street holds the rest of the frame.",
+      "image": "/images/neonoire/s1/06-barbershop-doorway.jpg",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe doorway has to read as a place she could stay for the whole scene. The barbershop pole returns in shot 17 — keep its position and colour consistent.\n\nSCRIPT — the draft's own words for this shot:\n\"She ducks into the recessed doorway of a closed barbershop, its striped pole dark and still, and presses back into the shadow. Going nowhere.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 6 of 65."
+    },
+    {
+      "id": "neonoire-shot-07",
+      "sceneId": "neonoire-s1",
+      "title": "Old man",
+      "description": "An OLD MAN in a cheap raincoat, one hand pressed to his side as if something is hidden there, walks hurriedly across the street, glancing back over his shoulder. He passes Mara's doorway without seeing her.",
+      "image": "/images/neonoire/s1/07-old-man.jpg",
+      "shotType": "Full",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-old-man"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nHe must pass within a metre of her and still not see her. No reaction from her in this shot — the doorway stays in shadow.\n\nSCRIPT — the draft's own words for this shot:\n\"An OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 7 of 65."
+    },
+    {
+      "id": "neonoire-shot-08",
+      "sceneId": "neonoire-s1",
+      "title": "Sedan arrives",
+      "description": "Headlights sweep the wet street. A black sedan rolls in and stops without hurry; two men in black clothes and plain masks step out. They don't run. The car and the men fill the frame at car height, rain lit across the beams.",
+      "image": "/images/neonoire/s1/08-sedan-arrives.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-masked-men"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nNo urgency anywhere in this shot. If the sedan looks like a chase car the scene is wrong; it is a car that has done this before.\n\nSCRIPT — the draft's own words for this shot:\n\"Headlights sweep the wet street. A black sedan rolls in and stops without hurry.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 8 of 65."
+    },
+    {
+      "id": "neonoire-shot-09",
+      "sceneId": "neonoire-s1",
+      "title": "Old man stops",
+      "description": "He has stopped in the middle of the wet street, seen from behind: he doesn't turn around. He seems to know there is no point.",
+      "image": "/images/neonoire/s1/09-old-man-stops.jpg",
+      "shotType": "Medium close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-old-man"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nKeep the headlights as a soft glow on the wet road, never a white beam in frame — the film never shows where the light comes from.\n\nSCRIPT — the draft's own words for this shot:\n\"The old man stops. He doesn't turn around. He seems to know there is no point.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 9 of 65."
+    },
+    {
+      "id": "neonoire-shot-10",
+      "sceneId": "neonoire-s1",
+      "title": "The shot",
+      "description": "Flat and ordinary, like a door closing. The old man folds to his knees, then onto his side in the black water. Nobody else in shot; the street carries on around him.",
+      "image": "/images/neonoire/s1/10-the-shot.jpg",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-old-man"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 1; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nNo muzzle flash in frame, no blood spray, no sound other than the suppressed shot and the rain. The camera keeps operating as though he has merely walked out of frame.\n\nSCRIPT — the draft's own words for this shot:\n\"A suppressed SHOT. Flat and ordinary, like a door closing.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 1 of 7 — ten keyframes at a time, in screenplay order. Shot 10 of 65."
+    },
+    {
+      "id": "neonoire-shot-11",
+      "sceneId": "neonoire-s1",
+      "title": "Mara hands over mouth",
+      "description": "Both hands over her mouth, pressed back into the shadow, staring out past camera. Her breath held.",
+      "image": "/images/neonoire/s1/11-mara-hands-over-mouth.jpg",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe first of the film's few close-ups, so it has to count. Wet hair, cold skin, no glamour.\n\nSCRIPT — the draft's own words for this shot:\n\"In the doorway, Mara has both hands over her mouth.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 5s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 11 of 65."
+    },
+    {
+      "id": "neonoire-shot-12",
+      "sceneId": "neonoire-s1",
+      "title": "Masked man radio",
+      "description": "One of the masked men touches his earpiece and speaks quietly into it. Only his eyes are visible above the mask: flat, unhurried, bored.",
+      "image": "/images/neonoire/s1/12-masked-man-radio.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-masked-men"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nHe is a man doing a job on a shift. Mundane, never menacing in performance; the voice on the radio does the work.\n\nSCRIPT — the draft's own words for this shot:\n\"One of the masked men touches his earpiece.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 12 of 65."
+    },
+    {
+      "id": "neonoire-shot-13",
+      "sceneId": "neonoire-s1",
+      "title": "Taillights gone",
+      "description": "They get back in the car. It pulls away, unhurried, taillights smearing red across the wet road and gone. Rain, the vending machine hum, the crossing melody still playing for no one. Mara doesn't move.",
+      "image": "/images/neonoire/s1/13-taillights-gone.jpg",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nA pedestrian crossing chimes somewhere off camera for an empty intersection, over and over. The street is emptier after they leave than it was before they came.\n\nSCRIPT — the draft's own words for this shot:\n\"It pulls away, unhurried. Taillights smear red across the road and are gone.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 13 of 65."
+    },
+    {
+      "id": "neonoire-shot-14",
+      "sceneId": "neonoire-s1",
+      "title": "She kneels",
+      "description": "She steps out into the rain and kneels beside him: \"It's okay — I'll get someone. Ambulance. I'll call. Ambulance.\" Her phone is off, and her hands shake too hard to turn it on.",
+      "image": "/images/neonoire/s1/14-she-kneels.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 11,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara",
+        "neonoire-old-man"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe halting Japanese is written as her second language — she is not fluent and the script never pretends she is. Play the fumbling for the phone as shaking hands, not as technology failing.\n\nSCRIPT — the draft's own words for this shot:\n\"Every instinct says run. She doesn't. She steps out into the rain and kneels beside him.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 11s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 14 of 65."
+    },
+    {
+      "id": "neonoire-shot-15",
+      "sceneId": "neonoire-s1",
+      "title": "The grip",
+      "description": "The old man grips her wrist, stronger than he should be, and presses something small and cold into her palm, folding her fingers around it: \"Don't let them have it.\"",
+      "image": "/images/neonoire/s1/15-the-grip.jpg",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara",
+        "neonoire-old-man"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe strength in the hand is the only unnatural thing in the scene and it is never explained. Hold on the two hands, not the faces.\n\nSCRIPT — the draft's own words for this shot:\n\"The old man grips her wrist, stronger than he should be.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 15 of 65."
+    },
+    {
+      "id": "neonoire-shot-16",
+      "sceneId": "neonoire-s1",
+      "title": "The key",
+      "description": "A small numbered key on a worn plastic tag. A coin-locker key, held in the palm of her hand, rain falling on it.",
+      "image": "/images/neonoire/s1/16-the-key.jpg",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe film's first prop and the engine of everything after. The tag is worn, the number is legible, and no other handbag contents are shown. Nothing here is explained to the audience.\n\nSCRIPT — the draft's own words for this shot:\n\"A small numbered key on a worn plastic tag. A coin-locker key.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 16 of 65."
+    },
+    {
+      "id": "neonoire-shot-17",
+      "sceneId": "neonoire-s1",
+      "title": "She runs",
+      "description": "Headlights, coming back. Mara runs. Her purse strap snags on the barbershop pole and tears; the purse drops into a puddle behind her. She doesn't stop. The torn strap stays looped on the pole for one beat.",
+      "image": "/images/neonoire/s1/17-she-runs.jpg",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe purse in the water is the scene's last piece of evidence and the detectives' room's first. Keep the puddle and the purse both in frame at the end of the shot.\n\nSCRIPT — the draft's own words for this shot:\n\"Her purse strap snags on the barbershop pole and tears. The purse drops into a puddle behind her.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 17 of 65."
+    },
+    {
+      "id": "neonoire-shot-18",
+      "sceneId": "neonoire-s1",
+      "title": "The flashlight",
+      "description": "The sedan pulls up beside the body. One masked man searches the old man's coat, methodically: nothing. His flashlight drifts across the street — and stops on the purse lying in the water.",
+      "image": "/images/neonoire/s1/18-the-flashlight.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
+      "characters": [
+        "neonoire-masked-men",
+        "neonoire-old-man"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music.\n\nSCRIPT — the draft's own words for this shot:\n\"His flashlight drifts across the street -- and stops on the purse lying in the water.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 18 of 65."
+    },
+    {
+      "id": "neonoire-shot-19",
+      "sceneId": "neonoire-s2",
+      "title": "The bar",
+      "description": "Six stools and a counter. Shelves of bottles glowing amber. On a high shelf an old CRT television plays a late-night variety show with the sound low. Rain drums on the roof. No one behind the counter; the door to the back stands half open.",
+      "image": "/images/neonoire/s2/19-the-bar.jpg",
+      "shotType": "Medium wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nSomeone is moving crates in the back room and is never seen. The bar must feel like it has other lives in it: a radio through a wall, laundry upstairs, a lit window across the street.\n\nSCRIPT — the draft's own words for this shot:\n\"Six stools and a counter. Shelves of bottles glowing amber.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 19 of 65."
+    },
+    {
+      "id": "neonoire-shot-20",
+      "sceneId": "neonoire-s2",
+      "title": "The journalist",
+      "description": "In the corner: a JOURNALIST in his forties, an untouched beer in front of him, a notebook closed beside it. He checks his watch. Checks the door. He is not waiting for the person he says he is waiting for.",
+      "image": "/images/neonoire/s2/20-the-journalist.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-journalist"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 2; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nHe is killed in four shots' time and the film gives him no backstory here. Play the waiting as habit, not nerves.\n\nSCRIPT — the draft's own words for this shot:\n\"In the corner, a JOURNALIST (40s), an untouched beer in front of him, a notebook closed beside it.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 2 of 7 — ten keyframes at a time, in screenplay order. Shot 20 of 65."
+    },
+    {
+      "id": "neonoire-shot-21",
+      "sceneId": "neonoire-s2",
+      "title": "Mara bursts in",
+      "description": "Mara, soaked, too out of breath to speak, stands in the doorway with the rain behind her.",
+      "image": "/images/neonoire/s2/21-mara-bursts-in.jpg",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 3; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nShe brings the street's weather in with her. Keep her soaked hair and jacket exactly as in scene 1 — this is the same night, minutes later.\n\nSCRIPT — the draft's own words for this shot:\n\"The door BANGS open. Mara, soaked, too out of breath to speak.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 21 of 65."
+    },
+    {
+      "id": "neonoire-shot-22",
+      "sceneId": "neonoire-s2",
+      "title": "Not his business",
+      "description": "He glances up, startled, then away. Not his business.",
+      "image": "/images/neonoire/s2/22-not-his-business.jpg",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Draft",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-journalist",
+        "neonoire-mara"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 3; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nHis decision not to help is the last decision he makes. No emphasis, no irony, no push-in.\n\nSCRIPT — the draft's own words for this shot:\n\"The journalist glances up, startled. Then away. Not his business.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 22 of 65."
+    },
+    {
+      "id": "neonoire-shot-23",
+      "sceneId": "neonoire-s2",
+      "title": "Behind the counter (keyframe missing)",
+      "description": "She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.",
+      "image": "",
+      "shotType": "Full",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s2/23-behind-the-counter.jpg is not in public/images/neonoire/s2, so this card holds slot 23 of 65 until pass 3 is generated.\n\nThe key returns here for a beat only, then goes back into her fist. Do not light it specially — it is not yet a magic object.\n\nSCRIPT — the draft's own words for this shot:\n\"She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 23 of 65."
+    },
+    {
+      "id": "neonoire-shot-24",
+      "sceneId": "neonoire-s2",
+      "title": "From the floor (keyframe missing)",
+      "description": "We see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.",
+      "image": "",
+      "shotType": "POV",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-journalist"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s2/24-from-the-floor.jpg is not in public/images/neonoire/s2, so this card holds slot 24 of 65 until pass 3 is generated.\n\nThis framing is the law of the rest of the scene: shoes, ankles, and what the floor sees. The audience knows exactly as much as she does and no more.\n\nSCRIPT — the draft's own words for this shot:\n\"FROM THE FLOOR, we see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 24 of 65."
+    },
+    {
+      "id": "neonoire-shot-25",
+      "sceneId": "neonoire-s2",
+      "title": "Two pairs of shoes (keyframe missing)",
+      "description": "The door opens again. Softly, this time. Two pairs of black shoes step inside, wet and silent. The journalist's shoes shift; he stands.",
+      "image": "",
+      "shotType": "Full",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-journalist",
+        "neonoire-masked-men"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s2/25-two-pairs-of-shoes.jpg is not in public/images/neonoire/s2, so this card holds slot 25 of 65 until pass 3 is generated.\n\nNo faces, no full figures — shoes and the bottom of the frame only. The softness of the door is the whole threat.\n\nSCRIPT — the draft's own words for this shot:\n\"Two pairs of black shoes step inside. Wet. Silent.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 25 of 65."
+    },
+    {
+      "id": "neonoire-shot-26",
+      "sceneId": "neonoire-s2",
+      "title": "The variety show (keyframe missing)",
+      "description": "No answer. Two suppressed shots. The stool tips over; the journalist hits the floor on the far side of the counter. We see only his hand. On the TV, the studio audience laughs.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-journalist",
+        "neonoire-masked-men"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s2/26-the-variety-show.jpg is not in public/images/neonoire/s2, so this card holds slot 26 of 65 until pass 3 is generated.\n\nThe TV is in the frame and the murder is not. The laugh track lands on the cut and holds — this is the film's coldest joke and it is never underlined.\n\nSCRIPT — the draft's own words for this shot:\n\"Two suppressed SHOTS.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 26 of 65."
+    },
+    {
+      "id": "neonoire-shot-27",
+      "sceneId": "neonoire-s2",
+      "title": "The notebook (keyframe missing)",
+      "description": "One pair of shoes crosses to the body. Pages rustle. The notebook, taken. In the back room, the crate-moving stops. A pair of shoes turns toward the half-open door and waits. Nothing moves.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-masked-men"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s2/27-the-notebook.jpg is not in public/images/neonoire/s2, so this card holds slot 27 of 65 until pass 3 is generated.\n\nThe notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not.\n\nSCRIPT — the draft's own words for this shot:\n\"One pair of shoes crosses to the body. Pages rustle. The notebook, taken.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 27 of 65."
+    },
+    {
+      "id": "neonoire-shot-28",
+      "sceneId": "neonoire-s2",
+      "title": "The blue glow (keyframe missing)",
+      "description": "She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 11,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-mara"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s2/28-the-blue-glow.jpg is not in public/images/neonoire/s2, so this card holds slot 28 of 65 until pass 3 is generated.\n\nThe hand flat on the bottles is the performance. Every light in the frame is a practical: the TV is blue, the bottles are amber, and she is in the middle of them.\n\nSCRIPT — the draft's own words for this shot:\n\"HOLD on her face in the blue TV glow: a young woman who has just understood that this was not random.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 11s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 28 of 65."
+    },
+    {
+      "id": "neonoire-shot-29",
+      "sceneId": "neonoire-s3",
+      "title": "Apartment block (keyframe missing)",
+      "description": "An old four-story apartment block squeezed between newer buildings, seen from across the road in the rain. Windows, balconies, an external stair, bicycles at the foot of the wall. SUPER: \"THREE DAYS LATER\".",
+      "image": "",
+      "shotType": "Establishing",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Blue hour",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dusk going blue, laundry nobody is coming back for, one lit window.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s3/29-apartment-block.jpg is not in public/images/neonoire/s3, so this card holds slot 29 of 65 until pass 3 is generated.\n\nThe block belongs to no single decade: a modern tower behind it, laundry that has not been brought in, a hand-painted sign at street level. The super is the only text in the frame.\n\nSCRIPT — the draft's own words for this shot:\n\"An old four-story apartment block squeezed between newer buildings.\"\n\nDusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 29 of 65."
+    },
+    {
+      "id": "neonoire-shot-30",
+      "sceneId": "neonoire-s3",
+      "title": "The elevated line (keyframe missing)",
+      "description": "A train slides past on the elevated line behind the block, its windows lit, and the whole building trembles faintly. Rain on everything.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Blue hour",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dusk going blue, laundry nobody is coming back for, one lit window.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s3/30-the-elevated-line.jpg is not in public/images/neonoire/s3, so this card holds slot 30 of 65 until pass 3 is generated.\n\nThe tremble is the point — this is the film's other-lives rule, thousands of people moving past one lit window. Shoot the train's blur, not its detail.\n\nSCRIPT — the draft's own words for this shot:\n\"A train slides past on the elevated line behind it, windows lit, and the whole building trembles faintly.\"\n\nDusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 3 of 7 — ten keyframes at a time, in screenplay order. Shot 30 of 65."
+    },
+    {
+      "id": "neonoire-shot-31",
+      "sceneId": "neonoire-s3",
+      "title": "The lit window (keyframe missing)",
+      "description": "One window on the third floor is lit. Rain-streaked glass, a curtain not quite closed, and the shape of a room behind it that the audience will not enter for another eight shots.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Blue hour",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dusk going blue, laundry nobody is coming back for, one lit window.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s3/31-the-lit-window.jpg is not in public/images/neonoire/s3, so this card holds slot 31 of 65 until pass 4 is generated.\n\nThe only warm light in the frame. Hold it — the audience has just come out of a bar at night in Kanda with a dead man in it.\n\nSCRIPT — the draft's own words for this shot:\n\"One window on the third floor is lit.\"\n\nDusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 31 of 65."
+    },
+    {
+      "id": "neonoire-shot-32",
+      "sceneId": "neonoire-s3",
+      "title": "Laundry in the rain (keyframe missing)",
+      "description": "Laundry left out on a balcony, getting rained on: a shirt, a towel, two pegs. It has been there since before the rain started.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "85mm",
+      "lighting": "Blue hour",
+      "style": "neonoire",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Dusk going blue, laundry nobody is coming back for, one lit window.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s3/32-laundry-in-the-rain.jpg is not in public/images/neonoire/s3, so this card holds slot 32 of 65 until pass 4 is generated.\n\nNobody in this film is coming back for the washing. No movement in frame except the rain and, at the very end, the train's light crossing it.\n\nSCRIPT — the draft's own words for this shot:\n\"Laundry left out on a balcony, getting rained on.\"\n\nDusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 5s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 32 of 65."
+    },
+    {
+      "id": "neonoire-shot-33",
+      "sceneId": "neonoire-s4",
+      "title": "The apartment (keyframe missing)",
+      "description": "Small and tidy. Grey light through rain-streaked glass. A smartphone on the table; an old boxy television in the corner. Nothing here quite belongs to one decade.",
+      "image": "",
+      "shotType": "Medium wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/33-the-apartment.jpg is not in public/images/neonoire/s4, so this card holds slot 33 of 65 until pass 4 is generated.\n\nVera's whole life in one frame: the low table, two cups, a shelf with one photograph, an umbrella stand by the door. Keep the room clean enough that the two cups read as an arrangement, not as clutter.\n\nSCRIPT — the draft's own words for this shot:\n\"Small and tidy. Grey light through rain-streaked glass.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 33 of 65."
+    },
+    {
+      "id": "neonoire-shot-34",
+      "sceneId": "neonoire-s4",
+      "title": "The pale blue umbrella (keyframe missing)",
+      "description": "By the door: a pale blue umbrella. Bone dry.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/34-the-pale-blue-umbrella.jpg is not in public/images/neonoire/s4, so this card holds slot 34 of 65 until pass 4 is generated.\n\nBone dry is the whole story of the sisters in one prop: Mara went out without it three days ago and it has not moved since. It travels with Vera for the rest of the opening.\n\nSCRIPT — the draft's own words for this shot:\n\"By the door, in the umbrella stand: a pale blue umbrella. Bone dry.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 5s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 34 of 65."
+    },
+    {
+      "id": "neonoire-shot-35",
+      "sceneId": "neonoire-s4",
+      "title": "The photograph (keyframe missing)",
+      "description": "One framed photograph, its colors gone warm and faded: a Tokyo street twenty years ago. An American man in a rumpled suit, smiling, holding the hands of two small girls — VERA, nine and serious, and MARA, four and mid-laugh. Behind them, the sign of a noodle shop.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-jack",
+        "neonoire-vera",
+        "neonoire-mara"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/35-the-photograph.jpg is not in public/images/neonoire/s4, so this card holds slot 35 of 65 until pass 4 is generated.\n\nThree American faces, twenty years ago: Jack Voss in the middle with his daughters. The only warm, saturated colour in the film so far; hold long enough to read the family before the plot takes it away.\n\nSCRIPT — the draft's own words for this shot:\n\"On a shelf, one framed photograph, its colors gone warm and faded.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 35 of 65."
+    },
+    {
+      "id": "neonoire-shot-36",
+      "sceneId": "neonoire-s4",
+      "title": "Vera at the table (keyframe missing)",
+      "description": "VERA VOSS sits at the low table. Two cups: hers holds cold tea, the other is empty and clean, set out as though someone is expected. Her phone lies face up in front of her. She calls. Waits.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/36-vera-at-the-table.jpg is not in public/images/neonoire/s4, so this card holds slot 36 of 65 until pass 4 is generated.\n\nWardrobe locked to the Vera continuity sheet: charcoal wool coat not yet on, cream high-neck knit. The second cup is never explained and never emptied.\n\nSCRIPT — the draft's own words for this shot:\n\"Two cups. Hers holds cold tea. The other is empty and clean, set out as though someone is expected.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 36 of 65."
+    },
+    {
+      "id": "neonoire-shot-37",
+      "sceneId": "neonoire-s4",
+      "title": "The answerphone (keyframe missing)",
+      "description": "Mara's recorded voice, bright: \"It's Mara. You know what to do.\" Then the beep, and Vera's face listening to it.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/37-the-answerphone.jpg is not in public/images/neonoire/s4, so this card holds slot 37 of 65 until pass 4 is generated.\n\nThe greeting is cheerful — recorded in a better week. Play Vera hearing the difference between that voice and the last three days.\n\nSCRIPT — the draft's own words for this shot:\n\"It's Mara. You know what to do.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 37 of 65."
+    },
+    {
+      "id": "neonoire-shot-38",
+      "sceneId": "neonoire-s4",
+      "title": "Nothing yet (keyframe missing)",
+      "description": "Vera opens her mouth. For a moment, nothing.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/38-nothing-yet.jpg is not in public/images/neonoire/s4, so this card holds slot 38 of 65 until pass 4 is generated.\n\nThe longest held silence in the opening. No music under it; the old television's murmur is the only sound.\n\nSCRIPT — the draft's own words for this shot:\n\"Vera opens her mouth. For a moment, nothing.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 5s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 38 of 65."
+    },
+    {
+      "id": "neonoire-shot-39",
+      "sceneId": "neonoire-s4",
+      "title": "The message (keyframe missing)",
+      "description": "\"It's me again. I'm not angry anymore. I wasn't really angry then, either. I just —\" She stops herself. \"You left your umbrella. You'll get soaked. Just call me. You don't have to say anything. Just call, so I know.\"",
+      "image": "",
+      "shotType": "Medium close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/39-the-message.jpg is not in public/images/neonoire/s4, so this card holds slot 39 of 65 until pass 4 is generated.\n\nThe apology is the scene's engine: the first of the film's two sisters is asking, the second is running from a doorway in Kanda. Keep the performance small and unsentimental.\n\nSCRIPT — the draft's own words for this shot:\n\"You left your umbrella. You'll get soaked.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 39 of 65."
+    },
+    {
+      "id": "neonoire-shot-40",
+      "sceneId": "neonoire-s4",
+      "title": "The television (keyframe missing)",
+      "description": "She hangs up. The old television murmurs to itself: the weather announcer, in Japanese, with rain continuing through the rest of the week.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/40-the-television.jpg is not in public/images/neonoire/s4, so this card holds slot 40 of 65 until pass 4 is generated.\n\nThe television is the film's chorus: it explains nothing and is always on. Its light is the room's second source, on the ceiling, exactly as the bar's CRT was.\n\nSCRIPT — the draft's own words for this shot:\n\"...rain continuing through the rest of the week...\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 7 — ten keyframes at a time, in screenplay order. Shot 40 of 65."
+    },
+    {
+      "id": "neonoire-shot-41",
+      "sceneId": "neonoire-s4",
+      "title": "Three looks (keyframe missing)",
+      "description": "The umbrella by the door. The clean empty cup. The photograph. She looks at them in that order.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/41-three-looks.jpg is not in public/images/neonoire/s4, so this card holds slot 41 of 65 until pass 5 is generated.\n\nOne insert carrying all three objects in depth — umbrella sharp by the door, cups mid-ground, photograph soft on the shelf — so the shot does the looking for her.\n\nSCRIPT — the draft's own words for this shot:\n\"She looks at the umbrella by the door. At the clean, empty cup. At the photograph.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 41 of 65."
+    },
+    {
+      "id": "neonoire-shot-42",
+      "sceneId": "neonoire-s4",
+      "title": "Takes the umbrella (keyframe missing)",
+      "description": "She stands. Puts on her coat. Hesitates at the door. Then she takes the blue umbrella — Mara's umbrella — and goes.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Overcast soft",
+      "style": "neonoire",
+      "duration": 11,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s4/42-takes-the-umbrella.jpg is not in public/images/neonoire/s4, so this card holds slot 42 of 65 until pass 5 is generated.\n\nThe hesitation is the last beat of Vera's indecision in the film; after this she is looking for her sister and she never stops. Cut on the empty stand.\n\nSCRIPT — the draft's own words for this shot:\n\"Then she takes the blue umbrella. Mara's umbrella.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 11s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 42 of 65."
+    },
+    {
+      "id": "neonoire-shot-43",
+      "sceneId": "neonoire-s5",
+      "title": "The front counter (keyframe missing)",
+      "description": "Fluorescent tubes, one of them flickering. A long counter. Faded posters about pickpockets and traffic safety. An old fax machine beside a new flat monitor. A wall clock that runs a minute fast.",
+      "image": "",
+      "shotType": "Establishing",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/43-the-front-counter.jpg is not in public/images/neonoire/s5, so this card holds slot 43 of 65 until pass 5 is generated.\n\nNothing in this room has been replaced since the nineties except the monitor, and the monitor is the only thing that matters. The clock is in frame from the first shot of the scene and again in the last of scene 7.\n\nSCRIPT — the draft's own words for this shot:\n\"Fluorescent tubes, one of them flickering. A long counter.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 43 of 65."
+    },
+    {
+      "id": "neonoire-shot-44",
+      "sceneId": "neonoire-s5",
+      "title": "Dripping umbrella (keyframe missing)",
+      "description": "She stands at the counter with the closed blue umbrella dripping onto the linoleum. A small puddle is already forming at her feet.",
+      "image": "",
+      "shotType": "Medium wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/44-dripping-umbrella.jpg is not in public/images/neonoire/s5, so this card holds slot 44 of 65 until pass 5 is generated.\n\nThe umbrella she took from the stand in scene 4 is in every shot of the police station. It is the only thing she brought with her.\n\nSCRIPT — the draft's own words for this shot:\n\"Vera stands at the counter, the closed blue umbrella dripping onto the linoleum.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 44 of 65."
+    },
+    {
+      "id": "neonoire-shot-45",
+      "sceneId": "neonoire-s5",
+      "title": "The young officer (keyframe missing)",
+      "description": "Polite boredom. He asks for her sister's age; she says twenty-four, in careful, formal Japanese, learned as a child and relearned as an adult.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-young-officer"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/45-the-young-officer.jpg is not in public/images/neonoire/s5, so this card holds slot 45 of 65 until pass 5 is generated.\n\nNothing about him is sinister yet; he is a young man at the end of a shift. The change in him arrives only after the monitor shows him the name.\n\nSCRIPT — the draft's own words for this shot:\n\"A YOUNG OFFICER takes her details with polite boredom.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 45 of 65."
+    },
+    {
+      "id": "neonoire-shot-46",
+      "sceneId": "neonoire-s5",
+      "title": "Mara voss on screen (keyframe missing)",
+      "description": "He types the name. ON THE MONITOR: MARA VOSS.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-young-officer"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/46-mara-voss-on-screen.jpg is not in public/images/neonoire/s5, so this card holds slot 46 of 65 until pass 5 is generated.\n\nThe name is the film's hinge and the only text on a screen anywhere in the opening. Legible, unglamorous, an ordinary records system.\n\nSCRIPT — the draft's own words for this shot:\n\"He types the name. ON THE MONITOR: MARA VOSS.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 46 of 65."
+    },
+    {
+      "id": "neonoire-shot-47",
+      "sceneId": "neonoire-s5",
+      "title": "He stops typing (keyframe missing)",
+      "description": "He stops typing. He looks at the screen a moment too long.",
+      "image": "",
+      "shotType": "Medium close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-young-officer"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/47-he-stops-typing.jpg is not in public/images/neonoire/s5, so this card holds slot 47 of 65 until pass 5 is generated.\n\nThe pause is the whole performance. The audience must see the second thought arrive before he does anything about it.\n\nSCRIPT — the draft's own words for this shot:\n\"He looks at the screen a moment too long.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 47 of 65."
+    },
+    {
+      "id": "neonoire-shot-48",
+      "sceneId": "neonoire-s5",
+      "title": "The quiet phone call (keyframe missing)",
+      "description": "He picks up the desk phone and turns away from her, quietly: \"Yes. That name. Yes — the sister is here now.\" He hangs up, and his manner has changed. Politer.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-young-officer"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/48-the-quiet-phone-call.jpg is not in public/images/neonoire/s5, so this card holds slot 48 of 65 until pass 5 is generated.\n\nTurned away from her, three-quarter to camera, the words half-audible in the mix — the audience gets exactly as much as Vera does.\n\nSCRIPT — the draft's own words for this shot:\n\"Yes. That name. Yes -- the sister is here now.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 48 of 65."
+    },
+    {
+      "id": "neonoire-shot-49",
+      "sceneId": "neonoire-s5",
+      "title": "She watches him (keyframe missing)",
+      "description": "She looks at him. He doesn't meet her eyes.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-young-officer"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/49-she-watches-him.jpg is not in public/images/neonoire/s5, so this card holds slot 49 of 65 until pass 5 is generated.\n\nHold on her, not on him. The flickering tube does the unease; no score, no zoom.\n\nSCRIPT — the draft's own words for this shot:\n\"Vera looks at him. He doesn't meet her eyes.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 49 of 65."
+    },
+    {
+      "id": "neonoire-shot-50",
+      "sceneId": "neonoire-s5",
+      "title": "Someone will be right with you (keyframe missing)",
+      "description": "\"Someone will be right with you.\" She waits, both hands on the wet handle of the umbrella.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Institutional, polite, a decade out of step; a name arriving on a monitor.",
+      "characters": [
+        "neonoire-vera"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s5/50-someone-will-be-right-with-you.jpg is not in public/images/neonoire/s5, so this card holds slot 50 of 65 until pass 5 is generated.\n\nEnd the scene on her waiting and the clock above her — a minute fast, and nobody in the film ever mentions it.\n\nSCRIPT — the draft's own words for this shot:\n\"Someone will be right with you.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 7 — ten keyframes at a time, in screenplay order. Shot 50 of 65."
+    },
+    {
+      "id": "neonoire-shot-51",
+      "sceneId": "neonoire-s6",
+      "title": "The interview room (keyframe missing)",
+      "description": "Small. A table, two chairs, a box of tissues nobody has touched in years. Rain on a frosted window.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/51-the-interview-room.jpg is not in public/images/neonoire/s6, so this card holds slot 51 of 65 until pass 6 is generated.\n\nThe room is the same institution as the counter, one door further in: the same flicker on the edge of frame, the same tired paint. No mirror, no camera, no observer — this is not an interrogation room and the film never says whether that is good.\n\nSCRIPT — the draft's own words for this shot:\n\"Small. A table, two chairs, a box of tissues nobody has touched in years. Rain on a frosted window.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 51 of 65."
+    },
+    {
+      "id": "neonoire-shot-52",
+      "sceneId": "neonoire-s6",
+      "title": "The paper cup of tea (keyframe missing)",
+      "description": "DETECTIVE ISHIDA sets a paper cup of tea in front of Vera. Gentle. Unhurried. Tired, in a way that looks like decency.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/52-the-paper-cup-of-tea.jpg is not in public/images/neonoire/s6, so this card holds slot 52 of 65 until pass 6 is generated.\n\nHis first act in the film is a kindness. Everything he does afterwards has to be able to be read either way.\n\nSCRIPT — the draft's own words for this shot:\n\"DETECTIVE ISHIDA (50s) sets a paper cup of tea in front of Vera. Gentle. Unhurried. Tired, in a way that looks like decency.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 52 of 65."
+    },
+    {
+      "id": "neonoire-shot-53",
+      "sceneId": "neonoire-s6",
+      "title": "The untouched tea (keyframe missing)",
+      "description": "The paper cup going cold between them, a thin curl of steam at the start of the shot and none of it by the end.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/53-the-untouched-tea.jpg is not in public/images/neonoire/s6, so this card holds slot 53 of 65 until pass 6 is generated.\n\nThe cup is still full at the end of the scene, three shots and one room later. Its steam is the clock of this scene the way the wall clock is the clock of the last one.\n\nSCRIPT — the draft's own words for this shot:\n\"Is something wrong? He looked at the screen, and then --\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 53 of 65."
+    },
+    {
+      "id": "neonoire-shot-54",
+      "sceneId": "neonoire-s6",
+      "title": "You must be cold (keyframe missing)",
+      "description": "Ishida, seated: \"You must be cold.\" His English is excellent, and it is a test of something.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/54-you-must-be-cold.jpg is not in public/images/neonoire/s6, so this card holds slot 54 of 65 until pass 6 is generated.\n\nAmerican-accented English from a Japanese detective in his fifties — cast for warmth, not menace. No push-in, no music.\n\nSCRIPT — the draft's own words for this shot:\n\"You must be cold.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 54 of 65."
+    },
+    {
+      "id": "neonoire-shot-55",
+      "sceneId": "neonoire-s6",
+      "title": "I speak japanese (keyframe missing)",
+      "description": "Vera answers in Japanese: \"I speak Japanese.\" A small beat. He accepts it with a mild smile: of course, but this is a difficult thing, it is easier in your own language. She lets it go.",
+      "image": "",
+      "shotType": "Medium close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/55-i-speak-japanese.jpg is not in public/images/neonoire/s6, so this card holds slot 55 of 65 until pass 6 is generated.\n\nHer Japanese is fluent and slightly formal — the language of a child who grew up here and an adult who came back. The subtitles carry what she gains by refusing the English.\n\nSCRIPT — the draft's own words for this shot:\n\"I speak Japanese.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 55 of 65."
+    },
+    {
+      "id": "neonoire-shot-56",
+      "sceneId": "neonoire-s6",
+      "title": "Three days ago (keyframe missing)",
+      "description": "\"When did you last see your sister?\" — \"Three days ago. At my apartment. We had dinner.\" — \"And how did she seem?\" Vera hesitates. \"Normal.\"",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 16,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/56-three-days-ago.jpg is not in public/images/neonoire/s6, so this card holds slot 56 of 65 until pass 6 is generated.\n\nThe scene's one true lie by omission, and the audience already knows what Vera does not: her sister is alive, hiding behind a bar counter in Kanda. Play the hesitation as embarrassment, not guilt.\n\nSCRIPT — the draft's own words for this shot:\n\"Three days ago. At my apartment. We had dinner.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 56 of 65."
+    },
+    {
+      "id": "neonoire-shot-57",
+      "sceneId": "neonoire-s6",
+      "title": "He waits (keyframe missing)",
+      "description": "Ishida waits, kindly, as if he knows there is more. She doesn't give it.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/57-he-waits.jpg is not in public/images/neonoire/s6, so this card holds slot 57 of 65 until pass 6 is generated.\n\nThe longest silence of the scene and the only one the film lets him win. No cutaway — the audience sits in it with Vera.\n\nSCRIPT — the draft's own words for this shot:\n\"Ishida waits, kindly, as if he knows there is more. She doesn't give it.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 57 of 65."
+    },
+    {
+      "id": "neonoire-shot-58",
+      "sceneId": "neonoire-s6",
+      "title": "Why kanda (keyframe missing)",
+      "description": "\"Did she ever mention Kanda? Friends there? Work?\" — \"Kanda? No. Why Kanda?\" — \"We ask about many places.\" — \"You asked about one.\"",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/58-why-kanda.jpg is not in public/images/neonoire/s6, so this card holds slot 58 of 65 until pass 6 is generated.\n\nHer third line in a row is a cornering, and he enjoys it: the only light moment in the room. Kanda is the street the audience has just been in, and nobody in the film will say why.\n\nSCRIPT — the draft's own words for this shot:\n\"Kanda? No. Why Kanda?\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 58 of 65."
+    },
+    {
+      "id": "neonoire-shot-59",
+      "sceneId": "neonoire-s6",
+      "title": "The card (keyframe missing)",
+      "description": "He slides his card across the table. She takes it, stands, picks up the blue umbrella: \"She will call.\" — \"I'm sure she will.\" She goes; the door closes. Ishida sits alone a moment, looking at the untouched tea.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 15,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "Two people being careful with each other, in Japanese, over tea going cold.",
+      "characters": [
+        "neonoire-vera",
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s6/59-the-card.jpg is not in public/images/neonoire/s6, so this card holds slot 59 of 65 until pass 6 is generated.\n\nEnd on Ishida and the full cup he is left with: he knows what she does not, and the film gives the audience exactly one look at it. No music into the cut.\n\nSCRIPT — the draft's own words for this shot:\n\"He slides his card across the table. She takes it. Stands. Picks up the blue umbrella.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 15s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 59 of 65."
+    },
+    {
+      "id": "neonoire-shot-60",
+      "sceneId": "neonoire-s7",
+      "title": "The detectives room (keyframe missing)",
+      "description": "Rows of cluttered desks under humming fluorescent light. Most are empty at this hour. A radio plays low somewhere.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "An empty office, one decision already made, and a clock a minute fast.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s7/60-the-detectives-room.jpg is not in public/images/neonoire/s7, so this card holds slot 60 of 65 until pass 6 is generated.\n\nThe same building as the counter and the interview room, one floor further in, and it is the emptiest frame in the opening. The radio is the room's only human sound.\n\nSCRIPT — the draft's own words for this shot:\n\"Rows of cluttered desks under humming fluorescent light. Most are empty at this hour. A radio plays low somewhere.\"\n\nRows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 7 — ten keyframes at a time, in screenplay order. Shot 60 of 65."
+    },
+    {
+      "id": "neonoire-shot-61",
+      "sceneId": "neonoire-s7",
+      "title": "The bottom drawer (keyframe missing)",
+      "description": "Ishida sits at his desk and opens the bottom drawer.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "An empty office, one decision already made, and a clock a minute fast.",
+      "characters": [
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s7/61-the-bottom-drawer.jpg is not in public/images/neonoire/s7, so this card holds slot 61 of 65 until pass 7 is generated.\n\nHe does not look around first. He has already decided what he is going to do and the audience is allowed to see that he made the decision before this scene began.\n\nSCRIPT — the draft's own words for this shot:\n\"Ishida sits at his desk and opens the bottom drawer.\"\n\nRows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 7 — ten keyframes at a time, in screenplay order. Shot 61 of 65."
+    },
+    {
+      "id": "neonoire-shot-62",
+      "sceneId": "neonoire-s7",
+      "title": "The evidence bag (keyframe missing)",
+      "description": "Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "An empty office, one decision already made, and a clock a minute fast.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s7/62-the-evidence-bag.jpg is not in public/images/neonoire/s7, so this card holds slot 62 of 65 until pass 7 is generated.\n\nContinuity with scene 1: the same purse, the same torn strap that snagged the barbershop pole, still wet, and the contents are never shown. Do not re-light it as a horror prop — it is an exhibit in a bag on a desk.\n\nSCRIPT — the draft's own words for this shot:\n\"Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp.\"\n\nRows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 7 — ten keyframes at a time, in screenplay order. Shot 62 of 65."
+    },
+    {
+      "id": "neonoire-shot-63",
+      "sceneId": "neonoire-s7",
+      "title": "He looks at it (keyframe missing)",
+      "description": "He looks at it a long moment. The film holds with him and gives him nothing to say.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "An empty office, one decision already made, and a clock a minute fast.",
+      "characters": [
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s7/63-he-looks-at-it.jpg is not in public/images/neonoire/s7, so this card holds slot 63 of 65 until pass 7 is generated.\n\nThe film's last look at a person in the opening, and it is on a man who has chosen his side quietly. No reaction shot of anyone else; the room is empty.\n\nSCRIPT — the draft's own words for this shot:\n\"He looks at it a long moment.\"\n\nRows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 7 — ten keyframes at a time, in screenplay order. Shot 63 of 65."
+    },
+    {
+      "id": "neonoire-shot-64",
+      "sceneId": "neonoire-s7",
+      "title": "Drawer closed (keyframe missing)",
+      "description": "He closes the drawer.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "An empty office, one decision already made, and a clock a minute fast.",
+      "characters": [
+        "neonoire-ishida"
+      ],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s7/64-drawer-closed.jpg is not in public/images/neonoire/s7, so this card holds slot 64 of 65 until pass 7 is generated.\n\nOne action, no emphasis, and the case goes back out of the record. Sound it plainly, like a filing cabinet in an empty building.\n\nSCRIPT — the draft's own words for this shot:\n\"Closes the drawer.\"\n\nRows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 5s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 7 — ten keyframes at a time, in screenplay order. Shot 64 of 65."
+    },
+    {
+      "id": "neonoire-shot-65",
+      "sceneId": "neonoire-s7",
+      "title": "The clock (keyframe missing)",
+      "description": "On the wall, the clock runs a minute fast. Cut to black.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "mood": "An empty office, one decision already made, and a clock a minute fast.",
+      "characters": [],
+      "notes": "KEYFRAME MISSING — /images/neonoire/s7/65-the-clock.jpg is not in public/images/neonoire/s7, so this card holds slot 65 of 65 until pass 7 is generated.\n\nThe same clock as scene 5, the same minute it has always been fast by, and the last shot of the opening. Hold it a beat past comfortable, then cut on the radio.\n\nSCRIPT — the draft's own words for this shot:\n\"On the wall, the clock runs a minute fast.\"\n\nRows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 7 — ten keyframes at a time, in screenplay order. Shot 65 of 65."
+    }
+  ],
+  "characters": [
+    {
+      "id": "neonoire-mara",
+      "name": "Mara Voss",
+      "role": "Protagonist",
+      "age": "24",
+      "description": "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.",
+      "traits": [
+        "Guarded",
+        "Quick",
+        "Unready"
+      ],
+      "color": "sage",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "image": "/images/neonoire/sheets/mara.jpg",
+      "relations": [
+        {
+          "id": "neonoire-link-mara-vera",
+          "targetId": "neonoire-vera",
+          "kind": "Sibling",
+          "note": "Three days of unanswered calls, and an umbrella left in a stand."
+        },
+        {
+          "id": "neonoire-link-mara-jack",
+          "targetId": "neonoire-jack",
+          "kind": "Child",
+          "note": "The photograph on Vera's shelf: a Tokyo street twenty years ago."
+        }
+      ]
+    },
+    {
+      "id": "neonoire-vera",
+      "name": "Vera Voss",
+      "role": "Co-lead",
+      "age": "29",
+      "description": "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter.",
+      "traits": [
+        "Careful",
+        "Steady",
+        "Alone"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "image": "/images/neonoire/sheets/vera.jpg",
+      "relations": [
+        {
+          "id": "neonoire-link-vera-mara",
+          "targetId": "neonoire-mara",
+          "kind": "Sibling",
+          "note": "Three days of unanswered calls, and an umbrella left in a stand."
+        },
+        {
+          "id": "neonoire-link-vera-jack",
+          "targetId": "neonoire-jack",
+          "kind": "Child",
+          "note": "The photograph on Vera's shelf: a Tokyo street twenty years ago."
+        }
+      ]
+    },
+    {
+      "id": "neonoire-jack",
+      "name": "Jack Voss",
+      "role": "The photograph",
+      "age": "40s, twenty years ago",
+      "description": "American. The girls' father, and the only warm-coloured thing in Vera's apartment: a rumpled suit, both daughters' hands in his, a smile, a noodle-shop sign behind them. Twenty years ago, in a frame on a shelf. He appears nowhere else in the opening and is never spoken about.",
+      "traits": [
+        "Warm",
+        "In one frame only"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "relations": [
+        {
+          "id": "neonoire-link-jack-mara",
+          "targetId": "neonoire-mara",
+          "kind": "Parent",
+          "note": "The photograph on Vera's shelf: a Tokyo street twenty years ago."
+        },
+        {
+          "id": "neonoire-link-jack-vera",
+          "targetId": "neonoire-vera",
+          "kind": "Parent",
+          "note": "The photograph on Vera's shelf: a Tokyo street twenty years ago."
+        }
+      ]
+    },
+    {
+      "id": "neonoire-old-man",
+      "name": "The Old Man",
+      "role": "Cold open",
+      "age": "70s",
+      "description": "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.",
+      "traits": [
+        "Hunted",
+        "Resigned",
+        "Deliberate"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "neonoire-masked-men",
+      "name": "The Masked Men",
+      "role": "Cold open",
+      "age": "30s to 40s",
+      "description": "Two men in black clothes and plain masks who do not run. They touch earpieces and report positions: first position done, moving to second. Their work is ordinary to them, and the film never shows a face under the masks — only eyes, and shoes, and a torch beam finding a purse in a puddle.",
+      "traits": [
+        "Methodical",
+        "Unhurried",
+        "Bored"
+      ],
+      "color": "rose",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "neonoire-journalist",
+      "name": "The Journalist",
+      "role": "Cold open",
+      "age": "40s",
+      "description": "An untouched beer, a closed notebook, a watched door — and one question asked off camera: where is he. He is killed four shots later and his notebook leaves with the men who did it. Unnamed in the opening; he speaks Japanese.",
+      "traits": [
+        "Waiting",
+        "Private",
+        "Unlucky"
+      ],
+      "color": "clay",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "neonoire-young-officer",
+      "name": "The Young Officer",
+      "role": "Front counter",
+      "age": "20s",
+      "description": "Takes a missing-person report with polite boredom until the name Mara Voss comes up on the monitor. Then he turns away from her and makes a quiet phone call, and comes back politer than he was. Unnamed in the opening.",
+      "traits": [
+        "Polite",
+        "Bored",
+        "Changed"
+      ],
+      "color": "sand",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "neonoire-ishida",
+      "name": "Detective Ishida",
+      "role": "Police",
+      "age": "50s",
+      "description": "Gentle, unhurried, tired in a way that looks like decency, with excellent English he offers as a courtesy. He asks about Kanda, gives Vera his card and tells her to call at any hour — then opens a drawer with her sister's purse in it and closes it again.",
+      "traits": [
+        "Kind",
+        "Unhurried",
+        "Deciding"
+      ],
+      "color": "sage",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "relations": []
+    }
+  ],
+  "notes": [
+    {
+      "id": "neonoire-start-here",
+      "title": "Start here — what this workspace is",
+      "color": "sage",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "tags": [
+        "Production",
+        "Read first"
+      ],
+      "connections": [],
+      "content": "NEONOIRE — the opening scenes, first draft (September 2026). 7 scenes, 65 numbered shots, 8 cast cards, and keyframes generated ten at a time in screenplay order.\n\nThe draft at the repository root (`Neonoire_Opening.fountain`) is the source of truth. The Screenplay tab carries it page by page — one page per scene, the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n- **Scene 1 — EXT. BACKSTREET, KANDA NIGHT** — 18 shots, 18 keyframes on disk\n- **Scene 2 — INT. SMALL BAR, KANDA CONTINUOUS** — 10 shots, 4 keyframes on disk, 6 placeholder cards (passes 3)\n- **Scene 3 — EXT. VERA'S APARTMENT BUILDING DUSK** — 4 shots, 0 keyframes on disk, 4 placeholder cards (passes 3, 4)\n- **Scene 4 — INT. VERA'S APARTMENT CONTINUOUS** — 10 shots, 0 keyframes on disk, 10 placeholder cards (passes 4, 5)\n- **Scene 5 — INT. POLICE STATION, FRONT COUNTER NIGHT** — 8 shots, 0 keyframes on disk, 8 placeholder cards (passes 5)\n- **Scene 6 — INT. POLICE STATION, INTERVIEW ROOM MOMENTS LATER** — 9 shots, 0 keyframes on disk, 9 placeholder cards (passes 6)\n- **Scene 7 — INT. POLICE STATION, DETECTIVES' ROOM CONTINUOUS** — 6 shots, 0 keyframes on disk, 6 placeholder cards (passes 6, 7)\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuous and wardrobe continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet."
+    },
+    {
+      "id": "neonoire-look",
+      "title": "The look — the draft's own words",
+      "color": "sand",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "tags": [
+        "Look",
+        "Source"
+      ],
+      "connections": [],
+      "content": ">THE LOOK<\n\nTokyo as a memory that is still happening.\n\nThe city in this film belongs to no single year. Pay phones beside smartphones. Boxy CRT televisions glowing in shop windows. Showa-era vending machines humming on empty corners beneath new glass towers. None of it is ever commented on. It is simply how the world is.\n\nLIGHT. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered.\n\nRAIN. Never glamorous. No lightning, no storms. Cold, steady, patient rain that turns the streets black and reflective.\n\nCAMERA. Wide and patient. Close-ups are rare, so they count. We watch people inside the city, not apart from it.\n\nSOUND. Real Tokyo sounds, placed slightly wrong: a crossing melody for an empty street, a television laughing in an empty room. Music arrives late, and sparingly.\n\nOTHER LIVES. There is always a sign of other people -- a lit window, a radio through a wall, laundry overhead. Every private moment happens among thousands of others.\n\n!NOTHING IS EXPLAINED.\n\nLANGUAGE. The Voss sisters speak English to each other. Dialogue marked (in Japanese) is spoken in Japanese and subtitled in English.\n\nREFERENCE POINTS. Ozu's TOKYO STORY for restraint. KOWLOON GENERIC ROMANCE and the 1997 illustrated Kowloon Walled City panoramas for density, texture and memory."
+    },
+    {
+      "id": "neonoire-style-block",
+      "title": "The style block — what every frame is generated with",
+      "color": "sand",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "tags": [
+        "Look",
+        "Prompts"
+      ],
+      "connections": [],
+      "content": "Every keyframe in this workspace is generated with the same style block, attached cast sheets where the sisters appear, and the same negative prompt. The block is also the **Neo-Noir Tokyo** entry in the app's visual-style library, so the prompt studio writes it into any batch you generate from this project.\n\n**Style block**\ncinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, neo-noir Tokyo at night that feels like a memory rather than a specific year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, old CRT televisions beside modern details, cold steady rain, wet black asphalt with long mirror reflections, lit almost entirely by practical sources — cold white vending machine glow, sodium-vapor orange streetlights, sickly fluorescent green from shop windows, no moonlight, wide patient composition with the figure small in the frame and lots of negative space, quiet, melancholic, nostalgic, restrained, lonely, ordinary city life hinted at in the background: one lit apartment window, laundry on a balcony, a distant train\n\n**Negative prompt**\nlightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style\n\n**If a frame comes out too cyberpunk:** drop \"neon\" from the prompt and add *1990s*, *ordinary*, *worn*, *documentary realism*.\n\nThe nine keys generated from the brief are on the mood board *The style block — nine keys*, and the prompts themselves are recorded in `docs/neonoire/studio-brief.md`."
+    },
+    {
+      "id": "neonoire-continuity",
+      "title": "Continuity — the Voss family, and everyone else",
+      "color": "rose",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "tags": [
+        "Continuity",
+        "Cast"
+      ],
+      "connections": [],
+      "content": "**Mara Voss (24)** and **Vera Voss (29)** are both American, both blonde with pale blue eyes, and they must read as sisters while still being told apart at a glance: Mara's hair is longer, wavier and soaked flat for the whole opening; Vera's is shoulder length with a fringe and never wet — she is inside, or under cover, or has the umbrella.\n\nWardrobe is locked per sheet:\n- Mara: indigo denim jacket, heather-grey tee, black jeans, white trainers, black cord necklace, small studs. Soaked from scene 1 until she is behind the bar counter.\n- Vera: charcoal wool coat over a cream high-neck knit, navy trousers, brown ankle boots, gold ring on the right hand, black strap watch. Carries Mara's pale blue umbrella — bone dry in the apartment, dripping on police linoleum.\n\nJack Voss, the girls' father, exists in this opening only inside one framed photograph on Vera's shelf: a rumpled suit, a smile, both daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty years ago, colours gone warm and faded. He is the only saturated warm colour in the film so far and he is never spoken about.\n\nThe men in masks are never given faces: eyes above the mask, gloved hands, wet black shoes. The old man and the journalist are unnamed on purpose. Detective Ishida and the young officer are the only police with faces, and the young officer's face changes after the monitor does."
+    },
+    {
+      "id": "neonoire-language",
+      "title": "Language — English, Japanese, and the subtitles",
+      "color": "sand",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "tags": [
+        "Language",
+        "Continuity"
+      ],
+      "connections": [],
+      "content": "The Voss sisters speak **English** to each other — including on the phone, including the answerphone message Vera cannot bring herself to answer.\n\nDialogue marked *(in Japanese)* is spoken in Japanese and subtitled in English, and it is never used for local colour: Mara's Japanese is halting and she is understood just barely; Vera's is fluent, careful and slightly formal, learned as a child and relearned as an adult; Ishida's English is excellent and she refuses it anyway, which is the only line either of them draws in the interview room. The old man's \"twenty years\" and \"don't let them have it\" are Japanese, and the masked man's two position reports are Japanese into a radio.\n\nThe audience is never told what the key opens, what the position reports are counting towards, or why the journalist had a notebook. Nothing is explained — that is the film's rule, and it is also the workspace's."
+    },
+    {
+      "id": "neonoire-keyframes",
+      "title": "What the keyframes are, and what they are not",
+      "color": "rose",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "tags": [
+        "Images",
+        "Review"
+      ],
+      "connections": [],
+      "content": "Every frame in this storyboard is a **draft AI study** standing in for a shot that has not been photographed. They are generated in passes of ten, in screenplay order, from the boards in `docs/neonoire/scenes/` with the cast sheets attached as references.\n\nThey are useful for: framing, lens, blocking, light direction, wardrobe continuity, and seeing whether the scene plays in order in the animatic.\n\nThey are not: approved coverage, a lighting plan, a cast approval, or a licence to stop checking. Faces drift between passes more than anything else — if a study of Mara or Vera does not match her sheet, mark the frame **Needs review** and regenerate it. Each frame's notes carry the pass it came from."
+    }
+  ],
+  "brainstorm": [
+    {
+      "id": "neonoire-brain-1",
+      "x": 60,
+      "y": 40,
+      "title": "The key",
+      "content": "A small numbered key on a worn plastic tag — a coin-locker key, pressed into Mara's palm by a dying man with the words don't let them have it. Never explained in the opening, and the reason she is running.",
+      "color": "rose",
+      "tags": [
+        "Prop",
+        "Engine"
+      ],
+      "connections": [
+        "neonoire-brain-2",
+        "neonoire-brain-4"
+      ],
+      "createdAt": "2026-09-24T00:00:00.000Z"
+    },
+    {
+      "id": "neonoire-brain-2",
+      "x": 430,
+      "y": 30,
+      "title": "Two positions",
+      "content": "First position done. Moving to second. Second position done. The men work to a list and the film never shows who writes it; the journalist in the bar was already on it, and he had a notebook.",
+      "color": "ink",
+      "tags": [
+        "Antagonist",
+        "Structure"
+      ],
+      "connections": [
+        "neonoire-brain-1",
+        "neonoire-brain-5"
+      ],
+      "createdAt": "2026-09-24T00:00:00.000Z"
+    },
+    {
+      "id": "neonoire-brain-3",
+      "x": 250,
+      "y": 210,
+      "title": "The city that lights them",
+      "content": "Sodium orange against sick fluorescent green: vending machines, shop signs, train windows, a CRT's blue flicker. The sky never does the work, and the rain turns everything black and reflective.",
+      "color": "sand",
+      "tags": [
+        "Look",
+        "Light"
+      ],
+      "connections": [
+        "neonoire-brain-6"
+      ],
+      "createdAt": "2026-09-24T00:00:00.000Z"
+    },
+    {
+      "id": "neonoire-brain-4",
+      "x": 620,
+      "y": 190,
+      "title": "Mara, running",
+      "content": "Twenty-four, American, soaked flat, no umbrella, arms folded, halting Japanese. She declines a call, chooses not to run when every instinct says to, and takes the key anyway.",
+      "color": "sage",
+      "tags": [
+        "Character",
+        "Act one"
+      ],
+      "connections": [
+        "neonoire-brain-1"
+      ],
+      "createdAt": "2026-09-24T00:00:00.000Z"
+    },
+    {
+      "id": "neonoire-brain-5",
+      "x": 60,
+      "y": 330,
+      "title": "Vera's two cups",
+      "content": "Three days later: one cup of cold tea, one empty and clean, set out as though someone is expected. The answerphone message is an apology, and the umbrella in the stand has never been wet.",
+      "color": "clay",
+      "tags": [
+        "Character",
+        "Sound"
+      ],
+      "connections": [
+        "neonoire-brain-2"
+      ],
+      "createdAt": "2026-09-24T00:00:00.000Z"
+    },
+    {
+      "id": "neonoire-brain-6",
+      "x": 470,
+      "y": 350,
+      "title": "A clock a minute fast",
+      "content": "The station is a decade out of step: faded posters, a fax machine beside a flat monitor, and a clock that runs a minute fast. Ishida gives Vera his card at any hour and then closes a drawer on her sister's purse.",
+      "color": "ink",
+      "tags": [
+        "Police",
+        "Institution"
+      ],
+      "connections": [
+        "neonoire-brain-3",
+        "neonoire-brain-2"
+      ],
+      "createdAt": "2026-09-24T00:00:00.000Z"
+    }
+  ],
+  "moodboards": [
+    {
+      "id": "neonoire-look-kanda",
+      "title": "Kanda, night — sodium and green",
+      "description": "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.",
+      "actId": "neonoire-opening",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "items": [
+        {
+          "id": "neonoire-look-kanda-item-1",
+          "image": "/images/neonoire/s1/01-backstreet.jpg",
+          "caption": "Backstreet — Establishing, 24mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-2",
+          "image": "/images/neonoire/s1/02-vending.jpg",
+          "caption": "Vending — Insert, 85mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-3",
+          "image": "/images/neonoire/s1/03-mara-walks.jpg",
+          "caption": "Mara walks — Medium wide, 35mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-4",
+          "image": "/images/neonoire/s1/04-mara-phone.jpg",
+          "caption": "Mara phone — Close-up, 85mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-5",
+          "image": "/images/neonoire/s1/05-phone-off.jpg",
+          "caption": "Phone off — Medium close-up, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-6",
+          "image": "/images/neonoire/s1/06-barbershop-doorway.jpg",
+          "caption": "Barbershop doorway — Wide, 35mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-7",
+          "image": "/images/neonoire/s1/07-old-man.jpg",
+          "caption": "Old man — Full, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-8",
+          "image": "/images/neonoire/s1/08-sedan-arrives.jpg",
+          "caption": "Sedan arrives — Medium, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-9",
+          "image": "/images/neonoire/s1/09-old-man-stops.jpg",
+          "caption": "Old man stops — Medium close-up, 85mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-10",
+          "image": "/images/neonoire/s1/10-the-shot.jpg",
+          "caption": "The shot — Wide, 24mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-11",
+          "image": "/images/neonoire/s1/11-mara-hands-over-mouth.jpg",
+          "caption": "Mara hands over mouth — Close-up, 85mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-12",
+          "image": "/images/neonoire/s1/12-masked-man-radio.jpg",
+          "caption": "Masked man radio — Medium, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-13",
+          "image": "/images/neonoire/s1/13-taillights-gone.jpg",
+          "caption": "Taillights gone — Wide, 35mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-14",
+          "image": "/images/neonoire/s1/14-she-kneels.jpg",
+          "caption": "She kneels — Medium, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-15",
+          "image": "/images/neonoire/s1/15-the-grip.jpg",
+          "caption": "The grip — Close-up, 85mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-16",
+          "image": "/images/neonoire/s1/16-the-key.jpg",
+          "caption": "The key — Insert, 85mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-17",
+          "image": "/images/neonoire/s1/17-she-runs.jpg",
+          "caption": "She runs — Wide, 24mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-18",
+          "image": "/images/neonoire/s1/18-the-flashlight.jpg",
+          "caption": "The flashlight — Medium, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-19",
+          "image": "/images/neonoire/s2/19-the-bar.jpg",
+          "caption": "The bar — Medium wide, 24mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-20",
+          "image": "/images/neonoire/s2/20-the-journalist.jpg",
+          "caption": "The journalist — Medium, 50mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-21",
+          "image": "/images/neonoire/s2/21-mara-bursts-in.jpg",
+          "caption": "Mara bursts in — Wide, 35mm. AI-generated study."
+        },
+        {
+          "id": "neonoire-look-kanda-item-22",
+          "image": "/images/neonoire/s2/22-not-his-business.jpg",
+          "caption": "Not his business — Medium, 50mm. AI-generated study."
+        }
+      ]
+    },
+    {
+      "id": "neonoire-look-style",
+      "title": "The style block — nine keys",
+      "description": "The studio brief's nine keys, generated at 2.39:1 from the look and negative prompt in docs/neonoire/studio-brief.md, and the same block the app's Neo-Noir Tokyo style writes into every prompt batch.",
+      "actId": "neonoire-opening",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "items": [
+        {
+          "id": "neonoire-look-style-item-1",
+          "image": "/images/neonoire/keys/01-the-doorway.jpg",
+          "caption": "1. The doorway — the key the film's own framing of scene 1 is measured against."
+        },
+        {
+          "id": "neonoire-look-style-item-2",
+          "image": "/images/neonoire/keys/02-the-key.jpg",
+          "caption": "2. The key — extreme close-up, hand only, number worn but legible."
+        },
+        {
+          "id": "neonoire-look-style-item-3",
+          "image": "/images/neonoire/keys/03-the-bar.jpg",
+          "caption": "3. The bar — the floor's-eye view: crate, counter underside, a man's shoes."
+        },
+        {
+          "id": "neonoire-look-style-item-4",
+          "image": "/images/neonoire/keys/04-veras-apartment.jpg",
+          "caption": "4. Vera's apartment — two cups, one clean; the photograph; the dry blue umbrella."
+        },
+        {
+          "id": "neonoire-look-style-item-5",
+          "image": "/images/neonoire/keys/05-the-police-station.jpg",
+          "caption": "5. The police station — one flickering tube and a dripping umbrella on lino."
+        },
+        {
+          "id": "neonoire-look-style-item-6",
+          "image": "/images/neonoire/keys/06-the-block.jpg",
+          "caption": "6. The block — stacked balconies, laundry, a train very close overhead."
+        },
+        {
+          "id": "neonoire-look-style-item-7",
+          "image": "/images/neonoire/keys/07-the-rain-scene.jpg",
+          "caption": "7. The rain scene — extreme wide, the figures tiny, the city indifferent."
+        },
+        {
+          "id": "neonoire-look-style-item-8",
+          "image": "/images/neonoire/keys/08-ozu-cutaway.jpg",
+          "caption": "8. Ozu-style cutaway — still life, no people: a shoe in a puddle."
+        },
+        {
+          "id": "neonoire-look-style-item-9",
+          "image": "/images/neonoire/keys/09-the-roadside-inn.jpg",
+          "caption": "9. The roadside inn — four sedans, masked men, seen from an upstairs window."
+        }
+      ]
+    },
+    {
+      "id": "neonoire-look-cast",
+      "title": "Continuity — Mara, Vera and Jack",
+      "description": "The two identity sheets every frame of the sisters is generated against, plus the face crops used as references. Any study that does not match these gets regenerated.",
+      "actId": "neonoire-opening",
+      "createdAt": "2026-09-24T00:00:00.000Z",
+      "items": [
+        {
+          "id": "neonoire-look-cast-item-1",
+          "image": "/images/neonoire/sheets/mara.jpg",
+          "caption": "Mara Voss — wardrobe and continuity sheet: indigo denim jacket, grey tee, black jeans, black cord necklace."
+        },
+        {
+          "id": "neonoire-look-cast-item-2",
+          "image": "/images/neonoire/sheets/vera.jpg",
+          "caption": "Vera Voss — wardrobe and continuity sheet: charcoal wool coat, cream high-neck knit, navy trousers, brown boots."
+        },
+        {
+          "id": "neonoire-look-cast-item-3",
+          "image": "/images/neonoire/sheets/mara-face.jpg",
+          "caption": "Mara — the face crop attached as a reference to every shot she appears in."
+        },
+        {
+          "id": "neonoire-look-cast-item-4",
+          "image": "/images/neonoire/sheets/vera-face.jpg",
+          "caption": "Vera — the face crop attached as a reference to every shot she appears in."
+        },
+        {
+          "id": "neonoire-look-cast-item-5",
+          "image": "/images/neonoire/s1/01-backstreet.jpg",
+          "caption": "The backstreet itself: the vending machine, the wires, the rain, and nobody in frame."
+        }
+      ]
+    }
+  ],
+  "script": "Title: NEONOIRE\nCredit: Written by\nAuthor: [Your Name]\nDraft date: First Draft - Opening Scenes\nContact: September 2026\n\n===\n\n>THE LOOK<\n\nTokyo as a memory that is still happening.\n\nThe city in this film belongs to no single year. Pay phones beside smartphones. Boxy CRT televisions glowing in shop windows. Showa-era vending machines humming on empty corners beneath new glass towers. None of it is ever commented on. It is simply how the world is.\n\nLIGHT. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered.\n\nRAIN. Never glamorous. No lightning, no storms. Cold, steady, patient rain that turns the streets black and reflective.\n\nCAMERA. Wide and patient. Close-ups are rare, so they count. We watch people inside the city, not apart from it.\n\nSOUND. Real Tokyo sounds, placed slightly wrong: a crossing melody for an empty street, a television laughing in an empty room. Music arrives late, and sparingly.\n\nOTHER LIVES. There is always a sign of other people -- a lit window, a radio through a wall, laundry overhead. Every private moment happens among thousands of others.\n\n!NOTHING IS EXPLAINED.\n\nLANGUAGE. The Voss sisters speak English to each other. Dialogue marked (in Japanese) is spoken in Japanese and subtitled in English.\n\nREFERENCE POINTS. Ozu's TOKYO STORY for restraint. KOWLOON GENERIC ROMANCE and the 1997 illustrated Kowloon Walled City panoramas for density, texture and memory.\n\n===\n\nFADE IN:\n\nEXT. BACKSTREET, KANDA - NIGHT\n\nRain. Not a storm. Just cold, steady, patient rain.\n\nA narrow street of shuttered shops that could belong to any year of the last forty. Hand-painted signs. Tangled wires overhead. At the corner, an old vending machine throws cold white light across the wet asphalt, rain falling through it in columns.\n\nIts HUM is the loudest thing here.\n\nMARA VOSS (24), American, walks fast, arms folded, no umbrella. Hair soaked flat. She has been crying, or she is about to.\n\nHer phone BUZZES. The screen: VERA.\n\nShe looks at it. Lets it ring. Declines.\n\nIt buzzes again at once. VERA.\n\nMARA\n(to the phone)\nNot tonight.\n\nShe switches it off and shoves it into her purse.\n\nThe rain thickens. She ducks into the recessed doorway of a closed barbershop, its striped pole dark and still, and presses back into the shadow. Going nowhere.\n\nSomewhere nearby, a pedestrian crossing CHIMES its old melody for an empty intersection. Over and over. No one crosses.\n\nFootsteps. Hurried. Uneven.\n\nAn OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back.\n\nHe passes Mara's doorway without seeing her.\n\nHeadlights sweep the wet street. A black sedan rolls in and stops without hurry.\n\nTwo MEN step out. Black clothes. Masks. They don't run.\n\nThe old man stops. He doesn't turn around. He seems to know there is no point.\n\nOLD MAN\n(in Japanese; to himself)\nTwenty years.\n\nA suppressed SHOT. Flat and ordinary, like a door closing.\n\nThe old man folds to his knees, then onto his side in the black water.\n\nIn the doorway, Mara has both hands over her mouth.\n\nOne of the masked men touches his earpiece.\n\nMASKED MAN\n(in Japanese)\nFirst position done. Moving to second.\n\nThey get back in the car. It pulls away, unhurried. Taillights smear red across the road and are gone.\n\nRain. The vending machine hum. The crossing melody, still playing for no one.\n\nMara doesn't move.\n\nThen the old man COUGHS.\n\nShe stares. He is still alive.\n\nEvery instinct says run. She doesn't. She steps out into the rain and kneels beside him.\n\nMARA\nIt's okay -- I'll get someone --\n(in halting Japanese)\nAmbulance. I'll call. Ambulance.\n\nShe fumbles for her phone. Switched off. Her hands shake too hard to turn it on.\n\nThe old man grips her wrist, stronger than he should be. He presses something small and cold into her palm and folds her fingers around it.\n\nOLD MAN\n(in Japanese)\nDon't let them have it.\n\nMara's lips move, working through the words. She understands. Just.\n\nMARA\n(in halting Japanese)\nHave what? I don't --\n\nHis grip loosens. His eyes stay open, on nothing.\n\nShe opens her hand.\n\n.INSERT - THE KEY\n\nA small numbered key on a worn plastic tag. A coin-locker key.\n\n.BACK TO SCENE\n\nHeadlights. Coming back.\n\nMara runs.\n\nHer purse strap snags on the barbershop pole and tears. The purse drops into a puddle behind her. She doesn't stop.\n\nThe sedan pulls up beside the body. One masked man gets out and searches the old man's coat, methodically. Nothing.\n\nHis flashlight drifts across the street -- and stops on the purse lying in the water.\n\nCUT TO:\n\nINT. SMALL BAR, KANDA - CONTINUOUS\n\nSix stools and a counter. Shelves of bottles glowing amber. On a high shelf, an old CRT television plays a late-night variety show, sound low. Rain drums on the roof.\n\nNo one behind the counter. A door to the back stands half open; someone back there is moving crates.\n\nIn the corner, a JOURNALIST (40s), an untouched beer in front of him, a notebook closed beside it. He checks his watch. Checks the door.\n\nThe door BANGS open. Mara, soaked, too out of breath to speak.\n\nThe journalist glances up, startled. Then away. Not his business.\n\nMara stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves.\n\nShe opens her hand. The key. She closes it again.\n\nFROM THE FLOOR, we see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.\n\nThe door opens again. Softly, this time.\n\nTwo pairs of black shoes step inside. Wet. Silent.\n\nThe journalist's shoes shift. He stands.\n\nJOURNALIST (O.S.)\n(in Japanese)\nWhere is he?\n\nNo answer.\n\nTwo suppressed SHOTS.\n\nThe stool tips over. The journalist hits the floor on the far side of the counter. We see only his hand.\n\nOn the TV, the studio audience LAUGHS.\n\nOne pair of shoes crosses to the body. Pages rustle. The notebook, taken.\n\nIn the back room, the crate-moving stops.\n\nA pair of shoes turns toward the half-open door. Waits. Nothing moves.\n\nMASKED MAN (O.S.)\n(in Japanese; into radio)\nSecond position done.\n\nThe shoes leave. The door swings shut.\n\nMara stays exactly where she is. She is shaking so hard the bottles in the crate beside her begin to CLINK. She presses her hand flat against them to make them stop.\n\nThe TV audience laughs again.\n\nHOLD on her face in the blue TV glow: a young woman who has just understood that this was not random.\n\n>CUT TO BLACK.\n\nOver black: RAIN.\n\n>NEONOIRE<\n\n>MAIN TITLES<\n\nEXT. VERA'S APARTMENT BUILDING - DUSK\n\nSUPER: \"THREE DAYS LATER\"\n\nAn old four-story apartment block squeezed between newer buildings. Laundry left out on a balcony, getting rained on. A train slides past on the elevated line behind it, windows lit, and the whole building trembles faintly.\n\nOne window on the third floor is lit.\n\nINT. VERA'S APARTMENT - CONTINUOUS\n\nSmall and tidy. Grey light through rain-streaked glass. A smartphone on the table; an old boxy television in the corner. Nothing here quite belongs to one decade.\n\nBy the door, in the umbrella stand: a pale blue umbrella. Bone dry.\n\nOn a shelf, one framed photograph, its colors gone warm and faded. A Tokyo street, twenty years ago. An American man in a rumpled suit, smiling, holding the hands of two small girls: VERA (9), serious, and MARA (4), mid-laugh. Behind them, the sign of a noodle shop.\n\nVERA VOSS (29) sits at the low table. Two cups. Hers holds cold tea. The other is empty and clean, set out as though someone is expected.\n\nHer phone lies face up in front of her. She calls. Waits.\n\nMARA (V.O.)\n(recorded; bright)\nIt's Mara. You know what to do.\n\nBEEP.\n\nVera opens her mouth. For a moment, nothing.\n\nVERA\nIt's me again.\n(beat)\nI'm not angry anymore. I wasn't really angry then, either. I just --\n(stops herself)\nYou left your umbrella. You'll get soaked.\n(beat)\nJust call me. You don't have to say anything. Just call, so I know.\n\nShe hangs up.\n\nThe old television murmurs to itself.\n\nWEATHER ANNOUNCER (ON TV)\n(in Japanese)\n...rain continuing through the rest of the week...\n\nShe looks at the umbrella by the door. At the clean, empty cup. At the photograph.\n\nShe stands. Puts on her coat. Hesitates at the door.\n\nThen she takes the blue umbrella. Mara's umbrella.\n\nCUT TO:\n\nINT. POLICE STATION, FRONT COUNTER - NIGHT\n\nFluorescent tubes, one of them flickering. A long counter. Faded posters about pickpockets and traffic safety. An old fax machine beside a new flat monitor. A wall clock that runs a minute fast.\n\nVera stands at the counter, the closed blue umbrella dripping onto the linoleum.\n\nA YOUNG OFFICER takes her details with polite boredom. Vera's Japanese is fluent, but careful and slightly formal -- learned as a child, relearned as an adult.\n\nYOUNG OFFICER\n(in Japanese)\nYour sister's age?\n\nVERA\n(in Japanese)\nTwenty-four.\n\nYOUNG OFFICER\n(in Japanese)\nAdults sometimes go away for a few days. Especially foreigners. It's usually --\n\nVERA\n(in Japanese)\nShe doesn't. Not without telling me.\n\nHe types the name. ON THE MONITOR: MARA VOSS.\n\nHe stops typing.\n\nHe looks at the screen a moment too long. Then he picks up the desk phone and turns away from her.\n\nYOUNG OFFICER\n(in Japanese; quietly, into phone)\nYes. That name. Yes -- the sister is here now.\n\nHe hangs up. His manner has changed. Politer.\n\nYOUNG OFFICER (CONT'D)\n(in Japanese)\nSomeone will be right with you.\n\nVera looks at him. He doesn't meet her eyes.\n\nINT. POLICE STATION, INTERVIEW ROOM - MOMENTS LATER\n\nSmall. A table, two chairs, a box of tissues nobody has touched in years. Rain on a frosted window.\n\nDETECTIVE ISHIDA (50s) sets a paper cup of tea in front of Vera. Gentle. Unhurried. Tired, in a way that looks like decency.\n\nISHIDA\nYou must be cold.\n\nHis English is excellent.\n\nVERA\n(in Japanese)\nI speak Japanese.\n\nISHIDA\nOf course. But this is a difficult thing. It is easier in your own language.\n\nA small beat. She lets it go.\n\nVERA\nIs something wrong? He looked at the screen, and then --\n\nISHIDA\nNothing is wrong. We just like to take care with these things.\n(sits)\nVoss. You grew up here?\n\nVERA\nUntil I was nine.\n\nISHIDA\nIt must have changed very much.\n\nVERA\nNot as much as I thought.\n\nHe smiles at that, as if it pleases him.\n\nISHIDA\nWhen did you last see your sister?\n\nVERA\nThree days ago. At my apartment. We had dinner.\n\nISHIDA\nAnd how did she seem?\n\nVera hesitates.\n\nVERA\nNormal.\n\nIshida waits, kindly, as if he knows there is more. She doesn't give it.\n\nISHIDA\nDid she ever mention Kanda? Friends there? Work?\n\nVERA\nKanda? No. Why Kanda?\n\nISHIDA\nWe ask about many places.\n\nVERA\nYou asked about one.\n\nA small pause. Ishida smiles mildly, as if she has caught him in something harmless.\n\nISHIDA\nYou would make a good detective.\n(gently)\nGo home, Miss Voss. Keep your phone on. If she calls, call me first. Any hour.\n\nHe slides his card across the table. She takes it. Stands. Picks up the blue umbrella.\n\nVERA\nShe will call.\n\nISHIDA\nI'm sure she will.\n\nShe goes. The door closes behind her.\n\nIshida sits alone a moment, looking at the untouched tea.\n\nINT. POLICE STATION, DETECTIVES' ROOM - CONTINUOUS\n\nRows of cluttered desks under humming fluorescent light. Most are empty at this hour. A radio plays low somewhere.\n\nIshida sits at his desk and opens the bottom drawer.\n\n.INSERT - THE DRAWER\n\nSealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp.\n\n.BACK TO SCENE\n\nHe looks at it a long moment. Closes the drawer.\n\nOn the wall, the clock runs a minute fast.\n\n>CUT TO:\n",
+  "shareId": null,
+  "createdAt": "2026-09-24T00:00:00.000Z",
+  "updatedAt": "2026-09-24T00:00:00.000Z"
+}
