@@ -29,7 +29,7 @@ const fountain = read("Neonoire_Opening.fountain");
 
 const exportsFile = join(cache, "project.mjs");
 await build({
-  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/structure"; export * from "./src/lib/types";', resolveDir: root },
+  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/structure"; export * from "./src/lib/styles"; export * from "./src/lib/types";', resolveDir: root },
   outfile: exportsFile, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning",
 });
 const {
@@ -43,13 +43,16 @@ assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 7);
 assert.equal(project.frames.length, 65);
 assert.equal(project.characters.length, 8);
-assert.equal(project.notes.length, 5);
+assert.equal(project.notes.length, 6);
 assert.equal(project.brainstorm.length, 6);
-assert.equal(project.moodboards.length, 4);
+assert.equal(project.moodboards.length, 5);
 assert(project.scenes.every(scene => scene.actId === project.acts[0].id), "Every scene belongs to the opening act");
 assert.equal(new Set(project.frames.map(frame => frame.id)).size, 65, "Frame ids are unique");
 assert.equal(new Set(project.frames.map(frame => `${frame.sceneId}/${frame.title}`)).size, 65, "No two shots in a scene share a title");
 pass(`the bundle validates: ${project.scenes.length} scenes, ${project.frames.length} shots, ${project.characters.length} cast, ${project.moodboards.length} boards`);
+assert(project.notes.some(note => note.id === "neonoire-style-block" && /Neo-Noir Tokyo|35mm Kodak Vision3 500T/.test(note.content)), "The style block should travel with the project");
+assert(project.moodboards.some(b => b.id === "neonoire-look-style" && b.items.length === 9), "The nine keys should be on their own board");
+for (const item of project.moodboards.find(b => b.id === "neonoire-look-style").items) assert(existsSync(join(root, "public", item.image)), `Missing style key: ${item.image}`);
 
 // ---------------------------------------------------------------- the screenplay
 const map = scenesInScript(project, project.script);
@@ -125,6 +128,16 @@ assert.equal(bundle.frames.length, 526);
 assert.equal(bundle.scenes.length, 42);
 assert(starterProjects.some(p => p.id === project.id), "A fresh workspace seeds NEONOIRE");
 pass("the series bundle is unchanged, and NEONOIRE ships beside it as its own project");
+
+// The look the workspace is generated in is a first-class style in the app's own library.
+const { VISUAL_STYLES, visualStyle } = await import(pathToFileURL(exportsFile).href);
+const style = visualStyle("neonoire");
+assert.equal(style.id, "neonoire", "The Neo-Noir Tokyo style should be selectable by id");
+assert(style.prompt.includes("35mm Kodak Vision3 500T") && style.prompt.includes("halation"), "The style should carry the studio brief's look");
+assert(style.negative.includes("glossy cyberpunk") && style.negative.includes("HDR"), "The style should carry the brief's negative prompt");
+assert(existsSync(join(root, "public", style.image)), `The style's example image is missing: ${style.image}`);
+assert.equal(VISUAL_STYLES.filter(s => s.id === "neonoire").length, 1, "The style is registered once");
+pass("the studio brief is the app's Neo-Noir Tokyo visual style, with its negative prompt and a key as its example image");
 
 // ---------------------------------------------------------------- prompts, CSV and import
 const models = ["minimax-h3", "seedance", "kling", "runway", "veo", "sdxl", "flux", "midjourney"];

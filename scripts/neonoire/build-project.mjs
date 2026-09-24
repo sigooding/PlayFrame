@@ -24,6 +24,12 @@ const slices = pages(fountain);
 const passSize = 10;
 const passOf = n => Math.ceil(n / passSize);
 
+/** The look and its negative, kept in step with the Neo-Noir Tokyo entry in src/lib/styles.ts. */
+const STYLE_BLOCK = process.env.NEONOIRE_STYLE_BLOCK || readFileSync(resolve(root, "src/lib/styles.ts"), "utf8")
+  .match(/id: "neonoire",[\s\S]*?prompt: "([^"]+)"/)[1].replace(/\\"/g, '"');
+const STYLE_NEGATIVE = readFileSync(resolve(root, "src/lib/styles.ts"), "utf8")
+  .match(/id: "neonoire",[\s\S]*?negative: "([^"]+)"/)[1].replace(/\\"/g, '"');
+
 /** One line of tone per scene, carried on every frame so the shot list reads as a scene does. */
 const MOODS = {
   s1: "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
@@ -117,6 +123,11 @@ const notes = [
     content: lookNote,
   },
   {
+    id: "neonoire-style-block", title: "The style block — what every frame is generated with", color: "sand", createdAt,
+    tags: ["Look", "Prompts"], connections: [],
+    content: `Every keyframe in this workspace is generated with the same style block, attached cast sheets where the sisters appear, and the same negative prompt. The block is also the **Neo-Noir Tokyo** entry in the app's visual-style library, so the prompt studio writes it into any batch you generate from this project.\n\n**Style block**\n${STYLE_BLOCK}\n\n**Negative prompt**\n${STYLE_NEGATIVE}\n\n**If a frame comes out too cyberpunk:** drop "neon" from the prompt and add *1990s*, *ordinary*, *worn*, *documentary realism*.\n\nThe nine keys generated from the brief are on the mood board *The style block — nine keys*, and the prompts themselves are recorded in \`docs/neonoire/studio-brief.md\`.`,
+  },
+  {
     id: "neonoire-continuity", title: "Continuity — the Voss family, and everyone else", color: "rose", createdAt,
     tags: ["Continuity", "Cast"], connections: [],
     content: `**Mara Voss (24)** and **Vera Voss (29)** are both American, both blonde with pale blue eyes, and they must read as sisters while still being told apart at a glance: Mara's hair is longer, wavier and soaked flat for the whole opening; Vera's is shoulder length with a fringe and never wet — she is inside, or under cover, or has the umbrella.\n\nWardrobe is locked per sheet:\n- Mara: indigo denim jacket, heather-grey tee, black jeans, white trainers, black cord necklace, small studs. Soaked from scene 1 until she is behind the bar counter.\n- Vera: charcoal wool coat over a cream high-neck knit, navy trousers, brown ankle boots, gold ring on the right hand, black strap watch. Carries Mara's pale blue umbrella — bone dry in the apartment, dripping on police linoleum.\n\nJack Voss, the girls' father, exists in this opening only inside one framed photograph on Vera's shelf: a rumpled suit, a smile, both daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty years ago, colours gone warm and faded. He is the only saturated warm colour in the film so far and he is never spoken about.\n\nThe men in masks are never given faces: eyes above the mask, gloved hands, wet black shoes. The old man and the journalist are unnamed on purpose. Detective Ishida and the young officer are the only police with faces, and the young officer's face changes after the monitor does.`,
@@ -143,6 +154,17 @@ const moodboards = [
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, flat grey light inside, a bone-dry pale blue umbrella and one photograph that is the only warm colour in the film.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
+  boardOf("neonoire-look-style", "The style block — nine keys", "The studio brief's nine keys, generated at 2.39:1 from the look and negative prompt in docs/neonoire/studio-brief.md, and the same block the app's Neo-Noir Tokyo style writes into every prompt batch.", [
+    { image: "/images/neonoire/keys/01-the-doorway.jpg", caption: "1. The doorway — the key the film's own framing of scene 1 is measured against." },
+    { image: "/images/neonoire/keys/02-the-key.jpg", caption: "2. The key — extreme close-up, hand only, number worn but legible." },
+    { image: "/images/neonoire/keys/03-the-bar.jpg", caption: "3. The bar — the floor's-eye view: crate, counter underside, a man's shoes." },
+    { image: "/images/neonoire/keys/04-veras-apartment.jpg", caption: "4. Vera's apartment — two cups, one clean; the photograph; the dry blue umbrella." },
+    { image: "/images/neonoire/keys/05-the-police-station.jpg", caption: "5. The police station — one flickering tube and a dripping umbrella on lino." },
+    { image: "/images/neonoire/keys/06-the-block.jpg", caption: "6. The block — stacked balconies, laundry, a train very close overhead." },
+    { image: "/images/neonoire/keys/07-the-rain-scene.jpg", caption: "7. The rain scene — extreme wide, the figures tiny, the city indifferent." },
+    { image: "/images/neonoire/keys/08-ozu-cutaway.jpg", caption: "8. Ozu-style cutaway — still life, no people: a shoe in a puddle." },
+    { image: "/images/neonoire/keys/09-the-roadside-inn.jpg", caption: "9. The roadside inn — four sedans, masked men, seen from an upstairs window." },
+  ].filter(item => existsSync(resolve(root, `public${item.image}`)))),
   boardOf("neonoire-look-cast", "Continuity — Mara, Vera and Jack", "The two identity sheets every frame of the sisters is generated against, plus the face crops used as references. Any study that does not match these gets regenerated.", [
     { image: "/images/neonoire/sheets/mara.jpg", caption: "Mara Voss — wardrobe and continuity sheet: indigo denim jacket, grey tee, black jeans, black cord necklace." },
     { image: "/images/neonoire/sheets/vera.jpg", caption: "Vera Voss — wardrobe and continuity sheet: charcoal wool coat, cream high-neck knit, navy trousers, brown boots." },

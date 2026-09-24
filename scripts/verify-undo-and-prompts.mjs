@@ -142,19 +142,19 @@ console.log("  PASS  model-specific syntax, parameters and negative prompts veri
 console.log("\n1b. Visual style library");
 
 assert(Array.isArray(VISUAL_STYLES), "VISUAL_STYLES should be an array");
-assert.strictEqual(VISUAL_STYLES.length, 30, `Expected exactly 30 styles, got ${VISUAL_STYLES.length}`);
+assert.strictEqual(VISUAL_STYLES.length, 31, `Expected exactly 31 styles, got ${VISUAL_STYLES.length}`);
 const ids = new Set(VISUAL_STYLES.map(s => s.id));
-assert.strictEqual(ids.size, 30, "style ids must be unique");
+assert.strictEqual(ids.size, 31, "style ids must be unique");
 
 for (const s of VISUAL_STYLES) {
   assert(s.name && s.prompt && s.finish && s.swatch, `style ${s.id} is missing metadata`);
   assert(s.image.startsWith("/images/styles/"), `style ${s.id} image should live in /images/styles/`);
   assert(existsSync(join(root, "public", s.image)), `style example image not on disk: ${s.image}`);
 }
-console.log(`  PASS  30 styles, each with a unique id, tokens, and an example image on disk`);
+console.log(`  PASS  31 styles, each with a unique id, tokens, and an example image on disk`);
 
 // The looks the user named across the requests must exist.
-for (const id of ["cinematic", "anime", "comic", "classic-cartoon", "documentary", "rotoscoped", "ghibli", "manga", "hanna-barbera"]) {
+for (const id of ["cinematic", "anime", "comic", "classic-cartoon", "documentary", "rotoscoped", "ghibli", "manga", "hanna-barbera", "neonoire"]) {
   assert(VISUAL_STYLES.find(s => s.id === id), `missing style ${id}`);
 }
 console.log("  PASS  all user-named looks present (incl. ghibli, manga, hanna-barbera)");
