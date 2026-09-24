@@ -5,7 +5,7 @@
 Scene: INT. SMALL BAR, KANDA — CONTINUOUS
 Cast: MARA VOSS, THE JOURNALIST (40s, unnamed), THE MASKED MEN (two, unnamed)
 Lens plan: 24mm for the room and the floor, 35mm for the shoes and the corners, 50mm for the journalist and the door, 85mm for the face in the blue TV glow.
-Grammar: the room is lit by its own shelves — amber bottles, the blue flicker of a CRT, one door light behind the counter. The camera never moves; the whole scene is watched from where a customer would stand. Two suppressed shots happen off the centre of frame, and the film never shows them happen.
+Grammar: the room is lit by its own shelves — amber bottles, the blue flicker of a CRT, one door light behind the counter. The camera never moves; the whole scene is watched from where a customer would stand. Two suppressed shots happen off the centre of frame, and the film never shows them happen. Mara's cheap red enamel bird clip remains in her rain-flattened hair from the street, visible wherever framing allows.
 
 ---
 
@@ -34,7 +34,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 21-mara-bursts-in.jpg
-NOTE: She brings the street's weather in with her. Keep her soaked hair and jacket exactly as in scene 1 — this is the same night, minutes later.
+NOTE: She brings the street's weather in with her. Keep her soaked hair, small red enamel bird clip and jacket exactly as in scene 1 — this is the same night, minutes later.
 
 22. MEDIUM — 50mm, static, eye level — the journalist looks, then away.
 He glances up, startled, then away. Not his business.
@@ -97,7 +97,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 11
 IMAGE: 28-the-blue-glow.jpg
-NOTE: The hand flat on the bottles is the performance. Every light in the frame is a practical: the TV is blue, the bottles are amber, and she is in the middle of them.
+NOTE: The hand flat on the bottles is the performance. Every light in the frame is a practical: the TV is blue, the bottles are amber, and she is in the middle of them. Keep the small red bird clip in her soaked hair, catching only the faintest practical highlight.
 
 ---
 

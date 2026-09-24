@@ -66,8 +66,9 @@ listed at the foot of its scene's board, and every frame's notes name the pass i
 ## Continuity
 
 - **Mara Voss (24)** and **Vera Voss (29)** are both American — blonde, pale blue eyes, sisters who
-  can be told apart at a glance. Sheets: `sheets/mara.jpg`, `sheets/vera.jpg`; the face crops
-  (`sheets/mara-face.jpg`, `sheets/vera-face.jpg`) are attached to every generation they appear in.
+  can be told apart at a glance. Mara's soaked-flat hair is held back by a cheap enamel clip shaped
+  like a small red bird; it stays in through the bar scene. Sheets: `sheets/mara.jpg`, `sheets/vera.jpg`;
+  the face crops (`sheets/mara-face.jpg`, `sheets/vera-face.jpg`) are attached to every generation they appear in.
 - **The Young Officer (20s)** has a canonical sheet and face crop in `sheets/young-officer.jpg` and
   `sheets/young-officer-face.jpg`: neat black hair, navy police uniform, ordinary polite face. Keep
   his appearance fixed across the front-counter shots.

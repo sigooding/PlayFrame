@@ -25,7 +25,7 @@ export const grammar =
   "Tokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.";
 
 const cast = [
-  ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
+  ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird; arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
   ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter.", ["Careful", "Steady", "Alone"], "sand", "vera"],
   ["jack", "Jack Voss", "The photograph", "40s, twenty years ago", "American. The girls' father, and the only warm-coloured thing in Vera's apartment: a rumpled suit, both daughters' hands in his, a smile, a noodle-shop sign behind them. Twenty years ago, in a frame on a shelf. He appears nowhere else in the opening and is never spoken about.", ["Warm", "In one frame only"], "clay", undefined],
   ["old-man", "The Old Man", "Cold open", "70s", "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.", ["Hunted", "Resigned", "Deliberate"], "sand", undefined],
@@ -309,7 +309,7 @@ export const brainstorm = [
   },
   {
     id: "neonoire-brain-4", x: 620, y: 190, title: "Mara, running",
-    content: "Twenty-four, American, soaked flat, no umbrella, arms folded, halting Japanese. She declines a call, chooses not to run when every instinct says to, and takes the key anyway.",
+    content: "Twenty-four, American, soaked flat, a cheap enamel red-bird clip holding her hair back, no umbrella, arms folded, halting Japanese. She declines a call, chooses not to run when every instinct says to, and takes the key anyway.",
     color: "sage", tags: ["Character", "Act one"], connections: ["neonoire-brain-1"], createdAt,
   },
   {

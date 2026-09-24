@@ -5,7 +5,7 @@
 Scene: EXT. BACKSTREET, KANDA — NIGHT (cold open, before the titles)
 Cast: MARA VOSS (24, American), THE OLD MAN (70s, unnamed), THE MASKED MEN (two, unnamed, masks)
 Lens plan: 24mm for the street and the killing, 35mm for Mara moving, 50mm for covers, 85mm for the phone, the doorway and the key. Nothing longer — the camera stays where a passer-by could stand.
-Grammar: wide and patient. The city lights the scene, not the sky: sodium orange against sick fluorescent green, soft halation, blacks slightly crushed. Cold, steady, patient rain — never glamorous, never a storm. The camera keeps operating after the violence as though the subject has merely walked out of frame. Close-ups are rare, so they count. Nothing is explained.
+Grammar: wide and patient. The city lights the scene, not the sky: sodium orange against sick fluorescent green, soft halation, blacks slightly crushed. Cold, steady, patient rain — never glamorous, never a storm. The camera keeps operating after the violence as though the subject has merely walked out of frame. Close-ups are rare, so they count. Nothing is explained. Mara's hair is held back by a cheap enamel clip shaped like a small red bird; it stays pinned through the bar scene.
 
 ---
 
@@ -28,13 +28,13 @@ IMAGE: 02-vending.jpg
 NOTE: This is the sound of the film's opening and its recurring return. Leave room in the frame for the hum — no people, no traffic, no music.
 
 3. MEDIUM WIDE — 35mm, tracking, eye level — EXT. BACKSTREET, KANDA.
-MARA VOSS walks fast, crossing the frame, arms folded, no umbrella, hair soaked flat. She has been crying, or she is about to. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond.
-SCRIPT: "MARA VOSS (24), American, walks fast, arms folded, no umbrella. Hair soaked flat. She has been crying, or she is about to."
+MARA VOSS walks fast, crossing the frame, arms folded, no umbrella. Her hair is soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond.
+SCRIPT: "MARA VOSS (24), American, walks fast, arms folded, no umbrella. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 9
 IMAGE: 03-mara-walks.jpg
-NOTE: Track with her at her own pace and keep the wide framing — she is inside the city, not apart from it. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace.
+NOTE: Track with her at her own pace and keep the wide framing — she is inside the city, not apart from it. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace. Keep the small red enamel bird clip pinned in her soaked hair, visible wherever the framing allows.
 
 4. CLOSE-UP — 85mm, static, eye level — Mara's phone.
 Her phone buzzes; the screen shows the caller, too small and softly blurred to read. Rain on the glass and on her hands. She looks at it. Lets it ring.
