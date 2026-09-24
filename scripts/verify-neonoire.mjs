@@ -8,7 +8,7 @@
 // the cast links are reciprocal, and the prompt studio and CSV export handle the project.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { build } from "esbuild";
@@ -43,9 +43,13 @@ assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 7);
 assert.equal(project.frames.length, 65);
 assert.equal(project.characters.length, 8);
+assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
+assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
+assert(project.frames.every(frame => frame.lens), "Every frame declares a lens");
 assert.equal(project.notes.length, 6);
 assert.equal(project.brainstorm.length, 6);
-assert.equal(project.moodboards.length, 5);
+assert(project.moodboards.length >= 3 && project.moodboards.length <= 5, "The boards carried are the ones with keyframes on them");
+for (const board of project.moodboards) assert(board.items.length > 0, `An empty mood board is a dead card: ${board.title}`);
 assert(project.scenes.every(scene => scene.actId === project.acts[0].id), "Every scene belongs to the opening act");
 assert.equal(new Set(project.frames.map(frame => frame.id)).size, 65, "Frame ids are unique");
 assert.equal(new Set(project.frames.map(frame => `${frame.sceneId}/${frame.title}`)).size, 65, "No two shots in a scene share a title");
@@ -162,5 +166,56 @@ const imported = sanitizeImport(project);
 assert.equal(imported.frames.length, 65);
 assert.equal(imported.scenes.length, 7);
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
+
+// ---------------------------------------------------------------- persistence
+// Real service calls against an isolated local adapter file, never the user's workspace.
+const services = join(cache, "services.cjs");
+await build({
+  stdin: { contents: 'export * from "./src/lib/projects"; export { sanitizeImport } from "./src/lib/validation";', resolveDir: root },
+  outfile: services, bundle: true, platform: "node", format: "cjs", packages: "external", tsconfig: join(root, "tsconfig.json"), logLevel: "warning",
+});
+const databaseFile = join(cache, "isolated-neonoire.json");
+writeFileSync(databaseFile, "[]");
+try {
+  execFileSync(process.execPath, ["-e", `
+    const assert = require('node:assert/strict');
+    const api = require(${JSON.stringify(services)});
+    (async () => {
+      const id = ${JSON.stringify(project.id)};
+      assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
+      const opened = await api.openNeonoireProject();
+      assert.equal(opened.frames.length, 65);
+      assert.equal(opened.scenes.length, 7);
+      const studied = opened.frames.filter(f => f.image).length;
+      assert(studied > 0, 'The bundled keyframes arrive with the workspace');
+
+      // A writer's edit survives, and re-opening never duplicates.
+      const frame = opened.frames[0];
+      await api.updateProject(id, { title: 'NEONOIRE — my pass', frames: opened.frames.map(f => f.id === frame.id ? { ...f, title: 'My own title', status: 'Ready' } : f) });
+      const again = await api.openNeonoireProject();
+      assert.equal(again.title, 'NEONOIRE — my pass');
+      assert.equal(again.frames.find(f => f.id === frame.id).title, 'My own title', 'An edited frame is never overwritten');
+      assert.equal((await api.listProjects()).length, 5, 'Opening repeatedly must not duplicate');
+
+      // A slot still waiting for its keyframe is filled in when the pass lands, and nothing else is.
+      const awaiting = again.frames.find(f => !f.image);
+      if (awaiting) {
+        const filled = (await api.openNeonoireProject()).frames.find(f => f.id === awaiting.id);
+        assert(!filled.image && filled.title.endsWith('(keyframe missing)'), 'A slot with no keyframe in the bundle stays a labelled placeholder');
+      }
+      const emptied = { ...again.frames.find(f => f.image), image: '', title: 'The key (keyframe missing)', notes: 'KEYFRAME MISSING — waiting for pass 2.', status: 'Needs review' };
+      await api.updateProject(id, { frames: again.frames.map(f => f.id === emptied.id ? emptied : f) });
+      const refilled = (await api.openNeonoireProject()).frames.find(f => f.id === emptied.id);
+      assert(refilled.image, 'A placeholder whose keyframe has since arrived is filled in on the next open');
+      assert(!refilled.title.includes('keyframe missing'), 'The filled-in frame loses its placeholder title');
+
+      await api.deleteProject(id);
+      assert.equal((await api.listProjects()).length, 4, 'Ordinary page loads respect deletion');
+      await api.openNeonoireProject();
+      assert.equal((await api.listProjects()).length, 5, 'Opening it again is deliberate');
+    })().catch(error => { console.error(error); process.exit(1); });
+  `], { cwd: root, env: { ...process.env, DATABASE_URL: "", NODE_ENV: "test", FRAME_LOCAL_DB_FILE: databaseFile }, stdio: "inherit", timeout: 30000 });
+} finally { rmSync(databaseFile, { force: true }); }
+pass("fresh/existing local workspaces: seeded once, edits preserved, keyframe passes filled in, deletion respected");
 
 console.log("\nAll NEONOIRE checks passed.");

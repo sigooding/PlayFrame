@@ -47,6 +47,18 @@ mood board in the workspace.
 | 8 | `08-ozu-cutaway.jpg` | Still life, no people: a single woman's shoe lying in a puddle on an empty rainy street, a vending machine glowing beyond it, a bicycle chained to a pole with rain dripping from the seat. Low camera, static, quiet. |
 | 9 | `09-the-roadside-inn.jpg` | A faded Showa-era roadside inn at night in the countryside, tin roof, a beer vending machine by the entrance, a pink public payphone visible through the lobby glass. Four black sedans parked in the rain with headlights on, masked men in black standing still. Seen from an upstairs window through a curtain gap. |
 
+## How the prompts are used
+
+The style block is not pasted into each shot by hand. It is the project's own look:
+
+- every scene and every frame in the bundle carries the style id `neonoire`, so the **prompt studio**
+  (Storyboard → Prompts, or any frame's AI-prompt tab) writes the block and its negative prompt into
+  every prompt it generates, for all thirty-one styles' worth of models — video and image alike;
+- the board's own grammar (shot type, lens, angle, movement, lighting, cast, the draft's words) is
+  added on top, so a frame's prompt is the brief plus that shot's direction;
+- the negative prompt is attached to the `neonoire` style, which means it travels with any style the
+  app renders for this project rather than living in a chat window.
+
 ## How the keys relate to the numbered board
 
 The nine keys are the look; the 65 numbered shots are the film. Where they overlap, the board wins

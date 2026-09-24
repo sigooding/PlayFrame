@@ -79,7 +79,7 @@ const frames = shots.map(shot => {
     angle: shot.angle,
     lens: shot.lens,
     lighting: shot.lighting,
-    style: "cinematic",
+    style: "neonoire",
     duration: shot.duration,
     durationIsEstimate: true,
     status: absent ? "Needs review" : "Draft",
@@ -150,7 +150,7 @@ const boardOf = (id, title, description, list) => ({
   items: list.map((item, i) => ({ id: `${id}-item-${i + 1}`, image: item.image, caption: item.caption })),
 });
 const framesOf = keys => frames.filter(frame => frame.image && keys.includes(frame.sceneId));
-const moodboards = [
+const allBoards = [
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, flat grey light inside, a bone-dry pale blue umbrella and one photograph that is the only warm colour in the film.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
@@ -173,6 +173,9 @@ const moodboards = [
     { image: "/images/neonoire/s1/01-backstreet.jpg", caption: "The backstreet itself: the vending machine, the wires, the rain, and nobody in frame." },
   ].filter(item => existsSync(resolve(root, `public${item.image}`)))),
 ];
+// A board is only carried once it has something on it: an empty board is a dead card in the app,
+// and the keyframes arrive pass by pass, so the missing boards appear as their shots are generated.
+const moodboards = allBoards.filter(board => board.items.length);
 
 // ---------------------------------------------------------------- the screenplay
 // The workspace's script is the whole draft with its seven scene-number markers removed, so each
@@ -194,7 +197,7 @@ const scenes = SCENES.map(scene => {
     id: scene.id, title: scene.title, location: scene.location, time: scene.time,
     description: scene.description, characters: [...new Set(own.flatMap(shot => shot.cast.map(name => characters.find(c => c.name === name).id)))],
     actId: ACT.id, partId: scene.partId, kind: scene.kind, lighting: scene.lighting,
-    lightingNotes: scene.lightingNotes, style: "cinematic",
+    lightingNotes: scene.lightingNotes, style: "neonoire",
   };
 });
 

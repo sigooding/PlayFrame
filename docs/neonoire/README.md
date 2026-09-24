@@ -11,7 +11,7 @@ two continuity sheets.
 | the draft (source of truth) | [`Neonoire_Opening.fountain`](../../Neonoire_Opening.fountain) at the repository root |
 | the screenplay tab, page by page | [`docs/neonoire/screenplay/`](screenplay) — the draft's own bytes under a production header |
 | the numbered shot boards | [`docs/neonoire/scenes/`](scenes) — framing, lens, cast, light, duration, keyframe filename and notes, per shot |
-| the keyframes | `public/images/neonoire/s1 … s7/` (16:9), continuity sheets in `public/images/neonoire/sheets/` |
+| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — all 2.39:1 anamorphic — plus continuity sheets in `public/images/neonoire/sheets/` |
 | the workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 
 ## Commands
@@ -39,6 +39,14 @@ keyframes on disk, which is what CI runs.
    working duration all come off the board; the app's own libraries are the only allowed values.
 5. **A missing keyframe is a placeholder, not a lie.** The card holds its slot, says
    `KEYFRAME MISSING`, names the file and the pass it belongs to, and is marked **Needs review**.
+
+## The look
+
+Every frame is generated with the studio brief in [`studio-brief.md`](studio-brief.md): the style
+block, the negative prompt, and the nine keys it produced. The same block is the `neonoire` entry in
+the app's visual-style library (**Neo-Noir Tokyo**), and every scene and frame in the bundle carries
+that style id — so the prompt studio writes the brief into any batch generated from this project
+without anyone having to paste it again.
 
 ## Passes
 
