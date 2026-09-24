@@ -1,6 +1,6 @@
 # NEONOIRE — keyframe pass 4
 
-10 shots still to generate: shots 31–40, from scene 3 (EXT. VERA'S APARTMENT BUILDING) and scene 4 (INT. VERA'S APARTMENT).
+8 shots still to generate: shots 33–40, from scene 4 (INT. VERA'S APARTMENT).
 
 **Before you start**
 
@@ -13,54 +13,6 @@
 - The film explains nothing. No captions, no readable signage invented for the plot, no reaction emphasis, no glamour.
 - British/American spelling is irrelevant here; **no text at all** unless the board quotes a super.
 - When the frame is on disk, run `npm run build:neonoire` and `npm run verify:neonoire` from the repository root. The builder will tell you if a file is missing or misnamed.
-
-### Shot 31 — The lit window
-
-**Scene 3 · EXT. VERA'S APARTMENT BUILDING — DUSK**
-
-- **File**: `public/images/neonoire/s3/31-the-lit-window.jpg` — write it exactly here, 31-the-lit-window.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Medium, 85mm, Static, Eye level. Lighting: Blue hour. Working duration 6s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/06-the-block.jpg` — none, the city carries the shot
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, neo-noir Tokyo at night that feels like a memory rather than a specific year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, old CRT televisions beside modern details, cold steady rain, wet black asphalt with long mirror reflections, lit almost entirely by practical sources — cold white vending machine glow, sodium-vapor orange streetlights, sickly fluorescent green from shop windows, no moonlight, wide patient composition with the figure small in the frame and lots of negative space, quiet, melancholic, nostalgic, restrained, lonely, ordinary city life hinted at in the background: one lit apartment window, laundry on a balcony, a distant train
-
-SUBJECT — One window on the third floor is lit. Rain-streaked glass, a curtain not quite closed, and the shape of a room behind it that the audience will not enter for another eight shots. The only warm light in the frame. Hold it — the audience has just come out of a bar at night in Kanda with a dead man in it.
-FRAMING — Medium, 85mm, Static, Eye level, lit by blue hour.
-DRAFT — the draft's own words for this shot: "One window on the third floor is lit."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Dusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.
-
----
-
-### Shot 32 — Laundry in the rain
-
-**Scene 3 · EXT. VERA'S APARTMENT BUILDING — DUSK**
-
-- **File**: `public/images/neonoire/s3/32-laundry-in-the-rain.jpg` — write it exactly here, 32-laundry-in-the-rain.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
-- **Framing**: Insert, 85mm, Static, Low angle. Lighting: Blue hour. Working duration 5s (not a locked time).
-- **Continuity references to attach**: `public/images/neonoire/keys/06-the-block.jpg` — none, the city carries the shot
-
-**Prompt**
-
-```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, neo-noir Tokyo at night that feels like a memory rather than a specific year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, old CRT televisions beside modern details, cold steady rain, wet black asphalt with long mirror reflections, lit almost entirely by practical sources — cold white vending machine glow, sodium-vapor orange streetlights, sickly fluorescent green from shop windows, no moonlight, wide patient composition with the figure small in the frame and lots of negative space, quiet, melancholic, nostalgic, restrained, lonely, ordinary city life hinted at in the background: one lit apartment window, laundry on a balcony, a distant train
-
-SUBJECT — Laundry left out on a balcony, getting rained on: a shirt, a towel, two pegs. It has been there since before the rain started. Nobody in this film is coming back for the washing. No movement in frame except the rain and, at the very end, the train's light crossing it.
-FRAMING — Insert, 85mm, Static, Low angle, lit by blue hour.
-DRAFT — the draft's own words for this shot: "Laundry left out on a balcony, getting rained on."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: Dusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.
-
----
 
 ### Shot 33 — The apartment
 
