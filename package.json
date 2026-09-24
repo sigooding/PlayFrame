@@ -16,6 +16,7 @@
     "verify:rapture:browser": "node scripts/verify-rapture-browser.mjs",
     "build:neonoire": "node scripts/neonoire/build-project.mjs",
     "split:neonoire": "node scripts/neonoire/split-opening.mjs",
+    "passes:neonoire": "node scripts/neonoire/pass-prompts.mjs",
     "verify:neonoire": "node scripts/verify-neonoire.mjs"
   },
   "dependencies": {

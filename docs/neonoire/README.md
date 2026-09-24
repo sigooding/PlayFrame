@@ -14,6 +14,14 @@ two continuity sheets.
 | the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — all 2.39:1 anamorphic — plus continuity sheets in `public/images/neonoire/sheets/` |
 | the workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 
+## Handing the keyframes on
+
+[`handoff.md`](handoff.md) is what another agent (or another person) needs to finish the board:
+what exists, what is missing, the look, the continuity rules, where the current frames fall short,
+and what must not be touched. [`passes/`](passes) holds a self-contained brief per pass — filenames,
+framing, cast sheets, a ready prompt and the negative prompt for every shot still to generate,
+regenerated from the board with `node scripts/neonoire/pass-prompts.mjs`.
+
 ## Commands
 
 ```bash
@@ -21,6 +29,7 @@ npm run split:neonoire      # rewrite the seven screenplay pages from the draft
 npm run build:neonoire      # rebuild the workspace bundle (also lists every keyframe still missing)
 npm run verify:neonoire     # offline: bundle in step, schema, screenplay map, lenses, CSV, prompts
 npm run check:assets        # every referenced picture and font is on disk
+node scripts/neonoire/pass-prompts.mjs   # rewrite the remaining-keyframe briefs in docs/neonoire/passes/
 ```
 
 `npm run build:neonoire -- --check` fails if the bundle has drifted from the draft, the boards or the

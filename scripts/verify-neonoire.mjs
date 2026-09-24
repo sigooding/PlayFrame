@@ -218,4 +218,26 @@ try {
 } finally { rmSync(databaseFile, { force: true }); }
 pass("fresh/existing local workspaces: seeded once, edits preserved, keyframe passes filled in, deletion respected");
 
+// ---------------------------------------------------------------- the remaining-keyframe briefs
+// docs/neonoire/passes/ is what an image agent works from, so it has to match the board exactly.
+execFileSync(process.execPath, ["scripts/neonoire/pass-prompts.mjs"], { cwd: root, stdio: "pipe" });
+const passIndex = join(root, "docs", "neonoire", "passes", "README.md");
+assert(existsSync(passIndex), "The pass index should exist: docs/neonoire/passes/README.md");
+const index = readFileSync(passIndex, "utf8");
+const awaiting = project.frames.filter(frame => !frame.image);
+assert(index.includes(`${onDisk.length} of ${project.frames.length} keyframes are on disk`), `The pass index should state ${onDisk.length}/${project.frames.length} keyframes on disk`);
+for (const frame of awaiting) {
+  const match = /(\d+)-([a-z0-9-]+)\.jpg$/.exec(frame.description) || /(\d+)/.exec(frame.id);
+  const n = Number(frame.id.replace(/\D/g, ""));
+  const passFile = join(root, "docs", "neonoire", "passes", `pass-${Math.ceil(n / 10)}.md`);
+  assert(existsSync(passFile), `Shot ${n} is still to generate but pass ${Math.ceil(n / 10)} has no brief`);
+  const brief = readFileSync(passFile, "utf8");
+  assert(brief.includes(`### Shot ${n} — `), `Pass ${Math.ceil(n / 10)} should carry a brief for shot ${n}`);
+  assert(brief.includes(`public/images/neonoire/`), `Shot ${n}'s brief should name the file to write`);
+}
+const passText = awaiting.map(frame => { const n = Number(frame.id.replace(/\D/g, "")); return readFileSync(join(root, "docs", "neonoire", "passes", `pass-${Math.ceil(n / 10)}.md`), "utf8"); }).join("\n");
+assert(passText.includes("35mm Kodak Vision3 500T"), "Every pass brief should carry the style block");
+assert(passText.includes("glossy cyberpunk"), "Every pass brief should carry the negative prompt");
+pass(`${awaiting.length} remaining shots have a self-contained pass brief, carrying the style block and the negative prompt`);
+
 console.log("\nAll NEONOIRE checks passed.");
