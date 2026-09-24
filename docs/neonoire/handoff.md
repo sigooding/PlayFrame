@@ -88,10 +88,11 @@ Do not rename, move or delete anything the board names. The filename *is* the sh
 
 ## 4. Continuity — the thing that breaks first
 
-- **Mara Voss (24)** — American. Long wavy ash-blonde hair, soaked flat for the whole opening, pale
-  blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin black cord
-  necklace. Sheet `sheets/mara.jpg`; face crop `sheets/mara-face.jpg`. **Attach the face crop to
-  every generation she is in.**
+- **Mara Voss (24)** — American. Long wavy ash-blonde hair, soaked flat for the whole opening and
+  held back by a cheap enamel clip shaped like a small red bird; the clip stays pinned through the
+  bar scene. Pale blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin
+  black cord necklace. Sheet `sheets/mara.jpg`; face crop `sheets/mara-face.jpg`. **Attach the face crop
+  to every generation she is in.**
 - **Vera Voss (29)** — American, her older sister, same blonde hair and blue eyes, told apart by
   shorter hair with a fringe, a charcoal wool coat, a cream high-neck knit, navy trousers and brown
   boots. She carries Mara's pale-blue umbrella: bone dry on the shelf, dripping on police linoleum.

@@ -37,7 +37,7 @@ const PASS_SIZE = 10;
 const board = SCENES.flatMap(scene => parseBoard(readBoard(root, scene), scene));
 const pending = board.filter(shot => !existsSync(resolve(root, `public${imagePath(shot.scene, shot)}`)));
 const sheets = new Map([
-  ["Mara Voss", "public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg)"],
+  ["Mara Voss", "public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg; keep the cheap enamel red-bird clip in her soaked hair wherever visible)"],
   ["Vera Voss", "public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)"],
   ["Jack Voss", "public/images/neonoire/sheets/vera.jpg  (he is in the photograph in scene 4; no sheet of his own yet)"],
   ["The Young Officer", "public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)"],
@@ -52,6 +52,9 @@ function shotBrief(shot) {
   const referenceKeys = KEYS[scene.key].map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
   const castLines = shot.cast.map(name => `- ${name} — ${sheets.get(name) || "no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)"}`);
   const note = shot.note.split("\n\n")[0];
+  const continuity = shot.cast.includes("Mara Voss")
+    ? "CONTINUITY — Mara's hair is soaked flat and held back by a cheap enamel clip shaped like a small red bird; it remains in place through the bar scene and stays visible wherever framing allows."
+    : "";
   return [
     `### Shot ${shot.n} — ${shot.title}`,
     "",
@@ -68,6 +71,7 @@ function shotBrief(shot) {
     styleBlock,
     "",
     `SUBJECT — ${shot.description} ${note}`,
+    continuity,
     `FRAMING — ${shot.shotType}, ${shot.lens}, ${shot.movement}, ${shot.angle}, lit by ${shot.lighting.toLowerCase()}.`,
     shot.script ? `DRAFT — the draft's own words for this shot: "${shot.script}"` : "DRAFT — no dialogue in this shot; it is carried by the frame and the sound.",
     "",
