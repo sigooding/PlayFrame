@@ -2,7 +2,7 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **83 scenes, 223 shots**: scenes 1–55 bar 47, plus 72–100. **All 223 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 46–55](passes/scenes-46-55.md) (shots 215–223), the escape's turn; **scene 47 boards next as shot 224** (moderation recipe in that ledger), then scenes 56–71 remain. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s47 ...`.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **93 scenes, 233 shots**: scenes 1–64 plus 72–100. **All 233 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scene 47 and scenes 56–64](passes/scenes-47-64.md) (shots 224–233), the key's answer; only **scenes 65–71** remain unboarded, next image **shot 234**, asset `s65/232`. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s65 ...`.
 
 ## Note to the next agent — how consistency is kept here
 
