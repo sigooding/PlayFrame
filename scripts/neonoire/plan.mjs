@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–92 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–96 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -41,6 +41,7 @@ const cast = [
   ["kurose", "Kurose", "Chairman, Kurose Development", "70s", "Japanese. Seventies, the chairman of Kurose Development, whose redevelopment model puts a fountain where the Hive stands. Silver hair combed back, a beautiful dark navy suit, the stillness of a man who has never had to hurry. His English is perfect and old-fashioned. Courteous and curious, he pours the tea himself. Good men are very expensive. No identity sheet yet: held to the scene 83 master.", ["Courteous", "Patient", "Ruthless"], "rose", undefined],
   ["kaneko", "Kaneko", "Noodle counter, the Hive", "70s", "Japanese. Seventies, tiny and sharp-eyed, grey hair in a small bun, a faded indigo apron over a brown cardigan. She runs the six-seat noodle counter in the Hive, hid Mara in her storeroom and then Jack, and brings Vera to see where Mara was. When the masked men come she pulls down the shutter, sends them up to the roof, and stays: I have lived here fifty years. No identity sheet yet: held to the scene 86 master.", ["Sharp", "Stubborn", "Protective"], "clay", undefined],
   ["radio-repairman", "The Radio Repairman", "The Hive", "70s", "Japanese. Seventies, thin, round glasses, a grey cardigan, a loupe pushed up on his forehead. He hears boots in the corridor, looks at the fuse box on his wall, and pulls the main switch, and the whole Hive goes dark. Unnamed; no identity sheet.", ["Watchful", "Quiet", "Decisive"], "sage", undefined],
+  ["young-detective", "The Young Detective", "Police", "20s", "Japanese. Late twenties, neat short black hair, white shirt and dark tie, sleeves rolled. The morning after Ishida gets into the black car, he clears Ishida's desk into a cardboard box and opens the bottom drawer: empty. Unnamed; no identity sheet.", ["Neat", "Incurious", "New"], "sand", undefined],
 ];
 
 export const characters = cast.map(([key, name, role, age, description, traits, color, sheet]) => ({
@@ -54,6 +55,7 @@ characters.find(c => c.id === characterId("harada")).image = "/images/neonoire/s
 characters.find(c => c.id === characterId("kurose")).image = "/images/neonoire/s83/110-very-expensive.jpg";
 characters.find(c => c.id === characterId("kaneko")).image = "/images/neonoire/s86/123-fifty-years.jpg";
 characters.find(c => c.id === characterId("radio-repairman")).image = "/images/neonoire/s87/124-the-repairman.jpg";
+characters.find(c => c.id === characterId("young-detective")).image = "/images/neonoire/s96/143-the-box.jpg";
 
 const link = (a, b, kind, note) => {
   characters.find(c => c.id === characterId(a)).relations.push({ id: `neonoire-link-${a}-${b}`, targetId: characterId(b), kind, note });
@@ -68,6 +70,7 @@ link("mara", "jack", "Ally", "He hides her in the Hive and carries a promise he 
 link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and the case divide them.");
 link("jack", "okada", "Ally", "He kept Sakai's cassette in his cash drawer, and hands it over without asking what happened.");
 link("harada", "journalist", "Colleague", "Her reporter, killed in Okada's bar; his photograph stays on her desk.");
+link("ishida", "kurose", "Ally", "Twenty years of doing everything he asked; it ends with a cup of tea in the back of a black car.");
 link("vera", "kurose", "Enemy", "Her father wrote his name on every page; she goes to his office to see his face.");
 link("kaneko", "jack", "Ally", "She hides him in her storeroom and sends him up to the roof while she stays.");
 link("kaneko", "mara", "Ally", "She hid Mara behind the curtain of her noodle counter.");
@@ -361,6 +364,46 @@ export const SCENES = [
     description: "Moments later. Down a steel maintenance ladder into an empty street, soaked. Behind them the Hive, every window lit again; sirens far off. Vera steps one step away. Is Kaneko -- The Hive looks after its own. Mara was safe here. Until us. BOARDED — 2 shots (137–138).",
     lightingNotes: "Hundreds of warm windows on the Hive, sodium streetlight, wet asphalt, distant siren glow.",
   },
+  {
+    key: "s93", id: "neonoire-s93", n: 93, partId: "neonoire-part-feature",
+    title: "He knows this car", location: "EXT. POLICE STATION", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. POLICE STATION - NIGHT #93#",
+    page: "n93-police-station-night.md", board: "n93-police-station-night.md",
+    cast: ["Detective Ishida"],
+    grammar: "35mm across the wet street, 50mm at the open door. Rain, no umbrella.",
+    description: "Night. Rain. Ishida comes down the front steps without an umbrella. At the kerb, a black sedan, engine running, wipers beating slowly. He stops; he knows this car. A long moment, then the rear door opens from inside. BOARDED — 2 shots (139–140).",
+    lightingNotes: "Sodium streetlight, the station's cold glass entrance and red lamp, then warm amber from the open car door.",
+  },
+  {
+    key: "s94", id: "neonoire-s94", n: 94, partId: "neonoire-part-feature",
+    title: "Only tea", location: "INT. BLACK SEDAN, BACK SEAT", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. BLACK SEDAN, BACK SEAT - CONTINUOUS #94#",
+    page: "n94-black-sedan-back-seat-continuous.md", board: "n94-black-sedan.md",
+    cast: ["Kurose", "Detective Ishida"],
+    grammar: "35mm two-shot from the front seat, 85mm on Ishida at the window, 50mm when he drinks. Kurose never looks at him.",
+    description: "Continuous. Warm amber, leather, the rain far away. Kurose pours tea from a steel flask: get in, you'll catch cold; it's only tea. I did everything you asked, for twenty years. That's why you understand. Tokyo slides past. Where are we going? No answer. Ishida understands, and drinks the tea. BOARDED — 3 shots (141–143).",
+    lightingNotes: "Warm amber interior light on cream leather; cold blue and sodium sliding past outside.",
+  },
+  {
+    key: "s95", id: "neonoire-s95", n: 95, partId: "neonoire-part-feature",
+    title: "Taillights", location: "EXT. TOKYO STREET", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. TOKYO STREET - CONTINUOUS #95#",
+    page: "n95-tokyo-street-continuous.md", board: "n95-tokyo-street.md",
+    cast: [],
+    grammar: "35mm, static and low, rhyming with shot 13.",
+    description: "Continuous. The black car recedes down a long wet road, its taillights smearing red, exactly like the car in the first scene of the film. It turns a corner. Gone. BOARDED — 1 shot (144).",
+    lightingNotes: "Sodium orange and sick fluorescent green, red taillight streaks on black asphalt.",
+  },
+  {
+    key: "s96", id: "neonoire-s96", n: 96, partId: "neonoire-part-feature",
+    title: "A minute fast", location: "INT. POLICE STATION, DETECTIVES' ROOM", time: "MORNING",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. POLICE STATION, DETECTIVES' ROOM - MORNING #96#",
+    page: "n96-police-station-detectives-room-morning.md", board: "n96-detectives-room-morning.md",
+    cast: ["The Young Detective"],
+    grammar: "24mm room, 50mm on the empty drawer, and scene 7's clock camera by day.",
+    description: "Morning. Grey daylight. A cardboard box on Ishida's desk; a young detective is clearing it. He opens the bottom drawer: empty. On the wall, the clock still runs a minute fast. BOARDED — 3 shots (145–147).",
+    lightingNotes: "Flat grey morning daylight through the windows at right, the green-white tubes half on.",
+  },
 ];
 
 /**
@@ -438,12 +481,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 138 numbered shots cover scenes 1–7 and 72–92; the other 72 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 147 numbered shots cover scenes 1–7 and 72–96; the other 68 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–92 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–96 are boarded; the rest are written, not yet boarded." },
   ],
 };
 

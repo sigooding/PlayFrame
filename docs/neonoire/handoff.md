@@ -2,9 +2,11 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **28 scenes, 138 shots**: scenes 1–7 and 72–92. **All 138 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **32 scenes, 147 shots**: scenes 1–7 and 72–96. **All 147 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
-**Latest session — [scenes 89–92 boarded](passes/scenes-89-92.md), the escape.** Nine shots (130–138) and ten calls, one of which fixed Jack's face in shot 138. There are four new locations: the stairwell, the roof (`s90/130-the-roof.jpg`), the walkway (`s91/132-the-rails-sing.jpg`) and the street below the viaduct (`s92/135-below-the-viaduct.jpg`). The next unboarded scene is **93**.
+**Latest session — [scenes 93–96 boarded](passes/scenes-93-96.md), Ishida's last night.** Nine shots (139–147), using ten calls; shot 140 was regenerated so the car door is open. The station exterior and the sedan's back seat are new locations. Scenes 95 and 96 rhyme with shots 13, 64 and 68. The young detective is a new card. The next unboarded scene is **97**.
+
+**Previous session — [scenes 89–92 boarded](passes/scenes-89-92.md), the escape.** Nine shots (130–138) and ten calls, one of which fixed Jack's face in shot 138. There are four new locations: the stairwell, the roof (`s90/130-the-roof.jpg`), the walkway (`s91/132-the-rails-sing.jpg`) and the street below the viaduct (`s92/135-below-the-viaduct.jpg`). Scene 93 followed in the next session.
 
 **Previous session — [scenes 85–88 boarded](passes/scenes-85-88.md), the raid on the Hive.** Nine shots (121–129), using ten calls because one generation failed to write and was retried. There are three new locations: the passages (master `s85/119-single-file.jpg`, reused dark in scene 88), Kaneko's counter (`s86/121-the-shutter.jpg`) and the radio repair shop (`s87/124-the-repairman.jpg`). Kaneko and the radio repairman are new cards without sheets. Scene 89 followed in the next session.
 
