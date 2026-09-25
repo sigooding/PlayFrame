@@ -58,10 +58,10 @@ validatePatch(project);
 assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 100, "The final screenplay's 100 numbered scenes all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 74, "Scenes 1–45 and 72–100 are boarded");
+assert.equal(boardedIds.size, 83, "Scenes 1–55 bar 47, and 72–100, are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 214;
+const EXPECTED_SHOTS = 223;
 assert.equal(project.frames.length, EXPECTED_SHOTS, "The sixty-five boarded scenes carry 205 numbered shots");
 assert.equal(project.characters.length, 18);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
@@ -437,6 +437,14 @@ for (const frame of innNights) assert.deepEqual(jpegDimensions(frame.image), [19
 assert(innNights.find(f => f.id === "neonoire-shot-212").notes.includes("steel blue"), "Shot 212 carries the cold");
 assert(innNights.find(f => f.id === "neonoire-shot-209").notes.includes("stair"), "Shot 209 keeps the inn stair in frame");
 pass("scenes 29–44 boarded: nine 16:9 shots — the widow, the beacon, the swollen window, the pink phone, the dark apartment, the eave, and the cold coming in");
+
+// The escape's turn: scenes 46–55 bar 47, whose yard master boards next turn as shot 224.
+const turn = project.frames.filter(f => ["s46", "s48", "s49", "s50", "s51", "s52", "s53", "s54", "s55"].map(k => `neonoire-${k}`).includes(f.sceneId));
+assert.deepEqual(turn.map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${215 + i}`));
+for (const frame of turn) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
+assert(turn.find(f => f.id === "neonoire-shot-218").notes.includes("drained dawn"), "Shot 218 carries the drained dawn of standing rule 2");
+assert(turn.find(f => f.id === "neonoire-shot-223").notes.includes("金子"), "Shot 223 locks the counter's kanji sign");
+pass("scenes 46–55 boarded: nine 16:9 shots — the pantry door, the cab, the eight, the drained dawn, the two men, the doorway, the pink water, the kiosk and the match");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
