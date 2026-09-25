@@ -47,4 +47,4 @@ Boards: [n98](../scenes/n98-rooftop.md), [n99](../scenes/n99-the-hive-day.md), [
 - **Look F has no sheet.** Make one before any further Look F coverage.
 - **No generation was left** this session.
 
-**The board has now reached the end of the film.** The scenes still unboarded are 8–71, and the carry-over caveats are listed above and in the [scene 97 ledger](scene-97.md).
+**The board has now reached the end of the film.** The scenes still unboarded were 8–71 (scenes 8–12 followed in the next session; see the [scenes 8–12 ledger](scenes-8-12.md)), and the carry-over caveats are listed above and in the [scene 97 ledger](scene-97.md).

@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–100 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–12 and 72–100 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -444,6 +444,56 @@ export const SCENES = [
     description: "A tiny counter in a brick railway arch under the old sign. Vera on the third stool, the red bird clip in her hair. The door opens; a man's shadow falls across the floor. Kaneko sets a second bowl in front of the fourth stool. She doesn't turn. BOARDED — 2 shots (160–161). Vera in costume Look F.",
     lightingNotes: "One warm bulb and steam in a brick vault, cool blue street light through the door.",
   },
+  {
+    key: "s8", id: "neonoire-s8", n: 8, partId: "neonoire-part-feature",
+    title: "We're closed", location: "INT. SMALL BAR, KANDA", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. SMALL BAR, KANDA - DAY #8#",
+    page: "n08-small-bar-kanda-day.md", board: "n08-small-bar-day.md",
+    cast: ["Okada", "Vera Voss"],
+    grammar: "35mm down the bar, 50mm on the umbrella.",
+    description: "The same bar in flat grey daylight: chairs up, the CRT dark, a new rubber mat where the journalist fell. Okada says Mara was never here, and his eyes go once to the far end of the counter. Vera leaves the blue umbrella against a stool. BOARDED — 2 shots (162–163), numbered in boarding order.",
+    lightingNotes: "Flat grey daylight through the street window, the bottle shelves dim.",
+  },
+  {
+    key: "s9", id: "neonoire-s9", n: 9, partId: "neonoire-part-feature",
+    title: "Behind the counter", location: "EXT. KANDA STREET", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Overcast soft", slugline: "EXT. KANDA STREET - CONTINUOUS #9#",
+    page: "n09-kanda-street-continuous.md", board: "n09-kanda-street-day.md",
+    cast: ["Vera Voss", "Okada"],
+    grammar: "35mm for the street, 85mm on the clip.",
+    description: "Rain. Okada runs after Vera with the umbrella and, in his other hand, the red bird clip: behind the counter, after. Not the police. Him. A card: JACK. INVESTIGATIONS. BOARDED — 2 shots (164–165).",
+    lightingNotes: "Grey rainy daylight on a narrow wet street.",
+  },
+  {
+    key: "s10", id: "neonoire-s10", n: 10, partId: "neonoire-part-feature",
+    title: "Depends who's calling", location: "INT. JACK'S OFFICE", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. JACK'S OFFICE - NIGHT #10#",
+    page: "n10-jack-s-office-night.md", board: "n10-jacks-office-night.md",
+    cast: ["Jack", "Vera Voss", "Daniel Voss"],
+    grammar: "24mm for the room, 50mm on the desk, 85mm on Jack and the photograph.",
+    description: "One room against the railway: a rice ball, a lighter with no cigarettes, a silent samurai film. Vera sets the red bird clip on the desk, and her family photograph slides out face up. Jack holds it by its edges like evidence. Ten thousand yen a day. BOARDED — 3 shots (166–168).",
+    lightingNotes: "The green desk lamp, grey CRT flicker, train light through the blinds.",
+  },
+  {
+    key: "s11", id: "neonoire-s11", n: 11, partId: "neonoire-part-feature",
+    title: "Two men laughing", location: "INT. JACK'S OFFICE", time: "LATER",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. JACK'S OFFICE - LATER #11#",
+    page: "n11-jack-s-office-later.md", board: "n11-jacks-office-later.md",
+    cast: ["Jack", "Daniel Voss"],
+    grammar: "85mm on the photograph.",
+    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you're too old to be haunted. BOARDED — 1 shot (169).",
+    lightingNotes: "Only the desk lamp and TV static.",
+  },
+  {
+    key: "s12", id: "neonoire-s12", n: 12, partId: "neonoire-part-feature",
+    title: "The strap", location: "EXT. BACKSTREET, KANDA", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. BACKSTREET, KANDA - NIGHT #12#",
+    page: "n12-backstreet-kanda-night.md", board: "n12-backstreet-night.md",
+    cast: ["Jack"],
+    grammar: "35mm from the cold open's own position.",
+    description: "The cold open's street, four days on. Jack stands where Mara stood, finds a torn strap at knee height, and hears from the barber that the car came back. Because they didn't find it. BOARDED — 1 shot (170).",
+    lightingNotes: "Sodium orange and fluorescent green, the vending machine's white light, steady rain.",
+  },
 ];
 
 /**
@@ -521,12 +571,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 161 numbered shots cover scenes 1–7 and 72–100; the other 64 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 170 numbered shots cover scenes 1–12 and 72–100; the other 59 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–100 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 8–12 and 72–100 are boarded; the rest are written, not yet boarded." },
   ],
 };
 
