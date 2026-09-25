@@ -1,11 +1,10 @@
 NEONOIRE
-OPENING — SCENE 73 — EXT. TOKYO STREETS
+SCREENPLAY — SCENE 73 — EXT. TOKYO STREETS
 
 EXT. TOKYO STREETS - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss.
-Grammar: The film's cold-open grammar, given to Vera instead of Mara: rain, wet black asphalt, practical light only, wide and patient, the figure small. But 
-she is not steady like Mara was — the camera keeps its distance while she comes apart. No music; rain, heels, breath, one crossing melody.
+Grammar: Tokyo Story in colour: low, level, static 50mm. Rain undoes makeup; right shoe lost, left shoe stays. No tracking or score.
 
 EXT. TOKYO STREETS - NIGHT #73#
 

@@ -23,7 +23,7 @@ import { apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
-import { streetsLook, streetsScenes } from "./streets-look.mjs";
+import { aftermathLook, streetsLook, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -49,8 +49,9 @@ const MOODS = {
   s5: "Institutional, polite, a decade out of step; a name arriving on a monitor.",
   s6: "Two people being careful with each other, in Japanese, over tea going cold.",
   s7: "An empty office, one decision already made, and a clock a minute fast.",
-  s73: "Rain, heels, the film's own cold-open grammar with Vera in it; one red shoe left standing in a puddle.",
-  s74: "Fourteen million people and none of them here: two small figures, a row of vending machines, and rain falling through their light.",
+  s72: "Tokyo Story in colour: still pretty, dry and carefully made-up; the room keeps playing while her world stops.",
+  s73: "A still camera, a woman who cannot be still: rain begins to undo her makeup, and one red shoe stays behind.",
+  s74: "Tokyo Story in colour: observe, do not console. Grief plays in the distance, then in a huge empty street.",
   s75: "Still frames with the people removed: the night's objects keep glowing after it is over.",
   s76: "A dark apartment, a dented steel lighter opening and closing, and crying without making a sound.",
 };
@@ -75,10 +76,11 @@ assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUN
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-const totalShots = 84;
-assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68 plus scenes 73–76's 16 — but carry ${shots.length}`);
+const totalShots = 86;
+assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68 plus scenes 72–76's 18 — but carry ${shots.length}`);
 shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..${totalShots} across the boarded scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
+assert.equal(shots.length, new Set(shots.map(shot => shot.id)).size, "Stable frame IDs must be unique when the board is reordered or expanded");
 const missing = shots.filter(shot => !existsSync(resolve(root, `public${imagePath(shot.scene, shot)}`)));
 // A frame whose study has not been generated yet is an honest placeholder, exactly as the series
 // workspace does it: it holds its slot and names the missing file instead of borrowing a neighbour.
@@ -89,7 +91,7 @@ const frames = shots.map(shot => {
   const path = imagePath(shot.scene, shot);
   const absent = missing.includes(shot);
   return {
-    id: `neonoire-shot-${String(shot.n).padStart(2, "0")}`,
+    id: shot.id,
     sceneId: shot.scene.id,
     title: `${shot.title}${absent ? " (keyframe missing)" : ""}`,
     description: shot.description,
@@ -109,7 +111,9 @@ const frames = shots.map(shot => {
     notes: [
       absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
-        : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
+        : streetsScenes.has(shot.scene.key)
+          ? "Image: AI-generated Tokyo Story colour revision, session one (25 September 2026). Nine new shot studies plus Jack's identity sheet used ten image-generation calls. Replaces the earlier image, never uses it as a reference. Production approval pending."
+          : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       ...(isColdOpenScene(shot.scene.key) ? [shot.n <= coldOpenCompletedThrough
         ? `Cold-open visual revision: ${coldOpenLook}`
         : `COLD OPEN REVISION PENDING — shot ${shot.n} retains its previous 2.39:1 image. Only shots 1–${coldOpenCompletedThrough} have been rebuilt in 16:9; follow scripts/neonoire/cold-open-look.mjs for the next batch. This legacy frame is not revised coverage.`] : []),
@@ -118,7 +122,8 @@ const frames = shots.map(shot => {
       ...(shot.scene.key === "s6" ? [`Visual revision (25 September 2026): ${interviewLook}`] : []),
       ...(shot.scene.key === "s4" ? [`Visual revision (25 September 2026): ${apartmentLook}`] : []),
       ...(shot.scene.key === "s5" ? [`Visual revision (25 September 2026): ${frontCounterLook}`] : []),
-      ...(streetsScenes.has(shot.scene.key) ? [`Scenes 73–76, the Tokyo streets — first boards of the film proper (25 September 2026): ${streetsLook}`] : []),
+      ...(streetsScenes.has(shot.scene.key) ? [`Scenes 72–75 — Tokyo Story in colour (25 September 2026): ${streetsLook}`] : []),
+      ...(shot.scene.key === "s76" ? [aftermathLook] : []),
       shot.note,
       shot.script ? `SCRIPT — the draft's own words for this shot:\n"${shot.script}"` : "SCRIPT — no dialogue; the shot is carried by the frame and the sound.",
       shot.scene.grammar,
@@ -144,7 +149,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; eleven of them are boarded — the opening seven (shots 1–68) and the Tokyo streets at the heart of the film proper, scenes 73–76 (shots 69–84) — 8 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
+    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; twelve of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86) — 9 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -159,7 +164,7 @@ const notes = [
   {
     id: "neonoire-continuity", title: "Continuity — the Voss family, and everyone else", color: "rose", createdAt,
     tags: ["Continuity", "Cast"], connections: [],
-    content: `**Mara Voss (24)** and **Vera Voss (29)** are both American, both blonde with pale blue eyes, and they must read as sisters while still being told apart at a glance: Mara's hair is longer, wavier and soaked flat for the whole opening, held back by a cheap enamel clip shaped like a small red bird; in the final screenplay the clip slides loose between the crates inside the bar (scene 2) and is gone from her hair from that beat on \u2014 and in the last scene of the film it is in Vera's hair at Kaneko's new counter. Vera's hair is shoulder length with a fringe and never wet — she is inside, or under cover, or has the umbrella.\n\nWardrobe is locked per sheet:\n- Mara: indigo denim jacket, heather-grey tee, black jeans, white trainers, black cord necklace, small studs and the cheap red-bird hair clip. Soaked from scene 1 until she is behind the bar counter.\n- Vera: charcoal wool coat over a cream high-neck knit, navy trousers, brown ankle boots, gold ring on the right hand, black strap watch. Carries Mara's pale blue umbrella — bone dry in the apartment, dripping on police linoleum.\n\nJack Voss, the girls' father, exists in this opening only inside one framed photograph on Vera's shelf: a rumpled suit, a smile, both daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty years ago, colours gone warm and faded. He is the only saturated warm colour in the film so far and he is never spoken about.\n\nThe men in masks are never given faces: eyes above the mask, gloved hands, wet black shoes. The old man and the journalist are unnamed on purpose. Detective Ishida and the young officer are the only police with faces, and the young officer's face changes after the monitor does.`,
+    content: `**Mara Voss (24)** and **Vera Voss (29)** are American sisters: ash-blonde hair, pale blue eyes, distinct faces locked to sheets/mara.jpg and sheets/vera.jpg and their face crops. Mara's longer wavy hair is soaked flat in the opening; her cheap red-bird clip slides loose between the crates in scene 2 and is gone from that beat on. The final scene gives the clip to Vera.\n\nVera's opening wardrobe is charcoal wool coat, cream knit, navy trousers and brown boots. In scenes 72–75 she wears her mother's wine-red silk dress, broad straps, modest cowl neckline and calf-length bias-cut skirt. Her makeup is pretty, carefully applied and INTACT in the hotel, with dry groomed hair. Only rain in scene 73 washes it into thin mascara trails and plasters her fringe. Both red court shoes remain until the skid: thereafter RIGHT foot bare, LEFT shoe on. No coat or umbrella on the street; the folded pale-blue umbrella stays by the hotel stool.\n\n**Jack (48)** is the private investigator and former police detective, not her father and never Jack Voss. The screenplay supplies no surname. His new Japanese visual casting design follows sheets/jack.jpg and jack-face.jpg: lean, angular, cool but tired, black hair with silver temples, stubble, a good badly kept charcoal overcoat over an off-white open-collar shirt. In the confrontation he is soaked, hands dark, no tie or weapon; he takes the blows and kneels apart after she pushes him away.\n\n**Daniel Voss (41, twenty years ago)** is the American father in the family photograph, identified by the scene 11 clipping. Daniel, not Jack, holds nine-year-old Vera's and four-year-old Mara's hands outside the noodle shop. The photograph asset itself is unchanged; the incorrect cast label and parent links are corrected.\n\nThe masked men never receive faces. The old man and journalist remain unnamed. Ishida and the young officer keep their existing sheets. Scene 75 has no people anywhere, including reflections.`,
   },
   {
     id: "neonoire-language", title: "Language — English, Japanese, and the subtitles", color: "sand", createdAt,
@@ -178,6 +183,11 @@ const notes = [
 
 \`convert FILE.jpg -resize \"1920x1080^\" -gravity center -extent 1920x1080 -quality 92 -strip FILE.jpg\``,
   },
+  {
+    id: "neonoire-tokyo-story-revision", title: "Scenes 72–75 — Tokyo Story in colour", color: "sage", createdAt,
+    tags: ["Revision", "Camera", "Continuity"], connections: [],
+    content: `25 September 2026. Ten image-generation calls: Jack's new identity sheet plus nine shot replacements/new studies. Completed board shots: 69, 70, 72, 74, 75, 76, 77, 79, 80. Six placeholders await replacement: 71 (hotel exit), 73 (machine pass), 78 (reflection), 81 (Hive), 82 (empty machine), 83 (CRT). Their superseded pictures are removed, not relabelled as finished.\n\n${streetsLook}\n\nThe call image is a chest-up reframe of its new generation, excluding an invented second counter; the face crop and review contact sheet are derivatives, not extra generations. Exact clock hands and the initial twenty-metre blocking remain production-review checks. The approach keyframe is closer than the initial stop. Scene 76 images remain unchanged.\n\nScene 72 adds two board positions. Existing shot IDs and asset filenames are stable; their older numeric prefixes are NOT their new displayed board positions. Scene 74 now plays approach, blow/collapse, aftermath wide, reflection, with a return to the wide for the train and late score. The screenplay itself is unchanged.`,
+  },
 ];
 
 // ---------------------------------------------------------------- mood boards
@@ -187,6 +197,7 @@ const boardOf = (id, title, description, list) => ({
 });
 const framesOf = keys => frames.filter(frame => frame.image && keys.includes(frame.sceneId));
 const allBoards = [
+  boardOf("neonoire-look-tokyo-story", "Tokyo Story in colour — scenes 72–75", "Nine new 16:9 draft studies: dry pretty makeup in the hotel, rain-washed grief, the distant confrontation and empty pillow shots. Six remaining shots are placeholders, not legacy pictures. Low level static cameras; one normal-lens face shot, then a withheld extreme wide.", framesOf(["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated revision study.` }))),
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, rain-grey glass and muted amber practical light inside the revised apartment, a bone-dry pale-blue umbrella and a faded warm family photograph.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
@@ -201,12 +212,14 @@ const allBoards = [
     { image: "/images/neonoire/keys/08-ozu-cutaway.jpg", caption: "8. Ozu-style cutaway — still life, no people: a shoe in a puddle." },
     { image: "/images/neonoire/keys/09-the-roadside-inn.jpg", caption: "9. The roadside inn — four sedans, masked men, seen from an upstairs window." },
   ].filter(item => existsSync(resolve(root, `public${item.image}`)))),
-  boardOf("neonoire-look-cast", "Continuity — Mara, Vera and Jack", "The two identity sheets every frame of the sisters is generated against, plus the face crops used as references. Any study that does not match these gets regenerated.", [
+  boardOf("neonoire-look-cast", "Continuity — Mara, Vera and Jack", "Canonical identities, including Jack's new 48-year-old former-detective design, distinct from Daniel Voss in the family photograph. Any study that does not match these is reviewed.", [
     { image: "/images/neonoire/sheets/mara.jpg", caption: "Mara Voss — wardrobe and continuity sheet: indigo denim jacket, grey tee, black jeans, black cord necklace." },
     { image: "/images/neonoire/sheets/vera.jpg", caption: "Vera Voss — wardrobe and continuity sheet: charcoal wool coat, cream high-neck knit, navy trousers, brown boots." },
     { image: "/images/neonoire/sheets/mara-face.jpg", caption: "Mara — the face crop attached as a reference to every shot she appears in." },
     { image: "/images/neonoire/sheets/vera-face.jpg", caption: "Vera — the face crop attached as a reference to every shot she appears in." },
-    { image: "/images/neonoire/s1/01-backstreet.jpg", caption: "The backstreet itself: the vending machine, the wires, the rain, and nobody in frame." },
+    { image: "/images/neonoire/sheets/jack.jpg", caption: "Jack (48) — new 16:9 identity sheet, charcoal overcoat, off-white open collar, black hair greying at the temples. Not Daniel Voss." },
+    { image: "/images/neonoire/sheets/jack-face.jpg", caption: "Jack — face crop of the same generation, attached to his confrontation studies." },
+    { image: "/images/neonoire/s4/35-the-photograph.jpg", caption: "Daniel Voss with Vera (9) and Mara (4), twenty years ago; this father is not Jack." },
   ].filter(item => existsSync(resolve(root, `public${item.image}`)))),
 ];
 // A board is only carried once it has something on it: an empty board is a dead card in the app,
@@ -242,7 +255,7 @@ const scenes = feature.map(scene => {
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in eleven of them \u2014 the opening seven (68 shots) and the Tokyo streets at the heart of the film proper, scenes 73\u201376 (shots 69\u201384) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in twelve of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
@@ -259,7 +272,7 @@ for (const c of characters) assert(c.description.length <= 700, `Shorten charact
 for (const board of moodboards) assert(board.items.length <= 40, `Mood board over 40 items: ${board.title}`);
 assert.equal(scenes.length, feature.length, `Every numbered scene of the final screenplay belongs to the workspace`);
 assert.equal(frames.length, totalShots);
-assert.equal(characters.length, 8);
+assert.equal(characters.length, 9);
 
 const output = resolve(root, "public", "projects", "neonoire-opening.json");
 const encoded = JSON.stringify(project, null, 2) + "\n";

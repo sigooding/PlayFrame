@@ -1,5 +1,5 @@
 NEONOIRE
-OPENING — SCENE 76 — INT. VERA'S APARTMENT
+SCREENPLAY — SCENE 76 — INT. VERA'S APARTMENT
 
 INT. VERA'S APARTMENT - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.

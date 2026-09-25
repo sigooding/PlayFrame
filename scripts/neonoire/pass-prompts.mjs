@@ -18,7 +18,7 @@ import { apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, isColdOpenScene } from "./cold-open-look.mjs";
-import { streetsLook, streetsScenes } from "./streets-look.mjs";
+import { aftermathLook, streetsLook, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -38,9 +38,11 @@ const KEYS = {
   s5: ["05-the-police-station.jpg"],
   s6: ["05-the-police-station.jpg"],
   s7: ["05-the-police-station.jpg"],
-  s73: ["07-the-rain-scene.jpg"],
-  s74: ["07-the-rain-scene.jpg", "08-ozu-cutaway.jpg"],
-  s75: ["08-ozu-cutaway.jpg"],
+  // The requested revision ignores old street images, including the legacy style keys.
+  s72: [],
+  s73: [],
+  s74: [],
+  s75: [],
   s76: ["04-veras-apartment.jpg"],
 };
 
@@ -50,7 +52,8 @@ const pending = board.filter(shot => !existsSync(resolve(root, `public${imagePat
 const sheets = new Map([
   ["Mara Voss", "public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg; keep the cheap enamel red-bird clip in her soaked hair wherever visible)"],
   ["Vera Voss", "public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)"],
-  ["Jack Voss", "public/images/neonoire/s4/35-the-photograph.jpg  (corrected family photograph; Jack in the centre)"],
+  ["Jack", "public/images/neonoire/sheets/jack.jpg  (face crop: jack-face.jpg; new 48-year-old former-detective design, not the father)"],
+  ["Daniel Voss", "public/images/neonoire/s4/35-the-photograph.jpg  (Daniel with his small daughters, twenty years ago, not Jack)"],
   ["The Young Officer", "public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)"],
   ["Detective Ishida", "public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)"],
 ]);
@@ -63,16 +66,18 @@ function shotBrief(shot) {
   const referenceKeys = KEYS[scene.key].map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
   if (scene.key === "s6") referenceKeys.push("public/images/neonoire/s6/51-the-interview-room.jpg", "public/images/neonoire/s6/56-three-days-ago.jpg");
   if (scene.key === "s7") referenceKeys.push("public/images/neonoire/s7/63-the-detectives-room.jpg", "public/images/neonoire/s7/64-the-bottom-drawer.jpg", "public/images/neonoire/s1/18-the-flashlight.jpg", "public/images/neonoire/s5/43-the-front-counter.jpg");
-  if (scene.key === "s73" || scene.key === "s74") referenceKeys.push("public/images/neonoire/s1/01-backstreet.jpg");
-  if (scene.key === "s75") referenceKeys.push("public/images/neonoire/s73/72-the-lost-heel.jpg", "public/images/neonoire/s74/73-two-small-figures.jpg");
+  if (scene.key === "s72") referenceKeys.push("public/images/neonoire/s72/69-the-wait.jpg");
+  if (scene.key === "s73") referenceKeys.push("public/images/neonoire/s72/69-the-wait.jpg", "public/images/neonoire/s73/70-not-elegantly-badly.jpg", "public/images/neonoire/s73/72-the-lost-heel.jpg");
+  if (scene.key === "s74") referenceKeys.push("public/images/neonoire/s74/74-twenty-metres-apart.jpg", "public/images/neonoire/s74/73-two-small-figures.jpg", "public/images/neonoire/s72/69-the-wait.jpg");
+  if (scene.key === "s75") referenceKeys.push("public/images/neonoire/s73/70-not-elegantly-badly.jpg", "public/images/neonoire/s73/72-the-lost-heel.jpg", "public/images/neonoire/s75/77-the-red-shoe.jpg", "public/images/neonoire/s72/69-the-wait.jpg");
   if (scene.key === "s76") referenceKeys.push("public/images/neonoire/s4/33-the-apartment.jpg");
   if (isColdOpenScene(scene.key)) referenceKeys.push("public/images/neonoire/s1/01-backstreet.jpg", "public/images/neonoire/s1/03-mara-walks.jpg", "public/images/neonoire/s1/07-old-man.jpg", "public/images/neonoire/s1/08-sedan-arrives.jpg");
   const castLines = shot.n === 35
-    ? ["- Jack Voss, Vera (9), Mara (4) — public/images/neonoire/s4/35-the-photograph.jpg; use the childhood photograph, not adult wardrobe/hair references."]
+    ? ["- Daniel Voss, Vera (9), Mara (4) — public/images/neonoire/s4/35-the-photograph.jpg; use the childhood photograph, not adult wardrobe/hair references."]
     : shot.cast.map(name => `- ${name} — ${sheets.get(name) || "no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)"}`);
   const note = shot.note.split("\n\n")[0];
   const continuity = shot.cast.includes("Mara Voss") && scene.key !== "s4"
-    ? "CONTINUITY — Mara's hair is soaked flat and held back by a cheap enamel clip shaped like a small red bird; it remains in place through the bar scene and stays visible wherever framing allows."
+    ? "CONTINUITY — Mara's hair is soaked flat and held back by a cheap enamel clip shaped like a small red bird; in the final screenplay it slips loose between the crates inside the bar (scene 2), and is gone from that beat onward."
     : "";
   return [
     `### Shot ${shot.n} — ${shot.title}`,
@@ -80,6 +85,7 @@ function shotBrief(shot) {
     `**Scene ${scene.n} · ${scene.location} — ${scene.time}**`,
     "",
     `- **File**: \`${imagePath(scene, shot).replace(/^\//, "public/")}\` — write it exactly here, ${shot.image}, JPEG, ${frameFormat(scene)}, no embedded text or watermark.`,
+    `- **Stable frame ID**: \`${shot.id}\`; displayed board number ${shot.n}. Asset prefixes predate the added scene 72; do not derive the board order from filenames.`,
     `- **Framing**: ${shot.shotType}, ${shot.lens}, ${shot.movement}, ${shot.angle}. Lighting: ${shot.lighting}. Working duration ${shot.duration}s (not a locked time).`,
     `- **Continuity references to attach**: ${referenceKeys.map(k => "`" + k + "`").join(", ")}${castLines.length ? "" : " — none, the city carries the shot"}`,
     ...castLines,
@@ -93,6 +99,7 @@ function shotBrief(shot) {
     continuity,
     isColdOpenScene(scene.key) ? `CONTINUITY — ${coldOpenLook}` : "",
     streetsScenes.has(scene.key) ? `CONTINUITY — ${streetsLook}` : "",
+    scene.key === "s76" ? `CONTINUITY — ${aftermathLook}` : "",
     scene.key === "s7" ? `CONTINUITY — ${detectivesLook}` : "",
     scene.key === "s6" ? `CONTINUITY — ${interviewLook}` : "",
     scene.key === "s4" ? `CONTINUITY — ${apartmentLook}` : "",
@@ -139,7 +146,7 @@ const only = process.argv.includes("--pass") ? Number(process.argv[process.argv.
 const targets = only ? passes.filter(pass => pass === only) : passes;
 
 if (!targets.length) {
-  console.log(only ? `Pass ${only} has no shots left to generate.` : "Every keyframe in the opening is on disk — nothing to generate.");
+  console.log(only ? `Pass ${only} has no shots left to generate.` : "Every active keyframe is on disk — nothing missing (legacy revision status is separate).");
 } else if (wantsStdout) {
   console.log(passFile(targets[0]));
 } else {
@@ -167,16 +174,20 @@ if (!targets.length) {
       return `| ${pass} | ${shots[0].n}–${shots[shots.length - 1].n} | ${scenes} | [pass-${pass}.md](pass-${pass}.md) |`;
     }),
     "",
+    "The first Tokyo Story colour session used exactly ten generation calls: Jack plus nine shot images. Six replacement shots remain; read [the revision handoff](tokyo-streets-revision.md). Older pass files 3–7 are historical, not a request to regenerate finished images. Cold-open shots 11–28 and scene 3 separately remain legacy 2.39:1 studies pending their own revision; see [cold-open-revision.md](cold-open-revision.md).",
+    "",
     "## The cast sheets, and what must not drift",
     "",
     "- **Mara Voss (24)** — American, long wavy ash-blonde hair (soaked flat for the whole opening), pale blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin black cord necklace. Sheet: `public/images/neonoire/sheets/mara.jpg`, face crop `mara-face.jpg`.",
     "- **Vera Voss (29)** — American, shoulder-length ash-blonde hair with a soft fringe, pale blue eyes, charcoal wool coat over a cream high-neck knit, navy trousers, brown ankle boots. Sheet: `public/images/neonoire/sheets/vera.jpg`, face crop `vera-face.jpg`. She carries Mara's pale-blue umbrella, bone dry until the police station.",
-    "- **Jack Voss** — the girls' American father, in one framed photograph in scene 4 (rumpled suit, both daughters' hands in his, twenty years ago). No sheet of his own yet.",
+    "- **Jack (48)** — former police detective/private investigator, no surname in the screenplay. New Japanese casting design: angular tired handsome face, black hair with silver temples, stubble, charcoal coat, off-white open collar. Sheet: `public/images/neonoire/sheets/jack.jpg`; face crop: `jack-face.jpg`.",
+    "- **Daniel Voss (41, twenty years ago)** — the American father in `s4/35-the-photograph.jpg`. Father links belong to Daniel, not Jack.",
+    "- **Scenes 72–75:** [Tokyo Story colour revision](tokyo-streets-revision.md) overrides the old street studies and keys. Vera is pretty and dry in the hotel; mascara runs only in the rain. RIGHT shoe lost, LEFT shoe retained. All cameras static, low and level, not heroic upward angles.",
     "- Unnamed roles keep their faces out of it: the masked men (masks, shoes, gloved hands), the old man (plastic raincoat, seen mostly from behind or at a distance), the journalist (ordinary, forties, never a hero).",
     "",
     "## What good looks like",
     "",
-    "The studio keys in `public/images/neonoire/keys/` are the bar: rain reading as rain, practical light doing all the work, blacks crushed but never muddy, faces lit by the city rather than by a fill light, and the figure small in a patient frame. If a generation looks glossier, more saturated or more cyberpunk than those keys, it is wrong — drop \"neon\", add \"1990s, ordinary, worn, documentary realism\", and try again.",
+    "For scenes 72–75, use ONLY the new named masters and cast sheets, never the superseded street studies or style keys. Elsewhere, the studio keys in `public/images/neonoire/keys/` are the bar: rain reading as rain, practical light doing all the work, blacks crushed but never muddy, faces lit by the city rather than by a fill light, and the figure small in a patient frame. If a generation looks glossier, more saturated or more cyberpunk than those keys, it is wrong — drop \"neon\", add \"1990s, ordinary, worn, documentary realism\", and try again.",
     "",
   ].join("\n");
   writeFileSync(resolve(outDir, "README.md"), index);

@@ -4,7 +4,7 @@ export type ShotType = (typeof SHOT_TYPES)[number];
 export const CAMERA_MOVEMENTS = ["Static", "Pan", "Tilt", "Tracking", "Dolly in", "Dolly out", "Crane up", "Crane down", "Handheld", "Steadicam", "Orbit", "Zoom in", "Zoom out"] as const;
 export type CameraMovement = (typeof CAMERA_MOVEMENTS)[number];
 
-export const CAMERA_ANGLES = ["Eye level", "Low angle", "High angle", "Dutch angle", "Bird's eye", "Worm's eye"] as const;
+export const CAMERA_ANGLES = ["Eye level", "Low, level", "Low angle", "High angle", "Dutch angle", "Bird's eye", "Worm's eye"] as const;
 export type CameraAngle = (typeof CAMERA_ANGLES)[number];
 
 export const TRANSITIONS = ["Cut", "Match cut", "Jump cut", "Smash cut", "Dissolve", "Fade in", "Fade out", "Wipe", "Whip pan", "J-cut", "L-cut"] as const;

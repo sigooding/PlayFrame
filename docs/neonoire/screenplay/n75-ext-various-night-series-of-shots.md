@@ -1,11 +1,10 @@
 NEONOIRE
-OPENING — SCENE 75 — INT./EXT. VARIOUS
+SCREENPLAY — SCENE 75 — INT./EXT. VARIOUS
 
 INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
-Cast: — (not boarded; the draft names its own cast).
-Grammar: Five still frames, no people — the film's Ozu grammar taken at its word: objects that were scenery during the night become the whole subject after it. 
-Every frame is locked off; nothing moves but rain, steam and static. Held long enough to read as grief, not as a trailer.
+Cast: — (no people).
+Grammar: Five static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. Then black.
 
 INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS #75#
 

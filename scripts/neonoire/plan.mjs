@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; the first seven are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–76 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -29,7 +29,8 @@ export const grammar =
 const cast = [
   ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird; arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
   ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter.", ["Careful", "Steady", "Alone"], "sand", "vera"],
-  ["jack", "Jack Voss", "The photograph", "40s, twenty years ago", "American. The girls' father, and the only warm-coloured thing in Vera's apartment: a rumpled suit, both daughters' hands in his, a smile, a noodle-shop sign behind them. Twenty years ago, in a frame on a shelf. He appears nowhere else in the opening and is never spoken about.", ["Warm", "In one frame only"], "clay", undefined],
+  ["jack", "Jack", "Private investigator / former detective", "48", "A Tokyo private investigator and former police detective; the screenplay gives no surname. Visual casting choice: Japanese, tall and lean, angular handsome tired face, hooded dark-brown eyes, swept-back black hair with silver temples, two-day stubble. Quietly cool, not an action hero. A good but badly kept charcoal knee-length overcoat, off-white open-collar shirt, black trousers and worn black shoes; no tie, hat or cigarette. In scene 74 he is soaked, hands dark and unwashed; he takes the blows and kneels apart after Vera rejects his touch. Not the sisters' father: that is Daniel Voss.", ["Understated", "Guarded", "Compromised"], "clay", "jack"],
+  ["daniel", "Daniel Voss", "The father / family photograph", "41, twenty years ago", "American insurance investigator, Vera and Mara's father. The scene 11 newspaper clipping identifies him as Daniel Voss, 41; the man in the warm faded photograph on Vera's shelf is Daniel, not Jack. A rumpled grey suit, a smile, both small daughters' hands in his and a Tokyo noodle-shop sign behind them, twenty years ago. Jack appears with him in a separate older photograph and was his friend, not a member of the Voss family.", ["Warm", "Principled", "Absent"], "sand", undefined],
   ["old-man", "The Old Man", "Cold open", "70s", "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.", ["Hunted", "Resigned", "Deliberate"], "sand", undefined],
   ["masked-men", "The Masked Men", "Cold open", "30s to 40s", "Two men in black clothes and plain masks who do not run. They touch earpieces and report positions: first position done, moving to second. Their work is ordinary to them, and the film never shows a face under the masks — only eyes, and shoes, and a torch beam finding a purse in a puddle.", ["Methodical", "Unhurried", "Bored"], "rose", undefined],
   ["journalist", "The Journalist", "Cold open", "40s", "An untouched beer, a closed notebook, a watched door — and one question asked off camera: where is he. He is killed four shots later and his notebook leaves with the men who did it. Unnamed in the opening; he speaks Japanese.", ["Waiting", "Private", "Unlucky"], "clay", undefined],
@@ -42,17 +43,23 @@ export const characters = cast.map(([key, name, role, age, description, traits, 
   ...(sheet ? { image: `/images/neonoire/sheets/${sheet}.jpg` } : {}),
   relations: [],
 }));
+characters.find(c => c.id === characterId("daniel")).image = "/images/neonoire/s4/35-the-photograph.jpg";
+
 const link = (a, b, kind, note) => {
   characters.find(c => c.id === characterId(a)).relations.push({ id: `neonoire-link-${a}-${b}`, targetId: characterId(b), kind, note });
-  characters.find(c => c.id === characterId(b)).relations.push({ id: `neonoire-link-${b}-${a}`, targetId: characterId(a), kind: kind === "Parent" ? "Child" : "Sibling", note });
+  characters.find(c => c.id === characterId(b)).relations.push({ id: `neonoire-link-${b}-${a}`, targetId: characterId(a), kind: ({ Parent: "Child", Child: "Parent" })[kind] || kind, note });
 };
 link("vera", "mara", "Sibling", "Three days of unanswered calls, and an umbrella left in a stand.");
-link("jack", "mara", "Parent", "The photograph on Vera's shelf: a Tokyo street twenty years ago.");
-link("jack", "vera", "Parent", "The photograph on Vera's shelf: a Tokyo street twenty years ago.");
+link("mara", "daniel", "Parent", "Daniel Voss is her father; the warm family photograph is twenty years old.");
+link("vera", "daniel", "Parent", "Daniel Voss is her father, identified by the scene 11 clipping, not Jack.");
+link("jack", "daniel", "Friend", "The investigator and the younger police detective at Kaneko's counter, twenty years ago.");
+link("vera", "jack", "Ally", "Client and investigator, drawn to each other; his silence makes the promised dinner a betrayal. Not family.");
+link("mara", "jack", "Ally", "He hides her in the Hive and carries a promise he cannot explain to Vera.");
+link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and the case divide them.");
 
 // ---------------------------------------------------------------------------------------------
 // The boarded scenes, in the draft's own running order — the opening seven, and the first
-// scenes of the film proper (the Tokyo streets, 73–76). Boarded metadata is hand-authored here;
+// scenes of the film proper (the hotel and Tokyo streets, 72–76). Boarded metadata is hand-authored here;
 // location, time and slugline are re-derived from the draft at build time and must match.
 // ---------------------------------------------------------------------------------------------
 
@@ -93,7 +100,7 @@ export const SCENES = [
     title: "Vera's apartment", location: "INT. VERA'S APARTMENT", time: "CONTINUOUS",
     kind: "Standard", lighting: "Overcast soft", slugline: "INT. VERA'S APARTMENT - CONTINUOUS #4#",
     page: "n04-vera-apartment.md", board: "n04-vera-apartment.md",
-    cast: ["Vera Voss", "Jack Voss", "Mara Voss"],
+    cast: ["Vera Voss", "Daniel Voss", "Mara Voss"],
     grammar: "Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.",
     description: "Continuous. Vera calls her sister and gets the recording: I'm not angry anymore, you left your umbrella, you'll get soaked, just call me. The television murmurs rain for the rest of the week, two cups sit on the table for one person and the photograph of Jack and his two small daughters holds the room — then she takes Mara's bone-dry blue umbrella and goes out. BOARDED — 10 shots.",
     lightingNotes: "Flat grey rain light from the window, the CRT's cold glow on the ceiling, one lamp. The framed photograph is the only saturated warm colour in the frame.",
@@ -129,24 +136,34 @@ export const SCENES = [
     lightingNotes: "Humming fluorescent rows, the desk lamp over the drawer, the radio's green dial. The evidence bag is lit plainly, like an exhibit.",
   },
   {
+    key: "s72", id: "neonoire-s72", n: 72, partId: "neonoire-part-feature",
+    title: "The call", location: "INT. HOTEL LOUNGE", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. HOTEL LOUNGE - NIGHT #72#",
+    page: "n72-hotel-lounge-night.md", board: "n72-hotel-lounge.md",
+    cast: ["Vera Voss"],
+    grammar: "Tokyo Story in colour: low, level, static 50mm. Vera pretty, dry and intact until rain. No push-in; piano plays; umbrella stays.",
+    description: "Late in the Showa hotel lounge, Vera waits in her mother's wine-red silk dress, groomed and dry with intact makeup. Ishida calls: Mara has died and Jack had been hiding her. The phone lowers. She walks out carefully, leaving the pale-blue umbrella at the next stool. BOARDED — 2 shots (69–70), both generated in the Tokyo Story colour revision.",
+    lightingNotes: "Amber table lamp and bottle-shelf practicals, muted olive walls, brass and walnut. Rain stays outside the window. No cold street light or wet makeup on Vera inside; no glamour fill or spotlight.",
+  },
+  {
     key: "s73", id: "neonoire-s73", n: 73, partId: "neonoire-part-feature",
     title: "Vera runs", location: "EXT. TOKYO STREETS", time: "NIGHT",
     kind: "Standard", lighting: "Practical night", slugline: "EXT. TOKYO STREETS - NIGHT #73#",
     page: "n73-tokyo-streets-night.md", board: "n73-tokyo-streets.md",
     cast: ["Vera Voss"],
-    grammar: "The film's cold-open grammar, given to Vera instead of Mara: rain, wet black asphalt, practical light only, wide and patient, the figure small. But she is not steady like Mara was — the camera keeps its distance while she comes apart. No music; rain, heels, breath, one crossing melody.",
-    description: "Night, after the hotel. Vera comes out into the rain and runs — badly, in heels, in the red dress, no coat, no umbrella — past a vending machine that glows, indifferent, through a crossing that chimes its old melody on red, until one heel skids off into a puddle and she runs on in one shoe. BOARDED — 4 shots (69–72); the first frames of the film proper.",
-    lightingNotes: "Hotel-door warm spill at her back, a vending machine's cold white on the wet street, sodium distance. The crossing signal's red is the only saturated note besides the dress.",
+    grammar: "Tokyo Story in colour: low, level, static 50mm. Rain undoes makeup; right shoe lost, left shoe stays. No tracking or score.",
+    description: "Vera leaves the hotel and runs badly through cold rain, no coat or umbrella, in a wine-red silk calf-length dress. Her hair plasters to her face and her carefully applied mascara begins to run. An ivory vending machine lights the street without caring. At the red crossing she loses her RIGHT red court shoe and continues with the LEFT shoe on. BOARDED — 4 shots (71–74); two replacements generated, two pending.",
+    lightingNotes: "Warm hotel doorway falls away; cold-white ivory vending machine, faint distant sodium amber and a small red crossing signal. Fine steady rain, black asphalt, muted olive shutters. No moonlight, sky fill, glossy neon or rain glamour.",
   },
   {
     key: "s74", id: "neonoire-s74", n: 74, partId: "neonoire-part-feature",
     title: "The empty street", location: "EXT. EMPTY STREET UNDER THE TRACKS", time: "NIGHT",
     kind: "Standard", lighting: "Practical night", slugline: "EXT. EMPTY STREET UNDER THE TRACKS - NIGHT #74#",
     page: "n74-empty-street-under-the-tracks-night.md", board: "n74-empty-street-under-the-tracks.md",
-    cast: ["Vera Voss", "Jack Voss"],
-    grammar: "The film's biggest street frame: a row of vending machines as the only light, the black road shining like water, the elevated railway crossing overhead, two small figures twenty metres apart. The violence is one desperate blow, not a scene; the breaking is a folding, not a scream. The reflection may carry a figure under a pale-blue umbrella and must never resolve. Then WIDE, then EXTREME WIDE, and the score enters only when the shot has held too long.",
-    description: "Continuous. On a long, empty street beside the elevated railway, Jack walks out of the dark from the direction of the Hive — soaked, his hands dark, unwashed — and stops under an awning. Vera stops twenty metres from him. She asks; he cannot answer; she hits his chest twice, then again, weaker, until her hands fall. She breaks — folds to her knees on the wet pavement — grabs his coat, realises whose it is, and pushes him away. In the black water beside her, a reflection of a street that is slightly different, and a figure with a pale-blue umbrella. BOARDED — 4 shots (73–76), including the film's one supernatural almost.",
-    lightingNotes: "The vending machines hum and light the whole scene, cold white through falling rain; a single sodium amber far down the street; train windows sliding past overhead. No sky light, no fill, no theatrical spot on the figures.",
+    cast: ["Vera Voss", "Jack"],
+    grammar: "Tokyo Story in colour: static 50mm; approach, blows, collapse, rejection. 35mm aftermath wide; ambiguous reflection. Late score.",
+    description: "Under the railway, Vera meets Jack, the 48-year-old former detective, not her father. His charcoal coat is soaked, hands dark and unwashed. She approaches, hits his chest, folds to her knees, briefly grasps his coat and pushes him away. She sits; he kneels a few feet apart, not touching. A reflection almost suggests a pale-blue umbrella. BOARDED — 4 shots (75–78), reordered to follow the dramatic action; three replacements generated, reflection pending.",
+    lightingNotes: "Same two cold ivory vending machines on the left, shallow corrugated awning on the right and grey shutters under riveted railway beams. Machine-white columns of steady rain, faint distant amber, a ribbon of train windows. No overhead film light, sky fill, monochrome grade or heroic rim light.",
   },
   {
     key: "s75", id: "neonoire-s75", n: 75, partId: "neonoire-part-feature",
@@ -154,9 +171,9 @@ export const SCENES = [
     kind: "Montage", lighting: "Practical night", slugline: "INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS #75#",
     page: "n75-ext-various-night-series-of-shots.md", board: "n75-still-frames.md",
     cast: [],
-    grammar: "Five still frames, no people — the film's Ozu grammar taken at its word: objects that were scenery during the night become the whole subject after it. Every frame is locked off; nothing moves but rain, steam and static. Held long enough to read as grief, not as a trailer.",
-    description: "Series of shots, after the street: a single red high-heeled shoe in a puddle; the hotel lounge, empty, chairs up, the pale-blue umbrella still leaning by the bar stool; the Hive at night with the noodle shop shutter down and its old sign faintly glowing; the vending machine, lit, waiting for no one; a shop-window television showing only static. Then CUT TO BLACK. BOARDED — 5 shots (77–81); nobody appears in any of them.",
-    lightingNotes: "Each still lit by its own practical: the machine's cold white, the sign's dim amber, the lounge's house-glow, the window's grey static. Rain dimpling the puddle is the only event.",
+    grammar: "Five static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. Then black.",
+    description: "Five still frames, no people: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static. BOARDED — 5 shots (79–83); shoe and lounge replaced, the final three pending. No black-and-white treatment and no early demolition.",
+    lightingNotes: "Each still keeps its own ordinary practical: machine-white puddle light, the lounge's one amber lamp, a dim old sign, the grey CRT. Muted natural colour, no spotlit product look; no person or reflected silhouette.",
   },
   {
     key: "s76", id: "neonoire-s76", n: 76, partId: "neonoire-part-feature",
@@ -165,7 +182,7 @@ export const SCENES = [
     page: "n76-vera-s-apartment-night.md", board: "n76-vera-apartment.md",
     cast: ["Vera Voss"],
     grammar: "The same room as scene 4, now dark: rain on the glass, one street-lit plane of the window, nothing switched on. The room's geography and the removed paper pendant stay as in the apartment revision. The lighter is the only object the scene owns; it must look handled, not precious.",
-    description: "Night, later. In the dark apartment, Vera sits on the floor with her back against the bed — still in the ruined red dress, mascara dried, one shoe — with her father's old steel lighter in her hand. She opens it, closes it, opens it. She should throw it away; she holds it against her chest instead, and bends over it, and cries without making a sound. She still loves him; she hates herself for it. BOARDED — 3 shots (82–84); the scene the opening's answerphone was pointed at.",
+    description: "Night, later. In the dark apartment, Vera sits on the floor with her back against the bed — still in the ruined red dress, mascara dried, one shoe — with Jack's old steel lighter in her hand. She opens it, closes it, opens it. She should throw it away; she holds it against her chest instead, and bends over it, and cries without making a sound. She still loves him; she hates herself for it. BOARDED — 3 shots (84–86), existing images unchanged; the scene the opening's answerphone was pointed at.",
     lightingNotes: "No practicals on: cold window light and the landing's spill under the door only. The lighter's small flame is the one warm note, briefly, and then the dark takes it back.",
   },
 ];
@@ -233,7 +250,7 @@ export function featureScenes(fountain) {
       page: `n${String(mark.n).padStart(2, "0")}-${pageSlug(bare)}.md`,
       board: null, cast: [],
       grammar: grammar,
-      description: `WRITTEN, NOT BOARDED — no numbered shot board yet. Scene ${mark.n} of the final screenplay; the Screenplay tab carries its page, and the board has only reached the opening. ${quote ? `The draft opens it: "${quote}".` : ""}`.trim(),
+      description: `WRITTEN, NOT BOARDED — no numbered shot board yet. Scene ${mark.n} of the final screenplay; the Screenplay tab carries its page, and the board covers selected scenes elsewhere. ${quote ? `The draft opens it: "${quote}".` : ""}`.trim(),
       lightingNotes: undefined,
     };
   });
@@ -245,12 +262,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the ninety-three scenes the board has not reached yet. 68 numbered shots cover scenes 1–7; the rest arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 86 numbered shots cover scenes 1–7 and 72–76; the other 88 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Written; not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–76 are boarded; the rest are written, not yet boarded." },
   ],
 };
 
@@ -286,11 +303,11 @@ export function pageHeader(scene) {
   const grammarLines = scene.grammar.match(/.{1,150}(\s|$)/g) || [scene.grammar];
   return [
     "NEONOIRE",
-    `${scene.boarded ? "OPENING" : "SCREENPLAY"} — SCENE ${scene.n} — ${scene.location}`,
+    `${scene.boarded && scene.n <= 7 ? "OPENING" : "SCREENPLAY"} — SCENE ${scene.n} — ${scene.location}`,
     "",
     `${scene.location} - ${scene.time}`,
     `Source: the final screenplay (${FOUNTAIN}, September 2026), reproduced verbatim below its own heading.${scene.boarded ? "" : " Written, not boarded: the numbered shot board covers the opening scenes only."}`,
-    `Cast: ${scene.cast.length ? scene.cast.join(", ") : "— (not boarded; the draft names its own cast)"}.`,
+    `Cast: ${scene.cast.length ? scene.cast.join(", ") : scene.boarded ? "— (no people)" : "— (not boarded; the draft names its own cast)"}.`,
     `Grammar: ${grammarLines.join("\n")}`,
     "",
   ].join("\n");
@@ -326,7 +343,7 @@ const MOVEMENT_TOKEN = {
   "steadicam": "Steadicam", "orbit": "Orbit", "zoom in": "Zoom in", "zoom out": "Zoom out",
 };
 const ANGLE_TOKEN = {
-  "eye level": "Eye level", "low angle": "Low angle", "high angle": "High angle",
+  "eye level": "Eye level", "low level": "Low, level", "low angle": "Low angle", "high angle": "High angle",
   "dutch angle": "Dutch angle", "bird's eye": "Bird's eye", "worm's eye": "Worm's eye",
 };
 const LENS_TOKEN = ["14mm", "24mm", "35mm", "50mm", "85mm", "135mm", "Anamorphic"];
@@ -346,7 +363,7 @@ export const shotTitle = image => {
  * in the app without its production direction travelling with it.
  */
 export function parseBoard(markdown, scene) {
-  const fields = ["SCRIPT", "CAST", "LIGHT", "TIME", "IMAGE", "NOTE"];
+  const fields = ["SCRIPT", "CAST", "LIGHT", "TIME", "IMAGE", "NOTE", "ID"];
   const shots = [];
   let current = null;
   const flush = () => {
@@ -359,7 +376,7 @@ export function parseBoard(markdown, scene) {
     const prose = current.prose.map(line => line.trim()).filter(Boolean);
     if (!prose.length) throw new Error(`Scene ${scene.n} shot ${current.n} has no description`);
     shots.push({
-      n: current.n, scene, shotType: current.shotType, lens: current.lens, movement: current.movement,
+      n: current.n, id: field("ID") || `neonoire-shot-${String(current.n).padStart(2, "0")}`, scene, shotType: current.shotType, lens: current.lens, movement: current.movement,
       angle: current.angle, image, title: shotTitle(image), duration,
       description: prose[0],
       script: field("SCRIPT").replace(/^"|"$/g, ""),

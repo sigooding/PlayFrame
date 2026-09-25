@@ -1,96 +1,56 @@
 # NEONOIRE — the final screenplay
 
-The final feature screenplay — **100 numbered scenes** — carried into Frame as an editable
-workspace, with eleven of them boarded as **84 numbered shots** — the opening seven (shots 1–68) and the film proper's centre, the Tokyo streets of scenes 73–76 (shots 69–84). The screenplay tab is
-the draft itself, one page per scene; keyframes are generated **ten at a time** against two
-continuity sheets, and **every image is 16:9 full-bleed (1920×1080)**.
+**100 screenplay scenes, 12 boarded scenes, 86 numbered shots.** Scenes 1–7 and 72–76 are boarded. The draft itself is unchanged and is carried page by page into Frame. The other 88 scenes are written, not boarded.
 
-## Where everything lives
+## Current image pass: Tokyo Story in colour
 
-| what | where |
+[Scenes 72–75 were re-directed and re-imaged on 25 September 2026](passes/tokyo-streets-revision.md):
+
+- **10 generations: Jack's new character sheet plus nine shot images** across the hotel, run, confrontation and empty still lifes.
+- **Six shots still need replacement.** Their old images have been removed; the board shows labelled empty **Needs review** slots, not stale images called finished.
+- All ten delivered masters are **16:9 full-bleed, 1920×1080 JPEG**. A face crop and review contact sheet are derivatives, not additional generation calls.
+- Low, **level**, static cameras; normal 50mm perspective, 35mm for the distant aftermath. *Tokyo Story* restraint in muted colour, not monochrome and not action coverage.
+- Vera is pretty, dry and carefully made-up in the hotel; **only the rain undoes her makeup**. The same wine-red silk dress continues through the sequence. After the skid her right foot is bare and left red shoe remains.
+- **Jack (48)** is the former detective/private investigator, with a new cool, worn-in Japanese casting design. The old “Jack Voss” entry was incorrect: **Daniel Voss** is the father in the photograph. [Jack's profile](characters/jack.md) records the distinction.
+
+[Review contact sheet](../../public/images/neonoire/reviews/tokyo-story-72-75-pass-1.jpg) · [Jack reference](../../public/images/neonoire/sheets/jack.jpg) · [remaining prompts](passes/README.md)
+
+## Where things live
+
+| Material | Location |
 | --- | --- |
-| the draft (source of truth) | [`Neonoire (3).fountain`](../../Neonoire%20(3).fountain) at the repository root — the final screenplay, 100 numbered scenes (`Neonoire_Opening.fountain` is kept only as the superseded opening extract) |
-| the screenplay tab, page by page | [`docs/neonoire/screenplay/`](screenplay) — the draft's own bytes under a production header, one page per numbered scene (n01–n100); every scene outside the eleven boarded ones is written, not boarded |
-| the numbered shot boards | [`docs/neonoire/scenes/`](scenes) — framing, lens, cast, light, duration, keyframe filename and notes, per shot; `n01–n07` cover the opening, `n73–n76` the streets boards of the film proper |
-| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` plus `s73 … s76/` — **the film's frame rule is 16:9 (1920×1080) for every image from the final screenplay onward**; shots 1–10, scenes 4–7 and the apartment/police-station keys are already revised, while cold-open shots 11–28 and scene 3 hold legacy 2.39:1 studies marked revision-pending — plus continuity sheets in `public/images/neonoire/sheets/` |
-| the workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
+| Source of truth | [`Neonoire (3).fountain`](../../Neonoire%20(3).fountain); the older opening extract is historical |
+| Screenplay pages | [`screenplay/`](screenplay/) — one per scene, draft text verbatim under production headers |
+| Shot boards | [`scenes/`](scenes/) — type, lens, angle, movement, duration estimate, cast, light, image and script quote |
+| Current street brief | `scripts/neonoire/streets-look.mjs` |
+| Images | `public/images/neonoire/s1 … s7/`, `s72 … s76/`, `sheets/`, `keys/` |
+| Workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
+| Next-agent handoff | [`handoff.md`](handoff.md), [revision ledger](passes/tokyo-streets-revision.md) |
 
-## Handing the keyframes on
+**80 of 86 shot images are active.** Of the existing opening images, shots 11–28 and scene 3 are still legacy 2.39:1 studies pending their separate 16:9 revision; see [cold-open-revision.md](passes/cold-open-revision.md). Scene 76 images are unchanged by the current pass. Neither group is claimed as freshly regenerated.
 
-[`handoff.md`](handoff.md) is what another agent (or another person) needs to finish the board:
-what exists, what is missing, the look, the continuity rules, where the current frames fall short,
-and what must not be touched. [`passes/`](passes) holds a self-contained brief per pass — filenames,
-framing, cast sheets, a ready prompt and the negative prompt for every shot still to generate,
-regenerated from the board with `node scripts/neonoire/pass-prompts.mjs`.
+## Opening the revision
+
+A fresh workspace seeds the current portable bundle. Open **Templates → NEONOIRE → Open the final screenplay**, or import the JSON above. Existing separately saved/edited projects are deliberately not overwritten automatically; import a separate revision copy if the project was opened before this revision. Subsequent new images still fill untouched missing-keyframe slots when reopening.
 
 ## Commands
 
 ```bash
-npm run split:neonoire      # rewrite the 100 screenplay pages from the draft
-npm run build:neonoire      # rebuild the workspace bundle (also lists every keyframe still missing)
-npm run verify:neonoire     # offline: bundle in step, schema, screenplay map, lenses, CSV, prompts
-npm run check:assets        # every referenced picture and font is on disk
-node scripts/neonoire/pass-prompts.mjs   # rewrite the remaining-keyframe briefs in docs/neonoire/passes/
+npm run split:neonoire         # regenerate screenplay pages, never retype the draft
+npm run build:neonoire         # regenerate the portable bundle; report missing slots
+npm run verify:neonoire        # screenplay, schema, cameras, image bytes, cast, prompts, CSV, persistence
+npm run check:assets
+node scripts/neonoire/build-project.mjs --check
+node scripts/neonoire/pass-prompts.mjs
 ```
 
-`npm run build:neonoire -- --check` fails if the bundle has drifted from the draft, the boards or the
-keyframes on disk, which is what CI runs.
+## Builder rules
 
-## The rules the builder enforces
+1. Page bodies rebuild the 100-scene fountain **byte for byte**. Only its ` #n#` markers are removed in the workspace script.
+2. Every `SCRIPT:` quote comes from the draft, whitespace aside.
+3. Every shot declares its type, lens, angle, movement, light, cast and positive working duration using the app's libraries. `Low, level` is different from a heroic upward low angle.
+4. A missing image is an empty, labelled **Needs review** slot, never a neighbour's picture.
+5. Displayed shot numbers run 1–86. Existing frame IDs and asset filenames remain stable when scene 72 is inserted; optional board `ID:` records that mapping. **Do not infer order from IDs or image prefixes.**
+6. All generated images are draft studies, not approved coverage. The cast sheets and new location masters are the references; earlier street studies are not.
 
-1. **The draft is the script.** The 100 pages must rebuild `Neonoire (3).fountain` byte for byte
-   once their headers are removed; a page is regenerated, never hand-edited.
-2. **The workspace script is the draft minus its scene markers.** ` #1#` … ` #100#` are the draft's own
-   numbering, and removing exactly those tokens is the only change the app makes to the text —
-   which is what lets each scene select its own slugline in the script. Every heading in the draft
-   must carry its marker, or the build fails rather than silently drop a scene.
-3. **Nothing is retyped.** Every frame's `SCRIPT:` quote has to be found in the draft, whitespace
-   aside. A quote that drifts is a build failure, not a typo.
-4. **Every frame declares its grammar.** Shot type, lens, camera angle, movement, lighting, cast and a
-   working duration all come off the board; the app's own libraries are the only allowed values.
-5. **A missing keyframe is a placeholder, not a lie.** The card holds its slot, says
-   `KEYFRAME MISSING`, names the file and the pass it belongs to, and is marked **Needs review**.
-
-## The look
-
-Every frame is generated with the `neonoire` style defined in [`src/lib/styles.ts`](../../src/lib/styles.ts):
-the style block and negative prompt are the app's **Neo-Noir Tokyo** visual library entry, while the
-nine generated keys live in `public/images/neonoire/keys/`. Every scene and frame in the bundle carries
-that style id, so the prompt studio writes the look into any batch generated from this project without
-anyone having to paste it again.
-
-## Passes
-
-Keyframes are generated ten at a time, in screenplay order, with the cast sheets attached as
-references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on: pass 7 is 61–70 (its last four shots are scene 73), pass 8 is 71–80 and pass 9 is 81–84. Each pass is
-listed at the foot of its scene's board, and every frame's notes name the pass it came from.
-
-## Cold-open revision status
-
-Shots **1–10 are revised**; shots **11–28 remain legacy 2.39:1 studies**, marked Needs review. Scene 3 (shots 29–32) carries the same label: from the final screenplay onward the whole film is 16:9, so those four frames are to be regenerated, not cropped. Continue from [the revision checklist](passes/cold-open-revision.md), not from the old on-disk images as if they were new masters.
-
-## Continuity
-
-- **Mara Voss (24)** and **Vera Voss (29)** are both American — blonde, pale blue eyes, sisters who
-  can be told apart at a glance. Mara's soaked-flat hair is held back by a cheap enamel clip shaped
-  like a small red bird; in the final screenplay it slides loose between the crates inside the bar
-  (scene 2) and is gone from that beat on — and it ends the film in Vera's hair at Kaneko's counter.
-  Sheets: `sheets/mara.jpg`, `sheets/vera.jpg`;
-  the face crops (`sheets/mara-face.jpg`, `sheets/vera-face.jpg`) are attached to every generation they appear in.
-- **The Young Officer (20s)** has a canonical sheet and face crop in `sheets/young-officer.jpg` and
-  `sheets/young-officer-face.jpg`: neat black hair, navy police uniform, ordinary polite face. Keep
-  his appearance fixed across the front-counter shots.
-- **Detective Ishida (50s)** has a canonical sheet and face crop in `sheets/ishida.jpg` and
-  `sheets/ishida-face.jpg`: short salt-and-pepper hair, lean build, charcoal suit, tired kindness.
-  Keep his appearance fixed across the interview and detectives' room shots.
-- **Jack Voss**, their father, exists only inside the framed photograph in scene 4.
-- The masked men never get faces. The old man and the journalist are unnamed on purpose.
-- Language: English between the sisters; everything marked *(in Japanese)* is spoken in Japanese and
-  subtitled. Mara's Japanese is halting, Vera's is fluent and formal, and Ishida offers English as a
-  courtesy that Vera refuses.
-
-## What this workspace is not
-
-The draft contains the opening scenes only. Everything after `CUT TO:` at the end of scene 7 —
-who the men are, what the key opens, what happened twenty years ago — is not in the film yet, and the
-workspace does not invent it.
+For detailed makeup, shoe, umbrella, camera and casting continuity, use the [revision handoff](passes/tokyo-streets-revision.md), not the older pass notes.
