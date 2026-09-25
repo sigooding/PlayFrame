@@ -99,6 +99,95 @@ assert(types.length >= 8, "The opening should use at least eight shot types");
 pass(`every shot carries a type, lens, angle, movement and light (${lenses.join(", ")}; ${types.length} types)`);
 pass(`${onDisk.length}/${project.frames.length} keyframes on disk, ${placeholders.length} honest placeholder cards holding their slots`);
 
+// Scenes 4–7's requested format is in the JPEG bytes, not just a cropped UI preview.
+function jpegDimensions(file) {
+  const bytes = readFileSync(join(root, "public", file));
+  assert.equal(bytes.readUInt16BE(0), 0xffd8, `${file} must be JPEG`);
+  for (let offset = 2; offset + 8 < bytes.length;) {
+    assert.equal(bytes[offset], 0xff, `${file}: invalid JPEG marker`);
+    const marker = bytes[offset + 1];
+    if ([0xc0, 0xc1, 0xc2].includes(marker)) {
+      return [bytes.readUInt16BE(offset + 7), bytes.readUInt16BE(offset + 5)];
+    }
+    const length = bytes.readUInt16BE(offset + 2);
+    assert(length >= 2, `${file}: invalid JPEG segment`);
+    offset += 2 + length;
+  }
+  throw new Error(`No JPEG dimensions in ${file}`);
+}
+const { coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
+assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
+const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId));
+assert.equal(coldOpen.length, 28);
+for (const frame of coldOpen) {
+  const n = Number(frame.id.replace("neonoire-shot-", ""));
+  assert(isColdOpenScene(frame.sceneId.replace("neonoire-", "")));
+  if (n <= coldOpenCompletedThrough) {
+    assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be revised 16:9`);
+    assert(!frame.notes.includes("COLD OPEN REVISION PENDING"));
+    for (const detail of ["Cold-open visual revision", "s1/01-backstreet.jpg", "s1/07-old-man.jpg", "s1/08-sedan-arrives.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "Strap intact through 16", "tag 87"]) {
+      assert(frame.notes.includes(detail), `${frame.title} lacks cold-open continuity: ${detail}`);
+    }
+  } else {
+    assert.deepEqual(jpegDimensions(frame.image), [1912, 800], `${frame.title}: legacy image must not masquerade as a revised frame`);
+    assert.equal(frame.status, "Needs review");
+    assert(frame.notes.includes("COLD OPEN REVISION PENDING"));
+    assert(!frame.notes.includes("Cold-open visual revision:"));
+  }
+}
+pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
+
+const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");
+assert.equal(frontCounter.length, 8);
+for (const frame of frontCounter) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must remain 16:9`);
+  for (const detail of ["police_station.png", "16:9", "pale-blue umbrella", "charcoal wool coat", "young-officer.jpg"]) {
+    assert(frame.notes.includes(detail), `${frame.title} is missing revised continuity: ${detail}`);
+  }
+}
+assert.deepEqual(jpegDimensions("/images/neonoire/keys/05-the-police-station.jpg"), [1920, 1080]);
+pass("all eight front-counter JPEGs and the station key are 1920×1080, with the revised continuity brief");
+
+const apartment = project.frames.filter(frame => frame.sceneId === "neonoire-s4");
+assert.equal(apartment.length, 10);
+for (const frame of apartment) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must remain 16:9`);
+  for (const detail of ["appartment.png", "photo.png", "NO paper pendant", "hanging cord", "pale-blue umbrella", "four-year-old Mara", "nine-year-old Vera", "smartphone stays face-up"]) {
+    assert(frame.notes.includes(detail), `${frame.title} is missing apartment continuity: ${detail}`);
+  }
+}
+assert.deepEqual(jpegDimensions("/images/neonoire/keys/04-veras-apartment.jpg"), [1920, 1080]);
+const { frameFormat } = await import("./neonoire/front-counter-look.mjs");
+assert(frameFormat({ key: "s1" }).startsWith("16:9"), "The cold open targets 16:9 even while legacy frames await revision");
+assert(frameFormat({ key: "s2" }).startsWith("16:9"));
+assert(frameFormat({ key: "s4" }).startsWith("16:9"));
+assert(frameFormat({ key: "s5" }).startsWith("16:9"));
+assert(frameFormat({ key: "s6" }).startsWith("16:9"));
+assert(frameFormat({ key: "s7" }).startsWith("16:9"));
+assert(frameFormat({ key: "s3" }).startsWith("2.39:1"), "Scene 3 retains its original framing");
+pass("all ten apartment JPEGs and their key are 1920×1080; pendant removal and prop/cast continuity are recorded");
+
+const interview = project.frames.filter(frame => frame.sceneId === "neonoire-s6");
+assert.equal(interview.length, 12);
+for (const frame of interview) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must remain 16:9`);
+  for (const detail of ["s6/51-the-interview-room.jpg", "s6/56-three-days-ago.jpg", "window sill", "sheets/ishida.jpg", "NO TIE", "pale-blue umbrella", "PAPER cup", "intact and the table dry through shot 59", "crushed cup and wet table"]) {
+    assert(frame.notes.includes(detail), `${frame.title} is missing interview continuity: ${detail}`);
+  }
+}
+assert(project.frames.find(frame => frame.id === "neonoire-shot-51").notes.includes("fluorescent is steady"));
+pass("all twelve interview JPEGs are 1920×1080; room, wardrobe, cup and spill continuity are recorded");
+
+const detectives = project.frames.filter(frame => frame.sceneId === "neonoire-s7");
+assert.equal(detectives.length, 6);
+for (const frame of detectives) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must remain 16:9`);
+  for (const detail of ["s7/63-the-detectives-room.jpg", "s7/64-the-bottom-drawer.jpg", "sheets/ishida.jpg", "NO TIE", "BOTTOM drawer", "SEALED transparent bag", "s1/18-the-flashlight.jpg", "evidence hidden", "s5/43-the-front-counter.jpg"]) {
+    assert(frame.notes.includes(detail), `${frame.title} is missing detectives-room continuity: ${detail}`);
+  }
+}
+pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, sealed evidence and clock references are recorded");
+
 // Passes are ten shots at a time, in screenplay order — the notes on every frame say which pass.
 for (const [i, frame] of project.frames.entries()) {
   assert(frame.notes.includes(`Shot ${i + 1} of 68`), `Shot ${i + 1} should say where it sits in the running order`);
@@ -241,7 +330,7 @@ if (awaiting.length) {
   assert(passText.includes("glossy cyberpunk"), "Every pass brief should carry the negative prompt");
   pass(`${awaiting.length} remaining shots have a self-contained pass brief, carrying the style block and the negative prompt`);
 } else {
-  pass("all 68 keyframes are on disk; no remaining pass brief is required");
+  pass("all 68 keyframes are on disk; cold-open revision status is checked separately above");
 }
 
 console.log("\nAll NEONOIRE checks passed.");

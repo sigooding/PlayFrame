@@ -7,6 +7,10 @@ Cast: VERA VOSS, THE YOUNG OFFICER (unnamed)
 Lens plan: 24mm for the counter and the fluorescent ceiling, 50mm for the two of them, 85mm for the monitor and her hands.
 Grammar: institutional green-white fluorescent with one tube flickering, and everything in the room a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese here: fluent, careful, slightly formal.
 
+## Visual revision — 25 September 2026
+
+All eight shots (43–50) are **16:9, 1920×1080, full-bleed**, replacing the earlier 2.39:1 studies. The location follows the station area of `police_station.png`, not its desktop surround. The revised master is `public/images/neonoire/keys/05-the-police-station.jpg`. Match Vera to `sheets/vera.jpg` (charcoal wool coat, cream high-neck knit, navy trousers, brown boots) and the young officer to `sheets/young-officer.jpg` (short side-parted black hair, navy uniform jacket, white shirt, black tie). The closed umbrella is **pale blue**, with a curved brown wooden handle. Maintain the glass-partition grid, counter, faded posters, clock, monitor/fax positions and green-white fluorescent grade. See `scripts/neonoire/front-counter-look.mjs` for the reusable brief. These remain AI-generated draft studies, not approved coverage.
+
 ---
 
 43. ESTABLISHING — 24mm, static, eye level — the front counter.
@@ -25,7 +29,7 @@ CAST: Vera Voss
 LIGHT: Practical night
 TIME: 9
 IMAGE: 44-dripping-umbrella.jpg
-NOTE: The umbrella she took from the stand in scene 4 is in every shot of the police station. It is the only thing she brought with her.
+NOTE: The umbrella she took from the stand in scene 4 stays with her throughout the police station; it is below the crop in close-ups and inserts. It is the only thing she brought with her.
 
 45. MEDIUM — 50mm, static, eye level — the young officer takes her details.
 Polite boredom. He asks for her sister's age; she says twenty-four, in careful, formal Japanese, learned as a child and relearned as an adult.

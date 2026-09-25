@@ -16,6 +16,12 @@ import {
   readFountain,
 } from "./plan.mjs";
 
+import { frontCounterLook } from "./front-counter-look.mjs";
+import { apartmentLook } from "./apartment-look.mjs";
+import { interviewLook } from "./interview-look.mjs";
+import { detectivesLook } from "./detectives-look.mjs";
+import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
 
@@ -35,7 +41,7 @@ const MOODS = {
   s1: "Wide, patient and wet; the city does the lighting, and the violence is ordinary.",
   s2: "Cold and quiet: the floor's-eye view, a laugh track, and a young woman understanding she is inside something.",
   s3: "Dusk going blue, laundry nobody is coming back for, one lit window.",
-  s4: "Grey, tidy, warm only inside a photograph; an apology left on an answering machine.",
+  s4: "Rain-grey glass, muted amber lamplight, two cups and an apology left on voicemail.",
   s5: "Institutional, polite, a decade out of step; a name arriving on a monitor.",
   s6: "Two people being careful with each other, in Japanese, over tea going cold.",
   s7: "An empty office, one decision already made, and a clock a minute fast.",
@@ -82,7 +88,7 @@ const frames = shots.map(shot => {
     style: "neonoire",
     duration: shot.duration,
     durationIsEstimate: true,
-    status: absent ? "Needs review" : "Draft",
+    status: absent || (isColdOpenScene(shot.scene.key) && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
     transition: shot.n === 1 ? "Fade in" : "Cut",
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
@@ -90,6 +96,13 @@ const frames = shots.map(shot => {
       absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of 68 until pass ${passOf(shot.n)} is generated.`
         : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
+      ...(isColdOpenScene(shot.scene.key) ? [shot.n <= coldOpenCompletedThrough
+        ? `Cold-open visual revision: ${coldOpenLook}`
+        : `COLD OPEN REVISION PENDING — shot ${shot.n} retains its previous 2.39:1 image. Only shots 1–${coldOpenCompletedThrough} have been rebuilt in 16:9; follow scripts/neonoire/cold-open-look.mjs for the next batch. This legacy frame is not revised coverage.`] : []),
+      ...(shot.scene.key === "s7" ? [`Visual revision (25 September 2026): ${detectivesLook}`] : []),
+      ...(shot.scene.key === "s6" ? [`Visual revision (25 September 2026): ${interviewLook}`] : []),
+      ...(shot.scene.key === "s4" ? [`Visual revision (25 September 2026): ${apartmentLook}`] : []),
+      ...(shot.scene.key === "s5" ? [`Visual revision (25 September 2026): ${frontCounterLook}`] : []),
       shot.note,
       shot.script ? `SCRIPT — the draft's own words for this shot:\n"${shot.script}"` : "SCRIPT — no dialogue; the shot is carried by the frame and the sound.",
       shot.scene.grammar,
@@ -152,14 +165,14 @@ const boardOf = (id, title, description, list) => ({
 const framesOf = keys => frames.filter(frame => frame.image && keys.includes(frame.sceneId));
 const allBoards = [
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
-  boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, flat grey light inside, a bone-dry pale blue umbrella and one photograph that is the only warm colour in the film.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
+  boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, rain-grey glass and muted amber practical light inside the revised apartment, a bone-dry pale-blue umbrella and a faded warm family photograph.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
-  boardOf("neonoire-look-style", "The style block — nine keys", "The studio brief's nine keys, generated at 2.39:1 from the look and negative prompt in src/lib/styles.ts, and the same block the app's Neo-Noir Tokyo style writes into every prompt batch.", [
+  boardOf("neonoire-look-style", "The style block — nine keys", "The studio brief's nine keys, with the revised apartment and police-station keys at 16:9 and the other keys at 2.39:1 from the look and negative prompt in src/lib/styles.ts, and the same block the app's Neo-Noir Tokyo style writes into every prompt batch.", [
     { image: "/images/neonoire/keys/01-the-doorway.jpg", caption: "1. The doorway — the key the film's own framing of scene 1 is measured against." },
     { image: "/images/neonoire/keys/02-the-key.jpg", caption: "2. The key — extreme close-up, hand only, number worn but legible." },
     { image: "/images/neonoire/keys/03-the-bar.jpg", caption: "3. The bar — the floor's-eye view: crate, counter underside, a man's shoes." },
-    { image: "/images/neonoire/keys/04-veras-apartment.jpg", caption: "4. Vera's apartment — two cups, one clean; the photograph; the dry blue umbrella." },
-    { image: "/images/neonoire/keys/05-the-police-station.jpg", caption: "5. The police station — one flickering tube and a dripping umbrella on lino." },
+    { image: "/images/neonoire/keys/04-veras-apartment.jpg", caption: "4. Vera's apartment — revised 16:9 master from appartment.png; no paper pendant, two cups, the corrected family photo and dry pale-blue umbrella." },
+    { image: "/images/neonoire/keys/05-the-police-station.jpg", caption: "5. The police station — revised 16:9 location/wardrobe master from police_station.png; Vera and the young officer match their sheets." },
     { image: "/images/neonoire/keys/06-the-block.jpg", caption: "6. The block — stacked balconies, laundry, a train very close overhead." },
     { image: "/images/neonoire/keys/07-the-rain-scene.jpg", caption: "7. The rain scene — extreme wide, the figures tiny, the city indifferent." },
     { image: "/images/neonoire/keys/08-ozu-cutaway.jpg", caption: "8. Ozu-style cutaway — still life, no people: a shoe in a puddle." },

@@ -63,7 +63,7 @@ typo check. The app fills a placeholder in automatically the next time the works
 ## 3. The look — non-negotiable
 
 The full style block and negative prompt are the **`neonoire` visual style inside the app**
-(`src/lib/styles.ts`), which is what every frame in the bundle carries. In short: 2.39:1 anamorphic, 35mm Kodak Vision3 500T, visible fine grain,
+(`src/lib/styles.ts`), which is what every frame in the bundle carries. In short: 2.39:1 anamorphic (except the revised 16:9 apartment/front-counter/interview/detectives scenes and the revised apartment/station keys), 35mm Kodak Vision3 500T, visible fine grain,
 halation around every practical light, crushed but never muddy blacks, muted desaturated palette,
 cold steady rain on black reflective asphalt, lit by vending machines, sodium streetlights and sick
 fluorescent green — **never by the sky**. Wide and patient, figure small, lots of negative space,
@@ -75,8 +75,7 @@ portrait, fashion pose, smiling, text, watermark, anime style.
 
 **If it comes out too cyberpunk:** drop "neon", add "1990s, ordinary, worn, documentary realism".
 
-Technical: JPEG, exactly **2.39:1** — the repo standard is 1912×800, and every frame currently on
-disk is that. Normalise with:
+Technical: JPEG. **Scenes 4–7 (shots 33–68) and the apartment/police-station keys are now 16:9, 1920×1080**, revised from `police_station.png` on 25 September 2026 with Vera and the young officer matched to their sheets. See `scenes/n05-front-counter.md` and `scripts/neonoire/front-counter-look.mjs`. The apartment uses `appartment.png` and `photo.png`; the paper pendant is removed completely, including cord/reflection. See `scenes/n04-vera-apartment.md` and `scripts/neonoire/apartment-look.mjs` for room, cup, phone, wardrobe and childhood-photo continuity. The interview room follows `s6/51-the-interview-room.jpg` and `s6/56-three-days-ago.jpg`, with the cup/spill states and tissue-box placement in `scripts/neonoire/interview-look.mjs`; shots 57 and 59 are reframings of their masters. The detectives’ room follows `scripts/neonoire/detectives-look.mjs`: Ishida keeps his open-collar suit, the evidence remains sealed inside the bottom drawer, and only that drawer opens before closing again. Cold-open shots 1–10 have also been rebuilt at 1920×1080; shots 11–28 remain older 2.39:1 studies marked Needs review, with a 16:9 target. Continue via `passes/cold-open-revision.md` and `scripts/neonoire/cold-open-look.mjs`. Do not recrop revised frames to scope. Other frames retain **2.39:1**, 1912×800. Normalise those other frames with:
 
 ```bash
 convert FILE.jpg -resize "1912x800^" -gravity center -extent 1912x800 -quality 92 -strip FILE.jpg
@@ -120,9 +119,8 @@ actor's face to fix a composition.
 
 Honest assessment, in the order worth fixing:
 
-1. **Shots 1–12 were generated in 16:9 and centre-cropped to 2.39:1.** Their compositions were
-   decided for a taller frame. They hold up, but a native 2.39 generation will always beat them —
-   the draft asks for wide, patient framing with the figure small, and that is a widescreen decision.
+1. **Legacy shots 11–12 were generated in 16:9 and centre-cropped to 2.39:1.** Shots 1–10 have since been rebuilt in native 16:9. The legacy compositions were
+   decided for a taller frame. Rebuild them in **16:9**, like shots 1–10; preserve the patient framing rather than cropping to scope again.
 2. **Shot 14 (she kneels)** puts vending machines on both sides of the street. The draft has **one**
    vending machine, at the corner, and it is the brightest thing in the film's first minute. Keep it
    singular and let shots 13–18 stay emptier than feels comfortable.

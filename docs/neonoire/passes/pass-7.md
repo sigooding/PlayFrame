@@ -1,12 +1,12 @@
 # NEONOIRE — keyframe pass 7
 
-5 shots still to generate: shots 64–68, from scene 7 (INT. POLICE STATION, DETECTIVES' ROOM).
+Recorded briefs for shots 64–68, revised on 25 September 2026. All scene-7 shots (63–68) are now on disk; the establishing master and full board are documented in [n07-detectives-room.md](../scenes/n07-detectives-room.md).
 
 **Before you start**
 
-- Every frame is **2.39:1 anamorphic**: generate widescreen, then normalise exactly with
+- **Scenes 6–7 revision:** shots 51–68 are **16:9 full-bleed, 1920×1080**. Follow `scripts/neonoire/interview-look.mjs` and `scripts/neonoire/detectives-look.mjs`. For scene 7, attach the new office/action masters, Ishida’s sheet, the purse in shot 18 and the station clock in shot 43. Keep the evidence sealed INSIDE the bottom drawer, not displayed on the desktop. Normalise with:
   ```bash
-  convert FILE.jpg -resize "1912x800^" -gravity center -extent 1912x800 -quality 92 -strip FILE.jpg
+  convert FILE.jpg -resize "1920x1080^" -gravity center -extent 1920x1080 -quality 92 -strip FILE.jpg
   ```
 - Attach the continuity sheet (or its face crop) for every named character in the shot, and the studio keys listed for the scene — they are the look the film is already being generated in.
 - Where the generator supports a negative prompt, use the AVOID list; where it does not, keep those things out of frame yourself.
@@ -18,15 +18,17 @@
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/64-the-bottom-drawer.jpg` — write it exactly here, 64-the-bottom-drawer.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/64-the-bottom-drawer.jpg` — write it exactly here, 64-the-bottom-drawer.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
+**Revision:** follow `scripts/neonoire/detectives-look.mjs`; use `s7/63-the-detectives-room.jpg` and `s7/64-the-bottom-drawer.jpg` for the room and drawer geometry.
+
 **Prompt**
 
 ```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+cinematic film still, 16:9 full-bleed widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
 SUBJECT — Ishida sits at his desk and opens the bottom drawer. He does not look around first. He has already decided what he is going to do and the audience is allowed to see that he made the decision before this scene began.
 FRAMING — Medium, 50mm, Static, Eye level, lit by practical night.
@@ -43,16 +45,18 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/65-the-evidence-bag.jpg` — write it exactly here, 65-the-evidence-bag.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/65-the-evidence-bag.jpg` — write it exactly here, 65-the-evidence-bag.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
 - **Framing**: Insert, 85mm, Static, High angle. Lighting: Practical night. Working duration 9s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg` — none, the city carries the shot
+
+**Revision:** follow `scripts/neonoire/detectives-look.mjs`; use `s7/63-the-detectives-room.jpg` and `s7/64-the-bottom-drawer.jpg` for the room and drawer geometry.
 
 **Prompt**
 
 ```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+cinematic film still, 16:9 full-bleed widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
-SUBJECT — Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp. Continuity with scene 1: the same purse, the same torn strap that snagged the barbershop pole, still wet, and the contents are never shown. Do not re-light it as a horror prop — it is an exhibit in a bag on a desk.
+SUBJECT — Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp. Continuity with scene 1: the same purse, the same torn strap that snagged the barbershop pole, still wet, and the contents are never shown. Do not re-light it as a horror prop — it is an exhibit sealed inside a bag in the open bottom drawer, not on the desktop.
 FRAMING — Insert, 85mm, Static, High angle, lit by practical night.
 DRAFT — the draft's own words for this shot: "Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp."
 
@@ -67,15 +71,17 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/66-he-looks-at-it.jpg` — write it exactly here, 66-he-looks-at-it.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/66-he-looks-at-it.jpg` — write it exactly here, 66-he-looks-at-it.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
 - **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 8s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
+**Revision:** follow `scripts/neonoire/detectives-look.mjs`; use `s7/63-the-detectives-room.jpg` and `s7/64-the-bottom-drawer.jpg` for the room and drawer geometry.
+
 **Prompt**
 
 ```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+cinematic film still, 16:9 full-bleed widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
 SUBJECT — He looks at it a long moment. The film holds with him and gives him nothing to say. The film's last look at a person in the opening, and it is on a man who has chosen his side quietly. No reaction shot of anyone else; the room is empty.
 FRAMING — Close-up, 85mm, Static, Eye level, lit by practical night.
@@ -92,15 +98,17 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/67-drawer-closed.jpg` — write it exactly here, 67-drawer-closed.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/67-drawer-closed.jpg` — write it exactly here, 67-drawer-closed.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 5s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
 
+**Revision:** follow `scripts/neonoire/detectives-look.mjs`; use `s7/63-the-detectives-room.jpg` and `s7/64-the-bottom-drawer.jpg` for the room and drawer geometry.
+
 **Prompt**
 
 ```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+cinematic film still, 16:9 full-bleed widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
 SUBJECT — He closes the drawer. One action, no emphasis, and the case goes back out of the record. Sound it plainly, like a filing cabinet in an empty building.
 FRAMING — Medium, 50mm, Static, Eye level, lit by practical night.
@@ -117,14 +125,16 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/68-the-clock.jpg` — write it exactly here, 68-the-clock.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/68-the-clock.jpg` — write it exactly here, 68-the-clock.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Low angle. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg` — none, the city carries the shot
+
+**Revision:** follow `scripts/neonoire/detectives-look.mjs`; use `s7/63-the-detectives-room.jpg` and `s7/64-the-bottom-drawer.jpg` for the room and drawer geometry.
 
 **Prompt**
 
 ```
-cinematic film still, anamorphic widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
+cinematic film still, 16:9 full-bleed widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
 
 SUBJECT — On the wall, the clock runs a minute fast. Cut to black. The same clock as scene 5, the same minute it has always been fast by, and the last shot of the opening. Hold it a beat past comfortable, then cut on the radio.
 FRAMING — Medium, 50mm, Static, Low angle, lit by practical night.

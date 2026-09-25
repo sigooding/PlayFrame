@@ -5,7 +5,15 @@
 Scene: INT. VERA'S APARTMENT — CONTINUOUS
 Cast: VERA VOSS (29, American), MARA VOSS (4, in the photograph), JACK VOSS (in the photograph), MARA VOSS (V.O., recorded)
 Lens plan: 24mm for the room, 50mm for Vera at the table, 85mm for the photograph, the umbrella, the cups and her face on the answerphone.
-Grammar: grey rain light through the window and the corner of a CRT; nothing here quite belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.
+Grammar: grey rain light through the window and the corner of a CRT; nothing here quite belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The revised room follows the uploaded reference: muted amber table-lamp light against cool rain-grey glass, with the photograph warmer and faded. No paper pendant.
+
+## Visual revision — 25 September 2026
+
+All ten shots (33–42) are **16:9, 1920×1080, full-bleed**, rebuilt from `appartment.png` and `photo.png`. Original uploads remain unchanged. The corrected room master is `public/images/neonoire/keys/04-veras-apartment.jpg`; the corrected family-photo master is `public/images/neonoire/s4/35-the-photograph.jpg`.
+
+**No paper pendant anywhere**: remove the shade, hanging cord and ghost reflection completely. Retain the brown table lamp on the left cabinet. Keep the sliding-door frame, curtains, cabinet/stereo/photo on the left and CRT on the right fixed across angles. The TV stays on. Exactly one dry pale-blue umbrella with one curved brown handle; exactly two ivory cups, one with tea and the opposite one empty. Vera uses speakerphone with the phone face-up on the table, wears her cream knit until putting on her charcoal coat in shot 42, and leaves the umbrella stand empty when she takes the umbrella. The photograph contains Jack between laughing Mara (4, left) and serious Vera (9, right), not adult sisters.
+
+The reusable brief is `scripts/neonoire/apartment-look.mjs`. Shot 41 is a tighter crop of the corrected room master, preserving the actual cup contents and prop positions rather than introducing drift in a regenerated angle. These are AI-generated draft studies, not approved coverage.
 
 ---
 
