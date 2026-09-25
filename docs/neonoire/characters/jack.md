@@ -38,4 +38,8 @@ Same night, his office: still in the soaked coat, hair wet and falling forward, 
 
 Next day, the detectives' room: unshaven, yesterday's creased off-white shirt, the charcoal coat now dry, dried blood in the creases of his knuckles. He stays screen-left of Ishida and never hits him. Master `s80/94-the-long-room.jpg`.
 
+## Scenes 81–82 state
+
+The same day, the same look as scene 80: unshaven, creased off-white shirt, dry charcoal coat, dried blood in his knuckles. In the bar he stands on the window side, facing Okada across the counter. In the newsroom he sits across Harada's desk and, at the end, talks, seen through the glass. Masters `s81/100-the-bar-in-daylight.jpg` and `s82/104-the-newsroom.jpg`.
+
 These are AI-generated design studies, not approved casting or production coverage.

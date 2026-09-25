@@ -17,7 +17,7 @@ The series opens by default when present; an explicit `?project=<id>` always win
 ## NEONOIRE — the final screenplay
 
 The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
-sixteen of them boarded as **101 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), the envelope and the notebook of scenes 77–79 (shots 87–95), and Jack and Ishida in scene 80 (shots 96–101). Everything is carried page by page from
+eighteen of them boarded as **110 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), the envelope and the notebook of scenes 77–79 (shots 87–95), Jack and Ishida in scene 80 (shots 96–101), and the cassette and the witness in scenes 81–82 (shots 102–110). Everything is carried page by page from
 [`Neonoire (3).fountain`](<Neonoire (3).fountain>) (the earlier
 [`Neonoire_Opening.fountain`](Neonoire_Opening.fountain) remains only as the opening extract).
 
@@ -45,7 +45,9 @@ sixteen of them boarded as **101 numbered shots** — the opening seven (shots 1
   counting towards, and what a clock that runs a minute fast is doing in a police station are all left
   where the draft leaves them.
 
-**Latest session — scenes 77–79 boarded, Jack recast:** nine new 16:9 shots — Jack's office under one lamp, the unnamed envelope at Vera's door at dawn, DANIEL VOSS inside the cover, and the scene 4 room at dawn with two empty cups. **Jack is now a white American** with a regenerated identity sheet; the recast has since been applied to scene 74's three Jack frames, and scene 80 (the detectives' room by day) is boarded as six more shots. See the [scenes 77–79 ledger](docs/neonoire/passes/scenes-77-79.md) and [review sheet](public/images/neonoire/reviews/scenes-77-79-pass-1.jpg).
+**Latest session — scenes 81–82 boarded:** nine new 16:9 shots. Okada hands Jack the SHIOHAMA cassette in the bar by day, and Harada plays it in the Toto Shimbun newsroom, where Jack offers himself as the witness. Okada and Harada are new cast cards. Shot 108 is flagged **Needs review** because its cassette window hides the reels. See the [scenes 81–82 ledger](docs/neonoire/passes/scenes-81-82.md) and [review sheet](public/images/neonoire/reviews/scenes-81-82-pass-1.jpg).
+
+**Previous session — scenes 77–79 boarded, Jack recast:** nine new 16:9 shots — Jack's office under one lamp, the unnamed envelope at Vera's door at dawn, DANIEL VOSS inside the cover, and the scene 4 room at dawn with two empty cups. **Jack is now a white American** with a regenerated identity sheet; the recast has since been applied to scene 74's three Jack frames, and scene 80 (the detectives' room by day) is boarded as six more shots. See the [scenes 77–79 ledger](docs/neonoire/passes/scenes-77-79.md) and [review sheet](public/images/neonoire/reviews/scenes-77-79-pass-1.jpg).
 
 **Previous revision — scenes 72–75:** *Tokyo Story* restraint in **colour**, with low level static
 cameras, 50mm lenses (35mm for the distant aftermath), and Vera's makeup intact until rain.

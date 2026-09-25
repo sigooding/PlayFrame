@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–80 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–82 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -36,6 +36,8 @@ const cast = [
   ["journalist", "The Journalist", "Cold open", "40s", "An untouched beer, a closed notebook, a watched door — and one question asked off camera: where is he. He is killed four shots later and his notebook leaves with the men who did it. Unnamed in the opening; he speaks Japanese.", ["Waiting", "Private", "Unlucky"], "clay", undefined],
   ["young-officer", "The Young Officer", "Front counter", "20s", "Takes a missing-person report with polite boredom until the name Mara Voss comes up on the monitor. Then he turns away from her and makes a quiet phone call, and comes back politer than he was. Unnamed in the opening.", ["Polite", "Bored", "Changed"], "sand", "young-officer"],
   ["ishida", "Detective Ishida", "Police", "50s", "Gentle, unhurried, tired in a way that looks like decency, with excellent English he offers as a courtesy. He asks about Kanda, gives Vera his card and tells her to call at any hour — then opens a drawer with her sister's purse in it and closes it again.", ["Kind", "Unhurried", "Deciding"], "sage", "ishida"],
+  ["okada", "Okada", "Bar owner", "60s", "Japanese. Sixties, the owner of the small Kanda bar where the journalist died. Gaunt, close-cropped white hair, a lined tired face, a white shirt with the sleeves rolled and a dark navy apron. He kept Sakai's cassette in the tray of his cash drawer. When he sees Jack's face and hands he doesn't ask; he pours two glasses instead. No identity sheet yet: held to the scene 81 master.", ["Discreet", "Loyal", "Weary"], "sand", undefined],
+  ["harada", "Harada", "Editor, Toto Shimbun", "50s", "Japanese. Fifties, the editor of the Toto Shimbun; the dead journalist was her reporter. Grey hair in a short bob, reading glasses, a white blouse with the sleeves rolled. She presses PLAY, names Kurose, warns Jack he will be named, and opens a notebook to a clean page. No identity sheet yet: held to the scene 82 master.", ["Exacting", "Grieving", "Resolute"], "sage", undefined],
 ];
 
 export const characters = cast.map(([key, name, role, age, description, traits, color, sheet]) => ({
@@ -44,6 +46,8 @@ export const characters = cast.map(([key, name, role, age, description, traits, 
   relations: [],
 }));
 characters.find(c => c.id === characterId("daniel")).image = "/images/neonoire/s4/35-the-photograph.jpg";
+characters.find(c => c.id === characterId("okada")).image = "/images/neonoire/s81/100-the-bar-in-daylight.jpg";
+characters.find(c => c.id === characterId("harada")).image = "/images/neonoire/s82/104-the-newsroom.jpg";
 
 const link = (a, b, kind, note) => {
   characters.find(c => c.id === characterId(a)).relations.push({ id: `neonoire-link-${a}-${b}`, targetId: characterId(b), kind, note });
@@ -56,6 +60,9 @@ link("jack", "daniel", "Friend", "The investigator and the younger police detect
 link("vera", "jack", "Ally", "Client and investigator, drawn to each other; his silence makes the promised dinner a betrayal. Not family.");
 link("mara", "jack", "Ally", "He hides her in the Hive and carries a promise he cannot explain to Vera.");
 link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and the case divide them.");
+link("jack", "okada", "Ally", "He kept Sakai's cassette in his cash drawer, and hands it over without asking what happened.");
+link("harada", "journalist", "Colleague", "Her reporter, killed in Okada's bar; his photograph stays on her desk.");
+link("jack", "harada", "Ally", "He brings her the tape and offers himself as the witness: start with my part.");
 
 // ---------------------------------------------------------------------------------------------
 // The boarded scenes, in the draft's own running order — the opening seven, and the first
@@ -225,6 +232,26 @@ export const SCENES = [
     description: "Day. Jack, unshaven, dried blood in his knuckles, walks the length of the detectives' room to Ishida's desk. Nine o'clock, a grey car, your driver: only you knew. Ishida: you always tell the wrong person; he never killed anyone, he only told people where to find them. The room waits for Jack to hit him. He doesn't. He walks away past the clock, and for the first time Ishida looks afraid. BOARDED — 6 shots (96–101).",
     lightingNotes: "Flat grey daylight through rain-streaked windows at right, mixed with the green-white fluorescent tubes. The same single black-rim clock above the rear door; the same green-dial radio on Ishida's desk.",
   },
+  {
+    key: "s81", id: "neonoire-s81", n: 81, partId: "neonoire-part-feature",
+    title: "Without a toast", location: "INT. SMALL BAR, KANDA", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. SMALL BAR, KANDA - DAY #81#",
+    page: "n81-small-bar-kanda-day.md", board: "n81-small-bar-day.md",
+    cast: ["Jack", "Okada"],
+    grammar: "Scene 2's bar by grey daylight, chairs up and the CRT dark. 35mm master, 50mm across the counter, 85mm on the tape. Nobody asks and nobody answers.",
+    description: "Day. The bar with its chairs on the tables. Okada sees Jack's face and hands and doesn't ask; he lifts the tray out of the cash drawer and hands him the cassette. The girl? Jack can't answer. Two small glasses, drunk together without a toast. BOARDED — 4 shots (102–105).",
+    lightingNotes: "Flat grey daylight from the street window at right; no practicals on, the CRT off. Amber only in the bottles.",
+  },
+  {
+    key: "s82", id: "neonoire-s82", n: 82, partId: "neonoire-part-feature",
+    title: "Start with my part", location: "INT. TOTO SHIMBUN NEWSROOM", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. TOTO SHIMBUN NEWSROOM - DAY #82#",
+    page: "n82-toto-shimbun-newsroom-day.md", board: "n82-newsroom-day.md",
+    cast: ["Jack", "Harada", "The Journalist"],
+    grammar: "An old paper office through one locked 24mm camera that opens and closes the scene; 50mm at the desk, 85mm for PLAY and for Harada. We don't hear his testimony.",
+    description: "Day. The Toto Shimbun newsroom; in the glass office, Harada, the dead journalist's photograph on her desk. She plays the tape: Sakai, and Kurose, twenty years younger — then it will be empty in a different way. Jack offers himself as the witness: start with my part. She opens a notebook. Through the glass, a man for the first time in twenty years not silent. BOARDED — 5 shots (106–110).",
+    lightingNotes: "Green-white fluorescent tubes and grey window light, rain on the glass; three TVs flicker on the walls.",
+  },
 ];
 
 /**
@@ -302,12 +329,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 101 numbered shots cover scenes 1–7 and 72–80; the other 84 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 110 numbered shots cover scenes 1–7 and 72–82; the other 82 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–80 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–82 are boarded; the rest are written, not yet boarded." },
   ],
 };
 
