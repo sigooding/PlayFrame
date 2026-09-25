@@ -111,7 +111,7 @@ export const SCENES = [
     page: "n06-interview-room.md", board: "n06-interview-room.md",
     cast: ["Vera Voss", "Detective Ishida"],
     grammar: "One table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.",
-    description: "Moments later. Detective Ishida sets a paper cup of tea in front of Vera and offers her English. She answers in Japanese. He asks where she grew up, when she last saw her sister, whether the name Kanda means anything — and gets: three days ago, we had dinner, normal. He gives her his card and tells her to call at any hour. BOARDED — 9 shots.",
+    description: "Moments later. Detective Ishida sets a paper cup of tea in front of Vera and offers her English. She answers in Japanese. She answers in Japanese and asks twice what is on the screen. He asks his own questions instead — where she grew up, when she last saw her sister, whether the name Kanda means anything — until the news arrives in her face and she asks whether her sister is dead. He has no reason to believe she is. The cup crumples in her fist; he offers a tissue, answers her in Japanese for the first time, and tells her the safest thing she can do is nothing. Then his card, across a wet table. BOARDED — 12 shots.",
     lightingNotes: "One ceiling fixture and the frosted window's blue-grey rain light; the paper cup is the only warm note. No flicker in this room.",
   },
   {
@@ -132,7 +132,7 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The opening — Kanda to the detectives' room",
-  description: "Seven scenes from the first draft's opening: a backstreet in Kanda at night, a small bar, Vera's apartment three days later, and a police station that already knows Mara's name. 65 numbered shots; every frame is a draft study, not approved coverage.",
+  description: "Seven scenes from the first draft's opening: a backstreet in Kanda at night, a small bar, Vera's apartment three days later, and a police station that already knows Mara's name. 68 numbered shots; every frame is a draft study, not approved coverage.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
@@ -274,7 +274,7 @@ export function parseBoard(markdown, scene) {
   }
   flush();
   if (!shots.length) throw new Error(`Scene ${scene.n} has no numbered shots`);
-  // Shot numbers run 1..65 straight through the opening, so a scene's board starts wherever the
+  // Shot numbers run 1..68 straight through the opening, so a scene's board starts wherever the
   // scene before it stopped; the builder checks the run is unbroken across all seven.
   for (const [i, shot] of shots.entries()) {
     if (shot.n !== shots[0].n + i) throw new Error(`Scene ${scene.n} shot numbers must run contiguously from ${shots[0].n} (found ${shot.n} at position ${i + 1})`);

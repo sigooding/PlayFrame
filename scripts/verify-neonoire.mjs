@@ -41,7 +41,7 @@ const {
 validatePatch(project);
 assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 7);
-assert.equal(project.frames.length, 65);
+assert.equal(project.frames.length, 68);
 assert.equal(project.characters.length, 8);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -51,8 +51,8 @@ assert.equal(project.brainstorm.length, 6);
 assert(project.moodboards.length >= 3 && project.moodboards.length <= 5, "The boards carried are the ones with keyframes on them");
 for (const board of project.moodboards) assert(board.items.length > 0, `An empty mood board is a dead card: ${board.title}`);
 assert(project.scenes.every(scene => scene.actId === project.acts[0].id), "Every scene belongs to the opening act");
-assert.equal(new Set(project.frames.map(frame => frame.id)).size, 65, "Frame ids are unique");
-assert.equal(new Set(project.frames.map(frame => `${frame.sceneId}/${frame.title}`)).size, 65, "No two shots in a scene share a title");
+assert.equal(new Set(project.frames.map(frame => frame.id)).size, 68, "Frame ids are unique");
+assert.equal(new Set(project.frames.map(frame => `${frame.sceneId}/${frame.title}`)).size, 68, "No two shots in a scene share a title");
 pass(`the bundle validates: ${project.scenes.length} scenes, ${project.frames.length} shots, ${project.characters.length} cast, ${project.moodboards.length} boards`);
 assert(project.notes.some(note => note.id === "neonoire-style-block" && /Neo-Noir Tokyo|35mm Kodak Vision3 500T/.test(note.content)), "The style block should travel with the project");
 assert(project.moodboards.some(b => b.id === "neonoire-look-style" && b.items.length === 9), "The nine keys should be on their own board");
@@ -101,7 +101,7 @@ pass(`${onDisk.length}/${project.frames.length} keyframes on disk, ${placeholder
 
 // Passes are ten shots at a time, in screenplay order — the notes on every frame say which pass.
 for (const [i, frame] of project.frames.entries()) {
-  assert(frame.notes.includes(`Shot ${i + 1} of 65`), `Shot ${i + 1} should say where it sits in the running order`);
+  assert(frame.notes.includes(`Shot ${i + 1} of 68`), `Shot ${i + 1} should say where it sits in the running order`);
   assert(frame.notes.includes(`Pass ${Math.ceil((i + 1) / 10)} of 7`), `Shot ${i + 1} should name its pass`);
 }
 pass("passes run ten keyframes at a time, in screenplay order, and every frame carries its pass in the notes");
@@ -163,7 +163,7 @@ for (const frame of project.frames) {
 }
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
-assert.equal(imported.frames.length, 65);
+assert.equal(imported.frames.length, 68);
 assert.equal(imported.scenes.length, 7);
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
@@ -184,7 +184,7 @@ try {
       const id = ${JSON.stringify(project.id)};
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
-      assert.equal(opened.frames.length, 65);
+      assert.equal(opened.frames.length, 68);
       assert.equal(opened.scenes.length, 7);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
@@ -241,7 +241,7 @@ if (awaiting.length) {
   assert(passText.includes("glossy cyberpunk"), "Every pass brief should carry the negative prompt");
   pass(`${awaiting.length} remaining shots have a self-contained pass brief, carrying the style block and the negative prompt`);
 } else {
-  pass("all 65 keyframes are on disk; no remaining pass brief is required");
+  pass("all 68 keyframes are on disk; no remaining pass brief is required");
 }
 
 console.log("\nAll NEONOIRE checks passed.");

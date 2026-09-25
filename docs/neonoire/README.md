@@ -1,6 +1,6 @@
 # NEONOIRE — the opening scenes
 
-The first draft's opening scenes, carried into Frame as an editable workspace: **7 scenes, 65 numbered
+The first draft's opening scenes, carried into Frame as an editable workspace: **7 scenes, 68 numbered
 shots**, a screenplay tab that is the draft itself, and keyframes generated **ten at a time** against
 two continuity sheets.
 
@@ -60,7 +60,7 @@ anyone having to paste it again.
 ## Passes
 
 Keyframes are generated ten at a time, in screenplay order, with the cast sheets attached as
-references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on to pass 7 (shots 61–65). Each pass is
+references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on to pass 7 (shots 61–68). Each pass is
 listed at the foot of its scene's board, and every frame's notes name the pass it came from.
 
 ## Continuity
