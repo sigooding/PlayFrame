@@ -11,7 +11,7 @@
 - All ten delivered masters are **16:9 full-bleed, 1920×1080 JPEG**. A face crop and review contact sheet are derivatives, not additional generation calls.
 - Low, **level**, static cameras; normal 50mm perspective, 35mm for the distant aftermath. *Tokyo Story* restraint in muted colour, not monochrome and not action coverage.
 - Vera is pretty, dry and carefully made-up in the hotel; **only the rain undoes her makeup**. The same wine-red silk dress continues through the sequence. After the skid her right foot is bare and left red shoe remains.
-- **Jack (48)** is the former detective/private investigator, recast on 25 September 2026 as a white American (new `sheets/jack.jpg`); scene 74's three Jack frames still show the superseded design and are flagged **JACK RECAST PENDING**. The old “Jack Voss” entry was incorrect: **Daniel Voss** is the father in the photograph. [Jack's profile](characters/jack.md) records the distinction.
+- **Jack (48)** is the former detective/private investigator, recast on 25 September 2026 as a white American (new `sheets/jack.jpg`); the recast is applied to every Jack frame, including scene 74's three. The old “Jack Voss” entry was incorrect: **Daniel Voss** is the father in the photograph. [Jack's profile](characters/jack.md) records the distinction.
 
 [Review contact sheet](../../public/images/neonoire/reviews/tokyo-story-72-75-pass-1.jpg) · [Jack reference](../../public/images/neonoire/sheets/jack.jpg) · [remaining prompts](passes/README.md)
 

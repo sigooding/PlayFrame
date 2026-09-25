@@ -23,7 +23,30 @@ export const dawnImages = [
 
 export const jackRecastSheet = "/images/neonoire/sheets/jack.jpg";
 
-/** Frames that still show the superseded Japanese Jack design. */
-export const jackRecastPending = new Set(["neonoire-shot-74", "neonoire-shot-75", "neonoire-shot-73"]);
+/** Frames that still show the superseded Japanese Jack design. Empty since the scene 74 regeneration. */
+export const jackRecastPending = new Set([]);
+
+// Next turn (25 September 2026): scene 74's three Jack frames regenerated against the recast sheet,
+// each an edit of its own existing keyframe so composition, street, Vera and blocking are unchanged.
+export const jackRecastImages = [
+  "/images/neonoire/s74/74-twenty-metres-apart.jpg",
+  "/images/neonoire/s74/75-one-desperate-blow.jpg",
+  "/images/neonoire/s74/73-two-small-figures.jpg",
+];
+export const jackRecastDone = new Set(["neonoire-shot-74", "neonoire-shot-75", "neonoire-shot-73"]);
+export const jackRecastDoneNote = "JACK RECAST APPLIED (25 September 2026): this keyframe was regenerated from its own previous image with the recast sheets/jack.jpg (white American) attached. Composition, street, Vera, shoes and blocking are unchanged; only Jack was replaced.";
+
+// Scene 80: first boarding, six shots in the same turn (seven calls: the clock-fix edit of shot 100
+// counts). Room master s80/94-the-long-room.jpg, from scene 7's night master.
+export const policeDayScenes = new Set(["s80"]);
+export const policeDayImages = [
+  "/images/neonoire/s80/94-the-long-room.jpg",
+  "/images/neonoire/s80/95-ishida-doesnt-look-up.jpg",
+  "/images/neonoire/s80/96-hands-close.jpg",
+  "/images/neonoire/s80/97-where-to-find-them.jpg",
+  "/images/neonoire/s80/98-past-the-clock.jpg",
+  "/images/neonoire/s80/99-afraid.jpg",
+];
+export const policeDayLook = "16:9 full-bleed (1920×1080), no letterbox. Scene 7's detectives' room (s7/63-the-detectives-room.jpg) by DAY: flat grey window light at right mixed with green-white fluorescent tubes, detectives at their desks. Grey metal desks, brown laminate tops, manila files, square pillars, the SINGLE round black-rim white-face clock above the rear door (it runs a minute fast; never two clocks), the same wood-cased green-dial radio on Ishida's desk. Master s80/94-the-long-room.jpg; shots 96 and 100 share one locked 24mm camera down the central aisle. ISHIDA follows sheets/ishida.jpg: Japanese, fifties, salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE, writing in careful longhand. JACK follows the recast sheets/jack.jpg (white American, 48): unshaven, creased off-white shirt, dry charcoal knee-length overcoat, dried blood in his knuckle creases (non-graphic). Jack stays screen-left of Ishida. He never hits him. Japanese dialogue is subtitled in the edit, never burned into frames. AI-generated draft studies, not approved coverage.";
 
 export const jackRecastNote = "JACK RECAST PENDING — on 25 September 2026 Jack was recast as a white American (new sheets/jack.jpg, jack-face.jpg). This keyframe still shows the superseded Japanese design and must be regenerated against the new sheet, keeping its composition, Vera, the street and the blocking. Do not approve it as is.";

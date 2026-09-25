@@ -22,9 +22,9 @@ He must read as a different man from **Daniel Voss** in `s4/35-the-photograph.jp
 
 The script's Tokyo police history (Daniel's notebook: "a young detective who speaks English. They call him Jack") is unchanged; how an American came to serve there is left where the draft leaves it.
 
-## Frames still showing the superseded design
+## Recast applied everywhere
 
-Scene 74's three Jack frames — board 75 `s74/74-twenty-metres-apart.jpg`, board 76 `s74/75-one-desperate-blow.jpg`, board 77 `s74/73-two-small-figures.jpg` — were generated before the recast. They are marked **Needs review / JACK RECAST PENDING** in the bundle. Regenerate them against the new sheet with their existing composition, street, Vera and blocking; do not approve them as is. (Board 77's figures are tiny, so its regeneration is lowest priority.)
+Scene 74's three Jack frames — board 75 `s74/74-twenty-metres-apart.jpg`, board 76 `s74/75-one-desperate-blow.jpg`, board 77 `s74/73-two-small-figures.jpg` — were regenerated in the following turn as edits of their own keyframes with the new sheet attached: composition, street, Vera and blocking unchanged, only Jack replaced. Every Jack frame on the board (scenes 74, 77, 80) now shows the recast design.
 
 ## Scene 74 state
 
@@ -33,5 +33,9 @@ He comes from the Hive soaked, hands still dark and unwashed (non-graphic). Hair
 ## Scene 77 state
 
 Same night, his office: still in the soaked coat, hair wet and falling forward, hands unwashed. Room master `s77/85-the-desk-lamp.jpg`.
+
+## Scene 80 state
+
+Next day, the detectives' room: unshaven, yesterday's creased off-white shirt, the charcoal coat now dry, dried blood in the creases of his knuckles. He stays screen-left of Ishida and never hits him. Master `s80/94-the-long-room.jpg`.
 
 These are AI-generated design studies, not approved casting or production coverage.

@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–79 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–80 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -59,7 +59,7 @@ link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and
 
 // ---------------------------------------------------------------------------------------------
 // The boarded scenes, in the draft's own running order — the opening seven, and the first
-// scenes of the film proper (the hotel and Tokyo streets, 72–76, and the envelope and the notebook, 77–79). Boarded metadata is hand-authored here;
+// scenes of the film proper (the hotel and Tokyo streets, 72–76, the envelope and the notebook, 77–79, and Jack and Ishida, 80). Boarded metadata is hand-authored here;
 // location, time and slugline are re-derived from the draft at build time and must match.
 // ---------------------------------------------------------------------------------------------
 
@@ -215,6 +215,16 @@ export const SCENES = [
     description: "Continuous. At the low table in the dawn light, beside the two cups from the beginning of the film, both empty now, Vera reads her father's notebook: Shiohama, Kurose, and the young detective they called Jack who signed the report. She closes it and holds it against her chest. BOARDED — 3 shots (93–95).",
     lightingNotes: "Window light only, grey-blue; lamp and CRT off; the umbrella stand empty. The red dress is the only warm colour.",
   },
+  {
+    key: "s80", id: "neonoire-s80", n: 80, partId: "neonoire-part-feature",
+    title: "Where to find them", location: "INT. POLICE STATION, DETECTIVES' ROOM", time: "DAY",
+    kind: "Standard", lighting: "Natural daylight", slugline: "INT. POLICE STATION, DETECTIVES' ROOM - DAY #80#",
+    page: "n80-police-station-detectives-room-day.md", board: "n80-detectives-room-day.md",
+    cast: ["Jack", "Detective Ishida"],
+    grammar: "Scene 7's room by day, full of watching detectives. 24mm in and out on one locked aisle camera; 50mm two-shot; 85mm hands and Ishida. He doesn't hit him.",
+    description: "Day. Jack, unshaven, dried blood in his knuckles, walks the length of the detectives' room to Ishida's desk. Nine o'clock, a grey car, your driver: only you knew. Ishida: you always tell the wrong person; he never killed anyone, he only told people where to find them. The room waits for Jack to hit him. He doesn't. He walks away past the clock, and for the first time Ishida looks afraid. BOARDED — 6 shots (96–101).",
+    lightingNotes: "Flat grey daylight through rain-streaked windows at right, mixed with the green-white fluorescent tubes. The same single black-rim clock above the rear door; the same green-dial radio on Ishida's desk.",
+  },
 ];
 
 /**
@@ -292,12 +302,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 95 numbered shots cover scenes 1–7 and 72–79; the other 85 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 101 numbered shots cover scenes 1–7 and 72–80; the other 84 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–79 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–80 are boarded; the rest are written, not yet boarded." },
   ],
 };
 

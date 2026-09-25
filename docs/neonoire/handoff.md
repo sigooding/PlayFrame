@@ -2,9 +2,9 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **15 scenes, 95 shots**: scenes 1–7 and 72–79. **All 95 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **16 scenes, 101 shots**: scenes 1–7 and 72–80. **All 101 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
-**Latest session — [scenes 77–79 boarded](passes/scenes-77-79.md), and Jack recast as a white American.** Nine new shots (87–95) plus a regenerated `sheets/jack.jpg`/`jack-face.jpg`. Scene 74's three Jack frames (boards 75–77) still show the superseded Japanese design and are flagged **Needs review / JACK RECAST PENDING**; regenerating them is the next image job. After that, the next unboarded scene is 80 (the detectives' room: Jack and Ishida), which can reuse `s7/63-the-detectives-room.jpg` and `sheets/ishida.jpg`.
+**Latest session — [scenes 77–79 boarded](passes/scenes-77-79.md), and Jack recast as a white American.** Nine new shots (87–95) plus a regenerated `sheets/jack.jpg`/`jack-face.jpg`. **Follow-up turn:** scene 74's three Jack frames have been regenerated with the recast, and **scene 80** (the detectives' room by day, Jack and Ishida) is boarded as shots 96–101 — see the same ledger. The next unboarded scene is **81** (the small bar, Kanda, by day).
 
 The [Tokyo Story colour revision of scenes 72–75](passes/tokyo-streets-revision.md) is **complete in two sessions**: ten generation calls (Jack's sheet + nine shots), then eight (the six remaining replacements plus the lost-heel and twenty-metre continuity replacements). Read that ledger for the masters, the locks and the honest production-review caveats.
 

@@ -46,12 +46,23 @@ table.
 - Board 95 is framed as a Medium, not a close-up; the second cup is just out of frame.
 - Scene 76's existing images disagree with each other on the dress (sleeves and tears) and on the number of shoes. Scenes 77–79 follow the scene 72 dress, not scene 76's drift. Scene 76 should be reviewed.
 
-## Still to do — the recast in scene 74
+## Follow-up turn — recast applied to scene 74, scene 80 boarded (10 generation calls)
 
-Board 75 `s74/74-twenty-metres-apart.jpg`, board 76 `s74/75-one-desperate-blow.jpg` and board 77
-`s74/73-two-small-figures.jpg` still show the superseded Jack. They are flagged **Needs review /
-JACK RECAST PENDING** (`jackRecastPending` in `scripts/neonoire/dawn-look.mjs`). Regenerate them against
-the new sheet, keeping composition, street, Vera and blocking; then remove their IDs from that set.
+- **Scene 74 recast (3 calls):** boards 75, 76 and 77 are regenerated as edits of their own keyframes with the new `sheets/jack.jpg`. Composition, street, Vera, shoes and blocking are unchanged; only Jack was replaced. They are **Draft** again, with the JACK RECAST APPLIED note. `jackRecastPending` is now empty.
+- **Scene 80 — the detectives' room, day (7 calls, 6 shots, boards 96–101, IDs `neonoire-shot-96`–`101`, assets `s80/94`–`99`):**
+
+| Board | Image | Type / lens | Notes |
+| --- | --- | --- | --- |
+| 96 | `s80/94-the-long-room.jpg` | Wide, 24mm | Room master: scene 7's room by day; Jack walks in and Ishida writes |
+| 97 | `s80/95-ishida-doesnt-look-up.jpg` | Medium, 50mm | Two-shot at the desk |
+| 98 | `s80/96-hands-close.jpg` | Insert, 85mm | Fist with dried blood in the knuckle creases (the coat reads lighter than the sheet) |
+| 99 | `s80/97-where-to-find-them.jpg` | Close-up, 85mm | Ishida looks up |
+| 100 | `s80/98-past-the-clock.jpg` | Wide, 24mm | Same camera as 96; Jack walks away. **Two calls:** the first put a second clock on the wall and was edited down to the single clock |
+| 101 | `s80/99-afraid.jpg` | MCU, 50mm | Ishida afraid for the first time |
+
+Continuity brief: `policeDayLook` in `scripts/neonoire/dawn-look.mjs`. Review: `public/images/neonoire/reviews/jack-recast-and-scene-80.jpg`.
+
+**Next:** scene 81 (the small bar, Kanda, by day), which can reuse scene 2's bar geometry. Before approving anything, also review scene 76's dress and shoe drift.
 
 ```bash
 npm run build:neonoire && npm run verify:neonoire && npm run check:assets && npm run typecheck
