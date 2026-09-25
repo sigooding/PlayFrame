@@ -2,9 +2,9 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **12 scenes, 86 shots**: scenes 1–7 and 72–76. **80 shot images are active; six replacement slots are empty.** All newly delivered images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **12 scenes, 86 shots**: scenes 1–7 and 72–76. **All 86 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
-The current task is the [Tokyo Story colour revision of scenes 72–75](passes/tokyo-streets-revision.md), not the old streets pass. Read that ledger first: it records exactly ten generation calls (Jack + nine shots), the six remaining replacements, the new masters and honest production-review caveats.
+The [Tokyo Story colour revision of scenes 72–75](passes/tokyo-streets-revision.md) is **complete in two sessions**: ten generation calls (Jack's sheet + nine shots), then eight (the six remaining replacements plus the lost-heel and twenty-metre continuity replacements). Read that ledger for the masters, the locks and the honest production-review caveats.
 
 | Material | Location |
 | --- | --- |
@@ -16,16 +16,20 @@ The current task is the [Tokyo Story colour revision of scenes 72–75](passes/t
 | Importable project | `public/projects/neonoire-opening.json` |
 | Remaining generation prompts | [pass 8](passes/pass-8.md), [pass 9](passes/pass-9.md) |
 
-## Next images: six, within one later ten-image session
+## Next images: none in scenes 72–75 — the revision is complete
+
+Session two delivered the six pending shots and replaced two that failed review:
 
 1. Board 71 — `s73/69-vera-runs.jpg`: hotel exit, makeup still mostly intact, both shoes.
 2. Board 73 — `s73/71-the-machine-glows.jpg`: Vera passes through a static machine frame.
-3. Board 78 — `s74/76-the-reflection.jpg`: umbrella only in an ambiguous reflection, face never resolved.
-4. Board 81 — `s75/79-the-hive-shut.jpg`: intact closed Hive, no people, not yet demolished.
-5. Board 82 — `s75/80-the-machine-waits.jpg`: same new ivory machine, nobody.
-6. Board 83 — `s75/81-static-in-a-window.jpg`: grey CRT static in a colour night, no people, then black.
+3. Board 74 — `s73/72-the-lost-heel.jpg` **(replaced)**: regenerated to match shot 79's locked puddle, drain and shoe orientation; a real stumble, RIGHT foot bare.
+4. Board 75 — `s74/74-twenty-metres-apart.jpg` **(replaced)**: the scripted twenty-metre separation now actually pictured at distance; the old ~5m study and its asphalt smear are gone.
+5. Board 78 — `s74/76-the-reflection.jpg`: umbrella only in an ambiguous reflection, face never resolved.
+6. Board 81 — `s75/79-the-hive-shut.jpg`: intact closed Hive, no people, not yet demolished.
+7. Board 82 — `s75/80-the-machine-waits.jpg`: same new ivory machine, nobody.
+8. Board 83 — `s75/81-static-in-a-window.jpg`: grey CRT static in a colour night, no people, then black.
 
-The old versions were deliberately removed at the user's request. Do not restore them, substitute neighbouring images or call these slots finished. Jack has a completed sheet and does not need another generation.
+Do not regenerate these without a new instruction, and do not restore any superseded image. Jack has a completed sheet and does not need another generation. What still awaits its own pass: cold-open shots 11–28 and scene 3 (legacy 2.39:1 studies), tracked in [cold-open-revision.md](passes/cold-open-revision.md).
 
 ## Camera and look
 
@@ -38,10 +42,15 @@ The confrontation runs **stop/approach → chest blows, folding and rejected tou
 For this sequence, attach **new masters and cast sheets only**. Ignore the superseded street pictures and older rain/cutaway style keys:
 
 - `s72/69-the-wait.jpg`: hotel, dry hair/makeup and wine-red silk dress.
+- `s73/69-vera-runs.jpg`: the hotel threshold; makeup still pretty, both shoes.
 - `s73/70-not-elegantly-badly.jpg`: rainy run, ivory machine/green shutter/railway geography.
-- `s73/72-the-lost-heel.jpg`: shoe, shallow puddle, kerb and drain.
-- `s74/74-twenty-metres-apart.jpg`: confrontation architecture; the pictured approach is closer than the initial scripted 20m stop.
+- `s73/71-the-machine-glows.jpg`: the machine frame with Vera passing; both shoes.
+- `s73/72-the-lost-heel.jpg`: shoe, shallow puddle, kerb and drain — session-two version matching `s75/77-the-red-shoe.jpg`.
+- `s74/74-twenty-metres-apart.jpg`: confrontation architecture; session-two version with the scripted 20m gap on screen.
+- `s74/75-one-desperate-blow.jpg`: the chest blow at bystander distance.
 - `s74/73-two-small-figures.jpg`: distant separated aftermath.
+- `s74/76-the-reflection.jpg`: the almost-reflection, water only.
+- `s75/77-the-red-shoe.jpg`, `s75/78-the-empty-lounge.jpg`, `s75/79-the-hive-shut.jpg`, `s75/80-the-machine-waits.jpg`, `s75/81-static-in-a-window.jpg`: the five pillow shots.
 
 ## Character continuity
 

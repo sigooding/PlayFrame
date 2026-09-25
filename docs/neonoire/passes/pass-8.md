@@ -1,5 +1,10 @@
 # NEONOIRE — keyframe pass 8
 
+> **COMPLETED — 25 September 2026.** Every shot briefed here is on disk. Session two delivered the
+> remaining replacements (and regenerated the lost-heel and twenty-metre keyframes for continuity);
+> this file is kept as a historical record of the briefs, not a request to regenerate anything.
+> See [tokyo-streets-revision.md](tokyo-streets-revision.md).
+
 3 shots still to generate: shots 71–78, from scene 73 (EXT. TOKYO STREETS) and scene 74 (EXT. EMPTY STREET UNDER THE TRACKS).
 
 **Before you start**
