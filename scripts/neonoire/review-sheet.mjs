@@ -16,5 +16,7 @@ const files = keys.flatMap(key => {
   const dir = join(root, "public", "images", "neonoire", key);
   return readdirSync(dir).filter(f => f.endsWith(".jpg")).sort((a, b) => Number(a.split("-")[0]) - Number(b.split("-")[0])).map(f => join(dir, f));
 });
-execFileSync("montage", [...files, "-tile", "3x3", "-geometry", "640x360+3+3", "-background", "#111", join(root, out)], { stdio: "inherit" });
+const cols = files.length > 9 ? 4 : 3;
+const rows = Math.ceil(files.length / cols);
+execFileSync("montage", [...files, "-tile", `${cols}x${rows}`, "-geometry", "640x360+3+3", "-background", "#111", join(root, out)], { stdio: "inherit" });
 console.log(`review sheet: ${out} (${files.length} frames)`);
