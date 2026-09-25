@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–12 and 72–100 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–12, the roadside inn and 72–100 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -494,6 +494,86 @@ export const SCENES = [
     description: "The cold open's street, four days on. Jack stands where Mara stood, finds a torn strap at knee height, and hears from the barber that the car came back. Because they didn't find it. BOARDED — 1 shot (170).",
     lightingNotes: "Sodium orange and fluorescent green, the vending machine's white light, steady rain.",
   },
+  {
+    key: "s31", id: "neonoire-s31", n: 31, partId: "neonoire-part-feature",
+    title: "The only car", location: "EXT. ROADSIDE INN", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. ROADSIDE INN - NIGHT #31#",
+    page: "n31-roadside-inn-night.md", board: "n31-roadside-inn.md",
+    cast: ["Jack"],
+    grammar: "35mm, low and level, square to the building.",
+    description: "Two storeys of weathered wood and a tin roof behind a gravel lot, modern once, in about 1975. Jack pulls in: the only car. BOARDED — 1 shot (171). The warm half of the inn's colour change.",
+    lightingNotes: "Warm refuge: tungsten amber, ivory paper, tobacco wood.",
+  },
+  {
+    key: "s32", id: "neonoire-s32", n: 32, partId: "neonoire-part-feature",
+    title: "Just one night", location: "INT. ROADSIDE INN, LOBBY", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. ROADSIDE INN, LOBBY - CONTINUOUS #32#",
+    page: "n32-roadside-inn-lobby-continuous.md", board: "n32-roadside-inn-lobby.md",
+    cast: ["Jack"],
+    grammar: "50mm at seated height and at the foot of the stairs.",
+    description: "A small, warm, faded lobby: a pink payphone, a souvenir case, night baseball. Mrs. Noda hands Jack a heavy key and leads him upstairs. BOARDED — 2 shots (172–173), including the stair frame.",
+    lightingNotes: "Warm refuge: tungsten amber, ivory paper, tobacco wood.",
+  },
+  {
+    key: "s34", id: "neonoire-s34", n: 34, partId: "neonoire-part-feature",
+    title: "Twenty years of Januaries", location: "INT. ROADSIDE INN, JACK'S ROOM", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. ROADSIDE INN, JACK'S ROOM - NIGHT #34#",
+    page: "n34-roadside-inn-jack-s-room-night.md", board: "n34-roadside-inn-jacks-room.md",
+    cast: ["Jack"],
+    grammar: "50mm at tatami height.",
+    description: "Tatami, a thin futon, rain on the tin roof. Sakai's receipts under the lamp: Kato Rental Lockers, Ueno, No. 114. No signal. BOARDED — 1 shot (174).",
+    lightingNotes: "Warm refuge: tungsten amber, ivory paper, tobacco wood.",
+  },
+  {
+    key: "s38", id: "neonoire-s38", n: 38, partId: "neonoire-part-feature",
+    title: "Four black sedans", location: "EXT. ROADSIDE INN", time: "NIGHT",
+    kind: "Standard", lighting: "Low key", slugline: "EXT. ROADSIDE INN - NIGHT #38#",
+    page: "n38-roadside-inn-night.md", board: "n38-roadside-inn-night.md",
+    cast: [],
+    grammar: "35mm from the same low position as shot 171.",
+    description: "2 a.m. Rain. One car. Two. Three. Four. Black sedans turn in. THE COLOUR CHANGES. BOARDED — 1 shot (175).",
+    lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
+  },
+  {
+    key: "s39", id: "neonoire-s39", n: 39, partId: "neonoire-part-feature",
+    title: "The curtain gap", location: "INT. ROADSIDE INN, JACK'S ROOM", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. ROADSIDE INN, JACK'S ROOM - CONTINUOUS #39#",
+    page: "n39-roadside-inn-jack-s-room-continuous.md", board: "n39-roadside-inn-jacks-room.md",
+    cast: ["Jack", "The Masked Men"],
+    grammar: "50mm from shot 174's position; his POV through the curtain.",
+    description: "Jack has heard the gravel. Through the curtain gap: four black cars in an arc, eight masked men with submachine guns, splitting up without a word. BOARDED — 2 shots (176–177).",
+    lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
+  },
+  {
+    key: "s40", id: "neonoire-s40", n: 40, partId: "neonoire-part-feature",
+    title: "Plaster rains down", location: "INT. ROADSIDE INN, LOBBY", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. ROADSIDE INN, LOBBY - CONTINUOUS #40#",
+    page: "n40-roadside-inn-lobby-continuous.md", board: "n40-roadside-inn-lobby.md",
+    cast: ["The Masked Men"],
+    grammar: "50mm from shot 172's position.",
+    description: "Two masked men come through the door. A burst into the ceiling; the souvenir case shatters; the CRT keeps playing baseball. BOARDED — 1 shot (178).",
+    lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
+  },
+  {
+    key: "s41", id: "neonoire-s41", n: 41, partId: "neonoire-part-feature",
+    title: "Boots below", location: "INT. ROADSIDE INN, UPSTAIRS CORRIDOR", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. ROADSIDE INN, UPSTAIRS CORRIDOR - CONTINUOUS #41#",
+    page: "n41-roadside-inn-upstairs-corridor-continuous.md", board: "n41-roadside-inn-upstairs-corridor.md",
+    cast: ["Jack", "The Masked Men"],
+    grammar: "50mm from the identical position to shot 173.",
+    description: "Jack at the top of the stairs hears boots below and goes the other way. The stair frame repeated in the cold: the refuge becomes a trap. BOARDED — 1 shot (179).",
+    lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
+  },
+  {
+    key: "s45", id: "neonoire-s45", n: 45, partId: "neonoire-part-feature",
+    title: "The lobby goes dark", location: "INT. ROADSIDE INN, LOBBY", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. ROADSIDE INN, LOBBY - CONTINUOUS #45#",
+    page: "n45-roadside-inn-lobby-continuous.md", board: "n45-roadside-inn-lobby-dark.md",
+    cast: ["The Masked Men"],
+    grammar: "50mm from shot 172's position.",
+    description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 1 shot (180).",
+    lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
+  },
 ];
 
 /**
@@ -571,12 +651,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 170 numbered shots cover scenes 1–12 and 72–100; the other 59 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 180 numbered shots cover scenes 1–12, eight roadside-inn scenes and 72–100; the other 51 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 8–12 and 72–100 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 8–12, the roadside inn (31, 32, 34, 38–41, 45) and 72–100 are boarded; the rest are written, not yet boarded." },
   ],
 };
 

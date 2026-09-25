@@ -23,6 +23,7 @@ import { ishidaEndImages } from "./neonoire/ishida-end-look.mjs";
 import { hiveMorningImages, veraLookDSheet } from "./neonoire/hive-morning-look.mjs";
 import { endingImages, veraLookESheet } from "./neonoire/ending-look.mjs";
 import { kandaReturnImages } from "./neonoire/kanda-return-look.mjs";
+import { innImages, innStairFrames } from "./neonoire/inn-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -56,10 +57,10 @@ validatePatch(project);
 assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 100, "The final screenplay's 100 numbered scenes all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 41, "Scenes 1–12 and 72–100 are boarded");
+assert.equal(boardedIds.size, 49, "Scenes 1–12, eight roadside-inn scenes and 72–100 are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-assert.equal(project.frames.length, 170, "The forty-one boarded scenes carry 170 numbered shots");
+assert.equal(project.frames.length, 180, "The forty-nine boarded scenes carry 180 numbered shots");
 assert.equal(project.characters.length, 15);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -70,8 +71,8 @@ assert.equal(project.brainstorm.length, 6);
 assert(project.moodboards.length >= 3 && project.moodboards.length <= 7, "The boards carried are the ones with keyframes on them");
 for (const board of project.moodboards) assert(board.items.length > 0, `An empty mood board is a dead card: ${board.title}`);
 assert(project.scenes.every(scene => scene.actId === project.acts[0].id), "Every scene belongs to the opening act");
-assert.equal(new Set(project.frames.map(frame => frame.id)).size, 170, "Frame ids are unique");
-assert.equal(new Set(project.frames.map(frame => `${frame.sceneId}/${frame.title}`)).size, 170, "No two shots in a scene share a title");
+assert.equal(new Set(project.frames.map(frame => frame.id)).size, 180, "Frame ids are unique");
+assert.equal(new Set(project.frames.map(frame => `${frame.sceneId}/${frame.title}`)).size, 180, "No two shots in a scene share a title");
 pass(`the bundle validates: ${project.scenes.length} scenes, ${project.frames.length} shots, ${project.characters.length} cast, ${project.moodboards.length} boards`);
 assert(project.notes.some(note => note.id === "neonoire-style-block" && /Neo-Noir Tokyo|35mm Kodak Vision3 500T/.test(note.content)), "The style block should travel with the project");
 assert(project.moodboards.some(b => b.id === "neonoire-look-style" && b.items.length === 9), "The nine keys should be on their own board");
@@ -385,6 +386,20 @@ assert(kanda.filter(f => f.sceneId === "neonoire-s8" || f.sceneId === "neonoire-
 assert(kanda.find(f => f.id === "neonoire-shot-169").characters.includes(castOf("Daniel Voss")), "The photograph of two men shows Daniel Voss");
 pass("scenes 8–12 boarded: nine 16:9 shots — the bar by day, the clip returned, Jack's office, two men laughing, and the strap");
 
+// The roadside inn: the stairway motif and the colour change (warm refuge → the cold at scene 38).
+const inn = project.frames.filter(f => ["s31", "s32", "s34", "s38", "s39", "s40", "s41", "s45"].map(k => `neonoire-${k}`).includes(f.sceneId));
+assert.deepEqual(inn.map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${171 + i}`));
+assert.deepEqual(new Set(inn.map(f => f.image)), new Set(innImages));
+for (const frame of inn) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
+  for (const detail of ["keys/09-the-roadside-inn.jpg", "STAIRWAY MOTIF", "white American"]) assert(frame.notes.includes(detail), `${frame.title} is missing inn continuity: ${detail}`);
+  const warm = ["neonoire-s31", "neonoire-s32", "neonoire-s34"].includes(frame.sceneId);
+  assert(frame.notes.includes(warm ? "THE WARM REFUGE" : "THE COLD, from scene 38"), `${frame.title} carries the wrong half of the colour change`);
+  assert.equal(frame.lighting, warm ? "Practical night" : "Low key");
+}
+assert.deepEqual(innStairFrames.map(image => inn.find(f => f.image === image).id), ["neonoire-shot-173", "neonoire-shot-179"], "The stair frame is shot twice: warm going up, cold with danger coming up");
+pass("the roadside inn boarded: ten 16:9 shots — the warm refuge, the stair frame, four sedans, and the same stairs gone cold");
+
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");
@@ -449,8 +464,8 @@ pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, seale
 
 // Passes are ten shots at a time, in screenplay order — the notes on every frame say which pass.
 for (const [i, frame] of project.frames.entries()) {
-  assert(frame.notes.includes(`Shot ${i + 1} of 170`), `Shot ${i + 1} should say where it sits in the running order`);
-  assert(frame.notes.includes(`Pass ${Math.ceil((i + 1) / 10)} of 17`), `Shot ${i + 1} should name its pass`);
+  assert(frame.notes.includes(`Shot ${i + 1} of 180`), `Shot ${i + 1} should say where it sits in the running order`);
+  assert(frame.notes.includes(`Pass ${Math.ceil((i + 1) / 10)} of 18`), `Shot ${i + 1} should name its pass`);
 }
 pass("passes run ten keyframes at a time, in screenplay order, and every frame carries its pass in the notes");
 
@@ -519,7 +534,7 @@ for (const frame of project.frames) {
 }
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
-assert.equal(imported.frames.length, 170);
+assert.equal(imported.frames.length, 180);
 assert.equal(imported.scenes.length, 100, "A re-import carries the whole final screenplay");
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
@@ -540,7 +555,7 @@ try {
       const id = ${JSON.stringify(project.id)};
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
-      assert.equal(opened.frames.length, 170);
+      assert.equal(opened.frames.length, 180);
       assert.equal(opened.scenes.length, 100);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
