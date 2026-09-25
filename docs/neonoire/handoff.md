@@ -23,6 +23,7 @@ The director's first and lasting request is **scene and character consistency**.
   - The hand-painted noodle-shop sign: `s86/121`.
   - The pale blue umbrella: `s4/34`.
   - The family photograph: `s4/35`.
+- **Re-list reference filenames with `ls` immediately before generating.** Parallel passes rename assets (shot numbers shift when a scene gains a frame); a stale path costs a generation and returns "Source image not found".
 - **Before starting a turn, sync git.** This sandbox has several times reset local git to an old base commit while keeping the files, and the pushed branch has been ahead of the local files (finished work from an earlier, interrupted run). Run `git fetch origin arena/01a0da06-playframe`, compare with `git log FETCH_HEAD -1` and `git diff --stat FETCH_HEAD`, and reset to the remote if it is newer. Never redo work that is already pushed, and never spend generations on it. Run `npm ci` if `node_modules` is missing.
 - **Review every image at full size before installing it** (see rule 2 below): identity, wardrobe, prop, count, direction, and left/right against the neighbouring shots. Past failures were:
   - a car missing its front (shot 140)
