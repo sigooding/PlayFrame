@@ -36,10 +36,15 @@ Boards: [n31](../scenes/n31-roadside-inn.md), [n32](../scenes/n32-roadside-inn-l
 - **How it was made:** every cold frame was generated from its warm counterpart, so the camera never moves and only the light changes.
 - **Planned for scene 50:** a drained blue-grey dawn in the pickup.
 
+## Perspective check (standing rule, added 26 September 2026)
+
+Every image is now checked before install for vehicle count, completeness and direction, screen direction against adjacent shots and POV reverses, headcounts, architecture, and lit practicals. See the handoff's *Standing rules*.
+
 ## Honest caveats
 
 - **Shot 174:** the table is Western height, not a low tatami table.
-- **Shot 175:** three sedans, already stopped; the script has four turning in.
+- **Shot 175, fixed in a follow-up turn:** the perspective check found the first study had three sedans facing *away* from the inn, which contradicted shot 177. It was regenerated in three calls (five cars; mixed directions; then an edit removing the extra car). It now shows four sedans, all facing the inn, though already stopped rather than turning in.
+- **Shot 171:** Jack's car faces the camera, as if reversed in, and is parked centre-left, where shot 175 has it at the far right.
 - **Shot 177:** about ten men, where the script has eight.
 - **Shot 178:** Mr. Noda doesn't read clearly as Japanese and is at the desk rather than diving behind it.
 - **Shot 180:** the CRT is dark, though the script lights the room with it alone.

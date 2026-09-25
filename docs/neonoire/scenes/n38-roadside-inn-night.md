@@ -14,11 +14,11 @@ One shot (175), **16:9, 1920×1080, full-bleed**, numbered in boarding order. Ea
 ---
 
 175. WIDE — 35mm, static, low angle — four black sedans.
-The same frame as shot 171, now dark. The inn's windows are out and the black sedans' xenon beams cut the rain, which shows only inside the beams. Everything is steel blue except the small glow of the vending machine.
+The same frame as shot 171, now dark. Four black sedans have turned in and stopped facing the inn, their tail lights to camera and their xenon beams flooding the dark facade, with the rain showing only inside the beams. Everything is steel blue except the small red tail lights and the vending machine.
 SCRIPT: "One car. Two. Three. Four. Black sedans, one after another, slowing, turning in, gravel crunching."
 CAST: —
 LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-175
 IMAGE: 173-four-black-sedans.jpg
-NOTE: THE COLOUR CHANGE. Generated from shot 171. The study shows three sedans, already stopped; add the fourth and play the turn-in on set.
+NOTE: THE COLOUR CHANGE. **Regenerated after the perspective check:** the first study had three sedans with their headlights toward camera, facing away from the inn, which contradicted shot 177's reverse. This version has exactly four, all facing the inn, consistent with shot 177. It took three calls: one with five cars, one with the middle two facing the wrong way, then an edit removing the extra car. The cars are already stopped, so play the turn-in on set. Jack's car is parked at the far right here but centre-left in shot 171; match the two on set.

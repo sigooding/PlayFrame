@@ -21,4 +21,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-171
 IMAGE: 169-the-only-car.jpg
-NOTE: The scene master, and the warm half of the colour change. Shot 175 is the same frame after the change.
+NOTE: The scene master, and the warm half of the colour change. Shot 175 is the same frame after the change. Perspective check: Jack's car faces the camera, nose away from the inn, as if reversed in; on set, park it nose to the inn at the right of the lot to match shot 175.

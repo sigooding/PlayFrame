@@ -4,6 +4,19 @@
 
 The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **49 scenes, 180 shots**: scenes 1–12, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 180 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
+## Standing rules for every pass (set by the director)
+
+1. **Commit and push at the end of every turn** to `arena/01a0da06-playframe`; never leave work uncommitted.
+2. **Check perspective and geometry in every image before it is installed.** Look at it at full size against the script and the neighbouring shots:
+   - **Vehicles:** the right number; each whole (no missing front or back, not cut off at a door); **facing the direction the action implies** (a car arriving at a building faces the building, a departing car faces away); the same car in the same place and orientation across shots of one scene.
+   - **Screen direction:** left and right, eyelines and the 180° line agree with the adjacent shots and with POV reverses (for example the lot seen from the window and from the ground).
+   - **Headcounts and props:** match the script (four sedans, eight men, one clip).
+   - **Architecture:** stairs, doors and windows lead where the location says they do; verticals are straight; the room matches its master.
+   - **Light and shadow:** direction is plausible, and practicals the script names (a TV, a bulb) are actually lit.
+   If an image fails and a generation is left, regenerate or edit it. If not, log the failure in the board note and the pass ledger as an honest caveat. Never install an image with an unlogged failure.
+3. **Vera's costume changes** always bring a genuinely new coat (a different garment, not a recolour) in a colour that fits the scene.
+4. **The stairway motif and the inn colour change** are described in `scripts/neonoire/inn-look.mjs`.
+
 **Latest session — [the roadside inn boarded](passes/roadside-inn.md): the stairs and the colour change.** Ten shots (171–180), ten calls, boarded ahead of order at the director's request. **Two new standing rules, written in `scripts/neonoire/inn-look.mjs`:**
 
 1. **The stairway motif.** Stage stairs wherever the script allows, from a low, level, static camera square to the flight. Going up means refuge, hope or the past; something coming up, or going down, means danger or loss. The planned uses are scenes 15–16 (the Hive's outside stair), scene 21 plus a scene 10 exit (the office stairwell), scene 28 (stone steps up from the sea wall) and scenes 69 and 71 (matching scene 89).
