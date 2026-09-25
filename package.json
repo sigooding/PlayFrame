@@ -17,7 +17,8 @@
     "build:neonoire": "node scripts/neonoire/build-project.mjs",
     "split:neonoire": "node scripts/neonoire/split-opening.mjs",
     "passes:neonoire": "node scripts/neonoire/pass-prompts.mjs",
-    "verify:neonoire": "node scripts/verify-neonoire.mjs"
+    "verify:neonoire": "node scripts/verify-neonoire.mjs",
+    "review:neonoire": "node scripts/neonoire/review-sheet.mjs"
   },
   "dependencies": {
     "@playwright/test": "^1.63.0",

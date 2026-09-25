@@ -2,7 +2,7 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **60 scenes, 199 shots**: scenes 1–23, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 199 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 18–23](passes/scenes-18-23.md) (shots 191–199); the next image is **shot 200**, asset `s23/198`, the second frame of scene 23, then scenes 24–30.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **65 scenes, 205 shots**: scenes 1–28, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 205 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 23–28](passes/scenes-23-28.md) (shots 200–205); the next image is **shot 206**, asset `s29/204`, Mrs Sakai's kotatsu room, then scenes 29–30 and on. Review sheets are one command now: `npm run review:neonoire -- <out.jpg> s29 s30 ...`.
 
 ## Note to the next agent — how consistency is kept here
 
@@ -98,6 +98,17 @@ Session two delivered the six pending shots and replaced two that failed review:
 8. Board 83 — `s75/81-static-in-a-window.jpg`: grey CRT static in a colour night, no people, then black.
 
 Do not regenerate these without a new instruction, and do not restore any superseded image. Jack has a completed sheet and does not need another generation. What still awaits its own pass: cold-open shots 11–28 and scene 3 (legacy 2.39:1 studies), tracked in [cold-open-revision.md](passes/cold-open-revision.md).
+
+## Colour arc — the temperature of every approach (set by the director, extended each pass)
+
+The film's colour is a story: warmth is refuge and it is taken away. Standing rule 2 holds: the inn (31–37) is warm, from scene 38 the cold arrives, and scene 50 dawns drained. Every pass since assigns each new scene its temperature **before** generating, so the approach is planned, not discovered:
+
+- **18–23:** practical warmth only where people are — the bulb, the lanterns, the arch counter; offices, stairs and rain stay grey.
+- **24:** the coldest room in the film: blue-black glass, one white pool of light on the model, the city an amber circuit board far below.
+- **25:** bulb amber again but darker than 13–20 — warmth turned conspiratorial.
+- **26–27:** institutional green-grey; 27 carries the only warmed midtones before the inn, and earns them.
+- **28:** salt slate and sea green — the coldest daylight in the film.
+- **29 (next):** tatami beige and altar gold, grief draining the room; **30:** black fields, one headlight, the inn sign as the first warm beacon into 31–37.
 
 ## Camera and look
 
