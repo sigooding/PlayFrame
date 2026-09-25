@@ -11,7 +11,7 @@ two continuity sheets.
 | the draft (source of truth) | [`Neonoire_Opening.fountain`](../../Neonoire_Opening.fountain) at the repository root |
 | the screenplay tab, page by page | [`docs/neonoire/screenplay/`](screenplay) — the draft's own bytes under a production header |
 | the numbered shot boards | [`docs/neonoire/scenes/`](scenes) — framing, lens, cast, light, duration, keyframe filename and notes, per shot |
-| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — scenes 4–7 and the apartment/police-station keys are 16:9 (1920×1080); other shots/keys remain 2.39:1 — plus continuity sheets in `public/images/neonoire/sheets/` |
+| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — shots 1–10, scenes 4–7 and the apartment/police-station keys are 16:9 (1920×1080); cold-open shots 11–28 await revision; other shots/keys remain 2.39:1 — plus continuity sheets in `public/images/neonoire/sheets/` |
 | the workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 
 ## Handing the keyframes on
@@ -62,6 +62,10 @@ anyone having to paste it again.
 Keyframes are generated ten at a time, in screenplay order, with the cast sheets attached as
 references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on to pass 7 (shots 61–68). Each pass is
 listed at the foot of its scene's board, and every frame's notes name the pass it came from.
+
+## Cold-open revision status
+
+Shots **1–10 are revised**; shots **11–28 remain legacy 2.39:1 studies**, marked Needs review. Continue from [the revision checklist](passes/cold-open-revision.md), not from the old on-disk images as if they were new masters.
 
 ## Continuity
 

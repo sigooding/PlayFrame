@@ -7,6 +7,10 @@ Cast: MARA VOSS, THE JOURNALIST (40s, unnamed), THE MASKED MEN (two, unnamed)
 Lens plan: 24mm for the room and the floor, 35mm for the shoes and the corners, 50mm for the journalist and the door, 85mm for the face in the blue TV glow.
 Grammar: the room is lit by its own shelves — amber bottles, the blue flicker of a CRT, one door light behind the counter. The camera never moves; the whole scene is watched from where a customer would stand. Two suppressed shots happen off the centre of frame, and the film never shows them happen. Mara's cheap red enamel bird clip remains in her rain-flattened hair from the street, visible wherever framing allows.
 
+## Cold-open revision pending
+
+Shots 19–28 still use their previous 2.39:1 images and are marked **Needs review**. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). Only cold-open shots 1–10 have been revised so far.
+
 ---
 
 19. MEDIUM WIDE — 24mm, static, eye level — the bar.

@@ -7,6 +7,14 @@ Cast: MARA VOSS (24, American), THE OLD MAN (70s, unnamed), THE MASKED MEN (two,
 Lens plan: 24mm for the street and the killing, 35mm for Mara moving, 50mm for covers, 85mm for the phone, the doorway and the key. Nothing longer — the camera stays where a passer-by could stand.
 Grammar: wide and patient. The city lights the scene, not the sky: sodium orange against sick fluorescent green, soft halation, blacks slightly crushed. Cold, steady, patient rain — never glamorous, never a storm. The camera keeps operating after the violence as though the subject has merely walked out of frame. Close-ups are rare, so they count. Nothing is explained. Mara's hair is held back by a cheap enamel clip shaped like a small red bird; it stays pinned through the bar scene.
 
+## Cold-open revision — batch 1
+
+**Shots 1–10 are rebuilt at 16:9, 1920×1080. Shots 11–18 retain their earlier 2.39:1 images and are marked Needs review until the next revision batch.** The whole pre-title cold open includes scene 2 (shots 19–28), which also still awaits revision. Do not mistake the remaining on-disk images for finished revised coverage.
+
+The location master is `s1/01-backstreet.jpg`: left brick barbershop recess, brown door/navy awning, unlit striped pole at the recess’s right edge, one off-white vending machine opposite on the right. Shot 2 is a tighter crop of that master so the vending model and position do not drift. Mara’s face/wardrobe reference is `sheets/mara.jpg`, with the wet look in `s1/03-mara-walks.jpg`; her handbag/phone beat is `s1/05-phone-off.jpg`. The old man’s raincoat and appearance are fixed by `s1/07-old-man.jpg`, and the sedan/two masked men by `s1/08-sedan-arrives.jpg`.
+
+Follow `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md) for subsequent batches. These are AI-generated draft studies, not approved coverage. The screenplay is unchanged.
+
 ---
 
 1. ESTABLISHING — 24mm, static, eye level — EXT. BACKSTREET, KANDA.
@@ -37,7 +45,7 @@ IMAGE: 03-mara-walks.jpg
 NOTE: Track with her at her own pace and keep the wide framing — she is inside the city, not apart from it. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace. Keep the small red enamel bird clip pinned in her soaked hair, visible wherever the framing allows.
 
 4. CLOSE-UP — 85mm, static, eye level — Mara's phone.
-Her phone buzzes; the screen shows the caller, too small and softly blurred to read. Rain on the glass and on her hands. She looks at it. Lets it ring.
+Her phone buzzes; the screen shows the caller, VERA. Rain on the glass and on her hands. She looks at it. Lets it ring.
 SCRIPT: "Her phone BUZZES. The screen: VERA."
 CAST: Mara Voss
 LIGHT: Practical night

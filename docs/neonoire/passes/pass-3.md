@@ -1,5 +1,7 @@
 # NEONOIRE — keyframe pass 3
 
+> **Revision notice:** shots 21–28 below are legacy cold-open briefs. Their new target is 16:9, 1920×1080, but those images have not yet been revised. Follow [cold-open-revision.md](cold-open-revision.md) and `scripts/neonoire/cold-open-look.mjs`; retain the original story beats. Shots 29–30 remain unchanged.
+
 8 shots still to generate: shots 23–30, from scene 2 (INT. SMALL BAR, KANDA) and scene 3 (EXT. VERA'S APARTMENT BUILDING).
 
 **Before you start**
