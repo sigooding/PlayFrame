@@ -58,12 +58,12 @@ validatePatch(project);
 assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 100, "The final screenplay's 100 numbered scenes all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 65, "Scenes 1–28, eight roadside-inn scenes and 72–100 are boarded");
+assert.equal(boardedIds.size, 74, "Scenes 1–45 and 72–100 are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 205;
+const EXPECTED_SHOTS = 214;
 assert.equal(project.frames.length, EXPECTED_SHOTS, "The sixty-five boarded scenes carry 205 numbered shots");
-assert.equal(project.characters.length, 15);
+assert.equal(project.characters.length, 18);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
 assert(project.frames.every(frame => frame.lens), "Every frame declares a lens");
@@ -429,6 +429,14 @@ for (const frame of coast) assert.deepEqual(jpegDimensions(frame.image), [1920, 
 assert(coast.find(f => f.id === "neonoire-shot-201").notes.includes("s83/109-the-fortieth-floor.jpg"), "Shot 201 locks Kurose's office to its scene 83 master");
 assert(coast.find(f => f.id === "neonoire-shot-205").notes.includes("STAIRWAY MOTIF"), "Shot 205 carries the stairway motif, descending");
 pass("scenes 24–28 boarded: five 16:9 shots — the model, the number, the loop, the crossing and the sea-wall steps");
+
+// Scenes 29–44: the inn's missing nights — the widow, the beacon, and the cold coming in.
+const innNights = project.frames.filter(f => ["s29", "s30", "s33", "s35", "s36", "s37", "s42", "s43", "s44"].map(k => `neonoire-${k}`).includes(f.sceneId));
+assert.deepEqual(innNights.map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${206 + i}`));
+for (const frame of innNights) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
+assert(innNights.find(f => f.id === "neonoire-shot-212").notes.includes("steel blue"), "Shot 212 carries the cold");
+assert(innNights.find(f => f.id === "neonoire-shot-209").notes.includes("stair"), "Shot 209 keeps the inn stair in frame");
+pass("scenes 29–44 boarded: nine 16:9 shots — the widow, the beacon, the swollen window, the pink phone, the dark apartment, the eave, and the cold coming in");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 

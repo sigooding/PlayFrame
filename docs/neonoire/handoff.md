@@ -2,7 +2,7 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **65 scenes, 205 shots**: scenes 1–28, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 205 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 23–28](passes/scenes-23-28.md) (shots 200–205); the next image is **shot 206**, asset `s29/204`, Mrs Sakai's kotatsu room, then scenes 29–30 and on. Review sheets are one command now: `npm run review:neonoire -- <out.jpg> s29 s30 ...`.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **74 scenes, 214 shots**: **scenes 1–45 are now fully boarded**, plus 72–100. **All 214 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 29–44](passes/scenes-29-44.md) (shots 206–214), the inn's missing nights; the only unboarded stretch left is **46–71**, next image **shot 215**, asset `s46/213`. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s46 ...`.
 
 ## Note to the next agent — how consistency is kept here
 

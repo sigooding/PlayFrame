@@ -36,6 +36,9 @@ const cast = [
   ["journalist", "The Journalist", "Cold open", "40s", "An untouched beer, a closed notebook, a watched door — and one question asked off camera: where is he. He is killed four shots later and his notebook leaves with the men who did it. Unnamed in the opening; he speaks Japanese.", ["Waiting", "Private", "Unlucky"], "clay", undefined],
   ["young-officer", "The Young Officer", "Front counter", "20s", "Takes a missing-person report with polite boredom until the name Mara Voss comes up on the monitor. Then he turns away from her and makes a quiet phone call, and comes back politer than he was. Unnamed in the opening.", ["Polite", "Bored", "Changed"], "sand", "young-officer"],
   ["ishida", "Detective Ishida", "Police", "50s", "Gentle, unhurried, tired in a way that looks like decency, with excellent English he offers as a courtesy. He asks about Kanda, gives Vera his card and tells her to call at any hour — then opens a drawer with her sister's purse in it and closes it again.", ["Kind", "Unhurried", "Deciding"], "sage", "ishida"],
+  ["mrs-sakai", "Mrs. Sakai", "Sakai's widow", "70s", "Japanese. Seventies, small and hard, fifteen years alone with a kotatsu and a television with no sound. She pours tea she does not want to pour, then tells the truth about her husband's last year: the temple, the doctor, being glad. No identity sheet yet: held to the scene 29 master.", ["Hard", "Grieving", "Plain-spoken"], "clay", undefined],
+  ["mrs-noda", "Mrs. Noda", "Innkeeper, roadside inn", "60s", "Japanese. Sixties, broad and unbothered, sleeves rolled, an apron over a cardigan. She runs the roadside inn with Mr. Noda: the sticking back door, the steamy window, the truck parked crooked with the keys in it. She smokes on the step under the eave, and crouches behind the steel counter when the boots come. No identity sheet yet: held to the scene 33 master.", ["Unbothered", "Kind", "Steady"], "clay", undefined],
+  ["mr-noda", "Mr. Noda", "Innkeeper, roadside inn", "70s", "Japanese. Seventies, thin and slow-moving, a cardigan over his shirt, asleep in front of the night baseball with the game still on. He parks the old pickup crooked across the path, and has promised to fix the back door since the Olympics. No identity sheet yet: held to the scene 35 master.", ["Slow", "Gentle", "Asleep"], "sage", undefined],
   ["okada", "Okada", "Bar owner", "60s", "Japanese. Sixties, the owner of the small Kanda bar where the journalist died. Gaunt, close-cropped white hair, a lined tired face, a white shirt with the sleeves rolled and a dark navy apron. He kept Sakai's cassette in the tray of his cash drawer. When he sees Jack's face and hands he doesn't ask; he pours two glasses instead. No identity sheet yet: held to the scene 81 master.", ["Discreet", "Loyal", "Weary"], "sand", undefined],
   ["harada", "Harada", "Editor, Toto Shimbun", "50s", "Japanese. Fifties, the editor of the Toto Shimbun; the dead journalist was her reporter. Grey hair in a short bob, reading glasses, a white blouse with the sleeves rolled. She presses PLAY, names Kurose, warns Jack he will be named, and opens a notebook to a clean page. No identity sheet yet: held to the scene 82 master.", ["Exacting", "Grieving", "Resolute"], "sage", undefined],
   ["kurose", "Kurose", "Chairman, Kurose Development", "70s", "Japanese. Seventies, the chairman of Kurose Development, whose redevelopment model puts a fountain where the Hive stands. Silver hair combed back, a beautiful dark navy suit, the stillness of a man who has never had to hurry. His English is perfect and old-fashioned. Courteous and curious, he pours the tea himself. Good men are very expensive. No identity sheet yet: held to the scene 83 master.", ["Courteous", "Patient", "Ruthless"], "rose", undefined],
@@ -53,6 +56,9 @@ characters.find(c => c.id === characterId("daniel")).image = "/images/neonoire/s
 characters.find(c => c.id === characterId("okada")).image = "/images/neonoire/s81/100-the-bar-in-daylight.jpg";
 characters.find(c => c.id === characterId("harada")).image = "/images/neonoire/s82/104-the-newsroom.jpg";
 characters.find(c => c.id === characterId("kurose")).image = "/images/neonoire/s83/110-very-expensive.jpg";
+characters.find(c => c.id === characterId("mrs-sakai")).image = "/images/neonoire/s29/204-the-tea-she-does-not-want-to-pour.jpg";
+characters.find(c => c.id === characterId("mrs-noda")).image = "/images/neonoire/s33/206-the-window-swollen-shut.jpg";
+characters.find(c => c.id === characterId("mr-noda")).image = "/images/neonoire/s35/207-the-pink-payphone.jpg";
 characters.find(c => c.id === characterId("kaneko")).image = "/images/neonoire/s86/123-fifty-years.jpg";
 characters.find(c => c.id === characterId("radio-repairman")).image = "/images/neonoire/s87/124-the-repairman.jpg";
 characters.find(c => c.id === characterId("young-detective")).image = "/images/neonoire/s96/143-the-box.jpg";
@@ -734,6 +740,96 @@ export const SCENES = [
     description: "Grey sea, grey sky, salt-scoured paint. Jack's car on the sea wall and the stone steps going down to the slipway — the stairway motif, descending, into a dead man's past. BOARDED — 1 shot (205).",
     lightingNotes: "Salt slate and sea green; the coldest daylight in the film.",
   },
+  {
+    key: "s29", id: "neonoire-s29", n: 29, partId: "neonoire-part-feature",
+    title: "The tea she does not want to pour", location: "INT. MRS. SAKAI'S HOUSE", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. MRS. SAKAI'S HOUSE - DAY #29#",
+    page: "n29-mrs-sakai-s-house-day.md", board: "n29-mrs-sakai-house-day.md",
+    cast: ["Jack", "Mrs. Sakai"],
+    grammar: "35mm across the kotatsu; the altar keeps the only smile.",
+    description: "Fifteen years apart and the police already came. Mrs Sakai pours tea she doesn't want to pour, then tells him about the temple, the doctor, and a man glad he could stop being afraid of the wrong thing. The receipts: rent paid on something, somewhere. BOARDED — 1 shot (206).",
+    lightingNotes: "Tatami beige, altar gold, television blue-grey; grief draining the warmth.",
+  },
+  {
+    key: "s30", id: "neonoire-s30", n: 30, partId: "neonoire-part-feature",
+    title: "A light ahead", location: "EXT. COUNTRY HIGHWAY", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. COUNTRY HIGHWAY - NIGHT #30#",
+    page: "n30-country-highway-night.md", board: "n30-country-highway-night.md",
+    cast: ["Jack"],
+    grammar: "35mm from the black field; the sign is the only warmth.",
+    description: "Rain, black fields, one headlight dimmer than the other — and ahead the roadside inn's sign with half its bulbs dead: the beacon that opens the warm inn. BOARDED — 1 shot (207).",
+    lightingNotes: "Black fields, wet road, tungsten only at the sign.",
+  },
+  {
+    key: "s33", id: "neonoire-s33", n: 33, partId: "neonoire-part-feature",
+    title: "The window swollen shut", location: "INT. ROADSIDE INN, CORRIDOR AND BATH", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. ROADSIDE INN, CORRIDOR AND BATH - CONTINUOUS #33#",
+    page: "n33-roadside-inn-corridor-and-bath-continuous.md", board: "n33-inn-corridor-and-bath.md",
+    cast: ["Jack", "Mrs. Noda"],
+    grammar: "35mm down the corridor; the window is the scene.",
+    description: "The sticking back door, the kitchen, and the small tiled bath with its deep tub and one high window, fogged and swollen shut. Jack notices the window. He notices everything; nobody in the scene knows it. BOARDED — 1 shot (208).",
+    lightingNotes: "Warm tungsten and steam haze; the inn still refuge.",
+  },
+  {
+    key: "s35", id: "neonoire-s35", n: 35, partId: "neonoire-part-feature",
+    title: "The pink payphone", location: "INT. ROADSIDE INN, LOBBY", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. ROADSIDE INN, LOBBY - NIGHT #35#",
+    page: "n35-roadside-inn-lobby-night.md", board: "n35-inn-lobby-payphone.md",
+    cast: ["Jack", "Mr. Noda"],
+    grammar: "35mm frontal; intercut with scene 36.",
+    description: "Mr Noda asleep in front of the baseball while Jack feeds the pink payphone coins, receipts in his fist: maybe, I'll know tomorrow. Neither of them hangs up until the coins run out. BOARDED — 1 shot (209).",
+    lightingNotes: "Warm lobby tungsten against the baseball's cold green.",
+  },
+  {
+    key: "s36", id: "neonoire-s36", n: 36, partId: "neonoire-part-feature",
+    title: "Come back safe anyway", location: "INT. VERA'S APARTMENT", time: "NIGHT",
+    kind: "Standard", lighting: "Low key", slugline: "INT. VERA'S APARTMENT - NIGHT #36#",
+    page: "n36-vera-s-apartment-night.md", board: "n36-vera-apartment-night.md",
+    cast: ["Vera Voss"],
+    grammar: "50mm at floor height; the phone light is the only lamp.",
+    description: "Mara? — no: it's me. Vera on the floor in the dark with the phone's small warm light, come back safe, come back safe anyway, and both of them holding on a moment longer than they need to. BOARDED — 1 shot (210).",
+    lightingNotes: "A warm pool of phone light in a cold dark room.",
+  },
+  {
+    key: "s37", id: "neonoire-s37", n: 37, partId: "neonoire-part-feature",
+    title: "The keys are always in it", location: "INT. ROADSIDE INN, KITCHEN DOORWAY", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. ROADSIDE INN, KITCHEN DOORWAY - NIGHT #37#",
+    page: "n37-roadside-inn-kitchen-doorway-night.md", board: "n37-inn-kitchen-doorway.md",
+    cast: ["Jack", "Mrs. Noda"],
+    grammar: "35mm from inside the doorway; the last warm night.",
+    description: "Jack can't sleep; the back door stands open to the rain and Mrs Noda sits on the step under the eave smoking. Don't tell my husband. The muddy yard, the gate, and the pickup parked crooked with the keys always in it. BOARDED — 1 shot (211).",
+    lightingNotes: "Doorway tungsten behind, blue rain beyond; warmth with an omen.",
+  },
+  {
+    key: "s42", id: "neonoire-s42", n: 42, partId: "neonoire-part-feature",
+    title: "The third time", location: "INT. ROADSIDE INN, BATHROOM", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. ROADSIDE INN, BATHROOM - CONTINUOUS #42#",
+    page: "n42-roadside-inn-bathroom-continuous.md", board: "n42-inn-bathroom-escape.md",
+    cast: ["Jack"],
+    grammar: "35mm from the doorway; the warm room gone steel blue.",
+    description: "Dark, steam still hanging: Jack on the tub's edge hits the swollen frame until it cracks and rain pours in — boots in the corridor. He hauls himself through. BOARDED — 1 shot (212).",
+    lightingNotes: "Steel blue and blue-black; rain white through the cracked frame.",
+  },
+  {
+    key: "s43", id: "neonoire-s43", n: 43, partId: "neonoire-part-feature",
+    title: "Wet tin", location: "EXT. ROADSIDE INN, KITCHEN ROOF", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. ROADSIDE INN, KITCHEN ROOF - CONTINUOUS #43#",
+    page: "n43-roadside-inn-kitchen-roof-continuous.md", board: "n43-inn-kitchen-roof.md",
+    cast: ["Jack"],
+    grammar: "35mm from the yard; one warm spill above.",
+    description: "A low slope of wet tin below the bathroom window: Jack drops onto it, slides, catches the gutter, swings down. BOARDED — 1 shot (213).",
+    lightingNotes: "Steel blue rain, one warm spill from the cracked bathroom window.",
+  },
+  {
+    key: "s44", id: "neonoire-s44", n: 44, partId: "neonoire-part-feature",
+    title: "Stay whatever you hear", location: "INT. ROADSIDE INN, KITCHEN", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. ROADSIDE INN, KITCHEN - CONTINUOUS #44#",
+    page: "n44-roadside-inn-kitchen-continuous.md", board: "n44-inn-kitchen-pantry.md",
+    cast: ["Jack", "Mrs. Noda"],
+    grammar: "35mm along the counter; whispered, low, level.",
+    description: "Through the back door into the kitchen where Mrs Noda crouches rigid behind the steel counter: stay, whatever you hear; I'll get him. Then low along the wall towards the lobby. BOARDED — 1 shot (214).",
+    lightingNotes: "Cold steel blue with one tungsten bulb over the counter.",
+  },
 ];
 
 /**
@@ -811,7 +907,7 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 205 numbered shots cover scenes 1–28, eight roadside-inn scenes and 72–100; the other 35 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 214 numbered shots cover scenes 1–45 and 72–100; the other 26 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
