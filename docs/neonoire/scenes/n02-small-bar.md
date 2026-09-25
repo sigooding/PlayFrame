@@ -9,7 +9,7 @@ Grammar: the room is lit by its own shelves — amber bottles, the blue flicker 
 
 ## Cold-open revision pending
 
-Shots 19–21 were rebuilt 16:9 on 26 September 2026; shots 22–28 still use their previous 2.39:1 images and are marked **Needs review**. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). Only cold-open shots 1–21 have been revised so far.
+Shots 19–28 are rebuilt 16:9, 1920×1080 — 19–21 and 22–28 on 26 September 2026 — so scene 2, and with it the whole pre-title cold open, is wholly in the revised look. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). All cold-open shots 1–28 are now revised; nothing of scene 2 awaits revision.
 
 ---
 
@@ -92,7 +92,7 @@ CAST: The Masked Men
 LIGHT: Practical night
 TIME: 12
 IMAGE: 27-the-notebook.jpg
-NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not.
+NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not. Carried caveat (26 September 2026): the notebook cover reads pale grey in this frame against the darker cover on the counter in shot 20; the board names no colour, and the beat holds, so the mismatch is logged here rather than spent a generation on.
 
 28. CLOSE-UP — 85mm, static, eye level — Mara in the blue TV glow.
 She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.

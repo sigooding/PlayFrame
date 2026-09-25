@@ -495,15 +495,20 @@ assert(frameFormat({ key: "s5" }).startsWith("16:9"));
 assert(frameFormat({ key: "s6" }).startsWith("16:9"));
 assert(frameFormat({ key: "s7" }).startsWith("16:9"));
 assert(frameFormat({ key: "s3" }).startsWith("16:9"), "The final screenplay puts every scene's images in 16:9");
-// Scene 3's frames are the remaining legacy scope studies: honest, labelled, Needs review.
+// Scene 3: 29–31 rebuilt 16:9 on 26 September 2026; the laundry insert (32) is the last legacy scope study anywhere — honest, labelled, Needs review.
 const block3 = project.frames.filter(frame => frame.sceneId === "neonoire-s3");
 assert.equal(block3.length, 4);
-for (const frame of block3) {
+const legacy3 = block3.filter(frame => frame.image.endsWith("32-laundry-in-the-rain.jpg"));
+assert.equal(legacy3.length, 1, "Only the laundry insert remains legacy in scene 3");
+for (const frame of block3.filter(f => !legacy3.includes(f))) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is rebuilt in 16:9`);
+}
+for (const frame of legacy3) {
   assert.deepEqual(jpegDimensions(frame.image), [1912, 800], `${frame.title}: legacy image must not masquerade as a revised frame`);
   assert.equal(frame.status, "Needs review", `${frame.title} awaits the 16:9 revision`);
   assert(frame.notes.includes("16:9 REVISION PENDING"), `${frame.title} should name its pending revision`);
 }
-pass("scene 3's four legacy frames are labelled 16:9 revision pending rather than silently cropped");
+pass("scene 3: three frames rebuilt 16:9; the laundry insert stays labelled 16:9 revision pending rather than silently cropped — the last legacy frame in the film");
 pass("all ten apartment JPEGs and their key are 1920×1080; pendant removal and prop/cast continuity are recorded");
 
 const interview = project.frames.filter(frame => frame.sceneId === "neonoire-s6");
