@@ -10,7 +10,7 @@ The sequence is now in dramatic order: stop/approach → blows/folding/rejection
 
 Vera: canonical face, rain-ruined makeup, soaked wine-red silk dress; RIGHT foot bare, LEFT court shoe on. Jack: `sheets/jack.jpg` and `jack-face.jpg`, age 48, an original Japanese casting design for the former detective, not the Voss father. The actual father is Daniel Voss. No replacement father/daughter relationship is invented.
 
-**75–77 generated; 78 pending.** The nine shot images plus Jack's sheet exhaust this session's ten generations. Stable IDs and asset names are retained even though the board order now follows the action correctly. These remain AI-generated draft studies; exact blocking distances require production review.
+**75–78 generated.** The nine shot images plus Jack's sheet (session one) and this session's eight generations complete the scene. Stable IDs and asset names are retained even though the board order now follows the action correctly. These remain AI-generated draft studies; shot 75's keyframe was regenerated in session two so the opening twenty-metre stop is now actually pictured at distance — the production caveats below keep only what still needs eyes.
 
 ---
 
@@ -22,7 +22,7 @@ LIGHT: Practical night
 TIME: 26
 ID: neonoire-shot-74
 IMAGE: 74-twenty-metres-apart.jpg
-NOTE: Replacement generated. The keyframe studies a pause during her approach, closer than the scripted initial twenty-metre stop; it is NOT evidence that the opening blocking distance is solved. Stage the opening gap at twenty metres in production. Static camera, not a tracking approach. This is the revised location master: two machines left, awning right, riveted columns and grey shutters. She says Don't; he stops. No score.
+NOTE: Replacement regenerated in session two. The keyframe now pictures the scripted opening separation itself: Vera small by the two machines screen-left, Jack small under the awning screen-right, the empty shining street carrying a third of the frame between them — the twenty-metre gap is on screen, not deferred to production staging. She says Don't; he stops. No score. No blood, no injury smear on the asphalt.
 
 76. WIDE — 50mm, static, low level — one desperate blow, then the hands fall.
 Low level locked 50mm full-body two-shot at 70cm, with room around both figures. Vera has crossed to Jack and presses one desperate fist into his chest. He takes it without lifting his hands. Wet ash-blonde hair, thin washed mascara trails, same dark wine-red calf-length silk dress, RIGHT foot bare and LEFT red court heel. Hold the same setup through the weaker blows, her folding to the pavement, the brief grasp of his coat and her rejection. He kneels but does not touch her again.
@@ -52,4 +52,4 @@ LIGHT: Practical night
 TIME: 4
 ID: neonoire-shot-76
 IMAGE: 76-the-reflection.jpg
-NOTE: REPLACEMENT PENDING — ignore the old reflection study. Use only the new street and umbrella masters; face deliberately unreadable. The altered reflection lasts less than one second WITHIN this four-second working insert, never four seconds of a visible ghost. Return to shot 77's locked camera for the train and the late score. This is uncertainty, not an explained supernatural event.
+NOTE: Replacement generated in session two from the new aftermath master and the pale-blue umbrella reference; the face is deliberately unreadable and no person is directly visible — only the water. The altered reflection lasts less than one second WITHIN this four-second working insert, never four seconds of a visible ghost. Return to shot 77's locked camera for the train and the late score. This is uncertainty, not an explained supernatural event.

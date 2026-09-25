@@ -152,7 +152,7 @@ export const SCENES = [
     page: "n73-tokyo-streets-night.md", board: "n73-tokyo-streets.md",
     cast: ["Vera Voss"],
     grammar: "Tokyo Story in colour: low, level, static 50mm. Rain undoes makeup; right shoe lost, left shoe stays. No tracking or score.",
-    description: "Vera leaves the hotel and runs badly through cold rain, no coat or umbrella, in a wine-red silk calf-length dress. Her hair plasters to her face and her carefully applied mascara begins to run. An ivory vending machine lights the street without caring. At the red crossing she loses her RIGHT red court shoe and continues with the LEFT shoe on. BOARDED — 4 shots (71–74); two replacements generated, two pending.",
+    description: "Vera leaves the hotel and runs badly through cold rain, no coat or umbrella, in a wine-red silk calf-length dress. Her hair plasters to her face and her carefully applied mascara begins to run. An ivory vending machine lights the street without caring. At the red crossing she loses her RIGHT red court shoe and continues with the LEFT shoe on. BOARDED — 4 shots (71–74); all four regenerated in the Tokyo Story colour revision.",
     lightingNotes: "Warm hotel doorway falls away; cold-white ivory vending machine, faint distant sodium amber and a small red crossing signal. Fine steady rain, black asphalt, muted olive shutters. No moonlight, sky fill, glossy neon or rain glamour.",
   },
   {
@@ -162,7 +162,7 @@ export const SCENES = [
     page: "n74-empty-street-under-the-tracks-night.md", board: "n74-empty-street-under-the-tracks.md",
     cast: ["Vera Voss", "Jack"],
     grammar: "Tokyo Story in colour: static 50mm; approach, blows, collapse, rejection. 35mm aftermath wide; ambiguous reflection. Late score.",
-    description: "Under the railway, Vera meets Jack, the 48-year-old former detective, not her father. His charcoal coat is soaked, hands dark and unwashed. She approaches, hits his chest, folds to her knees, briefly grasps his coat and pushes him away. She sits; he kneels a few feet apart, not touching. A reflection almost suggests a pale-blue umbrella. BOARDED — 4 shots (75–78), reordered to follow the dramatic action; three replacements generated, reflection pending.",
+    description: "Under the railway, Vera meets Jack, the 48-year-old former detective, not her father. His charcoal coat is soaked, hands dark and unwashed. She approaches, hits his chest, folds to her knees, briefly grasps his coat and pushes him away. She sits; he kneels a few feet apart, not touching. A reflection almost suggests a pale-blue umbrella. BOARDED — 4 shots (75–78), reordered to follow the dramatic action; all four generated, the twenty-metre stop now staged at distance in the keyframe.",
     lightingNotes: "Same two cold ivory vending machines on the left, shallow corrugated awning on the right and grey shutters under riveted railway beams. Machine-white columns of steady rain, faint distant amber, a ribbon of train windows. No overhead film light, sky fill, monochrome grade or heroic rim light.",
   },
   {
@@ -172,7 +172,7 @@ export const SCENES = [
     page: "n75-ext-various-night-series-of-shots.md", board: "n75-still-frames.md",
     cast: [],
     grammar: "Five static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. Then black.",
-    description: "Five still frames, no people: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static. BOARDED — 5 shots (79–83); shoe and lounge replaced, the final three pending. No black-and-white treatment and no early demolition.",
+    description: "Five still frames, no people: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static. BOARDED — 5 shots (79–83); all five generated. No black-and-white treatment and no early demolition.",
     lightingNotes: "Each still keeps its own ordinary practical: machine-white puddle light, the lounge's one amber lamp, a dim old sign, the grey CRT. Muted natural colour, no spotlit product look; no person or reflected silhouette.",
   },
   {

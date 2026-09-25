@@ -27,7 +27,7 @@
 | Workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 | Next-agent handoff | [`handoff.md`](handoff.md), [revision ledger](passes/tokyo-streets-revision.md) |
 
-**80 of 86 shot images are active.** Of the existing opening images, shots 11–28 and scene 3 are still legacy 2.39:1 studies pending their separate 16:9 revision; see [cold-open-revision.md](passes/cold-open-revision.md). Scene 76 images are unchanged by the current pass. Neither group is claimed as freshly regenerated.
+**All 86 shot images are on disk** — the Tokyo Story colour revision of scenes 72–75 completed in two sessions (10 + 8 generation calls). Of the existing opening images, shots 11–28 and scene 3 are still legacy 2.39:1 studies pending their separate 16:9 revision; see [cold-open-revision.md](passes/cold-open-revision.md). Scene 76 images are unchanged by the current pass. Neither group is claimed as freshly regenerated.
 
 ## Opening the revision
 

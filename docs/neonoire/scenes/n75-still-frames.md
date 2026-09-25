@@ -6,7 +6,7 @@ The [screenplay page](../screenplay/n75-ext-various-night-series-of-shots.md) is
 
 **Shots 79–83**, 1920×1080 full-bleed. Five low level 50mm static pillow shots, no people, no camera movements. Colour rather than monochrome: ivory practicals, restrained amber, dull green, black rainwater and one wine-red shoe. The objects are not dramatic inserts with spotlighting; they are the city continuing without her.
 
-**79–80 replaced in this session. 81–83 await regeneration**, with old images removed rather than presented as revised. No people anywhere, including in reflections, windows or small background silhouettes. The Hive remains whole: it is shut, not the demolition later in the script.
+**79–83 replaced in this session.** The five pillow shots are complete, and the series is whole: no people anywhere, including in reflections, windows or small background silhouettes. The Hive remains whole: it is shut, not the demolition later in the script.
 
 ---
 
@@ -38,7 +38,7 @@ LIGHT: Practical night
 TIME: 9
 ID: neonoire-shot-79
 IMAGE: 79-the-hive-shut.jpg
-NOTE: REPLACEMENT PENDING — do not use the discarded image or invent a ruined building. Draw the night from the new street master, but do not transplant the hotel's architecture. Keep the old sign dim and unreadable; the script has three more days before demolition.
+NOTE: Replacement generated in session two. Do not use the discarded image or invent a ruined building. The night palette is drawn from the new street masters, but the hotel's architecture is not transplanted here: this is its own old noodle-shop front under an ordinary dark tower. The old sign stays dim and unreadable; the script has three more days before demolition.
 
 82. FULL — 50mm, static, low level — the machine, waiting.
 A low level static 50mm camera at 70cm holds the SAME scuffed ivory vending machine from the run, full height, with its muted red side strip, cold drinks display, payment panel on the right, green shutter and shallow gutter. The machine is lit, rain falls through it, and no one passes or appears in reflection.
@@ -48,7 +48,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-80
 IMAGE: 80-the-machine-waits.jpg
-NOTE: REPLACEMENT PENDING — attach NEW s73/70-not-elegantly-badly.jpg and s75/77-the-red-shoe.jpg, not a legacy style key. Match machine proportions, panels, kerb and cold light. No red shoe relocated to a new puddle or inserted unnecessarily; this is the machine, not a repeat of shot 79.
+NOTE: Replacement generated in session two from NEW s73/70-not-elegantly-badly.jpg, not a legacy style key. Machine proportions, red side panel, right-hand payment panel, green shutter, kerb and cold light all match the run master. No red shoe relocated to a new puddle or inserted unnecessarily; this is the machine, not a repeat of shot 79.
 
 83. INSERT — 50mm, static, low level — snow in a shop window.
 From a low level locked camera at 70cm, a small old boxy CRT sits inside a dark shop window showing only grey static. Wet glass reflects indistinct empty street architecture, not a person. Enough window frame remains around the television to read as a place, not a floating screen. Restrained muted colour surrounds the grey snow.
@@ -58,4 +58,4 @@ LIGHT: Practical night
 TIME: 7
 ID: neonoire-shot-81
 IMAGE: 81-static-in-a-window.jpg
-NOTE: REPLACEMENT PENDING — ignore the old study. Same practical-light colour grammar, no programme, face, news ticker or readable overlay. Then CUT TO BLACK as the screenplay specifies; do not generate a title card or a sixth montage image.
+NOTE: Replacement generated in session two. Same practical-light colour grammar, no programme, face, news ticker or readable overlay. Then CUT TO BLACK as the screenplay specifies; do not generate a title card or a sixth montage image.

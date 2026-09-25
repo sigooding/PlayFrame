@@ -8,7 +8,7 @@ The [screenplay page](../screenplay/n73-tokyo-streets-night.md) is unchanged.
 
 Vera's face is locked to `sheets/vera-face.jpg`; dress and shoes to the new `s72/69-the-wait.jpg`. Her pretty intact makeup survives the lounge and begins to wash away only after she enters rain. Thin diluted mascara trails, wet shoulder-length hair, no horror-mask streaks. **RIGHT shoe is lost; LEFT shoe remains** from shot 74 onward. The screenplay does not specify a side; this is the image-continuity lock.
 
-First session: **72 and 74 replaced**. **71 and 73 await regeneration**; old images have been removed from the active board. Asset prefixes and stable IDs retain the older numbering; the displayed shot numbers below include the newly boarded scene 72.
+First session: **72 and 74 replaced**. Second session (this pass): **71 and 73 replaced** — all four shots of scene 73 are now regenerated in the revised grammar; the old 35mm tracking studies are gone entirely.
 
 ---
 
@@ -20,7 +20,7 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-69
 IMAGE: 69-vera-runs.jpg
-NOTE: REPLACEMENT PENDING — generate from the NEW hotel master s72/69-the-wait.jpg and sheets/vera-face.jpg, not the discarded street study. The pale-blue umbrella stays inside the hotel; no bag or coat appears on Vera. Camera stays low and level, not an upward hero angle. No score.
+NOTE: Replacement generated in session two from the NEW hotel master s72/69-the-wait.jpg and sheets/vera-face.jpg, not the discarded street study. The pale-blue umbrella stays inside the hotel; no bag or coat appears on Vera. Camera stays low and level, not an upward hero angle. Makeup is still pretty and intact at the threshold; only the rain undoes it. No score.
 
 72. FULL — 50mm, static, low level — badly, in heels.
 From a locked low level camera at 75cm, Vera's full figure stumbles through a still architectural frame beside a scuffed ivory vending machine and dull-green shutter under riveted railway beams. Her right hand briefly presses her chest because she cannot breathe, and she forces herself onward. Same wine-red cowl-neck calf-length silk dress, both low red court shoes still on. Rain plasters her ash-blonde fringe and begins washing the mascara into thin natural trails. The machine's cold white light, not the sky, finds her face.
@@ -40,7 +40,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-71
 IMAGE: 71-the-machine-glows.jpg
-NOTE: REPLACEMENT PENDING — use NEW s73/70-not-elegantly-badly.jpg for machine geometry and sheets/vera-face.jpg for identity, never the old image or an old style key. No tracking. Hold the architecture after she passes; this sets up the empty-machine pillow shot 82.
+NOTE: Replacement generated in session two from NEW s73/70-not-elegantly-badly.jpg for machine geometry and sheets/vera-face.jpg for identity, never the old image or an old style key. No tracking. She still wears BOTH shoes here; mascara has begun to wash into thin trails. Hold the architecture after she passes; this sets up the empty-machine pillow shot 82.
 
 74. FULL — 50mm, static, low level — one shoe left behind.
 A fixed low level camera at 35cm holds the shallow gutter puddle as Vera stumbles away toward the crossing. Her RIGHT red closed-toe court shoe lies on its side in the foreground, toe left and heel right, beside a rectangular drain grate under the ivory vending machine's light. Her RIGHT foot is now bare; LEFT shoe remains. Same wet calf-length wine-red silk dress and soaked shoulder-length blonde hair. She runs on, leaving the shoe and the frame behind.
@@ -50,4 +50,4 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-72
 IMAGE: 72-the-lost-heel.jpg
-NOTE: Replacement generated. Lock this exact shoe, side, puddle, kerb, machine base and drain for shot 79. No detached second shoe; no new shoes for the confrontation. The signal is red, but not a wash of red theatrical light. Keyframe is after the skid, not the injury itself. Same side of the action throughout.
+NOTE: Replacement regenerated in session two so the puddle, kerb, drain grate and shoe orientation now match the shot 79 still life exactly. Lock this exact shoe, side, puddle, kerb, machine base and drain for shot 79. No detached second shoe; no new shoes for the confrontation. The signal is red, but not a wash of red theatrical light. Keyframe is after the skid, not the injury itself. Same side of the action throughout.

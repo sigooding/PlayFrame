@@ -23,7 +23,7 @@ import { apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
-import { aftermathLook, streetsLook, streetsScenes } from "./streets-look.mjs";
+import { aftermathLook, streetsLook, streetsPassTwoImages, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -112,7 +112,9 @@ const frames = shots.map(shot => {
       absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
         : streetsScenes.has(shot.scene.key)
-          ? "Image: AI-generated Tokyo Story colour revision, session one (25 September 2026). Nine new shot studies plus Jack's identity sheet used ten image-generation calls. Replaces the earlier image, never uses it as a reference. Production approval pending."
+          ? (streetsPassTwoImages.includes(path)
+              ? "Image: AI-generated Tokyo Story colour revision, session two (25 September 2026). The six pending replacements plus the lost-heel and twenty-metre continuity replacements used eight image-generation calls; two slots were held back. Replaces the earlier image, never uses it as a reference. Production approval pending."
+              : "Image: AI-generated Tokyo Story colour revision, session one (25 September 2026). Nine new shot studies plus Jack's identity sheet used ten image-generation calls. Replaces the earlier image, never uses it as a reference. Production approval pending.")
           : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       ...(isColdOpenScene(shot.scene.key) ? [shot.n <= coldOpenCompletedThrough
         ? `Cold-open visual revision: ${coldOpenLook}`
@@ -197,7 +199,7 @@ const boardOf = (id, title, description, list) => ({
 });
 const framesOf = keys => frames.filter(frame => frame.image && keys.includes(frame.sceneId));
 const allBoards = [
-  boardOf("neonoire-look-tokyo-story", "Tokyo Story in colour — scenes 72–75", "Nine new 16:9 draft studies: dry pretty makeup in the hotel, rain-washed grief, the distant confrontation and empty pillow shots. Six remaining shots are placeholders, not legacy pictures. Low level static cameras; one normal-lens face shot, then a withheld extreme wide.", framesOf(["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated revision study.` }))),
+  boardOf("neonoire-look-tokyo-story", "Tokyo Story in colour — scenes 72–75", "All fifteen 16:9 draft studies across both sessions: dry pretty makeup in the hotel, rain washing it away on the run, the twenty-metre stop, the blow and folding, the distant aftermath, the almost-reflection, and the empty pillow shots. Low level static cameras; one normal-lens face shot, then a withheld extreme wide.", framesOf(["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated revision study.` }))),
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, rain-grey glass and muted amber practical light inside the revised apartment, a bone-dry pale-blue umbrella and a faded warm family photograph.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),

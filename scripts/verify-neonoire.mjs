@@ -14,7 +14,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { build } from "esbuild";
 import { SCENES, parseBoard, readBoard } from "./neonoire/plan.mjs";
-import { streetsPassOneImages } from "./neonoire/streets-look.mjs";
+import { streetsPassOneImages, streetsPassTwoImages } from "./neonoire/streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const cache = join(root, "node_modules/.cache/verify-neonoire");
@@ -147,31 +147,33 @@ for (const frame of coldOpen) {
 }
 pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
 
-// Scenes 72–75: nine new 16:9 shot studies plus Jack's reference use exactly ten calls.
-// Six discarded images MUST remain honest empty slots until their replacement pass arrives.
+// Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
+// pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
+// together complete every keyframe. The old street studies stay retired either way.
 const streets = project.frames.filter(frame => ["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"].includes(frame.sceneId));
 assert.equal(streets.length, 15, "Two lounge, four run, four confrontation and five pillow shots");
-assert.equal(streets.filter(f => f.image).length, 9);
-assert.equal(streetsPassOneImages.length, 10, "The generation budget includes Jack's sheet");
+assert.equal(streets.filter(f => f.image).length, 15, "Both sessions delivered: no placeholder slots remain in scenes 72–75");
+assert.equal(streetsPassOneImages.length, 10, "The session-one budget includes Jack's sheet");
 assert.equal(new Set(streetsPassOneImages).size, 10);
-for (const image of streetsPassOneImages) assert.deepEqual(jpegDimensions(image), [1920, 1080], `${image}: native delivery must be 16:9`);
-assert.deepEqual(new Set(streets.filter(f => f.image).map(f => f.image)), new Set(streetsPassOneImages.filter(image => !image.includes("/sheets/"))), "Every completed frame is a replacement from this pass, not a legacy study");
-const pendingStreetIds = ["69", "71", "76", "79", "80", "81"].map(n => `neonoire-shot-${n}`);
-assert.deepEqual(streets.filter(f => !f.image).map(f => f.id), pendingStreetIds);
+assert.equal(streetsPassTwoImages.length, 8, "Session two: six needed shots plus two continuity replacements, two slots held back");
+assert.equal(new Set(streetsPassTwoImages).size, 8);
+for (const image of [...streetsPassOneImages, ...streetsPassTwoImages]) assert.deepEqual(jpegDimensions(image), [1920, 1080], `${image}: native delivery must be 16:9`);
+const deliveredStreetImages = new Set([...streetsPassOneImages, ...streetsPassTwoImages].filter(image => !image.includes("/sheets/")));
+assert.deepEqual(new Set(streets.map(f => f.image)), deliveredStreetImages, "Every completed frame is a replacement from this revision, not a legacy study");
+assert(!streets.some(f => f.notes.includes("REPLACEMENT PENDING")), "No pending street replacement remains");
 for (const frame of streets) {
   assert.equal(frame.movement, "Static", `${frame.title}: no tracking or push-in`);
   assert.equal(frame.angle, "Low, level", `${frame.title}: low height is NOT an upward hero angle`);
   assert.equal(frame.lens, frame.id === "neonoire-shot-73" ? "35mm" : "50mm");
   assert(frame.notes.includes("Tokyo Story in colour"));
   assert(frame.notes.includes("RIGHT foot bare, LEFT red shoe retained"));
-  assert.equal(frame.status, frame.image ? "Draft" : "Needs review");
+  assert.equal(frame.status, "Draft");
   assert.equal(frame.style, "neonoire");
-  if (!frame.image) {
-    const shot = plannedById.get(frame.id);
-    assert(!existsSync(join(root, "public/images/neonoire", shot.scene.key, shot.image)), "Superseded study may not masquerade as a replacement");
-    assert(frame.notes.includes("REPLACEMENT PENDING"));
-  }
 }
+const twentyMetres = streets.find(f => f.id === "neonoire-shot-74");
+assert(/twenty-metre gap is on screen/.test(twentyMetres.notes) && /session two/.test(twentyMetres.notes), "Board 75's keyframe must stage the scripted separation distance itself");
+const lostHeel = streets.find(f => f.id === "neonoire-shot-72");
+assert(/match the shot 79 still life/.test(lostHeel.notes), "Board 74's keyframe must carry the shot 79 puddle/drain lock");
 const lounge = streets.filter(f => f.sceneId === "neonoire-s72");
 assert.equal(lounge.length, 2);
 for (const frame of lounge) {
@@ -185,7 +187,7 @@ assert.deepEqual(wide.characters, ["neonoire-vera", "neonoire-jack"], "Tiny figu
 assert(project.frames.find(f => f.id === "neonoire-shot-75").description.includes("rejection"), "Do not board only the blow and omit the collapse/rejection");
 assert(/same puddle, same shoe/i.test(project.frames.find(f => f.id === "neonoire-shot-77").notes));
 assert(streets.filter(f => f.sceneId === "neonoire-s75").every(f => !f.characters.length), "Pillow shots have no cast, including reflections");
-assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 9));
+assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 15));
 const aftermath = project.frames.filter(f => f.sceneId === "neonoire-s76");
 assert.deepEqual(aftermath.map(f => f.id), ["neonoire-shot-82", "neonoire-shot-83", "neonoire-shot-84"], "Scene 76 stable identities remain unchanged");
 for (const frame of aftermath) {
@@ -193,7 +195,7 @@ for (const frame of aftermath) {
   assert(frame.notes.includes("Scene 76 is unchanged"));
 }
 for (let n = 1; n <= 84; n++) assert(project.frames.some(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`), `Existing frame identity ${n} must survive the inserted scene 72`);
-pass("Tokyo Story colour revision: ten generations, nine shots, six honest pending replacements, stable IDs, makeup/shoe states and static low-level cameras");
+pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");
 assert.equal(frontCounter.length, 8);
