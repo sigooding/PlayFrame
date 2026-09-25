@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–76 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–79 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -29,7 +29,7 @@ export const grammar =
 const cast = [
   ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird; arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
   ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter.", ["Careful", "Steady", "Alone"], "sand", "vera"],
-  ["jack", "Jack", "Private investigator / former detective", "48", "A Tokyo private investigator and former police detective; the screenplay gives no surname. Visual casting choice: Japanese, tall and lean, angular handsome tired face, hooded dark-brown eyes, swept-back black hair with silver temples, two-day stubble. Quietly cool, not an action hero. A good but badly kept charcoal knee-length overcoat, off-white open-collar shirt, black trousers and worn black shoes; no tie, hat or cigarette. In scene 74 he is soaked, hands dark and unwashed; he takes the blows and kneels apart after Vera rejects his touch. Not the sisters' father: that is Daniel Voss.", ["Understated", "Guarded", "Compromised"], "clay", "jack"],
+  ["jack", "Jack", "Private investigator / former detective", "48", "A Tokyo private investigator and former police detective; the screenplay gives no surname. Visual casting choice (recast 25 September 2026): a white American, tall and lean, long angular face, hollow cheeks, deep-set tired grey-green eyes, dark brown hair swept back and greying at the temples, salt-and-pepper stubble. Quietly cool, not an action hero. A good but badly kept charcoal knee-length overcoat, off-white open-collar shirt, black trousers, worn black shoes; no tie, hat or cigarette. After the Hive he stays soaked, hands unwashed, through scene 77. Not the sisters' father: that is Daniel Voss.", ["Understated", "Guarded", "Compromised"], "clay", "jack"],
   ["daniel", "Daniel Voss", "The father / family photograph", "41, twenty years ago", "American insurance investigator, Vera and Mara's father. The scene 11 newspaper clipping identifies him as Daniel Voss, 41; the man in the warm faded photograph on Vera's shelf is Daniel, not Jack. A rumpled grey suit, a smile, both small daughters' hands in his and a Tokyo noodle-shop sign behind them, twenty years ago. Jack appears with him in a separate older photograph and was his friend, not a member of the Voss family.", ["Warm", "Principled", "Absent"], "sand", undefined],
   ["old-man", "The Old Man", "Cold open", "70s", "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.", ["Hunted", "Resigned", "Deliberate"], "sand", undefined],
   ["masked-men", "The Masked Men", "Cold open", "30s to 40s", "Two men in black clothes and plain masks who do not run. They touch earpieces and report positions: first position done, moving to second. Their work is ordinary to them, and the film never shows a face under the masks — only eyes, and shoes, and a torch beam finding a purse in a puddle.", ["Methodical", "Unhurried", "Bored"], "rose", undefined],
@@ -59,7 +59,7 @@ link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and
 
 // ---------------------------------------------------------------------------------------------
 // The boarded scenes, in the draft's own running order — the opening seven, and the first
-// scenes of the film proper (the hotel and Tokyo streets, 72–76). Boarded metadata is hand-authored here;
+// scenes of the film proper (the hotel and Tokyo streets, 72–76, and the envelope and the notebook, 77–79). Boarded metadata is hand-authored here;
 // location, time and slugline are re-derived from the draft at build time and must match.
 // ---------------------------------------------------------------------------------------------
 
@@ -185,6 +185,36 @@ export const SCENES = [
     description: "Night, later. In the dark apartment, Vera sits on the floor with her back against the bed — still in the ruined red dress, mascara dried, one shoe — with Jack's old steel lighter in her hand. She opens it, closes it, opens it. She should throw it away; she holds it against her chest instead, and bends over it, and cries without making a sound. She still loves him; she hates herself for it. BOARDED — 3 shots (84–86), existing images unchanged; the scene the opening's answerphone was pointed at.",
     lightingNotes: "No practicals on: cold window light and the landing's spill under the door only. The lighter's small flame is the one warm note, briefly, and then the dark takes it back.",
   },
+  {
+    key: "s77", id: "neonoire-s77", n: 77, partId: "neonoire-part-feature",
+    title: "The envelope", location: "INT. JACK'S OFFICE", time: "NIGHT",
+    kind: "Standard", lighting: "Low key", slugline: "INT. JACK'S OFFICE - NIGHT #77#",
+    page: "n77-jack-s-office-night.md", board: "n77-jacks-office.md",
+    cast: ["Jack"],
+    grammar: "One room, one lamp, CRT static. Static, level cameras: 35mm room, 50mm desk insert, 85mm pen. Jack still soaked, hands unwashed. The envelope gets no name.",
+    description: "Night. Jack sits in his wet coat at the desk under the lamp, the TV playing static, hands still unwashed. Vera's voice from the noodle counter replays. He puts Daniel Voss's notebook into a clean envelope, holds a pen over it for a long time, and writes nothing. BOARDED — 3 shots (87–89); Jack's office established here as the master, with Jack recast as a white American.",
+    lightingNotes: "Green-shaded brass desk lamp is the only warm source; the CRT's grey static flickers on the filing cabinets; rain and the elevated line's lit windows through the blinds. No overhead light.",
+  },
+  {
+    key: "s78", id: "neonoire-s78", n: 78, partId: "neonoire-part-feature",
+    title: "No name", location: "EXT. VERA'S APARTMENT BUILDING, CORRIDOR", time: "DAWN",
+    kind: "Standard", lighting: "Blue hour", slugline: "EXT. VERA'S APARTMENT BUILDING, CORRIDOR - DAWN #78#",
+    page: "n78-vera-s-apartment-building-corridor-dawn.md", board: "n78-veras-corridor.md",
+    cast: ["Vera Voss"],
+    grammar: "Grey dawn on the third-floor walkway, rain dripping from the railing. 35mm wide, 50mm doormat, 85mm name. Vera barefoot, still in the red dress, unslept.",
+    description: "Dawn. Vera opens her door onto the open-air walkway, still in the red dress, unslept. On the doormat, a plain envelope with no name. Inside, the cloth-covered notebook — and inside its cover, DANIEL VOSS. BOARDED — 3 shots (90–92).",
+    lightingNotes: "Flat grey-blue dawn, no sun; one fluorescent fitting still on over a door. Wet concrete, rusted railing, the elevated line beyond.",
+  },
+  {
+    key: "s79", id: "neonoire-s79", n: 79, partId: "neonoire-part-feature",
+    title: "Her father's handwriting", location: "INT. VERA'S APARTMENT", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Blue hour", slugline: "INT. VERA'S APARTMENT - CONTINUOUS #79#",
+    page: "n79-vera-s-apartment-continuous.md", board: "n79-veras-apartment-dawn.md",
+    cast: ["Vera Voss"],
+    grammar: "The scene 4 room in grey dawn, nothing switched on, two empty cups. Daniel's voice-over carries the pages; the images never illustrate them.",
+    description: "Continuous. At the low table in the dawn light, beside the two cups from the beginning of the film, both empty now, Vera reads her father's notebook: Shiohama, Kurose, and the young detective they called Jack who signed the report. She closes it and holds it against her chest. BOARDED — 3 shots (93–95).",
+    lightingNotes: "Window light only, grey-blue; lamp and CRT off; the umbrella stand empty. The red dress is the only warm colour.",
+  },
 ];
 
 /**
@@ -262,12 +292,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 86 numbered shots cover scenes 1–7 and 72–76; the other 88 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 95 numbered shots cover scenes 1–7 and 72–79; the other 85 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–76 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–79 are boarded; the rest are written, not yet boarded." },
   ],
 };
 

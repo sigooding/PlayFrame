@@ -17,7 +17,7 @@ The series opens by default when present; an explicit `?project=<id>` always win
 ## NEONOIRE — the final screenplay
 
 The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
-twelve of them boarded as **86 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86). Everything is carried page by page from
+fifteen of them boarded as **95 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), and the envelope and the notebook of scenes 77–79 (shots 87–95). Everything is carried page by page from
 [`Neonoire (3).fountain`](<Neonoire (3).fountain>) (the earlier
 [`Neonoire_Opening.fountain`](Neonoire_Opening.fountain) remains only as the opening extract).
 
@@ -26,7 +26,7 @@ twelve of them boarded as **86 numbered shots** — the opening seven (shots 1�
   regenerates those pages and `npm run build:neonoire` refuses to build unless they rebuild the
   fountain byte for byte. The only change the workspace makes to the text is dropping its own
   ` #1#` … ` #100#` scene markers, so every scene selects its own slugline in the screenplay
-  navigator. The other 88 scenes are marked **WRITTEN, NOT BOARDED** — the board has not reached them yet.
+  navigator. The other 85 scenes are marked **WRITTEN, NOT BOARDED** — the board has not reached them yet.
 - **Every image is 16:9.** From the final screenplay onward, keyframes are generated **16:9
   full-bleed, 1920×1080** — no scope, no letterbox; the Neo-Noir Tokyo style block opens at that
   shape. The older 2.39:1 studies on disk (cold-open shots 11–28, scene 3, early keys) are marked
@@ -38,14 +38,16 @@ twelve of them boarded as **86 numbered shots** — the opening seven (shots 1�
   draft's own words quoted per shot, checked against the fountain at build time.
 - **Keyframes use at most ten generations per session.** Every frame is an AI-generated draft study
   held to a continuity sheet: Mara and Vera Voss are both American — blonde, blue eyes, told apart by
-  hair, wardrobe and the umbrella. **Jack (48)** now has a distinct, cool former-detective profile;
+  hair, wardrobe and the umbrella. **Jack (48)** is a white American former detective (recast 25 September 2026);
   **Daniel Voss**, not Jack, is their father in the scene 4 photograph. Frames whose study has not been generated yet are labelled placeholders that name the file
   they are waiting for, never a neighbour's picture.
 - **Nothing is explained**, because the film does not explain it: what the key opens, what the men are
   counting towards, and what a clock that runs a minute fast is doing in a police station are all left
   where the draft leaves them.
 
-**Current revision — scenes 72–75:** *Tokyo Story* restraint in **colour**, with low level static
+**Latest session — scenes 77–79 boarded, Jack recast:** nine new 16:9 shots — Jack's office under one lamp, the unnamed envelope at Vera's door at dawn, DANIEL VOSS inside the cover, and the scene 4 room at dawn with two empty cups. **Jack is now a white American** with a regenerated identity sheet; scene 74's three Jack frames are flagged *JACK RECAST PENDING* until regenerated. See the [scenes 77–79 ledger](docs/neonoire/passes/scenes-77-79.md) and [review sheet](public/images/neonoire/reviews/scenes-77-79-pass-1.jpg).
+
+**Previous revision — scenes 72–75:** *Tokyo Story* restraint in **colour**, with low level static
 cameras, 50mm lenses (35mm for the distant aftermath), and Vera's makeup intact until rain.
 **Ten generations delivered Jack's sheet plus nine new shot images; six replacement shots remain
 labelled empty placeholders.** Old street studies are not reused. See the

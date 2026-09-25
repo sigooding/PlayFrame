@@ -2,7 +2,9 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **12 scenes, 86 shots**: scenes 1–7 and 72–76. **All 86 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **15 scenes, 95 shots**: scenes 1–7 and 72–79. **All 95 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+
+**Latest session — [scenes 77–79 boarded](passes/scenes-77-79.md), and Jack recast as a white American.** Nine new shots (87–95) plus a regenerated `sheets/jack.jpg`/`jack-face.jpg`. Scene 74's three Jack frames (boards 75–77) still show the superseded Japanese design and are flagged **Needs review / JACK RECAST PENDING**; regenerating them is the next image job. After that, the next unboarded scene is 80 (the detectives' room: Jack and Ishida), which can reuse `s7/63-the-detectives-room.jpg` and `sheets/ishida.jpg`.
 
 The [Tokyo Story colour revision of scenes 72–75](passes/tokyo-streets-revision.md) is **complete in two sessions**: ten generation calls (Jack's sheet + nine shots), then eight (the six remaining replacements plus the lost-heel and twenty-metre continuity replacements). Read that ledger for the masters, the locks and the honest production-review caveats.
 
@@ -55,7 +57,7 @@ For this sequence, attach **new masters and cast sheets only**. Ignore the super
 ## Character continuity
 
 - **Vera Voss (29):** American, shoulder-length ash-blonde hair with soft fringe, pale blue eyes; `sheets/vera.jpg`, `vera-face.jpg`. Pretty, groomed and intact makeup in the hotel. Only the rain ruins it, into thin mascara trails, not horror makeup. Same wine-red silk broad-strap cowl-neck calf-length dress throughout. Both low red court shoes until the skid, then **RIGHT bare / LEFT shoe retained**. No coat or umbrella on the street; blue umbrella stays at the hotel stool.
-- **Jack (48):** new `sheets/jack.jpg`, `jack-face.jpg`; [full profile](characters/jack.md). Japanese appearance is the chosen design, age/former detective are script facts. Lean, cool, angular tired face, swept-back black hair with silver temples, stubble, charcoal knee-length coat and off-white open collar. Rain-soaked, hands dark, no weapon or cigarette. He never retaliates and stops touching her after she pushes him away.
+- **Jack (48):** **recast 25 September 2026 as a white American**: regenerated `sheets/jack.jpg`, `jack-face.jpg`; [full profile](characters/jack.md). Age/former detective are script facts. Lean, cool, long angular tired face, grey-green eyes, dark brown hair swept back and greying at the temples, salt-and-pepper stubble, charcoal knee-length coat and off-white open collar. Rain-soaked, hands dark, no weapon or cigarette. He never retaliates and stops touching her after she pushes him away.
 - **Daniel Voss (41, twenty years ago):** the sisters' American father, not Jack. The scene 11 clipping names him. The existing scene 4 photograph is still its own reference; do not substitute Jack's new sheet into it. Father links belong to Daniel.
 - **Mara (24):** `sheets/mara.jpg`, `mara-face.jpg`; the red-bird clip slips loose in scene 2, not held in place throughout. No resolved Mara face in the street reflection.
 - **Ishida / young officer:** retain their existing sheets and face crops; not redesigned in this session.
