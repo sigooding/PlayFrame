@@ -245,6 +245,7 @@ const allBoards = [
   boardOf("neonoire-look-cast", "Continuity — Mara, Vera and Jack", "Canonical identities, including Jack's new 48-year-old former-detective design, distinct from Daniel Voss in the family photograph. Any study that does not match these is reviewed.", [
     { image: "/images/neonoire/sheets/mara.jpg", caption: "Mara Voss — wardrobe and continuity sheet: indigo denim jacket, grey tee, black jeans, black cord necklace." },
     { image: "/images/neonoire/sheets/vera.jpg", caption: "Vera Voss — wardrobe and continuity sheet: charcoal wool coat, cream high-neck knit, navy trousers, brown boots." },
+    { image: "/images/neonoire/sheets/vera-look-c.jpg", caption: "Vera Voss — costume Look C, from scene 83 on (26 September 2026): ink-navy single-breasted wool coat, dove-grey crew-neck over a white collar, charcoal trousers, black ankle boots, hair in a low loose knot. The same face as her sheet." },
     { image: "/images/neonoire/sheets/mara-face.jpg", caption: "Mara — the face crop attached as a reference to every shot she appears in." },
     { image: "/images/neonoire/sheets/vera-face.jpg", caption: "Vera — the face crop attached as a reference to every shot she appears in." },
     { image: "/images/neonoire/sheets/jack.jpg", caption: "Jack (48) — recast 25 September 2026 as a white American: charcoal overcoat, off-white open collar, dark brown hair greying at the temples, grey-green eyes. Not Daniel Voss." },

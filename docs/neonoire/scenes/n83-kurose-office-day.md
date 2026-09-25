@@ -9,7 +9,7 @@ Grammar: the fortieth floor by grey rainy day, with glass on three sides, one or
 
 ## Frame format — 26 September 2026
 
-All six shots (111–116) are **16:9, 1920×1080, full-bleed**. The office follows the fountain's scene 24 description: glass on three sides, thick carpet, a single white orchid, and at the centre of the room a glass case holding the white-tower model with a plaza and fountain where the Hive stands. The room master is `s83/109-the-fortieth-floor.jpg`. **Vera** follows `sheets/vera.jpg`: the plain dark charcoal coat over the cream roll-neck, hair dry, her father's cloth-covered notebook on her lap. **Kurose** has no sheet yet. He is established in the master: Japanese, seventies, silver hair combed back, a beautiful dark navy suit, very still. These are AI-generated draft studies, not approved coverage.
+All six shots (111–116) are **16:9, 1920×1080, full-bleed**. The office follows the fountain's scene 24 description: glass on three sides, thick carpet, a single white orchid, and at the centre of the room a glass case holding the white-tower model with a plaza and fountain where the Hive stands. The room master is `s83/109-the-fortieth-floor.jpg`. **Vera wears costume Look C** (`sheets/vera-look-c.jpg`, a director's costume change of 26 September 2026: she had worn the charcoal coat and cream roll-neck in too many scenes). That is an ink-navy wool coat (still the script's "plain dark coat"), a dove-grey crew-neck over a white shirt collar, charcoal trousers, black ankle boots, and her hair in a low loose knot. Her face follows `sheets/vera.jpg`. Her hair is dry, and her father's cloth-covered notebook is on her lap. The Vera frames were edited to Look C from their first-pass images. **Kurose** has no sheet yet. He is established in the master: Japanese, seventies, silver hair combed back, a beautiful dark navy suit, very still. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-111
 IMAGE: 109-the-fortieth-floor.jpg
-NOTE: Room master for scene 83. It holds "Vera sits in a leather chair in front of Kurose's desk" and the pour.
+NOTE: Room master for scene 83. The Look C edit came back framed slightly wider than the first pass. It holds "Vera sits in a leather chair in front of Kurose's desk" and the pour.
 
 112. MEDIUM CLOSE-UP — 85mm, static, eye level — good men are very expensive.
 Over Vera's dark shoulder: Kurose behind his desk with his hands folded, courteous and faintly amused, beside the iron teapot and her full cup.
@@ -61,7 +61,7 @@ LIGHT: Overcast soft
 TIME: 8
 ID: neonoire-shot-115
 IMAGE: 113-very-clean.jpg
-NOTE: The fountain in the model marks where the Hive stands now. She goes on the cut.
+NOTE: The fountain in the model marks where the Hive stands now. The Look C edit added Tokyo Tower to the skyline; keep it, or lose it consistently across the scene. She goes on the cut.
 
 116. MEDIUM — 50mm, static, eye level — follow her.
 Kurose sits alone behind his desk and presses a button on the black desk phone, leaning to it. Her chair is empty and her tea untouched.

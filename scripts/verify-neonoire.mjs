@@ -17,7 +17,7 @@ import { SCENES, parseBoard, readBoard } from "./neonoire/plan.mjs";
 import { streetsPassOneImages, streetsPassTwoImages } from "./neonoire/streets-look.mjs";
 import { dawnImages, jackRecastDone, jackRecastImages, jackRecastPending, policeDayImages } from "./neonoire/dawn-look.mjs";
 import { witnessImages, witnessNeedsReview } from "./neonoire/witness-look.mjs";
-import { confrontationImages } from "./neonoire/confrontation-look.mjs";
+import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const cache = join(root, "node_modules/.cache/verify-neonoire");
@@ -272,8 +272,13 @@ for (const frame of confrontation) {
   assert(frame.characters.includes(castOf(office ? "Vera Voss" : "Jack")) || frame.characters.includes(castOf("Kurose")) || frame.characters.includes(castOf("Vera Voss")), `${frame.title} cast`);
 }
 assert(!confrontation.some(f => f.sceneId === "neonoire-s84" && f.characters.includes(castOf("Kurose"))), "Kurose is not in the storeroom");
+assert.deepEqual(jpegDimensions(veraLookCSheet), [1920, 1080]);
+const veraCostumed = confrontation.filter(f => f.characters.includes(castOf("Vera Voss")));
+assert.deepEqual(new Set(veraCostumed.map(f => f.image)), new Set(veraLookCImages), "Every Vera frame in 83–84 is in costume Look C");
+for (const frame of veraCostumed) assert(frame.notes.includes("WARDROBE LOOK C") && frame.notes.includes("sheets/vera-look-c.jpg") && !frame.notes.includes("cream roll-neck, hair dry"), `${frame.title}: Vera's costume change`);
+assert(project.moodboards.some(b => b.items.some(i => i.image === veraLookCSheet)), "Look C travels with the cast board");
 assert.equal(confrontation[0].lens, "24mm"); assert.equal(confrontation[6].lens, "24mm");
-pass("scenes 83–84 boarded: ten 16:9 shots, Kurose carded, the model under glass, and the storeroom's first master");
+pass("scenes 83–84 boarded: ten 16:9 shots, Kurose carded, the model under glass, and the storeroom's first master; Vera in costume Look C");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 

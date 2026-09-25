@@ -4,7 +4,7 @@
 
 The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **20 scenes, 120 shots**: scenes 1–7 and 72–84. **All 120 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
-**Latest session — [scenes 83–84 boarded](passes/scenes-83-84.md).** Ten shots (111–120), using ten generation calls: Kurose's office by day, and the Hive storeroom by night. Kurose is a new card without a sheet. The storeroom master `s84/115-the-storeroom.jpg` is now the reference for scenes 13, 20 and 25. The next unboarded scene is **85** (the Hive passages, continuous).
+**Latest session — [scenes 83–84 boarded](passes/scenes-83-84.md).** Ten shots (111–120), using ten generation calls: Kurose's office by day, and the Hive storeroom by night. Kurose is a new card without a sheet. The storeroom master `s84/115-the-storeroom.jpg` is now the reference for scenes 13, 20 and 25. **Vera's costume change:** from scene 83 she wears Look C (`sheets/vera-look-c.jpg`). Use that sheet for her clothes and `sheets/vera-face.jpg` for her face in every Vera shot from here on. The next unboarded scene is **85** (the Hive passages, continuous).
 
 **Previous session — [scenes 81–82 boarded](passes/scenes-81-82.md).** Nine shots (102–110), using ten generation calls: the bar by day with Okada, and the newsroom with Harada. The two new cast cards have no identity sheets yet and are held to their scene masters. Shot 108 was reverted to its original tape image at the director's request.
 

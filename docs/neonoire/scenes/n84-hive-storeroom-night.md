@@ -9,7 +9,7 @@ Grammar: one bare bulb, flour sacks and a folded futon, with the railway overhea
 
 ## Frame format — 26 September 2026
 
-All four shots (117–120) are **16:9, 1920×1080, full-bleed**. **This is the storeroom's first boarding.** The fountain's scene 13 description sets the room: a tiny storeroom behind a six-seat noodle counter, sacks of flour, crates of green onions, a single bare bulb, a curtain doorway, and the underside of the elevated railway above. The master is `s84/115-the-storeroom.jpg`, and scenes 13, 20 and 25 must match it when they are boarded. Mara's sketches are taped to the wall with rice-paper tape. **Jack** follows `sheets/jack.jpg`: grey with exhaustion after days in hiding, in the same coat and creased shirt. **Vera** is as in scene 83 (plain dark coat, cream roll-neck, hair dry). These are AI-generated draft studies, not approved coverage.
+All four shots (117–120) are **16:9, 1920×1080, full-bleed**. **This is the storeroom's first boarding.** The fountain's scene 13 description sets the room: a tiny storeroom behind a six-seat noodle counter, sacks of flour, crates of green onions, a single bare bulb, a curtain doorway, and the underside of the elevated railway above. The master is `s84/115-the-storeroom.jpg`, and scenes 13, 20 and 25 must match it when they are boarded. Mara's sketches are taped to the wall with rice-paper tape. **Jack** follows `sheets/jack.jpg`: grey with exhaustion after days in hiding, in the same coat and creased shirt. **Vera** is in costume Look C, as in scene 83 (`sheets/vera-look-c.jpg`: ink-navy coat, grey crew-neck over a white collar, hair in a low knot). These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -31,7 +31,7 @@ LIGHT: Low key
 TIME: 20
 ID: neonoire-shot-118
 IMAGE: 116-thats-me.jpg
-NOTE: Holds "That's me." through "Three feet away." and "Vera touches the paper with one finger." In the study the sketched figure wears a ponytail; Vera wore her hair loose at the counter, so redraw the sketch to match on set.
+NOTE: Holds "That's me." through "Three feet away." and "Vera touches the paper with one finger." After the Look C edit, the sketched figure wears a knot. Vera wore her hair loose at the counter (the earlier look), so redraw the sketch to match that visit on set.
 
 119. TWO-SHOT — 35mm, static, eye level — we were both wrong.
 The two of them face each other across the little room, Vera by the sketches at left and Jack by the flour sacks at right, with a few feet of floor that neither crosses.
