@@ -2,7 +2,7 @@ NEONOIRE
 OPENING — SCENE 1 — EXT. BACKSTREET, KANDA
 
 EXT. BACKSTREET, KANDA - NIGHT
-Source: the first draft's opening scenes (Neonoire_Opening.fountain, September 2026), reproduced verbatim below its own heading.
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Mara Voss, The Old Man, The Masked Men.
 Grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the 
 violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street 
@@ -11,7 +11,7 @@ lit orange.
 Title: NEONOIRE
 Credit: Written by
 Author: [Your Name]
-Draft date: First Draft - Scenes 1-12
+Draft date: First Draft
 Contact: September 2026
 
 ===

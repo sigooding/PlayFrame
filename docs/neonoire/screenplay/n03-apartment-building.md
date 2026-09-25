@@ -2,8 +2,8 @@ NEONOIRE
 OPENING — SCENE 3 — EXT. VERA'S APARTMENT BUILDING
 
 EXT. VERA'S APARTMENT BUILDING - DUSK
-Source: the first draft's opening scenes (Neonoire_Opening.fountain, September 2026), reproduced verbatim below its own heading.
-Cast: — (no actors; the city carries the scene).
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
+Cast: — (not boarded; the draft names its own cast).
 Grammar: Dusk, going blue, and the first time the film has been out in any kind of daylight. The city still lights the frame: one lit window on the third 
 floor, a train's windows sliding past on the elevated line, sodium starting up at street level. SUPER: THREE DAYS LATER.
 

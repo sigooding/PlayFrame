@@ -2,7 +2,7 @@ NEONOIRE
 OPENING — SCENE 6 — INT. POLICE STATION, INTERVIEW ROOM
 
 INT. POLICE STATION, INTERVIEW ROOM - MOMENTS LATER
-Source: the first draft's opening scenes (Neonoire_Opening.fountain, September 2026), reproduced verbatim below its own heading.
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Detective Ishida.
 Grammar: One table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's 
 English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much 

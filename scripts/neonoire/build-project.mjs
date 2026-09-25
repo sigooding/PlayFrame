@@ -1,19 +1,21 @@
-// Builds public/projects/neonoire-opening.json from the draft and the numbered shot boards.
+// Builds public/projects/neonoire-opening.json from the final screenplay and the numbered shot
+// boards of the opening seven scenes.
 //
 //   npm run build:neonoire            write the bundle
 //   node scripts/neonoire/build-project.mjs --check   fail if the bundle has drifted
 //
 // Nothing is retyped: the Screenplay tab's pages are the draft's own bytes under a production
-// header, every frame's script quote has to be found in the draft, and every keyframe path has to
-// be a real file. Passes are ten shots at a time, which is how the keyframes are generated.
+// header — one page per numbered scene, boarded or not — every frame's script quote has to be
+// found in the draft, and every keyframe path has to be a real file. Passes are ten shots at a
+// time, which is how the keyframes are generated.
 import assert from "node:assert/strict";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  ACT, FOUNTAIN, ORDER, SCENES, brainstorm, characters, cleanScript, containsText, countMarkers,
-  createdAt, grammar, imagePath, pageBody, pageText, pages, parseBoard, projectId, readBoard,
-  readFountain,
+  ACT, FOUNTAIN, SCENES, brainstorm, characters, cleanScript, containsText, countMarkers,
+  createdAt, featureScenes, grammar, imagePath, pageBody, pageText, pages, parseBoard, projectId,
+  readBoard, readFountain,
 } from "./plan.mjs";
 
 import { frontCounterLook } from "./front-counter-look.mjs";
@@ -21,12 +23,14 @@ import { apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
+import { streetsLook, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
 
 const fountain = readFountain(root);
 const slices = pages(fountain);
+const feature = featureScenes(fountain);
 const passSize = 10;
 const passOf = n => Math.ceil(n / passSize);
 
@@ -45,32 +49,42 @@ const MOODS = {
   s5: "Institutional, polite, a decade out of step; a name arriving on a monitor.",
   s6: "Two people being careful with each other, in Japanese, over tea going cold.",
   s7: "An empty office, one decision already made, and a clock a minute fast.",
+  s73: "Rain, heels, the film's own cold-open grammar with Vera in it; one red shoe left standing in a puddle.",
+  s74: "Fourteen million people and none of them here: two small figures, a row of vending machines, and rain falling through their light.",
+  s75: "Still frames with the people removed: the night's objects keep glowing after it is over.",
+  s76: "A dark apartment, a dented steel lighter opening and closing, and crying without making a sound.",
 };
 
 // ---------------------------------------------------------------- the screenplay pages
 // A page is verbatim draft text under an injected production header, so the header is the only
-// thing the builder may remove, and what is left has to rebuild the draft byte for byte.
-for (const [i, scene] of SCENES.entries()) {
-  const file = `docs/neonoire/screenplay/${ORDER[i]}`;
+// thing the builder may remove, and what is left — every line, blank ones included — has to
+// rebuild the draft byte for byte. The Screenplay tab carries the whole final screenplay.
+assert.equal(slices.length, feature.length, `Every numbered scene needs a page: ${feature.length} scenes, ${slices.length} slices`);
+for (const [i, scene] of feature.entries()) {
+  const file = `docs/neonoire/screenplay/${scene.page}`;
   assert(existsSync(resolve(root, file)), `Missing screenplay page: ${file} — run node scripts/neonoire/split-opening.mjs`);
   assert.equal(read(file), pageText(scene, slices[i]), `${file} has drifted from ${FOUNTAIN} — regenerate it with node scripts/neonoire/split-opening.mjs`);
   const lines = pageText(scene, slices[i]).split("\n");
   assert.equal(lines[0], "NEONOIRE", `${file} must open with the film's title`);
   assert(lines[3].startsWith(`${scene.location} - ${scene.time}`), `${file} must put the scene's own slugline at line 4: got "${lines[3]}"`);
-  assert.equal(pageBody(pageText(scene, slices[i])), slices[i].join("\n").trim(), `${file} must carry the draft's own bytes below its header`);
+  assert.equal(pageBody(pageText(scene, slices[i])), slices[i].join("\n"), `${file} must carry the draft's own bytes below its header`);
 }
-const rebuilt = SCENES.map((scene, i) => pageBody(pageText(scene, slices[i]))).join("\n\n") + "\n";
-assert.equal(rebuilt, fountain, `The seven pages must rebuild ${FOUNTAIN} exactly`);
+const rebuilt = feature.map((scene, i) => pageBody(pageText(scene, slices[i]))).join("\n");
+assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUNTAIN} exactly`);
 
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-assert.equal(shots.length, 68, `The opening is 68 numbered shots; the boards carry ${shots.length}`);
-shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..68 across the seven scenes; found ${shot.n} at ${i + 1}`));
+const totalShots = 84;
+assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68 plus scenes 73–76's 16 — but carry ${shots.length}`);
+shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..${totalShots} across the boarded scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
 const missing = shots.filter(shot => !existsSync(resolve(root, `public${imagePath(shot.scene, shot)}`)));
 // A frame whose study has not been generated yet is an honest placeholder, exactly as the series
 // workspace does it: it holds its slot and names the missing file instead of borrowing a neighbour.
+// The final screenplay's frame rule is 16:9 for every image: a frame still holding a 2.39:1 study
+// is pending revision, not approved coverage.
+const awaitingAspect = shot => shot.scene.key === "s3";
 const frames = shots.map(shot => {
   const path = imagePath(shot.scene, shot);
   const absent = missing.includes(shot);
@@ -88,27 +102,29 @@ const frames = shots.map(shot => {
     style: "neonoire",
     duration: shot.duration,
     durationIsEstimate: true,
-    status: absent || (isColdOpenScene(shot.scene.key) && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
+    status: absent || awaitingAspect(shot) || (isColdOpenScene(shot.scene.key) && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
     transition: shot.n === 1 ? "Fade in" : "Cut",
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
       absent
-        ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of 68 until pass ${passOf(shot.n)} is generated.`
+        ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
         : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       ...(isColdOpenScene(shot.scene.key) ? [shot.n <= coldOpenCompletedThrough
         ? `Cold-open visual revision: ${coldOpenLook}`
         : `COLD OPEN REVISION PENDING — shot ${shot.n} retains its previous 2.39:1 image. Only shots 1–${coldOpenCompletedThrough} have been rebuilt in 16:9; follow scripts/neonoire/cold-open-look.mjs for the next batch. This legacy frame is not revised coverage.`] : []),
+      ...(awaitingAspect(shot) ? [`16:9 REVISION PENDING — shot ${shot.n} retains its legacy 2.39:1 study. From the final screenplay onward every image in this film is 16:9 full-bleed (1920×1080): regenerate this frame against scene 3's key; never crop the scope study into it.`] : []),
       ...(shot.scene.key === "s7" ? [`Visual revision (25 September 2026): ${detectivesLook}`] : []),
       ...(shot.scene.key === "s6" ? [`Visual revision (25 September 2026): ${interviewLook}`] : []),
       ...(shot.scene.key === "s4" ? [`Visual revision (25 September 2026): ${apartmentLook}`] : []),
       ...(shot.scene.key === "s5" ? [`Visual revision (25 September 2026): ${frontCounterLook}`] : []),
+      ...(streetsScenes.has(shot.scene.key) ? [`Scenes 73–76, the Tokyo streets — first boards of the film proper (25 September 2026): ${streetsLook}`] : []),
       shot.note,
       shot.script ? `SCRIPT — the draft's own words for this shot:\n"${shot.script}"` : "SCRIPT — no dialogue; the shot is carried by the frame and the sound.",
       shot.scene.grammar,
       grammar,
       `Timing: ${shot.duration}s is a working estimate for animatic playback. The draft locks no durations.`,
-      `Pass ${passOf(shot.n)} of 7 — ten keyframes at a time, in screenplay order. Shot ${shot.n} of 68.`,
+      `Pass ${passOf(shot.n)} of ${Math.ceil(totalShots / passSize)} — ten keyframes at a time, in screenplay order. Shot ${shot.n} of ${totalShots}.`,
     ].join("\n\n"),
   };
 });
@@ -128,7 +144,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the opening scenes, first draft (September 2026). 7 scenes, 68 numbered shots, 8 cast cards, and keyframes generated ten at a time in screenplay order.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth. The Screenplay tab carries it page by page — one page per scene, the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuous and wardrobe continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet.`,
+    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; eleven of them are boarded — the opening seven (shots 1–68) and the Tokyo streets at the heart of the film proper, scenes 73–76 (shots 69–84) — 8 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -143,7 +159,7 @@ const notes = [
   {
     id: "neonoire-continuity", title: "Continuity — the Voss family, and everyone else", color: "rose", createdAt,
     tags: ["Continuity", "Cast"], connections: [],
-    content: `**Mara Voss (24)** and **Vera Voss (29)** are both American, both blonde with pale blue eyes, and they must read as sisters while still being told apart at a glance: Mara's hair is longer, wavier and soaked flat for the whole opening, held back by a cheap enamel clip shaped like a small red bird; the clip remains pinned through the bar scene. Vera's hair is shoulder length with a fringe and never wet — she is inside, or under cover, or has the umbrella.\n\nWardrobe is locked per sheet:\n- Mara: indigo denim jacket, heather-grey tee, black jeans, white trainers, black cord necklace, small studs and the cheap red-bird hair clip. Soaked from scene 1 until she is behind the bar counter.\n- Vera: charcoal wool coat over a cream high-neck knit, navy trousers, brown ankle boots, gold ring on the right hand, black strap watch. Carries Mara's pale blue umbrella — bone dry in the apartment, dripping on police linoleum.\n\nJack Voss, the girls' father, exists in this opening only inside one framed photograph on Vera's shelf: a rumpled suit, a smile, both daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty years ago, colours gone warm and faded. He is the only saturated warm colour in the film so far and he is never spoken about.\n\nThe men in masks are never given faces: eyes above the mask, gloved hands, wet black shoes. The old man and the journalist are unnamed on purpose. Detective Ishida and the young officer are the only police with faces, and the young officer's face changes after the monitor does.`,
+    content: `**Mara Voss (24)** and **Vera Voss (29)** are both American, both blonde with pale blue eyes, and they must read as sisters while still being told apart at a glance: Mara's hair is longer, wavier and soaked flat for the whole opening, held back by a cheap enamel clip shaped like a small red bird; in the final screenplay the clip slides loose between the crates inside the bar (scene 2) and is gone from her hair from that beat on \u2014 and in the last scene of the film it is in Vera's hair at Kaneko's new counter. Vera's hair is shoulder length with a fringe and never wet — she is inside, or under cover, or has the umbrella.\n\nWardrobe is locked per sheet:\n- Mara: indigo denim jacket, heather-grey tee, black jeans, white trainers, black cord necklace, small studs and the cheap red-bird hair clip. Soaked from scene 1 until she is behind the bar counter.\n- Vera: charcoal wool coat over a cream high-neck knit, navy trousers, brown ankle boots, gold ring on the right hand, black strap watch. Carries Mara's pale blue umbrella — bone dry in the apartment, dripping on police linoleum.\n\nJack Voss, the girls' father, exists in this opening only inside one framed photograph on Vera's shelf: a rumpled suit, a smile, both daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty years ago, colours gone warm and faded. He is the only saturated warm colour in the film so far and he is never spoken about.\n\nThe men in masks are never given faces: eyes above the mask, gloved hands, wet black shoes. The old man and the journalist are unnamed on purpose. Detective Ishida and the young officer are the only police with faces, and the young officer's face changes after the monitor does.`,
   },
   {
     id: "neonoire-language", title: "Language — English, Japanese, and the subtitles", color: "sand", createdAt,
@@ -153,7 +169,14 @@ const notes = [
   {
     id: "neonoire-keyframes", title: "What the keyframes are, and what they are not", color: "rose", createdAt,
     tags: ["Images", "Review"], connections: [],
-    content: `Every frame in this storyboard is a **draft AI study** standing in for a shot that has not been photographed. They are generated in passes of ten, in screenplay order, from the boards in \`docs/neonoire/scenes/\` with the cast sheets attached as references.\n\nThey are useful for: framing, lens, blocking, light direction, wardrobe continuity, and seeing whether the scene plays in order in the animatic.\n\nThey are not: approved coverage, a lighting plan, a cast approval, or a licence to stop checking. Faces drift between passes more than anything else — if a study of Mara or Vera does not match her sheet, mark the frame **Needs review** and regenerate it. Each frame's notes carry the pass it came from.`,
+    content: `**Format: every image is 16:9 full-bleed, 1920×1080 JPEG, no letterbox** \u2014 the final screenplay's rule for this film. Frames already on disk that were made at 2.39:1 (cold-open shots 11\u201328, scene 3, and the older style keys) are legacy studies awaiting that revision, not a licence to crop; regenerate, never reframe by cropping. Every frame in this storyboard is a **draft AI study** standing in for a shot that has not been photographed. They are generated in passes of ten, in screenplay order, from the boards in \`docs/neonoire/scenes/\` with the cast sheets attached as references.\n\nThey are useful for: framing, lens, blocking, light direction, wardrobe continuity, and seeing whether the scene plays in order in the animatic.\n\nThey are not: approved coverage, a lighting plan, a cast approval, or a licence to stop checking. Faces drift between passes more than anything else — if a study of Mara or Vera does not match her sheet, mark the frame **Needs review** and regenerate it. Each frame's notes carry the pass it came from.`,
+  },
+  {
+    id: "neonoire-frame-format", title: "Frame format — images are 16:9", color: "sand", createdAt,
+    tags: ["Images", "Format"], connections: [],
+    content: `From the final screenplay (\`${FOUNTAIN}\`) onward, **every image in this film is 16:9 full-bleed, 1920\u00d71080 JPEG, no letterbox** \u2014 including every keyframe generated for scenes 8\u2013100 as the board reaches them.\n\nThe studio look keeps its film character at the new shape: 35mm Kodak Vision3 500T grain, halation, crushed blacks, practical light \u2014 the Neo-Noir Tokyo style block in the app's library now opens with \"16:9 full-bleed widescreen\" instead of scope.\n\n**Legacy exceptions, tracked frame by frame:** cold-open shots 11\u201328 and scene 3 (shots 29\u201332) still hold 2.39:1 studies and are marked **Needs review** with \"REVISION PENDING\" in their notes; style keys 1\u20133 and 6\u20139 remain 2.39:1 references. Regenerate those in 16:9; never crop a revised frame back to scope, and never letterbox 16:9 content to fake it.\n\nNormalise a fresh 16:9 frame with:
+
+\`convert FILE.jpg -resize \"1920x1080^\" -gravity center -extent 1920x1080 -quality 92 -strip FILE.jpg\``,
   },
 ];
 
@@ -191,12 +214,12 @@ const allBoards = [
 const moodboards = allBoards.filter(board => board.items.length);
 
 // ---------------------------------------------------------------- the screenplay
-// The workspace's script is the whole draft with its seven scene-number markers removed, so each
+// The workspace's script is the whole final draft with its scene-number markers removed, so each
 // scene selects its own slugline exactly; nothing else about the text changes.
 const markers = countMarkers(fountain);
-assert.equal(markers, SCENES.length, `${FOUNTAIN} should carry one #n# scene marker per scene; found ${markers}`);
+assert.equal(markers, feature.length, `${FOUNTAIN} should carry one #n# scene marker per scene; found ${markers} markers for ${feature.length} scenes`);
 const script = cleanScript(fountain);
-for (const scene of SCENES) assert(script.includes(`${scene.location} - ${scene.time}`), `${scene.title} must keep its slugline in the workspace script`);
+for (const scene of feature) assert(script.includes(`${scene.location} - ${scene.time}`), `${scene.title} must keep its slugline in the workspace script`);
 
 // Every frame's quoted dialogue has to be in the draft — a quote that drifts is a bug, not a typo.
 for (const shot of shots) {
@@ -204,20 +227,22 @@ for (const shot of shots) {
   assert(containsText(fountain, shot.script), `Scene ${shot.scene.n} shot ${shot.n} quotes text that is not in ${FOUNTAIN}: "${shot.script.slice(0, 80)}"`);
 }
 
-const scenes = SCENES.map(scene => {
-  const own = shots.filter(shot => shot.scene.key === scene.key);
+const scenes = feature.map(scene => {
+  const own = scene.boarded ? shots.filter(shot => shot.scene.key === scene.key) : [];
   return {
     id: scene.id, title: scene.title, location: scene.location, time: scene.time,
     description: scene.description, characters: [...new Set(own.flatMap(shot => shot.cast.map(name => characters.find(c => c.name === name).id)))],
-    actId: ACT.id, partId: scene.partId, kind: scene.kind, lighting: scene.lighting,
-    lightingNotes: scene.lightingNotes, style: "neonoire",
+    actId: ACT.id, partId: scene.partId, kind: scene.kind || "Standard",
+    ...(scene.lighting ? { lighting: scene.lighting } : {}),
+    ...(scene.lightingNotes ? { lightingNotes: scene.lightingNotes } : {}),
+    style: "neonoire",
   };
 });
 
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The opening scenes, first draft (September 2026): 7 scenes and 68 numbered shots from a Kanda backstreet to a detectives' room three days later. The screenplay tab carries the draft page by page; the storyboard is generated in passes of ten keyframes, with Mara and Vera held to their continuity sheets. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained.`,
+  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in eleven of them \u2014 the opening seven (68 shots) and the Tokyo streets at the heart of the film proper, scenes 73\u201376 (shots 69\u201384) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
@@ -232,8 +257,8 @@ const imagePaths = new Set([project.coverImage, ...frames.map(f => f.image).filt
 for (const image of imagePaths) assert(existsSync(resolve(root, `public${image}`)), `Missing image: ${image}`);
 for (const c of characters) assert(c.description.length <= 700, `Shorten character description: ${c.name}`);
 for (const board of moodboards) assert(board.items.length <= 40, `Mood board over 40 items: ${board.title}`);
-assert.equal(scenes.length, 7);
-assert.equal(frames.length, 68);
+assert.equal(scenes.length, feature.length, `Every numbered scene of the final screenplay belongs to the workspace`);
+assert.equal(frames.length, totalShots);
 assert.equal(characters.length, 8);
 
 const output = resolve(root, "public", "projects", "neonoire-opening.json");

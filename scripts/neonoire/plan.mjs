@@ -1,19 +1,21 @@
-// Hand-authored production metadata for NEONOIRE — the opening scenes.
+// Hand-authored production metadata for NEONOIRE — the final feature screenplay.
 //
-// The draft itself lives at the repository root (Neonoire_Opening.fountain) and is never edited
+// The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
-// Screenplay tab's seven pages, and how a numbered shot board in docs/neonoire/scenes/ is read.
-// Dialogue and action are always quoted from the fountain, never retyped.
+// Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; the first seven are
+// boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
+// it. Dialogue and action are always quoted from the fountain, never retyped.
 //
 //   npm run build:neonoire     rebuild public/projects/neonoire-opening.json
-//   node scripts/neonoire/split-opening.mjs   regenerate the seven screenplay pages
+//   node scripts/neonoire/split-opening.mjs   regenerate the screenplay pages
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 export const projectId = "74a9cb34-9e80-4a04-a614-000000000065";
 export const actId = "neonoire-opening";
 export const createdAt = "2026-09-24T00:00:00.000Z";
-export const FOUNTAIN = "Neonoire_Opening.fountain";
+export const FOUNTAIN = "Neonoire (3).fountain";
 
 export const characterId = key => `neonoire-${key}`;
 
@@ -49,7 +51,9 @@ link("jack", "mara", "Parent", "The photograph on Vera's shelf: a Tokyo street t
 link("jack", "vera", "Parent", "The photograph on Vera's shelf: a Tokyo street twenty years ago.");
 
 // ---------------------------------------------------------------------------------------------
-// The seven scenes, in the draft's own running order
+// The boarded scenes, in the draft's own running order — the opening seven, and the first
+// scenes of the film proper (the Tokyo streets, 73–76). Boarded metadata is hand-authored here;
+// location, time and slugline are re-derived from the draft at build time and must match.
 // ---------------------------------------------------------------------------------------------
 
 /** A scene's slugline as the draft writes it, so a page can prove it opens on its own scene. */
@@ -124,19 +128,129 @@ export const SCENES = [
     description: "Continuous. Alone in the detectives' room, Ishida opens his bottom drawer: sealed in an evidence bag, Mara's purse — the torn strap coiled beside it, still damp. He looks at it a long moment. Closes the drawer. On the wall, the clock runs a minute fast. BOARDED — 6 shots.",
     lightingNotes: "Humming fluorescent rows, the desk lamp over the drawer, the radio's green dial. The evidence bag is lit plainly, like an exhibit.",
   },
+  {
+    key: "s73", id: "neonoire-s73", n: 73, partId: "neonoire-part-feature",
+    title: "Vera runs", location: "EXT. TOKYO STREETS", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. TOKYO STREETS - NIGHT #73#",
+    page: "n73-tokyo-streets-night.md", board: "n73-tokyo-streets.md",
+    cast: ["Vera Voss"],
+    grammar: "The film's cold-open grammar, given to Vera instead of Mara: rain, wet black asphalt, practical light only, wide and patient, the figure small. But she is not steady like Mara was — the camera keeps its distance while she comes apart. No music; rain, heels, breath, one crossing melody.",
+    description: "Night, after the hotel. Vera comes out into the rain and runs — badly, in heels, in the red dress, no coat, no umbrella — past a vending machine that glows, indifferent, through a crossing that chimes its old melody on red, until one heel skids off into a puddle and she runs on in one shoe. BOARDED — 4 shots (69–72); the first frames of the film proper.",
+    lightingNotes: "Hotel-door warm spill at her back, a vending machine's cold white on the wet street, sodium distance. The crossing signal's red is the only saturated note besides the dress.",
+  },
+  {
+    key: "s74", id: "neonoire-s74", n: 74, partId: "neonoire-part-feature",
+    title: "The empty street", location: "EXT. EMPTY STREET UNDER THE TRACKS", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. EMPTY STREET UNDER THE TRACKS - NIGHT #74#",
+    page: "n74-empty-street-under-the-tracks-night.md", board: "n74-empty-street-under-the-tracks.md",
+    cast: ["Vera Voss", "Jack Voss"],
+    grammar: "The film's biggest street frame: a row of vending machines as the only light, the black road shining like water, the elevated railway crossing overhead, two small figures twenty metres apart. The violence is one desperate blow, not a scene; the breaking is a folding, not a scream. The reflection may carry a figure under a pale-blue umbrella and must never resolve. Then WIDE, then EXTREME WIDE, and the score enters only when the shot has held too long.",
+    description: "Continuous. On a long, empty street beside the elevated railway, Jack walks out of the dark from the direction of the Hive — soaked, his hands dark, unwashed — and stops under an awning. Vera stops twenty metres from him. She asks; he cannot answer; she hits his chest twice, then again, weaker, until her hands fall. She breaks — folds to her knees on the wet pavement — grabs his coat, realises whose it is, and pushes him away. In the black water beside her, a reflection of a street that is slightly different, and a figure with a pale-blue umbrella. BOARDED — 4 shots (73–76), including the film's one supernatural almost.",
+    lightingNotes: "The vending machines hum and light the whole scene, cold white through falling rain; a single sodium amber far down the street; train windows sliding past overhead. No sky light, no fill, no theatrical spot on the figures.",
+  },
+  {
+    key: "s75", id: "neonoire-s75", n: 75, partId: "neonoire-part-feature",
+    title: "Still frames — what the night left", location: "INT./EXT. VARIOUS", time: "NIGHT - SERIES OF SHOTS",
+    kind: "Montage", lighting: "Practical night", slugline: "INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS #75#",
+    page: "n75-ext-various-night-series-of-shots.md", board: "n75-still-frames.md",
+    cast: [],
+    grammar: "Five still frames, no people — the film's Ozu grammar taken at its word: objects that were scenery during the night become the whole subject after it. Every frame is locked off; nothing moves but rain, steam and static. Held long enough to read as grief, not as a trailer.",
+    description: "Series of shots, after the street: a single red high-heeled shoe in a puddle; the hotel lounge, empty, chairs up, the pale-blue umbrella still leaning by the bar stool; the Hive at night with the noodle shop shutter down and its old sign faintly glowing; the vending machine, lit, waiting for no one; a shop-window television showing only static. Then CUT TO BLACK. BOARDED — 5 shots (77–81); nobody appears in any of them.",
+    lightingNotes: "Each still lit by its own practical: the machine's cold white, the sign's dim amber, the lounge's house-glow, the window's grey static. Rain dimpling the puddle is the only event.",
+  },
+  {
+    key: "s76", id: "neonoire-s76", n: 76, partId: "neonoire-part-feature",
+    title: "The lighter", location: "INT. VERA'S APARTMENT", time: "NIGHT",
+    kind: "Standard", lighting: "Low key", slugline: "INT. VERA'S APARTMENT - NIGHT #76#",
+    page: "n76-vera-s-apartment-night.md", board: "n76-vera-apartment.md",
+    cast: ["Vera Voss"],
+    grammar: "The same room as scene 4, now dark: rain on the glass, one street-lit plane of the window, nothing switched on. The room's geography and the removed paper pendant stay as in the apartment revision. The lighter is the only object the scene owns; it must look handled, not precious.",
+    description: "Night, later. In the dark apartment, Vera sits on the floor with her back against the bed — still in the ruined red dress, mascara dried, one shoe — with her father's old steel lighter in her hand. She opens it, closes it, opens it. She should throw it away; she holds it against her chest instead, and bends over it, and cries without making a sound. She still loves him; she hates herself for it. BOARDED — 3 shots (82–84); the scene the opening's answerphone was pointed at.",
+    lightingNotes: "No practicals on: cold window light and the landing's spill under the door only. The lighter's small flame is the one warm note, briefly, and then the dark takes it back.",
+  },
 ];
+
+/**
+ * Every scene of the final screenplay. The draft marks each of its scenes with a trailing
+ * ` #n#` marker; those markers are read straight off the fountain, so a scene the board has
+ * not reached yet still exists in the workspace as *written, not boarded*. The seven opening
+ * scenes keep their hand-authored board metadata; everyone else is derived, mechanically and
+ * honestly, from the slugline itself.
+ */
+const MARKED_SLUG = /^(INT|EXT)[. ][A-Z0-9'’ /&().,-]+ - [A-Z][A-Z0-9'’ .,-]*#\d+#$/;
+
+export const sceneMarkers = fountain => {
+  const found = [];
+  fountain.split("\n").forEach((line, i) => {
+    const m = MARKED_SLUG.exec(line.trim());
+    if (m) found.push({ n: Number(/ #(\d+)#$/.exec(line.trim())[1]), line: i, text: line.trim() });
+  });
+  return found;
+};
+
+/** "INT. SMALL BAR, KANDA" → "Small bar, Kanda" — capitalised after the comma and for possessives. */
+export const humanTitle = location => {
+  const core = location.replace(/^(?:INT|EXT)\.?\s*\/?\s*(?:INT|EXT)\.?\s*/i, "");
+  let capNext = true;
+  return core.toLowerCase().split(/([ ,.;-]+)/).filter(Boolean).map(word => {
+    if (/^[ ,.;-]+$/.test(word)) { if (word.startsWith(",")) capNext = true; return word; }
+    const out = (capNext || /^\w+'s?$/.test(word)) ? word.charAt(0).toUpperCase() + word.slice(1) : word;
+    if (capNext) capNext = false;
+    return out;
+  }).join("");
+};
+
+const pageSlug = text => text.replace(/^(?:INT|EXT)\.?\s*/i, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+const lightingForTime = time => (/NIGHT/.test(time) ? "Practical night" : /DAY/.test(time) ? "Natural daylight" : /DUSK|DAWN/.test(time) ? "Blue hour" : undefined);
+
+export function featureScenes(fountain) {
+  const lines = fountain.split("\n");
+  const marks = sceneMarkers(fountain);
+  if (!marks.length) throw new Error(`${FOUNTAIN} carries no numbered scenes — every scene heading must end with its " #n#" marker.`);
+  marks.forEach((mark, i) => {
+    if (mark.n !== i + 1) throw new Error(`${FOUNTAIN} scene markers must run 1..N in order; scene ${i + 1} is marked #${mark.n}#`);
+  });
+  const straySlug = lines.findIndex(line => /^(INT|EXT)[. ].* - /.test(line.trim()) && !/ #\d+#$/.test(line.trim()));
+  if (straySlug >= 0) throw new Error(`${FOUNTAIN} line ${straySlug + 1} reads like a scene heading but carries no " #n#" marker — mark it, or the Screenplay tab loses a scene.`);
+  return marks.map((mark, i) => {
+    const bare = mark.text.replace(/ #\d+#$/, "");
+    const at = bare.indexOf(" - ");
+    const derived = { n: mark.n, location: bare.slice(0, at), time: bare.slice(at + 3), slugline: mark.text, line: mark.line };
+    const hand = SCENES.find(scene => scene.n === mark.n);
+    if (hand) {
+      if (hand.location !== derived.location || hand.time !== derived.time) throw new Error(`The boarded scene ${hand.n} no longer matches ${FOUNTAIN}: the draft says "${derived.location} - ${derived.time}", the board says "${hand.location} - ${hand.time}".`);
+      return { ...hand, ...derived, boarded: true };
+    }
+    const opener = (lines.slice(mark.line + 1).find(line => line.trim()) || "").trim().replace(/\s+/g, " ");
+    const quote = opener.length > 180 ? `${opener.slice(0, 177).trimEnd()}…` : opener;
+    return {
+      ...derived,
+      boarded: false,
+      key: `s${mark.n}`, id: `neonoire-s${mark.n}`, partId: "neonoire-part-feature",
+      title: humanTitle(derived.location),
+      kind: "Standard",
+      ...(lightingForTime(derived.time) ? { lighting: lightingForTime(derived.time) } : {}),
+      page: `n${String(mark.n).padStart(2, "0")}-${pageSlug(bare)}.md`,
+      board: null, cast: [],
+      grammar: grammar,
+      description: `WRITTEN, NOT BOARDED — no numbered shot board yet. Scene ${mark.n} of the final screenplay; the Screenplay tab carries its page, and the board has only reached the opening. ${quote ? `The draft opens it: "${quote}".` : ""}`.trim(),
+      lightingNotes: undefined,
+    };
+  });
+}
 
 export const ORDER = SCENES.map(scene => scene.page);
 export const sceneById = key => SCENES.find(scene => scene.key === key || scene.id === key);
 
 export const ACT = {
   id: actId,
-  title: "The opening — Kanda to the detectives' room",
-  description: "Seven scenes from the first draft's opening: a backstreet in Kanda at night, a small bar, Vera's apartment three days later, and a police station that already knows Mara's name. 68 numbered shots; every frame is a draft study, not approved coverage.",
+  title: "The screenplay — Kanda to the new counter",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the ninety-three scenes the board has not reached yet. 68 numbered shots cover scenes 1–7; the rest arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Written; not yet boarded." },
   ],
 };
 
@@ -152,18 +266,16 @@ export const cleanScript = text => text.replace(/ #\d+#(?=\n|$)/g, "");
 export const countMarkers = text => (text.match(/ #\d+#(?=\n|$)/g) || []).length;
 
 /**
- * The draft's lines, split into one slice per scene. Scene 1 carries the title page, THE LOOK
- * and FADE IN as well as its own scene; every other slice begins at its own slugline.
+ * The draft's lines, split into one slice per numbered scene. Scene 1 carries the title page,
+ * THE LOOK and FADE IN as well as its own scene; every other slice begins at its own slugline
+ * and runs to the line before the next one, so the slices partition the draft exactly and the
+ * pages can rebuild it byte for byte.
  */
 export function pages(fountain) {
   const lines = fountain.split("\n");
-  const starts = SCENES.map(scene => {
-    const at = lines.findIndex(line => line.trim() === scene.slugline);
-    if (at < 0) throw new Error(`Neonoire_Opening.fountain no longer carries the slugline "${scene.slugline}"`);
-    return at;
-  });
+  const starts = sceneMarkers(fountain).map(mark => mark.line);
+  if (!starts.length) throw new Error(`${FOUNTAIN} carries no numbered scene headings`);
   for (let i = 1; i < starts.length; i++) if (starts[i] <= starts[i - 1]) throw new Error("The draft's scenes are out of order");
-  if (starts[0] < 0) throw new Error("The draft must open with a scene");
   // Scene 1's page also carries the title page, THE LOOK and FADE IN — everything the draft puts
   // above its first slugline belongs to the scene that follows it.
   return starts.map((from, i) => lines.slice(i === 0 ? 0 : from, starts[i + 1] ?? lines.length));
@@ -174,11 +286,11 @@ export function pageHeader(scene) {
   const grammarLines = scene.grammar.match(/.{1,150}(\s|$)/g) || [scene.grammar];
   return [
     "NEONOIRE",
-    `OPENING — SCENE ${scene.n} — ${scene.location}`,
+    `${scene.boarded ? "OPENING" : "SCREENPLAY"} — SCENE ${scene.n} — ${scene.location}`,
     "",
     `${scene.location} - ${scene.time}`,
-    `Source: the first draft's opening scenes (${FOUNTAIN}, September 2026), reproduced verbatim below its own heading.`,
-    `Cast: ${scene.cast.length ? scene.cast.join(", ") : "— (no actors; the city carries the scene)"}.`,
+    `Source: the final screenplay (${FOUNTAIN}, September 2026), reproduced verbatim below its own heading.${scene.boarded ? "" : " Written, not boarded: the numbered shot board covers the opening scenes only."}`,
+    `Cast: ${scene.cast.length ? scene.cast.join(", ") : "— (not boarded; the draft names its own cast)"}.`,
     `Grammar: ${grammarLines.join("\n")}`,
     "",
   ].join("\n");
@@ -188,11 +300,14 @@ export function pageText(scene, lines) {
   return `${pageHeader(scene)}\n${lines.join("\n")}\n`;
 }
 
-/** What is left once a page's header is removed — the draft's own bytes. */
+/**
+ * What is left once a page's header is removed — the draft's own bytes, trailing blank lines
+ * and all, so joining the page bodies with a single newline rebuilds the fountain exactly.
+ */
 export function pageBody(text) {
   const lines = text.split("\n");
   const end = lines.findIndex((line, i) => i >= 4 && line.trim() === "");
-  return lines.slice(end + 1).join("\n").trim();
+  return lines.slice(end + 1).join("\n").replace(/\n$/, "");
 }
 
 // ---------------------------------------------------------------------------------------------

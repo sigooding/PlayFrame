@@ -14,28 +14,34 @@ storyboard, shot list, mood boards, prompt studio). NEONOIRE — the opening sce
 feature set in Tokyo — is one of the projects it ships, and it is a *separate, self-contained*
 workspace from the series project that was already in the repo.
 
-The draft (`Neonoire_Opening.fountain`, repository root) is seven scenes, 401 lines. It has been
-turned into:
+The draft (`Neonoire (3).fountain`, repository root) is the **final screenplay**: 100 numbered
+scenes, 3,474 lines, from the Kanda backstreet to Kaneko's new counter and `>THE END<`. The opening
+`Neonoire_Opening.fountain` is superseded — kept only as a historical extract. The final draft has
+been turned into:
 
 | | |
 | --- | --- |
-| **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — verbatim; a build step fails if it ever drifts from the fountain |
-| **board** | 68 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 68 of 68 generated, plus 9 studio keys — in `public/images/neonoire/` |
-| **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE |
+| **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — one page per numbered scene (n01–n100), verbatim; a build step fails if it ever drifts from the fountain |
+| **board** | 84 numbered shots in `docs/neonoire/scenes/` — `n01–n07` for the opening, `n73–n76` for the film proper's centre — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
+| **keyframes** | 84 of 84 generated, plus 9 studio keys — in `public/images/neonoire/` (`s73 … s76/` for scenes 73–76) |
+| **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE; the other eighty-nine scenes ride in it as **WRITTEN, NOT BOARDED** cards with their full screenplay pages |
 
-Story: Kanda, night. Mara Voss (24, American) declines her sister's call, watches two masked men
-shoot an old man in the rain, takes a coin-locker key out of his hand and hides behind a bar counter
-while a journalist is killed in front of a laughing television. Three days later her sister Vera
-reports her missing; a detective with her sister's purse already in his desk drawer tells her to call
-any time. The opening ends there. **Nothing is explained** — that is the film's rule, and it is the
-workspace's.
+Story (opening): Kanda, night. Mara Voss (24, American) declines her sister's call, watches two
+masked men shoot an old man in the rain, takes a coin-locker key out of his hand and hides behind a
+bar counter while a journalist is killed in front of a laughing television. Three days later her
+sister Vera reports her missing; a detective with her sister's purse already in his desk drawer tells
+her to call any time. **The final screenplay then plays the whole board out** — the key's price, the
+Hive, Kurose, the roadside inn, and a new counter under the railway, where the red bird clip ends up
+in Vera's hair and a shadow fills a doorway. **Nothing is explained** — that is the film's rule, and
+it is the workspace's. Note the one continuity change the final draft makes inside the opening:
+Mara's red bird clip now slips loose between the crates in scene 2 and is gone from her hair from
+that beat on.
 
 ---
 
 ## 2. What you are being asked to do
 
-**All 68 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
+**All 84 keyframes are now generated** — the opening's 68 and the streets boards' sixteen. Use [`passes/README.md`](passes/README.md) as the review index; the
 numbered boards, continuity sheets and the app style in [`src/lib/styles.ts`](../../src/lib/styles.ts) remain
 the source of truth for any regeneration.
 
@@ -63,7 +69,8 @@ typo check. The app fills a placeholder in automatically the next time the works
 ## 3. The look — non-negotiable
 
 The full style block and negative prompt are the **`neonoire` visual style inside the app**
-(`src/lib/styles.ts`), which is what every frame in the bundle carries. In short: 2.39:1 anamorphic (except the revised 16:9 apartment/front-counter/interview/detectives scenes and the revised apartment/station keys), 35mm Kodak Vision3 500T, visible fine grain,
+(`src/lib/styles.ts`), which is what every frame in the bundle carries. In short, per the final
+screenplay: **16:9 full-bleed widescreen for every image in the film**, 35mm Kodak Vision3 500T, visible fine grain,
 halation around every practical light, crushed but never muddy blacks, muted desaturated palette,
 cold steady rain on black reflective asphalt, lit by vending machines, sodium streetlights and sick
 fluorescent green — **never by the sky**. Wide and patient, figure small, lots of negative space,
@@ -75,10 +82,10 @@ portrait, fashion pose, smiling, text, watermark, anime style.
 
 **If it comes out too cyberpunk:** drop "neon", add "1990s, ordinary, worn, documentary realism".
 
-Technical: JPEG. **Scenes 4–7 (shots 33–68) and the apartment/police-station keys are now 16:9, 1920×1080**, revised from `police_station.png` on 25 September 2026 with Vera and the young officer matched to their sheets. See `scenes/n05-front-counter.md` and `scripts/neonoire/front-counter-look.mjs`. The apartment uses `appartment.png` and `photo.png`; the paper pendant is removed completely, including cord/reflection. See `scenes/n04-vera-apartment.md` and `scripts/neonoire/apartment-look.mjs` for room, cup, phone, wardrobe and childhood-photo continuity. The interview room follows `s6/51-the-interview-room.jpg` and `s6/56-three-days-ago.jpg`, with the cup/spill states and tissue-box placement in `scripts/neonoire/interview-look.mjs`; shots 57 and 59 are reframings of their masters. The detectives’ room follows `scripts/neonoire/detectives-look.mjs`: Ishida keeps his open-collar suit, the evidence remains sealed inside the bottom drawer, and only that drawer opens before closing again. Cold-open shots 1–10 have also been rebuilt at 1920×1080; shots 11–28 remain older 2.39:1 studies marked Needs review, with a 16:9 target. Continue via `passes/cold-open-revision.md` and `scripts/neonoire/cold-open-look.mjs`. Do not recrop revised frames to scope. Other frames retain **2.39:1**, 1912×800. Normalise those other frames with:
+Technical: JPEG. **Every image is 16:9, 1920×1080 — this is the film's frame rule from the final screenplay (25 September 2026) onward, and it covers any frame generated for scenes 8–100 as the board reaches them.** Scenes 4–7 (shots 33–68) and the apartment/police-station keys were already revised to it from `police_station.png` with Vera and the young officer matched to their sheets. See `scenes/n05-front-counter.md` and `scripts/neonoire/front-counter-look.mjs`. The apartment uses `appartment.png` and `photo.png`; the paper pendant is removed completely, including cord/reflection. See `scenes/n04-vera-apartment.md` and `scripts/neonoire/apartment-look.mjs` for room, cup, phone, wardrobe and childhood-photo continuity. The interview room follows `s6/51-the-interview-room.jpg` and `s6/56-three-days-ago.jpg`, with the cup/spill states and tissue-box placement in `scripts/neonoire/interview-look.mjs`; shots 57 and 59 are reframings of their masters. The detectives’ room follows `scripts/neonoire/detectives-look.mjs`: Ishida keeps his open-collar suit, the evidence remains sealed inside the bottom drawer, and only that drawer opens before closing again. Cold-open shots 1–10 have also been rebuilt at 1920×1080; shots 11–28 remain older 2.39:1 studies marked Needs review, and scene 3 (shots 29–32) carries the same 16:9-revision-pending label. Continue via `passes/cold-open-revision.md` and `scripts/neonoire/cold-open-look.mjs`. Do not recrop revised frames to scope, and do not letterbox 16:9 content to fake the old shape (two of shots 71/75 arrived with burned-in matte lines and were de-letterboxed at source, not faked). Scenes 73–76 (shots 69–84) generate against `scripts/neonoire/streets-look.mjs`: Vera in the ruined deep-red dress losing one red court shoe in shot 72, Jack as the living man in the soaked charcoal overcoat, and scene 75's five still frames with nobody in them, each tied to an earlier master (the shoe to 72's puddle, the lounge to the pale-blue umbrella, the machine to `s1/01-backstreet.jpg`). No frame is to be generated at 2.39:1 any more; normalise every fresh or regenerated frame with:
 
 ```bash
-convert FILE.jpg -resize "1912x800^" -gravity center -extent 1912x800 -quality 92 -strip FILE.jpg
+convert FILE.jpg -resize "1920x1080^" -gravity center -extent 1920x1080 -quality 92 -strip FILE.jpg
 ```
 
 Do not rename, move or delete anything the board names. The filename *is* the shot's identity.
@@ -88,8 +95,8 @@ Do not rename, move or delete anything the board names. The filename *is* the sh
 ## 4. Continuity — the thing that breaks first
 
 - **Mara Voss (24)** — American. Long wavy ash-blonde hair, soaked flat for the whole opening and
-  held back by a cheap enamel clip shaped like a small red bird; the clip stays pinned through the
-  bar scene. Pale blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin
+  held back by a cheap enamel clip shaped like a small red bird; in the final screenplay the clip
+  slides loose between the crates inside the bar (scene 2) and is out of her hair from that beat on. Pale blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin
   black cord necklace. Sheet `sheets/mara.jpg`; face crop `sheets/mara-face.jpg`. **Attach the face crop
   to every generation she is in.**
 - **Vera Voss (29)** — American, her older sister, same blonde hair and blue eyes, told apart by
@@ -138,8 +145,9 @@ Honest assessment, in the order worth fixing:
 
 ## 6. What not to touch
 
-- **The draft.** `Neonoire_Opening.fountain` is the source of truth; the pages are generated from it
-  and the builder proves they rebuild it byte for byte. Never hand-edit `docs/neonoire/screenplay/`.
+- **The draft.** `Neonoire (3).fountain` is the source of truth — the final screenplay; the pages are
+  generated from it and the builder proves the 100 of them rebuild it byte for byte. Never hand-edit
+  `docs/neonoire/screenplay/`.
 - **The board's numbers, framing or filenames.** They are asserted at build time. If a shot's
   direction is wrong, say so — do not silently change the board to match a picture you like.
 - **The series project.** `public/projects/let-the-raptures-commence.json` and `docs/rapture/` belong

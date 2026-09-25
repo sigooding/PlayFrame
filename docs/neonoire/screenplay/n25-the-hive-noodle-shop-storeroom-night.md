@@ -1,0 +1,75 @@
+NEONOIRE
+SCREENPLAY — SCENE 25 — INT. THE HIVE, NOODLE SHOP STOREROOM
+
+INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading. Written, not boarded: the numbered shot board covers the opening scenes only.
+Cast: — (not boarded; the draft names its own cast).
+Grammar: Tokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent 
+tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel 
+like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. 
+Wide and patient; close-ups are rare, so they count. Nothing is explained.
+
+INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #25#
+
+The bulb. The flour sacks. Mara sits cross-legged on the futon, a bowl of rice going cold in her lap. Jack sits against the opposite wall. They talk quietly, as if the building is listening. It is.
+
+MARA
+The old man said "twenty years." Before they shot him. Like he'd been expecting them for twenty years.
+
+JACK
+He probably had.
+
+MARA
+And then in the bar, the man said, "Where is he?" He was waiting for the old man. They were supposed to meet.
+
+JACK
+Sakai was bringing him something.
+
+Mara opens her fist. The coin-locker key on its worn plastic tag.
+
+MARA
+This.
+
+Jack takes it. Turns it over under the bulb. A number stamped into the metal: 114. The plastic tag is so old the printing has worn away.
+
+JACK
+It's not a station locker. They clear those every three days.
+
+MARA
+Then what is it?
+
+JACK
+Somewhere he paid for. For a long time.
+
+He hands it back. She looks surprised.
+
+JACK (CONT'D)
+Keep it. Until I know what it opens. It's safer with you than with me.
+
+MARA
+Why?
+
+JACK
+Because nobody knows where you are.
+
+Mara closes her hand around the key. She looks at him properly for the first time.
+
+MARA
+Is she eating?
+
+JACK
+What?
+
+MARA
+Vera. She forgets to eat when she's upset. She just drinks coffee. Is she eating?
+
+Jack thinks of the counter at 11:40 p.m. The empty bowls.
+
+JACK
+Last night she had noodles.
+
+MARA
+Good.
+(beat)
+Make her eat breakfast. She never eats breakfast.
+
