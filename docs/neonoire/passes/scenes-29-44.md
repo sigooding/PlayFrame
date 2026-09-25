@@ -38,6 +38,10 @@ Boards: [n29](../scenes/n29-mrs-sakai-house-day.md), [n30](../scenes/n30-country
 - **212:** the first study showed the corridor boots with no man above them; the delivered frame gives the boots their black silhouette.
 - **206:** the altar photograph is small in frame; its identity is the lock, not the pixels.
 - **210:** Vera without her coat is a deliberate read of the original look at home, not a new look.
+- **208:** the bath window's fogged glass glows white-hot; at night it should read steam against dark — keep the glass dark on set.
+- **214:** the open pantry door and the rain-dark back door sit close together at the right; the cut must favour the pantry hinge or the geography confuses.
+
+Review sheet: [scenes-29-44-pass-1.jpg](../../../public/images/neonoire/reviews/scenes-29-44-pass-1.jpg), built with `npm run review:neonoire`.
 
 ## Next
 
