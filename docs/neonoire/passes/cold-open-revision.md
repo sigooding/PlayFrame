@@ -5,11 +5,18 @@ Scope: **shots 1–28**, scenes 1–2, before the main titles. Preserve the verb
 ## Delivery status
 
 - [x] **1–10** — installed as 1920×1080 JPEGs at the existing asset paths; AI-generated draft studies, awaiting production approval.
-- [ ] **11–20** — next batch; existing legacy 2.39:1 images are still on disk, marked Needs review.
+- [x] **11–13** — rebuilt 16:9 on 26 September 2026 at the existing asset paths, from the same street masters and beats; the boards in `scenes/n01-backstreet.md` are unchanged.
+- [ ] **14–20** — next batch; existing legacy 2.39:1 images are still on disk, marked Needs review.
 - [ ] **21–28** — final cold-open batch; existing legacy 2.39:1 images are still on disk, marked Needs review.
 - [ ] **29–32 (scene 3)** — joins the revision list: from the final screenplay the whole film is 16:9, so scene 3's four legacy 2.39:1 studies are regenerated at 1920×1080, not cropped. The bundle builder marks each of them **16:9 REVISION PENDING**.
 
 The image service allows ten generations in a turn. Do not silently crop the remaining old images or label them as rebuilt. The generation limit was reached after batch 1; no shots after 10 were regenerated.
+
+## Consistency audit — 26 September 2026 (asked by the director)
+
+**Is the cold open consistent? Not yet — deliberately, and here is why.** Shots 1–10 were rebuilt 16:9 in the original revision pass; on 26 September 2026 shots **11–13** were rebuilt 16:9 at their existing asset paths from the same street masters and beats (Mara's two hands over her mouth in the doorway shadow; the masked man's earpiece, only eyes above the mask; the sedan pulling away unhurried with taillights on the wet road). Reviewed frame by frame at full size, **1–13 now read as one continuous street**: same recess, pole and vending machine, same soaked Mara with the red-bird clip and intact bag strap, same black sedan and exactly two masked men, same rain and sodium-against-green palette.
+
+**Shots 14–28 still hold their legacy 2.39:1 studies (1912×800),** and so do scene 3's 29–32. Across the cold open as a whole the aspect ratio and the generation therefore change mid-sequence at shot 14 — that seam is the inconsistency, and it is honest: the ten-generations-a-turn budget was spent, on the director's instruction, finishing the numbered board in screenplay order before any more gap-filling, and the board only closed on 26 September 2026 with scenes 65–71. The repo rule forbids cropping the legacy frames to fake 16:9, so they remain on disk marked **Needs review / REVISION PENDING**, driven by `coldOpenCompletedThrough` (now 13). With the feature fully boarded, this revision list is now the primary image work: batch 14–20 next, then 21–28, then scene 3.
 
 ## Reference priority
 

@@ -9,7 +9,7 @@ Grammar: wide and patient. The city lights the scene, not the sky: sodium orange
 
 ## Cold-open revision — batch 1
 
-**Shots 1–10 are rebuilt at 16:9, 1920×1080. Shots 11–18 retain their earlier 2.39:1 images and are marked Needs review until the next revision batch.** The whole pre-title cold open includes scene 2 (shots 19–28), which also still awaits revision. Do not mistake the remaining on-disk images for finished revised coverage.
+**Shots 1–13 are rebuilt at 16:9, 1920×1080 — 11–13 on 26 September 2026 from the same street masters. Shots 14–18 retain their earlier 2.39:1 images and are marked Needs review until the next revision batch.** The whole pre-title cold open includes scene 2 (shots 19–28), which also still awaits revision. Do not mistake the remaining on-disk images for finished revised coverage.
 
 The location master is `s1/01-backstreet.jpg`: left brick barbershop recess, brown door/navy awning, unlit striped pole at the recess’s right edge, one off-white vending machine opposite on the right. Shot 2 is a tighter crop of that master so the vending model and position do not drift. Mara’s face/wardrobe reference is `sheets/mara.jpg`, with the wet look in `s1/03-mara-walks.jpg`; her handbag/phone beat is `s1/05-phone-off.jpg`. The old man’s raincoat and appearance are fixed by `s1/07-old-man.jpg`, and the sedan/two masked men by `s1/08-sedan-arrives.jpg`.
 

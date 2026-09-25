@@ -58,10 +58,10 @@ validatePatch(project);
 assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 100, "The final screenplay's 100 numbered scenes all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 93, "Scenes 1–64 and 72–100 are boarded");
+assert.equal(boardedIds.size, 100, "All one hundred scenes of the screenplay are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 233;
+const EXPECTED_SHOTS = 240;
 assert.equal(project.frames.length, EXPECTED_SHOTS, "The sixty-five boarded scenes carry 205 numbered shots");
 assert.equal(project.characters.length, 18);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
@@ -453,6 +453,17 @@ for (const frame of answer) assert.deepEqual(jpegDimensions(frame.image), [1920,
 assert(answer.find(f => f.id === "neonoire-shot-224").notes.includes("no weapons in frame"), "Shot 224 keeps the moderation-safe composition");
 assert(answer.find(f => f.id === "neonoire-shot-232").notes.includes("MONTHLY. YEARLY. NO QUESTIONS."), "Shot 232 locks the locker-room sign");
 pass("scene 47 and scenes 56–64 boarded: ten 16:9 shots — the yard, the third stool, the curtain gap, the overpayment, the embrace, the key, the car, the date, the lockers and the bar");
+
+// The last rain: scenes 65–71 close the board — the dress, the wait, the trap and the waking.
+const lastrain = project.frames.filter(f => ["s65", "s66", "s67", "s68", "s69", "s70", "s71"].map(k => `neonoire-${k}`).includes(f.sceneId));
+assert.deepEqual(lastrain.map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${234 + i}`));
+for (const frame of lastrain) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
+assert(lastrain.find(f => f.id === "neonoire-shot-234").notes.includes("s72/69"), "Shot 234 locks the wine-red dress to the scene 72 wardrobe master");
+assert(lastrain.find(f => f.id === "neonoire-shot-235").notes.includes("production-review check"), "Shot 235 carries the lounge clock as a production-review check");
+assert(lastrain.find(f => f.id === "neonoire-shot-236").notes.includes("8:52"), "Shot 236 locks the service-road sign");
+assert(lastrain.find(f => f.id === "neonoire-shot-239").notes.includes("no weapons"), "Shot 239 keeps the ambush moderation-safe");
+assert(lastrain.find(f => f.id === "neonoire-shot-240").notes.includes("no blood"), "Shot 240 keeps Mara's death a scene of care");
+pass("scenes 65–71 boarded: seven 16:9 shots — the dress, the wait at ten, the different clock, rice balls for the car, the passages, the trap and the waking; every numbered scene of the screenplay is now boarded");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 

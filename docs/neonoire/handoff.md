@@ -2,7 +2,7 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **93 scenes, 233 shots**: scenes 1–64 plus 72–100. **All 233 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scene 47 and scenes 56–64](passes/scenes-47-64.md) (shots 224–233), the key's answer; only **scenes 65–71** remain unboarded, next image **shot 234**, asset `s65/232`. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s65 ...`.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **all 100 scenes, 240 shots** — the screenplay is fully boarded as of 26 September 2026. **All 240 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 65–71](passes/scenes-65-71.md) (shots 234–240), the last rain: the dress, the wait at ten, the trap and the waking. **The remaining image work is revision, not boarding:** cold-open shots 14–28 and scene 3 (shots 29–32) still hold legacy 2.39:1 frames — see the cold-open note below — plus any retakes or set inserts the director orders. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s65 ...`.
 
 ## Note to the next agent — how consistency is kept here
 
@@ -24,7 +24,7 @@ The director's first and lasting request is **scene and character consistency**.
   - The pale blue umbrella: `s4/34`.
   - The family photograph: `s4/35`.
 - **Re-list reference filenames with `ls` immediately before generating.** Parallel passes rename assets (shot numbers shift when a scene gains a frame); a stale path costs a generation and returns "Source image not found".
-- **Before starting a turn, sync git.** This sandbox has several times reset local git to an old base commit while keeping the files, and the pushed branch has been ahead of the local files (finished work from an earlier, interrupted run). Run `git fetch origin arena/01a0da06-playframe`, compare with `git log FETCH_HEAD -1` and `git diff --stat FETCH_HEAD`, and reset to the remote if it is newer. Never redo work that is already pushed, and never spend generations on it. Run `npm ci` if `node_modules` is missing.
+- **Before starting a turn, sync git. Committing problems seen in this sandbox, and their fix.** Symptom: at the start of a turn the local checkout is silently reset to the session's branch point (commit `93dc0c1`) — `git status` then shows a pile of stale modifications, `git log` is missing every commit you pushed, and `node_modules` has vanished. Nothing is actually lost: the pushed branch on origin still holds all of it. **Fix, in this order:** `git fetch origin arena/01a0da06-playframe`; compare `git rev-parse HEAD` with `git rev-parse FETCH_HEAD`; if they differ, `git reset --hard FETCH_HEAD`; then `npm ci --silent` before running any script. This has happened five times (latest: 26 September 2026) and the reset protocol has recovered everything each time. **Never force-push** over it, and never re-generate images that already exist on the pushed branch — check `public/images/neonoire/` first. Equally: **commit and push before ending a turn**; uncommitted work does not survive the sandbox reset, pushed work always does.
 - **Review every image at full size before installing it** (see rule 2 below): identity, wardrobe, prop, count, direction, and left/right against the neighbouring shots. Past failures were:
   - a car missing its front (shot 140)
   - sedans facing away from the building they had arrived at (shot 175)
@@ -32,6 +32,10 @@ The director's first and lasting request is **scene and character consistency**.
   - two men in one photograph who looked alike (shot 169, first attempt)
   - three prosecutors where the script has four (shot 150)
 - **Stable numbering:** shots are numbered in boarding order. Never renumber, never reuse a frame ID or asset name, never edit the fountain, and keep ten generations per session. Log every flaw you don't fix as an honest caveat.
+
+## Note — the cold open's consistency, audited 26 September 2026
+
+The user asked whether the cold open looks consistent. **Answer: not yet, and here is exactly why.** Shots 1–10 were rebuilt 16:9 in the cold-open pass; shots 11–13 were rebuilt 16:9 on 26 September 2026 from the same street masters (`s1/01`, `s1/06`, `s1/08`) and the same beats, so **1–13 now read as one street, one Mara (clip, denim, bag), one sedan, two masked men** — reviewed frame by frame at full size that day. **Shots 14–28 and scene 3 (29–32) still hold their legacy 2.39:1 studies (1912×800 on disk),** so the cold open as a whole mixes aspect ratios and generations: the first thirteen frames are the revision's street, the rest are the older look. That is not drift by accident — it is budget: every turn's ten generations were spent on the forward numbered board in screenplay order, on the director's instruction that there be **no more gap-filling until the shots were done**, and the shots only finished on 26 September 2026 with scenes 65–71. The repo rule forbids cropping legacy frames to fake 16:9, so they stay honestly marked **Needs review / REVISION PENDING** (the builder says so from `coldOpenCompletedThrough`, now 13) until regenerated. With the board complete, the next sessions' ten-image turns belong to this revision list: 14–20, then 21–28, then scene 3's four frames.
 
 ## Standing rules for every pass (set by the director)
 
