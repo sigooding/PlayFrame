@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–88 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–92 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -321,6 +321,46 @@ export const SCENES = [
     description: "Continuous. DARK. Every bulb in the building goes out at once. The masked men stop; flashlights snap on, catching dripping pipes, closed doors, laundry, faces at windows that vanish the moment the light touches them. The Hive knows its own dark. The men don't. BOARDED — 2 shots (128–129).",
     lightingNotes: "Black, and tight hard white flashlight beams with haze in them. Nothing else.",
   },
+  {
+    key: "s89", id: "neonoire-s89", n: 89, partId: "neonoire-part-feature",
+    title: "She lets him", location: "INT. THE HIVE, STAIRWELL", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. THE HIVE, STAIRWELL - CONTINUOUS #89#",
+    page: "n89-the-hive-stairwell-continuous.md", board: "n89-hive-stairwell.md",
+    cast: ["Jack", "Vera Voss"],
+    grammar: "24mm up the stair in the dark; 85mm on the hands. The building's noise is sound, not picture.",
+    description: "Continuous. Pitch black. Vera and Jack climb a narrow concrete stair by touch; his hand finds hers, and she lets him. A flashlight beam sweeps the bottom of the stairwell. Then a dog, a baby, a radio playing the old ballad, a television, a pot and a spoon: the whole building makes noise on purpose, and the beam swings away. BOARDED — 2 shots (130–131).",
+    lightingNotes: "Near-total dark; one hard white flashlight beam at the bottom of the stair.",
+  },
+  {
+    key: "s90", id: "neonoire-s90", n: 90, partId: "neonoire-part-feature",
+    title: "Over the gap", location: "EXT. THE HIVE, ROOFTOP", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. THE HIVE, ROOFTOP - CONTINUOUS #90#",
+    page: "n90-the-hive-rooftop-continuous.md", board: "n90-hive-rooftop.md",
+    cast: ["Jack", "Vera Voss"],
+    grammar: "24mm over the forest of the roof, 35mm for the jump. Rain and wind.",
+    description: "Continuous. Rain and wind across the Hive's roof: water tanks, aerials, laundry poles, pigeon cages, and Tokyo lit and indifferent in every direction. At the edge, a metre away, the railway maintenance walkway. Jack helps Vera over the gap; she jumps, and he follows. BOARDED — 2 shots (132–133).",
+    lightingNotes: "The city's sodium and green glow, rain streaks, no practicals on the roof.",
+  },
+  {
+    key: "s91", id: "neonoire-s91", n: 91, partId: "neonoire-part-feature",
+    title: "She doesn't pull away", location: "EXT. RAILWAY MAINTENANCE WALKWAY", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. RAILWAY MAINTENANCE WALKWAY - CONTINUOUS #91#",
+    page: "n91-railway-maintenance-walkway-continuous.md", board: "n91-railway-walkway.md",
+    cast: ["Jack", "Vera Voss"],
+    grammar: "24mm along the walkway, opening and closing on the same camera; 50mm against the fence as the train passes.",
+    description: "Continuous. On the narrow walkway beside the tracks, flashlights behind on the roof and the rails singing ahead. A train: a roaring wall of lit windows a metre from their faces, passengers who never see. Pressed together against the fence, she doesn't pull away this time. When the last carriage passes, the walkway is empty. BOARDED — 3 shots (134–136).",
+    lightingNotes: "Rain; the train's headlight, then strobing window light; flashlight beams from the roof.",
+  },
+  {
+    key: "s92", id: "neonoire-s92", n: 92, partId: "neonoire-part-feature",
+    title: "Until us", location: "EXT. STREET BELOW THE VIADUCT", time: "MOMENTS LATER",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. STREET BELOW THE VIADUCT - MOMENTS LATER #92#",
+    page: "n92-street-below-the-viaduct-moments-later.md", board: "n92-below-the-viaduct.md",
+    cast: ["Jack", "Vera Voss"],
+    grammar: "35mm on the empty street with the Hive lit behind; 50mm on Vera looking up.",
+    description: "Moments later. Down a steel maintenance ladder into an empty street, soaked. Behind them the Hive, every window lit again; sirens far off. Vera steps one step away. Is Kaneko -- The Hive looks after its own. Mara was safe here. Until us. BOARDED — 2 shots (137–138).",
+    lightingNotes: "Hundreds of warm windows on the Hive, sodium streetlight, wet asphalt, distant siren glow.",
+  },
 ];
 
 /**
@@ -398,12 +438,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 129 numbered shots cover scenes 1–7 and 72–88; the other 76 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 138 numbered shots cover scenes 1–7 and 72–92; the other 72 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–88 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–92 are boarded; the rest are written, not yet boarded." },
   ],
 };
 

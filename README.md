@@ -17,7 +17,7 @@ The series opens by default when present; an explicit `?project=<id>` always win
 ## NEONOIRE — the final screenplay
 
 The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
-twenty-four of them boarded as **129 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), the envelope and the notebook of scenes 77–79 (shots 87–95), Jack and Ishida in scene 80 (shots 96–101), the cassette and the witness in scenes 81–82 (shots 102–110), Kurose and the storeroom in scenes 83–84 (shots 111–120), and the raid on the Hive in scenes 85–88 (shots 121–129). Everything is carried page by page from
+twenty-eight of them boarded as **138 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), the envelope and the notebook of scenes 77–79 (shots 87–95), Jack and Ishida in scene 80 (shots 96–101), the cassette and the witness in scenes 81–82 (shots 102–110), Kurose and the storeroom in scenes 83–84 (shots 111–120), the raid on the Hive in scenes 85–88 (shots 121–129), and the escape in scenes 89–92 (shots 130–138). Everything is carried page by page from
 [`Neonoire (3).fountain`](<Neonoire (3).fountain>) (the earlier
 [`Neonoire_Opening.fountain`](Neonoire_Opening.fountain) remains only as the opening extract).
 
@@ -45,7 +45,9 @@ twenty-four of them boarded as **129 numbered shots** — the opening seven (sho
   counting towards, and what a clock that runs a minute fast is doing in a police station are all left
   where the draft leaves them.
 
-**Latest session — scenes 85–88 boarded, the raid on the Hive:** nine new 16:9 shots. Four masked men move in single file through the passages while doors close on them. Kaneko drops her shutter and stays behind, the radio repairman pulls the main switch, and flashlights find only the dark. Kaneko and the radio repairman are new cast cards. See the [scenes 85–88 ledger](docs/neonoire/passes/scenes-85-88.md) and [review sheet](public/images/neonoire/reviews/scenes-85-88-pass-1.jpg).
+**Latest session — scenes 89–92 boarded, the escape:** nine new 16:9 shots. Jack and Vera climb the stairwell in the dark, cross the rooftop in the rain and jump the gap to the railway walkway. A train roars past a metre from them (she doesn't pull away), and they end up on the street below the Hive with every window lit again. Vera is in Look C throughout. See the [scenes 89–92 ledger](docs/neonoire/passes/scenes-89-92.md) and [review sheet](public/images/neonoire/reviews/scenes-89-92-pass-1.jpg).
+
+**Previous session — scenes 85–88 boarded, the raid on the Hive:** nine new 16:9 shots. Four masked men move in single file through the passages while doors close on them. Kaneko drops her shutter and stays behind, the radio repairman pulls the main switch, and flashlights find only the dark. Kaneko and the radio repairman are new cast cards. See the [scenes 85–88 ledger](docs/neonoire/passes/scenes-85-88.md) and [review sheet](public/images/neonoire/reviews/scenes-85-88-pass-1.jpg).
 
 **Previous session — scenes 83–84 boarded:** ten new 16:9 shots. Vera faces Kurose on the fortieth floor ("It's just a face"), then finds Jack in the Hive storeroom beneath Mara's sketches until a voice outside says "Position." Kurose is a new cast card, and the storeroom has its first master. **Vera then changed costume**, to Look C ([`sheets/vera-look-c.jpg`](public/images/neonoire/sheets/vera-look-c.jpg): an ink-navy coat, a grey crew-neck over a white collar, and her hair in a knot), across all nine of her frames in scenes 83–84. See the [scenes 83–84 ledger](docs/neonoire/passes/scenes-83-84.md) and [review sheet](public/images/neonoire/reviews/scenes-83-84-pass-1.jpg).
 

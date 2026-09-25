@@ -27,6 +27,7 @@ import { aftermathLook, streetsLook, streetsPassTwoImages, streetsScenes } from 
 import { dawnLook, dawnScenes, jackRecastDone, jackRecastDoneNote, jackRecastNote, jackRecastPending, policeDayLook, policeDayScenes } from "./dawn-look.mjs";
 import { confrontationScenes, kuroseOfficeLook, storeroomLook } from "./confrontation-look.mjs";
 import { hiveLook, hiveScenes } from "./hive-look.mjs";
+import { escapeLook, escapeScenes } from "./escape-look.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -70,6 +71,10 @@ const MOODS = {
   s86: "A shutter crashing down, a tube going out, a gas flame, and an old woman who will not leave.",
   s87: "Valve radios, a green lamp, boots in the corridor, and one old hand on the main switch.",
   s88: "Total dark and tight white beams: pipes, laundry, and faces that are gone before the light arrives.",
+  s89: "Black, a hand on a wall, a hand finding it, and a whole building deciding to be loud.",
+  s90: "Rain and wind across a forest of tanks and aerials, the city indifferent, and one metre of nothing to jump.",
+  s91: "Rails singing, a wall of lit windows a metre away, nobody watching, and she doesn't pull away.",
+  s92: "Soaked, one step apart, a building full of light behind them, and nothing that can be said tonight.",
 };
 
 // ---------------------------------------------------------------- the screenplay pages
@@ -92,8 +97,8 @@ assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUN
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-const totalShots = 129;
-assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68, scenes 72–76's 18, scenes 77–79's 9, scene 80's 6, scenes 81–82's 9, scenes 83–84's 10 and scenes 85–88's 9 — but carry ${shots.length}`);
+const totalShots = 138;
+assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68, scenes 72–76's 18, scenes 77–79's 9, scene 80's 6, scenes 81–82's 9, scenes 83–84's 10, scenes 85–88's 9 and scenes 89–92's 9 — but carry ${shots.length}`);
 shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..${totalShots} across the boarded scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
 assert.equal(shots.length, new Set(shots.map(shot => shot.id)).size, "Stable frame IDs must be unique when the board is reordered or expanded");
@@ -131,6 +136,8 @@ const frames = shots.map(shot => {
           ? (streetsPassTwoImages.includes(path)
               ? "Image: AI-generated Tokyo Story colour revision, session two (25 September 2026). The six pending replacements plus the lost-heel and twenty-metre continuity replacements used eight image-generation calls; two slots were held back. Replaces the earlier image, never uses it as a reference. Production approval pending."
               : "Image: AI-generated Tokyo Story colour revision, session one (25 September 2026). Nine new shot studies plus Jack's identity sheet used ten image-generation calls. Replaces the earlier image, never uses it as a reference. Production approval pending.")
+          : escapeScenes.has(shot.scene.key)
+            ? "Image: AI-generated first boarding of scenes 89–92 (26 September 2026), the escape from the Hive, generated from each location's master with the Vera Look C and recast Jack sheets attached. Production approval pending."
           : hiveScenes.has(shot.scene.key)
             ? "Image: AI-generated first boarding of scenes 85–88 (26 September 2026), the raid on the Hive, generated from each location's master with the masked-man, Vera Look C and recast Jack references attached. Kaneko and the radio repairman have no sheets yet. Production approval pending."
           : confrontationScenes.has(shot.scene.key)
@@ -155,6 +162,7 @@ const frames = shots.map(shot => {
       ...(streetsScenes.has(shot.scene.key) ? [`Scenes 72–75 — Tokyo Story in colour (25 September 2026): ${streetsLook}`] : []),
       ...(shot.scene.key === "s76" ? [aftermathLook] : []),
       ...(policeDayScenes.has(shot.scene.key) ? [`Scene 80 — the detectives' room by day (25 September 2026): ${policeDayLook}`] : []),
+      ...(escapeScenes.has(shot.scene.key) ? [`Scenes 89–92 — the escape (26 September 2026): ${escapeLook}`] : []),
       ...(hiveScenes.has(shot.scene.key) ? [`Scenes 85–88 — the raid on the Hive (26 September 2026): ${hiveLook}`] : []),
       ...(shot.scene.key === "s83" ? [`Scene 83 — Kurose's office by day (26 September 2026): ${kuroseOfficeLook}`] : []),
       ...(shot.scene.key === "s84" ? [`Scene 84 — the Hive storeroom (26 September 2026): ${storeroomLook}`] : []),
@@ -186,7 +194,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; twenty-four of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86), and the envelope and the notebook, scenes 77–79 (shots 87–95), Jack and Ishida, scene 80 (shots 96–101), the cassette and the witness, scenes 81–82 (shots 102–110), Kurose and the storeroom, scenes 83–84 (shots 111–120), and the raid on the Hive, scenes 85–88 (shots 121–129) — 14 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
+    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; twenty-eight of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86), and the envelope and the notebook, scenes 77–79 (shots 87–95), Jack and Ishida, scene 80 (shots 96–101), the cassette and the witness, scenes 81–82 (shots 102–110), Kurose and the storeroom, scenes 83–84 (shots 111–120), the raid on the Hive, scenes 85–88 (shots 121–129), and the escape, scenes 89–92 (shots 130–138) — 14 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -294,7 +302,7 @@ const scenes = feature.map(scene => {
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in twenty-four of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386), the envelope and the notebook, scenes 77\u201379 (shots 87\u201395), Jack and Ishida, scene 80 (shots 96\u2013101), the cassette and the witness, scenes 81\u201382 (shots 102\u2013110), Kurose and the storeroom, scenes 83\u201384 (shots 111\u2013120), the raid on the Hive, scenes 85\u201388 (shots 121\u2013129) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in twenty-eight of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386), the envelope and the notebook, scenes 77\u201379 (shots 87\u201395), Jack and Ishida, scene 80 (shots 96\u2013101), the cassette and the witness, scenes 81\u201382 (shots 102\u2013110), Kurose and the storeroom, scenes 83\u201384 (shots 111\u2013120), the raid on the Hive, scenes 85\u201388 (shots 121\u2013129), the escape, scenes 89\u201392 (shots 130\u2013138) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
