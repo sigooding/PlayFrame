@@ -23,12 +23,12 @@ ID: neonoire-shot-139
 IMAGE: 137-he-knows-this-car.jpg
 NOTE: Station exterior master. It holds "Rain. Ishida comes down the front steps without an umbrella." and "He stops. He knows this car."
 
-140. MEDIUM — 50mm, static, eye level — the door opens.
-The sedan's rear door stands open toward camera, showing warm amber light, cream leather, and an old man's hand resting on a navy-suited knee. Ishida stands in the rain beyond it with the station's red lamp behind him.
+140. WIDE — 35mm, static, eye level — the door opens.
+The whole black sedan in side profile at the kerb, from headlight and front wheel to taillights. Its rear door stands open toward camera, spilling warm amber light off cream leather, with an old man's hand resting on a navy-suited knee inside and a driver's silhouette at the wheel. Ishida stands in the rain beyond the car, in front of the station's lit entrance and red lamp.
 SCRIPT: "A long moment. Then the rear door opens from inside."
 CAST: Detective Ishida
 LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-140
 IMAGE: 138-the-door-opens.jpg
-NOTE: The hand and knee belong to Kurose, whose face is not seen until scene 94. The first generation repeated the master without the door opening, so it was regenerated closer on the open door.
+NOTE: The hand and knee belong to Kurose, whose face is not seen until scene 94. The first generation repeated the master without the door opening, so it was regenerated closer on the open door. That second version cut the car off at the open door with no front end, and the director flagged it. The frame was regenerated a second time as a side-on wide with the whole car in frame (same asset name and ID).

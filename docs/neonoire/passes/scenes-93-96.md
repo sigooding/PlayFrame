@@ -7,7 +7,7 @@ Boards: [n93](../scenes/n93-police-station-night.md), [n94](../scenes/n94-black-
 | Shot | ID | Image |
 | --- | --- | --- |
 | 139 WIDE 35mm — he knows this car (master) | neonoire-shot-139 | `s93/137-he-knows-this-car.jpg` |
-| 140 MEDIUM 50mm — the door opens | neonoire-shot-140 | `s93/138-the-door-opens.jpg` |
+| 140 WIDE 35mm — the door opens (regenerated in the scene 97 session) | neonoire-shot-140 | `s93/138-the-door-opens.jpg` |
 | 141 TWO-SHOT 35mm — only tea (back-seat master) | neonoire-shot-141 | `s94/139-only-tea.jpg` |
 | 142 CLOSE-UP 85mm — where are we going | neonoire-shot-142 | `s94/140-where-are-we-going.jpg` |
 | 143 TWO-SHOT 50mm — he drinks | neonoire-shot-143 | `s94/141-he-drinks.jpg` |
@@ -33,3 +33,7 @@ Boards: [n93](../scenes/n93-police-station-night.md), [n94](../scenes/n94-black-
 - All frames are AI-generated draft studies, not approved coverage.
 
 **Next unboarded scene: 97.**
+
+## Later fix — shot 140
+
+In the scene 97 session the director flagged that shot 140 was missing the front of the car: the sedan ended at the open door. It was regenerated twice. The first attempt, a three-quarter rear view, repeated the flaw. The second, a straight side profile, has the whole car in frame from headlight and front wheel to taillights. The asset `s93/138-the-door-opens.jpg` and ID `neonoire-shot-140` are unchanged.

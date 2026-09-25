@@ -2,11 +2,13 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **32 scenes, 147 shots**: scenes 1–7 and 72–96. **All 147 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **33 scenes, 154 shots**: scenes 1–7 and 72–97. **All 154 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
-**Latest session — [scenes 93–96 boarded](passes/scenes-93-96.md), Ishida's last night.** Nine shots (139–147), using ten calls; shot 140 was regenerated so the car door is open. The station exterior and the sedan's back seat are new locations. Scenes 95 and 96 rhyme with shots 13, 64 and 68. The young detective is a new card. The next unboarded scene is **97**.
+**Latest session — [scene 97 boarded](passes/scene-97.md), the Hive by morning.** Seven shots (148–154), plus the Look D sheet and two regenerations of shot 140; ten calls in all. Shot 140 now shows the whole car in frame. **Vera wears costume Look D from scene 97** (`sheets/vera-look-d.jpg`, a dark olive-green coat, hair loose). **Director's standing rule: every further Vera costume change gets a NEW coat whose colour fits the scene.** The plan is a pale stone or camel coat for scene 98 and another new coat for scene 100. Caveat: shot 150 shows three prosecutors, not four. The next unboarded scene is **98**.
 
-**Previous session — [scenes 89–92 boarded](passes/scenes-89-92.md), the escape.** Nine shots (130–138) and ten calls, one of which fixed Jack's face in shot 138. There are four new locations: the stairwell, the roof (`s90/130-the-roof.jpg`), the walkway (`s91/132-the-rails-sing.jpg`) and the street below the viaduct (`s92/135-below-the-viaduct.jpg`). Scene 93 followed in the next session.
+**Previous session — [scenes 93–96 boarded](passes/scenes-93-96.md), Ishida's last night.** Nine shots (139–147), using ten calls; shot 140 was regenerated so the car door is open. The station exterior and the sedan's back seat are new locations. Scenes 95 and 96 rhyme with shots 13, 64 and 68. The young detective is a new card. Scene 97 followed in the next session.
+
+**Earlier session — [scenes 89–92 boarded](passes/scenes-89-92.md), the escape.** Nine shots (130–138) and ten calls, one of which fixed Jack's face in shot 138. There are four new locations: the stairwell, the roof (`s90/130-the-roof.jpg`), the walkway (`s91/132-the-rails-sing.jpg`) and the street below the viaduct (`s92/135-below-the-viaduct.jpg`). Scene 93 followed in the next session.
 
 **Previous session — [scenes 85–88 boarded](passes/scenes-85-88.md), the raid on the Hive.** Nine shots (121–129), using ten calls because one generation failed to write and was retried. There are three new locations: the passages (master `s85/119-single-file.jpg`, reused dark in scene 88), Kaneko's counter (`s86/121-the-shutter.jpg`) and the radio repair shop (`s87/124-the-repairman.jpg`). Kaneko and the radio repairman are new cards without sheets. Scene 89 followed in the next session.
 

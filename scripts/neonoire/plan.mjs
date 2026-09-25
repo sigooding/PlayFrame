@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–96 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–97 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -28,7 +28,7 @@ export const grammar =
 
 const cast = [
   ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird; arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
-  ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter. Wardrobe: the charcoal coat and cream roll-neck of sheets/vera.jpg early on, the wine-red silk dress through scenes 72–79, and from scene 83 costume Look C (sheets/vera-look-c.jpg): an ink-navy coat, a grey crew-neck over a white collar, and her hair in a low knot.", ["Careful", "Steady", "Alone"], "sand", "vera"],
+  ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter. Wardrobe: the charcoal coat of sheets/vera.jpg early on, the wine-red dress in scenes 72–79, the ink-navy coat of Look C (sheets/vera-look-c.jpg) in 83–92, and from 97 the olive-green coat of Look D (sheets/vera-look-d.jpg), hair loose. Each later change brings a new coat.", ["Careful", "Steady", "Alone"], "sand", "vera"],
   ["jack", "Jack", "Private investigator / former detective", "48", "A Tokyo private investigator and former police detective; the screenplay gives no surname. Visual casting choice (recast 25 September 2026): a white American, tall and lean, long angular face, hollow cheeks, deep-set tired grey-green eyes, dark brown hair swept back and greying at the temples, salt-and-pepper stubble. Quietly cool, not an action hero. A good but badly kept charcoal knee-length overcoat, off-white open-collar shirt, black trousers, worn black shoes; no tie, hat or cigarette. After the Hive he stays soaked, hands unwashed, through scene 77. Not the sisters' father: that is Daniel Voss.", ["Understated", "Guarded", "Compromised"], "clay", "jack"],
   ["daniel", "Daniel Voss", "The father / family photograph", "41, twenty years ago", "American insurance investigator, Vera and Mara's father. The scene 11 newspaper clipping identifies him as Daniel Voss, 41; the man in the warm faded photograph on Vera's shelf is Daniel, not Jack. A rumpled grey suit, a smile, both small daughters' hands in his and a Tokyo noodle-shop sign behind them, twenty years ago. Jack appears with him in a separate older photograph and was his friend, not a member of the Voss family.", ["Warm", "Principled", "Absent"], "sand", undefined],
   ["old-man", "The Old Man", "Cold open", "70s", "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.", ["Hunted", "Resigned", "Deliberate"], "sand", undefined],
@@ -404,6 +404,16 @@ export const SCENES = [
     description: "Morning. Grey daylight. A cardboard box on Ishida's desk; a young detective is clearing it. He opens the bottom drawer: empty. On the wall, the clock still runs a minute fast. BOARDED — 3 shots (145–147).",
     lightingNotes: "Flat grey morning daylight through the windows at right, the green-white tubes half on.",
   },
+  {
+    key: "s97", id: "neonoire-s97", n: 97, partId: "neonoire-part-feature",
+    title: "Tomorrow's Tokyo", location: "EXT. THE HIVE", time: "MORNING",
+    kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - MORNING #97#",
+    page: "n97-the-hive-morning.md", board: "n97-the-hive-morning.md",
+    cast: ["Vera Voss", "Kaneko", "Kurose", "Jack"],
+    grammar: "24mm on the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack.",
+    description: "Rain. A white ceremonial tent in front of the Hive, the rendering banner, a silver shovel in a red-and-white ribbon. Every screen in the shop window across the street shows Kurose. He steps out of his car; four prosecutors are waiting. He walks twenty metres to a grey car without an umbrella, and Vera does not look away. Jack, alone, collar up. The ribbon goes dark in the rain. BOARDED — 7 shots (148–154). Vera in costume Look D.",
+    lightingNotes: "Flat grey rainy daylight, the white tent glowing, cold TV glow in the shop window, white camera flashes.",
+  },
 ];
 
 /**
@@ -481,12 +491,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 147 numbered shots cover scenes 1–7 and 72–96; the other 68 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 154 numbered shots cover scenes 1–7 and 72–97; the other 67 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–96 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–97 are boarded; the rest are written, not yet boarded." },
   ],
 };
 
