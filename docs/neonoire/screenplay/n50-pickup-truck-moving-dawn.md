@@ -1,5 +1,5 @@
 NEONOIRE
-SCREENPLAY — SCENE 50 — INT. PICKUP TRUCK - MOVING
+SCREENPLAY — SCENE 50 — INT. PICKUP TRUCK
 
 INT. PICKUP TRUCK - MOVING - DAWN
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading. Written, not boarded: the numbered shot board covers the opening scenes only.

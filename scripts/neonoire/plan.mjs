@@ -51,7 +51,9 @@ link("jack", "mara", "Parent", "The photograph on Vera's shelf: a Tokyo street t
 link("jack", "vera", "Parent", "The photograph on Vera's shelf: a Tokyo street twenty years ago.");
 
 // ---------------------------------------------------------------------------------------------
-// The opening's seven boarded scenes, in the draft's own running order
+// The boarded scenes, in the draft's own running order — the opening seven, and the first
+// scenes of the film proper (the Tokyo streets, 73–76). Boarded metadata is hand-authored here;
+// location, time and slugline are re-derived from the draft at build time and must match.
 // ---------------------------------------------------------------------------------------------
 
 /** A scene's slugline as the draft writes it, so a page can prove it opens on its own scene. */
@@ -126,6 +128,46 @@ export const SCENES = [
     description: "Continuous. Alone in the detectives' room, Ishida opens his bottom drawer: sealed in an evidence bag, Mara's purse — the torn strap coiled beside it, still damp. He looks at it a long moment. Closes the drawer. On the wall, the clock runs a minute fast. BOARDED — 6 shots.",
     lightingNotes: "Humming fluorescent rows, the desk lamp over the drawer, the radio's green dial. The evidence bag is lit plainly, like an exhibit.",
   },
+  {
+    key: "s73", id: "neonoire-s73", n: 73, partId: "neonoire-part-feature",
+    title: "Vera runs", location: "EXT. TOKYO STREETS", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. TOKYO STREETS - NIGHT #73#",
+    page: "n73-tokyo-streets-night.md", board: "n73-tokyo-streets.md",
+    cast: ["Vera Voss"],
+    grammar: "The film's cold-open grammar, given to Vera instead of Mara: rain, wet black asphalt, practical light only, wide and patient, the figure small. But she is not steady like Mara was — the camera keeps its distance while she comes apart. No music; rain, heels, breath, one crossing melody.",
+    description: "Night, after the hotel. Vera comes out into the rain and runs — badly, in heels, in the red dress, no coat, no umbrella — past a vending machine that glows, indifferent, through a crossing that chimes its old melody on red, until one heel skids off into a puddle and she runs on in one shoe. BOARDED — 4 shots (69–72); the first frames of the film proper.",
+    lightingNotes: "Hotel-door warm spill at her back, a vending machine's cold white on the wet street, sodium distance. The crossing signal's red is the only saturated note besides the dress.",
+  },
+  {
+    key: "s74", id: "neonoire-s74", n: 74, partId: "neonoire-part-feature",
+    title: "The empty street", location: "EXT. EMPTY STREET UNDER THE TRACKS", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. EMPTY STREET UNDER THE TRACKS - NIGHT #74#",
+    page: "n74-empty-street-under-the-tracks-night.md", board: "n74-empty-street-under-the-tracks.md",
+    cast: ["Vera Voss", "Jack Voss"],
+    grammar: "The film's biggest street frame: a row of vending machines as the only light, the black road shining like water, the elevated railway crossing overhead, two small figures twenty metres apart. The violence is one desperate blow, not a scene; the breaking is a folding, not a scream. The reflection may carry a figure under a pale-blue umbrella and must never resolve. Then WIDE, then EXTREME WIDE, and the score enters only when the shot has held too long.",
+    description: "Continuous. On a long, empty street beside the elevated railway, Jack walks out of the dark from the direction of the Hive — soaked, his hands dark, unwashed — and stops under an awning. Vera stops twenty metres from him. She asks; he cannot answer; she hits his chest twice, then again, weaker, until her hands fall. She breaks — folds to her knees on the wet pavement — grabs his coat, realises whose it is, and pushes him away. In the black water beside her, a reflection of a street that is slightly different, and a figure with a pale-blue umbrella. BOARDED — 4 shots (73–76), including the film's one supernatural almost.",
+    lightingNotes: "The vending machines hum and light the whole scene, cold white through falling rain; a single sodium amber far down the street; train windows sliding past overhead. No sky light, no fill, no theatrical spot on the figures.",
+  },
+  {
+    key: "s75", id: "neonoire-s75", n: 75, partId: "neonoire-part-feature",
+    title: "Still frames — what the night left", location: "INT./EXT. VARIOUS", time: "NIGHT - SERIES OF SHOTS",
+    kind: "Montage", lighting: "Practical night", slugline: "INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS #75#",
+    page: "n75-ext-various-night-series-of-shots.md", board: "n75-still-frames.md",
+    cast: [],
+    grammar: "Five still frames, no people — the film's Ozu grammar taken at its word: objects that were scenery during the night become the whole subject after it. Every frame is locked off; nothing moves but rain, steam and static. Held long enough to read as grief, not as a trailer.",
+    description: "Series of shots, after the street: a single red high-heeled shoe in a puddle; the hotel lounge, empty, chairs up, the pale-blue umbrella still leaning by the bar stool; the Hive at night with the noodle shop shutter down and its old sign faintly glowing; the vending machine, lit, waiting for no one; a shop-window television showing only static. Then CUT TO BLACK. BOARDED — 5 shots (77–81); nobody appears in any of them.",
+    lightingNotes: "Each still lit by its own practical: the machine's cold white, the sign's dim amber, the lounge's house-glow, the window's grey static. Rain dimpling the puddle is the only event.",
+  },
+  {
+    key: "s76", id: "neonoire-s76", n: 76, partId: "neonoire-part-feature",
+    title: "The lighter", location: "INT. VERA'S APARTMENT", time: "NIGHT",
+    kind: "Standard", lighting: "Low key", slugline: "INT. VERA'S APARTMENT - NIGHT #76#",
+    page: "n76-vera-s-apartment-night.md", board: "n76-vera-apartment.md",
+    cast: ["Vera Voss"],
+    grammar: "The same room as scene 4, now dark: rain on the glass, one street-lit plane of the window, nothing switched on. The room's geography and the removed paper pendant stay as in the apartment revision. The lighter is the only object the scene owns; it must look handled, not precious.",
+    description: "Night, later. In the dark apartment, Vera sits on the floor with her back against the bed — still in the ruined red dress, mascara dried, one shoe — with her father's old steel lighter in her hand. She opens it, closes it, opens it. She should throw it away; she holds it against her chest instead, and bends over it, and cries without making a sound. She still loves him; she hates herself for it. BOARDED — 3 shots (82–84); the scene the opening's answerphone was pointed at.",
+    lightingNotes: "No practicals on: cold window light and the landing's spill under the door only. The lighter's small flame is the one warm note, briefly, and then the dark takes it back.",
+  },
 ];
 
 /**
@@ -148,7 +190,7 @@ export const sceneMarkers = fountain => {
 
 /** "INT. SMALL BAR, KANDA" → "Small bar, Kanda" — capitalised after the comma and for possessives. */
 export const humanTitle = location => {
-  const core = location.replace(/^(?:INT|EXT)\.?\s*/i, "");
+  const core = location.replace(/^(?:INT|EXT)\.?\s*\/?\s*(?:INT|EXT)\.?\s*/i, "");
   let capNext = true;
   return core.toLowerCase().split(/([ ,.;-]+)/).filter(Boolean).map(word => {
     if (/^[ ,.;-]+$/.test(word)) { if (word.startsWith(",")) capNext = true; return word; }
@@ -172,7 +214,7 @@ export function featureScenes(fountain) {
   if (straySlug >= 0) throw new Error(`${FOUNTAIN} line ${straySlug + 1} reads like a scene heading but carries no " #n#" marker — mark it, or the Screenplay tab loses a scene.`);
   return marks.map((mark, i) => {
     const bare = mark.text.replace(/ #\d+#$/, "");
-    const at = bare.lastIndexOf(" - ");
+    const at = bare.indexOf(" - ");
     const derived = { n: mark.n, location: bare.slice(0, at), time: bare.slice(at + 3), slugline: mark.text, line: mark.line };
     const hand = SCENES.find(scene => scene.n === mark.n);
     if (hand) {

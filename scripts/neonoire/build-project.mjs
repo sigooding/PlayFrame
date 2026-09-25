@@ -23,6 +23,7 @@ import { apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
+import { streetsLook, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -48,6 +49,10 @@ const MOODS = {
   s5: "Institutional, polite, a decade out of step; a name arriving on a monitor.",
   s6: "Two people being careful with each other, in Japanese, over tea going cold.",
   s7: "An empty office, one decision already made, and a clock a minute fast.",
+  s73: "Rain, heels, the film's own cold-open grammar with Vera in it; one red shoe left standing in a puddle.",
+  s74: "Fourteen million people and none of them here: two small figures, a row of vending machines, and rain falling through their light.",
+  s75: "Still frames with the people removed: the night's objects keep glowing after it is over.",
+  s76: "A dark apartment, a dented steel lighter opening and closing, and crying without making a sound.",
 };
 
 // ---------------------------------------------------------------- the screenplay pages
@@ -70,8 +75,9 @@ assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUN
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-assert.equal(shots.length, 68, `The opening is 68 numbered shots; the boards carry ${shots.length}`);
-shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..68 across the seven scenes; found ${shot.n} at ${i + 1}`));
+const totalShots = 84;
+assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68 plus scenes 73–76's 16 — but carry ${shots.length}`);
+shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..${totalShots} across the boarded scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
 const missing = shots.filter(shot => !existsSync(resolve(root, `public${imagePath(shot.scene, shot)}`)));
 // A frame whose study has not been generated yet is an honest placeholder, exactly as the series
@@ -102,7 +108,7 @@ const frames = shots.map(shot => {
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
       absent
-        ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of 68 until pass ${passOf(shot.n)} is generated.`
+        ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
         : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       ...(isColdOpenScene(shot.scene.key) ? [shot.n <= coldOpenCompletedThrough
         ? `Cold-open visual revision: ${coldOpenLook}`
@@ -112,12 +118,13 @@ const frames = shots.map(shot => {
       ...(shot.scene.key === "s6" ? [`Visual revision (25 September 2026): ${interviewLook}`] : []),
       ...(shot.scene.key === "s4" ? [`Visual revision (25 September 2026): ${apartmentLook}`] : []),
       ...(shot.scene.key === "s5" ? [`Visual revision (25 September 2026): ${frontCounterLook}`] : []),
+      ...(streetsScenes.has(shot.scene.key) ? [`Scenes 73–76, the Tokyo streets — first boards of the film proper (25 September 2026): ${streetsLook}`] : []),
       shot.note,
       shot.script ? `SCRIPT — the draft's own words for this shot:\n"${shot.script}"` : "SCRIPT — no dialogue; the shot is carried by the frame and the sound.",
       shot.scene.grammar,
       grammar,
       `Timing: ${shot.duration}s is a working estimate for animatic playback. The draft locks no durations.`,
-      `Pass ${passOf(shot.n)} of 7 — ten keyframes at a time, in screenplay order. Shot ${shot.n} of 68.`,
+      `Pass ${passOf(shot.n)} of ${Math.ceil(totalShots / passSize)} — ten keyframes at a time, in screenplay order. Shot ${shot.n} of ${totalShots}.`,
     ].join("\n\n"),
   };
 });
@@ -137,7 +144,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; the opening seven of them are also boarded — 68 numbered shots, 8 cast cards, keyframes generated ten at a time in screenplay order. Scenes 8–100 are **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
+    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; eleven of them are boarded — the opening seven (shots 1–68) and the Tokyo streets at the heart of the film proper, scenes 73–76 (shots 69–84) — 8 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -235,7 +242,7 @@ const scenes = feature.map(scene => {
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The final feature screenplay (September 2026): 100 numbered scenes, the opening seven boarded as 68 shots with 16:9 keyframes from a Kanda backstreet to a detectives' room three days later. The Screenplay tab carries the whole draft page by page; scenes 8\u2013100 are written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in eleven of them \u2014 the opening seven (68 shots) and the Tokyo streets at the heart of the film proper, scenes 73\u201376 (shots 69\u201384) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
@@ -251,7 +258,7 @@ for (const image of imagePaths) assert(existsSync(resolve(root, `public${image}`
 for (const c of characters) assert(c.description.length <= 700, `Shorten character description: ${c.name}`);
 for (const board of moodboards) assert(board.items.length <= 40, `Mood board over 40 items: ${board.title}`);
 assert.equal(scenes.length, feature.length, `Every numbered scene of the final screenplay belongs to the workspace`);
-assert.equal(frames.length, 68);
+assert.equal(frames.length, totalShots);
 assert.equal(characters.length, 8);
 
 const output = resolve(root, "public", "projects", "neonoire-opening.json");

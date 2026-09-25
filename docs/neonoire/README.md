@@ -1,7 +1,7 @@
 # NEONOIRE — the final screenplay
 
 The final feature screenplay — **100 numbered scenes** — carried into Frame as an editable
-workspace, with the opening seven of them boarded as **68 numbered shots**. The screenplay tab is
+workspace, with eleven of them boarded as **84 numbered shots** — the opening seven (shots 1–68) and the film proper's centre, the Tokyo streets of scenes 73–76 (shots 69–84). The screenplay tab is
 the draft itself, one page per scene; keyframes are generated **ten at a time** against two
 continuity sheets, and **every image is 16:9 full-bleed (1920×1080)**.
 
@@ -10,9 +10,9 @@ continuity sheets, and **every image is 16:9 full-bleed (1920×1080)**.
 | what | where |
 | --- | --- |
 | the draft (source of truth) | [`Neonoire (3).fountain`](../../Neonoire%20(3).fountain) at the repository root — the final screenplay, 100 numbered scenes (`Neonoire_Opening.fountain` is kept only as the superseded opening extract) |
-| the screenplay tab, page by page | [`docs/neonoire/screenplay/`](screenplay) — the draft's own bytes under a production header, one page per numbered scene (n01–n100); scenes 8–100 are written, not boarded |
-| the numbered shot boards | [`docs/neonoire/scenes/`](scenes) — framing, lens, cast, light, duration, keyframe filename and notes, per shot |
-| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — **the film's frame rule is 16:9 (1920×1080) for every image from the final screenplay onward**; shots 1–10, scenes 4–7 and the apartment/police-station keys are already revised, while cold-open shots 11–28 and scene 3 hold legacy 2.39:1 studies marked revision-pending — plus continuity sheets in `public/images/neonoire/sheets/` |
+| the screenplay tab, page by page | [`docs/neonoire/screenplay/`](screenplay) — the draft's own bytes under a production header, one page per numbered scene (n01–n100); every scene outside the eleven boarded ones is written, not boarded |
+| the numbered shot boards | [`docs/neonoire/scenes/`](scenes) — framing, lens, cast, light, duration, keyframe filename and notes, per shot; `n01–n07` cover the opening, `n73–n76` the streets boards of the film proper |
+| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` plus `s73 … s76/` — **the film's frame rule is 16:9 (1920×1080) for every image from the final screenplay onward**; shots 1–10, scenes 4–7 and the apartment/police-station keys are already revised, while cold-open shots 11–28 and scene 3 hold legacy 2.39:1 studies marked revision-pending — plus continuity sheets in `public/images/neonoire/sheets/` |
 | the workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 
 ## Handing the keyframes on
@@ -62,7 +62,7 @@ anyone having to paste it again.
 ## Passes
 
 Keyframes are generated ten at a time, in screenplay order, with the cast sheets attached as
-references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on to pass 7 (shots 61–68). Each pass is
+references. Pass 1 is shots 1–10, pass 2 is 11–20, and so on: pass 7 is 61–70 (its last four shots are scene 73), pass 8 is 71–80 and pass 9 is 81–84. Each pass is
 listed at the foot of its scene's board, and every frame's notes name the pass it came from.
 
 ## Cold-open revision status

@@ -1,13 +1,11 @@
 NEONOIRE
-SCREENPLAY — SCENE 76 — INT. VERA'S APARTMENT
+OPENING — SCENE 76 — INT. VERA'S APARTMENT
 
 INT. VERA'S APARTMENT - NIGHT
-Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading. Written, not boarded: the numbered shot board covers the opening scenes only.
-Cast: — (not boarded; the draft names its own cast).
-Grammar: Tokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent 
-tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel 
-like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. 
-Wide and patient; close-ups are rare, so they count. Nothing is explained.
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
+Cast: Vera Voss.
+Grammar: The same room as scene 4, now dark: rain on the glass, one street-lit plane of the window, nothing switched on. The room's geography and the removed 
+paper pendant stay as in the apartment revision. The lighter is the only object the scene owns; it must look handled, not precious.
 
 INT. VERA'S APARTMENT - NIGHT #76#
 

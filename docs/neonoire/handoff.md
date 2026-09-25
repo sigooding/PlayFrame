@@ -22,9 +22,9 @@ been turned into:
 | | |
 | --- | --- |
 | **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — one page per numbered scene (n01–n100), verbatim; a build step fails if it ever drifts from the fountain |
-| **board** | 68 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 68 of 68 generated, plus 9 studio keys — in `public/images/neonoire/` |
-| **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE; scenes 8–100 ride in it as **WRITTEN, NOT BOARDED** cards with their full screenplay pages |
+| **board** | 84 numbered shots in `docs/neonoire/scenes/` — `n01–n07` for the opening, `n73–n76` for the film proper's centre — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
+| **keyframes** | 84 of 84 generated, plus 9 studio keys — in `public/images/neonoire/` (`s73 … s76/` for scenes 73–76) |
+| **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE; the other eighty-nine scenes ride in it as **WRITTEN, NOT BOARDED** cards with their full screenplay pages |
 
 Story (opening): Kanda, night. Mara Voss (24, American) declines her sister's call, watches two
 masked men shoot an old man in the rain, takes a coin-locker key out of his hand and hides behind a
@@ -41,7 +41,7 @@ that beat on.
 
 ## 2. What you are being asked to do
 
-**All 68 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
+**All 84 keyframes are now generated** — the opening's 68 and the streets boards' sixteen. Use [`passes/README.md`](passes/README.md) as the review index; the
 numbered boards, continuity sheets and the app style in [`src/lib/styles.ts`](../../src/lib/styles.ts) remain
 the source of truth for any regeneration.
 
@@ -82,7 +82,7 @@ portrait, fashion pose, smiling, text, watermark, anime style.
 
 **If it comes out too cyberpunk:** drop "neon", add "1990s, ordinary, worn, documentary realism".
 
-Technical: JPEG. **Every image is 16:9, 1920×1080 — this is the film's frame rule from the final screenplay (25 September 2026) onward, and it covers any frame generated for scenes 8–100 as the board reaches them.** Scenes 4–7 (shots 33–68) and the apartment/police-station keys were already revised to it from `police_station.png` with Vera and the young officer matched to their sheets. See `scenes/n05-front-counter.md` and `scripts/neonoire/front-counter-look.mjs`. The apartment uses `appartment.png` and `photo.png`; the paper pendant is removed completely, including cord/reflection. See `scenes/n04-vera-apartment.md` and `scripts/neonoire/apartment-look.mjs` for room, cup, phone, wardrobe and childhood-photo continuity. The interview room follows `s6/51-the-interview-room.jpg` and `s6/56-three-days-ago.jpg`, with the cup/spill states and tissue-box placement in `scripts/neonoire/interview-look.mjs`; shots 57 and 59 are reframings of their masters. The detectives’ room follows `scripts/neonoire/detectives-look.mjs`: Ishida keeps his open-collar suit, the evidence remains sealed inside the bottom drawer, and only that drawer opens before closing again. Cold-open shots 1–10 have also been rebuilt at 1920×1080; shots 11–28 remain older 2.39:1 studies marked Needs review, and scene 3 (shots 29–32) carries the same 16:9-revision-pending label. Continue via `passes/cold-open-revision.md` and `scripts/neonoire/cold-open-look.mjs`. Do not recrop revised frames to scope, and do not letterbox 16:9 content to fake the old shape. No frame is to be generated at 2.39:1 any more; normalise every fresh or regenerated frame with:
+Technical: JPEG. **Every image is 16:9, 1920×1080 — this is the film's frame rule from the final screenplay (25 September 2026) onward, and it covers any frame generated for scenes 8–100 as the board reaches them.** Scenes 4–7 (shots 33–68) and the apartment/police-station keys were already revised to it from `police_station.png` with Vera and the young officer matched to their sheets. See `scenes/n05-front-counter.md` and `scripts/neonoire/front-counter-look.mjs`. The apartment uses `appartment.png` and `photo.png`; the paper pendant is removed completely, including cord/reflection. See `scenes/n04-vera-apartment.md` and `scripts/neonoire/apartment-look.mjs` for room, cup, phone, wardrobe and childhood-photo continuity. The interview room follows `s6/51-the-interview-room.jpg` and `s6/56-three-days-ago.jpg`, with the cup/spill states and tissue-box placement in `scripts/neonoire/interview-look.mjs`; shots 57 and 59 are reframings of their masters. The detectives’ room follows `scripts/neonoire/detectives-look.mjs`: Ishida keeps his open-collar suit, the evidence remains sealed inside the bottom drawer, and only that drawer opens before closing again. Cold-open shots 1–10 have also been rebuilt at 1920×1080; shots 11–28 remain older 2.39:1 studies marked Needs review, and scene 3 (shots 29–32) carries the same 16:9-revision-pending label. Continue via `passes/cold-open-revision.md` and `scripts/neonoire/cold-open-look.mjs`. Do not recrop revised frames to scope, and do not letterbox 16:9 content to fake the old shape (two of shots 71/75 arrived with burned-in matte lines and were de-letterboxed at source, not faked). Scenes 73–76 (shots 69–84) generate against `scripts/neonoire/streets-look.mjs`: Vera in the ruined deep-red dress losing one red court shoe in shot 72, Jack as the living man in the soaked charcoal overcoat, and scene 75's five still frames with nobody in them, each tied to an earlier master (the shoe to 72's puddle, the lounge to the pale-blue umbrella, the machine to `s1/01-backstreet.jpg`). No frame is to be generated at 2.39:1 any more; normalise every fresh or regenerated frame with:
 
 ```bash
 convert FILE.jpg -resize "1920x1080^" -gravity center -extent 1920x1080 -quality 92 -strip FILE.jpg

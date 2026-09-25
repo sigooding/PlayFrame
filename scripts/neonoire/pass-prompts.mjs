@@ -18,6 +18,7 @@ import { apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, isColdOpenScene } from "./cold-open-look.mjs";
+import { streetsLook, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -37,6 +38,10 @@ const KEYS = {
   s5: ["05-the-police-station.jpg"],
   s6: ["05-the-police-station.jpg"],
   s7: ["05-the-police-station.jpg"],
+  s73: ["07-the-rain-scene.jpg"],
+  s74: ["07-the-rain-scene.jpg", "08-ozu-cutaway.jpg"],
+  s75: ["08-ozu-cutaway.jpg"],
+  s76: ["04-veras-apartment.jpg"],
 };
 
 const PASS_SIZE = 10;
@@ -58,6 +63,9 @@ function shotBrief(shot) {
   const referenceKeys = KEYS[scene.key].map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
   if (scene.key === "s6") referenceKeys.push("public/images/neonoire/s6/51-the-interview-room.jpg", "public/images/neonoire/s6/56-three-days-ago.jpg");
   if (scene.key === "s7") referenceKeys.push("public/images/neonoire/s7/63-the-detectives-room.jpg", "public/images/neonoire/s7/64-the-bottom-drawer.jpg", "public/images/neonoire/s1/18-the-flashlight.jpg", "public/images/neonoire/s5/43-the-front-counter.jpg");
+  if (scene.key === "s73" || scene.key === "s74") referenceKeys.push("public/images/neonoire/s1/01-backstreet.jpg");
+  if (scene.key === "s75") referenceKeys.push("public/images/neonoire/s73/72-the-lost-heel.jpg", "public/images/neonoire/s74/73-two-small-figures.jpg");
+  if (scene.key === "s76") referenceKeys.push("public/images/neonoire/s4/33-the-apartment.jpg");
   if (isColdOpenScene(scene.key)) referenceKeys.push("public/images/neonoire/s1/01-backstreet.jpg", "public/images/neonoire/s1/03-mara-walks.jpg", "public/images/neonoire/s1/07-old-man.jpg", "public/images/neonoire/s1/08-sedan-arrives.jpg");
   const castLines = shot.n === 35
     ? ["- Jack Voss, Vera (9), Mara (4) — public/images/neonoire/s4/35-the-photograph.jpg; use the childhood photograph, not adult wardrobe/hair references."]
@@ -84,6 +92,7 @@ function shotBrief(shot) {
     `SUBJECT — ${shot.description} ${note}`,
     continuity,
     isColdOpenScene(scene.key) ? `CONTINUITY — ${coldOpenLook}` : "",
+    streetsScenes.has(scene.key) ? `CONTINUITY — ${streetsLook}` : "",
     scene.key === "s7" ? `CONTINUITY — ${detectivesLook}` : "",
     scene.key === "s6" ? `CONTINUITY — ${interviewLook}` : "",
     scene.key === "s4" ? `CONTINUITY — ${apartmentLook}` : "",

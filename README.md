@@ -17,7 +17,7 @@ The series opens by default when present; an explicit `?project=<id>` always win
 ## NEONOIRE — the final screenplay
 
 The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
-the opening seven of them boarded as **68 numbered shots**. Everything is carried page by page from
+eleven of them boarded as **84 numbered shots** — the opening seven (shots 1–68) and the film proper's centre, the Tokyo streets of scenes 73–76 (shots 69–84). Everything is carried page by page from
 [`Neonoire (3).fountain`](<Neonoire (3).fountain>) (the earlier
 [`Neonoire_Opening.fountain`](Neonoire_Opening.fountain) remains only as the opening extract).
 
