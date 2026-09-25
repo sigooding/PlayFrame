@@ -154,7 +154,7 @@ for (const frame of streets) {
   assert.equal(frame.style, "neonoire");
   assert.equal(frame.status, "Draft", `${frame.title} is fresh 16:9 coverage, not a legacy study`);
 }
-assert(project.frames.find(f => f.id === "neonoire-shot-77").notes.includes("same puddle, same shoe"), "shot 77 should tie back to the lost heel of shot 72");
+assert(/same puddle, same shoe/i.test(project.frames.find(f => f.id === "neonoire-shot-77").notes), "shot 77 should tie back to the lost heel of shot 72");
 assert(streets.filter(f => f.sceneId === "neonoire-s75").every(f => !f.characters.length), "Scene 75's still frames carry nobody");
 pass("scenes 73–76: sixteen shots, all 1920×1080, tied to the streets brief and to each other");
 
