@@ -11,7 +11,7 @@ two continuity sheets.
 | the draft (source of truth) | [`Neonoire_Opening.fountain`](../../Neonoire_Opening.fountain) at the repository root |
 | the screenplay tab, page by page | [`docs/neonoire/screenplay/`](screenplay) — the draft's own bytes under a production header |
 | the numbered shot boards | [`docs/neonoire/scenes/`](scenes) — framing, lens, cast, light, duration, keyframe filename and notes, per shot |
-| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — all 2.39:1 anamorphic — plus continuity sheets in `public/images/neonoire/sheets/` |
+| the keyframes | `public/images/neonoire/keys/` (the nine style keys) and `public/images/neonoire/s1 … s7/` — scenes 4–7 and the apartment/police-station keys are 16:9 (1920×1080); other shots/keys remain 2.39:1 — plus continuity sheets in `public/images/neonoire/sheets/` |
 | the workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 
 ## Handing the keyframes on

@@ -13,6 +13,11 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { SCENES, grammar, imagePath, parseBoard, readBoard } from "./plan.mjs";
 
+import { frontCounterLook, frameFormat } from "./front-counter-look.mjs";
+import { apartmentLook } from "./apartment-look.mjs";
+import { interviewLook } from "./interview-look.mjs";
+import { detectivesLook } from "./detectives-look.mjs";
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
 
@@ -39,7 +44,7 @@ const pending = board.filter(shot => !existsSync(resolve(root, `public${imagePat
 const sheets = new Map([
   ["Mara Voss", "public/images/neonoire/sheets/mara.jpg  (face crop: mara-face.jpg; keep the cheap enamel red-bird clip in her soaked hair wherever visible)"],
   ["Vera Voss", "public/images/neonoire/sheets/vera.jpg  (face crop: vera-face.jpg)"],
-  ["Jack Voss", "public/images/neonoire/sheets/vera.jpg  (he is in the photograph in scene 4; no sheet of his own yet)"],
+  ["Jack Voss", "public/images/neonoire/s4/35-the-photograph.jpg  (corrected family photograph; Jack in the centre)"],
   ["The Young Officer", "public/images/neonoire/sheets/young-officer.jpg  (face crop: young-officer-face.jpg)"],
   ["Detective Ishida", "public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)"],
 ]);
@@ -50,9 +55,13 @@ const passes = [...new Set(pending.map(shot => passOf(shot.n)))].sort((a, b) => 
 function shotBrief(shot) {
   const scene = shot.scene;
   const referenceKeys = KEYS[scene.key].map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
-  const castLines = shot.cast.map(name => `- ${name} — ${sheets.get(name) || "no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)"}`);
+  if (scene.key === "s6") referenceKeys.push("public/images/neonoire/s6/51-the-interview-room.jpg", "public/images/neonoire/s6/56-three-days-ago.jpg");
+  if (scene.key === "s7") referenceKeys.push("public/images/neonoire/s7/63-the-detectives-room.jpg", "public/images/neonoire/s7/64-the-bottom-drawer.jpg", "public/images/neonoire/s1/18-the-flashlight.jpg", "public/images/neonoire/s5/43-the-front-counter.jpg");
+  const castLines = shot.n === 35
+    ? ["- Jack Voss, Vera (9), Mara (4) — public/images/neonoire/s4/35-the-photograph.jpg; use the childhood photograph, not adult wardrobe/hair references."]
+    : shot.cast.map(name => `- ${name} — ${sheets.get(name) || "no continuity sheet yet (unnamed role: keep them unremarkable and unspecified)"}`);
   const note = shot.note.split("\n\n")[0];
-  const continuity = shot.cast.includes("Mara Voss")
+  const continuity = shot.cast.includes("Mara Voss") && scene.key !== "s4"
     ? "CONTINUITY — Mara's hair is soaked flat and held back by a cheap enamel clip shaped like a small red bird; it remains in place through the bar scene and stays visible wherever framing allows."
     : "";
   return [
@@ -60,7 +69,7 @@ function shotBrief(shot) {
     "",
     `**Scene ${scene.n} · ${scene.location} — ${scene.time}**`,
     "",
-    `- **File**: \`${imagePath(scene, shot).replace(/^\//, "public/")}\` — write it exactly here, ${shot.image}, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.`,
+    `- **File**: \`${imagePath(scene, shot).replace(/^\//, "public/")}\` — write it exactly here, ${shot.image}, JPEG, ${frameFormat(scene)}, no embedded text or watermark.`,
     `- **Framing**: ${shot.shotType}, ${shot.lens}, ${shot.movement}, ${shot.angle}. Lighting: ${shot.lighting}. Working duration ${shot.duration}s (not a locked time).`,
     `- **Continuity references to attach**: ${referenceKeys.map(k => "`" + k + "`").join(", ")}${castLines.length ? "" : " — none, the city carries the shot"}`,
     ...castLines,
@@ -68,10 +77,14 @@ function shotBrief(shot) {
     "**Prompt**",
     "",
     "```",
-    styleBlock,
+    ["s4", "s5", "s6", "s7"].includes(scene.key) ? styleBlock.replace("anamorphic widescreen", "16:9 full-bleed widescreen") : styleBlock,
     "",
     `SUBJECT — ${shot.description} ${note}`,
     continuity,
+    scene.key === "s7" ? `CONTINUITY — ${detectivesLook}` : "",
+    scene.key === "s6" ? `CONTINUITY — ${interviewLook}` : "",
+    scene.key === "s4" ? `CONTINUITY — ${apartmentLook}` : "",
+    scene.key === "s5" ? `CONTINUITY — ${frontCounterLook}` : "",
     `FRAMING — ${shot.shotType}, ${shot.lens}, ${shot.movement}, ${shot.angle}, lit by ${shot.lighting.toLowerCase()}.`,
     shot.script ? `DRAFT — the draft's own words for this shot: "${shot.script}"` : "DRAFT — no dialogue in this shot; it is carried by the frame and the sound.",
     "",
@@ -95,14 +108,14 @@ function passFile(pass) {
     "",
     "**Before you start**",
     "",
-    "- Every frame is **2.39:1 anamorphic**: generate widescreen, then normalise exactly with",
+    "- Scenes 4–7 (shots 33–68) are **16:9 full-bleed, 1920×1080**; follow apartment-look.mjs (no paper pendant), front-counter-look.mjs, interview-look.mjs and detectives-look.mjs. Other scenes remain **2.39:1 anamorphic, 1912×800**. Use the dimensions in each shot brief; the command below is for the other scenes only:",
     "  ```bash",
     "  convert FILE.jpg -resize \"1912x800^\" -gravity center -extent 1912x800 -quality 92 -strip FILE.jpg",
     "  ```",
     "- Attach the continuity sheet (or its face crop) for every named character in the shot, and the studio keys listed for the scene — they are the look the film is already being generated in.",
     "- Where the generator supports a negative prompt, use the AVOID list; where it does not, keep those things out of frame yourself.",
     "- The film explains nothing. No captions, no readable signage invented for the plot, no reaction emphasis, no glamour.",
-    "- British/American spelling is irrelevant here; **no text at all** unless the board quotes a super.",
+    "- British/American spelling is irrelevant here; **no added captions**; only include readable text explicitly required by the board (for example MARA VOSS on the monitor).",
     "- When the frame is on disk, run `npm run build:neonoire` and `npm run verify:neonoire` from the repository root. The builder will tell you if a file is missing or misnamed.",
     "",
     ...shots.map(shotBrief),

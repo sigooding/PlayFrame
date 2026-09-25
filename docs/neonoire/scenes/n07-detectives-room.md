@@ -7,6 +7,14 @@ Cast: DETECTIVE ISHIDA
 Lens plan: 24mm for the room, 50mm for Ishida at his desk, 85mm for the drawer and the evidence bag.
 Grammar: rows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. The scene is four shots of a man deciding not to tell anyone, and one shot of a clock. No dialogue at all.
 
+## Visual revision — 25 September 2026
+
+All six shots (63–68) are **16:9, 1920×1080, full-bleed**. The room master is `public/images/neonoire/s7/63-the-detectives-room.jpg`; the action master is `64-the-bottom-drawer.jpg`. The nearest desk's phone/files, pen cup and green-dial radio remain fixed. Ishida keeps his scene-6 face, charcoal suit and light grey open-collar shirt: **no tie**.
+
+Drawer states: all closed in 63; only the bottom drawer open in 64–66; all closed again in 67. The two upper drawers remain closed and the drawer must attach correctly to its pedestal. In 65, the evidence is **inside the drawer**, not on the desktop: Mara's damp dark-brown handbag and torn coiled strap are both inside one sealed clear bag, with top-layer plastic crossing the leather. Match the handbag in `s1/18-the-flashlight.jpg`. Do not expose its contents. In 67 the evidence is hidden again; the closing clock uses the front-counter clock's black-rim/white-face design.
+
+The reusable brief is `scripts/neonoire/detectives-look.mjs`. These remain AI-generated draft studies, not approved coverage. The original screenplay is unchanged.
+
 ---
 
 63. WIDE — 24mm, static, eye level — the detectives' room.
@@ -34,7 +42,7 @@ CAST: —
 LIGHT: Practical night
 TIME: 9
 IMAGE: 65-the-evidence-bag.jpg
-NOTE: Continuity with scene 1: the same purse, the same torn strap that snagged the barbershop pole, still wet, and the contents are never shown. Do not re-light it as a horror prop — it is an exhibit in a bag on a desk.
+NOTE: Continuity with scene 1: the same purse, the same torn strap that snagged the barbershop pole, still wet, and the contents are never shown. Do not re-light it as a horror prop — it is an exhibit sealed in a bag inside the open bottom drawer, as specified by the screenplay.
 
 66. CLOSE-UP — 85mm, static, eye level — he looks at it.
 He looks at it a long moment. The film holds with him and gives him nothing to say.

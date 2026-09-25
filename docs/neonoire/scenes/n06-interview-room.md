@@ -7,6 +7,14 @@ Cast: VERA VOSS, DETECTIVE ISHIDA (50s)
 Lens plan: 24mm for the room, 35mm for the two-shot across the table, 50mm for each of them, 85mm for the tea, the tissue, the card and the long looks.
 Grammar: one table, two chairs, rain on a frosted window. The scene is a two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it; when it matters he stops offering it and answers her in Japanese, and the subtitles carry the room. Nothing here is violent; everything here is a man deciding how much to say, and a woman finding out what the official sentences mean.
 
+## Visual revision — 25 September 2026
+
+All twelve shots (51–62) are **16:9, 1920×1080, full-bleed**. The room master is `public/images/neonoire/s6/51-the-interview-room.jpg`; the blocking master is `56-three-days-ago.jpg`. Keep Vera left, Ishida right, the single frosted rainy window centred, the grey laminate table, two beige chairs and steady fluorescent light. The tan tissue box remains on the window sill throughout, within Ishida's reach; no box appears on the table.
+
+Vera retains her scene-5 charcoal coat, cream high-neck knit, navy trousers, brown boots and pale-blue umbrella. Ishida matches his character sheet: charcoal suit and light grey open-collar shirt, **no tie**. One cream-white **paper** cup only. It is intact with a dry tabletop before shot 60; the crushed cup and spill persist through 61–62. Ishida puts one offered tissue beside her hand, then slides his card across the wet table. Do not restore the cup, wipe the spill early, add glass cups or swap the umbrella colour.
+
+Shots 57 and 59 are tighter continuity reframings of 54 and 56, respectively, not new performances. Shot 52 has a composited cup correction from the two-shot master: the extra glass was removed and the cup in Ishida's hand replaced with the established paper cup. These remain AI-generated draft studies, not approved coverage. The reusable brief is `scripts/neonoire/interview-look.mjs`.
+
 ---
 
 51. WIDE — 24mm, static, eye level — the room.
@@ -16,7 +24,7 @@ CAST: —
 LIGHT: Practical night
 TIME: 9
 IMAGE: 51-the-interview-room.jpg
-NOTE: The room is the same institution as the counter, one door further in: the same flicker on the edge of frame, the same tired paint. No mirror, no camera, no observer — this is not an interrogation room and the film never says whether that is good. Plant the tissue box in this frame; it pays off twice.
+NOTE: The room is the same institution as the counter, one door further in: the same institutional light and tired paint, but the interview-room fluorescent is steady. No mirror, no camera, no observer — this is not an interrogation room and the film never says whether that is good. Plant the tissue box on the window sill in this frame; it pays off twice.
 
 52. MEDIUM — 50mm, static, eye level — the tea.
 DETECTIVE ISHIDA sets a paper cup of tea in front of Vera. Gentle. Unhurried. Tired, in a way that looks like decency.
@@ -25,7 +33,7 @@ CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 10
 IMAGE: 52-the-paper-cup-of-tea.jpg
-NOTE: His first act in the film is a kindness. Everything he does afterwards has to be able to be read either way.
+NOTE: His first act in the film is a kindness. The still catches him bringing the single paper cup forward, before it lands on Vera's side. Everything he does afterwards has to be able to be read either way.
 
 53. CLOSE-UP — 85mm, static, high angle — the tea, untouched.
 The paper cup going cold between them, a thin curl of steam at the start of the shot and none of it by the end.

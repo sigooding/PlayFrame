@@ -1036,3 +1036,9 @@ img{display:block;max-width:100%}
 .lipsync-legend{display:flex;flex-wrap:wrap;gap:6px 10px;padding:8px 10px;font-size:10.5px;color:var(--muted)}
 .lipsync-legend-item{display:inline-flex;align-items:center;gap:4px}
 .lipsync-legend-item i{width:9px;height:9px;border-radius:2px;display:inline-block}
+
+/* Original framing: a scene may mix 16:9 and scope images. Never crop the
+   composition in presentation; explicit storyboard ratio choices still crop. */
+.frame-image-wrap[data-native="true"] .frame-image-button{position:relative;inset:auto;height:auto}
+.frame-image-wrap[data-native="true"] .frame-image-button img{display:block;height:auto}
+.player-image-wrap>img,.frame-preview>img,.shared-frame>div>img{object-fit:contain}
