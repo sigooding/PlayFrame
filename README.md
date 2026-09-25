@@ -14,17 +14,23 @@ npm run dev                  # http://localhost:3000
 The first load seeds the existing sample projects plus **Let the Raptures Commence**.
 The series opens by default when present; an explicit `?project=<id>` always wins.
 
-## NEONOIRE — the opening scenes
+## NEONOIRE — the final screenplay
 
-The first draft's opening scenes are an editable workspace of their own: **7 scenes, 65 numbered
-shots**, and the screenplay carried page by page from
-[`Neonoire_Opening.fountain`](Neonoire_Opening.fountain).
+The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
+the opening seven of them boarded as **68 numbered shots**. Everything is carried page by page from
+[`Neonoire (3).fountain`](<Neonoire (3).fountain>) (the earlier
+[`Neonoire_Opening.fountain`](Neonoire_Opening.fountain) remains only as the opening extract).
 
-- **The draft is the script.** The Screenplay tab shows it scene by scene in
-  [`docs/neonoire/screenplay/`](docs/neonoire/screenplay/); `npm run split:neonoire` regenerates those
-  pages and `npm run build:neonoire` refuses to build unless they rebuild the fountain byte for byte.
-  The only change the workspace makes to the text is dropping its own ` #1#` … ` #7#` scene markers,
-  so every scene selects its own slugline in the screenplay navigator.
+- **The draft is the script.** The Screenplay tab shows it scene by scene — one page per numbered
+  scene, in [`docs/neonoire/screenplay/`](docs/neonoire/screenplay/); `npm run split:neonoire`
+  regenerates those pages and `npm run build:neonoire` refuses to build unless they rebuild the
+  fountain byte for byte. The only change the workspace makes to the text is dropping its own
+  ` #1#` … ` #100#` scene markers, so every scene selects its own slugline in the screenplay
+  navigator. Scenes 8–100 are marked **WRITTEN, NOT BOARDED** — the board has not reached them yet.
+- **Every image is 16:9.** From the final screenplay onward, keyframes are generated **16:9
+  full-bleed, 1920×1080** — no scope, no letterbox; the Neo-Noir Tokyo style block opens at that
+  shape. The older 2.39:1 studies on disk (cold-open shots 11–28, scene 3, early keys) are marked
+  revision-pending and regenerate at 16:9; nothing is cropped to fake it.
 - **Every shot declares its grammar.** [`docs/neonoire/scenes/`](docs/neonoire/scenes/) is the numbered
   board (Kanda backstreet 18 shots, the small bar 10, Vera's building 4, her apartment 10, the police
   station counter 8, the interview room 9, the detectives' room 6): shot type, lens, camera angle,
@@ -39,12 +45,12 @@ shots**, and the screenplay carried page by page from
   counting towards, and what a clock that runs a minute fast is doing in a police station are all left
   where the draft leaves them.
 
-Open the workspace from **Templates → NEONOIRE → Open the opening scenes** (the card opens the
+Open the workspace from **Templates → NEONOIRE → Open the final screenplay** (the card opens the
 Screenplay tab) or import
 [`public/projects/neonoire-opening.json`](public/projects/neonoire-opening.json) with **Import project**.
 
 ```bash
-npm run split:neonoire            # regenerate the seven screenplay pages from the draft
+npm run split:neonoire            # regenerate the 100 screenplay pages from the draft
 npm run build:neonoire            # rebuild the bundle, and list every keyframe still to generate
 npm run verify:neonoire           # offline: pages, schema, screenplay map, lenses, CSV, prompts
 node scripts/neonoire/build-project.mjs --check   # fail if the bundle has drifted

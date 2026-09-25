@@ -1,9 +1,10 @@
-// Offline regression checks for the NEONOIRE opening-scenes workspace.
+// Offline regression checks for the NEONOIRE workspace (final screenplay + opening boards).
 //
 //   npm run verify:neonoire
 //
-// Checks, with no server and no browser: the bundle is in step with the draft and the boards, the
-// screenplay tab carries all seven scenes and each scene selects its own heading, every frame
+// Checks, with no server and no browser: the bundle is in step with the final screenplay and the
+// opening's boards, the screenplay tab carries all one hundred scenes and each scene selects its
+// own heading, every frame
 // carries a shot type and a lens from the app's own libraries, every claimed keyframe is on disk,
 // the cast links are reciprocal, and the prompt studio and CSV export handle the project.
 import assert from "node:assert/strict";
@@ -18,14 +19,14 @@ const cache = join(root, "node_modules/.cache/verify-neonoire");
 mkdirSync(cache, { recursive: true });
 const read = file => readFileSync(join(root, file), "utf8");
 const pass = message => console.log(`  PASS  ${message}`);
-console.log("=== NEONOIRE — opening scenes ===");
+console.log("=== NEONOIRE — the final screenplay workspace ===");
 
 // The builder proves the pages rebuild the draft and every quoted line is in it.
 execFileSync(process.execPath, ["scripts/neonoire/build-project.mjs", "--check"], { cwd: root, stdio: "inherit" });
 
 const project = JSON.parse(read("public/projects/neonoire-opening.json"));
 const bundle = JSON.parse(read("public/projects/let-the-raptures-commence.json"));
-const fountain = read("Neonoire_Opening.fountain");
+const fountain = read("Neonoire (3).fountain");
 
 const exportsFile = join(cache, "project.mjs");
 await build({
@@ -40,13 +41,16 @@ const {
 // ---------------------------------------------------------------- schema and ceilings
 validatePatch(project);
 assert.equal(project.acts.length, 1);
-assert.equal(project.scenes.length, 7);
+assert.equal(project.scenes.length, 100, "The final screenplay's 100 numbered scenes all belong to the workspace");
+assert(project.scenes.slice(7).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Scenes 8–100 say honestly that the board has not reached them");
+assert(project.scenes.slice(7).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
 assert.equal(project.frames.length, 68);
 assert.equal(project.characters.length, 8);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
 assert(project.frames.every(frame => frame.lens), "Every frame declares a lens");
-assert.equal(project.notes.length, 6);
+assert.equal(project.notes.length, 7);
+assert(project.notes.some(note => note.id === "neonoire-frame-format" && /16:9 full-bleed, 1920×1080/.test(note.content)), "The workspace carries the film's 16:9 frame rule");
 assert.equal(project.brainstorm.length, 6);
 assert(project.moodboards.length >= 3 && project.moodboards.length <= 5, "The boards carried are the ones with keyframes on them");
 for (const board of project.moodboards) assert(board.items.length > 0, `An empty mood board is a dead card: ${board.title}`);
@@ -68,11 +72,11 @@ for (const scene of project.scenes) {
   assert(sceneHeadings(scene).includes(normaliseSlugline(line)), `${scene.title} should select its own heading, got ${JSON.stringify(line)}`);
   assert(line.includes(scene.location), `${scene.title}'s heading should name its location`);
 }
-// The workspace script is the draft with the seven `#n#` markers removed, and nothing else changed.
+// The workspace script is the draft with its one hundred `#n#` markers removed, and nothing else changed.
 const clean = fountain.replace(/ #\d+#(?=\n|$)/g, "");
 assert.equal(project.script.replace(/\s+$/, ""), clean.replace(/\s+$/, ""), "The screenplay should be the draft, minus its scene-number markers");
 for (const scene of project.scenes) assert(project.script.includes(`${scene.location} - ${scene.time}`), `${scene.title}'s slugline must survive in the script`);
-pass(`the screenplay carries all 7 scenes, in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
+pass(`the screenplay carries all 100 scenes, in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
 
 // ---------------------------------------------------------------- frames, lenses, keyframes
 for (const frame of project.frames) {
@@ -164,7 +168,16 @@ assert(frameFormat({ key: "s4" }).startsWith("16:9"));
 assert(frameFormat({ key: "s5" }).startsWith("16:9"));
 assert(frameFormat({ key: "s6" }).startsWith("16:9"));
 assert(frameFormat({ key: "s7" }).startsWith("16:9"));
-assert(frameFormat({ key: "s3" }).startsWith("2.39:1"), "Scene 3 retains its original framing");
+assert(frameFormat({ key: "s3" }).startsWith("16:9"), "The final screenplay puts every scene's images in 16:9");
+// Scene 3's frames are the remaining legacy scope studies: honest, labelled, Needs review.
+const block3 = project.frames.filter(frame => frame.sceneId === "neonoire-s3");
+assert.equal(block3.length, 4);
+for (const frame of block3) {
+  assert.deepEqual(jpegDimensions(frame.image), [1912, 800], `${frame.title}: legacy image must not masquerade as a revised frame`);
+  assert.equal(frame.status, "Needs review", `${frame.title} awaits the 16:9 revision`);
+  assert(frame.notes.includes("16:9 REVISION PENDING"), `${frame.title} should name its pending revision`);
+}
+pass("scene 3's four legacy frames are labelled 16:9 revision pending rather than silently cropped");
 pass("all ten apartment JPEGs and their key are 1920×1080; pendant removal and prop/cast continuity are recorded");
 
 const interview = project.frames.filter(frame => frame.sceneId === "neonoire-s6");
@@ -253,7 +266,7 @@ for (const frame of project.frames) {
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
 assert.equal(imported.frames.length, 68);
-assert.equal(imported.scenes.length, 7);
+assert.equal(imported.scenes.length, 100, "A re-import carries the whole final screenplay");
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
 // ---------------------------------------------------------------- persistence
@@ -274,7 +287,7 @@ try {
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
       assert.equal(opened.frames.length, 68);
-      assert.equal(opened.scenes.length, 7);
+      assert.equal(opened.scenes.length, 100);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
 

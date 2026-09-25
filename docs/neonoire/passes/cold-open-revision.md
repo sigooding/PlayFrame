@@ -7,6 +7,7 @@ Scope: **shots 1–28**, scenes 1–2, before the main titles. Preserve the verb
 - [x] **1–10** — installed as 1920×1080 JPEGs at the existing asset paths; AI-generated draft studies, awaiting production approval.
 - [ ] **11–20** — next batch; existing legacy 2.39:1 images are still on disk, marked Needs review.
 - [ ] **21–28** — final cold-open batch; existing legacy 2.39:1 images are still on disk, marked Needs review.
+- [ ] **29–32 (scene 3)** — joins the revision list: from the final screenplay the whole film is 16:9, so scene 3's four legacy 2.39:1 studies are regenerated at 1920×1080, not cropped. The bundle builder marks each of them **16:9 REVISION PENDING**.
 
 The image service allows ten generations in a turn. Do not silently crop the remaining old images or label them as rebuilt. The generation limit was reached after batch 1; no shots after 10 were regenerated.
 

@@ -2,7 +2,7 @@ NEONOIRE
 OPENING — SCENE 2 — INT. SMALL BAR, KANDA
 
 INT. SMALL BAR, KANDA - CONTINUOUS
-Source: the first draft's opening scenes (Neonoire_Opening.fountain, September 2026), reproduced verbatim below its own heading.
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Mara Voss, The Journalist, The Masked Men.
 Grammar: The room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays 
 where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is 
@@ -57,6 +57,8 @@ Second position done.
 The shoes leave. The door swings shut.
 
 Mara stays exactly where she is. She is shaking so hard the bottles in the crate beside her begin to CLINK. She presses her hand flat against them to make them stop.
+
+Her red bird hair clip slides loose and drops silently between the crates. She doesn't notice.
 
 The TV audience laughs again.
 

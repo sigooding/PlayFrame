@@ -39,7 +39,8 @@ const isAwaitingKeyframe = (frame: { image: string; title: string; notes: string
   !frame.image && /\(keyframe missing\)$/.test(frame.title) && frame.notes.includes("KEYFRAME MISSING");
 
 /**
- * The NEONOIRE opening-scenes workspace, opened the same way the series workspace is — the bundle
+ * The NEONOIRE workspace (final screenplay + opening boards), opened the same way the series
+ * workspace is — the bundle
  * is inserted only if it is absent, and re-opening never overwrites what a writer has changed.
  *
  * Keyframes arrive ten at a time, and a workspace opened before a pass landed would otherwise keep

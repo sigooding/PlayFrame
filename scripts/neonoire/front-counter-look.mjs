@@ -1,7 +1,7 @@
-// Scene 5 visual brief. Frame format is the generation target; cold-open shots 11–28
-// are still awaiting revision (see cold-open-look.mjs), not yet 16:9 assets.
+// Scene 5 visual brief. Frame format is the generation target; the final screenplay put every
+// image in 16:9, so legacy 2.39:1 frames (cold-open shots 11–28, scene 3, older keys) are
+// awaiting revision to it — see cold-open-look.mjs — but nothing is generated in scope any more.
 export const frontCounterLook = "16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.";
 
-export const frameFormat = scene => ["s1", "s2", "s4", "s5", "s6", "s7"].includes(scene.key)
-  ? "16:9 full-bleed (1920×1080)"
-  : "2.39:1 anamorphic (1912×800)";
+/** The film's frame rule, from the final screenplay (September 2026) onward: every image is 16:9. */
+export const frameFormat = () => "16:9 full-bleed (1920×1080)";

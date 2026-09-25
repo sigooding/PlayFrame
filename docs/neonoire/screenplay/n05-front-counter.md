@@ -2,7 +2,7 @@ NEONOIRE
 OPENING — SCENE 5 — INT. POLICE STATION, FRONT COUNTER
 
 INT. POLICE STATION, FRONT COUNTER - NIGHT
-Source: the first draft's opening scenes (Neonoire_Opening.fountain, September 2026), reproduced verbatim below its own heading.
+Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, The Young Officer.
 Grammar: Institutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine 
 beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.

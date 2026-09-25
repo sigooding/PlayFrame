@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { openNeonoireProject } from "@/lib/projects";
 
 /**
- * Explicit opt-in for the NEONOIRE opening-scenes workspace — the same contract the series
+ * Explicit opt-in for the NEONOIRE workspace (final screenplay, opening boards) — the same contract the series
  * workspace has: the bundle is inserted only if it is absent, and re-opening it never overwrites
  * a writer's edits. Deleting it is respected until it is deliberately opened again.
  */
