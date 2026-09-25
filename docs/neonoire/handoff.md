@@ -2,7 +2,7 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **54 scenes, 190 shots**: scenes 1–17, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 190 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **60 scenes, 199 shots**: scenes 1–23, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 199 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [scenes 18–23](passes/scenes-18-23.md) (shots 191–199); the next image is **shot 200**, asset `s23/198`, the second frame of scene 23, then scenes 24–30.
 
 ## Note to the next agent — how consistency is kept here
 
