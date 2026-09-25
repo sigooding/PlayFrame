@@ -54,6 +54,7 @@ export const movementDescriptions: Record<CameraMovement, string> = {
 
 export const angleDescriptions: Record<CameraAngle, string> = {
   "Eye level": "eye-level camera",
+  "Low, level": "low-set camera held level, straight verticals, no upward tilt or heroic angle",
   "Low angle": "low angle looking up, making the subject feel powerful",
   "High angle": "high angle looking down, making the subject feel small",
   "Dutch angle": "tilted dutch angle for unease",

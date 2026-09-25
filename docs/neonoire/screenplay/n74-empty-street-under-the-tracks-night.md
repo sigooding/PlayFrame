@@ -1,13 +1,10 @@
 NEONOIRE
-OPENING — SCENE 74 — EXT. EMPTY STREET UNDER THE TRACKS
+SCREENPLAY — SCENE 74 — EXT. EMPTY STREET UNDER THE TRACKS
 
 EXT. EMPTY STREET UNDER THE TRACKS - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
-Cast: Vera Voss, Jack Voss.
-Grammar: The film's biggest street frame: a row of vending machines as the only light, the black road shining like water, the elevated railway crossing 
-overhead, two small figures twenty metres apart. The violence is one desperate blow, not a scene; the breaking is a folding, not a scream. The 
-reflection may carry a figure under a pale-blue umbrella and must never resolve. Then WIDE, then EXTREME WIDE, and the score enters only when the shot 
-has held too long.
+Cast: Vera Voss, Jack.
+Grammar: Tokyo Story in colour: static 50mm; approach, blows, collapse, rejection. 35mm aftermath wide; ambiguous reflection. Late score.
 
 EXT. EMPTY STREET UNDER THE TRACKS - NIGHT #74#
 

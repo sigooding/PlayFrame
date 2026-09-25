@@ -11,7 +11,7 @@ Grammar: grey rain light through the window and the corner of a CRT; nothing her
 
 All ten shots (33–42) are **16:9, 1920×1080, full-bleed**, rebuilt from `appartment.png` and `photo.png`. Original uploads remain unchanged. The corrected room master is `public/images/neonoire/keys/04-veras-apartment.jpg`; the corrected family-photo master is `public/images/neonoire/s4/35-the-photograph.jpg`.
 
-**No paper pendant anywhere**: remove the shade, hanging cord and ghost reflection completely. Retain the brown table lamp on the left cabinet. Keep the sliding-door frame, curtains, cabinet/stereo/photo on the left and CRT on the right fixed across angles. The TV stays on. Exactly one dry pale-blue umbrella with one curved brown handle; exactly two ivory cups, one with tea and the opposite one empty. Vera uses speakerphone with the phone face-up on the table, wears her cream knit until putting on her charcoal coat in shot 42, and leaves the umbrella stand empty when she takes the umbrella. The photograph contains Jack between laughing Mara (4, left) and serious Vera (9, right), not adult sisters.
+**No paper pendant anywhere**: remove the shade, hanging cord and ghost reflection completely. Retain the brown table lamp on the left cabinet. Keep the sliding-door frame, curtains, cabinet/stereo/photo on the left and CRT on the right fixed across angles. The TV stays on. Exactly one dry pale-blue umbrella with one curved brown handle; exactly two ivory cups, one with tea and the opposite one empty. Vera uses speakerphone with the phone face-up on the table, wears her cream knit until putting on her charcoal coat in shot 42, and leaves the umbrella stand empty when she takes the umbrella. The photograph contains Daniel between laughing Mara (4, left) and serious Vera (9, right), not adult sisters.
 
 The reusable brief is `scripts/neonoire/apartment-look.mjs`. Shot 41 is a tighter crop of the corrected room master, preserving the actual cup contents and prop positions rather than introducing drift in a regenerated angle. These are AI-generated draft studies, not approved coverage.
 
@@ -38,11 +38,11 @@ NOTE: Bone dry is the whole story of the sisters in one prop: Mara went out with
 35. INSERT — 85mm, static, eye level — the photograph.
 One framed photograph, its colors gone warm and faded: a Tokyo street twenty years ago. An American man in a rumpled suit, smiling, holding the hands of two small girls — VERA, nine and serious, and MARA, four and mid-laugh. Behind them, the sign of a noodle shop.
 SCRIPT: "On a shelf, one framed photograph, its colors gone warm and faded."
-CAST: Jack Voss, Vera Voss, Mara Voss
+CAST: Daniel Voss, Vera Voss, Mara Voss
 LIGHT: Overcast soft
 TIME: 8
 IMAGE: 35-the-photograph.jpg
-NOTE: Three American faces, twenty years ago: Jack Voss in the middle with his daughters. The only warm, saturated colour in the film so far; hold long enough to read the family before the plot takes it away.
+NOTE: Three American faces, twenty years ago: Daniel Voss in the middle with his daughters. The only warm, saturated colour in the film so far; hold long enough to read the family before the plot takes it away.
 
 36. MEDIUM — 50mm, static, eye level — Vera at the table.
 VERA VOSS sits at the low table. Two cups: hers holds cold tea, the other is empty and clean, set out as though someone is expected. Her phone lies face up in front of her. She calls. Waits.

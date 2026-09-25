@@ -1,59 +1,61 @@
 # NEONOIRE — SCENE 75 — INT./EXT. VARIOUS — NIGHT (SERIES OF SHOTS)
 
-**Board, and the script.** The screenplay page for this scene is [n75-ext-various-night-series-of-shots.md](../screenplay/n75-ext-various-night-series-of-shots.md), carrying the draft verbatim.
+The [screenplay page](../screenplay/n75-ext-various-night-series-of-shots.md) is unchanged.
 
-Scene: INT./EXT. VARIOUS — NIGHT — SERIES OF SHOTS
-Cast: — (the night's objects, nobody)
-Lens plan: 35mm for interiors, 50mm for the street, 85mm for the shoe and the static.
-Grammar: five still frames with the people removed — the film's Ozu grammar taken at its word. Locked off; nothing moves but rain, steam and static. Held long enough to read as grief, not as a trailer.
+## Tokyo Story in colour — 25 September 2026
 
-## Frame format — 25 September 2026
+**Shots 79–83**, 1920×1080 full-bleed. Five low level 50mm static pillow shots, no people, no camera movements. Colour rather than monochrome: ivory practicals, restrained amber, dull green, black rainwater and one wine-red shoe. The objects are not dramatic inserts with spotlighting; they are the city continuing without her.
 
-All five shots (77–81) are **16:9, 1920×1080, full-bleed**, and no person appears in any of them — not even small, not in a window. The red shoe is the same shoe lost in shot 72, in the same puddle under the same machine-light; the lounge keeps only the pale-blue umbrella; the Hive reads shut, not demolished — this is the night, not the ending. The reusable brief is `scripts/neonoire/streets-look.mjs`. These are AI-generated draft studies, not approved coverage. The screenplay is unchanged.
+**79–80 replaced in this session. 81–83 await regeneration**, with old images removed rather than presented as revised. No people anywhere, including in reflections, windows or small background silhouettes. The Hive remains whole: it is shut, not the demolition later in the script.
 
 ---
 
-77. INSERT — 85mm, static, high angle — a red shoe in a puddle.
-A single red high-heeled shoe lying in a puddle on an empty street, rain dimpling the water around it. The machine's cold light in the background; no feet anywhere near.
+79. INSERT — 50mm, static, low level — a red shoe in a puddle.
+A low level camera at 20cm looks across the SAME shallow puddle at the single wine-red closed-toe court shoe Vera lost. It lies on its side, toe left and low heel right, beige lining exposed; drain grate to its left, scuffed ivory vending-machine base and dull-green shutter behind. Machine-white light breaks in black water as steady rain dimples it. No feet, hands or people.
 SCRIPT: "A single red high-heeled shoe lying in a puddle on an empty street, rain dimpling the water around it."
 CAST: —
 LIGHT: Practical night
-TIME: 6
+TIME: 8
+ID: neonoire-shot-77
 IMAGE: 77-the-red-shoe.jpg
-NOTE: Same puddle, same shoe, same light as shot 72 — the audience is allowed to notice. No hand reaches for it.
+NOTE: Replacement generated from s73/72-the-lost-heel.jpg — same puddle, same shoe, same light. RIGHT shoe lost, LEFT shoe still with Vera elsewhere. No high-angle 85mm product photograph; low level normal-lens patient still life. No second shoe or hand reaching into frame.
 
-78. WIDE — 35mm, static, eye level — the empty lounge, her umbrella.
-The hotel lounge, empty, the chairs up on the tables and the bar stools. The pale-blue umbrella still leaning against the bar stool where the date was interrupted. House lights down to one.
+80. WIDE — 50mm, static, low level — the empty lounge, her umbrella.
+Return to exactly the low level 80cm camera of the new hotel master. The walnut slatted bar, brass footrail, oxblood stools, olive wall, left piano and rain-streaked window remain in place, but Vera and the pianist have gone. Chairs are up on the lounge tables. The folded pale-blue umbrella still leans against the same empty neighbouring bar stool. One amber table lamp remains; shelf lights are down. No person anywhere.
 SCRIPT: "The hotel lounge, empty, the chairs up. The pale blue umbrella still leaning against the bar stool."
 CAST: —
 LIGHT: Practical night
-TIME: 7
+TIME: 10
+ID: neonoire-shot-78
 IMAGE: 78-the-empty-lounge.jpg
-NOTE: The blue umbrella — dry since scene 4, carried since scene 5 — ends the sequence standing in a room where a promise of dinner was made. Nobody collects it in this shot.
+NOTE: Replacement generated from s72/69-the-wait.jpg, not the previous lounge study. Same camera position, same umbrella, no new layout. Phone, lighter and glass no longer present; nobody comes to collect the umbrella. A return to the place where she made herself pretty, without an explanatory close-up.
 
-79. WIDE — 50mm, static, eye level — the Hive, shut down.
-The Hive at night seen from the street: the noodle shop shutter down, its old hand-painted sign still faintly glowing under the new glass tower above it. A window or two lit; laundry; ordinary life going on without any of the people we know.
+81. WIDE — 50mm, static, low level — the Hive, shut down.
+Low level locked camera at 70cm, normal 50mm lens, square to the intact Hive's old noodle-shop shutter. Its hand-painted sign glows faint amber beneath an ordinary dark glass tower. Rain and quiet architectural layers, no people or silhouettes, no burning wreckage, no demolition.
 SCRIPT: "The Hive at night, the noodle shop shutter down, its old sign still faintly glowing."
 CAST: —
 LIGHT: Practical night
-TIME: 7
+TIME: 9
+ID: neonoire-shot-79
 IMAGE: 79-the-hive-shut.jpg
-NOTE: The building is whole and shut, not the ruin of scene 99 — three days of story remain. The sign's glow is the only warm colour.
+NOTE: REPLACEMENT PENDING — do not use the discarded image or invent a ruined building. Draw the night from the new street master, but do not transplant the hotel's architecture. Keep the old sign dim and unreadable; the script has three more days before demolition.
 
-80. FULL — 50mm, static, eye level — the machine, waiting.
-The vending machine on the empty street, humming, lit, waiting for no one. Rain through its light in columns. The shot holds past comfort.
+82. FULL — 50mm, static, low level — the machine, waiting.
+A low level static 50mm camera at 70cm holds the SAME scuffed ivory vending machine from the run, full height, with its muted red side strip, cold drinks display, payment panel on the right, green shutter and shallow gutter. The machine is lit, rain falls through it, and no one passes or appears in reflection.
 SCRIPT: "The vending machine on the empty street, humming, lit, waiting for no one."
 CAST: —
 LIGHT: Practical night
-TIME: 6
+TIME: 8
+ID: neonoire-shot-80
 IMAGE: 80-the-machine-waits.jpg
-NOTE: The film's first image, ninety scenes later, still doing its job for nobody. Keep the machine the same family as s1/01-backstreet.jpg.
+NOTE: REPLACEMENT PENDING — attach NEW s73/70-not-elegantly-badly.jpg and s75/77-the-red-shoe.jpg, not a legacy style key. Match machine proportions, panels, kerb and cold light. No red shoe relocated to a new puddle or inserted unnecessarily; this is the machine, not a repeat of shot 79.
 
-81. INSERT — 85mm, static, eye level — snow in a shop window.
-A small boxy television in a shop window, showing only static — grey snow flickering on glass, the street's own reflection ghosted over it. No programme, no news ticker, nothing readable.
+83. INSERT — 50mm, static, low level — snow in a shop window.
+From a low level locked camera at 70cm, a small old boxy CRT sits inside a dark shop window showing only grey static. Wet glass reflects indistinct empty street architecture, not a person. Enough window frame remains around the television to read as a place, not a floating screen. Restrained muted colour surrounds the grey snow.
 SCRIPT: "A small television in a shop window, showing only static."
 CAST: —
 LIGHT: Practical night
-TIME: 5
+TIME: 7
+ID: neonoire-shot-81
 IMAGE: 81-static-in-a-window.jpg
-NOTE: The last frame before black. It rhymes with the bar's CRT in scene 2 — a laughing television then, nothing now. Then CUT TO BLACK, which the draft owns; no card, no title.
+NOTE: REPLACEMENT PENDING — ignore the old study. Same practical-light colour grammar, no programme, face, news ticker or readable overlay. Then CUT TO BLACK as the screenplay specifies; do not generate a title card or a sixth montage image.

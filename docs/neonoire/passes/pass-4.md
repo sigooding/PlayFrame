@@ -73,14 +73,14 @@ Scene grammar: Grey rain light through the window and the corner of a CRT; nothi
 - **File**: `public/images/neonoire/s4/35-the-photograph.jpg` — write it exactly here, 35-the-photograph.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
 - **Framing**: Insert, 85mm, Static, Eye level. Lighting: Overcast soft. Working duration 8s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/04-veras-apartment.jpg`
-- Jack Voss, Vera (9), Mara (4) — `public/images/neonoire/s4/35-the-photograph.jpg`; use the childhood photo, not the adult hair/wardrobe sheets.
+- Daniel Voss, Vera (9), Mara (4) — `public/images/neonoire/s4/35-the-photograph.jpg`; use the childhood photo, not the adult hair/wardrobe sheets.
 
 **Prompt**
 
 ```
 cinematic film still, 16:9 full-bleed widescreen, shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, neo-noir Tokyo at night that feels like a memory rather than a specific year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, old CRT televisions beside modern details, cold steady rain, wet black asphalt with long mirror reflections, lit almost entirely by practical sources — cold white vending machine glow, sodium-vapor orange streetlights, sickly fluorescent green from shop windows, no moonlight, wide patient composition with the figure small in the frame and lots of negative space, quiet, melancholic, nostalgic, restrained, lonely, ordinary city life hinted at in the background: one lit apartment window, laundry on a balcony, a distant train
 
-SUBJECT — One framed photograph, its colors gone warm and faded: a Tokyo street twenty years ago. An American man in a rumpled suit, smiling, holding the hands of two small girls — VERA, nine and serious, and MARA, four and mid-laugh. Behind them, the sign of a noodle shop. Three American faces, twenty years ago: Jack Voss in the middle with his daughters. The only warm, saturated colour in the film so far; hold long enough to read the family before the plot takes it away.
+SUBJECT — One framed photograph, its colors gone warm and faded: a Tokyo street twenty years ago. An American man in a rumpled suit, smiling, holding the hands of two small girls — VERA, nine and serious, and MARA, four and mid-laugh. Behind them, the sign of a noodle shop. Three American faces, twenty years ago: Daniel Voss in the middle with his daughters. The only warm, saturated colour in the film so far; hold long enough to read the family before the plot takes it away.
 FRAMING — Insert, 85mm, Static, Eye level, lit by overcast soft.
 DRAFT — the draft's own words for this shot: "On a shelf, one framed photograph, its colors gone warm and faded."
 
