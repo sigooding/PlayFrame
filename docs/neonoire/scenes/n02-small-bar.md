@@ -9,7 +9,7 @@ Grammar: the room is lit by its own shelves — amber bottles, the blue flicker 
 
 ## Cold-open revision pending
 
-Shots 19–28 still use their previous 2.39:1 images and are marked **Needs review**. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). Only cold-open shots 1–13 have been revised so far.
+Shots 19–21 were rebuilt 16:9 on 26 September 2026; shots 22–28 still use their previous 2.39:1 images and are marked **Needs review**. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). Only cold-open shots 1–21 have been revised so far.
 
 ---
 
