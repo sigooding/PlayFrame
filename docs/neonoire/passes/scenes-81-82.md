@@ -12,7 +12,7 @@ Boards: [n81-small-bar-day.md](../scenes/n81-small-bar-day.md) and [n82-newsroom
 | 105 TWO-SHOT 50mm — without a toast | neonoire-shot-105 | `s81/103-without-a-toast.jpg` | Draft |
 | 106 WIDE 24mm — the newsroom (master) | neonoire-shot-106 | `s82/104-the-newsroom.jpg` | Draft |
 | 107 MEDIUM 50mm — the tape between them | neonoire-shot-107 | `s82/105-the-tape-between-them.jpg` | Draft |
-| 108 INSERT 85mm — PLAY | neonoire-shot-108 | `s82/106-play.jpg` | **Needs review** |
+| 108 INSERT 85mm — PLAY | neonoire-shot-108 | `s82/106-play.jpg` | Draft (original kept) |
 | 109 CLOSE-UP 85mm — her dead reporter | neonoire-shot-109 | `s82/107-her-dead-reporter.jpg` | Draft |
 | 110 WIDE 24mm — not silent (master camera) | neonoire-shot-110 | `s82/108-not-silent.jpg` | Draft |
 
@@ -27,7 +27,7 @@ Boards: [n81-small-bar-day.md](../scenes/n81-small-bar-day.md) and [n82-newsroom
 
 ## Honest caveats
 
-- **Shot 108 (Needs review):** the first generation printed "INTERVIEW '93" on the tape. The edit that restored the SHIOHAMA label enlarged it to fill the cassette window, so the reels no longer show. Regenerate it with the tape visibly turning behind the label.
+- **Shot 108, reverted at the director's request (26 September 2026):** the SHIOHAMA label edit was rejected. The original generation is restored: the reels show, and the label reads "INTERVIEW '93". That label differs from the scene 81 insert's SHIOHAMA; the difference is accepted and recorded on the frame.
 - **Shot 107:** Harada's bob reads longer and silverer than in the master.
 - **Shots 107 and 109:** the glass office's layout differs slightly from the master's rear office.
 - **Shot 102:** Okada stands in the aisle by the shelves, which reads as behind the counter only loosely. Shots 103 and 105 put him clearly behind it.

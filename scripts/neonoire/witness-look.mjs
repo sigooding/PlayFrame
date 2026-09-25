@@ -1,5 +1,5 @@
 // Scenes 81–82: the cassette and the witness. First boarding, nine shots, generated in one turn
-// with ten calls (the SHIOHAMA label fix on shot 108 counts as one). Okada and Harada have no
+// with ten calls (a SHIOHAMA label edit of shot 108 was made and then rejected in favour of the original). Okada and Harada have no
 // identity sheets yet; each is established in their scene's master frame.
 export const witnessScenes = new Set(["s81", "s82"]);
 export const witnessImages = [
@@ -13,8 +13,9 @@ export const witnessImages = [
   "/images/neonoire/s82/107-her-dead-reporter.jpg",
   "/images/neonoire/s82/108-not-silent.jpg",
 ];
-// Shot 108: the label edit covered the cassette window, so the reels no longer show. Regenerate it.
-export const witnessNeedsReview = new Set(["neonoire-shot-108"]);
+// Shot 108: the SHIOHAMA label edit was rejected by the director; the original generation (label
+// "INTERVIEW '93", reels visible) is the chosen frame. Nothing in 81–82 is awaiting review.
+export const witnessNeedsReview = new Set();
 
 export const barDayLook = "16:9 full-bleed (1920×1080), no letterbox. Scene 2's bar (s2/19-the-bar.jpg) by flat grey DAYLIGHT: counter and amber bottle shelves at left, handwritten menu strips, red-topped stools, the street window at right, the CRT at the back switched OFF, chairs upside down on the table, a new black rubber mat on the floor. Master s81/100-the-bar-in-daylight.jpg. OKADA (no sheet yet; held to the master): Japanese, sixties, gaunt, close-cropped white hair, lined tired face, white shirt with sleeves rolled, dark navy apron. JACK follows the recast sheets/jack.jpg (white American, 48), as in scene 80: unshaven, creased off-white shirt, dry charcoal overcoat, dried blood in his knuckle creases (non-graphic). The cassette: cracked clear case, a yellowed label handwritten SHIOHAMA in a shaking hand. No score. Japanese dialogue is subtitled in the edit, never burned into frames. AI-generated draft studies, not approved coverage.";
 

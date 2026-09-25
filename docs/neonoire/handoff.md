@@ -2,9 +2,11 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **18 scenes, 110 shots**: scenes 1–7 and 72–82. **All 110 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **20 scenes, 120 shots**: scenes 1–7 and 72–84. **All 120 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
 
-**Latest session — [scenes 81–82 boarded](passes/scenes-81-82.md).** Nine shots (102–110), using ten generation calls: the bar by day with Okada, and the newsroom with Harada. The two new cast cards have no identity sheets yet and are held to their scene masters. **Shot 108 is Needs review**: regenerate it so the SHIOHAMA tape is visible turning. The next unboarded scene is **83**.
+**Latest session — [scenes 83–84 boarded](passes/scenes-83-84.md).** Ten shots (111–120), using ten generation calls: Kurose's office by day, and the Hive storeroom by night. Kurose is a new card without a sheet. The storeroom master `s84/115-the-storeroom.jpg` is now the reference for scenes 13, 20 and 25. The next unboarded scene is **85** (the Hive passages, continuous).
+
+**Previous session — [scenes 81–82 boarded](passes/scenes-81-82.md).** Nine shots (102–110), using ten generation calls: the bar by day with Okada, and the newsroom with Harada. The two new cast cards have no identity sheets yet and are held to their scene masters. Shot 108 was reverted to its original tape image at the director's request.
 
 **Previous session — [scenes 77–79 boarded](passes/scenes-77-79.md), and Jack recast as a white American.** Nine new shots (87–95) plus a regenerated `sheets/jack.jpg`/`jack-face.jpg`. **Follow-up turn:** scene 74's three Jack frames have been regenerated with the recast, and **scene 80** (the detectives' room by day, Jack and Ishida) is boarded as shots 96–101 — see the same ledger. Scene 81 followed in the next session.
 

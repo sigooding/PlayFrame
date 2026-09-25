@@ -41,7 +41,7 @@ LIGHT: Overcast soft
 TIME: 30
 ID: neonoire-shot-108
 IMAGE: 106-play.jpg
-NOTE: Holds the hiss and the whole recorded exchange between Sakai and Kurose (Japanese, subtitled) and Harada stopping the tape. NEEDS REVIEW: the first generation printed the wrong label ("INTERVIEW '93"). The edit that restored the handwritten SHIOHAMA label also covered the cassette window, so the reels no longer show. Regenerate, with the tape visibly turning behind the SHIOHAMA label.
+NOTE: Holds the hiss and the whole recorded exchange between Sakai and Kurose (Japanese, subtitled) and Harada stopping the tape. LABEL, BY DIRECTOR'S CHOICE: the tape reads "INTERVIEW '93" rather than SHIOHAMA, and the reels show turning through the window. A SHIOHAMA-label edit was tried and rejected (26 September 2026) in favour of this original.
 
 109. CLOSE-UP — 85mm, static, eye level — her dead reporter.
 Harada behind her desk with her reading glasses pushed up, looking down at the framed photograph of the laughing journalist in the soft foreground. The newsroom and a wall TV are blurred through the glass behind her.

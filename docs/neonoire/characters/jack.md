@@ -42,4 +42,8 @@ Next day, the detectives' room: unshaven, yesterday's creased off-white shirt, t
 
 The same day, the same look as scene 80: unshaven, creased off-white shirt, dry charcoal coat, dried blood in his knuckles. In the bar he stands on the window side, facing Okada across the counter. In the newsroom he sits across Harada's desk and, at the end, talks, seen through the glass. Masters `s81/100-the-bar-in-daylight.jpg` and `s82/104-the-newsroom.jpg`.
 
+## Scene 84 state
+
+That night, in hiding in the Hive storeroom: grey with exhaustion, in the same charcoal coat and creased off-white shirt. He stays by the flour sacks at screen right and never crosses to Vera. Master `s84/115-the-storeroom.jpg`.
+
 These are AI-generated design studies, not approved casting or production coverage.

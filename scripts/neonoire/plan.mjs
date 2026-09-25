@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–82 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–84 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -38,6 +38,7 @@ const cast = [
   ["ishida", "Detective Ishida", "Police", "50s", "Gentle, unhurried, tired in a way that looks like decency, with excellent English he offers as a courtesy. He asks about Kanda, gives Vera his card and tells her to call at any hour — then opens a drawer with her sister's purse in it and closes it again.", ["Kind", "Unhurried", "Deciding"], "sage", "ishida"],
   ["okada", "Okada", "Bar owner", "60s", "Japanese. Sixties, the owner of the small Kanda bar where the journalist died. Gaunt, close-cropped white hair, a lined tired face, a white shirt with the sleeves rolled and a dark navy apron. He kept Sakai's cassette in the tray of his cash drawer. When he sees Jack's face and hands he doesn't ask; he pours two glasses instead. No identity sheet yet: held to the scene 81 master.", ["Discreet", "Loyal", "Weary"], "sand", undefined],
   ["harada", "Harada", "Editor, Toto Shimbun", "50s", "Japanese. Fifties, the editor of the Toto Shimbun; the dead journalist was her reporter. Grey hair in a short bob, reading glasses, a white blouse with the sleeves rolled. She presses PLAY, names Kurose, warns Jack he will be named, and opens a notebook to a clean page. No identity sheet yet: held to the scene 82 master.", ["Exacting", "Grieving", "Resolute"], "sage", undefined],
+  ["kurose", "Kurose", "Chairman, Kurose Development", "70s", "Japanese. Seventies, the chairman of Kurose Development, whose redevelopment model puts a fountain where the Hive stands. Silver hair combed back, a beautiful dark navy suit, the stillness of a man who has never had to hurry. His English is perfect and old-fashioned. Courteous and curious, he pours the tea himself. Good men are very expensive. No identity sheet yet: held to the scene 83 master.", ["Courteous", "Patient", "Ruthless"], "rose", undefined],
 ];
 
 export const characters = cast.map(([key, name, role, age, description, traits, color, sheet]) => ({
@@ -48,6 +49,7 @@ export const characters = cast.map(([key, name, role, age, description, traits, 
 characters.find(c => c.id === characterId("daniel")).image = "/images/neonoire/s4/35-the-photograph.jpg";
 characters.find(c => c.id === characterId("okada")).image = "/images/neonoire/s81/100-the-bar-in-daylight.jpg";
 characters.find(c => c.id === characterId("harada")).image = "/images/neonoire/s82/104-the-newsroom.jpg";
+characters.find(c => c.id === characterId("kurose")).image = "/images/neonoire/s83/110-very-expensive.jpg";
 
 const link = (a, b, kind, note) => {
   characters.find(c => c.id === characterId(a)).relations.push({ id: `neonoire-link-${a}-${b}`, targetId: characterId(b), kind, note });
@@ -62,6 +64,7 @@ link("mara", "jack", "Ally", "He hides her in the Hive and carries a promise he 
 link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and the case divide them.");
 link("jack", "okada", "Ally", "He kept Sakai's cassette in his cash drawer, and hands it over without asking what happened.");
 link("harada", "journalist", "Colleague", "Her reporter, killed in Okada's bar; his photograph stays on her desk.");
+link("vera", "kurose", "Enemy", "Her father wrote his name on every page; she goes to his office to see his face.");
 link("jack", "harada", "Ally", "He brings her the tape and offers himself as the witness: start with my part.");
 
 // ---------------------------------------------------------------------------------------------
@@ -252,6 +255,26 @@ export const SCENES = [
     description: "Day. The Toto Shimbun newsroom; in the glass office, Harada, the dead journalist's photograph on her desk. She plays the tape: Sakai, and Kurose, twenty years younger — then it will be empty in a different way. Jack offers himself as the witness: start with my part. She opens a notebook. Through the glass, a man for the first time in twenty years not silent. BOARDED — 5 shots (106–110).",
     lightingNotes: "Green-white fluorescent tubes and grey window light, rain on the glass; three TVs flicker on the walls.",
   },
+  {
+    key: "s83", id: "neonoire-s83", n: 83, partId: "neonoire-part-feature",
+    title: "It's just a face", location: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY #83#",
+    page: "n83-chairman-s-office-kurose-development-day.md", board: "n83-kurose-office-day.md",
+    cast: ["Vera Voss", "Kurose"],
+    grammar: "The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. She never touches the tea.",
+    description: "Day. The fortieth floor, rain on the glass. Vera, in a plain dark coat with her father's notebook on her lap, sits across from Kurose, who pours her tea himself. Good men are very expensive. What is it you want? I wanted to see your face. It's just a face. She shows him the notebook, looks down at the model of the redevelopment, the fountain where the Hive is — it's very clean — and goes. Kurose presses a button: follow her. BOARDED — 6 shots (111–116).",
+    lightingNotes: "Flat grey rain light through glass on three sides; no practicals. The white model is the brightest thing in the room.",
+  },
+  {
+    key: "s84", id: "neonoire-s84", n: 84, partId: "neonoire-part-feature",
+    title: "Three feet away", location: "INT. THE HIVE, NOODLE SHOP STOREROOM", time: "NIGHT",
+    kind: "Standard", lighting: "Low key", slugline: "INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #84#",
+    page: "n84-the-hive-noodle-shop-storeroom-night.md", board: "n84-hive-storeroom-night.md",
+    cast: ["Jack", "Vera Voss"],
+    grammar: "One bare bulb. 24mm room, 50mm at the drawing, 35mm for the two of them, 85mm when the voice comes. Neither crosses the floor.",
+    description: "Night. Jack, grey with exhaustion, hiding in the storeroom since the newspaper. Kaneko brings Vera. On the wall, Mara's sketches: the counter from behind the curtain, the back of a head on the third stool. That's me. Three feet away. We were both wrong. He didn't blame you. A train passes; the bulb swings; in the passage outside a man murmurs into his sleeve: position. BOARDED — 4 shots (117–120).",
+    lightingNotes: "A single bare tungsten bulb, swinging when the train passes; everything else falls to black.",
+  },
 ];
 
 /**
@@ -329,12 +352,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 110 numbered shots cover scenes 1–7 and 72–82; the other 82 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 120 numbered shots cover scenes 1–7 and 72–84; the other 80 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–82 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–84 are boarded; the rest are written, not yet boarded." },
   ],
 };
 

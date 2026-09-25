@@ -25,6 +25,7 @@ import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
 import { aftermathLook, streetsLook, streetsPassTwoImages, streetsScenes } from "./streets-look.mjs";
 import { dawnLook, dawnScenes, jackRecastDone, jackRecastDoneNote, jackRecastNote, jackRecastPending, policeDayLook, policeDayScenes } from "./dawn-look.mjs";
+import { confrontationScenes, kuroseOfficeLook, storeroomLook } from "./confrontation-look.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -62,6 +63,8 @@ const MOODS = {
   s80: "A full room by daylight holding its breath: a blow that never comes, and the first fear on a kind man's face.",
   s81: "Grey daylight in a bar where someone died: a tape out of a cash drawer, a question with no answer, two glasses and no toast.",
   s82: "Fluorescent hum, three channels at once, a voice twenty years old, and a silent man finally talking behind glass.",
+  s83: "Forty floors of rain-grey glass, a courteous old man, untouched tea, and a daughter who only came to look at him.",
+  s84: "One bare bulb, a drawing of the back of her head, three feet that neither of them crosses, and a voice under the train.",
 };
 
 // ---------------------------------------------------------------- the screenplay pages
@@ -84,8 +87,8 @@ assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUN
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-const totalShots = 110;
-assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68, scenes 72–76's 18, scenes 77–79's 9, scene 80's 6 and scenes 81–82's 9 — but carry ${shots.length}`);
+const totalShots = 120;
+assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68, scenes 72–76's 18, scenes 77–79's 9, scene 80's 6, scenes 81–82's 9 and scenes 83–84's 10 — but carry ${shots.length}`);
 shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..${totalShots} across the boarded scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
 assert.equal(shots.length, new Set(shots.map(shot => shot.id)).size, "Stable frame IDs must be unique when the board is reordered or expanded");
@@ -123,6 +126,8 @@ const frames = shots.map(shot => {
           ? (streetsPassTwoImages.includes(path)
               ? "Image: AI-generated Tokyo Story colour revision, session two (25 September 2026). The six pending replacements plus the lost-heel and twenty-metre continuity replacements used eight image-generation calls; two slots were held back. Replaces the earlier image, never uses it as a reference. Production approval pending."
               : "Image: AI-generated Tokyo Story colour revision, session one (25 September 2026). Nine new shot studies plus Jack's identity sheet used ten image-generation calls. Replaces the earlier image, never uses it as a reference. Production approval pending.")
+          : confrontationScenes.has(shot.scene.key)
+            ? "Image: AI-generated first boarding of scenes 83–84 (26 September 2026), generated from each scene's master with the Vera and recast Jack sheets attached. Kurose has no sheet yet and is held to the scene 83 master; the storeroom master is new. Production approval pending."
           : witnessScenes.has(shot.scene.key)
             ? "Image: AI-generated first boarding of scenes 81–82 (25 September 2026), generated from each scene's master with the recast Jack sheet attached, scene 2's bar and journalist frames as references. Okada and Harada have no sheets yet and are held to their masters. Production approval pending."
           : policeDayScenes.has(shot.scene.key)
@@ -143,6 +148,8 @@ const frames = shots.map(shot => {
       ...(streetsScenes.has(shot.scene.key) ? [`Scenes 72–75 — Tokyo Story in colour (25 September 2026): ${streetsLook}`] : []),
       ...(shot.scene.key === "s76" ? [aftermathLook] : []),
       ...(policeDayScenes.has(shot.scene.key) ? [`Scene 80 — the detectives' room by day (25 September 2026): ${policeDayLook}`] : []),
+      ...(shot.scene.key === "s83" ? [`Scene 83 — Kurose's office by day (26 September 2026): ${kuroseOfficeLook}`] : []),
+      ...(shot.scene.key === "s84" ? [`Scene 84 — the Hive storeroom (26 September 2026): ${storeroomLook}`] : []),
       ...(shot.scene.key === "s81" ? [`Scene 81 — the bar by day (25 September 2026): ${barDayLook}`] : []),
       ...(shot.scene.key === "s82" ? [`Scene 82 — the newsroom (25 September 2026): ${newsroomLook}`] : []),
       ...(dawnScenes.has(shot.scene.key) ? [`Scenes 77–79 — the envelope and the notebook (25 September 2026): ${dawnLook}`] : []),
@@ -171,7 +178,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; eighteen of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86), and the envelope and the notebook, scenes 77–79 (shots 87–95), Jack and Ishida, scene 80 (shots 96–101), and the cassette and the witness, scenes 81–82 (shots 102–110) — 11 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
+    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; twenty of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86), and the envelope and the notebook, scenes 77–79 (shots 87–95), Jack and Ishida, scene 80 (shots 96–101), the cassette and the witness, scenes 81–82 (shots 102–110), and Kurose and the storeroom, scenes 83–84 (shots 111–120) — 12 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -278,7 +285,7 @@ const scenes = feature.map(scene => {
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in eighteen of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386), the envelope and the notebook, scenes 77\u201379 (shots 87\u201395), Jack and Ishida, scene 80 (shots 96\u2013101), the cassette and the witness, scenes 81\u201382 (shots 102\u2013110) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in twenty of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386), the envelope and the notebook, scenes 77\u201379 (shots 87\u201395), Jack and Ishida, scene 80 (shots 96\u2013101), the cassette and the witness, scenes 81\u201382 (shots 102\u2013110), Kurose and the storeroom, scenes 83\u201384 (shots 111\u2013120) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
@@ -295,7 +302,7 @@ for (const c of characters) assert(c.description.length <= 700, `Shorten charact
 for (const board of moodboards) assert(board.items.length <= 40, `Mood board over 40 items: ${board.title}`);
 assert.equal(scenes.length, feature.length, `Every numbered scene of the final screenplay belongs to the workspace`);
 assert.equal(frames.length, totalShots);
-assert.equal(characters.length, 11);
+assert.equal(characters.length, 12);
 
 const output = resolve(root, "public", "projects", "neonoire-opening.json");
 const encoded = JSON.stringify(project, null, 2) + "\n";
