@@ -1,6 +1,6 @@
 # NEONOIRE — keyframe pass 7
 
-5 shots still to generate: shots 61–65, from scene 7 (INT. POLICE STATION, DETECTIVES' ROOM).
+5 shots still to generate: shots 64–68, from scene 7 (INT. POLICE STATION, DETECTIVES' ROOM).
 
 **Before you start**
 
@@ -14,11 +14,11 @@
 - British/American spelling is irrelevant here; **no text at all** unless the board quotes a super.
 - When the frame is on disk, run `npm run build:neonoire` and `npm run verify:neonoire` from the repository root. The builder will tell you if a file is missing or misnamed.
 
-### Shot 61 — The bottom drawer
+### Shot 64 — The bottom drawer
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/61-the-bottom-drawer.jpg` — write it exactly here, 61-the-bottom-drawer.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/64-the-bottom-drawer.jpg` — write it exactly here, 64-the-bottom-drawer.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
@@ -39,11 +39,11 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 ---
 
-### Shot 62 — The evidence bag
+### Shot 65 — The evidence bag
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/62-the-evidence-bag.jpg` — write it exactly here, 62-the-evidence-bag.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/65-the-evidence-bag.jpg` — write it exactly here, 65-the-evidence-bag.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Insert, 85mm, Static, High angle. Lighting: Practical night. Working duration 9s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg` — none, the city carries the shot
 
@@ -63,11 +63,11 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 ---
 
-### Shot 63 — He looks at it
+### Shot 66 — He looks at it
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/63-he-looks-at-it.jpg` — write it exactly here, 63-he-looks-at-it.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/66-he-looks-at-it.jpg` — write it exactly here, 66-he-looks-at-it.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Close-up, 85mm, Static, Eye level. Lighting: Practical night. Working duration 8s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
@@ -88,11 +88,11 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 ---
 
-### Shot 64 — Drawer closed
+### Shot 67 — Drawer closed
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/64-drawer-closed.jpg` — write it exactly here, 64-drawer-closed.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/67-drawer-closed.jpg` — write it exactly here, 67-drawer-closed.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Eye level. Lighting: Practical night. Working duration 5s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg`
 - Detective Ishida — public/images/neonoire/sheets/ishida.jpg  (face crop: ishida-face.jpg)
@@ -113,11 +113,11 @@ Scene grammar: Rows of cluttered desks under humming fluorescent light, most of 
 
 ---
 
-### Shot 65 — The clock
+### Shot 68 — The clock
 
 **Scene 7 · INT. POLICE STATION, DETECTIVES' ROOM — CONTINUOUS**
 
-- **File**: `public/images/neonoire/s7/65-the-clock.jpg` — write it exactly here, 65-the-clock.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
+- **File**: `public/images/neonoire/s7/68-the-clock.jpg` — write it exactly here, 68-the-clock.jpg, JPEG, 2.39:1 anamorphic (anything from 1600×669 up; the repo standard is 1912×800), no embedded text or watermark.
 - **Framing**: Medium, 50mm, Static, Low angle. Lighting: Practical night. Working duration 6s (not a locked time).
 - **Continuity references to attach**: `public/images/neonoire/keys/05-the-police-station.jpg` — none, the city carries the shot
 

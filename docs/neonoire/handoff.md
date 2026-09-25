@@ -20,8 +20,8 @@ turned into:
 | | |
 | --- | --- |
 | **screenplay** | the draft, page by page, in `docs/neonoire/screenplay/` — verbatim; a build step fails if it ever drifts from the fountain |
-| **board** | 65 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
-| **keyframes** | 65 of 65 generated, plus 9 studio keys — in `public/images/neonoire/` |
+| **board** | 68 numbered shots in `docs/neonoire/scenes/` — shot type, lens, angle, movement, cast, lighting, duration, keyframe filename, notes, and the draft's own words for each shot |
+| **keyframes** | 68 of 68 generated, plus 9 studio keys — in `public/images/neonoire/` |
 | **workspace** | `public/projects/neonoire-opening.json`, opened in the app from Templates → NEONOIRE |
 
 Story: Kanda, night. Mara Voss (24, American) declines her sister's call, watches two masked men
@@ -35,7 +35,7 @@ workspace's.
 
 ## 2. What you are being asked to do
 
-**All 65 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
+**All 68 keyframes are now generated.** Use [`passes/README.md`](passes/README.md) as the review index; the
 numbered boards, continuity sheets and the app style in [`src/lib/styles.ts`](../../src/lib/styles.ts) remain
 the source of truth for any regeneration.
 
@@ -102,7 +102,7 @@ Do not rename, move or delete anything the board names. The filename *is* the sh
   police uniform, ordinary polite face; keep him fixed across shots 45–50.
 - **Detective Ishida (50s)** — the recurring detective now has a canonical sheet and face crop:
   `sheets/ishida.jpg` and `sheets/ishida-face.jpg`. Short salt-and-pepper hair, lean build,
-  charcoal suit, tired kindness; keep him fixed across shots 52–65.
+  charcoal suit, tired kindness; keep him fixed across shots 52–68.
 - **Jack Voss** — their American father, present only inside one framed photograph in scene 4
   (rumpled suit, both small daughters' hands in his, a Tokyo noodle-shop sign behind them, twenty
   years ago). He is the only saturated warm colour in the film so far and is never spoken about.

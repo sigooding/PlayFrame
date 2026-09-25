@@ -59,8 +59,8 @@ assert.equal(rebuilt, fountain, `The seven pages must rebuild ${FOUNTAIN} exactl
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-assert.equal(shots.length, 65, `The opening is 65 numbered shots; the boards carry ${shots.length}`);
-shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..65 across the seven scenes; found ${shot.n} at ${i + 1}`));
+assert.equal(shots.length, 68, `The opening is 68 numbered shots; the boards carry ${shots.length}`);
+shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..68 across the seven scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
 const missing = shots.filter(shot => !existsSync(resolve(root, `public${imagePath(shot.scene, shot)}`)));
 // A frame whose study has not been generated yet is an honest placeholder, exactly as the series
@@ -88,14 +88,14 @@ const frames = shots.map(shot => {
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
       absent
-        ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of 65 until pass ${passOf(shot.n)} is generated.`
+        ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of 68 until pass ${passOf(shot.n)} is generated.`
         : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       shot.note,
       shot.script ? `SCRIPT — the draft's own words for this shot:\n"${shot.script}"` : "SCRIPT — no dialogue; the shot is carried by the frame and the sound.",
       shot.scene.grammar,
       grammar,
       `Timing: ${shot.duration}s is a working estimate for animatic playback. The draft locks no durations.`,
-      `Pass ${passOf(shot.n)} of 7 — ten keyframes at a time, in screenplay order. Shot ${shot.n} of 65.`,
+      `Pass ${passOf(shot.n)} of 7 — ten keyframes at a time, in screenplay order. Shot ${shot.n} of 68.`,
     ].join("\n\n"),
   };
 });
@@ -115,7 +115,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the opening scenes, first draft (September 2026). 7 scenes, 65 numbered shots, 8 cast cards, and keyframes generated ten at a time in screenplay order.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth. The Screenplay tab carries it page by page — one page per scene, the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuous and wardrobe continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet.`,
+    content: `NEONOIRE — the opening scenes, first draft (September 2026). 7 scenes, 68 numbered shots, 8 cast cards, and keyframes generated ten at a time in screenplay order.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth. The Screenplay tab carries it page by page — one page per scene, the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuous and wardrobe continuity is carried by two identity sheets (Mara, Vera) used as the reference for every frame they appear in; the notes on each frame name the sheet.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -204,7 +204,7 @@ const scenes = SCENES.map(scene => {
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The opening scenes, first draft (September 2026): 7 scenes and 65 numbered shots from a Kanda backstreet to a detectives' room three days later. The screenplay tab carries the draft page by page; the storyboard is generated in passes of ten keyframes, with Mara and Vera held to their continuity sheets. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained.`,
+  description: `The opening scenes, first draft (September 2026): 7 scenes and 68 numbered shots from a Kanda backstreet to a detectives' room three days later. The screenplay tab carries the draft page by page; the storyboard is generated in passes of ten keyframes, with Mara and Vera held to their continuity sheets. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained.`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
@@ -220,7 +220,7 @@ for (const image of imagePaths) assert(existsSync(resolve(root, `public${image}`
 for (const c of characters) assert(c.description.length <= 700, `Shorten character description: ${c.name}`);
 for (const board of moodboards) assert(board.items.length <= 40, `Mood board over 40 items: ${board.title}`);
 assert.equal(scenes.length, 7);
-assert.equal(frames.length, 65);
+assert.equal(frames.length, 68);
 assert.equal(characters.length, 8);
 
 const output = resolve(root, "public", "projects", "neonoire-opening.json");
