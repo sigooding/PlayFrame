@@ -31,6 +31,7 @@ import { escapeLook, escapeScenes } from "./escape-look.mjs";
 import { ishidaEndLook, ishidaEndScenes } from "./ishida-end-look.mjs";
 import { hiveMorningLook, hiveMorningScenes, veraLookDSheet } from "./hive-morning-look.mjs";
 import { kandaReturnLook, kandaReturnScenes } from "./kanda-return-look.mjs";
+import { hiveFirstLook, hiveFirstScenes } from "./hive-first-look.mjs";
 import { innColdLook, innScenes, innWarmLook, innWarmScenes } from "./inn-look.mjs";
 import { demolitionLook, endingScenes, newCounterLook, rooftopLook, veraLookESheet } from "./ending-look.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
@@ -92,6 +93,11 @@ const MOODS = {
   s10: "A green lamp, a silent sword on a small TV, and a photograph held by its edges.",
   s11: "Past midnight, a dusty box, and two men laughing under a noodle-shop sign twenty years ago.",
   s12: "The cold open's street four days on, a clear umbrella, and a twist of torn strap at knee height.",
+  s13: "One bulb, flour dust like slow snow, and a phone glowing under a blanket.",
+  s14: "Clothes on every surface, walls of sketches, and a suitcase packed for a flight.",
+  s15: "A gap between glass towers, and a rusted stair climbing into the past.",
+  s16: "Doors open on other lives, radios murmuring, dust sifting through bulb light.",
+  s17: "One fluorescent tube, steam, and money left far beyond the price of a bowl.",
   s31: "A tin roof, one car in a gravel lot, and warm amber windows in the rain.",
   s32: "A pink payphone, night baseball, a heavy key, and steep wooden stairs up to safety.",
   s34: "Tatami, one lamp, rain on tin, and twenty years of receipts.",
@@ -123,8 +129,8 @@ assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUN
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 const shots = boards.flat();
-const totalShots = 180;
-assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68, scenes 72–76's 18, scenes 77–79's 9, scene 80's 6, scenes 81–82's 9, scenes 83–84's 10, scenes 85–88's 9, scenes 89–92's 9, scenes 93–96's 9, scene 97's 7, scenes 98–100's 7, scenes 8–12's 9 and the roadside inn's 10 — but carry ${shots.length}`);
+const totalShots = 190;
+assert.equal(shots.length, totalShots, `The boards are ${totalShots} numbered shots — the opening's 68, scenes 72–76's 18, scenes 77–79's 9, scene 80's 6, scenes 81–82's 9, scenes 83–84's 10, scenes 85–88's 9, scenes 89–92's 9, scenes 93–96's 9, scene 97's 7, scenes 98–100's 7, scenes 8–12's 9, the roadside inn's 10 and scenes 13–17's 10 — but carry ${shots.length}`);
 shots.forEach((shot, i) => assert.equal(shot.n, i + 1, `Shot numbering must run 1..${totalShots} across the boarded scenes; found ${shot.n} at ${i + 1}`));
 assert.equal(shots.length, new Set(shots.map(shot => shot.image)).size, "Two shots claim the same keyframe filename");
 assert.equal(shots.length, new Set(shots.map(shot => shot.id)).size, "Stable frame IDs must be unique when the board is reordered or expanded");
@@ -162,6 +168,8 @@ const frames = shots.map(shot => {
           ? (streetsPassTwoImages.includes(path)
               ? "Image: AI-generated Tokyo Story colour revision, session two (25 September 2026). The six pending replacements plus the lost-heel and twenty-metre continuity replacements used eight image-generation calls; two slots were held back. Replaces the earlier image, never uses it as a reference. Production approval pending."
               : "Image: AI-generated Tokyo Story colour revision, session one (25 September 2026). Nine new shot studies plus Jack's identity sheet used ten image-generation calls. Replaces the earlier image, never uses it as a reference. Production approval pending.")
+          : hiveFirstScenes.has(shot.scene.key)
+            ? "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending."
           : innScenes.has(shot.scene.key)
             ? "Image: AI-generated first boarding of the roadside inn (26 September 2026), scenes 31, 32, 34, 38–41 and 45, boarded out of order for the stairway motif and the colour change; each cold frame was generated from its warm counterpart, with the recast Jack sheet, the inn key and the cold-open masked men as references. Production approval pending."
           : kandaReturnScenes.has(shot.scene.key)
@@ -198,6 +206,7 @@ const frames = shots.map(shot => {
       ...(streetsScenes.has(shot.scene.key) ? [`Scenes 72–75 — Tokyo Story in colour (25 September 2026): ${streetsLook}`] : []),
       ...(shot.scene.key === "s76" ? [aftermathLook] : []),
       ...(policeDayScenes.has(shot.scene.key) ? [`Scene 80 — the detectives' room by day (25 September 2026): ${policeDayLook}`] : []),
+      ...(hiveFirstScenes.has(shot.scene.key) ? [`Scenes 13–17 — the Hive, first seen (26 September 2026): ${hiveFirstLook}`] : []),
       ...(innScenes.has(shot.scene.key) ? [`The roadside inn (26 September 2026): ${innWarmScenes.has(shot.scene.key) ? innWarmLook : innColdLook}`] : []),
       ...(kandaReturnScenes.has(shot.scene.key) ? [`Scenes 8–12 — Kanda revisited (26 September 2026): ${kandaReturnLook}`] : []),
       ...(shot.scene.key === "s98" ? [`Scene 98 — the rooftop by day (26 September 2026): ${rooftopLook}`] : []),
@@ -237,7 +246,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; forty-nine of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86), and the envelope and the notebook, scenes 77–79 (shots 87–95), Jack and Ishida, scene 80 (shots 96–101), the cassette and the witness, scenes 81–82 (shots 102–110), Kurose and the storeroom, scenes 83–84 (shots 111–120), the raid on the Hive, scenes 85–88 (shots 121–129), the escape, scenes 89–92 (shots 130–138), Ishida's last night, scenes 93–96 (shots 139–147), the ground-breaking at the Hive, scene 97 (shots 148–154), the ending, scenes 98–100 (shots 155–161), Kanda revisited, scenes 8–12 (shots 162–170, numbered in boarding order), and the roadside inn, scenes 31–45 (shots 171–180) — 15 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
+    content: `NEONOIRE — the final feature screenplay (September 2026). 100 numbered scenes in the Screenplay tab, carried page by page straight from the draft; fifty-four of them are boarded — the opening seven (shots 1–68), the hotel call and Tokyo streets, scenes 72–76 (shots 69–86), and the envelope and the notebook, scenes 77–79 (shots 87–95), Jack and Ishida, scene 80 (shots 96–101), the cassette and the witness, scenes 81–82 (shots 102–110), Kurose and the storeroom, scenes 83–84 (shots 111–120), the raid on the Hive, scenes 85–88 (shots 121–129), the escape, scenes 89–92 (shots 130–138), Ishida's last night, scenes 93–96 (shots 139–147), the ground-breaking at the Hive, scene 97 (shots 148–154), the ending, scenes 98–100 (shots 155–161), Kanda revisited, scenes 8–12 (shots 162–170, numbered in boarding order), the roadside inn, scenes 31–45 (shots 171–180), and the Hive first seen, scenes 13–17 (shots 181–190) — 15 cast cards, keyframes generated ten at a time in screenplay order. Every other scene is **written, not boarded**: the screenplay carries them in full and the board has simply not reached them.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage. Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida and the young officer, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -347,7 +356,7 @@ const scenes = feature.map(scene => {
 const project = {
   id: projectId,
   title: "NEONOIRE",
-  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in forty-nine of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386), the envelope and the notebook, scenes 77\u201379 (shots 87\u201395), Jack and Ishida, scene 80 (shots 96\u2013101), the cassette and the witness, scenes 81\u201382 (shots 102\u2013110), Kurose and the storeroom, scenes 83\u201384 (shots 111\u2013120), the raid on the Hive, scenes 85\u201388 (shots 121\u2013129), the escape, scenes 89\u201392 (shots 130\u2013138), Ishida's last night, scenes 93\u201396 (shots 139\u2013147), the ground-breaking at the Hive, scene 97 (shots 148\u2013154), the ending, scenes 98\u2013100 (shots 155\u2013161), Kanda revisited, scenes 8\u201312 (shots 162\u2013170), the roadside inn (shots 171\u2013180) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 100 numbered scenes, boarded so far in fifty-four of them \u2014 the opening seven (68 shots), the hotel and Tokyo streets, scenes 72\u201376 (shots 69\u201386), the envelope and the notebook, scenes 77\u201379 (shots 87\u201395), Jack and Ishida, scene 80 (shots 96\u2013101), the cassette and the witness, scenes 81\u201382 (shots 102\u2013110), Kurose and the storeroom, scenes 83\u201384 (shots 111\u2013120), the raid on the Hive, scenes 85\u201388 (shots 121\u2013129), the escape, scenes 89\u201392 (shots 130\u2013138), Ishida's last night, scenes 93\u201396 (shots 139\u2013147), the ground-breaking at the Hive, scene 97 (shots 148\u2013154), the ending, scenes 98\u2013100 (shots 155\u2013161), Kanda revisited, scenes 8\u201312 (shots 162\u2013170), the roadside inn (shots 171\u2013180), the Hive first seen, scenes 13\u201317 (shots 181\u2013190) \u2014 every keyframe 16:9 (1920\u00d71080). The Screenplay tab carries the whole draft page by page; every other scene is written, not boarded. Tokyo as a memory that is still happening \u2014 sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",

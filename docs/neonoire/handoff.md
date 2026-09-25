@@ -2,7 +2,34 @@
 
 ## Current state — 25 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **49 scenes, 180 shots**: scenes 1–12, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 180 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **54 scenes, 190 shots**: scenes 1–17, the roadside inn (31, 32, 34, 38–41, 45) and 72–100. **All 190 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG.
+
+## Note to the next agent — how consistency is kept here
+
+The director's first and lasting request is **scene and character consistency**. What has worked, and what went wrong, across these sessions:
+
+- **Always attach references; never describe a known person or place from memory.**
+  - Characters: attach their sheet (`sheets/jack.jpg`, `vera.jpg`, the Vera look sheets, `mara.jpg`, `ishida.jpg`, `young-officer.jpg`).
+  - Cast with no sheet: attach their established frame (Kaneko `s86/123`, Okada `s81/100`, Kurose the scene 83 master, the repairman `s87/124`, the masked men `s1/12`, Daniel `s4/35`).
+  - Locations: attach the location master, listed in each pass ledger's *Locks*.
+- **Generate each scene's master first, then derive its other shots from that master** (image-to-image). Every derived shot then shares the room, the light and the wardrobe. For before/after pairs (warm and cold at the inn, the stair frame), generate the second from the first, from the same camera position.
+- **Wardrobe by scene range:**
+  - Vera: the original charcoal coat (`sheets/vera.jpg`) up to 71; the wine-red dress in 72–79; Look C in 83–92; Look D (olive) in 97; Look E (short oatmeal car coat) in 98; Look F (teal peacoat, red clip) in 100.
+  - Jack: always `sheets/jack.jpg`, a **white American**, 48. He is NOT the sisters' father; Daniel Voss is.
+  - Mara: `sheets/mara.jpg` (denim jacket, grey tee). In hiding (13 onward) she wears an old cardigan that isn't hers, and has no bird clip, because Okada has it.
+- **Recurring props:**
+  - The red bird clip: `s1/03`, `s98/154`.
+  - The key with its round 87 tag: `s1/16`.
+  - The hand-painted noodle-shop sign: `s86/121`.
+  - The pale blue umbrella: `s4/34`.
+  - The family photograph: `s4/35`.
+- **Review every image at full size before installing it** (see rule 2 below): identity, wardrobe, prop, count, direction, and left/right against the neighbouring shots. Past failures were:
+  - a car missing its front (shot 140)
+  - sedans facing away from the building they had arrived at (shot 175)
+  - one coat recoloured instead of a new garment (Look E, first attempt)
+  - two men in one photograph who looked alike (shot 169, first attempt)
+  - three prosecutors where the script has four (shot 150)
+- **Stable numbering:** shots are numbered in boarding order. Never renumber, never reuse a frame ID or asset name, never edit the fountain, and keep ten generations per session. Log every flaw you don't fix as an honest caveat.
 
 ## Standing rules for every pass (set by the director)
 
@@ -17,14 +44,16 @@ The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The 
 3. **Vera's costume changes** always bring a genuinely new coat (a different garment, not a recolour) in a colour that fits the scene.
 4. **The stairway motif and the inn colour change** are described in `scripts/neonoire/inn-look.mjs`.
 
-**Latest session — [the roadside inn boarded](passes/roadside-inn.md): the stairs and the colour change.** Ten shots (171–180), ten calls, boarded ahead of order at the director's request. **Two new standing rules, written in `scripts/neonoire/inn-look.mjs`:**
+**Latest session — [scenes 13–17 boarded](passes/scenes-13-17.md), the Hive first seen.** Ten shots (181–190), ten calls, no retries, made following the consistency note above: masters first, then derived shots, and a perspective check on every image. Shot 187 is the stair motif (Jack climbs the Hive's outside stair). **The next shot is 191, with assets from `s18/189`. The next unboarded scene is 18**; carry on through 30, with the office stairwell in 21 and the sea-wall steps in 28.
+
+**Previous session — [the roadside inn boarded](passes/roadside-inn.md): the stairs and the colour change.** Ten shots (171–180), ten calls, boarded ahead of order at the director's request. **Two new standing rules, written in `scripts/neonoire/inn-look.mjs`:**
 
 1. **The stairway motif.** Stage stairs wherever the script allows, from a low, level, static camera square to the flight. Going up means refuge, hope or the past; something coming up, or going down, means danger or loss. The planned uses are scenes 15–16 (the Hive's outside stair), scene 21 plus a scene 10 exit (the office stairwell), scene 28 (stone steps up from the sea wall) and scenes 69 and 71 (matching scene 89).
 2. **The colour change at the inn.** Scenes 31–37 are the warm refuge in amber. From scene 38 everything is cold: steel blue and xenon white, with rain only in the beams. Generate each cold frame from its warm counterpart. Scene 50's dawn is drained blue-grey.
 
-The next shot is **181**, with assets from `s??/179`. The next session should board scenes 13–30 in order (the stair motif comes in 15, 16, 21 and 28), or finish the inn (30, 33, 35–37, 42–49) and the dawn (50).
+(Scenes 13–17 took shots 181–190.) The next session should board scenes 13–30 in order (the stair motif comes in 15, 16, 21 and 28), or finish the inn (30, 33, 35–37, 42–49) and the dawn (50).
 
-**Previous session — [scenes 8–12 boarded](passes/scenes-8-12.md), Kanda revisited.** Nine shots (162–170), plus one discarded attempt at shot 169; ten calls in all. The shots are **numbered in boarding order**: scenes 8–12 are appended after scene 100 in `SCENES`, so no earlier shot number or ID moves. Later passes carry on the same way (the inn took shots 171–180). Vera wears her original look (`sheets/vera.jpg`, with the pale blue umbrella) until the red dress in scene 72; if she changes costume anywhere in scenes 13–71, the coat rule applies there too (a genuinely different coat, coloured for the scene). Okada follows `s81/100`, and the office follows `s77/85`. Caveats: the clip in shot 165 reads as a bow; shot 166's door lettering shows only "JAC". Scene 13 was left for later: the roadside inn was boarded next.
+**Earlier session — [scenes 8–12 boarded](passes/scenes-8-12.md), Kanda revisited.** Nine shots (162–170), plus one discarded attempt at shot 169; ten calls in all. The shots are **numbered in boarding order**: scenes 8–12 are appended after scene 100 in `SCENES`, so no earlier shot number or ID moves. Later passes carry on the same way (the inn took shots 171–180). Vera wears her original look (`sheets/vera.jpg`, with the pale blue umbrella) until the red dress in scene 72; if she changes costume anywhere in scenes 13–71, the coat rule applies there too (a genuinely different coat, coloured for the scene). Okada follows `s81/100`, and the office follows `s77/85`. Caveats: the clip in shot 165 reads as a bow; shot 166's door lettering shows only "JAC". Scene 13 was left for later: the roadside inn was boarded next.
 
 **Earlier session — [scenes 98–100 boarded](passes/scenes-98-100.md), the ending.** Seven shots (155–161), plus the Look E sheet, one discarded sheet and one aborted call; ten calls in all. **Director's standing rule, tightened: every further Vera costume change gets a genuinely NEW coat — a different garment and silhouette, not the same coat recoloured — in a colour that fits the scene.** Look E (scene 98, `sheets/vera-look-e.jpg`) is a short boxy oatmeal car coat. Look F (scene 100, no sheet; shot 160 is its master) is a deep teal peacoat worn with the red bird clip. Caveats: Jack's train-window reflection in scene 98 is unboarded; in shot 160 Vera is not on the third stool; in shot 161 the man is visible in the doorway and the shadow stops short of her stool. **The board has reached the end of the film;** the unboarded scenes are 8–71.
 

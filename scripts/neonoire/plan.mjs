@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–12, the roadside inn and 72–100 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–17, the roadside inn and 72–100 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -574,6 +574,56 @@ export const SCENES = [
     description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 1 shot (180).",
     lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
   },
+  {
+    key: "s13", id: "neonoire-s13", n: 13, partId: "neonoire-part-feature",
+    title: "Nobody comes here who isn't lost", location: "INT. THE HIVE, NOODLE SHOP STOREROOM", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #13#",
+    page: "n13-the-hive-noodle-shop-storeroom-night.md", board: "n13-hive-storeroom-night.md",
+    cast: ["Mara Voss", "Kaneko"],
+    grammar: "35mm for the room, 50mm on the futon, 85mm on the key.",
+    description: "Mara hides in the storeroom behind Kaneko's counter in a cardigan that isn't hers. Your father sat on the third stool. Under the futon cover: 31 missed calls from Vera. A train shakes the bulb; her thumb doesn't move. In her fist, the key. BOARDED — 3 shots (181–183).",
+    lightingNotes: "One bare bulb, flour dust, the railway's underside overhead.",
+  },
+  {
+    key: "s14", id: "neonoire-s14", n: 14, partId: "neonoire-part-feature",
+    title: "Someone who meant to come back", location: "INT. MARA'S APARTMENT", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. MARA'S APARTMENT - DAY #14#",
+    page: "n14-mara-s-apartment-day.md", board: "n14-maras-apartment-day.md",
+    cast: ["Vera Voss", "Jack"],
+    grammar: "35mm for the room, 50mm on the sketchbook.",
+    description: "A tiny studio of sketches and clothes, a packed suitcase, a flight booked for next month. The last things Vera said. A sketchbook full of the same noodle counter, every stroke of the kanji correct. BOARDED — 2 shots (184–185).",
+    lightingNotes: "Grey daylight through one window.",
+  },
+  {
+    key: "s15", id: "neonoire-s15", n: 15, partId: "neonoire-part-feature",
+    title: "A gap in someone's teeth", location: "EXT. THE HIVE", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - DAY #15#",
+    page: "n15-the-hive-day.md", board: "n15-the-hive-day.md",
+    cast: ["Jack"],
+    grammar: "24mm for the street, 50mm square to the stair.",
+    description: "The Hive between new glass towers, the rendering banner beside it. Jack looks up as if at someone he used to know, then climbs in: the stairway motif, going up into the past. BOARDED — 2 shots (186–187).",
+    lightingNotes: "Flat grey rainy daylight.",
+  },
+  {
+    key: "s16", id: "neonoire-s16", n: 16, partId: "neonoire-part-feature",
+    title: "Everybody sees him", location: "INT. THE HIVE, PASSAGES", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, PASSAGES - CONTINUOUS #16#",
+    page: "n16-the-hive-passages-continuous.md", board: "n16-hive-passages.md",
+    cast: ["Jack", "The Radio Repairman"],
+    grammar: "35mm down the passage.",
+    description: "Shoulder-wide passages, doors open on other lives: radios, a family at dinner, an old woman at the sumo. Nobody stops him. Everybody sees him. BOARDED — 1 shot (188).",
+    lightingNotes: "Bare bulbs, pipes and wires, dust in the light.",
+  },
+  {
+    key: "s17", id: "neonoire-s17", n: 17, partId: "neonoire-part-feature",
+    title: "You got old", location: "INT. KANEKO'S NOODLE COUNTER", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. KANEKO'S NOODLE COUNTER - CONTINUOUS #17#",
+    page: "n17-kaneko-s-noodle-counter-continuous.md", board: "n17-kaneko-counter-first.md",
+    cast: ["Jack", "Kaneko", "Mara Voss"],
+    grammar: "35mm, frontal to the counter.",
+    description: "Kaneko knows him: a boy in a cheap suit who came with the American. Eat. Then go. He pays far too much and leaves his card. Behind the curtain, something moves. BOARDED — 2 shots (189–190).",
+    lightingNotes: "One fluorescent tube and steam.",
+  },
 ];
 
 /**
@@ -651,12 +701,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 180 numbered shots cover scenes 1–12, eight roadside-inn scenes and 72–100; the other 51 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 190 numbered shots cover scenes 1–17, eight roadside-inn scenes and 72–100; the other 46 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 8–12, the roadside inn (31, 32, 34, 38–41, 45) and 72–100 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 8–17, the roadside inn (31, 32, 34, 38–41, 45) and 72–100 are boarded; the rest are written, not yet boarded." },
   ],
 };
 
