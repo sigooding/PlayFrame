@@ -45,4 +45,4 @@ Board: [n97](../scenes/n97-the-hive-morning.md). Continuity brief: `scripts/neon
 - **Shot 153:** Jack is small in frame at 85mm, behind soft foreground umbrellas.
 - **No spare generation was left** after the two shot 140 retries.
 
-The next unboarded scene is **98** (the rooftop of Jack's building, day).
+Scenes 98–100 followed in the next session; see the [scenes 98–100 ledger](scenes-98-100.md).

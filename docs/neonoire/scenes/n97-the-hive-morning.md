@@ -81,4 +81,4 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-154
 IMAGE: 152-the-ribbon.jpg
-NOTE: The scene ends here. Scene 98 (the rooftop of Jack's building) follows.
+NOTE: The scene ends here. Scene 98 (the rooftop of Jack's building, [n98](n98-rooftop.md)) follows.
