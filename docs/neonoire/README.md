@@ -1,8 +1,8 @@
 # NEONOIRE — the final screenplay
 
-**100 screenplay scenes, 20 boarded scenes, 120 numbered shots.** Scenes 1–7 and 72–84 are boarded. The draft itself is unchanged and is carried page by page into Frame. The other 80 scenes are written, not boarded.
+**100 screenplay scenes, 24 boarded scenes, 129 numbered shots.** Scenes 1–7 and 72–88 are boarded. The draft itself is unchanged and is carried page by page into Frame. The other 76 scenes are written, not boarded.
 
-**Latest passes:** [scenes 77–79 and scene 80](passes/scenes-77-79.md) (shots 87–101), and [scenes 81–82](passes/scenes-81-82.md) (shots 102–110). The bar by day with Okada, and the newsroom with Harada. Then [scenes 83–84](passes/scenes-83-84.md) (shots 111–120): Kurose's office, and the Hive storeroom.
+**Latest passes:** [scenes 77–79 and scene 80](passes/scenes-77-79.md) (shots 87–101), and [scenes 81–82](passes/scenes-81-82.md) (shots 102–110). The bar by day with Okada, and the newsroom with Harada. Then [scenes 83–84](passes/scenes-83-84.md) (shots 111–120): Kurose's office, and the Hive storeroom. Then [scenes 85–88](passes/scenes-85-88.md) (shots 121–129): the raid on the Hive.
 
 ## Current image pass: Tokyo Story in colour
 
@@ -25,11 +25,11 @@
 | Screenplay pages | [`screenplay/`](screenplay/) — one per scene, draft text verbatim under production headers |
 | Shot boards | [`scenes/`](scenes/) — type, lens, angle, movement, duration estimate, cast, light, image and script quote |
 | Current street brief | `scripts/neonoire/streets-look.mjs` |
-| Images | `public/images/neonoire/s1 … s7/`, `s72 … s84/`, `sheets/`, `keys/` |
+| Images | `public/images/neonoire/s1 … s7/`, `s72 … s88/`, `sheets/`, `keys/` |
 | Workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
 | Next-agent handoff | [`handoff.md`](handoff.md), [revision ledger](passes/tokyo-streets-revision.md) |
 
-**All 120 shot images are on disk** — the Tokyo Story colour revision of scenes 72–75 completed in two sessions (10 + 8 generation calls). Of the existing opening images, shots 11–28 and scene 3 are still legacy 2.39:1 studies pending their separate 16:9 revision; see [cold-open-revision.md](passes/cold-open-revision.md). Scene 76 images are unchanged by the current pass. Neither group is claimed as freshly regenerated.
+**All 129 shot images are on disk** — the Tokyo Story colour revision of scenes 72–75 completed in two sessions (10 + 8 generation calls). Of the existing opening images, shots 11–28 and scene 3 are still legacy 2.39:1 studies pending their separate 16:9 revision; see [cold-open-revision.md](passes/cold-open-revision.md). Scene 76 images are unchanged by the current pass. Neither group is claimed as freshly regenerated.
 
 ## Opening the revision
 

@@ -3,7 +3,7 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–84 are
+// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–7 and 72–88 are
 // boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
 // it. Dialogue and action are always quoted from the fountain, never retyped.
 //
@@ -39,6 +39,8 @@ const cast = [
   ["okada", "Okada", "Bar owner", "60s", "Japanese. Sixties, the owner of the small Kanda bar where the journalist died. Gaunt, close-cropped white hair, a lined tired face, a white shirt with the sleeves rolled and a dark navy apron. He kept Sakai's cassette in the tray of his cash drawer. When he sees Jack's face and hands he doesn't ask; he pours two glasses instead. No identity sheet yet: held to the scene 81 master.", ["Discreet", "Loyal", "Weary"], "sand", undefined],
   ["harada", "Harada", "Editor, Toto Shimbun", "50s", "Japanese. Fifties, the editor of the Toto Shimbun; the dead journalist was her reporter. Grey hair in a short bob, reading glasses, a white blouse with the sleeves rolled. She presses PLAY, names Kurose, warns Jack he will be named, and opens a notebook to a clean page. No identity sheet yet: held to the scene 82 master.", ["Exacting", "Grieving", "Resolute"], "sage", undefined],
   ["kurose", "Kurose", "Chairman, Kurose Development", "70s", "Japanese. Seventies, the chairman of Kurose Development, whose redevelopment model puts a fountain where the Hive stands. Silver hair combed back, a beautiful dark navy suit, the stillness of a man who has never had to hurry. His English is perfect and old-fashioned. Courteous and curious, he pours the tea himself. Good men are very expensive. No identity sheet yet: held to the scene 83 master.", ["Courteous", "Patient", "Ruthless"], "rose", undefined],
+  ["kaneko", "Kaneko", "Noodle counter, the Hive", "70s", "Japanese. Seventies, tiny and sharp-eyed, grey hair in a small bun, a faded indigo apron over a brown cardigan. She runs the six-seat noodle counter in the Hive, hid Mara in her storeroom and then Jack, and brings Vera to see where Mara was. When the masked men come she pulls down the shutter, sends them up to the roof, and stays: I have lived here fifty years. No identity sheet yet: held to the scene 86 master.", ["Sharp", "Stubborn", "Protective"], "clay", undefined],
+  ["radio-repairman", "The Radio Repairman", "The Hive", "70s", "Japanese. Seventies, thin, round glasses, a grey cardigan, a loupe pushed up on his forehead. He hears boots in the corridor, looks at the fuse box on his wall, and pulls the main switch, and the whole Hive goes dark. Unnamed; no identity sheet.", ["Watchful", "Quiet", "Decisive"], "sage", undefined],
 ];
 
 export const characters = cast.map(([key, name, role, age, description, traits, color, sheet]) => ({
@@ -50,6 +52,8 @@ characters.find(c => c.id === characterId("daniel")).image = "/images/neonoire/s
 characters.find(c => c.id === characterId("okada")).image = "/images/neonoire/s81/100-the-bar-in-daylight.jpg";
 characters.find(c => c.id === characterId("harada")).image = "/images/neonoire/s82/104-the-newsroom.jpg";
 characters.find(c => c.id === characterId("kurose")).image = "/images/neonoire/s83/110-very-expensive.jpg";
+characters.find(c => c.id === characterId("kaneko")).image = "/images/neonoire/s86/123-fifty-years.jpg";
+characters.find(c => c.id === characterId("radio-repairman")).image = "/images/neonoire/s87/124-the-repairman.jpg";
 
 const link = (a, b, kind, note) => {
   characters.find(c => c.id === characterId(a)).relations.push({ id: `neonoire-link-${a}-${b}`, targetId: characterId(b), kind, note });
@@ -65,6 +69,8 @@ link("jack", "ishida", "Colleague", "Former police colleagues; old loyalties and
 link("jack", "okada", "Ally", "He kept Sakai's cassette in his cash drawer, and hands it over without asking what happened.");
 link("harada", "journalist", "Colleague", "Her reporter, killed in Okada's bar; his photograph stays on her desk.");
 link("vera", "kurose", "Enemy", "Her father wrote his name on every page; she goes to his office to see his face.");
+link("kaneko", "jack", "Ally", "She hides him in her storeroom and sends him up to the roof while she stays.");
+link("kaneko", "mara", "Ally", "She hid Mara behind the curtain of her noodle counter.");
 link("jack", "harada", "Ally", "He brings her the tape and offers himself as the witness: start with my part.");
 
 // ---------------------------------------------------------------------------------------------
@@ -275,6 +281,46 @@ export const SCENES = [
     description: "Night. Jack, grey with exhaustion, hiding in the storeroom since the newspaper. Kaneko brings Vera. On the wall, Mara's sketches: the counter from behind the curtain, the back of a head on the third stool. That's me. Three feet away. We were both wrong. He didn't blame you. A train passes; the bulb swings; in the passage outside a man murmurs into his sleeve: position. BOARDED — 4 shots (117–120).",
     lightingNotes: "A single bare tungsten bulb, swinging when the train passes; everything else falls to black.",
   },
+  {
+    key: "s85", id: "neonoire-s85", n: 85, partId: "neonoire-part-feature",
+    title: "The Hive is watching", location: "INT. THE HIVE, PASSAGES", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, PASSAGES - CONTINUOUS #85#",
+    page: "n85-the-hive-passages-continuous.md", board: "n85-hive-passages.md",
+    cast: ["The Masked Men"],
+    grammar: "24mm down a passage too narrow for anything but single file; 35mm for the doors closing. Static.",
+    description: "Continuous. Four masked men move through the Hive's narrow corridors in single file, weapons up. Doors that stood open close softly, one after another, as they pass. The Hive is watching them. BOARDED — 2 shots (121–122).",
+    lightingNotes: "Bare bulbs and warm open doorways against cold green spill; the doors closing take the warm light away strip by strip.",
+  },
+  {
+    key: "s86", id: "neonoire-s86", n: 86, partId: "neonoire-part-feature",
+    title: "Fifty years", location: "INT. KANEKO'S NOODLE COUNTER", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. KANEKO'S NOODLE COUNTER - CONTINUOUS #86#",
+    page: "n86-kaneko-s-noodle-counter-continuous.md", board: "n86-kaneko-counter.md",
+    cast: ["Kaneko", "Jack", "Vera Voss"],
+    grammar: "24mm counter, 50mm three-shot, 85mm for Kaneko's refusal. The shutter crashes, the tube goes off, and the gas flame is all that's left.",
+    description: "Continuous. Kaneko pulls the shutter down with a crash and turns off the tube. Up, through the back, the stairs by the dentist, all the way to the roof. Come with us. I have lived here fifty years; they can come and find me. She pushes them toward the back. BOARDED — 3 shots (123–125).",
+    lightingNotes: "One fluorescent tube, then only the blue-orange gas flames under the stock pots and the glow through the storeroom curtain.",
+  },
+  {
+    key: "s87", id: "neonoire-s87", n: 87, partId: "neonoire-part-feature",
+    title: "The main switch", location: "INT. THE HIVE, RADIO REPAIR SHOP", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, RADIO REPAIR SHOP - CONTINUOUS #87#",
+    page: "n87-the-hive-radio-repair-shop-continuous.md", board: "n87-radio-repair-shop.md",
+    cast: ["The Radio Repairman"],
+    grammar: "35mm on the old man at his bench, 85mm on the switch. One pull.",
+    description: "Continuous. The radio repairman looks up from his bench at the sound of boots in the corridor, looks at the old fuse box on his wall, reaches up and pulls the main switch. BOARDED — 2 shots (126–127).",
+    lightingNotes: "A green-shaded bench lamp and a magnifier lamp, warm amber, dying on the pull.",
+  },
+  {
+    key: "s88", id: "neonoire-s88", n: 88, partId: "neonoire-part-feature",
+    title: "Its own dark", location: "INT. THE HIVE, PASSAGES", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "INT. THE HIVE, PASSAGES - CONTINUOUS #88#",
+    page: "n88-the-hive-passages-continuous.md", board: "n88-hive-dark.md",
+    cast: ["The Masked Men"],
+    grammar: "Scene 85's camera with every bulb out; 50mm over a masked shoulder. Flashlight beams are the only light.",
+    description: "Continuous. DARK. Every bulb in the building goes out at once. The masked men stop; flashlights snap on, catching dripping pipes, closed doors, laundry, faces at windows that vanish the moment the light touches them. The Hive knows its own dark. The men don't. BOARDED — 2 shots (128–129).",
+    lightingNotes: "Black, and tight hard white flashlight beams with haze in them. Nothing else.",
+  },
 ];
 
 /**
@@ -352,12 +398,12 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 120 numbered shots cover scenes 1–7 and 72–84; the other 80 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 129 numbered shots cover scenes 1–7 and 72–88; the other 76 scenes arrive written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },
     { id: "neonoire-part-3", title: "The police station", description: "A missing-person report, an interview in Japanese, and a drawer that closes on a wet purse." },
-    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–84 are boarded; the rest are written, not yet boarded." },
+    { id: "neonoire-part-feature", title: "The film proper", description: "Scenes 8–100 of the final screenplay — the key's price, the Hive, Kurose, the roadside inn, the long collapse, and a new counter under the railway. Scenes 72–88 are boarded; the rest are written, not yet boarded." },
   ],
 };
 
