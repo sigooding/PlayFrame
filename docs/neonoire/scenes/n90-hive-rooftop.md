@@ -43,4 +43,4 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-267
 IMAGE: 132-the-gap.jpg
-NOTE: Coverage, shot 267. Held to s90/130-the-roof.jpg, sheets/vera-look-c.jpg and sheets/jack.jpg. Both feet are over the one-metre gap, not on a water tank. No letterbox. CAVEAT: the walkway fence reads taller than waist-high.
+NOTE: Coverage, shot 267. Held to s90/130-the-roof.jpg, sheets/vera-look-c.jpg and sheets/jack.jpg. Both feet are over the one-metre gap, not on a water tank. No letterbox. Fence retaken in consistency retakes two (26 September 2026): the walkway rail is now waist-high, a thin top rail on thin uprights, with the drop beyond it clear.

@@ -539,6 +539,21 @@ assert(hands259.notes.includes("48"), "Shot 259 keeps Jack's hands at 48");
 assert(hands259.notes.includes("SHIOHAMA"), "Shot 259 keeps the cassette label");
 pass("consistency retakes: the third stool at both counters and in the clip, Mr. Noda behind the counter, Jack's hands at 48, one hand-painted sign");
 
+// Consistency retake pass two, 26 September 2026: one pole on the cold-open street, the strap untouched, the 1975 wood corridor, the katakana card, three customers, a waist-high rail.
+const wood261 = project.frames.find(f => f.id === "neonoire-shot-261");
+assert(wood261.notes.includes("not a ryokan"), "Shot 261 keeps the corridor on the lobby's 1975 wood");
+const pole170 = project.frames.find(f => f.id === "neonoire-shot-170");
+assert(pole170.notes.includes("one barber pole") && pole170.notes.includes("does not touch"), "Shot 170 keeps one pole and the strap untouched");
+const pole248 = project.frames.find(f => f.id === "neonoire-shot-248");
+assert(pole248.notes.includes("one barber pole"), "Shot 248 keeps one pole in the deep background too");
+const card243 = project.frames.find(f => f.id === "neonoire-shot-243");
+assert(card243.notes.includes("katakana"), "Shot 243 carries the katakana line the draft prints");
+const lunch225 = project.frames.find(f => f.id === "neonoire-shot-225");
+assert(lunch225.notes.includes("three customers"), "Shot 225 carries the draft's three customers");
+const fence267 = project.frames.find(f => f.id === "neonoire-shot-267");
+assert(fence267.notes.includes("waist-high"), "Shot 267 keeps the walkway rail waist-high");
+pass("consistency retakes two: one pole on the cold-open street, the strap untouched, the 1975 wood corridor, the katakana card, three customers, a waist-high rail");
+
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");

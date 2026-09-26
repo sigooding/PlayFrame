@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-170
 IMAGE: 168-the-strap.jpg
-NOTE: Framed from shot 6's position so he stands where Mara stood. The study shows a second barber pole further down; keep one on set. The barber is shot 247 (one pole). The can is shot 248, which still shows a second pole in the deep background.
+NOTE: Framed from shot 6's position so he stands where Mara stood. Retaken in consistency retakes two (26 September 2026): one barber pole, as in s1/06-barbershop-doorway.jpg and shot 247, and the strap stays caught on the rough metal edge at knee height while his hand hovers open and off it — he does not touch it. The barber is shot 247 (one pole). The can is shot 248, now also one pole.
 
 ---
 
@@ -43,4 +43,4 @@ LIGHT: Practical night
 TIME: 4
 ID: neonoire-shot-248
 IMAGE: 246-the-can.jpg
-NOTE: Coverage, shot 248. The can is whole. CAVEAT: a second barber pole reads in the deep background, the same flaw as shot 170; keep one on set.
+NOTE: Coverage, shot 248. The can is whole. Retaken in consistency retakes two (26 September 2026): one barber pole in frame and none in the deep background — the single-pole street of s1/06-barbershop-doorway.jpg.

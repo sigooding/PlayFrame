@@ -33,7 +33,7 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-261
 IMAGE: 178-the-screens.jpg
-NOTE: Coverage, shot 261, the corridor angle shot 179's note asked for. Jack follows sheets/jack.jpg, seen from behind. No weapons in frame. The inn's cold blue. CAVEAT: the corridor reads more like a ryokan than the lobby's 1975 wood. Shot 268 is the wood.
+NOTE: Coverage, shot 261, the corridor angle shot 179's note asked for. Retaken in consistency retakes two (26 September 2026): cream plaster walls with dark wood trim, ordinary wood doors and a plain cold ceiling light — the lobby's 1975 wood of s41/179-same-wood.jpg, not a ryokan — with the row of small paper panels burst apart in a straight line of holes along the right wall. Jack follows sheets/jack.jpg, seen from behind. No weapons in frame. The inn's cold blue.
 
 ---
 
