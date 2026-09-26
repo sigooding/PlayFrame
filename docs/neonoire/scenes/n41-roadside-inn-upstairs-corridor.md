@@ -1,0 +1,24 @@
+# NEONOIRE — SCENE 41 — INT. ROADSIDE INN, UPSTAIRS CORRIDOR — CONTINUOUS
+
+**Board, and the script.** The screenplay page for this scene is [n41-roadside-inn-upstairs-corridor-continuous.md](../screenplay/n41-roadside-inn-upstairs-corridor-continuous.md), carrying the draft verbatim.
+
+Scene: INT. ROADSIDE INN, UPSTAIRS CORRIDOR — CONTINUOUS
+Cast: JACK, THE MASKED MEN
+Lens plan: 50mm, the identical position to shot 173.
+Grammar: the same stairs. Now something is coming up.
+
+## Frame format — 26 September 2026
+
+One shot (179), **16:9, 1920×1080, full-bleed**, numbered in boarding order. Each frame is generated from its warm counterpart, from the same camera position. **Jack** follows `sheets/jack.jpg`, and **the masked men** follow `s1/12-masked-man-radio.jpg`. **Colour: the cold**, from scene 38: steel blue, blue-black and xenon-white headlight beams, with the warm lights dead. The rules are in `scripts/neonoire/inn-look.mjs`. These are AI-generated draft studies, not approved coverage.
+
+---
+
+179. MEDIUM — 50mm, static, low angle — boots below.
+The stair frame from shot 173, from the identical low position, now cold. The landing bulb is out and headlight glare comes from below. A masked man climbs where Mrs. Noda stood. At the top, Jack is a silhouette turning away down the corridor.
+SCRIPT: "Jack at the top of the stairs. He hears boots below. He goes the other way, toward the bath."
+CAST: Jack, The Masked Men
+LIGHT: Low key
+TIME: 6
+ID: neonoire-shot-179
+IMAGE: 177-boots-below.jpg
+NOTE: THE STAIR FRAME REPEATED: the refuge becomes a trap, where something coming up from below means danger. Generated from shot 173. The burst through the paper screens needs a corridor angle on set.

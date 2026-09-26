@@ -9,7 +9,7 @@ Grammar: the room is lit by its own shelves — amber bottles, the blue flicker 
 
 ## Cold-open revision pending
 
-Shots 19–28 still use their previous 2.39:1 images and are marked **Needs review**. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). Only cold-open shots 1–10 have been revised so far.
+Shots 19–28 are rebuilt 16:9, 1920×1080 — 19–21 and 22–28 on 26 September 2026 — so scene 2, and with it the whole pre-title cold open, is wholly in the revised look. Their target is now **16:9, 1920×1080**, with Mara’s wet face/wardrobe, red-bird clip, key 87 and the same two masked men carried forward from the revised street masters. Her handbag was dropped in shot 17 and must not reappear in the bar. See `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md). All cold-open shots 1–28 are now revised; nothing of scene 2 awaits revision.
 
 ---
 
@@ -29,7 +29,7 @@ CAST: The Journalist
 LIGHT: Practical night
 TIME: 8
 IMAGE: 20-the-journalist.jpg
-NOTE: He is killed in four shots' time and the film gives him no backstory here. Play the waiting as habit, not nerves.
+NOTE: He is killed in four shots' time and the film gives him no backstory here. Play the waiting as habit, not nerves. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration).
 
 21. WIDE — 35mm, static, eye level — the door bangs open.
 Mara, soaked, too out of breath to speak, stands in the doorway with the rain behind her.
@@ -38,7 +38,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 21-mara-bursts-in.jpg
-NOTE: She brings the street's weather in with her. Keep her soaked hair, small red enamel bird clip and jacket exactly as in scene 1 — this is the same night, minutes later.
+NOTE: She brings the street's weather in with her. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration). Keep her soaked hair, small red enamel bird clip and jacket exactly as in scene 1 — this is the same night, minutes later.
 
 22. MEDIUM — 50mm, static, eye level — the journalist looks, then away.
 He glances up, startled, then away. Not his business.
@@ -47,7 +47,7 @@ CAST: The Journalist, Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 22-not-his-business.jpg
-NOTE: His decision not to help is the last decision he makes. No emphasis, no irony, no push-in.
+NOTE: His decision not to help is the last decision he makes. No emphasis, no irony, no push-in. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration).
 
 23. FULL — 35mm, static, low angle — Mara hides behind the counter.
 She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.
@@ -92,7 +92,7 @@ CAST: The Masked Men
 LIGHT: Practical night
 TIME: 12
 IMAGE: 27-the-notebook.jpg
-NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not.
+NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not. Fixed later on 26 September 2026: the frame now carries the same brown leather wrap notebook with its strap closure as shot 20's counter; the earlier pale-grey cover mismatch is closed.
 
 28. CLOSE-UP — 85mm, static, eye level — Mara in the blue TV glow.
 She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.

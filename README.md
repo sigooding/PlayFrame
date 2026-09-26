@@ -17,7 +17,7 @@ The series opens by default when present; an explicit `?project=<id>` always win
 ## NEONOIRE — the final screenplay
 
 The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
-twelve of them boarded as **86 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86). Everything is carried page by page from
+fifty-four of them boarded as **190 numbered shots** — the opening seven (shots 1–68), then the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), the envelope and the notebook of scenes 77–79 (shots 87–95), Jack and Ishida in scene 80 (shots 96–101), the cassette and the witness in scenes 81–82 (shots 102–110), Kurose and the storeroom in scenes 83–84 (shots 111–120), the raid on the Hive in scenes 85–88 (shots 121–129), the escape in scenes 89–92 (shots 130–138), Ishida's last night in scenes 93–96 (shots 139–147), the ground-breaking at the Hive in scene 97 (shots 148–154), the ending in scenes 98–100 (shots 155–161), Kanda revisited in scenes 8–12 (shots 162–170, numbered in boarding order), the roadside inn (shots 171–180), and the Hive first seen in scenes 13–17 (shots 181–190). Everything is carried page by page from
 [`Neonoire (3).fountain`](<Neonoire (3).fountain>) (the earlier
 [`Neonoire_Opening.fountain`](Neonoire_Opening.fountain) remains only as the opening extract).
 
@@ -26,7 +26,7 @@ twelve of them boarded as **86 numbered shots** — the opening seven (shots 1�
   regenerates those pages and `npm run build:neonoire` refuses to build unless they rebuild the
   fountain byte for byte. The only change the workspace makes to the text is dropping its own
   ` #1#` … ` #100#` scene markers, so every scene selects its own slugline in the screenplay
-  navigator. The other 88 scenes are marked **WRITTEN, NOT BOARDED** — the board has not reached them yet.
+  navigator. The other 84 scenes are marked **WRITTEN, NOT BOARDED** — the board has not reached them yet.
 - **Every image is 16:9.** From the final screenplay onward, keyframes are generated **16:9
   full-bleed, 1920×1080** — no scope, no letterbox; the Neo-Noir Tokyo style block opens at that
   shape. The older 2.39:1 studies on disk (cold-open shots 11–28, scene 3, early keys) are marked
@@ -38,14 +38,36 @@ twelve of them boarded as **86 numbered shots** — the opening seven (shots 1�
   draft's own words quoted per shot, checked against the fountain at build time.
 - **Keyframes use at most ten generations per session.** Every frame is an AI-generated draft study
   held to a continuity sheet: Mara and Vera Voss are both American — blonde, blue eyes, told apart by
-  hair, wardrobe and the umbrella. **Jack (48)** now has a distinct, cool former-detective profile;
+  hair, wardrobe and the umbrella. **Jack (48)** is a white American former detective (recast 25 September 2026);
   **Daniel Voss**, not Jack, is their father in the scene 4 photograph. Frames whose study has not been generated yet are labelled placeholders that name the file
   they are waiting for, never a neighbour's picture.
 - **Nothing is explained**, because the film does not explain it: what the key opens, what the men are
   counting towards, and what a clock that runs a minute fast is doing in a police station are all left
   where the draft leaves them.
 
-**Current revision — scenes 72–75:** *Tokyo Story* restraint in **colour**, with low level static
+**Latest session — scenes 13–17 boarded, the Hive first seen:** ten new 16:9 shots. Mara hides in the storeroom with the phone glowing under a blanket and the 87 key in her fist. Mara's empty apartment and the sketchbook of the noodle counter. The Hive between glass towers, and **Jack climbing its outside stair** (the stair motif, going up into the past). The passages, and Kaneko's long look at the counter. The handoff now opens with a **consistency note for the next agent**. See the [scenes 13–17 ledger](docs/neonoire/passes/scenes-13-17.md) and [review sheet](public/images/neonoire/reviews/scenes-13-17-pass-1.jpg).
+
+**Previous session — the roadside inn boarded: the stairs and the colour change:** ten new 16:9 shots from scenes 31–45, boarded ahead of order. **Two new standing rules.** First, the *Tokyo Story* **stairway motif**: a low, static camera square to the stairs, where going up is refuge and something coming up is danger. The inn's stair frame is shot twice from the same position, first warm with Mrs. Noda leading Jack up, then cold with a masked man climbing. Second, the **colour change**: the inn is a warm amber refuge until the four sedans turn in at scene 38, when everything turns steel blue and xenon white. **A perspective check is now a standing rule:** every image is checked for vehicle count and direction, screen direction, headcounts and architecture before it goes in. Shot 175 was regenerated after it caught the sedans facing away from the inn. See the [inn ledger](docs/neonoire/passes/roadside-inn.md) and the [warm/cold review sheet](public/images/neonoire/reviews/roadside-inn-pass-1.jpg).
+
+**Earlier session — scenes 8–12 boarded, Kanda revisited:** nine new 16:9 shots. The bar by day, where Vera leaves the blue umbrella on purpose. Okada runs after her with the red bird clip. In Jack's office she finds the photograph face up, and Jack holds it by its edges. Past midnight, a photograph of Daniel Voss and a young Jack laughing under the noodle-shop sign. Then Jack is back on the cold open's street, standing where Mara stood. Vera wears her original look. See the [scenes 8–12 ledger](docs/neonoire/passes/scenes-8-12.md) and [review sheet](public/images/neonoire/reviews/scenes-8-12-pass-1.jpg).
+
+**Earlier session — scenes 98–100 boarded, the ending:** seven new 16:9 shots. On the rooftop of Jack's building, on the first dry day of the film, Jack gives Vera the red bird clip and tells her Mara was sorry; she cries at the railing while he stands beside her. The Hive comes down, cut open like a cross-section, while Kaneko watches with the old sign in a blanket. At Kaneko's new counter under the arches a man's shadow falls across the floor, a second bowl is set out, and Vera doesn't turn. **Vera's coats are now different garments, not recolours:** Look E is a short oatmeal car coat ([`sheets/vera-look-e.jpg`](public/images/neonoire/sheets/vera-look-e.jpg)), and Look F is a teal peacoat. See the [scenes 98–100 ledger](docs/neonoire/passes/scenes-98-100.md) and [review sheet](public/images/neonoire/reviews/scenes-98-100-pass-1.jpg).
+
+**Earlier session — scene 97 boarded, the Hive by morning:** seven new 16:9 shots. A ground-breaking tent stands in the rain in front of the Hive, and every TV in the shop window across the street shows Kurose. Prosecutors meet him at his car, and he walks twenty metres to a grey car without an umbrella. Vera, beside Kaneko, does not look away, and Jack watches alone. The ribbon on the silver shovel goes dark in the rain. **Vera changes to costume Look D** ([`sheets/vera-look-d.jpg`](public/images/neonoire/sheets/vera-look-d.jpg): a dark olive-green coat, a charcoal roll-neck, and her hair loose). From now on, every costume change brings a new coat coloured for its scene. Shot 140 was regenerated so the whole car is in frame. See the [scene 97 ledger](docs/neonoire/passes/scene-97.md) and [review sheet](public/images/neonoire/reviews/scene-97-pass-1.jpg).
+
+**Earlier session — scenes 93–96 boarded, Ishida's last night:** nine new 16:9 shots. A black sedan waits outside the station in the rain, and Kurose pours Ishida tea in the back seat; he drinks it. The taillights recede exactly as in shot 13. The next morning a young detective clears the desk, finds the bottom drawer empty, and the clock still runs a minute fast. See the [scenes 93–96 ledger](docs/neonoire/passes/scenes-93-96.md) and [review sheet](public/images/neonoire/reviews/scenes-93-96-pass-1.jpg).
+
+**Earlier session — scenes 89–92 boarded, the escape:** nine new 16:9 shots. Jack and Vera climb the stairwell in the dark, cross the rooftop in the rain and jump the gap to the railway walkway. A train roars past a metre from them (she doesn't pull away), and they end up on the street below the Hive with every window lit again. Vera is in Look C throughout. See the [scenes 89–92 ledger](docs/neonoire/passes/scenes-89-92.md) and [review sheet](public/images/neonoire/reviews/scenes-89-92-pass-1.jpg).
+
+**Previous session — scenes 85–88 boarded, the raid on the Hive:** nine new 16:9 shots. Four masked men move in single file through the passages while doors close on them. Kaneko drops her shutter and stays behind, the radio repairman pulls the main switch, and flashlights find only the dark. Kaneko and the radio repairman are new cast cards. See the [scenes 85–88 ledger](docs/neonoire/passes/scenes-85-88.md) and [review sheet](public/images/neonoire/reviews/scenes-85-88-pass-1.jpg).
+
+**Previous session — scenes 83–84 boarded:** ten new 16:9 shots. Vera faces Kurose on the fortieth floor ("It's just a face"), then finds Jack in the Hive storeroom beneath Mara's sketches until a voice outside says "Position." Kurose is a new cast card, and the storeroom has its first master. **Vera then changed costume**, to Look C ([`sheets/vera-look-c.jpg`](public/images/neonoire/sheets/vera-look-c.jpg): an ink-navy coat, a grey crew-neck over a white collar, and her hair in a knot), across all nine of her frames in scenes 83–84. See the [scenes 83–84 ledger](docs/neonoire/passes/scenes-83-84.md) and [review sheet](public/images/neonoire/reviews/scenes-83-84-pass-1.jpg).
+
+**Previous session — scenes 81–82 boarded:** nine new 16:9 shots. Okada hands Jack the SHIOHAMA cassette in the bar by day, and Harada plays it in the Toto Shimbun newsroom, where Jack offers himself as the witness. Okada and Harada are new cast cards. Shot 108 keeps its original tape image, at the director's choice. See the [scenes 81–82 ledger](docs/neonoire/passes/scenes-81-82.md) and [review sheet](public/images/neonoire/reviews/scenes-81-82-pass-1.jpg).
+
+**Previous session — scenes 77–79 boarded, Jack recast:** nine new 16:9 shots — Jack's office under one lamp, the unnamed envelope at Vera's door at dawn, DANIEL VOSS inside the cover, and the scene 4 room at dawn with two empty cups. **Jack is now a white American** with a regenerated identity sheet; the recast has since been applied to scene 74's three Jack frames, and scene 80 (the detectives' room by day) is boarded as six more shots. See the [scenes 77–79 ledger](docs/neonoire/passes/scenes-77-79.md) and [review sheet](public/images/neonoire/reviews/scenes-77-79-pass-1.jpg).
+
+**Previous revision — scenes 72–75:** *Tokyo Story* restraint in **colour**, with low level static
 cameras, 50mm lenses (35mm for the distant aftermath), and Vera's makeup intact until rain.
 **Ten generations delivered Jack's sheet plus nine new shot images; six replacement shots remain
 labelled empty placeholders.** Old street studies are not reused. See the

@@ -7,6 +7,10 @@ Cast: — (the building carries the scene; Vera's lit window is the only figure)
 Lens plan: 24mm for the block, 35mm for the building against the elevated line, 85mm for the laundry and the lit window.
 Grammar: dusk, not night, and the first time the film has been out in daylight of any kind — grey, wet, going blue. The city still lights the frame: one window on the third floor, train windows sliding past, sodium starting up below.
 
+## Frame format — 26 September 2026
+
+All four shots (29–32) are rebuilt **16:9, 1920×1080, full-bleed** — 29–31 earlier on 26 September 2026, the laundry insert 32 later the same day, closing the last legacy frame in the film. The lit window in 31 was regenerated to match 29's third-floor geometry, closing that production check. The `THREE DAYS LATER` super in shot 29 is a title, not photography: it is added in the grade and never baked into the keyframe.
+
 ---
 
 29. ESTABLISHING — 24mm, static, eye level — the building.
