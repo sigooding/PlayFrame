@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-169
 IMAGE: 167-two-men-laughing.jpg
-NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245, with a chair caveat. The call to Ishida and the lighter are still not boarded.
+NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245, with a chair caveat — a retake this session still left his feet on the floor. The call to Ishida is shot 251. The lighter is shot 252.
 
 ---
 
@@ -44,3 +44,25 @@ TIME: 6
 ID: neonoire-shot-246
 IMAGE: 244-daniel-voss-41.jpg
 NOTE: Coverage, shot 246. Daniel is held to s4/35-the-photograph.jpg, not to Jack. The headline AMERICAN INSURANCE INVESTIGATOR FOUND DEAD - POLICE RULE SUICIDE and the caption DANIEL VOSS, 41 are lettered and legible at full size. The black notebook matches shot 169.
+
+---
+
+251. MEDIUM — 50mm, static, eye level — the line goes dead.
+Jack sits at the desk under the green lamp, the rotary receiver at his ear. Rain on the blinds. The CRT plays a samurai film. The door reads JACK.
+SCRIPT: "The line goes dead. Jack holds the receiver a moment longer."
+CAST: Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-251
+IMAGE: 249-the-line.jpg
+NOTE: Coverage, shot 251. The office follows s11/243-the-box.jpg; Jack follows sheets/jack.jpg. Ishida is voice only and is not in the frame. The CRT is on and never static: the muted black-and-white samurai film.
+
+252. INSERT — 85mm, static, high angle — the lighter.
+Jack's hand, charcoal sleeve, flicks the old steel lighter open on the desk. A small flame. No cigarettes.
+SCRIPT: "He sets it down. Flicks the lighter open. Shut."
+CAST: Jack
+LIGHT: Practical night
+TIME: 4
+ID: neonoire-shot-252
+IMAGE: 250-the-lighter.jpg
+NOTE: Coverage, shot 252. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Jack's hand, not Vera's wine-red sleeve. No cigarettes anywhere. No engraving.

@@ -487,7 +487,7 @@ export const SCENES = [
     page: "n11-jack-s-office-later.md", board: "n11-jacks-office-later.md",
     cast: ["Jack", "Daniel Voss"],
     grammar: "85mm on the photograph.",
-    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you're too old to be haunted. BOARDED — 3 shots (169, and 245–246, the box and the clipping).",
+    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you're too old to be haunted. BOARDED — 5 shots (169, 245–246, and 251–252, the call and the lighter).",
     lightingNotes: "Only the desk lamp and TV static.",
   },
   {
@@ -527,7 +527,7 @@ export const SCENES = [
     page: "n34-roadside-inn-jack-s-room-night.md", board: "n34-roadside-inn-jacks-room.md",
     cast: ["Jack"],
     grammar: "50mm at tatami height.",
-    description: "Tatami, a thin futon, rain on the tin roof. Sakai's receipts under the lamp: Kato Rental Lockers, Ueno, No. 114. No signal. BOARDED — 1 shot (174).",
+    description: "Tatami, a thin futon, rain on the tin roof. Sakai's receipts under the lamp: Kato Rental Lockers, Ueno, No. 114. No signal. BOARDED — 2 shots (174, and 255, the locker number).",
     lightingNotes: "Warm refuge: tungsten amber, ivory paper, tobacco wood.",
   },
   {
@@ -577,7 +577,7 @@ export const SCENES = [
     page: "n45-roadside-inn-lobby-continuous.md", board: "n45-roadside-inn-lobby-dark.md",
     cast: ["The Masked Men"],
     grammar: "50mm from shot 172's position.",
-    description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 1 shot (180).",
+    description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 2 shots (180, and 254, the payphone). Jack dragging Mr. Noda is still not boarded.",
     lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
   },
   {
@@ -617,7 +617,7 @@ export const SCENES = [
     page: "n16-the-hive-passages-continuous.md", board: "n16-hive-passages.md",
     cast: ["Jack", "The Radio Repairman"],
     grammar: "35mm down the passage.",
-    description: "Shoulder-wide passages, doors open on other lives: radios, a family at dinner, an old woman at the sumo. Nobody stops him. Everybody sees him. BOARDED — 2 shots (188, and 250, the drawing).",
+    description: "Shoulder-wide passages, doors open on other lives: radios, a family at dinner, an old woman at the sumo. Nobody stops him. Everybody sees him. BOARDED — 3 shots (188, 250, and 253, the dentist's chair).",
     lightingNotes: "Bare bulbs, pipes and wires, dust in the light.",
   },
   {
@@ -1311,12 +1311,11 @@ export function parseBoard(markdown, scene) {
   }
   flush();
   if (!shots.length) throw new Error(`Scene ${scene.n} has no numbered shots`);
-  // The first boarding runs 1..240 in SCENES order and is never renumbered. A coverage pass may
-  // append shots numbered 241+ to an existing scene; those follow the primary block, stay
-  // contiguous with each other, and the builder collects them after shot 240 in SCENES order.
+  // The first boarding runs 1..240 in SCENES order and is never renumbered. Coverage shots
+  // (241+) follow that block in the file. A later pass may add 251+ to a scene that already
+  // holds earlier coverage, so those numbers need not be contiguous; the builder sorts by number.
   const PRIMARY_CEILING = 240;
   const primary = shots.filter(shot => shot.n <= PRIMARY_CEILING);
-  const coverage = shots.filter(shot => shot.n > PRIMARY_CEILING);
   let seenCoverage = false;
   for (const shot of shots) {
     if (shot.n > PRIMARY_CEILING) seenCoverage = true;
@@ -1325,9 +1324,7 @@ export function parseBoard(markdown, scene) {
   for (const [i, shot] of primary.entries()) {
     if (shot.n !== primary[0].n + i) throw new Error(`Scene ${scene.n} shot numbers must run contiguously from ${primary[0].n} (found ${shot.n} at position ${i + 1})`);
   }
-  for (const [i, shot] of coverage.entries()) {
-    if (i && shot.n !== coverage[i - 1].n + 1) throw new Error(`Scene ${scene.n} coverage shots must be contiguous (found ${shot.n})`);
-  }
+  if (new Set(shots.map(shot => shot.n)).size !== shots.length) throw new Error(`Scene ${scene.n} repeats a shot number`);
   for (const shot of shots) {
     if (!LIGHT_TOKEN.includes(shot.lighting)) throw new Error(`Scene ${scene.n} shot ${shot.n} has lighting "${shot.lighting}" outside the lighting library`);
     for (const name of shot.cast) if (!characters.some(c => c.name === name)) throw new Error(`Scene ${scene.n} shot ${shot.n} casts an unknown name: ${name}`);

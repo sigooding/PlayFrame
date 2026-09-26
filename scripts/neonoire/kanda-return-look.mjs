@@ -20,6 +20,8 @@ export const kandaReturnImages = [
   "/images/neonoire/s10/242-down-the-stairs.jpg",
   "/images/neonoire/s11/243-the-box.jpg",
   "/images/neonoire/s11/244-daniel-voss-41.jpg",
+  "/images/neonoire/s11/249-the-line.jpg",
+  "/images/neonoire/s11/250-the-lighter.jpg",
   "/images/neonoire/s12/245-the-barber.jpg",
   "/images/neonoire/s12/246-the-can.jpg",
 ];

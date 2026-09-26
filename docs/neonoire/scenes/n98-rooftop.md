@@ -53,4 +53,4 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-241
 IMAGE: 239-his-own-face.jpg
-NOTE: Coverage, shot 241. Generated from s98/155-close-enough.jpg and sheets/jack.jpg so the train, the railing and the face match the rooftop. CAVEAT: the face reads as Jack inside the carriage, solid, not as a glass reflection over the passengers — the generation limit was spent, so this is logged rather than retaken. Dress it as a reflection on set. Vera is already gone.
+NOTE: Coverage, shot 241. Retake from the first coverage frame and sheets/jack-face.jpg. The face is now ghosted over the passengers rather than a solid man in the seat. CAVEAT: it still reads larger than a glancing reflection in the glass. Vera is already gone.

@@ -55,4 +55,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-249
 IMAGE: 247-thirty-one.jpg
-NOTE: Coverage, shot 249, the insert shot 182's note asked for. Mara follows sheets/mara.jpg: ash-blonde, pale blue eyes, NO bird clip, the borrowed brown cardigan. The storeroom follows s13/180-under-the-cover.jpg. 31 MISSED CALLS and VERA are lettered on the screen and legible at full size. CAVEAT: her eyes are on the camera, not the phone; drop the eyeline on set. The generation limit was spent before the retake.
+NOTE: Coverage, shot 249, the insert shot 182's note asked for. Mara follows sheets/mara.jpg: ash-blonde, pale blue eyes, NO bird clip, the borrowed brown cardigan. The storeroom follows s13/180-under-the-cover.jpg. 31 MISSED CALLS and VERA are lettered on the screen and legible at full size. Retake: her eyes are on the phone, not the camera.

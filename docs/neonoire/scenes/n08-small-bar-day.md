@@ -45,4 +45,4 @@ LIGHT: Overcast soft
 TIME: 5
 ID: neonoire-shot-242
 IMAGE: 240-the-far-end.jpg
-NOTE: Coverage, shot 242, the 85mm pickup shot 162's note asked for. Okada is held to s8/160-were-closed.jpg. CAVEAT: his eyeline goes to the street window, not down the counter to the mat; a soft figure in the doorway is not Vera and should be dropped on set. The CRT is off, correctly — off is not static.
+NOTE: Coverage, shot 242, the 85mm pickup shot 162's note asked for. Okada is held to s8/160-were-closed.jpg. Retake: the doorway is empty; the figure who was not Vera is gone. CAVEAT: his eyeline still goes to the street window, not down the counter to the mat. The CRT is off, correctly — off is not static.

@@ -27,12 +27,14 @@ export const innImages = [
   "/images/neonoire/s32/170-just-one-night.jpg",
   "/images/neonoire/s32/171-upstairs-at-the-end.jpg",
   "/images/neonoire/s34/172-twenty-years-of-januaries.jpg",
+  "/images/neonoire/s34/173-no-114.jpg",
   "/images/neonoire/s38/173-four-black-sedans.jpg",
   "/images/neonoire/s39/174-he-has-heard-the-gravel.jpg",
   "/images/neonoire/s39/175-the-curtain-gap.jpg",
   "/images/neonoire/s40/176-were-closed.jpg",
   "/images/neonoire/s41/177-boots-below.jpg",
   "/images/neonoire/s45/178-thank-you-very-much.jpg",
+  "/images/neonoire/s45/179-it-rings.jpg",
 ];
 
 const innBase = "16:9 full-bleed (1920×1080), no letterbox. THE ROADSIDE INN follows keys/09-the-roadside-inn.jpg and the master s31/169-the-only-car.jpg: two storeys of weathered wood, a tin roof, a gravel lot, a beer vending machine by the entrance, a pickup parked crooked behind. THE LOBBY follows s32/170-just-one-night.jpg (pink payphone, souvenir keyring case, CRT baseball on a shelf, wooden counter, the steep staircase at the back). THE STAIRS follow s32/171-upstairs-at-the-end.jpg. JACK'S ROOM follows s34/172-twenty-years-of-januaries.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt). MRS. NODA and MR. NODA (70s, Japanese) have no cards. THE MASKED MEN follow s1/12-masked-man-radio.jpg (black clothes, black face masks, gloves, compact submachine guns). STAIRWAY MOTIF: a low, level, static camera square to the flight; going up is refuge, something coming up from below is danger.";
