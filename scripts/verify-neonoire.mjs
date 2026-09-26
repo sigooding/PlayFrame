@@ -515,6 +515,30 @@ assert(coverage.find(f => f.id === "neonoire-shot-268").notes.includes("not a ry
 assert(coverage.find(f => f.id === "neonoire-shot-269").notes.includes("staff side"), "Shot 269 puts Mr. Noda on the staff side");
 pass("coverage pass: shots 241–269 — named beats the first boarding left, through the third stool, the gap and the staff side");
 
+// Consistency retake pass, 26 September 2026: the third stool at both counters, Mr. Noda behind the counter, Jack's hands at 48, one hand-painted sign.
+const stool160 = project.frames.find(f => f.id === "neonoire-shot-160");
+assert(stool160.notes.includes("two empty stools to her left"), "Shot 160 seats Vera on the third stool");
+assert(stool160.notes.includes("金子"), "Shot 160 carries the hand-painted sign");
+const stool161 = project.frames.find(f => f.id === "neonoire-shot-161");
+assert(stool161.notes.includes("generated from the retaken shot 160"), "Shot 161 derives from the retaken master");
+const stool260 = project.frames.find(f => f.id === "neonoire-shot-260");
+assert(stool260.notes.includes("two empty stools to her left"), "Shot 260 keeps the empty stools to her left");
+assert(!stool260.notes.includes("CAVEAT"), "Shot 260's stool caveat is closed");
+const stool225 = project.frames.find(f => f.id === "neonoire-shot-225");
+assert(stool225.notes.includes("two empty stools to her left"), "Shot 225 seats Vera on the third stool at the Hive");
+assert(stool225.notes.includes("金子"), "Shot 225 carries the hand-painted sign");
+const sign265 = project.frames.find(f => f.id === "neonoire-shot-265");
+assert(sign265.notes.includes("金子"), "Shot 265 hangs the old hand-painted sign, not a paper menu");
+const noda262 = project.frames.find(f => f.id === "neonoire-shot-262");
+assert(noda262.notes.includes("BEHIND the wooden counter"), "Shot 262 puts Mr. Noda behind the counter");
+assert(noda262.notes.includes("never static"), "Shot 262 keeps the inn television a programme");
+const noda178 = project.frames.find(f => f.id === "neonoire-shot-178");
+assert(noda178.notes.includes("no weapons in frame"), "Shot 178's reframe keeps the weapons out of frame");
+const hands259 = project.frames.find(f => f.id === "neonoire-shot-259");
+assert(hands259.notes.includes("48"), "Shot 259 keeps Jack's hands at 48");
+assert(hands259.notes.includes("SHIOHAMA"), "Shot 259 keeps the cassette label");
+pass("consistency retakes: the third stool at both counters and in the clip, Mr. Noda behind the counter, Jack's hands at 48, one hand-painted sign");
+
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");

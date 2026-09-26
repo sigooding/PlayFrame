@@ -33,5 +33,5 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-259
 IMAGE: 231-the-box.jpg
-NOTE: Coverage, shot 259. The locker room follows s63/230-no-questions.jpg. The cassette follows props/shiohama-cassette-label.jpg and reads SHIOHAMA. The notebook follows props/daniel-voss-notebook-cover.jpg; DANIEL VOSS is on the inside cover, partly under the cassette. The underlined line is not shown. CAVEAT: the hands read older than 48.
+NOTE: Coverage, shot 259, hands retaken in the consistency pass of 26 September 2026: a lean weathered 48, charcoal sleeve and cream cuff, not the elderly hands of the first take. The locker room follows s63/230-no-questions.jpg. The cassette follows props/shiohama-cassette-label.jpg and reads SHIOHAMA in full. The notebook follows props/daniel-voss-notebook-cover.jpg; DANIEL VOSS is on the inside cover, partly under the cassette. The underlined line is not shown.
 

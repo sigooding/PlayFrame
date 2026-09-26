@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 6
 ID: neonoire-shot-178
 IMAGE: 176-were-closed.jpg
-NOTE: Generated from shot 172. Mr. Noda doesn't read clearly as Japanese in this study and is at the desk rather than behind the counter. Shot 262 puts him low beside it.
+NOTE: Generated from shot 172, then reframed in the consistency pass of 26 September 2026 after moderation blocked the weapons-up entry: the two masked men are silhouettes in the headlight glare with no weapons in frame, and the entry reads through the raining plaster and the smashed souvenir case instead. Mr. Noda is the older Japanese man in the brown cardigan of s46/213-clutch-each-other.jpg, on the staff side of the wooden counter. The CRT shows baseball and is never static. Shot 262 puts him low behind it.
 
 ---
 
@@ -33,7 +33,7 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-262
 IMAGE: 177-behind-the-counter.jpg
-NOTE: Coverage, shot 262. Mr. Noda follows s46/213-clutch-each-other.jpg: older Japanese man, brown cardigan. He has no card. The lobby follows s32/170-just-one-night.jpg, now cold. The CRT shows baseball and is never static. No weapons in frame. CAVEAT: he is low beside the counter, not behind it. Shot 269 is the staff side.
+NOTE: Coverage, shot 262, retaken in the consistency pass of 26 September 2026. Mr. Noda follows s46/213-clutch-each-other.jpg: older Japanese man, brown cardigan. He has no card. He now crouches BEHIND the wooden counter, the counter between him and the door, only his head and one shoulder showing; a same-frame edit restored the inn's CRT to its shelf, showing baseball, and it is never static. The lobby follows s32/170-just-one-night.jpg, now cold. No weapons in frame. Shot 269 is the staff side.
 
 ---
 

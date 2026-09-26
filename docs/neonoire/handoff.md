@@ -2,7 +2,7 @@
 
 ## Current state — 26 September 2026
 
-The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **all 100 scenes, 269 shots** — the first boarding (1–240) plus coverage (241–269) as of 26 September 2026. **All 269 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is [coverage 265–269](passes/coverage-265-269.md): Vera on the third stool, the one-metre gap, the wood corridor, and Mr. Noda on the staff side. Shots 160, 223 and 260 still seat her at the right end. Shot 262 still has him beside the counter. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s65 ...`.
+The final screenplay is `Neonoire (3).fountain`: **100 scenes**, unchanged. The numbered board covers **all 100 scenes, 269 shots** — the first boarding (1–240) plus coverage (241–269) as of 26 September 2026. **All 269 shot images are on disk; no placeholder slots remain.** All images are full-bleed 16:9, 1920×1080 JPEG. The newest pass is **[consistency retakes one](passes/consistency-retakes-1.md)**: eight installed retakes of logged flaws from ten calls — the third stool now one motif across shots 160, 161, 260, 265 (teal peacoat, red clip) and 225, 266 (charcoal coat), with the 金子 board the only sign in scene 100 and at the lunch counter; Mr. Noda one man behind the counter in 178, 262 and 269, the inn's CRT back on its shelf showing baseball; Jack's hands a weathered 48 in 259 with SHIOHAMA legible in full. One call was blocked by moderation and reframed once (178: plaster and glare instead of weapons). Carried: 261's ryokan corridor (268 is the wood), the second barber pole in 170 and 248, 243's katakana, 264's last A, 253's price list, 267's fence, 256's beside-the-counter, 225's third customer, 189/190 and 196 as set notes. Review sheets are one command: `npm run review:neonoire -- <out.jpg> s65 ...`.
 
 ## Note to the next agent — how consistency is kept here
 
@@ -20,7 +20,7 @@ The director's first and lasting request is **scene and character consistency**.
 - **Recurring props:**
   - The red bird clip: `s1/03`, `s98/154`.
   - The key with its round 87 tag: `s1/16`.
-  - The hand-painted noodle-shop sign: `s86/121`.
+  - The hand-painted noodle-shop sign: `s86/121`, and as one board — cream wood, the two brush kanji 金子, a painted bowl, per shot 185's sketchbook — in scene 100 (`s100/158`) and at the lunch counter (`s56/223`) since the retake pass of 26 September 2026.
   - The pale blue umbrella: `s4/34`.
   - The family photograph: `s4/35`.
 - **Re-list reference filenames with `ls` immediately before generating.** Parallel passes rename assets (shot numbers shift when a scene gains a frame); a stale path costs a generation and returns "Source image not found".
