@@ -45,4 +45,16 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-260
 IMAGE: 160-the-clip.jpg
-NOTE: Coverage, shot 260. Vera follows sheets/vera.jpg in Look F, the teal peacoat from s100/158-the-third-stool.jpg. The red bird clip is visible. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: she is still at the right end, not on the third stool. Re-seat her on set.
+NOTE: Coverage, shot 260. Vera follows sheets/vera.jpg in Look F, the teal peacoat from s100/158-the-third-stool.jpg. The red bird clip is visible. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: she is still at the right end, not on the third stool. Shot 265 is the count.
+
+---
+
+265. WIDE — 35mm, static, high angle — stool three.
+From above, six round stools in one row. From the left: two empty, Vera on the third in the teal peacoat with the red bird clip, then three empty stools. Kaneko works the pot under the bare bulb in the brick arch.
+SCRIPT: "Vera sits on the third stool."
+CAST: Vera Voss, Kaneko
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-265
+IMAGE: 161-stool-three.jpg
+NOTE: Coverage, shot 265. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, teal peacoat, red bird clip. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: the hanging sign is not the old sign from s86/121-the-shutter.jpg. The face is mostly the back of the head. Shots 160 and 260 still seat her at the right end.

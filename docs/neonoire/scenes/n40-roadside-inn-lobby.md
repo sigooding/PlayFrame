@@ -33,4 +33,16 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-262
 IMAGE: 177-behind-the-counter.jpg
-NOTE: Coverage, shot 262. Mr. Noda follows s46/213-clutch-each-other.jpg: older Japanese man, brown cardigan. He has no card. The lobby follows s32/170-just-one-night.jpg, now cold. The CRT shows baseball and is never static. No weapons in frame. CAVEAT: he is low beside the counter, not behind it.
+NOTE: Coverage, shot 262. Mr. Noda follows s46/213-clutch-each-other.jpg: older Japanese man, brown cardigan. He has no card. The lobby follows s32/170-just-one-night.jpg, now cold. The CRT shows baseball and is never static. No weapons in frame. CAVEAT: he is low beside the counter, not behind it. Shot 269 is the staff side.
+
+---
+
+269. MEDIUM — 35mm, static, eye level — staff side.
+The camera is behind Mr. Noda. He crouches on the staff side of the counter, his back to us, the counter between him and the lobby. Past it: the pink payphone, the chairs, the stairs, and baseball on the CRT.
+SCRIPT: "Mr. Noda throws himself behind the counter."
+CAST: Mr. Noda
+LIGHT: Low key
+TIME: 5
+ID: neonoire-shot-269
+IMAGE: 178-staff-side.jpg
+NOTE: Coverage, shot 269. Mr. Noda follows s46/213-clutch-each-other.jpg. He is on the staff side, the counter between him and the lobby. The CRT shows baseball and is never static. No weapons. CAVEAT: the counter reads more like a desk than the lobby's simple wooden counter.

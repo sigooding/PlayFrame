@@ -16,6 +16,7 @@ export const endingImages = [
   "/images/neonoire/s100/158-the-third-stool.jpg",
   "/images/neonoire/s100/159-she-doesnt-turn.jpg",
   "/images/neonoire/s100/160-the-clip.jpg",
+  "/images/neonoire/s100/161-stool-three.jpg",
   "/images/neonoire/s98/239-his-own-face.jpg",
 ];
 

@@ -7,6 +7,7 @@ export const escapeImages = [
   "/images/neonoire/s89/129-she-lets-him.jpg",
   "/images/neonoire/s90/130-the-roof.jpg",
   "/images/neonoire/s90/131-she-jumps.jpg",
+  "/images/neonoire/s90/132-the-gap.jpg",
   "/images/neonoire/s91/132-the-rails-sing.jpg",
   "/images/neonoire/s91/133-inches-apart.jpg",
   "/images/neonoire/s91/134-the-walkway-is-empty.jpg",

@@ -61,7 +61,7 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 100, "All one hundred scenes of the screenplay are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 264;
+const EXPECTED_SHOTS = 269;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 assert.equal(project.frames.length, EXPECTED_SHOTS, "The sixty-five boarded scenes carry 205 numbered shots");
 assert.equal(project.characters.length, 18);
@@ -310,7 +310,7 @@ pass("scenes 85–88 boarded: nine 16:9 shots, the raid on the Hive, Kaneko and 
 
 // Scenes 89–92: the escape.
 const escape = project.frames.filter(f => ["neonoire-s89", "neonoire-s90", "neonoire-s91", "neonoire-s92"].includes(f.sceneId));
-assert.deepEqual(escape.map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${130 + i}`));
+assert.deepEqual(escape.filter(f => shotNo(f) <= 138).map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${130 + i}`));
 assert.deepEqual(new Set(escape.map(f => f.image)), new Set(escapeImages));
 for (const frame of escape) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
@@ -507,7 +507,13 @@ assert(coverage.find(f => f.id === "neonoire-shot-262").notes.includes("never st
 assert(coverage.find(f => f.id === "neonoire-shot-263").notes.includes("too small"), "Shot 263 holds the umbrella at a size the faces can take");
 assert(coverage.find(f => f.id === "neonoire-shot-264").notes.includes("SHIOHAM"), "Shot 264 locks the cassette label as far as the thumb allows");
 assert(coverage.find(f => f.id === "neonoire-shot-264").notes.includes("under the thumb"), "Shot 264 does not claim the last letter is clear");
-pass("coverage pass: shots 241–264 — named beats the first boarding left, through the shoulder, the stamp, the box, the laugh and the cassette");
+assert(coverage.find(f => f.id === "neonoire-shot-265").notes.includes("third from the left"), "Shot 265 seats Vera on the third stool");
+assert(coverage.find(f => f.id === "neonoire-shot-265").notes.includes("two empty stools to her left"), "Shot 265 keeps the empty stools to her left");
+assert(coverage.find(f => f.id === "neonoire-shot-266").notes.includes("third from the left"), "Shot 266 seats Vera on the third stool at the Hive");
+assert(coverage.find(f => f.id === "neonoire-shot-267").notes.includes("one-metre gap"), "Shot 267 boards the gap");
+assert(coverage.find(f => f.id === "neonoire-shot-268").notes.includes("not a ryokan"), "Shot 268 keeps the corridor off the ryokan");
+assert(coverage.find(f => f.id === "neonoire-shot-269").notes.includes("staff side"), "Shot 269 puts Mr. Noda on the staff side");
+pass("coverage pass: shots 241–269 — named beats the first boarding left, through the third stool, the gap and the staff side");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 

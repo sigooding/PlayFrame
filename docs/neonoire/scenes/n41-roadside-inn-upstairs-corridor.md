@@ -33,4 +33,16 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-261
 IMAGE: 178-the-screens.jpg
-NOTE: Coverage, shot 261, the corridor angle shot 179's note asked for. Jack follows sheets/jack.jpg, seen from behind. No weapons in frame. The inn's cold blue. CAVEAT: the corridor reads more like a ryokan than the lobby's 1975 wood; keep the two on the same building on set.
+NOTE: Coverage, shot 261, the corridor angle shot 179's note asked for. Jack follows sheets/jack.jpg, seen from behind. No weapons in frame. The inn's cold blue. CAVEAT: the corridor reads more like a ryokan than the lobby's 1975 wood. Shot 268 is the wood.
+
+---
+
+268. WIDE — 35mm, static, eye level — same wood.
+A narrow upstairs corridor of wood doors and wood panel, cold blue. Paper panels on the doors are torn in a line of holes. Jack walks away from camera. No one else.
+SCRIPT: "The paper screens along one wall burst apart in a line of holes."
+CAST: Jack
+LIGHT: Low key
+TIME: 5
+ID: neonoire-shot-268
+IMAGE: 179-same-wood.jpg
+NOTE: Coverage, shot 268. The corridor follows s32/170-just-one-night.jpg in wood and proportion, not a ryokan. Jack follows sheets/jack.jpg, seen from behind. The paper screens are torn in a line. No weapons. CAVEAT: the paneling is darker and more complete than the lobby's cream walls; keep them on the same building on set.

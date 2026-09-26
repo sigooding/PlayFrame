@@ -21,5 +21,17 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-225
 IMAGE: 223-the-third-stool.jpg
-NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him; seat Vera there exactly on the day, as in shots 189 and 190's caveat.
+NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him; seat Vera there exactly on the day, as in shots 189 and 190's caveat. Shot 266 is the count.
+
+---
+
+266. MEDIUM WIDE — 35mm, static, eye level — stool three.
+Six round stools in one row. From the left: empty, empty, Vera on the third, then three empty stools. She wears the charcoal coat. Kaneko works the pot under the fluorescent tube.
+SCRIPT: "Vera sits on the third stool."
+CAST: Vera Voss, Kaneko
+LIGHT: Overcast soft
+TIME: 6
+ID: neonoire-shot-266
+IMAGE: 224-stool-three.jpg
+NOTE: Coverage, shot 266. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, charcoal coat, no hair clip. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: the stall reads street-facing, more open than the interior in s56/223-the-third-stool.jpg; keep them the same shop on set.
 

@@ -347,7 +347,7 @@ export const SCENES = [
     page: "n90-the-hive-rooftop-continuous.md", board: "n90-hive-rooftop.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "24mm over the forest of the roof, 35mm for the jump. Rain and wind.",
-    description: "Continuous. Rain and wind across the Hive's roof: water tanks, aerials, laundry poles, pigeon cages, and Tokyo lit and indifferent in every direction. At the edge, a metre away, the railway maintenance walkway. Jack helps Vera over the gap; she jumps, and he follows. BOARDED — 2 shots (132–133).",
+    description: "Continuous. Rain and wind across the Hive's roof: water tanks, aerials, laundry poles, pigeon cages, and Tokyo lit and indifferent in every direction. At the edge, a metre away, the railway maintenance walkway. Jack helps Vera over the gap; she jumps, and he follows. BOARDED — 3 shots (132–133, and 267, the gap).",
     lightingNotes: "The city's sodium and green glow, rain streaks, no practicals on the roof.",
   },
   {
@@ -447,7 +447,7 @@ export const SCENES = [
     page: "n100-kaneko-s-new-counter-night.md", board: "n100-kaneko-new-counter.md",
     cast: ["Vera Voss", "Kaneko", "Jack"],
     grammar: "35mm for the arch, 50mm from behind Vera for the hold.",
-    description: "A tiny counter in a brick railway arch under the old sign. Vera on the third stool, the red bird clip in her hair. The door opens; a man's shadow falls across the floor. Kaneko sets a second bowl in front of the fourth stool. She doesn't turn. BOARDED — 2 shots (160–161). Vera in costume Look F.",
+    description: "A tiny counter in a brick railway arch under the old sign. Vera on the third stool, the red bird clip in her hair. The door opens; a man's shadow falls across the floor. Kaneko sets a second bowl in front of the fourth stool. She doesn't turn. BOARDED — 4 shots (160–161, 260, and 265, the count). Vera in costume Look F.",
     lightingNotes: "One warm bulb and steam in a brick vault, cool blue street light through the door.",
   },
   {
@@ -557,7 +557,7 @@ export const SCENES = [
     page: "n40-roadside-inn-lobby-continuous.md", board: "n40-roadside-inn-lobby.md",
     cast: ["The Masked Men"],
     grammar: "50mm from shot 172's position.",
-    description: "Two masked men come through the door. A burst into the ceiling; the souvenir case shatters; the CRT keeps playing baseball. BOARDED — 1 shot (178).",
+    description: "Two masked men come through the door. A burst into the ceiling; the souvenir case shatters; the CRT keeps playing baseball. BOARDED — 3 shots (178, 262, and 269, the staff side).",
     lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
   },
   {
@@ -567,7 +567,7 @@ export const SCENES = [
     page: "n41-roadside-inn-upstairs-corridor-continuous.md", board: "n41-roadside-inn-upstairs-corridor.md",
     cast: ["Jack", "The Masked Men"],
     grammar: "50mm from the identical position to shot 173.",
-    description: "Jack at the top of the stairs hears boots below and goes the other way. The stair frame repeated in the cold: the refuge becomes a trap. BOARDED — 1 shot (179).",
+    description: "Jack at the top of the stairs hears boots below and goes the other way. The stair frame repeated in the cold: the refuge becomes a trap. BOARDED — 3 shots (179, 261, and 268, the wood).",
     lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
   },
   {
@@ -937,7 +937,7 @@ export const SCENES = [
     page: "n56-kaneko-s-noodle-counter-continuous.md", board: "n56-vera-on-the-third-stool.md",
     cast: ["Vera Voss", "Kaneko"],
     grammar: "35mm frontal to the counter, as always.",
-    description: "Vera on the third stool: I was here when I was a child. Kaneko freezes for just a second at the pot — he always paid too much. BOARDED — 1 shot (225).",
+    description: "Vera on the third stool: I was here when I was a child. Kaneko freezes for just a second at the pot — he always paid too much. BOARDED — 2 shots (225, and 266, the count).",
     lightingNotes: "Lunchtime steam and grey daylight.",
   },
   {
