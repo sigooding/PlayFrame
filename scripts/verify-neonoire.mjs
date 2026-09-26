@@ -159,6 +159,8 @@ for (const frame of coldOpen) {
   }
 }
 pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
+const backsOut = project.frames.find(frame => frame.id === "neonoire-shot-13");
+assert(backsOut.notes.includes("backs out") && backsOut.notes.includes("does not turn") && backsOut.notes.includes("reverse lamps"), "Shot 13 locks the reverse: the alley will not take a turn");
 
 // Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
