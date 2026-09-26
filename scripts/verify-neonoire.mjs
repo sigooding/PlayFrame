@@ -555,10 +555,16 @@ assert(fence267.notes.includes("waist-high"), "Shot 267 keeps the walkway rail w
 pass("consistency retakes two: one pole on the cold-open street, the strap untouched, the 1975 wood corridor, the katakana card, three customers, a waist-high rail");
 
 // Cast-sheet pass, 26 September 2026: the recurring cast and the film's last costume carry identity sheets.
-for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repairman", "harada", "young-detective", "vera-look-f"]) {
+for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repairman", "harada", "young-detective", "vera-look-f", "vera-look-b", "mara-hiding", "masked-man"]) {
   assert.deepEqual(jpegDimensions(`/images/neonoire/sheets/${sheet}.jpg`), [1920, 1080], `${sheet}'s identity sheet is 16:9`);
 }
-pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective and Vera's Look F carry identity sheets");
+pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective, the masked man and Vera's Looks B and F carry identity sheets");
+
+// Looks-and-props pass, 26 September 2026: the legible-text props carry clean masters beside the cassette label and the notebook cover.
+for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-tag", "kaneko-sign-board", "locker-room-sign", "service-road-852"]) {
+  assert.deepEqual(jpegDimensions(`/images/neonoire/props/${prop}.jpg`), [1920, 1080], `${prop}'s prop master is 16:9`);
+}
+pass("prop masters: the card, the clipping, the 87 tag, the sign board, the locker sign and the 8:52 sign carry clean legible masters");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
