@@ -21,4 +21,4 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-237
 IMAGE: 235-rice-balls-for-the-car.jpg
-NOTE: The storeroom follows s25/200-the-number-114.jpg; Kaneko is held to s86/123-fifty-years.jpg and Mara to sheets/mara.jpg in the borrowed coat over the brown cardigan. The parcel is rice balls in newspaper; the cloth bag carries the toothbrush, the cardigan and the torn sketchbook pages. The stools she is told to sit on are the third stool's.
+NOTE: The storeroom follows s25/200-the-number-114.jpg; Kaneko is held to s86/123-fifty-years.jpg, now sheeted as sheets/kaneko.jpg, and Mara to sheets/mara-hiding.jpg — the borrowed cardigan over the grey tee, no bird clip. The parcel is rice balls in newspaper; the cloth bag carries the toothbrush, the cardigan and the torn sketchbook pages. The stools she is told to sit on are the third stool's.

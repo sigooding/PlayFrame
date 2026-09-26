@@ -6,7 +6,7 @@ The [screenplay page](../screenplay/n72-hotel-lounge-night.md) is unchanged. Thi
 
 Two new shots, **69–70**, 1920×1080, full-bleed 16:9. Normal 50mm lenses, low **level** camera, no tracking or push-in. The rare frontal face shot is earned by the call, not a beauty-commercial look. Warm amber/olive colour rather than black and white. Both images are generated in the first ten-image revision session.
 
-Vera matches `sheets/vera-face.jpg`, and her wine-red silk dress is sheeted since the looks-and-props pass of 26 September 2026 as `sheets/vera-look-b.jpg`. She is pretty here: dry groomed hair, carefully applied clean mascara/liner and rose-red lipstick. Shock does not prematurely ruin her makeup. Her mother's wine-red silk dress has broad straps, a modest cowl neckline and a calf-length bias-cut skirt; both low red court shoes remain on. The rain changes this only in scene 73. `s72/69-the-wait.jpg` is the new hotel/wardrobe master, also used for scene 75's empty lounge.
+Vera matches `sheets/vera-face.jpg`. She is pretty here: dry groomed hair, carefully applied clean mascara/liner and rose-red lipstick. Shock does not prematurely ruin her makeup. Her mother's wine-red silk dress has broad straps, a modest cowl neckline and a calf-length bias-cut skirt; both low red court shoes remain on. The rain changes this only in scene 73. `s72/69-the-wait.jpg` is the new hotel/wardrobe master, also used for scene 75's empty lounge.
 
 Stable IDs 85–86 are new; the displayed board numbers are 69–70. Older frame IDs and asset filenames are preserved so existing shot links do not silently become different scenes.
 

@@ -6957,7 +6957,7 @@
         "neonoire-mara",
         "neonoire-kaneko"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 24; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe storeroom follows s25/200-the-number-114.jpg; Kaneko is held to s86/123-fifty-years.jpg and Mara to sheets/mara.jpg in the borrowed coat over the brown cardigan. The parcel is rice balls in newspaper; the cloth bag carries the toothbrush, the cardigan and the torn sketchbook pages. The stools she is told to sit on are the third stool's.\n\nSCRIPT — the draft's own words for this shot:\n\"Come back with your sister. Sit on the stools. Both of you. Eat everything.\"\n\nThe warmest light in the Hive, on two faces and a parcel.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 24 of 27 — ten keyframes at a time, in screenplay order. Shot 237 of 269."
+      "notes": "Image: AI-generated storyboard study from pass 24; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe storeroom follows s25/200-the-number-114.jpg; Kaneko is held to s86/123-fifty-years.jpg, now sheeted as sheets/kaneko.jpg, and Mara to sheets/mara-hiding.jpg — the borrowed cardigan over the grey tee, no bird clip. The parcel is rice balls in newspaper; the cloth bag carries the toothbrush, the cardigan and the torn sketchbook pages. The stools she is told to sit on are the third stool's.\n\nSCRIPT — the draft's own words for this shot:\n\"Come back with your sister. Sit on the stools. Both of you. Eat everything.\"\n\nThe warmest light in the Hive, on two faces and a parcel.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 24 of 27 — ten keyframes at a time, in screenplay order. Shot 237 of 269."
     },
     {
       "id": "neonoire-shot-238",
@@ -7967,7 +7967,7 @@
       "name": "Mrs. Noda",
       "role": "Innkeeper, roadside inn",
       "age": "60s",
-      "description": "Japanese. Sixties, broad and unbothered, sleeves rolled, an apron over a cardigan. She runs the roadside inn with Mr. Noda: the sticking back door, the steamy window, the truck parked crooked with the keys in it. She smokes on the step under the eave, and crouches behind the steel counter when the boots come. No identity sheet yet: held to the scene 33 master.",
+      "description": "Japanese. Sixties, broad and unbothered, sleeves rolled, an apron over a cardigan. She runs the roadside inn with Mr. Noda: the sticking back door, the steamy window, the truck parked crooked with the keys in it. She smokes on the step under the eave, and crouches behind the steel counter when the boots come. Sheeted 26 September 2026; the scene 33 master still carries the room.",
       "traits": [
         "Unbothered",
         "Kind",
@@ -7975,15 +7975,15 @@
       ],
       "color": "clay",
       "createdAt": "2026-09-24T00:00:00.000Z",
-      "relations": [],
-      "image": "/images/neonoire/s33/206-the-window-swollen-shut.jpg"
+      "image": "/images/neonoire/sheets/mrs-noda.jpg",
+      "relations": []
     },
     {
       "id": "neonoire-mr-noda",
       "name": "Mr. Noda",
       "role": "Innkeeper, roadside inn",
       "age": "70s",
-      "description": "Japanese. Seventies, thin and slow-moving, a cardigan over his shirt, asleep in front of the night baseball with the game still on. He parks the old pickup crooked across the path, and has promised to fix the back door since the Olympics. No identity sheet yet: held to the scene 35 master.",
+      "description": "Japanese. Seventies, thin and slow-moving, a cardigan over his shirt, asleep in front of the night baseball with the game still on. He parks the old pickup crooked across the path, and has promised to fix the back door since the Olympics. Sheeted 26 September 2026; the scene 35 master still carries the room.",
       "traits": [
         "Slow",
         "Gentle",
@@ -7991,15 +7991,15 @@
       ],
       "color": "sage",
       "createdAt": "2026-09-24T00:00:00.000Z",
-      "relations": [],
-      "image": "/images/neonoire/s35/207-the-pink-payphone.jpg"
+      "image": "/images/neonoire/sheets/mr-noda.jpg",
+      "relations": []
     },
     {
       "id": "neonoire-okada",
       "name": "Okada",
       "role": "Bar owner",
       "age": "60s",
-      "description": "Japanese. Sixties, the owner of the small Kanda bar where the journalist died. Gaunt, close-cropped white hair, a lined tired face, a white shirt with the sleeves rolled and a dark navy apron. He kept Sakai's cassette in the tray of his cash drawer. When he sees Jack's face and hands he doesn't ask; he pours two glasses instead. No identity sheet yet: held to the scene 81 master.",
+      "description": "Japanese. Sixties, the owner of the small Kanda bar where the journalist died. Gaunt, close-cropped white hair, a lined tired face, a white shirt with the sleeves rolled and a dark navy apron. He kept Sakai's cassette in the tray of his cash drawer. When he sees Jack's face and hands he doesn't ask; he pours two glasses instead. Sheeted 26 September 2026; the scene 81 master still carries the bar.",
       "traits": [
         "Discreet",
         "Loyal",
@@ -8007,6 +8007,7 @@
       ],
       "color": "sand",
       "createdAt": "2026-09-24T00:00:00.000Z",
+      "image": "/images/neonoire/sheets/okada.jpg",
       "relations": [
         {
           "id": "neonoire-link-okada-jack",
@@ -8014,15 +8015,14 @@
           "kind": "Ally",
           "note": "He kept Sakai's cassette in his cash drawer, and hands it over without asking what happened."
         }
-      ],
-      "image": "/images/neonoire/s81/100-the-bar-in-daylight.jpg"
+      ]
     },
     {
       "id": "neonoire-harada",
       "name": "Harada",
       "role": "Editor, Toto Shimbun",
       "age": "50s",
-      "description": "Japanese. Fifties, the editor of the Toto Shimbun; the dead journalist was her reporter. Grey hair in a short bob, reading glasses, a white blouse with the sleeves rolled. She presses PLAY, names Kurose, warns Jack he will be named, and opens a notebook to a clean page. No identity sheet yet: held to the scene 82 master.",
+      "description": "Japanese. Fifties, the editor of the Toto Shimbun; the dead journalist was her reporter. Grey hair in a short bob, reading glasses, a white blouse with the sleeves rolled. She presses PLAY, names Kurose, warns Jack he will be named, and opens a notebook to a clean page. Sheeted 26 September 2026; the scene 82 master still carries the newsroom.",
       "traits": [
         "Exacting",
         "Grieving",
@@ -8030,6 +8030,7 @@
       ],
       "color": "sage",
       "createdAt": "2026-09-24T00:00:00.000Z",
+      "image": "/images/neonoire/sheets/harada.jpg",
       "relations": [
         {
           "id": "neonoire-link-harada-journalist",
@@ -8043,15 +8044,14 @@
           "kind": "Ally",
           "note": "He brings her the tape and offers himself as the witness: start with my part."
         }
-      ],
-      "image": "/images/neonoire/s82/104-the-newsroom.jpg"
+      ]
     },
     {
       "id": "neonoire-kurose",
       "name": "Kurose",
       "role": "Chairman, Kurose Development",
       "age": "70s",
-      "description": "Japanese. Seventies, the chairman of Kurose Development, whose redevelopment model puts a fountain where the Hive stands. Silver hair combed back, a beautiful dark navy suit, the stillness of a man who has never had to hurry. His English is perfect and old-fashioned. Courteous and curious, he pours the tea himself. Good men are very expensive. No identity sheet yet: held to the scene 83 master.",
+      "description": "Japanese. Seventies, the chairman of Kurose Development, whose redevelopment model puts a fountain where the Hive stands. Silver hair combed back, a beautiful dark navy suit, the stillness of a man who has never had to hurry. His English is perfect and old-fashioned. Courteous and curious, he pours the tea himself. Good men are very expensive. Sheeted 26 September 2026; the scene 83 master still carries the office.",
       "traits": [
         "Courteous",
         "Patient",
@@ -8059,6 +8059,7 @@
       ],
       "color": "rose",
       "createdAt": "2026-09-24T00:00:00.000Z",
+      "image": "/images/neonoire/sheets/kurose.jpg",
       "relations": [
         {
           "id": "neonoire-link-kurose-ishida",
@@ -8072,15 +8073,14 @@
           "kind": "Enemy",
           "note": "Her father wrote his name on every page; she goes to his office to see his face."
         }
-      ],
-      "image": "/images/neonoire/s83/110-very-expensive.jpg"
+      ]
     },
     {
       "id": "neonoire-kaneko",
       "name": "Kaneko",
       "role": "Noodle counter, the Hive",
       "age": "70s",
-      "description": "Japanese. Seventies, tiny and sharp-eyed, grey hair in a small bun, a faded indigo apron over a brown cardigan. She runs the six-seat noodle counter in the Hive, hid Mara in her storeroom and then Jack, and brings Vera to see where Mara was. When the masked men come she pulls down the shutter, sends them up to the roof, and stays: I have lived here fifty years. No identity sheet yet: held to the scene 86 master.",
+      "description": "Japanese. Seventies, tiny and sharp-eyed, grey hair in a small bun, a faded indigo apron over a brown cardigan. She runs the six-seat noodle counter in the Hive, hid Mara in her storeroom and then Jack, and brings Vera to see where Mara was. When the masked men come she pulls down the shutter, sends them up to the roof, and stays: I have lived here fifty years. Sheeted 26 September 2026; the scene 86 master still carries the counter.",
       "traits": [
         "Sharp",
         "Stubborn",
@@ -8088,6 +8088,7 @@
       ],
       "color": "clay",
       "createdAt": "2026-09-24T00:00:00.000Z",
+      "image": "/images/neonoire/sheets/kaneko.jpg",
       "relations": [
         {
           "id": "neonoire-link-kaneko-jack",
@@ -8101,15 +8102,14 @@
           "kind": "Ally",
           "note": "She hid Mara behind the curtain of her noodle counter."
         }
-      ],
-      "image": "/images/neonoire/s86/123-fifty-years.jpg"
+      ]
     },
     {
       "id": "neonoire-radio-repairman",
       "name": "The Radio Repairman",
       "role": "The Hive",
       "age": "70s",
-      "description": "Japanese. Seventies, thin, round glasses, a grey cardigan, a loupe pushed up on his forehead. He hears boots in the corridor, looks at the fuse box on his wall, and pulls the main switch, and the whole Hive goes dark. Unnamed; no identity sheet.",
+      "description": "Japanese. Seventies, thin, round glasses, a grey cardigan, a loupe pushed up on his forehead. He hears boots in the corridor, looks at the fuse box on his wall, and pulls the main switch, and the whole Hive goes dark. Unnamed; sheeted 26 September 2026, round glasses and grey cardigan per the shop master.",
       "traits": [
         "Watchful",
         "Quiet",
@@ -8117,15 +8117,15 @@
       ],
       "color": "sage",
       "createdAt": "2026-09-24T00:00:00.000Z",
-      "relations": [],
-      "image": "/images/neonoire/s87/124-the-repairman.jpg"
+      "image": "/images/neonoire/sheets/repairman.jpg",
+      "relations": []
     },
     {
       "id": "neonoire-young-detective",
       "name": "The Young Detective",
       "role": "Police",
       "age": "20s",
-      "description": "Japanese. Late twenties, neat short black hair, white shirt and dark tie, sleeves rolled. The morning after Ishida gets into the black car, he clears Ishida's desk into a cardboard box and opens the bottom drawer: empty. Unnamed; no identity sheet.",
+      "description": "Japanese. Late twenties, neat short black hair, white shirt and dark tie, sleeves rolled. The morning after Ishida gets into the black car, he clears Ishida's desk into a cardboard box and opens the bottom drawer: empty. Unnamed; sheeted 26 September 2026.",
       "traits": [
         "Neat",
         "Incurious",
@@ -8133,8 +8133,8 @@
       ],
       "color": "sand",
       "createdAt": "2026-09-24T00:00:00.000Z",
-      "relations": [],
-      "image": "/images/neonoire/s96/143-the-box.jpg"
+      "image": "/images/neonoire/sheets/young-detective.jpg",
+      "relations": []
     }
   ],
   "notes": [
@@ -8929,8 +8929,8 @@
     },
     {
       "id": "neonoire-look-cast",
-      "title": "Continuity — Mara, Vera and Jack",
-      "description": "Canonical identities, including Jack's new 48-year-old former-detective design, distinct from Daniel Voss in the family photograph. Any study that does not match these is reviewed.",
+      "title": "Continuity — the cast and their looks",
+      "description": "Canonical identities, including Jack's new 48-year-old former-detective design, distinct from Daniel Voss in the family photograph, and the identity sheets the recurring cast carry since 26 September 2026. Any study that does not match these is reviewed.",
       "actId": "neonoire-opening",
       "createdAt": "2026-09-24T00:00:00.000Z",
       "items": [
@@ -8957,32 +8957,82 @@
         {
           "id": "neonoire-look-cast-item-5",
           "image": "/images/neonoire/sheets/vera-look-e.jpg",
-          "caption": "Vera Voss — costume Look E, scene 98 (26 September 2026): a short boxy oatmeal car coat with a funnel collar, pale blue shirt collar, blue jeans, white trainers, hair dry. A different garment, not a recolour; scene 100's Look F is a deep teal peacoat (shot 160 is its master)."
+          "caption": "Vera Voss — costume Look E, scene 98 (26 September 2026): a short boxy oatmeal car coat with a funnel collar, pale blue shirt collar, blue jeans, white trainers, hair dry. A different garment, not a recolour."
         },
         {
           "id": "neonoire-look-cast-item-6",
+          "image": "/images/neonoire/sheets/vera-look-f.jpg",
+          "caption": "Vera Voss — costume Look F, scene 100 (sheeted 26 September 2026): a deep teal double-breasted peacoat over a cream roll-neck, the red bird clip in her hair; first framed in shot 160."
+        },
+        {
+          "id": "neonoire-look-cast-item-7",
+          "image": "/images/neonoire/sheets/mara-hiding.jpg",
+          "caption": "Mara Voss — the hiding look, scenes 13–17 (sheeted 26 September 2026): an old oatmeal-brown cardigan that isn't hers over the grey tee, no bird clip; Okada has it."
+        },
+        {
+          "id": "neonoire-look-cast-item-8",
           "image": "/images/neonoire/sheets/mara-face.jpg",
           "caption": "Mara — the face crop attached as a reference to every shot she appears in."
         },
         {
-          "id": "neonoire-look-cast-item-7",
+          "id": "neonoire-look-cast-item-9",
           "image": "/images/neonoire/sheets/vera-face.jpg",
           "caption": "Vera — the face crop attached as a reference to every shot she appears in."
         },
         {
-          "id": "neonoire-look-cast-item-8",
+          "id": "neonoire-look-cast-item-10",
           "image": "/images/neonoire/sheets/jack.jpg",
           "caption": "Jack (48) — recast 25 September 2026 as a white American: charcoal overcoat, off-white open collar, dark brown hair greying at the temples, grey-green eyes. Not Daniel Voss."
         },
         {
-          "id": "neonoire-look-cast-item-9",
+          "id": "neonoire-look-cast-item-11",
           "image": "/images/neonoire/sheets/jack-face.jpg",
           "caption": "Jack — face crop of the same generation, attached to every shot he appears in from scene 77."
         },
         {
-          "id": "neonoire-look-cast-item-10",
+          "id": "neonoire-look-cast-item-12",
           "image": "/images/neonoire/s4/35-the-photograph.jpg",
           "caption": "Daniel Voss with Vera (9) and Mara (4), twenty years ago; this father is not Jack."
+        },
+        {
+          "id": "neonoire-look-cast-item-13",
+          "image": "/images/neonoire/sheets/kaneko.jpg",
+          "caption": "Kaneko — identity sheet (26 September 2026): brown cardigan, charcoal roll-neck, indigo work apron; the scene 86 master still carries her counter."
+        },
+        {
+          "id": "neonoire-look-cast-item-14",
+          "image": "/images/neonoire/sheets/okada.jpg",
+          "caption": "Okada — identity sheet: white shirt rolled to the forearm, navy apron; the face crop keeps the old hands 264 and 233 need."
+        },
+        {
+          "id": "neonoire-look-cast-item-15",
+          "image": "/images/neonoire/sheets/kurose.jpg",
+          "caption": "Kurose — identity sheet: charcoal-grey suit, white shirt, dark silk tie; the scene 83 master still carries the fortieth floor."
+        },
+        {
+          "id": "neonoire-look-cast-item-16",
+          "image": "/images/neonoire/sheets/mr-noda.jpg",
+          "caption": "Mr. Noda — identity sheet: worn brown cardigan over a dark olive shirt; behind his counter in 178, 262 and 269."
+        },
+        {
+          "id": "neonoire-look-cast-item-17",
+          "image": "/images/neonoire/sheets/mrs-noda.jpg",
+          "caption": "Mrs. Noda — identity sheet: grey-green work jacket, beige apron; the pantry and the warm lobby still carry the inn."
+        },
+        {
+          "id": "neonoire-look-cast-item-18",
+          "image": "/images/neonoire/sheets/repairman.jpg",
+          "caption": "The Radio Repairman — identity sheet, retaken after the first described him from memory: round wire glasses, grey knitted cardigan, per s87/124."
+        },
+        {
+          "id": "neonoire-look-cast-item-19",
+          "image": "/images/neonoire/sheets/harada.jpg",
+          "caption": "Harada — identity sheet: grey bob, reading glasses, white blouse sleeves rolled, steel watch."
+        },
+        {
+          "id": "neonoire-look-cast-item-20",
+          "image": "/images/neonoire/sheets/young-detective.jpg",
+          "caption": "The Young Detective — identity sheet: white shirt, dark tie, grey trousers; scene 96's room still carries him."
         }
       ]
     }

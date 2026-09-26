@@ -9,7 +9,7 @@ Grammar: we don't see the Hive whole yet. Only this: flour, one bulb, and a phon
 
 ## Frame format — 26 September 2026
 
-All three shots (181–183) are **16:9, 1920×1080, full-bleed**, numbered in boarding order. The room follows `s84/115-the-storeroom.jpg`. **Mara** in hiding is sheeted since the looks-and-props pass of 26 September 2026 as `sheets/mara-hiding.jpg` (an old brown cardigan that isn't hers, no clip), over `sheets/mara.jpg` for her face. **Kaneko** is held to `s86/123-fifty-years.jpg`. The key follows `s1/16-the-key.jpg`, with its prop master `props/key-87-tag.jpg`. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
+All three shots (181–183) are **16:9, 1920×1080, full-bleed**, numbered in boarding order. The room follows `s84/115-the-storeroom.jpg`. **Mara** in hiding is sheeted as `sheets/mara-hiding.jpg` since 26 September 2026 (an old brown cardigan that isn't hers, no clip), her default look remaining `sheets/mara.jpg`. **Kaneko** is held to `s86/123-fifty-years.jpg`, now sheeted as `sheets/kaneko.jpg`. The key follows `s1/16-the-key.jpg`. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
 
 ---
 
