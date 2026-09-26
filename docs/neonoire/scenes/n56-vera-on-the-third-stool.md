@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-225
 IMAGE: 223-the-third-stool.jpg
-NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him; seat Vera there exactly on the day, as in shots 189 and 190's caveat. Shot 266 is the count.
+NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him. Retaken in the consistency pass of 26 September 2026: Vera sits on the third stool from the left with two empty stools to her left, in the charcoal coat, while Kaneko turns from the pot and freezes for just a second; the 金子 board hangs on the shutter wall as locked by shot 185's sketchbook. In consistency retakes two the third customer arrived: an elderly man in a grey work jacket on the fifth stool, hunched over his bowl, so the lunchtime counter carries the draft's three customers with Vera on the third stool and two empty stools to her left. Shot 266 is the count.
 
 ---
 

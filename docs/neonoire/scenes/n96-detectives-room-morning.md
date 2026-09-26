@@ -9,7 +9,7 @@ Grammar: grey daylight and a cardboard box. The bottom drawer, which held Mara's
 
 ## Frame format — 26 September 2026
 
-All three shots (145–147) are **16:9, 1920×1080, full-bleed**. The room is scene 80's `s80/94-the-long-room.jpg` in grey morning light, nearly empty. It has the **single** round black-rim clock and Ishida's desk with the green-dial radio, which is going into the box. The drawer and clock shots rhyme with scene 7's `s7/64-the-bottom-drawer.jpg` and `s7/68-the-clock.jpg`. **The young detective** has no sheet: Japanese, late twenties, neat short hair, white shirt, dark tie. These are AI-generated draft studies, not approved coverage.
+All three shots (145–147) are **16:9, 1920×1080, full-bleed**. The room is scene 80's `s80/94-the-long-room.jpg` in grey morning light, nearly empty. It has the **single** round black-rim clock and Ishida's desk with the green-dial radio, which is going into the box. The drawer and clock shots rhyme with scene 7's `s7/64-the-bottom-drawer.jpg` and `s7/68-the-clock.jpg`. **The young detective** is sheeted as `sheets/young-detective.jpg` since the cast-sheet pass of 26 September 2026: Japanese, late twenties, neat short hair, white shirt, dark tie. These are AI-generated draft studies, not approved coverage.
 
 ---
 

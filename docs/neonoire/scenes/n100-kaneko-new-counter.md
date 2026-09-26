@@ -9,7 +9,7 @@ Grammar: one warm bulb, the old sign, a second bowl. She doesn't turn.
 
 ## Frame format — 26 September 2026
 
-Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follows `s86/121-the-shutter.jpg`, and **Kaneko** is held to `s86/123-fifty-years.jpg`. The scene master is `s100/158-the-third-stool.jpg`. **Vera wears costume Look F**, which has no sheet; shot 160 is its master. It is a deep teal double-breasted peacoat, worn with the red bird clip in her hair. Jack appears only as a man in a coat, which is how the script keeps him. These are AI-generated draft studies, not approved coverage.
+Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follows `s86/121-the-shutter.jpg`, and **Kaneko** is held to `s86/123-fifty-years.jpg`, now sheeted as `sheets/kaneko.jpg`. The scene master is `s100/158-the-third-stool.jpg`. **Vera wears costume Look F**, sheeted since the cast-sheet pass of 26 September 2026 as `sheets/vera-look-f.jpg`, first framed in shot 160. It is a deep teal double-breasted peacoat, worn with the red bird clip in her hair. Jack appears only as a man in a coat, which is how the script keeps him. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-160
 IMAGE: 158-the-third-stool.jpg
-NOTE: The scene master, and Look F's first frame. In this study Vera sits at the right end of the counter, not on the third stool. The clip is shot 260, and she is still not on the third stool there either. "A train passes overhead. The bulb trembles." and the old ballad on the radio are sound over this frame.
+NOTE: The scene master, and Look F's first frame. Retaken in the consistency pass of 26 September 2026: Vera now sits on the THIRD of six stools — two empty stools to her left, three empty to her right — with the red bird clip visible, and the old hand-painted sign hangs on the brick wall: a cream wooden board, the two brush kanji 金子 and a painted noodle bowl, as locked by shot 185's sketchbook. Kaneko follows s86/123-fifty-years.jpg. Shots 260 and 161 are generated from this master, so the room, the light and the stool carry by construction; shot 265 is the high-angle count. "A train passes overhead. The bulb trembles." and the old ballad on the radio are sound over this frame.
 
 ---
 
@@ -33,7 +33,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-161
 IMAGE: 159-she-doesnt-turn.jpg
-NOTE: The last frame of the film, generated from shot 160. The man himself is visible in the doorway, where the script gives only his shadow, and the shadow stops short of her stool; keep him out of frame on set and let the shadow reach her. Then CUT TO BLACK, with a train and rain beginning again over black.
+NOTE: The last frame of the film, generated from the retaken shot 160 in the consistency pass of 26 September 2026, so the stool row and the 金子 sign carry from the master. The man himself is visible in the doorway, where the script gives only his shadow, and his long shadow crosses the floor toward her stool; keep him out of frame on set and let the shadow reach her. At this angle one empty stool reads to her left and the second is out of frame; the count is shot 265. Then CUT TO BLACK, with a train and rain beginning again over black.
 
 ---
 
@@ -45,7 +45,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-260
 IMAGE: 160-the-clip.jpg
-NOTE: Coverage, shot 260. Vera follows sheets/vera.jpg in Look F, the teal peacoat from s100/158-the-third-stool.jpg. The red bird clip is visible. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: she is still at the right end, not on the third stool. Shot 265 is the count.
+NOTE: Coverage, shot 260, retaken from the new master in the consistency pass of 26 September 2026. Vera follows sheets/vera.jpg in Look F, the teal peacoat, and now sits on the third stool with two empty stools to her left and three empty to her right; the red bird clip is bright in her hair. Kaneko follows s86/123-fifty-years.jpg; the 金子 board and the bulb carry from shot 160. The count is shot 265.
 
 ---
 
@@ -57,4 +57,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-265
 IMAGE: 161-stool-three.jpg
-NOTE: Coverage, shot 265. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, teal peacoat, red bird clip. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: the hanging sign is not the old sign from s86/121-the-shutter.jpg. The face is mostly the back of the head. Shots 160 and 260 still seat her at the right end.
+NOTE: Coverage, shot 265. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, teal peacoat, red bird clip. Kaneko follows s86/123-fifty-years.jpg. Retaken sign in the consistency pass of 26 September 2026: the hanging board is now the old hand-painted sign — cream wood, the two brush kanji 金子, the painted bowl — one sign across shots 160, 260, 161 and this count, as locked by shot 185's sketchbook. The face is mostly the back of the head. Shots 160 and 260 now seat her on the third stool too.
