@@ -22,3 +22,15 @@ TIME: 20
 ID: neonoire-shot-206
 IMAGE: 204-the-tea-she-does-not-want-to-pour.jpg
 NOTE: The altar photograph is held to `s1/07-old-man.jpg`. Tatami beige and altar gold, grief draining the warmth — the colour arc's drained interior. The TV behind Sakai is on and never static: a muted daytime variety audience (director's rule, 26 September 2026).
+
+---
+
+273. MEDIUM — 50mm, static, eye level — the receipts.
+Across the quilted kotatsu, Mrs Sakai's hands set down the thin bundle of yellowed carbon receipts bound in a rubber band in front of Jack; the brown teapot and the two poured cups stand between them, the altar and its smiling photograph keep the wall behind, the muted television grey at the frame's edge.
+SCRIPT: "She puts them in front of Jack."
+CAST: Jack, Mrs. Sakai
+LIGHT: Overcast soft
+TIME: 8
+ID: neonoire-shot-273
+IMAGE: 273-the-receipts.jpg
+NOTE: Coverage, shot 273. The room, the quilted cover, the tea things, the altar and Sakai's photograph hold to s29/204-the-tea-she-does-not-want-to-pour.jpg; Mrs Sakai stays in her navy indigo top with grey hair pinned back, Jack kneels opposite in the charcoal jacket and off-white collar per sheets/jack.jpg. The bundle is the one Jack spreads in scene 34, lettered there in s34/173-no-114.jpg; at this size it stays whole and unreadable — no legible text invented. Twenty years of Januaries change hands in this frame.

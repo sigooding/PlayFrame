@@ -12,9 +12,9 @@ Scope: **shots 1–28**, scenes 1–2, before the main titles. Preserve the verb
 - [x] **29–31 (scene 3)** — rebuilt 16:9 in the same session from the legacy studies' own geometry: the block between towers with its external stair, the train's blur on the elevated line, the one lit window. The `THREE DAYS LATER` super is a title added in the grade, never baked; the lit window's geometry between 29 and 31 is a production-review check.
 - [x] **32 (scene 3)** — the laundry insert, rebuilt 16:9 later on 26 September 2026 (batch four): shirt and towel on the line, two pegs, rain since before, the train's light crossing at the end. **No legacy 2.39:1 frame remains anywhere in the numbered board.**
 - [x] **Batch four detail fixes (same session)** — shot 235's lounge clock now reads 9:58 as scripted; shot 234's box now reads TOKYO in legible marker; shot 27's notebook now matches shot 20's brown leather wrap; shot 21's rain now falls through the open door behind Mara; shot 31's lit window now matches 29's geometry. Two prop masters added under `public/images/neonoire/props/`: the SHIOHAMA cassette label and the DANIEL VOSS green-cloth notebook cover.
-- [ ] **29–32 (scene 3)** — joins the revision list: from the final screenplay the whole film is 16:9, so scene 3's four legacy 2.39:1 studies are regenerated at 1920×1080, not cropped. The bundle builder marks each of them **16:9 REVISION PENDING**.
+- [x] **29–32 (scene 3) closed** — the last line above was stale: scene 3 is rebuilt, and the bundle builder no longer marks any frame **16:9 REVISION PENDING**. The old `awaitingAspect` scene-key flag was replaced by a dimension test that reads each JPEG's own bytes; all 269 frames that predate the final coverage pass were scanned and every one is exactly 1920×1080.
 
-The image service allows ten generations in a turn. Do not silently crop the remaining old images or label them as rebuilt. The generation limit was reached after batch 1; no shots after 10 were regenerated.
+The image service allows ten generations in a turn. Never silently crop a legacy image or label it as rebuilt: every revision above was regenerated at 1920×1080 from the scene masters.
 
 ## Consistency audit — 26 September 2026 (asked by the director)
 

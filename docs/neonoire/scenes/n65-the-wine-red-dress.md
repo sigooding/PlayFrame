@@ -22,3 +22,15 @@ TIME: 14
 ID: neonoire-shot-234
 IMAGE: 232-the-wine-red-dress.jpg
 NOTE: The dress follows s72/69-the-wait.jpg, the wardrobe master: broad straps, modest cowl neckline, calf-length bias skirt. The box's marker TOKYO is the mother's hand, legible at full size since the 26 September retake; the old steel lighter and the pale-blue umbrella go into the bag after this. Vera stays in her cream knit until the lounge.
+
+---
+
+277. MEDIUM — 50mm, static, eye level — borrowing it.
+At the apartment door in the wine-red dress with the small bag on her shoulder, Vera stops at the umbrella stand and lifts out the pale-blue umbrella by its curved wooden handle; the louvered cabinet and the family photograph stand behind her, the frosted sliding glass blue with rain at frame right.
+SCRIPT: "At the door she stops by the umbrella stand. The pale blue umbrella."
+CAST: Vera Voss
+LIGHT: Blue hour
+TIME: 8
+ID: neonoire-shot-277
+IMAGE: 277-borrowing-it.jpg
+NOTE: Coverage, shot 277. The entrance corner holds to s4/34-the-pale-blue-umbrella.jpg — white cylindrical stand, louvered wood cabinet, framed photograph on top, lace and sheer curtains, frosted rain glass — and the room's last grey light to s65/232-the-wine-red-dress.jpg; Vera wears Look B per sheets/vera-look-b.jpg and sheets/vera-face.jpg: the wine-red silk cowl dress, hair done, makeup on, both red court shoes, bag over her shoulder. The umbrella stays furled and bone dry, as it leans in scene 66. Her line to the empty room plays over the frame: Borrowing it. You'll get it back. She does not look back.

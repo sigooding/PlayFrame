@@ -23,3 +23,14 @@ ID: neonoire-shot-219
 IMAGE: 217-hat-in-hand.jpg
 NOTE: Ishida's bow held a moment too long belongs to the cut. His raincoat-and-hat state returns in scene 93 onward; lock it here.
 
+---
+
+274. MEDIUM WIDE — 35mm, static, low level — holds the bow.
+Grey dawn on the fortieth floor: Ishida bends in a slow deep bow before Kurose's leather chair, hat in both hands, his raincoat still wet and heavy; Kurose sits behind the lit brass lamp with his tea on the arm of the chair and watches, and the model case stands along the left edge of the frame.
+SCRIPT: "Ishida bows. Holds the bow a moment too long."
+CAST: Kurose, Detective Ishida
+LIGHT: Blue hour
+TIME: 8
+ID: neonoire-shot-274
+IMAGE: 274-holds-the-bow.jpg
+NOTE: Coverage, shot 274. Same room, same dawn and same furniture as s51/217-hat-in-hand.jpg — model case left, brass desk lamp lit warm against blue-grey glass, tea on the chair arm; Kurose per sheets/kurose.jpg in the beautiful navy suit, Ishida per sheets/ishida.jpg and sheets/ishida-face.jpg in the wet raincoat, hat held in both hands, bowing from standing, not kneeling. The bow held a moment too long is the tell the scene exists for. No papers, no weapons, no third figure.

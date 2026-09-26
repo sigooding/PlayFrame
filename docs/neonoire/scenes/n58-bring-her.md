@@ -23,3 +23,14 @@ ID: neonoire-shot-227
 IMAGE: 225-bring-her.jpg
 NOTE: Mara sliding down the wall behind the curtain belongs to the cut's last second; the frame holds the counter. The overpayment rhymes with Jack's in shot 189 and her father's before him.
 
+---
+
+276. MEDIUM — 50mm, static, low level — slides down the wall.
+Behind the storeroom curtain Mara gives way: her back runs down the plywood wall until she sits on the floor, one hand trailing the boards, her face swollen from crying and her eyes shut; the hanging bulb, the stacked flour sacks and the curtain's edge hold the same corner she stood in.
+SCRIPT: "Behind the curtain, Mara slides down the wall to the floor."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-276
+IMAGE: 276-slides-down-the-wall.jpg
+NOTE: Coverage, shot 276. The same corner as s57/224-three-feet-away.jpg — plywood walls, the FLOUR sacks, the bare bulb, the figure sketch taped at frame left, the curtain gap right; Mara follows sheets/mara-hiding.jpg exactly: unwashed ash-blonde hair, no red-bird clip, the borrowed brown cardigan over the grey tee, pale blue eyes. The counter side of the curtain is dark — Vera has gone. No blood, no injury, no knife, no new props.
