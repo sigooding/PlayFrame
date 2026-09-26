@@ -16,7 +16,8 @@
 
 - Verify asserts, by id, that the eight cast cards' `image` equals their sheet path — a future pass that points a card back at a scene frame fails the build.
 - Verify asserts the continuity board carries `vera-look-f`, `mara-hiding`, `kaneko` and `repairman`, and that all ten new sheet JPEGs are 1920×1080.
-- `check:assets` picks the sheets up through the bundle's character images and board items.
+- `check:assets` picks the sheets up through the bundle's character images and board items — 885 references, none missing.
+- The whole sheet wall after the merge, all 25 sheets in one frame: [review sheet](../../../public/images/neonoire/reviews/sheets-integration-pass-4.jpg).
 
 ## Honest caveats carried
 
