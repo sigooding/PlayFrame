@@ -32,3 +32,15 @@ TIME: 8
 ID: neonoire-shot-185
 IMAGE: 183-the-sketchbook.jpg
 NOTE: The sign's lettering is invented in this study; letter it correctly on set ("Every stroke of the kanji correct").
+
+---
+
+270. INSERT — 50mm, static, high angle — packed and zipped.
+The futon turned back at its corner: a small suitcase packed and zipped underneath, clothes pressed flat, a strap across its lid; Jack's charcoal sleeve and hand rest at its edge as he crouches on the tatami beside the low bed, the wall of Mara's sketches soft behind him.
+SCRIPT: "He crouches by the futon. A suitcase underneath, packed and zipped."
+CAST: Jack
+LIGHT: Overcast soft
+TIME: 8
+ID: neonoire-shot-270
+IMAGE: 270-packed-and-zipped.jpg
+NOTE: Coverage, shot 270. The room and its grey daylight hold to s14/182-someone-who-meant-to-come-back.jpg — same tatami, low bed, sketches taped to the wall, clothes on every surface; Jack follows sheets/jack.jpg, charcoal coat over the off-white collar, no tie. The suitcase is the one packed under the futon: the flight to America was booked for next month. Nothing legible on the case, no labels or tags invented; Mara and Vera stay out of frame.

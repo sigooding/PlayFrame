@@ -18,6 +18,7 @@ export const hiveFirstImages = [
   "/images/neonoire/s13/247-thirty-one.jpg",
   "/images/neonoire/s16/248-exactly-the-drawing.jpg",
   "/images/neonoire/s16/249-the-chair.jpg",
+  "/images/neonoire/s14/270-packed-and-zipped.jpg",
 ];
 
 export const hiveFirstLook = "16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare bulb, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one fluorescent tube, steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg and s97/146-tomorrows-tokyo.jpg, standing between new glass towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with its round 87 tag from s1/16-the-key.jpg. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.";
