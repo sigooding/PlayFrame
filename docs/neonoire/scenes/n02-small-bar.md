@@ -92,7 +92,7 @@ CAST: The Masked Men
 LIGHT: Practical night
 TIME: 12
 IMAGE: 27-the-notebook.jpg
-NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not. Carried caveat (26 September 2026): the notebook cover reads pale grey in this frame against the darker cover on the counter in shot 20; the board names no colour, and the beat holds, so the mismatch is logged here rather than spent a generation on.
+NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not. Fixed later on 26 September 2026: the frame now carries the same brown leather wrap notebook with its strap closure as shot 20's counter; the earlier pale-grey cover mismatch is closed.
 
 28. CLOSE-UP — 85mm, static, eye level — Mara in the blue TV glow.
 She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.

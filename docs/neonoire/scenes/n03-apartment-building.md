@@ -9,7 +9,7 @@ Grammar: dusk, not night, and the first time the film has been out in daylight o
 
 ## Frame format — 26 September 2026
 
-Shots 29–31 are rebuilt **16:9, 1920×1080, full-bleed** from the legacy studies' own geometry; shot 32 (the laundry insert) still holds its 2.39:1 study and is marked **16:9 REVISION PENDING** — the last legacy frame in the film. The `THREE DAYS LATER` super in shot 29 is a title, not photography: it is added in the grade and never baked into the keyframe. Carried caveat: the lit window's exact geometry differs slightly between 29 and 31 — a production-review check on the day.
+All four shots (29–32) are rebuilt **16:9, 1920×1080, full-bleed** — 29–31 earlier on 26 September 2026, the laundry insert 32 later the same day, closing the last legacy frame in the film. The lit window in 31 was regenerated to match 29's third-floor geometry, closing that production check. The `THREE DAYS LATER` super in shot 29 is a title, not photography: it is added in the grade and never baked into the keyframe.
 
 ---
 

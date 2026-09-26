@@ -21,4 +21,4 @@ LIGHT: Blue hour
 TIME: 14
 ID: neonoire-shot-234
 IMAGE: 232-the-wine-red-dress.jpg
-NOTE: The dress follows s72/69-the-wait.jpg, the wardrobe master: broad straps, modest cowl neckline, calf-length bias skirt. The box's marker TOKYO is the mother's hand; the old steel lighter and the pale-blue umbrella go into the bag after this. Vera stays in her cream knit until the lounge.
+NOTE: The dress follows s72/69-the-wait.jpg, the wardrobe master: broad straps, modest cowl neckline, calf-length bias skirt. The box's marker TOKYO is the mother's hand, legible at full size since the 26 September retake; the old steel lighter and the pale-blue umbrella go into the bag after this. Vera stays in her cream knit until the lounge.

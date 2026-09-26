@@ -21,4 +21,4 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-235
 IMAGE: 233-waiting-for-someone.jpg
-NOTE: The lounge follows s72/69 and s75/78; the pianist and the wall clock are new furniture for this room. The clock's hands read about 11:55, not the script's 9:58 — a production-review check, exactly as scene 72's clock already is. The umbrella is Mara's, borrowed in shot 234's scene; Jack never arrives at this bar.
+NOTE: The lounge follows s72/69 and s75/78; the pianist and the wall clock are new furniture for this room. The clock's hands read 9:58 as scripted, fixed on 26 September 2026; the first generation's ~11:55 hands remain logged as a production-review check caught by the crop-read rule. The umbrella is Mara's, borrowed in shot 234's scene; Jack never arrives at this bar.
