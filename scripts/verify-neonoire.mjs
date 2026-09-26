@@ -461,6 +461,11 @@ for (const frame of lastrain) assert.deepEqual(jpegDimensions(frame.image), [192
 assert(lastrain.find(f => f.id === "neonoire-shot-234").notes.includes("s72/69"), "Shot 234 locks the wine-red dress to the scene 72 wardrobe master");
 assert(lastrain.find(f => f.id === "neonoire-shot-235").notes.includes("production-review check"), "Shot 235 carries the lounge clock as a production-review check");
 assert(lastrain.find(f => f.id === "neonoire-shot-235").notes.includes("ash-blonde"), "Shot 235 locks Vera's ash-blonde hair to her sheets");
+for (const [sceneFile, needle, shotId] of [["n02-small-bar", "IMAGE: 20-the-journalist.jpg", "shot 20"], ["n18-office-after-the-last-train", "IMAGE: 189-after-the-last-train.jpg", "shot 191"], ["n29-mrs-sakai-house-day", "IMAGE: 204-the-tea-she-does-not-want-to-pour.jpg", "shot 206"], ["n45-roadside-inn-lobby-dark", "IMAGE: 178-thank-you-very-much.jpg", "shot 180"], ["n75-still-frames", "IMAGE: 81-static-in-a-window.jpg", "shot 83"], ["n77-jacks-office", "IMAGE: 85-the-desk-lamp.jpg", "shot 87"]]) {
+  const board = readFileSync(new URL(`../docs/neonoire/scenes/${sceneFile}.md`, import.meta.url), "utf8");
+  const block = board.split(/(?=^\d+\. )/m).find(b => b.includes(needle)) ?? "";
+  assert(block.includes("never static"), `${shotId} board note carries the TVs-never-static rule`);
+}
 assert(lastrain.find(f => f.id === "neonoire-shot-236").notes.includes("8:52"), "Shot 236 locks the service-road sign");
 assert(lastrain.find(f => f.id === "neonoire-shot-239").notes.includes("no weapons"), "Shot 239 keeps the ambush moderation-safe");
 assert(lastrain.find(f => f.id === "neonoire-shot-240").notes.includes("no blood"), "Shot 240 keeps Mara's death a scene of care");

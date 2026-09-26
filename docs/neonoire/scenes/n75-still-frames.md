@@ -58,4 +58,4 @@ LIGHT: Practical night
 TIME: 7
 ID: neonoire-shot-81
 IMAGE: 81-static-in-a-window.jpg
-NOTE: Replacement generated in session two. Same practical-light colour grammar, no programme, face, news ticker or readable overlay. Then CUT TO BLACK as the screenplay specifies; do not generate a title card or a sixth montage image.
+NOTE: Replacement generated in session two. Same practical-light colour grammar. Director's rule (26 September 2026): a TV that is on is never static — the window CRT now carries a cheerful late-night variety audience; still no face, news ticker or readable overlay. Then CUT TO BLACK as the screenplay specifies; do not generate a title card or a sixth montage image.

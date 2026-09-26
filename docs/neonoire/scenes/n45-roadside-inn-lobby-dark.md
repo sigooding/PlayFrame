@@ -21,4 +21,4 @@ LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-180
 IMAGE: 178-thank-you-very-much.jpg
-NOTE: Generated from shot 178. The script lights the room with the TV alone ("blue, flickering"), but in this study the CRT is dark; light it on set. Jack dragging Mr. Noda away and the ringing payphone are not boarded.
+NOTE: Generated from shot 178. The script lights the room with the TV alone ("blue, flickering"), and the CRT now carries the inn's baseball channel — a TV that is on is never static (director's rule, 26 September 2026); keep the room's blue flicker coming from the screen on set. Jack dragging Mr. Noda away and the ringing payphone are not boarded.

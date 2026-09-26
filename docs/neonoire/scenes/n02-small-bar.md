@@ -29,7 +29,7 @@ CAST: The Journalist
 LIGHT: Practical night
 TIME: 8
 IMAGE: 20-the-journalist.jpg
-NOTE: He is killed in four shots' time and the film gives him no backstory here. Play the waiting as habit, not nerves.
+NOTE: He is killed in four shots' time and the film gives him no backstory here. Play the waiting as habit, not nerves. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration).
 
 21. WIDE — 35mm, static, eye level — the door bangs open.
 Mara, soaked, too out of breath to speak, stands in the doorway with the rain behind her.
@@ -38,7 +38,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 21-mara-bursts-in.jpg
-NOTE: She brings the street's weather in with her. Keep her soaked hair, small red enamel bird clip and jacket exactly as in scene 1 — this is the same night, minutes later.
+NOTE: She brings the street's weather in with her. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration). Keep her soaked hair, small red enamel bird clip and jacket exactly as in scene 1 — this is the same night, minutes later.
 
 22. MEDIUM — 50mm, static, eye level — the journalist looks, then away.
 He glances up, startled, then away. Not his business.
@@ -47,7 +47,7 @@ CAST: The Journalist, Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 22-not-his-business.jpg
-NOTE: His decision not to help is the last decision he makes. No emphasis, no irony, no push-in.
+NOTE: His decision not to help is the last decision he makes. No emphasis, no irony, no push-in. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration).
 
 23. FULL — 35mm, static, low angle — Mara hides behind the counter.
 She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.

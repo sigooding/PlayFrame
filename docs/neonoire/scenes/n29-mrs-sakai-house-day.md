@@ -21,4 +21,4 @@ LIGHT: Overcast soft
 TIME: 20
 ID: neonoire-shot-206
 IMAGE: 204-the-tea-she-does-not-want-to-pour.jpg
-NOTE: The altar photograph is held to `s1/07-old-man.jpg`. Tatami beige and altar gold, grief draining the warmth — the colour arc's drained interior.
+NOTE: The altar photograph is held to `s1/07-old-man.jpg`. Tatami beige and altar gold, grief draining the warmth — the colour arc's drained interior. The TV behind Sakai is on and never static: a muted daytime variety audience (director's rule, 26 September 2026).

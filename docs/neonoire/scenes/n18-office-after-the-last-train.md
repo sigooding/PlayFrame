@@ -21,4 +21,4 @@ LIGHT: Low key
 TIME: 12
 ID: neonoire-shot-191
 IMAGE: 189-after-the-last-train.jpg
-NOTE: Kaneko is heard, never seen. The green desk lamp stays off; the static does the lighting.
+NOTE: Kaneko is heard, never seen. The green desk lamp stays off. Director's rule (26 September 2026): a TV that is on is never static — the office CRT now carries the muted B&W samurai film from scenes 10-11; the draft's word 'static' stays on the page, but the light on the screen is a programme.

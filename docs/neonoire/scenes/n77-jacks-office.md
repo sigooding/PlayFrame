@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 14
 ID: neonoire-shot-87
 IMAGE: 85-the-desk-lamp.jpg
-NOTE: Room master for Jack's office. Generated from the room study with the new Jack sheet attached. The frosted-glass door carries only JACK in English here; the draft's katakana line is a prop-lettering check for the art department. Vera's voice-over from the noodle counter plays over this wide; no flashback is pictured.
+NOTE: Room master for Jack's office. Generated from the room study with the new Jack sheet attached. The frosted-glass door carries only JACK in English here; the draft's katakana line is a prop-lettering check for the art department. Vera's voice-over from the noodle counter plays over this wide; no flashback is pictured. The wall CRT is never static: the muted B&W samurai film still runs (director's rule, 26 September 2026; the draft's 'static' stays on the page).
 
 88. INSERT — 50mm, static, high angle — a clean envelope.
 From above the desk: the lamp base and rotary phone at the edges, the drawer pulled open with a box of plain envelopes, and Jack's grimy hands sliding the green cloth notebook into a clean white envelope. A capped black pen waits on the desk.
