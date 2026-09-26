@@ -9,7 +9,7 @@ Grammar: One umbrella too small for two, a green signal, and the city's old melo
 
 ## Frame format — 25 September 2026
 
-The single shot (204) is **16:9, 1920×1080, full-bleed**, numbered in boarding order. **Vera** wears her original look, `sheets/vera.jpg`; **Jack** follows `sheets/jack.jpg`. The umbrella is his cheap pale-blue plastic one, as locked at the station in scene 5. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
+Shots 204 and 263 are **16:9, 1920×1080, full-bleed**, numbered in boarding order. **Vera** wears her original look, `sheets/vera.jpg`; **Jack** follows `sheets/jack.jpg`. The umbrella is his cheap pale-blue plastic one, as locked at the station in scene 5. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -21,4 +21,16 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-204
 IMAGE: 202-the-old-song.jpg
-NOTE: The only frame allowed warmer midtones before the inn. The umbrella reads near-white in the rain; dress it pale blue on the day to match scene 5.
+NOTE: The only frame allowed warmer midtones before the inn. The umbrella reads near-white in the rain; dress it pale blue on the day to match scene 5. The closer, where the faces hold, is shot 263.
+
+---
+
+263. MEDIUM — 50mm, static, eye level — too small.
+Closer on the same crossing: Vera and Jack under one pale umbrella, laughing, both shoulders wet, the green signal behind them.
+SCRIPT: "Vera and Jack cross in the rain, laughing at something, sharing his cheap plastic umbrella that's too small for two."
+CAST: Vera Voss, Jack
+LIGHT: Overcast soft
+TIME: 6
+ID: neonoire-shot-263
+IMAGE: 203-too-small.jpg
+NOTE: Coverage, shot 263. Faces held to sheets/vera.jpg and sheets/jack.jpg. The pale umbrella is too small for two, and they are laughing. The green signal is behind them. The wide remains shot 204.

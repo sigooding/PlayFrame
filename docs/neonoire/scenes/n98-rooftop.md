@@ -41,4 +41,16 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-157
 IMAGE: 155-close-enough.jpg
-NOTE: Generated from shot 155 to hold the roof and the costumes. The lighter, Kaneko's new place and "She says she opens at six" play over this frame. Jack's reflection in the train window, which ends the scene, was not generated this session and needs a shot of its own.
+NOTE: Generated from shot 155 to hold the roof and the costumes. The lighter, Kaneko's new place and "She says she opens at six" play over this frame. The train-window face is shot 241.
+
+---
+
+241. CLOSE-UP — 85mm, static, eye level — his own face.
+A silver commuter train with a red stripe passes the rooftop railing, its windows full of people. In one window, Jack's face: the same white American, greying temples, grey-green eyes, charcoal collar.
+SCRIPT: "For a moment, in one of the windows, the reflection of his own face."
+CAST: Jack
+LIGHT: Overcast soft
+TIME: 6
+ID: neonoire-shot-241
+IMAGE: 239-his-own-face.jpg
+NOTE: Coverage, shot 241. Second retake from the first coverage frame and sheets/jack-face.jpg. The face is now a small reflection in the upper corner of the glass, about a passenger's head, and the seated passengers are the subject. It is no longer a double exposure filling the pane. Vera is already gone.

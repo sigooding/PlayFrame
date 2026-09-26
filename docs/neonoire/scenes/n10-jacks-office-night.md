@@ -41,4 +41,16 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-168
 IMAGE: 166-by-its-edges.jpg
-NOTE: Generated from shot 166. The photograph's back faces the camera. "Your father." and "Ten thousand yen a day" play over this frame.
+NOTE: Generated from shot 166. The photograph's back faces the camera. "Your father." and "Ten thousand yen a day" play over this frame. Her exit down the stairs is shot 244.
+
+---
+
+244. WIDE — 50mm, static, low level — down the stairs.
+The same stairwell as shot 195, at night. Vera comes down toward camera in the charcoal coat and cream knit, pale-blue umbrella in hand, the frosted door lettered JACK behind her.
+SCRIPT: "Through the frosted glass, her shape goes down the stairs and is gone."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-244
+IMAGE: 242-down-the-stairs.jpg
+NOTE: Coverage, shot 244. STAIRWAY MOTIF — the scene 10 exit, the same camera as s21/193-footsteps-on-the-stairs.jpg, night, going down, which is loss. Vera follows sheets/vera.jpg, her original look. The door reads JACK, which is what the script letters; shot 164 still shows only JAC. She is drier than she was in shot 166. The glass POV plays from shot 166; this is the stair itself.

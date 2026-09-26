@@ -41,4 +41,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-136
 IMAGE: 134-the-walkway-is-empty.jpg
-NOTE: Also holds "On the Hive's roof, the flashlight beams search the tracks." In the study the train at the far end reads as approaching, with a lit front, rather than as a last carriage leaving; play it with tail lights receding.
+NOTE: Also holds "On the Hive's roof, the flashlight beams search the tracks." The train at the far end shows red tail lights receding, not a lit front. The earlier approaching-train caveat is stale.

@@ -21,4 +21,28 @@ LIGHT: Low key
 TIME: 6
 ID: neonoire-shot-179
 IMAGE: 177-boots-below.jpg
-NOTE: THE STAIR FRAME REPEATED: the refuge becomes a trap, where something coming up from below means danger. Generated from shot 173. The burst through the paper screens needs a corridor angle on set.
+NOTE: THE STAIR FRAME REPEATED: the refuge becomes a trap, where something coming up from below means danger. Generated from shot 173. The paper screens are shot 261.
+
+---
+
+261. WIDE — 35mm, static, eye level — the screens.
+The upstairs corridor, cold blue. Paper screens along one wall are torn in a straight line. Jack walks away from camera toward a closed door. No one else.
+SCRIPT: "The paper screens along one wall burst apart in a line of holes."
+CAST: Jack
+LIGHT: Low key
+TIME: 5
+ID: neonoire-shot-261
+IMAGE: 178-the-screens.jpg
+NOTE: Coverage, shot 261, the corridor angle shot 179's note asked for. Jack follows sheets/jack.jpg, seen from behind. No weapons in frame. The inn's cold blue. CAVEAT: the corridor reads more like a ryokan than the lobby's 1975 wood. Shot 268 is the wood.
+
+---
+
+268. WIDE — 35mm, static, eye level — same wood.
+A narrow upstairs corridor of wood doors and wood panel, cold blue. Paper panels on the doors are torn in a line of holes. Jack walks away from camera. No one else.
+SCRIPT: "The paper screens along one wall burst apart in a line of holes."
+CAST: Jack
+LIGHT: Low key
+TIME: 5
+ID: neonoire-shot-268
+IMAGE: 179-same-wood.jpg
+NOTE: Coverage, shot 268. Cream plaster walls with wood trim and ordinary wood doors, matching s32/170-just-one-night.jpg, not a ryokan. Jack follows sheets/jack.jpg, seen from behind. The paper screens are torn in a line. No weapons.

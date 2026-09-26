@@ -21,7 +21,9 @@ LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-162
 IMAGE: 160-were-closed.jpg
-NOTE: The scene master. The photograph of Mara in the paper crown, Okada's one-second look and his glance to the far end of the counter all play inside this frame; the glance needs an 85mm pickup on set.
+NOTE: The scene master. The photograph of Mara in the paper crown and Okada's one-second look play inside this frame. The glance is shot 242, with an eyeline caveat.
+
+---
 
 163. MEDIUM — 50mm, static, eye level — the umbrella left behind.
 The doorway is empty. Okada stands still with the mop and looks at the pale blue umbrella left leaning against a red-topped stool.
@@ -32,3 +34,15 @@ TIME: 8
 ID: neonoire-shot-163
 IMAGE: 161-the-umbrella-left-behind.jpg
 NOTE: Generated from shot 162 to hold the room.
+
+---
+
+242. CLOSE-UP — 85mm, static, eye level — the far end.
+Okada, mop in hand, looks once away from the mop. The black rubber mat is on the floor behind him. The CRT stays dark.
+SCRIPT: "His eyes go, just once, to the far end of the counter. Then back to the mop."
+CAST: Okada
+LIGHT: Overcast soft
+TIME: 5
+ID: neonoire-shot-242
+IMAGE: 240-the-far-end.jpg
+NOTE: Coverage, shot 242, the 85mm pickup shot 162's note asked for. Okada is held to s8/160-were-closed.jpg. Retake from the far end of the counter: his eyes come down the bar toward the black rubber mat. The doorway is empty. The CRT is off, correctly — off is not static.

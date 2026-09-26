@@ -31,4 +31,16 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-133
 IMAGE: 131-she-jumps.jpg
-NOTE: In the study she reads as jumping from the tank plinth rather than across the one-metre gap to the walkway; stage it clearly as the gap and the low fence on set.
+NOTE: In the study she reads as jumping from the tank plinth rather than across the one-metre gap to the walkway. Shot 267 is the gap.
+
+---
+
+267. WIDE — 35mm, static, eye level — the gap.
+Night rain. The Hive roof on the left, a steel walkway on the right, and a clear gap of empty air between them. Vera is mid-jump across that gap, both feet off any surface, one hand in Jack's. He stays on the roof.
+SCRIPT: "Jack helps Vera over the gap. She has one hand in his. She jumps. He follows."
+CAST: Jack, Vera Voss
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-267
+IMAGE: 132-the-gap.jpg
+NOTE: Coverage, shot 267. Held to s90/130-the-roof.jpg, sheets/vera-look-c.jpg and sheets/jack.jpg. Both feet are over the one-metre gap, not on a water tank. No letterbox. CAVEAT: the walkway fence reads taller than waist-high.

@@ -15,6 +15,9 @@ export const endingImages = [
   "/images/neonoire/s99/157-the-sign.jpg",
   "/images/neonoire/s100/158-the-third-stool.jpg",
   "/images/neonoire/s100/159-she-doesnt-turn.jpg",
+  "/images/neonoire/s100/160-the-clip.jpg",
+  "/images/neonoire/s100/161-stool-three.jpg",
+  "/images/neonoire/s98/239-his-own-face.jpg",
 ];
 
 export const rooftopLook = "16:9 full-bleed (1920×1080), no letterbox. THE ROOFTOP OF JACK'S BUILDING by DAY, the first time the rain has stopped: a pale, washed, enormous sky, damp concrete drying in patches, laundry poles, a round galvanised water tank on a steel stand, a single potted plant in a chipped pot, a low metal railing, and just below it the elevated railway with silver commuter trains passing at eye level (the same line seen from Jack's office window in s77/85-the-desk-lamp.jpg). The scene master is s98/153-the-rain-has-stopped.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt, no tie). VERA wears WARDROBE LOOK E (sheets/vera-look-e.jpg): a SHORT HIP-LENGTH boxy OATMEAL CAR COAT with a high funnel collar and patch pockets, a pale sky-blue shirt collar, blue straight jeans, white trainers, hair DRY and loose with the fringe; the face follows sheets/vera.jpg. A new garment, not a recolour: short and soft after four long coats, pale for the first dry day. THE RED BIRD CLIP follows Mara's in s1/03-mara-walks.jpg. Soft white daylight, no sodium, no rain, nothing explained. AI-generated draft studies, not approved coverage.";

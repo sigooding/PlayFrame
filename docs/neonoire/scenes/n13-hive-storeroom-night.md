@@ -31,7 +31,9 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-182
 IMAGE: 180-under-the-cover.jpg
-NOTE: Generated from shot 181. The futon reads as a thick stacked mattress, and the bulb reads as unlit; light it on set. The phone screen (31 MISSED CALLS — VERA) and the voicemail need a close insert.
+NOTE: Generated from shot 181. The futon reads as a thick stacked mattress, and the bulb reads as unlit; light it on set. The phone screen is shot 249. The voicemail still plays over this frame.
+
+---
 
 183. INSERT — 85mm, static, eye level — the bulb comes to rest.
 Mara's hand in the cardigan sleeve holds the coin-locker key with its round 87 tag. Above, the bare bulb swings, and flour dust sifts down through the light.
@@ -42,3 +44,15 @@ TIME: 8
 ID: neonoire-shot-183
 IMAGE: 181-the-bulb-comes-to-rest.jpg
 NOTE: Generated from shot 181 with the key reference. HOLD until the bulb comes to rest.
+
+---
+
+249. CLOSE-UP — 50mm, static, eye level — thirty one.
+Under the futon cover, Mara's face in the phone's blue light. The screen reads 31 MISSED CALLS, VERA. No bird clip.
+SCRIPT: "ON THE SCREEN: 31 MISSED CALLS - VERA."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-249
+IMAGE: 247-thirty-one.jpg
+NOTE: Coverage, shot 249, the insert shot 182's note asked for. Mara follows sheets/mara.jpg: ash-blonde, pale blue eyes, NO bird clip, the borrowed brown cardigan. The storeroom follows s13/180-under-the-cover.jpg. 31 MISSED CALLS and VERA are lettered on the screen and legible at full size. Retake: her eyes are on the phone, not the camera.

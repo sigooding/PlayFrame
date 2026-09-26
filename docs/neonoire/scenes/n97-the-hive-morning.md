@@ -41,7 +41,7 @@ LIGHT: Overcast soft
 TIME: 8
 ID: neonoire-shot-150
 IMAGE: 148-four-men.jpg
-NOTE: The study shows **three** prosecutors in the line, not four; add the fourth on set. The black car runs out of frame at left but is complete, not cut off at a door. Hold on "For a moment, nothing happens at all," then the aide lowers the umbrella.
+NOTE: Retake: four prosecutors stand in the line, one holding an identification card. The black car runs out of frame at left but is complete, not cut off at a door. Hold on "For a moment, nothing happens at all," then the aide lowers the umbrella.
 
 151. WIDE — 50mm, tracking, eye level — twenty metres.
 Kurose walks alone from the tent to the grey car in the rain without an umbrella. His silver hair is soaked flat and his suit dark at the shoulders. A prosecutor walks a step behind him, and press cameras flash from behind a rope.
