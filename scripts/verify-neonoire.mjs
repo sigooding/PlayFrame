@@ -460,6 +460,7 @@ assert.deepEqual(lastrain.map(f => f.id), Array.from({ length: 7 }, (_, i) => `n
 for (const frame of lastrain) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(lastrain.find(f => f.id === "neonoire-shot-234").notes.includes("s72/69"), "Shot 234 locks the wine-red dress to the scene 72 wardrobe master");
 assert(lastrain.find(f => f.id === "neonoire-shot-235").notes.includes("production-review check"), "Shot 235 carries the lounge clock as a production-review check");
+assert(lastrain.find(f => f.id === "neonoire-shot-235").notes.includes("ash-blonde"), "Shot 235 locks Vera's ash-blonde hair to her sheets");
 assert(lastrain.find(f => f.id === "neonoire-shot-236").notes.includes("8:52"), "Shot 236 locks the service-road sign");
 assert(lastrain.find(f => f.id === "neonoire-shot-239").notes.includes("no weapons"), "Shot 239 keeps the ambush moderation-safe");
 assert(lastrain.find(f => f.id === "neonoire-shot-240").notes.includes("no blood"), "Shot 240 keeps Mara's death a scene of care");

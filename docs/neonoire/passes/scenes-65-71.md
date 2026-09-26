@@ -37,6 +37,10 @@ The cross-cut is the point: the lounge (235) is the film's warmest room — ambe
 - **240:** Mara's death is staged as care: no blood on the floor, no gore — her side only darkens under Jack's hands, and the frame's subject is the lights coming on.
 - **236:** no people by design; the trap is still asleep.
 
+## Batch five — Vera's hair at the bar (26 September 2026)
+
+The director caught the one hair drift in the film: shot 235's Vera had been generated dark-haired with a fringe, against `sheets/vera.jpg`'s ash-blonde, no-fringe, pale-blue-eyed American (the drift came from a prompt written from memory, and my clock retake repeated it). An audit montage of every Vera frame (4, 52, 56, 58, 65, 72, 73, 76, 79, 97) confirmed 235 as the single outlier; it was retaken with the sheets and `s72/69-the-wait.jpg` attached and an explicit no-dark-hair lock, keeping the 9:58 clock, the dress, the umbrella and the pianist. The board NOTE now carries the lock, and verify asserts the substring "ash-blonde" on shot 235 so no future pass can drift it again.
+
 ## Next
 
 - The board is complete. The remaining image work is **revision**: cold-open shots **14–28** (fifteen legacy 2.39:1 frames) and scene 3's **29–32**, in that order, ten generations a turn — then whatever retakes or set inserts the director orders (the SHIOHAMA cassette label and the DANIEL VOSS notebook cover remain the standing insert candidates).
