@@ -45,4 +45,4 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-269
 IMAGE: 178-staff-side.jpg
-NOTE: Coverage, shot 269. Mr. Noda follows s46/213-clutch-each-other.jpg. He is on the staff side, the counter between him and the lobby. The CRT shows baseball and is never static. No weapons. CAVEAT: the counter reads more like a desk than the lobby's simple wooden counter.
+NOTE: Coverage, shot 269. Mr. Noda follows s46/213-clutch-each-other.jpg. He is on the staff side, the counter between him and the lobby. The desk and lamp are gone; it is a plain wooden counter. The CRT shows baseball and is never static. No weapons.

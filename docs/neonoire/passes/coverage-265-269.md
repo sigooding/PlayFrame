@@ -21,8 +21,9 @@ Review sheet: [coverage-265-269.jpg](../../../public/images/neonoire/reviews/cov
 ## Locks and caveats
 
 - **265** six stools. She sits on the third from the left, two empty stools to her left, three to her right. Ash-blonde, teal peacoat, red bird clip. The hanging sign is not the old sign from `s86/121`. The face is mostly the back of the head. Shots 160 and 260 still seat her at the right end.
-- **266** the same count at the Hive, charcoal coat, no clip. The stall reads street-facing, more open than `s56/223`.
+- **266** the same count at the Hive, charcoal coat, no clip. Retake: the street window is gone; it is the dark interior.
 - **267** both feet are over the one-metre gap, not on a water tank. No letterbox. The walkway fence reads taller than waist-high. Shot 131 is unchanged.
-- **268** wood doors, not a ryokan. The paper screens are torn in a line. No weapons. The paneling is darker than the lobby's cream walls. Shot 261 is unchanged.
-- **269** he is on the staff side, the counter between him and the lobby. Baseball on the CRT, never static. No weapons. The counter reads more like a desk than the lobby's simple wooden counter. Shot 262 is unchanged.
+- **268** retake: cream plaster and wood trim, not a ryokan and not dark paneling. The paper screens are torn in a line. No weapons. Shot 261 is unchanged.
+- **269** retake: the desk and lamp are gone. He is on the staff side of a plain wooden counter. Baseball on the CRT, never static. No weapons. Shot 262 is unchanged.
+- The low-fence edit put a foot on the walkway. The younger-hands edit left the hands old and lost a letter of DANIEL VOSS. Neither was installed.
 - Shot 136 already shows red tail lights receding. The approaching-train note was stale and has been corrected. No new frame.

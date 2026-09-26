@@ -45,4 +45,4 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-268
 IMAGE: 179-same-wood.jpg
-NOTE: Coverage, shot 268. The corridor follows s32/170-just-one-night.jpg in wood and proportion, not a ryokan. Jack follows sheets/jack.jpg, seen from behind. The paper screens are torn in a line. No weapons. CAVEAT: the paneling is darker and more complete than the lobby's cream walls; keep them on the same building on set.
+NOTE: Coverage, shot 268. Cream plaster walls with wood trim and ordinary wood doors, matching s32/170-just-one-night.jpg, not a ryokan. Jack follows sheets/jack.jpg, seen from behind. The paper screens are torn in a line. No weapons.

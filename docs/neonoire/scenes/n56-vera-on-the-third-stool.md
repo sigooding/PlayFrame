@@ -33,5 +33,5 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-266
 IMAGE: 224-stool-three.jpg
-NOTE: Coverage, shot 266. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, charcoal coat, no hair clip. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: the stall reads street-facing, more open than the interior in s56/223-the-third-stool.jpg; keep them the same shop on set.
+NOTE: Coverage, shot 266. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, charcoal coat, no hair clip. Kaneko follows s86/123-fifty-years.jpg. The street window is gone; this is the dark interior, fluorescent and shutter, held to s56/223-the-third-stool.jpg.
 
