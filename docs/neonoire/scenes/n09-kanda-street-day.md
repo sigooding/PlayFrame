@@ -21,7 +21,9 @@ LIGHT: Overcast soft
 TIME: 9
 ID: neonoire-shot-164
 IMAGE: 162-miss.jpg
-NOTE: The scene master. The business card (JACK. INVESTIGATIONS.) is not boarded; letter it as a practical insert on set.
+NOTE: The scene master. The business card is shot 243.
+
+---
 
 165. INSERT — 85mm, static, eye level — behind the counter.
 Okada's wet, open palm, and on it the small red enamel clip. Vera's hand, in the charcoal sleeve, hovers above it.
@@ -32,3 +34,15 @@ TIME: 5
 ID: neonoire-shot-165
 IMAGE: 163-behind-the-counter.jpg
 NOTE: This rhymes with shot 156, where Jack gives the clip back on the rooftop. In this study the clip reads more like a small red bow than a bird; replace it with the real prop on set. "It was mine. She took it when we were kids." plays over this frame.
+
+---
+
+243. INSERT — 50mm, static, high angle — the card.
+Okada's hand presses a soft cream card into Vera's palm. The card reads JACK. INVESTIGATIONS.
+SCRIPT: "Vera looks at the card. Printed in English and in katakana: JACK. INVESTIGATIONS. An address. No surname."
+CAST: Okada, Vera Voss
+LIGHT: Overcast soft
+TIME: 4
+ID: neonoire-shot-243
+IMAGE: 241-the-card.jpg
+NOTE: Coverage, shot 243. Hands held to s9/162-miss.jpg and sheets/vera.jpg (charcoal sleeve, gold ring, pale-blue umbrella). JACK. INVESTIGATIONS. is lettered and legible at full size. CAVEAT: the katakana and the address are not on the card yet — no Japanese font in this session; letter them on set. The umbrella is still in Okada's other hand; by this beat he has already handed it over.

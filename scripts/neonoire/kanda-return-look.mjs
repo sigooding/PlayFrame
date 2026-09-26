@@ -15,6 +15,13 @@ export const kandaReturnImages = [
   "/images/neonoire/s10/166-by-its-edges.jpg",
   "/images/neonoire/s11/167-two-men-laughing.jpg",
   "/images/neonoire/s12/168-the-strap.jpg",
+  "/images/neonoire/s8/240-the-far-end.jpg",
+  "/images/neonoire/s9/241-the-card.jpg",
+  "/images/neonoire/s10/242-down-the-stairs.jpg",
+  "/images/neonoire/s11/243-the-box.jpg",
+  "/images/neonoire/s11/244-daniel-voss-41.jpg",
+  "/images/neonoire/s12/245-the-barber.jpg",
+  "/images/neonoire/s12/246-the-can.jpg",
 ];
 
 export const kandaReturnLook = "16:9 full-bleed (1920×1080), no letterbox. KANDA REVISITED, four days after the cold open. THE BAR BY DAY follows s81/100-the-bar-in-daylight.jpg (scene 2's bar in flat grey daylight: chairs up, the CRT dark, a new black rubber mat where the journalist fell); OKADA is held to that master (gaunt, sixties, close-cropped white hair, white shirt, navy apron). THE STREET OUTSIDE is a Kanda backstreet by rainy day, after s1/01-backstreet.jpg. JACK'S OFFICE follows s77/85-the-desk-lamp.jpg (frosted door lettered JACK, green banker's lamp, rotary phone, filing cabinets, a muted CRT playing a black-and-white samurai film, the slept-on sofa, blinds over the elevated railway). THE BACKSTREET AT NIGHT follows s1/06-barbershop-doorway.jpg (the barber pole, the vending machine, sodium and green). VERA wears her ORIGINAL LOOK (sheets/vera.jpg): charcoal wool coat, cream high-neck knit, navy trousers, brown boots, black shoulder bag, with the PALE BLUE UMBRELLA of s4/34-the-pale-blue-umbrella.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt, the steel lighter, a cheap clear umbrella in the street). The RED BIRD CLIP follows s1/03-mara-walks.jpg. The family photograph follows s4/35-the-photograph.jpg: Daniel Voss, not Jack, holds the girls' hands. Cold steady rain, nothing explained. AI-generated draft studies, not approved coverage.";

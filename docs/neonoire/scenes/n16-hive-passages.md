@@ -21,4 +21,16 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-188
 IMAGE: 186-everybody-sees-him.jpg
-NOTE: The scene master. The dentist's chair and the turn onto the counter ("It is exactly the drawing") are not boarded.
+NOTE: The scene master. The turn onto the counter is shot 250. The dentist's chair is still not boarded.
+
+---
+
+250. MEDIUM — 50mm, static, eye level — exactly the drawing.
+Jack has turned the corner and stopped. Ahead: the counter, the curtain, steam, the fluorescent tube, and the faded sign.
+SCRIPT: "It is exactly the drawing."
+CAST: Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-250
+IMAGE: 248-exactly-the-drawing.jpg
+NOTE: Coverage, shot 250. Jack follows sheets/jack.jpg. The counter follows s17/187-you-got-old.jpg and the drawing in s14/183-the-sketchbook.jpg. The sign 金子 is legible at full size. CAVEAT: five stools read in frame, not six; dress the sixth on set. Shot 188's unscripted folder does not continue here.

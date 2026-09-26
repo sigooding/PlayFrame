@@ -21,4 +21,26 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-169
 IMAGE: 167-two-men-laughing.jpg
-NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping's headline (DANIEL VOSS, 41) is unreadable here and should be a practical insert. The box coming down, the call to Ishida and the lighter are not boarded; they need a wide on set.
+NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245, with a chair caveat. The call to Ishida and the lighter are still not boarded.
+
+---
+
+245. WIDE — 35mm, static, eye level — the box.
+Past midnight. Jack lifts a dusty cardboard box down from the top of the filing cabinet. The green lamp, the rotary phone, the sofa, the blinds. The CRT plays a samurai film.
+SCRIPT: "Jack stands on a chair and takes down a cardboard box from the top of a cupboard. Dust on the lid. He hasn't opened it in years."
+CAST: Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-245
+IMAGE: 243-the-box.jpg
+NOTE: Coverage, shot 245, the wide shot 169's note asked for. The office follows s10/164-depends-whos-calling.jpg; Jack follows sheets/jack.jpg. The door reads JACK. The CRT is on and never static: the office's muted black-and-white samurai film, even though the draft writes static. CAVEAT: his feet are on the floor, not on the chair — the generation limit was spent before the retake. Put him on the chair on set.
+
+246. INSERT — 85mm, static, high angle — daniel voss 41.
+Under the green lamp, a yellowed clipping. The photograph is Daniel, not Jack. The headline and the caption are lettered.
+SCRIPT: "An English-language newspaper, yellowed. A small headline: AMERICAN INSURANCE INVESTIGATOR FOUND DEAD - POLICE RULE SUICIDE. A photograph: the same man from Vera's picture. The caption: DANIEL VOSS, 41."
+CAST: Daniel Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-246
+IMAGE: 244-daniel-voss-41.jpg
+NOTE: Coverage, shot 246. Daniel is held to s4/35-the-photograph.jpg, not to Jack. The headline AMERICAN INSURANCE INVESTIGATOR FOUND DEAD - POLICE RULE SUICIDE and the caption DANIEL VOSS, 41 are lettered and legible at full size. The black notebook matches shot 169.

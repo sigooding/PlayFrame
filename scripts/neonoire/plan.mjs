@@ -427,7 +427,7 @@ export const SCENES = [
     page: "n98-rooftop-of-jack-s-building-day.md", board: "n98-rooftop.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "24mm for the roof and the trains, 85mm on the clip, 50mm at the railing.",
-    description: "Days later. The rain has stopped for the first time in the film. A small flat roof, trains passing at eye level. Jack gives Vera the red bird clip, and tells her Mara was sorry. She cries at the railing; he stands beside her, close enough, not closer. Kaneko opens at six. BOARDED — 3 shots (155–157). Vera in costume Look E.",
+    description: "Days later. The rain has stopped for the first time in the film. A small flat roof, trains passing at eye level. Jack gives Vera the red bird clip, and tells her Mara was sorry. She cries at the railing; he stands beside her, close enough, not closer. Kaneko opens at six. BOARDED — 4 shots (155–157, and 241, the train window). Vera in costume Look E.",
     lightingNotes: "Pale washed daylight under an enormous sky, no sodium, no rain, the concrete drying.",
   },
   {
@@ -457,7 +457,7 @@ export const SCENES = [
     page: "n08-small-bar-kanda-day.md", board: "n08-small-bar-day.md",
     cast: ["Okada", "Vera Voss"],
     grammar: "35mm down the bar, 50mm on the umbrella.",
-    description: "The same bar in flat grey daylight: chairs up, the CRT dark, a new rubber mat where the journalist fell. Okada says Mara was never here, and his eyes go once to the far end of the counter. Vera leaves the blue umbrella against a stool. BOARDED — 2 shots (162–163), numbered in boarding order.",
+    description: "The same bar in flat grey daylight: chairs up, the CRT dark, a new rubber mat where the journalist fell. Okada says Mara was never here, and his eyes go once to the far end of the counter. Vera leaves the blue umbrella against a stool. BOARDED — 3 shots (162–163, and 242, the glance), numbered in boarding order.",
     lightingNotes: "Flat grey daylight through the street window, the bottle shelves dim.",
   },
   {
@@ -467,7 +467,7 @@ export const SCENES = [
     page: "n09-kanda-street-continuous.md", board: "n09-kanda-street-day.md",
     cast: ["Vera Voss", "Okada"],
     grammar: "35mm for the street, 85mm on the clip.",
-    description: "Rain. Okada runs after Vera with the umbrella and, in his other hand, the red bird clip: behind the counter, after. Not the police. Him. A card: JACK. INVESTIGATIONS. BOARDED — 2 shots (164–165).",
+    description: "Rain. Okada runs after Vera with the umbrella and, in his other hand, the red bird clip: behind the counter, after. Not the police. Him. A card: JACK. INVESTIGATIONS. BOARDED — 3 shots (164–165, and 243, the card).",
     lightingNotes: "Grey rainy daylight on a narrow wet street.",
   },
   {
@@ -477,7 +477,7 @@ export const SCENES = [
     page: "n10-jack-s-office-night.md", board: "n10-jacks-office-night.md",
     cast: ["Jack", "Vera Voss", "Daniel Voss"],
     grammar: "24mm for the room, 50mm on the desk, 85mm on Jack and the photograph.",
-    description: "One room against the railway: a rice ball, a lighter with no cigarettes, a silent samurai film. Vera sets the red bird clip on the desk, and her family photograph slides out face up. Jack holds it by its edges like evidence. Ten thousand yen a day. BOARDED — 3 shots (166–168).",
+    description: "One room against the railway: a rice ball, a lighter with no cigarettes, a silent samurai film. Vera sets the red bird clip on the desk, and her family photograph slides out face up. Jack holds it by its edges like evidence. Ten thousand yen a day. BOARDED — 4 shots (166–168, and 244, down the stairs).",
     lightingNotes: "The green desk lamp, grey CRT flicker, train light through the blinds.",
   },
   {
@@ -487,7 +487,7 @@ export const SCENES = [
     page: "n11-jack-s-office-later.md", board: "n11-jacks-office-later.md",
     cast: ["Jack", "Daniel Voss"],
     grammar: "85mm on the photograph.",
-    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you're too old to be haunted. BOARDED — 1 shot (169).",
+    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you're too old to be haunted. BOARDED — 3 shots (169, and 245–246, the box and the clipping).",
     lightingNotes: "Only the desk lamp and TV static.",
   },
   {
@@ -497,7 +497,7 @@ export const SCENES = [
     page: "n12-backstreet-kanda-night.md", board: "n12-backstreet-night.md",
     cast: ["Jack"],
     grammar: "35mm from the cold open's own position.",
-    description: "The cold open's street, four days on. Jack stands where Mara stood, finds a torn strap at knee height, and hears from the barber that the car came back. Because they didn't find it. BOARDED — 1 shot (170).",
+    description: "The cold open's street, four days on. Jack stands where Mara stood, finds a torn strap at knee height, and hears from the barber that the car came back. Because they didn't find it. BOARDED — 3 shots (170, and 247–248, the barber and the can).",
     lightingNotes: "Sodium orange and fluorescent green, the vending machine's white light, steady rain.",
   },
   {
@@ -587,7 +587,7 @@ export const SCENES = [
     page: "n13-the-hive-noodle-shop-storeroom-night.md", board: "n13-hive-storeroom-night.md",
     cast: ["Mara Voss", "Kaneko"],
     grammar: "35mm for the room, 50mm on the futon, 85mm on the key.",
-    description: "Mara hides in the storeroom behind Kaneko's counter in a cardigan that isn't hers. Your father sat on the third stool. Under the futon cover: 31 missed calls from Vera. A train shakes the bulb; her thumb doesn't move. In her fist, the key. BOARDED — 3 shots (181–183).",
+    description: "Mara hides in the storeroom behind Kaneko's counter in a cardigan that isn't hers. Your father sat on the third stool. Under the futon cover: 31 missed calls from Vera. A train shakes the bulb; her thumb doesn't move. In her fist, the key. BOARDED — 4 shots (181–183, and 249, the missed calls).",
     lightingNotes: "One bare bulb, flour dust, the railway's underside overhead.",
   },
   {
@@ -617,7 +617,7 @@ export const SCENES = [
     page: "n16-the-hive-passages-continuous.md", board: "n16-hive-passages.md",
     cast: ["Jack", "The Radio Repairman"],
     grammar: "35mm down the passage.",
-    description: "Shoulder-wide passages, doors open on other lives: radios, a family at dinner, an old woman at the sumo. Nobody stops him. Everybody sees him. BOARDED — 1 shot (188).",
+    description: "Shoulder-wide passages, doors open on other lives: radios, a family at dinner, an old woman at the sumo. Nobody stops him. Everybody sees him. BOARDED — 2 shots (188, and 250, the drawing).",
     lightingNotes: "Bare bulbs, pipes and wires, dust in the light.",
   },
   {
@@ -1311,10 +1311,24 @@ export function parseBoard(markdown, scene) {
   }
   flush();
   if (!shots.length) throw new Error(`Scene ${scene.n} has no numbered shots`);
-  // Shot numbers run 1..68 straight through the opening, so a scene's board starts wherever the
-  // scene before it stopped; the builder checks the run is unbroken across all seven.
-  for (const [i, shot] of shots.entries()) {
-    if (shot.n !== shots[0].n + i) throw new Error(`Scene ${scene.n} shot numbers must run contiguously from ${shots[0].n} (found ${shot.n} at position ${i + 1})`);
+  // The first boarding runs 1..240 in SCENES order and is never renumbered. A coverage pass may
+  // append shots numbered 241+ to an existing scene; those follow the primary block, stay
+  // contiguous with each other, and the builder collects them after shot 240 in SCENES order.
+  const PRIMARY_CEILING = 240;
+  const primary = shots.filter(shot => shot.n <= PRIMARY_CEILING);
+  const coverage = shots.filter(shot => shot.n > PRIMARY_CEILING);
+  let seenCoverage = false;
+  for (const shot of shots) {
+    if (shot.n > PRIMARY_CEILING) seenCoverage = true;
+    else if (seenCoverage) throw new Error(`Scene ${scene.n} puts a primary shot after a coverage shot`);
+  }
+  for (const [i, shot] of primary.entries()) {
+    if (shot.n !== primary[0].n + i) throw new Error(`Scene ${scene.n} shot numbers must run contiguously from ${primary[0].n} (found ${shot.n} at position ${i + 1})`);
+  }
+  for (const [i, shot] of coverage.entries()) {
+    if (i && shot.n !== coverage[i - 1].n + 1) throw new Error(`Scene ${scene.n} coverage shots must be contiguous (found ${shot.n})`);
+  }
+  for (const shot of shots) {
     if (!LIGHT_TOKEN.includes(shot.lighting)) throw new Error(`Scene ${scene.n} shot ${shot.n} has lighting "${shot.lighting}" outside the lighting library`);
     for (const name of shot.cast) if (!characters.some(c => c.name === name)) throw new Error(`Scene ${scene.n} shot ${shot.n} casts an unknown name: ${name}`);
   }
