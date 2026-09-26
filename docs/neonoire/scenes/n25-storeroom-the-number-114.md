@@ -21,4 +21,16 @@ LIGHT: Practical night
 TIME: 18
 ID: neonoire-shot-202
 IMAGE: 200-the-number-114.jpg
-NOTE: The stamped number 114 is not legible at full size; the insert of it under the bulb belongs to the set. The two sketches on the back wall are kept from shot 193.
+NOTE: The stamped number 114 is shot 258. The two sketches on the back wall are kept from shot 193.
+
+---
+
+258. INSERT — 85mm, static, high angle — the stamp.
+Under the bare bulb, a hand in a brown cardigan holds the coin-locker key. The oval tag reads 87. The metal of the key is stamped 114.
+SCRIPT: "A number stamped into the metal: 114."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 4
+ID: neonoire-shot-258
+IMAGE: 201-the-stamp.jpg
+NOTE: Coverage, shot 258. The key follows s1/16-the-key.jpg: the oval tag stays 87, the cold-open prop. 114 is lettered on the brass of the key, which is the number this scene stamps into the metal. The draft later says the tag printing has worn away; this frame keeps the tag the film has already shown. Mara's hand is in the borrowed brown cardigan, no bird clip. The storeroom follows s25/200-the-number-114.jpg.

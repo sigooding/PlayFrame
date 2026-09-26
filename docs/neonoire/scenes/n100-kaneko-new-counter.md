@@ -21,7 +21,9 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-160
 IMAGE: 158-the-third-stool.jpg
-NOTE: The scene master, and Look F's first frame. In this study Vera sits at the right end of the counter, not on the third stool, and the clip isn't visible from this angle. Re-seat her on set. "A train passes overhead. The bulb trembles." and the old ballad on the radio are sound over this frame.
+NOTE: The scene master, and Look F's first frame. In this study Vera sits at the right end of the counter, not on the third stool. The clip is shot 260, and she is still not on the third stool there either. "A train passes overhead. The bulb trembles." and the old ballad on the radio are sound over this frame.
+
+---
 
 161. MEDIUM — 50mm, static, eye level — she doesn't turn.
 Seen from behind, Vera sits still, the red bird clip bright in her hair. Across the counter, Kaneko sets down a second bowl. Behind her, the door stands open: cool blue street light, a man in a coat in the doorway, and his long shadow across the floor.
@@ -32,3 +34,15 @@ TIME: 12
 ID: neonoire-shot-161
 IMAGE: 159-she-doesnt-turn.jpg
 NOTE: The last frame of the film, generated from shot 160. The man himself is visible in the doorway, where the script gives only his shadow, and the shadow stops short of her stool; keep him out of frame on set and let the shadow reach her. Then CUT TO BLACK, with a train and rain beginning again over black.
+
+---
+
+260. MEDIUM — 50mm, static, eye level — the clip.
+The same brick arch. Vera in the teal peacoat sits at the counter with a bowl, the red bird clip visible in her hair. Kaneko works the pot. Steam, the bare bulb, the old sign.
+SCRIPT: "The red bird clip in her hair."
+CAST: Vera Voss, Kaneko
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-260
+IMAGE: 160-the-clip.jpg
+NOTE: Coverage, shot 260. Vera follows sheets/vera.jpg in Look F, the teal peacoat from s100/158-the-third-stool.jpg. The red bird clip is visible. Kaneko follows s86/123-fifty-years.jpg. CAVEAT: she is still at the right end, not on the third stool. Re-seat her on set.

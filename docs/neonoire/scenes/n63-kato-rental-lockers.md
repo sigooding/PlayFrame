@@ -21,5 +21,17 @@ LIGHT: Practical night
 TIME: 18
 ID: neonoire-shot-232
 IMAGE: 230-no-questions.jpg
-NOTE: The sign reads MONTHLY. YEARLY. NO QUESTIONS. in faded paint, correct at full size. The cassette and the notebook are the film's two MacGuffins in one box; their inserts belong to the set.
+NOTE: The sign reads MONTHLY. YEARLY. NO QUESTIONS. in faded paint, correct at full size. The cassette and the notebook are shot 259.
+
+---
+
+259. INSERT — 50mm, static, high angle — the box.
+Jack's hands hold an aged cardboard box open under the fluorescent tube. Inside: a cracked cassette labelled SHIOHAMA, and beneath it a green cloth notebook.
+SCRIPT: "A single cassette tape in a cracked plastic case, labelled in a shaking hand: SHIOHAMA."
+CAST: Jack
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-259
+IMAGE: 231-the-box.jpg
+NOTE: Coverage, shot 259. The locker room follows s63/230-no-questions.jpg. The cassette follows props/shiohama-cassette-label.jpg and reads SHIOHAMA. The notebook follows props/daniel-voss-notebook-cover.jpg; DANIEL VOSS is on the inside cover, partly under the cassette. The underlined line is not shown. CAVEAT: the hands read older than 48.
 

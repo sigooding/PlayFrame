@@ -21,4 +21,16 @@ LIGHT: Overcast soft
 TIME: 16
 ID: neonoire-shot-203
 IMAGE: 201-the-second-hand.jpg
-NOTE: The lighter in her fist is not legible at full size; the insert of it open and closed belongs to the set. Vera's original look is correct here: this is the present, before any costume change.
+NOTE: The lighter in her fist is shot 257. Vera's original look is correct here: this is the present, before any costume change.
+
+---
+
+257. INSERT — 50mm, static, eye level — the lighter.
+Vera's hand, charcoal sleeve and cream cuff, holds the old steel lighter open against the rainy train window. A small flame. The green seat.
+SCRIPT: "She looks at the lighter in her hand."
+CAST: Vera Voss
+LIGHT: Overcast soft
+TIME: 4
+ID: neonoire-shot-257
+IMAGE: 202-the-lighter.jpg
+NOTE: Coverage, shot 257. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Vera's hand, charcoal coat, not the wine-red sleeve. She follows sheets/vera.jpg, her original look. No cigarettes. By the next beat she has put it in her pocket.

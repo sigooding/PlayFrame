@@ -21,4 +21,16 @@ LIGHT: Low key
 TIME: 6
 ID: neonoire-shot-178
 IMAGE: 176-were-closed.jpg
-NOTE: Generated from shot 172. Mr. Noda doesn't read clearly as Japanese in this study and is at the desk rather than diving behind it; recast the extra on set.
+NOTE: Generated from shot 172. Mr. Noda doesn't read clearly as Japanese in this study and is at the desk rather than behind the counter. Shot 262 puts him low beside it.
+
+---
+
+262. MEDIUM — 35mm, static, low angle — behind the counter.
+The lobby dark, the CRT still playing baseball. Mr. Noda crouches low beside the wooden counter, looking up. The pink payphone is on the wall. He is alone.
+SCRIPT: "Mr. Noda throws himself behind the counter."
+CAST: —
+LIGHT: Low key
+TIME: 5
+ID: neonoire-shot-262
+IMAGE: 177-behind-the-counter.jpg
+NOTE: Coverage, shot 262. Mr. Noda follows s46/213-clutch-each-other.jpg: older Japanese man, brown cardigan. He has no card. The lobby follows s32/170-just-one-night.jpg, now cold. The CRT shows baseball and is never static. No weapons in frame. CAVEAT: he is low beside the counter, not behind it.

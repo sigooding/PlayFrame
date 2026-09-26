@@ -33,7 +33,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-245
 IMAGE: 243-the-box.jpg
-NOTE: Coverage, shot 245, the wide shot 169's note asked for. The office follows s10/164-depends-whos-calling.jpg; Jack follows sheets/jack.jpg. The door reads JACK. The CRT is on and never static: the office's muted black-and-white samurai film, even though the draft writes static. CAVEAT: his feet are on the floor, not on the chair — the generation limit was spent before the retake. Put him on the chair on set.
+NOTE: Coverage, shot 245, the wide shot 169's note asked for. The office follows s10/164-depends-whos-calling.jpg; Jack follows sheets/jack.jpg. The door reads JACK. The CRT is on and never static: the office's muted black-and-white samurai film, even though the draft writes static. Retake: both feet are on the chair seat.
 
 246. INSERT — 85mm, static, high angle — daniel voss 41.
 Under the green lamp, a yellowed clipping. The photograph is Daniel, not Jack. The headline and the caption are lettered.

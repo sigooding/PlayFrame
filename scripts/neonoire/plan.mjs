@@ -577,7 +577,7 @@ export const SCENES = [
     page: "n45-roadside-inn-lobby-continuous.md", board: "n45-roadside-inn-lobby-dark.md",
     cast: ["The Masked Men"],
     grammar: "50mm from shot 172's position.",
-    description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 2 shots (180, and 254, the payphone). Jack dragging Mr. Noda is still not boarded.",
+    description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 3 shots (180, 254, and 256, Jack getting Mr. Noda out, no weapons in frame).",
     lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
   },
   {

@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-180
 IMAGE: 178-thank-you-very-much.jpg
-NOTE: Generated from shot 178. The script lights the room with the TV alone ("blue, flickering"), and the CRT now carries the inn's baseball channel — a TV that is on is never static (director's rule, 26 September 2026); keep the room's blue flicker coming from the screen on set. The ringing payphone is shot 254. Jack dragging Mr. Noda is still not boarded: a frame with the gunman was blocked, and the generation limit was spent before a safer angle.
+NOTE: Generated from shot 178. The script lights the room with the TV alone ("blue, flickering"), and the CRT now carries the inn's baseball channel — a TV that is on is never static (director's rule, 26 September 2026); keep the room's blue flicker coming from the screen on set. The ringing payphone is shot 254. Jack getting Mr. Noda out is shot 256, with no weapons in frame.
 
 ---
 
@@ -33,4 +33,16 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-254
 IMAGE: 179-it-rings.jpg
-NOTE: Coverage, shot 254. The pink payphone and the keyring case follow s32/170-just-one-night.jpg, now in the cold dark of shot 180. No one is in frame. Jack dragging Mr. Noda is the shot still missing.
+NOTE: Coverage, shot 254. The pink payphone and the keyring case follow s32/170-just-one-night.jpg, now in the cold dark of shot 180. No one is in frame. Jack getting Mr. Noda out is shot 256.
+
+---
+
+256. MEDIUM — 35mm, static, eye level — the shoulder.
+The lobby in the dark, lit by the baseball on the CRT. Jack, coat wet, has a hand on Mr. Noda's shoulder. They move low, past the wooden counter, toward the corridor. The pink payphone is on the wall.
+SCRIPT: "He grabs Mr. Noda by the collar and drags him down the corridor."
+CAST: Jack
+LIGHT: Low key
+TIME: 6
+ID: neonoire-shot-256
+IMAGE: 180-the-shoulder.jpg
+NOTE: Coverage, shot 256. Jack follows sheets/jack.jpg, wet as in s46/213-clutch-each-other.jpg. Mr. Noda follows that same pantry frame: older Japanese man, brown cardigan. The lobby follows s32/170-just-one-night.jpg, now cold and dark. The CRT shows baseball and is never static. No weapons in frame — a gunman frame was blocked last turn, so this angle keeps the move and leaves the gunman out. CAVEAT: they are beside the counter, not crouched fully behind it.
