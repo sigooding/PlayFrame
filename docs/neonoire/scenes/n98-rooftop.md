@@ -41,7 +41,7 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-157
 IMAGE: 155-close-enough.jpg
-NOTE: Generated from shot 155 to hold the roof and the costumes. The lighter, Kaneko's new place and "She says she opens at six" play over this frame. The train-window face is shot 241, with a logged reflection caveat.
+NOTE: Generated from shot 155 to hold the roof and the costumes. The lighter, Kaneko's new place and "She says she opens at six" play over this frame. The train-window face is shot 241.
 
 ---
 
@@ -53,4 +53,4 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-241
 IMAGE: 239-his-own-face.jpg
-NOTE: Coverage, shot 241. Retake from the first coverage frame and sheets/jack-face.jpg. The face is now ghosted over the passengers rather than a solid man in the seat. CAVEAT: it still reads larger than a glancing reflection in the glass. Vera is already gone.
+NOTE: Coverage, shot 241. Second retake from the first coverage frame and sheets/jack-face.jpg. The face is now a small reflection in the upper corner of the glass, about a passenger's head, and the seated passengers are the subject. It is no longer a double exposure filling the pane. Vera is already gone.

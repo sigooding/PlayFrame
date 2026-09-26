@@ -33,7 +33,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-250
 IMAGE: 248-exactly-the-drawing.jpg
-NOTE: Coverage, shot 250. Jack follows sheets/jack.jpg. The counter follows s17/187-you-got-old.jpg and the drawing in s14/183-the-sketchbook.jpg. The sign 金子 is legible at full size. CAVEAT: five stools read in frame, not six; dress the sixth on set. Shot 188's unscripted folder does not continue here.
+NOTE: Coverage, shot 250. Jack follows sheets/jack.jpg. The counter follows s17/187-you-got-old.jpg and the drawing in s14/183-the-sketchbook.jpg. The sign 金子 is legible at full size. Six stools read in frame. Shot 188's unscripted folder does not continue here.
 
 ---
 

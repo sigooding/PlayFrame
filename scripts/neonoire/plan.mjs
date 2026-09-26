@@ -727,7 +727,7 @@ export const SCENES = [
     page: "n27-pedestrian-crossing-day.md", board: "n27-pedestrian-crossing.md",
     cast: ["Vera Voss", "Jack"],
     grammar: "35mm wide and low; the only romantic frame in the film.",
-    description: "One cheap plastic umbrella too small for two, a green signal and the city's old melody: the only frame in the film that lets them be happy in the open. BOARDED — 1 shot (204).",
+    description: "One cheap plastic umbrella too small for two, a green signal and the city's old melody: the only frame in the film that lets them be happy in the open. BOARDED — 2 shots (204, and 263, the laugh).",
     lightingNotes: "Wet black asphalt, signal green, the only warmed midtones before the inn.",
   },
   {
@@ -1017,7 +1017,7 @@ export const SCENES = [
     page: "n64-small-bar-kanda-night.md", board: "n64-behind-the-counter.md",
     cast: ["Jack", "Okada"],
     grammar: "35mm across the counter; a cassette under the cash tray.",
-    description: "Keep this for me; not the police, not me if I ask with someone behind me. Behind the counter, like the girl's clip. BOARDED — 1 shot (233).",
+    description: "Keep this for me; not the police, not me if I ask with someone behind me. Behind the counter, like the girl's clip. BOARDED — 2 shots (233, and 264, the cassette).",
     lightingNotes: "One warm bulb behind the bottles; the CRT dark.",
   },
   {

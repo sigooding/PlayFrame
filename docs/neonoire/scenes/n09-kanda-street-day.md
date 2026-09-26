@@ -45,4 +45,4 @@ LIGHT: Overcast soft
 TIME: 4
 ID: neonoire-shot-243
 IMAGE: 241-the-card.jpg
-NOTE: Coverage, shot 243. Hands held to s9/162-miss.jpg and sheets/vera.jpg (charcoal sleeve, gold ring, pale-blue umbrella). JACK. INVESTIGATIONS. is lettered and legible at full size. CAVEAT: the katakana and the address are not on the card yet — no Japanese font in this session; letter them on set. The umbrella is still in Okada's other hand; by this beat he has already handed it over.
+NOTE: Coverage, shot 243. Hands held to s9/162-miss.jpg and sheets/vera.jpg (charcoal sleeve, gold ring). JACK. INVESTIGATIONS. is lettered and legible at full size. The umbrella is out of the raised hand; by this beat he has already handed it over. CAVEAT: the katakana and the address are not on the card yet — no Japanese font in this session; letter them on set.
