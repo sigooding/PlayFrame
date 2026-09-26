@@ -33,7 +33,7 @@ LIGHT: Low key
 TIME: 5
 ID: neonoire-shot-262
 IMAGE: 177-behind-the-counter.jpg
-NOTE: Coverage, shot 262, retaken in the consistency pass of 26 September 2026. Mr. Noda follows s46/213-clutch-each-other.jpg: older Japanese man, brown cardigan. He has no card. He now crouches BEHIND the wooden counter, the counter between him and the door, only his head and one shoulder showing; a same-frame edit restored the inn's CRT to its shelf, showing baseball, and it is never static. The lobby follows s32/170-just-one-night.jpg, now cold. No weapons in frame. Shot 269 is the staff side.
+NOTE: Coverage, shot 262, retaken in the consistency pass of 26 September 2026. Mr. Noda follows s46/213-clutch-each-other.jpg, now sheeted as sheets/mr-noda.jpg: older Japanese man, brown cardigan. He has no cast card. He now crouches BEHIND the wooden counter, the counter between him and the door, only his head and one shoulder showing; a same-frame edit restored the inn's CRT to its shelf, showing baseball, and it is never static. The lobby follows s32/170-just-one-night.jpg, now cold. No weapons in frame. Shot 269 is the staff side.
 
 ---
 

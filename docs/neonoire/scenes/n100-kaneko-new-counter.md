@@ -9,7 +9,7 @@ Grammar: one warm bulb, the old sign, a second bowl. She doesn't turn.
 
 ## Frame format — 26 September 2026
 
-Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follows `s86/121-the-shutter.jpg`, and **Kaneko** is held to `s86/123-fifty-years.jpg`. The scene master is `s100/158-the-third-stool.jpg`. **Vera wears costume Look F**, which has no sheet; shot 160 is its master. It is a deep teal double-breasted peacoat, worn with the red bird clip in her hair. Jack appears only as a man in a coat, which is how the script keeps him. These are AI-generated draft studies, not approved coverage.
+Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follows `s86/121-the-shutter.jpg`, and **Kaneko** is held to `s86/123-fifty-years.jpg`, now sheeted as `sheets/kaneko.jpg`. The scene master is `s100/158-the-third-stool.jpg`. **Vera wears costume Look F**, sheeted since the cast-sheet pass of 26 September 2026 as `sheets/vera-look-f.jpg`, first framed in shot 160. It is a deep teal double-breasted peacoat, worn with the red bird clip in her hair. Jack appears only as a man in a coat, which is how the script keeps him. These are AI-generated draft studies, not approved coverage.
 
 ---
 

@@ -9,7 +9,7 @@ Grammar: an old paper office under fluorescent tubes, with three TVs showing thr
 
 ## Frame format — 25 September 2026
 
-All five shots (106–110) are **16:9, 1920×1080, full-bleed**. The newsroom master is `s82/104-the-newsroom.jpg`: jammed grey metal desks, stacked newspapers, cream desk phones, and three ceiling TVs (a news anchor, a weather map and baseball), with the glass-walled editor's office behind venetian blinds at the back. **Harada** has no sheet yet. She is established in the master: Japanese, fifties, grey hair in a short bob, reading glasses, and a white blouse with the sleeves rolled. **The journalist's photograph** follows scene 2's `s2/20-the-journalist.jpg`, laughing at an office party. **Jack** is the same as in scene 81. These are AI-generated draft studies, not approved coverage.
+All five shots (106–110) are **16:9, 1920×1080, full-bleed**. The newsroom master is `s82/104-the-newsroom.jpg`: jammed grey metal desks, stacked newspapers, cream desk phones, and three ceiling TVs (a news anchor, a weather map and baseball), with the glass-walled editor's office behind venetian blinds at the back. **Harada** is sheeted as `sheets/harada.jpg` since the cast-sheet pass of 26 September 2026; the master remains `s82/104-the-newsroom.jpg`: Japanese, fifties, grey hair in a short bob, reading glasses, and a white blouse with the sleeves rolled. **The journalist's photograph** follows scene 2's `s2/20-the-journalist.jpg`, laughing at an office party. **Jack** is the same as in scene 81. These are AI-generated draft studies, not approved coverage.
 
 ---
 

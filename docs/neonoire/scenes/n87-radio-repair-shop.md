@@ -9,7 +9,7 @@ Grammar: an old man hears boots and looks at his fuse box. One pull, and the Hiv
 
 ## Frame format — 26 September 2026
 
-Both shots (126–127) are **16:9, 1920×1080, full-bleed**. The shop master is `s87/124-the-repairman.jpg`: shelves of valve radios and cassette decks, a bench under a green-shaded lamp, and the grey fuse box with its main switch on the wall at right. **The radio repairman** has no sheet: Japanese, seventies, thin, round glasses, a grey cardigan, a loupe on his forehead. These are AI-generated draft studies, not approved coverage.
+Both shots (126–127) are **16:9, 1920×1080, full-bleed**. The shop master is `s87/124-the-repairman.jpg`: shelves of valve radios and cassette decks, a bench under a green-shaded lamp, and the grey fuse box with its main switch on the wall at right. **The radio repairman** is sheeted as `sheets/repairman.jpg` since the cast-sheet pass of 26 September 2026: Japanese, seventies, thin, round glasses, a grey cardigan; the loupe pushed up on his forehead is the bench prop of the shop master. These are AI-generated draft studies, not approved coverage.
 
 ---
 

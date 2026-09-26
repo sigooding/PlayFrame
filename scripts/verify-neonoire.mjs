@@ -554,6 +554,12 @@ const fence267 = project.frames.find(f => f.id === "neonoire-shot-267");
 assert(fence267.notes.includes("waist-high"), "Shot 267 keeps the walkway rail waist-high");
 pass("consistency retakes two: one pole on the cold-open street, the strap untouched, the 1975 wood corridor, the katakana card, three customers, a waist-high rail");
 
+// Cast-sheet pass, 26 September 2026: the recurring cast and the film's last costume carry identity sheets.
+for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repairman", "harada", "young-detective", "vera-look-f"]) {
+  assert.deepEqual(jpegDimensions(`/images/neonoire/sheets/${sheet}.jpg`), [1920, 1080], `${sheet}'s identity sheet is 16:9`);
+}
+pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective and Vera's Look F carry identity sheets");
+
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");
