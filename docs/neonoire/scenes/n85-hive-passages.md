@@ -9,7 +9,7 @@ Grammar: the Hive's corridors are too narrow for anything but single file. The b
 
 ## Frame format — 26 September 2026
 
-Both shots (121–122) are **16:9, 1920×1080, full-bleed**. This is the first boarding of the Hive's passages. They were designed from `keys/06-the-block.jpg`: plywood, corrugated metal and old tile, pipes and wires overhead, laundry, plants and a bicycle, lit by bare bulbs and open doorways. The passage master is `s85/119-single-file.jpg`, and scene 88 uses the same passage and camera. **The masked men** follow `s1/12-masked-man-radio.jpg`: black clothes, black lower-face masks, gloves and earpieces; the film never shows a face under the masks. These are AI-generated draft studies, not approved coverage.
+Both shots (121–122) are **16:9, 1920×1080, full-bleed**. This is the first boarding of the Hive's passages. They were designed from `keys/06-the-block.jpg`: plywood, corrugated metal and old tile, pipes and wires overhead, laundry, plants and a bicycle, lit by bare bulbs and open doorways. The passage master is `s85/119-single-file.jpg`, and scene 88 uses the same passage and camera. **The masked men** follow `s1/12-masked-man-radio.jpg`, and are sheeted since the looks-and-props pass of 26 September 2026 as `sheets/masked-man.jpg`: black clothes, black lower-face masks under a black knit cap, gloves, earpieces and a radio strap; the film never shows a face under the masks. These are AI-generated draft studies, not approved coverage.
 
 ---
 
