@@ -126,13 +126,13 @@ IMAGE: 12-masked-man-radio.jpg
 NOTE: He is a man doing a job on a shift. Mundane, never menacing in performance; the voice on the radio does the work.
 
 13. WIDE — 35mm, static, eye level — the sedan pulls away.
-They get back in the car. It pulls away, unhurried, taillights smearing red across the wet road and gone. Rain, the vending machine hum, the crossing melody still playing for no one. Mara doesn't move.
+Same camera as the arrival. The alley is one car wide, so the sedan cannot turn around. It stopped nose-to-camera; it backs straight out the way it came, rear to camera, white reverse lamps lit with the red taillights, a short smear of both on the wet asphalt. Doors closed. The doorway stays empty. Mara doesn't move.
 SCRIPT: "It pulls away, unhurried. Taillights smear red across the road and are gone."
 CAST: —
 LIGHT: Practical night
 TIME: 10
 IMAGE: 13-taillights-gone.jpg
-NOTE: A pedestrian crossing chimes somewhere off camera for an empty intersection, over and over. The street is emptier after they leave than it was before they came.
+NOTE: Retake 27 September 2026. The alley will not take a turn: shot 8 stops the sedan nose-to-camera with the doors against the walls, so the rear already points down the lane. It backs out. It does not turn. White reverse lamps are the proof, with the red taillights. The plate is not legible and is not claimed. The vending face drifted slightly from the master; the pole, the door and the side hold. No people. A pedestrian crossing chimes somewhere off camera for an empty intersection, over and over. The street is emptier after they leave than it was before they came.
 
 14. MEDIUM — 50mm, static, eye level — she kneels.
 She steps out into the rain and kneels beside him: "It's okay — I'll get someone. Ambulance. I'll call. Ambulance." Her phone is off, and her hands shake too hard to turn it on.

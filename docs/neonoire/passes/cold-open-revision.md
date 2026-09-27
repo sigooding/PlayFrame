@@ -42,7 +42,7 @@ All revised files are full-bleed **1920×1080**, fine 35mm grain, muted practica
 
 11. Mara covers her mouth with both hands, still hidden in the same recess.
 12. Same masked man listens to earpiece; only eyes exposed.
-13. Same sedan departs unhurriedly, red taillights; no chase.
+13. Same sedan departs unhurriedly, red taillights; no chase. Retake 27 September 2026: it backs out, it does not turn — the alley is one car wide. See [taillights-backs-out.md](taillights-backs-out.md).
 14. Mara kneels next to the fallen man, fumbling her switched-off phone; handbag still present.
 15. His hand catches her wrist and transfers the key; keep bodies/coat positions, not a newly seated man.
 16. Worn numbered locker-key tag 87, no invented exposition.
