@@ -231,12 +231,14 @@ const frames = shots.map(shot => {
     style: "neonoire",
     duration: shot.duration,
     durationIsEstimate: true,
-    status: absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
+    status: absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
     transition: shot.n === 1 ? "Fade in" : "Cut",
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
-      absent
+      shot.n > PRIMARY_SHOTS
+        ? "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending."
+        : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
         : streetsScenes.has(shot.scene.key)
           ? (streetsPassTwoImages.includes(path)
@@ -269,7 +271,7 @@ const frames = shots.map(shot => {
             : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       ...(jackRecastPending.has(shot.id) ? [jackRecastNote] : []),
       ...(jackRecastDone.has(shot.id) ? [jackRecastDoneNote] : []),
-      ...(isColdOpenScene(shot.scene.key) ? [shot.n <= coldOpenCompletedThrough
+      ...(isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS ? [shot.n <= coldOpenCompletedThrough
         ? `Cold-open visual revision: ${coldOpenLook}`
         : `COLD OPEN REVISION PENDING — shot ${shot.n} retains its previous 2.39:1 image. Only shots 1–${coldOpenCompletedThrough} have been rebuilt in 16:9; follow scripts/neonoire/cold-open-look.mjs for the next batch. This legacy frame is not revised coverage.`] : []),
       ...(awaitingAspect(shot) ? [`16:9 REVISION PENDING — shot ${shot.n} is not yet 1920×1080. From the final screenplay onward every image in this film is 16:9 full-bleed (1920×1080): regenerate this frame against its scene key; never crop a scope study into it.`] : []),
@@ -369,7 +371,7 @@ const boardOf = (id, title, description, list) => ({
 const framesOf = keys => frames.filter(frame => frame.image && keys.includes(frame.sceneId));
 const allBoards = [
   boardOf("neonoire-look-tokyo-story", "Tokyo Story in colour — scenes 72–75", "All fifteen 16:9 draft studies across both sessions: dry pretty makeup in the hotel, rain washing it away on the run, the twenty-metre stop, the blow and folding, the distant aftermath, the almost-reflection, and the empty pillow shots. Low level static cameras; one normal-lens face shot, then a withheld extreme wide.", framesOf(["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated revision study.` }))),
-  boardOf("neonoire-look-dawn", "The envelope and the notebook — scenes 77–79", "Nine 16:9 draft studies: Jack's office under one lamp and a TV full of static, the envelope with no name, the grey dawn walkway, DANIEL VOSS inside the cover, and the scene 4 room at dawn with two empty cups.", framesOf(["neonoire-s77", "neonoire-s78", "neonoire-s79"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated study.` }))),
+  boardOf("neonoire-look-dawn", "The envelope and the notebook — scenes 77–79", "Ten 16:9 draft studies: Jack's office under one lamp and a TV full of static, the envelope with no name, the grey dawn walkway, DANIEL VOSS inside the cover, the scene 4 room at dawn with two empty cups, and the letter returned, smoothed flat beside them.", framesOf(["neonoire-s77", "neonoire-s78", "neonoire-s79"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated study.` }))),
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, rain-grey glass and muted amber practical light inside the revised apartment, a bone-dry pale-blue umbrella and a faded warm family photograph.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7", "neonoire-s80"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),

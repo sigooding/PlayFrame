@@ -32,3 +32,21 @@ TIME: 6
 ID: neonoire-shot-194
 IMAGE: 192-the-red-bird-clip.jpg
 NOTE: The clip follows the red enamel sparrow of `s1/03-mara-walks.jpg`; the same prop Vera wears in her hair at the end.
+
+---
+
+## Coverage — the letter rewrite (28 September 2026)
+
+**Shot 284 boards the beat the rewrite gave Mara in the storeroom** — the self-accusation she laughs at while hiding.
+
+---
+
+284. MEDIUM CLOSE-UP — 85mm, static, eye level — a coward, hiding.
+On the thin futon under the bare bulb, flour dust in the light: Mara in an old borrowed brown cardigan, hair unwashed and loose — no bird clip — face swollen from crying, giving the small bitter laugh that is almost crying, the back of her wrist against her mouth.
+SCRIPT: "I called her a coward. (small, bitter laugh) And I'm the one hiding in a storeroom."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-284
+IMAGE: 284-i-called-her-a-coward.jpg
+NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s13/179-eat.jpg` and `sheets/mara-hiding.jpg` (brown cardigan, NO clip — the clip is with Jack by now, shot 194). Sacks and bare bulb as in the storeroom masters; the paper sacks carry the same FLOUR print the masters do (see `s57/224`), nothing invented.

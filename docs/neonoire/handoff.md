@@ -1,5 +1,9 @@
 # NEONOIRE — keyframe handoff
 
+## Current state — 28 September 2026
+
+The director's patch "Sakai chose Mara" landed in the draft (commit `4199d55`), and the board followed the same day: **[the letter rewrite coverage, shots 280–286](passes/letter-rewrite-coverage.md)** plus an in-place retake of shot 7 and a new prop master `props/sakai-letter.jpg`. Ten generations: seven coverage frames, one prop master, one retake after 286's first attempt showed three hands. Scene 1 gains 280 (the folded scrap with 1:00 in her own handwriting under the streetlight), 281 (her POV to the small lit bar sign) and 282 (the low two-shot, his face turned up to hers); scene 18 gains 283 (the letter under the lamp, envelope addressed VERA VOSS); scene 20 gains 284 ("I called her a coward. And I'm the one hiding in a storeroom."); scene 22 gains 285 (Jack's hand still over the inside pocket); scene 79 gains 286 (Vera unfolding the same sheet beside the two cups, two hands and no more). Shot 7 now carries the flicker — Sakai's eyes find Mara in the doorway and leave, walking faster the other way. `EXPECTED_SHOTS` is **286**; the cold-open and dawn verify groups filter coverage out, the builder gives coverage frames their own note and no longer dresses them in the legacy cold-open status. Caveats logged in the ledger: the barber pole reads slightly lit in the four street frames (the master keeps it unlit), 283's hands read older than 48, 280's scrap shows the time only at this angle. Review sheet: `public/images/neonoire/reviews/letter-rewrite-coverage.jpg`.
+
 ## Current state — 27 September 2026
 
 Shot 13 (`s1/13-taillights-gone.jpg`) was retaken. The alley is one car wide and the sedan arrives nose-to-camera, so it cannot turn around. It backs out: white reverse lamps with the red taillights, same camera, doorway empty. Ledger: [taillights-backs-out.md](passes/taillights-backs-out.md). Scene 95's light-trail U-turn was not retaken.
