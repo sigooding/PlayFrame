@@ -15,7 +15,7 @@ All three shots (93–95) are **16:9, 1920×1080, full-bleed**. Room follows `s4
 
 93. WIDE — 35mm, static, low level — two empty cups.
 The scene 4 master in grey dawn: Vera kneels on the floor at the low table between the two empty ivory cups, turning the notebook's pages. Lamp and television off; the room is lit only by the window.
-SCRIPT: "Vera sits at the low table in the dawn light. Beside her, the two cups from the beginning of the film, both empty now. She turns the pages."
+SCRIPT: "Vera sits at the low table in the dawn light. Beside her, the two cups from the beginning of the film, both empty now."
 CAST: Vera Voss
 LIGHT: Blue hour
 TIME: 18

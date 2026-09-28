@@ -11,10 +11,15 @@ INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #25#
 The bulb. The flour sacks. Mara sits cross-legged on the futon, a bowl of rice going cold in her lap. Jack sits against the opposite wall. They talk quietly, as if the building is listening. It is.
 
 MARA
-The old man said "twenty years." Before they shot him. Like he'd been expecting them for twenty years.
+Mr. Sakai said "twenty years." Before they shot him. Like he'd been expecting them for twenty years.
 
 JACK
 He probably had.
+
+MARA
+He knew me. He saw me in the doorway and he walked away from me, so they wouldn't look. And at the end he said, in English -- "Your father. It was not what they say."
+
+Jack looks down at his hands.
 
 MARA
 And then in the bar, the man said, "Where is he?" He was waiting for the old man. They were supposed to meet.

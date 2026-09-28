@@ -42,7 +42,7 @@ NOTE: She brings the street's weather in with her. The bar CRT in frame is never
 
 22. MEDIUM — 50mm, static, eye level — the journalist looks, then away.
 He glances up, startled, then away. Not his business.
-SCRIPT: "The journalist glances up, startled. Then away. Not his business."
+SCRIPT: "The journalist half rises. He looks at her -- soaked, foreign, alone -- and something like recognition crosses his face."
 CAST: The Journalist, Mara Voss
 LIGHT: Practical night
 TIME: 6

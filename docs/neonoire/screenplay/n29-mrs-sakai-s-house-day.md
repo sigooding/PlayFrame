@@ -36,6 +36,8 @@ MRS. SAKAI
 (in Japanese)
 He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head.
 (beat)
+Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl.
+(beat)
 When the doctor told him, he said he was glad. He said now he could stop being afraid of the wrong thing.
 
 JACK

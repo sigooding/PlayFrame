@@ -44,7 +44,11 @@ That's what I said. The night she left. That she always runs.
 She looks at the wall of drawings, not at him.
 
 VERA (CONT'D)
-She said I was the one who ran. All the way back here, chasing a ghost. Our father.
+It was about Dad. It's always about Dad. She wanted to dig it all up. Who he was here. Why he --
+(beat)
+I told her to leave him dead.
+(beat)
+She said I was the one who ran. All the way back here, chasing a ghost, and I won't even look at it.
 (beat)
 I told her to go, then. Go home. Those were the last things I said to her.
 

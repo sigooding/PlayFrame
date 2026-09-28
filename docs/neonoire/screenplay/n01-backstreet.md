@@ -64,7 +64,11 @@ Not tonight.
 
 She switches it off and shoves it into her purse.
 
-The rain thickens. She ducks into the recessed doorway of a closed barbershop, its striped pole dark and still, and presses back into the shadow. Going nowhere.
+Under a streetlight she stops and takes a folded scrap of paper from her coat pocket. An address in her own handwriting, and a time: 1:00. She looks down the street. At the far end, a small lit sign: a bar.
+
+She checks her watch. Early.
+
+The rain thickens. She ducks into the recessed doorway of a closed barbershop, its striped pole dark and still, and presses back into the shadow. Going nowhere. Not yet. She doesn't want to walk in early. She isn't sure she wants to walk in at all.
 
 Somewhere nearby, a pedestrian crossing CHIMES its old melody for an empty intersection. Over and over. No one crosses.
 
@@ -72,7 +76,7 @@ Footsteps. Hurried. Uneven.
 
 An OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back.
 
-He passes Mara's doorway without seeing her.
+He passes Mara's doorway without seeing her. Then, a step later, his eyes find her in the shadow -- a flicker, as if he knows her face -- and he looks away at once and keeps walking, faster, toward the bar sign. Away from her.
 
 Headlights sweep the wet street. A black sedan rolls in and stops without hurry.
 
@@ -108,6 +112,12 @@ She stares. He is still alive.
 
 Every instinct says run. She doesn't. She steps out into the rain and kneels beside him.
 
+She sees his face properly for the first time.
+
+MARA
+(whispering)
+Mr. Sakai?
+
 MARA
 It's okay -- I'll get someone --
 (in halting Japanese)
@@ -126,6 +136,13 @@ Mara's lips move, working through the words. She understands. Just.
 MARA
 (in halting Japanese)
 Have what? I don't --
+
+He looks at her face as if he is trying to remember it. When he speaks again it is in English, careful and broken, the English of a man who practised it.
+
+OLD MAN
+Your father.
+(beat)
+It was not... what they say.
 
 His grip loosens. His eyes stay open, on nothing.
 

@@ -39,6 +39,19 @@ She thinks about it for a long time.
 
 VERA
 I believe he was sad. I don't know if I believe the rest.
+(beat)
+A man wrote to me. Last month. An old man. He said Dad didn't kill himself. He said he could prove it.
+
+JACK
+(carefully)
+What did you do?
+
+VERA
+I threw it in the bin.
+(beat)
+Because if it's true, then someone did it. And nobody looked. Twenty years, and nobody even looked.
+
+Jack is very still. The letter is in the inside pocket of his coat. He doesn't move to touch it.
 
 A train. The cups tremble.
 

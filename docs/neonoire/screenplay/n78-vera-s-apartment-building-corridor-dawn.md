@@ -15,7 +15,7 @@ Vera opens her door. She is still in the dress. She hasn't slept.
 
 On the doormat: a plain envelope. No name.
 
-She picks it up. Opens it. The cloth-covered notebook.
+She picks it up. Opens it. The cloth-covered notebook. And tucked inside its cover, a folded sheet of lined paper.
 
 She sees the name inside the cover, and her whole body goes still.
 
