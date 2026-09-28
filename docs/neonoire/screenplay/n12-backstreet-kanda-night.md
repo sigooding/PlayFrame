@@ -76,5 +76,7 @@ She was here. She saw it. She ran there. She saw that too.
 
 And whatever they came back for, she has it.
 
+He looks down the empty street at the bar sign. And one more question he can't answer yet: what was an American girl doing in a Kanda backstreet at one in the morning?
+
 Jack drops the unopened coffee into the recycling bin. The can CLANKS. The crossing melody starts up somewhere, for no one.
 

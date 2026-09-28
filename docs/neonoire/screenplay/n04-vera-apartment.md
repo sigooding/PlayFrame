@@ -32,7 +32,7 @@ Vera opens her mouth. For a moment, nothing.
 VERA
 It's me again.
 (beat)
-I'm not angry anymore. I wasn't really angry then, either. I just --
+I'm not angry anymore. I wasn't really angry then, either. Whatever that man wants, it doesn't matter. I just --
 (stops herself)
 You left your umbrella. You'll get soaked.
 (beat)

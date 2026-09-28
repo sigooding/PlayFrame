@@ -72,13 +72,13 @@ IMAGE: 06-barbershop-doorway.jpg
 NOTE: The doorway has to read as a place she could stay for the whole scene. The barbershop pole returns in shot 17 — keep its position and colour consistent.
 
 7. FULL — 50mm, static, eye level — the old man, hurrying.
-An OLD MAN in a cheap raincoat, one hand pressed to his side as if something is hidden there, walks hurriedly across the street, glancing back over his shoulder. He passes Mara's doorway without seeing her.
-SCRIPT: "An OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back."
-CAST: The Old Man
+An OLD MAN in a cheap raincoat, one hand pressed to his side as if something is hidden there, walks hurriedly across the street, glancing back over his shoulder. He passes Mara's doorway — then, a step later, his eyes find her in the shadow, a flicker, as if he knows her face — and he looks away at once and keeps walking, faster, toward the bar sign. Away from her.
+SCRIPT: "He passes Mara's doorway without seeing her. Then, a step later, his eyes find her in the shadow -- a flicker, as if he knows her face -- and he looks away at once and keeps walking, faster, toward the bar sign. Away from her."
+CAST: The Old Man, Mara Voss
 LIGHT: Practical night
 TIME: 8
 IMAGE: 07-old-man.jpg
-NOTE: He must pass within a metre of her and still not see her. No reaction from her in this shot — the doorway stays in shadow.
+NOTE: He must pass within a metre of her; the flicker of recognition is the letter rewrite's first beat — Sakai knows her face and leads the killers away from her, so the doorway stays in shadow and she gets no reaction shot. Retake 28 September 2026 (the letter rewrite): same camera, same street masters, same wardrobe; Mara now reads in the doorway as in the draft. The barber pole reads slightly lit in the retake; the master keeps it unlit — dress it dark on set.
 
 8. MEDIUM — 50mm, static, eye level — the sedan arrives.
 Headlights sweep the wet street. A black sedan rolls in and stops without hurry; two men in black clothes and plain masks step out. They don't run. The car and the men fill the frame at car height, rain lit across the beams.
@@ -178,6 +178,44 @@ LIGHT: Practical night
 TIME: 10
 IMAGE: 18-the-flashlight.jpg
 NOTE: The search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music.
+
+---
+
+## Coverage — the letter rewrite (28 September 2026)
+
+**Shots 280–282 board the beats the letter rewrite added to scene 1**, without renumbering 1–240. All three are 16:9, 1920×1080, full-bleed, generated from the street masters (`s1/01-backstreet.jpg`, `s1/05-phone-off.jpg`, `s1/14-she-kneels.jpg`) with `sheets/mara.jpg` attached; Mara keeps the soaked denim look, the red enamel bird clip and the dark-brown handbag strap. The prop for 280 is a folded scrap of paper with an address in her own handwriting and a time: 1:00 — it sets up that she is in Kanda on purpose, to meet Sakai at the bar.
+
+---
+
+280. MEDIUM CLOSE-UP — 50mm, static, eye level — one o'clock.
+Under the streetlight Mara stops and takes a folded scrap of paper from her coat pocket: an address in her own handwriting, and a time: 1:00. She checks her watch; early; she looks down the street, guarded, not sure she wants to walk in at all.
+SCRIPT: "Under a streetlight she stops and takes a folded scrap of paper from her coat pocket. An address in her own handwriting, and a time: 1:00."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-280
+IMAGE: 280-one-oclock.jpg
+NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s1/05-phone-off.jpg` and `s1/03-mara-walks.jpg` with `sheets/mara.jpg`: indigo denim jacket, grey tee, black cord necklace, dark-brown handbag strap right shoulder to left hip, red enamel bird clip in soaked hair. The time 1:00 is legible at full size. The barber pole reads slightly lit; the master keeps it unlit — dress it dark on set.
+
+281. POV — 35mm, static, eye level — the bar sign.
+Mara's point of view down the wet street: the barbershop recess and the vending machine hold the foreground, and at the far end, small and lit in the rain, the sign of the bar she is early for.
+SCRIPT: "She looks down the street. At the far end, a small lit sign: a bar."
+CAST: —
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-281
+IMAGE: 281-the-bar-sign.jpg
+NOTE: Letter rewrite coverage, 28 September 2026. Generated from the street master `s1/01-backstreet.jpg`; no people in frame, one barber pole, the bar sign the only new light down the street. The pole reads slightly lit; carry the same on-set caveat as 280.
+
+282. TWO-SHOT — 85mm, static, low angle — Mr. Sakai?
+Low on the wet asphalt: the old man on his side in the black water, his face turned up to Mara as she kneels beside him, rain falling on both. It covers her whisper — Mr. Sakai? — and his last English: your father; it was not what they say.
+SCRIPT: "Your father. (beat) It was not... what they say."
+CAST: Mara Voss, The Old Man
+LIGHT: Practical night
+TIME: 10
+ID: neonoire-shot-282
+IMAGE: 282-mr-sakai.jpg
+NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s1/14-she-kneels.jpg` and `s1/07-old-man.jpg`: his translucent raincoat and her soaked denim and red bird clip carry. Distant and non-graphic — no blood, no weapons in frame. The barbershop pole deep in the background reads slightly lit; same on-set caveat.
 
 ---
 

@@ -18,7 +18,12 @@ In the corner, a JOURNALIST (40s), an untouched beer in front of him, a notebook
 
 The door BANGS open. Mara, soaked, too out of breath to speak.
 
-The journalist glances up, startled. Then away. Not his business.
+The journalist half rises. He looks at her -- soaked, foreign, alone -- and something like recognition crosses his face.
+
+JOURNALIST
+Miss Voss?
+
+Mara can't answer. She is staring back at the door. Outside, headlights sweep the wet window.
 
 Mara stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves.
 

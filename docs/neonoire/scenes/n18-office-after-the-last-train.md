@@ -22,3 +22,21 @@ TIME: 12
 ID: neonoire-shot-191
 IMAGE: 189-after-the-last-train.jpg
 NOTE: Kaneko is heard, never seen. The green desk lamp stays off. Director's rule (26 September 2026): a TV that is on is never static — the office CRT now carries the muted B&W samurai film from scenes 10-11; the draft's word 'static' stays on the page, but the light on the screen is a programme.
+
+---
+
+## Coverage — the letter rewrite (28 September 2026)
+
+**Shot 283 boards the insert of Sakai's letter on Jack's desk**, built from the new prop master `props/sakai-letter.jpg`. For this one beat the green desk lamp is ON — the rewrite has Jack unfold the letter "under the lamp", superseding the lamp-off rule of shots 164/191 for this frame only.
+
+---
+
+283. INSERT — 85mm, static, high angle — the letter.
+Looking down at the worn desk under the green-shaded brass lamp: the folded letter opened flat — cheap cream lined paper, laborious elderly English handwriting, signed T. SAKAI — and beside it the envelope it came in, addressed VERA VOSS. Jack's hands hold its edge; the black rotary sleeps at the top of frame.
+SCRIPT: "The envelope folded inside it is addressed to VERA VOSS."
+CAST: Jack
+LIGHT: Low key
+TIME: 8
+ID: neonoire-shot-283
+IMAGE: 283-the-letter.jpg
+NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s10/164-depends-whos-calling.jpg`, `s77/85-the-desk-lamp.jpg` and the prop master `props/sakai-letter.jpg`; "Miss Voss." and "T. SAKAI" legible at full size, the body texture-only per the shot-94 rule. The hands read older than Jack's 48 from this angle — carry as a caveat; the face never meets the letter in this frame.

@@ -61,7 +61,7 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 100, "All one hundred scenes of the screenplay are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 279;
+const EXPECTED_SHOTS = 286;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 assert.equal(project.frames.length, EXPECTED_SHOTS, "The sixty-five boarded scenes carry 205 numbered shots");
 assert.equal(project.characters.length, 18);
@@ -140,7 +140,7 @@ function jpegDimensions(file) {
 }
 const { coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
 assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
-const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId));
+const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId) && shotNo(frame) <= 28);
 assert.equal(coldOpen.length, 28);
 for (const frame of coldOpen) {
   const n = Number(frame.id.replace("neonoire-shot-", ""));
@@ -159,6 +159,22 @@ for (const frame of coldOpen) {
   }
 }
 pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
+
+// Letter rewrite coverage, 28 September 2026 — shots 280–282 re-derive scene 1's street without
+// renumbering the first boarding. Shot 7 was retaken in place so Sakai's eyes find Mara and leave.
+const letterS1 = project.frames.filter(frame => frame.sceneId === "neonoire-s1" && shotNo(frame) >= 280);
+assert.deepEqual(letterS1.map(f => f.id), ["neonoire-shot-280", "neonoire-shot-281", "neonoire-shot-282"], "Scene 1 coverage runs 280–282");
+for (const frame of letterS1) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
+  assert.equal(frame.status, "Draft", `${frame.title} is fresh coverage, not a pending cold-open revision`);
+  assert(!frame.notes.includes("COLD OPEN REVISION PENDING"), `${frame.title} must not wear the legacy cold-open note`);
+}
+assert(letterS1[0].notes.includes("1:00"), "Shot 280 keeps the time legible at full size");
+assert(letterS1[0].notes.includes("s1/05-phone-off.jpg") && letterS1[0].notes.includes("red enamel bird clip"), "Shot 280 locks the doorway wardrobe");
+assert(letterS1[1].notes.includes("s1/01-backstreet.jpg") && letterS1[1].notes.includes("bar sign"), "Shot 281 is the street master's POV with the lit bar sign");
+assert(letterS1[2].notes.includes("s1/14-she-kneels.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic");
+assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 carries the letter-rewrite retake note");
+pass("letter rewrite in scene 1: 1:00 in her own handwriting, the bar sign at the end of the street, and Mr. Sakai's face turned up to hers");
 const backsOut = project.frames.find(frame => frame.id === "neonoire-shot-13");
 assert(backsOut.notes.includes("backs out") && backsOut.notes.includes("does not turn") && backsOut.notes.includes("reverse lamps"), "Shot 13 locks the reverse: the alley will not take a turn");
 
@@ -212,7 +228,7 @@ for (const frame of aftermath) {
 }
 for (let n = 1; n <= 84; n++) assert(project.frames.some(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`), `Existing frame identity ${n} must survive the inserted scene 72`);
 // Scenes 77–79: first boarding, nine shots, with Jack recast as a white American in the same session.
-const dawn = project.frames.filter(frame => ["neonoire-s77", "neonoire-s78", "neonoire-s79"].includes(frame.sceneId));
+const dawn = project.frames.filter(frame => ["neonoire-s77", "neonoire-s78", "neonoire-s79"].includes(frame.sceneId) && shotNo(frame) <= 95);
 assert.equal(dawn.length, 9, "Three office, three corridor and three apartment shots");
 assert.deepEqual(dawn.map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${87 + i}`), "New stable IDs start after scene 72's 85–86");
 assert.deepEqual(new Set(dawn.map(f => f.image)), new Set(dawnImages), "Every scenes 77–79 frame is a delivered generation");
@@ -226,7 +242,7 @@ assert(dawn.filter(f => f.sceneId === "neonoire-s77").every(f => f.characters.in
 assert(dawn.filter(f => f.sceneId !== "neonoire-s77").every(f => f.characters.join() === "neonoire-vera"));
 assert.deepEqual(jpegDimensions("/images/neonoire/sheets/jack.jpg"), [1920, 1080], "Jack's recast sheet is 16:9");
 assert(/white American/.test(project.characters.find(c => c.id === "neonoire-jack").description), "Jack's cast card carries the recast");
-assert(project.moodboards.some(b => b.id === "neonoire-look-dawn" && b.items.length === 9));
+assert(project.moodboards.some(b => b.id === "neonoire-look-dawn" && b.items.length === 10));
 pass("scenes 77–79 boarded: nine 16:9 shots, Jack recast as a white American");
 
 // The recast carried back into scene 74, and scene 80 boarded.
@@ -518,7 +534,7 @@ assert(coverage.find(f => f.id === "neonoire-shot-269").notes.includes("staff si
 pass("coverage pass: shots 241–269 — named beats the first boarding left, through the third stool, the gap and the staff side");
 
 // Final coverage pass: shots 270–279 — the beats the boards had named and left in the cut.
-const finalCoverage = project.frames.filter(f => shotNo(f) >= 270);
+const finalCoverage = project.frames.filter(f => shotNo(f) >= 270 && shotNo(f) <= 279);
 assert.deepEqual(finalCoverage.map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${270 + i}`));
 assert(finalCoverage.find(f => f.id === "neonoire-shot-270").notes.includes("packed and zipped"), "Shot 270 locks the packed suitcase under the futon");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-271").notes.includes("Not yet"), "Shot 271 boards the sketchbook lie");
@@ -531,6 +547,25 @@ assert(finalCoverage.find(f => f.id === "neonoire-shot-277").notes.includes("ver
 assert(finalCoverage.find(f => f.id === "neonoire-shot-278").notes.includes("9:58") && finalCoverage.find(f => f.id === "neonoire-shot-278").notes.includes("10:00"), "Shot 278 locks the lounge clock from 9:58 to 10:00");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-279").notes.includes("mara-hiding"), "Shot 279 holds Mara's smile to her hiding sheet");
 pass("final coverage: shots 270–279 — the packed suitcase, the lie, the tiny tree, the receipts, the bow, the kiss, the wall, the umbrella, the clock at ten and her sister's smile");
+
+// Letter rewrite coverage, 28 September 2026 — shots 283–286: the letter under the lamp, the
+// coward line in the storeroom, the hand over the inside pocket, and the sheet returned at dawn.
+const letterRewrite = project.frames.filter(f => shotNo(f) >= 280);
+assert.deepEqual(letterRewrite.map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${280 + i}`), "The letter rewrite runs 280–286 with no gaps");
+for (const frame of letterRewrite) {
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
+  assert.equal(frame.status, "Draft", `${frame.title} is fresh coverage`);
+}
+const desk = letterRewrite.find(f => f.id === "neonoire-shot-283");
+assert(desk.notes.includes("props/sakai-letter.jpg") && desk.notes.includes("T. SAKAI") && desk.notes.includes("VERA VOSS"), "Shot 283 locks the letter and its envelope to the prop master");
+const storeroom = letterRewrite.find(f => f.id === "neonoire-shot-284");
+assert(storeroom.notes.includes("sheets/mara-hiding.jpg") && storeroom.notes.includes("NO clip"), "Shot 284 keeps Mara's hiding look with the clip gone to Jack");
+const pocket = letterRewrite.find(f => f.id === "neonoire-shot-285");
+assert(pocket.notes.includes("s22/195-somewhere-like-this.jpg") && pocket.notes.includes("hand over the pocket"), "Shot 285 holds Jack's hand over the inside pocket");
+const returned = letterRewrite.find(f => f.id === "neonoire-shot-286");
+assert(returned.notes.includes("props/sakai-letter.jpg") && returned.notes.includes("two-hands, two-cups"), "Shot 286 returns the same sheet beside the two cups");
+assert(returned.characters.join() === castOf("Vera Voss"), "Shot 286 is Vera's insert");
+pass("letter rewrite coverage 280–286: the address, the sign, the dying man, the letter under the lamp, the coward line, the pocket and the smoothed-flat sheet");
 
 // Consistency retake pass, 26 September 2026: the third stool at both counters, Mr. Noda behind the counter, Jack's hands at 48, one hand-painted sign.
 const stool160 = project.frames.find(f => f.id === "neonoire-shot-160");
@@ -578,10 +613,18 @@ for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repair
 pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective, the masked man and Vera's Looks B and F carry identity sheets");
 
 // Looks-and-props pass, 26 September 2026: the legible-text props carry clean masters beside the cassette label and the notebook cover.
-for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-tag", "kaneko-sign-board", "locker-room-sign", "service-road-852"]) {
+for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-tag", "kaneko-sign-board", "locker-room-sign", "service-road-852", "sakai-letter"]) {
   assert.deepEqual(jpegDimensions(`/images/neonoire/props/${prop}.jpg`), [1920, 1080], `${prop}'s prop master is 16:9`);
 }
-pass("prop masters: the card, the clipping, the 87 tag, the sign board, the locker sign and the 8:52 sign carry clean legible masters");
+pass("prop masters: the card, the clipping, the 87 tag, the sign board, the locker sign, the 8:52 sign and Sakai's letter carry clean legible masters");
+
+// Hive canon, 28 September 2026: one look file (scripts/neonoire/hive-canon-look.mjs), five canon
+// sheets; the eight frames that predate them queue as the next generation pass.
+const { hiveCanonSheets, hiveCanonRetakes } = await import("./neonoire/hive-canon-look.mjs");
+for (const sheet of hiveCanonSheets) assert.deepEqual(jpegDimensions(sheet.path), [1920, 1080], `${sheet.key}'s canon sheet is 16:9`);
+for (const retake of hiveCanonRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the canon retake pass`);
+assert.equal(hiveCanonRetakes.length, 8, "Eight Hive frames queue for the canon retake pass");
+pass("hive canon: exterior master, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 

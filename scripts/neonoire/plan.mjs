@@ -97,7 +97,7 @@ export const SCENES = [
     page: "n01-backstreet.md", board: "n01-backstreet.md",
     cast: ["Mara Voss", "The Old Man", "The Masked Men"],
     grammar: "Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.",
-    description: "Cold open. Rain in a Kanda backstreet. Mara declines her sister's call, ducks into the doorway of a closed barbershop, and watches two masked men shoot an old man without hurrying — then kneels beside him and takes a coin-locker key out of his hand. BOARDED — 18 shots. The draft's own scene 1; nothing is explained, and nobody names the key.",
+    description: "Cold open. Rain in a Kanda backstreet. Mara declines her sister's call, ducks into the doorway of a closed barbershop, and watches two masked men shoot an old man without hurrying — then kneels beside him and takes a coin-locker key out of his hand. BOARDED — 18 shots; coverage 280–282 (the letter rewrite) appended 28 September 2026, and shot 7 retaken the same day so the old man's eyes flick to Mara in the doorway and away. The draft's own scene 1; nothing is explained, and nobody names the key.",
     lightingNotes: "The vending machine is the brightest source in the film's first minute. Sodium orange street lamps, one cold white vending machine, green fluorescent spill at the corner. No white beams in frame, ever.",
   },
   {
@@ -237,7 +237,7 @@ export const SCENES = [
     page: "n79-vera-s-apartment-continuous.md", board: "n79-veras-apartment-dawn.md",
     cast: ["Vera Voss"],
     grammar: "The scene 4 room in grey dawn, nothing switched on, two empty cups. Daniel's voice-over carries the pages; the images never illustrate them.",
-    description: "Continuous. At the low table in the dawn light, beside the two cups from the beginning of the film, both empty now, Vera reads her father's notebook: Shiohama, Kurose, and the young detective they called Jack who signed the report. She closes it and holds it against her chest. BOARDED — 3 shots (93–95).",
+    description: "Continuous. At the low table in the dawn light, beside the two cups from the beginning of the film, both empty now, Vera reads her father's notebook: Shiohama, Kurose, and the young detective they called Jack who signed the report. She closes it and holds it against her chest. BOARDED — 3 shots (93–95); coverage 286 (the letter returned, smoothed flat beside the two cups) appended 28 September 2026.",
     lightingNotes: "Window light only, grey-blue; lamp and CRT off; the umbrella stand empty. The red dress is the only warm colour.",
   },
   {
@@ -637,7 +637,7 @@ export const SCENES = [
     page: "n18-jack-s-office-night.md", board: "n18-office-after-the-last-train.md",
     cast: ["Jack", "Kaneko"],
     grammar: "35mm static in the dark; the television is the only lamp.",
-    description: "Static on the old television, rain on the blinds, the sketchbook open on the desk. Kaneko's voice through the black rotary: come back, alone, after the last train. BOARDED — 1 shot (191).",
+    description: "Static on the old television, rain on the blinds, the sketchbook open on the desk. Kaneko's voice through the black rotary: come back, alone, after the last train. BOARDED — 1 shot (191); coverage 283 (Sakai's letter insert under the lamp) appended 28 September 2026.",
     lightingNotes: "TV static flicker and train light through the blinds; every practical off.",
   },
   {
@@ -657,7 +657,7 @@ export const SCENES = [
     page: "n20-the-hive-noodle-shop-storeroom-continuous.md", board: "n20-storeroom-prove-it.md",
     cast: ["Jack", "Mara Voss"],
     grammar: "35mm for the standoff, 85mm on the clip.",
-    description: "A kitchen knife in two shaking hands, an open palm in the curtain doorway, and a red bird clip between them: Dad gave it to me. Jack promises, and the promise costs him. BOARDED — 2 shots (193–194).",
+    description: "A kitchen knife in two shaking hands, an open palm in the curtain doorway, and a red bird clip between them: Dad gave it to me. Jack promises, and the promise costs him. BOARDED — 2 shots (193–194); coverage 284 (Mara's coward line in the storeroom) appended 28 September 2026.",
     lightingNotes: "One bare bulb, flour dust, the railway humming overhead.",
   },
   {
@@ -677,7 +677,7 @@ export const SCENES = [
     page: "n22-all-night-noodle-counter-under-the-tracks-night.md", board: "n22-counter-under-the-tracks.md",
     cast: ["Vera Voss", "Jack"],
     grammar: "35mm for the arch, 50mm along the counter.",
-    description: "A brick arch counter where the cups tremble every time a train goes over. Her father, Tokyo, the man who made the noodles; then she sleeps, and he moves her cup back from the edge. BOARDED — 2 shots (197–198).",
+    description: "A brick arch counter where the cups tremble every time a train goes over. Her father, Tokyo, the man who made the noodles; then she sleeps, and he moves her cup back from the edge. BOARDED — 2 shots (197–198); coverage 285 (Jack's hand over the inside pocket) appended 28 September 2026.",
     lightingNotes: "Fluorescent tube in a green-tiled arch, warm bulb at the far end.",
   },
   {

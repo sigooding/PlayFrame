@@ -47,6 +47,24 @@ She's been calling you. She hasn't slept.
 
 MARA
 I know. I listen to them.
+
+JACK
+Why were you in Kanda, Mara?
+
+She looks at him. Decides.
+
+MARA
+He wrote to Vera. Mr. Sakai. She threw it in the bin without even answering. I took it out.
+(beat)
+I called him. He said he had Dad's papers. He said to come to the bar at one o'clock. There'd be a man from a newspaper there too, so it couldn't be buried again.
+
+JACK
+Vera doesn't know you went.
+
+MARA
+We had a fight about it. I called her a coward.
+(small, bitter laugh)
+And I'm the one hiding in a storeroom.
 (beat)
 Don't tell her I'm here.
 

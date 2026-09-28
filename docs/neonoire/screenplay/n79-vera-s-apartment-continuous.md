@@ -8,7 +8,17 @@ Grammar: The scene 4 room in grey dawn, nothing switched on, two empty cups. Dan
 
 INT. VERA'S APARTMENT - CONTINUOUS #79#
 
-Vera sits at the low table in the dawn light. Beside her, the two cups from the beginning of the film, both empty now. She turns the pages.
+Vera sits at the low table in the dawn light. Beside her, the two cups from the beginning of the film, both empty now.
+
+She unfolds the lined paper first.
+
+Careful, laborious English handwriting. "Miss Voss. Your father did not kill himself. I can prove it."
+
+It is the letter she threw away. Smoothed flat by someone else's hands.
+
+She understands, all at once, why her sister was in a Kanda backstreet at one in the morning. Mara went to find the truth Vera refused to look at.
+
+She sets the letter down very carefully, beside the empty cups. Then she opens the notebook and turns the pages.
 
 Her father's handwriting. Neat, slanted, careful.
 
