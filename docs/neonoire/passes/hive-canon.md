@@ -1,5 +1,7 @@
 # NEONOIRE — the Hive canon: one building, one look file (28 September 2026)
 
+> **Superseded in part, the same day.** The geometry below still stands untouched. The building's **surface and light** were replaced hours later by [the Hive night look](hive-night-look.md): the retrofit, the tungsten windows, the handmade neon, the steam, the haze and the light shafts, with a new lighting line for every night Hive shot, a day look, a demolition look and a threshold rule. Three of the five sheets below were regenerated against it (exterior, section, passages-and-roof); the counter and the storeroom were measured and held. The retake queue below is still open, and the night pass added two more queues beside it.
+
 **Scope:** no shots generated this pass beyond the five canon sheets; the retakes queue as the next generation pass (eight frames, one call each). The deliverable is [`scripts/neonoire/hive-canon-look.mjs`](../../../scripts/neonoire/hive-canon-look.mjs): the canonical geometry, the five sheet prompts with their reference chain, the shared negative prompt, and the retake queue.
 
 **The problem.** The Hive was boarded across five sessions from five look files, and each described the building differently: s15/184 a squat 6–7-storey block on a plaza; s59/226 a tall narrow tower on a tight street; s92/135 a nine-storey slab by a viaduct pillar; s97 a five-storey block with the railway at height; s99/156 an ordinary apartment block. Inside, s55/221 drew the counter as a white-tiled corridor with the 金子 sign ON the counter, s68/235 gave the storeroom shelving and a teal doorway, and s85/119 drew the passage three abreast where the draft says single file. The draft itself contradicts itself: "eleven storeys", yet scene 90 jumps from the roof onto the railway walkway.
@@ -42,5 +44,5 @@ Against the sheets above, in the order the pass runs them:
 
 ## Also in this pass
 
-- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (prompts, install paths, reference chains), `hiveCanonRetakes`, `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
-- `scripts/verify-neonoire.mjs` checks the five sheets are 1920×1080 and that all eight queued frames exist.
+- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (prompts, install paths, reference chains), `hiveCanonRetakes`, `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed. [The night look](hive-night-look.md) added `hiveNightSurface`, `hiveNightLight`, `hiveLightRule`, `hiveWarmRoomsLook`, `hiveDayLook`, `hiveDemolitionLook`, `hiveThresholdLook`, `hiveShotLight(scene)`, `hiveNightNegative`, `hiveNightRetakes` and `hiveNightWarmRooms` beside them.
+- `scripts/verify-neonoire.mjs` checks the five sheets are 1920×1080, that all eight queued frames exist, that the geometry and the room locks survive in the canon text, and that the 17 + 15 night-look frames exist exactly once between the two new queues.

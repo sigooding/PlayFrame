@@ -9,7 +9,7 @@
 // the cast links are reciprocal, and the prompt studio and CSV export handle the project.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { build } from "esbuild";
@@ -618,13 +618,66 @@ for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-
 }
 pass("prop masters: the card, the clipping, the 87 tag, the sign board, the locker sign, the 8:52 sign and Sakai's letter carry clean legible masters");
 
-// Hive canon, 28 September 2026: one look file (scripts/neonoire/hive-canon-look.mjs), five canon
-// sheets; the eight frames that predate them queue as the next generation pass.
-const { hiveCanonSheets, hiveCanonRetakes } = await import("./neonoire/hive-canon-look.mjs");
+// Hive canon, 28 September 2026: one look file (scripts/neonoire/hive-canon-look.mjs) holding the
+// geometry, five canon sheets, and the retake queues. The geometry pass locked the building; the
+// night pass that followed changed only its surface and light — the exterior, the cutaway and the
+// passages-and-roof sheets were regenerated, the counter and the storeroom were held as warm
+// tungsten, and every existing Hive NIGHT frame was re-listed for retake against the new sheets.
+const hiveCanonModule = await import("./neonoire/hive-canon-look.mjs");
+const {
+  hiveCanon, hiveCanonSheets, hiveCanonRetakes, hiveNightRetakes, hiveNightWarmRooms,
+  hiveNightSurface, hiveNightLight, hiveNightNegative, hiveCanonNegative, hiveCanonLook,
+  hiveCanonScenes, hiveDayLook, hiveDemolitionLook, hiveShotLight,
+} = hiveCanonModule;
 for (const sheet of hiveCanonSheets) assert.deepEqual(jpegDimensions(sheet.path), [1920, 1080], `${sheet.key}'s canon sheet is 16:9`);
 for (const retake of hiveCanonRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the canon retake pass`);
 assert.equal(hiveCanonRetakes.length, 8, "Eight Hive frames queue for the canon retake pass");
 pass("hive canon: exterior master, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
+
+// Hive night look, 28 September 2026 — the geometry is untouched, the surface and the light are new.
+for (const geometry of ["ELEVEN-STOREY front tower", "FOUR-STOREY rear wing", "level with the viaduct's maintenance walkway", "Flanked on both sides by clean glass office towers", "KUROSE DEVELOPMENT"]) {
+  assert(hiveCanon.includes(geometry), `The canon still locks the geometry: ${geometry}`);
+}
+for (const room of ["more or fewer than six stools", "shelving units in the storeroom", "sign on the counter", "tiled white walls"]) {
+  assert(hiveCanonNegative.includes(room), `The canon still locks the rooms: ${room}`);
+}
+assert(hiveCanon.includes(hiveNightSurface), "The canon carries the new surface-and-light paragraph verbatim");
+assert(hiveCanonLook.includes(hiveNightLight), "Every night Hive shot's note carries the new lighting line");
+assert(hiveCanonLook.includes(hiveNightSurface), "Every night Hive shot's note carries the new surface paragraph");
+for (const term of hiveNightNegative.split(", ")) {
+  assert(hiveCanonNegative.includes(term), `The Hive negative prompt carries "${term}"`);
+}
+assert(hiveShotLight("s85").includes(hiveNightLight), "A night scene gets the night lighting line");
+assert.equal(hiveShotLight("s97"), hiveDayLook, "Scene 97 is day: the neon is switched off");
+assert(hiveShotLight("s99").includes(hiveDemolitionLook), "Scene 99 is the demolition: dead neon on the cut-open floors");
+assert(hiveShotLight("s15") === hiveDayLook, "Scenes 15–17 carry the day look, not the night one");
+assert(hiveNightRetakes.length === 17 && hiveNightWarmRooms.length === 15, "The night-look queue re-lists 17 surface-and-light frames and holds 15 warm-room frames");
+for (const frame of [...hiveNightRetakes, ...hiveNightWarmRooms]) {
+  assert(existsSync(join(root, "public", "images", "neonoire", frame.image)), `${frame.image} exists and queues for the night-look pass`);
+  assert(frame.problem.length > 40, `${frame.image} says what is wrong with it`);
+}
+const nightQueued = new Set(hiveNightRetakes.map(frame => frame.image));
+assert(!hiveNightWarmRooms.some(frame => nightQueued.has(frame.image)), "No frame is queued twice");
+assert(hiveCanonSheets.filter(sheet => sheet.generated.includes("night look")).length === 3, "The exterior, the cutaway and the passages-and-roof sheets carry the night look");
+assert(hiveCanonSheets.filter(sheet => sheet.generated.includes("held")).length === 2, "The counter and the storeroom sheets are held, not regenerated");
+pass("hive night look: the geometry stands, the surface and light are new, three sheets regenerated, two held warm, 32 night frames re-listed");
+
+// The night look is the HIVE's and nobody else's: no other look file picked up its wording, and no
+// prompt anywhere in the film names another film.
+const lookFiles = readdirSync(join(root, "scripts", "neonoire")).filter(file => file.endsWith("-look.mjs") && file !== "hive-canon-look.mjs");
+assert(lookFiles.length >= 15, "Every other location keeps its own look file");
+for (const file of lookFiles) {
+  const body = read(join("scripts", "neonoire", file));
+  for (const phrase of ["Atmospheric haze", "handmade neon", "coloured neon", "retrofitted for sixty years", "visible light shafts"]) {
+    assert(!body.includes(phrase), `${file} keeps its own look: it does not carry the Hive's "${phrase}"`);
+  }
+}
+for (const file of readdirSync(join(root, "scripts", "neonoire")).filter(file => file.endsWith(".mjs"))) {
+  assert(!/blade\s*runner/i.test(read(join("scripts", "neonoire", file))), `${file} describes ingredients, not another film`);
+}
+assert(!hiveCanonScenes.has("s47"), "The inn's back yard is not the Hive and is not in the canon's scene list");
+assert(!hiveCanonScenes.has("s14"), "Mara's apartment is not the Hive and is not in the canon's scene list");
+pass("the other locations keep their quiet look: no other look file carries the Hive's night wording, and no prompt names a film");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
