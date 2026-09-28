@@ -626,6 +626,34 @@ for (const retake of hiveCanonRetakes) assert(existsSync(join(root, "public", "i
 assert.equal(hiveCanonRetakes.length, 8, "Eight Hive frames queue for the canon retake pass");
 pass("hive canon: exterior master, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
 
+// The NIGHT update, 28 September 2026 — additive: the retrofit paragraph inside the physical
+// description, the DAYTIME and NIGHT lighting sections with their rules, the extended negative
+// prompt, and the night retake queue. The checks above stand unchanged.
+const { hiveCanon, hiveCanonDay, hiveCanonNight, hiveCanonNightRules, hiveCanonNegative, hiveCanonNightRetakes, hiveCanonLook } = await import("./neonoire/hive-canon-look.mjs");
+assert(hiveCanon.includes("The Hive has been retrofitted for sixty years: pipes, ducts, cables, cages, air conditioners, water tanks and extra rooms bolted over the original concrete in layers until the architecture has almost disappeared."), "The retrofit paragraph lives in the physical description, day and night");
+assert(hiveCanon.includes("Old handmade neon signs in vertical Japanese kanji hang all over the facade and passages") && hiveCanon.includes("Steam vents from pipes and kitchen flues."), "The neon signs and steam vents are physical description");
+assert(hiveCanonDay.includes("By day the neon signs are switched off: dead glass tubes and bare wiring, no glow, no haze effect."), "The DAYTIME section carries the dead-tubes line");
+assert(hiveCanonDay.includes("Scenes 97 (the ceremony) and 99 (the demolition) are DAY") && hiveCanonDay.includes("the dead signs still hang from the exposed, cut-open floors"), "Scenes 97 and 99 are day: existing daytime look plus the unlit signs, hung in the cut-open floors");
+assert(hiveCanonNight.includes("At night the Hive glows from within:") && hiveCanonNight.endsWith("35mm anamorphic film look, fine grain."), "The NIGHT section is the canon's night lighting");
+assert(hiveCanonNightRules.includes("stay mostly WARM TUNGSTEN at night") && hiveCanonNightRules.includes("threshold") && hiveCanonNightRules.includes("small, handmade"), "The night rules: the counter and storeroom stay home-warm, the threshold, every light handmade");
+assert(hiveCanonNightRules.includes("No advertising, no brands, no screens bigger than an old CRT, nothing futuristic."), "The night rules keep every light someone's own");
+for (const term of ["holograms", "flying cars", "video billboards", "LED screens", "futuristic technology", "robots", "glossy chrome", "sci-fi skyline", "cyberpunk clothing", "advertising", "brand logos"]) {
+  assert(hiveCanonNegative.includes(term), `The Hive negative prompt carries ${term}`);
+}
+for (const term of ["sign on the counter", "cyberpunk neon", "extra floors", "the railway above the eleven-storey tower's roof"]) {
+  assert(hiveCanonNegative.includes(term), `The Hive negative prompt keeps its existing term ${term}`);
+}
+assert.equal(hiveCanonNightRetakes.length, 8, "Eight Hive night frames queue for the night-look retake pass");
+for (const retake of hiveCanonNightRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the night retake pass`);
+assert.deepEqual(hiveCanonNightRetakes.map(r => r.image).filter(image => hiveCanonRetakes.some(old => old.image === image)), [], "The night queue does not repeat the geometry queue");
+const counterSheet = hiveCanonSheets.find(sheet => sheet.key === "hive-counter");
+const storeroomSheet = hiveCanonSheets.find(sheet => sheet.key === "hive-storeroom");
+assert(!counterSheet.prompt.includes("glows from within") && !storeroomSheet.prompt.includes("glows from within"), "The counter and storeroom sheets keep their warm tungsten prompts");
+for (const sheet of hiveCanonSheets) assert(!sheet.prompt.includes("Blade Runner"), `${sheet.key}'s prompt names no film title`);
+assert(hiveCanonSheets.find(sheet => sheet.key === "hive-exterior").prompt.includes("Night panels (1 and 4) follow the NIGHT section") && hiveCanonSheets.find(sheet => sheet.key === "hive-exterior").prompt.includes("Day panels (2 and 3) follow the DAYTIME section"), "The exterior sheet prompts each half of the building's day and night");
+assert(hiveCanonLook.includes("hiveCanonNight") && hiveCanonLook.includes("hiveCanonNightRetakes"), "The canon note carries the night sections and the night queue for the retake pass");
+pass("hive night update: retrofit paragraph, DAYTIME and NIGHT sections with their rules, negative terms, and eight night frames queued alongside the eight geometry retakes");
+
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");

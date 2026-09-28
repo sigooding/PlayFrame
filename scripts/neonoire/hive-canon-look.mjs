@@ -20,15 +20,40 @@
 // Five canon sheets are generated in order from the prompts below, each finished sheet used as a
 // reference for the next and for every later Hive shot; they live in public/images/neonoire/sheets/.
 // The frames listed in hiveCanonRetakes predate the sheets and queue as the next generation pass.
+//
+// NIGHT UPDATE — 28 September 2026 (additive; nothing above was replaced). The building's
+// physical description gained the sixty-year retrofit paragraph (day and night — objects, not
+// lighting); hiveCanonDay and hiveCanonNight carry the two lighting states, with the night rules
+// beside the night section; hiveCanonNegative gained the sci-fi/corporate terms; the exterior,
+// section and passages-and-roof sheets were regenerated with the night look (the counter and
+// storeroom sheets, being warm tungsten, were left alone); and the night retakes queue as
+// hiveCanonNightRetakes alongside the eight geometry retakes. Never write a film title into a
+// prompt.
 
 export const hiveCanonScenes = new Set([
   "s13", "s14", "s15", "s16", "s17", "s25", "s47", "s55", "s56", "s57", "s58", "s59", "s60",
   "s68", "s70", "s84", "s85", "s86", "s87", "s88", "s89", "s90", "s91", "s92", "s97", "s99",
 ]);
 
-export const hiveCanon = `THE HIVE (canonical): a dense, self-built residential block in Tokyo, grown piece by piece since the 1960s. Two parts: an ELEVEN-STOREY front tower facing a wide modern street, and a FOUR-STOREY rear wing that backs directly onto a concrete elevated railway viaduct; the rear wing's flat roof is level with the viaduct's maintenance walkway and tracks. Facade: stained grey-brown concrete, irregular balconies bolted onto balconies, rusted steel cages, air conditioners and water pipes everywhere, laundry on poles, hand-painted vertical signs in Japanese, tangled power lines, small windows of every size lit warm tungsten or cool TV-blue. Flanked on both sides by clean glass office towers, so the Hive looks like a gap in someone's teeth. A construction hoarding next door carries a KUROSE DEVELOPMENT banner showing a rendering of white towers and a plaza with a fountain. One narrow ground-floor entrance on the street side; a narrow back door onto a wet service road under the viaduct, lined with railway pillars.`;
+export const hiveCanon = `THE HIVE (canonical): a dense, self-built residential block in Tokyo, grown piece by piece since the 1960s. Two parts: an ELEVEN-STOREY front tower facing a wide modern street, and a FOUR-STOREY rear wing that backs directly onto a concrete elevated railway viaduct; the rear wing's flat roof is level with the viaduct's maintenance walkway and tracks. Facade: stained grey-brown concrete, irregular balconies bolted onto balconies, rusted steel cages, air conditioners and water pipes everywhere, laundry on poles, hand-painted vertical signs in Japanese, tangled power lines, small windows of every size lit warm tungsten or cool TV-blue. Flanked on both sides by clean glass office towers, so the Hive looks like a gap in someone's teeth. A construction hoarding next door carries a KUROSE DEVELOPMENT banner showing a rendering of white towers and a plaza with a fountain. One narrow ground-floor entrance on the street side; a narrow back door onto a wet service road under the viaduct, lined with railway pillars. The Hive has been retrofitted for sixty years: pipes, ducts, cables, cages, air conditioners, water tanks and extra rooms bolted over the original concrete in layers until the architecture has almost disappeared. Old handmade neon signs in vertical Japanese kanji hang all over the facade and passages, belonging to tiny businesses — a noodle counter, a dentist, a radio repair shop, a karaoke bar. Steam vents from pipes and kitchen flues.`;
 
-export const hiveCanonNegative = `glass facade on the Hive, modern clean building, wide corridors, sign on the counter, tiled white walls, more or fewer than six stools, shelving units in the storeroom, cyberpunk neon, holograms, text errors, watermark, extra floors, the railway above the eleven-storey tower's roof`;
+// DAYTIME — the Hive's day lighting, for day Hive shots only (exterior and interior). The
+// daytime look itself is unchanged by the night update: flat grey rainy daylight, exactly as the
+// sheets already carry it. Scenes 97 (the ceremony) and 99 (the demolition) are DAY and use this
+// section plus the unlit signs; in scene 99 the dead signs still hang from the exposed,
+// cut-open floors.
+export const hiveCanonDay = `THE HIVE BY DAY: flat grey rainy daylight on the stepped concrete — the day elevation and side elevation of sheets/hive-exterior.jpg and the cutaway of sheets/hive-section.jpg, the daytime lighting exactly as it was before the night update (only the retrofit objects of the physical description were added). Scenes 97 (the ceremony) and 99 (the demolition) are DAY: use the existing daytime look plus the unlit signs. In scene 99 the dead signs still hang from the exposed, cut-open floors. By day the neon signs are switched off: dead glass tubes and bare wiring, no glow, no haze effect.`;
+
+// NIGHT — the Hive's night lighting, used ONLY for night Hive shots (interior and exterior).
+// Day shots take hiveCanonDay instead; the building itself is always hiveCanon (day and night).
+export const hiveCanonNight = `At night the Hive glows from within: hundreds of small windows in warm tungsten, and the neon signs lit in red, magenta, cyan and green, some tubes flickering or half dead. Steam drifts into the rain; haze hangs in every passage; light cuts through it in visible shafts. Practical lights only, strong backlight through steam, coloured neon spill mixed with warm tungsten bulbs, deep shadows, wet reflective surfaces, 35mm anamorphic film look, fine grain.`;
+
+// The night rules, alongside the night section. (One standing rule lives only here and in the
+// pass doc, never inside prompt text: never write "Blade Runner" or any other film title into a
+// prompt.)
+export const hiveCanonNightRules = `Kaneko's counter and the storeroom stay mostly WARM TUNGSTEN at night — they are home. Only faint neon spill at the edges, from the passage. Entering the Hive at night is a threshold: grey street light straight into haze and colour; leaving, the colour drains behind the characters. Every light is small, handmade and belongs to someone who lives or works there. No advertising, no brands, no screens bigger than an old CRT, nothing futuristic.`;
+
+export const hiveCanonNegative = `glass facade on the Hive, modern clean building, wide corridors, sign on the counter, tiled white walls, more or fewer than six stools, shelving units in the storeroom, cyberpunk neon, holograms, text errors, watermark, extra floors, the railway above the eleven-storey tower's roof, holograms, flying cars, video billboards, LED screens, futuristic technology, robots, glossy chrome, sci-fi skyline, cyberpunk clothing, advertising, brand logos`;
 
 export const hiveCanonSheets = [
   {
@@ -42,6 +67,8 @@ Panel 2: the same front elevation, straight on, grey rainy daylight.
 Panel 3: side elevation showing the tower stepping down to the four-storey rear wing and the concrete railway viaduct running along the rear wing's roofline, a commuter train on it.
 Panel 4: the rear service road at night: shuttered garages, railway pillars, one sodium lamp, the Hive's narrow back door.
 Consistent architecture across all panels, same building, same window pattern, same signs.
+Night panels (1 and 4) follow the NIGHT section: ${hiveCanonNight} ${hiveCanonNightRules}
+Day panels (2 and 3) follow the DAYTIME section: ${hiveCanonDay}
 Negative: ${hiveCanonNegative}`,
   },
   {
@@ -88,6 +115,7 @@ Negative: ${hiveCanonNegative}`,
     prompt: `Location reference sheet, 16:9, 1920x1080, four labelled panels, photoreal night, 35mm grain, bare-bulb tungsten with faint green fluorescent spill.
 THE HIVE PASSAGES AND ROOF: interior corridors barely shoulder-wide, one person at a time, concrete and patched plywood walls, pipes and wiring overhead, bare bulbs every few metres, a thin line of water along the floor, doors open onto small lived-in rooms.
 Panel 1: a typical passage looking down its length, one man walking, single file. Panel 2: the radio repairman's open doorway, a dozen old radios on shelves. Panel 3: the narrow concrete back stairwell, dark, rising. Panel 4: the four-storey rear wing's rooftop at night in rain: water tanks, TV aerials, laundry poles, pigeon cages, and at its edge a one-metre gap and a low fence onto the steel maintenance walkway beside the elevated tracks, city lights beyond.
+All four panels are NIGHT: ${hiveCanonNight} ${hiveCanonNightRules}
 Negative: ${hiveCanonNegative}`,
   },
 ];
@@ -107,4 +135,23 @@ export const hiveCanonRetakes = [
   { image: "s85/119-single-file.jpg", problem: "passage wide enough for three abreast; canon is shoulder-wide, single file" },
 ];
 
-export const hiveCanonLook = `16:9 full-bleed (1920×1080), no letterbox. THE HIVE CANON (28 September 2026, scripts/neonoire/hive-canon-look.mjs): a stepped self-built block — an eleven-storey front tower on a wide modern street between glass office towers, and a four-storey rear wing backing onto the elevated railway viaduct, its roof level with the tracks; the noodle counter and storeroom at ground level under the viaduct. Canon sheets in sheets/: hive-exterior, hive-section, hive-counter, hive-storeroom, hive-passages-roof; every Hive shot generated against them after 28 September 2026. The 金子 sign hangs on the wall above the counter, never on it; six stools; passages shoulder-wide, single file; the storeroom is a plywood box with flour sacks and a noren, no shelving, no teal doors. Frames predating the sheets are queued in hiveCanonRetakes. AI-generated draft studies, not approved coverage.`;
+// Frames that predate the NIGHT look (28 September 2026) and queue on top of the eight geometry
+// retakes above as part of the same next generation pass. These are the Hive night shots where
+// the new night lighting is visible: exteriors, passages and the roof. s85/119 and s92/135 are
+// already queued above and are regenerated with the night look as part of their retake, so they
+// are not repeated here. Deliberately absent: Kaneko's counter and the storeroom (they stay
+// mostly warm tungsten at night — they are home), the radio repair shop (his own small tungsten
+// practicals), scenes 88 and 89 (the main switch is out; the stairwell is dark by story), and
+// every day shot (those take hiveCanonDay and the unlit signs when their own retake comes).
+export const hiveCanonNightRetakes = [
+  { image: "s75/79-the-hive-shut.jpg", problem: "the shut Hive at night lit only by its faint sign; the night facade now glows from within — warm tungsten windows, neon in red/magenta/cyan/green, steam and haze in the rain" },
+  { image: "s16/186-everybody-sees-him.jpg", problem: "passage lit by bare bulbs with clear air; the night look hangs haze in every passage and cuts the bulb light through it in visible shafts" },
+  { image: "s69/236-vera-would-love-this.jpg", problem: "passage at night without the haze or the neon spill at the doorways; needs the night section's shafts and coloured spill" },
+  { image: "s71/238-everyones-awake.jpg", problem: "the waking windows read as plain lit glass; the night look makes the building glow from within, hundreds of small warm-tungsten windows through haze" },
+  { image: "s85/120-the-hive-is-watching.jpg", problem: "raid passage without the night haze; regenerate against the regenerated passages sheet, shafts of light through the air" },
+  { image: "s67/234-a-different-clock.jpg", problem: "rear service road at night with one lamp only; the back of the Hive should glow through the haze, steam drifting, wet reflective ground" },
+  { image: "s70/237-position.jpg", problem: "rear service road night without the Hive's glow or the threshold colour; grey street light at the edge, haze and colour toward the back door" },
+  { image: "s90/130-the-roof.jpg", problem: "rooftop over a dark city; the night look brings haze in the air and the building's warm glow and neon spill rising from below" },
+];
+
+export const hiveCanonLook = `16:9 full-bleed (1920×1080), no letterbox. THE HIVE CANON (28 September 2026, scripts/neonoire/hive-canon-look.mjs): a stepped self-built block — an eleven-storey front tower on a wide modern street between glass office towers, and a four-storey rear wing backing onto the elevated railway viaduct, its roof level with the tracks; the noodle counter and storeroom at ground level under the viaduct. Canon sheets in sheets/: hive-exterior, hive-section, hive-counter, hive-storeroom, hive-passages-roof; every Hive shot generated against them after 28 September 2026. The 金子 sign hangs on the wall above the counter, never on it; six stools; passages shoulder-wide, single file; the storeroom is a plywood box with flour sacks and a noren, no shelving, no teal doors. Frames predating the sheets are queued in hiveCanonRetakes. NIGHT UPDATE (28 September 2026): the retrofit paragraph lives in the physical description (day and night — objects, not lighting); day Hive shots embed hiveCanonDay (unlit neon: dead glass tubes, no glow, no haze; scenes 97 and 99 are DAY with the dead signs hanging in scene 99's cut-open floors), night Hive shots embed hiveCanonNight plus hiveCanonNightRules (the glow from within, haze and shafts; Kaneko's counter and the storeroom stay mostly warm tungsten — only faint neon spill at the edges; entering the Hive at night is a threshold — grey street light into haze and colour, leaving, the colour drains behind; every light small, handmade, someone's own — no advertising, no brands, no screens bigger than an old CRT, nothing futuristic; and never a film title in a prompt). The night retake queue is hiveCanonNightRetakes. AI-generated draft studies, not approved coverage.`;
