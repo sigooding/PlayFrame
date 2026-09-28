@@ -1,6 +1,6 @@
 # NEONOIRE — the Hive night look: the surface and the light (28 September 2026)
 
-**Scope:** ten generation calls, three sheets installed. The Hive's GEOMETRY — locked earlier the same day in [`hive-canon.md`](hive-canon.md) — is untouched: the eleven-storey front tower on the street, the four-storey rear wing backing onto the elevated viaduct, the roof level with the tracks, the noodle counter and storeroom at ground level under the viaduct, the back door onto the service road, six stools, the 金子 sign on the wall above the counter, the green corrugated back wall, one fluorescent tube plus one bare bulb, the roller shutter, the indigo noren, the plywood storeroom with flour sacks right and futon left, shoulder-wide passages, and the roof with its tanks, aerials, laundry, pigeon cages and one-metre gap. So are the two glass office towers and the KUROSE DEVELOPMENT hoarding.
+**Scope:** eleven generation calls, four sheets installed — three for the night look and, on the director's note, a **daylight counterpart** of the exterior master. The Hive's GEOMETRY — locked earlier the same day in [`hive-canon.md`](hive-canon.md) — is untouched: the eleven-storey front tower on the street, the four-storey rear wing backing onto the elevated viaduct, the roof level with the tracks, the noodle counter and storeroom at ground level under the viaduct, the back door onto the service road, six stools, the 金子 sign on the wall above the counter, the green corrugated back wall, one fluorescent tube plus one bare bulb, the roller shutter, the indigo noren, the plywood storeroom with flour sacks right and futon left, shoulder-wide passages, and the roof with its tanks, aerials, laundry, pigeon cages and one-metre gap. So are the two glass office towers and the KUROSE DEVELOPMENT hoarding.
 
 What changed is the **surface and the light**, in [`scripts/neonoire/hive-canon-look.mjs`](../../../scripts/neonoire/hive-canon-look.mjs):
 
@@ -36,6 +36,9 @@ Review sheet: [hive-night-look.jpg](../../../public/images/neonoire/reviews/hive
 | `sheets/hive-passages-roof.jpg` | **Regenerated** | The passages at night are where the haze, the shafts and the neon spill live. |
 | `sheets/hive-counter.jpg` | **Held** | Already reads warm tungsten. |
 | `sheets/hive-storeroom.jpg` | **Held** | Already reads warm tungsten. |
+| `sheets/hive-exterior-day.jpg` | **New** | The same building by grey rainy daylight — every tube dead, bare wiring, no glow. Generated *from* the night master, so it is one building seen twice. It is the master for the day scenes (15–17, 55–59, 97, 99) and the legibility check on the night sheet: the retrofit, the window pattern and the eleven storeys read far more clearly without the neon. |
+
+Measured: the daylight sheet is **0% amber, 66% cool, saturation 0.08 and chroma 0.05** — the flattest, greyest sheet in the bible, which is exactly what rule 3 asks for. The night exterior beside it is 12% amber, 46% cool, saturation 0.15. Same building, two temperatures, one stop apart (mean brightness 0.34 against 0.29).
 
 **Why the two were held, measured rather than guessed.** Each sheet was downsampled and every pixel counted: a pixel is *lit* above 18% brightness, *warm* when R−B > 12, *cool* when B−R > 12.
 
@@ -48,7 +51,7 @@ Review sheet: [hive-night-look.jpg](../../../public/images/neonoire/reviews/hive
 
 The installed sheets now measure: exterior — night three-quarter 48% warm, day panel 0% (it should be grey), side elevation 82%, service road 32%; passages — passage 95%, radio shop 73%, stairwell 95%, roof 23% with the magenta and cyan city glow.
 
-## How the ten calls went
+## How the eleven calls went
 
 1. **Exterior A** — came back as one continuous photograph, not four panels. Discarded.
 2. **Exterior B** — four clean panels with gutters and captions; the night panel measured 20% warm. Installed as the working master.
@@ -60,8 +63,39 @@ The installed sheets now measure: exterior — night three-quarter 48% warm, day
 8. **Passages A** — good panels, but generated against an exterior that had since been discarded; superseded for the sake of the reference chain.
 9. **Passages B** — clean chain, but its stairwell came back as a cyan wash (3% warm, saturation 0.417 — the glossy cyberpunk the keys warn against). Discarded.
 10. **Passages C** — the stairwell warm again (95%), the roof the coldest panel with the city's magenta and cyan on the wet felt. **Installed.**
+11. **Daylight exterior** — generated from the installed night master at the director's note: four panels in grey rain light, dead tubes, bare wiring. Measures 0% amber and saturation 0.08. **Installed** as `hive-exterior-day`.
 
-Three installed sheets, seven discarded or superseded. Nothing outside the Hive was touched; `verify-neonoire.mjs` now asserts that no other look file contains the new wording and that no prompt in `scripts/neonoire/` names another film.
+Four installed sheets, seven discarded or superseded. Nothing outside the Hive was touched; `verify-neonoire.mjs` now asserts that no other look file contains the new wording and that no prompt in `scripts/neonoire/` names another film.
+
+## Are the sheets consistent with each other?
+
+Asked after the pass closed, and answered by measurement rather than by eye — with one honest gap at the end.
+
+**They agree on:**
+
+| | lit % | mean brightness | saturation | hue | amber | cool |
+| --- | --- | --- | --- | --- | --- | --- |
+| exterior (night) | 64 | 0.29 | 0.15 | — | 12% | 46% |
+| exterior (day) | 76 | 0.34 | 0.08 | — | 0% | 66% |
+| cutaway | 100 | 0.66 | 0.39 | 46° | 76% | 8% |
+| passages + roof | 58 | 0.27 | 0.19 | 32° | 34% | 24% |
+| counter (held) | 51 | 0.47 | 0.12 | 44° | 26% | 5% |
+| storeroom (held) | 82 | 0.45 | 0.42 | 33° | 98% | 0% |
+
+- **Exposure:** the three photographic night sheets sit at 0.27–0.31 mean brightness and 58–64% lit. One stop.
+- **Interiors:** passage 80% amber at 25°, stairwell 72% at 37°, radio shop 45% at 54°, storeroom 98% at 33°, counter 26% amber plus 31% red-magenta and 22% green (the corrugated wall) at 44°. The warm rooms fall inside a 25–46° band — one tungsten temperature across the bible.
+- **Day:** the day panels are colourless (0% amber, 95% cool in the exterior's panel 2; 0% amber across the daylight sheet). Rule 3 reads clean.
+- **Cold exteriors:** roof panel 70% cool, service road 60%, street 42% against 22% amber.
+- **Chain:** the cutaway was generated from the installed exterior, the passages from both, the daylight sheet from the night master. Every sheet is derived, none is described from memory.
+
+**They drift on:**
+
+1. **The night exterior's facade panels carry a green cast** — the night three-quarter measures hue 126° (16% green against 22% amber), the side elevation 78° (24% green). Nothing else in the bible is green except the counter's corrugated wall. The daylight sheet, generated from that same master, shows 13% green at chroma 0.05, i.e. grey pixels with a slight cast rather than a wash — so the green is a property of the *night* render, not of the building. **This is the one to watch, and it is on the master everything else derives from.**
+2. **Saturation:** the passages sheet is richer than its master — passage panel 0.38 against the street's 0.24. The interior is more colourful than the facade it sits behind.
+3. **The neon is thin.** Red/magenta is 10–12% on both night sheets, and most of the cyan is rain and sky rather than tubes. The brief asks for red, magenta, cyan and green clusters; what is on the sheets is red accents plus the unwanted green.
+4. **The cutaway is another medium** — pale paper at 0.66 brightness against photographic 0.27. Deliberate (it is the house 1990s-book style), but it means the cutaway's 76% amber and the exterior's 12% amber are the same building at two temperatures and cannot be compared pixel for pixel.
+
+**The gap:** none of this says whether the same window pattern, the same handmade signs, the same eleven storeys and the same bolted-on furniture actually repeat from sheet to sheet. That is architecture, not colour, and measuring it is beyond what a pixel count can do. The daylight sheet was made to make that check possible by eye — it is the panel to put beside the night master when the director looks.
 
 ## The retake queue, re-listed
 
@@ -103,7 +137,8 @@ Generated against the new exterior, section and passages sheets.
 
 ## Next pass plan
 
-1. **The five remaining geometry retakes** — `s15/184`, `s59/226`, `s97/146`, `s99/156`, `s55/221`. Day frames: they carry the day look (dead tubes, grey rain light), not the night one.
+0. **Look at the daylight sheet beside the night master** and settle the two questions only eyes can answer: is it the same building — window pattern, signs, storey count — and is the night panels' green cast a wash to fix or legitimate spill off wet concrete. If it is a wash, re-take the exterior master (one call) and re-derive the cutaway, the passages and the daylight sheet from it before spending anything on shots.
+1. **The five remaining geometry retakes** — `s15/184`, `s59/226`, `s97/146`, `s99/156`, `s55/221`. Day frames: they carry the day look (dead tubes, grey rain light), not the night one, and they now generate against `sheets/hive-exterior-day.jpg` rather than the night master.
 2. **Wave one, in scene order** — s70, s85, s87, s88, s89, s90, s91, s92. Ten calls to a session; this is one and a bit sessions.
 3. **Wave two** — after wave one, and only if the director wants the haze and the edge spill on screen in the storeroom and at the counter.
 4. **The unboarded Hive scenes** — 67 (service road), 69 (passages) and 71 (passage) still have no frames. They are in `hiveCanonScenes` now; board them against the new sheets.

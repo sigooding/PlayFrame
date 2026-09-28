@@ -632,7 +632,7 @@ const {
 for (const sheet of hiveCanonSheets) assert.deepEqual(jpegDimensions(sheet.path), [1920, 1080], `${sheet.key}'s canon sheet is 16:9`);
 for (const retake of hiveCanonRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the canon retake pass`);
 assert.equal(hiveCanonRetakes.length, 8, "Eight Hive frames queue for the canon retake pass");
-pass("hive canon: exterior master, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
+pass("hive canon: exterior master, daylight counterpart, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
 
 // Hive night look, 28 September 2026 — the geometry is untouched, the surface and the light are new.
 for (const geometry of ["ELEVEN-STOREY front tower", "FOUR-STOREY rear wing", "level with the viaduct's maintenance walkway", "Flanked on both sides by clean glass office towers", "KUROSE DEVELOPMENT"]) {
@@ -660,7 +660,12 @@ const nightQueued = new Set(hiveNightRetakes.map(frame => frame.image));
 assert(!hiveNightWarmRooms.some(frame => nightQueued.has(frame.image)), "No frame is queued twice");
 assert(hiveCanonSheets.filter(sheet => sheet.generated.includes("night look")).length === 3, "The exterior, the cutaway and the passages-and-roof sheets carry the night look");
 assert(hiveCanonSheets.filter(sheet => sheet.generated.includes("held")).length === 2, "The counter and the storeroom sheets are held, not regenerated");
-pass("hive night look: the geometry stands, the surface and light are new, three sheets regenerated, two held warm, 32 night frames re-listed");
+assert.equal(hiveCanonSheets.length, 6, "Six canon sheets: the night exterior, the cutaway, the counter, the storeroom, the passages and roof, and the daylight exterior");
+const daySheet = hiveCanonSheets.find(sheet => sheet.key === "hive-exterior-day");
+assert(daySheet && daySheet.prompt.includes(hiveDayLook), "The daylight exterior is generated from the day look: neon off, grey rain light, no haze glow");
+assert(daySheet.references.includes("/images/neonoire/sheets/hive-exterior.jpg"), "The daylight exterior is derived from the night master, so it is the same building");
+assert(!daySheet.prompt.includes(hiveNightLight), "The daylight exterior does not carry the night lighting line");
+pass("hive night look: the geometry stands, the surface and light are new, three sheets regenerated, two held warm, one daylight counterpart, 32 night frames re-listed");
 
 // The night look is the HIVE's and nobody else's: no other look file picked up its wording, and no
 // prompt anywhere in the film names another film.

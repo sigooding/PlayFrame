@@ -46,8 +46,11 @@
 // witness-look, ending-look for the non-Hive scenes). Nothing in this file is copied into them;
 // scripts/verify-neonoire.mjs asserts the new wording appears in no other look file.
 //
-// Five canon sheets: hive-exterior, hive-section and hive-passages-roof were regenerated this pass
-// against the new night look (in that order, each a reference for the next). hive-counter and
+// Six canon sheets. hive-exterior, hive-section and hive-passages-roof were regenerated this pass
+// against the new night look (in that order, each a reference for the next); hive-exterior-day was
+// then generated from the night master as its daylight counterpart, because grey rain light shows
+// the retrofit, the window pattern and the eleven storeys far more legibly than a night render, and
+// because the day scenes (15–17, 55–59, 97, 99) need a master of their own. hive-counter and
 // hive-storeroom were MEASURED, not regenerated: 95% and 100% of their lit pixels are warm, so they
 // already read as warm tungsten and rule 2 holds them as they are.
 
@@ -135,6 +138,25 @@ ${hiveCanon}
 Section both masses: the eleven-storey front tower and the four-storey rear wing, with the concrete elevated railway viaduct running along the rear wing's roofline and a train on it. The outside of the building is buried under bolted-on pipes, ducts, cables, cages, air conditioners, water tanks and extra rooms; clusters of old handmade vertical-kanji neon signs hang on the street face — a noodle counter, a dentist, a radio repair shop, a karaoke bar, some tubes flickering or half dead; every small window glows warm tungsten; steam vents from pipes and kitchens into the rain; haze hangs in the passages with light cutting through it in visible shafts.
 Ground floor of the rear wing, directly beneath the viaduct: a tiny noodle counter with six stools, and behind it a curtained plywood storeroom with flour sacks and a single bulb. Narrow shoulder-width passages, single file. Label legibly: radio repair shop with a dozen radios, a family eating at a low table with a TV, an old woman asleep, a dentist's chair behind a curtain, the electrical main switch box, and FLOORS 1-11 on the tower. A narrow concrete stairwell rising from the rear passage to the rear wing's roof: water tanks, aerials, laundry poles, pigeon cages, a one-metre gap and a low fence onto the railway maintenance walkway beside the tracks.
 Negative: ${hiveCanonNegative}`,
+  },
+  {
+    // The daylight counterpart, 28 September 2026: the same building with the neon switched off.
+    // Generated from the night master so the architecture is one building, and added because a grey
+    // daylight sheet shows the retrofit, the window pattern and the storey count far more legibly
+    // than a night render can — it is the sheet the day scenes (15–17, 55–59, 97, 99) generate from.
+    key: "hive-exterior-day",
+    path: "/images/neonoire/sheets/hive-exterior-day.jpg",
+    references: ["/images/neonoire/sheets/hive-exterior.jpg"],
+    generated: "28 September 2026 — the day look, neon switched off",
+    prompt: `Location reference sheet, 16:9, 1920x1080, four separate rectangular photographs arranged two across and two down, thin black gutters between them, a small white caption line under each, on a flat dark grey background, photoreal 35mm film-still photography, anamorphic, fine grain.
+${hiveCanon}
+${hiveDayLook}
+PANEL 1 (top left): three-quarter street view in steady rain, the eleven-storey face between the two clean glass office towers, dead unlit neon tubes and bare wiring on their brackets, laundry on the balconies, the KUROSE DEVELOPMENT construction hoarding beside it, one tiny figure at the entrance for scale.
+PANEL 2 (top right): the same front elevation, straight on, frontal and level, grey rainy daylight, every sign dead and dark.
+PANEL 3 (bottom left): side elevation, the tower stepping down to the four-storey rear wing, the concrete railway viaduct running along the rear wing's roofline with a commuter train on it, the same tangle of pipes, ducts, cages and water tanks.
+PANEL 4 (bottom right): the rear service road, the Hive's narrow back door under the viaduct, shuttered garages, railway pillars, wet ground and puddles, one unlit lamp.
+Flat overcast light, muted desaturated palette, deep grey shadows, wet reflective surfaces, rain running down everything, 35mm anamorphic film look, fine grain. Ordinary, worn, 1990s Japan, documentary realism. The same building, the same window pattern and the same dead signs in every panel.
+Negative: ${hiveCanonNegative}, neon glow, lit signs, warm window light, amber or magenta or cyan cast, green cast, night sky`,
   },
   {
     // HELD, not regenerated: 95% of its lit pixels are warm, so it already reads warm tungsten.
@@ -255,4 +277,4 @@ export const hiveNightWarmRooms = [
 
 // ---------------------------------------------------------------- the note every retake embeds
 
-export const hiveCanonLook = `16:9 full-bleed (1920×1080), no letterbox. THE HIVE CANON (geometry 28 September 2026, night look 28 September 2026, scripts/neonoire/hive-canon-look.mjs): a stepped self-built block — an eleven-storey front tower on a wide modern street between glass office towers, and a four-storey rear wing backing onto the elevated railway viaduct, its roof level with the tracks; the noodle counter and storeroom at ground level under the viaduct. Canon sheets in sheets/: hive-exterior, hive-section, hive-counter, hive-storeroom, hive-passages-roof; the exterior, the section and the passages-and-roof sheets carry the night look, the counter and the storeroom are held as warm tungsten. Every Hive shot generated against them after 28 September 2026. NIGHT: ${hiveNightSurface} ${hiveNightLight} ${hiveLightRule} ${hiveWarmRoomsLook} ${hiveThresholdLook} DAY (scene 97 and every daylight Hive scene 15–17, 55–59): ${hiveDayLook} DEMOLITION (scene 99): ${hiveDemolitionLook} The 金子 sign hangs on the wall above the counter, never on it; six stools; passages shoulder-wide, single file; the storeroom is a plywood box with flour sacks and a noren, no shelving, no teal doors. Negative: ${hiveNightNegative}. AI-generated draft studies, not approved coverage.`;
+export const hiveCanonLook = `16:9 full-bleed (1920×1080), no letterbox. THE HIVE CANON (geometry 28 September 2026, night look 28 September 2026, scripts/neonoire/hive-canon-look.mjs): a stepped self-built block — an eleven-storey front tower on a wide modern street between glass office towers, and a four-storey rear wing backing onto the elevated railway viaduct, its roof level with the tracks; the noodle counter and storeroom at ground level under the viaduct. Canon sheets in sheets/: hive-exterior, hive-section, hive-counter, hive-storeroom, hive-passages-roof and hive-exterior-day; the exterior, the section and the passages-and-roof sheets carry the night look, hive-exterior-day carries the same building by grey daylight with every tube dead, and the counter and the storeroom are held as warm tungsten. Every Hive shot generated against them after 28 September 2026. NIGHT: ${hiveNightSurface} ${hiveNightLight} ${hiveLightRule} ${hiveWarmRoomsLook} ${hiveThresholdLook} DAY (scene 97 and every daylight Hive scene 15–17, 55–59): ${hiveDayLook} DEMOLITION (scene 99): ${hiveDemolitionLook} The 金子 sign hangs on the wall above the counter, never on it; six stools; passages shoulder-wide, single file; the storeroom is a plywood box with flour sacks and a noren, no shelving, no teal doors. Negative: ${hiveNightNegative}. AI-generated draft studies, not approved coverage.`;
