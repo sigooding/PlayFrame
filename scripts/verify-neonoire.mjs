@@ -618,6 +618,14 @@ for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-
 }
 pass("prop masters: the card, the clipping, the 87 tag, the sign board, the locker sign, the 8:52 sign and Sakai's letter carry clean legible masters");
 
+// Hive canon, 28 September 2026: one look file (scripts/neonoire/hive-canon-look.mjs), five canon
+// sheets; the eight frames that predate them queue as the next generation pass.
+const { hiveCanonSheets, hiveCanonRetakes } = await import("./neonoire/hive-canon-look.mjs");
+for (const sheet of hiveCanonSheets) assert.deepEqual(jpegDimensions(sheet.path), [1920, 1080], `${sheet.key}'s canon sheet is 16:9`);
+for (const retake of hiveCanonRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the canon retake pass`);
+assert.equal(hiveCanonRetakes.length, 8, "Eight Hive frames queue for the canon retake pass");
+pass("hive canon: exterior master, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
+
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
 const frontCounter = project.frames.filter(frame => frame.sceneId === "neonoire-s5");
