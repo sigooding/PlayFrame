@@ -58,13 +58,22 @@ Every image is now checked before install for vehicle count, completeness and di
 
 **The style sheet.** The inn had a studio key (`keys/09-the-roadside-inn.jpg`) and its look file,
 but no canon sheet in `sheets/`. It has one now: `public/images/neonoire/sheets/roadside-inn.jpg`,
-1920×1080, four labelled panels — the exterior as the WARM REFUGE (tungsten amber windows, the
-beer vending machine, the pickup crooked behind), the lobby warm (pink payphone, keyring case,
-CRT baseball, wooden counter, the steep stair), the stairs from the low level static square to
-the flight, and the same exterior as THE COLD (steel blue and blue-black, xenon-white headlight
-beams with the rain visible only inside them, every warm light dead). Panels: the sheet is
-people-free on purpose, so it works as a set reference for any shot. `innBase` in
-`scripts/neonoire/inn-look.mjs` now points every inn prompt at it.
+1920×1080 — the exterior as the WARM REFUGE (tungsten amber windows, the beer vending machine,
+the pickup crooked behind), the lobby warm (pink payphone, keyring case, CRT baseball, wooden
+counter, the steep stair), the stairs from the low level static square to the flight, and the
+same lot as THE COLD (steel blue and blue-black, xenon-white headlight beams with the rain
+visible only inside them, every warm light dead). The sheet is people-free on purpose, so it
+works as a set reference for any shot. `innBase` in `scripts/neonoire/inn-look.mjs` now points
+every inn prompt at it.
+
+**The lobby panel was wrong on the first sheet** (director's read, same day). The sheet is now a
+deterministic 2×2 composite instead of one free generation: four panels, each generated from its
+approved master frame and composited at fixed positions — `s31/169-the-only-car.jpg` (warm
+exterior, top left), `s32/170-just-one-night.jpg` (the lobby, top right — the panel in question,
+now reproducing the boarded lobby master), `s32/171-upstairs-at-the-end.jpg` (the stairs, bottom
+left), `s38/173-four-black-sedans.jpg` (the cold lot, bottom right). The panels carry no labels
+(the renderer cannot set type), so the ledger and `innBase` name them. Review:
+`reviews/roadside-inn-sheet-review.jpg` shows the first sheet beside the rebuild.
 
 **The mask rule (director's confirmation).** The masked men at the inn are the same crew as
 scene 1: dark knit caps over **black lower-face masks** covering nose and mouth, eyes visible —
@@ -82,9 +91,9 @@ everything else held to the previous frame:
 | 224 | `s47/222-mud-and-impacts.jpg` | the man coming round the building |
 | 217 | `s49/215-no-need-to-chase.jpg` | the eight in the headlights |
 
-Review sheets: `public/images/neonoire/reviews/roadside-inn-sheet-review.jpg` (the studio key
-beside the new sheet) and `public/images/neonoire/reviews/roadside-inn-masks.jpg` (the six
-retaken frames). Caveats: all seven images are verified at 1920×1080; the session's image viewer
+Review sheets: `public/images/neonoire/reviews/roadside-inn-sheet-review.jpg` (the first sheet
+beside the master-grounded rebuild) and `public/images/neonoire/reviews/roadside-inn-masks.jpg`
+(the six retaken frames). Caveats: all seven images are verified at 1920×1080; the session's image viewer
 is unreliable, so give both review sheets a full-size look — in particular that the masks read
 black and lower-face in the glare frames. Labels on the style sheet garble in places, as ever.
 `verify-neonoire.mjs` locks the sheet at 16:9, the `innBase` guard wording and the six board notes.
