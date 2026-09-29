@@ -11,6 +11,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { inStoryOrder } from "./story-order.mjs";
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const args = Object.fromEntries(process.argv.slice(2).reduce((out, a, i, all) => (a.startsWith("--") ? [...out, [a.slice(2), all[i + 1]]] : out), []));
 const ff = process.env.FFMPEG || "ffmpeg";
@@ -18,7 +20,8 @@ const bundle = JSON.parse(readFileSync(resolve(root, "public/projects/neonoire-o
 const sceneNo = id => { const m = /^neonoire-s(\d+)([a-z]?)$/.exec(id); return m ? Number(m[1]) : NaN; };
 const sceneTag = id => id.replace(/^neonoire-s/, "").toUpperCase();
 
-let frames = bundle.frames;
+// Story order, not array order: an added coverage shot plays where its line is in the draft.
+let frames = inStoryOrder(bundle.frames, bundle.scenes, root);
 if (args.scene) frames = frames.filter(f => sceneTag(f.sceneId) === String(args.scene).toUpperCase());
 else if (args.from || args.to) frames = frames.filter(f => sceneNo(f.sceneId) >= Number(args.from || 0) && sceneNo(f.sceneId) <= Number(args.to || 1e9));
 if (!frames.length) { console.error("No frames selected."); process.exit(1); }

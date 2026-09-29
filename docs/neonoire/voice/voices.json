@@ -2,17 +2,127 @@
   "note": "The voice for each character, so a take can be regenerated. IDs are ElevenLabs voice IDs in the project's workspace. 'placeholder' means an English voice standing in for a character who speaks Japanese; it will be replaced when the Japanese recording is made. Jack's Japanese-language lines are voiced in English for now (script unchanged).",
   "speechModel": "eleven_v4",
   "characters": {
-    "JACK":  { "voiceId": "MZhx7pKflsc0sAwciDEy", "name": "Narrator Lead", "status": "chosen", "notes": "Male, 40s-50s, world-weary raconteur. Jack's Japanese-language lines are voiced in English for now." },
-    "VERA":  { "voiceId": "4Rn2L1CRjYh93G56jNXI", "name": "Vera", "status": "chosen", "notes": "Female, early-to-mid 30s, plain American, rust-belt. Not the 'Vera - The Last Stand', 'vera - alt' or 'vera no good' voices." },
-    "MARA":    { "voiceId": null, "status": "auditioned", "designedPreviews": ["2NE3noNVoL0UyxXHLs7w", "9xXUOFmWFAxNaKLffMC1", "kJuTWH5OaVITSlJ0REyi"] },
-    "ISHIDA":  { "voiceId": null, "status": "auditioned", "designedPreviews": ["i3XNU6xFFYHPOtW9QI2i", "OrmQTyNPGsmrVUvvyBdC", "6wGe4cP3pH5TRuKntC6Z"] },
-    "KANEKO":  { "voiceId": null, "status": "auditioned", "placeholder": true, "designedPreviews": ["vUzt8mUMt5vwWOoJ6szl", "1Q4xsALqzHseCDRw39xL", "GsbDZcPjHdTVYr5w1u8V"] },
-    "KUROSE":  { "voiceId": null, "status": "auditioned", "designedPreviews": ["DUnv1SEk7l8x971Tl7Wj", "w5a8qAlS2I18T7LZ0pmo", "dJgEMFsn0Yl0fMOjyzv6"] },
-    "OKADA":   { "voiceId": null, "status": "auditioned", "placeholder": true, "designedPreviews": ["vaaKUkGxKDaDoDhcIbzT", "2xfJinBxBdtGiAfAGWx0", "MhuU9Z2dyWAG6ZjuuKRg"] },
-    "HARADA":  { "voiceId": null, "status": "auditioned", "placeholder": true, "designedPreviews": ["oiQsVLQVbTyIiNejyPfk", "6w0c8yqj5i203OOtJbjn", "yShhBp3hW9pwBDnBfMyR"] },
-    "DANIEL":  { "voiceId": null, "status": "auditioned", "designedPreviews": ["dRjKIobohlC0h0m7upOR", "LpigIl05iRD3HgmSI4uH", "oOJyrMKhBUCGET6PTTAu"] },
-    "SAKAI":   { "voiceId": null, "status": "auditioned", "designedPreviews": ["y7NkiaxPRjIzeTdRhHDC", "5cZz3tgktjtrxNe6QqlG", "zmHfnRO7iFQn8Uwmx83t"] }
+    "JACK": {
+      "voiceId": "MZhx7pKflsc0sAwciDEy",
+      "name": "Narrator Lead",
+      "status": "chosen",
+      "notes": "Male, 40s-50s, world-weary raconteur. Jack's Japanese-language lines are voiced in English for now."
+    },
+    "VERA": {
+      "voiceId": "4Rn2L1CRjYh93G56jNXI",
+      "name": "Vera",
+      "status": "chosen",
+      "notes": "Female, early-to-mid 30s, plain American, rust-belt. Not the 'Vera - The Last Stand', 'vera - alt' or 'vera no good' voices."
+    },
+    "MARA": {
+      "voiceId": null,
+      "status": "auditioned",
+      "designedPreviews": [
+        "2NE3noNVoL0UyxXHLs7w",
+        "9xXUOFmWFAxNaKLffMC1",
+        "kJuTWH5OaVITSlJ0REyi"
+      ]
+    },
+    "ISHIDA": {
+      "voiceId": null,
+      "status": "auditioned",
+      "designedPreviews": [
+        "i3XNU6xFFYHPOtW9QI2i",
+        "OrmQTyNPGsmrVUvvyBdC",
+        "6wGe4cP3pH5TRuKntC6Z"
+      ]
+    },
+    "KANEKO": {
+      "voiceId": null,
+      "status": "auditioned",
+      "placeholder": true,
+      "designedPreviews": [
+        "vUzt8mUMt5vwWOoJ6szl",
+        "1Q4xsALqzHseCDRw39xL",
+        "GsbDZcPjHdTVYr5w1u8V"
+      ]
+    },
+    "KUROSE": {
+      "voiceId": null,
+      "status": "auditioned",
+      "designedPreviews": [
+        "DUnv1SEk7l8x971Tl7Wj",
+        "w5a8qAlS2I18T7LZ0pmo",
+        "dJgEMFsn0Yl0fMOjyzv6"
+      ]
+    },
+    "OKADA": {
+      "voiceId": null,
+      "status": "auditioned",
+      "placeholder": true,
+      "designedPreviews": [
+        "vaaKUkGxKDaDoDhcIbzT",
+        "2xfJinBxBdtGiAfAGWx0",
+        "MhuU9Z2dyWAG6ZjuuKRg"
+      ]
+    },
+    "HARADA": {
+      "voiceId": null,
+      "status": "auditioned",
+      "placeholder": true,
+      "designedPreviews": [
+        "oiQsVLQVbTyIiNejyPfk",
+        "6w0c8yqj5i203OOtJbjn",
+        "yShhBp3hW9pwBDnBfMyR"
+      ]
+    },
+    "DANIEL": {
+      "voiceId": null,
+      "status": "auditioned",
+      "designedPreviews": [
+        "dRjKIobohlC0h0m7upOR",
+        "LpigIl05iRD3HgmSI4uH",
+        "oOJyrMKhBUCGET6PTTAu"
+      ]
+    },
+    "SAKAI": {
+      "voiceId": null,
+      "status": "auditioned",
+      "designedPreviews": [
+        "y7NkiaxPRjIzeTdRhHDC",
+        "5cZz3tgktjtrxNe6QqlG",
+        "zmHfnRO7iFQn8Uwmx83t"
+      ]
+    },
+    "MASKED MAN": {
+      "voiceId": null,
+      "status": "auditioned",
+      "notes": "The hit team leader / the man who says 'Shitsurei shimasu' (sc 1, 2, 24, 70 driver).",
+      "designedPreviews": [
+        "BikINnFYQnWn9BQmTLVD",
+        "N0mXCD6snvnfdnhxNS1Z",
+        "nr9oPOWXTjfXV6YSonDO"
+      ]
+    },
+    "JOURNALIST": {
+      "voiceId": null,
+      "status": "auditioned",
+      "notes": "Kondo, Toto Shimbun (sc 2).",
+      "designedPreviews": [
+        "2RhPCHS7sC9j9YOgKuyw",
+        "ayITctDINEYl9o1ROnKW",
+        "EEYUewEB5w5R0IPnszO5"
+      ]
+    },
+    "OLD MAN": {
+      "voiceId": null,
+      "status": "same as SAKAI",
+      "notes": "The old man in the cold open is Sakai; use the SAKAI voice."
+    }
   },
-  "notDesignedYet": ["MRS. SAKAI", "MRS. NODA", "MR. NODA", "MASKED LEADER", "DRIVER", "YOUNG OFFICER", "OLD TOBACCONIST", "BARBER", "JOURNALIST"],
+  "notDesignedYet": [
+    "MRS. SAKAI",
+    "MRS. NODA",
+    "MR. NODA",
+    "DRIVER",
+    "YOUNG OFFICER",
+    "OLD TOBACCONIST",
+    "BARBER"
+  ],
   "designedPreviewsNote": "Unsaved design previews are short-lived. A character becomes final only when its chosen preview is saved to the library and its voiceId filled in here."
 }
