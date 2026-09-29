@@ -2,7 +2,7 @@
 // measures it, and records it in docs/neonoire/voice/manifest.json. Then run `npm run build:neonoire`.
 //
 //   node scripts/neonoire/voice-ingest.mjs --frame neonoire-shot-156 --character JACK \
-//     --text "She said to tell you she was sorry." --file /path/take.mp3 --offset 0.4 \
+//     --text "[quietly] She said to tell you she was sorry." --file /path/take.mp3 --offset 0.4 \
 //     --voice MZhx7pKflsc0sAwciDEy --model eleven_v4
 //
 // --file may also be an https URL: download it at once, generation links expire after two hours.
@@ -28,7 +28,10 @@ const rel = `/audio/neonoire/${sceneKey}/${number}-${args.character.toLowerCase(
 const dest = resolve(root, "public" + rel);
 mkdirSync(dirname(dest), { recursive: true });
 
-if (/^https?:\/\//.test(args.file)) writeFileSync(dest, Buffer.from(await (await fetch(args.file)).arrayBuffer()));
+if (/^https?:\/\//.test(args.file)) {
+  // curl, not fetch: it honors the proxy settings of a sandboxed or corporate environment.
+  execFileSync("curl", ["-fsSL", "--max-time", "60", "-o", dest, args.file], { stdio: "inherit" });
+}
 else copyFileSync(resolve(args.file), dest);
 
 let duration;
@@ -39,12 +42,14 @@ try {
   if (m) duration = Math.round((Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3])) * 100) / 100;
 } catch { /* duration stays unknown; the builder then cannot stretch the frame */ }
 
+// `text` is the script line as spoken; `prompt` keeps the tagged text that was sent to ElevenLabs.
+const plain = args.text.replace(/\[[^\]]*\]\s*/g, "").trim();
 const manifest = readManifest(root);
 const voices = readVoices(root);
 const id = args.id || `${sceneKey}-${args.character.toLowerCase().replace(/[^a-z]+/g, "")}-${slug}`;
 if (manifest.lines.some(l => l.id === id)) { console.error(`Line id ${id} already exists; pass --id`); process.exit(1); }
 manifest.lines.push({
-  id, frameId: args.frame, character: args.character.toUpperCase(), text: args.text, file: rel,
+  id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(plain !== args.text ? { prompt: args.text } : {}), file: rel,
   offset: Number(args.offset ?? 0.4), ...(duration ? { duration } : {}),
   voice: args.voice || voices.characters[args.character.toUpperCase()]?.voiceId || undefined,
   model: args.model || voices.speechModel, status: args.status || "take",
