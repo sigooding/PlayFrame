@@ -56,7 +56,7 @@ const srtTime = t => { const ms = Math.round(t * 1000); const p = (n, w = 2) => 
 const cueText = c => (speakers ? `${c.character}: ` : "") + (c.text || "");
 const cues = [];
 const silentMax = Number(args["silent-max"] || 4);
-const LEAD = 0.5, TAIL = 0.4;
+const LEAD = Number(args.lead || 0.7), TAIL = Number(args.tail || 0.9);
 // Tightened timing for one frame: the length it plays and its clips shifted to match.
 function pace(frame, clips) {
   if (!tight) return { dur: frame.duration, clips };
