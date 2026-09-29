@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-137
 IMAGE: 135-below-the-viaduct.jpg
-NOTE: Street master. It holds "Vera steps away from him. Just one step. Enough.", "Is Kaneko --" and "The Hive looks after its own."
+NOTE: Street master. It holds "Vera steps away from him. Just one step. Enough.", "Is Kaneko --" and "The Hive looks after its own." Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon Hive (rear wing at the viaduct's roofline) and the night look; staging and cast carried over.
 
 138. MEDIUM CLOSE-UP — 50mm, static, low angle — until us.
 Vera looks up at the Hive, with its warm light on her wet face. Jack, one step away at frame right, lowers his head and has no answer.

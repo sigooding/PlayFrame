@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 8
 ID: neonoire-shot-148
 IMAGE: 146-tomorrows-tokyo.jpg
-NOTE: The scene master. The banner carries the rendering only; the TOMORROW'S TOKYO title is not lettered in this study.
+NOTE: The scene master. The banner carries the rendering only; the TOMORROW'S TOKYO title is not lettered in this study. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon Hive in the day murk; the banner still carries the rendering only, staging and cast carried over.
 
 149. MEDIUM — 35mm, static, eye level — the same morning news.
 Across the street, the window of a small electronics shop: a wall of old CRTs and new flat screens, all showing Kurose's photograph and a newspaper front page held up to the camera. People on the pavement have stopped. Among them, under one plain black umbrella, Vera stands beside Kaneko.
@@ -41,7 +41,7 @@ LIGHT: Overcast soft
 TIME: 8
 ID: neonoire-shot-150
 IMAGE: 148-four-men.jpg
-NOTE: Retake: four prosecutors stand in the line, one holding an identification card. The black car runs out of frame at left but is complete, not cut off at a door. Hold on "For a moment, nothing happens at all," then the aide lowers the umbrella.
+NOTE: Retake: four prosecutors stand in the line, one holding an identification card. The black car runs out of frame at left but is complete, not cut off at a door. Hold on "For a moment, nothing happens at all," then the aide lowers the umbrella. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon Hive in the day murk; the four prosecutors, the car and the umbrella held.
 
 151. WIDE — 50mm, tracking, eye level — twenty metres.
 Kurose walks alone from the tent to the grey car in the rain without an umbrella. His silver hair is soaked flat and his suit dark at the shoulders. A prosecutor walks a step behind him, and press cameras flash from behind a rope.
@@ -51,7 +51,7 @@ LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-151
 IMAGE: 149-twenty-metres.jpg
-NOTE: Carries "By the time he reaches the car, he looks like what he is: an old man." The CRTs replaying the moment a second behind are sound and cutaway, over shot 149's window.
+NOTE: Carries "By the time he reaches the car, he looks like what he is: an old man." The CRTs replaying the moment a second behind are sound and cutaway, over shot 149's window. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon Hive in the day murk; the walk, the rope and the press carried over.
 
 152. CLOSE-UP — 85mm, static, eye level — she does not look away.
 Vera under the umbrella watches the whole twenty metres, steady and unblinking. Kaneko's small old hand comes into frame and takes hers.

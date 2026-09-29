@@ -644,6 +644,14 @@ assert(hiveCanonRules.includes("one bulb, amber tungsten, steam") && hiveCanonRu
 for (const term of ["vivid colours", "many neon signs", "video billboards", "bright sunny daylight", "cyberpunk", "brand logos"]) assert(hiveCanonNegative.includes(term), `The Hive negative prompt bans ${term}`);
 assert(!hiveCanonScenes.has("s14") && !hiveCanonScenes.has("s47") && !hiveCanonScenes.has("s91"), "Mara's apartment, the inn's back yard and the railway walkway are not the Hive");
 assert(hiveCanonScenes.has("s19") && hiveCanonScenes.has("s69") && hiveCanonScenes.has("s71") && hiveCanonScenes.has("s67"), "The counter night, the passages and the service road are the Hive");
+let retakeNoteCount = 0;
+for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md"]) {
+  const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
+  const hits = text.split("Retake 29 September 2026").length - 1;
+  assert(hits > 0, `${board} records its exterior retake`);
+  retakeNoteCount += hits;
+}
+assert.equal(retakeNoteCount, 7, "Every tier-1 exterior retake is recorded in its board notes");
 pass("hive canon: six sheets installed; the seven wrong-building exteriors retaken on the canon and the look, twenty-seven frames queued for the next pass, nothing outside the Hive");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
