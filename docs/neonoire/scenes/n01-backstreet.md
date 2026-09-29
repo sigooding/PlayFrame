@@ -154,7 +154,7 @@ NOTE: The strength in the hand is the only unnatural thing in the scene and it i
 
 16. INSERT — 85mm, static, eye level — the key.
 A small numbered key on a worn plastic tag. A coin-locker key, held in the palm of her hand, rain falling on it.
-SCRIPT: "A small numbered key on a worn plastic tag. A coin-locker key."
+SCRIPT: "A small key on a worn numbered tag. A coin-locker key."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6

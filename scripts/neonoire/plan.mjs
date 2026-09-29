@@ -1389,7 +1389,7 @@ export const imagePath = (scene, shot) => `/images/neonoire/${scene.key}/${shot.
 export const brainstorm = [
   {
     id: "neonoire-brain-1", x: 60, y: 40, title: "The key",
-    content: "A small numbered key on a worn plastic tag \u2014 a coin-locker key, pressed into Mara's palm by a dying man with the words don't let them have it. Never explained in the opening, and the reason she is running.",
+    content: "A small key on a worn numbered tag \u2014 a coin-locker key, pressed into Mara's palm by a dying man with the words don't let them have it. Never explained in the opening, and the reason she is running.",
     color: "rose", tags: ["Prop", "Engine"], connections: ["neonoire-brain-2", "neonoire-brain-4"], createdAt,
   },
   {

@@ -149,7 +149,7 @@ She opens her hand.
 
 .INSERT - THE KEY
 
-A small numbered key on a worn plastic tag. A coin-locker key.
+A small key on a worn numbered tag. A coin-locker key.
 
 .BACK TO SCENE
 

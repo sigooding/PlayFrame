@@ -2,9 +2,29 @@
 
 **Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
 
+## Current state — 29 September 2026 (key-tag script clarification)
+
+The director waived the old 87-tag discrepancy and chose a **script-only** correction: the key/locker number remains **114**, now visibly on the worn tag in scenes 25 and 60 rather than stamped into metal with a blank tag. `Neonoire (3).fountain` and the corresponding screenplay pages were revised; older 87-tag images and the scene-17 board/image were not changed. The script source is authoritative; old shot-258 art remains a draft mismatch, not a request for retakes.
+
+## Current state — 29 September 2026 (draft-board review passed)
+
+A full-size review of the two scene-21 office-window frames and ten script-pass retakes is complete: **pass for storyboard continuity with named caveats, not production approval**. All twelve are 1920×1080; no frames were regenerated in this review. Carry forward the older-looking hands in shot 196, the unprovable exact third stool in Mara's pencil drawings, and a small side-wall sketch in shot 117 that differs from shot 119's two-paper arrangement. Scene 17 was excluded, as directed. The [full-size review signoff](passes/full-size-retake-review-2026-09-29.md) records the decision; the separate [scene-21](passes/scene-21-office-window.md) and [script-pass](passes/script-pass-image-retakes.md) ledgers track each pass.
+
+## Current state — 29 September 2026 (scene 21: Jack’s office window)
+
+Shot 196 (`s21/194-he-holds-it-without-drinking.jpg`) and coverage shot 271 (`s21/271-not-yet.jpg`) were retaken **in place** as image-only continuity fixes. The office windows now have venetian blinds and a rainy elevated train, as established in scenes 10 and 77, rather than a street-level convenience store or blank glass. The hands in 196 still read older than 48 — a production hand-double caveat. The screenplay, board numbers and shot IDs did not change. [Window-retake ledger and before/after review](passes/scene-21-office-window.md). Scene 17 remains reverted at board level.
+
+## Current state — 29 September 2026 (script-pass image retakes, follow-up)
+
+**Scene 17 reverted at the director's request:** the original board and image are untouched; do not count shot 189 as retaken. The pre-existing mismatch between the screenplay's fourth stool and the board's third-stool note remains. Ten in-place keyframes are revised in scenes 60/229, 68/237, 77/88, 80/96–97 and 100–101, 84/117–119. Mara's red clip is gone in 68; the room is mostly empty in 80; the drawings match across 84. See the [retake ledger and review sheets](passes/script-pass-image-retakes.md) for remaining prop/art caveats. Scene 21’s window retakes were completed in the separate image-only pass above; 25A, 27A and 63A were already boarded as 287–296. At the time of these image retakes, no screenplay text, scene/board number, frame ID or image path changed; the subsequent key-tag script clarification is recorded above. Still 103 scenes / 296 shots.
+
+## Current state — 29 September 2026 (Okada's bar location sheet)
+
+The Kanda bar now has a 1920×1080 four-panel set reference, [`sheets/kanda-bar.jpg`](../../public/images/neonoire/sheets/kanda-bar.jpg): the scene-2 room before and after the shooting above the scene-8 daylight room and scene-81 counter. The shared location lock in `scripts/neonoire/bar-look.mjs` travels with shots in scenes 2, 8, 27A, 64 and 81, plus the image-generation briefs. The hotel lounge is **not** this location. Find the sheet and Okada's cast sheet in the "Okada’s bar — night to day" Mood board. This is a reference assembled from existing draft frames, **not** a retake of those frames or approval of all their geometry; existing deviations remain for review. The day/night CRT and cleanup-mat rule, panel sources and caveats are in [`passes/kanda-bar-style-sheet.md`](passes/kanda-bar-style-sheet.md).
+
 ## Current state — 29 September 2026 (scenes 25A, 27A, 63A boarded, caveats retaken)
 
-The three inserted Act Two scenes are boarded as **shots 287–296**. A follow-up of eight retakes closed the named beats: he sets the plate, she is under the counter, the parlour is brick, SHIOHAMA reads. Ledger: [`passes/scenes-25a-27a-63a.md`](passes/scenes-25a-27a-63a.md), retakes [`passes/scenes-25a-27a-63a-retakes.md`](passes/scenes-25a-27a-63a-retakes.md). `EXPECTED_SHOTS` is **296**; all 103 scenes are boarded. **Boards still to retake from the script pass:** sc 17 (fourth stool), 60 / 68 / 84 (the drawing), 77 (the letter), 80 (empty room), 84 (the Ishida exchange). The key stays 114 in the script (the board's oval tag reads 87).
+The three inserted Act Two scenes are boarded as **shots 287–296**. A follow-up of eight retakes closed the named beats: he sets the plate, she is under the counter, the parlour is brick, SHIOHAMA reads. Ledger: [`passes/scenes-25a-27a-63a.md`](passes/scenes-25a-27a-63a.md), retakes [`passes/scenes-25a-27a-63a-retakes.md`](passes/scenes-25a-27a-63a-retakes.md). `EXPECTED_SHOTS` is **296**; all 103 scenes are boarded. **At that point** the script-pass image queue included sc 17 (fourth stool), 60 / 68 / 84 (the drawing), 77 (the letter), 80 (empty room), 84 (the Ishida exchange); see the current state above for follow-up retakes and the scene-17 revert. The key stays 114 in the script; the old 87-tag board is now an accepted draft-art discrepancy under the later script-only decision.
 
 ## Script pass — 29 September 2026 (story fixes and three new scenes)
 

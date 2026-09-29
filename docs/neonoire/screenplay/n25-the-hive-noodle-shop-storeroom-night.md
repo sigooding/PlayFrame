@@ -27,12 +27,12 @@ And then in the bar, the man said, "Where is he?" He was waiting for the old man
 JACK
 Sakai was bringing him something.
 
-Mara opens her fist. The coin-locker key on its worn plastic tag.
+Mara opens her fist. The coin-locker key on its worn tag.
 
 MARA
 This.
 
-Jack takes it. Turns it over under the bulb. A number stamped into the metal: 114. The plastic tag is so old the printing has worn away.
+Jack takes it. Turns it over under the bulb. The number on the worn tag, still legible: 114.
 
 JACK
 It's not a station locker. They clear those every three days.

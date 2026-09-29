@@ -24,6 +24,7 @@ import { hiveMorningImages, veraLookDSheet } from "./neonoire/hive-morning-look.
 import { endingImages, veraLookESheet } from "./neonoire/ending-look.mjs";
 import { kandaReturnImages } from "./neonoire/kanda-return-look.mjs";
 import { innImages, innStairFrames, innWarmLook } from "./neonoire/inn-look.mjs";
+import { kandaBarScenes, kandaBarSheet, kandaBarLook } from "./neonoire/bar-look.mjs";
 import { hiveFirstImages } from "./neonoire/hive-first-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
 
@@ -71,7 +72,7 @@ assert(project.frames.every(frame => frame.lens), "Every frame declares a lens")
 assert.equal(project.notes.length, 8);
 assert(project.notes.some(note => note.id === "neonoire-frame-format" && /16:9 full-bleed, 1920×1080/.test(note.content)), "The workspace carries the film's 16:9 frame rule");
 assert.equal(project.brainstorm.length, 6);
-assert(project.moodboards.length >= 3 && project.moodboards.length <= 7, "The boards carried are the ones with keyframes on them");
+assert(project.moodboards.length >= 3 && project.moodboards.length <= 8, "The boards carried are the ones with keyframes on them");
 for (const board of project.moodboards) assert(board.items.length > 0, `An empty mood board is a dead card: ${board.title}`);
 assert(project.scenes.every(scene => scene.actId === project.acts[0].id), "Every scene belongs to the opening act");
 assert.equal(new Set(project.frames.map(frame => frame.id)).size, EXPECTED_SHOTS, "Frame ids are unique");
@@ -96,6 +97,10 @@ const clean = fountain.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 assert.equal(project.script.replace(/\s+$/, ""), clean.replace(/\s+$/, ""), "The screenplay should be the draft, minus its scene-number markers");
 for (const scene of project.scenes) assert(project.script.includes(`${scene.location} - ${scene.time}`), `${scene.title}'s slugline must survive in the script`);
 pass(`the screenplay carries all 103 scenes (100 numbered, 3 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
+assert(fountain.includes("The number on the worn tag, still legible: 114."), "Scene 25 must reveal 114 on the tag");
+assert(fountain.includes("Its worn tag reads 114."), "Scene 60 must repeat the tag number");
+assert(!fountain.includes("The plastic tag is so old the printing has worn away."), "The old metal-stamp/blank-tag explanation is superseded");
+pass("key-tag script clarification: 114 is legible on the worn tag, not stamped metal with a blank tag");
 
 // ---------------------------------------------------------------- frames, lenses, keyframes
 for (const frame of project.frames) {
@@ -148,7 +153,7 @@ for (const frame of coldOpen) {
   if (n <= coldOpenCompletedThrough) {
     assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be revised 16:9`);
     assert(!frame.notes.includes("COLD OPEN REVISION PENDING"));
-    for (const detail of ["Cold-open visual revision", "s1/01-backstreet.jpg", "s1/07-old-man.jpg", "s1/08-sedan-arrives.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "Strap intact through 16", "tag 87"]) {
+    for (const detail of ["Cold-open visual revision", "s1/01-backstreet.jpg", "s1/07-old-man.jpg", "s1/08-sedan-arrives.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "Strap intact through 16", "114 on its worn tag"]) {
       assert(frame.notes.includes(detail), `${frame.title} lacks cold-open continuity: ${detail}`);
     }
   } else {
@@ -450,6 +455,20 @@ assert(callNight.find(f => f.id === "neonoire-shot-194").notes.includes("s1/03-m
 assert(callNight.filter(f => ["neonoire-shot-195", "neonoire-shot-197", "neonoire-shot-198"].includes(f.id)).every(f => f.characters.includes(castOf("Vera Voss"))), "Vera is in every shot she plays in scenes 21–22");
 pass("scenes 18–23 boarded: ten 16:9 shots — the call, the standoff, the clip, the stair up, the arch counter and the lanterns swaying");
 
+// Scene 21 office window: two image-only retakes against the established blinds/railway geography.
+for (const shot of [196, 271]) {
+  const frame = project.frames.find(f => f.id === `neonoire-shot-${shot}`);
+  assert.equal(frame.sceneId, "neonoire-s21", `shot ${shot} stays in scene 21`);
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `shot ${shot} remains full-bleed 16:9`);
+  for (const detail of ["Image-only retake 29 September 2026", "venetian blinds", "elevated", "convenience store"]) {
+    assert(frame.notes.includes(detail), `shot ${shot} records the window retake: ${detail}`);
+  }
+}
+assert(project.frames.find(f => f.id === "neonoire-shot-196").notes.includes("hands still read older than 48"), "shot 196 keeps its hand-double caveat");
+assert(project.frames.find(f => f.id === "neonoire-shot-271").notes.includes("two coffees"), "shot 271 keeps both coffee cups");
+assert.deepEqual(jpegDimensions("/images/neonoire/reviews/scene-21-office-window-retakes.jpg"), [1952, 1166], "scene 21 before/after review sheet exists");
+pass("scene 21: two in-place window retakes use the office blinds and elevated train, with no shot renumbering");
+
 // Scenes 24–28: the chairman's model, the key's number, the loop, the crossing, the sea-wall steps.
 const coast = project.frames.filter(f => ["s24", "s25", "s26", "s27", "s28"].map(k => `neonoire-${k}`).includes(f.sceneId));
 assert.deepEqual(coast.filter(f => shotNo(f) <= 205).map(f => f.id), Array.from({ length: 5 }, (_, i) => `neonoire-shot-${201 + i}`));
@@ -634,6 +653,28 @@ for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repair
   assert.deepEqual(jpegDimensions(`/images/neonoire/sheets/${sheet}.jpg`), [1920, 1080], `${sheet}'s identity sheet is 16:9`);
 }
 pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective, the masked man and Vera's Looks B and F carry identity sheets");
+
+// Okada's bar has one set sheet across night, daylight and the later night return.
+assert.deepEqual(jpegDimensions(kandaBarSheet), [1920, 1080], "the Kanda bar location sheet is 16:9");
+assert.deepEqual([...kandaBarScenes].sort(), ["s2", "s27a", "s64", "s8", "s81"], "only Okada's bar scenes use the sheet (not the hotel lounge)");
+assert(kandaBarLook.includes("CRT switched OFF") && kandaBarLook.includes("scene 2 variety show") && kandaBarLook.includes("sheets/okada.jpg"), "the bar lock records the day/night states and Okada's identity");
+for (const sceneKey of kandaBarScenes) {
+  const frames = project.frames.filter(frame => frame.sceneId === `neonoire-${sceneKey}`);
+  assert(frames.length > 0 && frames.every(frame => frame.notes.includes("sheets/kanda-bar.jpg")), `scene ${sceneKey} carries the bar's shared location lock`);
+}
+const barBoard = project.moodboards.find(board => board.id === "neonoire-look-kanda-bar");
+assert(barBoard?.items.some(item => item.image === kandaBarSheet), "the bar sheet is visible in Mood boards");
+assert(!project.frames.filter(frame => ["neonoire-s66", "neonoire-s72", "neonoire-s75"].includes(frame.sceneId)).some(frame => frame.notes.includes("sheets/kanda-bar.jpg")), "the hotel lounge does not borrow Okada's bar sheet");
+pass("Kanda bar: the 16:9 night/day sheet and location rules travel with all five bar scenes, not the hotel");
+
+// Script-pass image retakes are in-place; scene 17 was reverted and is out of this pass.
+for (const [shot, phrase] of [[229, "new taped counter drawing"], [237, "NO red-bird clip"], [88, "folded letter"], [96, "shift change"], [97, "script-pass follow-up"], [100, "Retake 29 September 2026"], [101, "near desks unoccupied"], [117, "rear-wall drawing"], [118, "back of a loose-haired woman"], [119, "script-pass follow-up"]]) {
+  const frame = project.frames.find(f => f.id === `neonoire-shot-${shot}`);
+  assert(frame?.notes.includes(phrase), `shot ${shot} records the installed script-pass retake`);
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `script-pass retake ${shot} is 16:9`);
+}
+assert(!project.frames.find(f => f.id === "neonoire-shot-189")?.notes.includes("SCRIPT-PASS RETAKE"), "scene 17 is reverted, not recorded as a retake");
+pass("script-pass retakes: ten in-place 16:9 frames installed; scene 17 reverted");
 
 // The roadside inn style sheet and the mask rule (29 September 2026): the inn carries a four-panel
 // style sheet, and the masked men's costume is locked to the black lower-face mask — at the inn too.

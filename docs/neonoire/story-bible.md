@@ -319,6 +319,11 @@ turn.
    The pipeline (`plan.mjs`, `verify-neonoire.mjs`) now accepts `#25A#`-style inserted scenes; the
    workspace has 103 scenes (100 numbered + 3 inserted).
 
+6. **Key-tag script clarification (29 September).** At the director’s direction, keep the
+   locker number **114**, but put it on the worn tag in scenes 25 and 60 rather than on
+   stamped metal with illegible tag printing. Scene 1 now says only a worn numbered tag.
+   The older 87-tag frames and prop master are left alone; no scene 17 change.
+
 ---
 
 ## Part 10 — Known inconsistencies to resolve
@@ -333,20 +338,15 @@ turn.
      claim off as accidental (the "one signature" idea from development) — this requires rewriting
      scenes 11, 23, 79, 80, 82 and Ishida's role as his former senior.
    Recommended: (a), with one line of dialogue somewhere (Ishida or Kaneko) acknowledging it.
-2. **Key number (kept as is):** the script's 114 is the number stamped in the key's metal; the worn plastic tag's printing is gone. The boards show a legible oval tag "87" (`props/key-87-tag.jpg`), which reads as an old office number. Decision: keep the script at 114 and treat 87 as the tag's own number; if it bothers, retake the tag insert instead of the script. Original note: board and prop master use a brass tag "87"; the script says "114" on a worn
-   plastic tag (sc 25, 29, 34, 60, 63). Recommended: change the script to 87.
-3. **OPEN — Jack's office, sc 21:** street-level window with a convenience store in two frames; everywhere
-   else blinds and the train.
+2. **RESOLVED IN THE SCRIPT — key tag:** 114 remains the locker/key number (receipts in scenes 29 and 34, locker in 63). On 29 September the director directed a **script fix**, ignoring the older 87 tag rather than retaking it: scenes 1, 25 and 60 now describe a worn numbered tag, legibly **114** when revealed in scenes 25 and 60; no metal stamp or erased printing is required. Older images/prop master showing 87 (including `props/key-87-tag.jpg` and shot 258) remain untouched as draft visual discrepancies, not script canon. Earlier decision was to split a stamped 114 on the metal from a separate 87 tag; that distinction is superseded. Do not renumber the locker or introduce 87 into the screenplay.
+3. **RESOLVED IN THE BOARD — Jack's office, sc 21:** two frames had a street-level window, one showing a convenience store, while the other office scenes show blinds and the elevated train. Both frames were retaken in place on 29 September 2026 with the office's rain-grey venetian blinds and railway outside. This was an **image fix only**: no screenplay line, scene number, board number or asset path changed. See [the scene-21 window retake ledger](passes/scene-21-office-window.md).
 4. **PARTLY ADDRESSED (three new scenes, now boarded as 287–296) — Runtime:** the animatic at board durations still runs short of feature length; the middle is less thin.
 5. **Outline numbering:** the early 48-scene outline numbers do not match the draft's 100 scene
    numbers. The draft's numbers are canonical.
 
 ---
 
-6. **Boards not yet retaken for the script pass (Part 9 items 4–5):** sc 17 (Jack now on the fourth
-   stool — shot 189 and any coverage show him on the third), sc 60 (the drawing on the wall), sc 68
-   and 84 (drawings), sc 80 (empty room), sc 84 (new exchange), sc 77 (the letter), and the three new
-   scenes 25A, 27A, 63A have no shots at all.
+6. **Script-pass boards (Part 9 items 4–5):** scenes 60, 68, 77, 80 and 84 received in-place image retakes; 25A, 27A and 63A were inserted as shots 287–296 without renumbering. Scene 17’s board/image were explicitly reverted and must remain untouched; its screenplay still says fourth stool. See the handoff and pass ledgers for review caveats.
 
 ## Part 11 — Development history (short)
 
