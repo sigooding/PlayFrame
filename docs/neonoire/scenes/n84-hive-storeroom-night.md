@@ -5,7 +5,7 @@
 Scene: INT. THE HIVE, NOODLE SHOP STOREROOM — NIGHT
 Cast: JACK, VERA VOSS (Kaneko at the curtain and the masked man off screen are not in frame)
 Lens plan: 24mm for the room, 50mm on Vera at the drawing, 35mm for the two of them, 85mm for Jack hearing the voice.
-Grammar: one bare bulb, flour sacks and a folded futon, with the railway overhead. Mara's sketches are on the wall. Neither of them crosses the few feet between them. The train shakes the bulb, and under the train a voice says "Position."
+Grammar: one bare bulb, flour sacks and a folded futon, with the railway overhead. Mara's sketches are on the wall. Neither of them crosses the few feet between them. The train shakes the bulb, and under the train a voice says "Position." Story pass 2 (29 September 2026): Vera arrives with Mara's small cloth bag, one strap frayed, the folded pages showing at its mouth — Kaneko left it at the door for her.
 
 ## Frame format — 26 September 2026
 
@@ -14,14 +14,14 @@ All four shots (117–120) are **16:9, 1920×1080, full-bleed**. **This is the s
 ---
 
 117. WIDE — 24mm, static, eye level — the storeroom.
-The whole tiny room under the bare bulb. Vera has just come through the curtain at left, and Jack stands against the far right wall by the flour sacks. The folded futon, the green-onion crates and the taped behind-the-curtain counter sketches sit between them.
+The whole tiny room under the bare bulb. Vera has just come through the curtain at left, Mara's small cloth bag with one strap frayed hanging from her hand, and Jack stands against the far right wall by the flour sacks. The folded futon, the green-onion crates and the taped behind-the-curtain counter sketches sit between them.
 SCRIPT: "The bulb. The flour sacks. The futon, folded now."
 CAST: Jack, Vera Voss
 LIGHT: Low key
 TIME: 14
 ID: neonoire-shot-117
 IMAGE: 115-the-storeroom.jpg
-NOTE: Retake 29 September 2026: the rear-wall drawing now shows the counter and a back on a stool, not an anatomical portrait; keep the two figures apart and the one bare bulb. Storeroom master. It holds Kaneko's "Someone for you" (Japanese, subtitled, off screen), "Jack gets to his feet. Neither of them moves toward the other." and Vera's first line. The flour sacks' printed FLOUR is set dressing; replace it with Japanese markings on set.
+NOTE: Retake 29 September 2026: the rear-wall drawing now shows the counter and a back on a stool, not an anatomical portrait; keep the two figures apart and the one bare bulb. Storeroom master. It holds Kaneko's "Someone for you" (Japanese, subtitled, off screen), "Jack gets to his feet. Neither of them moves toward the other." and Vera's first line. The flour sacks' printed FLOUR is set dressing; replace it with Japanese markings on set. Story pass 2 (29 September 2026): Vera carries Mara's cloth bag in with her — "In her hands, a small cloth bag with one strap frayed. Kaneko put it there at the door." The installed study predates the bag; a prop retake check.
 
 118. MEDIUM CLOSE-UP — 50mm, static, eye level — that's me.
 Vera in profile at the wall, one finger on Mara's pencil drawing of the counter seen from behind the curtain, with the loose-haired back of a woman on the third stool. The bulb burns overhead.
@@ -34,14 +34,14 @@ IMAGE: 116-thats-me.jpg
 NOTE: Holds "That's me." through "Three feet away." and "Vera touches the paper with one finger." Retake 29 September 2026: the sketch now shows the back of a loose-haired woman at the counter, rather than a front-facing portrait or Vera's present-day knot. Pencil art and the precise stool count remain art-department review checks.
 
 119. TWO-SHOT — 35mm, static, eye level — that's mine.
-The two of them face each other across the little room, Vera by the sketches at left and Jack by the flour sacks at right, with a few feet of floor that neither crosses.
+The two of them face each other across the little room, Vera by the sketches at left and Jack by the flour sacks at right, with a few feet of floor that neither crosses. In the middle of the take Vera opens Mara's cloth bag and smooths one of the folded pages flat on the top flour sack: a counter seen from the floor, two pairs of shoes, a stool going over, a hand, and EXCUSE ME in block capitals.
 SCRIPT: "She was protecting you. So was I."
 CAST: Jack, Vera Voss
 LIGHT: Low key
 TIME: 30
 ID: neonoire-shot-119
 IMAGE: 117-both-wrong.jpg
-NOTE: Carries the notebook exchange (He didn't blame you. / I know. / I'm not asking you to be.). The study stays close to the master's framing; played slightly tighter it becomes the scene's middle distance. Retake 29 September 2026 (script-pass follow-up): the two behind-the-curtain counter drawings on the rear wall now match shot 117; the front-facing portrait and extra sheets are gone. Neither of them crosses the floor. The take must hold Vera’s "I worked it out on the way here" and Jack’s acknowledgement without changing the blocking.
+NOTE: Carries the scene's long middle distance: the Ishida exchange ("I told him. Where she'd be, and when... That's mine."), "You never asked who," "I'm not going to tell you it wasn't yours," then the bag opened on the flour sack — "She drew what she saw. All of it." / "I'm taking these to Harada." — and the notebook exchange (He didn't blame you. / I know. / I'm not asking you to be.). The study stays close to the master's framing; played slightly tighter it becomes the scene's middle distance. Retake 29 September 2026 (script-pass follow-up): the two behind-the-curtain counter drawings on the rear wall now match shot 117; the front-facing portrait and extra sheets are gone. Neither of them crosses the floor. The take must hold the exchanges without changing the blocking. Story pass 2 (29 September 2026): the cloth bag and Mara's floor drawings are the scene's evidence — the installed study predates the bag and the spread page; both are production checks.
 
 120. CLOSE-UP — 85mm, static, eye level — position.
 Jack's head snaps round toward the curtain, alert. Vera, soft behind him, reads his face and understands. The bare bulb is swinging.

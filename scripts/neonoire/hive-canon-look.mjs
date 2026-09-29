@@ -34,14 +34,16 @@
 
 export const hiveCanonScenes = new Set([
   "s13", "s15", "s16", "s17", "s19", "s20", "s25", "s55", "s56", "s57", "s58", "s59", "s60",
-  "s67", "s68", "s69", "s70", "s71", "s84", "s85", "s86", "s87", "s88", "s89", "s90", "s92",
+  "s67", "s68", "s69", "s70", "s71", "s84", "s85", "s86", "s87", "s88", "s89", "s90", "s91", "s92",
   "s97", "s99",
 ]);
 // Not the Hive, and never touched by this canon: s3 and s78 (Vera's apartment building — an
 // ordinary old four-storey grey concrete apartment building somewhere else in Tokyo, beside the
 // elevated railway; the story depends on her not knowing the Hive), s14 (Mara's apartment), s22
-// and s100 (the brick arch counters — the draft itself calls scene 22 "a different place"), s91
-// (the railway maintenance walkway is railway ground, outside the Hive).
+// and s100 (the brick arch counters — the draft itself calls scene 22 "a different place").
+// Scene 91 joined the canon on 29 September 2026: the story-pass-2 rewrite replaced the railway
+// maintenance walkway (railway ground, outside the Hive) with the fire ladder on the Hive's own
+// rear wall by the viaduct.
 
 export const hiveCanon = `THE HIVE (canonical): a dense, self-built residential block in Tokyo, grown piece by piece since the 1960s. Two parts: an ELEVEN-STOREY front tower facing a wide modern street, and a FOUR-STOREY rear wing that backs directly onto a concrete elevated railway viaduct; the rear wing's flat roof is level with the viaduct's maintenance walkway and tracks. Facade: stained grey-brown concrete, irregular balconies bolted onto balconies, rusted steel cages, air conditioners and water pipes everywhere, laundry on poles, hand-painted vertical signs in Japanese, tangled power lines, small windows of every size. The Hive has been retrofitted for sixty years: pipes, ducts, cables, cages, air conditioners, water tanks and extra rooms bolted over the original concrete in layers until the architecture has almost disappeared. A few old handmade neon signs in vertical Japanese kanji hang on the facade and in the passages, small and faded, belonging to tiny businesses. Steam vents from pipes and kitchen flues. Flanked on both sides by clean glass office towers, so the Hive looks like a gap in someone's teeth. A construction hoarding next door carries a KUROSE DEVELOPMENT banner showing a rendering of white towers and a plaza with a fountain. One narrow ground-floor entrance on the street side; a narrow back door onto a wet service road under the viaduct, lined with railway pillars.`;
 

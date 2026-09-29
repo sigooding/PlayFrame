@@ -3,13 +3,13 @@
 **Board, and the script.** The screenplay page for this scene is [n97-the-hive-morning.md](../screenplay/n97-the-hive-morning.md), carrying the draft verbatim.
 
 Scene: EXT. THE HIVE — MORNING
-Cast: VERA VOSS, KANEKO, KUROSE, JACK
-Lens plan: 24mm for the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack.
-Grammar: a ceremony that never starts. Rain on a white tent, a silver shovel nobody picks up, and an old man walking twenty metres without an umbrella.
+Cast: VERA VOSS, KANEKO, KUROSE, JACK, HARADA
+Lens plan: 24mm for the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack, and one insert on the screens.
+Grammar: a ceremony that never starts. Rain on a white tent, a silver shovel nobody picks up, and an old man walking twenty metres without an umbrella. Story pass 2 (29 September 2026): the morning news carries Ishida too — his smaller photograph beside Kurose's and the crawl beneath — and Harada stands on Vera's other side.
 
 ## Frame format — 26 September 2026
 
-All seven shots (148–154) are **16:9, 1920×1080, full-bleed**. The Hive follows `keys/06-the-block.jpg`, and the scene master is `s97/146-tomorrows-tokyo.jpg`: a white tent, folding chairs, a podium, the rendering banner and the ribboned silver shovel. **Kurose** is held to the scene 83 master. **Kaneko** is held to `s86/123-fifty-years.jpg`. **Jack** follows `sheets/jack.jpg`. **Vera wears costume Look D** (`sheets/vera-look-d.jpg`, from scene 97 on): a dark olive-green wool coat, a charcoal roll-neck, black trousers, black boots, and her hair loose to the shoulder. Under the director's standing rule, every Vera costume change from here on gets a new coat whose colour fits the scene. The prosecutors and the aide have no cards. These are AI-generated draft studies, not approved coverage.
+All seven shots (148–154) are **16:9, 1920×1080, full-bleed**, plus shot 304 (story pass 2) at the same format. The Hive follows `keys/06-the-block.jpg`, and the scene master is `s97/146-tomorrows-tokyo.jpg`: a white tent, folding chairs, a podium, the rendering banner and the ribboned silver shovel. **Kurose** is held to the scene 83 master. **Kaneko** is held to `s86/123-fifty-years.jpg`. **Jack** follows `sheets/jack.jpg`. **Harada** is held to `sheets/harada.jpg`. **Vera wears costume Look D** (`sheets/vera-look-d.jpg`, from scene 97 on): a dark olive-green wool coat, a charcoal roll-neck, black trousers, black boots, and her hair loose to the shoulder. Under the director's standing rule, every Vera costume change from here on gets a new coat whose colour fits the scene. The prosecutors and the aide have no cards. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -24,14 +24,14 @@ IMAGE: 146-tomorrows-tokyo.jpg
 NOTE: The scene master. The banner carries the rendering only; the TOMORROW'S TOKYO title is not lettered in this study. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon Hive in the day murk; the banner still carries the rendering only, staging and cast carried over.
 
 149. MEDIUM — 35mm, static, eye level — the same morning news.
-Across the street, the window of a small electronics shop: a wall of old CRTs and new flat screens, all showing Kurose's photograph and a newspaper front page held up to the camera. People on the pavement have stopped. Among them, under one plain black umbrella, Vera stands beside Kaneko.
-SCRIPT: "Among them, beside Kaneko, under a plain umbrella: Vera."
-CAST: Vera Voss, Kaneko
+Across the street, the window of a small electronics shop: a wall of old CRTs and new flat screens, all showing Kurose's photograph and a newspaper front page held up to the camera — and beside Kurose's, a smaller photograph, Ishida's, with a line of text crawling beneath it. People on the pavement have stopped. Among them, under one plain black umbrella, Vera stands beside Kaneko; on her other side, a press card on a lanyard and hands in her coat pockets, Harada.
+SCRIPT: "Among them, beside Kaneko, under a plain umbrella: Vera. On her other side, a press card on a lanyard, hands in her coat pockets: Harada."
+CAST: Vera Voss, Kaneko, Harada
 LIGHT: Overcast soft
 TIME: 7
 ID: neonoire-shot-149
 IMAGE: 147-the-same-morning-news.jpg
-NOTE: This is Vera's first frame in Look D. Kaneko wears a dark raincoat over her brown cardigan for the street, without her apron. A shop sign at top left carries some stray lettering. Retake 29 September 2026 — ordinary grey daylight on the street and the murk beginning at the Hive's edge; the wall of CRTs and flat screens keeps glowing exactly as boarded.
+NOTE: This is Vera's first frame in Look D. Kaneko wears a dark raincoat over her brown cardigan for the street, without her apron. A shop sign at top left carries some stray lettering. Retake 29 September 2026 — ordinary grey daylight on the street and the murk beginning at the Hive's edge; the wall of CRTs and flat screens keeps glowing exactly as boarded. Story pass 2 (29 September 2026, board update): the frame now also carries Harada on Vera's other side — grey bob, reading glasses on the lanyard card, held to `sheets/harada.jpg` — and the screens carry Ishida's smaller photograph beside Kurose's with the crawl beneath. The installed study predates the pass and shows neither Harada nor Ishida's photograph nor the crawl; all three are production checks, and the crawl has its own insert at shot 304.
 
 150. WIDE — 35mm, static, eye level — four men.
 The black car at the kerb, its rear door open. The aide holds a large umbrella over Kurose, who buttons his jacket. Between him and the podium, prosecutors in plain dark suits stand bareheaded in the rain, and the lead one holds up an identification card. The plain grey car waits beyond.
@@ -82,3 +82,15 @@ TIME: 6
 ID: neonoire-shot-154
 IMAGE: 152-the-ribbon.jpg
 NOTE: The scene ends here. Scene 98 (the rooftop of Jack's building, [n98](n98-rooftop.md)) follows. Retake 29 September 2026 — the silver shovel reads sharp, clean and cold against the murk; the soaked ribbon and the departing car held.
+
+---
+
+304. INSERT — 85mm, static, eye level — the crawl.
+Close on the shop window's screens: Kurose's photograph on the morning news, the smaller photograph beside it — Ishida — and beneath them a line of text crawling slowly: POLICE DETECTIVE FOUND DEAD. STATEMENT LEFT. The picture is never static: a newsroom moves behind the anchor, someone hands over a page.
+SCRIPT: "A line of text crawls beneath it: POLICE DETECTIVE FOUND DEAD. STATEMENT LEFT."
+CAST: —
+LIGHT: Overcast soft
+TIME: 6
+ID: neonoire-shot-304
+IMAGE: 304-the-crawl.jpg
+NOTE: STORY PASS 2, 29 September 2026 — the Ishida crawl, its own legible-text insert. The crawl reads exactly POLICE DETECTIVE FOUND DEAD. STATEMENT LEFT. and the smaller photograph is Ishida, held to `sheets/ishida.jpg`; Kurose's photograph follows the scene 83 master. The screens are never static: a real programme moves behind the news, per the standing rule. Intercut with shot 149's window; the dialogue over it is Harada's ("He left a statement. He acted alone." / "That is what the police say it says."). Placeholder study — the keyframe is still to generate.

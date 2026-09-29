@@ -277,7 +277,7 @@ export const SCENES = [
     page: "n83-chairman-s-office-kurose-development-day.md", board: "n83-kurose-office-day.md",
     cast: ["Vera Voss", "Kurose"],
     grammar: "The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. She never touches the tea.",
-    description: "Day. The fortieth floor, rain on the glass. Vera, in a plain dark coat with her father's notebook on her lap, sits across from Kurose, who pours her tea himself. Good men are very expensive. What is it you want? I wanted to see your face. It's just a face. She shows him the notebook, looks down at the model of the redevelopment, the fountain where the Hive is — it's very clean — and goes. Kurose presses a button: follow her. BOARDED — 6 shots (111–116).",
+    description: "Day. The fortieth floor, rain on the glass. Vera, in a plain dark coat with a folder of photocopies on her lap, sits across from Kurose, who pours her tea himself. Good men are very expensive. What is it you want? I wanted to see your face. It's just a face. She shows him a copied page, looks down at the model of the redevelopment, the fountain where the Hive is — it's very clean — and goes. Kurose presses a button: follow her. BOARDED — 6 shots (111–116).",
     lightingNotes: "Flat grey rain light through glass on three sides; no practicals. The white model is the brightest thing in the room.",
   },
   {
@@ -287,7 +287,7 @@ export const SCENES = [
     page: "n84-the-hive-noodle-shop-storeroom-night.md", board: "n84-hive-storeroom-night.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "One bare bulb. 24mm room, 50mm at the drawing, 35mm for the two of them, 85mm when the voice comes. Neither crosses the floor.",
-    description: "Night. Jack, grey with exhaustion, hiding in the storeroom since the newspaper. Kaneko brings Vera. On the wall, Mara's sketches: the counter from behind the curtain, the back of a head on the third stool. That's me. Three feet away. We were both wrong. He didn't blame you. A train passes; the bulb swings; in the passage outside a man murmurs into his sleeve: position. BOARDED — 4 shots (117–120).",
+    description: "Night. Jack, grey with exhaustion, hiding in the storeroom since the newspaper. Kaneko brings Vera, with Mara's cloth bag and its folded pages. On the wall, Mara's sketches: the counter from behind the curtain, the back of a head on the third stool. That's me. Three feet away. Jack owns it — where she'd be, and when — and Vera refuses to absolve him. She smooths one of Mara's floor drawings flat on the flour sack and takes the pages to Harada. He didn't blame you. A train passes; the bulb swings; in the passage outside a man murmurs into his sleeve: position. BOARDED — 4 shots (117–120).",
     lightingNotes: "A single bare tungsten bulb, swinging when the train passes; everything else falls to black.",
   },
   {
@@ -406,8 +406,8 @@ export const SCENES = [
     kind: "Standard", lighting: "Overcast soft", slugline: "INT. POLICE STATION, DETECTIVES' ROOM - MORNING #96#",
     page: "n96-police-station-detectives-room-morning.md", board: "n96-detectives-room-morning.md",
     cast: ["The Young Detective"],
-    grammar: "24mm room, 50mm on the empty drawer, and scene 7's clock camera by day.",
-    description: "Morning. Grey daylight. A cardboard box on Ishida's desk; a young detective is clearing it. He opens the bottom drawer: empty. On the wall, the clock still runs a minute fast. BOARDED — 3 shots (145–147).",
+    grammar: "24mm room, 50mm on the empty drawer and on the desk phone, and scene 7's clock camera by day.",
+    description: "Morning. Grey daylight. A cardboard box on Ishida's desk; a young detective is clearing it. He opens the bottom drawer: empty. Then the desk phone rings: Ishida is in his own car under the expressway, no marks — he left a statement. On the wall, the clock still runs a minute fast. BOARDED — 4 shots (145–147, and 303 the call).",
     lightingNotes: "Flat grey morning daylight through the windows at right, the green-white tubes half on.",
   },
   {
@@ -415,9 +415,9 @@ export const SCENES = [
     title: "Tomorrow's Tokyo", location: "EXT. THE HIVE", time: "MORNING",
     kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - MORNING #97#",
     page: "n97-the-hive-morning.md", board: "n97-the-hive-morning.md",
-    cast: ["Vera Voss", "Kaneko", "Kurose", "Jack"],
-    grammar: "24mm on the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack.",
-    description: "Rain. A white ceremonial tent in front of the Hive, the rendering banner, a silver shovel in a red-and-white ribbon. Every screen in the shop window across the street shows Kurose. He steps out of his car; four prosecutors are waiting. He walks twenty metres to a grey car without an umbrella, and Vera does not look away. Jack, alone, collar up. The ribbon goes dark in the rain. BOARDED — 7 shots (148–154). Vera in costume Look D.",
+    cast: ["Vera Voss", "Kaneko", "Kurose", "Jack", "Harada"],
+    grammar: "24mm on the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack, and one insert on the screens.",
+    description: "Rain. A white ceremonial tent in front of the Hive, the rendering banner, a silver shovel in a red-and-white ribbon. Every screen in the shop window across the street shows Kurose — and Ishida beside him, with the crawl beneath (story pass 2). He steps out of his car; four prosecutors are waiting. He walks twenty metres to a grey car without an umbrella, and Vera does not look away, Harada beside her. Jack, alone, collar up. The ribbon goes dark in the rain. BOARDED — 8 shots (148–154, and 304 the crawl). Vera in costume Look D.",
     lightingNotes: "Flat grey rainy daylight, the white tent glowing, cold TV glow in the shop window, white camera flashes.",
   },
   {
@@ -1120,6 +1120,36 @@ export const SCENES = [
     description: "The hit team tails him from the lockers; he loses them through a pachinko parlour. Why the tape goes to Okada's. BOARDED — 4 shots (293–296).",
     lightingNotes: "Sodium and rain on brick arches; pachinko light; vending-machine white on the cassette.",
   },
+  {
+    key: "s53a", id: "neonoire-s53a", n: 53, partId: "neonoire-part-feature",
+    title: "There was no car", location: "INT. TOTO SHIMBUN NEWSROOM", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. TOTO SHIMBUN NEWSROOM - DAY #53A#",
+    page: "n53a-toto-shimbun-newsroom-day.md", board: "n53a-vera-at-the-toto-shimbun.md",
+    cast: ["Vera Voss", "Harada", "The Journalist"],
+    grammar: "The scene 82 newsroom by day, three channels at once, and two women across a desk with a photograph between them. Ordinary volume, static camera; the only stillness is Vera hearing that a car was promised and never came.",
+    description: "Story pass 2, 29 September 2026. Vera goes to the Toto Shimbun alone with Kondo's card and learns he told two people about the one o'clock: Harada, and a detective who promised to keep a car nearby — there was no car. She leaves her number on the card beside his photograph. BOARDED — 3 shots (297–299).",
+    lightingNotes: "Fluorescent office grey with rain on the high windows; the three TVs do the colour.",
+  },
+  {
+    key: "s82a", id: "neonoire-s82a", n: 82, partId: "neonoire-part-feature",
+    title: "The notebook photocopied", location: "INT. TOTO SHIMBUN NEWSROOM, CORRIDOR", time: "LATER",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. TOTO SHIMBUN NEWSROOM, CORRIDOR - LATER #82A#",
+    page: "n82a-toto-shimbun-newsroom-corridor-later.md", board: "n82a-the-notebook-photocopied.md",
+    cast: ["Vera Voss", "Harada", "Jack"],
+    grammar: "Jack talking behind the glass where Vera cannot hear him, and a photocopier making her father's handwriting flash white. The evidence chain starts here: every page copied, the original into the safe, and the folder that will go to Kurose.",
+    description: "Story pass 2, 29 September 2026. Harada photocopies every page of Daniel's notebook — the original goes in the paper's safe — and hands Vera the copies with the hook: Kondo's redevelopment files, and the grey car from the Hive registered to a Kurose company. She will carry the folder into Kurose's office. BOARDED — 3 shots (300–302).",
+    lightingNotes: "Office grey; the copier's bar of light is the only moving light in the scene.",
+  },
+  {
+    key: "s99a", id: "neonoire-s99a", n: 99, partId: "neonoire-part-feature",
+    title: "The finished plaza", location: "EXT. THE PLAZA, WHERE THE HIVE WAS", time: "DAY",
+    kind: "Standard", lighting: "Natural daylight", slugline: "EXT. THE PLAZA, WHERE THE HIVE WAS - DAY #99A#",
+    page: "n99a-the-plaza-where-the-hive-was-day.md", board: "n99a-the-finished-plaza.md",
+    cast: [],
+    grammar: "Months later. Winter light, thin and clear; no rain. The model from Kurose's office built: pale paving, a running fountain, small white trees, glass on three sides, and a gardener straightening a tree that didn't need it. Overhead the same railway, and nothing trembles.",
+    description: "Story pass 2, 29 September 2026. The plaza is finished and empty, the fountain runs, the hoarding still says KUROSE DEVELOPMENT. TOMORROW'S TOKYO., and a gardener straightens a tree with one finger. The film's last look at the Hive's ground. BOARDED — 3 shots (305–307).",
+    lightingNotes: "Pale clear winter daylight; no sodium, no murk — the Hive's weather is gone with it.",
+  },
 ];
 
 /**
@@ -1214,7 +1244,7 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 233 numbered shots cover scenes 1–64 and 72–100; the other 7 scenes arrive written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 307 numbered shots cover every scene — 100 numbered plus the six inserted scenes (25A, 27A, 53A, 63A, 82A, 99A); nothing is left written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },

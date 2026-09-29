@@ -7,9 +7,9 @@ Cast: JACK, VERA VOSS
 Lens plan: 35mm at doorway height, one room after another.
 Grammar: the residents pass Vera and Jack through their own rooms, door after door. Nobody speaks, nobody looks; each door closes behind them and a flashlight finds it and stops.
 
-## Rewritten 29 September 2026 — RETAKE PENDING
+## Rewritten and retaken 29 September 2026
 
-The script pass replaced the roof, the one-metre gap and the railway walkway (the old scenes 90 and 91) with this sequence, to keep the raid quiet: the building turns against the masked men, and no second set piece follows it. The three frames below keep their numbers and IDs so nothing renumbers, but their **images still show the retired roof and gap** and must be regenerated to the new beats. Until then they are marked Needs review. The rear-wing roof stays in the Hive canon as a location; it is simply not used here.
+The script pass replaced the roof, the one-metre gap and the railway walkway (the old scenes 90 and 91) with this sequence, to keep the raid quiet: the building turns against the masked men, and no second set piece follows it. The three frames below keep their numbers, IDs and asset filenames so nothing renumbers, and their **images are regenerated to the new beats** (story pass 2 retakes, 29 September 2026): the retired roof master and the jump are overwritten in place, never restored. The rear-wing roof stays in the Hive canon as a location; it is simply not used here.
 
 ---
 
@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-132
 IMAGE: 130-the-roof.jpg
-NOTE: RETAKE PENDING — 29 September 2026 script rewrite. The image on file is the retired roof master and does not show this beat. Regenerate: the landing, the old woman (as in scene 16), a torch, Vera in Look C and Jack from the recast sheet, both soaked.
+NOTE: Retake 29 September 2026 (story pass 2): regenerated to the rewritten beat — the stair landing, the old woman's torch lit from below (her scene 16 sumo sleeper), the door held wide, Vera in Look C and Jack from the recast sheet, both soaked. The retired roof master is overwritten in place, not relabelled. CAVEAT: her hair reads a little lighter and looser than the scene 16 frames — a hair check, not a blocked frame.
 
 133. WIDE — 35mm, static, eye level — the kitchen in the dark.
 A kitchen lit by one candle: the family around the table, the father with the baseball bat across his knees, the children holding the next door wide. Vera and Jack cross it without a word.
@@ -31,7 +31,7 @@ LIGHT: Practical night
 TIME: 7
 ID: neonoire-shot-133
 IMAGE: 131-she-jumps.jpg
-NOTE: RETAKE PENDING — 29 September 2026 script rewrite. The image on file is the retired jump. Regenerate to the Hive canon: warm single-candle pool, steam, a small room, nothing futuristic.
+NOTE: Retake 29 September 2026 (story pass 2): regenerated to the rewritten beat — the candlelit kitchen, the family at the low table, the bat across the father's knees, the children holding the next door. Warm single-candle pool, steam, nothing futuristic. The retired jump frame is overwritten in place. CAVEAT: Jack and Vera read as pausing mid-crossing rather than passing through — the take must move them; a blocking check.
 
 267. WIDE — 35mm, static, eye level — door after door.
 A long view through three open doorways in a row: the dentist's chair with the dentist's finger at his lips, the girl with the violin against her chest, and beyond them the inside of a wardrobe. Vera and Jack are the smallest figures in it.
@@ -41,4 +41,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-267
 IMAGE: 132-the-gap.jpg
-NOTE: RETAKE PENDING — 29 September 2026 script rewrite. Coverage shot 267 was the gap; the image on file is that retired frame. Regenerate as the enfilade of doorways.
+NOTE: Retake 29 September 2026 (story pass 2): regenerated as the enfilade of doorways — door after door, the dentist's finger at his lips, the girl with the violin, the inside of a wardrobe, Jack and Vera the smallest figures in it. The retired gap frame is overwritten in place. CAVEAT: the girl reads younger than the scene 16 violin girl — one face for her across the two boards, a casting check.
