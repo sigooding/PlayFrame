@@ -17,32 +17,36 @@
       "direction": "Director's pick from the 29 Sept direction test: take 1, '[teasing]' for light lines. No whispers; upset lines use [crying]/[voice breaking]/[trembling voice] at speaking volume."
     },
     "MARA": {
-      "voiceId": null,
-      "status": "auditioned",
+      "voiceId": "2NE3noNVoL0UyxXHLs7w",
+      "status": "chosen",
       "designedPreviews": [
         "2NE3noNVoL0UyxXHLs7w",
         "9xXUOFmWFAxNaKLffMC1",
         "kJuTWH5OaVITSlJ0REyi"
-      ]
+      ],
+      "chosenPreview": "2NE3noNVoL0UyxXHLs7w",
+      "name": "Mara Voss - NEONOIRE"
     },
     "ISHIDA": {
       "voiceId": null,
-      "status": "auditioned",
+      "status": "picked, not yet saved (custom-voice limit)",
       "designedPreviews": [
         "i3XNU6xFFYHPOtW9QI2i",
         "OrmQTyNPGsmrVUvvyBdC",
         "6wGe4cP3pH5TRuKntC6Z"
-      ]
+      ],
+      "chosenPreview": "6wGe4cP3pH5TRuKntC6Z"
     },
     "KANEKO": {
       "voiceId": null,
-      "status": "auditioned",
+      "status": "picked, not yet saved (custom-voice limit)",
       "placeholder": true,
       "designedPreviews": [
         "vUzt8mUMt5vwWOoJ6szl",
         "1Q4xsALqzHseCDRw39xL",
         "GsbDZcPjHdTVYr5w1u8V"
-      ]
+      ],
+      "chosenPreview": "vUzt8mUMt5vwWOoJ6szl"
     },
     "KUROSE": {
       "voiceId": null,
@@ -65,35 +69,38 @@
     },
     "HARADA": {
       "voiceId": null,
-      "status": "auditioned",
+      "status": "picked, not yet saved (custom-voice limit)",
       "placeholder": true,
       "designedPreviews": [
         "oiQsVLQVbTyIiNejyPfk",
         "6w0c8yqj5i203OOtJbjn",
         "yShhBp3hW9pwBDnBfMyR"
-      ]
+      ],
+      "chosenPreview": "oiQsVLQVbTyIiNejyPfk"
     },
     "DANIEL": {
       "voiceId": null,
-      "status": "auditioned",
+      "status": "picked, not yet saved (custom-voice limit)",
       "designedPreviews": [
         "dRjKIobohlC0h0m7upOR",
         "LpigIl05iRD3HgmSI4uH",
         "oOJyrMKhBUCGET6PTTAu"
-      ]
+      ],
+      "chosenPreview": "oOJyrMKhBUCGET6PTTAu"
     },
     "SAKAI": {
       "voiceId": null,
-      "status": "auditioned",
+      "status": "picked, not yet saved (custom-voice limit)",
       "designedPreviews": [
         "y7NkiaxPRjIzeTdRhHDC",
         "5cZz3tgktjtrxNe6QqlG",
         "zmHfnRO7iFQn8Uwmx83t"
-      ]
+      ],
+      "chosenPreview": "y7NkiaxPRjIzeTdRhHDC"
     },
     "MASKED MAN": {
       "voiceId": null,
-      "status": "auditioned",
+      "status": "picked, not yet saved (custom-voice limit)",
       "notes": "The hit team leader / the man who says 'Shitsurei shimasu' (sc 1, 2, 24, 70 driver). First three previews rejected ('no good'); redesigned flat/clipped/low-affect on 29 Sept; awaiting a pick.",
       "rejectedPreviews": [
         "BikINnFYQnWn9BQmTLVD",
@@ -104,7 +111,8 @@
         "IUNPSr7i3o1XsExH6IGv",
         "i7lGfu0v4JT1k3SFaM2c",
         "IsGbbj0z3QrAWh3wpcz7"
-      ]
+      ],
+      "chosenPreview": "IUNPSr7i3o1XsExH6IGv"
     },
     "JOURNALIST": {
       "voiceId": "EEYUewEB5w5R0IPnszO5",
@@ -132,5 +140,6 @@
     "OLD TOBACCONIST",
     "BARBER"
   ],
-  "designedPreviewsNote": "Unsaved design previews are short-lived. A character becomes final only when its chosen preview is saved to the library and its voiceId filled in here."
+  "designedPreviewsNote": "Unsaved design previews are short-lived. A character becomes final only when its chosen preview is saved to the library and its voiceId filled in here.",
+  "blocker": "29 Sept 2026: the ElevenLabs workspace is at its custom-voice limit (10 of 10), so only Mara could be saved. Six picked previews (Ishida, Kaneko, Harada, Daniel, Sakai, masked man) are NOT saved; design previews are short-lived and may need regenerating (credits). To unblock: delete unused custom voices (for example 'vera no good', 'vera - alt', 'Vera - The Last Stand', 'jack the last stand') or upgrade the plan, then save the picks. Kurose and Okada are still unpicked. Director: hold voice work for now, credits are limited."
 }
