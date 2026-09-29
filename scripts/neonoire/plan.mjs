@@ -1090,6 +1090,36 @@ export const SCENES = [
     description: "Mara dies looking up at the lights; Kaneko folds her apron under her head. BOARDED — 1 shot (240).",
     lightingNotes: "Cold corridor green at floor level; warm tungsten rectangles multiplying above.",
   },
+  {
+    key: "s25a", id: "neonoire-s25a", n: 25, partId: "neonoire-part-feature",
+    title: "Breakfast", location: "INT. TINY BREAKFAST COUNTER, NEAR THE STATION", time: "MORNING",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. TINY BREAKFAST COUNTER, NEAR THE STATION - MORNING #25A#",
+    page: "n25a-tiny-breakfast-counter-near-the-station-morning.md", board: "n25a-breakfast-counter.md",
+    cast: ["Vera Voss", "Jack"],
+    grammar: "Fogged glass, a siphon flame, and a plate she didn't ask for.",
+    description: "Mara's line paid in full: thick toast, a boiled egg, cabbage nobody asked for. You sound like my sister — and his hand stops on the cup. BOARDED — 3 shots (287–289).",
+    lightingNotes: "Grey morning through fogged glass; siphon flame and a cooking-show CRT doing the warmth.",
+  },
+  {
+    key: "s27a", id: "neonoire-s27a", n: 27, partId: "neonoire-part-feature",
+    title: "She was here", location: "INT. SMALL BAR, KANDA", time: "DAY",
+    kind: "Standard", lighting: "Overcast soft", slugline: "INT. SMALL BAR, KANDA - DAY #27A#",
+    page: "n27a-small-bar-kanda-day.md", board: "n27a-she-was-here.md",
+    cast: ["Okada", "Vera Voss"],
+    grammar: "Daylight in a bar where someone died, and a woman crouching where her sister hid.",
+    description: "Vera on her own: Okada on Jack carrying things by himself, then the floor behind the counter, exactly where Mara crouched. BOARDED — 3 shots (290–292).",
+    lightingNotes: "Flat grey daylight as scene 8; the CRT stays dark.",
+  },
+  {
+    key: "s63a", id: "neonoire-s63a", n: 63, partId: "neonoire-part-feature",
+    title: "Not another day", location: "EXT. UENO, UNDER THE RAILWAY ARCHES", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "EXT. UENO, UNDER THE RAILWAY ARCHES - NIGHT #63A#",
+    page: "n63a-ueno-under-the-railway-arches-night.md", board: "n63a-ueno-arches.md",
+    cast: ["Jack"],
+    grammar: "A sedan at walking pace, a wall of steel balls, and a tape he cannot carry another day.",
+    description: "The hit team tails him from the lockers; he loses them through a pachinko parlour. Why the tape goes to Okada's. BOARDED — 4 shots (293–296).",
+    lightingNotes: "Sodium and rain on brick arches; pachinko light; vending-machine white on the cassette.",
+  },
 ];
 
 /**
@@ -1155,7 +1185,7 @@ export function featureScenes(fountain) {
     const tag = label.toLowerCase();
     const at = bare.indexOf(" - ");
     const derived = { n: mark.n, label, location: bare.slice(0, at), time: bare.slice(at + 3), slugline: mark.text, line: mark.line };
-    const hand = mark.suffix ? undefined : SCENES.find(scene => scene.n === mark.n);
+    const hand = SCENES.find(scene => scene.key === `s${tag}`);
     if (hand) {
       if (hand.location !== derived.location || hand.time !== derived.time) throw new Error(`The boarded scene ${hand.n} no longer matches ${FOUNTAIN}: the draft says "${derived.location} - ${derived.time}", the board says "${hand.location} - ${hand.time}".`);
       return { ...hand, ...derived, boarded: true };

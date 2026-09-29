@@ -58,12 +58,12 @@ validatePatch(project);
 assert.equal(project.acts.length, 1);
 assert.equal(project.scenes.length, 103, "The final screenplay's 100 numbered scenes and 3 inserted Act Two scenes (25A, 27A, 63A) all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 100, "All one hundred numbered scenes of the screenplay are boarded; the three inserted scenes are written, not boarded");
+assert.equal(boardedIds.size, 103, "All one hundred numbered scenes and the three inserted Act Two scenes (25A, 27A, 63A) are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 286;
+const EXPECTED_SHOTS = 296;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The sixty-five boarded scenes carry 205 numbered shots");
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The boarded screenplay carries 296 numbered shots");
 assert.equal(project.characters.length, 18);
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -559,7 +559,7 @@ pass("final coverage: shots 270–279 — the packed suitcase, the lie, the tiny
 
 // Letter rewrite coverage, 28 September 2026 — shots 283–286: the letter under the lamp, the
 // coward line in the storeroom, the hand over the inside pocket, and the sheet returned at dawn.
-const letterRewrite = project.frames.filter(f => shotNo(f) >= 280);
+const letterRewrite = project.frames.filter(f => shotNo(f) >= 280 && shotNo(f) <= 286);
 assert.deepEqual(letterRewrite.map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${280 + i}`), "The letter rewrite runs 280–286 with no gaps");
 for (const frame of letterRewrite) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
@@ -575,6 +575,20 @@ const returned = letterRewrite.find(f => f.id === "neonoire-shot-286");
 assert(returned.notes.includes("props/sakai-letter.jpg") && returned.notes.includes("two-hands, two-cups"), "Shot 286 returns the same sheet beside the two cups");
 assert(returned.characters.join() === castOf("Vera Voss"), "Shot 286 is Vera's insert");
 pass("letter rewrite coverage 280–286: the address, the sign, the dying man, the letter under the lamp, the coward line, the pocket and the smoothed-flat sheet");
+
+// Scenes 25A, 27A, 63A — first boarding, shots 287–296.
+const insertedBoards = project.frames.filter(f => ["s25a", "s27a", "s63a"].map(k => `neonoire-${k}`).includes(f.sceneId));
+assert.deepEqual(insertedBoards.map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${287 + i}`));
+for (const frame of insertedBoards) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
+assert(insertedBoards.find(f => f.id === "neonoire-shot-287").notes.includes("never static"), "Shot 287 keeps the breakfast CRT a cooking show");
+assert(insertedBoards.find(f => f.id === "neonoire-shot-288").notes.includes("Make her eat breakfast"), "Shot 288 pays off Mara's breakfast line");
+assert(insertedBoards.find(f => f.id === "neonoire-shot-290").notes.includes("s8/160"), "Shot 290 holds Okada's bar to scene 8");
+assert(insertedBoards.find(f => f.id === "neonoire-shot-292").notes.includes("s2/24-from-the-floor.jpg"), "Shot 292 rhymes with Mara's floor");
+assert(insertedBoards.find(f => f.id === "neonoire-shot-293").notes.includes("lights off"), "Shot 293 locks the sedan waiting dark");
+assert(insertedBoards.find(f => f.id === "neonoire-shot-295").notes.includes("no masks") && insertedBoards.find(f => f.id === "neonoire-shot-295").notes.includes("no weapons"), "Shot 295 keeps the public tail unmasked and unarmed");
+assert(insertedBoards.find(f => f.id === "neonoire-shot-296").notes.includes("SHIOHAMA"), "Shot 296 locks the cassette label");
+pass("scenes 25A, 27A and 63A boarded: ten 16:9 shots — breakfast, the almost-slip, Okada's bar, the floor where Mara hid, the sedan, the parlour, the alley and the tape");
+
 
 // Consistency retake pass, 26 September 2026: the third stool at both counters, Mr. Noda behind the counter, Jack's hands at 48, one hand-painted sign.
 const stool160 = project.frames.find(f => f.id === "neonoire-shot-160");

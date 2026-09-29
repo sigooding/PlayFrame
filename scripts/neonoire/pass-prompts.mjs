@@ -65,7 +65,7 @@ const passes = [...new Set(pending.map(shot => passOf(shot.n)))].sort((a, b) => 
 
 function shotBrief(shot) {
   const scene = shot.scene;
-  const referenceKeys = KEYS[scene.key].map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
+  const referenceKeys = (KEYS[scene.key] || []).map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
   if (scene.key === "s3") referenceKeys.push("public/images/neonoire/s3/29-apartment-block.jpg", "public/images/neonoire/s3/31-the-lit-window.jpg", "public/images/neonoire/s78/88-the-walkway.jpg");
   if (scene.key === "s6") referenceKeys.push("public/images/neonoire/s6/51-the-interview-room.jpg", "public/images/neonoire/s6/56-three-days-ago.jpg");
   if (scene.key === "s7") referenceKeys.push("public/images/neonoire/s7/63-the-detectives-room.jpg", "public/images/neonoire/s7/64-the-bottom-drawer.jpg", "public/images/neonoire/s1/18-the-flashlight.jpg", "public/images/neonoire/s5/43-the-front-counter.jpg");

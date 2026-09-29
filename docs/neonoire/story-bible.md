@@ -309,7 +309,7 @@ turn.
      Jack confirms the car was his driver.
    - **Title page:** "Contact" field removed; draft date now "September 2026".
 5. **Three new Act Two scenes** (inserted with letter-suffixed numbers so no scene or board was
-   renumbered; written, not boarded):
+   renumbered; boarded 29 September 2026 as shots 287–296):
    - **25A — breakfast counter, morning.** Pays off Mara's "Make her eat breakfast" (sc 25). Vera:
      "You sound like my sister." Was/is: "Is."
    - **27A — Okada's bar, day.** Vera alone (agency for her); Okada on why Jack "carries things by
@@ -337,7 +337,7 @@ turn.
    plastic tag (sc 25, 29, 34, 60, 63). Recommended: change the script to 87.
 3. **OPEN — Jack's office, sc 21:** street-level window with a convenience store in two frames; everywhere
    else blinds and the train.
-4. **PARTLY ADDRESSED (three new scenes, unboarded) — Runtime:** the animatic at board durations runs ~47 minutes; the middle (sc 22–62) is thinnest.
+4. **PARTLY ADDRESSED (three new scenes, now boarded as 287–296) — Runtime:** the animatic at board durations still runs short of feature length; the middle is less thin.
 5. **Outline numbering:** the early 48-scene outline numbers do not match the draft's 100 scene
    numbers. The draft's numbers are canonical.
 

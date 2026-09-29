@@ -106,8 +106,10 @@ const MOODS = {
   s23: "Red lanterns and charcoal smoke under the bridge, and an old debt spoken quietly.",
   s24: "Forty floors of rain-grey glass, a white model of tomorrow, and two men who never hurry.",
   s25: "One bulb, a cold bowl of rice, and a number stamped into old metal.",
+  s25a: "Fogged glass, a siphon flame, and a plate she didn't ask for.",
   s26: "A green train circling the city like a second hand, and a lighter passed hand to hand.",
   s27: "One small umbrella, two wet shoulders, and the city's old song on green.",
+  s27a: "Daylight in a bar where someone died, and a woman crouching where her sister hid.",
   s28: "Grey sea, grey sky, salt-scoured paint, and stone steps going down to the water.",
   s29: "A kotatsu, a dead television, and tea poured for a guest nobody wants.",
   s30: "Black fields, one dim headlight, and a sign with half its bulbs dead.",
@@ -136,6 +138,7 @@ const MOODS = {
   s61: "Two profiles, a dash glow, and a pause that is the tell.",
   s62: "The same crossing at night, the same melody, and her arm in his.",
   s63: "Grey steel rows under an arch, and twenty years of Januaries in a box.",
+  s63a: "A sedan at walking pace, a wall of steel balls, and a tape he cannot carry another day.",
   s64: "A cassette under the cash tray, behind the counter, like the girl's clip.",
   s65: "Dust on the lid, TOKYO in marker, and a dress that makes her someone else for a moment.",
   s66: "Amber, brass and a pianist in white: the warmest room in the film, and a stool kept for nobody.",
@@ -236,7 +239,9 @@ const frames = shots.map(shot => {
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
-      shot.n > PRIMARY_SHOTS
+      shot.n >= 287
+        ? "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending."
+        : shot.n > PRIMARY_SHOTS
         ? "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending."
         : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
