@@ -1,46 +1,105 @@
 # NEONOIRE — the Hive canon: one building, one look file (28 September 2026)
 
-**Scope:** no shots generated this pass beyond the five canon sheets; the retakes queue as the next generation pass (eight frames, one call each). The deliverable is [`scripts/neonoire/hive-canon-look.mjs`](../../../scripts/neonoire/hive-canon-look.mjs): the canonical geometry, the five sheet prompts with their reference chain, the shared negative prompt, and the retake queue.
+**Scope:** no shots generated this pass beyond the six canon sheets; the retakes queue as the next generation pass (thirty-four frames, one call each). The deliverable is [`scripts/neonoire/hive-canon-look.mjs`](../../../scripts/neonoire/hive-canon-look.mjs): the canonical geometry, the six sheet prompts with their reference chain, the shared negative prompt, the NIGHT and DAY look sections, the standing rules, and the retake queue.
 
 **The problem.** The Hive was boarded across five sessions from five look files, and each described the building differently: s15/184 a squat 6–7-storey block on a plaza; s59/226 a tall narrow tower on a tight street; s92/135 a nine-storey slab by a viaduct pillar; s97 a five-storey block with the railway at height; s99/156 an ordinary apartment block. Inside, s55/221 drew the counter as a white-tiled corridor with the 金子 sign ON the counter, s68/235 gave the storeroom shelving and a teal doorway, and s85/119 drew the passage three abreast where the draft says single file. The draft itself contradicts itself: "eleven storeys", yet scene 90 jumps from the roof onto the railway walkway.
 
 **The fix.** The Hive is **stepped**: an **eleven-storey front tower** on a wide modern street between glass office towers, and a **four-storey rear wing** backing directly onto the elevated railway viaduct, its flat roof level with the tracks. The noodle counter and storeroom sit at ground level in the rear wing, directly under the viaduct — which is why trains shake them. That keeps the tall facade (15), the trains overhead inside (13, 17), the service road (70), the roof-to-track jump (90) and the demolition cutting open the tower (99), and it resolves the draft's eleven-storeys-versus-railway contradiction: eleven storeys are the front tower only.
 
-## The five canon sheets
+## The look pass (28 September 2026): a new NIGHT and a new DAY
 
-Generated in this order, each finished sheet a reference for the next; installed 1920×1080 in `public/images/neonoire/sheets/`.
+The director has replaced the Hive's lighting and atmosphere wording, day and night. Geometry, rooms, the glass towers, the KUROSE DEVELOPMENT hoarding and every character, wardrobe and prop description are unchanged; this changed **only** the Hive. No other location's look file was touched. Three sections, now exported as `hiveCanon` (appended), `hiveCanonNight` and `hiveCanonDay`:
+
+**1. Added to the building's physical description (day AND night):** "The Hive has been retrofitted for sixty years: pipes, ducts, cables, cages, air conditioners, water tanks and extra rooms bolted over the original concrete in layers until the architecture has almost disappeared. A few old handmade neon signs in vertical Japanese kanji hang on the facade and in the passages, small and faded, belonging to tiny businesses. Steam vents from pipes and kitchen flues."
+
+**2. NIGHT (all night Hive shots, interior and exterior):** "Mostly darkness. Light comes in small pools: warm amber tungsten windows and bulbs against cold steel-blue haze. Steam and haze hang in every passage and catch the light in soft shafts. The neon is sparse, dim and faded — at most one or two signs visible in any frame, in muted red or pale teal, never bright. The colour comes from haze, rain and wet reflections, not from saturated light. Overall palette desaturated, near-monochrome: black, amber, steel blue. Practical lights only, strong backlight through steam, deep shadows, 35mm anamorphic film look, fine grain."
+
+**3. DAY (all daytime Hive shots, including scene 97 the ceremony and scene 99 the demolition):** "The Hive never gets real daylight. It stands in the shadow of the glass towers and the viaduct, wrapped in its own haze of steam and kitchen smoke, as if it has its own weather. By day the light is flat, milky and dim: a pale grey-ochre murk, the sky a white smear above. Inside the passages daylight arrives only as thin cold shafts through gaps overhead, full of drifting steam and dust. The neon is switched off except one old sign left burning faintly. Low contrast, desaturated, like a faded photograph. The street outside the Hive is ordinary grey daylight — the murk begins at the Hive's edge."
+
+**Rules (`hiveCanonRules`):** the counter and the storeroom stay the warmest places in the Hive, day and night — one bulb, amber tungsten, steam, almost no neon; scene 97's white tent, silver shovel and sterile rendering banner look sharp, clean and cold against the Hive's murk behind them; scene 99 is the day look with the dead neon signs still hanging from the exposed, cut-open floors in the dust; entering the Hive is a threshold, day or night — the light changes the moment characters step through the entrance; every light is small, old and belongs to someone who lives or works there — no advertising, no brands, no screens bigger than an old CRT, nothing futuristic; and no film title is ever written into a prompt.
+
+**Negative prompt** keeps every existing term and adds: "vivid colours, saturated neon, bright neon, many neon signs, rainbow lighting, colourful, holograms, flying cars, video billboards, LED screens, futuristic technology, glossy chrome, sci-fi skyline, cyberpunk, advertising, brand logos, bright sunny daylight, blue sky".
+
+## The six canon sheets
+
+Generated in order, each finished sheet a reference for the next; installed 1920×1080 in `public/images/neonoire/sheets/`. The old four-panel `hive-exterior.jpg` is superseded by the night and day sheets and is removed.
 
 | Sheet | Path | Locks |
 | --- | --- | --- |
-| Exterior master | `sheets/hive-exterior.jpg` | Four panels: night three-quarter between glass towers with the KUROSE DEVELOPMENT hoarding; day elevation; side elevation stepping down to the rear wing with the viaduct at its roofline and a train on it; the rear service road under the viaduct. |
-| Cutaway | `sheets/hive-section.jpg` | 1990s illustrated-book cutaway: both masses in section, counter with six stools and the storeroom under the viaduct, shoulder-wide passages, radio shop, dentist's curtain, main switch box, rear stair to the roof with water tanks, aerials, laundry, pigeons, the one-metre gap and low fence to the walkway. |
-| Counter | `sheets/hive-counter.jpg` | Six round-topped stools, worn dark counter, stock pot, ribbed green corrugated back wall, fluorescent tube plus bare bulb, indigo noren at the right end, shutter front, yellowed menus; the 金子 board **on the wall above the counter**; floor plan numbers the stools with 3 marked; night half-shutter. |
-| Storeroom | `sheets/hive-storeroom.jpg` | Plywood box 2.5 × 3 m, viaduct beam in the low ceiling, one bulb on a flex, flour sacks right, onion crate, futon left, sketches taped up, noren the only door; reverse sees through to the counter sign. No shelving, no teal doors. |
-| Passages and roof | `sheets/hive-passages-roof.jpg` | Shoulder-wide passage, single file, water line, bare bulbs, pipes overhead; the repairman's doorway with a dozen radios; the dark rear stair; the rear wing roof in rain with the gap and fence onto the walkway beside the tracks. |
+| Night exterior | `sheets/hive-exterior-night.jpg` | Four panels: night three-quarter in rain between the glass towers — mostly darkness, small amber pools, one or two dim faded signs, wet reflections, the KUROSE DEVELOPMENT hoarding; the entrance at night with its one small bulb and steam (the threshold); the side elevation stepping to the rear wing with the viaduct and a train's small lit windows; the rear service road with one small pool of amber. |
+| Day exterior | `sheets/hive-exterior-day.jpg` | The front elevation in flat milky grey-ochre murk under a white-smear sky, steam around the building, the signs dead but one faint; the street view with the glass towers in ordinary grey daylight and the hoarding sharp and clean; the side elevation and viaduct in murk; the entrance by day where the ordinary street light ends and the murk begins. |
+| Cutaway | `sheets/hive-section.jpg` | 1990s illustrated-book cutaway: both masses in section, counter with six stools and the storeroom under the viaduct, shoulder-wide passages, radio shop, dentist's curtain, main switch box, rear stair to the roof with water tanks, aerials, laundry, pigeons, the one-metre gap and low fence to the walkway. Small amber bulbs inside; grey-ochre murk outside. |
+| Counter | `sheets/hive-counter.jpg` | Six round-topped stools, worn dark counter, stock pot, ribbed green corrugated back wall, **one bare amber tungsten bulb — the fluorescent tube hangs unlit**, steam, indigo noren at the right end, shutter front, yellowed menus; the 金子 board **on the wall above the counter**; floor plan numbers the stools with 3 marked; night half-shutter. |
+| Storeroom | `sheets/hive-storeroom.jpg` | Plywood box 2.5 × 3 m, viaduct beam in the low ceiling, one amber bulb on a flex, flour sacks right, onion crate, futon left, sketches taped up, noren the only door; reverse sees through to the counter lit by its single amber bulb. No shelving, no teal doors. |
+| Passages and roof | `sheets/hive-passages-roof.jpg` | Shoulder-wide passage, single file, water line, small amber pools from bare bulbs, pipes overhead, haze in soft shafts; the repairman's doorway with a dozen radios and his one small bench lamp; the dark rear stair; the rear wing roof in rain with the gap and fence onto the walkway beside the tracks, the city beyond only small distant pools. |
+
+**Why the counter and storeroom sheets were regenerated too:** the director's rule is one bulb, amber tungsten, steam. The old counter sheet locked a **lit fluorescent tube** and a cool green grade as the counter's light, and the old storeroom sheet's reverse panel showed that same tube burning through the noren — both no longer match, so both were regenerated with identical geometry and the new light. The tube itself stays in the room (the draft turns it off in scene 19); it hangs unlit.
 
 ## Caveats
 
-- **Cutaway:** small labels garble in places ("BALCXINIES", "SCALE: TRCK FOOK", the dentist label prints twice). It is a geometry reference that never appears on screen; the load-bearing labels (six stools, storeroom, viaduct level with rear roof, one-metre gap) read clean.
-- **Counter:** the floor plan's stool numbers print 1, 2, M, 4, 6 — the marked stool reads M and 5 is missing. Panel 1 counts six stools; the mark is what matters. Footer placeholders ([Name], [Project Title]) are cosmetic.
-- **Storeroom:** the floor plan's top caption line is garbled; the room labels read clean. The sacks print FLOUR / KANEKO'S 25KG, consistent with the master's FLOUR print.
-- **Exterior:** the tower reads a storey tall or short between panels at this size; the count is locked by the cutaway's "FLOORS 1–11".
+- **Labels garble in places** on the cutaway and the sheet captions, as ever. The load-bearing labels read clean (six stools, storeroom, viaduct level with rear roof, one-metre gap, FLOUR sacks, the 金子 board). Footer placeholders ([Name], [Project Title]) are cosmetic. These sheets are geometry/look references that never appear on screen.
+- **Review status:** the night and day exteriors and the cutaway were read at full size and match the canon. The review pipeline served scrambled attachments mid-session, so the counter, storeroom and passages sheets were installed on their generation prompts plus dimensions and palette statistics (counter/storeroom warm, R>G>B; passages the darkest and steel-blue; the day sheet the lowest saturation) — give them a full-size look before the retake pass runs.
+- **Storey counts** still read a storey tall or short between panels at this size; the count is locked by the cutaway's "FLOORS 1–11".
+- The scene set `hiveCanonScenes` is corrected in this pass: it drops s14 (Mara's apartment), s47 (the inn's back yard) and s91 (the railway maintenance walkway) and gains s19, s20, s67, s69 and s71 — the counter night, the storeroom and the passages that are the Hive. s22 and s100 stay out: the draft itself calls scene 22 "a different place" (the brick arch counter), and scene 100 is Kaneko's new counter after the Hive is gone.
 
-## The retake queue (next generation pass, one call each)
+## The retake queue — the next pass plan (thirty-four frames, one call each)
 
-Against the sheets above, in the order the pass runs them:
+Every frame below is a Hive shot and nothing else; each carries the new look, and the eight geometry failures carry both problems. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`; interiors against their set sheets. Staging locks noted below travel with the retake. In code: `hiveCanonRetakes` (8), `hiveLookRetakes` (26), run order `hiveNextPassPlan`.
 
-| Frame | Problem |
-| --- | --- |
-| `s15/184-a-gap-in-someones-teeth.jpg` | squat block on a plaza; canon tower between glass towers |
-| `s59/226-at-the-edge-of-a-high-place.jpg` | narrow tower on a tight street; canon street is wide and modern |
-| `s92/135-below-the-viaduct.jpg` | nine-storey slab by a pillar; viaduct belongs at the rear wing's roofline |
-| `s97/146-tomorrows-tokyo.jpg` | railway at height behind a five-storey block; ceremony sits before the front tower |
-| `s99/156-cut-open.jpg` | an ordinary apartment block; the demolition must cut open the canon tower |
-| `s55/221-they-match.jpg` | white-tiled corridor, sign on the counter; canon counter, sign on the wall |
-| `s68/235-rice-balls-for-the-car.jpg` | shelving and a teal doorway; canon plywood box |
-| `s85/119-single-file.jpg` | three abreast; canon is shoulder-wide, single file |
+### DAY (21)
+
+| Shot | Frame | Problem |
+| --- | --- | --- |
+| 148 | `s97/146-tomorrows-tokyo.jpg` | five-storey block with the railway at height behind (geometry); blue pre-dawn light. Scene 97: tent, shovel and banner sharp, clean and cold against the murk |
+| 149 | `s97/147-the-same-morning-news.jpg` | shop window at the Hive's edge reads blue pre-dawn; the street is ordinary grey daylight. Props unchanged |
+| 150 | `s97/148-four-men.jpg` | ceremony reads cold blue-grey; day look is pale grey-ochre murk |
+| 151 | `s97/149-twenty-metres.jpg` | wide reads dark blue pre-dawn with the wrong facade behind the tent; carry the murk and the canon tower |
+| 152 | `s97/150-she-does-not-look-away.jpg` | close-up lit blue-grey; day look is flat, milky, dim |
+| 153 | `s97/151-collar-up.jpg` | blue-grey pre-dawn on the street; ordinary grey daylight outside the murk |
+| 154 | `s97/152-the-ribbon.jpg` | shovel against dark rain; scene 97 rule: sharp, clean and cold against the murk behind |
+| 158 | `s99/156-cut-open.jpg` | ordinary five-storey apartment block (geometry); plain overcast. Day murk; dead neon signs still hang from the cut-open floors in the dust |
+| 159 | `s99/157-the-sign.jpg` | crowd reads plain overcast; grey-ochre murk like a faded photograph, dead neon behind |
+| 186 | `s15/184-a-gap-in-someones-teeth.jpg` | squat block on a plaza (geometry); blue-grey daylight |
+| 187 | `s15/185-then-he-goes-in.jpg` | bright lit signage at the entrance; neon off but one faint sign. Entering is a threshold |
+| 188 | `s16/186-everybody-sees-him.jpg` | passages lit like a market; day passages are thin cold shafts with drifting steam and dust |
+| 189 | `s17/187-you-got-old.jpg` | lit fluorescent tube, green cast; the counter is one amber bulb, steam |
+| 190 | `s17/188-something-moves.jpg` | fluorescent and cool grade over the counter |
+| 223 | `s55/221-they-match.jpg` | white-tiled corridor, sign on the counter (geometry); even modern light. Keep the canon counter, sign on the wall |
+| 225 | `s56/223-the-third-stool.jpg` | lit fluorescent; one amber bulb. **Keep the third-stool staging** — Vera third of six, two empty to her left, 金子 on the wall |
+| 227 | `s58/225-bring-her.jpg` | fluorescent and cool grade. **Keep the charcoal-coat third-stool motif** |
+| 228 | `s59/226-at-the-edge-of-a-high-place.jpg` | narrow tower on a tight street (geometry); bright wet street light |
+| 250 | `s16/248-exactly-the-drawing.jpg` | warm lamp rows and shop signs by day; thin cold shafts, one faint sign |
+| 253 | `s16/249-the-chair.jpg` | warm lamp rows at the dentist's chair; milky dim murk, thin cold shafts |
+| 266 | `s56/224-stool-three.jpg` | fluorescent, cool green grade. **Keep Vera third from the left** |
+
+### NIGHT (13)
+
+| Shot | Frame | Problem |
+| --- | --- | --- |
+| 121 | `s85/119-single-file.jpg` | three abreast (geometry); strung lamps and green signage. Canon: shoulder-wide single file, small amber pools, haze shafts |
+| 122 | `s85/120-the-hive-is-watching.jpg` | lit lamps and door lights, green cast; mostly darkness, one or two dim signs |
+| 123 | `s86/121-the-shutter.jpg` | bright fluorescent tube at the counter; one amber bulb, steam. Keep Kaneko's staging |
+| 126 | `s87/124-the-repairman.jpg` | saturated teal grade, blue smoke; desaturated near-monochrome. Keep the repairman exactly as `sheets/repairman.jpg` holds him |
+| 132 | `s90/130-the-roof.jpg` | saturated green city; steel-blue haze, distant light only small pools |
+| 133 | `s90/131-she-jumps.jpg` | saturated green city behind the jump |
+| 137 | `s92/135-below-the-viaduct.jpg` | nine-storey slab by a pillar (geometry); the Hive glows with hundreds of bright windows |
+| 138 | `s92/136-until-us.jpg` | hundreds of lit windows; mostly darkness, small amber pools |
+| 237 | `s68/235-rice-balls-for-the-car.jpg` | shelving and a teal doorway (geometry); cool green grade. Canon plywood box, one amber bulb |
+| 238 | `s69/236-vera-would-love-this.jpg` | green-lit passage around a lit CRT shopfront; amber pools against steel-blue haze |
+| 240 | `s71/238-everyones-awake.jpg` | lantern rows and green signage; small pools, haze shafts, sparse dim neon |
+| 267 | `s90/132-the-gap.jpg` | saturated green city behind the gap |
+| 279 | `s69/279-her-sisters-smile.jpg` | green glow behind Vera; black, amber, steel blue |
+
+### Already on canon — no retake
+
+The warm one-bulb storeroom and counter frames already match the new rule and stay: night s84/115–118, s13/179, 180, 181 and 247, s19/190, s20/191, 192 and 284, s25/200 and 201, s60/227, s86/122 and 123, s87/125, and the darkness-and-flashlight frames s88/126, 127, s89/128 and 129; the service road s67/234 and s70/237 (small sodium pools, wet reflections, one muted red sign); day s57/224-three-feet-away and s58/276-slides-down-the-wall.
+
+### Outside the Hive — untouched
+
+s91 (the railway maintenance walkway is railway ground), s22 (the brick arch counter — "a different place"), s100 (Kaneko's new counter) and s14 (Mara's apartment). Nothing outside the Hive is retaken.
 
 ## Also in this pass
 
-- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (prompts, install paths, reference chains), `hiveCanonRetakes`, `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
-- `scripts/verify-neonoire.mjs` checks the five sheets are 1920×1080 and that all eight queued frames exist.
+- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveCanonRetakes` (8 geometry), `hiveLookRetakes` (26 look), `hiveNextPassPlan` (34, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
+- The Hive look files (`hive-look`, `hive-first-look`, `hive-morning-look`, `escape-look`, `ending-look`'s demolition, `confrontation-look`'s storeroom) now defer to the canon for lighting and atmosphere and carry no other change; every verify-locked continuity substring survives.
+- `scripts/verify-neonoire.mjs` checks the six sheets are 1920×1080, that all thirty-four queued frames exist and queue once with a day or night tag, and that the canon text, rules and negative terms travel with the look file.
