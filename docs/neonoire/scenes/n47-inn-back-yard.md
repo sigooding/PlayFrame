@@ -21,5 +21,5 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-224
 IMAGE: 222-mud-and-impacts.jpg
-NOTE: Moderation-safe composition per passes/scenes-46-55.md: no weapons in frame, impacts and consequence only. The collapsed wheel and the mud line carry the gunfire.
+NOTE: Moderation-safe composition per passes/scenes-46-55.md: no weapons in frame, impacts and consequence only. The collapsed wheel and the mud line carry the gunfire. Retake 29 September 2026 — the masks corrected to the locked costume: black lower-face mask under a dark knit cap, never white, never a full balaclava; staging, palette and props held to the previous frame. Costume reference: sheets/masked-man.jpg.
 

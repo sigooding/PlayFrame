@@ -31,4 +31,4 @@ LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-177
 IMAGE: 175-the-curtain-gap.jpg
-NOTE: Generated from shot 175 with the inn key art. The study shows about ten men; the script says eight.
+NOTE: Generated from shot 175 with the inn key art. The study shows about ten men; the script says eight. Retake 29 September 2026 — the masks corrected to the locked costume: black lower-face mask under a dark knit cap, never white, never a full balaclava; staging, palette and props held to the previous frame. Costume reference: sheets/masked-man.jpg.

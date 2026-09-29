@@ -23,7 +23,7 @@ import { ishidaEndImages } from "./neonoire/ishida-end-look.mjs";
 import { hiveMorningImages, veraLookDSheet } from "./neonoire/hive-morning-look.mjs";
 import { endingImages, veraLookESheet } from "./neonoire/ending-look.mjs";
 import { kandaReturnImages } from "./neonoire/kanda-return-look.mjs";
-import { innImages, innStairFrames } from "./neonoire/inn-look.mjs";
+import { innImages, innStairFrames, innWarmLook } from "./neonoire/inn-look.mjs";
 import { hiveFirstImages } from "./neonoire/hive-first-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
 
@@ -620,6 +620,16 @@ for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repair
   assert.deepEqual(jpegDimensions(`/images/neonoire/sheets/${sheet}.jpg`), [1920, 1080], `${sheet}'s identity sheet is 16:9`);
 }
 pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective, the masked man and Vera's Looks B and F carry identity sheets");
+
+// The roadside inn style sheet and the mask rule (29 September 2026): the inn carries a four-panel
+// style sheet, and the masked men's costume is locked to the black lower-face mask — at the inn too.
+assert.deepEqual(jpegDimensions("/images/neonoire/sheets/roadside-inn.jpg"), [1920, 1080], "the roadside inn style sheet is 16:9");
+assert(innWarmLook.includes("sheets/roadside-inn.jpg") && innWarmLook.includes("never white masks") && innWarmLook.includes("sheets/masked-man.jpg"), "The inn look carries the style sheet and the black lower-face mask rule");
+for (const board of ["n39-roadside-inn-jacks-room.md", "n40-roadside-inn-lobby.md", "n41-roadside-inn-upstairs-corridor.md", "n45-roadside-inn-lobby-dark.md", "n47-inn-back-yard.md", "n49-eight-in-the-headlights.md"]) {
+  const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
+  assert(text.includes("black lower-face mask under a dark knit cap"), `${board} records the mask retake`);
+}
+pass("roadside inn: the style sheet is installed and the masked men's black lower-face masks are locked at the inn");
 
 // Looks-and-props pass, 26 September 2026: the legible-text props carry clean masters beside the cassette label and the notebook cover.
 for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-tag", "kaneko-sign-board", "locker-room-sign", "service-road-852", "sakai-letter"]) {

@@ -52,3 +52,39 @@ Every image is now checked before install for vehicle count, completeness and di
 - **No generation was left** this session.
 
 **The next session** should board scenes 13–30 in order, with the stair motif in scenes 15, 16, 21 and 28. Or it could finish the inn (30, 33, 35–37, 42–49) and the dawn (50).
+
+
+## Style sheet and mask rule (29 September 2026)
+
+**The style sheet.** The inn had a studio key (`keys/09-the-roadside-inn.jpg`) and its look file,
+but no canon sheet in `sheets/`. It has one now: `public/images/neonoire/sheets/roadside-inn.jpg`,
+1920×1080, four labelled panels — the exterior as the WARM REFUGE (tungsten amber windows, the
+beer vending machine, the pickup crooked behind), the lobby warm (pink payphone, keyring case,
+CRT baseball, wooden counter, the steep stair), the stairs from the low level static square to
+the flight, and the same exterior as THE COLD (steel blue and blue-black, xenon-white headlight
+beams with the rain visible only inside them, every warm light dead). Panels: the sheet is
+people-free on purpose, so it works as a set reference for any shot. `innBase` in
+`scripts/neonoire/inn-look.mjs` now points every inn prompt at it.
+
+**The mask rule (director's confirmation).** The masked men at the inn are the same crew as
+scene 1: dark knit caps over **black lower-face masks** covering nose and mouth, eyes visible —
+never white facemasks, never full balaclavas, never a face under the mask. The costume is locked
+by `sheets/masked-man.jpg` and now written into `innBase` as an explicit ban. Six frames where
+the masks read wrong (white or balaclava in the glare) were retaken the same day — masks only,
+everything else held to the previous frame:
+
+| Shot | Frame | Notes |
+| --- | --- | --- |
+| 177 | `s39/175-the-curtain-gap.jpg` | the POV through the curtain: sedans in an arc, the men among the cars |
+| 178 | `s40/176-were-closed.jpg` | the two in the headlight glare (the balaclava reading, now corrected) |
+| 179 | `s41/177-boots-below.jpg` | the man climbing the stairs |
+| 180 | `s45/178-thank-you-very-much.jpg` | the man spinning toward the corridor |
+| 224 | `s47/222-mud-and-impacts.jpg` | the man coming round the building |
+| 217 | `s49/215-no-need-to-chase.jpg` | the eight in the headlights |
+
+Review sheets: `public/images/neonoire/reviews/roadside-inn-sheet-review.jpg` (the studio key
+beside the new sheet) and `public/images/neonoire/reviews/roadside-inn-masks.jpg` (the six
+retaken frames). Caveats: all seven images are verified at 1920×1080; the session's image viewer
+is unreliable, so give both review sheets a full-size look — in particular that the masks read
+black and lower-face in the glare frames. Labels on the style sheet garble in places, as ever.
+`verify-neonoire.mjs` locks the sheet at 16:9, the `innBase` guard wording and the six board notes.

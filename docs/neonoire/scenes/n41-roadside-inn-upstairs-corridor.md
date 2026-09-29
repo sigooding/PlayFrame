@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 6
 ID: neonoire-shot-179
 IMAGE: 177-boots-below.jpg
-NOTE: THE STAIR FRAME REPEATED: the refuge becomes a trap, where something coming up from below means danger. Generated from shot 173. The paper screens are shot 261.
+NOTE: THE STAIR FRAME REPEATED: the refuge becomes a trap, where something coming up from below means danger. Generated from shot 173. The paper screens are shot 261. Retake 29 September 2026 — the masks corrected to the locked costume: black lower-face mask under a dark knit cap, never white, never a full balaclava; staging, palette and props held to the previous frame. Costume reference: sheets/masked-man.jpg.
 
 ---
 
