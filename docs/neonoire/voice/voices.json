@@ -73,20 +73,17 @@
       "name": "Kaneko - NEONOIRE"
     },
     "KUROSE": {
-      "voiceId": null,
-      "status": "auditioned",
-      "designedPreviews": [
-        "DUnv1SEk7l8x971Tl7Wj",
-        "w5a8qAlS2I18T7LZ0pmo",
-        "dJgEMFsn0Yl0fMOjyzv6"
-      ],
+      "voiceId": "N7WASm2wYJmE5JmsJPLJ",
+      "status": "saved",
       "design": {
-        "description": "Male, 70s, wealthy chairman, perfect old-fashioned English. Calm, courteous, silky, never has to hurry or raise his voice; faintly bored patience with a chill underneath. Silver-haired elegance in sound.",
+        "description": "Elderly Japanese man in his 70s speaking English with a natural Japanese accent. Real and understated, not theatrical, not an announcer, no movie-trailer or old radio drama delivery. Conversational, slightly gravelly, dry and matter-of-fact. Quiet certainty of a very powerful man who never needs to raise his voice or perform. Steady mid-low pitch, short unhurried phrases, natural pauses.",
         "sampleText": "Let the detective look. He was always very good at finding things. It's what he does afterwards that he's bad at. Your father was a good man, Miss Voss. I mean that sincerely. Good men are very expensive.",
         "language": "en",
         "designModel": "eleven_ttv_v3",
-        "seedFixed": false
-      }
+        "seedFixed": false,
+        "guidanceScale": 6
+      },
+      "designNote": "Picked take 3 of the third round (earlier rounds sounded like an old TV show / an announcer)."
     },
     "OKADA": {
       "voiceId": "MhuU9Z2dyWAG6ZjuuKRg",

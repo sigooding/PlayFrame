@@ -7900,7 +7900,7 @@
       "lens": "35mm",
       "lighting": "Low key",
       "style": "neonoire",
-      "duration": 16,
+      "duration": 28,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -7922,6 +7922,16 @@
           "model": "eleven_v4"
         },
         {
+          "id": "s24-kurose-and",
+          "character": "KUROSE",
+          "text": "And?",
+          "src": "/audio/neonoire/s24/201-kurose-and.mp3",
+          "offset": 6.7,
+          "duration": 0.84,
+          "voice": "N7WASm2wYJmE5JmsJPLJ",
+          "model": "eleven_v4"
+        },
+        {
           "id": "s24-maskedman-we-can-t-follow-him-in",
           "character": "MASKED MAN",
           "text": "We can't follow him in there. Too many people. Too many passages. They see everyone.",
@@ -7929,6 +7939,26 @@
           "offset": 8.46,
           "duration": 5.72,
           "voice": "IUNPSr7i3o1XsExH6IGv",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s24-kurose-then-don-t-follow-him-in",
+          "character": "KUROSE",
+          "text": "Then don't follow him in there.",
+          "src": "/audio/neonoire/s24/201-kurose-then-don-t-follow-him-in.mp3",
+          "offset": 14.8,
+          "duration": 2.19,
+          "voice": "N7WASm2wYJmE5JmsJPLJ",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s24-kurose-let-the-detective-look-he-was",
+          "character": "KUROSE",
+          "text": "Let the detective look. He was always very good at finding things. It's what he does afterwards that he's bad at.",
+          "src": "/audio/neonoire/s24/201-kurose-let-the-detective-look-he-was.mp3",
+          "offset": 17.8,
+          "duration": 8.91,
+          "voice": "N7WASm2wYJmE5JmsJPLJ",
           "model": "eleven_v4"
         }
       ]
