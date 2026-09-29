@@ -1,6 +1,6 @@
 # Voice plan — scenes 1 and 2 (the cold open)
 
-For review **before** any credits are spent. Nothing here is recorded yet. Script unchanged; Japanese-language lines are voiced in English for now. Frames are in story order (the coverage shots #280–282 play where their lines are, not at the end).
+For review **before** any credits are spent. Nothing here is recorded yet. **Image caveat:** scenes 1–2 have open continuity problems (see `passes/cold-open-image-review-2026-09-29.md`); the animatic will show them until the retakes happen. Script unchanged; Japanese-language lines are voiced in English for now. Frames are in story order (the coverage shots #280–282 play where their lines are, not at the end).
 
 **Voices needed:** MARA, OLD MAN (= SAKAI), MASKED MAN, JOURNALIST — all four still waiting for a choice from the auditions. Jack and Vera do not speak in these scenes.
 

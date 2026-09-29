@@ -53,7 +53,7 @@ Keep the source of truth in the repo: takes in `public/audio/`, timings in `mani
 - Keep the script unchanged for voice work. Japanese-language lines are voiced in **English** for now, and Jack's too; characters who speak only Japanese use English placeholder voices.
 - A voice is final only when its ID is in `voices.json`. Designed previews are short-lived and must be saved to the ElevenLabs library first.
 - Never store a take only as a link. Ingest it.
-- Recorded so far (Jack and Vera only): scene 62 (9 lines) and scene 74 (7 lines) in `eleven_v4`, about 714 credits including the four retakes of 30 September that removed the whispers; plus two older-model pilot lines in scene 98 (redo in v4).
+- Recorded so far (Jack and Vera only): scene 62 (9 lines) and scene 74 (7 lines) in `eleven_v4`, about 714 credits including the four retakes (29 September) that removed the whispers; plus two older-model pilot lines in scene 98 (redo in v4).
 - **No whispering.** Whispers and `[quietly]` read badly in these voices. Where a line is upset, use `[crying]`, `[voice breaking]` or `[trembling voice]` at speaking volume; where it is careful, leave it plain.
 - **Cost:** every model is about 1 credit per character; the bracketed emotion tags count as characters. So write plain lines with punctuation, and add a short tag (`[whispers]`, `[crying]`, `[voice breaking]`) only where the performance needs it. Estimate first (`estimate_only`), one take per line.
 - `text` in the manifest is the script line as spoken; `prompt` is the tagged text sent to ElevenLabs.
