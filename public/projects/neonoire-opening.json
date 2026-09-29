@@ -2746,7 +2746,19 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 4; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Room follows appartment.png, with the corrected master at keys/04-veras-apartment.jpg. NO paper pendant, ceiling lantern, hanging cord or ghost reflection. Keep the single straight aluminium sliding-door mullion, rain-streaked upper glass, frosted lower panes, beige curtains and white sheers. Left: wooden louvred sideboard, brown-shaded table lamp, black stereo/cream tuner and one brass family frame. Right: wood-cased CRT with silver bezel, two right-hand dials, black stand, small radio and exactly two straight aerial rods; the weather broadcast stays on. Muted amber/olive practical light, cool grey-blue rain outside, fine 35mm grain. Low wooden table: exactly two ivory cups without saucers, Vera's left cup holds cold tea, opposite right cup is empty; one black smartphone stays face-up on the table throughout the speakerphone call. One bone-dry closed pale-blue umbrella, one curved brown wooden handle, in an off-white cylindrical stand left of the sliding door. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair, soft fringe, pale blue eyes, cream high-neck knit, navy trousers, black watch; charcoal wool coat only when leaving in shot 42, with brown boots. Stand empty once she takes the umbrella. Family photograph follows photo.png and corrected s4/35-the-photograph.jpg: straight brass frame, Daniel in grey suit in centre, laughing four-year-old Mara in pink on image left, serious nine-year-old Vera in cream/navy on image right, natural joined hands, Tokyo noodle shop behind. Do not substitute adult sisters or put adult Mara's wet hair/red-bird clip into the childhood photo. Keep the room and props fixed between angles; no extra handles, cups, people, limbs, captions or watermarks.\n\nThe greeting is cheerful — recorded in a better week. Play Vera hearing the difference between that voice and the last three days.\n\nSCRIPT — the draft's own words for this shot:\n\"It's Mara. You know what to do.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 31 — ten keyframes at a time, in screenplay order. Shot 37 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 4; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Room follows appartment.png, with the corrected master at keys/04-veras-apartment.jpg. NO paper pendant, ceiling lantern, hanging cord or ghost reflection. Keep the single straight aluminium sliding-door mullion, rain-streaked upper glass, frosted lower panes, beige curtains and white sheers. Left: wooden louvred sideboard, brown-shaded table lamp, black stereo/cream tuner and one brass family frame. Right: wood-cased CRT with silver bezel, two right-hand dials, black stand, small radio and exactly two straight aerial rods; the weather broadcast stays on. Muted amber/olive practical light, cool grey-blue rain outside, fine 35mm grain. Low wooden table: exactly two ivory cups without saucers, Vera's left cup holds cold tea, opposite right cup is empty; one black smartphone stays face-up on the table throughout the speakerphone call. One bone-dry closed pale-blue umbrella, one curved brown wooden handle, in an off-white cylindrical stand left of the sliding door. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair, soft fringe, pale blue eyes, cream high-neck knit, navy trousers, black watch; charcoal wool coat only when leaving in shot 42, with brown boots. Stand empty once she takes the umbrella. Family photograph follows photo.png and corrected s4/35-the-photograph.jpg: straight brass frame, Daniel in grey suit in centre, laughing four-year-old Mara in pink on image left, serious nine-year-old Vera in cream/navy on image right, natural joined hands, Tokyo noodle shop behind. Do not substitute adult sisters or put adult Mara's wet hair/red-bird clip into the childhood photo. Keep the room and props fixed between angles; no extra handles, cups, people, limbs, captions or watermarks.\n\nThe greeting is cheerful — recorded in a better week. Play Vera hearing the difference between that voice and the last three days.\n\nSCRIPT — the draft's own words for this shot:\n\"It's Mara. You know what to do.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 31 — ten keyframes at a time, in screenplay order. Shot 37 of 307.",
+      "audio": [
+        {
+          "id": "s4-mara-bright-it-s-mara-you-know",
+          "character": "MARA",
+          "text": "It's Mara. You know what to do.",
+          "src": "/audio/neonoire/s4/37-mara-bright-it-s-mara-you-know.mp3",
+          "offset": 1,
+          "duration": 2.51,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-38",
@@ -2782,7 +2794,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 14,
+      "duration": 21,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -2790,7 +2802,39 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 4; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Room follows appartment.png, with the corrected master at keys/04-veras-apartment.jpg. NO paper pendant, ceiling lantern, hanging cord or ghost reflection. Keep the single straight aluminium sliding-door mullion, rain-streaked upper glass, frosted lower panes, beige curtains and white sheers. Left: wooden louvred sideboard, brown-shaded table lamp, black stereo/cream tuner and one brass family frame. Right: wood-cased CRT with silver bezel, two right-hand dials, black stand, small radio and exactly two straight aerial rods; the weather broadcast stays on. Muted amber/olive practical light, cool grey-blue rain outside, fine 35mm grain. Low wooden table: exactly two ivory cups without saucers, Vera's left cup holds cold tea, opposite right cup is empty; one black smartphone stays face-up on the table throughout the speakerphone call. One bone-dry closed pale-blue umbrella, one curved brown wooden handle, in an off-white cylindrical stand left of the sliding door. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair, soft fringe, pale blue eyes, cream high-neck knit, navy trousers, black watch; charcoal wool coat only when leaving in shot 42, with brown boots. Stand empty once she takes the umbrella. Family photograph follows photo.png and corrected s4/35-the-photograph.jpg: straight brass frame, Daniel in grey suit in centre, laughing four-year-old Mara in pink on image left, serious nine-year-old Vera in cream/navy on image right, natural joined hands, Tokyo noodle shop behind. Do not substitute adult sisters or put adult Mara's wet hair/red-bird clip into the childhood photo. Keep the room and props fixed between angles; no extra handles, cups, people, limbs, captions or watermarks.\n\nThe apology is the scene's engine: the first of the film's two sisters is asking, the second is running from a doorway in Kanda. Keep the performance small and unsentimental.\n\nSCRIPT — the draft's own words for this shot:\n\"You left your umbrella. You'll get soaked.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 31 — ten keyframes at a time, in screenplay order. Shot 39 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 4; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Room follows appartment.png, with the corrected master at keys/04-veras-apartment.jpg. NO paper pendant, ceiling lantern, hanging cord or ghost reflection. Keep the single straight aluminium sliding-door mullion, rain-streaked upper glass, frosted lower panes, beige curtains and white sheers. Left: wooden louvred sideboard, brown-shaded table lamp, black stereo/cream tuner and one brass family frame. Right: wood-cased CRT with silver bezel, two right-hand dials, black stand, small radio and exactly two straight aerial rods; the weather broadcast stays on. Muted amber/olive practical light, cool grey-blue rain outside, fine 35mm grain. Low wooden table: exactly two ivory cups without saucers, Vera's left cup holds cold tea, opposite right cup is empty; one black smartphone stays face-up on the table throughout the speakerphone call. One bone-dry closed pale-blue umbrella, one curved brown wooden handle, in an off-white cylindrical stand left of the sliding door. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair, soft fringe, pale blue eyes, cream high-neck knit, navy trousers, black watch; charcoal wool coat only when leaving in shot 42, with brown boots. Stand empty once she takes the umbrella. Family photograph follows photo.png and corrected s4/35-the-photograph.jpg: straight brass frame, Daniel in grey suit in centre, laughing four-year-old Mara in pink on image left, serious nine-year-old Vera in cream/navy on image right, natural joined hands, Tokyo noodle shop behind. Do not substitute adult sisters or put adult Mara's wet hair/red-bird clip into the childhood photo. Keep the room and props fixed between angles; no extra handles, cups, people, limbs, captions or watermarks.\n\nThe apology is the scene's engine: the first of the film's two sisters is asking, the second is running from a doorway in Kanda. Keep the performance small and unsentimental.\n\nSCRIPT — the draft's own words for this shot:\n\"You left your umbrella. You'll get soaked.\"\n\nGrey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 4 of 31 — ten keyframes at a time, in screenplay order. Shot 39 of 307.",
+      "audio": [
+        {
+          "id": "s4-vera-tired-it-s-me-again-i",
+          "character": "VERA",
+          "text": "It's me again. I'm not angry anymore. I wasn't really angry then, either. Whatever that man wants, it doesn't matter. I just —",
+          "src": "/audio/neonoire/s4/39-vera-tired-it-s-me-again-i.mp3",
+          "offset": 0.5,
+          "duration": 9.87,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s4-vera-voice-breaking-you-left-your-umbrella",
+          "character": "VERA",
+          "text": "You left your umbrella. You'll get soaked.",
+          "src": "/audio/neonoire/s4/39-vera-voice-breaking-you-left-your-umbrella.mp3",
+          "offset": 11,
+          "duration": 3.4,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s4-vera-pleading-just-call-me-you-don",
+          "character": "VERA",
+          "text": "Just call me. You don't have to say anything. Just call, so I know.",
+          "src": "/audio/neonoire/s4/39-vera-pleading-just-call-me-you-don.mp3",
+          "offset": 14.9,
+          "duration": 5.49,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-40",
@@ -2910,7 +2954,7 @@
       "lens": "50mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 12,
+      "duration": 14,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -2919,7 +2963,49 @@
         "neonoire-vera",
         "neonoire-young-officer"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 5; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.\n\nNothing about him is sinister yet; he is a young man at the end of a shift. The change in him arrives only after the monitor shows him the name.\n\nSCRIPT — the draft's own words for this shot:\n\"A YOUNG OFFICER takes her details with polite boredom.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 31 — ten keyframes at a time, in screenplay order. Shot 45 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 5; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.\n\nNothing about him is sinister yet; he is a young man at the end of a shift. The change in him arrives only after the monitor shows him the name.\n\nSCRIPT — the draft's own words for this shot:\n\"A YOUNG OFFICER takes her details with polite boredom.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 31 — ten keyframes at a time, in screenplay order. Shot 45 of 307.",
+      "audio": [
+        {
+          "id": "s5-youngofficer-your-sister-s-age",
+          "character": "YOUNG OFFICER",
+          "text": "Your sister's age?",
+          "src": "/audio/neonoire/s5/45-youngofficer-your-sister-s-age.mp3",
+          "offset": 1,
+          "duration": 1.41,
+          "voice": "rexcV2ceXKmVM3IFUBVg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s5-vera-twenty-four",
+          "character": "VERA",
+          "text": "Twenty-four.",
+          "src": "/audio/neonoire/s5/45-vera-twenty-four.mp3",
+          "offset": 2.9,
+          "duration": 1.07,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s5-youngofficer-adults-sometimes-go-away-for-a",
+          "character": "YOUNG OFFICER",
+          "text": "Adults sometimes go away for a few days. Especially foreigners. It's usually —",
+          "src": "/audio/neonoire/s5/45-youngofficer-adults-sometimes-go-away-for-a.mp3",
+          "offset": 4.5,
+          "duration": 5.72,
+          "voice": "rexcV2ceXKmVM3IFUBVg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s5-vera-firmly-she-doesn-t-not-without",
+          "character": "VERA",
+          "text": "She doesn't. Not without telling me.",
+          "src": "/audio/neonoire/s5/45-vera-firmly-she-doesn-t-not-without.mp3",
+          "offset": 10.7,
+          "duration": 2.69,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-46",
@@ -2985,7 +3071,19 @@
       "characters": [
         "neonoire-young-officer"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 5; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.\n\nTurned away from her, three-quarter to camera, the words half-audible in the mix — the audience gets exactly as much as Vera does.\n\nSCRIPT — the draft's own words for this shot:\n\"Yes. That name. Yes -- the sister is here now.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 31 — ten keyframes at a time, in screenplay order. Shot 48 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 5; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.\n\nTurned away from her, three-quarter to camera, the words half-audible in the mix — the audience gets exactly as much as Vera does.\n\nSCRIPT — the draft's own words for this shot:\n\"Yes. That name. Yes -- the sister is here now.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 31 — ten keyframes at a time, in screenplay order. Shot 48 of 307.",
+      "audio": [
+        {
+          "id": "s5-youngofficer-guarded-yes-that-name-yes-the",
+          "character": "YOUNG OFFICER",
+          "text": "Yes. That name. Yes — the sister is here now.",
+          "src": "/audio/neonoire/s5/48-youngofficer-guarded-yes-that-name-yes-the.mp3",
+          "offset": 1,
+          "duration": 4.52,
+          "voice": "rexcV2ceXKmVM3IFUBVg",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-49",
@@ -3030,7 +3128,19 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 5; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.\n\nEnd the scene on her waiting and the clock above her — a minute fast, and nobody in the film ever mentions it.\n\nSCRIPT — the draft's own words for this shot:\n\"Someone will be right with you.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 31 — ten keyframes at a time, in screenplay order. Shot 50 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 5; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Location follows police_station.png (station area only; exclude the desktop): cream-panelled dark wooden counter, aluminium/glass service partitions, faded Japanese posters, clock above the service opening, green-white fluorescent tubes, flat monitor to the right of the opening and old cream fax/copier to its right. Vera matches sheets/vera.jpg: dry shoulder-length ash-blonde hair with soft fringe, pale blue eyes, charcoal wool coat, cream high-neck knit, navy trousers, brown ankle boots. No olive jacket or jeans. Her closed pale-blue umbrella has a curved brown wooden handle; it drips onto the linoleum and stays with her, below the crop in close-ups. The officer matches sheets/young-officer.jpg: young Japanese man, clean-shaven, short side-parted black hair, navy uniform jacket with brass buttons and insignia, white shirt, black tie, no cap. He stays behind the service hatch throughout. Keep the same faces, wardrobe, umbrella, room layout and restrained fluorescent film grade across shots 43–50. The monitor insert must read MARA VOSS; no captions or watermarks.\n\nEnd the scene on her waiting and the clock above her — a minute fast, and nobody in the film ever mentions it.\n\nSCRIPT — the draft's own words for this shot:\n\"Someone will be right with you.\"\n\nInstitutional green-white fluorescent with one tube flickering. Everything in the room is a decade out of step — faded posters, an old fax machine beside a new flat monitor, a wall clock that runs a minute fast. Vera speaks Japanese: fluent, careful, slightly formal.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 5 of 31 — ten keyframes at a time, in screenplay order. Shot 50 of 307.",
+      "audio": [
+        {
+          "id": "s5-youngofficer-politely-someone-will-be-right-with",
+          "character": "YOUNG OFFICER",
+          "text": "Someone will be right with you.",
+          "src": "/audio/neonoire/s5/50-youngofficer-politely-someone-will-be-right-with.mp3",
+          "offset": 0.5,
+          "duration": 1.88,
+          "voice": "rexcV2ceXKmVM3IFUBVg",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-51",
@@ -3115,7 +3225,19 @@
       "characters": [
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nAmerican-accented English from a Japanese detective in his fifties — cast for warmth, not menace. No push-in, no music.\n\nSCRIPT — the draft's own words for this shot:\n\"You must be cold.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 54 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nAmerican-accented English from a Japanese detective in his fifties — cast for warmth, not menace. No push-in, no music.\n\nSCRIPT — the draft's own words for this shot:\n\"You must be cold.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 7s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 54 of 307.",
+      "audio": [
+        {
+          "id": "s6-ishida-gently-you-must-be-cold",
+          "character": "ISHIDA",
+          "text": "You must be cold.",
+          "src": "/audio/neonoire/s6/54-ishida-gently-you-must-be-cold.mp3",
+          "offset": 1,
+          "duration": 1.8,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-55",
@@ -3129,7 +3251,7 @@
       "lens": "85mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 12,
+      "duration": 22,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3138,7 +3260,49 @@
         "neonoire-vera",
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nHer Japanese is fluent and slightly formal — the language of a child who grew up here and an adult who came back. The language is the scene's other plot: she offers it here, he refuses it, and at shot 61 they swap sides.\n\nSCRIPT — the draft's own words for this shot:\n\"I speak Japanese.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 55 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nHer Japanese is fluent and slightly formal — the language of a child who grew up here and an adult who came back. The language is the scene's other plot: she offers it here, he refuses it, and at shot 61 they swap sides.\n\nSCRIPT — the draft's own words for this shot:\n\"I speak Japanese.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 55 of 307.",
+      "audio": [
+        {
+          "id": "s6-vera-coolly-i-speak-japanese",
+          "character": "VERA",
+          "text": "I speak Japanese.",
+          "src": "/audio/neonoire/s6/55-vera-coolly-i-speak-japanese.mp3",
+          "offset": 0.5,
+          "duration": 1.72,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-of-course-but-this-is-a",
+          "character": "ISHIDA",
+          "text": "Of course. But this is a difficult thing. It is easier in your own language.",
+          "src": "/audio/neonoire/s6/55-ishida-of-course-but-this-is-a.mp3",
+          "offset": 2.7,
+          "duration": 5.56,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-the-officer-looked-at-the-screen",
+          "character": "VERA",
+          "text": "The officer looked at the screen and made a phone call. Then you came. What's on the screen?",
+          "src": "/audio/neonoire/s6/55-vera-the-officer-looked-at-the-screen.mp3",
+          "offset": 8.8,
+          "duration": 5.64,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-nothing-is-wrong-we-just-like",
+          "character": "ISHIDA",
+          "text": "Nothing is wrong. We just like to take care with these things. Voss. You grew up here?",
+          "src": "/audio/neonoire/s6/55-ishida-nothing-is-wrong-we-just-like.mp3",
+          "offset": 15,
+          "duration": 6.27,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-56",
@@ -3161,7 +3325,39 @@
         "neonoire-vera",
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nShe asks the same question twice — what's on the screen — and he answers a different one both times; play his smile as a man watching someone pass a test, not as evasion. The audience already knows what Vera does not. Play the hesitation on \"normal\" as embarrassment, not guilt.\n\nSCRIPT — the draft's own words for this shot:\n\"Three days ago. At my apartment. We had dinner.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 56 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nShe asks the same question twice — what's on the screen — and he answers a different one both times; play his smile as a man watching someone pass a test, not as evasion. The audience already knows what Vera does not. Play the hesitation on \"normal\" as embarrassment, not guilt.\n\nSCRIPT — the draft's own words for this shot:\n\"Three days ago. At my apartment. We had dinner.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 56 of 307.",
+      "audio": [
+        {
+          "id": "s6-vera-until-i-was-nine-what-s",
+          "character": "VERA",
+          "text": "Until I was nine. What's on the screen?",
+          "src": "/audio/neonoire/s6/56-vera-until-i-was-nine-what-s.mp3",
+          "offset": 0.5,
+          "duration": 2.93,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-when-did-you-last-see-your",
+          "character": "ISHIDA",
+          "text": "When did you last see your sister?",
+          "src": "/audio/neonoire/s6/56-ishida-when-did-you-last-see-your.mp3",
+          "offset": 3.9,
+          "duration": 2.04,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-three-days-ago-at-my-apartment",
+          "character": "VERA",
+          "text": "Three days ago. At my apartment. We had dinner.",
+          "src": "/audio/neonoire/s6/56-vera-three-days-ago-at-my-apartment.mp3",
+          "offset": 6.4,
+          "duration": 3.55,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-57",
@@ -3183,7 +3379,29 @@
       "characters": [
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe longest silence of the scene and the only one the film lets him win. No cutaway — the audience sits in it with Vera.\n\nSCRIPT — the draft's own words for this shot:\n\"Ishida waits, kindly, as if he knows there is more. She doesn't give it.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 57 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe longest silence of the scene and the only one the film lets him win. No cutaway — the audience sits in it with Vera.\n\nSCRIPT — the draft's own words for this shot:\n\"Ishida waits, kindly, as if he knows there is more. She doesn't give it.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 9s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 57 of 307.",
+      "audio": [
+        {
+          "id": "s6-ishida-and-how-did-she-seem",
+          "character": "ISHIDA",
+          "text": "And how did she seem?",
+          "src": "/audio/neonoire/s6/57-ishida-and-how-did-she-seem.mp3",
+          "offset": 0.5,
+          "duration": 1.65,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-hesitantly-normal",
+          "character": "VERA",
+          "text": "Normal.",
+          "src": "/audio/neonoire/s6/57-vera-hesitantly-normal.mp3",
+          "offset": 3,
+          "duration": 1.65,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-58",
@@ -3197,7 +3415,7 @@
       "lens": "50mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 14,
+      "duration": 22,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3206,7 +3424,69 @@
         "neonoire-vera",
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe turn of the scene, and it happens on her face, not in a line. Kanda is the street the audience has already stood in; let the recognition arrive late and hold the frame through his silence. No music sting, no push-in.\n\nSCRIPT — the draft's own words for this shot:\n\"Kanda? No. Why --\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 58 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe turn of the scene, and it happens on her face, not in a line. Kanda is the street the audience has already stood in; let the recognition arrive late and hold the frame through his silence. No music sting, no push-in.\n\nSCRIPT — the draft's own words for this shot:\n\"Kanda? No. Why --\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 58 of 307.",
+      "audio": [
+        {
+          "id": "s6-ishida-did-she-ever-mention-kanda-friends",
+          "character": "ISHIDA",
+          "text": "Did she ever mention Kanda? Friends there? Work?",
+          "src": "/audio/neonoire/s6/58-ishida-did-she-ever-mention-kanda-friends.mp3",
+          "offset": 0.5,
+          "duration": 3.79,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-kanda-no-why",
+          "character": "VERA",
+          "text": "Kanda? No. Why —",
+          "src": "/audio/neonoire/s6/58-vera-kanda-no-why.mp3",
+          "offset": 4.8,
+          "duration": 2.93,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-realising-the-shootings-in-kanda-it",
+          "character": "VERA",
+          "text": "The shootings. In Kanda. It was on the news.",
+          "src": "/audio/neonoire/s6/58-vera-realising-the-shootings-in-kanda-it.mp3",
+          "offset": 8.6,
+          "duration": 3.79,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-is-she-hurt",
+          "character": "VERA",
+          "text": "Is she hurt?",
+          "src": "/audio/neonoire/s6/58-vera-is-she-hurt.mp3",
+          "offset": 13.6,
+          "duration": 1.41,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-we-have-no-reason-to-believe",
+          "character": "ISHIDA",
+          "text": "We have no reason to believe she is hurt.",
+          "src": "/audio/neonoire/s6/58-ishida-we-have-no-reason-to-believe.mp3",
+          "offset": 15.5,
+          "duration": 2.59,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-that-s-not-the-same-as",
+          "character": "VERA",
+          "text": "That's not the same as saying she isn't.",
+          "src": "/audio/neonoire/s6/58-vera-that-s-not-the-same-as.mp3",
+          "offset": 18.6,
+          "duration": 2.51,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-59",
@@ -3220,7 +3500,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 18,
+      "duration": 28,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3229,7 +3509,59 @@
         "neonoire-vera",
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nShoot the exchange flat and symmetrical from the third chair, both of them in frame, no coverage and no cut — the sentence is the weapon and the audience has to hear its shape twice. He is not lying and he is not helping, and the frame should refuse to tell you which matters more.\n\nSCRIPT — the draft's own words for this shot:\n\"Is she dead?\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 18s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 59 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nShoot the exchange flat and symmetrical from the third chair, both of them in frame, no coverage and no cut — the sentence is the weapon and the audience has to hear its shape twice. He is not lying and he is not helping, and the frame should refuse to tell you which matters more.\n\nSCRIPT — the draft's own words for this shot:\n\"Is she dead?\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 18s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 59 of 307.",
+      "audio": [
+        {
+          "id": "s6-ishida-miss-voss",
+          "character": "ISHIDA",
+          "text": "Miss Voss —",
+          "src": "/audio/neonoire/s6/59-ishida-miss-voss.mp3",
+          "offset": 0.5,
+          "duration": 1.41,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-urgently-is-she-dead",
+          "character": "VERA",
+          "text": "Is she dead?",
+          "src": "/audio/neonoire/s6/59-vera-urgently-is-she-dead.mp3",
+          "offset": 2.3,
+          "duration": 1.23,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-no-reason-she-is-dead",
+          "character": "ISHIDA",
+          "text": "We have no reason to believe she is dead.",
+          "src": "/audio/neonoire/s6/59-ishida-no-reason-she-is-dead.mp3",
+          "offset": 4,
+          "duration": 2.69,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-angry-stop-saying-that-stop-saying",
+          "character": "VERA",
+          "text": "Stop saying that. Stop saying what you have no reason to believe and tell me what you know.",
+          "src": "/audio/neonoire/s6/59-vera-angry-stop-saying-that-stop-saying.mp3",
+          "offset": 7.2,
+          "duration": 5.56,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-what-i-know-is-that-two",
+          "character": "ISHIDA",
+          "text": "What I know is that two men were killed in Kanda, and that it is a matter between criminal groups. And that your sister is a young woman who has not called her sister for three days. Those may be two separate things.",
+          "src": "/audio/neonoire/s6/59-ishida-what-i-know-is-that-two.mp3",
+          "offset": 13.3,
+          "duration": 13.32,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-60",
@@ -3251,7 +3583,29 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe same high angle as 53, on the same cup, so the film rhymes the two shots and the audience sees the whole scene collapse into one object. Her hand only — no face in frame, no sound design on the spill beyond what the room would give you.\n\nSCRIPT — the draft's own words for this shot:\n\"The cup crumples in her fist. Hot tea runs over her fingers and onto the table.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 60 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 6; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe same high angle as 53, on the same cup, so the film rhymes the two shots and the audience sees the whole scene collapse into one object. Her hand only — no face in frame, no sound design on the spill beyond what the room would give you.\n\nSCRIPT — the draft's own words for this shot:\n\"The cup crumples in her fist. Hot tea runs over her fingers and onto the table.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 6 of 31 — ten keyframes at a time, in screenplay order. Shot 60 of 307.",
+      "audio": [
+        {
+          "id": "s6-vera-may-be",
+          "character": "VERA",
+          "text": "May be.",
+          "src": "/audio/neonoire/s6/60-vera-may-be.mp3",
+          "offset": 0.5,
+          "duration": 0.99,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-may-be",
+          "character": "ISHIDA",
+          "text": "May be.",
+          "src": "/audio/neonoire/s6/60-ishida-may-be.mp3",
+          "offset": 2,
+          "duration": 0.91,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-61",
@@ -3274,7 +3628,29 @@
         "neonoire-vera",
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 7; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe language finally changes hands, and it is the most honest and the most closed he is in the scene: I do not know where she is, and the safest thing you can do is nothing. Subtitles only, no dubbed warmth, and the tissue stays where he put it. Then silence, and rain on the frosted window.\n\nSCRIPT — the draft's own words for this shot:\n\"She is my sister. I have been calling her for three days. If you know where she is, tell me.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 26s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 31 — ten keyframes at a time, in screenplay order. Shot 61 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 7; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe language finally changes hands, and it is the most honest and the most closed he is in the scene: I do not know where she is, and the safest thing you can do is nothing. Subtitles only, no dubbed warmth, and the tissue stays where he put it. Then silence, and rain on the frosted window.\n\nSCRIPT — the draft's own words for this shot:\n\"She is my sister. I have been calling her for three days. If you know where she is, tell me.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 26s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 31 — ten keyframes at a time, in screenplay order. Shot 61 of 307.",
+      "audio": [
+        {
+          "id": "s6-vera-low-controlled-she-is-my-sister",
+          "character": "VERA",
+          "text": "She is my sister. I have been calling her for three days. If you know where she is, tell me.",
+          "src": "/audio/neonoire/s6/61-vera-low-controlled-she-is-my-sister.mp3",
+          "offset": 1,
+          "duration": 6.35,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-quietly-i-do-not-know-where",
+          "character": "ISHIDA",
+          "text": "I do not know where she is. That is the truth. And if she saw something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.",
+          "src": "/audio/neonoire/s6/61-ishida-quietly-i-do-not-know-where.mp3",
+          "offset": 8.5,
+          "duration": 12.04,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-62",
@@ -3297,7 +3673,39 @@
         "neonoire-vera",
         "neonoire-ishida"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 7; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe card goes across a wet table, and that is the whole scene in one image. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.\n\nSCRIPT — the draft's own words for this shot:\n\"He slides his card across the wet table. She looks at it. Then takes it. Stands. Picks up the blue umbrella.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 22s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 31 — ten keyframes at a time, in screenplay order. Shot 62 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 7; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nVisual revision (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Same institution as the revised front counter, with the room fixed to s6/51-the-interview-room.jpg and blocking to s6/56-three-days-ago.jpg: small worn grey-green room, one centred aluminium-framed frosted rainy window, grey laminate table, two beige vinyl chairs, grey linoleum, one steady green-white fluorescent ceiling fixture. No flicker, mirror, camera, paper pendant, monitor or new furniture. Tan tissue box stays on the window sill; Ishida reaches back for one tissue after the spill. Vera sits LEFT and Ishida RIGHT in the master two-shot. Vera matches sheets/vera.jpg and scene 5: dry ash-blonde shoulder-length hair and soft fringe, pale blue eyes, charcoal wool coat over cream high-neck knit, navy trousers, brown boots, black watch on LEFT wrist, gold ring on RIGHT hand. One closed pale-blue umbrella with one curved brown wooden handle leans outside the left of Vera's chair, wet tip on linoleum. Ishida matches sheets/ishida.jpg: Japanese, fifties, short salt-and-pepper hair, charcoal suit, light grey open-collar shirt, NO TIE or police uniform. Exactly ONE plain cream-white PAPER cup, no glass, handle, saucer, lid or logo. Ishida brings it in shot 52; it is then on Vera's side of the table. The cup is intact and the table dry through shot 59. Shot 60: Vera's RIGHT hand crushes the cup and amber tea spills. Shots 61–62 MUST retain the crushed cup and wet table, with ONE offered white tissue beside her hand. Shot 62 adds one business card sliding from Ishida toward Vera; no invented readable phone number. Maintain the same faces, eyelines, room, wardrobe, prop states and restrained fluorescent 35mm grade. No embedded subtitles, captions or watermarks.\n\nThe card goes across a wet table, and that is the whole scene in one image. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.\n\nSCRIPT — the draft's own words for this shot:\n\"He slides his card across the wet table. She looks at it. Then takes it. Stands. Picks up the blue umbrella.\"\n\nOne table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 22s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 7 of 31 — ten keyframes at a time, in screenplay order. Shot 62 of 307.",
+      "audio": [
+        {
+          "id": "s6-ishida-go-home-miss-voss-keep-your",
+          "character": "ISHIDA",
+          "text": "Go home, Miss Voss. Keep your phone on. If she calls, call me first. Any hour.",
+          "src": "/audio/neonoire/s6/62-ishida-go-home-miss-voss-keep-your.mp3",
+          "offset": 1,
+          "duration": 6.11,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-vera-you-would-have-told-me-if",
+          "character": "VERA",
+          "text": "You would have told me if she was dead. Wouldn't you?",
+          "src": "/audio/neonoire/s6/62-vera-you-would-have-told-me-if.mp3",
+          "offset": 12,
+          "duration": 3.16,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s6-ishida-of-course",
+          "character": "ISHIDA",
+          "text": "Of course.",
+          "src": "/audio/neonoire/s6/62-ishida-of-course.mp3",
+          "offset": 16,
+          "duration": 1.07,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-63",
