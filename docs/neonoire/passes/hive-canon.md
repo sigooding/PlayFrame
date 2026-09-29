@@ -88,12 +88,13 @@ Review sheet: `public/images/neonoire/reviews/hive-retakes-pass-2.jpg` — the c
 
 **Script lines kept in step (small director's edits, carried in the draft `Neonoire (3).fountain` and its regenerated pages):** scene 15 gains the tower stepping down at the back to a low rear wing pressed against the concrete railway viaduct, its roof level with the tracks, old neon signs hanging dead on its face, and the Hive sitting in its own haze of steam and kitchen smoke even in daylight; scene 90 opens on the flat roof of the low rear wing, four storeys up, the tower behind; scenes 16 and 55 each gain one line of daylight coming in thin cold shafts through the steam. The same commit's Kanda backstreet change — scene 1, the sedan blocks the alley mouth — is documented in `kanda-alley-layout.md`.
 
-## The retake queue — one frame left (the repairman)
+## The queue pass — closed (all eleven, 29 September 2026)
 
-The queue pass ran the same day: ten of the eleven look-only frames retaken against the canon
-sheets, one call each, light and atmosphere only — every figure, face, wardrobe, prop and
-composition held to its previous frame, the matching canon sheet passed alongside as the set
-reference. In code: `hiveRetakenQueue` (10, installed).
+The queue pass ran the same day: all eleven look-only frames retaken against the canon sheets,
+one call each, light and atmosphere only — every figure, face, wardrobe, prop and composition
+held to its previous frame, the matching canon sheet passed alongside as the set reference (the
+repairman also got `sheets/repairman.jpg` as the character reference). In code: `hiveRetakenQueue`
+(11, installed). Nothing remains queued: `hiveLookRetakes` and `hiveNextPassPlan` are empty.
 
 | Shot | Frame | Was | Status |
 | --- | --- | --- | --- |
@@ -108,20 +109,23 @@ reference. In code: `hiveRetakenQueue` (10, installed).
 | 227 | `s58/225-bring-her.jpg` | fluorescent and cool grade | **RETAKEN + INSTALLED** — one amber bulb and steam; the charcoal-coat motif and the too-much money held |
 | 123 | `s86/121-the-shutter.jpg` | bright fluorescent at the counter | **RETAKEN + INSTALLED** — the counter's one amber bulb in the dark, the tube unlit; Kaneko's shutter and the six stools held |
 
-**Still queued (1):**
+**The closing frame:**
 
-| Shot | Frame | Problem |
-| --- | --- | --- |
-| 126 | `s87/124-the-repairman.jpg` | saturated teal grade, blue smoke; desaturated near-monochrome. Keep the repairman exactly as `sheets/repairman.jpg` holds him |
+| Shot | Frame | Was | Status |
+| --- | --- | --- | --- |
+| 126 | `s87/124-the-repairman.jpg` | saturated teal grade, blue smoke | **RETAKEN + INSTALLED** — desaturated near-monochrome night, one small pool at the bench lamp; the repairman held exactly to `sheets/repairman.jpg`, the radios, the fuse box and the smoking soldering iron unchanged. Green dominance falls 0.019 → 0.003 by pixel statistics |
 
-Review sheet: `public/images/neonoire/reviews/hive-retakes-pass-3.jpg` — the ten installed frames in
-shot order. Caveats: the frames are verified at 1920×1080 and read back in palette statistics
-(the four s97 frames shift to dim grey-ochre daylight at bright 0.34–0.40, the counter frames to
-dim warm amber, the shutter dark), but the session's image viewer is unreliable — give the review
-sheet a full-size look before the repairman pass. The counter frames' boards still describe the
-fluorescent tube in the blocking text where the canon rule now unlights it; the tube remains in
-the room as a fixture. Scene 86's script beat ("she turns off the fluorescent tube") plays on the
-switch; the frame holds the one-bulb look the queue asked for.
+Review sheets: `public/images/neonoire/reviews/hive-retakes-pass-3.jpg` — the ten queue frames in
+shot order — and `public/images/neonoire/reviews/hive-retakes-pass-4.jpg` — the repairman before
+and after, side by side. Caveats: every frame is verified at 1920×1080 and read back in palette
+statistics (the four s97 frames shift to dim grey-ochre daylight at bright 0.34–0.40, the counter
+frames to dim warm amber, the shutter dark, the repairman's teal gone), but the session's image
+viewer is unreliable — give the review sheets a full-size look and sign the pass off in person.
+The counter frames' boards still describe the fluorescent tube in the blocking text where the
+canon rule now unlights it; the tube remains in the room as a fixture. Scene 86's script beat
+("she turns off the fluorescent tube") plays on the switch; the frame holds the one-bulb look the
+queue asked for. The repairman's smoke is the soldering iron's (the board's "still smoking"),
+kept pale grey in the lamplight rather than blue.
 
 ### Outside the Hive — untouched
 
@@ -129,6 +133,6 @@ s91 (the railway maintenance walkway is railway ground), s22 (the brick arch cou
 
 ## Also in this pass
 
-- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveRetakenLook` (13, the look retake pass with model fixes flagged), `hiveRetakenOptional` (5, the judged optional tier), `hiveRetakenQueue` (10, the queue pass), `hiveLookRetakes` (1 still queued: the repairman), `hiveNextPassPlan` (1, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
+- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveRetakenLook` (13, the look retake pass with model fixes flagged), `hiveRetakenOptional` (5, the judged optional tier), `hiveRetakenQueue` (11, the queue pass — closed), `hiveLookRetakes` (0 — queue closed), `hiveNextPassPlan` (0), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
 - The Hive look files (`hive-look`, `hive-first-look`, `hive-morning-look`, `escape-look`, `ending-look`'s demolition, `confrontation-look`'s storeroom) now defer to the canon for lighting and atmosphere and carry no other change; every verify-locked continuity substring survives.
 - `scripts/verify-neonoire.mjs` checks the six sheets and every retaken tier at 1920×1080, that each queued frame exists and queues once with a day or night tag, that the done and pending tiers cover thirty-four frames exactly, and that the canon text, rules and negative terms travel with the look file.

@@ -644,11 +644,11 @@ for (const retake of hiveRetakenOptional) assert.deepEqual(jpegDimensions(`image
 assert.equal(hiveRetakenOptional.length, 5, "Five optional frames judged and retaken (service road steam, rooftop city)");
 assert.equal(hiveCanonRetakes.length, 0, "The interior set failures are absorbed into the look retake pass");
 for (const retake of hiveRetakenQueue) assert.deepEqual(jpegDimensions(`images/neonoire/${retake.image}`), [1920, 1080], `${retake.image} is installed at 16:9 after the queue pass`);
-assert.equal(hiveRetakenQueue.length, 10, "Ten of the eleven queue frames retaken on the look (29 September 2026 queue pass)");
+assert.equal(hiveRetakenQueue.length, 11, "All eleven queue frames retaken on the look (29 September 2026 queue pass)");
 for (const retake of hiveLookRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the look retake pass`);
-assert.equal(hiveLookRetakes.length, 1, "The repairman is the last Hive frame queued for the look retake pass");
-assert.equal(hiveNextPassPlan.length, 1, "The next pass plan closes the queue with the repairman, one call");
-assert.equal(new Set(hiveNextPassPlan.map(r => r.image)).size, 1, "No frame queues twice");
+assert.equal(hiveLookRetakes.length, 0, "The look retake queue is closed");
+assert.equal(hiveNextPassPlan.length, 0, "The next pass plan is empty — every Hive frame is on the look");
+assert.equal(new Set(hiveNextPassPlan.map(r => r.image)).size, 0, "No frame queues twice");
 assert.equal(new Set([...hiveNextPassPlan, ...hiveRetakenExteriors, ...hiveRetakenLook, ...hiveRetakenOptional, ...hiveRetakenQueue].map(r => r.image)).size, 36, "Every Hive retake frame is queued exactly once, done or pending");
 assert(hiveNextPassPlan.every(r => r.look === "day" || r.look === "night"), "Every queued frame declares day or night");
 assert(hiveCanon.includes("retrofitted for sixty years") && hiveCanon.includes("Steam vents from pipes and kitchen flues"), "The canon carries the sixty-year retrofit and the steam vents");
@@ -659,14 +659,14 @@ for (const term of ["vivid colours", "many neon signs", "video billboards", "bri
 assert(!hiveCanonScenes.has("s14") && !hiveCanonScenes.has("s47") && !hiveCanonScenes.has("s91"), "Mara's apartment, the inn's back yard and the railway walkway are not the Hive");
 assert(hiveCanonScenes.has("s19") && hiveCanonScenes.has("s69") && hiveCanonScenes.has("s71") && hiveCanonScenes.has("s67"), "The counter night, the passages and the service road are the Hive");
 let retakeNoteCount = 0;
-for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n90-hive-rooftop.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md"]) {
+for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n90-hive-rooftop.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
   const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
   const hits = text.split("Retake 29 September 2026").length - 1;
   assert(hits > 0, `${board} records its exterior retake`);
   retakeNoteCount += hits;
 }
 assert.equal(retakeNoteCount, 7 + hiveRetakenLook.length + hiveRetakenOptional.length + hiveRetakenQueue.length, "Every installed retake is recorded in its board notes");
-pass("hive canon: six sheets installed; the wrong-building tier, the new-look pass, the judged optionals and the queue pass all retaken on the canon and the look, the repairman queued to close");
+pass("hive canon: six sheets installed; the wrong-building tier, the new-look pass, the judged optionals and the queue pass all retaken on the canon and the look, the queue closed");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 
