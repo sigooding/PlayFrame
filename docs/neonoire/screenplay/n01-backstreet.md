@@ -78,11 +78,11 @@ An OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if somethi
 
 He passes Mara's doorway without seeing her. Then, a step later, his eyes find her in the shadow -- a flicker, as if he knows her face -- and he looks away at once and keeps walking, faster, toward the bar sign. Away from her.
 
-Headlights sweep the wet street. A black sedan rolls in and stops without hurry.
+At the far end of the alley, headlights. A black sedan pulls across the mouth of the lane and stops, blocking it. Its high beams shine straight down the alley, lighting the rain in long white columns.
 
-Two MEN step out. Black clothes. Masks. They don't run.
+Two MEN get out and walk into the alley, black silhouettes against the glare. Black clothes. Masks. They don't run.
 
-The old man stops. He doesn't turn around. He seems to know there is no point.
+The old man stops. He doesn't turn around. He seems to know there is no point. The headlights throw his shadow long down the lane ahead of him.
 
 OLD MAN
 (in Japanese; to himself)
@@ -100,7 +100,7 @@ MASKED MAN
 (in Japanese)
 First position done. Moving to second.
 
-They get back in the car. It pulls away, unhurried. Taillights smear red across the road and are gone.
+They walk back to the car. It reverses out of the alley mouth, unhurried. The headlights swing away, taillights smear red across the wet road beyond, and the alley falls dark.
 
 Rain. The vending machine hum. The crossing melody, still playing for no one.
 
@@ -154,13 +154,13 @@ A small numbered key on a worn plastic tag. A coin-locker key.
 
 .BACK TO SCENE
 
-Headlights. Coming back.
+At the mouth of the alley, headlights swing back.
 
 Mara runs.
 
 Her purse strap snags on the barbershop pole and tears. The purse drops into a puddle behind her. She doesn't stop.
 
-The sedan pulls up beside the body. One masked man gets out and searches the old man's coat, methodically. Nothing.
+The sedan stops across the alley mouth again. One masked man walks back in to the body and searches the old man's coat, methodically. Nothing.
 
 His flashlight drifts across the street -- and stops on the purse lying in the water.
 

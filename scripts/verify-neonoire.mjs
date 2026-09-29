@@ -23,7 +23,7 @@ import { ishidaEndImages } from "./neonoire/ishida-end-look.mjs";
 import { hiveMorningImages, veraLookDSheet } from "./neonoire/hive-morning-look.mjs";
 import { endingImages, veraLookESheet } from "./neonoire/ending-look.mjs";
 import { kandaReturnImages } from "./neonoire/kanda-return-look.mjs";
-import { innImages, innStairFrames } from "./neonoire/inn-look.mjs";
+import { innImages, innStairFrames, innWarmLook } from "./neonoire/inn-look.mjs";
 import { hiveFirstImages } from "./neonoire/hive-first-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
 
@@ -138,7 +138,7 @@ function jpegDimensions(file) {
   }
   throw new Error(`No JPEG dimensions in ${file}`);
 }
-const { coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
+const { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
 assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
 const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId) && shotNo(frame) <= 28);
 assert.equal(coldOpen.length, 28);
@@ -175,8 +175,17 @@ assert(letterS1[1].notes.includes("s1/01-backstreet.jpg") && letterS1[1].notes.i
 assert(letterS1[2].notes.includes("s1/14-she-kneels.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic");
 assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 carries the letter-rewrite retake note");
 pass("letter rewrite in scene 1: 1:00 in her own handwriting, the bar sign at the end of the street, and Mr. Sakai's face turned up to hers");
+// Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
+// and out on foot, and the six blocked frames are retaken to the fixed pedestrian layout.
 const backsOut = project.frames.find(frame => frame.id === "neonoire-shot-13");
-assert(backsOut.notes.includes("backs out") && backsOut.notes.includes("does not turn") && backsOut.notes.includes("reverse lamps"), "Shot 13 locks the reverse: the alley will not take a turn");
+assert(backsOut.notes.includes("reverses out of the alley mouth") && backsOut.notes.includes("falls dark") && backsOut.notes.includes("plate is not legible") && backsOut.notes.includes("No people"), "Shot 13 locks the layout-pass reverse: out of the mouth, the alley falls dark");
+for (const n of [8, 10, 12, 13, 17, 18]) {
+  const frame = project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`);
+  assert(frame.notes.includes("Retake 29 September 2026 (the layout pass)") && frame.notes.includes("sheets/kanda-alley-layout.jpg"), `Shot ${n} carries the layout-pass retake note and the layout sheet`);
+}
+assert(coldOpenLook.includes("Alley layout (canonical") && coldOpenLook.includes("too narrow for cars") && coldOpenLook.includes("Mara runs away from the car"), "The cold-open look carries the canonical alley layout");
+assert.deepEqual(jpegDimensions("images/neonoire/sheets/kanda-alley-layout.jpg"), [1920, 1080], "The kanda layout sheet is 1920×1080");
+pass("kanda alley layout: the sedan blocks the mouth, the six frames retaken, the layout sheet installed");
 
 // Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
@@ -612,19 +621,62 @@ for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repair
 }
 pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the young detective, the masked man and Vera's Looks B and F carry identity sheets");
 
+// The roadside inn style sheet and the mask rule (29 September 2026): the inn carries a four-panel
+// style sheet, and the masked men's costume is locked to the black lower-face mask — at the inn too.
+assert.deepEqual(jpegDimensions("/images/neonoire/sheets/roadside-inn.jpg"), [1920, 1080], "the roadside inn style sheet is 16:9");
+assert(innWarmLook.includes("sheets/roadside-inn.jpg") && innWarmLook.includes("never white masks") && innWarmLook.includes("sheets/masked-man.jpg"), "The inn look carries the style sheet and the black lower-face mask rule");
+for (const board of ["n39-roadside-inn-jacks-room.md", "n40-roadside-inn-lobby.md", "n41-roadside-inn-upstairs-corridor.md", "n45-roadside-inn-lobby-dark.md", "n47-inn-back-yard.md", "n49-eight-in-the-headlights.md"]) {
+  const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
+  assert(text.includes("black lower-face mask under a dark knit cap"), `${board} records the mask retake`);
+}
+pass("roadside inn: the style sheet is installed and the masked men's black lower-face masks are locked at the inn");
+
 // Looks-and-props pass, 26 September 2026: the legible-text props carry clean masters beside the cassette label and the notebook cover.
 for (const prop of ["jack-investigations-card", "daniel-voss-clipping", "key-87-tag", "kaneko-sign-board", "locker-room-sign", "service-road-852", "sakai-letter"]) {
   assert.deepEqual(jpegDimensions(`/images/neonoire/props/${prop}.jpg`), [1920, 1080], `${prop}'s prop master is 16:9`);
 }
 pass("prop masters: the card, the clipping, the 87 tag, the sign board, the locker sign, the 8:52 sign and Sakai's letter carry clean legible masters");
 
-// Hive canon, 28 September 2026: one look file (scripts/neonoire/hive-canon-look.mjs), five canon
-// sheets; the eight frames that predate them queue as the next generation pass.
-const { hiveCanonSheets, hiveCanonRetakes } = await import("./neonoire/hive-canon-look.mjs");
+// Hive canon, 28 September 2026: one look file (scripts/neonoire/hive-canon-look.mjs), six canon
+// sheets (night exterior, day exterior, section, counter, storeroom, passages-and-roof). The
+// 29 September 2026 retake pass runs in the director's tiers: the seven exteriors that were wrong
+// building AND wrong look are retaken against the canon sheets (hiveRetakenExteriors); the three
+// interior set failures and the twenty-four look-only frames still queue — twenty-seven in all,
+// nothing outside the Hive.
+const { hiveCanonSheets, hiveRetakenExteriors, hiveRetakenLook, hiveRetakenOptional, hiveRetakenQueue, hiveCanonRetakes, hiveLookRetakes, hiveNextPassPlan, hiveCanon, hiveCanonNight, hiveCanonDay, hiveCanonNegative, hiveCanonRules, hiveCanonScenes } = await import("./neonoire/hive-canon-look.mjs");
+assert.equal(hiveCanonSheets.length, 6, "Six canon sheets: night exterior, day exterior, section, counter, storeroom, passages-and-roof");
 for (const sheet of hiveCanonSheets) assert.deepEqual(jpegDimensions(sheet.path), [1920, 1080], `${sheet.key}'s canon sheet is 16:9`);
-for (const retake of hiveCanonRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the canon retake pass`);
-assert.equal(hiveCanonRetakes.length, 8, "Eight Hive frames queue for the canon retake pass");
-pass("hive canon: exterior master, cutaway, counter, storeroom and passages-and-roof sheets installed; eight pre-canon frames queued for retake");
+for (const retake of hiveRetakenExteriors) assert.deepEqual(jpegDimensions(`images/neonoire/${retake.image}`), [1920, 1080], `${retake.image} is installed at 16:9 after the exterior retake`);
+assert.equal(hiveRetakenExteriors.length, 7, "Seven exteriors — wrong building and wrong look — retaken on the canon and the new look");
+for (const retake of hiveRetakenLook) assert.deepEqual(jpegDimensions(`images/neonoire/${retake.image}`), [1920, 1080], `${retake.image} is installed at 16:9 after the look retake`);
+assert.equal(hiveRetakenLook.length, 13, "Thirteen frames ran in the 29 September 2026 look retake pass (new look plus model fixes), all installed");
+for (const retake of hiveRetakenOptional) assert.deepEqual(jpegDimensions(`images/neonoire/${retake.image}`), [1920, 1080], `${retake.image} is installed at 16:9 after the optional retake`);
+assert.equal(hiveRetakenOptional.length, 5, "Five optional frames judged and retaken (service road steam, rooftop city)");
+assert.equal(hiveCanonRetakes.length, 0, "The interior set failures are absorbed into the look retake pass");
+for (const retake of hiveRetakenQueue) assert.deepEqual(jpegDimensions(`images/neonoire/${retake.image}`), [1920, 1080], `${retake.image} is installed at 16:9 after the queue pass`);
+assert.equal(hiveRetakenQueue.length, 11, "All eleven queue frames retaken on the look (29 September 2026 queue pass)");
+for (const retake of hiveLookRetakes) assert(existsSync(join(root, "public", "images", "neonoire", retake.image)), `${retake.image} exists and queues for the look retake pass`);
+assert.equal(hiveLookRetakes.length, 0, "The look retake queue is closed");
+assert.equal(hiveNextPassPlan.length, 0, "The next pass plan is empty — every Hive frame is on the look");
+assert.equal(new Set(hiveNextPassPlan.map(r => r.image)).size, 0, "No frame queues twice");
+assert.equal(new Set([...hiveNextPassPlan, ...hiveRetakenExteriors, ...hiveRetakenLook, ...hiveRetakenOptional, ...hiveRetakenQueue].map(r => r.image)).size, 36, "Every Hive retake frame is queued exactly once, done or pending");
+assert(hiveNextPassPlan.every(r => r.look === "day" || r.look === "night"), "Every queued frame declares day or night");
+assert(hiveCanon.includes("retrofitted for sixty years") && hiveCanon.includes("Steam vents from pipes and kitchen flues"), "The canon carries the sixty-year retrofit and the steam vents");
+assert(hiveCanonNight.includes("small pools") && hiveCanonNight.includes("35mm anamorphic film look"), "The night look is small pools and film, not saturated neon");
+assert(hiveCanonDay.includes("pale grey-ochre murk") && hiveCanonDay.includes("the murk begins at the Hive's edge"), "The day look is the murk, and the street outside stays ordinary");
+assert(hiveCanonRules.includes("one bulb, amber tungsten, steam") && hiveCanonRules.includes("screens bigger than an old CRT") && hiveCanonRules.includes("Never write a film title in a prompt"), "The Hive rules travel with the canon");
+for (const term of ["vivid colours", "many neon signs", "video billboards", "bright sunny daylight", "cyberpunk", "brand logos"]) assert(hiveCanonNegative.includes(term), `The Hive negative prompt bans ${term}`);
+assert(!hiveCanonScenes.has("s14") && !hiveCanonScenes.has("s47") && !hiveCanonScenes.has("s91"), "Mara's apartment, the inn's back yard and the railway walkway are not the Hive");
+assert(hiveCanonScenes.has("s19") && hiveCanonScenes.has("s69") && hiveCanonScenes.has("s71") && hiveCanonScenes.has("s67"), "The counter night, the passages and the service road are the Hive");
+let retakeNoteCount = 0;
+for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n90-hive-rooftop.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
+  const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
+  const hits = text.split("Retake 29 September 2026").length - 1;
+  assert(hits > 0, `${board} records its exterior retake`);
+  retakeNoteCount += hits;
+}
+assert.equal(retakeNoteCount, 7 + hiveRetakenLook.length + hiveRetakenOptional.length + hiveRetakenQueue.length, "Every installed retake is recorded in its board notes");
+pass("hive canon: six sheets installed; the wrong-building tier, the new-look pass, the judged optionals and the queue pass all retaken on the canon and the look, the queue closed");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
 

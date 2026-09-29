@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-186
 IMAGE: 184-a-gap-in-someones-teeth.jpg
-NOTE: The scene master. The banner's KUROSE DEVELOPMENT and TOMORROW'S TOKYO are not lettered. The pavement reads damp rather than raining.
+NOTE: The scene master. The banner's KUROSE DEVELOPMENT and TOMORROW'S TOKYO are not lettered. The pavement reads damp rather than raining. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon eleven-storey Hive between the glass towers in the day murk, hoarding, banner and staging carried over; the banner stays unlettered as in the study.
 
 187. MEDIUM — 50mm, static, low angle — then he goes in.
 From a low camera square to the flight: a steep, rusted outside stair climbs between balconies, laundry and air conditioners. Jack climbs it seen from behind, one hand on the rail.
@@ -31,4 +31,4 @@ LIGHT: Overcast soft
 TIME: 8
 ID: neonoire-shot-187
 IMAGE: 185-then-he-goes-in.jpg
-NOTE: THE STAIRWAY MOTIF, going up into the past. Generated from shot 186. Add rain on set.
+NOTE: THE STAIRWAY MOTIF, going up into the past. Generated from shot 186. Add rain on set. Retake 29 September 2026 — new look: day murk, steam and one faint sign on the stair; the threshold held at the door below.

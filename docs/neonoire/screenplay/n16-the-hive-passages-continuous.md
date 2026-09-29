@@ -8,7 +8,7 @@ Grammar: 35mm down the passage.
 
 INT. THE HIVE, PASSAGES - CONTINUOUS #16#
 
-Narrow corridors, barely shoulder-wide, lit by bare bulbs. Water drips from somewhere above and runs along the floor in a thin shining line. Pipes overhead. Wires everywhere.
+Narrow corridors, barely shoulder-wide, lit by bare bulbs. Water drips from somewhere above and runs along the floor in a thin shining line. Pipes overhead. Wires everywhere. What daylight gets in comes in thin cold shafts from gaps far overhead, thick with drifting steam.
 
 Doors stand open onto other lives. A MAN at a bench mending radios, a dozen of them murmuring different stations at once. A FAMILY eating dinner at four in the afternoon, the TV loud. An OLD WOMAN asleep in front of a sumo match. A dentist's chair behind a curtain, a hand-lettered price list taped to the wall.
 

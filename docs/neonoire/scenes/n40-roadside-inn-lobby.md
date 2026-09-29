@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 6
 ID: neonoire-shot-178
 IMAGE: 176-were-closed.jpg
-NOTE: Generated from shot 172, then reframed in the consistency pass of 26 September 2026 after moderation blocked the weapons-up entry: the two masked men are silhouettes in the headlight glare with no weapons in frame, and the entry reads through the raining plaster and the smashed souvenir case instead. Mr. Noda is the older Japanese man in the brown cardigan of s46/213-clutch-each-other.jpg, on the staff side of the wooden counter. The CRT shows baseball and is never static. Shot 262 puts him low behind it.
+NOTE: Generated from shot 172, then reframed in the consistency pass of 26 September 2026 after moderation blocked the weapons-up entry: the two masked men are silhouettes in the headlight glare with no weapons in frame, and the entry reads through the raining plaster and the smashed souvenir case instead. Mr. Noda is the older Japanese man in the brown cardigan of s46/213-clutch-each-other.jpg, on the staff side of the wooden counter. The CRT shows baseball and is never static. Shot 262 puts him low behind it. Retake 29 September 2026 — the masks corrected to the locked costume: black lower-face mask under a dark knit cap, never white, never a full balaclava; staging, palette and props held to the previous frame. Costume reference: sheets/masked-man.jpg.
 
 ---
 

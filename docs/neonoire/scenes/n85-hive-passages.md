@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-121
 IMAGE: 119-single-file.jpg
-NOTE: Passage master. Shot 126 (scene 88) returns to this camera with every bulb out.
+NOTE: Passage master. Shot 126 (scene 88) returns to this camera with every bulb out. Retake 29 September 2026 — new look and model: the passage rebuilt shoulder-wide for single file, small amber pools in steel-blue haze; the lamp strings gone.
 
 122. MEDIUM — 35mm, static, eye level — the Hive is watching.
 In the foreground, a neighbour's old hand pulls a lit wooden door softly shut. Beyond it the other doors narrow to strips of light, and the four men come on in soft focus.
@@ -31,4 +31,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-122
 IMAGE: 120-the-hive-is-watching.jpg
-NOTE: The neighbour is not a cast member; only a hand and a sliver of shadowed face show.
+NOTE: The neighbour is not a cast member; only a hand and a sliver of shadowed face show. Retake 29 September 2026 — new look and model: the passage rebuilt shoulder-wide for single file, amber pools in steel-blue haze; the lamp strings and green cast gone.

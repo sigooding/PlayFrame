@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-126
 IMAGE: 124-the-repairman.jpg
-NOTE: Shop master. The soldering iron is still smoking.
+NOTE: Shop master. The soldering iron is still smoking. Retake 29 September 2026 — the shop master is rebuilt on the night look: desaturated near-monochrome, one small pool at the bench lamp, the teal grade and blue cast gone; the repairman held exactly to sheets/repairman.jpg, the radios, the fuse box and the smoking soldering iron unchanged.
 
 127. INSERT — 85mm, static, low angle — the main switch.
 His thin old hand, in a grey cardigan cuff, pulls down the fuse box's main switch as the lamp behind him begins to die.

@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-188
 IMAGE: 186-everybody-sees-him.jpg
-NOTE: The scene master. The turn onto the counter is shot 250. The dentist's chair is shot 253.
+NOTE: The scene master. The turn onto the counter is shot 250. The dentist's chair is shot 253. Retake 29 September 2026 — new look: thin cold shafts through the drifting steam, one faint sign; the market lamps and green signage gone.
 
 ---
 
@@ -33,7 +33,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-250
 IMAGE: 248-exactly-the-drawing.jpg
-NOTE: Coverage, shot 250. Jack follows sheets/jack.jpg. The counter follows s17/187-you-got-old.jpg and the drawing in s14/183-the-sketchbook.jpg. The sign 金子 is legible at full size. Six stools read in frame. Shot 188's unscripted folder does not continue here.
+NOTE: Coverage, shot 250. Jack follows sheets/jack.jpg. The counter follows s17/187-you-got-old.jpg and the drawing in s14/183-the-sketchbook.jpg. The sign 金子 is legible at full size. Six stools read in frame. Shot 188's unscripted folder does not continue here. Retake 29 September 2026 — new look: thin cold shafts and drifting steam over the counter's one amber bulb; the lamp rows gone.
 
 ---
 
@@ -45,4 +45,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-253
 IMAGE: 249-the-chair.jpg
-NOTE: Coverage, shot 253. The corridor follows s16/186-everybody-sees-him.jpg; Jack follows sheets/jack.jpg, sketchbook under his arm. The dentist's chair is empty: no dentist, no patient. CAVEAT: the price-list figures are not from the draft; letter the practical on set. No letterbox.
+NOTE: Coverage, shot 253. The corridor follows s16/186-everybody-sees-him.jpg; Jack follows sheets/jack.jpg, sketchbook under his arm. The dentist's chair is empty: no dentist, no patient. CAVEAT: the price-list figures are not from the draft; letter the practical on set. No letterbox. Retake 29 September 2026 — new look: thin cold shafts through the steam, one faint sign; the warm lamp rows gone.

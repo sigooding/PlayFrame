@@ -21,4 +21,4 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-239
 IMAGE: 237-position.jpg
-NOTE: Moderation-safe ambush: no weapons in frame, no muzzle flash — the driver's wrist at his sleeve and the open rear door do the work. The driver is an uncarded Ishida man; his face locks here and nowhere else. The road and pillars follow shot 236's master; the gunfire that follows plays off-frame and is never boarded.
+NOTE: Moderation-safe ambush: no weapons in frame, no muzzle flash — the driver's wrist at his sleeve and the open rear door do the work. The driver is an uncarded Ishida man; his face locks here and nowhere else. The road and pillars follow shot 236's master; the gunfire that follows plays off-frame and is never boarded. Retake 29 September 2026 — optional pass: steam added at the back door; sodium pools and wet reflections held.

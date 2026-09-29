@@ -21,5 +21,5 @@ LIGHT: Practical night
 TIME: 14
 ID: neonoire-shot-217
 IMAGE: 215-no-need-to-chase.jpg
-NOTE: Headcount locked at eight, matching the draft's eight men and Jack's count in scene 53. The pink payphone rings inside, unseen.
+NOTE: Headcount locked at eight, matching the draft's eight men and Jack's count in scene 53. The pink payphone rings inside, unseen. Retake 29 September 2026 — the masks corrected to the locked costume: black lower-face mask under a dark knit cap, never white, never a full balaclava; staging, palette and props held to the previous frame. Costume reference: sheets/masked-man.jpg.
 

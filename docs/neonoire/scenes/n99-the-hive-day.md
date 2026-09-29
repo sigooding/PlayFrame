@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-158
 IMAGE: 156-cut-open.jpg
-NOTE: The scene master. Track slowly sideways, as the camera once tracked along the lit windows of the living block. The wallpaper, calendar, mirror and height marks need closer coverage on the move; at this width they read only as rooms.
+NOTE: The scene master. Track slowly sideways, as the camera once tracked along the lit windows of the living block. The wallpaper, calendar, mirror and height marks need closer coverage on the move; at this width they read only as rooms. Retake 29 September 2026 — wrong building and wrong look: rebuilt as the canon Hive cut open, dead signs hanging in the dust, day murk.
 
 159. MEDIUM WIDE — 35mm, static, eye level — the sign.
 At the mesh barrier, a small quiet crowd looks up. Kaneko stands in front, holding the old noodle-shop sign against her chest, wrapped in a blanket. Beside her are the radio repairman, a young family with a small boy, and a girl holding a violin case. Behind them, soft, the excavator bites.
@@ -31,4 +31,4 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-159
 IMAGE: 157-the-sign.jpg
-NOTE: Generated from shot 158. A single character shows on the sign where it isn't covered by the blanket. The scene ends here.
+NOTE: Generated from shot 158. A single character shows on the sign where it isn't covered by the blanket. The scene ends here. Retake 29 September 2026 — new look: grey-ochre murk and hanging dust, the dead signs in the cut-open floors behind the crowd; staging held.

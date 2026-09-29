@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-180
 IMAGE: 178-thank-you-very-much.jpg
-NOTE: Generated from shot 178. The script lights the room with the TV alone ("blue, flickering"), and the CRT now carries the inn's baseball channel — a TV that is on is never static (director's rule, 26 September 2026); keep the room's blue flicker coming from the screen on set. The ringing payphone is shot 254. Jack getting Mr. Noda out is shot 256, with no weapons in frame.
+NOTE: Generated from shot 178. The script lights the room with the TV alone ("blue, flickering"), and the CRT now carries the inn's baseball channel — a TV that is on is never static (director's rule, 26 September 2026); keep the room's blue flicker coming from the screen on set. The ringing payphone is shot 254. Jack getting Mr. Noda out is shot 256, with no weapons in frame. Retake 29 September 2026 — the masks corrected to the locked costume: black lower-face mask under a dark knit cap, never white, never a full balaclava; staging, palette and props held to the previous frame. Costume reference: sheets/masked-man.jpg.
 
 ---
 

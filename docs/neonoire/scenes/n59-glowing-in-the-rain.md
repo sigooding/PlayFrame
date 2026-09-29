@@ -21,5 +21,5 @@ LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-228
 IMAGE: 226-at-the-edge-of-a-high-place.jpg
-NOTE: The Hive's daylight state follows shot 223; the parked cars are the audience's paranoia, not yet his.
+NOTE: The Hive's daylight state follows shot 223; the parked cars are the audience's paranoia, not yet his. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon eleven-storey Hive in the day murk; the embrace and the parked cars carried over.
 
