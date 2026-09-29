@@ -259,6 +259,16 @@
       "voiceId": "EEYUewEB5w5R0IPnszO5",
       "status": "uses the JOURNALIST voice",
       "notes": "Filter: tv."
+    },
+    "MRS. SAKAI": {
+      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "status": "draft-borrowed",
+      "note": "Draft only: borrowing Kaneko's voice (scene 29) because the workspace is at its custom-voice limit. Design a proper voice later (auditions in exports/neonoire/auditions/mrs-*.mp3)."
+    },
+    "MRS. NODA": {
+      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "status": "draft-borrowed",
+      "note": "Draft only: borrowing Kaneko's voice (scenes 32, 33, 37) because the workspace is at its custom-voice limit. Design a proper voice later (auditions in exports/neonoire/auditions/mrs-*.mp3)."
     }
   },
   "notDesignedYet": [

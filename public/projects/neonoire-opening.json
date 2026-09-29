@@ -6617,7 +6617,29 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of the roadside inn (26 September 2026), scenes 31, 32, 34, 38–41 and 45, boarded out of order for the stairway motif and the colour change; each cold frame was generated from its warm counterpart, with the recast Jack sheet, the inn key and the cold-open masked men as references. Production approval pending.\n\nThe roadside inn (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE ROADSIDE INN follows the style sheet sheets/roadside-inn.jpg, keys/09-the-roadside-inn.jpg and the master s31/169-the-only-car.jpg: two storeys of weathered wood, a tin roof, a gravel lot, a beer vending machine by the entrance, a pickup parked crooked behind. THE LOBBY follows s32/170-just-one-night.jpg (pink payphone, souvenir keyring case, CRT baseball on a shelf, wooden counter, the steep staircase at the back). THE STAIRS follow s32/171-upstairs-at-the-end.jpg. JACK'S ROOM follows s34/172-twenty-years-of-januaries.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt). MRS. NODA and MR. NODA (70s, Japanese) have no cards. THE MASKED MEN follow s1/12-masked-man-radio.jpg and the costume sheet sheets/masked-man.jpg (black clothes, dark knit cap over a BLACK lower-face mask covering nose and mouth, gloves, compact submachine guns): never white masks, never full balaclavas, never a face under the mask. STAIRWAY MOTIF: a low, level, static camera square to the flight; going up is refuge, something coming up from below is danger. COLOUR: THE WARM REFUGE — tungsten amber, ivory paper, tobacco wood, muted olive and the pink payphone, Tokyo Story restraint, a low static camera. AI-generated draft studies, not approved coverage.\n\nThe lobby master. Shots 176 and 178 are the same frame in the cold.\n\nSCRIPT — the draft's own words for this shot:\n\"She hands him a heavy old key on a wooden tag.\"\n\n50mm at seated height and at the foot of the stairs.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 18 of 31 — ten keyframes at a time, in screenplay order. Shot 172 of 307."
+      "notes": "Image: AI-generated first boarding of the roadside inn (26 September 2026), scenes 31, 32, 34, 38–41 and 45, boarded out of order for the stairway motif and the colour change; each cold frame was generated from its warm counterpart, with the recast Jack sheet, the inn key and the cold-open masked men as references. Production approval pending.\n\nThe roadside inn (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE ROADSIDE INN follows the style sheet sheets/roadside-inn.jpg, keys/09-the-roadside-inn.jpg and the master s31/169-the-only-car.jpg: two storeys of weathered wood, a tin roof, a gravel lot, a beer vending machine by the entrance, a pickup parked crooked behind. THE LOBBY follows s32/170-just-one-night.jpg (pink payphone, souvenir keyring case, CRT baseball on a shelf, wooden counter, the steep staircase at the back). THE STAIRS follow s32/171-upstairs-at-the-end.jpg. JACK'S ROOM follows s34/172-twenty-years-of-januaries.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt). MRS. NODA and MR. NODA (70s, Japanese) have no cards. THE MASKED MEN follow s1/12-masked-man-radio.jpg and the costume sheet sheets/masked-man.jpg (black clothes, dark knit cap over a BLACK lower-face mask covering nose and mouth, gloves, compact submachine guns): never white masks, never full balaclavas, never a face under the mask. STAIRWAY MOTIF: a low, level, static camera square to the flight; going up is refuge, something coming up from below is danger. COLOUR: THE WARM REFUGE — tungsten amber, ivory paper, tobacco wood, muted olive and the pink payphone, Tokyo Story restraint, a low static camera. AI-generated draft studies, not approved coverage.\n\nThe lobby master. Shots 176 and 178 are the same frame in the cold.\n\nSCRIPT — the draft's own words for this shot:\n\"She hands him a heavy old key on a wooden tag.\"\n\n50mm at seated height and at the foot of the stairs.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 18 of 31 — ten keyframes at a time, in screenplay order. Shot 172 of 307.",
+      "audio": [
+        {
+          "id": "s32-mrsnoda-just-one-night",
+          "character": "MRS. NODA",
+          "text": "Just one night?",
+          "src": "/audio/neonoire/s32/172-mrsnoda-just-one-night.mp3",
+          "offset": 0.3,
+          "duration": 1.31,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s32-jack-just-one",
+          "character": "JACK",
+          "text": "Just one.",
+          "src": "/audio/neonoire/s32/172-jack-just-one.mp3",
+          "offset": 2.28,
+          "duration": 0.99,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-173",
@@ -6631,7 +6653,7 @@
       "lens": "50mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 8,
+      "duration": 9,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -6639,7 +6661,19 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of the roadside inn (26 September 2026), scenes 31, 32, 34, 38–41 and 45, boarded out of order for the stairway motif and the colour change; each cold frame was generated from its warm counterpart, with the recast Jack sheet, the inn key and the cold-open masked men as references. Production approval pending.\n\nThe roadside inn (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE ROADSIDE INN follows the style sheet sheets/roadside-inn.jpg, keys/09-the-roadside-inn.jpg and the master s31/169-the-only-car.jpg: two storeys of weathered wood, a tin roof, a gravel lot, a beer vending machine by the entrance, a pickup parked crooked behind. THE LOBBY follows s32/170-just-one-night.jpg (pink payphone, souvenir keyring case, CRT baseball on a shelf, wooden counter, the steep staircase at the back). THE STAIRS follow s32/171-upstairs-at-the-end.jpg. JACK'S ROOM follows s34/172-twenty-years-of-januaries.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt). MRS. NODA and MR. NODA (70s, Japanese) have no cards. THE MASKED MEN follow s1/12-masked-man-radio.jpg and the costume sheet sheets/masked-man.jpg (black clothes, dark knit cap over a BLACK lower-face mask covering nose and mouth, gloves, compact submachine guns): never white masks, never full balaclavas, never a face under the mask. STAIRWAY MOTIF: a low, level, static camera square to the flight; going up is refuge, something coming up from below is danger. COLOUR: THE WARM REFUGE — tungsten amber, ivory paper, tobacco wood, muted olive and the pink payphone, Tokyo Story restraint, a low static camera. AI-generated draft studies, not approved coverage.\n\nTHE STAIR FRAME: the first use of the stairway motif, where going up means refuge. Shot 177 repeats this exact frame in the cold. Generated from shot 172.\n\nSCRIPT — the draft's own words for this shot:\n\"Upstairs, at the end. The bath is shared, I'm sorry. I'll show you.\"\n\n50mm at seated height and at the foot of the stairs.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 18 of 31 — ten keyframes at a time, in screenplay order. Shot 173 of 307."
+      "notes": "Image: AI-generated first boarding of the roadside inn (26 September 2026), scenes 31, 32, 34, 38–41 and 45, boarded out of order for the stairway motif and the colour change; each cold frame was generated from its warm counterpart, with the recast Jack sheet, the inn key and the cold-open masked men as references. Production approval pending.\n\nThe roadside inn (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE ROADSIDE INN follows the style sheet sheets/roadside-inn.jpg, keys/09-the-roadside-inn.jpg and the master s31/169-the-only-car.jpg: two storeys of weathered wood, a tin roof, a gravel lot, a beer vending machine by the entrance, a pickup parked crooked behind. THE LOBBY follows s32/170-just-one-night.jpg (pink payphone, souvenir keyring case, CRT baseball on a shelf, wooden counter, the steep staircase at the back). THE STAIRS follow s32/171-upstairs-at-the-end.jpg. JACK'S ROOM follows s34/172-twenty-years-of-januaries.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt). MRS. NODA and MR. NODA (70s, Japanese) have no cards. THE MASKED MEN follow s1/12-masked-man-radio.jpg and the costume sheet sheets/masked-man.jpg (black clothes, dark knit cap over a BLACK lower-face mask covering nose and mouth, gloves, compact submachine guns): never white masks, never full balaclavas, never a face under the mask. STAIRWAY MOTIF: a low, level, static camera square to the flight; going up is refuge, something coming up from below is danger. COLOUR: THE WARM REFUGE — tungsten amber, ivory paper, tobacco wood, muted olive and the pink payphone, Tokyo Story restraint, a low static camera. AI-generated draft studies, not approved coverage.\n\nTHE STAIR FRAME: the first use of the stairway motif, where going up means refuge. Shot 177 repeats this exact frame in the cold. Generated from shot 172.\n\nSCRIPT — the draft's own words for this shot:\n\"Upstairs, at the end. The bath is shared, I'm sorry. I'll show you.\"\n\n50mm at seated height and at the foot of the stairs.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 18 of 31 — ten keyframes at a time, in screenplay order. Shot 173 of 307.",
+      "audio": [
+        {
+          "id": "s32-mrsnoda-upstairs-at-the-end-the-bath",
+          "character": "MRS. NODA",
+          "text": "Upstairs, at the end. The bath is shared, I'm sorry. I'll show you. The light doesn't work properly.",
+          "src": "/audio/neonoire/s32/173-mrsnoda-upstairs-at-the-end-the-bath.mp3",
+          "offset": 0.3,
+          "duration": 7.89,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-174",
@@ -8189,7 +8223,49 @@
         "neonoire-jack",
         "neonoire-mrs-sakai"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe altar photograph is held to `s1/07-old-man.jpg`. Tatami beige and altar gold, grief draining the warmth — the colour arc's drained interior. The TV behind Sakai is on and never static: a muted daytime variety audience (director's rule, 26 September 2026).\n\nSCRIPT — the draft's own words for this shot:\n\"He started going to temple last year. Him. Temple.\"\n\n35mm across the kotatsu; the altar keeps the only smile.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 20s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 206 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe altar photograph is held to `s1/07-old-man.jpg`. Tatami beige and altar gold, grief draining the warmth — the colour arc's drained interior. The TV behind Sakai is on and never static: a muted daytime variety audience (director's rule, 26 September 2026).\n\nSCRIPT — the draft's own words for this shot:\n\"He started going to temple last year. Him. Temple.\"\n\n35mm across the kotatsu; the altar keeps the only smile.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 20s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 206 of 307.",
+      "audio": [
+        {
+          "id": "s29-mrssakai-we-haven-t-lived-together-in",
+          "character": "MRS. SAKAI",
+          "text": "We haven't lived together in fifteen years. The police already came.",
+          "src": "/audio/neonoire/s29/206-mrssakai-we-haven-t-lived-together-in.mp3",
+          "offset": 0.3,
+          "duration": 4.83,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-jack-i-m-not-the-police",
+          "character": "JACK",
+          "text": "I'm not the police.",
+          "src": "/audio/neonoire/s29/206-jack-i-m-not-the-police.mp3",
+          "offset": 6.1,
+          "duration": 1.49,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-mrssakai-then-what-are-you",
+          "character": "MRS. SAKAI",
+          "text": "Then what are you?",
+          "src": "/audio/neonoire/s29/206-mrssakai-then-what-are-you.mp3",
+          "offset": 8.34,
+          "duration": 1.57,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-jack-someone-who-owes-a-man-a",
+          "character": "JACK",
+          "text": "Someone who owes a man a debt. A long time ago. The same kind of debt your husband owed.",
+          "src": "/audio/neonoire/s29/206-jack-someone-who-owes-a-man-a.mp3",
+          "offset": 11.46,
+          "duration": 6.53,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-207",
@@ -8225,7 +8301,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 12,
+      "duration": 21,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -8234,7 +8310,49 @@
         "neonoire-jack",
         "neonoire-mrs-noda"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe swollen window is the escape route in shot 212 (scene 42) — same frame, same tiles. Warm tungsten and steam haze: the inn still refuge here.\n\nSCRIPT — the draft's own words for this shot:\n\"If it's too steamy, the window opens. If you hit it hard enough.\"\n\n35mm down the corridor; the window is the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 208 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe swollen window is the escape route in shot 212 (scene 42) — same frame, same tiles. Warm tungsten and steam haze: the inn still refuge here.\n\nSCRIPT — the draft's own words for this shot:\n\"If it's too steamy, the window opens. If you hit it hard enough.\"\n\n35mm down the corridor; the window is the scene.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 208 of 307.",
+      "audio": [
+        {
+          "id": "s33-mrsnoda-kitchen-if-you-want-tea-just",
+          "character": "MRS. NODA",
+          "text": "Kitchen. If you want tea, just take it. The back door sticks. My husband says he'll fix it. He's said so since the Olympics.",
+          "src": "/audio/neonoire/s33/208-mrsnoda-kitchen-if-you-want-tea-just.mp3",
+          "offset": 0.3,
+          "duration": 8.99,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s33-jack-which-olympics",
+          "character": "JACK",
+          "text": "Which Olympics?",
+          "src": "/audio/neonoire/s33/208-jack-which-olympics.mp3",
+          "offset": 9.96,
+          "duration": 1.23,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s33-mrsnoda-dryly-exactly",
+          "character": "MRS. NODA",
+          "text": "Exactly.",
+          "src": "/audio/neonoire/s33/208-mrsnoda-dryly-exactly.mp3",
+          "offset": 11.96,
+          "duration": 1.57,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s33-mrsnoda-if-it-s-too-steamy-the",
+          "character": "MRS. NODA",
+          "text": "If it's too steamy, the window opens. If you hit it hard enough.",
+          "src": "/audio/neonoire/s33/208-mrsnoda-if-it-s-too-steamy-the.mp3",
+          "offset": 14.88,
+          "duration": 4.6,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-209",
@@ -8271,7 +8389,7 @@
       "lens": "50mm",
       "lighting": "Low key",
       "style": "neonoire",
-      "duration": 14,
+      "duration": 31,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -8279,7 +8397,99 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nIntercut with shot 209's scene (35). Vera's original look, at home without the coat: the cream knit reads as the look, the coat is simply off. The warm pool is the voice on the line.\n\nSCRIPT — the draft's own words for this shot:\n\"Come back safe anyway.\"\n\n50mm at floor height; the phone light is the only lamp.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 210 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nIntercut with shot 209's scene (35). Vera's original look, at home without the coat: the cream knit reads as the look, the coat is simply off. The warm pool is the voice on the line.\n\nSCRIPT — the draft's own words for this shot:\n\"Come back safe anyway.\"\n\n50mm at floor height; the phone light is the only lamp.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 210 of 307.",
+      "audio": [
+        {
+          "id": "s36-vera-mara",
+          "character": "VERA",
+          "text": "Mara?",
+          "src": "/audio/neonoire/s36/210-vera-mara.mp3",
+          "offset": 0.3,
+          "duration": 0.99,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-jack-it-s-me",
+          "character": "JACK",
+          "text": "It's me.",
+          "src": "/audio/neonoire/s36/210-jack-it-s-me.mp3",
+          "offset": 2.26,
+          "duration": 0.84,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-vera-where-are-you-you-sound-like",
+          "character": "VERA",
+          "text": "Where are you? You sound like you're calling from 1985.",
+          "src": "/audio/neonoire/s36/210-vera-where-are-you-you-sound-like.mp3",
+          "offset": 4.26,
+          "duration": 3.97,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-jack-the-countryside-there-s-no-signal",
+          "character": "JACK",
+          "text": "The countryside. There's no signal. I'm on a payphone. It's pink.",
+          "src": "/audio/neonoire/s36/210-jack-the-countryside-there-s-no-signal.mp3",
+          "offset": 9.08,
+          "duration": 5.15,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-vera-did-you-find-anything",
+          "character": "VERA",
+          "text": "Did you find anything?",
+          "src": "/audio/neonoire/s36/210-vera-did-you-find-anything.mp3",
+          "offset": 15.2,
+          "duration": 1.31,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-jack-maybe-i-ll-know-tomorrow",
+          "character": "JACK",
+          "text": "Maybe. I'll know tomorrow.",
+          "src": "/audio/neonoire/s36/210-jack-maybe-i-ll-know-tomorrow.mp3",
+          "offset": 18.08,
+          "duration": 2.27,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-vera-come-back-safe",
+          "character": "VERA",
+          "text": "Come back safe.",
+          "src": "/audio/neonoire/s36/210-vera-come-back-safe.mp3",
+          "offset": 21.32,
+          "duration": 1.41,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-jack-it-s-just-an-inn-there",
+          "character": "JACK",
+          "text": "It's just an inn. There's an old couple and a baseball game.",
+          "src": "/audio/neonoire/s36/210-jack-it-s-just-an-inn-there.mp3",
+          "offset": 23.48,
+          "duration": 3.97,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s36-vera-come-back-safe-anyway",
+          "character": "VERA",
+          "text": "Come back safe anyway.",
+          "src": "/audio/neonoire/s36/210-vera-come-back-safe-anyway.mp3",
+          "offset": 28.3,
+          "duration": 1.8,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-211",
@@ -8293,7 +8503,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 14,
+      "duration": 20,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -8302,7 +8512,49 @@
         "neonoire-jack",
         "neonoire-mrs-noda"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 22; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nLast warm frame before the cold: doorway tungsten behind, blue rain beyond. The pickup is the getaway the script never calls a getaway.\n\nSCRIPT — the draft's own words for this shot:\n\"The keys are always in it. Who would steal that?\"\n\n35mm from inside the doorway; the last warm night.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 22 of 31 — ten keyframes at a time, in screenplay order. Shot 211 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 22; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nLast warm frame before the cold: doorway tungsten behind, blue rain beyond. The pickup is the getaway the script never calls a getaway.\n\nSCRIPT — the draft's own words for this shot:\n\"The keys are always in it. Who would steal that?\"\n\n35mm from inside the doorway; the last warm night.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 22 of 31 — ten keyframes at a time, in screenplay order. Shot 211 of 307.",
+      "audio": [
+        {
+          "id": "s37-mrsnoda-don-t-tell-my-husband",
+          "character": "MRS. NODA",
+          "text": "Don't tell my husband.",
+          "src": "/audio/neonoire/s37/211-mrsnoda-don-t-tell-my-husband.mp3",
+          "offset": 0.3,
+          "duration": 1.8,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s37-jack-i-quit",
+          "character": "JACK",
+          "text": "I quit.",
+          "src": "/audio/neonoire/s37/211-jack-i-quit.mp3",
+          "offset": 2.76,
+          "duration": 1.15,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s37-mrsnoda-then-you-ll-understand-why-i",
+          "character": "MRS. NODA",
+          "text": "Then you'll understand why I don't want him to know.",
+          "src": "/audio/neonoire/s37/211-mrsnoda-then-you-ll-understand-why-i.mp3",
+          "offset": 4.58,
+          "duration": 3.4,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s37-mrsnoda-sorry-about-the-truck-he-parks",
+          "character": "MRS. NODA",
+          "text": "Sorry about the truck. He parks it like he's drunk. He's never drunk. The keys are always in it. Who would steal that?",
+          "src": "/audio/neonoire/s37/211-mrsnoda-sorry-about-the-truck-he-parks.mp3",
+          "offset": 10.44,
+          "duration": 8.75,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-212",
@@ -10296,7 +10548,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 8,
+      "duration": 55,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -10305,7 +10557,59 @@
         "neonoire-jack",
         "neonoire-mrs-sakai"
       ],
-      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nCoverage, shot 273. The room, the quilted cover, the tea things, the altar and Sakai's photograph hold to s29/204-the-tea-she-does-not-want-to-pour.jpg; Mrs Sakai stays in her navy indigo top with grey hair pinned back, Jack kneels opposite in the charcoal jacket and off-white collar per sheets/jack.jpg. The bundle is the one Jack spreads in scene 34, lettered there in s34/173-no-114.jpg; at this size it stays whole and unreadable — no legible text invented. Twenty years of Januaries change hands in this frame.\n\nSCRIPT — the draft's own words for this shot:\n\"She puts them in front of Jack.\"\n\n35mm across the kotatsu; the altar keeps the only smile.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 28 of 31 — ten keyframes at a time, in screenplay order. Shot 273 of 307."
+      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nCoverage, shot 273. The room, the quilted cover, the tea things, the altar and Sakai's photograph hold to s29/204-the-tea-she-does-not-want-to-pour.jpg; Mrs Sakai stays in her navy indigo top with grey hair pinned back, Jack kneels opposite in the charcoal jacket and off-white collar per sheets/jack.jpg. The bundle is the one Jack spreads in scene 34, lettered there in s34/173-no-114.jpg; at this size it stays whole and unreadable — no legible text invented. Twenty years of Januaries change hands in this frame.\n\nSCRIPT — the draft's own words for this shot:\n\"She puts them in front of Jack.\"\n\n35mm across the kotatsu; the altar keeps the only smile.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 28 of 31 — ten keyframes at a time, in screenplay order. Shot 273 of 307.",
+      "audio": [
+        {
+          "id": "s29-mrssakai-he-started-going-to-temple-last",
+          "character": "MRS. SAKAI",
+          "text": "He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head. Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl. When the doctor told him, he said he was glad. He said now he could stop being afraid of the wrong thing.",
+          "src": "/audio/neonoire/s29/273-mrssakai-he-started-going-to-temple-last.mp3",
+          "offset": 0.4,
+          "duration": 25.16,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-jack-did-he-ever-pay-rent-on",
+          "character": "JACK",
+          "text": "Did he ever pay rent on something? Somewhere that wasn't his home?",
+          "src": "/audio/neonoire/s29/273-jack-did-he-ever-pay-rent-on.mp3",
+          "offset": 26.52,
+          "duration": 4.36,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-mrssakai-every-january-cash-in-an-envelope",
+          "character": "MRS. SAKAI",
+          "text": "Every January. Cash, in an envelope. Twenty years. Even the years we had nothing, he paid it. I thought it was a woman.",
+          "src": "/audio/neonoire/s29/273-mrssakai-every-january-cash-in-an-envelope.mp3",
+          "offset": 31.84,
+          "duration": 10.11,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-mrssakai-he-left-these-here-maybe-on",
+          "character": "MRS. SAKAI",
+          "text": "He left these here. Maybe on purpose.",
+          "src": "/audio/neonoire/s29/273-mrssakai-he-left-these-here-maybe-on.mp3",
+          "offset": 43.52,
+          "duration": 3.24,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s29-mrssakai-whatever-it-is-it-was-heavier",
+          "character": "MRS. SAKAI",
+          "text": "Whatever it is, it was heavier than me. He carried it longer.",
+          "src": "/audio/neonoire/s29/273-mrssakai-whatever-it-is-it-was-heavier.mp3",
+          "offset": 48.72,
+          "duration": 4.75,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-274",
