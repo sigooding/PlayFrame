@@ -391,9 +391,15 @@ turn.
 
 6. **Script-pass boards (Part 9 items 4–5):** scenes 60, 68, 77, 80 and 84 received in-place image retakes; 25A, 27A and 63A were inserted as shots 287–296 without renumbering. Scene 17’s board/image were explicitly reverted and must remain untouched; its screenplay still says fourth stool. See the handoff and pass ledgers for review caveats.
 
-7. **Boards to retake for story pass 2:** shots 132, 133, 267 (scene 90) and 134–136 (scene 91) still show the retired
-   roof, gap and walkway; they are held Needs review (`scripts/neonoire/rewrite-pending.mjs`). Scenes 53A, 82A
-   and 99A have no shots (99A needs the plaza). Scenes 83 and 84 boards do not yet show the folder or the bag.
+7. **DONE 29 September 2026 — story pass 2 boards (Part 9 item 7):** the six escape frames (132, 133, 267,
+   134–136) were regenerated in place to the rewritten scenes 90–91 and released from Needs review;
+   `scripts/neonoire/rewrite-pending.mjs` is empty. Scenes 53A, 82A and 99A are boarded as shots 297–299,
+   300–302 and 305–307; scenes 83, 84, 96 and 97 carry the folder, the bag and the evidence exchange, the
+   phone call (shot 303) and the crawl insert with Harada (shot 304). Eight shots hold honest placeholder
+   cards with pass briefs (298, 299, 300, 302, 303, 304, 306, 307 — the session's ten generation calls went
+   to the six escape retakes, one drifted retake and the hero frames 297, 301, 305). Production checks:
+   the 83/84 studies predate the folder and the bag and shot 149 predates Harada — frames show the old
+   props, boards show the new. See [the pass ledger](passes/story-pass-2-boards.md).
 8. **"Twenty years ago" vs "the bubble years"** (sc 23, and the backstory): the present has smartphones, so the
    bubble era is more than twenty years back. Left vague on purpose; do not add a year.
 9. **Procedure:** whether prosecutors would take a chairman from a ceremony, and the notion of a "voluntary"

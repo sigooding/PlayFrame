@@ -3,8 +3,8 @@ SCREENPLAY — SCENE 97 — EXT. THE HIVE
 
 EXT. THE HIVE - MORNING
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
-Cast: Vera Voss, Kaneko, Kurose, Jack.
-Grammar: 24mm on the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack.
+Cast: Vera Voss, Kaneko, Kurose, Jack, Harada.
+Grammar: 24mm on the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack, and one insert on the screens.
 
 EXT. THE HIVE - MORNING #97#
 
