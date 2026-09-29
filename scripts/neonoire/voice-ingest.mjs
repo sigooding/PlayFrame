@@ -5,6 +5,9 @@
 //     --text "[quietly] She said to tell you she was sorry." --file /path/take.mp3 --offset 0.4 \
 //     --voice MZhx7pKflsc0sAwciDEy --model eleven_v4
 //
+// --replace       re-record an existing --id: the old take is archived (docs/neonoire/voice/archive/), never deleted,
+//                  and the line keeps its id and file path so nothing that points at it breaks.
+// --gen flow/session/generation   the ElevenLabs ids of the take, kept for provenance.
 // --file may also be an https URL: download it at once, generation links expire after two hours.
 // Needs ffmpeg for the duration (FFMPEG=/path/to/ffmpeg, or `pip install imageio-ffmpeg`).
 import { execFileSync } from "node:child_process";
@@ -25,8 +28,21 @@ const sceneKey = frame.sceneId.replace(/^neonoire-/, "");
 const slug = String(args.slug || args.text).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").split("-").slice(0, 6).join("-");
 const ext = (String(args.file).match(/\.(mp3|wav|m4a|ogg)(?:\?|$)/i)?.[1] || "mp3").toLowerCase();
 const rel = `/audio/neonoire/${sceneKey}/${number}-${args.character.toLowerCase().replace(/[^a-z]+/g, "")}-${slug}.${ext}`;
-const dest = resolve(root, "public" + rel);
+const manifest0 = readManifest(root);
+const existing = args.replace !== undefined ? manifest0.lines.find(l => l.id === args.id) : undefined;
+if (args.replace !== undefined && !existing) { console.error(`--replace needs an existing --id; ${args.id} is not in the manifest`); process.exit(1); }
+const finalRel = existing ? existing.file : rel;
+const dest = resolve(root, "public" + finalRel);
 mkdirSync(dirname(dest), { recursive: true });
+if (existing) {
+  // Keep the take being replaced: archive it before the new file overwrites it.
+  const n = (existing.history?.length || 0) + 1;
+  const archiveRel = `docs/neonoire/voice/archive/${basename(finalRel).replace(/\.[^.]+$/, "")}-v${n}.${finalRel.split(".").pop()}`;
+  mkdirSync(dirname(resolve(root, archiveRel)), { recursive: true });
+  copyFileSync(dest, resolve(root, archiveRel));
+  existing.history = [...(existing.history || []), { file: archiveRel, ...(existing.prompt ? { prompt: existing.prompt } : { prompt: existing.text }), model: existing.model, ...(existing.generation ? { generation: existing.generation } : {}), archivedAt: new Date().toISOString().slice(0, 10) }];
+  writeFileSync(resolve(root, MANIFEST), JSON.stringify(manifest0, null, 2) + "\n");
+}
 
 if (/^https?:\/\//.test(args.file)) {
   // curl, not fetch: it honors the proxy settings of a sandboxed or corporate environment.
@@ -47,12 +63,20 @@ const plain = args.text.replace(/\[[^\]]*\]\s*/g, "").trim();
 const manifest = readManifest(root);
 const voices = readVoices(root);
 const id = args.id || `${sceneKey}-${args.character.toLowerCase().replace(/[^a-z]+/g, "")}-${slug}`;
-if (manifest.lines.some(l => l.id === id)) { console.error(`Line id ${id} already exists; pass --id`); process.exit(1); }
-manifest.lines.push({
-  id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(plain !== args.text ? { prompt: args.text } : {}), file: rel,
-  offset: Number(args.offset ?? 0.4), ...(duration ? { duration } : {}),
+const generation = args.gen ? (([flow, session, gen]) => ({ flow, session, id: gen }))(args.gen.split("/")) : undefined;
+const entry = {
+  id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(plain !== args.text ? { prompt: args.text } : {}), file: finalRel,
+  offset: Number(args.offset ?? existing?.offset ?? 0.4), ...(duration ? { duration } : {}),
   voice: args.voice || voices.characters[args.character.toUpperCase()]?.voiceId || undefined,
-  model: args.model || voices.speechModel, status: args.status || "take",
-});
+  model: args.model || voices.speechModel, ...(generation ? { generation } : {}), status: args.status || "take",
+};
+if (existing) {
+  // Same id, same file path: the new take replaces the old one in place; the old take stays in `history`.
+  const at = manifest.lines.findIndex(l => l.id === id);
+  manifest.lines[at] = { ...entry, history: manifest.lines[at].history };
+} else {
+  if (manifest.lines.some(l => l.id === id)) { console.error(`Line id ${id} already exists; pass --id, or --replace to re-record it`); process.exit(1); }
+  manifest.lines.push(entry);
+}
 writeFileSync(resolve(root, MANIFEST), JSON.stringify(manifest, null, 2) + "\n");
-console.log(`Recorded ${id}: public${rel}${duration ? ` (${duration}s)` : ""} on ${args.frame} at ${args.offset ?? 0.4}s. Now run: npm run build:neonoire`);
+console.log(`${existing ? "Replaced" : "Recorded"} ${id}: public${finalRel}${duration ? ` (${duration}s)` : ""} on ${args.frame} at ${entry.offset}s. Now run: npm run build:neonoire`);

@@ -11,7 +11,12 @@
       "duration": 5.99,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_multilingual_v2",
-      "status": "pilot"
+      "status": "pilot",
+      "generation": {
+        "flow": "DwKpFhCLPLT85zxaqs7f",
+        "session": "ijI9rFvUU7rsN7zhzzCF",
+        "id": "AlOJ2dmPqrknT1uygJqQ"
+      }
     },
     {
       "id": "s98-vera-rain",
@@ -23,7 +28,12 @@
       "duration": 1.95,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_multilingual_v2",
-      "status": "pilot"
+      "status": "pilot",
+      "generation": {
+        "flow": "vN8Ah5lIPjcsihFxK7dl",
+        "session": "G6sW785uwvXRE3FDuAmJ",
+        "id": "blujDVEm1hbU3WHyuX8a"
+      }
     },
     {
       "id": "s62-jack-tomorrow",
@@ -35,7 +45,12 @@
       "duration": 2.85,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "6Bt6RYABNDRz3yknSs4v",
+        "id": "PWxXRycTvr0nW07z4irN"
+      }
     },
     {
       "id": "s62-vera-like-a-date",
@@ -47,7 +62,12 @@
       "duration": 1.07,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "WeVQnhvHEh5UhxvpyZtR",
+        "id": "sGbtngc7oAzR9JDR9mvq"
+      }
     },
     {
       "id": "s62-jack-like-a-date",
@@ -59,7 +79,12 @@
       "duration": 1.15,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "5mlyCV07M2THC02WjZsZ",
+        "id": "wMp7xM4QiBAtMWu9WYwl"
+      }
     },
     {
       "id": "s62-vera-my-sister",
@@ -71,7 +96,12 @@
       "duration": 2.12,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "lEkTa8IRUmFfZ1rlExqF",
+        "id": "MgaweHWGBw405VHKAhAJ"
+      }
     },
     {
       "id": "s62-jack-i-know",
@@ -83,7 +113,12 @@
       "duration": 0.91,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "mzXrdyzkEcNkMGOE8odW",
+        "id": "YDy2E8Y7VfaLiInTsHLL"
+      }
     },
     {
       "id": "s62-jack-something-to-tell",
@@ -92,11 +127,23 @@
       "text": "There's something I need to tell you. I want to tell you properly. Not in an office. Not on a train.",
       "file": "/audio/neonoire/s62/231-jack-something-to-tell.mp3",
       "offset": 10.9,
-      "duration": 6.69,
+      "duration": 6.77,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
+      "generation": {
+        "flow": "f2ZXvDiE6UcQ0GE33bux",
+        "session": "sfYsLJe7xfQkFul6ymb0",
+        "id": "bIfmtlt9a0Mp4uyldsZB"
+      },
       "status": "take",
-      "prompt": "[quietly] There's something I need to tell you. I want to tell you properly. Not in an office. Not on a train."
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/231-jack-something-to-tell-v1.mp3",
+          "prompt": "[quietly] There's something I need to tell you. I want to tell you properly. Not in an office. Not on a train.",
+          "model": "eleven_v4",
+          "archivedAt": "2026-09-29"
+        }
+      ]
     },
     {
       "id": "s62-vera-okay",
@@ -109,7 +156,12 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "status": "take",
-      "prompt": "[warmly] Okay."
+      "prompt": "[warmly] Okay.",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "xC6u6yAFFTBeCeN9X7FU",
+        "id": "Mz7mrvNfrgKhWy7QUzpW"
+      }
     },
     {
       "id": "s62-jack-old-hotel",
@@ -121,7 +173,12 @@
       "duration": 4.36,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "SgavS9HZ1G7z1uuEVz31",
+        "id": "c519n8VS1zYS9QuWS2c0"
+      }
     },
     {
       "id": "s62-vera-ten-oclock",
@@ -133,7 +190,12 @@
       "duration": 1.23,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
-      "status": "take"
+      "status": "take",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "wHfJIKKsUPt8fKL4OXVy",
+        "id": "DcHx7STHqFqSyJZ3CAD6"
+      }
     },
     {
       "id": "s74-vera-dont",
@@ -146,20 +208,38 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "status": "take",
-      "prompt": "[trembling voice] Don't."
+      "prompt": "[trembling voice] Don't.",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "kMhBsDnlu8fmINWC2wqK",
+        "id": "AmmAtHkLS3iS3iiBU0SS"
+      }
     },
     {
       "id": "s74-vera-you-knew",
       "frameId": "neonoire-shot-74",
       "character": "VERA",
       "text": "You knew.",
+      "prompt": "[trembling voice] You knew.",
       "file": "/audio/neonoire/s74/74-vera-you-knew.mp3",
       "offset": 17,
-      "duration": 1.23,
+      "duration": 1.72,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
+      "generation": {
+        "flow": "f2ZXvDiE6UcQ0GE33bux",
+        "session": "Ge4sz4b0NhWn5ezH87Hs",
+        "id": "enTElOdJi36zTB8R1LuN"
+      },
       "status": "take",
-      "prompt": "[quietly] You knew."
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/74-vera-you-knew-v1.mp3",
+          "prompt": "[quietly] You knew.",
+          "model": "eleven_v4",
+          "archivedAt": "2026-09-29"
+        }
+      ]
     },
     {
       "id": "s74-vera-where-she-was",
@@ -172,33 +252,64 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "status": "take",
-      "prompt": "[voice breaking] You knew where she was."
+      "prompt": "[voice breaking] You knew where she was.",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "j550kCrNLe25XqBXRNN0",
+        "id": "CwoIh6dFvPFzS9BE3a6T"
+      }
     },
     {
       "id": "s74-vera-why-didnt-you",
       "frameId": "neonoire-shot-75",
       "character": "VERA",
       "text": "Why didn't you tell me?",
+      "prompt": "[crying] Why didn't you tell me?",
       "file": "/audio/neonoire/s74/75-vera-why-didnt-you.mp3",
       "offset": 20,
-      "duration": 2.04,
+      "duration": 2.93,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
+      "generation": {
+        "flow": "f2ZXvDiE6UcQ0GE33bux",
+        "session": "qYBGbAlTovcCYVD5j6hb",
+        "id": "FHnxUEkuHZhaHYffKAOg"
+      },
       "status": "take",
-      "prompt": "[whispers] Why didn't you tell me?"
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/75-vera-why-didnt-you-v1.mp3",
+          "prompt": "[whispers] Why didn't you tell me?",
+          "model": "eleven_v4",
+          "archivedAt": "2026-09-29"
+        }
+      ]
     },
     {
       "id": "s74-vera-waiting-for-me",
       "frameId": "neonoire-shot-75",
       "character": "VERA",
       "text": "She was waiting for me.",
+      "prompt": "[voice breaking] [crying] She was waiting for me.",
       "file": "/audio/neonoire/s74/75-vera-waiting-for-me.mp3",
       "offset": 27,
-      "duration": 1.88,
+      "duration": 2.59,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
+      "generation": {
+        "flow": "f2ZXvDiE6UcQ0GE33bux",
+        "session": "6ZN7qMu23p3C33vNLdpo",
+        "id": "1empNO41mKEaYtC9CkjZ"
+      },
       "status": "take",
-      "prompt": "[barely audible] She was waiting for me."
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/75-vera-waiting-for-me-v1.mp3",
+          "prompt": "[barely audible] She was waiting for me.",
+          "model": "eleven_v4",
+          "archivedAt": "2026-09-29"
+        }
+      ]
     },
     {
       "id": "s74-vera-waiting-for-you",
@@ -211,7 +322,12 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "status": "take",
-      "prompt": "[crying] And I was waiting for you."
+      "prompt": "[crying] And I was waiting for you.",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "uL57Hrc2D2mKhNpBU1uW",
+        "id": "VdJdiaMc07NvUGxesEv1"
+      }
     },
     {
       "id": "s74-vera-with-her",
@@ -224,7 +340,12 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "status": "take",
-      "prompt": "[crying] And you were with her."
+      "prompt": "[crying] And you were with her.",
+      "generation": {
+        "flow": "6y2RZzU9nWY3F6mlIy8y",
+        "session": "pvjx59gHVS0WVMAHIOk5",
+        "id": "SKe0yhDUgnvpY4hooi6u"
+      }
     }
   ]
 }
