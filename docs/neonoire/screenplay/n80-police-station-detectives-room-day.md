@@ -9,11 +9,11 @@ him.
 
 INT. POLICE STATION, DETECTIVES' ROOM - DAY #80#
 
-Rows of cluttered desks. Phones. The radio playing low somewhere. On the wall, the clock that runs a minute fast.
+Rows of cluttered desks, most of them empty: the shift change. Two young detectives at the far end, heads down over paperwork, too far away to hear. On the wall, the clock that runs a minute fast.
 
 Ishida sits at his desk writing a report in careful longhand.
 
-Jack walks the length of the room. Detectives look up and then look away. He hasn't shaved. There is still dried blood in the creases of his knuckles.
+Jack walks the length of the room. The young detectives glance up and then look away. He hasn't shaved. There is still dried blood in the creases of his knuckles.
 
 He stops at Ishida's desk. Ishida doesn't look up.
 
@@ -35,7 +35,7 @@ You told me yourself, Jack.
 (beat)
 You always tell the wrong person.
 
-Jack's hands close at his sides. The room has gone quiet around them.
+Jack's hands close at his sides. The far end of the room has gone quiet.
 
 JACK
 (in Japanese)
@@ -47,7 +47,7 @@ I have never killed anyone in my life.
 (beat)
 I only ever told people where to find them.
 
-Jack looks at him for a long time. Everyone in the room is waiting for him to hit Ishida.
+Jack looks at him for a long time. Ishida almost seems to want him to.
 
 He doesn't.
 

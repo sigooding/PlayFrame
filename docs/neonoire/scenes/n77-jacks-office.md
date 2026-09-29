@@ -25,7 +25,7 @@ NOTE: Room master for Jack's office. Generated from the room study with the new 
 
 88. INSERT — 50mm, static, high angle — a clean envelope.
 From above the desk: the lamp base and rotary phone at the edges, the drawer pulled open with a box of plain envelopes, and Jack's grimy hands sliding the green cloth notebook into a clean white envelope. A capped black pen waits on the desk.
-SCRIPT: "He opens the drawer. Takes out a clean envelope. Puts the notebook inside."
+SCRIPT: "He opens the drawer. Takes out a clean envelope. Takes Sakai's letter from his coat, smooths it once more along its crease, and folds it inside the notebook's cover. Puts the notebook in the envelope."
 CAST: Jack
 LIGHT: Low key
 TIME: 8

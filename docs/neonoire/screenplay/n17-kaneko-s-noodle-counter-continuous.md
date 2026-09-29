@@ -10,7 +10,7 @@ INT. KANEKO'S NOODLE COUNTER - CONTINUOUS #17#
 
 Steam. A single fluorescent tube. Two customers slurping in silence at the far end.
 
-Behind the counter, KANEKO works a pot with long chopsticks. She looks up as Jack sits on the third stool.
+Behind the counter, KANEKO works a pot with long chopsticks. She looks up as Jack sits on the fourth stool, beside the third.
 
 She looks at him for a long time. Longer than a stranger would.
 
@@ -24,11 +24,11 @@ So did you.
 
 KANEKO
 (in Japanese)
-I was already old. You were a boy in a cheap suit. You came here with the American.
+I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American.
 (beat)
-You always sat there. He sat where you're sitting now.
+You always sat there. He sat there.
 
-Jack looks at the counter under his hands.
+Jack looks at the third stool, empty beside him, and then at the counter under his hands.
 
 JACK
 (in Japanese)

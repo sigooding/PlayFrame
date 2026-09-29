@@ -1,5 +1,11 @@
 # NEONOIRE — keyframe handoff
 
+**Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
+
+## Script pass — 29 September 2026 (story fixes and three new scenes)
+
+The director approved a script pass; the changes and their reasons are in [`story-bible.md`](story-bible.md) Part 9, items 4–5. In short: Jack asks Ishida for the widow's address (sc 23); Ishida explains the leak away in sc 61; Jack sits on the **fourth** stool in sc 17 (so the second bowl in sc 100 is his) with a line making him a Japanese-American ex-detective; Mara's drawing is planted on the storeroom wall (60/68/84); the letter goes in with the notebook (77); the detectives' room is emptied (80); Vera works out Ishida (84); and three scenes are inserted, unboarded, as **25A** (breakfast), **27A** (Vera at Okada's) and **63A** (Ueno, the tail lost). `plan.mjs` now reads `#25A#`-style markers; `npm run split:neonoire`, `build:neonoire` and `verify:neonoire` all pass (103 scenes, 286 shots). Script quotes in `scenes/n77` and `scenes/n80` were updated to match. **Boards still to retake:** sc 17 (Jack on the third stool in shot 189 and coverage), 60, 68, 77, 80, 84, and shots for 25A, 27A, 63A. The key stays 114 in the script (the board's oval tag reads 87).
+
 ## Merged to main — 29 September 2026
 
 This branch (`arena/01a0ea4b-playframe`) is merged to `main` in PR #36 — the whole September retake programme: the Hive canon and look (all thirty-four frames), the Kanda alley layout, and the roadside inn style sheet and mask rule. The branch stays open for future passes; merge again when the next batch lands.

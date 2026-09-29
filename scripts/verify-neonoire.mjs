@@ -56,9 +56,9 @@ const {
 // ---------------------------------------------------------------- schema and ceilings
 validatePatch(project);
 assert.equal(project.acts.length, 1);
-assert.equal(project.scenes.length, 100, "The final screenplay's 100 numbered scenes all belong to the workspace");
+assert.equal(project.scenes.length, 103, "The final screenplay's 100 numbered scenes and 3 inserted Act Two scenes (25A, 27A, 63A) all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 100, "All one hundred scenes of the screenplay are boarded");
+assert.equal(boardedIds.size, 100, "All one hundred numbered scenes of the screenplay are boarded; the three inserted scenes are written, not boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
 const EXPECTED_SHOTS = 286;
@@ -92,10 +92,10 @@ for (const scene of project.scenes) {
   assert(line.includes(scene.location), `${scene.title}'s heading should name its location`);
 }
 // The workspace script is the draft with its one hundred `#n#` markers removed, and nothing else changed.
-const clean = fountain.replace(/ #\d+#(?=\n|$)/g, "");
+const clean = fountain.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 assert.equal(project.script.replace(/\s+$/, ""), clean.replace(/\s+$/, ""), "The screenplay should be the draft, minus its scene-number markers");
 for (const scene of project.scenes) assert(project.script.includes(`${scene.location} - ${scene.time}`), `${scene.title}'s slugline must survive in the script`);
-pass(`the screenplay carries all 100 scenes, in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
+pass(`the screenplay carries all 103 scenes (100 numbered, 3 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
 
 // ---------------------------------------------------------------- frames, lenses, keyframes
 for (const frame of project.frames) {
@@ -820,7 +820,7 @@ for (const frame of project.frames) {
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
 assert.equal(imported.frames.length, EXPECTED_SHOTS);
-assert.equal(imported.scenes.length, 100, "A re-import carries the whole final screenplay");
+assert.equal(imported.scenes.length, 103, "A re-import carries the whole final screenplay");
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
 // ---------------------------------------------------------------- persistence
@@ -841,7 +841,7 @@ try {
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
       assert.equal(opened.frames.length, ${EXPECTED_SHOTS});
-      assert.equal(opened.scenes.length, 100);
+      assert.equal(opened.scenes.length, 103);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
 

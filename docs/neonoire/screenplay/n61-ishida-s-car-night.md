@@ -12,6 +12,14 @@ Parked under an elevated expressway. Rain drumming on the roof. The dashboard gl
 
 Ishida behind the wheel. Jack in the passenger seat. Neither looks at the other.
 
+ISHIDA
+(in Japanese)
+The inn. I heard this morning. Thank God.
+(beat)
+The widow's file went through the department the day I pulled it. Someone read it. I am looking for him.
+
+Jack studies the side of his face. It is the answer he needs. He takes it.
+
 JACK
 (in Japanese)
 I have a witness. From the bar.

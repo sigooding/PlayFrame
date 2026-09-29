@@ -8,7 +8,9 @@ Grammar: 35mm across the futon; the key changes hands for the last time.
 
 INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #60#
 
-The bulb. Mara sits on the futon with her knees pulled up. Her face is swollen from crying. Jack crouches in front of her.
+The bulb. Mara sits on the futon with her knees pulled up. Her face is swollen from crying. On the wall beside her, taped up with rice-paper tape: a new drawing, still smudged. The noodle counter from behind the curtain. The back of a head on the third stool.
+
+Jack crouches in front of her.
 
 MARA
 She was right there. She was right there and I --

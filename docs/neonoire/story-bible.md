@@ -5,8 +5,8 @@ Purpose: give any later session the reasoning behind the script, so it can compa
 PlayFrame against what was decided, and why.
 
 **Baseline files (keep with this document):**
-- `Neonoire_Draft1_2026-09-25.fountain` — the first complete draft exactly as written (100 scenes),
-  before any later change. PlayFrame's `Neonoire (3).fountain` started byte-identical to this.
+- `baseline/Neonoire_Draft1_2026-09-25.fountain` (in this folder) — the first complete draft exactly as written (100 scenes),
+  before any later change. PlayFrame's `Neonoire (3).fountain` (repo root) started byte-identical to this.
 - Later changes are listed in Part 9. Anything in PlayFrame that differs from Draft 1 and is not in
   Part 9 was changed in PlayFrame, not in this conversation.
 
@@ -188,7 +188,7 @@ story in a place about to disappear. Canon decided 28–29 September:
 **Vera's apartment** — one room, third floor of a plain 1970s block by the elevated line; the bed is
 against the wall opposite the window; no sofa. Her building must never look like the Hive.
 
-**Kanda backstreet** — a pedestrian lane too narrow for cars; the sedan blocks the alley mouth.
+**Kanda backstreet** — a pedestrian lane too narrow for cars; the sedan blocks the alley mouth → script pass (Part 9 item 4) → three new Act Two scenes (25A, 27A, 63A).
 Layout: car end → old man → barbershop doorway / vending machine → bar sign.
 
 **The roadside inn** — a random, faded 1975 inn outside Tokyo with no hidden connection to the plot
@@ -286,11 +286,44 @@ turn.
 3. **The Hive script lines (29 Sept).** Scene 15: stepped tower, dead neon, its own haze by day.
    Scenes 16, 55: daylight in thin shafts through steam. Scene 90: the roof of the low rear wing.
 
+4. **Script pass, 29 September (after this log was first written).** Made in PlayFrame on the
+   director's approval, in `Neonoire (3).fountain`:
+   - **Sc 23:** Jack asks Ishida for Sakai's wife; Ishida writes the address on a napkin (so sc 50's
+     "he asked Ishida for the widow's address" is now on screen).
+   - **Sc 61:** Ishida opens the scene with the explanation Jack needs to keep trusting him — "the
+     widow's file went through the department the day I pulled it. Someone read it."
+   - **Sc 17:** Jack now sits on the **fourth** stool, beside the third; Kaneko: "You always sat
+     there. He sat there." This makes the second bowl on the fourth stool in sc 100 Jack's own.
+     Also Kaneko's line "the only foreign face on the force. Japanese papers, American face"
+     (resolves Part 10 item 1, option a: Jack is a naturalized Japanese-American).
+   - **Sc 20:** Mara sent Sakai and the journalist a photo; Sakai wrote back "You have his face"
+     (why they knew her on sight in sc 1–2).
+   - **Sc 59:** Jack arrives because Kaneko phoned him ("the sister is here").
+   - **Sc 60 / 68 / 84:** Mara's drawing of the back of Vera's head is taped on the storeroom wall in
+     60; in 68 she takes the other pages and leaves the drawings from behind the curtain; sc 84's wall
+     is now planted.
+   - **Sc 77:** Jack slips Sakai's letter inside the notebook cover before sealing the envelope.
+   - **Sc 80:** the detectives' room is mostly empty (shift change) so Ishida's near-confession is
+     not made in front of a full room.
+   - **Sc 84:** Vera says she worked out Ishida from his call ("he knew exactly where she was");
+     Jack confirms the car was his driver.
+   - **Title page:** "Contact" field removed; draft date now "September 2026".
+5. **Three new Act Two scenes** (inserted with letter-suffixed numbers so no scene or board was
+   renumbered; written, not boarded):
+   - **25A — breakfast counter, morning.** Pays off Mara's "Make her eat breakfast" (sc 25). Vera:
+     "You sound like my sister." Was/is: "Is."
+   - **27A — Okada's bar, day.** Vera alone (agency for her); Okada on why Jack "carries things by
+     himself"; she crouches where Mara hid and understands Mara saw it all.
+   - **63A — Ueno arches, night.** The hit team tails Jack from the lockers; he loses them through
+     a pachinko parlour. Why the tape goes to Okada's (sc 64).
+   The pipeline (`plan.mjs`, `verify-neonoire.mjs`) now accepts `#25A#`-style inserted scenes; the
+   workspace has 103 scenes (100 numbered + 3 inserted).
+
 ---
 
 ## Part 10 — Known inconsistencies to resolve
 
-1. **Jack's nationality vs his backstory (important).** The script's backstory has Jack as a young
+1. **RESOLVED (Part 9 item 4) — Jack's nationality vs his backstory.** The script's backstory has Jack as a young
    Tokyo police detective twenty years ago, and Daniel's notebook says "the police have given me a
    young detective who speaks English. They call him Jack." Tokyo police officers must be Japanese
    citizens. PlayFrame's recast of Jack as a white American breaks that unless one of these is added:
@@ -300,15 +333,20 @@ turn.
      claim off as accidental (the "one signature" idea from development) — this requires rewriting
      scenes 11, 23, 79, 80, 82 and Ishida's role as his former senior.
    Recommended: (a), with one line of dialogue somewhere (Ishida or Kaneko) acknowledging it.
-2. **The key number:** board and prop master use a brass tag "87"; the script says "114" on a worn
+2. **Key number (kept as is):** the script's 114 is the number stamped in the key's metal; the worn plastic tag's printing is gone. The boards show a legible oval tag "87" (`props/key-87-tag.jpg`), which reads as an old office number. Decision: keep the script at 114 and treat 87 as the tag's own number; if it bothers, retake the tag insert instead of the script. Original note: board and prop master use a brass tag "87"; the script says "114" on a worn
    plastic tag (sc 25, 29, 34, 60, 63). Recommended: change the script to 87.
-3. **Jack's office, sc 21:** street-level window with a convenience store in two frames; everywhere
+3. **OPEN — Jack's office, sc 21:** street-level window with a convenience store in two frames; everywhere
    else blinds and the train.
-4. **Runtime:** the animatic at board durations runs ~47 minutes; the middle (sc 22–62) is thinnest.
+4. **PARTLY ADDRESSED (three new scenes, unboarded) — Runtime:** the animatic at board durations runs ~47 minutes; the middle (sc 22–62) is thinnest.
 5. **Outline numbering:** the early 48-scene outline numbers do not match the draft's 100 scene
    numbers. The draft's numbers are canonical.
 
 ---
+
+6. **Boards not yet retaken for the script pass (Part 9 items 4–5):** sc 17 (Jack now on the fourth
+   stool — shot 189 and any coverage show him on the third), sc 60 (the drawing on the wall), sc 68
+   and 84 (drawings), sc 80 (empty room), sc 84 (new exchange), sc 77 (the letter), and the three new
+   scenes 25A, 27A, 63A have no shots at all.
 
 ## Part 11 — Development history (short)
 
@@ -319,4 +357,4 @@ screenplay pages 1–4 → the family made American (Hayashi → Hale → Voss) 
 scenes 5–13 → Ishida's interview given anger → the wine-red dress and the lounge → the 48-scene
 outline → villains punished → the back seat → full draft (100 scenes) → PlayFrame board (279 shots)
 → animatic → the letter rewrite → Hive and apartment canon → Blade Runner-textured Hive → the alley
-mouth.
+mouth → script pass (Part 9 item 4) → three new Act Two scenes (25A, 27A, 63A).

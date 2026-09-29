@@ -11,8 +11,7 @@ lit orange.
 Title: NEONOIRE
 Credit: Written by
 Author: [Your Name]
-Draft date: First Draft
-Contact: September 2026
+Draft date: September 2026
 
 ===
 

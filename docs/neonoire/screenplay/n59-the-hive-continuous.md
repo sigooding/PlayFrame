@@ -10,7 +10,9 @@ EXT. THE HIVE - CONTINUOUS #59#
 
 Rain. Vera comes out of the Hive's narrow entrance, glowing.
 
-Jack is coming the other way, fast, soaked. He sees her. He stops dead.
+Jack is coming the other way, fast, soaked, his phone still in his hand. Kaneko's call, two minutes ago, one sentence: the sister is here.
+
+He sees her. He stops dead.
 
 VERA
 Jack! It's still here. The noodle shop from the photo. It's real. The same woman -- she remembered Dad. She remembered me.

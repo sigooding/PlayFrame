@@ -1099,13 +1099,16 @@ export const SCENES = [
  * scenes keep their hand-authored board metadata; everyone else is derived, mechanically and
  * honestly, from the slugline itself.
  */
-const MARKED_SLUG = /^(INT|EXT)[. ][A-Z0-9'’ /&().,-]+ - [A-Z][A-Z0-9'’ .,-]*#\d+#$/;
+const MARKED_SLUG = /^(INT|EXT)[. ][A-Z0-9'’ /&().,-]+ - [A-Z][A-Z0-9'’ .,-]*#\d+[A-Z]?#$/;
 
 export const sceneMarkers = fountain => {
   const found = [];
   fountain.split("\n").forEach((line, i) => {
     const m = MARKED_SLUG.exec(line.trim());
-    if (m) found.push({ n: Number(/ #(\d+)#$/.exec(line.trim())[1]), line: i, text: line.trim() });
+    if (m) {
+      const [, n, suffix] = / #(\d+)([A-Z]?)#$/.exec(line.trim());
+      found.push({ n: Number(n), suffix, line: i, text: line.trim() });
+    }
   });
   return found;
 };
@@ -1129,16 +1132,30 @@ export function featureScenes(fountain) {
   const lines = fountain.split("\n");
   const marks = sceneMarkers(fountain);
   if (!marks.length) throw new Error(`${FOUNTAIN} carries no numbered scenes — every scene heading must end with its " #n#" marker.`);
-  marks.forEach((mark, i) => {
-    if (mark.n !== i + 1) throw new Error(`${FOUNTAIN} scene markers must run 1..N in order; scene ${i + 1} is marked #${mark.n}#`);
+  // The numbered scenes run 1..N in order. A scene added after the numbering was fixed carries its
+  // neighbour's number plus a letter (`#25A#`) and sits directly after that neighbour, so nothing
+  // already boarded is renumbered.
+  let base = 0;
+  let lastSuffix = "";
+  marks.forEach(mark => {
+    if (!mark.suffix) {
+      if (mark.n !== base + 1) throw new Error(`${FOUNTAIN} scene markers must run 1..N in order; after scene ${base} comes #${mark.n}#`);
+      base = mark.n;
+      lastSuffix = "";
+    } else {
+      if (mark.n !== base || mark.suffix <= lastSuffix) throw new Error(`${FOUNTAIN} inserted scene #${mark.n}${mark.suffix}# must follow scene ${mark.n} in letter order`);
+      lastSuffix = mark.suffix;
+    }
   });
-  const straySlug = lines.findIndex(line => /^(INT|EXT)[. ].* - /.test(line.trim()) && !/ #\d+#$/.test(line.trim()));
+  const straySlug = lines.findIndex(line => /^(INT|EXT)[. ].* - /.test(line.trim()) && !/ #\d+[A-Z]?#$/.test(line.trim()));
   if (straySlug >= 0) throw new Error(`${FOUNTAIN} line ${straySlug + 1} reads like a scene heading but carries no " #n#" marker — mark it, or the Screenplay tab loses a scene.`);
   return marks.map((mark, i) => {
-    const bare = mark.text.replace(/ #\d+#$/, "");
+    const bare = mark.text.replace(/ #\d+[A-Z]?#$/, "");
+    const label = `${mark.n}${mark.suffix}`;
+    const tag = label.toLowerCase();
     const at = bare.indexOf(" - ");
-    const derived = { n: mark.n, location: bare.slice(0, at), time: bare.slice(at + 3), slugline: mark.text, line: mark.line };
-    const hand = SCENES.find(scene => scene.n === mark.n);
+    const derived = { n: mark.n, label, location: bare.slice(0, at), time: bare.slice(at + 3), slugline: mark.text, line: mark.line };
+    const hand = mark.suffix ? undefined : SCENES.find(scene => scene.n === mark.n);
     if (hand) {
       if (hand.location !== derived.location || hand.time !== derived.time) throw new Error(`The boarded scene ${hand.n} no longer matches ${FOUNTAIN}: the draft says "${derived.location} - ${derived.time}", the board says "${hand.location} - ${hand.time}".`);
       return { ...hand, ...derived, boarded: true };
@@ -1148,14 +1165,14 @@ export function featureScenes(fountain) {
     return {
       ...derived,
       boarded: false,
-      key: `s${mark.n}`, id: `neonoire-s${mark.n}`, partId: "neonoire-part-feature",
+      key: `s${tag}`, id: `neonoire-s${tag}`, partId: "neonoire-part-feature",
       title: humanTitle(derived.location),
       kind: "Standard",
       ...(lightingForTime(derived.time) ? { lighting: lightingForTime(derived.time) } : {}),
-      page: `n${String(mark.n).padStart(2, "0")}-${pageSlug(bare)}.md`,
+      page: `n${String(mark.n).padStart(2, "0")}${mark.suffix.toLowerCase()}-${pageSlug(bare)}.md`,
       board: null, cast: [],
       grammar: grammar,
-      description: `WRITTEN, NOT BOARDED — no numbered shot board yet. Scene ${mark.n} of the final screenplay; the Screenplay tab carries its page, and the board covers selected scenes elsewhere. ${quote ? `The draft opens it: "${quote}".` : ""}`.trim(),
+      description: `WRITTEN, NOT BOARDED — no numbered shot board yet. Scene ${label} of the final screenplay${mark.suffix ? " (added after the numbering was fixed, so it carries its neighbour's number and a letter)" : ""}; the Screenplay tab carries its page, and the board covers selected scenes elsewhere. ${quote ? `The draft opens it: "${quote}".` : ""}`.trim(),
       lightingNotes: undefined,
     };
   });
@@ -1183,9 +1200,9 @@ export const ACT = {
 export const readFountain = root => readFileSync(resolve(root, FOUNTAIN), "utf8");
 
 /** The `#1#` … `#7#` markers are the draft's scene numbering, not screenplay text. */
-export const cleanScript = text => text.replace(/ #\d+#(?=\n|$)/g, "");
+export const cleanScript = text => text.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 
-export const countMarkers = text => (text.match(/ #\d+#(?=\n|$)/g) || []).length;
+export const countMarkers = text => (text.match(/ #\d+[A-Z]?#(?=\n|$)/g) || []).length;
 
 /**
  * The draft's lines, split into one slice per numbered scene. Scene 1 carries the title page,
@@ -1208,7 +1225,7 @@ export function pageHeader(scene) {
   const grammarLines = scene.grammar.match(/.{1,150}(\s|$)/g) || [scene.grammar];
   return [
     "NEONOIRE",
-    `${scene.boarded && scene.n <= 7 ? "OPENING" : "SCREENPLAY"} — SCENE ${scene.n} — ${scene.location}`,
+    `${scene.boarded && scene.n <= 7 ? "OPENING" : "SCREENPLAY"} — SCENE ${scene.label ?? scene.n} — ${scene.location}`,
     "",
     `${scene.location} - ${scene.time}`,
     `Source: the final screenplay (${FOUNTAIN}, September 2026), reproduced verbatim below its own heading.${scene.boarded ? "" : " Written, not boarded: the numbered shot board covers the opening scenes only."}`,
