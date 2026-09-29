@@ -1,0 +1,1 @@
+One approved take per recorded voice (the longest line recorded so far), kept as the reference to compare against if a voice has to be re-made. The exact design prompts are in `../voices.json` under each character's `design` block.
