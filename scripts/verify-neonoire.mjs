@@ -666,7 +666,7 @@ assert(hiveCanonNight.includes("small pools") && hiveCanonNight.includes("35mm a
 assert(hiveCanonDay.includes("pale grey-ochre murk") && hiveCanonDay.includes("the murk begins at the Hive's edge"), "The day look is the murk, and the street outside stays ordinary");
 assert(hiveCanonRules.includes("one bulb, amber tungsten, steam") && hiveCanonRules.includes("screens bigger than an old CRT") && hiveCanonRules.includes("Never write a film title in a prompt"), "The Hive rules travel with the canon");
 for (const term of ["vivid colours", "many neon signs", "video billboards", "bright sunny daylight", "cyberpunk", "brand logos"]) assert(hiveCanonNegative.includes(term), `The Hive negative prompt bans ${term}`);
-assert(!hiveCanonScenes.has("s14") && !hiveCanonScenes.has("s47") && !hiveCanonScenes.has("s91"), "Mara's apartment, the inn's back yard and the railway walkway are not the Hive");
+assert(!hiveCanonScenes.has("s3") && !hiveCanonScenes.has("s78") && !hiveCanonScenes.has("s14") && !hiveCanonScenes.has("s47") && !hiveCanonScenes.has("s91"), "Vera's apartment building, Mara's apartment, the inn's back yard and the railway walkway are not the Hive");
 assert(hiveCanonScenes.has("s19") && hiveCanonScenes.has("s69") && hiveCanonScenes.has("s71") && hiveCanonScenes.has("s67"), "The counter night, the passages and the service road are the Hive");
 let retakeNoteCount = 0;
 for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n90-hive-rooftop.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
@@ -708,13 +708,22 @@ assert(frameFormat({ key: "s5" }).startsWith("16:9"));
 assert(frameFormat({ key: "s6" }).startsWith("16:9"));
 assert(frameFormat({ key: "s7" }).startsWith("16:9"));
 assert(frameFormat({ key: "s3" }).startsWith("16:9"), "The final screenplay puts every scene's images in 16:9");
-// Scene 3 fully rebuilt 16:9 on 26 September 2026 — the laundry insert closed the last legacy scope study in the numbered board.
+// Scene 3 fully rebuilt 16:9 on 26 September 2026 — and shots 29 and 30 retaken 29 September 2026 so
+// Vera's apartment building is an ordinary old four-storey grey concrete block beside the elevated
+// railway, never the Hive.
 const block3 = project.frames.filter(frame => frame.sceneId === "neonoire-s3");
 assert.equal(block3.length, 4);
 for (const frame of block3) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is rebuilt in 16:9`);
+  for (const detail of ["ordinary old four-storey", "NOT the Hive", "not knowing the Hive", "s3/31-the-lit-window.jpg", "s78/88-the-walkway.jpg", "THIRD FLOOR"]) {
+    assert(frame.notes.includes(detail), `${frame.title} is missing scene 3 apartment-building continuity: ${detail}`);
+  }
 }
-pass("scene 3 fully rebuilt 16:9 — the laundry insert closed the last legacy frame in the film; nothing awaits revision");
+for (const id of ["neonoire-shot-29", "neonoire-shot-30"]) {
+  const frame = block3.find(f => f.id === id);
+  assert(frame.notes.includes("Retake 29 September 2026"), `${frame.title} carries the 29 September 2026 ordinary-apartment retake note`);
+}
+pass("scene 3 fully rebuilt 16:9 — shots 29 and 30 retaken as Vera's ordinary old four-storey apartment building beside the elevated railway, not the Hive");
 pass("all ten apartment JPEGs and their key are 1920×1080; pendant removal and prop/cast continuity are recorded");
 
 const interview = project.frames.filter(frame => frame.sceneId === "neonoire-s6");

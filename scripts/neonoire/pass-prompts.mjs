@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url";
 import { SCENES, grammar, imagePath, parseBoard, readBoard } from "./plan.mjs";
 
 import { frontCounterLook, frameFormat } from "./front-counter-look.mjs";
-import { apartmentLook } from "./apartment-look.mjs";
+import { apartmentBuildingLook, apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, isColdOpenScene } from "./cold-open-look.mjs";
@@ -33,7 +33,9 @@ const negative = neonoireStyle.match(/negative: "([^"]+)"/)[1].replace(/\\"/g, '
 const KEYS = {
   s1: ["01-the-doorway.jpg", "07-the-rain-scene.jpg", "08-ozu-cutaway.jpg"],
   s2: ["03-the-bar.jpg"],
-  s3: ["06-the-block.jpg"],
+  // Vera's apartment building is an ordinary old four-storey concrete block beside the elevated
+  // railway, never the Hive (keys/06-the-block.jpg).
+  s3: [],
   s4: ["04-veras-apartment.jpg"],
   s5: ["05-the-police-station.jpg"],
   s6: ["05-the-police-station.jpg"],
@@ -64,6 +66,7 @@ const passes = [...new Set(pending.map(shot => passOf(shot.n)))].sort((a, b) => 
 function shotBrief(shot) {
   const scene = shot.scene;
   const referenceKeys = KEYS[scene.key].map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
+  if (scene.key === "s3") referenceKeys.push("public/images/neonoire/s3/29-apartment-block.jpg", "public/images/neonoire/s3/31-the-lit-window.jpg", "public/images/neonoire/s78/88-the-walkway.jpg");
   if (scene.key === "s6") referenceKeys.push("public/images/neonoire/s6/51-the-interview-room.jpg", "public/images/neonoire/s6/56-three-days-ago.jpg");
   if (scene.key === "s7") referenceKeys.push("public/images/neonoire/s7/63-the-detectives-room.jpg", "public/images/neonoire/s7/64-the-bottom-drawer.jpg", "public/images/neonoire/s1/18-the-flashlight.jpg", "public/images/neonoire/s5/43-the-front-counter.jpg");
   if (scene.key === "s72") referenceKeys.push("public/images/neonoire/s72/69-the-wait.jpg");
@@ -102,6 +105,7 @@ function shotBrief(shot) {
     scene.key === "s76" ? `CONTINUITY — ${aftermathLook}` : "",
     scene.key === "s7" ? `CONTINUITY — ${detectivesLook}` : "",
     scene.key === "s6" ? `CONTINUITY — ${interviewLook}` : "",
+    scene.key === "s3" ? `CONTINUITY — ${apartmentBuildingLook}` : "",
     scene.key === "s4" ? `CONTINUITY — ${apartmentLook}` : "",
     scene.key === "s5" ? `CONTINUITY — ${frontCounterLook}` : "",
     `FRAMING — ${shot.shotType}, ${shot.lens}, ${shot.movement}, ${shot.angle}, lit by ${shot.lighting.toLowerCase()}.`,
