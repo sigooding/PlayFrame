@@ -31,7 +31,7 @@ LIGHT: Overcast soft
 TIME: 7
 ID: neonoire-shot-149
 IMAGE: 147-the-same-morning-news.jpg
-NOTE: This is Vera's first frame in Look D. Kaneko wears a dark raincoat over her brown cardigan for the street, without her apron. A shop sign at top left carries some stray lettering.
+NOTE: This is Vera's first frame in Look D. Kaneko wears a dark raincoat over her brown cardigan for the street, without her apron. A shop sign at top left carries some stray lettering. Retake 29 September 2026 — ordinary grey daylight on the street and the murk beginning at the Hive's edge; the wall of CRTs and flat screens keeps glowing exactly as boarded.
 
 150. WIDE — 35mm, static, eye level — four men.
 The black car at the kerb, its rear door open. The aide holds a large umbrella over Kurose, who buttons his jacket. Between him and the podium, prosecutors in plain dark suits stand bareheaded in the rain, and the lead one holds up an identification card. The plain grey car waits beyond.
@@ -61,7 +61,7 @@ LIGHT: Overcast soft
 TIME: 7
 ID: neonoire-shot-152
 IMAGE: 150-she-does-not-look-away.jpg
-NOTE: Generated from shot 149 to keep Look D and the umbrella. Only Kaneko's hand and cardigan cuff are in frame.
+NOTE: Generated from shot 149 to keep Look D and the umbrella. Only Kaneko's hand and cardigan cuff are in frame. Retake 29 September 2026 — the close-up is flat, milky, dim grey-ochre murk now; the umbrella and Kaneko's hand held.
 
 153. MEDIUM WIDE — 85mm, static, eye level — collar up.
 Further down the street, past blurred umbrellas and camera flashes, Jack stands alone by a shuttered shopfront, collar up, watching. He meets her eyes.
@@ -71,7 +71,7 @@ LIGHT: Overcast soft
 TIME: 8
 ID: neonoire-shot-153
 IMAGE: 151-collar-up.jpg
-NOTE: Intercut with shot 152 for the look between them: "Across the street, through the rain and the camera flashes, neither of them moves."
+NOTE: Intercut with shot 152 for the look between them: "Across the street, through the rain and the camera flashes, neither of them moves." Retake 29 September 2026 — flat milky dim light with ordinary grey daylight on the street; the collar-up stance and the press flashes held.
 
 154. INSERT — 50mm, static, low angle — the ribbon.
 The silver shovel on its stand, untouched, its red-and-white ribbon soaked and going dark. Behind it, blurred, the grey car pulls away past the empty tent.
@@ -81,4 +81,4 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-154
 IMAGE: 152-the-ribbon.jpg
-NOTE: The scene ends here. Scene 98 (the rooftop of Jack's building, [n98](n98-rooftop.md)) follows.
+NOTE: The scene ends here. Scene 98 (the rooftop of Jack's building, [n98](n98-rooftop.md)) follows. Retake 29 September 2026 — the silver shovel reads sharp, clean and cold against the murk; the soaked ribbon and the departing car held.

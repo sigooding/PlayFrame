@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-123
 IMAGE: 121-the-shutter.jpg
-NOTE: Counter master. The tube goes off on the cut.
+NOTE: Counter master. The tube goes off on the cut. Retake 29 September 2026 — the counter's one amber bulb in the dark, the tube unlit; Kaneko's shutter and the six stools held. (The script's turn-off beat plays on the switch; the frame holds the one-bulb look.)
 
 124. MEDIUM — 50mm, static, eye level — through the back.
 With the shutter down and the tube off, the gas flames give the only glow. Kaneko points up and back toward the curtain while Jack reaches toward her and Vera waits behind him.

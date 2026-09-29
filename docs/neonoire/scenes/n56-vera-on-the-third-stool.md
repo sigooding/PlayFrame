@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-225
 IMAGE: 223-the-third-stool.jpg
-NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him. Retaken in the consistency pass of 26 September 2026: Vera sits on the third stool from the left with two empty stools to her left, in the charcoal coat, while Kaneko turns from the pot and freezes for just a second; the 金子 board hangs on the shutter wall as locked by shot 185's sketchbook. In consistency retakes two the third customer arrived: an elderly man in a grey work jacket on the fifth stool, hunched over his bowl, so the lunchtime counter carries the draft's three customers with Vera on the third stool and two empty stools to her left. Shot 266 is the count.
+NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him. Retaken in the consistency pass of 26 September 2026: Vera sits on the third stool from the left with two empty stools to her left, in the charcoal coat, while Kaneko turns from the pot and freezes for just a second; the 金子 board hangs on the shutter wall as locked by shot 185's sketchbook. In consistency retakes two the third customer arrived: an elderly man in a grey work jacket on the fifth stool, hunched over his bowl, so the lunchtime counter carries the draft's three customers with Vera on the third stool and two empty stools to her left. Shot 266 is the count. Retake 29 September 2026 — one amber bulb and steam; Vera third of six stools, two empty to her left, the 金子 board on the wall held.
 
 ---
 
@@ -33,5 +33,5 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-266
 IMAGE: 224-stool-three.jpg
-NOTE: Coverage, shot 266. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, charcoal coat, no hair clip. Kaneko follows s86/123-fifty-years.jpg. The street window is gone; this is the dark interior, fluorescent and shutter, held to s56/223-the-third-stool.jpg.
+NOTE: Coverage, shot 266. Six stools. She sits on the third from the left, two empty stools to her left and three empty to her right. Ash-blonde, charcoal coat, no hair clip. Kaneko follows s86/123-fifty-years.jpg. The street window is gone; this is the dark interior, fluorescent and shutter, held to s56/223-the-third-stool.jpg. Retake 29 September 2026 — one amber bulb and steam, no green grade; the six-stool row and Vera third from the left held.
 

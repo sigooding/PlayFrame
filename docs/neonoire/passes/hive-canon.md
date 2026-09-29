@@ -88,34 +88,40 @@ Review sheet: `public/images/neonoire/reviews/hive-retakes-pass-2.jpg` — the c
 
 **Script lines kept in step (small director's edits, carried in the draft `Neonoire (3).fountain` and its regenerated pages):** scene 15 gains the tower stepping down at the back to a low rear wing pressed against the concrete railway viaduct, its roof level with the tracks, old neon signs hanging dead on its face, and the Hive sitting in its own haze of steam and kitchen smoke even in daylight; scene 90 opens on the flat roof of the low rear wing, four storeys up, the tower behind; scenes 16 and 55 each gain one line of daylight coming in thin cold shafts through the steam. The same commit's Kanda backstreet change — scene 1, the sedan blocks the alley mouth — is documented in `kanda-alley-layout.md`.
 
-## The retake queue — the next pass plan (eleven frames, one call each)
+## The retake queue — one frame left (the repairman)
 
-Every frame below is a Hive shot and nothing else; each carries the new look. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`. Staging locks noted below travel with the retake. In code: `hiveLookRetakes` (11 look only; the set failures moved to `hiveRetakenLook`), run order `hiveNextPassPlan` (11).
+The queue pass ran the same day: ten of the eleven look-only frames retaken against the canon
+sheets, one call each, light and atmosphere only — every figure, face, wardrobe, prop and
+composition held to its previous frame, the matching canon sheet passed alongside as the set
+reference. In code: `hiveRetakenQueue` (10, installed).
 
-### DAY (9)
+| Shot | Frame | Was | Status |
+| --- | --- | --- | --- |
+| 149 | `s97/147-the-same-morning-news.jpg` | blue pre-dawn shop window at the Hive's edge | **RETAKEN + INSTALLED** — ordinary grey daylight on the street, the murk beginning at the edge; the CRTs and flat screens keep glowing exactly as boarded |
+| 152 | `s97/150-she-does-not-look-away.jpg` | close-up lit blue-grey | **RETAKEN + INSTALLED** — flat milky dim grey-ochre murk; the umbrella and Kaneko's hand held |
+| 153 | `s97/151-collar-up.jpg` | blue-grey pre-dawn on the street | **RETAKEN + INSTALLED** — flat milky dim light, ordinary grey daylight; the collar-up stance and the press flashes held |
+| 154 | `s97/152-the-ribbon.jpg` | shovel against dark rain | **RETAKEN + INSTALLED** — the silver shovel sharp, clean and cold against the murk; the soaked ribbon and the departing car held |
+| 189 | `s17/187-you-got-old.jpg` | lit fluorescent tube, green cast | **RETAKEN + INSTALLED** — one amber bulb and steam, the tube unlit; the long look and the two customers held |
+| 190 | `s17/188-something-moves.jpg` | fluorescent and cool grade | **RETAKEN + INSTALLED** — one amber bulb and steam, the storeroom dark; the money, the card and the hand held |
+| 225 | `s56/223-the-third-stool.jpg` | lit fluorescent tube | **RETAKEN + INSTALLED** — one amber bulb and steam; Vera third of six stools, two empty to her left, 金子 on the wall held |
+| 266 | `s56/224-stool-three.jpg` | fluorescent, cool green grade | **RETAKEN + INSTALLED** — one amber bulb and steam; the six-stool row and Vera third from the left held |
+| 227 | `s58/225-bring-her.jpg` | fluorescent and cool grade | **RETAKEN + INSTALLED** — one amber bulb and steam; the charcoal-coat motif and the too-much money held |
+| 123 | `s86/121-the-shutter.jpg` | bright fluorescent at the counter | **RETAKEN + INSTALLED** — the counter's one amber bulb in the dark, the tube unlit; Kaneko's shutter and the six stools held |
+
+**Still queued (1):**
 
 | Shot | Frame | Problem |
 | --- | --- | --- |
-| 149 | `s97/147-the-same-morning-news.jpg` | shop window at the Hive's edge reads blue pre-dawn; the street is ordinary grey daylight. Props unchanged |
-| 152 | `s97/150-she-does-not-look-away.jpg` | close-up lit blue-grey; day look is flat, milky, dim |
-| 153 | `s97/151-collar-up.jpg` | blue-grey pre-dawn on the street; ordinary grey daylight outside the murk |
-| 154 | `s97/152-the-ribbon.jpg` | shovel against dark rain; scene 97 rule: sharp, clean and cold against the murk behind |
-| 189 | `s17/187-you-got-old.jpg` | lit fluorescent tube, green cast; the counter is one amber bulb, steam |
-| 190 | `s17/188-something-moves.jpg` | fluorescent and cool grade over the counter |
-| 225 | `s56/223-the-third-stool.jpg` | lit fluorescent; one amber bulb. **Keep the third-stool staging** — Vera third of six, two empty to her left, 金子 on the wall |
-| 227 | `s58/225-bring-her.jpg` | fluorescent and cool grade. **Keep the charcoal-coat third-stool motif** |
-| 266 | `s56/224-stool-three.jpg` | fluorescent, cool green grade. **Keep Vera third from the left** |
-
-### NIGHT (2)
-
-| Shot | Frame | Problem |
-| --- | --- | --- |
-| 123 | `s86/121-the-shutter.jpg` | bright fluorescent tube at the counter; one amber bulb, steam. Keep Kaneko's staging |
 | 126 | `s87/124-the-repairman.jpg` | saturated teal grade, blue smoke; desaturated near-monochrome. Keep the repairman exactly as `sheets/repairman.jpg` holds him |
 
-### Already on canon — no retake
-
-The warm one-bulb storeroom and counter frames already match the new rule and stay: night s84/115–118, s13/179, 180, 181 and 247, s19/190, s20/191, 192 and 284, s25/200 and 201, s60/227, s86/122 and 123, s87/125, and the darkness-and-flashlight frames s88/126 and 127 (judged pass, 29 September 2026) and s89/128 and 129; day s57/224-three-feet-away and s58/276-slides-down-the-wall. The service road s67/234 and s70/237 left this list on 29 September 2026 — retaken with steam at the back door (`hiveRetakenOptional`).
+Review sheet: `public/images/neonoire/reviews/hive-retakes-pass-3.jpg` — the ten installed frames in
+shot order. Caveats: the frames are verified at 1920×1080 and read back in palette statistics
+(the four s97 frames shift to dim grey-ochre daylight at bright 0.34–0.40, the counter frames to
+dim warm amber, the shutter dark), but the session's image viewer is unreliable — give the review
+sheet a full-size look before the repairman pass. The counter frames' boards still describe the
+fluorescent tube in the blocking text where the canon rule now unlights it; the tube remains in
+the room as a fixture. Scene 86's script beat ("she turns off the fluorescent tube") plays on the
+switch; the frame holds the one-bulb look the queue asked for.
 
 ### Outside the Hive — untouched
 
@@ -123,6 +129,6 @@ s91 (the railway maintenance walkway is railway ground), s22 (the brick arch cou
 
 ## Also in this pass
 
-- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveRetakenLook` (13, the look retake pass with model fixes flagged), `hiveRetakenOptional` (5, the judged optional tier), `hiveLookRetakes` (11 still queued), `hiveNextPassPlan` (11, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
+- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveRetakenLook` (13, the look retake pass with model fixes flagged), `hiveRetakenOptional` (5, the judged optional tier), `hiveRetakenQueue` (10, the queue pass), `hiveLookRetakes` (1 still queued: the repairman), `hiveNextPassPlan` (1, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
 - The Hive look files (`hive-look`, `hive-first-look`, `hive-morning-look`, `escape-look`, `ending-look`'s demolition, `confrontation-look`'s storeroom) now defer to the canon for lighting and atmosphere and carry no other change; every verify-locked continuity substring survives.
-- `scripts/verify-neonoire.mjs` checks the six sheets and the seven retaken exteriors are 1920×1080, that all twenty-seven queued frames exist and queue once with a day or night tag, that the done and pending tiers cover thirty-four frames exactly, and that the canon text, rules and negative terms travel with the look file.
+- `scripts/verify-neonoire.mjs` checks the six sheets and every retaken tier at 1920×1080, that each queued frame exists and queues once with a day or night tag, that the done and pending tiers cover thirty-four frames exactly, and that the canon text, rules and negative terms travel with the look file.

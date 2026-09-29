@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 14
 ID: neonoire-shot-189
 IMAGE: 187-you-got-old.jpg
-NOTE: The scene master. It isn't clear that Jack is on the **third** stool; seat him there on set, since it rhymes with scenes 13 and 100.
+NOTE: The scene master. It isn't clear that Jack is on the **third** stool; seat him there on set, since it rhymes with scenes 13 and 100. Retake 29 September 2026 — one amber bulb and steam at the counter, the fluorescent tube unlit; the long look and the two customers at the far end held.
 
 190. MEDIUM WIDE — 35mm, static, low angle — something moves.
 Jack has gone. On the counter lie an empty bowl, far too much money and his card. Kaneko looks down at it. Behind her, a pale young hand holds the storeroom curtain open in the dark.
@@ -31,4 +31,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-190
 IMAGE: 188-something-moves.jpg
-NOTE: Generated from shot 189. Kaneko stands at Jack's end of the counter here. Only Mara's hand is seen.
+NOTE: Generated from shot 189. Kaneko stands at Jack's end of the counter here. Only Mara's hand is seen. Retake 29 September 2026 — one amber bulb and steam, the storeroom dark behind the curtain; the money, the card and the hand held.

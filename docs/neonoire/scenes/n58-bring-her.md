@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-227
 IMAGE: 225-bring-her.jpg
-NOTE: Mara sliding down the wall behind the curtain belongs to the cut's last second; the frame holds the counter. The overpayment rhymes with Jack's in shot 189 and her father's before him.
+NOTE: Mara sliding down the wall behind the curtain belongs to the cut's last second; the frame holds the counter. The overpayment rhymes with Jack's in shot 189 and her father's before him. Retake 29 September 2026 — one amber bulb and steam; the charcoal-coat third-stool motif and the too-much money held.
 
 ---
 
