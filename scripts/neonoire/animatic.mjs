@@ -66,6 +66,25 @@ function pace(frame, clips) {
   return { dur: Math.min(frame.duration, Math.round((end + TAIL) * 10) / 10) || frame.duration, clips: clips.map(c => ({ ...c, offset: c.offset - shift })) };
 }
 
+// Camera moves. A still is given the move its board asks for (push-in, pull-back, tracking, pan, handheld);
+// a static board gets a very slow push so the animatic never freezes. --no-camera renders the stills flat.
+const camera = args["no-camera"] === undefined;
+function cameraMove(frame, dur, i) {
+  const text = `${frame.movement || ""} ${frame.notes || ""} ${frame.description || ""} ${frame.title || ""}`.toLowerCase();
+  const n = Math.max(1, Math.round(dur * 24));
+  const p = `min(on/${n},1)`;
+  const rate = 0.014, zmax = Math.min(1.12, 1 + rate * dur);
+  const centre = { x: "iw/2-iw/zoom/2", y: "ih/2-ih/zoom/2" };
+  const dir = i % 2 ? 1 : -1;
+  if (/pull(ing)?[- ]?(back|out)|dolly out|retreat/.test(text)) return { z: `${zmax}-${zmax - 1}*${p}`, ...centre, kind: "pull" };
+  if (/handheld/.test(text)) return { z: "1.06+0.01*sin(on/9)", x: "iw/2-iw/zoom/2+sin(on/7)*7", y: "ih/2-ih/zoom/2+cos(on/11)*5", kind: "handheld" };
+  if (/\bpan(s|ning)?\b|\btrack(ing)?\b|follow|walks?\b/.test(text) || frame.movement === "Tracking")
+    return { z: "1.09", x: dir > 0 ? `(iw-iw/zoom)*${p}` : `(iw-iw/zoom)*(1-${p})`, y: "ih/2-ih/zoom/2", kind: "track" };
+  if (/tilt/.test(text)) return { z: "1.09", x: centre.x, y: dir > 0 ? `(ih-ih/zoom)*${p}` : `(ih-ih/zoom)*(1-${p})`, kind: "tilt" };
+  const s = /push(ing)?[- ]?in|dolly in|creep|slow push|closer/.test(text) ? 1.6 : 1;
+  return { z: `1+${(zmax - 1) * s}*${p}`, ...centre, kind: "push" };
+}
+
 for (let [i, frame] of frames.entries()) {
   const image = frame.image?.startsWith("/images/") ? resolve(root, "public" + frame.image) : null;
   const seg = resolve(work, `seg-${String(i).padStart(4, "0")}.mp4`);
@@ -92,8 +111,12 @@ for (let [i, frame] of frames.entries()) {
   clips.forEach((c, k) => { const fx = FX[fxByFile.get(c.src)]; filter += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=mono${fx ? "," + fx : ""},adelay=${Math.round(c.offset * 1000)}|${Math.round(c.offset * 1000)}[d${k}];`; labels.push(`[d${k}]`); });
   if (clips.length) filter += `${labels.join("")}amix=inputs=${clips.length}:normalize=0,apad,atrim=0:${frame.duration}[a]`;
   else filter = `anullsrc=r=44100:cl=mono,atrim=0:${frame.duration}[a]`;
+  const cam = camera && image && existsSync(image) ? cameraMove(frame, frame.duration, i) : null;
+  const look = cam
+    ? `scale=2880:1620:force_original_aspect_ratio=increase,crop=2880:1620,zoompan=z='${cam.z}':x='${cam.x}':y='${cam.y}':d=1:s=1920x1080:fps=24`
+    : "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2";
   run([...inputs, "-filter_complex", filter, "-map", "0:v", "-map", "[a]", "-t", String(frame.duration),
-    "-vf", `scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2${subFilter},format=yuv420p`,
+    "-vf", `${look}${subFilter},format=yuv420p`,
     "-c:v", "libx264", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", seg]);
   segments.push(seg);
   segmentsTotal += frame.duration;
