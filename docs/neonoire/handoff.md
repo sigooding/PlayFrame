@@ -1,5 +1,9 @@
 # NEONOIRE — keyframe handoff
 
+## Merged to main — 29 September 2026
+
+This branch (`arena/01a0ea4b-playframe`) is merged to `main` in PR #36 — the whole September retake programme: the Hive canon and look (all thirty-four frames), the Kanda alley layout, and the roadside inn style sheet and mask rule. The branch stays open for future passes; merge again when the next batch lands.
+
 ## Current state — 29 September 2026 (roadside inn: style sheet and mask rule)
 
 The inn now has a canon style sheet — `sheets/roadside-inn.jpg`, four labelled panels (the warm exterior, the warm lobby, the stairs, and the same exterior in THE COLD) — recorded in `passes/roadside-inn.md` and referenced from `inn-look.mjs`. The director confirmed the masked men's costume at the inn: dark knit caps over **black lower-face masks**, the same crew as scene 1 — never white facemasks, never full balaclavas. Six frames where the masks read wrong (175-the-curtain-gap, 176-were-closed, 177-boots-below, 178-thank-you-very-much, 222-mud-and-impacts, 215-no-need-to-chase) were retaken masks-only and installed; review sheets `reviews/roadside-inn-sheet-review.jpg` and `reviews/roadside-inn-masks.jpg`. The rule is written into `innBase` and asserted in `verify-neonoire.mjs`.
