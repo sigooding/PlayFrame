@@ -11,7 +11,7 @@
 // --file may also be an https URL: download it at once, generation links expire after two hours.
 // Needs ffmpeg for the duration (FFMPEG=/path/to/ffmpeg, or `pip install imageio-ffmpeg`).
 import { execFileSync } from "node:child_process";
-import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { basename, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { MANIFEST, readManifest, readVoices } from "./voice.mjs";
@@ -31,17 +31,20 @@ const rel = `/audio/neonoire/${sceneKey}/${number}-${args.character.toLowerCase(
 const manifest0 = readManifest(root);
 const existing = args.replace !== undefined ? manifest0.lines.find(l => l.id === args.id) : undefined;
 if (args.replace !== undefined && !existing) { console.error(`--replace needs an existing --id; ${args.id} is not in the manifest`); process.exit(1); }
-const finalRel = existing ? existing.file : rel;
+// A re-recorded or edited take may be a different format (an Adobe export as .wav, say): the line keeps its
+// id and its path, apart from the extension, and the previous file is archived below before it goes.
+const finalRel = existing ? existing.file.replace(/\.[^.]+$/, `.${ext}`) : rel;
 const dest = resolve(root, "public" + finalRel);
 mkdirSync(dirname(dest), { recursive: true });
 if (existing) {
   // Keep the take being replaced: archive it before the new file overwrites it.
   const n = (existing.history?.length || 0) + 1;
-  const archiveRel = `docs/neonoire/voice/archive/${basename(finalRel).replace(/\.[^.]+$/, "")}-v${n}.${finalRel.split(".").pop()}`;
+  const archiveRel = `docs/neonoire/voice/archive/${basename(existing.file).replace(/\.[^.]+$/, "")}-v${n}.${existing.file.split(".").pop()}`;
   mkdirSync(dirname(resolve(root, archiveRel)), { recursive: true });
-  copyFileSync(dest, resolve(root, archiveRel));
+  copyFileSync(resolve(root, "public" + existing.file), resolve(root, archiveRel));
   existing.history = [...(existing.history || []), { file: archiveRel, ...(existing.prompt ? { prompt: existing.prompt } : { prompt: existing.text }), model: existing.model, ...(existing.generation ? { generation: existing.generation } : {}), archivedAt: new Date().toISOString().slice(0, 10) }];
   writeFileSync(resolve(root, MANIFEST), JSON.stringify(manifest0, null, 2) + "\n");
+  if (finalRel !== existing.file) rmSync(resolve(root, "public" + existing.file), { force: true });
 }
 
 if (/^https?:\/\//.test(args.file)) {
