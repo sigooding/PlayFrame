@@ -19,7 +19,7 @@ import {
 } from "./plan.mjs";
 
 import { frontCounterLook } from "./front-counter-look.mjs";
-import { apartmentLook } from "./apartment-look.mjs";
+import { apartmentBuildingLook, apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
@@ -277,6 +277,7 @@ const frames = shots.map(shot => {
       ...(awaitingAspect(shot) ? [`16:9 REVISION PENDING — shot ${shot.n} is not yet 1920×1080. From the final screenplay onward every image in this film is 16:9 full-bleed (1920×1080): regenerate this frame against its scene key; never crop a scope study into it.`] : []),
       ...(shot.scene.key === "s7" ? [`Visual revision (25 September 2026): ${detectivesLook}`] : []),
       ...(shot.scene.key === "s6" ? [`Visual revision (25 September 2026): ${interviewLook}`] : []),
+      ...(shot.scene.key === "s3" ? [`Scene 3 — Vera's apartment building (retaken 29 September 2026): ${apartmentBuildingLook}`] : []),
       ...(shot.scene.key === "s4" ? [`Visual revision (25 September 2026): ${apartmentLook}`] : []),
       ...(shot.scene.key === "s5" ? [`Visual revision (25 September 2026): ${frontCounterLook}`] : []),
       ...(streetsScenes.has(shot.scene.key) ? [`Scenes 72–75 — Tokyo Story in colour (25 September 2026): ${streetsLook}`] : []),
