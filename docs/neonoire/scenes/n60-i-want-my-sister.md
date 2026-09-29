@@ -14,12 +14,12 @@ The single shot (229) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 ---
 
 229. MEDIUM WIDE — 35mm, static, low level — i want my sister.
-Mara sits on the futon with her knees pulled up, face swollen from crying; Jack crouches in front of her; her open hand holds out the key, number 114: find what it opens, and then this ends.
-SCRIPT: "She opens her hand. The key. Number 114."
+Mara sits on the futon with her knees pulled up, face swollen from crying; behind her, a newly smudged sketch taped to the wall shows the counter from behind the curtain and a back on its third stool. Jack crouches in front of her; her open hand holds out the key, number 114: find what it opens, and then this ends.
+SCRIPT: "She opens her hand. The key. Its worn tag reads 114."
 CAST: Jack, Mara Voss
 LIGHT: Practical night
 TIME: 16
 ID: neonoire-shot-229
 IMAGE: 227-i-want-my-sister.jpg
-NOTE: The key leaves Mara here and returns to the story at Ueno in shot 232. Jack's promise — tomorrow night I'm moving you out — is the trap Ishida sets in shot 230.
+NOTE: Retake 29 September 2026: the new taped counter drawing is visible beside Mara, preserving the key handoff and the same actors, futon and bare bulb. The visible paper-looking tag reads 114, matching the revised screenplay; earlier 87-tag boards are left alone at the director’s request. The smaller paper details remain production-review checks. The key leaves Mara here and returns to the story at Ueno in shot 232. Jack's promise — tomorrow night I'm moving you out — is the trap Ishida sets in shot 230.
 

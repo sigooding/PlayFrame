@@ -24,14 +24,14 @@ IMAGE: 85-the-desk-lamp.jpg
 NOTE: Room master for Jack's office. Generated from the room study with the new Jack sheet attached. The frosted-glass door carries only JACK in English here; the draft's katakana line is a prop-lettering check for the art department. Vera's voice-over from the noodle counter plays over this wide; no flashback is pictured. The wall CRT is never static: the muted B&W samurai film still runs (director's rule, 26 September 2026; the draft's 'static' stays on the page).
 
 88. INSERT — 50mm, static, high angle — a clean envelope.
-From above the desk: the lamp base and rotary phone at the edges, the drawer pulled open with a box of plain envelopes, and Jack's grimy hands sliding the green cloth notebook into a clean white envelope. A capped black pen waits on the desk.
+From above the desk: the lamp base and rotary phone at the edges, the drawer pulled open with a box of plain envelopes, and Jack's grimy hands tucking Sakai's folded letter into the cover of the green cloth notebook before putting both in a clean white envelope. A capped black pen waits on the desk.
 SCRIPT: "He opens the drawer. Takes out a clean envelope. Takes Sakai's letter from his coat, smooths it once more along its crease, and folds it inside the notebook's cover. Puts the notebook in the envelope."
 CAST: Jack
 LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-88
 IMAGE: 86-the-clean-envelope.jpg
-NOTE: Hands only; no face. Same desk top, lamp and phone as the master. The dirt on his hands is from the Hive and non-graphic. The notebook's worn green cloth cover is locked for scenes 78–79.
+NOTE: Retake 29 September 2026: the folded letter is now held inside the notebook cover in Jack's hands, with the blank envelope beside it; the following slide into the envelope is an action for the take, not visible in this one keyframe. Hands only; no face. Same desk top, lamp and phone as the master. The dirt on his hands is from the Hive and non-graphic. The notebook's worn green cloth cover is locked for scenes 78–79.
 
 89. MEDIUM CLOSE-UP — 85mm, static, eye level — he writes nothing.
 Across the desk, the lamp at frame left: Jack holds the black pen over the blank envelope for a long time, eyes lowered, face unreadable. The CRT static flickers soft behind him beside the filing cabinets.

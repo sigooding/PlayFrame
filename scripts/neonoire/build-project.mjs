@@ -35,6 +35,7 @@ import { hiveFirstLook, hiveFirstScenes } from "./hive-first-look.mjs";
 import { innColdLook, innScenes, innWarmLook, innWarmScenes } from "./inn-look.mjs";
 import { demolitionLook, endingScenes, newCounterLook, rooftopLook, veraLookESheet } from "./ending-look.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
+import { kandaBarLook, kandaBarScenes, kandaBarSheet } from "./bar-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -105,7 +106,7 @@ const MOODS = {
   s22: "A brick arch where the cups tremble with every train, and she sleeps at last.",
   s23: "Red lanterns and charcoal smoke under the bridge, and an old debt spoken quietly.",
   s24: "Forty floors of rain-grey glass, a white model of tomorrow, and two men who never hurry.",
-  s25: "One bulb, a cold bowl of rice, and a number stamped into old metal.",
+  s25: "One bulb, a cold bowl of rice, and 114 on a worn key tag.",
   s25a: "Fogged glass, a siphon flame, and a plate she didn't ask for.",
   s26: "A green train circling the city like a second hand, and a lighter passed hand to hand.",
   s27: "One small umbrella, two wet shoulders, and the city's old song on green.",
@@ -268,7 +269,7 @@ const frames = shots.map(shot => {
           : confrontationScenes.has(shot.scene.key)
             ? "Image: AI-generated first boarding of scenes 83–84 (26 September 2026), generated from each scene's master with the Vera and recast Jack sheets attached. Kurose has no sheet yet and is held to the scene 83 master; the storeroom master is new. Production approval pending."
           : witnessScenes.has(shot.scene.key)
-            ? "Image: AI-generated first boarding of scenes 81–82 (25 September 2026), generated from each scene's master with the recast Jack sheet attached, scene 2's bar and journalist frames as references. Okada and Harada have no sheets yet and are held to their masters. Production approval pending."
+            ? "Image: AI-generated first boarding of scenes 81–82 (25 September 2026), generated from each scene's master with the recast Jack sheet attached, scene 2's bar and journalist frames as references. Okada and Harada were originally held to their scene masters; identity sheets were added later. Production approval pending."
           : policeDayScenes.has(shot.scene.key)
             ? "Image: AI-generated first boarding of scene 80 (25 September 2026), generated from scene 7's room master with the Ishida and recast Jack sheets attached. Production approval pending."
           : dawnScenes.has(shot.scene.key)
@@ -300,6 +301,7 @@ const frames = shots.map(shot => {
       ...(hiveScenes.has(shot.scene.key) ? [`Scenes 85–88 — the raid on the Hive (26 September 2026): ${hiveLook}`] : []),
       ...(shot.scene.key === "s83" ? [`Scene 83 — Kurose's office by day (26 September 2026): ${kuroseOfficeLook}`] : []),
       ...(shot.scene.key === "s84" ? [`Scene 84 — the Hive storeroom (26 September 2026): ${storeroomLook}`] : []),
+      ...(kandaBarScenes.has(shot.scene.key) ? [`Kanda bar location continuity: ${kandaBarLook}`] : []),
       ...(shot.scene.key === "s81" ? [`Scene 81 — the bar by day (25 September 2026): ${barDayLook}`] : []),
       ...(shot.scene.key === "s82" ? [`Scene 82 — the newsroom (25 September 2026): ${newsroomLook}`] : []),
       ...(dawnScenes.has(shot.scene.key) ? [`Scenes 77–79 — the envelope and the notebook (25 September 2026): ${dawnLook}`] : []),
@@ -379,6 +381,10 @@ const allBoards = [
   boardOf("neonoire-look-tokyo-story", "Tokyo Story in colour — scenes 72–75", "All fifteen 16:9 draft studies across both sessions: dry pretty makeup in the hotel, rain washing it away on the run, the twenty-metre stop, the blow and folding, the distant aftermath, the almost-reflection, and the empty pillow shots. Low level static cameras; one normal-lens face shot, then a withheld extreme wide.", framesOf(["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated revision study.` }))),
   boardOf("neonoire-look-dawn", "The envelope and the notebook — scenes 77–79", "Ten 16:9 draft studies: Jack's office under one lamp and a TV full of static, the envelope with no name, the grey dawn walkway, DANIEL VOSS inside the cover, the scene 4 room at dawn with two empty cups, and the letter returned, smoothed flat beside them.", framesOf(["neonoire-s77", "neonoire-s78", "neonoire-s79"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}, ${frame.angle}. AI-generated study.` }))),
   boardOf("neonoire-look-kanda", "Kanda, night — sodium and green", "Ten shots of the cold open and the bar: sodium orange against sick fluorescent green, cold steady rain, black reflective asphalt, the vending machine the brightest light in the film.", framesOf(["neonoire-s1", "neonoire-s2"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
+  boardOf("neonoire-look-kanda-bar", "Okada’s bar — night to day", "Location continuity across scenes 2, 8, 27A, 64 and 81. The 2×2 sheet uses established storyboard studies, not a newly invented room. Night: CRT variety show on; day and later night: CRT off, cleanup mat and stools up by day. Okada has a separate cast sheet. Draft studies, not approved coverage.", [
+    { image: kandaBarSheet, caption: "Kanda bar set sheet: upper left, scene 2 night before the shooting; upper right, aftermath; lower left, scene 8 daylight; lower right, scene 81 across the counter." },
+    { image: "/images/neonoire/sheets/okada.jpg", caption: "Okada — white rolled sleeves and navy apron in every visit." },
+  ]),
   boardOf("neonoire-look-sisters", "Three days later — grey rain light", "Vera's thread: blue hour on the block, rain-grey glass and muted amber practical light inside the revised apartment, a bone-dry pale-blue umbrella and a faded warm family photograph.", framesOf(["neonoire-s3", "neonoire-s4"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-station", "The police station — a decade out of step", "Fluorescent tubes with one flickering, faded posters, a fax machine beside a flat monitor, a clock a minute fast, and a paper cup of tea nobody drinks.", framesOf(["neonoire-s5", "neonoire-s6", "neonoire-s7", "neonoire-s80"]).map(frame => ({ image: frame.image, caption: `${frame.title} — ${frame.shotType}, ${frame.lens}. AI-generated study.` }))),
   boardOf("neonoire-look-style", "The style block — nine keys", "The studio brief's nine keys, with the revised apartment and police-station keys at 16:9 and the other keys at 2.39:1 from the look and negative prompt in src/lib/styles.ts, and the same block the app's Neo-Noir Tokyo style writes into every prompt batch.", [

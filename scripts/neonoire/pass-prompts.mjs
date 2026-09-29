@@ -18,6 +18,7 @@ import { apartmentBuildingLook, apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, isColdOpenScene } from "./cold-open-look.mjs";
+import { kandaBarLook, kandaBarScenes, kandaBarSheet } from "./bar-look.mjs";
 import { aftermathLook, streetsLook, streetsScenes } from "./streets-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -66,6 +67,7 @@ const passes = [...new Set(pending.map(shot => passOf(shot.n)))].sort((a, b) => 
 function shotBrief(shot) {
   const scene = shot.scene;
   const referenceKeys = (KEYS[scene.key] || []).map(key => `public/images/neonoire/keys/${key}`).filter(file => existsSync(resolve(root, file)));
+  if (kandaBarScenes.has(scene.key)) referenceKeys.push(`public${kandaBarSheet}`);
   if (scene.key === "s3") referenceKeys.push("public/images/neonoire/s3/29-apartment-block.jpg", "public/images/neonoire/s3/31-the-lit-window.jpg", "public/images/neonoire/s78/88-the-walkway.jpg");
   if (scene.key === "s6") referenceKeys.push("public/images/neonoire/s6/51-the-interview-room.jpg", "public/images/neonoire/s6/56-three-days-ago.jpg");
   if (scene.key === "s7") referenceKeys.push("public/images/neonoire/s7/63-the-detectives-room.jpg", "public/images/neonoire/s7/64-the-bottom-drawer.jpg", "public/images/neonoire/s1/18-the-flashlight.jpg", "public/images/neonoire/s5/43-the-front-counter.jpg");
@@ -101,6 +103,7 @@ function shotBrief(shot) {
     `SUBJECT — ${shot.description} ${note}`,
     continuity,
     isColdOpenScene(scene.key) ? `CONTINUITY — ${coldOpenLook}` : "",
+    kandaBarScenes.has(scene.key) ? `LOCATION — ${kandaBarLook}` : "",
     streetsScenes.has(scene.key) ? `CONTINUITY — ${streetsLook}` : "",
     scene.key === "s76" ? `CONTINUITY — ${aftermathLook}` : "",
     scene.key === "s7" ? `CONTINUITY — ${detectivesLook}` : "",
