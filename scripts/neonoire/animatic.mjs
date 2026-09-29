@@ -45,7 +45,7 @@ for (const [i, frame] of frames.entries()) {
   else filter = `anullsrc=r=44100:cl=mono,atrim=0:${frame.duration}[a]`;
   run([...inputs, "-filter_complex", filter, "-map", "0:v", "-map", "[a]", "-t", String(frame.duration),
     "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,format=yuv420p",
-    "-c:v", "libx264", "-r", "24", "-c:a", "aac", "-ar", "44100", "-ac", "1", seg]);
+    "-c:v", "libx264", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", seg]);
   segments.push(seg);
 }
 
@@ -53,6 +53,8 @@ const name = args.name || (args.scene ? `scene-${args.scene}` : args.from || arg
 const list = resolve(work, "list.txt");
 writeFileSync(list, segments.map(s => `file '${s}'`).join("\n") + "\n");
 const file = resolve(out, `neonoire-${name}.mp4`);
-run(["-f", "concat", "-safe", "0", "-i", list, "-c", "copy", file]);
+// One loudness pass over the whole cut, so whispered lines are audible next to spoken ones without
+// each frame being levelled on its own (which would shout the quietest lines).
+run(["-f", "concat", "-safe", "0", "-i", list, "-c:v", "copy", "-af", "loudnorm=I=-16:LRA=11:TP=-1.5", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", file]);
 const voiced = frames.reduce((n, f) => n + (f.audio?.length || 0), 0);
 console.log(`${file}: ${frames.length} frames, ${voiced} voiced lines, ${frames.reduce((s, f) => s + f.duration, 0)}s`);
