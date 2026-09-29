@@ -89,19 +89,21 @@
       "chosenPreview": "oOJyrMKhBUCGET6PTTAu"
     },
     "SAKAI": {
-      "voiceId": null,
-      "status": "picked, not yet saved (custom-voice limit)",
+      "voiceId": "y7NkiaxPRjIzeTdRhHDC",
+      "status": "chosen",
       "designedPreviews": [
         "y7NkiaxPRjIzeTdRhHDC",
         "5cZz3tgktjtrxNe6QqlG",
         "zmHfnRO7iFQn8Uwmx83t"
       ],
-      "chosenPreview": "y7NkiaxPRjIzeTdRhHDC"
+      "chosenPreview": "y7NkiaxPRjIzeTdRhHDC",
+      "name": "Sakai - NEONOIRE",
+      "notes": "Saved to the library 29 September 2026 (take 1 picked)."
     },
     "MASKED MAN": {
-      "voiceId": null,
-      "status": "picked, not yet saved (custom-voice limit)",
-      "notes": "The hit team leader / the man who says 'Shitsurei shimasu' (sc 1, 2, 24, 70 driver). First three previews rejected ('no good'); redesigned flat/clipped/low-affect on 29 Sept; awaiting a pick.",
+      "voiceId": "IUNPSr7i3o1XsExH6IGv",
+      "status": "chosen",
+      "notes": "The hit team leader / the man who says 'Shitsurei shimasu' (sc 1, 2, 24, 70 driver). First three previews rejected ('no good'); redesigned flat/clipped/low-affect on 29 Sept; awaiting a pick. Saved to the library 29 September 2026 (take 1 picked).",
       "rejectedPreviews": [
         "BikINnFYQnWn9BQmTLVD",
         "N0mXCD6snvnfdnhxNS1Z",
@@ -112,7 +114,8 @@
         "i7lGfu0v4JT1k3SFaM2c",
         "IsGbbj0z3QrAWh3wpcz7"
       ],
-      "chosenPreview": "IUNPSr7i3o1XsExH6IGv"
+      "chosenPreview": "IUNPSr7i3o1XsExH6IGv",
+      "name": "Masked Man - NEONOIRE"
     },
     "JOURNALIST": {
       "voiceId": "EEYUewEB5w5R0IPnszO5",

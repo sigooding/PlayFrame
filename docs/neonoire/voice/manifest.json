@@ -453,6 +453,127 @@
         "id": "zkhEzazqE2hfseZ9ZBr9"
       },
       "status": "take"
+    },
+    {
+      "id": "s1-oldman-twenty-years",
+      "frameId": "neonoire-shot-09",
+      "character": "OLD MAN",
+      "text": "Twenty years.",
+      "file": "/audio/neonoire/s1/09-oldman-twenty-years.mp3",
+      "offset": 3,
+      "duration": 1.57,
+      "voice": "y7NkiaxPRjIzeTdRhHDC",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "nfwrR3taWgUcSfLNg62e",
+        "id": "Cu0eeANmn20hmsdtr5JC"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-oldman-strained-don-t-let-them-have",
+      "frameId": "neonoire-shot-15",
+      "character": "OLD MAN",
+      "text": "Don't let them have it.",
+      "prompt": "[strained] Don't let them have it.",
+      "file": "/audio/neonoire/s1/15-oldman-strained-don-t-let-them-have.mp3",
+      "offset": 2,
+      "duration": 2.19,
+      "voice": "y7NkiaxPRjIzeTdRhHDC",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "MaBVyaaAxfDK7we594Q5",
+        "id": "h2bhyYHAGMH5Fyy6SY1M"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-oldman-weakly-your-father-it-was-not",
+      "frameId": "neonoire-shot-282",
+      "character": "OLD MAN",
+      "text": "Your father. ... It was not... what they say.",
+      "prompt": "[weakly] Your father. ... It was not... what they say.",
+      "file": "/audio/neonoire/s1/282-oldman-weakly-your-father-it-was-not.mp3",
+      "offset": 1,
+      "duration": 4.36,
+      "voice": "y7NkiaxPRjIzeTdRhHDC",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "Y5enBHUOVfmZiR0YzHB5",
+        "id": "5Y7BG7zI8SVw8PIZMyqD"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-maskedman-shitsurei-shimasu",
+      "frameId": "neonoire-shot-10",
+      "character": "MASKED MAN",
+      "text": "Shitsurei shimasu.",
+      "file": "/audio/neonoire/s1/10-maskedman-shitsurei-shimasu.mp3",
+      "offset": 1,
+      "duration": 1.07,
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "AjtYR5XTmvCclaizlfkS",
+        "id": "asWjWd14MboN67Cmpnx7"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s2-maskedman-shitsurei-shimasu",
+      "frameId": "neonoire-shot-25",
+      "character": "MASKED MAN",
+      "text": "Shitsurei shimasu.",
+      "file": "/audio/neonoire/s2/25-maskedman-shitsurei-shimasu.mp3",
+      "offset": 1,
+      "duration": 1.07,
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "AjtYR5XTmvCclaizlfkS",
+        "id": "asWjWd14MboN67Cmpnx7"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-maskedman-first-position-done-moving-to-second",
+      "frameId": "neonoire-shot-12",
+      "character": "MASKED MAN",
+      "text": "First position done. Moving to second.",
+      "file": "/audio/neonoire/s1/12-maskedman-first-position-done-moving-to-second.mp3",
+      "offset": 1,
+      "duration": 2.77,
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "Pp3ucBYYHqkGAO81UUwR",
+        "id": "TWwwKCmz18Cz8Aifm9OA"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s2-maskedman-second-position-done",
+      "frameId": "neonoire-shot-27",
+      "character": "MASKED MAN",
+      "text": "Second position done.",
+      "file": "/audio/neonoire/s2/27-maskedman-second-position-done.mp3",
+      "offset": 8,
+      "duration": 1.72,
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "3PHvMwiCPgs8R7eUX4pm",
+        "session": "PHVeZLuQWmIhJOkZ19SP",
+        "id": "tVTr1Uf1rKj2GhhkGynO"
+      },
+      "status": "take"
     }
   ]
 }
