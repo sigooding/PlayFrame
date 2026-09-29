@@ -1,5 +1,7 @@
 # NEONOIRE — keyframe handoff
 
+**Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
+
 ## Merged to main — 29 September 2026
 
 This branch (`arena/01a0ea4b-playframe`) is merged to `main` in PR #36 — the whole September retake programme: the Hive canon and look (all thirty-four frames), the Kanda alley layout, and the roadside inn style sheet and mask rule. The branch stays open for future passes; merge again when the next batch lands.

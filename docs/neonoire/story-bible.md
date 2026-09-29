@@ -5,8 +5,8 @@ Purpose: give any later session the reasoning behind the script, so it can compa
 PlayFrame against what was decided, and why.
 
 **Baseline files (keep with this document):**
-- `Neonoire_Draft1_2026-09-25.fountain` — the first complete draft exactly as written (100 scenes),
-  before any later change. PlayFrame's `Neonoire (3).fountain` started byte-identical to this.
+- `baseline/Neonoire_Draft1_2026-09-25.fountain` (in this folder) — the first complete draft exactly as written (100 scenes),
+  before any later change. PlayFrame's `Neonoire (3).fountain` (repo root) started byte-identical to this.
 - Later changes are listed in Part 9. Anything in PlayFrame that differs from Draft 1 and is not in
   Part 9 was changed in PlayFrame, not in this conversation.
 

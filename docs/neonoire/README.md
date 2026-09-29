@@ -1,5 +1,7 @@
 # NEONOIRE — the final screenplay
 
+> **New session? Read [`story-bible.md`](story-bible.md) first** — premise, characters and their decision history, conspiracy backstory, locations, structure, scene intent, rejected ideas, motifs, post-draft changes and known inconsistencies. [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain) is Draft 1 as originally written (100 scenes, before the letter rewrite); the working script started identical to it, so any difference from it that is not in the bible's Part 9 was changed in PlayFrame.
+
 **100 screenplay scenes, all boarded, 269 numbered shots.** The first boarding is shots 1–240. Coverage 241–269 added the beats that boarding had named and left, without renumbering. The draft itself is unchanged and is carried page by page into Frame.
 
 **Latest passes:** [scenes 77–79 and scene 80](passes/scenes-77-79.md) (shots 87–101), and [scenes 81–82](passes/scenes-81-82.md) (shots 102–110). The bar by day with Okada, and the newsroom with Harada. Then [scenes 83–84](passes/scenes-83-84.md) (shots 111–120): Kurose's office, and the Hive storeroom. Then [scenes 85–88](passes/scenes-85-88.md) (shots 121–129): the raid on the Hive. Then [scenes 89–92](passes/scenes-89-92.md) (shots 130–138): the escape. Then [scenes 93–96](passes/scenes-93-96.md) (shots 139–147): Ishida's last night. Then [scene 97](passes/scene-97.md) (shots 148–154): the ground-breaking at the Hive, with Vera in costume Look D. Then [scenes 98–100](passes/scenes-98-100.md) (shots 155–161): the rooftop, the demolition and the new counter, the end of the film. Then [scenes 8–12](passes/scenes-8-12.md) (shots 162–170, numbered in boarding order): Kanda revisited and Jack's office. Then [the roadside inn](passes/roadside-inn.md) (shots 171–180): the stairway motif and the colour change. Then [scenes 13–17](passes/scenes-13-17.md) (shots 181–190): the Hive, first seen.
@@ -27,6 +29,8 @@
 | Current street brief | `scripts/neonoire/streets-look.mjs` |
 | Images | `public/images/neonoire/s1 … s7/`, `s72 … s96/`, `sheets/`, `keys/` |
 | Workspace bundle | [`public/projects/neonoire-opening.json`](../../public/projects/neonoire-opening.json) |
+| Story bible and decision log | [`story-bible.md`](story-bible.md) — read first |
+| Draft 1 baseline (diff against the working script) | [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain) |
 | Next-agent handoff | [`handoff.md`](handoff.md), [revision ledger](passes/tokyo-streets-revision.md) |
 
 **All 147 shot images are on disk** — the Tokyo Story colour revision of scenes 72–75 completed in two sessions (10 + 8 generation calls). Of the existing opening images, shots 11–28 and scene 3 are still legacy 2.39:1 studies pending their separate 16:9 revision; see [cold-open-revision.md](passes/cold-open-revision.md). Scene 76 images are unchanged by the current pass. Neither group is claimed as freshly regenerated.
