@@ -65,7 +65,7 @@ NOTE: Generated from shot 149 to keep Look D and the umbrella. Only Kaneko's han
 
 153. MEDIUM WIDE — 85mm, static, eye level — collar up.
 Further down the street, past blurred umbrellas and camera flashes, Jack stands alone by a shuttered shopfront, collar up, watching. He meets her eyes.
-SCRIPT: "Further down the street, alone, collar up: Jack. Watching too. Vera sees him. He sees her."
+SCRIPT: "Further down the street, alone, collar up: Jack. Watching too. A newspaper folded small in his coat pocket, open to page six. He knows what a closed file looks like. Vera sees him. He sees her."
 CAST: Jack
 LIGHT: Overcast soft
 TIME: 8

@@ -12,5 +12,19 @@ Grey daylight. A cardboard box on Ishida's desk. A young detective is clearing i
 
 He opens the bottom drawer. Empty.
 
+The desk phone rings. He picks it up.
+
+YOUNG DETECTIVE
+(in Japanese)
+Yes.
+(beat)
+Where?
+(beat)
+In his own car. Under the expressway. Sitting up, engine off. No marks.
+(beat)
+He left a statement.
+
+He puts the phone down very slowly. He looks at the empty chair. At the empty drawer.
+
 On the wall, the clock still runs a minute fast.
 

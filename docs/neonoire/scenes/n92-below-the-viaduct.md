@@ -15,7 +15,7 @@ Both shots (137–138) are **16:9, 1920×1080, full-bleed**. The street master i
 
 137. WIDE — 35mm, static, eye level — below the viaduct.
 In the empty wet street, Vera has just stepped off the ladder at the viaduct pillar, one step apart from Jack. The Hive rises behind them with every window lit, and siren glow shows far off.
-SCRIPT: "Vera and Jack come down a steel maintenance ladder into an empty street. Soaked. Breathing hard."
+SCRIPT: "Vera and Jack step off the last rung of the fire ladder into an empty street. Soaked. Breathing hard."
 CAST: Jack, Vera Voss
 LIGHT: Practical night
 TIME: 12

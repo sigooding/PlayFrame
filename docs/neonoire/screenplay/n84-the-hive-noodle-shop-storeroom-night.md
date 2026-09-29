@@ -27,6 +27,8 @@ Jack gets to his feet. Neither of them moves toward the other.
 VERA
 She asked me to come. Kaneko. She said I should see where Mara was.
 
+In her hands, a small cloth bag with one strap frayed. Kaneko put it there at the door.
+
 She looks around the tiny room. The bare bulb. The flour sacks. And on the wall, taped up with rice-paper tape, pages from Mara's sketchbook: drawings of the noodle counter, but from the inside now. From behind the curtain. The back of a head on the third stool.
 
 Vera walks to the wall. Looks at the drawing for a long time.
@@ -51,20 +53,41 @@ And you told her not to come out.
 JACK
 She told herself.
 (beat)
-She was protecting you. So was I. We were both wrong.
+She was protecting you. So was I.
 
 VERA
 Ishida called me before it was on any news. He knew exactly where she was.
 
 JACK
-He arranged the car. It was his driver.
-
-VERA
-I know.
+I told him.
 (beat)
-I worked it out on the way here.
+Where she'd be, and when. He arranged the car. It was his driver. That's mine.
 
 VERA
+I told you about the detective. The one who promised a car. You never asked who.
+
+JACK
+No.
+
+Vera says nothing for a while. She does not say it's all right.
+
+VERA
+I'm not going to tell you it wasn't yours.
+
+JACK
+Don't.
+
+She opens the bag. Folded pages, soft with handling. She smooths one flat on the flour sack: a counter seen from the floor. Two pairs of shoes. A stool going over. A hand. Beside the shoes, in block capitals: EXCUSE ME.
+
+VERA
+She drew what she saw. All of it.
+
+JACK
+She never told me she'd kept them.
+
+VERA
+I'm taking these to Harada. Somebody has to look at them.
+(beat)
 I read his notebook.
 
 JACK

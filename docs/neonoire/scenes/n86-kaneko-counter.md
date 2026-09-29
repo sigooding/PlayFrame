@@ -25,7 +25,7 @@ NOTE: Counter master. The tube goes off on the cut. Retake 29 September 2026 —
 
 124. MEDIUM — 50mm, static, eye level — through the back.
 With the shutter down and the tube off, the gas flames give the only glow. Kaneko points up and back toward the curtain while Jack reaches toward her and Vera waits behind him.
-SCRIPT: "Up. Through the back. The stairs by the dentist. All the way to the roof."
+SCRIPT: "Up. Through the back. The stairs by the dentist. Then go through the neighbours. Everyone will open a door."
 CAST: Kaneko, Jack, Vera Voss
 LIGHT: Low key
 TIME: 8

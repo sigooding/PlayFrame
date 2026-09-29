@@ -32,6 +32,15 @@ Gone.
 (beat)
 It should have gone twenty years ago.
 
+VERA
+Harada has Mara's drawings. The pages from the floor of the bar. She says they're the only eyewitness there is.
+
+JACK
+She'd have liked that. Being asked.
+
+VERA
+Nobody asked her. She drew it anyway.
+
 A train passes below. They watch it.
 
 Jack takes something from his pocket. Holds it out on his open palm.
