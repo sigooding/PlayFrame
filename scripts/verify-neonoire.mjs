@@ -138,7 +138,7 @@ function jpegDimensions(file) {
   }
   throw new Error(`No JPEG dimensions in ${file}`);
 }
-const { coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
+const { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
 assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
 const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId) && shotNo(frame) <= 28);
 assert.equal(coldOpen.length, 28);
@@ -175,8 +175,17 @@ assert(letterS1[1].notes.includes("s1/01-backstreet.jpg") && letterS1[1].notes.i
 assert(letterS1[2].notes.includes("s1/14-she-kneels.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic");
 assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 carries the letter-rewrite retake note");
 pass("letter rewrite in scene 1: 1:00 in her own handwriting, the bar sign at the end of the street, and Mr. Sakai's face turned up to hers");
+// Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
+// and out on foot, and the six blocked frames are retaken to the fixed pedestrian layout.
 const backsOut = project.frames.find(frame => frame.id === "neonoire-shot-13");
-assert(backsOut.notes.includes("backs out") && backsOut.notes.includes("does not turn") && backsOut.notes.includes("reverse lamps"), "Shot 13 locks the reverse: the alley will not take a turn");
+assert(backsOut.notes.includes("reverses out of the alley mouth") && backsOut.notes.includes("falls dark") && backsOut.notes.includes("plate is not legible") && backsOut.notes.includes("No people"), "Shot 13 locks the layout-pass reverse: out of the mouth, the alley falls dark");
+for (const n of [8, 10, 12, 13, 17, 18]) {
+  const frame = project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`);
+  assert(frame.notes.includes("Retake 29 September 2026 (the layout pass)") && frame.notes.includes("sheets/kanda-alley-layout.jpg"), `Shot ${n} carries the layout-pass retake note and the layout sheet`);
+}
+assert(coldOpenLook.includes("Alley layout (canonical") && coldOpenLook.includes("too narrow for cars") && coldOpenLook.includes("Mara runs away from the car"), "The cold-open look carries the canonical alley layout");
+assert.deepEqual(jpegDimensions("images/neonoire/sheets/kanda-alley-layout.jpg"), [1920, 1080], "The kanda layout sheet is 1920×1080");
+pass("kanda alley layout: the sedan blocks the mouth, the six frames retaken, the layout sheet installed");
 
 // Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
