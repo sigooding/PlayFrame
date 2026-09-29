@@ -61,11 +61,37 @@ The director's breakdown runs three tiers: **wrong building and wrong look** (th
 
 In code: `hiveRetakenExteriors` (7). The per-shot staging, quotes and locked notes in the boards carry through untouched, and each retaken shot's board note records the retake. Review sheet: `public/images/neonoire/reviews/hive-retakes-pass-1.jpg` (the seven installed frames in shot order).
 
-## The retake queue — the next pass plan (twenty-seven frames, one call each)
+## The look retake pass (29 September 2026): haze, steam, dim light, one faded sign
 
-Every frame below is a Hive shot and nothing else; each carries the new look, and the three interior set failures carry both problems. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`; interiors against their set sheets. Staging locks noted below travel with the retake. In code: `hiveCanonRetakes` (3 set failures), `hiveLookRetakes` (24 look only), run order `hiveNextPassPlan` (27).
+The director's follow-up: the architecture reads roughly right now, but these frames need the new look's haze, steam, dim light and single faded sign. Each is an edit of the base frame with the matching set sheet passed alongside as reference — figures, wardrobe and props held to the base frame. In code: `hiveRetakenLook` (13), with `model: true` flagging the frames that also carry a set fix.
 
-### DAY (15)
+| Frame | Look | Was | Status |
+| --- | --- | --- | --- |
+| `s15/185-then-he-goes-in.jpg` (187) | day | entrance stair packed with bright lit signs | **RETAKEN + INSTALLED** — murk, steam, one faint sign; the threshold held |
+| `s16/186-everybody-sees-him.jpg` (188) | day | passages lit like a market | **RETAKEN + INSTALLED** — thin cold shafts through drifting steam, one faint sign |
+| `s16/248-exactly-the-drawing.jpg` (250) | day | warm lamp rows and shop signs | **RETAKEN + INSTALLED** — thin cold shafts over the counter's one amber bulb |
+| `s16/249-the-chair.jpg` (253) | day | warm lamp rows at the dentist's chair | **RETAKEN + INSTALLED** — thin cold shafts through the steam |
+| `s55/221-they-match.jpg` (223) | day | white-tiled counter room, 金子 sign ON the counter (model) | regen pending — first retake landed the counter sheet exactly (six stools, sign on the wall, one amber bulb) but dressed Vera in Look D; scene 55 wears the original look, so it regenerates with the figures held to the base frame. Original on disk |
+| `s99/157-the-sign.jpg` (159) | day | crowd in plain overcast | **RETAKEN + INSTALLED** — grey-ochre murk and dust, dead signs in the cut-open floors behind |
+| `s69/236-vera-would-love-this.jpg` (238) | night | green-lit passage around a lit CRT shopfront | **RETAKEN + INSTALLED** — amber pools in steel-blue haze; the small old CRTs held dim |
+| `s69/279-her-sisters-smile.jpg` (279) | night | green glow behind Vera | **RETAKEN + INSTALLED** — amber pools and steel-blue haze |
+| `s71/238-everyones-awake.jpg` (240) | night | lantern rows and green signage | **RETAKEN + INSTALLED** — small pools, haze shafts, sparse dim faded neon |
+| `s85/119-single-file.jpg` (121) | night | passage three abreast, strung lamps (model) | **RETAKEN + INSTALLED** — rebuilt shoulder-wide for single file, amber pools in steel-blue haze |
+| `s85/120-the-hive-is-watching.jpg` (122) | night | too wide, lit lamps and door lights (model) | queued next window — single-file passage + look |
+| `s92/136-until-us.jpg` (138) | night | the Hive with hundreds of bright lit windows | queued next window — mostly darkness, small amber pools |
+| `s68/235-rice-balls-for-the-car.jpg` (237) | night | storeroom with shelving and a teal door (model) | queued next window — rebuild to the storeroom sheet |
+
+**Optional, judged against the rest:** s67/234 and s70/237 (the service road — add steam at the back door); s88/126 and s88/127 (the raid in the dark — mostly black, they probably pass as-is); s90/130, s90/131 and s90/132 (the rooftop — the bright green city is more colourful than the new rules allow). To be graded or retaken next window alongside the four pending frames above.
+
+Review sheet for the installed nine: `public/images/neonoire/reviews/hive-retakes-pass-2.jpg` (the sheet is rebuilt with the full tier when the four pending frames land).
+
+**Script lines kept in step (small director's edits, carried in the draft `Neonoire (3).fountain` and its regenerated pages):** scene 15 gains the tower stepping down at the back to a low wing pressed against the railway, and the Hive sitting in its own haze even in daylight; scene 90 is now explicitly the **rear wing's** roof, level with the tracks; scenes 16 and 55 each gain one line of daylight coming in thin shafts through the steam.
+
+## The retake queue — the next pass plan (fourteen frames, one call each)
+
+Every frame below is a Hive shot and nothing else; each carries the new look. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`. Staging locks noted below travel with the retake. In code: `hiveLookRetakes` (14 look only; the set failures moved to `hiveRetakenLook`), run order `hiveNextPassPlan` (14).
+
+### DAY (9)
 
 | Shot | Frame | Problem |
 | --- | --- | --- |
@@ -73,34 +99,21 @@ Every frame below is a Hive shot and nothing else; each carries the new look, an
 | 152 | `s97/150-she-does-not-look-away.jpg` | close-up lit blue-grey; day look is flat, milky, dim |
 | 153 | `s97/151-collar-up.jpg` | blue-grey pre-dawn on the street; ordinary grey daylight outside the murk |
 | 154 | `s97/152-the-ribbon.jpg` | shovel against dark rain; scene 97 rule: sharp, clean and cold against the murk behind |
-| 159 | `s99/157-the-sign.jpg` | crowd reads plain overcast; grey-ochre murk like a faded photograph, dead neon behind |
-| 187 | `s15/185-then-he-goes-in.jpg` | bright lit signage at the entrance; neon off but one faint sign. Entering is a threshold |
-| 188 | `s16/186-everybody-sees-him.jpg` | passages lit like a market; day passages are thin cold shafts with drifting steam and dust |
 | 189 | `s17/187-you-got-old.jpg` | lit fluorescent tube, green cast; the counter is one amber bulb, steam |
 | 190 | `s17/188-something-moves.jpg` | fluorescent and cool grade over the counter |
-| 223 | `s55/221-they-match.jpg` | white-tiled corridor, sign on the counter (geometry); even modern light. Keep the canon counter, sign on the wall |
 | 225 | `s56/223-the-third-stool.jpg` | lit fluorescent; one amber bulb. **Keep the third-stool staging** — Vera third of six, two empty to her left, 金子 on the wall |
 | 227 | `s58/225-bring-her.jpg` | fluorescent and cool grade. **Keep the charcoal-coat third-stool motif** |
-| 250 | `s16/248-exactly-the-drawing.jpg` | warm lamp rows and shop signs by day; thin cold shafts, one faint sign |
-| 253 | `s16/249-the-chair.jpg` | warm lamp rows at the dentist's chair; milky dim murk, thin cold shafts |
 | 266 | `s56/224-stool-three.jpg` | fluorescent, cool green grade. **Keep Vera third from the left** |
 
-### NIGHT (12)
+### NIGHT (5)
 
 | Shot | Frame | Problem |
 | --- | --- | --- |
-| 121 | `s85/119-single-file.jpg` | three abreast (geometry); strung lamps and green signage. Canon: shoulder-wide single file, small amber pools, haze shafts |
-| 122 | `s85/120-the-hive-is-watching.jpg` | lit lamps and door lights, green cast; mostly darkness, one or two dim signs |
 | 123 | `s86/121-the-shutter.jpg` | bright fluorescent tube at the counter; one amber bulb, steam. Keep Kaneko's staging |
 | 126 | `s87/124-the-repairman.jpg` | saturated teal grade, blue smoke; desaturated near-monochrome. Keep the repairman exactly as `sheets/repairman.jpg` holds him |
 | 132 | `s90/130-the-roof.jpg` | saturated green city; steel-blue haze, distant light only small pools |
 | 133 | `s90/131-she-jumps.jpg` | saturated green city behind the jump |
-| 138 | `s92/136-until-us.jpg` | hundreds of lit windows; mostly darkness, small amber pools |
-| 237 | `s68/235-rice-balls-for-the-car.jpg` | shelving and a teal doorway (geometry); cool green grade. Canon plywood box, one amber bulb |
-| 238 | `s69/236-vera-would-love-this.jpg` | green-lit passage around a lit CRT shopfront; amber pools against steel-blue haze |
-| 240 | `s71/238-everyones-awake.jpg` | lantern rows and green signage; small pools, haze shafts, sparse dim neon |
 | 267 | `s90/132-the-gap.jpg` | saturated green city behind the gap |
-| 279 | `s69/279-her-sisters-smile.jpg` | green glow behind Vera; black, amber, steel blue |
 
 ### Already on canon — no retake
 
@@ -112,6 +125,6 @@ s91 (the railway maintenance walkway is railway ground), s22 (the brick arch cou
 
 ## Also in this pass
 
-- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveCanonRetakes` (3 set failures), `hiveLookRetakes` (24 look), `hiveNextPassPlan` (27, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
+- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveRetakenLook` (13, the look retake pass with model fixes flagged), `hiveLookRetakes` (14 look still queued), `hiveNextPassPlan` (14, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
 - The Hive look files (`hive-look`, `hive-first-look`, `hive-morning-look`, `escape-look`, `ending-look`'s demolition, `confrontation-look`'s storeroom) now defer to the canon for lighting and atmosphere and carry no other change; every verify-locked continuity substring survives.
 - `scripts/verify-neonoire.mjs` checks the six sheets and the seven retaken exteriors are 1920×1080, that all twenty-seven queued frames exist and queue once with a day or night tag, that the done and pending tiers cover thirty-four frames exactly, and that the canon text, rules and negative terms travel with the look file.

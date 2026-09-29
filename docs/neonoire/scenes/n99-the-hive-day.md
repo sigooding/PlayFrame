@@ -31,4 +31,4 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-159
 IMAGE: 157-the-sign.jpg
-NOTE: Generated from shot 158. A single character shows on the sign where it isn't covered by the blanket. The scene ends here.
+NOTE: Generated from shot 158. A single character shows on the sign where it isn't covered by the blanket. The scene ends here. Retake 29 September 2026 — new look: grey-ochre murk and hanging dust, the dead signs in the cut-open floors behind the crowd; staging held.

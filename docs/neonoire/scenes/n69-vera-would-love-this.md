@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-238
 IMAGE: 236-vera-would-love-this.jpg
-NOTE: The passages follow s85/120-the-hive-is-watching.jpg and s16/186-everybody-sees-him.jpg; the radio repairman nods from his bench, carded since scene 85. The family's television and the violin girl are the Hive's other lives, seen once here and woken in shot 240. Jack tells her he is meeting Vera at ten — the lounge of shot 235.
+NOTE: The passages follow s85/120-the-hive-is-watching.jpg and s16/186-everybody-sees-him.jpg; the radio repairman nods from his bench, carded since scene 85. The family's television and the violin girl are the Hive's other lives, seen once here and woken in shot 240. Jack tells her he is meeting Vera at ten — the lounge of shot 235. Retake 29 September 2026 — new look: small amber pools against steel-blue haze, the green grade gone; the small old CRT shopfront held dim.
 
 ---
 
@@ -33,4 +33,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-279
 IMAGE: 279-her-sisters-smile.jpg
-NOTE: Coverage, shot 279. Same corridor, bulbs and open doors as s69/236-vera-would-love-this.jpg; Mara follows sheets/mara-hiding.jpg exactly — unwashed ash-blonde hair, no red-bird clip, the borrowed brown cardigan over the grey tee, pale blue eyes — and the smile is her sister's mouth at the end of scene 62. The train passes overhead as she smiles. No wound, no blood, no floor: her side stays unseen until scene 71.
+NOTE: Coverage, shot 279. Same corridor, bulbs and open doors as s69/236-vera-would-love-this.jpg; Mara follows sheets/mara-hiding.jpg exactly — unwashed ash-blonde hair, no red-bird clip, the borrowed brown cardigan over the grey tee, pale blue eyes — and the smile is her sister's mouth at the end of scene 62. The train passes overhead as she smiles. No wound, no blood, no floor: her side stays unseen until scene 71. Retake 29 September 2026 — new look: amber pools and steel-blue haze, the green glow behind Vera gone.

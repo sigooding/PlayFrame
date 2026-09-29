@@ -21,4 +21,4 @@ LIGHT: Practical night
 TIME: 16
 ID: neonoire-shot-240
 IMAGE: 238-everyones-awake.jpg
-NOTE: Mara's death is staged as care: no blood on the floor, no gore — her side only darkens under Jack's hands. Kaneko folds the apron under her head; the radio repairman's flashlight and the father's lowered bat come from shot 238's corridor. The waking lights are the Hive's answer, and the last thing Mara sees.
+NOTE: Mara's death is staged as care: no blood on the floor, no gore — her side only darkens under Jack's hands. Kaneko folds the apron under her head; the radio repairman's flashlight and the father's lowered bat come from shot 238's corridor. The waking lights are the Hive's answer, and the last thing Mara sees. Retake 29 September 2026 — new look: small pools, haze shafts and sparse dim faded neon; the lantern rows gone.
