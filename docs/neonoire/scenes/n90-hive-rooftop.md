@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-132
 IMAGE: 130-the-roof.jpg
-NOTE: Roof master; the angle is slightly high, looking over the roof. Also holds "At the edge, very close, the elevated railway".
+NOTE: Roof master; the angle is slightly high, looking over the roof. Also holds "At the edge, very close, the elevated railway". Retake 29 September 2026 — optional pass: the city beyond the tracks cut back to small distant pools in steel-blue haze; the bright green city gone.
 
 133. MEDIUM — 35mm, static, eye level — she jumps.
 At the roof's edge Vera leaps toward the railway side with one hand still in Jack's, while he braces to follow.
@@ -31,7 +31,7 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-133
 IMAGE: 131-she-jumps.jpg
-NOTE: In the study she reads as jumping from the tank plinth rather than across the one-metre gap to the walkway. Shot 267 is the gap.
+NOTE: In the study she reads as jumping from the tank plinth rather than across the one-metre gap to the walkway. Shot 267 is the gap. Retake 29 September 2026 — optional pass: the bright green city cut back to distant pools in steel-blue haze.
 
 ---
 
@@ -43,4 +43,4 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-267
 IMAGE: 132-the-gap.jpg
-NOTE: Coverage, shot 267. Held to s90/130-the-roof.jpg, sheets/vera-look-c.jpg and sheets/jack.jpg. Both feet are over the one-metre gap, not on a water tank. No letterbox. Fence retaken in consistency retakes two (26 September 2026): the walkway rail is now waist-high, a thin top rail on thin uprights, with the drop beyond it clear.
+NOTE: Coverage, shot 267. Held to s90/130-the-roof.jpg, sheets/vera-look-c.jpg and sheets/jack.jpg. Both feet are over the one-metre gap, not on a water tank. No letterbox. Fence retaken in consistency retakes two (26 September 2026): the walkway rail is now waist-high, a thin top rail on thin uprights, with the drop beyond it clear. Retake 29 September 2026 — optional pass: the bright green city cut back to distant pools in steel-blue haze.

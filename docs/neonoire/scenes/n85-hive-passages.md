@@ -31,4 +31,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-122
 IMAGE: 120-the-hive-is-watching.jpg
-NOTE: The neighbour is not a cast member; only a hand and a sliver of shadowed face show.
+NOTE: The neighbour is not a cast member; only a hand and a sliver of shadowed face show. Retake 29 September 2026 — new look and model: the passage rebuilt shoulder-wide for single file, amber pools in steel-blue haze; the lamp strings and green cast gone.

@@ -31,4 +31,4 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-138
 IMAGE: 136-until-us.jpg
-NOTE: Also holds "She looks up at the building full of light." and "He has no answer to that. She doesn't need one." The first generation drifted Jack's face; it was edited back to the recast sheet.
+NOTE: Also holds "She looks up at the building full of light." and "He has no answer to that. She doesn't need one." The first generation drifted Jack's face; it was edited back to the recast sheet. Retake 29 September 2026 — new look: the Hive mostly darkness with small amber pools; the wall of bright windows gone.

@@ -21,5 +21,5 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-223
 IMAGE: 221-they-match.jpg
-NOTE: The sign bears the two brush kanji 金子, correct strokes, as locked by shot 185's sketchbook. The Hive in daylight is a new state of the location.
+NOTE: The sign bears the two brush kanji 金子, correct strokes, as locked by shot 185's sketchbook. The Hive in daylight is a new state of the location. Retake 29 September 2026 — new look and model: the counter rebuilt to the counter sheet (six stools, 金子 on the wall above, one amber bulb, no tiles); the day look's thin shafts at the edges; Vera's wardrobe held to the base frame.
 

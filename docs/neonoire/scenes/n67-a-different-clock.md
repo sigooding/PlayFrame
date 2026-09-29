@@ -21,4 +21,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-236
 IMAGE: 234-a-different-clock.jpg
-NOTE: The pillars follow s74/73-two-small-figures.jpg and the grey sedan s61/228-nine-oclock.jpg; the lit sign reads 8:52 exactly at full size. No people in frame: the trap is still asleep, and this road is the master for shots 237 and 239.
+NOTE: The pillars follow s74/73-two-small-figures.jpg and the grey sedan s61/228-nine-oclock.jpg; the lit sign reads 8:52 exactly at full size. No people in frame: the trap is still asleep, and this road is the master for shots 237 and 239. Retake 29 September 2026 — optional pass: steam added at the back door; sodium pools and wet reflections held.
