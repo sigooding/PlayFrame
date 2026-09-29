@@ -60,3 +60,10 @@ Keep the source of truth in the repo: takes in `public/audio/`, timings in `mani
 - **Cost:** every model is about 1 credit per character; the bracketed emotion tags count as characters. So write plain lines with punctuation, and add a short tag (`[whispers]`, `[crying]`, `[voice breaking]`) only where the performance needs it. Estimate first (`estimate_only`), one take per line.
 - `text` in the manifest is the script line as spoken; `prompt` is the tagged text sent to ElevenLabs.
 - Scene 62 is a single board frame, so its dialogue stretches the frame to 27 seconds; add coverage shots when it is boarded properly.
+
+
+## Pauses and pacing (added 29 September 2026)
+
+- **Pauses on v4** are square-bracket tags, not braces: `[short pause]`, `[pause]`, `[long pause]`, placed where the beat falls. Use them for the beats the script marks ("A beat.", a long look) and sparingly, since a tag costs credits like any other characters.
+- **Animatic cuts are tight by default** (`animatic.mjs`): a voiced frame starts about 0.5 s before its first line and ends 0.4 s after its last; a silent frame holds at most 4 s (`--silent-max N` to change it, `--hold` for the board durations as they are). Board durations in the bundle are not changed.
+- **ElevenLabs allows 3 concurrent requests**: send generations in waves of 3-4, or one will fail on "Too many concurrent requests".

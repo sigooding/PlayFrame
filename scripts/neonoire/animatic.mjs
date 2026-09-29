@@ -5,6 +5,11 @@
 //   node scripts/neonoire/animatic.mjs --from 96 --to 100    a range of scene numbers
 //   node scripts/neonoire/animatic.mjs                       the whole film (long)
 //
+// Cuts are tight by default: a voiced frame starts about half a second before its first line and ends
+// 0.4 s after its last; a silent frame holds at most 4 s. Board durations stay in the bundle untouched.
+//   --hold          use the board durations as they are (no trimming)
+//   --silent-max N  longest a silent frame may hold, seconds (default 4)
+//
 // Needs ffmpeg: FFMPEG=/path/to/ffmpeg, else `ffmpeg` on the PATH (pip install imageio-ffmpeg gives a static build).
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -31,14 +36,28 @@ const work = resolve(out, ".work");
 mkdirSync(work, { recursive: true });
 const run = a => execFileSync(ff, ["-y", "-loglevel", "error", ...a], { stdio: "inherit" });
 const segments = [];
+let segmentsTotal = 0;
+const tight = args.hold === undefined;
+const silentMax = Number(args["silent-max"] || 4);
+const LEAD = 0.5, TAIL = 0.4;
+// Tightened timing for one frame: the length it plays and its clips shifted to match.
+function pace(frame, clips) {
+  if (!tight) return { dur: frame.duration, clips };
+  if (!clips.length) return { dur: Math.min(frame.duration, silentMax), clips };
+  const shift = Math.max(0, Math.min(...clips.map(c => c.offset)) - LEAD);
+  const end = Math.max(...clips.map(c => c.offset + (c.duration || 0))) - shift;
+  return { dur: Math.min(frame.duration, Math.round((end + TAIL) * 10) / 10) || frame.duration, clips: clips.map(c => ({ ...c, offset: c.offset - shift })) };
+}
 
-for (const [i, frame] of frames.entries()) {
+for (let [i, frame] of frames.entries()) {
   const image = frame.image?.startsWith("/images/") ? resolve(root, "public" + frame.image) : null;
   const seg = resolve(work, `seg-${String(i).padStart(4, "0")}.mp4`);
+  const paced = pace(frame, (frame.audio || []).filter(c => existsSync(resolve(root, "public" + c.src))));
+  const clips = paced.clips;
+  frame = { ...frame, duration: paced.dur };
   const video = image && existsSync(image)
     ? ["-loop", "1", "-framerate", "24", "-t", String(frame.duration), "-i", image]
     : ["-f", "lavfi", "-t", String(frame.duration), "-i", "color=c=black:s=1920x1080:r=24"];
-  const clips = (frame.audio || []).filter(c => existsSync(resolve(root, "public" + c.src)));
   const inputs = [...video];
   for (const c of clips) inputs.push("-i", resolve(root, "public" + c.src));
   let filter = "";
@@ -50,6 +69,7 @@ for (const [i, frame] of frames.entries()) {
     "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,format=yuv420p",
     "-c:v", "libx264", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", seg]);
   segments.push(seg);
+  segmentsTotal += frame.duration;
 }
 
 const name = args.name || (args.scene ? `scene-${args.scene}` : args.from || args.to ? `scenes-${args.from || 1}-${args.to || "end"}` : "film");
@@ -59,5 +79,6 @@ const file = resolve(out, `neonoire-${name}.mp4`);
 // One loudness pass over the whole cut, so whispered lines are audible next to spoken ones without
 // each frame being levelled on its own (which would shout the quietest lines).
 run(["-f", "concat", "-safe", "0", "-i", list, "-c:v", "copy", "-af", "loudnorm=I=-16:LRA=11:TP=-1.5", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", file]);
+const total = segmentsTotal;
 const voiced = frames.reduce((n, f) => n + (f.audio?.length || 0), 0);
-console.log(`${file}: ${frames.length} frames, ${voiced} voiced lines, ${frames.reduce((s, f) => s + f.duration, 0)}s`);
+console.log(`${file}: ${frames.length} frames, ${voiced} voiced lines, ${Math.round(total)}s`);

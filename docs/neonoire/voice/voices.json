@@ -14,7 +14,7 @@
       "name": "Vera",
       "status": "chosen",
       "notes": "Female, early-to-mid 30s, plain American, rust-belt. Not the 'Vera - The Last Stand', 'vera - alt' or 'vera no good' voices.",
-      "direction": "Scene-specific, not a house style: for the light banter of the breakfast scene (25A, 'Has someone been reporting on me?') the director picked take 1, '[teasing]'. General rules for all scenes: no whispers; upset lines use [crying]/[voice breaking]/[trembling voice] at speaking volume; pick the tag per moment."
+      "direction": "Scene-specific, not a house style: for the light banter of the breakfast scene (25A, 'Has someone been reporting on me?') the director picked take 1, '[teasing]'. General rules for all scenes: no whispers; upset lines use [crying]/[voice breaking]/[trembling voice] at speaking volume; pick the tag per moment. Use [pause] / [short pause] / [long pause] for beats on v4 (square brackets, not braces)."
     },
     "MARA": {
       "voiceId": "2NE3noNVoL0UyxXHLs7w",
@@ -28,14 +28,16 @@
       "name": "Mara Voss - NEONOIRE"
     },
     "ISHIDA": {
-      "voiceId": null,
-      "status": "picked, not yet saved (custom-voice limit)",
+      "voiceId": "6wGe4cP3pH5TRuKntC6Z",
+      "status": "chosen",
       "designedPreviews": [
         "i3XNU6xFFYHPOtW9QI2i",
         "OrmQTyNPGsmrVUvvyBdC",
         "6wGe4cP3pH5TRuKntC6Z"
       ],
-      "chosenPreview": "6wGe4cP3pH5TRuKntC6Z"
+      "chosenPreview": "6wGe4cP3pH5TRuKntC6Z",
+      "name": "Ishida - NEONOIRE",
+      "notes": "Saved to the library 29 September 2026 (take 3 of 3 picked)."
     },
     "KANEKO": {
       "voiceId": null,
@@ -58,14 +60,16 @@
       ]
     },
     "OKADA": {
-      "voiceId": null,
-      "status": "auditioned",
+      "voiceId": "MhuU9Z2dyWAG6ZjuuKRg",
+      "status": "chosen",
       "placeholder": true,
       "designedPreviews": [
         "vaaKUkGxKDaDoDhcIbzT",
         "2xfJinBxBdtGiAfAGWx0",
         "MhuU9Z2dyWAG6ZjuuKRg"
-      ]
+      ],
+      "name": "Okada - NEONOIRE",
+      "notes": "Saved to the library 29 September 2026 (take 3 of 3 picked)."
     },
     "HARADA": {
       "voiceId": null,
@@ -132,6 +136,12 @@
       "voiceId": null,
       "status": "same as SAKAI",
       "notes": "The old man in the cold open is Sakai; use the SAKAI voice."
+    },
+    "YOUNG OFFICER": {
+      "voiceId": "rexcV2ceXKmVM3IFUBVg",
+      "name": "Young Officer - NEONOIRE",
+      "status": "chosen",
+      "notes": "Saved to the library 29 September 2026 (take 3 of 3 picked)."
     }
   },
   "notDesignedYet": [
