@@ -2391,6 +2391,431 @@
         "id": "QGfHcKDdPaj6lfADchNS"
       },
       "status": "take"
+    },
+    {
+      "id": "s14-jack-when-were-you-last-here",
+      "frameId": "neonoire-shot-184",
+      "character": "JACK",
+      "text": "When were you last here?",
+      "file": "/audio/neonoire/s14/184-jack-when-were-you-last-here.mp3",
+      "offset": 0.5,
+      "duration": 1.57,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "DAsRM1AaemVrWnMeg5dw",
+        "id": "9h8fVCvjAHgecg9xwnOk"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-wryly-a-week-ago-she-made",
+      "frameId": "neonoire-shot-184",
+      "character": "VERA",
+      "text": "A week ago. She made me coffee. It was terrible.",
+      "prompt": "[wryly] A week ago. She made me coffee. It was terrible.",
+      "file": "/audio/neonoire/s14/184-vera-wryly-a-week-ago-she-made.mp3",
+      "offset": 2.6,
+      "duration": 4.6,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "ZcC53x2sVYexldtuX6bG",
+        "id": "uS7zw1iT4MwdAzOyxPgs"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-jack-quietly-she-wasn-t-planning-to",
+      "frameId": "neonoire-shot-184",
+      "character": "JACK",
+      "text": "She wasn't planning to leave.",
+      "prompt": "[quietly] She wasn't planning to leave.",
+      "file": "/audio/neonoire/s14/184-jack-quietly-she-wasn-t-planning-to.mp3",
+      "offset": 7.9,
+      "duration": 2.12,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "b21v0PoPifaIwoi5AFl2",
+        "id": "SiWL8haOwwK0jf2iZ8LQ"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-no",
+      "frameId": "neonoire-shot-184",
+      "character": "VERA",
+      "text": "No.",
+      "file": "/audio/neonoire/s14/184-vera-no.mp3",
+      "offset": 10.6,
+      "duration": 0.76,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "91wcGlIBR7ZuMiXTP7m4",
+        "id": "g7qEKE8bc3iwlII6Ut7V"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-quietly-that-was-for-america-she",
+      "frameId": "neonoire-shot-270",
+      "character": "VERA",
+      "text": "That was for America. She'd booked a flight. Next month.",
+      "prompt": "[quietly] That was for America. She'd booked a flight. Next month.",
+      "file": "/audio/neonoire/s14/270-vera-quietly-that-was-for-america-she.mp3",
+      "offset": 0.5,
+      "duration": 4.13,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "XC7Hs5sHIp1a7myzY2jw",
+        "id": "VODGgfaLi128LVjRXYNk"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-jack-you-didn-t-want-her-to",
+      "frameId": "neonoire-shot-270",
+      "character": "JACK",
+      "text": "You didn't want her to go.",
+      "file": "/audio/neonoire/s14/270-jack-you-didn-t-want-her-to.mp3",
+      "offset": 5.2,
+      "duration": 1.88,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "zI0HQwiNPejUldS3xBn2",
+        "id": "oBwVztkxnJpvE8Y7lyT1"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-i-didn-t-want-her-to",
+      "frameId": "neonoire-shot-270",
+      "character": "VERA",
+      "text": "I didn't want her to run away again. That's what I said. The night she left. That she always runs.",
+      "prompt": "I didn't want her to run away again. [pause] That's what I said. The night she left. That she always runs.",
+      "file": "/audio/neonoire/s14/270-vera-i-didn-t-want-her-to.mp3",
+      "offset": 7.7,
+      "duration": 7.55,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "9UNGG4onqPKAjH7fnewd",
+        "id": "KAqILV6cHR8Mrng1OAM6"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-voice-breaking-it-was-about-dad",
+      "frameId": "neonoire-shot-270",
+      "character": "VERA",
+      "text": "It was about Dad. It's always about Dad. She wanted to dig it all up. Who he was here. Why he — I told her to leave him dead.",
+      "prompt": "[voice breaking] It was about Dad. It's always about Dad. She wanted to dig it all up. Who he was here. Why he — [pause] I told her to leave him dead.",
+      "file": "/audio/neonoire/s14/270-vera-voice-breaking-it-was-about-dad.mp3",
+      "offset": 16.2,
+      "duration": 11.15,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "sgAIWAGAOImibe2ZQGQU",
+        "id": "Ro2v7coxry9vM6kCQa4x"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-bitterly-she-said-i-was-the",
+      "frameId": "neonoire-shot-270",
+      "character": "VERA",
+      "text": "She said I was the one who ran. All the way back here, chasing a ghost, and I won't even look at it.",
+      "prompt": "[bitterly] She said I was the one who ran. All the way back here, chasing a ghost, and I won't even look at it.",
+      "file": "/audio/neonoire/s14/270-vera-bitterly-she-said-i-was-the.mp3",
+      "offset": 28.5,
+      "duration": 7,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "4NcIUv3rdApKkCN45MHo",
+        "id": "mkJEAVm3NSo9QMjviv1M"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-quietly-i-told-her-to-go",
+      "frameId": "neonoire-shot-270",
+      "character": "VERA",
+      "text": "I told her to go, then. Go home. Those were the last things I said to her.",
+      "prompt": "[quietly] I told her to go, then. Go home. Those were the last things I said to her.",
+      "file": "/audio/neonoire/s14/270-vera-quietly-i-told-her-to-go.mp3",
+      "offset": 36.5,
+      "duration": 5.25,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "T93SGT3dNlXtsnUfhP8k",
+        "id": "AI0K9qtAwndAKdiyqMb2"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-jack-she-drew-this-a-lot",
+      "frameId": "neonoire-shot-185",
+      "character": "JACK",
+      "text": "She drew this a lot.",
+      "file": "/audio/neonoire/s14/185-jack-she-drew-this-a-lot.mp3",
+      "offset": 0.5,
+      "duration": 1.65,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "MR1VmPuihdjDIgUD8en6",
+        "id": "kLWY0kozzGUbYz6WoXqy"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-since-she-was-little-it-s",
+      "frameId": "neonoire-shot-185",
+      "character": "VERA",
+      "text": "Since she was little. It's from a story I used to tell her. About the noodle shop Dad took us to. She was too young to remember it, so I told her. She made it up from what I said. It's not real.",
+      "prompt": "Since she was little. It's from a story I used to tell her. About the noodle shop Dad took us to. She was too young to remember it, so I told her. [pause] [warmly] She made it up from what I said. It's not real.",
+      "file": "/audio/neonoire/s14/185-vera-since-she-was-little-it-s.mp3",
+      "offset": 2.7,
+      "duration": 13.01,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "voWzguf0A1vEo558HprT",
+        "id": "H4noF5rNPMNSeLjNT6rn"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-jack-can-i-borrow-this",
+      "frameId": "neonoire-shot-185",
+      "character": "JACK",
+      "text": "Can I borrow this?",
+      "file": "/audio/neonoire/s14/185-jack-can-i-borrow-this.mp3",
+      "offset": 16.7,
+      "duration": 1.31,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "WgRoe6m2ebEXypGkQ2o9",
+        "id": "zZGTkj9kA87AsGvP2vzy"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-vera-why",
+      "frameId": "neonoire-shot-185",
+      "character": "VERA",
+      "text": "Why?",
+      "file": "/audio/neonoire/s14/185-vera-why.mp3",
+      "offset": 18.6,
+      "duration": 0.91,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "hCR3Ps3TYxtXJhSystvp",
+        "id": "FOtj2T1nuKEhns5DdvaO"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s14-jack-softly-people-draw-the-places-they",
+      "frameId": "neonoire-shot-185",
+      "character": "JACK",
+      "text": "People draw the places they want to go.",
+      "prompt": "[softly] People draw the places they want to go.",
+      "file": "/audio/neonoire/s14/185-jack-softly-people-draw-the-places-they.mp3",
+      "offset": 20.1,
+      "duration": 2.77,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "tGksqaXiYRMRbj33nIic",
+        "id": "ofMwpHS4OeaCglbndBhp"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-kaneko-dryly-you-got-old",
+      "frameId": "neonoire-shot-189",
+      "character": "KANEKO",
+      "text": "You got old.",
+      "prompt": "[dryly] You got old.",
+      "file": "/audio/neonoire/s17/189-kaneko-dryly-you-got-old.mp3",
+      "offset": 0.5,
+      "duration": 1.72,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "KCoGe7pI9Jh1DGFus3Hk",
+        "id": "IcBBXcSRIqciGeKfFXVi"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-jack-so-did-you",
+      "frameId": "neonoire-shot-189",
+      "character": "JACK",
+      "text": "So did you.",
+      "file": "/audio/neonoire/s17/189-jack-so-did-you.mp3",
+      "offset": 2.8,
+      "duration": 1.15,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "PPnhqxstjsz8UirBaWq6",
+        "id": "zGKapgrbcwbZ37ZjmlQ9"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-kaneko-i-was-already-old-you-were",
+      "frameId": "neonoire-shot-189",
+      "character": "KANEKO",
+      "text": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. You always sat there. He sat there.",
+      "prompt": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. [pause] You always sat there. He sat there.",
+      "file": "/audio/neonoire/s17/189-kaneko-i-was-already-old-you-were.mp3",
+      "offset": 4.6,
+      "duration": 16.2,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "AGKZX9QetcyCLE0ktSMj",
+        "id": "KNc2i0mxS6OCjVm4M3Oo"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-jack-quietly-i-m-looking-for-his",
+      "frameId": "neonoire-shot-189",
+      "character": "JACK",
+      "text": "I'm looking for his daughter. The younger one.",
+      "prompt": "[quietly] I'm looking for his daughter. The younger one.",
+      "file": "/audio/neonoire/s17/189-jack-quietly-i-m-looking-for-his.mp3",
+      "offset": 21.6,
+      "duration": 3,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "Ho8ZkzcAQo5vz8R1i9yx",
+        "id": "difLUKhGox3meZrzuh7p"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-kaneko-flatly-the-little-one-she-was",
+      "frameId": "neonoire-shot-189",
+      "character": "KANEKO",
+      "text": "The little one? She was four years old. She ate rice with her fingers.",
+      "prompt": "[flatly] The little one? She was four years old. She ate rice with her fingers.",
+      "file": "/audio/neonoire/s17/189-kaneko-flatly-the-little-one-she-was.mp3",
+      "offset": 25.4,
+      "duration": 5.25,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "ZepaIZeUoAkX6QNWfw3B",
+        "id": "VpmANyvCssDhqpDzaG0I"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-jack-she-s-twenty-four-now-and",
+      "frameId": "neonoire-shot-189",
+      "character": "JACK",
+      "text": "She's twenty-four now. And someone wants to kill her.",
+      "file": "/audio/neonoire/s17/189-jack-she-s-twenty-four-now-and.mp3",
+      "offset": 31.4,
+      "duration": 3.97,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "Q1CL1rWTzuPd0Emhs3Wm",
+        "id": "69d6x3UQhbX3AFJKz54c"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-kaneko-gruffly-eat-then-go-pause-there",
+      "frameId": "neonoire-shot-189",
+      "character": "KANEKO",
+      "text": "Eat. Then go. There is no one here but us.",
+      "prompt": "[gruffly] Eat. Then go. [pause] There is no one here but us.",
+      "file": "/audio/neonoire/s17/189-kaneko-gruffly-eat-then-go-pause-there.mp3",
+      "offset": 36.4,
+      "duration": 4.83,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "zJaj8Z9KsRsvL8tjoFZH",
+        "id": "om86Sl9tbU7AtcYC7CPJ"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s17-jack-quietly-he-always-paid-too-much",
+      "frameId": "neonoire-shot-189",
+      "character": "JACK",
+      "text": "He always paid too much, too.",
+      "prompt": "[quietly] He always paid too much, too.",
+      "file": "/audio/neonoire/s17/189-jack-quietly-he-always-paid-too-much.mp3",
+      "offset": 43.8,
+      "duration": 2.43,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "OUPBCLxQkB747YF8m35B",
+        "id": "6wYbH3fIP2YsBbK5KTP4"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s18-kaneko-urgently-come-back-alone-after-the",
+      "frameId": "neonoire-shot-191",
+      "character": "KANEKO",
+      "text": "Come back. Alone. After the last train.",
+      "prompt": "[urgently] Come back. Alone. After the last train.",
+      "file": "/audio/neonoire/s18/191-kaneko-urgently-come-back-alone-after-the.mp3",
+      "offset": 0.5,
+      "duration": 3.4,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "JJ4QW4ir4zwem0vGOseG",
+        "session": "8Tp3cN0Pk7cdFJKEyJQR",
+        "id": "nZMjezg7IXzEofqsOZys"
+      },
+      "status": "take"
     }
   ]
 }

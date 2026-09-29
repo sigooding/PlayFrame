@@ -6966,7 +6966,49 @@
         "neonoire-vera",
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nThe scene master and the location master. The futon is a low raised bed in this study. The last things Vera said play over this frame.\n\nSCRIPT — the draft's own words for this shot:\n\"Vera stands just inside the door. She hasn't taken her coat off. Jack moves through the room slowly, touching nothing yet. Looking.\"\n\n35mm for the room, 50mm on the sketchbook.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 19 of 31 — ten keyframes at a time, in screenplay order. Shot 184 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nThe scene master and the location master. The futon is a low raised bed in this study. The last things Vera said play over this frame.\n\nSCRIPT — the draft's own words for this shot:\n\"Vera stands just inside the door. She hasn't taken her coat off. Jack moves through the room slowly, touching nothing yet. Looking.\"\n\n35mm for the room, 50mm on the sketchbook.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 19 of 31 — ten keyframes at a time, in screenplay order. Shot 184 of 307.",
+      "audio": [
+        {
+          "id": "s14-jack-when-were-you-last-here",
+          "character": "JACK",
+          "text": "When were you last here?",
+          "src": "/audio/neonoire/s14/184-jack-when-were-you-last-here.mp3",
+          "offset": 0.5,
+          "duration": 1.57,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-wryly-a-week-ago-she-made",
+          "character": "VERA",
+          "text": "A week ago. She made me coffee. It was terrible.",
+          "src": "/audio/neonoire/s14/184-vera-wryly-a-week-ago-she-made.mp3",
+          "offset": 2.6,
+          "duration": 4.6,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-jack-quietly-she-wasn-t-planning-to",
+          "character": "JACK",
+          "text": "She wasn't planning to leave.",
+          "src": "/audio/neonoire/s14/184-jack-quietly-she-wasn-t-planning-to.mp3",
+          "offset": 7.9,
+          "duration": 2.12,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-no",
+          "character": "VERA",
+          "text": "No.",
+          "src": "/audio/neonoire/s14/184-vera-no.mp3",
+          "offset": 10.6,
+          "duration": 0.76,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-185",
@@ -6980,7 +7022,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 8,
+      "duration": 24,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -6988,7 +7030,59 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nThe sign's lettering is invented in this study; letter it correctly on set (\"Every stroke of the kanji correct\").\n\nSCRIPT — the draft's own words for this shot:\n\"Page after page of the same place. A tiny noodle counter under a railway. Six stools. A curtain. A hand-painted sign.\"\n\n35mm for the room, 50mm on the sketchbook.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 19 of 31 — ten keyframes at a time, in screenplay order. Shot 185 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nThe sign's lettering is invented in this study; letter it correctly on set (\"Every stroke of the kanji correct\").\n\nSCRIPT — the draft's own words for this shot:\n\"Page after page of the same place. A tiny noodle counter under a railway. Six stools. A curtain. A hand-painted sign.\"\n\n35mm for the room, 50mm on the sketchbook.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 19 of 31 — ten keyframes at a time, in screenplay order. Shot 185 of 307.",
+      "audio": [
+        {
+          "id": "s14-jack-she-drew-this-a-lot",
+          "character": "JACK",
+          "text": "She drew this a lot.",
+          "src": "/audio/neonoire/s14/185-jack-she-drew-this-a-lot.mp3",
+          "offset": 0.5,
+          "duration": 1.65,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-since-she-was-little-it-s",
+          "character": "VERA",
+          "text": "Since she was little. It's from a story I used to tell her. About the noodle shop Dad took us to. She was too young to remember it, so I told her. She made it up from what I said. It's not real.",
+          "src": "/audio/neonoire/s14/185-vera-since-she-was-little-it-s.mp3",
+          "offset": 2.7,
+          "duration": 13.01,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-jack-can-i-borrow-this",
+          "character": "JACK",
+          "text": "Can I borrow this?",
+          "src": "/audio/neonoire/s14/185-jack-can-i-borrow-this.mp3",
+          "offset": 16.7,
+          "duration": 1.31,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-why",
+          "character": "VERA",
+          "text": "Why?",
+          "src": "/audio/neonoire/s14/185-vera-why.mp3",
+          "offset": 18.6,
+          "duration": 0.91,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-jack-softly-people-draw-the-places-they",
+          "character": "JACK",
+          "text": "People draw the places they want to go.",
+          "src": "/audio/neonoire/s14/185-jack-softly-people-draw-the-places-they.mp3",
+          "offset": 20.1,
+          "duration": 2.77,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-186",
@@ -7069,7 +7163,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 14,
+      "duration": 47,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -7078,7 +7172,89 @@
         "neonoire-jack",
         "neonoire-kaneko"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nThe scene master. It isn't clear that Jack is on the **third** stool; seat him there on set, since it rhymes with scenes 13 and 100. Retake 29 September 2026 — one amber bulb and steam at the counter, the fluorescent tube unlit; the long look and the two customers at the far end held.\n\nSCRIPT — the draft's own words for this shot:\n\"She looks at him for a long time. Longer than a stranger would.\"\n\n35mm, frontal to the counter.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 19 of 31 — ten keyframes at a time, in screenplay order. Shot 189 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 13–17 (26 September 2026), the Hive first seen, generated with the Mara, Vera and Jack sheets, the scene 84–86 Hive masters, Kaneko's scene 86 frame and the key from scene 1 as references; each passed the standing perspective check or carries its flaw. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nThe scene master. It isn't clear that Jack is on the **third** stool; seat him there on set, since it rhymes with scenes 13 and 100. Retake 29 September 2026 — one amber bulb and steam at the counter, the fluorescent tube unlit; the long look and the two customers at the far end held.\n\nSCRIPT — the draft's own words for this shot:\n\"She looks at him for a long time. Longer than a stranger would.\"\n\n35mm, frontal to the counter.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 19 of 31 — ten keyframes at a time, in screenplay order. Shot 189 of 307.",
+      "audio": [
+        {
+          "id": "s17-kaneko-dryly-you-got-old",
+          "character": "KANEKO",
+          "text": "You got old.",
+          "src": "/audio/neonoire/s17/189-kaneko-dryly-you-got-old.mp3",
+          "offset": 0.5,
+          "duration": 1.72,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-jack-so-did-you",
+          "character": "JACK",
+          "text": "So did you.",
+          "src": "/audio/neonoire/s17/189-jack-so-did-you.mp3",
+          "offset": 2.8,
+          "duration": 1.15,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-kaneko-i-was-already-old-you-were",
+          "character": "KANEKO",
+          "text": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. You always sat there. He sat there.",
+          "src": "/audio/neonoire/s17/189-kaneko-i-was-already-old-you-were.mp3",
+          "offset": 4.6,
+          "duration": 16.2,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-jack-quietly-i-m-looking-for-his",
+          "character": "JACK",
+          "text": "I'm looking for his daughter. The younger one.",
+          "src": "/audio/neonoire/s17/189-jack-quietly-i-m-looking-for-his.mp3",
+          "offset": 21.6,
+          "duration": 3,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-kaneko-flatly-the-little-one-she-was",
+          "character": "KANEKO",
+          "text": "The little one? She was four years old. She ate rice with her fingers.",
+          "src": "/audio/neonoire/s17/189-kaneko-flatly-the-little-one-she-was.mp3",
+          "offset": 25.4,
+          "duration": 5.25,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-jack-she-s-twenty-four-now-and",
+          "character": "JACK",
+          "text": "She's twenty-four now. And someone wants to kill her.",
+          "src": "/audio/neonoire/s17/189-jack-she-s-twenty-four-now-and.mp3",
+          "offset": 31.4,
+          "duration": 3.97,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-kaneko-gruffly-eat-then-go-pause-there",
+          "character": "KANEKO",
+          "text": "Eat. Then go. There is no one here but us.",
+          "src": "/audio/neonoire/s17/189-kaneko-gruffly-eat-then-go-pause-there.mp3",
+          "offset": 36.4,
+          "duration": 4.83,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s17-jack-quietly-he-always-paid-too-much",
+          "character": "JACK",
+          "text": "He always paid too much, too.",
+          "src": "/audio/neonoire/s17/189-jack-quietly-he-always-paid-too-much.mp3",
+          "offset": 43.8,
+          "duration": 2.43,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-190",
@@ -7123,7 +7299,19 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 20; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nKaneko is heard, never seen. The green desk lamp stays off. Director's rule (26 September 2026): a TV that is on is never static — the office CRT now carries the muted B&W samurai film from scenes 10-11; the draft's word 'static' stays on the page, but the light on the screen is a programme.\n\nSCRIPT — the draft's own words for this shot:\n\"Come back. Alone. After the last train.\"\n\n35mm static in the dark; the television is the only lamp.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 20 of 31 — ten keyframes at a time, in screenplay order. Shot 191 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 20; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nKaneko is heard, never seen. The green desk lamp stays off. Director's rule (26 September 2026): a TV that is on is never static — the office CRT now carries the muted B&W samurai film from scenes 10-11; the draft's word 'static' stays on the page, but the light on the screen is a programme.\n\nSCRIPT — the draft's own words for this shot:\n\"Come back. Alone. After the last train.\"\n\n35mm static in the dark; the television is the only lamp.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 20 of 31 — ten keyframes at a time, in screenplay order. Shot 191 of 307.",
+      "audio": [
+        {
+          "id": "s18-kaneko-urgently-come-back-alone-after-the",
+          "character": "KANEKO",
+          "text": "Come back. Alone. After the last train.",
+          "src": "/audio/neonoire/s18/191-kaneko-urgently-come-back-alone-after-the.mp3",
+          "offset": 0.5,
+          "duration": 3.4,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-192",
@@ -9207,7 +9395,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 8,
+      "duration": 43,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -9215,7 +9403,69 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nCoverage, shot 270. The room and its grey daylight hold to s14/182-someone-who-meant-to-come-back.jpg — same tatami, low bed, sketches taped to the wall, clothes on every surface; Jack follows sheets/jack.jpg, charcoal coat over the off-white collar, no tie. The suitcase is the one packed under the futon: the flight to America was booked for next month. Nothing legible on the case, no labels or tags invented; Mara and Vera stay out of frame.\n\nSCRIPT — the draft's own words for this shot:\n\"He crouches by the futon. A suitcase underneath, packed and zipped.\"\n\n35mm for the room, 50mm on the sketchbook.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 27 of 31 — ten keyframes at a time, in screenplay order. Shot 270 of 307."
+      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nScenes 13–17 — the Hive, first seen (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. THE HIVE, FIRST SEEN. THE STOREROOM follows s84/115-the-storeroom.jpg (flour sacks, onion crates, one bare amber tungsten bulb, steam, the curtain doorway, the railway's underside close overhead). THE PASSAGES follow s85/119-single-file.jpg (queued for retake) and the canon looks in scripts/neonoire/hive-canon-look.mjs: by day they carry only thin cold shafts through gaps overhead, full of drifting steam and dust; by night small amber pools against steel-blue haze. KANEKO'S COUNTER follows s86/122-through-the-back.jpg (six stools, one bare amber tungsten bulb — the warmest place in the Hive — steam, the storeroom curtain). THE HIVE BY DAY follows keys/06-the-block.jpg, the canon DAY look in scripts/neonoire/hive-canon-look.mjs (hiveCanonDay; sheets/hive-exterior-day.jpg) and s97/146-tomorrows-tokyo.jpg (retaken 29 September 2026): flat, milky, dim pale grey-ochre murk with a white-smear sky, the neon off but one faint sign, standing between clean glass office towers. MARA follows sheets/mara.jpg, in hiding: pale and unwashed, a baggy brown cardigan that isn't hers over the grey tee, NO bird clip (Okada has it), and the coin-locker key with 114 on its worn tag as scripted; the older s1/16-the-key.jpg shows a waived 87-tag art discrepancy. KANEKO is held to s86/123-fifty-years.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat). VERA wears her ORIGINAL LOOK (sheets/vera.jpg). The radio repairman follows s87/124-the-repairman.jpg. STAIRWAY MOTIF (scripts/neonoire/inn-look.mjs): Jack climbs the Hive's outside stair from a low, level, static camera square to the flight; going up is the past. AI-generated draft studies, not approved coverage.\n\nCoverage, shot 270. The room and its grey daylight hold to s14/182-someone-who-meant-to-come-back.jpg — same tatami, low bed, sketches taped to the wall, clothes on every surface; Jack follows sheets/jack.jpg, charcoal coat over the off-white collar, no tie. The suitcase is the one packed under the futon: the flight to America was booked for next month. Nothing legible on the case, no labels or tags invented; Mara and Vera stay out of frame.\n\nSCRIPT — the draft's own words for this shot:\n\"He crouches by the futon. A suitcase underneath, packed and zipped.\"\n\n35mm for the room, 50mm on the sketchbook.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 27 of 31 — ten keyframes at a time, in screenplay order. Shot 270 of 307.",
+      "audio": [
+        {
+          "id": "s14-vera-quietly-that-was-for-america-she",
+          "character": "VERA",
+          "text": "That was for America. She'd booked a flight. Next month.",
+          "src": "/audio/neonoire/s14/270-vera-quietly-that-was-for-america-she.mp3",
+          "offset": 0.5,
+          "duration": 4.13,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-jack-you-didn-t-want-her-to",
+          "character": "JACK",
+          "text": "You didn't want her to go.",
+          "src": "/audio/neonoire/s14/270-jack-you-didn-t-want-her-to.mp3",
+          "offset": 5.2,
+          "duration": 1.88,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-i-didn-t-want-her-to",
+          "character": "VERA",
+          "text": "I didn't want her to run away again. That's what I said. The night she left. That she always runs.",
+          "src": "/audio/neonoire/s14/270-vera-i-didn-t-want-her-to.mp3",
+          "offset": 7.7,
+          "duration": 7.55,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-voice-breaking-it-was-about-dad",
+          "character": "VERA",
+          "text": "It was about Dad. It's always about Dad. She wanted to dig it all up. Who he was here. Why he — I told her to leave him dead.",
+          "src": "/audio/neonoire/s14/270-vera-voice-breaking-it-was-about-dad.mp3",
+          "offset": 16.2,
+          "duration": 11.15,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-bitterly-she-said-i-was-the",
+          "character": "VERA",
+          "text": "She said I was the one who ran. All the way back here, chasing a ghost, and I won't even look at it.",
+          "src": "/audio/neonoire/s14/270-vera-bitterly-she-said-i-was-the.mp3",
+          "offset": 28.5,
+          "duration": 7,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s14-vera-quietly-i-told-her-to-go",
+          "character": "VERA",
+          "text": "I told her to go, then. Go home. Those were the last things I said to her.",
+          "src": "/audio/neonoire/s14/270-vera-quietly-i-told-her-to-go.mp3",
+          "offset": 36.5,
+          "duration": 5.25,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-271",
