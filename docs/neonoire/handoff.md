@@ -2,9 +2,9 @@
 
 **Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
 
-## Current state — 29 September 2026 (scenes 25A, 27A, 63A boarded)
+## Current state — 29 September 2026 (scenes 25A, 27A, 63A boarded, caveats retaken)
 
-The three inserted Act Two scenes are boarded as **shots 287–296**, ten generations, numbered in boarding order after coverage 286. 25A: breakfast, the hand that stops, she eats. 27A: Okada in daylight, "carries things by himself", Vera crouched where Mara hid. 63A: the sedan waiting, the pachinko parlour, the alley they give up in, the cassette in vending light — why the tape goes to Okada's. `EXPECTED_SHOTS` is **296**; all 103 scenes are boarded. Ledger: [`passes/scenes-25a-27a-63a.md`](passes/scenes-25a-27a-63a.md). **Boards still to retake from the script pass:** sc 17 (fourth stool), 60 / 68 / 84 (the drawing), 77 (the letter), 80 (empty room), 84 (the Ishida exchange). The key stays 114 in the script (the board's oval tag reads 87).
+The three inserted Act Two scenes are boarded as **shots 287–296**. A follow-up of eight retakes closed the named beats: he sets the plate, she is under the counter, the parlour is brick, SHIOHAMA reads. Ledger: [`passes/scenes-25a-27a-63a.md`](passes/scenes-25a-27a-63a.md), retakes [`passes/scenes-25a-27a-63a-retakes.md`](passes/scenes-25a-27a-63a-retakes.md). `EXPECTED_SHOTS` is **296**; all 103 scenes are boarded. **Boards still to retake from the script pass:** sc 17 (fourth stool), 60 / 68 / 84 (the drawing), 77 (the letter), 80 (empty room), 84 (the Ishida exchange). The key stays 114 in the script (the board's oval tag reads 87).
 
 ## Script pass — 29 September 2026 (story fixes and three new scenes)
 

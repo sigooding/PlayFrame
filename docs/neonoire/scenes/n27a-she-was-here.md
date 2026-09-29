@@ -33,7 +33,7 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-291
 IMAGE: 291-carries-things-by-himself.jpg
-NOTE: Generated from shot 290. The line is a description, not a warning — play it flat. Same room, same mat, CRT off. No umbrella. Caveat: the handwritten bottle prices have drifted from shot 290.
+NOTE: Generated from shot 290. The line is a description, not a warning — play it flat. Same room, same mat, CRT off. No umbrella. Retake 29 September 2026: the strips read 50円 as in shot 290. Remaining: the drink names on the strips are not identical to 290.
 
 ---
 
@@ -45,4 +45,4 @@ LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-292
 IMAGE: 292-she-was-here.jpg
-NOTE: The rhyme with shot 24 (s2/24-from-the-floor.jpg) and shot 23 (s2/23-behind-the-counter.jpg): same gap, same crates, same underside. Day, not night; the CRT is dark, so her face is in the dark glass, not in blue. Vera follows sheets/vera.jpg — dry, ash-blonde, charcoal coat, no clip. Okada is out of frame, standing aside. No umbrella. Caveat: the camera sits higher than shot 24; she crouches in the aisle beside the crates rather than fully behind the counter flap.
+NOTE: The rhyme with shot 24 (s2/24-from-the-floor.jpg) and shot 23 (s2/23-behind-the-counter.jpg): same gap, same crates, same underside. Day, not night; the CRT is dark, so her face is in the dark glass, not in blue. Vera follows sheets/vera.jpg — dry, ash-blonde, charcoal coat, no clip. Okada is out of frame, standing aside. No umbrella. Retake 29 September 2026: she is under the counter among the crates, camera low, the rhyme with s2/24-from-the-floor.jpg.

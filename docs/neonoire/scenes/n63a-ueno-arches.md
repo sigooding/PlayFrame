@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-293
 IMAGE: 293-the-sedan-waits.jpg
-NOTE: The scene master. Jack follows sheets/jack.jpg and s63/230-no-questions.jpg; coat buttoned over the box. The sedan is the cold-open car, whole in frame, facing along the arches, lights off. Right-hand drive. No people besides Jack. Rain only where light passes through it. No brands, no film title. Caveat: the box is in his left hand, not buttoned under the coat; the sedan's lamps read on.
+NOTE: The scene master. Jack follows sheets/jack.jpg and s63/230-no-questions.jpg; coat buttoned over the box. The sedan is the cold-open car, whole in frame, facing along the arches, lights off. Right-hand drive. No people besides Jack. Rain only where light passes through it. No brands, no film title. Retake 29 September 2026: coat buttoned, hands empty, the box not carried. Remaining: the box bulge under the coat is not visible; the sedan lamps still catch wet street light.
 
 ---
 
@@ -33,7 +33,7 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-294
 IMAGE: 294-through-the-parlour.jpg
-NOTE: Generated against shot 293 for Jack. Crowded but not a spectacle; heads down at the machines. No logos, no readable brand names, no film title. Jack does not run. Caveat: the parlour is a concrete vault, not the brick arch of 293; Jack is seen from behind.
+NOTE: Generated against shot 293 for Jack. Crowded but not a spectacle; heads down at the machines. No logos, no readable brand names, no film title. Jack does not run. Retake 29 September 2026: brick vault as the Ueno arch. Remaining: Jack is seen from behind.
 
 ---
 
@@ -45,7 +45,7 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-295
 IMAGE: 295-they-give-up.jpg
-NOTE: The hit team in public: dark coats, faces turned or unread, **no masks, no weapons in frame**. They do not chase into the alley; they give up, which is why the tape can go to Okada's. The sedan is the same car as shot 293, now with lights on, whole, at the kerb. Jack follows sheets/jack.jpg. Caveat: the sedan sits across the mouth rather than crawling the kerb; the sleeve-radio is not readable.
+NOTE: The hit team in public: dark coats, faces turned or unread, **no masks, no weapons in frame**. They do not chase into the alley; they give up, which is why the tape can go to Okada's. The sedan is the same car as shot 293, now with lights on, whole, at the kerb. Jack follows sheets/jack.jpg. Retake 29 September 2026: the car is side-on in the street, the two men in dark coats with no masks, no weapons in frame. Remaining: they clip the alley mouth rather than passing it; the sleeve-radio is not readable.
 
 ---
 
@@ -57,4 +57,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-296
 IMAGE: 296-not-another-day.jpg
-NOTE: The cassette follows props/shiohama-cassette-label.jpg; SHIOHAMA must read at full size. Jack follows sheets/jack.jpg. Vending-machine white is the light — the city lights him. This is why scene 64 exists. Caveat: the cassette is seen from the top and SHIOHAMA does not read; a pair of glasses hangs from his fingers, not in the draft; the coat sits more open than in 293.
+NOTE: The cassette follows props/shiohama-cassette-label.jpg; SHIOHAMA must read at full size. Jack follows sheets/jack.jpg. Vending-machine white is the light — the city lights him. This is why scene 64 exists. Retake 29 September 2026: the cassette face-on, SHIOHAMA legible, glasses gone. Remaining: the coat reads double-breasted against 293's single-breasted overcoat.

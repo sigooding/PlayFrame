@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 14
 ID: neonoire-shot-287
 IMAGE: 287-breakfast.jpg
-NOTE: The scene master. Vera follows sheets/vera.jpg: ash-blonde, charcoal coat on, cream knit, no bird clip, brown boots. Jack follows sheets/jack.jpg: charcoal overcoat, off-white open collar, 48. Six stools. The CRT is never static: a morning cooking show, a chef at a pan, real programme content. Fogged glass, siphon flame, no brands, no film title. Caveat: the plate is already on the counter and his hand rests on her shoulder rather than still holding it; she looks along the counter, not at the door.
+NOTE: The scene master. Vera follows sheets/vera.jpg: ash-blonde, charcoal coat on, cream knit, no bird clip, brown boots. Jack follows sheets/jack.jpg: charcoal overcoat, off-white open collar, 48. Six stools. The CRT is never static: a morning cooking show, a chef at a pan, real programme content. Fogged glass, siphon flame, no brands, no film title. Retake 29 September 2026: he is setting the plate down (toast, egg, cabbage); her eyeline has come off the door onto him. Remaining: she looks at him, not at the door.
 
 ---
 
@@ -45,4 +45,4 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-289
 IMAGE: 289-for-making-me.jpg
-NOTE: Generated from shot 287. Vera still in the charcoal coat, ash-blonde, no clip. The CRT keeps the cooking show — never static. The overpayment rhymes with Kaneko's counter and with Jack always paying too much. The woman behind the counter is unnamed and unremarkable. Caveat: he pays along the counter beside her rather than at a separate till; a fried egg is still on the plate.
+NOTE: Generated from shot 287. Vera still in the charcoal coat, ash-blonde, no clip. The CRT keeps the cooking show — never static. The overpayment rhymes with Kaneko's counter and with Jack always paying too much. The woman behind the counter is unnamed and unremarkable. Retake 29 September 2026: empty plates, a wad of notes, she has eaten. Remaining: two emptied plates instead of one; the till is a small register on the counter.
