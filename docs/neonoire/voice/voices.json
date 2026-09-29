@@ -54,8 +54,8 @@
       }
     },
     "KANEKO": {
-      "voiceId": null,
-      "status": "picked, not yet saved (custom-voice limit)",
+      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "status": "chosen",
       "placeholder": true,
       "designedPreviews": [
         "vUzt8mUMt5vwWOoJ6szl",
@@ -69,7 +69,8 @@
         "language": "en",
         "designModel": "eleven_ttv_v3",
         "seedFixed": false
-      }
+      },
+      "name": "Kaneko - NEONOIRE"
     },
     "KUROSE": {
       "voiceId": null,
@@ -250,6 +251,16 @@
         "sampleText": "There are still people in the building. Old people. They won't sign. And if it isn't? Don't make me say it more clearly.",
         "status": "proposed, not run"
       }
+    },
+    "NEWS REPORTER": {
+      "voiceId": "EEYUewEB5w5R0IPnszO5",
+      "status": "uses the JOURNALIST voice",
+      "notes": "Reads the news on Vera's television (scene 4). Same voice as the weather announcer on the same set. Filter: tv."
+    },
+    "WEATHER ANNOUNCER": {
+      "voiceId": "EEYUewEB5w5R0IPnszO5",
+      "status": "uses the JOURNALIST voice",
+      "notes": "Filter: tv."
     }
   },
   "notDesignedYet": [
@@ -263,5 +274,6 @@
   ],
   "designedPreviewsNote": "Unsaved design previews are short-lived. A character becomes final only when its chosen preview is saved to the library and its voiceId filled in here.",
   "blocker": "29 Sept 2026: the ElevenLabs workspace is at its custom-voice limit (10 of 10), so only Mara could be saved. Six picked previews (Ishida, Kaneko, Harada, Daniel, Sakai, masked man) are NOT saved; design previews are short-lived and may need regenerating (credits). To unblock: delete unused custom voices (for example 'vera no good', 'vera - alt', 'Vera - The Last Stand', 'jack the last stand') or upgrade the plan, then save the picks. Kurose and Okada are still unpicked. Director: hold voice work for now, credits are limited.",
-  "designNote": "Each 'design' block is the exact prompt used with creative_design_voice (model eleven_ttv_v3, no fixed seed). If a saved voice is deleted, run the same prompt again: the result is a similar voice, not an identical one, so pick again by ear and re-record with voice-ingest --replace. The approved takes are kept as files under public/audio/neonoire/ and docs/neonoire/voice/references/, so they are the reference to compare a replacement against. Jack ('Narrator Lead') and Vera were made by the director in ElevenLabs, not designed here."
+  "designNote": "Each 'design' block is the exact prompt used with creative_design_voice (model eleven_ttv_v3, no fixed seed). If a saved voice is deleted, run the same prompt again: the result is a similar voice, not an identical one, so pick again by ear and re-record with voice-ingest --replace. The approved takes are kept as files under public/audio/neonoire/ and docs/neonoire/voice/references/, so they are the reference to compare a replacement against. Jack ('Narrator Lead') and Vera were made by the director in ElevenLabs, not designed here.",
+  "fx": "Lines heard through a phone, a television or a tape carry an 'fx' field in the manifest (phone | tv | tape), set with voice-ingest --fx. The clean take stays clean on disk; animatic.mjs applies a sketch of the filter with ffmpeg. The proper treatment is done in the editor."
 }

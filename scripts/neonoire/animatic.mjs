@@ -17,6 +17,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { inStoryOrder } from "./story-order.mjs";
+import { readManifest } from "./voice.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const args = Object.fromEntries(process.argv.slice(2).reduce((out, a, i, all) => (a.startsWith("--") ? [...out, [a.slice(2), all[i + 1]]] : out), []));
@@ -37,6 +38,14 @@ mkdirSync(work, { recursive: true });
 const run = a => execFileSync(ff, ["-y", "-loglevel", "error", ...a], { stdio: "inherit" });
 const segments = [];
 let segmentsTotal = 0;
+// Filters for lines that are heard through something: the clean take stays clean on disk, the animatic colours it.
+// Set with `voice-ingest --fx`; the real treatment is done in the editor, this is a fair sketch of it.
+const FX = {
+  phone: "highpass=f=400,lowpass=f=3000,acompressor=threshold=0.04:ratio=6,volume=1.6",
+  tv: "highpass=f=300,lowpass=f=5000,aecho=0.8:0.6:35:0.25,volume=1.2",
+  tape: "highpass=f=350,lowpass=f=4200,vibrato=f=5:d=0.03,volume=1.4",
+};
+const fxByFile = new Map(readManifest(root).lines.filter(l => l.fx).map(l => [l.file, l.fx]));
 const tight = args.hold === undefined;
 const silentMax = Number(args["silent-max"] || 4);
 const LEAD = 0.5, TAIL = 0.4;
@@ -62,7 +71,7 @@ for (let [i, frame] of frames.entries()) {
   for (const c of clips) inputs.push("-i", resolve(root, "public" + c.src));
   let filter = "";
   const labels = [];
-  clips.forEach((c, k) => { filter += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=mono,adelay=${Math.round(c.offset * 1000)}|${Math.round(c.offset * 1000)}[d${k}];`; labels.push(`[d${k}]`); });
+  clips.forEach((c, k) => { const fx = FX[fxByFile.get(c.src)]; filter += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=mono${fx ? "," + fx : ""},adelay=${Math.round(c.offset * 1000)}|${Math.round(c.offset * 1000)}[d${k}];`; labels.push(`[d${k}]`); });
   if (clips.length) filter += `${labels.join("")}amix=inputs=${clips.length}:normalize=0,apad,atrim=0:${frame.duration}[a]`;
   else filter = `anullsrc=r=44100:cl=mono,atrim=0:${frame.duration}[a]`;
   run([...inputs, "-filter_complex", filter, "-map", "0:v", "-map", "[a]", "-t", String(frame.duration),

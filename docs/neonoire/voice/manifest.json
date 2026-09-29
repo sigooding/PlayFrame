@@ -1933,6 +1933,341 @@
         "id": "1iXm9njHMy2XwrMqDf06"
       },
       "status": "take"
+    },
+    {
+      "id": "s11-ishida-tired-it-s-late-jack",
+      "frameId": "neonoire-shot-251",
+      "character": "ISHIDA",
+      "text": "It's late, Jack.",
+      "prompt": "[tired] It's late, Jack.",
+      "file": "/audio/neonoire/s11/251-ishida-tired-it-s-late-jack.mp3",
+      "offset": 0.5,
+      "duration": 2.12,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "SgfeDId0e9QWQkc3V7QQ",
+        "id": "VIXTHpXLETjiG7t9kQwZ"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-jack-the-voss-girl-came-to-see",
+      "frameId": "neonoire-shot-251",
+      "character": "JACK",
+      "text": "The Voss girl came to see me.",
+      "file": "/audio/neonoire/s11/251-jack-the-voss-girl-came-to-see.mp3",
+      "offset": 3.2,
+      "duration": 2.04,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "SmQraPvqhAGiDxgEdmdX",
+        "id": "Cy47JBApbfbQbPic6xLO"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-ishida-i-know",
+      "frameId": "neonoire-shot-251",
+      "character": "ISHIDA",
+      "text": "I know.",
+      "file": "/audio/neonoire/s11/251-ishida-i-know.mp3",
+      "offset": 5.8,
+      "duration": 1.07,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "xUaCWDP1hdA19UHxWmST",
+        "id": "EqMjxx9Lj2LYjwiqpZuw"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-jack-low-her-sister-was-in-that",
+      "frameId": "neonoire-shot-251",
+      "character": "JACK",
+      "text": "Her sister was in that bar.",
+      "prompt": "[low] Her sister was in that bar.",
+      "file": "/audio/neonoire/s11/251-jack-low-her-sister-was-in-that.mp3",
+      "offset": 8.4,
+      "duration": 2.12,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "rWHKp2M3cicxhF9Jwpot",
+        "id": "jjr0O5NsdSzIcJMHBza5"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-ishida-the-sister-is-a-missing-persons",
+      "frameId": "neonoire-shot-251",
+      "character": "ISHIDA",
+      "text": "The sister is a missing persons case. The bar is a gang matter. Two separate things.",
+      "file": "/audio/neonoire/s11/251-ishida-the-sister-is-a-missing-persons.mp3",
+      "offset": 11,
+      "duration": 6.19,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "TRWCevibSCYFTp0iu0kk",
+        "id": "3PpayyHePcrxVjaM7Ouf"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-jack-and-the-old-man-in-the",
+      "frameId": "neonoire-shot-251",
+      "character": "JACK",
+      "text": "And the old man in the street?",
+      "file": "/audio/neonoire/s11/251-jack-and-the-old-man-in-the.mp3",
+      "offset": 17.7,
+      "duration": 1.72,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "Q6CHv52Qz0cb6SySLU1Z",
+        "id": "31uVxSfXsiz7srOwzNNq"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-ishida-sakai-pause-yes-that-sakai-i",
+      "frameId": "neonoire-shot-251",
+      "character": "ISHIDA",
+      "text": "Sakai. Yes. That Sakai. I know what you're thinking. Old debts, old enemies. It's a gang matter.",
+      "prompt": "Sakai. [pause] Yes. That Sakai. I know what you're thinking. Old debts, old enemies. It's a gang matter.",
+      "file": "/audio/neonoire/s11/251-ishida-sakai-pause-yes-that-sakai-i.mp3",
+      "offset": 19.9,
+      "duration": 8.44,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "yQr4UGWmViLy59TMLJ4p",
+        "id": "6MSXwkcfX8Us8npEKLJA"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-jack-pause-twenty-years-ishida",
+      "frameId": "neonoire-shot-251",
+      "character": "JACK",
+      "text": "Twenty years, Ishida.",
+      "prompt": "[pause] Twenty years, Ishida.",
+      "file": "/audio/neonoire/s11/251-jack-pause-twenty-years-ishida.mp3",
+      "offset": 29.6,
+      "duration": 2.27,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "OxleiD4HWY8K9FjI2wUX",
+        "id": "ooLNXkQQ7fANw9buk0hC"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s11-ishida-gently-go-to-sleep-jack-you",
+      "frameId": "neonoire-shot-251",
+      "character": "ISHIDA",
+      "text": "Go to sleep, Jack. You're too old to be haunted.",
+      "prompt": "[gently] Go to sleep, Jack. You're too old to be haunted.",
+      "file": "/audio/neonoire/s11/251-ishida-gently-go-to-sleep-jack-you.mp3",
+      "offset": 33.3,
+      "duration": 3.79,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "1Jlx5jwrMiad29twLUQV",
+        "id": "lq0iqBQmVUVs0hSb4kTn"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-kaneko-gruffly-eat",
+      "frameId": "neonoire-shot-181",
+      "character": "KANEKO",
+      "text": "Eat.",
+      "prompt": "[gruffly] Eat.",
+      "file": "/audio/neonoire/s13/181-kaneko-gruffly-eat.mp3",
+      "offset": 0.5,
+      "duration": 1.07,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "LpKmSoVstjNA4SqweQ00",
+        "id": "oVr3eAuBYG1R8vaZEbem"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-mara-hesitantly-thank-you-has-anyone-come",
+      "frameId": "neonoire-shot-181",
+      "character": "MARA",
+      "text": "Thank you. Has anyone... come? Asking?",
+      "prompt": "[hesitantly] Thank you. Has anyone... come? Asking?",
+      "file": "/audio/neonoire/s13/181-mara-hesitantly-thank-you-has-anyone-come.mp3",
+      "offset": 2.2,
+      "duration": 4.68,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "PO79ijuWoU5llY3cNstF",
+        "id": "JmWGkknaTE221AtGlfQF"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-kaneko-flatly-nobody-comes-here-who-isn",
+      "frameId": "neonoire-shot-181",
+      "character": "KANEKO",
+      "text": "Nobody comes here who isn't lost.",
+      "prompt": "[flatly] Nobody comes here who isn't lost.",
+      "file": "/audio/neonoire/s13/181-kaneko-flatly-nobody-comes-here-who-isn.mp3",
+      "offset": 7.6,
+      "duration": 2.51,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "snL2jHigMz25GgJfNZJP",
+        "id": "SZfGvQFLukmXI4GA7XEE"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-kaneko-your-father-used-to-sit-on",
+      "frameId": "neonoire-shot-181",
+      "character": "KANEKO",
+      "text": "Your father used to sit on the third stool. He always paid too much. And your sister always ate everything on his plate.",
+      "prompt": "Your father used to sit on the third stool. He always paid too much. [pause] And your sister always ate everything on his plate.",
+      "file": "/audio/neonoire/s13/181-kaneko-your-father-used-to-sit-on.mp3",
+      "offset": 11.4,
+      "duration": 9.4,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "7IvZilJKlHfsmcQiFdXq",
+        "id": "vOhs8I4ZnSt3sJpJytom"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-mara-softly-she-told-me-about-this",
+      "frameId": "neonoire-shot-181",
+      "character": "MARA",
+      "text": "She told me about this place. All the time. When we were kids. I thought it was gone.",
+      "prompt": "[softly] She told me about this place. All the time. When we were kids. I thought it was gone.",
+      "file": "/audio/neonoire/s13/181-mara-softly-she-told-me-about-this.mp3",
+      "offset": 21.6,
+      "duration": 6.43,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "HBTykTdqEhH8H5imiJfy",
+        "id": "NfqiMzVnNc7pXnhtOhKH"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-kaneko-everything-is-going-we-are-just",
+      "frameId": "neonoire-shot-181",
+      "character": "KANEKO",
+      "text": "Everything is going. We are just slower.",
+      "file": "/audio/neonoire/s13/181-kaneko-everything-is-going-we-are-just.mp3",
+      "offset": 29,
+      "duration": 3.47,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "6pm10TXSJagi8rQmnXLT",
+        "id": "xIHPwWbbYNasx7KOGM9G"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s13-vera-voice-breaking-you-left-your-umbrella",
+      "frameId": "neonoire-shot-182",
+      "character": "VERA",
+      "text": "You left your umbrella. You'll get soaked.",
+      "prompt": "[voice breaking] You left your umbrella. You'll get soaked.",
+      "file": "/audio/neonoire/s13/182-vera-voice-breaking-you-left-your-umbrella.mp3",
+      "offset": 0.5,
+      "duration": 3.4,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "status": "take"
+    },
+    {
+      "id": "s13-vera-pleading-just-call-me-you-don",
+      "frameId": "neonoire-shot-182",
+      "character": "VERA",
+      "text": "Just call me. You don't have to say anything. Just call, so I know.",
+      "prompt": "[pleading] Just call me. You don't have to say anything. Just call, so I know.",
+      "file": "/audio/neonoire/s13/182-vera-pleading-just-call-me-you-don.mp3",
+      "offset": 4.6,
+      "duration": 5.49,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "status": "take"
+    },
+    {
+      "id": "s4-newsreporter-measured-police-in-kanda-are-investigating",
+      "frameId": "neonoire-shot-40",
+      "character": "NEWS REPORTER",
+      "text": "Police in Kanda are investigating a double shooting in a small bar in the early hours of Sunday. Two men were killed. Officers say it appears to be a dispute between criminal groups. No arrests have been made.",
+      "prompt": "[measured] Police in Kanda are investigating a double shooting in a small bar in the early hours of Sunday. Two men were killed. [pause] Officers say it appears to be a dispute between criminal groups. No arrests have been made.",
+      "file": "/audio/neonoire/s4/40-newsreporter-measured-police-in-kanda-are-investigating.mp3",
+      "offset": 0.5,
+      "duration": 13.64,
+      "voice": "EEYUewEB5w5R0IPnszO5",
+      "model": "eleven_v4",
+      "fx": "tv",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "RoREo2vPQItWBHsLT2mg",
+        "id": "PUsFP8zFrOn5eVj3VAlv"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s4-weatherannouncer-rain-continuing-through-the-rest-of",
+      "frameId": "neonoire-shot-40",
+      "character": "WEATHER ANNOUNCER",
+      "text": "Rain continuing through the rest of the week.",
+      "file": "/audio/neonoire/s4/40-weatherannouncer-rain-continuing-through-the-rest-of.mp3",
+      "offset": 14.6,
+      "duration": 2.51,
+      "voice": "EEYUewEB5w5R0IPnszO5",
+      "model": "eleven_v4",
+      "fx": "tv",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "2J52eiO4V2LOncKKEHPh",
+        "id": "rWSiWd3NGCcggfaGy47m"
+      },
+      "status": "take"
     }
   ]
 }

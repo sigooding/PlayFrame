@@ -7,6 +7,7 @@
 //
 // --replace       re-record an existing --id: the old take is archived (docs/neonoire/voice/archive/), never deleted,
 //                  and the line keeps its id and file path so nothing that points at it breaks.
+// --fx phone|tv|tape   a filter the animatic applies to the clean take (a phone line, a television, an old cassette).
 // --gen flow/session/generation   the ElevenLabs ids of the take, kept for provenance.
 // --file may also be an https URL: download it at once, generation links expire after two hours.
 // Needs ffmpeg for the duration (FFMPEG=/path/to/ffmpeg, or `pip install imageio-ffmpeg`).
@@ -71,7 +72,7 @@ const entry = {
   id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(plain !== args.text ? { prompt: args.text } : {}), file: finalRel,
   offset: Number(args.offset ?? existing?.offset ?? 0.4), ...(duration ? { duration } : {}),
   voice: args.voice || voices.characters[args.character.toUpperCase()]?.voiceId || undefined,
-  model: args.model || voices.speechModel, ...(generation ? { generation } : {}), status: args.status || "take",
+  model: args.model || voices.speechModel, ...(args.fx ? { fx: args.fx } : existing?.fx ? { fx: existing.fx } : {}), ...(generation ? { generation } : {}), status: args.status || "take",
 };
 if (existing) {
   // Same id, same file path: the new take replaces the old one in place; the old take stays in `history`.

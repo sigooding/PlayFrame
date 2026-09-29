@@ -25,3 +25,11 @@ Generated on ElevenLabs flow `clnOd1X24tHxxhxgPUg2`, **not yet ingested** (offse
 - BARBER (scene 12, #247): "Police again?" / "I told them. I was asleep. I heard the shot. Then a car." / "One car. Twice. [pause] It left. Then it came back." — audition previews `5GswypvgtPl0hKqvIA4k`, `C5LKECQBsZHzSCtGNvIE`, `Hcu1hRMluusHRu4bfqPR`; awaiting a pick and a free slot.
 - VERA (V.O., scene 13, #182): reuse the scene 4 takes ("You left your umbrella. You'll get soaked." and "Just call me. You don't have to say anything. Just call, so I know."), no new credits; the phone filter is added in Adobe.
 - Vending machine "Thank you very much." (scene 12): a machine voice, not recorded; a sound effect rather than a cast voice.
+
+
+## Status update (29 September 2026, later)
+
+- Scene 11 (Jack, Ishida V.O. with `fx: phone`), scene 13 (Mara, Kaneko, Vera's voicemail reused from scene 4 with `fx: phone`) are recorded and in the manifest.
+- Kaneko is saved as a custom voice (`vUzt8mUMt5vwWOoJ6szl`).
+- Still waiting: the barber (needs a pick and a free slot) and Jack's four scene 12 lines, which are generated (sessions `az5sRLVdpSJ6e7KE8nTd`, `ilyBv9ybVsB7vi8aowqZ`, `YtovuopHAdtz6MJMTSA2`, `DMJk7XZTmDnTGVM2Pmb8`) but not ingested, because their offsets depend on the barber's takes.
+- Scene 4 gained a news report on Vera's television (script edit, see the story bible Part 9 item 8), read in the Journalist voice with `fx: tv`; the weather line uses the same voice.
