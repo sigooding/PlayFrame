@@ -7722,7 +7722,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 16,
+      "duration": 96,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -7731,7 +7731,139 @@
         "neonoire-ishida",
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 20; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nIshida's grey suit carries no tie here. The lantern run and the charcoal smoke stand in for the bridge's shadow at the far end.\n\nSCRIPT — the draft's own words for this shot:\n\"You never call me unless you want something.\"\n\n35mm across the table, lanterns behind.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 20 of 31 — ten keyframes at a time, in screenplay order. Shot 199 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 20; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nIshida's grey suit carries no tie here. The lantern run and the charcoal smoke stand in for the bridge's shadow at the far end.\n\nSCRIPT — the draft's own words for this shot:\n\"You never call me unless you want something.\"\n\n35mm across the table, lanterns behind.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 20 of 31 — ten keyframes at a time, in screenplay order. Shot 199 of 307.",
+      "audio": [
+        {
+          "id": "s23-ishida-wearily-you-never-call-me-unless",
+          "character": "ISHIDA",
+          "text": "You never call me unless you want something.",
+          "src": "/audio/neonoire/s23/199-ishida-wearily-you-never-call-me-unless.mp3",
+          "offset": 0.3,
+          "duration": 3.08,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-jack-sakai",
+          "character": "JACK",
+          "text": "Sakai.",
+          "src": "/audio/neonoire/s23/199-jack-sakai.mp3",
+          "offset": 3.94,
+          "duration": 0.76,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-ishida-you-already-know-what-he-was",
+          "character": "ISHIDA",
+          "text": "You already know what he was. In the bubble years he cleared land. Old tenants who wouldn't sell. First he'd bring flowers. Then he'd bring men. Then something would happen. A fire, sometimes.",
+          "src": "/audio/neonoire/s23/199-ishida-you-already-know-what-he-was.mp3",
+          "offset": 5.46,
+          "duration": 14.92,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-jack-the-shiohama-fire",
+          "character": "JACK",
+          "text": "The Shiohama fire.",
+          "src": "/audio/neonoire/s23/199-jack-the-shiohama-fire.mp3",
+          "offset": 20.94,
+          "duration": 1.72,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-ishida-among-others-pause-the-journalist-in",
+          "character": "ISHIDA",
+          "text": "Among others. The journalist in the bar was from the Toto Shimbun. He'd been asking about the redevelopment money. Who owns what. Whose friends vote on what. The usual. Sakai called him a week ago. We think Sakai wanted to confess something before he died. He had cancer. Months left.",
+          "src": "/audio/neonoire/s23/199-ishida-among-others-pause-the-journalist-in.mp3",
+          "offset": 23.42,
+          "duration": 20.11,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-jack-confess-what",
+          "character": "JACK",
+          "text": "Confess what?",
+          "src": "/audio/neonoire/s23/199-jack-confess-what.mp3",
+          "offset": 44.1,
+          "duration": 1.41,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-ishida-who-knows-an-old-man-s",
+          "character": "ISHIDA",
+          "text": "Who knows. An old man's conscience. It's very common.",
+          "src": "/audio/neonoire/s23/199-ishida-who-knows-an-old-man-s.mp3",
+          "offset": 46.26,
+          "duration": 4.21,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-jack-why-are-you-telling-me-all",
+          "character": "JACK",
+          "text": "Why are you telling me all this?",
+          "src": "/audio/neonoire/s23/199-jack-why-are-you-telling-me-all.mp3",
+          "offset": 51.02,
+          "duration": 1.96,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-ishida-because-you-ll-find-out-anyway",
+          "character": "ISHIDA",
+          "text": "Because you'll find out anyway. And because I would rather you heard it from me than from someone who wants to hurt you. Twenty years ago I told you to sign that report. You were young. You did what your senior told you. That was on me, not on you.",
+          "src": "/audio/neonoire/s23/199-ishida-because-you-ll-find-out-anyway.mp3",
+          "offset": 53.74,
+          "duration": 16.12,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-jack-i-still-signed-it",
+          "character": "JACK",
+          "text": "I still signed it.",
+          "src": "/audio/neonoire/s23/199-jack-i-still-signed-it.mp3",
+          "offset": 70.42,
+          "duration": 1.41,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-ishida-and-i-ve-carried-it-too",
+          "character": "ISHIDA",
+          "text": "And I've carried it too. Every day. Whatever Sakai hid, Jack, if you find it, bring it to me. Not to the department. To me. I'll know what to do with it this time.",
+          "src": "/audio/neonoire/s23/199-ishida-and-i-ve-carried-it-too.mp3",
+          "offset": 72.58,
+          "duration": 12.75,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-jack-sakai-had-a-wife",
+          "character": "JACK",
+          "text": "Sakai had a wife.",
+          "src": "/audio/neonoire/s23/199-jack-sakai-had-a-wife.mp3",
+          "offset": 85.9,
+          "duration": 1.65,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s23-ishida-separated-a-fishing-town-on-the",
+          "character": "ISHIDA",
+          "text": "Separated. A fishing town on the Boso coast. The police have spoken to her. She gave us nothing.",
+          "src": "/audio/neonoire/s23/199-ishida-separated-a-fishing-town-on-the.mp3",
+          "offset": 88.3,
+          "duration": 7,
+          "voice": "6wGe4cP3pH5TRuKntC6Z",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-200",
@@ -7777,7 +7909,29 @@
         "neonoire-kurose",
         "neonoire-masked-men"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe room is held to `s83/109-the-fortieth-floor.jpg`, night-swapped; Kurose to `s83/110-very-expensive.jpg`. The leader is one of the masked men of the cold open, unmasked as the draft requires; his suit reads black rather than the card's dark navy.\n\nSCRIPT — the draft's own words for this shot:\n\"Where the Hive stands now, there is a plaza with a fountain.\"\n\n35mm static; the model is the only lit thing.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 201 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe room is held to `s83/109-the-fortieth-floor.jpg`, night-swapped; Kurose to `s83/110-very-expensive.jpg`. The leader is one of the masked men of the cold open, unmasked as the draft requires; his suit reads black rather than the card's dark navy.\n\nSCRIPT — the draft's own words for this shot:\n\"Where the Hive stands now, there is a plaza with a fountain.\"\n\n35mm static; the model is the only lit thing.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 201 of 307.",
+      "audio": [
+        {
+          "id": "s24-maskedman-the-detective-went-into-the-hive",
+          "character": "MASKED MAN",
+          "text": "The detective went into the Hive twice. Once in the day. Once after the last train.",
+          "src": "/audio/neonoire/s24/201-maskedman-the-detective-went-into-the-hive.mp3",
+          "offset": 0.3,
+          "duration": 5.8,
+          "voice": "IUNPSr7i3o1XsExH6IGv",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s24-maskedman-we-can-t-follow-him-in",
+          "character": "MASKED MAN",
+          "text": "We can't follow him in there. Too many people. Too many passages. They see everyone.",
+          "src": "/audio/neonoire/s24/201-maskedman-we-can-t-follow-him-in.mp3",
+          "offset": 8.46,
+          "duration": 5.72,
+          "voice": "IUNPSr7i3o1XsExH6IGv",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-202",
@@ -7791,7 +7945,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 18,
+      "duration": 42,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -7800,7 +7954,89 @@
         "neonoire-jack",
         "neonoire-mara"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe stamped number 114 is shot 258. The two sketches on the back wall are kept from shot 193.\n\nSCRIPT — the draft's own words for this shot:\n\"Mara opens her fist. The coin-locker key on its worn tag.\"\n\n35mm across three feet of dark.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 18s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 202 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe stamped number 114 is shot 258. The two sketches on the back wall are kept from shot 193.\n\nSCRIPT — the draft's own words for this shot:\n\"Mara opens her fist. The coin-locker key on its worn tag.\"\n\n35mm across three feet of dark.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 18s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 202 of 307.",
+      "audio": [
+        {
+          "id": "s25-mara-mr-sakai-said-twenty-years-before",
+          "character": "MARA",
+          "text": "Mr. Sakai said \"twenty years.\" Before they shot him. Like he'd been expecting them for twenty years.",
+          "src": "/audio/neonoire/s25/202-mara-mr-sakai-said-twenty-years-before.mp3",
+          "offset": 0.3,
+          "duration": 7.39,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-and-then-in-the-bar-the",
+          "character": "MARA",
+          "text": "And then in the bar, the man said, \"Where is he?\" He was waiting for the old man. They were supposed to meet.",
+          "src": "/audio/neonoire/s25/202-mara-and-then-in-the-bar-the.mp3",
+          "offset": 1,
+          "duration": 7.39,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-he-probably-had",
+          "character": "JACK",
+          "text": "He probably had.",
+          "src": "/audio/neonoire/s25/202-jack-he-probably-had.mp3",
+          "offset": 8.26,
+          "duration": 1.72,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-sakai-was-bringing-him-something",
+          "character": "JACK",
+          "text": "Sakai was bringing him something.",
+          "src": "/audio/neonoire/s25/202-jack-sakai-was-bringing-him-something.mp3",
+          "offset": 8.96,
+          "duration": 2.12,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-he-knew-me-he-saw-me",
+          "character": "MARA",
+          "text": "He knew me. He saw me in the doorway and he walked away from me, so they wouldn't look. And at the end he said, in English — \"Your father. It was not what they say.\"",
+          "src": "/audio/neonoire/s25/202-mara-he-knew-me-he-saw-me.mp3",
+          "offset": 10.74,
+          "duration": 12.75,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-this",
+          "character": "MARA",
+          "text": "This.",
+          "src": "/audio/neonoire/s25/202-mara-this.mp3",
+          "offset": 12.24,
+          "duration": 0.84,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-you-drew-this",
+          "character": "JACK",
+          "text": "You drew this.",
+          "src": "/audio/neonoire/s25/202-jack-you-drew-this.mp3",
+          "offset": 24.06,
+          "duration": 1.31,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-it-s-the-only-thing-i",
+          "character": "MARA",
+          "text": "It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening. That's what he said when he came into the bar. \"Excuse me.\" Like a customer. He said it in the lane too, before —",
+          "src": "/audio/neonoire/s25/202-mara-it-s-the-only-thing-i.mp3",
+          "offset": 26.14,
+          "duration": 14.84,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-203",
@@ -7814,7 +8050,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 16,
+      "duration": 17,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -7823,7 +8059,39 @@
         "neonoire-vera",
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe lighter in her fist is shot 257. Vera's original look is correct here: this is the present, before any costume change.\n\nSCRIPT — the draft's own words for this shot:\n\"And her head comes to rest on his shoulder, as if it has always belonged there.\"\n\n50mm at seated height; the city circles past.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 203 of 307."
+      "notes": "Image: AI-generated storyboard study from pass 21; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nThe lighter in her fist is shot 257. Vera's original look is correct here: this is the present, before any costume change.\n\nSCRIPT — the draft's own words for this shot:\n\"And her head comes to rest on his shoulder, as if it has always belonged there.\"\n\n50mm at seated height; the city circles past.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 16s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 21 of 31 — ten keyframes at a time, in screenplay order. Shot 203 of 307.",
+      "audio": [
+        {
+          "id": "s26-vera-dad-used-to-do-this-when",
+          "character": "VERA",
+          "text": "Dad used to do this when he couldn't think. Ride the whole loop. An hour. He said Tokyo was a clock and the Yamanote was the second hand.",
+          "src": "/audio/neonoire/s26/203-vera-dad-used-to-do-this-when.mp3",
+          "offset": 0.4,
+          "duration": 9.56,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-jack-did-it-help",
+          "character": "JACK",
+          "text": "Did it help?",
+          "src": "/audio/neonoire/s26/203-jack-did-it-help.mp3",
+          "offset": 10.72,
+          "duration": 0.99,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-vera-i-don-t-know-he-did",
+          "character": "VERA",
+          "text": "I don't know. He did it a lot at the end.",
+          "src": "/audio/neonoire/s26/203-vera-i-don-t-know-he-did.mp3",
+          "offset": 12.68,
+          "duration": 3.16,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-204",
@@ -9344,7 +9612,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 4,
+      "duration": 22,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -9352,7 +9620,109 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nCoverage, shot 257. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Vera's hand, charcoal coat, not the wine-red sleeve. She follows sheets/vera.jpg, her original look. No cigarettes. By the next beat she has put it in her pocket.\n\nSCRIPT — the draft's own words for this shot:\n\"She looks at the lighter in her hand.\"\n\n50mm at seated height; the city circles past.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 4s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 26 of 31 — ten keyframes at a time, in screenplay order. Shot 257 of 307."
+      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nCoverage, shot 257. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Vera's hand, charcoal coat, not the wine-red sleeve. She follows sheets/vera.jpg, her original look. No cigarettes. By the next beat she has put it in her pocket.\n\nSCRIPT — the draft's own words for this shot:\n\"She looks at the lighter in her hand.\"\n\n50mm at seated height; the city circles past.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 4s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 26 of 31 — ten keyframes at a time, in screenplay order. Shot 257 of 307.",
+      "audio": [
+        {
+          "id": "s26-vera-you-don-t-smoke",
+          "character": "VERA",
+          "text": "You don't smoke.",
+          "src": "/audio/neonoire/s26/257-vera-you-don-t-smoke.mp3",
+          "offset": 0.3,
+          "duration": 1.41,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-jack-i-quit",
+          "character": "JACK",
+          "text": "I quit.",
+          "src": "/audio/neonoire/s26/257-jack-i-quit.mp3",
+          "offset": 2.26,
+          "duration": 1.15,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-vera-when",
+          "character": "VERA",
+          "text": "When?",
+          "src": "/audio/neonoire/s26/257-vera-when.mp3",
+          "offset": 3.88,
+          "duration": 0.68,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-jack-twenty-years-ago",
+          "character": "JACK",
+          "text": "Twenty years ago.",
+          "src": "/audio/neonoire/s26/257-jack-twenty-years-ago.mp3",
+          "offset": 5.12,
+          "duration": 1.49,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-vera-and-you-still-carry-the-lighter",
+          "character": "VERA",
+          "text": "And you still carry the lighter.",
+          "src": "/audio/neonoire/s26/257-vera-and-you-still-carry-the-lighter.mp3",
+          "offset": 7.16,
+          "duration": 2.27,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-jack-habit",
+          "character": "JACK",
+          "text": "Habit.",
+          "src": "/audio/neonoire/s26/257-jack-habit.mp3",
+          "offset": 10,
+          "duration": 0.99,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-vera-that-s-not-a-habit-that",
+          "character": "VERA",
+          "text": "That's not a habit. That's a promise you don't trust yourself to keep.",
+          "src": "/audio/neonoire/s26/257-vera-that-s-not-a-habit-that.mp3",
+          "offset": 11.56,
+          "duration": 4.28,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-jack-keep-it",
+          "character": "JACK",
+          "text": "Keep it.",
+          "src": "/audio/neonoire/s26/257-jack-keep-it.mp3",
+          "offset": 16.8,
+          "duration": 0.99,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-vera-why",
+          "character": "VERA",
+          "text": "Why?",
+          "src": "/audio/neonoire/s26/257-vera-why.mp3",
+          "offset": 18.26,
+          "duration": 0.91,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s26-jack-because-i-quit",
+          "character": "JACK",
+          "text": "Because I quit.",
+          "src": "/audio/neonoire/s26/257-jack-because-i-quit.mp3",
+          "offset": 19.64,
+          "duration": 1.31,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-258",
@@ -9366,7 +9736,7 @@
       "lens": "85mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 4,
+      "duration": 41,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -9374,7 +9744,119 @@
       "characters": [
         "neonoire-mara"
       ],
-      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nCoverage, shot 258. The key follows s1/16-the-key.jpg: the oval tag stays 87, the cold-open prop. 114 is lettered on the brass of the key, which is the number this scene stamps into the metal. The screenplay now puts the legible 114 on the tag instead; this older image still shows the 87-tag/metal-stamp treatment. Leave the frame as directed, without treating 87 as a new scripted number. Mara's hand is in the borrowed brown cardigan, no bird clip. The storeroom follows s25/200-the-number-114.jpg.\n\nSCRIPT — the draft's own words for this shot:\n\"The number on the worn tag, still legible: 114.\"\n\n35mm across three feet of dark.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 4s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 26 of 31 — ten keyframes at a time, in screenplay order. Shot 258 of 307."
+      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nCoverage, shot 258. The key follows s1/16-the-key.jpg: the oval tag stays 87, the cold-open prop. 114 is lettered on the brass of the key, which is the number this scene stamps into the metal. The screenplay now puts the legible 114 on the tag instead; this older image still shows the 87-tag/metal-stamp treatment. Leave the frame as directed, without treating 87 as a new scripted number. Mara's hand is in the borrowed brown cardigan, no bird clip. The storeroom follows s25/200-the-number-114.jpg.\n\nSCRIPT — the draft's own words for this shot:\n\"The number on the worn tag, still legible: 114.\"\n\n35mm across three feet of dark.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 4s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 26 of 31 — ten keyframes at a time, in screenplay order. Shot 258 of 307.",
+      "audio": [
+        {
+          "id": "s25-jack-it-s-not-a-station-locker",
+          "character": "JACK",
+          "text": "It's not a station locker. They clear those every three days.",
+          "src": "/audio/neonoire/s25/258-jack-it-s-not-a-station-locker.mp3",
+          "offset": 0.3,
+          "duration": 3.97,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-then-what-is-it",
+          "character": "MARA",
+          "text": "Then what is it?",
+          "src": "/audio/neonoire/s25/258-mara-then-what-is-it.mp3",
+          "offset": 4.72,
+          "duration": 1.49,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-somewhere-he-paid-for-for-a",
+          "character": "JACK",
+          "text": "Somewhere he paid for. For a long time.",
+          "src": "/audio/neonoire/s25/258-jack-somewhere-he-paid-for-for-a.mp3",
+          "offset": 6.66,
+          "duration": 3.63,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-keep-it-until-i-know-what",
+          "character": "JACK",
+          "text": "Keep it. Until I know what it opens. It's safer with you than with me.",
+          "src": "/audio/neonoire/s25/258-jack-keep-it-until-i-know-what.mp3",
+          "offset": 11.86,
+          "duration": 5.15,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-why",
+          "character": "MARA",
+          "text": "Why?",
+          "src": "/audio/neonoire/s25/258-mara-why.mp3",
+          "offset": 17.38,
+          "duration": 0.76,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-because-nobody-knows-where-you-are",
+          "character": "JACK",
+          "text": "Because nobody knows where you are.",
+          "src": "/audio/neonoire/s25/258-jack-because-nobody-knows-where-you-are.mp3",
+          "offset": 18.5,
+          "duration": 2.19,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-is-she-eating",
+          "character": "MARA",
+          "text": "Is she eating?",
+          "src": "/audio/neonoire/s25/258-mara-is-she-eating.mp3",
+          "offset": 22.06,
+          "duration": 1.31,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-what",
+          "character": "JACK",
+          "text": "What?",
+          "src": "/audio/neonoire/s25/258-jack-what.mp3",
+          "offset": 23.74,
+          "duration": 0.76,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-vera-she-forgets-to-eat-when",
+          "character": "MARA",
+          "text": "Vera. She forgets to eat when she's upset. She just drinks coffee. Is she eating?",
+          "src": "/audio/neonoire/s25/258-mara-vera-she-forgets-to-eat-when.mp3",
+          "offset": 24.86,
+          "duration": 6.19,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-last-night-she-had-noodles",
+          "character": "JACK",
+          "text": "Last night she had noodles.",
+          "src": "/audio/neonoire/s25/258-jack-last-night-she-had-noodles.mp3",
+          "offset": 32.22,
+          "duration": 2.04,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-good-pause-make-her-eat-breakfast",
+          "character": "MARA",
+          "text": "Good. Make her eat breakfast. She never eats breakfast.",
+          "src": "/audio/neonoire/s25/258-mara-good-pause-make-her-eat-breakfast.mp3",
+          "offset": 34.72,
+          "duration": 4.91,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-259",
@@ -10237,7 +10719,59 @@
         "neonoire-vera",
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nThe scene master. Vera follows sheets/vera.jpg: ash-blonde, charcoal coat on, cream knit, no bird clip, brown boots. Jack follows sheets/jack.jpg: charcoal overcoat, off-white open collar, 48. Six stools. The CRT is never static: a morning cooking show, a chef at a pan, real programme content. Fogged glass, siphon flame, no brands, no film title. Retake 29 September 2026: he is setting the plate down (toast, egg, cabbage); her eyeline has come off the door onto him. Remaining: she looks at him, not at the door.\n\nSCRIPT — the draft's own words for this shot:\n\"Jack sets a plate down in front of her: thick toast, a boiled egg, a small dish of pickled cabbage that nobody asked for.\"\n\nFogged glass, a siphon flame, and a plate she didn't ask for.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 287 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nThe scene master. Vera follows sheets/vera.jpg: ash-blonde, charcoal coat on, cream knit, no bird clip, brown boots. Jack follows sheets/jack.jpg: charcoal overcoat, off-white open collar, 48. Six stools. The CRT is never static: a morning cooking show, a chef at a pan, real programme content. Fogged glass, siphon flame, no brands, no film title. Retake 29 September 2026: he is setting the plate down (toast, egg, cabbage); her eyeline has come off the door onto him. Remaining: she looks at him, not at the door.\n\nSCRIPT — the draft's own words for this shot:\n\"Jack sets a plate down in front of her: thick toast, a boiled egg, a small dish of pickled cabbage that nobody asked for.\"\n\nFogged glass, a siphon flame, and a plate she didn't ask for.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 14s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 287 of 307.",
+      "audio": [
+        {
+          "id": "s25a-vera-what-s-this",
+          "character": "VERA",
+          "text": "What's this?",
+          "src": "/audio/neonoire/s25a/287-vera-what-s-this.mp3",
+          "offset": 0.3,
+          "duration": 1.23,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-jack-breakfast",
+          "character": "JACK",
+          "text": "Breakfast.",
+          "src": "/audio/neonoire/s25a/287-jack-breakfast.mp3",
+          "offset": 2,
+          "duration": 0.99,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-vera-i-don-t-eat-breakfast",
+          "character": "VERA",
+          "text": "I don't eat breakfast.",
+          "src": "/audio/neonoire/s25a/287-vera-i-don-t-eat-breakfast.mp3",
+          "offset": 3.46,
+          "duration": 1.57,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-jack-you-drink-coffee-until-the-afternoon",
+          "character": "JACK",
+          "text": "You drink coffee until the afternoon and then you forget to eat.",
+          "src": "/audio/neonoire/s25a/287-jack-you-drink-coffee-until-the-afternoon.mp3",
+          "offset": 5.48,
+          "duration": 4.05,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-vera-teasing-has-someone-been-reporting-on",
+          "character": "VERA",
+          "text": "Has someone been reporting on me?",
+          "src": "/audio/neonoire/s25a/287-vera-teasing-has-someone-been-reporting-on.mp3",
+          "offset": 9.98,
+          "duration": 2.59,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-288",
@@ -10251,7 +10785,7 @@
       "lens": "85mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 6,
+      "duration": 21,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -10259,7 +10793,59 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nGenerated from shot 287 to hold the counter. The close-up is rare on purpose: this is the almost-slip, the payoff of Mara's \"Make her eat breakfast.\" Hands a weathered 48, charcoal sleeve and cream cuff, held to sheets/jack.jpg. Vera is not in this insert; she is looking at the cooking show.\n\nSCRIPT — the draft's own words for this shot:\n\"Jack's hand stops on his cup.\"\n\nFogged glass, a siphon flame, and a plate she didn't ask for.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 288 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nGenerated from shot 287 to hold the counter. The close-up is rare on purpose: this is the almost-slip, the payoff of Mara's \"Make her eat breakfast.\" Hands a weathered 48, charcoal sleeve and cream cuff, held to sheets/jack.jpg. Vera is not in this insert; she is looking at the cooking show.\n\nSCRIPT — the draft's own words for this shot:\n\"Jack's hand stops on his cup.\"\n\nFogged glass, a siphon flame, and a plate she didn't ask for.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 288 of 307.",
+      "audio": [
+        {
+          "id": "s25a-vera-you-sound-like-my-sister",
+          "character": "VERA",
+          "text": "You sound like my sister.",
+          "src": "/audio/neonoire/s25a/288-vera-you-sound-like-my-sister.mp3",
+          "offset": 0.3,
+          "duration": 1.8,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-vera-she-used-to-stand-over-me",
+          "character": "VERA",
+          "text": "She used to stand over me with a plate. Twenty-four years old, bossing me around my own kitchen. She'd have liked you. She likes anyone who's stubborn.",
+          "src": "/audio/neonoire/s25a/288-vera-she-used-to-stand-over-me.mp3",
+          "offset": 1.2,
+          "duration": 9.95,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-jack-she-sounds-like-she-was-right",
+          "character": "JACK",
+          "text": "She sounds like she was right.",
+          "src": "/audio/neonoire/s25a/288-jack-she-sounds-like-she-was-right.mp3",
+          "offset": 11.72,
+          "duration": 1.8,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-vera-was-pause-is-i-keep-saying",
+          "character": "VERA",
+          "text": "Was. Is. I keep saying was.",
+          "src": "/audio/neonoire/s25a/288-vera-was-pause-is-i-keep-saying.mp3",
+          "offset": 14.08,
+          "duration": 4.05,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-jack-gently-is",
+          "character": "JACK",
+          "text": "Is.",
+          "src": "/audio/neonoire/s25a/288-jack-gently-is.mp3",
+          "offset": 18.68,
+          "duration": 1.15,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-289",
@@ -10282,7 +10868,39 @@
         "neonoire-vera",
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nGenerated from shot 287. Vera still in the charcoal coat, ash-blonde, no clip. The CRT keeps the cooking show — never static. The overpayment rhymes with Kaneko's counter and with Jack always paying too much. The woman behind the counter is unnamed and unremarkable. Retake 29 September 2026: empty plates, a wad of notes, she has eaten. Remaining: two emptied plates instead of one; the till is a small register on the counter.\n\nSCRIPT — the draft's own words for this shot:\n\"For making me.\"\n\nFogged glass, a siphon flame, and a plate she didn't ask for.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 289 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nGenerated from shot 287. Vera still in the charcoal coat, ash-blonde, no clip. The CRT keeps the cooking show — never static. The overpayment rhymes with Kaneko's counter and with Jack always paying too much. The woman behind the counter is unnamed and unremarkable. Retake 29 September 2026: empty plates, a wad of notes, she has eaten. Remaining: two emptied plates instead of one; the till is a small register on the counter.\n\nSCRIPT — the draft's own words for this shot:\n\"For making me.\"\n\nFogged glass, a siphon flame, and a plate she didn't ask for.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 289 of 307.",
+      "audio": [
+        {
+          "id": "s25a-vera-thank-you",
+          "character": "VERA",
+          "text": "Thank you.",
+          "src": "/audio/neonoire/s25a/289-vera-thank-you.mp3",
+          "offset": 0.3,
+          "duration": 0.91,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-jack-for-what",
+          "character": "JACK",
+          "text": "For what?",
+          "src": "/audio/neonoire/s25a/289-jack-for-what.mp3",
+          "offset": 1.78,
+          "duration": 0.91,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25a-vera-for-making-me",
+          "character": "VERA",
+          "text": "For making me.",
+          "src": "/audio/neonoire/s25a/289-vera-for-making-me.mp3",
+          "offset": 3.26,
+          "duration": 1.23,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-290",
@@ -10296,7 +10914,7 @@
       "lens": "35mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 12,
+      "duration": 33,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -10305,7 +10923,49 @@
         "neonoire-okada",
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThe scene master. Hold the room to s8/160-were-closed.jpg and s81/100-the-bar-in-daylight.jpg: bottle shelves, red-topped stools, wet street through the window, the black rubber mat. Okada follows sheets/okada.jpg: close-cropped white hair, white shirt sleeves rolled, navy apron. Vera follows sheets/vera.jpg: charcoal coat, cream knit, ash-blonde, no clip, no umbrella. The CRT is off.\n\nSCRIPT — the draft's own words for this shot:\n\"The bar in daylight again. The rubber mat is still there, still too clean.\"\n\nDaylight in a bar where someone died, and a woman crouching where her sister hid.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 290 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThe scene master. Hold the room to s8/160-were-closed.jpg and s81/100-the-bar-in-daylight.jpg: bottle shelves, red-topped stools, wet street through the window, the black rubber mat. Okada follows sheets/okada.jpg: close-cropped white hair, white shirt sleeves rolled, navy apron. Vera follows sheets/vera.jpg: charcoal coat, cream knit, ash-blonde, no clip, no umbrella. The CRT is off.\n\nSCRIPT — the draft's own words for this shot:\n\"The bar in daylight again. The rubber mat is still there, still too clean.\"\n\nDaylight in a bar where someone died, and a woman crouching where her sister hid.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 29 of 31 — ten keyframes at a time, in screenplay order. Shot 290 of 307.",
+      "audio": [
+        {
+          "id": "s27a-vera-mr-okada-you-said-he-found",
+          "character": "VERA",
+          "text": "Mr. Okada. You said he found your daughter.",
+          "src": "/audio/neonoire/s27a/290-vera-mr-okada-you-said-he-found.mp3",
+          "offset": 0.3,
+          "duration": 3.32,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-okada-she-was-fifteen-she-went-to",
+          "character": "OKADA",
+          "text": "She was fifteen. She went to Osaka with a boy. Everyone said she was gone. He found her in three weeks. He didn't bring her home. She didn't want to come. He told me where she was, and he told me not to go. Write, he said. Wait.",
+          "src": "/audio/neonoire/s27a/290-okada-she-was-fifteen-she-went-to.mp3",
+          "offset": 4.78,
+          "duration": 19.49,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-vera-was-he-right",
+          "character": "VERA",
+          "text": "Was he right?",
+          "src": "/audio/neonoire/s27a/290-vera-was-he-right.mp3",
+          "offset": 24.92,
+          "duration": 1.23,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-okada-she-has-two-children-now-pause",
+          "character": "OKADA",
+          "text": "She has two children now. I hated him for a year.",
+          "src": "/audio/neonoire/s27a/290-okada-she-has-two-children-now-pause.mp3",
+          "offset": 27.12,
+          "duration": 4.91,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-291",
@@ -10319,7 +10979,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 10,
+      "duration": 16,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -10328,7 +10988,49 @@
         "neonoire-okada",
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nGenerated from shot 290. The line is a description, not a warning — play it flat. Same room, same mat, CRT off. No umbrella. Retake 29 September 2026: the strips read 50円 as in shot 290. Remaining: the drink names on the strips are not identical to 290.\n\nSCRIPT — the draft's own words for this shot:\n\"He finds things. And then he carries them by himself.\"\n\nDaylight in a bar where someone died, and a woman crouching where her sister hid.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 30 of 31 — ten keyframes at a time, in screenplay order. Shot 291 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nGenerated from shot 290. The line is a description, not a warning — play it flat. Same room, same mat, CRT off. No umbrella. Retake 29 September 2026: the strips read 50円 as in shot 290. Remaining: the drink names on the strips are not identical to 290.\n\nSCRIPT — the draft's own words for this shot:\n\"He finds things. And then he carries them by himself.\"\n\nDaylight in a bar where someone died, and a woman crouching where her sister hid.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 30 of 31 — ten keyframes at a time, in screenplay order. Shot 291 of 307.",
+      "audio": [
+        {
+          "id": "s27a-okada-he-finds-things-and-then-he",
+          "character": "OKADA",
+          "text": "He finds things. And then he carries them by himself. I have never seen him put anything down.",
+          "src": "/audio/neonoire/s27a/291-okada-he-finds-things-and-then-he.mp3",
+          "offset": 0.3,
+          "duration": 7.63,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-vera-is-that-a-warning",
+          "character": "VERA",
+          "text": "Is that a warning?",
+          "src": "/audio/neonoire/s27a/291-vera-is-that-a-warning.mp3",
+          "offset": 8.7,
+          "duration": 1.57,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-okada-it-s-a-description",
+          "character": "OKADA",
+          "text": "It's a description.",
+          "src": "/audio/neonoire/s27a/291-okada-it-s-a-description.mp3",
+          "offset": 11.02,
+          "duration": 1.49,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-vera-where-did-you-find-the-clip",
+          "character": "VERA",
+          "text": "Where did you find the clip?",
+          "src": "/audio/neonoire/s27a/291-vera-where-did-you-find-the-clip.mp3",
+          "offset": 13.46,
+          "duration": 1.72,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-292",
@@ -10342,7 +11044,7 @@
       "lens": "24mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 12,
+      "duration": 41,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -10350,7 +11052,59 @@
       "characters": [
         "neonoire-vera"
       ],
-      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThe rhyme with shot 24 (s2/24-from-the-floor.jpg) and shot 23 (s2/23-behind-the-counter.jpg): same gap, same crates, same underside. Day, not night; the CRT is dark, so her face is in the dark glass, not in blue. Vera follows sheets/vera.jpg — dry, ash-blonde, charcoal coat, no clip. Okada is out of frame, standing aside. No umbrella. Retake 29 September 2026: she is under the counter among the crates, camera low, the rhyme with s2/24-from-the-floor.jpg.\n\nSCRIPT — the draft's own words for this shot:\n\"She was here.\"\n\nDaylight in a bar where someone died, and a woman crouching where her sister hid.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 30 of 31 — ten keyframes at a time, in screenplay order. Shot 292 of 307."
+      "notes": "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThe rhyme with shot 24 (s2/24-from-the-floor.jpg) and shot 23 (s2/23-behind-the-counter.jpg): same gap, same crates, same underside. Day, not night; the CRT is dark, so her face is in the dark glass, not in blue. Vera follows sheets/vera.jpg — dry, ash-blonde, charcoal coat, no clip. Okada is out of frame, standing aside. No umbrella. Retake 29 September 2026: she is under the counter among the crates, camera low, the rhyme with s2/24-from-the-floor.jpg.\n\nSCRIPT — the draft's own words for this shot:\n\"She was here.\"\n\nDaylight in a bar where someone died, and a woman crouching where her sister hid.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 30 of 31 — ten keyframes at a time, in screenplay order. Shot 292 of 307.",
+      "audio": [
+        {
+          "id": "s27a-vera-she-was-here",
+          "character": "VERA",
+          "text": "She was here.",
+          "src": "/audio/neonoire/s27a/292-vera-she-was-here.mp3",
+          "offset": 0.3,
+          "duration": 1.23,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-okada-i-was-in-the-back-moving",
+          "character": "OKADA",
+          "text": "I was in the back. Moving crates. I heard all of it. I stood there with a crate in my arms and I did not move. That is why I gave you the clip. He said \"excuse me\" when he came in. Like a customer.",
+          "src": "/audio/neonoire/s27a/292-okada-i-was-in-the-back-moving.mp3",
+          "offset": 2.5,
+          "duration": 16.51,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-vera-she-would-have-stayed-very-still",
+          "character": "VERA",
+          "text": "She would have stayed very still. She has never been still in her life.",
+          "src": "/audio/neonoire/s27a/292-vera-she-would-have-stayed-very-still.mp3",
+          "offset": 19.98,
+          "duration": 4.99,
+          "voice": "4Rn2L1CRjYh93G56jNXI",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-okada-people-learn",
+          "character": "OKADA",
+          "text": "People learn.",
+          "src": "/audio/neonoire/s27a/292-okada-people-learn.mp3",
+          "offset": 25.74,
+          "duration": 1.23,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s27a-okada-he-left-it-the-week-before",
+          "character": "OKADA",
+          "text": "He left it the week before. He said he was meeting someone. He said it would be a good week. I couldn't call them. I couldn't say what I heard.",
+          "src": "/audio/neonoire/s27a/292-okada-he-left-it-the-week-before.mp3",
+          "offset": 29.44,
+          "duration": 10.76,
+          "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-293",
