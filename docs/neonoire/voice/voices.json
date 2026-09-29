@@ -100,14 +100,15 @@
       ]
     },
     "JOURNALIST": {
-      "voiceId": null,
-      "status": "auditioned",
-      "notes": "Kondo, Toto Shimbun (sc 2).",
+      "voiceId": "EEYUewEB5w5R0IPnszO5",
+      "status": "chosen",
+      "notes": "Kondo, Toto Shimbun (sc 2). Audition take 3 of 3, saved to the library 29 September 2026.",
       "designedPreviews": [
         "2RhPCHS7sC9j9YOgKuyw",
         "ayITctDINEYl9o1ROnKW",
         "EEYUewEB5w5R0IPnszO5"
-      ]
+      ],
+      "name": "Journalist (Kondo) - NEONOIRE"
     },
     "OLD MAN": {
       "voiceId": null,
