@@ -234,13 +234,14 @@
         "designModel": "eleven_ttv_v3",
         "seedFixed": false
       },
-      "voiceId": null,
-      "status": "auditioned: awaiting pick and a free slot",
+      "voiceId": "5GswypvgtPl0hKqvIA4k",
+      "status": "chosen",
       "designedPreviews": [
         "5GswypvgtPl0hKqvIA4k",
         "C5LKECQBsZHzSCtGNvIE",
         "Hcu1hRMluusHRu4bfqPR"
-      ]
+      ],
+      "name": "Barber - NEONOIRE"
     },
     "SAKAI (TAPE)": {
       "voiceId": null,

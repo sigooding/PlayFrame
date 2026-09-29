@@ -8536,7 +8536,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 8,
+      "duration": 27,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -8544,7 +8544,79 @@
       "characters": [
         "neonoire-jack"
       ],
-      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nScenes 8–12 — Kanda revisited (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. KANDA REVISITED, four days after the cold open. THE BAR BY DAY follows the location sheet sheets/kanda-bar.jpg and s81/100-the-bar-in-daylight.jpg (scene 2's bar in flat grey daylight: chairs up, the CRT dark, a new black rubber mat where the journalist fell); OKADA follows sheets/okada.jpg (gaunt, sixties, close-cropped white hair, white shirt, navy apron). THE STREET OUTSIDE is a Kanda backstreet by rainy day, after s1/01-backstreet.jpg. JACK'S OFFICE follows s77/85-the-desk-lamp.jpg (frosted door lettered JACK, green banker's lamp, rotary phone, filing cabinets, a muted CRT playing a black-and-white samurai film, the slept-on sofa, blinds over the elevated railway). THE BACKSTREET AT NIGHT follows s1/06-barbershop-doorway.jpg (the barber pole, the vending machine, sodium and green). VERA wears her ORIGINAL LOOK (sheets/vera.jpg): charcoal wool coat, cream high-neck knit, navy trousers, brown boots, black shoulder bag, with the PALE BLUE UMBRELLA of s4/34-the-pale-blue-umbrella.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt, the steel lighter, a cheap clear umbrella in the street). The RED BIRD CLIP follows s1/03-mara-walks.jpg. The family photograph follows s4/35-the-photograph.jpg: Daniel Voss, not Jack, holds the girls' hands. Cold steady rain, nothing explained. AI-generated draft studies, not approved coverage.\n\nCoverage, shot 247. The street follows s1/06-barbershop-doorway.jpg so there is one pole, not shot 170's two. Jack follows sheets/jack.jpg. The barber has no card.\n\nSCRIPT — the draft's own words for this shot:\n\"A shutter RATTLES up above him. A BARBER (80s), in pajamas, looks down from the upstairs window.\"\n\n35mm from the cold open's own position.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 25 of 31 — ten keyframes at a time, in screenplay order. Shot 247 of 307."
+      "notes": "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending.\n\nScenes 8–12 — Kanda revisited (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. KANDA REVISITED, four days after the cold open. THE BAR BY DAY follows the location sheet sheets/kanda-bar.jpg and s81/100-the-bar-in-daylight.jpg (scene 2's bar in flat grey daylight: chairs up, the CRT dark, a new black rubber mat where the journalist fell); OKADA follows sheets/okada.jpg (gaunt, sixties, close-cropped white hair, white shirt, navy apron). THE STREET OUTSIDE is a Kanda backstreet by rainy day, after s1/01-backstreet.jpg. JACK'S OFFICE follows s77/85-the-desk-lamp.jpg (frosted door lettered JACK, green banker's lamp, rotary phone, filing cabinets, a muted CRT playing a black-and-white samurai film, the slept-on sofa, blinds over the elevated railway). THE BACKSTREET AT NIGHT follows s1/06-barbershop-doorway.jpg (the barber pole, the vending machine, sodium and green). VERA wears her ORIGINAL LOOK (sheets/vera.jpg): charcoal wool coat, cream high-neck knit, navy trousers, brown boots, black shoulder bag, with the PALE BLUE UMBRELLA of s4/34-the-pale-blue-umbrella.jpg. JACK follows the recast sheets/jack.jpg (white American, 48, charcoal overcoat, off-white shirt, the steel lighter, a cheap clear umbrella in the street). The RED BIRD CLIP follows s1/03-mara-walks.jpg. The family photograph follows s4/35-the-photograph.jpg: Daniel Voss, not Jack, holds the girls' hands. Cold steady rain, nothing explained. AI-generated draft studies, not approved coverage.\n\nCoverage, shot 247. The street follows s1/06-barbershop-doorway.jpg so there is one pole, not shot 170's two. Jack follows sheets/jack.jpg. The barber has no card.\n\nSCRIPT — the draft's own words for this shot:\n\"A shutter RATTLES up above him. A BARBER (80s), in pajamas, looks down from the upstairs window.\"\n\n35mm from the cold open's own position.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nPass 25 of 31 — ten keyframes at a time, in screenplay order. Shot 247 of 307.",
+      "audio": [
+        {
+          "id": "s12-barber-grumbling-police-again",
+          "character": "BARBER",
+          "text": "Police again?",
+          "src": "/audio/neonoire/s12/247-barber-grumbling-police-again.mp3",
+          "offset": 0.5,
+          "duration": 2.43,
+          "voice": "5GswypvgtPl0hKqvIA4k",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s12-jack-not-for-a-long-time",
+          "character": "JACK",
+          "text": "Not for a long time.",
+          "src": "/audio/neonoire/s12/247-jack-not-for-a-long-time.mp3",
+          "offset": 3.5,
+          "duration": 2.04,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s12-barber-i-told-them-i-was-asleep",
+          "character": "BARBER",
+          "text": "I told them. I was asleep. I heard the shot. Then a car.",
+          "src": "/audio/neonoire/s12/247-barber-i-told-them-i-was-asleep.mp3",
+          "offset": 6.1,
+          "duration": 5.41,
+          "voice": "5GswypvgtPl0hKqvIA4k",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s12-jack-one-car",
+          "character": "JACK",
+          "text": "One car?",
+          "src": "/audio/neonoire/s12/247-jack-one-car.mp3",
+          "offset": 12,
+          "duration": 0.99,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s12-barber-one-car-twice-pause-it-left",
+          "character": "BARBER",
+          "text": "One car. Twice. It left. Then it came back.",
+          "src": "/audio/neonoire/s12/247-barber-one-car-twice-pause-it-left.mp3",
+          "offset": 13.5,
+          "duration": 6.27,
+          "voice": "5GswypvgtPl0hKqvIA4k",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s12-jack-quietly-why-come-back",
+          "character": "JACK",
+          "text": "Why come back?",
+          "src": "/audio/neonoire/s12/247-jack-quietly-why-come-back.mp3",
+          "offset": 20.6,
+          "duration": 1.57,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s12-jack-quietly-because-they-didn-t-find",
+          "character": "JACK",
+          "text": "Because they didn't find it.",
+          "src": "/audio/neonoire/s12/247-jack-quietly-because-they-didn-t-find.mp3",
+          "offset": 24,
+          "duration": 1.72,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "neonoire-shot-248",

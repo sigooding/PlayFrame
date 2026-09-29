@@ -2268,6 +2268,129 @@
         "id": "rWSiWd3NGCcggfaGy47m"
       },
       "status": "take"
+    },
+    {
+      "id": "s12-barber-grumbling-police-again",
+      "frameId": "neonoire-shot-247",
+      "character": "BARBER",
+      "text": "Police again?",
+      "prompt": "[grumbling] Police again?",
+      "file": "/audio/neonoire/s12/247-barber-grumbling-police-again.mp3",
+      "offset": 0.5,
+      "duration": 2.43,
+      "voice": "5GswypvgtPl0hKqvIA4k",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "CSRXwML0kVXInWE4P24Y",
+        "id": "7zL0nGxK5v4IkJXLki55"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s12-jack-not-for-a-long-time",
+      "frameId": "neonoire-shot-247",
+      "character": "JACK",
+      "text": "Not for a long time.",
+      "file": "/audio/neonoire/s12/247-jack-not-for-a-long-time.mp3",
+      "offset": 3.5,
+      "duration": 2.04,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "az5sRLVdpSJ6e7KE8nTd",
+        "id": "u8WJdl78cG3XfGzb1DIr"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s12-barber-i-told-them-i-was-asleep",
+      "frameId": "neonoire-shot-247",
+      "character": "BARBER",
+      "text": "I told them. I was asleep. I heard the shot. Then a car.",
+      "file": "/audio/neonoire/s12/247-barber-i-told-them-i-was-asleep.mp3",
+      "offset": 6.1,
+      "duration": 5.41,
+      "voice": "5GswypvgtPl0hKqvIA4k",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "9rKZpPRObv9q5v9uSIcF",
+        "id": "ihLi2qkBzmS3eRig9fEd"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s12-jack-one-car",
+      "frameId": "neonoire-shot-247",
+      "character": "JACK",
+      "text": "One car?",
+      "file": "/audio/neonoire/s12/247-jack-one-car.mp3",
+      "offset": 12,
+      "duration": 0.99,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "ilyBv9ybVsB7vi8aowqZ",
+        "id": "AhzpYRpz8DCsifkalvAZ"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s12-barber-one-car-twice-pause-it-left",
+      "frameId": "neonoire-shot-247",
+      "character": "BARBER",
+      "text": "One car. Twice. It left. Then it came back.",
+      "prompt": "One car. Twice. [pause] It left. Then it came back.",
+      "file": "/audio/neonoire/s12/247-barber-one-car-twice-pause-it-left.mp3",
+      "offset": 13.5,
+      "duration": 6.27,
+      "voice": "5GswypvgtPl0hKqvIA4k",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "0rjZrBKHjjm7Ezbi4iml",
+        "id": "S6tSQdekfWJsqHt2LywY"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s12-jack-quietly-why-come-back",
+      "frameId": "neonoire-shot-247",
+      "character": "JACK",
+      "text": "Why come back?",
+      "prompt": "[quietly] Why come back?",
+      "file": "/audio/neonoire/s12/247-jack-quietly-why-come-back.mp3",
+      "offset": 20.6,
+      "duration": 1.57,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "YtovuopHAdtz6MJMTSA2",
+        "id": "EIVrgzyA6vJEYFhmgufh"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s12-jack-quietly-because-they-didn-t-find",
+      "frameId": "neonoire-shot-247",
+      "character": "JACK",
+      "text": "Because they didn't find it.",
+      "prompt": "[quietly] Because they didn't find it.",
+      "file": "/audio/neonoire/s12/247-jack-quietly-because-they-didn-t-find.mp3",
+      "offset": 24,
+      "duration": 1.72,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "clnOd1X24tHxxhxgPUg2",
+        "session": "DMJk7XZTmDnTGVM2Pmb8",
+        "id": "QGfHcKDdPaj6lfADchNS"
+      },
+      "status": "take"
     }
   ]
 }
