@@ -27,6 +27,8 @@ A frame can carry `audio`: a list of `{ id, character, text, src, offset, durati
 
 `node scripts/neonoire/voice-ingest.mjs --replace 1 --id s74-vera-why-didnt-you --frame … --character VERA --text "[crying] …" --file <url> --gen flow/session/generation`. The new take takes over the same file path and id (so nothing that points at it breaks); the old take is copied to `docs/neonoire/voice/archive/` and listed in the line's `history`. Every line records its ElevenLabs `generation` (flow / session / id) so any take can be traced back.
 
+Note: the director's tag picks from the direction test (Jack `[awkwardly]` for the date invitation, Vera `[teasing]` for the breakfast banter) apply to those moments only. Choose the tag for each line from what the moment needs.
+
 ## Editing takes in Adobe (or anywhere)
 
 Edit a copy of the file from `public/audio/neonoire/…` (or the frame's `lines/` in the lipsync export), export as mp3, wav, m4a or ogg, then bring it back with the same command as a re-record: `node scripts/neonoire/voice-ingest.mjs --replace 1 --id <line id> --frame <frame id> --character <NAME> --text "<line>" --file <your edited file> --status edited`, then `npm run build:neonoire`. The line keeps its id and path (only the extension changes if the format does), the take it replaces is archived, and the manifest marks it `edited`. Never overwrite a file in `public/audio/` by hand without doing this, or the manifest, the frame durations and the archive fall out of step.

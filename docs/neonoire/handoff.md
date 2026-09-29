@@ -40,7 +40,7 @@ The three inserted Act Two scenes are boarded as **shots 287–296**. A follow-u
 
 ## Voices — status and blocker — 29 September 2026
 
-**On hold at the director's request (credits).** Recorded: scenes 62 and 74 (Jack and Vera, v4). Chosen and saved to the ElevenLabs library: Jack (Narrator Lead), Vera, the journalist, **Mara**. Direction: Jack `[awkwardly]` with hesitant phrasing, Vera `[teasing]`, no whispers. **Picked but NOT saved:** Ishida, Kaneko, Harada, Daniel, Sakai, masked man, because the workspace is at its custom-voice limit (10/10); see `blocker` in `voice/voices.json`. Kurose and Okada are unpicked. Scene 1 (13 lines, ~400 credits) is planned in `voice/scenes/scenes-01-02.md` and not recorded. Nothing else is pending on the voice side until the limit is cleared and the director says go.
+**On hold at the director's request (credits).** Recorded: scenes 62 and 74 (Jack and Vera, v4). Chosen and saved to the ElevenLabs library: Jack (Narrator Lead), Vera, the journalist, **Mara**. Direction: no whispers, and a short tag chosen per moment. The `[awkwardly]` (Jack) and `[teasing]` (Vera) picks were for the date-invitation and breakfast lines only, not a house style. **Picked but NOT saved:** Ishida, Kaneko, Harada, Daniel, Sakai, masked man, because the workspace is at its custom-voice limit (10/10); see `blocker` in `voice/voices.json`. Kurose and Okada are unpicked. Scene 1 (13 lines, ~400 credits) is planned in `voice/scenes/scenes-01-02.md` and not recorded. Nothing else is pending on the voice side until the limit is cleared and the director says go.
 
 ## Image review — the cold open — 29 September 2026
 

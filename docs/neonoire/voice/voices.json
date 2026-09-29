@@ -7,14 +7,14 @@
       "name": "Narrator Lead",
       "status": "chosen",
       "notes": "Male, 40s-50s, world-weary raconteur. Jack's Japanese-language lines are voiced in English for now.",
-      "direction": "Director's pick from the 29 Sept direction test: take 4, '[awkwardly]' with hesitant phrasing and mid-line dashes. No whispers. Plain lines sound like a narrator; give each line a short direction tag."
+      "direction": "Scene-specific, not a house style: for the date invitation (sc 62, 'Tomorrow night. Will you have dinner with me?') the director picked take 4, '[awkwardly]' with a hesitant mid-line dash. General rules for all scenes: no whispers; plain, untagged lines sound like a narrator, so give each line a short direction tag that fits that moment."
     },
     "VERA": {
       "voiceId": "4Rn2L1CRjYh93G56jNXI",
       "name": "Vera",
       "status": "chosen",
       "notes": "Female, early-to-mid 30s, plain American, rust-belt. Not the 'Vera - The Last Stand', 'vera - alt' or 'vera no good' voices.",
-      "direction": "Director's pick from the 29 Sept direction test: take 1, '[teasing]' for light lines. No whispers; upset lines use [crying]/[voice breaking]/[trembling voice] at speaking volume."
+      "direction": "Scene-specific, not a house style: for the light banter of the breakfast scene (25A, 'Has someone been reporting on me?') the director picked take 1, '[teasing]'. General rules for all scenes: no whispers; upset lines use [crying]/[voice breaking]/[trembling voice] at speaking volume; pick the tag per moment."
     },
     "MARA": {
       "voiceId": "2NE3noNVoL0UyxXHLs7w",
