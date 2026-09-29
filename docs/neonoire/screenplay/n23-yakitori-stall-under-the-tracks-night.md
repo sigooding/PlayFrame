@@ -68,6 +68,16 @@ And I've carried it too. Every day.
 (beat)
 Whatever Sakai hid, Jack, if you find it, bring it to me. Not to the department. To me. I'll know what to do with it this time.
 
+JACK
+(in Japanese)
+Sakai had a wife.
+
+ISHIDA
+(in Japanese)
+Separated. A fishing town on the Boso coast. The police have spoken to her. She gave us nothing.
+
+He takes a napkin, writes an address on it in careful longhand, and slides it across the table. Nothing in his face at all.
+
 A long pause. A train roars overhead. The lanterns sway.
 
 Jack nods slowly.

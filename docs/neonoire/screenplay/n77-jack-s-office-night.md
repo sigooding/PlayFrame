@@ -18,7 +18,7 @@ He hears her voice. Over and over. Not the words from tonight. The words from th
 VERA (V.O.)
 You're the first person I've trusted since she disappeared.
 
-He opens the drawer. Takes out a clean envelope. Puts the notebook inside.
+He opens the drawer. Takes out a clean envelope. Takes Sakai's letter from his coat, smooths it once more along its crease, and folds it inside the notebook's cover. Puts the notebook in the envelope.
 
 He picks up a pen to write something on the envelope. He holds it over the paper for a long time.
 

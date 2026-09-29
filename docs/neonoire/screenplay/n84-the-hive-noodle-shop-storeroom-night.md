@@ -54,6 +54,17 @@ She told herself.
 She was protecting you. So was I. We were both wrong.
 
 VERA
+Ishida called me before it was on any news. He knew exactly where she was.
+
+JACK
+He arranged the car. It was his driver.
+
+VERA
+I know.
+(beat)
+I worked it out on the way here.
+
+VERA
 I read his notebook.
 
 JACK

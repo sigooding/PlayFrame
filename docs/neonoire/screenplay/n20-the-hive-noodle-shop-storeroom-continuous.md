@@ -57,6 +57,8 @@ MARA
 He wrote to Vera. Mr. Sakai. She threw it in the bin without even answering. I took it out.
 (beat)
 I called him. He said he had Dad's papers. He said to come to the bar at one o'clock. There'd be a man from a newspaper there too, so it couldn't be buried again.
+(beat)
+I sent them both a photo so they'd know me. He wrote back one line. "You have his face."
 
 JACK
 Vera doesn't know you went.

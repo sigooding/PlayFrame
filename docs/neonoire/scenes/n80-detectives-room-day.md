@@ -15,7 +15,7 @@ All six shots (96–101) are **16:9, 1920×1080, full-bleed**. The room is scene
 
 96. WIDE — 24mm, static, eye level — the length of the room.
 Down the central aisle of the full detectives' room by day: Jack walks toward camera between the desks as detectives look up and then look away. Ishida sits at the nearest desk in the right foreground, radio beside him, writing and not looking up. The clock waits on the back wall.
-SCRIPT: "Jack walks the length of the room. Detectives look up and then look away. He hasn't shaved. There is still dried blood in the creases of his knuckles."
+SCRIPT: "Jack walks the length of the room. The young detectives glance up and then look away. He hasn't shaved. There is still dried blood in the creases of his knuckles."
 CAST: Jack, Detective Ishida
 LIGHT: Natural daylight
 TIME: 12
@@ -35,7 +35,7 @@ NOTE: Holds the first exchange (nine o'clock, a grey car, your driver; only you 
 
 98. INSERT — 85mm, static, eye level — his hands close.
 At Jack's side, his right hand closing into a fist against the charcoal coat, dried blood in the creases of the knuckles, and the quiet room out of focus behind.
-SCRIPT: "Jack's hands close at his sides. The room has gone quiet around them."
+SCRIPT: "Jack's hands close at his sides. The far end of the room has gone quiet."
 CAST: Jack
 LIGHT: Natural daylight
 TIME: 5
