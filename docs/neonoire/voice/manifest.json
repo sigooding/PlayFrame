@@ -346,6 +346,113 @@
         "session": "pvjx59gHVS0WVMAHIOk5",
         "id": "SKe0yhDUgnvpY4hooi6u"
       }
+    },
+    {
+      "id": "s1-mara-tired-not-tonight",
+      "frameId": "neonoire-shot-05",
+      "character": "MARA",
+      "text": "Not tonight.",
+      "prompt": "[tired] Not tonight.",
+      "file": "/audio/neonoire/s1/05-mara-tired-not-tonight.mp3",
+      "offset": 2,
+      "duration": 1.65,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "wb0eNFt8pxTELEAiDmFn",
+        "session": "J6W2WFGuGiZsMnHEBO7h",
+        "id": "xWvO3tROtC31Ny5dGp2l"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-mara-trembling-voice-mr-sakai",
+      "frameId": "neonoire-shot-14",
+      "character": "MARA",
+      "text": "Mr. Sakai?",
+      "prompt": "[trembling voice] Mr. Sakai?",
+      "file": "/audio/neonoire/s1/14-mara-trembling-voice-mr-sakai.mp3",
+      "offset": 1.5,
+      "duration": 2.04,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "wb0eNFt8pxTELEAiDmFn",
+        "session": "EeMKzqaP0GXzTwNc1BDA",
+        "id": "4KCsDb2ekmL2DJhRfKsR"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-mara-breathless-it-s-okay-i-ll",
+      "frameId": "neonoire-shot-14",
+      "character": "MARA",
+      "text": "It's okay — I'll get someone. Ambulance. I'll call. Ambulance.",
+      "prompt": "[breathless] It's okay — I'll get someone. Ambulance. I'll call. Ambulance.",
+      "file": "/audio/neonoire/s1/14-mara-breathless-it-s-okay-i-ll.mp3",
+      "offset": 4,
+      "duration": 5.64,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "wb0eNFt8pxTELEAiDmFn",
+        "session": "as0Lq5txHCyXpIbtnLn6",
+        "id": "ToM8XDljf2X93M7ztpQz"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s1-mara-bewildered-have-what-i-don-t",
+      "frameId": "neonoire-shot-15",
+      "character": "MARA",
+      "text": "Have what? I don't —",
+      "prompt": "[bewildered] Have what? I don't —",
+      "file": "/audio/neonoire/s1/15-mara-bewildered-have-what-i-don-t.mp3",
+      "offset": 5.5,
+      "duration": 2.43,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "wb0eNFt8pxTELEAiDmFn",
+        "session": "alPiv0wmYRbNVf42AlyX",
+        "id": "v1vXXQnTpbNpjIUfPaGC"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s2-journalist-startled-miss-voss",
+      "frameId": "neonoire-shot-21",
+      "character": "JOURNALIST",
+      "text": "Miss Voss?",
+      "prompt": "[startled] Miss Voss?",
+      "file": "/audio/neonoire/s2/21-journalist-startled-miss-voss.mp3",
+      "offset": 3,
+      "duration": 1.15,
+      "voice": "EEYUewEB5w5R0IPnszO5",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "wb0eNFt8pxTELEAiDmFn",
+        "session": "vCF3zn7X3tlSZ0enhcOu",
+        "id": "QK84YymliIpcs035QpvX"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s2-journalist-where-is-he",
+      "frameId": "neonoire-shot-25",
+      "character": "JOURNALIST",
+      "text": "Where is he?",
+      "file": "/audio/neonoire/s2/25-journalist-where-is-he.mp3",
+      "offset": 6,
+      "duration": 0.99,
+      "voice": "EEYUewEB5w5R0IPnszO5",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "wb0eNFt8pxTELEAiDmFn",
+        "session": "T9aDw0pnvfmQPcKvYbqe",
+        "id": "zkhEzazqE2hfseZ9ZBr9"
+      },
+      "status": "take"
     }
   ]
 }
