@@ -8,7 +8,9 @@ Grammar: 24mm over the forest of the roof, 35mm for the jump. Rain and wind.
 
 EXT. THE HIVE, ROOFTOP - CONTINUOUS #90#
 
-Rain. Wind. Water tanks, television aerials, laundry poles, pigeon cages. The whole forest of the Hive's rear wing roof, level with the tracks, and beyond it, Tokyo in every direction, lit and indifferent.
+The flat roof of the Hive's low rear wing, four storeys up, the dark bulk of the tower rising behind it.
+
+Rain. Wind. Water tanks, television aerials, laundry poles, pigeon cages. The whole forest of the Hive's roof, and beyond it, Tokyo in every direction, lit and indifferent.
 
 At the edge, very close, the elevated railway: a narrow maintenance walkway running beside the tracks, separated from the roof by a gap of a metre and a low fence.
 

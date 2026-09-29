@@ -8,7 +8,7 @@ Grammar: 35mm down the passage; photograph and reality in one frame.
 
 INT. THE HIVE, PASSAGES - DAY #55#
 
-Vera walks through the narrow corridors with the photograph in her hand, looking at everything as though she's trying to remember it. Bare bulbs. Dripping water. The radio repairman's dozen murmuring stations. Daylight in thin shafts through the steam.
+Vera walks through the narrow corridors with the photograph in her hand, looking at everything as though she's trying to remember it. Bare bulbs. Dripping water. The radio repairman's dozen murmuring stations. Daylight falls in thin cold shafts through the steam.
 
 A train passes overhead. The building trembles.
 

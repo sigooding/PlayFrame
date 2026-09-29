@@ -15,7 +15,7 @@ Both shots (132–133) are **16:9, 1920×1080, full-bleed**. The roof master is 
 
 132. WIDE — 24mm, static, high angle — the roof.
 The Hive's rooftop in the rain: rusty water tanks, aerials, flapping laundry and pigeon cages, with green-lit Tokyo in every direction. The viaduct and its walkway run close at right. Jack and Vera run between the tanks toward the gap.
-SCRIPT: "Rain. Wind. Water tanks, television aerials, laundry poles, pigeon cages. The whole forest of the Hive's rear wing roof, level with the tracks, and beyond it, Tokyo in every direction, lit and indifferent."
+SCRIPT: "Rain. Wind. Water tanks, television aerials, laundry poles, pigeon cages. The whole forest of the Hive's roof, and beyond it, Tokyo in every direction, lit and indifferent."
 CAST: Jack, Vera Voss
 LIGHT: Practical night
 TIME: 8

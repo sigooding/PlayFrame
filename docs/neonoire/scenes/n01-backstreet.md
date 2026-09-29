@@ -81,13 +81,13 @@ IMAGE: 07-old-man.jpg
 NOTE: He must pass within a metre of her; the flicker of recognition is the letter rewrite's first beat — Sakai knows her face and leads the killers away from her, so the doorway stays in shadow and she gets no reaction shot. Retake 28 September 2026 (the letter rewrite): same camera, same street masters, same wardrobe; Mara now reads in the doorway as in the draft. The barber pole reads slightly lit in the retake; the master keeps it unlit — dress it dark on set.
 
 8. MEDIUM — 50mm, static, eye level — the sedan arrives.
-Headlights sweep the wet street. A black sedan rolls in and stops without hurry; two men in black clothes and plain masks step out. They don't run. The car and the men fill the frame at car height, rain lit across the beams.
-SCRIPT: "Headlights sweep the wet street. A black sedan rolls in and stops without hurry."
+At the far end of the lane a black sedan pulls across the alley mouth and stops, blocking it, high beams shining straight down the alley and lighting the rain in long white columns; two men in black clothes and plain masks get out and walk into the lane as silhouettes against the glare. They don't run.
+SCRIPT: "At the far end of the alley, headlights. A black sedan pulls across the mouth of the lane and stops, blocking it."
 CAST: The Masked Men
 LIGHT: Practical night
 TIME: 9
 IMAGE: 08-sedan-arrives.jpg
-NOTE: No urgency anywhere in this shot. If the sedan looks like a chase car the scene is wrong; it is a car that has done this before.
+NOTE: No urgency anywhere in this shot. If the sedan looks like a chase car the scene is wrong; it is a car that has done this before. RETAKE PENDING (29 September 2026): the lane is too narrow for a car, so the sedan never enters it — it stops across the alley mouth with its high beams down the lane, and the men walk in and out on foot. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car.
 
 9. MEDIUM CLOSE-UP — 85mm, static, eye level — the old man stops.
 He has stopped in the middle of the wet street, seen from behind: he doesn't turn around. He seems to know there is no point.
@@ -105,7 +105,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 9
 IMAGE: 10-the-shot.jpg
-NOTE: No muzzle flash in frame, no blood spray, no sound other than the suppressed shot and the rain. The camera keeps operating as though he has merely walked out of frame.
+NOTE: No muzzle flash in frame, no blood spray, no sound other than the suppressed shot and the rain. The camera keeps operating as though he has merely walked out of frame. RETAKE PENDING (29 September 2026): the lane is too narrow for a car, so the sedan never enters it — it stops across the alley mouth with its high beams down the lane, and the men walk in and out on foot. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car.
 
 11. CLOSE-UP — 85mm, static, eye level — Mara in the doorway.
 Both hands over her mouth, pressed back into the shadow, staring out past camera. Her breath held.
@@ -123,16 +123,16 @@ CAST: The Masked Men
 LIGHT: Practical night
 TIME: 6
 IMAGE: 12-masked-man-radio.jpg
-NOTE: He is a man doing a job on a shift. Mundane, never menacing in performance; the voice on the radio does the work.
+NOTE: He is a man doing a job on a shift. Mundane, never menacing in performance; the voice on the radio does the work. RETAKE PENDING (29 September 2026): the lane is too narrow for a car, so the sedan never enters it — it stops across the alley mouth with its high beams down the lane, and the men walk in and out on foot. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car.
 
 13. WIDE — 35mm, static, eye level — the sedan pulls away.
 Same camera as the arrival. The alley is one car wide, so the sedan cannot turn around. It stopped nose-to-camera; it backs straight out the way it came, rear to camera, white reverse lamps lit with the red taillights, a short smear of both on the wet asphalt. Doors closed. The doorway stays empty. Mara doesn't move.
-SCRIPT: "It pulls away, unhurried. Taillights smear red across the road and are gone."
+SCRIPT: "It reverses out of the alley mouth, unhurried. The headlights swing away, taillights smear red across the wet road beyond, and the alley falls dark."
 CAST: —
 LIGHT: Practical night
 TIME: 10
 IMAGE: 13-taillights-gone.jpg
-NOTE: Retake 27 September 2026. The alley will not take a turn: shot 8 stops the sedan nose-to-camera with the doors against the walls, so the rear already points down the lane. It backs out. It does not turn. White reverse lamps are the proof, with the red taillights. The plate is not legible and is not claimed. The vending face drifted slightly from the master; the pole, the door and the side hold. No people. A pedestrian crossing chimes somewhere off camera for an empty intersection, over and over. The street is emptier after they leave than it was before they came.
+NOTE: Retake 27 September 2026. The alley will not take a turn: shot 8 stops the sedan nose-to-camera with the doors against the walls, so the rear already points down the lane. It backs out. It does not turn. White reverse lamps are the proof, with the red taillights. The plate is not legible and is not claimed. The vending face drifted slightly from the master; the pole, the door and the side hold. No people. A pedestrian crossing chimes somewhere off camera for an empty intersection, over and over. The street is emptier after they leave than it was before they came. RETAKE PENDING (29 September 2026): the lane is too narrow for a car, so the sedan never enters it — it stops across the alley mouth with its high beams down the lane, and the men walk in and out on foot. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car.
 
 14. MEDIUM — 50mm, static, eye level — she kneels.
 She steps out into the rain and kneels beside him: "It's okay — I'll get someone. Ambulance. I'll call. Ambulance." Her phone is off, and her hands shake too hard to turn it on.
@@ -168,7 +168,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 8
 IMAGE: 17-she-runs.jpg
-NOTE: The purse in the water is the scene's last piece of evidence and the detectives' room's first. Keep the puddle and the purse both in frame at the end of the shot.
+NOTE: The purse in the water is the scene's last piece of evidence and the detectives' room's first. Keep the puddle and the purse both in frame at the end of the shot. RETAKE PENDING (29 September 2026): the lane is too narrow for a car, so the sedan never enters it — it stops across the alley mouth with its high beams down the lane, and the men walk in and out on foot. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car.
 
 18. MEDIUM — 50mm, static, low angle — the search, and the flashlight.
 The sedan pulls up beside the body. One masked man searches the old man's coat, methodically: nothing. His flashlight drifts across the street — and stops on the purse lying in the water.
@@ -177,7 +177,7 @@ CAST: The Masked Men, The Old Man
 LIGHT: Practical night
 TIME: 10
 IMAGE: 18-the-flashlight.jpg
-NOTE: The search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music.
+NOTE: The search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music. RETAKE PENDING (29 September 2026): the lane is too narrow for a car, so the sedan never enters it — it stops across the alley mouth with its high beams down the lane, and the men walk in and out on foot. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car.
 
 ---
 

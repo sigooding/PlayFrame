@@ -86,11 +86,11 @@ The director's follow-up: the architecture reads roughly right now, but these fr
 
 Review sheet: `public/images/neonoire/reviews/hive-retakes-pass-2.jpg` — the complete pass, eighteen frames in shot groups (the thirteen new-look frames, then the five judged optionals).
 
-**Script lines kept in step (small director's edits, carried in the draft `Neonoire (3).fountain` and its regenerated pages):** scene 15 gains the tower stepping down at the back to a low wing pressed against the railway, and the Hive sitting in its own haze even in daylight; scene 90 is now explicitly the **rear wing's** roof, level with the tracks; scenes 16 and 55 each gain one line of daylight coming in thin shafts through the steam.
+**Script lines kept in step (small director's edits, carried in the draft `Neonoire (3).fountain` and its regenerated pages):** scene 15 gains the tower stepping down at the back to a low rear wing pressed against the concrete railway viaduct, its roof level with the tracks, old neon signs hanging dead on its face, and the Hive sitting in its own haze of steam and kitchen smoke even in daylight; scene 90 opens on the flat roof of the low rear wing, four storeys up, the tower behind; scenes 16 and 55 each gain one line of daylight coming in thin cold shafts through the steam. The same commit's Kanda backstreet change — scene 1, the sedan blocks the alley mouth — is documented in `kanda-alley-layout.md`.
 
-## The retake queue — the next pass plan (fourteen frames, one call each)
+## The retake queue — the next pass plan (eleven frames, one call each)
 
-Every frame below is a Hive shot and nothing else; each carries the new look. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`. Staging locks noted below travel with the retake. In code: `hiveLookRetakes` (14 look only; the set failures moved to `hiveRetakenLook`), run order `hiveNextPassPlan` (14).
+Every frame below is a Hive shot and nothing else; each carries the new look. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`. Staging locks noted below travel with the retake. In code: `hiveLookRetakes` (11 look only; the set failures moved to `hiveRetakenLook`), run order `hiveNextPassPlan` (11).
 
 ### DAY (9)
 
