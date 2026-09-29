@@ -1,6 +1,6 @@
 # NEONOIRE — the Hive canon: one building, one look file (28 September 2026)
 
-**Scope:** no shots generated this pass beyond the six canon sheets; the retakes queue as the next generation pass (thirty-four frames, one call each). The deliverable is [`scripts/neonoire/hive-canon-look.mjs`](../../../scripts/neonoire/hive-canon-look.mjs): the canonical geometry, the six sheet prompts with their reference chain, the shared negative prompt, the NIGHT and DAY look sections, the standing rules, and the retake queue.
+**Scope:** no shots generated the canon pass beyond the six canon sheets; the retakes queued as the next generation pass (thirty-four frames, one call each) have since been broken into the director's tiers — the seven wrong-building exteriors were retaken on 29 September 2026 (below), twenty-seven frames remain queued. The deliverable is [`scripts/neonoire/hive-canon-look.mjs`](../../../scripts/neonoire/hive-canon-look.mjs): the canonical geometry, the six sheet prompts with their reference chain, the shared negative prompt, the NIGHT and DAY look sections, the standing rules, and the retake queue.
 
 **The problem.** The Hive was boarded across five sessions from five look files, and each described the building differently: s15/184 a squat 6–7-storey block on a plaza; s59/226 a tall narrow tower on a tight street; s92/135 a nine-storey slab by a viaduct pillar; s97 a five-storey block with the railway at height; s99/156 an ordinary apartment block. Inside, s55/221 drew the counter as a white-tiled corridor with the 金子 sign ON the counter, s68/235 gave the storeroom shelving and a teal doorway, and s85/119 drew the passage three abreast where the draft says single file. The draft itself contradicts itself: "eleven storeys", yet scene 90 jumps from the roof onto the railway walkway.
 
@@ -40,26 +40,40 @@ Generated in order, each finished sheet a reference for the next; installed 1920
 - **Labels garble in places** on the cutaway and the sheet captions, as ever. The load-bearing labels read clean (six stools, storeroom, viaduct level with rear roof, one-metre gap, FLOUR sacks, the 金子 board). Footer placeholders ([Name], [Project Title]) are cosmetic. These sheets are geometry/look references that never appear on screen.
 - **Review status:** the night and day exteriors and the cutaway were read at full size and match the canon. The review pipeline served scrambled attachments mid-session, so the counter, storeroom and passages sheets were installed on their generation prompts plus dimensions and palette statistics (counter/storeroom warm, R>G>B; passages the darkest and steel-blue; the day sheet the lowest saturation) — give them a full-size look before the retake pass runs.
 - **Storey counts** still read a storey tall or short between panels at this size; the count is locked by the cutaway's "FLOORS 1–11".
+- **Retake-pass review status (29 September 2026):** shot 186's retake was read at full size and matches the canon (eleven-storey concrete tower, balcony grid, viaduct with train, day murk, Jack alone with the sketchbook, unlettered hoarding banner). The other six tier-1 frames are held at their originals pending regeneration: the first attempts (edit of the old frame alone) held every staging lock but kept the old building's materials — wood and corrugated tin where the canon is stained concrete — so the pass switched to editing with the canon sheet passed alongside as the architecture reference, which 186 confirms works. The per-turn image cap (ten generations) stopped the remaining six mid-pass; they are queued first thing next session.
+- **The session's image viewer served scrambled or stale attachments** at various points (wrong frame per path, results offset by a slot). Full-size visual sign-off of the remaining retakes must be done with fresh per-file reads and cross-checked against the boards' staging lines; palette statistics (day frames shift from blue-dominant to grey-ochre R≥B, the night frame from warm to steel) are the fallback check.
+- **s15/184's banner stays unlettered.** The canon sheet's hoarding carries KUROSE DEVELOPMENT; the frame's standing note says the banner lettering is absent in this study, and the retake holds the frame's state.
 - The scene set `hiveCanonScenes` is corrected in this pass: it drops s14 (Mara's apartment), s47 (the inn's back yard) and s91 (the railway maintenance walkway) and gains s19, s20, s67, s69 and s71 — the counter night, the storeroom and the passages that are the Hive. s22 and s100 stay out: the draft itself calls scene 22 "a different place" (the brick arch counter), and scene 100 is Kaneko's new counter after the Hive is gone.
 
-## The retake queue — the next pass plan (thirty-four frames, one call each)
+## The retake pass (29 September 2026): the wrong-building tier
 
-Every frame below is a Hive shot and nothing else; each carries the new look, and the eight geometry failures carry both problems. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`; interiors against their set sheets. Staging locks noted below travel with the retake. In code: `hiveCanonRetakes` (8), `hiveLookRetakes` (26), run order `hiveNextPassPlan`.
+The director's breakdown runs three tiers: **wrong building and wrong look** (the Hive seen from outside), **wrong set and wrong look** (interior set failures), **wrong look only**. Tier 1 is retaken this pass — the seven exteriors below. Each is an edit of the original frame with the matching canon sheet (`hive-exterior-day`, `hive-exterior-night`, or `hive-section` for the demolition) passed alongside it as the architecture reference: staging, cast, wardrobe, vehicles and props held to the base frame, only the building and the light replaced.
 
-### DAY (21)
+| Shot | Frame | Look | Was | Status |
+| --- | --- | --- | --- | --- |
+| 186 | `s15/184-a-gap-in-someones-teeth.jpg` | day | squat 6–7-storey block on a plaza; blue-grey rainy daylight | **RETAKEN + INSTALLED** — eleven-storey concrete tower between the glass towers under the viaduct's curve, day murk, hoarding and staging carried, banner stays unlettered as in the study |
+| 228 | `s59/226-at-the-edge-of-a-high-place.jpg` | day | tall narrow tower on a tight street; bright wet street light | regen pending (see caveats) — original frame on disk |
+| 137 | `s92/135-below-the-viaduct.jpg` | night | nine-storey slab by a pillar; hundreds of bright windows | regen pending (see caveats) — original frame on disk |
+| 148 | `s97/146-tomorrows-tokyo.jpg` | day | five-storey block, railway at height behind; cold blue pre-dawn | regen pending (see caveats) — original frame on disk |
+| 150 | `s97/148-four-men.jpg` | day | wrong block behind the ceremony; cold blue-grey | regen pending (see caveats) — original frame on disk |
+| 151 | `s97/149-twenty-metres.jpg` | day | wrong facade behind the tent; dark blue pre-dawn | regen pending (see caveats) — original frame on disk |
+| 158 | `s99/156-cut-open.jpg` | day | ordinary five-storey apartment block; plain overcast | regen pending (see caveats) — original frame on disk |
+
+In code: `hiveRetakenExteriors` (7). The per-shot staging, quotes and locked notes in the boards carry through untouched; shot 186's board note records the retake.
+
+## The retake queue — the next pass plan (twenty-seven frames, one call each)
+
+Every frame below is a Hive shot and nothing else; each carries the new look, and the three interior set failures carry both problems. Day frames regenerate against `hive-exterior-day` and `hiveCanonDay`; night frames against `hive-exterior-night` and `hiveCanonNight`; interiors against their set sheets. Staging locks noted below travel with the retake. In code: `hiveCanonRetakes` (3 set failures), `hiveLookRetakes` (24 look only), run order `hiveNextPassPlan` (27).
+
+### DAY (15)
 
 | Shot | Frame | Problem |
 | --- | --- | --- |
-| 148 | `s97/146-tomorrows-tokyo.jpg` | five-storey block with the railway at height behind (geometry); blue pre-dawn light. Scene 97: tent, shovel and banner sharp, clean and cold against the murk |
 | 149 | `s97/147-the-same-morning-news.jpg` | shop window at the Hive's edge reads blue pre-dawn; the street is ordinary grey daylight. Props unchanged |
-| 150 | `s97/148-four-men.jpg` | ceremony reads cold blue-grey; day look is pale grey-ochre murk |
-| 151 | `s97/149-twenty-metres.jpg` | wide reads dark blue pre-dawn with the wrong facade behind the tent; carry the murk and the canon tower |
 | 152 | `s97/150-she-does-not-look-away.jpg` | close-up lit blue-grey; day look is flat, milky, dim |
 | 153 | `s97/151-collar-up.jpg` | blue-grey pre-dawn on the street; ordinary grey daylight outside the murk |
 | 154 | `s97/152-the-ribbon.jpg` | shovel against dark rain; scene 97 rule: sharp, clean and cold against the murk behind |
-| 158 | `s99/156-cut-open.jpg` | ordinary five-storey apartment block (geometry); plain overcast. Day murk; dead neon signs still hang from the cut-open floors in the dust |
 | 159 | `s99/157-the-sign.jpg` | crowd reads plain overcast; grey-ochre murk like a faded photograph, dead neon behind |
-| 186 | `s15/184-a-gap-in-someones-teeth.jpg` | squat block on a plaza (geometry); blue-grey daylight |
 | 187 | `s15/185-then-he-goes-in.jpg` | bright lit signage at the entrance; neon off but one faint sign. Entering is a threshold |
 | 188 | `s16/186-everybody-sees-him.jpg` | passages lit like a market; day passages are thin cold shafts with drifting steam and dust |
 | 189 | `s17/187-you-got-old.jpg` | lit fluorescent tube, green cast; the counter is one amber bulb, steam |
@@ -67,12 +81,11 @@ Every frame below is a Hive shot and nothing else; each carries the new look, an
 | 223 | `s55/221-they-match.jpg` | white-tiled corridor, sign on the counter (geometry); even modern light. Keep the canon counter, sign on the wall |
 | 225 | `s56/223-the-third-stool.jpg` | lit fluorescent; one amber bulb. **Keep the third-stool staging** — Vera third of six, two empty to her left, 金子 on the wall |
 | 227 | `s58/225-bring-her.jpg` | fluorescent and cool grade. **Keep the charcoal-coat third-stool motif** |
-| 228 | `s59/226-at-the-edge-of-a-high-place.jpg` | narrow tower on a tight street (geometry); bright wet street light |
 | 250 | `s16/248-exactly-the-drawing.jpg` | warm lamp rows and shop signs by day; thin cold shafts, one faint sign |
 | 253 | `s16/249-the-chair.jpg` | warm lamp rows at the dentist's chair; milky dim murk, thin cold shafts |
 | 266 | `s56/224-stool-three.jpg` | fluorescent, cool green grade. **Keep Vera third from the left** |
 
-### NIGHT (13)
+### NIGHT (12)
 
 | Shot | Frame | Problem |
 | --- | --- | --- |
@@ -82,7 +95,6 @@ Every frame below is a Hive shot and nothing else; each carries the new look, an
 | 126 | `s87/124-the-repairman.jpg` | saturated teal grade, blue smoke; desaturated near-monochrome. Keep the repairman exactly as `sheets/repairman.jpg` holds him |
 | 132 | `s90/130-the-roof.jpg` | saturated green city; steel-blue haze, distant light only small pools |
 | 133 | `s90/131-she-jumps.jpg` | saturated green city behind the jump |
-| 137 | `s92/135-below-the-viaduct.jpg` | nine-storey slab by a pillar (geometry); the Hive glows with hundreds of bright windows |
 | 138 | `s92/136-until-us.jpg` | hundreds of lit windows; mostly darkness, small amber pools |
 | 237 | `s68/235-rice-balls-for-the-car.jpg` | shelving and a teal doorway (geometry); cool green grade. Canon plywood box, one amber bulb |
 | 238 | `s69/236-vera-would-love-this.jpg` | green-lit passage around a lit CRT shopfront; amber pools against steel-blue haze |
@@ -100,6 +112,6 @@ s91 (the railway maintenance walkway is railway ground), s22 (the brick arch cou
 
 ## Also in this pass
 
-- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveCanonRetakes` (8 geometry), `hiveLookRetakes` (26 look), `hiveNextPassPlan` (34, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
+- `scripts/neonoire/hive-canon-look.mjs` exports `hiveCanon`, `hiveCanonNight`, `hiveCanonDay`, `hiveCanonRules`, `hiveCanonNegative`, the ordered `hiveCanonSheets` (six prompts, install paths, reference chains), `hiveRetakenExteriors` (7, the retaken wrong-building tier), `hiveCanonRetakes` (3 set failures), `hiveLookRetakes` (24 look), `hiveNextPassPlan` (27, run order), `hiveCanonScenes` and the `hiveCanonLook` note for the retake pass to embed.
 - The Hive look files (`hive-look`, `hive-first-look`, `hive-morning-look`, `escape-look`, `ending-look`'s demolition, `confrontation-look`'s storeroom) now defer to the canon for lighting and atmosphere and carry no other change; every verify-locked continuity substring survives.
-- `scripts/verify-neonoire.mjs` checks the six sheets are 1920×1080, that all thirty-four queued frames exist and queue once with a day or night tag, and that the canon text, rules and negative terms travel with the look file.
+- `scripts/verify-neonoire.mjs` checks the six sheets and the seven retaken exteriors are 1920×1080, that all twenty-seven queued frames exist and queue once with a day or night tag, that the done and pending tiers cover thirty-four frames exactly, and that the canon text, rules and negative terms travel with the look file.
