@@ -56,5 +56,7 @@ Jack doesn't let go of her hand.
 
 Kaneko sinks down beside them in the narrow passage. She doesn't cry. She takes off her apron and folds it and places it gently under Mara's head, as though that still matters.
 
+Beside them, where it fell, Mara's small cloth bag, one strap frayed, the folded pages showing at its mouth.
+
 A train passes overhead. The bulbs swing. The whole building trembles, the way it always does.
 

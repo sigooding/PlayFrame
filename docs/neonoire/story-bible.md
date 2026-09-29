@@ -119,13 +119,17 @@ don't blame him") and ends: "If something happens to me, it will not be what the
 him to sign; the Chairman's man ever since. Earns Jack's trust by telling him true things. The
 audience learns he is the traitor after the roadside inn (sc 51) — suspense over surprise — while
 Jack does not. "You always tell the wrong person." Ends in the back seat of Kurose's car, drinking
-the tea (sc 93–96). Motif: tea (the untouched cup and the wiped spill in sc 6; the flask in sc 94).
+the tea (sc 93–96). Found dead the next morning, sitting up in his own car under the expressway, no marks;
+his "statement" (the report he was writing in careful longhand in sc 80) says he acted alone. It is the
+same ruling Daniel got: suicide. Motif: tea (the untouched cup and the wiped spill in sc 6; the flask in sc 94).
 
 **KUROSE (70s), the Chairman.** Named in the full draft (placeholder earlier: "the Chairman").
 Bubble-era developer who ordered the Shiohama fire; now chairman of KUROSE DEVELOPMENT, about to enter
 public life. Calm, courteous, rarely seen. "Let the detective look. He was always very good at
 finding things. It's what he does afterwards that he's bad at." "Good men are very expensive."
-Arrested at the Hive ground-breaking and walked twenty metres into the rain without an umbrella.
+Taken away from the Hive ground-breaking by prosecutors (never called an arrest) and walked twenty metres
+into the rain without an umbrella. Whether he is charged or freed is never said; Harada: "Men like that are
+back at their desks by Friday." The plaza is built anyway.
 
 **SAKAI (70s).** The old man in the cold open. Bubble-era land clearer (jiageya) who carried out the
 fire. Kept a cassette of Kurose ordering it and Daniel's notebook for twenty years in rented locker
@@ -144,9 +148,12 @@ drawer.
 MR. and MRS. NODA (the roadside inn, both survive), MRS. SAKAI, the RADIO REPAIRMAN (pulls the main
 switch), the OLD TOBACCONIST, the BARBER ("One car. Twice."), the MASKED LEADER and the hit team.
 
-**The hit team.** Masked, anonymous, professional, from Kurose's private security firm — NOT yakuza
+**The hit team.** Masked, anonymous, professional, from Kurose's private security firm (the burnt-out grey
+car is registered to it) — NOT yakuza
 (kept separate so yakuza imagery stays with the past). Eight men at the inn ("probably only 8 men,
-otherwise too difficult to escape"). They never chase. Their radio word: "Position."
+otherwise too difficult to escape"). They never chase. Their tell: they say "Shitsurei shimasu" ("Excuse me") quietly before they act — to Sakai in the lane
+(sc 1), entering the bar (sc 2), and the driver opening the car door (sc 70), which is how Mara knows him.
+Their radio word is still "Position."
 
 ---
 
@@ -217,8 +224,7 @@ Rental Lockers, Ueno; the Toto Shimbun newsroom; Jack's rooftop.
   invitation; the locker (cassette and notebook); the tape hidden at Okada's.
 - **Act Three (65–100):** the wine-red dress; the lounge; the ambush on the service road ("Position");
   the Hive wakes; Mara dies; Ishida's call; the run; the rain scene; the Ozu cutaways; the notebook at
-  the door; Jack confronts Ishida; the newspaper; Vera faces Kurose; the raid and escape over the
-  roof; Ishida's back seat; the arrest in the rain; the rooftop ("she said to tell you she was
+  the door; Jack confronts Ishida; the newspaper; Vera faces Kurose; the raid and the escape through the neighbours' rooms; Ishida's back seat; the arrest in the rain; the rooftop ("she said to tell you she was
   sorry"); the Hive demolished; the third stool, the second bowl, she doesn't turn.
 
 ---
@@ -245,8 +251,10 @@ second target; she is hidden. Her purse falls, which is how they learn her name.
 The TV keeps playing baseball; a shot vending machine chimes "thank you"; the pink payphone rings and
 is never answered or explained. The men watch the taillights and don't chase.
 
-**The ending.** The villains are punished on screen (Ishida by his own side; Kurose arrested in the
-rain), but the Hive still comes down and Mara is still dead — justice without restoration. Final
+**The ending (revised 29 Sept).** Ishida is destroyed by his own side and his death is ruled a suicide with a
+statement that clears Kurose. Kurose is walked into the rain by prosecutors, but the film stops short of an
+arrest or a verdict; the Hive still comes down, the clean plaza and fountain are built (sc 99A), and Mara is
+still dead — justice without restoration. Final
 image deliberately ambiguous: a man's shadow in the doorway, Kaneko sets a second bowl, Vera doesn't
 turn.
 
@@ -265,11 +273,15 @@ turn.
   recognises it (10, 11); Mara hides there (13); Vera on her father's stool (56); the new counter
   (100).
 - **Tea:** Ishida's untouched cup and wiped spill (6); Kurose's flask (94).
+- **"Shitsurei shimasu" ("Excuse me"):** the masked man to Sakai (1); entering the bar, heard from the floor
+  (2); Mara's drawing captioned EXCUSE ME (25, 84); Okada heard it too (27A); the driver at the car door (70).
 - **Taillights receding:** the cold open's sedan (1); Ishida's black car (95).
 - **"It will not be what they say":** Sakai's last words (1) ↔ Daniel's notebook (79).
 - **Silence:** Jack signs the report → lies to Vera → keeps Mara's promise → speaks on the record.
 - **Two cups:** Vera sets one for Mara (4); both empty at dawn with the notebook (79).
 - **The clock a minute fast** at the police station (4, 7, 96). Never explained.
+- **The clean plaza:** Kurose straightens a tiny tree on the model (24); Vera: "It's very clean" (83); the plaza
+  exists and a gardener straightens a tree that didn't need it (99A).
 - **The crossing melody:** the empty street (1); crossing laughing (27); the dinner invitation (62);
   she runs through it on red (73).
 
@@ -317,12 +329,43 @@ turn.
    - **63A — Ueno arches, night.** The hit team tails Jack from the lockers; he loses them through
      a pachinko parlour. Why the tape goes to Okada's (sc 64).
    The pipeline (`plan.mjs`, `verify-neonoire.mjs`) now accepts `#25A#`-style inserted scenes; the
-   workspace has 103 scenes (100 numbered + 3 inserted).
+   workspace had 103 scenes at that point; it now has 106 (see item 7).
 
 6. **Key-tag script clarification (29 September).** At the director’s direction, keep the
    locker number **114**, but put it on the worn tag in scenes 25 and 60 rather than on
    stamped metal with illegible tag printing. Scene 1 now says only a worn numbered tag.
    The older 87-tag frames and prop master are left alone; no scene 17 change.
+7. **Story pass 2 (29 September, director-approved):**
+   - **The tell:** "Shitsurei shimasu" in scenes 1, 2 and 70 (see Part 3 and 8). Mara recognises the driver by
+     it; "Position" stays as the radio word that confirms it.
+   - **Mara's agency:** in the storeroom she draws what she saw from the floor of the bar — shoes, the tipped
+     stool, a hand, the time 1:07, and EXCUSE ME (sc 25). She keeps the pages in her cloth bag (68); it falls
+     in the passage when she dies (71); Kaneko gives it to Vera (84); Vera takes the drawings to Harada. Mara
+     cannot testify, but her drawings can.
+   - **Vera's agency:** 27A gives her the dead journalist's card (Kondo, Toto Shimbun). New scene **53A**: she
+     goes to Harada alone and learns Kondo told two people about the one o'clock — Harada, and a detective
+     who promised to keep a car nearby ("There was no car"). In sc 59 she tells Jack; he says "Later" and never
+     asks who.
+   - **Jack owns it (84):** "I told him. Where she'd be, and when... That's mine." Vera: "I told you about the
+     detective. The one who promised a car. You never asked who." She does not forgive him ("I'm not going to
+     tell you it wasn't yours"); "We were both wrong" is gone.
+   - **Evidence:** new scene **82A**: Harada photocopies every page of the notebook (the original goes in the
+     paper's safe), and lays out the hook: Kondo's files on the redevelopment money, and the grey car found
+     burnt out in Adachi, registered to a security company owned by Kurose Development. Vera visits Kurose
+     (83) with photocopies, on Harada's "right of reply" as cover and "I wanted to see your face" as her
+     reason. Scene 97 opens "FIVE DAYS LATER".
+   - **Ishida found dead:** 96 (phone call: in his car under the expressway, no marks, "He left a statement"),
+     97 (TV crawl; Harada: "He left a statement. He acted alone" / "That is what the police say it says"), Jack
+     with the page-six item. Details in Part 3.
+   - **Kurose taken away, not arrested:** 97 (Harada's "back at their desks by Friday"), and new scene
+     **99A**: the finished plaza and fountain, KUROSE DEVELOPMENT hoarding, a gardener straightening a tree.
+   - **Restraint — the roof escape is cut:** scenes 90 and 91 are rewritten in place (no renumbering). 86:
+     Kaneko says "go through the neighbours. Everyone will open a door." 89: the old woman opens a landing
+     door. 90 (now INT. THE HIVE, THROUGH THE ROOMS): the residents pass them through their rooms, door after
+     door, while each door closes and a flashlight finds it and stops. 91 (now EXT. THE HIVE, REAR WALL BY THE
+     VIADUCT): the fire ladder, with one train as cover; her hand stays in his. 92 begins at the foot of the
+     ladder. The rear-wing roof stays in the Hive canon but is unused.
+   - Six inserted scenes now exist: 25A, 27A, 53A, 63A, 82A, 99A. 53A, 82A and 99A are written, not boarded.
 
 ---
 
@@ -347,6 +390,15 @@ turn.
 ---
 
 6. **Script-pass boards (Part 9 items 4–5):** scenes 60, 68, 77, 80 and 84 received in-place image retakes; 25A, 27A and 63A were inserted as shots 287–296 without renumbering. Scene 17’s board/image were explicitly reverted and must remain untouched; its screenplay still says fourth stool. See the handoff and pass ledgers for review caveats.
+
+7. **Boards to retake for story pass 2:** shots 132, 133, 267 (scene 90) and 134–136 (scene 91) still show the retired
+   roof, gap and walkway; they are held Needs review (`scripts/neonoire/rewrite-pending.mjs`). Scenes 53A, 82A
+   and 99A have no shots (99A needs the plaza). Scenes 83 and 84 boards do not yet show the folder or the bag.
+8. **"Twenty years ago" vs "the bubble years"** (sc 23, and the backstory): the present has smartphones, so the
+   bubble era is more than twenty years back. Left vague on purpose; do not add a year.
+9. **Procedure:** whether prosecutors would take a chairman from a ceremony, and the notion of a "voluntary"
+   appearance, are written to be plausible on screen and have not been checked with anyone who knows Japanese
+   prosecution practice.
 
 ## Part 11 — Development history (short)
 

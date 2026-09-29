@@ -87,6 +87,12 @@ OLD MAN
 (in Japanese; to himself)
 Twenty years.
 
+One of the men steps close behind him and speaks, low and courteous, the way you would to a stranger on a crowded train.
+
+MASKED MAN
+(in Japanese; quietly; subtitled: "Excuse me.")
+Shitsurei shimasu.
+
 A suppressed SHOT. Flat and ordinary, like a door closing.
 
 The old man folds to his knees, then onto his side in the black water.

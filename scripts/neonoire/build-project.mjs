@@ -34,6 +34,7 @@ import { kandaReturnLook, kandaReturnScenes } from "./kanda-return-look.mjs";
 import { hiveFirstLook, hiveFirstScenes } from "./hive-first-look.mjs";
 import { innColdLook, innScenes, innWarmLook, innWarmScenes } from "./inn-look.mjs";
 import { demolitionLook, endingScenes, newCounterLook, rooftopLook, veraLookESheet } from "./ending-look.mjs";
+import { rewritePending, rewritePendingNote } from "./rewrite-pending.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
 import { kandaBarLook, kandaBarScenes, kandaBarSheet } from "./bar-look.mjs";
 
@@ -235,7 +236,7 @@ const frames = shots.map(shot => {
     style: "neonoire",
     duration: shot.duration,
     durationIsEstimate: true,
-    status: absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
+    status: absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || rewritePending.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS && shot.n > coldOpenCompletedThrough) ? "Needs review" : "Draft",
     transition: shot.n === 1 ? "Fade in" : "Cut",
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
@@ -276,6 +277,7 @@ const frames = shots.map(shot => {
             ? "Image: AI-generated first boarding of scenes 77–79 (25 September 2026), generated with the recast Jack sheet and Vera's sheet attached. Production approval pending."
             : `Image: AI-generated storyboard study from pass ${passOf(shot.n)}; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.`,
       ...(jackRecastPending.has(shot.id) ? [jackRecastNote] : []),
+      ...(rewritePending.has(shot.id) ? [rewritePendingNote] : []),
       ...(jackRecastDone.has(shot.id) ? [jackRecastDoneNote] : []),
       ...(isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS ? [shot.n <= coldOpenCompletedThrough
         ? `Cold-open visual revision: ${coldOpenLook}`

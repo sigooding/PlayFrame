@@ -16,6 +16,7 @@ import { build } from "esbuild";
 import { SCENES, parseBoard, readBoard } from "./neonoire/plan.mjs";
 import { streetsPassOneImages, streetsPassTwoImages } from "./neonoire/streets-look.mjs";
 import { dawnImages, jackRecastDone, jackRecastImages, jackRecastPending, policeDayImages } from "./neonoire/dawn-look.mjs";
+import { rewritePending } from "./neonoire/rewrite-pending.mjs";
 import { witnessImages, witnessNeedsReview } from "./neonoire/witness-look.mjs";
 import { hiveImages } from "./neonoire/hive-look.mjs";
 import { escapeImages } from "./neonoire/escape-look.mjs";
@@ -57,7 +58,7 @@ const {
 // ---------------------------------------------------------------- schema and ceilings
 validatePatch(project);
 assert.equal(project.acts.length, 1);
-assert.equal(project.scenes.length, 103, "The final screenplay's 100 numbered scenes and 3 inserted Act Two scenes (25A, 27A, 63A) all belong to the workspace");
+assert.equal(project.scenes.length, 106, "The final screenplay's 100 numbered scenes and 6 inserted scenes (25A, 27A, 53A, 63A, 82A, 99A) all belong to the workspace");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 103, "All one hundred numbered scenes and the three inserted Act Two scenes (25A, 27A, 63A) are boarded");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
@@ -96,7 +97,7 @@ for (const scene of project.scenes) {
 const clean = fountain.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 assert.equal(project.script.replace(/\s+$/, ""), clean.replace(/\s+$/, ""), "The screenplay should be the draft, minus its scene-number markers");
 for (const scene of project.scenes) assert(project.script.includes(`${scene.location} - ${scene.time}`), `${scene.title}'s slugline must survive in the script`);
-pass(`the screenplay carries all 103 scenes (100 numbered, 3 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
+pass(`the screenplay carries all 106 scenes (100 numbered, 6 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
 assert(fountain.includes("The number on the worn tag, still legible: 114."), "Scene 25 must reveal 114 on the tag");
 assert(fountain.includes("Its worn tag reads 114."), "Scene 60 must repeat the tag number");
 assert(!fountain.includes("The plastic tag is so old the printing has worn away."), "The old metal-stamp/blank-tag explanation is superseded");
@@ -347,13 +348,14 @@ assert.deepEqual(new Set(escape.map(f => f.image)), new Set(escapeImages));
 for (const frame of escape) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
   assert.equal(frame.movement, "Static");
-  assert.equal(frame.status, "Draft");
+  assert.equal(frame.status, rewritePending.has(frame.id) ? "Needs review" : "Draft", `${frame.title}: only the frames whose scene the script rewrote await retakes`);
+  assert.equal(frame.notes.includes("RETAKE PENDING"), rewritePending.has(frame.id));
   for (const detail of ["WARDROBE LOOK C", "sheets/vera-look-c.jpg", "white American", "s91/132-the-rails-sing.jpg"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 89–92 continuity: ${detail}`);
   assert(frame.characters.every(id => [castOf("Jack"), castOf("Vera Voss")].includes(id)), `${frame.title}: only Jack and Vera are in frame`);
 }
-assert.deepEqual(escape.find(f => f.id === "neonoire-shot-136").characters, [], "The walkway is empty when the last carriage passes");
+assert.deepEqual(escape.find(f => f.id === "neonoire-shot-136").characters, [], "The ladder is empty when the last carriage passes");
 assert.equal(escape.find(f => f.id === "neonoire-shot-134").lens, escape.find(f => f.id === "neonoire-shot-136").lens, "Scene 91 closes on its opening camera");
-pass("scenes 89–92 boarded: nine 16:9 shots — stairwell, roof, walkway and street; Vera in Look C throughout, an empty walkway after the train");
+pass("scenes 89–92: nine 16:9 shots — stairwell, through the rooms (132, 133, 267) and the fire ladder (134–136) rewritten on 29 September 2026 and held Needs review until retaken, then the street; Vera in Look C throughout");
 
 // Scenes 93–96: Ishida's last night.
 const ishidaEnd = project.frames.filter(f => ["neonoire-s93", "neonoire-s94", "neonoire-s95", "neonoire-s96"].includes(f.sceneId));
@@ -644,9 +646,7 @@ const card243 = project.frames.find(f => f.id === "neonoire-shot-243");
 assert(card243.notes.includes("katakana"), "Shot 243 carries the katakana line the draft prints");
 const lunch225 = project.frames.find(f => f.id === "neonoire-shot-225");
 assert(lunch225.notes.includes("three customers"), "Shot 225 carries the draft's three customers");
-const fence267 = project.frames.find(f => f.id === "neonoire-shot-267");
-assert(fence267.notes.includes("waist-high"), "Shot 267 keeps the walkway rail waist-high");
-pass("consistency retakes two: one pole on the cold-open street, the strap untouched, the 1975 wood corridor, the katakana card, three customers, a waist-high rail");
+pass("consistency retakes two: one pole on the cold-open street, the strap untouched, the 1975 wood corridor, the katakana card, three customers (the walkway rail check went with the walkway, cut 29 September 2026)");
 
 // Cast-sheet pass, 26 September 2026: the recurring cast and the film's last costume carry identity sheets.
 for (const sheet of ["kaneko", "okada", "kurose", "mr-noda", "mrs-noda", "repairman", "harada", "young-detective", "vera-look-f", "vera-look-b", "mara-hiding", "masked-man"]) {
@@ -724,13 +724,15 @@ for (const term of ["vivid colours", "many neon signs", "video billboards", "bri
 assert(!hiveCanonScenes.has("s3") && !hiveCanonScenes.has("s78") && !hiveCanonScenes.has("s14") && !hiveCanonScenes.has("s47") && !hiveCanonScenes.has("s91"), "Vera's apartment building, Mara's apartment, the inn's back yard and the railway walkway are not the Hive");
 assert(hiveCanonScenes.has("s19") && hiveCanonScenes.has("s69") && hiveCanonScenes.has("s71") && hiveCanonScenes.has("s67"), "The counter night, the passages and the service road are the Hive");
 let retakeNoteCount = 0;
-for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n90-hive-rooftop.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
+for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
   const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
   const hits = text.split("Retake 29 September 2026").length - 1;
   assert(hits > 0, `${board} records its exterior retake`);
   retakeNoteCount += hits;
 }
-assert.equal(retakeNoteCount, 7 + hiveRetakenLook.length + hiveRetakenOptional.length + hiveRetakenQueue.length, "Every installed retake is recorded in its board notes");
+// Scene 90's three optional-pass records (shots 132, 133, 267) went with the roof, rewritten 29 September 2026.
+const retiredRoofRecords = 3;
+assert.equal(retakeNoteCount, 7 + hiveRetakenLook.length + hiveRetakenOptional.length + hiveRetakenQueue.length - retiredRoofRecords, "Every installed retake is recorded in its board notes");
 pass("hive canon: six sheets installed; the wrong-building tier, the new-look pass, the judged optionals and the queue pass all retaken on the canon and the look, the queue closed");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
@@ -875,7 +877,7 @@ for (const frame of project.frames) {
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
 assert.equal(imported.frames.length, EXPECTED_SHOTS);
-assert.equal(imported.scenes.length, 103, "A re-import carries the whole final screenplay");
+assert.equal(imported.scenes.length, 106, "A re-import carries the whole final screenplay");
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
 // ---------------------------------------------------------------- persistence
@@ -896,7 +898,7 @@ try {
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
       assert.equal(opened.frames.length, ${EXPECTED_SHOTS});
-      assert.equal(opened.scenes.length, 103);
+      assert.equal(opened.scenes.length, 106);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
 

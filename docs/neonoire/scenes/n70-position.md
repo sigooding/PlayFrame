@@ -5,7 +5,7 @@
 Scene: EXT. SERVICE ROAD BEHIND THE HIVE - CONTINUOUS
 Cast: JACK, MARA VOSS
 Lens plan: Twenty metres of wet asphalt; the dread is posture and distance.
-Grammar: That's what they said. Position. That's them.
+Grammar: "Excuse me." Then Position. That's them.
 
 ## Frame format — 26 September 2026
 
@@ -14,8 +14,8 @@ The single shot (239) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 ---
 
 239. WIDE — 35mm, static, eye level — position.
-The back door of the Hive into the rain; the grey sedan beside the pillars, twenty metres, its rear door held open. The DRIVER in his dark coat lifts his wrist to his mouth and murmurs into his sleeve — position. Mara stops dead: she has heard that word before, in the rain, over a dying man. Jack looks at the driver; the driver looks at Jack; in that look both men understand. Jack's hand starts to turn Mara back toward the door.
-SCRIPT: "That's what they said. Position. That's them."
+The back door of the Hive into the rain; the grey sedan beside the pillars, twenty metres, its rear door held open. The DRIVER in his dark coat lifts his wrist to his mouth and murmurs into his sleeve — position. Just before, bowing slightly, he said shitsurei shimasu (excuse me), the phrase the masked man used over Sakai; Mara stops dead, and the word into his sleeve confirms it (script pass of 29 September 2026). Jack looks at the driver; the driver looks at Jack; in that look both men understand. Jack's hand starts to turn Mara back toward the door.
+SCRIPT: "Jack looks at the driver. The driver looks at Jack. And in that look, both men understand."
 CAST: Jack, Mara Voss
 LIGHT: Practical night
 TIME: 10

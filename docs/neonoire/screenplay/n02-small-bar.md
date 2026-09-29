@@ -33,6 +33,12 @@ FROM THE FLOOR, we see only what she sees: the underside of the counter, a crate
 
 The door opens again. Softly, this time.
 
+A man's voice from the doorway, gentle, as if entering a shop:
+
+MASKED MAN (O.S.)
+(in Japanese; quietly; subtitled: "Excuse me.")
+Shitsurei shimasu.
+
 Two pairs of black shoes step inside. Wet. Silent.
 
 The journalist's shoes shift. He stands.

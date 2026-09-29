@@ -8,7 +8,7 @@ Grammar: 35mm on the empty street with the Hive lit behind; 50mm on Vera looking
 
 EXT. STREET BELOW THE VIADUCT - MOMENTS LATER #92#
 
-Vera and Jack come down a steel maintenance ladder into an empty street. Soaked. Breathing hard.
+Vera and Jack step off the last rung of the fire ladder into an empty street. Soaked. Breathing hard.
 
 Behind them, the Hive: every window lit again now, every radio playing, every resident awake. In the distance, sirens.
 

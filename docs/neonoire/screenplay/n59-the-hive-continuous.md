@@ -22,6 +22,21 @@ She is so happy. She throws her arms around him.
 Over her shoulder, Jack looks at the entrance of the Hive. At the street. At the rain. At every parked car.
 
 VERA (CONT'D)
+And I went to the newspaper. Harada, the editor. She says Kondo told two people about the one o'clock. Her. And a detective, who promised to keep a car nearby.
+
+JACK
+(eyes on the parked cars)
+Later.
+
+VERA
+Jack. A detective.
+
+JACK
+Later. Please.
+
+She lets it go. She is too happy to hold on to it.
+
+VERA (CONT'D)
 When we find Mara, I'm bringing her here. She'll finally see it.
 
 JACK

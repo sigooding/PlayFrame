@@ -67,6 +67,8 @@ OKADA
 I was in the back. Moving crates.
 (beat)
 I heard all of it. I stood there with a crate in my arms and I did not move. That is why I gave you the clip.
+(beat)
+He said "excuse me" when he came in. Like a customer.
 
 Vera stays where she is on the floor.
 
@@ -81,4 +83,14 @@ People learn.
 Vera looks up at the dead television. Somewhere in the dark glass, her own face.
 
 For the first time she lets herself think it clearly: her sister saw two men die, and has not called.
+
+Okada takes a card from his apron and sets it on the counter. TOTO SHIMBUN. The journalist's name in katakana: KONDO.
+
+OKADA (CONT'D)
+(in Japanese)
+He left it the week before. He said he was meeting someone. He said it would be a good week.
+(beat)
+I couldn't call them. I couldn't say what I heard.
+
+Vera takes the card.
 

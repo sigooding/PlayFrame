@@ -10,7 +10,7 @@ INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY #83#
 
 The fortieth floor. Rain on the glass. Tokyo grey and endless below.
 
-Vera sits in a leather chair in front of Kurose's desk. She wears a plain dark coat. Her father's notebook is on her lap, her hands flat on its cover.
+Vera sits in a leather chair in front of Kurose's desk. She wears a plain dark coat. A plain folder is on her lap, her hands flat on its cover: photocopies of every page of her father's notebook.
 
 Kurose sits across from her. Courteous. Curious. He pours her tea himself.
 
@@ -38,6 +38,18 @@ KUROSE (CONT'D)
 What is it you want? Money is vulgar. But it is also useful. For a young woman alone, in a foreign city.
 
 VERA
+The Toto Shimbun will print tomorrow. They asked me to bring you the chance to reply.
+
+KUROSE
+And they sent you.
+
+VERA
+I said I'd come.
+
+KUROSE
+Why?
+
+VERA
 I wanted to see your face.
 
 KUROSE
@@ -48,7 +60,7 @@ It's just a face.
 
 For the first time, something flickers in him. Not fear. Irritation, perhaps, at being looked at like that.
 
-Vera stands. She holds up the notebook. Not threatening. Just showing it to him.
+Vera stands. She holds up a page of the photocopy. Not threatening. Just showing it to him.
 
 VERA (CONT'D)
 My father kept notes. He wrote your name on every page.

@@ -21,7 +21,23 @@ He knew me. He saw me in the doorway and he walked away from me, so they wouldn'
 
 Jack looks down at his hands.
 
+Beside the futon, held down by a flour scoop: a stack of loose pages covered in pencil. He turns the top one toward the bulb.
+
+A drawing from floor level. The underside of a counter. A crate of bottles. Two pairs of shoes. A stool going over. An outflung hand. In the corner, small: 1:07. Beside the shoes, in her careful block capitals: EXCUSE ME.
+
+JACK
+You drew this.
+
 MARA
+It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening.
+(beat)
+That's what he said when he came into the bar. "Excuse me." Like a customer. He said it in the lane too, before --
+
+She doesn't finish.
+
+Jack sets the page down exactly where it was.
+
+MARA (CONT'D)
 And then in the bar, the man said, "Where is he?" He was waiting for the old man. They were supposed to meet.
 
 JACK

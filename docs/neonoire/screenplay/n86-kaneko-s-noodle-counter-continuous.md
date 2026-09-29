@@ -12,7 +12,7 @@ Kaneko pulls the shutter down with a crash. She turns off the fluorescent tube.
 
 KANEKO
 (in Japanese; to Jack)
-Up. Through the back. The stairs by the dentist. All the way to the roof.
+Up. Through the back. The stairs by the dentist. Then go through the neighbours. Everyone will open a door.
 
 JACK
 (in Japanese)

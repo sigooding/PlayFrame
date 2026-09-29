@@ -10,19 +10,19 @@ EXT. SERVICE ROAD BEHIND THE HIVE - CONTINUOUS #70#
 
 Jack and Mara come out of a narrow back door of the Hive into the rain.
 
-The grey sedan waits beside the pillars, twenty metres away. A DRIVER in a dark coat gets out and opens the rear door for them. Polite. Professional.
+The grey sedan waits beside the pillars, twenty metres away. A DRIVER in a dark coat gets out and opens the rear door for them. Polite. Professional. He bows slightly as they come.
 
 Jack walks Mara toward it. Halfway there.
 
-The driver lifts his wrist to his mouth and murmurs into his sleeve, very quietly:
-
 DRIVER
-(in Japanese)
-Position.
+(in Japanese; quietly; subtitled: "Excuse me.")
+Shitsurei shimasu.
+
+He says it the way you would to a passenger.
 
 Mara stops dead.
 
-She has heard that word before. In the rain. Over a dying man.
+She has heard those words before. In the rain. Over a dying man.
 
 MARA
 (whispering)
@@ -32,7 +32,13 @@ JACK
 What?
 
 MARA
-That's what they said. Position. That's them.
+That's what he said. Before he shot him. "Excuse me."
+
+The driver lifts his wrist to his mouth and murmurs into his sleeve, very quietly:
+
+DRIVER
+(in Japanese)
+Position.
 
 Jack looks at the driver. The driver looks at Jack. And in that look, both men understand.
 

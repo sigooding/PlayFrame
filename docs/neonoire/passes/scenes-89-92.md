@@ -1,3 +1,5 @@
+> **Superseded 29 September 2026:** scenes 90 and 91 were rewritten (the roof, gap and railway walkway are cut; the escape now goes through the neighbours' rooms and down a fire ladder). Only the stairwell (89) and the street (92) below still stand; see [`scenes/n90-through-the-rooms.md`](../scenes/n90-through-the-rooms.md) and [`scenes/n91-the-fire-ladder.md`](../scenes/n91-the-fire-ladder.md).
+
 # NEONOIRE — scenes 89–92, first boarding: the escape (26 September 2026)
 
 **Scope:** scenes 89 (the Hive stairwell), 90 (the rooftop), 91 (the railway maintenance walkway) and 92 (the street below the viaduct). **Nine shots, IDs neonoire-shot-130 … 138**, 16:9 full-bleed 1920×1080 JPEG. **Ten image-generation calls:** nine shots, plus one edit that restored Jack's face in shot 138.

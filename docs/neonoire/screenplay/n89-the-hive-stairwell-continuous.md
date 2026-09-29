@@ -22,3 +22,5 @@ The whole building starts to make noise, on purpose, all at once. The flashlight
 
 Jack and Vera climb.
 
+On a landing, a door opens a hand's width. An old woman's face, lit from below by a torch of her own. The one who was asleep in front of the sumo. She says nothing. She steps back and holds the door.
+

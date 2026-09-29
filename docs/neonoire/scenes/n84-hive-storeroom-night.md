@@ -33,9 +33,9 @@ ID: neonoire-shot-118
 IMAGE: 116-thats-me.jpg
 NOTE: Holds "That's me." through "Three feet away." and "Vera touches the paper with one finger." Retake 29 September 2026: the sketch now shows the back of a loose-haired woman at the counter, rather than a front-facing portrait or Vera's present-day knot. Pencil art and the precise stool count remain art-department review checks.
 
-119. TWO-SHOT — 35mm, static, eye level — we were both wrong.
+119. TWO-SHOT — 35mm, static, eye level — that's mine.
 The two of them face each other across the little room, Vera by the sketches at left and Jack by the flour sacks at right, with a few feet of floor that neither crosses.
-SCRIPT: "She was protecting you. So was I. We were both wrong."
+SCRIPT: "She was protecting you. So was I."
 CAST: Jack, Vera Voss
 LIGHT: Low key
 TIME: 30

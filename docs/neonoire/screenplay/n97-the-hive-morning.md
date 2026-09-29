@@ -8,15 +8,37 @@ Grammar: 24mm on the tent, 35mm at the shop window and the car, 50mm for the twe
 
 EXT. THE HIVE - MORNING #97#
 
+SUPER: "FIVE DAYS LATER"
+
 Rain.
 
 In front of the Hive, a white ceremonial tent. Rows of folding chairs. A podium. Officials in dark suits. A giant banner of the computer rendering: glass towers, the little plaza, the fountain. TOMORROW'S TOKYO. A silver shovel on a stand, tied with a red-and-white ribbon, waiting for the ground-breaking.
 
-Across the street, a small electronics shop. In its window, a row of televisions, old CRTs and new flat screens side by side, all showing the same morning news: a photograph of Kurose, and a front page of the Toto Shimbun held up to the camera.
+Across the street, a small electronics shop. In its window, a row of televisions, old CRTs and new flat screens side by side, all showing the same morning news: a photograph of Kurose, and a front page of the Toto Shimbun held up to the camera. Beside Kurose's photograph, a smaller one: Ishida. A line of text crawls beneath it: POLICE DETECTIVE FOUND DEAD. STATEMENT LEFT.
 
 People on the pavement slow down to watch. Then stop.
 
-Among them, beside Kaneko, under a plain umbrella: Vera.
+Among them, beside Kaneko, under a plain umbrella: Vera. On her other side, a press card on a lanyard, hands in her coat pockets: Harada.
+
+HARADA
+(in Japanese; low, not looking at Vera)
+They will take him in for questions. Men like that are back at their desks by Friday.
+
+VERA
+(in Japanese)
+And Ishida?
+
+HARADA
+(in Japanese)
+He left a statement. He acted alone.
+
+VERA
+(in Japanese)
+Is that what it says?
+
+HARADA
+(in Japanese)
+That is what the police say it says.
 
 A black car pulls up at the tent. An AIDE hurries round with a large umbrella and opens the rear door.
 
@@ -42,7 +64,7 @@ Vera watches the whole twenty metres. She does not look away.
 
 Kaneko takes Vera's hand.
 
-Further down the street, alone, collar up: Jack. Watching too.
+Further down the street, alone, collar up: Jack. Watching too. A newspaper folded small in his coat pocket, open to page six. He knows what a closed file looks like.
 
 Vera sees him. He sees her.
 
