@@ -82,6 +82,19 @@ export interface Character {
   createdAt: string;
 }
 
+/** One spoken line laid over a frame. `src` is a file under /audio/, `offset` is seconds from the frame's start. */
+export interface FrameAudio {
+  id: string;
+  character: string;
+  text: string;
+  src: string;
+  offset: number;
+  duration?: number;
+  /** The ElevenLabs voice and model the take was made with, so it can be regenerated. */
+  voice?: string;
+  model?: string;
+}
+
 export interface StoryFrame {
   id: string;
   sceneId: string;
@@ -105,6 +118,8 @@ export interface StoryFrame {
   style?: string;
   transition?: Transition;
   mood?: string;
+  /** Dialogue lines spoken over this frame, played by the storyboard presentation. */
+  audio?: FrameAudio[];
 }
 
 export interface ProjectNote {

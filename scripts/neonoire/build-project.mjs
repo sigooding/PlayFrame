@@ -35,6 +35,7 @@ import { hiveFirstLook, hiveFirstScenes } from "./hive-first-look.mjs";
 import { innColdLook, innScenes, innWarmLook, innWarmScenes } from "./inn-look.mjs";
 import { demolitionLook, endingScenes, newCounterLook, rooftopLook, veraLookESheet } from "./ending-look.mjs";
 import { rewritePending, rewritePendingNote } from "./rewrite-pending.mjs";
+import { attachAudio, readManifest } from "./voice.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
 import { kandaBarLook, kandaBarScenes, kandaBarSheet } from "./bar-look.mjs";
 
@@ -447,6 +448,9 @@ const scenes = feature.map(scene => {
     style: "neonoire",
   };
 });
+
+// Recorded dialogue (docs/neonoire/voice/manifest.json) rides on the frames it plays over.
+const voicedLines = attachAudio(frames, readManifest(root), root);
 
 const project = {
   id: projectId,

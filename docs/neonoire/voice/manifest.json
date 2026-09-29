@@ -1,0 +1,29 @@
+{
+  "note": "Every recorded dialogue line. `frameId` is the board shot it plays over; `file` is under public/. `offset` and `duration` are seconds. The builder attaches these to the bundle's frames (npm run build:neonoire) and stretches a frame that is too short for its lines. Add lines with: node scripts/neonoire/voice-ingest.mjs",
+  "lines": [
+    {
+      "id": "s98-jack-sorry",
+      "frameId": "neonoire-shot-156",
+      "character": "JACK",
+      "text": "At the end, she asked me to tell you something. She said to tell you she was sorry.",
+      "file": "/audio/neonoire/s98/156-jack-tell-her-sorry.mp3",
+      "offset": 0.4,
+      "duration": 5.99,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_multilingual_v2",
+      "status": "pilot"
+    },
+    {
+      "id": "s98-vera-rain",
+      "frameId": "neonoire-shot-157",
+      "character": "VERA",
+      "text": "You could have told me that in the rain.",
+      "file": "/audio/neonoire/s98/157-vera-in-the-rain.mp3",
+      "offset": 9,
+      "duration": 1.95,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_multilingual_v2",
+      "status": "pilot"
+    }
+  ]
+}

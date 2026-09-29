@@ -1,6 +1,6 @@
 import {
   CAMERA_ANGLES, CAMERA_MOVEMENTS, LENSES, LIGHTING, RELATION_KINDS, SCENE_KINDS, SHOT_TYPES, TRANSITIONS,
-  type Act, type ActPart, type BrainstormNode, type CameraAngle, type CameraMovement, type Character, type CharacterRelation, type Lens, type Lighting, type MoodBoard, type ProjectNote, type ProjectPatch, type RelationKind, type Scene, type SceneKind, type ShotType, type StoryFrame, type Transition,
+  type Act, type ActPart, type BrainstormNode, type CameraAngle, type CameraMovement, type Character, type CharacterRelation, type FrameAudio, type Lens, type Lighting, type MoodBoard, type ProjectNote, type ProjectPatch, type RelationKind, type Scene, type SceneKind, type ShotType, type StoryFrame, type Transition,
 } from "./types";
 
 // Collection ceilings. validatePatch rejects anything above them and sanitizeImport truncates to
@@ -11,6 +11,7 @@ import {
 export const MAX_ACTS = 20;
 export const MAX_SCENES = 500;
 export const MAX_FRAMES = 1000;
+
 export const MAX_NOTES = 500;
 
 const frameStatuses = ["Draft", "Ready", "Needs review"];
@@ -20,6 +21,8 @@ const nodeColors = ["sage", "sand", "rose", "clay", "ink"];
 
 export const isUuid = (value: string) => /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
 const string = (value: unknown, max = 20000): value is string => typeof value === "string" && value.length <= max;
+const audioSrc = (value: unknown): value is string => string(value, 300) && /^\/audio\/[A-Za-z0-9._\/-]+\.(mp3|wav|m4a|ogg)$/.test(value) && !value.includes("..");
+const audioOk = (a: FrameAudio) => a && string(a.id, 100) && string(a.character, 120) && string(a.text, 2000) && audioSrc(a.src) && Number.isFinite(a.offset) && a.offset >= 0 && a.offset <= 3600 && (a.duration === undefined || (Number.isFinite(a.duration) && a.duration > 0 && a.duration <= 600)) && (a.voice === undefined || string(a.voice, 100)) && (a.model === undefined || string(a.model, 100));
 const image = (value: unknown): value is string => string(value, 6_000_000) && (value.startsWith("/images/") || /^https?:\/\//i.test(value) || /^data:image\/(jpeg|png|webp);base64,/.test(value) || value === "");
 const optionalIn = (value: unknown, list: readonly string[]) => value === undefined || value === "" || value === null || (typeof value === "string" && list.includes(value));
 const optionalId = (value: unknown) => value === undefined || value === null || value === "" || string(value, 100);
@@ -27,7 +30,7 @@ const strings = (value: unknown, max = 100) => value === undefined || value === 
 
 const sceneOk = (s: Scene) => s && string(s.id, 100) && string(s.title, 300) && string(s.location, 300) && string(s.time, 100) && string(s.description) && strings(s.characters) && optionalId(s.actId) && optionalId(s.partId) && optionalIn(s.kind, SCENE_KINDS) && optionalIn(s.lighting, LIGHTING) && (s.lightingNotes === undefined || string(s.lightingNotes, 1000)) && (s.style === undefined || string(s.style, 60));
 const actOk = (a: Act) => a && string(a.id, 100) && string(a.title, 120) && a.title.trim() && string(a.description, 2000) && (a.parts === undefined || (Array.isArray(a.parts) && a.parts.length <= 30 && a.parts.every((p: ActPart) => p && string(p.id, 100) && string(p.title, 160) && p.title.trim() && string(p.description, 1000))));
-const frameOk = (f: StoryFrame) => f && string(f.id, 100) && string(f.sceneId, 100) && string(f.title, 300) && string(f.description) && image(f.image) && SHOT_TYPES.includes(f.shotType) && CAMERA_MOVEMENTS.includes(f.movement) && frameStatuses.includes(f.status) && Number.isFinite(f.duration) && f.duration > 0 && f.duration <= 3600 && string(f.notes) && strings(f.characters) && optionalIn(f.angle, CAMERA_ANGLES) && optionalIn(f.lens, LENSES) && optionalIn(f.lighting, LIGHTING) && (f.lightingNotes === undefined || string(f.lightingNotes, 1000)) && (f.durationIsEstimate === undefined || typeof f.durationIsEstimate === "boolean") && optionalIn(f.transition, TRANSITIONS) && (f.style === undefined || string(f.style, 60)) && (f.mood === undefined || string(f.mood, 300));
+const frameOk = (f: StoryFrame) => f && string(f.id, 100) && string(f.sceneId, 100) && string(f.title, 300) && string(f.description) && image(f.image) && SHOT_TYPES.includes(f.shotType) && CAMERA_MOVEMENTS.includes(f.movement) && frameStatuses.includes(f.status) && Number.isFinite(f.duration) && f.duration > 0 && f.duration <= 3600 && string(f.notes) && strings(f.characters) && optionalIn(f.angle, CAMERA_ANGLES) && optionalIn(f.lens, LENSES) && optionalIn(f.lighting, LIGHTING) && (f.lightingNotes === undefined || string(f.lightingNotes, 1000)) && (f.durationIsEstimate === undefined || typeof f.durationIsEstimate === "boolean") && optionalIn(f.transition, TRANSITIONS) && (f.style === undefined || string(f.style, 60)) && (f.mood === undefined || string(f.mood, 300)) && (f.audio === undefined || (Array.isArray(f.audio) && f.audio.length <= 40 && f.audio.every(audioOk)));
 const noteOk = (n: ProjectNote) => n && string(n.id, 100) && string(n.title, 300) && string(n.content) && noteColors.includes(n.color) && string(n.createdAt, 100) && strings(n.tags, 40) && (n.connections === undefined || (Array.isArray(n.connections) && n.connections.every(c => c && string(c.targetId, 100) && string(c.label, 80))));
 const relationOk = (r: CharacterRelation) => r && string(r.id, 100) && string(r.targetId, 100) && RELATION_KINDS.includes(r.kind) && (r.note === undefined || string(r.note, 120));
 const characterOk = (c: Character) => c && string(c.id, 100) && string(c.name, 120) && c.name.trim() && string(c.role, 80) && string(c.age, 40) && string(c.description, 700) && Array.isArray(c.traits) && c.traits.every(t => string(t, 50)) && entityColors.includes(c.color) && (c.image === undefined || image(c.image)) && (c.relations === undefined || (Array.isArray(c.relations) && c.relations.length <= 40 && c.relations.every(relationOk))) && string(c.createdAt, 100);
@@ -84,6 +87,21 @@ export function validatePatch(input: Record<string, unknown>): ProjectPatch {
 const text = (value: unknown, max: number, fallback = "") => (typeof value === "string" && value.trim() ? value.trim().slice(0, max) : fallback);
 const list = (value: unknown): unknown[] => (Array.isArray(value) ? value : []);
 const id = (value: unknown) => (typeof value === "string" && value.length <= 100 && value ? value : crypto.randomUUID());
+const sanitizeAudio = (value: unknown): FrameAudio[] | undefined => {
+  const clips = list(value).slice(0, 40).map((raw): FrameAudio | null => {
+    const a = (raw || {}) as Record<string, unknown>;
+    const offset = Number(a.offset);
+    const duration = Number(a.duration);
+    if (!audioSrc(a.src) || !Number.isFinite(offset) || offset < 0) return null;
+    return {
+      id: id(a.id), character: text(a.character, 120, "Unknown"), text: text(a.text, 2000), src: a.src,
+      offset: Math.min(3600, Math.round(offset * 100) / 100),
+      duration: Number.isFinite(duration) && duration > 0 ? Math.min(600, Math.round(duration * 100) / 100) : undefined,
+      voice: text(a.voice, 100) || undefined, model: text(a.model, 100) || undefined,
+    };
+  }).filter((a): a is FrameAudio => a !== null);
+  return clips.length ? clips : undefined;
+};
 const ids = (value: unknown, limit = 60) => list(value).filter((v): v is string => typeof v === "string" && v.length <= 100).slice(0, limit);
 
 /** Tolerant conversion of an uploaded project file (or JSON blob) into a validated patch. */
@@ -148,6 +166,7 @@ export function sanitizeImport(raw: unknown): ProjectPatch & { title: string } {
       status: frameStatuses.includes(f_.status as string) ? (f_.status as StoryFrame["status"]) : "Draft",
       notes: text(f_.notes, 20000),
       characters: ids(f_.characters),
+      audio: sanitizeAudio(f_.audio),
     };
   });
 
