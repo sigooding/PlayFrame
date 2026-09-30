@@ -151,7 +151,7 @@ export default function Studio({ initialProjects, initialTab, initialProjectId }
     if (template !== "rapture" && template !== "neonoire") { setDialog({ type: "newProject", template }); return; }
     const bundled = template === "rapture"
       ? { url: "/api/projects/rapture", tab: "Storyboard", label: "Series workspace opened. Existing edits are preserved.", error: "The series workspace couldn't be opened." }
-      : { url: "/api/projects/neonoire", tab: "Screenplay", label: "NEONOIRE opened on its screenplay. Existing edits are preserved.", error: "The NEONOIRE workspace couldn't be opened." };
+      : { url: "/api/projects/neonoire", tab: "Screenplay", label: "Nobody's Witness opened on its screenplay. Existing edits are preserved.", error: "The NEONOIRE workspace couldn't be opened." };
     try {
       const saved = await request<FilmProject>(bundled.url, { method: "POST" });
       updateLocal(current => current.some(p => p.id === saved.id) ? current : [...current, saved]);

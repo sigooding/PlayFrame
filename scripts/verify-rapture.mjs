@@ -62,7 +62,7 @@ assert.equal(legacy.length, 122);
 assert.equal(starterProjects.length, 5);
 assert.equal(starterProjects.filter(p => p.id === project.id).length, 1);
 assert.deepEqual(starterProjects.slice(0, 4).map(p => p.title), ["The Last Light", "Paper Planes", "A Place in Between", "Let the Raptures Commence"], "Existing starter ordering must not change");
-assert.equal(starterProjects[4].title, "NEONOIRE", "NEONOIRE is seeded after the series, so nothing already in a workspace moves");
+assert.equal(starterProjects[4].title, "Nobody's Witness", "The film (Nobody's Witness, repository name NEONOIRE) is seeded after the series, so nothing already in a workspace moves");
 validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
@@ -678,7 +678,7 @@ try {
       const id = ${JSON.stringify(project.id)};
       const initial = await api.listProjects();
       assert.equal(initial.length, 5, 'Fresh local databases must seed all five projects');
-      assert(initial.some(p => p.title === 'NEONOIRE'), 'NEONOIRE is seeded alongside the series');
+      assert(initial.some(p => p.title === "Nobody's Witness"), 'the film is seeded alongside the series');
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
