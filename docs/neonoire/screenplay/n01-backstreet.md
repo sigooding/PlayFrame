@@ -5,8 +5,8 @@ EXT. BACKSTREET, KANDA - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Mara Voss, The Old Man, The Masked Men.
 Grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the 
-violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street 
-lit orange.
+violence as though the subject has merely walked out of frame. No flash, no sound design tricks, no score, no reaction cut; the killing is two flat 
+sounds in rain and the scene leaves the street the way the car does.
 
 Title: NEONOIRE
 Credit: Written by
@@ -45,79 +45,39 @@ EXT. BACKSTREET, KANDA - NIGHT #1#
 
 Rain. Not a storm. Just cold, steady, patient rain.
 
-A narrow street of shuttered shops that could belong to any year of the last forty. Hand-painted signs. Tangled wires overhead. At the corner, an old vending machine throws cold white light across the wet asphalt, rain falling through it in columns.
+A narrow street of shuttered shops. A vending machine hums on the corner. High up, one lit window, a radio playing behind it.
 
-Its HUM is the loudest thing here.
-
-MARA VOSS (24), American, walks fast, arms folded, no umbrella. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to.
-
-Her phone BUZZES. The screen: VERA.
-
-She looks at it. Lets it ring. Declines.
-
-It buzzes again at once. VERA.
+MARA VOSS (24) stands in the dark doorway of a closed barber's, soaked, no umbrella. Her phone lights up: VERA. She watches it ring.
 
 MARA
 (to the phone)
 Not tonight.
 
-She switches it off and shoves it into her purse.
+She declines it.
 
-Under a streetlight she stops and takes a folded scrap of paper from her coat pocket. An address in her own handwriting, and a time: 1:00. She looks down the street. At the far end, a small lit sign: a bar.
-
-She checks her watch. Early.
-
-The rain thickens. She ducks into the recessed doorway of a closed barbershop, its striped pole dark and still, and presses back into the shadow. Going nowhere. Not yet. She doesn't want to walk in early. She isn't sure she wants to walk in at all.
-
-Somewhere nearby, a pedestrian crossing CHIMES its old melody for an empty intersection. Over and over. No one crosses.
-
-Footsteps. Hurried. Uneven.
-
-An OLD MAN (70s) in a cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back.
-
-He passes Mara's doorway without seeing her. Then, a step later, his eyes find her in the shadow -- a flicker, as if he knows her face -- and he looks away at once and keeps walking, faster, toward the bar sign. Away from her.
-
-At the far end of the alley, headlights. A black sedan pulls across the mouth of the lane and stops, blocking it. Its high beams shine straight down the alley, lighting the rain in long white columns.
-
-Two MEN get out and walk into the alley, black silhouettes against the glare. Black clothes. Masks. They don't run.
-
-The old man stops. He doesn't turn around. He seems to know there is no point. The headlights throw his shadow long down the lane ahead of him.
+An OLD MAN (70s) comes slowly up the street in a good coat gone thin at the cuffs. He sees her in the doorway and stops. Something in his face gives way.
 
 OLD MAN
 (in Japanese; to himself)
 Twenty years.
 
-One of the men steps close behind him and speaks, low and courteous, the way you would to a stranger on a crowded train.
+Behind him, a MASKED MAN steps out of the dark and makes a small, correct bow.
 
 MASKED MAN
 (in Japanese; quietly; subtitled: "Excuse me.")
 Shitsurei shimasu.
 
-A suppressed SHOT. Flat and ordinary, like a door closing.
+Two shots, flat and small in the rain. The old man folds onto the street.
 
-The old man folds to his knees, then onto his side in the black water.
-
-In the doorway, Mara has both hands over her mouth.
-
-One of the masked men touches his earpiece.
+The masked man touches his ear.
 
 MASKED MAN
 (in Japanese)
 First position done. Moving to second.
 
-They walk back to the car. It reverses out of the alley mouth, unhurried. The headlights swing away, taillights smear red across the wet road beyond, and the alley falls dark.
+He walks back the way he came, to a dark car idling at the far end of the street. He doesn't hurry. He never looks at the doorway.
 
-Rain. The vending machine hum. The crossing melody, still playing for no one.
-
-Mara doesn't move.
-
-Then the old man COUGHS.
-
-She stares. He is still alive.
-
-Every instinct says run. She doesn't. She steps out into the rain and kneels beside him.
-
-She sees his face properly for the first time.
+Mara runs to the old man. Her bag slides off her shoulder and spills across the wet street. She doesn't notice.
 
 MARA
 (whispering)
@@ -128,46 +88,25 @@ It's okay -- I'll get someone --
 (in halting Japanese)
 Ambulance. I'll call. Ambulance.
 
-She fumbles for her phone. Switched off. Her hands shake too hard to turn it on.
-
-The old man grips her wrist, stronger than he should be. He presses something small and cold into her palm and folds her fingers around it.
+His hand comes out of his coat with something small and brass in it. He presses it into her palm and closes her fingers over it.
 
 OLD MAN
 (in Japanese)
 Don't let them have it.
 
-Mara's lips move, working through the words. She understands. Just.
-
 MARA
 (in halting Japanese)
 Have what? I don't --
 
-He looks at her face as if he is trying to remember it. When he speaks again it is in English, careful and broken, the English of a man who practised it.
+He's gone. Rain in his open eyes.
 
-OLD MAN
-Your father.
-(beat)
-It was not... what they say.
+In her hand: a small brass key on a stamped number tag.
 
-His grip loosens. His eyes stay open, on nothing.
+The dark car pulls away and takes the long way round the block. At the other end of the street, the amber glow of a bar. Mara runs for it.
 
-She opens her hand.
-
-.INSERT - THE KEY
-
-A small key on a worn numbered tag. A coin-locker key.
-
-.BACK TO SCENE
-
-At the mouth of the alley, headlights swing back.
-
-Mara runs.
-
-Her purse strap snags on the barbershop pole and tears. The purse drops into a puddle behind her. She doesn't stop.
-
-The sedan stops across the alley mouth again. One masked man walks back in to the body and searches the old man's coat, methodically. Nothing.
-
-His flashlight drifts across the street -- and stops on the purse lying in the water.
+Behind her, on the street: her purse, open in the rain.
 
 CUT TO:
+
+
 

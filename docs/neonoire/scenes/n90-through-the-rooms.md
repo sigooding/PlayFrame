@@ -15,13 +15,13 @@ The script pass replaced the roof, the one-metre gap and the railway walkway (th
 
 132. MEDIUM — 35mm, static, eye level — the old woman holds the door.
 On a stair landing a door opens a hand's width: the old woman who slept in front of the sumo, lit from below by a torch of her own. She steps back and holds it for Vera and Jack.
-SCRIPT: "On a landing, a door opens a hand's width."
+SCRIPT: "It opens before she can knock: the OLD WOMAN from 55."
 CAST: Jack, Vera Voss
 LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-132
 IMAGE: 130-the-roof.jpg
-NOTE: Retake 29 September 2026 (story pass 2): regenerated to the rewritten beat — the stair landing, the old woman's torch lit from below (her scene 16 sumo sleeper), the door held wide, Vera in Look C and Jack from the recast sheet, both soaked. The retired roof master is overwritten in place, not relabelled. CAVEAT: her hair reads a little lighter and looser than the scene 16 frames — a hair check, not a blocked frame.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Retake 29 September 2026 (story pass 2): regenerated to the rewritten beat — the stair landing, the old woman's torch lit from below (her scene 16 sumo sleeper), the door held wide, Vera in Look C and Jack from the recast sheet, both soaked. The retired roof master is overwritten in place, not relabelled. CAVEAT: her hair reads a little lighter and looser than the scene 16 frames — a hair check, not a blocked frame.
 
 133. WIDE — 35mm, static, eye level — the kitchen in the dark.
 A kitchen lit by one candle: the family around the table, the father with the baseball bat across his knees, the children holding the next door wide. Vera and Jack cross it without a word.

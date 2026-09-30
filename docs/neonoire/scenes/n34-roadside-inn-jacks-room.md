@@ -27,7 +27,7 @@ NOTE: The room master. In this study the table is Western height rather than a l
 
 255. INSERT — 50mm, static, high angle — no 114.
 Jack's hands hold one yellowed receipt over the lamp-lit table. It reads KATO RENTAL LOCKERS - UENO, No. 114. The charcoal coat is on the tatami.
-SCRIPT: "KATO RENTAL LOCKERS - UENO. Handwritten: No. 114. Paid in full."
+SCRIPT: "KATO RENTAL LOCKERS - UENO. No. 114. Twenty years of Januaries."
 CAST: Jack
 LIGHT: Practical night
 TIME: 5

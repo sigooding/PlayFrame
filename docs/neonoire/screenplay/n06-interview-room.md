@@ -53,12 +53,15 @@ And how did she seem?
 Vera hesitates.
 
 VERA
+(too quickly)
 Normal.
 
 Ishida waits, kindly, as if he knows there is more. She doesn't give it.
 
 ISHIDA
 Did she ever mention Kanda? Friends there? Work?
+
+Vera's eyes go to the frosted window before she answers.
 
 VERA
 Kanda? No. Why --

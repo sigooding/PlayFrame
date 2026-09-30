@@ -42,3 +42,21 @@ TIME: 12
 ID: neonoire-shot-84
 IMAGE: 84-cries-without-a-sound.jpg
 NOTE: "She still loves him. She hates herself for it" is the scene's whole text and none of its images — no tears glistening, no rain against glass in time with her body. Just the sound of none.
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+The revision gives the scene its new opening beat — the number she cannot speak into. The scene's lighter frames stand as boarded.
+
+---
+
+315. CLOSE-UP — 50mm, static, eye level — A contact: MOM.
+The phone lights her face from below. On the screen, one contact: MOM. Her thumb presses it; far away, in another morning, it is answered.
+SCRIPT: "The phone lights her face. A contact: MOM. She presses it."
+CAST: Vera Voss, Vera’s Mother
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-315
+IMAGE: 315-the-number-pressed.jpg
+NOTE: LEGIBLE-TEXT FRAME: the screen reads exactly MOM. Vera's mother is heard twice in the film and never seen; the only 'she' in this frame is the light. `sheets/vera.jpg` in the ruined red dress, mascara dried, one shoe. Placeholder slot.

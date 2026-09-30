@@ -8,7 +8,11 @@ Grammar: 35mm wide and low; the only romantic frame in the film.
 
 EXT. PEDESTRIAN CROSSING - DAY #27#
 
-A small intersection. The crossing signal turns green and the old melody begins to CHIME.
+A small intersection.
+
+Rain.
+
+The crossing signal turns green and the old melody begins to CHIME.
 
 Vera and Jack cross in the rain, laughing at something, sharing his cheap plastic umbrella that's too small for two. Her shoulder gets wet. His gets wet. Neither of them cares.
 

@@ -48,15 +48,13 @@ She looks at him sharply.
 
 MRS. SAKAI
 (in Japanese)
-Every January. Cash, in an envelope. Twenty years. Even the years we had nothing, he paid it. I thought it was a woman.
-
-She gets up, goes to a drawer, comes back with a thin bundle of old receipts held together with a rubber band. Carbon copies, handwritten, yellowed. She puts them in front of Jack.
-
-MRS. SAKAI (CONT'D)
-(in Japanese)
+Every January. Cash, in an envelope. Twenty years. Even after he left, the receipts kept coming here.
+(beat)
 He left these here. Maybe on purpose.
 
-Jack unfolds the top one. A rubber stamp, faded: KATO RENTAL LOCKERS - UENO. Handwritten: No. 114. Paid in full.
+She takes a rubber-banded bundle of receipts from the altar drawer. Carbon copies, handwritten, yellowed. The top one: KATO RENTAL LOCKERS, UENO.
+
+Jack unfolds it. A rubber stamp, faded. Handwritten: No. 114. Paid in full.
 
 He looks up. She is watching him with an expression he can't read. Grief, maybe. Or relief.
 

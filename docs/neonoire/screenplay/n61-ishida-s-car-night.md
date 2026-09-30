@@ -50,6 +50,14 @@ Nine o'clock. The service road behind the Hive, by the railway pillars. A grey c
 (beat)
 And Sakai's thing?
 
+Jack turns and looks at him. Ishida keeps his eyes on the rain on the windscreen.
+
+ISHIDA
+(in Japanese)
+Where else would the Voss girl go? You took me there yourself. Twenty years ago.
+
+Jack looks at Ishida's hands on the wheel. He doesn't ask.
+
 JACK
 (in Japanese)
 I'll bring it to you. When she's safe.

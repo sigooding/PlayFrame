@@ -1,5 +1,5 @@
 {
-  "note": "Every recorded dialogue line. `frameId` is the board shot it plays over; `file` is under public/. `offset` and `duration` are seconds. The builder attaches these to the bundle's frames (npm run build:neonoire) and stretches a frame that is too short for its lines. Add lines with: node scripts/neonoire/voice-ingest.mjs",
+  "note": "Every recorded dialogue line. `frameId` is the board shot it plays over; `file` is under public/. `offset` and `duration` are seconds. The builder attaches these to the bundle's frames (npm run build:neonoire) and stretches a frame that is too short for its lines. Add lines with: node scripts/neonoire/voice-ingest.mjs 30 September 2026 revision: the cut scenes' lines (13, 24) and the retired dying-man line were dropped, the voicemail pair re-pinned to shot 309 (the storeroom replay), Kaneko's 'Everything is going' to shot 189, and Kurose's 'And?' to shot 113; the pickups for the revision's new lines await generation and voice-ingest.",
   "lines": [
     {
       "id": "s98-jack-sorry",
@@ -486,24 +486,6 @@
         "flow": "3PHvMwiCPgs8R7eUX4pm",
         "session": "MaBVyaaAxfDK7we594Q5",
         "id": "h2bhyYHAGMH5Fyy6SY1M"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s1-oldman-weakly-your-father-it-was-not",
-      "frameId": "neonoire-shot-282",
-      "character": "OLD MAN",
-      "text": "Your father. ... It was not... what they say.",
-      "prompt": "[weakly] Your father. ... It was not... what they say.",
-      "file": "/audio/neonoire/s1/282-oldman-weakly-your-father-it-was-not.mp3",
-      "offset": 1,
-      "duration": 4.36,
-      "voice": "y7NkiaxPRjIzeTdRhHDC",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "3PHvMwiCPgs8R7eUX4pm",
-        "session": "Y5enBHUOVfmZiR0YzHB5",
-        "id": "5Y7BG7zI8SVw8PIZMyqD"
       },
       "status": "take"
     },
@@ -2098,98 +2080,8 @@
       "status": "take"
     },
     {
-      "id": "s13-kaneko-gruffly-eat",
-      "frameId": "neonoire-shot-181",
-      "character": "KANEKO",
-      "text": "Eat.",
-      "prompt": "[gruffly] Eat.",
-      "file": "/audio/neonoire/s13/181-kaneko-gruffly-eat.mp3",
-      "offset": 0.5,
-      "duration": 1.07,
-      "voice": "vUzt8mUMt5vwWOoJ6szl",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "clnOd1X24tHxxhxgPUg2",
-        "session": "LpKmSoVstjNA4SqweQ00",
-        "id": "oVr3eAuBYG1R8vaZEbem"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s13-mara-hesitantly-thank-you-has-anyone-come",
-      "frameId": "neonoire-shot-181",
-      "character": "MARA",
-      "text": "Thank you. Has anyone... come? Asking?",
-      "prompt": "[hesitantly] Thank you. Has anyone... come? Asking?",
-      "file": "/audio/neonoire/s13/181-mara-hesitantly-thank-you-has-anyone-come.mp3",
-      "offset": 2.2,
-      "duration": 4.68,
-      "voice": "2NE3noNVoL0UyxXHLs7w",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "clnOd1X24tHxxhxgPUg2",
-        "session": "PO79ijuWoU5llY3cNstF",
-        "id": "JmWGkknaTE221AtGlfQF"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s13-kaneko-flatly-nobody-comes-here-who-isn",
-      "frameId": "neonoire-shot-181",
-      "character": "KANEKO",
-      "text": "Nobody comes here who isn't lost.",
-      "prompt": "[flatly] Nobody comes here who isn't lost.",
-      "file": "/audio/neonoire/s13/181-kaneko-flatly-nobody-comes-here-who-isn.mp3",
-      "offset": 7.6,
-      "duration": 2.51,
-      "voice": "vUzt8mUMt5vwWOoJ6szl",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "clnOd1X24tHxxhxgPUg2",
-        "session": "snL2jHigMz25GgJfNZJP",
-        "id": "SZfGvQFLukmXI4GA7XEE"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s13-kaneko-your-father-used-to-sit-on",
-      "frameId": "neonoire-shot-181",
-      "character": "KANEKO",
-      "text": "Your father used to sit on the third stool. He always paid too much. And your sister always ate everything on his plate.",
-      "prompt": "Your father used to sit on the third stool. He always paid too much. [pause] And your sister always ate everything on his plate.",
-      "file": "/audio/neonoire/s13/181-kaneko-your-father-used-to-sit-on.mp3",
-      "offset": 11.4,
-      "duration": 9.4,
-      "voice": "vUzt8mUMt5vwWOoJ6szl",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "clnOd1X24tHxxhxgPUg2",
-        "session": "7IvZilJKlHfsmcQiFdXq",
-        "id": "vOhs8I4ZnSt3sJpJytom"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s13-mara-softly-she-told-me-about-this",
-      "frameId": "neonoire-shot-181",
-      "character": "MARA",
-      "text": "She told me about this place. All the time. When we were kids. I thought it was gone.",
-      "prompt": "[softly] She told me about this place. All the time. When we were kids. I thought it was gone.",
-      "file": "/audio/neonoire/s13/181-mara-softly-she-told-me-about-this.mp3",
-      "offset": 21.6,
-      "duration": 6.43,
-      "voice": "2NE3noNVoL0UyxXHLs7w",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "clnOd1X24tHxxhxgPUg2",
-        "session": "HBTykTdqEhH8H5imiJfy",
-        "id": "NfqiMzVnNc7pXnhtOhKH"
-      },
-      "status": "take"
-    },
-    {
       "id": "s13-kaneko-everything-is-going-we-are-just",
-      "frameId": "neonoire-shot-181",
+      "frameId": "neonoire-shot-189",
       "character": "KANEKO",
       "text": "Everything is going. We are just slower.",
       "file": "/audio/neonoire/s13/181-kaneko-everything-is-going-we-are-just.mp3",
@@ -2202,11 +2094,12 @@
         "session": "6pm10TXSJagi8rQmnXLT",
         "id": "xIHPwWbbYNasx7KOGM9G"
       },
-      "status": "take"
+      "status": "take",
+      "note": "Re-pinned over the 30 September 2026 revision."
     },
     {
       "id": "s13-vera-voice-breaking-you-left-your-umbrella",
-      "frameId": "neonoire-shot-182",
+      "frameId": "neonoire-shot-309",
       "character": "VERA",
       "text": "You left your umbrella. You'll get soaked.",
       "prompt": "[voice breaking] You left your umbrella. You'll get soaked.",
@@ -2216,11 +2109,12 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "fx": "phone",
-      "status": "take"
+      "status": "take",
+      "note": "Re-pinned over the 30 September 2026 revision."
     },
     {
       "id": "s13-vera-pleading-just-call-me-you-don",
-      "frameId": "neonoire-shot-182",
+      "frameId": "neonoire-shot-309",
       "character": "VERA",
       "text": "Just call me. You don't have to say anything. Just call, so I know.",
       "prompt": "[pleading] Just call me. You don't have to say anything. Just call, so I know.",
@@ -2230,7 +2124,8 @@
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "fx": "phone",
-      "status": "take"
+      "status": "take",
+      "note": "Re-pinned over the 30 September 2026 revision."
     },
     {
       "id": "s4-newsreporter-measured-police-in-kanda-are-investigating",
@@ -3690,40 +3585,6 @@
       "status": "take"
     },
     {
-      "id": "s24-maskedman-the-detective-went-into-the-hive",
-      "frameId": "neonoire-shot-201",
-      "character": "MASKED MAN",
-      "text": "The detective went into the Hive twice. Once in the day. Once after the last train.",
-      "file": "/audio/neonoire/s24/201-maskedman-the-detective-went-into-the-hive.mp3",
-      "offset": 0.3,
-      "duration": 5.8,
-      "voice": "IUNPSr7i3o1XsExH6IGv",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "eGLBUog6SwvFx50esd3B",
-        "id": "w9WBatUoVUEC7Cw3CQak"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s24-maskedman-we-can-t-follow-him-in",
-      "frameId": "neonoire-shot-201",
-      "character": "MASKED MAN",
-      "text": "We can't follow him in there. Too many people. Too many passages. They see everyone.",
-      "file": "/audio/neonoire/s24/201-maskedman-we-can-t-follow-him-in.mp3",
-      "offset": 8.46,
-      "duration": 5.72,
-      "voice": "IUNPSr7i3o1XsExH6IGv",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "4HZnlIpfWH1PbKz0LKn9",
-        "id": "pQo3iXH0OSLbzwWaCXv5"
-      },
-      "status": "take"
-    },
-    {
       "id": "s25-mara-mr-sakai-said-twenty-years-before",
       "frameId": "neonoire-shot-202",
       "character": "MARA",
@@ -4722,7 +4583,7 @@
     },
     {
       "id": "s24-kurose-and",
-      "frameId": "neonoire-shot-201",
+      "frameId": "neonoire-shot-113",
       "character": "KUROSE",
       "text": "And?",
       "file": "/audio/neonoire/s24/201-kurose-and.mp3",
@@ -4735,42 +4596,8 @@
         "session": "VBcsc6SslC1UGMZoeWW8",
         "id": "GGkiaAkvVPzEwA5JH2qP"
       },
-      "status": "take"
-    },
-    {
-      "id": "s24-kurose-then-don-t-follow-him-in",
-      "frameId": "neonoire-shot-201",
-      "character": "KUROSE",
-      "text": "Then don't follow him in there.",
-      "file": "/audio/neonoire/s24/201-kurose-then-don-t-follow-him-in.mp3",
-      "offset": 14.8,
-      "duration": 2.19,
-      "voice": "N7WASm2wYJmE5JmsJPLJ",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "NmknVxUnbjur807STonH",
-        "id": "TrUv3C23wbjDCJXtmL2v"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s24-kurose-let-the-detective-look-he-was",
-      "frameId": "neonoire-shot-201",
-      "character": "KUROSE",
-      "text": "Let the detective look. He was always very good at finding things. It's what he does afterwards that he's bad at.",
-      "prompt": "Let the detective look. He was always very good at finding things. [pause] It's what he does afterwards that he's bad at.",
-      "file": "/audio/neonoire/s24/201-kurose-let-the-detective-look-he-was.mp3",
-      "offset": 17.8,
-      "duration": 8.91,
-      "voice": "N7WASm2wYJmE5JmsJPLJ",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "qrwjCX9OPropaE67Zbbr",
-        "id": "zi9PZ4kEBZqCanlNzdiT"
-      },
-      "status": "take"
+      "status": "take",
+      "note": "Re-pinned over the 30 September 2026 revision."
     },
     {
       "id": "s29-mrssakai-we-haven-t-lived-together-in",

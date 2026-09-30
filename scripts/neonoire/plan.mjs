@@ -3,9 +3,10 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The final screenplay carries 100 scenes; scenes 1–17, the roadside inn and 72–100 are
-// boarded, and every scene arrives in the workspace verbatim, whether or not a board has reached
-// it. Dialogue and action are always quoted from the fountain, never retyped.
+// docs/neonoire/scenes/ is read. The revised final screenplay carries 102 scenes — 96 numbered (13, 24, 97 and 99 were
+// cut on 30 September 2026 and their numbers stay retired; scene numbers never move) and six
+// inserted — and every scene arrives in the workspace verbatim, whether or not a board has
+// reached it. Dialogue and action are always quoted from the fountain, never retyped.
 //
 //   npm run build:neonoire     rebuild public/projects/neonoire-opening.json
 //   node scripts/neonoire/split-opening.mjs   regenerate the screenplay pages
@@ -28,7 +29,7 @@ export const grammar =
 
 const cast = [
   ["mara", "Mara Voss", "Protagonist", "24", "American. Twenty-four, in Kanda by chance on the wrong night: she declines her sister's call, watches a man shot in the rain, takes a coin-locker key out of his hand and the killers' attention with it. Hair soaked flat, held back by a cheap enamel clip shaped like a small red bird; arms folded, no umbrella. Speaks halting Japanese. Has been crying, or is about to.", ["Guarded", "Quick", "Unready"], "sage", "mara"],
-  ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter. Wardrobe: charcoal coat (sheets/vera.jpg), the red dress in 72–79, then a new coat per look: ink-navy Look C in 83–92, olive Look D in 97, a short oatmeal car coat (Look E, sheets/vera-look-e.jpg) in 98, a teal peacoat and the red bird clip (Look F) in 100.", ["Careful", "Steady", "Alone"], "sand", "vera"],
+  ["vera", "Vera Voss", "Co-lead", "29", "American. Twenty-nine, Mara's older sister, three days behind her and always one step behind the police. Her Japanese is fluent, careful and slightly formal — learned as a child, relearned as an adult. She sets two cups on a table for one and takes her sister's blue umbrella to a police station counter. Wardrobe: charcoal coat (sheets/vera.jpg), the red dress in 72–79, then a new coat per look: ink-navy Look C in 83–92, a short oatmeal car coat (Look E, sheets/vera-look-e.jpg) in 98, a teal peacoat in 100; the red bird clip (Look F) returns to her from 98 on. The olive Look D she was boarded in for the ground-breaking (97) was retired with the scene.", ["Careful", "Steady", "Alone"], "sand", "vera"],
   ["jack", "Jack", "Private investigator / former detective", "48", "A Tokyo private investigator and former police detective; the screenplay gives no surname. Visual casting choice (recast 25 September 2026): a white American, tall and lean, long angular face, hollow cheeks, deep-set tired grey-green eyes, dark brown hair swept back and greying at the temples, salt-and-pepper stubble. Quietly cool, not an action hero. A good but badly kept charcoal knee-length overcoat, off-white open-collar shirt, black trousers, worn black shoes; no tie, hat or cigarette. After the Hive he stays soaked, hands unwashed, through scene 77. Not the sisters' father: that is Daniel Voss.", ["Understated", "Guarded", "Compromised"], "clay", "jack"],
   ["daniel", "Daniel Voss", "The father / family photograph", "41, twenty years ago", "American insurance investigator, Vera and Mara's father. The scene 11 newspaper clipping identifies him as Daniel Voss, 41; the man in the warm faded photograph on Vera's shelf is Daniel, not Jack. A rumpled grey suit, a smile, both small daughters' hands in his and a Tokyo noodle-shop sign behind them, twenty years ago. Jack appears with him in a separate older photograph and was his friend, not a member of the Voss family.", ["Warm", "Principled", "Absent"], "sand", undefined],
   ["old-man", "The Old Man", "Cold open", "70s", "Japanese. Seventies, cheap raincoat, one hand pressed to his side as if something is hidden there. He keeps looking back, stops without turning round, says twenty years to himself, and gives a stranger a key with his last strength. Unnamed in the opening.", ["Hunted", "Resigned", "Deliberate"], "sand", undefined],
@@ -45,6 +46,7 @@ const cast = [
   ["kaneko", "Kaneko", "Noodle counter, the Hive", "70s", "Japanese. Seventies, tiny and sharp-eyed, grey hair in a small bun, a faded indigo apron over a brown cardigan. She runs the six-seat noodle counter in the Hive, hid Mara in her storeroom and then Jack, and brings Vera to see where Mara was. When the masked men come she pulls down the shutter, sends them up to the roof, and stays: I have lived here fifty years. No identity sheet yet: held to the scene 86 master.", ["Sharp", "Stubborn", "Protective"], "clay", undefined],
   ["radio-repairman", "The Radio Repairman", "The Hive", "70s", "Japanese. Seventies, thin, round glasses, a grey cardigan, a loupe pushed up on his forehead. He hears boots in the corridor, looks at the fuse box on his wall, and pulls the main switch, and the whole Hive goes dark. Unnamed; no identity sheet.", ["Watchful", "Quiet", "Decisive"], "sage", undefined],
   ["young-detective", "The Young Detective", "Police", "20s", "Japanese. Late twenties, neat short black hair, white shirt and dark tie, sleeves rolled. The morning after Ishida gets into the black car, he clears Ishida's desk into a cardboard box and opens the bottom drawer: empty. Unnamed; no identity sheet.", ["Neat", "Incurious", "New"], "sand", undefined],
+  ["mother", "Vera’s Mother", "Voice on a telephone", "60s", "American. Far away, in another morning, answering the phone twice for a daughter who cannot speak: “Vera? Honey?” She is never seen; the film does not say what she was to Mara, or whether she will ever call back. No identity sheet; there is nothing to draw.", ["Warm", "Unknowing", "Far"], "sand", undefined],
 ];
 
 export const characters = cast.map(([key, name, role, age, description, traits, color, sheet]) => ({
@@ -96,8 +98,8 @@ export const SCENES = [
     kind: "Cold open", lighting: "Practical night", slugline: "EXT. BACKSTREET, KANDA - NIGHT #1#",
     page: "n01-backstreet.md", board: "n01-backstreet.md",
     cast: ["Mara Voss", "The Old Man", "The Masked Men"],
-    grammar: "Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut; the title card lands on an empty street lit orange.",
-    description: "Cold open. Rain in a Kanda backstreet. Mara declines her sister's call, ducks into the doorway of a closed barbershop, and watches two masked men shoot an old man without hurrying — then kneels beside him and takes a coin-locker key out of his hand. BOARDED — 18 shots; coverage 280–282 (the letter rewrite) appended 28 September 2026, and shot 7 retaken the same day so the old man's eyes flick to Mara in the doorway and away. The draft's own scene 1; nothing is explained, and nobody names the key.",
+    grammar: "Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound design tricks, no score, no reaction cut; the killing is two flat sounds in rain and the scene leaves the street the way the car does.",
+    description: "Cold open, as rewritten on 30 September 2026 to half its length. Rain in a Kanda backstreet: Mara in a dead barber's doorway declines her sister's call; an old man with twenty years behind his eyes is shot in two flat sounds; a small brass key on a number tag is pressed into her palm and closed in her fingers. She runs; behind her the purse lies open in the rain. Nobody explains anything. BOARDED — 16 shots (1–18, less 8 and 11 — the alley-blocking frames the rewrite cut); the letter-rewrite coverage 280–282 was retired the same day with the 1:00-address beat, and the frames of vanished blocking are held RETAKE PENDING.",
     lightingNotes: "The vending machine is the brightest source in the film's first minute. Sodium orange street lamps, one cold white vending machine, green fluorescent spill at the corner. No white beams in frame, ever.",
   },
   {
@@ -107,7 +109,7 @@ export const SCENES = [
     page: "n02-small-bar.md", board: "n02-small-bar.md",
     cast: ["Mara Voss", "The Journalist", "The Masked Men"],
     grammar: "The room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.",
-    description: "Continuous. Mara hides behind the far end of the counter with the key in her fist. Two pairs of wet black shoes come in softly, ask where is he, and shoot the journalist on the far side of the counter while the television audience laughs. The notebook leaves with them. BOARDED — 10 shots, ending on the blue TV glow and the title card.",
+    description: "Continuous. Mara comes in with the key in her fist; the journalist knows her name. The same polite words at the door; two shots; on the high shelf the television audience laughs. Her hair clip slides out of her wet hair and skitters under the shelf — the film's first close-up. A word in an earpiece, one step toward the counter, and the men go. Black, rain, title card. BOARDED — 11 shots (19–28, and 308, the clip, the first of the seven named close-ups); the floor-level cut is the 30 September 2026 rewrite.",
     lightingNotes: "Amber bottle shelves, the CRT's blue flicker on the ceiling, and the open back door's pale light. No overhead light is ever switched on.",
   },
   {
@@ -147,7 +149,7 @@ export const SCENES = [
     page: "n06-interview-room.md", board: "n06-interview-room.md",
     cast: ["Vera Voss", "Detective Ishida"],
     grammar: "One table, two chairs, a box of tissues nobody has touched in years, rain on a frosted window. A two-hander watched from a third chair. Ishida's English is excellent and Vera refuses it, answering in Japanese with the subtitles carrying the scene. Nobody is violent; a man is deciding how much to say.",
-    description: "Moments later. Detective Ishida sets a paper cup of tea in front of Vera and offers her English. She answers in Japanese. She answers in Japanese and asks twice what is on the screen. He asks his own questions instead — where she grew up, when she last saw her sister, whether the name Kanda means anything — until the news arrives in her face and she asks whether her sister is dead. He has no reason to believe she is. The cup crumples in her fist; he offers a tissue, answers her in Japanese for the first time, and tells her the safest thing she can do is nothing. Then his card, across a wet table. BOARDED — 12 shots.",
+    description: "Moments later. Detective Ishida sets a paper cup of tea in front of Vera and offers her English. She answers in Japanese. She answers in Japanese and asks twice what is on the screen. He asks his own questions instead — where she grew up, when she last saw her sister, how she seemed — and the too-quick “Normal,” and her eyes going to the frosted window before she answers, tell him what the answers don't, until she asks whether her sister is dead. He has no reason to believe she is. The cup crumples in her fist; he offers a tissue, answers her in Japanese for the first time, and tells her the safest thing she can do is nothing. Then his card, across a wet table. BOARDED — 12 shots.",
     lightingNotes: "One ceiling fixture and the frosted window's blue-grey rain light; the paper cup is the only warm note. No flicker in this room.",
   },
   {
@@ -196,8 +198,8 @@ export const SCENES = [
     kind: "Montage", lighting: "Practical night", slugline: "INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS #75#",
     page: "n75-ext-various-night-series-of-shots.md", board: "n75-still-frames.md",
     cast: [],
-    grammar: "Five static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. Then black.",
-    description: "Five still frames, no people: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static. BOARDED — 5 shots (79–83); all five generated. No black-and-white treatment and no early demolition.",
+    grammar: "Six static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. The sixth is the empty crossing from 27 and 62 — the melody runs all the way to the end of the frame, and as it ends the score enters for the first time in the film. Then black.",
+    description: "Six still frames, no people — the only sequence in the film from which every other life is removed: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static; and, added on 30 September 2026, the pedestrian crossing from 27 and 62, empty, the signal turning green for no one, the old melody playing all the way to the end. BOARDED — 6 shots (77–81, and 314, the empty crossing — the frame after which, per the 30 September 2026 revision, the score enters); the five pillow shots are generated, the crossing holds its placeholder slot. No black-and-white treatment and no early demolition.",
     lightingNotes: "Each still keeps its own ordinary practical: machine-white puddle light, the lounge's one amber lamp, a dim old sign, the grey CRT. Muted natural colour, no spotlit product look; no person or reflected silhouette.",
   },
   {
@@ -205,9 +207,9 @@ export const SCENES = [
     title: "The lighter", location: "INT. VERA'S APARTMENT", time: "NIGHT",
     kind: "Standard", lighting: "Low key", slugline: "INT. VERA'S APARTMENT - NIGHT #76#",
     page: "n76-vera-s-apartment-night.md", board: "n76-vera-apartment.md",
-    cast: ["Vera Voss"],
+    cast: ["Vera Voss", "Vera’s Mother"],
     grammar: "The same room as scene 4, now dark: rain on the glass, one street-lit plane of the window, nothing switched on. The room's geography and the removed paper pendant stay as in the apartment revision. The lighter is the only object the scene owns; it must look handled, not precious.",
-    description: "Night, later. In the dark apartment, Vera sits on the floor with her back against the bed — still in the ruined red dress, mascara dried, one shoe — with Jack's old steel lighter in her hand. She opens it, closes it, opens it. She should throw it away; she holds it against her chest instead, and bends over it, and cries without making a sound. She still loves him; she hates herself for it. BOARDED — 3 shots (84–86), existing images unchanged; the scene the opening's answerphone was pointed at.",
+    description: "Night, later, as revised 30 September 2026. In the dark apartment Vera sits on the floor against the bed — ruined red dress, dried mascara, one shoe. The phone lights her face: a contact, MOM. She presses it. Far away, in another morning, it is answered — Vera? Honey? — and nothing comes; she ends the call, and the screen goes dark. In her hand, Jack's old steel lighter: it opens, closes, opens; she should throw it away, and holds it against her chest instead, crying without a sound. She still loves him; she hates herself for it. BOARDED — 4 shots (82–84, and 315, the number pressed), the call scene 4's unanswered voicemail was pointed at.",
     lightingNotes: "No practicals on: cold window light and the landing's spill under the door only. The lighter's small flame is the one warm note, briefly, and then the dark takes it back.",
   },
   {
@@ -227,7 +229,7 @@ export const SCENES = [
     page: "n78-vera-s-apartment-building-corridor-dawn.md", board: "n78-veras-corridor.md",
     cast: ["Vera Voss"],
     grammar: "Grey dawn on the third-floor walkway, rain dripping from the railing. 35mm wide, 50mm doormat, 85mm name. Vera barefoot, still in the red dress, unslept.",
-    description: "Dawn. Vera opens her door onto the open-air walkway, still in the red dress, unslept. On the doormat, a plain envelope with no name. Inside, the cloth-covered notebook — and inside its cover, DANIEL VOSS. BOARDED — 3 shots (90–92).",
+    description: "Dawn, as revised 30 September 2026. Jack comes to the corridor, does not knock, sets Daniel's notebook on the mat, squares it to the door, and goes. Vera opens her door onto the open-air walkway, still in the red dress, unslept. On the doormat, a plain envelope with no name. Inside, the cloth-covered notebook — and inside its cover, DANIEL VOSS. BOARDED — 4 shots (90–92, and 316, the notebook squared to the door).",
     lightingNotes: "Flat grey-blue dawn, no sun; one fluorescent fitting still on over a door. Wet concrete, rusted railing, the elevated line beyond.",
   },
   {
@@ -276,8 +278,8 @@ export const SCENES = [
     kind: "Standard", lighting: "Overcast soft", slugline: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY #83#",
     page: "n83-chairman-s-office-kurose-development-day.md", board: "n83-kurose-office-day.md",
     cast: ["Vera Voss", "Kurose"],
-    grammar: "The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. She never touches the tea.",
-    description: "Day. The fortieth floor, rain on the glass. Vera, in a plain dark coat with a folder of photocopies on her lap, sits across from Kurose, who pours her tea himself. Good men are very expensive. What is it you want? I wanted to see your face. It's just a face. She shows him a copied page, looks down at the model of the redevelopment, the fountain where the Hive is — it's very clean — and goes. Kurose presses a button: follow her. BOARDED — 6 shots (111–116).",
+    grammar: "The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. The revision's rule for this scene: the “He sat where you're sitting” line and “It's just a face” play wide — no close-ups on the accusations.",
+    description: "Day. The fortieth floor, rain on the glass. Vera, in a plain dark coat with a folder of photocopies on her lap, sits across from Kurose, who pours her tea himself. He sat where you're sitting; he looked at me the way you are, as if I'd done something. Did you? Good men are very expensive. What is it you want? — and a plain envelope, thick with cash, laid on the glass she doesn't look at. I wanted to see your face — it's just a face. On her way out she stops at the model: where the Hive stood there is only the white plaza, and tiny painted people cross it. It's very clean. Kurose presses a button: follow her. BOARDED — 7 shots (111–116, and 317, the envelope; 113 re-quoted and RETAKE PENDING — the patched block is gone from the model now, and the accusations play wide).",
     lightingNotes: "Flat grey rain light through glass on three sides; no practicals. The white model is the brightest thing in the room.",
   },
   {
@@ -287,7 +289,7 @@ export const SCENES = [
     page: "n84-the-hive-noodle-shop-storeroom-night.md", board: "n84-hive-storeroom-night.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "One bare bulb. 24mm room, 50mm at the drawing, 35mm for the two of them, 85mm when the voice comes. Neither crosses the floor.",
-    description: "Night. Jack, grey with exhaustion, hiding in the storeroom since the newspaper. Kaneko brings Vera, with Mara's cloth bag and its folded pages. On the wall, Mara's sketches: the counter from behind the curtain, the back of a head on the third stool. That's me. Three feet away. Jack owns it — where she'd be, and when — and Vera refuses to absolve him. She smooths one of Mara's floor drawings flat on the flour sack and takes the pages to Harada. He didn't blame you. A train passes; the bulb swings; in the passage outside a man murmurs into his sleeve: position. BOARDED — 4 shots (117–120).",
+    description: "Night. Jack, grey with exhaustion, hiding in the storeroom since the newspaper. Kaneko brings Vera, with Mara's cloth bag and its folded pages; on the folded futon, a neat stack of the rest of them, dried flat, edges rippled from the wet floor. On the wall, Mara's sketches: the counter from behind the curtain, the back of a head on the third stool. That's me. Three feet away. Jack owns it — where she'd be, and when — and Vera refuses to absolve him. She smooths one of Mara's floor drawings flat on the flour sack and takes the pages to Harada. He didn't blame you. A train passes; the bulb swings; in the passage outside a man murmurs into his sleeve: position. BOARDED — 5 shots (117–120, and 318, the dried stack).",
     lightingNotes: "A single bare tungsten bulb, swinging when the train passes; everything else falls to black.",
   },
   {
@@ -307,7 +309,7 @@ export const SCENES = [
     page: "n86-kaneko-s-noodle-counter-continuous.md", board: "n86-kaneko-counter.md",
     cast: ["Kaneko", "Jack", "Vera Voss"],
     grammar: "24mm counter, 50mm three-shot, 85mm for Kaneko's refusal. The shutter crashes, the tube goes off, and the gas flame is all that's left.",
-    description: "Continuous. Kaneko pulls the shutter down with a crash and turns off the tube. Up, through the back, the stairs by the dentist, all the way to the roof. Come with us. I have lived here fifty years; they can come and find me. She pushes them toward the back. BOARDED — 3 shots (123–125).",
+    description: "Continuous. Kaneko pulls the shutter down with a crash and turns off the tube. Up, through the back, the stairs by the dentist, then through the neighbours — I know them, Vera says, and Jack looks at her: she has learned the building's kindness. Come with us. I have lived here fifty years; they can come and find me. She pushes them toward the back. BOARDED — 3 shots (123–125).",
     lightingNotes: "One fluorescent tube, then only the blue-orange gas flames under the stock pots and the glow through the storeroom curtain.",
   },
   {
@@ -327,17 +329,17 @@ export const SCENES = [
     page: "n88-the-hive-passages-continuous.md", board: "n88-hive-dark.md",
     cast: ["The Masked Men"],
     grammar: "Scene 85's camera with every bulb out; 50mm over a masked shoulder. Flashlight beams are the only light.",
-    description: "Continuous. DARK. Every bulb in the building goes out at once. The masked men stop; flashlights snap on, catching dripping pipes, closed doors, laundry, faces at windows that vanish the moment the light touches them. The Hive knows its own dark. The men don't. BOARDED — 2 shots (128–129).",
+    description: "Continuous. DARK. In the black Vera's hand finds the wall, low, where a child's hand would reach, and she starts to move; Jack follows the sound of her. Then every bulb in the building goes out at once. The masked men stop; flashlights snap on, catching dripping pipes, closed doors, laundry, faces at windows that vanish the moment the light touches them. The Hive knows its own dark. The men don't. BOARDED — 2 shots (128–129).",
     lightingNotes: "Black, and tight hard white flashlight beams with haze in them. Nothing else.",
   },
   {
     key: "s89", id: "neonoire-s89", n: 89, partId: "neonoire-part-feature",
-    title: "She lets him", location: "INT. THE HIVE, STAIRWELL", time: "CONTINUOUS",
+    title: "The unlit lighter", location: "INT. THE HIVE, STAIRWELL", time: "CONTINUOUS",
     kind: "Standard", lighting: "Low key", slugline: "INT. THE HIVE, STAIRWELL - CONTINUOUS #89#",
     page: "n89-the-hive-stairwell-continuous.md", board: "n89-hive-stairwell.md",
     cast: ["Jack", "Vera Voss"],
-    grammar: "24mm up the stair in the dark; 85mm on the hands. The building's noise is sound, not picture.",
-    description: "Continuous. Pitch black. Vera and Jack climb a narrow concrete stair by touch; his hand finds hers, and she lets him. A flashlight beam sweeps the bottom of the stairwell. Then a dog, a baby, a radio playing the old ballad, a television, a pot and a spoon: the whole building makes noise on purpose, and the beam swings away. BOARDED — 2 shots (130–131).",
+    grammar: "24mm up the stair in the dark; 85mm on the hands, and on the thumb on the wheel. The building's noise is sound, not picture; no dialogue in the scene, none on the frames.",
+    description: "Continuous, rewritten wordless on 30 September 2026. Pitch black, a narrow concrete stair. Vera climbs by touch, one hand on the wall; her other hand finds Jack's and pulls him up after her. Halfway up she stops and takes the lighter out of her pocket, her thumb on the wheel — below them boots, a flashlight crawling up the wall and falling away. She puts the lighter back unlit, and climbs. BOARDED — 3 shots (130–131, re-quoted; 131 RETAKE PENDING — the hand that finds the other now runs the other way; and 319, the thumb on the wheel: the seventh and last of the named close-ups).",
     lightingNotes: "Near-total dark; one hard white flashlight beam at the bottom of the stair.",
   },
   {
@@ -347,7 +349,7 @@ export const SCENES = [
     page: "n90-the-hive-through-the-rooms-continuous.md", board: "n90-through-the-rooms.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "35mm at doorway height; the rooms are seen from where Vera and Jack pass through them, one door after another.",
-    description: "Continuous. The old woman from the sumo holds a door; beyond it a candlelit kitchen, the dentist with a finger to his lips, the girl with the violin, the inside of a wardrobe. Every door has someone at it, nobody speaks or looks, and each closes softly behind them while a flashlight beam finds it and stops. The last room, in the rear wing, is empty, with an iron fire ladder outside its window. REWRITTEN 29 September 2026 (the roof and the gap are cut); the boarded frames (132, 133, 267) still show the retired roof and are RETAKE PENDING.",
+    description: "Continuous. A door with a sumo match murmuring behind it opens before Vera can knock — the old woman from 55, holding the way through; beyond it a candlelit kitchen, the dentist with a finger to his lips, the girl with the violin, the inside of a wardrobe. Every door has someone at it, nobody speaks or looks, and each closes softly behind them while a flashlight beam finds it and stops. The last room, in the rear wing, is empty, with an iron fire ladder outside its window. REWRITTEN again 30 September 2026 to open on the sumo door; 132 is re-quoted and held RETAKE PENDING against the new opening, and 133 and 267, regenerated on 29 September, still match.",
     lightingNotes: "Single candle or a torch turned low in each room; a flashlight beam finding each door as it closes.",
   },
   {
@@ -382,13 +384,13 @@ export const SCENES = [
   },
   {
     key: "s94", id: "neonoire-s94", n: 94, partId: "neonoire-part-feature",
-    title: "Only tea", location: "INT. BLACK SEDAN, BACK SEAT", time: "CONTINUOUS",
-    kind: "Standard", lighting: "Low key", slugline: "INT. BLACK SEDAN, BACK SEAT - CONTINUOUS #94#",
-    page: "n94-black-sedan-back-seat-continuous.md", board: "n94-black-sedan.md",
+    title: "The lit window", location: "EXT. POLICE STATION / INT. BLACK SEDAN", time: "CONTINUOUS",
+    kind: "Standard", lighting: "Low key", slugline: "EXT. POLICE STATION / INT. BLACK SEDAN - CONTINUOUS #94#",
+    page: "n94-police-station-black-sedan-continuous.md", board: "n94-black-sedan.md",
     cast: ["Kurose", "Detective Ishida"],
-    grammar: "35mm two-shot from the front seat, 85mm on Ishida at the window, 50mm when he drinks. Kurose never looks at him.",
-    description: "Continuous. Warm amber, leather, the rain far away. Kurose pours tea from a steel flask: get in, you'll catch cold; it's only tea. I did everything you asked, for twenty years. That's why you understand. Tokyo slides past. Where are we going? No answer. Ishida understands, and drinks the tea. BOARDED — 3 shots (141–143).",
-    lightingNotes: "Warm amber interior light on cream leather; cold blue and sodium sliding past outside.",
+    grammar: "24mm for the steps and the rain; 50mm at the open door; 85mm on the cup and the watch. No dialogue, no score, no explanation of the choice; the lit window is the last word the scene gets.",
+    description: "Continuous, rewritten wordless on 30 September 2026. At the foot of the steps a black sedan waits at the kerb, engine running, wipers going. The rear door opens from inside: warm amber, leather. Ishida stops in the rain and looks back up at the station — one lit window on the second floor where somebody is still working. From inside the car a man's clean hand holds out a cup of tea; on the wrist, the watch from the model. Ishida gets in. The door closes; the rain is suddenly very far away. BOARDED — 3 shots (141–143, all re-quoted the same day and all held RETAKE PENDING: the old cut showed Vera and a spoken invitation).",
+    lightingNotes: "Warm amber interior light on cream leather; rain and smeared sodium beyond the glass. The car never moves.",
   },
   {
     key: "s95", id: "neonoire-s95", n: 95, partId: "neonoire-part-feature",
@@ -410,16 +412,7 @@ export const SCENES = [
     description: "Morning. Grey daylight. A cardboard box on Ishida's desk; a young detective is clearing it. He opens the bottom drawer: empty. Then the desk phone rings: Ishida is in his own car under the expressway, no marks — he left a statement. On the wall, the clock still runs a minute fast. BOARDED — 4 shots (145–147, and 303 the call).",
     lightingNotes: "Flat grey morning daylight through the windows at right, the green-white tubes half on.",
   },
-  {
-    key: "s97", id: "neonoire-s97", n: 97, partId: "neonoire-part-feature",
-    title: "Tomorrow's Tokyo", location: "EXT. THE HIVE", time: "MORNING",
-    kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - MORNING #97#",
-    page: "n97-the-hive-morning.md", board: "n97-the-hive-morning.md",
-    cast: ["Vera Voss", "Kaneko", "Kurose", "Jack", "Harada"],
-    grammar: "24mm on the tent, 35mm at the shop window and the car, 50mm for the twenty metres, 85mm on Vera and Jack, and one insert on the screens.",
-    description: "Rain. A white ceremonial tent in front of the Hive, the rendering banner, a silver shovel in a red-and-white ribbon. Every screen in the shop window across the street shows Kurose — and Ishida beside him, with the crawl beneath (story pass 2). He steps out of his car; four prosecutors are waiting. He walks twenty metres to a grey car without an umbrella, and Vera does not look away, Harada beside her. Jack, alone, collar up. The ribbon goes dark in the rain. BOARDED — 8 shots (148–154, and 304 the crawl). Vera in costume Look D.",
-    lightingNotes: "Flat grey rainy daylight, the white tent glowing, cold TV glow in the shop window, white camera flashes.",
-  },
+
   {
     key: "s98", id: "neonoire-s98", n: 98, partId: "neonoire-part-feature",
     title: "The rain has stopped", location: "EXT. ROOFTOP OF JACK'S BUILDING", time: "DAY",
@@ -427,28 +420,19 @@ export const SCENES = [
     page: "n98-rooftop-of-jack-s-building-day.md", board: "n98-rooftop.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "24mm for the roof and the trains, 85mm on the clip, 50mm at the railing.",
-    description: "Days later. The rain has stopped for the first time in the film. A small flat roof, trains passing at eye level. Jack gives Vera the red bird clip, and tells her Mara was sorry. She cries at the railing; he stands beside her, close enough, not closer. Kaneko opens at six. BOARDED — 4 shots (155–157, and 241, the train window). Vera in costume Look E.",
+    description: "Days later. The rain has stopped for the first time in the film. A small flat roof, trains passing at eye level. Ishida left a statement — that's what the police say it says, Vera says, and Jack only asks if that is what it says. Jack gives Vera the red bird clip, and tells her Mara was sorry; she keeps his lighter and does not give it back. She cries at the railing; he stands beside her, close enough, not closer. Kaneko opens at six. BOARDED — 4 shots (155–157, and 241, the train window). Vera in costume Look E.",
     lightingNotes: "Pale washed daylight under an enormous sky, no sodium, no rain, the concrete drying.",
   },
-  {
-    key: "s99", id: "neonoire-s99", n: 99, partId: "neonoire-part-feature",
-    title: "Cut open", location: "EXT. THE HIVE", time: "DAY",
-    kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - DAY #99#",
-    page: "n99-the-hive-day.md", board: "n99-the-hive-day.md",
-    cast: ["Kaneko", "The Radio Repairman"],
-    grammar: "35mm tracking sideways along the cut-open face, 35mm on the crowd at the barrier.",
-    description: "Weeks later. The Hive is coming down, cut open like a cross-section in an old book: room after empty room. At the barrier, the radio repairman, the family, the girl with the violin case, and Kaneko holding the old sign wrapped in a blanket. BOARDED — 2 shots (158–159).",
-    lightingNotes: "Flat grey dry daylight, dust hanging in the air.",
-  },
+
   {
     key: "s100", id: "neonoire-s100", n: 100, partId: "neonoire-part-feature",
-    title: "A second bowl", location: "INT. KANEKO'S NEW COUNTER", time: "NIGHT",
+    title: "The city goes on", location: "INT. KANEKO'S NEW COUNTER", time: "NIGHT",
     kind: "Standard", lighting: "Practical night", slugline: "INT. KANEKO'S NEW COUNTER - NIGHT #100#",
     page: "n100-kaneko-s-new-counter-night.md", board: "n100-kaneko-new-counter.md",
     cast: ["Vera Voss", "Kaneko", "Jack"],
-    grammar: "35mm for the arch, 50mm from behind Vera for the hold.",
-    description: "A tiny counter in a brick railway arch under the old sign. Vera on the third stool, the red bird clip in her hair. The door opens; a man's shadow falls across the floor. Kaneko sets a second bowl in front of the fourth stool. She doesn't turn. BOARDED — 4 shots (160–161, 260, and 265, the count). Vera in costume Look F.",
-    lightingNotes: "One warm bulb and steam in a brick vault, cool blue street light through the door.",
+    grammar: "35mm for the arch and the six stools; 50mm on the sound-down television, read and unregarded; 50mm from behind Vera for the hold. The curtain stays a fourth wall until it doesn't: the last frame is the lit window behind it.",
+    description: "Rewritten 30 September 2026. A tiny new counter in a brick railway arch near the station: six new stools, the same height as the old ones. Steam; a train over the line, the bottles ticking and settling — the film's last echo of every train that shook the Hive. On the shelf above the door a small old television plays the evening news nobody watches: Kurose walking into a building between his lawyers, cameras flashing; a photograph of Ishida in uniform; then the weather. Nobody looks up. Kaneko ladles; Jack sits on the second stool, and the third is empty. Vera counts the stools and sits on the third, eats all of it, and pays too much — Kaneko looks at the money, then at her, and leaves it where it is. Past the curtain, a lit window and a radio through a wall: the city going on. HOLD on the three of them in the steam. FADE OUT. BOARDED — 5 shots (160–161, 260, and 265, the count — all re-quoted, 160 RETAKE PENDING — and 320, the news nobody watches).",
+    lightingNotes: "One warm bulb and steam in a brick vault, the television's grey flicker above the door, cool blue street light through it.",
   },
   {
     key: "s8", id: "neonoire-s8", n: 8, partId: "neonoire-part-feature",
@@ -472,12 +456,12 @@ export const SCENES = [
   },
   {
     key: "s10", id: "neonoire-s10", n: 10, partId: "neonoire-part-feature",
-    title: "Depends who's calling", location: "INT. JACK'S OFFICE", time: "NIGHT",
+    title: "Who calls me that?", location: "INT. JACK'S OFFICE", time: "NIGHT",
     kind: "Standard", lighting: "Practical night", slugline: "INT. JACK'S OFFICE - NIGHT #10#",
     page: "n10-jack-s-office-night.md", board: "n10-jacks-office-night.md",
     cast: ["Jack", "Vera Voss", "Daniel Voss"],
     grammar: "24mm for the room, 50mm on the desk, 85mm on Jack and the photograph.",
-    description: "One room against the railway: a rice ball, a lighter with no cigarettes, a silent samurai film. Vera sets the red bird clip on the desk, and her family photograph slides out face up. Jack holds it by its edges like evidence. Ten thousand yen a day. BOARDED — 4 shots (166–168, and 244, down the stairs).",
+    description: "One room against the railway: a rice ball, a lighter with no cigarettes, a silent samurai film. Vera sets the red bird clip on the desk, and her family photograph slides out face up. Jack holds it by its edges like evidence. The call knows a name nobody has used in years: Who calls me that? Ten thousand yen a day. BOARDED — 4 shots (166–168, and 244, down the stairs).",
     lightingNotes: "The green desk lamp, grey CRT flicker, train light through the blinds.",
   },
   {
@@ -487,7 +471,7 @@ export const SCENES = [
     page: "n11-jack-s-office-later.md", board: "n11-jacks-office-later.md",
     cast: ["Jack", "Daniel Voss"],
     grammar: "85mm on the photograph.",
-    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you're too old to be haunted. BOARDED — 5 shots (169, 245–246, and 251–252, the call and the lighter).",
+    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you found enough twenty years ago. BOARDED — 5 shots (169, 245–246, and 251–252, the call and the lighter).",
     lightingNotes: "Only the desk lamp and TV static.",
   },
   {
@@ -497,7 +481,7 @@ export const SCENES = [
     page: "n12-backstreet-kanda-night.md", board: "n12-backstreet-night.md",
     cast: ["Jack"],
     grammar: "35mm from the cold open's own position.",
-    description: "The cold open's street, four days on. Jack stands where Mara stood, finds a torn strap at knee height, and hears from the barber that the car came back. Because they didn't find it. BOARDED — 3 shots (170, and 247–248, the barber and the can).",
+    description: "The cold open's street, four days on. Jack stands where Mara stood, finds a torn strap at knee height; the barber asks why come back, shrugs and pulls the shutter — nothing was found here, and neither of them says it aloud. BOARDED — 3 shots (170, and 247–248, the barber and the can).",
     lightingNotes: "Sodium orange and fluorescent green, the vending machine's white light, steady rain.",
   },
   {
@@ -580,16 +564,7 @@ export const SCENES = [
     description: "Jack flips the light switch. Dark. The gunman fires; the vending machine lights up and says thank you very much. The payphone rings and rings. BOARDED — 3 shots (180, 254, and 256, Jack getting Mr. Noda out, no weapons in frame).",
     lightingNotes: "The cold: steel blue and blue-black, xenon-white headlight beams, the warm lights dead.",
   },
-  {
-    key: "s13", id: "neonoire-s13", n: 13, partId: "neonoire-part-feature",
-    title: "Nobody comes here who isn't lost", location: "INT. THE HIVE, NOODLE SHOP STOREROOM", time: "NIGHT",
-    kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #13#",
-    page: "n13-the-hive-noodle-shop-storeroom-night.md", board: "n13-hive-storeroom-night.md",
-    cast: ["Mara Voss", "Kaneko"],
-    grammar: "35mm for the room, 50mm on the futon, 85mm on the key.",
-    description: "Mara hides in the storeroom behind Kaneko's counter in a cardigan that isn't hers. Your father sat on the third stool. Under the futon cover: 31 missed calls from Vera. A train shakes the bulb; her thumb doesn't move. In her fist, the key. BOARDED — 4 shots (181–183, and 249, the missed calls).",
-    lightingNotes: "One bare bulb, flour dust, the railway's underside overhead.",
-  },
+
   {
     key: "s14", id: "neonoire-s14", n: 14, partId: "neonoire-part-feature",
     title: "Someone who meant to come back", location: "INT. MARA'S APARTMENT", time: "DAY",
@@ -597,17 +572,17 @@ export const SCENES = [
     page: "n14-mara-s-apartment-day.md", board: "n14-maras-apartment-day.md",
     cast: ["Vera Voss", "Jack"],
     grammar: "35mm for the room, 50mm on the sketchbook.",
-    description: "A tiny studio of sketches and clothes, a packed suitcase, a flight booked for next month. The last things Vera said. A sketchbook full of the same noodle counter, every stroke of the kanji correct. BOARDED — 2 shots (184–185).",
+    description: "A tiny studio of sketches and clothes, a packed suitcase, a flight booked for next month. The last things Vera said. A sketchbook full of the same noodle counter, every stroke of the kanji correct. Vera sets the red bird clip on top of the sketchbook — Take this too. It's mine. She stole it. — and Jack takes both. BOARDED — 2 shots (184–185).",
     lightingNotes: "Grey daylight through one window.",
   },
   {
     key: "s15", id: "neonoire-s15", n: 15, partId: "neonoire-part-feature",
-    title: "A gap in someone's teeth", location: "EXT. THE HIVE", time: "DAY",
+    title: "Forgotten by the city", location: "EXT. THE HIVE", time: "DAY",
     kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - DAY #15#",
     page: "n15-the-hive-day.md", board: "n15-the-hive-day.md",
     cast: ["Jack"],
     grammar: "24mm for the street, 50mm square to the stair.",
-    description: "The Hive between new glass towers, the rendering banner beside it. Jack looks up as if at someone he used to know, then climbs in: the stairway motif, going up into the past. BOARDED — 2 shots (186–187).",
+    description: "Rain. The Hive between two new glass towers like a gap behind a shutters-up street, the white hoarding and its painted smiling plaza beside it. Jack looks up as if at someone he used to know, then climbs in: the stairway motif, going up into the past. BOARDED — 2 shots (186–187).",
     lightingNotes: "Flat grey rainy daylight.",
   },
   {
@@ -627,7 +602,7 @@ export const SCENES = [
     page: "n17-kaneko-s-noodle-counter-continuous.md", board: "n17-kaneko-counter-first.md",
     cast: ["Jack", "Kaneko", "Mara Voss"],
     grammar: "35mm, frontal to the counter.",
-    description: "Kaneko knows him: a boy in a cheap suit who came with the American. Eat. Then go. He pays far too much and leaves his card. Behind the curtain, something moves. BOARDED — 2 shots (189–190).",
+    description: "Kaneko knows him: a boy in a cheap suit who came with the American. Jack sits on the fourth stool, beside the third, and neither of them says whose the third is. Everything is going. We are just slower. Eat. Then go. He pays far too much and leaves his card. Behind the curtain, something moves. BOARDED — 2 shots (189–190).",
     lightingNotes: "One fluorescent tube and steam.",
   },
   {
@@ -656,8 +631,8 @@ export const SCENES = [
     kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, NOODLE SHOP STOREROOM - CONTINUOUS #20#",
     page: "n20-the-hive-noodle-shop-storeroom-continuous.md", board: "n20-storeroom-prove-it.md",
     cast: ["Jack", "Mara Voss"],
-    grammar: "35mm for the standoff, 85mm on the clip.",
-    description: "A kitchen knife in two shaking hands, an open palm in the curtain doorway, and a red bird clip between them: Dad gave it to me. Jack promises, and the promise costs him. BOARDED — 2 shots (193–194); coverage 284 (Mara's coward line in the storeroom) appended 28 September 2026.",
+    grammar: "35mm for the storeroom and the doorway; 85mm on the replayed voicemail and on the clip resting on the sketchbook. Nothing longer, and no knife.",
+    description: "Night, after the last train, as rewritten 30 September 2026. On the futon, Mara plays her sister's voicemail, and plays it again — the two lines lifted from the cut scene 13. Jack in the doorway; her sketchbook and the red bird clip go between them on a flour sack — no knife in the room — and the promise costs him: Is she okay? — does she know... They have my purse. My passport. BOARDED — 4 shots (193–194, re-quoted and held RETAKE PENDING — the knife and the open palm are out of the scene; 284, the coward line, still true), and 309, the voicemail replay: the second of the seven named close-ups.",
     lightingNotes: "One bare bulb, flour dust, the railway humming overhead.",
   },
   {
@@ -677,7 +652,7 @@ export const SCENES = [
     page: "n22-all-night-noodle-counter-under-the-tracks-night.md", board: "n22-counter-under-the-tracks.md",
     cast: ["Vera Voss", "Jack"],
     grammar: "35mm for the arch, 50mm along the counter.",
-    description: "A brick arch counter where the cups tremble every time a train goes over. Her father, Tokyo, the man who made the noodles; then she sleeps, and he moves her cup back from the edge. BOARDED — 2 shots (197–198); coverage 285 (Jack's hand over the inside pocket) appended 28 September 2026.",
+    description: "A brick arch counter where the cups tremble every time a train goes over. A man wrote to her last week — Dad didn't do it; the police knew — and she told Jack all of it, of her father, Tokyo, the man who made the noodles; then she sleeps, and he moves her cup back from the edge. BOARDED — 2 shots (197–198); coverage 285 (Jack's hand over the inside pocket) appended 28 September 2026.",
     lightingNotes: "Fluorescent tube in a green-tiled arch, warm bulb at the far end.",
   },
   {
@@ -690,16 +665,7 @@ export const SCENES = [
     description: "Smoke, red lanterns, salarymen talking too loud. Ishida names what Sakai was, and the Shiohama fire among others; bring what you find to me, not to the department. BOARDED — 1 shot (199).",
     lightingNotes: "Red lantern glow and sodium orange under the steel bridge.",
   },
-  {
-    key: "s24", id: "neonoire-s24", n: 24, partId: "neonoire-part-feature",
-    title: "The fortieth floor", location: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT", time: "NIGHT",
-    kind: "Standard", lighting: "Low key", slugline: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - NIGHT #24#",
-    page: "n24-chairman-s-office-kurose-development-night.md", board: "n24-chairmans-office-night.md",
-    cast: ["Kurose", "The Masked Men"],
-    grammar: "35mm static; the model is the only lit thing.",
-    description: "Forty floors of glass and rain: the redevelopment model with a fountain where the Hive stands, Kurose at the window, and the masked leader unmasked by the door. Let the detective look; it's what he does afterwards that he's bad at. BOARDED — 1 shot (201).",
-    lightingNotes: "Cold blue-black glass, one pool of light on the white model, the city grid amber far below.",
-  },
+
   {
     key: "s25", id: "neonoire-s25", n: 25, partId: "neonoire-part-feature",
     title: "The number 114", location: "INT. THE HIVE, NOODLE SHOP STOREROOM", time: "NIGHT",
@@ -708,7 +674,7 @@ export const SCENES = [
     cast: ["Jack", "Mara Voss"],
     grammar: "35mm across three feet of dark.",
     description: "A cold bowl of rice and a whispered timeline: twenty years, the bar, the meeting that was supposed to happen. The key's number is 114, and Jack leaves it with her because nobody knows where she is. BOARDED — 1 shot (202).",
-    lightingNotes: "One bare bulb, lower and darker than scenes 13–20: warmth turned conspiratorial.",
+    lightingNotes: "One bare bulb, lower and darker than scene 20: warmth turned conspiratorial.",
   },
   {
     key: "s26", id: "neonoire-s26", n: 26, partId: "neonoire-part-feature",
@@ -737,7 +703,7 @@ export const SCENES = [
     page: "n28-fishing-town-boso-coast-day.md", board: "n28-boso-sea-wall-steps.md",
     cast: ["Jack"],
     grammar: "35mm square to the steps, low and level; the stairway motif going down.",
-    description: "Grey sea, grey sky, salt-scoured paint. Jack's car on the sea wall and the stone steps going down to the slipway — the stairway motif, descending, into a dead man's past. BOARDED — 1 shot (205).",
+    description: "Rain on the slipway. Grey sea lost in grey weather, salt-scoured paint — wet, like everything before 98. Jack's car on the sea wall and the stone steps going down to the slipway — the stairway motif, descending, into a dead man's past. BOARDED — 1 shot (205).",
     lightingNotes: "Salt slate and sea green; the coldest daylight in the film.",
   },
   {
@@ -747,7 +713,7 @@ export const SCENES = [
     page: "n29-mrs-sakai-s-house-day.md", board: "n29-mrs-sakai-house-day.md",
     cast: ["Jack", "Mrs. Sakai"],
     grammar: "35mm across the kotatsu; the altar keeps the only smile.",
-    description: "Fifteen years apart and the police already came. Mrs Sakai pours tea she doesn't want to pour, then tells him about the temple, the doctor, and a man glad he could stop being afraid of the wrong thing. The receipts: rent paid on something, somewhere. BOARDED — 1 shot (206).",
+    description: "Fifteen years apart and the police already came. Mrs Sakai pours tea she doesn't want to pour, then tells him about the temple, the doctor, and a man glad he could stop being afraid of the wrong thing. Every January, cash in an envelope — even after he left, the receipts kept coming here: KATO RENTAL LOCKERS, UENO, No. 114, paid in full. Rent paid on something, somewhere. BOARDED — 1 shot (206).",
     lightingNotes: "Tatami beige, altar gold, television blue-grey; grief draining the warmth.",
   },
   {
@@ -787,7 +753,7 @@ export const SCENES = [
     page: "n36-vera-s-apartment-night.md", board: "n36-vera-apartment-night.md",
     cast: ["Vera Voss"],
     grammar: "50mm at floor height; the phone light is the only lamp.",
-    description: "Mara? — no: it's me. Vera on the floor in the dark with the phone's small warm light, come back safe, come back safe anyway, and both of them holding on a moment longer than they need to. BOARDED — 1 shot (210).",
+    description: "Mara? — no: it's me. Vera on the floor in the dark with the phone's small warm light, come back safe, come back safe anyway, and both of them holding on a moment longer than they need to. The coast. An inn off the highway — that much he says; that much only. BOARDED — 1 shot (210).",
     lightingNotes: "A warm pool of phone light in a cold dark room.",
   },
   {
@@ -872,13 +838,13 @@ export const SCENES = [
   },
   {
     key: "s51", id: "neonoire-s51", n: 51, partId: "neonoire-part-feature",
-    title: "Hat in hand", location: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT", time: "DAWN",
+    title: "The model, corrected", location: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT", time: "DAWN",
     kind: "Standard", lighting: "Blue hour", slugline: "INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAWN #51#",
     page: "n51-chairman-s-office-kurose-development-dawn.md", board: "n51-hat-in-hand.md",
-    cast: ["Kurose", "Detective Ishida"],
-    grammar: "35mm static; two men and a model of tomorrow.",
-    description: "The first two-shot of Kurose and Ishida: then we take both, the girl and the thing; a bow held a moment too long. BOARDED — 1 shot (219).",
-    lightingNotes: "Dawn grey glass; one warm pool on the tea.",
+    cast: [],
+    grammar: "35mm static, square to the table; 85mm only for the hand and the watch. The only move in the scene is a hand lifting a neighbourhood off a plaza.",
+    description: "Dawn, as rewritten 30 September 2026 — wordless. The fortieth floor, nobody in the leather chairs. On its long table the model of the redevelopment: glass towers, sponge trees, a broad white plaza, and at the plaza's edge one small, dark, patched block out of place among the towers — the Hive. A man's clean hand, expensive watch, lifts the Hive out of the model and sets it on a tray beside a cup of tea. The plaza underneath is already finished; tiny painted people cross it. BOARDED — 2 shots (310–311, the 30 September revision boards); the old pair (219, 274) was retired with the two-man scene it boarded.",
+    lightingNotes: "Dawn grey glass, the room unlit; one warm note, the cup of tea on the tray.",
   },
   {
     key: "s52", id: "neonoire-s52", n: 52, partId: "neonoire-part-feature",
@@ -897,7 +863,7 @@ export const SCENES = [
     page: "n53-vera-s-apartment-bathroom-continuous.md", board: "n53-pink-water.md",
     cast: ["Vera Voss", "Jack"],
     grammar: "50mm low and close; the cloth, the water, the face.",
-    description: "She cleans the cut while he measures her face; pink water, a plaster, a hand stayed on his face, and a kiss that changes everything. BOARDED — 1 shot (221).",
+    description: "She cleans the cut while he measures her face; pink water, a plaster, a hand stayed on his face, and a kiss that changes everything. She asks twice — the second answer she gives herself; then the phone rings and she turns it face-down before whatever that is, and it stays face-down: it is another promise. BOARDED — 2 shots (221, and 275, the face-down phone).",
     lightingNotes: "One warm bulb on white tile; the first warmth since the inn.",
   },
   {
@@ -962,12 +928,12 @@ export const SCENES = [
   },
   {
     key: "s59", id: "neonoire-s59", n: 59, partId: "neonoire-part-feature",
-    title: "At the edge of a high place", location: "EXT. THE HIVE", time: "CONTINUOUS",
+    title: "It rings. Nobody answers.", location: "EXT. THE HIVE", time: "CONTINUOUS",
     kind: "Standard", lighting: "Overcast soft", slugline: "EXT. THE HIVE - CONTINUOUS #59#",
     page: "n59-the-hive-continuous.md", board: "n59-glowing-in-the-rain.md",
     cast: ["Vera Voss", "Jack"],
-    grammar: "50mm in the wet street; her glow, his scan.",
-    description: "Vera glowing, arms around him in the rain; over her shoulder his eyes count the parked cars. BOARDED — 1 shot (228).",
+    grammar: "50mm in the wet street; 35mm across the INTERCUT to the silent house. Her glow, his scan, and a dial tone in a room where nobody is left to hear it.",
+    description: "Continuous, as rewritten 30 September 2026. At the payphone under the tin awning Jack holds the ringing receiver; INTERCUT, the kotatsu, the altar, the teacup on its side — the phone rings in Mrs. Sakai's empty room. Vera comes out of the Hive glowing: the shop is real, the woman remembered them, and a newspaper editor and a promised car are in her mouth in the same breath. It rings; nobody answers; he hangs up. BOARDED — 1 shot (228, re-quoted the same day and held RETAKE PENDING: the embrace the image shows is out of the scene).",
     lightingNotes: "Grey rain; the Hive's dark mouth.",
   },
   {
@@ -977,7 +943,7 @@ export const SCENES = [
     page: "n60-the-hive-noodle-shop-storeroom-night.md", board: "n60-i-want-my-sister.md",
     cast: ["Jack", "Mara Voss"],
     grammar: "35mm across the futon; the key changes hands for the last time.",
-    description: "Find what it opens and then this ends: the key passes to Jack, and with it the trap Ishida will set. BOARDED — 1 shot (229).",
+    description: "Find what it opens and then this ends: the key, on its shoelace round her neck, passes into his hand, its worn tag reading 114, and with it the trap Ishida will set. BOARDED — 1 shot (229).",
     lightingNotes: "One bare bulb, flour dust.",
   },
   {
@@ -987,7 +953,7 @@ export const SCENES = [
     page: "n61-ishida-s-car-night.md", board: "n61-nine-oclock.md",
     cast: ["Jack", "Detective Ishida"],
     grammar: "50mm from the back seat; two profiles and a dash glow.",
-    description: "Neither looks at the other: a safe car, a safe house, no paperwork — and Sakai's thing? You've done well, Jack. BOARDED — 1 shot (230).",
+    description: "Neither looks at the other: a safe car, a safe house, no paperwork — and Sakai's thing? Where else would the Voss girl go — you took me there yourself, twenty years ago. Jack looks at the hands on the wheel and does not ask. You've done well, Jack. BOARDED — 1 shot (230).",
     lightingNotes: "Dash glow inside, sodium orange under the expressway.",
   },
   {
@@ -1006,8 +972,8 @@ export const SCENES = [
     kind: "Standard", lighting: "Practical night", slugline: "INT. KATO RENTAL LOCKERS, UENO - NIGHT #63#",
     page: "n63-kato-rental-lockers-ueno-night.md", board: "n63-kato-rental-lockers.md",
     cast: ["Jack"],
-    grammar: "35mm down the rows; the lockers rattle like doors being tried.",
-    description: "98, 106, 112, 114: a cassette labelled SHIOHAMA and a notebook signed DANIEL VOSS, and a line underlined twice that we never see. BOARDED — 1 shot (232).",
+    grammar: "35mm down the rows; 85mm on the flyleaf and on the cassette; the lockers rattle like doors being tried.",
+    description: "Night, under the arch. The key opens 114: a padded envelope, taped shut, and under it a small water-stained notebook. In the envelope, a cassette labelled in a shaking hand: SHIOHAMA. On the flyleaf: DANIEL VOSS. A page near the end carries a line underlined twice; he reads it, and we see his face, not the page. The lockers rattle in their rows like a room full of doors being tried. BOARDED — 3 shots (232, the rows, re-quoted; 259, the cassette; and 312, the flyleaf — the third of the seven named close-ups).",
     lightingNotes: "One fluorescent tube in grey steel; dust in the light.",
   },
   {
@@ -1087,7 +1053,7 @@ export const SCENES = [
     page: "n71-the-hive-passage-continuous.md", board: "n71-everyones-awake.md",
     cast: ["Jack", "Mara Voss", "Kaneko", "The Radio Repairman"],
     grammar: "The floor of the passage, and a thousand windows waking above it.",
-    description: "Mara dies looking up at the lights; Kaneko folds her apron under her head. BOARDED — 1 shot (240).",
+    description: "The stairwell door. Jack bolts it; shots splinter the wood. Mara dies against the wall, hand dark and wet, under a thousand waking windows, with one thing left to say: Tell her. At her feet the split bag — rice balls, a toothbrush, the cardigan, and pages of drawings soaking in the thin stream that runs along the floor, which Kaneko and the old woman kneel to gather, page by page, while Jack holds on. The apron folded under her head; the bulbs swing; nothing is explained. BOARDED — 2 shots (240, and 313, the drawings in the water — the fourth of the seven named close-ups).",
     lightingNotes: "Cold corridor green at floor level; warm tungsten rectangles multiplying above.",
   },
   {
@@ -1107,7 +1073,7 @@ export const SCENES = [
     page: "n27a-small-bar-kanda-day.md", board: "n27a-she-was-here.md",
     cast: ["Okada", "Vera Voss"],
     grammar: "Daylight in a bar where someone died, and a woman crouching where her sister hid.",
-    description: "Vera on her own: Okada on Jack carrying things by himself, then the floor behind the counter, exactly where Mara crouched. BOARDED — 3 shots (290–292).",
+    description: "Vera on her own: Okada on Jack carrying things by himself; then Vera asks Show me where, and stands on the floor behind the counter, exactly where Mara crouched, while the man of the house flaps at the memory he cannot put down. BOARDED — 3 shots (290–292).",
     lightingNotes: "Flat grey daylight as scene 8; the CRT stays dark.",
   },
   {
@@ -1146,8 +1112,8 @@ export const SCENES = [
     kind: "Standard", lighting: "Natural daylight", slugline: "EXT. THE PLAZA, WHERE THE HIVE WAS - DAY #99A#",
     page: "n99a-the-plaza-where-the-hive-was-day.md", board: "n99a-the-finished-plaza.md",
     cast: [],
-    grammar: "Months later. Winter light, thin and clear; no rain. The model from Kurose's office built: pale paving, a running fountain, small white trees, glass on three sides, and a gardener straightening a tree that didn't need it. Overhead the same railway, and nothing trembles.",
-    description: "Story pass 2, 29 September 2026. The plaza is finished and empty, the fountain runs, the hoarding still says KUROSE DEVELOPMENT. TOMORROW'S TOKYO., and a gardener straightens a tree with one finger. The film's last look at the Hive's ground. BOARDED — 3 shots (305–307).",
+    grammar: "Months later. Winter light, thin and clear; no rain. The model built and the patch erased: pale paving, a strip of new grass, a bench nobody sits on, glass towers on three sides, and real people crossing exactly like the painted ones. No fountain, no hoarding, no gardener, no train — the last sequence is stripped back to the revision's one sentence: nothing marks where anything was.",
+    description: "Rewritten 30 September 2026: the finished plaza, stripped of the story pass's fountain, hoarding and gardener. Months later, thin winter light, no rain. The white plaza from the model, built; real people cross it now, exactly like the painted ones. A strip of new grass. A bench nobody sits on. Nothing marks where anything was. BOARDED — 3 shots (305–307), re-quoted the same day and all three held RETAKE PENDING: their images show the fountain, the hoarding and the gardener the draft no longer contains.",
     lightingNotes: "Pale clear winter daylight; no sodium, no murk — the Hive's weather is gone with it.",
   },
 ];
@@ -1188,26 +1154,40 @@ export const humanTitle = location => {
 const pageSlug = text => text.replace(/^(?:INT|EXT)\.?\s*/i, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 const lightingForTime = time => (/NIGHT/.test(time) ? "Practical night" : /DAY/.test(time) ? "Natural daylight" : /DUSK|DAWN/.test(time) ? "Blue hour" : undefined);
 
+/**
+ * Scene numbers never move. The 30 September 2026 revision cut four scenes; their numbers stay
+ * retired in the draft (like stable frame ids and asset filenames) rather than shifting every
+ * scene, board and image after them. A skip is legal only where the ledger below says a scene
+ * was cut; everything else must still run in order.
+ */
+export const CUT_SCENES = new Set([13, 24, 97, 99]);
+
 export function featureScenes(fountain) {
   const lines = fountain.split("\n");
   const marks = sceneMarkers(fountain);
   if (!marks.length) throw new Error(`${FOUNTAIN} carries no numbered scenes — every scene heading must end with its " #n#" marker.`);
   // The numbered scenes run 1..N in order. A scene added after the numbering was fixed carries its
   // neighbour's number plus a letter (`#25A#`) and sits directly after that neighbour, so nothing
-  // already boarded is renumbered.
+  // already boarded is renumbered. Cut scenes retire their number (CUT_SCENES); they never move.
   let base = 0;
   let lastSuffix = "";
   marks.forEach(mark => {
     if (!mark.suffix) {
-      if (mark.n !== base + 1) throw new Error(`${FOUNTAIN} scene markers must run 1..N in order; after scene ${base} comes #${mark.n}#`);
+      let expected = base + 1;
+      while (CUT_SCENES.has(expected)) expected += 1;
+      if (mark.n !== expected) throw new Error(`${FOUNTAIN} scene markers must run 1..N in order; after scene ${base} comes #${mark.n}#`);
       base = mark.n;
       lastSuffix = "";
     } else {
-      if (mark.n !== base || mark.suffix <= lastSuffix) throw new Error(`${FOUNTAIN} inserted scene #${mark.n}${mark.suffix}# must follow scene ${mark.n} in letter order`);
+      // An inserted scene follows its base scene; a base that was itself cut (99A after 99) is allowed too.
+      const cutBase = mark.n === base + 1 && CUT_SCENES.has(mark.n);
+      if ((mark.n !== base && !cutBase) || (mark.n === base && mark.suffix <= lastSuffix)) throw new Error(`${FOUNTAIN} inserted scene #${mark.n}${mark.suffix}# must follow scene ${mark.n} in letter order`);
       lastSuffix = mark.suffix;
     }
   });
-  const straySlug = lines.findIndex(line => /^(INT|EXT)[. ].* - /.test(line.trim()) && !/ #\d+[A-Z]?#$/.test(line.trim()));
+  const straySlug = lines.findIndex((line, i) => /^(INT|EXT)[. ].* - /.test(line.trim()) && !/ #\d+[A-Z]?#$/.test(line.trim())
+    // an intercut mini-slug belongs to the scene above it, not to its own page
+    && !(lines.slice(0, i).map(l => l.trim()).filter(Boolean).pop() === "INTERCUT WITH:"));
   if (straySlug >= 0) throw new Error(`${FOUNTAIN} line ${straySlug + 1} reads like a scene heading but carries no " #n#" marker — mark it, or the Screenplay tab loses a scene.`);
   return marks.map((mark, i) => {
     const bare = mark.text.replace(/ #\d+[A-Z]?#$/, "");
@@ -1399,7 +1379,10 @@ export function parseBoard(markdown, scene) {
     else if (seenCoverage) throw new Error(`Scene ${scene.n} puts a primary shot after a coverage shot`);
   }
   for (const [i, shot] of primary.entries()) {
-    if (shot.n !== primary[0].n + i) throw new Error(`Scene ${scene.n} shot numbers must run contiguously from ${primary[0].n} (found ${shot.n} at position ${i + 1})`);
+    // 30 September 2026: the revision retires individual frames inside a scene, so the run may
+    // skip numbers (retired numbers stay retired, like the cut scenes in featureScenes) — but
+    // it must still ascend by one-or-more, never repeat and never reorder.
+    if (i && shot.n <= primary[i - 1].n) throw new Error(`Scene ${scene.n} shot numbers must ascend (found ${shot.n} at position ${i + 1})`);
   }
   if (new Set(shots.map(shot => shot.n)).size !== shots.length) throw new Error(`Scene ${scene.n} repeats a shot number`);
   for (const shot of shots) {

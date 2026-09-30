@@ -33,6 +33,15 @@ Gone.
 It should have gone twenty years ago.
 
 VERA
+Ishida left a statement. He acted alone.
+
+JACK
+Is that what it says?
+
+VERA
+That's what the police say it says.
+
+VERA
 Harada has Mara's drawings. The pages from the floor of the bar. She says they're the only eyewitness there is.
 
 JACK

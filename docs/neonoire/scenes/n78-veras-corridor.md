@@ -42,3 +42,21 @@ TIME: 8
 ID: neonoire-shot-92
 IMAGE: 90-daniel-voss.jpg
 NOTE: The only legible writing in scenes 77–79, and the draft writes it: DANIEL VOSS. Nothing else on the page. Her face is withheld until scene 79.
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+The revision opens the scene on Jack's door, not Vera's.
+
+---
+
+316. MEDIUM CLOSE-UP — 50mm, static, low angle — Squared to the door.
+On the doormat of the third-floor door, a cloth-covered notebook: a hand sets it down and squares it to the panel, and the footsteps go. Grey dawn, dripping railings.
+SCRIPT: "He sets Daniel's notebook on the mat, squares it to the door, and goes."
+CAST: Jack
+LIGHT: Blue hour
+TIME: 6
+ID: neonoire-shot-316
+IMAGE: 316-squared-to-the-door.jpg
+NOTE: The notebook is the one Jack wrapped in newspaper in scene 77 and could not write on: no envelope now, and 'squares it to the door' is the whole man. Placeholder slot.

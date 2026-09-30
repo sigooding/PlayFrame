@@ -10,7 +10,7 @@ INT. KANEKO'S NOODLE COUNTER - CONTINUOUS #56#
 
 Lunchtime. Steam. Three customers.
 
-Vera sits on the third stool.
+Vera sits at the counter.
 
 Kaneko turns from the pot, sees her, and freezes. Just for a second. Then she goes on working.
 
@@ -29,6 +29,12 @@ Vera's breath catches.
 VERA
 (in Japanese)
 You remember him?
+
+KANEKO
+(in Japanese)
+Your father used to sit on the third stool.
+
+Vera looks at it. She moves along to it and sits.
 
 KANEKO
 (in Japanese)
