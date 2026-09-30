@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-30",
+  "method": "text-to-image",
+  "imageReferences": [],
+  "nativeDimensions": [
+    1376,
+    768
+  ],
+  "deliveryDimensions": [
+    1920,
+    1080
+  ],
+  "normalization": "Full-frame resize; no cropping, compositing or old pixels",
+  "sha256": {
+    "public/images/neonoire/s1/01-backstreet.jpg": "0ca7978d419ebf1ffd10a35e3823e1340df8b5cc3b34d6659da03729cd3ab50c",
+    "public/images/neonoire/s1/02-vending.jpg": "53565f12226275d6af8f32aa84c50442c2657bb75a0d1f9b68ff8813f5c33138",
+    "public/images/neonoire/s1/03-mara-walks.jpg": "2e84999ddc9a57b104248c3e0fe0d7b98ee86a804733e326b7f1c2175360e24e",
+    "public/images/neonoire/s1/04-mara-phone.jpg": "73146d881a82473ba3c83e71ee700494f556a91a5cdae0678f945420935c7b7a",
+    "public/images/neonoire/s1/05-phone-off.jpg": "f983acede5331b44ffc4a1dc50c6efd0b1cb397f8c41c27467f414f9ea8b764d",
+    "public/images/neonoire/s1/06-barbershop-doorway.jpg": "253ff4dac2fa5debad253af1f6137398e493c03b5abf96d4687cf2fd61cfe898",
+    "public/images/neonoire/s1/07-old-man.jpg": "ba7f4cf317bc71d98db76d725049ddefcc00a505d5d3dab442aff7c340be5cd3",
+    "public/images/neonoire/s1/08-sedan-arrives.jpg": "2e4b35604c041fef3d8739d966bb8ccb66fb35282d2bcb28ee392114b6d3e821",
+    "public/images/neonoire/s1/09-old-man-stops.jpg": "ed5bfc0b8d59497cfc5700da8fc5d764973f17b19567ad5f828f10e9a2d7d2e9",
+    "public/images/neonoire/s2/19-the-bar.jpg": "92a2bb9b93ff1bc5e1af261350e89345f9a5fad5967f777dca18d93bf14f9381"
+  }
+}

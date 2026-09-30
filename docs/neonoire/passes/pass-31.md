@@ -8,7 +8,7 @@
   ```bash
   convert FILE.jpg -resize "1920x1080^" -gravity center -extent 1920x1080 -quality 92 -strip FILE.jpg
   ```
-- Attach the continuity sheet (or its face crop) for every named character in the shot, and the studio keys listed for the scene — they are the look the film is already being generated in.
+- COLD-OPEN EXCEPTION: scenes 1–2 (including 280–282) use fresh text-only briefs with NO image references; ignore the old reference instructions for those shots. Elsewhere attach the listed cast sheets and studio keys.
 - Where the generator supports a negative prompt, use the AVOID list; where it does not, keep those things out of frame yourself.
 - The film explains nothing. No captions, no readable signage invented for the plot, no reaction emphasis, no glamour.
 - British/American spelling is irrelevant here; **no added captions**; only include readable text explicitly required by the board (for example MARA VOSS on the monitor).

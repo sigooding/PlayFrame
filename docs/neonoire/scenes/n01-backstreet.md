@@ -1,5 +1,13 @@
 # NEONOIRE — SCENE 1 — EXT. BACKSTREET, KANDA
 
+> **30 September 2026 — FRESH IMAGE PASS OVERRIDES ALL OLD VISUAL DIRECTIONS BELOW.**
+> The director requests new images without influence from existing scenes. Use text-only
+> briefs in `scripts/neonoire/cold-open-fresh.mjs`, never old images, sheets or board layouts.
+> Stable shot numbers and screenplay beats below are retained as editorial history, not visual
+> references. Ten images generated (1–9, 19); 21 await generation, including 280–282.
+> All remain Needs review. [Fresh-pass ledger](../passes/cold-open-fresh-2026-09-30.md).
+
+
 **Board, and the script.** The screenplay page for this scene is [n01-backstreet.md](../screenplay/n01-backstreet.md), carrying the draft verbatim. This document is the numbered shot board the storyboard is built from, one pass of ten frames at a time.
 
 Scene: EXT. BACKSTREET, KANDA — NIGHT (cold open, before the titles)

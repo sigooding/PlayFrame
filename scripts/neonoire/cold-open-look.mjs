@@ -1,3 +1,5 @@
+// HISTORICAL: superseded for scenes 1–2 by cold-open-fresh.mjs on 30 September 2026.
+// Do not use these old references for the fresh pass. Kept only for historical metadata.
 // The pre-title cold open spans scenes 1 and 2 (shots 1–28). Regenerate in batches;
 // do not claim that legacy frames after this boundary have been revised.
 export const coldOpenCompletedThrough = 28;

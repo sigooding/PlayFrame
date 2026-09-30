@@ -8,6 +8,7 @@
 // carries a shot type and a lens from the app's own libraries, every claimed keyframe is on disk,
 // the cast links are reciprocal, and the prompt studio and CSV export handle the project.
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -74,7 +75,7 @@ assert(project.frames.every(frame => frame.lens), "Every frame declares a lens")
 assert.equal(project.notes.length, 8);
 assert(project.notes.some(note => note.id === "neonoire-frame-format" && /16:9 full-bleed, 1920×1080/.test(note.content)), "The workspace carries the film's 16:9 frame rule");
 assert.equal(project.brainstorm.length, 6);
-assert(project.moodboards.length >= 3 && project.moodboards.length <= 8, "The boards carried are the ones with keyframes on them");
+assert(project.moodboards.length >= 3 && project.moodboards.length <= 9, "The boards carried are the ones with keyframes on them");
 for (const board of project.moodboards) assert(board.items.length > 0, `An empty mood board is a dead card: ${board.title}`);
 assert(project.scenes.every(scene => scene.actId === project.acts[0].id), "Every scene belongs to the opening act");
 assert.equal(new Set(project.frames.map(frame => frame.id)).size, EXPECTED_SHOTS, "Frame ids are unique");
@@ -145,54 +146,47 @@ function jpegDimensions(file) {
   }
   throw new Error(`No JPEG dimensions in ${file}`);
 }
-const { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
-assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
-const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId) && shotNo(frame) <= 28);
-assert.equal(coldOpen.length, 28);
-for (const frame of coldOpen) {
-  const n = Number(frame.id.replace("neonoire-shot-", ""));
-  assert(isColdOpenScene(frame.sceneId.replace("neonoire-", "")));
-  if (n <= coldOpenCompletedThrough) {
-    assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be revised 16:9`);
-    assert(!frame.notes.includes("COLD OPEN REVISION PENDING"));
-    for (const detail of ["Cold-open visual revision", "s1/01-backstreet.jpg", "s1/07-old-man.jpg", "s1/08-sedan-arrives.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "Strap intact through 16", "114 on its worn tag"]) {
-      assert(frame.notes.includes(detail), `${frame.title} lacks cold-open continuity: ${detail}`);
-    }
-  } else {
-    assert.deepEqual(jpegDimensions(frame.image), [1912, 800], `${frame.title}: legacy image must not masquerade as a revised frame`);
-    assert.equal(frame.status, "Needs review");
-    assert(frame.notes.includes("COLD OPEN REVISION PENDING"));
-    assert(!frame.notes.includes("Cold-open visual revision:"));
-  }
+// Director-ordered fresh pass: 31 slots, ten text-only generations, no inherited references.
+const { freshColdOpenShots, freshColdOpenGenerated, freshColdOpenReferences, freshColdOpenPrompt, freshColdOpenCaveats } = await import("./neonoire/cold-open-fresh.mjs");
+const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId));
+assert.equal(coldOpen.length, 31);
+assert.deepEqual(new Set(coldOpen.map(shotNo)), freshColdOpenShots);
+assert.deepEqual(freshColdOpenReferences, []);
+assert.equal(freshColdOpenGenerated.size, 10);
+const freshProvenance = JSON.parse(read("docs/neonoire/passes/cold-open-fresh-2026-09-30-assets.json"));
+assert.deepEqual(freshProvenance.imageReferences, []);
+assert.equal(Object.keys(freshProvenance.sha256).length, freshColdOpenGenerated.size);
+for (const [file, hash] of Object.entries(freshProvenance.sha256)) {
+  assert.equal(createHash("sha256").update(readFileSync(join(root, file))).digest("hex"), hash, `Fresh provenance hash: ${file}`);
 }
-pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
+const freshQueue = execFileSync(process.execPath, ["scripts/neonoire/pass-prompts.mjs", "--cold-open-fresh"], { cwd: root, encoding: "utf8" });
+assert.equal((freshQueue.match(/^### Shot /gm) || []).length, 21);
+assert(!freshQueue.includes("sheets/") && !freshQueue.includes("keys/"));
+for (const n of freshColdOpenShots) {
+  assert.equal(freshQueue.includes(`### Shot ${n} —`), !freshColdOpenGenerated.has(n));
+}
 
-// Letter rewrite coverage, 28 September 2026 — shots 280–282 re-derive scene 1's street without
-// renumbering the first boarding. Shot 7 was retaken in place so Sakai's eyes find Mara and leave.
-const letterS1 = project.frames.filter(frame => frame.sceneId === "neonoire-s1" && shotNo(frame) >= 280);
-assert.deepEqual(letterS1.map(f => f.id), ["neonoire-shot-280", "neonoire-shot-281", "neonoire-shot-282"], "Scene 1 coverage runs 280–282");
-for (const frame of letterS1) {
-  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
-  assert.equal(frame.status, "Draft", `${frame.title} is fresh coverage, not a pending cold-open revision`);
-  assert(!frame.notes.includes("COLD OPEN REVISION PENDING"), `${frame.title} must not wear the legacy cold-open note`);
+for (const frame of coldOpen) {
+  const n = shotNo(frame);
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
+  assert.equal(frame.status, "Needs review", "Fresh generation is not production approval");
+  assert(frame.notes.includes("NO image references"));
+  assert(!frame.notes.includes("Retake 29 September 2026"));
+  assert(!frame.notes.includes("sheets/") && !frame.notes.includes("keys/"));
+  assert.equal(frame.notes.includes("FRESH GENERATED"), freshColdOpenGenerated.has(n));
+  assert.equal(frame.notes.includes("FRESH PASS PENDING"), !freshColdOpenGenerated.has(n));
+  if (freshColdOpenGenerated.has(n)) assert(frame.notes.includes(freshColdOpenCaveats.get(n)));
+  const prompt = freshColdOpenPrompt(n);
+  assert(prompt.includes("NO image references") && !prompt.includes(".jpg"));
 }
-assert(letterS1[0].notes.includes("1:00"), "Shot 280 keeps the time legible at full size");
-assert(letterS1[0].notes.includes("s1/05-phone-off.jpg") && letterS1[0].notes.includes("red enamel bird clip"), "Shot 280 locks the doorway wardrobe");
-assert(letterS1[1].notes.includes("s1/01-backstreet.jpg") && letterS1[1].notes.includes("bar sign"), "Shot 281 is the street master's POV with the lit bar sign");
-assert(letterS1[2].notes.includes("s1/14-she-kneels.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic");
-assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 carries the letter-rewrite retake note");
-pass("letter rewrite in scene 1: 1:00 in her own handwriting, the bar sign at the end of the street, and Mr. Sakai's face turned up to hers");
-// Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
-// and out on foot, and the six blocked frames are retaken to the fixed pedestrian layout.
-const backsOut = project.frames.find(frame => frame.id === "neonoire-shot-13");
-assert(backsOut.notes.includes("reverses out of the alley mouth") && backsOut.notes.includes("falls dark") && backsOut.notes.includes("plate is not legible") && backsOut.notes.includes("No people"), "Shot 13 locks the layout-pass reverse: out of the mouth, the alley falls dark");
-for (const n of [8, 10, 12, 13, 17, 18]) {
-  const frame = project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`);
-  assert(frame.notes.includes("Retake 29 September 2026 (the layout pass)") && frame.notes.includes("sheets/kanda-alley-layout.jpg"), `Shot ${n} carries the layout-pass retake note and the layout sheet`);
-}
-assert(coldOpenLook.includes("Alley layout (canonical") && coldOpenLook.includes("too narrow for cars") && coldOpenLook.includes("Mara runs away from the car"), "The cold-open look carries the canonical alley layout");
-assert.deepEqual(jpegDimensions("images/neonoire/sheets/kanda-alley-layout.jpg"), [1920, 1080], "The kanda layout sheet is 1920×1080");
-pass("kanda alley layout: the sedan blocks the mouth, the six frames retaken, the layout sheet installed");
+assert(freshColdOpenPrompt(8).includes("OUTSIDE") && freshColdOpenPrompt(8).includes("AWAY"));
+assert(freshColdOpenPrompt(13).includes("reverses out of the alley mouth"));
+assert(freshColdOpenPrompt(16).includes("114"));
+assert(freshColdOpenPrompt(280).includes("1:00"));
+assert(freshColdOpenPrompt(281).includes("bar sign"));
+assert(freshColdOpenPrompt(282).includes("non-graphic"));
+assert.equal(project.moodboards.find(b => b.id === "neonoire-cold-open-fresh").items.length, 10);
+pass("fresh cold open: ten text-only studies, 21 pending, all unapproved, no legacy reference instructions");
 
 // Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
@@ -596,7 +590,7 @@ const letterRewrite = project.frames.filter(f => shotNo(f) >= 280 && shotNo(f) <
 assert.deepEqual(letterRewrite.map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${280 + i}`), "The letter rewrite runs 280–286 with no gaps");
 for (const frame of letterRewrite) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
-  assert.equal(frame.status, "Draft", `${frame.title} is fresh coverage`);
+  assert.equal(frame.status, freshColdOpenShots.has(shotNo(frame)) ? "Needs review" : "Draft", `${frame.title}: cold-open coverage awaits the fresh pass`);
 }
 const desk = letterRewrite.find(f => f.id === "neonoire-shot-283");
 assert(desk.notes.includes("props/sakai-letter.jpg") && desk.notes.includes("T. SAKAI") && desk.notes.includes("VERA VOSS"), "Shot 283 locks the letter and its envelope to the prop master");
@@ -689,14 +683,14 @@ pass("cast sheets: Kaneko, Okada, Kurose, the Nodas, the repairman, Harada, the 
 assert.deepEqual(jpegDimensions(kandaBarSheet), [1920, 1080], "the Kanda bar location sheet is 16:9");
 assert.deepEqual([...kandaBarScenes].sort(), ["s2", "s27a", "s64", "s8", "s81"], "only Okada's bar scenes use the sheet (not the hotel lounge)");
 assert(kandaBarLook.includes("CRT switched OFF") && kandaBarLook.includes("scene 2 variety show") && kandaBarLook.includes("sheets/okada.jpg"), "the bar lock records the day/night states and Okada's identity");
-for (const sceneKey of kandaBarScenes) {
+for (const sceneKey of [...kandaBarScenes].filter(key => key !== "s2")) {
   const frames = project.frames.filter(frame => frame.sceneId === `neonoire-${sceneKey}`);
   assert(frames.length > 0 && frames.every(frame => frame.notes.includes("sheets/kanda-bar.jpg")), `scene ${sceneKey} carries the bar's shared location lock`);
 }
 const barBoard = project.moodboards.find(board => board.id === "neonoire-look-kanda-bar");
 assert(barBoard?.items.some(item => item.image === kandaBarSheet), "the bar sheet is visible in Mood boards");
 assert(!project.frames.filter(frame => ["neonoire-s66", "neonoire-s72", "neonoire-s75"].includes(frame.sceneId)).some(frame => frame.notes.includes("sheets/kanda-bar.jpg")), "the hotel lounge does not borrow Okada's bar sheet");
-pass("Kanda bar: the 16:9 night/day sheet and location rules travel with all five bar scenes, not the hotel");
+pass("Kanda bar: legacy sheet retained for later visits, excluded from the fresh scene-2 pass and hotel");
 
 // Script-pass image retakes are in-place; scene 17 was reverted and is out of this pass.
 for (const [shot, phrase] of [[229, "new taped counter drawing"], [237, "NO red-bird clip"], [88, "folded letter"], [96, "shift change"], [97, "script-pass follow-up"], [100, "Retake 29 September 2026"], [101, "near desks unoccupied"], [117, "rear-wall drawing"], [118, "back of a loose-haired woman"], [119, "script-pass follow-up"]]) {

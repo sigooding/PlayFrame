@@ -1,5 +1,13 @@
 # NEONOIRE — SCENE 2 — INT. SMALL BAR, KANDA
 
+> **30 September 2026 — FRESH IMAGE PASS OVERRIDES ALL OLD VISUAL DIRECTIONS BELOW.**
+> The director requests new images without influence from existing scenes. Use text-only
+> briefs in `scripts/neonoire/cold-open-fresh.mjs`, never old images, sheets or board layouts.
+> Stable shot numbers and screenplay beats below are retained as editorial history, not visual
+> references. Ten images generated (1–9, 19); 21 await generation, including 280–282.
+> All remain Needs review. [Fresh-pass ledger](../passes/cold-open-fresh-2026-09-30.md).
+
+
 **Board, and the script.** The screenplay page for this scene is [n02-small-bar.md](../screenplay/n02-small-bar.md), carrying the draft verbatim. This document is the numbered shot board, continuing the first sequence's numbering — shot 19 is the bar.
 
 Scene: INT. SMALL BAR, KANDA — CONTINUOUS
