@@ -9,7 +9,7 @@
 // the cast links are reciprocal, and the prompt studio and CSV export handle the project.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { build } from "esbuild";
@@ -26,6 +26,7 @@ import { endingImages, veraLookESheet } from "./neonoire/ending-look.mjs";
 import { kandaReturnImages } from "./neonoire/kanda-return-look.mjs";
 import { innImages, innStairFrames, innWarmLook } from "./neonoire/inn-look.mjs";
 import { kandaBarScenes, kandaBarSheet, kandaBarLook } from "./neonoire/bar-look.mjs";
+import { TAIL, readManifest, readVoices } from "./neonoire/voice.mjs";
 import { hiveFirstImages } from "./neonoire/hive-first-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
 
@@ -995,6 +996,29 @@ if (awaiting.length) {
   pass(`${awaiting.length} remaining shots have a self-contained pass brief, carrying the style block and the negative prompt`);
 } else {
   pass(`all ${project.frames.length} keyframes are on disk; cold-open revision status is checked separately above`)
+}
+
+// ---------------------------------------------------------------- recorded dialogue
+// Every line in docs/neonoire/voice/manifest.json is a real file on a real frame, rides on that frame in the
+// bundle at its offset, and fits inside the frame's duration; the voices file names the chosen voices.
+{
+  const manifest = readManifest(root);
+  const voices = readVoices(root);
+  assert(voices.characters.JACK?.voiceId && voices.characters.VERA?.voiceId, "voices.json names Jack's and Vera's voices");
+  const ids = new Set();
+  for (const line of manifest.lines) {
+    assert(!ids.has(line.id), `Voice line ${line.id} appears once`);
+    ids.add(line.id);
+    const frame = project.frames.find(f => f.id === line.frameId);
+    assert(frame, `Voice line ${line.id} belongs to a frame of the bundle`);
+    assert(existsSync(join(root, "public", line.file)) && statSync(join(root, "public", line.file)).size > 1000, `public${line.file} is a real audio file`);
+    const clip = frame.audio?.find(a => a.id === line.id);
+    assert(clip && clip.src === line.file && clip.offset === line.offset && clip.character === line.character, `Frame ${frame.id} carries voice line ${line.id}`);
+    assert(frame.duration >= line.offset + (line.duration || 0) + TAIL - 1, `Frame ${frame.id} is long enough for ${line.id}`);
+    assert(voices.characters[line.character], `${line.character} has an entry in voices.json`);
+  }
+  assert.equal(project.frames.reduce((n, f) => n + (f.audio?.length || 0), 0), manifest.lines.length, "The bundle carries exactly the manifest's lines");
+  pass(`recorded dialogue: ${manifest.lines.length} line(s) on the frames, files present, offsets and durations fit, voices.json names Jack and Vera`);
 }
 
 console.log("\nAll NEONOIRE checks passed.");

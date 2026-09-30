@@ -1,0 +1,287 @@
+{
+  "note": "The voice for each character, so a take can be regenerated. IDs are ElevenLabs voice IDs in the project's workspace. 'placeholder' means an English voice standing in for a character who speaks Japanese; it will be replaced when the Japanese recording is made. Jack's Japanese-language lines are voiced in English for now (script unchanged).",
+  "speechModel": "eleven_v4",
+  "characters": {
+    "JACK": {
+      "voiceId": "MZhx7pKflsc0sAwciDEy",
+      "name": "Narrator Lead",
+      "status": "chosen",
+      "notes": "Male, 40s-50s, world-weary raconteur. Jack's Japanese-language lines are voiced in English for now.",
+      "direction": "Scene-specific, not a house style: for the date invitation (sc 62, 'Tomorrow night. Will you have dinner with me?') the director picked take 4, '[awkwardly]' with a hesitant mid-line dash. General rules for all scenes: no whispers; plain, untagged lines sound like a narrator, so give each line a short direction tag that fits that moment."
+    },
+    "VERA": {
+      "voiceId": "4Rn2L1CRjYh93G56jNXI",
+      "name": "Vera",
+      "status": "chosen",
+      "notes": "Female, early-to-mid 30s, plain American, rust-belt. Not the 'Vera - The Last Stand', 'vera - alt' or 'vera no good' voices.",
+      "direction": "Scene-specific, not a house style: for the light banter of the breakfast scene (25A, 'Has someone been reporting on me?') the director picked take 1, '[teasing]'. General rules for all scenes: no whispers; upset lines use [crying]/[voice breaking]/[trembling voice] at speaking volume; pick the tag per moment. Use [pause] / [short pause] / [long pause] for beats on v4 (square brackets, not braces)."
+    },
+    "MARA": {
+      "voiceId": "2NE3noNVoL0UyxXHLs7w",
+      "status": "chosen",
+      "designedPreviews": [
+        "2NE3noNVoL0UyxXHLs7w",
+        "9xXUOFmWFAxNaKLffMC1",
+        "kJuTWH5OaVITSlJ0REyi"
+      ],
+      "chosenPreview": "2NE3noNVoL0UyxXHLs7w",
+      "name": "Mara Voss - NEONOIRE",
+      "design": {
+        "description": "Female, 24, American, Vera's younger sister: same plain, unpolished regional accent as an older sister from a fading rust-belt town, but quicker and younger. Brave and frightened at once, a little stubborn, dry humour underneath. Natural, not theatrical; slightly worn from crying.",
+        "sampleText": "He wrote to Vera. Mr. Sakai. She threw it in the bin without even answering. I took it out. I called him. He said he had Dad's papers. He said to come to the bar at one o'clock.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "ISHIDA": {
+      "voiceId": "6wGe4cP3pH5TRuKntC6Z",
+      "status": "chosen",
+      "designedPreviews": [
+        "i3XNU6xFFYHPOtW9QI2i",
+        "OrmQTyNPGsmrVUvvyBdC",
+        "6wGe4cP3pH5TRuKntC6Z"
+      ],
+      "chosenPreview": "6wGe4cP3pH5TRuKntC6Z",
+      "name": "Ishida - NEONOIRE",
+      "notes": "Saved to the library 29 September 2026 (take 3 of 3 picked).",
+      "design": {
+        "description": "Male, 50s, Japanese detective with excellent English and only a faint accent. Gentle, unhurried, tired in a way that looks like decency. Soft-spoken, precise, kind on the surface; never raises his voice.",
+        "sampleText": "What I know is that two men were killed in Kanda, and that it is a matter between criminal groups. And that your sister is a young woman who has not called her sister for three days. Those may be two separate things.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "KANEKO": {
+      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "status": "chosen",
+      "placeholder": true,
+      "designedPreviews": [
+        "vUzt8mUMt5vwWOoJ6szl",
+        "1Q4xsALqzHseCDRw39xL",
+        "GsbDZcPjHdTVYr5w1u8V"
+      ],
+      "chosenPreview": "vUzt8mUMt5vwWOoJ6szl",
+      "design": {
+        "description": "Female, 70s, tiny and sharp-eyed, has run a six-seat noodle counter for fifty years. Dry, blunt, unsentimental, with a gravelly older voice and quick, clipped delivery. Warmth shown only in what she does. Neutral English placeholder for a character who speaks Japanese.",
+        "sampleText": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. You always sat there. He sat there.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      },
+      "name": "Kaneko - NEONOIRE"
+    },
+    "KUROSE": {
+      "voiceId": "N7WASm2wYJmE5JmsJPLJ",
+      "status": "saved",
+      "design": {
+        "description": "Elderly Japanese man in his 70s speaking English with a natural Japanese accent. Real and understated, not theatrical, not an announcer, no movie-trailer or old radio drama delivery. Conversational, slightly gravelly, dry and matter-of-fact. Quiet certainty of a very powerful man who never needs to raise his voice or perform. Steady mid-low pitch, short unhurried phrases, natural pauses.",
+        "sampleText": "Let the detective look. He was always very good at finding things. It's what he does afterwards that he's bad at. Your father was a good man, Miss Voss. I mean that sincerely. Good men are very expensive.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false,
+        "guidanceScale": 6
+      },
+      "designNote": "Picked take 3 of the third round (earlier rounds sounded like an old TV show / an announcer)."
+    },
+    "OKADA": {
+      "voiceId": "MhuU9Z2dyWAG6ZjuuKRg",
+      "status": "chosen",
+      "placeholder": true,
+      "designedPreviews": [
+        "vaaKUkGxKDaDoDhcIbzT",
+        "2xfJinBxBdtGiAfAGWx0",
+        "MhuU9Z2dyWAG6ZjuuKRg"
+      ],
+      "name": "Okada - NEONOIRE",
+      "notes": "Saved to the library 29 September 2026 (take 3 of 3 picked).",
+      "design": {
+        "description": "Male, 60s, small-bar owner who hasn't slept, guilty and stoic. Low, tired, sparse, a man who says little and means all of it. Rough-edged, quiet, grief held in. Neutral English placeholder for a character who speaks Japanese.",
+        "sampleText": "She was fifteen. She went to Osaka with a boy. Everyone said she was gone. He found her in three weeks. He didn't bring her home. She didn't want to come. He told me where she was, and he told me not to go.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "HARADA": {
+      "voiceId": null,
+      "status": "picked, not yet saved (custom-voice limit)",
+      "placeholder": true,
+      "designedPreviews": [
+        "oiQsVLQVbTyIiNejyPfk",
+        "6w0c8yqj5i203OOtJbjn",
+        "yShhBp3hW9pwBDnBfMyR"
+      ],
+      "chosenPreview": "oiQsVLQVbTyIiNejyPfk",
+      "design": {
+        "description": "Female, 50s, veteran newspaper editor, grey-haired, sleeves rolled. Dry, brisk, authoritative, sceptical; smoker's edge to a low voice; gives nothing away until she decides to. Neutral English placeholder for a character who speaks Japanese.",
+        "sampleText": "Print what? A dead man's diary? Bring me something with a name on it. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "DANIEL": {
+      "voiceId": null,
+      "status": "picked, not yet saved (custom-voice limit)",
+      "designedPreviews": [
+        "dRjKIobohlC0h0m7upOR",
+        "LpigIl05iRD3HgmSI4uH",
+        "oOJyrMKhBUCGET6PTTAu"
+      ],
+      "chosenPreview": "oOJyrMKhBUCGET6PTTAu",
+      "design": {
+        "description": "Male, 41, American insurance investigator, writing in his notebook late at night. Neat, careful, decent, quietly tired and afraid he is right. Plain American accent, warm underneath, measured, never dramatic. Reads like a man talking to himself.",
+        "sampleText": "Shiohama. Third visit. The residents say men came in the spring with flowers, and then in the summer with iron bars. The fire began in two places at once. Fires don't do that.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "SAKAI": {
+      "voiceId": "y7NkiaxPRjIzeTdRhHDC",
+      "status": "chosen",
+      "designedPreviews": [
+        "y7NkiaxPRjIzeTdRhHDC",
+        "5cZz3tgktjtrxNe6QqlG",
+        "zmHfnRO7iFQn8Uwmx83t"
+      ],
+      "chosenPreview": "y7NkiaxPRjIzeTdRhHDC",
+      "name": "Sakai - NEONOIRE",
+      "notes": "Saved to the library 29 September 2026 (take 1 picked).",
+      "design": {
+        "description": "Male, 70s, dying of cancer, former bubble-era land clearer. Rough, worn, breathy voice; careful, practised, halting English of a man who rehearsed it. Slow and deliberate, weary, without menace now.",
+        "sampleText": "Miss Voss. Your father did not kill himself. I can prove it. I have kept his papers for twenty years. I am old and I am ill and I do not want to carry them any more. Please telephone.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "MASKED MAN": {
+      "voiceId": "IUNPSr7i3o1XsExH6IGv",
+      "status": "chosen",
+      "notes": "The hit team leader / the man who says 'Shitsurei shimasu' (sc 1, 2, 24, 70 driver). First three previews rejected ('no good'); redesigned flat/clipped/low-affect on 29 Sept; awaiting a pick. Saved to the library 29 September 2026 (take 1 picked).",
+      "rejectedPreviews": [
+        "BikINnFYQnWn9BQmTLVD",
+        "N0mXCD6snvnfdnhxNS1Z",
+        "nr9oPOWXTjfXV6YSonDO"
+      ],
+      "designedPreviews": [
+        "IUNPSr7i3o1XsExH6IGv",
+        "i7lGfu0v4JT1k3SFaM2c",
+        "IsGbbj0z3QrAWh3wpcz7"
+      ],
+      "chosenPreview": "IUNPSr7i3o1XsExH6IGv",
+      "name": "Masked Man - NEONOIRE",
+      "design": {
+        "description": "Male, 30s to 40s, hit-team operative from a private security firm. Flat, clipped, low-affect, bored: sounds like a man reading a checklist into a radio or asking a stranger to pardon him on a train. Slightly nasal, dry, a little tired, no menace performed, no drama, no narration cadence, not deep or cinematic. Ordinary and forgettable, with a polite formality on the courtesy phrases. No accent.",
+        "sampleText": "First position done. Moving to second. Excuse me. He's gone. He has what she gave him. Second position done. Position.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false,
+        "rejectedRound1": {
+          "description": "Male, 40s, a face you would forget immediately. Professional killer from a private security firm: calm, courteous, level, unhurried, almost polite; never raises his voice, no menace performed, no accent. Quiet efficiency, like a man reporting the time.",
+          "sampleText": "The detective went into the Hive twice. Once in the day. Once after the last train. We can't follow him in there. Too many people. Too many passages. They see everyone.",
+          "note": "Director: no good."
+        }
+      }
+    },
+    "JOURNALIST": {
+      "voiceId": "EEYUewEB5w5R0IPnszO5",
+      "status": "chosen",
+      "notes": "Kondo, Toto Shimbun (sc 2). Audition take 3 of 3, saved to the library 29 September 2026.",
+      "designedPreviews": [
+        "2RhPCHS7sC9j9YOgKuyw",
+        "ayITctDINEYl9o1ROnKW",
+        "EEYUewEB5w5R0IPnszO5"
+      ],
+      "name": "Journalist (Kondo) - NEONOIRE",
+      "design": {
+        "description": "Male, 40s, newspaper journalist waiting alone in a small bar at one in the morning: tired, decent, a little wary, a careful listener with a dry, low voice. Natural, not theatrical, no accent.",
+        "sampleText": "Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life. Print what? A dead man's diary?",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "OLD MAN": {
+      "voiceId": null,
+      "status": "same as SAKAI",
+      "notes": "The old man in the cold open is Sakai; use the SAKAI voice."
+    },
+    "YOUNG OFFICER": {
+      "voiceId": "rexcV2ceXKmVM3IFUBVg",
+      "name": "Young Officer - NEONOIRE",
+      "status": "chosen",
+      "notes": "Saved to the library 29 September 2026 (take 3 of 3 picked).",
+      "design": {
+        "description": "Young Japanese police officer, early 20s, male, speaking English with a light Japanese accent. Polite but bored, flat professional courtesy, a little nasal, clipped; grows guarded and quietly careful when he turns away.",
+        "sampleText": "Your sister's age? Adults sometimes go away for a few days. Especially foreigners. It's usually — Yes. That name. Yes — the sister is here now. Someone will be right with you.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      }
+    },
+    "BARBER": {
+      "design": {
+        "description": "Japanese barber in his 80s, male, speaking English with a light Japanese accent. Frail, dry, unhurried; a little cranky at being woken, wary of the police, a thin old voice with some rasp.",
+        "sampleText": "Police again? I told them. I was asleep. I heard the shot. Then a car. One car. Twice. It left. Then it came back.",
+        "language": "en",
+        "designModel": "eleven_ttv_v3",
+        "seedFixed": false
+      },
+      "voiceId": "5GswypvgtPl0hKqvIA4k",
+      "status": "chosen",
+      "designedPreviews": [
+        "5GswypvgtPl0hKqvIA4k",
+        "C5LKECQBsZHzSCtGNvIE",
+        "Hcu1hRMluusHRu4bfqPR"
+      ],
+      "name": "Barber - NEONOIRE"
+    },
+    "SAKAI (TAPE)": {
+      "voiceId": null,
+      "status": "not designed",
+      "notes": "Scene 82: Sakai twenty years younger on the cassette, 'rough', two lines. Do not reuse the dying old man's voice; design a younger one when scene 82 is voiced.",
+      "design": {
+        "description": "Male, 40s, rough-voiced former land clearer, Japanese, recorded on an old cassette tape twenty years ago: gruff, wary, a little defensive, low and hoarse, speaking to a smooth superior he does not like. Neutral English placeholder for a character who speaks Japanese.",
+        "sampleText": "There are still people in the building. Old people. They won't sign. And if it isn't? Don't make me say it more clearly.",
+        "status": "proposed, not run"
+      }
+    },
+    "NEWS REPORTER": {
+      "voiceId": "EEYUewEB5w5R0IPnszO5",
+      "status": "uses the JOURNALIST voice",
+      "notes": "Reads the news on Vera's television (scene 4). Same voice as the weather announcer on the same set. Filter: tv."
+    },
+    "WEATHER ANNOUNCER": {
+      "voiceId": "EEYUewEB5w5R0IPnszO5",
+      "status": "uses the JOURNALIST voice",
+      "notes": "Filter: tv."
+    },
+    "MRS. SAKAI": {
+      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "status": "draft-borrowed",
+      "note": "Draft only: borrowing Kaneko's voice (scene 29) because the workspace is at its custom-voice limit. Design a proper voice later (auditions in exports/neonoire/auditions/mrs-*.mp3)."
+    },
+    "MRS. NODA": {
+      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "status": "draft-borrowed",
+      "note": "Draft only: borrowing Kaneko's voice (scenes 32, 33, 37) because the workspace is at its custom-voice limit. Design a proper voice later (auditions in exports/neonoire/auditions/mrs-*.mp3)."
+    }
+  },
+  "notDesignedYet": [
+    "MRS. SAKAI",
+    "MRS. NODA",
+    "MR. NODA",
+    "DRIVER",
+    "YOUNG OFFICER",
+    "OLD TOBACCONIST",
+    "BARBER"
+  ],
+  "designedPreviewsNote": "Unsaved design previews are short-lived. A character becomes final only when its chosen preview is saved to the library and its voiceId filled in here.",
+  "blocker": "29 Sept 2026: the ElevenLabs workspace is at its custom-voice limit (10 of 10), so only Mara could be saved. Six picked previews (Ishida, Kaneko, Harada, Daniel, Sakai, masked man) are NOT saved; design previews are short-lived and may need regenerating (credits). To unblock: delete unused custom voices (for example 'vera no good', 'vera - alt', 'Vera - The Last Stand', 'jack the last stand') or upgrade the plan, then save the picks. Kurose and Okada are still unpicked. Director: hold voice work for now, credits are limited.",
+  "designNote": "Each 'design' block is the exact prompt used with creative_design_voice (model eleven_ttv_v3, no fixed seed). If a saved voice is deleted, run the same prompt again: the result is a similar voice, not an identical one, so pick again by ear and re-record with voice-ingest --replace. The approved takes are kept as files under public/audio/neonoire/ and docs/neonoire/voice/references/, so they are the reference to compare a replacement against. Jack ('Narrator Lead') and Vera were made by the director in ElevenLabs, not designed here.",
+  "fx": "Lines heard through a phone, a television or a tape carry an 'fx' field in the manifest (phone | tv | tape), set with voice-ingest --fx. The clean take stays clean on disk; animatic.mjs applies a sketch of the filter with ffmpeg. The proper treatment is done in the editor."
+}

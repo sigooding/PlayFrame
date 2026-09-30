@@ -1042,3 +1042,10 @@ img{display:block;max-width:100%}
 .frame-image-wrap[data-native="true"] .frame-image-button{position:relative;inset:auto;height:auto}
 .frame-image-wrap[data-native="true"] .frame-image-button img{display:block;height:auto}
 .player-image-wrap>img,.frame-preview>img,.shared-frame>div>img{object-fit:contain}
+
+/* Dialogue audio: the frame dialog's line list and the presentation's sound toggle. */
+.frame-dialogue-line { margin-top: 8px; padding: 8px 10px; border: 1px solid var(--line, rgba(255,255,255,.12)); border-radius: 8px; }
+.frame-dialogue-line p { margin: 4px 0 6px; font-size: 13px; opacity: .85; }
+.frame-dialogue-line audio { width: 100%; height: 32px; }
+.player-mute { display: inline-flex; align-items: center; gap: 6px; background: none; border: 0; color: inherit; font: inherit; cursor: pointer; opacity: .85; }
+.player-mute:hover { opacity: 1; }

@@ -42,6 +42,10 @@ She hangs up.
 
 The old television murmurs to itself.
 
+NEWS REPORTER (ON TV)
+(in Japanese)
+...police in Kanda are investigating a double shooting in a small bar in the early hours of Sunday. Two men were killed. Officers say it appears to be a dispute between criminal groups. No arrests have been made...
+
 WEATHER ANNOUNCER (ON TV)
 (in Japanese)
 ...rain continuing through the rest of the week...

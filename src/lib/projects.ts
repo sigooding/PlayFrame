@@ -54,9 +54,12 @@ export async function openNeonoireProject() {
   if (!existing) throw new Error("The NEONOIRE project was not created.");
   const bundleFrames = new Map(neonoireProject.frames.map(frame => [frame.id, frame]));
   const frames = existing.frames.map(frame => {
-    if (!isAwaitingKeyframe(frame)) return frame;
+    // Dialogue audio arrives the same way: a saved frame with no audio of its own takes the bundle's,
+    // and a frame that already has audio (or whose audio was removed on purpose by having any) is left alone.
+    const withAudio = !frame.audio?.length && bundleFrames.get(frame.id)?.audio?.length ? { ...frame, audio: bundleFrames.get(frame.id)!.audio } : frame;
+    if (!isAwaitingKeyframe(withAudio)) return withAudio;
     const arrived = bundleFrames.get(frame.id);
-    return arrived?.image ? { ...frame, image: arrived.image, title: arrived.title, status: arrived.status, notes: arrived.notes } : frame;
+    return arrived?.image ? { ...withAudio, image: arrived.image, title: arrived.title, status: arrived.status, notes: arrived.notes } : withAudio;
   });
   if (!frames.some((frame, i) => frame !== existing.frames[i])) return existing;
   const [row] = await db.update(filmProjects).set({ frames, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();

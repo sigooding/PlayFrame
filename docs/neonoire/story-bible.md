@@ -369,6 +369,9 @@ turn.
 
 ---
 
+8. **News report on Vera's television (29 September, director-requested):** scene 4 now carries a short TV news item before the weather line: police in Kanda are investigating a double shooting in a small bar in the early hours of Sunday, two men killed, "a dispute between criminal groups", no arrests. It sets up Vera's "It was on the news" in scene 6 and matches Ishida's line. Read by the Journalist voice with the TV filter (`fx: tv`); the weather announcer uses the same set voice.
+
+
 ## Part 10 — Known inconsistencies to resolve
 
 1. **RESOLVED (Part 9 item 4) — Jack's nationality vs his backstory.** The script's backstory has Jack as a young
