@@ -59,9 +59,18 @@ const cues = [];
 const silentMax = Number(args["silent-max"] || 4);
 const LEAD = Number(args.lead || 0.7), TAIL = Number(args.tail || 0.9);
 // Tightened timing for one frame: the length it plays and its clips shifted to match.
+// Scenes under a music cue (docs/neonoire/music/cues.json) keep their board durations on silent frames: the stills play to the song.
+const holdScenes = new Set();
+{
+  const cf = resolve(root, "docs/neonoire/music/cues.json");
+  if (args["no-music"] === undefined && existsSync(cf)) for (const c of JSON.parse(readFileSync(cf, "utf8")).cues || []) {
+    const a = Number(String(c.from).replace(/\D/g, "")), b = Number(String(c.to).replace(/\D/g, ""));
+    if (a && b && !/CREDITS/i.test(String(c.from))) for (let n = a; n <= b; n++) holdScenes.add(n);
+  }
+}
 function pace(frame, clips) {
   if (!tight) return { dur: frame.duration, clips };
-  if (!clips.length) return { dur: Math.min(frame.duration, silentMax), clips };
+  if (!clips.length) return { dur: holdScenes.has(sceneNo(frame.sceneId)) ? frame.duration : Math.min(frame.duration, silentMax), clips };
   const shift = Math.max(0, Math.min(...clips.map(c => c.offset)) - LEAD);
   const end = Math.max(...clips.map(c => c.offset + (c.duration || 0))) - shift;
   return { dur: Math.min(frame.duration, Math.round((end + TAIL) * 10) / 10) || frame.duration, clips: clips.map(c => ({ ...c, offset: c.offset - shift })) };
@@ -125,6 +134,29 @@ for (let [i, frame] of frames.entries()) {
   segmentsTotal += frame.duration;
 }
 
+// End credits: a cue with "from": "CREDITS" (and "after": the last scene, "length": seconds, "lines": [...]) adds a black tail
+// after that scene, with the title and credit lines, and lets the song play over it. Only when this cut ends on that scene.
+{
+  const cf = resolve(root, "docs/neonoire/music/cues.json");
+  const cc = args["no-music"] === undefined && existsSync(cf) ? (JSON.parse(readFileSync(cf, "utf8")).cues || []).find(c => String(c.from).toUpperCase() === "CREDITS") : null;
+  const lastTag = frames.length ? sceneTag(frames[frames.length - 1].sceneId) : "";
+  if (cc && lastTag === String(cc.after).toUpperCase() && existsSync(resolve(root, cc.file))) {
+    const len = cc.length || 120, seg = resolve(work, "seg-credits.mp4");
+    // drawtext is not in every ffmpeg build; libass (subtitles) is, so the credit lines are an .ass file.
+    const ass = resolve(work, "credits.ass");
+    const t = k => `0:00:${String(2 + k * 2).padStart(2, "0")}.00`;
+    const lines = (cc.lines || ["NOBODY'S WITNESS"]).map(x => String(x).replace(/[{}\\]/g, ""));
+    writeFileSync(ass, `[Script Info]\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\n\n[V4+ Styles]\nFormat: Name,Fontname,Fontsize,PrimaryColour,OutlineColour,BackColour,Bold,Alignment,MarginV\n` +
+      `Style: Title,DejaVu Sans,96,&H00FFFFFF,&H00000000,&H00000000,1,5,0\nStyle: Sub,DejaVu Sans,40,&H00CCCCCC,&H00000000,&H00000000,0,5,0\n\n[Events]\nFormat: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text\n` +
+      lines.map((x, k) => `Dialogue: 0,${t(k)},0:02:${String(20 + k).padStart(2, "0")}.00,${k ? "Sub" : "Title"},,0,0,${k ? 0 : 0},,{\\fad(1800,1800)\\pos(960,${k ? 600 + (k - 1) * 70 : 440})}${x}`).join("\n") + "\n");
+    run(["-f", "lavfi", "-t", String(len), "-i", "color=c=black:s=1920x1080:r=24", "-f", "lavfi", "-t", String(len), "-i", "anullsrc=r=44100:cl=mono",
+      "-vf", `subtitles=${ass},format=yuv420p`, "-c:v", "libx264", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", "-shortest", seg]);
+    sceneSpan.CREDITS = [segmentsTotal, segmentsTotal + len];
+    segments.push(seg);
+    segmentsTotal += len;
+  }
+}
+
 const name = args.name || (args.scene ? `scene-${args.scene}` : args.from || args.to ? `scenes-${args.from || 1}-${args.to || "end"}` : "film");
 const list = resolve(work, "list.txt");
 writeFileSync(list, segments.map(s => `file '${s}'`).join("\n") + "\n");
@@ -146,7 +178,7 @@ else {
   live.forEach((c, k) => {
     ins.push("-i", resolve(root, c.file));
     const len = c.end - c.start, fo = c.fadeOut ?? 3;
-    f += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=stereo,atrim=0:${len.toFixed(2)},afade=t=in:d=${c.fadeIn ?? 1.5},afade=t=out:st=${Math.max(0, len - fo).toFixed(2)}:d=${fo},volume=${c.gain ?? 0.35},adelay=${Math.round(c.start * 1000)}|${Math.round(c.start * 1000)}[m${k}];`;
+    f += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=stereo,atrim=${c.seek || 0}:${((c.seek || 0) + len).toFixed(2)},asetpts=PTS-STARTPTS,afade=t=in:d=${c.fadeIn ?? 1.5},afade=t=out:st=${Math.max(0, len - fo).toFixed(2)}:d=${fo},volume=${c.gain ?? 0.35},adelay=${Math.round(c.start * 1000)}|${Math.round(c.start * 1000)}[m${k}];`;
   });
   f += live.map((_, k) => `[m${k}]`).join("") + `amix=inputs=${live.length}:normalize=0[mus];[sc]aformat=channel_layouts=mono,anull[scm];[mus][scm]sidechaincompress=threshold=0.02:ratio=10:attack=30:release=600[duck];[dlg]aformat=channel_layouts=stereo[dl];[dl][duck]amix=inputs=2:normalize=0,loudnorm=I=-16:LRA=11:TP=-1.5[out]`;
   run([...ins, "-filter_complex", f, "-map", "0:v", "-map", "[out]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", file]);

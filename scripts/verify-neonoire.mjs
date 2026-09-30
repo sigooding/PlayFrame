@@ -1052,7 +1052,7 @@ if (awaiting.length) {
   const draftPath = join(root, "Neonoire (3).fountain");
   const draft = readFileSync(draftPath, "utf8").split("\n");
   const heading = (n) => draft.findIndex(l => new RegExp(`#${n}[A-Z]?#$`).test(l.trim()));
-  assert.equal(project.title, "NEONOIRE", "The workspace goes out under the film's title");
+  assert.equal(project.title, "Nobody's Witness", "The workspace goes out under the film's title");
   // 1. No score before scene 75 — the draft carries exactly one score cue and it sits before the
   // scene 75 heading, after scene 74; no earlier line calls for music at all.
   const cue = draft.findIndex(l => /SCORE enter/i.test(l));
@@ -1073,7 +1073,7 @@ if (awaiting.length) {
   // 4. Every exterior stays wet until 98: the draft's one rain-stopped line is two lines into 98.
   const stopped = draft.map((l, i) => /rain (has stopped|stops)/i.test(l) ? i : -1).filter(i => i >= 0);
   assert.deepEqual(stopped, [heading(98) + 2], "The rain stops once, and only in scene 98");
-  pass("director's global rules: NEONOIRE over the bundle, one score cue at 75, seven named inserts and no more, 83 on its wide master, wet until 98");
+  pass("director's global rules: the film title over the bundle, one score cue at 75, seven named inserts and no more, 83 on its wide master, wet until 98");
 }
 
 console.log("\nAll NEONOIRE checks passed.");
