@@ -2,6 +2,41 @@
 
 **Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
 
+## Current state — 30 September 2026 (the remaining boards, batch 1)
+
+Twenty keyframes were still owed after the revision and story pass 2; **the first seven are installed**
+under the cold-open fresh pass's rule — the screenplay text and the character sheets are the only image
+references, no scene master, no earlier frame. Ledger:
+[`passes/remaining-boards-1.md`](passes/remaining-boards-1.md); review sheet
+[`reviews/remaining-boards-pass-1.jpg`](../../public/images/neonoire/reviews/remaining-boards-pass-1.jpg).
+Delivered at 1920×1080 on their stable paths: **303** (`s96/303-he-left-a-statement.jpg` — the young
+detective on the phone, the box open, the empty chair), **308** (`s2/308-clip-under-the-shelf.jpg` — the
+first of the seven named close-ups), **315** (`s76/315-the-number-pressed.jpg` — the screen reads exactly
+MOM, read at full size before install), **316** (`s78/316-squared-to-the-door.jpg`), **317**
+(`s83/317-the-envelope-on-the-glass.jpg`), **318** (`s84/318-the-dried-stack.jpg`) and **319**
+(`s89/319-the-unlit-lighter.jpg` — no flame and no spark anywhere in the frame, by design).
+
+**Thirteen remain**, and three of them are in-session retakes or a re-composed brief, all carried with
+their reasons in [`scripts/neonoire/remaining-boards.mjs`](../../scripts/neonoire/remaining-boards.mjs):
+
+- **309 — retake**: the first study lit the room instead of her face; the phone screen must be the only
+  light on her.
+- **312 — retake**: the first study returned the flyleaf as a placard of substituted text; the name on
+  the flyleaf, in the same hand as the envelope of scene 22, is the whole frame.
+- **313 — re-composed**: the first call was refused by the image service's content moderation (a
+  precedent the house met on shot 18); the new brief makes the soaked drawings the subject with no
+  figures in frame.
+- **310, 311** (the model at dawn, the hand lifting the Hive out of it), **314** (the empty crossing),
+  **320** (the news nobody watches), **298, 299, 300, 302** (53A and 82A), **306, 307** (the plaza,
+  re-pinned by the revision to no hoarding and no gardener).
+
+`remainingBoardsCompleted` is the boundary the builder and the verifier both read: a delivered frame is
+**Draft** with its pass note, an undelivered one keeps its **Needs review** placeholder naming its file,
+and `npm run verify:neonoire` asserts both. `npm run passes:neonoire` now reports **284/297 keyframes on
+disk, 13 to go**. Nothing was renumbered, retired or deleted; no layout sheet, bar sheet or scene master
+was attached anywhere in this batch, and every frame was centre-cropped to exact 16:9 and resized to
+1920×1080 by `fresh-install.mjs`.
+
 ## Current state — 30 September 2026 (cold-open fresh pass, in progress)
 
 **The director ordered the cold open redone from scratch**: no scene masters, no layout sheet, no
@@ -38,7 +73,7 @@ The script half of story pass 2 is done (Part 9 item 7 of the bible); this sessi
 - **DONE — Part 4, scenes 96/97 and 99A boarded:** shot 303 (the call) and shot 304 (the crawl) are written into the 96/97 boards (Part 1); `scenes/n99a-the-finished-plaza.md` carries three shots (305–307) — the plaza built exactly as the model, the KUROSE DEVELOPMENT. TOMORROW'S TOKYO. hoarding, and the gardener with one finger under the passing train.
 - **DONE — Part 5, the pipeline:** `plan.mjs` carries s53a/s82a/s99a (and Harada in 97's cast), `EXPECTED_SHOTS` is **307**, the bundle is rebuilt (296/307 on disk at this point), and the screenplay pages regenerate byte-exact. `verify:neonoire` passes except the final generation check, which Parts 6–7 close.
 - **DONE — Part 6, the escape retakes:** all six rewrite-pending frames are regenerated in place under their stable filenames and released from Needs review — scene 90: the landing door with the old woman's torch (132, `s90/130-the-roof.jpg`), the candlelit kitchen (133, `131-she-jumps.jpg`), the enfilade of doorways (267, `132-the-gap.jpg`); scene 91: the ladder and the shutter (134, `s91/132-the-rails-sing.jpg`), her hand in his on the rail (135, `133-inches-apart.jpg`), the empty ladder (136, `134-the-walkway-is-empty.jpg`). `rewrite-pending.mjs` is empty and `escape-look.mjs` describes the new scenes; scene 91 now carries the Hive canon (its rear wall is the Hive's own exterior). **One call drifted** (135 came back as a second ladder view instead of the hands close-up) and was retaken in the same session, per the house loop. Carried caveats: the 132 torch frame's hair, the 133 crossing blocking, the 267 violin girl's age, the 134 viaduct geography, and 136's tail lights reading warm rather than red — all logged in the boards.
-- **DONE — Part 7, hero frames and placeholders:** the session's ten generation calls are spent (six escape retakes + the 135 retake + three hero frames). **Generated:** 297 (`s53a/297-the-glass-office.jpg`, 53A's master), 301 (`s82a/301-the-bar-of-light.jpg`, 82A's master), 305 (`s99a/305-the-plaza.jpg`, 99A's master). **Honest placeholders naming their files:** 298, 299, 300, 302, 303, 304, 306 and 307 (the closing gardener study — the 135 retake took its slot) — all with self-contained briefs in [passes/pass-30.md](passes/pass-30.md) and [passes/pass-31.md](passes/pass-31.md).
+- **DONE — Part 7, hero frames and placeholders:** the session's ten generation calls are spent (six escape retakes + the 135 retake + three hero frames). **Generated:** 297 (`s53a/297-the-glass-office.jpg`, 53A's master), 301 (`s82a/301-the-bar-of-light.jpg`, 82A's master), 305 (`s99a/305-the-plaza.jpg`, 99A's master). **Honest placeholders naming their files:** 298, 299, 300, 302, 303, 304, 306 and 307 (the closing gardener study — the 135 retake took its slot) — all with self-contained briefs in [passes/pass-30.md](passes/pass-30.md) and [passes/pass-31.md](passes/pass-31.md). **Updated 30 September 2026:** 304 was retired with scene 97 by the revision, and **303 is installed** — see the remaining-boards batch 1 section above.
 
 ## Current state — 29 September 2026 (key-tag script clarification)
 

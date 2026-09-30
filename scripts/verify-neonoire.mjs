@@ -17,6 +17,7 @@ import { SCENES, parseBoard, readBoard } from "./neonoire/plan.mjs";
 import { streetsPassOneImages, streetsPassTwoImages } from "./neonoire/streets-look.mjs";
 import { dawnImages, jackRecastDone, jackRecastImages, jackRecastPending, policeDayImages } from "./neonoire/dawn-look.mjs";
 import { rewritePending } from "./neonoire/rewrite-pending.mjs";
+import { remainingBoardsCompleted } from "./neonoire/remaining-boards.mjs";
 import { witnessImages, witnessNeedsReview } from "./neonoire/witness-look.mjs";
 import { hiveImages } from "./neonoire/hive-look.mjs";
 import { escapeImages } from "./neonoire/escape-look.mjs";
@@ -272,7 +273,9 @@ assert(dawn.filter(f => f.sceneId === "neonoire-s77").every(f => f.characters.in
 assert(dawn.filter(f => f.sceneId !== "neonoire-s77").every(f => f.characters.join() === "neonoire-vera"));
 assert.deepEqual(jpegDimensions("/images/neonoire/sheets/jack.jpg"), [1920, 1080], "Jack's recast sheet is 16:9");
 assert(/white American/.test(project.characters.find(c => c.id === "neonoire-jack").description), "Jack's cast card carries the recast");
-assert(project.moodboards.some(b => b.id === "neonoire-look-dawn" && b.items.length === 10));
+const dawnBoard = project.moodboards.find(b => b.id === "neonoire-look-dawn");
+assert(dawnBoard && dawnBoard.items.length === 11, "The scenes 77–79 board carries the nine boarded shots, the two dawn studies and the revision's 316");
+assert(dawnBoard.items.some(i => i.image === "/images/neonoire/s78/316-squared-to-the-door.jpg"), "The revision's squared-to-the-door board joins the scenes 77–79 board");
 pass("scenes 77–79 boarded: nine 16:9 shots, Jack recast as a white American");
 
 // The recast carried back into scene 74, and scene 80 boarded.
@@ -650,8 +653,25 @@ assert(storyPass2.find(f => f.id === "neonoire-shot-302").notes.includes("Kurose
 assert(storyPass2.find(f => f.id === "neonoire-shot-305").notes.includes("the plaza as it is built"), "Shot 305 builds the plaza — to the revised words");
 assert(storyPass2.find(f => f.id === "neonoire-shot-306").notes.includes("the hoarding is out of the film"), "Shot 306 retires the hoarding it once locked");
 assert(storyPass2.find(f => f.id === "neonoire-shot-307").notes.includes("nothing answers"), "Shot 307 carries the film's last train, and the plaza's silence under it");
-assert.deepEqual(placeholders.filter(f => shotNo(f) <= 307).map(f => shotNo(f)).sort((a, b) => a - b), [298, 299, 300, 302, 303, 306, 307], "The story-pass-2 placeholders hold exactly the ungenerated slots (304 retired with scene 97)");
-assert.deepEqual(placeholders.filter(f => shotNo(f) >= 308).map(f => shotNo(f)), Array.from({ length: 13 }, (_, i) => 308 + i), "Every revision board 308–320 holds an honest placeholder until it is generated");
+// The remaining twenty (story pass 2's left-over studies and the revision's 308–320) are generated
+// in batches under one rule; scripts/neonoire/remaining-boards.mjs is the ledger of what is
+// installed, and this block keeps the bundle honest against it: a delivered frame is on disk at
+// 16:9 and carries the pass's provenance, a delivered-nowhere frame keeps its placeholder.
+assert.deepEqual(placeholders.filter(f => shotNo(f) <= 307).map(f => shotNo(f)).sort((a, b) => a - b),
+  [298, 299, 300, 302, 306, 307].filter(n => !remainingBoardsCompleted.includes(n)),
+  "The story-pass-2 placeholders hold exactly the ungenerated slots (303 delivered, 304 retired with scene 97)");
+assert.deepEqual(placeholders.filter(f => shotNo(f) >= 308).map(f => shotNo(f)),
+  Array.from({ length: 13 }, (_, i) => 308 + i).filter(n => !remainingBoardsCompleted.includes(n)),
+  "Every revision board still to generate holds an honest placeholder");
+const deliveredRemaining = project.frames.filter(f => remainingBoardsCompleted.includes(shotNo(f)));
+assert.equal(deliveredRemaining.length, remainingBoardsCompleted.length, "Every number the ledger calls delivered is on the board");
+for (const frame of deliveredRemaining) {
+  assert(frame.image, `${frame.title} is installed, not a placeholder`);
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title}: 16:9 delivery`);
+  assert.equal(frame.status, "Draft", `${frame.title}: a delivered study, production approval pending`);
+  assert(frame.notes.includes("remaining-boards pass"), `${frame.title} names the pass it came from`);
+}
+pass(`remaining boards: ${remainingBoardsCompleted.length} of 20 installed under the character-sheets-only rule (${remainingBoardsCompleted.map(n => `shot ${n}`).join(", ")}), the rest still honest placeholders`);
 for (const f of storyPass2.filter(x => [305, 306, 307].includes(shotNo(x)))) {
   assert(f.notes.includes("RETAKE PENDING") || rewritePending.has(f.id) || !f.image, `99A frame ${shotNo(f)}: the plaza rewrite pins its retake`);
 }
