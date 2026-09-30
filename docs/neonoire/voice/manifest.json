@@ -5270,6 +5270,699 @@
         "id": "9LKKMM8OreNUkKQ7moAQ"
       },
       "status": "take"
+    },
+    {
+      "id": "s64-jack-keep-this-for-me-don-t",
+      "frameId": "neonoire-shot-233",
+      "character": "JACK",
+      "text": "Keep this for me. Don't tell anyone. Not the police. Not me, if I ask you with someone standing behind me.",
+      "file": "/audio/neonoire/s64/233-jack-keep-this-for-me-don-t.mp3",
+      "offset": 0.3,
+      "duration": 7.31,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "le0vM3oiz6bK3DxgPL7M",
+        "id": "0qinIOmGFKiBNo6KEFRO"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s64-okada-behind-the-counter-like-the-girl",
+      "frameId": "neonoire-shot-233",
+      "character": "OKADA",
+      "text": "Behind the counter. Like the girl's clip.",
+      "file": "/audio/neonoire/s64/233-okada-behind-the-counter-like-the-girl.mp3",
+      "offset": 9.18,
+      "duration": 3.16,
+      "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "UsqKa9nadkMYQQPLmWhL",
+        "id": "b0ZlpVWMw0VlR6VY8G7v"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s64-jack-tomorrow-it-ll-be-over",
+      "frameId": "neonoire-shot-233",
+      "character": "JACK",
+      "text": "Tomorrow it'll be over.",
+      "file": "/audio/neonoire/s64/233-jack-tomorrow-it-ll-be-over.mp3",
+      "offset": 14.3,
+      "duration": 1.96,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "r4GTTUELrYjr5ZamE79O",
+        "id": "cD1Hdxn806KePPCD06Ho"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s64-okada-that-s-what-people-say-the",
+      "frameId": "neonoire-shot-233",
+      "character": "OKADA",
+      "text": "That's what people say the night before.",
+      "file": "/audio/neonoire/s64/233-okada-that-s-what-people-say-the.mp3",
+      "offset": 17.22,
+      "duration": 2.51,
+      "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "5bqGXZpWkSpxBuCNssKL",
+        "id": "px73QJidDrRy3MbJwkUw"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s65-vera-borrowing-it-you-ll-get-it",
+      "frameId": "neonoire-shot-277",
+      "character": "VERA",
+      "text": "Borrowing it. You'll get it back.",
+      "file": "/audio/neonoire/s65/277-vera-borrowing-it-you-ll-get-it.mp3",
+      "offset": 0.5,
+      "duration": 2.27,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "z8TM6cil0BwLvuHvCEUE",
+        "id": "R5bVAX9gwtgNWFFphUw1"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s66-bartender-for-you",
+      "frameId": "neonoire-shot-235",
+      "character": "BARTENDER",
+      "text": "For you?",
+      "file": "/audio/neonoire/s66/235-bartender-for-you.mp3",
+      "offset": 0.3,
+      "duration": 0.84,
+      "voice": "EEYUewEB5w5R0IPnszO5",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "WMUNV0QNsO0mvc7DHGPU",
+        "id": "BFDvPsSvULJYbXBy3RID"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s66-vera-i-m-waiting-for-someone-pause",
+      "frameId": "neonoire-shot-235",
+      "character": "VERA",
+      "text": "I'm waiting for someone. A gin and tonic. Please.",
+      "prompt": "I'm waiting for someone. [pause] A gin and tonic. Please.",
+      "file": "/audio/neonoire/s66/235-vera-i-m-waiting-for-someone-pause.mp3",
+      "offset": 1.9,
+      "duration": 4.28,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "IQESK9PsldHAJAYOxonu",
+        "id": "E5yQGNl0yjdOruCPdCDP"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s68-kaneko-rice-balls-for-the-car",
+      "frameId": "neonoire-shot-237",
+      "character": "KANEKO",
+      "text": "Rice balls. For the car.",
+      "file": "/audio/neonoire/s68/237-kaneko-rice-balls-for-the-car.mp3",
+      "offset": 0.3,
+      "duration": 2.35,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "A5MuouOWZvzOBnwlbEY5",
+        "id": "Pz1HAxPdbCRQMQO2jbhp"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s68-mara-thank-you-for",
+      "frameId": "neonoire-shot-237",
+      "character": "MARA",
+      "text": "Thank you. For —",
+      "file": "/audio/neonoire/s68/237-mara-thank-you-for.mp3",
+      "offset": 3.62,
+      "duration": 2.19,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "aYOL0rllM5Nh7FJDUwEf",
+        "id": "HrSGprsdtabv7DJEe3LK"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s68-kaneko-come-back-with-your-sister-sit",
+      "frameId": "neonoire-shot-237",
+      "character": "KANEKO",
+      "text": "Come back with your sister. Sit on the stools. Both of you. Eat everything.",
+      "file": "/audio/neonoire/s68/237-kaneko-come-back-with-your-sister-sit.mp3",
+      "offset": 6.68,
+      "duration": 5.49,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "tzQK65FqggKnOFEaHgk0",
+        "id": "YvQm0XtQ1FfxwzbhHFUq"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s68-jack-it-s-time",
+      "frameId": "neonoire-shot-237",
+      "character": "JACK",
+      "text": "It's time.",
+      "file": "/audio/neonoire/s68/237-jack-it-s-time.mp3",
+      "offset": 14.32,
+      "duration": 1.31,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "95kd5mhL3BFYRVtvJ2Pu",
+        "id": "yDG2CzpZn33mNjpA92JV"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-mara-vera-would-love-this",
+      "frameId": "neonoire-shot-238",
+      "character": "MARA",
+      "text": "Vera would love this.",
+      "file": "/audio/neonoire/s69/238-mara-vera-would-love-this.mp3",
+      "offset": 0.3,
+      "duration": 2.12,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "VQbkWMs7GmJj8ji4x6LH",
+        "id": "bO5uM19NbEcpy9OHgC9z"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-jack-you-can-bring-her",
+      "frameId": "neonoire-shot-238",
+      "character": "JACK",
+      "text": "You can bring her.",
+      "file": "/audio/neonoire/s69/238-jack-you-can-bring-her.mp3",
+      "offset": 3.18,
+      "duration": 1.15,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "Q6bJn9t1pVZynVTYZ4J4",
+        "id": "xBl8k8pUbQdBvXfuknqB"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-mara-when-it-s-over-you-ll",
+      "frameId": "neonoire-shot-238",
+      "character": "MARA",
+      "text": "When it's over, you'll tell her? Everything?",
+      "file": "/audio/neonoire/s69/238-mara-when-it-s-over-you-ll.mp3",
+      "offset": 5.2,
+      "duration": 3.32,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "OFj37EKts6UcGe6v6XWf",
+        "id": "WQeK1uP6froqhjmT01zv"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-jack-tonight-i-m-meeting-her-at",
+      "frameId": "neonoire-shot-238",
+      "character": "JACK",
+      "text": "Tonight. I'm meeting her at ten.",
+      "file": "/audio/neonoire/s69/238-jack-tonight-i-m-meeting-her-at.mp3",
+      "offset": 9.28,
+      "duration": 2.27,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "8WCefioD1sGkFYbwd1y8",
+        "id": "Bs5kx1Ec8JEeRK2vHNm5"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-mara-meeting-her",
+      "frameId": "neonoire-shot-238",
+      "character": "MARA",
+      "text": "Meeting her?",
+      "file": "/audio/neonoire/s69/238-mara-meeting-her.mp3",
+      "offset": 12.22,
+      "duration": 0.99,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "ihv3OboLNwVSTZ5lZiyL",
+        "id": "WiF92nXYwte2NN8UkhVv"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-jack-for-dinner",
+      "frameId": "neonoire-shot-238",
+      "character": "JACK",
+      "text": "For dinner.",
+      "file": "/audio/neonoire/s69/238-jack-for-dinner.mp3",
+      "offset": 13.78,
+      "duration": 0.91,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "5S4cIPmc5sZ7QBVYYxOK",
+        "id": "CwbaL1xKrH0kBHlayIPM"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-mara-oh-oh-i-see",
+      "frameId": "neonoire-shot-279",
+      "character": "MARA",
+      "text": "Oh. Oh, I see.",
+      "file": "/audio/neonoire/s69/279-mara-oh-oh-i-see.mp3",
+      "offset": 0.4,
+      "duration": 2.51,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "kK59JwLX9sncVuw3xSx1",
+        "id": "hohAC6qP1uDTZ8fe2cOS"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-jack-it-s-not",
+      "frameId": "neonoire-shot-279",
+      "character": "JACK",
+      "text": "It's not —",
+      "file": "/audio/neonoire/s69/279-jack-it-s-not.mp3",
+      "offset": 3.48,
+      "duration": 1.41,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "eSWkgDQQwrK3ti94fiDA",
+        "id": "SHio55fNpm1qjM4AAcB5"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s69-mara-it-is-it-s-fine-it",
+      "frameId": "neonoire-shot-279",
+      "character": "MARA",
+      "text": "It is. It's fine. It's good. She deserves someone who looks for things.",
+      "prompt": "It is. It's fine. It's good. [pause] She deserves someone who looks for things.",
+      "file": "/audio/neonoire/s69/279-mara-it-is-it-s-fine-it.mp3",
+      "offset": 5.24,
+      "duration": 6.03,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "4Yck3OmmNreX1rAoas6n",
+        "id": "qaA8VuUq0nrAcFXMQoWD"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s70-driver-excuse-me",
+      "frameId": "neonoire-shot-239",
+      "character": "DRIVER",
+      "text": "Excuse me.",
+      "file": "/audio/neonoire/s70/239-driver-excuse-me.mp3",
+      "offset": 0.4,
+      "duration": 0.99,
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "v6AVuloiazR8OHg25pbk",
+        "id": "FWvnMxVbAf4tk1SfZUbt"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s70-mara-that-s-them",
+      "frameId": "neonoire-shot-239",
+      "character": "MARA",
+      "text": "That's them.",
+      "file": "/audio/neonoire/s70/239-mara-that-s-them.mp3",
+      "offset": 2.36,
+      "duration": 1.15,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "5SeYel6b7os4NykPwFPz",
+        "id": "vlmdQfMOMuKaIiEOtxbE"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s70-jack-what",
+      "frameId": "neonoire-shot-239",
+      "character": "JACK",
+      "text": "What?",
+      "file": "/audio/neonoire/s70/239-jack-what.mp3",
+      "offset": 3.98,
+      "duration": 0.76,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "HRw4SAlBS4ns1PRMzKGU",
+        "id": "yiQgkOGObiAmGMjFUX9c"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s70-mara-that-s-what-he-said-before",
+      "frameId": "neonoire-shot-239",
+      "character": "MARA",
+      "text": "That's what he said. Before he shot him. \"Excuse me.\"",
+      "file": "/audio/neonoire/s70/239-mara-that-s-what-he-said-before.mp3",
+      "offset": 5.2,
+      "duration": 4.28,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "6CQ5OVdl5aR9vZFi6Jac",
+        "id": "jf8B5O1egtqM2z2yV5rZ"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s70-driver-position",
+      "frameId": "neonoire-shot-239",
+      "character": "DRIVER",
+      "text": "Position.",
+      "file": "/audio/neonoire/s70/239-driver-position.mp3",
+      "offset": 10.64,
+      "duration": 0.99,
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "hnXxpdfCISimqAxiEOiY",
+        "id": "EPXSLu4q07S1f9GH4dCj"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s70-jack-urgently-run",
+      "frameId": "neonoire-shot-239",
+      "character": "JACK",
+      "text": "Run!",
+      "prompt": "[urgently] Run!",
+      "file": "/audio/neonoire/s70/239-jack-urgently-run.mp3",
+      "offset": 12.4,
+      "duration": 0.99,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "isN5qGusrIvUzy4WIGSl",
+        "id": "3cwv2faqBlZs2MBb6tuu"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-jack-desperately-stay-with-me-mara-stay",
+      "frameId": "neonoire-shot-240",
+      "character": "JACK",
+      "text": "Stay with me. Mara. Stay with me.",
+      "prompt": "[desperately] Stay with me. Mara. Stay with me.",
+      "file": "/audio/neonoire/s71/240-jack-desperately-stay-with-me-mara-stay.mp3",
+      "offset": 0.3,
+      "duration": 3.63,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "PztUbW6SoKNkZazZP69t",
+        "id": "cY5fG1kve1Qt9Yidtqcl"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-mara-weakly-everyone-s-awake",
+      "frameId": "neonoire-shot-240",
+      "character": "MARA",
+      "text": "Everyone's awake.",
+      "prompt": "[weakly] Everyone's awake.",
+      "file": "/audio/neonoire/s71/240-mara-weakly-everyone-s-awake.mp3",
+      "offset": 5.3,
+      "duration": 2.04,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "NGspo1cJLtaqCxzgxwON",
+        "id": "mOzmOiUTbEC6TYiEsE0B"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-jack-yes-everyone-s-awake-help-s",
+      "frameId": "neonoire-shot-240",
+      "character": "JACK",
+      "text": "Yes. Everyone's awake. Help's coming.",
+      "file": "/audio/neonoire/s71/240-jack-yes-everyone-s-awake-help-s.mp3",
+      "offset": 8.2,
+      "duration": 3,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "bPAuVhURXKeddsDA0fuJ",
+        "id": "cti2XFtE88IFHTshiczZ"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-mara-weakly-jack",
+      "frameId": "neonoire-shot-240",
+      "character": "MARA",
+      "text": "Jack.",
+      "prompt": "[weakly] Jack.",
+      "file": "/audio/neonoire/s71/240-mara-weakly-jack.mp3",
+      "offset": 12.76,
+      "duration": 1.23,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "LJFUYwNbWch4qQj3JpfA",
+        "id": "rE3CWltxZY2BfTtLPNaL"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-jack-i-m-here",
+      "frameId": "neonoire-shot-240",
+      "character": "JACK",
+      "text": "I'm here.",
+      "file": "/audio/neonoire/s71/240-jack-i-m-here.mp3",
+      "offset": 14.66,
+      "duration": 0.91,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "pq1SOVc4PwVETGPW2WfU",
+        "id": "hhdKi1m2rpiUwOirhrqB"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-mara-weakly-tell-her-i-m-sorry",
+      "frameId": "neonoire-shot-240",
+      "character": "MARA",
+      "text": "Tell her I'm sorry.",
+      "prompt": "[weakly] Tell her I'm sorry.",
+      "file": "/audio/neonoire/s71/240-mara-weakly-tell-her-i-m-sorry.mp3",
+      "offset": 16.74,
+      "duration": 2.27,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "QAPhjZiyTt5b592QZF2n",
+        "id": "ffm8OX3Pqwsd8ldDxohs"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-jack-you-ll-tell-her-tonight-i",
+      "frameId": "neonoire-shot-240",
+      "character": "JACK",
+      "text": "You'll tell her. Tonight. I'll bring her here, you can —",
+      "file": "/audio/neonoire/s71/240-jack-you-ll-tell-her-tonight-i.mp3",
+      "offset": 19.88,
+      "duration": 4.13,
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "ciMJq3aeWdXVUTceHKFX",
+        "id": "IO3Ojx2ocFeWQVs9bmgY"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s71-mara-weakly-tell-her",
+      "frameId": "neonoire-shot-240",
+      "character": "MARA",
+      "text": "Tell her.",
+      "prompt": "[weakly] Tell her.",
+      "file": "/audio/neonoire/s71/240-mara-weakly-tell-her.mp3",
+      "offset": 23.76,
+      "duration": 1.49,
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "1GatGXKscPpRovBwbsmV",
+        "id": "1oZ80fpcPbvQsTOq9lxh"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s72-bartender-another",
+      "frameId": "neonoire-shot-85",
+      "character": "BARTENDER",
+      "text": "Another?",
+      "file": "/audio/neonoire/s72/85-bartender-another.mp3",
+      "offset": 0.5,
+      "duration": 0.68,
+      "voice": "EEYUewEB5w5R0IPnszO5",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "G62ITtfSFc7bJvr8EBFA",
+        "id": "c80Ako7X4q2wmgmei0Vm"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s72-vera-no-thank-you",
+      "frameId": "neonoire-shot-85",
+      "character": "VERA",
+      "text": "No. Thank you.",
+      "file": "/audio/neonoire/s72/85-vera-no-thank-you.mp3",
+      "offset": 1.94,
+      "duration": 1.65,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "c2hCv0erQOT9nH8E0MRg",
+        "id": "nqIgW3i8igRUHPRpIzgU"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s72-vera-hello",
+      "frameId": "neonoire-shot-86",
+      "character": "VERA",
+      "text": "Hello?",
+      "file": "/audio/neonoire/s72/86-vera-hello.mp3",
+      "offset": 0.3,
+      "duration": 0.84,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "4G6Yc3WGP2vOgiUieD1E",
+        "id": "EOAam9IhBj9UfwZumiAq"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s72-ishida-gently-miss-voss-i-m-so",
+      "frameId": "neonoire-shot-86",
+      "character": "ISHIDA",
+      "text": "Miss Voss. I'm so sorry to call so late.",
+      "prompt": "[gently] Miss Voss. I'm so sorry to call so late.",
+      "file": "/audio/neonoire/s72/86-ishida-gently-miss-voss-i-m-so.mp3",
+      "offset": 2,
+      "duration": 3.71,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "SiGGhgyRrosOembnKdMZ",
+        "id": "AtwljhO9suRaaKHPtbMg"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s72-ishida-your-sister-was-found-tonight-i",
+      "frameId": "neonoire-shot-86",
+      "character": "ISHIDA",
+      "text": "Your sister was found tonight. I'm very sorry. She died a short time ago.",
+      "file": "/audio/neonoire/s72/86-ishida-your-sister-was-found-tonight-i.mp3",
+      "offset": 7.88,
+      "duration": 5.41,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "iMSjZD77Pcf06UoE1iOP",
+        "id": "Aqc8LT1gdXoNCxYvIQV4"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s72-ishida-she-was-with-mr-jack-he",
+      "frameId": "neonoire-shot-86",
+      "character": "ISHIDA",
+      "text": "She was with Mr. Jack. He had been hiding her for several days, it seems. In the Hive. I'm sorry. I thought you knew.",
+      "prompt": "She was with Mr. Jack. He had been hiding her for several days, it seems. In the Hive. [pause] I'm sorry. I thought you knew.",
+      "file": "/audio/neonoire/s72/86-ishida-she-was-with-mr-jack-he.mp3",
+      "offset": 15.24,
+      "duration": 8.99,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "fx": "phone",
+      "generation": {
+        "flow": "zwWk8o7dCHdeYJNtHmVm",
+        "session": "IwRe7G2HyaBQvYx1x1b0",
+        "id": "lChG0I4FsIH8F0APwAO8"
+      },
+      "status": "take"
     }
   ]
 }
