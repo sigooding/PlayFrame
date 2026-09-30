@@ -1,0 +1,13 @@
+{
+  "cues": [
+    {
+      "file": "public/audio/neonoire/bad guy best.mp3",
+      "from": "72",
+      "to": "73",
+      "gain": 0.35,
+      "fadeIn": 1.5,
+      "fadeOut": 4,
+      "note": "The author's song. Starts in the hotel lounge (piano ballad, scene 72) and plays on through Vera's run in the rain (73). Change `from`/`to` to move it; scene 73 says 'No music' in the script, this is an animatic-only choice."
+    }
+  ]
+}
