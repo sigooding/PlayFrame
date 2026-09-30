@@ -134,8 +134,11 @@ scene 2) as the only references. `coldOpenFreshCompleted` carries all 31 numbers
 them fresh-pass provenance and the verifier checks it. The standing 29 September review findings
 are closed except the one logged caveat on 13 (taillight reflection beside Sakai's head can read as
 blood at a glance) — the director's call whether to spend a generation on it. Final review sheet of
-all 31 in story order: `reviews/cold-open-fresh-final-2026-09-30.jpg`. **Nothing here is production
-approval; the frames are draft studies awaiting the director's eye.**
+all 31 in story order: `reviews/cold-open-fresh-final-2026-09-30.jpg`.
+
+**APPROVAL — 30 September 2026: the director approved all 31 frames as the film's main images.**
+The builder now gives them status **Ready** and their notes carry the approval; the verifier asserts
+the Ready status on every fresh-pass frame. The rest of the board remains draft studies.
 
 ## Batch 1 review notes (frame by frame at full size)
 

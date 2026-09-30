@@ -20,8 +20,8 @@ position) plus 28 and 280–282; 280's scrap reads Kanda 2-3-1 and 1:00 after a 
 attempt was retaken in-session, and 24's first retake was redone for legible KIRIN labels. One
 caveat logged, not retaken: the taillight reflection beside Sakai's head in 13 can read as blood at
 a glance — the director's call. Final 31-frame review sheet:
-`reviews/cold-open-fresh-final-2026-09-30.jpg`. **All frames remain draft studies awaiting the
-director's approval; nothing here is production sign-off.** `coldOpenFreshCompleted`
+`reviews/cold-open-fresh-final-2026-09-30.jpg`. **APPROVED: on 30 September 2026 the director signed off on all 31 frames as the film's main
+images; the builder gives them status Ready and the verifier asserts it.** `coldOpenFreshCompleted`
 in the fresh-look module is the boundary the builder and verifier read; pre-pass frames are kept
 under ignored `artifacts/cold-open/pre-fresh-2026-09-30/` for before/after review. The pass also
 closes, as it goes, the standing review findings: Mara in the recess in 8/10/12, the sedan reversing

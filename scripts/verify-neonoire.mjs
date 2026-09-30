@@ -157,6 +157,7 @@ for (const frame of coldOpen) {
     assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be revised 16:9`);
     assert(!frame.notes.includes("COLD OPEN REVISION PENDING"));
     if (coldOpenFreshCompleted.includes(n)) {
+      assert.equal(frame.status, "Ready", `${frame.title} is director-approved fresh-pass coverage`);
       // Fresh pass of 30 September 2026: the frame carries the character-sheet-only provenance and
       // must not wear the older master-derived revision note.
       for (const detail of ["Cold-open fresh pass", "CHARACTER SHEETS ONLY", "sheets/mara.jpg", "sheets/sakai.jpg", "sheets/masked-man.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "strap intact through shot 16", "114 on its worn tag"]) {
@@ -188,7 +189,7 @@ const letterS1 = project.frames.filter(frame => frame.sceneId === "neonoire-s1" 
 assert.deepEqual(letterS1.map(f => f.id), ["neonoire-shot-280", "neonoire-shot-281", "neonoire-shot-282"], "Scene 1 coverage runs 280–282");
 for (const frame of letterS1) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
-  assert.equal(frame.status, "Draft", `${frame.title} is fresh coverage, not a pending cold-open revision`);
+  assert.equal(frame.status, "Ready", `${frame.title} is director-approved fresh-pass coverage, not a pending cold-open revision`);
   assert(!frame.notes.includes("COLD OPEN REVISION PENDING"), `${frame.title} must not wear the legacy cold-open note`);
 }
 assert(letterS1[0].notes.includes("1:00"), "Shot 280 keeps the time legible at full size");
@@ -612,7 +613,8 @@ const letterRewrite = project.frames.filter(f => shotNo(f) >= 280 && shotNo(f) <
 assert.deepEqual(letterRewrite.map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${280 + i}`), "The letter rewrite runs 280–286 with no gaps");
 for (const frame of letterRewrite) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
-  assert.equal(frame.status, "Draft", `${frame.title} is fresh coverage`);
+  // 280–282 are cold-open coverage, approved Ready in the fresh pass; 283–286 remain draft studies.
+  assert.equal(frame.status, shotNo(frame) <= 282 ? "Ready" : "Draft", `${frame.title}: cold-open coverage is director-approved Ready, the rest stay Draft`);
 }
 const desk = letterRewrite.find(f => f.id === "neonoire-shot-283");
 assert(desk.notes.includes("props/sakai-letter.jpg") && desk.notes.includes("T. SAKAI") && desk.notes.includes("VERA VOSS"), "Shot 283 locks the letter and its envelope to the prop master");
