@@ -668,12 +668,14 @@ assert.equal(deliveredRemaining.length, remainingBoardsCompleted.length, "Every 
 for (const frame of deliveredRemaining) {
   assert(frame.image, `${frame.title} is installed, not a placeholder`);
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title}: 16:9 delivery`);
-  assert.equal(frame.status, "Draft", `${frame.title}: a delivered study, production approval pending`);
+  assert.equal(frame.status, rewritePending.has(frame.id) ? "Needs review" : "Draft", `${frame.title}: a delivered study; only a standing RETAKE PENDING pin holds one back`);
   assert(frame.notes.includes("remaining-boards pass"), `${frame.title} names the pass it came from`);
 }
 pass(`remaining boards: ${remainingBoardsCompleted.length} of 20 installed under the character-sheets-only rule (${remainingBoardsCompleted.map(n => `shot ${n}`).join(", ")}), the rest still honest placeholders`);
+// 305–307 were delivered together from the re-pinned scene 99A text and released from the pin.
 for (const f of storyPass2.filter(x => [305, 306, 307].includes(shotNo(x)))) {
-  assert(f.notes.includes("RETAKE PENDING") || rewritePending.has(f.id) || !f.image, `99A frame ${shotNo(f)}: the plaza rewrite pins its retake`);
+  assert(f.image && remainingBoardsCompleted.includes(shotNo(f)), `99A frame ${shotNo(f)}: the plaza is delivered from the re-pinned text`);
+  assert(!rewritePending.has(f.id), `99A frame ${shotNo(f)}: the plaza's retake pin is released`);
 }
 pass("story pass 2 boards: shots 297–307 — Vera at the Toto Shimbun, the notebook photocopied, the call, the crawl and the finished plaza, with honest placeholders naming the files to come");
 

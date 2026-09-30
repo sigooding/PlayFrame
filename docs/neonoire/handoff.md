@@ -37,6 +37,39 @@ disk, 13 to go**. Nothing was renumbered, retired or deleted; no layout sheet, b
 was attached anywhere in this batch, and every frame was centre-cropped to exact 16:9 and resized to
 1920×1080 by `fresh-install.mjs`.
 
+## Current state — 30 September 2026 (the remaining boards, complete to batch 2)
+
+Twenty keyframes were owed after the revision and story pass 2; **twelve are now installed** under the
+cold-open fresh pass's rule — the screenplay text and the character sheets are the only image
+references. Ledger: [`passes/remaining-boards-1.md`](passes/remaining-boards-1.md); review sheets
+[batch 1](../../public/images/neonoire/reviews/remaining-boards-pass-1.jpg) and
+[batch 2](../../public/images/neonoire/reviews/remaining-boards-pass-2.jpg).
+
+- **Batch 1:** 303 (the young detective on the phone), 308 (the clip under the shelf — the revision's
+  first named close-up), 315 (the screen reading MOM), 316 (the notebook squared to the door), 317 (the
+  envelope on the glass), 318 (the dried stack), 319 (the unlit lighter).
+- **Batch 2:** 309 and 312 **retaken in-session** (the first 309 lit the room instead of the face; the
+  first 312 substituted a placard for the flyleaf), and **305/306/307, the plaza's three views,
+  generated together as one sequence from the re-pinned scene 99A text and released from
+  `RETAKE PENDING`** — the pin's reason (305's fountain-and-hoarding study) is gone and
+  `rewrite-pending.mjs` records the release.
+
+**Nine remain**, carried with their reasons in
+[`scripts/neonoire/remaining-boards.mjs`](../../scripts/neonoire/remaining-boards.mjs):
+
+- **313 — re-composed again**: the first call was refused by the image service's content moderation (a
+  precedent the house met on shot 18); the second study's drawings read too small, so the brief is
+  re-composed once more with the drawings as the subject and no figures in frame.
+- **310, 311** (the model at dawn, the hand lifting the Hive out of it), **314** (the empty crossing),
+  **320** (the news nobody watches), **298, 299, 300, 302** (53A and 82A).
+
+`remainingBoardsCompleted` is the boundary the builder and the verifier both read: a delivered frame is
+**Draft** with its pass note (unless a standing `RETAKE PENDING` pin holds it), an undelivered one keeps
+its **Needs review** placeholder naming its file. `npm run passes:neonoire` reports **288/297 keyframes
+on disk, 9 to go**. Nothing was renumbered or deleted; no layout sheet, bar sheet or scene master was
+attached anywhere; every frame was centre-cropped to exact 16:9 and resized to 1920×1080 by
+`fresh-install.mjs`; the superseded 305 study is kept under ignored `artifacts/plaza/pre-retake/`.
+
 ## Current state — 30 September 2026 (cold-open fresh pass, in progress)
 
 **The director ordered the cold open redone from scratch**: no scene masters, no layout sheet, no

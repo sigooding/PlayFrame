@@ -1,6 +1,6 @@
 # NEONOIRE — keyframe pass 32
 
-5 shots still to generate: shots 314–313, from scene 75 (INT./EXT. VARIOUS) and scene 100 (INT. KANEKO'S NEW COUNTER) and scene 51 (INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT) and scene 63 (INT. KATO RENTAL LOCKERS, UENO) and scene 71 (INT. THE HIVE, PASSAGE).
+4 shots still to generate: shots 314–313, from scene 75 (INT./EXT. VARIOUS) and scene 100 (INT. KANEKO'S NEW COUNTER) and scene 51 (INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT) and scene 71 (INT. THE HIVE, PASSAGE).
 
 **Before you start**
 
@@ -116,42 +116,6 @@ AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, h
 ```
 
 Scene grammar: 35mm static, square to the table; 85mm only for the hand and the watch. The only move in the scene is a hand lifting a neighbourhood off a plaza.
-
----
-
-### Shot 312 — Daniel voss flyleaf
-
-**Scene 63 · INT. KATO RENTAL LOCKERS, UENO — NIGHT**
-
-- **File**: `public/images/neonoire/s63/312-daniel-voss-flyleaf.jpg` — write it exactly here, 312-daniel-voss-flyleaf.jpg, JPEG, 16:9 full-bleed (1920×1080), no embedded text or watermark.
-- **Stable frame ID**: `neonoire-shot-312`; displayed board number 312. Asset prefixes predate the added scene 72; do not derive the board order from filenames.
-- **Framing**: Extreme close-up, 85mm, Static, Low angle. Lighting: Practical night. Working duration 6s (not a locked time).
-- **Continuity references to attach**: 
-- Jack — public/images/neonoire/sheets/jack.jpg  (face crop: jack-face.jpg; new 48-year-old former-detective design, not the father)
-
-**Prompt**
-
-```
-cinematic film still, 16:9 full-bleed widescreen (1920×1080), shot on 35mm Kodak Vision3 500T, visible fine grain, soft halation around every light source, slightly crushed blacks, muted desaturated palette, romantic melancholy in a Tokyo that feels remembered rather than documented, a dark dangerous place made warm by human tenderness, longing, regret, and the ache of something beautiful already slipping into the past. The city belongs to no single year: Showa-era vending machines, hand-painted shop signs, tangled overhead power lines, payphones and older televisions beside smartphones, never explained, never a period piece, never sci-fi. Cold steady rain, wet black asphalt with long mirror reflections, practical light only — cold vending-machine white, sodium orange, sick fluorescent green, one warm window, a distant train full of strangers. Wide, patient, observational compositions with figures small and separated by the city, quiet as the default; sudden flat unglamorous violence is rare and punctures the stillness rather than becoming action spectacle. Crowded streets and rooms full of lives the characters cannot quite reach, foreigners half-belonging, romance and missed chances carried by ordinary objects, no moonlight, no theatrical emotion, no explanatory imagery, a world that exists only in memory.
-
-SUBJECT — The small notebook opened under the tube: English handwriting across a page gone soft — and on the flyleaf, in a steady hand, the name. THIRD OF THE SEVEN NAMED CLOSE-UPS. LEGIBLE-TEXT FRAME: the flyleaf reads exactly DANIEL VOSS — read every letter at full size before install, per the house rule. Same cloth cover, same handwriting as the notebook of scenes 77–79 and the envelope of 22. Placeholder slot.
-
-
-
-
-
-
-
-
-
-
-FRAMING — Extreme close-up, 85mm, Static, Low angle, lit by practical night.
-DRAFT — the draft's own words for this shot: "He opens the notebook. English handwriting. On the flyleaf: DANIEL VOSS."
-
-AVOID — lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style
-```
-
-Scene grammar: 35mm down the rows; 85mm on the flyleaf and on the cassette; the lockers rattle like doors being tried.
 
 ---
 
