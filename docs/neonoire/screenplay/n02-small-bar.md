@@ -1,4 +1,4 @@
-NEONOIRE
+NOBODY'S WITNESS
 OPENING — SCENE 2 — INT. SMALL BAR, KANDA
 
 INT. SMALL BAR, KANDA - CONTINUOUS
@@ -47,7 +47,7 @@ The door swings shut. The television laughs again.
 
 Over black: RAIN.
 
->NEONOIRE<
+>NOBODY'S WITNESS<
 
 >MAIN TITLES<
 

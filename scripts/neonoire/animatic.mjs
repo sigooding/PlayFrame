@@ -145,7 +145,7 @@ for (let [i, frame] of frames.entries()) {
     // drawtext is not in every ffmpeg build; libass (subtitles) is, so the credit lines are an .ass file.
     const ass = resolve(work, "credits.ass");
     const t = k => `0:00:${String(2 + k * 2).padStart(2, "0")}.00`;
-    const lines = (cc.lines || ["NEONOIRE"]).map(x => String(x).replace(/[{}\\]/g, ""));
+    const lines = (cc.lines || ["NOBODY'S WITNESS"]).map(x => String(x).replace(/[{}\\]/g, ""));
     writeFileSync(ass, `[Script Info]\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\n\n[V4+ Styles]\nFormat: Name,Fontname,Fontsize,PrimaryColour,OutlineColour,BackColour,Bold,Alignment,MarginV\n` +
       `Style: Title,DejaVu Sans,96,&H00FFFFFF,&H00000000,&H00000000,1,5,0\nStyle: Sub,DejaVu Sans,40,&H00CCCCCC,&H00000000,&H00000000,0,5,0\n\n[Events]\nFormat: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text\n` +
       lines.map((x, k) => `Dialogue: 0,${t(k)},0:02:${String(20 + k).padStart(2, "0")}.00,${k ? "Sub" : "Title"},,0,0,${k ? 0 : 0},,{\\fad(1800,1800)\\pos(960,${k ? 600 + (k - 1) * 70 : 440})}${x}`).join("\n") + "\n");

@@ -21,7 +21,7 @@
       "fadeIn": 2,
       "fadeOut": 6,
       "lines": [
-        "NEONOIRE",
+        "NOBODY'S WITNESS",
         "A film by the author"
       ],
       "note": "End credits: a black tail after scene 100 with the full song. `seek` is where in the song to start (seconds), `length` the tail length. Credit lines are placeholders."

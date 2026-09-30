@@ -37,8 +37,8 @@ const css = `body{font:11pt/1.35 Georgia,serif;margin:14mm}h1{font-size:16pt;mar
 .a{color:#555;font-size:9.5pt;margin:.5mm 0 1mm}.b{margin:0;padding-left:4mm;font-size:10pt}.st{font:9pt Helvetica,Arial,sans-serif;color:#333;margin-top:1mm}
 .box{border:1px solid #aaa;min-height:16mm}.box b{font:8pt Helvetica,Arial,sans-serif;color:#777;display:block;padding:1mm}
 @media print{body{margin:10mm}}`;
-const html = `<!doctype html><meta charset="utf-8"><title>NEONOIRE scene worksheet</title><style>${css}</style>
-<h1>NEONOIRE: scene worksheet</h1><p class="sub">${scenes.length} scenes. Dialogue beats are the first words of each speech. "Voiced" counts recorded lines in the animatic; silent scenes show none. Notes box is yours.</p>
+const html = `<!doctype html><meta charset="utf-8"><title>Nobody's Witness scene worksheet</title><style>${css}</style>
+<h1>Nobody's Witness: scene worksheet</h1><p class="sub">${scenes.length} scenes. Dialogue beats are the first words of each speech. "Voiced" counts recorded lines in the animatic; silent scenes show none. Notes box is yours.</p>
 ${scenes.map(s => `<div class="s"><div class="n">${s.no}</div><div><div class="h">${esc(s.heading)}</div><div class="a">${esc(s.action)}</div>${s.beats.length ? `<ul class="b">${s.beats.map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : `<div class="st">No dialogue.</div>`}<div class="st">${s.beats.length ? (voiced[s.no] ? `Voiced: ${voiced[s.no]} line(s)` : "Not yet voiced") : ""}</div></div><div class="box"><b>Changes</b></div></div>`).join("\n")}`;
 mkdirSync(resolve(root, "exports/neonoire"), { recursive: true });
 writeFileSync(resolve(root, "exports/neonoire/scene-worksheet.html"), html);
