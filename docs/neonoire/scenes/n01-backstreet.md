@@ -15,6 +15,14 @@ The location master is `s1/01-backstreet.jpg`: left brick barbershop recess, bro
 
 Follow `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../passes/cold-open-revision.md) for subsequent batches. These are AI-generated draft studies, not approved coverage. The screenplay is unchanged.
 
+## Cold-open fresh pass — 30 September 2026 (in progress)
+
+**The director ordered a clean-slate regeneration of the whole cold open: no scene masters, no layout sheet, no bar sheet and no earlier frame attached to any generation — the screenplay text is the only scene guide, and the CHARACTER SHEETS are the only image references** (`sheets/mara.jpg`, `sheets/mara-face.jpg`, `sheets/masked-man.jpg`, and the two sheets this pass created, `sheets/sakai.jpg` and `sheets/journalist.jpg`; frames with no cast attach nothing). Every earlier attempt inherited its errors image-to-image from the frames it was meant to fix, so this pass describes the street and the bar in one shared set of words (`scripts/neonoire/cold-open-fresh-look.mjs`) and regenerates each frame from that brief. The earlier retake notes below are the shot's history, not the current image's provenance; the current image's provenance is the fresh pass, carried in the bundle note.
+
+- **Installed at 1920×1080: shots 1–18 and 280–282 — scene 1 is wholly fresh** (30 September 2026, four batches, together with the two new cast sheets). The pre-pass frames are kept under ignored `artifacts/cold-open/pre-fresh-2026-09-30/` for before/after review; raw generations stay under `artifacts/cold-open/fresh-2026-09-30/`.
+- Shot 18 landed on the moderation-safe composition (torch beam on the purse in the water, the searching man small and distant by the sedan, no body in frame) after the first attempt was blocked by the image service. 280's scrap reads Kanda 2-3-1 and 1:00 after a wrong-ward first attempt was retaken in-session. The board numbers, lenses, beats and screenplay quotes are unchanged; nothing is renumbered. **The pass is complete; the frames await the director's approval.**
+- Carried fixes this pass applies from the [29 September review](../passes/cold-open-image-review-2026-09-29.md): Mara stays in the recess shadow in every frame whose camera sees the doorway (8, 10, 12); the sedan reverses out of the mouth and never turns in the lane (13); Sakai's body is in the lane in 13; the bar sign appears only in frames looking toward the bar end; the key's worn tag reads **114**, closing the old 87 mismatch; no detached shoes in 27.
+
 ---
 
 1. ESTABLISHING — 24mm, static, eye level — EXT. BACKSTREET, KANDA.
@@ -177,7 +185,7 @@ CAST: The Masked Men, The Old Man
 LIGHT: Practical night
 TIME: 10
 IMAGE: 18-the-flashlight.jpg
-NOTE: The search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music. Retake 29 September 2026 (the layout pass): one man walks back in on foot; the sedan stays at the mouth; the torch beam ends on the purse. Layout sheet `sheets/kanda-alley-layout.jpg`.
+NOTE: The search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music. Retake 29 September 2026 (the layout pass): one man walks back in on foot; the sedan stays at the mouth; the torch beam ends on the purse. Layout sheet `sheets/kanda-alley-layout.jpg`. Fresh pass 30 September 2026: regenerated on the moderation-safe composition — the beam on the purse in the water is the subject, the searching man stands small and distant by the sedan, no body in frame; the first attempt (kneeling over the body) was blocked by the image service. Landed.
 
 ---
 
@@ -195,7 +203,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-280
 IMAGE: 280-one-oclock.jpg
-NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s1/05-phone-off.jpg` and `s1/03-mara-walks.jpg` with `sheets/mara.jpg`: indigo denim jacket, grey tee, black cord necklace, dark-brown handbag strap right shoulder to left hip, red enamel bird clip in soaked hair. The time 1:00 is legible at full size. The barber pole reads slightly lit; the master keeps it unlit — dress it dark on set.
+NOTE: Letter rewrite coverage, 28 September 2026; regenerated in the fresh pass 30 September 2026 with `sheets/mara.jpg` and `sheets/mara-face.jpg` only — no scene masters or earlier frames attached: indigo denim jacket, grey tee, black cord necklace, dark-brown handbag strap right shoulder to left hip, red enamel bird clip in soaked hair. The scrap reads Kanda 2-3-1 and 1:00 in her own handwriting, legible at full size (the first attempt's address named the wrong ward and was retaken in the same session). The pole reads unlit in this pass.
 
 281. POV — 35mm, static, eye level — the bar sign.
 Mara's point of view down the wet street: the barbershop recess and the vending machine hold the foreground, and at the far end, small and lit in the rain, the sign of the bar she is early for.
@@ -205,7 +213,7 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-281
 IMAGE: 281-the-bar-sign.jpg
-NOTE: Letter rewrite coverage, 28 September 2026. Generated from the street master `s1/01-backstreet.jpg`; no people in frame, one barber pole, the bar sign the only new light down the street. The pole reads slightly lit; carry the same on-set caveat as 280.
+NOTE: Letter rewrite coverage, 28 September 2026; regenerated in the fresh pass 30 September 2026 with no references at all (no cast in frame): no people in frame, one unlit barber pole, the bar sign the only new light down the street.
 
 282. TWO-SHOT — 85mm, static, low angle — Mr. Sakai?
 Low on the wet asphalt: the old man on his side in the black water, his face turned up to Mara as she kneels beside him, rain falling on both. It covers her whisper — Mr. Sakai? — and his last English: your father; it was not what they say.
@@ -215,7 +223,7 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-282
 IMAGE: 282-mr-sakai.jpg
-NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s1/14-she-kneels.jpg` and `s1/07-old-man.jpg`: his translucent raincoat and her soaked denim and red bird clip carry. Distant and non-graphic — no blood, no weapons in frame. The barbershop pole deep in the background reads slightly lit; same on-set caveat.
+NOTE: Letter rewrite coverage, 28 September 2026; regenerated in the fresh pass 30 September 2026 with `sheets/mara.jpg` and `sheets/sakai.jpg` only: his translucent raincoat and her soaked denim and red bird clip carry. Distant and non-graphic — no blood, no weapons in frame; the unlit pole deep in the background.
 
 ---
 

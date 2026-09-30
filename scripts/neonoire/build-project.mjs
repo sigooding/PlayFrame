@@ -23,6 +23,7 @@ import { apartmentBuildingLook, apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
+import { coldOpenFreshLook, coldOpenFreshCompleted } from "./cold-open-fresh-look.mjs";
 import { aftermathLook, streetsLook, streetsPassTwoImages, streetsScenes } from "./streets-look.mjs";
 import { dawnLook, dawnScenes, jackRecastDone, jackRecastDoneNote, jackRecastNote, jackRecastPending, policeDayLook, policeDayScenes } from "./dawn-look.mjs";
 import { confrontationScenes, kuroseOfficeLook, storeroomLook } from "./confrontation-look.mjs";
@@ -251,6 +252,8 @@ const frames = shots.map(shot => {
         ? "Image: AI-generated story pass 2 boarding (29 September 2026) — Vera at the Toto Shimbun (53A), the notebook photocopied (82A), the phone call and the Ishida crawl (96, 97) and the finished plaza (99A), numbered in boarding order after coverage 296. This session's ten generation calls went first to the six escape retakes (one close-up drifted and was retaken in the same session) and then to the hero frames of 53A, 82A and 99A; the remaining studies hold honest placeholder slots with pass briefs. Production approval pending."
         : shot.n >= 287
         ? "Image: AI-generated first boarding of scenes 25A, 27A and 63A (29 September 2026) — ten shots, ten generations, numbered in boarding order after coverage 286; each scene's master generated first with the Vera, Jack and Okada sheets attached, the remaining shots derived from those masters, the scene 8 bar, the scene 2 floor, the scene 63 locker room, the scene 1 sedan and the SHIOHAMA cassette. Production approval pending."
+        : coldOpenFreshCompleted.includes(shot.n) && shot.n > PRIMARY_SHOTS
+          ? "Image: regenerated in the cold-open fresh pass (30 September 2026) from the screenplay text with CHARACTER SHEETS ONLY attached — no scene masters, no layout sheet, no earlier frame; see scripts/neonoire/cold-open-fresh-look.mjs. Production approval pending."
         : shot.n > PRIMARY_SHOTS
         ? "Image: AI-generated coverage study (28 September 2026) — the letter rewrite pass — generated from each scene's masters with the cast sheets and the new prop master `props/sakai-letter.jpg` attached; each passed the standing perspective check or carries its flaw in the board note. Production approval pending."
         : streetsScenes.has(shot.scene.key)
@@ -285,9 +288,11 @@ const frames = shots.map(shot => {
       ...(jackRecastPending.has(shot.id) ? [jackRecastNote] : []),
       ...(rewritePending.has(shot.id) ? [rewritePendingNote] : []),
       ...(jackRecastDone.has(shot.id) ? [jackRecastDoneNote] : []),
-      ...(isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS ? [shot.n <= coldOpenCompletedThrough
-        ? `Cold-open visual revision: ${coldOpenLook}`
-        : `COLD OPEN REVISION PENDING — shot ${shot.n} retains its previous 2.39:1 image. Only shots 1–${coldOpenCompletedThrough} have been rebuilt in 16:9; follow scripts/neonoire/cold-open-look.mjs for the next batch. This legacy frame is not revised coverage.`] : []),
+      ...(isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS ? [coldOpenFreshCompleted.includes(shot.n)
+        ? `Cold-open fresh pass: ${coldOpenFreshLook}`
+        : shot.n <= coldOpenCompletedThrough
+          ? `Cold-open visual revision: ${coldOpenLook}`
+          : `COLD OPEN REVISION PENDING — shot ${shot.n} retains its previous 2.39:1 image. Only shots 1–${coldOpenCompletedThrough} have been rebuilt in 16:9; follow scripts/neonoire/cold-open-look.mjs for the next batch. This legacy frame is not revised coverage.`] : []),
       ...(awaitingAspect(shot) ? [`16:9 REVISION PENDING — shot ${shot.n} is not yet 1920×1080. From the final screenplay onward every image in this film is 16:9 full-bleed (1920×1080): regenerate this frame against its scene key; never crop a scope study into it.`] : []),
       ...(shot.scene.key === "s7" ? [`Visual revision (25 September 2026): ${detectivesLook}`] : []),
       ...(shot.scene.key === "s6" ? [`Visual revision (25 September 2026): ${interviewLook}`] : []),

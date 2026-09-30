@@ -146,6 +146,7 @@ function jpegDimensions(file) {
   throw new Error(`No JPEG dimensions in ${file}`);
 }
 const { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } = await import("./neonoire/cold-open-look.mjs");
+const { coldOpenFreshLook, coldOpenFreshCompleted } = await import("./neonoire/cold-open-fresh-look.mjs");
 assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
 const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId) && shotNo(frame) <= 28);
 assert.equal(coldOpen.length, 28);
@@ -155,8 +156,17 @@ for (const frame of coldOpen) {
   if (n <= coldOpenCompletedThrough) {
     assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be revised 16:9`);
     assert(!frame.notes.includes("COLD OPEN REVISION PENDING"));
-    for (const detail of ["Cold-open visual revision", "s1/01-backstreet.jpg", "s1/07-old-man.jpg", "s1/08-sedan-arrives.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "Strap intact through 16", "114 on its worn tag"]) {
-      assert(frame.notes.includes(detail), `${frame.title} lacks cold-open continuity: ${detail}`);
+    if (coldOpenFreshCompleted.includes(n)) {
+      // Fresh pass of 30 September 2026: the frame carries the character-sheet-only provenance and
+      // must not wear the older master-derived revision note.
+      for (const detail of ["Cold-open fresh pass", "CHARACTER SHEETS ONLY", "sheets/mara.jpg", "sheets/sakai.jpg", "sheets/masked-man.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "strap intact through shot 16", "114 on its worn tag"]) {
+        assert(frame.notes.includes(detail), `${frame.title} lacks fresh-pass continuity: ${detail}`);
+      }
+      assert(!frame.notes.includes("Cold-open visual revision"), `${frame.title} is fresh-pass coverage, not the master-derived revision`);
+    } else {
+      for (const detail of ["Cold-open visual revision", "s1/01-backstreet.jpg", "s1/07-old-man.jpg", "s1/08-sedan-arrives.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "Strap intact through 16", "114 on its worn tag"]) {
+        assert(frame.notes.includes(detail), `${frame.title} lacks cold-open continuity: ${detail}`);
+      }
     }
   } else {
     assert.deepEqual(jpegDimensions(frame.image), [1912, 800], `${frame.title}: legacy image must not masquerade as a revised frame`);
@@ -165,7 +175,12 @@ for (const frame of coldOpen) {
     assert(!frame.notes.includes("Cold-open visual revision:"));
   }
 }
-pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
+for (const sheet of ["images/neonoire/sheets/sakai.jpg", "images/neonoire/sheets/journalist.jpg"]) {
+  const [w, h] = jpegDimensions(sheet);
+  assert(w > h, `${sheet} exists and is a landscape cast sheet`);
+}
+assert(coldOpenFreshLook.includes("CHARACTER SHEETS ONLY") && coldOpenFreshLook.includes("no scene masters"), "The fresh-pass brief carries the character-references-only rule");
+pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; ${coldOpenFreshCompleted.length} of them regenerated in the fresh pass; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
 
 // Letter rewrite coverage, 28 September 2026 — shots 280–282 re-derive scene 1's street without
 // renumbering the first boarding. Shot 7 was retaken in place so Sakai's eyes find Mara and leave.
@@ -177,9 +192,10 @@ for (const frame of letterS1) {
   assert(!frame.notes.includes("COLD OPEN REVISION PENDING"), `${frame.title} must not wear the legacy cold-open note`);
 }
 assert(letterS1[0].notes.includes("1:00"), "Shot 280 keeps the time legible at full size");
-assert(letterS1[0].notes.includes("s1/05-phone-off.jpg") && letterS1[0].notes.includes("red enamel bird clip"), "Shot 280 locks the doorway wardrobe");
-assert(letterS1[1].notes.includes("s1/01-backstreet.jpg") && letterS1[1].notes.includes("bar sign"), "Shot 281 is the street master's POV with the lit bar sign");
-assert(letterS1[2].notes.includes("s1/14-she-kneels.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic");
+assert(letterS1[0].notes.includes("1:00") && letterS1[0].notes.includes("Kanda 2-3-1"), "Shot 280 keeps the address and the time legible, in the right ward");
+assert(letterS1[0].notes.includes("sheets/mara.jpg") && letterS1[0].notes.includes("red enamel bird clip"), "Shot 280 locks the doorway wardrobe to the sheet");
+assert(letterS1[1].notes.includes("bar sign") && letterS1[1].notes.includes("no references at all"), "Shot 281 is the fresh POV with the lit bar sign and no references");
+assert(letterS1[2].notes.includes("sheets/sakai.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic on the sheets");
 assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 carries the letter-rewrite retake note");
 pass("letter rewrite in scene 1: 1:00 in her own handwriting, the bar sign at the end of the street, and Mr. Sakai's face turned up to hers");
 // Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
