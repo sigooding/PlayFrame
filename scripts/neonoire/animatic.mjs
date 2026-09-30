@@ -41,6 +41,7 @@ mkdirSync(work, { recursive: true });
 const run = a => execFileSync(ff, ["-y", "-loglevel", "error", ...a], { stdio: "inherit" });
 const segments = [];
 let segmentsTotal = 0;
+const sceneSpan = {}; // scene tag -> [start, end] seconds in the cut, for music cues
 // Filters for lines that are heard through something: the clean take stays clean on disk, the animatic colours it.
 // Set with `voice-ingest --fx`; the real treatment is done in the editor, this is a fair sketch of it.
 const FX = {
@@ -118,6 +119,8 @@ for (let [i, frame] of frames.entries()) {
   run([...inputs, "-filter_complex", filter, "-map", "0:v", "-map", "[a]", "-t", String(frame.duration),
     "-vf", `${look}${subFilter},format=yuv420p`,
     "-c:v", "libx264", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", seg]);
+  const tag = sceneTag(frame.sceneId);
+  sceneSpan[tag] = [sceneSpan[tag]?.[0] ?? segmentsTotal, segmentsTotal + frame.duration];
   segments.push(seg);
   segmentsTotal += frame.duration;
 }
@@ -128,7 +131,27 @@ writeFileSync(list, segments.map(s => `file '${s}'`).join("\n") + "\n");
 const file = resolve(out, `neonoire-${name}.mp4`);
 // One loudness pass over the whole cut, so whispered lines are audible next to spoken ones without
 // each frame being levelled on its own (which would shout the quietest lines).
-run(["-f", "concat", "-safe", "0", "-i", list, "-c:v", "copy", "-af", "loudnorm=I=-16:LRA=11:TP=-1.5", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", file]);
+// Music cues (docs/neonoire/music/cues.json): { file, from: "72", to: "73", gain, fadeOut }. The bed starts at the first
+// frame of `from`, ends at the last frame of `to` (clamped to what is in this cut), and ducks under dialogue.
+const cuesFile = resolve(root, "docs/neonoire/music/cues.json");
+const music = args["no-music"] === undefined && existsSync(cuesFile) ? JSON.parse(readFileSync(cuesFile, "utf8")).cues || [] : [];
+const live = music.map(c => {
+  const a = sceneSpan[String(c.from).toUpperCase()], b = sceneSpan[String(c.to || c.from).toUpperCase()];
+  return a && b && existsSync(resolve(root, c.file)) ? { ...c, start: c.startOffset === undefined ? a[0] : (c.startOffset < 0 ? a[1] : a[0]) + c.startOffset, end: b[1] } : null;
+}).filter(Boolean);
+if (!live.length) run(["-f", "concat", "-safe", "0", "-i", list, "-c:v", "copy", "-af", "loudnorm=I=-16:LRA=11:TP=-1.5", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", file]);
+else {
+  const ins = ["-f", "concat", "-safe", "0", "-i", list];
+  let f = "[0:a]asplit=2[dlg][sc];";
+  live.forEach((c, k) => {
+    ins.push("-i", resolve(root, c.file));
+    const len = c.end - c.start, fo = c.fadeOut ?? 3;
+    f += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=stereo,atrim=0:${len.toFixed(2)},afade=t=in:d=${c.fadeIn ?? 1.5},afade=t=out:st=${Math.max(0, len - fo).toFixed(2)}:d=${fo},volume=${c.gain ?? 0.35},adelay=${Math.round(c.start * 1000)}|${Math.round(c.start * 1000)}[m${k}];`;
+  });
+  f += live.map((_, k) => `[m${k}]`).join("") + `amix=inputs=${live.length}:normalize=0[mus];[sc]aformat=channel_layouts=mono,anull[scm];[mus][scm]sidechaincompress=threshold=0.02:ratio=10:attack=30:release=600[duck];[dlg]aformat=channel_layouts=stereo[dl];[dl][duck]amix=inputs=2:normalize=0,loudnorm=I=-16:LRA=11:TP=-1.5[out]`;
+  run([...ins, "-filter_complex", f, "-map", "0:v", "-map", "[out]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", file]);
+  console.log(`music: ${live.map(c => `${c.file} ${c.start.toFixed(1)}s-${c.end.toFixed(1)}s`).join("; ")}`);
+}
 const total = segmentsTotal;
 if (subs) writeFileSync(file.replace(/\.mp4$/, ".srt"), cues.map((c, k) => `${k + 1}\n${srtTime(c.start)} --> ${srtTime(c.end)}\n${c.text}\n`).join("\n"));
 const voiced = frames.reduce((n, f) => n + (f.audio?.length || 0), 0);

@@ -19,10 +19,12 @@ It's me.
 A beat. Disappointment, then something else.
 
 VERA
-Where are you?
+Where are you? You sound like you're calling from 1985.
 
 JACK
-The coast. An inn off the highway.
+The coast. An inn off the highway. The phone is pink.
+
+She almost laughs.
 
 VERA
 Did you find anything?
