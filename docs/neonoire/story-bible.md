@@ -419,3 +419,8 @@ scenes 5–13 → Ishida's interview given anger → the wine-red dress and the 
 outline → villains punished → the back seat → full draft (100 scenes) → PlayFrame board (279 shots)
 → animatic → the letter rewrite → Hive and apartment canon → Blade Runner-textured Hive → the alley
 mouth → script pass (Part 9 item 4) → three new Act Two scenes (25A, 27A, 63A).
+
+9. **Compromise on three parts of the 30 September revision (director-requested, 30 September):** the revision's cleaner lines kept, the warmth it lost put back.
+   - **Scene 11 (Ishida, phone):** "Go to sleep, Jack. You found enough twenty years ago. You're too old to be haunted." Both lines, delivered gently: the warning is the same but he does not show his hand yet.
+   - **Scene 36 (payphone):** Vera asks "Where are you? You sound like you're calling from 1985." Jack: "The coast. An inn off the highway. The phone is pink." *She almost laughs.* The concrete place stays, the old joke and the smile come back.
+   - **Score:** the script's own cue stands. There is no score before the tail of scene 74 ("Only now does the SCORE enter"). The author's song therefore enters late in 74 and plays through the 75 series, not under the lounge and the run.

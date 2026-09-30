@@ -137,7 +137,7 @@ const cuesFile = resolve(root, "docs/neonoire/music/cues.json");
 const music = args["no-music"] === undefined && existsSync(cuesFile) ? JSON.parse(readFileSync(cuesFile, "utf8")).cues || [] : [];
 const live = music.map(c => {
   const a = sceneSpan[String(c.from).toUpperCase()], b = sceneSpan[String(c.to || c.from).toUpperCase()];
-  return a && b && existsSync(resolve(root, c.file)) ? { ...c, start: a[0], end: b[1] } : null;
+  return a && b && existsSync(resolve(root, c.file)) ? { ...c, start: c.startOffset === undefined ? a[0] : (c.startOffset < 0 ? a[1] : a[0]) + c.startOffset, end: b[1] } : null;
 }).filter(Boolean);
 if (!live.length) run(["-f", "concat", "-safe", "0", "-i", list, "-c:v", "copy", "-af", "loudnorm=I=-16:LRA=11:TP=-1.5", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", file]);
 else {
