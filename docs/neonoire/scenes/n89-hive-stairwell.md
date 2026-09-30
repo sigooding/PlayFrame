@@ -49,4 +49,4 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-319
 IMAGE: 319-the-unlit-lighter.jpg
-NOTE: SEVENTH OF THE SEVEN NAMED CLOSE-UPS (2, 20, 63, 71, 77, 79, 89), and the scene's only dialogue is this thumb. The film's answer to scene 76: she keeps it, and it stays unlit. Same dented steel as scene 76's palm and the train-window lighter of scene 26. Placeholder slot.
+NOTE: SEVENTH OF THE SEVEN NAMED CLOSE-UPS (2, 20, 63, 71, 77, 79, 89), and the scene's only dialogue is this thumb. The film's answer to scene 76: she keeps it, and it stays unlit. Same dented steel as scene 76's palm and the train-window lighter of scene 26. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1 — screenplay text and the Vera sheet as the only references; delivered 16:9 full-bleed 1920×1080. The frame's content is what does not happen: the thumb is on the wheel and there is no flame and no spark anywhere in it. Production approval pending.

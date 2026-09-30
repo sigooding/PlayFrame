@@ -69,4 +69,4 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-318
 IMAGE: 318-the-dried-stack.jpg
-NOTE: The same pages scene 71 watched soak, gathered and dried by the time the storeroom is hers again. Placeholder slot.
+NOTE: The same pages scene 71 watched soak, gathered and dried by the time the storeroom is hers again. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1 — screenplay text and the sketchbook's own drawings as the only guides, no storeroom master attached; delivered 16:9 full-bleed 1920×1080. The edges are rippled and warped; the top sheet carries the pencil counter and its 金子 board; the bulb throws both shadows past the futon. Production approval pending.

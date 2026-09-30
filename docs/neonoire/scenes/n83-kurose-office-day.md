@@ -89,4 +89,4 @@ LIGHT: Overcast soft
 TIME: 6
 ID: neonoire-shot-317
 IMAGE: 317-the-envelope-on-the-glass.jpg
-NOTE: The offer Vera never refuses because she never looks at it. A MEDIUM on a prop, not a close-up on a face — the wide-scene rule of the revision holds even here. Placeholder slot.
+NOTE: The offer Vera never refuses because she never looks at it. A MEDIUM on a prop, not a close-up on a face — the wide-scene rule of the revision holds even here. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1: screenplay text, the Vera and Kurose sheets only, no scene master attached; delivered 16:9 full-bleed 1920×1080. Vera is in Look C with her eyes on the rain-grey city, the chairman out of frame, the glass case and the model behind them. Production approval pending.

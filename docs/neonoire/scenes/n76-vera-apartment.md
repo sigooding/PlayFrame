@@ -59,4 +59,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-315
 IMAGE: 315-the-number-pressed.jpg
-NOTE: LEGIBLE-TEXT FRAME: the screen reads exactly MOM. Vera's mother is heard twice in the film and never seen; the only 'she' in this frame is the light. `sheets/vera.jpg` in the ruined red dress, mascara dried, one shoe. Placeholder slot.
+NOTE: LEGIBLE-TEXT FRAME: the screen reads exactly MOM. Vera's mother is heard twice in the film and never seen; the only 'she' in this frame is the light. `sheets/vera.jpg` in the ruined red dress, mascara dried, one shoe. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1: delivered 16:9 full-bleed 1920×1080, generated from the screenplay text and the Vera sheet with the apartment's revised geometry (no paper pendant) as its only room guide. LEGIBLE TEXT read at full size before install: the screen reads exactly MOM. Production approval pending.

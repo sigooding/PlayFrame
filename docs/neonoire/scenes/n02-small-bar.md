@@ -135,4 +135,4 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-308
 IMAGE: 308-clip-under-the-shelf.jpg
-NOTE: THE FIRST OF THE SEVEN NAMED CLOSE-UPS of the 30 September 2026 revision — the list is fixed on the page: 2, 20, 63, 71, 77, 79, 89, and no others. The red enamel bird clip as pinned in scene 1; `sheets/mara-face.jpg` for the wet look. Placeholder slot — to be generated under the cold-open fresh pass's rules: screenplay text and character sheets only.
+NOTE: THE FIRST OF THE SEVEN NAMED CLOSE-UPS of the 30 September 2026 revision — the list is fixed on the page: 2, 20, 63, 71, 77, 79, 89, and no others. The red enamel bird clip as pinned in scene 1; `sheets/mara-face.jpg` for the wet look. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1 — generated under the cold-open fresh pass's rules (screenplay text and character sheets only; the bar room described from the screenplay text, the location sheet not attached), delivered 16:9 full-bleed 1920×1080. The clip is legible as the bird of her sheet; the hand and the soaked denim cuff are the only flesh in frame. Production approval pending.

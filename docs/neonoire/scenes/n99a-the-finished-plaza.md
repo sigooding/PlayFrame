@@ -21,7 +21,7 @@ LIGHT: Natural daylight
 TIME: 12
 ID: neonoire-shot-305
 IMAGE: 305-the-plaza.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows the fountain, the hoarding and the steel guards the revised scene cuts. Scene master for the plaza as it is built: hold the little plaza of `s83/113-very-clean.jpg` and the corrected model of scene 51 as the master plan. Pale paving, a strip of new grass, a bench nobody sits on; the elevated railway runs overhead at frame edge (the viaduct outlived the Hive), and nothing marks where anything was. Winter light, thin and clear — no rain, no sodium, no murk. Perspective check passed on the old study; recheck on the retake. STORY PASS 2, 29 September 2026; re-pinned 30 September 2026.
+NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — the plaza as it is built, a retake released from RETAKE PENDING: the old study showed the fountain, the hoarding and the steel guards the revised scene cuts, and this generation is made from the re-pinned text alone. Pale paving, a strip of new grass, one bench nobody sits on, three ordinary people crossing far away, the viaduct along the edge of frame; nothing marks where anything was. Winter light, thin and clear — no rain, no sodium, no murk. Delivered 16:9 full-bleed 1920×1080; generated with the plaza's other two views in the same session so the sequence matches frame to frame. STORY PASS 2, 29 September 2026; re-pinned and delivered 30 September 2026. Production approval pending.
 
 ---
 
@@ -33,7 +33,7 @@ LIGHT: Natural daylight
 TIME: 8
 ID: neonoire-shot-306
 IMAGE: 306-the-hoarding.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — the hoarding is out of the film: the banner that read KUROSE DEVELOPMENT. TOMORROW'S TOKYO. retires with the cut scene 97, and "real people cross it now, exactly like the painted ones" is the frame's whole content. The company name on the finished plaza had been the film's only comment on what happened to Kurose; the revision withholds even that. Regenerate from the re-pinned text alone. Placeholder study — the keyframe is still to generate.
+NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — the hoarding is out of the film: the banner that read KUROSE DEVELOPMENT. TOMORROW'S TOKYO. retired with the cut scene 97, and the frame's content is "real people cross it now, exactly like the painted ones" — four or five ordinary pedestrians in winter coats crossing the pale paving, unhurried, the whole company name withheld. No fountain, no hoarding, no readable signage. Delivered 16:9 full-bleed 1920×1080; generated with 305 and 307 in the same session. Production approval pending.
 
 ---
 
@@ -45,4 +45,4 @@ LIGHT: Natural daylight
 TIME: 12
 ID: neonoire-shot-307
 IMAGE: 307-the-gardener.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — the film's last grace note is the absence itself: the train passes and nothing answers — no gardener, no straightened tree (that was 272's beat, retired with scene 51's rewrite). The train overhead rhymes with every train that shook the Hive (the bulb swinging in 84, the fire ladder under one train in 91); here the same train passes and nothing below it moves. Generated against 305 as the plaza's second view; regenerate to the re-pinned text. STORY PASS 2, 29 September 2026; re-pinned 30 September 2026.
+NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — a released retake generated to the re-pinned text: the film's last grace note is the absence itself — the train passes and nothing answers — so a commuter train crosses the viaduct in a grey blur and beneath it the plaza is completely still and empty — no gardener, no straightened tree (that was 272's beat, retired with scene 51's rewrite). The train rhymes with every train that shook the Hive (the bulb swinging in 84, the fire ladder under one train in 91); here nothing below it moves. Delivered 16:9 full-bleed 1920×1080, generated with 305 and 306 in the same session. STORY PASS 2, 29 September 2026; re-pinned and delivered 30 September 2026. Production approval pending.

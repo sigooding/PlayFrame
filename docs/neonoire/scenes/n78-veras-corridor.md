@@ -59,4 +59,4 @@ LIGHT: Blue hour
 TIME: 6
 ID: neonoire-shot-316
 IMAGE: 316-squared-to-the-door.jpg
-NOTE: The notebook is the one Jack wrapped in newspaper in scene 77 and could not write on: no envelope now, and 'squares it to the door' is the whole man. Placeholder slot.
+NOTE: The notebook is the one Jack wrapped in newspaper in scene 77 and could not write on: no envelope now, and 'squares it to the door' is the whole man. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1 — screenplay text and the Jack sheet only, no corridor master attached; delivered 16:9 full-bleed 1920×1080. The hand leaves the frame and the coat is already stepping away. Caveat logged: the cloth book reads a little thick at this distance and must not read as a parcel. Production approval pending.

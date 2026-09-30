@@ -67,4 +67,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-309
 IMAGE: 309-the-voicemail.jpg
-NOTE: SECOND OF THE SEVEN NAMED CLOSE-UPS (2, 20, 63, 71, 77, 79, 89 — fixed on the page, and no others). Carries the two recorded lines lifted from the cut scene 13: the manifest's voicemail now plays over this frame. `sheets/mara-face.jpg`, no clip — by the end of the scene the clip is on the sketchbook. Placeholder slot.
+NOTE: SECOND OF THE SEVEN NAMED CLOSE-UPS (2, 20, 63, 71, 77, 79, 89 — fixed on the page, and no others). Carries the two recorded lines lifted from the cut scene 13: the manifest's voicemail now plays over this frame. `sheets/mara-face.jpg`, no clip — by the end of the scene the clip is on the sketchbook. INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — a retake: the first study lit the whole storeroom, and the second generation holds the rule that the phone screen is the ONLY light on her face, the bulb left far behind her and out of focus. Delivered 16:9 full-bleed 1920×1080; no readable text on the screen. Production approval pending.

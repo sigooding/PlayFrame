@@ -51,4 +51,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-312
 IMAGE: 312-daniel-voss-flyleaf.jpg
-NOTE: THIRD OF THE SEVEN NAMED CLOSE-UPS. LEGIBLE-TEXT FRAME: the flyleaf reads exactly DANIEL VOSS — read every letter at full size before install, per the house rule. Same cloth cover, same handwriting as the notebook of scenes 77–79 and the envelope of 22. Placeholder slot.
+NOTE: THIRD OF THE SEVEN NAMED CLOSE-UPS. LEGIBLE-TEXT FRAME: the flyleaf reads exactly DANIEL VOSS — read every letter at full size before install, per the house rule. Same cloth cover, same handwriting as the notebook of scenes 77–79 and the envelope of 22. INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — a retake: the first study substituted a placard of printed text for the flyleaf, and the second generation carries the name written in ink on the flyleaf and nothing else readable anywhere in the frame. LEGIBLE TEXT read at full size before install: DANIEL VOSS. Delivered 16:9 full-bleed 1920×1080. Production approval pending.
