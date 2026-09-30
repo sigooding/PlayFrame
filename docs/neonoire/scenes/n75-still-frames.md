@@ -59,3 +59,21 @@ TIME: 7
 ID: neonoire-shot-81
 IMAGE: 81-static-in-a-window.jpg
 NOTE: Replacement generated in session two. Same practical-light colour grammar. Director's rule (26 September 2026): a TV that is on is never static — the window CRT now carries a cheerful late-night variety audience; still no face, news ticker or readable overlay. Then CUT TO BLACK as the screenplay specifies; do not generate a title card or a sixth montage image.
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+The revision adds the crossing as the sixth still — the frame after which the score enters, the first note of music in the film.
+
+---
+
+314. WIDE — 50mm, static, eye level — The empty crossing.
+The pedestrian crossing from 27 and 62. Empty. The signal turns green for no one and the old melody CHIMES across the wet street, all the way to the end. No people, no lit windows, no radio through a wall — the one still that breaks the film's rule on purpose.
+SCRIPT: "The signal turns green for no one, and the old melody CHIMES across the wet street, all the way to the end."
+CAST: —
+LIGHT: Blue hour
+TIME: 12
+ID: neonoire-shot-314
+IMAGE: 314-the-empty-crossing.jpg
+NOTE: THE RULE BREAK, named on the page: scene 75 is the only time in the film the city holds no other lives, and the score enters exactly as this melody ends. Same crossing as scene 27, wet like everything before 98. Placeholder slot — the last pillow shot to be generated, and the only one with sound.

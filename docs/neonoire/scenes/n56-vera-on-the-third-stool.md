@@ -15,7 +15,7 @@ The single shot (225) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 
 225. MEDIUM WIDE — 35mm, static, low level — the third stool.
 Lunchtime, steam, three customers: Vera sits on the third stool saying I was here when I was a child, and Kaneko turns from the pot and freezes for just a second before going on working.
-SCRIPT: "Vera sits on the third stool."
+SCRIPT: "Vera looks at it. She moves along to it and sits."
 CAST: Vera Voss, Kaneko
 LIGHT: Overcast soft
 TIME: 14
@@ -27,7 +27,7 @@ NOTE: The third stool again: Jack sat it in shot 189, Mara's father before him. 
 
 266. MEDIUM WIDE — 35mm, static, eye level — stool three.
 Six round stools in one row. From the left: empty, empty, Vera on the third, then three empty stools. She wears the charcoal coat. Kaneko works the pot under the fluorescent tube.
-SCRIPT: "Vera sits on the third stool."
+SCRIPT: "Vera looks at it. She moves along to it and sits."
 CAST: Vera Voss, Kaneko
 LIGHT: Overcast soft
 TIME: 6

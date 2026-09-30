@@ -8,7 +8,7 @@ Grammar: One bare bulb. 24mm room, 50mm at the drawing, 35mm for the two of them
 
 INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #84#
 
-The bulb. The flour sacks. The futon, folded now.
+The bulb. The flour sacks. The futon, folded now. On it, a neat stack of drawings, dried flat, their edges rippled from the wet floor.
 
 Jack sits on the floor against the wall. He has been hiding here since the newspaper; he can't go home. His face is grey with exhaustion.
 

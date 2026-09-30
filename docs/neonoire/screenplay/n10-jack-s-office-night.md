@@ -24,7 +24,7 @@ Are you the one they call Jack?
 
 JACK
 (in Japanese)
-Depends who's calling.
+Who calls me that?
 
 VERA
 (in Japanese)

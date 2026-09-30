@@ -68,7 +68,7 @@ A long pause.
 
 ISHIDA (V.O.)
 (in Japanese; gently)
-Go to sleep, Jack. You're too old to be haunted.
+Go to sleep, Jack. You found enough twenty years ago.
 
 The line goes dead.
 

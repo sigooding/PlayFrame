@@ -15,11 +15,11 @@ The single shot (228) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 
 228. MEDIUM — 50mm, static, low level — at the edge of a high place.
 Vera comes out of the Hive glowing and throws her arms around Jack in the rain; over her shoulder his eyes go to the entrance, the street, every parked car — the face of a man at the edge of a very high place.
-SCRIPT: "He holds her. His face, over her shoulder, is the face of a man at the edge of a very high place."
+SCRIPT: "Vera comes out of the Hive's narrow entrance, glowing."
 CAST: Vera Voss, Jack
 LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-228
 IMAGE: 226-at-the-edge-of-a-high-place.jpg
-NOTE: The Hive's daylight state follows shot 223; the parked cars are the audience's paranoia, not yet his. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon eleven-storey Hive in the day murk; the embrace and the parked cars carried over.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The Hive's daylight state follows shot 223; the parked cars are the audience's paranoia, not yet his. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon eleven-storey Hive in the day murk; the embrace and the parked cars carried over.
 

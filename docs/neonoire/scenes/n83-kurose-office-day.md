@@ -9,7 +9,7 @@ Grammar: the fortieth floor by grey rainy day, with glass on three sides, one or
 
 ## Frame format — 26 September 2026
 
-All six shots (111–116) are **16:9, 1920×1080, full-bleed**. The office follows the fountain's scene 24 description: glass on three sides, thick carpet, a single white orchid, and at the centre of the room a glass case holding the white-tower model with a plaza and fountain where the Hive stands. The room master is `s83/109-the-fortieth-floor.jpg`. **Vera wears costume Look C** (`sheets/vera-look-c.jpg`, a director's costume change of 26 September 2026: she had worn the charcoal coat and cream roll-neck in too many scenes). That is an ink-navy wool coat (still the script's "plain dark coat"), a dove-grey crew-neck over a white shirt collar, charcoal trousers, black ankle boots, and her hair in a low loose knot. Her face follows `sheets/vera.jpg`. Her hair is dry. **Story pass 2 (29 September 2026):** by now the notebook itself is in the newspaper's safe (scene 82A) — what Vera carries is a plain folder of photocopies, and she shows Kurose a single copied page. The installed studies predate the pass and still show her father's cloth-covered notebook on her lap and in her hands: an honest prop discrepancy and a production retake check, not a blocked frame. The Vera frames were edited to Look C from their first-pass images. **Kurose** has no sheet yet. He is established in the master: Japanese, seventies, silver hair combed back, a beautiful dark navy suit, very still. These are AI-generated draft studies, not approved coverage.
+All six shots (111–116) are **16:9, 1920×1080, full-bleed**. The office follows the fountain's description of the chairman's floor (the chairman's other office scene, 24, is cut; the dawn scene 51 keeps the room): glass on three sides, thick carpet, a single white orchid, and at the centre of the room a glass case holding the white-tower model with a plaza and fountain where the Hive stands. The room master is `s83/109-the-fortieth-floor.jpg`. **Vera wears costume Look C** (`sheets/vera-look-c.jpg`, a director's costume change of 26 September 2026: she had worn the charcoal coat and cream roll-neck in too many scenes). That is an ink-navy wool coat (still the script's "plain dark coat"), a dove-grey crew-neck over a white shirt collar, charcoal trousers, black ankle boots, and her hair in a low loose knot. Her face follows `sheets/vera.jpg`. Her hair is dry. **Story pass 2 (29 September 2026):** by now the notebook itself is in the newspaper's safe (scene 82A) — what Vera carries is a plain folder of photocopies, and she shows Kurose a single copied page. The installed studies predate the pass and still show her father's cloth-covered notebook on her lap and in her hands: an honest prop discrepancy and a production retake check, not a blocked frame. The Vera frames were edited to Look C from their first-pass images. **Kurose** has no sheet yet. He is established in the master: Japanese, seventies, silver hair combed back, a beautiful dark navy suit, very still. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -41,7 +41,7 @@ LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-113
 IMAGE: 111-just-a-face.jpg
-NOTE: One of the scene's two close-ups. It holds "I wanted to see your face." / "And?", and the cut back to Kurose plays the flicker of irritation.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. One of the scene's two close-ups. It holds "I wanted to see your face." / "And?", and the cut back to Kurose plays the flicker of irritation.
 
 114. MEDIUM — 50mm, static, eye level — your name on every page.
 Vera stands at left and holds up a single page of the photocopy to show him, without threatening him. Kurose looks up from his desk at right, composed, with irritation in his eyes.
@@ -72,3 +72,21 @@ TIME: 6
 ID: neonoire-shot-116
 IMAGE: 114-follow-her.jpg
 NOTE: Japanese, subtitled. "Kurose sits still for a moment" plays before he reaches for the phone.
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+The revision lays an envelope on the glass — and keeps the accusations wide: per the rule on the page, 'It's just a face' and the eyes-line take no close-up. 113 keeps its line but is RETAKE PENDING: the model blurred behind her now reads corrected, the patched block lifted out in scene 51.
+
+---
+
+317. MEDIUM — 50mm, static, eye level — What he offers.
+A plain envelope, thick with cash, laid on the glass table between them. She doesn't look at it. Rain-grey light across the whole forty-floor room.
+SCRIPT: "He takes a plain envelope, thick with cash, from a drawer and lays it on the glass between them. She doesn't look at it."
+CAST: Vera Voss, Kurose
+LIGHT: Overcast soft
+TIME: 6
+ID: neonoire-shot-317
+IMAGE: 317-the-envelope-on-the-glass.jpg
+NOTE: The offer Vera never refuses because she never looks at it. A MEDIUM on a prop, not a close-up on a face — the wide-scene rule of the revision holds even here. Placeholder slot.

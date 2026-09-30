@@ -17,9 +17,7 @@ Jack kneels, presses his hands over hers.
 JACK
 Stay with me. Mara. Stay with me.
 
-Above them, a window opens. Then another. Doors bang open along the passage. Voices. Lights snap on, one after another, up through the whole building: the thousand windows of the Hive waking.
-
-The RADIO REPAIRMAN runs into the passage with a flashlight. The FAMILY'S FATHER behind him with a baseball bat. Kaneko, in her apron.
+Above them, a window opens. Then another. Lights snap on, one after another, up through the whole building: the thousand windows of the Hive waking.
 
 Outside, a car door slams. An engine revs. Tyres on wet asphalt. Going.
 
@@ -50,13 +48,17 @@ You'll tell her. Tonight. I'll bring her here, you can --
 MARA
 Tell her.
 
+Doors open along the passage. Faces in the bulb light: the RADIO REPAIRMAN in his vest, the OLD WOMAN from the sumo room, KANEKO running, still in her apron.
+
+Mara's cloth bag has split open on the floor. Rice balls. A toothbrush. The cardigan. Pages of drawings, soaking in the thin shining stream that runs along the floor.
+
+While Jack holds Mara, Kaneko kneels and begins, very carefully, to pick up the pages. The old woman kneels beside her and helps.
+
 Her eyes stay on the lights above. Then they stop moving.
 
 Jack doesn't let go of her hand.
 
 Kaneko sinks down beside them in the narrow passage. She doesn't cry. She takes off her apron and folds it and places it gently under Mara's head, as though that still matters.
-
-Beside them, where it fell, Mara's small cloth bag, one strap frayed, the folded pages showing at its mouth.
 
 A train passes overhead. The bulbs swing. The whole building trembles, the way it always does.
 

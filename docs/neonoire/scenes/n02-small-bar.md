@@ -28,7 +28,7 @@ NOTE: Someone is moving crates in the back room and is never seen. The bar must 
 
 20. MEDIUM — 50mm, static, eye level — the journalist.
 In the corner: a JOURNALIST in his forties, an untouched beer in front of him, a notebook closed beside it. He checks his watch. Checks the door. He is not waiting for the person he says he is waiting for.
-SCRIPT: "In the corner, a JOURNALIST (40s), an untouched beer in front of him, a notebook closed beside it."
+SCRIPT: "A man in a raincoat on the far stool, a notebook beside a beer gone flat: the JOURNALIST (40s)."
 CAST: The Journalist
 LIGHT: Practical night
 TIME: 8
@@ -37,7 +37,7 @@ NOTE: He is killed in four shots' time and the film gives him no backstory here.
 
 21. WIDE — 35mm, static, eye level — the door bangs open.
 Mara, soaked, too out of breath to speak, stands in the doorway with the rain behind her.
-SCRIPT: "The door BANGS open. Mara, soaked, too out of breath to speak."
+SCRIPT: "Mara bursts in, the key in her fist."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6
@@ -46,7 +46,7 @@ NOTE: She brings the street's weather in with her. The bar CRT in frame is never
 
 22. MEDIUM — 50mm, static, eye level — the journalist looks, then away.
 He glances up, startled, then away. Not his business.
-SCRIPT: "The journalist half rises. He looks at her -- soaked, foreign, alone -- and something like recognition crosses his face."
+SCRIPT: "He knows her name."
 CAST: The Journalist, Mara Voss
 LIGHT: Practical night
 TIME: 6
@@ -55,7 +55,7 @@ NOTE: His decision not to help is the last decision he makes. No emphasis, no ir
 
 23. FULL — 35mm, static, low angle — Mara hides behind the counter.
 She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.
-SCRIPT: "She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves."
+SCRIPT: "The same words. Mara is behind the counter before she knows she's moved."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 12
@@ -64,7 +64,7 @@ NOTE: The key returns here for a beat only, then goes back into her fist. Do not
 
 24. POV — 24mm, static, low angle — from the floor.
 We see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.
-SCRIPT: "FROM THE FLOOR, we see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling."
+SCRIPT: "Behind the counter, Mara folds herself into the gap between the crates and the ice bin."
 CAST: The Journalist
 LIGHT: Practical night
 TIME: 10
@@ -73,7 +73,7 @@ NOTE: This framing is the law of the rest of the scene: shoes, ankles, and what 
 
 25. FULL — 35mm, static, low angle — two pairs of shoes.
 The door opens again. Softly, this time. Two pairs of black shoes step inside, wet and silent. The journalist's shoes shift; he stands.
-SCRIPT: "Two pairs of black shoes step inside. Wet. Silent."
+SCRIPT: "Before she can answer, the door opens behind her. Rain noise."
 CAST: The Journalist, The Masked Men
 LIGHT: Practical night
 TIME: 9
@@ -82,7 +82,7 @@ NOTE: No faces, no full figures — shoes and the bottom of the frame only. The 
 
 26. MEDIUM — 50mm, static, eye level — the two suppressed shots.
 No answer. Two suppressed shots. The stool tips over; the journalist hits the floor on the far side of the counter. We see only his hand. On the TV, the studio audience laughs.
-SCRIPT: "Two suppressed SHOTS."
+SCRIPT: "Two shots. On the high shelf, the television audience laughs."
 CAST: The Journalist, The Masked Men
 LIGHT: Practical night
 TIME: 8
@@ -91,16 +91,16 @@ NOTE: The TV is in the frame and the murder is not. The laugh track lands on the
 
 27. MEDIUM — 50mm, static, low angle — the notebook taken.
 One pair of shoes crosses to the body. Pages rustle. The notebook, taken. In the back room, the crate-moving stops. A pair of shoes turns toward the half-open door and waits. Nothing moves.
-SCRIPT: "One pair of shoes crosses to the body. Pages rustle. The notebook, taken."
+SCRIPT: "He takes one step toward the counter. A voice in his earpiece: one word. He turns and goes."
 CAST: The Masked Men
 LIGHT: Practical night
 TIME: 12
 IMAGE: 27-the-notebook.jpg
-NOTE: The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not. Fixed later on 26 September 2026: the frame now carries the same brown leather wrap notebook with its strap closure as shot 20's counter; the earlier pale-grey cover mismatch is closed. Fresh pass 30 September 2026: regenerated with the bar sheet and the masked-men sheet; the gloved hand takes the strapped notebook, the second pair of shoes waits at the back door, no faces and no detached shoes.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The notebook leaving is the scene's real information: they knew what he had. Someone in the back room is now in the film whether they know it or not. Fixed later on 26 September 2026: the frame now carries the same brown leather wrap notebook with its strap closure as shot 20's counter; the earlier pale-grey cover mismatch is closed. Fresh pass 30 September 2026: regenerated with the bar sheet and the masked-men sheet; the gloved hand takes the strapped notebook, the second pair of shoes waits at the back door, no faces and no detached shoes.
 
 28. CLOSE-UP — 85mm, static, eye level — Mara in the blue TV glow.
 She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.
-SCRIPT: "HOLD on her face in the blue TV glow: a young woman who has just understood that this was not random."
+SCRIPT: "The door swings shut. The television laughs again."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 11
@@ -119,3 +119,20 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 | --- | --- | --- |
 | 2 | 19–20 | The bar, The journalist |
 | 3 | 21–28 | Mara bursts in, Not his business, Behind the counter, From the floor, Two pairs of shoes, The variety show, The notebook, The blue glow |
+| 31 | 308 | What comes loose |
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+> The revision's first named close-up, numbered in the coverage block after story pass 2; the existing frames keep their numbers and images.
+
+308. INSERT — 85mm, static, low angle — What comes loose.
+A hair clip slides out of her wet hair and skitters under the shelf; the dark gap between crates and ice bin swallows it. Behind it, her hand stays pressed flat to the bottles to stop them clinking.
+SCRIPT: "A hair clip slides out of her wet hair and skitters under the shelf. She doesn't breathe."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-308
+IMAGE: 308-clip-under-the-shelf.jpg
+NOTE: THE FIRST OF THE SEVEN NAMED CLOSE-UPS of the 30 September 2026 revision — the list is fixed on the page: 2, 20, 63, 71, 77, 79, 89, and no others. The red enamel bird clip as pinned in scene 1; `sheets/mara-face.jpg` for the wet look. Placeholder slot — to be generated under the cold-open fresh pass's rules: screenplay text and character sheets only.

@@ -170,11 +170,12 @@ const writeIndex = () => {
       ...passes.map(pass => {
         const shots = pending.filter(shot => passOf(shot.n) === pass);
         const scenes = [...new Set(shots.map(shot => `Sc ${shot.scene.n}`))].join(", ");
-        return `| ${pass} | ${shots[0].n}–${shots[shots.length - 1].n} | ${scenes} | [pass-${pass}.md](pass-${pass}.md) |`;
+        const ns = shots.map(shot => shot.n).sort((a, b) => a - b);
+        return `| ${pass} | ${ns.join(", ")} | ${scenes} | [pass-${pass}.md](pass-${pass}.md) |`;
       }),
       "",
     ] : []),
-    "The Tokyo Story colour revision of scenes 72–75 completed in two sessions on 25 September 2026: ten generation calls (Jack's sheet plus nine shot studies), then eight (the six remaining replacements plus the lost-heel and twenty-metre continuity replacements), two slots deliberately unused. Read [the revision handoff](tokyo-streets-revision.md). Older pass files are historical briefs, not a request to regenerate finished images. Cold-open shots 11–28 and scene 3 separately remain legacy 2.39:1 studies pending their own revision; see [cold-open-revision.md](cold-open-revision.md).",
+    "The Tokyo Story colour revision of scenes 72–75 completed in two sessions on 25 September 2026: ten generation calls (Jack's sheet plus nine shot studies), then eight (the six remaining replacements plus the lost-heel and twenty-metre continuity replacements), two slots deliberately unused. Read [the revision handoff](tokyo-streets-revision.md). Older pass files are historical briefs, not a request to regenerate finished images. Cold-open shots 11–28 and scene 3 separately remain legacy 2.39:1 studies pending their own revision; see [cold-open-revision.md](cold-open-revision.md). The 30 September 2026 final-screenplay revision cut four scenes and re-pinned the board around them — read [revision-2026-09-30.md](revision-2026-09-30.md).",
     "",
     "## The cast sheets, and what must not drift",
     "",

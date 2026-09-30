@@ -9,7 +9,7 @@ Grammar: one bare bulb, flour sacks and a folded futon, with the railway overhea
 
 ## Frame format — 26 September 2026
 
-All four shots (117–120) are **16:9, 1920×1080, full-bleed**. **This is the storeroom's first boarding.** The fountain's scene 13 description sets the room: a tiny storeroom behind a six-seat noodle counter, sacks of flour, crates of green onions, a single bare bulb, a curtain doorway, and the underside of the elevated railway above. The master is `s84/115-the-storeroom.jpg`, and scenes 13, 20 and 25 must match it when they are boarded. Mara's sketches of the counter as seen from behind the curtain are taped to the wall with rice-paper tape; the back of Vera's loose-haired head is on the third stool, not a front-facing figure study. **Jack** follows `sheets/jack.jpg`: grey with exhaustion after days in hiding, in the same coat and creased shirt. **Vera** is in costume Look C, as in scene 83 (`sheets/vera-look-c.jpg`: ink-navy coat, grey crew-neck over a white collar, hair in a low knot). These are AI-generated draft studies, not approved coverage.
+All four shots (117–120) are **16:9, 1920×1080, full-bleed**. **This is the storeroom's first boarding.** The fountain's description of the storeroom sets the room (its first scene, 13, is cut by the 30 September revision): a tiny storeroom behind a six-seat noodle counter, sacks of flour, crates of green onions, a single bare bulb, a curtain doorway, and the underside of the elevated railway above. The master is `s84/115-the-storeroom.jpg`, and scenes 14, 20 and 25 must match it when they are boarded. Mara's sketches of the counter as seen from behind the curtain are taped to the wall with rice-paper tape; the back of Vera's loose-haired head is on the third stool, not a front-facing figure study. **Jack** follows `sheets/jack.jpg`: grey with exhaustion after days in hiding, in the same coat and creased shirt. **Vera** is in costume Look C, as in scene 83 (`sheets/vera-look-c.jpg`: ink-navy coat, grey crew-neck over a white collar, hair in a low knot). These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -52,3 +52,21 @@ TIME: 8
 ID: neonoire-shot-120
 IMAGE: 118-position.jpg
 NOTE: One of the scene's two close-ups. It holds "Silence. A train passes overhead. The bulb swings." and the masked man's murmured "Position." (off screen, Japanese). The scene ends on "The bulb goes on swinging."
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+The revision puts the dried stack on the folded futon before anyone speaks.
+
+---
+
+318. INSERT — 50mm, static, low angle — Dried flat.
+On the folded futon, a neat stack of drawings, dried flat, their edges rippled and warped from the wet floor. The bulb throws both their shadows past it.
+SCRIPT: "On it, a neat stack of drawings, dried flat, their edges rippled from the wet floor."
+CAST: —
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-318
+IMAGE: 318-the-dried-stack.jpg
+NOTE: The same pages scene 71 watched soak, gathered and dried by the time the storeroom is hers again. Placeholder slot.

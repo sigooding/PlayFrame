@@ -11,6 +11,8 @@ EXT. VERA'S APARTMENT BUILDING, CORRIDOR - DAWN #78#
 
 Grey light. An open-air walkway along the third floor. Rain dripping from the railing.
 
+Jack at Vera's door. He doesn't knock. He sets Daniel's notebook on the mat, squares it to the door, and goes.
+
 Vera opens her door. She is still in the dress. She hasn't slept.
 
 On the doormat: a plain envelope. No name.

@@ -4,43 +4,32 @@ SCREENPLAY — SCENE 100 — INT. KANEKO'S NEW COUNTER
 INT. KANEKO'S NEW COUNTER - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Kaneko, Jack.
-Grammar: 35mm for the arch, 50mm from behind Vera for the hold.
+Grammar: 35mm for the arch and the six stools; 50mm on the sound-down television, read and unregarded; 50mm from behind Vera for the hold. The curtain stays a 
+fourth wall until it doesn't: the last frame is the lit window behind it.
 
 INT. KANEKO'S NEW COUNTER - NIGHT #100#
 
-A tiny place in a brick railway arch near the station. Six new stools, the same height as the old ones. Steam. One warm bulb. A small radio on the shelf, playing low.
+A tiny place in a brick railway arch near the station. Six new stools, the same height as the old ones. Steam.
 
-Above the counter, the old hand-painted sign. Faded. Unmistakable.
+A train goes over. The bottles tick against each other and settle.
 
-Kaneko works the pot with long chopsticks.
+On a shelf above the door, a small old television with the sound down: the evening news. KUROSE walking into a building between lawyers, cameras flashing, his face composed. A photograph of ISHIDA in uniform. Then the weather.
 
-Vera sits on the third stool. A bowl in front of her. The red bird clip in her hair.
+Nobody looks up.
 
-A train passes overhead. The bulb trembles. The steam shivers. Nobody looks up.
+Kaneko ladles. JACK sits on the second stool. The third is empty.
 
-On the radio, the old ballad begins. The one from the neighbour's wall.
+The curtain in the doorway moves. VERA.
 
-Vera eats.
+She stands a moment. Counts the stools. Sits on the third.
 
-Behind her, the door opens.
+Kaneko sets a bowl in front of her. Vera eats. All of it.
 
-Cool blue street light spills across the floor. And into it, a long shadow falls: a man in a coat, standing in the doorway, his shadow stretching all the way across the floor to the foot of her stool.
+She puts money on the counter. Too much. Kaneko looks at it, then at her, and leaves it where it is.
 
-Vera sees the shadow. She stops eating.
+Past the curtain: a lit window, a radio through a wall, the city going on.
 
-She doesn't turn.
+HOLD on the three of them in the steam.
 
-Kaneko looks up at the door. Then at Vera. Then, without a word, she takes down a second bowl and sets it on the counter in front of the fourth stool.
-
-Vera looks at the second bowl.
-
-HOLD on the back of her head, the red clip, the steam, the shadow on the floor.
-
-She doesn't turn.
-
->CUT TO BLACK.
-
-Over black: a train passing. Rain beginning again, softly.
-
->THE END<
+>FADE OUT.
 

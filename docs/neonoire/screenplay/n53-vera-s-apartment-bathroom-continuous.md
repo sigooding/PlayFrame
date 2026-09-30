@@ -22,7 +22,7 @@ VERA
 You don't know?
 
 JACK
-Eight men. Masks. They didn't introduce themselves.
+Two that I saw. Masks. They didn't introduce themselves.
 
 She wrings out the cloth. Pink water.
 
@@ -31,6 +31,8 @@ You told me it was just an inn.
 
 JACK
 It was just an inn.
+
+Jack's eyes go to Vera's phone on the edge of the bath, where it has sat all night in case Mara calls. He stops.
 
 She looks up and catches him watching her.
 
@@ -66,6 +68,8 @@ Don't go anywhere else without telling me.
 
 JACK
 I won't.
+
+When she turns to wring out the cloth, he reaches over and turns her phone face-down.
 
 It is another promise. He is collecting them.
 

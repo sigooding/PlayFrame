@@ -62,13 +62,9 @@ JACK
 (quietly, in Japanese)
 Why come back?
 
+Jack doesn't answer. He looks down the street at the drains, the doorways, the gutter: everywhere a small thing could fall.
+
 The barber shrugs and pulls the shutter down.
-
-Jack answers himself, barely aloud.
-
-JACK (CONT'D)
-(in Japanese)
-Because they didn't find it.
 
 He looks again at the doorway. At the bar sign. At the torn strap.
 

@@ -59,15 +59,18 @@ const {
 // ---------------------------------------------------------------- schema and ceilings
 validatePatch(project);
 assert.equal(project.acts.length, 1);
-assert.equal(project.scenes.length, 106, "The final screenplay's 100 numbered scenes and 6 inserted scenes (25A, 27A, 53A, 63A, 82A, 99A) all belong to the workspace");
+assert.equal(project.scenes.length, 102, "The revised screenplay's 96 numbered scenes and 6 inserted scenes (25A, 27A, 53A, 63A, 82A, 99A) all belong to the workspace; 13, 24, 97 and 99 are retired");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 106, "All one hundred numbered scenes and the six inserted scenes (25A, 27A, 53A, 63A, 82A, 99A) are boarded");
+assert.equal(boardedIds.size, 102, "Every scene of the revised screenplay and the six inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 307;
+const EXPECTED_SHOTS = 297;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The boarded screenplay carries 307 numbered shots");
-assert.equal(project.characters.length, 18);
+// 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
+// earlier generation blocks; the audits below read those blocks' pre-revision runs.
+const revisionBoards = f => shotNo(f) >= 308;
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The boarded screenplay carries 297 numbered shots: 307 stood before the 30 September revision, which retired 22 frames in place and boarded 13 new ones (308–320)");
+assert.equal(project.characters.length, 19, "Nineteen cast cards after the revision added Vera's mother");
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
 assert(project.frames.every(frame => frame.lens), "Every frame declares a lens");
@@ -98,7 +101,7 @@ for (const scene of project.scenes) {
 const clean = fountain.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 assert.equal(project.script.replace(/\s+$/, ""), clean.replace(/\s+$/, ""), "The screenplay should be the draft, minus its scene-number markers");
 for (const scene of project.scenes) assert(project.script.includes(`${scene.location} - ${scene.time}`), `${scene.title}'s slugline must survive in the script`);
-pass(`the screenplay carries all 106 scenes (100 numbered, 6 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
+pass(`the screenplay carries all 102 scenes (96 numbered, 6 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
 assert(fountain.includes("The number on the worn tag, still legible: 114."), "Scene 25 must reveal 114 on the tag");
 assert(fountain.includes("Its worn tag reads 114."), "Scene 60 must repeat the tag number");
 assert(!fountain.includes("The plastic tag is so old the printing has worn away."), "The old metal-stamp/blank-tag explanation is superseded");
@@ -149,7 +152,8 @@ const { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } = await import
 const { coldOpenFreshLook, coldOpenFreshCompleted } = await import("./neonoire/cold-open-fresh-look.mjs");
 assert(coldOpenCompletedThrough >= 10 && coldOpenCompletedThrough <= 28);
 const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId) && shotNo(frame) <= 28);
-assert.equal(coldOpen.length, 28);
+// The 30 September revision retired scene 1's shots 8 and 11 in place; 26 cold-open frames remain.
+assert.equal(coldOpen.length, 26);
 for (const frame of coldOpen) {
   const n = Number(frame.id.replace("neonoire-shot-", ""));
   assert(isColdOpenScene(frame.sceneId.replace("neonoire-", "")));
@@ -157,10 +161,10 @@ for (const frame of coldOpen) {
     assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be revised 16:9`);
     assert(!frame.notes.includes("COLD OPEN REVISION PENDING"));
     if (coldOpenFreshCompleted.includes(n)) {
-      assert.equal(frame.status, "Ready", `${frame.title} is director-approved fresh-pass coverage`);
+      assert.equal(frame.status, rewritePending.has(frame.id) ? "Needs review" : "Ready", `${frame.title} is director-approved fresh-pass coverage`);
       // Fresh pass of 30 September 2026: the frame carries the character-sheet-only provenance and
       // must not wear the older master-derived revision note.
-      for (const detail of ["Cold-open fresh pass", "CHARACTER SHEETS ONLY", "sheets/mara.jpg", "sheets/sakai.jpg", "sheets/masked-man.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "strap intact through shot 16", "114 on its worn tag"]) {
+      for (const detail of ["Cold-open fresh pass", "CHARACTER SHEETS ONLY", "sheets/mara.jpg", "sheets/sakai.jpg", "sheets/masked-man.jpg", "red enamel bird clip", "dark-brown structured leather handbag", "spills across the wet street", "stamped number tag worn almost smooth"]) {
         assert(frame.notes.includes(detail), `${frame.title} lacks fresh-pass continuity: ${detail}`);
       }
       assert(!frame.notes.includes("Cold-open visual revision"), `${frame.title} is fresh-pass coverage, not the master-derived revision`);
@@ -181,29 +185,22 @@ for (const sheet of ["images/neonoire/sheets/sakai.jpg", "images/neonoire/sheets
   assert(w > h, `${sheet} exists and is a landscape cast sheet`);
 }
 assert(coldOpenFreshLook.includes("CHARACTER SHEETS ONLY") && coldOpenFreshLook.includes("no scene masters"), "The fresh-pass brief carries the character-references-only rule");
-pass(`cold-open shots 1–${coldOpenCompletedThrough} are 1920×1080; ${coldOpenFreshCompleted.length} of them regenerated in the fresh pass; remaining ${28 - coldOpenCompletedThrough} are explicitly pending revision`);
+pass(`cold-open: all ${coldOpen.length} surviving frames of scenes 1–2 are 1920×1080 fresh-pass images (8, 11 and 280–282 retired by the 30 September revision); the five re-pinned retakes hold Needs review`);
 
-// Letter rewrite coverage, 28 September 2026 — shots 280–282 re-derive scene 1's street without
-// renumbering the first boarding. Shot 7 was retaken in place so Sakai's eyes find Mara and leave.
-const letterS1 = project.frames.filter(frame => frame.sceneId === "neonoire-s1" && shotNo(frame) >= 280);
-assert.deepEqual(letterS1.map(f => f.id), ["neonoire-shot-280", "neonoire-shot-281", "neonoire-shot-282"], "Scene 1 coverage runs 280–282");
-for (const frame of letterS1) {
-  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
-  assert.equal(frame.status, "Ready", `${frame.title} is director-approved fresh-pass coverage, not a pending cold-open revision`);
-  assert(!frame.notes.includes("COLD OPEN REVISION PENDING"), `${frame.title} must not wear the legacy cold-open note`);
-}
-assert(letterS1[0].notes.includes("1:00"), "Shot 280 keeps the time legible at full size");
-assert(letterS1[0].notes.includes("1:00") && letterS1[0].notes.includes("Kanda 2-3-1"), "Shot 280 keeps the address and the time legible, in the right ward");
-assert(letterS1[0].notes.includes("sheets/mara.jpg") && letterS1[0].notes.includes("red enamel bird clip"), "Shot 280 locks the doorway wardrobe to the sheet");
-assert(letterS1[1].notes.includes("bar sign") && letterS1[1].notes.includes("no references at all"), "Shot 281 is the fresh POV with the lit bar sign and no references");
-assert(letterS1[2].notes.includes("sheets/sakai.jpg") && letterS1[2].notes.includes("non-graphic"), "Shot 282 stays low and non-graphic on the sheets");
-assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 carries the letter-rewrite retake note");
-pass("letter rewrite in scene 1: 1:00 in her own handwriting, the bar sign at the end of the street, and Mr. Sakai's face turned up to hers");
+// The 30 September 2026 revision retired scene 1's coverage 280–282 and its shots 8 and 11 in
+// place; what remains of the cold open's first scene is its original run, minus the two retired
+// numbers, each frame re-pinned to the rewritten street.
+const s1frames = project.frames.filter(frame => frame.sceneId === "neonoire-s1");
+assert.deepEqual(s1frames.map(f => shotNo(f)), [1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 16, 17, 18], "Scene 1 runs 1–18 with 8 and 11 retired, and nothing above 28");
+for (const n of [3, 6, 17, 18])
+  assert(rewritePending.has(`neonoire-shot-${String(n).padStart(2, "0")}`), `Scene 1's re-pinned frame ${n} holds its retake`);
+pass("scene 1 after the revision: sixteen frames, four of them re-pinned under RETAKE PENDING, the letter coverage retired with the cut beats");
+assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 still carries the letter-rewrite retake note the 30 September revision left standing");
 // Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
 // and out on foot, and the six blocked frames are retaken to the fixed pedestrian layout.
 const backsOut = project.frames.find(frame => frame.id === "neonoire-shot-13");
-assert(backsOut.notes.includes("reverses out of the alley mouth") && backsOut.notes.includes("falls dark") && backsOut.notes.includes("plate is not legible") && backsOut.notes.includes("No people"), "Shot 13 locks the layout-pass reverse: out of the mouth, the alley falls dark");
-for (const n of [8, 10, 12, 13, 17, 18]) {
+assert(backsOut.notes.includes("plate is not legible"), "Shot 13 keeps the layout-pass plate note; its alley reverse was re-pinned by the 30 September revision and the frame stands under RETAKE PENDING with its neighbours");
+for (const n of [10, 12, 13, 17, 18]) {
   const frame = project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`);
   assert(frame.notes.includes("Retake 29 September 2026 (the layout pass)") && frame.notes.includes("sheets/kanda-alley-layout.jpg"), `Shot ${n} carries the layout-pass retake note and the layout sheet`);
 }
@@ -214,7 +211,7 @@ pass("kanda alley layout: the sedan blocks the mouth, the six frames retaken, th
 // Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
 // together complete every keyframe. The old street studies stay retired either way.
-const streets = project.frames.filter(frame => ["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"].includes(frame.sceneId));
+const streets = project.frames.filter(frame => ["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"].includes(frame.sceneId) && !revisionBoards(frame));
 assert.equal(streets.length, 15, "Two lounge, four run, four confrontation and five pillow shots");
 assert.equal(streets.filter(f => f.image).length, 15, "Both sessions delivered: no placeholder slots remain in scenes 72–75");
 assert.equal(streetsPassOneImages.length, 10, "The session-one budget includes Jack's sheet");
@@ -253,13 +250,13 @@ assert(project.frames.find(f => f.id === "neonoire-shot-75").description.include
 assert(/same puddle, same shoe/i.test(project.frames.find(f => f.id === "neonoire-shot-77").notes));
 assert(streets.filter(f => f.sceneId === "neonoire-s75").every(f => !f.characters.length), "Pillow shots have no cast, including reflections");
 assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 15));
-const aftermath = project.frames.filter(f => f.sceneId === "neonoire-s76");
+const aftermath = project.frames.filter(f => f.sceneId === "neonoire-s76" && !revisionBoards(f));
 assert.deepEqual(aftermath.map(f => f.id), ["neonoire-shot-82", "neonoire-shot-83", "neonoire-shot-84"], "Scene 76 stable identities remain unchanged");
 for (const frame of aftermath) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
   assert(frame.notes.includes("Scene 76 is unchanged"));
 }
-for (let n = 1; n <= 84; n++) assert(project.frames.some(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`), `Existing frame identity ${n} must survive the inserted scene 72`);
+for (let n = 1; n <= 84; n++) { if ([8, 11].includes(n)) continue; assert(project.frames.some(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`), `Existing frame identity ${n} must survive the inserted scene 72 (8 and 11 retired by the 30 September revision alone)`); }
 // Scenes 77–79: first boarding, nine shots, with Jack recast as a white American in the same session.
 const dawn = project.frames.filter(frame => ["neonoire-s77", "neonoire-s78", "neonoire-s79"].includes(frame.sceneId) && shotNo(frame) <= 95);
 assert.equal(dawn.length, 9, "Three office, three corridor and three apartment shots");
@@ -319,16 +316,16 @@ assert(witness.find(f => f.id === "neonoire-shot-108").notes.includes("BY DIRECT
 pass("scenes 81–82 boarded: nine 16:9 shots, Okada and Harada carded, the SHIOHAMA tape, and shot 108 on the director's chosen original tape");
 
 // Scenes 83–84: Kurose's office and the Hive storeroom.
-const confrontation = project.frames.filter(f => f.sceneId === "neonoire-s83" || f.sceneId === "neonoire-s84");
+const confrontation = project.frames.filter(f => (f.sceneId === "neonoire-s83" || f.sceneId === "neonoire-s84") && !revisionBoards(f));
 assert.deepEqual(confrontation.map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${111 + i}`));
 assert.deepEqual(new Set(confrontation.map(f => f.image)), new Set(confrontationImages));
 for (const frame of confrontation) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
   assert.equal(frame.movement, "Static");
-  assert.equal(frame.status, "Draft");
+  assert.equal(frame.status, rewritePending.has(frame.id) ? "Needs review" : "Draft", `${frame.title}: only the revision retakes await review`);
   const office = frame.sceneId === "neonoire-s83";
   assert.equal(frame.lighting, office ? "Overcast soft" : "Low key");
-  const look = office ? ["GLASS CASE", "KUROSE", "never touches the tea", "sheets/vera.jpg"] : ["single bare bulb", "white American", "scenes 13, 20 and 25"];
+  const look = office ? ["GLASS CASE", "KUROSE", "never touches the tea", "sheets/vera.jpg"] : ["single bare bulb", "white American", "scenes 14, 20 and 25"];
   for (const detail of look) assert(frame.notes.includes(detail), `${frame.title} is missing scene 83–84 continuity: ${detail}`);
   assert(frame.characters.includes(castOf(office ? "Vera Voss" : "Jack")) || frame.characters.includes(castOf("Kurose")) || frame.characters.includes(castOf("Vera Voss")), `${frame.title} cast`);
 }
@@ -360,7 +357,7 @@ assert(hive.find(f => f.id === "neonoire-shot-128").notes.includes("every bulb o
 pass("scenes 85–88 boarded: nine 16:9 shots, the raid on the Hive, Kaneko and the radio repairman carded, scene 88 on scene 85's camera");
 
 // Scenes 89–92: the escape.
-const escape = project.frames.filter(f => ["neonoire-s89", "neonoire-s90", "neonoire-s91", "neonoire-s92"].includes(f.sceneId));
+const escape = project.frames.filter(f => ["neonoire-s89", "neonoire-s90", "neonoire-s91", "neonoire-s92"].includes(f.sceneId) && !revisionBoards(f));
 assert.deepEqual(escape.filter(f => shotNo(f) <= 138).map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${130 + i}`));
 assert.deepEqual(new Set(escape.map(f => f.image)), new Set(escapeImages));
 for (const frame of escape) {
@@ -382,12 +379,17 @@ assert.deepEqual(new Set(ishidaEnd.filter(f => f.image).map(f => f.image)), new 
 for (const frame of ishidaEnd) {
   if (frame.image) {
     assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
-    assert.equal(frame.status, "Draft");
+    assert.equal(frame.status, rewritePending.has(frame.id) ? "Needs review" : "Draft", `${frame.title}: only the revision retakes await review`);
   }
   assert.equal(frame.movement, "Static");
   for (const detail of ["sheets/ishida.jpg", "NO TIE", "SINGLE round black-rim", "s1/13-taillights-gone.jpg"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 93–96 continuity: ${detail}`);
 }
-assert(ishidaEnd.filter(f => f.sceneId === "neonoire-s94").every(f => f.characters.includes(castOf("Kurose")) || f.id === "neonoire-shot-142"), "Kurose shares the back seat");
+const s94 = ishidaEnd.filter(f => f.sceneId === "neonoire-s94");
+assert.deepEqual(s94.map(f => f.id), ["neonoire-shot-141", "neonoire-shot-142", "neonoire-shot-143"], "The rewritten 94 is its kerb, its detective and its cup of tea — three frames, all RETAKE PENDING");
+assert.deepEqual(s94.map(f => f.characters.join()),
+  ["", castOf("Detective Ishida"), `${castOf("Detective Ishida")},${castOf("Kurose")}`],
+  "Scene 94 after the revision: the sedan at the kerb with nobody in frame, Ishida alone in the rain, then one clean hand and the watch");
+for (const f of s94) assert(f.notes.includes("RETAKE PENDING"), `Shot ${shotNo(f)}: the old back-seat study stands retired until the pass`);
 assert(!ishidaEnd.some(f => f.sceneId === "neonoire-s96" && f.characters.includes(castOf("Detective Ishida"))), "Ishida is gone from the morning room");
 assert.deepEqual(ishidaEnd.find(f => f.id === "neonoire-shot-144").characters, [], "The receding car has no visible cast");
 const call303 = ishidaEnd.find(f => f.id === "neonoire-shot-303");
@@ -395,48 +397,33 @@ assert(call303 && call303.characters.join() === castOf("The Young Detective"), "
 assert(call303.notes.includes("He left a statement") && call303.notes.includes("Under the expressway"), "Shot 303 carries the call's beats");
 pass("scenes 93–96 boarded: nine 16:9 shots and the story-pass-2 call (303) — the black car, the tea, the taillights that rhyme with shot 13, an empty drawer under a clock a minute fast, and a statement left");
 
-// Scene 97: the Hive by morning; Vera's costume Look D.
-const hiveMorning = project.frames.filter(f => f.sceneId === "neonoire-s97");
-assert.deepEqual(hiveMorning.filter(f => shotNo(f) <= 154).map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${148 + i}`));
-assert.deepEqual(new Set(hiveMorning.filter(f => f.image).map(f => f.image)), new Set(hiveMorningImages.filter(p => existsSync(join(root, "public", p)))));
-assert.deepEqual(jpegDimensions(veraLookDSheet), [1920, 1080]);
-for (const frame of hiveMorning) {
-  if (frame.image) {
-    assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
-    assert.equal(frame.status, "Draft");
-  }
-  assert.equal(frame.lighting, "Overcast soft");
-  for (const detail of ["SILVER SHOVEL", "keys/06-the-block.jpg", "WARDROBE LOOK D", "sheets/vera-look-d.jpg", "white American"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 97 continuity: ${detail}`);
-}
-const veraLookD = hiveMorning.filter(f => f.characters.includes(castOf("Vera Voss")));
-assert.deepEqual(veraLookD.map(f => f.id), ["neonoire-shot-149", "neonoire-shot-152"], "Vera is in the shop-window crowd and the close-up");
-assert(veraLookD.every(f => f.characters.includes(castOf("Kaneko"))), "Kaneko is beside Vera");
-assert(!hiveMorning.some(f => f.notes.includes("WARDROBE LOOK C")), "Look C ended with scene 92");
-assert(project.moodboards.some(b => b.items.some(i => i.image === veraLookDSheet)), "Look D travels with the cast board");
-assert.deepEqual(hiveMorning.find(f => f.id === "neonoire-shot-154").characters, [], "The ribbon insert has no visible cast");
-const crawl304 = hiveMorning.find(f => f.id === "neonoire-shot-304");
-assert(crawl304 && crawl304.characters.length === 0, "The crawl insert has no visible cast");
-assert(crawl304.notes.includes("POLICE DETECTIVE FOUND DEAD. STATEMENT LEFT.") && crawl304.notes.includes("never static"), "Shot 304 locks the crawl text and keeps the screens a real programme");
-assert(hiveMorning.find(f => f.id === "neonoire-shot-149").notes.includes("Harada"), "Shot 149 carries Harada on Vera's other side");
-pass("scene 97 boarded: seven 16:9 shots and the story-pass-2 crawl (304) — the tent, the screens, the prosecutors, twenty metres in the rain, and a ribbon going dark; Vera in costume Look D, Harada beside her");
+// Scene 97 (the ground-breaking) is cut by the 30 September 2026 revision: its seven frames
+// (148–154) and the news-crawl insert (304) retire with it, the crawl text it framed no longer
+// exists in the draft, and Vera's costume Look D goes with them to the archive.
+assert.equal(project.frames.filter(f => f.sceneId === "neonoire-s97").length, 0, "Scene 97 is off the board");
+assert(!project.frames.some(f => f.id === "neonoire-shot-304"), "The crawl insert retires with the scene that framed it");
+assert.deepEqual(jpegDimensions(veraLookDSheet), [1920, 1080], "The Look D sheet keeps its archive dimensions");
+assert(project.moodboards.some(b => b.items.some(i => i.image === veraLookDSheet)), "Look D stays on the cast board as archive");
+pass("scene 97 retired: the ground-breaking, the tent and the crawl come off the shot list; Vera's Look D rests on the cast board");
 
 // Scenes 98–100: the ending; Vera's costume Looks E and F — each a different coat, not a recolour.
-const ending = project.frames.filter(f => ["neonoire-s98", "neonoire-s99", "neonoire-s100"].includes(f.sceneId));
-assert.deepEqual(ending.filter(f => shotNo(f) <= 161).map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${155 + i}`));
-assert.deepEqual(new Set(ending.map(f => f.image)), new Set(endingImages));
+// Scenes 98 and 100: the ending. The ground-breaking scene 99 (158–159) is cut by the 30 September
+// revision; its images stay on disk, its frames are off the bundle; scene 100 also holds the
+// revision's news-on-the-shelf insert (320), audited with the other revision boards.
+const ending = project.frames.filter(f => ["neonoire-s98", "neonoire-s100"].includes(f.sceneId) && !revisionBoards(f));
+assert.deepEqual(ending.map(f => f.id), ["neonoire-shot-155", "neonoire-shot-156", "neonoire-shot-157", "neonoire-shot-160", "neonoire-shot-161", "neonoire-shot-241", "neonoire-shot-260", "neonoire-shot-265"], "Three on the roof, two at the new counter, the face in the window and the two late adds");
+assert.deepEqual(new Set(ending.map(f => f.image)), new Set(endingImages.filter(p => !p.includes("/s99/"))));
 assert.deepEqual(jpegDimensions(veraLookESheet), [1920, 1080]);
 for (const frame of ending) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
-  assert.equal(frame.status, "Draft");
+  assert.equal(frame.status, rewritePending.has(frame.id) ? "Needs review" : "Draft", `${frame.title}: only the revision retakes await review`);
 }
 const rooftop = ending.filter(f => f.sceneId === "neonoire-s98");
 for (const frame of rooftop) for (const detail of ["WARDROBE LOOK E", "sheets/vera-look-e.jpg", "CAR COAT", "white American", "RED BIRD CLIP"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 98 continuity: ${detail}`);
-for (const frame of ending.filter(f => f.sceneId === "neonoire-s99")) for (const detail of ["keys/06-the-block.jpg", "s86/123-fifty-years.jpg", "cross-section"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 99 continuity: ${detail}`);
 for (const frame of ending.filter(f => f.sceneId === "neonoire-s100")) for (const detail of ["WARDROBE LOOK F", "PEACOAT", "RED ENAMEL BIRD CLIP", "s86/121-the-shutter.jpg"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 100 continuity: ${detail}`);
-assert(!ending.some(f => f.notes.includes("WARDROBE LOOK D")), "Look D ended with scene 97");
-assert.deepEqual(ending.find(f => f.id === "neonoire-shot-158").characters, [], "The demolition master has no visible cast");
+assert(!ending.some(f => f.notes.includes("WARDROBE LOOK D")), "Look D ended with the cut scene 97");
 assert(project.moodboards.some(b => b.items.some(i => i.image === veraLookESheet)), "Look E travels with the cast board");
-pass("scenes 98–100 boarded: seven 16:9 shots — the first dry sky, the red bird clip, the Hive cut open, and a second bowl; Vera in Looks E and F");
+pass("the ending, revised: seven 16:9 shots — the first dry sky, the red bird clip, and a second bowl with the news at sound down above it; Vera in Looks E and F; the cut-open Hive retired with scene 99");
 
 // Scenes 8–12: Kanda revisited — boarded after the ending, so numbered 162–170; Vera in her original look.
 const kanda = project.frames.filter(f => ["neonoire-s8", "neonoire-s9", "neonoire-s10", "neonoire-s11", "neonoire-s12"].includes(f.sceneId));
@@ -467,19 +454,18 @@ assert.deepEqual(innStairFrames.map(image => inn.find(f => f.image === image).id
 pass("the roadside inn boarded: ten 16:9 shots — the warm refuge, the stair frame, four sedans, and the same stairs gone cold");
 
 // Scenes 13–17: the Hive, first seen; the stairway motif going up (shot 187).
-const hiveFirst = project.frames.filter(f => ["s13", "s14", "s15", "s16", "s17"].map(k => `neonoire-${k}`).includes(f.sceneId));
-assert.deepEqual(hiveFirst.filter(f => shotNo(f) <= 190).map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${181 + i}`));
-assert.deepEqual(new Set(hiveFirst.map(f => f.image)), new Set(hiveFirstImages));
+const hiveFirst = project.frames.filter(f => ["s14", "s15", "s16", "s17"].map(k => `neonoire-${k}`).includes(f.sceneId) && !revisionBoards(f));
+assert.deepEqual(hiveFirst.filter(f => shotNo(f) <= 190).map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${184 + i}`), "Scene 13's 181-183 retire with the cut scene");
+assert.deepEqual(new Set(hiveFirst.map(f => f.image)), new Set(hiveFirstImages.filter(q => !q.includes("/s13/"))), "The Hive-first board carries every delivered image except scene 13's retired three");
 for (const frame of hiveFirst) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
-  for (const detail of ["s84/115-the-storeroom.jpg", "NO bird clip", "white American", "ORIGINAL LOOK", "STAIRWAY MOTIF"]) assert(frame.notes.includes(detail), `${frame.title} is missing scenes 13–17 continuity: ${detail}`);
+  for (const detail of ["s84/115-the-storeroom.jpg", "NO bird clip", "white American", "ORIGINAL LOOK", "STAIRWAY MOTIF"]) assert(frame.notes.includes(detail), `${frame.title} is missing scenes 14–17 continuity: ${detail}`);
 }
-assert(hiveFirst.filter(f => f.sceneId === "neonoire-s13").every(f => f.characters.includes(castOf("Mara Voss"))), "Mara is in every storeroom shot");
-pass("scenes 13–17 boarded: ten 16:9 shots — Mara hiding, the sketchbook, the Hive between towers, the stair up, and Kaneko's long look");
+pass("scenes 14–17 boarded (13 cut): seven 16:9 shots — the sketchbook, the Hive low and patched between towers, the stair up, and Kaneko’s long look");
 
 // Scenes 18–23: the call after the last train, the standoff, the stair up to the lie.
-const callNight = project.frames.filter(f => ["s18", "s19", "s20", "s21", "s22", "s23"].map(k => `neonoire-${k}`).includes(f.sceneId));
-assert.deepEqual(callNight.filter(f => shotNo(f) <= 200).map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${191 + i}`));
+const callNight = project.frames.filter(f => ["s18", "s19", "s20", "s21", "s22", "s23"].map(k => `neonoire-${k}`).includes(f.sceneId) && !revisionBoards(f));
+assert.deepEqual(callNight.filter(f => shotNo(f) <= 200).map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${191 + i}`), "191–200 holds; 201 retired with the cut scene 24");
 for (const frame of callNight) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(callNight.find(f => f.id === "neonoire-shot-195").notes.includes("STAIRWAY MOTIF"), "Shot 195 carries the stairway motif");
 assert(callNight.find(f => f.id === "neonoire-shot-194").notes.includes("s1/03-mara-walks.jpg"), "Shot 194 locks the red bird clip to its prop");
@@ -501,12 +487,11 @@ assert.deepEqual(jpegDimensions("/images/neonoire/reviews/scene-21-office-window
 pass("scene 21: two in-place window retakes use the office blinds and elevated train, with no shot renumbering");
 
 // Scenes 24–28: the chairman's model, the key's number, the loop, the crossing, the sea-wall steps.
-const coast = project.frames.filter(f => ["s24", "s25", "s26", "s27", "s28"].map(k => `neonoire-${k}`).includes(f.sceneId));
-assert.deepEqual(coast.filter(f => shotNo(f) <= 205).map(f => f.id), Array.from({ length: 5 }, (_, i) => `neonoire-shot-${201 + i}`));
+const coast = project.frames.filter(f => ["s25", "s26", "s27", "s28"].map(k => `neonoire-${k}`).includes(f.sceneId) && !revisionBoards(f));
+assert.deepEqual(coast.filter(f => shotNo(f) <= 205).map(f => f.id), Array.from({ length: 4 }, (_, i) => `neonoire-shot-${202 + i}`), "202–205: the chairman's night (24, 200–201) is cut; its model beat moved to the wordless dawn 51");
 for (const frame of coast) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
-assert(coast.find(f => f.id === "neonoire-shot-201").notes.includes("s83/109-the-fortieth-floor.jpg"), "Shot 201 locks Kurose's office to its scene 83 master");
 assert(coast.find(f => f.id === "neonoire-shot-205").notes.includes("STAIRWAY MOTIF"), "Shot 205 carries the stairway motif, descending");
-pass("scenes 24–28 boarded: five 16:9 shots — the model, the number, the loop, the crossing and the sea-wall steps");
+pass("scenes 25–28 boarded (24 cut): four 16:9 shots — the number, the loop, the crossing and the sea-wall steps");
 
 // Scenes 29–44: the inn's missing nights — the widow, the beacon, and the cold coming in.
 const innNights = project.frames.filter(f => ["s29", "s30", "s33", "s35", "s36", "s37", "s42", "s43", "s44"].map(k => `neonoire-${k}`).includes(f.sceneId));
@@ -517,15 +502,15 @@ assert(innNights.find(f => f.id === "neonoire-shot-209").notes.includes("stair")
 pass("scenes 29–44 boarded: nine 16:9 shots — the widow, the beacon, the swollen window, the pink phone, the dark apartment, the eave, and the cold coming in");
 
 // The escape's turn: scenes 46–55 bar 47, whose yard master boards next turn as shot 224.
-const turn = project.frames.filter(f => ["s46", "s48", "s49", "s50", "s51", "s52", "s53", "s54", "s55"].map(k => `neonoire-${k}`).includes(f.sceneId));
-assert.deepEqual(turn.filter(f => shotNo(f) <= 223).map(f => f.id), Array.from({ length: 9 }, (_, i) => `neonoire-shot-${215 + i}`));
+const turn = project.frames.filter(f => ["s46", "s48", "s49", "s50", "s51", "s52", "s53", "s54", "s55"].map(k => `neonoire-${k}`).includes(f.sceneId) && !revisionBoards(f));
+assert.deepEqual(turn.filter(f => shotNo(f) <= 223).map(f => f.id), [215, 216, 217, 218, 220, 221, 222, 223].map(n => `neonoire-shot-${n}`), "219 retires with the wordless rewrite of scene 51");
 for (const frame of turn) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(turn.find(f => f.id === "neonoire-shot-218").notes.includes("drained dawn"), "Shot 218 carries the drained dawn of standing rule 2");
 assert(turn.find(f => f.id === "neonoire-shot-223").notes.includes("金子"), "Shot 223 locks the counter's kanji sign");
-pass("scenes 46–55 boarded: nine 16:9 shots — the pantry door, the cab, the eight, the drained dawn, the two men, the doorway, the pink water, the kiosk and the match");
+pass("scenes 46–55 boarded: eight 16:9 shots — the pantry door, the cab, the eight, the drained dawn, the two men, the doorway, the pink water and the match (the hat-in-hand beat is cut; its model dawn is 310–311)");
 
 // The key's answer: scene 47's yard and scenes 56–64, the sisters' curtain and the Ueno box.
-const answer = project.frames.filter(f => ["s47", "s56", "s57", "s58", "s59", "s60", "s61", "s62", "s63", "s64"].map(k => `neonoire-${k}`).includes(f.sceneId));
+const answer = project.frames.filter(f => ["s47", "s56", "s57", "s58", "s59", "s60", "s61", "s62", "s63", "s64"].map(k => `neonoire-${k}`).includes(f.sceneId) && !revisionBoards(f));
 assert.deepEqual(answer.filter(f => shotNo(f) <= 233).map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${224 + i}`));
 for (const frame of answer) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(answer.find(f => f.id === "neonoire-shot-224").notes.includes("no weapons in frame"), "Shot 224 keeps the moderation-safe composition");
@@ -533,7 +518,7 @@ assert(answer.find(f => f.id === "neonoire-shot-232").notes.includes("MONTHLY. Y
 pass("scene 47 and scenes 56–64 boarded: ten 16:9 shots — the yard, the third stool, the curtain gap, the overpayment, the embrace, the key, the car, the date, the lockers and the bar");
 
 // The last rain: scenes 65–71 close the board — the dress, the wait, the trap and the waking.
-const lastrain = project.frames.filter(f => ["s65", "s66", "s67", "s68", "s69", "s70", "s71"].map(k => `neonoire-${k}`).includes(f.sceneId));
+const lastrain = project.frames.filter(f => ["s65", "s66", "s67", "s68", "s69", "s70", "s71"].map(k => `neonoire-${k}`).includes(f.sceneId) && !revisionBoards(f));
 assert.deepEqual(lastrain.filter(f => shotNo(f) <= 240).map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${234 + i}`));
 for (const frame of lastrain) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(lastrain.find(f => f.id === "neonoire-shot-234").notes.includes("s72/69"), "Shot 234 locks the wine-red dress to the scene 72 wardrobe master");
@@ -551,7 +536,14 @@ pass("scenes 65–71 boarded: seven 16:9 shots — the dress, the wait at ten, t
 
 // Coverage pass: shots 241–250, appended without renumbering 1–240. The beats the first boarding named and left.
 const coverage = project.frames.filter(f => shotNo(f) >= 241);
-assert.deepEqual(coverage.map(f => f.id), Array.from({ length: EXPECTED_SHOTS - 240 }, (_, i) => `neonoire-shot-${241 + i}`));
+// 241–320 with the 30 September retirements left as gaps: 274 and 280–282 (scene 51's bow, the
+// scene 1 letter coverage) and 304 (the crawl, cut with scene 97). Nothing is renumbered.
+assert.deepEqual(coverage.map(f => shotNo(f)),
+  [241, 242, 243, 244, 245, 246, 247, 248, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260,
+   261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 273, 275, 276, 277, 278, 279, 283, 284,
+   285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303,
+   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320],
+  "Coverage runs 241–320 minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
 for (const frame of coverage) if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(coverage.find(f => f.id === "neonoire-shot-241").notes.includes("small reflection in the upper corner"), "Shot 241's retake shrinks the face");
 assert(!coverage.find(f => f.id === "neonoire-shot-241").notes.includes("larger than a glancing reflection"), "Shot 241 no longer carries the large-reflection caveat");
@@ -562,11 +554,11 @@ assert(coverage.find(f => f.id === "neonoire-shot-244").notes.includes("STAIRWAY
 assert(coverage.find(f => f.id === "neonoire-shot-245").notes.includes("never static"), "Shot 245 keeps the office television a programme");
 assert(coverage.find(f => f.id === "neonoire-shot-245").notes.includes("on the chair seat"), "Shot 245's retake puts his feet on the chair");
 assert(coverage.find(f => f.id === "neonoire-shot-246").notes.includes("DANIEL VOSS, 41"), "Shot 246 locks the clipping caption");
-assert(coverage.find(f => f.id === "neonoire-shot-249").notes.includes("31 MISSED CALLS"), "Shot 249 locks the phone screen");
-assert(coverage.find(f => f.id === "neonoire-shot-249").notes.includes("ash-blonde"), "Shot 249 locks Mara's hair to her sheet");
+// The missed-calls screen (249) was scene 13's cover shot; the phone now rings once in scene 1 and
+// she declines it — the frame retires with the scene, its image staying on disk for review.
+assert(!coverage.some(f => f.id === "neonoire-shot-249"), "Shot 249 retires with scene 13");
 assert(coverage.find(f => f.id === "neonoire-shot-250").notes.includes("金子"), "Shot 250 locks the counter sign");
 assert(coverage.find(f => f.id === "neonoire-shot-250").notes.includes("Six stools"), "Shot 250's retake dresses the sixth stool");
-assert(coverage.find(f => f.id === "neonoire-shot-249").notes.includes("eyes are on the phone"), "Shot 249's retake drops Mara's eyeline");
 assert(coverage.find(f => f.id === "neonoire-shot-251").notes.includes("never static"), "Shot 251 keeps the office television a programme");
 assert(coverage.find(f => f.id === "neonoire-shot-252").notes.includes("No cigarettes"), "Shot 252 locks the lighter with no cigarettes");
 assert(coverage.find(f => f.id === "neonoire-shot-253").notes.includes("dentist's chair"), "Shot 253 boards the dentist's chair");
@@ -594,26 +586,27 @@ pass("coverage pass: shots 241–269 — named beats the first boarding left, th
 
 // Final coverage pass: shots 270–279 — the beats the boards had named and left in the cut.
 const finalCoverage = project.frames.filter(f => shotNo(f) >= 270 && shotNo(f) <= 279);
-assert.deepEqual(finalCoverage.map(f => f.id), Array.from({ length: 10 }, (_, i) => `neonoire-shot-${270 + i}`));
+// 272 (the model's tiny tree, Kurose's fingertip) and 274 (the bow held a moment too long) sat on
+// scene 51's board and retire with its wordless rewrite; what replaces them are 310–311, and the
+// tree's plaza becomes the finished paving of 99A and of Vera's last look at the model in 83.
+assert.deepEqual(finalCoverage.map(f => f.id), [270, 271, 273, 275, 276, 277, 278, 279].map(n => `neonoire-shot-${n}`), "270–279 with 272 and 274 retired");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-270").notes.includes("packed and zipped"), "Shot 270 locks the packed suitcase under the futon");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-271").notes.includes("Not yet"), "Shot 271 boards the sketchbook lie");
-assert(finalCoverage.find(f => f.id === "neonoire-shot-272").notes.includes("one tiny white tree"), "Shot 272 locks Kurose's fingertip on the model tree");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-273").notes.includes("no legible text invented"), "Shot 273 keeps the receipt bundle unread");
-assert(finalCoverage.find(f => f.id === "neonoire-shot-274").notes.includes("moment too long"), "Shot 274 locks the bow held too long");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-275").notes.includes("sheets/vera-face.jpg") && finalCoverage.find(f => f.id === "neonoire-shot-275").notes.includes("sheets/jack-face.jpg"), "Shot 275 holds the kiss to both face sheets");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-276").notes.includes("mara-hiding"), "Shot 276 holds Mara to her hiding sheet");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-277").notes.includes("vera-look-b") && finalCoverage.find(f => f.id === "neonoire-shot-277").notes.includes("bone dry"), "Shot 277 locks Look B and the dry borrowed umbrella");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-278").notes.includes("9:58") && finalCoverage.find(f => f.id === "neonoire-shot-278").notes.includes("10:00"), "Shot 278 locks the lounge clock from 9:58 to 10:00");
 assert(finalCoverage.find(f => f.id === "neonoire-shot-279").notes.includes("mara-hiding"), "Shot 279 holds Mara's smile to her hiding sheet");
-pass("final coverage: shots 270–279 — the packed suitcase, the lie, the tiny tree, the receipts, the bow, the kiss, the wall, the umbrella, the clock at ten and her sister's smile");
+pass("final coverage: shots 270–279 — the packed suitcase, the lie, the receipts (re-pinned), the kiss, the wall, the umbrella, the clock at ten and her sister’s smile; the tree and the bow retired with scene 51");
 
 // Letter rewrite coverage, 28 September 2026 — shots 283–286: the letter under the lamp, the
 // coward line in the storeroom, the hand over the inside pocket, and the sheet returned at dawn.
-const letterRewrite = project.frames.filter(f => shotNo(f) >= 280 && shotNo(f) <= 286);
-assert.deepEqual(letterRewrite.map(f => f.id), Array.from({ length: 7 }, (_, i) => `neonoire-shot-${280 + i}`), "The letter rewrite runs 280–286 with no gaps");
+const letterRewrite = project.frames.filter(f => shotNo(f) >= 283 && shotNo(f) <= 286);
+assert.deepEqual(letterRewrite.map(f => f.id), Array.from({ length: 4 }, (_, i) => `neonoire-shot-${283 + i}`), "The letter rewrite runs 283–286; 280–282 retired with the scene 1 cuts");
 for (const frame of letterRewrite) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} is 16:9 full-bleed`);
-  // 280–282 are cold-open coverage, approved Ready in the fresh pass; 283–286 remain draft studies.
+  // 283–286 remain draft studies; their scene-1 siblings 280–282 were retired by the revision.
   assert.equal(frame.status, shotNo(frame) <= 282 ? "Ready" : "Draft", `${frame.title}: cold-open coverage is director-approved Ready, the rest stay Draft`);
 }
 const desk = letterRewrite.find(f => f.id === "neonoire-shot-283");
@@ -625,7 +618,7 @@ assert(pocket.notes.includes("s22/195-somewhere-like-this.jpg") && pocket.notes.
 const returned = letterRewrite.find(f => f.id === "neonoire-shot-286");
 assert(returned.notes.includes("props/sakai-letter.jpg") && returned.notes.includes("two-hands, two-cups"), "Shot 286 returns the same sheet beside the two cups");
 assert(returned.characters.join() === castOf("Vera Voss"), "Shot 286 is Vera's insert");
-pass("letter rewrite coverage 280–286: the address, the sign, the dying man, the letter under the lamp, the coward line, the pocket and the smoothed-flat sheet");
+pass("letter rewrite coverage, surviving half: 283–286 — the letter under the lamp, the coward line, the pocket and the smoothed-flat sheet");
 
 // Scenes 25A, 27A, 63A — first boarding, shots 287–296.
 const insertedBoards = project.frames.filter(f => ["s25a", "s27a", "s63a"].map(k => `neonoire-${k}`).includes(f.sceneId));
@@ -642,8 +635,9 @@ pass("scenes 25A, 27A and 63A boarded: ten 16:9 shots — breakfast, the almost-
 
 // Story pass 2 boards, 29 September 2026 — shots 297–307: Vera at the Toto Shimbun (53A), the
 // notebook photocopied (82A), the call and the crawl (96, 97), and the finished plaza (99A).
-const storyPass2 = project.frames.filter(f => shotNo(f) >= 297);
-assert.deepEqual(storyPass2.map(f => f.id), Array.from({ length: 11 }, (_, i) => `neonoire-shot-${297 + i}`));
+const storyPass2 = project.frames.filter(f => shotNo(f) >= 297 && shotNo(f) <= 307);
+// 304 retired with scene 97 on 30 September; the run keeps every other number.
+assert.deepEqual(storyPass2.map(f => f.id), [297, 298, 299, 300, 301, 302, 303, 305, 306, 307].map(n => `neonoire-shot-${n}`), "Story pass 2 runs 297–307 with only the scene 97 crawl retired");
 assert.deepEqual(storyPass2.filter(f => f.sceneId === "neonoire-s53a").map(f => f.id), ["neonoire-shot-297", "neonoire-shot-298", "neonoire-shot-299"], "53A carries three shots");
 assert.deepEqual(storyPass2.filter(f => f.sceneId === "neonoire-s82a").map(f => f.id), ["neonoire-shot-300", "neonoire-shot-301", "neonoire-shot-302"], "82A carries three shots");
 assert.deepEqual(storyPass2.filter(f => f.sceneId === "neonoire-s99a").map(f => f.id), ["neonoire-shot-305", "neonoire-shot-306", "neonoire-shot-307"], "99A carries three shots");
@@ -653,10 +647,14 @@ assert(storyPass2.find(f => f.id === "neonoire-shot-298").notes.includes("There 
 assert(storyPass2.find(f => f.id === "neonoire-shot-299").notes.includes("KONDO"), "Shot 299 locks the card");
 assert(storyPass2.find(f => f.id === "neonoire-shot-301").notes.includes("flashing white"), "Shot 301 boards the copier's bar of light");
 assert(storyPass2.find(f => f.id === "neonoire-shot-302").notes.includes("Kurose Development"), "Shot 302 carries the hook");
-assert(storyPass2.find(f => f.id === "neonoire-shot-305").notes.includes("exactly as it was in the model"), "Shot 305 builds the model");
-assert(storyPass2.find(f => f.id === "neonoire-shot-306").notes.includes("KUROSE DEVELOPMENT. TOMORROW'S TOKYO."), "Shot 306 locks the hoarding letters");
-assert(storyPass2.find(f => f.id === "neonoire-shot-307").notes.includes("Nothing trembles"), "Shot 307 carries the film's last train");
-assert.deepEqual(placeholders.map(f => shotNo(f)).sort((a, b) => a - b), [298, 299, 300, 302, 303, 304, 306, 307], "The story-pass-2 placeholders hold exactly the ungenerated slots");
+assert(storyPass2.find(f => f.id === "neonoire-shot-305").notes.includes("the plaza as it is built"), "Shot 305 builds the plaza — to the revised words");
+assert(storyPass2.find(f => f.id === "neonoire-shot-306").notes.includes("the hoarding is out of the film"), "Shot 306 retires the hoarding it once locked");
+assert(storyPass2.find(f => f.id === "neonoire-shot-307").notes.includes("nothing answers"), "Shot 307 carries the film's last train, and the plaza's silence under it");
+assert.deepEqual(placeholders.filter(f => shotNo(f) <= 307).map(f => shotNo(f)).sort((a, b) => a - b), [298, 299, 300, 302, 303, 306, 307], "The story-pass-2 placeholders hold exactly the ungenerated slots (304 retired with scene 97)");
+assert.deepEqual(placeholders.filter(f => shotNo(f) >= 308).map(f => shotNo(f)), Array.from({ length: 13 }, (_, i) => 308 + i), "Every revision board 308–320 holds an honest placeholder until it is generated");
+for (const f of storyPass2.filter(x => [305, 306, 307].includes(shotNo(x)))) {
+  assert(f.notes.includes("RETAKE PENDING") || rewritePending.has(f.id) || !f.image, `99A frame ${shotNo(f)}: the plaza rewrite pins its retake`);
+}
 pass("story pass 2 boards: shots 297–307 — Vera at the Toto Shimbun, the notebook photocopied, the call, the crawl and the finished plaza, with honest placeholders naming the files to come");
 
 
@@ -774,7 +772,7 @@ assert(!hiveCanonScenes.has("s3") && !hiveCanonScenes.has("s78") && !hiveCanonSc
 assert(hiveCanonScenes.has("s91"), "the rear wall by the viaduct is the Hive's own exterior");
 assert(hiveCanonScenes.has("s19") && hiveCanonScenes.has("s69") && hiveCanonScenes.has("s71") && hiveCanonScenes.has("s67"), "The counter night, the passages and the service road are the Hive");
 let retakeNoteCount = 0;
-for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n97-the-hive-morning.md", "n99-the-hive-day.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
+for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-below-the-viaduct.md", "n16-hive-passages.md", "n69-vera-would-love-this.md", "n71-everyones-awake.md", "n85-hive-passages.md", "n55-they-match.md", "n67-a-different-clock.md", "n68-rice-balls-for-the-car.md", "n70-position.md", "n17-kaneko-counter-first.md", "n56-vera-on-the-third-stool.md", "n58-bring-her.md", "n86-kaneko-counter.md", "n87-radio-repair-shop.md"]) {
   const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
   const hits = text.split("Retake 29 September 2026").length - 1;
   assert(hits > 0, `${board} records its exterior retake`);
@@ -782,7 +780,10 @@ for (const board of ["n15-the-hive-day.md", "n59-glowing-in-the-rain.md", "n92-b
 }
 // Scene 90's three optional-pass records (shots 132, 133, 267) went with the roof, rewritten 29 September 2026.
 const retiredRoofRecords = 3;
-assert.equal(retakeNoteCount, 7 + hiveRetakenLook.length + hiveRetakenOptional.length + hiveRetakenQueue.length - retiredRoofRecords, "Every installed retake is recorded in its board notes");
+// The cut scenes' records (n97: 7, n99: 2) went with their boards on 30 September 2026; the
+// retaken images stay installed and counted in the canon module, but no board notes them.
+const retiredCutSceneRecords = 9;
+assert.equal(retakeNoteCount, 7 + hiveRetakenLook.length + hiveRetakenOptional.length + hiveRetakenQueue.length - retiredRoofRecords - retiredCutSceneRecords, "Every installed retake is recorded in its board notes");
 pass("hive canon: six sheets installed; the wrong-building tier, the new-look pass, the judged optionals and the queue pass all retaken on the canon and the look, the queue closed");
 
 pass("Tokyo Story colour revision complete: ten + eight generations, all fifteen street shots delivered, stable IDs, makeup/shoe states and static low-level cameras");
@@ -855,10 +856,15 @@ for (const frame of detectives) {
 pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, sealed evidence and clock references are recorded");
 
 // Passes are ten shots at a time, in screenplay order — the notes on every frame say which pass.
+// The notes line numbers a card by its boarding-run slot, which the later-inserted scene 72 and the
+// answer block left a permutation of the board ids (scenes 72–76 carry ids 69–86, labelled in boarding
+// order). What must hold is that the labels are a bijection and each card names its own pass.
+const labels = project.frames.map(frame => Number((frame.notes.match(/Shot (\d+) of \d+/) || [])[1]));
 for (const [i, frame] of project.frames.entries()) {
-  assert(frame.notes.includes(`Shot ${i + 1} of ${EXPECTED_SHOTS}`), `Shot ${i + 1} should say where it sits in the running order`);
-  assert(frame.notes.includes(`Pass ${Math.ceil((i + 1) / 10)} of ${Math.ceil(EXPECTED_SHOTS / 10)}`), `Shot ${i + 1} should name its pass`);
+  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 320, `${frame.id} should say where it sits in the running order`);
+  assert(frame.notes.includes(`Pass ${Math.ceil(labels[i] / 10)} of ${Math.ceil(EXPECTED_SHOTS / 10)}`), `${frame.id} should name its pass`);
 }
+assert.deepEqual(new Set(labels), new Set(project.frames.map(shotNo)), "Every running-order label maps to exactly one card, and every card to one label");
 pass("passes run ten keyframes at a time, in screenplay order, and every frame carries its pass in the notes");
 
 // ---------------------------------------------------------------- cast, sheets and continuity
@@ -927,7 +933,7 @@ for (const frame of project.frames) {
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
 assert.equal(imported.frames.length, EXPECTED_SHOTS);
-assert.equal(imported.scenes.length, 106, "A re-import carries the whole final screenplay");
+assert.equal(imported.scenes.length, 102, "A re-import carries the whole revised screenplay");
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
 // ---------------------------------------------------------------- persistence
@@ -948,7 +954,7 @@ try {
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
       assert.equal(opened.frames.length, ${EXPECTED_SHOTS});
-      assert.equal(opened.scenes.length, 106);
+      assert.equal(opened.scenes.length, 102);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
 
@@ -1037,6 +1043,37 @@ if (awaiting.length) {
   }
   assert.equal(project.frames.reduce((n, f) => n + (f.audio?.length || 0), 0), manifest.lines.length, "The bundle carries exactly the manifest's lines");
   pass(`recorded dialogue: ${manifest.lines.length} line(s) on the frames, files present, offsets and durations fit, voices.json names Jack and Vera`);
+}
+
+// ---------------------------------------------------------------- director's global rules
+// Four rules the 30 September 2026 revision set over the whole film; each is checked against the
+// draft and the bundle, not just against prose.
+{
+  const draftPath = join(root, "Neonoire (3).fountain");
+  const draft = readFileSync(draftPath, "utf8").split("\n");
+  const heading = (n) => draft.findIndex(l => new RegExp(`#${n}[A-Z]?#$`).test(l.trim()));
+  assert.equal(project.title, "NEONOIRE", "The workspace goes out under the film's title");
+  // 1. No score before scene 75 — the draft carries exactly one score cue and it sits before the
+  // scene 75 heading, after scene 74; no earlier line calls for music at all.
+  const cue = draft.findIndex(l => /SCORE enter/i.test(l));
+  assert(cue >= 0 && cue < heading(75) && cue > heading(74), "The score enters once, at the top of the scene 75 series");
+  assert(draft.slice(0, cue).every(l => !/^\s*(MUSIC|SCORE)\b/i.test(l)), "Nothing before the cue asks for music");
+  // 2. Exactly seven close-up inserts, named in the revision as the film's only cut-ins.
+  const namedInserts = project.frames.filter(f => [308, 309, 312, 313, 315, 316, 319].includes(shotNo(f)));
+  assert.equal(namedInserts.length, 7, "The seven named inserts are all boarded");
+  assert.deepEqual(namedInserts.map(f => f.sceneId),
+    ["s2", "s20", "s63", "s71", "s76", "s78", "s89"].map(k => `neonoire-${k}`),
+    "Each named insert sits in the scene that named it");
+  for (const f of namedInserts) assert(/Insert|Close-up/i.test(f.shotType), `${f.title} is a cut-in, typed ${f.shotType}`);
+  // 3. Scene 83 opens wide: the confrontation's master is the 24mm full-body take.
+  const s83master = project.frames.find(f => f.sceneId === "neonoire-s83");
+  assert.equal(s83master.shotType, "Wide", "Scene 83 opens on its wide master");
+  assert.equal(s83master.lens, "24mm", "The scene 83 master is the 24mm take");
+  assert(s83master.notes.includes("Rain on the glass") && s83master.notes.includes("24mm room"), "The scene 83 master is the fortieth floor with rain on the glass");
+  // 4. Every exterior stays wet until 98: the draft's one rain-stopped line is two lines into 98.
+  const stopped = draft.map((l, i) => /rain (has stopped|stops)/i.test(l) ? i : -1).filter(i => i >= 0);
+  assert.deepEqual(stopped, [heading(98) + 2], "The rain stops once, and only in scene 98");
+  pass("director's global rules: NEONOIRE over the bundle, one score cue at 75, seven named inserts and no more, 83 on its wide master, wet until 98");
 }
 
 console.log("\nAll NEONOIRE checks passed.");

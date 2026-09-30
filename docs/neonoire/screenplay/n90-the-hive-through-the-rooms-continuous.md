@@ -8,6 +8,8 @@ Grammar: 35mm at doorway height; the rooms are seen from where Vera and Jack pas
 
 INT. THE HIVE, THROUGH THE ROOMS - CONTINUOUS #90#
 
+Vera leads them to a door with a sumo match murmuring behind it. It opens before she can knock: the OLD WOMAN from 55.
+
 The old woman's room. A sumo match murmurs on a television nobody is watching. She points across it to the far wall, where a second door stands open.
 
 Beyond it, another room. A kitchen in the dark, lit by one candle: the FAMILY around the table, the father with the baseball bat across his knees, the children holding the next door wide. Beyond that, the dentist's chair, the dentist with a finger to his lips. A bedroom where the girl with the violin sits up, the instrument held against her chest like a child. A passage that is really the inside of someone's wardrobe.
