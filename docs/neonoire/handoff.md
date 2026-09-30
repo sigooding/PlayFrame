@@ -2,6 +2,32 @@
 
 **Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
 
+## Current state — 30 September 2026 (cold-open fresh pass, in progress)
+
+**The director ordered the cold open redone from scratch**: no scene masters, no layout sheet, no
+earlier frame attached to any generation — the screenplay text is the only scene guide and the
+**character sheets are the only image references**. Ledger:
+[`passes/cold-open-fresh-2026-09-30.md`](passes/cold-open-fresh-2026-09-30.md); briefs and the
+per-shot prompt table in [`scripts/neonoire/cold-open-fresh-look.mjs`](../../scripts/neonoire/cold-open-fresh-look.mjs).
+Two new cast sheets were created because their absence was the drift source: `sheets/sakai.jpg`
+(the old man) and `sheets/journalist.jpg` (the bar journalist). **The pass is COMPLETE: all 31 cold-open frames
+(shots 1–28 and coverage 280–282) are fresh-pass generations at 1920×1080 on their stable asset
+paths**, in four batches on 30 September 2026. By the director's override the bar frames also
+attach `sheets/kanda-bar.jpg` (night panels) as the room reference; character sheets remain the
+only character references and no earlier frame was attached anywhere. Batch 4 landed the queued
+retakes (20, 22 counter-stool seating; 24 continuous legs and unbranded bottles; 26 hand cuff and
+position) plus 28 and 280–282; 280's scrap reads Kanda 2-3-1 and 1:00 after a wrong-ward first
+attempt was retaken in-session, and 24's first retake was redone for legible KIRIN labels. One
+caveat logged, not retaken: the taillight reflection beside Sakai's head in 13 can read as blood at
+a glance — the director's call. Final 31-frame review sheet:
+`reviews/cold-open-fresh-final-2026-09-30.jpg`. **APPROVED: on 30 September 2026 the director signed off on all 31 frames as the film's main
+images; the builder gives them status Ready and the verifier asserts it.** `coldOpenFreshCompleted`
+in the fresh-look module is the boundary the builder and verifier read; pre-pass frames are kept
+under ignored `artifacts/cold-open/pre-fresh-2026-09-30/` for before/after review. The pass also
+closes, as it goes, the standing review findings: Mara in the recess in 8/10/12, the sedan reversing
+out (13), the body in the lane (13), the bar sign at one end only, one journalist wardrobe, no
+detached shoes in 27, and the key tag reading 114 in 16.
+
 ## Story pass 2 — the boards and the retakes (29 September 2026, complete)
 
 The script half of story pass 2 is done (Part 9 item 7 of the bible); this session finished the board half. The full record is in [`passes/story-pass-2-boards.md`](passes/story-pass-2-boards.md); the part-by-part log follows.
