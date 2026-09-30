@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 14
 ID: neonoire-shot-189
 IMAGE: 187-you-got-old.jpg
-NOTE: The scene master. It isn't clear that Jack is on the **third** stool; seat him there on set, since it rhymes with scenes 13 and 100. Retake 29 September 2026 — one amber bulb and steam at the counter, the fluorescent tube unlit; the long look and the two customers at the far end held.
+NOTE: The scene master. It isn't clear that Jack is on the **fourth** stool, beside the third; seat him there on set — the empty third is the scene's whole music, echoed by scene 100 (scene 13 is cut; the rhyme is the counter's now). Retake 29 September 2026 — one amber bulb and steam at the counter, the fluorescent tube unlit; the long look and the two customers at the far end held.
 
 190. MEDIUM WIDE — 35mm, static, low angle — something moves.
 Jack has gone. On the counter lie an empty bowl, far too much money and his card. Kaneko looks down at it. Behind her, a pale young hand holds the storeroom curtain open in the dark.

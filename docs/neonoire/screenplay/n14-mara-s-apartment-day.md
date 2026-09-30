@@ -23,7 +23,7 @@ A week ago. She made me coffee. It was terrible.
 Jack opens the fridge. Milk. A half-eaten cake in a box. He closes it.
 
 JACK
-She wasn't planning to leave.
+She wasn't planning to disappear.
 
 VERA
 No.
@@ -78,8 +78,14 @@ Can I borrow this?
 VERA
 Why?
 
-JACK
-People draw the places they want to go.
+Jack doesn't answer. He looks at the drawing a moment too long.
+
+Vera takes the hair clip out of her coat pocket and sets it on the sketchbook.
+
+VERA
+Take this too. It's mine. She stole it.
+
+He takes both.
 
 She hesitates, then nods. He closes the sketchbook and puts it under his arm, and says nothing else about it.
 

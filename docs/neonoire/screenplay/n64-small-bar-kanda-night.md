@@ -22,14 +22,18 @@ OKADA
 (in Japanese)
 Behind the counter. Like the girl's clip.
 
+OKADA (CONT'D)
+(in Japanese)
+The girl?
+
 He pours Jack a drink. Jack doesn't drink it.
 
 JACK
 (in Japanese)
-Tomorrow it'll be over.
+Safe. Tomorrow it'll be over.
 
 OKADA
 (in Japanese)
-That's what people say the night before.
+You said that about my daughter.
 
 

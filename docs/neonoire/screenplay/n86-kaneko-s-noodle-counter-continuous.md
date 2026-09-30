@@ -14,6 +14,12 @@ KANEKO
 (in Japanese; to Jack)
 Up. Through the back. The stairs by the dentist. Then go through the neighbours. Everyone will open a door.
 
+VERA
+(in Japanese)
+I know them.
+
+Jack looks at her.
+
 JACK
 (in Japanese)
 Come with us.

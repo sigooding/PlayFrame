@@ -27,6 +27,10 @@ KANEKO
 I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American.
 (beat)
 You always sat there. He sat there.
+(beat)
+Everything is going. We are just slower.
+
+She looks past him, through the doorway, at the white hoarding across the street.
 
 Jack looks at the third stool, empty beside him, and then at the counter under his hands.
 

@@ -4,7 +4,8 @@ SCREENPLAY — SCENE 83 — INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT
 INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Kurose.
-Grammar: The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. She never touches the tea.
+Grammar: The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. The revision's rule for this scene: 
+the “He sat where you're sitting” line and “It's just a face” play wide — no close-ups on the accusations.
 
 INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY #83#
 
@@ -20,7 +21,7 @@ When my secretary said the daughter of Daniel Voss wanted to see me, I didn't be
 His English is perfect. Old-fashioned.
 
 KUROSE (CONT'D)
-You have his eyes. He looked at people the same way. As if he expected them to tell the truth.
+He sat where you're sitting. He looked at me the way you are. As if I'd done something.
 
 VERA
 Did you?
@@ -35,7 +36,9 @@ Good men are very expensive.
 Vera doesn't touch the tea.
 
 KUROSE (CONT'D)
-What is it you want? Money is vulgar. But it is also useful. For a young woman alone, in a foreign city.
+What is it you want?
+
+He takes a plain envelope, thick with cash, from a drawer and lays it on the glass between them. She doesn't look at it.
 
 VERA
 The Toto Shimbun will print tomorrow. They asked me to bring you the chance to reply.
@@ -67,7 +70,7 @@ My father kept notes. He wrote your name on every page.
 (beat)
 And now I know.
 
-She walks to the door. Stops beside the glass case with the model of the redevelopment inside. She looks down at it: the little white towers, the little plaza, the fountain where the Hive is.
+She walks to the door. On her way out, she stops at the model. Where the Hive stood, there's only the white plaza. Tiny painted people cross it.
 
 VERA (CONT'D)
 It's very clean.

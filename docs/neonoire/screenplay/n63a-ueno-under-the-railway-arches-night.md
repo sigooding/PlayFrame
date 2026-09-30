@@ -8,7 +8,7 @@ Grammar: A sedan at walking pace, a wall of steel balls, and a tape he cannot ca
 
 EXT. UENO, UNDER THE RAILWAY ARCHES - NIGHT #63A#
 
-A row of brick arches with shops in them: shuttered, lit, shuttered. Rain running down the ironwork. Jack comes out of the locker room with his coat buttoned over the box and something flat inside it.
+A row of brick arches with shops in them: shuttered, lit, shuttered. Rain running down the ironwork. Jack comes out of the locker room with his coat buttoned over the notebook and something flat inside it.
 
 At the far end of the arch, a black sedan sits with its lights off and its engine running.
 

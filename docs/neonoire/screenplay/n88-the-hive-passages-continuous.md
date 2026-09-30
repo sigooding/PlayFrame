@@ -10,6 +10,8 @@ INT. THE HIVE, PASSAGES - CONTINUOUS #88#
 
 DARK.
 
+In the black, Vera's hand finds the wall, low, where a child's hand would reach. She starts to move. Jack follows the sound of her.
+
 Every bulb in the building goes out at once.
 
 The masked men stop. Flashlights snap on, tight white beams in the narrow corridors, catching dripping pipes, closed doors, laundry, faces at windows that vanish the moment the light touches them.

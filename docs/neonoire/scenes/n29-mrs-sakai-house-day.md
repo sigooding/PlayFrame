@@ -27,7 +27,7 @@ NOTE: The altar photograph is held to `s1/07-old-man.jpg`. Tatami beige and alta
 
 273. MEDIUM — 50mm, static, eye level — the receipts.
 Across the quilted kotatsu, Mrs Sakai's hands set down the thin bundle of yellowed carbon receipts bound in a rubber band in front of Jack; the brown teapot and the two poured cups stand between them, the altar and its smiling photograph keep the wall behind, the muted television grey at the frame's edge.
-SCRIPT: "She puts them in front of Jack."
+SCRIPT: "She takes a rubber-banded bundle of receipts from the altar drawer."
 CAST: Jack, Mrs. Sakai
 LIGHT: Overcast soft
 TIME: 8

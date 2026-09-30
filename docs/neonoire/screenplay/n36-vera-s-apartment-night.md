@@ -19,12 +19,10 @@ It's me.
 A beat. Disappointment, then something else.
 
 VERA
-Where are you? You sound like you're calling from 1985.
+Where are you?
 
 JACK
-The countryside. There's no signal. I'm on a payphone. It's pink.
-
-She almost laughs.
+The coast. An inn off the highway.
 
 VERA
 Did you find anything?

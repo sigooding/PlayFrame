@@ -40,7 +40,9 @@ She thinks about it for a long time.
 VERA
 I believe he was sad. I don't know if I believe the rest.
 (beat)
-A man wrote to me. Last month. An old man. He said Dad didn't kill himself. He said he could prove it.
+A man wrote to me last week. He said Dad didn't do it. He said the police knew.
+
+Jack keeps his eyes on his bowl.
 
 JACK
 (carefully)

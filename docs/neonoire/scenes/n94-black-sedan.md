@@ -15,30 +15,30 @@ All three shots (141–143) are **16:9, 1920×1080, full-bleed**. The back-seat 
 
 141. TWO-SHOT — 35mm, static, eye level — only tea.
 From the front seat, Ishida sits stiff at left and Kurose sits impeccable at right. Without looking at him, Kurose pours tea from the steel flask into its cup.
-SCRIPT: "Kurose sits in the back, impeccable, a small steel flask in his hands. He does not look at Ishida. He pours tea into the flask's cup."
-CAST: Kurose, Detective Ishida
+SCRIPT: "At the foot of the steps, a black sedan waits at the kerb, engine running, wipers going."
+CAST: —
 LIGHT: Low key
 TIME: 30
 ID: neonoire-shot-141
 IMAGE: 139-only-tea.jpg
-NOTE: Back-seat master. It holds "Get in, Ishida. You'll catch cold.", the door closing, the car pulling away, "It's only tea.", and "I did everything you asked. For twenty years." with Kurose's reply.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Back-seat master. It holds "Get in, Ishida. You'll catch cold.", the door closing, the car pulling away, "It's only tea.", and "I did everything you asked. For twenty years." with Kurose's reply.
 
 142. CLOSE-UP — 85mm, static, eye level — where are we going.
 Ishida in profile, holding the cup in both hands without drinking, looks out of the rainy window as Tokyo slides past: a lit vending machine, a closed noodle shop, the elevated railway.
-SCRIPT: "Where are we going?"
+SCRIPT: "Ishida stops in the rain. He looks back up at the station, at one lit window on the second floor where somebody is still working."
 CAST: Detective Ishida
 LIGHT: Low key
 TIME: 12
 ID: neonoire-shot-142
 IMAGE: 140-where-are-we-going.jpg
-NOTE: One of the scene's two close-ups. It holds "Ishida looks out of the window. Tokyo slides past in the rain" and Kurose's silence. A noodle-shop sign is legible through the glass; soften it in the grade.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. One of the scene's two close-ups. It holds "Ishida looks out of the window. Tokyo slides past in the rain" and Kurose's silence. A noodle-shop sign is legible through the glass; soften it in the grade.
 
 143. TWO-SHOT — 50mm, static, eye level — he drinks.
 Ishida lifts the steel cup and drinks with his eyes closed. Kurose, beside him, simply looks ahead with the flask in his hands.
-SCRIPT: "He lifts the cup, and drinks the tea."
+SCRIPT: "From inside the car, a man's clean hand holds out a cup of tea. The watch from the model."
 CAST: Detective Ishida, Kurose
 LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-143
 IMAGE: 141-he-drinks.jpg
-NOTE: Holds "Ishida nods, slowly. He understands." Nothing is explained.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Holds "Ishida nods, slowly. He understands." Nothing is explained.

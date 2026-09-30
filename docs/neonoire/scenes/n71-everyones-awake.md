@@ -22,3 +22,21 @@ TIME: 16
 ID: neonoire-shot-240
 IMAGE: 238-everyones-awake.jpg
 NOTE: Mara's death is staged as care: no blood on the floor, no gore — her side only darkens under Jack's hands. Kaneko folds the apron under her head; the radio repairman's flashlight and the father's lowered bat come from shot 238's corridor. The waking lights are the Hive's answer, and the last thing Mara sees. Retake 29 September 2026 — new look: small pools, haze shafts and sparse dim faded neon; the lantern rows gone.
+
+---
+
+## Coverage — the 30 September 2026 revision
+
+The revision splits Mara's bag on the passage floor; the drawings soaking in the stream are the fourth of the seven named close-ups.
+
+---
+
+313. INSERT — 50mm, static, low angle — The drawings in the water.
+Pages from a sketchbook soaking in the thin shining stream that runs along the floor of the passage: pencil counters, a rail viaduct, the back of a woman's head — the ink beginning to lift off the paper.
+SCRIPT: "Pages of drawings, soaking in the thin shining stream that runs along the floor."
+CAST: —
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-313
+IMAGE: 313-drawings-in-the-water.jpg
+NOTE: FOURTH OF THE SEVEN NAMED CLOSE-UPS, and the last look at Mara's work before Kaneko and the old woman kneel to gather it, page by page. The pencil hand matches the scene 14 wall and the dried stack of scene 84 — same stock, later. Placeholder slot.

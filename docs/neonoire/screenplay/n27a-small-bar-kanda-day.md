@@ -52,9 +52,9 @@ Vera looks along the counter, to the far end, where his eyes went the first time
 
 VERA
 (in Japanese)
-Where did you find the clip?
+Show me where.
 
-He doesn't answer. Then he lifts the flap of the counter and stands aside.
+Okada lifts the counter flap: the gap between the crates and the ice bin.
 
 She goes through. Crouches behind the far end, between the crates and the shelves, exactly where Mara crouched. She sees what Mara saw: the underside of the counter, the crate of empty bottles, the place where the stool went over, the dark screen of the television on the ceiling.
 

@@ -31,12 +31,10 @@ If she found this place, other people can.
 MARA
 I know.
 
-She opens her hand. The key. Its worn tag reads 114.
-
 MARA (CONT'D)
 Find what it opens. And then this ends. I don't want to hide any more. I want my sister.
 
-Jack takes the key.
+She takes the key from around her neck, on a shoelace, and puts it in his hand. Its worn tag reads 114.
 
 JACK
 Tomorrow night I'm moving you out of here. Somewhere safe, outside Tokyo. A police car and a house. Someone I trust.

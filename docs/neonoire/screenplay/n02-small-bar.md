@@ -12,68 +12,36 @@ INT. SMALL BAR, KANDA - CONTINUOUS #2#
 
 Six stools and a counter. Shelves of bottles glowing amber. On a high shelf, an old CRT television plays a late-night variety show, sound low. Rain drums on the roof.
 
-No one behind the counter. A door to the back stands half open; someone back there is moving crates.
+A man in a raincoat on the far stool, a notebook beside a beer gone flat: the JOURNALIST (40s). Nobody behind the counter. Crates clatter somewhere in the back.
 
-In the corner, a JOURNALIST (40s), an untouched beer in front of him, a notebook closed beside it. He checks his watch. Checks the door.
-
-The door BANGS open. Mara, soaked, too out of breath to speak.
-
-The journalist half rises. He looks at her -- soaked, foreign, alone -- and something like recognition crosses his face.
+Mara bursts in, the key in her fist.
 
 JOURNALIST
 Miss Voss?
 
-Mara can't answer. She is staring back at the door. Outside, headlights sweep the wet window.
+He knows her name. Before she can answer, the door opens behind her. Rain noise.
 
-Mara stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves.
-
-She opens her hand. The key. She closes it again.
-
-FROM THE FLOOR, we see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.
-
-The door opens again. Softly, this time.
-
-A man's voice from the doorway, gentle, as if entering a shop:
-
-MASKED MAN (O.S.)
+MASKED MAN
 (in Japanese; quietly; subtitled: "Excuse me.")
 Shitsurei shimasu.
 
-Two pairs of black shoes step inside. Wet. Silent.
+The same words. Mara is behind the counter before she knows she's moved.
 
-The journalist's shoes shift. He stands.
-
-JOURNALIST (O.S.)
+JOURNALIST
 (in Japanese)
 Where is he?
 
-No answer.
+Two shots. On the high shelf, the television audience laughs.
 
-Two suppressed SHOTS.
+Behind the counter, Mara folds herself into the gap between the crates and the ice bin. A hair clip slides out of her wet hair and skitters under the shelf. She doesn't breathe.
 
-The stool tips over. The journalist hits the floor on the far side of the counter. We see only his hand.
-
-On the TV, the studio audience LAUGHS.
-
-One pair of shoes crosses to the body. Pages rustle. The notebook, taken.
-
-In the back room, the crate-moving stops.
-
-A pair of shoes turns toward the half-open door. Waits. Nothing moves.
-
-MASKED MAN (O.S.)
-(in Japanese; into radio)
+MASKED MAN
+(in Japanese)
 Second position done.
 
-The shoes leave. The door swings shut.
+He takes one step toward the counter. A voice in his earpiece: one word. He turns and goes.
 
-Mara stays exactly where she is. She is shaking so hard the bottles in the crate beside her begin to CLINK. She presses her hand flat against them to make them stop.
-
-Her red bird hair clip slides loose and drops silently between the crates. She doesn't notice.
-
-The TV audience laughs again.
-
-HOLD on her face in the blue TV glow: a young woman who has just understood that this was not random.
+The door swings shut. The television laughs again.
 
 >CUT TO BLACK.
 

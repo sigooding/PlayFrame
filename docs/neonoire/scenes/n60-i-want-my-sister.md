@@ -15,7 +15,7 @@ The single shot (229) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 
 229. MEDIUM WIDE — 35mm, static, low level — i want my sister.
 Mara sits on the futon with her knees pulled up, face swollen from crying; behind her, a newly smudged sketch taped to the wall shows the counter from behind the curtain and a back on its third stool. Jack crouches in front of her; her open hand holds out the key, number 114: find what it opens, and then this ends.
-SCRIPT: "She opens her hand. The key. Its worn tag reads 114."
+SCRIPT: "She takes the key from around her neck, on a shoelace, and puts it in his hand. Its worn tag reads 114."
 CAST: Jack, Mara Voss
 LIGHT: Practical night
 TIME: 16

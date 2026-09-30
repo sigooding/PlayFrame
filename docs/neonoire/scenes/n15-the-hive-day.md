@@ -15,13 +15,13 @@ Both shots (186–187) are **16:9, 1920×1080, full-bleed**, numbered in boardin
 
 186. WIDE — 24mm, static, low angle — a gap in someone's teeth.
 A wide street of new glass towers. Between two of them stands the Hive, eleven storeys of bolted-on balconies under the railway's curve, with the rendering banner on the hoarding beside it. Jack stands small on the pavement, the sketchbook under his coat, looking up.
-SCRIPT: "Between two of them, like a gap in someone's teeth: the Hive."
+SCRIPT: "Behind it, low and dark and patched, the Hive."
 CAST: Jack
 LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-186
 IMAGE: 184-a-gap-in-someones-teeth.jpg
-NOTE: The scene master. The banner's KUROSE DEVELOPMENT and TOMORROW'S TOKYO are not lettered. The pavement reads damp rather than raining. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon eleven-storey Hive between the glass towers in the day murk, hoarding, banner and staging carried over; the banner stays unlettered as in the study.
+NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The scene master. The banner's KUROSE DEVELOPMENT and TOMORROW'S TOKYO are not lettered. The pavement reads damp rather than raining. Retake 29 September 2026 — wrong building and wrong look: rebuilt on the canon eleven-storey Hive between the glass towers in the day murk, hoarding, banner and staging carried over; the banner stays unlettered as in the study.
 
 187. MEDIUM — 50mm, static, low angle — then he goes in.
 From a low camera square to the flight: a steep, rusted outside stair climbs between balconies, laundry and air conditioners. Jack climbs it seen from behind, one hand on the rail.
