@@ -21,6 +21,54 @@
     "public/images/neonoire/s1/07-old-man.jpg": "ba7f4cf317bc71d98db76d725049ddefcc00a505d5d3dab442aff7c340be5cd3",
     "public/images/neonoire/s1/08-sedan-arrives.jpg": "2e4b35604c041fef3d8739d966bb8ccb66fb35282d2bcb28ee392114b6d3e821",
     "public/images/neonoire/s1/09-old-man-stops.jpg": "ed5bfc0b8d59497cfc5700da8fc5d764973f17b19567ad5f828f10e9a2d7d2e9",
-    "public/images/neonoire/s2/19-the-bar.jpg": "92a2bb9b93ff1bc5e1af261350e89345f9a5fad5967f777dca18d93bf14f9381"
-  }
+    "public/images/neonoire/s2/19-the-bar.jpg": "92a2bb9b93ff1bc5e1af261350e89345f9a5fad5967f777dca18d93bf14f9381",
+    "public/images/neonoire/s1/10-the-shot.jpg": "8dc2d7b23a2725c6d4e81acef8682570a38e085ecfe43526bf77ad8ed62cfbb3",
+    "public/images/neonoire/s1/11-mara-hands-over-mouth.jpg": "f056d5be83f5a6ccf87273f45a703e7b93df531cde20408e52dc968bc47d5ac7",
+    "public/images/neonoire/s1/12-masked-man-radio.jpg": "02640e5dc8ee2dc0f3214cfdcfd6720a4cba03aff95912c7476c54e0262a7d81",
+    "public/images/neonoire/s1/13-taillights-gone.jpg": "8e2bffc61837d6b2221b9e1314298591bde04f1d29edfe1b90237ef43c2a2a37",
+    "public/images/neonoire/s1/14-she-kneels.jpg": "4347afa3f48dec0665ad317a50a74a76a8b97369394b70d6f9af576f553c3c81",
+    "public/images/neonoire/s1/15-the-grip.jpg": "ffc74ff2acf648d19125b911b8433e3f2dae79bad606eefde582882327dba927",
+    "public/images/neonoire/s1/16-the-key.jpg": "60bd97cf3b7a7af11ae90af694317b1d03407739acefb5ff4247427325e946cc",
+    "public/images/neonoire/s1/17-she-runs.jpg": "3fffe614d99c629730c035f06036fda5176e5f768161eb525bfe183d0c474b33",
+    "public/images/neonoire/s2/20-the-journalist.jpg": "ff61cf1232fcdb5253f335638f0b49f3038320d6ebfc7cea5ecf4c977b8f2437"
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "shots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        19
+      ],
+      "successfulGenerations": 10,
+      "imageReferences": []
+    },
+    {
+      "batch": 2,
+      "shots": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        20
+      ],
+      "successfulGenerations": 9,
+      "imageReferences": [],
+      "blockedWithoutOutput": [
+        18
+      ],
+      "note": "Object-only shot18 reframe hit turn limit. Thin generated bars in 11/20 retained; no cropping."
+    }
+  ]
 }

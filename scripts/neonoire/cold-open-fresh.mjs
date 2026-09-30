@@ -1,7 +1,11 @@
 // Director-ordered clean restart, 30 September 2026. Never attach existing images.
 // This pass supersedes cold-open-look.mjs for scenes 1–2, including coverage 280–282.
 export const freshColdOpenShots = new Set([...Array.from({ length: 28 }, (_, i) => i + 1), 280, 281, 282]);
-export const freshColdOpenGenerated = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 19]);
+export const freshColdOpenBatches = [
+  [1, 2, 3, 4, 5, 6, 7, 8, 9, 19],
+  [10, 11, 12, 13, 14, 15, 16, 17, 20],
+];
+export const freshColdOpenGenerated = new Set(freshColdOpenBatches.flat());
 export const freshColdOpenReferences = Object.freeze([]);
 export const freshColdOpenRule = "FRESH COLD OPEN — 30 September 2026. Text-only generation from the screenplay and written character facts. NO image references: no existing frames, cast sheets, location sheets, style keys, crops or edit inputs. Do not use the old boards' compositions or continuity notes as visual instructions. Keep the screenplay, stable shot IDs and filenames unchanged. All images remain unapproved.";
 export const freshColdOpenStyle = "Create a new photorealistic restrained Japanese crime-drama still, 16:9 landscape full bleed, 1920×1080 target. Ordinary worn Tokyo, patient rain visible only where practical light crosses it, quiet charcoal shadows, modest white and amber pools, fine 35mm grain. No glamorous storm, neon spectacle, captions, borders or watermarks. Natural anatomy and plausible geometry. No graphic wounds or blood.";
@@ -26,7 +30,7 @@ export const freshColdOpenBeats = new Map([
   [15, "Ground-level insert of Sakai's hand closing Mara's fingers over one small key. Exactly two people's natural hands, beige raincoat sleeve and denim cuff."],
   [16, "One young woman's open palm: small silver coin-locker key, worn ivory tag legibly marked 114. No extra keys or fingers."],
   [17, "Mara runs AWAY from returning headlights toward distant bar. Brown bag strap catches on unlit barber pole and tears; bag drops into puddle, not carried away."],
-  [18, "One masked man searches Sakai's coat, torch finds dropped brown bag in puddle by pole. Sedan outside mouth, no Mara in frame. No gore."],
+  [18, "Object-only consequence insert: flashlight beam from offscreen finds abandoned brown bag in puddle beside the unlit barber pole; torn strap caught on bracket. Empty frame: no people, body, weapon or car. The surrounding screenplay retains the coat search; this image covers the purse discovery."],
   [19, "Low room-wide establishing: six stools and counter, journalist waiting at far end, beer and closed notebook, nobody behind counter; CRT variety show."],
   [20, "Journalist waits alone in bar corner, checks watch and entry. Keep charcoal blazer, pale blue shirt, glasses, beer and brown notebook."],
   [21, "Mara bursts through street door soaked and breathless; journalist half rises in recognition. No handbag; bird clip still pinned."],
@@ -51,7 +55,16 @@ export const freshColdOpenCaveats = new Map([
   [7, "Sakai turns fully toward Mara rather than flickering past; extra vending machine, opaque coat, Mara's footwear drifts. Needs correction."],
   [8, "Major staging failure: Sakai faces approaching men, invented hat/umbrella, taxi-like sedan and crowded bright cross street. Do NOT use as a master; needs fresh retake."],
   [9, "Sakai's shirt changes; background men are not clearly masked and sedan reads inside lane. Do NOT use as a master; needs fresh retake."],
+  [10, "Collapse and two lower-face masks read; Mara is too exposed in doorway. Sakai and men are closer than the distant-wide brief; headlight direction not firmly established."],
+  [11, "Both hands cover mouth; gaze goes screen-right rather than toward the visible alley opening. Clip side/scale drifts; thin generated black edge retained, not cropped."],
+  [12, "Radio, two men, concealed Mara and body read. Car is across mouth but headlights run sideways rather than down alley; coat opacity and set details drift."],
+  [13, "Car is outside mouth with red rear lights and Sakai remains visible. Mara stands exposed, footwear turns dark, bag changes shape; crossing is brighter than requested."],
+  [14, "Kneeling, black phone screen, intact bag and living Sakai read. Sakai is propped high on elbow rather than lying low; face and set details vary."],
+  [15, "Two natural hands and key transfer read, but fingers remain open rather than being folded closed; view reads waist-height. Tag shape differs from 16."],
+  [16, "114 is legible at full size and in prop crop; one key, one tag, five fingers. Palm reads right rather than requested left; not a locked prop master."],
+  [17, "Mara runs away with no bag on body; bag is caught at pole and touching water. Strap reads as a continuous hanging loop, not a clear tear; returning headlight cue is weak."],
   [19, "Journalist sits near camera rather than far corner; stool count is not fully provable. Needs staging review."],
+  [20, "Watch, beer, closed brown notebook and glance toward entry read. A backed chair replaces stool, counter has an added raised tier, CRT reads presenter panel rather than clearly variety; thin generated black bars retained."],
 ]);
 export function freshColdOpenPrompt(n) {
   if (!freshColdOpenShots.has(n)) throw new Error(`Not a cold-open shot: ${n}`);
@@ -60,8 +73,8 @@ export function freshColdOpenPrompt(n) {
 export function freshColdOpenNote(n) {
   const generated = freshColdOpenGenerated.has(n);
   return [freshColdOpenRule,
-    generated ? "FRESH GENERATED — batch 1. AI-generated text-only study; not approved coverage." : "FRESH PASS PENDING — existing image retained temporarily; it is NOT part of the fresh pass and must NOT be used as a reference.",
-    generated ? `REVIEW: ${freshColdOpenCaveats.get(n)}` : "Awaiting generation; tool limit stopped batch 1 after ten images.",
+    generated ? `FRESH GENERATED — batch ${freshColdOpenBatches.findIndex(batch => batch.includes(n)) + 1}. AI-generated text-only study; not approved coverage.` : "FRESH PASS PENDING — existing image retained temporarily; it is NOT part of the fresh pass and must NOT be used as a reference.",
+    generated ? `REVIEW: ${freshColdOpenCaveats.get(n)}` : (n === 18 ? "Batch 2 generation was blocked; no file produced. Object-only purse-discovery reframe was not generated because the turn limit had been reached. Awaiting next batch." : "Awaiting a later text-only batch; per-turn generation limit reached."),
     `SCREENPLAY BEAT: ${freshColdOpenBeats.get(n)}`,
     "Pass ledger: docs/neonoire/passes/cold-open-fresh-2026-09-30.md. Generate next briefs with node scripts/neonoire/pass-prompts.mjs --cold-open-fresh. Old board visual instructions are superseded for this pass."
   ].join("\n\n");

@@ -4,7 +4,8 @@
 > The director requests new images without influence from existing scenes. Use text-only
 > briefs in `scripts/neonoire/cold-open-fresh.mjs`, never old images, sheets or board layouts.
 > Stable shot numbers and screenplay beats below are retained as editorial history, not visual
-> references. Ten images generated (1–9, 19); 21 await generation, including 280–282.
+> references. Nineteen images generated (1–17, 19–20); 12 await generation: 18, 21–28, 280–282.
+> Batch 2 shot 18 was blocked and remains pending; use the object-only purse-discovery brief.
 > All remain Needs review. [Fresh-pass ledger](../passes/cold-open-fresh-2026-09-30.md).
 
 

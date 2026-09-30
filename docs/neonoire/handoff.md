@@ -2,11 +2,13 @@
 
 **Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
 
-## Latest — 30 September 2026: cold open, FRESH TEXT-ONLY RESTART (partial)
+## Latest — 30 September 2026: cold-open FRESH TEXT-ONLY RESTART, batch 2
 
-**Director explicitly rejects using current scene images as a guide. This supersedes every earlier cold-open master/reference instruction in this handoff.** Read [the new ledger](passes/cold-open-fresh-2026-09-30.md), not the historical retake recipes below. Shots **1–9 and 19** now have genuinely new text-only images; zero old images or sheets were viewed or attached. **21 shots remain** (10–18, 20–28, 280–282): the tool enforced a ten-generation turn limit. All 31 are **Needs review**; several new images also have named faults, especially 8/9's blocking and 4's phone text. Nothing is approved. Do not use 8 or 9 as a master.
+**Director rejects existing scene images as a guide. This supersedes all earlier cold-open reference instructions below.** After batch 1 the director said **“they're better next”** — continue forward, no retakes requested. Read [the fresh ledger](passes/cold-open-fresh-2026-09-30.md).
 
-Active brief/status source: `scripts/neonoire/cold-open-fresh.mjs`; next queue: `node scripts/neonoire/pass-prompts.mjs --cold-open-fresh`. The fresh-only review sheet is `public/images/neonoire/reviews/cold-open-fresh-2026-09-30.jpg`, also a separate mood board in the rebuilt bundle. The script, IDs, filenames and non-cold-open imagery are unchanged. Existing files for pending shots do not mean the fresh pass is complete. No further voices were made.
+**19/31 fresh:** batch 1 shots **1–9, 19**, batch 2 **10–17, 20**. Batch 2 used no old or new image references; nine successful outputs, shot 18 blocked, then the object-only reframe hit the ten-generation turn limit. **12 remain: 18, 21–28, 280–282.** Shot 18's old file remains pending; never count the failed generation as done. Key 114 reads clearly in 16. Named visual caveats remain; “better” is direction feedback, not full production approval. All 31 remain Needs review.
+
+Active source: `scripts/neonoire/cold-open-fresh.mjs`; queue: `node scripts/neonoire/pass-prompts.mjs --cold-open-fresh`. Latest review: `public/images/neonoire/reviews/cold-open-fresh-2026-09-30-batch-2.jpg` (nine new frames); original review is batch 1 history. Fresh mood board holds all nineteen. Script, IDs, paths and non-pass images unchanged. No voice work. Never resume the historical master-image recipes below for this pass.
 
 
 ## Story pass 2 — the boards and the retakes (29 September 2026, complete)

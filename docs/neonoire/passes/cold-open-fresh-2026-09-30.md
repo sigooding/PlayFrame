@@ -6,7 +6,31 @@ Redo the cold-open shot images fresh, without using the current scenes as a guid
 
 **This overrides every earlier cold-open image-reference instruction.** The screenplay is unchanged. Shot numbers, frame IDs and asset paths remain stable. The scope is scenes 1–2: shots **1–28 plus 280–282**, 31 images total.
 
-## What actually happened
+## Current state — batch 2 (same day)
+
+The director said **“they're better next”**: continue forward in this text-only direction, not a request to retake batch 1. Nine more images are installed: **10–17 and 20**. Total **19/31 fresh**, with **12 remaining: 18, 21–28, 280–282**. All remain draft review, not production approval.
+
+[Batch 2 review sheet](../../../public/images/neonoire/reviews/cold-open-fresh-2026-09-30-batch-2.jpg) shows only these nine new files. The original ten-frame review sheet below is retained as **batch 1 history**, not the current total. The app's fresh-only mood board now includes all nineteen.
+
+All ten batch-2 generation attempts used **`images: []`**. Nine succeeded. The initial shot-18 body-search/flashlight request was blocked by moderation and produced no file. A non-violent **object-only purse-discovery** request was then attempted, but the tool returned its ten-generation turn limit without creating an image. Shot 18 is **still the old image, explicitly pending**, not silently substituted or marked complete. Its next brief is the empty-frame prop insert; the screenplay's body-search action is unchanged.
+
+No prior scene, sheet or even batch-1 image was opened as a generation reference this turn. Only new batch-2 outputs were viewed, after generation. All nine were inspected individually at full size; tag 114 in shot 16 was also cropped and read. No generated pixels were patched or cropped for installation. Native 1376×768 output was full-frame resized to 1920×1080; thin generated black edges in 11 and 20 are retained and logged, not falsely described as full-bleed passes.
+
+| Shot | Batch 2 review / caveats |
+| --- | --- |
+| 10 | Collapse and two lower-face masks read. Mara is too exposed in recess; figures closer than distant-wide brief, headlight direction unproven. |
+| 11 | Both hands over mouth read. Gaze goes screen-right rather than toward visible alley opening; clip side/scale drifts. Thin baked-in black edge. |
+| 12 | Radio, two men, concealed Mara and body read. Sedan across mouth but headlights sideways, not down alley; coat opacity/set details vary. |
+| 13 | Sedan is outside on cross street with rear red lights, body remains. Mara exposed, dark shoes and changed bag; cross street too bright. |
+| 14 | Kneeling, dark phone screen, attached bag, living Sakai read. Sakai props himself rather high on elbow; faces/set details drift. |
+| 15 | Two hands and key transfer read; not the closing-fingers/wrist grip yet. Camera reads waist-high and tag geometry differs from 16. |
+| 16 | **114 clearly legible**, one key/tag, five fingers. Palm reads right rather than specified left; not a locked prop master. |
+| 17 | Runs away from camera, no bag on body, bag caught at pole touching water. Strap reads continuous hanging loop, not visible tear; returning headlight cue weak. |
+| 20 | Watch, glance, beer and closed brown notebook read. Backed chair rather than stool, raised counter tier, CRT presenter panel rather than clearly variety; thin black bars. |
+
+The first ten images remain untouched. New SHA-256 values are appended to the asset provenance file, with batch membership and the blocked shot explicitly recorded. `--cold-open-fresh` lists twelve pending shots and starts at 18. No reference policy changed.
+
+## What actually happened — batch 1 history
 
 - Read the screenplay and written story/character facts. Did **not** open any pre-existing scene, cast, prop or location image.
 - All ten successful generation calls were **text-to-image with `images: []`**. No old pixels, crops, source frames, cast sheets, style keys, or location sheets were supplied. No old frames were edited.
@@ -39,7 +63,7 @@ The fresh set does **not** yet cut as an approved continuous scene. Do not fix t
 ## Next batch
 
 1. Read this ledger and the script, not historical image pass notes.
-2. Run `node scripts/neonoire/pass-prompts.mjs --cold-open-fresh` for the **21 ungenerated** self-contained text briefs. This queue deliberately ignores whether a legacy JPEG already exists.
+2. Run `node scripts/neonoire/pass-prompts.mjs --cold-open-fresh` for the **12 currently ungenerated** self-contained text briefs. This queue deliberately ignores whether a legacy JPEG already exists.
 3. `scripts/neonoire/cold-open-fresh.mjs` is the active rule, beat, generated-set and caveat source. It supplies **no image references**, including no freshly generated images as attachments in this text-only approach. Its briefs are continuation instructions; not verbatim transcripts of the first ten tool calls.
 4. The same module also has briefs for correcting generated shots. In particular, 4/5/7/8/9 must not be mistaken for approved assets merely because their numbers are in the generated set.
 5. Generate, inspect individually at full size, crop-read prop text if needed, record faults honestly. Update the generated set only after a real output is installed.
@@ -50,8 +74,8 @@ The fresh set does **not** yet cut as an approved continuous scene. Do not fix t
 - Builder replaces old reference/provenance notes for **all 31** cold-open frames; it does not concatenate the old image guidance into fresh prompts.
 - Dedicated fresh-only mood board separates new work from pending legacy images. The full-sequence mood board says it is a mixed pass.
 - Historical board documents and `cold-open-look.mjs` carry prominent supersession notices.
-- Verification checks the 31-shot scope, ten generated / 21 pending split, explicit no-reference instructions, image dimensions, named caveats, unapproved status, and key screenplay beats.
-- The screenplay and all images outside shots 1–9 and 19 are unchanged.
+- Verification checks the 31-shot scope, nineteen generated / twelve pending split, explicit no-reference instructions, image dimensions, named caveats, unapproved status, and key screenplay beats.
+- The screenplay is unchanged. Batch 1 replaced 1–9 and 19; batch 2 replaced 10–17 and 20. All other images, including failed shot 18, are unchanged.
 
 Validation completed: `npm run verify:neonoire`, `npm run typecheck`,
 `node scripts/neonoire/build-project.mjs --check`, and `git diff --check` all pass.

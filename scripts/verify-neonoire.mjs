@@ -146,13 +146,16 @@ function jpegDimensions(file) {
   }
   throw new Error(`No JPEG dimensions in ${file}`);
 }
-// Director-ordered fresh pass: 31 slots, ten text-only generations, no inherited references.
+// Director-ordered fresh pass: 31 slots, nineteen text-only generations, no inherited references.
 const { freshColdOpenShots, freshColdOpenGenerated, freshColdOpenReferences, freshColdOpenPrompt, freshColdOpenCaveats } = await import("./neonoire/cold-open-fresh.mjs");
 const coldOpen = project.frames.filter(frame => ["neonoire-s1", "neonoire-s2"].includes(frame.sceneId));
 assert.equal(coldOpen.length, 31);
 assert.deepEqual(new Set(coldOpen.map(shotNo)), freshColdOpenShots);
 assert.deepEqual(freshColdOpenReferences, []);
-assert.equal(freshColdOpenGenerated.size, 10);
+assert.equal(freshColdOpenGenerated.size, 19);
+assert(!freshColdOpenGenerated.has(18), "Blocked generation must not close shot 18");
+assert(project.frames.find(f => shotNo(f) === 20).notes.includes("batch 2"));
+assert(project.frames.find(f => shotNo(f) === 19).notes.includes("batch 1"));
 const freshProvenance = JSON.parse(read("docs/neonoire/passes/cold-open-fresh-2026-09-30-assets.json"));
 assert.deepEqual(freshProvenance.imageReferences, []);
 assert.equal(Object.keys(freshProvenance.sha256).length, freshColdOpenGenerated.size);
@@ -160,7 +163,7 @@ for (const [file, hash] of Object.entries(freshProvenance.sha256)) {
   assert.equal(createHash("sha256").update(readFileSync(join(root, file))).digest("hex"), hash, `Fresh provenance hash: ${file}`);
 }
 const freshQueue = execFileSync(process.execPath, ["scripts/neonoire/pass-prompts.mjs", "--cold-open-fresh"], { cwd: root, encoding: "utf8" });
-assert.equal((freshQueue.match(/^### Shot /gm) || []).length, 21);
+assert.equal((freshQueue.match(/^### Shot /gm) || []).length, 12);
 assert(!freshQueue.includes("sheets/") && !freshQueue.includes("keys/"));
 for (const n of freshColdOpenShots) {
   assert.equal(freshQueue.includes(`### Shot ${n} —`), !freshColdOpenGenerated.has(n));
@@ -185,8 +188,8 @@ assert(freshColdOpenPrompt(16).includes("114"));
 assert(freshColdOpenPrompt(280).includes("1:00"));
 assert(freshColdOpenPrompt(281).includes("bar sign"));
 assert(freshColdOpenPrompt(282).includes("non-graphic"));
-assert.equal(project.moodboards.find(b => b.id === "neonoire-cold-open-fresh").items.length, 10);
-pass("fresh cold open: ten text-only studies, 21 pending, all unapproved, no legacy reference instructions");
+assert.equal(project.moodboards.find(b => b.id === "neonoire-cold-open-fresh").items.length, 19);
+pass("fresh cold open: nineteen text-only studies, 12 pending, all unapproved, no legacy reference instructions");
 
 // Scenes 72–75: session one (nine studies plus Jack's sheet, ten calls) and session two (the six
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
