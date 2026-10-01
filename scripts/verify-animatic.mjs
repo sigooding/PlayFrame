@@ -29,6 +29,9 @@ pass("18 selected main shots are Ready without review warnings; seven fresh repl
 const options = parseAnimaticOptions({}, project);
 assert.equal(options.timing, "playback"); assert.equal(options.audio, true);
 assert.equal(options.resolution, "1080p"); assert.equal(options.music, false); assert.equal(options.subtitles, false);
+assert.equal(options.camera, false); assert.equal(options.credits, false);
+assert.equal(parseAnimaticOptions({ music: true, credits: true, camera: true }, project).credits, true);
+assert.throws(() => parseAnimaticOptions({ credits: true }, project), /score/);
 const one = parseAnimaticOptions({ sceneId: "neonoire-s7", resolution: "720p" }, project);
 assert.equal(animaticFrames(project, one).length, 6);
 const range = parseAnimaticOptions({ fromSceneId: "neonoire-s73", toSceneId: "neonoire-s75" }, project);
