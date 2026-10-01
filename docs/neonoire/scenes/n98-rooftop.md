@@ -15,7 +15,7 @@ All three shots (155–157) are **16:9, 1920×1080, full-bleed**. The scene mast
 
 155. WIDE — 24mm, static, eye level — the rain has stopped.
 A small flat roof under a pale, washed sky: laundry poles, a water tank, one potted plant, the concrete drying. Just below the railing, a silver train passes on the viaduct at eye level. Jack stands at the railing with his back to us. Behind him, Vera steps out of the stairwell door in a plain pale coat.
-SCRIPT: "Days later. The rain has stopped for the first time in the film. The sky is pale and washed and enormous."
+SCRIPT: "The rain has stopped for the first time in the film. The sky is pale and washed and enormous."
 CAST: Jack, Vera Voss
 LIGHT: Overcast soft
 TIME: 10
@@ -54,3 +54,7 @@ TIME: 6
 ID: neonoire-shot-241
 IMAGE: 239-his-own-face.jpg
 NOTE: Coverage, shot 241. Second retake from the first coverage frame and sheets/jack-face.jpg. The face is now a small reflection in the upper corner of the glass, about a passenger's head, and the seated passengers are the subject. It is no longer a double exposure filling the pane. Vera is already gone.
+
+## Full-page preservation check — 1 October 2026
+
+The complete pre-revision 98 is preserved, including its drawings conversation, rain stopping, clip, broken laugh, rain/lighter dialogue, opening-at-six invitation and trains. Only the three statement lines specified by the worksheet and the relocated SUPER: FIVE DAYS LATER are additions. No rooftop cut.

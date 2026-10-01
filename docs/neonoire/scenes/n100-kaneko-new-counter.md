@@ -75,4 +75,4 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-320
 IMAGE: 320-the-news-nobody-watches.jpg
-NOTE: The chyron stays unread; the faces are legible, the verdict is not. Vera walks past this frame to her stool — the counter's last wide holds both. Placeholder slot.
+NOTE: The chyron stays unread; the faces are legible, the verdict is not. Vera walks past this frame to her stool — the counter's last wide holds both. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Director-approved main image on 1 October 2026; no further review requested.

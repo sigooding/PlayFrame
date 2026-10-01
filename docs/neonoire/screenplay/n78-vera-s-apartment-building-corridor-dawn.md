@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 78 — EXT. VERA'S APARTMENT BUILDING, CORRIDOR
 EXT. VERA'S APARTMENT BUILDING, CORRIDOR - DAWN
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss.
-Grammar: Grey dawn on the third-floor walkway, rain dripping from the railing. 35mm wide, 50mm doormat, 85mm name. Vera barefoot, still in the red dress, 
+Grammar: Grey dawn on the third-floor walkway, rain dripping from the railing. 35mm wide, 50mm doormat, 85mm name. Vera barefoot, still in the red dress,
 unslept.
 
 EXT. VERA'S APARTMENT BUILDING, CORRIDOR - DAWN #78#

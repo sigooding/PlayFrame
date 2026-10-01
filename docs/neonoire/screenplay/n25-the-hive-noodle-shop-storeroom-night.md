@@ -3,12 +3,30 @@ SCREENPLAY — SCENE 25 — INT. THE HIVE, NOODLE SHOP STOREROOM
 
 INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
-Cast: Jack, Mara Voss.
+Cast: Jack, Mara Voss, Kaneko.
 Grammar: 35mm across three feet of dark.
 
 INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #25#
 
-The bulb. The flour sacks. Mara sits cross-legged on the futon, a bowl of rice going cold in her lap. Jack sits against the opposite wall. They talk quietly, as if the building is listening. It is.
+The bulb. The flour sacks. Mara sits cross-legged on the futon. Jack sits against the opposite wall.
+
+The curtain moves. Kaneko brings in a bowl of rice, steam rising into the bulb light.
+
+KANEKO
+(in Japanese)
+Eat.
+
+MARA
+(in halting Japanese)
+Thank you. Has anyone... come? Asking?
+
+KANEKO
+(in Japanese)
+Nobody comes here who isn't lost.
+
+She puts the bowl in Mara's hands. The curtain falls shut behind her.
+
+The rice goes cold in Mara's lap. They talk quietly, as if the building is listening. It is.
 
 MARA
 Mr. Sakai said "twenty years." Before they shot him. Like he'd been expecting them for twenty years.
@@ -17,7 +35,7 @@ JACK
 He probably had.
 
 MARA
-He knew me. He saw me in the doorway and he walked away from me, so they wouldn't look. And at the end he said, in English -- "Your father. It was not what they say."
+He knew me. He saw me in the doorway and stopped. And at the end he pressed the key into my hand. "Don't let them have it."
 
 Jack looks down at his hands.
 

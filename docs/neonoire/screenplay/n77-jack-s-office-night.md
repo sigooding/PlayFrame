@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 77 — INT. JACK'S OFFICE
 INT. JACK'S OFFICE - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Jack.
-Grammar: One room, one lamp, CRT static. Static, level cameras: 35mm room, 50mm desk insert, 85mm pen. Jack still soaked, hands unwashed. The envelope gets no 
+Grammar: One room, one lamp, CRT static. Static, level cameras: 35mm room, 50mm desk insert, 85mm pen. Jack still soaked, hands unwashed. The envelope gets no
 name.
 
 INT. JACK'S OFFICE - NIGHT #77#

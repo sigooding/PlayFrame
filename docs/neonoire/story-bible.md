@@ -10,6 +10,8 @@ PlayFrame against what was decided, and why.
 - Later changes are listed in Part 9. Anything in PlayFrame that differs from Draft 1 and is not in
   Part 9 was changed in PlayFrame, not in this conversation.
 
+**Latest image/order delivery — 1 October 2026:** all **299 active shot images** across **102 scenes** are installed at 1920×1080; no blank placeholders remain. **Superseded by the director’s same-day main-shot selection:** the final nine are now Ready/main images, with no further review requested. **16 older rewrite retakes remain Needs review.** The project and all viewers/exports now run in screenplay scene/beat order while retaining production shot numbers, inserted scene labels, IDs and asset paths. [Final pass and caveats](passes/remaining-boards-final-2026-10-01.md). Historical missing queues and first-pass master-reference instructions below are superseded by this delivery and the revised sheets-only rule.
+
 ---
 
 ## Part 1 — What the film is
@@ -372,6 +374,18 @@ turn.
 8. **News report on Vera's television (29 September, director-requested):** scene 4 now carries a short TV news item before the weather line: police in Kanda are investigating a double shooting in a small bar in the early hours of Sunday, two men killed, "a dispute between criminal groups", no arrests. It sets up Vera's "It was on the news" in scene 6 and matches Ishida's line. Read by the Journalist voice with the TV filter (`fx: tv`); the weather announcer uses the same set voice.
 
 
+11. **Director continuity correction, 1 October 2026.** At the director's request ("fix it in script if need be"):
+   - **Scene 7:** adds "The two drawers above it stay closed" to the bottom-drawer action. The insert now explicitly locates the purse and its coiled torn strap **together inside one sealed clear evidence bag inside the drawer**. No dialogue changed.
+   - **Scene 73 (the run before 75's empty returns):** after the existing vending-machine sentence adds "She keeps going; the machine falls behind her." The crossing is "Just beyond it". A single onward journey, never returning to the machine. The right-bare/left-shoe image lock, grief scene, scene-75 no-people rule and late score cue remain unchanged.
+   - Seven replacement images: 7/64, 65, 67; 73/69, 70, 71; 75/80. The already-correct one-shoe exit and matching shoe pillow remain selected. **All selected images, plus the preceding nine deliveries, are director-approved main shots at Ready, with no further review requested.** Historical image evaluations are archival, not an active review queue.
+   - The animatic exporter now matches saved scene/shot order and genuinely static frames; it no longer infers alternating pans from "no tracking" prose. [Delivery and export details](passes/director-continuity-animatic-2026-10-01.md).
+
+---
+
+12. **Accidental-cut restoration, 1 October 2026 (director-requested).** The complete pre-revision pages, not worksheet ellipses, are authoritative for retained material. Old 99's full demolition is folded into the opening of **99A**, weeks later, with the standing counter and six old stools; a dissolve leads to the unchanged revised plaza months later. 13/24/97/99 remain absent as numbered scenes. 15 already carries the Hive description; 25 regains Kaneko bringing rice and the Eat/Has anyone/Nobody lost exchange; 17 looks at the empty third stool; 40 introduces the masked leader without unmasking him; 51 gains the circuit-board city but stays wordless; 83 restores Kurose's introduction; 94 restores only It's only tea. The title card moves to 98. The whole rooftop remains, and the trains/ladder escape are intact (85/87/91/92 unchanged; 86/88/90 add-only). Compatible sign/bulb/clip details return to the new 100 without reviving its old ending. Mara's stale 25 quote now matches rewritten 1. [Complete audit, source identities and exact preservation tests](passes/revision-restoration-2026-10-01.md).
+
+---
+
 ## Part 10 — Known inconsistencies to resolve
 
 1. **RESOLVED (Part 9 item 4) — Jack's nationality vs his backstory.** The script's backstory has Jack as a young
@@ -426,3 +440,15 @@ mouth → script pass (Part 9 item 4) → three new Act Two scenes (25A, 27A, 63
    - **Score:** the script's own cue stands. There is no score before the tail of scene 74 ("Only now does the SCORE enter"). The author's song therefore enters late in 74 and plays through the 75 series, not under the lounge and the run.
 
 10. **New title (30 September, director-requested): *Nobody's Witness*.** The script's title page now reads "Nobody's Witness" and its title card is NOBODY'S WITNESS. The workspace title, the production header on every screenplay page and the animatic's credit card use the same title. **NEONOIRE stays as the working name of the repository, its folders, scripts and voice files** (so nothing on disk is renamed); the 30 September revision note's "the title of record is NEONOIRE" is superseded by this item. The song's end-credits card reads the new title (`docs/neonoire/music/cues.json`).
+
+
+## 1 October 2026 — final missing boards and running order
+
+- Delivered **298/299** (53A), **300/302** (82A), **310/311** (51), **313** (71), **314** (75), **320** (100). Ten fresh generations: original 311 rejected for duplicating the Hive; retake installed. No location/prop master or old image attached. 302/320 lose only their new-generated black edging before normalisation; no old keyframe touched.
+- Shared look: Tokyo noir, subdued charcoal/cool-dawn/amber practicals, film grain, ordinary people and rooms, no invented graphics. Vera at the desk/newsroom remains the original charcoal coat/cream knit look, not the later navy/red-clip switch. Cast continuity was checked against sheets. [Full-size reviews](passes/remaining-boards-final-2026-10-01.md) explicitly flag model proportions, approximate crossing architecture, a thin copied folder and a switched aisle side as draft limitations.
+- **03, 06, 17, 18, 27, 113, 131, 132, 141, 142, 143, 160, 186, 193, 194, 228** still need revised retakes. Installed does not mean approved.
+- The screenplay, dialogue, recorded voices and authorial lines are untouched.
+- Builder order is screenplay scene rank, then each quote within its own scene, then production number for ties. The app retains within-scene edits. Cross-scene drag/menu moves cannot scramble the screenplay sequence. Grid/list, player, shared view, shot list, prompt batch, CSV and print use this one order; fixed scene labels survive import/backup.
+- Earlier saved default boarding order migrates when its ID vector is exactly the old default. Untouched marked blanks take delivered images; edits, intentional blanks, custom images, deleted/added cards and manual shot order remain. An older script/scene structure is not overwritten; import the current bundle as a separate copy when structural updating is wanted. New/duplicated shots get unique production numbers on numbered boards.
+- Ending order **320 → 160 → 265 → 260 → 161** leaves the held final frame last, not an appended montage; scene 20 coverage **193 → 309 → 194 → 284** is interleaved at the actual beat.
+- Regression: `verify:shot-order`, `verify:shot-order:browser` (real Chromium, production server, desktop/mobile), `verify:neonoire`, `verify:features:live`, `verify:rapture`, `typecheck`, assets and build all pass. Added notes on still-waiting cards are checksum-protected during image delivery.

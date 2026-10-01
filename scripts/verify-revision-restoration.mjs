@@ -1,0 +1,81 @@
+// Full-page preservation, not just clipped worksheet summaries.
+import assert from "node:assert/strict";
+import { readFileSync, mkdirSync } from "node:fs";
+import { createRequire } from "node:module";
+import { build } from "esbuild";
+
+const read = path => readFileSync(path, "utf8");
+const split = text => {
+  const marks = [...text.matchAll(/^.*#(\d+[A-Z]?)#\s*$/gm)];
+  return Object.fromEntries(marks.map((mark, i) => [mark[1], text.slice(mark.index, marks[i + 1]?.index ?? text.length)]));
+};
+const normal = text => text.replace(/\s+/g, " ").trim();
+const current = split(read("Neonoire (3).fountain"));
+const before = split(read("docs/neonoire/baseline/Neonoire_PreRevision_2026-09-29.fountain"));
+const shipped = read("docs/neonoire/baseline/Neonoire_PreRestoration_2026-10-01.fountain");
+const project = JSON.parse(read("public/projects/neonoire-opening.json"));
+const pass = message => console.log(`  PASS  ${message}`);
+
+assert.equal(Object.keys(current).length, 102);
+for (const cut of ["13", "24", "97", "99"]) assert.equal(current[cut], undefined);
+for (const phrase of ["Weeks later.", "The Hive is coming down.", "Rooms stand exposed to the sky", "Its six old stools in a row.", "DISSOLVE TO:", "Months later.", "Nothing marks where anything was."]) assert(current["99A"].includes(phrase), phrase);
+assert(current["99A"].indexOf("The Hive is coming down") < current["99A"].indexOf("DISSOLVE TO:"));
+assert(current["99A"].indexOf("DISSOLVE TO:") < current["99A"].indexOf("Months later."));
+assert.deepEqual(project.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
+assert.equal(project.frames.find(frame => frame.id === "neonoire-shot-305").transition, "Dissolve");
+pass("one 99A contains demolition/old stools before a dissolve to the revised plaza; both original demolition cards are on screen again");
+
+assert(current["15"].includes("dense, self-built block") && current["15"].includes("forgotten it is there"));
+for (const phrase of ["Eat.", "Has anyone... come? Asking?", "Nobody comes here who isn't lost.", "The rice goes cold in Mara's lap."]) assert(current["25"].includes(phrase));
+assert(current["25"].includes("Don't let them have it.") && !current["25"].includes("Your father. It was not what they say."));
+assert(current["17"].includes("She looks at the empty third stool beside him."));
+assert(!current["17"].includes("hoarding across the street"));
+assert(current["40"].includes("MASKED LEADER (40s)") && current["40"].includes("His face stays behind the mask"));
+assert(current["51"].includes("Tokyo spread out below in the rain like a circuit board"));
+assert(!/^ISHIDA|^KUROSE$/m.test(current["51"]), "51 remains wordless");
+assert(current["83"].includes("KUROSE (70s)") && current["83"].includes("never had to hurry"));
+assert(current["94"].includes("It's only tea.") && !current["94"].includes("For twenty years."));
+assert(current["100"].includes("Six new stools, the same height as the old ones.") && current["100"].includes("old hand-painted sign") && current["100"].includes("red bird clip"));
+pass("lost introductions/bonding and only-tea restored without undoing deliberate wordless or rewritten-scene choices");
+
+const statement = "VERA\nIshida left a statement. He acted alone.\n\nJACK\nIs that what it says?\n\nVERA\nThat's what the police say it says.\n\n";
+const stripped98 = current["98"].replace('SUPER: "FIVE DAYS LATER"\n\n', "").replace(statement, "");
+assert.equal(stripped98, before["98"], "Every other byte of the full rooftop scene survives");
+assert(current["98"].includes('SUPER: "FIVE DAYS LATER"'));
+for (const number of ["85", "87", "91", "92"]) assert.equal(current[number], before[number], `${number} must be unchanged`);
+assert(current["91"].includes("A train. It arrives") && current["91"].includes("rung by rung"));
+assert(!/train/i.test(before["89"]), "No lost stairwell train to invent or move");
+for (const [number, inserted] of [
+  ["86", "VERA\n(in Japanese)\nI know them.\n\nJack looks at her.\n\n"],
+  ["88", "In the black, Vera's hand finds the wall, low, where a child's hand would reach. She starts to move. Jack follows the sound of her.\n\n"],
+  ["90", "Vera leads them to a door with a sumo match murmuring behind it. It opens before she can knock: the OLD WOMAN from 55.\n\n"],
+]) assert.equal(current[number].replace(inserted, ""), before[number], `${number} is revised by addition, not cuts`);
+pass("98's whole rooftop survives plus exactly the statement/card; 85/87/91/92 unchanged, 86/88/90 add-only, train intact in 91");
+
+const cache = "node_modules/.cache/verify-revision-restoration";
+mkdirSync(cache, { recursive: true });
+await build({ stdin: { contents: 'export * from "./src/lib/bundle-refresh";', resolveDir: process.cwd() }, outfile: `${cache}/lib.cjs`, bundle: true, platform: "node", format: "cjs", logLevel: "warning" });
+const { bundledFrameUpdates } = createRequire(import.meta.url)(`${process.cwd()}/${cache}/lib.cjs`);
+const old = structuredClone(project);
+old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
+old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
+const patch = bundledFrameUpdates(old, project);
+assert.equal(patch.script, project.script);
+assert.equal(patch.frames.length, 299);
+assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
+const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
+const protectedPatch = bundledFrameUpdates(edited, project);
+assert.equal(protectedPatch?.script, undefined);
+assert(!protectedPatch?.frames?.some(frame => frame.shotNumber === 158));
+const deleted = structuredClone(old); deleted.frames = deleted.frames.filter(frame => frame.id !== "neonoire-shot-01");
+assert(!bundledFrameUpdates(deleted, project)?.frames?.some(frame => frame.shotNumber === 158));
+pass("known complete saved template receives the restoration; custom scripts and deliberate structural edits/deletions are not overwritten");
+
+const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));
+for (const id of ["s13-kaneko-gruffly-eat", "s13-mara-hesitantly-thank-you-has-anyone-come", "s13-kaneko-flatly-nobody-comes-here-who-isn"]) assert.equal(voice.lines.find(line => line.id === id)?.frameId, "neonoire-shot-202");
+assert(!voice.lines.some(line => line.id === "s25-mara-he-knew-me-he-saw-me"));
+const clips = voice.lines.filter(line => line.frameId === "neonoire-shot-202").sort((a, b) => a.offset - b.offset);
+assert(clips.every((line, index) => !index || line.offset >= clips[index - 1].offset + clips[index - 1].duration));
+assert(normal(current["25"]).includes(normal(clips[0].text)));
+pass("three original voice takes recovered/re-pinned, stale father recollection archived, restored master audio sequenced without overlaps");
+console.log("Full-page revision-restoration checks passed.");

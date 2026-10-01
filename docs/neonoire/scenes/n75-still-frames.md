@@ -76,4 +76,8 @@ LIGHT: Blue hour
 TIME: 12
 ID: neonoire-shot-314
 IMAGE: 314-the-empty-crossing.jpg
-NOTE: THE RULE BREAK, named on the page: scene 75 is the only time in the film the city holds no other lives, and the score enters exactly as this melody ends. Same crossing as scene 27, wet like everything before 98. Placeholder slot — the last pillow shot to be generated, and the only one with sound.
+NOTE: THE RULE BREAK, named on the page: scene 75 is the only time in the film the city holds no other lives, and the score enters exactly as this melody ends. Same crossing as scene 27, wet like everything before 98.  — the last pillow shot to be generated, and the only one with sound. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Full-size review and honest caveats: docs/neonoire/passes/remaining-boards-final-2026-10-01.md; scripts/neonoire/remaining-boards-final.mjs (shot 314). Selected as the main image by the director on 1 October 2026; status Ready, no further review requested.
+
+## Director correction — 1 October 2026
+
+The machine still (stable asset 80) is freshly replaced: the machine is left, the empty route extends right toward the crossing, and nobody returns through it. Retain the matched single-shoe still (77). The running action is scene 73, preceding this scene's empty returns; do not put a running Vera in scene 75. The empty crossing (314) from the preceding delivery is now a director-approved main image.

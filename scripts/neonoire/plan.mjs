@@ -5,7 +5,7 @@
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
 // docs/neonoire/scenes/ is read. The revised final screenplay carries 102 scenes — 96 numbered (13, 24, 97 and 99 were
 // cut on 30 September 2026 and their numbers stay retired; scene numbers never move) and six
-// inserted — and every scene arrives in the workspace verbatim, whether or not a board has
+// inserted — and demolition boards 158/159 were restored inside 99A on 1 October 2026; every scene arrives in the workspace verbatim, whether or not a board has
 // reached it. Dialogue and action are always quoted from the fountain, never retyped.
 //
 //   npm run build:neonoire     rebuild public/projects/neonoire-opening.json
@@ -179,7 +179,7 @@ export const SCENES = [
     page: "n73-tokyo-streets-night.md", board: "n73-tokyo-streets.md",
     cast: ["Vera Voss"],
     grammar: "Tokyo Story in colour: low, level, static 50mm. Rain undoes makeup; right shoe lost, left shoe stays. No tracking or score.",
-    description: "Vera leaves the hotel and runs badly through cold rain, no coat or umbrella, in a wine-red silk calf-length dress. Her hair plasters to her face and her carefully applied mascara begins to run. An ivory vending machine lights the street without caring. At the red crossing she loses her RIGHT red court shoe and continues with the LEFT shoe on. BOARDED — 4 shots (71–74); all four regenerated in the Tokyo Story colour revision.",
+    description: "Vera leaves the hotel and runs badly through cold rain, no coat or umbrella, in a wine-red silk calf-length dress. Her hair plasters to her face and her carefully applied mascara begins to run. An ivory vending machine lights the street without caring. At the red crossing she loses her RIGHT red court shoe and continues with the LEFT shoe on. BOARDED — 4 shots (71–74); main shots now follow a continuous left-to-right route: approaching, then unmistakably past the machine, then onward to the crossing.",
     lightingNotes: "Warm hotel doorway falls away; cold-white ivory vending machine, faint distant sodium amber and a small red crossing signal. Fine steady rain, black asphalt, muted olive shutters. No moonlight, sky fill, glossy neon or rain glamour.",
   },
   {
@@ -199,7 +199,7 @@ export const SCENES = [
     page: "n75-ext-various-night-series-of-shots.md", board: "n75-still-frames.md",
     cast: [],
     grammar: "Six static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. The sixth is the empty crossing from 27 and 62 — the melody runs all the way to the end of the frame, and as it ends the score enters for the first time in the film. Then black.",
-    description: "Six still frames, no people — the only sequence in the film from which every other life is removed: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static; and, added on 30 September 2026, the pedestrian crossing from 27 and 62, empty, the signal turning green for no one, the old melody playing all the way to the end. BOARDED — 6 shots (77–81, and 314, the empty crossing — the frame after which, per the 30 September 2026 revision, the score enters); the five pillow shots are generated, the crossing holds its placeholder slot. No black-and-white treatment and no early demolition.",
+    description: "Six still frames, no people — the only sequence in the film from which every other life is removed: Vera's single red shoe in its puddle; the same hotel lounge empty, chairs up, the pale-blue umbrella by the stool; the intact closed Hive; the same vending machine waiting for nobody; a television showing static; and, added on 30 September 2026, the pedestrian crossing from 27 and 62, empty, the signal turning green for no one, the old melody playing all the way to the end. BOARDED — 6 shots (77–81, and 314, the empty crossing — the frame after which, per the 30 September 2026 revision, the score enters); the five pillow shots are generated, the crossing and selected machine/shoe returns are director-approved main shots as of 1 October 2026. No runner appears in the empty returns. No black-and-white treatment and no early demolition.",
     lightingNotes: "Each still keeps its own ordinary practical: machine-white puddle light, the lounge's one amber lamp, a dim old sign, the grey CRT. Muted natural colour, no spotlit product look; no person or reflected silhouette.",
   },
   {
@@ -389,8 +389,9 @@ export const SCENES = [
     page: "n94-police-station-black-sedan-continuous.md", board: "n94-black-sedan.md",
     cast: ["Kurose", "Detective Ishida"],
     grammar: "24mm for the steps and the rain; 50mm at the open door; 85mm on the cup and the watch. No dialogue, no score, no explanation of the choice; the lit window is the last word the scene gets.",
-    description: "Continuous, rewritten wordless on 30 September 2026. At the foot of the steps a black sedan waits at the kerb, engine running, wipers going. The rear door opens from inside: warm amber, leather. Ishida stops in the rain and looks back up at the station — one lit window on the second floor where somebody is still working. From inside the car a man's clean hand holds out a cup of tea; on the wrist, the watch from the model. Ishida gets in. The door closes; the rain is suddenly very far away. BOARDED — 3 shots (141–143, all re-quoted the same day and all held RETAKE PENDING: the old cut showed Vera and a spoken invitation).",
+    description: "Continuous, rewritten nearly wordless on 30 September 2026. At the foot of the steps a black sedan waits at the kerb, engine running, wipers going. The rear door opens from inside: warm amber, leather. Ishida stops in the rain and looks back up at the station — one lit window on the second floor where somebody is still working. From inside the car a man's clean hand holds out a cup of tea; on the wrist, the watch from the model. Ishida gets in. The door closes; the rain is suddenly very far away. BOARDED — 3 shots (141–143, all re-quoted the same day and all held RETAKE PENDING: the old cut showed Vera and a spoken invitation).",
     lightingNotes: "Warm amber interior light on cream leather; rain and smeared sodium beyond the glass. The car never moves.",
+    // The director restored Kurose's single line: It's only tea; the rest stays restrained.
   },
   {
     key: "s95", id: "neonoire-s95", n: 95, partId: "neonoire-part-feature",
@@ -671,7 +672,7 @@ export const SCENES = [
     title: "The number 114", location: "INT. THE HIVE, NOODLE SHOP STOREROOM", time: "NIGHT",
     kind: "Standard", lighting: "Practical night", slugline: "INT. THE HIVE, NOODLE SHOP STOREROOM - NIGHT #25#",
     page: "n25-the-hive-noodle-shop-storeroom-night.md", board: "n25-storeroom-the-number-114.md",
-    cast: ["Jack", "Mara Voss"],
+    cast: ["Jack", "Mara Voss", "Kaneko"],
     grammar: "35mm across three feet of dark.",
     description: "A cold bowl of rice and a whispered timeline: twenty years, the bar, the meeting that was supposed to happen. The key's number is 114, and Jack leaves it with her because nobody knows where she is. BOARDED — 1 shot (202).",
     lightingNotes: "One bare bulb, lower and darker than scene 20: warmth turned conspiratorial.",
@@ -1108,12 +1109,12 @@ export const SCENES = [
   },
   {
     key: "s99a", id: "neonoire-s99a", n: 99, partId: "neonoire-part-feature",
-    title: "The finished plaza", location: "EXT. THE PLAZA, WHERE THE HIVE WAS", time: "DAY",
-    kind: "Standard", lighting: "Natural daylight", slugline: "EXT. THE PLAZA, WHERE THE HIVE WAS - DAY #99A#",
+    title: "The Hive coming down, then the plaza", location: "EXT. THE HIVE / THE PLAZA, WHERE THE HIVE WAS", time: "DAY",
+    kind: "Standard", lighting: "Natural daylight", slugline: "EXT. THE HIVE / THE PLAZA, WHERE THE HIVE WAS - DAY #99A#",
     page: "n99a-the-plaza-where-the-hive-was-day.md", board: "n99a-the-finished-plaza.md",
-    cast: [],
-    grammar: "Months later. Winter light, thin and clear; no rain. The model built and the patch erased: pale paving, a strip of new grass, a bench nobody sits on, glass towers on three sides, and real people crossing exactly like the painted ones. No fountain, no hoarding, no gardener, no train — the last sequence is stripped back to the revision's one sentence: nothing marks where anything was.",
-    description: "Rewritten 30 September 2026: the finished plaza, stripped of the story pass's fountain, hoarding and gardener. Months later, thin winter light, no rain. The white plaza from the model, built; real people cross it now, exactly like the painted ones. A strip of new grass. A bench nobody sits on. Nothing marks where anything was. BOARDED — 3 shots (305–307), re-quoted the same day and all three held RETAKE PENDING: their images show the fountain, the hoarding and the gardener the draft no longer contains.",
+    cast: ["Kaneko", "The Radio Repairman"],
+    grammar: "One scene, two time states: weeks later, the Hive coming down with rooms open to the air, its counter and six old stools still standing; DISSOLVE TO the clean plaza months later. Preserve the model/plaza and old/new stools payoffs. The finished-plaza section remains stripped of fountain, hoarding and gardener.",
+    description: "Restored 1 October 2026 at the director's request. Weeks later: excavators, the cut-open Hive, exposed rooms and Kaneko's counter with six old stools in a row; residents watch, Kaneko holds the old sign. Dissolve to the finished white plaza months later, thin winter light, nothing marking what was. One scene, 99A, not separate 99. BOARDED — five shots: restored 158–159 at their original s99 paths, then 305–307.",
     lightingNotes: "Pale clear winter daylight; no sodium, no murk — the Hive's weather is gone with it.",
   },
 ];
@@ -1270,7 +1271,7 @@ export function pageHeader(scene) {
     `${scene.location} - ${scene.time}`,
     `Source: the final screenplay (${FOUNTAIN}, September 2026), reproduced verbatim below its own heading.${scene.boarded ? "" : " Written, not boarded: the numbered shot board covers the opening scenes only."}`,
     `Cast: ${scene.cast.length ? scene.cast.join(", ") : scene.boarded ? "— (no people)" : "— (not boarded; the draft names its own cast)"}.`,
-    `Grammar: ${grammarLines.join("\n")}`,
+    `Grammar: ${grammarLines.map(line => line.trimEnd()).join("\n")}`,
     "",
   ].join("\n");
 }
@@ -1325,7 +1326,7 @@ export const shotTitle = image => {
  * in the app without its production direction travelling with it.
  */
 export function parseBoard(markdown, scene) {
-  const fields = ["SCRIPT", "CAST", "LIGHT", "TIME", "IMAGE", "NOTE", "ID"];
+  const fields = ["SCRIPT", "CAST", "LIGHT", "TIME", "IMAGE", "PATH", "NOTE", "ID"];
   const shots = [];
   let current = null;
   const flush = () => {
@@ -1339,7 +1340,7 @@ export function parseBoard(markdown, scene) {
     if (!prose.length) throw new Error(`Scene ${scene.n} shot ${current.n} has no description`);
     shots.push({
       n: current.n, id: field("ID") || `neonoire-shot-${String(current.n).padStart(2, "0")}`, scene, shotType: current.shotType, lens: current.lens, movement: current.movement,
-      angle: current.angle, image, title: shotTitle(image), duration,
+      angle: current.angle, image, ...(field("PATH") ? { path: field("PATH") } : {}), title: shotTitle(image), duration,
       description: prose[0],
       script: field("SCRIPT").replace(/^"|"$/g, ""),
       cast: field("CAST") === "—" || !field("CAST") ? [] : field("CAST").split(",").map(name => name.trim()),
@@ -1396,7 +1397,7 @@ export const readBoard = (root, scene) => readFileSync(resolve(root, "docs", "ne
 /** Whitespace-insensitive comparison, for quoting dialogue that the draft writes across lines. */
 export const sameText = (a, b) => a.replace(/\s+/g, " ").trim() === b.replace(/\s+/g, " ").trim();
 export const containsText = (haystack, needle) => haystack.replace(/\s+/g, " ").includes(needle.replace(/\s+/g, " ").trim());
-export const imagePath = (scene, shot) => `/images/neonoire/${scene.key}/${shot.image}`;
+export const imagePath = (scene, shot) => shot.path || `/images/neonoire/${scene.key}/${shot.image}`;
 
 /** The six ideas the workspace's brainstorm map starts from. */
 export const brainstorm = [

@@ -8,6 +8,8 @@ Grammar: 24mm for the roof and the trains, 85mm on the clip, 50mm at the railing
 
 EXT. ROOFTOP OF JACK'S BUILDING - DAY #98#
 
+SUPER: "FIVE DAYS LATER"
+
 Days later. The rain has stopped for the first time in the film. The sky is pale and washed and enormous.
 
 A small flat roof: laundry poles, a water tank, a single potted plant someone has kept alive. Below, the elevated railway, and the trains going past at eye level.

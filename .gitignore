@@ -26,3 +26,6 @@ Thumbs.db
 # IMPORTANT: public/images and public/fonts ARE committed.
 # They are binary assets the app needs. Do not add them here.
 exports/neonoire/
+
+# Generated MP4s and asynchronous export snapshots/work files
+exports/animatics/

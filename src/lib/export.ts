@@ -1,6 +1,7 @@
 import type { FilmProject } from "./types";
 import { actOf, kindOf, partOf } from "./structure";
 import { relationLines, relationNoun } from "./relations";
+import { framesInSceneOrder, sceneNumber, shotNumber } from "./frame-order";
 
 export const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "film";
 
@@ -18,13 +19,13 @@ export function downloadFile(content: string, filename: string, type = "text/pla
 export function shotListCsv(project: FilmProject): string {
   const escape = (value: string | number) => `"${String(value ?? "").replace(/"/g, '""')}"`;
   const rows = [
-    ["Shot", "Act", "Sequence", "Scene", "Kind", "Title", "Description", "Shot type", "Camera angle", "Lens", "Camera movement", "Lighting", "Lighting direction", "Cut in", "Duration (s)", "Duration is estimate", "Cast", "Relationships", "Mood", "Status", "Production notes"],
-    ...project.frames.map((frame, i) => {
+    ["Shot", "Act", "Sequence", "Scene number", "Scene", "Kind", "Title", "Description", "Shot type", "Camera angle", "Lens", "Camera movement", "Lighting", "Lighting direction", "Cut in", "Duration (s)", "Duration is estimate", "Cast", "Relationships", "Mood", "Status", "Production notes"],
+    ...framesInSceneOrder(project.frames, project.scenes).map((frame, i) => {
       const scene = project.scenes.find(s => s.id === frame.sceneId);
       const act = scene ? actOf(project, scene) : undefined;
       const part = scene ? partOf(project, scene) : undefined;
       return [
-        i + 1, act?.title || "", part?.title || "", scene?.location || "Unassigned", scene ? kindOf(scene) : "",
+        shotNumber(frame, i), act?.title || "", part?.title || "", scene ? sceneNumber(scene, project.scenes.indexOf(scene)) : "", scene?.location || "Unassigned", scene ? kindOf(scene) : "",
         frame.title, frame.description, frame.shotType, frame.angle || "Eye level", frame.lens || "", frame.movement,
         frame.lighting || scene?.lighting || "", frame.lightingNotes || scene?.lightingNotes || "", frame.transition || "Cut", frame.duration, frame.durationIsEstimate ? "Yes" : "No",
         (frame.characters || []).map(id => project.characters.find(c => c.id === id)?.name).filter(Boolean).join(" / "),
@@ -53,14 +54,14 @@ export function printProject(project: FilmProject, kind: PrintKind = "storyboard
     const scene = project.scenes.find(s => s.id === sceneId);
     if (!scene) return "Unassigned";
     const act = actOf(project, scene);
-    return `${act ? `${act.title} · ` : ""}${scene.location} — ${scene.time}`;
+    return `Scene ${sceneNumber(scene, project.scenes.indexOf(scene))} · ${act ? `${act.title} · ` : ""}${scene.location} — ${scene.time}`;
   };
 
-  const frames = project.frames.map((frame, i) => {
+  const frames = framesInSceneOrder(project.frames, project.scenes).map((frame, i) => {
     const visual = frame.image
       ? `<img src="${escapeHtml(frame.image.startsWith("/") ? `${window.location.origin}${frame.image}` : frame.image)}" alt="${escapeHtml(frame.title)}" />`
       : `<div class="missing-frame">Keyframe missing — this card holds the numbered slot</div>`;
-    return `<article>${visual}<div class="card-content"><small>FRAME ${String(i + 1).padStart(2, "0")} · ${escapeHtml(sceneLabel(frame.sceneId))}</small><h3>${escapeHtml(frame.title)}</h3><p>${escapeHtml(frame.description)}</p><footer>${escapeHtml(frame.shotType)} · ${escapeHtml(frame.angle || "Eye level")}${frame.lens ? ` · ${escapeHtml(frame.lens)}` : ""} · ${escapeHtml(frame.movement)} · ${frame.durationIsEstimate ? "~" : ""}${frame.duration}s${frame.transition && frame.transition !== "Cut" ? ` · ${escapeHtml(frame.transition)}` : ""}</footer>${frame.notes ? `<p class="note">${escapeHtml(frame.notes)}</p>` : ""}</div></article>`;
+    return `<article>${visual}<div class="card-content"><small>FRAME ${String(shotNumber(frame, i)).padStart(2, "0")} · ${escapeHtml(sceneLabel(frame.sceneId))}</small><h3>${escapeHtml(frame.title)}</h3><p>${escapeHtml(frame.description)}</p><footer>${escapeHtml(frame.shotType)} · ${escapeHtml(frame.angle || "Eye level")}${frame.lens ? ` · ${escapeHtml(frame.lens)}` : ""} · ${escapeHtml(frame.movement)} · ${frame.durationIsEstimate ? "~" : ""}${frame.duration}s${frame.transition && frame.transition !== "Cut" ? ` · ${escapeHtml(frame.transition)}` : ""}</footer>${frame.notes ? `<p class="note">${escapeHtml(frame.notes)}</p>` : ""}</div></article>`;
   }).join("");
 
   const boards = project.moodboards.map(board => {

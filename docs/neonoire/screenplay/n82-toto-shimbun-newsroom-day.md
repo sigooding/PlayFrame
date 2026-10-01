@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 82 — INT. TOTO SHIMBUN NEWSROOM
 INT. TOTO SHIMBUN NEWSROOM - DAY
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Jack, Harada, The Journalist.
-Grammar: An old paper office through one locked 24mm camera that opens and closes the scene; 50mm at the desk, 85mm for PLAY and for Harada. We don't hear his 
+Grammar: An old paper office through one locked 24mm camera that opens and closes the scene; 50mm at the desk, 85mm for PLAY and for Harada. We don't hear his
 testimony.
 
 INT. TOTO SHIMBUN NEWSROOM - DAY #82#

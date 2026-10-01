@@ -4,7 +4,7 @@ OPENING — SCENE 4 — INT. VERA'S APARTMENT
 INT. VERA'S APARTMENT - CONTINUOUS
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Daniel Voss, Mara Voss.
-Grammar: Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television. 
+Grammar: Grey rain light through the window and the corner of a CRT; nothing here belongs to one decade — a smartphone on the table beside a boxy television.
 The camera stays in the room as a guest would: no push-ins, no score. The photograph is the only warm colour in the scene.
 
 INT. VERA'S APARTMENT - CONTINUOUS #4#

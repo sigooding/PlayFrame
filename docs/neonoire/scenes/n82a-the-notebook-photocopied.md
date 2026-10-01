@@ -21,7 +21,7 @@ LIGHT: Overcast soft
 TIME: 12
 ID: neonoire-shot-300
 IMAGE: 300-at-the-edge-of-the-newsroom.jpg
-NOTE: Rhymes with scene 82's locked camera (`s82/104-the-newsroom.jpg`), from the aisle's other end: shot 110 watched Jack through the glass from inside; this watches him from where Vera stands. She holds the notebook in both hands like something she is about to give away. Jack is a figure behind venetian blinds and rain-grey glass, out of focus. The televisions go on with their three channels, never static. Placeholder study — the keyframe is still to generate.
+NOTE: Rhymes with scene 82's locked camera (`s82/104-the-newsroom.jpg`), from the aisle's other end: shot 110 watched Jack through the glass from inside; this watches him from where Vera stands. She holds the notebook in both hands like something she is about to give away. Jack is a figure behind venetian blinds and rain-grey glass, out of focus. The televisions go on with their three channels, never static. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Director-approved main image on 1 October 2026; no further review requested.
 
 ---
 
@@ -45,4 +45,4 @@ LIGHT: Overcast soft
 TIME: 20
 ID: neonoire-shot-302
 IMAGE: 302-the-copies.jpg
-NOTE: Holds the hook: "Kondo's files were in his desk. Six months of redevelopment money, and Kurose's name in most of it. And the grey car that left the Hive last night was found burnt out in Adachi at dawn. Registered to a security company. The company belongs to Kurose Development." — and "Tomorrow we put it to them for comment. They will refuse to see a reporter." / "I'll go." / "That is not your job." / "It isn't yours either. He'll see me. (beat) He'll want to look at me." The folder is plain, untitled, and it is what Vera carries into scene 83. Placeholder study — the keyframe is still to generate.
+NOTE: Holds the hook: "Kondo's files were in his desk. Six months of redevelopment money, and Kurose's name in most of it. And the grey car that left the Hive last night was found burnt out in Adachi at dawn. Registered to a security company. The company belongs to Kurose Development." — and "Tomorrow we put it to them for comment. They will refuse to see a reporter." / "I'll go." / "That is not your job." / "It isn't yours either. He'll see me. (beat) He'll want to look at me." The folder is plain, untitled, and it is what Vera carries into scene 83. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Director-approved main image on 1 October 2026; no further review requested.

@@ -9,6 +9,7 @@ import type { Act, ActPart, FilmProject, ProjectNote, Scene, SceneKind, StoryFra
 import { kindMeta, sceneKinds } from "@/lib/structure";
 import { onImageError } from "@/lib/image";
 import { PromptStudio } from "./prompt-studio";
+import { AnimaticExportPanel } from "./animatic-export";
 
 type ProjectInput = { title: string; description: string; genre: string; format: string; template: string };
 export function ProjectDialog({ project, template, onClose, onSave, onDelete }: { project?: FilmProject; template?: string; onClose: () => void; onSave: (input: ProjectInput) => Promise<boolean>; onDelete?: () => void }) {
@@ -48,6 +49,7 @@ export function ExportDialog({ project, onClose }: { project: FilmProject; onClo
   const [error, setError] = useState("");
   const options = [
     { id: "storyboard", title: "Storyboard", detail: "Print-ready layout · Save as PDF", icon: LayoutGrid },
+    { id: "animatic", title: "Animatic playback", detail: "MP4 video · Saved shot order, timings & dialogue", icon: Film },
     { id: "screenplay", title: "Screenplay", detail: "Fountain · Works with screenwriting apps", icon: FileText },
     { id: "shots", title: "Shot list", detail: "CSV · Ready for your production team", icon: Table2 },
     { id: "look", title: "Look book", detail: "Mood boards, structure & cast · PDF", icon: Images },
@@ -63,7 +65,7 @@ export function ExportDialog({ project, onClose }: { project: FilmProject; onClo
       onClose();
     } catch (e) { setError(e instanceof Error ? e.message : "Export failed. Please try again."); }
   }
-  return <Modal title="Ready for the next stage." subtitle="Take your story from the workspace to the set." onClose={onClose}><div className="modal-body export-options">{options.map(option => <button key={option.id} className={`export-option ${kind === option.id ? "selected" : ""}`} onClick={() => setKind(option.id)}><span className="export-icon"><option.icon size={21} /></span><span><strong>{option.title}</strong><small>{option.detail}</small></span><span className="radio-circle">{kind === option.id && <span />}</span></button>)}{error && <p className="form-error">{error}</p>}</div><div className="modal-footer"><span className="footer-left export-meta">Made with a little help from frame.</span><button className="button button-primary" onClick={exportFile}><Download size={15} />{kind === "storyboard" || kind === "look" ? "Open print preview" : "Export file"}</button></div></Modal>;
+  return <Modal title="Ready for the next stage." subtitle="Take your story from the workspace to the set." onClose={onClose}><div className="modal-body export-options">{(kind === "animatic" ? [] : options).map(option => <button key={option.id} className={`export-option ${kind === option.id ? "selected" : ""}`} onClick={() => setKind(option.id)}><span className="export-icon"><option.icon size={21} /></span><span><strong>{option.title}</strong><small>{option.detail}</small></span><span className="radio-circle">{kind === option.id && <span />}</span></button>)}{kind === "animatic" && <><button className="text-button" onClick={() => setKind("storyboard")}>← All export formats</button><AnimaticExportPanel key={project.id} project={project} /></>}{error && <p className="form-error">{error}</p>}</div><div className="modal-footer"><span className="footer-left export-meta">Made with a little help from frame.</span>{kind === "animatic" ? <button className="button" onClick={onClose}>Close</button> : <button className="button button-primary" onClick={exportFile}><Download size={15} />{kind === "storyboard" || kind === "look" ? "Open print preview" : "Export file"}</button>}</div></Modal>;
 }
 
 export type SearchTarget = { tab?: string; frameId?: string; sceneId?: string; characterId?: string; noteId?: string; nodeId?: string; boardId?: string; actId?: string; script?: { start: number; end: number } };

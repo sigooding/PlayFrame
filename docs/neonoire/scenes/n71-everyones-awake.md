@@ -39,4 +39,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-313
 IMAGE: 313-drawings-in-the-water.jpg
-NOTE: FOURTH OF THE SEVEN NAMED CLOSE-UPS, and the last look at Mara's work before Kaneko and the old woman kneel to gather it, page by page. The pencil hand matches the scene 14 wall and the dried stack of scene 84 — same stock, later. Placeholder slot.
+NOTE: FOURTH OF THE SEVEN NAMED CLOSE-UPS, and the last look at Mara's work before Kaneko and the old woman kneel to gather it, page by page. The pencil hand matches the scene 14 wall and the dried stack of scene 84 — same stock, later. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Director-approved main image on 1 October 2026; no further review requested.

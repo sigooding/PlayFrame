@@ -1,34 +1,43 @@
-// Story order for frames. The bundle lists frames by shot number (coverage shots 241+ come after the
-// first boarding, and the first boarding is numbered in boarding order), so playing it in array order
-// would put an added shot at the end of its scene, not where it happens. The draft is the authority:
-// each shot quotes the script line it covers, and a frame's place is where that line sits in the draft.
-import { SCENES, containsText, parseBoard, readBoard, readFountain } from "./plan.mjs";
+// Running order and production numbering are different: coverage is numbered when it is boarded,
+// but plays where its quoted beat occurs in its OWN scene of the current screenplay.
+import { featureScenes, parseBoard, readBoard, readFountain } from "./plan.mjs";
 
-/** Map of frame id -> position in the draft (character offset of its script quote). */
+const normalise = text => text.replace(/\s+/g, " ").trim();
+
+/** Map of frame id -> offset of its script quote in the whitespace-normalised draft. */
 export function storyPositions(root) {
-  const draft = readFountain(root).replace(/\s+/g, " ");
+  const fountain = readFountain(root);
+  const lines = fountain.split("\n");
+  const scenes = featureScenes(fountain);
   const positions = new Map();
-  for (const scene of SCENES) {
+  for (const [index, scene] of scenes.entries()) {
+    if (!scene.board) continue;
+    const end = scenes[index + 1]?.line ?? lines.length;
+    const block = normalise(lines.slice(scene.line, end).join("\n"));
+    const start = lines.slice(0, scene.line).join("\n").replace(/\s+/g, " ").length;
     for (const shot of parseBoard(readBoard(root, scene), scene)) {
-      const quote = (shot.script || "").replace(/\s+/g, " ").trim();
-      const at = quote && containsText(draft, quote) ? draft.indexOf(quote) : -1;
-      positions.set(shot.id, at);
+      const quote = normalise(shot.script || "");
+      // A repeated line in another scene ("There was no car", "He drinks", etc.) must never
+      // pull a shot to that other scene's position. Empty/unmatched quotes go last, not first.
+      const at = quote ? block.indexOf(quote) : -1;
+      positions.set(shot.id, at < 0 ? -1 : start + at);
     }
   }
   return positions;
 }
 
-/**
- * Frames in story order: scenes in the project's order, and within a scene by where each frame's script
- * quote sits in the draft (shot number breaks ties, and frames whose quote cannot be found keep their
- * numeric place at the end of the scene).
- */
+/** Scenes in project order; shots in each scene at the beat they cover, with board number as tie-break. */
 export function inStoryOrder(frames, scenes, root) {
   const positions = storyPositions(root);
-  const sceneRank = new Map(scenes.map((s, i) => [s.id, i]));
-  const num = f => Number(/\d+$/.exec(f.id)?.[0]);
+  const sceneRank = new Map(scenes.map((scene, index) => [scene.id, index]));
+  const numbers = new Map(featureScenes(readFountain(root)).filter(scene => scene.board)
+    .flatMap(scene => parseBoard(readBoard(root, scene), scene).map(shot => [shot.id, shot.n])));
+  const position = frame => {
+    const at = positions.get(frame.id);
+    return at === undefined || at < 0 ? Number.MAX_SAFE_INTEGER : at;
+  };
   return [...frames].sort((a, b) =>
-    (sceneRank.get(a.sceneId) ?? 1e9) - (sceneRank.get(b.sceneId) ?? 1e9)
-    || ((positions.get(a.id) ?? -1) < 0 ? 1e12 : positions.get(a.id)) - ((positions.get(b.id) ?? -1) < 0 ? 1e12 : positions.get(b.id))
-    || num(a) - num(b));
+    (sceneRank.get(a.sceneId) ?? scenes.length) - (sceneRank.get(b.sceneId) ?? scenes.length)
+    || position(a) - position(b)
+    || (a.shotNumber ?? numbers.get(a.id) ?? 0) - (b.shotNumber ?? numbers.get(b.id) ?? 0));
 }

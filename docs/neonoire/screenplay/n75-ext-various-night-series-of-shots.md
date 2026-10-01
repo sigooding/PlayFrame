@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 75 — INT./EXT. VARIOUS
 INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: — (no people).
-Grammar: Six static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. The sixth is the empty crossing 
+Grammar: Six static low-level 50mm colour pillow shots. No people, even in reflections. Same props and locations; Hive whole. The sixth is the empty crossing
 from 27 and 62 — the melody runs all the way to the end of the frame, and as it ends the score enters for the first time in the film. Then black.
 
 INT./EXT. VARIOUS - NIGHT - SERIES OF SHOTS #75#

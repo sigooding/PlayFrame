@@ -4,8 +4,8 @@ OPENING — SCENE 1 — EXT. BACKSTREET, KANDA
 EXT. BACKSTREET, KANDA - NIGHT
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Mara Voss, The Old Man, The Masked Men.
-Grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the 
-violence as though the subject has merely walked out of frame. No flash, no sound design tricks, no score, no reaction cut; the killing is two flat 
+Grammar: Wide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the
+violence as though the subject has merely walked out of frame. No flash, no sound design tricks, no score, no reaction cut; the killing is two flat
 sounds in rain and the scene leaves the street the way the car does.
 
 Title: Nobody's Witness

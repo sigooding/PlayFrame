@@ -1,20 +1,37 @@
-# NEONOIRE — SCENE 99A — EXT. THE PLAZA, WHERE THE HIVE WAS - DAY
+# NOBODY'S WITNESS — SCENE 99A — EXT. THE HIVE / THE PLAZA, WHERE THE HIVE WAS - DAY
 
-**Board, and the script.** The screenplay page for this scene is [n99a-the-plaza-where-the-hive-was-day.md](../screenplay/n99a-the-plaza-where-the-hive-was-day.md), carrying the draft verbatim.
+One scene, not two: weeks later the Hive comes down, then a dissolve to the finished plaza months later. The source page is [99A](../screenplay/n99a-the-plaza-where-the-hive-was-day.md).
 
-Scene: EXT. THE PLAZA, WHERE THE HIVE WAS - DAY
-Cast: — (the plaza, and strangers crossing it)
-Lens plan: 24mm for the plaza, 35mm at the hoarding, 50mm on the gardener.
-Grammar: months later. Winter light, thin and clear — no rain; the second and last dry stretch of exterior of the film after scene 98, and it stays dry. REWRITTEN 30 September 2026: the plaza is the model from Kurose's office built, but stripped of the fountain, the hoarding and the gardener the story pass boarded. Pale paving, a strip of new grass, a bench nobody sits on, real people crossing exactly like the painted ones — and nothing that marks where anything was. The references to 272's tiny white tree, scene 24's office and scene 99's cut-open building are retired with those scenes; what replaces the tree is the corrected model of scene 51. This is the film's last look at the Hive's ground.
+The two demolition cards are restored with their original production numbers, IDs and asset paths. No image was regenerated or renamed. The old counter/six-stools row is explicit on the page and in the wide-shot direction. This answers the six new stools in 100 and Vera's "It's very clean" in 83. The plaza's three existing images stay in place after the dissolve; no fountain, hoarding or gardener is reintroduced.
 
-## Frame format — 29 September 2026
+---
 
-Shots 305–307 are **16:9, 1920×1080, full-bleed**, numbered in the story-pass-2 coverage block after 304. The plaza follows Kurose's glass-case model (`s83/113-very-clean.jpg` and the new scene 51 pair, 310–311): where the Hive stood, on the same ground, with the viaduct running past it. The ground-breaking rendering banner (`s97/146-tomorrows-tokyo.jpg`) and the demolition wide (`s99/156-cut-open.jpg`) are retired references — their scenes were cut; the images stay on disk for before/after review, and the plaza they pointed at is now just pale paving. Light is soft, pale and low-contrast — the washed daylight of scene 98 (`s98/153-the-rain-has-stopped.jpg`), not the Hive's day murk, which is gone with the building. The gardener is unnamed, unremarkable, in a plain company jacket; no face study. These are AI-generated draft studies, not approved coverage.
+158. WIDE — 24mm, tracking, eye level — cut open.
+Weeks later, excavators take the Hive's front away. Its exposed rooms stand open to the air: wallpaper, calendar, mirror, a child's height marks. At ground level Kaneko's counter is still standing, its six old stools in a row. Track slowly along the open rooms, not a spectacular collapse.
+SCRIPT: "The Hive is coming down."
+CAST: —
+LIGHT: Overcast soft
+TIME: 14
+ID: neonoire-shot-158
+IMAGE: 156-cut-open.jpg
+PATH: /images/neonoire/s99/156-cut-open.jpg
+NOTE: RESTORED 1 October 2026 — the director meant to fold 99 into 99A, not lose demolition. Original 1920×1080 image and stable identity restored. The still samples the cut-open front; full motion direction includes the counter/six-stool row. Existing imagery is retained, not claimed a newly generated exact stool insert.
+
+159. MEDIUM — 50mm, static, eye level — the sign.
+At the street barrier Kaneko holds the old noodle-shop sign wrapped in a blanket. The radio repairman, family and violin girl watch. The open building is behind them.
+SCRIPT: "Kaneko stands among them, holding the old noodle-shop sign against her chest, wrapped in a blanket."
+CAST: Kaneko, The Radio Repairman
+LIGHT: Overcast soft
+TIME: 10
+ID: neonoire-shot-159
+IMAGE: 157-the-sign.jpg
+PATH: /images/neonoire/s99/157-the-sign.jpg
+NOTE: RESTORED 1 October 2026 — original image, production number and identity. DISSOLVE TO the clean plaza on the next shot (305), months later. The demolition and the model made real remain one numbered scene.
 
 ---
 
 305. WIDE — 24mm, static, low level — the plaza.
-A plaza of pale paving, exactly as it was in the model. A fountain, running. Small white trees in steel guards. Glass towers on three sides reflecting other glass towers. Nobody is in it.
+Months later: the white plaza from the model, built. Pale paving, glass towers, a strip of new grass, one empty bench and distant pedestrians. No fountain or surviving marker of the Hive.
 SCRIPT: "The white plaza from the model, built."
 CAST: —
 LIGHT: Natural daylight
@@ -26,7 +43,7 @@ NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — the 
 ---
 
 306. MEDIUM — 35mm, static, eye level — the hoarding.
-At the plaza's edge, the construction hoarding stands over empty pale paving: KUROSE DEVELOPMENT. TOMORROW'S TOKYO. The fountain runs out of focus behind it. The glass towers reflect each other and nobody.
+Ordinary pedestrians cross the pale paving exactly like the painted people in the model. A strip of new grass and a bench nobody sits on. No hoarding, no readable company slogan, no fountain.
 SCRIPT: "Real people cross it now, exactly like the painted ones. A strip of new grass. A bench nobody sits on."
 CAST: —
 LIGHT: Natural daylight
@@ -38,7 +55,7 @@ NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — the 
 ---
 
 307. MEDIUM — 50mm, static, low level — the gardener.
-A gardener in a company jacket crosses to one of the little white trees and straightens it with the tip of his finger. It didn't need it. Overhead, the rails begin to sing and a commuter train passes along the viaduct; below, nothing trembles.
+The clean plaza holds still beneath the viaduct. Nothing marks where anything was. The retained still samples an ordinary train above an empty plaza; no gardener or tree-straightening beat.
 SCRIPT: "Nothing marks where anything was."
 CAST: —
 LIGHT: Natural daylight

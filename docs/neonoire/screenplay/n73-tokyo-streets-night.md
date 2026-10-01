@@ -16,9 +16,9 @@ Rain plasters her hair to her face. Her mascara runs.
 
 No music. Only rain. Her heels on wet pavement. Her breath. A car passing, its tyres hissing.
 
-She runs past a vending machine. It glows, indifferent.
+She runs past a vending machine. It glows, indifferent. She keeps going; the machine falls behind her.
 
-At a crossing, the old melody chimes for her, and she runs through it on red.
+Just beyond it, at a crossing, the old melody chimes for her, and she runs through it on red.
 
 One heel skids. Her ankle turns. The shoe comes off and stays behind in a puddle. She doesn't stop. She runs on in one shoe.
 

@@ -1,0 +1,100 @@
+{
+  "scriptHash": "5c12b01218f24a3481ef8fc8e4560c7788b2c27aabb1598cc3260bf9ecb2c81e",
+  "frames": {
+    "neonoire-shot-64": {
+      "notesHash": "052c6169b0a843d4466a3a521cc8f6d365c361ddccb426f9b2a512c6d3d57cbf",
+      "descriptionHash": "c6d95e9f8f44c0f636ad2f417e9eea5fe04557ad2b3dd5495294a7b2e05f91cc",
+      "image": "/images/neonoire/s7/64-the-bottom-drawer.jpg"
+    },
+    "neonoire-shot-65": {
+      "notesHash": "aea95f5ae439f20176346e54649265495559caecf19f133b7ff52cb61f547f30",
+      "descriptionHash": "77bfab0242964b1aefd4e7e564a8020aebc9f3733f4b8a7c8f76c93e86677eb6",
+      "image": "/images/neonoire/s7/65-the-evidence-bag.jpg"
+    },
+    "neonoire-shot-67": {
+      "notesHash": "370df3ca5c4012828800f799d38dab0ef58ae55f190bf1892296cce80fcfc484",
+      "descriptionHash": "c106032597987705c8076267b0e4aad53b6deaca2776b93aabf2b337a0768740",
+      "image": "/images/neonoire/s7/67-drawer-closed.jpg"
+    },
+    "neonoire-shot-310": {
+      "notesHash": "422fb580694a110378768a65d03ea289729aa34d7137493d4d3fab57eb733a2e",
+      "descriptionHash": "00ebc2c3ee75c8ac46226fc0ecb0495b3000ca80496dbe33bd242dd04a7a03d9",
+      "image": "/images/neonoire/s51/310-the-model-at-dawn.jpg"
+    },
+    "neonoire-shot-311": {
+      "notesHash": "dfb0decc880f6718608f0ea574b4c6246a27ce9205ff6ec50b50e82a85d97703",
+      "descriptionHash": "207abf439262cbc3d37a98e375738d5ac4adbace8f132ee20198965d7ce15c1a",
+      "image": "/images/neonoire/s51/311-the-hand-on-the-model.jpg"
+    },
+    "neonoire-shot-298": {
+      "notesHash": "023d3f933cb7669e79b5403904a253058a00ec3dfa6e18782b22a2cf9d1c20c8",
+      "descriptionHash": "9e9dd027acf289a87eb8e45f235d491f4873fe844c0021d25a26dd2fa1737281",
+      "image": "/images/neonoire/s53a/298-there-was-no-car.jpg"
+    },
+    "neonoire-shot-299": {
+      "notesHash": "1b9b4b92e47c593b8b97e60b5bf1b34c200f2e13286776b4b73331b7cf5230f6",
+      "descriptionHash": "c2c0f644e89b76e67ec95f39093486c3fb2c147ed11fa82fc24cfe97fd9e4c1a",
+      "image": "/images/neonoire/s53a/299-the-card-on-the-desk.jpg"
+    },
+    "neonoire-shot-313": {
+      "notesHash": "cb80d6a66d05fd761b3b0c14d7f9504e45e4d0b750b225242ae5aaf16b33edfa",
+      "descriptionHash": "61e57f2dd97a576f36598dc611365d2c374d53ebf573b3834ab3e02bd25bc64e",
+      "image": "/images/neonoire/s71/313-drawings-in-the-water.jpg"
+    },
+    "neonoire-shot-69": {
+      "notesHash": "bdfc07e4ebd2b4be45ae938b21408b49be4df99aff412940c8229cf1bfb34cc1",
+      "descriptionHash": "5f52e499fefc24b9c924737dc9feccf8a8880d20e5c897615473d970f743fdd4",
+      "image": "/images/neonoire/s73/69-vera-runs.jpg"
+    },
+    "neonoire-shot-70": {
+      "notesHash": "9899fbf3c6441ce87a806a827958120b5a36bfc25777442c6626b7c73156c079",
+      "descriptionHash": "4d7129aeff67776f1529c00dad8ca306a474d88b491ae31df139c191e57f0c62",
+      "image": "/images/neonoire/s73/70-not-elegantly-badly.jpg"
+    },
+    "neonoire-shot-71": {
+      "notesHash": "6b4641ad706c5243a12990f234cae164323c8ecf218bad11ffce885b074533e6",
+      "descriptionHash": "894beb412b9d7a358afa63f27c54e7e8caa058feeac156744ac53c1965e6933c",
+      "image": "/images/neonoire/s73/71-the-machine-glows.jpg"
+    },
+    "neonoire-shot-72": {
+      "notesHash": "79c2771117c9a950af947d904c58fa232bd968355df2c0aeb95d597881feb01b",
+      "descriptionHash": "521eafbb61120c06818c245abcedc52ef350ef357470b6a44c551f8da36a5991",
+      "image": "/images/neonoire/s73/72-the-lost-heel.jpg"
+    },
+    "neonoire-shot-77": {
+      "notesHash": "4d7119d02b1217d1bcee9d7acb1a6aadc6cb57e76c69d93c042a0639b1be480f",
+      "descriptionHash": "d62b2632da4bcf6b7c61dece41b8e345cf0a76c00ce250fb90346602aee73811",
+      "image": "/images/neonoire/s75/77-the-red-shoe.jpg"
+    },
+    "neonoire-shot-80": {
+      "notesHash": "d8119ab3b270a6cc5493dcfa0fe4b60b2ad378c841477f7170bb787639a2d5d4",
+      "descriptionHash": "51c7db9e97f0431c801cd7d96fb84d468fe706b632e8b6a95246173c4f95c4ed",
+      "image": "/images/neonoire/s75/80-the-machine-waits.jpg"
+    },
+    "neonoire-shot-314": {
+      "notesHash": "1a619496dcd12806fe7beff78eecffffbc79d45b0a21725c22b912d2b0f6f87c",
+      "descriptionHash": "7e707345d1331fb230ea629e7b6f21d7d64832a3115cd01a11dc30c91e0d8893",
+      "image": "/images/neonoire/s75/314-the-empty-crossing.jpg"
+    },
+    "neonoire-shot-300": {
+      "notesHash": "a099f98b0566d457813ea55a82b77201374432c0c69657a6dde433774ab58e89",
+      "descriptionHash": "ccd3bba23cff4650ae0fd869047d99636ec3ac9ccdd3f29fbc2091866d447495",
+      "image": "/images/neonoire/s82a/300-at-the-edge-of-the-newsroom.jpg"
+    },
+    "neonoire-shot-302": {
+      "notesHash": "a103b1826154199f37c97b7c379578c587c0429c083d229d14becdee1c27e739",
+      "descriptionHash": "67ca0463a02b2f173b99b551b74311ee63fea7246a8bea6ad179f5a180f3ceed",
+      "image": "/images/neonoire/s82a/302-the-copies.jpg"
+    },
+    "neonoire-shot-320": {
+      "notesHash": "49d7c8a0107e9d581ea12f3f7e57a4e93bf848b518374b159422cd6425129420",
+      "descriptionHash": "bdce3c321502551f6893c136afe39d1dc8c7ce36652957909636645a67d36bdc",
+      "image": "/images/neonoire/s100/320-the-news-nobody-watches.jpg"
+    }
+  },
+  "scenes": {
+    "neonoire-s7": "eebb8d94315975a9e4eca13582caaf0954b8eb176f5f5f674add3404e6b6e847",
+    "neonoire-s73": "d5ad3a5006b1544f61567308e5a614aed108d2646c0328310f23d58dfeb26ea4",
+    "neonoire-s75": "14c0b33818b12499164b041422ae7374bd92be1011d86ca04a3274663aebe5d5"
+  }
+}

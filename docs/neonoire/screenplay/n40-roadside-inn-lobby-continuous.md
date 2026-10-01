@@ -10,6 +10,8 @@ INT. ROADSIDE INN, LOBBY - CONTINUOUS #40#
 
 The front door opens. Two masked men step in, weapons up.
 
+The first is the MASKED LEADER (40s), a man in a plain dark suit, nothing about him to remember. His face stays behind the mask. The man who touched his earpiece in the Kanda rain.
+
 Mr. Noda wakes in his chair. Stares.
 
 MR. NODA

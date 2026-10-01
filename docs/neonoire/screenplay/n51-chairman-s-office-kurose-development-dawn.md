@@ -8,7 +8,7 @@ Grammar: 35mm static, square to the table; 85mm only for the hand and the watch.
 
 INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAWN #51#
 
-The fortieth floor. The glass walls grey with dawn. Nobody in the leather chairs.
+The fortieth floor. Glass on three sides. Tokyo spread out below in the rain like a circuit board. The glass walls grey with dawn. Nobody in the leather chairs.
 
 The model of the redevelopment on its long table: glass towers, sponge trees, a broad white plaza. At the plaza's edge sits one small, dark, patched block, out of place among the towers. The Hive.
 
