@@ -53,6 +53,8 @@ export interface Act {
 
 export interface Scene {
   id: string;
+  /** Original screenplay label (e.g. 25A); not renumbered when scenes are inserted or cut. */
+  number?: string;
   title: string;
   location: string;
   time: string;
@@ -97,6 +99,8 @@ export interface FrameAudio {
 
 export interface StoryFrame {
   id: string;
+  /** Stable production/board number; distinct from this frame’s playback position. */
+  shotNumber?: number;
   sceneId: string;
   title: string;
   description: string;

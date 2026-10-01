@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-310
 IMAGE: 310-the-model-at-dawn.jpg
-NOTE: Same model stock as the scene 83 master (`s83/113-very-clean.jpg`): the little plaza, the patched block, the towers. The camera is at a standing height — nobody is seated, nobody has arrived. Placeholder slot.
+NOTE: Same model stock as the scene 83 master (`s83/113-very-clean.jpg`): the little plaza, the patched block, the towers. The camera is at a standing height — nobody is seated, nobody has arrived. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Director-approved main image on 1 October 2026; no further review requested.
 
 ---
 
@@ -33,7 +33,7 @@ LIGHT: Low key
 TIME: 10
 ID: neonoire-shot-311
 IMAGE: 311-the-hand-on-the-model.jpg
-NOTE: The watch is the one Vera sees again in scene 94 ("The watch from the model") — same prop, same cuff. The painted people rhyme with the hoarding renderings of scene 15 and the crossing of scene 75; this is their first. The Hive block resting on the tray beside the tea: the film's most violent gesture is a hand tidying. Placeholder slot.
+NOTE: The watch is the one Vera sees again in scene 94 ("The watch from the model") — same prop, same cuff. The painted people rhyme with the hoarding renderings of scene 15 and the crossing of scene 75; this is their first. The Hive block resting on the tray beside the tea: the film's most violent gesture is a hand tidying. Delivered 1 October 2026, final missing-keyframe pass: screenplay text and character sheets only, full-bleed 1920×1080. Director-approved main image on 1 October 2026; no further review requested.
 
 ---
 

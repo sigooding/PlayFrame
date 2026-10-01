@@ -36,8 +36,11 @@ import { hiveFirstLook, hiveFirstScenes } from "./hive-first-look.mjs";
 import { innColdLook, innScenes, innWarmLook, innWarmScenes } from "./inn-look.mjs";
 import { demolitionLook, endingScenes, newCounterLook, rooftopLook, veraLookESheet } from "./ending-look.mjs";
 import { rewritePending, rewritePendingNote } from "./rewrite-pending.mjs";
-import { remainingBoardsCompleted, remainingBoardsLook } from "./remaining-boards.mjs";
+import { remainingBoardsCompleted, remainingBoardsLook, remainingBoardsQueued } from "./remaining-boards.mjs";
+import { remainingBoardsFinalLook, remainingBoardsFinalShots } from "./remaining-boards-final.mjs";
 import { attachAudio, readManifest } from "./voice.mjs";
+import { inStoryOrder } from "./story-order.mjs";
+import { directorApprovedMainIds, directorMainImageNote, directorContinuityLook, approvedProductionNote } from "./director-corrections.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
 import { kandaBarLook, kandaBarScenes, kandaBarSheet } from "./bar-look.mjs";
 
@@ -182,7 +185,8 @@ assert.equal(rebuilt, fountain, `The ${feature.length} pages must rebuild ${FOUN
 // ---------------------------------------------------------------- the numbered shot boards
 const boards = SCENES.map(scene => parseBoard(readBoard(root, scene), scene));
 // The first boarding stays 1..240 in SCENES order. Coverage shots (241+) keep the numbers they
-// were given, even when a later pass adds one to an earlier scene. Playback order is by number.
+// were given, even when a later pass adds one to an earlier scene. These are production identities,
+// not playback positions: the final bundle interleaves coverage by scene and quoted script beat.
 const PRIMARY_SHOTS = 240;
 const primary = [];
 const coverage = [];
@@ -231,6 +235,7 @@ const frames = shots.map(shot => {
   const absent = missing.includes(shot);
   return {
     id: shot.id,
+    shotNumber: shot.n,
     sceneId: shot.scene.id,
     title: `${shot.title}${absent ? " (keyframe missing)" : ""}`,
     description: shot.description,
@@ -243,12 +248,12 @@ const frames = shots.map(shot => {
     style: "neonoire",
     duration: shot.duration,
     durationIsEstimate: true,
-    status: absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || rewritePending.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS && shot.n > coldOpenCompletedThrough) ? "Needs review" : isColdOpenScene(shot.scene.key) && coldOpenFreshCompleted.includes(shot.n) ? "Ready" : "Draft",
+    status: !absent && directorApprovedMainIds.has(shot.id) ? "Ready" : absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || rewritePending.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS && shot.n > coldOpenCompletedThrough) ? "Needs review" : isColdOpenScene(shot.scene.key) && coldOpenFreshCompleted.includes(shot.n) ? "Ready" : "Draft",
     transition: shot.n === 1 ? "Fade in" : "Cut",
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
-      absent
+      !absent && directorApprovedMainIds.has(shot.id) ? directorMainImageNote : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
         : shot.n >= 308
         ? (remainingBoardsCompleted.includes(shot.n)
@@ -326,13 +331,15 @@ const frames = shots.map(shot => {
       ...(shot.scene.key === "s81" ? [`Scene 81 — the bar by day (25 September 2026): ${barDayLook}`] : []),
       ...(shot.scene.key === "s82" ? [`Scene 82 — the newsroom (25 September 2026): ${newsroomLook}`] : []),
       ...(dawnScenes.has(shot.scene.key) ? [`Scenes 77–79 — the envelope and the notebook (25 September 2026): ${dawnLook}`] : []),
+      ...(remainingBoardsFinalShots.some(study => study.n === shot.n) ? [remainingBoardsFinalLook] : []),
+      ...(directorApprovedMainIds.has(shot.id) ? [directorContinuityLook] : []),
       shot.note,
       shot.script ? `SCRIPT — the draft's own words for this shot:\n"${shot.script}"` : "SCRIPT — no dialogue; the shot is carried by the frame and the sound.",
       shot.scene.grammar,
       grammar,
       `Timing: ${shot.duration}s is a working estimate for animatic playback. The draft locks no durations.`,
-      `Pass ${passOf(shot.n)} of ${Math.ceil(totalShots / passSize)} — ten keyframes at a time, in screenplay order. Shot ${shot.n} of ${totalShots}.`,
-    ].join("\n\n"),
+      `Generation Pass ${passOf(shot.n)} of ${Math.ceil(Math.max(...shots.map(s => s.n)) / passSize)} — ten keyframes at a time, numbered in boarding order. Stable Shot ${shot.n}; ${totalShots} active shots (retired numbers remain gaps); display and playback follow screenplay scene order.`,
+    ].map(note => directorApprovedMainIds.has(shot.id) ? approvedProductionNote(note) : note).join("\n\n"),
   };
 });
 
@@ -351,7 +358,7 @@ const notes = [
   {
     id: "neonoire-start-here", title: "Start here — what this workspace is", color: "sage", createdAt,
     tags: ["Production", "Read first"], connections: [],
-    content: `NOBODY'S WITNESS (working repository name: NEONOIRE) — the final feature screenplay (September 2026). 102 numbered pages in the Screenplay tab — scenes 1–100 with 25A, 27A, 53A, 63A, 82A and 99A, after the 30 September revision retired scenes 13, 24, 97 and 99 — carried page by page straight from the draft, every one of them boarded. The first boarding runs shots 1–240 minus what the revision retired inside scenes 1, 13, 24, 51, 97 and 99 — those numbers stay retired and nothing is renumbered, the coverage passes are shots 241–296, the story pass 2 boards are 297–307, and the 30 September revision boards are 308–320 — 19 cast cards, keyframes generated ten at a time. Nothing is renumbered: a number retired by a rewrite stays retired, and new frames join the end of the run. Every numbered scene of the screenplay is boarded, and coverage shots keep their scene. Each page still carries the draft verbatim under its own header.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated draft study**, not approved coverage — except the cold open (scene 1's sixteen remaining frames and scene 2's original ten), which the director approved on 30 September 2026 as the film's main images at status Ready, regenerated in the fresh pass from the screenplay text with character sheets only. The 30 September revision's nineteen retired images — the studies whose beats the rewrite moved or cut — stand under \`RETAKE PENDING\` notes (pinned in scripts/neonoire/rewrite-pending.mjs), and the twenty frames the revision and story pass 2 still owe are generated under the same character-sheets-only rule (scripts/neonoire/remaining-boards.mjs records which of them are installed — batch 1 of 30 September 2026 delivered ${remainingBoardsCompleted.length} of them, ${20 - remainingBoardsCompleted.length} still standing as honest placeholder slots). Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida, the young officer and Vera's mother, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
+    content: `NOBODY'S WITNESS (working repository name: NEONOIRE) — the final feature screenplay (September 2026). 102 numbered pages in the Screenplay tab — scenes 1–100 with 25A, 27A, 53A, 63A, 82A and 99A, after the 30 September revision retired scenes 13, 24, 97 and 99 — carried page by page straight from the draft, every one of them boarded. The first boarding runs shots 1–240 minus what the revision retired inside scenes 1, 13, 24, 51, 97 and 99 — those numbers stay retired and nothing is renumbered, the coverage passes are shots 241–296, the story pass 2 boards are 297–307, and the 30 September revision boards are 308–320 — 19 cast cards, keyframes generated ten at a time. Nothing is renumbered: a number retired by a rewrite stays retired, and new frames keep their assigned production numbers. Display and playback now follow screenplay scene order, with coverage inserted at its quoted beat; labels are identities, not running-order counters. Every numbered scene of the screenplay is boarded, and coverage shots keep their scene. Each page still carries the draft verbatim under its own header.\n\nThe draft at the repository root (\`${FOUNTAIN}\`) is the source of truth, and the Screenplay tab shows it one page per scene — the draft's own words under a production header — so what you edit in the app is what the draft says. Nothing is explained in this film and the workspace does not explain it either.\n\n**Boarding status**\n${passTable}\n\nEvery keyframe is an **AI-generated image**. The director selected the final nine and the corrected drawer/run sequence as **Ready main shots on 1 October 2026, with no further review requested** (scripts/neonoire/director-corrections.mjs). Other studies retain their existing status — except the cold open (scene 1's sixteen remaining frames and scene 2's original ten), which the director approved on 30 September 2026 as the film's main images at status Ready, regenerated in the fresh pass from the screenplay text with character sheets only. The 30 September revision's ${rewritePending.size} still-outdated images — the studies whose beats the rewrite moved or cut — stand under \`RETAKE PENDING\` notes (pinned in scripts/neonoire/rewrite-pending.mjs), and the twenty frames the revision and story pass 2 still owe are generated under the same character-sheets-only rule (scripts/neonoire/remaining-boards.mjs records the delivered set; the final nine were installed on 1 October 2026, ${remainingBoardsQueued.length} missing-image slots remain. The additional 305 entry is a plaza retake, not an extra missing slot). Continuity is carried by identity sheets for Mara, Vera, Jack, Ishida, the young officer and Vera's mother, used as references whenever they appear; the notes on each frame name the sheet. **From the final screenplay onward every image is 16:9 full-bleed (1920×1080)** — see the frame-format note.`,
   },
   {
     id: "neonoire-look", title: "The look — the draft's own words", color: "sand", createdAt,
@@ -453,7 +460,7 @@ for (const shot of shots) {
 const scenes = feature.map(scene => {
   const own = scene.boarded ? shots.filter(shot => shot.scene.key === scene.key) : [];
   return {
-    id: scene.id, title: scene.title, location: scene.location, time: scene.time,
+    id: scene.id, number: scene.label, title: scene.title, location: scene.location, time: scene.time,
     description: scene.description, characters: [...new Set(own.flatMap(shot => shot.cast.map(name => characters.find(c => c.name === name).id)))],
     actId: ACT.id, partId: scene.partId, kind: scene.kind || "Standard",
     ...(scene.lighting ? { lighting: scene.lighting } : {}),
@@ -468,12 +475,12 @@ const voicedLines = attachAudio(frames, readManifest(root), root);
 const project = {
   id: projectId,
   title: "Nobody's Witness",
-  description: `The final feature screenplay (September 2026): 102 numbered pages — scenes 1–100 with 25A, 27A, 53A, 63A, 82A and 99A, after the 30 September revision retired 13, 24, 97 and 99 — all boarded, 297 keyframes. Coverage shots 241–320 sit with their scenes and nothing is renumbered: 8, 11, 219, 274, 280–282 and the cut scenes’ frames stay retired gaps. The opening seven (66 shots), the hotel and Tokyo streets (69–86), the envelope and the notebook (87–95), Jack and Ishida (96–101), the cassette and the witness (102–110), Kurose and the storeroom (111–120), the raid (121–129), the escape (130–138), Ishida’s last night (139–147), the ending and the counter (155–161), Kanda revisited (162–170), the roadside inn (171–180), the Hive first seen (181–190), scenes 18–71 (191–240), the coverage passes (241–296), the story pass 2 boards (297–307) and the 30 September revision boards (308–320) — every keyframe 16:9 (1920×1080). The Screenplay tab carries the whole draft page by page; no scene is left unboarded. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 102 numbered pages — scenes 1–100 with 25A, 27A, 53A, 63A, 82A and 99A, after the 30 September revision retired 13, 24, 97 and 99 — all boarded, 297 keyframes. Shots are listed in screenplay scene order, with later coverage inserted at its quoted beat. Production numbers and filenames stay stable, not sequential playback counters: 8, 11, 219, 274, 280–282 and the cut scenes’ frames stay retired gaps. The opening seven (66 shots), the hotel and Tokyo streets (69–86), the envelope and the notebook (87–95), Jack and Ishida (96–101), the cassette and the witness (102–110), Kurose and the storeroom (111–120), the raid (121–129), the escape (130–138), Ishida’s last night (139–147), the ending and the counter (155–161), Kanda revisited (162–170), the roadside inn (171–180), the Hive first seen (181–190), scenes 18–71 (191–240), the coverage passes (241–296), the story pass 2 boards (297–307) and the 30 September revision boards (308–320) — every keyframe 16:9 (1920×1080). The Screenplay tab carries the whole draft page by page; no scene is left unboarded. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",
   coverImage: "/images/neonoire/s1/01-backstreet.jpg",
-  acts: [ACT], scenes, frames, characters, notes, brainstorm, moodboards,
+  acts: [ACT], scenes, frames: inStoryOrder(frames, scenes, root), characters, notes, brainstorm, moodboards,
   script,
   shareId: null, createdAt, updatedAt: createdAt,
 };

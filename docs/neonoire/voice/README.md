@@ -48,6 +48,10 @@ Keep the source of truth in the repo: takes in `public/audio/`, timings in `mani
 
 ## The animatic
 
+**In the app:** Export → **Animatic playback** renders a real MP4 from the current saved project, not a stale bundle. Choose the whole project, a scene or a scene range, 1080p/720p, playback/tight timing, dialogue, optional subtitles and score. Progress and cancellation are shown; the render continues when the dialog closes, and reopening resumes its status/download. Node + FFmpeg and a writable persistent `exports/animatics/` directory are required (not a short-lived serverless function). `FFMPEG` selects an executable if it is not on PATH. Outputs/snapshots are ignored by Git.
+
+The renderer preserves edited within-scene order and leaves **Static** shots still. `--camera` is opt-in for explicitly moving shots; the old inference from prose such as "no tracking" is removed. `--project <snapshot.json> --output <video.mp4> --resolution 720p --hold --no-camera --no-subs --no-music` exports a saved playback snapshot. `--no-audio` mutes dialogue and `--no-credits` omits the CLI's optional credits tail. The app never adds a credits tail to playback.
+
 `FFMPEG=/path/to/ffmpeg node scripts/neonoire/animatic.mjs --scene 98` (or `--from 96 --to 100`, or no flag for the whole film). Output: `exports/neonoire/` (not committed). ffmpeg: install it, or `pip install imageio-ffmpeg` for a static build.
 
 ## Rules

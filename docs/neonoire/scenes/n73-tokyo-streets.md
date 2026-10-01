@@ -33,8 +33,8 @@ IMAGE: 70-not-elegantly-badly.jpg
 NOTE: Replacement generated. The previous 35mm tracking move is removed; she passes through a static 50mm composition. This is the new street master. Keep the ivory machine's muted-red side panel, right-hand payment controls, green shutter, shallow gutter, drain grate and riveted columns. No fashion stride; heels, breath and rain only. She still wears BOTH shoes.
 
 73. WIDE — 50mm, static, low level — the machine, indifferent.
-A low level static camera at 70cm holds the ivory vending machine and the shuttered street as Vera passes left to right. Same wet wine-red silk dress, both shoes, increasingly rain-plastered hair and thin washed mascara tracks. She leaves the composition; the machine continues lighting the rain without following her. No other person on the street.
-SCRIPT: "She runs past a vending machine. It glows, indifferent."
+A low level static camera at 70cm holds the ivory vending machine and the shuttered street after Vera has passed it left to right, well beyond it in the right of frame. Same wet wine-red silk dress, both shoes, increasingly rain-plastered hair and thin washed mascara tracks. She leaves the composition; the machine continues lighting the rain without following her. No other person on the street.
+SCRIPT: "She runs past a vending machine. It glows, indifferent. She keeps going; the machine falls behind her."
 CAST: Vera Voss
 LIGHT: Practical night
 TIME: 8
@@ -51,3 +51,7 @@ TIME: 12
 ID: neonoire-shot-72
 IMAGE: 72-the-lost-heel.jpg
 NOTE: Replacement regenerated in session two so the puddle, kerb, drain grate and shoe orientation now match the shot 79 still life exactly. Lock this exact shoe, side, puddle, kerb, machine base and drain for shot 79. No detached second shoe; no new shoes for the confrontation. The signal is red, but not a wash of red theatrical light. Keyframe is after the skid, not the injury itself. Same side of the action throughout.
+
+## Director correction — 1 October 2026
+
+The route is linear, LEFT TO RIGHT: hotel behind → approaching the machine (Vera left, machine ahead/right) → clearly past it (machine left/behind, Vera right) → the crossing and one-shoe exit. Replaced stable assets 69, 70 and 71; kept the already-correct 72 one-shoe exit and matching 75/77 shoe still to retain RIGHT bare / LEFT shoe continuity. No frame sends her back to the machine. All selected run images are main shots at Ready. Static means static in the animatic, not an alternating synthetic pan. The script now explicitly puts the machine behind her and the crossing just beyond it. No dialogue or music cue was changed.

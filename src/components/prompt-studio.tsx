@@ -9,6 +9,7 @@ import { VisualStylePicker } from "./style-picker";
 import { DEFAULT_STYLE_ID, VISUAL_STYLES, visualStyle } from "@/lib/styles";
 import { buildFramePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { FrameTable } from "./storyboard";
+import { framesInSceneOrder, sceneNumber, shotNumber } from "@/lib/frame-order";
 
 const LS_STYLE = "frame-last-style";
 const LS_PLATFORM = "frame-last-platform";
@@ -45,7 +46,8 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
   });
 
   const scene = project.scenes.find(s => s.id === sceneId);
-  const scopeFrames = scope === "project" ? project.frames : project.frames.filter(f => f.sceneId === sceneId);
+  const orderedFrames = framesInSceneOrder(project.frames, project.scenes);
+  const scopeFrames = scope === "project" ? orderedFrames : orderedFrames.filter(f => f.sceneId === sceneId);
   const selectedIds = selected ?? scopeFrames.map(f => f.id);
   const chosen = scopeFrames.filter(f => selectedIds.includes(f.id));
   const currentModel = PLATFORMS.find(p => p.id === platform) || PLATFORMS[0];
@@ -73,11 +75,11 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
     if (selectedIds.length) onApplyStyle(selectedIds, id);
   }
 
-  const shotBlock = (f: StoryFrame, i: number) => `=== SHOT ${i + 1}: ${f.title} (${f.shotType}) ===\n${buildFramePrompt(project, f, platform, style)}`;
+  const shotBlock = (f: StoryFrame) => `=== SHOT ${shotNumber(f, orderedFrames.indexOf(f))}: ${f.title} (${f.shotType}) ===\n${buildFramePrompt(project, f, platform, style)}`;
   const combined = [
     `${project.title.toUpperCase()} — ${currentModel?.name} · ${styleName} · ${scope === "project" ? "WHOLE PROJECT" : (scene?.title || "Scene").toUpperCase()}`,
     "",
-    ...chosen.map((f, i) => shotBlock(f, i)),
+    ...chosen.map(f => shotBlock(f)),
   ].join("\n\n");
 
   async function copy(text: string, key: string) {
@@ -89,7 +91,7 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
     const body = [
       `${project.title.toUpperCase()} — ${isImage ? "AI IMAGE & STORYBOARD PROMPTS" : "AI VIDEO PROMPTS"} (${currentModel?.name} · ${styleName})`,
       "",
-      ...chosen.flatMap((f, i) => [shotBlock(f, i), ""]),
+      ...chosen.flatMap(f => [shotBlock(f), ""]),
     ].join("\n");
     downloadFile(body, `${slugify(project.title)}-${scope === "project" ? "project" : slugify(scene?.title || "scene")}-prompts.txt`);
   }
@@ -109,7 +111,7 @@ export function PromptStudio({ project, initialSceneId, onApplyStyle, onAddShot,
       <div className="prompt-toolbar">
         <div className="studio-scope">
           <div className="select-wrap"><select aria-label="Scope for prompts" value={scope} onChange={e => { setScope(e.target.value as "scene" | "project"); setSelected(null); setStyleOverride(null); }}><option value="scene">This scene</option><option value="project">Whole project</option></select></div>
-          {scope === "scene" && <div className="select-wrap scene-filter"><select aria-label="Scene for prompts" value={sceneId} onChange={e => { setSceneId(e.target.value); setSelected(null); setStyleOverride(null); }}>{project.scenes.map((s, i) => <option key={s.id} value={s.id}>{String(i + 1).padStart(2, "0")} · {s.title} — {s.location}</option>)}</select></div>}
+          {scope === "scene" && <div className="select-wrap scene-filter"><select aria-label="Scene for prompts" value={sceneId} onChange={e => { setSceneId(e.target.value); setSelected(null); setStyleOverride(null); }}>{project.scenes.map((s, i) => <option key={s.id} value={s.id}>{sceneNumber(s, i).padStart(2, "0")} · {s.title} — {s.location}</option>)}</select></div>}
           {onAddShot && (
             <button
               type="button"

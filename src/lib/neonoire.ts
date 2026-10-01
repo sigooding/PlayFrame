@@ -2,7 +2,7 @@ import bundle from "../../public/projects/neonoire-opening.json";
 import type { FilmProject } from "./types";
 import { validatePatch } from "./validation";
 
-// Generated from the final screenplay (Neonoire (3).fountain — 100 scenes, scenes 1–7 and 72–76 boarded)
+// Generated from the revised final screenplay (102 active scenes, all 297 shots pictured in scene order)
 // and the numbered shot boards by npm run build:neonoire;
 // verify:neonoire checks the screenplay pages, the schema, the shot boards and the keyframes.
 const project = bundle as FilmProject;

@@ -1,5 +1,35 @@
 # NEONOIRE — keyframe handoff
 
+## Latest director instruction — 1 October 2026: main images, drawer/run fixes, MP4 export
+
+**The preceding nine images are now main shots, status Ready, with no further review requested.** The director also selected the corrected scene-7/run images as main shots. The earlier draft/review wording below is historical and superseded for these IDs. [Current delivery](passes/director-continuity-animatic-2026-10-01.md).
+
+Seven replacement JPEGs installed at stable paths: **7/64, 65, 67**, **73/69, 70, 71**, **75/80**. The bottom drawer attaches to its cabinet; the purse and torn strap share one sealed bag inside it. The run goes left-to-right: hotel → approaching machine → already past machine → crossing/one-shoe exit. Retain the correct old **73/72 and 75/77** pair for RIGHT bare / LEFT shoe continuity. Ten generation calls were used, including the 64 correction; the two unsuitable shoe-route studies were not installed. No more generation is needed for the selected main shots.
+
+**Source script changed by explicit permission:** only drawer packaging/states (7) and forward machine/crossing geography (73). No dialogue or score changed. Part 9 item 11 of the bible records it. Saved default workspaces receive these clarifications and approval/notes updates; manually edited scripts, descriptions and custom images are checksum-protected.
+
+**MP4 option:** Export → **Animatic playback**. Whole project, one scene or range; 1080p/720p; playback holds or tight cut; recorded dialogue, optional subtitles and configured score. Real asynchronous FFmpeg rendering, progress, cancellation, resumable status and download. Static is static, never inferred from prose. CLI still works: `npm run animatic:neonoire -- --scene 73 --hold --no-camera --no-subs --no-music`. Set `FFMPEG` or install it on PATH; a persistent Node server/local export disk is required. The 16 separate older rewrite pins remain unchanged. Production build/typecheck, `verify:neonoire`, `verify:shot-order`, both browser suites, `verify:animatic`, features live, Rapture and 903/903 assets pass. ESLint has no errors (21 existing img advisories). Preview: production port 3000 with FFmpeg configured.
+
+---
+
+## Start here — 1 October 2026: all missing images delivered; scene order fixed
+
+**Nobody's Witness now has 297/297 images across 102 active scenes, zero missing placeholders.** The final nine draft studies are installed: **298, 299, 300, 302, 310, 311, 313, 314, 320**. The budget used ten generations, including one corrective fresh 311. Use the [final pass ledger](passes/remaining-boards-final-2026-10-01.md) and [labelled nine-frame review](../../public/images/neonoire/reviews/remaining-boards-final-2026-10-01.jpg), not the older missing/aspect queues below.
+
+**Still outstanding:** the **16 obsolete installed** frames remain Needs review: **03, 06, 17, 18, 27, 113, 131, 132, 141, 142, 143, 160, 186, 193, 194, 228**. They were not regenerated in this pass. New images are drafts: 310/311 miniature proportions and skyline, 314 corner architecture, 302 folder thickness and 300 aisle placement need a director's continuity judgement. Frame 311 now shows one removed Hive on a tray and a finished plaza, not the rejected duplicate. No older image or screenplay line was altered.
+
+**Running order is repaired.** `scripts/neonoire/story-order.mjs` locates board quotes inside their own screenplay scenes. `src/lib/frame-order.ts` groups runtime cards by the project's scene array while preserving within-scene edits and fixed production numbers. All views, player, prompts and CSV/print agree. Numbers jump because they retain production identity; do not renumber to make them sequential. The original last frame 161 is still last. Inserted scene labels and cut-scene gaps survive save/import. New/duplicate frames receive a fresh production number.
+
+**Existing workspaces:** list/get/shared/template reads use `src/lib/bundle-refresh.ts` to fill untouched marked blanks, backfill labels and migrate the exact old default ordering only. They never replace the saved screenplay or structural/user edits. Custom shot order, titles, notes, images, deliberate blanks and deletions survive. For a substantially older screenplay/scene set, import `public/projects/neonoire-opening.json` as a separate copy; opening the template will not overwrite your work.
+
+**Next:** review the final-nine drafts/caveats, then regenerate the 16 older rewrite pins under the current character-sheets-only rule. Do not repeat this completed pass or attach location/prop masters. No dialogue/audio work is required.
+
+**Checks:** `npm run verify:shot-order` covers migration/import and real rendered components/exports. `build:neonoire`, `verify:neonoire`, `verify:features`, `verify:rapture`, `check:assets` and `typecheck` pass; production build passes. ESLint has zero errors and the existing img-element advisory warnings. `verify:shot-order:browser` also passes against the production server: grid/list, all nine images, player/prompts, new/duplicate numbers, saved drag order, scene boundaries, sharing and mobile/desktop without browser errors. `verify:features:live` includes successful HTTP screenplay rendering. Pending-image note checksums protect instructions added while an image was waiting. Full results are in the final pass ledger.
+
+---
+
+## Historical handoff (superseded where it mentions missing queues)
+
 **Read [`story-bible.md`](story-bible.md) first**, then this file. Diff the working script against [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain); differences not listed in the bible's Part 9 were made in PlayFrame.
 
 ## Current state — 30 September 2026 (the remaining boards, batch 1)

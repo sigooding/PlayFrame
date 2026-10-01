@@ -7,6 +7,7 @@ import { raptureProject } from "./rapture";
 import { neonoireProject } from "./neonoire";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
+import { bundledFrameUpdates } from "./bundle-refresh";
 
 function serialize(row: typeof filmProjects.$inferSelect): FilmProject {
   return { ...row, moodboards: row.moodboards ?? [], createdAt: row.createdAt.toISOString(), updatedAt: row.updatedAt.toISOString() };
@@ -22,7 +23,7 @@ export async function listProjects() {
     }
     rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
   }
-  return rows.map(serialize);
+  return Promise.all(rows.map(row => refreshNeonoireFrames(serialize(row))));
 }
 
 /** Opt-in for existing databases; never reseed on every page load or replace edited material. */
@@ -34,49 +35,35 @@ export async function openRaptureProject() {
   return project;
 }
 
-/** A slot that is still waiting for its keyframe: empty, labelled, and marked in its notes. */
-const isAwaitingKeyframe = (frame: { image: string; title: string; notes: string }) =>
-  !frame.image && /\(keyframe missing\)$/.test(frame.title) && frame.notes.includes("KEYFRAME MISSING");
+/** Delivered images and default-order migrations never replace a writer's screenplay or shot edits. */
+async function refreshNeonoireFrames(existing: FilmProject): Promise<FilmProject> {
+  if (existing.id !== neonoireProject.id) return existing;
+  const patch = bundledFrameUpdates(existing, neonoireProject);
+  if (!patch) return existing;
+  const [row] = await db.update(filmProjects).set({ ...patch, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
+  return row ? serialize(row) : existing;
+}
 
-/**
- * The NEONOIRE workspace (final screenplay + opening boards), opened the same way the series
- * workspace is — the bundle
- * is inserted only if it is absent, and re-opening never overwrites what a writer has changed.
- *
- * Keyframes arrive ten at a time, and a workspace opened before a pass landed would otherwise keep
- * its placeholders for ever. So slots that are still untouched placeholders are filled in from the
- * bundle on the way through, and nothing else is touched.
- */
+/** Opt-in workspace; subsequent reads fill untouched placeholders and migrate only the old default order. */
 export async function openNeonoireProject() {
   await ensureSchema();
   await db.insert(filmProjects).values(neonoireProject).onConflictDoNothing();
   const existing = await getProject(neonoireProject.id);
   if (!existing) throw new Error("The NEONOIRE project was not created.");
-  const bundleFrames = new Map(neonoireProject.frames.map(frame => [frame.id, frame]));
-  const frames = existing.frames.map(frame => {
-    // Dialogue audio arrives the same way: a saved frame with no audio of its own takes the bundle's,
-    // and a frame that already has audio (or whose audio was removed on purpose by having any) is left alone.
-    const withAudio = !frame.audio?.length && bundleFrames.get(frame.id)?.audio?.length ? { ...frame, audio: bundleFrames.get(frame.id)!.audio } : frame;
-    if (!isAwaitingKeyframe(withAudio)) return withAudio;
-    const arrived = bundleFrames.get(frame.id);
-    return arrived?.image ? { ...withAudio, image: arrived.image, title: arrived.title, status: arrived.status, notes: arrived.notes } : withAudio;
-  });
-  if (!frames.some((frame, i) => frame !== existing.frames[i])) return existing;
-  const [row] = await db.update(filmProjects).set({ frames, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
-  return serialize(row);
+  return existing;
 }
 
 export async function getProject(id: string) {
   await ensureSchema();
   const [row] = await db.select().from(filmProjects).where(eq(filmProjects.id, id)).limit(1);
-  return row ? serialize(row) : null;
+  return row ? refreshNeonoireFrames(serialize(row)) : null;
 }
 
 export async function getSharedProject(token: string) {
   await ensureSchema();
   if (!/^[0-9a-f-]{36}$/i.test(token)) return null;
   const [row] = await db.select().from(filmProjects).where(eq(filmProjects.shareId, token)).limit(1);
-  return row ? serialize(row) : null;
+  return row ? refreshNeonoireFrames(serialize(row)) : null;
 }
 
 export async function createProject(input: { title: string; description?: string; genre?: string; format?: string; template?: string }) {

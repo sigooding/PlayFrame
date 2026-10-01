@@ -18,7 +18,12 @@
     "split:neonoire": "node scripts/neonoire/split-opening.mjs",
     "passes:neonoire": "node scripts/neonoire/pass-prompts.mjs",
     "verify:neonoire": "node scripts/verify-neonoire.mjs",
-    "review:neonoire": "node scripts/neonoire/review-sheet.mjs"
+    "review:neonoire": "node scripts/neonoire/review-sheet.mjs",
+    "verify:shot-order": "node scripts/verify-shot-order.mjs",
+    "verify:shot-order:browser": "node scripts/verify-shot-order-browser.mjs",
+    "animatic:neonoire": "node scripts/neonoire/animatic.mjs",
+    "verify:animatic": "node scripts/verify-animatic.mjs",
+    "verify:animatic:browser": "node scripts/verify-animatic-browser.mjs"
   },
   "dependencies": {
     "@playwright/test": "^1.63.0",

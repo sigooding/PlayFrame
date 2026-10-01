@@ -36,8 +36,8 @@ IMAGE: 64-the-bottom-drawer.jpg
 NOTE: He does not look around first. He has already decided what he is going to do and the audience is allowed to see that he made the decision before this scene began.
 
 65. INSERT — 85mm, static, high angle — the evidence bag.
-Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp.
-SCRIPT: "Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp."
+Inside the drawer, sealed together in one clear evidence bag: Mara's purse and the torn strap, coiled beside it. Still damp.
+SCRIPT: "Inside the drawer, sealed together in one clear evidence bag: Mara's purse and the torn strap, coiled beside it. Still damp."
 CAST: —
 LIGHT: Practical night
 TIME: 9
@@ -78,3 +78,7 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 | pass | shots | frames |
 | --- | --- | --- |
 | 7 | 63–68 | The detectives room, The bottom drawer, The evidence bag, He looks at it, Drawer closed, The clock |
+
+## Director correction — 1 October 2026
+
+Opening (64), evidence insert (65) and closed drawer (67) are replaced as main shots. Exactly two shallow closed upper drawers and one deep lowest drawer attached to the pedestal; the purse and coiled torn strap are sealed together, entirely inside that bottom drawer. Main images selected by the director, status Ready; no review requested. The script clarifies that the two upper drawers stay closed and both objects share one sealed bag. Dialogue unchanged.

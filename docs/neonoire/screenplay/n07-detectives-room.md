@@ -11,11 +11,11 @@ INT. POLICE STATION, DETECTIVES' ROOM - CONTINUOUS #7#
 
 Rows of cluttered desks under humming fluorescent light. Most are empty at this hour. A radio plays low somewhere.
 
-Ishida sits at his desk and opens the bottom drawer.
+Ishida sits at his desk and opens the bottom drawer. The two drawers above it stay closed.
 
 .INSERT - THE DRAWER
 
-Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp.
+Inside the drawer, sealed together in one clear evidence bag: Mara's purse and the torn strap, coiled beside it. Still damp.
 
 .BACK TO SCENE
 
