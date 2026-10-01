@@ -1,5 +1,48 @@
 # NEONOIRE — keyframe handoff
 
+## Current — 1 October 2026: the retake round on the rewrite queue (cold open + scene 20)
+
+The director's line was **"also fill in some of the missing shots"**. Measured against the bundle, nothing was
+missing: 299/299 keyframes on disk, no empty scene. What was outstanding is the other kind of gap — **16 frames
+pinned `RETAKE PENDING`**, generated images whose beats the 30 September rewrite retired. Seven were worked off the
+front of that queue, in screenplay order, from the current Fountain text with character sheets only: **1/03, 1/06,
+1/17, 1/18, 2/27, 20/193, 20/194**. Each went back over its own stable path (`s1/03-mara-walks.jpg`,
+`s2/27-the-notebook.jpg`, `s20/191-prove-it.jpg` under shot number 193 — names keep their vintage, numbers stay
+stable), and each was reviewed at full size, never from a montage.
+
+The scene 1 beats that had to die: the crossing walk (she is already in the doorway when the scene finds her), the
+purse snagging and tearing on the pole (it slides off her shoulder and is **left** open in the road), and the body
+search with the torch beam ending on the bag (there is no search: he walks back unhurried and never looks at the
+doorway, and the car takes the long way round the block). Scene 2's: **nobody takes the notebook** — that is the
+retake's whole point, and the frame now holds floor level per shot 25's rule, with her red clip working loose in the
+gap. Scene 20's: **no knife in the room** and the clip on the closed sketchbook rather than in Jack's palm.
+
+**Two board headings changed** because a title naming a retired beat is a lie on the card: 1/18 is *"the purse, and
+the man walking away"*, 2/27 is *"the notebook left"*. Three `CAST:` lines were corrected to what is in frame
+(18 loses the old man and gains Mara; 27 gains Mara and the journalist; 194 has nobody in it). 193's `SCRIPT:` quote
+moved to the doorway line the frame actually plays — and because display order follows that quote, **scene 20 now
+plays 309 → 193 → 194 → 284**, the voicemail replay before Jack is in the doorway, which is the order the page gives
+(990, 998, 1000). `verify-shot-order`'s expectation moved with it and says why. No screenplay line was touched.
+
+**Nine generations of ten.** Two were spent and thrown away on shot 27 — a masked man standing in full figure (that
+breaks the scene's own floor-level law) and a frame that put Mara's face in shot with dark hair (a cast-match
+failure is a regenerate, per the studio rule, not a caveat). One call is deliberately left unspent as the next
+session's margin.
+
+**Release semantics, in one line:** the pins are dropped on the 305–307 precedent, so the five cold-open frames are
+`Ready` again **by rule** (`coldOpenFreshCompleted` drives `expectedDraftStatus`) and scene 20's two go back to
+`Draft`; `Needs review` 16 → **9**. The 30 September sign-off covers the composition and the pass, not the 1 October
+pixels — approval of those is the director's, and one line in `scripts/neonoire/rewrite-pending.mjs` re-pins any of
+them. `verify:neonoire` was flipped from asserting the pins to asserting their release, and now also fails if a
+generation brief asks for a retired beat or if a scene-1 frame drops back onto the alley layout sheet.
+
+Still queued, with each fault named in the module header: **113, 131, 132, 141–143, 160, 186, 228** — the sedan
+interior of 94 (only *It's only tea* survives there), Vera as just a face in 83, a hand in the dark in 89, the old
+woman's door in 90, the third stool in 100, and the two Hive-entrance frames pinned only by the unlettered banner.
+[Ledger, before/after table, caveats](passes/cold-open-storeroom-retake-2026-10-01.md);
+[before/after sheet](../../public/images/neonoire/reviews/cold-open-retake-before-after-2026-10-01.jpg),
+[queue sheet](../../public/images/neonoire/reviews/cold-open-retake-queue-2026-10-01.jpg).
+
 ## Current — 1 October 2026: Jack's office desk lock, and the card out of the puddle
 
 Director's note: scene 6's card sat **in the tea puddle**, scene 11's Jack **pulled a box off nothing**, and the

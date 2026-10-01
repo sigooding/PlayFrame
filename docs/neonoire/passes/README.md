@@ -48,6 +48,7 @@ Written by the sessions they describe, not regenerated here. Read whichever one 
 - [NEONOIRE — script-pass image retakes (29 September 2026)](script-pass-image-retakes.md)
 - [NEONOIRE — shot 13 retake: the sedan backs out (27 September 2026)](taillights-backs-out.md)
 - [NEONOIRE — the Hive canon: one building, one look file (28 September 2026)](hive-canon.md)
+- [NEONOIRE — the cold-open and storeroom retake round (1 October 2026)](cold-open-storeroom-retake-2026-10-01.md)
 - [NEONOIRE — the final-screenplay revision (30 September 2026)](revision-2026-09-30.md)
 - [NEONOIRE — the letter rewrite coverage: Sakai chose Mara (28 September 2026)](letter-rewrite-coverage.md)
 - [NEONOIRE — the roadside inn, first boarding: the stairs and the colour change (26 September 2026)](roadside-inn.md)

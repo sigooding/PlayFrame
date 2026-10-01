@@ -9,29 +9,29 @@ Grammar: Three feet that neither of them crosses, until a red bird does.
 
 ## Frame format — 25 September 2026
 
-Both shots (193–194) are **16:9, 1920×1080, full-bleed**, numbered in boarding order. The room follows `s13/179-eat.jpg` and `s84/115-the-storeroom.jpg`. **Mara** follows `sheets/mara-face.jpg` in hiding (the brown cardigan that isn't hers, no clip); **Jack** follows `sheets/jack.jpg`. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
+Both shots (193–194) are **16:9, 1920×1080, full-bleed**, numbered in boarding order. The room follows `s13/179-eat.jpg` and `s84/115-the-storeroom.jpg`. **Mara** follows `sheets/mara-face.jpg` in hiding (the brown cardigan that isn't hers, no clip); **Jack** follows `sheets/jack.jpg`. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage. Both frames were regenerated from the current scene 20 text in the retake round of 1 October 2026 (the knife and the open palm are out of the scene) and installed over their own filenames — `191-prove-it.jpg` and `192-the-red-bird-clip.jpg`, whose names keep their first-boarding vintage while the numbers stay 193 and 194.
 
 ---
 
 193. MEDIUM WIDE — 35mm, static, low level — prove it.
-Mara stands against the far wall with the kitchen knife in both shaking hands; Jack stops in the curtain with his own hands open where she can see them.
-SCRIPT: "MARA sits on the futon with her knees up and her phone to her ear, listening."
+Mara is back against the far wall on the rolled futon, knees drawn up, both hands empty and open at her sides; Jack stops dead in the entrance at right with his own hands raised, palms out, where she can see them. Three feet of bare floor between them that neither of them crosses. Her phone lies face-up on the futon where she dropped it. Nothing in the room is a weapon and nothing is held.
+SCRIPT: "Jack is in the doorway. She scrambles back against the wall."
 CAST: Jack, Mara Voss
 LIGHT: Practical night
 TIME: 20
 ID: neonoire-shot-193
 IMAGE: 191-prove-it.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The first study sat Mara on the futon; this one stands her up, as written. Jack keeps to the curtain until the knife drops.
+NOTE: RETAKE LANDED 1 October 2026 — regenerated from the current scene 20 text with `sheets/mara-face.jpg`, `sheets/jack.jpg` and the storeroom masters `s13/179-eat.jpg` and `s84/115-the-storeroom.jpg`, installed over `s20/191-prove-it.jpg`. **No knife in the room and no knife in her hands**; the board's old line that this study "stands her up, as written" is retired with the study it described, because the rewrite puts her on the futon with the phone and gives Jack nothing to hold but the space between them. He reads just inside the entrance at the right of the bulb's pool rather than behind the curtain — one step in, and he stops there. Reviewed at full size: open hands both sides, perspective holds, the flour sacks carry the same FLOUR stencil the masters do.
 
 194. EXTREME CLOSE-UP — 85mm, static, eye level — the red bird clip.
-Jack's open palm, steady, carrying the red bird clip; the storeroom dark behind it.
+The red bird clip lying on the crown of her closed sketchbook, which he has set on a stacked flour sack between them, the bulb hard above and the storeroom dark behind. No hand holds it and nothing is offered.
 SCRIPT: "Jack sets her sketchbook on a flour sack between them, with the hair clip on top."
-CAST: Jack, Mara Voss
+CAST: —
 LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-194
 IMAGE: 192-the-red-bird-clip.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The clip follows the red enamel sparrow of `s1/03-mara-walks.jpg`; the same prop Vera wears in her hair at the end.
+NOTE: RETAKE LANDED 1 October 2026 — regenerated on the storeroom masters alone, installed over `s20/192-the-red-bird-clip.jpg`. The clip follows the red enamel sparrow of `s1/03-mara-walks.jpg`; it is the same prop Vera wears in her hair at the end, and it is the only saturated colour in the frame. Jack's open palm is out of the scene — the book carries it now, and the book stays closed with nothing legible on its cover. Two flaws for set, not for another generation: the sack under the book reads woven hessian where shot 193's read printed paper with the same stencil, and the clip reads slightly oversized at 85mm.
 
 ---
 
@@ -55,7 +55,7 @@ NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s13/179-eat.jp
 
 ## Coverage — the 30 September 2026 revision
 
-The revision moves the voicemail here from the cut scene 13 and gives the scene its named close-up; 193 and 194 are re-quoted above and held RETAKE PENDING — the knife and the open palm are out of the scene. 284 (the coward line) survives verbatim.
+The revision moves the voicemail here from the cut scene 13 and gives the scene its named close-up; 193 and 194 were re-quoted above and held RETAKE PENDING — the knife and the open palm are out of the scene. Both were regenerated from that text and released from the pin in the retake round of 1 October 2026, so the frames now agree with it: empty hands at the wall, and the clip on the closed book. 284 (the coward line) survives verbatim.
 
 ---
 

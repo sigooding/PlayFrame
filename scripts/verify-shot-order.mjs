@@ -70,7 +70,10 @@ for (const [index, scene] of feature.entries()) {
   }
 }
 const own = key => project.frames.filter(frame => frame.sceneId === `neonoire-${key}`).map(frame => frame.shotNumber);
-assert.deepEqual(own("s20"), [193, 309, 194, 284], "The moved voicemail plays inside its scene");
+// The retake round of 1 October 2026 anchored 193 on the doorway line it now shows (Fountain 1000) rather
+// than on the earlier futon line (990), which puts the replay between them — the order the page gives:
+// she plays it again (998), then Jack is in the doorway (1000), then the clip on the book, then 284.
+assert.deepEqual(own("s20"), [309, 193, 194, 284], "The moved voicemail plays inside its scene, ahead of the doorway beat");
 assert.deepEqual(own("s51"), [310, 311]);
 assert.deepEqual(own("s99a"), [158, 159, 305, 306, 307], "Demolition precedes the dissolve to the plaza within one scene");
 assert.deepEqual(own("s75"), [79, 80, 81, 82, 83, 314], "The empty crossing is the last pillow shot, not a final-project append");
