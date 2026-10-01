@@ -167,6 +167,17 @@ AssertionError: the office lock ends mid-sentence — a line break in office-lay
 
 [Insert review sheet: two pairs, before / after](../../../public/images/neonoire/reviews/office-desk-lock-inserts-2026-10-01.jpg)
 
+### The room, whole, in cut order
+
+Three before/after sheets answer "what changed". This one answers the question the director actually asked — *is it
+one room now?* — by putting all 17 office frames on a single page in the order they cut: `reviews/office-room-after-lock-2026-10-01.jpg`.
+Judged on that sheet rather than frame by frame, the desk is the same wide walnut top with its pale cup rings in
+every frame that shows a desktop, the banker's lamp is at the left end in all of them, exactly one rotary telephone
+appears anywhere, the CRT sits on the cabinet to the right and is showing a picture rather than snow, and the door
+carries the whole word JACK. The three frames with no desk in them (two stairwells and one landing) are on the sheet
+too, so nobody has to take that on trust. This is the artifact to approve or reject against; the pairs are the
+audit trail.
+
 ## Honest caveats
 
 - These remain **AI-generated draft studies at status Draft — storyboard continuity, not production
