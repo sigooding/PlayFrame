@@ -48,7 +48,7 @@ assert.deepEqual(project.scenes.map(scene => scene.id), feature.map(scene => sce
 assert.deepEqual(project.scenes.map(scene => scene.number), feature.map(scene => scene.label));
 for (const frame of project.frames) {
   assert.equal(frame.shotNumber, planned.get(frame.id).n);
-  assert.equal(frame.image, `/images/neonoire/${planned.get(frame.id).scene.key}/${planned.get(frame.id).image}`);
+  assert.equal(frame.image, planned.get(frame.id).path || `/images/neonoire/${planned.get(frame.id).scene.key}/${planned.get(frame.id).image}`);
 }
 assert.equal(new Set(project.frames.map(frame => frame.shotNumber)).size, project.frames.length);
 assert.deepEqual(project.frames.map(frame => frame.id), inStoryOrder(project.frames, project.scenes, root).map(frame => frame.id));
@@ -72,6 +72,7 @@ for (const [index, scene] of feature.entries()) {
 const own = key => project.frames.filter(frame => frame.sceneId === `neonoire-${key}`).map(frame => frame.shotNumber);
 assert.deepEqual(own("s20"), [193, 309, 194, 284], "The moved voicemail plays inside its scene");
 assert.deepEqual(own("s51"), [310, 311]);
+assert.deepEqual(own("s99a"), [158, 159, 305, 306, 307], "Demolition precedes the dissolve to the plaza within one scene");
 assert.deepEqual(own("s75"), [79, 80, 81, 82, 83, 314], "The empty crossing is the last pillow shot, not a final-project append");
 assert.deepEqual(own("s100"), [320, 160, 265, 260, 161], "News precedes Vera's stool and the held ending");
 assert.equal(project.frames.at(-1).shotNumber, 161);

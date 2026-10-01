@@ -4,7 +4,7 @@ OPENING — SCENE 7 — INT. POLICE STATION, DETECTIVES' ROOM
 INT. POLICE STATION, DETECTIVES' ROOM - CONTINUOUS
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Detective Ishida.
-Grammar: Rows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four 
+Grammar: Rows of cluttered desks under humming fluorescent light, most of them empty at this hour, a radio playing low somewhere. No dialogue at all. Four
 shots of a man deciding not to tell anyone, and one shot of a clock that runs a minute fast.
 
 INT. POLICE STATION, DETECTIVES' ROOM - CONTINUOUS #7#

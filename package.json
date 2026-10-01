@@ -23,7 +23,8 @@
     "verify:shot-order:browser": "node scripts/verify-shot-order-browser.mjs",
     "animatic:neonoire": "node scripts/neonoire/animatic.mjs",
     "verify:animatic": "node scripts/verify-animatic.mjs",
-    "verify:animatic:browser": "node scripts/verify-animatic-browser.mjs"
+    "verify:animatic:browser": "node scripts/verify-animatic-browser.mjs",
+    "verify:revision:neonoire": "node scripts/verify-revision-restoration.mjs"
   },
   "dependencies": {
     "@playwright/test": "^1.63.0",

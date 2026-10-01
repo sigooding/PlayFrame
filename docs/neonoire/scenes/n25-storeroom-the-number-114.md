@@ -15,8 +15,8 @@ The single shot (202) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 
 202. MEDIUM WIDE — 35mm, static, low level — the number 114.
 Mara sits cross-legged on the futon with a bowl of rice going cold in her lap and her fist open on the key; Jack sits on the floor against the opposite wall, leaning forward. They talk quietly, as if the building is listening. It is.
-SCRIPT: "Mara opens her fist. The coin-locker key on its worn tag."
-CAST: Jack, Mara Voss
+SCRIPT: "The bulb. The flour sacks. Mara sits cross-legged on the futon."
+CAST: Jack, Mara Voss, Kaneko
 LIGHT: Practical night
 TIME: 18
 ID: neonoire-shot-202
@@ -34,3 +34,7 @@ TIME: 4
 ID: neonoire-shot-258
 IMAGE: 201-the-stamp.jpg
 NOTE: Coverage, shot 258. The key follows s1/16-the-key.jpg: the oval tag stays 87, the cold-open prop. 114 is lettered on the brass of the key, which is the number this scene stamps into the metal. The screenplay now puts the legible 114 on the tag instead; this older image still shows the 87-tag/metal-stamp treatment. Leave the frame as directed, without treating 87 as a new scripted number. Mara's hand is in the borrowed brown cardigan, no bird clip. The storeroom follows s25/200-the-number-114.jpg.
+
+## Recovered scene-13 exchange — 1 October 2026
+
+The master begins with Kaneko bringing rice: Eat / Has anyone come / Nobody comes here who is not lost. She leaves; the rice goes cold as Jack and Mara talk. The selected still samples the later two-shot after she has gone. Three existing recorded takes from 13 are re-pinned here; no voice changes. Mara's later recollection now matches the rewritten scene 1 (the key and Don't let them have it), not its deliberately cut father line.

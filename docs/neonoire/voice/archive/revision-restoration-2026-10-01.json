@@ -1,0 +1,25 @@
+{
+  "reason": "Scene 25 must not quote the father line deliberately cut from rewritten scene 1. The original take/file is preserved. New correct text awaits recording; no voice identity change.",
+  "retired": {
+    "id": "s25-mara-he-knew-me-he-saw-me",
+    "frameId": "neonoire-shot-202",
+    "character": "MARA",
+    "text": "He knew me. He saw me in the doorway and he walked away from me, so they wouldn't look. And at the end he said, in English \u2014 \"Your father. It was not what they say.\"",
+    "prompt": "He knew me. He saw me in the doorway and he walked away from me, so they wouldn't look. And at the end he said, in English \u2014 [pause] \"Your father. It was not what they say.\"",
+    "file": "/audio/neonoire/s25/202-mara-he-knew-me-he-saw-me.mp3",
+    "offset": 10.74,
+    "duration": 12.75,
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "model": "eleven_v4",
+    "generation": {
+      "flow": "zwWk8o7dCHdeYJNtHmVm",
+      "session": "LpK3JJOOne385OmEpFar",
+      "id": "nk493HqDSMXLPHmb2LVI"
+    },
+    "status": "take"
+  },
+  "replacementText": "He knew me. He saw me in the doorway and stopped. And at the end he pressed the key into my hand. \"Don't let them have it.\"",
+  "unrecorded": [
+    "KUROSE, scene 94: It's only tea."
+  ]
+}

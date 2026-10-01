@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 53A — INT. TOTO SHIMBUN NEWSROOM
 INT. TOTO SHIMBUN NEWSROOM - DAY
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Harada, The Journalist.
-Grammar: The scene 82 newsroom by day, three channels at once, and two women across a desk with a photograph between them. Ordinary volume, static camera; the 
+Grammar: The scene 82 newsroom by day, three channels at once, and two women across a desk with a photograph between them. Ordinary volume, static camera; the
 only stillness is Vera hearing that a car was promised and never came.
 
 INT. TOTO SHIMBUN NEWSROOM - DAY #53A#

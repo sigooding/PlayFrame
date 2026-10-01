@@ -76,12 +76,12 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 102, "Every scene of the revised screenplay and the six inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 297;
+const EXPECTED_SHOTS = 299;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 // 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
 // earlier generation blocks; the audits below read those blocks' pre-revision runs.
 const revisionBoards = f => shotNo(f) >= 308;
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The boarded screenplay carries 297 numbered shots: 307 stood before the 30 September revision, which retired 22 frames in place and boarded 13 new ones (308–320)");
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 299 numbered shots (158/159 returned inside 99A): 307 stood before the 30 September revision, which retired 22 frames in place and boarded 13 new ones (308–320)");
 assert.equal(project.characters.length, 19, "Nineteen cast cards after the revision added Vera's mother");
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -427,6 +427,11 @@ pass("scene 97 retired: the ground-breaking, the tent and the crawl come off the
 const ending = generationFrames.filter(f => ["neonoire-s98", "neonoire-s100"].includes(f.sceneId) && !revisionBoards(f));
 assert.deepEqual(ending.map(f => f.id), ["neonoire-shot-155", "neonoire-shot-156", "neonoire-shot-157", "neonoire-shot-160", "neonoire-shot-161", "neonoire-shot-241", "neonoire-shot-260", "neonoire-shot-265"], "Three on the roof, two at the new counter, the face in the window and the two late adds");
 assert.deepEqual(new Set(ending.map(f => f.image)), new Set(endingImages.filter(p => !p.includes("/s99/"))));
+const demolition = project.frames.filter(f => f.sceneId === "neonoire-s99a" && f.shotNumber < 240);
+assert.deepEqual(demolition.map(f => f.id), ["neonoire-shot-158", "neonoire-shot-159"]);
+assert.deepEqual(demolition.map(f => f.image), ["/images/neonoire/s99/156-cut-open.jpg", "/images/neonoire/s99/157-the-sign.jpg"]);
+assert.deepEqual(project.frames.filter(f => f.sceneId === "neonoire-s99a").map(f => f.shotNumber), [158, 159, 305, 306, 307]);
+assert.equal(project.frames.find(f => f.id === "neonoire-shot-305").transition, "Dissolve");
 assert.deepEqual(jpegDimensions(veraLookESheet), [1920, 1080]);
 for (const frame of ending) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
@@ -437,7 +442,7 @@ for (const frame of rooftop) for (const detail of ["WARDROBE LOOK E", "sheets/ve
 for (const frame of ending.filter(f => f.sceneId === "neonoire-s100")) for (const detail of ["WARDROBE LOOK F", "PEACOAT", "RED ENAMEL BIRD CLIP", "s86/121-the-shutter.jpg"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 100 continuity: ${detail}`);
 assert(!ending.some(f => f.notes.includes("WARDROBE LOOK D")), "Look D ended with the cut scene 97");
 assert(project.moodboards.some(b => b.items.some(i => i.image === veraLookESheet)), "Look E travels with the cast board");
-pass("the ending, revised: seven 16:9 shots — the first dry sky, the red bird clip, and a second bowl with the news at sound down above it; Vera in Looks E and F; the cut-open Hive retired with scene 99");
+pass("the ending, revised: seven 16:9 shots — the first dry sky, the red bird clip, and a second bowl with the news at sound down above it; Vera in Looks E and F; the cut-open Hive restored at the opening of 99A");
 
 // Scenes 8–12: Kanda revisited — boarded after the ending, so numbered 162–170; Vera in her original look.
 const kanda = generationFrames.filter(f => ["neonoire-s8", "neonoire-s9", "neonoire-s10", "neonoire-s11", "neonoire-s12"].includes(f.sceneId));
@@ -1129,7 +1134,7 @@ pass("director main shots: final nine approved, seven replacements installed, no
   assert(s83master.notes.includes("Rain on the glass") && s83master.notes.includes("24mm room"), "The scene 83 master is the fortieth floor with rain on the glass");
   // 4. Every exterior stays wet until 98: the draft's one rain-stopped line is two lines into 98.
   const stopped = draft.map((l, i) => /rain (has stopped|stops)/i.test(l) ? i : -1).filter(i => i >= 0);
-  assert.deepEqual(stopped, [heading(98) + 2], "The rain stops once, and only in scene 98");
+  assert.deepEqual(stopped, [heading(98) + 4], "The rain stops once, and only in scene 98");
   pass("director's global rules: the film title over the bundle, one score cue at 75, seven named inserts and no more, 83 on its wide master, wet until 98");
 }
 

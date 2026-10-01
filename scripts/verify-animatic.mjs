@@ -53,11 +53,7 @@ assert.equal(cameraMove({ movement: "Unspecified" }, 5), null);
 pass("CLI and app preserve the same edited within-scene order; Static never becomes a synthetic or alternating pan");
 
 const older = structuredClone(project);
-older.script = older.script
-  .replace("Ishida sits at his desk and opens the bottom drawer. The two drawers above it stay closed.", "Ishida sits at his desk and opens the bottom drawer.")
-  .replace("Inside the drawer, sealed together in one clear evidence bag: Mara's purse and the torn strap, coiled beside it. Still damp.", "Sealed in a clear evidence bag: Mara's purse. The torn strap coiled beside it. Still damp.")
-  .replace("She runs past a vending machine. It glows, indifferent. She keeps going; the machine falls behind her.", "She runs past a vending machine. It glows, indifferent.")
-  .replace("Just beyond it, at a crossing,", "At a crossing,");
+older.script = readFileSync("docs/neonoire/baseline/Neonoire_PreRestoration_2026-10-01.fountain", "utf8").replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 for (const frame of older.frames) if (directorApprovedMainIds.has(frame.id)) frame.status = "Draft";
 const patch = bundledFrameUpdates(older, project);
 assert.equal(patch.script, project.script);

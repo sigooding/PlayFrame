@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 83 — INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT
 INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Kurose.
-Grammar: The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. The revision's rule for this scene: 
+Grammar: The fortieth floor by rainy day: 24mm room, 85mm faces, 50mm when she stands and when he reaches for the phone. The revision's rule for this scene:
 the “He sat where you're sitting” line and “It's just a face” play wide — no close-ups on the accusations.
 
 INT. CHAIRMAN'S OFFICE, KUROSE DEVELOPMENT - DAY #83#
@@ -13,7 +13,9 @@ The fortieth floor. Rain on the glass. Tokyo grey and endless below.
 
 Vera sits in a leather chair in front of Kurose's desk. She wears a plain dark coat. A plain folder is on her lap, her hands flat on its cover: photocopies of every page of her father's notebook.
 
-Kurose sits across from her. Courteous. Curious. He pours her tea himself.
+Across from her sits THE CHAIRMAN, KUROSE (70s). Silver hair. A beautiful suit. The stillness of a man who has never had to hurry.
+
+Courteous. Curious. He pours her tea himself.
 
 KUROSE
 When my secretary said the daughter of Daniel Voss wanted to see me, I didn't believe her.

@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { framesInSceneOrder } from "./frame-order";
 import type { FilmProject, ProjectPatch } from "./types";
 import directorSync from "./neonoire-director-sync.json";
+import restorationSync from "./neonoire-restoration-sync.json";
 
 const digest = (text: string) => createHash("sha256").update(text).digest("hex");
 const notesDigest = (text: string) => digest(text.replace(/(?:Generation )?Pass \d+ of \d+[^\n]*/g, "").trim());
@@ -33,6 +34,12 @@ const isAwaitingKeyframe = (frame: FilmProject["frames"][number]) =>
  */
 export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProject, "frames" | "scenes"> & Partial<Pick<FilmProject, "script">>): ProjectPatch | null {
   const bundled = new Map(bundle.frames.map(frame => [frame.id, frame]));
+  const knownRestorationScript = restorationSync.scriptHashes.includes(digest(existing.script))
+    || digest(existing.script) === directorSync.scriptHash;
+  const restoreDefaults = knownRestorationScript || existing.script === bundle.script;
+  const restoredFrames = restorationSync.frames as Record<string, Record<string, string>>;
+  const restoredScenes = restorationSync.scenes as Record<string, Record<string, string>>;
+  const fieldDigest = (value: unknown) => digest(JSON.stringify(value ?? null));
   const oldDefault = [...bundle.frames].sort((a, b) => (a.shotNumber ?? 0) - (b.shotNumber ?? 0));
   const wasBoardingOrder = oldDefault.every(frame => frame.shotNumber !== undefined)
     && existing.frames.length === oldDefault.length
@@ -59,11 +66,26 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
       if (notesDigest(frame.notes) === baseline.notesHash && next.notes !== arrived.notes) next = { ...next, notes: arrived.notes };
       if (digest(frame.description) === baseline.descriptionHash && frame.description !== arrived.description) next = { ...next, description: arrived.description };
     }
+    const prior = restoredFrames[frame.id];
+    if (restoreDefaults && prior && frame.image === prior.image) {
+      for (const key of ["description", "notes", "characters", "duration", "transition", "audio"] as const) {
+        if (prior[key] && fieldDigest(frame[key]) === prior[key] && JSON.stringify(next[key]) !== JSON.stringify(arrived[key])) next = { ...next, [key]: arrived[key] };
+      }
+    }
     return next;
   });
   if (wasBoardingOrder) {
     const rank = new Map(bundle.frames.map((frame, index) => [frame.id, index]));
     frames.sort((a, b) => rank.get(a.id)! - rank.get(b.id)!);
+  }
+  const existingIds = new Set(existing.frames.map(frame => frame.id));
+  if (restoreDefaults && restorationSync.priorFrameIds.every(id => existingIds.has(id))
+    && bundle.scenes.every(scene => existing.scenes.some(old => old.id === scene.id))) {
+    const arrivals = restorationSync.restoredFrameIds.filter(id => !existingIds.has(id)).map(id => bundled.get(id)).filter((frame): frame is FilmProject["frames"][number] => !!frame);
+    if (arrivals.length) {
+      const at = frames.findIndex(frame => frame.sceneId === "neonoire-s99a");
+      frames.splice(at < 0 ? frames.length : at, 0, ...arrivals);
+    }
   }
   frames = framesInSceneOrder(frames, existing.scenes);
   const scenesById = new Map(bundle.scenes.map(scene => [scene.id, scene]));
@@ -71,11 +93,15 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     const arrived = scenesById.get(scene.id);
     let next = scene.number === undefined && arrived?.number ? { ...scene, number: arrived.number } : scene;
     if (arrived && digest(scene.description) === sceneDefaults[scene.id] && arrived.description !== scene.description) next = { ...next, description: arrived.description };
+    const prior = restoredScenes[scene.id];
+    if (restoreDefaults && prior && arrived) for (const key of ["description", "location", "title", "time", "characters"] as const) {
+      if (prior[key] && fieldDigest(scene[key]) === prior[key] && JSON.stringify(next[key]) !== JSON.stringify(arrived[key])) next = { ...next, [key]: arrived[key] };
+    }
     return next;
   });
   const patch: ProjectPatch = {};
-  if (bundle.script !== undefined && existing.script !== bundle.script && digest(existing.script) === directorSync.scriptHash) patch.script = bundle.script;
-  if (frames.some((frame, index) => frame !== existing.frames[index])) patch.frames = frames;
+  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash)) patch.script = bundle.script;
+  if (frames.length !== existing.frames.length || frames.some((frame, index) => frame !== existing.frames[index])) patch.frames = frames;
   if (scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
   return Object.keys(patch).length ? patch : null;
 }

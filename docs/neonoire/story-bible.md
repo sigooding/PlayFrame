@@ -10,7 +10,7 @@ PlayFrame against what was decided, and why.
 - Later changes are listed in Part 9. Anything in PlayFrame that differs from Draft 1 and is not in
   Part 9 was changed in PlayFrame, not in this conversation.
 
-**Latest image/order delivery — 1 October 2026:** all **297 active shot images** across **102 scenes** are installed at 1920×1080; no blank placeholders remain. **Superseded by the director’s same-day main-shot selection:** the final nine are now Ready/main images, with no further review requested. **16 older rewrite retakes remain Needs review.** The project and all viewers/exports now run in screenplay scene/beat order while retaining production shot numbers, inserted scene labels, IDs and asset paths. [Final pass and caveats](passes/remaining-boards-final-2026-10-01.md). Historical missing queues and first-pass master-reference instructions below are superseded by this delivery and the revised sheets-only rule.
+**Latest image/order delivery — 1 October 2026:** all **299 active shot images** across **102 scenes** are installed at 1920×1080; no blank placeholders remain. **Superseded by the director’s same-day main-shot selection:** the final nine are now Ready/main images, with no further review requested. **16 older rewrite retakes remain Needs review.** The project and all viewers/exports now run in screenplay scene/beat order while retaining production shot numbers, inserted scene labels, IDs and asset paths. [Final pass and caveats](passes/remaining-boards-final-2026-10-01.md). Historical missing queues and first-pass master-reference instructions below are superseded by this delivery and the revised sheets-only rule.
 
 ---
 
@@ -379,6 +379,10 @@ turn.
    - **Scene 73 (the run before 75's empty returns):** after the existing vending-machine sentence adds "She keeps going; the machine falls behind her." The crossing is "Just beyond it". A single onward journey, never returning to the machine. The right-bare/left-shoe image lock, grief scene, scene-75 no-people rule and late score cue remain unchanged.
    - Seven replacement images: 7/64, 65, 67; 73/69, 70, 71; 75/80. The already-correct one-shoe exit and matching shoe pillow remain selected. **All selected images, plus the preceding nine deliveries, are director-approved main shots at Ready, with no further review requested.** Historical image evaluations are archival, not an active review queue.
    - The animatic exporter now matches saved scene/shot order and genuinely static frames; it no longer infers alternating pans from "no tracking" prose. [Delivery and export details](passes/director-continuity-animatic-2026-10-01.md).
+
+---
+
+12. **Accidental-cut restoration, 1 October 2026 (director-requested).** The complete pre-revision pages, not worksheet ellipses, are authoritative for retained material. Old 99's full demolition is folded into the opening of **99A**, weeks later, with the standing counter and six old stools; a dissolve leads to the unchanged revised plaza months later. 13/24/97/99 remain absent as numbered scenes. 15 already carries the Hive description; 25 regains Kaneko bringing rice and the Eat/Has anyone/Nobody lost exchange; 17 looks at the empty third stool; 40 introduces the masked leader without unmasking him; 51 gains the circuit-board city but stays wordless; 83 restores Kurose's introduction; 94 restores only It's only tea. The title card moves to 98. The whole rooftop remains, and the trains/ladder escape are intact (85/87/91/92 unchanged; 86/88/90 add-only). Compatible sign/bulb/clip details return to the new 100 without reviving its old ending. Mara's stale 25 quote now matches rewritten 1. [Complete audit, source identities and exact preservation tests](passes/revision-restoration-2026-10-01.md).
 
 ---
 

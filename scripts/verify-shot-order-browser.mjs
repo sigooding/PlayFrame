@@ -39,11 +39,11 @@ try {
   copyId = (await response.json()).id;
   assert.notEqual(copyId, project.id);
   await go("storyboard");
-  await expect(page.locator(".frame-card")).toHaveCount(297);
+  await expect(page.locator(".frame-card")).toHaveCount(project.frames.length);
   assert.deepEqual(await boardNumbers(), sourceNumbers);
   await expect(page.locator(".frame-card h3").last()).toHaveText(project.frames.at(-1).title);
   await page.getByRole("button", { name: "List view", exact: true }).click();
-  await expect(page.locator(".shot-number")).toHaveCount(297);
+  await expect(page.locator(".shot-number")).toHaveCount(project.frames.length);
   assert.deepEqual(await tableNumbers(), sourceNumbers);
   await page.getByRole("button", { name: "Grid view", exact: true }).click();
   const sceneFilter = page.getByLabel("Filter by scene");
@@ -59,7 +59,7 @@ try {
       await expect.poll(() => image.evaluate(node => node.complete && node.naturalWidth === 1920 && node.naturalHeight === 1080 && !node.dataset.fallback)).toBe(true);
     }
   }
-  pass("297 grid/list cards stay in screenplay order; all nine new images load full-size without fallbacks");
+  pass(`${project.frames.length} grid/list cards stay in screenplay order; all nine new images load full-size without fallbacks`);
 
   await page.getByRole("button", { name: "Play storyboard", exact: true }).click();
   const player = page.getByRole("dialog", { name: "Storyboard presentation" });
@@ -71,7 +71,7 @@ try {
   await expect(player.getByRole("button", { name: "Next frame", exact: true })).toBeDisabled();
   await player.getByRole("button", { name: "Close presentation", exact: true }).click();
   await tabs().getByRole("button", { name: /^Shot list/ }).click();
-  await expect(page.locator(".shot-number")).toHaveCount(297);
+  await expect(page.locator(".shot-number")).toHaveCount(project.frames.length);
   assert.deepEqual(await tableNumbers(), sourceNumbers);
   await tabs().getByRole("button", { name: /^Prompt Studio/ }).click();
   await page.getByLabel("Scene for prompts").selectOption("neonoire-s100");
@@ -95,10 +95,10 @@ try {
   await dialog.getByLabel("Scene", { exact: true }).selectOption("neonoire-s53a");
   await dialog.getByRole("button", { name: "Add to storyboard", exact: true }).click();
   await expect(dialog).toBeHidden();
-  await expect.poll(async () => (await saved()).frames.length).toBe(299);
+  await expect.poll(async () => (await saved()).frames.length).toBe(project.frames.length + 2);
   current = await saved();
   assert.equal(current.frames.find(frame => frame.title === "Number allocation regression").shotNumber, 322);
-  assert.equal(new Set(current.frames.map(frame => frame.shotNumber)).size, 299);
+  assert.equal(new Set(current.frames.map(frame => frame.shotNumber)).size, project.frames.length + 2);
   await page.reload();
   await page.getByLabel("Filter by scene").selectOption("neonoire-s53a");
   await expect(page.locator(".frame-card")).toHaveCount(5);
@@ -117,7 +117,7 @@ try {
   await drag(298, 299);
   await expect.poll(async () => (await saved()).frames.filter(frame => frame.sceneId === "neonoire-s53a").map(frame => frame.shotNumber)).toEqual([297, 321, 299, 298, 322]);
   await page.reload();
-  await expect(page.locator(".frame-card")).toHaveCount(299);
+  await expect(page.locator(".frame-card")).toHaveCount(project.frames.length + 2);
   const beforeCrossScene = (await saved()).frames.map(frame => frame.id);
   await drag(298, 1);
   assert.deepEqual((await saved()).frames.map(frame => frame.id), beforeCrossScene);
@@ -128,7 +128,7 @@ try {
   const shared = await api.post(`/api/projects/${copyId}/share`, { data: { enabled: true } });
   assert.equal(shared.status(), 200);
   await page.goto(`${baseURL}/share/${(await shared.json()).shareId}`);
-  await expect(page.locator(".shared-frame")).toHaveCount(299);
+  await expect(page.locator(".shared-frame")).toHaveCount(project.frames.length + 2);
   const sharedNumbers = await page.locator(".shared-frame .frame-number").evaluateAll(nodes => nodes.map(node => Number(node.textContent)));
   assert.equal(sharedNumbers[0], 1);
   assert.equal(sharedNumbers.at(-1), 161);

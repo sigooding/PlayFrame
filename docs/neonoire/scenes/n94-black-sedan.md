@@ -42,3 +42,7 @@ TIME: 8
 ID: neonoire-shot-143
 IMAGE: 141-he-drinks.jpg
 NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Holds "Ishida nods, slowly. He understands." Nothing is explained.
+
+## Director line restoration — 1 October 2026
+
+Kurose says only "It's only tea" from inside the car as the hand offers the cup. No return of the twenty-years-service exchange or a fully visible back-seat conversation; 51 remains wordless. The source continues to the door closing. A new take of this short line is not generated in this script pass.

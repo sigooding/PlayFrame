@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 80 — INT. POLICE STATION, DETECTIVES' ROOM
 INT. POLICE STATION, DETECTIVES' ROOM - DAY
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Jack, Detective Ishida.
-Grammar: Scene 7's room by day, full of watching detectives. 24mm in and out on one locked aisle camera; 50mm two-shot; 85mm hands and Ishida. He doesn't hit 
+Grammar: Scene 7's room by day, full of watching detectives. 24mm in and out on one locked aisle camera; 50mm two-shot; 85mm hands and Ishida. He doesn't hit
 him.
 
 INT. POLICE STATION, DETECTIVES' ROOM - DAY #80#

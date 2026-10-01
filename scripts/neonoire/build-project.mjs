@@ -197,6 +197,8 @@ for (const sceneShots of boards) {
 // renumbered: retired numbers stay retired. So the first boarding runs 1..${PRIMARY_SHOTS} with
 // legal skips, coverage runs on from ${PRIMARY_SHOTS + 1} likewise — what must hold is that every
 // number is used once, primary never exceeds the ceiling, and each block ascends in scene order.
+// Rehomed restored boards retain their production numbers, not the plan's append order.
+primary.sort((a, b) => a.n - b.n);
 assert.ok(primary.every((shot, i) => shot.n >= 1 && shot.n <= PRIMARY_SHOTS && (i === 0 || shot.n > primary[i - 1].n)), `The first boarding must ascend through 1..${PRIMARY_SHOTS}; found ${primary.map(shot => shot.n).join(", ")}`);
 assert.equal(new Set(primary.map(shot => shot.n)).size, primary.length, "Primary shot numbers repeat");
 coverage.sort((a, b) => a.n - b.n);
@@ -249,7 +251,7 @@ const frames = shots.map(shot => {
     duration: shot.duration,
     durationIsEstimate: true,
     status: !absent && directorApprovedMainIds.has(shot.id) ? "Ready" : absent || awaitingAspect(shot) || jackRecastPending.has(shot.id) || witnessNeedsReview.has(shot.id) || rewritePending.has(shot.id) || (isColdOpenScene(shot.scene.key) && shot.n <= PRIMARY_SHOTS && shot.n > coldOpenCompletedThrough) ? "Needs review" : isColdOpenScene(shot.scene.key) && coldOpenFreshCompleted.includes(shot.n) ? "Ready" : "Draft",
-    transition: shot.n === 1 ? "Fade in" : "Cut",
+    transition: shot.n === 1 ? "Fade in" : shot.id === "neonoire-shot-305" ? "Dissolve" : "Cut",
     mood: MOODS[shot.scene.key],
     characters: shot.cast.map(name => characters.find(c => c.name === name).id),
     notes: [
@@ -475,7 +477,7 @@ const voicedLines = attachAudio(frames, readManifest(root), root);
 const project = {
   id: projectId,
   title: "Nobody's Witness",
-  description: `The final feature screenplay (September 2026): 102 numbered pages — scenes 1–100 with 25A, 27A, 53A, 63A, 82A and 99A, after the 30 September revision retired 13, 24, 97 and 99 — all boarded, 297 keyframes. Shots are listed in screenplay scene order, with later coverage inserted at its quoted beat. Production numbers and filenames stay stable, not sequential playback counters: 8, 11, 219, 274, 280–282 and the cut scenes’ frames stay retired gaps. The opening seven (66 shots), the hotel and Tokyo streets (69–86), the envelope and the notebook (87–95), Jack and Ishida (96–101), the cassette and the witness (102–110), Kurose and the storeroom (111–120), the raid (121–129), the escape (130–138), Ishida’s last night (139–147), the ending and the counter (155–161), Kanda revisited (162–170), the roadside inn (171–180), the Hive first seen (181–190), scenes 18–71 (191–240), the coverage passes (241–296), the story pass 2 boards (297–307) and the 30 September revision boards (308–320) — every keyframe 16:9 (1920×1080). The Screenplay tab carries the whole draft page by page; no scene is left unboarded. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
+  description: `The final feature screenplay (September 2026): 102 numbered pages — scenes 1–100 with 25A, 27A, 53A, 63A, 82A and 99A, after the 30 September revision retired 13, 24, 97 and 99 — all boarded, ${totalShots} keyframes. Shots are listed in screenplay scene order, with later coverage inserted at its quoted beat. Production numbers and filenames stay stable, not sequential playback counters: 8, 11, 219, 274, 280–282 and the cut scenes’ frames stay retired gaps. The opening seven (66 shots), the hotel and Tokyo streets (69–86), the envelope and the notebook (87–95), Jack and Ishida (96–101), the cassette and the witness (102–110), Kurose and the storeroom (111–120), the raid (121–129), the escape (130–138), Ishida’s last night (139–147), the ending and the counter (155–161), Kanda revisited (162–170), the roadside inn (171–180), the Hive first seen (181–190), scenes 18–71 (191–240), the coverage passes (241–296), the story pass 2 boards (297–307) and the 30 September revision boards (308–320) — every keyframe 16:9 (1920×1080). The Screenplay tab carries the whole draft page by page; no scene is left unboarded. Tokyo as a memory that is still happening — sodium orange against sick fluorescent green, cold patient rain, and nothing explained`,
   genre: "Neo-noir",
   format: "Feature",
   status: "In development",

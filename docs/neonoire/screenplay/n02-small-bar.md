@@ -4,8 +4,8 @@ OPENING — SCENE 2 — INT. SMALL BAR, KANDA
 INT. SMALL BAR, KANDA - CONTINUOUS
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Mara Voss, The Journalist, The Masked Men.
-Grammar: The room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays 
-where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is 
+Grammar: The room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays
+where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is
 the only score.
 
 INT. SMALL BAR, KANDA - CONTINUOUS #2#

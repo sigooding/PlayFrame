@@ -1,5 +1,19 @@
 # NEONOIRE — keyframe handoff
 
+## Current — 1 October 2026: accidental-cut restoration
+
+**299 active frames / 299 installed images, 102 scenes.** The old demolition cards **158/159** now open **99A**, followed by a **Dissolve** to **305/306/307**. Original paths/IDs/numbers preserved; no new image generation. The previous main-shot approvals stand. [Full audit and decisions](passes/revision-restoration-2026-10-01.md).
+
+The audit used the full last pre-revision Fountain (GitHub `24ff4d9`, preserved in baseline), both complete screenplay PDFs and all 19 revision pages. 15 already had the Hive introduction. Restored the 25 Kaneko/Mara exchange; age/description at first appearances (17/40/83); circuit-board dawn in 51; only-tea in 94; FIVE DAYS LATER in 98; demolition/counter/six old stools before the plaza in 99A. Compatible sign/bulb/clip details are back in the intentionally rewritten 100. No old ambiguous ending or wordless-51 dialogue reinstated.
+
+**Preservation proof:** 98 minus only the three worksheet lines/title card equals its full prior page. 85/87/91/92 are byte-identical; the train is in 91 and untouched. 86/88/90 reproduce their prior bodies after removing only the specified added blocks. 89 had no train to recover.
+
+Three original recorded 13 takes are re-pinned to 25 with unchanged audio/voices and non-overlapping offsets. Mara's false recollection of the cut father speech is corrected; the old take is archived. That replacement and the restored tea line are **unrecorded**, not silently played with wrong old words. Active manifest: 333 takes.
+
+Known complete saved templates receive the new script/scene/shot defaults and restored cards; custom scripts/images/notes, deliberate deletions and manual within-scene ordering are preserved. Import the updated bundle separately if you have an independently edited screenplay. `verify:revision:neonoire`, full neonoire/order/animatic/features checks, typecheck and production build pass; 905/905 assets present.
+
+---
+
 ## Latest director instruction — 1 October 2026: main images, drawer/run fixes, MP4 export
 
 **The preceding nine images are now main shots, status Ready, with no further review requested.** The director also selected the corrected scene-7/run images as main shots. The earlier draft/review wording below is historical and superseded for these IDs. [Current delivery](passes/director-continuity-animatic-2026-10-01.md).

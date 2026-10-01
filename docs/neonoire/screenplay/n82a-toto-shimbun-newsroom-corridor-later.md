@@ -4,7 +4,7 @@ SCREENPLAY — SCENE 82A — INT. TOTO SHIMBUN NEWSROOM, CORRIDOR
 INT. TOTO SHIMBUN NEWSROOM, CORRIDOR - LATER
 Source: the final screenplay (Neonoire (3).fountain, September 2026), reproduced verbatim below its own heading.
 Cast: Vera Voss, Harada, Jack.
-Grammar: Jack talking behind the glass where Vera cannot hear him, and a photocopier making her father's handwriting flash white. The evidence chain starts 
+Grammar: Jack talking behind the glass where Vera cannot hear him, and a photocopier making her father's handwriting flash white. The evidence chain starts
 here: every page copied, the original into the safe, and the folder that will go to Kurose.
 
 INT. TOTO SHIMBUN NEWSROOM, CORRIDOR - LATER #82A#
