@@ -9,7 +9,7 @@ Grammar: a box he hasn't opened in years, and a photograph of two men laughing u
 
 Jack's office is the **locked room**: see [the desk lock](../passes/office-desk-lock-2026-10-01.md) and
 `scripts/neonoire/office-layout-look.mjs`. The wide 1.60 m worn dark-walnut desk stands free in the middle of the room with the
-banker's lamp at its left end and one rotary phone at its right back corner; the grey steel cupboard under the window is where the
+banker's lamp at its left end and one rotary phone on the back edge right of it; the grey steel cupboard under the window is where the
 box lives. `s10/164-depends-whos-calling.jpg` is the room master, never `s77/85` and never the frame before it in the file list.
 
 ## Frame format — 26 September 2026, desk-locked 1 October 2026
@@ -64,7 +64,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-251
 IMAGE: 249-the-line.jpg
-NOTE: Coverage, shot 251, retaken 1 October 2026: the desk is the wide 1.60 m worn walnut one, free-standing and broadside, with the banker's lamp at its left end and exactly one rotary phone at its right back corner — it no longer follows the previous frame, it follows the room master s10/164-depends-whos-calling.jpg and scripts/neonoire/office-layout-look.mjs. Jack follows sheets/jack.jpg. Ishida is voice only and is not in the frame. The CRT is on and never static: the muted black-and-white samurai film.
+NOTE: Coverage, shot 251, retaken 1 October 2026: the desk is the wide 1.60 m worn walnut one, free-standing and broadside, with the banker's lamp at its left end and exactly one rotary phone on the back edge to the right of it — it no longer follows the previous frame, it follows the room master s10/164-depends-whos-calling.jpg and scripts/neonoire/office-layout-look.mjs. Jack follows sheets/jack.jpg. Ishida is voice only and is not in the frame. The CRT is on and never static: the muted black-and-white samurai film.
 
 252. INSERT — 85mm, static, high angle — the lighter.
 Jack's hand, charcoal sleeve, flicks the old steel lighter open on the desk. A small flame. No cigarettes.

@@ -898,6 +898,16 @@ pass("all twelve interview JPEGs are 1920×1080; room, wardrobe, cup and spill c
 // The office was generated as a chain — each frame copied the picture before it — so the desk shrank
 // and re-coloured five times and one study mirrored the room. Scenes 10, 11, 18, 21 and 77 now all
 // carry one lock, and the wide of scene 10 is the only room master.
+// A lock that ends mid-sentence is worse than no lock, and every substring check below would keep passing on
+// the surviving prefix. While this pass was being patched, one missing `+` at a line break let automatic
+// semicolon insertion END the constant there: 664 characters — the whole RIGHT WALL, the door lettering and the
+// room master — silently left every frame note and every generation prompt, and the only thing that caught it
+// was an unrelated assertion. So pin the lock's shape, not just its phrases.
+assert(officeLayoutLook.trimEnd().endsWith("AI-generated draft studies, not approved coverage."),
+  "the office lock ends mid-sentence — a line break in office-layout-look.mjs lost its + (ASI truncates the constant)");
+assert(officeLayoutLook.includes("RIGHT WALL") && officeLayoutLook.includes("commercial carpet") && officeLayoutLook.endsWith(officeRoomMaster + ". AI-generated draft studies, not approved coverage."),
+  "the office lock lost its right-hand wall or its room master");
+assert(officeLayoutLook.length > 1700, `the office lock is ${officeLayoutLook.length} chars and looks truncated`);
 const officeFrames = project.frames.filter(f => officeLayoutScenes.has(f.sceneId.replace("neonoire-", "")));
 assert.equal(officeFrames.length, 17, "Five scenes hold Jack's office: 4 + 5 + 2 + 3 + 3 frames");
 for (const frame of officeFrames) {

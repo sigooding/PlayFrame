@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-166
 IMAGE: 164-depends-whos-calling.jpg
-NOTE: The scene master and, from 1 October 2026, the room master for the whole film: the wide 1.60 m worn dark-walnut desk standing free in the middle of the room, banker's lamp at its left end, one rotary phone at its right back corner, grey steel cupboard under the window with nothing on top, filing cabinet and CRT on the right wall, slept-on sofa beyond it. The Japanese exchange, the clip set on the desk and her exit through the frosted glass all play from here. The door lettering read only "JAC" in the first study; the retake spells JACK. Exactly one telephone is on the desk.
+NOTE: The scene master and, from 1 October 2026, the room master for the whole film: the wide 1.60 m worn dark-walnut desk standing free in the middle of the room, banker's lamp at its left end, one rotary phone on the back edge right of the lamp, grey steel cupboard under the window carrying only its binders and a flat folder stack on top, filing cabinet and CRT on the right wall, slept-on sofa beyond it. The Japanese exchange, the clip set on the desk and her exit through the frosted glass all play from here. The door lettering read only "JAC" in the first study; the retake spells JACK. Exactly one telephone is on the desk.
 
 167. INSERT — 50mm, static, high angle — face up.
 On the desk under the lamp: the family photograph out of its frame, face up, with snapshots of Mara in an envelope and the red bird clip beside them. Jack's hand comes into frame.
