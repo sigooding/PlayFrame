@@ -5,7 +5,10 @@ box off of nothing. maybe it can be in the cupboard in his office instead. also 
 changing sizes. redo the shots to keep consistancy."*
 
 Two named frames were wrong and one fault was systemic. All three are fixed here, and the systemic one now
-has a guard, because a note nobody can run is a note that gets re-broken next session.
+has a guard, because a note nobody can run is a note that gets re-broken next session. The office queue this
+ledger opened was worked off in a second session the same day — 13 frames rebuilt in twenty calls, ten per
+session — and its own closure is recorded under "What pass 1 left open" below, together with a correction of a
+claim this file made wrongly.
 
 ## Why the desk kept changing
 
@@ -29,7 +32,7 @@ The fix is not a new master image, it is one **prose lock that every office fram
 > playing and never static, sofa beyond it; the door at the left of the window hand-lettered the whole word
 > **JACK**.
 
-## What was regenerated — 10 generation calls, and the ten is the budget
+## What pass 1 regenerated — 10 generation calls, and the ten is the budget
 
 Installed in place at stable paths, 1920×1080 full-bleed through `scripts/neonoire/fresh-install.mjs`. No
 shot renumbered, no file renamed, no image added or removed: the board stays at 299 frames / 102 scenes.
@@ -69,26 +72,46 @@ Recorded dialogue is untouched: 333 takes still line up, and none of them speak 
 Scene 6 needed no script change at all. The draft's *slides his card across the wet table* stands: a wet
 table is a sheen, not a pool, and the card is what Vera takes away, so it must come off dry.
 
-## What this pass deliberately did not finish
+## What pass 1 left open, and pass 2 closed the same day
 
-The house rule is ten generations a session and the budget is spent. Six office frames still disagree with
-the lock; they are named in `officeLayoutQueued` and each says **QUEUED** in its own board note, so the next
-session inherits a list instead of an archaeology:
+The house rule is ten generations a session, and pass 1 spent them. Six office frames still disagreed with the
+lock, so they were named in `officeLayoutQueued` and each said **QUEUED** in its own board note — the next
+session inherits a list, not an archaeology. That next session ran the same day: **ten further calls** (two of
+them corrective) closed all six, and `officeLayoutQueued` is now empty.
 
-- **11 · 252** `s11/250-the-lighter.jpg` — the wood inside the lamp pool is still old honey. Hands-only
-  insert: the desk's edge is out of frame, so it cannot contradict the size, only the colour.
-- **77 · 88** `s77/86-the-clean-envelope.jpg` — the opened drawer must be one of the desk's own two shallow
-  drawers, not a cabinet drawer.
-- **77 · 89** `s77/87-he-writes-nothing.jpg` — same desktop, closer; redraw the lamp and the wood on the master.
-- **18 · 283** `s18/283-the-letter.jpg` — the letter insert reads redder and wider than the master.
-- **21 · 196 and 21 · 271** `s21/194-…jpg`, `s21/271-not-yet.jpg` — the big red-brown table this scene invented.
-  These two are **already** pinned `RETAKE PENDING` for the 30 September rewrite, so they retake once, onto
-  the lock, with their rewrite fix — not before it, and not twice.
+| Scene / shot | Frame | Was | Now |
+| --- | --- | --- | --- |
+| 11 · 252 | `s11/250-the-lighter.jpg` | honey wood inside the lamp pool | the locked worn dark-walnut top, pale cup rings under the light |
+| 77 · 88 | `s77/86-the-clean-envelope.jpg` | a rounded-corner honey table, and the open drawer read as a cabinet drawer | the locked walnut desktop, the open drawer one of the desk's own two shallow ones at the **right** end of the riding rail, envelopes inside |
+| 77 · 89 | `s77/87-he-writes-nothing.jpg` | **mirrored room** — sofa and filing cabinet on the left, CRT showing snow | the master's geography left to right, and the CRT carrying the muted samurai film, never static |
+| 18 · 283 | `s18/283-the-letter.jpg` | a redder, wider-than-the-master top | the locked top from overhead; the letter, its envelope and the hands unchanged |
+| 21 · 196 | `s21/194-he-holds-it-without-drinking.jpg` | cabinet and chair on the wrong side of the window; the first retake also put a second pair of hands in a "man alone" frame | un-mirrored room, lamp unlit at the desk's left end, Jack alone, two cups and no more |
+| 21 · 271 | `s21/271-not-yet.jpg` | lamp at the wrong end of the desk, red-brown wood; the first retake grew a **third** coffee cup | lamp at the desk's left end, locked walnut, exactly two cups, one before each of them |
 
-`verify:neonoire` now fails if any of the 17 office frames loses the lock in its notes, if the lock stops
-naming one telephone, if the master stops declaring itself the master, if `s77/85` claims to lead the room,
-if shot 62's card is allowed back into the puddle in either the brief or the note, or if a queued frame
-stops saying it is queued. That is what "keep consistency" costs, and it is now cheap.
+Two calls went to corrections rather than to new frames — the invented second pair of hands in 196, and the
+extra cup in 271 — because a prop count is a continuity error too, and this film already has a standing
+perspective check for exactly that.
+
+### Correction to this ledger's first draft
+
+Pass 1 claimed scene 21's 196 and 271 were "already pinned `RETAKE PENDING` for the 30 September rewrite, so
+they retake once, onto the lock, with their rewrite fix". **That was wrong.** The 30 September pin list holds
+scene **20**'s shots 193 and 194 (`s20/191-prove-it.jpg`, `s20/192-the-red-bird-clip.jpg`) among sixteen
+others; `scripts/neonoire/rewrite-pending.mjs` never named scene 21, and 196 and 271 were plain `Draft`. There
+was no "retake twice, in the right order" problem to solve — and the two scenes' names are easy to confuse,
+which is presumably how I wrote it. `verify:neonoire` now asserts the fact in both directions (scene 21 not
+pinned, scene 20's pair pinned), so the ledger cannot quietly repeat the mistake.
+
+### What the queue closing bought
+
+`verify:neonoire` fails if any of the 17 office frames loses the lock in its notes, if the lock stops naming
+one telephone, if the master stops declaring itself the master, if `s77/85` claims to lead the room, if shot
+62's card is allowed back into the puddle in either the brief or the note, if a frame says `QUEUED for the
+desk lock` without being named on the list, or if a frame named on the list stops saying so. The list being
+empty is itself asserted: reopening it means editing `office-layout-look.mjs` *and* the note, in the open.
+That is what "keep consistency" costs, and it is now cheap.
+
+[Queue review sheet: six pairs, before / after](../../../public/images/neonoire/reviews/office-desk-lock-queue-2026-10-01.jpg)
 
 ## Honest caveats
 
@@ -103,6 +126,13 @@ stops saying it is queued. That is what "keep consistency" costs, and it is now 
   production fix, not an image fix.
 - The lamp in 191 is present and off per the director's rule of 26 September; at small sizes its green
   glass reads faintly luminous. Judge it at full size before waving it through.
+- From pass 2: 21/196's retake **dropped Jack's coat from the chair back** the 29 September frame had. The
+  coat is a scene-21 story object (he puts it on before he goes up), so either hang it on set or let the
+  next retake of 196 restore it — do not let the animatic be the place that discovers it.
+- From pass 2: in 77/89 the pen nib still sits very near the paper. The board's performance note ("he writes
+  nothing") is the fix; on set it is a hand position, not a redraw.
+- From pass 2: in 11/252 the desktop fills the frame, so that insert can no longer be used to *check* the
+  desk's width — only its colour and its ring marks. The size lives in 10/164, 11/251, 18/191 and 21/196.
 - Every image kept its exact filename, path and ID, so saved workspaces, prompts, CSV, the player and the
   animatic all still resolve; the animatic will now render the corrected frames with no other change.
 

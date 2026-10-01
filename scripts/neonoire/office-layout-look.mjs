@@ -24,8 +24,18 @@ export const officeLayoutLook =
   "commercial carpet, tired pale grey-green paint. Jack sits behind the long side; a visitor stands or sits at the left end. The room master is " +
   `${officeRoomMaster}. AI-generated draft studies, not approved coverage.`;
 
-// The queue this pass leaves open, so a later session inherits the list and not the archaeology:
-// s21/194 and s21/271 (already pinned RETAKE PENDING for the 30 September rewrite), s77/87 and s77/86,
-// s11/250 (a tight insert: the desktop's warm tone is the lamp pool, its edge is out of frame), and
-// s18/283 — each must be drawn against this lock, never against the frame next to it in the file list.
-export const officeLayoutQueued = ["neonoire-shot-196", "neonoire-shot-271", "neonoire-shot-88", "neonoire-shot-89", "neonoire-shot-252", "neonoire-shot-283"];
+// The 1 October queue is closed: 11/252, 77/88, 77/89, 18/283 and scene 21's 196 and 271 were retaken onto this
+// lock in the follow-up session the same day (ten calls again, two of them corrective — a second pair of hands
+// inside a "man alone" frame, and a third coffee cup in a two-cup scene). This list is how a future pass
+// declares a frame knowingly unfinished: name it here, say QUEUED in its board note, and the verifier holds
+// both honest. Correction to the first ledger draft, recorded here so it cannot be re-invented: shots 196 and
+// 271 were never RETAKE PENDING — the 30 September pin list holds scene 20's 193 and 194, not scene 21's.
+// Two caveats survive into production rather than into another image: Jack's hands still read older than 48 in
+// 196, and that retake dropped his coat from the chair back.
+export const officeLayoutQueued = [];
+// Every frame this lock has rebuilt, in the order the two passes ran them. Stable paths throughout: nothing was
+// renamed, renumbered, or replaced by a scene master.
+export const officeLayoutRetakes = ["neonoire-shot-62", "neonoire-shot-245", "neonoire-shot-251",
+  "neonoire-shot-166", "neonoire-shot-167", "neonoire-shot-191", "neonoire-shot-87",
+  "neonoire-shot-252", "neonoire-shot-88", "neonoire-shot-89", "neonoire-shot-283",
+  "neonoire-shot-196", "neonoire-shot-271"];

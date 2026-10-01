@@ -34,7 +34,7 @@ import { kandaBarScenes, kandaBarSheet, kandaBarLook } from "./neonoire/bar-look
 import { TAIL, readManifest, readVoices } from "./neonoire/voice.mjs";
 import { hiveFirstImages } from "./neonoire/hive-first-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
-import { officeLayoutLock, officeLayoutLook, officeLayoutQueued, officeLayoutScenes, officeRoomMaster } from "./neonoire/office-layout-look.mjs";
+import { officeLayoutLock, officeLayoutLook, officeLayoutQueued, officeLayoutRetakes, officeLayoutScenes, officeRoomMaster } from "./neonoire/office-layout-look.mjs";
 import { interviewLook } from "./neonoire/interview-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -906,7 +906,28 @@ for (const frame of officeFrames) {
   }
   if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 }
-for (const id of officeLayoutQueued) assert(officeFrames.some(f => f.id === id && f.notes.includes("QUEUED")), `${id} must name itself queued or be retaken`);
+// The queue is a contract in both directions: a frame named here must say QUEUED in its own board note, and a
+// frame not named here must not claim to be waiting. An empty list therefore means "nothing is outstanding" —
+// reopen it only by naming the frame in office-layout-look.mjs AND in its note.
+for (const id of officeLayoutQueued) assert(officeFrames.some(f => f.id === id && f.notes.includes("QUEUED")), `${id} is on the office queue, so its note must say QUEUED`);
+for (const frame of officeFrames) if (!officeLayoutQueued.includes(frame.id)) assert(!/QUEUED for the desk lock/.test(frame.notes), `${frame.id} says it is queued but the office queue does not name it`);
+assert.deepEqual(officeLayoutQueued, [], "the 1 October 2026 office queue is closed; if a frame is knowingly unfinished, name it here and in its note");
+// Every frame the lock rebuilt must say so in its own note, not only in the scene header — twice over, once
+// for the lock it now carries and once for the retake that put it there.
+for (const id of officeLayoutRetakes) {
+  const frame = project.frames.find(f => f.id === id);
+  assert(frame, `${id} is listed as rebuilt but is not in the bundle`);
+  // An office frame carries the lock, and the lock itself names the date — so 2 is the floor there: one for
+  // the lock, one for the retake that put it on the desk. Shot 62 sits in scene 6 and carries no office lock,
+  // so it is held to the stricter thing that matters: the retake must be in the note, not only the header.
+  const hits = (frame.notes.match(/1 October 2026/g) || []).length;
+  assert(hits >= (officeLayoutScenes.has(frame.sceneId.replace("neonoire-", "")) ? 2 : 1),
+    `${id} must record its 1 October 2026 retake in its own note as well as carrying the lock`);
+}
+// And the record must stay accurate: the 30 September RETAKE PENDING list is scene 20's 193 and 194. Scene
+// 21's 196 and 271 were never pinned, whatever a ledger once claimed.
+assert(!rewritePending.has("neonoire-shot-196") && !rewritePending.has("neonoire-shot-271"), "scene 21's office frames are not RETAKE PENDING");
+assert(rewritePending.has("neonoire-shot-193") && rewritePending.has("neonoire-shot-194"), "the scene-20 pins 193 and 194 are the real ones");
 assert(officeLayoutLook.includes("ONE black rotary telephone"), "The office lock forbids the duplicated telephone");
 assert(project.frames.find(f => f.id === "neonoire-shot-166").notes.includes("room master for the whole film"), "Shot 166 is declared the room master");
 assert(project.frames.find(f => f.id === "neonoire-shot-87").notes.includes("no longer leads the room"), "Shot 87's study no longer leads the room");

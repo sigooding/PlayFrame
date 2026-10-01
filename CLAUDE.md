@@ -16,8 +16,14 @@ mirrored, never a second table**. The only room master is `s10/164-depends-whos-
 agree with it and no longer leads. Ten generations (the budget) installed seven corrected frames in place — 6/62 (card on
 dry laminate, spill confined to the crushed cup), 11/245 (box **out of the cupboard**, no chair), 11/251, 10/166, 10/167,
 18/191, 77/87 — and the director authorised the **one scene-11 action line** that moves with it. Dialogue, scene numbers,
-asset paths and the 299/102 board are unchanged; six office frames are named QUEUED in the ledger. `verify:neonoire`
-guards the lock, the single telephone, the master's status and the card's dry laminate. Read
+asset paths and the 299/102 board are unchanged. A second session the same day spent ten further calls on the six
+frames pass 1 queued — 11/252, 77/88, 77/89, 18/283 and scene 21's 196 and 271 — two of those calls being corrections
+(an invented second pair of hands inside a "man alone" frame, a third coffee cup in a two-cup scene), and scene 21's
+room turned out to be a **mirror** of the master and was un-mirrored. `officeLayoutQueued` is now empty and
+`verify:neonoire` guards the lock, the single telephone, the master's status, the card's dry laminate **and that empty
+queue**: declaring a frame unfinished takes an edit in the module *and* in its note. The first ledger also claimed
+those two scene-21 frames were already `RETAKE PENDING` — they never were; the 30 September pins are scene **20**'s
+193 and 194 — and the verifier pins that fact too. Read
 [the ledger](docs/neonoire/passes/office-desk-lock-2026-10-01.md) before regenerating anything in this room.
 
 ## Latest correction — 1 October 2026: full-page audit and restored 99A

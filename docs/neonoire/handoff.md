@@ -18,9 +18,14 @@ scenes 10, 11, 18, 21 and 77 now carries it in its notes and prompts. `s10/164-d
 room master; `s77/85` agrees with it and no longer leads. `npm run verify:neonoire` fails if any of that drifts,
 including the interview brief letting the card back into the puddle.
 
-**Next session, if the office is touched again:** the six QUEUED frames are 11/252, 77/88, 77/89, 18/283 and scene
-21's 196 and 271 (the last two retake once, together with their existing `RETAKE PENDING` rewrite fix). Draw them on
-the lock and the master, never on the neighbour. [Ledger, before/after table and caveats](office-desk-lock-2026-10-01.md);
+**The queue is closed.** A second session the same day spent another ten calls on the six frames pass 1 had left:
+11/252, 77/88, 77/89, 18/283 and scene 21's 196 and 271 — the last two also had the room's **mirror** fixed (cabinet
+and lamp on the wrong side), and two of the ten calls went to corrections (a second pair of hands in a "man alone"
+frame, a third cup in a two-cup scene). `officeLayoutQueued` is empty and `verify:neonoire` asserts that it is, so a
+frame can only be declared unfinished by naming it in the module and in its note. **Correction:** pass 1 wrote that
+those two scene-21 frames were `RETAKE PENDING`; they never were — the 30 September pins are scene **20**'s 193 and
+194 — and the verifier now asserts that too. Draw any future office frame on the lock and the master, never on the
+neighbour. [Ledger, before/after table and caveats](office-desk-lock-2026-10-01.md);
 [review sheet](../../public/images/neonoire/reviews/office-desk-lock-2026-10-01.jpg).
 
 

@@ -74,4 +74,4 @@ LIGHT: Practical night
 TIME: 4
 ID: neonoire-shot-252
 IMAGE: 250-the-lighter.jpg
-NOTE: Coverage, shot 252. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Jack's hand, not Vera's wine-red sleeve. No cigarettes anywhere. No engraving. QUEUED for the desk lock: its desktop still reads the old honey wood inside the lamp pool, and the desk's edge is out of frame, so the size cannot contradict the master — redraw the top as worn walnut before approval.
+NOTE: Coverage, shot 252. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Jack's hand, not Vera's wine-red sleeve. No cigarettes anywhere. No engraving. Retaken 1 October 2026 onto the desk lock: the insert sits on the locked worn dark-walnut top, pale cup rings and scuff field under the lamp pool, so a hands-only frame cannot quietly carry a different table.
