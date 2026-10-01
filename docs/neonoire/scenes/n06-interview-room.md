@@ -13,6 +13,8 @@ All twelve shots (51–62) are **16:9, 1920×1080, full-bleed**. The room master
 
 Vera retains her scene-5 charcoal coat, cream high-neck knit, navy trousers, brown boots and pale-blue umbrella. Ishida matches his character sheet: charcoal suit and light grey open-collar shirt, **no tie**. One cream-white **paper** cup only. It is intact with a dry tabletop before shot 60; the crushed cup and spill persist through 61–62. Ishida puts one offered tissue beside her hand, then slides his card across the wet table. Do not restore the cup, wipe the spill early, add glass cups or swap the umbrella colour.
 
+**Shot 62 retaken 1 October 2026 — the card is not in a puddle.** The draft says *across the wet table*, and the first study read that literally: the tea had been allowed to spread to the middle of the table and Ishida was laying the card down **into the liquid**, where any real card would go to pulp in a second and where the audience sees a stain instead of a name. The installed frame keeps the wet table as a **sheen on the grey laminate** and confines the spill to one small pool around the crushed cup at Vera's side, exactly where shots 60 and 61 leave it; the card travels over dry surface, crisp and flat, his fingers on its edge. The line in the film does not change: she takes it off a table he has just made wet.
+
 Shots 57 and 59 are tighter continuity reframings of 54 and 56, respectively, not new performances. Shot 52 has a composited cup correction from the two-shot master: the extra glass was removed and the cup in Ishida's hand replaced with the established paper cup. These remain AI-generated draft studies, not approved coverage. The reusable brief is `scripts/neonoire/interview-look.mjs`.
 
 ---
@@ -123,7 +125,7 @@ CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 22
 IMAGE: 62-the-card.jpg
-NOTE: The card goes across a wet table, and that is the whole scene in one image. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.
+NOTE: The card goes across a wet table, and that is the whole scene in one image. Shot 62 retaken 1 October 2026 — wet, not flooded: the spill stays one pool around the crushed cup at her side and the card rides on DRY laminate, never lying in the tea. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.
 
 ## Passes
 

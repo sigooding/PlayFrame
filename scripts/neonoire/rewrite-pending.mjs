@@ -10,10 +10,24 @@
 // been pinned because its study showed the fountain, the hoarding and the steel guards the revision
 // cut; it and the two slots behind it were generated together from the re-pinned text (no fountain,
 // no hoarding, no gardener, "nothing marks where anything was") and are released from the pin.
+// Released in the retake round, 1 October 2026: the cold open's five — 3, 6, 17 and 18 in scene 1,
+// 27 in scene 2 — and scene 20's 193 and 194. Each was regenerated from the current screenplay text,
+// with character sheets only for the cold open (27 additionally on the bar's style sheet) and the
+// storeroom masters for scene 20, installed over its own filename at its stable path, and reviewed at
+// full size. Nine generations were spent on seven frames: the first study of 27 broke the scene's
+// floor-level framing law and the second put Mara's face in shot with the wrong hair, so the third is
+// the one on the board. The frames that showed the retired beats — the crossing walk, the purse
+// snagged on the pole, the body search and the torch beam, the notebook taken, the kitchen knife and
+// the clip in Jack's open palm — are gone from the boards, not re-cropped. They carry no review
+// warning because the pass that fixed them is the pass that reviewed them; approval of 1 October
+// pixels is the director's, and one line here re-pins any of them.
+// Still queued, in the order the boards ask for them: scene 83's 113, scene 89's 131, scene 90's 132,
+// scene 94's 141–143, scene 100's 160, and the Hive entrance pair 186 and 228 — the sedan interior,
+// Vera's "just a face", the hand in the dark, the third stool, and the two frames whose only fault is
+// the unlettered Hive banner. Each has its own board note saying what the pass must fix.
 export const rewritePending = new Set([
-  "neonoire-shot-03", "neonoire-shot-06", "neonoire-shot-17", "neonoire-shot-18", "neonoire-shot-27",
   "neonoire-shot-113", "neonoire-shot-131", "neonoire-shot-132", "neonoire-shot-141",
   "neonoire-shot-142", "neonoire-shot-143", "neonoire-shot-160", "neonoire-shot-186",
-  "neonoire-shot-193", "neonoire-shot-194", "neonoire-shot-228",
+  "neonoire-shot-228",
 ]);
 export const rewritePendingNote = "RETAKE PENDING — the script rewrote this scene on 30 September 2026; the image on file shows a beat that no longer exists.";

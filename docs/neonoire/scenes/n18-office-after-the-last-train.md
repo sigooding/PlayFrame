@@ -9,7 +9,7 @@ Grammar: The television is the only lamp; the phone ring is the cut.
 
 ## Frame format — 25 September 2026
 
-The single shot (191) is **16:9, 1920×1080, full-bleed**, numbered in boarding order. The office follows `s10/164-depends-whos-calling.jpg`, night-swapped: every practical off, static on. **Jack** follows `sheets/jack.jpg`. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
+The single shot (191) is **16:9, 1920×1080, full-bleed**, numbered in boarding order. The office follows `s10/164-depends-whos-calling.jpg` and the desk lock in `scripts/neonoire/office-layout-look.mjs`, night-swapped: every practical off, the CRT on. **Jack** follows `sheets/jack.jpg`. Every image passed the standing perspective check, or carries its flaw below. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -21,7 +21,7 @@ LIGHT: Low key
 TIME: 12
 ID: neonoire-shot-191
 IMAGE: 189-after-the-last-train.jpg
-NOTE: Kaneko is heard, never seen. The green desk lamp stays off. Director's rule (26 September 2026): a TV that is on is never static — the office CRT now carries the muted B&W samurai film from scenes 10-11; the draft's word 'static' stays on the page, but the light on the screen is a programme.
+NOTE: Retaken 1 October 2026 onto the locked room: the wide 1.60 m worn walnut desk broadside and free-standing, the banker's lamp present at its left end and unlit, and the door spelling JACK, which the study had left blank. Kaneko is heard, never seen. The green desk lamp stays off. Director's rule (26 September 2026): a TV that is on is never static — the office CRT now carries the muted B&W samurai film from scenes 10-11; the draft's word 'static' stays on the page, but the light on the screen is a programme.
 
 ---
 
@@ -39,4 +39,4 @@ LIGHT: Low key
 TIME: 8
 ID: neonoire-shot-283
 IMAGE: 283-the-letter.jpg
-NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s10/164-depends-whos-calling.jpg`, `s77/85-the-desk-lamp.jpg` and the prop master `props/sakai-letter.jpg`; "Miss Voss." and "T. SAKAI" legible at full size, the body texture-only per the shot-94 rule. The hands read older than Jack's 48 from this angle — carry as a caveat; the face never meets the letter in this frame.
+NOTE: Letter rewrite coverage, 28 September 2026,, and **retaken onto that lock on 1 October 2026**: the overhead now carries the locked worn dark-walnut top with its pale cup rings and straight near edge, the lamp at the left end and one rotary phone at the top of frame, so the letter reads on the same desk as every other office frame instead of a redder, wider one. Generated from `s10/164-depends-whos-calling.jpg`, `s77/85-the-desk-lamp.jpg` and the prop master `props/sakai-letter.jpg`; "Miss Voss." and "T. SAKAI" legible at full size, the body texture-only per the shot-94 rule. The hands read older than Jack's 48 from this angle — carry as a caveat; the face never meets the letter in this frame.

@@ -20,7 +20,8 @@ Follow `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../pas
 **The director ordered a clean-slate regeneration of the whole cold open: no scene masters, no layout sheet, no bar sheet and no earlier frame attached to any generation — the screenplay text is the only scene guide, and the CHARACTER SHEETS are the only image references** (`sheets/mara.jpg`, `sheets/mara-face.jpg`, `sheets/masked-man.jpg`, and the two sheets this pass created, `sheets/sakai.jpg` and `sheets/journalist.jpg`; frames with no cast attach nothing). Every earlier attempt inherited its errors image-to-image from the frames it was meant to fix, so this pass describes the street and the bar in one shared set of words (`scripts/neonoire/cold-open-fresh-look.mjs`) and regenerates each frame from that brief. The earlier retake notes below are the shot's history, not the current image's provenance; the current image's provenance is the fresh pass, carried in the bundle note.
 
 - **Installed at 1920×1080: shots 1–18 (as boarded after the revision retired 8, 11 and the coverage 280–282) — scene 1 is wholly fresh** (30 September 2026, four batches, together with the two new cast sheets). The pre-pass frames are kept under ignored `artifacts/cold-open/pre-fresh-2026-09-30/` for before/after review; raw generations stay under `artifacts/cold-open/fresh-2026-09-30/`.
-- Shot 18 landed on the moderation-safe composition (torch beam on the purse in the water, the searching man small and distant by the sedan, no body in frame) after the first attempt was blocked by the image service. 280's scrap reads Kanda 2-3-1 and 1:00 after a wrong-ward first attempt was retaken in-session. The board numbers, lenses, beats and screenplay quotes are unchanged; nothing is renumbered. **The pass is complete and APPROVED: the director signed off on 30 September 2026; shots 1–18 and 280–282 carry status Ready as the film's main images.**
+- Shot 18 landed on the moderation-safe composition (torch beam on the purse in the water, the searching man small and distant by the sedan, no body in frame) after the first attempt was blocked by the image service. 280's scrap reads Kanda 2-3-1 and 1:00 after a wrong-ward first attempt was retaken in-session. The board numbers, lenses, beats and screenplay quotes are unchanged; nothing is renumbered. **The pass is complete and APPROVED: the director signed off on 30 September 2026; shots 1–18 and 280–282 carry status Ready as the film's main images.** The sign-off covers the composition and the pass; the four frames the retake round replaced on 1 October 2026 keep status Ready because the bundle rules make a released cold-open frame Ready again by itself, and approval of those pixels is the director's.
+- **Retake round, 1 October 2026:** 3, 6, 17 and 18 were regenerated from the current scene 1 text — `scripts/neonoire/cold-open-fresh-look.mjs` carries the rewritten prompts and the character-sheets-only reference lists — and installed over their own filenames, which releases their `RETAKE PENDING` pins. What changed on the board is what the revision cut: no crossing walk, the old man's approach seen from inside the recess, the purse left in the road with the car taking the long way round the block, and no search and no torch beam at 18. Scene 2's 27 is released with them (see `n02-small-bar.md`), and so are scene 20's 193 and 194. Nine frames stay queued in `scripts/neonoire/rewrite-pending.mjs`.
 - Carried fixes this pass applies from the [29 September review](../passes/cold-open-image-review-2026-09-29.md): Mara stays in the recess shadow in every frame whose camera sees the doorway (10, 12); the sedan reverses out of the mouth and never turns in the lane (13); Sakai's body is in the lane in 13; the bar sign appears only in frames looking toward the bar end; the key's worn tag reads **114**, closing the old 87 mismatch; no detached shoes in 27.
 
 ---
@@ -44,13 +45,13 @@ IMAGE: 02-vending.jpg
 NOTE: This is the sound of the film's opening and its recurring return. Leave room in the frame for the hum — no people, no traffic, no music.
 
 3. MEDIUM WIDE — 35mm, static, eye level — EXT. BACKSTREET, KANDA.
-MARA VOSS walks fast, crossing the frame, arms folded, no umbrella. Her hair is soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond.
+MARA VOSS (24) is already in the recessed dark doorway of the closed barber's when the scene finds her — soaked, no umbrella, arms folded, one shoulder against the brick. Her hair is soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to. Her phone lights up in her hand and its screen is the only moving thing in the frame; she watches it ring and does not answer. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond. She is inside the city, not apart from it.
 SCRIPT: "MARA VOSS (24) stands in the dark doorway of a closed barber's, soaked, no umbrella."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 9
 IMAGE: 03-mara-walks.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Track with her at her own pace and keep the wide framing — she is inside the city, not apart from it. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace. Keep the small red enamel bird clip pinned in her soaked hair, visible wherever the framing allows.
+NOTE: RETAKE LANDED 1 October 2026 — regenerated from the rewritten scene 1 with `sheets/mara.jpg` and `sheets/mara-face.jpg` attached and nothing else, installed over `s1/03-mara-walks.jpg`. There is no crossing walk any more: the revision leaves her standing in the doorway from the first line, so she holds and the phone carries the frame's only movement — nothing crosses, no headlights swing, no car reverses. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace; the small red enamel bird clip reads pinned above her right temple. Reviewed at full size. The letter rewrite, the layout pass and the fresh pass below are this frame's history, not the current image's provenance.
 
 4. CLOSE-UP — 85mm, static, eye level — Mara's phone.
 Her phone buzzes; the screen shows the caller, VERA. Rain on the glass and on her hands. She looks at it. Lets it ring.
@@ -71,13 +72,13 @@ IMAGE: 05-phone-off.jpg
 NOTE: Play the line to the dead phone, flatly, as a decision rather than a plea. Her sister's name is established here by the phone and nowhere else.
 
 6. WIDE — 35mm, static, eye level — the barbershop doorway.
-The rain thickens. She ducks into the recessed doorway of a closed barbershop — the striped pole dark and still beside her — and presses back into the shadow. Going nowhere. The empty wet street holds the rest of the frame.
+Seen from just inside the recess, past the shoulder of Mara pressed back into the shadow: down the middle of the wet street an OLD MAN (70s) in a good coat gone thin at the cuffs comes slowly up toward her and stops a few paces short, looking at her as something in his face gives way. The striped pole is dark and still at the doorway's right edge; the empty street and the vending machine's cold light hold the rest of the frame. She is going nowhere.
 SCRIPT: "An OLD MAN (70s) comes slowly up the street in a good coat gone thin at the cuffs."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 7
 IMAGE: 06-barbershop-doorway.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The doorway has to read as a place she could stay for the whole scene. The barbershop pole returns in shot 17 — keep its position and colour consistent.
+NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` and `sheets/sakai.jpg` only, installed over `s1/06-barbershop-doorway.jpg`. She does not duck in — she is already in the doorway, and the frame is what she looks at. The doorway has to read as a place she could stay for the whole scene: it does, and the barbershop pole sits at its right edge, unlit, in the same position and colours it returns to in shot 17. Reviewed at full size.
 
 7. FULL — 50mm, static, eye level — the old man, hurrying.
 An OLD MAN in a cheap raincoat, one hand pressed to his side as if something is hidden there, walks hurriedly across the street, glancing back over his shoulder. He passes Mara's doorway — then, a step later, his eyes find her in the shadow, a flicker, as if he knows her face — and he looks away at once and keeps walking, faster, toward the bar sign. Away from her.
@@ -152,22 +153,22 @@ IMAGE: 16-the-key.jpg
 NOTE: The film's first prop and the engine of everything after. The tag is worn, the number is legible, and no other handbag contents are shown. Nothing here is explained to the audience.
 
 17. WIDE — 24mm, static, eye level — she runs.
-At the mouth of the alley, headlights swing back. Mara runs away from the car, toward the bar sign. Her purse strap snags on the barbershop pole and tears; the purse drops into a puddle behind her. She doesn't stop. The torn strap stays looped on the pole for one beat.
+Mara runs down the lane toward the amber glow of the bar at its near end, one arm flapping, and does not stop. Behind her the dark car pulls away and takes the long way round the block, unhurried, its beams down, never swinging into the lane. Halfway along the wet asphalt, where it slid off her shoulder when she ran to the old man, her purse lies open with its contents spilled across the road; she left it there and nobody picks it up. There is no snagged strap and nothing on the pole.
 SCRIPT: "The dark car pulls away and takes the long way round the block. At the other end of the street, the amber glow of a bar. Mara runs for it."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 8
 IMAGE: 17-she-runs.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The purse in the water is the scene's last piece of evidence and the detectives' room's first. Keep the puddle and the purse both in frame at the end of the shot. Retake 29 September 2026 (the layout pass): Mara runs away from the car, toward the bar sign; the purse and the puddle hold the end of the frame at the pole. Layout sheet `sheets/kanda-alley-layout.jpg`.
+NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` only, installed over `s1/17-she-runs.jpg`. The purse in the water is the scene's last piece of evidence and the detectives' room's first, so the bag and the puddle dimpling around it hold the near foreground while she runs past them. The pole and its unlit red-white-blue stripe return here in the position and colours shot 6 set. The alley mouth, the swinging headlights and the torn strap looped on the pole are out of the scene, and the 29 September layout sheet is no longer attached to anything in this scene.
 
-18. MEDIUM — 50mm, static, low angle — the search, and the flashlight.
-The sedan stops across the alley mouth again. One masked man walks back in to the body and searches the old man's coat, methodically. Nothing. His flashlight drifts across the street — and stops on the purse lying in the water.
+18. MEDIUM — 50mm, static, low angle — the purse, and the man walking away.
+The abandoned bag is the subject: a woman's dark-brown structured leather handbag lies open on the wet asphalt with its contents spread from it, the street's cold light pooling in the shallow water around it. Beyond it, soft and small and out of focus, one of the masked men walks back down the lane toward the idling car, unhurried, arms loose, and never looks toward the barbershop doorway where Mara stands. The car takes the long way round the block. The street carries on as though nothing has happened.
 SCRIPT: "Behind her, on the street: her purse, open in the rain."
-CAST: The Masked Men, The Old Man
+CAST: The Masked Men, Mara Voss
 LIGHT: Practical night
 TIME: 10
 IMAGE: 18-the-flashlight.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The search is thorough and ordinary. End on the torch beam on the purse, then cut — no reaction shot of the masked man, no music. Retake 29 September 2026 (the layout pass): one man walks back in on foot; the sedan stays at the mouth; the torch beam ends on the purse. Layout sheet `sheets/kanda-alley-layout.jpg`. Fresh pass 30 September 2026: regenerated on the moderation-safe composition — the beam on the purse in the water is the subject, the searching man stands small and distant by the sedan, no body in frame; the first attempt (kneeling over the body) was blocked by the image service. Landed.
+NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/masked-man.jpg` and `sheets/mara.jpg` only, installed over `s1/18-the-flashlight.jpg` (the filename keeps its old name; the beat does not). There is no search: nobody kneels, nobody touches a body, no flashlight beam, no body in frame, no weapon. End on the bag in the road and the man walking away, then cut — no reaction shot, no music. The 30 September study was the moderation-safe composition (torch on the purse, the searching man small by the sedan) after the first attempt was refused by the image service; that workaround is retired with the search itself, because the rewritten scene leaves nothing to search and no light to end on. Reviewed at full size.
 
 ---
 
