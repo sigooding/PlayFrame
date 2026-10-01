@@ -1120,6 +1120,13 @@ execFileSync(process.execPath, ["scripts/neonoire/pass-prompts.mjs"], { cwd: roo
 const passIndex = join(root, "docs", "neonoire", "passes", "README.md");
 assert(existsSync(passIndex), "The pass index should exist: docs/neonoire/passes/README.md");
 const index = readFileSync(passIndex, "utf8");
+// The index carries few links, but every one it carries has to resolve — a pass nobody can reach is a pass that
+// might as well not have happened. Checked rather than assumed: while editing one sentence of this file earlier in
+// the desk-lock pass, the whole line linking its own ledger was deleted, and nothing in the suite noticed.
+for (const link of [...index.matchAll(/\]\(([^)\s]+\.(?:md|jpg|jpeg|png))\)/g)].map(m => m[1])) {
+  assert(existsSync(join(root, "docs", "neonoire", "passes", link)), `the passes index links ${link}, which is not on disk`);
+}
+assert(index.includes("office-desk-lock-2026-10-01.md"), "the passes index must link the desk-lock ledger — it is the provenance an image agent reads before touching Jack's office");
 const awaiting = project.frames.filter(frame => !frame.image);
 assert(index.includes(`${onDisk.length} of ${project.frames.length} keyframes are on disk`), `The pass index should state ${onDisk.length}/${project.frames.length} keyframes on disk`);
 for (const frame of awaiting) {

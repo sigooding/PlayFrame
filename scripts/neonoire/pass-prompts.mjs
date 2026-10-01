@@ -8,7 +8,7 @@
 //
 // Output: docs/neonoire/passes/pass-N.md, plus docs/neonoire/passes/README.md as the index.
 // Pure Node: no build step, no dependencies.
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { SCENES, grammar, imagePath, parseBoard, readBoard } from "./plan.mjs";
@@ -155,6 +155,24 @@ const targets = only ? passes.filter(pass => pass === only) : passes;
 // The index is kept truthful even when the board is complete: a finished board still records
 // that every keyframe is on disk instead of leaving a stale "shots remain" count behind.
 const outDir = resolve(root, "docs/neonoire/passes");
+// The hand-written ledgers in this directory are the provenance an image agent reads before it touches a scene —
+// why a look is locked, which director's note moved a frame, what a caveat means. They were, until now,
+// invisible: the index listed only the three files its own prose happened to mention, and a line added to
+// README.md by hand is erased by the next regeneration. So the index is generated FROM the directory instead:
+// every ledger in it is listed under its own title, and nothing has to be remembered.
+const briefFile = name => /^pass-\d+\.md$/.test(name) || /^remaining-boards-\d+\.md$/.test(name);
+const ledgers = () => {
+  if (!existsSync(outDir)) return [];
+  return readdirSync(outDir)
+    .filter(name => name.endsWith(".md") && name !== "README.md" && !briefFile(name))
+    .map(name => {
+      const text = readFileSync(resolve(outDir, name), "utf8");
+      const heading = text.split("\n").find(line => line.startsWith("# "));
+      return `- [${(heading || name).replace(/^#\s+/, "")}](${name})`;
+    })
+    .sort();
+};
+
 const writeIndex = () => {
   const done = board.length - pending.length;
   const index = [
@@ -177,6 +195,7 @@ const writeIndex = () => {
     ] : []),
     "The Tokyo Story colour revision of scenes 72–75 completed in two sessions on 25 September 2026: ten generation calls (Jack's sheet plus nine shot studies), then eight (the six remaining replacements plus the lost-heel and twenty-metre continuity replacements), two slots deliberately unused. Read [the revision handoff](tokyo-streets-revision.md). Older pass files are historical briefs, not a request to regenerate finished images. The final nine missing studies were delivered on 1 October 2026; review caveats are in [the final ledger](remaining-boards-final-2026-10-01.md). The cold-open and scene-3 aspect revisions are complete; older pass files are historical, not requests to regenerate them. The 30 September 2026 final-screenplay revision cut four scenes and re-pinned the board around them — read [revision-2026-09-30.md](revision-2026-09-30.md).",
     "",
+    ...(ledgers().length ? ["## The ledgers — what happened, and why", "", "Written by the sessions they describe, not regenerated here. Read whichever one covers your scene before you redraw anything in it.", "", ...ledgers(), ""] : []),
     "## The cast sheets, and what must not drift",
     "",
     "- **Mara Voss (24)** — American, long wavy ash-blonde hair (soaked flat for the whole opening), pale blue eyes, indigo denim jacket, heather-grey tee, black jeans, white trainers, thin black cord necklace. Sheet: `public/images/neonoire/sheets/mara.jpg`, face crop `mara-face.jpg`.",
