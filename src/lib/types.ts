@@ -88,7 +88,11 @@ export interface Character {
 export interface FrameAudio {
   id: string;
   character: string;
+  /** The line as written in the screenplay, and the subtitle. */
   text: string;
+  /** What is actually spoken when the take is in another language (Japanese): `text` stays the English subtitle. */
+  textJa?: string;
+  language?: string;
   src: string;
   offset: number;
   duration?: number;

@@ -740,18 +740,33 @@
       "frameId": "neonoire-shot-55",
       "character": "VERA",
       "text": "I speak Japanese.",
-      "prompt": "[coolly] I speak Japanese.",
+      "prompt": "[coolly] 日本語は話せます。",
       "file": "/audio/neonoire/s6/55-vera-coolly-i-speak-japanese.mp3",
       "offset": 0.5,
-      "duration": 1.72,
+      "duration": 2.12,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
+      "textJa": "日本語は話せます。",
+      "language": "ja",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "nRYUDA1pQuioRnAoFpEm",
-        "id": "ROeDlGAmcjM4KVPAzhaZ"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "eTiEukTTeSd54yl4E87G",
+        "id": "HTgyf3QGagNtXrisHSaM"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/55-vera-coolly-i-speak-japanese-v1.mp3",
+          "prompt": "[coolly] I speak Japanese.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "nRYUDA1pQuioRnAoFpEm",
+            "id": "ROeDlGAmcjM4KVPAzhaZ"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-of-course-but-this-is-a",
@@ -759,7 +774,7 @@
       "character": "ISHIDA",
       "text": "Of course. But this is a difficult thing. It is easier in your own language.",
       "file": "/audio/neonoire/s6/55-ishida-of-course-but-this-is-a.mp3",
-      "offset": 2.72,
+      "offset": 3.12,
       "duration": 5.56,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
@@ -777,7 +792,7 @@
       "text": "The officer made a phone call the moment he had my sister's name. Then you came.",
       "prompt": "[coolly] The officer made a phone call the moment he had my sister's name. Then you came.",
       "file": "/audio/neonoire/s6/55-vera-the-officer-looked-at-the-screen.mp3",
-      "offset": 8.98,
+      "offset": 9.38,
       "duration": 4.99,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -807,7 +822,7 @@
       "character": "ISHIDA",
       "text": "A foreign passport. We like to take care with these things.",
       "file": "/audio/neonoire/s6/55-ishida-nothing-is-wrong-we-just-like.mp3",
-      "offset": 14.57,
+      "offset": 14.97,
       "duration": 3.97,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
