@@ -3,6 +3,7 @@ import { framesInSceneOrder } from "./frame-order";
 import type { FilmProject, ProjectPatch } from "./types";
 import directorSync from "./neonoire-director-sync.json";
 import restorationSync from "./neonoire-restoration-sync.json";
+import scene6Sync from "./neonoire-scene6-sync.json";
 
 const digest = (text: string) => createHash("sha256").update(text).digest("hex");
 const notesDigest = (text: string) => digest(text.replace(/(?:Generation )?Pass \d+ of \d+[^\n]*/g, "").trim());
@@ -36,7 +37,11 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   const bundled = new Map(bundle.frames.map(frame => [frame.id, frame]));
   const knownRestorationScript = restorationSync.scriptHashes.includes(digest(existing.script))
     || digest(existing.script) === directorSync.scriptHash;
-  const restoreDefaults = knownRestorationScript || existing.script === bundle.script;
+  // 2 October 2026: the interview scene (6) was rewritten. A workspace still on the default text before it, or already on
+  // the new text, gets the new shot text, recorded dialogue and the seven new placeholder slots; edited fields stay.
+  const scene6Current = scene6Sync.priorScriptHashes.includes(digest(existing.script)) || existing.script === bundle.script;
+  const scene6Frames = scene6Sync.frames as Record<string, Record<string, string>>;
+  const restoreDefaults = knownRestorationScript || existing.script === bundle.script || scene6Sync.priorScriptHashes.includes(digest(existing.script));
   const restoredFrames = restorationSync.frames as Record<string, Record<string, string>>;
   const restoredScenes = restorationSync.scenes as Record<string, Record<string, string>>;
   const fieldDigest = (value: unknown) => digest(JSON.stringify(value ?? null));
@@ -72,8 +77,28 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
         if (prior[key] && fieldDigest(frame[key]) === prior[key] && JSON.stringify(next[key]) !== JSON.stringify(arrived[key])) next = { ...next, [key]: arrived[key] };
       }
     }
+    const rewritten = scene6Frames[frame.id];
+    if (scene6Current && rewritten) {
+      for (const key of Object.keys(rewritten) as (keyof typeof arrived)[]) {
+        if (fieldDigest(frame[key]) === rewritten[key] && JSON.stringify(next[key]) !== JSON.stringify(arrived[key])) next = { ...next, [key]: arrived[key] };
+      }
+    }
     return next;
   });
+  if (scene6Current) {
+    // New slots go in bundle order: each right after the nearest earlier bundle frame this workspace already has.
+    const have = new Set(frames.map(frame => frame.id));
+    const order = bundle.frames.map(frame => frame.id);
+    for (const id of scene6Sync.newFrameIds.filter(id => !have.has(id))) {
+      const arrival = bundled.get(id);
+      if (!arrival) continue;
+      let at = -1;
+      for (let i = order.indexOf(id) - 1; i >= 0 && at < 0; i--) at = frames.findIndex(frame => frame.id === order[i]);
+      if (at < 0) at = frames.map(frame => frame.sceneId).lastIndexOf(arrival.sceneId);
+      frames.splice(at < 0 ? frames.length : at + 1, 0, arrival);
+      have.add(id);
+    }
+  }
   if (wasBoardingOrder) {
     const rank = new Map(bundle.frames.map((frame, index) => [frame.id, index]));
     frames.sort((a, b) => rank.get(a.id)! - rank.get(b.id)!);
@@ -100,7 +125,7 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     return next;
   });
   const patch: ProjectPatch = {};
-  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash)) patch.script = bundle.script;
+  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash || scene6Sync.priorScriptHashes.includes(digest(existing.script)))) patch.script = bundle.script;
   if (frames.length !== existing.frames.length || frames.some((frame, index) => frame !== existing.frames[index])) patch.frames = frames;
   if (scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
   return Object.keys(patch).length ? patch : null;

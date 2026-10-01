@@ -1,0 +1,166 @@
+{
+  "note": "Rewrites of 2 October 2026 (scene 6 the interview room, scene 1 the cold open, scene 2's echoed line). priorScriptHashes and the per-field digests are of the default text before it; bundle-refresh replaces a field only when the saved value still matches.",
+  "priorScriptHashes": [
+    "96bffed2d66d8220a64bd01360b482c465d858489fbd90583aaeb68dcaed6bfc",
+    "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4"
+  ],
+  "newFrameIds": [
+    "neonoire-shot-328",
+    "neonoire-shot-329",
+    "neonoire-shot-330",
+    "neonoire-shot-331",
+    "neonoire-shot-332",
+    "neonoire-shot-333",
+    "neonoire-shot-321",
+    "neonoire-shot-322",
+    "neonoire-shot-323",
+    "neonoire-shot-324",
+    "neonoire-shot-325",
+    "neonoire-shot-326",
+    "neonoire-shot-327"
+  ],
+  "frames": {
+    "neonoire-shot-01": {
+      "notes": "127ceb3166576cdee58290ad730708f859ed90414651ff98cd0fdf4a72f5c5bf"
+    },
+    "neonoire-shot-02": {
+      "notes": "395c658fd2aa63946010bcb86ec5eca2732d0af0f9bd32865dc87d36edc50b22"
+    },
+    "neonoire-shot-03": {
+      "description": "a6b1e666e67c6566d872a5d75da5e6d287276de68eadc62f28abeb82ad70f641",
+      "notes": "658c33f80beafb17997d2dd629efb8224acac6d28d8388977bf3dbdddcba74c0"
+    },
+    "neonoire-shot-04": {
+      "notes": "5e5c416aafb83b5406d4cc1985304b160b8b822d539b0740df29f321f2df2d4d",
+      "audio": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+    },
+    "neonoire-shot-05": {
+      "notes": "87952aa9f9536fbb28588665e95554d795e66e2f077c69b30589b4949a5a2163",
+      "audio": "18b0c5b59e30651077f09281bad734581afd32650f4bba015e8dd210f3b45b59"
+    },
+    "neonoire-shot-06": {
+      "description": "b145b861749a16c0deabe9df6e1a0083e7e7e3941e6f72191b3df085e1a5e23f",
+      "notes": "a21a3e7531e55bb5d3f15811e706aae26c80f43b4ad7ba6b213f16888e7355d4"
+    },
+    "neonoire-shot-07": {
+      "description": "84063da7a6f30c266258554e9f46feccb9158a51ffde91f31ca72c7c68d53647",
+      "notes": "7b2d76d7ad197ff5bf5e843138861ac25fa02c8cf0a6307e731751ae45c25156"
+    },
+    "neonoire-shot-09": {
+      "description": "31f5545e5e9080341580e8dfa55ccbc07466cb7374ecd7b9c2b14f6b60b3ad94",
+      "notes": "c86675c580afc411c0be9ace29024eb291c890e540e0936430c5dce3a1324652",
+      "audio": "8da2dbb3cb1a09c9afa404459bd48b7e8f4e6769b117a728274fabc9eb5e50ba"
+    },
+    "neonoire-shot-10": {
+      "description": "926f0af529befaa405a79311beb2a0509fb57230ebe1fcfcfefb288ee7666ce5",
+      "notes": "0b78416852f241b45b384000784c098840b36e96f6886035117c61e2f3c7e0cd",
+      "audio": "1d15bc0ed97ff4bc6fc3ffeb2ac6cd0800747a69425f1373379db3b5d519386c"
+    },
+    "neonoire-shot-12": {
+      "notes": "2ac3dccb6637cf5bda57d910feafbf2109dd2047b2863a434d73332315301d19"
+    },
+    "neonoire-shot-13": {
+      "notes": "c4ca6d9584f9b5da8d33db5981c9d33433b26c719938bc2d7bedaf8eb234f942"
+    },
+    "neonoire-shot-14": {
+      "notes": "66f0cc77253b6174c7cd6c89a039f6877e59476db1276ec608c39d4df5444423"
+    },
+    "neonoire-shot-15": {
+      "notes": "325dc3cbb466b13e1d65a49e70863bc29cdb73c43eb65c64003061c390fe8fa6"
+    },
+    "neonoire-shot-16": {
+      "notes": "ab25595b3249c2a3449847d47c5ba2a63843a3378b29ead391b3422fab819d0f"
+    },
+    "neonoire-shot-17": {
+      "notes": "fd16352f4b73c5f1e642ef7ee79a430e195edbb4c5c99a3fe971991b73e90188"
+    },
+    "neonoire-shot-18": {
+      "notes": "2b20ccc8f70d655c8ee821c5b541950a2c0d7257d6f1701a0b8d8ddb700d3711"
+    },
+    "neonoire-shot-19": {
+      "notes": "922916805b35ef32c5e46203cc228b76a63fe67ec71b3f1c8341c7bb7187e148"
+    },
+    "neonoire-shot-20": {
+      "notes": "06817d12e76e6e6b68f1fbec2490be66517b079b97ffb9840edddd5e0d39d754"
+    },
+    "neonoire-shot-21": {
+      "notes": "f7250ab52a864ff2cc078bb9708d6cfa565d53d4b0d2b0165a385d2e62584699"
+    },
+    "neonoire-shot-22": {
+      "notes": "ea35563eaaf136d0e1160534605625d3adc5daf8188861886d8ba06b394b04e1"
+    },
+    "neonoire-shot-25": {
+      "notes": "776bb72db4ac50d1b1dbbac1268e10f701fec14cb94b847ffadcf43d1a2900c4"
+    },
+    "neonoire-shot-23": {
+      "notes": "a980e60069f6faa29354c723fa9d51cd364348f6c21b8dad57f1b05f05e24645"
+    },
+    "neonoire-shot-26": {
+      "notes": "b878fb9ba64ea1b9143b5fd9ceea6f325ce69373a47846403bbf6fda8ed3eb86"
+    },
+    "neonoire-shot-24": {
+      "notes": "dafa37c16aff5b4c29aae82f5cf42827a1525129753b7b20074a7c44d9c803e6"
+    },
+    "neonoire-shot-308": {
+      "notes": "d6371600dff1c9901f27c554dc3c043f25f12532ce998c77a4b104ebc8a931e8"
+    },
+    "neonoire-shot-27": {
+      "notes": "51e2e43eea737d3f8cd9cb820bc99921c26b9f00d30f04a64e87bcd0cc89fdab"
+    },
+    "neonoire-shot-28": {
+      "notes": "2cf3f9a392d06c56b29e30637c1c2e17c41f61ea7baabac992c87893f00a86f0"
+    },
+    "neonoire-shot-51": {
+      "notes": "b146c7177739f2c6762c2bbc4dec1d0cf66252d989a3651bb30662f9345da948"
+    },
+    "neonoire-shot-52": {
+      "notes": "df3893ab80624ee50a3cd1902cb6a9860487621dd535af66db1a49b44a59e455"
+    },
+    "neonoire-shot-54": {
+      "notes": "5c296be04476a133c9b585f8b86947ece489c74e37f0e8b1a2059823e491861c"
+    },
+    "neonoire-shot-53": {
+      "notes": "2b96fa22d59d03979fdf666f3c96cb88e3fecfae2ea1b71696910ff3294561a8"
+    },
+    "neonoire-shot-55": {
+      "description": "a69578e12ab2e735df10904101d438b0488daa8489efb6a0f7921150764d4ccc",
+      "notes": "ebc6215ac1f0c60e72a6fb7122066893c1ccc5025a89cc84be646dde746ff9ba",
+      "duration": "785f3ec7eb32f30b90cd0fcf3657d388b5ff4297f2f9716ff66e9b69c05ddd09",
+      "audio": "f448804159f7d5098d9dc5a5a5827da23aa5d9330c098549c2e4328cfbc6003b"
+    },
+    "neonoire-shot-56": {
+      "description": "1d924d28b42504c9918370471e0c9b659bdb34724f2f31dee354c6e515c78e2a",
+      "notes": "c4e90e644738281e4e77844c078445b47a8c8fe20ac6acb03f5277ecc5f2a23b",
+      "audio": "6c3f475bf6673ac9792ba14856d6624b7d7f13c28719fc8ad2d4b8c69cde51bc"
+    },
+    "neonoire-shot-57": {
+      "notes": "4b6ce6ae0c6c40f662580c15ad7666f0ce763a4f74f290ab5f7c892c0df3c3b1",
+      "duration": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+      "audio": "40d118bce1a9358725e112df1ca371045ae399f3f10dd681260a2a11f4b521e5"
+    },
+    "neonoire-shot-58": {
+      "notes": "b62f0bf9a42ae56336b14fd0de225813a4d48b3f179e564414498efa18409f80",
+      "duration": "785f3ec7eb32f30b90cd0fcf3657d388b5ff4297f2f9716ff66e9b69c05ddd09",
+      "audio": "5f5d379f77251e0249abdf779e6f506d2344837553babf6dfda276f3f51d2d7f"
+    },
+    "neonoire-shot-59": {
+      "notes": "bfb4cf1b3a93a86d417c4878c918265c5006092185822835e14656c49f81c9b4",
+      "duration": "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a",
+      "audio": "cec3501ad279914aaeac75db114270d9579f0c8ceba771126fcfd1f3a4c1a86d"
+    },
+    "neonoire-shot-60": {
+      "description": "965660c4bdc3fbb2e97caf0092fa7d1d013d66ed381d9058ee9299f9c485ce02",
+      "notes": "2ea088692c75787bdc0d0b898d4d13c57eba89151a83716c7145766cbd26fcb2",
+      "audio": "60f46b421cf2098df3c42d61db29fe193a727d115ad9b7bd821c7632544a2e30"
+    },
+    "neonoire-shot-61": {
+      "notes": "d7d7058d4e360fd2fa4c04ab50f909ac8a96bd79dad6a0b106cbcb563e1e988f",
+      "audio": "927cd489753c1a9f33d9043449dfa1ca38718788643b2ac774f0f0f81c55a1b0"
+    },
+    "neonoire-shot-62": {
+      "description": "ca205f55e9e5e0c5d9f69a1884248abad527df73e8436bcde183040c0252aed6",
+      "notes": "c6a6b351a09c1020a6abd6d38ab2c2526b145fe566dabf9f0b224a8890dd5078",
+      "audio": "013e1a139827a71179232af1b1f6c24d9bc69b12206f12f94c0b6f3d65e394ba"
+    }
+  }
+}

@@ -7,6 +7,8 @@
 //
 // --replace       re-record an existing --id: the old take is archived (docs/neonoire/voice/archive/), never deleted,
 //                  and the line keeps its id and file path so nothing that points at it breaks.
+// --ja "日本語…"   the line is SPOKEN in Japanese: `text` stays the English (the subtitle), `textJa` holds what is said and
+//                  language is "ja". --ja-prompt keeps the tagged Japanese that was sent to ElevenLabs.
 // --fx phone|tv|tape   a filter the animatic applies to the clean take (a phone line, a television, an old cassette).
 // --gen flow/session/generation   the ElevenLabs ids of the take, kept for provenance.
 // --file may also be an https URL: download it at once, generation links expire after two hours.
@@ -69,10 +71,10 @@ const voices = readVoices(root);
 const id = args.id || `${sceneKey}-${args.character.toLowerCase().replace(/[^a-z]+/g, "")}-${slug}`;
 const generation = args.gen ? (([flow, session, gen]) => ({ flow, session, id: gen }))(args.gen.split("/")) : undefined;
 const entry = {
-  id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(plain !== args.text ? { prompt: args.text } : {}), file: finalRel,
+  id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(args["ja-prompt"] ? { prompt: args["ja-prompt"] } : plain !== args.text ? { prompt: args.text } : {}), file: finalRel,
   offset: Number(args.offset ?? existing?.offset ?? 0.4), ...(duration ? { duration } : {}),
   voice: args.voice || voices.characters[args.character.toUpperCase()]?.voiceId || undefined,
-  model: args.model || voices.speechModel, ...(args.fx ? { fx: args.fx } : existing?.fx ? { fx: existing.fx } : {}), ...(generation ? { generation } : {}), status: args.status || "take",
+  model: args.model || voices.speechModel, ...(args.ja ? { textJa: args.ja, language: "ja" } : existing?.textJa ? { textJa: existing.textJa, language: existing.language } : {}), ...(args.fx ? { fx: args.fx } : existing?.fx ? { fx: existing.fx } : {}), ...(generation ? { generation } : {}), status: args.status || "take",
 };
 if (existing) {
   // Same id, same file path: the new take replaces the old one in place; the old take stays in `history`.

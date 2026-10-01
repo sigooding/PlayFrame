@@ -17,6 +17,8 @@ export function AnimaticExportPanel({ project }: { project: FilmProject }) {
   const [audio, setAudio] = useState(true);
   const [music, setMusic] = useState(false);
   const [subtitles, setSubtitles] = useState(false);
+  const [camera, setCamera] = useState(false);
+  const [credits, setCredits] = useState(false);
   const [job, setJob] = useState<AnimaticJobStatus | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -26,7 +28,7 @@ export function AnimaticExportPanel({ project }: { project: FilmProject }) {
   const running = busy || jobStatus === "rendering";
   const settings: AnimaticOptions = {
     ...(scope === "scene" ? { sceneId } : scope === "range" ? { fromSceneId, toSceneId } : {}),
-    resolution, timing, audio, music, subtitles: audio && subtitles,
+    resolution, timing, audio, music, subtitles: audio && subtitles, camera, credits: music && credits,
   };
   const frames = animaticFrames(project, settings);
   const seconds = frames.reduce((sum, frame) => sum + frame.duration, 0);
@@ -64,6 +66,7 @@ export function AnimaticExportPanel({ project }: { project: FilmProject }) {
     try {
       const response = await fetch(base, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(settings) });
       const data = await response.json();
+      if (response.status === 404) throw new Error("The server doesn't have this workspace saved (it may be a different database, or the page is stale). Reload, or open it again from Templates, then export. Workspace id: " + project.id);
       if (!response.ok) throw new Error(data.error || "Unable to start the export.");
       setJob(data); sessionStorage.setItem(storageKey, data.id);
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Export could not be started."); }
@@ -85,7 +88,7 @@ export function AnimaticExportPanel({ project }: { project: FilmProject }) {
       {scope === "scene" && <Field label="Scene to export"><select value={sceneId} onChange={event => setSceneId(event.target.value)}>{sceneOptions}</select></Field>}
       {scope === "range" && <div className="fields-row"><Field label="First scene"><select value={fromSceneId} onChange={event => setFrom(event.target.value)}>{sceneOptions}</select></Field><Field label="Last scene"><select value={toSceneId} onChange={event => setTo(event.target.value)}>{sceneOptions}</select></Field></div>}
       <div className="fields-row"><Field label="Video resolution"><select value={resolution} onChange={event => setResolution(event.target.value as AnimaticOptions["resolution"])}><option value="1080p">1080p · Full HD</option><option value="720p">720p · Faster export</option></select></Field><Field label="Animatic timing"><select value={timing} onChange={event => setTiming(event.target.value as AnimaticOptions["timing"])}><option value="playback">Match storyboard playback</option><option value="tight">Tight cut · Shorter silent holds</option></select></Field></div>
-      <div className="animatic-checks"><label><input type="checkbox" checked={audio} onChange={event => setAudio(event.target.checked)} />Recorded dialogue</label><label><input type="checkbox" checked={subtitles && audio} disabled={!audio} onChange={event => setSubtitles(event.target.checked)} />Dialogue subtitles</label>{supportsScore && <label><input type="checkbox" checked={music} onChange={event => setMusic(event.target.checked)} />Include configured score</label>}</div>
+      <div className="animatic-checks"><label><input type="checkbox" checked={audio} onChange={event => setAudio(event.target.checked)} />Recorded dialogue</label><label><input type="checkbox" checked={subtitles && audio} disabled={!audio} onChange={event => setSubtitles(event.target.checked)} />Dialogue subtitles</label>{supportsScore && <label><input type="checkbox" checked={music} onChange={event => setMusic(event.target.checked)} />Include configured score</label>}{supportsScore && <label><input type="checkbox" checked={music && credits} disabled={!music} onChange={event => setCredits(event.target.checked)} />End credits over the song</label>}<label><input type="checkbox" checked={camera} onChange={event => setCamera(event.target.checked)} />Camera moves (shots whose Movement is not Static)</label></div>
     </fieldset>
     <p className="animatic-summary">{frames.length} shots · {Math.floor(seconds / 60)}m {Math.round(seconds % 60)}s of board holds · 24 fps{timing === "tight" ? " · Silent holds shortened in the export" : ""}</p>
     {job && <div className="animatic-progress" role="status" aria-live="polite">

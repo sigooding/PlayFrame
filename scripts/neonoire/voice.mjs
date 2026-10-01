@@ -26,6 +26,7 @@ export function attachAudio(frames, manifest, root) {
     (frame.audio ||= []).push({
       id: line.id, character: line.character, text: line.text, src: line.file, offset: line.offset,
       ...(line.duration ? { duration: line.duration } : {}),
+      ...(line.textJa ? { textJa: line.textJa, language: line.language || "ja" } : {}),
       ...(line.voice ? { voice: line.voice } : {}), ...(line.model ? { model: line.model } : {}),
     });
     const needed = Math.ceil(line.offset + (line.duration || 0) + TAIL);

@@ -6,7 +6,8 @@
 //   node scripts/neonoire/animatic.mjs                       the whole film (long)
 //   --project saved-project.json --output cut.mp4           export current saved edits/order
 //   --resolution 720p --hold --no-subs --no-camera          match storyboard playback, faster render
-//   --camera          optional motion for explicitly moving shots, never Static
+//   --camera          slow centred push or pull for shots whose Movement is not Static (no sideways drift)
+//   --crf 16 --preset slow --audio-bitrate 192k             best quality (defaults: 20, veryfast, 128k)
 //   --no-audio --no-music --no-credits                      optional sound/credit controls
 //
 // Cuts are tight by default: a voiced frame starts about half a second before its first line and ends
@@ -137,7 +138,7 @@ for (let [i, frame] of frames.entries()) {
     : `scale=${width}:${height}:force_original_aspect_ratio=decrease,pad=${width}:${height}:(ow-iw)/2:(oh-ih)/2`;
   run([...inputs, "-filter_complex", filter, "-map", "0:v", "-map", "[a]", "-t", String(frame.duration),
     "-vf", `${look}${subFilter},format=yuv420p`,
-    "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-threads", "2", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", seg]);
+    "-c:v", "libx264", "-preset", String(args.preset || "veryfast"), "-crf", String(args.crf || 20), "-threads", "2", "-r", "24", "-c:a", "aac", "-b:a", String(args["audio-bitrate"] || "128k"), "-ar", "44100", "-ac", "1", seg]);
   const tag = sceneTag(frame.sceneId);
   sceneSpan[tag] = [sceneSpan[tag]?.[0] ?? segmentsTotal, segmentsTotal + frame.duration];
   segments.push(seg);
@@ -161,7 +162,7 @@ for (let [i, frame] of frames.entries()) {
       `Style: Title,DejaVu Sans,96,&H00FFFFFF,&H00000000,&H00000000,1,5,0\nStyle: Sub,DejaVu Sans,40,&H00CCCCCC,&H00000000,&H00000000,0,5,0\n\n[Events]\nFormat: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text\n` +
       lines.map((x, k) => `Dialogue: 0,${t(k)},0:02:${String(20 + k).padStart(2, "0")}.00,${k ? "Sub" : "Title"},,0,0,${k ? 0 : 0},,{\\fad(1800,1800)\\pos(960,${k ? 600 + (k - 1) * 70 : 440})}${x}`).join("\n") + "\n");
     run(["-f", "lavfi", "-t", String(len), "-i", `color=c=black:s=${dimensions}:r=24`, "-f", "lavfi", "-t", String(len), "-i", "anullsrc=r=44100:cl=mono",
-      "-vf", `subtitles=${ass},format=yuv420p`, "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-threads", "2", "-r", "24", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "1", "-shortest", seg]);
+      "-vf", `subtitles=${ass},format=yuv420p`, "-c:v", "libx264", "-preset", String(args.preset || "veryfast"), "-crf", String(args.crf || 20), "-threads", "2", "-r", "24", "-c:a", "aac", "-b:a", String(args["audio-bitrate"] || "128k"), "-ar", "44100", "-ac", "1", "-shortest", seg]);
     sceneSpan.CREDITS = [segmentsTotal, segmentsTotal + len];
     segments.push(seg);
     segmentsTotal += len;
@@ -196,7 +197,7 @@ else {
     f += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=stereo,atrim=${c.seek || 0}:${((c.seek || 0) + len).toFixed(2)},asetpts=PTS-STARTPTS,afade=t=in:d=${c.fadeIn ?? 1.5},afade=t=out:st=${Math.max(0, len - fo).toFixed(2)}:d=${fo},volume=${c.gain ?? 0.35},adelay=${Math.round(c.start * 1000)}|${Math.round(c.start * 1000)}[m${k}];`;
   });
   f += live.map((_, k) => `[m${k}]`).join("") + `amix=inputs=${live.length}:normalize=0[mus];[sc]aformat=channel_layouts=mono,anull[scm];[mus][scm]sidechaincompress=threshold=0.02:ratio=10:attack=30:release=600[duck];[dlg]aformat=channel_layouts=stereo[dl];[dl][duck]amix=inputs=2:normalize=0,loudnorm=I=-16:LRA=11:TP=-1.5[out]`;
-  run([...ins, "-filter_complex", f, "-map", "0:v", "-map", "[out]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", file]);
+  run([...ins, "-filter_complex", f, "-map", "0:v", "-map", "[out]", "-c:v", "copy", "-c:a", "aac", "-b:a", String(args["audio-bitrate"] || "160k"), "-ar", "44100", "-movflags", "+faststart", file]);
   console.log(`music: ${live.map(c => `${c.file} ${c.start.toFixed(1)}s-${c.end.toFixed(1)}s`).join("; ")}`);
 }
 const total = segmentsTotal;

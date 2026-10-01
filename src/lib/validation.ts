@@ -95,6 +95,7 @@ const sanitizeAudio = (value: unknown): FrameAudio[] | undefined => {
     if (!audioSrc(a.src) || !Number.isFinite(offset) || offset < 0) return null;
     return {
       id: id(a.id), character: text(a.character, 120, "Unknown"), text: text(a.text, 2000), src: a.src,
+      textJa: text(a.textJa, 2000) || undefined, language: text(a.language, 12) || undefined,
       offset: Math.min(3600, Math.round(offset * 100) / 100),
       duration: Number.isFinite(duration) && duration > 0 ? Math.min(600, Math.round(duration * 100) / 100) : undefined,
       voice: text(a.voice, 100) || undefined, model: text(a.model, 100) || undefined,

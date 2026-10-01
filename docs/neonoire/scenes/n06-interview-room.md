@@ -9,7 +9,7 @@ Grammar: one table, two chairs, rain on a frosted window. The scene is a two-han
 
 ## Visual revision — 25 September 2026
 
-All twelve shots (51–62) are **16:9, 1920×1080, full-bleed**. The room master is `public/images/neonoire/s6/51-the-interview-room.jpg`; the blocking master is `56-three-days-ago.jpg`. Keep Vera left, Ishida right, the single frosted rainy window centred, the grey laminate table, two beige chairs and steady fluorescent light. The tan tissue box remains on the window sill throughout, within Ishida's reach; no box appears on the table.
+The first twelve shots (51–62) are **16:9, 1920×1080, full-bleed**. Shots 321–327 are placeholder slots for the 2 October 2026 rewrite of this scene (the form, her handwriting, the pen that stops, the passport photograph, the photograph squared to the corner, the tea wiped away, the photograph into his pocket); they await generation by the cold-open rules — screenplay text and character sheets only, the room kept to the interview lock. The room master is `public/images/neonoire/s6/51-the-interview-room.jpg`; the blocking master is `56-three-days-ago.jpg`. Keep Vera left, Ishida right, the single frosted rainy window centred, the grey laminate table, two beige chairs and steady fluorescent light. The tan tissue box remains on the window sill throughout, within Ishida's reach; no box appears on the table.
 
 Vera retains her scene-5 charcoal coat, cream high-neck knit, navy trousers, brown boots and pale-blue umbrella. Ishida matches his character sheet: charcoal suit and light grey open-collar shirt, **no tie**. One cream-white **paper** cup only. It is intact with a dry tabletop before shot 60; the crushed cup and spill persist through 61–62. Ishida puts one offered tissue beside her hand, then slides his card across the wet table. Do not restore the cup, wipe the spill early, add glass cups or swap the umbrella colour.
 
@@ -56,7 +56,7 @@ IMAGE: 54-you-must-be-cold.jpg
 NOTE: American-accented English from a Japanese detective in his fifties — cast for warmth, not menace. No push-in, no music.
 
 55. MEDIUM CLOSE-UP — 85mm, static, eye level — I speak Japanese.
-Vera answers in Japanese: "I speak Japanese." He accepts it with a mild smile: of course, but this is a difficult thing, it is easier in your own language. A small beat. She lets it go — for now.
+Vera answers in Japanese: "I speak Japanese." He accepts it with a mild smile: of course, but this is a difficult thing, it is easier in your own language. A small beat. She lets it go — for now. Then she says what she saw at the counter — the officer made a phone call the moment he had her sister's name, and then Ishida came — and he gives her the reason that sounds like procedure: a foreign passport, and "we like to take care with these things."
 SCRIPT: "I speak Japanese."
 CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
@@ -64,14 +64,14 @@ TIME: 12
 IMAGE: 55-i-speak-japanese.jpg
 NOTE: Her Japanese is fluent and slightly formal — the language of a child who grew up here and an adult who came back. The language is the scene's other plot: she offers it here, he refuses it, and at shot 61 they swap sides.
 
-56. TWO-SHOT — 35mm, static, eye level — three days ago.
-She asks what is on the screen and gets nothing back; he asks his own questions instead. "When did you last see your sister?" — "Three days ago. At my apartment. We had dinner." — "And how did she seem?" Vera hesitates. "Normal."
-SCRIPT: "Three days ago. At my apartment. We had dinner."
+56. TWO-SHOT — 35mm, static, eye level — Thursday.
+The photograph is squared to the corner of the form; he asks his next question. "When did you last see her?" — "Thursday. At my apartment. We had dinner." — "And how did she seem?" Vera hesitates. "Normal."
+SCRIPT: "Thursday. At my apartment. We had dinner."
 CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 16
 IMAGE: 56-three-days-ago.jpg
-NOTE: She asks the same question twice — what's on the screen — and he answers a different one both times; play his smile as a man watching someone pass a test, not as evasion. The audience already knows what Vera does not. Play the hesitation on "normal" as embarrassment, not guilt.
+NOTE: The room master's blocking shot, still filed under its first name (56-three-days-ago.jpg; filenames stay stable). He is writing nothing down and watching her answer; play his attention as a man watching someone pass a test, not as evasion. The audience already knows what Vera does not. Play the hesitation on "normal" as embarrassment, not guilt.
 
 57. CLOSE-UP — 85mm, static, eye level — he waits.
 Ishida waits, kindly, as if he knows there is more. She doesn't give it.
@@ -101,8 +101,8 @@ IMAGE: 59-is-she-dead.jpg
 NOTE: Shoot the exchange flat and symmetrical from the third chair, both of them in frame, no coverage and no cut — the sentence is the weapon and the audience has to hear its shape twice. He is not lying and he is not helping, and the frame should refuse to tell you which matters more.
 
 60. CLOSE-UP — 85mm, static, high angle — the crushed cup.
-The cup crumples in her fist. Hot tea runs over her fingers and onto the table. She doesn't seem to feel it.
-SCRIPT: "The cup crumples in her fist. Hot tea runs over her fingers and onto the table."
+The cup crumples in her fist. Hot tea runs over her fingers and onto the table, across the corner of the form. She doesn't seem to feel it.
+SCRIPT: "Hot tea runs over her fingers and onto the table, across the corner of the form."
 CAST: Vera Voss
 LIGHT: Practical night
 TIME: 8
@@ -111,7 +111,7 @@ NOTE: The same high angle as 53, on the same cup, so the film rhymes the two sho
 
 61. MEDIUM CLOSE-UP — 85mm, static, eye level — in Japanese.
 For the first time in years, someone takes a tissue from the box. Ishida offers it; she doesn't take it. He sets it down beside her hand. When she speaks again it's in Japanese — low, precise, every word placed — and he answers in Japanese too, for the first time: formal, quiet, a door closing.
-SCRIPT: "She is my sister. I have been calling her for three days. If you know where she is, tell me."
+SCRIPT: "She is my sister. I have been calling her for days. If you know where she is, tell me."
 CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 26
@@ -119,13 +119,76 @@ IMAGE: 61-in-japanese.jpg
 NOTE: The language finally changes hands, and it is the most honest and the most closed he is in the scene: I do not know where she is, and the safest thing you can do is nothing. Subtitles only, no dubbed warmth, and the tissue stays where he put it. Then silence, and rain on the frosted window.
 
 62. CLOSE-UP — 85mm, static, eye level — the card, and the table.
-He switches back to English as if the last minute didn't happen and slides his card across the wet table. She looks at it, takes it, stands, picks up the blue umbrella. At the door: "You would have told me if she was dead. Wouldn't you?" — "Of course." She can't tell. Then Ishida alone, wiping the spilled tea away with the tissue until there is no trace of it.
+He switches back to English as if the last minute didn't happen and slides his card across the wet table. She looks at it, takes it, stands, picks up the blue umbrella. At the door: "You would have told me if she was dead. Wouldn't you?" — "Of course, I'm sure we will find her, you have my word." She can't tell. (Ishida alone, wiping the tea away and pocketing the photograph, is boarded in 326–327.)
 SCRIPT: "He slides his card across the wet table. She looks at it. Then takes it. Stands. Picks up the blue umbrella."
 CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 22
 IMAGE: 62-the-card.jpg
 NOTE: The card goes across a wet table, and that is the whole scene in one image. Shot 62 retaken 1 October 2026 — wet, not flooded: the spill stays one pool around the crushed cup at her side and the card rides on DRY laminate, never lying in the tea. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.
+
+321. MEDIUM — 35mm, static, eye level — the form.
+He slides a form across the table, and a pen. MISSING PERSON, in Japanese, with an English line beneath. Vera looks at it; she has already decided to fill it in.
+SCRIPT: "He slides a form across the table, and a pen. MISSING PERSON, in Japanese, with an English line beneath."
+CAST: Vera Voss, Detective Ishida
+LIGHT: Practical night
+TIME: 8
+IMAGE: 321-the-form.jpg
+NOTE: Placeholder slot for the 2 October 2026 rewrite. One cream-white paper cup only, intact; the form is a plain printed sheet, Japanese heading with an English line beneath, a cheap ballpoint beside it. Table and window follow the room master (51) and the interview lock; nothing on the table that the scene has not introduced.
+
+322. CLOSE-UP — 85mm, static, high angle — her handwriting.
+She fills it in. Her handwriting is fast and square. Ishida reads it upside down as she writes, without seeming to.
+SCRIPT: "She fills it in. Her handwriting is fast and square. Ishida reads it upside down as she writes, without seeming to."
+CAST: Vera Voss, Detective Ishida
+LIGHT: Practical night
+TIME: 12
+IMAGE: 322-her-handwriting.jpg
+NOTE: Placeholder slot. Her hand and the pen on the form, square capitals; at the top of the frame Ishida's eyes, level on the page, upside down to him and perfectly legible. He never looks at her face while she writes. This shot carries the questions about where she grew up and her father.
+
+323. MEDIUM CLOSE-UP — 85mm, static, eye level — the pen stops.
+The pen stops. "She was four. She doesn't remember him." It is not quite an answer. Ishida lets it be one.
+SCRIPT: "The pen stops."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 6
+IMAGE: 323-the-pen-stops.jpg
+NOTE: Placeholder slot. Vera only: the pen has stopped a hair above the paper, her eyes still down. No face-to-camera; she answers the form, not him.
+
+324. CLOSE-UP — 85mm, static, high angle — the passport photograph.
+Vera takes her wallet from her bag. From behind her card, a small square passport photo: Mara, unsmiling for once, a strand of hair across her eyes. "She gave me two when she renewed. In case." — "In case."
+SCRIPT: "From behind her card, a small square passport photo: MARA, unsmiling for once, a strand of hair across her eyes."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 10
+IMAGE: 324-the-passport-photo.jpg
+NOTE: Placeholder slot. The photograph must read as Mara (ash-blonde, pale blue eyes, the red bird clip NOT in frame: a passport photo does not allow it), plain background, a strand of hair across her eyes, unsmiling. Vera's wallet and the brown bag only as far as the hand needs.
+
+325. CLOSE-UP — 85mm, static, high angle — squared to the corner.
+He takes it by the edges. Looks at it a moment. Sets it on the form, squares it to the corner.
+SCRIPT: "He takes it by the edges. Looks at it a moment. Sets it on the form, squares it to the corner."
+CAST: Detective Ishida
+LIGHT: Practical night
+TIME: 6
+IMAGE: 325-squared-to-the-corner.jpg
+NOTE: Placeholder slot. Only his hands and the photograph on the form, set exactly to its corner; this is the corner the tea will later reach (60), so keep it clear of the cup.
+
+326. CLOSE-UP — 85mm, static, high angle — no trace.
+Ishida sits alone a moment. He wipes the spilled tea from the table with the tissue, slowly, carefully, until there is no trace of it.
+SCRIPT: "He wipes the spilled tea from the table with the tissue, slowly, carefully, until there is no trace of it."
+CAST: Detective Ishida
+LIGHT: Practical night
+TIME: 8
+IMAGE: 326-no-trace.jpg
+NOTE: Placeholder slot. Alone in the frame now: the crushed paper cup, the tissue, the table going dry under his hand. The form and photograph stay out of this shot so that 327 can reveal what he leaves.
+
+327. CLOSE-UP — 85mm, static, eye level — the inside pocket.
+Then he picks up the passport photo, dry at the edges, looks at Mara's face, and slides it into his inside pocket. The form he leaves where it is.
+SCRIPT: "Then he picks up the passport photo, dry at the edges, looks at Mara's face, and slides it into his inside pocket. The form he leaves where it is."
+CAST: Detective Ishida
+LIGHT: Practical night
+TIME: 10
+IMAGE: 327-the-inside-pocket.jpg
+NOTE: Placeholder slot. The photograph is dry at its edges and stained only where the tea reached the form; his charcoal jacket, no tie. The form stays on the table, the last thing in the room.
 
 ## Passes
 
@@ -135,3 +198,4 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 | --- | --- | --- |
 | 6 | 51–60 | The interview room, The paper cup of tea, The untouched tea, You must be cold, I speak japanese, Three days ago, He waits, Why kanda, Is she dead, The crushed cup |
 | 7 | 61–62 | In japanese, The card |
+| — | 321–327 | The form, Her handwriting, The pen stops, The passport photograph, Squared to the corner, No trace, The inside pocket (placeholder slots) |

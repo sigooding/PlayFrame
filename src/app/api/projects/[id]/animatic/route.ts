@@ -9,6 +9,8 @@ export const dynamic = "force-dynamic";
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+  // Rendering needs FFmpeg and a disk that outlives one request: a serverless host (Vercel) has neither.
+  if (process.env.VERCEL) return NextResponse.json({ error: "MP4 export can't run on Vercel (no FFmpeg, and each request may land on a different instance). Run the app on your own machine or a server with FFmpeg (npm run build && npm start), or use npm run animatic:neonoire." }, { status: 501 });
   if (!isUuid(id)) return NextResponse.json({ error: "Invalid project." }, { status: 400 });
   try {
     const project = await getProject(id);

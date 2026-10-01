@@ -349,12 +349,12 @@
     },
     {
       "id": "s1-mara-tired-not-tonight",
-      "frameId": "neonoire-shot-05",
+      "frameId": "neonoire-shot-04",
       "character": "MARA",
       "text": "Not tonight.",
       "prompt": "[tired] Not tonight.",
       "file": "/audio/neonoire/s1/05-mara-tired-not-tonight.mp3",
-      "offset": 2,
+      "offset": 2.5,
       "duration": 1.65,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
@@ -456,11 +456,11 @@
     },
     {
       "id": "s1-oldman-twenty-years",
-      "frameId": "neonoire-shot-09",
+      "frameId": "neonoire-shot-10",
       "character": "OLD MAN",
       "text": "Twenty years.",
       "file": "/audio/neonoire/s1/09-oldman-twenty-years.mp3",
-      "offset": 3,
+      "offset": 0.6,
       "duration": 1.57,
       "voice": "y7NkiaxPRjIzeTdRhHDC",
       "model": "eleven_v4",
@@ -486,23 +486,6 @@
         "flow": "3PHvMwiCPgs8R7eUX4pm",
         "session": "MaBVyaaAxfDK7we594Q5",
         "id": "h2bhyYHAGMH5Fyy6SY1M"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s1-maskedman-shitsurei-shimasu",
-      "frameId": "neonoire-shot-10",
-      "character": "MASKED MAN",
-      "text": "Shitsurei shimasu.",
-      "file": "/audio/neonoire/s1/10-maskedman-shitsurei-shimasu.mp3",
-      "offset": 1,
-      "duration": 1.07,
-      "voice": "IUNPSr7i3o1XsExH6IGv",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "3PHvMwiCPgs8R7eUX4pm",
-        "session": "AjtYR5XTmvCclaizlfkS",
-        "id": "asWjWd14MboN67Cmpnx7"
       },
       "status": "take"
     },
@@ -757,18 +740,33 @@
       "frameId": "neonoire-shot-55",
       "character": "VERA",
       "text": "I speak Japanese.",
-      "prompt": "[coolly] I speak Japanese.",
+      "prompt": "[coolly] 日本語は話せます。",
       "file": "/audio/neonoire/s6/55-vera-coolly-i-speak-japanese.mp3",
       "offset": 0.5,
-      "duration": 1.72,
+      "duration": 2.12,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
+      "textJa": "日本語は話せます。",
+      "language": "ja",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "nRYUDA1pQuioRnAoFpEm",
-        "id": "ROeDlGAmcjM4KVPAzhaZ"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "eTiEukTTeSd54yl4E87G",
+        "id": "HTgyf3QGagNtXrisHSaM"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/55-vera-coolly-i-speak-japanese-v1.mp3",
+          "prompt": "[coolly] I speak Japanese.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "nRYUDA1pQuioRnAoFpEm",
+            "id": "ROeDlGAmcjM4KVPAzhaZ"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-of-course-but-this-is-a",
@@ -776,7 +774,7 @@
       "character": "ISHIDA",
       "text": "Of course. But this is a difficult thing. It is easier in your own language.",
       "file": "/audio/neonoire/s6/55-ishida-of-course-but-this-is-a.mp3",
-      "offset": 2.7,
+      "offset": 3.12,
       "duration": 5.56,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
@@ -791,86 +789,152 @@
       "id": "s6-vera-the-officer-looked-at-the-screen",
       "frameId": "neonoire-shot-55",
       "character": "VERA",
-      "text": "The officer looked at the screen and made a phone call. Then you came. What's on the screen?",
+      "text": "The officer made a phone call the moment he had my sister's name. Then you came.",
+      "prompt": "[coolly] The officer made a phone call the moment he had my sister's name. Then you came.",
       "file": "/audio/neonoire/s6/55-vera-the-officer-looked-at-the-screen.mp3",
-      "offset": 8.8,
-      "duration": 5.64,
+      "offset": 9.38,
+      "duration": 4.99,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "zEokf8IyEkUPBpEuOuFK",
-        "id": "WkXJcSQ5BrvFNSJYFHyx"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "tWDLg919UuNf3qHq4yBY",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/55-vera-the-officer-looked-at-the-screen-v1.mp3",
+          "prompt": "The officer looked at the screen and made a phone call. Then you came. What's on the screen?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "zEokf8IyEkUPBpEuOuFK",
+            "id": "WkXJcSQ5BrvFNSJYFHyx"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-nothing-is-wrong-we-just-like",
       "frameId": "neonoire-shot-55",
       "character": "ISHIDA",
-      "text": "Nothing is wrong. We just like to take care with these things. Voss. You grew up here?",
+      "text": "A foreign passport. We like to take care with these things.",
       "file": "/audio/neonoire/s6/55-ishida-nothing-is-wrong-we-just-like.mp3",
-      "offset": 15,
-      "duration": 6.27,
+      "offset": 14.97,
+      "duration": 3.97,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "3MrxxLa1I8YSrVpNDEQu",
-        "id": "dwylaagKHgvegFxNBaDT"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "4ozK0koNKJa1OJu9YJCu",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/55-ishida-nothing-is-wrong-we-just-like-v1.mp3",
+          "prompt": "Nothing is wrong. We just like to take care with these things. Voss. You grew up here?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "3MrxxLa1I8YSrVpNDEQu",
+            "id": "dwylaagKHgvegFxNBaDT"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-vera-until-i-was-nine-what-s",
-      "frameId": "neonoire-shot-56",
+      "frameId": "neonoire-shot-322",
       "character": "VERA",
-      "text": "Until I was nine. What's on the screen?",
+      "text": "Until I was nine.",
       "file": "/audio/neonoire/s6/56-vera-until-i-was-nine-what-s.mp3",
-      "offset": 0.5,
-      "duration": 2.93,
+      "offset": 5.85,
+      "duration": 1.57,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "ehY0E0RkrIAsNh7kMO8r",
-        "id": "W7ss6HrScoE5s065b6JI"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "o6ZwPRgCR7QJtBaGB45z",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/56-vera-until-i-was-nine-what-s-v1.mp3",
+          "prompt": "Until I was nine. What's on the screen?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "ehY0E0RkrIAsNh7kMO8r",
+            "id": "W7ss6HrScoE5s065b6JI"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-when-did-you-last-see-your",
       "frameId": "neonoire-shot-56",
       "character": "ISHIDA",
-      "text": "When did you last see your sister?",
+      "text": "When did you last see her?",
       "file": "/audio/neonoire/s6/56-ishida-when-did-you-last-see-your.mp3",
-      "offset": 3.9,
-      "duration": 2.04,
+      "offset": 0.5,
+      "duration": 1.72,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "SxcnHZLPoytZTDerJHEs",
-        "id": "AvwEMEgGDf1K2cnVbAx8"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "CW6s1uLKfHkCuZWzd7rF",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/56-ishida-when-did-you-last-see-your-v1.mp3",
+          "prompt": "When did you last see your sister?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "SxcnHZLPoytZTDerJHEs",
+            "id": "AvwEMEgGDf1K2cnVbAx8"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-vera-three-days-ago-at-my-apartment",
       "frameId": "neonoire-shot-56",
       "character": "VERA",
-      "text": "Three days ago. At my apartment. We had dinner.",
+      "text": "Thursday. At my apartment. We had dinner.",
       "file": "/audio/neonoire/s6/56-vera-three-days-ago-at-my-apartment.mp3",
-      "offset": 6.4,
+      "offset": 2.82,
       "duration": 3.55,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "KMWENVtPBd90mvwtT7O8",
-        "id": "4krYK4lXfvVDlkVl2k1z"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "onR9SlUKHTNJEWZsF6rM",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/56-vera-three-days-ago-at-my-apartment-v1.mp3",
+          "prompt": "Three days ago. At my apartment. We had dinner.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "KMWENVtPBd90mvwtT7O8",
+            "id": "4krYK4lXfvVDlkVl2k1z"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-and-how-did-she-seem",
@@ -896,7 +960,7 @@
       "text": "Normal.",
       "prompt": "[hesitantly] Normal.",
       "file": "/audio/neonoire/s6/57-vera-hesitantly-normal.mp3",
-      "offset": 3,
+      "offset": 3.45,
       "duration": 1.65,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -911,18 +975,31 @@
       "id": "s6-ishida-did-she-ever-mention-kanda-friends",
       "frameId": "neonoire-shot-58",
       "character": "ISHIDA",
-      "text": "Did she ever mention Kanda? Friends there? Work?",
+      "text": "Did she mention Kanda? Friends there? Work?",
       "file": "/audio/neonoire/s6/58-ishida-did-she-ever-mention-kanda-friends.mp3",
       "offset": 0.5,
-      "duration": 3.79,
+      "duration": 3.47,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "PzoMOXqkBpiZMsfbzc3i",
-        "id": "Ap9ClxDlCpl9qo7ZndKC"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "bo4SXUd7yPvyIgQMvIlp",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/58-ishida-did-she-ever-mention-kanda-friends-v1.mp3",
+          "prompt": "Did she ever mention Kanda? Friends there? Work?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "PzoMOXqkBpiZMsfbzc3i",
+            "id": "Ap9ClxDlCpl9qo7ZndKC"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-vera-kanda-no-why",
@@ -930,7 +1007,7 @@
       "character": "VERA",
       "text": "Kanda? No. Why —",
       "file": "/audio/neonoire/s6/58-vera-kanda-no-why.mp3",
-      "offset": 4.8,
+      "offset": 4.57,
       "duration": 2.93,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -948,7 +1025,7 @@
       "text": "The shootings. In Kanda. It was on the news.",
       "prompt": "[realising] The shootings. In Kanda. It was on the news.",
       "file": "/audio/neonoire/s6/58-vera-realising-the-shootings-in-kanda-it.mp3",
-      "offset": 8.6,
+      "offset": 8.8,
       "duration": 3.79,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -965,7 +1042,7 @@
       "character": "VERA",
       "text": "Is she hurt?",
       "file": "/audio/neonoire/s6/58-vera-is-she-hurt.mp3",
-      "offset": 13.6,
+      "offset": 14.19,
       "duration": 1.41,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -982,7 +1059,7 @@
       "character": "ISHIDA",
       "text": "We have no reason to believe she is hurt.",
       "file": "/audio/neonoire/s6/58-ishida-we-have-no-reason-to-believe.mp3",
-      "offset": 15.5,
+      "offset": 16.2,
       "duration": 2.59,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
@@ -999,7 +1076,7 @@
       "character": "VERA",
       "text": "That's not the same as saying she isn't.",
       "file": "/audio/neonoire/s6/58-vera-that-s-not-the-same-as.mp3",
-      "offset": 18.6,
+      "offset": 19.39,
       "duration": 2.51,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -1034,7 +1111,7 @@
       "text": "Is she dead?",
       "prompt": "[urgently] Is she dead?",
       "file": "/audio/neonoire/s6/59-vera-urgently-is-she-dead.mp3",
-      "offset": 2.3,
+      "offset": 2.51,
       "duration": 1.23,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -1052,7 +1129,7 @@
       "text": "Stop saying that. Stop saying what you have no reason to believe and tell me what you know.",
       "prompt": "[angry] Stop saying that. Stop saying what you have no reason to believe and tell me what you know.",
       "file": "/audio/neonoire/s6/59-vera-angry-stop-saying-that-stop-saying.mp3",
-      "offset": 7.2,
+      "offset": 7.71,
       "duration": 5.56,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -1069,7 +1146,7 @@
       "character": "ISHIDA",
       "text": "What I know is that two men were killed in Kanda, and that it is a matter between criminal groups. And that your sister is a young woman who has not called her sister for three days. Those may be two separate things.",
       "file": "/audio/neonoire/s6/59-ishida-what-i-know-is-that-two.mp3",
-      "offset": 13.3,
+      "offset": 14.57,
       "duration": 13.32,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
@@ -1103,7 +1180,7 @@
       "character": "ISHIDA",
       "text": "May be.",
       "file": "/audio/neonoire/s6/60-ishida-may-be.mp3",
-      "offset": 2,
+      "offset": 1.99,
       "duration": 0.91,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
@@ -1118,37 +1195,63 @@
       "id": "s6-vera-low-controlled-she-is-my-sister",
       "frameId": "neonoire-shot-61",
       "character": "VERA",
-      "text": "She is my sister. I have been calling her for three days. If you know where she is, tell me.",
-      "prompt": "[low, controlled] She is my sister. I have been calling her for three days. If you know where she is, tell me.",
+      "text": "She is my sister. I have been calling her for days. If you know where she is, tell me.",
+      "prompt": "[low, controlled] She is my sister. I have been calling her for days. If you know where she is, tell me.",
       "file": "/audio/neonoire/s6/61-vera-low-controlled-she-is-my-sister.mp3",
       "offset": 1,
-      "duration": 6.35,
+      "duration": 6.03,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "PCAu2GMuO0JhJKcK1sUE",
-        "id": "Gw6ylsL1rsyFqfhTn1li"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "GNb6FJGg7K15kpD5VCbU",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/61-vera-low-controlled-she-is-my-sister-v1.mp3",
+          "prompt": "[low, controlled] She is my sister. I have been calling her for three days. If you know where she is, tell me.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "PCAu2GMuO0JhJKcK1sUE",
+            "id": "Gw6ylsL1rsyFqfhTn1li"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-quietly-i-do-not-know-where",
       "frameId": "neonoire-shot-61",
       "character": "ISHIDA",
-      "text": "I do not know where she is. That is the truth. And if she saw something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.",
-      "prompt": "[quietly] I do not know where she is. That is the truth. And if she saw something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.",
+      "text": "I do not know where she is. That is the truth. And if, on the off chance, she did see something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.",
+      "prompt": "[quietly] I do not know where she is. That is the truth. And if, on the off chance, she did see something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.",
       "file": "/audio/neonoire/s6/61-ishida-quietly-i-do-not-know-where.mp3",
-      "offset": 8.5,
-      "duration": 12.04,
+      "offset": 8.63,
+      "duration": 14.29,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "0ApjdDhvmYtWLv5Y8qTn",
-        "id": "VWbMOcRVyHpEWMdHZ1bM"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "QwQHwoHLLmO9izNt8uRX",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/61-ishida-quietly-i-do-not-know-where-v1.mp3",
+          "prompt": "[quietly] I do not know where she is. That is the truth. And if she saw something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "0ApjdDhvmYtWLv5Y8qTn",
+            "id": "VWbMOcRVyHpEWMdHZ1bM"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-go-home-miss-voss-keep-your",
@@ -1173,7 +1276,7 @@
       "character": "VERA",
       "text": "You would have told me if she was dead. Wouldn't you?",
       "file": "/audio/neonoire/s6/62-vera-you-would-have-told-me-if.mp3",
-      "offset": 12,
+      "offset": 11.61,
       "duration": 3.16,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
@@ -1188,35 +1291,61 @@
       "id": "s6-ishida-of-course",
       "frameId": "neonoire-shot-62",
       "character": "ISHIDA",
-      "text": "Of course.",
+      "text": "Of course, I'm sure we will find her, you have my word.",
       "file": "/audio/neonoire/s6/62-ishida-of-course.mp3",
-      "offset": 16,
-      "duration": 1.07,
+      "offset": 15.67,
+      "duration": 4.21,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "JgMdOMFaz79rv9vJb8OS",
-        "id": "MKiOk6qBhLOc51ZIWJQT"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "mEdlJMONZJNRzSukkxGK",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/62-ishida-of-course-v1.mp3",
+          "prompt": "Of course.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "JgMdOMFaz79rv9vJb8OS",
+            "id": "MKiOk6qBhLOc51ZIWJQT"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s6-ishida-no-reason-she-is-dead",
       "frameId": "neonoire-shot-59",
       "character": "ISHIDA",
-      "text": "We have no reason to believe she is dead.",
+      "text": "We have no reason to believe so.",
       "file": "/audio/neonoire/s6/59-ishida-no-reason-she-is-dead.mp3",
-      "offset": 4,
-      "duration": 2.69,
+      "offset": 4.44,
+      "duration": 2.27,
       "voice": "6wGe4cP3pH5TRuKntC6Z",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "jTlYykdPPORmw23uPExz",
-        "id": "Qywv6kRDB510YJ0tUYWO"
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "ahyiJk8C916IQ6Q2oVHr",
+        "id": ""
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/59-ishida-no-reason-she-is-dead-v1.mp3",
+          "prompt": "We have no reason to believe she is dead.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "jTlYykdPPORmw23uPExz",
+            "id": "Qywv6kRDB510YJ0tUYWO"
+          },
+          "archivedAt": "2026-10-01"
+        }
+      ]
     },
     {
       "id": "s8-okada-flatly-we-re-closed",
@@ -5827,6 +5956,229 @@
         "flow": "zwWk8o7dCHdeYJNtHmVm",
         "session": "yNuY5UmpZzvIkMSQUfgm",
         "id": "7i6K3gXZbJI7URV91aHH"
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-name-height-what-she-was-wearing",
+      "frameId": "neonoire-shot-321",
+      "character": "ISHIDA",
+      "text": "Name. Height. What she was wearing, if you know.",
+      "file": "/audio/neonoire/s6/321-ishida-name-height-what-she-was-wearing.mp3",
+      "offset": 2,
+      "duration": 3.87,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "IVmPpDNVmocHaR6UYqiQ",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-voss-you-grew-up-here",
+      "frameId": "neonoire-shot-322",
+      "character": "ISHIDA",
+      "text": "Voss. You grew up here?",
+      "file": "/audio/neonoire/s6/322-ishida-voss-you-grew-up-here.mp3",
+      "offset": 3,
+      "duration": 2.35,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "IuKfgxW3VuCcgBD9EOS1",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-and-your-parents-they-are-in",
+      "frameId": "neonoire-shot-322",
+      "character": "ISHIDA",
+      "text": "And your parents? They are in America?",
+      "file": "/audio/neonoire/s6/322-ishida-and-your-parents-they-are-in.mp3",
+      "offset": 8.02,
+      "duration": 2.69,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "k8m5xpH6gQMTDLFz6INI",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-vera-my-mother-is-my-father-died",
+      "frameId": "neonoire-shot-322",
+      "character": "VERA",
+      "text": "My mother is. My father died.",
+      "file": "/audio/neonoire/s6/322-vera-my-mother-is-my-father-died.mp3",
+      "offset": 11.21,
+      "duration": 2.77,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "mUdskY8xjs6aRXTB1AA6",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-here",
+      "frameId": "neonoire-shot-322",
+      "character": "ISHIDA",
+      "text": "Here?",
+      "file": "/audio/neonoire/s6/322-ishida-here.mp3",
+      "offset": 14.48,
+      "duration": 0.84,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "i5Ugq9VThc0K6oQt3I3r",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-vera-here-when-i-was-a-child",
+      "frameId": "neonoire-shot-322",
+      "character": "VERA",
+      "text": "Here. When I was a child.",
+      "file": "/audio/neonoire/s6/322-vera-here-when-i-was-a-child.mp3",
+      "offset": 15.82,
+      "duration": 2.35,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "M8ONNJBoorpkxY16I19y",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-gently-i-m-sorry-pause-did",
+      "frameId": "neonoire-shot-322",
+      "character": "ISHIDA",
+      "text": "I'm sorry. Did your sister ever talk about him?",
+      "prompt": "[gently] I'm sorry. [pause] Did your sister ever talk about him?",
+      "file": "/audio/neonoire/s6/322-ishida-gently-i-m-sorry-pause-did.mp3",
+      "offset": 18.87,
+      "duration": 3.97,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "rAM29gWqliN6FGMJlaRr",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-vera-evenly-she-was-four-she-doesn",
+      "frameId": "neonoire-shot-323",
+      "character": "VERA",
+      "text": "She was four. She doesn't remember him.",
+      "prompt": "[evenly] She was four. She doesn't remember him.",
+      "file": "/audio/neonoire/s6/323-vera-evenly-she-was-four-she-doesn.mp3",
+      "offset": 1.5,
+      "duration": 2.85,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "cOahs84sP01VKqv2e4Ly",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-a-recent-photograph",
+      "frameId": "neonoire-shot-324",
+      "character": "ISHIDA",
+      "text": "A recent photograph?",
+      "file": "/audio/neonoire/s6/324-ishida-a-recent-photograph.mp3",
+      "offset": 0.8,
+      "duration": 1.57,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "Awv8ON58aYBBID4p8bu1",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-vera-she-gave-me-two-when-she",
+      "frameId": "neonoire-shot-324",
+      "character": "VERA",
+      "text": "She gave me two when she renewed. In case.",
+      "file": "/audio/neonoire/s6/324-vera-she-gave-me-two-when-she.mp3",
+      "offset": 3.57,
+      "duration": 3.16,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "y6lUuHfMnbzNCUhlHNN5",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-in-case",
+      "frameId": "neonoire-shot-324",
+      "character": "ISHIDA",
+      "text": "In case.",
+      "file": "/audio/neonoire/s6/324-ishida-in-case.mp3",
+      "offset": 7.33,
+      "duration": 1.23,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "EOPli7s8bhdtPPHTYA5Y",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-ishida-did-she-ever-speak-of-your",
+      "frameId": "neonoire-shot-57",
+      "character": "ISHIDA",
+      "text": "Did she ever speak of your family? Anything she had been thinking about?",
+      "file": "/audio/neonoire/s6/57-ishida-did-she-ever-speak-of-your.mp3",
+      "offset": 8.1,
+      "duration": 4.21,
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "VH4eteQDSl26eKrWLpP7",
+        "id": ""
+      },
+      "status": "take"
+    },
+    {
+      "id": "s6-vera-no",
+      "frameId": "neonoire-shot-57",
+      "character": "VERA",
+      "text": "No.",
+      "file": "/audio/neonoire/s6/57-vera-no.mp3",
+      "offset": 12.91,
+      "duration": 0.91,
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "model": "eleven_v4",
+      "generation": {
+        "flow": "0MHWfZQKpkIuVIcuUTLd",
+        "session": "ZIdZ1ePJl76phcoKqYsY",
+        "id": ""
       },
       "status": "take"
     }

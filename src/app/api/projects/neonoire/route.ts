@@ -11,6 +11,6 @@ export async function POST() {
     return NextResponse.json(await openNeonoireProject());
   } catch (error) {
     console.error("Open NEONOIRE workspace:", error);
-    return NextResponse.json({ error: "The NEONOIRE workspace couldn't be opened. Please try again." }, { status: 500 });
+    return NextResponse.json({ error: "The Nobody's Witness workspace couldn't be opened. Please try again." }, { status: 500 });
   }
 }

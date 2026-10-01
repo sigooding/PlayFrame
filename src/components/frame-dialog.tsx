@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Upload, ImagePlus, Trash2, Copy, LoaderCircle, Camera, Check, Clapperboard, Sparkles, ClipboardCopy, CheckCheck, Info, Wand2, Link2 } from "lucide-react";
+import { Upload, ImagePlus, Trash2, Copy, LoaderCircle, Camera, Check, Clapperboard, Sparkles, ClipboardCopy, CheckCheck, Info, Wand2, Link2, Images } from "lucide-react";
 import { Field, Modal } from "./ui";
 import { CAMERA_ANGLES, CAMERA_MOVEMENTS, LENSES, SHOT_TYPES, TRANSITIONS, type CameraAngle, type CameraMovement, type Character, type FilmProject, type FrameStatus, type Lens, type Scene, type ShotType, type StoryFrame, type Transition } from "@/lib/types";
 import { applyShotType, isShotReference, shotGuide } from "@/lib/shots";
@@ -12,6 +12,7 @@ import { relationLines } from "@/lib/relations";
 import { buildFramePrompt, extractNegativePrompt, extractPositivePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { IMAGE_TYPES, projectImages, resizeImage } from "@/lib/image";
 import { onImageError } from "@/lib/image";
+import { ImageBrowser, useImageLibrary } from "./image-library";
 import { sceneNumber } from "@/lib/frame-order";
 
 export const shotTypes: ShotType[] = [...SHOT_TYPES];
@@ -43,6 +44,8 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
   const [uploading, setUploading] = useState(false);
   const [error, setError] = useState("");
   const [showUrl, setShowUrl] = useState(false);
+  const [browsing, setBrowsing] = useState(false);
+  const imageLibrary = useImageLibrary();
   const [platform, setPlatform] = useState<PlatformId>("hailuo");
   const [style, setStyle] = useState<string>(DEFAULT_STYLE_ID);
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
@@ -102,7 +105,8 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
 
     {tab === "frame" && <div className="frame-dialog-grid"><div className="frame-visual-side"><div className="frame-preview">{draft.image ? <img src={draft.image} alt={draft.title || "Frame preview"} onError={onImageError} /> : <div className="image-placeholder"><ImagePlus size={32} /><span>Your next great shot</span></div>}<span className="preview-ratio">16:9</span>{usingReference && draft.image && <span className="preview-tag"><Camera size={11} />{draft.shotType} reference</span>}</div>
       <input ref={uploadRef} type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" aria-label="Upload reference image" onChange={e => upload(e.target.files)} />
-      <div className="image-actions"><button type="button" className="button" onClick={() => uploadRef.current?.click()} disabled={uploading}>{uploading ? <LoaderCircle size={15} className="spin" /> : <Upload size={15} />}Upload image</button>{usingReference ? <button type="button" className="text-button" onClick={() => setTab("shot")}>Change shot type to update this image</button> : <button type="button" className="text-button" onClick={() => set("image", shotGuide[draft.shotType].image)}><Wand2 size={13} />Back to the {draft.shotType.toLowerCase()} example</button>}<button type="button" className="text-button" onClick={() => setShowUrl(!showUrl)}>Image URL</button></div>
+      <div className="image-actions"><button type="button" className="button" onClick={() => uploadRef.current?.click()} disabled={uploading}>{uploading ? <LoaderCircle size={15} className="spin" /> : <Upload size={15} />}Upload image</button>{usingReference ? <button type="button" className="text-button" onClick={() => setTab("shot")}>Change shot type to update this image</button> : <button type="button" className="text-button" onClick={() => set("image", shotGuide[draft.shotType].image)}><Wand2 size={13} />Back to the {draft.shotType.toLowerCase()} example</button>}<button type="button" className="text-button" onClick={() => setShowUrl(!showUrl)}>Image URL</button>{imageLibrary.length > 0 && <button type="button" className="button" onClick={() => setBrowsing(!browsing)} aria-expanded={browsing}><Images size={15} />{browsing ? "Hide image library" : "Browse all images"}</button>}</div>
+      {browsing && imageLibrary.length > 0 && <ImageBrowser library={imageLibrary} selected={draft.image} onPick={src => set("image", src)} />}
       {showUrl && <Field label="Image URL"><input type="url" placeholder="https://..." value={draft.image.startsWith("http") ? draft.image : ""} onChange={e => set("image", e.target.value)} /></Field>}
       {library.length > 0 && <><p className="eyebrow reference-label">FROM THIS PROJECT</p><div className="reference-grid reference-grid-wide">{library.map(src => <button type="button" key={src} aria-label="Use this image" className={draft.image === src ? "selected" : ""} onClick={() => set("image", src)}><img src={src} alt="" onError={onImageError} />{draft.image === src && <span><Check size={12} /></span>}</button>)}</div></>}
       <Field label="Director’s notes"><textarea rows={4} placeholder="Lighting, sound, performance... the little things that matter." value={draft.notes} onChange={e => set("notes", e.target.value)} /></Field>{draft.audio && draft.audio.length > 0 && <div className="field frame-dialogue"><span>Dialogue audio</span>{draft.audio.map(clip => <div key={clip.id} className="frame-dialogue-line"><strong>{clip.character}</strong> <span>{clip.offset}s{clip.duration ? ` · ${clip.duration}s` : ""}</span><p>{clip.text}</p><audio controls preload="none" src={clip.src} /></div>)}</div>}</div>

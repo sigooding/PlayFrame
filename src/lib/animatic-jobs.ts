@@ -94,7 +94,9 @@ export async function startAnimaticJob(project: FilmProject, options: AnimaticOp
   };
   await persist(state);
   const args = [resolve(ROOT, "scripts/neonoire/animatic.mjs"), "--project", snapshot,
-    "--output", join(dir, "animatic.mp4"), "--media-root", media, "--resolution", options.resolution, "--no-camera", "--no-credits"];
+    "--output", join(dir, "animatic.mp4"), "--media-root", media, "--resolution", options.resolution];
+  args.push(options.camera ? "--camera" : "--no-camera");
+  if (!options.credits) args.push("--no-credits");
   if (options.timing === "playback") args.push("--hold");
   if (!options.audio) args.push("--no-audio");
   if (!options.music) args.push("--no-music");

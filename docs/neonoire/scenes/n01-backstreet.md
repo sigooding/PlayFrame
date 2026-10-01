@@ -45,13 +45,13 @@ IMAGE: 02-vending.jpg
 NOTE: This is the sound of the film's opening and its recurring return. Leave room in the frame for the hum — no people, no traffic, no music.
 
 3. MEDIUM WIDE — 35mm, static, eye level — EXT. BACKSTREET, KANDA.
-MARA VOSS (24) is already in the recessed dark doorway of the closed barber's when the scene finds her — soaked, no umbrella, arms folded, one shoulder against the brick. Her hair is soaked flat, held back by a cheap enamel clip shaped like a small red bird. She has been crying, or she is about to. Her phone lights up in her hand and its screen is the only moving thing in the frame; she watches it ring and does not answer. The street opens around her: shutters, puddles, sodium orange above, green fluorescent spill beyond. She is inside the city, not apart from it.
-SCRIPT: "MARA VOSS (24) stands in the dark doorway of a closed barber's, soaked, no umbrella."
+MARA VOSS (24) walks fast down the street, arms folded, soaked, no umbrella, her hair flat with rain and held back by the red enamel bird clip. Her phone lights up in her hand: VERA. She watches it ring.
+SCRIPT: "MARA VOSS (24) walks fast, arms folded, soaked, no umbrella."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 9
 IMAGE: 03-mara-walks.jpg
-NOTE: RETAKE LANDED 1 October 2026 — regenerated from the rewritten scene 1 with `sheets/mara.jpg` and `sheets/mara-face.jpg` attached and nothing else, installed over `s1/03-mara-walks.jpg`. There is no crossing walk any more: the revision leaves her standing in the doorway from the first line, so she holds and the phone carries the frame's only movement — nothing crosses, no headlights swing, no car reverses. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace; the small red enamel bird clip reads pinned above her right temple. Reviewed at full size. The letter rewrite, the layout pass and the fresh pass below are this frame's history, not the current image's provenance.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — the cold open is back to the walk: she is moving through the street, she is not standing in the doorway when the scene finds her. The image on file holds her still in the recess and awaits a retake (character sheets only). Earlier note: RETAKE LANDED 1 October 2026 — regenerated from the rewritten scene 1 with `sheets/mara.jpg` and `sheets/mara-face.jpg` attached and nothing else, installed over `s1/03-mara-walks.jpg`. There is no crossing walk any more: the revision leaves her standing in the doorway from the first line, so she holds and the phone carries the frame's only movement — nothing crosses, no headlights swing, no car reverses. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace; the small red enamel bird clip reads pinned above her right temple. Reviewed at full size. The letter rewrite, the layout pass and the fresh pass below are this frame's history, not the current image's provenance.
 
 4. CLOSE-UP — 85mm, static, eye level — Mara's phone.
 Her phone buzzes; the screen shows the caller, VERA. Rain on the glass and on her hands. She looks at it. Lets it ring.
@@ -72,44 +72,44 @@ IMAGE: 05-phone-off.jpg
 NOTE: Play the line to the dead phone, flatly, as a decision rather than a plea. Her sister's name is established here by the phone and nowhere else.
 
 6. WIDE — 35mm, static, eye level — the barbershop doorway.
-Seen from just inside the recess, past the shoulder of Mara pressed back into the shadow: down the middle of the wet street an OLD MAN (70s) in a good coat gone thin at the cuffs comes slowly up toward her and stops a few paces short, looking at her as something in his face gives way. The striped pole is dark and still at the doorway's right edge; the empty street and the vending machine's cold light hold the rest of the frame. She is going nowhere.
-SCRIPT: "An OLD MAN (70s) comes slowly up the street in a good coat gone thin at the cuffs."
+Mara slips into the barbershop doorway, behind a parked scooter and stacked beer crates, and presses back into the shadow out of the rain. The crates hide her from anyone in the lane. She is not sure she wants to walk in at all.
+SCRIPT: "She slips into the barbershop doorway, behind the scooter and the crates, and presses back into the shadow to shelter from the rain."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 7
 IMAGE: 06-barbershop-doorway.jpg
-NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` and `sheets/sakai.jpg` only, installed over `s1/06-barbershop-doorway.jpg`. She does not duck in — she is already in the doorway, and the frame is what she looks at. The doorway has to read as a place she could stay for the whole scene: it does, and the barbershop pole sits at its right edge, unlit, in the same position and colours it returns to in shot 17. Reviewed at full size.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — this beat is Mara arriving in the recess, with a scooter and crates in front of her; the image on file shows the old man approaching and no scooter, and awaits a retake. Earlier note: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` and `sheets/sakai.jpg` only, installed over `s1/06-barbershop-doorway.jpg`. She does not duck in — she is already in the doorway, and the frame is what she looks at. The doorway has to read as a place she could stay for the whole scene: it does, and the barbershop pole sits at its right edge, unlit, in the same position and colours it returns to in shot 17. Reviewed at full size.
 
 7. FULL — 50mm, static, eye level — the old man, hurrying.
-An OLD MAN in a cheap raincoat, one hand pressed to his side as if something is hidden there, walks hurriedly across the street, glancing back over his shoulder. He passes Mara's doorway — then, a step later, his eyes find her in the shadow, a flicker, as if he knows her face — and he looks away at once and keeps walking, faster, toward the bar sign. Away from her.
-SCRIPT: "He sees her in the doorway and stops. Something in his face gives way."
+An OLD MAN (70s) in a cheap raincoat and a grey flat cap comes in from the road, one hand pressed to his side as if something is hidden there. He keeps looking back.
+SCRIPT: "An OLD MAN (70s) in a cheap raincoat and a grey flat cap comes in from the road, one hand pressed to his side as if something is hidden there."
 CAST: The Old Man, Mara Voss
 LIGHT: Practical night
 TIME: 8
 IMAGE: 07-old-man.jpg
-NOTE: He must pass within a metre of her; the flicker of recognition is the letter rewrite's first beat — Sakai knows her face and leads the killers away from her, so the doorway stays in shadow and she gets no reaction shot. Retake 28 September 2026 (the letter rewrite): same camera, same street masters, same wardrobe; Mara now reads in the doorway as in the draft. The barber pole reads slightly lit in the retake; the master keeps it unlit — dress it dark on set.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — the old man now wears a cheap raincoat and a grey flat cap and arrives from the road, not up the street in a good coat; the image on file shows the old coat and no cap and awaits a retake. Earlier note: He must pass within a metre of her; the flicker of recognition is the letter rewrite's first beat — Sakai knows her face and leads the killers away from her, so the doorway stays in shadow and she gets no reaction shot. Retake 28 September 2026 (the letter rewrite): same camera, same street masters, same wardrobe; Mara now reads in the doorway as in the draft. The barber pole reads slightly lit in the retake; the master keeps it unlit — dress it dark on set.
 
 9. MEDIUM CLOSE-UP — 85mm, static, eye level — the old man stops.
-He has stopped in the middle of the wet street, seen from behind: he doesn't turn around. He seems to know there is no point.
-SCRIPT: "Behind him, a MASKED MAN steps out of the dark and makes a small, correct bow."
+He has seen the red clip. He stops, six metres short of her doorway; for one second his whole face changes.
+SCRIPT: "He sees it. He stops, six metres short of her. For one second his whole face changes."
 CAST: The Old Man
 LIGHT: Practical night
 TIME: 7
 IMAGE: 09-old-man-stops.jpg
-NOTE: Keep the headlights as a soft glow on the wet road, never a white beam in frame — the film never shows where the light comes from.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — he has stopped because he saw the clip, not because he knows there is no point, and then he refuses her; the image on file shows him from behind and awaits a retake. Earlier note: Keep the headlights as a soft glow on the wet road, never a white beam in frame — the film never shows where the light comes from.
 
 10. WIDE — 24mm, static, eye level — the suppressed shot.
-Flat and ordinary, like a door closing. The old man folds to his knees, then onto his side in the black water just outside the barbershop doorway. Nobody else in shot; the lane carries on around him.
-SCRIPT: "Two shots, flat and small in the rain. The old man folds onto the street."
+The old man stands between the two masked men and Mara's doorway in the white of the high beams, a small figure with his shadow stretching down the lane toward her. A suppressed shot, flat and ordinary, like a door closing; he folds onto the street.
+SCRIPT: "A suppressed SHOT. Flat and ordinary, like a door closing."
 CAST: The Old Man
 LIGHT: Practical night
 TIME: 9
 IMAGE: 10-the-shot.jpg
-NOTE: No muzzle flash in frame, no blood spray, no sound other than the suppressed shot and the rain. The camera keeps operating as though he has merely walked out of frame. Retake 29 September 2026 (the layout pass): the fixed pedestrian lane, the old man falling just outside the barbershop doorway, alone in frame; the sedan never enters the lane. Layout sheet `sheets/kanda-alley-layout.jpg`.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — the sedan now blocks the mouth of the lane with its high beams on and two men walk in; the image on file has the old man falling alone and awaits a retake. Earlier note: No muzzle flash in frame, no blood spray, no sound other than the suppressed shot and the rain. The camera keeps operating as though he has merely walked out of frame. Retake 29 September 2026 (the layout pass): the fixed pedestrian lane, the old man falling just outside the barbershop doorway, alone in frame; the sedan never enters the lane. Layout sheet `sheets/kanda-alley-layout.jpg`.
 
 12. MEDIUM — 50mm, static, low angle — the masked man on the radio.
 One of the masked men touches his earpiece and speaks quietly into it. Only his eyes are visible above the mask: flat, unhurried, bored.
-SCRIPT: "The masked man touches his ear."
+SCRIPT: "One of the masked men touches his ear."
 CAST: The Masked Men
 LIGHT: Practical night
 TIME: 6
@@ -118,7 +118,7 @@ NOTE: He is a man doing a job on a shift. Mundane, never menacing in performance
 
 13. WIDE — 35mm, static, eye level — the sedan pulls away.
 Same camera as the arrival, down the lane toward the alley mouth. The sedan reverses out of the mouth, unhurried, backing onto the wet two-lane road beyond; its headlights swing away, white reverse lamps with the red taillights smearing on the wet road, and the alley falls dark. No people in frame. Mara doesn't move.
-SCRIPT: "He walks back the way he came, to a dark car idling at the far end of the street. He doesn't hurry."
+SCRIPT: "They walk back to the sedan. They don't hurry."
 CAST: —
 LIGHT: Practical night
 TIME: 10
@@ -154,7 +154,7 @@ NOTE: The film's first prop and the engine of everything after. The tag is worn,
 
 17. WIDE — 24mm, static, eye level — she runs.
 Mara runs down the lane toward the amber glow of the bar at its near end, one arm flapping, and does not stop. Behind her the dark car pulls away and takes the long way round the block, unhurried, its beams down, never swinging into the lane. Halfway along the wet asphalt, where it slid off her shoulder when she ran to the old man, her purse lies open with its contents spilled across the road; she left it there and nobody picks it up. There is no snagged strap and nothing on the pole.
-SCRIPT: "The dark car pulls away and takes the long way round the block. At the other end of the street, the amber glow of a bar. Mara runs for it."
+SCRIPT: "At the other end of the street, the amber glow of a bar. Mara runs for it."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 8
@@ -175,6 +175,60 @@ NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with
 ## Coverage — retired
 
 The 30 September 2026 revision cut the beats the letter-rewrite coverage boarded: the 1:00 scrap of paper, the lit bar sign as an early arrival, the dying man's "Your father". Shots 280–282 are retired with them — their images stay on disk under their filenames for before/after review — and the scene's frames lose 8 and 11 to the shortened blocking. Nothing is renumbered.
+
+328. INSERT — 85mm, static, high angle — the scrap.
+The note in her hands. Her handwriting, in biro: 1.00 Sakai. Underneath is an address. Beneath that, underlined twice: "just listen."
+SCRIPT: "The note in her hands. Her handwriting, in biro: 1.00 Sakai."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 6
+IMAGE: 328-the-scrap.jpg
+NOTE: Placeholder slot for the 2 October 2026 cold-open rewrite. A torn scrap of paper in a wet hand, biro, her fast square-ish handwriting: 1.00 Sakai, an address beneath it (the old retired coverage 280 read Kanda 2-3-1 — keep that address), and under that, underlined twice, "just listen." Rain on the paper; her cuff and the denim jacket only.
+
+329. WIDE — 35mm, static, eye level — the lane, and her watch.
+She looks down the lane. At the far end, the bar sign. She checks her watch (12.45). Early.
+SCRIPT: "She looks down the lane. At the far end, the bar sign. She checks her watch (12.45). Early."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 7
+IMAGE: 329-the-lane-the-watch.jpg
+NOTE: Placeholder slot. Over her shoulder or from the side: the length of the wet lane to the amber bar sign at the far end, her wrist and a cheap watch showing 12:45. Same street masters as shot 1 are not to be attached: screenplay text and character sheets only.
+
+330. MEDIUM — 50mm, static, eye level — the red clip catches the light.
+She leans out of the shadow. The red bird clip catches the street light.
+SCRIPT: "She leans out of the shadow. The red bird clip catches the street light."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 5
+IMAGE: 330-the-red-clip.jpg
+NOTE: Placeholder slot. Half her face leaving the recess's shadow, the small red enamel bird clip above her right temple lit by the street light — the single warm point in the frame.
+
+331. MEDIUM CLOSE-UP — 85mm, static, eye level — he refuses.
+Then he shakes his head. Barely. A man refusing a stranger. And he turns his back on her, slowly, to face the road.
+SCRIPT: "Then he shakes his head. Barely. A man refusing a stranger. And he turns his back on her, slowly, to face the road."
+CAST: The Old Man
+LIGHT: Practical night
+TIME: 7
+IMAGE: 331-he-refuses.jpg
+NOTE: Placeholder slot. The old man in his cheap raincoat and grey flat cap, six metres from the doorway, shaking his head once, barely, then turning away. No pleading, no pointing.
+
+332. WIDE — 24mm, static, eye level — the sedan blocks the lane.
+Behind him, at the mouth of the lane, headlights. A black sedan pulls across the opening and stops, blocking it. Its high beams shine straight down the lane, lighting the rain in long white columns.
+SCRIPT: "Behind him, at the mouth of the lane, headlights. A black sedan pulls across the opening and stops, blocking it."
+CAST: The Old Man
+LIGHT: Practical night
+TIME: 8
+IMAGE: 332-the-sedan-blocks-the-lane.jpg
+NOTE: Placeholder slot. The sedan broadside across the mouth of the lane, high beams straight down it, rain in white columns; the old man a small figure in front. The layout canon holds: the sedan never enters the lane.
+
+333. WIDE — 35mm, static, low angle — the old man in the white light.
+The old man doesn't move. He stands between them and Mara's doorway, a small figure in the white light, his shadow stretching long down the lane toward her.
+SCRIPT: "The old man doesn't move. He stands between them and Mara's doorway, a small figure in the white light, his shadow stretching long down the lane toward her."
+CAST: The Old Man
+LIGHT: Practical night
+TIME: 9
+IMAGE: 333-the-white-light.jpg
+NOTE: Placeholder slot. Two masked men as black silhouettes walking in against the glare, the old man between them and the barbershop doorway, his shadow stretching long toward the recess where Mara hides behind the scooter and crates.
 
 ## Passes
 

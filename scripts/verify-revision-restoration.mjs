@@ -61,7 +61,7 @@ old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 299);
+assert.equal(patch.frames.length, 312);
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);
@@ -70,6 +70,34 @@ assert(!protectedPatch?.frames?.some(frame => frame.shotNumber === 158));
 const deleted = structuredClone(old); deleted.frames = deleted.frames.filter(frame => frame.id !== "neonoire-shot-01");
 assert(!bundledFrameUpdates(deleted, project)?.frames?.some(frame => frame.shotNumber === 158));
 pass("known complete saved template receives the restoration; custom scripts and deliberate structural edits/deletions are not overwritten");
+
+// 2 October 2026: the rewrites of scene 6 (interview room), scene 1 (cold open) and scene 2's echoed line reach a saved
+// workspace still on the text before them.
+const scene6Before = JSON.parse(read("docs/neonoire/baseline/scene6-pre-rewrite-2026-10-02.json"));
+const rewrittenScenes = new Set(["neonoire-s1", "neonoire-s2", "neonoire-s6"]);
+const rewrittenIds = project.frames.filter(frame => rewrittenScenes.has(frame.sceneId)).map(frame => frame.id);
+const before6 = structuredClone(project);
+before6.script = scene6Before.script;
+before6.frames = [...project.frames.filter(frame => !rewrittenScenes.has(frame.sceneId)), ...structuredClone(scene6Before.frames)];
+const patch6 = bundledFrameUpdates(before6, project);
+assert.equal(patch6.script, project.script, "the saved default script takes the rewritten scenes");
+const got6 = patch6.frames.filter(frame => rewrittenScenes.has(frame.sceneId));
+assert.deepEqual(got6.map(frame => frame.id).sort(), [...rewrittenIds].sort(), "the new slots (328–333 in scene 1, 321–327 in scene 6) arrive");
+for (const scene of rewrittenScenes) assert.deepEqual(got6.filter(frame => frame.sceneId === scene).map(frame => frame.id), project.frames.filter(frame => frame.sceneId === scene).map(frame => frame.id), `${scene}: shots arrive in bundle order`);
+for (const frame of got6) {
+  const wanted = project.frames.find(f => f.id === frame.id);
+  assert.deepEqual(frame.audio, wanted.audio, `${frame.id} carries the rewritten dialogue`);
+  assert.equal(frame.description, wanted.description, `${frame.id} carries the rewritten description`);
+}
+const kept6 = structuredClone(before6);
+kept6.frames.find(frame => frame.id === "neonoire-shot-56").notes = "My own notes on this shot.";
+const keptPatch = bundledFrameUpdates(kept6, project);
+assert.equal(keptPatch.frames.find(frame => frame.id === "neonoire-shot-56").notes, "My own notes on this shot.", "a writer's edited notes survive the rewrite");
+assert.equal(keptPatch.frames.find(frame => frame.id === "neonoire-shot-56").description, project.frames.find(frame => frame.id === "neonoire-shot-56").description);
+const custom6 = structuredClone(before6); custom6.script += "\nWriter's extra scene.\n";
+assert.equal(bundledFrameUpdates(custom6, project)?.script, undefined, "an edited script is never replaced");
+assert(!bundledFrameUpdates(custom6, project)?.frames?.some(frame => frame.shotNumber === 321 || frame.shotNumber === 328), "and gets no new slots");
+pass("a saved workspace on the pre-rewrite default receives the 2 October rewrites (script, shot text, dialogue, slots 321–333); edits and edited scripts are protected");
 
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));
 for (const id of ["s13-kaneko-gruffly-eat", "s13-mara-hesitantly-thank-you-has-anyone-come", "s13-kaneko-flatly-nobody-comes-here-who-isn"]) assert.equal(voice.lines.find(line => line.id === id)?.frameId, "neonoire-shot-202");

@@ -5,6 +5,7 @@ import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, ChevronDown, Images, User
 import { Field, Modal } from "./ui";
 import { LightingPicker } from "./lighting-picker";
 import { downloadFile, exportShotList, printProject, slugify } from "@/lib/export";
+import { buildReel } from "@/lib/reel";
 import type { Act, ActPart, FilmProject, ProjectNote, Scene, SceneKind, StoryFrame } from "@/lib/types";
 import { kindMeta, sceneKinds } from "@/lib/structure";
 import { onImageError } from "@/lib/image";
@@ -47,15 +48,31 @@ export function ShareDialog({ project, onClose, onShare }: { project: FilmProjec
 export function ExportDialog({ project, onClose }: { project: FilmProject; onClose: () => void }) {
   const [kind, setKind] = useState("storyboard");
   const [error, setError] = useState("");
+  const [reelWidth, setReelWidth] = useState("1280");
+  const [reelAudio, setReelAudio] = useState(true);
+  const [reelBusy, setReelBusy] = useState("");
+  const hasAudio = project.frames.some(frame => (frame.audio || []).length > 0);
   const options = [
     { id: "storyboard", title: "Storyboard", detail: "Print-ready layout · Save as PDF", icon: LayoutGrid },
     { id: "animatic", title: "Animatic playback", detail: "MP4 video · Saved shot order, timings & dialogue", icon: Film },
     { id: "screenplay", title: "Screenplay", detail: "Fountain · Works with screenwriting apps", icon: FileText },
     { id: "shots", title: "Shot list", detail: "CSV · Ready for your production team", icon: Table2 },
     { id: "look", title: "Look book", detail: "Mood boards, structure & cast · PDF", icon: Images },
+    { id: "reel", title: "Reel · everything in one file", detail: "JSON · Images and recorded dialogue embedded · Works offline", icon: Images },
     { id: "backup", title: "Project backup", detail: "JSON · Everything incl. your uploaded images · Re-importable", icon: FileJson },
   ];
+  async function exportReel() {
+    setError(""); setReelBusy("Preparing…");
+    try {
+      const reel = await buildReel(project, { width: Number(reelWidth), quality: 0.8, audio: reelAudio && hasAudio }, (done, total, what) => setReelBusy(`${what} · ${done} of ${total}`));
+      setReelBusy("Writing the file…");
+      downloadFile(JSON.stringify(reel), `${slugify(project.title)}-reel.json`, "application/json");
+      onClose();
+    } catch (e) { setError(e instanceof Error ? e.message : "The reel couldn't be built. Please try again."); }
+    finally { setReelBusy(""); }
+  }
   function exportFile() {
+    if (kind === "reel") { void exportReel(); return; }
     try {
       if (kind === "storyboard") printProject(project);
       if (kind === "look") printProject(project, "look");
@@ -65,7 +82,7 @@ export function ExportDialog({ project, onClose }: { project: FilmProject; onClo
       onClose();
     } catch (e) { setError(e instanceof Error ? e.message : "Export failed. Please try again."); }
   }
-  return <Modal title="Ready for the next stage." subtitle="Take your story from the workspace to the set." onClose={onClose}><div className="modal-body export-options">{(kind === "animatic" ? [] : options).map(option => <button key={option.id} className={`export-option ${kind === option.id ? "selected" : ""}`} onClick={() => setKind(option.id)}><span className="export-icon"><option.icon size={21} /></span><span><strong>{option.title}</strong><small>{option.detail}</small></span><span className="radio-circle">{kind === option.id && <span />}</span></button>)}{kind === "animatic" && <><button className="text-button" onClick={() => setKind("storyboard")}>← All export formats</button><AnimaticExportPanel key={project.id} project={project} /></>}{error && <p className="form-error">{error}</p>}</div><div className="modal-footer"><span className="footer-left export-meta">Made with a little help from frame.</span>{kind === "animatic" ? <button className="button" onClick={onClose}>Close</button> : <button className="button button-primary" onClick={exportFile}><Download size={15} />{kind === "storyboard" || kind === "look" ? "Open print preview" : "Export file"}</button>}</div></Modal>;
+  return <Modal title="Ready for the next stage." subtitle="Take your story from the workspace to the set." onClose={onClose}><div className="modal-body export-options">{(kind === "animatic" ? [] : options).map(option => <button key={option.id} className={`export-option ${kind === option.id ? "selected" : ""}`} onClick={() => setKind(option.id)}><span className="export-icon"><option.icon size={21} /></span><span><strong>{option.title}</strong><small>{option.detail}</small></span><span className="radio-circle">{kind === option.id && <span />}</span></button>)}{kind === "animatic" && <><button className="text-button" onClick={() => setKind("storyboard")}>← All export formats</button><AnimaticExportPanel key={project.id} project={project} /></>}{kind === "reel" && <div className="fields-row"><Field label="Image size"><select value={reelWidth} onChange={event => setReelWidth(event.target.value)} disabled={!!reelBusy}><option value="800">Small · 800 px wide</option><option value="1280">Medium · 1280 px wide</option><option value="0">Original · untouched files (largest)</option></select></Field>{hasAudio && <div className="animatic-checks"><label><input type="checkbox" checked={reelAudio} disabled={!!reelBusy} onChange={event => setReelAudio(event.target.checked)} />Include recorded dialogue</label></div>}</div>}{reelBusy && <p role="status" aria-live="polite">{reelBusy}</p>}{error && <p className="form-error">{error}</p>}</div><div className="modal-footer"><span className="footer-left export-meta">Made with a little help from frame.</span>{kind === "animatic" ? <button className="button" onClick={onClose}>Close</button> : <button className="button button-primary" onClick={exportFile} disabled={!!reelBusy}><Download size={15} />{kind === "storyboard" || kind === "look" ? "Open print preview" : "Export file"}</button>}</div></Modal>;
 }
 
 export type SearchTarget = { tab?: string; frameId?: string; sceneId?: string; characterId?: string; noteId?: string; nodeId?: string; boardId?: string; actId?: string; script?: { start: number; end: number } };
