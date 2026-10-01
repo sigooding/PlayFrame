@@ -1,5 +1,11 @@
 # NEONOIRE — keyframe handoff
 
+## Current — 2 October 2026: scene 6 rewritten (script, 23 takes, seven new slots)
+
+The director rewrote the interview room (see story bible Part 9 item 15). **Script:** applied from the director's text with five typographical fixes. **Voices:** 23 takes (Vera, Ishida) — ten replace old takes in place (archived under `docs/neonoire/voice/archive/`), thirteen are new; scene 6 now has 41 recorded lines laid out by hand across frames 54–62 and 321–324. **Boards:** **321–327 are placeholder slots** (honest `Needs review`, no image) for the form, her handwriting, the pen that stops, the passport photograph, the photograph squared to the corner, the tea wiped away and the photograph into his pocket; their briefs are in `docs/neonoire/scenes/n06-interview-room.md` and nothing is generated yet. 56 was retitled *Thursday* and its quote moved; 60, 61 and 62 had their quotes/descriptions updated. 306 shots / 102 scenes now stand. Draw 321–327 on the interview lock and the room master, and keep the form's wet corner consistent with 60 and 62 (the card stays on dry laminate).
+
+**Mechanics:** `verify:neonoire`, `verify:shot-order` and `verify:revision:neonoire` were updated for 306 shots and for placeholders being legitimate again (only 321–327). Saved workspaces on the pre-rewrite default are refreshed by `src/lib/neonoire-scene6-sync.json` (regenerate with `node scripts/neonoire/sync-scene6.mjs <prior-bundle.json>` if the scene changes again before it ships); the replayed baseline is `docs/neonoire/baseline/scene6-pre-rewrite-2026-10-02.json`.
+
 ## Current — 1 October 2026: the retake round on the rewrite queue (cold open + scene 20)
 
 The director's line was **"also fill in some of the missing shots"**. Measured against the bundle, nothing was
