@@ -109,6 +109,14 @@ one telephone, if the master stops declaring itself the master, if `s77/85` clai
 62's card is allowed back into the puddle in either the brief or the note, if a frame says `QUEUED for the
 desk lock` without being named on the list, or if a frame named on the list stops saying so. The list being
 empty is itself asserted: reopening it means editing `office-layout-look.mjs` *and* the note, in the open.
+
+One more guard came out of the corrections, because both of them lived where the guards could not see them: a
+board's **header prose**, everything above its first `---`, never reaches `frame.notes`, so scene 77 went on
+promising that 88 and 89 were queued, and scene 11 went on calling 252 held-and-queued, a full day after those
+frames were installed. `verify:neonoire` now reads the six office board *files* — while the module's queue is empty
+no office board may describe an open one, and a board that owns a queued frame must still carry the marker — and it
+was tested by putting the stale sentence back, which fails with the file named. Header prose is where notes go to
+rot; now it is checked at the file level too.
 That is what "keep consistency" costs, and it is now cheap.
 
 [Queue review sheet: six pairs, before / after](../../../public/images/neonoire/reviews/office-desk-lock-queue-2026-10-01.jpg)
@@ -126,9 +134,15 @@ That is what "keep consistency" costs, and it is now cheap.
   production fix, not an image fix.
 - The lamp in 191 is present and off per the director's rule of 26 September; at small sizes its green
   glass reads faintly luminous. Judge it at full size before waving it through.
-- From pass 2: 21/196's retake **dropped Jack's coat from the chair back** the 29 September frame had. The
-  coat is a scene-21 story object (he puts it on before he goes up), so either hang it on set or let the
-  next retake of 196 restore it — do not let the animatic be the place that discovers it.
+- From pass 2, **and a second correction to this ledger**: it first recorded that 21/196's retake "dropped
+  Jack's coat from the chair back" and justified restoring it by claiming the coat is a scene-21 story object
+  with a put-it-on-before-he-goes-up beat. **No such action line exists** — scene 21 gives Jack's coat no
+  business at all (its only coat line is Vera keeping hers on), and the inside-pocket line I half-remembered
+  is scene 22 at the noodle counter. Opening both frames at full size settled it: the coat was not dropped, it
+  **moved from the chair back onto his shoulders**, worn over the creased shirt, and 21/196 and 21/271 agree
+  with each other. The defect was in the notes — 271 promised the chair back "as it does" in 194 — and the
+  notes are now corrected. That is two invented justifications in one task, both caught by reading the file
+  instead of trusting the memory of writing it, and both now guarded: quote the script, never the recollection.
 - From pass 2: in 77/89 the pen nib still sits very near the paper. The board's performance note ("he writes
   nothing") is the fix; on set it is a hand position, not a redraw.
 - From pass 2: in 11/252 the desktop fills the frame, so that insert can no longer be used to *check* the

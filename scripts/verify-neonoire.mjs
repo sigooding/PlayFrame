@@ -924,6 +924,24 @@ for (const id of officeLayoutRetakes) {
   assert(hits >= (officeLayoutScenes.has(frame.sceneId.replace("neonoire-", "")) ? 2 : 1),
     `${id} must record its 1 October 2026 retake in its own note as well as carrying the lock`);
 }
+// A board's header prose — everything above its first `---` — never reaches `frame.notes`, so every check above
+// is blind to it. That is exactly how scene 77's header went on promising "Shots 88 and 89 are queued onto the
+// same lock" a full day after they were retaken, in a file whose shot notes said the opposite. Read the six files
+// themselves: while the module's queue is empty no office board may describe an open one, and a board that owns a
+// queued frame must still carry the marker.
+const officeBoards = ["n06-interview-room.md", "n10-jacks-office-night.md", "n11-jacks-office-later.md",
+  "n18-office-after-the-last-train.md", "n21-office-footsteps-on-the-stairs.md", "n77-jacks-office.md"];
+for (const board of officeBoards) {
+  const text = readFileSync(join(root, "docs", "neonoire", "scenes", board), "utf8");
+  if (officeLayoutQueued.length === 0) {
+    assert(!/queued onto|\bis queued\b|are queued|held and queued|still queued/i.test(text),
+      `${board} promises an office retake that officeLayoutQueued no longer lists`);
+  }
+  const owned = [...text.matchAll(/^ID: (neonoire-shot-\d+)$/gm)].map(m => m[1]).filter(id => officeLayoutQueued.includes(id));
+  for (const id of owned) assert(text.includes("QUEUED"), `${board} owns queued ${id} but no longer says so in the file`);
+}
+pass("office boards: no header prose promises a queue the module has closed, and every queued frame says so in its board");
+
 // And the record must stay accurate: the 30 September RETAKE PENDING list is scene 20's 193 and 194. Scene
 // 21's 196 and 271 were never pinned, whatever a ledger once claimed.
 assert(!rewritePending.has("neonoire-shot-196") && !rewritePending.has("neonoire-shot-271"), "scene 21's office frames are not RETAKE PENDING");

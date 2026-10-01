@@ -30,8 +30,9 @@ export const officeLayoutLook =
 // declares a frame knowingly unfinished: name it here, say QUEUED in its board note, and the verifier holds
 // both honest. Correction to the first ledger draft, recorded here so it cannot be re-invented: shots 196 and
 // 271 were never RETAKE PENDING — the 30 September pin list holds scene 20's 193 and 194, not scene 21's.
-// Two caveats survive into production rather than into another image: Jack's hands still read older than 48 in
-// 196, and that retake dropped his coat from the chair back.
+// One caveat survives into production rather than into another image: Jack's hands still read older than 48 in
+// 196. The coat, which an earlier draft of this comment said 196 had "dropped from the chair back", was not
+// dropped — both scene-21 frames wear it, checked at full size, and the script never says where it hangs.
 export const officeLayoutQueued = [];
 // Every frame this lock has rebuilt, in the order the two passes ran them. Stable paths throughout: nothing was
 // renamed, renumbered, or replaced by a scene master.

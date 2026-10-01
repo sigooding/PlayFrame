@@ -25,7 +25,11 @@ frame, a third cup in a two-cup scene). `officeLayoutQueued` is empty and `verif
 frame can only be declared unfinished by naming it in the module and in its note. **Correction:** pass 1 wrote that
 those two scene-21 frames were `RETAKE PENDING`; they never were — the 30 September pins are scene **20**'s 193 and
 194 — and the verifier now asserts that too. Draw any future office frame on the lock and the master, never on the
-neighbour. [Ledger, before/after table and caveats](office-desk-lock-2026-10-01.md);
+neighbour. Two stale sentences survived the queue because they sat in a board's **header prose**, above the first
+`---`, which never reaches `frame.notes` — scene 77 promising 88/89 were queued, scene 11 calling 252 held and
+queued; both are fixed, and `verify:neonoire` now reads the six office board files for exactly that. Scene 21's
+coat is likewise resolved: nothing was dropped, the charcoal overcoat is **worn** in both frames (the 29 September
+pair had it over the chair back), and the script never says where it hangs. [Ledger, before/after table and caveats](office-desk-lock-2026-10-01.md);
 [review sheet](../../public/images/neonoire/reviews/office-desk-lock-2026-10-01.jpg).
 
 
