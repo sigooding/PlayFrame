@@ -66,6 +66,7 @@ export function AnimaticExportPanel({ project }: { project: FilmProject }) {
     try {
       const response = await fetch(base, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(settings) });
       const data = await response.json();
+      if (response.status === 404) throw new Error("The server doesn't have this workspace saved (it may be a different database, or the page is stale). Reload, or open it again from Templates, then export. Workspace id: " + project.id);
       if (!response.ok) throw new Error(data.error || "Unable to start the export.");
       setJob(data); sessionStorage.setItem(storageKey, data.id);
     } catch (cause) { setError(cause instanceof Error ? cause.message : "Export could not be started."); }
