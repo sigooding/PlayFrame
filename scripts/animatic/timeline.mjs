@@ -10,17 +10,17 @@ export function animaticSceneTag(project, id) {
 
 // Never infer motion from notes: "no tracking" used to match "tracking" and alternate pan direction.
 // A Static shot is actually static, even when optional camera simulation is enabled.
+// Slow, centred push or pull only, eased at both ends. Sideways drift, handheld sway and tilts made the cut feel
+// sick, so Pan, Track, Steadicam, Handheld and Tilt are all rendered as the same gentle push; Pull / Dolly out reverses it.
 export function cameraMove(frame, duration) {
   const movement = String(frame.movement || "Static").toLowerCase();
   if (movement === "static") return null;
-  const n = Math.max(1, Math.round(duration * 24)), p = `min(on/${n},1)`;
+  const pull = /pull|dolly out/.test(movement);
+  if (!pull && !/push|dolly|pan|track|steadicam|handheld|tilt|crane|zoom|move/.test(movement)) return null; // unrecognised: no fabricated motion
+  const n = Math.max(1, Math.round(duration * 24)), t = `min(on/${n},1)`, p = `(${t}*${t}*(3-2*${t}))`; // smoothstep
+  const maximum = Math.min(1.06, 1 + 0.008 * duration);
   const centre = { x: "iw/2-iw/zoom/2", y: "ih/2-ih/zoom/2" };
-  const maximum = Math.min(1.12, 1 + 0.014 * duration);
-  if (/pull|dolly out/.test(movement)) return { z: `${maximum}-${maximum - 1}*${p}`, ...centre, kind: "pull" };
-  if (/handheld/.test(movement)) return { z: "1.06+0.01*sin(on/9)", x: "iw/2-iw/zoom/2+sin(on/7)*7", y: "ih/2-ih/zoom/2+cos(on/11)*5", kind: "handheld" };
-  if (/pan|track|steadicam/.test(movement)) return { z: "1.09", x: /left/.test(movement) ? `(iw-iw/zoom)*(1-${p})` : `(iw-iw/zoom)*${p}`, y: centre.y, kind: "track" };
-  if (/tilt/.test(movement)) return { z: "1.09", x: centre.x, y: /up/.test(movement) ? `(ih-ih/zoom)*(1-${p})` : `(ih-ih/zoom)*${p}`, kind: "tilt" };
-  if (/push|dolly in/.test(movement)) return { z: `1+${maximum - 1}*${p}`, ...centre, kind: "push" };
-  // Unrecognised movement has no fabricated motion, either.
-  return null;
+  return pull
+    ? { z: `${maximum}-${maximum - 1}*${p}`, ...centre, kind: "pull" }
+    : { z: `1+${maximum - 1}*${p}`, ...centre, kind: "push" };
 }

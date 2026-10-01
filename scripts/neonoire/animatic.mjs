@@ -6,7 +6,7 @@
 //   node scripts/neonoire/animatic.mjs                       the whole film (long)
 //   --project saved-project.json --output cut.mp4           export current saved edits/order
 //   --resolution 720p --hold --no-subs --no-camera          match storyboard playback, faster render
-//   --camera          optional motion for explicitly moving shots, never Static
+//   --camera          slow centred push or pull for shots whose Movement is not Static (no sideways drift)
 //   --no-audio --no-music --no-credits                      optional sound/credit controls
 //
 // Cuts are tight by default: a voiced frame starts about half a second before its first line and ends

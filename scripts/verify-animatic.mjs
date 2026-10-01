@@ -51,9 +51,10 @@ const interleaved = { ...project, frames: [...project.frames.filter(frame => fra
 assert.deepEqual(orderAnimaticFrames(interleaved), framesInSceneOrder(interleaved.frames, interleaved.scenes));
 assert.deepEqual(animaticFrames(interleaved, {}).map(frame => frame.id), orderAnimaticFrames(interleaved).map(frame => frame.id));
 for (const index of [0, 1, 2]) assert.equal(cameraMove({ movement: "Static", notes: "no tracking, she walks past, never pan" }, 14, index), null);
-assert.equal(cameraMove({ movement: "Pan right" }, 5).kind, "track");
+for (const m of ["Pan right", "Pan left", "Tracking", "Handheld", "Tilt up", "Steadicam"]) { const c = cameraMove({ movement: m }, 8); assert.equal(c.kind, "push"); assert.equal(c.x, "iw/2-iw/zoom/2"); assert.equal(c.y, "ih/2-ih/zoom/2"); } // never sideways
+assert.equal(cameraMove({ movement: "Dolly out" }, 8).kind, "pull");
 assert.equal(cameraMove({ movement: "Unspecified" }, 5), null);
-pass("CLI and app preserve the same edited within-scene order; Static never becomes a synthetic or alternating pan");
+pass("CLI and app preserve the same edited within-scene order; Static never moves, and moving shots only push or pull, centred");
 
 const older = structuredClone(project);
 older.script = readFileSync("docs/neonoire/baseline/Neonoire_PreRestoration_2026-10-01.fountain", "utf8").replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
