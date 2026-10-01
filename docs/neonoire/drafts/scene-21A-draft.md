@@ -103,7 +103,7 @@ She picks it up. Turns it over. It is the coin her mother gave each of them, onc
 VERA
 She still has one.
 
-Jack, behind her, says nothing. He has seen a coin like it in a box in his cupboard.
+Jack, behind her, says nothing. He watches her close her hand around it, and look away from him until her face is steady.
 
 EXT. KANDA ARCADE, SHUTTERED STALLS - LATER
 
@@ -145,10 +145,10 @@ Jack keeps walking. The umbrella does not waver, and his face does.
 4. Vera: "That's not what he said." (close, Jack beyond)
 5. Jack translating fully, the shopkeeper's dish of coins
 6. Vera on the step with the quarter (insert: the coin)
-7. Jack's face behind her (he has seen the coin before)
+7. Jack's face behind her, watching her close her hand on the coin
 8. Under the umbrella, wet shoulder, the walk away
 
 ## Notes
 - Every "in Japanese" line is voiced in English for now, as for the rest of the film.
-- It leans on two established facts: the coin in Jack's cupboard box, and the noodle-shop motif. If the coin is not already in the box in Jack's cupboard, cut that sentence and the shot 7 beat.
+- The American quarter and the mother's coin are new inventions of this draft, not established in the script (the script has no such coin). Check they don't contradict your family history for Vera and Mara, or swap in another small object.
 - Running time about 3 minutes with voice. Scene 22 now opens on a relationship the audience has already seen begin.
