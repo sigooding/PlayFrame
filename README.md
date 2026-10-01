@@ -14,7 +14,7 @@ npm run dev                  # http://localhost:3000
 The first load seeds the existing sample projects plus **Let the Raptures Commence**.
 The series opens by default when present; an explicit `?project=<id>` always wins.
 
-## NEONOIRE — the final screenplay
+## Nobody's Witness — the final screenplay (repository name: NEONOIRE)
 
 The **final feature screenplay** — 100 numbered scenes — is an editable workspace of its own, with
 **all 100 numbered scenes and the six inserted scenes (25A, 27A, 53A, 63A, 82A, 99A) boarded as 307 numbered shots** — the first boarding (1–240) in screenplay order, then coverage (241–286) of the named beats the first boarding left: the opening seven (shots 1–68), the hotel call and Tokyo streets of scenes 72–76 (shots 69–86), the envelope and the notebook of scenes 77–79 (shots 87–95), Jack and Ishida in scene 80 (shots 96–101), the cassette and the witness in scenes 81–82 (shots 102–110), Kurose and the storeroom in scenes 83–84 (shots 111–120), the raid on the Hive in scenes 85–88 (shots 121–129), the escape in scenes 89–92 (shots 130–138), Ishida's last night in scenes 93–96 (shots 139–147), the ground-breaking at the Hive in scene 97 (shots 148–154), the ending in scenes 98–100 (shots 155–161), Kanda revisited in scenes 8–12 (shots 162–170, numbered in boarding order), the roadside inn (shots 171–180), the Hive first seen in scenes 13–17 (shots 181–190), scenes 18–71 (shots 191–240), the later coverage passes (241–286), the inserted scenes 25A, 27A and 63A (287–296), and story pass 2's boards — 53A, 82A and 99A with the scenes 96–99A coverage (297–307), eight of which hold honest placeholder cards naming the files they await. Everything is carried page by page from
@@ -89,7 +89,7 @@ labelled empty placeholders.** Old street studies are not reused. See the
 [review sheet](public/images/neonoire/reviews/tokyo-story-72-75-pass-1.jpg).
 Existing frame IDs and asset names remain stable despite the two inserted hotel shots.
 
-Open the workspace from **Templates → NEONOIRE → Open the final screenplay** (the card opens the
+Open the workspace from **Templates → Nobody's Witness → Open the final screenplay** (the card opens the
 Screenplay tab) or import
 [`public/projects/neonoire-opening.json`](public/projects/neonoire-opening.json) with **Import project**.
 
