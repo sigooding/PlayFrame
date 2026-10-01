@@ -25,7 +25,12 @@ frame, a third cup in a two-cup scene). `officeLayoutQueued` is empty and `verif
 frame can only be declared unfinished by naming it in the module and in its note. **Correction:** pass 1 wrote that
 those two scene-21 frames were `RETAKE PENDING`; they never were — the 30 September pins are scene **20**'s 193 and
 194 — and the verifier now asserts that too. Draw any future office frame on the lock and the master, never on the
-neighbour. Two stale sentences survived the queue because they sat in a board's **header prose**, above the first
+neighbour — and then **look at the frame**: a third pass audited the five office frames the queue never touched and
+found two scene-11 desk inserts (`s11/244-daniel-voss-41.jpg`, `s11/167-two-men-laughing.jpg`) still on the pre-lock
+wood, correctly noted and wrongly drawn, because every office guard reads notes. Both are now on the lock and in
+`officeLayoutRetakes` (15 frames, twenty-two calls). That audit also found the lock over-specifying its own master in
+two clauses (the phone's corner, and "nothing on top" of a cupboard whose binders *are* on top) — the wording was
+corrected to match `s10/164` rather than the other way round. Two stale sentences survived the queue because they sat in a board's **header prose**, above the first
 `---`, which never reaches `frame.notes` — scene 77 promising 88/89 were queued, scene 11 calling 252 held and
 queued; both are fixed, and `verify:neonoire` now reads the six office board files for exactly that. Scene 21's
 coat is likewise resolved: nothing was dropped, the charcoal overcoat is **worn** in both frames (the 29 September

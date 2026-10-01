@@ -6,7 +6,7 @@ changing sizes. redo the shots to keep consistancy."*
 
 Two named frames were wrong and one fault was systemic. All three are fixed here, and the systemic one now
 has a guard, because a note nobody can run is a note that gets re-broken next session. The office queue this
-ledger opened was worked off in a second session the same day — 13 frames rebuilt in twenty calls, ten per
+ledger opened was worked off in a second session the same day — **15 frames rebuilt in twenty-two calls**, ten per
 session — and its own closure is recorded under "What pass 1 left open" below, together with a correction of a
 claim this file made wrongly.
 
@@ -120,6 +120,52 @@ rot; now it is checked at the file level too.
 That is what "keep consistency" costs, and it is now cheap.
 
 [Queue review sheet: six pairs, before / after](../../../public/images/neonoire/reviews/office-desk-lock-queue-2026-10-01.jpg)
+
+## Pass 3 — the five frames the lock never touched (same day, two calls)
+
+The queue guard can only see the frames that were *listed*. Every check `verify:neonoire` runs on the office reads
+**notes**, and a frame that was never queued never needed a note changed, so its pixels were never re-examined. An
+audit of the five office frames the lock had not retouched is the difference between "the queue is closed" and
+"the room is locked", and it found:
+
+| Frame | Verdict on inspection |
+| --- | --- |
+| `s10/242-down-the-stairs.jpg` (10/244) | stairwell landing, **no desk in frame** — nothing to fix |
+| `s21/193-footsteps-on-the-stairs.jpg` (21/195) | stairwell with the frosted door, **no desk** — nothing to fix |
+| `s10/166-by-its-edges.jpg` (10/168) | **compliant**: walnut top with cup rings, lamp at the left end, phone on the back edge right of it, binders on the cupboard, CRT showing the film at right |
+| `s11/244-daniel-voss-41.jpg` (11/246) | **off-lock**: light honey-oak top, no cup rings — retaken |
+| `s11/167-two-men-laughing.jpg` (11/169) | **off-lock**: warm reddish wood, scratch field instead of ring marks — retaken |
+
+Both inserts were edited for the wood and nothing else, which is also how their legibility survived: 246's headline
+and its `DANIEL VOSS, 41` caption were re-read at full size after the edit. They are a matched pair — the
+photograph lies on the same clipping in 169 that *is* the frame in 246, and 246's note has always said "the black
+notebook matches shot 169" — so retaking one without the other would have moved the fault rather than closed it.
+
+### And the lock itself was wrong twice, about its own master
+
+While reading the frames against `s10/164`, two clauses in `officeLayoutLook` turned out to over-specify the
+picture they claim to describe: it pinned the telephone to the desk's **right back corner** when the master has it
+on the **back edge right of the lamp**, and it said the steel cupboard has binders and a folder stack at its right
+end *and* "NOTHING on top of it" — which contradicts itself, since the binders are on top. Twelve frames had been
+drawn to the words and none to the master, which is the same chain-of-copies fault the lock exists to end. The
+wording moved to match the master rather than fourteen frames moving to match the wording; the rule that actually
+bites is unchanged (`exactly ONE black rotary telephone`, and never anything on the cupboard that a scene has to
+reach up for, which is the scene 11 box). Recorded in `b983379`.
+
+### The near-miss worth repeating
+
+While pass 3 was being patched, a single missing `+` at a line break in the look module let automatic semicolon
+insertion **end the constant mid-sentence**. Six hundred and sixty-four characters — the entire RIGHT WALL, the door
+lettering, the room master — silently dropped out of every office note and every generation prompt, and every
+`frame.notes.includes(detail)` assertion in the verifier kept passing, because they all check *substrings of the
+surviving prefix*. One unrelated assertion caught it by accident. `verify:neonoire` now pins the lock's ending and
+length, not only its phrases, and was tested by deleting the `+` again:
+
+```
+AssertionError: the office lock ends mid-sentence — a line break in office-layout-look.mjs lost its + (ASI truncates the constant)
+```
+
+[Insert review sheet: two pairs, before / after](../../../public/images/neonoire/reviews/office-desk-lock-inserts-2026-10-01.jpg)
 
 ## Honest caveats
 

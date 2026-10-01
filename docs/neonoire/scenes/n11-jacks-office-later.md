@@ -18,7 +18,7 @@ One shot (169), **16:9, 1920×1080, full-bleed**. Daniel follows `s4/35-the-phot
 
 ## Continuity retake — 1 October 2026
 
-Three of this scene's four office frames were rebuilt on the same day the director flagged them: **245** (`s11/243-the-box.jpg`), **251** (`s11/249-the-line.jpg`) and **167**'s desk (`s10/165-face-up.jpg`, listed under scene 10). Before the retake, 245 had Jack lifting a box **off nothing** — arms up at head height, both feet on a chair, with nothing above him but ceiling — and 251 sat him at a narrow honey table that was neither the scene 10 desk nor the scene 77 one. The box now comes **out of the grey steel cupboard under the window**, which is what scene 14 already says ("Once in a box in his own cupboard"), and the screenplay's own blocking line was corrected to match — dialogue and the contents of the box are untouched. The desk is the wide 1.60 m walnut one in all three. **252** (`s11/250-the-lighter.jpg`) was held for the second session and is now redrawn: a hands-only insert whose warm desktop is the lamp pool, and the wood under it is the locked walnut with its pale cup rings rather than the old honey. All four office frames in this scene are on the lock.
+Three of this scene's four office frames were rebuilt on the same day the director flagged them: **245** (`s11/243-the-box.jpg`), **251** (`s11/249-the-line.jpg`) and **167**'s desk (`s10/165-face-up.jpg`, listed under scene 10). Before the retake, 245 had Jack lifting a box **off nothing** — arms up at head height, both feet on a chair, with nothing above him but ceiling — and 251 sat him at a narrow honey table that was neither the scene 10 desk nor the scene 77 one. The box now comes **out of the grey steel cupboard under the window**, which is what scene 14 already says ("Once in a box in his own cupboard"), and the screenplay's own blocking line was corrected to match — dialogue and the contents of the box are untouched. The desk is the wide 1.60 m walnut one in all three, and the scene's two desk-surface inserts (**246** `s11/244-daniel-voss-41.jpg` and **169** `s11/167-two-men-laughing.jpg`) were retaken onto the same lock later the same day, so all five office frames here are now on it. **252** (`s11/250-the-lighter.jpg`) was held for the second session and is now redrawn: a hands-only insert whose warm desktop is the lamp pool, and the wood under it is the locked walnut with its pale cup rings rather than the old honey. All four office frames in this scene are on the lock.
 
 ---
 
@@ -30,7 +30,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-169
 IMAGE: 167-two-men-laughing.jpg
-NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245, which no longer needs a chair. The call to Ishida is shot 251. The lighter is shot 252.
+NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245, which no longer needs a chair. The call to Ishida is shot 251. The lighter is shot 252. Retaken 1 October 2026 onto the desk lock: these two inserts are a matched pair and both had been left on the pre-lock wood while their notes already carried the lock, so the desktop is now the locked worn dark walnut with its pale cup rings, and the photograph, the clipping under it and the closed black notebook are untouched.
 
 ---
 
@@ -52,7 +52,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-246
 IMAGE: 244-daniel-voss-41.jpg
-NOTE: Coverage, shot 246. Daniel is held to s4/35-the-photograph.jpg, not to Jack. The headline AMERICAN INSURANCE INVESTIGATOR FOUND DEAD - POLICE RULE SUICIDE and the caption DANIEL VOSS, 41 are lettered and legible at full size. The black notebook matches shot 169.
+NOTE: Coverage, shot 246. Daniel is held to s4/35-the-photograph.jpg, not to Jack. The headline AMERICAN INSURANCE INVESTIGATOR FOUND DEAD - POLICE RULE SUICIDE and the caption DANIEL VOSS, 41 are lettered and legible at full size. The black notebook matches shot 169. Retaken 1 October 2026 onto the desk lock for the same reason as shot 169 — the wood, and only the wood: the honey-oak top became the locked worn dark walnut with its cup rings, and the lettering was re-checked at full size after the edit, both lines legible.
 
 ---
 

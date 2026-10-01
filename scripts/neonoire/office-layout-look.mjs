@@ -37,13 +37,16 @@ export const officeLayoutLook =
 // declares a frame knowingly unfinished: name it here, say QUEUED in its board note, and the verifier holds
 // both honest. Correction to the first ledger draft, recorded here so it cannot be re-invented: shots 196 and
 // 271 were never RETAKE PENDING — the 30 September pin list holds scene 20's 193 and 194, not scene 21's.
+// A third pass added the two scene-11 desk inserts (246, 169): an audit of the five office frames this lock
+// never retouched found them showing the pre-lock wood, which no check could see — the guard reads NOTES, and
+// their notes had carried the lock correctly since 1 October. Frames lie; notes lie; only looking lies less.
 // One caveat survives into production rather than into another image: Jack's hands still read older than 48 in
 // 196. The coat, which an earlier draft of this comment said 196 had "dropped from the chair back", was not
 // dropped — both scene-21 frames wear it, checked at full size, and the script never says where it hangs.
 export const officeLayoutQueued = [];
 // Every frame this lock has rebuilt, in the order the two passes ran them. Stable paths throughout: nothing was
 // renamed, renumbered, or replaced by a scene master.
-export const officeLayoutRetakes = ["neonoire-shot-62", "neonoire-shot-245", "neonoire-shot-251",
+export const officeLayoutRetakes = ["neonoire-shot-62", "neonoire-shot-245", "neonoire-shot-251", "neonoire-shot-246", "neonoire-shot-169",
   "neonoire-shot-166", "neonoire-shot-167", "neonoire-shot-191", "neonoire-shot-87",
   "neonoire-shot-252", "neonoire-shot-88", "neonoire-shot-89", "neonoire-shot-283",
   "neonoire-shot-196", "neonoire-shot-271"];
