@@ -279,6 +279,30 @@
       "voiceId": "IUNPSr7i3o1XsExH6IGv",
       "status": "draft-borrowed",
       "note": "Draft only: borrowing the Masked Man's voice (the driver in scene 70 says the same 'Excuse me' line, in English)."
+    },
+    "MR. NODA": {
+      "voiceId": "MhuU9Z2dyWAG6ZjuuKRg",
+      "name": "Okada voice",
+      "status": "borrowed",
+      "notes": "Borrowed for the draft (scenes 38-61 voicing, 2 Oct 2026); replace with a dedicated voice when a workspace slot frees."
+    },
+    "OLD TOBACCONIST": {
+      "voiceId": "5GswypvgtPl0hKqvIA4k",
+      "name": "Barber voice",
+      "status": "borrowed",
+      "notes": "Borrowed for the draft (scenes 38-61 voicing, 2 Oct 2026); replace with a dedicated voice when a workspace slot frees."
+    },
+    "MASKED LEADER": {
+      "voiceId": "IUNPSr7i3o1XsExH6IGv",
+      "name": "Masked Man voice",
+      "status": "borrowed",
+      "notes": "Borrowed for the draft (scenes 38-61 voicing, 2 Oct 2026); replace with a dedicated voice when a workspace slot frees."
+    },
+    "VENDING MACHINE": {
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "name": "premade Sarah, phone filter",
+      "status": "borrowed",
+      "notes": "Borrowed for the draft (scenes 38-61 voicing, 2 Oct 2026); replace with a dedicated voice when a workspace slot frees."
     }
   },
   "notDesignedYet": [
