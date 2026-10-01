@@ -21,19 +21,19 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-169
 IMAGE: 167-two-men-laughing.jpg
-NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245, with a chair caveat — a retake this session still left his feet on the floor. The call to Ishida is shot 251. The lighter is shot 252.
+NOTE: The second attempt; the first made the two men look alike and was discarded. The clipping is shot 246, lettered. The box coming down is shot 245: the box comes off the top of the tall steel cupboard between the door and the window (director correction, 1 October 2026); his feet remain on the floor in the frame, a standing caveat. The call to Ishida is shot 251. The lighter is shot 252.
 
 ---
 
 245. WIDE — 35mm, static, eye level — the box.
-Past midnight. Jack lifts a dusty cardboard box down from the top of the filing cabinet. The green lamp, the rotary phone, the sofa, the blinds. The CRT plays a samurai film.
+Past midnight. Jack lifts a dusty cardboard box down from the top of the tall grey steel cupboard between the door and the window. The long desk of scene 10, the green lamp, the rotary phone, the sofa, the blinds. The CRT plays a samurai film.
 SCRIPT: "Jack stands on a chair and takes down a cardboard box from the top of a cupboard. Dust on the lid. He hasn't opened it in years."
 CAST: Jack
 LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-245
 IMAGE: 243-the-box.jpg
-NOTE: Coverage, shot 245, the wide shot 169's note asked for. The office follows s10/164-depends-whos-calling.jpg; Jack follows sheets/jack.jpg. The door reads JACK. The CRT is on and never static: the office's muted black-and-white samurai film, even though the draft writes static. Retake: both feet are on the chair seat.
+NOTE: Coverage, shot 245, the wide shot 169's note asked for. The office follows s10/164-depends-whos-calling.jpg; Jack follows sheets/jack.jpg. The door reads JACK. Director correction, 1 October 2026: the box visibly comes down from the top of a tall steel cupboard (the earlier frame lifted it from empty air), and the desk is the long desk of s10/164-depends-whos-calling.jpg, which is the office's fixed desk size. The CRT is on and never static: the office's muted black-and-white samurai film, even though the draft writes static. Caveat: he reaches from the floor beside the chair, not standing on the chair seat.
 
 246. INSERT — 85mm, static, high angle — daniel voss 41.
 Under the green lamp, a yellowed clipping. The photograph is Daniel, not Jack. The headline and the caption are lettered.
@@ -48,14 +48,14 @@ NOTE: Coverage, shot 246. Daniel is held to s4/35-the-photograph.jpg, not to Jac
 ---
 
 251. MEDIUM — 50mm, static, eye level — the line goes dead.
-Jack sits at the desk under the green lamp, the rotary receiver at his ear. Rain on the blinds. The CRT plays a samurai film. The door reads JACK.
+Jack sits behind the long desk under the green lamp, the rotary receiver at his ear, the open box, notebook and clipping in front of him. Rain on the blinds. The CRT plays a samurai film. The door reads JACK; the tall cupboard stands between the door and the window.
 SCRIPT: "The line goes dead. Jack holds the receiver a moment longer."
 CAST: Jack
 LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-251
 IMAGE: 249-the-line.jpg
-NOTE: Coverage, shot 251. The office follows s11/243-the-box.jpg; Jack follows sheets/jack.jpg. Ishida is voice only and is not in the frame. The CRT is on and never static: the muted black-and-white samurai film.
+NOTE: Coverage, shot 251. Director correction, 1 October 2026: the desk is the long desk of s10/164-depends-whos-calling.jpg — the office's desk no longer changes size between scenes 10 and 11 — and the cupboard matches shot 245. Jack follows sheets/jack.jpg. Ishida is voice only and is not in the frame. The CRT is on and never static: the muted black-and-white samurai film.
 
 252. INSERT — 85mm, static, high angle — the lighter.
 Jack's hand, charcoal sleeve, flicks the old steel lighter open on the desk. A small flame. No cigarettes.

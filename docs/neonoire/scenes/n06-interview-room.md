@@ -123,7 +123,7 @@ CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 22
 IMAGE: 62-the-card.jpg
-NOTE: The card goes across a wet table, and that is the whole scene in one image. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.
+NOTE: The card goes across a wet table, and that is the whole scene in one image. Director correction, 1 October 2026: the card is slid on the dry part of the table, clear of the spilled tea — it never sits in the puddle. End on him cleaning: slow, careful, ordinary, a man tidying away the evidence of someone else's worst hour with the kindness he has left. No music into the cut.
 
 ## Passes
 
