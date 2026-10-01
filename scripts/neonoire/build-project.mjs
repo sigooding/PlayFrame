@@ -43,6 +43,7 @@ import { inStoryOrder } from "./story-order.mjs";
 import { directorApprovedMainIds, directorMainImageNote, directorContinuityLook, approvedProductionNote } from "./director-corrections.mjs";
 import { barDayLook, newsroomLook, witnessNeedsReview, witnessScenes } from "./witness-look.mjs";
 import { kandaBarLook, kandaBarScenes, kandaBarSheet } from "./bar-look.mjs";
+import { officeLayoutLock, officeLayoutLook, officeLayoutQueued, officeLayoutScenes, officeRoomMaster } from "./office-layout-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = file => readFileSync(resolve(root, file), "utf8");
@@ -320,6 +321,7 @@ const frames = shots.map(shot => {
       ...(hiveFirstScenes.has(shot.scene.key) ? [`Scenes 13–17 — the Hive, first seen (26 September 2026): ${hiveFirstLook}`] : []),
       ...(innScenes.has(shot.scene.key) ? [`The roadside inn (26 September 2026): ${innWarmScenes.has(shot.scene.key) ? innWarmLook : innColdLook}`] : []),
       ...(kandaReturnScenes.has(shot.scene.key) ? [`Scenes 8–12 — Kanda revisited (26 September 2026): ${kandaReturnLook}`] : []),
+      ...(officeLayoutScenes.has(shot.scene.key) ? [`Jack's office — ${officeLayoutLock}: ${officeLayoutLook}`] : []),
       ...(shot.scene.key === "s98" ? [`Scene 98 — the rooftop by day (26 September 2026): ${rooftopLook}`] : []),
       ...(shot.scene.key === "s99" ? [`Scene 99 — the Hive coming down (26 September 2026): ${demolitionLook}`] : []),
       ...(shot.scene.key === "s100" ? [`Scene 100 — Kaneko's new counter (26 September 2026): ${newCounterLook}`] : []),

@@ -6,6 +6,20 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
+## Latest session — 1 October 2026: Jack's office desk lock, and the card out of the puddle
+
+Jack's office is one room and must never be redrawn. Scenes 10, 11, 18, 21 and 77 all carry
+`scripts/neonoire/office-layout-look.mjs`: the **free-standing 1.60 m × 0.75 m worn dark-walnut desk**, banker's lamp at
+its **left** end, **exactly one** rotary phone at its right back corner, grey steel cupboard under the window with
+nothing on top of it, filing cabinet + CRT and the sofa on the right wall, door lettered the whole word JACK, **never
+mirrored, never a second table**. The only room master is `s10/164-depends-whos-calling.jpg`; `s77/85` was rebuilt to
+agree with it and no longer leads. Ten generations (the budget) installed seven corrected frames in place — 6/62 (card on
+dry laminate, spill confined to the crushed cup), 11/245 (box **out of the cupboard**, no chair), 11/251, 10/166, 10/167,
+18/191, 77/87 — and the director authorised the **one scene-11 action line** that moves with it. Dialogue, scene numbers,
+asset paths and the 299/102 board are unchanged; six office frames are named QUEUED in the ledger. `verify:neonoire`
+guards the lock, the single telephone, the master's status and the card's dry laminate. Read
+[the ledger](docs/neonoire/passes/office-desk-lock-2026-10-01.md) before regenerating anything in this room.
+
 ## Latest correction — 1 October 2026: full-page audit and restored 99A
 
 Prior image/export work is committed as `8bfa455`. The complete pre-revision 106-scene source is preserved in `docs/neonoire/baseline/Neonoire_PreRevision_2026-09-29.fountain`; the shipped pre-restoration source is `Neonoire_PreRestoration_2026-10-01.fountain`. Read [the full-page audit](docs/neonoire/passes/revision-restoration-2026-10-01.md). **299/299 images across 102 scenes**: original demolition cards 158/159 are restored inside 99A before the dissolve to 305/306/307, never a revived separate 99. Kaneko's six old stools are explicit before the plaza; the introductions, 25 bonding exchange, 94 tea line and 98 title card are recovered. All rooftop text and the 91 train survive; 85/87/91/92 are unchanged, 86/88/90 add-only.

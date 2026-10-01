@@ -34,6 +34,8 @@ import { kandaBarScenes, kandaBarSheet, kandaBarLook } from "./neonoire/bar-look
 import { TAIL, readManifest, readVoices } from "./neonoire/voice.mjs";
 import { hiveFirstImages } from "./neonoire/hive-first-look.mjs";
 import { confrontationImages, veraLookCImages, veraLookCSheet } from "./neonoire/confrontation-look.mjs";
+import { officeLayoutLock, officeLayoutLook, officeLayoutQueued, officeLayoutScenes, officeRoomMaster } from "./neonoire/office-layout-look.mjs";
+import { interviewLook } from "./neonoire/interview-look.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const cache = join(root, "node_modules/.cache/verify-neonoire");
@@ -571,7 +573,10 @@ assert(coverage.find(f => f.id === "neonoire-shot-243").notes.includes("JACK. IN
 assert(coverage.find(f => f.id === "neonoire-shot-243").notes.includes("out of the raised hand"), "Shot 243's retake lowers the umbrella");
 assert(coverage.find(f => f.id === "neonoire-shot-244").notes.includes("STAIRWAY MOTIF"), "Shot 244 carries the scene 10 stair exit");
 assert(coverage.find(f => f.id === "neonoire-shot-245").notes.includes("never static"), "Shot 245 keeps the office television a programme");
-assert(coverage.find(f => f.id === "neonoire-shot-245").notes.includes("on the chair seat"), "Shot 245's retake puts his feet on the chair");
+assert(coverage.find(f => f.id === "neonoire-shot-245").notes.includes("from inside the open cupboard"), "Shot 245's box comes out of the cupboard, not off thin air");
+assert(coverage.find(f => f.id === "neonoire-shot-245").notes.includes("no chair in the business"), "Shot 245 is on one knee; the chair caveat is retired");
+assert(!/top of the filing cabinet/.test(coverage.find(f => f.id === "neonoire-shot-245").notes), "Shot 245 no longer lifts a box off the cabinet top");
+assert(coverage.find(f => f.id === "neonoire-shot-251").notes.includes("room master"), "Shot 251 follows the room master, not the frame before it");
 assert(coverage.find(f => f.id === "neonoire-shot-246").notes.includes("DANIEL VOSS, 41"), "Shot 246 locks the clipping caption");
 // The missed-calls screen (249) was scene 13's cover shot; the phone now rings once in scene 1 and
 // she declines it — the frame retires with the scene, its image staying on disk for review.
@@ -881,7 +886,31 @@ for (const frame of interview) {
   }
 }
 assert(project.frames.find(frame => frame.id === "neonoire-shot-51").notes.includes("fluorescent is steady"));
+// 1 October 2026: the first study laid Ishida's card down inside the spilled tea. The interview brief and
+// shot 62's own note both now hold the spill to a pool around the crushed cup and run the card on dry laminate.
+for (const [who, text] of [["shot 62", project.frames.find(frame => frame.id === "neonoire-shot-62").notes], ["the interview brief", interviewLook]]) {
+  assert(/DRY laminate/.test(text) && /never lies in/.test(text), `${who}: the card must travel on dry laminate, never in the puddle`);
+}
+assert(project.frames.find(frame => frame.id === "neonoire-shot-62").notes.includes("Shot 62 retaken 1 October 2026"), "shot 62 records its retake");
 pass("all twelve interview JPEGs are 1920×1080; room, wardrobe, cup and spill continuity are recorded");
+
+// ── Jack's office: the desk lock (1 October 2026) ─────────────────────────────────────────────
+// The office was generated as a chain — each frame copied the picture before it — so the desk shrank
+// and re-coloured five times and one study mirrored the room. Scenes 10, 11, 18, 21 and 77 now all
+// carry one lock, and the wide of scene 10 is the only room master.
+const officeFrames = project.frames.filter(f => officeLayoutScenes.has(f.sceneId.replace("neonoire-", "")));
+assert.equal(officeFrames.length, 17, "Five scenes hold Jack's office: 4 + 5 + 2 + 3 + 3 frames");
+for (const frame of officeFrames) {
+  for (const detail of [officeLayoutLock, "1.60 m", "NEVER mirrored", "Never honey-blond", "exactly ONE black rotary telephone", officeRoomMaster]) {
+    assert(frame.notes.includes(detail), `${frame.title} is missing the Jack's office desk lock: ${detail}`);
+  }
+  if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
+}
+for (const id of officeLayoutQueued) assert(officeFrames.some(f => f.id === id && f.notes.includes("QUEUED")), `${id} must name itself queued or be retaken`);
+assert(officeLayoutLook.includes("ONE black rotary telephone"), "The office lock forbids the duplicated telephone");
+assert(project.frames.find(f => f.id === "neonoire-shot-166").notes.includes("room master for the whole film"), "Shot 166 is declared the room master");
+assert(project.frames.find(f => f.id === "neonoire-shot-87").notes.includes("no longer leads the room"), "Shot 87's study no longer leads the room");
+pass("Jack's office: 17 frames carry the locked 1.60 m walnut desk, one telephone, the un-mirrored room and one master");
 
 const detectives = generationFrames.filter(frame => frame.sceneId === "neonoire-s7");
 assert.equal(detectives.length, 6);

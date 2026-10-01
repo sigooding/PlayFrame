@@ -9,7 +9,7 @@ Grammar: one room pressed against the railway. A lighter with no cigarettes, a s
 
 ## Frame format — 26 September 2026
 
-All three shots (166–168) are **16:9, 1920×1080, full-bleed**. The office follows `s77/85-the-desk-lamp.jpg`. **Jack** follows `sheets/jack.jpg`. **Vera** wears her original look (`sheets/vera.jpg`) and carries the pale blue umbrella. The photograph follows `s4/35-the-photograph.jpg`, and the man in it is Daniel Voss, not Jack. These are AI-generated draft studies, not approved coverage.
+All three shots (166–168) are **16:9, 1920×1080, full-bleed**. This scene's wide is the **room master** every other Jack's office frame follows — `s10/164-depends-whos-calling.jpg`, retaken 1 October 2026 onto the locked desk (see [`passes/office-desk-lock-2026-10-01.md`](../passes/office-desk-lock-2026-10-01.md) and `scripts/neonoire/office-layout-look.mjs`); it no longer follows `s77/85-the-desk-lamp.jpg`, which was mirrored and has since been rebuilt to agree with this one. **Jack** follows `sheets/jack.jpg`. **Vera** wears her original look (`sheets/vera.jpg`) and carries the pale blue umbrella. The photograph follows `s4/35-the-photograph.jpg`, and the man in it is Daniel Voss, not Jack. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -21,7 +21,7 @@ LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-166
 IMAGE: 164-depends-whos-calling.jpg
-NOTE: The scene master. The Japanese exchange, the clip set on the desk and her exit through the frosted glass all play from here. The door lettering reads only "JAC" in this study.
+NOTE: The scene master and, from 1 October 2026, the room master for the whole film: the wide 1.60 m worn dark-walnut desk standing free in the middle of the room, banker's lamp at its left end, one rotary phone at its right back corner, grey steel cupboard under the window with nothing on top, filing cabinet and CRT on the right wall, slept-on sofa beyond it. The Japanese exchange, the clip set on the desk and her exit through the frosted glass all play from here. The door lettering read only "JAC" in the first study; the retake spells JACK. Exactly one telephone is on the desk.
 
 167. INSERT — 50mm, static, high angle — face up.
 On the desk under the lamp: the family photograph out of its frame, face up, with snapshots of Mara in an envelope and the red bird clip beside them. Jack's hand comes into frame.
@@ -31,7 +31,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-167
 IMAGE: 165-face-up.jpg
-NOTE: Held to scene 4's photograph. The hand in frame is Jack's (dark sleeve, wristwatch).
+NOTE: Held to scene 4's photograph. The hand in frame is Jack's (dark sleeve, wristwatch). Retaken 1 October 2026 onto the locked desktop: worn dark walnut with the ring marks and the pale scuff field, the near edge running straight across the frame, two shallow drawers at the right end — the same table seen from above, not the small honey table this insert used to show.
 
 168. MEDIUM CLOSE-UP — 85mm, static, eye level — by its edges.
 Jack holds the photograph by its edges with both hands and looks at it a moment too long. Behind him, on the muted TV, a sword is drawn.

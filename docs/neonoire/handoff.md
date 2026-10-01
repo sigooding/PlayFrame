@@ -1,5 +1,29 @@
 # NEONOIRE — keyframe handoff
 
+## Current — 1 October 2026: Jack's office desk lock, and the card out of the puddle
+
+Director's note: scene 6's card sat **in the tea puddle**, scene 11's Jack **pulled a box off nothing**, and the
+office desk **kept changing size**. All three were the same fault one layer down: Jack's office was generated as a
+chain of frames each copying the frame before it, so the desk shrank (1.6 m → 1.2 m → 0.9 m), the wood re-coloured
+five times, and `s77/85` mirrored the room. **Ten generations** (the session budget) rebuilt seven frames in place at
+their stable paths — 6/62, 11/245, 11/251, 10/166, 10/167, 18/191, 77/87 — and one action line in scene 11 moved by
+the director's choice, so the box comes **out of the grey steel cupboard** under the window (scene 14 already says it
+lives there). No dialogue, no scene number, no asset path changed; 299 frames / 102 scenes stand.
+
+The durable part is the lock, not the pictures: `scripts/neonoire/office-layout-look.mjs` states the room once — free-standing
+**1.60 m × 0.75 m worn dark walnut desk**, banker's lamp at its **left** end, **exactly one** rotary phone at its right
+back corner, steel cupboard under the window with nothing on top, filing cabinet + CRT and the sofa on the right wall,
+door lettered the whole word **JACK**, never mirrored, never a second table — and every one of the 17 office frames in
+scenes 10, 11, 18, 21 and 77 now carries it in its notes and prompts. `s10/164-depends-whos-calling.jpg` is the only
+room master; `s77/85` agrees with it and no longer leads. `npm run verify:neonoire` fails if any of that drifts,
+including the interview brief letting the card back into the puddle.
+
+**Next session, if the office is touched again:** the six QUEUED frames are 11/252, 77/88, 77/89, 18/283 and scene
+21's 196 and 271 (the last two retake once, together with their existing `RETAKE PENDING` rewrite fix). Draw them on
+the lock and the master, never on the neighbour. [Ledger, before/after table and caveats](office-desk-lock-2026-10-01.md);
+[review sheet](../../public/images/neonoire/reviews/office-desk-lock-2026-10-01.jpg).
+
+
 ## Current — 1 October 2026: accidental-cut restoration
 
 **299 active frames / 299 installed images, 102 scenes.** The old demolition cards **158/159** now open **99A**, followed by a **Dissolve** to **305/306/307**. Original paths/IDs/numbers preserved; no new image generation. The previous main-shot approvals stand. [Full audit and decisions](passes/revision-restoration-2026-10-01.md).
