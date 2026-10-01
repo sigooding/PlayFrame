@@ -456,11 +456,11 @@
     },
     {
       "id": "s1-oldman-twenty-years",
-      "frameId": "neonoire-shot-09",
+      "frameId": "neonoire-shot-10",
       "character": "OLD MAN",
       "text": "Twenty years.",
       "file": "/audio/neonoire/s1/09-oldman-twenty-years.mp3",
-      "offset": 3,
+      "offset": 0.6,
       "duration": 1.57,
       "voice": "y7NkiaxPRjIzeTdRhHDC",
       "model": "eleven_v4",
@@ -486,23 +486,6 @@
         "flow": "3PHvMwiCPgs8R7eUX4pm",
         "session": "MaBVyaaAxfDK7we594Q5",
         "id": "h2bhyYHAGMH5Fyy6SY1M"
-      },
-      "status": "take"
-    },
-    {
-      "id": "s1-maskedman-shitsurei-shimasu",
-      "frameId": "neonoire-shot-10",
-      "character": "MASKED MAN",
-      "text": "Shitsurei shimasu.",
-      "file": "/audio/neonoire/s1/10-maskedman-shitsurei-shimasu.mp3",
-      "offset": 1,
-      "duration": 1.07,
-      "voice": "IUNPSr7i3o1XsExH6IGv",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "3PHvMwiCPgs8R7eUX4pm",
-        "session": "AjtYR5XTmvCclaizlfkS",
-        "id": "asWjWd14MboN67Cmpnx7"
       },
       "status": "take"
     },

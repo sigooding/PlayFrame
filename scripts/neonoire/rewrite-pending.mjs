@@ -29,5 +29,8 @@ export const rewritePending = new Set([
   "neonoire-shot-113", "neonoire-shot-131", "neonoire-shot-132", "neonoire-shot-141",
   "neonoire-shot-142", "neonoire-shot-143", "neonoire-shot-160", "neonoire-shot-186",
   "neonoire-shot-228",
+  // 2 October 2026: the director restored the cold open's walk and the lane (the scrap, the scooter and crates, the
+  // flat cap, the sedan blocking the mouth with its high beams); these five still show the retired shape of it.
+  "neonoire-shot-03", "neonoire-shot-06", "neonoire-shot-07", "neonoire-shot-09", "neonoire-shot-10",
 ]);
 export const rewritePendingNote = "RETAKE PENDING — the script rewrote this scene on 30 September 2026; the image on file shows a beat that no longer exists.";

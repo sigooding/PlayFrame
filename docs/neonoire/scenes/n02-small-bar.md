@@ -55,7 +55,7 @@ NOTE: His decision not to help is the last decision he makes. No emphasis, no ir
 
 23. FULL — 35mm, static, low angle — Mara hides behind the counter.
 She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.
-SCRIPT: "The same words. Mara is behind the counter before she knows she's moved."
+SCRIPT: "Mara is behind the counter before she knows she's moved."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 12

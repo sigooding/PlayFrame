@@ -114,7 +114,7 @@ assert.deepEqual(reorderFrameInScene(fixture, "not-a-frame", "later-low-number")
 assert.equal(sceneNumber(scenes[1], 1), "25A");
 assert.equal(shotNumber({ shotNumber: 310 }, 0), 310);
 assert.equal(shotNumber({}, 3), 4);
-assert.equal(nextShotNumber(project.frames), 328);
+assert.equal(nextShotNumber(project.frames), 334);
 assert.equal(nextShotNumber([{ id: "unnumbered" }]), undefined);
 pass("scene order is stable, unassigned shots go last, manual within-scene ordering and drag boundaries work");
 
@@ -149,7 +149,7 @@ const changed = bundledFrameUpdates(edited, project);
 assert.equal(changed, null, "A deliberate blank and manually edited order are never reset");
 const shorter = { ...edited, frames: edited.frames.filter(frame => frame.shotNumber !== 3) };
 assert.equal(bundledFrameUpdates(shorter, project), null, "Deleted frames are never reinstated");
-const extra = { ...edited, frames: [...edited.frames, make("custom-shot", edited.scenes[0].id, 328)] };
+const extra = { ...edited, frames: [...edited.frames, make("custom-shot", edited.scenes[0].id, 334)] };
 const extraPatch = bundledFrameUpdates(extra, project);
 assert.equal(extraPatch.frames.length, extra.frames.length);
 assert(extraPatch.frames.some(frame => frame.id === "custom-shot"));

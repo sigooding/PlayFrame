@@ -39,9 +39,9 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     || digest(existing.script) === directorSync.scriptHash;
   // 2 October 2026: the interview scene (6) was rewritten. A workspace still on the default text before it, or already on
   // the new text, gets the new shot text, recorded dialogue and the seven new placeholder slots; edited fields stay.
-  const scene6Current = digest(existing.script) === scene6Sync.priorScriptHash || existing.script === bundle.script;
+  const scene6Current = scene6Sync.priorScriptHashes.includes(digest(existing.script)) || existing.script === bundle.script;
   const scene6Frames = scene6Sync.frames as Record<string, Record<string, string>>;
-  const restoreDefaults = knownRestorationScript || existing.script === bundle.script || digest(existing.script) === scene6Sync.priorScriptHash;
+  const restoreDefaults = knownRestorationScript || existing.script === bundle.script || scene6Sync.priorScriptHashes.includes(digest(existing.script));
   const restoredFrames = restorationSync.frames as Record<string, Record<string, string>>;
   const restoredScenes = restorationSync.scenes as Record<string, Record<string, string>>;
   const fieldDigest = (value: unknown) => digest(JSON.stringify(value ?? null));
@@ -125,7 +125,7 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     return next;
   });
   const patch: ProjectPatch = {};
-  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash || digest(existing.script) === scene6Sync.priorScriptHash)) patch.script = bundle.script;
+  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash || scene6Sync.priorScriptHashes.includes(digest(existing.script)))) patch.script = bundle.script;
   if (frames.length !== existing.frames.length || frames.some((frame, index) => frame !== existing.frames[index])) patch.frames = frames;
   if (scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
   return Object.keys(patch).length ? patch : null;

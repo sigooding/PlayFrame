@@ -25,7 +25,7 @@ MASKED MAN
 (in Japanese; quietly; subtitled: "Excuse me.")
 Shitsurei shimasu.
 
-The same words. Mara is behind the counter before she knows she's moved.
+Mara is behind the counter before she knows she's moved.
 
 JOURNALIST
 (in Japanese)
