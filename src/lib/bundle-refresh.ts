@@ -39,7 +39,23 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     || digest(existing.script) === directorSync.scriptHash;
   // 2 October 2026: the interview scene (6) was rewritten. A workspace still on the default text before it, or already on
   // the new text, gets the new shot text, recorded dialogue and the seven new placeholder slots; edited fields stay.
-  const scene6Current = scene6Sync.priorScriptHashes.includes(digest(existing.script)) || existing.script === bundle.script;
+  const onPriorDefault = scene6Sync.priorScriptHashes.includes(digest(existing.script));
+  const scene6Current = onPriorDefault || existing.script === bundle.script;
+  // 2 October 2026: a scene added to the screenplay (14A) reaches a saved workspace on a default text whole, once and
+  // together with its slots: the scene goes right after the nearest earlier bundle scene the workspace already has.
+  // A workspace already on the new text that lacks the scene deleted it, and keeps it deleted.
+  const newSceneIds = new Set<string>(scene6Sync.newSceneIds);
+  let scenesNow = existing.scenes;
+  if (onPriorDefault) {
+    for (const id of scene6Sync.newSceneIds) {
+      const index = bundle.scenes.findIndex(scene => scene.id === id);
+      if (index < 0 || scenesNow.some(scene => scene.id === id)) continue;
+      let at = -1;
+      for (let i = index - 1; i >= 0 && at < 0; i--) at = scenesNow.findIndex(scene => scene.id === bundle.scenes[i].id);
+      const neighbour = scenesNow[at < 0 ? 0 : at];
+      scenesNow = [...scenesNow.slice(0, at + 1), { ...bundle.scenes[index], actId: neighbour?.actId ?? bundle.scenes[index].actId }, ...scenesNow.slice(at + 1)];
+    }
+  }
   const scene6Frames = scene6Sync.frames as Record<string, Record<string, string>>;
   const restoreDefaults = knownRestorationScript || existing.script === bundle.script || scene6Sync.priorScriptHashes.includes(digest(existing.script));
   const restoredFrames = restorationSync.frames as Record<string, Record<string, string>>;
@@ -92,6 +108,9 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     for (const id of scene6Sync.newFrameIds.filter(id => !have.has(id))) {
       const arrival = bundled.get(id);
       if (!arrival) continue;
+      // A new scene's slots arrive with the scene, once, and never into a scene the workspace does not have.
+      if (newSceneIds.has(arrival.sceneId) && !onPriorDefault) continue;
+      if (!scenesNow.some(scene => scene.id === arrival.sceneId)) continue;
       let at = -1;
       for (let i = order.indexOf(id) - 1; i >= 0 && at < 0; i--) at = frames.findIndex(frame => frame.id === order[i]);
       if (at < 0) at = frames.map(frame => frame.sceneId).lastIndexOf(arrival.sceneId);
@@ -105,16 +124,16 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   }
   const existingIds = new Set(existing.frames.map(frame => frame.id));
   if (restoreDefaults && restorationSync.priorFrameIds.every(id => existingIds.has(id))
-    && bundle.scenes.every(scene => existing.scenes.some(old => old.id === scene.id))) {
+    && bundle.scenes.every(scene => newSceneIds.has(scene.id) || scenesNow.some(old => old.id === scene.id))) {
     const arrivals = restorationSync.restoredFrameIds.filter(id => !existingIds.has(id)).map(id => bundled.get(id)).filter((frame): frame is FilmProject["frames"][number] => !!frame);
     if (arrivals.length) {
       const at = frames.findIndex(frame => frame.sceneId === "neonoire-s99a");
       frames.splice(at < 0 ? frames.length : at, 0, ...arrivals);
     }
   }
-  frames = framesInSceneOrder(frames, existing.scenes);
+  frames = framesInSceneOrder(frames, scenesNow);
   const scenesById = new Map(bundle.scenes.map(scene => [scene.id, scene]));
-  const scenes = existing.scenes.map(scene => {
+  const scenes = scenesNow.map(scene => {
     const arrived = scenesById.get(scene.id);
     let next = scene.number === undefined && arrived?.number ? { ...scene, number: arrived.number } : scene;
     if (arrived && digest(scene.description) === sceneDefaults[scene.id] && arrived.description !== scene.description) next = { ...next, description: arrived.description };
@@ -127,6 +146,6 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   const patch: ProjectPatch = {};
   if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash || scene6Sync.priorScriptHashes.includes(digest(existing.script)))) patch.script = bundle.script;
   if (frames.length !== existing.frames.length || frames.some((frame, index) => frame !== existing.frames[index])) patch.frames = frames;
-  if (scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
+  if (scenes.length !== existing.scenes.length || scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
   return Object.keys(patch).length ? patch : null;
 }

@@ -3,9 +3,9 @@
 // The draft itself lives at the repository root (Neonoire (3).fountain) and is never edited
 // here. This module knows only three things: who is in the film, how the draft is split into the
 // Screenplay tab's pages — one per numbered scene — and how a numbered shot board in
-// docs/neonoire/scenes/ is read. The revised final screenplay carries 102 scenes — 96 numbered (13, 24, 97 and 99 were
-// cut on 30 September 2026 and their numbers stay retired; scene numbers never move) and six
-// inserted — and demolition boards 158/159 were restored inside 99A on 1 October 2026; every scene arrives in the workspace verbatim, whether or not a board has
+// docs/neonoire/scenes/ is read. The revised final screenplay carries 103 scenes — 96 numbered (13, 24, 97 and 99 were
+// cut on 30 September 2026 and their numbers stay retired; scene numbers never move) and seven
+// inserted (14A was added on 2 October 2026) — and demolition boards 158/159 were restored inside 99A on 1 October 2026; every scene arrives in the workspace verbatim, whether or not a board has
 // reached it. Dialogue and action are always quoted from the fountain, never retyped.
 //
 //   npm run build:neonoire     rebuild public/projects/neonoire-opening.json
@@ -575,6 +575,16 @@ export const SCENES = [
     grammar: "35mm for the room, 50mm on the sketchbook.",
     description: "A tiny studio of sketches and clothes, a packed suitcase, a flight booked for next month. The last things Vera said. A sketchbook full of the same noodle counter, every stroke of the kanji correct. Vera sets the red bird clip on top of the sketchbook — Take this too. It's mine. She stole it. — and Jack takes both. BOARDED — 2 shots (184–185).",
     lightingNotes: "Grey daylight through one window.",
+  },
+  {
+    key: "s14a", id: "neonoire-s14a", n: 14, partId: "neonoire-part-feature",
+    title: "Forty metres", location: "INT./EXT. JACK'S CAR, KANDA", time: "NIGHT",
+    kind: "Standard", lighting: "Practical night", slugline: "INT./EXT. JACK'S CAR, KANDA - NIGHT #14A#",
+    page: "n14a-ext-jack-s-car-kanda-night.md", board: "n14a-the-stakeout.md",
+    cast: ["Vera Voss", "Jack"],
+    grammar: "Through the windscreen and the mirror: two people in a car in the rain, looking at the same lane.",
+    description: "Added 2 October 2026 at the director's request, to plant Vera and Jack before the film makes them close. Headlights have followed his car for twenty minutes, and it is Vera, in a rented hatchback; the only thing in his pocket is the lighter. They sit out the night at the mouth of the lane with two rice balls, one of which she does not eat. Runners don't pack — Whatever happened to her, she wasn't running from you. A man under a black umbrella tries the bar's door; Jack's arm goes out across her before he thinks. He writes the plate number on the paper bag, tells her to call him when she goes somewhere (That's a lie. Yes.) and follows her home, forty metres back. BOARDED — 10 placeholder shots (334–343), no images generated yet.",
+    lightingNotes: "Rain-streaked glass; the amber bar sign at the far end of the lane, the vending machine's cold white at the corner, and nothing else.",
   },
   {
     key: "s15", id: "neonoire-s15", n: 15, partId: "neonoire-part-feature",
@@ -1225,7 +1235,7 @@ export const sceneById = key => SCENES.find(scene => scene.key === key || scene.
 export const ACT = {
   id: actId,
   title: "The screenplay — Kanda to the new counter",
-  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. 307 numbered shots cover every scene — 100 numbered plus the six inserted scenes (25A, 27A, 53A, 63A, 82A, 99A); nothing is left written, not boarded.",
+  description: "The final feature draft, scene by scene: the opening in Kanda and the police station, then the film proper. every scene is boarded — 100 numbered plus the seven inserted scenes (14A, 25A, 27A, 53A, 63A, 82A, 99A); nothing is left written, not boarded.",
   parts: [
     { id: "neonoire-part-1", title: "Kanda, night", description: "The cold open and the bar: the killing, the key, and the notebook that leaves with them." },
     { id: "neonoire-part-2", title: "Three days later", description: "Vera's apartment: two cups, one photograph, an answerphone message, and a blue umbrella that is still bone dry." },

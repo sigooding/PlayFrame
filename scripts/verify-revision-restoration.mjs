@@ -16,7 +16,7 @@ const shipped = read("docs/neonoire/baseline/Neonoire_PreRestoration_2026-10-01.
 const project = JSON.parse(read("public/projects/neonoire-opening.json"));
 const pass = message => console.log(`  PASS  ${message}`);
 
-assert.equal(Object.keys(current).length, 102);
+assert.equal(Object.keys(current).length, 103);
 for (const cut of ["13", "24", "97", "99"]) assert.equal(current[cut], undefined);
 for (const phrase of ["Weeks later.", "The Hive is coming down.", "Rooms stand exposed to the sky", "Its six old stools in a row.", "DISSOLVE TO:", "Months later.", "Nothing marks where anything was."]) assert(current["99A"].includes(phrase), phrase);
 assert(current["99A"].indexOf("The Hive is coming down") < current["99A"].indexOf("DISSOLVE TO:"));
@@ -61,7 +61,7 @@ old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 312);
+assert.equal(patch.frames.length, 322);
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);
@@ -98,6 +98,32 @@ const custom6 = structuredClone(before6); custom6.script += "\nWriter's extra sc
 assert.equal(bundledFrameUpdates(custom6, project)?.script, undefined, "an edited script is never replaced");
 assert(!bundledFrameUpdates(custom6, project)?.frames?.some(frame => frame.shotNumber === 321 || frame.shotNumber === 328), "and gets no new slots");
 pass("a saved workspace on the pre-rewrite default receives the 2 October rewrites (script, shot text, dialogue, slots 321–333); edits and edited scripts are protected");
+
+// 2 October 2026: scene 14A is inserted after scene 14. A saved workspace on the default text before it (the cold-open version
+// that main shipped) receives the scene and its ten slots in place; an edited script gets nothing, and a workspace that
+// already has the new text but lacks the scene deleted it on purpose and keeps it deleted.
+const preScene14A = read("docs/neonoire/baseline/Neonoire_PreScene14A_2026-10-02.fountain").replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
+const s14aIds = project.frames.filter(frame => frame.sceneId === "neonoire-s14a").map(frame => frame.id);
+assert.deepEqual(s14aIds, Array.from({ length: 10 }, (_, i) => `neonoire-shot-${334 + i}`), "scene 14A's ten slots are 334–343");
+assert.equal(project.scenes.findIndex(scene => scene.id === "neonoire-s14a"), project.scenes.findIndex(scene => scene.id === "neonoire-s14") + 1, "14A follows 14");
+const before14a = structuredClone(project);
+before14a.script = preScene14A;
+before14a.scenes = project.scenes.filter(scene => scene.id !== "neonoire-s14a");
+before14a.frames = project.frames.filter(frame => frame.sceneId !== "neonoire-s14a");
+const patch14a = bundledFrameUpdates(before14a, project);
+assert.equal(patch14a.script, project.script, "the saved default script takes scene 14A");
+assert.deepEqual(patch14a.scenes, project.scenes, "14A is in the scene list right after scene 14, as the bundle has it");
+assert.deepEqual(patch14a.frames.map(frame => frame.id), project.frames.map(frame => frame.id), "its ten slots arrive in bundle order: after scene 14's shots, before scene 15's");
+const edited14a = structuredClone(before14a); edited14a.script += "\nWriter's extra scene.\n";
+const editedPatch14a = bundledFrameUpdates(edited14a, project);
+assert.equal(editedPatch14a?.script, undefined, "an edited script is never replaced");
+assert(!editedPatch14a?.scenes?.some(scene => scene.id === "neonoire-s14a") && !editedPatch14a?.frames?.some(frame => s14aIds.includes(frame.id)), "and gets neither the scene nor its slots");
+const deleted14a = structuredClone(project);
+deleted14a.scenes = project.scenes.filter(scene => scene.id !== "neonoire-s14a");
+deleted14a.frames = project.frames.filter(frame => frame.sceneId !== "neonoire-s14a");
+const deletedPatch14a = bundledFrameUpdates(deleted14a, project);
+assert(!deletedPatch14a?.scenes?.some(scene => scene.id === "neonoire-s14a") && !deletedPatch14a?.frames?.some(frame => s14aIds.includes(frame.id)), "a workspace on the new text without 14A deleted it, and stays without it");
+pass("a saved workspace on the cold-open default receives scene 14A and its slots 334–343 in place; edited scripts and a deliberate deletion are protected");
 
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));
 for (const id of ["s13-kaneko-gruffly-eat", "s13-mara-hesitantly-thank-you-has-anyone-come", "s13-kaneko-flatly-nobody-comes-here-who-isn"]) assert.equal(voice.lines.find(line => line.id === id)?.frameId, "neonoire-shot-202");

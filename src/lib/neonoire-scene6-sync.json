@@ -2,7 +2,11 @@
   "note": "Rewrites of 2 October 2026 (scene 6 the interview room, scene 1 the cold open, scene 2's echoed line). priorScriptHashes and the per-field digests are of the default text before it; bundle-refresh replaces a field only when the saved value still matches.",
   "priorScriptHashes": [
     "96bffed2d66d8220a64bd01360b482c465d858489fbd90583aaeb68dcaed6bfc",
-    "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4"
+    "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4",
+    "7e80c7c0f86e92f2f01f48760c98d06fcaffdcb6b891ab93f8601ba5412d3347"
+  ],
+  "newSceneIds": [
+    "neonoire-s14a"
   ],
   "newFrameIds": [
     "neonoire-shot-328",
@@ -17,7 +21,17 @@
     "neonoire-shot-324",
     "neonoire-shot-325",
     "neonoire-shot-326",
-    "neonoire-shot-327"
+    "neonoire-shot-327",
+    "neonoire-shot-334",
+    "neonoire-shot-335",
+    "neonoire-shot-336",
+    "neonoire-shot-337",
+    "neonoire-shot-338",
+    "neonoire-shot-339",
+    "neonoire-shot-340",
+    "neonoire-shot-341",
+    "neonoire-shot-342",
+    "neonoire-shot-343"
   ],
   "frames": {
     "neonoire-shot-01": {

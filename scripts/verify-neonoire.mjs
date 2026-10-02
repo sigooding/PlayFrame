@@ -73,17 +73,17 @@ const {
 // ---------------------------------------------------------------- schema and ceilings
 validatePatch(project);
 assert.equal(project.acts.length, 1);
-assert.equal(project.scenes.length, 102, "The revised screenplay's 96 numbered scenes and 6 inserted scenes (25A, 27A, 53A, 63A, 82A, 99A) all belong to the workspace; 13, 24, 97 and 99 are retired");
+assert.equal(project.scenes.length, 103, "The revised screenplay's 96 numbered scenes and 7 inserted scenes (14A, 25A, 27A, 53A, 63A, 82A, 99A) all belong to the workspace; 13, 24, 97 and 99 are retired");
 const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
-assert.equal(boardedIds.size, 102, "Every scene of the revised screenplay and the six inserted scenes are boarded; no board survives for a retired scene");
+assert.equal(boardedIds.size, 103, "Every scene of the revised screenplay and the seven inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 312;
+const EXPECTED_SHOTS = 322;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 // 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
 // earlier generation blocks; the audits below read those blocks' pre-revision runs.
 const revisionBoards = f => shotNo(f) >= 308;
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 312 numbered shots (299 before the 2 October rewrites of scenes 6 and 1, plus their placeholder slots 321–327 and 328–333)");
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 322 numbered shots (299 before the 2 October rewrites of scenes 6 and 1, plus their placeholder slots 321–327 and 328–333, plus scene 14A's placeholder slots 334–343)");
 assert.equal(project.characters.length, 19, "Nineteen cast cards after the revision added Vera's mother");
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -115,7 +115,7 @@ for (const scene of project.scenes) {
 const clean = fountain.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 assert.equal(project.script.replace(/\s+$/, ""), clean.replace(/\s+$/, ""), "The screenplay should be the draft, minus its scene-number markers");
 for (const scene of project.scenes) assert(project.script.includes(`${scene.location} - ${scene.time}`), `${scene.title}'s slugline must survive in the script`);
-pass(`the screenplay carries all 102 scenes (96 numbered, 6 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
+pass(`the screenplay carries all 103 scenes (96 numbered, 7 inserted), in order, each selecting its own slugline (${project.script.split(/\s+/).length} words)`);
 assert(fountain.includes("The number on the worn tag, still legible: 114."), "Scene 25 must reveal 114 on the tag");
 assert(fountain.includes("Its worn tag reads 114."), "Scene 60 must repeat the tag number");
 assert(!fountain.includes("The plastic tag is so old the printing has worn away."), "The old metal-stamp/blank-tag explanation is superseded");
@@ -583,8 +583,8 @@ assert.deepEqual(coverage.map(f => shotNo(f)),
   [241, 242, 243, 244, 245, 246, 247, 248, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260,
    261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 273, 275, 276, 277, 278, 279, 283, 284,
    285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303,
-   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333],
-  "Coverage runs 241–333 (321–333 are the placeholder slots from the 2 October rewrites of scenes 6 and 1) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
+   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343],
+  "Coverage runs 241–343 (321–333 are the placeholder slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
 for (const frame of coverage) if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(coverage.find(f => f.id === "neonoire-shot-241").notes.includes("small reflection in the upper corner"), "Shot 241's retake shrinks the face");
 assert(!coverage.find(f => f.id === "neonoire-shot-241").notes.includes("larger than a glancing reflection"), "Shot 241 no longer carries the large-reflection caveat");
@@ -702,8 +702,8 @@ assert.deepEqual(placeholders.filter(f => shotNo(f) <= 307).map(f => shotNo(f)).
   [298, 299, 300, 302, 306, 307].filter(n => !remainingBoardsCompleted.includes(n)),
   "The story-pass-2 placeholders hold exactly the ungenerated slots (303 delivered, 304 retired with scene 97)");
 assert.deepEqual(placeholders.filter(f => shotNo(f) >= 308).map(f => shotNo(f)).sort((a, b) => a - b),
-  Array.from({ length: 26 }, (_, i) => 308 + i).filter(n => !remainingBoardsCompleted.includes(n)),
-  "Every revision board still to generate holds an honest placeholder (308–320, plus 321–333 for the 2 October rewrites of scenes 6 and 1)");
+  Array.from({ length: 36 }, (_, i) => 308 + i).filter(n => !remainingBoardsCompleted.includes(n)),
+  "Every revision board still to generate holds an honest placeholder (308–320, plus 321–333 for the 2 October rewrites of scenes 6 and 1, plus 334–343 for the inserted scene 14A)");
 const deliveredRemaining = project.frames.filter(f => remainingBoardsCompleted.includes(shotNo(f)));
 assert.equal(deliveredRemaining.length, remainingBoardsCompleted.length, "Every number the ledger calls delivered is on the board");
 for (const frame of deliveredRemaining) {
@@ -897,6 +897,20 @@ for (const id of ["neonoire-shot-29", "neonoire-shot-30"]) {
 pass("scene 3 fully rebuilt 16:9 — shots 29 and 30 retaken as Vera's ordinary old four-storey apartment building beside the elevated railway, not the Hive");
 pass("all ten apartment JPEGs and their key are 1920×1080; pendant removal and prop/cast continuity are recorded");
 
+// ---------------------------------------------------------------- scene 14A, added 2 October 2026
+// Vera and Jack planted before the film makes them close. These pin the facts the scene must not break.
+const s14aAt = fountain.indexOf(" #14A#");
+assert(fountain.indexOf(" #14#") < s14aAt && s14aAt < fountain.indexOf(" #15#"), "Scene 14A sits after 14 and before 15");
+const s14aText = fountain.slice(fountain.lastIndexOf("\n", s14aAt) + 1, fountain.indexOf("EXT. THE HIVE - DAY #15#"));
+assert(!/Sakai|Ishida/i.test(s14aText), "14A never names Sakai or Ishida: Vera does not learn that the letter-writer is dead, or whom Jack knows, until much later (scene 22 depends on it)");
+assert(!/flame|\bgrey\b|\bgray\b|\bgun\b/i.test(s14aText), "14A never lights the lighter (scene 89 puts it back unlit), never draws a gun and never uses grey (the film's grey car is Ishida's driver's)");
+assert(/one headlight dimmer/.test(readFileSync(join(root, "docs/neonoire/scenes/n14a-the-stakeout.md"), "utf8")), "14A's board holds Jack's car to the dim headlight of scenes 30-31");
+const s14aFrames = project.frames.filter(frame => frame.sceneId === "neonoire-s14a");
+assert.deepEqual(s14aFrames.map(frame => shotNo(frame)), Array.from({ length: 10 }, (_, i) => 334 + i), "14A plays its ten shots 334-343, in the order their quoted beats occur");
+assert(s14aFrames.every(frame => !frame.image && frame.status === "Needs review" && frame.notes.includes("KEYFRAME MISSING")), "14A's ten shots are honest placeholders until they are generated");
+assert.equal(project.scenes.findIndex(scene => scene.id === "neonoire-s14a"), project.scenes.findIndex(scene => scene.id === "neonoire-s14") + 1, "14A follows scene 14 in the scene list");
+pass("scene 14A boarded as ten placeholder slots (334-343) after scene 14: no Sakai or Ishida named, the lighter never lit, no grey car, Jack's dim headlight held");
+
 const interviewAll = generationFrames.filter(frame => frame.sceneId === "neonoire-s6");
 const interview = interviewAll.filter(frame => shotNo(frame) <= 62);
 assert.equal(interview.length, 12);
@@ -1008,7 +1022,7 @@ pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, seale
 const labels = project.frames.map(frame => Number((frame.notes.match(/Stable Shot (\d+);/) || [])[1]));
 for (const [i, frame] of project.frames.entries()) {
   assert.equal(frame.shotNumber, labels[i], `${frame.id}: metadata and production note agree`);
-  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 333, `${frame.id} should retain its stable production number`);
+  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 343, `${frame.id} should retain its stable production number`);
   assert(frame.notes.includes(`Pass ${Math.ceil(labels[i] / 10)} of ${Math.ceil(Math.max(...labels) / 10)}`), `${frame.id} should name its pass`);
 }
 assert.deepEqual(new Set(labels), new Set(project.frames.map(shotNo)), "Every production label maps to exactly one card, and every card to one label");
@@ -1080,7 +1094,7 @@ for (const frame of project.frames) {
 assert(csv.includes('"EXT. BACKSTREET, KANDA"') && csv.includes('"INT. POLICE STATION, DETECTIVES\' ROOM"'), "Both ends of the running order should be in the shot list");
 const imported = sanitizeImport(project);
 assert.equal(imported.frames.length, EXPECTED_SHOTS);
-assert.equal(imported.scenes.length, 102, "A re-import carries the whole revised screenplay");
+assert.equal(imported.scenes.length, 103, "A re-import carries the whole revised screenplay");
 pass(`prompts for ${models.length} models, the shot list CSV and a project re-import all handle the workspace`);
 
 // ---------------------------------------------------------------- persistence
@@ -1101,7 +1115,7 @@ try {
       assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
       const opened = await api.openNeonoireProject();
       assert.equal(opened.frames.length, ${EXPECTED_SHOTS});
-      assert.equal(opened.scenes.length, 102);
+      assert.equal(opened.scenes.length, 103);
       const studied = opened.frames.filter(f => f.image).length;
       assert(studied > 0, 'The bundled keyframes arrive with the workspace');
 
@@ -1179,7 +1193,7 @@ if (awaiting.length) {
 // ---------------------------------------------------------------- final missing-image pass, 1 October 2026
 // The nine final missing studies are delivered; the only honest placeholders left are scene 6's seven slots (321–327)
 // opened by the 2 October 2026 rewrite of the interview, each waiting for its own picture, never a borrowed one.
-assert.deepEqual(placeholders.map(f => shotNo(f)).sort((a, b) => a - b), [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333], "Only the 2 October rewrite slots (scene 6's 321–327, scene 1's 328–333) are placeholders; none is a borrowed-image placeholder");
+assert.deepEqual(placeholders.map(f => shotNo(f)).sort((a, b) => a - b), [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343], "Only the 2 October slots (scene 6's 321–327, scene 1's 328–333, the inserted scene 14A's 334–343) are placeholders; none is a borrowed-image placeholder");
 assert.equal(remainingBoardsFinalShots.length, 9);
 for (const study of remainingBoardsFinalShots) {
   const frame = project.frames.find(f => f.shotNumber === study.n);
