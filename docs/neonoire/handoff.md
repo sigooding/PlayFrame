@@ -1,6 +1,168 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 2 October 2026 (night): scene 14A added — Vera and Jack in the car
+## Current — 3 October 2026 (night): the rewrite slots, pass four — the film's last frame, and the board is complete
+
+**One generation, one frame installed, one study thrown away: 343 *Forty metres back* — and with it
+322 of 322 keyframes on disk and zero placeholder cards anywhere in the film.** The pass exists because the
+director's standing instruction — *"if the shot description doesn't make complete visual sense go by the scene's
+logic and leave note in handoff"* — refused to fudge the film's final frame in pass three; the geometry was written
+down, and the corrected study landed here. Ledger: [rewrite-slots-4-2026-10-03](passes/rewrite-slots-4-2026-10-03.md);
+sheet: `reviews/rewrite-slots-4-2026-10-03.jpg` (the rejected nose-on study beside the installed frame — the whole
+rule in one picture). **Merged to `main` in this session**, no history rewritten, no force-push.
+
+**Installed:** `s14a/343-forty-metres-back.jpg` — the camera behind both cars: the old silver-grey sedan in the near
+right foreground seen from its **rear**, tail lights lit, its dipped glow thrown forward up the wet asphalt; the small
+boxy maroon hatchback far up the road as two red points; the centre line, sodium lamps, shuttered low buildings either
+side; nobody else on the road.
+
+### The decision this pass made (permanent unless the director overrides)
+
+**343's follower stays behind.** The shot's content is *following at forty metres*, so the pursuer is seen from behind
+with its lamps lighting the road **ahead** of it, never nose-on. The pass-three study that faced the sedan at the
+camera while the followed car showed tail lights was thrown away rather than softened; the board now carries the
+geometry as a rule and `verify:neonoire` asserts it (a follower cannot face the camera).
+
+**Caveats carried (in the board note):** 343's gap reads longer than exactly forty metres · both cars' number plates
+show as small blanks and should be suppressed before print · the dim nearside-headlight lock cannot be judged from
+behind, which is 335's caveat too.
+
+### Mechanics — the complete board
+
+`rewrite-slots.mjs` reads **delivered = 321–343, queued = []**; `build:neonoire` writes **322/322 keyframes on disk,
+0 placeholder cards**; `plan.mjs` reads 14A as all ten on disk; `verify:neonoire` reads **owed = [], queued = [],
+delivered = 23** and asserts `placeholders.length === 0`. `npm run passes:neonoire` now regenerates only the index —
+[passes/README.md](passes/README.md) reads **322 of 322** and lists this pass's ledger; `pass-35.md` stands, like the
+older pass files, as a historical brief, not a request to regenerate 343. The last placeholder-note digest (343) joined
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts` — 23 digests, 321–343 — so a workspace on the 2 October default
+receives the final picture, title, status and note on its untouched card. `sync-scene6.mjs` was **not** re-run (the
+current bundle already contains scene 14A and must never be shipped as an intermediate). `build:neonoire`,
+`verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `check:assets` (929 references), `typecheck` and
+the production build all pass.
+
+## Previous — 3 October 2026 (evening): the rewrite slots, pass three — decided by the scene's logic, one frame left
+
+The director's instruction for this pass: **"if the shot description doesn't make complete visual sense go by the
+scene's logic and leave note in handoff."** Ten generations, **eight frames installed, two studies thrown away and one
+slot deliberately left open.** **321/322 keyframes on disk — the only placeholder left in the whole film is 343.**
+
+**Delivered:** 331 (retaken again: single figure, sharp, mid-turn from the doorway), 336 (retaken: the light is at the
+window of the boxy **maroon hatchback** the script gives her), 338 (retaken: the wrapper peeled back, rice bare, no
+bite), 339 (retaken: **Vera turns to Jack**), and the new **340** the watcher's hand on the shuttered handle, **341**
+the arm across her with the umbrella turned toward the car, **342** the pencil digits **56-19** on the flattened paper
+bag. Ledger: [rewrite-slots-3-2026-10-03](passes/rewrite-slots-3-2026-10-03.md); sheet:
+`reviews/rewrite-slots-3-2026-10-03.jpg`.
+
+### The scene-logic decisions this pass made (permanent unless the director overrides)
+
+1. **Vera's car is the small boxy maroon hatchback** — 336's first landscape study drew an SUV; the car is how Jack
+   identifies her, so the study went back.
+2. **339 must show Vera turning to look at Jack.** The page's beat — *"She looks at him for the first time since she
+   sat down. He is looking at the lane. He doesn't look back."* — is the whole scene; the pass-2 study left her on the
+   lane and was replaced.
+3. **331 is a single figure.** The lane is a three-hander (Mara hidden, the old man, the killers): the pass-2 study's
+   **second elderly man** was a cast error, and the retake that came back with the subject's face smeared by motion
+   blur was thrown away too. The installed third study is one man, sharp.
+4. **338 is genuinely unwrapped** — "unwrapped, uneaten" is the prop beat that pays off at 25A breakfast.
+5. **337 keeps the clip and the lane has no lanterns — ever.** Its retake strung red paper lanterns down a lane whose
+   canon has none and hung a red BAR sign; it was thrown away, the pass-2 master stands, and `verify:neonoire` now
+   asserts the rule survives in the bundle.
+6. **341's arm is a bar, not a hold** — forearm flat across Vera, hand braced at her far shoulder, his eyes forward,
+   hers down on the arm.
+7. **343 stays owed rather than fudged.** Its first study put the following grey sedan **nose-on to the camera** while
+   the maroon hatchback ahead showed its tail lights — a car facing us cannot be following a car driving away. The
+   board now fixes the geometry for the next generation: **the camera is behind both cars, so the sedan shows its
+   REAR** (its dim nearside lamp throwing light up the road, not at us), forty metres of shining asphalt separate it
+   from the hatchback's tail lights, nothing else on the road. `verify:neonoire` asserts that note.
+
+**Caveats carried, all in the board notes:** 331's doorway is off-frame and its barber pole reads vividly striped
+(unlit on the master) · 336's lighter is clean silver not worn steel, and the lane behind opens onto brick low-rises ·
+337's umbrella lies crook-up on the seat, its screen is nearly clear and its interior newer than the s31 car · 338's
+wrapper is too clean and her hands read young · 339's face is softer than the sheet · 340's amber sign prints the word
+**Bar** in Latin letters (the scene's sign is a wordless amber glow) and the lane is wider than the cold-open
+backstreet · 341's hand rests on her shoulder rather than gripping the seat · 342 shows only half a plate (never read
+back on screen) and the paper lies across both knees.
+
+**Mechanics:** `rewrite-slots.mjs` reads **delivered = 321–342, queued = [343]**; `npm run passes:neonoire` now writes
+**pass 35 for shot 343 alone** and reports **321/322, 1 to go**. Three placeholder-note digests (340–342) joined
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts`; `sync-scene6.mjs` was **not** re-run (the current bundle already
+contains 14A). `build:neonoire`, `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `check:assets`,
+`typecheck` and the production build all pass.
+
+## Previous — 3 October 2026 (later): the rewrite slots, pass two — nineteen frames in, four to go
+
+"Continue" put the head of the queue on the board: **scene 1's last three** — **331** he refuses, **332** the sedan
+broadside across the lane mouth with its high beams down it, **333** the old man in the white light — and **scene 14A's
+first six**, **334–339** (the mirror with the red bird clip, the lane mouth with the follower's lamps going out, the
+open unlit lighter, **337 the scene's master**, the rice ball she does not eat, not running from you).
+**Ten generations; one thrown away** (336's first study came back portrait — a framing failure is a regenerate, not a
+caveat). All 16:9 full-bleed 1920×1080 at their stable paths; `public/images/neonoire/s14a/` was created this pass.
+**318/322 keyframes on disk, 4 placeholders left: 340 (the watcher at the bar's handle) and 341–343.** Ledger:
+[rewrite-slots-2-2026-10-03](passes/rewrite-slots-2-2026-10-03.md); sheet:
+`reviews/rewrite-slots-2-2026-10-03.jpg`. Pass 1 (the interview's seven and the cold open's first three) is
+[here](passes/rewrite-slots-1-2026-10-03.md).
+
+**Five caveats that want a director's decision**, all in the boards and the ledger: 331 carries a **second elderly man**
+in the lane's middle distance (he must leave the frame — and the frame's first study was refused by the image service
+and re-composed with the street master); 332 lights the barber's pole the master keeps unlit and shows the plate;
+333 changes the old man's raincoat to light beige, rides the masks high, invents a second light column and an EXIT バー
+sign, and loses the scooter; **the 14A interiors (334, 337, 339) read newer than the scene-31 car** and 336's car reads
+as a small SUV rather than the locked maroon hatchback — **337 is the master further 14A frames must copy, with that car
+corrected**; and **339 leaves Vera looking at the lane instead of turning to Jack**, which is the first candidate for a
+retake. Smaller ones (335 horizontal rather than low; 336's lighter silver and oversize; 337's umbrella on the seat and
+a too-clear screen; 338's rice ball still in its wrapper) are in the board notes.
+
+**Mechanics:** the boundary module `scripts/neonoire/rewrite-slots.mjs` now reads `rewriteSlotsDelivered = 321–339` and
+`rewriteSlotsQueued = 340–343`; the builder and `verify:neonoire` both read it, and the verifier also holds 14A's
+delivered six to 16:9 `Draft` and its four owed slots to honest placeholders. `npm run passes:neonoire` writes pass 34
+(shot 340) and pass 35 (341–343) and reports **318/322, 4 to go**. Nine more digests were added to
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts`, so a saved workspace on a 2 October default receives the pictures
+on its untouched cards. `sync-scene6.mjs` was **not** re-run: the current bundle already contains 14A, and carrying it
+as an intermediate would re-insert a scene a workspace may have deleted. `build:neonoire`, `verify:neonoire`,
+`verify:shot-order`, `verify:revision:neonoire`, `check:assets`, `typecheck` and the production build all pass.
+
+## Previous — 3 October 2026: the rewrite slots, pass one — the interview's seven and the cold open's first three
+
+The director's instruction was **"continue next shots"**, and the next shots on the board were the slots the
+2 October rewrites opened. **Ten generations, ten frames installed, no retakes, nothing renumbered:** the interview
+room's seven (**321–327** — the form, her handwriting, the pen that stops, the passport photograph, squared to the
+corner, no trace, the inside pocket) and scene 1's first three (**328–330** — the scrap, the lane and her watch, the
+red clip). All 16:9 full-bleed 1920×1080 at their stable asset paths (runtime JPEG 303–489 KB), normalised by
+`fresh-install.mjs`. **309/322 keyframes on disk, 13 placeholders left.** Ledger:
+[rewrite-slots-1-2026-10-03](passes/rewrite-slots-1-2026-10-03.md); sheet:
+`reviews/rewrite-slots-1-2026-10-03.jpg`.
+
+**The delivered boundary is a module, not a hand-kept list:** `scripts/neonoire/rewrite-slots.mjs` holds the whole
+block (`rewriteSlots` 321–343), what has landed (`rewriteSlotsDelivered` 321–330) and what has not
+(`rewriteSlotsQueued` 331–343). `build-project.mjs` and `verify-neonoire.mjs` both read it; the verifier fails if a
+frame of 321–343 holds an image it does not declare, if a delivered frame is not 16:9, or if the interview's seven
+leave the room master and Ishida's wardrobe. **The interview frames are generated on the room masters**
+(51, 56 and the retaken 62) with the four cast sheets and the interview lock; **the cold-open frames on the character
+sheets only** (`sheets/mara.jpg`, `mara-face.jpg`) under the 30 September fresh-pass rule — no master, no layout
+sheet, no earlier frame attached.
+
+**Still queued, and the next pass should take them first:** **331–333** (he refuses, the sedan blocks the lane, the
+old man in the white light) and the ten of **scene 14A** (**334–343**). Briefs are [pass 34](passes/pass-34.md)
+(331–340) and [pass 35](passes/pass-35.md) (341–343); the ten-call budget stopped this pass at 330 by choice.
+`s14a/` does not exist on disk yet — create it when installing those ten.
+
+**Caveats carried, not hidden** (every one is in its board note too): 321 a second sheet at the table's near edge;
+322 block capitals for the "square hand" and the real printed form; 323 the sheet only enters at the bottom edge;
+324 a necklace at the print's collarbone and faint wallet embossing; **325 the sheet under the photograph prints as a
+differently headed form** (the one worth closing); 326 mid-wipe with a trace of tea pooled; 327 the print caught at
+the pocket's mouth and a size larger than 324–325; 328 a pen mark reading as a semicolon; 329 watch hands
+approximate, the pole and vending machine on the same side of the lane as this camera sees it, two shutters with
+painted kanji; 330 the clip reads plain red, not a bird.
+
+**Mechanics:** the ten frames are `Draft`; the thirteen slots without pictures stay `Needs review` placeholders. A
+saved workspace on the 2 October default receives the pictures on its untouched cards through the digests added to
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts` (image, title, status, note — nothing else; an edited card keeps
+its words). The scene-6 sync file needed **no** regeneration this pass: `sync-scene6.mjs` carries bundles shipped
+*before* a structural change, and the current bundle already contains 14A — adding it re-adds a workspace's
+deliberately deleted scene and fails `verify-revision-restoration`. `npm run build:neonoire`,
+`verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `check:assets` (916/916), `typecheck` and the
+production build all pass; `npm run passes:neonoire` now writes passes 34 and 35 and reports **309/322, 13 to go**.
+
+## Previous — 2 October 2026 (night): scene 14A added — Vera and Jack in the car
 
 The director wrote a new scene to plant the relationship before the film makes them close (story bible Part 9 item 17): **INT./EXT. JACK'S CAR, KANDA - NIGHT #14A#**, between 14 and 15. Vera tails Jack's car in a rented hatchback, they sit out a stakeout at the mouth of the lane over two rice balls, a watcher tries the bar's door, Jack's arm goes across her before he thinks, and he follows her home. **Script:** the director's text with seven small edits (listed in the bible), checked against the whole screenplay first; `verify:neonoire` guards what it must not break (no Sakai or Ishida named, the lighter never lit, no gun, no grey car, Jack's dim headlight on the board). **Boards:** ten placeholder slots **334–343**, no images yet, briefs and continuity locks in `docs/neonoire/scenes/n14a-the-stakeout.md`; the next free shot number is **344**. **Voices:** none recorded (about 38 lines). **Counts:** 103 scenes / 322 shots / 299 images; the verifiers and the home-page card were updated.
 

@@ -38,6 +38,7 @@ import { demolitionLook, endingScenes, newCounterLook, rooftopLook, veraLookEShe
 import { rewritePending, rewritePendingNote } from "./rewrite-pending.mjs";
 import { remainingBoardsCompleted, remainingBoardsLook, remainingBoardsQueued } from "./remaining-boards.mjs";
 import { remainingBoardsFinalLook, remainingBoardsFinalShots } from "./remaining-boards-final.mjs";
+import { rewriteSlots, rewriteSlotsDelivered, rewriteSlotsLook } from "./rewrite-slots.mjs";
 import { attachAudio, readManifest } from "./voice.mjs";
 import { inStoryOrder } from "./story-order.mjs";
 import { directorApprovedMainIds, directorMainImageNote, directorContinuityLook, approvedProductionNote } from "./director-corrections.mjs";
@@ -259,10 +260,12 @@ const frames = shots.map(shot => {
     notes: [
       !absent && directorApprovedMainIds.has(shot.id) ? directorMainImageNote : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
+        : shot.n >= 321
+        ? (rewriteSlotsDelivered.includes(shot.n)
+          ? `Image: AI-generated rewrite-pass frame (3 October 2026), one of the ${rewriteSlots.length} slots the 2 October 2026 rewrites opened (321–343) — boards ${rewriteSlotsDelivered.join(", ")} installed. ${rewriteSlotsLook} Production approval pending.`
+          : "Image slot opened by the 2 October 2026 rewrites (scene 6's 321–327, scene 1's 328–333, scene 14A's 334–343); this card holds an honest placeholder naming the file it awaits, and never borrows a neighbour's picture. Generation runs in screenplay order, ten frames at a time; the delivered boundary and the queued order live in scripts/neonoire/rewrite-slots.mjs. Production approval pending.")
         : shot.n >= 308
-        ? (remainingBoardsCompleted.includes(shot.n)
-          ? `Image: AI-generated 30 September 2026 revision board (shots 308–320), delivered in the remaining-boards pass — boards ${remainingBoardsCompleted.filter(n => n >= 308).sort((a, b) => a - b).join(", ")} of the block installed. ${remainingBoardsLook} Production approval pending.`
-          : "Image: AI-generated 30 September 2026 revision boards (shots 308–320) — the seven named close-ups, the rewritten scenes 51 and 99A, the moved voicemail, and the closing news crawl, numbered after story pass 2. This card holds an honest placeholder slot naming the file it awaits: generation runs by the cold-open fresh pass's rules — screenplay text and character sheets only. The nineteen retired images this revision leaves standing are pinned in scripts/neonoire/rewrite-pending.mjs. Production approval pending.")
+        ? `Image: AI-generated 30 September 2026 revision board (shots 308–320), delivered in the remaining-boards pass — boards ${remainingBoardsCompleted.filter(n => n >= 308).sort((a, b) => a - b).join(", ")} of the block installed. ${remainingBoardsLook} Production approval pending.`
         : shot.n >= 297
         ? (remainingBoardsCompleted.includes(shot.n)
           ? `Image: AI-generated story pass 2 boarding (29 September 2026), delivered in the remaining-boards pass — boards ${remainingBoardsCompleted.filter(n => n >= 297 && n < 308).sort((a, b) => a - b).join(", ")} installed (the plaza's three views are generated together from the re-pinned text: no fountain, no hoarding, no gardener). ${remainingBoardsLook} Production approval pending.`

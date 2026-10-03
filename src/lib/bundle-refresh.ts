@@ -10,9 +10,35 @@ const notesDigest = (text: string) => digest(text.replace(/(?:Generation )?Pass 
 const directorDefaults = directorSync.frames as Record<string, { notesHash: string; descriptionHash: string; image: string }>;
 const sceneDefaults = directorSync.scenes as Record<string, string>;
 
-// Notes from the last default pending cards (6f638a3). Replace them only if untouched;
-// a director can add instructions while leaving the missing-image markers in place.
+// Notes from the last default pending cards. Replace them only if untouched; a director can add
+// instructions while leaving the missing-image markers in place. The 2 October 2026 slots (321–343)
+// joined the map on 3 October 2026, when the ten frames of the first rewrite pass arrived: a saved
+// workspace on the 2 October default that still holds the untouched card gets the picture, the
+// title, the status and the note; an edited card keeps its words and only gains the image.
 const pendingNotesHashes: Record<string, string> = {
+  "neonoire-shot-321": "c451adb59fba300b2b276f1b585147021acb7c23abff0d65afc1a6599d497ccc",
+  "neonoire-shot-322": "6a886c0679dc60d4f4b3312d52307ece138474924fbf0897938c872ebdaab2e4",
+  "neonoire-shot-323": "e9610ae879caafe74e758037c7b3c3fa709847d67bbfdd7372ed545603fcf475",
+  "neonoire-shot-324": "9d61b9751f6d361d89add3e07120759c5e3e3dcf56fd0e21d6c6fbe19269d02f",
+  "neonoire-shot-325": "2089259bea00186cc4320a8e52c549ac8e22f3fc41a6671513f24a4d09eda4b8",
+  "neonoire-shot-326": "14fd444d4651a5a4b13852f576e558252ea5941b22c95c7e3bef317af93b106c",
+  "neonoire-shot-327": "97d1ed38c068115d856be1c0d463774fdb3d96e53ace1d0ca948e1bc7ee9425d",
+  "neonoire-shot-328": "4c05ce7dfdc26ee142ac4e789b251300f0b75b53a7b2b6383bd452aa18ace655",
+  "neonoire-shot-329": "f5bbc901d188cbaf36cf292a7fefb13fbd1af67d8daaab8472edd1126c8228fd",
+  "neonoire-shot-330": "04a8d2bb70c287d6cc43c9400dbeaedf6e7064ce86e29cc9871c44b81383fc72",
+  "neonoire-shot-331": "bed9dc1d1549e4ffee4221af06a5f448e84a446e0858d9de535655d8d19b621b",
+  "neonoire-shot-332": "d931b4c77efd079806dfb96e9203b908d8f278ef6a4cbc39e83157cb3d7ec3cb",
+  "neonoire-shot-333": "02b5724ff3124d9f69bc4d1c0078a541e577b0ce297edb2fce98f007b419be2a",
+  "neonoire-shot-334": "9d3e7b8f511ad1ff8f556db717ab2f18c5cd96d8d9f2cfacc357fa62444c2a52",
+  "neonoire-shot-335": "afed61af295faa448fe488f3b5acfff02a7b0c56689855dc08741e242d93c001",
+  "neonoire-shot-336": "22100a43c2d693ca50700040240f6c9b078e94218405388db8e8393226645619",
+  "neonoire-shot-337": "75711d925a8df145361224e88fe244d98bdcb2352ad20340bab50335977d29b4",
+  "neonoire-shot-338": "ad1670ba86255412b86f2ee3e0675836e4ca658e6e4889bcb60b17a3e4bbc416",
+  "neonoire-shot-339": "403bf6911cef1df0114d3e710944842983b183d0f8ef11a021fe7366369957ac",
+  "neonoire-shot-340": "bec60ee888837c7759b7fcf4793d4178ba5cd84adc26b4220368c2877b778775",
+  "neonoire-shot-341": "90440faef42a6b6fc478145d221a89b134ff1cad85a624bedf4dd58539c3b596",
+  "neonoire-shot-342": "a9f5f813b691af6b65684c5a3a5f8f18877f7a67bceed2de610ef23aed755775",
+  "neonoire-shot-343": "d7f5fbfef5af7c554da00aecd3f304c05adc179d0404b685d2a96b5f4ac359a0",
   "neonoire-shot-298": "4e09581870d03c30fc6c864d522a1e836cf2c3f37038b3416e89d672ed4ad219",
   "neonoire-shot-299": "7de9dcd3dee77512884f97900be1d937b25972ca922ccfcf524da5ad47b7e193",
   "neonoire-shot-300": "ada2941f77ece1a37838837b1185aa045537b8c83a08b852426568f892974fc0",

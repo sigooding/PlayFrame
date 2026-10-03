@@ -9,7 +9,7 @@ Grammar: one table, two chairs, rain on a frosted window. The scene is a two-han
 
 ## Visual revision — 25 September 2026
 
-The first twelve shots (51–62) are **16:9, 1920×1080, full-bleed**. Shots 321–327 are placeholder slots for the 2 October 2026 rewrite of this scene (the form, her handwriting, the pen that stops, the passport photograph, the photograph squared to the corner, the tea wiped away, the photograph into his pocket); they await generation by the cold-open rules — screenplay text and character sheets only, the room kept to the interview lock. The room master is `public/images/neonoire/s6/51-the-interview-room.jpg`; the blocking master is `56-three-days-ago.jpg`. Keep Vera left, Ishida right, the single frosted rainy window centred, the grey laminate table, two beige chairs and steady fluorescent light. The tan tissue box remains on the window sill throughout, within Ishida's reach; no box appears on the table.
+All nineteen shots (51–62 and 321–327) are **16:9, 1920×1080, full-bleed**. Shots 321–327 were placeholders for the 2 October 2026 rewrite of this scene (the form, her handwriting, the pen that stops, the passport photograph, the photograph squared to the corner, the tea wiped away, the photograph into his pocket) and **landed on 3 October 2026** — generated on the room master, the blocking master, the retaken 62 and the Vera, Vera-face, Ishida and Mara-face sheets, with the interview lock in every prompt; see [the pass ledger](../passes/rewrite-slots-1-2026-10-03.md). The room master is `public/images/neonoire/s6/51-the-interview-room.jpg`; the blocking master is `56-three-days-ago.jpg`. Keep Vera left, Ishida right, the single frosted rainy window centred, the grey laminate table, two beige chairs and steady fluorescent light. The tan tissue box remains on the window sill throughout, within Ishida's reach; no box appears on the table.
 
 Vera retains her scene-5 charcoal coat, cream high-neck knit, navy trousers, brown boots and pale-blue umbrella. Ishida matches his character sheet: charcoal suit and light grey open-collar shirt, **no tie**. One cream-white **paper** cup only. It is intact with a dry tabletop before shot 60; the crushed cup and spill persist through 61–62. Ishida puts one offered tissue beside her hand, then slides his card across the wet table. Do not restore the cup, wipe the spill early, add glass cups or swap the umbrella colour.
 
@@ -134,7 +134,7 @@ CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 8
 IMAGE: 321-the-form.jpg
-NOTE: Placeholder slot for the 2 October 2026 rewrite. One cream-white paper cup only, intact; the form is a plain printed sheet, Japanese heading with an English line beneath, a cheap ballpoint beside it. Table and window follow the room master (51) and the interview lock; nothing on the table that the scene has not introduced.
+NOTE: LANDED 3 OCTOBER 2026 — generated on the room master (51) and the blocking master (56) with the Vera, Vera-face and Ishida sheets attached, reviewed at full size, installed over its own filename. Unclosed caveat: a second printed sheet reads at the table's near edge in front of Ishida, where the board asks for the one form and the pen; the English line "Missing Person Report Form" prints beneath the Japanese heading, as the board names it.
 
 322. CLOSE-UP — 85mm, static, high angle — her handwriting.
 She fills it in. Her handwriting is fast and square. Ishida reads it upside down as she writes, without seeming to.
@@ -143,7 +143,7 @@ CAST: Vera Voss, Detective Ishida
 LIGHT: Practical night
 TIME: 12
 IMAGE: 322-her-handwriting.jpg
-NOTE: Placeholder slot. Her hand and the pen on the form, square capitals; at the top of the frame Ishida's eyes, level on the page, upside down to him and perfectly legible. He never looks at her face while she writes. This shot carries the questions about where she grew up and her father.
+NOTE: LANDED 3 OCTOBER 2026. Her right hand and the blue-barrel ballpoint on the form, the printed heading legible, her answers in fast square capital letters; at the top edge of the frame Ishida's eyes come over the table, level on the page and upside down to him, and never lift to her face. Unclosed caveat: the accent of the handwriting is block capitals rather than the sheet's square hand, and the form is the real Japanese missing-person sheet with its printed boxes; both are as the board asks but are production choices to confirm.
 
 323. MEDIUM CLOSE-UP — 85mm, static, eye level — the pen stops.
 The pen stops. "She was four. She doesn't remember him." It is not quite an answer. Ishida lets it be one.
@@ -152,7 +152,7 @@ CAST: Vera Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 323-the-pen-stops.jpg
-NOTE: Placeholder slot. Vera only: the pen has stopped a hair above the paper, her eyes still down. No face-to-camera; she answers the form, not him.
+NOTE: LANDED 3 OCTOBER 2026. Vera alone and dry, the pen held off the sheet, her eyes down on the form and her mouth mid-sentence; nobody else in frame and no look to camera. Unclosed caveat: the sheet enters only at the bottom edge between her hands, so the stop reads from her face and the raised pen rather than from contact with the paper.
 
 324. CLOSE-UP — 85mm, static, high angle — the passport photograph.
 Vera takes her wallet from her bag. From behind her card, a small square passport photo: Mara, unsmiling for once, a strand of hair across her eyes. "She gave me two when she renewed. In case." — "In case."
@@ -161,7 +161,7 @@ CAST: Vera Voss
 LIGHT: Practical night
 TIME: 10
 IMAGE: 324-the-passport-photo.jpg
-NOTE: Placeholder slot. The photograph must read as Mara (ash-blonde, pale blue eyes, the red bird clip NOT in frame: a passport photo does not allow it), plain background, a strand of hair across her eyes, unsmiling. Vera's wallet and the brown bag only as far as the hand needs.
+NOTE: LANDED 3 OCTOBER 2026. Mara's square passport print held clear of the wallet above the grey laminate: ash-blonde, pale blue eyes, plain pale ground, shoulder-square, unsmiling, a strand of hair across the brow, and no red bird clip anywhere in the print — the sheet allows none. Unclosed caveats: a suggestion of a thin necklace sits at the print's collarbone line, and the wallet's embossed lettering is faintly readable at full size — both to be closed or waived by the director.
 
 325. CLOSE-UP — 85mm, static, high angle — squared to the corner.
 He takes it by the edges. Looks at it a moment. Sets it on the form, squares it to the corner.
@@ -170,7 +170,7 @@ CAST: Detective Ishida
 LIGHT: Practical night
 TIME: 6
 IMAGE: 325-squared-to-the-corner.jpg
-NOTE: Placeholder slot. Only his hands and the photograph on the form, set exactly to its corner; this is the corner the tea will later reach (60), so keep it clear of the cup.
+NOTE: LANDED 3 OCTOBER 2026. Both of Ishida's hands and the square print set flat to the upper corner of the form on dry laminate, his shirt cuff light grey and open at the collar; no cup, no glass and no liquid in the frame. Unclosed caveat: the sheet under the photograph prints as a differently headed official form, not the missing-person sheet of 322 — the next pass should re-head it or the director should waive the mismatch.
 
 326. CLOSE-UP — 85mm, static, high angle — no trace.
 Ishida sits alone a moment. He wipes the spilled tea from the table with the tissue, slowly, carefully, until there is no trace of it.
@@ -179,7 +179,7 @@ CAST: Detective Ishida
 LIGHT: Practical night
 TIME: 8
 IMAGE: 326-no-trace.jpg
-NOTE: Placeholder slot. Alone in the frame now: the crushed paper cup, the tissue, the table going dry under his hand. The form and photograph stay out of this shot so that 327 can reveal what he leaves.
+NOTE: LANDED 3 OCTOBER 2026. Ishida alone: the crushed cream-white cup on its side at the frame's edge, his hand wiping the laminate with the offered tissue, the last of the amber spill going under the paper. No form and no photograph in frame, as the board asks. Unclosed caveat: the frame is the middle of the wipe, with a trace of tea still pooled at the tissue; the shot plays out to a clean table.
 
 327. CLOSE-UP — 85mm, static, eye level — the inside pocket.
 Then he picks up the passport photo, dry at the edges, looks at Mara's face, and slides it into his inside pocket. The form he leaves where it is.
@@ -188,7 +188,7 @@ CAST: Detective Ishida
 LIGHT: Practical night
 TIME: 10
 IMAGE: 327-the-inside-pocket.jpg
-NOTE: Placeholder slot. The photograph is dry at its edges and stained only where the tea reached the form; his charcoal jacket, no tie. The form stays on the table, the last thing in the room.
+NOTE: LANDED 3 OCTOBER 2026. Ishida at the table with the photograph of Mara going into his inside breast pocket, his charcoal jacket, light grey open collar and NO tie held to the sheets, the missing-person form left flat on the laminate in the foreground as the room's last object. Unclosed caveats: the frame catches the print at the pocket's mouth rather than fully inside, and the print reads a size larger than the square print of 324–325.
 
 ## Passes
 
@@ -198,4 +198,4 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 | --- | --- | --- |
 | 6 | 51–60 | The interview room, The paper cup of tea, The untouched tea, You must be cold, I speak japanese, Three days ago, He waits, Why kanda, Is she dead, The crushed cup |
 | 7 | 61–62 | In japanese, The card |
-| — | 321–327 | The form, Her handwriting, The pen stops, The passport photograph, Squared to the corner, No trace, The inside pocket (placeholder slots) |
+| 33 | 321–327 | The form, Her handwriting, The pen stops, The passport photograph, Squared to the corner, No trace, The inside pocket (delivered 3 October 2026) |
