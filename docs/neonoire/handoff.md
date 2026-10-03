@@ -1,6 +1,48 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 2 October 2026 (night): scene 14A added — Vera and Jack in the car
+## Current — 3 October 2026: the rewrite slots, pass one — the interview's seven and the cold open's first three
+
+The director's instruction was **"continue next shots"**, and the next shots on the board were the slots the
+2 October rewrites opened. **Ten generations, ten frames installed, no retakes, nothing renumbered:** the interview
+room's seven (**321–327** — the form, her handwriting, the pen that stops, the passport photograph, squared to the
+corner, no trace, the inside pocket) and scene 1's first three (**328–330** — the scrap, the lane and her watch, the
+red clip). All 16:9 full-bleed 1920×1080 at their stable asset paths (runtime JPEG 303–489 KB), normalised by
+`fresh-install.mjs`. **309/322 keyframes on disk, 13 placeholders left.** Ledger:
+[rewrite-slots-1-2026-10-03](passes/rewrite-slots-1-2026-10-03.md); sheet:
+`reviews/rewrite-slots-1-2026-10-03.jpg`.
+
+**The delivered boundary is a module, not a hand-kept list:** `scripts/neonoire/rewrite-slots.mjs` holds the whole
+block (`rewriteSlots` 321–343), what has landed (`rewriteSlotsDelivered` 321–330) and what has not
+(`rewriteSlotsQueued` 331–343). `build-project.mjs` and `verify-neonoire.mjs` both read it; the verifier fails if a
+frame of 321–343 holds an image it does not declare, if a delivered frame is not 16:9, or if the interview's seven
+leave the room master and Ishida's wardrobe. **The interview frames are generated on the room masters**
+(51, 56 and the retaken 62) with the four cast sheets and the interview lock; **the cold-open frames on the character
+sheets only** (`sheets/mara.jpg`, `mara-face.jpg`) under the 30 September fresh-pass rule — no master, no layout
+sheet, no earlier frame attached.
+
+**Still queued, and the next pass should take them first:** **331–333** (he refuses, the sedan blocks the lane, the
+old man in the white light) and the ten of **scene 14A** (**334–343**). Briefs are [pass 34](passes/pass-34.md)
+(331–340) and [pass 35](passes/pass-35.md) (341–343); the ten-call budget stopped this pass at 330 by choice.
+`s14a/` does not exist on disk yet — create it when installing those ten.
+
+**Caveats carried, not hidden** (every one is in its board note too): 321 a second sheet at the table's near edge;
+322 block capitals for the "square hand" and the real printed form; 323 the sheet only enters at the bottom edge;
+324 a necklace at the print's collarbone and faint wallet embossing; **325 the sheet under the photograph prints as a
+differently headed form** (the one worth closing); 326 mid-wipe with a trace of tea pooled; 327 the print caught at
+the pocket's mouth and a size larger than 324–325; 328 a pen mark reading as a semicolon; 329 watch hands
+approximate, the pole and vending machine on the same side of the lane as this camera sees it, two shutters with
+painted kanji; 330 the clip reads plain red, not a bird.
+
+**Mechanics:** the ten frames are `Draft`; the thirteen slots without pictures stay `Needs review` placeholders. A
+saved workspace on the 2 October default receives the pictures on its untouched cards through the digests added to
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts` (image, title, status, note — nothing else; an edited card keeps
+its words). The scene-6 sync file needed **no** regeneration this pass: `sync-scene6.mjs` carries bundles shipped
+*before* a structural change, and the current bundle already contains 14A — adding it re-adds a workspace's
+deliberately deleted scene and fails `verify-revision-restoration`. `npm run build:neonoire`,
+`verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `check:assets` (916/916), `typecheck` and the
+production build all pass; `npm run passes:neonoire` now writes passes 34 and 35 and reports **309/322, 13 to go**.
+
+## Previous — 2 October 2026 (night): scene 14A added — Vera and Jack in the car
 
 The director wrote a new scene to plant the relationship before the film makes them close (story bible Part 9 item 17): **INT./EXT. JACK'S CAR, KANDA - NIGHT #14A#**, between 14 and 15. Vera tails Jack's car in a rented hatchback, they sit out a stakeout at the mouth of the lane over two rice balls, a watcher tries the bar's door, Jack's arm goes across her before he thinks, and he follows her home. **Script:** the director's text with seven small edits (listed in the bible), checked against the whole screenplay first; `verify:neonoire` guards what it must not break (no Sakai or Ishida named, the lighter never lit, no gun, no grey car, Jack's dim headlight on the board). **Boards:** ten placeholder slots **334–343**, no images yet, briefs and continuity locks in `docs/neonoire/scenes/n14a-the-stakeout.md`; the next free shot number is **344**. **Voices:** none recorded (about 38 lines). **Counts:** 103 scenes / 322 shots / 299 images; the verifiers and the home-page card were updated.
 

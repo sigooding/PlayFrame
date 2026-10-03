@@ -176,6 +176,8 @@ NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with
 
 The 30 September 2026 revision cut the beats the letter-rewrite coverage boarded: the 1:00 scrap of paper, the lit bar sign as an early arrival, the dying man's "Your father". Shots 280–282 are retired with them — their images stay on disk under their filenames for before/after review — and the scene's frames lose 8 and 11 to the shortened blocking. Nothing is renumbered.
 
+**The 2 October 2026 cold-open rewrite added 328–333** — the scrap, the lane and her watch, the red clip, he refuses, the sedan that blocks the lane and the old man in the white light — six slots for beats the scene had never boarded. **328, 329 and 330 landed on 3 October 2026** under the fresh-pass rule (character sheets only, no master, no layout sheet, no earlier frame attached); 331–333 are honest placeholders awaiting their generation, and their briefs are in [pass 34](../passes/pass-34.md). The pass's ledger is [rewrite-slots-1-2026-10-03](../passes/rewrite-slots-1-2026-10-03.md).
+
 328. INSERT — 85mm, static, high angle — the scrap.
 The note in her hands. Her handwriting, in biro: 1.00 Sakai. Underneath is an address. Beneath that, underlined twice: "just listen."
 SCRIPT: "The note in her hands. Her handwriting, in biro: 1.00 Sakai."
@@ -183,7 +185,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 328-the-scrap.jpg
-NOTE: Placeholder slot for the 2 October 2026 cold-open rewrite. A torn scrap of paper in a wet hand, biro, her fast square-ish handwriting: 1.00 Sakai, an address beneath it (the old retired coverage 280 read Kanda 2-3-1 — keep that address), and under that, underlined twice, "just listen." Rain on the paper; her cuff and the denim jacket only.
+NOTE: LANDED 3 OCTOBER 2026 — generated from the rewritten scene 1 text with the MARA character sheets only (no master, no layout sheet, no earlier frame), reviewed at full size and installed over its own filename. The torn scrap is held in both hands in the rain and reads, at full size: 1.00 SAKAI, KANDA 2-3-1, JUST LISTEN underlined twice. Unclosed caveats: the first line closes with a pen mark that reads as a semicolon, and the scrap is a clean torn rectangle rather than a deeply frayed one.
 
 329. WIDE — 35mm, static, eye level — the lane, and her watch.
 She looks down the lane. At the far end, the bar sign. She checks her watch (12.45). Early.
@@ -192,7 +194,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 7
 IMAGE: 329-the-lane-the-watch.jpg
-NOTE: Placeholder slot. Over her shoulder or from the side: the length of the wet lane to the amber bar sign at the far end, her wrist and a cheap watch showing 12:45. Same street masters as shot 1 are not to be attached: screenplay text and character sheets only.
+NOTE: LANDED 3 OCTOBER 2026 — Mara character sheets only, per the fresh-pass rule. Over her shoulder from the recess: the length of the wet lane, closed shutters with hand-painted signs, the bar's amber sign lit at the far end, and her watch in the foreground. Unclosed caveats: the dial's hands read as an approximation at full size rather than a legible 12:45; the striped pole and the vending machine fall on the same side of the lane as this camera sees it, where the scene's own master keeps them opposite each other; and two shutters carry painted kanji and a phone number.
 
 330. MEDIUM — 50mm, static, eye level — the red clip catches the light.
 She leans out of the shadow. The red bird clip catches the street light.
@@ -201,7 +203,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 5
 IMAGE: 330-the-red-clip.jpg
-NOTE: Placeholder slot. Half her face leaving the recess's shadow, the small red enamel bird clip above her right temple lit by the street light — the single warm point in the frame.
+NOTE: LANDED 3 OCTOBER 2026 — Mara character sheets only. Half her face out of the recess into the sodium light, the rain behind her, and the small red enamel clip above her right temple catching the lamp as the one warm, saturated thing in a desaturated frame. Unclosed caveat: at full size the clip reads as a plain red enamel clip rather than a legible bird.
 
 331. MEDIUM CLOSE-UP — 85mm, static, eye level — he refuses.
 Then he shakes his head. Barely. A man refusing a stranger. And he turns his back on her, slowly, to face the road.
@@ -236,3 +238,5 @@ NOTE: Placeholder slot. Two masked men as black silhouettes walking in against t
 | --- | --- | --- |
 | 1 | 1–9 | Backstreet, Vending, Mara walks, Mara phone, Phone off, Barbershop doorway, Old man, Old man stops, The two shots |
 | 2 | 12–18 | Masked man radio, Taillights gone, She kneels, The grip, The key, She runs, The purse in the rain |
+| 33 | 328–330 | The scrap, The lane and the watch, The red clip (delivered 3 October 2026) |
+| 34 | 331–333 | He refuses, The sedan blocks the lane, The white light (placeholder slots) |

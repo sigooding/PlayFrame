@@ -6,7 +6,21 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 2 October 2026 (night): scene 14A, Vera and Jack in the car
+## Latest session — 3 October 2026: the rewrite slots, pass one ("continue next shots")
+
+**Ten generations, ten frames installed, nothing renumbered: the interview room's 321–327** (the form, her
+handwriting, the pen that stops, the passport photograph, squared to the corner, no trace, the inside pocket) **and
+scene 1's 328–330** (the scrap, the lane and her watch, the red clip), all 16:9 at their stable paths.
+**309/322 keyframes on disk, 13 placeholders left** — 331–333 plus scene 14A's 334–343, briefed in
+`docs/neonoire/passes/pass-34.md` and `pass-35.md`. The delivered boundary lives in
+`scripts/neonoire/rewrite-slots.mjs` and both the builder and `verify:neonoire` read it; the interview frames attach
+the room masters (51, 56, the retaken 62) and the cast sheets, the cold-open frames character sheets only. Read
+[the ledger](docs/neonoire/passes/rewrite-slots-1-2026-10-03.md) for the ten unclosed caveats (325's wrongly headed
+form is the one to close) before regenerating anything in those scenes. **Do not add the current bundle to
+`sync-scene6.mjs`'s intermediates** — it already contains scene 14A, and a workspace that deleted the scene would get
+it back (that fails `verify:revision:neonoire`).
+
+## Previous session — 2 October 2026 (night): scene 14A, Vera and Jack in the car
 
 The director added **14A** (INT./EXT. JACK'S CAR, KANDA - NIGHT, between 14 and 15) so their closeness is planted before scene 22: she tails his car, they sit out a stakeout, he follows her home. 103 scenes, 322 shots; boards **334–343** are placeholders (next free number **344**), no voices yet. It deliberately names no Sakai or Ishida, never lights the lighter and shows no grey car; `verify:neonoire` guards all three. The pre-14A script is kept as `docs/neonoire/baseline/Neonoire_PreScene14A_2026-10-02.fountain` and saved workspaces on a known default receive the scene (`newSceneIds` in the sync). Read the bible's Part 9 item 17 and the handoff before touching it.
 
