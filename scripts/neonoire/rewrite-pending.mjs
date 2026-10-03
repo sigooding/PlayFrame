@@ -24,13 +24,19 @@
 // Still queued, in the order the boards ask for them: scene 83's 113, scene 89's 131, scene 90's 132,
 // scene 94's 141–143, scene 100's 160, and the Hive entrance pair 186 and 228 — the sedan interior,
 // Vera's "just a face", the hand in the dark, the third stool, and the two frames whose only fault is
-// the unlettered Hive banner. Each has its own board note saying what the pass must fix.
+// the unlettered Hive banner. Each has its own board note saying what the pass must fix. Ahead of them
+// all stands cold-open shot 10, pinned above. Ten frames hold the pin; the walk-and-the-lane round
+// (2–3 October 2026) is the record of the four it released and the six new slots 328–333 it delivered.
 export const rewritePending = new Set([
   "neonoire-shot-113", "neonoire-shot-131", "neonoire-shot-132", "neonoire-shot-141",
   "neonoire-shot-142", "neonoire-shot-143", "neonoire-shot-160", "neonoire-shot-186",
   "neonoire-shot-228",
   // 2 October 2026: the director restored the cold open's walk and the lane (the scrap, the scooter and crates, the
-  // flat cap, the sedan blocking the mouth with its high beams); these five still show the retired shape of it.
-  "neonoire-shot-03", "neonoire-shot-06", "neonoire-shot-07", "neonoire-shot-09", "neonoire-shot-10",
+  // flat cap, the sedan blocking the mouth with its high beams). Released in the walk-and-the-lane round,
+  // 2–3 October 2026: 3, 6, 7 and 9 — each regenerated from the current screenplay text with a face crop of the
+  // character sheet as the only image reference, installed over its own filename and reviewed at full size. One of
+  // the five stays pinned: shot 10, "the shot", is the NEXT SESSION'S first call by the round's own split — the
+  // session ran ten generations for eleven frames and left the last one standing.
+  "neonoire-shot-10",
 ]);
 export const rewritePendingNote = "RETAKE PENDING — the script rewrote this scene on 30 September 2026; the image on file shows a beat that no longer exists.";

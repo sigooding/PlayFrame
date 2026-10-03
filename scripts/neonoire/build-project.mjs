@@ -23,7 +23,7 @@ import { apartmentBuildingLook, apartmentLook } from "./apartment-look.mjs";
 import { interviewLook } from "./interview-look.mjs";
 import { detectivesLook } from "./detectives-look.mjs";
 import { coldOpenLook, coldOpenCompletedThrough, isColdOpenScene } from "./cold-open-look.mjs";
-import { coldOpenFreshLook, coldOpenFreshCompleted } from "./cold-open-fresh-look.mjs";
+import { coldOpenFreshLook, coldOpenFreshCompleted, coldOpenRewriteCompleted } from "./cold-open-fresh-look.mjs";
 import { aftermathLook, streetsLook, streetsPassTwoImages, streetsScenes } from "./streets-look.mjs";
 import { dawnLook, dawnScenes, jackRecastDone, jackRecastDoneNote, jackRecastNote, jackRecastPending, policeDayLook, policeDayScenes } from "./dawn-look.mjs";
 import { confrontationScenes, kuroseOfficeLook, storeroomLook } from "./confrontation-look.mjs";
@@ -259,6 +259,8 @@ const frames = shots.map(shot => {
     notes: [
       !absent && directorApprovedMainIds.has(shot.id) ? directorMainImageNote : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
+        : shot.n >= 328 && shot.n <= 333 && coldOpenRewriteCompleted.includes(shot.n)
+        ? "Image: AI-generated walk-and-the-lane round (2–3 October 2026) — the director's restored cold open's new beats: the walk, the scrap insert, the lane and the watch, the flat cap, the refusal, the sedan blocking the mouth of the lane with its high beams, and the white light. Generated from the screenplay text with a FACE CROP of the character sheet as the only image reference (see scripts/neonoire/cold-open-fresh-look.mjs), installed at 1920×1080 and reviewed at full size. Production approval pending."
         : shot.n >= 308
         ? (remainingBoardsCompleted.includes(shot.n)
           ? `Image: AI-generated 30 September 2026 revision board (shots 308–320), delivered in the remaining-boards pass — boards ${remainingBoardsCompleted.filter(n => n >= 308).sort((a, b) => a - b).join(", ")} of the block installed. ${remainingBoardsLook} Production approval pending.`

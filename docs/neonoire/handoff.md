@@ -1,5 +1,32 @@
 # NEONOIRE — keyframe handoff
 
+## Current — 2–3 October 2026: the walk-and-the-lane round — scene 1's restored opening
+
+The director's restored cold open is on the board: the walk, the scrap insert, the lane and the
+watch, the scooter and the crates, the flat cap, the refusal, the sedan blocking the mouth of the
+lane with its high beams, the white light. Ten frames landed — the retakes of **3, 6, 7 and 9** and
+the six new slots **328–333** — each installed over its own stable filename at 1920×1080 and
+reviewed at full size. **Frames with faces were drawn on a face crop of the character sheet
+(`sheets/mara-face.jpg` / `sheets/sakai-face.jpg`) as the only image reference**; the text-only
+studies that drifted faces were thrown away. Read
+[the ledger](passes/cold-open-walk-and-the-lane-2026-10-02.md) before redrawing anything in scene 1
+— it carries the call-by-call account (35 generations over four turns, and the workspace snapshot
+that lost the first approved raws) and every caveat.
+
+**Status:** 3/6/7/9 released from `RETAKE PENDING`, reading Ready; 328–333 at Draft pending
+production approval. **Shot 10's retake is the next session's first call** — its brief stands in
+`scripts/neonoire/cold-open-fresh-look.mjs` — then scene 6's seven rewrite slots **321–327**
+(interview room master `s6/51-the-interview-room.jpg`, the one wet corner consistent with 60 and 62,
+`scripts/neonoire/interview-look.mjs`'s lock), and scene 14A's 334–343 (passes 34–35). The pin
+queue holds 10 frames. **Counts:** 305 of 322 keyframes on disk; the home-page card and
+`project-views.tsx` read the new numbers.
+
+**Caveats on the delivered pixels** (also on each board note): 328's address reads 2-14-3
+Kita-Umeda where the canon reads Kanda 2-3-1; 329's watch dial reads about 8:10 against the beat's
+12:45; 6's barber pole reads lit where the master keeps it unlit; 330 carries a second barber pole
+in the middle distance where the street has one; 3 and 7 are framed head to hip and head to knee
+(portrait and square raws cut to 16:9).
+
 ## Current — 2 October 2026 (night): scene 14A added — Vera and Jack in the car
 
 The director wrote a new scene to plant the relationship before the film makes them close (story bible Part 9 item 17): **INT./EXT. JACK'S CAR, KANDA - NIGHT #14A#**, between 14 and 15. Vera tails Jack's car in a rented hatchback, they sit out a stakeout at the mouth of the lane over two rice balls, a watcher tries the bar's door, Jack's arm goes across her before he thinks, and he follows her home. **Script:** the director's text with seven small edits (listed in the bible), checked against the whole screenplay first; `verify:neonoire` guards what it must not break (no Sakai or Ishida named, the lighter never lit, no gun, no grey car, Jack's dim headlight on the board). **Boards:** ten placeholder slots **334–343**, no images yet, briefs and continuity locks in `docs/neonoire/scenes/n14a-the-stakeout.md`; the next free shot number is **344**. **Voices:** none recorded (about 38 lines). **Counts:** 103 scenes / 322 shots / 299 images; the verifiers and the home-page card were updated.

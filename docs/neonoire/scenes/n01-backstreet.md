@@ -51,7 +51,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 9
 IMAGE: 03-mara-walks.jpg
-NOTE: REWRITE 2 OCTOBER 2026 (director) — the cold open is back to the walk: she is moving through the street, she is not standing in the doorway when the scene finds her. The image on file holds her still in the recess and awaits a retake (character sheets only). Earlier note: RETAKE LANDED 1 October 2026 — regenerated from the rewritten scene 1 with `sheets/mara.jpg` and `sheets/mara-face.jpg` attached and nothing else, installed over `s1/03-mara-walks.jpg`. There is no crossing walk any more: the revision leaves her standing in the doorway from the first line, so she holds and the phone carries the frame's only movement — nothing crosses, no headlights swing, no car reverses. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace; the small red enamel bird clip reads pinned above her right temple. Reviewed at full size. The letter rewrite, the layout pass and the fresh pass below are this frame's history, not the current image's provenance.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — the cold open is back to the walk: she is moving through the street, she is not standing in the doorway when the scene finds her. RETAKE LANDED 3 October 2026 — regenerated on the director's restored opening in the walk-and-the-lane round, from the screenplay text with a FACE CROP of `sheets/mara-face.jpg` as the only image reference (the crop anchors the face exactly and its pose, framing and lighting are ignored), installed over `s1/03-mara-walks.jpg`. She walks fast down the wet street toward camera, arms folded, the ringing phone the only still thing in the frame — the screen reads VERA; there is no crossing walk and no doorway holds her. Wardrobe locked to the Mara continuity sheet: indigo denim jacket, grey tee, black jeans, white trainers, black cord necklace; the small red enamel bird clip reads pinned above her right temple (camera right). The raw came back portrait and the 16:9 cut holds her head to hip — face, phone and folded arms in frame. Reviewed at full size; approval of the new pixels is the director's. Earlier note: RETAKE LANDED 1 October 2026 — regenerated from the rewritten scene 1 with `sheets/mara.jpg` and `sheets/mara-face.jpg` attached and nothing else, installed over `s1/03-mara-walks.jpg`. The letter rewrite, the layout pass and the fresh pass below are this frame's history, not the current image's provenance.
 
 4. CLOSE-UP — 85mm, static, eye level — Mara's phone.
 Her phone buzzes; the screen shows the caller, VERA. Rain on the glass and on her hands. She looks at it. Lets it ring.
@@ -78,7 +78,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 7
 IMAGE: 06-barbershop-doorway.jpg
-NOTE: REWRITE 2 OCTOBER 2026 (director) — this beat is Mara arriving in the recess, with a scooter and crates in front of her; the image on file shows the old man approaching and no scooter, and awaits a retake. Earlier note: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` and `sheets/sakai.jpg` only, installed over `s1/06-barbershop-doorway.jpg`. She does not duck in — she is already in the doorway, and the frame is what she looks at. The doorway has to read as a place she could stay for the whole scene: it does, and the barbershop pole sits at its right edge, unlit, in the same position and colours it returns to in shot 17. Reviewed at full size.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — this beat is Mara arriving in the recess, with a scooter and crates in front of her. RETAKE LANDED 3 October 2026 — regenerated on the director's restored opening in the walk-and-the-lane round, from the screenplay text with a FACE CROP of `sheets/mara-face.jpg` as the only image reference, installed over `s1/06-barbershop-doorway.jpg`. She slips into the recessed dark doorway, ducking behind a parked scooter and stacked beer crates, and presses back into the shadow; the crates hide her from anyone in the lane. The doorway has to read as a place she could stay for the whole scene: it does. Honest caveat on the pixels: the barber pole reads LIT and bright in the study where the master keeps it unlit — dress it dark on set (the same caveat the letter-rewrite study carried), and the awning carries painted shop lettering. Reviewed at full size; approval of the new pixels is the director's. Earlier note: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` and `sheets/sakai.jpg` only, installed over `s1/06-barbershop-doorway.jpg`. She does not duck in — she is already in the doorway, and the frame is what she looks at. The barbershop pole sits at its right edge, unlit, in the same position and colours it returns to in shot 17.
 
 7. FULL — 50mm, static, eye level — the old man, hurrying.
 An OLD MAN (70s) in a cheap raincoat and a grey flat cap comes in from the road, one hand pressed to his side as if something is hidden there. He keeps looking back.
@@ -87,7 +87,7 @@ CAST: The Old Man, Mara Voss
 LIGHT: Practical night
 TIME: 8
 IMAGE: 07-old-man.jpg
-NOTE: REWRITE 2 OCTOBER 2026 (director) — the old man now wears a cheap raincoat and a grey flat cap and arrives from the road, not up the street in a good coat; the image on file shows the old coat and no cap and awaits a retake. Earlier note: He must pass within a metre of her; the flicker of recognition is the letter rewrite's first beat — Sakai knows her face and leads the killers away from her, so the doorway stays in shadow and she gets no reaction shot. Retake 28 September 2026 (the letter rewrite): same camera, same street masters, same wardrobe; Mara now reads in the doorway as in the draft. The barber pole reads slightly lit in the retake; the master keeps it unlit — dress it dark on set.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — the old man now wears a cheap raincoat and a grey flat cap and arrives from the road, not up the street in a good coat. RETAKE LANDED 3 October 2026 — regenerated on the director's restored opening in the walk-and-the-lane round, from the screenplay text with a FACE CROP of `sheets/sakai-face.jpg` (a derivative crop of `sheets/sakai.jpg`'s face panel, made in this round) as the only image reference, installed over `s1/07-old-man.jpg`. One man and his walk: slight, seventies, cheap translucent beige raincoat over a dark suit, grey flat cap on his thin grey-white hair, one hand pressed to his side, hurried and uneven footsteps, his head turned back over his shoulder — he keeps looking back. The background is soft out-of-focus shutters only: the brief deliberately names no doorway, no scooter, no crates and no second person, because every earlier attempt with those nouns drew Mara at the doorway or the masked-men beat in his place. The raw came back square and the 16:9 cut holds him head to knee. Reviewed at full size; approval of the new pixels is the director's. Earlier note: He must pass within a metre of her; the flicker of recognition is the letter rewrite's first beat — Sakai knows her face and leads the killers away from her, so the doorway stays in shadow and she gets no reaction shot. Retake 28 September 2026 (the letter rewrite): same camera, same street masters, same wardrobe; Mara now reads in the doorway as in the draft. The barber pole reads slightly lit in the retake; the master keeps it unlit — dress it dark on set.
 
 9. MEDIUM CLOSE-UP — 85mm, static, eye level — the old man stops.
 He has seen the red clip. He stops, six metres short of her doorway; for one second his whole face changes.
@@ -96,7 +96,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 7
 IMAGE: 09-old-man-stops.jpg
-NOTE: REWRITE 2 OCTOBER 2026 (director) — he has stopped because he saw the clip, not because he knows there is no point, and then he refuses her; the image on file shows him from behind and awaits a retake. Earlier note: Keep the headlights as a soft glow on the wet road, never a white beam in frame — the film never shows where the light comes from.
+NOTE: REWRITE 2 OCTOBER 2026 (director) — he has stopped because he saw the clip, not because he knows there is no point, and then he refuses her. RETAKE LANDED 2 October 2026 — regenerated on the director's restored opening in the walk-and-the-lane round, from the screenplay text with a FACE CROP of `sheets/sakai-face.jpg` as the only image reference, installed over `s1/09-old-man-stops.jpg`. MEDIUM CLOSE-UP, front three-quarter: the brim of the grey flat cap, rain running off it, the collar of the translucent beige raincoat up around his neck — recognition, fear, and something like a decision — one hand pressed to his side, then he begins to shake his head, barely. No beam and no car in frame yet: the sedan is still this shot's future. Reviewed at full size; approval of the new pixels is the director's. Earlier note: Keep the headlights as a soft glow on the wet road, never a white beam in frame — the film never shows where the light comes from.
 
 10. WIDE — 24mm, static, eye level — the suppressed shot.
 The old man stands between the two masked men and Mara's doorway in the white of the high beams, a small figure with his shadow stretching down the lane toward her. A suppressed shot, flat and ordinary, like a door closing; he folds onto the street.
@@ -183,7 +183,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 328-the-scrap.jpg
-NOTE: Placeholder slot for the 2 October 2026 cold-open rewrite. A torn scrap of paper in a wet hand, biro, her fast square-ish handwriting: 1.00 Sakai, an address beneath it (the old retired coverage 280 read Kanda 2-3-1 — keep that address), and under that, underlined twice, "just listen." Rain on the paper; her cuff and the denim jacket only.
+NOTE: INSERT, 85mm, high angle — the film's first piece of paper: a small torn scrap held in her wet hands, the hands only, her soaked indigo denim jacket cuff and grey tee sleeve at the frame's edge, rain drops landing on the paper. Written on it in biro, in fast square-ish handwriting, three lines: "1.00 Sakai", beneath it a small address, and beneath that "just listen." underlined twice. Nothing else in frame; no face. Delivered 2 October 2026, walk-and-the-lane round: screenplay text and a face crop of the character sheet as the only image reference, full-bleed 1920×1080. Production approval pending. Honest caveat, said plainly: the address on the scrap reads 2-14-3 Kita-Umeda where the canon the board asked for is Kanda 2-3-1 (the address the retired coverage 280 read) — the prop must be dressed to Kanda 2-3-1 on set, or this insert is retaken. The name line, the handwriting and the double underline all read as asked.
 
 329. WIDE — 35mm, static, eye level — the lane, and her watch.
 She looks down the lane. At the far end, the bar sign. She checks her watch (12.45). Early.
@@ -192,7 +192,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 7
 IMAGE: 329-the-lane-the-watch.jpg
-NOTE: Placeholder slot. Over her shoulder or from the side: the length of the wet lane to the amber bar sign at the far end, her wrist and a cheap watch showing 12:45. Same street masters as shot 1 are not to be attached: screenplay text and character sheets only.
+NOTE: WIDE, 35mm, eye level, from beside her shoulder — the length of the wet lane laid out ahead: shuttered shops, rain falling through every light, and at the far end the small amber glow of a bar sign, the only warm light down the street. In the near foreground her wrist and a cheap plain watch on it; her other hand holds a folded scrap of paper. Early. Nobody else in the street; no car. Delivered 2 October 2026, walk-and-the-lane round: screenplay text and a face crop of the character sheet as the only image reference, full-bleed 1920×1080. Production approval pending. Honest caveat, said plainly: the dial reads about 8:10 where the beat is 12:45 — the watch is small in frame; dress it to 12:45 on set or retake the insert.
 
 330. MEDIUM — 50mm, static, eye level — the red clip catches the light.
 She leans out of the shadow. The red bird clip catches the street light.
@@ -201,7 +201,7 @@ CAST: Mara Voss
 LIGHT: Practical night
 TIME: 5
 IMAGE: 330-the-red-clip.jpg
-NOTE: Placeholder slot. Half her face leaving the recess's shadow, the small red enamel bird clip above her right temple lit by the street light — the single warm point in the frame.
+NOTE: MEDIUM SHOT, 50mm, eye level — half of Mara's face leans out of the deep shadow of the barbershop recess; only half her face leaves the shadow. The small red enamel bird clip in her rain-flat ash-blonde hair catches the street light above her right temple (camera right): the single warm point in the frame. Rain on her hair and cheek, wary pale blue eyes looking down the lane. Quiet; no one else in frame. Delivered 3 October 2026, walk-and-the-lane round: screenplay text and a face crop of `sheets/mara-face.jpg` as the only image reference, full-bleed 1920×1080. Production approval pending. Honest caveat, said plainly: the study carries the striped pole twice — once half-cut at the frame edge, where the canon puts the street's ONE pole at the recess's right edge, and once more as a second barber pole standing in the middle distance. The street has one pole; dress the second out on set.
 
 331. MEDIUM CLOSE-UP — 85mm, static, eye level — he refuses.
 Then he shakes his head. Barely. A man refusing a stranger. And he turns his back on her, slowly, to face the road.
@@ -210,7 +210,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 7
 IMAGE: 331-he-refuses.jpg
-NOTE: Placeholder slot. The old man in his cheap raincoat and grey flat cap, six metres from the doorway, shaking his head once, barely, then turning away. No pleading, no pointing.
+NOTE: MEDIUM CLOSE-UP, 85mm, eye level — the old man in the grey flat cap and the cheap translucent beige raincoat, six metres short of the doorway, shakes his head once, barely — a man refusing a stranger — his face quiet and closed, and begins to turn his back on her, slowly, to face the road. One hand pressed to his side. Rain on the cap's brim and the coat's shoulders. No pleading, no pointing; nobody else in frame. Delivered 2 October 2026, walk-and-the-lane round: screenplay text and a face crop of `sheets/sakai-face.jpg` as the only image reference, full-bleed 1920×1080. Production approval pending. He faces camera in the study and wears no glasses; the face matches `sheets/sakai-face.jpg` and the shot 9 study. Reviewed at full size.
 
 332. WIDE — 24mm, static, eye level — the sedan blocks the lane.
 Behind him, at the mouth of the lane, headlights. A black sedan pulls across the opening and stops, blocking it. Its high beams shine straight down the lane, lighting the rain in long white columns.
@@ -219,7 +219,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 8
 IMAGE: 332-the-sedan-blocks-the-lane.jpg
-NOTE: Placeholder slot. The sedan broadside across the mouth of the lane, high beams straight down it, rain in white columns; the old man a small figure in front. The layout canon holds: the sedan never enters the lane.
+NOTE: WIDE, 24mm, eye level, looking down the lane toward its mouth — a black four-door sedan has pulled broadside across the mouth of the lane and stopped, blocking it; its high beams shine straight down the wet asphalt, lighting the falling rain in long white columns and the tangled wires overhead. In the middle of the lane in front of the glare stands the small figure of the old man in the grey flat cap and the translucent beige raincoat, facing it. Shuttered shops and the barbershop recess along the sides; no bar glow in this direction. The layout canon holds: the sedan never enters the lane. Distant and non-graphic: no weapon, no muzzle flash, no blood. Delivered 2 October 2026, walk-and-the-lane round: screenplay text and a face crop of `sheets/sakai-face.jpg` as the only image reference, full-bleed 1920×1080. Production approval pending. Reviewed at full size.
 
 333. WIDE — 35mm, static, low angle — the old man in the white light.
 The old man doesn't move. He stands between them and Mara's doorway, a small figure in the white light, his shadow stretching long down the lane toward her.
@@ -228,7 +228,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 9
 IMAGE: 333-the-white-light.jpg
-NOTE: Placeholder slot. Two masked men as black silhouettes walking in against the glare, the old man between them and the barbershop doorway, his shadow stretching long toward the recess where Mara hides behind the scooter and crates.
+NOTE: WIDE, 35mm, low angle — two masked men, in black quilted jackets, black gloves, dark knit caps and black nose-and-mouth masks showing only the eyes, walk in down the lane as black silhouettes against the white glare of the sedan's high beams at the mouth of the lane behind them; rain in long white columns through the beams. Between them and the barbershop doorway at the lane's side stands the old man in the grey flat cap and the translucent beige raincoat, a small figure in the white light; the recess's parked scooter and stacked beer crates hide someone in shadow. Distant and non-graphic: no weapon visible, no muzzle flash, no blood. Delivered 3 October 2026, walk-and-the-lane round: screenplay text and a face crop of `sheets/sakai-face.jpg` as the only image reference, full-bleed 1920×1080. Production approval pending. Honest caveat: the men read as pure silhouettes as asked and the old man's long shadow down the asphalt is only faintly legible in the study. Reviewed at full size.
 
 ## Passes
 

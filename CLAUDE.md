@@ -6,6 +6,23 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
+## Latest session — 2–3 October 2026: the walk-and-the-lane round (scene 1's restored opening)
+
+The director's restored cold open landed. Scene 1's six rewrite slots **328–333** are delivered and
+the retakes of **3, 6, 7 and 9** regenerated on the current text, each installed over its own stable
+filename at 1920×1080 and reviewed at full size. Every face-bearing frame was drawn with a **face
+crop of the character sheet as the only image reference** (`sheets/mara-face.jpg` /
+`sheets/sakai-face.jpg`) — full sheets redraw their pose, text-only drifts faces; the METHOD note in
+`scripts/neonoire/cold-open-fresh-look.mjs` is the record. 3/6/7/9 are released from `RETAKE PENDING`
+and read Ready; 328–333 are Draft pending production approval; **shot 10's retake is the next
+session's first call** and the pin queue stands at 10 frames. 305 of 322 keyframes on disk — the 17
+placeholders are scene 6's 321–327 and scene 14A's 334–343. Honest caveats on the board notes: the
+scrap's address reads 2-14-3 Kita-Umeda (canon: Kanda 2-3-1), 329's watch reads about 8:10 (beat:
+12:45), 6's barber pole reads lit (master: unlit), 330 carries a second barber pole (the street has
+one). Thirty-five generations across four turns — the [ledger](docs/neonoire/passes/cold-open-walk-and-the-lane-2026-10-02.md)
+accounts every call, including the workspace snapshot that lost the first approved raws. Read it
+before touching scene 1.
+
 ## Latest session — 2 October 2026 (night): scene 14A, Vera and Jack in the car
 
 The director added **14A** (INT./EXT. JACK'S CAR, KANDA - NIGHT, between 14 and 15) so their closeness is planted before scene 22: she tails his car, they sit out a stakeout, he follows her home. 103 scenes, 322 shots; boards **334–343** are placeholders (next free number **344**), no voices yet. It deliberately names no Sakai or Ishida, never lights the lighter and shows no grey car; `verify:neonoire` guards all three. The pre-14A script is kept as `docs/neonoire/baseline/Neonoire_PreScene14A_2026-10-02.fountain` and saved workspaces on a known default receive the scene (`newSceneIds` in the sync). Read the bible's Part 9 item 17 and the handoff before touching it.

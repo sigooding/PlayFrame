@@ -21,7 +21,16 @@ const pendingNotesHashes: Record<string, string> = {
   "neonoire-shot-311": "1d4cfe53d1bf01f461fe4de80a63f49698b5f9b33801538f91cbecb7702a2108",
   "neonoire-shot-313": "a86933ed196d8ce0e1654a5d48b72ca1ec59ab815e252357422cf83703c04762",
   "neonoire-shot-314": "c77534bc34f20ed9a9ab6ba1c568930f19221a8952d7fe606ea4952251ccad77",
-  "neonoire-shot-320": "7290623c4a0797d5006cf5db094fb6fce7bc4e93d14180f7ca32e8b5f8283d90"
+  "neonoire-shot-320": "7290623c4a0797d5006cf5db094fb6fce7bc4e93d14180f7ca32e8b5f8283d90",
+  // The walk-and-the-lane round (2–3 October 2026): scene 1's six rewrite slots, hashed from the
+  // placeholder notes the2 October bundle shipped them with, so a workspace still holding those
+  // defaults adopts the delivered frame, its status and its note in one piece.
+  "neonoire-shot-328": "4c05ce7dfdc26ee142ac4e789b251300f0b75b53a7b2b6383bd452aa18ace655",
+  "neonoire-shot-329": "f5bbc901d188cbaf36cf292a7fefb13fbd1af67d8daaab8472edd1126c8228fd",
+  "neonoire-shot-330": "04a8d2bb70c287d6cc43c9400dbeaedf6e7064ce86e29cc9871c44b81383fc72",
+  "neonoire-shot-331": "bed9dc1d1549e4ffee4221af06a5f448e84a446e0858d9de535655d8d19b621b",
+  "neonoire-shot-332": "d931b4c77efd079806dfb96e9203b908d8f278ef6a4cbc39e83157cb3d7ec3cb",
+  "neonoire-shot-333": "02b5724ff3124d9f69bc4d1c0078a541e577b0ce297edb2fce98f007b419be2a"
 };
 
 /** Marked as awaiting an image, not a custom image or a deliberately blank card. */

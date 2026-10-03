@@ -17,6 +17,7 @@ import { SCENES, parseBoard, readBoard } from "./neonoire/plan.mjs";
 import { streetsPassOneImages, streetsPassTwoImages } from "./neonoire/streets-look.mjs";
 import { dawnImages, jackRecastDone, jackRecastImages, jackRecastPending, policeDayImages } from "./neonoire/dawn-look.mjs";
 import { rewritePending } from "./neonoire/rewrite-pending.mjs";
+import { coldOpenRewriteCompleted } from "./neonoire/cold-open-fresh-look.mjs";
 import { remainingBoardsCompleted } from "./neonoire/remaining-boards.mjs";
 import { remainingBoardsFinalShots } from "./neonoire/remaining-boards-final.mjs";
 import { directorApprovedMainIds, directorReplacementShots } from "./neonoire/director-corrections.mjs";
@@ -199,27 +200,40 @@ for (const sheet of ["images/neonoire/sheets/sakai.jpg", "images/neonoire/sheets
   assert(w > h, `${sheet} exists and is a landscape cast sheet`);
 }
 assert(coldOpenFreshLook.includes("CHARACTER SHEETS ONLY") && coldOpenFreshLook.includes("no scene masters"), "The fresh-pass brief carries the character-references-only rule");
-pass(`cold-open: all ${coldOpen.length} surviving frames of scenes 1–2 are 1920×1080 fresh-pass images (8, 11 and 280–282 retired by the 30 September revision); the retake round of 1 October 2026 regenerated 3, 6, 17, 18 and 27 onto the rewritten text and released their pins`);
+pass(`cold-open: all ${coldOpen.length} surviving frames of scenes 1–2 are 1920×1080 fresh-pass images (8, 11 and 280–282 retired by the 30 September revision); the retake round of 1 October 2026 regenerated 3, 6, 17, 18 and 27 onto the rewritten text and released their pins, and the walk-and-the-lane round of 2–3 October 2026 retook 3, 6, 7 and 9 onto the director's restored opening and delivered the six new slots 328–333`);
 
 // The 30 September 2026 revision retired scene 1's coverage 280–282 and its shots 8 and 11 in
 // place; what remains of the cold open's first scene is its original run, minus the two retired
 // numbers, each frame re-pinned to the rewritten street.
 const s1frames = generationFrames.filter(frame => frame.sceneId === "neonoire-s1");
 assert.deepEqual(s1frames.map(f => shotNo(f)), [1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 16, 17, 18, 328, 329, 330, 331, 332, 333], "Scene 1 runs 1–18 with 8 and 11 retired, plus the 2 October cold-open slots 328–333 (by production number)");
-// The retake round of 1 October 2026: these four were regenerated from the rewritten scene 1 text
-// (see cold-open-fresh-look.mjs's RETAKE ROUND note), installed over their own filenames and reviewed at
-// full size, so the pins are released — the same treatment 305–307 got, and for the same reason.
-for (const n of [17, 18])
+// The retake rounds released their pins when the pixels landed: 17 and 18 on 1 October 2026, and 3, 6,
+// 7 and 9 in the walk-and-the-lane round of 2–3 October 2026 (see cold-open-fresh-look.mjs's METHOD
+// note — a face crop of the character sheet is the only image reference). Shot 10 stays pinned: its
+// brief is written and its retake is the next session's first call, by the round's own split.
+for (const n of [3, 6, 7, 9, 17, 18])
   assert(!rewritePending.has(`neonoire-shot-${String(n).padStart(2, "0")}`), `Scene 1's frame ${n} is released from its retake pin`);
-for (const n of [17, 18])
+for (const n of [3, 6, 7, 9, 17, 18])
   assert(!project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`).notes.includes("RETAKE PENDING"), `Scene 1's frame ${n} no longer carries the pin note`);
+for (const n of [3, 6, 7])
+  assert(project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`).notes.includes("RETAKE LANDED 3 October 2026"), `Scene 1's frame ${n} records the walk-and-the-lane round in its note`);
+assert(project.frames.find(f => f.id === "neonoire-shot-09").notes.includes("RETAKE LANDED 2 October 2026"), "Scene 1's frame 9 records the walk-and-the-lane round in its note");
+assert(rewritePending.has("neonoire-shot-10") && project.frames.find(f => f.id === "neonoire-shot-10").notes.includes("RETAKE PENDING"), "Shot 10 is the next session's first call and stays pinned");
 // The retired beats must be absent from the frames that replaced them, as recorded in the brief.
 const freshBrief = (await import("./neonoire/cold-open-fresh-look.mjs")).coldOpenFreshShots;
-for (const [n, mustNot] of [[3, "walks fast"], [17, "snags on the barbershop pole"], [18, "flashlight drifts"]]) {
+for (const [n, mustNot] of [[3, "stands in the recess"], [6, "the old man approaching"], [7, "good coat"], [9, "passing her by"], [9, "soft glow"], [10, "falling alone"], [17, "snags on the barbershop pole"], [18, "flashlight drifts"]]) {
   const prompt = freshBrief.find(e => e.n === n).prompt;
   assert(!prompt.includes(mustNot), `Shot ${n}'s generation brief still asks for the retired beat: ${mustNot}`);
 }
-pass("scene 1 after the revision: sixteen frames, the four re-pinned retakes delivered and released on 1 October 2026, the letter coverage retired with the cut beats");
+// The six walk-and-the-lane slots are delivered at 1920×1080 at status Draft with their round note.
+for (const n of [328, 329, 330, 331, 332, 333]) {
+  const frame = project.frames.find(f => f.id === `neonoire-shot-${n}`);
+  assert(frame.image, `Scene 1's slot ${n} is installed, not a placeholder`);
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `Slot ${n}: 16:9 delivery`);
+  assert(frame.notes.includes("walk-and-the-lane round"), `Slot ${n} names the round it came from`);
+  assert.equal(frame.status, "Draft", `Slot ${n} is a fresh draft study; production approval pending`);
+}
+pass("scene 1 after the revision: sixteen frames plus the six walk-and-the-lane slots 328–333 delivered, the retakes of 3, 6, 7 and 9 released on 2–3 October 2026, shot 10 held for the next session, the letter coverage retired with the cut beats");
 assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 still carries the letter-rewrite retake note the 30 September revision left standing");
 // Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
 // and out on foot, and the six blocked frames are retaken to the fixed pedestrian layout.
@@ -702,8 +716,8 @@ assert.deepEqual(placeholders.filter(f => shotNo(f) <= 307).map(f => shotNo(f)).
   [298, 299, 300, 302, 306, 307].filter(n => !remainingBoardsCompleted.includes(n)),
   "The story-pass-2 placeholders hold exactly the ungenerated slots (303 delivered, 304 retired with scene 97)");
 assert.deepEqual(placeholders.filter(f => shotNo(f) >= 308).map(f => shotNo(f)).sort((a, b) => a - b),
-  Array.from({ length: 36 }, (_, i) => 308 + i).filter(n => !remainingBoardsCompleted.includes(n)),
-  "Every revision board still to generate holds an honest placeholder (308–320, plus 321–333 for the 2 October rewrites of scenes 6 and 1, plus 334–343 for the inserted scene 14A)");
+  Array.from({ length: 36 }, (_, i) => 308 + i).filter(n => !remainingBoardsCompleted.includes(n) && !coldOpenRewriteCompleted.includes(n)),
+  "Every revision board still to generate holds an honest placeholder (308–320, plus 321–327 for the 2 October rewrite of scene 6, plus 334–343 for the inserted scene 14A — 328–333 are delivered in the walk-and-the-lane round)");
 const deliveredRemaining = project.frames.filter(f => remainingBoardsCompleted.includes(shotNo(f)));
 assert.equal(deliveredRemaining.length, remainingBoardsCompleted.length, "Every number the ledger calls delivered is on the board");
 for (const frame of deliveredRemaining) {
@@ -999,7 +1013,7 @@ for (const n of [193, 194]) {
   assert(!f.notes.includes("RETAKE PENDING"), `Shot ${n}: the pin note is gone with the pin`);
   assert(f.notes.includes("RETAKE LANDED 1 October 2026"), `Shot ${n} records the retake round in its note`);
 }
-assert(rewritePending.size === 14, "the standing queue is the nine frames left by the retake round plus the five the 2 October cold-open rewrite pinned (3, 6, 7, 9, 10)");
+assert(rewritePending.size === 10, "the standing queue is the nine frames left by the retake round plus cold-open shot 10 — the one frame the walk-and-the-lane round of 2–3 October 2026 left for the next session (3, 6, 7 and 9 released)");
 assert(officeLayoutLook.includes("ONE black rotary telephone"), "The office lock forbids the duplicated telephone");
 assert(project.frames.find(f => f.id === "neonoire-shot-166").notes.includes("room master for the whole film"), "Shot 166 is declared the room master");
 assert(project.frames.find(f => f.id === "neonoire-shot-87").notes.includes("no longer leads the room"), "Shot 87's study no longer leads the room");
@@ -1191,9 +1205,10 @@ if (awaiting.length) {
 }
 
 // ---------------------------------------------------------------- final missing-image pass, 1 October 2026
-// The nine final missing studies are delivered; the only honest placeholders left are scene 6's seven slots (321–327)
-// opened by the 2 October 2026 rewrite of the interview, each waiting for its own picture, never a borrowed one.
-assert.deepEqual(placeholders.map(f => shotNo(f)).sort((a, b) => a - b), [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343], "Only the 2 October slots (scene 6's 321–327, scene 1's 328–333, the inserted scene 14A's 334–343) are placeholders; none is a borrowed-image placeholder");
+// The nine final missing studies are delivered and scene 1's six walk-and-the-lane slots (328–333) with them; the
+// only honest placeholders left are scene 6's seven slots (321–327) opened by the 2 October 2026 rewrite of the
+// interview and scene 14A's ten (334–343), each waiting for its own picture, never a borrowed one.
+assert.deepEqual(placeholders.map(f => shotNo(f)).sort((a, b) => a - b), [321, 322, 323, 324, 325, 326, 327, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343], "Only the undelivered 2 October slots (scene 6's 321–327, the inserted scene 14A's 334–343) are placeholders; scene 1's 328–333 arrived in the walk-and-the-lane round, and none is a borrowed-image placeholder");
 assert.equal(remainingBoardsFinalShots.length, 9);
 for (const study of remainingBoardsFinalShots) {
   const frame = project.frames.find(f => f.shotNumber === study.n);
