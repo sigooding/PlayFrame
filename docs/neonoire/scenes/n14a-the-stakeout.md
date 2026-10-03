@@ -9,7 +9,7 @@ Grammar: through the windscreen and the mirror. Two people in a car in the rain 
 
 ## Frame format — 2 October 2026
 
-Shots 334–343 are **placeholder slots**: ten honest cards with no image, numbered after the 2 October rewrite slots (321–333). They await generation by the cold-open rules — screenplay text and character sheets only, no earlier frame attached — and each is 16:9, 1920×1080, full-bleed like every image in this film.
+**Six of the ten landed on 3 October 2026** — 334–339, generated against the cast sheets plus this scene's own locks (Jack's car, the red bird clip, the maroon hatchback, the pale-blue umbrella) and the delivered 334 as the mirror's own reference for 337 and 338; see [the pass-2 ledger](../passes/rewrite-slots-2-2026-10-03.md). **340–343 are still honest placeholder cards** with no image, naming the files they await, each 16:9, 1920×1080, full-bleed like every image in this film.
 
 Continuity locks for this scene:
 
@@ -31,7 +31,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-334
 IMAGE: 334-the-mirror.jpg
-NOTE: Placeholder slot for the 2 October 2026 insertion of scene 14A. The clip is the small red enamel bird of scenes 9 and 14, hung by a short loop of string, caught mid-swing. The headlights in the mirror are single and steady: the same distance every turn, never closer, never farther. No people in frame.
+NOTE: LANDED 3 OCTOBER 2026 — generated on the Mara street frame (the clip) and the scene-31 car, reviewed at full size and installed over its own filename. The mirror fills the frame with the small red enamel bird hung by a knotted loop of string, caught mid-swing, and inside the glass one pair of dipped headlights holding the same distance. No people. Unclosed caveats: the scene is set INSIDE Jack's 1980s silver-grey car of s31/169, whose interior is worn and period-worn, while this frame's roof lining and sun visors read modern — carry the s31 interior and its single dim headlight into any further 14A interior frame; and the bird's silhouette reads at full size as a rounded bird rather than the sheets' long-tailed clip.
 
 335. WIDE — 35mm, static, low level — the lane mouth.
 Kanda's backstreet at night, seen from behind and low: Jack's old grey sedan stopped at the mouth of the lane, engine and lights dead, exactly where the black sedan stopped in the cold open. Forty metres back along the wet road a pair of headlights slows, stops and goes out.
@@ -41,7 +41,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-335
 IMAGE: 335-the-lane-mouth.jpg
-NOTE: Placeholder slot. The car is `s31/169-the-only-car.jpg`, one headlight dimmer than the other, and the lane is the cold-open street: the vending machine's white at the corner, the amber bar sign at the far end. The following car is only a dark shape and two lamps going out.
+NOTE: LANDED 3 OCTOBER 2026 — generated on the scene-31 car, the scene-1 street master and Jack's sheet, reviewed at full size and installed over its own filename. The grey 1980s sedan stands at the lane's mouth with its engine and lights dead, seen from behind; the lane recedes to the bar sign's amber at the far end; forty metres back on the wet road are two headlights small and blurred, stopped, with the car no more than a dark shape. Unclosed caveats: the frame reads horizontal rather than low, and the car's own lights are not available to judge the dim/normal headlight pairing the scene locks — a later frame of the car lit (or the 337 study) must carry it.
 
 336. MEDIUM — 50mm, static, eye level — the lighter.
 A maroon hatchback's side window, steamed and wound halfway down. Vera at the wheel, both hands on it, looking up. Outside in the rain Jack holds out his open palm: the old steel lighter, open, unlit.
@@ -51,7 +51,7 @@ LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-336
 IMAGE: 336-the-lighter.jpg
-NOTE: Placeholder slot. The joke is that what looked like a hand going for a gun was a lighter: it must read at a glance, with no flame, and nothing else in his hand. Vera follows `sheets/vera.jpg`, no clip. Rental sticker in the windscreen.
+NOTE: LANDED 3 OCTOBER 2026 — generated on Vera's and Jack's sheets, reviewed at full size and installed over its own filename. The first study of this frame came back PORTRAIT and was thrown away (a cast-match/framing failure is a regenerate, not a caveat); the installed landscape retake gives the half-open steamed window, Vera at the wheel with both hands on it looking up, and Jack's open palm with the old silvery lighter open and unlit, with no flame and nothing else in his hand, the rain between them. Unclosed caveats: the lighter is silver and contemporary rather than the worn steel of scene 89 and it reads larger than life in his palm; and the car reads as a small SUV rather than this scene's boxy maroon hatchback — the 337 master shows the maroon car, so the two frames must be reconciled before print.
 
 337. TWO-SHOT — 35mm, static, eye level — engine off.
 Through the streaked windscreen, from the bonnet: Jack and Vera side by side in the dark car, engine off, the rain turning the lane into smears of light. At the far end, small and amber, the bar sign. The red bird clip hangs in the mirror above them and the blue umbrella drips on the floor.
@@ -61,7 +61,7 @@ LIGHT: Practical night
 TIME: 9
 ID: neonoire-shot-337
 IMAGE: 337-engine-off.jpg
-NOTE: Placeholder slot. The scene's master: both faces readable through the glass, both looking forward at the lane, a hand's width of seat between them. The clip must be in frame. Keep the interior bare and old: no phone, no brands.
+NOTE: LANDED 3 OCTOBER 2026 — the scene's master. Generated on both cast sheets, the scene-31 car and the delivered 334, reviewed at full size and installed over its own filename. Seen from outside the bonnet through the rain-streaked, unwiped windscreen: both faces readable and forward on the lane, a hand's width of seat between them, the interior lit by a soft green dashboard glow, the red bird clip hanging from the mirror, and the closed pale-blue umbrella in shot between them. Unclosed caveats: the umbrella lies on the seat with its crook upward instead of dripping on the floor, where the board puts it; the windscreen is almost clear where the board asks for the lane smeared into streaks; the mirror interior again reads newer than the s31 car; and this frame is the reference the next 14A interior frames should copy, with those three corrections.
 
 338. INSERT — 85mm, static, high angle — the rice ball.
 Vera's lap: a convenience-store rice ball, unwrapped and uneaten, her hands lying beside it. At the edge of the frame the paper bag, and the hem of the charcoal coat.
@@ -71,7 +71,7 @@ LIGHT: Practical night
 TIME: 5
 ID: neonoire-shot-338
 IMAGE: 338-the-rice-ball.jpg
-NOTE: Placeholder slot. The seed of the breakfast in 25A: she feeds other people and forgets to eat. Her hands do not hold it; no bite out of it.
+NOTE: LANDED 3 OCTOBER 2026 — generated from Vera's sheet and the delivered 334, reviewed at full size and installed over its own filename. Her lap, both hands lying loose on the charcoal coat, and the rice ball open on her thighs with no bite taken; the brown paper bag at the frame's edge and the maroon car's old seat behind her. Unclosed caveats: the rice ball still sits in its clear film wrapper with its printed label — the board asks for it unwrapped; the wrapper's label is a small legible block at full size; and the coat reads lighter grey-navy than Vera's charcoal sheet.
 
 339. MEDIUM CLOSE-UP — 85mm, static, eye level — not running from you.
 Jack in profile, eyes on the lane, saying it to the windscreen. Vera in the foreground, half out of focus, has turned to look at him for the first time since she sat down. He does not look back.
@@ -81,7 +81,7 @@ LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-339
 IMAGE: 339-not-running-from-you.jpg
-NOTE: Placeholder slot. The scene's one close-up, and rare on purpose: the warmth is entirely in her face and entirely withheld in his. Light from the lane's amber and the dashboard; no tears, no smile.
+NOTE: LANDED 3 OCTOBER 2026 — generated on both cast sheets and the delivered 337, reviewed at full size and installed over its own filename. Jack in profile at the right of frame, eyes forward on the lane, saying it to the windscreen; Vera close to the lens in the left foreground in soft focus, the amber of the bar sign smeared on the glass between them; no tears and no smile. Unclosed caveat, and the one that matters: **she is not looking at him** — her gaze stays on the lane too, where the board has her turn to him for the first time since she sat down, so the beat reads from his side only. This frame is the first candidate for a retake in the next 14A pass. The mirror and roof lining again read newer than the s31 car.
 
 340. WIDE — 35mm, static, eye level — the shuttered door.
 The lane from the car's position through the glass: a man under a black umbrella tilted low, face lost beneath it, standing at the bar's shuttered door under the amber sign, one hand on the handle.
@@ -129,4 +129,5 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 
 | pass | shots | frames |
 | --- | --- | --- |
-| — | 334–343 | The mirror, The lane mouth, The lighter, Engine off, The rice ball, Not running from you, The shuttered door, Reflex, The plate, Forty metres back (placeholder slots) |
+| 34 | 334–340 | The mirror, The lane mouth, The lighter, Engine off, The rice ball, Not running from you (delivered 3 October 2026), The shuttered door (placeholder slot) |
+| 35 | 341–343 | Reflex, The plate, Forty metres back (placeholder slots) |

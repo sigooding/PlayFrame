@@ -6,7 +6,20 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 3 October 2026: the rewrite slots, pass one ("continue next shots")
+## Latest session — 3 October 2026 (later): the rewrite slots, pass two
+
+**"Continue"** took the head of the queue: scene 1's last three (**331** he refuses, **332** the sedan broadside across
+the lane mouth, **333** the old man in the white light) and **scene 14A's first six** (**334–339** — the mirror, the
+lane mouth, the lighter, **337 the scene's master**, the rice ball, not running from you). Ten generations, one thrown
+away (336's first study came back portrait), everything 16:9 at its stable path; **318/322 on disk, four placeholders
+left: 340 and 341–343**. Read [the ledger](docs/neonoire/passes/rewrite-slots-2-2026-10-03.md) before touching scene
+14A: the interiors read newer than the scene-31 car (337 is the master to copy, corrected), 336's car reads SUV rather
+than the locked maroon hatchback, and **339 leaves Vera looking at the lane instead of turning to Jack** — the retake
+candidate. Scene 1's caveats: 331 has a second elderly man in frame, 332 lights the pole, 333 invents a sign and loses
+the scooter. The delivered boundary is `scripts/neonoire/rewrite-slots.mjs`; `verify:neonoire` now also gates 14A's
+delivered/owed split.
+
+## Previous session — 3 October 2026: the rewrite slots, pass one ("continue next shots")
 
 **Ten generations, ten frames installed, nothing renumbered: the interview room's 321–327** (the form, her
 handwriting, the pen that stops, the passport photograph, squared to the corner, no trace, the inside pocket) **and

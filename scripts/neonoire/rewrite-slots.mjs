@@ -24,11 +24,19 @@
 // the rewrite's closed circle wanted finishing frame by frame (321–327), and three to the cold
 // open's first beats (328–330, the scrap, the lane and the watch, the red clip), in screenplay
 // order. Every frame was reviewed at full size before install and every remaining flaw is logged in
-// the boards and in docs/neonoire/passes/rewrite-slots-1-2026-10-03.md. Still queued for the next
-// pass, in order: 331, 332, 333 (scene 1) and the ten of scene 14A, 334–343.
+// the boards and in docs/neonoire/passes/rewrite-slots-1-2026-10-03.md.
+//
+// Pass 2, 3 October 2026 — ten more, in order again: scene 1's remaining three (331 the refusal,
+// 332 the sedan broadside across the lane mouth with its high beams down it, 333 the white light)
+// and scene 14A's first six (334 the mirror with the red bird clip, 335 the lane mouth with the
+// lights going out behind, 336 the open unlit lighter, 337 the scene's master through the
+// windscreen, 338 the rice ball she does not eat, 339 not running from you). 336's first study came
+// back portrait and was retaken the same session in landscape. Ledger:
+// docs/neonoire/passes/rewrite-slots-2-2026-10-03.md. Still queued, in order: 340 (the shuttered
+// door — the watcher at the bar's handle) and 341–343, the rest of scene 14A.
 export const rewriteSlots = Array.from({ length: 343 - 321 + 1 }, (_, index) => 321 + index);
 
-export const rewriteSlotsDelivered = [321, 322, 323, 324, 325, 326, 327, 328, 329, 330];
+export const rewriteSlotsDelivered = [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339];
 
 export const rewriteSlotsQueued = rewriteSlots.filter(n => !rewriteSlotsDelivered.includes(n));
 

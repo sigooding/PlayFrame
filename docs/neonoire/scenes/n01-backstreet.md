@@ -176,7 +176,7 @@ NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with
 
 The 30 September 2026 revision cut the beats the letter-rewrite coverage boarded: the 1:00 scrap of paper, the lit bar sign as an early arrival, the dying man's "Your father". Shots 280–282 are retired with them — their images stay on disk under their filenames for before/after review — and the scene's frames lose 8 and 11 to the shortened blocking. Nothing is renumbered.
 
-**The 2 October 2026 cold-open rewrite added 328–333** — the scrap, the lane and her watch, the red clip, he refuses, the sedan that blocks the lane and the old man in the white light — six slots for beats the scene had never boarded. **328, 329 and 330 landed on 3 October 2026** under the fresh-pass rule (character sheets only, no master, no layout sheet, no earlier frame attached); 331–333 are honest placeholders awaiting their generation, and their briefs are in [pass 34](../passes/pass-34.md). The pass's ledger is [rewrite-slots-1-2026-10-03](../passes/rewrite-slots-1-2026-10-03.md).
+**The 2 October 2026 cold-open rewrite added 328–333** — the scrap, the lane and her watch, the red clip, he refuses, the sedan that blocks the lane and the old man in the white light — six slots for beats the scene had never boarded. **All six landed on 3 October 2026** — 328–330 in pass 1, 331–333 in pass 2 — under the fresh-pass rule (character sheets only, no master, no layout sheet, no earlier frame attached). Nothing of the scene is owed any more. Ledgers: [pass 1](../passes/rewrite-slots-1-2026-10-03.md), [pass 2](../passes/rewrite-slots-2-2026-10-03.md).
 
 328. INSERT — 85mm, static, high angle — the scrap.
 The note in her hands. Her handwriting, in biro: 1.00 Sakai. Underneath is an address. Beneath that, underlined twice: "just listen."
@@ -212,7 +212,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 7
 IMAGE: 331-he-refuses.jpg
-NOTE: Placeholder slot. The old man in his cheap raincoat and grey flat cap, six metres from the doorway, shaking his head once, barely, then turning away. No pleading, no pointing.
+NOTE: LANDED 3 OCTOBER 2026 — generated with MARA's and SAKAI's sheets attached only, per the fresh-pass rule, reviewed at full size and installed over its own filename. The refusal reads exactly as the page asks: one head shake, barely, eyes already averted, shoulders beginning to turn from the doorway toward the road, his hand pressed to his side. Unclosed caveats: a SECOND elderly man stands in the lane's middle distance behind him (the same wardrobe, an echo of the master-era frames) — he must leave the frame before print; the doorway is off-frame left, so the six metres read only from the turn; and the shot carries more key light on the old man's face than the scene's night grade elsewhere. The first study of this frame was refused by the image service and re-composed with the attached street master.
 
 332. WIDE — 24mm, static, eye level — the sedan blocks the lane.
 Behind him, at the mouth of the lane, headlights. A black sedan pulls across the opening and stops, blocking it. Its high beams shine straight down the lane, lighting the rain in long white columns.
@@ -221,7 +221,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 8
 IMAGE: 332-the-sedan-blocks-the-lane.jpg
-NOTE: Placeholder slot. The sedan broadside across the mouth of the lane, high beams straight down it, rain in white columns; the old man a small figure in front. The layout canon holds: the sedan never enters the lane.
+NOTE: LANDED 3 OCTOBER 2026 — generated on the layout sheet `sheets/kanda-alley-layout.jpg`, the street master and the sedan master, reviewed at full size and installed over its own filename. The black sedan stands broadside ACROSS the lane's opening and never enters it; its high beams come straight down the lane and the rain reads as long white columns over a sheet of glare; the old man is a small figure from behind, facing away down the lane, his shadow thrown toward the camera; on the left the recess with the scooter and the stacked beer crates, on the right the vending machine's cold white. Unclosed caveats: the barber's pole is lit in the recess (the master keeps it unlit), and the car's number plate is faintly legible at full size and should be suppressed before print.
 
 333. WIDE — 35mm, static, low angle — the old man in the white light.
 The old man doesn't move. He stands between them and Mara's doorway, a small figure in the white light, his shadow stretching long down the lane toward her.
@@ -230,7 +230,7 @@ CAST: The Old Man
 LIGHT: Practical night
 TIME: 9
 IMAGE: 333-the-white-light.jpg
-NOTE: Placeholder slot. Two masked men as black silhouettes walking in against the glare, the old man between them and the barbershop doorway, his shadow stretching long toward the recess where Mara hides behind the scooter and crates.
+NOTE: LANDED 3 OCTOBER 2026 — generated on SAKAI's and the MASKED MEN's sheets plus the street master, reviewed at full size and installed over its own filename. Two men in black, knit caps and black nose-and-mouth masks walk in unhurried in single file as silhouettes against the glare, no faces readable; the old man — his raincoat now reading LIGHT BEIGE rather than the sheets' translucent cream — stands stock still between them and the dark recess on the left, his shadow stretching down the lane; inside the recess, barely visible past the crates, a crouched low shape. Unclosed caveats: the masks are higher on the head than the sheet's nose-and-mouth line; a second light column and a vehicle shape sit deep in the lane between the walkers (a far car must not read as a second sedan); a small illuminated EXIT バー sign hangs where the barber's crimson-white-blue pole should be the only sign near that end; and nothing in the frame shows the scooter the note names.
 
 ## Passes
 
@@ -239,4 +239,4 @@ NOTE: Placeholder slot. Two masked men as black silhouettes walking in against t
 | 1 | 1–9 | Backstreet, Vending, Mara walks, Mara phone, Phone off, Barbershop doorway, Old man, Old man stops, The two shots |
 | 2 | 12–18 | Masked man radio, Taillights gone, She kneels, The grip, The key, She runs, The purse in the rain |
 | 33 | 328–330 | The scrap, The lane and the watch, The red clip (delivered 3 October 2026) |
-| 34 | 331–333 | He refuses, The sedan blocks the lane, The white light (placeholder slots) |
+| 34 | 331–333 | He refuses, The sedan blocks the lane, The white light (delivered 3 October 2026) |

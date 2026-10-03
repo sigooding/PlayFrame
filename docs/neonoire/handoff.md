@@ -1,6 +1,38 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 3 October 2026: the rewrite slots, pass one — the interview's seven and the cold open's first three
+## Current — 3 October 2026 (later): the rewrite slots, pass two — nineteen frames in, four to go
+
+"Continue" put the head of the queue on the board: **scene 1's last three** — **331** he refuses, **332** the sedan
+broadside across the lane mouth with its high beams down it, **333** the old man in the white light — and **scene 14A's
+first six**, **334–339** (the mirror with the red bird clip, the lane mouth with the follower's lamps going out, the
+open unlit lighter, **337 the scene's master**, the rice ball she does not eat, not running from you).
+**Ten generations; one thrown away** (336's first study came back portrait — a framing failure is a regenerate, not a
+caveat). All 16:9 full-bleed 1920×1080 at their stable paths; `public/images/neonoire/s14a/` was created this pass.
+**318/322 keyframes on disk, 4 placeholders left: 340 (the watcher at the bar's handle) and 341–343.** Ledger:
+[rewrite-slots-2-2026-10-03](passes/rewrite-slots-2-2026-10-03.md); sheet:
+`reviews/rewrite-slots-2-2026-10-03.jpg`. Pass 1 (the interview's seven and the cold open's first three) is
+[here](passes/rewrite-slots-1-2026-10-03.md).
+
+**Five caveats that want a director's decision**, all in the boards and the ledger: 331 carries a **second elderly man**
+in the lane's middle distance (he must leave the frame — and the frame's first study was refused by the image service
+and re-composed with the street master); 332 lights the barber's pole the master keeps unlit and shows the plate;
+333 changes the old man's raincoat to light beige, rides the masks high, invents a second light column and an EXIT バー
+sign, and loses the scooter; **the 14A interiors (334, 337, 339) read newer than the scene-31 car** and 336's car reads
+as a small SUV rather than the locked maroon hatchback — **337 is the master further 14A frames must copy, with that car
+corrected**; and **339 leaves Vera looking at the lane instead of turning to Jack**, which is the first candidate for a
+retake. Smaller ones (335 horizontal rather than low; 336's lighter silver and oversize; 337's umbrella on the seat and
+a too-clear screen; 338's rice ball still in its wrapper) are in the board notes.
+
+**Mechanics:** the boundary module `scripts/neonoire/rewrite-slots.mjs` now reads `rewriteSlotsDelivered = 321–339` and
+`rewriteSlotsQueued = 340–343`; the builder and `verify:neonoire` both read it, and the verifier also holds 14A's
+delivered six to 16:9 `Draft` and its four owed slots to honest placeholders. `npm run passes:neonoire` writes pass 34
+(shot 340) and pass 35 (341–343) and reports **318/322, 4 to go**. Nine more digests were added to
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts`, so a saved workspace on a 2 October default receives the pictures
+on its untouched cards. `sync-scene6.mjs` was **not** re-run: the current bundle already contains 14A, and carrying it
+as an intermediate would re-insert a scene a workspace may have deleted. `build:neonoire`, `verify:neonoire`,
+`verify:shot-order`, `verify:revision:neonoire`, `check:assets`, `typecheck` and the production build all pass.
+
+## Previous — 3 October 2026: the rewrite slots, pass one — the interview's seven and the cold open's first three
 
 The director's instruction was **"continue next shots"**, and the next shots on the board were the slots the
 2 October rewrites opened. **Ten generations, ten frames installed, no retakes, nothing renumbered:** the interview
