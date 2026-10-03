@@ -34,9 +34,30 @@
 // back portrait and was retaken the same session in landscape. Ledger:
 // docs/neonoire/passes/rewrite-slots-2-2026-10-03.md. Still queued, in order: 340 (the shuttered
 // door — the watcher at the bar's handle) and 341–343, the rest of scene 14A.
+//
+// Pass 3, 3 October 2026 — the interviews the briefs could not settle were decided on the scene's own
+// logic, and the decisions are logged in the ledger and the handoff:
+//   * 331 was retaken again: the first pass-2 study carried a SECOND elderly man down the lane and the
+//     second came back with the subject's face smeared by motion blur; the third study — the one on the
+//     board — is a single figure, sharp, mid-turn from the doorway.
+//   * 336 was retaken: the study's car read as a small SUV where this scene locks a boxy MAROON
+//     hatchback; the retake is the maroon boxy hatchback the script says she drives.
+//   * 337's retake was THROWN AWAY: it invented red paper lanterns along a lane whose canon has none,
+//     and the darker grade hid the clip. The 14A master delivered in pass 2 stands.
+//   * 339 was retaken so that Vera TURNS TO LOOK AT JACK, which is the scene's beat — the pass-2 study
+//     left her gaze on the lane, which read from his side only.
+//   * 338 was retaken with the wrapper peeled back so the rice ball is genuinely opened and uneaten.
+//   * 340 (the watcher under the black umbrella at the bar's shuttered handle) and 341 (the arm
+//     across her, the umbrella turning to the car) and 342 (the plate written on the flattened paper
+//     bag, 56-19) are the pass's new frames.
+//   * 343 was generated and NOT installed: the study put the following grey sedan nose-on to the
+//     camera, so the frame contradicted itself — a follower driving the same way cannot face us while
+//     the car ahead shows its tail lights. The slot stays an honest placeholder with the direction
+//     spelled out in the board, and the study is recorded, not installed.
+
 export const rewriteSlots = Array.from({ length: 343 - 321 + 1 }, (_, index) => 321 + index);
 
-export const rewriteSlotsDelivered = [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339];
+export const rewriteSlotsDelivered = [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342];
 
 export const rewriteSlotsQueued = rewriteSlots.filter(n => !rewriteSlotsDelivered.includes(n));
 

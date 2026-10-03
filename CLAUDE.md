@@ -6,7 +6,23 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 3 October 2026 (later): the rewrite slots, pass two
+## Latest session — 3 October 2026 (evening): the rewrite slots, pass three
+
+**"If the shot description doesn't make complete visual sense go by the scene's logic and leave note in handoff."**
+Ten generations, eight frames installed, two studies thrown away, one slot left open: **321/322 keyframes on disk, the
+film's only placeholder is 343.** Delivered: 331 (retaken: single sharp figure — the earlier study carried a second
+elderly man, the one after it was blurred), 336 (retaken: the light at the window of the **maroon boxy hatchback** the
+script gives Vera, not the SUV the study drew), 338 (retaken: wrapper peeled back, rice bare, no bite), 339 (retaken:
+**Vera turns to Jack** — the page's beat is hers), plus new **340** (the watcher's hand on the bar's shuttered handle),
+**341** (the arm across her, the umbrella turning to the car) and **342** (the pencil plate **56-19** on the flattened
+bag). **337's retake was thrown away for stringing red lanterns down a lane whose canon has none and hiding the clip**
+— the pass-2 master stands and `verify:neonoire` asserts "no lanterns, ever". **343's study was not installed**: it
+took the following grey sedan nose-on to the camera while the hatchback ahead showed its tail lights, so the board now
+fixes the geometry — camera behind both cars, the follower showing its **rear**, forty metres back — and the slot
+waits. Read [the pass-3 ledger](docs/neonoire/passes/rewrite-slots-3-2026-10-03.md) and the handoff's seven permanent
+scene-logic decisions before regenerating anything in scenes 1 or 14A.
+
+## Previous session — 3 October 2026 (later): the rewrite slots, pass two
 
 **"Continue"** took the head of the queue: scene 1's last three (**331** he refuses, **332** the sedan broadside across
 the lane mouth, **333** the old man in the white light) and **scene 14A's first six** (**334–339** — the mirror, the

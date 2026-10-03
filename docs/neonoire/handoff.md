@@ -1,6 +1,55 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 3 October 2026 (later): the rewrite slots, pass two — nineteen frames in, four to go
+## Current — 3 October 2026 (evening): the rewrite slots, pass three — decided by the scene's logic, one frame left
+
+The director's instruction for this pass: **"if the shot description doesn't make complete visual sense go by the
+scene's logic and leave note in handoff."** Ten generations, **eight frames installed, two studies thrown away and one
+slot deliberately left open.** **321/322 keyframes on disk — the only placeholder left in the whole film is 343.**
+
+**Delivered:** 331 (retaken again: single figure, sharp, mid-turn from the doorway), 336 (retaken: the light is at the
+window of the boxy **maroon hatchback** the script gives her), 338 (retaken: the wrapper peeled back, rice bare, no
+bite), 339 (retaken: **Vera turns to Jack**), and the new **340** the watcher's hand on the shuttered handle, **341**
+the arm across her with the umbrella turned toward the car, **342** the pencil digits **56-19** on the flattened paper
+bag. Ledger: [rewrite-slots-3-2026-10-03](passes/rewrite-slots-3-2026-10-03.md); sheet:
+`reviews/rewrite-slots-3-2026-10-03.jpg`.
+
+### The scene-logic decisions this pass made (permanent unless the director overrides)
+
+1. **Vera's car is the small boxy maroon hatchback** — 336's first landscape study drew an SUV; the car is how Jack
+   identifies her, so the study went back.
+2. **339 must show Vera turning to look at Jack.** The page's beat — *"She looks at him for the first time since she
+   sat down. He is looking at the lane. He doesn't look back."* — is the whole scene; the pass-2 study left her on the
+   lane and was replaced.
+3. **331 is a single figure.** The lane is a three-hander (Mara hidden, the old man, the killers): the pass-2 study's
+   **second elderly man** was a cast error, and the retake that came back with the subject's face smeared by motion
+   blur was thrown away too. The installed third study is one man, sharp.
+4. **338 is genuinely unwrapped** — "unwrapped, uneaten" is the prop beat that pays off at 25A breakfast.
+5. **337 keeps the clip and the lane has no lanterns — ever.** Its retake strung red paper lanterns down a lane whose
+   canon has none and hung a red BAR sign; it was thrown away, the pass-2 master stands, and `verify:neonoire` now
+   asserts the rule survives in the bundle.
+6. **341's arm is a bar, not a hold** — forearm flat across Vera, hand braced at her far shoulder, his eyes forward,
+   hers down on the arm.
+7. **343 stays owed rather than fudged.** Its first study put the following grey sedan **nose-on to the camera** while
+   the maroon hatchback ahead showed its tail lights — a car facing us cannot be following a car driving away. The
+   board now fixes the geometry for the next generation: **the camera is behind both cars, so the sedan shows its
+   REAR** (its dim nearside lamp throwing light up the road, not at us), forty metres of shining asphalt separate it
+   from the hatchback's tail lights, nothing else on the road. `verify:neonoire` asserts that note.
+
+**Caveats carried, all in the board notes:** 331's doorway is off-frame and its barber pole reads vividly striped
+(unlit on the master) · 336's lighter is clean silver not worn steel, and the lane behind opens onto brick low-rises ·
+337's umbrella lies crook-up on the seat, its screen is nearly clear and its interior newer than the s31 car · 338's
+wrapper is too clean and her hands read young · 339's face is softer than the sheet · 340's amber sign prints the word
+**Bar** in Latin letters (the scene's sign is a wordless amber glow) and the lane is wider than the cold-open
+backstreet · 341's hand rests on her shoulder rather than gripping the seat · 342 shows only half a plate (never read
+back on screen) and the paper lies across both knees.
+
+**Mechanics:** `rewrite-slots.mjs` reads **delivered = 321–342, queued = [343]**; `npm run passes:neonoire` now writes
+**pass 35 for shot 343 alone** and reports **321/322, 1 to go**. Three placeholder-note digests (340–342) joined
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts`; `sync-scene6.mjs` was **not** re-run (the current bundle already
+contains 14A). `build:neonoire`, `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `check:assets`,
+`typecheck` and the production build all pass.
+
+## Previous — 3 October 2026 (later): the rewrite slots, pass two — nineteen frames in, four to go
 
 "Continue" put the head of the queue on the board: **scene 1's last three** — **331** he refuses, **332** the sedan
 broadside across the lane mouth with its high beams down it, **333** the old man in the white light — and **scene 14A's

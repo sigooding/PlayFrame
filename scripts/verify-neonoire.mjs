@@ -911,7 +911,7 @@ assert.deepEqual(s14aFrames.map(frame => shotNo(frame)), Array.from({ length: 10
 // Six of the ten landed on 3 October 2026 (pass 2); the four still owed stay honest placeholders.
 const s14aDelivered = s14aFrames.filter(frame => rewriteSlotsDelivered.includes(shotNo(frame)));
 const s14aOwed = s14aFrames.filter(frame => !rewriteSlotsDelivered.includes(shotNo(frame)));
-assert.deepEqual(s14aOwed.map(frame => shotNo(frame)), [340, 341, 342, 343], "14A's last four shots are still waiting for their pictures");
+assert.deepEqual(s14aOwed.map(frame => shotNo(frame)), [343], "14A's last shot is still waiting for its picture — its first study took the follower nose-on and was not installed");
 assert(s14aOwed.every(frame => !frame.image && frame.status === "Needs review" && frame.notes.includes("KEYFRAME MISSING")), "an undelivered 14A slot stays an honest placeholder naming its file");
 for (const frame of s14aDelivered) {
   assert(frame.image && frame.status === "Draft", `${frame.title}: a delivered 14A study, awaiting production approval`);
@@ -919,6 +919,10 @@ for (const frame of s14aDelivered) {
 }
 assert.equal(project.scenes.findIndex(scene => scene.id === "neonoire-s14a"), project.scenes.findIndex(scene => scene.id === "neonoire-s14") + 1, "14A follows scene 14 in the scene list");
 assert(project.frames.find(frame => frame.id === "neonoire-shot-336").notes.includes("open and unlit"), "14A's lighter frame keeps the lighter unlit and alone in his hand");
+// 343 is still a placeholder, so the direction rule lives on its board, not in a bundle note.
+const s14aBoard = readFileSync(join(root, "docs", "neonoire", "scenes", "n14a-the-stakeout.md"), "utf8");
+assert(/NOSE-ON/.test(s14aBoard) && /shows its REAR/.test(s14aBoard), "The film's last frame records why its first study was not installed: a follower cannot face the camera");
+assert(/no lanterns, ever/i.test(project.frames.find(frame => frame.id === "neonoire-shot-337").notes), "14A's master records the lane rule its thrown-away retake broke: no lanterns");
 pass("scene 14A after scene 14: no Sakai or Ishida named, the lighter never lit, no grey car, Jack's dim headlight held — six of its ten shots delivered on 3 October 2026, four still owed");
 
 const interviewAll = generationFrames.filter(frame => frame.sceneId === "neonoire-s6");
@@ -1227,9 +1231,9 @@ for (const frame of project.frames.filter(f => rewriteSlots.includes(shotNo(f)))
 for (const frame of project.frames.filter(f => [321, 322, 323, 324, 325, 326, 327].includes(shotNo(f)))) {
   assert(frame.image && frame.notes.includes("s6/51-the-interview-room.jpg") && frame.notes.includes("NO TIE"), `${frame.title}: the interview rewrite's frames stay on the room master and Ishida's wardrobe`);
 }
-assert.deepEqual(rewriteSlotsQueued, [340, 341, 342, 343], "After pass 2 the queue is scene 14A's last four, in screenplay order");
-assert.deepEqual(rewriteSlotsDelivered, Array.from({ length: 19 }, (_, i) => 321 + i), "Nineteen slots delivered so far: the interview's seven, scene 1's six and scene 14A's first six");
-pass("rewrite slots: nineteen frames installed at 16:9 and reviewed — the interview's seven, scene 1's six (scrap, lane, clip, refusal, sedan, white light) and scene 14A's first six; 340–343 remain honest placeholders");
+assert.deepEqual(rewriteSlotsQueued, [343], "After pass 3 the queue is the film's last frame, 343, held until a study keeps the follower behind the car it follows");
+assert.deepEqual(rewriteSlotsDelivered, Array.from({ length: 22 }, (_, i) => 321 + i), "Twenty-two slots delivered: the interview's seven, scene 1's six and scene 14A's nine");
+pass("rewrite slots: twenty-two frames installed at 16:9 and reviewed — the interview's seven, scene 1's six and scene 14A's nine (through the plate written on the bag); 343 stays an honest placeholder");
 
 assert.equal(remainingBoardsFinalShots.length, 9);
 for (const study of remainingBoardsFinalShots) {
