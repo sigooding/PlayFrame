@@ -1,5 +1,12 @@
 # NEONOIRE — keyframe pass 35
 
+> **DELIVERED 3 October 2026 — historical brief, not a request to regenerate.** Shot 343 was generated from the
+> corrected geometry below (camera behind both cars; the follower showing its rear), installed at
+> `public/images/neonoire/s14a/343-forty-metres-back.jpg`, and with it the board reads 322/322 with no placeholder
+> left. The first study's refusal and the rule it produced are recorded in
+> [rewrite-slots-3-2026-10-03.md](rewrite-slots-3-2026-10-03.md) and
+> [rewrite-slots-4-2026-10-03.md](rewrite-slots-4-2026-10-03.md); read those before touching 343.
+
 1 shot still to generate: shots 343–343, from scene 14 (INT./EXT. JACK'S CAR, KANDA).
 
 **Before you start**

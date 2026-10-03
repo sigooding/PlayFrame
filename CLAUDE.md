@@ -6,7 +6,22 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 3 October 2026 (evening): the rewrite slots, pass three
+## Latest session — 3 October 2026 (night): the rewrite slots, pass four — 322/322, the board is complete
+
+**One generation, one frame installed: 343 *Forty metres back*, and the film's last placeholder is gone — 322 of 322
+keyframes on disk, zero placeholder cards.** The study is the camera behind both cars, the old silver-grey sedan seen
+from its **rear** in the near right foreground with its lamps throwing light forward up the wet asphalt, the small
+boxy maroon hatchback far ahead as two red points, nobody else on the road. Pass three had thrown the first study away
+for taking the follower nose-on to the camera while the followed car showed tail lights, and had written the geometry
+down as a rule; the corrected study satisfies it. **`verify:neonoire` now reads owed = `[]`, queued = `[]`, delivered =
+321–343 and asserts no placeholder card is left**; `rewrite-slots.mjs` carries the empty queue, `plan.mjs` reads 14A as
+all ten on disk, `passes:README.md` reads 322 of 322, and the 343 placeholder-note digest joined `pendingNotesHashes`
+(23 digests, 321–343). **343's caveats:** the gap reads long rather than exactly forty metres, both cars' plates show as
+small blanks, and the dim nearside-headlight lock can't be judged from behind. Read
+[the pass-4 ledger](docs/neonoire/passes/rewrite-slots-4-2026-10-03.md) and the pass-4 section of the handoff.
+**The session branch is merged into `main` in this session** — the finished board is on `main`, no history rewritten.
+
+## Previous session — 3 October 2026 (evening): the rewrite slots, pass three
 
 **"If the shot description doesn't make complete visual sense go by the scene's logic and leave note in handoff."**
 Ten generations, eight frames installed, two studies thrown away, one slot left open: **321/322 keyframes on disk, the

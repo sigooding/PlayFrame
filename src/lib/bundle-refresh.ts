@@ -38,6 +38,7 @@ const pendingNotesHashes: Record<string, string> = {
   "neonoire-shot-340": "bec60ee888837c7759b7fcf4793d4178ba5cd84adc26b4220368c2877b778775",
   "neonoire-shot-341": "90440faef42a6b6fc478145d221a89b134ff1cad85a624bedf4dd58539c3b596",
   "neonoire-shot-342": "a9f5f813b691af6b65684c5a3a5f8f18877f7a67bceed2de610ef23aed755775",
+  "neonoire-shot-343": "d7f5fbfef5af7c554da00aecd3f304c05adc179d0404b685d2a96b5f4ac359a0",
   "neonoire-shot-298": "4e09581870d03c30fc6c864d522a1e836cf2c3f37038b3416e89d672ed4ad219",
   "neonoire-shot-299": "7de9dcd3dee77512884f97900be1d937b25972ca922ccfcf524da5ad47b7e193",
   "neonoire-shot-300": "ada2941f77ece1a37838837b1185aa045537b8c83a08b852426568f892974fc0",

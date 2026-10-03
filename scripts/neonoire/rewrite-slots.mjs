@@ -55,9 +55,17 @@
 //     the car ahead shows its tail lights. The slot stays an honest placeholder with the direction
 //     spelled out in the board, and the study is recorded, not installed.
 
+//
+// Pass 4, 3 October 2026 — the film's last frame, 343, generated to the geometry the board fixes: the
+// camera behind BOTH cars, the following silver-grey sedan seen from behind (its boot, its rear window,
+// a small forward glow from its dipped lamps) and the small maroon hatchback far ahead showing its tail
+// lights, forty metres of shining wet asphalt between them. The first study took the follower nose-on
+// and was never installed. The rewrite-slot queue is now EMPTY: every numbered keyframe of the film is
+// on disk. 8 and 11, 249, 272, 274, 280-282 and 304 stay retired where the revisions left them.
+
 export const rewriteSlots = Array.from({ length: 343 - 321 + 1 }, (_, index) => 321 + index);
 
-export const rewriteSlotsDelivered = [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342];
+export const rewriteSlotsDelivered = [321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343];
 
 export const rewriteSlotsQueued = rewriteSlots.filter(n => !rewriteSlotsDelivered.includes(n));
 

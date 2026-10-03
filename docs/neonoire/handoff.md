@@ -1,6 +1,45 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 3 October 2026 (evening): the rewrite slots, pass three — decided by the scene's logic, one frame left
+## Current — 3 October 2026 (night): the rewrite slots, pass four — the film's last frame, and the board is complete
+
+**One generation, one frame installed, one study thrown away: 343 *Forty metres back* — and with it
+322 of 322 keyframes on disk and zero placeholder cards anywhere in the film.** The pass exists because the
+director's standing instruction — *"if the shot description doesn't make complete visual sense go by the scene's
+logic and leave note in handoff"* — refused to fudge the film's final frame in pass three; the geometry was written
+down, and the corrected study landed here. Ledger: [rewrite-slots-4-2026-10-03](passes/rewrite-slots-4-2026-10-03.md);
+sheet: `reviews/rewrite-slots-4-2026-10-03.jpg` (the rejected nose-on study beside the installed frame — the whole
+rule in one picture). **Merged to `main` in this session**, no history rewritten, no force-push.
+
+**Installed:** `s14a/343-forty-metres-back.jpg` — the camera behind both cars: the old silver-grey sedan in the near
+right foreground seen from its **rear**, tail lights lit, its dipped glow thrown forward up the wet asphalt; the small
+boxy maroon hatchback far up the road as two red points; the centre line, sodium lamps, shuttered low buildings either
+side; nobody else on the road.
+
+### The decision this pass made (permanent unless the director overrides)
+
+**343's follower stays behind.** The shot's content is *following at forty metres*, so the pursuer is seen from behind
+with its lamps lighting the road **ahead** of it, never nose-on. The pass-three study that faced the sedan at the
+camera while the followed car showed tail lights was thrown away rather than softened; the board now carries the
+geometry as a rule and `verify:neonoire` asserts it (a follower cannot face the camera).
+
+**Caveats carried (in the board note):** 343's gap reads longer than exactly forty metres · both cars' number plates
+show as small blanks and should be suppressed before print · the dim nearside-headlight lock cannot be judged from
+behind, which is 335's caveat too.
+
+### Mechanics — the complete board
+
+`rewrite-slots.mjs` reads **delivered = 321–343, queued = []**; `build:neonoire` writes **322/322 keyframes on disk,
+0 placeholder cards**; `plan.mjs` reads 14A as all ten on disk; `verify:neonoire` reads **owed = [], queued = [],
+delivered = 23** and asserts `placeholders.length === 0`. `npm run passes:neonoire` now regenerates only the index —
+[passes/README.md](passes/README.md) reads **322 of 322** and lists this pass's ledger; `pass-35.md` stands, like the
+older pass files, as a historical brief, not a request to regenerate 343. The last placeholder-note digest (343) joined
+`pendingNotesHashes` in `src/lib/bundle-refresh.ts` — 23 digests, 321–343 — so a workspace on the 2 October default
+receives the final picture, title, status and note on its untouched card. `sync-scene6.mjs` was **not** re-run (the
+current bundle already contains scene 14A and must never be shipped as an intermediate). `build:neonoire`,
+`verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `check:assets` (929 references), `typecheck` and
+the production build all pass.
+
+## Previous — 3 October 2026 (evening): the rewrite slots, pass three — decided by the scene's logic, one frame left
 
 The director's instruction for this pass: **"if the shot description doesn't make complete visual sense go by the
 scene's logic and leave note in handoff."** Ten generations, **eight frames installed, two studies thrown away and one
