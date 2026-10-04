@@ -9,15 +9,17 @@ Grammar: through the windscreen and the mirror. Two people in a car in the rain 
 
 ## Frame format — 2 October 2026
 
-**All ten are installed (3 October 2026)** — 334–343, generated against the cast sheets plus this scene's own locks (Jack's car of scene 31, the red bird clip, the maroon hatchback, the pale-blue umbrella) and the delivered 334 as the mirror's own reference for the rest; see [the pass-2 ledger](../passes/rewrite-slots-2-2026-10-03.md), [the pass-3 ledger](../passes/rewrite-slots-3-2026-10-03.md) and [the pass-4 ledger](../passes/rewrite-slots-4-2026-10-03.md). Every frame is 16:9, 1920×1080, full-bleed like every image in this film.
+**Fifteen of the sixteen are installed; 348 is owed to its written geometry (4 October 2026).** The first ten, 334–343, were generated against the cast sheets plus this scene's own locks (Jack's car of scene 31, the red bird clip, the maroon hatchback, the pale-blue umbrella) and the delivered 334 as the mirror's own reference for the rest; see [the pass-2 ledger](../passes/rewrite-slots-2-2026-10-03.md), [the pass-3 ledger](../passes/rewrite-slots-3-2026-10-03.md) and [the pass-4 ledger](../passes/rewrite-slots-4-2026-10-03.md). The stakeout coverage, 344–350, was boarded and generated on 4 October 2026 against the scene's **new car canon sheets** — [the ledger](../passes/stakeout-coverage-2026-10-04.md) — with 348 left an honest placeholder after two studies contradicted the scene's geometry. Every frame is 16:9, 1920×1080, full-bleed like every image in this film.
 
 Four briefs were decided on the scene's own logic rather than the words of the study, and the decisions are permanent: **Vera's car is the small boxy maroon hatchback** the script gives her (336's first landscape study drew an SUV and was replaced); **the mirror's red bird clip is the frame's one warm point and the lane has no lanterns** — ever (337's retake invented a string of red paper lanterns and was thrown away rather than caveated); and **339 must show Vera turning to look at Jack**, because the page's beat is hers and his withholding is the whole scene (the pass-2 study left her on the lane and was replaced); and **343's follower stays behind the car it follows** — its first study took the sedan nose-on to the camera, was thrown away rather than fudged, and the installed frame (pass four) keeps the camera behind both cars, forty metres of wet road between them.
 
 Continuity locks for this scene:
 
+- **The cars have a canon of their own (4 October 2026):** [scripts/neonoire/car-canon-look.mjs](../../scripts/neonoire/car-canon-look.mjs) locks all five vehicles in the film in one prose block, and two of them carry sheets the way the cast do — **`sheets/jacks-car.jpg`** (four panels of the worn silver-grey sedan: front three-quarter with the nearside lamp dimmer, rear three-quarter, side profile, and the bare period cabin with the clip on the mirror) and **`sheets/vera-hatchback.jpg`** (four panels of the small boxy maroon rental hatchback, steamed glass and the white rental sticker). Every car frame attaches its sheet; neither vehicle is redrawn from memory. The watcher's small **white** car, the killers' **black** cold-open sedan and Ishida's driver's darker **grey** town car stay prose locks held to their delivered frames (s14a/340, s1/332, s61/228), and the canon repeats pass four's geometry rule: a following car is seen from BEHIND.
 - **Jack's car** follows `s31/169-the-only-car.jpg`: a boxy early-1980s four-door sedan in worn silver-grey, **one headlight dimmer than the other** (scenes 30–31). Inside it: bare dashboard, one rear-view mirror with the **red enamel bird clip on a loop of string**. The clip hangs there only in this scene; Jack gives it to Mara in scene 20.
 - **Vera's car** is a small, boxy **maroon** rental hatchback with a rental sticker in the windscreen and steamed glass. Never grey: the film's grey car is Ishida's driver's (scenes 61–70).
 - **Vera** wears her original look, `sheets/vera.jpg` (charcoal coat, cream knit, ash-blonde, **no clip**: it is on the mirror), and carries Mara's **pale blue** umbrella. **Jack** follows `sheets/jack.jpg` (charcoal overcoat, off-white open collar, 48).
+- **Seating sides in Jack's car:** Japan drives on the left, so the wheel is on the RIGHT and it is **Jack's** seat; Vera sits on the LEFT. A study that puts her at the wheel of his car is refused, not caveated (348, 4 October 2026).
 - **The lighter is never lit** in this film (scene 89 puts it back unlit). In 336 it is open in his palm and nothing more: no flame, and no gun anywhere in this scene.
 - **The lane** is the cold-open street (`s1` masters): the vending machine's cold white at the corner, the bar sign **amber** at the far end, the barber's pole, shutters down. The bar's door is shuttered.
 - **The watcher** is unnamed: dark raincoat, a **black** umbrella tilted low, face never seen. His car is a small **white** car, so that it is never mistaken for the black sedans of the killers or the grey car of scene 61. Not a police officer, and nothing in frame says whose man he is.
@@ -125,6 +127,82 @@ ID: neonoire-shot-343
 IMAGE: 343-forty-metres-back.jpg
 NOTE: LANDED 3 OCTOBER 2026 — and this frame took two studies and a written rule to land. The first study put the following silver-grey sedan NOSE-ON to the camera while the maroon hatchback ahead showed its tail lights: a car that faces us cannot be following a car that is driving away, so it contradicted the scene's whole geometry and was recorded in the ledger, never installed. The geometry was then fixed in words on this board — **the camera is behind BOTH cars, so the grey sedan shows its REAR (its dim nearside lamp throwing light forward up the road, not at us), forty metres of shining wet asphalt separate it from the maroon hatchback's tail lights, nothing else on the road** — and the installed study is exactly that: the old silver-grey sedan in the near right foreground seen from behind with its red tail lights and its dipped glow on the asphalt ahead, the small boxy maroon hatchback far up the road showing only its two tail lights, the wet road with its centre line running between them, sodium lamps and shuttered low buildings either side, nobody else on the road. Unclosed caveats: the gap reads long rather than exactly forty metres; both cars' number plates are visible as small blanks that should be suppressed before print; and the dim-nearside-headlight lock cannot be judged from behind (335's note carries the same caveat).
 
+## The stakeout coverage — the beats the first ten left (4 October 2026)
+
+Seven more shots, numbered at the end of the run as the house rule requires, covering the page's beats the first boarding sampled past: the walk back to her car, the knuckle at her window, the umbrella shaken onto his floor, the rice ball changing hands without a touch, the train behind them, the rice ball left on his dash, and the umbrella going up the road in his mirror. They were generated against the new car canon sheets (`sheets/jacks-car.jpg`, `sheets/vera-hatchback.jpg`), the cast sheets and the delivered 337 master; six landed and 348 did not.
+
+---
+
+344. WIDE — 35mm, static, low level — he walks back.
+The wet road from the lane mouth: his own sedan dark in the near foreground, rear to camera, lights dead; forty metres up the road the dark maroon hatchback standing nose-on to him because she was the one following; between them Jack walks back along the wet road, one hand in his coat pocket, head down in the rain. Nobody else on the road.
+SCRIPT: "Then he gets out and walks back along the wet road toward the dark car, one hand in his pocket."
+CAST: Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-344
+IMAGE: 344-he-walks-back.jpg
+NOTE: LANDED 4 OCTOBER 2026 — generated on the two new car canon sheets (sheets/jacks-car.jpg, sheets/vera-hatchback.jpg), Jack's sheet and the 335 and 343 road frames, reviewed at full size and installed over its own filename. The geometry is the scene's own: she FOLLOWED him, so her car stands nose-on to his while his shows its rear, both dark — the inverse of 343's following shot, and correct for the same rule. Unclosed caveats: the road reads as a shuttered shopping street of the lane's width rather than 343's two-lane road, so the two exteriors do not quite agree (the same family as 340's and 341's lane-width caveat); and an amber shop sign with faint kanji hangs mid-street where the canon keeps the bar's wordless amber at the lane's far end — read it as a shop, not the bar.
+
+345. MEDIUM CLOSE-UP — 85mm, static, eye level — the knuckle.
+The maroon hatchback's driver's window at night in rain, steamed and still closed: his knuckle rapping on the glass, the wet charcoal sleeve at the frame's edge; behind the glass the soft shape of her head and her two hands on the wheel.
+SCRIPT: "He raps on the driver's window with a knuckle."
+CAST: Vera Voss, Jack
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-345
+IMAGE: 345-the-knuckle.jpg
+NOTE: LANDED 4 OCTOBER 2026 — generated on the hatchback canon sheet, both cast sheets and 336, reviewed at full size and installed over its own filename. The window is still UP and the glass still steamed, which is the beat: she is a shape behind glass until it winds down. Unclosed caveats: the glass reads wet-clear enough to resolve her face where the board asks a steamed blur; his hand reads as a closed fist at the glass rather than a single rapping knuckle.
+
+346. INSERT — 50mm, static, high angle — onto his floor.
+His floor: the pale-blue umbrella shaken out and lying on the worn mat, dripping, drops scattered; above it the bare cracked dash and the manual winder, the lane smeared into light on the rain-streaked glass.
+SCRIPT: "Vera shakes the blue umbrella out onto his floor."
+CAST: —
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-346
+IMAGE: 346-onto-his-floor.jpg
+NOTE: LANDED 4 OCTOBER 2026 — generated on the sedan canon sheet, the 14A master and the scene-4 umbrella, reviewed at full size and installed over its own filename. The first 14A interior to carry the canon's worn cabin — cracked dash, manual winder, stained mat — so the "interior reads newer than the s31 car" caveat that 334, 337, 339 and 342 carry stops accruing here. Unclosed caveats: the canopy lies half-spread, as if just shaken, rather than folded and strapped; the amber sign beyond the glass carries a faint shape where the canon's bar sign is wordless.
+
+347. INSERT — 85mm, static, eye level — he takes it.
+The rice ball changing hands in the dark car: his taking it from below, hers releasing it from above, the fingers a centimetre apart and not touching; the opened paper bag on the seat below; the far amber glow smeared on the wet window.
+SCRIPT: "He takes it. Their fingers don't touch. Both notice that they don't."
+CAST: Vera Voss, Jack
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-347
+IMAGE: 347-he-takes-it.jpg
+NOTE: LANDED 4 OCTOBER 2026 — generated on both cast sheets, the 14A master and the rice-ball insert, reviewed at full size and installed over its own filename. Exactly two hands and one wrapped rice ball, and the gap between the fingers is the whole beat: neither hand closes it. Unclosed caveats: his hand reads older than 48, the vein caveat Jack's frames keep carrying; the wrapper's printed film carries scribble that stops short of a brand, which is where it must stay.
+
+348. TWO-SHOT — 35mm, static, eye level — the train.
+The train behind them: the mirror trembling on its stalk with the red bird caught mid-swing, and deep in its glass the lit commuter train crossing the road BEHIND the car; through the windscreen only the dark lane, shutters down, and the wordless amber sign at its far end. Vera turned toward the mirror watching the bird; Jack's profile forward on the lane, not looking back; the folded blue umbrella on the floor between them.
+SCRIPT: "A TRAIN passes somewhere behind them. The mirror trembles, and the red bird swings. Vera watches it."
+CAST: Vera Voss, Jack
+LIGHT: Practical night
+TIME: 7
+ID: neonoire-shot-348
+IMAGE: 348-the-train.jpg
+NOTE: OWED, 4 OCTOBER 2026 — two studies generated, neither installed, and the geometry written down here instead, exactly as 343's was in pass three. The first put the lit train THROUGH THE WINDSCREEN with an empty mirror: the page puts the train BEHIND them, and the trembling mirror is the only way this film shows it. The retake put the train correctly in the mirror but then sat VERA AT THE WHEEL of Jack's car — Japan drives right and it is HIS car, so Jack holds the right seat and Vera the left — and left a second lit train band across the lane's end in front. A frame that says something the scene denies is refused, not caveated. THE NEXT GENERATION HOLDS: Jack at the wheel on the RIGHT, Vera on the LEFT turned toward the mirror; the train ONLY in the mirror's glass, crossing the road behind; the windscreen shows the dark lane and the wordless amber sign and no train; the clip mid-swing from the tremor; the umbrella on the floor between them; no lanterns.
+
+349. INSERT — 50mm, static, eye level — still untouched.
+The rice ball set on his bare cracked dash, unwrapped and untouched, sharp in the foreground while her door stands open to the rain; she is behind the door, mid-step out, the cold street light on the wet seat.
+SCRIPT: "She sets the rice ball on his dashboard, still untouched, and gets out."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-349
+IMAGE: 349-still-untouched.jpg
+NOTE: LANDED 4 OCTOBER 2026 — generated on the sedan canon sheet, Vera's sheet, the master and the rice-ball insert, reviewed at full size and installed over its own filename. The onigiri stands on the dash with its nori patch and no bite, exactly as she leaves it for him; the open door hides her exit, which is the beat's privacy. Unclosed caveats: Vera reads only as her open door and the rain behind it — the exit itself is out of frame; a green lit sign glows at the lane's left where the canon keeps only the vending machine's cold white and the bar's amber.
+
+350. CLOSE-UP — 85mm, static, eye level — the umbrella goes.
+His mirror after she goes: the pale-blue umbrella open and small under the sodium lamp, going up the wet road and round the corner, the dark taking it; the red bird a warm speck at the mirror's corner on its knotted loop; below the mirror the untouched rice ball small and out of focus on the bare dash.
+SCRIPT: "In the mirror he watches the blue umbrella go up the wet road and round the corner, and the dark take it."
+CAST: —
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-350
+IMAGE: 350-the-umbrella-goes.jpg
+NOTE: LANDED 4 OCTOBER 2026 — generated on the sedan canon sheet, the mirror frame 334 and the lane-mouth frame 335, reviewed at full size and installed over its own filename. The mirror's grammar closes the scene the way 334 opened it: glass, clip, and the road behind. The umbrella is OPEN in the mirror because it is raining, and no headlights follow her — the dark takes it, as the page says. Unclosed caveats: the clip's loop reads as a thick dark cord rather than 334's thin string; the mirror's lane shows shutters both sides where 335's lane mouth opens on the road.
+
 ## Passes
 
 The keyframes are generated ten at a time in screenplay order, so a pass can straddle two scenes.
@@ -132,4 +210,4 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 | pass | shots | frames |
 | --- | --- | --- |
 | 34 | 334–340 | The mirror, The lane mouth, The lighter, Engine off, The rice ball, Not running from you, The shuttered door (all delivered 3 October 2026) |
-| 35 | 341–343 | Reflex, The plate, Forty metres back (all three delivered 3 October 2026) |
+| 35 | 341–350 | Reflex, The plate, Forty metres back (all three delivered 3 October 2026); then the stakeout coverage 344–350 — He walks back, The knuckle, Onto his floor, He takes it, Still untouched, The umbrella goes (six delivered 4 October 2026 on the new car canon sheets), with **348 The train owed**: two studies refused on the scene's geometry, the rule written in its note |

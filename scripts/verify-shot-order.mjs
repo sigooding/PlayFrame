@@ -114,7 +114,7 @@ assert.deepEqual(reorderFrameInScene(fixture, "not-a-frame", "later-low-number")
 assert.equal(sceneNumber(scenes[1], 1), "25A");
 assert.equal(shotNumber({ shotNumber: 310 }, 0), 310);
 assert.equal(shotNumber({}, 3), 4);
-assert.equal(nextShotNumber(project.frames), 344);
+assert.equal(nextShotNumber(project.frames), 351, "the run ends at 350: the stakeout coverage of 4 October 2026 took 344–350, so the next new frame joins at 351");
 assert.equal(nextShotNumber([{ id: "unnumbered" }]), undefined);
 pass("scene order is stable, unassigned shots go last, manual within-scene ordering and drag boundaries work");
 

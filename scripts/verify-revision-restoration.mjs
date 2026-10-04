@@ -56,12 +56,13 @@ const cache = "node_modules/.cache/verify-revision-restoration";
 mkdirSync(cache, { recursive: true });
 await build({ stdin: { contents: 'export * from "./src/lib/bundle-refresh";', resolveDir: process.cwd() }, outfile: `${cache}/lib.cjs`, bundle: true, platform: "node", format: "cjs", logLevel: "warning" });
 const { bundledFrameUpdates } = createRequire(import.meta.url)(`${process.cwd()}/${cache}/lib.cjs`);
+const scene6Sync = JSON.parse(readFileSync("src/lib/neonoire-scene6-sync.json", "utf8"));
 const old = structuredClone(project);
 old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 322);
+assert.equal(patch.frames.length, 329, "a saved workspace on the pre-restoration default receives every frame the film now carries, 344–350 included");
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);
@@ -104,7 +105,7 @@ pass("a saved workspace on the pre-rewrite default receives the 2 October rewrit
 // already has the new text but lacks the scene deleted it on purpose and keeps it deleted.
 const preScene14A = read("docs/neonoire/baseline/Neonoire_PreScene14A_2026-10-02.fountain").replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 const s14aIds = project.frames.filter(frame => frame.sceneId === "neonoire-s14a").map(frame => frame.id);
-assert.deepEqual(s14aIds, Array.from({ length: 10 }, (_, i) => `neonoire-shot-${334 + i}`), "scene 14A's ten slots are 334–343");
+assert.deepEqual([...s14aIds].sort(), Array.from({ length: 17 }, (_, i) => `neonoire-shot-${334 + i}`).sort(), "scene 14A's sixteen boarded slots are 334–350: the first ten plus the stakeout coverage, playing in bundle order at their quoted beats");
 assert.equal(project.scenes.findIndex(scene => scene.id === "neonoire-s14a"), project.scenes.findIndex(scene => scene.id === "neonoire-s14") + 1, "14A follows 14");
 const before14a = structuredClone(project);
 before14a.script = preScene14A;
@@ -113,7 +114,15 @@ before14a.frames = project.frames.filter(frame => frame.sceneId !== "neonoire-s1
 const patch14a = bundledFrameUpdates(before14a, project);
 assert.equal(patch14a.script, project.script, "the saved default script takes scene 14A");
 assert.deepEqual(patch14a.scenes, project.scenes, "14A is in the scene list right after scene 14, as the bundle has it");
-assert.deepEqual(patch14a.frames.map(frame => frame.id), project.frames.map(frame => frame.id), "its ten slots arrive in bundle order: after scene 14's shots, before scene 15's");
+// The 2 October sync json is the propagation boundary for scene 14A: a saved workspace on a default
+// text receives the scene and the slots that sync names (334–343). The 4 October stakeout coverage
+// (344–350) reaches saved workspaces on re-import, exactly like every other coverage pass in this
+// film's history — the sync json is re-run only for rewritten text, and no text was rewritten today.
+assert.deepEqual(patch14a.frames.filter(frame => frame.sceneId === "neonoire-s14a").map(frame => frame.id),
+  Array.from({ length: 10 }, (_, i) => `neonoire-shot-${334 + i}`),
+  "the pre-14A default receives the scene's ten 2 October slots in bundle order: after scene 14's shots, before scene 15's");
+assert.deepEqual(scene6Sync.newFrameIds.filter(id => Number(id.replace("neonoire-shot-", "")) >= 344), [],
+  "the stakeout coverage is not smuggled into the 2 October sync json — it propagates by re-import, like all coverage");
 const edited14a = structuredClone(before14a); edited14a.script += "\nWriter's extra scene.\n";
 const editedPatch14a = bundledFrameUpdates(edited14a, project);
 assert.equal(editedPatch14a?.script, undefined, "an edited script is never replaced");
@@ -123,7 +132,7 @@ deleted14a.scenes = project.scenes.filter(scene => scene.id !== "neonoire-s14a")
 deleted14a.frames = project.frames.filter(frame => frame.sceneId !== "neonoire-s14a");
 const deletedPatch14a = bundledFrameUpdates(deleted14a, project);
 assert(!deletedPatch14a?.scenes?.some(scene => scene.id === "neonoire-s14a") && !deletedPatch14a?.frames?.some(frame => s14aIds.includes(frame.id)), "a workspace on the new text without 14A deleted it, and stays without it");
-pass("a saved workspace on the cold-open default receives scene 14A and its slots 334–343 in place; edited scripts and a deliberate deletion are protected");
+pass("a saved workspace on the cold-open default receives scene 14A and its slots in place; edited scripts and a deliberate deletion are protected");
 
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));
 for (const id of ["s13-kaneko-gruffly-eat", "s13-mara-hesitantly-thank-you-has-anyone-come", "s13-kaneko-flatly-nobody-comes-here-who-isn"]) assert.equal(voice.lines.find(line => line.id === id)?.frameId, "neonoire-shot-202");

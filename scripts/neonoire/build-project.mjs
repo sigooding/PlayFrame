@@ -39,6 +39,7 @@ import { rewritePending, rewritePendingNote } from "./rewrite-pending.mjs";
 import { remainingBoardsCompleted, remainingBoardsLook, remainingBoardsQueued } from "./remaining-boards.mjs";
 import { remainingBoardsFinalLook, remainingBoardsFinalShots } from "./remaining-boards-final.mjs";
 import { rewriteSlots, rewriteSlotsDelivered, rewriteSlotsLook } from "./rewrite-slots.mjs";
+import { stakeoutCoverageDelivered, stakeoutCoverageLook } from "./stakeout-coverage.mjs";
 import { attachAudio, readManifest } from "./voice.mjs";
 import { inStoryOrder } from "./story-order.mjs";
 import { directorApprovedMainIds, directorMainImageNote, directorContinuityLook, approvedProductionNote } from "./director-corrections.mjs";
@@ -260,6 +261,10 @@ const frames = shots.map(shot => {
     notes: [
       !absent && directorApprovedMainIds.has(shot.id) ? directorMainImageNote : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
+        : shot.n >= 344
+        ? (stakeoutCoverageDelivered.includes(shot.n)
+          ? `Image: AI-generated stakeout coverage (4 October 2026), scene 14A's second boarding — boards ${stakeoutCoverageDelivered.join(", ")} installed on the new car canon sheets, 348 owed to the geometry written in its board note. ${stakeoutCoverageLook} Production approval pending.`
+          : "Image slot opened by the stakeout coverage of 4 October 2026 (scene 14A, 344–350); 348 holds an honest placeholder naming the file it awaits after two studies were refused on the scene's geometry — the train is BEHIND them, in the mirror's tremor, and Jack holds the right-hand seat of his own car. The brief for the next generation is written in the board note. Production approval pending.")
         : shot.n >= 321
         ? (rewriteSlotsDelivered.includes(shot.n)
           ? `Image: AI-generated rewrite-pass frame (3 October 2026), one of the ${rewriteSlots.length} slots the 2 October 2026 rewrites opened (321–343) — boards ${rewriteSlotsDelivered.join(", ")} installed. ${rewriteSlotsLook} Production approval pending.`

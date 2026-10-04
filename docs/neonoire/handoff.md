@@ -1,6 +1,61 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 3 October 2026 (night): the rewrite slots, pass four — the film's last frame, and the board is complete
+## Current — 4 October 2026: the cars get canon sheets, and the stakeout coverage — 348 owed to its written geometry
+
+**The session opened on a question: "is there a style sheet for the cars in the new scene?" There
+was not** — thirty-seven sheets in `sheets/`, every named face and every repeated room, and not one
+vehicle; the cars of scene 14A lived in prose and in four frame caveats, which is exactly why 336
+once drew Vera an SUV and every 14A interior read newer than the scene-31 car. **Now they have
+`scripts/neonoire/car-canon-look.mjs`** — one prose lock for all five vehicles in the film, in the
+shape of the Hive canon and the office lock — **and two four-panel canon sheets: `sheets/jacks-car.jpg`
+and `sheets/vera-hatchback.jpg`.** The watcher's white car, the killers' black sedan and Ishida's
+driver's grey town car stay prose locks held to their delivered frames (s14a/340, s1/332, s61/228).
+Every car frame from now on attaches its sheet; the canon repeats pass four's rule (a following car
+is seen from BEHIND) and adds the plate rule (blank or suppressed, never legible). Jack's sheet came
+back with both headlamps near-equal, so the dim-nearside lock stays prose, and its front plate's
+faint digits were blanked in place before install — suppression the canon demands, recorded rather
+than spent a generation on.
+
+**Then the next shots: scene 14A's unboarded beats, boarded and generated as the stakeout coverage
+344–350.** Ten generations (the house budget): two sheets, seven studies, one retake. **Six frames
+installed** — 344 he walks back (her hatchback nose-on to him, and correct: she was following),
+345 the knuckle at her steamed window, 346 the blue umbrella shaken onto his floor (the first 14A
+interior on the canon's worn cabin), 347 the rice ball changing hands with the fingers not touching,
+349 the untouched onigiri on his dash while her open door hides her exit, 350 the umbrella going up
+the road in his mirror. **348 The train is owed**: the first study put the lit train through the
+windscreen where the page puts it BEHIND them; the retake put it correctly in the mirror but sat
+**Vera at the wheel of Jack's car** — Japan drives right, and it is his car — and left a second
+train band across the lane's end in front. Both refused, not caveated; the board note is the brief
+for the next generation, and the seating sides are now a board lock. The film carries one honest
+placeholder again, the same state pass three left 343 in.
+
+**Caveats carried, all in the board notes:** 344's road reads as a shuttered street of the lane's
+width and carries an amber shop sign mid-street · 345's glass resolves her face and the hand reads
+as a fist · 346's canopy lies half-spread · 347's hand reads older than 48 · 349 hides Vera behind
+her door and carries a green lit sign · 350's clip loop reads as a thick cord · the car sheets' own
+two caveats above.
+
+### Mechanics — where the boundaries moved
+
+`scripts/neonoire/stakeout-coverage.mjs` is the new boundary module (delivered 344–347, 349, 350;
+owed 348; the two refusals recorded so nobody reinstalls them). `build:neonoire` writes **328/329
+keyframes on disk, 1 placeholder card**; `EXPECTED_SHOTS` is **329**; the coverage run is 241–350;
+14A holds sixteen boarded slots playing in bundle order at their quoted beats (334, 335, 344, 345,
+336, 337, 346, 347, 348, 338, 339, 340, 341, 342, 349, 350, 343); `verify:shot-order` reads the next
+free number as **351**; pass-prompts regenerated `pass-35.md` around 348's brief and the index as
+328/329. `src/lib/neonoire-scene6-sync.json` was **not** re-run — no screenplay text changed today,
+and that file propagates rewritten text; the coverage reaches saved workspaces on re-import like
+every coverage pass before it. `build:neonoire`, `verify:neonoire`, `verify:shot-order`,
+`verify:revision:neonoire`, `verify:animatic`, `check:assets` (935 references), `typecheck`, `lint`
+(0 errors) and the production build all pass. Ledger:
+[stakeout-coverage-2026-10-04](passes/stakeout-coverage-2026-10-04.md); sheets:
+`reviews/stakeout-coverage-2026-10-04.jpg` (the sixteen delivered 14A frames in playback order) and
+`reviews/car-canon-2026-10-04.jpg` (the two canon sheets above the two refused studies of 348).
+
+**The next pass opens with 348**, to the geometry in its board note, and holds the one spare
+generation this session kept.
+
+## Previous — 3 October 2026 (night): the rewrite slots, pass four — the film's last frame, and the board was complete
 
 **One generation, one frame installed, one study thrown away: 343 *Forty metres back* — and with it
 322 of 322 keyframes on disk and zero placeholder cards anywhere in the film.** The pass exists because the
