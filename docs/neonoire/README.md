@@ -2,18 +2,17 @@
 
 > **New session? Read [`story-bible.md`](story-bible.md) first** — premise, characters and their decision history, conspiracy backstory, locations, structure, scene intent, rejected ideas, motifs, post-draft changes and known inconsistencies. [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain) is Draft 1 as originally written (100 scenes, before the letter rewrite); the working script started identical to it, so any difference from it that is not in the bible's Part 9 was changed in PlayFrame.
 
-**100 numbered screenplay scenes and seven inserted scenes (14A, 25A, 27A, 53A, 63A, 82A, 99A), all boarded: 332 numbered shots.** The first boarding is shots 1–240. Coverage 241–269 added the beats that boarding had named and left, without renumbering; 270–286 covered the new endings and the letter rewrite; 287–296 boarded 25A, 27A and 63A; **297–307 boarded 53A, 82A and 99A and the story-pass-2 coverage of scenes 96, 97 and 99A**. The draft itself is unchanged and is carried page by page into Frame. Nothing holds a placeholder card: all 332 numbered shots have an image (the last of them landed on 4 October 2026).
+**100 numbered screenplay scenes and seven inserted scenes (14A, 25A, 27A, 53A, 63A, 82A, 99A), all boarded: 342 numbered shots.** The first boarding is shots 1–240. Coverage 241–269 added the beats that boarding had named and left, without renumbering; 270–286 covered the new endings and the letter rewrite; 287–296 boarded 25A, 27A and 63A; **297–307 boarded 53A, 82A and 99A and the story-pass-2 coverage of scenes 96, 97 and 99A**. The draft itself is unchanged and is carried page by page into Frame. Nothing holds a placeholder card: all 342 numbered shots have an image (the last of them landed on 4 October 2026).
 
-**The long-hold pass (4 October 2026) added ten numbered coverage frames, 344–353.** The head of
-[shots-needed.md](shots-needed.md) — the note written after the first voiced animatic, because one board cannot keep an
-exchange alive past about thirty seconds — was three scenes deep in the same problem: scene 23 carried 95 seconds on a
-single frame, scene 22 64 seconds and scene 20 55. The pass gave each of them its hands, its singles and its held
-silences: 344–346 in the storeroom, 347–349 under the arch, 350–353 at the yakitori stall, generated from each room's
+**The long-hold passes (4 October 2026) added twenty numbered coverage frames, 344–363.** The coverage note in
+[shots-needed.md](shots-needed.md) — written after the first voiced animatic because one board cannot keep an
+exchange alive past about thirty seconds — listed the film's longest single-board holds. The first pass covered
+the top three (scene 23 at 95 s, scene 22 at 64 s, scene 20 at 55 s with frames 344–353); the second pass covered
+the next three (scene 29 at 53 s, scene 17 at 46 s, scene 14 at 42 s with frames 354–363). Generated from each room's
 delivered masters with the cast sheets attached, installed 16:9 full-bleed at new asset paths with **no frame on disk
-written over** — so nothing needed archiving, and `verify:neonoire` now holds those ten to being new. 322 → **332
-keyframes, 0 placeholders**; the next free production number is **354**. Read
-[the ledger](passes/long-hold-2026-10-04.md) and the handoff's Current section before regenerating anything in scenes
-20, 22 or 23.
+written over** — so nothing needed archiving. 322 → 332 → **342 keyframes, 0 placeholders**; the next free production
+number is **364**. Read [long-hold-2026-10-04.md](passes/long-hold-2026-10-04.md) and
+[long-hold-2-2026-10-04.md](passes/long-hold-2-2026-10-04.md).
 
 **The 30 September revision's retake queue is closed.** On 4 October 2026 the last nine pinned studies (113, 131, 132,
 141–143, 160, 186, 228) and scene 100's 161 — the film's last frame, which the rewrite had left playing a retired
