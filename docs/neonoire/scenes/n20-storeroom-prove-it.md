@@ -68,3 +68,31 @@ TIME: 6
 ID: neonoire-shot-309
 IMAGE: 309-the-voicemail.jpg
 NOTE: SECOND OF THE SEVEN NAMED CLOSE-UPS (2, 20, 63, 71, 77, 79, 89 — fixed on the page, and no others). Carries the two recorded lines lifted from the cut scene 13: the manifest's voicemail now plays over this frame. `sheets/mara-face.jpg`, no clip — by the end of the scene the clip is on the sketchbook. INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — a retake: the first study lit the whole storeroom, and the second generation holds the rule that the phone screen is the ONLY light on her face, the bulb left far behind her and out of focus. Delivered 16:9 full-bleed 1920×1080; no readable text on the screen. Production approval pending.
+
+---
+
+## Coverage — the relief pass (4 October 2026)
+
+**Shots 351–352 give the storeroom's two long exchanges (194, 284) the beats the voiced animatic showed them needing** — the bulb the scene hums with, and Jack making himself smaller. The lens plan keeps the storeroom 35mm; the bulb is its 85mm.
+
+---
+
+351. INSERT — 85mm, static, high angle — the bulb hums.
+The bare tungsten bulb hanging in the dark of the storeroom, a slow ring of dust in its light, the flour sacks and the futon blurred to the dark around it. Nothing else in frame.
+SCRIPT: "Silence. The bulb hums."
+CAST: —
+LIGHT: Practical night
+TIME: 3
+ID: neonoire-shot-351
+IMAGE: 351-the-bulb-hums.jpg
+NOTE: Relief pass one, 4 October 2026 — the animatic's list names the storeroom bulb for the 55-second "red bird clip" exchange. The bulb and its dark hold to `s13/179-eat.jpg` and `s84/115-the-storeroom.jpg` (one bare amber tungsten bulb, the room's only light); the sacks carry the same FLOUR print the masters do. The still plays the hum as the dust ring in the light — the silence the scene gives its promise over. No people. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the bare bulb, its dust ring and the FLOUR-print sacks hold to the storeroom masters. Unclosed caveat: the dust ring reads a touch literal at full size, closer to a plate of flour than drifting dust.
+
+352. MEDIUM — 35mm, static, eye level — making himself smaller.
+Jack on the flour sack in the storeroom, seated slowly, his hands on his knees, making himself smaller; the bare bulb's pool of light at the edge of him, the rolled futon in the dark beyond. Mara is out of frame.
+SCRIPT: "Jack waits. He doesn't go to her. He sits down on a flour sack, slowly, making himself smaller."
+CAST: Jack
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-352
+IMAGE: 352-making-himself-smaller.jpg
+NOTE: Relief pass one, 4 October 2026 — the animatic's list names a single and a two-shot for the 40-second "I called her a coward" exchange; 284 already carries Mara's single, so this is the other half — the man on the sack. Jack follows `sheets/jack.jpg` (charcoal overcoat, off-white open collar, no tie). The room holds to `s13/179-eat.jpg` and `s20/191-prove-it.jpg` (the sacks, the rolled futon, the one bulb); the sack under him is the same kind as `s20/192-the-red-bird-clip.jpg`'s. The making-himself-smaller is the whole shot: the three feet neither of them crosses, from his side. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: Jack on the sack, hands on his knees, eyes down, making himself smaller — delivered; the onion crate at the frame's foot is the storeroom's own canon (flour sacks, onion crates, one bulb). Unclosed caveats: the plaster wall reads a touch warmer than the scene 13 storeroom, and the shirt buttoned at the second button reads a shade neater than the sheet's open collar.

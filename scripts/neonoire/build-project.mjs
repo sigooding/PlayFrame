@@ -39,6 +39,7 @@ import { rewritePending, rewritePendingNote } from "./rewrite-pending.mjs";
 import { remainingBoardsCompleted, remainingBoardsLook, remainingBoardsQueued } from "./remaining-boards.mjs";
 import { remainingBoardsFinalLook, remainingBoardsFinalShots } from "./remaining-boards-final.mjs";
 import { rewriteSlots, rewriteSlotsDelivered, rewriteSlotsLook } from "./rewrite-slots.mjs";
+import { reliefSlots, reliefSlotsDelivered, reliefSlotsLook } from "./animatic-relief.mjs";
 import { attachAudio, readManifest } from "./voice.mjs";
 import { inStoryOrder } from "./story-order.mjs";
 import { directorApprovedMainIds, directorMainImageNote, directorContinuityLook, approvedProductionNote } from "./director-corrections.mjs";
@@ -260,6 +261,8 @@ const frames = shots.map(shot => {
     notes: [
       !absent && directorApprovedMainIds.has(shot.id) ? directorMainImageNote : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
+        : shot.n >= 344
+        ? `Image: AI-generated relief-pass frame (4 October 2026), one of the ${reliefSlots.length} new frames the voiced-animatic coverage list opened (344–353) — boards ${reliefSlotsDelivered.join(", ")} installed. ${reliefSlotsLook} Production approval pending.`
         : shot.n >= 321
         ? (rewriteSlotsDelivered.includes(shot.n)
           ? `Image: AI-generated rewrite-pass frame (3 October 2026), one of the ${rewriteSlots.length} slots the 2 October 2026 rewrites opened (321–343) — boards ${rewriteSlotsDelivered.join(", ")} installed. ${rewriteSlotsLook} Production approval pending.`

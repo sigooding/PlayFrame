@@ -1,6 +1,56 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
+## Current — 4 October 2026 (relief pass one): the next ten shots — 344–353, and the board runs to 353
+
+**Ten generations, ten frames installed at their stable paths, nothing replaced and nothing
+renumbered.** The retake queue was closed and every numbered keyframe was on disk, so the next
+shots on the board were the ones the voiced animatic showed the film needed
+([shots-needed.md](shots-needed.md), 30 September 2026 — never generated, never boarded) plus the
+two unboarded beats the retake round recorded as coverage observations. They join the end of the
+run as **344–353**: **332/332 keyframes on disk, 0 placeholders, `RETAKE PENDING` 0.** Ledger:
+[animatic-relief-1-2026-10-04](passes/animatic-relief-1-2026-10-04.md).
+
+**Installed:** **344–347** board the INTERCUT half of scene 59 — Mrs. Sakai's empty house in the
+page's own order, all 35mm across the cut on the scene's grammar, played before 228: the kotatsu
+(the television on with the sound off rides inside the room wide — the "sound off" beat has no
+business as its own still), the altar (the framed man held to `s1/07-old-man.jpg`), the teacup on
+its side, the phone ringing. The house is the scene 29 house with every person removed; the
+emptiness is the shot. **348** boards scene 94's door — the last beat of the scene, the hinge
+between 142 and 143, 50mm at the door: Ishida getting in, the rear door on the rain, the cream
+leather and amber carried from 143's master, the one lit window small behind. **349–353** take the
+head of the animatic's long-talking-scenes table in screenplay order, one new frame per board:
+**349** Vera on the wall of drawings, not at him (s14, 270's 42 s); **350** Kaneko's bowl set down,
+Jack a shoulder at the frame's edge (s17, 189's 46 s); **351** the bare bulb and its dust ring
+(s20, 194's 55 s); **352** Jack on the flour sack making himself smaller (s20, 284's 40 s); **353**
+Vera's single mid-sentence on the hinge line (s22, 197's 64 s).
+
+**Every frame was reviewed at full size before install** and each carries its unclosed caveats in
+its board note. **The one to know: 344's altar photograph reads a different face** (younger,
+smiling, bearded) than the locked old-man man 345 holds. The retake call hit the session's
+ten-generation limit and did not fire; 344 stands installed with the caveat and is **the head of
+the next pass's queue**. Next after it, in order: scene 23's 199 "You never call" (95 s — the
+longest single board in the film; five or six shots wanted), scene 25's 202 and 258, scene 27A's
+292, scene 29's 273, then the rest of the table, the below-30 s list, the song (74–77), the
+rewrite-changed frames (64, 36, 70) and the title/credit cards — all still standing in
+[shots-needed.md](shots-needed.md).
+
+**Mechanics:** the delivered boundary is a module, `scripts/neonoire/animatic-relief.mjs`
+(`reliefSlotsDelivered` 344–353, `reliefSlotsQueued` empty), read by both `build-project.mjs` and
+`verify-neonoire.mjs`; the verifier now asserts 332, the run 241–353, scene 59 playing
+344, 345, 346, 347 then 228, scene 94 playing 141, 142, 143 then 348 (50mm), every relief frame
+16:9 and named to the pass, and the empty queue. `verify-shot-order` carries scene 20's new order
+(309, 193, 194, 352, 284, 351) and the next free number 354. `hive-first-look.mjs` and
+`ishida-end-look.mjs` carry the three new image paths; the verifier's `revisionBoards` is scoped
+to 308–343 so the new boards sit inside their scene groups. `library.json` was hand-extended
+(682 images; the shallow clone cannot re-extract archive versions, so `library:neonoire` was
+**not** run). No `pendingNotesHashes` additions were needed (the ten cards are new, born with
+their pictures), and `sync-scene6.mjs` was **not** re-run. No existing image was replaced, so
+nothing was backed up — the 276-version archive is unchanged and asserted. `build:neonoire`
+(332/332, 0 placeholders), `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`,
+`verify:features`, `check:assets` (939 references), `typecheck` and the production build all pass.
+**Branch `arena/01a1076a-playframe`, merged to `main` at the end of the session.**
+
+## Previous — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
 
 **Full visual review and scene-logic consistency audit of the retake queue's ten final frames (113, 131, 132, 141–143, 160, 161, 186, 228).**
 Carried out under the standing instruction: *"if shot description don't make complete visual sense go by the logic of the scene, keep character and scene consistancy, make sure any original image replaced is backed up and then merge with main"*.

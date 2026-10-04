@@ -20,6 +20,7 @@ import { rewritePending } from "./neonoire/rewrite-pending.mjs";
 import { remainingBoardsCompleted } from "./neonoire/remaining-boards.mjs";
 import { remainingBoardsFinalShots } from "./neonoire/remaining-boards-final.mjs";
 import { rewriteSlots, rewriteSlotsDelivered, rewriteSlotsQueued } from "./neonoire/rewrite-slots.mjs";
+import { reliefSlots, reliefSlotsDelivered, reliefSlotsQueued } from "./neonoire/animatic-relief.mjs";
 import { directorApprovedMainIds, directorReplacementShots } from "./neonoire/director-corrections.mjs";
 const expectedDraftStatus = frame => directorApprovedMainIds.has(frame.id) ? "Ready" : "Draft";
 import { inStoryOrder } from "./neonoire/story-order.mjs";
@@ -79,12 +80,15 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 103, "Every scene of the revised screenplay and the seven inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 322;
+const EXPECTED_SHOTS = 332;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 // 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
 // earlier generation blocks; the audits below read those blocks' pre-revision runs.
-const revisionBoards = f => shotNo(f) >= 308;
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 322 numbered shots (299 before the 2 October rewrites of scenes 6 and 1, plus their placeholder slots 321–327 and 328–333, plus scene 14A's placeholder slots 334–343)");
+// The revision blocks: the 30 September revision's 308–320 and the 2 October slots 321–343. The
+// 4 October relief pass's 344–353 are new boards, not revision boards, so they stay in the
+// scene-group sets the group assertions measure.
+const revisionBoards = f => shotNo(f) >= 308 && shotNo(f) <= 343;
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 332 numbered shots (322 before the 4 October relief pass, plus its ten new frames 344–353: scene 59's INTERCUT, scene 94's door, and one new frame per long-talking board)");
 assert.equal(project.characters.length, 19, "Nineteen cast cards after the revision added Vera's mother");
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -438,11 +442,11 @@ for (const frame of ishidaEnd) {
   for (const detail of ["sheets/ishida.jpg", "NO TIE", "SINGLE round black-rim", "s1/13-taillights-gone.jpg"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 93–96 continuity: ${detail}`);
 }
 const s94 = ishidaEnd.filter(f => f.sceneId === "neonoire-s94");
-assert.deepEqual(s94.map(f => f.id), ["neonoire-shot-141", "neonoire-shot-142", "neonoire-shot-143"], "The rewritten 94 is its kerb, its detective and its cup of tea — three frames, all retaken 4 October 2026");
+assert.deepEqual(s94.map(f => f.id), ["neonoire-shot-141", "neonoire-shot-142", "neonoire-shot-143", "neonoire-shot-348"], "The rewritten 94 is its kerb, its detective, its cup of tea and its closing door — four frames, the first three retaken 4 October 2026 and the door boarded by the relief pass");
 assert.deepEqual(s94.map(f => f.characters.join()),
-  ["", castOf("Detective Ishida"), `${castOf("Detective Ishida")},${castOf("Kurose")}`],
-  "Scene 94 after the revision: the sedan at the kerb with nobody in frame, Ishida alone in the rain, then one clean hand and the watch");
-for (const f of s94) {
+  ["", castOf("Detective Ishida"), `${castOf("Detective Ishida")},${castOf("Kurose")}`, castOf("Detective Ishida")],
+  "Scene 94 after the revision: the sedan at the kerb with nobody in frame, Ishida alone in the rain, then one clean hand and the watch, then Ishida and the door");
+for (const f of s94.filter(f => shotNo(f) <= 143)) {
   assert(f.notes.includes("RETAKE LANDED 4 OCTOBER 2026"), `Shot ${shotNo(f)}: the old back-seat study is replaced and the round is recorded`);
   assert(!f.notes.includes("RETAKE PENDING"), `Shot ${shotNo(f)}: the pin note is gone with the pin`);
 }
@@ -452,6 +456,8 @@ assert.equal(s94[0].shotType, "Wide", "Scene 94 opens wide: nobody is in frame a
 assert.equal(s94[0].lens, "24mm");
 assert.equal(s94[1].lens, "85mm", "Ishida's look back at the lit window is the scene's one close-up");
 assert.equal(s94[2].lens, "50mm", "The cup and the watch hold both men in a 50mm two-shot");
+assert.equal(s94[3].lens, "50mm", "The door stays 50mm at the door, on the scene's lens plan");
+assert(s94[3].notes.includes("the hinge between 142 and 143") && s94[3].notes.includes("sheets/ishida.jpg"), "Shot 348 boards the door the retake round left with no frame of its own");
 assert(!ishidaEnd.some(f => f.sceneId === "neonoire-s96" && f.characters.includes(castOf("Detective Ishida"))), "Ishida is gone from the morning room");
 assert.deepEqual(ishidaEnd.find(f => f.id === "neonoire-shot-144").characters, [], "The receding car has no visible cast");
 const call303 = ishidaEnd.find(f => f.id === "neonoire-shot-303");
@@ -609,8 +615,8 @@ assert.deepEqual(coverage.map(f => shotNo(f)),
   [241, 242, 243, 244, 245, 246, 247, 248, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260,
    261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 273, 275, 276, 277, 278, 279, 283, 284,
    285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303,
-   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343],
-  "Coverage runs 241–343 (321–333 are the placeholder slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
+   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353],
+  "Coverage runs 241–353 (321–333 are the placeholder slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A, 344–353 the relief pass of 4 October 2026) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
 for (const frame of coverage) if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(coverage.find(f => f.id === "neonoire-shot-241").notes.includes("small reflection in the upper corner"), "Shot 241's retake shrinks the face");
 assert(!coverage.find(f => f.id === "neonoire-shot-241").notes.includes("larger than a glancing reflection"), "Shot 241 no longer carries the large-reflection caveat");
@@ -1092,7 +1098,7 @@ pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, seale
 const labels = project.frames.map(frame => Number((frame.notes.match(/Stable Shot (\d+);/) || [])[1]));
 for (const [i, frame] of project.frames.entries()) {
   assert.equal(frame.shotNumber, labels[i], `${frame.id}: metadata and production note agree`);
-  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 343, `${frame.id} should retain its stable production number`);
+  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 353, `${frame.id} should retain its stable production number`);
   assert(frame.notes.includes(`Pass ${Math.ceil(labels[i] / 10)} of ${Math.ceil(Math.max(...labels) / 10)}`), `${frame.id} should name its pass`);
 }
 assert.deepEqual(new Set(labels), new Set(project.frames.map(shotNo)), "Every production label maps to exactly one card, and every card to one label");
@@ -1291,6 +1297,42 @@ assert.deepEqual(rewriteSlotsQueued, [], "The rewrite-slot queue is empty: every
 assert.deepEqual(rewriteSlotsDelivered, Array.from({ length: 23 }, (_, i) => 321 + i), "All twenty-three slots delivered: the interview's seven, scene 1's six and scene 14A's ten");
 assert.equal(placeholders.length, 0, "No honest placeholder remains anywhere in the film");
 pass("rewrite slots: all twenty-three frames installed at 16:9 and reviewed — the interview's seven, scene 1's six and scene 14A's ten, closing the film's last keyframe (343, the follower kept behind the car it follows)");
+
+// ---------------------------------------------------------------- relief pass one, 4 October 2026
+// The retake queue is empty and every numbered keyframe was on disk, so the next shots on the board
+// were the ones the voiced animatic showed the film needed (docs/neonoire/shots-needed.md) plus the two
+// unboarded beats the retake round recorded as coverage observations: scene 59's INTERCUT to Mrs. Sakai's
+// empty house (344–347) and scene 94's door closing (348). Relief pass one added ten new frames, 344–353,
+// joining the end of the run with nothing renumbered and nothing replaced. `reliefSlotsDelivered` is the
+// boundary; `reliefSlotsQueued` stays asserted empty.
+assert.deepEqual(placeholders.map(f => shotNo(f)).sort((a, b) => a - b), reliefSlotsQueued,
+  "Only the relief pass's still-waiting frames (344–353 less those delivered) are placeholders; none is a borrowed-image placeholder");
+for (const frame of project.frames.filter(f => reliefSlots.includes(shotNo(f)))) {
+  const delivered = reliefSlotsDelivered.includes(shotNo(frame));
+  assert.equal(!!frame.image, delivered, `${frame.title}: only a delivered relief frame may hold an image, and a delivered frame must hold one`);
+  if (!delivered) {
+    assert.equal(frame.status, "Needs review", `${frame.title} stays a flagged placeholder until it is generated`);
+    assert(frame.notes.includes("KEYFRAME MISSING"), `${frame.title} is an honest placeholder naming the file it awaits`);
+    continue;
+  }
+  assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title}: relief-pass delivery must be 16:9`);
+  assert.equal(frame.status, expectedDraftStatus(frame), `${frame.title}: a delivered study, awaiting production approval`);
+  assert(frame.notes.includes("relief-pass frame (4 October 2026)") && frame.notes.includes("344–353"), `${frame.title} names the pass and the block it belongs to`);
+  assert(!/Placeholder slot|KEYFRAME MISSING/i.test(frame.notes), `${frame.title} is delivered; its note may not still promise a picture`);
+}
+// The INTERCUT half of scene 59 is boarded in the page's own order and plays before 228; the house is
+// the scene 29 house with the people removed and the television on and never static.
+const intercut = project.frames.filter(f => f.sceneId === "neonoire-s59").map(f => shotNo(f));
+assert.deepEqual(intercut, [344, 345, 346, 347, 228], "Scene 59's INTERCUT plays the empty house in the page's order, then Vera glowing");
+for (const f of project.frames.filter(f => [344, 345, 346, 347].includes(shotNo(f)))) {
+  assert(f.notes.includes("s29/204-the-tea-she-does-not-want-to-pour.jpg"), `${f.title}: the empty house holds to the scene 29 master`);
+  assert(f.notes.includes("No people"), `${f.title}: the house is empty — the emptiness is the shot`);
+}
+assert(project.frames.find(f => f.id === "neonoire-shot-344").notes.includes("never static"), "Shot 344 keeps the television a programme");
+assert.deepEqual(reliefSlotsQueued, [], "The relief-pass queue is empty: all ten of 344–353 are on disk");
+assert.deepEqual(reliefSlotsDelivered, Array.from({ length: 10 }, (_, i) => 344 + i), "All ten relief frames delivered: the INTERCUT, the door, and one new frame per long-talking board");
+assert.equal(placeholders.length, 0, "No honest placeholder remains anywhere in the film");
+pass("relief pass one: all ten new frames installed at 16:9 — scene 59's INTERCUT (the kotatsu, the altar, the teacup, the phone), scene 94's door, and one new frame per long-talking board (349–353)");
 
 assert.equal(remainingBoardsFinalShots.length, 9);
 for (const study of remainingBoardsFinalShots) {

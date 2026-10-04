@@ -50,3 +50,21 @@ TIME: 8
 ID: neonoire-shot-285
 IMAGE: 285-the-inside-pocket.jpg
 NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s22/195-somewhere-like-this.jpg` and `sheets/jack.jpg`: the brick arch, the faded menus, the warm bulb at the end all carry. The hand over the pocket is the whole shot; the face reads a shade older than 48 in this light — carry as a caveat.
+
+---
+
+## Coverage — the relief pass (4 October 2026)
+
+**Shot 353 gives the 64-second exchange of 197 Vera's single** — the scene's grammar keeps it 50mm along the counter. The animatic's list asked for "two singles, a two-shot, the window": 197 carries the two-shot, 285 Jack's single, and this carries hers.
+
+---
+
+353. MEDIUM — 50mm, static, low level — happy here.
+Vera on her stool at the brick arch counter, turned slightly toward Jack, who is off frame left, mid-sentence; her thick white coffee cup on its saucer at the frame's edge, the brick arch, the yellowed menus and the warm bulb at the far end behind her.
+SCRIPT: "I think he was happy here. Before."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-353
+IMAGE: 353-happy-here.jpg
+NOTE: Relief pass one, 4 October 2026 — the voiced animatic's coverage list for the 64-second "Somewhere like this" exchange. The arch holds to `s22/195-somewhere-like-this.jpg` — brick arch, faded menus, the warm bulb at the end, the ticket machine by the door — and Vera follows `sheets/vera.jpg` in her ORIGINAL LOOK (charcoal coat, cream knit). She is mid-sentence on the line that is the scene's hinge, turned toward him rather than square to the counter, as 197 seats them. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the brick arch, the ticket machine, the yellowed menus, the warm bulb at the far end and Vera's mid-sentence profile all hold to the master. Unclosed caveats: the clock over the door reads 10:10 rather than the scene's 11:40 (the same clock caveat 197 already carries — set it on the day), and the radio sits on the side shelf rather than behind the counter.
