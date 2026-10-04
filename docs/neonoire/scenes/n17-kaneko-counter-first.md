@@ -37,16 +37,16 @@ NOTE: Generated from shot 189. Kaneko stands at Jack's end of the counter here. 
 
 ## Coverage — the relief pass (4 October 2026)
 
-**Shot 350 gives the 46-second exchange of 189 the single on Kaneko the voiced animatic showed it needs** — her at the pot, the bowl set down. The lens plan keeps it 35mm, frontal to the counter.
+**Shot 360 gives the 46-second exchange of 189 the single on Kaneko the voiced animatic showed it needs** — her at the pot, the bowl set down. The lens plan keeps it 35mm, frontal to the counter.
 
 ---
 
-350. MEDIUM — 35mm, static, eye level — the bowl.
+360. MEDIUM — 35mm, static, eye level — the bowl.
 Kaneko behind the counter, tiny and sharp-eyed, her grey hair in its small bun, setting the steaming bowl of noodles down in front of Jack; of him only the charcoal shoulder and the top of his head at the frame's edge. One amber bulb, steam, the fluorescent tube unlit.
 SCRIPT: "Kaneko sets a bowl of noodles in front of Jack."
 CAST: Kaneko, Jack
 LIGHT: Practical night
 TIME: 8
-ID: neonoire-shot-350
-IMAGE: 350-the-bowl.jpg
+ID: neonoire-shot-360
+IMAGE: 360-the-bowl.jpg
 NOTE: Relief pass one, 4 October 2026 — the animatic's list names Kaneko at the pot for the 46-second "You got old" exchange; the bowl set down is the scene's action beat, the one the exchange ends on. The counter holds to `s17/187-you-got-old.jpg` — one amber bulb and steam, the fluorescent tube UNLIT, the six stools — and Kaneko holds to `s86/123-fifty-years.jpg` (grey hair in a small bun, faded indigo apron over the brown cardigan). Jack follows `sheets/jack.jpg` and stays a shoulder at the frame's edge, not a second face in the shot. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the one amber bulb, the steam, the unlit fluorescent tube, the stools and Kaneko's set-down all hold to the master; Jack stays a shoulder at the frame's edge. Unclosed caveat: the counter's wood reads a shade darker than the master's.

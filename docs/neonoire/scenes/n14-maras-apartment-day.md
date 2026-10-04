@@ -49,16 +49,16 @@ NOTE: Coverage, shot 270. The room and its grey daylight hold to s14/182-someone
 
 ## Coverage — the relief pass (4 October 2026)
 
-**Shot 349 gives the 42-second exchange of 270 the single the voiced animatic showed it needs** — Vera on the wall of drawings, not at him. The scene's lens plan keeps it 35mm for the room.
+**Shot 359 gives the 42-second exchange of 270 the single the voiced animatic showed it needs** — Vera on the wall of drawings, not at him. The scene's lens plan keeps it 35mm for the room.
 
 ---
 
-349. MEDIUM — 35mm, static, eye level — the wall of drawings.
+359. MEDIUM — 35mm, static, eye level — the wall of drawings.
 Vera in her charcoal coat, still on, at three-quarters to the camera in the grey daylight, looking at the wall of Mara's drawings — trains, rooftops, laundry lines — and not at him. He is off frame, out of the shot entirely.
 SCRIPT: "She looks at the wall of drawings, not at him."
 CAST: Vera Voss
 LIGHT: Overcast soft
 TIME: 6
-ID: neonoire-shot-349
-IMAGE: 349-the-wall-of-drawings.jpg
+ID: neonoire-shot-359
+IMAGE: 359-the-wall-of-drawings.jpg
 NOTE: Relief pass one, 4 October 2026 — the voiced animatic's coverage list (docs/neonoire/shots-needed.md) names a single for the 42-second "Packed and zipped" exchange that plays on one board (270). The room holds to `s14/182-someone-who-meant-to-come-back.jpg`: same grey daylight, the sketches of trains, rooftops and laundry lines on the wall, clothes on every surface. Vera follows `sheets/vera.jpg` in her ORIGINAL LOOK, coat still on — she has not taken it off all scene. Jack stays out of frame: the not-looking-at-him is the shot. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the wall of drawings, the clothes on every surface and Vera's held-back profile all hold to the scene master; the not-looking is the shot. Unclosed caveat: an open dark suitcase sits at the lower right where 270's beat has the case zipped under the futon — crop it out or accept it on the cut; it reads as the scene's own case, not a second one.

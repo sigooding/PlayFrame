@@ -1,56 +1,135 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (relief pass one): the next ten shots — 344–353, and the board runs to 353
+## Current — 4 October 2026 (fifth pass): the relief pass, one — seven new coverage frames, 354–360, reconciled with the long-hold pass
 
-**Ten generations, ten frames installed at their stable paths, nothing replaced and nothing
-renumbered.** The retake queue was closed and every numbered keyframe was on disk, so the next
-shots on the board were the ones the voiced animatic showed the film needed
-([shots-needed.md](shots-needed.md), 30 September 2026 — never generated, never boarded) plus the
-two unboarded beats the retake round recorded as coverage observations. They join the end of the
-run as **344–353**: **332/332 keyframes on disk, 0 placeholders, `RETAKE PENDING` 0.** Ledger:
+**Ten generations, seven NEW numbered frames, three dropped in reconciliation, nothing renumbered and nothing
+written over: 332 → 339 keyframes, 0 placeholders, next free number 361.** This round took the two unboarded
+script beats the retake round recorded — **scene 59's INTERCUT to Mrs. Sakai's empty house** (the kotatsu, the
+altar, the teacup on its side, the phone ringing) and **scene 94's door closing** — plus one new frame each on
+[shots-needed.md](shots-needed.md)'s next rows in order: **scene 14's 270 exchange** (Vera's wall of drawings)
+and **scene 17's 189 exchange** (Kaneko's bowl). Ledger:
 [animatic-relief-1-2026-10-04](passes/animatic-relief-1-2026-10-04.md).
 
-**Installed:** **344–347** board the INTERCUT half of scene 59 — Mrs. Sakai's empty house in the
-page's own order, all 35mm across the cut on the scene's grammar, played before 228: the kotatsu
-(the television on with the sound off rides inside the room wide — the "sound off" beat has no
-business as its own still), the altar (the framed man held to `s1/07-old-man.jpg`), the teacup on
-its side, the phone ringing. The house is the scene 29 house with every person removed; the
-emptiness is the shot. **348** boards scene 94's door — the last beat of the scene, the hinge
-between 142 and 143, 50mm at the door: Ishida getting in, the rear door on the rain, the cream
-leather and amber carried from 143's master, the one lit window small behind. **349–353** take the
-head of the animatic's long-talking-scenes table in screenplay order, one new frame per board:
-**349** Vera on the wall of drawings, not at him (s14, 270's 42 s); **350** Kaneko's bowl set down,
-Jack a shoulder at the frame's edge (s17, 189's 46 s); **351** the bare bulb and its dust ring
-(s20, 194's 55 s); **352** Jack on the flour sack making himself smaller (s20, 284's 40 s); **353**
-Vera's single mid-sentence on the hinge line (s22, 197's 64 s).
+**Reconciliation:** this session generated against the run's free numbers, which were 344–353 when it started —
+the **long-hold pass below merged to `main` in the same day and took them** for scenes 20, 22 and 23. `main` owns
+344–353 now; the numbers are production identity, so this pass's seven unique frames joined the run at **354–360**.
+Three of this pass's studies duplicate beats the long-hold frames carry (its 346 is the same "Silence. The bulb
+hums." line as this pass's dropped bulb study, its 344 the same "making himself smaller" line as the dropped sack
+study, and its 348/349 already board scene 22's singles, making a second Vera single redundant); those three raws
+are kept in `artifacts/neonoire/relief-2026-10-04/` and the decision is recorded in the ledger.
 
-**Every frame was reviewed at full size before install** and each carries its unclosed caveats in
-its board note. **The one to know: 344's altar photograph reads a different face** (younger,
-smiling, bearded) than the locked old-man man 345 holds. The retake call hit the session's
-ten-generation limit and did not fire; 344 stands installed with the caveat and is **the head of
-the next pass's queue**. Next after it, in order: scene 23's 199 "You never call" (95 s — the
-longest single board in the film; five or six shots wanted), scene 25's 202 and 258, scene 27A's
-292, scene 29's 273, then the rest of the table, the below-30 s list, the song (74–77), the
-rewrite-changed frames (64, 36, 70) and the title/credit cards — all still standing in
-[shots-needed.md](shots-needed.md).
+**Installed:** **354** the empty house's room wide — kotatsu, television on with the sound off (a muted programme,
+never static); **355** the altar corner, the framed man held to `s1/07-old-man.jpg`; **356** the teacup on its
+side, the drying ring; **357** the desk phone ringing in the empty room; **358** Ishida getting in, the rear door
+on the rain, the station's lit window small behind — the hinge the retake round left with no frame of its own;
+**359** Vera on the wall of drawings, not at him; **360** Kaneko's bowl set down, Jack a shoulder at the frame's
+edge.
 
-**Mechanics:** the delivered boundary is a module, `scripts/neonoire/animatic-relief.mjs`
-(`reliefSlotsDelivered` 344–353, `reliefSlotsQueued` empty), read by both `build-project.mjs` and
-`verify-neonoire.mjs`; the verifier now asserts 332, the run 241–353, scene 59 playing
-344, 345, 346, 347 then 228, scene 94 playing 141, 142, 143 then 348 (50mm), every relief frame
-16:9 and named to the pass, and the empty queue. `verify-shot-order` carries scene 20's new order
-(309, 193, 194, 352, 284, 351) and the next free number 354. `hive-first-look.mjs` and
-`ishida-end-look.mjs` carry the three new image paths; the verifier's `revisionBoards` is scoped
-to 308–343 so the new boards sit inside their scene groups. `library.json` was hand-extended
-(682 images; the shallow clone cannot re-extract archive versions, so `library:neonoire` was
-**not** run). No `pendingNotesHashes` additions were needed (the ten cards are new, born with
-their pictures), and `sync-scene6.mjs` was **not** re-run. No existing image was replaced, so
-nothing was backed up — the 276-version archive is unchanged and asserted. `build:neonoire`
-(332/332, 0 placeholders), `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`,
-`verify:features`, `check:assets` (939 references), `typecheck` and the production build all pass.
-**Branch `arena/01a1076a-playframe`, merged to `main` at the end of the session.**
+### Where they play (the scene's logic, not board order)
 
-## Previous — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
+**scene 59** — **354, 355, 356, 357**, 228 (the INTERCUT plays the empty house in the page's order, then Vera
+glowing); **scene 94** — 141, 142, 143, **358**; **scene 14** — 184, 270, **359**, 185; **scene 17** — 189,
+**360**, 190.
+
+### Honest caveats (also in the board notes)
+
+**354's altar photograph reads a different face** (younger, smiling) than the locked `s1/07-old-man.jpg` man 355
+holds — the face-check retake hit the session's ten-generation limit and did not fire; **354 is the head of the
+next pass's queue**. **355's photograph sits on a low stand** beside the altar shelf. **356's tatami reads
+coarser** and its window is bare glass (accepted: a different corner of the same room). **357** carries a dark
+water stain and a push-button rather than rotary phone (the no-single-year rule covers it). **358's door reads
+fully open** rather than mid-close and the background window is not legible. **359's lower right holds an open
+suitcase** where 270's beat has it zipped under the futon — crop it out or accept it. **360's counter wood reads
+a shade darker.** The seven were reviewed at full size before install; production approval is the director's, as
+ever.
+
+### Mechanics
+
+`docs/neonoire/scenes/n59-glowing-in-the-rain.md`, `n94-black-sedan.md`, `n14-maras-apartment-day.md` and
+`n17-kaneko-counter-first.md` carry the seven boards under *Coverage — the relief pass (4 October 2026)*.
+`scripts/neonoire/animatic-relief.mjs` is the delivered boundary (`reliefSlotsDelivered` 354–360,
+`reliefSlotsQueued` empty), read by `build-project.mjs` (which now has separate notes branches for 354+ and
+344+) and `verify-neonoire.mjs` (`EXPECTED_SHOTS` **339**, the coverage run 241–360, the long-hold block scoped
+to 344–353, the relief block on 354–360). `verify-shot-order.mjs` — scenes 59/94/14/17's in-scene order and
+`nextShotNumber` **361**; `verify-shot-order-browser.mjs` — allocation test moved to 361/362;
+`verify-revision-restoration.mjs` — patch length 339. `library.json` now carries 689 images (339 shots) — it was
+rebuilt by hand, as always (the tool's git-history walk is shallow-clone blind). `check:assets` 946 references.
+**Quartermaster:** no `node_modules` incident this session. **This session's branch is
+`arena/01a1076a-playframe`, merged to `main` at the end of the session.**
+
+## Previous — 4 October 2026 (fourth pass): the long-hold pass — ten new frames, 344–353, for the three scenes one board was carrying
+
+**Ten generations, ten NEW numbered frames, nothing renumbered and nothing written over: 322 → 332 keyframes, 0
+placeholders, next free number 354.** The round took the head of [shots-needed.md](shots-needed.md), the note written
+after the first voiced animatic — a single board cannot keep an exchange alive past about thirty seconds — where the
+three longest holds in the film each had one frame: **scene 23, 95 seconds on shot 199; scene 22, 64 on 197; scene 20,
+55 on 194.** Ledger: [long-hold-2026-10-04](passes/long-hold-2026-10-04.md); sheet
+`reviews/long-hold-344-353.jpg` (all nineteen frames of the three rooms, the ten new ones among their masters).
+
+**Installed:** **344** Jack lowered onto a stacked flour sack in the bulb's pool, hands empty and open, three feet of
+floor between him and her — *"making himself smaller"*; **345** her two hands closing on the closed sketchbook with the
+red bird clip under her fingers; **346** the bare bulb and the dust, the two of them small and dark at the frame's
+corners — *"Silence. The bulb hums."*; **347** the counter mid-tremor as the train goes over, cups shivering in their
+saucers on the counter's edge; **348** Vera turned from the counter towards him, mid-line, her coffee still full; **349**
+Jack answering with his eyes on the bowl, hands out of frame; **350** Ishida's hands turning one skewer over the little
+charcoal grill; **351** Jack across the table, chin down, listening; **352** the napkin under a fingertip on the red
+plastic, longhand across it, pushed over; **353** the small nod, the folded napkin white at the frame's edge.
+
+### The decisions this round made (permanent unless the director overrides)
+
+1. **New frames keep the coverage passes' lens habit inside 35mm scenes.** Scene 22's plan is "35mm for the arch, 50mm
+   along the counter" and scene 23's "35mm across the table": the singles and the two table inserts go to 50mm and 85mm,
+   as coverage already does in scenes 11, 14 and 29. The masters keep their own framing untouched.
+2. **350 and 352 are hands-and-object inserts with no face in them, and that leaves Ishida with no close single in
+   scene 23** — recorded here as a coverage observation, not smuggled into these frames. If the director wants one, it
+   is the next number in that scene.
+3. **353 is the scene's last beat, not 200.** The page gives the sway, then *Jack nods slowly*, and the paragraph after
+   it says the nod is what makes it dangerous — so 200 keeps the sway and the new 353 takes the nod, generated from 198
+   so the lantern row's last position carries between them.
+4. **Nothing was replaced, so nothing was archived.** Every one of the ten is a new asset path; the archive keeps its
+   276 versioned studies. `verify:neonoire` now asserts that 344–353 are new files at 16:9 with the pass named in their
+   notes, so a future retake must archive before it overwrites, as always.
+5. **Saved workspaces receive the ten through a new, separate sync module.** `src/lib/neonoire-coverage-sync.json`
+   (written by `scripts/neonoire/sync-coverage.mjs`, read by `src/lib/bundle-refresh.ts`) hands them to a workspace still
+   on a known default text that holds none of them, at their bundle positions, once; a workspace that already holds any
+   of the ten has had them (a deleted frame is not reinstated) and an edited script gets none. **Do not re-run
+   `sync-scene6.mjs`** — its scene list is scenes 1, 2, 6 and 14A and it would drop these ids.
+
+### Where they play (the scene's logic, not board order)
+
+`story-order.mjs` places a frame by its own quoted line, and each new quote was written from the beat it draws:
+**scene 20** — 309, 193, 194, **345, 344**, 284, **346** (the book goes into her lap before he sits down, exactly as
+the draft runs); **scene 22** — 197, **347**, 285, 348, **349**, 198; **scene 23** — 199, **350, 351, 352**, 200,
+**353**.
+
+### Honest caveats (also in the board notes)
+
+**347**'s train cannot read in a still — the beat is the quivering crockery and the swung tube, and the animatic
+supplies the sound; its counter dress is busier than the master's (pick one coffee service on set). **348** is lit by the
+wall bulbs rather than the tubes — grade it with 197. **349** came back wider than the board's 50mm medium and is logged,
+not re-generated. **351**'s eyeline drifts past his partner and his rain-wet hair does not read. **352**'s napkin carries
+partly legible pseudo-text where the board says the address must not be readable — **the one caveat in this pass worth a
+retake**, or dress the prop before print. **353**'s nod is only the instant it begins; it wants the animatic. **351 and
+353** are the same man in the same seat at the same table and must be checked as a pair. The ten were reviewed at full
+size against the masters they were generated from in this session; production approval is the director's, as ever.
+
+### Mechanics
+
+`docs/neonoire/scenes/n20-storeroom-prove-it.md`, `n22-counter-under-the-tracks.md` and
+`n23-yakitori-under-the-bridge.md` carry the ten boards under *Coverage — the long-hold pass (4 October 2026)*, quotes
+taken from the draft. `verify:neonoire` — `EXPECTED_SHOTS` **332**, the coverage run now 241–353, and a new block for
+the pass; `verify-shot-order.mjs` — scenes 20/22/23's in-scene order and `nextShotNumber` **354**;
+`verify-shot-order-browser.mjs` — allocation test moved to 354/355; `verify-revision-restoration.mjs` — patch length
+332 plus the sync test. `build-project.mjs` gained the notes branch for 344+ (without it a 344 would inherit the 2
+October rewrite-slot wording) and its description names the pass; `src/components/project-views.tsx` reads 332 shots.
+Raw generations, reference montages and check sheets are in the ignored `artifacts/neonoire/coverage-2026-10-04/`.
+`build:neonoire` (**332/332, 0 placeholders**), `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`,
+`verify:animatic`, `verify:rapture`, `verify:features`, `check:assets` (939 references), `typecheck`, `lint` and the
+production build all pass. **Quartermaster:** `node_modules` was absent again at session start (the sandbox symptom
+this file keeps recording) and `npm ci` restored it in 16 s. **This session's branch is
+`arena/01a10771-playframe`, merged to `main` at the end of the session.**
+
+## Current — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
 
 **Full visual review and scene-logic consistency audit of the retake queue's ten final frames (113, 131, 132, 141–143, 160, 161, 186, 228).**
 Carried out under the standing instruction: *"if shot description don't make complete visual sense go by the logic of the scene, keep character and scene consistancy, make sure any original image replaced is backed up and then merge with main"*.
