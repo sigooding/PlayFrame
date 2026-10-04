@@ -5,7 +5,7 @@
 Scene: INT. THE HIVE, STAIRWELL — CONTINUOUS
 Cast: JACK, VERA VOSS
 Lens plan: 24mm up the stair, 85mm on the hands.
-Grammar: pitch black, climbing by touch. His hand finds hers and she lets him. A beam sweeps the bottom of the stairwell, and then the whole building starts making noise on purpose, all at once: a dog, a baby, radios, a TV, a pot banged with a spoon. The noise is carried by sound, not pictures.
+Grammar: pitch black, climbing by touch. Her other hand finds Jack's and pulls him up after her. Halfway up she stops, takes the lighter out of her pocket, puts it back unlit, and climbs. Below them a flashlight beam crawls up the wall and falls away. The scene has no dialogue and no noise barrage: the 30 September 2026 rewrite cut the dog, the baby, the radios, the television and the pot banged with a spoon, so the stair is silent but for the beam.
 
 ## Frame format — 26 September 2026
 
@@ -21,17 +21,17 @@ LIGHT: Low key
 TIME: 20
 ID: neonoire-shot-130
 IMAGE: 128-by-touch.jpg
-NOTE: Holds "Below them, a flashlight beam sweeps the bottom of the stairwell. They freeze." Then the building's noise builds (dog, baby, the old ballad from the neighbour's wall, a TV, a pot and spoon) until the beam swings away and "Jack and Vera climb."
+NOTE: Holds "Below them, a flashlight beam sweeps the bottom of the stairwell. They freeze." Then the beam swings away and they climb. (The board once promised the building's deliberate noise barrage over this frame — a dog, a baby, the old ballad from the neighbour's wall, a television, a pot and spoon. The 30 September 2026 rewrite cut it; the wording went with the beat, and nothing in the scene makes noise on purpose any more.)
 
 131. INSERT — 85mm, static, eye level — she lets him.
-In the dark, her hand is flat on the rough concrete. His weathered hand, with a faint trace of dried blood in the knuckles, finds it and closes around it.
+In the dark, her hand finds his and closes around it to pull him up after her — hers is the hand that takes and leads, his the hand that is taken. His knuckles carry a faint trace of dried blood; her other hand stays flat on the rough concrete wall.
 SCRIPT: "Her other hand finds Jack's and pulls him up after her."
 CAST: Jack, Vera Voss
 LIGHT: Low key
 TIME: 4
 ID: neonoire-shot-131
 IMAGE: 129-she-lets-him.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Cut in on "His hand finding hers in the dark." It pays off her refusals in scenes 74 and 84.
+NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over its own filename, and released from the pin. The 30 September rewrite ran this beat the other way: the old study showed HIS hand finding hers in the dark and closing over it while she let him ("His hand finding hers in the dark. She lets him."). The page now reads "Her other hand finds Jack's and pulls him up after her", so she reaches back, she takes, and he is drawn up the stair behind her. Near-total dark, a faint cold spill from above, the flashlight's glow far below, steel-blue haze and no faces in frame. It pays off her refusals in scenes 74 and 84.
 
 ---
 

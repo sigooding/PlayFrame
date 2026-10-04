@@ -9,31 +9,31 @@ Grammar: one warm bulb, the old sign, a second bowl. She doesn't turn.
 
 ## Frame format — 26 September 2026
 
-Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follows `s86/121-the-shutter.jpg`, and **Kaneko** is held to `s86/123-fifty-years.jpg`, now sheeted as `sheets/kaneko.jpg`. The scene master is `s100/158-the-third-stool.jpg`. **Vera wears costume Look F**, sheeted since the cast-sheet pass of 26 September 2026 as `sheets/vera-look-f.jpg`, first framed in shot 160. It is a deep teal double-breasted peacoat, worn with the red bird clip in her hair. Jack appears only as a man in a coat, which is how the script keeps him. These are AI-generated draft studies, not approved coverage.
+Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follows `s86/121-the-shutter.jpg`, and **Kaneko** is held to `s86/123-fifty-years.jpg`, now sheeted as `sheets/kaneko.jpg`. The scene master is `s100/158-the-third-stool.jpg` — since the 4 October 2026 retake it holds the counter at the beat before Vera sits: Jack on the second stool, the third empty, the curtain in the doorway just beginning to move. **Vera wears costume Look F**, sheeted since the cast-sheet pass of 26 September 2026 as `sheets/vera-look-f.jpg`; after that retake it is first framed in shots 265 and 260, and in 161, the film's last frame. It is a deep teal double-breasted peacoat, worn with the red bird clip in her hair. Jack appears only as a man in a coat, which is how the script keeps him. These are AI-generated draft studies, not approved coverage.
 
 ---
 
 160. WIDE — 35mm, static, eye level — the third stool.
-A tiny counter inside a brick railway arch: one warm bulb, steam, new wooden stools, a small radio on the shelf, and the old hand-painted sign on the wall. Kaneko works the pot with long chopsticks. Vera sits at the counter in a teal peacoat, a bowl in front of her.
+A tiny counter inside a brick railway arch: one warm bulb, steam, six new wooden stools in one row, a small old television on a shelf above the door, and the old hand-painted sign on the brick wall. Kaneko works the pot with long chopsticks. A man in a charcoal coat sits on the second stool from the left, seen from behind, a bowl in front of him; the third stool stands empty, with nothing set on the counter before it. At the back, the cloth curtain in the doorway is just beginning to move, cool blue street light behind it.
 SCRIPT: "Kaneko ladles. JACK sits on the second stool. The third is empty."
 CAST: Vera Voss, Kaneko
 LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-160
 IMAGE: 158-the-third-stool.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. The scene master, and Look F's first frame. Retaken in the consistency pass of 26 September 2026: Vera now sits on the THIRD of six stools — two empty stools to her left, three empty to her right — with the red bird clip visible, and the old hand-painted sign hangs on the brick wall: a cream wooden board, the two brush kanji 金子 and a painted noodle bowl, as locked by shot 185's sketchbook. Kaneko follows s86/123-fifty-years.jpg. Shots 260 and 161 are generated from this master, so the room, the light and the stool carry by construction; shot 265 is the high-angle count. "A train passes overhead. The bulb trembles." and the old ballad on the radio are sound over this frame.
+NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over its own filename, and released from the pin. SCENE-LOGIC CALL: the consistency pass of 26 September 2026 locked this master to Vera seated on the third stool (two empty stools to her left, three empty to her right), but the frame's own re-quoted line is "Kaneko ladles. JACK sits on the second stool. The third is empty." and her entrance is the next beat — "The curtain in the doorway moves. VERA." — so the master now pictures the room before she sits: from the left, one empty stool, Jack on the second, the third empty, then three empty stools to its right. Two retired beats go with it: the long shadow of a man standing in the doorway (the rewrite simply has him sitting at the counter with them) and the second bowl set for the fourth stool (the film now ends on one bowl, money left on the counter, and a hold on the three of them). The old hand-painted sign hangs on the brick wall — a cream wooden board, the two brush kanji 金子 and a painted noodle bowl, as locked by shot 185's sketchbook. Kaneko follows s86/123-fifty-years.jpg. Shots 260 and 161 are generated from this master, so the room, the light and the stool row carry by construction; shot 265 is the high-angle count and the frame that first seats her. "A train passes overhead. The bulb trembles." is sound over this frame.
 
 ---
 
 161. MEDIUM — 50mm, static, eye level — she doesn't turn.
-Seen from behind, Vera sits still, the red bird clip bright in her hair. Across the counter, Kaneko sets down a second bowl. Behind her, the door stands open: cool blue street light, a man in a coat in the doorway, and his long shadow across the floor.
+Seen from behind, Vera sits still on the third stool, the red bird clip bright in her hair, a bowl in front of her and money left lying on the counter beside it. On the stool to her left, a man in a charcoal coat sits eating with them. Across the counter, Kaneko looks at the money, then at her, and leaves it where it is. Steam fills the arch under the bare bulb; past the curtain at the back, a lit window and a radio through a wall.
 SCRIPT: "HOLD on the three of them in the steam."
 CAST: Vera Voss, Kaneko, Jack
 LIGHT: Practical night
 TIME: 12
 ID: neonoire-shot-161
 IMAGE: 159-she-doesnt-turn.jpg
-NOTE: The last frame of the film, generated from the retaken shot 160 in the consistency pass of 26 September 2026, so the stool row and the 金子 sign carry from the master. The man himself is visible in the doorway, where the script gives only his shadow, and his long shadow crosses the floor toward her stool; keep him out of frame on set and let the shadow reach her. At this angle one empty stool reads to her left and the second is out of frame; the count is shot 265. Then CUT TO BLACK, with a train and rain beginning again over black.
+NOTE: RETAKE LANDED 4 OCTOBER 2026 — the tenth frame of the round: pinned, regenerated from the rewritten scene over its own filename and released in the same pass, because the film's last frame was still playing the ending the rewrite retired. It had shown a man standing in the open doorway with his long shadow running across the floor to her stool, a second bowl set for the fourth stool, and her not turning. The rewritten scene has Jack openly at the counter on the second stool and ends "HOLD on the three of them in the steam", so the frame now holds the three of them: her back and the clip, him beside her, Kaneko across the counter, the money she has overpaid left where she put it, steam, the old 金子 board, and past the curtain a lit window and a radio through a wall — the city going on. generated from the retaken shot 160, so the stool row and the sign carry from the master. Her face is never seen. Then FADE OUT, with a train and rain beginning again over black.
 
 ---
 

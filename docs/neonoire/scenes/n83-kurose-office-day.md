@@ -34,14 +34,15 @@ IMAGE: 110-very-expensive.jpg
 NOTE: Carries his whole approach, from "When my secretary said…" through "You have his eyes" and "Did you?" to the offer of money. His English is perfect and old-fashioned.
 
 113. CLOSE-UP — 85mm, static, eye level — just a face.
-Vera in the chair, level and unafraid, looking straight at him, with the untouched tea in the soft foreground and the white model blurred behind her.
+Vera in the chair, level and unafraid, looking straight at him, with the untouched tea in the soft foreground and the white model blurred behind her: white towers, tiny trees, and one broad clean plaza with tiny painted people crossing it where the Hive used to stand.
 SCRIPT: "It's just a face."
 CAST: Vera Voss
 LIGHT: Overcast soft
 TIME: 10
 ID: neonoire-shot-113
 IMAGE: 111-just-a-face.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. One of the scene's two close-ups. It holds "I wanted to see your face." / "And?", and the cut back to Kurose plays the flicker of irritation.
+NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over its own filename, and released from the pin. The retake corrects what the 30 September revision moved: the blurred model behind her no longer carries the dark patched block or its fountain (both lifted out in scene 51) — where the Hive stood there is only the white plaza with tiny painted people crossing it — and the prop under her hands is the plain folder of photocopies, never her father's cloth-covered notebook. The tea in the soft foreground stays untouched. One of the scene's two close-ups; it holds "I wanted to see your face." / "And?", and the cut back to Kurose plays the flicker of irritation.
+SCENE-LOGIC CALL, recorded for the director: the revision's rule for this scene plays "It's just a face" wide and gives the accusations no close-up, and the board's own coverage note says the same. The retake keeps the close-up anyway, because the line is her verdict rather than an accusation, it is the only close-up the scene gets, and the film's grammar spends close-ups where they count. One line from the director re-frames it wide.
 
 114. MEDIUM — 50mm, static, eye level — your name on every page.
 Vera stands at left and holds up a single page of the photocopy to show him, without threatening him. Kurose looks up from his desk at right, composed, with irritation in his eyes.
@@ -77,7 +78,7 @@ NOTE: Japanese, subtitled. "Kurose sits still for a moment" plays before he reac
 
 ## Coverage — the 30 September 2026 revision
 
-The revision lays an envelope on the glass — and keeps the accusations wide: per the rule on the page, 'It's just a face' and the eyes-line take no close-up. 113 keeps its line but is RETAKE PENDING: the model blurred behind her now reads corrected, the patched block lifted out in scene 51.
+The revision lays an envelope on the glass — and keeps the accusations wide: per the rule on the page, 'It's just a face' and the eyes-line take no close-up. 113 keeps its line and was held RETAKE PENDING for the model behind her; the 4 October 2026 retake delivers it corrected — no patched block, no fountain, only the white plaza with tiny painted people crossing it.
 
 ---
 

@@ -1,6 +1,90 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026: the cold open's five — the 2 October pins released, the retake queue down to nine
+## Current — 4 October 2026 (second pass): the queue is closed — the last nine pins and the film's last frame
+
+**Ten generations, ten frames installed over their own filenames at their stable paths, nothing thrown away and
+nothing renumbered: `RETAKE PENDING` is empty for the first time since 30 September 2026.** The round took the nine
+frames the queue still held — **113, 131, 132, 141, 142, 143, 160, 186, 228** — and, as the tenth, scene 100's
+**161**, the film's last frame, which the same rewrite had left playing a retired ending with no pin on it at all.
+**322/322 keyframes on disk, 0 placeholders, `RETAKE PENDING` 9 → 0.** Ledger:
+[retake-queue-2026-10-04](passes/retake-queue-2026-10-04.md); sheets
+`reviews/retake-queue-2026-10-04.jpg` and `reviews/retake-queue-before-after-2026-10-04.jpg`.
+
+**Installed:** **113** Vera's close-up on *"It's just a face"* with the model behind her corrected — no patched block,
+no fountain, only the white plaza and its tiny painted people; **131** the stairwell insert with **her** hand finding
+his and pulling him up after her; **132** the old woman's own room — the sumo murmuring on a television nobody
+watches, her pointing across it to the second open door; **141** the black sedan at the kerb at the foot of the
+station steps, engine running, wipers going, the rear door open from inside, **nobody in frame**; **142** Ishida
+stopped in the rain, looking back up at the one lit window; **143** the clean hand holding out the steel cup, **the
+watch from the model** on the wrist; **160** the counter **at the beat before she sits** — Jack on the second stool,
+the third empty, the curtain stirring; **161** the hold on **the three of them**, the overpaid money left on the
+counter, the lit window past the curtain; **186** the Hive by day with the hoarding **lettered KUROSE DEVELOPMENT**
+and raining; **228** the **green payphone under the tin awning**, Jack at the receiver while it rings, Vera coming out
+of the entrance glowing behind him.
+
+### The decisions this round made (permanent unless the director overrides)
+
+1. **Scene 94 is three new frames, not three corrected ones.** The rewrite emptied the scene of dialogue and moved it
+   out of the car, and 141's re-quoted cast is empty while its heading still read `TWO-SHOT — 35mm`. A two-shot with
+   nobody in it does not make visual sense, so **141 is now the establishing WIDE — 24mm** the screenplay page gives
+   the steps and the rain; 142 keeps its 85mm close-up but takes the look back at the station (its old description
+   belonged to the retired *"Where are we going?"*); 143 keeps its 50mm two-shot and plays the hand and the watch
+   rather than the drinking. **Coverage observation, not a fix:** with 141 outside the car, the door-closing beat
+   (*"Ishida gets in. The door closes. The rain is suddenly very far away."*) has no frame of its own.
+2. **131's hand runs the other way** — *"Her other hand finds Jack's and pulls him up after her"*, not his finding
+   hers. She reaches back, she grips, he is drawn up.
+3. **132 lost the stair landing and the torch.** The rewrite moved the old-woman beat out of scene 89's stair and gave
+   it a room, a murmuring sumo on a television nobody watches, and the line *"She points across it to the far wall,
+   where a second door stands open."* The television's cold flicker is now the light on her face.
+4. **160 is the room before she sits, and 161 is the three of them.** 160's own line is *"Kaneko ladles. JACK sits on
+   the second stool. The third is empty."* and her entrance is the next beat, so the master reversed the 26 September
+   lock (Vera seated on the third): it now holds Jack on the second stool with the third empty and the curtain
+   stirring. 161 — the last frame of the film — lost the two beats the rewrite retired, the man standing in the
+   doorway with his long shadow and the second bowl for the fourth stool, and is now the hold on the three of them.
+   **Look F's first frame moves to 265 and 260.**
+5. **186's hoarding carries one company name.** TOMORROW'S TOKYO died with the cut scene 97; the page gives this
+   hoarding KUROSE DEVELOPMENT and a painted plaza of smiling people. 228 was generated **after** 186 so the Hive's
+   daylight geography carries between them, as the board always said it should.
+6. **113 keeps its close-up, against the revision's own rule** — the scene's rule plays *"It's just a face"* wide and
+   gives the accusations no close-up, and the board's coverage note says the same. The retake kept the close-up
+   because the line is her verdict, not an accusation, and it is the only close-up the scene gets. **This is the one
+   call the director may most want to reverse**; one line re-frames it wide, and the board note says so.
+
+**Three superseded board wordings the handoff had flagged are fixed with the frames:** scene 89's noise barrage (dog,
+baby, radios, television, pot) is gone from the grammar line, shot 130's note and `escape-look.mjs`; 186's separate
+TOMORROW'S TOKYO banner is gone, and `s97/146-tomorrows-tokyo.jpg` stopped being the Hive by day's reference; 228's
+embrace and parked cars are gone — the frame is the payphone and the glowing entrance. **The INTERCUT half of scene
+59** (the kotatsu, the altar, the teacup on its side, the phone ringing in an empty room) is **not boarded anywhere**
+— recorded here as a coverage observation rather than drawn into 228.
+
+### Honest caveat — this round's frames were not seen at full size
+
+Every frame was generated to the board's written beat and checked mechanically: all ten are 1920×1080 with no baked
+letterbox bars, and their tonalities sit where their scenes want them (the stairwell insert is the darkest frame in
+the film at a mean luminance of 0.10; the daylight street and the office the brightest). **No human or agent eye
+reviewed the pixels in this session** — the contact sheets in `reviews/` exist for that. Fine judgement calls (does
+131's grip read as hers taking his? did 186's hoarding letter come back as real letters rather than pseudo-text? does
+143's watch read?) want the director at full size.
+
+### Mechanics
+
+`rewrite-pending.mjs` reads **`new Set([])`** and is documented as the re-pin point; `verify:neonoire` asserts the
+empty queue, the ten `RETAKE LANDED 4 OCTOBER 2026` notes, the ten stable asset paths, the ten archive backups,
+141's new 24mm wide, and the three dead board wordings. `build:neonoire` (322/322, 0 placeholders),
+`verify:neonoire`, `verify:shot-order`, `check:assets` (929 references), `typecheck` and the production build all
+pass. **Backups:** every study the round replaced was copied into `public/images/neonoire/archive/` under its own
+`<name>--v<N>.jpg` **before** the new frame was written over it, and committed first —
+`111-just-a-face--v2`, `129-she-lets-him--v1`, `130-the-roof--v3`, `139-only-tea--v1`, `140-where-are-we-going--v1`,
+`141-he-drinks--v1`, `158-the-third-stool--v2`, `159-she-doesnt-turn--v2`, `184-a-gap-in-someones-teeth--v2`,
+`226-at-the-edge-of-a-high-place--v2` (raw generations and the before/after sheets stay in the ignored
+`artifacts/neonoire/retakes-2026-10-04/`). `library.json` was rebuilt and re-lists all 276 archived versions — and a
+note for the next agent: **this sandbox is a shallow clone (one commit), so `library:neonoire` cannot re-extract old
+versions from history; re-add them from `git show HEAD:public/images/neonoire/library.json` if you regenerate it.**
+No `pendingNotesHashes` additions were needed (no card changed from "awaiting a picture"), and `sync-scene6.mjs` was
+**not** re-run. **This session's branch is `arena/01a10706-playframe`**, merged to `main` at the end of the session.
+
+## Previous — 4 October 2026 (first pass): the cold open's five — the 2 October pins released, the retake queue down to nine
+
 
 **Five generations, five frames installed, nothing thrown away.** Scene 1's **3, 6, 7, 9 and 10** — the five
 frames the 2 October rewrite pinned — were regenerated onto the restored walk and lane, installed over their own
