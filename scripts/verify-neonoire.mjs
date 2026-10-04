@@ -438,11 +438,20 @@ for (const frame of ishidaEnd) {
   for (const detail of ["sheets/ishida.jpg", "NO TIE", "SINGLE round black-rim", "s1/13-taillights-gone.jpg"]) assert(frame.notes.includes(detail), `${frame.title} is missing scene 93–96 continuity: ${detail}`);
 }
 const s94 = ishidaEnd.filter(f => f.sceneId === "neonoire-s94");
-assert.deepEqual(s94.map(f => f.id), ["neonoire-shot-141", "neonoire-shot-142", "neonoire-shot-143"], "The rewritten 94 is its kerb, its detective and its cup of tea — three frames, all RETAKE PENDING");
+assert.deepEqual(s94.map(f => f.id), ["neonoire-shot-141", "neonoire-shot-142", "neonoire-shot-143"], "The rewritten 94 is its kerb, its detective and its cup of tea — three frames, all retaken 4 October 2026");
 assert.deepEqual(s94.map(f => f.characters.join()),
   ["", castOf("Detective Ishida"), `${castOf("Detective Ishida")},${castOf("Kurose")}`],
   "Scene 94 after the revision: the sedan at the kerb with nobody in frame, Ishida alone in the rain, then one clean hand and the watch");
-for (const f of s94) assert(f.notes.includes("RETAKE PENDING"), `Shot ${shotNo(f)}: the old back-seat study stands retired until the pass`);
+for (const f of s94) {
+  assert(f.notes.includes("RETAKE LANDED 4 OCTOBER 2026"), `Shot ${shotNo(f)}: the old back-seat study is replaced and the round is recorded`);
+  assert(!f.notes.includes("RETAKE PENDING"), `Shot ${shotNo(f)}: the pin note is gone with the pin`);
+}
+// 141's re-quoted cast is empty and its line is the car at the kerb, so the retake re-typed the frame from
+// a 35mm back-seat two-shot to the 24mm wide the screenplay page gives the steps and the rain.
+assert.equal(s94[0].shotType, "Wide", "Scene 94 opens wide: nobody is in frame at the beat its line quotes");
+assert.equal(s94[0].lens, "24mm");
+assert.equal(s94[1].lens, "85mm", "Ishida's look back at the lit window is the scene's one close-up");
+assert.equal(s94[2].lens, "50mm", "The cup and the watch hold both men in a 50mm two-shot");
 assert(!ishidaEnd.some(f => f.sceneId === "neonoire-s96" && f.characters.includes(castOf("Detective Ishida"))), "Ishida is gone from the morning room");
 assert.deepEqual(ishidaEnd.find(f => f.id === "neonoire-shot-144").characters, [], "The receding car has no visible cast");
 const call303 = ishidaEnd.find(f => f.id === "neonoire-shot-303");
@@ -740,7 +749,8 @@ pass("story pass 2 boards: all surviving 297–307 images delivered; the crawl r
 
 // Consistency retake pass, 26 September 2026: the third stool at both counters, Mr. Noda behind the counter, Jack's hands at 48, one hand-painted sign.
 const stool160 = project.frames.find(f => f.id === "neonoire-shot-160");
-assert(stool160.notes.includes("two empty stools to her left"), "Shot 160 seats Vera on the third stool");
+assert(stool160.notes.includes("Jack on the second"), "Shot 160 sits Jack on the second stool, at the beat the rewrite quotes");
+assert(stool160.notes.includes("the third empty"), "Shot 160 leaves the third stool empty for her to take on the next beat");
 assert(stool160.notes.includes("金子"), "Shot 160 carries the hand-painted sign");
 const stool161 = project.frames.find(f => f.id === "neonoire-shot-161");
 assert(stool161.notes.includes("generated from the retaken shot 160"), "Shot 161 derives from the retaken master");
@@ -1031,7 +1041,35 @@ for (const n of [193, 194]) {
   assert(!f.notes.includes("RETAKE PENDING"), `Shot ${n}: the pin note is gone with the pin`);
   assert(f.notes.includes("RETAKE LANDED 1 October 2026"), `Shot ${n} records the retake round in its note`);
 }
-assert(rewritePending.size === 9, "the standing queue is the nine frames the retake rounds have not reached: 113, 131, 132, 141–143, 160, 186 and 228 — the five scene-1 pins (3, 6, 7, 9, 10) were released on 4 October 2026");
+assert(rewritePending.size === 0, "the standing queue is empty: the ten frames the retake rounds still owed — 113, 131, 132, 141–143, 160, the film's last frame 161, 186 and 228 — were regenerated and released on 4 October 2026");
+// The 4 October round itself: ten generations, ten frames installed over their own filenames at their
+// stable paths, each one regenerated from the current screenplay text. Nothing is renumbered, nothing is
+// relabelled, and every study it replaced is on disk in the archive before the fact.
+const october4 = [
+  ["neonoire-shot-113", "images/neonoire/s83/111-just-a-face.jpg", "images/neonoire/archive/s83/111-just-a-face--v2.jpg"],
+  ["neonoire-shot-131", "images/neonoire/s89/129-she-lets-him.jpg", "images/neonoire/archive/s89/129-she-lets-him--v1.jpg"],
+  ["neonoire-shot-132", "images/neonoire/s90/130-the-roof.jpg", "images/neonoire/archive/s90/130-the-roof--v3.jpg"],
+  ["neonoire-shot-141", "images/neonoire/s94/139-only-tea.jpg", "images/neonoire/archive/s94/139-only-tea--v1.jpg"],
+  ["neonoire-shot-142", "images/neonoire/s94/140-where-are-we-going.jpg", "images/neonoire/archive/s94/140-where-are-we-going--v1.jpg"],
+  ["neonoire-shot-143", "images/neonoire/s94/141-he-drinks.jpg", "images/neonoire/archive/s94/141-he-drinks--v1.jpg"],
+  ["neonoire-shot-160", "images/neonoire/s100/158-the-third-stool.jpg", "images/neonoire/archive/s100/158-the-third-stool--v2.jpg"],
+  ["neonoire-shot-161", "images/neonoire/s100/159-she-doesnt-turn.jpg", "images/neonoire/archive/s100/159-she-doesnt-turn--v2.jpg"],
+  ["neonoire-shot-186", "images/neonoire/s15/184-a-gap-in-someones-teeth.jpg", "images/neonoire/archive/s15/184-a-gap-in-someones-teeth--v2.jpg"],
+  ["neonoire-shot-228", "images/neonoire/s59/226-at-the-edge-of-a-high-place.jpg", "images/neonoire/archive/s59/226-at-the-edge-of-a-high-place--v2.jpg"],
+];
+for (const [id, image, backup] of october4) {
+  const frame = project.frames.find(f => f.id === id);
+  assert(frame.image === `/${image}`, `Shot ${shotNo(frame)} keeps its stable asset path`);
+  assert(frame.notes.includes("RETAKE LANDED 4 OCTOBER 2026"), `Shot ${shotNo(frame)} records the retake round in its note`);
+  assert(!frame.notes.includes("RETAKE PENDING"), `Shot ${shotNo(frame)}: the pin note is gone with the pin`);
+  assert.deepEqual(jpegDimensions(`/${image}`), [1920, 1080], `Shot ${shotNo(frame)} is delivered 16:9`);
+  assert(existsSync(join(root, "public", backup)), `the study shot ${shotNo(frame)} replaced is backed up at ${backup}`);
+}
+// Three board wordings the rewrites had superseded were fixed with the frames, on the scene's logic.
+assert(!/whole building starts making noise/.test(readFileSync(join(root, "docs/neonoire/scenes/n89-hive-stairwell.md"), "utf8")), "Scene 89's board no longer promises the noise barrage the rewrite cut");
+assert(!readFileSync(join(root, "docs/neonoire/scenes/n15-the-hive-day.md"), "utf8").includes("KUROSE DEVELOPMENT and TOMORROW'S TOKYO"), "Scene 15's board no longer asks for the TOMORROW'S TOKYO banner the cut scene 97 took with it");
+assert(project.frames.find(f => f.id === "neonoire-shot-228").description.includes("payphone"), "Shot 228's board describes the payphone the rewrite put in the scene, not the embrace it took out");
+pass("the retake queue is closed: ten frames regenerated onto the rewritten text, every replaced study archived, three superseded board wordings fixed");
 assert(officeLayoutLook.includes("ONE black rotary telephone"), "The office lock forbids the duplicated telephone");
 assert(project.frames.find(f => f.id === "neonoire-shot-166").notes.includes("room master for the whole film"), "Shot 166 is declared the room master");
 assert(project.frames.find(f => f.id === "neonoire-shot-87").notes.includes("no longer leads the room"), "Shot 87's study no longer leads the room");

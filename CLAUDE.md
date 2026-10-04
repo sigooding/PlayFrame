@@ -6,7 +6,28 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 4 October 2026: the cold open's five — the 2 October pins released, queue down to nine
+## Latest session — 4 October 2026 (second pass): the retake queue is closed — ten frames, and the film's last one
+
+**"Continue with next 10 shots" took the rest of the queue and then one frame the queue had missed.** The nine
+standing `RETAKE PENDING` pins (113, 131, 132, 141–143, 160, 186, 228) **plus scene 100's 161** — the film's last
+frame, which the rewrite had left playing a retired ending with no pin on it — were regenerated onto the current
+screenplay text, installed over their own filenames and released: **ten generations, ten frames, `RETAKE PENDING`
+9 → 0, 322/322 keyframes, 0 placeholders.** Five of them were decided on the scene's logic rather than the board's
+old wording: **141** is now a 24mm wide at the kerb (an empty cast cannot be a two-shot), **131**'s hand runs hers to
+his, **132** lost its stair landing and torch for the sumo television and the pointing hand, **160** is the counter
+before she sits (Jack on the second stool, the third empty) and **161** is the hold on the three of them, and
+**186**'s hoarding carries KUROSE DEVELOPMENT alone — TOMORROW'S TOKYO died with scene 97. **113 keeps its close-up
+against the revision's own wide rule; that is the call most worth a director's reversal.** Every replaced study was
+archived (`--v1`–`--v3`) and committed **before** the new frame went over it, and `verify:neonoire` asserts each
+backup exists. Read [the ledger](docs/neonoire/passes/retake-queue-2026-10-04.md) and the handoff's new Current
+section. **Caveat: no full-size visual review was possible in this session** — the frames were checked mechanically
+(1920×1080, no letterbox bars, luminance by scene) and the contact sheets are in `reviews/`. Two coverage
+observations, not fixed: scene 94's door-closing beat has no frame, and scene 59's INTERCUT to Mrs. Sakai's empty
+house is not boarded. **Branch `arena/01a10706-playframe`, merged to `main`.**
+
+## Previous session — 4 October 2026 (first pass): the cold open's five — the 2 October pins released, queue down to nine
+
+## Previous — 4 October 2026 (first pass): the cold open's five — the 2 October pins released, queue down to nine
 
 **"Continue with next shots" took the retake queue's head: scene 1's five frames the 2 October rewrite pinned —
 3, 6, 7, 9, 10 — regenerated onto the restored walk and lane, installed over their own filenames and released;

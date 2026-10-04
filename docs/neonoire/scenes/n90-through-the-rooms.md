@@ -14,14 +14,14 @@ The script pass replaced the roof, the one-metre gap and the railway walkway (th
 ---
 
 132. MEDIUM — 35mm, static, eye level — the old woman holds the door.
-On a stair landing a door opens a hand's width: the old woman who slept in front of the sumo, lit from below by a torch of her own. She steps back and holds it for Vera and Jack.
+A door in the passage opens a hand's width before Vera can knock: the old woman who slept in front of the sumo stands back and holds it, and behind her, in her room, a sumo match murmurs on a small television nobody is watching — its cold flicker the only light on her face. She points across the room to the far wall, where a second door stands open. Vera and Jack wait soaked in the dark behind her.
 SCRIPT: "It opens before she can knock: the OLD WOMAN from 55."
 CAST: Jack, Vera Voss
 LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-132
 IMAGE: 130-the-roof.jpg
-NOTE: RETAKE PENDING (30 September 2026 revision) — this study still shows a beat the rewrite retired. Retake 29 September 2026 (story pass 2): regenerated to the rewritten beat — the stair landing, the old woman's torch lit from below (her scene 16 sumo sleeper), the door held wide, Vera in Look C and Jack from the recast sheet, both soaked. The retired roof master is overwritten in place, not relabelled. CAVEAT: her hair reads a little lighter and looser than the scene 16 frames — a hair check, not a blocked frame.
+NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over its own filename, and released from the pin. The retired roof master was overwritten in place, not relabelled. SCENE-LOGIC CALLS: the 29 September study put this on a stair landing with the old woman lit from below by a torch of her own; the rewrite moved the beat out of scene 89's stair and gave it a room, a murmuring sumo on a television nobody watches, and the line "She points across it to the far wall, where a second door stands open" — so the torch goes and the television's flicker is the light, and she points. Vera in Look C, Jack from the recast sheet, both soaked; one dim faded neon sign far down the passage. CAVEAT: the old woman still has no identity sheet of her own — she is held to the scene 16 passage master (s16/186-everybody-sees-him.jpg, the woman asleep at the sumo), and her hair reads a little lighter and looser than it does there; a hair check, not a blocked frame.
 
 133. WIDE — 35mm, static, eye level — the kitchen in the dark.
 A kitchen lit by one candle: the family around the table, the father with the baseball bat across his knees, the children holding the next door wide. Vera and Jack cross it without a word.

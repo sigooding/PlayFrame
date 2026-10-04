@@ -35,9 +35,16 @@
 // boards: 3 loses the clip at distance and runs two poles; 6's crate lettering is garbled; 7's flicker
 // of recognition does not read; 9 cannot show what he has seen; 10's two men read as full face coverings
 // rather than the locked cap-and-lower-mask, and its blocking car reads van-like.
-export const rewritePending = new Set([
-  "neonoire-shot-113", "neonoire-shot-131", "neonoire-shot-132", "neonoire-shot-141",
-  "neonoire-shot-142", "neonoire-shot-143", "neonoire-shot-160", "neonoire-shot-186",
-  "neonoire-shot-228",
-]);
+// RELEASED 4 OCTOBER 2026 — the queue is empty. The round took the last nine pins (113, 131, 132,
+// 141–143, 160, 186, 228) plus scene 100's 161, the film's last frame, which the same rewrite had
+// left playing a retired ending without a pin on it: ten generations, ten frames installed over
+// their own filenames at their stable paths. Every one was regenerated from the current screenplay
+// text, with the character sheets and — for geography only — the location master or canon sheet the
+// frame is held to (see the ledger for the list). Three board wordings the rewrites had superseded
+// were fixed with the frames, on the scene's logic: scene 89's noise barrage, 186's TOMORROW'S TOKYO
+// banner and 228's embrace and parked cars. Ledger:
+// docs/neonoire/passes/retake-queue-2026-10-04.md.
+// The set stays exported and empty on purpose: the builder, the verifier and the handoff all read
+// it, and one line here re-pins any of the ten if the director wants it back.
+export const rewritePending = new Set([]);
 export const rewritePendingNote = "RETAKE PENDING — the script rewrote this scene on 30 September 2026; the image on file shows a beat that no longer exists.";
