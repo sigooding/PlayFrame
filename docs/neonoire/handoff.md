@@ -1,6 +1,29 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (second pass): the queue is closed — the last nine pins and the film's last frame
+## Current — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
+
+**Full visual review and scene-logic consistency audit of the retake queue's ten final frames (113, 131, 132, 141–143, 160, 161, 186, 228).**
+Carried out under the standing instruction: *"if shot description don't make complete visual sense go by the logic of the scene, keep character and scene consistancy, make sure any original image replaced is backed up and then merge with main"*.
+
+1. **Full-size visual inspection completed:**
+   - **113** (`s83/111-just-a-face.jpg`): Vera's tight close-up resolves cleanly against the rain-streaked window; the miniature architectural model behind her correctly shows the empty white plaza with tiny painted pedestrians, with the old dark patched block and fountain completely removed.
+   - **131** (`s89/129-she-lets-him.jpg`): The dark stairwell insert clearly reads her slender forearm reaching down and her hand firmly gripping Jack's hand and pulling him upward; the pull direction is unambiguous.
+   - **132** (`s90/130-the-roof.jpg`): The old woman's room features the murmuring sumo broadcast on the small CRT television on the right, providing cold blue-grey flicker against the warm interior; she points toward the open second door as Jack and Vera look on from behind. No stair landing or handheld torch remains.
+   - **141** (`s94/139-only-tea.jpg`): The 24mm wide exterior under heavy rain establishes the scene logic perfectly: black 1990s sedan idling at the kerb at the foot of the station steps, rear door ajar revealing warm amber upholstery, wipers active, exhaust misting, and exactly nobody in frame. The lit second-floor station window is clearly visible above.
+   - **142** (`s94/140-where-are-we-going.jpg`): 85mm close-up of Ishida paused in the downpour, glancing back up at that single illuminated window. Character consistency holds: open collar, no tie, weathered expression.
+   - **143** (`s94/141-he-drinks.jpg`): 50mm two-shot in the rear seat of the sedan; Kurose extends the stainless steel tea cup toward Ishida, with the distinctive silver watch from the model cleanly visible on Kurose's wrist.
+   - **160** (`s100/158-the-third-stool.jpg`): Kaneko's noodle counter under the brick railway arch at the exact beat before Vera sits: Kaneko ladles, Jack sits on stool two, stool three is vacant and waiting, and the entrance noren curtain stirs in the background. The wall-mounted 金子 sign is preserved.
+   - **161** (`s100/159-she-doesnt-turn.jpg`): The definitive film hold: three figures in the steam — Vera on stool three in her teal coat (Look F) with the red bird clip in her hair, Jack on stool two, Kaneko behind the counter, and the overpaid yen notes left resting on the counter. The window through the arch looks out onto the night.
+   - **186** (`s15/184-a-gap-in-someones-teeth.jpg`): 24mm daylight wide in rain; the white hoarding carries the sharp, legible "KUROSE DEVELOPMENT" lettering and the painted sunny plaza illustration beneath the patched Hive façade.
+   - **228** (`s59/226-at-the-edge-of-a-high-place.jpg`): Under the tin awning in the rain, Jack stands at the green payphone receiver while Vera emerges warmly lit from the Hive entrance doorway behind him.
+
+2. **Archive and Backup Audit:**
+   All 10 replaced studies are confirmed backed up in `public/images/neonoire/archive/` (`--v1` to `--v3`), asserted by `verify:neonoire`.
+3. **Queue Status:**
+   `RETAKE PENDING` remains at 0; 322 of 322 keyframes on disk; 0 placeholders. All test suites (`build:neonoire`, `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`, `verify:features`, `check:assets`, `typecheck`, `next build`) pass cleanly.
+4. **Session branch `arena/01a10760-playframe` merged to `main`.**
+
+## Previous — 4 October 2026 (second pass): the queue is closed — the last nine pins and the film's last frame
 
 **Ten generations, ten frames installed over their own filenames at their stable paths, nothing thrown away and
 nothing renumbered: `RETAKE PENDING` is empty for the first time since 30 September 2026.** The round took the nine
