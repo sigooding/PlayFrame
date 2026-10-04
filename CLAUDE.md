@@ -6,7 +6,24 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 4 October 2026 (second pass): the retake queue is closed — ten frames, and the film's last one
+## Latest session — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
+
+**Visual sign-off and scene consistency audit of the retake queue's ten final frames (113, 131, 132, 141–143, 160, 161, 186, 228).**
+Under the standing instruction *"if shot description don't make complete visual sense go by the logic of the scene, keep character and scene consistancy, make sure any original image replaced is backed up and then merge with main"*, the ten frames were examined across the review contact sheets and against character/location canon:
+1. **113** (Vera close-up; architectural model with empty white plaza and painted figures, no old block/fountain).
+2. **131** (stairwell insert; her hand reaching down and pulling Jack upward).
+3. **132** (old woman's room with sumo on CRT television, pointing to open door; no landing/torch).
+4. **141** (24mm wide exterior; black sedan at kerb, open door showing amber interior, empty cast, one lit window above).
+5. **142** (85mm close-up; Ishida paused in rain looking up at lit window, no tie).
+6. **143** (50mm two-shot; tea cup offered, watch with silver mesh strap on Kurose's wrist).
+7. **160** (Kaneko's counter; Jack on stool 2, stool 3 empty, noren stirring, 金子 sign on wall).
+8. **161** (hold on the three of them; Vera on stool 3 in teal coat with red bird clip, overpaid money on counter).
+9. **186** (24mm exterior day; hoarding cleanly lettered KUROSE DEVELOPMENT with painted plaza, raining).
+10. **228** (green payphone under tin awning; Jack on phone, Vera emerging glowing from Hive entrance).
+
+All 10 replaced studies remain archived in `public/images/neonoire/archive/` (`--v1`–`--v3`). `RETAKE PENDING` is 0; 322/322 keyframes on disk, 0 placeholders. Branch `arena/01a10760-playframe`, merged to `main`.
+
+## Previous session — 4 October 2026 (second pass): the retake queue is closed — ten frames, and the film's last one
 
 **"Continue with next 10 shots" took the rest of the queue and then one frame the queue had missed.** The nine
 standing `RETAKE PENDING` pins (113, 131, 132, 141–143, 160, 186, 228) **plus scene 100's 161** — the film's last
