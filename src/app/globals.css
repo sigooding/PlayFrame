@@ -1062,3 +1062,19 @@ img{display:block;max-width:100%}
 .animatic-progress progress { width: 100%; height: 7px; accent-color: #385743; }
 .animatic-progress .text-button { align-self: flex-start; display: inline-flex; align-items: center; gap: 5px; }
 .animatic-export-panel > .button, .animatic-progress > .button { align-self: flex-start; }
+
+/* Restore/choose a shot image directly from its storyboard card menu. */
+.image-browser{display:flex;flex-direction:column;gap:12px;min-width:0}
+.image-browser-tabs{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.image-search{display:flex;align-items:center;gap:7px;border:1px solid #dfe7d5;background:#fff;border-radius:6px;padding:0 9px}
+.image-search input{border:0!important;box-shadow:none!important;padding-left:0!important}
+.alternate-image-modal{width:min(1080px,calc(100vw - 48px))}
+.alternate-image-dialog{display:grid;grid-template-columns:minmax(260px,.82fr) minmax(0,1.5fr);gap:22px;padding:22px 26px;max-height:min(70vh,760px);overflow:auto}
+.alternate-image-preview{position:sticky;top:0;align-self:start;display:flex;flex-direction:column;gap:9px;min-width:0}
+.alternate-image-preview>img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#17201a;border-radius:6px}
+.alternate-image-preview>small{font-size:10.2px;color:#879675;overflow-wrap:anywhere}
+.alternate-image-dialog .reference-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}
+.alternate-image-dialog .reference-label{line-height:1.5}
+@media(max-width:850px){.alternate-image-dialog{grid-template-columns:1fr;max-height:66vh;padding:18px 20px}.alternate-image-preview{position:static}.alternate-image-preview>img{max-height:260px}.alternate-image-dialog .reference-grid-wide{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:620px){.alternate-image-modal{width:calc(100vw - 18px)}.alternate-image-dialog{padding:14px 16px;gap:15px}.alternate-image-dialog .reference-grid-wide{grid-template-columns:repeat(4,minmax(0,1fr))}.image-browser-tabs .prompt-category-pill{font-size:9px;padding:5px 8px}}
+.alternate-image-modal.modal-wide{max-width:1080px}

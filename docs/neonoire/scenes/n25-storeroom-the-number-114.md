@@ -38,3 +38,25 @@ NOTE: Coverage, shot 258. The key follows s1/16-the-key.jpg: the oval tag stays 
 ## Recovered scene-13 exchange — 1 October 2026
 
 The master begins with Kaneko bringing rice: Eat / Has anyone come / Nobody comes here who is not lost. She leaves; the rice goes cold as Jack and Mara talk. The selected still samples the later two-shot after she has gone. Three existing recorded takes from 13 are re-pinned here; no voice changes. Mara's later recollection now matches the rewritten scene 1 (the key and Don't let them have it), not its deliberately cut father line.
+
+## Coverage pass — 4 October 2026
+
+369. INSERT — 85mm, static, high angle — the drawing.
+The loose pencilled page is held flat under the flour scoop: a floor-level drawing of the bar's underside, a bottle crate, two pairs of shoes and a falling stool. Only the tiny 1:07 and EXCUSE ME are legible; no new writing is introduced.
+SCRIPT: "Beside the futon, held down by a flour scoop: a stack of loose pages covered in pencil."
+CAST: —
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-369
+IMAGE: 369-the-drawing.jpg
+NOTE: Coverage pass two (4 October 2026). The drawing is a new insert between 202 and the key exchange, composed to the screenplay's floor-level drawing description. Generated from `s25/200-the-number-114.jpg`, `s2/24-from-the-floor.jpg` and `sheets/mara-hiding.jpg`. Full-size review confirms the only legible writing is **1:07** and **EXCUSE ME**; keep both small block-capital annotations exact. This is the bar seen from the floor of scene 2, drawn on the page now in scene 25—not a new location or person.
+
+370. INSERT — 85mm, static, high angle — the tag reads 114.
+Under the same bare storeroom bulb, Mara's open palm steadies the coin-locker key. The number 114 is legible on the worn oval tag itself; the key blade carries no second number.
+SCRIPT: "The number on the worn tag, still legible: 114."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 4
+ID: neonoire-shot-370
+IMAGE: 370-the-tag-114.jpg
+NOTE: Coverage pass two (4 October 2026). Generated with `s1/16-the-key.jpg`, `s25/200-the-number-114.jpg` and `sheets/mara-hiding.jpg` attached. The current screenplay puts **114 on the tag**. Shot 258 and its original file `s25/201-the-stamp.jpg` remain untouched as a replacement/reference option, but their older 87-tag/114-metal treatment is not the new scripted fact; this frame is the corrective tag close-up, not a renumbering or overwrite. Mara keeps the borrowed brown cardigan and has no bird clip in her hair.

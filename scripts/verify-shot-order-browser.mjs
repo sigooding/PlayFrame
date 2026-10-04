@@ -59,7 +59,38 @@ try {
       await expect.poll(() => image.evaluate(node => node.complete && node.naturalWidth === 1920 && node.naturalHeight === 1080 && !node.dataset.fallback)).toBe(true);
     }
   }
-  pass(`${project.frames.length} grid/list cards stay in screenplay order; all nine new images load full-size without fallbacks`);
+  pass(`${project.frames.length} grid/list cards stay in screenplay order; sampled storyboard images load full-size without fallbacks`);
+
+  // The storyboard card menu opens a shot-scoped chooser. Pick an unused scene alternate,
+  // verify the first image is pinned, then restore it from the shot's own versions list.
+  const firstShot = project.frames.find(frame => frame.shotNumber === 1);
+  const firstCard = page.locator(".frame-card").first();
+  await firstCard.getByRole("button", { name: `Options for ${firstShot.title}`, exact: true }).click();
+  await page.getByRole("button", { name: "Choose alternate image", exact: true }).click();
+  let chooser = page.getByRole("dialog", { name: "Choose an alternate image" });
+  await chooser.getByRole("tab", { name: /Scene 1 alternates/ }).click();
+  const sceneAlternates = chooser.locator(".image-browser .reference-grid button");
+  await expect(sceneAlternates.first()).toBeVisible();
+  const alternateImage = await sceneAlternates.first().locator("img").getAttribute("src");
+  await sceneAlternates.first().click();
+  await chooser.getByRole("button", { name: "Use this image", exact: true }).click();
+  await expect.poll(async () => (await saved()).frames.find(frame => frame.id === firstShot.id).image).toBe(alternateImage);
+  let swapped = (await saved()).frames.find(frame => frame.id === firstShot.id);
+  assert.equal(swapped.imageOriginal, firstShot.image, "the first image stays on the frame as its original");
+  assert.equal(swapped.imageHistory, undefined, "the original is held separately from later alternates");
+
+  await firstCard.getByRole("button", { name: `Options for ${firstShot.title}`, exact: true }).click();
+  await page.getByRole("button", { name: "Choose alternate image", exact: true }).click();
+  chooser = page.getByRole("dialog", { name: "Choose an alternate image" });
+  await chooser.getByRole("tab", { name: /This shot's versions/ }).click();
+  const originalChoice = chooser.getByRole("button", { name: `Use Scene 1 · ${firstShot.image.split("/").at(-1)}`, exact: true });
+  await originalChoice.click();
+  await chooser.getByRole("button", { name: "Use this image", exact: true }).click();
+  await expect.poll(async () => (await saved()).frames.find(frame => frame.id === firstShot.id).image).toBe(firstShot.image);
+  swapped = (await saved()).frames.find(frame => frame.id === firstShot.id);
+  assert.equal(swapped.imageOriginal, firstShot.image);
+  assert.deepEqual(swapped.imageHistory, [alternateImage], "restoring the original leaves the other selection available too");
+  pass("storyboard ⋯ opens exact-shot versions and same-scene unused alternates; swapping and restoring persist both choices");
 
   await page.getByRole("button", { name: "Play storyboard", exact: true }).click();
   const player = page.getByRole("dialog", { name: "Storyboard presentation" });
@@ -87,7 +118,7 @@ try {
   await expect.poll(async () => (await saved()).frames.length).toBe(project.frames.length + 1);
   let current = await saved();
   const duplicate = current.frames.find(frame => frame.title.endsWith("(copy)"));
-assert.equal(duplicate.shotNumber, 369);
+assert.equal(duplicate.shotNumber, 377);
   assert.equal(duplicate.sceneId, "neonoire-s53a");
   await page.getByRole("button", { name: "Add frame", exact: true }).click();
   const dialog = page.getByRole("dialog");
@@ -97,12 +128,12 @@ assert.equal(duplicate.shotNumber, 369);
   await expect(dialog).toBeHidden();
   await expect.poll(async () => (await saved()).frames.length).toBe(project.frames.length + 2);
   current = await saved();
-assert.equal(current.frames.find(frame => frame.title === "Number allocation regression").shotNumber, 370);
+assert.equal(current.frames.find(frame => frame.title === "Number allocation regression").shotNumber, 378);
   assert.equal(new Set(current.frames.map(frame => frame.shotNumber)).size, project.frames.length + 2);
   await page.reload();
   await page.getByLabel("Filter by scene").selectOption("neonoire-s53a");
   await expect(page.locator(".frame-card")).toHaveCount(5);
-pass("duplicate and new-frame forms assign unique 369/370 identities and survive reload");
+pass("duplicate and new-frame forms assign unique 377/378 identities and survive reload");
 
   // Browser HTML drag events exercise the actual component callback, not only the pure sorter.
   const drag = async (from, to) => page.evaluate(({ from, to }) => {
@@ -115,14 +146,14 @@ pass("duplicate and new-frame forms assign unique 369/370 identities and survive
     source.dispatchEvent(new DragEvent("dragend", { bubbles: true, dataTransfer }));
   }, { from, to });
   await drag(298, 299);
-await expect.poll(async () => (await saved()).frames.filter(frame => frame.sceneId === "neonoire-s53a").map(frame => frame.shotNumber)).toEqual([297, 369, 299, 298, 370]);
+await expect.poll(async () => (await saved()).frames.filter(frame => frame.sceneId === "neonoire-s53a").map(frame => frame.shotNumber)).toEqual([297, 377, 299, 298, 378]);
   await page.reload();
   await expect(page.locator(".frame-card")).toHaveCount(project.frames.length + 2);
   const beforeCrossScene = (await saved()).frames.map(frame => frame.id);
   await drag(298, 1);
   assert.deepEqual((await saved()).frames.map(frame => frame.id), beforeCrossScene);
   await page.getByLabel("Filter by scene").selectOption("neonoire-s53a");
-assert.deepEqual(await boardNumbers(), [297, 369, 299, 298, 370]);
+assert.deepEqual(await boardNumbers(), [297, 377, 299, 298, 378]);
   pass("within-scene drag persists without renumbering; cross-scene drop cannot scramble the screenplay");
 
   const shared = await api.post(`/api/projects/${copyId}/share`, { data: { enabled: true } });

@@ -1,6 +1,16 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (sixth pass): the relief pass, one — five new coverage frames, 364–368, reconciled with two same-day passes
+## Current — 4 October 2026 (seventh pass): coverage 369–376 and the storyboard image chooser
+
+**Eight new frames, 369–376, installed in the screenplay's quoted scene order: 355/355 keyframes, zero placeholders, next free number 377.** The drawing and corrected tag detail are in scene 25; Mara's single and the clip-on-book insert are in scene 20; scene 27A gets Okada's arrival beat and Vera's reflection in the switched-off CRT; scene 11 gets Jack setting down the receiver; scene 36 gets the matching Jack-side payphone intercut. All are full-bleed 1920×1080, Draft pending production approval, and no existing shot image was overwritten. Shot 375 is the corrected desk-only retake; the first door-lettering/static-CRT study is not installed. Scene 258's older image and wording remain unchanged; shot 370 follows the current script's 114-on-the-tag fact. Full details and visual decisions: [coverage ledger](passes/coverage-369-376-2026-10-04.md).
+
+**The missing image-choice action is restored on each storyboard card's `⋯` menu.** It opens a shot-scoped chooser for that shot's earlier versions and the scene's unused alternates, with a preview before applying. The first image is pinned as `imageOriginal`; later selections are kept in `imageHistory`, serialized and sanitized on import, so switching or restoring never loses the original.
+
+**Playback order** (production numbers remain stable): scene 25 — 202, 369, 258, 370; scene 20 — 309, 193, 194, 345, 372, 344, 284, 371, 346; scene 27A — 290, 373, 291, 292, 374; scene 11 — 245, 246, 169, 251, 375, 252; scene 36 — 210, 376. The Jack-side intercut belongs to scene 36 because that is where its exact quote falls in the screenplay.
+
+**Implementation and non-browser checks are complete:** chooser helpers, import validation, and image-library restoration have regression coverage; the 705-image manifest includes all 276 checked-in earlier versions, plus current shots and scene alternates. Default-project refresh batches include the new frames without overwriting saved edits. NEONOIRE, revision-restoration, shot-order, feature, animatic, type, asset and production-build checks pass. The browser regression is authored but unrun because the Playwright Chromium download failed; do not claim browser tests passed.
+
+## Previous — 4 October 2026 (sixth pass): the relief pass, one — five new coverage frames, 364–368, reconciled with two same-day passes
 
 **Ten generations, five NEW numbered frames, five dropped in reconciliation, nothing renumbered and nothing
 written over: 342 → 347 keyframes, 0 placeholders, next free number 369.** This round generated against the

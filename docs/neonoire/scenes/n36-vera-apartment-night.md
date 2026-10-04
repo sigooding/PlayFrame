@@ -22,3 +22,15 @@ TIME: 14
 ID: neonoire-shot-210
 IMAGE: 208-come-back-safe-anyway.jpg
 NOTE: Intercut with shot 209's scene (35). Vera's original look, at home without the coat: the cream knit reads as the look, the coat is simply off. The warm pool is the voice on the line.
+
+## Coverage pass — 4 October 2026
+
+376. MEDIUM CLOSE-UP — 50mm, static, eye level — the coins run out.
+On Jack's side of the intercut, he reaches the last coins into the pink public payphone, one receipt clenched in his other hand. Mr. Noda sleeps in the lobby by the green-lit baseball broadcast; the warm inn remains separate from Vera's dark apartment.
+SCRIPT: "The coins run out. The line goes dead."
+CAST: Jack, Mr. Noda
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-376
+IMAGE: 376-the-coins-run-out.jpg
+NOTE: Coverage pass two (4 October 2026). The screenplay ends the call by intercutting both ends; existing shot 210 stays on Vera, and 209 remains the inn's wide master. This is the close coverage of Jack's end, assigned to scene 36 because that is where the quoted beat falls. Generated from `s35/207-the-pink-payphone.jpg`, `sheets/jack.jpg` and `sheets/mr-noda.jpg`. Keep the pink handset and coin slot, Jack's established charcoal coat, Noda asleep, the warm lobby tungsten and the television's muted green. This intercut does not move Vera to the inn or change either scene's location.

@@ -46,3 +46,25 @@ TIME: 12
 ID: neonoire-shot-292
 IMAGE: 292-she-was-here.jpg
 NOTE: The rhyme with shot 24 (s2/24-from-the-floor.jpg) and shot 23 (s2/23-behind-the-counter.jpg): same gap, same crates, same underside. Day, not night; the CRT is dark, so her face is in the dark glass, not in blue. Vera follows sheets/vera.jpg — dry, ash-blonde, charcoal coat, no clip. Okada is out of frame, standing aside. No umbrella. Retake 29 September 2026: she is under the counter among the crates, camera low, the rhyme with s2/24-from-the-floor.jpg.
+
+## Coverage pass — 4 October 2026
+
+373. MEDIUM — 50mm, static, eye level — Okada sees Vera arrive.
+At the counter in flat grey daylight, Okada pauses mid-polish with the already-clean tumbler in his hands. Vera has just come through the doorway without her umbrella; the mat stays too clean, the stools and crates stay where they were, and the CRT is switched off.
+SCRIPT: "Vera comes in without the umbrella this time. Okada sees her and doesn't say we're closed."
+CAST: Okada, Vera Voss
+LIGHT: Overcast soft
+TIME: 5
+ID: neonoire-shot-373
+IMAGE: 373-okada-polishes-the-glass.jpg
+NOTE: Coverage pass two (4 October 2026). Generated from `s27a/290-daylight-again.jpg`, `sheets/okada.jpg` and `sheets/vera.jpg`. This is a new arrival angle within the established daytime bar, not the later scene-8 cleanup: the rubber mat is down, there is no umbrella, and the CRT remains dark. Okada is the same older proprietor; Vera is dry and wears her charcoal coat. The glass can be polished already, as the screenplay says.
+
+374. CLOSE-UP — 50mm, static, low angle — her face in the dead glass.
+From the floor behind the far end of the counter, Vera looks up. Her face sits low in frame, with its single faint reflection in the blank dark CRT above; the same bottles and counter underside hold the scene 2 geography. The television is off, never static or glowing blue.
+SCRIPT: "Vera looks up at the dead television. Somewhere in the dark glass, her own face."
+CAST: Vera Voss
+LIGHT: Overcast soft
+TIME: 4
+ID: neonoire-shot-374
+IMAGE: 374-the-dead-television.jpg
+NOTE: Coverage pass two (4 October 2026). Generated from `s27a/292-she-was-here.jpg`, `sheets/vera.jpg` and the dark-CRT bar master `s27a/290-daylight-again.jpg`. This is Vera and one reflection, not a second person: she is under the counter where Mara hid, seen in a dead screen in daylight. No TV programme, blue light, umbrella or extra customer.

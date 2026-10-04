@@ -1,5 +1,5 @@
 {
-  "note": "Coverage added 4 October 2026 (the long-hold passes: 344–353, scenes 20, 22 and 23; and 354–363, scenes 29, 17 and 14) without a script change. A saved workspace still on a known default text that holds none of a batch receives them at their bundle positions; a workspace that already holds any of them, or whose script was edited, is left alone.",
+  "note": "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, and 369–376 second-pass frames) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
   "priorScriptHashes": [
     "96bffed2d66d8220a64bd01360b482c465d858489fbd90583aaeb68dcaed6bfc",
     "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4",
@@ -26,7 +26,20 @@
     "neonoire-shot-360",
     "neonoire-shot-361",
     "neonoire-shot-362",
-    "neonoire-shot-363"
+    "neonoire-shot-363",
+    "neonoire-shot-364",
+    "neonoire-shot-365",
+    "neonoire-shot-366",
+    "neonoire-shot-367",
+    "neonoire-shot-368",
+    "neonoire-shot-369",
+    "neonoire-shot-370",
+    "neonoire-shot-371",
+    "neonoire-shot-372",
+    "neonoire-shot-373",
+    "neonoire-shot-374",
+    "neonoire-shot-375",
+    "neonoire-shot-376"
   ],
   "batches": [
     [
@@ -52,6 +65,23 @@
       "neonoire-shot-361",
       "neonoire-shot-362",
       "neonoire-shot-363"
+    ],
+    [
+      "neonoire-shot-364",
+      "neonoire-shot-365",
+      "neonoire-shot-366",
+      "neonoire-shot-367",
+      "neonoire-shot-368"
+    ],
+    [
+      "neonoire-shot-369",
+      "neonoire-shot-370",
+      "neonoire-shot-371",
+      "neonoire-shot-372",
+      "neonoire-shot-373",
+      "neonoire-shot-374",
+      "neonoire-shot-375",
+      "neonoire-shot-376"
     ]
   ]
 }

@@ -21,6 +21,8 @@ await build({
     export * from "./src/lib/frame-order";
     export * from "./src/lib/bundle-refresh";
     export * from "./src/lib/validation";
+    export * from "./src/lib/image-history";
+    export * from "./src/components/image-library";
     export * from "./src/lib/export";
     export * from "./src/components/storyboard";
     export * from "./src/components/storyboard-player";
@@ -34,10 +36,12 @@ await build({
 const require = createRequire(import.meta.url);
 const {
   framesInSceneOrder, reorderFrameInScene, shotNumber, nextShotNumber, sceneNumber, bundledFrameUpdates,
-  sanitizeImport, validatePatch, shotListCsv, printProject,
+  sanitizeImport, validatePatch, shotListCsv, printProject, selectFrameImage,
+  frameImageVersions, sceneImageAlternates, ImageBrowser,
   Storyboard, ShotList, StoryboardPlayer, PromptStudio, SharedProject,
 } = require(output);
 const pass = message => console.log(`  PASS  ${message}`);
+const html = (Component, props) => new JSDOM(renderToStaticMarkup(React.createElement(Component, props))).window.document;
 console.log("=== Shot running order and production identities ===");
 const readableImage = path => { try { readFileSync(join(root, "public", path)); return true; } catch { return false; } };
 
@@ -78,7 +82,7 @@ const own = key => project.frames.filter(frame => frame.sceneId === `neonoire-${
 // she plays it again (998), then Jack is in the doorway (1000), then the clip on the book, then 284.
 // The 4 October 2026 long-hold pass adds three to this scene, and they play inside it: the book into her
 // lap (345) after the clip is set down, then him making himself smaller (344), then 284, then the bulb (346).
-assert.deepEqual(own("s20"), [309, 193, 194, 345, 344, 284, 346], "The moved voicemail plays inside its scene, ahead of the doorway beat");
+assert.deepEqual(own("s20"), [309, 193, 194, 345, 372, 344, 284, 371, 346], "The book and clip, sitting, coward-line coverage and held silence follow the screenplay beats");
 assert.deepEqual(own("s22"), [197, 347, 285, 348, 349, 198], "The arch's new frames sit between the master and the cup moved back from the edge");
 assert.deepEqual(own("s23"), [199, 350, 351, 352, 200, 353], "The stall's new frames run from the hands to the nod, with the lanterns swaying last but one");
 assert.deepEqual(own("s29"), [354, 206, 355, 273, 356, 357], "Scene 29 plays altar photograph, tea, rent question, receipts, stamp, then heavier than me");
@@ -95,6 +99,16 @@ assert.deepEqual(own("s75"), [79, 80, 81, 82, 83, 314], "The empty crossing is t
 assert.deepEqual(own("s100"), [320, 160, 265, 260, 161], "News precedes Vera's stool and the held ending");
 assert.equal(project.frames.at(-1).shotNumber, 161);
 pass("103 screenplay scenes, inserted labels, coverage beats and all stable IDs/numbers/asset paths");
+assert.deepEqual(own("s25"), [202, 369, 258, 370]);
+assert.deepEqual(own("s27a"), [290, 373, 291, 292, 374]);
+assert.deepEqual(own("s11"), [245, 246, 169, 251, 375, 252]);
+assert.deepEqual(own("s36"), [210, 376]);
+for (const number of [369, 370, 371, 372, 373, 374, 375, 376]) {
+  const frame = project.frames.find(item => item.shotNumber === number);
+  assert(frame?.image && frame.notes.includes("Coverage pass two (4 October 2026)"), `Shot ${number} is delivered with its pass note`);
+  assert(readableImage(frame.image), `Shot ${number} has an installed image`);
+}
+pass("shots 369–376 play at their quoted scene beats; corrected 375 is installed and all eight keyframes are full-bleed");
 
 validatePatch(project);
 const imported = sanitizeImport(project);
@@ -105,6 +119,58 @@ assert.throws(() => validatePatch({ frames: [{ ...project.frames[0], shotNumber:
 assert.throws(() => validatePatch({ scenes: [{ ...project.scenes[0], number: "<script>" }] }));
 assert.equal(sanitizeImport({ title: "Bad labels", scenes: [{ ...project.scenes[0], number: "<script>" }], frames: [{ ...project.frames[0], shotNumber: NaN }] }).frames[0].shotNumber, undefined);
 pass("numbering survives save/import and invalid labels/numbers are rejected or sanitised");
+const trackedImage = "/images/neonoire/s1/01-backstreet.jpg";
+const alternateA = "/images/neonoire/s1/08-sedan-arrives.jpg";
+const alternateB = "/images/neonoire/s1/11-mara-hands-over-mouth.jpg";
+const baseFrame = { ...project.frames[0], image: trackedImage, imageOriginal: undefined, imageHistory: undefined };
+const firstSelection = selectFrameImage(baseFrame, alternateA);
+assert.equal(firstSelection.image, alternateA);
+assert.equal(firstSelection.imageOriginal, trackedImage, "the first/original image is pinned before a swap");
+assert.equal(firstSelection.imageHistory, undefined, "the original is retained separately from the recent-selection list");
+const secondSelection = selectFrameImage(firstSelection, alternateB);
+assert.equal(secondSelection.imageOriginal, trackedImage, "later swaps never replace the first original");
+assert.deepEqual(secondSelection.imageHistory, [alternateA]);
+const restoredSelection = selectFrameImage(secondSelection, trackedImage);
+assert.equal(restoredSelection.image, trackedImage, "the original can be restored");
+assert.deepEqual(restoredSelection.imageHistory, [alternateA, alternateB], "restoring the original keeps both alternate attempts");
+assert.equal(selectFrameImage(restoredSelection, trackedImage), restoredSelection, "selecting the current image is a no-op");
+const withImageHistory = structuredClone(project);
+withImageHistory.frames[0] = { ...withImageHistory.frames[0], imageOriginal: trackedImage, imageHistory: [alternateA, alternateB] };
+validatePatch(withImageHistory);
+const importedHistory = sanitizeImport(withImageHistory).frames[0];
+assert.equal(importedHistory.imageOriginal, trackedImage);
+assert.deepEqual(importedHistory.imageHistory, [alternateA, alternateB]);
+assert.throws(() => validatePatch({ frames: [{ ...project.frames[0], imageHistory: ["javascript:alert(1)"] }] }), "invalid saved-image URLs are rejected");
+assert.throws(() => validatePatch({ frames: [{ ...project.frames[0], imageHistory: Array(21).fill(alternateA) }] }), "saved-image history stays within the 20-choice cap");
+const fakeLibrary = [
+  { src: trackedImage, group: "shots", scene: "1", name: "01-backstreet.jpg", bytes: 10 },
+  { src: "/images/neonoire/archive/s1/01-backstreet--v1.jpg", group: "earlier", scene: "1", name: "01-backstreet--v1.jpg", bytes: 9, replaces: trackedImage, version: 1, of: 1 },
+  { src: alternateA, group: "alternates", scene: "1", name: "08-sedan-arrives.jpg", bytes: 8 },
+  { src: "/images/neonoire/s1/03-mara-walks.jpg", group: "shots", scene: "1", name: "03-mara-walks.jpg", bytes: 7 },
+  { src: "/images/neonoire/s2/24-from-the-floor.jpg", group: "alternates", scene: "2", name: "24-from-the-floor.jpg", bytes: 6 },
+];
+const exactVersions = frameImageVersions(fakeLibrary, alternateA, trackedImage, [alternateB], "1");
+assert.deepEqual(new Set(exactVersions.map(image => image.src)), new Set([trackedImage, "/images/neonoire/archive/s1/01-backstreet--v1.jpg", alternateA, alternateB]));
+assert.deepEqual(sceneImageAlternates(fakeLibrary, "1").map(image => image.src), [alternateA]);
+const browserMarkup = html(ImageBrowser, { library: fakeLibrary, selected: alternateA, imageOriginal: trackedImage, imageHistory: [alternateB], sceneNumber: "1", includeAll: false, onPick() {} });
+assert(browserMarkup.querySelector('[role="tablist"]').textContent.includes("This shot's versions"));
+assert(browserMarkup.querySelector('[role="tablist"]').textContent.includes("Scene 1 alternates (1)"));
+assert.equal(browserMarkup.querySelectorAll('.image-browser .reference-grid button').length, exactVersions.length);
+pass("image changes keep the original and recent alternates through save/import; chooser limits exact versions and same-scene unused alternates");
+
+const staticLibrary = JSON.parse(readFileSync(join(root, "public/images/neonoire/library.json"), "utf8"));
+assert.equal(staticLibrary.count, staticLibrary.images.length, "the image-library count matches its entries");
+assert.equal(new Set(staticLibrary.images.map(image => image.src)).size, staticLibrary.images.length, "the image library has no duplicate sources");
+const archivedImages = staticLibrary.images.filter(image => image.group === "earlier");
+assert(archivedImages.length > 0, "checked-in original image versions remain in the chooser library");
+assert(archivedImages.every(image => readableImage(image.src)), "every archived image in the chooser library is present on disk");
+const savedBackstreetVersions = archivedImages.filter(image => image.replaces === trackedImage);
+assert(savedBackstreetVersions.length > 0, "the opening shot retains its earlier generations as selectable replacements");
+const realVersions = frameImageVersions(staticLibrary.images, trackedImage, undefined, [], "1");
+assert(realVersions.some(image => image.src === trackedImage));
+assert(savedBackstreetVersions.every(image => realVersions.some(option => option.src === image.src)));
+assert(sceneImageAlternates(staticLibrary.images, "1").some(image => image.src === alternateA), "unused same-scene alternates remain selectable");
+pass(`the static chooser library exposes ${archivedImages.length} checked-in earlier versions and same-scene alternates`);
 
 // An intentionally interleaved project: use IDs that cannot be numerically sorted, and retain
 // an edited within-scene order even when production numbers are not ascending.
@@ -126,7 +192,7 @@ assert.deepEqual(reorderFrameInScene(fixture, "not-a-frame", "later-low-number")
 assert.equal(sceneNumber(scenes[1], 1), "25A");
 assert.equal(shotNumber({ shotNumber: 310 }, 0), 310);
 assert.equal(shotNumber({}, 3), 4);
-assert.equal(nextShotNumber(project.frames), 369);
+assert.equal(nextShotNumber(project.frames), 377);
 assert.equal(nextShotNumber([{ id: "unnumbered" }]), undefined);
 pass("scene order is stable, unassigned shots go last, manual within-scene ordering and drag boundaries work");
 
@@ -189,7 +255,6 @@ assert.equal(keptPending.status, "Ready", "Explicit main-image approval does not
 pass("saved default boarding order migrates; images arrive; writer edits, deliberate blanks, deletions and custom shots survive");
 
 // Render the real views, rather than just testing a sorter disconnected from the UI.
-const html = (Component, props) => new JSDOM(renderToStaticMarkup(React.createElement(Component, props))).window.document;
 const callbacks = { onEdit() {}, onAdd() {}, onPlay() {}, onReorder() {}, onDuplicate() {}, onDelete() {}, onUpdate() {} };
 const board = html(Storyboard, { project: fixture, ...callbacks });
 assert.deepEqual([...board.querySelectorAll(".frame-card h3")].map(node => node.textContent), ordered.map(frame => frame.title));
