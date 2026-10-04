@@ -1,6 +1,41 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (fourth pass): the long-hold pass — ten new frames, 344–353, for the three scenes one board was carrying
+## Current — 4 October 2026 (fifth pass): the second long-hold pass — ten new frames, 354–363, for scenes 29, 17 and 14
+
+**Ten generations, ten NEW numbered frames, nothing renumbered and nothing written over: 332 → 342 keyframes, 0
+placeholders, next free number 364.** The round took the next three holds from [shots-needed.md](shots-needed.md) —
+the coverage note written after the first voiced animatic — where a single board held an exchange: **scene 29, 53 seconds
+on shot 273; scene 17, 46 seconds on 189; scene 14, 42 seconds on 270.** Ledger: [long-hold-2-2026-10-04](passes/long-hold-2-2026-10-04.md);
+sheet `reviews/long-hold-354-363.jpg` (seventeen frames of the three rooms, the ten new ones among their masters).
+
+**Installed:**
+- **354** (scene 29) Mrs. Sakai at the kotatsu looking toward the gilded altar and her late husband's smiling photograph — *"She studies him. Then she looks at the photograph on the altar."*;
+- **355** (scene 29) Jack across the kotatsu, leaning forward quietly asking about rent — *"Did he ever pay rent on something? Somewhere that wasn't his home?"*;
+- **356** (scene 29) Jack's hands unfolding the topmost yellowed carbon receipt to reveal the faded purple stamp and handwritten No. 114 — *"Jack unfolds it. A rubber stamp, faded. Handwritten: No. 114. Paid in full."*;
+- **357** (scene 29) Mrs. Sakai watching Jack across the kotatsu, grief and relief in soft window light — *"Whatever it is, it was heavier than me. He carried it longer."*;
+- **358** (scene 17) Jack on stool 4 staring at the vacant stool 3 beside him in the rising steam — *"Jack looks at the third stool, empty beside him, and then at the counter under his hands."*;
+- **359** (scene 17) Kaneko in her apron setting a hot bowl of noodles in front of Jack — *"Kaneko sets a bowl of noodles in front of Jack."*;
+- **360** (scene 17) On the dark counter beside the empty bowl, folded yen notes under Jack's white business card — *"He puts down more money than the bowl costs, far more, and a business card on top of it."*;
+- **361** (scene 14) Vera in her olive trench coat staring at the dense wall of drawings — *"She looks at the wall of drawings, not at him."*;
+- **362** (scene 14) Jack's hand turning a page in the sketchbook to the careful ink drawing of Kaneko's sign — *"Jack turns a page. The sign, in careful ink. Every stroke of the kanji correct."*;
+- **363** (scene 14) Vera's hand placing the bright red enamel bird hair clip onto the open sketchbook page — *"Vera takes the hair clip out of her coat pocket and sets it on the sketchbook."*.
+
+### The decisions this round made (permanent unless the director overrides)
+
+1. **New frames maintain lens consistency.** 50mm and 85mm singles and high-angle inserts break up the long static wide angles.
+2. **Nothing was replaced, so nothing was archived.** Every one of the ten is a new asset path; the archive keeps its 276 versioned studies.
+3. **Where they play:** in story order:
+   - **Scene 29:** 354, 206, 355, 273, 356, 357;
+   - **Scene 17:** 189, 358, 359, 360, 190;
+   - **Scene 14:** 184, 270, 361, 185, 362, 363.
+
+### Mechanics
+
+`docs/neonoire/scenes/n29-mrs-sakai-house-day.md`, `n17-kaneko-counter-first.md` and `n14-maras-apartment-day.md` carry the boards.
+`verify:neonoire` (`EXPECTED_SHOTS` 342, coverage run 241–363), `verify-shot-order` (nextShotNumber 364), `verify-shot-order-browser` (364/365),
+`verify-revision-restoration` (patch length 342, second coverage batch test). All checks pass cleanly.
+
+## Previous — 4 October 2026 (fourth pass): the long-hold pass — ten new frames, 344–353, for the three scenes one board was carrying
 
 **Ten generations, ten NEW numbered frames, nothing renumbered and nothing written over: 322 → 332 keyframes, 0
 placeholders, next free number 354.** The round took the head of [shots-needed.md](shots-needed.md), the note written

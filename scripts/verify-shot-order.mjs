@@ -81,6 +81,9 @@ const own = key => project.frames.filter(frame => frame.sceneId === `neonoire-${
 assert.deepEqual(own("s20"), [309, 193, 194, 345, 344, 284, 346], "The moved voicemail plays inside its scene, ahead of the doorway beat");
 assert.deepEqual(own("s22"), [197, 347, 285, 348, 349, 198], "The arch's new frames sit between the master and the cup moved back from the edge");
 assert.deepEqual(own("s23"), [199, 350, 351, 352, 200, 353], "The stall's new frames run from the hands to the nod, with the lanterns swaying last but one");
+assert.deepEqual(own("s29"), [354, 206, 355, 273, 356, 357], "Scene 29 plays altar photograph, tea, rent question, receipts, stamp, then heavier than me");
+assert.deepEqual(own("s17"), [189, 358, 359, 360, 190], "Scene 17 plays the look, empty stool, noodles served, payment, then the curtain moves");
+assert.deepEqual(own("s14"), [184, 270, 361, 185, 362, 363], "Scene 14 plays meant to come back, suitcase, wall of drawings, sketchbook, kanji sign, clip on sketchbook");
 assert.deepEqual(own("s51"), [310, 311]);
 assert.deepEqual(own("s99a"), [158, 159, 305, 306, 307], "Demolition precedes the dissolve to the plaza within one scene");
 assert.deepEqual(own("s75"), [79, 80, 81, 82, 83, 314], "The empty crossing is the last pillow shot, not a final-project append");
@@ -118,7 +121,7 @@ assert.deepEqual(reorderFrameInScene(fixture, "not-a-frame", "later-low-number")
 assert.equal(sceneNumber(scenes[1], 1), "25A");
 assert.equal(shotNumber({ shotNumber: 310 }, 0), 310);
 assert.equal(shotNumber({}, 3), 4);
-assert.equal(nextShotNumber(project.frames), 354);
+assert.equal(nextShotNumber(project.frames), 364);
 assert.equal(nextShotNumber([{ id: "unnumbered" }]), undefined);
 pass("scene order is stable, unassigned shots go last, manual within-scene ordering and drag boundaries work");
 

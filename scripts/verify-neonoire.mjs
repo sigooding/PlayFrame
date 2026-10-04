@@ -79,12 +79,12 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 103, "Every scene of the revised screenplay and the seven inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 332;
+const EXPECTED_SHOTS = 342;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 // 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
 // earlier generation blocks; the audits below read those blocks' pre-revision runs.
 const revisionBoards = f => shotNo(f) >= 308;
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 332 numbered shots (299 before the 2 October rewrites of scenes 6 and 1, plus their placeholder slots 321–327 and 328–333, plus scene 14A's ten, 334–343, plus the long-hold pass's ten coverage frames, 344–353)");
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 342 numbered shots (299 before the 2 October rewrites of scenes 6 and 1, plus their placeholder slots 321–327 and 328–333, plus scene 14A's ten, 334–343, plus the long-hold passes' twenty coverage frames, 344–363)");
 assert.equal(project.characters.length, 19, "Nineteen cast cards after the revision added Vera's mother");
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -609,8 +609,8 @@ assert.deepEqual(coverage.map(f => shotNo(f)),
   [241, 242, 243, 244, 245, 246, 247, 248, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260,
    261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 273, 275, 276, 277, 278, 279, 283, 284,
    285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303,
-   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353],
-  "Coverage runs 241–353 (321–333 are the slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A, and 344–353 the long-hold pass's ten) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
+   305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363],
+  "Coverage runs 241–363 (321–333 are the slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A, and 344–363 the long-hold passes' twenty frames) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
 for (const frame of coverage) if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(coverage.find(f => f.id === "neonoire-shot-241").notes.includes("small reflection in the upper corner"), "Shot 241's retake shrinks the face");
 assert(!coverage.find(f => f.id === "neonoire-shot-241").notes.includes("larger than a glancing reflection"), "Shot 241 no longer carries the large-reflection caveat");
@@ -1092,7 +1092,7 @@ pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, seale
 const labels = project.frames.map(frame => Number((frame.notes.match(/Stable Shot (\d+);/) || [])[1]));
 for (const [i, frame] of project.frames.entries()) {
   assert.equal(frame.shotNumber, labels[i], `${frame.id}: metadata and production note agree`);
-  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 353, `${frame.id} should retain its stable production number`);
+  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 363, `${frame.id} should retain its stable production number`);
   assert(frame.notes.includes(`Pass ${Math.ceil(labels[i] / 10)} of ${Math.ceil(Math.max(...labels) / 10)}`), `${frame.id} should name its pass`);
 }
 assert.deepEqual(new Set(labels), new Set(project.frames.map(shotNo)), "Every production label maps to exactly one card, and every card to one label");
@@ -1300,9 +1300,9 @@ pass("rewrite slots: all twenty-three frames installed at 16:9 and reviewed — 
 // at its own quoted beat, and keeps its production number. No file on disk was written over, so the
 // archive keeps no version of them; a retake later will archive the frame it replaces, as always.
 const longHold = project.frames.filter(f => shotNo(f) >= 344);
-assert.deepEqual(longHold.map(f => shotNo(f)).sort((a, b) => a - b), Array.from({ length: 10 }, (_, i) => 344 + i), "The long-hold pass is exactly 344–353");
-assert.deepEqual(new Set(longHold.map(f => f.sceneId)).size, 3, "…spread over three scenes");
-assert.deepEqual([...new Set(longHold.map(f => f.sceneId))], ["neonoire-s20", "neonoire-s22", "neonoire-s23"], "…scenes 20, 22 and 23, the three the note names first");
+assert.deepEqual(longHold.map(f => shotNo(f)).sort((a, b) => a - b), Array.from({ length: 20 }, (_, i) => 344 + i), "The long-hold passes are exactly 344–363");
+assert.deepEqual(new Set(longHold.map(f => f.sceneId)).size, 6, "…spread over six scenes");
+assert.deepEqual([...new Set(longHold.map(f => f.sceneId))], ["neonoire-s14", "neonoire-s17", "neonoire-s20", "neonoire-s22", "neonoire-s23", "neonoire-s29"], "…scenes 14, 17, 20, 22, 23 and 29");
 for (const frame of longHold) {
   assert(frame.image, `${frame.title} is installed, not a placeholder`);
   assert(existsSync(join(root, `public${frame.image}`)), `${frame.title}'s JPEG is on disk`);
@@ -1316,7 +1316,10 @@ for (const frame of longHold) {
 // The three rooms' own continuity, as the boards write it: which master each frame was held to.
 for (const [n, held] of [[344, "storeroom masters"], [345, "the book-and-clip master"], [346, "storeroom masters"],
   [347, "counter's own detail"], [348, "Vera holds to"], [349, "Follows"],
-  [350, "Coverage, shot 350"], [351, "Coverage, shot 351"], [352, "Coverage, shot 352"], [353, "s23/198-the-lanterns-sway.jpg"]]) {
+  [350, "Coverage, shot 350"], [351, "Coverage, shot 351"], [352, "Coverage, shot 352"], [353, "s23/198-the-lanterns-sway.jpg"],
+  [354, "Coverage, shot 354"], [355, "Coverage, shot 355"], [356, "Coverage, shot 356"], [357, "Coverage, shot 357"],
+  [358, "Coverage, shot 358"], [359, "Coverage, shot 359"], [360, "Coverage, shot 360"],
+  [361, "Coverage, shot 361"], [362, "Coverage, shot 362"], [363, "Coverage, shot 363"]]) {
   assert(project.frames.find(f => f.shotNumber === n).notes.includes(held), `Shot ${n} carries its board note (${held})`);
 }
 // The quoted beats the pass exists for: each new frame plays inside its own exchange, not at the end of the scene.
@@ -1324,8 +1327,11 @@ const heldScene = shotNumber => inStoryOrder(project.frames, project.scenes, roo
 assert.deepEqual(heldScene("neonoire-s20"), [309, 193, 194, 345, 344, 284, 346], "Scene 20 plays the book, then him sitting, then the held silence");
 assert.deepEqual(heldScene("neonoire-s22"), [197, 347, 285, 348, 349, 198], "Scene 22 plays the tremble, the two singles, then the cup moved back");
 assert.deepEqual(heldScene("neonoire-s23"), [199, 350, 351, 352, 200, 353], "Scene 23 plays the hands, the listening, the address, the sway, then the nod");
+assert.deepEqual(heldScene("neonoire-s29"), [354, 206, 355, 273, 356, 357], "Scene 29 plays the altar photograph, the tea, rent question, receipts, the stamp, then heavier than me");
+assert.deepEqual(heldScene("neonoire-s17"), [189, 358, 359, 360, 190], "Scene 17 plays the look, empty stool, noodles served, payment, then the curtain moves");
+assert.deepEqual(heldScene("neonoire-s14"), [184, 270, 361, 185, 362, 363], "Scene 14 plays meant to come back, suitcase, wall of drawings, sketchbook, kanji sign, clip on sketchbook");
 assert(!longHold.some(f => f.notes.includes("RETAKE PENDING")), "Nothing in the pass is pinned; every frame is a first-generation study");
-pass("long-hold pass: ten new coverage frames, 344–353, installed at 16:9 in scenes 20, 22 and 23 — the book into her lap, him making himself smaller, the bulb, the trembling cups, the two singles, Ishida's hands, the napkin and the nod, each playing at its own quoted beat");
+pass("long-hold pass: twenty new coverage frames, 344–363, installed at 16:9 in scenes 20, 22, 23, 29, 17 and 14 — the book into her lap, him making himself smaller, the bulb, trembling cups, singles, Ishida's hands, napkin, nod, altar photograph, rent question, stamp 114, heavier than me, empty third stool, noodles served, payment, wall of drawings, kanji sign, and the clip on the desk, each playing at its own quoted beat");
 
 assert.equal(remainingBoardsFinalShots.length, 9);
 for (const study of remainingBoardsFinalShots) {
