@@ -9,7 +9,7 @@ Grammar: warm amber, leather, and the rain very far away. Kurose never looks at 
 
 ## Frame format — 26 September 2026
 
-All three shots (141–143) are **16:9, 1920×1080, full-bleed**. Since the 4 October 2026 retake the back seat (cream leather, amber interior light, rain on the side windows) is carried by `s94/141-he-drinks.jpg`: `s94/139-only-tea.jpg` now holds the car at the kerb under the station steps, and `s94/140-where-are-we-going.jpg` Ishida stopped in the rain. **Kurose** is held to the scene 83 master (silver hair, dark navy suit and tie) and pours from a small brushed-steel flask. **Ishida** follows `sheets/ishida.jpg` (NO TIE), his shoulders wet. These are AI-generated draft studies, not approved coverage.
+All four shots (141–143 and 368) are **16:9, 1920×1080, full-bleed**. Since the 4 October 2026 retake the back seat (cream leather, amber interior light, rain on the side windows) is carried by `s94/141-he-drinks.jpg`: `s94/139-only-tea.jpg` now holds the car at the kerb under the station steps, and `s94/140-where-are-we-going.jpg` Ishida stopped in the rain. **Kurose** is held to the scene 83 master (silver hair, dark navy suit and tie) and pours from a small brushed-steel flask. **Ishida** follows `sheets/ishida.jpg` (NO TIE), his shoulders wet. These are AI-generated draft studies, not approved coverage.
 
 ---
 
@@ -46,3 +46,21 @@ NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over
 ## Director line restoration — 1 October 2026
 
 Kurose says only "It's only tea" from inside the car as the hand offers the cup. No return of the twenty-years-service exchange or a fully visible back-seat conversation; 51 remains wordless. The source continues to the door closing. A new take of this short line is not generated in this script pass.
+
+---
+
+## Coverage — the relief pass (4 October 2026)
+
+**Shot 368 boards the door the rewrite left with no frame of its own** — the last beat of the scene, the hinge between 142 (Ishida in the rain) and 143 (the cup in the back seat). The lens plan keeps it at 50mm at the door.
+
+---
+
+368. MEDIUM — 50mm, static, eye level — the door closes.
+From the back seat: Ishida getting in, his wet grey shoulders and grey open-collar shirt, no tie, while the rear door closes on the rain. Through the side window the wet night, sodium light on the asphalt, and the police station's one lit second-floor window; inside, warm amber and cream leather.
+SCRIPT: "Ishida gets in. The door closes. The rain is suddenly very far away."
+CAST: Detective Ishida
+LIGHT: Low key
+TIME: 6
+ID: neonoire-shot-368
+IMAGE: 368-the-door-closes.jpg
+NOTE: Relief pass one, 4 October 2026 — the beat the retake round named with no frame of its own. SCENE-LOGIC CALL: 142 leaves him in the rain at the open door and 143 has him already seated with the cup in hand, so the frame is the hinge between them — the getting-in and the door, not the stop (142 owns it) and not the sitting (143 owns it). The back seat follows `s94/141-he-drinks.jpg` (cream leather, amber interior, rain on the side windows); the street and the one lit window follow `s94/139-only-tea.jpg`; Ishida follows `sheets/ishida.jpg` — NO TIE, soaked to the collar. The door is the frame's event: past it the rain is already far away. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the cream leather, the amber interior light, the rain on the side windows and Ishida's wet grey open-collar shirt all carry from `s94/141-he-drinks.jpg`; he is mid-getting-in with the door open and the street lit behind. Unclosed caveats: the door reads fully open rather than mid-close, the one lit second-floor window is not legible at this size in the background building, and Ishida's profile reads a shade younger than the sheet.

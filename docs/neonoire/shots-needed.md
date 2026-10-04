@@ -2,13 +2,18 @@
 
 Written after the voiced animatic of scenes 1–37 and 62–74 was cut together. Nothing here is generated, boarded or approved. It sits beside the 20 frames the revision note already lists as still to generate (13 new placeholders, 308–320, plus the seven story-pass-2 retakes): this list is **extra** coverage the voiced cut shows it needs. Numbering rule stays: nothing is renumbered, new frames join the end of the run.
 
-> **Progress — 4 October 2026 (second long-hold pass).** The next three holds in section 1 are done, and the
-> numbering rule held: the second long-hold pass generated and installed **354–357 (scene 29), 358–360 (scene 17)
-> and 361–363 (scene 14)** — ten new frames for the 53 s, 46 s, and 42 s holds, 332 → **342** keyframes, nothing
-> renumbered and nothing replaced. Read [the ledger](passes/long-hold-2-2026-10-04.md). **Still owed from this list,
-> in order:** scene 25's 202 and 258, scene 20's 284, scene 27A's 292 and 290, scene 11's 251, scene 36's 210
-> (Jack at the pink payphone), scene 10's 166. The rest of section 1, section 2 (the song's holds), section 3
-> (the rewritten lines) and section 4 (the title card) are untouched.
+> **Progress — 4 October 2026 (second long-hold pass).** The head of section 1 is done, and the numbering rule
+> held. The long-hold passes generated and installed **344–346 (scene 20), 347–349 (scene 22) and 350–353
+> (scene 23)** — ten new frames for the three longest holds — then **354–357 (scene 29), 358–360 (scene 17)
+> and 361–363 (scene 14)** — ten more for the 53 s, 46 s and 42 s holds. The same day's relief pass joined
+> the run at the next free numbers, **364–368**: scene 59's INTERCUT to Mrs. Sakai's empty house (the beat
+> the retake round left unboarded) and scene 94's closing door — the two unboarded script beats the
+> long-hold passes did not take — 322 → **347** keyframes, nothing renumbered and nothing replaced. Read
+> [the first long-hold ledger](passes/long-hold-2026-10-04.md), [the second](passes/long-hold-2-2026-10-04.md)
+> and [the relief ledger](passes/animatic-relief-1-2026-10-04.md) before touching those rooms. **Still owed
+> from this list, in order:** scene 25's 202 and 258, scene 20's 284, scene 27A's 292 and 290, scene 11's
+> 251, scene 36's 210 (Jack at the pink payphone), scene 10's 166. The rest of section 1, section 2 (the
+> song's holds), section 3 (the rewritten lines) and section 4 (the title card) are untouched.
 
 ## 1. Long talking scenes carried by one board
 

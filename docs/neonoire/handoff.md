@@ -1,6 +1,57 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (fifth pass): the second long-hold pass — ten new frames, 354–363, for scenes 29, 17 and 14
+## Current — 4 October 2026 (sixth pass): the relief pass, one — five new coverage frames, 364–368, reconciled with two same-day passes
+
+**Ten generations, five NEW numbered frames, five dropped in reconciliation, nothing renumbered and nothing
+written over: 342 → 347 keyframes, 0 placeholders, next free number 369.** This round generated against the
+run's free numbers while two parallel sessions' passes landed on `main` ahead of it — the long-hold pass
+(344–353, scenes 20/22/23) and the second long-hold pass (354–363, scenes 29/17/14) — and each took beats this
+pass had generated. The five remaining frames are the **two unboarded script beats** the retake round of 4
+October recorded and neither long-hold pass took: **scene 59's INTERCUT to Mrs. Sakai's empty house** (the
+kotatsu, the altar, the teacup on its side, the phone ringing) and **scene 94's door closing**. Ledger:
+[animatic-relief-1-2026-10-04](passes/animatic-relief-1-2026-10-04.md).
+
+**Reconciliation:** five studies were dropped as duplicates of long-hold beats — the s20 bulb (their 346, same
+quoted line) and s20 sack (their 344, same quoted line), the s22 Vera single (their 348/349 already board the
+scene's singles), the s17 bowl (their 359, same quoted line) and the s14 wall (their 361, same quoted line).
+Their raws are kept in `artifacts/neonoire/relief-2026-10-04/`; the full decision table is in the ledger.
+
+**Installed:** **364** the empty house's room wide — kotatsu, television on with the sound off (a muted
+programme, never static); **365** the altar corner, the framed man held to `s1/07-old-man.jpg`; **366** the
+teacup on its side, the drying ring; **367** the desk phone ringing in the empty room; **368** Ishida getting
+in, the rear door on the rain, the station's lit window small behind — the hinge the retake round left with no
+frame of its own.
+
+### Where they play (the scene's logic, not board order)
+
+**scene 59** — **364, 365, 366, 367**, 228 (the INTERCUT plays the empty house in the page's order, then Vera
+glowing); **scene 94** — 141, 142, 143, **368**.
+
+### Honest caveats (also in the board notes)
+
+**364's altar photograph reads a different face** (younger, smiling) than the locked `s1/07-old-man.jpg` man
+365 holds — the face-check retake hit the session's ten-generation limit and did not fire; **364 is the head of
+the next pass's queue**. **365's photograph sits on a low stand** beside the altar shelf. **366's tatami reads
+coarser** and its window is bare glass (accepted: a different corner of the same room). **367** carries a dark
+water stain and a push-button rather than rotary phone (the no-single-year rule covers it). **368's door reads
+fully open** rather than mid-close and the background window is not legible. The five were reviewed at full size
+before install; production approval is the director's, as ever.
+
+### Mechanics
+
+`docs/neonoire/scenes/n59-glowing-in-the-rain.md` and `n94-black-sedan.md` carry the five boards under
+*Coverage — the relief pass (4 October 2026)*. `scripts/neonoire/animatic-relief.mjs` is the delivered boundary
+(`reliefSlotsDelivered` 364–368, `reliefSlotsQueued` empty), read by `build-project.mjs` (which now has separate
+notes branches for 364+, 354+ and 344+) and `verify-neonoire.mjs` (`EXPECTED_SHOTS` **347**, the coverage run
+241–368, the long-hold block scoped to 344–363, the relief block on 364–368; the scene-group `revisionBoards`
+filter stays `>= 308`, which keeps every 4 October coverage frame out of the older generation blocks'
+scene-group sets). `verify-shot-order.mjs` — scenes 59/94's in-scene order and `nextShotNumber` **369**;
+`verify-shot-order-browser.mjs` — allocation test moved to 369/370; `verify-revision-restoration.mjs` — patch
+length 347. `library.json` now carries 697 images (347 shots) — rebuilt by hand, as always (the tool's
+git-history walk is shallow-clone blind). **Quartermaster:** no `node_modules` incident this session.
+**This session's branch is `arena/01a1076a-playframe`, merged to `main` at the end of the session.**
+
+## Previous — 4 October 2026 (fifth pass): the second long-hold pass — ten new frames, 354–363, for scenes 29, 17 and 14
 
 **Ten generations, ten NEW numbered frames, nothing renumbered and nothing written over: 332 → 342 keyframes, 0
 placeholders, next free number 364.** The round took the next three holds from [shots-needed.md](shots-needed.md) —

@@ -84,6 +84,11 @@ assert.deepEqual(own("s23"), [199, 350, 351, 352, 200, 353], "The stall's new fr
 assert.deepEqual(own("s29"), [354, 206, 355, 273, 356, 357], "Scene 29 plays altar photograph, tea, rent question, receipts, stamp, then heavier than me");
 assert.deepEqual(own("s17"), [189, 358, 359, 360, 190], "Scene 17 plays the look, empty stool, noodles served, payment, then the curtain moves");
 assert.deepEqual(own("s14"), [184, 270, 361, 185, 362, 363], "Scene 14 plays meant to come back, suitcase, wall of drawings, sketchbook, kanji sign, clip on sketchbook");
+// The relief pass of 4 October 2026 joined the run after both long-hold passes; its five unique
+// frames — the two unboarded beats neither pass took — play on the quoted lines they show: the
+// empty house before 228, and the door at the end of 94.
+assert.deepEqual(own("s59"), [364, 365, 366, 367, 228], "Scene 59's INTERCUT plays the empty house in the page's order, then Vera glowing");
+assert.deepEqual(own("s94"), [141, 142, 143, 368], "Scene 94 ends on the door closing, after the three getting-ins");
 assert.deepEqual(own("s51"), [310, 311]);
 assert.deepEqual(own("s99a"), [158, 159, 305, 306, 307], "Demolition precedes the dissolve to the plaza within one scene");
 assert.deepEqual(own("s75"), [79, 80, 81, 82, 83, 314], "The empty crossing is the last pillow shot, not a final-project append");
@@ -121,7 +126,7 @@ assert.deepEqual(reorderFrameInScene(fixture, "not-a-frame", "later-low-number")
 assert.equal(sceneNumber(scenes[1], 1), "25A");
 assert.equal(shotNumber({ shotNumber: 310 }, 0), 310);
 assert.equal(shotNumber({}, 3), 4);
-assert.equal(nextShotNumber(project.frames), 364);
+assert.equal(nextShotNumber(project.frames), 369);
 assert.equal(nextShotNumber([{ id: "unnumbered" }]), undefined);
 pass("scene order is stable, unassigned shots go last, manual within-scene ordering and drag boundaries work");
 
