@@ -2,6 +2,15 @@
 
 Written after the voiced animatic of scenes 1–37 and 62–74 was cut together. Nothing here is generated, boarded or approved. It sits beside the 20 frames the revision note already lists as still to generate (13 new placeholders, 308–320, plus the seven story-pass-2 retakes): this list is **extra** coverage the voiced cut shows it needs. Numbering rule stays: nothing is renumbered, new frames join the end of the run.
 
+> **Progress — 4 October 2026.** The head of section 1 is done, and the numbering rule held: the long-hold
+> pass generated and installed **344–346 (scene 20), 347–349 (scene 22) and 350–353 (scene 23)** — ten new
+> frames for the three longest holds, 322 → **332** keyframes, nothing renumbered and nothing replaced. Read
+> [the ledger](passes/long-hold-2026-10-04.md) before touching those three rooms. **Still owed from this list,
+> in order:** scene 29's 273 (the receipts), scene 17's 189, scene 14's 270, scene 25's 202 and 258, scene 20's
+> 284 and the clip single, scene 27A's 292 and 290, scene 11's 251, scene 36's 210 (Jack at the pink payphone),
+> scene 10's 166. The rest of section 1, section 2 (the song's holds), section 3 (the rewritten lines) and
+> section 4 (the title card) are untouched.
+
 ## 1. Long talking scenes carried by one board
 
 In the animatic a single frame holds an entire exchange, and the camera push cannot keep it alive past about 30 seconds. Each of these needs three to five extra shots: a two-shot, a single on each speaker (over the shoulder where the speaker is behind the other), and one detail insert (hands, the object being discussed). Frame number is the current board; seconds is how long its dialogue plays on it.

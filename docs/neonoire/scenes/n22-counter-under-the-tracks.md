@@ -50,3 +50,39 @@ TIME: 8
 ID: neonoire-shot-285
 IMAGE: 285-the-inside-pocket.jpg
 NOTE: Letter rewrite coverage, 28 September 2026. Generated from `s22/195-somewhere-like-this.jpg` and `sheets/jack.jpg`: the brick arch, the faded menus, the warm bulb at the end all carry. The hand over the pocket is the whole shot; the face reads a shade older than 48 in this light — carry as a caveat.
+
+---
+
+## Coverage — the long-hold pass (4 October 2026)
+
+**Scene 22's 64 seconds are carried by one board (197), so the pass gave the arch three more frames: 347–349.** Ten new coverage numbers went to the three scenes the voiced animatic holds longest — scene 23's 95 s, this scene's 64 s and scene 20's 55 s — and nothing is renumbered. Generated from the arch master `s22/195-somewhere-like-this.jpg` with the cast sheets attached; the room, the menus, the radio, the cook, the wall clock and the ticket machine carry from it. Jack is in the dark jacket and open off-white collar of the delivered scene-22 frames, **not** the overcoat.
+
+347. TWO-SHOT — 50mm, static, low level — the cups tremble.
+Vera and Jack side by side on their stools along the counter, both squared to it, as the train goes over: the thick white cups shivering in their saucers, the fluorescent tube just swinging on its chain, the ticket machine's glass rattling at the frame's right. Neither of them looks at the other.
+SCRIPT: "Every few minutes, a train rumbles overhead, and the cups tremble in their saucers."
+CAST: Vera Voss, Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-347
+IMAGE: 347-the-cups-tremble.jpg
+NOTE: Coverage, shot 347. The counter's own detail holds to the master: two white bowls, chopsticks, two tan paper cups of coffee, the yellowed menus, the wooden radio, the cook in his white cap behind the counter. Nothing is added to the counter. The trembling is the shot, so the saucers and cups sit on the counter's edge in the near foreground, in focus, with the two of them beyond. **Caveat:** in a still the train overhead cannot read as a train; the beat has to be carried by the quiver of the crockery and the swung tube, and the animatic supplies the sound.
+
+348. MEDIUM — 50mm, static, low level — easy to talk to.
+Vera turned from the counter towards Jack, mid-line, her coffee untouched in front of her; Jack's near shoulder soft at the frame's edge, still facing his bowl; the arch's warm bulbs and the dark walk-in end behind her.
+SCRIPT: "You're very easy to talk to. It's annoying."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 10
+ID: neonoire-shot-348
+IMAGE: 348-easy-to-talk-to.jpg
+NOTE: Coverage, shot 348. Vera holds to `sheets/vera.jpg`: ash-blonde hair with the soft fringe, charcoal wool coat, cream high-neck knit at the collar. She is dry — this scene is under the arch, not in the rain — and her face is the film's own Vera, not a new actress. The coffee in front of her is still full, which is the point of the beat: they have been here a long time and she hasn't drunk it.
+
+349. MEDIUM — 50mm, static, low level — paid to listen.
+Jack's single, his eyes still down on the bowl, answering flatly without turning his head; his cup and the counter edge in the near foreground, the arch's tile and the dark doorway behind him.
+SCRIPT: "I get paid to listen."
+CAST: Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-349
+IMAGE: 349-paid-to-listen.jpg
+NOTE: Coverage, shot 349. Follows `sheets/jack.jpg` — the 48-year-old former detective of the recast: long angular tired face, dark hair swept back and greying at the temples, salt-and-pepper stubble, charcoal jacket over the off-white open collar, no tie. His hands stay out of frame: 196 is where his hand does its work, and this shot must not play the gesture early. **Caveat:** the difference between this single and 348's is the whole exchange — his stillness against her turned face — and it is only legible if both frames keep the eyelines of the master.

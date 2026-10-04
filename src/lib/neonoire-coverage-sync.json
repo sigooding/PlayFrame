@@ -1,0 +1,21 @@
+{
+  "note": "Coverage added 4 October 2026 (the long-hold pass: 344–353, scenes 20, 22 and 23) without a script change. A saved workspace still on a known default text that holds none of the ten receives all ten at their bundle positions; a workspace that already holds any of them, or whose script was edited, is left alone.",
+  "priorScriptHashes": [
+    "96bffed2d66d8220a64bd01360b482c465d858489fbd90583aaeb68dcaed6bfc",
+    "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4",
+    "7e80c7c0f86e92f2f01f48760c98d06fcaffdcb6b891ab93f8601ba5412d3347",
+    "a660644bc0e5c40ebc66aac7bd43b747eb9b663aa5e3db62b4adb53823e77e34"
+  ],
+  "newFrameIds": [
+    "neonoire-shot-344",
+    "neonoire-shot-345",
+    "neonoire-shot-346",
+    "neonoire-shot-347",
+    "neonoire-shot-348",
+    "neonoire-shot-349",
+    "neonoire-shot-350",
+    "neonoire-shot-351",
+    "neonoire-shot-352",
+    "neonoire-shot-353"
+  ]
+}
