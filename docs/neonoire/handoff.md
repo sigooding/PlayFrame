@@ -1,6 +1,63 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 3 October 2026 (night): the rewrite slots, pass four — the film's last frame, and the board is complete
+## Current — 4 October 2026: the cold open's five — the 2 October pins released, the retake queue down to nine
+
+**Five generations, five frames installed, nothing thrown away.** Scene 1's **3, 6, 7, 9 and 10** — the five
+frames the 2 October rewrite pinned — were regenerated onto the restored walk and lane, installed over their own
+filenames at their stable paths, reviewed at full size and released. **322/322 keyframes on disk, 0 placeholders,
+`RETAKE PENDING` 14 → 9.** Ledger:
+[cold-open-retakes-2026-10-04](passes/cold-open-retakes-2026-10-04.md).
+
+**Installed:** **3** she is **mid-walk** down the lane with the lit phone in her hand (the call she will not
+answer) — the walk the director restored, not a woman standing in the recess; **6** Mara **in the recess, pressing
+back into shadow behind the scooter and the stacked beer crates**; **7** the old man in the **cheap translucent
+raincoat and the grey flat cap**, arriving from the road, one hand at his side, glancing back; **9** he has
+**stopped dead mid-lane, six metres short of the doorway, his face fully readable** in the sodium light — **the
+same beat as 331 from the other side** (331 is the refusal; 9 is the instant before it); **10** the **black car
+broadside across the lane mouth** with its high beams straight down the lane, **two men walking in** abreast as
+silhouettes, the old man folded on the wet asphalt, the woman a dark silhouette in the recess.
+
+### The decisions this round made (permanent unless the director overrides)
+
+1. **The fresh-pass rule stands with one recorded exception.** Character sheets remain the only character
+   references, and the round also attaches the **street master `s1/01-backstreet.jpg` as the lane's geography**
+   (plus the installed **331** for 7 and 9, and **332/333** for 10) — the lane the rewrite restored is the lane the
+   fresh pass already delivered. Written into `cold-open-fresh-look.mjs` so the next agent inherits it.
+2. **9 and 331 are one event from two angles** — he stops (9), he refuses and turns (331). Keep them in view of
+   each other in any future frame of either.
+3. **10 is installed with its two canon caveats rather than held**, because its beat — the sedan blocking the lane,
+   the men walking in, the old man down — is what the rewrite asked for and what the previous image lacked:
+   **the men read as full face coverings, not the locked knit cap + black lower-face mask** (correct the wardrobe on
+   any further frame of them; retake this study if the director wants the masks right), and **the blocking car
+   reads larger and van-like** rather than the film's ordinary black 1990s sedan.
+4. **A stale verifier expectation was corrected with the beats.** The 1 October rule banned the words "walks fast"
+   from shot 3's brief; the 2 October rewrite **restored the walk**, so shot 3's brief must now **ask** for it, and
+   only the two beats the rewrite kept cut (the pole snag in 17, the flashlight drift in 18) stay prohibited.
+
+**Other caveats carried (all in the board notes):** 3 loses the red clip at distance, runs **two** barber poles
+where canon keeps one unlit, and its far sign prints **BAR** in Latin where the cold open's sign is a wordless
+amber glow; 6's beer-crate lettering is garbled pseudo-text; 7's flicker of recognition does not read, so the beat
+plays as a cautious man hurrying; 9 cannot show what he has seen (the doorway is off frame).
+
+**Mechanics:** `rewrite-pending.mjs` now holds **nine** IDs (113, 131, 132, 141–143, 160, 186, 228);
+`verify:neonoire` asserts the release, the `RETAKE LANDED 4 OCTOBER 2026` note on each, `Ready` status, the
+nine-frame queue, and 3's brief asking for the walk. `build:neonoire` (322/322, 0 placeholders),
+`verify:neonoire`, `verify:shot-order`, `check:assets`, `typecheck` and the production build all pass.
+No `pendingNotesHashes` additions were needed (no card changed from "awaiting a picture"), and
+`sync-scene6.mjs` was **not** re-run. **Quartermaster's note:** `node_modules` vanished mid-session again (the
+documented sandbox symptom) while the working tree kept its changes — `npm ci` restored it; the branch was
+**pushed first**, and the session branch is **`arena/01a10451-playframe`** (the older `arena/01a0da06-…` and
+`arena/01a0df4e-…` names further down this file are historical, not this session's branch).
+
+### Read this before regenerating anything in scenes 1, 15, 59 or 100
+
+Three board wordings the rewrites have since superseded are still queued as pins: **228**'s board still describes
+the embrace and the parked cars that rewritten scene 59 no longer has (the new text puts Jack at the payphone with
+the call to Mrs Sakai's empty house ringing); **186**'s still names a separate TOMORROW'S TOKYO banner where the
+new text letters **KUROSE DEVELOPMENT on the hoarding**; scene **89**'s board still promises the noise barrage
+(dog, baby, radios, pot) the rewrite cut. Fix the wording with the frames, on the scene's logic.
+
+## Previous — 3 October 2026 (night): the rewrite slots, pass four — the film's last frame, and the board is complete
 
 **One generation, one frame installed, one study thrown away: 343 *Forty metres back* — and with it
 322 of 322 keyframes on disk and zero placeholder cards anywhere in the film.** The pass exists because the
@@ -521,7 +578,7 @@ The director's first and lasting request is **scene and character consistency**.
   - The family photograph: `s4/35`.
   - The card: master `props/jack-investigations-card.jpg` (four lines, all crisp); the clipping: `props/daniel-voss-clipping.jpg`; the locker sign: `props/locker-room-sign.jpg`; the 8:52 service-road sign: `props/service-road-852.jpg`; plus the cassette label and the notebook cover.
 - **Re-list reference filenames with `ls` immediately before generating.** Parallel passes rename assets (shot numbers shift when a scene gains a frame); a stale path costs a generation and returns "Source image not found".
-- **Before starting a turn, sync git. Committing problems seen in this sandbox, and their fix.** Symptom: at the start of a turn the local checkout is silently reset to the session's branch point (commit `93dc0c1`) — `git status` then shows a pile of stale modifications, `git log` is missing every commit you pushed, and `node_modules` has vanished. Nothing is actually lost: the pushed branch on origin still holds all of it. **Fix, in this order:** `git fetch origin <your session branch>` (this session: `arena/01a0df4e-playframe`); compare `git rev-parse HEAD` with `git rev-parse FETCH_HEAD`; if they differ, `git reset --hard FETCH_HEAD`; then `npm ci --silent` before running any script. That branch holds the full board through shot 279 (coverage 241–279). Older recovery branches stop earlier. This has happened five times (latest: 26 September 2026) and the reset protocol has recovered everything each time. **Never force-push** over it, and never re-generate images that already exist on the pushed branch — check `public/images/neonoire/` first. Equally: **commit and push before ending a turn**; uncommitted work does not survive the sandbox reset, pushed work always does.
+- **Before starting a turn, sync git. Committing problems seen in this sandbox, and their fix.** Symptom: at the start of a turn the local checkout is silently reset to the session's branch point (an old one was commit `93dc0c1`) — `git status` then shows a pile of stale modifications, `git log` is missing every commit you pushed, and `node_modules` has vanished. Nothing is actually lost: the pushed branch on origin still holds all of it. **Fix, in this order:** `git fetch origin <your session branch>` (this session, 4 October 2026: `arena/01a10451-playframe`; the `arena/01a0df4e-…` and `arena/01a0da06-…` names elsewhere in this file are older sessions and their branches stop earlier); compare `git rev-parse HEAD` with `git rev-parse origin/<your session branch>`; **if they differ**, `git reset --hard` to the remote tip; then `npm ci --silent` before running any script. **If they match, the working tree is fine — do NOT reset it**, even when `node_modules` is gone: on 4 October 2026 `node_modules` vanished mid-session while HEAD and every edit were intact (`npm run build:neonoire` is pure Node and still runs; `verify:neonoire` needs `esbuild`), and `npm ci` alone recovered the session. The session's pushed branch always holds the latest board (4 October 2026: 322/322 keyframes, zero placeholders). **Never force-push**, and never re-generate images that already exist on the pushed branch — check `public/images/neonoire/` first. Equally: **commit and push before ending a turn**; uncommitted work does not survive the sandbox reset, pushed work always does.
 - **Review every image at full size before installing it** (see rule 2 below): identity, wardrobe, prop, count, direction, and left/right against the neighbouring shots. Past failures were:
   - a car missing its front (shot 140)
   - sedans facing away from the building they had arrived at (shot 175)
@@ -553,7 +610,7 @@ The director's standing instruction is that self-improvement on small details is
 
 ## Standing rules for every pass (set by the director)
 
-1. **Commit and push at the end of every turn** to `arena/01a0da06-playframe`; never leave work uncommitted.
+1. **Commit and push at the end of every turn** to the session's own branch — **`arena/01a10451-playframe` on 4 October 2026**; the `arena/01a0da06-…` name this rule used to carry is an older session's, and a rule that names the wrong branch is how a turn ends without a push. Never leave work uncommitted.
 2. **Check perspective and geometry in every image before it is installed.** Look at it at full size against the script and the neighbouring shots:
    - **Vehicles:** the right number; each whole (no missing front or back, not cut off at a door); **facing the direction the action implies** (a car arriving at a building faces the building, a departing car faces away); the same car in the same place and orientation across shots of one scene.
    - **Screen direction:** left and right, eyelines and the 180° line agree with the adjacent shots and with POV reverses (for example the lot seen from the window and from the ground).

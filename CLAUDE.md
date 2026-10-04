@@ -6,7 +6,27 @@ For any NEONOIRE screenplay or storyboard work, read `docs/neonoire/story-bible.
 
 Recorded dialogue and voices: `docs/neonoire/voice/README.md` (voices file, manifest, ingest and animatic scripts). Keep the script unchanged for voice work.
 
-## Latest session — 3 October 2026 (night): the rewrite slots, pass four — 322/322, the board is complete
+## Latest session — 4 October 2026: the cold open's five — the 2 October pins released, queue down to nine
+
+**"Continue with next shots" took the retake queue's head: scene 1's five frames the 2 October rewrite pinned —
+3, 6, 7, 9, 10 — regenerated onto the restored walk and lane, installed over their own filenames and released;
+five generations, five frames, nothing thrown away. `RETAKE PENDING` 14 → 9, 322/322 keyframes, 0 placeholders.**
+3 is Mara **mid-walk** with the lit phone (the walk is back); 6 is the recess with **the scooter and the stacked
+beer crates** in front of her; 7 is the **grey flat cap and cheap raincoat** arriving from the road; 9 is the stop
+with **the face fully readable** — the same beat as 331 from the other side; 10 is the **black car broadside across
+the lane mouth**, the men walking in, the old man down. The round's rule: character sheets **plus the street master
+`s1/01-backstreet.jpg`** as the lane's geography (and the installed 331 for 7/9, 332/333 for 10) — written into
+`cold-open-fresh-look.mjs`. **10's two caveats want a director's eye:** the men read as full face coverings rather
+than the locked knit cap + lower-face mask, and the blocking car reads van-like. Read
+[the ledger](docs/neonoire/passes/cold-open-retakes-2026-10-04.md) and the handoff's new Current section, which
+also lists the three **superseded board wordings** (228's embrace, 186's banner, scene 89's noise barrage) the
+remaining nine pins must be fixed with. `verify:neonoire` gained the release assertions and corrected a stale
+expectation: shot 3's brief must now **ask for the walk** (the 2 October rewrite restored it); the pole snag (17)
+and flashlight drift (18) stay prohibited. All checks pass. **This session's branch is `arena/01a10451-playframe`**
+— older handoff text naming other arena branches is historical; `node_modules` vanishing mid-session is the
+documented sandbox symptom, and `npm ci` alone recovers it when HEAD matches origin.
+
+## Previous session — 3 October 2026 (night): the rewrite slots, pass four — 322/322, the board is complete
 
 **One generation, one frame installed: 343 *Forty metres back*, and the film's last placeholder is gone — 322 of 322
 keyframes on disk, zero placeholder cards.** The study is the camera behind both cars, the old silver-grey sedan seen

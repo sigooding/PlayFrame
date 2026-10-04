@@ -25,12 +25,19 @@
 // scene 94's 141–143, scene 100's 160, and the Hive entrance pair 186 and 228 — the sedan interior,
 // Vera's "just a face", the hand in the dark, the third stool, and the two frames whose only fault is
 // the unlettered Hive banner. Each has its own board note saying what the pass must fix.
+// Released in the retake round, 4 October 2026: the five scene-1 frames the 2 October cold-open rewrite
+// pinned (3, 6, 7, 9, 10). Each was regenerated onto the rewritten text — 3 the walk with the lit phone,
+// 6 the recess behind the scooter and the crates, 7 the grey flat cap hurrying in from the road, 9 the
+// stop with the face readable (the same beat as 331 from the other side), 10 the sedan blocking the lane
+// with the two men walking in and the old man down — installed over its own filename at its stable path,
+// reviewed at full size, and released from its pin. Ledger:
+// docs/neonoire/passes/cold-open-retakes-2026-10-04.md. Their caveats are honest and carried in the
+// boards: 3 loses the clip at distance and runs two poles; 6's crate lettering is garbled; 7's flicker
+// of recognition does not read; 9 cannot show what he has seen; 10's two men read as full face coverings
+// rather than the locked cap-and-lower-mask, and its blocking car reads van-like.
 export const rewritePending = new Set([
   "neonoire-shot-113", "neonoire-shot-131", "neonoire-shot-132", "neonoire-shot-141",
   "neonoire-shot-142", "neonoire-shot-143", "neonoire-shot-160", "neonoire-shot-186",
   "neonoire-shot-228",
-  // 2 October 2026: the director restored the cold open's walk and the lane (the scrap, the scooter and crates, the
-  // flat cap, the sedan blocking the mouth with its high beams); these five still show the retired shape of it.
-  "neonoire-shot-03", "neonoire-shot-06", "neonoire-shot-07", "neonoire-shot-09", "neonoire-shot-10",
 ]);
 export const rewritePendingNote = "RETAKE PENDING — the script rewrote this scene on 30 September 2026; the image on file shows a beat that no longer exists.";
