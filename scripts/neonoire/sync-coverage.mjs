@@ -1,7 +1,7 @@
 // Writes src/lib/neonoire-coverage-sync.json: the fingerprints that let a saved workspace on a known
-// default text receive the long-hold passes' coverage frames (344–353, in scenes 20, 22 and 23; and
-// 354–363, in scenes 29, 17 and 14) without touching anything the writer has edited — and without a
-// rewrite: this pass adds frames to the film, it does not change a word of the script. So the gate is a
+// default text receive the long-hold passes (344–363), the first relief pass (364–368), and this
+// second coverage pass (369–376) without touching anything the writer has edited. These are added
+// frames, not a script rewrite, so the gate is a
 // script digest that is still one of the shipped defaults, and the arrival rule is all-or-nothing: a
 // workspace that already holds any of a batch has had them (and one the director deleted stays deleted);
 // a workspace whose script was edited gets none of them.
@@ -19,18 +19,20 @@ const root = process.cwd();
 const digest = text => createHash("sha256").update(text).digest("hex");
 const next = JSON.parse(readFileSync(resolve(root, "public/projects/neonoire-opening.json"), "utf8"));
 const scene6Sync = JSON.parse(readFileSync(resolve(root, "src/lib/neonoire-scene6-sync.json"), "utf8"));
-// The coverage batches this module carries. Update when a new coverage pass lands frames.
+// Coverage batches this module carries. Each batch is an all-or-nothing arrival in bundle order.
 const batch1 = Array.from({ length: 10 }, (_, i) => `neonoire-shot-${344 + i}`);
 const batch2 = Array.from({ length: 10 }, (_, i) => `neonoire-shot-${354 + i}`);
-const newFrameIds = [...batch1, ...batch2];
+const batch3 = Array.from({ length: 5 }, (_, i) => `neonoire-shot-${364 + i}`);
+const batch4 = Array.from({ length: 8 }, (_, i) => `neonoire-shot-${369 + i}`);
+const newFrameIds = [...batch1, ...batch2, ...batch3, ...batch4];
 for (const id of newFrameIds) {
   if (!next.frames.some(frame => frame.id === id)) throw new Error(`${id} is not in the current bundle`);
 }
 const out = {
-  note: "Coverage added 4 October 2026 (the long-hold passes: 344–353, scenes 20, 22 and 23; and 354–363, scenes 29, 17 and 14) without a script change. A saved workspace still on a known default text that holds none of a batch receives them at their bundle positions; a workspace that already holds any of them, or whose script was edited, is left alone.",
+  note: "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, and 369–376 second-pass frames) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
   priorScriptHashes: [...new Set([...scene6Sync.priorScriptHashes, digest(next.script)])],
   newFrameIds,
-  batches: [batch1, batch2],
+  batches: [batch1, batch2, batch3, batch4],
 };
 writeFileSync(resolve(root, "src/lib/neonoire-coverage-sync.json"), JSON.stringify(out, null, 2) + "\n");
 console.log(`${newFrameIds.length} coverage frames fingerprinted against ${out.priorScriptHashes.length} known defaults across ${out.batches.length} batches`);

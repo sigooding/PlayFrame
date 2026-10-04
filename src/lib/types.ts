@@ -109,6 +109,10 @@ export interface StoryFrame {
   title: string;
   description: string;
   image: string;
+  /** First image retained when this frame's image is changed, so it can be restored later. */
+  imageOriginal?: string;
+  /** Other images previously selected for this frame, newest last. */
+  imageHistory?: string[];
   shotType: ShotType;
   movement: CameraMovement;
   duration: number;

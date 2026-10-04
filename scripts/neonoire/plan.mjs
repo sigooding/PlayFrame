@@ -472,7 +472,7 @@ export const SCENES = [
     page: "n11-jack-s-office-later.md", board: "n11-jacks-office-later.md",
     cast: ["Jack", "Daniel Voss"],
     grammar: "85mm on the photograph.",
-    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you found enough twenty years ago. BOARDED — 5 shots (169, 245–246, and 251–252, the call and the lighter).",
+    description: "Past midnight. A box he hasn't opened in years: a police notebook, a clipping — DANIEL VOSS, 41 — and a photograph of Daniel and a young Jack laughing under the noodle-shop sign. A call to Ishida: you found enough twenty years ago. BOARDED — 6 shots (169, 245–246, 251–252, and 375, the receiver settling after the call).",
     lightingNotes: "Only the desk lamp and TV static.",
   },
   {
@@ -643,7 +643,7 @@ export const SCENES = [
     page: "n20-the-hive-noodle-shop-storeroom-continuous.md", board: "n20-storeroom-prove-it.md",
     cast: ["Jack", "Mara Voss"],
     grammar: "35mm for the storeroom and the doorway; 85mm on the replayed voicemail and on the clip resting on the sketchbook. Nothing longer, and no knife.",
-    description: "Night, after the last train, as rewritten 30 September 2026. On the futon, Mara plays her sister's voicemail, and plays it again — the two lines lifted from the cut scene 13. Jack in the doorway; her sketchbook and the red bird clip go between them on a flour sack — no knife in the room — and the promise costs him: Is she okay? — does she know... They have my purse. My passport. BOARDED — 4 shots (193–194, re-quoted and held RETAKE PENDING — the knife and the open palm are out of the scene; 284, the coward line, still true), and 309, the voicemail replay: the second of the seven named close-ups.",
+    description: "Night, after the last train, as rewritten 30 September 2026. On the futon, Mara plays her sister's voicemail, and plays it again — the two lines lifted from the cut scene 13. Jack in the doorway; her sketchbook and the red bird clip go between them on a flour sack — no knife in the room — and the promise costs him: Is she okay? — does she know... They have my purse. My passport. BOARDED — 4 shots (193–194, re-quoted and held RETAKE PENDING — the knife and the open palm are out of the scene; 284, the coward line, still true), and 309, the voicemail replay: the second of the seven named close-ups; coverage 371–372 adds Mara’s coward-line single and the red-bird detail.",
     lightingNotes: "One bare bulb, flour dust, the railway humming overhead.",
   },
   {
@@ -684,7 +684,7 @@ export const SCENES = [
     page: "n25-the-hive-noodle-shop-storeroom-night.md", board: "n25-storeroom-the-number-114.md",
     cast: ["Jack", "Mara Voss", "Kaneko"],
     grammar: "35mm across three feet of dark.",
-    description: "A cold bowl of rice and a whispered timeline: twenty years, the bar, the meeting that was supposed to happen. The key's number is 114, and Jack leaves it with her because nobody knows where she is. BOARDED — 1 shot (202).",
+    description: "A cold bowl of rice and a whispered timeline: twenty years, the bar, the meeting that was supposed to happen. The key's number is 114, and Jack leaves it with her because nobody knows where she is. BOARDED — 3 shots (202, 258 and 369–370); the two 4 October tag/drawing details follow the current screenplay.",
     lightingNotes: "One bare bulb, lower and darker than scene 20: warmth turned conspiratorial.",
   },
   {
@@ -764,7 +764,7 @@ export const SCENES = [
     page: "n36-vera-s-apartment-night.md", board: "n36-vera-apartment-night.md",
     cast: ["Vera Voss"],
     grammar: "50mm at floor height; the phone light is the only lamp.",
-    description: "Mara? — no: it's me. Vera on the floor in the dark with the phone's small warm light, come back safe, come back safe anyway, and both of them holding on a moment longer than they need to. The coast. An inn off the highway — that much he says; that much only. BOARDED — 1 shot (210).",
+    description: "Mara? — no: it's me. Vera on the floor in the dark with the phone's small warm light, come back safe, come back safe anyway, and both of them holding on a moment longer than they need to. The coast. An inn off the highway — that much he says; that much only. BOARDED — 2 shots (210 and 376, the Jack-side payphone intercut).",
     lightingNotes: "A warm pool of phone light in a cold dark room.",
   },
   {
@@ -1084,7 +1084,7 @@ export const SCENES = [
     page: "n27a-small-bar-kanda-day.md", board: "n27a-she-was-here.md",
     cast: ["Okada", "Vera Voss"],
     grammar: "Daylight in a bar where someone died, and a woman crouching where her sister hid.",
-    description: "Vera on her own: Okada on Jack carrying things by himself; then Vera asks Show me where, and stands on the floor behind the counter, exactly where Mara crouched, while the man of the house flaps at the memory he cannot put down. BOARDED — 3 shots (290–292).",
+    description: "Vera on her own: Okada on Jack carrying things by himself; then Vera asks Show me where, and stands on the floor behind the counter, exactly where Mara crouched, while the man of the house flaps at the memory he cannot put down. BOARDED — 5 shots (290–292 and coverage 373–374: Okada at the glass as Vera arrives, then the dead-CRT reflection).",
     lightingNotes: "Flat grey daylight as scene 8; the CRT stays dark.",
   },
   {

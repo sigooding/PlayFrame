@@ -145,11 +145,11 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
       have.add(id);
     }
   }
-  // 4 October 2026: the long-hold passes added numbered coverage frames (344–353 in scenes 20, 22 and
-  // 23; and 354–363 in scenes 29, 17 and 14) and changed no word of the script. A saved workspace still on a
-  // known default receives them at their bundle positions — right after the nearest earlier bundle frame it
-  // already has. The arrival is per-batch all-or-nothing on purpose: a workspace that holds any of a batch has
-  // had them, so a frame the director deleted is not reinstated, and one whose script was edited gets none of them.
+  // 4 October 2026: the long-hold, relief and second coverage passes added frames 344–376 without changing
+  // the script. A saved workspace still on a known default receives each untouched batch at its bundle
+  // positions — right after the nearest earlier bundle frame it already has. Arrival is all-or-nothing per
+  // batch: a workspace that holds any of a batch has had it, so a frame the director deleted is not reinstated,
+  // and a workspace whose script was edited receives none of the new frames.
   const coverageBatches = ((coverageSync as { batches?: string[][] }).batches || [coverageSync.newFrameIds]) as string[][];
   const coverageCurrent = existing.script === bundle.script
     || scene6Sync.priorScriptHashes.includes(digest(existing.script))

@@ -61,7 +61,7 @@ old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 347);
+assert.equal(patch.frames.length, 355);
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);
@@ -166,6 +166,26 @@ const editedCoverage2 = structuredClone(beforeCoverage2);
 editedCoverage2.script += "\nWriter's extra scene.\n";
 assert(!bundledFrameUpdates(editedCoverage2, project)?.frames?.some(frame => coverage2Ids.includes(frame.id)), "an edited script gets none of the long-hold frames");
 pass("a saved workspace on a default text receives the long-hold coverage 354–363 whole and once; a deleted frame is not reinstated and an edited script gets none");
+
+// 4 October 2026: the second coverage pass adds shots 369–376 to five existing scenes without a script change.
+const coverage3Ids = Array.from({ length: 8 }, (_, i) => `neonoire-shot-${369 + i}`);
+assert.deepEqual(project.frames.filter(frame => coverage3Ids.includes(frame.id)).map(frame => frame.id).sort(), [...coverage3Ids].sort(), "the second coverage pass is exactly 369–376");
+assert.deepEqual(project.frames.filter(frame => coverage3Ids.includes(frame.id)).map(frame => frame.shotNumber), [375, 372, 371, 369, 370, 373, 374, 376], "the bundle places each new frame at its own quoted script beat");
+const beforeCoverage3 = structuredClone(project);
+beforeCoverage3.frames = project.frames.filter(frame => !coverage3Ids.includes(frame.id));
+const coveragePatch3 = bundledFrameUpdates(beforeCoverage3, project);
+assert.deepEqual(coveragePatch3.frames.map(frame => frame.id), project.frames.map(frame => frame.id), "all eight new frames arrive in bundle/story order");
+assert.deepEqual(coveragePatch3.frames.filter(frame => coverage3Ids.includes(frame.id)).map(frame => frame.shotNumber), [375, 372, 371, 369, 370, 373, 374, 376]);
+assert.equal(coveragePatch3.scenes, undefined, "the coverage batch adds no scenes or script changes");
+assert.equal(bundledFrameUpdates({ ...beforeCoverage3, ...coveragePatch3 }, project), null, "the new batch is idempotent");
+const halfHeld3 = structuredClone(project);
+halfHeld3.frames = halfHeld3.frames.filter(frame => frame.id !== "neonoire-shot-375");
+const heldPatch3 = bundledFrameUpdates(halfHeld3, project);
+assert(!heldPatch3?.frames?.some(frame => frame.id === "neonoire-shot-375"), "a frame deleted from a workspace that already held the batch is not reinstated");
+const editedCoverage3 = structuredClone(beforeCoverage3);
+editedCoverage3.script += "\nWriter's extra scene.\n";
+assert(!bundledFrameUpdates(editedCoverage3, project)?.frames?.some(frame => coverage3Ids.includes(frame.id)), "an edited script receives none of the new batch");
+pass("a saved default receives all eight coverage frames 369–376 at their beats, once; edits, deliberate deletion and custom scripts are protected");
 
 
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));

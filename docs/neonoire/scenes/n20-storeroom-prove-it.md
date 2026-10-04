@@ -104,3 +104,25 @@ TIME: 6
 ID: neonoire-shot-346
 IMAGE: 346-the-bulb-hums.jpg
 NOTE: Coverage, shot 346. Generated from the storeroom masters `s20/191-prove-it.jpg`, `s84/115-the-storeroom.jpg` and `s13/179-eat.jpg`; the bulb, its cord and the plank ceiling carry from them. The pose is the held silence between Mara's line about the men in the lane and her *Promise me*, so nobody is speaking and nothing moves. The light source is the bulb itself and nothing else. **Caveat:** at 35mm the two figures are only shapes at the frame's edge — if the director wants the beat to sit on their stillness rather than the fixture, this is the frame to re-lens.
+
+## Coverage pass — 4 October 2026
+
+371. MEDIUM CLOSE-UP — 85mm, static, eye level — Mara calls herself a coward.
+A close single on Mara as the small, bitter laugh breaks and fails: her loose hair falls forward, her sleeve brushes her mouth, the brown borrowed cardigan matches the storeroom master. The red bird clip is on the closed sketchbook in her lap, not in her hair; Jack stays outside this frame.
+SCRIPT: "I called her a coward. (small, bitter laugh) And I'm the one hiding in a storeroom."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-371
+IMAGE: 371-the-coward-line.jpg
+NOTE: Coverage pass two (4 October 2026). A complementary close single on the existing scene 20 line in shot 284, not a replacement: the same futon, flour sacks, low bulb and brown cardigan, with Mara's clip off her hair after the scene 2 loss. Generated against `s20/191-prove-it.jpg`, `s20/284-i-called-her-a-coward.jpg`, `s20/345-the-book-into-her-lap.jpg` and `sheets/mara-hiding.jpg`. The soft, bitter laugh is held in her face; no extra character, weapon or new prop.
+
+372. INSERT — 85mm, static, high angle — the red bird on the sketchbook.
+The closed sketchbook rests in Mara's lap. The small red enamel sparrow clip lies by itself on the plain cover, her fingertips just at its edge; no lettering on the book and no clip in her hair.
+SCRIPT: "She pulls the sketchbook into her lap."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 4
+ID: neonoire-shot-372
+IMAGE: 372-the-clip-on-the-book.jpg
+NOTE: Coverage pass two (4 October 2026). The shot adds the prop detail to the exact action already covered by 345; it does not replace that frame. Generated from `s20/192-the-red-bird-clip.jpg`, `s20/345-the-book-into-her-lap.jpg` and `sheets/mara-hiding.jpg`. The clip is the same cheap red enamel bird, now set on the closed book; it remains the scene's one saturated colour. Keep the cover blank and the clip out of Mara's hair.

@@ -12,6 +12,7 @@ import { relationLines } from "@/lib/relations";
 import { buildFramePrompt, extractNegativePrompt, extractPositivePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { IMAGE_TYPES, projectImages, resizeImage } from "@/lib/image";
 import { onImageError } from "@/lib/image";
+import { selectFrameImage } from "@/lib/image-history";
 import { ImageBrowser, useImageLibrary } from "./image-library";
 import { sceneNumber } from "@/lib/frame-order";
 
@@ -51,7 +52,16 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const uploadRef = useRef<HTMLInputElement>(null);
+  const lastChosenImage = useRef(frame.image);
   const set = <K extends keyof StoryFrame>(key: K, value: StoryFrame[K]) => setDraft(prev => ({ ...prev, [key]: value }));
+  const setImage = (image: string) => {
+    const previous = lastChosenImage.current;
+    lastChosenImage.current = image;
+    setDraft(prev => {
+      const selected = selectFrameImage({ ...prev, image: previous }, image);
+      return { ...prev, image, imageOriginal: selected.imageOriginal, imageHistory: selected.imageHistory };
+    });
+  };
   const usingReference = !draft.image || isShotReference(draft.image);
   const prompt = buildFramePrompt(project, draft, platform, style);
   const currentModel = PLATFORMS.find(p => p.id === platform) || PLATFORMS[0];
@@ -67,7 +77,7 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
     if (!IMAGE_TYPES.test(file.type)) { setError("Choose a JPG, PNG, or WebP image."); return; }
     if (file.size > 15 * 1024 * 1024) { setError("Please use an image smaller than 15 MB."); return; }
     setUploading(true); setError("");
-    try { set("image", await resizeImage(file, 1600, 0.85)); }
+    try { setImage(await resizeImage(file, 1600, 0.85)); }
     catch { setError("That image couldn't be opened. Please try another file."); }
     finally { setUploading(false); if (uploadRef.current) uploadRef.current.value = ""; }
   }
@@ -88,7 +98,11 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
     if (!draft.sceneId) { setError("Choose a scene for this frame."); setTab("frame"); return; }
     if (!(draft.duration > 0 && draft.duration <= 3600)) { setError("Duration must be between 1 and 3,600 seconds."); setTab("frame"); return; }
     setBusy(true); setError("");
-    if (await onSave({ ...draft, title: draft.title.trim(), image: draft.image || shotGuide[draft.shotType].image })) onClose();
+    const image = draft.image || shotGuide[draft.shotType].image;
+    const selected = image === lastChosenImage.current
+      ? draft
+      : selectFrameImage({ ...draft, image: lastChosenImage.current }, image);
+    if (await onSave({ ...selected, image, title: draft.title.trim() })) onClose();
     else setError("We couldn't save this frame. Please try again.");
     setBusy(false);
   }
@@ -105,10 +119,10 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
 
     {tab === "frame" && <div className="frame-dialog-grid"><div className="frame-visual-side"><div className="frame-preview">{draft.image ? <img src={draft.image} alt={draft.title || "Frame preview"} onError={onImageError} /> : <div className="image-placeholder"><ImagePlus size={32} /><span>Your next great shot</span></div>}<span className="preview-ratio">16:9</span>{usingReference && draft.image && <span className="preview-tag"><Camera size={11} />{draft.shotType} reference</span>}</div>
       <input ref={uploadRef} type="file" accept="image/jpeg,image/png,image/webp" className="sr-only" aria-label="Upload reference image" onChange={e => upload(e.target.files)} />
-      <div className="image-actions"><button type="button" className="button" onClick={() => uploadRef.current?.click()} disabled={uploading}>{uploading ? <LoaderCircle size={15} className="spin" /> : <Upload size={15} />}Upload image</button>{usingReference ? <button type="button" className="text-button" onClick={() => setTab("shot")}>Change shot type to update this image</button> : <button type="button" className="text-button" onClick={() => set("image", shotGuide[draft.shotType].image)}><Wand2 size={13} />Back to the {draft.shotType.toLowerCase()} example</button>}<button type="button" className="text-button" onClick={() => setShowUrl(!showUrl)}>Image URL</button>{imageLibrary.length > 0 && <button type="button" className="button" onClick={() => setBrowsing(!browsing)} aria-expanded={browsing}><Images size={15} />{browsing ? "Hide image library" : "Browse all images"}</button>}</div>
-      {browsing && imageLibrary.length > 0 && <ImageBrowser library={imageLibrary} selected={draft.image} onPick={src => set("image", src)} />}
+      <div className="image-actions"><button type="button" className="button" onClick={() => uploadRef.current?.click()} disabled={uploading}>{uploading ? <LoaderCircle size={15} className="spin" /> : <Upload size={15} />}Upload image</button>{usingReference ? <button type="button" className="text-button" onClick={() => setTab("shot")}>Change shot type to update this image</button> : <button type="button" className="text-button" onClick={() => setImage(shotGuide[draft.shotType].image)}><Wand2 size={13} />Back to the {draft.shotType.toLowerCase()} example</button>}<button type="button" className="text-button" onClick={() => setShowUrl(!showUrl)}>Image URL</button>{imageLibrary.length > 0 && <button type="button" className="button" onClick={() => setBrowsing(!browsing)} aria-expanded={browsing}><Images size={15} />{browsing ? "Hide image library" : "Browse all images"}</button>}</div>
+      {browsing && imageLibrary.length > 0 && <ImageBrowser library={imageLibrary} selected={draft.image} imageOriginal={draft.imageOriginal} imageHistory={draft.imageHistory} sceneNumber={(() => { const index = scenes.findIndex(scene => scene.id === draft.sceneId); return index < 0 ? undefined : sceneNumber(scenes[index], index); })()} onPick={setImage} />}
       {showUrl && <Field label="Image URL"><input type="url" placeholder="https://..." value={draft.image.startsWith("http") ? draft.image : ""} onChange={e => set("image", e.target.value)} /></Field>}
-      {library.length > 0 && <><p className="eyebrow reference-label">FROM THIS PROJECT</p><div className="reference-grid reference-grid-wide">{library.map(src => <button type="button" key={src} aria-label="Use this image" className={draft.image === src ? "selected" : ""} onClick={() => set("image", src)}><img src={src} alt="" onError={onImageError} />{draft.image === src && <span><Check size={12} /></span>}</button>)}</div></>}
+      {library.length > 0 && <><p className="eyebrow reference-label">FROM THIS PROJECT</p><div className="reference-grid reference-grid-wide">{library.map(src => <button type="button" key={src} aria-label="Use this image" className={draft.image === src ? "selected" : ""} onClick={() => setImage(src)}><img src={src} alt="" onError={onImageError} />{draft.image === src && <span><Check size={12} /></span>}</button>)}</div></>}
       <Field label="Director’s notes"><textarea rows={4} placeholder="Lighting, sound, performance... the little things that matter." value={draft.notes} onChange={e => set("notes", e.target.value)} /></Field>{draft.audio && draft.audio.length > 0 && <div className="field frame-dialogue"><span>Dialogue audio</span>{draft.audio.map(clip => <div key={clip.id} className="frame-dialogue-line"><strong>{clip.character}</strong> <span>{clip.offset}s{clip.duration ? ` · ${clip.duration}s` : ""}</span><p>{clip.text}</p><audio controls preload="none" src={clip.src} /></div>)}</div>}</div>
 
       <div className="frame-fields"><Field label="Frame title"><input maxLength={300} required placeholder="Give this moment a name" value={draft.title} onChange={e => set("title", e.target.value)} /></Field>

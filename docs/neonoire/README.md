@@ -2,22 +2,9 @@
 
 > **New session? Read [`story-bible.md`](story-bible.md) first** — premise, characters and their decision history, conspiracy backstory, locations, structure, scene intent, rejected ideas, motifs, post-draft changes and known inconsistencies. [`baseline/Neonoire_Draft1_2026-09-25.fountain`](baseline/Neonoire_Draft1_2026-09-25.fountain) is Draft 1 as originally written (100 scenes, before the letter rewrite); the working script started identical to it, so any difference from it that is not in the bible's Part 9 was changed in PlayFrame.
 
-**100 numbered screenplay scenes and seven inserted scenes (14A, 25A, 27A, 53A, 63A, 82A, 99A), all boarded: 347 numbered shots.** The first boarding is shots 1–240. Coverage 241–269 added the beats that boarding had named and left, without renumbering; 270–286 covered the new endings and the letter rewrite; 287–296 boarded 25A, 27A and 63A; **297–307 boarded 53A, 82A and 99A and the story-pass-2 coverage of scenes 96, 97 and 99A**. The draft itself is unchanged and is carried page by page into Frame. Nothing holds a placeholder card: all 347 numbered shots have an image (the last of them landed on 4 October 2026).
+**100 numbered screenplay scenes and seven inserted scenes (14A, 25A, 27A, 53A, 63A, 82A, 99A), all boarded: 355 numbered shots.** The first boarding is shots 1–240. Coverage 241–269 added the beats that boarding had named and left, without renumbering; 270–286 covered the new endings and the letter rewrite; 287–296 boarded 25A, 27A and 63A; **297–307 boarded 53A, 82A and 99A and story-pass-2 coverage**. The draft itself is unchanged and is carried page by page into Frame. Nothing holds a placeholder card: all **355** numbered shots have an image.
 
-**The 4 October 2026 coverage passes added twenty-five numbered coverage frames, 344–368.** The coverage note in
-[shots-needed.md](shots-needed.md) — written after the first voiced animatic because one board cannot keep an
-exchange alive past about thirty seconds — listed the film's longest single-board holds. The first long-hold pass
-covered the top three (scene 23 at 95 s, scene 22 at 64 s, scene 20 at 55 s with frames 344–353); the second long-hold
-pass covered the next three (scene 29 at 53 s, scene 17 at 46 s, scene 14 at 42 s with frames 354–363). The same
-day's relief pass then joined the run at **364–368** with the two unboarded script beats the long-hold passes did
-not take: scene 59's INTERCUT to Mrs. Sakai's empty house (364–367) and scene 94's door closing (368) — the five
-frames of ten it generated, the other five having been taken by the two passes ahead of it (recorded in its ledger).
-All were generated from each room's delivered masters with the cast sheets attached, installed 16:9 full-bleed at new
-asset paths with **no frame on disk written over** — so nothing needed archiving. 322 → 332 → 342 →
-**347 keyframes, 0 placeholders**; the next free production number is **369**. Read
-[long-hold-2026-10-04.md](passes/long-hold-2026-10-04.md),
-[long-hold-2-2026-10-04.md](passes/long-hold-2-2026-10-04.md) and
-[animatic-relief-1-2026-10-04.md](passes/animatic-relief-1-2026-10-04.md).
+**The 4 October 2026 coverage passes added 33 numbered frames, 344–376.** The first and second long-hold passes covered six of the animatic's longest single-board holds (**344–363**); the relief pass added scene 59's empty-house INTERCUT and scene 94's closing door (**364–368**); the second coverage pass adds **369–376**: scene 25's drawing and 114 tag, scene 20's Mara single and clip insert, scene 27A's daylight arrival and dead-CRT reflection, scene 11's receiver settling on Jack's desk, and scene 36's Jack-side payphone intercut. All eight new images were reviewed and installed full-bleed at 1920×1080 without overwriting an existing file. **Shot 375 uses the corrected desk-only retake; the first study with the wrong door lettering and static CRT was not installed.** Shot 370 follows the current screenplay's 114-on-the-tag wording, without changing shot 258. 322 → 332 → 342 → 347 → **355 keyframes, 0 placeholders**; the next free production number is **377**. Read the [first long-hold ledger](passes/long-hold-2026-10-04.md), [second long-hold ledger](passes/long-hold-2-2026-10-04.md), [first relief ledger](passes/animatic-relief-1-2026-10-04.md), and [second coverage ledger](passes/coverage-369-376-2026-10-04.md).
 
 **The 30 September revision's retake queue is closed.** On 4 October 2026 the last nine pinned studies (113, 131, 132,
 141–143, 160, 186, 228) and scene 100's 161 — the film's last frame, which the rewrite had left playing a retired

@@ -75,3 +75,15 @@ TIME: 4
 ID: neonoire-shot-252
 IMAGE: 250-the-lighter.jpg
 NOTE: Coverage, shot 252. The lighter is the same dented brushed-steel one as s76/83-the-lighter.jpg, now in Jack's hand, not Vera's wine-red sleeve. No cigarettes anywhere. No engraving. Retaken 1 October 2026 onto the desk lock: the insert sits on the locked worn dark-walnut top, pale cup rings and scuff field under the lamp pool, so a hands-only frame cannot quietly carry a different table.
+
+## Coverage pass — 4 October 2026
+
+375. INSERT — 85mm, static, high angle — Jack sets down the receiver.
+A desk-only close insert as Jack returns the black rotary receiver to its cradle after the call. His hand and charcoal sleeve enter the warm lamp pool; the closed steel lighter and the photograph edge sit on the same dark-walnut desk. No face, door or television is in frame.
+SCRIPT: "Jack holds the receiver a moment longer. He sets it down."
+CAST: Jack
+LIGHT: Practical night
+TIME: 5
+ID: neonoire-shot-375
+IMAGE: 375-he-sets-the-receiver-down.jpg
+NOTE: Coverage pass two (4 October 2026). **Use the corrected desk-only retake** `artifacts/neonoire/coverage-369-376/375-the-line-ends-retake-raw.jpg`, installed here at 16:9; do not install `375-the-line-ends-raw.jpg`, whose door lettering is wrong and whose CRT shows static. Generated with the locked office masters `s10/164-depends-whos-calling.jpg` and `s11/250-the-lighter.jpg`. The image has one rotary phone on Jack's established desk, lamp, lighter and photograph; the door and CRT are intentionally outside composition. Shot 252 still carries the subsequent lighter action and its original image remains untouched. The frame holds the receiver-set-down beat; do not infer a visible flame from this still.
