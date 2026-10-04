@@ -68,3 +68,39 @@ TIME: 6
 ID: neonoire-shot-309
 IMAGE: 309-the-voicemail.jpg
 NOTE: SECOND OF THE SEVEN NAMED CLOSE-UPS (2, 20, 63, 71, 77, 79, 89 — fixed on the page, and no others). Carries the two recorded lines lifted from the cut scene 13: the manifest's voicemail now plays over this frame. `sheets/mara-face.jpg`, no clip — by the end of the scene the clip is on the sketchbook. INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — a retake: the first study lit the whole storeroom, and the second generation holds the rule that the phone screen is the ONLY light on her face, the bulb left far behind her and out of focus. Delivered 16:9 full-bleed 1920×1080; no readable text on the screen. Production approval pending.
+
+---
+
+## Coverage — the long-hold pass (4 October 2026)
+
+**Ten frames for the three scenes the voiced animatic leaves on one board.** The note in [shots-needed.md](../shots-needed.md), written after scenes 1–37 and 62–74 were cut together, is that a single board holds an entire exchange and the camera push cannot keep it alive past about thirty seconds. Scene 23's 95 s, scene 22's 64 s and scene 20's 55 s head its list, so the pass went to those three rooms first: **344–353, ten new coverage numbers, nothing renumbered and no frame on disk written over.** Each frame was generated from its own scene's master with the cast sheets attached, and the caveats below are honest and unclosed.
+
+344. TWO-SHOT — 35mm, static, low level — he makes himself smaller.
+In the bulb's pool: Jack lowered onto a stacked flour sack at the right of the frame, forearms on his knees, his hands empty and open; Mara drawn up on the futon at the left, her closed sketchbook in her lap with the red bird clip on its cover, three feet of bare floor between them. Neither of them crosses it.
+SCRIPT: "Jack waits. He doesn't go to her. He sits down on a flour sack, slowly, making himself smaller."
+CAST: Jack, Mara Voss
+LIGHT: Practical night
+TIME: 10
+ID: neonoire-shot-344
+IMAGE: 344-he-makes-himself-smaller.jpg
+NOTE: Coverage, shot 344 — the long-hold pass, 4 October 2026. Generated from the storeroom masters `s20/191-prove-it.jpg` and `s84/115-the-storeroom.jpg` with `sheets/jack.jpg` and `sheets/mara-hiding.jpg` attached. The room carries from the masters: plank walls, the bare bulb on its cord, the FLOUR-stencilled sacks, the crates of greens, the sketches pinned to the wall, the curtain at the doorway. Mara wears the borrowed brown cardigan and no clip in her hair — by this beat the clip is on the sketchbook between them; Jack is the charcoal jacket and open off-white collar of this scene, not the overcoat. Both pairs of hands are visible and neither holds anything. Carry: the sack he sits on must read as one of the stacked FLOUR sacks, and on set check that his coat does not hide the second sack.
+
+345. MEDIUM CLOSE-UP — 85mm, static, eye level — the book into her lap.
+Mara's two hands closing on the closed sketchbook and drawing it in against her cardigan, the red enamel bird clip sitting on its cover under her fingers, her lowered face above it and the storeroom dark behind.
+SCRIPT: "She pulls the sketchbook into her lap."
+CAST: Mara Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-345
+IMAGE: 345-the-book-into-her-lap.jpg
+NOTE: Coverage, shot 345. Generated from `s20/192-the-red-bird-clip.jpg` (the book-and-clip master) and `s84/115-the-storeroom.jpg` with `sheets/mara-hiding.jpg` attached. The clip is the red enamel sparrow of `s1/03-mara-walks.jpg` — the same prop Vera wears at the end — and it stays the only saturated colour in the frame. The cover carries nothing legible. **Caveat:** the clip reads softly through her fingers at 85mm; the prop must be checked on set against `s20/192-the-red-bird-clip.jpg`.
+
+346. INSERT — 35mm, static, low angle — the bulb hums.
+The bare bulb on its cord in the top third of the frame, flour dust hanging in its light; below it the two of them small and dark at the frame's lower edges — he on the sack at the right, she on the futon at the left — neither moving, the sack stack and a pinned sketch soft behind.
+SCRIPT: "Silence. The bulb hums."
+CAST: Jack, Mara Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-346
+IMAGE: 346-the-bulb-hums.jpg
+NOTE: Coverage, shot 346. Generated from the storeroom masters `s20/191-prove-it.jpg`, `s84/115-the-storeroom.jpg` and `s13/179-eat.jpg`; the bulb, its cord and the plank ceiling carry from them. The pose is the held silence between Mara's line about the men in the lane and her *Promise me*, so nobody is speaking and nothing moves. The light source is the bulb itself and nothing else. **Caveat:** at 35mm the two figures are only shapes at the frame's edge — if the director wants the beat to sit on their stillness rather than the fixture, this is the frame to re-lens.

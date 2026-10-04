@@ -61,7 +61,7 @@ old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 322);
+assert.equal(patch.frames.length, 332);
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);
@@ -124,6 +124,30 @@ deleted14a.frames = project.frames.filter(frame => frame.sceneId !== "neonoire-s
 const deletedPatch14a = bundledFrameUpdates(deleted14a, project);
 assert(!deletedPatch14a?.scenes?.some(scene => scene.id === "neonoire-s14a") && !deletedPatch14a?.frames?.some(frame => s14aIds.includes(frame.id)), "a workspace on the new text without 14A deleted it, and stays without it");
 pass("a saved workspace on the cold-open default receives scene 14A and its slots 334–343 in place; edited scripts and a deliberate deletion are protected");
+
+// 4 October 2026: the long-hold pass added ten numbered coverage frames (344–353, scenes 20, 22 and 23) and changed
+// no word of the script. A saved workspace on a known default that holds none of them receives all ten, at their
+// bundle positions; a workspace that already holds any of them has had them (so a frame the director deleted is not
+// reinstated), and an edited script gets none of them.
+const coverageIds = Array.from({ length: 10 }, (_, i) => `neonoire-shot-${344 + i}`);
+assert.deepEqual(project.frames.filter(frame => coverageIds.includes(frame.id)).map(frame => frame.id).sort(), [...coverageIds].sort(), "the long-hold frames are 344–353");
+assert.deepEqual(project.frames.filter(frame => coverageIds.includes(frame.id)).map(frame => frame.shotNumber), [345, 344, 346, 347, 348, 349, 350, 351, 352, 353], "the bundle plays them at their quoted beats: in scene 20 the book goes into her lap (345) before he sits down (344)");
+const beforeCoverage = structuredClone(project);
+beforeCoverage.frames = project.frames.filter(frame => !coverageIds.includes(frame.id));
+const coveragePatch = bundledFrameUpdates(beforeCoverage, project);
+assert.deepEqual(coveragePatch.frames.map(frame => frame.id), project.frames.map(frame => frame.id), "the ten long-hold frames arrive at their bundle positions");
+assert.deepEqual(coveragePatch.frames.filter(frame => coverageIds.includes(frame.id)).map(frame => frame.shotNumber), [345, 344, 346, 347, 348, 349, 350, 351, 352, 353], "…in story order: in scene 20 the book goes into her lap (345) before he sits down (344), exactly as the draft's beats run");
+assert.equal(coveragePatch.scenes, undefined, "no scene changes with them — this pass adds frames, not scenes");
+assert.equal(bundledFrameUpdates({ ...beforeCoverage, ...coveragePatch }, project), null, "and the arrival is idempotent");
+const halfHeld = structuredClone(project);
+halfHeld.frames = halfHeld.frames.filter(frame => frame.id !== "neonoire-shot-350");
+const heldPatch = bundledFrameUpdates(halfHeld, project);
+assert(!heldPatch?.frames?.some(frame => frame.id === "neonoire-shot-350"), "a long-hold frame the workspace no longer holds is not reinstated: it had them, and it deleted one");
+const editedCoverage = structuredClone(beforeCoverage);
+editedCoverage.script += "\nWriter's extra scene.\n";
+assert(!bundledFrameUpdates(editedCoverage, project)?.frames?.some(frame => coverageIds.includes(frame.id)), "an edited script gets none of the long-hold frames");
+pass("a saved workspace on a default text receives the long-hold coverage 344–353 whole and once; a deleted frame is not reinstated and an edited script gets none");
+
 
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));
 for (const id of ["s13-kaneko-gruffly-eat", "s13-mara-hesitantly-thank-you-has-anyone-come", "s13-kaneko-flatly-nobody-comes-here-who-isn"]) assert.equal(voice.lines.find(line => line.id === id)?.frameId, "neonoire-shot-202");

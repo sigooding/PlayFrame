@@ -76,7 +76,11 @@ const own = key => project.frames.filter(frame => frame.sceneId === `neonoire-${
 // The retake round of 1 October 2026 anchored 193 on the doorway line it now shows (Fountain 1000) rather
 // than on the earlier futon line (990), which puts the replay between them — the order the page gives:
 // she plays it again (998), then Jack is in the doorway (1000), then the clip on the book, then 284.
-assert.deepEqual(own("s20"), [309, 193, 194, 284], "The moved voicemail plays inside its scene, ahead of the doorway beat");
+// The 4 October 2026 long-hold pass adds three to this scene, and they play inside it: the book into her
+// lap (345) after the clip is set down, then him making himself smaller (344), then 284, then the bulb (346).
+assert.deepEqual(own("s20"), [309, 193, 194, 345, 344, 284, 346], "The moved voicemail plays inside its scene, ahead of the doorway beat");
+assert.deepEqual(own("s22"), [197, 347, 285, 348, 349, 198], "The arch's new frames sit between the master and the cup moved back from the edge");
+assert.deepEqual(own("s23"), [199, 350, 351, 352, 200, 353], "The stall's new frames run from the hands to the nod, with the lanterns swaying last but one");
 assert.deepEqual(own("s51"), [310, 311]);
 assert.deepEqual(own("s99a"), [158, 159, 305, 306, 307], "Demolition precedes the dissolve to the plaza within one scene");
 assert.deepEqual(own("s75"), [79, 80, 81, 82, 83, 314], "The empty crossing is the last pillow shot, not a final-project append");
@@ -114,7 +118,7 @@ assert.deepEqual(reorderFrameInScene(fixture, "not-a-frame", "later-low-number")
 assert.equal(sceneNumber(scenes[1], 1), "25A");
 assert.equal(shotNumber({ shotNumber: 310 }, 0), 310);
 assert.equal(shotNumber({}, 3), 4);
-assert.equal(nextShotNumber(project.frames), 344);
+assert.equal(nextShotNumber(project.frames), 354);
 assert.equal(nextShotNumber([{ id: "unnumbered" }]), undefined);
 pass("scene order is stable, unassigned shots go last, manual within-scene ordering and drag boundaries work");
 

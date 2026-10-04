@@ -1,5 +1,77 @@
 # NEONOIRE — keyframe handoff
 
+## Current — 4 October 2026 (fourth pass): the long-hold pass — ten new frames, 344–353, for the three scenes one board was carrying
+
+**Ten generations, ten NEW numbered frames, nothing renumbered and nothing written over: 322 → 332 keyframes, 0
+placeholders, next free number 354.** The round took the head of [shots-needed.md](shots-needed.md), the note written
+after the first voiced animatic — a single board cannot keep an exchange alive past about thirty seconds — where the
+three longest holds in the film each had one frame: **scene 23, 95 seconds on shot 199; scene 22, 64 on 197; scene 20,
+55 on 194.** Ledger: [long-hold-2026-10-04](passes/long-hold-2026-10-04.md); sheet
+`reviews/long-hold-344-353.jpg` (all nineteen frames of the three rooms, the ten new ones among their masters).
+
+**Installed:** **344** Jack lowered onto a stacked flour sack in the bulb's pool, hands empty and open, three feet of
+floor between him and her — *"making himself smaller"*; **345** her two hands closing on the closed sketchbook with the
+red bird clip under her fingers; **346** the bare bulb and the dust, the two of them small and dark at the frame's
+corners — *"Silence. The bulb hums."*; **347** the counter mid-tremor as the train goes over, cups shivering in their
+saucers on the counter's edge; **348** Vera turned from the counter towards him, mid-line, her coffee still full; **349**
+Jack answering with his eyes on the bowl, hands out of frame; **350** Ishida's hands turning one skewer over the little
+charcoal grill; **351** Jack across the table, chin down, listening; **352** the napkin under a fingertip on the red
+plastic, longhand across it, pushed over; **353** the small nod, the folded napkin white at the frame's edge.
+
+### The decisions this round made (permanent unless the director overrides)
+
+1. **New frames keep the coverage passes' lens habit inside 35mm scenes.** Scene 22's plan is "35mm for the arch, 50mm
+   along the counter" and scene 23's "35mm across the table": the singles and the two table inserts go to 50mm and 85mm,
+   as coverage already does in scenes 11, 14 and 29. The masters keep their own framing untouched.
+2. **350 and 352 are hands-and-object inserts with no face in them, and that leaves Ishida with no close single in
+   scene 23** — recorded here as a coverage observation, not smuggled into these frames. If the director wants one, it
+   is the next number in that scene.
+3. **353 is the scene's last beat, not 200.** The page gives the sway, then *Jack nods slowly*, and the paragraph after
+   it says the nod is what makes it dangerous — so 200 keeps the sway and the new 353 takes the nod, generated from 198
+   so the lantern row's last position carries between them.
+4. **Nothing was replaced, so nothing was archived.** Every one of the ten is a new asset path; the archive keeps its
+   276 versioned studies. `verify:neonoire` now asserts that 344–353 are new files at 16:9 with the pass named in their
+   notes, so a future retake must archive before it overwrites, as always.
+5. **Saved workspaces receive the ten through a new, separate sync module.** `src/lib/neonoire-coverage-sync.json`
+   (written by `scripts/neonoire/sync-coverage.mjs`, read by `src/lib/bundle-refresh.ts`) hands them to a workspace still
+   on a known default text that holds none of them, at their bundle positions, once; a workspace that already holds any
+   of the ten has had them (a deleted frame is not reinstated) and an edited script gets none. **Do not re-run
+   `sync-scene6.mjs`** — its scene list is scenes 1, 2, 6 and 14A and it would drop these ids.
+
+### Where they play (the scene's logic, not board order)
+
+`story-order.mjs` places a frame by its own quoted line, and each new quote was written from the beat it draws:
+**scene 20** — 309, 193, 194, **345, 344**, 284, **346** (the book goes into her lap before he sits down, exactly as
+the draft runs); **scene 22** — 197, **347**, 285, 348, **349**, 198; **scene 23** — 199, **350, 351, 352**, 200,
+**353**.
+
+### Honest caveats (also in the board notes)
+
+**347**'s train cannot read in a still — the beat is the quivering crockery and the swung tube, and the animatic
+supplies the sound; its counter dress is busier than the master's (pick one coffee service on set). **348** is lit by the
+wall bulbs rather than the tubes — grade it with 197. **349** came back wider than the board's 50mm medium and is logged,
+not re-generated. **351**'s eyeline drifts past his partner and his rain-wet hair does not read. **352**'s napkin carries
+partly legible pseudo-text where the board says the address must not be readable — **the one caveat in this pass worth a
+retake**, or dress the prop before print. **353**'s nod is only the instant it begins; it wants the animatic. **351 and
+353** are the same man in the same seat at the same table and must be checked as a pair. The ten were reviewed at full
+size against the masters they were generated from in this session; production approval is the director's, as ever.
+
+### Mechanics
+
+`docs/neonoire/scenes/n20-storeroom-prove-it.md`, `n22-counter-under-the-tracks.md` and
+`n23-yakitori-under-the-bridge.md` carry the ten boards under *Coverage — the long-hold pass (4 October 2026)*, quotes
+taken from the draft. `verify:neonoire` — `EXPECTED_SHOTS` **332**, the coverage run now 241–353, and a new block for
+the pass; `verify-shot-order.mjs` — scenes 20/22/23's in-scene order and `nextShotNumber` **354**;
+`verify-shot-order-browser.mjs` — allocation test moved to 354/355; `verify-revision-restoration.mjs` — patch length
+332 plus the sync test. `build-project.mjs` gained the notes branch for 344+ (without it a 344 would inherit the 2
+October rewrite-slot wording) and its description names the pass; `src/components/project-views.tsx` reads 332 shots.
+Raw generations, reference montages and check sheets are in the ignored `artifacts/neonoire/coverage-2026-10-04/`.
+`build:neonoire` (**332/332, 0 placeholders**), `verify:neonoire`, `verify:shot-order`, `verify:revision:neonoire`,
+`verify:animatic`, `verify:rapture`, `verify:features`, `check:assets` (939 references), `typecheck`, `lint` and the
+production build all pass. **Quartermaster:** `node_modules` was absent again at session start (the sandbox symptom
+this file keeps recording) and `npm ci` restored it in 16 s. **This session's branch is
+`arena/01a10771-playframe`, merged to `main` at the end of the session.**
+
 ## Current — 4 October 2026 (third pass): visual inspection and audit of the retake queue's ten frames
 
 **Full visual review and scene-logic consistency audit of the retake queue's ten final frames (113, 131, 132, 141–143, 160, 161, 186, 228).**
