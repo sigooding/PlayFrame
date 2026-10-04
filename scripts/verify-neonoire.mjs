@@ -200,7 +200,7 @@ for (const sheet of ["images/neonoire/sheets/sakai.jpg", "images/neonoire/sheets
   assert(w > h, `${sheet} exists and is a landscape cast sheet`);
 }
 assert(coldOpenFreshLook.includes("CHARACTER SHEETS ONLY") && coldOpenFreshLook.includes("no scene masters"), "The fresh-pass brief carries the character-references-only rule");
-pass(`cold-open: all ${coldOpen.length} surviving frames of scenes 1–2 are 1920×1080 fresh-pass images (8, 11 and 280–282 retired by the 30 September revision); the retake round of 1 October 2026 regenerated 3, 6, 17, 18 and 27 onto the rewritten text and released their pins`);
+pass(`cold-open: all ${coldOpen.length} surviving frames of scenes 1–2 are 1920×1080 fresh-pass images (8, 11 and 280–282 retired by the 30 September revision); the retake round of 1 October 2026 regenerated 3, 6, 17, 18 and 27 onto the rewritten text and released their pins, and the round of 4 October 2026 regenerated the five frames the 2 October rewrite pinned — 3, 6, 7, 9 and 10 — and released those too`);
 
 // The 30 September 2026 revision retired scene 1's coverage 280–282 and its shots 8 and 11 in
 // place; what remains of the cold open's first scene is its original run, minus the two retired
@@ -214,13 +214,29 @@ for (const n of [17, 18])
   assert(!rewritePending.has(`neonoire-shot-${String(n).padStart(2, "0")}`), `Scene 1's frame ${n} is released from its retake pin`);
 for (const n of [17, 18])
   assert(!project.frames.find(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`).notes.includes("RETAKE PENDING"), `Scene 1's frame ${n} no longer carries the pin note`);
-// The retired beats must be absent from the frames that replaced them, as recorded in the brief.
+// The retake round of 4 October 2026: the five frames the 2 October rewrite pinned (3, 6, 7, 9, 10) are
+// regenerated onto the restored walk and lane, installed over their own filenames, reviewed at full size
+// and released. Their caveats live in the board notes and the 4 October ledger; the frame flips to Ready
+// by the same cold-open bundle rule that released 3, 6, 17, 18 and 27 on 1 October 2026.
+for (const n of [3, 6, 7, 9, 10]) {
+  const id = `neonoire-shot-${String(n).padStart(2, "0")}`;
+  assert(!rewritePending.has(id), `Scene 1's frame ${n} is released from its 2 October pin`);
+  const frame = project.frames.find(f => f.id === id);
+  assert(!frame.notes.includes("RETAKE PENDING"), `Scene 1's frame ${n} no longer carries the pin note`);
+  assert(frame.notes.includes(`RETAKE LANDED 4 OCTOBER 2026`), `Scene 1's frame ${n} records the 4 October retake round`);
+  assert.equal(frame.status, "Ready", `Scene 1's frame ${n} is released, and the cold-open bundle rule gives it Ready`);
+}
+// The retired beats must be absent from the frames that replaced them, as recorded in the brief. The
+// 2 October rewrite restored the walk, so the "walks fast" prohibition written for the 1 October frames
+// was retired with the beat's return: shot 3's brief now ASKS for it, and only the two beats the rewrite
+// kept cut stay prohibited.
 const freshBrief = (await import("./neonoire/cold-open-fresh-look.mjs")).coldOpenFreshShots;
-for (const [n, mustNot] of [[3, "walks fast"], [17, "snags on the barbershop pole"], [18, "flashlight drifts"]]) {
+for (const [n, mustNot] of [[17, "snags on the barbershop pole"], [18, "flashlight drifts"]]) {
   const prompt = freshBrief.find(e => e.n === n).prompt;
   assert(!prompt.includes(mustNot), `Shot ${n}'s generation brief still asks for the retired beat: ${mustNot}`);
 }
-pass("scene 1 after the revision: sixteen frames, the four re-pinned retakes delivered and released on 1 October 2026, the letter coverage retired with the cut beats");
+assert(/walk/i.test(freshBrief.find(e => e.n === 3).prompt), "Shot 3's brief asks for the restored walk, not a woman standing still in the recess");
+pass("scene 1 after the revision: sixteen frames, the four 1 October retakes and the five 4 October retakes delivered and released, the letter coverage retired with the cut beats");
 assert(project.frames.find(f => f.id === "neonoire-shot-07").notes.includes("Retake 28 September 2026"), "Shot 7 still carries the letter-rewrite retake note the 30 September revision left standing");
 // Kanda alley layout pass, 29 September 2026 — the sedan blocks the alley mouth, the men walk in
 // and out on foot, and the six blocked frames are retaken to the fixed pedestrian layout.
@@ -1015,7 +1031,7 @@ for (const n of [193, 194]) {
   assert(!f.notes.includes("RETAKE PENDING"), `Shot ${n}: the pin note is gone with the pin`);
   assert(f.notes.includes("RETAKE LANDED 1 October 2026"), `Shot ${n} records the retake round in its note`);
 }
-assert(rewritePending.size === 14, "the standing queue is the nine frames left by the retake round plus the five the 2 October cold-open rewrite pinned (3, 6, 7, 9, 10)");
+assert(rewritePending.size === 9, "the standing queue is the nine frames the retake rounds have not reached: 113, 131, 132, 141–143, 160, 186 and 228 — the five scene-1 pins (3, 6, 7, 9, 10) were released on 4 October 2026");
 assert(officeLayoutLook.includes("ONE black rotary telephone"), "The office lock forbids the duplicated telephone");
 assert(project.frames.find(f => f.id === "neonoire-shot-166").notes.includes("room master for the whole film"), "Shot 166 is declared the room master");
 assert(project.frames.find(f => f.id === "neonoire-shot-87").notes.includes("no longer leads the room"), "Shot 87's study no longer leads the room");
