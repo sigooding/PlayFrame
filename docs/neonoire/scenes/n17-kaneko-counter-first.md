@@ -35,18 +35,36 @@ NOTE: Generated from shot 189. Kaneko stands at Jack's end of the counter here. 
 
 ---
 
-## Coverage — the relief pass (4 October 2026)
+## Coverage — the long-hold pass (4 October 2026)
 
-**Shot 360 gives the 46-second exchange of 189 the single on Kaneko the voiced animatic showed it needs** — her at the pot, the bowl set down. The lens plan keeps it 35mm, frontal to the counter.
+**Scene 17's 46 seconds were carried by one board (189), so the pass gave the counter three more frames: 358–360.** Generated from the counter masters `s17/187-you-got-old.jpg` and `s86/123-fifty-years.jpg` with `sheets/jack.jpg` and `sheets/kaneko.jpg` attached.
 
----
+358. MEDIUM — 50mm, static, eye level — the empty third stool.
+Jack sits on the fourth stool at the counter, hands resting on the damp wood, looking over at the empty third stool beside him; amber lamp light and noodle steam between them.
+SCRIPT: "Jack looks at the third stool, empty beside him, and then at the counter under his hands."
+CAST: Jack
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-358
+IMAGE: 358-the-empty-third-stool.jpg
+NOTE: Coverage, shot 358 — the long-hold pass, 4 October 2026. Generated from `s17/187-you-got-old.jpg` and `sheets/jack.jpg`. Jack on stool 4, staring at the empty stool 3; the wooden counter and rising steam carry from the scene master.
 
-360. MEDIUM — 35mm, static, eye level — the bowl.
-Kaneko behind the counter, tiny and sharp-eyed, her grey hair in its small bun, setting the steaming bowl of noodles down in front of Jack; of him only the charcoal shoulder and the top of his head at the frame's edge. One amber bulb, steam, the fluorescent tube unlit.
+359. MEDIUM — 50mm, static, eye level — eat, then go.
+Kaneko behind the counter sets down a steaming ceramic bowl of soba noodles in front of Jack; chopsticks resting beside the bowl, steam swirling in the amber light.
 SCRIPT: "Kaneko sets a bowl of noodles in front of Jack."
 CAST: Kaneko, Jack
 LIGHT: Practical night
 TIME: 8
+ID: neonoire-shot-359
+IMAGE: 359-eat-then-go.jpg
+NOTE: Coverage, shot 359. Generated from `s17/187-you-got-old.jpg`, `sheets/kaneko.jpg` and `s86/123-fifty-years.jpg`. Kaneko in her stained apron serving the bowl; steam rising into the warm bulb.
+
+360. INSERT — 50mm, static, high angle — far too much money.
+On the damp wooden counter beside the empty bowl, folded 1000-yen notes lie beneath Jack's white business card; amber light reflecting on the wood.
+SCRIPT: "He puts down more money than the bowl costs, far more, and a business card on top of it."
+CAST: Jack
+LIGHT: Practical night
+TIME: 6
 ID: neonoire-shot-360
-IMAGE: 360-the-bowl.jpg
-NOTE: Relief pass one, 4 October 2026 — the animatic's list names Kaneko at the pot for the 46-second "You got old" exchange; the bowl set down is the scene's action beat, the one the exchange ends on. The counter holds to `s17/187-you-got-old.jpg` — one amber bulb and steam, the fluorescent tube UNLIT, the six stools — and Kaneko holds to `s86/123-fifty-years.jpg` (grey hair in a small bun, faded indigo apron over the brown cardigan). Jack follows `sheets/jack.jpg` and stays a shoulder at the frame's edge, not a second face in the shot. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the one amber bulb, the steam, the unlit fluorescent tube, the stools and Kaneko's set-down all hold to the master; Jack stays a shoulder at the frame's edge. Unclosed caveat: the counter's wood reads a shade darker than the master's.
+IMAGE: 360-more-than-the-bowl-costs.jpg
+NOTE: Coverage, shot 360. Generated from `s17/188-something-moves.jpg` and `props/jack-investigations-card.jpg`. The overpayment left on the counter before Jack departs into the night.

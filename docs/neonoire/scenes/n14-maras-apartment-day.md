@@ -47,18 +47,36 @@ NOTE: Coverage, shot 270. The room and its grey daylight hold to s14/182-someone
 
 ---
 
-## Coverage — the relief pass (4 October 2026)
+## Coverage — the long-hold pass (4 October 2026)
 
-**Shot 359 gives the 42-second exchange of 270 the single the voiced animatic showed it needs** — Vera on the wall of drawings, not at him. The scene's lens plan keeps it 35mm for the room.
+**Scene 14's 42 seconds were carried by one board (270), so the pass gave the studio three more frames: 361–363.** Generated from the room master `s14/182-someone-who-meant-to-come-back.jpg` and `s14/183-the-sketchbook.jpg` with `sheets/vera.jpg`, `sheets/jack.jpg` and `s20/192-the-red-bird-clip.jpg` attached.
 
----
-
-359. MEDIUM — 35mm, static, eye level — the wall of drawings.
-Vera in her charcoal coat, still on, at three-quarters to the camera in the grey daylight, looking at the wall of Mara's drawings — trains, rooftops, laundry lines — and not at him. He is off frame, out of the shot entirely.
+361. MEDIUM — 50mm, static, eye level — the wall of drawings.
+Vera in her olive trench coat stands with hands in her pockets, turned away from Jack, staring up at the wall of taped sketches of Tokyo rooftops and train lines; grey window daylight washing over her profile.
 SCRIPT: "She looks at the wall of drawings, not at him."
 CAST: Vera Voss
 LIGHT: Overcast soft
+TIME: 8
+ID: neonoire-shot-361
+IMAGE: 361-the-wall-of-drawings.jpg
+NOTE: Coverage, shot 361 — the long-hold pass, 4 October 2026. Generated from `s14/182-someone-who-meant-to-come-back.jpg` and `sheets/vera.jpg`. Vera looking at Mara's drawings on the wall while speaking about their father.
+
+362. INSERT — 50mm, static, high angle — every stroke of the kanji.
+Jack's hands turn a page in the thick worn sketchbook on the desk, revealing the careful ink drawing of the noodle counter's hand-painted sign, with every stroke of the kanji rendered cleanly.
+SCRIPT: "Jack turns a page. The sign, in careful ink. Every stroke of the kanji correct."
+CAST: Jack
+LIGHT: Overcast soft
+TIME: 8
+ID: neonoire-shot-362
+IMAGE: 362-every-stroke-correct.jpg
+NOTE: Coverage, shot 362. Generated from `s14/183-the-sketchbook.jpg` and `props/kaneko-sign-board.jpg`. Jack turns the sketchbook page; the sign drawing is the key clue linking the sisters to Kaneko's counter.
+
+363. INSERT — 50mm, static, high angle — the red bird clip on the desk.
+Vera's hand sets the red enamel bird hair clip down directly on the open page of the sketchbook beside the drawings; the red enamel bright against the muted paper in the window daylight.
+SCRIPT: "Vera takes the hair clip out of her coat pocket and sets it on the sketchbook."
+CAST: Vera Voss
+LIGHT: Overcast soft
 TIME: 6
-ID: neonoire-shot-359
-IMAGE: 359-the-wall-of-drawings.jpg
-NOTE: Relief pass one, 4 October 2026 — the voiced animatic's coverage list (docs/neonoire/shots-needed.md) names a single for the 42-second "Packed and zipped" exchange that plays on one board (270). The room holds to `s14/182-someone-who-meant-to-come-back.jpg`: same grey daylight, the sketches of trains, rooftops and laundry lines on the wall, clothes on every surface. Vera follows `sheets/vera.jpg` in her ORIGINAL LOOK, coat still on — she has not taken it off all scene. Jack stays out of frame: the not-looking-at-him is the shot. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the wall of drawings, the clothes on every surface and Vera's held-back profile all hold to the scene master; the not-looking is the shot. Unclosed caveat: an open dark suitcase sits at the lower right where 270's beat has the case zipped under the futon — crop it out or accept it on the cut; it reads as the scene's own case, not a second one.
+ID: neonoire-shot-363
+IMAGE: 363-the-clip-on-the-sketchbook.jpg
+NOTE: Coverage, shot 363. Generated from `s14/183-the-sketchbook.jpg`, `s20/192-the-red-bird-clip.jpg` and `sheets/vera.jpg`. The red bird clip placed on the sketchbook, handing the token over to Jack.

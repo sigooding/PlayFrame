@@ -61,7 +61,7 @@ old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 339);
+assert.equal(patch.frames.length, 347);
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);
@@ -147,6 +147,25 @@ const editedCoverage = structuredClone(beforeCoverage);
 editedCoverage.script += "\nWriter's extra scene.\n";
 assert(!bundledFrameUpdates(editedCoverage, project)?.frames?.some(frame => coverageIds.includes(frame.id)), "an edited script gets none of the long-hold frames");
 pass("a saved workspace on a default text receives the long-hold coverage 344–353 whole and once; a deleted frame is not reinstated and an edited script gets none");
+
+// 4 October 2026: the second long-hold pass added ten numbered coverage frames (354–363, scenes 29, 17 and 14)
+const coverage2Ids = Array.from({ length: 10 }, (_, i) => `neonoire-shot-${354 + i}`);
+assert.deepEqual(project.frames.filter(frame => coverage2Ids.includes(frame.id)).map(frame => frame.id).sort(), [...coverage2Ids].sort(), "the second long-hold frames are 354–363");
+assert.deepEqual(project.frames.filter(frame => coverage2Ids.includes(frame.id)).map(frame => frame.shotNumber), [361, 362, 363, 358, 359, 360, 354, 355, 356, 357], "the bundle plays them at their quoted beats in scene order (14, 17, 29)");
+const beforeCoverage2 = structuredClone(project);
+beforeCoverage2.frames = project.frames.filter(frame => !coverage2Ids.includes(frame.id));
+const coveragePatch2 = bundledFrameUpdates(beforeCoverage2, project);
+assert.deepEqual(coveragePatch2.frames.map(frame => frame.id), project.frames.map(frame => frame.id), "the ten second long-hold frames arrive at their bundle positions");
+assert.equal(coveragePatch2.scenes, undefined, "no scene changes with them — this pass adds frames, not scenes");
+assert.equal(bundledFrameUpdates({ ...beforeCoverage2, ...coveragePatch2 }, project), null, "and the arrival is idempotent");
+const halfHeld2 = structuredClone(project);
+halfHeld2.frames = halfHeld2.frames.filter(frame => frame.id !== "neonoire-shot-358");
+const heldPatch2 = bundledFrameUpdates(halfHeld2, project);
+assert(!heldPatch2?.frames?.some(frame => frame.id === "neonoire-shot-358"), "a long-hold frame the workspace no longer holds is not reinstated: it had them, and it deleted one");
+const editedCoverage2 = structuredClone(beforeCoverage2);
+editedCoverage2.script += "\nWriter's extra scene.\n";
+assert(!bundledFrameUpdates(editedCoverage2, project)?.frames?.some(frame => coverage2Ids.includes(frame.id)), "an edited script gets none of the long-hold frames");
+pass("a saved workspace on a default text receives the long-hold coverage 354–363 whole and once; a deleted frame is not reinstated and an edited script gets none");
 
 
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));

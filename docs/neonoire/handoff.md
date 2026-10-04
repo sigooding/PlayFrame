@@ -1,61 +1,90 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (fifth pass): the relief pass, one — seven new coverage frames, 354–360, reconciled with the long-hold pass
+## Current — 4 October 2026 (sixth pass): the relief pass, one — five new coverage frames, 364–368, reconciled with two same-day passes
 
-**Ten generations, seven NEW numbered frames, three dropped in reconciliation, nothing renumbered and nothing
-written over: 332 → 339 keyframes, 0 placeholders, next free number 361.** This round took the two unboarded
-script beats the retake round recorded — **scene 59's INTERCUT to Mrs. Sakai's empty house** (the kotatsu, the
-altar, the teacup on its side, the phone ringing) and **scene 94's door closing** — plus one new frame each on
-[shots-needed.md](shots-needed.md)'s next rows in order: **scene 14's 270 exchange** (Vera's wall of drawings)
-and **scene 17's 189 exchange** (Kaneko's bowl). Ledger:
+**Ten generations, five NEW numbered frames, five dropped in reconciliation, nothing renumbered and nothing
+written over: 342 → 347 keyframes, 0 placeholders, next free number 369.** This round generated against the
+run's free numbers while two parallel sessions' passes landed on `main` ahead of it — the long-hold pass
+(344–353, scenes 20/22/23) and the second long-hold pass (354–363, scenes 29/17/14) — and each took beats this
+pass had generated. The five remaining frames are the **two unboarded script beats** the retake round of 4
+October recorded and neither long-hold pass took: **scene 59's INTERCUT to Mrs. Sakai's empty house** (the
+kotatsu, the altar, the teacup on its side, the phone ringing) and **scene 94's door closing**. Ledger:
 [animatic-relief-1-2026-10-04](passes/animatic-relief-1-2026-10-04.md).
 
-**Reconciliation:** this session generated against the run's free numbers, which were 344–353 when it started —
-the **long-hold pass below merged to `main` in the same day and took them** for scenes 20, 22 and 23. `main` owns
-344–353 now; the numbers are production identity, so this pass's seven unique frames joined the run at **354–360**.
-Three of this pass's studies duplicate beats the long-hold frames carry (its 346 is the same "Silence. The bulb
-hums." line as this pass's dropped bulb study, its 344 the same "making himself smaller" line as the dropped sack
-study, and its 348/349 already board scene 22's singles, making a second Vera single redundant); those three raws
-are kept in `artifacts/neonoire/relief-2026-10-04/` and the decision is recorded in the ledger.
+**Reconciliation:** five studies were dropped as duplicates of long-hold beats — the s20 bulb (their 346, same
+quoted line) and s20 sack (their 344, same quoted line), the s22 Vera single (their 348/349 already board the
+scene's singles), the s17 bowl (their 359, same quoted line) and the s14 wall (their 361, same quoted line).
+Their raws are kept in `artifacts/neonoire/relief-2026-10-04/`; the full decision table is in the ledger.
 
-**Installed:** **354** the empty house's room wide — kotatsu, television on with the sound off (a muted programme,
-never static); **355** the altar corner, the framed man held to `s1/07-old-man.jpg`; **356** the teacup on its
-side, the drying ring; **357** the desk phone ringing in the empty room; **358** Ishida getting in, the rear door
-on the rain, the station's lit window small behind — the hinge the retake round left with no frame of its own;
-**359** Vera on the wall of drawings, not at him; **360** Kaneko's bowl set down, Jack a shoulder at the frame's
-edge.
+**Installed:** **364** the empty house's room wide — kotatsu, television on with the sound off (a muted
+programme, never static); **365** the altar corner, the framed man held to `s1/07-old-man.jpg`; **366** the
+teacup on its side, the drying ring; **367** the desk phone ringing in the empty room; **368** Ishida getting
+in, the rear door on the rain, the station's lit window small behind — the hinge the retake round left with no
+frame of its own.
 
 ### Where they play (the scene's logic, not board order)
 
-**scene 59** — **354, 355, 356, 357**, 228 (the INTERCUT plays the empty house in the page's order, then Vera
-glowing); **scene 94** — 141, 142, 143, **358**; **scene 14** — 184, 270, **359**, 185; **scene 17** — 189,
-**360**, 190.
+**scene 59** — **364, 365, 366, 367**, 228 (the INTERCUT plays the empty house in the page's order, then Vera
+glowing); **scene 94** — 141, 142, 143, **368**.
 
 ### Honest caveats (also in the board notes)
 
-**354's altar photograph reads a different face** (younger, smiling) than the locked `s1/07-old-man.jpg` man 355
-holds — the face-check retake hit the session's ten-generation limit and did not fire; **354 is the head of the
-next pass's queue**. **355's photograph sits on a low stand** beside the altar shelf. **356's tatami reads
-coarser** and its window is bare glass (accepted: a different corner of the same room). **357** carries a dark
-water stain and a push-button rather than rotary phone (the no-single-year rule covers it). **358's door reads
-fully open** rather than mid-close and the background window is not legible. **359's lower right holds an open
-suitcase** where 270's beat has it zipped under the futon — crop it out or accept it. **360's counter wood reads
-a shade darker.** The seven were reviewed at full size before install; production approval is the director's, as
-ever.
+**364's altar photograph reads a different face** (younger, smiling) than the locked `s1/07-old-man.jpg` man
+365 holds — the face-check retake hit the session's ten-generation limit and did not fire; **364 is the head of
+the next pass's queue**. **365's photograph sits on a low stand** beside the altar shelf. **366's tatami reads
+coarser** and its window is bare glass (accepted: a different corner of the same room). **367** carries a dark
+water stain and a push-button rather than rotary phone (the no-single-year rule covers it). **368's door reads
+fully open** rather than mid-close and the background window is not legible. The five were reviewed at full size
+before install; production approval is the director's, as ever.
 
 ### Mechanics
 
-`docs/neonoire/scenes/n59-glowing-in-the-rain.md`, `n94-black-sedan.md`, `n14-maras-apartment-day.md` and
-`n17-kaneko-counter-first.md` carry the seven boards under *Coverage — the relief pass (4 October 2026)*.
-`scripts/neonoire/animatic-relief.mjs` is the delivered boundary (`reliefSlotsDelivered` 354–360,
-`reliefSlotsQueued` empty), read by `build-project.mjs` (which now has separate notes branches for 354+ and
-344+) and `verify-neonoire.mjs` (`EXPECTED_SHOTS` **339**, the coverage run 241–360, the long-hold block scoped
-to 344–353, the relief block on 354–360). `verify-shot-order.mjs` — scenes 59/94/14/17's in-scene order and
-`nextShotNumber` **361**; `verify-shot-order-browser.mjs` — allocation test moved to 361/362;
-`verify-revision-restoration.mjs` — patch length 339. `library.json` now carries 689 images (339 shots) — it was
-rebuilt by hand, as always (the tool's git-history walk is shallow-clone blind). `check:assets` 946 references.
-**Quartermaster:** no `node_modules` incident this session. **This session's branch is
-`arena/01a1076a-playframe`, merged to `main` at the end of the session.**
+`docs/neonoire/scenes/n59-glowing-in-the-rain.md` and `n94-black-sedan.md` carry the five boards under
+*Coverage — the relief pass (4 October 2026)*. `scripts/neonoire/animatic-relief.mjs` is the delivered boundary
+(`reliefSlotsDelivered` 364–368, `reliefSlotsQueued` empty), read by `build-project.mjs` (which now has separate
+notes branches for 364+, 354+ and 344+) and `verify-neonoire.mjs` (`EXPECTED_SHOTS` **347**, the coverage run
+241–368, the long-hold block scoped to 344–363, the relief block on 364–368; the scene-group `revisionBoards`
+filter stays `>= 308`, which keeps every 4 October coverage frame out of the older generation blocks'
+scene-group sets). `verify-shot-order.mjs` — scenes 59/94's in-scene order and `nextShotNumber` **369**;
+`verify-shot-order-browser.mjs` — allocation test moved to 369/370; `verify-revision-restoration.mjs` — patch
+length 347. `library.json` now carries 697 images (347 shots) — rebuilt by hand, as always (the tool's
+git-history walk is shallow-clone blind). **Quartermaster:** no `node_modules` incident this session.
+**This session's branch is `arena/01a1076a-playframe`, merged to `main` at the end of the session.**
+
+## Previous — 4 October 2026 (fifth pass): the second long-hold pass — ten new frames, 354–363, for scenes 29, 17 and 14
+
+**Ten generations, ten NEW numbered frames, nothing renumbered and nothing written over: 332 → 342 keyframes, 0
+placeholders, next free number 364.** The round took the next three holds from [shots-needed.md](shots-needed.md) —
+the coverage note written after the first voiced animatic — where a single board held an exchange: **scene 29, 53 seconds
+on shot 273; scene 17, 46 seconds on 189; scene 14, 42 seconds on 270.** Ledger: [long-hold-2-2026-10-04](passes/long-hold-2-2026-10-04.md);
+sheet `reviews/long-hold-354-363.jpg` (seventeen frames of the three rooms, the ten new ones among their masters).
+
+**Installed:**
+- **354** (scene 29) Mrs. Sakai at the kotatsu looking toward the gilded altar and her late husband's smiling photograph — *"She studies him. Then she looks at the photograph on the altar."*;
+- **355** (scene 29) Jack across the kotatsu, leaning forward quietly asking about rent — *"Did he ever pay rent on something? Somewhere that wasn't his home?"*;
+- **356** (scene 29) Jack's hands unfolding the topmost yellowed carbon receipt to reveal the faded purple stamp and handwritten No. 114 — *"Jack unfolds it. A rubber stamp, faded. Handwritten: No. 114. Paid in full."*;
+- **357** (scene 29) Mrs. Sakai watching Jack across the kotatsu, grief and relief in soft window light — *"Whatever it is, it was heavier than me. He carried it longer."*;
+- **358** (scene 17) Jack on stool 4 staring at the vacant stool 3 beside him in the rising steam — *"Jack looks at the third stool, empty beside him, and then at the counter under his hands."*;
+- **359** (scene 17) Kaneko in her apron setting a hot bowl of noodles in front of Jack — *"Kaneko sets a bowl of noodles in front of Jack."*;
+- **360** (scene 17) On the dark counter beside the empty bowl, folded yen notes under Jack's white business card — *"He puts down more money than the bowl costs, far more, and a business card on top of it."*;
+- **361** (scene 14) Vera in her olive trench coat staring at the dense wall of drawings — *"She looks at the wall of drawings, not at him."*;
+- **362** (scene 14) Jack's hand turning a page in the sketchbook to the careful ink drawing of Kaneko's sign — *"Jack turns a page. The sign, in careful ink. Every stroke of the kanji correct."*;
+- **363** (scene 14) Vera's hand placing the bright red enamel bird hair clip onto the open sketchbook page — *"Vera takes the hair clip out of her coat pocket and sets it on the sketchbook."*.
+
+### The decisions this round made (permanent unless the director overrides)
+
+1. **New frames maintain lens consistency.** 50mm and 85mm singles and high-angle inserts break up the long static wide angles.
+2. **Nothing was replaced, so nothing was archived.** Every one of the ten is a new asset path; the archive keeps its 276 versioned studies.
+3. **Where they play:** in story order:
+   - **Scene 29:** 354, 206, 355, 273, 356, 357;
+   - **Scene 17:** 189, 358, 359, 360, 190;
+   - **Scene 14:** 184, 270, 361, 185, 362, 363.
+
+### Mechanics
+
+`docs/neonoire/scenes/n29-mrs-sakai-house-day.md`, `n17-kaneko-counter-first.md` and `n14-maras-apartment-day.md` carry the boards.
+`verify:neonoire` (`EXPECTED_SHOTS` 342, coverage run 241–363), `verify-shot-order` (nextShotNumber 364), `verify-shot-order-browser` (364/365),
+`verify-revision-restoration` (patch length 342, second coverage batch test). All checks pass cleanly.
 
 ## Previous — 4 October 2026 (fourth pass): the long-hold pass — ten new frames, 344–353, for the three scenes one board was carrying
 

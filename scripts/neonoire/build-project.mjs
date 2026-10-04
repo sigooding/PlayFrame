@@ -261,8 +261,10 @@ const frames = shots.map(shot => {
     notes: [
       !absent && directorApprovedMainIds.has(shot.id) ? directorMainImageNote : absent
         ? `KEYFRAME MISSING — ${path} is not in public/images/neonoire/${shot.scene.key}, so this card holds slot ${shot.n} of ${totalShots} until pass ${passOf(shot.n)} is generated.`
+          : shot.n >= 364
+        ? `Image: AI-generated relief-pass frame (4 October 2026), one of the ${reliefSlots.length} new frames the voiced-animatic coverage list opened (364–368) — boards ${reliefSlotsDelivered.join(", ")} installed. ${reliefSlotsLook} Production approval pending.`
           : shot.n >= 354
-        ? `Image: AI-generated relief-pass frame (4 October 2026), one of the ${reliefSlots.length} new frames the voiced-animatic coverage list opened (354–360) — boards ${reliefSlotsDelivered.join(", ")} installed. ${reliefSlotsLook} Production approval pending.`
+        ? `Image: AI-generated coverage frame (4 October 2026) — the long-hold pass, shot ${shot.n}. The second long-hold pass's ten new keys for its three holds (scene 29's 53 seconds, scene 17's 46, scene 14's 42), generated from each scene's own delivered masters with the cast sheets attached and installed at 1920×1080; nothing renumbered and no frame on disk written over. The caveats are in the board notes. Production approval pending.`
           : shot.n >= 344
         ? `Image: AI-generated coverage frame (4 October 2026) — the long-hold pass, shot ${shot.n}. Ten new keys for the three scenes the voiced animatic had to carry on one board each (scene 23's 95 seconds, scene 22's 64, scene 20's 55), generated from each scene's own delivered masters with the cast sheets attached and installed at 1920×1080; nothing renumbered and no frame on disk written over. The caveats are in the board notes. Production approval pending.`
           : shot.n >= 321

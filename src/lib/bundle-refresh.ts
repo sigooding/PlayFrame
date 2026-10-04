@@ -145,27 +145,29 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
       have.add(id);
     }
   }
-  // 4 October 2026: the long-hold pass added ten numbered coverage frames (344–353, scenes 20, 22 and
-  // 23) and changed no word of the script. A saved workspace still on a known default receives them
-  // whole, at their bundle positions — right after the nearest earlier bundle frame it already has.
-  // The arrival is all-or-nothing on purpose: a workspace that holds any of the ten has had them, so a
-  // frame the director deleted is not reinstated, and one whose script was edited gets none of them.
-  const coverageIds = coverageSync.newFrameIds as string[];
+  // 4 October 2026: the long-hold passes added numbered coverage frames (344–353 in scenes 20, 22 and
+  // 23; and 354–363 in scenes 29, 17 and 14) and changed no word of the script. A saved workspace still on a
+  // known default receives them at their bundle positions — right after the nearest earlier bundle frame it
+  // already has. The arrival is per-batch all-or-nothing on purpose: a workspace that holds any of a batch has
+  // had them, so a frame the director deleted is not reinstated, and one whose script was edited gets none of them.
+  const coverageBatches = ((coverageSync as { batches?: string[][] }).batches || [coverageSync.newFrameIds]) as string[][];
   const coverageCurrent = existing.script === bundle.script
     || scene6Sync.priorScriptHashes.includes(digest(existing.script))
     || (coverageSync.priorScriptHashes as string[]).includes(digest(existing.script));
-  if (coverageCurrent && coverageIds.length && coverageIds.every(id => !existing.frames.some(frame => frame.id === id))) {
-    const have = new Set(frames.map(frame => frame.id));
-    const order = bundle.frames.map(frame => frame.id);
-    for (const id of coverageIds.filter(id => !have.has(id))) {
-      const arrival = bundled.get(id);
-      if (!arrival) continue;
-      if (!scenesNow.some(scene => scene.id === arrival.sceneId)) continue;
-      let at = -1;
-      for (let i = order.indexOf(id) - 1; i >= 0 && at < 0; i--) at = frames.findIndex(frame => frame.id === order[i]);
-      if (at < 0) at = frames.map(frame => frame.sceneId).lastIndexOf(arrival.sceneId);
-      frames.splice(at < 0 ? frames.length : at + 1, 0, arrival);
-      have.add(id);
+  for (const coverageIds of coverageBatches) {
+    if (coverageCurrent && coverageIds.length && coverageIds.every(id => !existing.frames.some(frame => frame.id === id))) {
+      const have = new Set(frames.map(frame => frame.id));
+      const order = bundle.frames.map(frame => frame.id);
+      for (const id of coverageIds.filter(id => !have.has(id))) {
+        const arrival = bundled.get(id);
+        if (!arrival) continue;
+        if (!scenesNow.some(scene => scene.id === arrival.sceneId)) continue;
+        let at = -1;
+        for (let i = order.indexOf(id) - 1; i >= 0 && at < 0; i--) at = frames.findIndex(frame => frame.id === order[i]);
+        if (at < 0) at = frames.map(frame => frame.sceneId).lastIndexOf(arrival.sceneId);
+        frames.splice(at < 0 ? frames.length : at + 1, 0, arrival);
+        have.add(id);
+      }
     }
   }
   if (wasBoardingOrder) {
