@@ -1,5 +1,15 @@
 # PlayFrame
 
+## Standing rule for every agent: never overwrite an image
+
+The storyboard card's `⋯` chooser and **Browse all images** only work because every earlier picture still exists. So:
+
+1. **Never overwrite or delete a file under `public/images/neonoire/`.** A new picture gets a **new filename** (the next free shot number, its own path). If a retake must replace a shot's image in place, first copy the old file to `public/images/neonoire/archive/<scene folder>/<name>--v<N>.<ext>` (next free N) and commit that **before** the new image goes over it.
+2. **`public/images/neonoire/archive/` is append-only.** Never edit, rename or delete anything in it.
+3. **Never drop entries from `public/images/neonoire/library.json`.** If you regenerate it (`npm run library:neonoire`) in a shallow clone, restore what it cannot rediscover from `git show origin/main:public/images/neonoire/library.json`.
+4. **Before every push and every handoff run `npm run verify:images`.** It compares your tree with `origin/main` and fails on an overwritten or deleted image without an archived copy, a touched archive file, or a shrunken library. CI runs it on every PR. Never "fix" it by editing the script, deleting `origin/main` history, or force-pushing.
+5. Do not run image-optimising, renaming or format-conversion tools over the image folders.
+
 ## Latest session — 4 October 2026 (seventh pass): shots 369–376 and the restored image chooser
 
 **Eight new scene-ordered coverage frames, 369–376, 355/355 images, zero placeholders, next free number 377.** Scene 25 gets the floor-level drawing and the corrected 114 tag; scene 20 the Mara single and the red-bird clip on the closed sketchbook; scene 27A Okada's arrival and Vera's face in the switched-off CRT; scene 11 Jack setting down the receiver; scene 36 Jack's side of the payphone call. Shot 375 uses `375-the-line-ends-retake-raw.jpg`, the desk-only corrected image; the first draft with the wrong door lettering and static CRT is not installed. No existing frame image was overwritten, and shot 258 remains unchanged. Read `docs/neonoire/passes/coverage-369-376-2026-10-04.md` and the top/current section of `docs/neonoire/handoff.md`.
