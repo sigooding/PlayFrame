@@ -23,6 +23,10 @@ A frame can carry `audio`: a list of `{ id, character, text, src, offset, durati
 2. `node scripts/neonoire/voice-ingest.mjs --frame neonoire-shot-156 --character JACK --text "…" --file <mp3 or https URL> --offset 0.4 --model eleven_v4`
 3. `npm run build:neonoire && npm run verify:neonoire` (the builder stretches a frame that is too short for its line).
 
+## Recording a whole scene from a script
+
+A scene's lines can be planned in one JSON (`elevenlabs-plan-14A.json`: frame, speaker, tagged prompt, gap) with a human-readable script beside it (`elevenlabs-script-14A.md`, which also lists the house formatting rules). Generate each row, save the takes as `L01.mp3` … in one folder, then `node scripts/neonoire/voice-batch.mjs --plan <plan.json> --dir <folder> [--dry]` ingests them all and lays the gaps out.
+
 ## Re-recording a line
 
 `node scripts/neonoire/voice-ingest.mjs --replace 1 --id s74-vera-why-didnt-you --frame … --character VERA --text "[crying] …" --file <url> --gen flow/session/generation`. The new take takes over the same file path and id (so nothing that points at it breaks); the old take is copied to `docs/neonoire/voice/archive/` and listed in the line's `history`. Every line records its ElevenLabs `generation` (flow / session / id) so any take can be traced back.

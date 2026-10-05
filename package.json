@@ -19,6 +19,7 @@
     "passes:neonoire": "node scripts/neonoire/pass-prompts.mjs",
     "verify:neonoire": "node scripts/verify-neonoire.mjs",
     "library:neonoire": "node scripts/neonoire/image-library.mjs",
+    "verify:images": "node scripts/verify-image-preservation.mjs",
     "review:neonoire": "node scripts/neonoire/review-sheet.mjs",
     "verify:shot-order": "node scripts/verify-shot-order.mjs",
     "verify:shot-order:browser": "node scripts/verify-shot-order-browser.mjs",
