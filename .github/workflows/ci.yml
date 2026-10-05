@@ -34,6 +34,11 @@ jobs:
       - name: Asset references exist on disk
         run: npm run check:assets
 
+      - name: Image history preserved (nothing overwritten without an archived copy)
+        run: |
+          git fetch --depth=1 origin main
+          IMAGE_GUARD_BASE=FETCH_HEAD npm run verify:images
+
       - name: Feature verification (prompt models, 30 styles, undo/redo)
         run: npm run verify:features
 
