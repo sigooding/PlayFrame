@@ -233,6 +233,16 @@ TIME: 9
 IMAGE: 333-the-white-light.jpg
 NOTE: LANDED 3 OCTOBER 2026 — generated on SAKAI's and the MASKED MEN's sheets plus the street master, reviewed at full size and installed over its own filename. Two men in black, knit caps and black nose-and-mouth masks walk in unhurried in single file as silhouettes against the glare, no faces readable; the old man — his raincoat now reading LIGHT BEIGE rather than the sheets' translucent cream — stands stock still between them and the dark recess on the left, his shadow stretching down the lane; inside the recess, barely visible past the crates, a crouched low shape. Unclosed caveats: the masks are higher on the head than the sheet's nose-and-mouth line; a second light column and a vehicle shape sit deep in the lane between the walkers (a far car must not read as a second sedan); a small illuminated EXIT バー sign hangs where the barber's crimson-white-blue pole should be the only sign near that end; and nothing in the frame shows the scooter the note names.
 
+377. ESTABLISHING — 24mm, static, eye level — the Hive, remembered.
+Night, cold steady rain. The nine-storey block of balconies, laundry and wires wedged between dark glass towers, the railway viaduct curling at its shoulder, a hundred small windows lit amber and sick fluorescent green. Nobody in frame, no readable text. Over it, Kaneko's five narration takes in English.
+SCRIPT: "Night. Rain. A nine-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green."
+CAST: —
+LIGHT: Practical night
+TIME: 20
+ID: neonoire-shot-377
+IMAGE: 377-the-hive-remembered.jpg
+NOTE: PROLOGUE, 5 October 2026 (director: "both, and in Kaneko's voice"). A scripted .INSERT at the head of scene 1 carrying KANEKO (V.O.), five takes in English (narration to the audience, unlike her subtitled Japanese in scenes 17 and 20 — a director's call to re-record in Japanese). The frame is a text-to-image draft (no Hive night exterior existed to reuse); it is the film's only Hive exterior with no figure in it. The long hold on one board is the known weak point: a long-hold coverage pass wants slow tracks along the lit windows (flowered wallpaper, a calendar, a mirror) to give scene 99A's "tracked along the lit windows" its antecedent. Production approval pending.
+
 ## Passes
 
 | pass | shots | frames |

@@ -7371,6 +7371,71 @@
         "id": ""
       },
       "status": "take"
+    },
+    {
+      "id": "s1-hive1-kaneko",
+      "frameId": "neonoire-shot-377",
+      "character": "KANEKO",
+      "text": "This is how I remember it.",
+      "prompt": "[gently] This is how I remember it.",
+      "file": "/audio/neonoire/s1/377-kaneko-gently-this-is-how-i-remember.mp3",
+      "offset": 1,
+      "duration": 2.19,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "status": "take"
+    },
+    {
+      "id": "s1-hive2-kaneko",
+      "frameId": "neonoire-shot-377",
+      "character": "KANEKO",
+      "text": "After the war they raised a block beside the railway, to house the factories. The factories closed. We stayed.",
+      "prompt": "[slowly] After the war they raised a block beside the railway, to house the factories. [pause] The factories closed. [pause] We stayed.",
+      "file": "/audio/neonoire/s1/377-kaneko-slowly-after-the-war-they-raised.mp3",
+      "offset": 4.69,
+      "duration": 10.19,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "status": "take"
+    },
+    {
+      "id": "s1-hive3-kaneko",
+      "frameId": "neonoire-shot-377",
+      "character": "KANEKO",
+      "text": "We built upward. A room for a daughter. A shop for a brother. A stair, a pipe, a balcony bolted onto a balcony. Sixty years, until nobody could say where the factory ended and we began.",
+      "prompt": "[gently] We built upward. A room for a daughter. A shop for a brother. A stair, a pipe, a balcony bolted onto a balcony. [short pause] Sixty years, until nobody could say where the factory ended and we began.",
+      "file": "/audio/neonoire/s1/377-kaneko-gently-we-built-upward-a-room.mp3",
+      "offset": 16.38,
+      "duration": 16.12,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "status": "take"
+    },
+    {
+      "id": "s1-hive4-kaneko",
+      "frameId": "neonoire-shot-377",
+      "character": "KANEKO",
+      "text": "The city grew up around us, and forgot we were here. That was all right. We were busy.",
+      "prompt": "[evenly] The city grew up around us, and forgot we were here. [short pause] That was all right. We were busy.",
+      "file": "/audio/neonoire/s1/377-kaneko-evenly-the-city-grew-up-around.mp3",
+      "offset": 34,
+      "duration": 6.03,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "status": "take"
+    },
+    {
+      "id": "s1-hive5-kaneko",
+      "frameId": "neonoire-shot-377",
+      "character": "KANEKO",
+      "text": "Now the land is worth more than we are. Everything is going. We are just slower.",
+      "prompt": "[quietly] Now the land is worth more than we are. [pause] Everything is going. We are just slower.",
+      "file": "/audio/neonoire/s1/377-kaneko-quietly-now-the-land-is-worth.mp3",
+      "offset": 41.83,
+      "duration": 6.61,
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "model": "eleven_v4",
+      "status": "take"
     }
   ]
 }

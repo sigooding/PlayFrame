@@ -1,0 +1,11 @@
+{
+  "scene": "1",
+  "model": "eleven_v4",
+  "lines": [
+    {"key":"hive1","frame":"neonoire-shot-377","who":"KANEKO","prompt":"[gently] This is how I remember it.","text":"This is how I remember it.","gap":1.0},
+    {"key":"hive2","frame":"neonoire-shot-377","who":"KANEKO","prompt":"[slowly] After the war they raised a block beside the railway, to house the factories. [pause] The factories closed. [pause] We stayed.","text":"After the war they raised a block beside the railway, to house the factories. The factories closed. We stayed.","gap":1.5},
+    {"key":"hive3","frame":"neonoire-shot-377","who":"KANEKO","prompt":"[gently] We built upward. A room for a daughter. A shop for a brother. A stair, a pipe, a balcony bolted onto a balcony. [short pause] Sixty years, until nobody could say where the factory ended and we began.","text":"We built upward. A room for a daughter. A shop for a brother. A stair, a pipe, a balcony bolted onto a balcony. Sixty years, until nobody could say where the factory ended and we began.","gap":1.5},
+    {"key":"hive4","frame":"neonoire-shot-377","who":"KANEKO","prompt":"[evenly] The city grew up around us, and forgot we were here. [short pause] That was all right. We were busy.","text":"The city grew up around us, and forgot we were here. That was all right. We were busy.","gap":1.5},
+    {"key":"hive5","frame":"neonoire-shot-377","who":"KANEKO","prompt":"[quietly] Now the land is worth more than we are. [pause] Everything is going. We are just slower.","text":"Now the land is worth more than we are. Everything is going. We are just slower.","gap":1.8}
+  ]
+}
