@@ -164,6 +164,10 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
         if (!scenesNow.some(scene => scene.id === arrival.sceneId)) continue;
         let at = -1;
         for (let i = order.indexOf(id) - 1; i >= 0 && at < 0; i--) at = frames.findIndex(frame => frame.id === order[i]);
+        // A frame that opens its scene in the bundle (the prologue, 377) goes before the scene's first saved frame.
+        const opensScene = at < 0 && !order.slice(0, order.indexOf(id)).some(prior => bundled.get(prior)?.sceneId === arrival.sceneId);
+        const sceneStart = opensScene ? frames.findIndex(frame => frame.sceneId === arrival.sceneId) : -1;
+        if (sceneStart >= 0) { frames.splice(sceneStart, 0, arrival); have.add(id); continue; }
         if (at < 0) at = frames.map(frame => frame.sceneId).lastIndexOf(arrival.sceneId);
         frames.splice(at < 0 ? frames.length : at + 1, 0, arrival);
         have.add(id);

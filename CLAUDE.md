@@ -10,7 +10,11 @@ The storyboard card's `⋯` chooser and **Browse all images** only work because 
 4. **Before every push and every handoff run `npm run verify:images`.** It compares your tree with `origin/main` and fails on an overwritten or deleted image without an archived copy, a touched archive file, or a shrunken library. CI runs it on every PR. Never "fix" it by editing the script, deleting `origin/main` history, or force-pushing.
 5. Do not run image-optimising, renaming or format-conversion tools over the image folders.
 
-## Latest session — 4 October 2026 (seventh pass): shots 369–376 and the restored image chooser
+## Latest session — 5 October 2026: the prologue, shot 377
+
+**Scene 1 now opens on `.INSERT - THE HIVE, REMEMBERED`: five `KANEKO (V.O.)` paragraphs (English narration) over new shot 377 (`s1/377-the-hive-remembered.jpg`, a new file, nothing overwritten). 356/356 images, next free number 378.** Read the bible's Part 9 item 18 and the top of `docs/neonoire/handoff.md`. A pre-prologue script hash was appended by hand to `neonoire-scene6-sync.json` (never re-run `sync-scene6.mjs`).
+
+## Previous session — 4 October 2026 (seventh pass): shots 369–376 and the restored image chooser
 
 **Eight new scene-ordered coverage frames, 369–376, 355/355 images, zero placeholders, next free number 377.** Scene 25 gets the floor-level drawing and the corrected 114 tag; scene 20 the Mara single and the red-bird clip on the closed sketchbook; scene 27A Okada's arrival and Vera's face in the switched-off CRT; scene 11 Jack setting down the receiver; scene 36 Jack's side of the payphone call. Shot 375 uses `375-the-line-ends-retake-raw.jpg`, the desk-only corrected image; the first draft with the wrong door lettering and static CRT is not installed. No existing frame image was overwritten, and shot 258 remains unchanged. Read `docs/neonoire/passes/coverage-369-376-2026-10-04.md` and the top/current section of `docs/neonoire/handoff.md`.
 

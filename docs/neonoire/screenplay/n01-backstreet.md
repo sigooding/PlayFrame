@@ -43,6 +43,27 @@ FADE IN:
 
 EXT. BACKSTREET, KANDA - NIGHT #1#
 
+.INSERT - THE HIVE, REMEMBERED
+
+Night. Rain. A nine-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green. Over it, an old woman's voice, unhurried, speaking to us in English.
+
+KANEKO (V.O.)
+This is how I remember it.
+
+KANEKO (V.O.)
+After the war they raised a block beside the railway, to house the factories. The factories closed. We stayed.
+
+KANEKO (V.O.)
+We built upward. A room for a daughter. A shop for a brother. A stair, a pipe, a balcony bolted onto a balcony. Sixty years, until nobody could say where the factory ended and we began.
+
+KANEKO (V.O.)
+The city grew up around us, and forgot we were here. That was all right. We were busy.
+
+KANEKO (V.O.)
+Now the land is worth more than we are. Everything is going. We are just slower.
+
+.BACK TO SCENE
+
 Rain. Not a storm. Just cold, steady, patient rain.
 
 A narrow street of shuttered shops. A vending machine hums on the corner. High up, one lit window, a radio playing behind it.
