@@ -1,0 +1,346 @@
+{
+ "scene": "14A",
+ "model": "eleven_v4",
+ "note": "One take per line. gap = seconds of silence after the previous line (first line of a frame: absolute offset from the frame's start). Generated from docs/neonoire/voice/elevenlabs-script-14A.md.",
+ "lines": [
+  {
+   "key": "L01",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "VERA",
+   "prompt": "[dryly] Is that what you were holding?",
+   "text": "Is that what you were holding?",
+   "gap": 0.6,
+   "note": "first line of the frame: absolute offset"
+  },
+  {
+   "key": "L02",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "JACK",
+   "prompt": "[dryly] It's what I had.",
+   "text": "It's what I had.",
+   "gap": 0.65
+  },
+  {
+   "key": "L03",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "JACK",
+   "prompt": "[evenly] Forty metres. [short pause] Twenty minutes. You never once lost me.",
+   "text": "Forty metres. Twenty minutes. You never once lost me.",
+   "gap": 1.3,
+   "note": "he snaps the lighter shut between"
+  },
+  {
+   "key": "L04",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "VERA",
+   "prompt": "[curious] Is that bad?",
+   "text": "Is that bad?",
+   "gap": 0.65
+  },
+  {
+   "key": "L05",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "JACK",
+   "prompt": "[dryly] It's what a professional does.",
+   "text": "It's what a professional does.",
+   "gap": 0.65
+  },
+  {
+   "key": "L06",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "VERA",
+   "prompt": "[curious] Who did you think I was?",
+   "text": "Who did you think I was?",
+   "gap": 0.65
+  },
+  {
+   "key": "L07",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "JACK",
+   "prompt": "[dryly] Somebody who'd be worse company.",
+   "text": "Somebody who'd be worse company.",
+   "gap": 0.65
+  },
+  {
+   "key": "L08",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "VERA",
+   "prompt": "[evenly] You said you'd look. You didn't say where. I waited outside your office.",
+   "text": "You said you'd look. You didn't say where. I waited outside your office.",
+   "gap": 0.65
+  },
+  {
+   "key": "L09",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "JACK",
+   "prompt": "[evenly] If you can follow me, so can they.",
+   "text": "If you can follow me, so can they.",
+   "gap": 0.65,
+   "note": "the line that lands: no emphasis"
+  },
+  {
+   "key": "L10",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "VERA",
+   "prompt": "[quietly] I brought food.",
+   "text": "I brought food.",
+   "gap": 1.3,
+   "note": "she hadn't thought of that"
+  },
+  {
+   "key": "L11",
+   "scene": "14A",
+   "frame": "neonoire-shot-336",
+   "who": "JACK",
+   "prompt": "[tired] Park round the corner, then get in mine. [short pause] One car is a man waiting. Two is somebody watching.",
+   "text": "Park round the corner, then get in mine. One car is a man waiting. Two is somebody watching.",
+   "gap": 1.3,
+   "note": "he sighs first"
+  },
+  {
+   "key": "L12",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "VERA",
+   "prompt": "[dryly] You were eating one when I came in. I assumed it was a lifestyle.",
+   "text": "You were eating one when I came in. I assumed it was a lifestyle.",
+   "gap": 0.6,
+   "note": "new frame after LATER: absolute offset"
+  },
+  {
+   "key": "L13",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "JACK",
+   "prompt": "[dryly] This is a stakeout. Nothing happens.",
+   "text": "This is a stakeout. Nothing happens.",
+   "gap": 0.65
+  },
+  {
+   "key": "L14",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "VERA",
+   "prompt": "[gently] Then I won't miss anything.",
+   "text": "Then I won't miss anything.",
+   "gap": 0.65
+  },
+  {
+   "key": "L15",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "VERA",
+   "prompt": "[quietly] What are we waiting for?",
+   "text": "What are we waiting for?",
+   "gap": 1.3,
+   "note": "fingers don't touch; they watch the lane"
+  },
+  {
+   "key": "L16",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "JACK",
+   "prompt": "[evenly] Whoever comes back.",
+   "text": "Whoever comes back.",
+   "gap": 0.65
+  },
+  {
+   "key": "L17",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "VERA",
+   "prompt": "[curious] Back?",
+   "text": "Back?",
+   "gap": 0.65
+  },
+  {
+   "key": "L18",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "JACK",
+   "prompt": "[evenly] Someone came back to this street that night. [short pause] Nobody comes back for what they already have.",
+   "text": "Someone came back to this street that night. Nobody comes back for what they already have.",
+   "gap": 0.65
+  },
+  {
+   "key": "L19",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "VERA",
+   "prompt": "[curious] What didn't they have?",
+   "text": "What didn't they have?",
+   "gap": 0.65
+  },
+  {
+   "key": "L20",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "JACK",
+   "prompt": "[evenly] I don't know yet.",
+   "text": "I don't know yet.",
+   "gap": 0.65,
+   "note": "half a lie: he suspects Mara has it. Keep it flat"
+  },
+  {
+   "key": "L21",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "VERA",
+   "prompt": "[gently] Is that for luck?",
+   "text": "Is that for luck?",
+   "gap": 1.3,
+   "note": "train passes, the clip swings"
+  },
+  {
+   "key": "L22",
+   "scene": "14A",
+   "frame": "neonoire-shot-337",
+   "who": "JACK",
+   "prompt": "[quietly] It's so I don't lose it.",
+   "text": "It's so I don't lose it.",
+   "gap": 0.65
+  },
+  {
+   "key": "L23",
+   "scene": "14A",
+   "frame": "neonoire-shot-339",
+   "who": "VERA",
+   "prompt": "[weakly] I told her she always runs.",
+   "text": "I told her she always runs.",
+   "gap": 0.6,
+   "note": "338 (the rice ball) is silent; absolute offset here"
+  },
+  {
+   "key": "L24",
+   "scene": "14A",
+   "frame": "neonoire-shot-339",
+   "who": "JACK",
+   "prompt": "[evenly] You said.",
+   "text": "You said.",
+   "gap": 0.65
+  },
+  {
+   "key": "L25",
+   "scene": "14A",
+   "frame": "neonoire-shot-339",
+   "who": "VERA",
+   "prompt": "[weakly] It's the last thing I —",
+   "text": "It's the last thing I —",
+   "gap": 0.65,
+   "note": "cut off: end on the dash, no trailing"
+  },
+  {
+   "key": "L26",
+   "scene": "14A",
+   "frame": "neonoire-shot-339",
+   "who": "JACK",
+   "prompt": "[evenly] Runners don't pack. They leave with what they're wearing. Your sister had a suitcase zipped under the bed and a flight booked home. [pause] [gently] Whatever happened to her, she wasn't running from you.",
+   "text": "Runners don't pack. They leave with what they're wearing. Your sister had a suitcase zipped under the bed and a flight booked home.  Whatever happened to her, she wasn't running from you.",
+   "gap": 0.15,
+   "note": "interrupts her: almost no gap. He does not look at her"
+  },
+  {
+   "key": "L27",
+   "scene": "14A",
+   "frame": "neonoire-shot-339",
+   "who": "VERA",
+   "prompt": "[weakly] You don't know that.",
+   "text": "You don't know that.",
+   "gap": 0.65
+  },
+  {
+   "key": "L28",
+   "scene": "14A",
+   "frame": "neonoire-shot-339",
+   "who": "JACK",
+   "prompt": "[evenly] No. [pause] But I'd bet on it.",
+   "text": "No. But I'd bet on it.",
+   "gap": 0.65
+  },
+  {
+   "key": "L29",
+   "scene": "14A",
+   "frame": "neonoire-shot-342",
+   "who": "VERA",
+   "prompt": "[quietly] Is that routine? Watching a bar after a shooting?",
+   "text": "Is that routine? Watching a bar after a shooting?",
+   "gap": 0.6,
+   "note": "340/341 are silent; absolute offset on 342"
+  },
+  {
+   "key": "L30",
+   "scene": "14A",
+   "frame": "neonoire-shot-342",
+   "who": "JACK",
+   "prompt": "[evenly] Probably.",
+   "text": "Probably.",
+   "gap": 0.65
+  },
+  {
+   "key": "L31",
+   "scene": "14A",
+   "frame": "neonoire-shot-342",
+   "who": "VERA",
+   "prompt": "[quietly] You don't think so.",
+   "text": "You don't think so.",
+   "gap": 1.3,
+   "note": "he folds the bag into his coat between"
+  },
+  {
+   "key": "L32",
+   "scene": "14A",
+   "frame": "neonoire-shot-342",
+   "who": "JACK",
+   "prompt": "[dryly] I think it's a plate number.",
+   "text": "I think it's a plate number.",
+   "gap": 0.65
+  },
+  {
+   "key": "L33",
+   "scene": "14A",
+   "frame": "neonoire-shot-343",
+   "who": "JACK",
+   "prompt": "[evenly] Call me when you go somewhere.",
+   "text": "Call me when you go somewhere.",
+   "gap": 0.6,
+   "note": "after the 3:40 a.m. card: absolute offset"
+  },
+  {
+   "key": "L34",
+   "scene": "14A",
+   "frame": "neonoire-shot-343",
+   "who": "VERA",
+   "prompt": "[evenly] I will.",
+   "text": "I will.",
+   "gap": 0.65
+  },
+  {
+   "key": "L35",
+   "scene": "14A",
+   "frame": "neonoire-shot-343",
+   "who": "JACK",
+   "prompt": "[dryly] That's a lie.",
+   "text": "That's a lie.",
+   "gap": 0.65
+  },
+  {
+   "key": "L36",
+   "scene": "14A",
+   "frame": "neonoire-shot-343",
+   "who": "VERA",
+   "prompt": "[dryly] Yes.",
+   "text": "Yes.",
+   "gap": 0.65
+  }
+ ]
+}
