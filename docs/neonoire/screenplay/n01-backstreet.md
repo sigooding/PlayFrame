@@ -33,7 +33,7 @@ OTHER LIVES. There is always a sign of other people -- a lit window, a radio thr
 
 !NOTHING IS EXPLAINED.
 
-LANGUAGE. The Voss sisters speak English to each other. Dialogue marked (in Japanese) is spoken in Japanese and subtitled in English.
+LANGUAGE. Everything is spoken in English, whatever language the characters would be speaking.
 
 REFERENCE POINTS. Ozu's TOKYO STORY for restraint. KOWLOON GENERIC ROMANCE and the 1997 illustrated Kowloon Walled City panoramas for density, texture and memory.
 
@@ -42,6 +42,27 @@ REFERENCE POINTS. Ozu's TOKYO STORY for restraint. KOWLOON GENERIC ROMANCE and t
 FADE IN:
 
 EXT. BACKSTREET, KANDA - NIGHT #1#
+
+.INSERT - THE HIVE, REMEMBERED
+
+Night. Rain. A nine-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green. Over it, an old woman's voice, unhurried, speaking to us in English.
+
+KANEKO (V.O.)
+This is how I remember it.
+
+KANEKO (V.O.)
+After the war they raised a block beside the railway, to house the factories. The factories closed. We stayed.
+
+KANEKO (V.O.)
+We built upward. A room for a daughter. A shop for a brother. A stair, a pipe, a balcony bolted onto a balcony. Sixty years, until nobody could say where the factory ended and we began.
+
+KANEKO (V.O.)
+The city grew up around us, and forgot we were here. That was all right. We were busy.
+
+KANEKO (V.O.)
+Now the land is worth more than we are. Everything is going. We are just slower.
+
+.BACK TO SCENE
 
 Rain. Not a storm. Just cold, steady, patient rain.
 
@@ -86,7 +107,7 @@ Two MEN get out and walk in, black silhouettes against the glare. Black clothes.
 The old man doesn't move. He stands between them and Mara's doorway, a small figure in the white light, his shadow stretching long down the lane toward her.
 
 OLD MAN
-(in Japanese; to himself)
+(to himself)
 After twenty years.
 
 A suppressed SHOT. Flat and ordinary, like a door closing.
@@ -96,7 +117,6 @@ The old man folds onto the street.
 One of the masked men touches his ear.
 
 MASKED MAN
-(in Japanese)
 First position done. Moving to second.
 
 They walk back to the sedan. They don't hurry. They never look at the doorway. It pulls away and takes the long way round the block, its high beams swinging off the lane.
@@ -109,17 +129,16 @@ Mr. Sakai?
 
 MARA
 It's okay -- I'll get someone --
-(in halting Japanese)
+(haltingly)
 Ambulance. I'll call. Ambulance.
 
 His hand comes out of his coat with something small and brass in it. He presses it into her palm and closes her fingers over it.
 
 OLD MAN
-(in Japanese)
 Don't let them have it.
 
 MARA
-(in halting Japanese)
+(haltingly)
 Have what? I don't --
 
 He's gone. Rain in his open eyes.

@@ -16,19 +16,15 @@ Vera stands at the counter, the closed blue umbrella dripping onto the linoleum.
 A YOUNG OFFICER takes her details with polite boredom. Vera's Japanese is fluent, but careful and slightly formal -- learned as a child, relearned as an adult.
 
 YOUNG OFFICER
-(in Japanese)
 Your sister's age?
 
 VERA
-(in Japanese)
 Twenty-four.
 
 YOUNG OFFICER
-(in Japanese)
 Adults sometimes go away for a few days. Especially foreigners. It's usually --
 
 VERA
-(in Japanese)
 She doesn't. Not without telling me.
 
 He types the name. ON THE MONITOR: MARA VOSS.
@@ -38,13 +34,12 @@ He stops typing.
 He looks at the screen a moment too long. Then he picks up the desk phone and turns away from her.
 
 YOUNG OFFICER
-(in Japanese; quietly, into phone)
+(quietly, into phone)
 Yes. That name. Yes -- the sister is here now.
 
 He hangs up. His manner has changed. Politer.
 
 YOUNG OFFICER (CONT'D)
-(in Japanese)
 Someone will be right with you.
 
 Vera looks at him. He doesn't meet her eyes.

@@ -11,7 +11,6 @@ EXT. KANDA STREET - CONTINUOUS #9#
 Rain. Vera walks away down the narrow street, no umbrella, head down.
 
 OKADA (O.S.)
-(in Japanese)
 Miss.
 
 She turns. Okada stands in the bar doorway holding the blue umbrella, out of breath, as if deciding something cost him more than the walk.
@@ -26,29 +25,23 @@ It was mine. She took it when we were kids. She never gave it back.
 She has said it in English, without realizing. Okada doesn't understand the words. He understands her face.
 
 OKADA
-(in Japanese)
 Behind the counter. After.
 
 VERA
-(in Japanese)
 Did you give this to the police?
 
 OKADA
-(in Japanese)
 They didn't ask.
 
 He takes a business card from his apron and presses it into her hand. Old, soft at the corners, handwritten on the back.
 
 OKADA (CONT'D)
-(in Japanese)
 Not the police. Him.
 
 VERA
-(in Japanese)
 Who is he?
 
 OKADA
-(in Japanese)
 He found my daughter once. When no one else would look.
 
 He goes back inside before she can thank him.

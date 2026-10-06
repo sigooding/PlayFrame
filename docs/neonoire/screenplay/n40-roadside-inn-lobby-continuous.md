@@ -15,7 +15,6 @@ The first is the MASKED LEADER (40s), a man in a plain dark suit, nothing about 
 Mr. Noda wakes in his chair. Stares.
 
 MR. NODA
-(in Japanese)
 We're closed --
 
 A burst of suppressed fire into the ceiling. Plaster rains down. Mr. Noda throws himself behind the counter.

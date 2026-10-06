@@ -13,27 +13,22 @@ A small room. A kotatsu table. A television with the sound off. A Buddhist altar
 MRS. SAKAI (70s), small and hard, pours Jack tea she doesn't want to pour.
 
 MRS. SAKAI
-(in Japanese)
 We haven't lived together in fifteen years. The police already came.
 
 JACK
-(in Japanese)
 I'm not the police.
 
 MRS. SAKAI
-(in Japanese)
 Then what are you?
 
 Jack thinks about it.
 
 JACK
-(in Japanese)
 Someone who owes a man a debt. A long time ago. The same kind of debt your husband owed.
 
 She studies him. Then she looks at the photograph on the altar.
 
 MRS. SAKAI
-(in Japanese)
 He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head.
 (beat)
 Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl.
@@ -41,13 +36,11 @@ Last month he wrote a letter. In English. Him. He made me check the spelling. To
 When the doctor told him, he said he was glad. He said now he could stop being afraid of the wrong thing.
 
 JACK
-(in Japanese)
 Did he ever pay rent on something? Somewhere that wasn't his home?
 
 She looks at him sharply.
 
 MRS. SAKAI
-(in Japanese)
 Every January. Cash, in an envelope. Twenty years. Even after he left, the receipts kept coming here.
 (beat)
 He left these here. Maybe on purpose.
@@ -59,7 +52,6 @@ Jack unfolds it. A rubber stamp, faded. Handwritten: No. 114. Paid in full.
 He looks up. She is watching him with an expression he can't read. Grief, maybe. Or relief.
 
 MRS. SAKAI (CONT'D)
-(in Japanese)
 Whatever it is, it was heavier than me. He carried it longer.
 
 

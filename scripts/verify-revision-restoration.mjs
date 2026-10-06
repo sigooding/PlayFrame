@@ -11,7 +11,15 @@ const split = text => {
 };
 const normal = text => text.replace(/\s+/g, " ").trim();
 const current = split(read("Neonoire (3).fountain"));
-const before = split(read("docs/neonoire/baseline/Neonoire_PreRevision_2026-09-29.fountain"));
+// 6 October 2026 (director): everything is spoken in English, so "(in Japanese)" parentheticals are gone from the current script.
+// The pre-revision baseline still carries them; compare like with like.
+const withoutJapanese = text => text.split("\n").flatMap(line => {
+  const m = /^\((.*)\)$/.exec(line.trim());
+  if (!m || !m[1].includes("Japanese") || m[1].includes("subtitled")) return [line];
+  const parts = m[1].replace("in halting Japanese", "haltingly").replace(/,\s*in Japanese/, "").split(";").map(part => part.trim()).filter(part => part !== "in Japanese");
+  return parts.length ? [`(${parts.join("; ")})`] : [];
+}).join("\n");
+const before = Object.fromEntries(Object.entries(split(read("docs/neonoire/baseline/Neonoire_PreRevision_2026-09-29.fountain"))).map(([number, text]) => [number, withoutJapanese(text)]));
 const shipped = read("docs/neonoire/baseline/Neonoire_PreRestoration_2026-10-01.fountain");
 const project = JSON.parse(read("public/projects/neonoire-opening.json"));
 const pass = message => console.log(`  PASS  ${message}`);
@@ -28,28 +36,41 @@ pass("one 99A contains demolition/old stools before a dissolve to the revised pl
 assert(current["15"].includes("dense, self-built block") && current["15"].includes("forgotten it is there"));
 for (const phrase of ["Eat.", "Has anyone... come? Asking?", "Nobody comes here who isn't lost.", "The rice goes cold in Mara's lap."]) assert(current["25"].includes(phrase));
 assert(current["25"].includes("Don't let them have it.") && !current["25"].includes("Your father. It was not what they say."));
-assert(current["17"].includes("She looks at the empty third stool beside him."));
+assert(current["17"].includes("Jack looks at the counter under his hands.") && !current["17"].includes("third stool"));
 assert(!current["17"].includes("hoarding across the street"));
 assert(current["40"].includes("MASKED LEADER (40s)") && current["40"].includes("His face stays behind the mask"));
 assert(current["51"].includes("Tokyo spread out below in the rain like a circuit board"));
 assert(!/^ISHIDA|^KUROSE$/m.test(current["51"]), "51 remains wordless");
 assert(current["83"].includes("KUROSE (70s)") && current["83"].includes("never had to hurry"));
 assert(current["94"].includes("It's only tea.") && !current["94"].includes("For twenty years."));
-assert(current["100"].includes("Six new stools, the same height as the old ones.") && current["100"].includes("old hand-painted sign") && current["100"].includes("red bird clip"));
+assert(current["100"].includes("old hand-painted sign") && current["100"].includes("red bird clip"));
 pass("lost introductions/bonding and only-tea restored without undoing deliberate wordless or rewritten-scene choices");
 
 const statement = "VERA\nIshida left a statement. He acted alone.\n\nJACK\nIs that what it says?\n\nVERA\nThat's what the police say it says.\n\n";
 const stripped98 = current["98"].replace('SUPER: "FIVE DAYS LATER"\n\n', "").replace(statement, "");
-assert.equal(stripped98, before["98"], "Every other byte of the full rooftop scene survives");
+// 6 October 2026 (director): the third-stool line is cut from the rooftop; everything else of the pre-revision scene survives.
+const expected98 = before["98"].replace("She's taking the sign. And the stools.\n(beat)\nShe says the third one's still mine.\n", "She's taking the sign.\n");
+assert.notEqual(expected98, before["98"], "the pre-revision rooftop carried the stool line the director cut");
+assert.equal(stripped98, expected98, "Every other byte of the full rooftop scene survives");
 assert(current["98"].includes('SUPER: "FIVE DAYS LATER"'));
-for (const number of ["85", "87", "91", "92"]) assert.equal(current[number], before[number], `${number} must be unchanged`);
+// 6 October 2026 (director): the Hive's alarm — Kaneko strikes the water pipe, the pipes pass it on, the repairman has heard it, and the escape crosses more rooms.
+// Everything in the pre-revision scenes survives; these are the only additions.
+const alarm = {
+  "85": ["Three hard strikes, iron on iron, run up the pipes overhead. Then again, farther off: a spoon on a radiator, a knuckle on a drainpipe, floor above floor. The Hive is passing it on.\n\n"],
+  "86": ["KANEKO (CONT'D)\nGo now. They will help you.\n\n", "Kaneko lowers the ladle from the old iron water pipe by the stove. Three strikes were all it took: the alarm the Hive has kept for fifty years.\n\n"],
+  "87": ["The pipes have already told him. "],
+  "90": ["Through the wardrobe, a barber's cramped shop. The BARBER holds the beaded curtain aside with his scissors hand and turns the chair to the wall, so that anyone looking in will see only a man waiting for a haircut.\n\n", "Down four steps into a laundry where wet sheets hang in rows. Two WOMEN part the sheets ahead of them and pin them shut again behind, so that the whole room closes like water over the place they went.\n\n", "A shrine room. A GRANDMOTHER lifts the altar cloth and a low hatch opens behind it. She holds the cloth until they are through, then smooths it flat over the candle and the photograph as if nothing had happened.\n\n", "A plank laid across the gap between two balconies, a balcony bolted onto a balcony. Two MEN in vests steady it at both ends, and when the last of them is across, haul it in after them, so that the gap is only a gap.\n\n", "A pipe gallery, the pipes ringing softly all around them. A WOMAN raps one pipe once for clear, and the next hand takes it up farther on: the alarm still passing, now telling them which way is safe.\n\n"],
+};
+for (const [number, adds] of Object.entries(alarm)) for (const add of adds) assert(current[number].includes(add), `${number} carries the alarm addition`);
+const withoutAlarm = number => (alarm[number] || []).reduce((text, add) => text.replace(add, ""), current[number]);
+for (const number of ["85", "87", "91", "92"]) assert.equal(withoutAlarm(number), before[number], `${number} is unchanged apart from the alarm additions`);
 assert(current["91"].includes("A train. It arrives") && current["91"].includes("rung by rung"));
 assert(!/train/i.test(before["89"]), "No lost stairwell train to invent or move");
 for (const [number, inserted] of [
-  ["86", "VERA\n(in Japanese)\nI know them.\n\nJack looks at her.\n\n"],
+  ["86", "VERA\nI know them.\n\nJack looks at her.\n\n"],
   ["88", "In the black, Vera's hand finds the wall, low, where a child's hand would reach. She starts to move. Jack follows the sound of her.\n\n"],
   ["90", "Vera leads them to a door with a sumo match murmuring behind it. It opens before she can knock: the OLD WOMAN from 55.\n\n"],
-]) assert.equal(current[number].replace(inserted, ""), before[number], `${number} is revised by addition, not cuts`);
+]) assert.equal(withoutAlarm(number).replace(inserted, ""), before[number], `${number} is revised by addition, not cuts`);
 pass("98's whole rooftop survives plus exactly the statement/card; 85/87/91/92 unchanged, 86/88/90 add-only, train intact in 91");
 
 const cache = "node_modules/.cache/verify-revision-restoration";
@@ -61,7 +82,7 @@ old.script = shipped.replace(/ #\d+[A-Z]?#(?=\n|$)/g, "");
 old.frames = old.frames.filter(frame => ![158, 159].includes(frame.shotNumber));
 const patch = bundledFrameUpdates(old, project);
 assert.equal(patch.script, project.script);
-assert.equal(patch.frames.length, 355);
+assert.equal(patch.frames.length, 366);
 assert.deepEqual(patch.frames.filter(frame => frame.sceneId === "neonoire-s99a").map(frame => frame.shotNumber), [158, 159, 305, 306, 307]);
 const edited = structuredClone(old); edited.script += "\nWriter's extra scene.\n";
 const protectedPatch = bundledFrameUpdates(edited, project);

@@ -37,7 +37,6 @@ That's what he said. Before he shot him. "Excuse me."
 The driver lifts his wrist to his mouth and murmurs into his sleeve, very quietly:
 
 DRIVER
-(in Japanese)
 Position.
 
 Jack looks at the driver. The driver looks at Jack. And in that look, both men understand.

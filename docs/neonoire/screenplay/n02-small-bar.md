@@ -28,7 +28,6 @@ Shitsurei shimasu.
 Mara is behind the counter before she knows she's moved.
 
 JOURNALIST
-(in Japanese)
 Where is he?
 
 Two shots. On the high shelf, the television audience laughs.
@@ -36,7 +35,6 @@ Two shots. On the high shelf, the television audience laughs.
 Behind the counter, Mara folds herself into the gap between the crates and the ice bin. A hair clip slides out of her wet hair and skitters under the shelf. She doesn't breathe.
 
 MASKED MAN
-(in Japanese)
 Second position done.
 
 He takes one step toward the counter. A voice in his earpiece: one word. He turns and goes.

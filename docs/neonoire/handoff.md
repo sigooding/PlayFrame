@@ -1,6 +1,16 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 4 October 2026 (seventh pass): coverage 369–376 and the storyboard image chooser
+## Current — 6 October 2026: shot 73 retired; the cold open's lane geometry; Vera's emptiness frames (383–388)
+
+**Update, later 6 October: the car scene is done, and 13 other frames were retaken in scarlett-witness and synced back here** (bible items 20 and 21): 10, 12, 13, 361, 158–161, 320, 86, 87, 316, 89, 90, all archived first. Shot 14's lip-synced video and the new sound beds live in the two game repos only, not in PlayFrame.
+
+See the bible's Part 9 items 18-19. 366/366 keyframes, next free number **389**. Retaken in place (archived first): 14, 17, 18. New: 383, 384, 385, 386, 387, 388. Images are 1280×720 generations upscaled to 1920×1080 (lanczos). Open: 386 puts Vera at the window earlier than the script stands her; 388's shoes do not read; 14/17 caveats in their notes. The retired 73's picture, the old third-stool frames (160/161/225/260/265/266/358-360) and the saved-workspace description hashes for 14/17/18 (hand-added to `neonoire-scene6-sync.json`) are the loose ends.
+
+## Previous — 5 October 2026: the prologue (shot 377) — scene 1 opens on the Hive, remembered
+
+Director: a short introduction to the Hive, **in canon and in Kaneko's voice** (and a scrolling-crawl version in the separate visual-novel repo). Read the bible's Part 9 item 18. Done: Fountain `.INSERT - THE HIVE, REMEMBERED` + five `KANEKO (V.O.)` paragraphs at the head of scene 1 (also in `docs/neonoire/screenplay/n01-backstreet.md`); board **377** (`s1/377-the-hive-remembered.jpg`, a new filename, nothing overwritten); five takes ingested via `voice-batch.mjs --plan docs/neonoire/voice/elevenlabs-plan-prologue.json`; `coverage-next.mjs` now 369–377; coverage sync batch 5; the pre-prologue script hash appended **by hand** to `neonoire-scene6-sync.json` (do not re-run `sync-scene6.mjs`); `bundle-refresh.ts` inserts a frame that opens its scene before the scene's first saved frame. Counts: 356 shots, next free **378**. Open: narration is English (Japanese re-record is a director's call); 377 is a ~50 s hold on one draft image — wants a long-hold coverage pass; scene 12A Hive-introduction draft (director's) overlaps and is not written in.
+
+## Previous — 4 October 2026 (seventh pass): coverage 369–376 and the storyboard image chooser
 
 **Eight new frames, 369–376, installed in the screenplay's quoted scene order: 355/355 keyframes, zero placeholders, next free number 377.** The drawing and corrected tag detail are in scene 25; Mara's single and the clip-on-book insert are in scene 20; scene 27A gets Okada's arrival beat and Vera's reflection in the switched-off CRT; scene 11 gets Jack setting down the receiver; scene 36 gets the matching Jack-side payphone intercut. All are full-bleed 1920×1080, Draft pending production approval, and no existing shot image was overwritten. Shot 375 is the corrected desk-only retake; the first door-lettering/static-CRT study is not installed. Scene 258's older image and wording remain unchanged; shot 370 follows the current script's 114-on-the-tag fact. Full details and visual decisions: [coverage ledger](passes/coverage-369-376-2026-10-04.md).
 

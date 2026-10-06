@@ -12,7 +12,7 @@ On the other side of the curtain, three feet away.
 
 Mara stands pressed against the wall with both hands over her mouth. She has heard her sister's voice. She is shaking.
 
-Through the thin gap at the edge of the curtain she can see the back of Vera's head. The third stool.
+Through the thin gap at the edge of the curtain she can see the back of Vera's head.
 
 Mara takes one step toward the curtain. Her hand lifts to it.
 

@@ -15,7 +15,6 @@ He opens the bottom drawer. Empty.
 The desk phone rings. He picks it up.
 
 YOUNG DETECTIVE
-(in Japanese)
 Yes.
 (beat)
 Where?

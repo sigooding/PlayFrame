@@ -13,16 +13,13 @@ A small, warm, faded room. A pink public payphone on the wall. A glass case of s
 MRS. NODA (70s) comes out from the back, drying her hands. MR. NODA (70s) doesn't look away from the baseball.
 
 MRS. NODA
-(in Japanese)
 Just one night?
 
 JACK
-(in Japanese)
 Just one.
 
 She hands him a heavy old key on a wooden tag.
 
 MRS. NODA
-(in Japanese)
 Upstairs, at the end. The bath is shared, I'm sorry. I'll show you. The light doesn't work properly.
 

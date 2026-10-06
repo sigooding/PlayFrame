@@ -17,27 +17,23 @@ OKADA (60s), the bar's owner, mops around it without looking at it. He has the s
 The door opens. Vera, the blue umbrella in her hand.
 
 OKADA
-(in Japanese; not looking up)
+(not looking up)
 We're closed.
 
 Vera holds up her phone: a photo of Mara, laughing at a party, a paper crown on her head.
 
 VERA
-(in Japanese)
 My sister. Four nights ago. Was she here?
 
 Okada looks at the photo for exactly one second.
 
 OKADA
-(in Japanese)
 No.
 
 VERA
-(in Japanese)
 You didn't look.
 
 OKADA
-(in Japanese)
 I looked. No.
 
 His eyes go, just once, to the far end of the counter. Then back to the mop.

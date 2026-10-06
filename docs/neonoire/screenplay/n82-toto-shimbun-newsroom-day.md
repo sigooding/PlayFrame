@@ -20,19 +20,19 @@ Harada presses PLAY.
 Hiss. Then two men's voices, twenty years younger. Sakai's rough. The other one smooth, patient, faintly bored.
 
 SAKAI (V.O.)
-(in Japanese; recorded)
+(recorded)
 There are still people in the building. Old people. They won't sign.
 
 KUROSE (V.O.)
-(in Japanese; recorded)
+(recorded)
 The building must be empty by the end of the month.
 
 SAKAI (V.O.)
-(in Japanese; recorded)
+(recorded)
 And if it isn't?
 
 KUROSE (V.O.)
-(in Japanese; recorded)
+(recorded)
 Then it will be empty in a different way.
 (beat)
 Don't make me say it more clearly, Sakai. I don't like to repeat myself.
@@ -40,41 +40,33 @@ Don't make me say it more clearly, Sakai. I don't like to repeat myself.
 Harada stops the tape. The newsroom noise outside the glass seems very far away.
 
 HARADA
-(in Japanese)
 That's Kurose.
 
 JACK
-(in Japanese)
 That's Kurose.
 
 HARADA
-(in Japanese)
 A voice on a twenty-year-old tape. His lawyers will say it's a fake. They'll say Sakai was a gangster with a grudge.
 
 JACK
-(in Japanese)
 Then you'll need a witness.
 
 She looks at him.
 
 JACK (CONT'D)
-(in Japanese)
 Twenty years ago I was a police detective. An American insurance investigator named Daniel Voss proved the Shiohama fire was arson. I believed him. I was ordered to close the case, and I signed a report saying the fire was an accident.
 (beat)
 Weeks later he was found dead. I didn't ask any questions.
 
 HARADA
-(in Japanese)
 You understand what you're saying. You'll be named. Your part too.
 
 JACK
-(in Japanese)
 Start with my part.
 
 Harada looks at him for a long moment. Then she looks at the photograph of her dead reporter on the desk. She takes a notebook from her drawer and opens it to a clean page.
 
 HARADA
-(in Japanese)
 From the beginning.
 
 Jack begins to talk. We don't hear it. We watch him through the glass wall of her office, among the busy desks and flickering televisions: a man, for the first time in twenty years, not silent.

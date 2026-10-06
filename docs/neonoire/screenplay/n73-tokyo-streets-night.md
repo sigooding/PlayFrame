@@ -10,11 +10,13 @@ EXT. TOKYO STREETS - NIGHT #73#
 
 Vera comes out of the hotel into the rain and starts to run.
 
+The phone is still in her fist, the call still lit on its screen: ISHIDA. She is not running away from anything. She is running toward the one address she has left. The Hive, and wherever they have laid her sister down. The elevated railway glows at the far end of the street, and she runs at it as if she could still get there in time.
+
 Not elegantly. Badly. In heels, in the red dress, no coat, no umbrella. Slipping. Stumbling. Stopping for half a second because she can't breathe, then forcing herself on.
 
 Rain plasters her hair to her face. Her mascara runs.
 
-No music. Only rain. Her heels on wet pavement. Her breath. A car passing, its tyres hissing.
+The song comes up under the rain, and she cannot hear it over her own breath. Her heels on wet pavement. Her breath. A car passing, its tyres hissing.
 
 She runs past a vending machine. It glows, indifferent. She keeps going; the machine falls behind her.
 

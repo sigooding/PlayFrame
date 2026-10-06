@@ -19,61 +19,49 @@ JACK (48) sits at the desk eating a convenience-store rice ball, watching the si
 A knock on the frosted glass. Vera comes in, wet, the blue umbrella dripping.
 
 VERA
-(in Japanese)
 Are you the one they call Jack?
 
 JACK
-(in Japanese)
 Who calls me that?
 
 VERA
-(in Japanese)
 Mr. Okada. The bar in Kanda.
 
 Jack puts the rice ball down.
 
 JACK
-(in Japanese)
 Sit down.
 
 She sits. He doesn't switch to English. He lets her speak in the language she chose. She notices.
 
 VERA
-(in Japanese)
 My sister has been missing for four days. The police say to go home and wait.
 
 JACK
-(in Japanese)
 I don't do missing persons. People who go missing usually want to.
 
 She places the red bird clip on his desk.
 
 VERA
-(in Japanese)
 She was in that bar. The night two men were shot there.
 
 Jack looks at the clip for a long moment. The lighter stops.
 
 JACK
-(in Japanese)
 What did the police tell you?
 
 VERA
-(in Japanese)
 To go home.
 
 JACK
-(in Japanese)
 It's good advice.
 
 VERA
-(in Japanese)
 Is it yours, too?
 
 He doesn't answer. Another train passes. The blinds shiver.
 
 JACK
-(in Japanese)
 Do you have photographs of her?
 
 She takes an envelope from her bag. As she pulls out the photos, something slides out with them and falls face up on the desk:

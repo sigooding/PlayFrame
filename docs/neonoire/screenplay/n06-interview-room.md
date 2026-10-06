@@ -20,7 +20,6 @@ You must be cold.
 His English is excellent.
 
 VERA
-(in Japanese)
 I speak Japanese.
 
 ISHIDA
@@ -160,13 +159,11 @@ Ishida takes a tissue from the box, the first in years, and offers it. She doesn
 When she speaks again, it's in Japanese. Low. Precise. Every word placed.
 
 VERA
-(in Japanese)
 She is my sister. I have been calling her for days. If you know where she is, tell me.
 
 Ishida looks at her a long moment. When he answers, it is in Japanese too, for the first time. Formal. A door closing.
 
 ISHIDA
-(in Japanese)
 I do not know where she is. That is the truth.
 (beat)
 And if, on the off chance, she did see something she should not have, then the safest place for her is wherever she is now. And the safest thing you can do is nothing.

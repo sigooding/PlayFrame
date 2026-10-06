@@ -19,11 +19,9 @@ Vera looks at the door. At her phone. No messages.
 She takes out the lighter and turns it over in her fingers. Open. Shut.
 
 BARTENDER
-(in Japanese)
 Another?
 
 VERA
-(in Japanese)
 No. Thank you.
 
 She almost laughs at herself. She looks down at the red dress. She feels foolish, and then hurt, and then angry.

@@ -11,7 +11,6 @@ INT. KANEKO'S NOODLE COUNTER - CONTINUOUS #58#
 Vera eats. All of it. She laughs once, at nothing, wiping her eyes.
 
 VERA
-(in Japanese)
 My sister would love this place. She's never seen it. She only knows it from my stories.
 (beat)
 When I find her, I'll bring her here.
@@ -19,7 +18,6 @@ When I find her, I'll bring her here.
 Kaneko's chopsticks stop moving in the pot. She doesn't look up.
 
 KANEKO
-(in Japanese)
 Yes. Bring her.
 
 Vera puts money on the counter. Too much. Kaneko notices and says nothing.

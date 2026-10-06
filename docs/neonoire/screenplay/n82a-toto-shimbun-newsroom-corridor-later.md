@@ -18,25 +18,20 @@ A YOUNG COPY CLERK at a photocopier lays the notebook open under the lid and pre
 Harada comes out of the office and pulls the door closed behind her.
 
 HARADA
-(in Japanese)
 Two hours. He hasn't stopped.
 
 VERA
-(in Japanese)
 I know. I can see.
 
 Harada watches the pages come out of the machine.
 
 HARADA
-(in Japanese)
 Every page. Then the original goes in the safe downstairs, and nobody touches it. Including you.
 
 VERA
-(in Japanese)
 It's all I have of him.
 
 HARADA
-(in Japanese)
 Then I will take care of it.
 (beat)
 Kondo's files were in his desk. Six months of redevelopment money, and Kurose's name in most of it. And the grey car that left the Hive last night was found burnt out in Adachi at dawn. Registered to a security company. The company belongs to Kurose Development.
@@ -44,15 +39,12 @@ Kondo's files were in his desk. Six months of redevelopment money, and Kurose's 
 Tomorrow we put it to them for comment. They will refuse to see a reporter.
 
 VERA
-(in Japanese)
 I'll go.
 
 HARADA
-(in Japanese)
 That is not your job.
 
 VERA
-(in Japanese)
 It isn't yours either. He'll see me.
 (beat)
 He'll want to look at me.
@@ -60,6 +52,5 @@ He'll want to look at me.
 Harada studies her. Then hands her the folder: a stack of photocopies, warm from the machine.
 
 HARADA
-(in Japanese)
 The copies. Not the original.
 

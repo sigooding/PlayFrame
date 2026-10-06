@@ -13,17 +13,15 @@ Mara puts on a borrowed coat. She has a small cloth bag: a toothbrush, the cardi
 Kaneko stands in the curtain. She hands Mara a small parcel wrapped in newspaper.
 
 KANEKO
-(in Japanese)
 Rice balls. For the car.
 
 Mara takes them. She doesn't know what to say.
 
 MARA
-(in halting Japanese)
+(haltingly)
 Thank you. For --
 
 KANEKO
-(in Japanese)
 Come back with your sister. Sit on the stools. Both of you. Eat everything.
 
 Mara bows, too deep, clumsy. Kaneko, unexpectedly, puts a hand on her head. Just for a second. Like a grandmother.

@@ -1,10 +1,18 @@
 {
-  "note": "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, and 369–376 second-pass frames) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
+  "note": "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, 369–376 second-pass frames, 377 the prologue's Hive, and 378–382 the Hive escape's five rooms) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
   "priorScriptHashes": [
     "96bffed2d66d8220a64bd01360b482c465d858489fbd90583aaeb68dcaed6bfc",
     "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4",
     "7e80c7c0f86e92f2f01f48760c98d06fcaffdcb6b891ab93f8601ba5412d3347",
-    "a660644bc0e5c40ebc66aac7bd43b747eb9b663aa5e3db62b4adb53823e77e34"
+    "dfbcac564a919fd5ba84d34126182158d6749bb3b9e9c7136a4cd41b35863113",
+    "c96758317b476d6f97eb8e7e430254e22bb0e1f93938b1b22f1b1152f3645221",
+    "370b08d7203b5e8fa684d82638b85660adf89e6f7e6ff4068bc5e84e574d11eb",
+    "445752a28c645dd4d234693abdfd950133e8f9290cc393f1c2b41b2d4cd5cd8b",
+    "a6f4f57ebfbf2b23495fb966f0f8150a5fbcc1160611a7f974a569db9cec0355",
+    "283e7549d7f834205af0274caf19cf39fff07c234fc264879a8d791deb672752",
+    "e8877348a800d24c2c2f9f3de8f7dc9b4229d1b91c4a84f48bf8a6292b2d9ece",
+    "0193ba979e3c8b4e86ec23147ace25c6ea9cad43c022fa15c0d910fd8fea3d52",
+    "f6557aa6e9a8553a234071bcd8237ee913dca657738190b006c93b394a794535"
   ],
   "newFrameIds": [
     "neonoire-shot-344",
@@ -39,7 +47,19 @@
     "neonoire-shot-373",
     "neonoire-shot-374",
     "neonoire-shot-375",
-    "neonoire-shot-376"
+    "neonoire-shot-376",
+    "neonoire-shot-377",
+    "neonoire-shot-378",
+    "neonoire-shot-379",
+    "neonoire-shot-380",
+    "neonoire-shot-381",
+    "neonoire-shot-382",
+    "neonoire-shot-383",
+    "neonoire-shot-384",
+    "neonoire-shot-385",
+    "neonoire-shot-386",
+    "neonoire-shot-387",
+    "neonoire-shot-388"
   ],
   "batches": [
     [
@@ -82,6 +102,28 @@
       "neonoire-shot-374",
       "neonoire-shot-375",
       "neonoire-shot-376"
+    ],
+    [
+      "neonoire-shot-377"
+    ],
+    [
+      "neonoire-shot-378",
+      "neonoire-shot-379",
+      "neonoire-shot-380",
+      "neonoire-shot-381",
+      "neonoire-shot-382"
+    ],
+    [
+      "neonoire-shot-383"
+    ],
+    [
+      "neonoire-shot-384",
+      "neonoire-shot-385",
+      "neonoire-shot-386"
+    ],
+    [
+      "neonoire-shot-387",
+      "neonoire-shot-388"
     ]
   ]
 }

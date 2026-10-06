@@ -11,6 +11,8 @@
     "verify:features": "node scripts/verify-undo-and-prompts.mjs --no-server",
     "verify:features:live": "node scripts/verify-undo-and-prompts.mjs",
     "build:rapture": "node scripts/rapture/build-project.mjs",
+    "build:hangar": "node scripts/hangar/build-project.mjs",
+    "verify:hangar": "node scripts/verify-hangar.mjs",
     "export:episode": "node scripts/export-episode.mjs",
     "verify:rapture": "node scripts/verify-rapture.mjs",
     "verify:rapture:browser": "node scripts/verify-rapture-browser.mjs",

@@ -118,7 +118,7 @@ try {
   await expect.poll(async () => (await saved()).frames.length).toBe(project.frames.length + 1);
   let current = await saved();
   const duplicate = current.frames.find(frame => frame.title.endsWith("(copy)"));
-assert.equal(duplicate.shotNumber, 377);
+assert.equal(duplicate.shotNumber, 389);
   assert.equal(duplicate.sceneId, "neonoire-s53a");
   await page.getByRole("button", { name: "Add frame", exact: true }).click();
   const dialog = page.getByRole("dialog");
@@ -128,12 +128,12 @@ assert.equal(duplicate.shotNumber, 377);
   await expect(dialog).toBeHidden();
   await expect.poll(async () => (await saved()).frames.length).toBe(project.frames.length + 2);
   current = await saved();
-assert.equal(current.frames.find(frame => frame.title === "Number allocation regression").shotNumber, 378);
+assert.equal(current.frames.find(frame => frame.title === "Number allocation regression").shotNumber, 389);
   assert.equal(new Set(current.frames.map(frame => frame.shotNumber)).size, project.frames.length + 2);
   await page.reload();
   await page.getByLabel("Filter by scene").selectOption("neonoire-s53a");
   await expect(page.locator(".frame-card")).toHaveCount(5);
-pass("duplicate and new-frame forms assign unique 377/378 identities and survive reload");
+pass("duplicate and new-frame forms assign unique 389/390 identities and survive reload");
 
   // Browser HTML drag events exercise the actual component callback, not only the pure sorter.
   const drag = async (from, to) => page.evaluate(({ from, to }) => {
@@ -146,14 +146,14 @@ pass("duplicate and new-frame forms assign unique 377/378 identities and survive
     source.dispatchEvent(new DragEvent("dragend", { bubbles: true, dataTransfer }));
   }, { from, to });
   await drag(298, 299);
-await expect.poll(async () => (await saved()).frames.filter(frame => frame.sceneId === "neonoire-s53a").map(frame => frame.shotNumber)).toEqual([297, 377, 299, 298, 378]);
+await expect.poll(async () => (await saved()).frames.filter(frame => frame.sceneId === "neonoire-s53a").map(frame => frame.shotNumber)).toEqual([297, 389, 299, 298, 390]);
   await page.reload();
   await expect(page.locator(".frame-card")).toHaveCount(project.frames.length + 2);
   const beforeCrossScene = (await saved()).frames.map(frame => frame.id);
   await drag(298, 1);
   assert.deepEqual((await saved()).frames.map(frame => frame.id), beforeCrossScene);
   await page.getByLabel("Filter by scene").selectOption("neonoire-s53a");
-assert.deepEqual(await boardNumbers(), [297, 377, 299, 298, 378]);
+assert.deepEqual(await boardNumbers(), [297, 389, 299, 298, 390]);
   pass("within-scene drag persists without renumbering; cross-scene drop cannot scramble the screenplay");
 
   const shared = await api.post(`/api/projects/${copyId}/share`, { data: { enabled: true } });

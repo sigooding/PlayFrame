@@ -13,13 +13,11 @@ A tiny kiosk wedged into the corner of a shopping arcade. An OLD TOBACCONIST (80
 Vera holds up the old photograph. The American man, two small girls, the noodle shop sign.
 
 VERA
-(in Japanese)
 My father worked near here, a long time ago. Do you know this place?
 
 The tobacconist puts on his glasses. Looks. Smiles with all his remaining teeth.
 
 OLD TOBACCONIST
-(in Japanese)
 Kaneko's. Of course. In the Hive.
 (beat)
 Not for long, though. They're knocking it all down.
@@ -27,10 +25,8 @@ Not for long, though. They're knocking it all down.
 Vera stares at him.
 
 VERA
-(in Japanese)
 It's still there?
 
 OLD TOBACCONIST
-(in Japanese)
 Everything is still there. Until it isn't.
 
