@@ -2,7 +2,7 @@
 
 ## Current — 6 October 2026: shot 73 retired; the cold open's lane geometry; Vera's emptiness frames (383–388)
 
-**Update, later 6 October: the car scene.** 333 retaken (see bible item 20). **10, 12 and 13 are still wrong and queued** (credits ran out). Also this day: shot 14's lip-synced video (OmniHuman 1.5, ~5,430 credits) lives in the two game repos only (`src/story/clips.ts` / the film builder), not in PlayFrame; the new sound beds and one-shots are in the games too.
+**Update, later 6 October: the car scene is done, and 13 other frames were retaken in scarlett-witness and synced back here** (bible items 20 and 21): 10, 12, 13, 361, 158–161, 320, 86, 87, 316, 89, 90, all archived first. Shot 14's lip-synced video and the new sound beds live in the two game repos only, not in PlayFrame.
 
 See the bible's Part 9 items 18-19. 366/366 keyframes, next free number **389**. Retaken in place (archived first): 14, 17, 18. New: 383, 384, 385, 386, 387, 388. Images are 1280×720 generations upscaled to 1920×1080 (lanczos). Open: 386 puts Vera at the window earlier than the script stands her; 388's shoes do not read; 14/17 caveats in their notes. The retired 73's picture, the old third-stool frames (160/161/225/260/265/266/358-360) and the saved-workspace description hashes for 14/17/18 (hand-added to `neonoire-scene6-sync.json`) are the loose ends.
 

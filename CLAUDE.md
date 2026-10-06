@@ -14,7 +14,7 @@ The storyboard card's `⋯` chooser and **Browse all images** only work because 
 
 **Shot 73 (the vending-machine frame, id `neonoire-shot-71`) is retired — number not reused, image stays on disk. Shots 14, 17, 18 were retaken to one lane layout (barbershop left, vending machine right, bar at the far end, sedan gone after 13; earlier versions archived). New: 383 (empty lane), 384–386 (Vera in her apartment), 387–388 (Vera's run in the red dress). 366/366 images, next free number 389.** Read the bible's Part 9 item 19 (open calls listed there) and the top of `docs/neonoire/handoff.md`.
 
-**Later the same day: the car scene audit (bible item 20): 333 retaken; 10, 12, 13 still show the wrong lane, a second car, a third man and Mara in view — retake them once the ElevenLabs credits are topped up.**
+**Later the same day: the car scene (bible item 20) is done — 333 retaken here; 10, 12, 13 and 11 other frames (361, 158–161, 320, 86, 87, 316, 89, 90) were retaken in scarlett-witness and synced back (item 21), old versions archived.**
 
 ## Previous session — 5 October 2026: the prologue, shot 377
 
