@@ -1,0 +1,1165 @@
+{
+  "id": "74a9cb34-9e80-4a04-a614-000000000070",
+  "title": "Untitled (working title): the cold open",
+  "description": "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, 8 scenes, 39 shots, almost no dialogue. No pictures yet.",
+  "genre": "Animated feature · mystery",
+  "format": "Feature",
+  "status": "In development",
+  "coverImage": "",
+  "acts": [
+    {
+      "id": "hangar-act-cold-open",
+      "title": "Cold open: 1944 to the creek",
+      "description": "A pilot, a hangar, a truck, a swerve, a fall and an empty crate. Nobody says what it is."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hangar-s1",
+      "number": "1",
+      "title": "Over Europe, 1944",
+      "location": "INT. COCKPIT, OVER EUROPE",
+      "time": "1944",
+      "description": "Black screen. A pilot on the radio, amazed: something is pacing his wing, copying him. A clicking in his headset: three quick, one slow. The order to fire. Gunfire, then silence. We never see what he shot.",
+      "characters": [
+        "hangar-red-two",
+        "hangar-red-leader"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Cold open",
+      "lighting": "Low key"
+    },
+    {
+      "id": "hangar-s2",
+      "number": "2",
+      "title": "Hangar 18",
+      "location": "INT. HANGAR 18, WRIGHT-PATTERSON",
+      "time": "NIGHT, 1975",
+      "description": "A Senate hearing on a guard-booth TV while airmen empty the hangar. One crate sits apart, stenciled INERT; nobody reads it aloud. The sergeant's coffee ring on its lid, his hand laid flat on it. The trucker signs for AGRICULTURAL EQUIPMENT without looking up.",
+      "characters": [
+        "hangar-airman",
+        "hangar-sergeant",
+        "hangar-trucker"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Practical night"
+    },
+    {
+      "id": "hangar-s3",
+      "number": "3",
+      "title": "The back road",
+      "location": "EXT./INT. TRUCK, BACK ROAD",
+      "time": "NIGHT",
+      "description": "Past the weigh station and into the Ohio hills, fog in the hollows, warm dash lights. An unmarked sedan trails. A knock from the trailer, then another; the airman taps his knee along: three quick, one slow. Three knocks. The slow one never comes.",
+      "characters": [
+        "hangar-airman",
+        "hangar-trucker"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Practical night"
+    },
+    {
+      "id": "hangar-s4",
+      "number": "4",
+      "title": "The swerve",
+      "location": "EXT. THE BEND, BACK ROAD",
+      "time": "NIGHT",
+      "description": "A station wagon drifts over the center line; both drivers yank the wheel. The mirror snaps off, a nurse's cap flies out of the window, the trailer fishtails, the missing slow knock lands and the rear doors burst open. Skid or something inside? The crate slides over the edge.",
+      "characters": [
+        "hangar-mom",
+        "hangar-trucker",
+        "hangar-airman"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Practical night"
+    },
+    {
+      "id": "hangar-s5",
+      "number": "5",
+      "title": "The fall",
+      "location": "EXT. WOODED BANK",
+      "time": "NIGHT",
+      "description": "The crate tumbles down the bank, shedding boards. The camera rides inside: darkness, flashes of light through the cracks, nothing you can make out. It lands by the creek, split open. Silence. Then the crickets.",
+      "characters": [],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Low key"
+    },
+    {
+      "id": "hangar-s6",
+      "number": "6",
+      "title": "Topside",
+      "location": "EXT. THE ROADSIDE, ABOVE THE BANK",
+      "time": "NIGHT",
+      "description": "She didn't stop. Road flares in red fog, the sedan screeching up. An agent picks up the white cap and the snapped-off mirror and pockets both. Down the bank.",
+      "characters": [
+        "hangar-agents",
+        "hangar-trucker",
+        "hangar-airman"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Practical night"
+    },
+    {
+      "id": "hangar-s7",
+      "number": "7",
+      "title": "The crate",
+      "location": "EXT. THE CREEK BANK",
+      "time": "NIGHT",
+      "description": "Empty. A small hollow in thirty-year-old straw. Every inch of the inside walls scratched with thousands of tiny marks, each with a stroke through it, the newest bright and fresh-cut. It was counting. The far corner, where a few marks are uncrossed, is left in the dark.",
+      "characters": [
+        "hangar-agents",
+        "hangar-airman"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Practical night"
+    },
+    {
+      "id": "hangar-s8",
+      "number": "8",
+      "title": "Far off in the woods",
+      "location": "EXT. THE WOODS ABOVE THE CREEK",
+      "time": "NIGHT",
+      "description": "Faintly, three quick clicks and one slow, moving away. The agents do not notice; the airman does. The flare sputters out. Black, then the title.",
+      "characters": [
+        "hangar-airman",
+        "hangar-agents"
+      ],
+      "actId": "hangar-act-cold-open",
+      "kind": "Standard",
+      "lighting": "Low key"
+    }
+  ],
+  "frames": [
+    {
+      "id": "hangar-shot-01",
+      "shotNumber": 1,
+      "sceneId": "hangar-s1",
+      "title": "Black: the radio",
+      "description": "Black screen. Radio hiss, the drone of an engine, and a pilot who sounds amazed, not scared: \"It's copying me.\"",
+      "image": "",
+      "shotType": "Establishing",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Low key",
+      "duration": 40,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Fade in",
+      "characters": [
+        "hangar-red-two",
+        "hangar-red-leader"
+      ],
+      "notes": "Script: \"BLACK SCREEN. Before any picture, a radio hiss and the drone of an engine.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-02",
+      "shotNumber": 2,
+      "sceneId": "hangar-s1",
+      "title": "Three quick, one slow",
+      "description": "Still black. The clicking in the headset: three quick, one slow. This is the film's signature sound; record it once and use it everywhere.",
+      "image": "",
+      "shotType": "Establishing",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Low key",
+      "duration": 12,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-red-two"
+      ],
+      "notes": "Script: \"In his headset, a strange clicking, in a distinct rhythm: three quick, one slow.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-03",
+      "shotNumber": 3,
+      "sceneId": "hangar-s1",
+      "title": "Gunfire, then silence",
+      "description": "A long pause. Gunfire. Silence. We never see what he shot: hold the black.",
+      "image": "",
+      "shotType": "Establishing",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Low key",
+      "duration": 14,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-red-two",
+        "hangar-red-leader"
+      ],
+      "notes": "Script: \"A long pause. Then gunfire. Then silence.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-04",
+      "shotNumber": 4,
+      "sceneId": "hangar-s2",
+      "title": "Wright-Patterson at night",
+      "description": "Fade up on the base: hangar doors open on yellow light, airmen moving crates in the dark, a truck backed to the door. Painted night, wet concrete, one flag.",
+      "image": "",
+      "shotType": "Establishing",
+      "movement": "Crane down",
+      "angle": "High angle",
+      "lens": "24mm",
+      "lighting": "Blue hour",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"Fade up on Wright-Patterson at night.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-05",
+      "shotNumber": 5,
+      "sceneId": "hangar-s2",
+      "title": "The guard-booth TV",
+      "description": "A small television in the guard booth: a Senate hearing, flickering. A voice: \"what else has been kept from the American people.\" Nobody in the booth looks up.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"A TV in the guard booth shows a Senate hearing while airmen quietly empty the hangar.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-06",
+      "shotNumber": 6,
+      "sceneId": "hangar-s2",
+      "title": "WRIGHT FIELD 1944 - INERT",
+      "description": "One crate sits apart from the rest, stenciled WRIGHT FIELD 1944 - INERT. Nobody reads it aloud.",
+      "image": "",
+      "shotType": "Medium wide",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"One crate sits apart from the others, stenciled WRIGHT FIELD 1944 - INERT. Nobody reads it aloud.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-07",
+      "shotNumber": 7,
+      "sceneId": "hangar-s2",
+      "title": "The coffee ring",
+      "description": "The sergeant sets his cup on the lid, exactly into a ring worn into the wood. Then he remembers, and picks it back up.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-sergeant"
+      ],
+      "notes": "Script: \"sets his coffee cup on the lid, right into a ring worn into the wood.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-08",
+      "shotNumber": 8,
+      "sceneId": "hangar-s2",
+      "title": "Hand flat on the lid",
+      "description": "On his way past, the sergeant rests his hand flat on the lid, the way you would steady a sleeping animal.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-sergeant"
+      ],
+      "notes": "Script: \"he rests his hand flat on the lid, the way you would steady a sleeping animal.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-09",
+      "shotNumber": 9,
+      "sceneId": "hangar-s2",
+      "title": "Don't you want to know?",
+      "description": "The airman holds out a clipboard. The trucker signs without looking up. AGRICULTURAL EQUIPMENT on the manifest.",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-airman",
+        "hangar-trucker"
+      ],
+      "notes": "Script: \"Don't you want to know what's in it?\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-10",
+      "shotNumber": 10,
+      "sceneId": "hangar-s3",
+      "title": "Past the weigh station",
+      "description": "The truck blows past a sign ordering all trucks into the weigh station, and keeps going.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Tracking",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Blue hour",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-trucker"
+      ],
+      "notes": "Script: \"The truck blows past a sign ordering all trucks into the weigh station.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-11",
+      "shotNumber": 11,
+      "sceneId": "hangar-s3",
+      "title": "Into the hills",
+      "description": "A twisting two-lane climbing into the Ohio hills. Fog in the hollows, warm dash light against the blue night, an unmarked sedan a quarter mile back.",
+      "image": "",
+      "shotType": "Extreme wide",
+      "movement": "Crane up",
+      "angle": "High angle",
+      "lens": "24mm",
+      "lighting": "Blue hour",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"It turns onto a twisting two-lane and climbs into the Ohio hills\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-12",
+      "shotNumber": 12,
+      "sceneId": "hangar-s3",
+      "title": "The cab",
+      "description": "Warm dash lights. The trucker grumbles: \"First time anybody paid me to skip a scale.\" The airman in civilian clothes, hands on his knees.",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-trucker",
+        "hangar-airman"
+      ],
+      "notes": "Script: \"First time anybody paid me to skip a scale.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-13",
+      "shotNumber": 13,
+      "sceneId": "hangar-s3",
+      "title": "A knock from the trailer",
+      "description": "Then another. They both look back through the rear window at the dark trailer. \"Load's shifting.\"",
+      "image": "",
+      "shotType": "Over the shoulder",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-trucker",
+        "hangar-airman"
+      ],
+      "notes": "Script: \"A knock from the trailer. Then another. They both look back.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-14",
+      "shotNumber": 14,
+      "sceneId": "hangar-s3",
+      "title": "One-two-three... four",
+      "description": "The airman begins to tap his knee along with the knocks, under his breath: three quick, one slow.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-airman"
+      ],
+      "notes": "Script: \"One-two-three... four. One-two-three... four.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-15",
+      "shotNumber": 15,
+      "sceneId": "hangar-s3",
+      "title": "The slow one never arrives",
+      "description": "Three quick knocks. No fourth. He waits, one finger raised, in silence. \"There. Settled.\"",
+      "image": "",
+      "shotType": "Extreme close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-airman"
+      ],
+      "notes": "Script: \"Three quick knocks. The slow one never arrives.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-16",
+      "shotNumber": 16,
+      "sceneId": "hangar-s4",
+      "title": "Headlights round the bend",
+      "description": "A station wagon comes around the bend, drifting over the center line.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-mom"
+      ],
+      "notes": "Script: \"A station wagon comes around the bend, drifting over the center line.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-17",
+      "shotNumber": 17,
+      "sceneId": "hangar-s4",
+      "title": "Two more miles",
+      "description": "The nurse, window down to stay awake, eyes heavy: \"Come on. Two more miles.\"",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-mom"
+      ],
+      "notes": "Script: \"Come on. Two more miles.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-18",
+      "shotNumber": 18,
+      "sceneId": "hangar-s4",
+      "title": "Both drivers yank the wheel",
+      "description": "Horn and tires. The wagon scrapes past the truck's cab with inches to spare.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Handheld",
+      "angle": "Low angle",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-mom",
+        "hangar-trucker"
+      ],
+      "notes": "Script: \"Both drivers yank the wheel.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-19",
+      "shotNumber": 19,
+      "sceneId": "hangar-s4",
+      "title": "The mirror, the cap",
+      "description": "Her side mirror snaps off. Her nurse's cap flies out of the window and spins down onto the asphalt.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-mom"
+      ],
+      "notes": "Script: \"its side mirror snaps off and her nurse's cap flies out of the window.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-20",
+      "shotNumber": 20,
+      "sceneId": "hangar-s4",
+      "title": "The skid",
+      "description": "The trailer fishtails across the road, headlights swinging across the trees.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Tracking",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-trucker"
+      ],
+      "notes": "Script: \"The trailer fishtails\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-21",
+      "shotNumber": 21,
+      "sceneId": "hangar-s4",
+      "title": "The missing knock",
+      "description": "In the middle of the skid, the slow knock lands, hard. The rear doors burst open. We cannot tell whether the skid threw them or something inside did.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"the missing slow knock lands, hard.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-22",
+      "shotNumber": 22,
+      "sceneId": "hangar-s4",
+      "title": "Over the edge",
+      "description": "The crate slides out of the trailer and over the edge of the bank.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"The crate slides out and over the edge.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-23",
+      "shotNumber": 23,
+      "sceneId": "hangar-s5",
+      "title": "Down the bank",
+      "description": "The crate tumbles through the trees, shedding boards, slamming into trunks.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Tracking",
+      "angle": "Eye level",
+      "lens": "24mm",
+      "lighting": "Low key",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"The crate tumbles down the wooded bank, slamming into trees and shedding boards.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-24",
+      "shotNumber": 24,
+      "sceneId": "hangar-s5",
+      "title": "Inside the crate",
+      "description": "The camera rides inside with it: darkness, flashes of light through the cracks, nothing you can make out.",
+      "image": "",
+      "shotType": "POV",
+      "movement": "Handheld",
+      "angle": "Eye level",
+      "lens": "14mm",
+      "lighting": "Low key",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"The camera rides inside with it: darkness, flashes of light through the cracks, nothing you can make out.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-25",
+      "shotNumber": 25,
+      "sceneId": "hangar-s5",
+      "title": "By the creek",
+      "description": "It lands by the creek, split open. Silence. Then the crickets start up again.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Low key",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"It lands by the creek, split open.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-26",
+      "shotNumber": 26,
+      "sceneId": "hangar-s6",
+      "title": "Taillights",
+      "description": "The wagon's taillights disappear around the bend. She didn't stop.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 5,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-mom"
+      ],
+      "notes": "Script: \"The wagon's taillights disappear around the bend. She didn't stop.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-27",
+      "shotNumber": 27,
+      "sceneId": "hangar-s6",
+      "title": "Road flares",
+      "description": "The trucker lights road flares; the sedan screeches up. Red light on fog.",
+      "image": "",
+      "shotType": "Medium",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-trucker",
+        "hangar-agents"
+      ],
+      "notes": "Script: \"The Trucker lights road flares.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-28",
+      "shotNumber": 28,
+      "sceneId": "hangar-s6",
+      "title": "The white cap",
+      "description": "An agent picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-agents"
+      ],
+      "notes": "Script: \"picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-29",
+      "shotNumber": 29,
+      "sceneId": "hangar-s6",
+      "title": "Where is it?",
+      "description": "\"Where is it?\" The trucker, shaking, points down the bank: \"Some lady in a wagon, she just came right at me.\"",
+      "image": "",
+      "shotType": "Two-shot",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-agents",
+        "hangar-trucker"
+      ],
+      "notes": "Script: \"Down there. Some lady in a wagon, she just came right at me.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-30",
+      "shotNumber": 30,
+      "sceneId": "hangar-s6",
+      "title": "Down through red fog",
+      "description": "Two agents and the airman start down the bank through fog lit red by the flares. Flares, not flashlight beams: this is the film's own light.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Crane down",
+      "angle": "High angle",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-agents",
+        "hangar-airman"
+      ],
+      "notes": "Script: \"Then the two agents and the Airman start down the bank through red fog.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-31",
+      "shotNumber": 31,
+      "sceneId": "hangar-s7",
+      "title": "Empty",
+      "description": "The crate, split open on the creek bank. It is empty.",
+      "image": "",
+      "shotType": "Medium wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-agents"
+      ],
+      "notes": "Script: \"The crate is empty.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-32",
+      "shotNumber": 32,
+      "sceneId": "hangar-s7",
+      "title": "The hollow in the straw",
+      "description": "A small hollow pressed into thirty-year-old packing straw, where something lay curled up.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"A small hollow is pressed into thirty-year-old packing straw, where something lay curled up.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-33",
+      "shotNumber": 33,
+      "sceneId": "hangar-s7",
+      "title": "INERT in the creek",
+      "description": "A broken board stenciled INERT lies half-sunk in the water.",
+      "image": "",
+      "shotType": "Insert",
+      "movement": "Static",
+      "angle": "High angle",
+      "lens": "50mm",
+      "lighting": "Practical night",
+      "duration": 4,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"A broken board stenciled INERT lies half-sunk in the creek.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-34",
+      "shotNumber": 34,
+      "sceneId": "hangar-s7",
+      "title": "Rows of marks",
+      "description": "An agent holds his flare low to the inside wall. The red light rakes across rows of tiny scratched marks, thousands of them, covering every inch.",
+      "image": "",
+      "shotType": "Extreme close-up",
+      "movement": "Tracking",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 9,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-agents"
+      ],
+      "notes": "Script: \"the light rakes across rows of tiny scratched marks, thousands of them, covering every inch.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-35",
+      "shotNumber": 35,
+      "sceneId": "hangar-s7",
+      "title": "The newest stroke",
+      "description": "Each mark has a short stroke cut through it. The newest is bright, fresh-cut wood. It was counting.",
+      "image": "",
+      "shotType": "Extreme close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"The newest stroke is bright, fresh-cut wood.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-36",
+      "shotNumber": 36,
+      "sceneId": "hangar-s7",
+      "title": "The far corner",
+      "description": "The flare does not reach the far corner, where a few marks are still uncrossed. Nobody looks there. Hold on the dark long enough that the audience does.",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "50mm",
+      "lighting": "Low key",
+      "duration": 8,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"The flare does not reach the far corner, where a few marks are still uncrossed.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-37",
+      "shotNumber": 37,
+      "sceneId": "hangar-s8",
+      "title": "Far off",
+      "description": "Faintly, three quick clicks and one slow, moving away through the trees.",
+      "image": "",
+      "shotType": "Wide",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "35mm",
+      "lighting": "Low key",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"Far off in the woods, faintly: three quick clicks and one slow, moving away.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-38",
+      "shotNumber": 38,
+      "sceneId": "hangar-s8",
+      "title": "Only the airman hears",
+      "description": "The agents don't notice. The airman does, his lips moving: \"One-two-three... four.\"",
+      "image": "",
+      "shotType": "Close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Practical night",
+      "duration": 7,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [
+        "hangar-airman"
+      ],
+      "notes": "Script: \"The agents don't notice. The Airman does.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    },
+    {
+      "id": "hangar-shot-39",
+      "shotNumber": 39,
+      "sceneId": "hangar-s8",
+      "title": "The flare sputters out",
+      "description": "The flare dies. Cut to black, then the title.",
+      "image": "",
+      "shotType": "Extreme close-up",
+      "movement": "Static",
+      "angle": "Eye level",
+      "lens": "85mm",
+      "lighting": "Low key",
+      "duration": 6,
+      "durationIsEstimate": true,
+      "status": "Needs review",
+      "transition": "Cut",
+      "characters": [],
+      "notes": "Script: \"The flare sputters out.\"\n\nNo picture yet: this card holds the shot's slot. The look is painted, hand-drawn animation: warm light against blue night, fog, weight in the characters. Nothing is ever named."
+    }
+  ],
+  "characters": [
+    {
+      "id": "hangar-red-two",
+      "name": "Red Two",
+      "role": "Pilot (voice)",
+      "age": "1944",
+      "description": "A fighter pilot over Europe, heard and never seen. He sounds amazed, not scared. He does not want to fire.",
+      "traits": [
+        "Amazed",
+        "Obedient"
+      ],
+      "color": "sand",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "hangar-red-leader",
+      "name": "Red Leader",
+      "role": "Flight leader (voice)",
+      "age": "1944",
+      "description": "Gives the order. Assumes a trick from the Germans (\"a Jerry trick\").",
+      "traits": [
+        "Clipped",
+        "Certain"
+      ],
+      "color": "clay",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "hangar-airman",
+      "name": "The Airman",
+      "role": "Young airman",
+      "age": "22",
+      "description": "Sent along in civilian clothes to see the load safely off the base. He is the first to notice the knocks are a rhythm, and the only one who hears the clicks at the end.",
+      "traits": [
+        "Observant",
+        "Curious"
+      ],
+      "color": "sage",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "hangar-sergeant",
+      "name": "The Sergeant",
+      "role": "Old sergeant",
+      "age": "58",
+      "description": "Has watched these crates for decades. Sets his coffee on the lid out of habit, then rests his hand flat on it, the way you would steady a sleeping animal. Did he know it was awake?",
+      "traits": [
+        "Quiet",
+        "Habitual"
+      ],
+      "color": "sand",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "hangar-trucker",
+      "name": "The Trucker",
+      "role": "Civilian driver",
+      "age": "50",
+      "description": "Thirty years on the road. Signs for AGRICULTURAL EQUIPMENT without looking up. The only joke in the open is his.",
+      "traits": [
+        "Dry",
+        "Incurious"
+      ],
+      "color": "clay",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "hangar-mom",
+      "name": "The Nurse (Mom)",
+      "role": "The boy's mother",
+      "age": "34",
+      "description": "Coming off a double shift, window down to stay awake, nodding off at the wheel. Never stops. Never knows what she nearly hit, or what she left behind: her side mirror and her cap.",
+      "traits": [
+        "Exhausted",
+        "Kind"
+      ],
+      "color": "rose",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    },
+    {
+      "id": "hangar-agents",
+      "name": "The Agents",
+      "role": "Two men in suits",
+      "age": "40s",
+      "description": "Arrive in an unmarked sedan. One pockets the nurse's cap and the snapped-off mirror: the thread to the boy's house.",
+      "traits": [
+        "Methodical",
+        "Cold"
+      ],
+      "color": "clay",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "relations": []
+    }
+  ],
+  "notes": [
+    {
+      "id": "hangar-note-start-here",
+      "title": "Start here: what this is",
+      "color": "sage",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "tags": [
+        "Read first"
+      ],
+      "connections": [],
+      "content": "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has 39 shots with no pictures yet. Acts one to three come next."
+    },
+    {
+      "id": "hangar-note-seeds",
+      "title": "Seeds the cold open plants",
+      "color": "sand",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "tags": [
+        "Plot",
+        "Setups"
+      ],
+      "connections": [],
+      "content": "1. The nurse's cap and the snapped-off mirror lead the agents and the detective to the boy's house by different routes.\n2. The rhythm (three quick, one slow) ties the airman, the pilot and the machine together before any character notices.\n3. The uncrossed marks in the dark corner are the act-two flip: it was not counting days served, it was counting days left. Decide the exact number now; it sets the length of the film's clock.\n4. The coffee ring leaves an open question: did the sergeant know it was awake?\n5. The airman is the only one who hears the clicks at the end: he is the government's way in to the boy, and the audience's."
+    },
+    {
+      "id": "hangar-note-rules",
+      "title": "Rules for the look and the sound",
+      "color": "rose",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "tags": [
+        "Rules"
+      ],
+      "connections": [],
+      "content": "Nobody says alien, robot or UFO. Flares, not flashlight beams, outdoors. One recording of the three-quick-one-slow rhythm, used in 1944, in the trailer and in the woods. Never show what the pilot shot; never show what is in the crate. The 1975 setting is deliberate: Church Committee, post-Watergate paranoia, Blue Book already closed."
+    },
+    {
+      "id": "hangar-note-open",
+      "title": "Open questions",
+      "color": "sage",
+      "createdAt": "2026-10-07T00:00:00.000Z",
+      "tags": [
+        "Questions"
+      ],
+      "connections": [],
+      "content": "Title. Why does it move now, after thirty years? How many uncrossed marks (the film's clock)? Is the sergeant the old pilot? Does the airman cross sides? What is the exact count of marks the agents see? The robot's origin stays unexplained: a 1944 shoot-down, bodies and one small machine sent to Wright-Patterson."
+    }
+  ],
+  "brainstorm": [
+    {
+      "id": "hangar-brain-1",
+      "x": 60,
+      "y": 40,
+      "title": "The boy",
+      "content": "11. His mum works double shifts; he is alone at night and rides his bike in the woods. Both of them are waiting for someone who is not coming back. His dad left.",
+      "color": "sage",
+      "tags": [
+        "Concept"
+      ],
+      "connections": [],
+      "createdAt": "2026-10-07T00:00:00.000Z"
+    },
+    {
+      "id": "hangar-brain-2",
+      "x": 360,
+      "y": 40,
+      "title": "The machine",
+      "content": "Rounded, worn, nothing like a lab. It does not say what it is. It copies sounds. The clicking is its first word.",
+      "color": "sand",
+      "tags": [
+        "Concept"
+      ],
+      "connections": [
+        "hangar-brain-1"
+      ],
+      "createdAt": "2026-10-07T00:00:00.000Z"
+    },
+    {
+      "id": "hangar-brain-3",
+      "x": 660,
+      "y": 40,
+      "title": "The detective",
+      "content": "An ex-debunker from Project Blue Book (Wright-Patterson was its headquarters). Spent a career explaining things away; now has to listen to the people he used to dismiss.",
+      "color": "rose",
+      "tags": [
+        "Concept"
+      ],
+      "connections": [
+        "hangar-brain-2"
+      ],
+      "createdAt": "2026-10-07T00:00:00.000Z"
+    },
+    {
+      "id": "hangar-brain-4",
+      "x": 60,
+      "y": 260,
+      "title": "The battery",
+      "content": "It has been running on almost nothing for thirty years, playing dead. Being awake with the boy spends what it saved. The marks are the clock.",
+      "color": "clay",
+      "tags": [
+        "Concept"
+      ],
+      "connections": [
+        "hangar-brain-3"
+      ],
+      "createdAt": "2026-10-07T00:00:00.000Z"
+    },
+    {
+      "id": "hangar-brain-5",
+      "x": 360,
+      "y": 260,
+      "title": "The government",
+      "content": "Do not know what they have. The scarier for it. They are about to make the same mistake as 1944: shoot first.",
+      "color": "sage",
+      "tags": [
+        "Concept"
+      ],
+      "connections": [
+        "hangar-brain-4"
+      ],
+      "createdAt": "2026-10-07T00:00:00.000Z"
+    }
+  ],
+  "moodboards": [],
+  "script": "Title: Untitled (working title)\nCredit: The cold open\nAuthor: [Your Name]\nDraft date: October 2026\n\n===\n\n>THE LOOK<\n\nOhio, 1975, painted rather than photographed: warm dashboard light against blue night, fog in the hollows, wood paneling and station wagons. Soft hand-painted backgrounds and weather; characters drawn plainly and with weight. Small-town Americana that makes something strange feel real.\n\nNobody in this film ever says \"alien\", \"robot\" or \"UFO\".\n\n>THE SOUND<\n\nThree quick clicks, one slow. It is the same recording over a pilot's headset in 1944, as knocks inside a trailer in 1975, and far off in the woods at the end.\n\n===\n\nINT. COCKPIT, OVER EUROPE - 1944 #1#\n\nBLACK SCREEN. Before any picture, a radio hiss and the drone of an engine.\n\nRED TWO (V.O.)\nRed Leader, I've got something on my right wing.\n\nRED LEADER (V.O.)\nSay again, Red Two.\n\nRED TWO (V.O.)\nNo markings. It's glowing. I bank, it banks. It's copying me.\n\nIn his headset, a strange clicking, in a distinct rhythm: three quick, one slow.\n\nRED LEADER (V.O.)\nCould be a Jerry trick. Take it down.\n\nRED TWO (V.O.)\nIt's not doing anything. It's just flying with me.\n\nRED LEADER (V.O.)\nThat's an order.\n\nA long pause. Then gunfire. Then silence. We never see what he shot.\n\nINT. HANGAR 18, WRIGHT-PATTERSON - NIGHT, 1975 #2#\n\nFade up on Wright-Patterson at night. A TV in the guard booth shows a Senate hearing while airmen quietly empty the hangar.\n\nTV (V.O.)\n...the question before this committee is what else has been kept from the American people.\n\nOne crate sits apart from the others, stenciled WRIGHT FIELD 1944 - INERT. Nobody reads it aloud.\n\nAn old SERGEANT, who has watched these crates for decades, sets his coffee cup on the lid, right into a ring worn into the wood. Then he remembers, and picks it back up. On his way past, he rests his hand flat on the lid, the way you would steady a sleeping animal.\n\nA young AIRMAN hands a clipboard to a civilian TRUCKER.\n\nAIRMAN\nDon't you want to know what's in it?\n\nTRUCKER\n(signing without looking up)\nNope.\n\nThe manifest reads AGRICULTURAL EQUIPMENT.\n\nEXT./INT. TRUCK, BACK ROAD - NIGHT #3#\n\nThe truck blows past a sign ordering all trucks into the weigh station. It turns onto a twisting two-lane and climbs into the Ohio hills: fog in the hollows, warm dash lights against the blue night. The Airman rides along in civilian clothes. An unmarked sedan trails a quarter mile back.\n\nTRUCKER\nThirty years driving. First time anybody paid me to skip a scale.\n\nA knock from the trailer. Then another. They both look back.\n\nTRUCKER (CONT'D)\nLoad's shifting.\n\nThe Airman starts tapping his knee along with it, under his breath.\n\nAIRMAN\nOne-two-three... four. One-two-three... four.\n\nThree quick knocks. The slow one never arrives. He waits, one finger raised, in silence.\n\nTRUCKER\nThere. Settled.\n\nEXT. THE BEND, BACK ROAD - NIGHT #4#\n\nA station wagon comes around the bend, drifting over the center line. The driver is a NURSE coming off a double shift, window down to stay awake, nodding off. She is the boy's MOM.\n\nMOM\n(to herself)\nCome on. Two more miles.\n\nBoth drivers yank the wheel. The wagon scrapes past; its side mirror snaps off and her nurse's cap flies out of the window. The trailer fishtails, and in the middle of the skid the missing slow knock lands, hard. The rear doors burst open. We cannot tell whether the skid threw them or something inside did.\n\nThe crate slides out and over the edge.\n\nEXT. WOODED BANK - NIGHT #5#\n\nThe crate tumbles down the wooded bank, slamming into trees and shedding boards. The camera rides inside with it: darkness, flashes of light through the cracks, nothing you can make out.\n\nIt lands by the creek, split open. Silence. Then the crickets start up again.\n\nEXT. THE ROADSIDE, ABOVE THE BANK - NIGHT #6#\n\nThe wagon's taillights disappear around the bend. She didn't stop.\n\nThe Trucker lights road flares. The sedan screeches up and two men in suits get out. One of them, an AGENT, picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.\n\nAGENT\nWhere is it?\n\nTRUCKER\n(pointing down the bank, shaking)\nDown there. Some lady in a wagon, she just came right at me.\n\nThe Agent looks at the white cap in his hand. Then the two agents and the Airman start down the bank through red fog.\n\nEXT. THE CREEK BANK - NIGHT #7#\n\nThe crate is empty. A small hollow is pressed into thirty-year-old packing straw, where something lay curled up. A broken board stenciled INERT lies half-sunk in the creek.\n\nAn agent holds his flare low to the inside wall, and the light rakes across rows of tiny scratched marks, thousands of them, covering every inch. Each mark has a short stroke cut through it. The newest stroke is bright, fresh-cut wood.\n\nIt was counting.\n\nThe flare does not reach the far corner, where a few marks are still uncrossed. Nobody looks there.\n\nEXT. THE WOODS ABOVE THE CREEK - NIGHT #8#\n\nFar off in the woods, faintly: three quick clicks and one slow, moving away. The agents don't notice. The Airman does.\n\nAIRMAN\n(barely audible, lips moving)\nOne-two-three... four.\n\nThe flare sputters out.\n\nCUT TO BLACK.\n\nTITLE CARD.\n",
+  "shareId": null,
+  "createdAt": "2026-10-07T00:00:00.000Z",
+  "updatedAt": "2026-10-07T00:00:00.000Z"
+}
