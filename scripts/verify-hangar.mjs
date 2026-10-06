@@ -1,7 +1,7 @@
 // npm run verify:hangar: the cold-open workspace's schema, ceilings, source fidelity and isolation.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
@@ -26,10 +26,20 @@ assert(project.frames.length <= MAX_FRAMES && project.scenes.length <= MAX_SCENE
 assert.equal(project.scenes.length, 8);
 assert.equal(project.frames.length, 39);
 assert.deepEqual(framesInSceneOrder(project.frames, project.scenes).map(f => f.id), project.frames.map(f => f.id), "frames are already in scene order");
-assert(project.frames.every(f => f.image === "" && f.status === "Needs review"), "no frame borrows a picture; each says it still needs one");
+const delivered = project.frames.filter(f => f.image !== "");
+assert(delivered.every(f => f.image.startsWith("/images/hangar/")), "every picture is this project's own; nothing is borrowed");
+assert(delivered.every(f => existsSync(join(root, "public", f.image))), "every picture a card points at is on disk");
+assert(delivered.every(f => f.status === "Draft" && /^Picture: /m.test(f.notes)), "a boarded shot is a Draft and its note names its picture");
+assert(project.frames.filter(f => f.image === "").every(f => f.status === "Needs review" && /No picture yet: this card holds the shot's slot and is waiting for public\/images\/hangar\//.test(f.notes)), "an unboarded shot keeps an honest placeholder naming the file it awaits");
+assert.equal(delivered.length, 13, "13 of the 39 shots are boarded (scenes 1 to 3)");
+assert.deepEqual(delivered.map(f => f.shotNumber), [1,2,3,4,5,6,7,8,9,10,11,12,13], "the delivered run is shots 1-13, in order");
+for (const frame of delivered) {
+  const size = execFileSync("identify", ["-format", "%wx%h", join(root, "public", frame.image)], { encoding: "utf8" });
+  assert.equal(size, "1920x1080", `shot ${frame.shotNumber}: every picture is 16:9 full-bleed 1920x1080`);
+}
 assert(project.frames.every(f => project.scenes.some(s => s.id === f.sceneId)), "every frame belongs to a scene");
 assert.equal(new Set(project.frames.map(f => f.shotNumber)).size, project.frames.length, "shot numbers are unique");
-pass("8 scenes, 39 shots, in order, none with a borrowed picture");
+pass(`8 scenes, 39 shots, in order; ${delivered.length} boarded at 1920x1080, ${project.frames.length - delivered.length} honest placeholders, none borrowed`);
 
 const text = project.script;
 for (const word of ["alien", "robot", "UFO"]) {

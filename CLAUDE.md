@@ -12,6 +12,8 @@ The storyboard card's `⋯` chooser and **Browse all images** only work because 
 
 ## Second project — 7 October 2026: the animated cold open (working title)
 
+**The cold open now has pictures: 13 of its 39 shots (7 October 2026).** `public/images/hangar/` is no longer empty — scene 1's three shots are *rendered black frames* (the screenplay holds black), shots 4–13 are AI draft studies at 1920×1080, and the other 26 cards keep honest placeholders naming the file each awaits. The delivered/pending split lives in `scripts/hangar/build-project.mjs` (`keyframes` and `pending`); `npm run verify:hangar` asserts it, the on-disk files and their size. The never-overwrite rule above now binds `public/images/hangar/` as well. Ledger: [`docs/hangar/passes/keyframes-1-2026-10-07.md`](docs/hangar/passes/keyframes-1-2026-10-07.md). Image generation is capped at ten per turn, so the remaining 26 come in later passes.
+
 **`docs/hangar/README.md`.** A new bundled workspace beside Nobody's Witness, from the director's other conversation: an animated 1975 feature's cold open (8 scenes, 39 shots, no pictures yet), opened from Templates. It touches nothing in Nobody's Witness; `npm run verify:hangar` guards the isolation. Every scene and shot carries the new house style `hangar` (Painted Americana '75: Iron Giant people over Ghibli backgrounds) plus mood, lighting direction, transition, sound and framing; read the README's last section before editing a shot's notes (the video prompts parse them). Its pictures will go in `public/images/hangar/` under the same never-overwrite rule.
 
 ## Latest session — 6 October 2026: shot 73 retired, the cold open's geometry, Vera's emptiness frames
