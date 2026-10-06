@@ -29,7 +29,7 @@ The black rotary phone RINGS.
 He answers. Listens.
 
 KANEKO (V.O.)
-(in Japanese; filtered)
+(filtered)
 Come back. Alone. After the last train.
 
 The line clicks dead.

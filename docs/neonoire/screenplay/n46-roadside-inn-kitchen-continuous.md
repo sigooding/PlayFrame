@@ -13,7 +13,6 @@ Jack pushes Mr. Noda into the pantry beside his wife. The old couple clutch each
 Jack looks at them.
 
 JACK
-(in Japanese)
 I'm sorry.
 
 He shuts the door. He goes out the back.

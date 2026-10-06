@@ -15,7 +15,6 @@ Jack sits on the floor against the wall. He has been hiding here since the newsp
 The curtain opens. Kaneko.
 
 KANEKO
-(in Japanese)
 Someone for you.
 
 She stands aside.
@@ -110,7 +109,6 @@ Silence. A train passes overhead. The bulb swings.
 And under the train, so quietly it's almost part of it: in the passage outside, a man's voice, murmuring into his sleeve.
 
 MASKED MAN (O.S.)
-(in Japanese)
 Position.
 
 Jack's head snaps round. Vera sees his face and understands.

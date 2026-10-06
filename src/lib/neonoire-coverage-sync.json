@@ -1,5 +1,5 @@
 {
-  "note": "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, 369–376 second-pass frames, and 377 the prologue's Hive) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
+  "note": "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, 369–376 second-pass frames, 377 the prologue's Hive, and 378–382 the Hive escape's five rooms) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
   "priorScriptHashes": [
     "96bffed2d66d8220a64bd01360b482c465d858489fbd90583aaeb68dcaed6bfc",
     "d8603cb65c4beb0aa3707040645ca6d59860775fc3e15fc0a47880e3c91f8bb4",
@@ -10,7 +10,8 @@
     "445752a28c645dd4d234693abdfd950133e8f9290cc393f1c2b41b2d4cd5cd8b",
     "a6f4f57ebfbf2b23495fb966f0f8150a5fbcc1160611a7f974a569db9cec0355",
     "283e7549d7f834205af0274caf19cf39fff07c234fc264879a8d791deb672752",
-    "cc2d908440e562030f2dbc28565abc361f2fae565b6ea7b1c513bac2685e8fec"
+    "e8877348a800d24c2c2f9f3de8f7dc9b4229d1b91c4a84f48bf8a6292b2d9ece",
+    "1563c61a748d636b3524801aaa27c7273274a14bfd0176c88d92127435bbd75c"
   ],
   "newFrameIds": [
     "neonoire-shot-344",
@@ -46,7 +47,12 @@
     "neonoire-shot-374",
     "neonoire-shot-375",
     "neonoire-shot-376",
-    "neonoire-shot-377"
+    "neonoire-shot-377",
+    "neonoire-shot-378",
+    "neonoire-shot-379",
+    "neonoire-shot-380",
+    "neonoire-shot-381",
+    "neonoire-shot-382"
   ],
   "batches": [
     [
@@ -92,6 +98,13 @@
     ],
     [
       "neonoire-shot-377"
+    ],
+    [
+      "neonoire-shot-378",
+      "neonoire-shot-379",
+      "neonoire-shot-380",
+      "neonoire-shot-381",
+      "neonoire-shot-382"
     ]
   ]
 }

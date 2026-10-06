@@ -15,7 +15,6 @@ Vera sits at the counter.
 Kaneko turns from the pot, glances at her, and goes on working.
 
 VERA
-(in Japanese)
 I'm sorry, I don't know what to order. I was here when I was a child. With my father. He always sat here.
 
 She takes the old photograph from her bag and sets it on the counter: the American man, two small girls, the noodle shop sign.
@@ -23,17 +22,14 @@ She takes the old photograph from her bag and sets it on the counter: the Americ
 Kaneko looks at the photograph for a long moment. Then at Vera. She freezes, just for a second.
 
 KANEKO
-(in Japanese)
 He always paid too much.
 
 Vera's breath catches.
 
 VERA
-(in Japanese)
 You remember him?
 
 KANEKO
-(in Japanese)
 And you. You ate everything on his plate.
 
 She sets a bowl of noodles in front of Vera. Vera looks at it. Her eyes fill.

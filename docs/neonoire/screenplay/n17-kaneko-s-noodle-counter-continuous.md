@@ -15,15 +15,12 @@ Behind the counter, KANEKO (70s), tiny and sharp-eyed, works a pot with long cho
 She looks at him for a long time. Longer than a stranger would.
 
 KANEKO
-(in Japanese)
 You got old.
 
 JACK
-(in Japanese)
 So did you.
 
 KANEKO
-(in Japanese)
 I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American.
 (beat)
 Everything is going. We are just slower.
@@ -31,17 +28,14 @@ Everything is going. We are just slower.
 Jack looks at the counter under his hands.
 
 JACK
-(in Japanese)
 I'm looking for his daughter. The younger one.
 
 Kaneko's chopsticks don't pause.
 
 KANEKO
-(in Japanese)
 The little one? She was four years old. She ate rice with her fingers.
 
 JACK
-(in Japanese)
 She's twenty-four now. And someone wants to kill her.
 
 The two customers at the end of the counter have stopped slurping.
@@ -49,7 +43,6 @@ The two customers at the end of the counter have stopped slurping.
 Kaneko sets a bowl of noodles in front of Jack.
 
 KANEKO
-(in Japanese)
 Eat. Then go.
 (beat)
 There is no one here but us.
@@ -59,7 +52,6 @@ Jack eats. Slowly. He finishes everything.
 He puts down more money than the bowl costs, far more, and a business card on top of it.
 
 JACK
-(in Japanese)
 He always paid too much, too.
 
 He goes. Kaneko looks at the card for a long moment.

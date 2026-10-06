@@ -21,7 +21,7 @@ The masked man spins and fires toward the corridor. The shots stitch across the 
 It lights up and CHIMES:
 
 VENDING MACHINE
-(recorded; in Japanese)
+(recorded)
 Thank you very much.
 
 The gunman flinches toward the sound.

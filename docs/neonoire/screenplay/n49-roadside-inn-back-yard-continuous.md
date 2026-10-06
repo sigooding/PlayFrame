@@ -17,7 +17,6 @@ They don't chase him. They don't need to.
 The MASKED LEADER touches his earpiece.
 
 MASKED LEADER
-(in Japanese)
 He's gone. He has what she gave him.
 
 Behind them, inside the lobby, the pink payphone is still ringing.

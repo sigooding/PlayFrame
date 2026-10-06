@@ -13,25 +13,21 @@ Kaneko lowers the ladle from the old iron water pipe by the stove. Three strikes
 Kaneko pulls the shutter down with a crash. She turns off the fluorescent tube.
 
 KANEKO
-(in Japanese; to Jack)
+(to Jack)
 Up. Through the back. The stairs by the dentist. Then go through the neighbours. Everyone will open a door.
 
 VERA
-(in Japanese)
 I know them.
 
 Jack looks at her.
 
 JACK
-(in Japanese)
 Come with us.
 
 KANEKO
-(in Japanese)
 I have lived here fifty years. They can come and find me.
 
 KANEKO (CONT'D)
-(in Japanese)
 Go now. They will help you.
 
 She pushes them toward the back.

@@ -29,45 +29,38 @@ Jack looks at it for a long time.
 Then he dials the rotary phone. It takes a long time to dial.
 
 ISHIDA (V.O.)
-(in Japanese; filtered)
+(filtered)
 It's late, Jack.
 
 JACK
-(in Japanese)
 The Voss girl came to see me.
 
 ISHIDA (V.O.)
-(in Japanese)
 I know.
 
 Silence on the line. Rain on the window.
 
 JACK
-(in Japanese)
 Her sister was in that bar.
 
 ISHIDA (V.O.)
-(in Japanese)
 The sister is a missing persons case. The bar is a gang matter. Two separate things.
 
 JACK
-(in Japanese)
 And the old man in the street?
 
 ISHIDA (V.O.)
-(in Japanese)
 Sakai.
 (beat)
 Yes. That Sakai. I know what you're thinking. Old debts, old enemies. It's a gang matter.
 
 JACK
-(in Japanese)
 Twenty years, Ishida.
 
 A long pause.
 
 ISHIDA (V.O.)
-(in Japanese; gently)
+(gently)
 Go to sleep, Jack. You found enough twenty years ago. You're too old to be haunted.
 
 The line goes dead.

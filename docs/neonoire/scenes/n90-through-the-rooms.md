@@ -42,3 +42,63 @@ TIME: 8
 ID: neonoire-shot-267
 IMAGE: 132-the-gap.jpg
 NOTE: Retake 29 September 2026 (story pass 2): regenerated as the enfilade of doorways — door after door, the dentist's finger at his lips, the girl with the violin, the inside of a wardrobe, Jack and Vera the smallest figures in it. The retired gap frame is overwritten in place. CAVEAT: the girl reads younger than the scene 16 violin girl — one face for her across the two boards, a casting check.
+
+---
+
+378. MEDIUM — 35mm, static, eye level — the barber's shop.
+A cramped barber's shop inside the Hive: one chair turned to face the wall, the striped pole unlit, a mirror showing the doorway. The BARBER holds the beaded curtain aside with his scissors hand and looks politely away while Vera and Jack slip through, seen from behind.
+SCRIPT: "Through the wardrobe, a barber's cramped shop."
+CAST: Jack, Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-378
+IMAGE: 378-the-barbers-shop.jpg
+NOTE: Coverage, 6 October 2026 (director: "board those"). The residents' help made visible: the barber turns the chair to the wall so anyone looking in sees only a man waiting for a haircut. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+
+---
+
+379. WIDE — 24mm, static, eye level — the laundry.
+A long low laundry strung with rows of wet white sheets under bare bulbs, steam in the air. Two women part the sheets ahead of Vera and Jack and pin them shut behind, so the room closes over the place they went.
+SCRIPT: "Down four steps into a laundry where wet sheets hang in rows."
+CAST: Jack, Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-379
+IMAGE: 379-the-laundry.jpg
+NOTE: Coverage, 6 October 2026 (director: "board those"). The women do not look at them: the sheets are the hiding place. Pegs, apron hands, no faces held. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+
+---
+
+380. MEDIUM — 35mm, static, low angle — the shrine hatch.
+A tiny home shrine room, one candle, a small butsudan. A GRANDMOTHER in a cardigan lifts the altar cloth to reveal a low wooden hatch at floor level; Vera and Jack stoop toward it.
+SCRIPT: "A shrine room."
+CAST: Jack, Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-380
+IMAGE: 380-the-shrine-hatch.jpg
+NOTE: Coverage, 6 October 2026 (director: "board those"). She holds the cloth until they are through, then smooths it flat over the candle and the photograph. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+
+---
+
+381. WIDE — 24mm, static, eye level — the plank.
+Night, cold rain. A narrow iron plank laid across the gap between two balconies of the stacked block, steadied at both ends by two men in vests; Vera and Jack cross it, seen from behind. Lit windows above, the viaduct beyond.
+SCRIPT: "A plank laid across the gap between two balconies, a balcony bolted onto a balcony."
+CAST: Jack, Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-381
+IMAGE: 381-the-plank.jpg
+NOTE: Coverage, 6 October 2026 (director: "board those"). The prologue's "a balcony bolted onto a balcony" made literal. When the last of them is across the men haul the plank in after them, so the gap is only a gap. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+
+---
+
+382. MEDIUM WIDE — 35mm, static, eye level — the pipe gallery.
+A narrow gallery between flats, old iron pipes along the walls and ceiling. A woman in an apron raps one pipe once with her knuckle; a man holds a small lantern turned low. Vera and Jack move along it, seen from behind.
+SCRIPT: "A pipe gallery, the pipes ringing softly all around them."
+CAST: Jack, Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-382
+IMAGE: 382-the-pipe-gallery.jpg
+NOTE: Coverage, 6 October 2026 (director: "board those"). One rap means clear, and the next hand takes it up farther on: Kaneko's alarm, still passing, now telling them which way is safe. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
