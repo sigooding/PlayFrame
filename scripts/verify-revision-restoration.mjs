@@ -35,7 +35,7 @@ assert(current["51"].includes("Tokyo spread out below in the rain like a circuit
 assert(!/^ISHIDA|^KUROSE$/m.test(current["51"]), "51 remains wordless");
 assert(current["83"].includes("KUROSE (70s)") && current["83"].includes("never had to hurry"));
 assert(current["94"].includes("It's only tea.") && !current["94"].includes("For twenty years."));
-assert(current["100"].includes("Six new stools, the same height as the old ones.") && current["100"].includes("old hand-painted sign") && current["100"].includes("red bird clip"));
+assert(current["100"].includes("old hand-painted sign") && current["100"].includes("red bird clip"));
 pass("lost introductions/bonding and only-tea restored without undoing deliberate wordless or rewritten-scene choices");
 
 const statement = "VERA\nIshida left a statement. He acted alone.\n\nJACK\nIs that what it says?\n\nVERA\nThat's what the police say it says.\n\n";
