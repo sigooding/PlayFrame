@@ -55,7 +55,7 @@
       "title": "The back road",
       "location": "EXT./INT. TRUCK, BACK ROAD",
       "time": "NIGHT",
-      "description": "A truck and trailer on a twisting two-lane in the Ohio hills, around 1 a.m.: fog in the hollows, warm dashboard light against the blue night, an unmarked sedan a quarter mile behind. A civilian trucker and a young airman in civilian clothes sit in the cab.",
+      "description": "A truck and trailer on a twisting two-lane in the Ohio hills (leafy hardwood woods in summer), around 1 a.m.: fog in the hollows, warm dashboard light against the blue night, an unmarked sedan a quarter mile behind. An American left-hand-drive cab: a civilian trucker (driver's seat on the LEFT) and a young airman in civilian clothes (passenger, on the right) sit in it.",
       "characters": [
         "hangar-airman",
         "hangar-trucker"
@@ -72,7 +72,7 @@
       "title": "The swerve",
       "location": "EXT. THE BEND, BACK ROAD",
       "time": "NIGHT",
-      "description": "A blind bend on the back road at night: the truck and trailer meeting a station wagon driven by a nurse coming off a double shift. Headlights, fog, a gravel shoulder and a drop to one side.",
+      "description": "A blind bend on the back road at night in leafy Ohio hardwood woods: the truck and trailer meeting a station wagon driven by a nurse coming off a double shift. Headlights, fog, a gravel shoulder and a drop to one side.",
       "characters": [
         "hangar-mom",
         "hangar-trucker",
@@ -90,7 +90,7 @@
       "title": "The fall",
       "location": "EXT. WOODED BANK",
       "time": "NIGHT",
-      "description": "A wooded bank above a creek, night: moonlit trunks and ferns, a loaded crate on its way down, and the dark inside the crate.",
+      "description": "A wooded bank above a creek, night, Ohio hardwoods in full summer leaf: moonlit trunks and ferns, a loaded crate on its way down, and the dark inside the crate.",
       "characters": [],
       "actId": "hangar-act-cold-open",
       "kind": "Standard",
@@ -104,7 +104,7 @@
       "title": "Topside",
       "location": "EXT. THE ROADSIDE, ABOVE THE BANK",
       "time": "NIGHT",
-      "description": "The back road above the bank, night, just after the bend: road flares, red-lit fog, an unmarked sedan with two men in suits, a trucker and an airman. A white nurse's cap and a snapped-off side mirror lie on the asphalt.",
+      "description": "The back road above the bank, night, just after the bend (leafy Ohio hardwoods, yellow centre line): road flares, red-lit fog, an unmarked sedan with two men in suits, a trucker and an airman. A white nurse's cap and a snapped-off side mirror lie on the asphalt.",
       "characters": [
         "hangar-agent",
         "hangar-trucker",
@@ -122,7 +122,7 @@
       "title": "The crate",
       "location": "EXT. THE CREEK BANK",
       "time": "NIGHT",
-      "description": "The creek bank, night: a split-open crate in the shallows, a hollow in old packing straw, a board stenciled INERT, and flares held low.",
+      "description": "The creek bank, night, Ohio hardwoods in leaf: a split-open crate in the shallows, a hollow in old packing straw, a board stenciled INERT, and flares held low.",
       "characters": [
         "hangar-agent",
         "hangar-airman"
@@ -139,7 +139,7 @@
       "title": "Far off in the woods",
       "location": "EXT. THE WOODS ABOVE THE CREEK",
       "time": "NIGHT",
-      "description": "The woods above the creek, night, moments later: the flare burning down, three men standing in silence, and the dark beyond the trees.",
+      "description": "The woods above the creek, night, moments later, Ohio hardwoods in leaf: the flare burning down, three men standing in silence, and the dark beyond the trees.",
       "characters": [
         "hangar-airman",
         "hangar-agent"
@@ -246,7 +246,7 @@
       "status": "Draft",
       "transition": "Fade in",
       "characters": [],
-      "notes": "Sound: Idle generators, boots, a forklift's reversing beeper, insects. No score.\nFraming: Open high over the apron and crane down to the hangar doors: soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.\nScript: \"Fade up on Wright-Patterson at night.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Idle generators, boots, a forklift's reversing beeper, insects. No score.\nFraming: Open high over the apron and crane down to the hangar doors: the truck reversed up to the doors with its trailer's rear doors at the opening and the cab pointing away, soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.\nScript: \"Fade up on Wright-Patterson at night.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-05",
@@ -434,7 +434,7 @@
         "hangar-trucker",
         "hangar-airman"
       ],
-      "notes": "Sound: AM radio low under it (an old ballad), gearbox, tyres.\nFraming: Medium two-shot from the dash. The airman's clothes are civilian and too neat; the trucker wears a cap; the wheel is large in frame.\nTRUCKER: (dry) Thirty years driving. First time anybody paid me to skip a scale.\nScript: \"First time anybody paid me to skip a scale.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: AM radio low under it (an old ballad), gearbox, tyres.\nFraming: Medium two-shot from the dash. American left-hand-drive truck: the trucker sits on the truck's LEFT, so from the dash looking back at them he is on the viewer's RIGHT and the airman on the viewer's LEFT. The airman's clothes are civilian and too neat; the trucker wears a cap and his brown leather jacket; the wheel is large in frame.\nTRUCKER: (dry) Thirty years driving. First time anybody paid me to skip a scale.\nScript: \"First time anybody paid me to skip a scale.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-13",
@@ -483,7 +483,7 @@
       "characters": [
         "hangar-airman"
       ],
-      "notes": "Sound: Knocks and taps in unison: three quick, one slow.\nFraming: Close on his hand tapping his knee. The taps lock to the knocks coming off-screen.\nAIRMAN: (murmured) One-two-three... four. One-two-three... four.\nScript: \"One-two-three... four. One-two-three... four.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Knocks and taps in unison: three quick, one slow.\nFraming: Close on his hand tapping his knee. He is the passenger on the truck's right, so the wheel is on his LEFT. The taps lock to the knocks coming off-screen.\nAIRMAN: (murmured) One-two-three... four. One-two-three... four.\nScript: \"One-two-three... four. One-two-three... four.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-15",
@@ -580,7 +580,7 @@
         "hangar-mom",
         "hangar-trucker"
       ],
-      "notes": "Sound: Horn, tyre shriek, gravel.\nFraming: Handheld, low. The wagon's flank slides past the truck's cab by a hand's width. Draw the motion with smears, not blur; keep the weight of both vehicles.\nScript: \"Both drivers yank the wheel.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Horn, tyre shriek, gravel.\nFraming: Handheld, low. Truck and wagon pass head-on in opposite directions, one showing its front and the other its tail, the wagon drifting into the truck's lane; the nurse is alone in the wagon. The wagon's flank slides past the truck's cab by a hand's width. Draw the motion with smears, not blur; keep the weight of both vehicles.\nScript: \"Both drivers yank the wheel.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-19",
@@ -811,7 +811,7 @@
       "characters": [
         "hangar-agent"
       ],
-      "notes": "Sound: Gravel, the flare, a pocket button.\nFraming: Close, high angle. A gloved hand lifts the cap and the mirror; the pocket closes over them. Hold on the empty asphalt after.\nScript: \"picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Gravel, the flare, a pocket button.\nFraming: Close, high angle. A gloved hand lifts the white nurse's cap with its one red band and the round chrome side mirror (the same two objects as the insert); the pocket closes over them. Hold on the empty asphalt after.\nScript: \"picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-29",
@@ -907,7 +907,7 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Straw rustling; a flare's hiss.\nFraming: Close, high angle into the hollow: a curled shape pressed into straw. Imply no form beyond the hollow itself.\nScript: \"A small hollow is pressed into thirty-year-old packing straw, where something lay curled up.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Straw rustling; a flare's hiss.\nFraming: Close, high angle into the hollow: a bowl-shaped dent pressed into straw. No limbs, fur, head or tail; nothing curled up; imply no form beyond the hollow itself. The same strapped pine crate as the prop sheet.\nScript: \"A small hollow is pressed into thirty-year-old packing straw, where something lay curled up.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-33",
@@ -953,7 +953,7 @@
       "characters": [
         "hangar-agent"
       ],
-      "notes": "Sound: A flare crackle; an agent's breath. No score.\nFraming: Extreme close tracking along the wall; the marks fill the frame edge to edge. Let the sheer number sink in: thousands.\nScript: \"the light rakes across rows of tiny scratched marks, thousands of them, covering every inch.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: A flare crackle; an agent's breath. No score.\nFraming: Extreme close tracking along the wall, lit by a hissing red road flare held low (a flare, never a flashlight); the marks fill the frame edge to edge. Let the sheer number sink in: thousands.\nScript: \"the light rakes across rows of tiny scratched marks, thousands of them, covering every inch.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-35",
@@ -997,7 +997,7 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: The creek and the flare; nothing else.\nFraming: Locked close on the dark corner. Slowly the eye finds the few uncrossed marks. No one in frame looks here.\nScript: \"The flare does not reach the far corner, where a few marks are still uncrossed.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: The creek and the flare; nothing else.\nFraming: Locked close on the deep far corner of the crate, almost lost in shadow, with the few uncrossed marks tucked into it and the lit wall around them crowded with crossed marks. The light is a red flare, never a flashlight. Slowly the eye finds the few uncrossed marks. No one in frame looks here.\nScript: \"The flare does not reach the far corner, where a few marks are still uncrossed.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
     },
     {
       "id": "hangar-shot-37",
