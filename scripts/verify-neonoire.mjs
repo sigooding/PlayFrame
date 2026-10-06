@@ -277,12 +277,20 @@ for (const image of [...streetsPassOneImages, ...streetsPassTwoImages]) assert.d
 const deliveredStreetImages = new Set([...streetsPassOneImages, ...streetsPassTwoImages].filter(image => !image.includes("/sheets/")));
 assert.deepEqual(new Set(streets.map(f => f.image)), deliveredStreetImages, "Every completed frame is a replacement from this revision, not a legacy study");
 assert(!streets.some(f => f.notes.includes("REPLACEMENT PENDING")), "No pending street replacement remains");
+// 6 October 2026 (director): the run — shots 71–73 (ids 69–71) — was retaken handheld and closer, so the locked-off grammar
+// below no longer binds them; the lost heel (74) keeps it because it is locked to the shot 79 still life.
+const runRetake = new Set(["neonoire-shot-69", "neonoire-shot-70", "neonoire-shot-71"]);
 for (const frame of streets) {
+  if (runRetake.has(frame.id)) {
+    assert.equal(frame.movement, "Handheld", `${frame.title}: the retaken run is handheld`);
+    assert(frame.notes.includes("RETAKE 6 October 2026") && frame.notes.includes("archive/s73/"), `${frame.title}: the retake note names the archived predecessor`);
+  } else {
   assert.equal(frame.movement, "Static", `${frame.title}: no tracking or push-in`);
   assert.equal(frame.angle, "Low, level", `${frame.title}: low height is NOT an upward hero angle`);
   assert.equal(frame.lens, frame.id === "neonoire-shot-73" ? "35mm" : "50mm");
   assert(frame.notes.includes("Tokyo Story in colour"));
   assert(frame.notes.includes("RIGHT foot bare, LEFT red shoe retained"));
+  }
   assert.equal(frame.status, jackRecastPending.has(frame.id) ? "Needs review" : expectedDraftStatus(frame), `${frame.title}: only the superseded-Jack frames await review`);
   assert.equal(frame.notes.includes("JACK RECAST PENDING"), jackRecastPending.has(frame.id));
   assert.equal(frame.style, "neonoire");

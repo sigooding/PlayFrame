@@ -53,7 +53,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-378
 IMAGE: 378-the-barbers-shop.jpg
-NOTE: Coverage, 6 October 2026 (director: "board those"). The residents' help made visible: the barber turns the chair to the wall so anyone looking in sees only a man waiting for a haircut. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+NOTE: Coverage, 6 October 2026 (director: "board those"). The residents' help made visible: the barber turns the chair to the wall so anyone looking in sees only a man waiting for a haircut. RETAKE 6 October 2026 (director: "add character sheets and make it look more urgent"): the first study (kept as `archive/s90/<name>--v1.jpg`) had them strolling, seen from behind; this one is generated with `sheets/jack.jpg`, `sheets/jack-face.jpg`, `sheets/vera-look-c.jpg` and `sheets/vera-face.jpg` attached, the pair HURRYING — Jack hauling Vera by the wrist or hand, her glancing back, wet coats flaring, faces visible and afraid. Installed over its own filename after the v1 backup was committed. Production approval pending.
 
 ---
 
@@ -65,7 +65,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-379
 IMAGE: 379-the-laundry.jpg
-NOTE: Coverage, 6 October 2026 (director: "board those"). The women do not look at them: the sheets are the hiding place. Pegs, apron hands, no faces held. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+NOTE: Coverage, 6 October 2026 (director: "board those"). The women do not look at them: the sheets are the hiding place. Pegs, apron hands, no faces held. RETAKE 6 October 2026 (director: "add character sheets and make it look more urgent"): the first study (kept as `archive/s90/<name>--v1.jpg`) had them strolling, seen from behind; this one is generated with `sheets/jack.jpg`, `sheets/jack-face.jpg`, `sheets/vera-look-c.jpg` and `sheets/vera-face.jpg` attached, the pair HURRYING — Jack hauling Vera by the wrist or hand, her glancing back, wet coats flaring, faces visible and afraid. Installed over its own filename after the v1 backup was committed. Production approval pending.
 
 ---
 
@@ -77,7 +77,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-380
 IMAGE: 380-the-shrine-hatch.jpg
-NOTE: Coverage, 6 October 2026 (director: "board those"). She holds the cloth until they are through, then smooths it flat over the candle and the photograph. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+NOTE: Coverage, 6 October 2026 (director: "board those"). She holds the cloth until they are through, then smooths it flat over the candle and the photograph. RETAKE 6 October 2026 (director: "add character sheets and make it look more urgent"): the first study (kept as `archive/s90/<name>--v1.jpg`) had them strolling, seen from behind; this one is generated with `sheets/jack.jpg`, `sheets/jack-face.jpg`, `sheets/vera-look-c.jpg` and `sheets/vera-face.jpg` attached, the pair HURRYING — Jack hauling Vera by the wrist or hand, her glancing back, wet coats flaring, faces visible and afraid. Installed over its own filename after the v1 backup was committed. Production approval pending.
 
 ---
 
@@ -89,7 +89,7 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-381
 IMAGE: 381-the-plank.jpg
-NOTE: Coverage, 6 October 2026 (director: "board those"). The prologue's "a balcony bolted onto a balcony" made literal. When the last of them is across the men haul the plank in after them, so the gap is only a gap. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+NOTE: Coverage, 6 October 2026 (director: "board those"). The prologue's "a balcony bolted onto a balcony" made literal. When the last of them is across the men haul the plank in after them, so the gap is only a gap. RETAKE 6 October 2026 (director: "add character sheets and make it look more urgent"): the first study (kept as `archive/s90/<name>--v1.jpg`) had them strolling, seen from behind; this one is generated with `sheets/jack.jpg`, `sheets/jack-face.jpg`, `sheets/vera-look-c.jpg` and `sheets/vera-face.jpg` attached, the pair HURRYING — Jack hauling Vera by the wrist or hand, her glancing back, wet coats flaring, faces visible and afraid. Installed over its own filename after the v1 backup was committed. Production approval pending.
 
 ---
 
@@ -101,4 +101,4 @@ LIGHT: Practical night
 TIME: 6
 ID: neonoire-shot-382
 IMAGE: 382-the-pipe-gallery.jpg
-NOTE: Coverage, 6 October 2026 (director: "board those"). One rap means clear, and the next hand takes it up farther on: Kaneko's alarm, still passing, now telling them which way is safe. Generated from text only (no earlier frame attached, no cast sheet), reviewed at full size, installed 16:9 at a new filename — nothing was overwritten. Vera and Jack are seen from behind in a dark coat and a navy coat, so cast likeness is a draft caveat; production approval pending.
+NOTE: Coverage, 6 October 2026 (director: "board those"). One rap means clear, and the next hand takes it up farther on: Kaneko's alarm, still passing, now telling them which way is safe. RETAKE 6 October 2026 (director: "add character sheets and make it look more urgent"): the first study (kept as `archive/s90/<name>--v1.jpg`) had them strolling, seen from behind; this one is generated with `sheets/jack.jpg`, `sheets/jack-face.jpg`, `sheets/vera-look-c.jpg` and `sheets/vera-face.jpg` attached, the pair HURRYING — Jack hauling Vera by the wrist or hand, her glancing back, wet coats flaring, faces visible and afraid. Installed over its own filename after the v1 backup was committed. Production approval pending.

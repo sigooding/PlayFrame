@@ -2,6 +2,10 @@
 
 The [screenplay page](../screenplay/n73-tokyo-streets-night.md) is unchanged.
 
+## The run — retake of 71–73, 6 October 2026
+
+**Director: the run did not hit hard enough and read as random.** Shots 71, 72 and 73 were regenerated handheld and closer, with Vera's face sheet and the hotel master attached, and the screenplay now gives her a destination (the phone still lit with Ishida's call, the railway and the Hive beyond it) and a song under the rain instead of silence. Shot 74 (the lost heel) is unchanged on purpose: it is locked to the later shoe still life.
+
 ## Tokyo Story in colour — 25 September 2026
 
 **Shots 71–74**, 16:9 full-bleed, 1920×1080. All cameras are now locked off, low and level on a normal 50mm lens. Vera crosses the frame; the camera never chases her. No action coverage, no blue-magenta neon. Machine-white, wet grey-black, dull olive and wine red. Existing studies are ignored, not used as references.
@@ -12,35 +16,35 @@ First session: **72 and 74 replaced**. Second session (this pass): **71 and 73 r
 
 ---
 
-71. WIDE — 50mm, static, low level — the hotel door opens on rain.
-A low level locked camera at 75cm watches Vera leave the old hotel's warm doorway and begin running into cold rain. Small full figure, wine-red silk calf-length dress, both red court shoes, no coat and no umbrella. Hair is only beginning to wet; the carefully applied makeup is still mostly intact at the threshold, not already ruined. Amber interior gives way to ordinary cold machine light on black asphalt.
+71. WIDE — 24mm, handheld, low level — she bursts out of the hotel.
+Vera shoulders through the hotel's glass doors into the rain already mid-stride, leaning hard forward, her phone clenched white-knuckled in her fist with its screen lighting her wet face, eyes wide, mouth open as if she cannot breathe. Wine-red silk calf-length dress, no coat, no umbrella. The elevated railway glows at the end of the street ahead of her: the only direction she has left.
 SCRIPT: "Vera comes out of the hotel into the rain and starts to run."
 CAST: Vera Voss
 LIGHT: Practical night
 TIME: 10
 ID: neonoire-shot-69
 IMAGE: 69-vera-runs.jpg
-NOTE: Replacement generated in session two from the NEW hotel master s72/69-the-wait.jpg and sheets/vera-face.jpg, not the discarded street study. The pale-blue umbrella stays inside the hotel; no bag or coat appears on Vera. Camera stays low and level, not an upward hero angle. Makeup is still pretty and intact at the threshold; only the rain undoes it. No score.
+NOTE: RETAKE 6 October 2026 (director: the run "doesn't hit hard enough and looks like she's just randomly running"). The 25 September locked-off 50mm grammar is lifted for 71–73: handheld, closer, motion in the frame. Generated with `sheets/vera-face.jpg` and the hotel master `s72/69-the-wait.jpg` attached (dress and shoes). Her purpose is now on screen: the phone still lit with the call (ISHIDA) and the railway ahead are the Hive's direction. The v3 predecessor is kept at `archive/s73/69-vera-runs--v3.jpg`.
 
-72. FULL — 50mm, static, low level — badly, in heels.
-From a locked low level camera at 75cm, Vera's full figure stumbles through a still architectural frame beside a scuffed ivory vending machine and dull-green shutter under riveted railway beams. Her right hand briefly presses her chest because she cannot breathe, and she forces herself onward. Same wine-red cowl-neck calf-length silk dress, both low red court shoes still on. Rain plasters her ash-blonde fringe and begins washing the mascara into thin natural trails. The machine's cold white light, not the sky, finds her face.
+72. MEDIUM CLOSE-UP — 35mm, handheld, eye level — badly, in heels.
+A tracking shot in front of Vera as she runs badly toward the camera: hair plastered to her face, mascara running in thin diluted streaks, mouth open gasping, one hand pressed flat to her chest because she cannot breathe, her heel skidding sideways on the wet asphalt so her whole body lurches. Her face is the sharpest thing in the frame; the street lights behind her smear.
 SCRIPT: "Not elegantly. Badly. In heels, in the red dress, no coat, no umbrella. Slipping. Stumbling."
 CAST: Vera Voss
 LIGHT: Practical night
 TIME: 14
 ID: neonoire-shot-70
 IMAGE: 70-not-elegantly-badly.jpg
-NOTE: Replacement generated. The previous 35mm tracking move is removed; she passes through a static 50mm composition. This is the new street master. Keep the ivory machine's muted-red side panel, right-hand payment controls, green shutter, shallow gutter, drain grate and riveted columns. No fashion stride; heels, breath and rain only. She still wears BOTH shoes.
+NOTE: RETAKE 6 October 2026 — face-led instead of a small figure crossing a static frame, so the audience feels the breath. Generated with the Vera face sheet and the hotel master attached. Predecessor kept at `archive/s73/70-not-elegantly-badly--v3.jpg`.
 
-73. WIDE — 50mm, static, low level — the machine, indifferent.
-A low level static camera at 70cm holds the ivory vending machine and the shuttered street after Vera has passed it left to right, well beyond it in the right of frame. Same wet wine-red silk dress, both shoes, increasingly rain-plastered hair and thin washed mascara tracks. She leaves the composition; the machine continues lighting the rain without following her. No other person on the street.
+73. WIDE — 35mm, handheld, low level — the machine, indifferent.
+The ivory vending machine glows cold white under the riveted railway beams, rain falling through its light in columns, razor sharp, on the LEFT. Vera sprints past it to the RIGHT as a streak of red and white, blurred by speed, face forward, heading for the railway beyond; the machine does not matter to her.
 SCRIPT: "She runs past a vending machine. It glows, indifferent. She keeps going; the machine falls behind her."
 CAST: Vera Voss
 LIGHT: Practical night
 TIME: 8
 ID: neonoire-shot-71
 IMAGE: 71-the-machine-glows.jpg
-NOTE: Replacement generated in session two from NEW s73/70-not-elegantly-badly.jpg for machine geometry and sheets/vera-face.jpg for identity, never the old image or an old style key. No tracking. She still wears BOTH shoes here; mascara has begun to wash into thin trails. Hold the architecture after she passes; this sets up the empty-machine pillow shot 82.
+NOTE: RETAKE 6 October 2026 — keeps the route LEFT TO RIGHT with the machine behind her (director correction of 1 October still holds). Predecessor kept at `archive/s73/71-the-machine-glows--v3.jpg`. CAVEAT: one bare foot already reads here, a beat before the shoe comes off in 74 — a retake candidate if the order matters on screen.
 
 74. FULL — 50mm, static, low level — one shoe left behind.
 A fixed low level camera at 35cm holds the shallow gutter puddle as Vera stumbles away toward the crossing. Her RIGHT red closed-toe court shoe lies on its side in the foreground, toe left and heel right, beside a rectangular drain grate under the ivory vending machine's light. Her RIGHT foot is now bare; LEFT shoe remains. Same wet calf-length wine-red silk dress and soaked shoulder-length blonde hair. She runs on, leaving the shoe and the frame behind.
