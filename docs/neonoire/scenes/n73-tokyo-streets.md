@@ -49,3 +49,23 @@ NOTE: Replacement regenerated in session two so the puddle, kerb, drain grate an
 ## Director correction — 1 October 2026
 
 The route is linear, LEFT TO RIGHT: hotel behind → approaching the machine (Vera left, machine ahead/right) → clearly past it (machine left/behind, Vera right) → the crossing and one-shoe exit. Replaced stable assets 69, 70 and 71; kept the already-correct 72 one-shoe exit and matching 75/77 shoe still to retain RIGHT bare / LEFT shoe continuity. No frame sends her back to the machine. All selected run images are main shots at Ready. Static means static in the animatic, not an alternating synthetic pan. The script now explicitly puts the machine behind her and the crossing just beyond it. No dialogue or music cue was changed.
+
+387. EXTREME WIDE — 24mm, static, low level — the street too long.
+A huge empty wet street at night: black glass towers, shuttered shop fronts, the elevated railway glowing far at the end of it, not another soul. Vera is a small figure in the middle of the road in the red dress, running at it, her reflection stretching in the asphalt.
+SCRIPT: "The elevated railway glows at the far end of the street, and she runs at it as if she could still get there in time."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-387
+IMAGE: 387-the-street-too-long.jpg
+NOTE: NEW 6 October 2026 (director: Vera needs a few more frames and a wider shot to give the feeling of emptiness). The run's one wide: the distance she has to cover and how alone she is. Generated against the retaken run frame `s73/69-vera-runs.jpg`; wine-red dress, bare arms, no coat, no umbrella. The first draft carried a charcoal coat from her sheet and was thrown away. Caveat: she is seen from behind, so the lit phone and her face do not read.
+
+388. WIDE — 35mm, static, low angle — through the crossing.
+The empty crossing, its signal red over a deserted intersection, wet asphalt mirroring the lights. Vera cuts straight across it at full speed in the red dress, a streak of motion and splashing water, not waiting for anyone because nobody is there.
+SCRIPT: "Just beyond it, at a crossing, the old melody chimes for her, and she runs through it on red."
+CAST: Vera Voss
+LIGHT: Practical night
+TIME: 6
+ID: neonoire-shot-388
+IMAGE: 388-through-the-crossing.jpg
+NOTE: NEW 6 October 2026 (director: more Vera frames for emptiness). The crossing beat the screenplay already carries had no frame. Wine-red dress, bare arms, no coat. Caveat: her shoes do not read; she looks barefoot, which belongs after the heel in shot 74, so play this one after it in the edit if the continuity matters, or retake with a single red shoe.

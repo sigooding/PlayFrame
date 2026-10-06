@@ -53,7 +53,13 @@
     "neonoire-shot-379",
     "neonoire-shot-380",
     "neonoire-shot-381",
-    "neonoire-shot-382"
+    "neonoire-shot-382",
+    "neonoire-shot-383",
+    "neonoire-shot-384",
+    "neonoire-shot-385",
+    "neonoire-shot-386",
+    "neonoire-shot-387",
+    "neonoire-shot-388"
   ],
   "batches": [
     [
@@ -106,6 +112,18 @@
       "neonoire-shot-380",
       "neonoire-shot-381",
       "neonoire-shot-382"
+    ],
+    [
+      "neonoire-shot-383"
+    ],
+    [
+      "neonoire-shot-384",
+      "neonoire-shot-385",
+      "neonoire-shot-386"
+    ],
+    [
+      "neonoire-shot-387",
+      "neonoire-shot-388"
     ]
   ]
 }

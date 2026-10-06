@@ -2,8 +2,8 @@
 // frames requested from the animatic/continuity queue. Existing images and production numbers stay
 // untouched; the installed boundary is deliberately explicit so an unmade frame cannot masquerade
 // as delivered.
-export const coverageNextSlots = Array.from({ length: 14 }, (_, index) => 369 + index);
-export const coverageNextSlotsDelivered = [369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382];
+export const coverageNextSlots = Array.from({ length: 20 }, (_, index) => 369 + index);
+export const coverageNextSlotsDelivered = [369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388];
 export const coverageNextSlotsQueued = coverageNextSlots.filter(number => !coverageNextSlotsDelivered.includes(number));
 
 export const coverageNextLook =

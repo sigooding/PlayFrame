@@ -1,6 +1,10 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 5 October 2026: the prologue (shot 377) — scene 1 opens on the Hive, remembered
+## Current — 6 October 2026: shot 73 retired; the cold open's lane geometry; Vera's emptiness frames (383–388)
+
+See the bible's Part 9 items 18-19. 366/366 keyframes, next free number **389**. Retaken in place (archived first): 14, 17, 18. New: 383, 384, 385, 386, 387, 388. Images are 1280×720 generations upscaled to 1920×1080 (lanczos). Open: 386 puts Vera at the window earlier than the script stands her; 388's shoes do not read; 14/17 caveats in their notes. The retired 73's picture, the old third-stool frames (160/161/225/260/265/266/358-360) and the saved-workspace description hashes for 14/17/18 (hand-added to `neonoire-scene6-sync.json`) are the loose ends.
+
+## Previous — 5 October 2026: the prologue (shot 377) — scene 1 opens on the Hive, remembered
 
 Director: a short introduction to the Hive, **in canon and in Kaneko's voice** (and a scrolling-crawl version in the separate visual-novel repo). Read the bible's Part 9 item 18. Done: Fountain `.INSERT - THE HIVE, REMEMBERED` + five `KANEKO (V.O.)` paragraphs at the head of scene 1 (also in `docs/neonoire/screenplay/n01-backstreet.md`); board **377** (`s1/377-the-hive-remembered.jpg`, a new filename, nothing overwritten); five takes ingested via `voice-batch.mjs --plan docs/neonoire/voice/elevenlabs-plan-prologue.json`; `coverage-next.mjs` now 369–377; coverage sync batch 5; the pre-prologue script hash appended **by hand** to `neonoire-scene6-sync.json` (do not re-run `sync-scene6.mjs`); `bundle-refresh.ts` inserts a frame that opens its scene before the scene's first saved frame. Counts: 356 shots, next free **378**. Open: narration is English (Japanese re-record is a director's call); 377 is a ~50 s hold on one draft image — wants a long-hold coverage pass; scene 12A Hive-introduction draft (director's) overlaps and is not written in.
 

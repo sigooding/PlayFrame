@@ -81,6 +81,8 @@ TIME: 7
 IMAGE: 06-barbershop-doorway.jpg
 NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated on the Mara sheets with the street master and the 03 study as references, installed over `s1/06-barbershop-doorway.jpg`, reviewed at full size. The 2 October beat is now the frame: she has slipped behind the scooter and the stacked beer crates into the recessed dark doorway and presses back into its shadow, waiting, arms folded, unsure; both the scooter and the crates stand in the recess in front of her, half-hiding her from the lane, and the street ahead of her is empty. Unclosed caveats: the crates' moulded lettering reads as garbled pseudo-text (letter the crate stock on set if it is ever approved); the far sign prints BAR in Latin letters; and TWO vividly striped poles stand in the lane where the canon keeps one, unlit. Earlier note: REWRITE 2 OCTOBER 2026 (director) — this beat is Mara arriving in the recess, with a scooter and crates in front of her. Earlier note: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` and `sheets/sakai.jpg` only, installed over `s1/06-barbershop-doorway.jpg`. She does not duck in — she is already in the doorway, and the frame is what she looks at. The doorway has to read as a place she could stay for the whole scene: it does, and the barbershop pole sits at its right edge, unlit, in the same position and colours it returns to in shot 17. Reviewed at full size.
 
+RETAKE 6 October 2026 (director: geometry wrong) — the 1 October study still had a masked man and the car back in the lane, after shots 12–13 have already sent them away. Regenerated against the lane masters with nobody in frame. Earlier study archived as `archive/s1/18-the-flashlight--v5.jpg`.
+
 7. FULL — 50mm, static, eye level — the old man, hurrying.
 An OLD MAN (70s) in a cheap raincoat and a grey flat cap comes in from the road, one hand pressed to his side as if something is hidden there. He keeps looking back.
 SCRIPT: "An OLD MAN (70s) in a cheap raincoat and a grey flat cap comes in from the road, one hand pressed to his side as if something is hidden there."
@@ -127,13 +129,15 @@ IMAGE: 13-taillights-gone.jpg
 NOTE: Retake 29 September 2026 (the layout pass), superseding the 27 September backing-out note: the car never entered the lane — it reverses out of the alley mouth and the alley falls dark. The plate is not legible and is not claimed. No people. A pedestrian crossing chimes somewhere off camera for an empty intersection, over and over. The street is emptier after they leave than it was before they came. The layout: car end, the old man, the barbershop doorway and vending machine, the bar sign at the far end; Mara runs away from the car. Layout sheet `sheets/kanda-alley-layout.jpg`.
 
 14. MEDIUM — 50mm, static, eye level — she kneels.
-She steps out into the rain and kneels beside him: "It's okay — I'll get someone. Ambulance. I'll call. Ambulance." Her phone is off, and her hands shake too hard to turn it on.
+In the middle of the same lane, under the barbershop pole and across from the vending machine, she kneels on the wet asphalt beside the old man lying on his side: "It's okay — I'll get someone. Ambulance. I'll call. Ambulance." Her bag has slid off her shoulder and spilled beside her; her hands shake too hard to turn the phone on. The sedan is gone and the lane behind them is empty.
 SCRIPT: "Mara runs to the old man. Her bag slides off her shoulder and spills across the wet street. She doesn't notice."
 CAST: Mara Voss, The Old Man
 LIGHT: Practical night
 TIME: 11
 IMAGE: 14-she-kneels.jpg
 NOTE: The halting Japanese is written as her second language — she is not fluent and the script never pretends she is. Play the fumbling for the phone as shaking hands, not as technology failing.
+
+RETAKE 6 October 2026 (director: the opening scenes outside did not make visual sense) — the earlier study knelt her in a different alley (brick, fire escapes, orange lamps). Regenerated against the lane masters `s1/01-backstreet.jpg` and `s1/10-the-shot.jpg` with the Mara and Sakai sheets: barbershop pole and scooter and crates on the left, vending machine on the right, the sedan gone. Caveat: the phone screen reads lit rather than dead. Earlier study archived as `archive/s1/14-she-kneels--v3.jpg`.
 
 15. CLOSE-UP — 85mm, static, high angle — the old man's grip.
 The old man grips her wrist, stronger than he should be, and presses something small and cold into her palm, folding her fingers around it: "Don't let them have it."
@@ -154,7 +158,7 @@ IMAGE: 16-the-key.jpg
 NOTE: The film's first prop and the engine of everything after. The tag is worn, the number is legible, and no other handbag contents are shown. Nothing here is explained to the audience.
 
 17. WIDE — 24mm, static, eye level — she runs.
-Mara runs down the lane toward the amber glow of the bar at its near end, one arm flapping, and does not stop. Behind her the dark car pulls away and takes the long way round the block, unhurried, its beams down, never swinging into the lane. Halfway along the wet asphalt, where it slid off her shoulder when she ran to the old man, her purse lies open with its contents spilled across the road; she left it there and nobody picks it up. There is no snagged strap and nothing on the pole.
+Mara runs away from the camera down the middle of the lane toward the amber glow of the bar at its far end, one arm flapping, and does not stop. The sedan is gone, there is nobody else in the lane, and the old man's still shape lies small and far behind her. In the near foreground, where it slid off her shoulder when she ran to the old man, her purse lies open with its contents spilled across the wet road; she left it there and nobody picks it up. The barbershop pole is on the left, the vending machine on the right. There is no snagged strap and nothing on the pole.
 SCRIPT: "At the other end of the street, the amber glow of a bar. Mara runs for it."
 CAST: Mara Voss
 LIGHT: Practical night
@@ -162,14 +166,26 @@ TIME: 8
 IMAGE: 17-she-runs.jpg
 NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/mara.jpg` only, installed over `s1/17-she-runs.jpg`. The purse in the water is the scene's last piece of evidence and the detectives' room's first, so the bag and the puddle dimpling around it hold the near foreground while she runs past them. The pole and its unlit red-white-blue stripe return here in the position and colours shot 6 set. The alley mouth, the swinging headlights and the torn strap looped on the pole are out of the scene, and the 29 September layout sheet is no longer attached to anything in this scene.
 
+RETAKE 6 October 2026 (director: geometry wrong) — the 1 October study still had the sedan in the lane and ran her out of a lit doorway; it is replaced against the lane masters with the car gone and her running away from the camera toward the bar. Caveat: the bar sign reads as the English word BAR. Earlier study archived as `archive/s1/17-she-runs--v5.jpg`.
+
 18. MEDIUM — 50mm, static, low angle — the purse, and the man walking away.
-The abandoned bag is the subject: a woman's dark-brown structured leather handbag lies open on the wet asphalt with its contents spread from it, the street's cold light pooling in the shallow water around it. Beyond it, soft and small and out of focus, one of the masked men walks back down the lane toward the idling car, unhurried, arms loose, and never looks toward the barbershop doorway where Mara stands. The car takes the long way round the block. The street carries on as though nothing has happened.
+The abandoned bag is the subject: a woman's dark-brown structured leather handbag lies open on the wet asphalt with its contents spread from it, the street's cold light pooling in the shallow water around it. Beyond it, soft and out of focus, the lane is empty: no men, no car, no one in the barbershop doorway. The street carries on as though nothing has happened.
 SCRIPT: "Behind her, on the street: her purse, open in the rain."
-CAST: The Masked Men, Mara Voss
+CAST: —
 LIGHT: Practical night
 TIME: 10
 IMAGE: 18-the-flashlight.jpg
 NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 1 with `sheets/masked-man.jpg` and `sheets/mara.jpg` only, installed over `s1/18-the-flashlight.jpg` (the filename keeps its old name; the beat does not). There is no search: nobody kneels, nobody touches a body, no flashlight beam, no body in frame, no weapon. End on the bag in the road and the man walking away, then cut — no reaction shot, no music. The 30 September study was the moderation-safe composition (torch on the purse, the searching man small by the sedan) after the first attempt was refused by the image service; that workaround is retired with the search itself, because the rewritten scene leaves nothing to search and no light to end on. Reviewed at full size.
+
+383. WIDE — 24mm, static, eye level — the empty lane.
+From the barbershop end, the whole lane in the rain: the recessed doorway with its pole, the scooter and the crates on the left, the vending machine on the right, shuttered shops running away to the road mouth at the far end. Nobody in frame. The pedestrian crossing chimes for no one.
+SCRIPT: "Somewhere nearby, a pedestrian crossing CHIMES its old melody for an empty intersection."
+CAST: —
+LIGHT: Practical night
+TIME: 8
+ID: neonoire-shot-383
+IMAGE: 383-the-empty-lane.jpg
+NOTE: NEW 6 October 2026 (director: Mara's opening scenes outside do not make visual sense; geometry wrong). The scene's map in one frame, generated against `s1/01-backstreet.jpg` and `s1/10-the-shot.jpg` so the same lane shows throughout: camera at the barbershop end looking toward the road mouth where the sedan will block; barbershop doorway, scooter and crates LEFT, vending machine RIGHT, the bar sign at the end behind the camera. It also gives the cold open the emptiness the chime describes. Draft study, full-size review pending.
 
 ---
 

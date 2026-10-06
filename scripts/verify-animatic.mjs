@@ -35,7 +35,7 @@ assert.throws(() => parseAnimaticOptions({ credits: true }, project), /score/);
 const one = parseAnimaticOptions({ sceneId: "neonoire-s7", resolution: "720p" }, project);
 assert.equal(animaticFrames(project, one).length, 6);
 const range = parseAnimaticOptions({ fromSceneId: "neonoire-s73", toSceneId: "neonoire-s75" }, project);
-assert.equal(animaticFrames(project, range).length, 13);
+assert.equal(animaticFrames(project, range).length, 15);
 for (const data of [
   { sceneId: "../../.env" }, { resolution: "1080p;-y" }, { output: "/tmp/secrets" },
   { audio: "true" }, { sceneId: "neonoire-s7", fromSceneId: "neonoire-s1", toSceneId: "neonoire-s7" },

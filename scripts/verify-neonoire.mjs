@@ -81,7 +81,7 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 103, "Every scene of the revised screenplay and the seven inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 360;
+const EXPECTED_SHOTS = 366;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 // 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
 // earlier generation blocks; the audits below read those blocks' pre-revision runs. The same
@@ -210,7 +210,7 @@ pass(`cold-open: all ${coldOpen.length} surviving frames of scenes 1–2 are 192
 // place; what remains of the cold open's first scene is its original run, minus the two retired
 // numbers, each frame re-pinned to the rewritten street.
 const s1frames = generationFrames.filter(frame => frame.sceneId === "neonoire-s1");
-assert.deepEqual(s1frames.map(f => shotNo(f)), [1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 16, 17, 18, 328, 329, 330, 331, 332, 333, 377], "Scene 1 runs 1–18 with 8 and 11 retired, plus the 2 October cold-open slots 328–333 and the 5 October prologue 377 (by production number)");
+assert.deepEqual(s1frames.map(f => shotNo(f)), [1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 16, 17, 18, 328, 329, 330, 331, 332, 333, 377, 383], "Scene 1 runs 1–18 with 8 and 11 retired, plus the 2 October cold-open slots 328–333 and the 5 October prologue 377 (by production number)");
 // The retake round of 1 October 2026: these four were regenerated from the rewritten scene 1 text
 // (see cold-open-fresh-look.mjs's RETAKE ROUND note), installed over their own filenames and reviewed at
 // full size, so the pins are released — the same treatment 305–307 got, and for the same reason.
@@ -312,7 +312,7 @@ assert.deepEqual(wide.characters, ["neonoire-vera", "neonoire-jack"], "Tiny figu
 assert(project.frames.find(f => f.id === "neonoire-shot-75").description.includes("rejection"), "Do not board only the blow and omit the collapse/rejection");
 assert(/same puddle, same shoe/i.test(project.frames.find(f => f.id === "neonoire-shot-77").notes));
 assert(streets.filter(f => f.sceneId === "neonoire-s75").every(f => !f.characters.length), "Pillow shots have no cast, including reflections");
-assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 15));
+assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 17));
 const aftermath = generationFrames.filter(f => f.sceneId === "neonoire-s76" && !revisionBoards(f));
 assert.deepEqual(aftermath.map(f => f.id), ["neonoire-shot-82", "neonoire-shot-83", "neonoire-shot-84"], "Scene 76 stable identities remain unchanged");
 for (const frame of aftermath) {
@@ -620,8 +620,8 @@ const coverage = generationFrames.filter(f => shotNo(f) >= 241);
 // 241–320 with the 30 September retirements left as gaps: 274 and 280–282 (scene 51's bow, the
 // scene 1 letter coverage) and 304 (the crawl, cut with scene 97). Nothing is renumbered.
 assert.deepEqual(coverage.map(f => shotNo(f)),
-  [241, 242, 243, 244, 245, 246, 247, 248, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 273, 275, 276, 277, 278, 279, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382],
-  "Coverage runs 241–382 (321–333 are the slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A, 344–363 the long-hold passes, 364–368 the relief pass, 369–376 the second coverage pass, all of 4 October 2026, 377 the 5 October prologue Hive, and 378–382 the 6 October Hive-escape rooms) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
+  [241, 242, 243, 244, 245, 246, 247, 248, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 273, 275, 276, 277, 278, 279, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388],
+  "Coverage runs 241–388 (321–333 are the slots from the 2 October rewrites of scenes 6 and 1, 334–343 those of the inserted scene 14A, 344–363 the long-hold passes, 364–368 the relief pass, 369–376 the second coverage pass, all of 4 October 2026, 377 the 5 October prologue Hive, and 378–382 the 6 October Hive-escape rooms) minus the retired gaps: 249 fell with scene 13, 272 and 274 with scene 51's rewrite, 280–282 with scene 1's restructure, 304 with scene 97");
 for (const frame of coverage) if (frame.image) assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must be 16:9`);
 assert(coverage.find(f => f.id === "neonoire-shot-241").notes.includes("small reflection in the upper corner"), "Shot 241's retake shrinks the face");
 assert(!coverage.find(f => f.id === "neonoire-shot-241").notes.includes("larger than a glancing reflection"), "Shot 241 no longer carries the large-reflection caveat");
@@ -900,7 +900,7 @@ for (const frame of frontCounter) {
 assert.deepEqual(jpegDimensions("/images/neonoire/keys/05-the-police-station.jpg"), [1920, 1080]);
 pass("all eight front-counter JPEGs and the station key are 1920×1080, with the revised continuity brief");
 
-const apartment = generationFrames.filter(frame => frame.sceneId === "neonoire-s4");
+const apartment = generationFrames.filter(frame => frame.sceneId === "neonoire-s4" && !revisionBoards(frame));
 assert.equal(apartment.length, 10);
 for (const frame of apartment) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080], `${frame.title} must remain 16:9`);
@@ -1103,7 +1103,7 @@ pass("all six detectives-room JPEGs are 1920×1080; Ishida, drawer states, seale
 const labels = project.frames.map(frame => Number((frame.notes.match(/Stable Shot (\d+);/) || [])[1]));
 for (const [i, frame] of project.frames.entries()) {
   assert.equal(frame.shotNumber, labels[i], `${frame.id}: metadata and production note agree`);
-  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 382, `${frame.id} should retain its stable production number`);
+  assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 388, `${frame.id} should retain its stable production number`);
   assert(frame.notes.includes(`Pass ${Math.ceil(labels[i] / 10)} of ${Math.ceil(Math.max(...labels) / 10)}`), `${frame.id} should name its pass`);
 }
 // Shot 73 (id 71, the vending machine) was retired 6 October, so id 71 is gone while production number 71 remains with id 69.
