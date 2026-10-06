@@ -1,7 +1,7 @@
 // npm run verify:hangar: the cold-open workspace's schema, ceilings, source fidelity and isolation.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
@@ -16,8 +16,8 @@ execFileSync(process.execPath, ["scripts/hangar/build-project.mjs", "--check"], 
 const cache = join(root, "node_modules/.cache/verify-hangar");
 mkdirSync(cache, { recursive: true });
 const lib = join(cache, "lib.mjs");
-await build({ stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/frame-order"; export * from "./src/lib/prompt"; export * from "./src/lib/styles"; export * from "./src/lib/types";', resolveDir: root }, outfile: lib, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning" });
-const { validatePatch, isUuid, MAX_FRAMES, MAX_SCENES, framesInSceneOrder, buildFramePrompt, buildScenePrompt, visualStyle, VISUAL_STYLES, TRANSITIONS, PLATFORMS } = await import(`file://${lib}`);
+await build({ stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/frame-order"; export * from "./src/lib/prompt"; export * from "./src/lib/styles"; export * from "./src/lib/types"; export { hangarUpdates } from "./src/lib/hangar";', resolveDir: root }, outfile: lib, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning" });
+const { validatePatch, isUuid, MAX_FRAMES, MAX_SCENES, framesInSceneOrder, buildFramePrompt, buildScenePrompt, visualStyle, VISUAL_STYLES, TRANSITIONS, PLATFORMS, hangarUpdates } = await import(`file://${lib}`);
 
 assert(isUuid(project.id));
 validatePatch(project);
@@ -26,10 +26,18 @@ assert(project.frames.length <= MAX_FRAMES && project.scenes.length <= MAX_SCENE
 assert.equal(project.scenes.length, 8);
 assert.equal(project.frames.length, 39);
 assert.deepEqual(framesInSceneOrder(project.frames, project.scenes).map(f => f.id), project.frames.map(f => f.id), "frames are already in scene order");
-assert(project.frames.every(f => f.image === "" && f.status === "Needs review"), "no frame borrows a picture; each says it still needs one");
+for (const f of project.frames) {
+  assert(f.image.startsWith("/images/hangar/") && existsSync(join(root, "public", f.image.slice(1))), `shot ${f.shotNumber} keeps its painted board on disk under public/images/hangar/`);
+  assert.equal(f.status, "Draft", "every board lands as a draft for the director's review");
+}
+for (const c of project.characters) {
+  if (c.image) assert(existsSync(join(root, "public", c.image.slice(1))), `${c.id}'s continuity sheet is on disk`);
+}
+assert(existsSync(join(root, "public", project.coverImage.slice(1))), "the cover key art is on disk");
+assert(existsSync(join(root, "public/images/styles/painted-americana-75.jpg")), "the style picker example for Painted Americana '75 is on disk");
 assert(project.frames.every(f => project.scenes.some(s => s.id === f.sceneId)), "every frame belongs to a scene");
 assert.equal(new Set(project.frames.map(f => f.shotNumber)).size, project.frames.length, "shot numbers are unique");
-pass("8 scenes, 39 shots, in order, none with a borrowed picture");
+pass("8 scenes, 39 shots, in order, every board painted on disk under public/images/hangar/");
 
 const text = project.script;
 for (const word of ["alien", "robot", "UFO"]) {
@@ -82,4 +90,33 @@ const neonoire = JSON.parse(read("public/projects/neonoire-opening.json"));
 assert.notEqual(project.id, neonoire.id);
 assert(!project.script.includes("Nobody's Witness") && !JSON.stringify(project).includes("/images/neonoire/"), "nothing leaks across from the other project");
 pass("isolated from Nobody's Witness: its images, ids and script are untouched");
+
+// Review fixes (7 October 2026): the descriptions that stop the next pass repeating the first pass's mistakes.
+{
+  const framesText = number => project.frames[number - 1].notes;
+  assert(/LEFT/.test(framesText(12)) && /LEFT/.test(framesText(14)), "the US truck's driver sits on the left");
+  assert(/head-on/.test(framesText(18)) && /alone/.test(framesText(18)), "the swerve is head-on and the nurse is alone");
+  assert(/No limbs, fur, head or tail/.test(framesText(32)), "the hollow is only a dent, never a body");
+  assert(/never a flashlight/.test(framesText(34)) && /never a flashlight/.test(framesText(36)), "the marks are lit by a flare");
+  assert(/reversed up to the doors/.test(framesText(4)), "the truck is backed to the hangar door");
+  assert(/red band/.test(framesText(28)) && /round chrome/.test(framesText(28)), "the cap and mirror are named exactly");
+  assert(project.scenes.slice(2).every(scene => /hardwood/.test(scene.description)), "the outdoor scenes say Ohio hardwoods in leaf");
+}
+
+// A saved copy refreshes to the current bundle, but keeps whatever its owner wrote.
+{
+  const old = JSON.parse(execFileSync("git", ["show", "59631f1:public/projects/hangar-cold-open.json"], { cwd: root, encoding: "utf8", maxBuffer: 1 << 28 }));
+  old.frames[11].notes = `${old.frames[11].notes}\nMY OWN LINE`;
+  old.frames[0].title = "My title for shot 1";
+  old.frames[3].image = "/images/mine/custom.jpg";
+  const patch = hangarUpdates(old);
+  assert(patch, "an old saved copy is refreshed");
+  assert(patch.frames[11].notes.includes("MY OWN LINE") && patch.frames[0].title === "My title for shot 1" && patch.frames[3].image === "/images/mine/custom.jpg", "the owner's edits survive the refresh");
+  assert.equal(patch.frames[5].image, project.frames[5].image, "an untouched card gets its picture");
+  assert.equal(patch.frames[17].notes, project.frames[17].notes, "an untouched card gets the fixed notes");
+  assert.equal(patch.scenes[2].description, project.scenes[2].description, "an untouched scene gets the fixed description");
+  assert.equal(hangarUpdates({ ...old, ...patch }), null, "refreshing twice changes nothing");
+  assert.equal(hangarUpdates(project), null, "the current bundle needs no refresh");
+}
+
 console.log("\nAll cold-open checks passed.");

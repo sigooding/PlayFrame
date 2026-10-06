@@ -1,0 +1,3133 @@
+{
+ "project": {
+  "title": [
+   "c5432b0d20afd1f7c88ae720eed1315f8de3e7dbe452c3c4eb4a9d421a55030d"
+  ],
+  "description": [
+   "313ba7d4c6ebd343bf7dfdc938fabb551919e085dcf087eac2dcd2d81ded5e41",
+   "9f493d391df72ef12d54b68c0386caaa3284f6b9b0158324745aaa8ae2cda84c",
+   "edb48af99f2feb544829ff45cd47e04688709057d7c245f042393b1da36d37cf"
+  ],
+  "genre": [
+   "dd2c64a83b8bd9e1b9aadab7372cda73ea348cf606339f7d84c1a6eba667ebf5",
+   "b6864ff1b72e1d6a91114e9a809a583088d7535169fa8bea9c9e7d215fce9999"
+  ],
+  "format": [
+   "fcd52fe34fcdb9086a493bc0b3578e6b002ce3abf9f3ffc4366940f021b181cc"
+  ],
+  "status": [
+   "85b32ddbac2f6347b21f39e3506a3ebb38c795eb96a5a15f110246718a5c3c5d"
+  ],
+  "coverImage": [
+   "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+   "575f2608d17edf2be6d4ec99550e0b58b42bc1fd9bc14ab49a0826bbfeaca229"
+  ],
+  "script": [
+   "d0514ae60c8259ec46af960feaa41f98bcaaf7d280d72211239322746347b33b"
+  ]
+ },
+ "frames": {
+  "hangar-shot-01": {
+   "shotNumber": [
+    "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+   ],
+   "sceneId": [
+    "ac65ccf39226e0746a18ffde2448428b87cd5e277527655ff74f0769105becb8"
+   ],
+   "title": [
+    "adf921771562e1647dd70bbb226d7bd543d452d1284aced926d6c0dc6fae7efe"
+   ],
+   "description": [
+    "e9592422be71b6e474a8fd247a9b076106baef00f14d310727197eef7557a0b4"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "d602e77c7c0a0404a9486e82812cad843092fd5e23458931ed3f44e9cb25b788"
+   ],
+   "shotType": [
+    "4cb283372d9255343773848f5530528d524730df9c7784242408cc81cc9ace62"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "d59eced1ded07f84c145592f65bdf854358e009c5cd705f5215bf18697fed103"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "baf93eb4a5f48a5992cfb386aff36c7d34cc72559ab618b17df6a6da31ba77e1",
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "3866f6692791676bc86b5d77750fdd023dfe57240d1ecdea02dc1a703acff873"
+   ],
+   "notes": [
+    "ebfdc608bdba6912d267208bb52ea7003a7d25162434b47f846a7c39c541fb75",
+    "133e76f5b25cc564d105fc87d19d7f1e9bf2f8ee2dce0255bdfda38a9c051479",
+    "4fbb5c41de936a09095bb1f0ffb5cac15ef4e8ba93e2ca2a8dbde5f5a0482a87"
+   ],
+   "lightingNotes": [
+    "5209c3ca7ecec048439ca3ee63b5f0b3324135dd6460ef1a79070e72e3eef736"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "5706fa0a6403aefbacf93d088b14a46dbaad8868b7f56c12a5f811860cd68617"
+   ]
+  },
+  "hangar-shot-02": {
+   "shotNumber": [
+    "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+   ],
+   "sceneId": [
+    "ac65ccf39226e0746a18ffde2448428b87cd5e277527655ff74f0769105becb8"
+   ],
+   "title": [
+    "e1d6b5ab9da307e4052dcfd889eebd5780704049d1be90592ba6b395886591f3"
+   ],
+   "description": [
+    "73c9fef3f793a6428945cda0b080aa0e2d2fad739624eceff7a295a5d6db18ec"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "35c685291d044e997e7d202dd9ae35899b52fb63537b689af0e330f115bb62f2"
+   ],
+   "shotType": [
+    "4cb283372d9255343773848f5530528d524730df9c7784242408cc81cc9ace62"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "93a052d9ac4d3f1071b096b27d192ffbecd25c26918ac655fcb0f416c80d3396"
+   ],
+   "notes": [
+    "260611e76944490f27e45ff475d38bb4859a1bfbebf0e75ae1278330189efa8c",
+    "a28c0308393599d037ac23088a24d35f557360d00974466736f82218f4b0e58c",
+    "8caea81b1e6a430ccc54b3b59e66ba8db418fed8c19bcc98229fd7c31ded9b0c"
+   ],
+   "lightingNotes": [
+    "4f08cf6770be61504249ce33ff8c9a2660c75e7049bc494da634f4ddde221bee"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "2b27d277b543277368effb970e872171cfc761026c19bfd2ab25da51c64a9bc1"
+   ]
+  },
+  "hangar-shot-03": {
+   "shotNumber": [
+    "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+   ],
+   "sceneId": [
+    "ac65ccf39226e0746a18ffde2448428b87cd5e277527655ff74f0769105becb8"
+   ],
+   "title": [
+    "cc6b531447e9968082a451421e6406ddff54e22f4e7b6f60664e4d61e0c60d92"
+   ],
+   "description": [
+    "3dbef83f846e0fb381d308584bc4a5adcc4ecd178b7c465b14b9a7edd1755e70"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "964fa696675df54f096ddde76893ce22ce65f740ea66bf32b81bc02597f4cff2"
+   ],
+   "shotType": [
+    "4cb283372d9255343773848f5530528d524730df9c7784242408cc81cc9ace62"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "8527a891e224136950ff32ca212b45bc93f69fbb801c3b1ebedac52775f99e61"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "3866f6692791676bc86b5d77750fdd023dfe57240d1ecdea02dc1a703acff873"
+   ],
+   "notes": [
+    "717851778b2efe4c52a42971b16065c3f21e7064e8378bb546750493263f5cdd",
+    "ef747561bb1bac8087d0c4f36d30be0e5900b772608292d122a7f0d1f3a9ed06",
+    "73ce14d352b3f566ffbac424b22d4e8e669cd60d3e847fc70616dc2f0396eb5b"
+   ],
+   "lightingNotes": [
+    "4f08cf6770be61504249ce33ff8c9a2660c75e7049bc494da634f4ddde221bee"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "b799852201998d2c6d498a7a76406e4eb80e573c7772b18da1ace407a449b03e"
+   ]
+  },
+  "hangar-shot-04": {
+   "shotNumber": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "sceneId": [
+    "98fd7a341eef2053568b124931a66cf0fb6d4e71d0aa17eb54742589a9999e56"
+   ],
+   "title": [
+    "d0ec61fe310c7a781300601d3766454d7d02daf288496aba00d7de35047131d3"
+   ],
+   "description": [
+    "c67717fa7449c1004abdc97c8d4fb1b583bbd9f0bfe42ea97f852bcbc2210829"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "f80b420c5e9ffb1ff78348f2798ef3ad797b0c164b223f8a4837d41304f8d172"
+   ],
+   "shotType": [
+    "4cb283372d9255343773848f5530528d524730df9c7784242408cc81cc9ace62"
+   ],
+   "movement": [
+    "0027ab89e9b3fc18a077ad16967f9935095166839cb9d55c80b32de0076b1b8c"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "dfa53e6471dec872c573d468759a5fb2b3aa387a36e14102787fa4407865e241"
+   ],
+   "duration": [
+    "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "baf93eb4a5f48a5992cfb386aff36c7d34cc72559ab618b17df6a6da31ba77e1"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "59ca92b752e174ba798db1b9fa8a46e42912ec9fdcdcbbe87dc4f0d74cd02c8b",
+    "9ab4e3453ef75ea1fff27dd4c4522b910164ea088f5cc9e5e44d6a1e711e0e03",
+    "263bed925d1cb6f6124f49b0bbf0808543c2191f0ca147cfe5f1fddfe7eb8894"
+   ],
+   "lightingNotes": [
+    "4c0d36aeb9c30cba6117a2b1b84e2a58eb0eea6e9d4eeac1a2a2c31ee01f135d"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "d3b8359ebf4d7b507dbd35a5c21a924f79b719bff0565cafdb03f85ef9e5f850"
+   ]
+  },
+  "hangar-shot-05": {
+   "shotNumber": [
+    "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+   ],
+   "sceneId": [
+    "98fd7a341eef2053568b124931a66cf0fb6d4e71d0aa17eb54742589a9999e56"
+   ],
+   "title": [
+    "007c336dde8eebc88b12bc15179e984b763cf42d1380fd718bcd6a96bcadb776"
+   ],
+   "description": [
+    "7ec65dede8e8fff40e300dc56f5ccf5b303d6bb52c6716533044f464adb6ca1a"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "ca6e607cd899587bb21e39a9a7b917cbad3f08773dd88ada6f8c3751b17f27c7"
+   ],
+   "shotType": [
+    "033d831e8be4c64f9bd7d4e610ab109fb9201bd44a706ed6819e68ff9b0d7066"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "00fc74c877a4b2e6c524beb3cd423ee87ede0edd7c0b415b6401bdaddbc2dfd0",
+    "fbc3e45beb6d4e4fe84c4e9c199c8b1d2370612f29739211d76eafd57b2abb85",
+    "c7a772c476b5dc3efb93a485015f868fb7a29700404f98f05a5cd4cebe89067b"
+   ],
+   "lightingNotes": [
+    "ea4653a53ebdeed92f5e459aa4d847989c99dbef28c5bbad6fbc910f0b210834"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "9e52b024ae41de0b4d05d24fc93929c6d192d629186e9483f86505450ccbab09"
+   ]
+  },
+  "hangar-shot-06": {
+   "shotNumber": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "sceneId": [
+    "98fd7a341eef2053568b124931a66cf0fb6d4e71d0aa17eb54742589a9999e56"
+   ],
+   "title": [
+    "4fdc4bafb0ead5813dcab86333d1db71618f616404fadb5b509ce3346fc5742f"
+   ],
+   "description": [
+    "f35b192545afc6dabebf229ecba9fa8ff84f3e0dc757d1e7c3f2f76ec6b9f330"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "dbea91d55ecc2f46931f853652fc4c0a98ea3e1ac743ed91a5831ddb21457394"
+   ],
+   "shotType": [
+    "ee67f3540260dcaad40173acf2b454b8131c8306257b57edfda08b134fd539d5"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "3a68164070bf6652736affd710978a1963a30600ecd3bc91911677706db56472"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "9e5a7dc3387ba8cb702eb39dbc44f36cd09787dcbeeeb92e588f36efd9fa87a4",
+    "7c2db518f0475892a3e0092daf020f925bca511e1d44718ca5ed41c74c73fa78",
+    "60fb1403f21eb0119ac9fcaf1d1737a812e5a4988293ca3f8d838ec0747c4279"
+   ],
+   "lightingNotes": [
+    "b944bb5ab8d67a67dbe6c288c07662174f077af2e772a8dc0e3b73962b9d6e25"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "842a2b2789527afba923eb5bacaa294126729eec603c90627efb5e78f0f55e5f"
+   ]
+  },
+  "hangar-shot-07": {
+   "shotNumber": [
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ],
+   "sceneId": [
+    "98fd7a341eef2053568b124931a66cf0fb6d4e71d0aa17eb54742589a9999e56"
+   ],
+   "title": [
+    "2b126f48ae0b91a83a4ed80951a7d8b052597330af161bb5d144f76423a14caa"
+   ],
+   "description": [
+    "2710d2332eb036376aaf17032c6475c4df8b48847900e3421e2331dbb814e3ae"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "b4e589e41b02a8abab9e049e61942271ab4ca347a8041ed0af36c0403028197f"
+   ],
+   "shotType": [
+    "033d831e8be4c64f9bd7d4e610ab109fb9201bd44a706ed6819e68ff9b0d7066"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "1649ee8861fa3dcb4c676f0e58ee7c325de9d0a10d0317cd1e33012ddd6f25f8"
+   ],
+   "notes": [
+    "a5ea31266c2fbf873f980fb1a6e047e294505dbd8d7b66d0c4be78334607e743",
+    "c51b9885cd87bcaeca7d65b50d9cce61862dffe5a36c4bd31c373adc30c8ffc0",
+    "95ed9f4241af09a21fe75ec44ffff75c90011496a6a10131ec938ec21b98d13f"
+   ],
+   "lightingNotes": [
+    "9001720c1427380a253565e5841a2a2e95724a1e4a98cc24da66e882a0970fd8"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "4970a608b7237420eeacf8d3d285fda69f24e275f09ae9801c7fbefc3417af27"
+   ]
+  },
+  "hangar-shot-08": {
+   "shotNumber": [
+    "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+   ],
+   "sceneId": [
+    "98fd7a341eef2053568b124931a66cf0fb6d4e71d0aa17eb54742589a9999e56"
+   ],
+   "title": [
+    "1004f94e87643aa5ca3d12d111c8cd22e325ccf50901bf0446a145a3e41f070d"
+   ],
+   "description": [
+    "3251333509e99e497222efb9abdf9fd0a5662778982861a4c55c1bccd4f696bc"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "6a3d95f94b5a303451f34b6614c4f5bd661866e98f356c988d90da75cda7b7c9"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "1649ee8861fa3dcb4c676f0e58ee7c325de9d0a10d0317cd1e33012ddd6f25f8"
+   ],
+   "notes": [
+    "adf93448fa228e66e030aa14342d46278d1f6c763290fe12561d9cbe604751fa",
+    "51c0f8ac2b8ade365780c24f66057cee8c6b7971ef4bea318439f5ee66d54329",
+    "6b286ad4917908f724164e07ad391ebc1f2d39de8098666953a31b2489434c2d"
+   ],
+   "lightingNotes": [
+    "3b577d765c280bda6e1e215279b9d9cb3839a05e8b566d42212f72c2e5977db9"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "825e3585ab3d3e70a8ff1f2280d536461be3d43b93eedba70a48a26d1a7b5507"
+   ]
+  },
+  "hangar-shot-09": {
+   "shotNumber": [
+    "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7"
+   ],
+   "sceneId": [
+    "98fd7a341eef2053568b124931a66cf0fb6d4e71d0aa17eb54742589a9999e56"
+   ],
+   "title": [
+    "f7398796d546918b0aec1e4bda1b68210c2bf224e549ecac3a63d4f40fca202d"
+   ],
+   "description": [
+    "290e3cf81d15e2886f7edbb627944e2b7d9aca4a2d23544680a7f65297460046"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "3f0145b16ac70c741e47438cdadb1d36332adac91c19dfab959c9fbe8a73974d"
+   ],
+   "shotType": [
+    "a6fe36f5bb88a340eb46246ef1bc187edcec6ba1d11e2ff6a003ae9abd472854"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "a1b9861b99613f7f2a28f6ee52613552739a9e0e4fbbd9546261c6b3af8fec64"
+   ],
+   "notes": [
+    "b30cf2f482557c7388c27dd44d6486af894b2497fe7b6108ad7a206631679e3a",
+    "3ae61ad82efc1c005a1d02a174b7e1b978d9511ca21cf1473b01a913cb5ce9a5",
+    "58affabd15b819c62a095cee802b83e085cc1f914c0a9adc3185d1756b8acccc"
+   ],
+   "lightingNotes": [
+    "542f58ac1d787e2810b3b29a7a7d72dba68df10cb0d7ac77b29889af1c85b4ac"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "ee0ae4fb43083fc84c0e1c42080144ee8908154c4499fcd85ad95688debaa1fb"
+   ]
+  },
+  "hangar-shot-10": {
+   "shotNumber": [
+    "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+   ],
+   "sceneId": [
+    "1f50c53f91597d2bbc1fc062d3c4b539ba5fe7b8593d8205ab909581014964c4"
+   ],
+   "title": [
+    "6c4232822058e02bab957a9e4ebb176cb0a0367fddcf225ba462ae2cdbf596ce"
+   ],
+   "description": [
+    "8169e148b753ee11bf7b4a05cf56849ccf68230219624ec2e895452edceb8ddc"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "e99d83b9bc84ffd9101ed7f0c95657ce89a46a18c867aa1331bebcad827ebb52"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "2970fd3f5db75c337ab6a0acb5ead9d9eee57f5bdf0845d5daac8a2718d7d40d"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "dfa53e6471dec872c573d468759a5fb2b3aa387a36e14102787fa4407865e241"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4d26cf1b368f7befe62d8cbefc8f518163a88a078f65d351ad47b4ad15a9609c"
+   ],
+   "notes": [
+    "f45c99965e761b00a2c104cfa7db7fe95a85e9414d3ee608a4d99a52f5b6949c",
+    "a82584d8e8a02323a5ce56ad0a63ff33a74b48a7d648e0b8d625bf9ff6da75d8",
+    "5358c091650bea09026f4c6a616ffef1c89f382bc2c10a0e28d143081dcdb37e"
+   ],
+   "lightingNotes": [
+    "904c5e6ea12f9ffc6a294971dcb66d9cb6d847e6778292c85d61d0b76e7ef4ea"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "4f573c29c0577124ead53b8a6ced0a59d56ee76fdf3e80e577b49d33f193743c"
+   ]
+  },
+  "hangar-shot-11": {
+   "shotNumber": [
+    "4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8"
+   ],
+   "sceneId": [
+    "1f50c53f91597d2bbc1fc062d3c4b539ba5fe7b8593d8205ab909581014964c4"
+   ],
+   "title": [
+    "4bebffa69fb72f21f3ae02676a460f5d3e4551d607613f7a8fc53c0bec2515a1"
+   ],
+   "description": [
+    "3b4a3a9c3c652e5d00ccc8cd1df0411e4a45220498a27bc5678b4f1deab25432"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "7e31c0192f5861c4519d7749cc3213fdfda357a217547867b8e37ebd182b9b1b"
+   ],
+   "shotType": [
+    "3653ed4b7c2f09d260838064e7a30376eb247e0bfb8c5955bf2ab81523dcbf23"
+   ],
+   "movement": [
+    "2d46ccb019957d66be3739ddb8bbd73f6e953b8b465dd451d3cfc1c2be1ef4b5"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "dfa53e6471dec872c573d468759a5fb2b3aa387a36e14102787fa4407865e241"
+   ],
+   "duration": [
+    "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "28e1bdb376291cd9dfbd2befaa3e126ed3ff24360b6e4cbbec472f225dd25ab9"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "e5316a6a0f085536924ed3ec14ecfc12f82e43ed434b8a29ac5bd08aa9e77373",
+    "5ed18695c92bbda8f2f4058bbc18147aad3ee5e422c5c58a924e041fcdde7385",
+    "a594b195bbab5b9b763f6e0d2c25450b9c3c963d64ab66e517c0f2c2358b36b4"
+   ],
+   "lightingNotes": [
+    "dfec78e3c23e8069e8f4b1974c4e688322fd658e4ee6cb89585b5da7a6141666"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "56e618fb7edc9201f50a95676ce093f0cbccef5f889f7bf5ad427e0c7dd83f75"
+   ]
+  },
+  "hangar-shot-12": {
+   "shotNumber": [
+    "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
+   ],
+   "sceneId": [
+    "1f50c53f91597d2bbc1fc062d3c4b539ba5fe7b8593d8205ab909581014964c4"
+   ],
+   "title": [
+    "d42748ecab48100b113eca53786697bd4053c568a65c5eff333c0944b0ecfab4"
+   ],
+   "description": [
+    "da69476cfc51dd6882d6d7db055f230b2400fe9d0a70bb323c542a2eb570156e"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "02774eb9f605227bafd9f76beb7fa429f477260c32e9a117d62baf4ba921499f"
+   ],
+   "shotType": [
+    "a6fe36f5bb88a340eb46246ef1bc187edcec6ba1d11e2ff6a003ae9abd472854"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "21d1fdcabac4ac5c8c8cbbfbdfac6e3d87ec6f969fb332d2ef6b06cf86c024dc"
+   ],
+   "notes": [
+    "a8519fb2e8d33ce75c6c999aa023cc7c585215b4bf7d5df03ce06331808641e3",
+    "f8d39c5604da059202176c6d25092ce74ca2e305c02d81bab93e041f5f2cb103",
+    "5cdc454e5d44c9f31edad8346f90398f8b4ec4893bf46179dafdd7709e805d2c"
+   ],
+   "lightingNotes": [
+    "95faca2fbe166064ce99fe526400c3bcb0f191f58679cdbb81681c05e076a8a2"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "cab8135dc75620003e6c5571f23b6c26b47afe6264ee65e4df1b0dabe44c30e8"
+   ]
+  },
+  "hangar-shot-13": {
+   "shotNumber": [
+    "3fdba35f04dc8c462986c992bcf875546257113072a909c162f7e470e581e278"
+   ],
+   "sceneId": [
+    "1f50c53f91597d2bbc1fc062d3c4b539ba5fe7b8593d8205ab909581014964c4"
+   ],
+   "title": [
+    "095b5ca1fa07a953b8cece82fd7363d203a379b57eb1858fe45f595674ed71be"
+   ],
+   "description": [
+    "05cc0369cd816c256165c061317e26b19df8d5d0d8340d9f69f8940ad58ac367"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "1247f602f246d3cedc0de996ed7af9543a39e8f50692f789042192f3efdc7c6f"
+   ],
+   "shotType": [
+    "ed91effe27b2a0dafbee2174453e14a6f29304ddbb8d943a7d4c0bec3da0e17e"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "d05552593c3db1f568351a97340a5d852ada8f78a819dfe86f430e3dfe8aa1c8"
+   ],
+   "characters": [
+    "21d1fdcabac4ac5c8c8cbbfbdfac6e3d87ec6f969fb332d2ef6b06cf86c024dc"
+   ],
+   "notes": [
+    "145a2ac4070cb9f97574f10ab4f764de88733679c4c809b6c0fa67a540a3531f",
+    "c1a074d34307e9fb5ac0233e135f4f49bbba7d67729310483eb5dded76936da2",
+    "5b96b47f4c572edee27c726ee6b99081631c4a6e668c788ab6bfdf60d8867bc2"
+   ],
+   "lightingNotes": [
+    "bc1a6042480efc95af7da96455ba5ce7aa02fcdd78a553e93ec7f4c56f393358"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "4fce70c7e9f50bb3d087181548f46bb961f51b7a7b8a42d3bd2aa74aab393cc1"
+   ]
+  },
+  "hangar-shot-14": {
+   "shotNumber": [
+    "8527a891e224136950ff32ca212b45bc93f69fbb801c3b1ebedac52775f99e61"
+   ],
+   "sceneId": [
+    "1f50c53f91597d2bbc1fc062d3c4b539ba5fe7b8593d8205ab909581014964c4"
+   ],
+   "title": [
+    "bc6f16d1e5c2283b59f95e005639b646d0a2f5ee3f79a697940365a6d9ebc2c9"
+   ],
+   "description": [
+    "e1ace3e978dba0710218388bce4a8c3ea1a1959aeabb094c545695fe4c198f97"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "86ab8e14cb63174c222c35f765a2c88bc54f4d8be9d92e649a307eba37d6fa68"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "e05c00531e8f44afd5f140c160a851d54b35848075f220b1e577853cae9dd27f"
+   ],
+   "notes": [
+    "8a0962008992501db6b4f661f405f360eea3023211d7324708147df64dcece2c",
+    "6d36e30b897ee34d4b19f6976205b8d2a2af58dd59feb9c3991db2bed68891ea",
+    "1dec26e7668a5c344203f1abacf52f8280ada31f7f7a5461947e4039b9b906c7"
+   ],
+   "lightingNotes": [
+    "304a48232b61ccb1caeca109d66567d1a7444b08fc4dd7c539c256c1a518ab3e"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "3451c466483869cb77385796da2633f5a24b9c9c25b055074df7249853cac0c0"
+   ]
+  },
+  "hangar-shot-15": {
+   "shotNumber": [
+    "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb"
+   ],
+   "sceneId": [
+    "1f50c53f91597d2bbc1fc062d3c4b539ba5fe7b8593d8205ab909581014964c4"
+   ],
+   "title": [
+    "46a588ea87ccf990b598c4c508db937efc2a6a5d9f8cdfbe4a551ffc1d6c39ca"
+   ],
+   "description": [
+    "7c4a3c96d12d44886a87a159fa7eb3f5e4bd7b111994ad8c46991f139dc2bd6b"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "29d61ddd90dc777914fe27afb8247e7561b3955d719c3734de2070c04f07b595"
+   ],
+   "shotType": [
+    "396149ff9ec1b6fa4d3d98376b685992da0aaea33c8fdb93e96f41529f618369"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "e05c00531e8f44afd5f140c160a851d54b35848075f220b1e577853cae9dd27f"
+   ],
+   "notes": [
+    "356f67f08720611153e4a8edfccdd977adecab471b0ad5103c16a3eeb7ea6db8",
+    "15052ebc800f9028c9f647b4b59a4a26ed148d8facb59303dcec761e5b5da308",
+    "cdc5b9cfeb7b0c0298c4735815a21539a7ba96819c4b588017c1a047acb58463"
+   ],
+   "lightingNotes": [
+    "88d8300102bb70dfec2f8e941de7acf068028b95083dc1392d197fc065a6a20e"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "e2953d80008c6906ee17b8eb16f77c861a2d7d50bfc079bcd51d071250c8669f"
+   ]
+  },
+  "hangar-shot-16": {
+   "shotNumber": [
+    "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "8458d5f564b883c58b82dedc743fbf98e1854578a75292935cfa16901e131a39"
+   ],
+   "description": [
+    "50b1bcb8eb91db6207fc4923fca02334214a2510d895065d571027752f4d8033"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "eaf98c2418edc676e5f5f2c37be6c1ab5b0475bf5ab7937ac35e967276e94832"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "bcbe5bbb46438adae8704fb1459dcb9152ef74a79ca1c18a7ce88385b2d90081"
+   ],
+   "characters": [
+    "a423138746bc477f1b7ff371676fcb23aa07a2aa9f5a9c43b5a5126526905550"
+   ],
+   "notes": [
+    "0c517116994e5dfdc9f5433bd46cba3c8b3b82621aa5606cbcbb3f0b4d617534",
+    "f17100b389ab040981b92e84044dc067ec90259c648a7e013b6bd58ca3e5b748",
+    "0da3e3ff3aa21836042aa660aff8e4fa8efa840ee9abb54e674c5b64cf53a1d4"
+   ],
+   "lightingNotes": [
+    "78a4759d2b61bba335b8f77399dee8eebd508db46471b4c40ed96c3b2c3af905"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "93f1648bbcc9447f9a53e1ed1a405894fe045d43be1fe1267a589562aa47e8df"
+   ]
+  },
+  "hangar-shot-17": {
+   "shotNumber": [
+    "4523540f1504cd17100c4835e85b7eefd49911580f8efff0599a8f283be6b9e3"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "4c7012fc59340caf236c17530d91eda95239b50790f605937d55d47b6123b6a2"
+   ],
+   "description": [
+    "1fda3e260c5345059f84da82b8774a5d26cfc8d03996baa0d724350e939031ae"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "de5ef8bc07aae2eb7b3aaddb02d4afeba76da6783c3a534a3ce58f1e558df3bc"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "a423138746bc477f1b7ff371676fcb23aa07a2aa9f5a9c43b5a5126526905550"
+   ],
+   "notes": [
+    "9cde23c1a8ac918bdc02c0c1b412a2200f7b95ee367d2f0beddc8500e71dafca",
+    "c22e992cefbbb7424649ee37be1241c7dca4ad4b6d2c37be58c3b1b9f1e9c32a",
+    "2aca2cf71d581759907c0d9c0058c7dda65d14eb00db673e4f4c808e47e6c6a6"
+   ],
+   "lightingNotes": [
+    "806c5d43ff58654168a432e74627a4a89196b2bd8707a83871c371008db415c3"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "19cd8d4a8f91587de31a0f09eb9ecc9f09bf9720f4477ad2b413ae38e26a9888"
+   ]
+  },
+  "hangar-shot-18": {
+   "shotNumber": [
+    "4ec9599fc203d176a301536c2e091a19bc852759b255bd6818810a42c5fed14a"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "6ec6b2c72c52f388f24cd48b6fddafcf560c098361fbd1ac255d09b602e217fc"
+   ],
+   "description": [
+    "3d91e05a732dc5259f52a50fcd727239012f3a2b3680c71d36e20f98dd77a2ec"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "cc2ea67462a784acd5e0e8ae570a276642043a559505abd272d564a7c7784af8"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "0c90a6ded57f13037b339feae1d0e21f1418618787732ca9f88a6a3077f801cb"
+   ],
+   "angle": [
+    "3a68164070bf6652736affd710978a1963a30600ecd3bc91911677706db56472"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "d30846ee9b4bc14ec7472666e42d4acca43f03572df02bfc302a8eec670eda92"
+   ],
+   "notes": [
+    "2c7c725360d33c709f0d297c1471cefcc3854c9d531fb3a4d85da69585c37c2f",
+    "18f84534f4daa9463e0118722ec99a6ded80a6863e3fa37ae36731f74a2e6927",
+    "c4eb2b93a8e9c18d601a9d4fdd1419bf3ec3292e7f9c3d9467f1713a0cecde9d"
+   ],
+   "lightingNotes": [
+    "42d7435e0cab1c6cb399cb16336f035f56dd3cfcd4f40697f9527e4f43918ae8"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "4156e8be69bcdb372e89da8c5df8d00222bef35d68392e83439678f1db4045db"
+   ]
+  },
+  "hangar-shot-19": {
+   "shotNumber": [
+    "9400f1b21cb527d7fa3d3eabba93557a18ebe7a2ca4e471cfe5e4c5b4ca7f767"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "c9fe74ae045043f71b47a651074359a6db5b30f231519ba41f7c595b03a69db4"
+   ],
+   "description": [
+    "cb831a9eef53f5fbbf2782beca92ee481db487ca5ec5293d2ba538006b0cd1d3"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "b90241cd15f31f804a4d155354df907b60db73f4429b0e9b0ba6c8018dbed2dd"
+   ],
+   "shotType": [
+    "033d831e8be4c64f9bd7d4e610ab109fb9201bd44a706ed6819e68ff9b0d7066"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "3a68164070bf6652736affd710978a1963a30600ecd3bc91911677706db56472"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "a423138746bc477f1b7ff371676fcb23aa07a2aa9f5a9c43b5a5126526905550"
+   ],
+   "notes": [
+    "af9e5eea5b38439f91d6e8a4deab9c3e17222ab841f33465eb3e5d97b65c13a9",
+    "1c39cf61cc417eee406d980ac545d3478cd2c830b92c18195b4c092fbdda799d",
+    "1769fe24fae608bc6ad3df25391b9ea41838f2605c9b3b039cfd77dce430a614"
+   ],
+   "lightingNotes": [
+    "6224aefd8d03d4d4c872f27b65fafe95e3f3ec59cb63bf4eeeb47a7968e6192c"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "814578589cb7d11116d2e4e0866c9a66d8bdb3b7b2d1554a818bb642db34a862"
+   ]
+  },
+  "hangar-shot-20": {
+   "shotNumber": [
+    "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "dbb8ea69f52d78a57dd2836b854d0239530b36110a582e32552b53d66e0d21f0"
+   ],
+   "description": [
+    "554138a4d5c5c2b2f3780319877178a668c6051621402d8cf0a6fa684596cd88"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "fa94554d10af5800326a25dfeab4b3762bd92a1d0de4282d87367a93ca43a3c0"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "2970fd3f5db75c337ab6a0acb5ead9d9eee57f5bdf0845d5daac8a2718d7d40d"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4d26cf1b368f7befe62d8cbefc8f518163a88a078f65d351ad47b4ad15a9609c"
+   ],
+   "notes": [
+    "eecc7f9315f1ffdf6f9d68c0b10bb8ef3be592bc82a6d79d911a0f5867a7d8bc",
+    "2a9bfedcac0f8b0387eee63235a44a37675a051a2638943d271d061b41de74a0",
+    "6f8116cb5788d0d11924d55506ae8b17322803c3e4eed2999ec2848d296d5a1d"
+   ],
+   "lightingNotes": [
+    "9cde6ae1b0e7985509668dfed65976b366d3db1fc63d48cb83f4d5857313c9d9"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "f4662fb2fb99059b8977505ed2ea6a5cb579c9f08da5b74bcc1b86edf370e509"
+   ]
+  },
+  "hangar-shot-21": {
+   "shotNumber": [
+    "6f4b6612125fb3a0daecd2799dfd6c9c299424fd920f9b308110a2c1fbd8f443"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "679c7ced8368cb754813105ffd5d18b77a2192a146293863cee9ab9e32efd726"
+   ],
+   "description": [
+    "f8118fefa7475482dba03ec005f010194323133066495a9d5560eea8ab8a5075"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "387242543c35253740b980c3e6d5f1fbb030cdcc20444a274748cc978c3cbb83"
+   ],
+   "shotType": [
+    "866bf047c116b31d538dd529f9a3e7bb0f0192ffcbd5de6a0b47a9684c131fe5"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "3a68164070bf6652736affd710978a1963a30600ecd3bc91911677706db56472"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "46738d35d28c7554d79e5e13cc7ddbde0ebdf404abad6cca88c59e86ec46929b",
+    "3e26f42c7a71ab6c84f3bb77487120285c24787141443592f2d4589ea79dcdfe",
+    "af645c562ca7e5dee0e5faf0d6692f21185732cfc722f11a870bcdf9ee2ea67e"
+   ],
+   "lightingNotes": [
+    "e405fc7f96d4e09c3cbfa40f57e82303c72ea61cc2f933a465472c423ea43f67"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "40b5e5e10200c11d713967f6170dc4e142cf47e75b75046476ab1a42b45e168e"
+   ]
+  },
+  "hangar-shot-22": {
+   "shotNumber": [
+    "785f3ec7eb32f30b90cd0fcf3657d388b5ff4297f2f9716ff66e9b69c05ddd09"
+   ],
+   "sceneId": [
+    "93d1d1081538b38343adda6518eb2acb2e8e919d66d4da3b3fcf32daca776c5d"
+   ],
+   "title": [
+    "a17b3547ad32ee7da647b8209622b3fc570abe64e7a0438962c141e77232840b"
+   ],
+   "description": [
+    "715c9435bb741453fba4337f8745f6878e89379900df6cf9d2cfe760cbb27315"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "05eb839a53c19e3ed408169a756195196ef5e0900b0e3b346d51b59ac05eb150"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "c2fe1f40e90f41f7ad9b2ac762230a8e33b8a4af1381ebdd870af21c130e0b9e",
+    "7e3e5b20c92e01edea377684077304866fa2813b00cd8edc248b335b0f08186e",
+    "0f5d3e86efe08debd840d36b4bef0a55e25009b2e943005640efe89bcebc7c8c"
+   ],
+   "lightingNotes": [
+    "783354f4bf7d0cf41d4ff3d74841073ac4af66027981dcf32ab73f594ce324fe"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "e53fff5b014622cca2bb258487a4678decc9c6326f8cb86c3c0d65bc13778664"
+   ]
+  },
+  "hangar-shot-23": {
+   "shotNumber": [
+    "535fa30d7e25dd8a49f1536779734ec8286108d115da5045d77f3b4185d8f790"
+   ],
+   "sceneId": [
+    "cba1989610ea898d55e240e6a1113e3850fee2c6ce30ab40901c7a741c994a20"
+   ],
+   "title": [
+    "f3d216c4a1524d6f8f260ca2379e811d95b12746bb820c0cef9147786d7184a8"
+   ],
+   "description": [
+    "bf64ca9febebbb5bd6b4a0baf275d032b1477fd2c25817d7ba916d3df3e13a7b"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "348b762f0825ce9c0942d7cd3b2a3fcf9b683fa12864c8df0bd8aeb732d4b6ed"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "2970fd3f5db75c337ab6a0acb5ead9d9eee57f5bdf0845d5daac8a2718d7d40d"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "692808d2397221af1fd0660483c452a95506d5e100de270639482e3eec5b47d5",
+    "0763ee0ddda089debbab6369839aeabb9f7ebcea465507696103cb3f86d69266",
+    "8fa78b5a079f8524150fa7816e8b7e43a98e4b06624caba4977483bea0276b93"
+   ],
+   "lightingNotes": [
+    "5dcbe8ad0b70a9e174e6da4d4bc8653ef0f617ebf30bc700bdd098b79768a43a"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "9e5b5f4a2ed4c872c02fa1fed1291e60d349fa4d0d41df8708d022e96545e652"
+   ]
+  },
+  "hangar-shot-24": {
+   "shotNumber": [
+    "c2356069e9d1e79ca924378153cfbbfb4d4416b1f99d41a2940bfdb66c5319db"
+   ],
+   "sceneId": [
+    "cba1989610ea898d55e240e6a1113e3850fee2c6ce30ab40901c7a741c994a20"
+   ],
+   "title": [
+    "0c86779137dd8f855862b08dc56e9bf449bc71835e77282bcdec4963460a622b"
+   ],
+   "description": [
+    "20289f3eb85a6e96992ead299904a1a06d919baa4a1e0c9c9ff438ca76c4ec30"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "5f425e1e9a7bf1638a36f92f4055716eb57e7b6f6a2afb07dcc3884df7b5775a"
+   ],
+   "shotType": [
+    "48d31e99cdc8ce3a945759b2eeaaf81baa2229c6aac3dd89ef8710638b2d24db"
+   ],
+   "movement": [
+    "0c90a6ded57f13037b339feae1d0e21f1418618787732ca9f88a6a3077f801cb"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "53d6b999ba77675ad74f61bac5746fa76747b36cb3fd1fdec08dcbc37e01457a"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "355f4229bac85ff1626701b95a2b1206923c3c7a163099bacdd72feee748c79f",
+    "a9196c01c7c81dc1c70d14cc152c57fdcbbc2b2ed7bb9f60b0c3bc07c8e035ab",
+    "5fe5c5481ebf7dad110ccb6bfe5a89800ae78c7a2060586ae36f359dcd8ee1cc"
+   ],
+   "lightingNotes": [
+    "e496ea6b07a0fcfbb74bb897f83631273320fab13157bd2ba16dda4254ac3b25"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "ddbcb9733eca2ee1ab17b6c24fd1f8a1e1a1c3cf9898d73431a033b47a941aa3"
+   ]
+  },
+  "hangar-shot-25": {
+   "shotNumber": [
+    "b7a56873cd771f2c446d369b649430b65a756ba278ff97ec81bb6f55b2e73569"
+   ],
+   "sceneId": [
+    "cba1989610ea898d55e240e6a1113e3850fee2c6ce30ab40901c7a741c994a20"
+   ],
+   "title": [
+    "3ac46883d606c288090987c90836b79217ba4b2e0c6a9e3f287ec413e5404575"
+   ],
+   "description": [
+    "835fb128a37c25cfb18ec50a78a23e5703276ea9ab483aed3ea0d43ab00a2af4"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "54e43ccbcb6566dc3409a56bea7781b0aa7f0b378af75a3e32a5b108b0ac9ddf"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "416d4e752f68580452f4eb672265d15f76c7694ca77497f8d07d662591916faa",
+    "6f89839e613961be79d9d8c848eb922bfbc884a0a4f8af05d247b3823afd9234",
+    "48c3f036a015c27d75037f5516f368724afa4bdd524ba037d5685c25cb94f5f2"
+   ],
+   "lightingNotes": [
+    "126a2d1be7279c22d72176d7beb16e46230c2cc0e96eefb5c9de9008364723ad"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "2d8083a353c4d93f6cc25ccb9e8820a9a4e098895b89004310731fae0200b831"
+   ]
+  },
+  "hangar-shot-26": {
+   "shotNumber": [
+    "5f9c4ab08cac7457e9111a30e4664920607ea2c115a1433d7be98e97e64244ca"
+   ],
+   "sceneId": [
+    "58d6abdb712824d5f71c1668dec50eb4ba1be3fad854b95dca6eca3632ab9d91"
+   ],
+   "title": [
+    "b7dbb15718332ef148f4110b4db36f63fad3534a6fecdf34ea85710182e9ee79"
+   ],
+   "description": [
+    "d97b3f7829d7cc3a6b66a5cefb09df88b06e0d7ec60ef9ff5bd0389c810c86e3"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "09ff8c7610f2d073fb39491e1b615a95529e9d1d9721da7a526a109375c7a33a"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "a423138746bc477f1b7ff371676fcb23aa07a2aa9f5a9c43b5a5126526905550"
+   ],
+   "notes": [
+    "912912ad579b3168fbb7f708ecf997b6411e6d2adf7b1e6008e16333699f4116",
+    "1eb7a8118aacc840402cc1b0910c2d740598ce226a7cf57aed81460e62b2a393",
+    "b79be626d60ed8f58c0ed38519dd5fc10fb3098aa507ae2bdc4898191d16494c"
+   ],
+   "lightingNotes": [
+    "4797a4fa6ce12cf4265ace23e1a6a798f46f74d58e1745456a3885c05f07bf4f"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "3b97c0ef92783147fd7bd796014fc315a0139922a2255913ff4ce9a854777060"
+   ]
+  },
+  "hangar-shot-27": {
+   "shotNumber": [
+    "670671cd97404156226e507973f2ab8330d3022ca96e0c93bdbdb320c41adcaf"
+   ],
+   "sceneId": [
+    "58d6abdb712824d5f71c1668dec50eb4ba1be3fad854b95dca6eca3632ab9d91"
+   ],
+   "title": [
+    "baef041fe36ebe8ee75b9d779a1b0ea51a59b216d454140acf520df3212c6f16"
+   ],
+   "description": [
+    "3150f332770b662f1b994643522c75222ed0c8c5a623a905e5446380e84815d0"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "61e0eeee4d261f26f001612ae2cdaf3f379f4a0ebfa46d8fa14318f3c219b1d5"
+   ],
+   "shotType": [
+    "866bf047c116b31d538dd529f9a3e7bb0f0192ffcbd5de6a0b47a9684c131fe5"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "07a00a78c11092f63e1c56de2a72f45629b8060a71e4add46325e07fc7435081",
+    "5e10742754593060d2572db055212fc3f1cf977a46a5b37b1e4aca613915986b"
+   ],
+   "notes": [
+    "b389a3f06774f87673678e7817d9f3654021f0e9ba50fe4e47b314f5a228f251",
+    "f8e1d60d2949bede65f4f3bf624267043854380b2c83510ad6c7aef2569f636f",
+    "4924885e3ca93d591aaa10cb9bbc5729dfb0505efa6f936dd829918d56c8ca44"
+   ],
+   "lightingNotes": [
+    "c8c0705c6b0afdf7867739ed4159ac9a05da22075e8fe037b85eb692dd5780af"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "36003113de87f04fba5eb1119f26d70db196678644554d76abe5359be265f2f1"
+   ]
+  },
+  "hangar-shot-28": {
+   "shotNumber": [
+    "59e19706d51d39f66711c2653cd7eb1291c94d9b55eb14bda74ce4dc636d015a"
+   ],
+   "sceneId": [
+    "58d6abdb712824d5f71c1668dec50eb4ba1be3fad854b95dca6eca3632ab9d91"
+   ],
+   "title": [
+    "591f4c6eaa121cfe73b99d21d5e578d17186ccf648a9ebb1d6d348279b1863c6"
+   ],
+   "description": [
+    "01042839a3ec6795b5034b7c7857fa0ee9e9f75da7e54f3991503c8aca0c0411"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "cfaeb5a79e3564c7cd439d2ae6e64b8c9f6cc555d222972ea3de333e1221bb41"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "e183fb2978cdb3c98e3b3e70b6dee89c9ab0d18955964dc2cacbccf2cf580bd1",
+    "9b3564c710ca0e85a90f54a862c99b1b70985e45d8ad7d9a5b886e66a347724b"
+   ],
+   "notes": [
+    "f885f2ffa2477b080582def2a62669e88c0f9df2b8e51b8102ec2708730c8aa0",
+    "0566afc467f2d220e602c5e3f1792e7330d9e68be1d78481e28c6d149b5bc5ea",
+    "65566ddc94ef4ef7f6601e895a8c09a21088869ead7e39b55a73ea91371f38d5"
+   ],
+   "lightingNotes": [
+    "ace1dafef87ed2a14d42c7f3405ed3c7784b60c58c5fe9b054291ade35b92358"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "3e5f4c4999786737e22a8dc084fa2afb411ed6a77f09b0414c48b214a5efb844"
+   ]
+  },
+  "hangar-shot-29": {
+   "shotNumber": [
+    "35135aaa6cc23891b40cb3f378c53a17a1127210ce60e125ccf03efcfdaec458"
+   ],
+   "sceneId": [
+    "58d6abdb712824d5f71c1668dec50eb4ba1be3fad854b95dca6eca3632ab9d91"
+   ],
+   "title": [
+    "621648942ca7082c894233222d6ce3a2ac36156d6fff7e5c195acc9422c065a0"
+   ],
+   "description": [
+    "c84c90776e58adae1005997fde232376a90faf91de40abd425e00c9229923f53"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "279d4cb1ed5084d731d1f0e0b8353325de620fb4d734f02b44ecf4872fb3c416"
+   ],
+   "shotType": [
+    "a6fe36f5bb88a340eb46246ef1bc187edcec6ba1d11e2ff6a003ae9abd472854"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "c39c7b73b1011c75c80095e70652872e8350ec3fcdf4afde12afec461efe246f",
+    "b0e3e7b7a3a4ea3362ff5c824bc314b44102c8ea61bbf0c8396ac314bf76ca1d"
+   ],
+   "notes": [
+    "50e6111cc8c270ee85ddc982a4f79225cfdf9ad4b651695d1341ff5660644aff",
+    "f15fa82a671da15fd86b4eea3dcc6a634aa8c1a4fc5a381adf66a148ba517c56",
+    "c9b351038e11d606a3bb528c6f29dde5854b1628d9b6823855202135b7c82834"
+   ],
+   "lightingNotes": [
+    "9ca170407cff1bbfca5af76153270c2b0b7f3471d9b35e0d92b65a9fb6ff337f"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "958e1db4923a73a995d1af27ac5404cbf399aa12275b6e47ec71f886767caf96"
+   ]
+  },
+  "hangar-shot-30": {
+   "shotNumber": [
+    "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4"
+   ],
+   "sceneId": [
+    "58d6abdb712824d5f71c1668dec50eb4ba1be3fad854b95dca6eca3632ab9d91"
+   ],
+   "title": [
+    "a30b7d3d2fec61e80c6395f8c757694bd23bd3d3518056584153c453a250985a"
+   ],
+   "description": [
+    "6531d3be53ec3e432eabfeeb4b9ad4e9da856ca7bd6a194f5919255d455bd21d"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "4538c1e180bb97c3e7f91311c0174490005aa0995b9e84ce2ee588f73daf1819"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "0027ab89e9b3fc18a077ad16967f9935095166839cb9d55c80b32de0076b1b8c"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "aac331182353697f710f9845142dc983c660b9dc1a12505bdab827214a88599d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "42e8a4cb91a3a27965308db5001483e4d21aa5af6553fc898ab27d2bd55eba81",
+    "8f34241d361dd7045715321560645f118395115d50932352fdab57389355fb4f"
+   ],
+   "notes": [
+    "f6233a68a27ae2485fd08286d7c31207200cbda98d5c31a1a285362696aec389",
+    "a27d812a921afed973b69bb844adae63e0225d61fab270567e5c90b1de43b42d",
+    "0fe79acb15c5e55bff20e480155091a70c5b31e95328a0ffba6f3e0c4290d7da"
+   ],
+   "lightingNotes": [
+    "325e6f04008955b48ec178bb23ecf4c99b6deb6ecaccf4f1ed53689bd1944d43"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "bf468e0b8d6b742c5b9e0ef2e72eaeebfd77ada70f320683227542a53a411f5e"
+   ]
+  },
+  "hangar-shot-31": {
+   "shotNumber": [
+    "eb1e33e8a81b697b75855af6bfcdbcbf7cbbde9f94962ceaec1ed8af21f5a50f"
+   ],
+   "sceneId": [
+    "e101db245debe142ca65e485e9d440659b680829b609385168e9082fc28403a5"
+   ],
+   "title": [
+    "65b1cbba3b92c5b2597926a0d5dcf1fe03cdb5fa8f518dbfc1c66a523473bc7a"
+   ],
+   "description": [
+    "be0bd8282db6d52dbc93e5826897c87a62e18825e6d4fbb5a416b13d6dffa9ce"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "191933b849435e2102c199a0247142dac1ac8f0241eac260397790e0f4df0ab1"
+   ],
+   "shotType": [
+    "ee67f3540260dcaad40173acf2b454b8131c8306257b57edfda08b134fd539d5"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "28e1bdb376291cd9dfbd2befaa3e126ed3ff24360b6e4cbbec472f225dd25ab9"
+   ],
+   "characters": [
+    "e183fb2978cdb3c98e3b3e70b6dee89c9ab0d18955964dc2cacbccf2cf580bd1",
+    "9b3564c710ca0e85a90f54a862c99b1b70985e45d8ad7d9a5b886e66a347724b"
+   ],
+   "notes": [
+    "03328afa21b748998f76fa82c589a4baa11593763c4081af1d9a6a3e393d7f1c",
+    "7a4ee5e695205b212c116871b479a1da11a1371deb27a0f43caddd2aa141e997",
+    "22fc2d0cc6266f65dcf6b69fea6491b2851482d73d7f8ce3215d424aa00397b6"
+   ],
+   "lightingNotes": [
+    "b0579a525915d9d41f3b1e6a8c78b795476b2fd17a2a8a72557e8ec85540b2dc"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "42311602825d3ca6ba225f26fd5553145aa9645c4d531a8dc2345466178343c9"
+   ]
+  },
+  "hangar-shot-32": {
+   "shotNumber": [
+    "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b"
+   ],
+   "sceneId": [
+    "e101db245debe142ca65e485e9d440659b680829b609385168e9082fc28403a5"
+   ],
+   "title": [
+    "b10758a339f5854c94ecc95e31aca8a7644be11e37d58c964297a5fe23cc64cc"
+   ],
+   "description": [
+    "5887dfb01173b126273426805d39d68270e974dd571a07b119faaa9157682580"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "cba9092d1f3ce706d1b633d1127fd13f840a333f032214cc5b124227635c0894"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "064524f57e7be129649a25911631e25259dbddb9009adc71791d1e2f58f8794e",
+    "947bee5b0ef87005c9e2f24dcf7586c86beb8a1637d665003c4a9f7ebffe6854",
+    "6d2c82f95499e95d9d5ed358ddfe79b90bc62fadf7421c0314f4ff33109fa39e"
+   ],
+   "lightingNotes": [
+    "aad65d2f7917f2db9e1230aef7fcf5539b736e02fb1c55668f1184a13324bb46"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "1b929b8429ffaaaf9b464ced5a0c5f80b5245193ac38deb0ac0c66d466c02fed"
+   ]
+  },
+  "hangar-shot-33": {
+   "shotNumber": [
+    "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894"
+   ],
+   "sceneId": [
+    "e101db245debe142ca65e485e9d440659b680829b609385168e9082fc28403a5"
+   ],
+   "title": [
+    "ae97073fa7d245a6d030d0f2eb5b3d7915fe0b5e16c2b853ea015ed405b7674a"
+   ],
+   "description": [
+    "3869a958febacbc0435580c250e78242d8512dd0832964e5ab35e1e6b152827d"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "bb12e2b60d0bf869107af60a39455194df8973535001d09f93898bee4c605fb3"
+   ],
+   "shotType": [
+    "033d831e8be4c64f9bd7d4e610ab109fb9201bd44a706ed6819e68ff9b0d7066"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "711ccf3a853be1d53c4406709ee2fec18d97b1d811f6835c00c34a210c96dc32"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "853a52a9d2d4d70f46d5ccb8f7c0fe8fcba37dd2b6509de4d1d941a869de7fbb",
+    "57cd8d593e296d3466a3fea6a654cba10a0abb19874409c4b57e1408605fcd03",
+    "2d488dab0c3487da9c8c5a8a76e9cd24c062c13444db79075363c472836c7b5a"
+   ],
+   "lightingNotes": [
+    "2f21eef00f425bd4940bdb376449de0a4c5a399ac8b82d94035f5ac500e40258"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "3df7e066ed0f73143c31940934d8ccb384c22c85c08fa444a5059202c5847f2c"
+   ]
+  },
+  "hangar-shot-34": {
+   "shotNumber": [
+    "86e50149658661312a9e0b35558d84f6c6d3da797f552a9657fe0558ca40cdef"
+   ],
+   "sceneId": [
+    "e101db245debe142ca65e485e9d440659b680829b609385168e9082fc28403a5"
+   ],
+   "title": [
+    "74a7e8b60224cfded4f7964ebb99eba1292855caae0ab5a5f58c1d99ecf1ace5"
+   ],
+   "description": [
+    "b35191461a4daa7a621d70c5f7cda267df59c70779674910c7f54fbf74986ed4"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "8a83e6e23e04c03e9cf1423da1cbd91de4a4912b152640cd5b183a675c3a8c69"
+   ],
+   "shotType": [
+    "396149ff9ec1b6fa4d3d98376b685992da0aaea33c8fdb93e96f41529f618369"
+   ],
+   "movement": [
+    "2970fd3f5db75c337ab6a0acb5ead9d9eee57f5bdf0845d5daac8a2718d7d40d"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "e183fb2978cdb3c98e3b3e70b6dee89c9ab0d18955964dc2cacbccf2cf580bd1",
+    "9b3564c710ca0e85a90f54a862c99b1b70985e45d8ad7d9a5b886e66a347724b"
+   ],
+   "notes": [
+    "1536c19b67ebe4d910c0533b6789659ba26de60397badd5f570a6c462f46f90a",
+    "af5afc8b32398323f262a4de8b00217d81f1650d240fb4d09e59fcd1328ff235",
+    "5bfa9773a5fb64e8fc95a2235d9ab5ff8864486ac24a53a51dd979d57108843e"
+   ],
+   "lightingNotes": [
+    "5ed4f103308ba8dea9a741b7c7cf52bdf63aee178bba43fe35a4085c2493340c"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "6646cf5ef001b553fa7406312627132afae67d585dc60119a72e379da8413038"
+   ]
+  },
+  "hangar-shot-35": {
+   "shotNumber": [
+    "9f14025af0065b30e47e23ebb3b491d39ae8ed17d33739e5ff3827ffb3634953"
+   ],
+   "sceneId": [
+    "e101db245debe142ca65e485e9d440659b680829b609385168e9082fc28403a5"
+   ],
+   "title": [
+    "4ee2d3e3fed83970a148714b4f68fd7be9bf78027c18f61e78a1c936472cf01e"
+   ],
+   "description": [
+    "2ef6a530dcd453c0a95a89f39007fad0434b2abb4eadf61cce3cc5aac64abb9e"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "46e8643ef244a646f8ddbf39ec607554fb670e9b55f72f0126b6b8868837c9db"
+   ],
+   "shotType": [
+    "396149ff9ec1b6fa4d3d98376b685992da0aaea33c8fdb93e96f41529f618369"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "361f94db9a5cbe47ebd6355935df26b13a388e3deba45825fc49519c1ccfa676",
+    "923805223502a6d8a3d16c48f673d381dbe5d8c44d80fd6003ae96859afd0273",
+    "bfa433f6dd36a1283f19f3c2c6a347410d80b709c45ee614a329ed26d3867394"
+   ],
+   "lightingNotes": [
+    "9ab31eb19b3d5a50a4acf6a500314755aaf3c00778d3be4178bd4a9d6a53e1d1"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "2d5c132eff374c26d8571362099e83a8163c0abd42d0efeb1af86304b0abbdfd"
+   ]
+  },
+  "hangar-shot-36": {
+   "shotNumber": [
+    "76a50887d8f1c2e9301755428990ad81479ee21c25b43215cf524541e0503269"
+   ],
+   "sceneId": [
+    "e101db245debe142ca65e485e9d440659b680829b609385168e9082fc28403a5"
+   ],
+   "title": [
+    "ae42187546b9a803e42f2d29602883263a6fe03c38f128ae59396bb52efbea1b"
+   ],
+   "description": [
+    "60b42fca2f4f0c375459ac9e825b2c980998a5ec91030b4422280144d28edd3f"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "798ed3e9d82d05e474fd4759fc660a279898fa0b31b73d3c47e01ad60b2efa4f"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "8552925aeed9fe781ac02d6cd4c8118d1d57060b2dc30bf63c88990655f9aeed"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "d4183f1256dcc4ab4edbaca7450b10813d304ec673f309a5c9da3f94c4d05bff",
+    "8c25fac153393b0d3ad7e09a142ba6a285538f02b5b28ce52ad17ef60701880d",
+    "8086619aa00f9bd50031d53089a6d30d0a533b11604f5c09219f4315b7c02213"
+   ],
+   "lightingNotes": [
+    "0e7db4eb949653bf95561e2c32cc2b9134db7f458e5192d42575b6a2196473d4"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "a29c7ce5b6d95bf2721bc1d94b7f7c69e8846af8598e25e5fdefc8b284489965"
+   ]
+  },
+  "hangar-shot-37": {
+   "shotNumber": [
+    "7a61b53701befdae0eeeffaecc73f14e20b537bb0f8b91ad7c2936dc63562b25"
+   ],
+   "sceneId": [
+    "331dda85bb9e399ea048466a4674d8e8478b185df3dc295c237a0340a6b0b5d4"
+   ],
+   "title": [
+    "11e7cd0e8edb6a9551cf9cc17f6b07de410ea9cf2fffd6d70c038c9695e6e32b"
+   ],
+   "description": [
+    "bbb3133a800d9af3af8aad14d961c118ae41941a5adcfd8b12ae0234994ca934"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "791b62118a9166ca3076ab86e2468f56094e55d9e9f29e0f0a656d12df5b9afc"
+   ],
+   "shotType": [
+    "fbf3a118f661df6d7c614286d094bfe032d13d5a97e1dbeeb5a6b5bd77dd9aab"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "164892a36dc6c10b36e0aee642e5f5e8b42e6f8ae917a1c7f51ac2f46d2440ef"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "d05552593c3db1f568351a97340a5d852ada8f78a819dfe86f430e3dfe8aa1c8"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "0d4734c01bd428fa1a3e1dbb943011e6176b5027a8296fa1027d1aede3a93e7a",
+    "e59b6ca9989aed94d92a7647fcc8091a82d5b404d32ef924bf37fe4a4649a988",
+    "d6143dbe9f3afe63e59479acfb8beb55430498a3ce65e9f865e53d3dface60c4"
+   ],
+   "lightingNotes": [
+    "db90ff97a7066227bcd714318c6849231c52b4e643ab288d304e4fd122151831"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "bf4174a622e56f5dc8f1ea1ea73f0687c1f06e09c10ff230498143c01d4c8efb"
+   ]
+  },
+  "hangar-shot-38": {
+   "shotNumber": [
+    "aea92132c4cbeb263e6ac2bf6c183b5d81737f179f21efdc5863739672f0f470"
+   ],
+   "sceneId": [
+    "331dda85bb9e399ea048466a4674d8e8478b185df3dc295c237a0340a6b0b5d4"
+   ],
+   "title": [
+    "f04db23095fc09ddeaf4205a41e6bc57b601404e080d0a8ba1040a788a764c9c"
+   ],
+   "description": [
+    "fa766ed9ec7b53bc0b250b39f01a3f53b21f546a78372a1034c52a19e4c4fec4"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "dde034666e193ceff965db79dc30c3ab8b8ff48f85bd10f8346aca8eefc73595"
+   ],
+   "shotType": [
+    "11c23dbd5b0e9ea9a93f685bff0d0ac4dc9bd4b8018e3531a09e7b9761317ff9"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "duration": [
+    "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b"
+   ],
+   "characters": [
+    "e05c00531e8f44afd5f140c160a851d54b35848075f220b1e577853cae9dd27f"
+   ],
+   "notes": [
+    "17705311d60e795be6095a4194f383a2def3840bf1e53935d9c048b6ad2e5f26",
+    "99aa957555f871d5cbd9057994166f1c68a3c99cb3f32f971a109d644a95b667",
+    "f57a7dc5714922a3246d076f38c6c21ec98066458a3d78c523ee9a1a76e9dd61"
+   ],
+   "lightingNotes": [
+    "5561674b5aaaa454b11bc4ec57ce4dd45e16d20e644189c9ac59fee725fa5f1a"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "b84041c89b13f59d9231f478385951d468b2ba5545450c903b2fe0262c911785"
+   ]
+  },
+  "hangar-shot-39": {
+   "shotNumber": [
+    "0b918943df0962bc7a1824c0555a389347b4febdc7cf9d1254406d80ce44e3f9"
+   ],
+   "sceneId": [
+    "331dda85bb9e399ea048466a4674d8e8478b185df3dc295c237a0340a6b0b5d4"
+   ],
+   "title": [
+    "03ce42c5e3b23b0350ea1093530c49bd1f3a7aaf80133f493040c2eae45e66c2"
+   ],
+   "description": [
+    "3ef102f34f53710707110f116e891b82ffcc4298eb834c90f8401e7b54f856a5"
+   ],
+   "image": [
+    "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+    "0c5d33edb50e99ab1cf47c9a197e92503e08197914098015a993b9290f1c0b1b"
+   ],
+   "shotType": [
+    "396149ff9ec1b6fa4d3d98376b685992da0aaea33c8fdb93e96f41529f618369"
+   ],
+   "movement": [
+    "7ab285ce72a056a26617f9710b11c57d1c9af39f6f1da90e771bd0a227b04ddd"
+   ],
+   "angle": [
+    "dd7caf2417fc29212d2a95a738bcc78e8cb5954cba77f0860ef562de9048eaca"
+   ],
+   "lens": [
+    "aa39532fedeb0e887802f093af126153285d715f28b615e978484d0cee28733d"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "duration": [
+    "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683"
+   ],
+   "durationIsEstimate": [
+    "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+   ],
+   "status": [
+    "aee38f04ef0fc5a940746b5ec1bbc82b1b449eb951b9bbf1cff2f8560d85c156",
+    "0f80d38c431412cd7974b6e185589b091283a20752d322b7bf2fcb2f819216e8"
+   ],
+   "transition": [
+    "fa4b97d3aa600bcd3d7f0afee61f556c2f2c560556a3a117820e9bcdf5d7b49b",
+    "ccff6d79d669057fbefa2418bf83911994212687bc231ff598dd101d40d82738"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "notes": [
+    "33d6bca9e8b370446a7e3fb4ec33eb1f10b191fdbaeac1fdb955efea5ef47f06",
+    "2d19f0594b10647bb46bfc8e29d39ce8a3cca98ad237f2aeb294face890f10d5",
+    "9072a90bcd29af85d817c5622bce4a9c98e92624f2fe1c1a54cc5ee1749c5dc3"
+   ],
+   "lightingNotes": [
+    "69e5072a50ef0ce7bcd2de73fb325dfcc82e9d7065e2f4d1c36bfb48f8bb9fef"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ],
+   "mood": [
+    "17112251df4d33db2b0fa21455ad8868619cf68398bb13149f0b06a11f0ac21e"
+   ]
+  }
+ },
+ "scenes": {
+  "hangar-s1": {
+   "number": [
+    "391552c099c101b131feaf24c5795a6a15bc8ec82015424e0d2b4274a369a0bf"
+   ],
+   "title": [
+    "0ed8ebb26123142a54056e80a9fb656f6c460f580c69f312a23fed8db126edb4"
+   ],
+   "location": [
+    "264a0a81a3df5ca1ba54864beda0cf98912ffa99e5c58ece2e59c2046b580ce8"
+   ],
+   "time": [
+    "d60fd7a8370f1877c948dd72d92ceaeec83fdd250af455b62db517cb44c55fd0"
+   ],
+   "description": [
+    "a14b24dd52e451e1917563920c57971af68159b448a100b71323c6768d502147",
+    "fc3f786fd274ee01df8ba89c93eec06eb18c5ddd8b8dd0b650ff5407afe544e7"
+   ],
+   "characters": [
+    "3866f6692791676bc86b5d77750fdd023dfe57240d1ecdea02dc1a703acff873"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "9fa96756fb004b6af0e24df3e8fbf1ffc44020d6e2d064440379ce1700c4faf6"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "lightingNotes": [
+    "242223bd678193d6109fb9f3383b3615593205fa171b78116138716d2076515b"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s2": {
+   "number": [
+    "cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde"
+   ],
+   "title": [
+    "3278d1c8920bc9b166f55bb020ae787532c9d12bcd2373e16d681d243e200536"
+   ],
+   "location": [
+    "978c329ace9fbbd15caf2e44085b63d9bdb6b3f5179f122468fbc3f78ab721a2"
+   ],
+   "time": [
+    "359f31bee6f32820c37630d56cc8ce41cb59296112aed3024abe12bc7b0f8fd9"
+   ],
+   "description": [
+    "d203964cb1c98b26312cf705fb7d8d6187ee12167bede8e9ef0870dbf059238c",
+    "9f304c1abb577339759df087e45759c8ee640e9f935d11d8028cd3a8ac91b32b"
+   ],
+   "characters": [
+    "254c2373d7476738df5feeace6bcb31a2223aeb2f7cd3a67669a95ffb5e28863"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "lightingNotes": [
+    "0c65dd27a3f77e911a06e19841004031426c8f42155f391c52bf290442c757d3"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s3": {
+   "number": [
+    "a4aab3f1f08004e907d2357fafe74cab56359bcb32e23f52e7eb1d3a9c0a2ad3"
+   ],
+   "title": [
+    "78437f7772a7d702e29ca29230918c3d368ee3b0263e5889a2bed4fc0d2b9245"
+   ],
+   "location": [
+    "e167c0dbf24805c590161aef64ef6e0f6c6de890c90c2b806b656628a1036ef3"
+   ],
+   "time": [
+    "b95cc28b1d9fb15cbc72111c3300dd8ec587f6974a89f6ba308428839a7482b2"
+   ],
+   "description": [
+    "a8efe3aaa3229421d1daaaee755d2e6c79950cc121891c52521d9c2cc7ef2336",
+    "2e37818fa83025e1dd93a450bee63103e394bb2d1998a46bc784618638cffc12"
+   ],
+   "characters": [
+    "a1b9861b99613f7f2a28f6ee52613552739a9e0e4fbbd9546261c6b3af8fec64"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "lightingNotes": [
+    "a7e6e6748c45a698eaa2f2f3bb8db1c8ac078407bce3e8e184cdbee1b163e278"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s4": {
+   "number": [
+    "2bf175f9655e7bb7357b9f0a7c6051465a5ae701104ffe741b98e852c0e4d460"
+   ],
+   "title": [
+    "f69d339079c305f4803e4cdd352753e131beb8e748905aedb3ced33ca4d3ec58"
+   ],
+   "location": [
+    "cdc94a269d014e0aca1a96c7d6598be8869354c0d9fb1a142e8396bfc5314a26"
+   ],
+   "time": [
+    "b95cc28b1d9fb15cbc72111c3300dd8ec587f6974a89f6ba308428839a7482b2"
+   ],
+   "description": [
+    "aec093bd56caf41d7af1e8413dcb60f98f69f8b49c89a3ffc84f4c2cec968183",
+    "74ffc9831d88dbd5b13663f65ef4b6ff36f47690014ed036ea35bfb0b9a482ba"
+   ],
+   "characters": [
+    "a066fd949b940525ef54067bdd01edab13a7a4fcbbc80e2c8bdcfa47808686d8"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "lightingNotes": [
+    "a9bf8aacd2ceab58839677b82c1ca4a726d076e68ae75210c8b6645c28133fc6"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s5": {
+   "number": [
+    "d10a4bc9e0c1fa4e8f3d7ce2512b8756e47ca5fa451f373c39a1431bb88db49f"
+   ],
+   "title": [
+    "c352266e515e20a4ed9d2bd6bbd75b175aa64dfb557e3831776af469c6cef9df"
+   ],
+   "location": [
+    "8febc0e6675999a8cee29df17cf00cbc359bc561b06c2bf58a8caaa968de23c8"
+   ],
+   "time": [
+    "b95cc28b1d9fb15cbc72111c3300dd8ec587f6974a89f6ba308428839a7482b2"
+   ],
+   "description": [
+    "2502540657f8310aeb3dd6c8413d89cca247f93bec2880844506a51a5ce29c19",
+    "3f705eb464fe56514af7d7fd1b3565f214d7d8cdbfdd2c9e9a1b2d0cf5c8a324"
+   ],
+   "characters": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "lightingNotes": [
+    "12436df9659b83e854775a77633006ea85ae5e85b51bfb774acf8f629f0dbe9c"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s6": {
+   "number": [
+    "92e9e7e5922d26e17e48f0869ab25cc99499fdab722c065de8e0965c96c68e86"
+   ],
+   "title": [
+    "396f74809c954cf85cace63848f082a9cf9b94d6cd7f299e746536e60f1e5cf0"
+   ],
+   "location": [
+    "58adc992f73896bf4365891cd4aacdc6b519f550f19de88dbfe93ec8e0866b34"
+   ],
+   "time": [
+    "b95cc28b1d9fb15cbc72111c3300dd8ec587f6974a89f6ba308428839a7482b2"
+   ],
+   "description": [
+    "d3434a39f6e601a53274e2890dab0930ab1b040cc14d42b5b74799579fe0cdf8",
+    "db8733d0964645ad39d4e39a4db127d14a2c2feae1ef3070357dc1ad80d4294e"
+   ],
+   "characters": [
+    "47503cf8a53705568d2a08686f88dfad929d6f3f05a3c415dd80ad96a2e43698",
+    "eef2d80f9d5f342e83f32568234a107f513b9e6796c0b8283d11406ef115891a"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "lightingNotes": [
+    "eb31d0dbaa971ad931f484ab6a5155d7ec921a7d7a5c1d2d4fbaba3e1635cbe5"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s7": {
+   "number": [
+    "266aa5886067fbbc1a3a39fe432fc5bbf561abc90e4b8a322215ac17df6ce012"
+   ],
+   "title": [
+    "71a47da413c8802d9310fbcbb5c29bb668f7130148e122ae03d8f1b7e5f49e9b"
+   ],
+   "location": [
+    "375806675744228f26be74d5e090f96c570637b39fba49e86991595b4956a4ca"
+   ],
+   "time": [
+    "b95cc28b1d9fb15cbc72111c3300dd8ec587f6974a89f6ba308428839a7482b2"
+   ],
+   "description": [
+    "646ef7c37e901b72836639bed324aa42fec3f5dd5f6901a1568a7f5541527f34",
+    "f8a8237bc80129a23852cc9970db173528b457259d33011365a97a3cf77b3e62"
+   ],
+   "characters": [
+    "42e8a4cb91a3a27965308db5001483e4d21aa5af6553fc898ab27d2bd55eba81",
+    "8f34241d361dd7045715321560645f118395115d50932352fdab57389355fb4f"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "ee4a3f53c5c5b4c8fa34849894f467c22f0bdd681560000c581e41e9c5dedda8"
+   ],
+   "lightingNotes": [
+    "01bc20dad0a12c1cf6bea7ecb2059e76e72a95d480870e259d566711ee7dc743"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  },
+  "hangar-s8": {
+   "number": [
+    "ade1a1c2a61af0f279a4978dfddcdb6acd33f5a8b61e62c5fd881e8a88a387bc"
+   ],
+   "title": [
+    "ea93b7f74a31b7a3750adc3262eb583f63430845b779c1b4e478ff2611c51515"
+   ],
+   "location": [
+    "0951b9be30c276401a6d434edaa56e6ba775f2fd3af756c8966bbc1dd3f78c41"
+   ],
+   "time": [
+    "b95cc28b1d9fb15cbc72111c3300dd8ec587f6974a89f6ba308428839a7482b2"
+   ],
+   "description": [
+    "c1832e4007aeeb74c5534fd54b00fe080fe3f0bb468ea66219a9c678077bfbbb",
+    "bb36863d0f00c1a4c0b11d0fed983b7767bcf5bf0932d87f5bb97266a7106fd7"
+   ],
+   "characters": [
+    "084a0044784f0a2ea7f3f59601db3eba947f1517397071485bcd3051de63499b",
+    "28bcdd6ed417392a8511eb63aede06625039e43e644820785f1078624202f79b"
+   ],
+   "actId": [
+    "35e12925de1e44fc99d9db71a7612cd174cfbaa8cadca7d09aa92fe4f152038b"
+   ],
+   "kind": [
+    "d998c212030bc7c274bae23d7d354b3a35ddee152bc378c63c3125776478d504"
+   ],
+   "lighting": [
+    "e4e0a1b4723e4bbfc4047582afd1d2d8b8c530890ee59d9f2d7aee72d91d0587"
+   ],
+   "lightingNotes": [
+    "45241fa10e135d21dbe03dfb8411661b880ae484d2cdb2bb7e3af1632ab68e5e"
+   ],
+   "style": [
+    "8037974caba18c955f24d25f30738a1bfdf1590e44b1018aa95f6b09e2ceef03"
+   ]
+  }
+ },
+ "characters": {
+  "hangar-red-two": {
+   "name": [
+    "c7c8791860c8b69243a9baccc63d1c3d0a2f8f92898098df0d12e59b7efdd277"
+   ],
+   "role": [
+    "aa27bc68b593926d40212e031ab28e6fdc16e7ef9714555bab6fc4ae44195637"
+   ],
+   "age": [
+    "d60fd7a8370f1877c948dd72d92ceaeec83fdd250af455b62db517cb44c55fd0"
+   ],
+   "description": [
+    "1068d7852cf2c76061b59fcdfbec90b1bf7c4ee9a1a643db8d8c69a31fe486fc"
+   ],
+   "traits": [
+    "bb861a0c64fe0f4aab343dad1da66dcfcda5e127d8f3c4cebb7cc35ed09821b5"
+   ],
+   "color": [
+    "b3b43d9a2bf4a7a4d4d2cec0065365cefd93c7f394279e955085c4c3a6088c6f"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ]
+  },
+  "hangar-red-leader": {
+   "name": [
+    "f149c3981993e752bb845d667b47fcf1c426ee2569e88eeb877b7b2606068a29"
+   ],
+   "role": [
+    "544be64b86af8daaf8678c94993951a9b6bb11754ad2e17e1170ef6a4ae698bc"
+   ],
+   "age": [
+    "d60fd7a8370f1877c948dd72d92ceaeec83fdd250af455b62db517cb44c55fd0"
+   ],
+   "description": [
+    "b7c35aebcb92c831f67693879c432b32d619bde9d5e7166394a83cb7bdaff3c1"
+   ],
+   "traits": [
+    "8c18de31ffa8f7d33956982a35d85ee07ed8f7f5ef23109425eefedc5b80061e"
+   ],
+   "color": [
+    "8f30a7fc73b0a5306d9a761492a8801b73a7e9af2d2003805e4f8852fa471df5"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ]
+  },
+  "hangar-airman": {
+   "name": [
+    "7902727ab865099c563f3bcf54c211deb33f4f85dfe19cee5f36bf9f1b107c64",
+    "690d095ca1e79930c5e13333b7d20f0785fe2e1cc4a3b00a0982a8aeb3cb4986"
+   ],
+   "role": [
+    "1c1e3453e46e51b124577f4b8016f38eae763d36193ebea0c808538110e031c2"
+   ],
+   "age": [
+    "b16781f85251cf7a5bab973eb0927776b89a75f8def28c649ae65e01b3db5e28"
+   ],
+   "description": [
+    "14e22ef85d624f979ff55d9205e100625b80ca408d31010b363ac99ad5b2cb43"
+   ],
+   "traits": [
+    "5da16409932df46bbecd51b15187d06ce247e7c84045cabc1fc492bdaf5ce182"
+   ],
+   "color": [
+    "7201c7bdb0ef06a54faffdc4cc15501e3e2d82752505361d93877fa3a3b3fe14"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "image": [
+    "354ae594a7d0e8c37248b777fbfe9a1d8dfd599d942474bb1d8a87a65e3e4b5f"
+   ]
+  },
+  "hangar-sergeant": {
+   "name": [
+    "3ee46b00af1e059ba307b4b535ab0bd84dc0e90cbba0b194d6f41646cb64af73",
+    "233a2971fa4858f6e9f384bb311eca6ca2cdba76f22bec4dba78fb59d99b17a8"
+   ],
+   "role": [
+    "97a90a1c30b663e863f6e3f393f27bad5efdaa40a3461d681adbea143cf11c45"
+   ],
+   "age": [
+    "8018d4e214f7712129e9bb820d69cc944f9808e98bc7969e4c7b36b92af6cd76"
+   ],
+   "description": [
+    "f4c9f35c9859778acf789646b8a51182fc77dcdab121bbc835969463bbe6ce6a"
+   ],
+   "traits": [
+    "f345ce20911bc1ceb0f1ba4b6ee3fe70685cf3fc0d00527cd48011f09bbf9c64"
+   ],
+   "color": [
+    "b3b43d9a2bf4a7a4d4d2cec0065365cefd93c7f394279e955085c4c3a6088c6f"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "image": [
+    "17c116d2f929e0afc2d9d6ed16fdd49bda158fca2278c077ef99cfa544eae8ae"
+   ]
+  },
+  "hangar-trucker": {
+   "name": [
+    "aaeb8cee2d463b059c7c41c391c7f9af72c48b8351f8570a00019298bc554ef7",
+    "d6c3b42248302ed5a099103b60daa5aa5425bf58a39a64096be8a8f3f34d4b3b"
+   ],
+   "role": [
+    "a07038b01e6d21b5a8c31dd7ebc3bc29bc2413d15e71f992b003d3e414a6288a"
+   ],
+   "age": [
+    "4ec621b227e30e8a72d97865785a0bf20b5032024c589a56e1a6b18a099bdb7c"
+   ],
+   "description": [
+    "6195f811a17839aff1f8bd713f5421ef6d0909c7d97caf2d4ab66fa110b77566"
+   ],
+   "traits": [
+    "71cfe502c90149d61be1b9ee9d786870e07269feb6562193968ad0d36ce04384"
+   ],
+   "color": [
+    "8f30a7fc73b0a5306d9a761492a8801b73a7e9af2d2003805e4f8852fa471df5"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "image": [
+    "87ffe080be756a5c871b47f0021877b68cbc840dd89ff746596dab11f34ec447"
+   ]
+  },
+  "hangar-mom": {
+   "name": [
+    "4a7f71b4249181256fa004f527c38899bcff0e6ee82bb989c7cb3c472e18addc",
+    "58fd59bd7640134c7c99608762caaf0d9e900f5638c35700899936183bffbf4f"
+   ],
+   "role": [
+    "16adf78c120d92fd6bf0ae929d0c250e907e674bbb5226ab723f5fd2ad6a2753",
+    "797253b1b642d0497f0105904c5061542c3ba810aa9dc98c29960cc3370f26cc"
+   ],
+   "age": [
+    "772b814564dc952353b817a0863a75910dfa47c8ce907e9cc67466acf07eca1a"
+   ],
+   "description": [
+    "b95e095b434a6a83f60953110cc0753ef882e267424143972178220280caeb5e"
+   ],
+   "traits": [
+    "a8390237926e54fca5b1bb79fc2bb8201570b20aeac5b2d731c5ac9b6dd64e48"
+   ],
+   "color": [
+    "458abff40d23e3066a52b462178c0235474e2e1e8e7ab1fae69d74aa4328cfbe"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "image": [
+    "ed66d677fb2cf96781c76380154cedbbadb392db6eb06040bbdbaafc1315b86a"
+   ]
+  },
+  "hangar-agents": {
+   "name": [
+    "4647c8ff3469ead0cb2dbb6a865c29774e4c490d8eb68f4149410ecd74da7aff"
+   ],
+   "role": [
+    "cad024d58c8cbdc7bf50ca14570fc3d725d239aaf8f3cbf8377858171810899c"
+   ],
+   "age": [
+    "7b1c6b83dc545533011dd81fe8d516c9536eb6c54c150756af5a33807df5a6a6"
+   ],
+   "description": [
+    "16116f5fc067a6f1bf86574dfbecef57e1ff199571ba0d1a276ad794562b8fd4"
+   ],
+   "traits": [
+    "923f03e89e76b56ed97767b927b0239510de4eb61c4b33e7b7de97de0ea5a49f"
+   ],
+   "color": [
+    "8f30a7fc73b0a5306d9a761492a8801b73a7e9af2d2003805e4f8852fa471df5"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ]
+  },
+  "hangar-agent": {
+   "name": [
+    "aa7e6ee1e235416d3a78563dacb10d0a1e28726e11174523a1b1c487e0387b5c"
+   ],
+   "role": [
+    "cad024d58c8cbdc7bf50ca14570fc3d725d239aaf8f3cbf8377858171810899c"
+   ],
+   "age": [
+    "7b1c6b83dc545533011dd81fe8d516c9536eb6c54c150756af5a33807df5a6a6"
+   ],
+   "description": [
+    "16116f5fc067a6f1bf86574dfbecef57e1ff199571ba0d1a276ad794562b8fd4"
+   ],
+   "traits": [
+    "923f03e89e76b56ed97767b927b0239510de4eb61c4b33e7b7de97de0ea5a49f"
+   ],
+   "color": [
+    "8f30a7fc73b0a5306d9a761492a8801b73a7e9af2d2003805e4f8852fa471df5"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "relations": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "image": [
+    "a7179003c1f5a936013878fbd4ce0889c56ee64c0f2b5625419d29b44cf416d3"
+   ]
+  }
+ },
+ "notes": {
+  "hangar-note-start-here": {
+   "title": [
+    "56350511368d69e5bb3e8a747b18fa11ae738ede748eea5113a7795407a0fa6e"
+   ],
+   "color": [
+    "7201c7bdb0ef06a54faffdc4cc15501e3e2d82752505361d93877fa3a3b3fe14"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "tags": [
+    "3a4c96f39b61ea318ef04d7d95fda347e89b8d2628df9f81021e92cfac58d541"
+   ],
+   "connections": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "content": [
+    "2e08d1a7c9fd3ae3694b7a8593f61052e01e5da3a4f2b0564df06a49818d29bd",
+    "e2f5c4e47dd7b3151119cc64ce458ae7605275643b9f7b881a03ae99c0e236fe"
+   ]
+  },
+  "hangar-note-seeds": {
+   "title": [
+    "cf569f32c56a3315f14e87d583562f8e913b7fded15874998f197a018bd1790f"
+   ],
+   "color": [
+    "b3b43d9a2bf4a7a4d4d2cec0065365cefd93c7f394279e955085c4c3a6088c6f",
+    "458abff40d23e3066a52b462178c0235474e2e1e8e7ab1fae69d74aa4328cfbe"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "tags": [
+    "f908dff9d19aeaed8d44ef6bb92b7071dd357277f556950691c3ba1f9b576abb"
+   ],
+   "connections": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "content": [
+    "f31c95156c0017381d6fda0c0d5aa80714591bd4837f9dfdb29c1981a4cf1382"
+   ]
+  },
+  "hangar-note-rules": {
+   "title": [
+    "2c8c8624257736a900467b982344b51be8105e9e61a0103475163fdaeee98bbb",
+    "3e2e1675083d892f06483b73e41f615330d2d2abe17fb503d8589597ad4adba8"
+   ],
+   "color": [
+    "458abff40d23e3066a52b462178c0235474e2e1e8e7ab1fae69d74aa4328cfbe",
+    "7201c7bdb0ef06a54faffdc4cc15501e3e2d82752505361d93877fa3a3b3fe14"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "tags": [
+    "0f8cb54d889af66bc5c1d96bf7ec5eb6afbab3b6170da7ae91fc6fadb9b84f0f",
+    "625dc491c342caedddaa8d8b8fdea7d9da71cd646949c5737f7662141ffb5e68"
+   ],
+   "connections": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "content": [
+    "9c7c8ce2b75258834a83c8b7e8ccc3541941e708c194c26ba82ea1e32c28371b"
+   ]
+  },
+  "hangar-note-open": {
+   "title": [
+    "9f4c3ffd5b531ad67a9a2456169fe06b2690b31a5df6e08e5f2df2cb78ab9fee"
+   ],
+   "color": [
+    "7201c7bdb0ef06a54faffdc4cc15501e3e2d82752505361d93877fa3a3b3fe14",
+    "b3b43d9a2bf4a7a4d4d2cec0065365cefd93c7f394279e955085c4c3a6088c6f"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "tags": [
+    "2d72128ed6fbb288a950e9b910cfb4c34ea2f2aa07e3b4ffa54882928051e20f"
+   ],
+   "connections": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "content": [
+    "cee4f6465a9be37db0287634ec6864febb8f8ac05692ec033095e9c05155fcc4"
+   ]
+  },
+  "hangar-note-look": {
+   "title": [
+    "decf0cd7c550f918053bfd98960e2361a897ff98e87f1491fd55bc0781ed04a2"
+   ],
+   "color": [
+    "b3b43d9a2bf4a7a4d4d2cec0065365cefd93c7f394279e955085c4c3a6088c6f"
+   ],
+   "createdAt": [
+    "e824965da33f13d7e5816a34ddaf6be43b5c76ef042b06129cbfdfb62a5e267a"
+   ],
+   "tags": [
+    "bb0e72d1703898508926781d77e0696b1d4f9023335d6379a5360221815219d8"
+   ],
+   "connections": [
+    "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+   ],
+   "content": [
+    "351ffb561dec46b4f3c5ff226e5534c9537293326e21b67d7b8cc9f83f958370"
+   ]
+  }
+ }
+}

@@ -20,6 +20,16 @@ const ACT = "hangar-act-cold-open";
 // The house style (src/lib/styles.ts): painted gouache Ohio, hand-drawn characters with weight.
 const STYLE = "hangar";
 
+// Painted continuity sheets (public/images/hangar/sheets/). The two pilots are heard and never
+// seen, so their cards stay unpictured; everyone the camera meets carries their sheet.
+const castImages = {
+  airman: "/images/hangar/sheets/airman.jpg",
+  sergeant: "/images/hangar/sheets/sergeant.jpg",
+  trucker: "/images/hangar/sheets/trucker.jpg",
+  mom: "/images/hangar/sheets/nurse-mom.jpg",
+  agent: "/images/hangar/sheets/agent.jpg",
+};
+
 const cast = [
   ["red-two", "Red Two", "Pilot (voice)", "1944", "A fighter pilot over Europe, heard and never seen. He sounds amazed, not scared. He does not want to fire.", ["Amazed", "Obedient"], "sand"],
   ["red-leader", "Red Leader", "Flight leader (voice)", "1944", "Gives the order. Assumes a trick from the Germans (\"a Jerry trick\").", ["Clipped", "Certain"], "clay"],
@@ -28,7 +38,7 @@ const cast = [
   ["trucker", "Trucker", "Civilian driver", "50", "Thirty years on the road. Signs for AGRICULTURAL EQUIPMENT without looking up. The only joke in the open is his.", ["Dry", "Incurious"], "clay"],
   ["mom", "Mom", "The nurse, the boy's mother", "34", "Coming off a double shift, window down to stay awake, nodding off at the wheel. Never stops. Never knows what she nearly hit, or what she left behind: her side mirror and her cap.", ["Exhausted", "Kind"], "rose"],
   ["agent", "Agent", "Two men in suits", "40s", "Arrive in an unmarked sedan. One pockets the nurse's cap and the snapped-off mirror: the thread to the boy's house.", ["Methodical", "Cold"], "clay"],
-].map(([id, name, role, age, description, traits, color]) => ({ id: `hangar-${id}`, name, role, age, description, traits, color, createdAt, relations: [] }));
+].map(([id, name, role, age, description, traits, color]) => ({ id: `hangar-${id}`, name, role, age, description, traits, color, image: castImages[id], createdAt, relations: [] }));
 const who = (...ids) => ids.map(id => `hangar-${id}`);
 
 const sceneLight = {
@@ -46,12 +56,12 @@ const sceneLight = {
 const scenes = [
   ["1", "Over Europe, 1944", "INT. COCKPIT, OVER EUROPE", "1944", "The cockpit of a fighter over Europe, 1944, heard and never seen: engine drone, radio hiss and two voices. The screen stays black.", "Cold open", "Low key", ["red-two", "red-leader"]],
   ["2", "Hangar 18", "INT. HANGAR 18, WRIGHT-PATTERSON", "NIGHT, 1975", "Hangar 18 at Wright-Patterson Air Force Base, night, 1975: airmen quietly emptying the hangar under sodium lamps while a Senate hearing murmurs from a guard-booth television. One crate sits apart from the rest.", "Standard", "Practical night", ["airman", "sergeant", "trucker"]],
-  ["3", "The back road", "EXT./INT. TRUCK, BACK ROAD", "NIGHT", "A truck and trailer on a twisting two-lane in the Ohio hills, around 1 a.m.: fog in the hollows, warm dashboard light against the blue night, an unmarked sedan a quarter mile behind. A civilian trucker and a young airman in civilian clothes sit in the cab.", "Standard", "Practical night", ["airman", "trucker"]],
-  ["4", "The swerve", "EXT. THE BEND, BACK ROAD", "NIGHT", "A blind bend on the back road at night: the truck and trailer meeting a station wagon driven by a nurse coming off a double shift. Headlights, fog, a gravel shoulder and a drop to one side.", "Standard", "Practical night", ["mom", "trucker", "airman"]],
-  ["5", "The fall", "EXT. WOODED BANK", "NIGHT", "A wooded bank above a creek, night: moonlit trunks and ferns, a loaded crate on its way down, and the dark inside the crate.", "Standard", "Low key", []],
-  ["6", "Topside", "EXT. THE ROADSIDE, ABOVE THE BANK", "NIGHT", "The back road above the bank, night, just after the bend: road flares, red-lit fog, an unmarked sedan with two men in suits, a trucker and an airman. A white nurse's cap and a snapped-off side mirror lie on the asphalt.", "Standard", "Practical night", ["agent", "trucker", "airman"]],
-  ["7", "The crate", "EXT. THE CREEK BANK", "NIGHT", "The creek bank, night: a split-open crate in the shallows, a hollow in old packing straw, a board stenciled INERT, and flares held low.", "Standard", "Practical night", ["agent", "airman"]],
-  ["8", "Far off in the woods", "EXT. THE WOODS ABOVE THE CREEK", "NIGHT", "The woods above the creek, night, moments later: the flare burning down, three men standing in silence, and the dark beyond the trees.", "Standard", "Low key", ["airman", "agent"]],
+  ["3", "The back road", "EXT./INT. TRUCK, BACK ROAD", "NIGHT", "A truck and trailer on a twisting two-lane in the Ohio hills (leafy hardwood woods in summer), around 1 a.m.: fog in the hollows, warm dashboard light against the blue night, an unmarked sedan a quarter mile behind. An American left-hand-drive cab: a civilian trucker (driver's seat on the LEFT) and a young airman in civilian clothes (passenger, on the right) sit in it.", "Standard", "Practical night", ["airman", "trucker"]],
+  ["4", "The swerve", "EXT. THE BEND, BACK ROAD", "NIGHT", "A blind bend on the back road at night in leafy Ohio hardwood woods: the truck and trailer meeting a station wagon driven by a nurse coming off a double shift. Headlights, fog, a gravel shoulder and a drop to one side.", "Standard", "Practical night", ["mom", "trucker", "airman"]],
+  ["5", "The fall", "EXT. WOODED BANK", "NIGHT", "A wooded bank above a creek, night, Ohio hardwoods in full summer leaf: moonlit trunks and ferns, a loaded crate on its way down, and the dark inside the crate.", "Standard", "Low key", []],
+  ["6", "Topside", "EXT. THE ROADSIDE, ABOVE THE BANK", "NIGHT", "The back road above the bank, night, just after the bend (leafy Ohio hardwoods, yellow centre line): road flares, red-lit fog, an unmarked sedan with two men in suits, a trucker and an airman. A white nurse's cap and a snapped-off side mirror lie on the asphalt.", "Standard", "Practical night", ["agent", "trucker", "airman"]],
+  ["7", "The crate", "EXT. THE CREEK BANK", "NIGHT", "The creek bank, night, Ohio hardwoods in leaf: a split-open crate in the shallows, a hollow in old packing straw, a board stenciled INERT, and flares held low.", "Standard", "Practical night", ["agent", "airman"]],
+  ["8", "Far off in the woods", "EXT. THE WOODS ABOVE THE CREEK", "NIGHT", "The woods above the creek, night, moments later, Ohio hardwoods in leaf: the flare burning down, three men standing in silence, and the dark beyond the trees.", "Standard", "Low key", ["airman", "agent"]],
 ].map(([number, title, location, time, description, kind, lighting, chars]) => ({
   id: `hangar-s${number}`, number, title, location, time, description, characters: who(...chars), actId: ACT, kind, lighting,
   lightingNotes: sceneLight[number], style: STYLE,
@@ -66,7 +76,7 @@ const details = [
   ["Wonder tipping into unease.", "Still pure black.", "Still black. The first thing we ever see is nothing.", "The clicks arrive in his headset: three quick, one slow, close and dry, like a relay or a tongue on teeth. This exact recording is reused in the trailer and in the woods. Filter it slightly, as if heard through a headset.", "Cut"],
   ["Dread: an order obeyed too late to be undone.", "Still pure black.", "Hold black through the exchange, the pause and the gunfire. Do not cut to a picture of what he shot, ever.", "Two short bursts, then true silence: drop the engine and the hiss out entirely for a full beat. The silence is the cut.", "Cut"],
   // Hangar
-  ["Hushed bustle: a secret being cleaned up quietly, in the dark.", "Sodium-yellow work lamps strung under the hangar roof, wet concrete reflecting them, a cold blue night sky above the open doors, one lit window in the guard booth. No moon.", "Open high over the apron and crane down to the hangar doors: soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.", "Idle generators, boots, a forklift's reversing beeper, insects. No score.", "Fade in"],
+  ["Hushed bustle: a secret being cleaned up quietly, in the dark.", "Sodium-yellow work lamps strung under the hangar roof, wet concrete reflecting them, a cold blue night sky above the open doors, one lit window in the guard booth. No moon.", "Open high over the apron and crane down to the hangar doors: the truck reversed up to the doors with its trailer's rear doors at the opening and the cab pointing away, soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.", "Idle generators, boots, a forklift's reversing beeper, insects. No score.", "Fade in"],
   ["Official voices explaining nothing.", "The television's blue-white flicker is the only light inside the booth; the rest of the room is dim and warm brown.", "Locked-off insert on a small curved-glass TV with rabbit ears: a committee table, a gavel. Nobody in the booth looks up.", "Muffled hearing audio from the booth's television, a gavel; the emptied hangar beyond.", "Cut"],
   ["Ordinary and ominous: a label that has done its job for thirty years.", "One bare lamp directly over the crate: hard top light, deep shadow beneath it, the rest of the floor already empty and dark.", "Low angle from the floor so the crate looms. The stencil is weathered and legible. The coffee ring in the lid is visible but not yet explained. No push-in; nobody reads it aloud.", "The echo of an emptied hangar. The crate is silent.", "Cut"],
   ["Habit, and a tenderness he would deny.", "Warm lamp light on the lid; steam from the cup backlit; the ring in the wood darker than the grain.", "Top-down insert: the cup sits exactly in the ring worn into the lid. He lifts it away as the shot ends.", "Ceramic on wood, a small tick.", "Cut"],
@@ -75,14 +85,14 @@ const details = [
   // Back road
   ["Defiance in motion: the paperwork skipped.", "Headlights and the weigh station's amber floodlights sliding over the truck; deep blue night; the sign lit from below.", "Wide tracking alongside as the truck passes the sign ordering all trucks into the weigh station, and keeps going.", "Diesel, tyre hum, air brakes unused.", "Cut"],
   ["Wonder and isolation: a big dark country and one small warm light.", "Deep blue twilight sky, fog in the hollows glowing faintly, the truck's headlights and, far behind, the sedan's, as two pinpricks.", "Crane up from the road to reveal the sweep of the hills in layered painted ridgelines of blue (Ghibli depth). The trailer is a small lit box on a very large night.", "Crickets under the engine; wind swelling.", "Dissolve"],
-  ["Warm, tired and wry.", "Amber dashboard glow on both faces, a green radio dial, cool blue night through the windshield, the fog beyond.", "Medium two-shot from the dash. The airman's clothes are civilian and too neat; the trucker wears a cap; the wheel is large in frame.", "AM radio low under it (an old ballad), gearbox, tyres.", "Cut"],
+  ["Warm, tired and wry.", "Amber dashboard glow on both faces, a green radio dial, cool blue night through the windshield, the fog beyond.", "Medium two-shot from the dash. American left-hand-drive truck: the trucker sits on the truck's LEFT, so from the dash looking back at them he is on the viewer's RIGHT and the airman on the viewer's LEFT. The airman's clothes are civilian and too neat; the trucker wears a cap and his brown leather jacket; the wheel is large in frame.", "AM radio low under it (an old ballad), gearbox, tyres.", "Cut"],
   ["Something small and wrong.", "Dash glow on the backs of their heads; the red of the rear-view mirror; the black trailer visible through the sliding rear window.", "Over the shoulder, looking back through the rear window at the dark trailer. The knock is heard before anyone looks.", "Knock. Knock: dull, wooden, inside the trailer.", "J-cut"],
-  ["Discovery: the first person to listen.", "Dash glow on his face and hand; the knee in the foreground in warm light.", "Close on his hand tapping his knee. The taps lock to the knocks coming off-screen.", "Knocks and taps in unison: three quick, one slow.", "Cut"],
+  ["Discovery: the first person to listen.", "Dash glow on his face and hand; the knee in the foreground in warm light.", "Close on his hand tapping his knee. He is the passenger on the truck's right, so the wheel is on his LEFT. The taps lock to the knocks coming off-screen.", "Knocks and taps in unison: three quick, one slow.", "Cut"],
   ["Held breath.", "Faces nearly in silhouette against headlight glare; the dash glow dims.", "Extreme close-up of his raised finger, then his eyes. Hold longer than is comfortable.", "Three quick knocks. Silence where the fourth should be: take the engine down for half a second.", "Cut"],
   // Swerve
   ["Sudden, sleepy menace.", "Wagon headlights sweep across the trunks and flare into the lens; the road goes white; fog.", "Locked wide at the bend. The wagon drifts over the center line a beat too long.", "Gravel under a tyre; a ballad on the wagon's radio, faint.", "Smash cut"],
   ["Exhaustion, kindness, hanging on.", "Dash glow on her face and white cap; cold night air from the open window; oncoming headlights cross her eyes at the end of the shot.", "Close on her eyes. A slow blink; the lids drop. A hospital ID clipped to her coat, blurred but readable as a badge (the evidence seed).", "Night air through the open window, her own breath, the wagon's radio ballad.", "Cut"],
-  ["Panic, then nothing.", "Headlights strobing across the windscreens; brake-lights flaring red.", "Handheld, low. The wagon's flank slides past the truck's cab by a hand's width. Draw the motion with smears, not blur; keep the weight of both vehicles.", "Horn, tyre shriek, gravel.", "Cut"],
+  ["Panic, then nothing.", "Headlights strobing across the windscreens; brake-lights flaring red.", "Handheld, low. Truck and wagon pass head-on in opposite directions, one showing its front and the other its tail, the wagon drifting into the truck's lane; the nurse is alone in the wagon. The wagon's flank slides past the truck's cab by a hand's width. Draw the motion with smears, not blur; keep the weight of both vehicles.", "Horn, tyre shriek, gravel.", "Cut"],
   ["Small things that will matter.", "Red tail-light wash on the road; the cap lit white by a headlight sweep; the mirror's glass catches it.", "Insert, low: the mirror snaps off and skitters; the cap spins down onto the asphalt. Keep both clearly in frame so the audience remembers them.", "Snap of metal, a glass skitter, the cap's soft slap.", "Cut"],
   ["The weight of a truck losing the road.", "Headlights swinging across tree trunks in long ribbons; dust; brake-lights.", "Tracking wide beside the trailer as it fishtails; follow the rear doors.", "Tyre howl, chains rattling.", "Cut"],
   ["The audience cannot tell.", "The rear doors lit only by the truck's tail-lights; the interior behind them pure black.", "Medium at the trailer's rear doors. The slow knock lands from inside at the same instant the skid peaks; the latch lets go. Never show the inside. Neither a push nor a bump: it must read both ways.", "The missing fourth knock, huge and near; the metal bang of the doors bursting.", "Cut"],
@@ -94,16 +104,16 @@ const details = [
   // Topside
   ["Guilt she will never feel.", "Two red taillights shrinking round the bend; blue-black trees.", "Locked wide. The wagon does not brake. The road empties.", "Her engine fading, the ballad on her radio carrying on a moment longer.", "Cut"],
   ["Red alarm.", "Road flares as the only key: hard crimson with sparks, fog lit red; the sedan's headlights as white backlight; no flashlight beams.", "Medium on the trucker's shaking hand and the flare; the sedan skids in behind him.", "Flare hiss and crackle, tyres on gravel.", "Cut"],
-  ["Evidence, quietly taken.", "Red flare light on black asphalt; the cap glaringly white.", "Close, high angle. A gloved hand lifts the cap and the mirror; the pocket closes over them. Hold on the empty asphalt after.", "Gravel, the flare, a pocket button.", "Cut"],
+  ["Evidence, quietly taken.", "Red flare light on black asphalt; the cap glaringly white.", "Close, high angle. A gloved hand lifts the white nurse's cap with its one red band and the round chrome side mirror (the same two objects as the insert); the pocket closes over them. Hold on the empty asphalt after.", "Gravel, the flare, a pocket button.", "Cut"],
   ["Authority meeting fear.", "Red from below; the agent's face never fully lit; the sedan's lights behind.", "Two-shot. The trucker points down the bank; the agent looks at the cap in his hand.", "Flare hiss, gravel underfoot, the sedan's engine ticking as it cools.", "Cut"],
   ["A descent into the unknown.", "Fog turned red by the flares they carry; blue-black trees; the moon lost behind cloud.", "Crane down from the road, following three figures down the bank; the flares are moving red stars.", "Boots on leaves, flare hiss, the creek growing louder.", "Cut"],
   // The crate
   ["An anticlimax that is worse than a monster.", "Flare light spills red over the split crate; the creek glints behind it.", "Medium wide. The three arrive; the lid lies in pieces; a long beat of nothing.", "The creek; one crackling flare.", "Dissolve"],
-  ["Tender: something small was here.", "A flare held close throws warm red into the hollow; the straw looks like hair.", "Close, high angle into the hollow: a curled shape pressed into straw. Imply no form beyond the hollow itself.", "Straw rustling; a flare's hiss.", "Cut"],
+  ["Tender: something small was here.", "A flare held close throws warm red into the hollow; the straw looks like hair.", "Close, high angle into the hollow: a bowl-shaped dent pressed into straw. No limbs, fur, head or tail; nothing curled up; imply no form beyond the hollow itself. The same strapped pine crate as the prop sheet.", "Straw rustling; a flare's hiss.", "Cut"],
   ["The word, proven wrong.", "The flare reflected in the creek; the stencil half under the water.", "Insert on the board bobbing in the creek: INERT. No push-in.", "Running water.", "Cut"],
-  ["Dread by accumulation.", "A flare held low so red light rakes sideways across the scratches, each groove with its own black shadow; everything else falls to black.", "Extreme close tracking along the wall; the marks fill the frame edge to edge. Let the sheer number sink in: thousands.", "A flare crackle; an agent's breath. No score.", "Cut"],
+  ["Dread by accumulation.", "A flare held low so red light rakes sideways across the scratches, each groove with its own black shadow; everything else falls to black.", "Extreme close tracking along the wall, lit by a hissing red road flare held low (a flare, never a flashlight); the marks fill the frame edge to edge. Let the sheer number sink in: thousands.", "A flare crackle; an agent's breath. No score.", "Cut"],
   ["It was counting.", "Raking red; the newest cut is the only pale, bright wood in the frame.", "Static extreme close-up. Make the last stroke visibly new against the old marks and let the audience do the sum.", "Silence; hold.", "Cut"],
-  ["The thing nobody looks at.", "The flare does not reach: a few uncrossed marks sit in near-black, barely readable.", "Locked close on the dark corner. Slowly the eye finds the few uncrossed marks. No one in frame looks here.", "The creek and the flare; nothing else.", "Cut"],
+  ["The thing nobody looks at.", "The flare does not reach: a few uncrossed marks sit in near-black, barely readable.", "Locked close on the deep far corner of the crate, almost lost in shadow, with the few uncrossed marks tucked into it and the lit wall around them crowded with crossed marks. The light is a red flare, never a flashlight. Slowly the eye finds the few uncrossed marks. No one in frame looks here.", "The creek and the flare; nothing else.", "Cut"],
   // Far off
   ["Faint, and moving away.", "A moonlit tree line; a cold blue glow in the sky; nothing visible among the trunks.", "Wide of the woods from the crate site. The sound crosses left to right and recedes; nothing is seen.", "Three quick clicks, one slow, receding: the same recording as 1944, now with woods around it.", "J-cut"],
   ["Quiet recognition.", "Flare red on his face; the agents in shadow behind him.", "Close on the airman. His head turns a fraction toward the sound; his lips move: \"One-two-three... four.\"", "A whisper; the clicks fading beneath it.", "Cut"],
@@ -123,6 +133,52 @@ const cues = {
   17: ["MOM: (drowsy) Come on. Two more miles."],
   29: ["AGENT: Where is it?", "TRUCKER: (shaking) Down there. Some lady in a wagon, she just came right at me."],
   38: ["AIRMAN: (barely audible) One-two-three... four."],
+};
+
+// The painted boards, one per shot, in public/images/hangar/. Shots 1-3 are the screenplay's pure
+// black frames; 4-39 were painted against the continuity sheets in sheets/ and props/ so the crate
+// (stencil WRIGHT FIELD 1944 - INERT, the coffee-stain ring on its lid), the cream-and-teal truck,
+// the woodgrain wagon, the sedan and every face stay the same from shot to shot.
+const boards = {
+  1: "/images/hangar/s1/01-black-radio.jpg",
+  2: "/images/hangar/s1/02-three-quick-one-slow.jpg",
+  3: "/images/hangar/s1/03-gunfire-silence.jpg",
+  4: "/images/hangar/s2/04-wright-patterson-night.jpg",
+  5: "/images/hangar/s2/05-guard-booth-tv.jpg",
+  6: "/images/hangar/s2/06-wright-field-inert.jpg",
+  7: "/images/hangar/s2/07-coffee-ring.jpg",
+  8: "/images/hangar/s2/08-hand-on-lid.jpg",
+  9: "/images/hangar/s2/09-dont-you-want-to-know.jpg",
+  10: "/images/hangar/s3/10-weigh-station.jpg",
+  11: "/images/hangar/s3/11-into-the-hills.jpg",
+  12: "/images/hangar/s3/12-the-cab.jpg",
+  13: "/images/hangar/s3/13-knock-from-trailer.jpg",
+  14: "/images/hangar/s3/14-one-two-three-four.jpg",
+  15: "/images/hangar/s3/15-slow-one-never-arrives.jpg",
+  16: "/images/hangar/s4/16-headlights-round-bend.jpg",
+  17: "/images/hangar/s4/17-two-more-miles.jpg",
+  18: "/images/hangar/s4/18-yank-the-wheel.jpg",
+  19: "/images/hangar/s4/19-mirror-cap.jpg",
+  20: "/images/hangar/s4/20-the-skid.jpg",
+  21: "/images/hangar/s4/21-missing-knock.jpg",
+  22: "/images/hangar/s4/22-over-the-edge.jpg",
+  23: "/images/hangar/s5/23-down-the-bank.jpg",
+  24: "/images/hangar/s5/24-inside-the-crate.jpg",
+  25: "/images/hangar/s5/25-by-the-creek.jpg",
+  26: "/images/hangar/s6/26-taillights.jpg",
+  27: "/images/hangar/s6/27-road-flares.jpg",
+  28: "/images/hangar/s6/28-white-cap.jpg",
+  29: "/images/hangar/s6/29-where-is-it.jpg",
+  30: "/images/hangar/s6/30-down-through-red-fog.jpg",
+  31: "/images/hangar/s7/31-empty.jpg",
+  32: "/images/hangar/s7/32-hollow-in-straw.jpg",
+  33: "/images/hangar/s7/33-inert-in-creek.jpg",
+  34: "/images/hangar/s7/34-rows-of-marks.jpg",
+  35: "/images/hangar/s7/35-newest-stroke.jpg",
+  36: "/images/hangar/s7/36-far-corner.jpg",
+  37: "/images/hangar/s8/37-far-off.jpg",
+  38: "/images/hangar/s8/38-only-airman-hears.jpg",
+  39: "/images/hangar/s8/39-flare-sputters-out.jpg",
 };
 
 // [scene, title, description, shotType, movement, angle, lens, lighting, seconds, cast, script quote]
@@ -171,8 +227,8 @@ const shots = [
   const [mood, lightingNotes, framing, sound, transition] = details[i];
   return {
     id: `hangar-shot-${String(i + 1).padStart(2, "0")}`, shotNumber: i + 1, sceneId: sceneOf(scene), title, description,
-    image: "", shotType, movement, angle, lens, lighting, lightingNotes, style: STYLE, mood, duration, durationIsEstimate: true,
-    status: "Needs review", transition, characters: who(...chars),
+    image: boards[i + 1], shotType, movement, angle, lens, lighting, lightingNotes, style: STYLE, mood, duration, durationIsEstimate: true,
+    status: "Draft", transition, characters: who(...chars),
     // Order matters to the video prompts: the first line that mentions sound becomes the soundscape, and
     // lines of the form NAME: words are read as dialogue, so the labels here are mixed case on purpose.
     notes: [
@@ -181,14 +237,14 @@ const shots = [
       ...(cues[i + 1] || []),
       `Script: "${quote}"`,
       "",
-      "Style: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described.",
+      "Style: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
     ].join("\n"),
   };
 });
 assert.equal(details.length, shots.length, "one set of details per shot");
 
 const notes = [
-  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " shots with no pictures yet. Acts one to three come next.", ["Read first"]],
+  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " painted boards drawn against the continuity sheets in public/images/hangar/. Acts one to three come next.", ["Read first"]],
   ["look", "The look: Painted Americana '75", "Painted, not photographed: warm dashboard amber against deep blue night, gouache fog in the hollows, soft hand-painted skies. Characters are drawn plainly and with weight, with strong silhouettes and believable acting, in the manner of 1950s to 1970s American animation (wood paneling, station wagons, diner chrome, AM radios).\n\nThe Iron Giant for the people, Studio Ghibli for the places. People and vehicles have real mass: no squash and stretch, no cartoon takes; motion is drawn with smears, not blur. Backgrounds are layered multiplane paintings with atmosphere in every layer: fog, cloud, wet leaves, weathered paint. Light always comes from something in the world: dashboard amber, hangar sodium, road-flare crimson, moon blue. Gentle film grain, soft halation on lamps, 16:9 full-bleed. The camera is patient and leaves room for silence. It is the house style 'Painted Americana '75' in every shot's style picker, and every scene and shot in this workspace already carries it.", ["Look", "Style"]],
   ["seeds", "Seeds the cold open plants", "1. The nurse's cap and the snapped-off mirror lead the agents and the detective to the boy's house by different routes.\n2. The rhythm (three quick, one slow) ties the airman, the pilot and the machine together before any character notices.\n3. The uncrossed marks in the dark corner are the act-two flip: it was not counting days served, it was counting days left. Decide the exact number now; it sets the length of the film's clock.\n4. The coffee ring leaves an open question: did the sergeant know it was awake?\n5. The airman is the only one who hears the clicks at the end: he is the government's way in to the boy, and the audience's.", ["Plot", "Setups"]],
   ["rules", "Rules and sound", "Nobody says alien, robot or UFO. Flares, not flashlight beams, outdoors. One recording of the three-quick-one-slow rhythm, used in 1944, in the trailer and in the woods. Never show what the pilot shot; never show what is in the crate. The 1975 setting is deliberate: Church Committee, post-Watergate paranoia, Blue Book already closed.", ["Rules", "Sound"]],
@@ -206,11 +262,11 @@ const brainstorm = [
 const project = {
   id: projectId,
   title: "Untitled (working title): the cold open",
-  description: "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, " + scenes.length + " scenes, " + shots.length + " shots, almost no dialogue, in the house style Painted Americana '75. No pictures yet.",
+  description: "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, " + scenes.length + " scenes, " + shots.length + " shots, almost no dialogue, in the house style Painted Americana '75, with a painted board on every shot.",
   genre: "Animated mystery",
   format: "Feature",
   status: "In development",
-  coverImage: "",
+  coverImage: "/images/hangar/sheets/key-art.jpg",
   acts: [{ id: ACT, title: "Cold open: 1944 to the creek", description: "A pilot, a hangar, a truck, a swerve, a fall and an empty crate. Nobody says what it is." }],
   scenes, frames: shots, characters: cast, notes, brainstorm, moodboards: [], script,
   shareId: null, createdAt, updatedAt: createdAt,

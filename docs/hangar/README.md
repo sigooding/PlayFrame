@@ -3,10 +3,11 @@
 A second bundled project, separate from Nobody's Witness. Open it from **Templates → "Untitled: the cold open"**; it adds itself once and never overwrites your edits.
 
 - **Source:** `docs/hangar/cold-open.fountain` is the screenplay. `npm run build:hangar` regenerates `public/projects/hangar-cold-open.json` from it (every shot's script quote must exist in the pages); `npm run verify:hangar` checks the bundle.
-- **Contents:** 8 scenes, 39 shots, 7 cast cards, notes (the look, the seeds, the rules, the open questions) and brainstorm cards. **No pictures yet**: every storyboard card holds its slot and says it needs review. Nothing is borrowed from Nobody's Witness.
+- **Contents:** 8 scenes, 39 shots, 7 cast cards, notes (the look, the seeds, the rules, the open questions) and brainstorm cards. Every storyboard card carries a painted board (shots 1-3 are the screenplay's pure black frames), the five characters the camera meets carry painted continuity sheets, and the crate, the truck, the wagon and the sedan carry prop sheets, all drawn in the house style. Nothing is borrowed from Nobody's Witness.
 - **Rules from the brief:** nobody says alien, robot or UFO; flares, never flashlight beams; one recording of "three quick, one slow" used in 1944, in the trailer and in the woods; never show what the pilot shot or what was in the crate.
 - **Open:** the title; the number of uncrossed marks (the film's clock); why it moves now; whether the airman crosses sides; whether the sergeant is the old pilot.
-- **Image rule:** the project's own pictures will live under `public/images/hangar/`. The never-overwrite, archive and `verify:images` rules in `CLAUDE.md` apply to them from the first picture.
+- **Image rule:** the project's own pictures live under `public/images/hangar/` (`sheets/` for cast and key art, `props/` for vehicles and the crate, `s1/`-`s8/` for the boards). The never-overwrite, archive and `verify:images` rules in `CLAUDE.md` apply to them from the first picture.
+- **Continuity:** every board was painted against the sheets: the crate is a weathered pine box stenciled WRIGHT FIELD 1944 - INERT whose lid carries one faded **coffee-stain ring** (an ordinary mug stain, nothing more); the truck is a cream-and-teal conventional-cab semi with a plain aluminium box trailer; the wagon is a woodgrain late-60s family wagon; the sedan is a dark unmarked mid-70s car; the nurse is warm and pretty, brown hair under a white cap, beige cardigan over her white uniform. Retakes keep these, and `verify:hangar` asserts every board and sheet is on disk.
 
 ## Style and shot details (7 October 2026)
 
@@ -15,4 +16,8 @@ A second bundled project, separate from Nobody's Witness. Open it from **Templat
 - **Why the notes are laid out that way:** the video prompts read them. Lines of the form `NAME: words` become spoken dialogue; the first line that mentions sound becomes the soundscape. So the labels `Sound:`, `Framing:` and `Style:` are mixed case on purpose, and the sound line comes first. Scene descriptions say where we are and what the light is doing, not what happens, because each is appended to every shot's prompt.
 - **The look note** ("The look: Painted Americana '75") is the one the prompt builder quotes for its palette line; keep its first two sentences visual. The rules note is titled so it does not match the builder's look/style/palette search.
 - **Checks:** `npm run verify:hangar` asserts the style on every scene and shot, mood, lighting direction, transitions, and that prompts for all 15 platforms carry the style and never name the thing in the crate.
-- **The cards show the app's stock shot-type pictures** (a lighthouse for Establishing and so on) until real pictures replace them; those are library references, not this film's pictures.
+- **The style picker's example** for Painted Americana '75 is the project's own `public/images/styles/painted-americana-75.jpg` (the truck climbing into the foggy hollows), and the project's cover is `public/images/hangar/sheets/key-art.jpg`.
+
+## Refreshing a saved copy (7 October 2026)
+
+A copy already in a workspace is brought up to the current bundle every time it is read (`hangarUpdates` in `src/lib/hangar.ts`, run from `src/lib/projects.ts`). A field is replaced only when its saved value is still one the bundle shipped before; anything the owner wrote, any custom picture, and any frame or scene they added or deleted is left alone. The shipped values are kept as hashes in `src/lib/hangar-sync.json`. **Before changing the bundle, run `npm run sync:hangar`** (records the committed version), then `npm run build:hangar`; `verify:hangar` tests the refresh against the first shipped version.
