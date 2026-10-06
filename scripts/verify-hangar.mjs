@@ -16,8 +16,8 @@ execFileSync(process.execPath, ["scripts/hangar/build-project.mjs", "--check"], 
 const cache = join(root, "node_modules/.cache/verify-hangar");
 mkdirSync(cache, { recursive: true });
 const lib = join(cache, "lib.mjs");
-await build({ stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/frame-order"; export * from "./src/lib/prompt"; export * from "./src/lib/styles"; export * from "./src/lib/types";', resolveDir: root }, outfile: lib, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning" });
-const { validatePatch, isUuid, MAX_FRAMES, MAX_SCENES, framesInSceneOrder, buildFramePrompt, buildScenePrompt, visualStyle, VISUAL_STYLES, TRANSITIONS, PLATFORMS } = await import(`file://${lib}`);
+await build({ stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/frame-order"; export * from "./src/lib/prompt"; export * from "./src/lib/styles"; export * from "./src/lib/types"; export { hangarUpdates } from "./src/lib/hangar";', resolveDir: root }, outfile: lib, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning" });
+const { validatePatch, isUuid, MAX_FRAMES, MAX_SCENES, framesInSceneOrder, buildFramePrompt, buildScenePrompt, visualStyle, VISUAL_STYLES, TRANSITIONS, PLATFORMS, hangarUpdates } = await import(`file://${lib}`);
 
 assert(isUuid(project.id));
 validatePatch(project);
@@ -90,7 +90,6 @@ const neonoire = JSON.parse(read("public/projects/neonoire-opening.json"));
 assert.notEqual(project.id, neonoire.id);
 assert(!project.script.includes("Nobody's Witness") && !JSON.stringify(project).includes("/images/neonoire/"), "nothing leaks across from the other project");
 pass("isolated from Nobody's Witness: its images, ids and script are untouched");
-console.log("\nAll cold-open checks passed.");
 
 // Review fixes (7 October 2026): the descriptions that stop the next pass repeating the first pass's mistakes.
 {
@@ -103,3 +102,21 @@ console.log("\nAll cold-open checks passed.");
   assert(/red band/.test(framesText(28)) && /round chrome/.test(framesText(28)), "the cap and mirror are named exactly");
   assert(project.scenes.slice(2).every(scene => /hardwood/.test(scene.description)), "the outdoor scenes say Ohio hardwoods in leaf");
 }
+
+// A saved copy refreshes to the current bundle, but keeps whatever its owner wrote.
+{
+  const old = JSON.parse(execFileSync("git", ["show", "59631f1:public/projects/hangar-cold-open.json"], { cwd: root, encoding: "utf8", maxBuffer: 1 << 28 }));
+  old.frames[11].notes = `${old.frames[11].notes}\nMY OWN LINE`;
+  old.frames[0].title = "My title for shot 1";
+  old.frames[3].image = "/images/mine/custom.jpg";
+  const patch = hangarUpdates(old);
+  assert(patch, "an old saved copy is refreshed");
+  assert(patch.frames[11].notes.includes("MY OWN LINE") && patch.frames[0].title === "My title for shot 1" && patch.frames[3].image === "/images/mine/custom.jpg", "the owner's edits survive the refresh");
+  assert.equal(patch.frames[5].image, project.frames[5].image, "an untouched card gets its picture");
+  assert.equal(patch.frames[17].notes, project.frames[17].notes, "an untouched card gets the fixed notes");
+  assert.equal(patch.scenes[2].description, project.scenes[2].description, "an untouched scene gets the fixed description");
+  assert.equal(hangarUpdates({ ...old, ...patch }), null, "refreshing twice changes nothing");
+  assert.equal(hangarUpdates(project), null, "the current bundle needs no refresh");
+}
+
+console.log("\nAll cold-open checks passed.");
