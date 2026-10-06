@@ -1,7 +1,7 @@
 // npm run verify:hangar: the cold-open workspace's schema, ceilings, source fidelity and isolation.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
@@ -26,10 +26,51 @@ assert(project.frames.length <= MAX_FRAMES && project.scenes.length <= MAX_SCENE
 assert.equal(project.scenes.length, 8);
 assert.equal(project.frames.length, 39);
 assert.deepEqual(framesInSceneOrder(project.frames, project.scenes).map(f => f.id), project.frames.map(f => f.id), "frames are already in scene order");
-assert(project.frames.every(f => f.image === "" && f.status === "Needs review"), "no frame borrows a picture; each says it still needs one");
+// The pictures: read the registry (the one source of truth) and hold every frame to it. A shot with
+// a delivered picture carries its path, the status Ready, the file on disk at 1920x1080 and its own
+// caveat on the card; a shot still waiting keeps image "" and "Needs review" and borrows nothing.
+const registry = await import(`file://${join(root, "scripts/hangar/frame-registry.mjs")}`);
+const deliveredNumbers = Object.keys(registry.FRAMES).map(Number).sort((a, b) => a - b);
+/** JPEG dimensions without a decoder: the first SOF marker carries the frame size. */
+const jpegSize = file => {
+  const buffer = readFileSync(file);
+  for (let i = 2; i + 9 < buffer.length;) {
+    if (buffer[i] !== 0xff) { i += 1; continue; }
+    const marker = buffer[i + 1];
+    if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) return { height: buffer.readUInt16BE(i + 5), width: buffer.readUInt16BE(i + 7) };
+    i += 2 + buffer.readUInt16BE(i + 2);
+  }
+  throw new Error(`no JPEG frame header in ${file}`);
+};
+for (const frame of project.frames) {
+  const entry = registry.FRAMES[frame.shotNumber];
+  if (!entry) {
+    assert.equal(frame.image, "", `shot ${frame.shotNumber} waits for its picture and borrows none`);
+    assert.equal(frame.status, "Needs review", `shot ${frame.shotNumber} still says it needs its picture`);
+    continue;
+  }
+  assert.equal(frame.image, entry.image, `shot ${frame.shotNumber} carries its own picture's path`);
+  assert.equal(frame.status, "Ready", `shot ${frame.shotNumber} with a picture on disk is Ready`);
+  assert(entry.image.startsWith("/images/hangar/"), `shot ${frame.shotNumber}'s picture lives under /images/hangar/`);
+  const file = join(root, "public", entry.image);
+  assert(existsSync(file), `shot ${frame.shotNumber}'s picture is on disk: ${entry.image}`);
+  assert.deepEqual(jpegSize(file), { width: 1920, height: 1080 }, `shot ${frame.shotNumber}'s picture is 1920x1080 full-bleed 16:9`);
+  assert(entry.note && frame.notes.includes(`\n${entry.note}`), `shot ${frame.shotNumber} carries its picture's caveat in its notes`);
+}
+assert(deliveredNumbers.every(n => n >= 1 && n <= project.frames.length), "every delivered picture belongs to a shot in the open");
+pass(`${deliveredNumbers.length} of ${project.frames.length} shots have their picture (${deliveredNumbers.join(", ")}); the rest hold their slots`);
+for (const character of project.characters) {
+  const sheet = registry.CAST[character.id.replace(/^hangar-/, "")];
+  if (!sheet) { assert.equal(character.image, undefined, `${character.name} borrows no sheet`); continue; }
+  assert.equal(character.image, sheet.image, `${character.name} carries their own cast sheet`);
+  const file = join(root, "public", sheet.image);
+  assert(sheet.image.startsWith("/images/hangar/sheets/") && existsSync(file), `${character.name}'s cast sheet is on disk: ${sheet.image}`);
+  assert.deepEqual(jpegSize(file), { width: 1920, height: 1080 }, `${character.name}'s cast sheet is 1920x1080`);
+}
+pass(`${project.characters.filter(c => registry.CAST[c.id.replace(/^hangar-/, "")]).length} of ${project.characters.length} cast carry a sheet`);
 assert(project.frames.every(f => project.scenes.some(s => s.id === f.sceneId)), "every frame belongs to a scene");
 assert.equal(new Set(project.frames.map(f => f.shotNumber)).size, project.frames.length, "shot numbers are unique");
-pass("8 scenes, 39 shots, in order, none with a borrowed picture");
+pass("8 scenes, 39 shots, in order, each with its own picture or its own empty slot");
 
 const text = project.script;
 for (const word of ["alien", "robot", "UFO"]) {

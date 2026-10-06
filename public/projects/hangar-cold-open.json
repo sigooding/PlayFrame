@@ -1,7 +1,7 @@
 {
   "id": "74a9cb34-9e80-4a04-a614-000000000070",
   "title": "Untitled (working title): the cold open",
-  "description": "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, 8 scenes, 39 shots, almost no dialogue, in the house style Painted Americana '75. No pictures yet.",
+  "description": "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, 8 scenes, 39 shots, almost no dialogue, in the house style Painted Americana '75. 8 of 39 shots have their picture so far.",
   "genre": "Animated mystery",
   "format": "Feature",
   "status": "In development",
@@ -158,7 +158,7 @@
       "sceneId": "hangar-s1",
       "title": "Black: the radio",
       "description": "Black screen. Radio hiss, the drone of an engine, and a pilot who sounds amazed, not scared: \"It's copying me.\"",
-      "image": "",
+      "image": "/images/hangar/s1/01-black-the-radio.jpg",
       "shotType": "Establishing",
       "movement": "Static",
       "angle": "Eye level",
@@ -169,13 +169,13 @@
       "mood": "Hushed and amazed, not afraid: a young man talking to himself over an engine.",
       "duration": 40,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Cut",
       "characters": [
         "hangar-red-two",
         "hangar-red-leader"
       ],
-      "notes": "Sound: Engine drone, radio hiss, wind. Red Two close and breathy; Red Leader tinny and far. The clicks do not arrive until the next shot.\nFraming: Hold black for the whole radio exchange. No title, no credit, no music.\nRED TWO: (hushed) Red Leader, I've got something on my right wing.\nRED LEADER: (clipped) Say again, Red Two.\nRED TWO: (hushed) No markings. It's glowing. I bank, it banks. It's copying me.\nScript: \"BLACK SCREEN. Before any picture, a radio hiss and the drone of an engine.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: Engine drone, radio hiss, wind. Red Two close and breathy; Red Leader tinny and far. The clicks do not arrive until the next shot.\nFraming: Hold black for the whole radio exchange. No title, no credit, no music.\nRED TWO: (hushed) Red Leader, I've got something on my right wing.\nRED LEADER: (clipped) Say again, Red Two.\nRED TWO: (hushed) No markings. It's glowing. I bank, it banks. It's copying me.\nScript: \"BLACK SCREEN. Before any picture, a radio hiss and the drone of an engine.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nBlack plate by design: this frame is pure black, 1920×1080, exactly as the screenplay asks. Nothing fades up and nothing is hinted at."
     },
     {
       "id": "hangar-shot-02",
@@ -183,7 +183,7 @@
       "sceneId": "hangar-s1",
       "title": "Three quick, one slow",
       "description": "Still black. The clicking in the headset: three quick, one slow. This is the film's signature sound; record it once and use it everywhere.",
-      "image": "",
+      "image": "/images/hangar/s1/02-three-quick-one-slow.jpg",
       "shotType": "Establishing",
       "movement": "Static",
       "angle": "Eye level",
@@ -194,12 +194,12 @@
       "mood": "Wonder tipping into unease.",
       "duration": 12,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Cut",
       "characters": [
         "hangar-red-two"
       ],
-      "notes": "Sound: The clicks arrive in his headset: three quick, one slow, close and dry, like a relay or a tongue on teeth. This exact recording is reused in the trailer and in the woods. Filter it slightly, as if heard through a headset.\nFraming: Still black. The first thing we ever see is nothing.\nRED LEADER: (clipped) Could be a Jerry trick. Take it down.\nRED TWO: (hushed) It's not doing anything. It's just flying with me.\nRED LEADER: (clipped) That's an order.\nScript: \"In his headset, a strange clicking, in a distinct rhythm: three quick, one slow.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: The clicks arrive in his headset: three quick, one slow, close and dry, like a relay or a tongue on teeth. This exact recording is reused in the trailer and in the woods. Filter it slightly, as if heard through a headset.\nFraming: Still black. The first thing we ever see is nothing.\nRED LEADER: (clipped) Could be a Jerry trick. Take it down.\nRED TWO: (hushed) It's not doing anything. It's just flying with me.\nRED LEADER: (clipped) That's an order.\nScript: \"In his headset, a strange clicking, in a distinct rhythm: three quick, one slow.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nBlack plate by design: still pure black. The signature sound lives here and nowhere in the picture."
     },
     {
       "id": "hangar-shot-03",
@@ -207,7 +207,7 @@
       "sceneId": "hangar-s1",
       "title": "Gunfire, then silence",
       "description": "A long pause. Gunfire. Silence. We never see what he shot: hold the black.",
-      "image": "",
+      "image": "/images/hangar/s1/03-gunfire-then-silence.jpg",
       "shotType": "Establishing",
       "movement": "Static",
       "angle": "Eye level",
@@ -218,13 +218,13 @@
       "mood": "Dread: an order obeyed too late to be undone.",
       "duration": 14,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Cut",
       "characters": [
         "hangar-red-two",
         "hangar-red-leader"
       ],
-      "notes": "Sound: Two short bursts, then true silence: drop the engine and the hiss out entirely for a full beat. The silence is the cut.\nFraming: Hold black through the exchange, the pause and the gunfire. Do not cut to a picture of what he shot, ever.\nScript: \"A long pause. Then gunfire. Then silence.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: Two short bursts, then true silence: drop the engine and the hiss out entirely for a full beat. The silence is the cut.\nFraming: Hold black through the exchange, the pause and the gunfire. Do not cut to a picture of what he shot, ever.\nScript: \"A long pause. Then gunfire. Then silence.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nBlack plate by design: black through the gunfire and the silence. What he shot is never shown, so the frame stays black."
     },
     {
       "id": "hangar-shot-04",
@@ -232,7 +232,7 @@
       "sceneId": "hangar-s2",
       "title": "Wright-Patterson at night",
       "description": "Fade up on the base: hangar doors open on yellow light, airmen moving crates in the dark, a truck backed to the door. Painted night, wet concrete, one flag.",
-      "image": "",
+      "image": "/images/hangar/s2/04-wright-patterson-at-night.jpg",
       "shotType": "Establishing",
       "movement": "Crane down",
       "angle": "High angle",
@@ -243,10 +243,10 @@
       "mood": "Hushed bustle: a secret being cleaned up quietly, in the dark.",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Fade in",
       "characters": [],
-      "notes": "Sound: Idle generators, boots, a forklift's reversing beeper, insects. No score.\nFraming: Open high over the apron and crane down to the hangar doors: soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.\nScript: \"Fade up on Wright-Patterson at night.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: Idle generators, boots, a forklift's reversing beeper, insects. No score.\nFraming: Open high over the apron and crane down to the hangar doors: soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.\nScript: \"Fade up on Wright-Patterson at night.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nDelivered as a study, awaiting the director's eye: the hangar, the crate line, the flag and the lit guard booth all read; the airmen are small by design, and the crate marked INERT sits in the load without being singled out."
     },
     {
       "id": "hangar-shot-05",
@@ -395,7 +395,7 @@
       "sceneId": "hangar-s3",
       "title": "Into the hills",
       "description": "A twisting two-lane climbing into the Ohio hills. Fog in the hollows, warm dash light against the blue night, an unmarked sedan a quarter mile back.",
-      "image": "",
+      "image": "/images/hangar/s3/11-into-the-hills.jpg",
       "shotType": "Extreme wide",
       "movement": "Crane up",
       "angle": "High angle",
@@ -406,10 +406,10 @@
       "mood": "Wonder and isolation: a big dark country and one small warm light.",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Dissolve",
       "characters": [],
-      "notes": "Sound: Crickets under the engine; wind swelling.\nFraming: Crane up from the road to reveal the sweep of the hills in layered painted ridgelines of blue (Ghibli depth). The trailer is a small lit box on a very large night.\nScript: \"It turns onto a twisting two-lane and climbs into the Ohio hills\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: Crickets under the engine; wind swelling.\nFraming: Crane up from the road to reveal the sweep of the hills in layered painted ridgelines of blue (Ghibli depth). The trailer is a small lit box on a very large night.\nScript: \"It turns onto a twisting two-lane and climbs into the Ohio hills\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nDelivered as a study, awaiting the director's eye: the layered blue ridgelines and the fog in the hollows carry the Ghibli depth; the sedan's headlights read as two pinpricks far behind the truck. Painted, but the foliage runs close to photographic — the next visit to this frame should push visible brushwork."
     },
     {
       "id": "hangar-shot-12",
@@ -417,7 +417,7 @@
       "sceneId": "hangar-s3",
       "title": "The cab",
       "description": "Warm dash lights. The trucker grumbles: \"First time anybody paid me to skip a scale.\" The airman in civilian clothes, hands on his knees.",
-      "image": "",
+      "image": "/images/hangar/s3/12-the-cab.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "angle": "Eye level",
@@ -428,13 +428,13 @@
       "mood": "Warm, tired and wry.",
       "duration": 9,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Cut",
       "characters": [
         "hangar-trucker",
         "hangar-airman"
       ],
-      "notes": "Sound: AM radio low under it (an old ballad), gearbox, tyres.\nFraming: Medium two-shot from the dash. The airman's clothes are civilian and too neat; the trucker wears a cap; the wheel is large in frame.\nTRUCKER: (dry) Thirty years driving. First time anybody paid me to skip a scale.\nScript: \"First time anybody paid me to skip a scale.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: AM radio low under it (an old ballad), gearbox, tyres.\nFraming: Medium two-shot from the dash. The airman's clothes are civilian and too neat; the trucker wears a cap; the wheel is large in frame.\nTRUCKER: (dry) Thirty years driving. First time anybody paid me to skip a scale.\nScript: \"First time anybody paid me to skip a scale.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nA study with one honest fault: the trucker and the airman read correctly in the cab, dash amber on both faces with fog and night beyond the glass, but the cab has no windscreen frame or roof drawn over them, and the radio carries a green display 1975 never had. This frame is the head of the next pass's retake queue; its replacement gets a new filename and this file is archived first."
     },
     {
       "id": "hangar-shot-13",
@@ -515,7 +515,7 @@
       "sceneId": "hangar-s4",
       "title": "Headlights round the bend",
       "description": "A station wagon comes around the bend, drifting over the center line.",
-      "image": "",
+      "image": "/images/hangar/s4/16-headlights-round-the-bend.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "angle": "Eye level",
@@ -526,12 +526,12 @@
       "mood": "Sudden, sleepy menace.",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Smash cut",
       "characters": [
         "hangar-mom"
       ],
-      "notes": "Sound: Gravel under a tyre; a ballad on the wagon's radio, faint.\nFraming: Locked wide at the bend. The wagon drifts over the center line a beat too long.\nScript: \"A station wagon comes around the bend, drifting over the center line.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: Gravel under a tyre; a ballad on the wagon's radio, faint.\nFraming: Locked wide at the bend. The wagon drifts over the center line a beat too long.\nScript: \"A station wagon comes around the bend, drifting over the center line.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nDelivered as a study, awaiting the director's eye: the wagon is over the centre line a beat too long and its beam flares into the lens, fog going white."
     },
     {
       "id": "hangar-shot-17",
@@ -539,7 +539,7 @@
       "sceneId": "hangar-s4",
       "title": "Two more miles",
       "description": "The nurse, window down to stay awake, eyes heavy: \"Come on. Two more miles.\"",
-      "image": "",
+      "image": "/images/hangar/s4/17-two-more-miles.jpg",
       "shotType": "Close-up",
       "movement": "Static",
       "angle": "Eye level",
@@ -550,12 +550,12 @@
       "mood": "Exhaustion, kindness, hanging on.",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Ready",
       "transition": "Cut",
       "characters": [
         "hangar-mom"
       ],
-      "notes": "Sound: Night air through the open window, her own breath, the wagon's radio ballad.\nFraming: Close on her eyes. A slow blink; the lids drop. A hospital ID clipped to her coat, blurred but readable as a badge (the evidence seed).\nMOM: (drowsy) Come on. Two more miles.\nScript: \"Come on. Two more miles.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described."
+      "notes": "Sound: Night air through the open window, her own breath, the wagon's radio ballad.\nFraming: Close on her eyes. A slow blink; the lids drop. A hospital ID clipped to her coat, blurred but readable as a badge (the evidence seed).\nMOM: (drowsy) Come on. Two more miles.\nScript: \"Come on. Two more miles.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The picture is delivered. The thing in the crate is never named, shown or described.\nDelivered as a study, awaiting the director's eye: the cap, the coat and the ID badge are all readable, the slow blink is caught mid-drop, and the first white glare of oncoming headlights crosses her eyes at the frame edge. She reads older than the brief's thirty-four; exhaustion is the intent, but a retake could pull her closer to the age."
     },
     {
       "id": "hangar-shot-18",
@@ -1108,6 +1108,7 @@
         "Curious"
       ],
       "color": "sage",
+      "image": "/images/hangar/sheets/airman.jpg",
       "createdAt": "2026-10-07T00:00:00.000Z",
       "relations": []
     },
@@ -1122,6 +1123,7 @@
         "Habitual"
       ],
       "color": "sand",
+      "image": "/images/hangar/sheets/sergeant.jpg",
       "createdAt": "2026-10-07T00:00:00.000Z",
       "relations": []
     },
@@ -1136,6 +1138,7 @@
         "Incurious"
       ],
       "color": "clay",
+      "image": "/images/hangar/sheets/trucker.jpg",
       "createdAt": "2026-10-07T00:00:00.000Z",
       "relations": []
     },
@@ -1150,6 +1153,7 @@
         "Kind"
       ],
       "color": "rose",
+      "image": "/images/hangar/sheets/mom.jpg",
       "createdAt": "2026-10-07T00:00:00.000Z",
       "relations": []
     },
@@ -1164,6 +1168,7 @@
         "Cold"
       ],
       "color": "clay",
+      "image": "/images/hangar/sheets/agent.jpg",
       "createdAt": "2026-10-07T00:00:00.000Z",
       "relations": []
     }
@@ -1178,7 +1183,7 @@
         "Read first"
       ],
       "connections": [],
-      "content": "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has 39 shots with no pictures yet. Acts one to three come next."
+      "content": "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has 39 shots, 8 of them with their picture so far. Acts one to three come next."
     },
     {
       "id": "hangar-note-look",
