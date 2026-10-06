@@ -17,3 +17,7 @@ A second bundled project, separate from Nobody's Witness. Open it from **Templat
 - **The look note** ("The look: Painted Americana '75") is the one the prompt builder quotes for its palette line; keep its first two sentences visual. The rules note is titled so it does not match the builder's look/style/palette search.
 - **Checks:** `npm run verify:hangar` asserts the style on every scene and shot, mood, lighting direction, transitions, and that prompts for all 15 platforms carry the style and never name the thing in the crate.
 - **The style picker's example** for Painted Americana '75 is the project's own `public/images/styles/painted-americana-75.jpg` (the truck climbing into the foggy hollows), and the project's cover is `public/images/hangar/sheets/key-art.jpg`.
+
+## Refreshing a saved copy (7 October 2026)
+
+A copy already in a workspace is brought up to the current bundle every time it is read (`hangarUpdates` in `src/lib/hangar.ts`, run from `src/lib/projects.ts`). A field is replaced only when its saved value is still one the bundle shipped before; anything the owner wrote, any custom picture, and any frame or scene they added or deleted is left alone. The shipped values are kept as hashes in `src/lib/hangar-sync.json`. **Before changing the bundle, run `npm run sync:hangar`** (records the committed version), then `npm run build:hangar`; `verify:hangar` tests the refresh against the first shipped version.

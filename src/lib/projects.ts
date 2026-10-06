@@ -5,7 +5,7 @@ import { asc, eq } from "drizzle-orm";
 import { starterProjects } from "./seed";
 import { raptureProject } from "./rapture";
 import { neonoireProject } from "./neonoire";
-import { hangarProject } from "./hangar";
+import { hangarProject, hangarUpdates } from "./hangar";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
 import { bundledFrameUpdates } from "./bundle-refresh";
@@ -47,8 +47,8 @@ export async function openRaptureProject() {
 
 /** Delivered images and default-order migrations never replace a writer's screenplay or shot edits. */
 async function refreshNeonoireFrames(existing: FilmProject): Promise<FilmProject> {
-  if (existing.id !== neonoireProject.id) return existing;
-  const patch = bundledFrameUpdates(existing, neonoireProject);
+  const patch = existing.id === hangarProject.id ? hangarUpdates(existing)
+    : existing.id === neonoireProject.id ? bundledFrameUpdates(existing, neonoireProject) : null;
   if (!patch) return existing;
   const [row] = await db.update(filmProjects).set({ ...patch, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
   return row ? serialize(row) : existing;
