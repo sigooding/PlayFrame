@@ -1,7 +1,7 @@
 // npm run verify:hangar: the cold-open workspace's schema, ceilings, source fidelity and isolation.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
@@ -26,10 +26,18 @@ assert(project.frames.length <= MAX_FRAMES && project.scenes.length <= MAX_SCENE
 assert.equal(project.scenes.length, 8);
 assert.equal(project.frames.length, 39);
 assert.deepEqual(framesInSceneOrder(project.frames, project.scenes).map(f => f.id), project.frames.map(f => f.id), "frames are already in scene order");
-assert(project.frames.every(f => f.image === "" && f.status === "Needs review"), "no frame borrows a picture; each says it still needs one");
+for (const f of project.frames) {
+  assert(f.image.startsWith("/images/hangar/") && existsSync(join(root, "public", f.image.slice(1))), `shot ${f.shotNumber} keeps its painted board on disk under public/images/hangar/`);
+  assert.equal(f.status, "Draft", "every board lands as a draft for the director's review");
+}
+for (const c of project.characters) {
+  if (c.image) assert(existsSync(join(root, "public", c.image.slice(1))), `${c.id}'s continuity sheet is on disk`);
+}
+assert(existsSync(join(root, "public", project.coverImage.slice(1))), "the cover key art is on disk");
+assert(existsSync(join(root, "public/images/styles/painted-americana-75.jpg")), "the style picker example for Painted Americana '75 is on disk");
 assert(project.frames.every(f => project.scenes.some(s => s.id === f.sceneId)), "every frame belongs to a scene");
 assert.equal(new Set(project.frames.map(f => f.shotNumber)).size, project.frames.length, "shot numbers are unique");
-pass("8 scenes, 39 shots, in order, none with a borrowed picture");
+pass("8 scenes, 39 shots, in order, every board painted on disk under public/images/hangar/");
 
 const text = project.script;
 for (const word of ["alien", "robot", "UFO"]) {

@@ -441,11 +441,12 @@ export const VISUAL_STYLES: readonly VisualStyleEntry[] = [
     // Iron Giant mixed with Ghibli". Ghibli supplies the painted, layered, weather-heavy backgrounds;
     // The Iron Giant supplies the drawing of the people: plain, weighty, readable silhouettes in a
     // warm 1950s-70s Americana. Nothing here names or shows the thing in the crate, so the style
-    // serves the whole film, not just the open. Its example picture borrows the Ghibli one until a
-    // real example is painted.
+    // serves the whole film, not just the open. Its example picture is painted for this film (the
+    // truck climbing into the foggy hollows) and continuity sheets for its cast and vehicles live in
+    // public/images/hangar/ (docs/hangar/README.md).
     id: "hangar",
     name: "Painted Americana '75",
-    image: "/images/styles/ghibli.jpg",
+    image: "/images/styles/painted-americana-75.jpg",
     swatch: "linear-gradient(135deg,#1c2a4a,#3f6a86 45%,#e0a458)",
     summary: "Gouache-painted 1975 Ohio with hand-drawn, weighty characters: dashboard amber against blue night.",
     useFor: "Warm small-town Americana with an undercurrent of dread: back roads, kids, secrets, and something strange nobody can name.",
