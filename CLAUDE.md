@@ -1,5 +1,9 @@
 # PlayFrame
 
+## Standing rule for every agent: always merge into `main-restored`
+
+`main-restored` is the repository's default branch and the one the director reads. **Open every pull request with base `main-restored` and merge it there.** Do not merge into `main` (it is an older line that stopped receiving work on 7 October 2026). Use the designated session branch for the work, then PR it into `main-restored`.
+
 ## Standing rule for every agent: never overwrite an image
 
 The storyboard card's `⋯` chooser and **Browse all images** only work because every earlier picture still exists. So:
