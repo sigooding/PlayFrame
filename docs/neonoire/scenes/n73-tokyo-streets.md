@@ -4,7 +4,7 @@ The [screenplay page](../screenplay/n73-tokyo-streets-night.md) is unchanged.
 
 ## The run — retake of 71–73, 6 October 2026
 
-**Director: the run did not hit hard enough and read as random.** Shots 71, 72 and 73 were regenerated handheld and closer, with Vera's face sheet and the hotel master attached, and the screenplay now gives her a destination (the phone still lit with Ishida's call, the railway and the Hive beyond it) and a song under the rain instead of silence. Shot 74 (the lost heel) is unchanged on purpose: it is locked to the later shoe still life.
+**Director: the run did not hit hard enough and read as random.** Shots 71, 72 and 73 were regenerated handheld and closer, with Vera's face sheet and the hotel master attached, and the screenplay now gives her a destination (the phone still lit with Ishida's call, the railway and the Hive beyond it) and a song under the rain instead of silence. Shot 74 (the lost heel) is unchanged on purpose: it is locked to the later shoe still life. **Shot 73 (the machine, indifferent) is retired the same day** — the director found the retaken frame read as an athlete running; its number is not reused and its image `s73/71-the-machine-glows.jpg` stays on disk with its three archived predecessors (the vending-machine sentence stays in the screenplay as action text). Nothing is renumbered.
 
 ## Tokyo Story in colour — 25 September 2026
 
@@ -35,16 +35,6 @@ TIME: 14
 ID: neonoire-shot-70
 IMAGE: 70-not-elegantly-badly.jpg
 NOTE: RETAKE 6 October 2026 — face-led instead of a small figure crossing a static frame, so the audience feels the breath. Generated with the Vera face sheet and the hotel master attached. Predecessor kept at `archive/s73/70-not-elegantly-badly--v3.jpg`.
-
-73. WIDE — 35mm, handheld, low level — the machine, indifferent.
-The ivory vending machine glows cold white under the riveted railway beams, rain falling through its light in columns, razor sharp, on the LEFT. Vera sprints past it to the RIGHT as a streak of red and white, blurred by speed, face forward, heading for the railway beyond; the machine does not matter to her.
-SCRIPT: "She runs past a vending machine. It glows, indifferent. She keeps going; the machine falls behind her."
-CAST: Vera Voss
-LIGHT: Practical night
-TIME: 8
-ID: neonoire-shot-71
-IMAGE: 71-the-machine-glows.jpg
-NOTE: RETAKE 6 October 2026 — keeps the route LEFT TO RIGHT with the machine behind her (director correction of 1 October still holds). Predecessor kept at `archive/s73/71-the-machine-glows--v3.jpg`. CAVEAT: one bare foot already reads here, a beat before the shoe comes off in 74 — a retake candidate if the order matters on screen.
 
 74. FULL — 50mm, static, low level — one shoe left behind.
 A fixed low level camera at 35cm holds the shallow gutter puddle as Vera stumbles away toward the crossing. Her RIGHT red closed-toe court shoe lies on its side in the foreground, toe left and heel right, beside a rectangular drain grate under the ivory vending machine's light. Her RIGHT foot is now bare; LEFT shoe remains. Same wet calf-length wine-red silk dress and soaked shoulder-length blonde hair. She runs on, leaving the shoe and the frame behind.

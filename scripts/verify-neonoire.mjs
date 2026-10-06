@@ -81,14 +81,14 @@ const boardedIds = new Set(project.frames.map(frame => frame.sceneId));
 assert.equal(boardedIds.size, 103, "Every scene of the revised screenplay and the seven inserted scenes are boarded; no board survives for a retired scene");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.description.startsWith("WRITTEN, NOT BOARDED")), "Unboarded scenes say honestly that the board has not reached them");
 assert(project.scenes.filter(scene => !boardedIds.has(scene.id)).every(scene => scene.partId === "neonoire-part-feature"), "Unboarded scenes hang together in one sequence");
-const EXPECTED_SHOTS = 361;
+const EXPECTED_SHOTS = 360;
 const shotNo = frame => Number(String(frame.id).replace("neonoire-shot-", ""));
 // 30 September 2026: the revision's boards (308–320) sit with their scenes but join none of the
 // earlier generation blocks; the audits below read those blocks' pre-revision runs. The same
 // filter keeps the 2 October slots (321–343) and every 4 October coverage frame (the long-hold
 // passes' 344–363, the relief pass' 364–368 and second pass' 369–376) out of those blocks' scene-group sets.
 const revisionBoards = f => shotNo(f) >= 308;
-assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 361 numbered shots (322 before the 4 October passes, plus twenty long-hold frames 344–363, five relief frames 364–368, and eight coverage frames 369–376)");
+assert.equal(project.frames.length, EXPECTED_SHOTS, "The restored screenplay carries 360 numbered shots (361 allocated, shot 73 retired on 6 October 2026) (322 before the 4 October passes, plus twenty long-hold frames 344–363, five relief frames 364–368, and eight coverage frames 369–376)");
 assert.equal(project.characters.length, 19, "Nineteen cast cards after the revision added Vera's mother");
 assert(project.scenes.every(scene => scene.style === "neonoire"), "Every scene is lit and generated in the studio brief's own look");
 assert(project.frames.every(frame => frame.style === "neonoire"), "Every frame carries the Neo-Noir Tokyo style, so prompts use the brief automatically");
@@ -267,19 +267,19 @@ pass("kanda alley layout: the sedan blocks the mouth, the six frames retaken, th
 // pending replacements plus the lost-heel and twenty-metre continuity replacements, eight calls)
 // together complete every keyframe. The old street studies stay retired either way.
 const streets = generationFrames.filter(frame => ["neonoire-s72", "neonoire-s73", "neonoire-s74", "neonoire-s75"].includes(frame.sceneId) && !revisionBoards(frame));
-assert.equal(streets.length, 15, "Two lounge, four run, four confrontation and five pillow shots");
-assert.equal(streets.filter(f => f.image).length, 15, "Both sessions delivered: no placeholder slots remain in scenes 72–75");
+assert.equal(streets.length, 14, "Two lounge, three run (the vending-machine frame retired 6 October), four confrontation and five pillow shots");
+assert.equal(streets.filter(f => f.image).length, 14, "Both sessions delivered: no placeholder slots remain in scenes 72–75");
 assert.equal(streetsPassOneImages.length, 10, "The session-one budget includes Jack's sheet");
 assert.equal(new Set(streetsPassOneImages).size, 10);
 assert.equal(streetsPassTwoImages.length, 8, "Session two: six needed shots plus two continuity replacements, two slots held back");
 assert.equal(new Set(streetsPassTwoImages).size, 8);
 for (const image of [...streetsPassOneImages, ...streetsPassTwoImages]) assert.deepEqual(jpegDimensions(image), [1920, 1080], `${image}: native delivery must be 16:9`);
-const deliveredStreetImages = new Set([...streetsPassOneImages, ...streetsPassTwoImages].filter(image => !image.includes("/sheets/")));
+const deliveredStreetImages = new Set([...streetsPassOneImages, ...streetsPassTwoImages].filter(image => !image.includes("/sheets/") && !image.includes("s73/71-the-machine-glows")));
 assert.deepEqual(new Set(streets.map(f => f.image)), deliveredStreetImages, "Every completed frame is a replacement from this revision, not a legacy study");
 assert(!streets.some(f => f.notes.includes("REPLACEMENT PENDING")), "No pending street replacement remains");
 // 6 October 2026 (director): the run — shots 71–73 (ids 69–71) — was retaken handheld and closer, so the locked-off grammar
 // below no longer binds them; the lost heel (74) keeps it because it is locked to the shot 79 still life.
-const runRetake = new Set(["neonoire-shot-69", "neonoire-shot-70", "neonoire-shot-71"]);
+const runRetake = new Set(["neonoire-shot-69", "neonoire-shot-70"]);
 for (const frame of streets) {
   if (runRetake.has(frame.id)) {
     assert.equal(frame.movement, "Handheld", `${frame.title}: the retaken run is handheld`);
@@ -312,14 +312,14 @@ assert.deepEqual(wide.characters, ["neonoire-vera", "neonoire-jack"], "Tiny figu
 assert(project.frames.find(f => f.id === "neonoire-shot-75").description.includes("rejection"), "Do not board only the blow and omit the collapse/rejection");
 assert(/same puddle, same shoe/i.test(project.frames.find(f => f.id === "neonoire-shot-77").notes));
 assert(streets.filter(f => f.sceneId === "neonoire-s75").every(f => !f.characters.length), "Pillow shots have no cast, including reflections");
-assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 16));
+assert(project.moodboards.some(b => b.id === "neonoire-look-tokyo-story" && b.items.length === 15));
 const aftermath = generationFrames.filter(f => f.sceneId === "neonoire-s76" && !revisionBoards(f));
 assert.deepEqual(aftermath.map(f => f.id), ["neonoire-shot-82", "neonoire-shot-83", "neonoire-shot-84"], "Scene 76 stable identities remain unchanged");
 for (const frame of aftermath) {
   assert.deepEqual(jpegDimensions(frame.image), [1920, 1080]);
   assert(frame.notes.includes("Scene 76 is unchanged"));
 }
-for (let n = 1; n <= 84; n++) { if ([8, 11].includes(n)) continue; assert(project.frames.some(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`), `Existing frame identity ${n} must survive the inserted scene 72 (8 and 11 retired by the 30 September revision alone)`); }
+for (let n = 1; n <= 84; n++) { if ([8, 11, 71].includes(n)) continue; assert(project.frames.some(f => f.id === `neonoire-shot-${String(n).padStart(2, "0")}`), `Existing frame identity ${n} must survive the inserted scene 72 (8 and 11 retired by the 30 September revision, 71 by the 6 October run retake)`); }
 // Scenes 77–79: first boarding, nine shots, with Jack recast as a white American in the same session.
 const dawn = generationFrames.filter(frame => ["neonoire-s77", "neonoire-s78", "neonoire-s79"].includes(frame.sceneId) && shotNo(frame) <= 95);
 assert.equal(dawn.length, 9, "Three office, three corridor and three apartment shots");
@@ -1106,7 +1106,8 @@ for (const [i, frame] of project.frames.entries()) {
   assert(Number.isInteger(labels[i]) && labels[i] >= 1 && labels[i] <= 382, `${frame.id} should retain its stable production number`);
   assert(frame.notes.includes(`Pass ${Math.ceil(labels[i] / 10)} of ${Math.ceil(Math.max(...labels) / 10)}`), `${frame.id} should name its pass`);
 }
-assert.deepEqual(new Set(labels), new Set(project.frames.map(shotNo)), "Every production label maps to exactly one card, and every card to one label");
+// Shot 73 (id 71, the vending machine) was retired 6 October, so id 71 is gone while production number 71 remains with id 69.
+assert.deepEqual(new Set(labels), new Set(project.frames.map(shotNo).map(n => n === 73 ? 71 : n)), "Every production label maps to exactly one card, and every card to one label");
 pass("generation passes run ten production numbers at a time, independent of scene-order playback");
 
 // ---------------------------------------------------------------- cast, sheets and continuity
