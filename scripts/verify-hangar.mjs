@@ -91,3 +91,15 @@ assert.notEqual(project.id, neonoire.id);
 assert(!project.script.includes("Nobody's Witness") && !JSON.stringify(project).includes("/images/neonoire/"), "nothing leaks across from the other project");
 pass("isolated from Nobody's Witness: its images, ids and script are untouched");
 console.log("\nAll cold-open checks passed.");
+
+// Review fixes (7 October 2026): the descriptions that stop the next pass repeating the first pass's mistakes.
+{
+  const framesText = number => project.frames[number - 1].notes;
+  assert(/LEFT/.test(framesText(12)) && /LEFT/.test(framesText(14)), "the US truck's driver sits on the left");
+  assert(/head-on/.test(framesText(18)) && /alone/.test(framesText(18)), "the swerve is head-on and the nurse is alone");
+  assert(/No limbs, fur, head or tail/.test(framesText(32)), "the hollow is only a dent, never a body");
+  assert(/never a flashlight/.test(framesText(34)) && /never a flashlight/.test(framesText(36)), "the marks are lit by a flare");
+  assert(/reversed up to the doors/.test(framesText(4)), "the truck is backed to the hangar door");
+  assert(/red band/.test(framesText(28)) && /round chrome/.test(framesText(28)), "the cap and mirror are named exactly");
+  assert(project.scenes.slice(2).every(scene => /hardwood/.test(scene.description)), "the outdoor scenes say Ohio hardwoods in leaf");
+}
