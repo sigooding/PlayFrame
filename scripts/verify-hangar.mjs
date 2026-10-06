@@ -1,7 +1,7 @@
 // npm run verify:hangar: the cold-open workspace's schema, ceilings, source fidelity and isolation.
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
@@ -26,10 +26,16 @@ assert(project.frames.length <= MAX_FRAMES && project.scenes.length <= MAX_SCENE
 assert.equal(project.scenes.length, 8);
 assert.equal(project.frames.length, 39);
 assert.deepEqual(framesInSceneOrder(project.frames, project.scenes).map(f => f.id), project.frames.map(f => f.id), "frames are already in scene order");
-assert(project.frames.every(f => f.image === "" && f.status === "Needs review"), "no frame borrows a picture; each says it still needs one");
+// A frame either has this project's own picture (and is a Draft) or has none and says so.
+const withPictures = project.frames.filter(f => f.image !== "");
+assert(withPictures.every(f => f.image.startsWith("/images/hangar/") && f.status === "Draft"), "every delivered picture is this project's own and is marked Draft");
+assert(withPictures.every(f => existsSync(join(root, "public", f.image.slice(1)))), "every delivered picture exists on disk");
+assert(project.frames.every(f => f.image !== "" || f.status === "Needs review"), "a frame without a picture says it still needs one");
+assert.equal(withPictures.length, 10, "10 keyframes delivered (shots 4-13)");
+assert(project.frames.slice(0, 3).every(f => f.image === "" && /held black/.test(f.notes)), "the 1944 radio shots stay black by design");
 assert(project.frames.every(f => project.scenes.some(s => s.id === f.sceneId)), "every frame belongs to a scene");
 assert.equal(new Set(project.frames.map(f => f.shotNumber)).size, project.frames.length, "shot numbers are unique");
-pass("8 scenes, 39 shots, in order, none with a borrowed picture");
+pass(`8 scenes, 39 shots, in order, ${withPictures.length} carrying this workspace's own draft keyframes`);
 
 const text = project.script;
 for (const word of ["alien", "robot", "UFO"]) {
