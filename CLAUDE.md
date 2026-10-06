@@ -14,6 +14,8 @@ The storyboard card's `⋯` chooser and **Browse all images** only work because 
 
 **Shot 73 (the vending-machine frame, id `neonoire-shot-71`) is retired — number not reused, image stays on disk. Shots 14, 17, 18 were retaken to one lane layout (barbershop left, vending machine right, bar at the far end, sedan gone after 13; earlier versions archived). New: 383 (empty lane), 384–386 (Vera in her apartment), 387–388 (Vera's run in the red dress). 366/366 images, next free number 389.** Read the bible's Part 9 item 19 (open calls listed there) and the top of `docs/neonoire/handoff.md`.
 
+**Later the same day: the car scene audit (bible item 20): 333 retaken; 10, 12, 13 still show the wrong lane, a second car, a third man and Mara in view — retake them once the ElevenLabs credits are topped up.**
+
 ## Previous session — 5 October 2026: the prologue, shot 377
 
 **Scene 1 now opens on `.INSERT - THE HIVE, REMEMBERED`: five `KANEKO (V.O.)` paragraphs (English narration) over new shot 377 (`s1/377-the-hive-remembered.jpg`, a new file, nothing overwritten). 356/356 images, next free number 378.** Read the bible's Part 9 item 18 and the top of `docs/neonoire/handoff.md`. A pre-prologue script hash was appended by hand to `neonoire-scene6-sync.json` (never re-run `sync-scene6.mjs`).
