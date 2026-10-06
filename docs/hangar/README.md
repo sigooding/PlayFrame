@@ -3,7 +3,7 @@
 A second bundled project, separate from Nobody's Witness. Open it from **Templates → "Untitled: the cold open"**; it adds itself once and never overwrites your edits.
 
 - **Source:** `docs/hangar/cold-open.fountain` is the screenplay. `npm run build:hangar` regenerates `public/projects/hangar-cold-open.json` from it (every shot's script quote must exist in the pages); `npm run verify:hangar` checks the bundle.
-- **Contents:** 8 scenes, 39 shots, 7 cast cards, notes (the look, the seeds, the rules, the open questions) and brainstorm cards. **20 of the 39 shots now carry their own draft keyframes** (shots 4-23, the hangar through the fall); the rest still hold their slot and say they need review. Nothing is borrowed from Nobody's Witness.
+- **Contents:** 8 scenes, 39 shots, 7 cast cards, notes (the look, the seeds, the rules, the open questions) and brainstorm cards. **27 of the 39 shots now carry their own draft keyframes** (shots 4-30, the hangar through the walk down the bank); the rest still hold their slot and say they need review. Nothing is borrowed from Nobody's Witness.
 - **Rules from the brief:** nobody says alien, robot or UFO; flares, never flashlight beams; one recording of "three quick, one slow" used in 1944, in the trailer and in the woods; never show what the pilot shot or what was in the crate.
 - **Open:** the title; the number of uncrossed marks (the film's clock); why it moves now; whether the airman crosses sides; whether the sergeant is the old pilot.
 - **Image rule:** the project's own pictures will live under `public/images/hangar/`. The never-overwrite, archive and `verify:images` rules in `CLAUDE.md` apply to them from the first picture.
@@ -35,4 +35,22 @@ Ten more generations, shots **14-23** in screenplay order: **14** the knee tappe
 - Same rules as pass 1: 1920x1080 16:9, `public/images/hangar/s3|s4|s5/`, Draft, generated from the script and the card alone.
 - **21 keeps the promise:** the open doors show darkness only; nothing in the trailer is drawn, so the skid and something inside stay equally possible.
 - Contact sheet: `public/images/hangar/reviews/swerve-2026-10-07.jpg`.
-- Next: shots 24-33 (inside the crate, the creek, the taillights, the flares, the cap on the asphalt, down through red fog).
+
+## Third pass: a continuity review, the creek and the flares (7 October 2026)
+
+The first twenty frames were reviewed against each other before anything new was drawn. Three breaks, all retaken in place with the first study archived to `public/images/hangar/archive/<scene>/<name>--v1.jpg`:
+
+| Shot | Break | Fix |
+| --- | --- | --- |
+| 10 | A tarped flatbed, but 20-22 are an enclosed dry van and the script needs rear doors that burst open | Redrawn as the ribbed dry van with hinged rear doors |
+| 17 | The nurse wore no cap, yet 19 has her cap fly out of the window | Redrawn with the white starched cap pinned on |
+| 23 | The crate tumbled as an open slatted box | Redrawn as shot 6's sealed, steel-banded plank crate |
+
+What the review found holding: the amber/crimson/blue-night light logic, the same two faces across 12/13/14, the guard booth in both 4 and 5, the stencil, and 21 showing only darkness behind the doors.
+
+Then seven new frames, **24-30**: inside the tumbling crate (light through the cracks and nothing else), the crate at rest in the creek, the taillights going round the bend, the flares and the sedan, the hand closing on the white cap, "Where is it?", and the walk down through red fog.
+
+- Known caveats, honest and small: **24** is deliberately near-abstract; **28**'s mirror glass reads rounder than the square mirror in **19**; the nurse's hair reads darker in the 17 retake than in its archived v1.
+- Flares only — no flashlight beams anywhere in scene 6, as the rules note requires.
+- Contact sheet: `public/images/hangar/reviews/creek-and-flares-2026-10-07.jpg`.
+- Remaining: **31-39** (the empty crate, the hollow in the straw, INERT in the water, the rows of marks, the newest stroke, the far corner, far off in the woods, only the airman hears, the flare sputtering out).

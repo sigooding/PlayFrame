@@ -151,7 +151,18 @@ const images = {
   21: "s4/21-the-missing-knock.jpg",
   22: "s4/22-over-the-edge.jpg",
   23: "s5/23-down-the-bank.jpg",
+  // Third pass, 7 October 2026: the creek and topside (24-30), plus continuity retakes of
+  // 10 (dry van, not a tarped flatbed), 17 (she is wearing the cap she loses) and 23 (the
+  // sealed banded crate of shot 6, not a slatted one). The v1 studies are archived.
+  24: "s5/24-inside-the-crate.jpg",
+  25: "s5/25-by-the-creek.jpg",
+  26: "s6/26-taillights.jpg",
+  27: "s6/27-road-flares.jpg",
+  28: "s6/28-the-white-cap.jpg",
+  29: "s6/29-where-is-it.jpg",
+  30: "s6/30-down-through-red-fog.jpg",
 };
+const RETAKEN = new Set([10, 17, 23]);
 const BLACK_FRAMES = new Set([1, 2, 3]); // the 1944 radio: held black, no picture is ever made
 
 // [scene, title, description, shotType, movement, angle, lens, lighting, seconds, cast, script quote]
@@ -200,7 +211,7 @@ const shots = [
   const [mood, lightingNotes, framing, sound, transition] = details[i];
   const asset = images[i + 1];
   const picture = asset
-    ? `Draft study, picture pass ${i + 1 <= 13 ? 1 : 2} (7 October 2026), 16:9 full-bleed 1920x1080, generated from the screenplay and this card alone.`
+    ? `Draft study, picture pass ${i + 1 <= 13 ? 1 : i + 1 <= 23 ? 2 : 3} (7 October 2026), 16:9 full-bleed 1920x1080, generated from the screenplay and this card alone.${RETAKEN.has(i + 1) ? " Continuity retake; the first study is archived under public/images/hangar/archive/." : ""}`
     : BLACK_FRAMES.has(i + 1)
       ? "No picture, by design: the screen is held black for this shot."
       : "No picture yet: this card holds the shot's slot.";
