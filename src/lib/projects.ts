@@ -5,7 +5,7 @@ import { asc, eq } from "drizzle-orm";
 import { starterProjects } from "./seed";
 import { raptureProject } from "./rapture";
 import { neonoireProject } from "./neonoire";
-import { hangarProject } from "./hangar";
+import { deliveredHangarImageUpdates, hangarProject } from "./hangar";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
 import { bundledFrameUpdates } from "./bundle-refresh";
@@ -24,7 +24,7 @@ export async function listProjects() {
     }
     rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
   }
-  return Promise.all(rows.map(row => refreshNeonoireFrames(serialize(row))));
+  return Promise.all(rows.map(row => refreshBundledProject(serialize(row))));
 }
 
 /** Opt-in workspace for the animated cold open; never replaces edits (the second insert is a no-op). */
@@ -54,6 +54,19 @@ async function refreshNeonoireFrames(existing: FilmProject): Promise<FilmProject
   return row ? serialize(row) : existing;
 }
 
+/** Add newly delivered Hangar pictures only to untouched missing-image cards; custom work survives. */
+async function refreshHangarImages(existing: FilmProject): Promise<FilmProject> {
+  if (existing.id !== hangarProject.id) return existing;
+  const patch = deliveredHangarImageUpdates(existing);
+  if (!patch) return existing;
+  const [row] = await db.update(filmProjects).set({ ...patch, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
+  return row ? serialize(row) : existing;
+}
+
+async function refreshBundledProject(existing: FilmProject): Promise<FilmProject> {
+  return refreshNeonoireFrames(await refreshHangarImages(existing));
+}
+
 /** Opt-in workspace; subsequent reads fill untouched placeholders and migrate only the old default order. */
 export async function openNeonoireProject() {
   await ensureSchema();
@@ -66,14 +79,14 @@ export async function openNeonoireProject() {
 export async function getProject(id: string) {
   await ensureSchema();
   const [row] = await db.select().from(filmProjects).where(eq(filmProjects.id, id)).limit(1);
-  return row ? refreshNeonoireFrames(serialize(row)) : null;
+  return row ? refreshBundledProject(serialize(row)) : null;
 }
 
 export async function getSharedProject(token: string) {
   await ensureSchema();
   if (!/^[0-9a-f-]{36}$/i.test(token)) return null;
   const [row] = await db.select().from(filmProjects).where(eq(filmProjects.shareId, token)).limit(1);
-  return row ? refreshNeonoireFrames(serialize(row)) : null;
+  return row ? refreshBundledProject(serialize(row)) : null;
 }
 
 export async function createProject(input: { title: string; description?: string; genre?: string; format?: string; template?: string }) {

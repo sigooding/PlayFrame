@@ -4,10 +4,10 @@
 //   node scripts/hangar/build-project.mjs --check   fail if the bundle has drifted
 //
 // The screenplay is the single source: the Screenplay tab carries it byte for byte, and every
-// shot's script quote has to be found in it. The pictures do not exist yet, so every frame's
-// image is "" and its status is Needs review; nothing here borrows a picture from another project.
+// shot's script quote has to be found in it. Delivered art is discovered by its stable shot filename
+// under public/images/hangar/; untouched slots stay empty, and every image remains Needs review.
 import assert from "node:assert/strict";
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,8 +17,17 @@ const script = readFileSync(resolve(root, "docs/hangar/cold-open.fountain"), "ut
 const createdAt = "2026-10-07T00:00:00.000Z";
 export const projectId = "74a9cb34-9e80-4a04-a614-000000000070";
 const ACT = "hangar-act-cold-open";
-// The house style (src/lib/styles.ts): painted gouache Ohio, hand-drawn characters with weight.
+// The reusable house style (src/lib/styles.ts): painted backgrounds, grounded hand-drawn characters.
 const STYLE = "hangar";
+const BLACK_FRAME_IMAGE = "/images/hangar/shot-01-03-black.png";
+const PENDING_IMAGE_NOTE = "No picture yet: this card holds the shot's slot.";
+
+function shotImage(number) {
+  const candidate = number <= 3
+    ? BLACK_FRAME_IMAGE
+    : `/images/hangar/shot-${String(number).padStart(2, "0")}.jpg`;
+  return existsSync(resolve(root, "public", candidate.slice(1))) ? candidate : "";
+}
 
 const cast = [
   ["red-two", "Red Two", "Pilot (voice)", "1944", "A fighter pilot over Europe, heard and never seen. He sounds amazed, not scared. He does not want to fire.", ["Amazed", "Obedient"], "sand"],
@@ -167,28 +176,37 @@ const shots = [
   ["8", "Only the airman hears", "The agents don't notice. The airman does, his lips moving: \"One-two-three... four.\"", "Close-up", "Static", "Eye level", "85mm", "Practical night", 7, ["airman"], "The agents don't notice. The Airman does."],
   ["8", "The flare sputters out", "The flare dies. Cut to black, then the title.", "Extreme close-up", "Static", "Eye level", "85mm", "Low key", 6, [], "The flare sputters out."],
 ].map(([scene, title, description, shotType, movement, angle, lens, lighting, duration, chars, quote], i) => {
-  assert(script.includes(quote), `shot ${i + 1} (${title}): script quote not found: ${quote}`);
+  const number = i + 1;
+  assert(script.includes(quote), `shot ${number} (${title}): script quote not found: ${quote}`);
   const [mood, lightingNotes, framing, sound, transition] = details[i];
+  const image = shotImage(number);
+  const imageGuidance = image
+    ? number <= 3
+      ? "This full-black image is intentional; sound and pacing carry the beat."
+      : "An illustrated study is attached; keep it Needs review until composition and continuity are approved."
+    : PENDING_IMAGE_NOTE;
   return {
-    id: `hangar-shot-${String(i + 1).padStart(2, "0")}`, shotNumber: i + 1, sceneId: sceneOf(scene), title, description,
-    image: "", shotType, movement, angle, lens, lighting, lightingNotes, style: STYLE, mood, duration, durationIsEstimate: true,
+    id: `hangar-shot-${String(number).padStart(2, "0")}`, shotNumber: number, sceneId: sceneOf(scene), title, description,
+    image, shotType, movement, angle, lens, lighting, lightingNotes, style: STYLE, mood, duration, durationIsEstimate: true,
     status: "Needs review", transition, characters: who(...chars),
     // Order matters to the video prompts: the first line that mentions sound becomes the soundscape, and
     // lines of the form NAME: words are read as dialogue, so the labels here are mixed case on purpose.
     notes: [
       `Sound: ${sound}`,
       `Framing: ${framing}`,
-      ...(cues[i + 1] || []),
+      ...(cues[number] || []),
       `Script: "${quote}"`,
       "",
-      "Style: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described.",
+      `Style: Painted Americana '75 (layered gouache backgrounds, grounded hand-drawn characters, warm practical light against blue night). ${imageGuidance} The thing in the crate is never named, shown or described.`,
     ].join("\n"),
   };
 });
 assert.equal(details.length, shots.length, "one set of details per shot");
+const picturedCount = shots.filter(frame => frame.image).length;
+const pendingCount = shots.length - picturedCount;
 
 const notes = [
-  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " shots with no pictures yet. Acts one to three come next.", ["Read first"]],
+  ["start-here", "Start here: what this is", `Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has ${shots.length} shots, ${picturedCount} with images and ${pendingCount} awaiting a study. Acts one to three come next.`, ["Read first"]],
   ["look", "The look: Painted Americana '75", "Painted, not photographed: warm dashboard amber against deep blue night, gouache fog in the hollows, soft hand-painted skies. Characters are drawn plainly and with weight, with strong silhouettes and believable acting, in the manner of 1950s to 1970s American animation (wood paneling, station wagons, diner chrome, AM radios).\n\nThe Iron Giant for the people, Studio Ghibli for the places. People and vehicles have real mass: no squash and stretch, no cartoon takes; motion is drawn with smears, not blur. Backgrounds are layered multiplane paintings with atmosphere in every layer: fog, cloud, wet leaves, weathered paint. Light always comes from something in the world: dashboard amber, hangar sodium, road-flare crimson, moon blue. Gentle film grain, soft halation on lamps, 16:9 full-bleed. The camera is patient and leaves room for silence. It is the house style 'Painted Americana '75' in every shot's style picker, and every scene and shot in this workspace already carries it.", ["Look", "Style"]],
   ["seeds", "Seeds the cold open plants", "1. The nurse's cap and the snapped-off mirror lead the agents and the detective to the boy's house by different routes.\n2. The rhythm (three quick, one slow) ties the airman, the pilot and the machine together before any character notices.\n3. The uncrossed marks in the dark corner are the act-two flip: it was not counting days served, it was counting days left. Decide the exact number now; it sets the length of the film's clock.\n4. The coffee ring leaves an open question: did the sergeant know it was awake?\n5. The airman is the only one who hears the clicks at the end: he is the government's way in to the boy, and the audience's.", ["Plot", "Setups"]],
   ["rules", "Rules and sound", "Nobody says alien, robot or UFO. Flares, not flashlight beams, outdoors. One recording of the three-quick-one-slow rhythm, used in 1944, in the trailer and in the woods. Never show what the pilot shot; never show what is in the crate. The 1975 setting is deliberate: Church Committee, post-Watergate paranoia, Blue Book already closed.", ["Rules", "Sound"]],
@@ -206,11 +224,11 @@ const brainstorm = [
 const project = {
   id: projectId,
   title: "Untitled (working title): the cold open",
-  description: "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, " + scenes.length + " scenes, " + shots.length + " shots, almost no dialogue, in the house style Painted Americana '75. No pictures yet.",
+  description: `The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, ${scenes.length} scenes and ${shots.length} shots in the reusable Painted Americana '75 house style; ${picturedCount}/${shots.length} frames illustrated and awaiting review.`,
   genre: "Animated mystery",
   format: "Feature",
   status: "In development",
-  coverImage: "",
+  coverImage: shotImage(4),
   acts: [{ id: ACT, title: "Cold open: 1944 to the creek", description: "A pilot, a hangar, a truck, a swerve, a fall and an empty crate. Nobody says what it is." }],
   scenes, frames: shots, characters: cast, notes, brainstorm, moodboards: [], script,
   shareId: null, createdAt, updatedAt: createdAt,

@@ -1,9 +1,9 @@
 // Guards the image history the storyboard's chooser and "Browse all images" show. Compares the working tree with a base
 // ref (default origin/main; set IMAGE_GUARD_BASE) and fails if any picture was lost:
-//   1. a shot image under public/images/neonoire that was changed or deleted must have its old bytes kept in
-//      public/images/neonoire/archive/<folder>/<name>--vN.<ext>
-//   2. nothing already in archive/ may be changed or deleted (it is append-only)
-//   3. library.json may not drop an image the base listed
+//   1. a shot image under public/images/neonoire or public/images/hangar that was changed or deleted must have its old
+//      bytes kept under that project's archive/<folder>/<name>--vN.<ext>
+//   2. nothing already in either archive/ may be changed or deleted (archives are append-only)
+//   3. the NEONOIRE library.json may not drop an image the base listed
 // New files are always fine. Run it before every handoff and push:  npm run verify:images
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -20,7 +20,7 @@ const sha = buf => createHash("sha256").update(buf).digest("hex");
 const isImage = p => /\.(jpe?g|png|webp)$/i.test(p);
 const changed = git("diff", "--name-status", "--no-renames", base, "--", IMG).toString().split("\n").filter(Boolean)
   .map(line => { const [status, path] = line.split("\t"); return { status, path }; });
-// Untracked/uncommitted files count too: diff against the working tree, plus new files are ignored by design.
+// Uncommitted edits to tracked files count; newly added files are ignored by design.
 const problems = [];
 
 const archiveHashes = new Set();
@@ -38,6 +38,25 @@ for (const { status, path } of changed) {
   }
 }
 
+// Hangar artwork is also append-only. Its image library is the project JSON, so only file history
+// (not a separate manifest) needs protecting here.
+const HANGAR = "public/images/hangar/", HANGAR_ARCHIVE = `${HANGAR}archive/`;
+const hangarArchiveHashes = new Set();
+for (const file of walk(HANGAR_ARCHIVE)) if (isImage(file)) hangarArchiveHashes.add(sha(readFileSync(file)));
+const changedHangar = git("diff", "--name-status", "--no-renames", base, "--", HANGAR).toString().split("\n").filter(Boolean)
+  .map(line => { const [status, path] = line.split("\t"); return { status, path }; });
+for (const { status, path } of changedHangar) {
+  if (!isImage(path)) continue;
+  if (status === "A") continue;
+  if (path.startsWith(HANGAR_ARCHIVE)) { problems.push(`${status === "D" ? "deleted" : "changed"} archived Hangar image ${path} — the archive is append-only`); continue; }
+  const old = git("show", `${base}:${path}`);
+  if (!hangarArchiveHashes.has(sha(old))) {
+    const folder = dirname(path).slice(HANGAR.length), stem = basename(path, extname(path));
+    const archivePath = `${HANGAR_ARCHIVE}${folder ? `${folder}/` : ""}${stem}--v<N>${extname(path)}`;
+    problems.push(`${status === "D" ? "deleted" : "overwrote"} ${path} without archiving it — copy the old file to ${archivePath} first`);
+  }
+}
+
 try {
   const lib = path => new Set(JSON.parse(path).images.map(i => i.src));
   const before = lib(git("show", `${base}:${IMG}library.json`).toString());
@@ -51,4 +70,4 @@ if (problems.length) {
   for (const p of problems) console.error(`  FAIL  ${p}`);
   process.exit(1);
 }
-console.log(`  PASS  no image overwritten or deleted without an archived copy; archive untouched; library.json lost nothing (vs ${base}, ${changed.length} image path(s) differ)`);
+console.log(`  PASS  no NEONOIRE or Hangar image overwritten or deleted without an archived copy; archives untouched; NEONOIRE library.json lost nothing (vs ${base}, ${changed.length} NEONOIRE and ${changedHangar.length} Hangar image path(s) differ)`);

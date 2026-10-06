@@ -437,23 +437,20 @@ export const VISUAL_STYLES: readonly VisualStyleEntry[] = [
     negative: "lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style",
   },
   {
-    // Written for the animated cold open (docs/hangar): the director's brief was "something like the
-    // Iron Giant mixed with Ghibli". Ghibli supplies the painted, layered, weather-heavy backgrounds;
-    // The Iron Giant supplies the drawing of the people: plain, weighty, readable silhouettes in a
-    // warm 1950s-70s Americana. Nothing here names or shows the thing in the crate, so the style
-    // serves the whole film, not just the open. Its example picture borrows the Ghibli one until a
-    // real example is painted.
+    // A reusable house look introduced with the animated cold open (docs/hangar/style-guide.md).
+    // Painted period-Americana environments and plainly drawn characters share a tactile, grounded
+    // 2D finish. The sample is original Painted Americana '75 key art, not a borrowed style tile.
     id: "hangar",
     name: "Painted Americana '75",
-    image: "/images/styles/ghibli.jpg",
+    image: "/images/styles/painted-americana-75.jpg",
     swatch: "linear-gradient(135deg,#1c2a4a,#3f6a86 45%,#e0a458)",
-    summary: "Gouache-painted 1975 Ohio with hand-drawn, weighty characters: dashboard amber against blue night.",
-    useFor: "Warm small-town Americana with an undercurrent of dread: back roads, kids, secrets, and something strange nobody can name.",
-    prompt: "hand-drawn 2D feature animation, 16:9 full-bleed widescreen, small-town Ohio in 1975 painted in luminous gouache backgrounds with Studio Ghibli's layered atmosphere (soft hand-painted fog in the hollows, cloud banks, wet foliage, lived-in weathered detail), populated by characters drawn plainly with Iron Giant-era weight and strong readable silhouettes (confident clean line, flat cel colour with one soft shadow tone, believable acting, no exaggerated cartoon takes). Period Americana: wood paneling, station wagons, diner chrome, AM radios, chunky trucks, hand-lettered signs. Warm practical light (dashboard amber, hangar sodium lamps, road-flare crimson) set against deep blue night, a restrained palette of ambers, teals and blue-blacks, gentle film grain and soft halation. Quiet wonder with an undercurrent of dread, a patient camera that leaves room for silence, nothing strange ever explained or named",
-    finish: "hand-painted gouache backgrounds with Ghibli-style atmospheric depth, clean cel-shaded 2D characters in the Iron Giant manner, painterly fog and weather, soft halation on practical lights, subtle film grain, 16:9 full-bleed, no CGI sheen",
+    summary: "Layered gouache worlds, weighty hand-drawn characters, and warm practical light against blue night.",
+    useFor: "Period Americana, rural mysteries, nostalgic coming-of-age, and quietly fantastical worlds.",
+    prompt: "hand-drawn 2D feature animation, 16:9 full-bleed widescreen, luminous gouache-painted backgrounds with layered atmospheric depth (soft fog, painted cloud banks, tactile foliage, lived-in weathered detail), populated by plainly drawn characters with grounded weight, strong readable silhouettes, confident clean contours, flat cel color with one soft shadow tone, believable acting, and no exaggerated cartoon takes. Period Americana details when appropriate: wood paneling, station wagons, diner chrome, AM radios, chunky trucks, hand-lettered signs. Warm practical light set against cool blue shadows, a restrained palette of amber, teal, pine and blue-black, gentle film grain and soft halation around real light sources. Quiet wonder with an undercurrent of unease; patient compositions that leave room for silence",
+    finish: "hand-painted gouache backgrounds with layered atmospheric depth, grounded cel-shaded 2D characters, tactile brush texture, soft practical-light halation, subtle film grain, 16:9 full-bleed, no CGI sheen",
     photoreal: false,
     conflicts: ["cartoon", "anime", "illustration"],
-    negative: "photorealistic, live action, real photograph, 3d render, cgi, plastic shading, glossy ray-traced highlights, big-eyed moe anime faces, chibi, speed lines, neon, cyberpunk, harsh digital lighting, text, watermark",
+    negative: "photorealistic, live action, real photograph, 3d render, cgi, plastic shading, glossy ray-traced highlights, chibi proportions, huge anime eyes, excessive squash and stretch, speed lines, neon, cyberpunk, harsh digital lighting, text, watermark",
   },
 ] as const;
 

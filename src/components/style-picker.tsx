@@ -16,7 +16,7 @@ function StyleThumb({ entry, active, onPick }: { entry: VisualStyleEntry; active
   </button>;
 }
 
-/** The visual style library — ten looks that steer how every AI model renders the shot. */
+/** The reusable visual-style library — each look steers how image and video models render a shot. */
 export function VisualStylePicker({ value, onChange }: { value: string; onChange: (id: string) => void }) {
   const selected = visualStyle(value);
   return <div className="lighting-picker style-picker">

@@ -12,7 +12,7 @@ The storyboard card's `⋯` chooser and **Browse all images** only work because 
 
 ## Second project — 7 October 2026: the animated cold open (working title)
 
-**`docs/hangar/README.md`.** A new bundled workspace beside Nobody's Witness, from the director's other conversation: an animated 1975 feature's cold open (8 scenes, 39 shots, no pictures yet), opened from Templates. It touches nothing in Nobody's Witness; `npm run verify:hangar` guards the isolation. Every scene and shot carries the new house style `hangar` (Painted Americana '75: Iron Giant people over Ghibli backgrounds) plus mood, lighting direction, transition, sound and framing; read the README's last section before editing a shot's notes (the video prompts parse them). Its pictures will go in `public/images/hangar/` under the same never-overwrite rule.
+**`docs/hangar/README.md`.** A bundled animated-1975 cold open (8 scenes, 39 shots), opened from Templates and isolated from Nobody's Witness. Its first image pass pictures shots 1–12 (three intentional black holds plus nine illustrated studies); generated images remain Needs review, and later passes should fill only untouched pending slots. Every scene and shot carries the reusable `hangar` style (Painted Americana '75), mood, lighting direction, transition, sound and framing; read the README and `style-guide.md` before editing shot notes (video prompts parse them). The style is in the shared Visual Style picker for future projects. Project art lives under `public/images/hangar/`; never overwrite it, and `npm run verify:images` checks the Hangar tree.
 
 ## Latest session — 6 October 2026: shot 73 retired, the cold open's geometry, Vera's emptiness frames
 
