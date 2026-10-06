@@ -45,14 +45,24 @@ const expected98 = before["98"].replace("She's taking the sign. And the stools.\
 assert.notEqual(expected98, before["98"], "the pre-revision rooftop carried the stool line the director cut");
 assert.equal(stripped98, expected98, "Every other byte of the full rooftop scene survives");
 assert(current["98"].includes('SUPER: "FIVE DAYS LATER"'));
-for (const number of ["85", "87", "91", "92"]) assert.equal(current[number], before[number], `${number} must be unchanged`);
+// 6 October 2026 (director): the Hive's alarm — Kaneko strikes the water pipe, the pipes pass it on, the repairman has heard it, and the escape crosses more rooms.
+// Everything in the pre-revision scenes survives; these are the only additions.
+const alarm = {
+  "85": ["Three hard strikes, iron on iron, run up the pipes overhead. Then again, farther off: a spoon on a radiator, a knuckle on a drainpipe, floor above floor. The Hive is passing it on.\n\n"],
+  "86": ["Kaneko lowers the ladle from the old iron water pipe by the stove. Three strikes were all it took: the alarm the Hive has kept for fifty years.\n\n"],
+  "87": ["The pipes have already told him. "],
+  "90": ["Through the wardrobe, a barber's cramped shop with the chair turned to the wall, the barber holding the curtain aside with his scissors hand. Down four steps into a laundry where wet sheets hang in rows, parted at the last second by two women who pin them back behind the two of them. A shrine room: a grandmother lifts the altar cloth and a low hatch opens behind it. A plank laid across the gap between two balconies, a balcony bolted onto a balcony, held steady at both ends by men in vests. A pipe gallery where the pipes ring softly all around them, the alarm still passing from hand to hand.\n\n"],
+};
+for (const [number, adds] of Object.entries(alarm)) for (const add of adds) assert(current[number].includes(add), `${number} carries the alarm addition`);
+const withoutAlarm = number => (alarm[number] || []).reduce((text, add) => text.replace(add, ""), current[number]);
+for (const number of ["85", "87", "91", "92"]) assert.equal(withoutAlarm(number), before[number], `${number} is unchanged apart from the alarm additions`);
 assert(current["91"].includes("A train. It arrives") && current["91"].includes("rung by rung"));
 assert(!/train/i.test(before["89"]), "No lost stairwell train to invent or move");
 for (const [number, inserted] of [
   ["86", "VERA\n(in Japanese)\nI know them.\n\nJack looks at her.\n\n"],
   ["88", "In the black, Vera's hand finds the wall, low, where a child's hand would reach. She starts to move. Jack follows the sound of her.\n\n"],
   ["90", "Vera leads them to a door with a sumo match murmuring behind it. It opens before she can knock: the OLD WOMAN from 55.\n\n"],
-]) assert.equal(current[number].replace(inserted, ""), before[number], `${number} is revised by addition, not cuts`);
+]) assert.equal(withoutAlarm(number).replace(inserted, ""), before[number], `${number} is revised by addition, not cuts`);
 pass("98's whole rooftop survives plus exactly the statement/card; 85/87/91/92 unchanged, 86/88/90 add-only, train intact in 91");
 
 const cache = "node_modules/.cache/verify-revision-restoration";

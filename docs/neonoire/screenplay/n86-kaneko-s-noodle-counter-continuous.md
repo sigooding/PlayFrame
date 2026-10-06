@@ -8,6 +8,8 @@ Grammar: 24mm counter, 50mm three-shot, 85mm for Kaneko's refusal. The shutter c
 
 INT. KANEKO'S NOODLE COUNTER - CONTINUOUS #86#
 
+Kaneko lowers the ladle from the old iron water pipe by the stove. Three strikes were all it took: the alarm the Hive has kept for fifty years.
+
 Kaneko pulls the shutter down with a crash. She turns off the fluorescent tube.
 
 KANEKO
