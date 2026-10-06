@@ -5,6 +5,7 @@ import { asc, eq } from "drizzle-orm";
 import { starterProjects } from "./seed";
 import { raptureProject } from "./rapture";
 import { neonoireProject } from "./neonoire";
+import { hangarProject } from "./hangar";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
 import { bundledFrameUpdates } from "./bundle-refresh";
@@ -24,6 +25,15 @@ export async function listProjects() {
     rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
   }
   return Promise.all(rows.map(row => refreshNeonoireFrames(serialize(row))));
+}
+
+/** Opt-in workspace for the animated cold open; never replaces edits (the second insert is a no-op). */
+export async function openHangarProject() {
+  await ensureSchema();
+  await db.insert(filmProjects).values(hangarProject).onConflictDoNothing();
+  const project = await getProject(hangarProject.id);
+  if (!project) throw new Error("The cold-open project was not created.");
+  return project;
 }
 
 /** Opt-in for existing databases; never reseed on every page load or replace edited material. */

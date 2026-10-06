@@ -10,6 +10,10 @@ The storyboard card's `⋯` chooser and **Browse all images** only work because 
 4. **Before every push and every handoff run `npm run verify:images`.** It compares your tree with `origin/main` and fails on an overwritten or deleted image without an archived copy, a touched archive file, or a shrunken library. CI runs it on every PR. Never "fix" it by editing the script, deleting `origin/main` history, or force-pushing.
 5. Do not run image-optimising, renaming or format-conversion tools over the image folders.
 
+## Second project — 7 October 2026: the animated cold open (working title)
+
+**`docs/hangar/README.md`.** A new bundled workspace beside Nobody's Witness, from the director's other conversation: an animated 1975 feature's cold open (8 scenes, 39 shots, no pictures yet), opened from Templates. It touches nothing in Nobody's Witness; `npm run verify:hangar` guards the isolation. Every scene and shot carries the new house style `hangar` (Painted Americana '75: Iron Giant people over Ghibli backgrounds) plus mood, lighting direction, transition, sound and framing; read the README's last section before editing a shot's notes (the video prompts parse them). Its pictures will go in `public/images/hangar/` under the same never-overwrite rule.
+
 ## Latest session — 6 October 2026: shot 73 retired, the cold open's geometry, Vera's emptiness frames
 
 **Shot 73 (the vending-machine frame, id `neonoire-shot-71`) is retired — number not reused, image stays on disk. Shots 14, 17, 18 were retaken to one lane layout (barbershop left, vending machine right, bar at the far end, sedan gone after 13; earlier versions archived). New: 383 (empty lane), 384–386 (Vera in her apartment), 387–388 (Vera's run in the red dress). 366/366 images, next free number 389.** Read the bible's Part 9 item 19 (open calls listed there) and the top of `docs/neonoire/handoff.md`.

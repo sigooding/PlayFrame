@@ -436,6 +436,25 @@ export const VISUAL_STYLES: readonly VisualStyleEntry[] = [
     conflicts: [],
     negative: "lightning, dramatic storm, glossy cyberpunk, holograms, flying cars, heavy neon overload, oversaturated colors, clean digital look, HDR, sharp CGI, bokeh overload, close-up portrait, fashion pose, smiling, anime style",
   },
+  {
+    // Written for the animated cold open (docs/hangar): the director's brief was "something like the
+    // Iron Giant mixed with Ghibli". Ghibli supplies the painted, layered, weather-heavy backgrounds;
+    // The Iron Giant supplies the drawing of the people: plain, weighty, readable silhouettes in a
+    // warm 1950s-70s Americana. Nothing here names or shows the thing in the crate, so the style
+    // serves the whole film, not just the open. Its example picture borrows the Ghibli one until a
+    // real example is painted.
+    id: "hangar",
+    name: "Painted Americana '75",
+    image: "/images/styles/ghibli.jpg",
+    swatch: "linear-gradient(135deg,#1c2a4a,#3f6a86 45%,#e0a458)",
+    summary: "Gouache-painted 1975 Ohio with hand-drawn, weighty characters: dashboard amber against blue night.",
+    useFor: "Warm small-town Americana with an undercurrent of dread: back roads, kids, secrets, and something strange nobody can name.",
+    prompt: "hand-drawn 2D feature animation, 16:9 full-bleed widescreen, small-town Ohio in 1975 painted in luminous gouache backgrounds with Studio Ghibli's layered atmosphere (soft hand-painted fog in the hollows, cloud banks, wet foliage, lived-in weathered detail), populated by characters drawn plainly with Iron Giant-era weight and strong readable silhouettes (confident clean line, flat cel colour with one soft shadow tone, believable acting, no exaggerated cartoon takes). Period Americana: wood paneling, station wagons, diner chrome, AM radios, chunky trucks, hand-lettered signs. Warm practical light (dashboard amber, hangar sodium lamps, road-flare crimson) set against deep blue night, a restrained palette of ambers, teals and blue-blacks, gentle film grain and soft halation. Quiet wonder with an undercurrent of dread, a patient camera that leaves room for silence, nothing strange ever explained or named",
+    finish: "hand-painted gouache backgrounds with Ghibli-style atmospheric depth, clean cel-shaded 2D characters in the Iron Giant manner, painterly fog and weather, soft halation on practical lights, subtle film grain, 16:9 full-bleed, no CGI sheen",
+    photoreal: false,
+    conflicts: ["cartoon", "anime", "illustration"],
+    negative: "photorealistic, live action, real photograph, 3d render, cgi, plastic shading, glossy ray-traced highlights, big-eyed moe anime faces, chibi, speed lines, neon, cyberpunk, harsh digital lighting, text, watermark",
+  },
 ] as const;
 
 export function visualStyle(id?: string): VisualStyleEntry {

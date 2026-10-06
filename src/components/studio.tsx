@@ -150,10 +150,12 @@ export default function Studio({ initialProjects, initialTab, initialProjectId }
   }, [notify, updateLocal]);
 
   async function openTemplate(template: string) {
-    if (template !== "rapture" && template !== "neonoire") { setDialog({ type: "newProject", template }); return; }
+    if (template !== "rapture" && template !== "neonoire" && template !== "hangar") { setDialog({ type: "newProject", template }); return; }
     const bundled = template === "rapture"
       ? { url: "/api/projects/rapture", tab: "Storyboard", label: "Series workspace opened. Existing edits are preserved.", error: "The series workspace couldn't be opened." }
-      : { url: "/api/projects/neonoire", tab: "Screenplay", label: "Nobody's Witness opened on its screenplay. Existing edits are preserved.", error: "The Nobody's Witness workspace couldn't be opened." };
+      : template === "hangar"
+        ? { url: "/api/projects/hangar", tab: "Screenplay", label: "The cold open opened on its screenplay. Existing edits are preserved.", error: "The cold-open workspace couldn't be opened." }
+        : { url: "/api/projects/neonoire", tab: "Screenplay", label: "Nobody's Witness opened on its screenplay. Existing edits are preserved.", error: "The Nobody's Witness workspace couldn't be opened." };
     try {
       const saved = await request<FilmProject>(bundled.url, { method: "POST" });
       updateLocal(current => current.some(p => p.id === saved.id) ? current.map(p => p.id === saved.id ? healProjectImages(saved) : p) : [...current, healProjectImages(saved)]);
