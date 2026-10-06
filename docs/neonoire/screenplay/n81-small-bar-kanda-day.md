@@ -15,7 +15,6 @@ He sees Jack's face and his hands, and he doesn't ask. He opens the cash drawer,
 Jack holds it.
 
 OKADA
-(in Japanese)
 The girl?
 
 Jack can't answer.

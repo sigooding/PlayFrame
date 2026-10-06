@@ -349,7 +349,7 @@ export const SCENES = [
     page: "n90-the-hive-through-the-rooms-continuous.md", board: "n90-through-the-rooms.md",
     cast: ["Jack", "Vera Voss"],
     grammar: "35mm at doorway height; the rooms are seen from where Vera and Jack pass through them, one door after another.",
-    description: "Continuous. A door with a sumo match murmuring behind it opens before Vera can knock — the old woman from 55, holding the way through; beyond it a candlelit kitchen, the dentist with a finger to his lips, the girl with the violin, the inside of a wardrobe. Every door has someone at it, nobody speaks or looks, and each closes softly behind them while a flashlight beam finds it and stops. The last room, in the rear wing, is empty, with an iron fire ladder outside its window. REWRITTEN again 30 September 2026 to open on the sumo door; 132 was re-quoted and held RETAKE PENDING against the new opening and LANDED 4 OCTOBER 2026 — the old woman's own room, the sumo murmuring on a television nobody watches, her pointing across it to the second open door, and no torch and no stair landing — and 133 and 267, regenerated on 29 September, still match.",
+    description: "Continuous. A door with a sumo match murmuring behind it opens before Vera can knock — the old woman from 55, holding the way through; beyond it a candlelit kitchen, the dentist with a finger to his lips, the girl with the violin, the inside of a wardrobe. Every door has someone at it, nobody speaks or looks, and each closes softly behind them while a flashlight beam finds it and stops. The last room, in the rear wing, is empty, with an iron fire ladder outside its window. REWRITTEN again 30 September 2026 to open on the sumo door; 132 was re-quoted and held RETAKE PENDING against the new opening and LANDED 4 OCTOBER 2026 — the old woman's own room, the sumo murmuring on a television nobody watches, her pointing across it to the second open door, and no torch and no stair landing — and 133 and 267, regenerated on 29 September, still match. Since Kaneko's pipe alarm (6 October 2026) the escape crosses five more rooms, each with a resident who helps: a barber who turns his chair to the wall (378), two women who part and re-pin the laundry (379), a grandmother who lifts the altar cloth to a hatch (380), two men who steady and haul in a plank between balconies (381), and a woman who raps the pipes once for clear (382).",
     lightingNotes: "Single candle or a torch turned low in each room; a flashlight beam finding each door as it closes.",
   },
   {
@@ -914,7 +914,7 @@ export const SCENES = [
     page: "n56-kaneko-s-noodle-counter-continuous.md", board: "n56-vera-on-the-third-stool.md",
     cast: ["Vera Voss", "Kaneko"],
     grammar: "35mm frontal to the counter, as always.",
-    description: "Vera on the third stool: I was here when I was a child. Kaneko freezes for just a second at the pot — he always paid too much. BOARDED — 2 shots (225, and 266, the count).",
+    description: "Vera on the third stool: I was here when I was a child. Vera lays the old photograph on the counter and Kaneko, looking from it to her, freezes for just a second at the pot — he always paid too much. BOARDED — 2 shots (225, and 266, the count).",
     lightingNotes: "Lunchtime steam and grey daylight.",
   },
   {

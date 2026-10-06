@@ -115,3 +115,33 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 | --- | --- | --- |
 | 4 | 33–40 | The apartment, The pale blue umbrella, The photograph, Vera at the table, The answerphone, Nothing yet, The message, The television |
 | 5 | 41–42 | Three looks, Takes the umbrella |
+
+384. WIDE — 24mm, static, eye level — the room too big.
+From the doorway end of the room: bare wall, empty floor and grey rain light, and Vera small and still at the low table far across it with two cups and the phone. The room is too big and too quiet around her.
+SCRIPT: "VERA VOSS (29) sits at the low table."
+CAST: Vera Voss
+LIGHT: Overcast soft
+TIME: 8
+ID: neonoire-shot-384
+IMAGE: 384-the-room-too-big.jpg
+NOTE: NEW 6 October 2026 (director: Vera needs a few more frames and a wider shot to give the feeling of emptiness). Generated against the room master `keys/04-veras-apartment.jpg` and Vera's sheet. Plays between the two-cup establishing wide and the medium at the table. Caveat: the room reads a little larger and barer than the master, which is the intent; the television and cabinet sit on opposite sides to the master's layout, so treat it as a mood wide.
+
+385. MEDIUM — 50mm, static, eye level — the empty place.
+Over Vera's shoulder, across the low table: the floor cushion opposite her where nobody sits, the clean empty second cup, the phone dark between them.
+SCRIPT: "The other is empty and clean, set out as though someone is expected."
+CAST: Vera Voss
+LIGHT: Overcast soft
+TIME: 6
+ID: neonoire-shot-385
+IMAGE: 385-the-empty-place.jpg
+NOTE: NEW 6 October 2026 (director: more Vera frames for emptiness). The second cup is never explained and never emptied, so here it is held on its own. Caveat: the television is on in this study, as the scene has it, but the room's furniture is more crowded than the master.
+
+386. MEDIUM — 35mm, static, eye level — at the window.
+Vera stands with her back to us at the rain-streaked sliding-door window, small against it, arms folded, looking out at nothing. Behind her the tidy room, the dry umbrella in its stand, the two cups on the table.
+SCRIPT: "The old television murmurs to itself."
+CAST: Vera Voss
+LIGHT: Overcast soft
+TIME: 8
+ID: neonoire-shot-386
+IMAGE: 386-at-the-window.jpg
+NOTE: NEW 6 October 2026 (director: more Vera frames for emptiness). Director's call to confirm: the script has her seated until "She stands" and puts her coat on, so this frame puts her at the window after she hangs up and before she gathers her coat. Cut it if she should not move earlier. The television is dark in this study, the script's TV murmurs: reconcile on a retake if kept.

@@ -13,15 +13,15 @@ INT. ROADSIDE INN, KITCHEN - CONTINUOUS #44#
 He grabs her arm, pulls her low toward the pantry, opens it, puts her inside.
 
 JACK
-(in Japanese; whispered)
+(whispered)
 Stay. Whatever you hear.
 
 MRS. NODA
-(in Japanese; whispered)
+(whispered)
 My husband --
 
 JACK
-(in Japanese; whispered)
+(whispered)
 I'll get him.
 
 He closes the pantry door on her.

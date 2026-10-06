@@ -82,6 +82,6 @@ She goes.
 Kurose sits still for a moment. Then he presses a button on his desk phone.
 
 KUROSE
-(in Japanese; into phone)
+(into phone)
 Follow her.
 

@@ -2719,19 +2719,26 @@
       "id": "s17-kaneko-i-was-already-old-you-were",
       "frameId": "neonoire-shot-189",
       "character": "KANEKO",
-      "text": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. You always sat there. He sat there.",
-      "prompt": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. [pause] You always sat there. He sat there.",
+      "text": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American.",
       "file": "/audio/neonoire/s17/189-kaneko-i-was-already-old-you-were.mp3",
       "offset": 4.6,
-      "duration": 16.2,
+      "duration": 11.99,
       "voice": "vUzt8mUMt5vwWOoJ6szl",
       "model": "eleven_v4",
-      "generation": {
-        "flow": "JJ4QW4ir4zwem0vGOseG",
-        "session": "AGKZX9QetcyCLE0ktSMj",
-        "id": "KNc2i0mxS6OCjVm4M3Oo"
-      },
-      "status": "take"
+      "status": "edited",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/189-kaneko-i-was-already-old-you-were-v1.mp3",
+          "prompt": "I was already old. You were a boy in a cheap suit, the only foreign face on the force. Japanese papers, American face. You came here with the American. [pause] You always sat there. He sat there.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "JJ4QW4ir4zwem0vGOseG",
+            "session": "AGKZX9QetcyCLE0ktSMj",
+            "id": "KNc2i0mxS6OCjVm4M3Oo"
+          },
+          "archivedAt": "2026-10-06"
+        }
+      ]
     },
     {
       "id": "s17-jack-quietly-i-m-looking-for-his",
@@ -6654,23 +6661,6 @@
       "generation": {
         "flow": "0MHWfZQKpkIuVIcuUTLd",
         "session": "5zSDRi9SjMaxcvFzPrNV",
-        "id": ""
-      },
-      "status": "take"
-    },
-    {
-      "id": "s56-kaneko-your-father-used-to-sit-on",
-      "frameId": "neonoire-shot-225",
-      "character": "KANEKO",
-      "text": "Your father used to sit on the third stool.",
-      "file": "/audio/neonoire/s56/225-kaneko-your-father-used-to-sit-on.mp3",
-      "offset": 14.18,
-      "duration": 2.85,
-      "voice": "vUzt8mUMt5vwWOoJ6szl",
-      "model": "eleven_v4",
-      "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "syOoySN6lRegI2CS04vq",
         "id": ""
       },
       "status": "take"

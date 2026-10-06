@@ -15,7 +15,7 @@ Both shots (160–161) are **16:9, 1920×1080, full-bleed**. The old sign follow
 
 160. WIDE — 35mm, static, eye level — the third stool.
 A tiny counter inside a brick railway arch: one warm bulb, steam, six new wooden stools in one row, a small old television on a shelf above the door, and the old hand-painted sign on the brick wall. Kaneko works the pot with long chopsticks. A man in a charcoal coat sits on the second stool from the left, seen from behind, a bowl in front of him; the third stool stands empty, with nothing set on the counter before it. At the back, the cloth curtain in the doorway is just beginning to move, cool blue street light behind it.
-SCRIPT: "Kaneko ladles. JACK sits on the second stool. The third is empty."
+SCRIPT: "Kaneko ladles. JACK sits at the counter, a bowl in front of him, a space beside him."
 CAST: Vera Voss, Kaneko
 LIGHT: Practical night
 TIME: 10
@@ -51,7 +51,7 @@ NOTE: Coverage, shot 260, retaken from the new master in the consistency pass of
 
 265. WIDE — 35mm, static, high angle — stool three.
 From above, six round stools in one row. From the left: two empty, Vera on the third in the teal peacoat with the red bird clip, then three empty stools. Kaneko works the pot under the bare bulb in the brick arch.
-SCRIPT: "She stands a moment. Counts the stools. Sits on the third."
+SCRIPT: "She stands a moment. Then she sits down beside him."
 CAST: Vera Voss, Kaneko
 LIGHT: Practical night
 TIME: 6

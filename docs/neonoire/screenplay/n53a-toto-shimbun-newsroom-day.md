@@ -16,41 +16,32 @@ Vera stands at the door of a glass-walled office at the back, KONDO's card in he
 On her desk, a framed photograph of the journalist from the bar, laughing at an office party.
 
 HARADA
-(in Japanese)
 You're not a reporter.
 
 VERA
-(in Japanese)
 My sister was in that bar.
 
 Harada looks at her for a long time. Then at the photograph. She points at the chair.
 
 HARADA
-(in Japanese)
 We have had a letter from lawyers already. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.
 
 VERA
-(in Japanese)
 The police say it's a gang matter.
 
 HARADA
-(in Japanese)
 The police say what they are told.
 
 VERA
-(in Japanese)
 Did he say who he was meeting?
 
 HARADA
-(in Japanese)
 One o'clock, Kanda, an old man who wanted to talk. He told two people. Me. And a detective.
 
 VERA
-(in Japanese)
 Which detective?
 
 HARADA
-(in Japanese)
 He didn't say. He said the detective had promised to keep a car nearby.
 (beat)
 There was no car.
@@ -58,11 +49,9 @@ There was no car.
 Vera sits very still.
 
 VERA
-(in Japanese)
 Will you print it?
 
 HARADA
-(in Japanese)
 Print what? A dead man's diary?
 (beat)
 Bring me something with a name on it.

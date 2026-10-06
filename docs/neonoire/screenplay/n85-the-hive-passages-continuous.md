@@ -8,6 +8,8 @@ Grammar: 24mm down a passage too narrow for anything but single file; 35mm for t
 
 INT. THE HIVE, PASSAGES - CONTINUOUS #85#
 
+Three hard strikes, iron on iron, run up the pipes overhead. Then again, farther off: a spoon on a radiator, a knuckle on a drainpipe, floor above floor. The Hive is passing it on.
+
 Four masked men move through the narrow corridors in single file, weapons up. The passages are too narrow for anything else.
 
 Doors that stood open close softly, one after another, as they pass. The Hive is watching them.

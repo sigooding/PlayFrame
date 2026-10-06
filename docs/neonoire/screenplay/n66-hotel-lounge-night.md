@@ -19,11 +19,9 @@ Vera comes in, shaking the rain from the blue umbrella. People turn to look at h
 She sits at the bar. Leans the blue umbrella against the next stool.
 
 BARTENDER
-(in Japanese)
 For you?
 
 VERA
-(in Japanese)
 I'm waiting for someone.
 (beat)
 A gin and tonic. Please.

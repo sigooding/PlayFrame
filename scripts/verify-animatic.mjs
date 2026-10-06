@@ -19,12 +19,12 @@ for (const id of directorApprovedMainIds) {
   assert(frame.image && frame.notes.includes("DIRECTOR APPROVED"));
   assert(!/Production approval pending|Full-size image review|Draft, not production-approved/.test(frame.notes));
 }
-assert.equal(directorReplacementShots.length, 7);
+assert.equal(directorReplacementShots.length, 6);
 assert(project.script.includes("The two drawers above it stay closed."));
 assert(project.script.includes("sealed together in one clear evidence bag"));
 assert(project.script.includes("the machine falls behind her."));
 assert(project.frames.filter(frame => frame.sceneId === "neonoire-s75").every(frame => !frame.characters.length));
-pass("18 selected main shots are Ready without review warnings; seven fresh replacements, correct drawer package, explicit forward route and empty returns");
+pass("18 selected main shots are Ready without review warnings; six fresh replacements, correct drawer package, explicit forward route and empty returns");
 
 const options = parseAnimaticOptions({}, project);
 assert.equal(options.timing, "playback"); assert.equal(options.audio, true);
@@ -35,7 +35,7 @@ assert.throws(() => parseAnimaticOptions({ credits: true }, project), /score/);
 const one = parseAnimaticOptions({ sceneId: "neonoire-s7", resolution: "720p" }, project);
 assert.equal(animaticFrames(project, one).length, 6);
 const range = parseAnimaticOptions({ fromSceneId: "neonoire-s73", toSceneId: "neonoire-s75" }, project);
-assert.equal(animaticFrames(project, range).length, 14);
+assert.equal(animaticFrames(project, range).length, 15);
 for (const data of [
   { sceneId: "../../.env" }, { resolution: "1080p;-y" }, { output: "/tmp/secrets" },
   { audio: "true" }, { sceneId: "neonoire-s7", fromSceneId: "neonoire-s1", toSceneId: "neonoire-s7" },

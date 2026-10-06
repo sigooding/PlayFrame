@@ -18,7 +18,7 @@ Ishida stops in the rain. He looks back up at the station, at one lit window on 
 From inside the car, a man's clean hand holds out a cup of tea. The watch from the model.
 
 KUROSE
-(in Japanese; from inside)
+(from inside)
 It's only tea.
 
 Ishida gets in. The door closes. The rain is suddenly very far away.

@@ -13,15 +13,13 @@ The bulb. The flour sacks. Mara sits cross-legged on the futon. Jack sits agains
 The curtain moves. Kaneko brings in a bowl of rice, steam rising into the bulb light.
 
 KANEKO
-(in Japanese)
 Eat.
 
 MARA
-(in halting Japanese)
+(haltingly)
 Thank you. Has anyone... come? Asking?
 
 KANEKO
-(in Japanese)
 Nobody comes here who isn't lost.
 
 She puts the bowl in Mara's hands. The curtain falls shut behind her.

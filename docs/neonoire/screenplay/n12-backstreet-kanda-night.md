@@ -15,7 +15,7 @@ Jack walks it slowly, a cheap clear plastic umbrella over his head. Not searchin
 The vending machine at the corner. He feeds it a coin. A can of hot coffee drops.
 
 VENDING MACHINE
-(recorded; in Japanese)
+(recorded)
 Thank you very much.
 
 He holds the can without drinking it and looks at the spot where Sakai died. Nothing there now. Rain on asphalt.
@@ -33,25 +33,20 @@ He doesn't touch it. He looks from the strap, to the spot where Sakai fell, to t
 A shutter RATTLES up above him. A BARBER (80s), in pajamas, looks down from the upstairs window.
 
 BARBER
-(in Japanese)
 Police again?
 
 JACK
-(in Japanese)
 Not for a long time.
 
 The barber considers him.
 
 BARBER
-(in Japanese)
 I told them. I was asleep. I heard the shot. Then a car.
 
 JACK
-(in Japanese)
 One car?
 
 BARBER
-(in Japanese)
 One car. Twice.
 (beat)
 It left. Then it came back.
@@ -59,7 +54,7 @@ It left. Then it came back.
 Jack looks down the empty street.
 
 JACK
-(quietly, in Japanese)
+(quietly)
 Why come back?
 
 Jack doesn't answer. He looks down the street at the drains, the doorways, the gutter: everywhere a small thing could fall.

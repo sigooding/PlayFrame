@@ -41,7 +41,7 @@ NOTE: Generated from shot 189. Kaneko stands at Jack's end of the counter here. 
 
 358. MEDIUM — 50mm, static, eye level — the empty third stool.
 Jack sits on the fourth stool at the counter, hands resting on the damp wood, looking over at the empty third stool beside him; amber lamp light and noodle steam between them.
-SCRIPT: "Jack looks at the third stool, empty beside him, and then at the counter under his hands."
+SCRIPT: "Jack looks at the counter under his hands."
 CAST: Jack
 LIGHT: Practical night
 TIME: 8

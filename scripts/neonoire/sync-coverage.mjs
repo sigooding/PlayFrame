@@ -25,15 +25,19 @@ const batch2 = Array.from({ length: 10 }, (_, i) => `neonoire-shot-${354 + i}`);
 const batch3 = Array.from({ length: 5 }, (_, i) => `neonoire-shot-${364 + i}`);
 const batch4 = Array.from({ length: 8 }, (_, i) => `neonoire-shot-${369 + i}`);
 const batch5 = ["neonoire-shot-377"];
-const newFrameIds = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5];
+const batch6 = Array.from({ length: 5 }, (_, i) => `neonoire-shot-${378 + i}`);
+const batch7 = ["neonoire-shot-383"];
+const batch8 = [384, 385, 386].map(n => `neonoire-shot-${n}`);
+const batch9 = [387, 388].map(n => `neonoire-shot-${n}`);
+const newFrameIds = [...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batch6, ...batch7, ...batch8, ...batch9];
 for (const id of newFrameIds) {
   if (!next.frames.some(frame => frame.id === id)) throw new Error(`${id} is not in the current bundle`);
 }
 const out = {
-  note: "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, 369–376 second-pass frames, and 377 the prologue's Hive) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
+  note: "Coverage added 4 October 2026 (344–363 long-hold frames, 364–368 relief frames, 369–376 second-pass frames, 377 the prologue's Hive, and 378–382 the Hive escape's five rooms) without a script change. A saved workspace still on a known default text that holds none of a batch receives that whole batch at its bundle positions; a workspace that already holds any frame in that batch, or whose script was edited, is left alone.",
   priorScriptHashes: [...new Set([...scene6Sync.priorScriptHashes, digest(next.script)])],
   newFrameIds,
-  batches: [batch1, batch2, batch3, batch4, batch5],
+  batches: [batch1, batch2, batch3, batch4, batch5, batch6, batch7, batch8, batch9],
 };
 writeFileSync(resolve(root, "src/lib/neonoire-coverage-sync.json"), JSON.stringify(out, null, 2) + "\n");
 console.log(`${newFrameIds.length} coverage frames fingerprinted against ${out.priorScriptHashes.length} known defaults across ${out.batches.length} batches`);
