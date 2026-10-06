@@ -20,6 +20,16 @@ const ACT = "hangar-act-cold-open";
 // The house style (src/lib/styles.ts): painted gouache Ohio, hand-drawn characters with weight.
 const STYLE = "hangar";
 
+// Painted continuity sheets (public/images/hangar/sheets/). The two pilots are heard and never
+// seen, so their cards stay unpictured; everyone the camera meets carries their sheet.
+const castImages = {
+  airman: "/images/hangar/sheets/airman.jpg",
+  sergeant: "/images/hangar/sheets/sergeant.jpg",
+  trucker: "/images/hangar/sheets/trucker.jpg",
+  mom: "/images/hangar/sheets/nurse-mom.jpg",
+  agent: "/images/hangar/sheets/agent.jpg",
+};
+
 const cast = [
   ["red-two", "Red Two", "Pilot (voice)", "1944", "A fighter pilot over Europe, heard and never seen. He sounds amazed, not scared. He does not want to fire.", ["Amazed", "Obedient"], "sand"],
   ["red-leader", "Red Leader", "Flight leader (voice)", "1944", "Gives the order. Assumes a trick from the Germans (\"a Jerry trick\").", ["Clipped", "Certain"], "clay"],
@@ -28,7 +38,7 @@ const cast = [
   ["trucker", "Trucker", "Civilian driver", "50", "Thirty years on the road. Signs for AGRICULTURAL EQUIPMENT without looking up. The only joke in the open is his.", ["Dry", "Incurious"], "clay"],
   ["mom", "Mom", "The nurse, the boy's mother", "34", "Coming off a double shift, window down to stay awake, nodding off at the wheel. Never stops. Never knows what she nearly hit, or what she left behind: her side mirror and her cap.", ["Exhausted", "Kind"], "rose"],
   ["agent", "Agent", "Two men in suits", "40s", "Arrive in an unmarked sedan. One pockets the nurse's cap and the snapped-off mirror: the thread to the boy's house.", ["Methodical", "Cold"], "clay"],
-].map(([id, name, role, age, description, traits, color]) => ({ id: `hangar-${id}`, name, role, age, description, traits, color, createdAt, relations: [] }));
+].map(([id, name, role, age, description, traits, color]) => ({ id: `hangar-${id}`, name, role, age, description, traits, color, image: castImages[id], createdAt, relations: [] }));
 const who = (...ids) => ids.map(id => `hangar-${id}`);
 
 const sceneLight = {
@@ -125,6 +135,52 @@ const cues = {
   38: ["AIRMAN: (barely audible) One-two-three... four."],
 };
 
+// The painted boards, one per shot, in public/images/hangar/. Shots 1-3 are the screenplay's pure
+// black frames; 4-39 were painted against the continuity sheets in sheets/ and props/ so the crate
+// (stencil WRIGHT FIELD 1944 - INERT, the coffee-stain ring on its lid), the cream-and-teal truck,
+// the woodgrain wagon, the sedan and every face stay the same from shot to shot.
+const boards = {
+  1: "/images/hangar/s1/01-black-radio.jpg",
+  2: "/images/hangar/s1/02-three-quick-one-slow.jpg",
+  3: "/images/hangar/s1/03-gunfire-silence.jpg",
+  4: "/images/hangar/s2/04-wright-patterson-night.jpg",
+  5: "/images/hangar/s2/05-guard-booth-tv.jpg",
+  6: "/images/hangar/s2/06-wright-field-inert.jpg",
+  7: "/images/hangar/s2/07-coffee-ring.jpg",
+  8: "/images/hangar/s2/08-hand-on-lid.jpg",
+  9: "/images/hangar/s2/09-dont-you-want-to-know.jpg",
+  10: "/images/hangar/s3/10-weigh-station.jpg",
+  11: "/images/hangar/s3/11-into-the-hills.jpg",
+  12: "/images/hangar/s3/12-the-cab.jpg",
+  13: "/images/hangar/s3/13-knock-from-trailer.jpg",
+  14: "/images/hangar/s3/14-one-two-three-four.jpg",
+  15: "/images/hangar/s3/15-slow-one-never-arrives.jpg",
+  16: "/images/hangar/s4/16-headlights-round-bend.jpg",
+  17: "/images/hangar/s4/17-two-more-miles.jpg",
+  18: "/images/hangar/s4/18-yank-the-wheel.jpg",
+  19: "/images/hangar/s4/19-mirror-cap.jpg",
+  20: "/images/hangar/s4/20-the-skid.jpg",
+  21: "/images/hangar/s4/21-missing-knock.jpg",
+  22: "/images/hangar/s4/22-over-the-edge.jpg",
+  23: "/images/hangar/s5/23-down-the-bank.jpg",
+  24: "/images/hangar/s5/24-inside-the-crate.jpg",
+  25: "/images/hangar/s5/25-by-the-creek.jpg",
+  26: "/images/hangar/s6/26-taillights.jpg",
+  27: "/images/hangar/s6/27-road-flares.jpg",
+  28: "/images/hangar/s6/28-white-cap.jpg",
+  29: "/images/hangar/s6/29-where-is-it.jpg",
+  30: "/images/hangar/s6/30-down-through-red-fog.jpg",
+  31: "/images/hangar/s7/31-empty.jpg",
+  32: "/images/hangar/s7/32-hollow-in-straw.jpg",
+  33: "/images/hangar/s7/33-inert-in-creek.jpg",
+  34: "/images/hangar/s7/34-rows-of-marks.jpg",
+  35: "/images/hangar/s7/35-newest-stroke.jpg",
+  36: "/images/hangar/s7/36-far-corner.jpg",
+  37: "/images/hangar/s8/37-far-off.jpg",
+  38: "/images/hangar/s8/38-only-airman-hears.jpg",
+  39: "/images/hangar/s8/39-flare-sputters-out.jpg",
+};
+
 // [scene, title, description, shotType, movement, angle, lens, lighting, seconds, cast, script quote]
 const shots = [
   ["1", "Black: the radio", "Black screen. Radio hiss, the drone of an engine, and a pilot who sounds amazed, not scared: \"It's copying me.\"", "Establishing", "Static", "Eye level", "50mm", "Low key", 40, ["red-two", "red-leader"], "BLACK SCREEN. Before any picture, a radio hiss and the drone of an engine."],
@@ -171,8 +227,8 @@ const shots = [
   const [mood, lightingNotes, framing, sound, transition] = details[i];
   return {
     id: `hangar-shot-${String(i + 1).padStart(2, "0")}`, shotNumber: i + 1, sceneId: sceneOf(scene), title, description,
-    image: "", shotType, movement, angle, lens, lighting, lightingNotes, style: STYLE, mood, duration, durationIsEstimate: true,
-    status: "Needs review", transition, characters: who(...chars),
+    image: boards[i + 1], shotType, movement, angle, lens, lighting, lightingNotes, style: STYLE, mood, duration, durationIsEstimate: true,
+    status: "Draft", transition, characters: who(...chars),
     // Order matters to the video prompts: the first line that mentions sound becomes the soundscape, and
     // lines of the form NAME: words are read as dialogue, so the labels here are mixed case on purpose.
     notes: [
@@ -181,14 +237,14 @@ const shots = [
       ...(cues[i + 1] || []),
       `Script: "${quote}"`,
       "",
-      "Style: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). No picture yet: this card holds the shot's slot. The thing in the crate is never named, shown or described.",
+      "Style: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
     ].join("\n"),
   };
 });
 assert.equal(details.length, shots.length, "one set of details per shot");
 
 const notes = [
-  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " shots with no pictures yet. Acts one to three come next.", ["Read first"]],
+  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " painted boards drawn against the continuity sheets in public/images/hangar/. Acts one to three come next.", ["Read first"]],
   ["look", "The look: Painted Americana '75", "Painted, not photographed: warm dashboard amber against deep blue night, gouache fog in the hollows, soft hand-painted skies. Characters are drawn plainly and with weight, with strong silhouettes and believable acting, in the manner of 1950s to 1970s American animation (wood paneling, station wagons, diner chrome, AM radios).\n\nThe Iron Giant for the people, Studio Ghibli for the places. People and vehicles have real mass: no squash and stretch, no cartoon takes; motion is drawn with smears, not blur. Backgrounds are layered multiplane paintings with atmosphere in every layer: fog, cloud, wet leaves, weathered paint. Light always comes from something in the world: dashboard amber, hangar sodium, road-flare crimson, moon blue. Gentle film grain, soft halation on lamps, 16:9 full-bleed. The camera is patient and leaves room for silence. It is the house style 'Painted Americana '75' in every shot's style picker, and every scene and shot in this workspace already carries it.", ["Look", "Style"]],
   ["seeds", "Seeds the cold open plants", "1. The nurse's cap and the snapped-off mirror lead the agents and the detective to the boy's house by different routes.\n2. The rhythm (three quick, one slow) ties the airman, the pilot and the machine together before any character notices.\n3. The uncrossed marks in the dark corner are the act-two flip: it was not counting days served, it was counting days left. Decide the exact number now; it sets the length of the film's clock.\n4. The coffee ring leaves an open question: did the sergeant know it was awake?\n5. The airman is the only one who hears the clicks at the end: he is the government's way in to the boy, and the audience's.", ["Plot", "Setups"]],
   ["rules", "Rules and sound", "Nobody says alien, robot or UFO. Flares, not flashlight beams, outdoors. One recording of the three-quick-one-slow rhythm, used in 1944, in the trailer and in the woods. Never show what the pilot shot; never show what is in the crate. The 1975 setting is deliberate: Church Committee, post-Watergate paranoia, Blue Book already closed.", ["Rules", "Sound"]],
@@ -206,11 +262,11 @@ const brainstorm = [
 const project = {
   id: projectId,
   title: "Untitled (working title): the cold open",
-  description: "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, " + scenes.length + " scenes, " + shots.length + " shots, almost no dialogue, in the house style Painted Americana '75. No pictures yet.",
+  description: "The cold open of an animated 1975 feature: a pilot who sounds amazed, a crate marked INERT, a truck, a near-miss, and a crate that is empty. About six minutes, " + scenes.length + " scenes, " + shots.length + " shots, almost no dialogue, in the house style Painted Americana '75, with a painted board on every shot.",
   genre: "Animated mystery",
   format: "Feature",
   status: "In development",
-  coverImage: "",
+  coverImage: "/images/hangar/sheets/key-art.jpg",
   acts: [{ id: ACT, title: "Cold open: 1944 to the creek", description: "A pilot, a hangar, a truck, a swerve, a fall and an empty crate. Nobody says what it is." }],
   scenes, frames: shots, characters: cast, notes, brainstorm, moodboards: [], script,
   shareId: null, createdAt, updatedAt: createdAt,
