@@ -18,6 +18,12 @@ A second bundled project, separate from Nobody's Witness. Open it from **Templat
 - **Checks:** `npm run verify:hangar` asserts the style on every scene and shot, mood, lighting direction, transitions, and that prompts for all 15 platforms carry the style and never name the thing in the crate.
 - **The style picker's example** for Painted Americana '75 is the project's own `public/images/styles/painted-americana-75.jpg` (the truck climbing into the foggy hollows), and the project's cover is `public/images/hangar/sheets/key-art.jpg`.
 
+## Retakes (7 October 2026)
+
+The review's faults are being fixed on the evidence: **six of the boards named in [`review-2026-10-07.md`](review-2026-10-07.md) are retaken — 14, 16, 17, 18, 25 and 26** — and the rest of that list is the queue for the next session. Every retake goes in over the shot's own filename with the outgoing study copied to `public/images/hangar/archive/<scene>/<name>--v1.jpg` **before** the new bytes land, and the card keeps a note of what changed and where the old take is. Nothing in the archive was edited, and `verify:images` now guards this project's folders the same way it guards Nobody's Witness's: `public/images/hangar/` is compared against its own `archive/`, so an overwrite without a backup fails CI. The studio is `node scripts/hangar/retake-install.mjs <raw.png> <board.jpg>`; it trims any black bar the model adds, centres the frame to exact 16:9 and writes the folder's 1376×768. The six before/afters are on one sheet: `public/images/hangar/reviews/retakes-2026-10-07.jpg`.
+
+**Two caveats are in the boards and not hidden here:** shot 25's new board is brighter and bluer than its scene's "almost no light" note (right content, wrong key — a director's call), and shot 17's superseded study was a portrait-shaped oddity rather than a board, kept in the archive like everything else.
+
 ## Refreshing a saved copy (7 October 2026)
 
 A copy already in a workspace is brought up to the current bundle every time it is read (`hangarUpdates` in `src/lib/hangar.ts`, run from `src/lib/projects.ts`). A field is replaced only when its saved value is still one the bundle shipped before; anything the owner wrote, any custom picture, and any frame or scene they added or deleted is left alone. The shipped values are kept as hashes in `src/lib/hangar-sync.json`. **Before changing the bundle, run `npm run sync:hangar`** (records the committed version), then `npm run build:hangar`; `verify:hangar` tests the refresh against the first shipped version.
