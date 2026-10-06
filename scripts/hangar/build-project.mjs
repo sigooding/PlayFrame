@@ -148,14 +148,20 @@ const keyframes = {
   11: "s3/11-into-the-hills.jpg",
   12: "s3/12-the-cab.jpg",
   13: "s3/13-a-knock-from-the-trailer.jpg",
+  14: "s3/14-one-two-three-four.jpg",
+  15: "s3/15-the-slow-one-never-arrives.jpg",
+  16: "s4/16-headlights-round-the-bend.jpg",
+  17: "s4/17-two-more-miles.jpg",
+  18: "s4/18-both-drivers-yank-the-wheel.jpg",
+  19: "s4/19-the-mirror-the-cap.jpg",
+  20: "s4/20-the-skid.jpg",
+  21: "s4/21-the-missing-knock.jpg",
+  22: "s4/22-over-the-edge.jpg",
+  23: "s5/23-down-the-bank.jpg",
 };
 // The files the remaining boards are waiting for: shot number -> the path its card names.
 const pending = {
-  14: "s3/14-one-two-three-four.jpg", 15: "s3/15-the-slow-one-never-arrives.jpg",
-  16: "s4/16-headlights-round-the-bend.jpg", 17: "s4/17-two-more-miles.jpg",
-  18: "s4/18-both-drivers-yank-the-wheel.jpg", 19: "s4/19-the-mirror-the-cap.jpg",
-  20: "s4/20-the-skid.jpg", 21: "s4/21-the-missing-knock.jpg", 22: "s4/22-over-the-edge.jpg",
-  23: "s5/23-down-the-bank.jpg", 24: "s5/24-inside-the-crate.jpg", 25: "s5/25-by-the-creek.jpg",
+  24: "s5/24-inside-the-crate.jpg", 25: "s5/25-by-the-creek.jpg",
   26: "s6/26-taillights.jpg", 27: "s6/27-road-flares.jpg", 28: "s6/28-the-white-cap.jpg",
   29: "s6/29-where-is-it.jpg", 30: "s6/30-down-through-red-fog.jpg",
   31: "s7/31-empty.jpg", 32: "s7/32-the-hollow-in-the-straw.jpg", 33: "s7/33-inert-in-the-creek.jpg",
@@ -242,7 +248,7 @@ for (const shot of shots) {
 }
 
 const notes = [
-  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " shots, " + Object.keys(keyframes).length + " of them with draft pictures (scenes 1 to 3; scene 1 is black on purpose) and the rest holding their slots. Acts one to three come next.", ["Read first"]],
+  ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " shots, " + Object.keys(keyframes).length + " of them with draft pictures (scenes 1 to 5 so far; scene 1 is black on purpose) and the rest holding their slots. Acts one to three come next.", ["Read first"]],
   ["look", "The look: Painted Americana '75", "Painted, not photographed: warm dashboard amber against deep blue night, gouache fog in the hollows, soft hand-painted skies. Characters are drawn plainly and with weight, with strong silhouettes and believable acting, in the manner of 1950s to 1970s American animation (wood paneling, station wagons, diner chrome, AM radios).\n\nThe Iron Giant for the people, Studio Ghibli for the places. People and vehicles have real mass: no squash and stretch, no cartoon takes; motion is drawn with smears, not blur. Backgrounds are layered multiplane paintings with atmosphere in every layer: fog, cloud, wet leaves, weathered paint. Light always comes from something in the world: dashboard amber, hangar sodium, road-flare crimson, moon blue. Gentle film grain, soft halation on lamps, 16:9 full-bleed. The camera is patient and leaves room for silence. It is the house style 'Painted Americana '75' in every shot's style picker, and every scene and shot in this workspace already carries it.", ["Look", "Style"]],
   ["seeds", "Seeds the cold open plants", "1. The nurse's cap and the snapped-off mirror lead the agents and the detective to the boy's house by different routes.\n2. The rhythm (three quick, one slow) ties the airman, the pilot and the machine together before any character notices.\n3. The uncrossed marks in the dark corner are the act-two flip: it was not counting days served, it was counting days left. Decide the exact number now; it sets the length of the film's clock.\n4. The coffee ring leaves an open question: did the sergeant know it was awake?\n5. The airman is the only one who hears the clicks at the end: he is the government's way in to the boy, and the audience's.", ["Plot", "Setups"]],
   ["rules", "Rules and sound", "Nobody says alien, robot or UFO. Flares, not flashlight beams, outdoors. One recording of the three-quick-one-slow rhythm, used in 1944, in the trailer and in the woods. Never show what the pilot shot; never show what is in the crate. The 1975 setting is deliberate: Church Committee, post-Watergate paranoia, Blue Book already closed.", ["Rules", "Sound"]],

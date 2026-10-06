@@ -31,8 +31,8 @@ assert(delivered.every(f => f.image.startsWith("/images/hangar/")), "every pictu
 assert(delivered.every(f => existsSync(join(root, "public", f.image))), "every picture a card points at is on disk");
 assert(delivered.every(f => f.status === "Draft" && /^Picture: /m.test(f.notes)), "a boarded shot is a Draft and its note names its picture");
 assert(project.frames.filter(f => f.image === "").every(f => f.status === "Needs review" && /No picture yet: this card holds the shot's slot and is waiting for public\/images\/hangar\//.test(f.notes)), "an unboarded shot keeps an honest placeholder naming the file it awaits");
-assert.equal(delivered.length, 13, "13 of the 39 shots are boarded (scenes 1 to 3)");
-assert.deepEqual(delivered.map(f => f.shotNumber), [1,2,3,4,5,6,7,8,9,10,11,12,13], "the delivered run is shots 1-13, in order");
+assert.equal(delivered.length, 23, "23 of the 39 shots are boarded (scenes 1 to 4 complete, scene 5 begun)");
+assert.deepEqual(delivered.map(f => f.shotNumber), Array.from({ length: 23 }, (_, i) => i + 1), "the delivered run is shots 1-23, in order, with no gaps");
 for (const frame of delivered) {
   const size = execFileSync("identify", ["-format", "%wx%h", join(root, "public", frame.image)], { encoding: "utf8" });
   assert.equal(size, "1920x1080", `shot ${frame.shotNumber}: every picture is 16:9 full-bleed 1920x1080`);
