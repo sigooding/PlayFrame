@@ -11,7 +11,9 @@
 //      renumbered, never pointed at another shot's file.
 //   2. A retake is a NEW file at a new path. If a picture must replace a shot's own file in place,
 //      the old file is copied to public/images/hangar/archive/<scene>/<name>--v<N>.jpg and committed
-//      BEFORE the new one is installed; the archive is append-only.
+//      BEFORE the new one is installed; the archive is append-only. `install-picture.mjs --replace`
+//      enforces this: it refuses an in-place replacement until it can see the archived predecessor.
+//      Two frames have used it — 12 and 17, archived as --v1.
 //   3. A shot with no picture yet keeps image "" and status "Needs review". A shot with a picture
 //      is "Ready" — the app's word for a card that is not missing anything — and its `note` carries
 //      the honest word about the study, including that it is a draft awaiting the director's eye.
@@ -71,7 +73,7 @@ export const FRAMES = {
   },
   12: {
     image: "/images/hangar/s3/12-the-cab.jpg",
-    note: "A study with one honest fault: the trucker and the airman read correctly in the cab, dash amber on both faces with fog and night beyond the glass, but the cab has no windscreen frame or roof drawn over them, and the radio carries a green display 1975 never had. This frame is the head of the next pass's retake queue; its replacement gets a new filename and this file is archived first.",
+    note: "Retake (the first study, whose cab had no windscreen frame and a green display 1975 never saw, is archived as archive/s3/12-the-cab--v1.jpg): the enclosed cab now reads correctly — windshield header, roof liner, sun visor, side glass and pillars, round analog gauges and a period AM radio with a needle dial, dash amber on both faces. Two honest flaws remain: a pale band along the top right edge of the glass, and the dark trailer through the rear glass that the first study had is no longer readable.",
   },
   16: {
     image: "/images/hangar/s4/16-headlights-round-the-bend.jpg",
@@ -79,7 +81,39 @@ export const FRAMES = {
   },
   17: {
     image: "/images/hangar/s4/17-two-more-miles.jpg",
-    note: "Delivered as a study, awaiting the director's eye: the cap, the coat and the ID badge are all readable, the slow blink is caught mid-drop, and the first white glare of oncoming headlights crosses her eyes at the frame edge. She reads older than the brief's thirty-four; exhaustion is the intent, but a retake could pull her closer to the age.",
+    note: "Retake on the director's note — prettier, and full-bleed: the first study (now archive/s4/17-two-more-miles--v1.jpg) carried a printer's white frame around the picture, which is a generation artefact and is gone. She reads thirty-four and pretty now — soft regular features, dark lashes, warm face — while keeping the exhaustion in the slow blink. Cap, coat and clipped badge all read; the oncoming glare crosses her eyes at the left edge. Her hand on the wheel is a shade heavy, small in frame.",
+  },
+  5: {
+    image: "/images/hangar/s2/05-guard-booth-tv.jpg",
+    note: "Delivered as a study, awaiting the director's eye: the period set reads exactly — rabbit ears, two dials, a small curved screen carrying the committee and its raised gavel in blue-white flicker, a mug, a clipboard and a dented thermos on the shelf, the emptied hangar and its sodium lamps through the booth glass. The clipboard's writing is pseudo-hand and stays unreadable, which is what the rule asks.",
+  },
+  6: {
+    image: "/images/hangar/s2/06-wright-field-1944-inert.jpg",
+    note: "Delivered as a study, awaiting the director's eye: the stencil WRIGHT FIELD 1944 - INERT is crisply legible, one bare lamp pools hard top light onto the crate with deep shadow beneath, the coffee ring is worn into the lid and readable, the floor around it is empty and dark. Low angle so the crate looms; nobody in frame reads it aloud.",
+  },
+  7: {
+    image: "/images/hangar/s2/07-the-coffee-ring.jpg",
+    note: "Delivered as a study, awaiting the director's eye: top-down on the lid, the dark ring worn into the grain, the sergeant's chipped blue enamel mug sitting exactly in it, steam rising, his weathered hand caught lifting it off. The mug is enamel-blue per his cast sheet; the ring is the point.",
+  },
+  8: {
+    image: "/images/hangar/s2/08-hand-flat-on-the-lid.jpg",
+    note: "Delivered as a study, awaiting the director's eye: the old hand rests flat and still on the lid, warm lamp bounce on the back of the hand and on the worn wood, the face out of frame above. The fingers run a little sinewy and the faint ghost of reversed stencil on the lid reads as wear; neither fights the beat.",
+  },
+  23: {
+    image: "/images/hangar/s5/23-down-the-bank.jpg",
+    note: "Delivered as a study, and the pass's strongest: painted monochrome-blue moonlight, the crate tumbling into a trunk with boards spinning away, ferns and wet bark layered with real depth, nothing thrown clear of it and nothing visible inside. The stencil is weathered to gibberish (unreadable by design); the crate reads a little small against the trunks.",
+  },
+  27: {
+    image: "/images/hangar/s6/27-road-flares.jpg",
+    note: "Delivered as a study, awaiting the director's eye: the trucker crouches to light the flare, sparks spitting; the flatbed and trailer stand slewed across the wet road; the sedan has stopped at an angle and both agents are out, the near one already looking down the bank. The flare's crimson is the only key on the men — no flashlight anywhere. Two honest flaws: the spark burst reads closer to a firework than a road flare, and the agents' cut reads a little anachronistic against the 1975 brief.",
+  },
+  31: {
+    image: "/images/hangar/s7/31-empty.jpg",
+    note: "Delivered as a study, awaiting the director's eye: the crate lies split open in the shallows, boards scattered, straw spilled into the water, and the open interior is pure empty shadow — nothing inside, no shape, no figure. One agent stands with the flare held low, face lit hard from below; the second is a backlit dark shape. An anticlimax, not a shock. The pines around the creek read Northern European rather than Ohio; a retake should go bare deciduous.",
+  },
+  36: {
+    image: "/images/hangar/s7/36-the-far-corner.jpg",
+    note: "Delivered as a study, awaiting the director's eye: the flare's red only just reaches the nearest boards, the few tally marks sit in near-darkness with no cross-stroke through any of them, and the rest of the frame falls to black. Nobody is in shot and nobody looks here, which is the shot.",
   },
 };
 
