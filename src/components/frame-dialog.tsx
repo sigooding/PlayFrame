@@ -7,7 +7,7 @@ import { CAMERA_ANGLES, CAMERA_MOVEMENTS, LENSES, SHOT_TYPES, TRANSITIONS, type 
 import { applyShotType, isShotReference, shotGuide } from "@/lib/shots";
 import { LightingPicker } from "./lighting-picker";
 import { VisualStylePicker } from "./style-picker";
-import { DEFAULT_STYLE_ID } from "@/lib/styles";
+import { DEFAULT_STYLE_ID, VISUAL_STYLES } from "@/lib/styles";
 import { relationLines } from "@/lib/relations";
 import { buildFramePrompt, extractNegativePrompt, extractPositivePrompt, PLATFORMS, type PlatformId, type PlatformKind } from "@/lib/prompt";
 import { IMAGE_TYPES, projectImages, resizeImage } from "@/lib/image";
@@ -48,7 +48,12 @@ export function FrameDialog({ frame, scenes, characters = [], project, isNew, fr
   const [browsing, setBrowsing] = useState(false);
   const imageLibrary = useImageLibrary();
   const [platform, setPlatform] = useState<PlatformId>("hailuo");
-  const [style, setStyle] = useState<string>(DEFAULT_STYLE_ID);
+  // The AI prompt starts from the look the shot already has: its own style, else its scene's, else the default.
+  const [style, setStyle] = useState<string>(() => {
+    const known = (id?: string) => !!id && VISUAL_STYLES.some(entry => entry.id === id);
+    const sceneStyle = scenes.find(scene => scene.id === frame.sceneId)?.style;
+    return known(frame.style) ? frame.style! : known(sceneStyle) ? sceneStyle! : DEFAULT_STYLE_ID;
+  });
   const [categoryFilter, setCategoryFilter] = useState<"all" | PlatformKind>("all");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const uploadRef = useRef<HTMLInputElement>(null);
