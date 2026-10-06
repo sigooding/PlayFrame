@@ -29,7 +29,7 @@ She asked me to come. Kaneko. She said I should see where Mara was.
 
 In her hands, a small cloth bag with one strap frayed. Kaneko put it there at the door.
 
-She looks around the tiny room. The bare bulb. The flour sacks. And on the wall, taped up with rice-paper tape, pages from Mara's sketchbook: drawings of the noodle counter, but from the inside now. From behind the curtain. The back of a head on the third stool.
+She looks around the tiny room. The bare bulb. The flour sacks. And on the wall, taped up with rice-paper tape, pages from Mara's sketchbook: drawings of the noodle counter, but from the inside now. From behind the curtain. The back of a head.
 
 Vera walks to the wall. Looks at the drawing for a long time.
 

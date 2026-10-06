@@ -28,7 +28,7 @@ pass("one 99A contains demolition/old stools before a dissolve to the revised pl
 assert(current["15"].includes("dense, self-built block") && current["15"].includes("forgotten it is there"));
 for (const phrase of ["Eat.", "Has anyone... come? Asking?", "Nobody comes here who isn't lost.", "The rice goes cold in Mara's lap."]) assert(current["25"].includes(phrase));
 assert(current["25"].includes("Don't let them have it.") && !current["25"].includes("Your father. It was not what they say."));
-assert(current["17"].includes("She looks at the empty third stool beside him."));
+assert(current["17"].includes("Jack looks at the counter under his hands.") && !current["17"].includes("third stool"));
 assert(!current["17"].includes("hoarding across the street"));
 assert(current["40"].includes("MASKED LEADER (40s)") && current["40"].includes("His face stays behind the mask"));
 assert(current["51"].includes("Tokyo spread out below in the rain like a circuit board"));
@@ -40,7 +40,10 @@ pass("lost introductions/bonding and only-tea restored without undoing deliberat
 
 const statement = "VERA\nIshida left a statement. He acted alone.\n\nJACK\nIs that what it says?\n\nVERA\nThat's what the police say it says.\n\n";
 const stripped98 = current["98"].replace('SUPER: "FIVE DAYS LATER"\n\n', "").replace(statement, "");
-assert.equal(stripped98, before["98"], "Every other byte of the full rooftop scene survives");
+// 6 October 2026 (director): the third-stool line is cut from the rooftop; everything else of the pre-revision scene survives.
+const expected98 = before["98"].replace("She's taking the sign. And the stools.\n(beat)\nShe says the third one's still mine.\n", "She's taking the sign.\n");
+assert.notEqual(expected98, before["98"], "the pre-revision rooftop carried the stool line the director cut");
+assert.equal(stripped98, expected98, "Every other byte of the full rooftop scene survives");
 assert(current["98"].includes('SUPER: "FIVE DAYS LATER"'));
 for (const number of ["85", "87", "91", "92"]) assert.equal(current[number], before[number], `${number} must be unchanged`);
 assert(current["91"].includes("A train. It arrives") && current["91"].includes("rung by rung"));

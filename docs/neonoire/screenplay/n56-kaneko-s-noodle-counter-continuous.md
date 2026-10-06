@@ -32,12 +32,6 @@ You remember him?
 
 KANEKO
 (in Japanese)
-Your father used to sit on the third stool.
-
-Vera looks at it. She moves along to it and sits.
-
-KANEKO
-(in Japanese)
 And you. You ate everything on his plate.
 
 She sets a bowl of noodles in front of Vera. Vera looks at it. Her eyes fill.

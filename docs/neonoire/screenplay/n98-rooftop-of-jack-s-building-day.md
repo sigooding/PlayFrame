@@ -123,9 +123,7 @@ She takes it from her coat pocket. Looks at it. Opens it. Closes it.
 She doesn't give it back. She puts it away again.
 
 VERA
-Kaneko's opening a new place. Near the station, under the arches. She's taking the sign. And the stools.
-(beat)
-She says the third one's still mine.
+Kaneko's opening a new place. Near the station, under the arches. She's taking the sign.
 
 She walks to the rooftop door. Stops. Doesn't look back.
 
