@@ -3,7 +3,7 @@
 A second bundled project, separate from Nobody's Witness. Open it from **Templates → "Untitled: the cold open"**; it adds itself once and never overwrites your edits.
 
 - **Source:** `docs/hangar/cold-open.fountain` is the screenplay. `npm run build:hangar` regenerates `public/projects/hangar-cold-open.json` from it (every shot's script quote must exist in the pages); `npm run verify:hangar` checks the bundle.
-- **Contents:** 8 scenes, 39 shots, 7 cast cards, notes (the look, the seeds, the rules, the open questions) and brainstorm cards. **10 of the 39 shots now carry their own draft keyframes** (shots 4-13, the hangar and the cab); the rest still hold their slot and say they need review. Nothing is borrowed from Nobody's Witness.
+- **Contents:** 8 scenes, 39 shots, 7 cast cards, notes (the look, the seeds, the rules, the open questions) and brainstorm cards. **20 of the 39 shots now carry their own draft keyframes** (shots 4-23, the hangar through the fall); the rest still hold their slot and say they need review. Nothing is borrowed from Nobody's Witness.
 - **Rules from the brief:** nobody says alien, robot or UFO; flares, never flashlight beams; one recording of "three quick, one slow" used in 1944, in the trailer and in the woods; never show what the pilot shot or what was in the crate.
 - **Open:** the title; the number of uncrossed marks (the film's clock); why it moves now; whether the airman crosses sides; whether the sergeant is the old pilot.
 - **Image rule:** the project's own pictures will live under `public/images/hangar/`. The never-overwrite, archive and `verify:images` rules in `CLAUDE.md` apply to them from the first picture.
@@ -27,4 +27,12 @@ Ten generations, the session budget, on the first ten picturable shots in screen
 - The builder's `images` map (`scripts/hangar/build-project.mjs`) is the one place a delivered frame is declared; the verifier checks each file exists, is under `/images/hangar/`, and is marked Draft.
 - The never-overwrite rule now binds these ten: a retake gets archived to `public/images/hangar/archive/` first.
 - Contact sheet: `public/images/hangar/reviews/first-pictures-2026-10-07.jpg`.
-- Next: shots 14-23 (the missed knock, the swerve, the cap and the mirror, the fall).
+
+## Second pass: the swerve and the fall (7 October 2026)
+
+Ten more generations, shots **14-23** in screenplay order: **14** the knee tapped along with the knocks, **15** the raised finger waiting for a slow knock that never comes, **16** the wagon drifting over the centre line, **17** the nurse talking herself awake, **18** the near-miss, **19** the mirror and the cap in the air, **20** the trailer fishtailing, **21** the rear doors bursting open on nothing you can see, **22** the crate going over the edge, **23** the crate down the bank.
+
+- Same rules as pass 1: 1920x1080 16:9, `public/images/hangar/s3|s4|s5/`, Draft, generated from the script and the card alone.
+- **21 keeps the promise:** the open doors show darkness only; nothing in the trailer is drawn, so the skid and something inside stay equally possible.
+- Contact sheet: `public/images/hangar/reviews/swerve-2026-10-07.jpg`.
+- Next: shots 24-33 (inside the crate, the creek, the taillights, the flares, the cap on the asphalt, down through red fog).

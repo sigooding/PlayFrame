@@ -31,7 +31,7 @@ const withPictures = project.frames.filter(f => f.image !== "");
 assert(withPictures.every(f => f.image.startsWith("/images/hangar/") && f.status === "Draft"), "every delivered picture is this project's own and is marked Draft");
 assert(withPictures.every(f => existsSync(join(root, "public", f.image.slice(1)))), "every delivered picture exists on disk");
 assert(project.frames.every(f => f.image !== "" || f.status === "Needs review"), "a frame without a picture says it still needs one");
-assert.equal(withPictures.length, 10, "10 keyframes delivered (shots 4-13)");
+assert.equal(withPictures.length, 20, "20 keyframes delivered (shots 4-23)");
 assert(project.frames.slice(0, 3).every(f => f.image === "" && /held black/.test(f.notes)), "the 1944 radio shots stay black by design");
 assert(project.frames.every(f => project.scenes.some(s => s.id === f.sceneId)), "every frame belongs to a scene");
 assert.equal(new Set(project.frames.map(f => f.shotNumber)).size, project.frames.length, "shot numbers are unique");
