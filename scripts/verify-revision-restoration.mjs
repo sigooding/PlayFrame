@@ -49,7 +49,7 @@ assert(current["98"].includes('SUPER: "FIVE DAYS LATER"'));
 // Everything in the pre-revision scenes survives; these are the only additions.
 const alarm = {
   "85": ["Three hard strikes, iron on iron, run up the pipes overhead. Then again, farther off: a spoon on a radiator, a knuckle on a drainpipe, floor above floor. The Hive is passing it on.\n\n"],
-  "86": ["Kaneko lowers the ladle from the old iron water pipe by the stove. Three strikes were all it took: the alarm the Hive has kept for fifty years.\n\n"],
+  "86": ["KANEKO (CONT'D)\n(in Japanese)\nGo now. They will help you.\n\n", "Kaneko lowers the ladle from the old iron water pipe by the stove. Three strikes were all it took: the alarm the Hive has kept for fifty years.\n\n"],
   "87": ["The pipes have already told him. "],
   "90": ["Through the wardrobe, a barber's cramped shop with the chair turned to the wall, the barber holding the curtain aside with his scissors hand. Down four steps into a laundry where wet sheets hang in rows, parted at the last second by two women who pin them back behind the two of them. A shrine room: a grandmother lifts the altar cloth and a low hatch opens behind it. A plank laid across the gap between two balconies, a balcony bolted onto a balcony, held steady at both ends by men in vests. A pipe gallery where the pipes ring softly all around them, the alarm still passing from hand to hand.\n\n"],
 };

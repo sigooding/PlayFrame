@@ -30,5 +30,9 @@ KANEKO
 (in Japanese)
 I have lived here fifty years. They can come and find me.
 
+KANEKO (CONT'D)
+(in Japanese)
+Go now. They will help you.
+
 She pushes them toward the back.
 
