@@ -914,7 +914,7 @@ export const SCENES = [
     page: "n56-kaneko-s-noodle-counter-continuous.md", board: "n56-vera-on-the-third-stool.md",
     cast: ["Vera Voss", "Kaneko"],
     grammar: "35mm frontal to the counter, as always.",
-    description: "Vera on the third stool: I was here when I was a child. Kaneko freezes for just a second at the pot — he always paid too much. BOARDED — 2 shots (225, and 266, the count).",
+    description: "Vera on the third stool: I was here when I was a child. Vera lays the old photograph on the counter and Kaneko, looking from it to her, freezes for just a second at the pot — he always paid too much. BOARDED — 2 shots (225, and 266, the count).",
     lightingNotes: "Lunchtime steam and grey daylight.",
   },
   {

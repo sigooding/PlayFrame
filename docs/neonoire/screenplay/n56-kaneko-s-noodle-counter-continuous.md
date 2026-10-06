@@ -12,13 +12,15 @@ Lunchtime. Steam. Three customers.
 
 Vera sits at the counter.
 
-Kaneko turns from the pot, sees her, and freezes. Just for a second. Then she goes on working.
+Kaneko turns from the pot, glances at her, and goes on working.
 
 VERA
 (in Japanese)
 I'm sorry, I don't know what to order. I was here when I was a child. With my father. He always sat here.
 
-Kaneko looks at her for a long moment.
+She takes the old photograph from her bag and sets it on the counter: the American man, two small girls, the noodle shop sign.
+
+Kaneko looks at the photograph for a long moment. Then at Vera. She freezes, just for a second.
 
 KANEKO
 (in Japanese)
