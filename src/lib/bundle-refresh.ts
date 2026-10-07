@@ -5,6 +5,7 @@ import directorSync from "./neonoire-director-sync.json";
 import restorationSync from "./neonoire-restoration-sync.json";
 import scene6Sync from "./neonoire-scene6-sync.json";
 import coverageSync from "./neonoire-coverage-sync.json";
+import voiceSync from "./neonoire-voice-sync.json";
 
 const digest = (text: string) => createHash("sha256").update(text).digest("hex");
 const notesDigest = (text: string) => digest(text.replace(/(?:Generation )?Pass \d+ of \d+[^\n]*/g, "").trim());
@@ -98,7 +99,13 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     if (!arrived) return frame;
     let next = frame;
     if (frame.shotNumber === undefined && arrived.shotNumber !== undefined) next = { ...next, shotNumber: arrived.shotNumber };
-    if (!frame.audio?.length && arrived.audio?.length) next = { ...next, audio: arrived.audio };
+    // 7 October 2026: the recorded dialogue grew from 417 to 563 lines. A frame with no dialogue gets the bundle's; a frame still
+    // holding exactly the dialogue an earlier bundle shipped (its digest is in the voice sync) takes the new takes and offsets; a frame
+    // whose dialogue the writer edited keeps it. Either way the frame is lengthened, never shortened, so every line fits.
+    const voiced = (voiceSync.frames as Record<string, { audio: string }>)[frame.id];
+    if ((!frame.audio?.length && arrived.audio?.length) || (voiced && frame.audio?.length && fieldDigest(frame.audio) === voiced.audio && JSON.stringify(arrived.audio) !== JSON.stringify(frame.audio))) {
+      next = { ...next, audio: arrived.audio, duration: Math.max(frame.duration, arrived.duration) };
+    }
     if (isAwaitingKeyframe(frame) && arrived.image) {
       const defaultNotes = pendingNotesHashes[frame.id] === createHash("sha256").update(frame.notes).digest("hex");
       next = {

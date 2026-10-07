@@ -9,6 +9,11 @@ Voices are generated with ElevenLabs (`eleven_v4`, which takes emotion tags such
 | The audio files | `public/audio/neonoire/<scene>/<shot>-<character>-<words>.mp3` |
 | Attaches lines to frames at build time | `scripts/neonoire/voice.mjs` (used by `build-project.mjs`) |
 | Adds a take to the project | `scripts/neonoire/voice-ingest.mjs` |
+| Adds a whole plan of takes (replacing, retiring, laying out a frame's gaps) | `scripts/neonoire/voice-batch.mjs` |
+| Puts an alternate take in the game in place of the one in it | `scripts/neonoire/voice-swap.mjs` |
+| Retires takes whose words left the screenplay (archived as `*-cut-<date>`) | `scripts/neonoire/voice-retire.mjs` |
+| Lets a saved workspace take new dialogue | `scripts/neonoire/sync-voices.mjs` (writes `src/lib/neonoire-voice-sync.json`) |
+| Takes and voice designs that are not in the game (audition page) | [`alternates-2026-10-07.md`](alternates-2026-10-07.md), `public/audio/neonoire/alternates/` |
 | Builds the animatic with ffmpeg | `scripts/neonoire/animatic.mjs` |
 | Packages voiced shots for lipsync / video generation | `scripts/neonoire/voice-export.mjs` |
 | Superseded takes (kept, never deleted) | `docs/neonoire/voice/archive/` |
@@ -26,6 +31,8 @@ A frame can carry `audio`: a list of `{ id, character, text, src, offset, durati
 ## Recording a whole scene from a script
 
 A scene's lines can be planned in one JSON (`elevenlabs-plan-14A.json`: frame, speaker, tagged prompt, gap) with a human-readable script beside it (`elevenlabs-script-14A.md`, which also lists the house formatting rules). Generate each row, save the takes as `L01.mp3` … in one folder, then `node scripts/neonoire/voice-batch.mjs --plan <plan.json> --dir <folder> [--dry]` ingests them all and lays the gaps out.
+
+A plan can also span scenes and mix new lines with older ones (`elevenlabs-plan-missing-2026-10-07.json`, 160 lines over 51 frames): each line may carry its own `scene`, `id`, `voice`, `fx` and `generation`; `replace` re-records an older line in place (same id and path, the old take archived in its `history`); `retire` archives an older take that was recorded under the wrong speaker; and `frameOrder` gives the playing order of a frame that mixes new takes with older ones, so the older takes keep their offsets and are only pushed along when a new take would run into them. `--dry` prints where everything would land without writing anything.
 
 ## Re-recording a line
 
@@ -63,8 +70,8 @@ The renderer preserves edited within-scene order and leaves **Static** shots sti
 - Keep the script unchanged for voice work. Japanese-language lines are voiced in **English** for now, and Jack's too; characters who speak only Japanese use English placeholder voices.
 - A voice is final only when its ID is in `voices.json`. Designed previews are short-lived and must be saved to the ElevenLabs library first.
 - Never store a take only as a link. Ingest it.
-- Recorded so far (Jack and Vera only): scene 62 (9 lines) and scene 74 (7 lines) in `eleven_v4`, about 714 credits including the four retakes (29 September) that removed the whispers; plus two older-model pilot lines in scene 98 (redo in v4).
-- **No whispering.** Whispers and `[quietly]` read badly in these voices. Where a line is upset, use `[crying]`, `[voice breaking]` or `[trembling voice]` at speaking volume; where it is careful, leave it plain.
+- Recorded so far: **every spoken line of the screenplay** (561 takes after the 7 October 2026 pass, which added the 160 the games had been reading with text-to-speech; see "The 7 October 2026 pass" below). Two older-model pilot lines in scene 98 remain to redo in v4.
+- **No whispering.** Whispers and `[quietly]` read badly in these voices. Where a line is upset, use `[crying]`, `[voice breaking]` or `[trembling voice]` at speaking volume; where it is careful, leave it plain. Measured on 7 October 2026: `[quietly]`, `[softly]` and `[weakly]` on Jack and Vera come out about **10 dB under** their speaking level (−33 dB average against −24 dB; the whispered takes retaken on 29 September measured −28 to −36). Tags that kept speaking volume on the same lines: `[earnestly]`, `[tenderly]`, `[sadly]`, `[evenly]`, `[firmly]`, `[gently]`, `[flatly]`, `[dryly]`, `[curious]`, `[pleading]`, `[voice breaking]`, `[calling out]`. `[solemnly]` and `[wryly]` ran quiet. Measure a new batch before ingesting it (the average level of the active speech; `docs/neonoire/voice/alternates-2026-10-07.md` lists the numbers).
 - **Cost:** every model is about 1 credit per character; the bracketed emotion tags count as characters. So write plain lines with punctuation, and add a short tag (`[whispers]`, `[crying]`, `[voice breaking]`) only where the performance needs it. Estimate first (`estimate_only`), one take per line.
 - `text` in the manifest is the script line as spoken; `prompt` is the tagged text sent to ElevenLabs.
 - Scene 62 is a single board frame, so its dialogue stretches the frame to 27 seconds; add coverage shots when it is boarded properly.
@@ -75,3 +82,16 @@ The renderer preserves edited within-scene order and leaves **Static** shots sti
 - **Pauses on v4** are square-bracket tags, not braces: `[short pause]`, `[pause]`, `[long pause]`, placed where the beat falls. Use them for the beats the script marks ("A beat.", a long look) and sparingly, since a tag costs credits like any other characters.
 - **Animatic cuts are tight by default** (`animatic.mjs`): a voiced frame starts about 0.5 s before its first line and ends 0.4 s after its last; a silent frame holds at most 4 s (`--silent-max N` to change it, `--hold` for the board durations as they are). Board durations in the bundle are not changed.
 - **ElevenLabs allows 3 concurrent requests**: send generations in waves of 3-4, or one will fail on "Too many concurrent requests".
+
+## The 7 October 2026 pass: every spoken line voiced
+
+**Why.** The visual novel and scarlett-witness play a recorded take where one matches the screenplay line and read the rest with the browser's text-to-speech. 160 of 546 spoken lines had no take (17 more takes were recorded but matched nothing, because their lines had been reworded). The importer (`tools/import-playframe.mjs` in nobodys-witness) now reports **546 of 546 voiced**.
+
+**What.** 160 takes in `eleven_v4`, one per line, plan in [`elevenlabs-plan-missing-2026-10-07.json`](elevenlabs-plan-missing-2026-10-07.json): 146 new lines (scene 14A's 36 among them); 13 reworded lines re-recorded under their old ids (their old takes are in each line's `history`); and one take recorded under the wrong speaker (Jack's reading of Mara's "Is she okay? Is she — does she know you're —") retired to the archive and replaced by a Mara take. The two cassette lines in scene 82 use a new younger Sakai voice (`SAKAI (TAPE)` in `voices.json`) and `fx: tape`, as do Kurose's two. Phone lines (the Mother, the vending machine, Ishida's call: `fx: phone`) carry their filter in the manifest, as before. Two takes of lines that are no longer in the screenplay ("Because they didn't find it." in 12, "People draw the places they want to go." in 14) were retired to `archive/*-cut-2026-10-07.mp3`.
+
+**Frames.** Where a new take shares a frame with older ones, the older ones keep their offsets unless the new take runs into them (15 were pushed along or re-spaced, by 0.6 to 25 s). In frame 202 (scene 25) the long answer "It's the only thing I know how to do with it…" was also moved from the end of the frame to its place after "You drew this."; the bundle's frame durations grew to fit (the builder lengthens, never shortens). Saved workspaces: a frame that still holds the dialogue the earlier bundle shipped takes the new takes and offsets, a frame whose dialogue was edited keeps it, and silent frames gain theirs (`scripts/neonoire/sync-voices.mjs`, replayed by `verify:revision:neonoire`).
+
+**Takes and voices that did not make it** are kept: see [`alternates-2026-10-07.md`](alternates-2026-10-07.md) and `public/audio/neonoire/alternates/2026-10-07/index.html`.
+
+**Reaching the games.** In nobodys-witness: `node tools/import-playframe.mjs --from <PlayFrame checkout>` (copies the new takes into `public/voice/`, rewrites `src/story/story.json`). In scarlett-witness: copy that `src/story/story.json` to `src/film/story.json`, then `node tools/build-film-story.mjs`. Both games ship their own copy of every voice file, so a swap (or any new take) has to be re-imported.
+

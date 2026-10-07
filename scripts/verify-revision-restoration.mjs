@@ -209,6 +209,34 @@ assert(!bundledFrameUpdates(editedCoverage3, project)?.frames?.some(frame => cov
 pass("a saved default receives all eight coverage frames 369–376 at their beats, once; edits, deliberate deletion and custom scripts are protected");
 
 
+// 7 October 2026: the 160 lines the games read with text-to-speech were recorded. A saved workspace still holding a frame's earlier
+// dialogue takes the new takes and offsets (and the frame is lengthened to fit); a frame whose dialogue the writer edited keeps it;
+// frames that had no dialogue gain it.
+const voiceBefore = JSON.parse(read("docs/neonoire/baseline/voice-pre-audit-2026-10-07.json"));
+const beforeVoices = structuredClone(project);
+for (const [id, prior] of Object.entries(voiceBefore.frames)) {
+  const frame = beforeVoices.frames.find(f => f.id === id);
+  if (prior.audio) frame.audio = structuredClone(prior.audio); else delete frame.audio;
+  frame.duration = prior.duration;
+}
+const voicePatch = bundledFrameUpdates(beforeVoices, project);
+assert(voicePatch, "a workspace on the earlier dialogue receives the new dialogue");
+for (const id of Object.keys(voiceBefore.frames)) {
+  const got = voicePatch.frames.find(f => f.id === id), want = project.frames.find(f => f.id === id);
+  assert.deepEqual(got.audio, want.audio, `${id} takes the recorded dialogue`);
+  assert(got.duration >= want.duration, `${id} is long enough for its lines`);
+}
+const voicedBefore = Object.entries(voiceBefore.frames).filter(([, prior]) => prior.audio).map(([id]) => id);
+assert(voicedBefore.length >= 15 && voicedBefore.length < Object.keys(voiceBefore.frames).length, "some of the changed frames were voiced before, some were silent");
+const editedVoice = structuredClone(beforeVoices);
+const writerEdit = editedVoice.frames.find(f => f.id === "neonoire-shot-166");
+writerEdit.audio[0].offset += 1;
+const editedVoicePatch = bundledFrameUpdates(editedVoice, project);
+assert.deepEqual(editedVoicePatch.frames.find(f => f.id === "neonoire-shot-166").audio, writerEdit.audio, "a frame whose dialogue the writer moved keeps their version");
+assert.deepEqual(editedVoicePatch.frames.find(f => f.id === "neonoire-shot-202").audio, project.frames.find(f => f.id === "neonoire-shot-202").audio, "and the untouched frames still take the new takes");
+assert.equal(bundledFrameUpdates({ ...beforeVoices, ...voicePatch }, project), null, "the dialogue refresh is idempotent");
+pass(`a saved workspace holding the earlier dialogue takes the 7 October takes (${voicedBefore.length} voiced frames change, ${Object.keys(voiceBefore.frames).length - voicedBefore.length} silent ones gain theirs); a writer's edited frame keeps its own`);
+
 const voice = JSON.parse(read("docs/neonoire/voice/manifest.json"));
 for (const id of ["s13-kaneko-gruffly-eat", "s13-mara-hesitantly-thank-you-has-anyone-come", "s13-kaneko-flatly-nobody-comes-here-who-isn"]) assert.equal(voice.lines.find(line => line.id === id)?.frameId, "neonoire-shot-202");
 assert(!voice.lines.some(line => line.id === "s25-mara-he-knew-me-he-saw-me"));
