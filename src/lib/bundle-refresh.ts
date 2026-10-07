@@ -102,8 +102,8 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     // 7 October 2026: the recorded dialogue grew from 417 to 563 lines. A frame with no dialogue gets the bundle's; a frame still
     // holding exactly the dialogue an earlier bundle shipped (its digest is in the voice sync) takes the new takes and offsets; a frame
     // whose dialogue the writer edited keeps it. Either way the frame is lengthened, never shortened, so every line fits.
-    const voiced = (voiceSync.frames as Record<string, { audio: string }>)[frame.id];
-    if ((!frame.audio?.length && arrived.audio?.length) || (voiced && frame.audio?.length && fieldDigest(frame.audio) === voiced.audio && JSON.stringify(arrived.audio) !== JSON.stringify(frame.audio))) {
+    const voiced = (voiceSync.frames as Record<string, { audio: string | string[] }>)[frame.id];
+    if ((!frame.audio?.length && arrived.audio?.length) || (voiced && frame.audio?.length && ([] as string[]).concat(voiced.audio).includes(fieldDigest(frame.audio)) && JSON.stringify(arrived.audio) !== JSON.stringify(frame.audio))) {
       next = { ...next, audio: arrived.audio, duration: Math.max(frame.duration, arrived.duration) };
     }
     if (isAwaitingKeyframe(frame) && arrived.image) {

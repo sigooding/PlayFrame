@@ -1,0 +1,287 @@
+{
+  "note": "Mrs. Sakai (scene 29) and Mrs. Noda (scenes 32, 33, 37, 44) re-recorded in their own designed voices (Mrs. Sakai - NEONOIRE, Mrs. Noda - NEONOIRE) instead of Kaneko's, under their old ids; the old takes are archived and kept in each line's history. Same wording and tags except S04, whose [quietly] (a whisper at about -10 dB) became [sadly].",
+  "model": "eleven_v4",
+  "flow": "daOh3TQNIdZc0D7em06b",
+  "generated": "2026-10-07",
+  "lines": [
+    {
+      "key": "S01",
+      "scene": "29",
+      "frame": "neonoire-shot-206",
+      "who": "MRS. SAKAI",
+      "voice": "RWRdNUkZ6UAfbVJPXrFG",
+      "prompt": "We haven't lived together in fifteen years. The police already came.",
+      "gap": 0.3,
+      "replace": "s29-mrssakai-we-haven-t-lived-together-in",
+      "id": "s29-mrssakai-we-haven-t-lived-together-in",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "bzuSchxSJCxRyDu5DCqa",
+        "id": "6p2L0DkQebIUdHbFprfw"
+      }
+    },
+    {
+      "key": "S02",
+      "scene": "29",
+      "frame": "neonoire-shot-206",
+      "who": "MRS. SAKAI",
+      "voice": "RWRdNUkZ6UAfbVJPXrFG",
+      "prompt": "Then what are you?",
+      "gap": 1.0,
+      "replace": "s29-mrssakai-then-what-are-you",
+      "id": "s29-mrssakai-then-what-are-you",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "PxSEB6JhyrD81Octt8nB",
+        "id": "FIXQqBknYsDgBln1MTsl"
+      }
+    },
+    {
+      "key": "S03",
+      "scene": "29",
+      "frame": "neonoire-shot-273",
+      "who": "MRS. SAKAI",
+      "voice": "RWRdNUkZ6UAfbVJPXrFG",
+      "prompt": "He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head. [pause] Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl. [pause] When the doctor told him, he said he was glad. He said now he could stop being afraid of the wrong thing.",
+      "gap": 0.4,
+      "replace": "s29-mrssakai-he-started-going-to-temple-last",
+      "id": "s29-mrssakai-he-started-going-to-temple-last",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ibC8tVTmE3Wg9OazhuKa",
+        "id": "QfPsR02JmioBO3UBMVVz"
+      }
+    },
+    {
+      "key": "S04",
+      "scene": "29",
+      "frame": "neonoire-shot-273",
+      "who": "MRS. SAKAI",
+      "voice": "RWRdNUkZ6UAfbVJPXrFG",
+      "prompt": "[sadly] Every January. Cash, in an envelope. Twenty years. Even after he left, the receipts kept coming here.",
+      "gap": 0.96,
+      "replace": "s29-mrssakai-every-january-cash-in-an-envelope",
+      "id": "s29-mrssakai-every-january-cash-in-an-envelope",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ahL9GMuosUZueAvjVB9u",
+        "id": "U9zgDPF1r0xlqR6jAQ8X"
+      }
+    },
+    {
+      "key": "S05",
+      "scene": "29",
+      "frame": "neonoire-shot-273",
+      "who": "MRS. SAKAI",
+      "voice": "RWRdNUkZ6UAfbVJPXrFG",
+      "prompt": "He left these here. Maybe on purpose.",
+      "gap": 3.24,
+      "replace": "s29-mrssakai-he-left-these-here-maybe-on",
+      "id": "s29-mrssakai-he-left-these-here-maybe-on",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "vjIN7BrLRRFfguZdWjia",
+        "id": "EYCoz7ue28YnPLzQFPKE"
+      }
+    },
+    {
+      "key": "S06",
+      "scene": "29",
+      "frame": "neonoire-shot-273",
+      "who": "MRS. SAKAI",
+      "voice": "RWRdNUkZ6UAfbVJPXrFG",
+      "prompt": "Whatever it is, it was heavier than me. He carried it longer.",
+      "gap": 1.96,
+      "replace": "s29-mrssakai-whatever-it-is-it-was-heavier",
+      "id": "s29-mrssakai-whatever-it-is-it-was-heavier",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "Ymo3Z3RjVdZh3acrPh4U",
+        "id": "OYo1tXWgj1Lnevsf6W46"
+      }
+    },
+    {
+      "key": "N01",
+      "scene": "32",
+      "frame": "neonoire-shot-172",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "Just one night?",
+      "gap": 0.3,
+      "replace": "s32-mrsnoda-just-one-night",
+      "id": "s32-mrsnoda-just-one-night",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ps6aYkT60Ey2w96ODzqU",
+        "id": "fnZVy8aahL7Isa60hX0u"
+      }
+    },
+    {
+      "key": "N02",
+      "scene": "32",
+      "frame": "neonoire-shot-173",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "Upstairs, at the end. The bath is shared, I'm sorry. I'll show you. The light doesn't work properly.",
+      "gap": 0.3,
+      "replace": "s32-mrsnoda-upstairs-at-the-end-the-bath",
+      "id": "s32-mrsnoda-upstairs-at-the-end-the-bath",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "VPX5JMLlwqiBZoHY7ibv",
+        "id": "ttSNHwfVGb6Np8A9KDY6"
+      }
+    },
+    {
+      "key": "N03",
+      "scene": "33",
+      "frame": "neonoire-shot-208",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "Kitchen. If you want tea, just take it. The back door sticks. My husband says he'll fix it. He's said so since the Olympics.",
+      "gap": 0.3,
+      "replace": "s33-mrsnoda-kitchen-if-you-want-tea-just",
+      "id": "s33-mrsnoda-kitchen-if-you-want-tea-just",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "Y1rKdsQtz7mhG2uJa0hk",
+        "id": "16yukYdZjUkZXKS4OvT3"
+      }
+    },
+    {
+      "key": "N04",
+      "scene": "33",
+      "frame": "neonoire-shot-208",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "[dryly] Exactly.",
+      "gap": 1.2,
+      "replace": "s33-mrsnoda-dryly-exactly",
+      "id": "s33-mrsnoda-dryly-exactly",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "HO0s76zWfOpSBcdcFgCn",
+        "id": "33eaH8wzyCM3e9Ae6PSO"
+      }
+    },
+    {
+      "key": "N05",
+      "scene": "33",
+      "frame": "neonoire-shot-208",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "If it's too steamy, the window opens. If you hit it hard enough.",
+      "gap": 1.3,
+      "replace": "s33-mrsnoda-if-it-s-too-steamy-the",
+      "id": "s33-mrsnoda-if-it-s-too-steamy-the",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "em4z3HPx6VKe9aQ6dbwL",
+        "id": "StSyIayjvvo5JxuSRHia"
+      }
+    },
+    {
+      "key": "N06",
+      "scene": "37",
+      "frame": "neonoire-shot-211",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "Don't tell my husband.",
+      "gap": 0.3,
+      "replace": "s37-mrsnoda-don-t-tell-my-husband",
+      "id": "s37-mrsnoda-don-t-tell-my-husband",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "wbG2DaVFrTQ2aLtNzB8o",
+        "id": "AL7ggv3bj0ORUu8aa1SK"
+      }
+    },
+    {
+      "key": "N07",
+      "scene": "37",
+      "frame": "neonoire-shot-211",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "Then you'll understand why I don't want him to know.",
+      "gap": 0.8,
+      "replace": "s37-mrsnoda-then-you-ll-understand-why-i",
+      "id": "s37-mrsnoda-then-you-ll-understand-why-i",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "RBGBonWjmajJKmqaQTIC",
+        "id": "WOFqd15clPxNkoTO6o3F"
+      }
+    },
+    {
+      "key": "N08",
+      "scene": "37",
+      "frame": "neonoire-shot-211",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "Sorry about the truck. He parks it like he's drunk. He's never drunk. The keys are always in it. Who would steal that?",
+      "gap": 1.5,
+      "replace": "s37-mrsnoda-sorry-about-the-truck-he-parks",
+      "id": "s37-mrsnoda-sorry-about-the-truck-he-parks",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "CAdmJgPOv6qjjVov0Izh",
+        "id": "PfGlPpsFjG8sU4JM2A2x"
+      }
+    },
+    {
+      "key": "N09",
+      "scene": "44",
+      "frame": "neonoire-shot-214",
+      "who": "MRS. NODA",
+      "voice": "Alk407KbdehWA59k1BZv",
+      "prompt": "My husband —",
+      "gap": 0.5,
+      "replace": "s44-mrsnoda-my-husband",
+      "id": "s44-mrsnoda-my-husband",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "cFZiAMKycUeLlQqJ2H7U",
+        "id": "deWq6VdEMYop8R5zM5fh"
+      }
+    }
+  ],
+  "frameOrder": {
+    "neonoire-shot-206": [
+      "s29-mrssakai-we-haven-t-lived-together-in",
+      "s29-jack-i-m-not-the-police",
+      "s29-mrssakai-then-what-are-you",
+      "s29-jack-someone-who-owes-a-man-a"
+    ],
+    "neonoire-shot-273": [
+      "s29-mrssakai-he-started-going-to-temple-last",
+      "s29-jack-did-he-ever-pay-rent-on",
+      "s29-mrssakai-every-january-cash-in-an-envelope",
+      "s29-mrssakai-he-left-these-here-maybe-on",
+      "s29-mrssakai-whatever-it-is-it-was-heavier"
+    ],
+    "neonoire-shot-172": [
+      "s32-mrsnoda-just-one-night",
+      "s32-jack-just-one"
+    ],
+    "neonoire-shot-173": [
+      "s32-mrsnoda-upstairs-at-the-end-the-bath"
+    ],
+    "neonoire-shot-208": [
+      "s33-mrsnoda-kitchen-if-you-want-tea-just",
+      "s33-jack-which-olympics",
+      "s33-mrsnoda-dryly-exactly",
+      "s33-mrsnoda-if-it-s-too-steamy-the"
+    ],
+    "neonoire-shot-211": [
+      "s37-mrsnoda-don-t-tell-my-husband",
+      "s37-jack-i-quit",
+      "s37-mrsnoda-then-you-ll-understand-why-i",
+      "s37-mrsnoda-sorry-about-the-truck-he-parks"
+    ],
+    "neonoire-shot-214": [
+      "s44-jack-stay-whatever-you-hear",
+      "s44-mrsnoda-my-husband",
+      "s44-jack-i-ll-get-him"
+    ]
+  }
+}

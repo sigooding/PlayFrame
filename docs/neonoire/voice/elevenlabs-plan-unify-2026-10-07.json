@@ -1,0 +1,141 @@
+{
+  "note": "One voice per character (7 October 2026, later): Harada's six newspaper-office lines (recorded with an earlier voice, hpp4J3VqNfWAUOO0d1Us) and the scene 1 old man's 'Don't let them have it.' (29 September Sakai preview, y7NkiaxPRjIzeTdRhHDC) re-recorded in the saved Harada - NEONOIRE and Sakai - NEONOIRE voices, under their old ids; the old takes are archived and kept in each line's history. Same wording and tags.",
+  "model": "eleven_v4",
+  "flow": "daOh3TQNIdZc0D7em06b",
+  "generated": "2026-10-07",
+  "lines": [
+    {
+      "key": "O01",
+      "scene": "1",
+      "frame": "neonoire-shot-15",
+      "who": "OLD MAN",
+      "voice": "oBCsFZ1GTHU9VCiEZSXY",
+      "prompt": "[strained] Don't let them have it.",
+      "gap": 2,
+      "replace": "s1-oldman-strained-don-t-let-them-have",
+      "id": "s1-oldman-strained-don-t-let-them-have",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "0Xa3hltiUNQ8DsIQQuk8",
+        "id": "GUOcpVwtNiqFOY8VJBWW"
+      }
+    },
+    {
+      "key": "H01",
+      "scene": "53A",
+      "frame": "neonoire-shot-297",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "You're not a reporter.",
+      "gap": 0.6,
+      "replace": "s53a-harada-you-re-not-a-reporter",
+      "id": "s53a-harada-you-re-not-a-reporter",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "7uEaB4G2LgKSseXIzqws",
+        "id": "o9LPiYZ3Nxw8s2c3b6l3"
+      }
+    },
+    {
+      "key": "H02",
+      "scene": "53A",
+      "frame": "neonoire-shot-297",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "We have had a letter from lawyers already. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.",
+      "gap": 3.3,
+      "replace": "s53a-harada-we-have-had-a-letter-from",
+      "id": "s53a-harada-we-have-had-a-letter-from",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "S5LqeMCwvQ1Vi9rNEoZh",
+        "id": "gabsC3GjtiRltlHzNVMO"
+      }
+    },
+    {
+      "key": "H03",
+      "scene": "53A",
+      "frame": "neonoire-shot-297",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[dryly] The police say what they are told.",
+      "gap": 3.2,
+      "replace": "s53a-harada-the-police-say-what-they-are",
+      "id": "s53a-harada-the-police-say-what-they-are",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ly44eQP6AFR22LmOlHOl",
+        "id": "sRsoTZs8wRi9Sqewi5VL"
+      }
+    },
+    {
+      "key": "H04",
+      "scene": "53A",
+      "frame": "neonoire-shot-297",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "One o'clock, Kanda, an old man who wanted to talk. He told two people. Me. And a detective.",
+      "gap": 2.6,
+      "replace": "s53a-harada-one-o-clock-kanda-an-old",
+      "id": "s53a-harada-one-o-clock-kanda-an-old",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "OCyLgZHPGpAbS6JVbQZm",
+        "id": "WyUSc9wSKp6oR23VgWnT"
+      }
+    },
+    {
+      "key": "H05",
+      "scene": "53A",
+      "frame": "neonoire-shot-297",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[short pause] He didn't say. He said the detective had promised to keep a car nearby. There was no car.",
+      "gap": 1.0,
+      "replace": "s53a-harada-he-didn-t-say-he-said",
+      "id": "s53a-harada-he-didn-t-say-he-said",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "f9N8EyUT8VlYqf48FCER",
+        "id": "tdjwhc0xwGyt8hK9WSE9"
+      }
+    },
+    {
+      "key": "H06",
+      "scene": "53A",
+      "frame": "neonoire-shot-298",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[short pause] Print what? A dead man's diary? Bring me something with a name on it.",
+      "gap": 1.0,
+      "replace": "s53a-harada-print-what-a-dead-man-s",
+      "id": "s53a-harada-print-what-a-dead-man-s",
+      "generation": {
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ix4mAIzRYrHPhqOxyQo6",
+        "id": "xuBdbZib18cQp9uOvLeJ"
+      }
+    }
+  ],
+  "frameOrder": {
+    "neonoire-shot-297": [
+      "s53a-harada-you-re-not-a-reporter",
+      "s53a-vera-my-sister-was-in-that-bar",
+      "s53a-harada-we-have-had-a-letter-from",
+      "s53a-vera-the-police-say-it-s-a",
+      "s53a-harada-the-police-say-what-they-are",
+      "s53a-vera-did-he-say-who-he-was",
+      "s53a-harada-one-o-clock-kanda-an-old",
+      "s53a-vera-which-detective",
+      "s53a-harada-he-didn-t-say-he-said"
+    ],
+    "neonoire-shot-298": [
+      "s53a-vera-will-you-print-it",
+      "s53a-harada-print-what-a-dead-man-s"
+    ],
+    "neonoire-shot-15": [
+      "s1-oldman-strained-don-t-let-them-have",
+      "s1-mara-bewildered-have-what-i-don-t"
+    ]
+  }
+}

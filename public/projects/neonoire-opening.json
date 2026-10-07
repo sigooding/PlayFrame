@@ -2454,7 +2454,7 @@
           "src": "/audio/neonoire/s1/15-oldman-strained-don-t-let-them-have.mp3",
           "offset": 2,
           "duration": 2.19,
-          "voice": "y7NkiaxPRjIzeTdRhHDC",
+          "voice": "oBCsFZ1GTHU9VCiEZSXY",
           "model": "eleven_v4"
         },
         {
@@ -9054,8 +9054,8 @@
           "text": "We haven't lived together in fifteen years. The police already came.",
           "src": "/audio/neonoire/s29/206-mrssakai-we-haven-t-lived-together-in.mp3",
           "offset": 0.3,
-          "duration": 4.83,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 5.25,
+          "voice": "RWRdNUkZ6UAfbVJPXrFG",
           "model": "eleven_v4"
         },
         {
@@ -9074,8 +9074,8 @@
           "text": "Then what are you?",
           "src": "/audio/neonoire/s29/206-mrssakai-then-what-are-you.mp3",
           "offset": 8.34,
-          "duration": 1.57,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 1.8,
+          "voice": "RWRdNUkZ6UAfbVJPXrFG",
           "model": "eleven_v4"
         },
         {
@@ -9126,7 +9126,7 @@
       "lens": "50mm",
       "lighting": "Overcast soft",
       "style": "neonoire",
-      "duration": 55,
+      "duration": 58,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -9143,8 +9143,8 @@
           "text": "He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head. Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl. When the doctor told him, he said he was glad. He said now he could stop being afraid of the wrong thing.",
           "src": "/audio/neonoire/s29/273-mrssakai-he-started-going-to-temple-last.mp3",
           "offset": 0.4,
-          "duration": 25.16,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 27.25,
+          "voice": "RWRdNUkZ6UAfbVJPXrFG",
           "model": "eleven_v4"
         },
         {
@@ -9152,7 +9152,7 @@
           "character": "JACK",
           "text": "Did he ever pay rent on something? Somewhere that wasn't his home?",
           "src": "/audio/neonoire/s29/273-jack-did-he-ever-pay-rent-on.mp3",
-          "offset": 26.52,
+          "offset": 28.3,
           "duration": 4.36,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
@@ -9162,9 +9162,9 @@
           "character": "MRS. SAKAI",
           "text": "Every January. Cash, in an envelope. Twenty years. Even after he left, the receipts kept coming here.",
           "src": "/audio/neonoire/s29/273-mrssakai-every-january-cash-in-an-envelope.mp3",
-          "offset": 31.84,
-          "duration": 8.44,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "offset": 33.62,
+          "duration": 9.95,
+          "voice": "RWRdNUkZ6UAfbVJPXrFG",
           "model": "eleven_v4"
         },
         {
@@ -9172,9 +9172,9 @@
           "character": "MRS. SAKAI",
           "text": "He left these here. Maybe on purpose.",
           "src": "/audio/neonoire/s29/273-mrssakai-he-left-these-here-maybe-on.mp3",
-          "offset": 43.52,
-          "duration": 3.24,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "offset": 46.81,
+          "duration": 3.4,
+          "voice": "RWRdNUkZ6UAfbVJPXrFG",
           "model": "eleven_v4"
         },
         {
@@ -9182,9 +9182,9 @@
           "character": "MRS. SAKAI",
           "text": "Whatever it is, it was heavier than me. He carried it longer.",
           "src": "/audio/neonoire/s29/273-mrssakai-whatever-it-is-it-was-heavier.mp3",
-          "offset": 48.72,
+          "offset": 52.17,
           "duration": 4.75,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "voice": "RWRdNUkZ6UAfbVJPXrFG",
           "model": "eleven_v4"
         }
       ]
@@ -9310,8 +9310,8 @@
           "text": "Just one night?",
           "src": "/audio/neonoire/s32/172-mrsnoda-just-one-night.mp3",
           "offset": 0.3,
-          "duration": 1.31,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 1.57,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         },
         {
@@ -9339,7 +9339,7 @@
       "lens": "50mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 9,
+      "duration": 10,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -9355,8 +9355,8 @@
           "text": "Upstairs, at the end. The bath is shared, I'm sorry. I'll show you. The light doesn't work properly.",
           "src": "/audio/neonoire/s32/173-mrsnoda-upstairs-at-the-end-the-bath.mp3",
           "offset": 0.3,
-          "duration": 7.89,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 8.12,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         }
       ]
@@ -9391,8 +9391,8 @@
           "text": "Kitchen. If you want tea, just take it. The back door sticks. My husband says he'll fix it. He's said so since the Olympics.",
           "src": "/audio/neonoire/s33/208-mrsnoda-kitchen-if-you-want-tea-just.mp3",
           "offset": 0.3,
-          "duration": 8.99,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 9.4,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         },
         {
@@ -9411,8 +9411,8 @@
           "text": "Exactly.",
           "src": "/audio/neonoire/s33/208-mrsnoda-dryly-exactly.mp3",
           "offset": 11.96,
-          "duration": 1.57,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 1.49,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         },
         {
@@ -9421,8 +9421,8 @@
           "text": "If it's too steamy, the window opens. If you hit it hard enough.",
           "src": "/audio/neonoire/s33/208-mrsnoda-if-it-s-too-steamy-the.mp3",
           "offset": 14.88,
-          "duration": 4.6,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 5.15,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         }
       ]
@@ -9666,8 +9666,8 @@
           "text": "Don't tell my husband.",
           "src": "/audio/neonoire/s37/211-mrsnoda-don-t-tell-my-husband.mp3",
           "offset": 0.3,
-          "duration": 1.8,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 1.72,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         },
         {
@@ -9686,8 +9686,8 @@
           "text": "Then you'll understand why I don't want him to know.",
           "src": "/audio/neonoire/s37/211-mrsnoda-then-you-ll-understand-why-i.mp3",
           "offset": 4.58,
-          "duration": 3.4,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "duration": 3.32,
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         },
         {
@@ -9697,7 +9697,7 @@
           "src": "/audio/neonoire/s37/211-mrsnoda-sorry-about-the-truck-he-parks.mp3",
           "offset": 10.44,
           "duration": 8.75,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         }
       ]
@@ -10005,7 +10005,7 @@
           "src": "/audio/neonoire/s44/214-mrsnoda-my-husband.mp3",
           "offset": 3.84,
           "duration": 1.57,
-          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "voice": "Alk407KbdehWA59k1BZv",
           "model": "eleven_v4"
         },
         {
@@ -10523,8 +10523,8 @@
           "text": "You're not a reporter.",
           "src": "/audio/neonoire/s53a/297-harada-you-re-not-a-reporter.mp3",
           "offset": 0.6,
-          "duration": 1.57,
-          "voice": "hpp4J3VqNfWAUOO0d1Us",
+          "duration": 1.49,
+          "voice": "oiQsVLQVbTyIiNejyPfk",
           "model": "eleven_v4"
         },
         {
@@ -10543,8 +10543,8 @@
           "text": "We have had a letter from lawyers already. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.",
           "src": "/audio/neonoire/s53a/297-harada-we-have-had-a-letter-from.mp3",
           "offset": 5.51,
-          "duration": 11.73,
-          "voice": "hpp4J3VqNfWAUOO0d1Us",
+          "duration": 11.65,
+          "voice": "oiQsVLQVbTyIiNejyPfk",
           "model": "eleven_v4"
         },
         {
@@ -10563,8 +10563,8 @@
           "text": "The police say what they are told.",
           "src": "/audio/neonoire/s53a/297-harada-the-police-say-what-they-are.mp3",
           "offset": 21.05,
-          "duration": 2.35,
-          "voice": "hpp4J3VqNfWAUOO0d1Us",
+          "duration": 2.43,
+          "voice": "oiQsVLQVbTyIiNejyPfk",
           "model": "eleven_v4"
         },
         {
@@ -10583,8 +10583,8 @@
           "text": "One o'clock, Kanda, an old man who wanted to talk. He told two people. Me. And a detective.",
           "src": "/audio/neonoire/s53a/297-harada-one-o-clock-kanda-an-old.mp3",
           "offset": 26.66,
-          "duration": 8.05,
-          "voice": "hpp4J3VqNfWAUOO0d1Us",
+          "duration": 7.89,
+          "voice": "oiQsVLQVbTyIiNejyPfk",
           "model": "eleven_v4"
         },
         {
@@ -10603,8 +10603,8 @@
           "text": "He didn't say. He said the detective had promised to keep a car nearby. There was no car.",
           "src": "/audio/neonoire/s53a/297-harada-he-didn-t-say-he-said.mp3",
           "offset": 37.32,
-          "duration": 6.03,
-          "voice": "hpp4J3VqNfWAUOO0d1Us",
+          "duration": 5.8,
+          "voice": "oiQsVLQVbTyIiNejyPfk",
           "model": "eleven_v4"
         }
       ]
@@ -10650,8 +10650,8 @@
           "text": "Print what? A dead man's diary? Bring me something with a name on it.",
           "src": "/audio/neonoire/s53a/298-harada-print-what-a-dead-man-s.mp3",
           "offset": 3.02,
-          "duration": 4.75,
-          "voice": "hpp4J3VqNfWAUOO0d1Us",
+          "duration": 4.91,
+          "voice": "oiQsVLQVbTyIiNejyPfk",
           "model": "eleven_v4"
         }
       ]

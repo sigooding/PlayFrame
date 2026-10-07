@@ -9,7 +9,7 @@
 // recorded here with the digest of the audio they carried. The prior audio and duration of every changed frame, voiced before or not, are also written to
 // docs/neonoire/baseline/voice-pre-audit-2026-10-07.json, which scripts/verify-revision-restoration.mjs replays.
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const root = process.cwd();
@@ -18,13 +18,21 @@ const fieldDigest = value => digest(JSON.stringify(value ?? null));
 const prior = JSON.parse(readFileSync(resolve(process.argv[2]), "utf8"));
 const next = JSON.parse(readFileSync(resolve(root, "public/projects/neonoire-opening.json"), "utf8"));
 const now = new Map(next.frames.map(frame => [frame.id, frame]));
-const frames = {}, baseline = {};
+// Merge with what earlier passes recorded: a frame changed in two passes keeps both digests (a workspace may hold either version),
+// and its baseline stays the oldest one.
+const syncFile = resolve(root, "src/lib/neonoire-voice-sync.json"), baselineFile = resolve(root, "docs/neonoire/baseline/voice-pre-audit-2026-10-07.json");
+const earlier = existsSync(syncFile) ? JSON.parse(readFileSync(syncFile, "utf8")) : { frames: {} };
+const earlierBaseline = existsSync(baselineFile) ? JSON.parse(readFileSync(baselineFile, "utf8")) : { frames: {} };
+const frames = { ...earlier.frames }, baseline = { ...earlierBaseline.frames };
 for (const old of prior.frames) {
   const frame = now.get(old.id);
   if (!frame) continue;
   if (JSON.stringify(old.audio ?? null) === JSON.stringify(frame.audio ?? null) && old.duration === frame.duration) continue;
-  baseline[old.id] = { ...(old.audio?.length ? { audio: old.audio } : {}), duration: old.duration };
-  if (old.audio?.length) frames[old.id] = { audio: fieldDigest(old.audio) };
+  baseline[old.id] ??= { ...(old.audio?.length ? { audio: old.audio } : {}), duration: old.duration };
+  if (old.audio?.length) {
+    const known = [].concat(frames[old.id]?.audio ?? []), digest = fieldDigest(old.audio);
+    frames[old.id] = { audio: known.includes(digest) ? frames[old.id].audio : known.length ? [...known, digest] : digest };
+  }
 }
 const arrivals = next.frames.filter(frame => frame.audio?.length && !prior.frames.find(old => old.id === frame.id)?.audio?.length).map(frame => frame.id);
 writeFileSync(resolve(root, "src/lib/neonoire-voice-sync.json"), JSON.stringify({
