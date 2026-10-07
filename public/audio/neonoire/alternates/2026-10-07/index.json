@@ -2,7 +2,7 @@
  "date": "2026-10-07",
  "flow": "kvzIYLAVhQxuu2koUOll",
  "model": "eleven_v4",
- "note": "Everything that was generated for the 7 October 2026 voice audit and is not in the game: first-round takes that were re-recorded, the tag test, the variants, and the unpicked design previews of the voices made for it. rmsdb is the average level of the active speech (dBFS, higher = louder; Jack and Vera speak at about -22 to -26, whispers at about -32 to -36).",
+ "note": "Everything that was generated for the 7 October 2026 voice audit and is not in the game: first-round takes that were re-recorded, the tag test, the variants, and the unpicked design previews of the voices made for it (later in the day also the previews for Mrs. Sakai and Mrs. Noda). rmsdb is the average level of the active speech (dBFS, higher = louder; Jack and Vera speak at about -22 to -26, whispers at about -32 to -36).",
  "lines": {
   "L10": {
    "id": "s14a-l10-vera",
@@ -2590,6 +2590,64 @@
      "picked": true,
      "duration": 12.28,
      "rmsdb": -19.5
+    }
+   ]
+  },
+  {
+   "character": "MRS. SAKAI",
+   "role": "the estranged wife (scene 29); designed to replace the draft borrowing of Kaneko's voice",
+   "designed": "2026-10-07",
+   "picked": "RWRdNUkZ6UAfbVJPXrFG",
+   "previews": [
+    {
+     "generatedVoiceId": "IpVGx383nzmwe0UHD43L",
+     "file": "voices/mrs-sakai--IpVGx383nzmwe0UHD43L.mp3",
+     "picked": false,
+     "duration": 24.61,
+     "rmsdb": -17.2
+    },
+    {
+     "generatedVoiceId": "RWRdNUkZ6UAfbVJPXrFG",
+     "file": "voices/mrs-sakai--RWRdNUkZ6UAfbVJPXrFG--picked.mp3",
+     "picked": true,
+     "duration": 25.39,
+     "rmsdb": -18.6
+    },
+    {
+     "generatedVoiceId": "5xg70aqIeh85Pd3QErA8",
+     "file": "voices/mrs-sakai--5xg70aqIeh85Pd3QErA8.mp3",
+     "picked": false,
+     "duration": 23.41,
+     "rmsdb": -16.8
+    }
+   ]
+  },
+  {
+   "character": "MRS. NODA",
+   "role": "the inn's landlady (scenes 32, 33, 37, 44); designed to replace the draft borrowing of Kaneko's voice",
+   "designed": "2026-10-07",
+   "picked": "Alk407KbdehWA59k1BZv",
+   "previews": [
+    {
+     "generatedVoiceId": "Alk407KbdehWA59k1BZv",
+     "file": "voices/mrs-noda--Alk407KbdehWA59k1BZv--picked.mp3",
+     "picked": true,
+     "duration": 18.99,
+     "rmsdb": -18.8
+    },
+    {
+     "generatedVoiceId": "HkRluFv7fFzHppynzqg9",
+     "file": "voices/mrs-noda--HkRluFv7fFzHppynzqg9.mp3",
+     "picked": false,
+     "duration": 20.61,
+     "rmsdb": -18.5
+    },
+    {
+     "generatedVoiceId": "v4Eodnz5kAFZBZB06wwf",
+     "file": "voices/mrs-noda--v4Eodnz5kAFZBZB06wwf.mp3",
+     "picked": false,
+     "duration": 19.96,
+     "rmsdb": -18.6
     }
    ]
   }

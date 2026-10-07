@@ -268,14 +268,40 @@
       "notes": "Filter: tv."
     },
     "MRS. SAKAI": {
-      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
-      "status": "draft-borrowed",
-      "note": "Draft only: borrowing Kaneko's voice (scene 29) because the workspace is at its custom-voice limit. Design a proper voice later (auditions in exports/neonoire/auditions/mrs-*.mp3)."
+      "voiceId": "RWRdNUkZ6UAfbVJPXrFG",
+      "name": "Mrs. Sakai - NEONOIRE",
+      "status": "chosen",
+      "placeholder": true,
+      "previousVoiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "designedPreviews": [
+        "IpVGx383nzmwe0UHD43L",
+        "RWRdNUkZ6UAfbVJPXrFG",
+        "5xg70aqIeh85Pd3QErA8"
+      ],
+      "chosenPreview": "RWRdNUkZ6UAfbVJPXrFG",
+      "notes": "Designed and saved 7 October 2026 (previews 3; picked blind: preview 2, the lowest, most even and slowest of the three at about 167 Hz against Kaneko's gravelly 125 Hz and the other previews at 186-190 Hz). Replaces the draft borrowing of Kaneko's voice. Nobody has listened.",
+      "design": {
+        "description": "Japanese woman in her late sixties speaking English with a natural Japanese accent. Weary, dry and guarded, a woman who has been disappointed by one man for fifty years and has stopped expecting anything. Soft, slightly nasal and breathy, unhurried, a little rueful, never theatrical. A lighter, higher and softer voice than a gravelly old woman; not gruff, not sharp.",
+        "sampleText": "He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head. Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl."
+      }
     },
     "MRS. NODA": {
-      "voiceId": "vUzt8mUMt5vwWOoJ6szl",
-      "status": "draft-borrowed",
-      "note": "Draft only: borrowing Kaneko's voice (scenes 32, 33, 37) because the workspace is at its custom-voice limit. Design a proper voice later (auditions in exports/neonoire/auditions/mrs-*.mp3)."
+      "voiceId": "Alk407KbdehWA59k1BZv",
+      "name": "Mrs. Noda - NEONOIRE",
+      "status": "chosen",
+      "placeholder": true,
+      "previousVoiceId": "vUzt8mUMt5vwWOoJ6szl",
+      "designedPreviews": [
+        "Alk407KbdehWA59k1BZv",
+        "HkRluFv7fFzHppynzqg9",
+        "v4Eodnz5kAFZBZB06wwf"
+      ],
+      "chosenPreview": "Alk407KbdehWA59k1BZv",
+      "notes": "Designed and saved 7 October 2026 (previews 3; picked blind: preview 1, the briskest and most animated, 208 Hz and 19 s for the sample against 25 s for Mrs. Sakai's). Replaces the draft borrowing of Kaneko's voice. Nobody has listened.",
+      "design": {
+        "description": "Japanese woman in her late fifties speaking English with a natural Japanese accent. Practical, brisk and kindly, a small-inn landlady who has seen every kind of guest and is unsurprised by all of them. Dry humour delivered deadpan. Warm mid-register, a little husky from long evenings, quick and conversational, easy smile in the voice. Not gravelly, not frail.",
+        "sampleText": "Upstairs, at the end. The bath is shared, I'm sorry. I'll show you. The light doesn't work properly. Kitchen. If you want tea, just take it. The back door sticks. My husband says he'll fix it. He's said so since the Olympics."
+      }
     },
     "BARTENDER": {
       "voiceId": "EEYUewEB5w5R0IPnszO5",
