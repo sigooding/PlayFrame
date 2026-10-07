@@ -1,6 +1,10 @@
 # NEONOIRE — keyframe handoff
 
-## Current — 6 October 2026: shot 73 retired; the cold open's lane geometry; Vera's emptiness frames (383–388)
+## Current — 7 October 2026 (voices): every spoken line voiced; the alternates kept
+
+**Read the bible's Part 9 item 22 and `docs/neonoire/voice/README.md` (last section).** 561 takes in the manifest (was 417), 546 of 546 spoken lines voiced in the visual novel and scarlett-witness, 366/366 keyframes unchanged, no image or screenplay change. Plan: `docs/neonoire/voice/elevenlabs-plan-missing-2026-10-07.json`; tools: `voice-batch.mjs` (extended), `voice-swap.mjs`, `voice-retire.mjs`, `sync-voices.mjs`. Everything generated that is not in the game is in `public/audio/neonoire/alternates/2026-10-07/` (audition page `index.html`, `index.json`); `docs/neonoire/voice/alternates-2026-10-07.md` lists the voices, the still-hushed older takes and the blind picks. To change a take: swap, `npm run build:neonoire`, then in nobodys-witness `node tools/import-playframe.mjs --from ../PlayFrame` and in scarlett-witness copy `src/story/story.json` to `src/film/story.json` and run `node tools/build-film-story.mjs`. Frame durations in the bundle grew where the new lines needed room (the builder lengthens, never shortens); saved workspaces catch up through `src/lib/neonoire-voice-sync.json`.
+
+## Previous — 6 October 2026: shot 73 retired; the cold open's lane geometry; Vera's emptiness frames (383–388)
 
 **Update, later 6 October: the car scene is done, and 13 other frames were retaken in scarlett-witness and synced back here** (bible items 20 and 21): 10, 12, 13, 361, 158–161, 320, 86, 87, 316, 89, 90, all archived first. Shot 14's lip-synced video and the new sound beds live in the two game repos only, not in PlayFrame.
 

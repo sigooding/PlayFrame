@@ -1,0 +1,2557 @@
+{
+  "note": "The 160 unvoiced lines of the 7 October 2026 audit (every spoken line the games were reading with browser text-to-speech). One take per line, generated in ElevenLabs flow kvzIYLAVhQxuu2koUOll; takes were saved as <key>.mp3 and ingested with scripts/neonoire/voice-batch.mjs. gap = seconds of silence after the previous line (first line of a frame: absolute offset). replace = an older take of the same moment re-recorded under its old id (the old take stays in the line's history); retire = an older take archived (docs/neonoire/voice/archive/*-cut-*.mp3) and dropped from the manifest. voice = the ElevenLabs voice the take was made with. frameOrder = the playing order of the frames that mix new takes with existing ones. Never use [quietly], [softly] or [whispers] tags with Jack and Vera: they read as whispers (about 10 dB under their speaking level).",
+  "model": "eleven_v4",
+  "flow": "kvzIYLAVhQxuu2koUOll",
+  "generated": "2026-10-07",
+  "frameOrder": {
+    "neonoire-shot-166": [
+      "s10-vera-are-you-the-one-they-call",
+      "s10-jack-dryly-depends-who-s-calling",
+      "s10-vera-mr-okada-the-bar-in-kanda",
+      "s10-jack-calmly-sit-down",
+      "s10-vera-evenly-my-sister-has-been-missing",
+      "s10-jack-flatly-i-don-t-do-missing",
+      "s10-vera-steadily-she-was-in-that-bar",
+      "s10-jack-what-did-the-police-tell-you"
+    ],
+    "neonoire-shot-251": [
+      "s11-ishida-tired-it-s-late-jack",
+      "s11-jack-the-voss-girl-came-to-see",
+      "s11-ishida-i-know",
+      "s11-jack-low-her-sister-was-in-that",
+      "s11-ishida-the-sister-is-a-missing-persons",
+      "s11-jack-and-the-old-man-in-the",
+      "s11-ishida-sakai-pause-yes-that-sakai-i",
+      "s11-jack-pause-twenty-years-ishida",
+      "s11-ishida-gently-go-to-sleep-jack-you"
+    ],
+    "neonoire-shot-184": [
+      "s14-jack-when-were-you-last-here",
+      "s14-vera-wryly-a-week-ago-she-made",
+      "s14-jack-quietly-she-wasn-t-planning-to",
+      "s14-vera-no"
+    ],
+    "neonoire-shot-284": [
+      "s20-mara-we-had-a-fight-about-it",
+      "s20-jack-she-s-your-sister",
+      "s20-mara-urgently-they-have-my-purse-they",
+      "s20-jack-you-don-t-know-that",
+      "s20-mara-tearfully-i-watched-them-shoot-two",
+      "s20-mara-promise-me",
+      "s20-jack-i-promise"
+    ],
+    "neonoire-shot-197": [
+      "s22-vera-he-used-to-bring-us-somewhere",
+      "s22-jack-and-you",
+      "s22-vera-i-stayed-awake-i-wanted-to",
+      "s22-vera-they-said-he-killed-himself-my",
+      "s22-jack-do-you-believe-it",
+      "s22-vera-i-believe-he-was-sad-i",
+      "s22-jack-carefully-what-did-you-do",
+      "s22-vera-i-threw-it-in-the-bin"
+    ],
+    "neonoire-shot-202": [
+      "s13-kaneko-gruffly-eat",
+      "s13-mara-hesitantly-thank-you-has-anyone-come",
+      "s13-kaneko-flatly-nobody-comes-here-who-isn",
+      "s25-mara-mr-sakai-said-twenty-years-before",
+      "s25-jack-he-probably-had",
+      "s25-n009-mara",
+      "s25-jack-you-drew-this",
+      "s25-mara-it-s-the-only-thing-i",
+      "s25-mara-and-then-in-the-bar-the",
+      "s25-jack-sakai-was-bringing-him-something",
+      "s25-mara-this"
+    ],
+    "neonoire-shot-291": [
+      "s27a-okada-he-finds-things-and-then-he",
+      "s27a-vera-is-that-a-warning",
+      "s27a-okada-it-s-a-description",
+      "s27a-vera-where-did-you-find-the-clip"
+    ],
+    "neonoire-shot-273": [
+      "s29-mrssakai-he-started-going-to-temple-last",
+      "s29-jack-did-he-ever-pay-rent-on",
+      "s29-mrssakai-every-january-cash-in-an-envelope",
+      "s29-mrssakai-he-left-these-here-maybe-on",
+      "s29-mrssakai-whatever-it-is-it-was-heavier"
+    ],
+    "neonoire-shot-210": [
+      "s36-vera-mara",
+      "s36-jack-it-s-me",
+      "s36-vera-where-are-you-you-sound-like",
+      "s36-jack-the-countryside-there-s-no-signal",
+      "s36-vera-did-you-find-anything",
+      "s36-jack-maybe-i-ll-know-tomorrow",
+      "s36-vera-come-back-safe",
+      "s36-jack-it-s-just-an-inn-there",
+      "s36-vera-come-back-safe-anyway"
+    ],
+    "neonoire-shot-233": [
+      "s64-jack-keep-this-for-me-don-t",
+      "s64-okada-behind-the-counter-like-the-girl",
+      "s64-n013-okada",
+      "s64-jack-tomorrow-it-ll-be-over",
+      "s64-okada-that-s-what-people-say-the"
+    ],
+    "neonoire-shot-239": [
+      "s70-driver-excuse-me",
+      "s70-mara-that-s-them",
+      "s70-jack-what",
+      "s70-mara-that-s-what-he-said-before",
+      "s70-driver-position",
+      "s70-jack-urgently-run"
+    ],
+    "neonoire-shot-113": [
+      "s24-kurose-and",
+      "s83-n064-vera"
+    ],
+    "neonoire-shot-157": [
+      "s98-vera-rain",
+      "s98-n116-jack",
+      "s98-n117-vera",
+      "s98-n118-vera",
+      "s98-n119-jack",
+      "s98-n120-vera",
+      "s98-n121-jack",
+      "s98-n122-vera",
+      "s98-n123-vera"
+    ],
+    "neonoire-shot-194": [
+      "s20-jack-she-says-it-was-hers-she",
+      "s20-mara-tearfully-it-was-never-hers-dad",
+      "s20-x01-mara",
+      "s20-mara-bitterly-is-she-okay",
+      "s20-jack-she-s-been-calling-you-she",
+      "s20-mara-flatly-i-know-i-listen-to",
+      "s20-jack-why-were-you-in-kanda-mara",
+      "s20-mara-he-wrote-to-vera-mr-sakai",
+      "s20-mara-i-sent-them-both-a-photo",
+      "s20-jack-vera-doesn-t-know-you-went"
+    ]
+  },
+  "lines": [
+    {
+      "key": "N000",
+      "scene": "1",
+      "frame": "neonoire-shot-333",
+      "who": "OLD MAN",
+      "voice": "oBCsFZ1GTHU9VCiEZSXY",
+      "prompt": "[steadily] After twenty years.",
+      "gap": 1.3,
+      "replace": "s1-oldman-twenty-years",
+      "id": "s1-oldman-twenty-years",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "ML7oGDsPQWxybTMZd5W0",
+        "id": "IGgSj1YcxVOPccuS5b6P"
+      }
+    },
+    {
+      "key": "N001",
+      "scene": "10",
+      "frame": "neonoire-shot-166",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] Who calls me that?",
+      "gap": 0.65,
+      "replace": "s10-jack-dryly-depends-who-s-calling",
+      "id": "s10-jack-dryly-depends-who-s-calling",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "OqH3cUPuvipNuKXaU7dY",
+        "id": "nLzDusyNQN7ZX4wKLIcG"
+      }
+    },
+    {
+      "key": "N002",
+      "scene": "11",
+      "frame": "neonoire-shot-251",
+      "who": "ISHIDA",
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "prompt": "[gently] Go to sleep, Jack. You found enough twenty years ago. You're too old to be haunted.",
+      "gap": 1.3,
+      "fx": "phone",
+      "replace": "s11-ishida-gently-go-to-sleep-jack-you",
+      "id": "s11-ishida-gently-go-to-sleep-jack-you",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "xy4Ymt1AUGXdjpYQ4pPc",
+        "id": "IEQ2MTwc6qhjehan2GJi"
+      }
+    },
+    {
+      "key": "N003",
+      "scene": "12",
+      "frame": "neonoire-shot-170",
+      "who": "VENDING MACHINE",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "prompt": "[cheerfully] Thank you very much.",
+      "gap": 1.3,
+      "fx": "phone",
+      "id": "s12-n003-vendingmachine",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "b6J6opdehX1ehuCqoKu6",
+        "id": "MmK65YF6wJnFkYQARTzq"
+      }
+    },
+    {
+      "key": "N004",
+      "scene": "14",
+      "frame": "neonoire-shot-184",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[thoughtfully] She wasn't planning to disappear.",
+      "gap": 1.3,
+      "replace": "s14-jack-quietly-she-wasn-t-planning-to",
+      "id": "s14-jack-quietly-she-wasn-t-planning-to",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "PQPPaD9kH5Q5UQBOve43",
+        "id": "RosF93CdU4XRRhLzlrH4"
+      }
+    },
+    {
+      "key": "N005",
+      "scene": "14",
+      "frame": "neonoire-shot-363",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[wryly] Take this too. It's mine. She stole it.",
+      "gap": 1.3,
+      "id": "s14-n005-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "HjSg72oMnkYkYKWa0XHT",
+        "id": "SmfHzDWF0PVnvWqx2MJx"
+      }
+    },
+    {
+      "key": "N007",
+      "scene": "20",
+      "frame": "neonoire-shot-284",
+      "who": "MARA",
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "prompt": "[urgently] They have my purse. My passport. They know my name. They know where I live, where she lives, all of it. If she knows where I am, she'll come here. She won't be able to help it. And they'll follow her. [pause] They'll use her to get to me. And then they'll kill her too.",
+      "gap": 0.65,
+      "replace": "s20-mara-urgently-they-have-my-purse-they",
+      "id": "s20-mara-urgently-they-have-my-purse-they",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "sJWB3M3aC1YuwdW61q7K",
+        "id": "nfndA6bhJCurrK1NrHYJ"
+      }
+    },
+    {
+      "key": "N008",
+      "scene": "22",
+      "frame": "neonoire-shot-197",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[quietly] I believe he was sad. I don't know if I believe the rest. [pause] A man wrote to me last week. He said Dad didn't do it. He said the police knew.",
+      "gap": 1.3,
+      "replace": "s22-vera-i-believe-he-was-sad-i",
+      "id": "s22-vera-i-believe-he-was-sad-i",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "bWnD4maBUMNr3qIxDM7t",
+        "id": "Bbza1jhoIZ8pCDYZig9o"
+      }
+    },
+    {
+      "key": "N009",
+      "scene": "25",
+      "frame": "neonoire-shot-202",
+      "who": "MARA",
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "prompt": "[tearfully] He knew me. He saw me in the doorway and stopped. And at the end he pressed the key into my hand. \"Don't let them have it.\"",
+      "gap": 0.65,
+      "id": "s25-n009-mara",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "dkH4beTAk7ZAfIL04aeC",
+        "id": "ensqPG4nFb6LSv0boHhy"
+      }
+    },
+    {
+      "key": "N010",
+      "scene": "27A",
+      "frame": "neonoire-shot-291",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Show me where.",
+      "gap": 1.3,
+      "replace": "s27a-vera-where-did-you-find-the-clip",
+      "id": "s27a-vera-where-did-you-find-the-clip",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "OYENbVdOMJ5y8qW2U0Gt",
+        "id": "OpHoUJEbytPMwQCWiJCS"
+      }
+    },
+    {
+      "key": "N011",
+      "scene": "29",
+      "frame": "neonoire-shot-273",
+      "who": "MRS. SAKAI",
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "prompt": "[quietly] Every January. Cash, in an envelope. Twenty years. Even after he left, the receipts kept coming here.",
+      "gap": 1.3,
+      "replace": "s29-mrssakai-every-january-cash-in-an-envelope",
+      "id": "s29-mrssakai-every-january-cash-in-an-envelope",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "aOPqC58ipDg2EITAswoT",
+        "id": "ZO08aNypBdyLuXglmkfJ"
+      }
+    },
+    {
+      "key": "N012",
+      "scene": "36",
+      "frame": "neonoire-shot-210",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] The coast. An inn off the highway. The phone is pink.",
+      "gap": 0.65,
+      "replace": "s36-jack-the-countryside-there-s-no-signal",
+      "id": "s36-jack-the-countryside-there-s-no-signal",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "PmcmZpkW5Xg8cOCSIgv6",
+        "id": "Q0Or51UGST6dEICNrSaa"
+      }
+    },
+    {
+      "key": "N013",
+      "scene": "64",
+      "frame": "neonoire-shot-233",
+      "who": "OKADA",
+      "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+      "prompt": "[curious] The girl?",
+      "gap": 0.65,
+      "id": "s64-n013-okada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "JHDqavt4foPEyaEq6q04",
+        "id": "cpyRxpxEA1KozQXHc2Zp"
+      }
+    },
+    {
+      "key": "N014",
+      "scene": "64",
+      "frame": "neonoire-shot-233",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Safe. Tomorrow it'll be over.",
+      "gap": 1.3,
+      "replace": "s64-jack-tomorrow-it-ll-be-over",
+      "id": "s64-jack-tomorrow-it-ll-be-over",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "AYJrLeWP22Jfwngwxmz6",
+        "id": "FPLs5IEOuWMRrUXVlOvV"
+      }
+    },
+    {
+      "key": "N015",
+      "scene": "64",
+      "frame": "neonoire-shot-233",
+      "who": "OKADA",
+      "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+      "prompt": "[bitterly] You said that about my daughter.",
+      "gap": 0.65,
+      "replace": "s64-okada-that-s-what-people-say-the",
+      "id": "s64-okada-that-s-what-people-say-the",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "dTcarSBusLTFfXtXK012",
+        "id": "1UodIV38htHCihdw1pa4"
+      }
+    },
+    {
+      "key": "N016",
+      "scene": "70",
+      "frame": "neonoire-shot-239",
+      "who": "DRIVER",
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "prompt": "[politely] Shitsurei shimasu.",
+      "gap": 1.3,
+      "replace": "s70-driver-excuse-me",
+      "id": "s70-driver-excuse-me",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "rII27Rb9K0hfc6nyVRlX",
+        "id": "Za0sgAONGN3ubBKkyQSO"
+      }
+    },
+    {
+      "key": "N017",
+      "scene": "76",
+      "frame": "neonoire-shot-315",
+      "who": "MOTHER",
+      "voice": "roYauZ4bOLAKvVZTPLre",
+      "prompt": "[warmly] Vera? Honey?",
+      "gap": 1.3,
+      "fx": "phone",
+      "id": "s76-n017-mother",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "AE6N41F9KbOpOoM8egns",
+        "id": "rnuanARdbiUdrNDY6ZT2"
+      }
+    },
+    {
+      "key": "N018",
+      "scene": "76",
+      "frame": "neonoire-shot-315",
+      "who": "MOTHER",
+      "voice": "roYauZ4bOLAKvVZTPLre",
+      "prompt": "[calling out] Vera?",
+      "gap": 1.3,
+      "fx": "phone",
+      "id": "s76-n018-mother",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "w7WdMyfYskC0I43K29Bm",
+        "id": "dd70zOAPxypsGC9QfqzS"
+      }
+    },
+    {
+      "key": "N019",
+      "scene": "77",
+      "frame": "neonoire-shot-87",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[drowsily] You're the first person I've trusted since she disappeared.",
+      "gap": 1.3,
+      "id": "s77-n019-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "NCUWlp3GsvmXO9pwBH4E",
+        "id": "zr9D19CDamkyhZOAsvLE"
+      }
+    },
+    {
+      "key": "N020",
+      "scene": "79",
+      "frame": "neonoire-shot-286",
+      "who": "DANIEL",
+      "voice": "oOJyrMKhBUCGET6PTTAu",
+      "prompt": "[evenly] Shiohama. Third visit. The residents say men came in the spring with flowers, and then in the summer with iron bars. The fire began in two places at once. Fires don't do that.",
+      "gap": 1.3,
+      "id": "s79-n020-daniel",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "iwJqNfTyDjVQin6ebLaO",
+        "id": "dAFEa5c0ZqKSUCfLH4Ys"
+      }
+    },
+    {
+      "key": "N021",
+      "scene": "79",
+      "frame": "neonoire-shot-286",
+      "who": "DANIEL",
+      "voice": "oOJyrMKhBUCGET6PTTAu",
+      "prompt": "[evenly] The claim will be paid. Everyone wants it paid. The company, the police, the man who owns the land now. Kurose. Always Kurose.",
+      "gap": 1.3,
+      "id": "s79-n021-daniel",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "eTnqL6QpId01iK6gEFbl",
+        "id": "uPJzx23pCy44iJo7sjQU"
+      }
+    },
+    {
+      "key": "N022",
+      "scene": "79",
+      "frame": "neonoire-shot-286",
+      "who": "DANIEL",
+      "voice": "oOJyrMKhBUCGET6PTTAu",
+      "prompt": "[quietly] The police have given me a young detective who speaks English. They call him Jack. He's bright. He believes me. We ate noodles at Kaneko's and I told him everything and he wrote it all down.",
+      "gap": 1.3,
+      "id": "s79-n022-daniel",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "NMCLxCJ9r2HOQPviDWsO",
+        "id": "Xxr9BMaZxJdfjhQWLCeN"
+      }
+    },
+    {
+      "key": "N023",
+      "scene": "79",
+      "frame": "neonoire-shot-94",
+      "who": "DANIEL",
+      "voice": "oOJyrMKhBUCGET6PTTAu",
+      "prompt": "[quietly] Today Jack signed the report. Accidental fire. I don't blame him. He is twenty-eight years old and they own his whole life. But I thought, of all of them, he would stand with me.",
+      "gap": 1.3,
+      "id": "s79-n023-daniel",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "1S2iReIOm0TQDVKOUlpp",
+        "id": "Hnujnr1zB0fs2p5lqY7l"
+      }
+    },
+    {
+      "key": "N024",
+      "scene": "79",
+      "frame": "neonoire-shot-94",
+      "who": "DANIEL",
+      "voice": "oOJyrMKhBUCGET6PTTAu",
+      "prompt": "[tired] I'll go on alone. I've done it before.",
+      "gap": 1.3,
+      "id": "s79-n024-daniel",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "m4YuoqvGhGDLwraOIEbr",
+        "id": "JW7nQxoiEQsbrLJMRpJT"
+      }
+    },
+    {
+      "key": "N025",
+      "scene": "79",
+      "frame": "neonoire-shot-94",
+      "who": "DANIEL",
+      "voice": "oOJyrMKhBUCGET6PTTAu",
+      "prompt": "[quietly] They followed me home again tonight. The girls were asleep. I stood at the door a long time. [pause] If something happens to me, it will not be what they say. Tell Vera. When she is old enough. Tell her it will not be what they say.",
+      "gap": 1.3,
+      "id": "s79-n025-daniel",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Upm5KJmxj4bJyIr97yF7",
+        "id": "zlsDwGbdpe9MVYmDKw1Y"
+      }
+    },
+    {
+      "key": "N026",
+      "scene": "80",
+      "frame": "neonoire-shot-97",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Nine o'clock. A grey car. Your driver.",
+      "gap": 1.3,
+      "id": "s80-n026-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "rCxCNFLmQA3Orxohnvb5",
+        "id": "pfT0ikqYP3XYnv5q46C7"
+      }
+    },
+    {
+      "key": "N027",
+      "scene": "80",
+      "frame": "neonoire-shot-97",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[flatly] Only you knew.",
+      "gap": 1.3,
+      "id": "s80-n027-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "JutInXXjE77qCPVSi3DC",
+        "id": "eSc0D25lAepPUChUdKL9"
+      }
+    },
+    {
+      "key": "N028",
+      "scene": "80",
+      "frame": "neonoire-shot-97",
+      "who": "ISHIDA",
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "prompt": "[gently] You told me yourself, Jack. [pause] You always tell the wrong person.",
+      "gap": 1.3,
+      "id": "s80-n028-ishida",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "2A6fVSd53pzVEob6s24b",
+        "id": "4ab9wXoLGJfNaxok1tX2"
+      }
+    },
+    {
+      "key": "N029",
+      "scene": "80",
+      "frame": "neonoire-shot-98",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Twenty years ago. Daniel. Was that you?",
+      "gap": 1.3,
+      "id": "s80-n029-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "e5an1o7sIYJe9ySL0uta",
+        "id": "94SLHLVSGQg9yT66IArY"
+      }
+    },
+    {
+      "key": "N030",
+      "scene": "80",
+      "frame": "neonoire-shot-99",
+      "who": "ISHIDA",
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "prompt": "[gently] I have never killed anyone in my life. [pause] I only ever told people where to find them.",
+      "gap": 0.65,
+      "id": "s80-n030-ishida",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "LYZIIdaHXf7eDdpomvDW",
+        "id": "3vej9Zi8v8VUbHy6atWd"
+      }
+    },
+    {
+      "key": "N031",
+      "scene": "80",
+      "frame": "neonoire-shot-99",
+      "who": "ISHIDA",
+      "voice": "6wGe4cP3pH5TRuKntC6Z",
+      "prompt": "[calmly] Where is it? Sakai's thing.",
+      "gap": 1.3,
+      "id": "s80-n031-ishida",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "7vLJRlXoBGfjmibwx91Z",
+        "id": "o3N3KA3NGHk6Kg3KS6kY"
+      }
+    },
+    {
+      "key": "N032",
+      "scene": "81",
+      "frame": "neonoire-shot-104",
+      "who": "OKADA",
+      "voice": "MhuU9Z2dyWAG6ZjuuKRg",
+      "prompt": "[puzzled] The girl?",
+      "gap": 1.3,
+      "id": "s81-n032-okada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "YItosqivk9ji8g1o4OFn",
+        "id": "Djazy31BhcMniSQ8UG5h"
+      }
+    },
+    {
+      "key": "N033",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "SAKAI",
+      "voice": "QQyMyGyBbWgRljZdGD3r",
+      "prompt": "[gruffly] There are still people in the building. Old people. They won't sign.",
+      "gap": 1.3,
+      "fx": "tape",
+      "id": "s82-n033-sakai",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "UBrAjJxmbbDacpkvjlK3",
+        "id": "NcWdyqW6vzo6QMA0Z4ds"
+      }
+    },
+    {
+      "key": "N034",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[calmly] The building must be empty by the end of the month.",
+      "gap": 0.65,
+      "fx": "tape",
+      "id": "s82-n034-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "7D6N14kr1o8QASFmd4ji",
+        "id": "mccp0olYkyv5eBJXM7cO"
+      }
+    },
+    {
+      "key": "N035",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "SAKAI",
+      "voice": "QQyMyGyBbWgRljZdGD3r",
+      "prompt": "[gruffly] And if it isn't?",
+      "gap": 0.65,
+      "fx": "tape",
+      "id": "s82-n035-sakai",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "AqzVNLNjzpDhLOSvtRPD",
+        "id": "x5WUAnqsMaUQBJI65giu"
+      }
+    },
+    {
+      "key": "N036",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[calmly] Then it will be empty in a different way. [pause] Don't make me say it more clearly, Sakai. I don't like to repeat myself.",
+      "gap": 0.65,
+      "fx": "tape",
+      "id": "s82-n036-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Q22SGaPYtpgqdFrNlfdk",
+        "id": "gbDL5WomLXBRBdSagvFO"
+      }
+    },
+    {
+      "key": "N037",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[gravely] That's Kurose.",
+      "gap": 1.3,
+      "id": "s82-n037-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "eEqq2dW5fAIjLnQICxxg",
+        "id": "FmkaFGjyGt1PXJcGK4Sh"
+      }
+    },
+    {
+      "key": "N038",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[flatly] That's Kurose.",
+      "gap": 0.65,
+      "id": "s82-n038-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "QYUz4wVTkSwa7qmitcJr",
+        "id": "rRckR8EytWfZzCnT0Qte"
+      }
+    },
+    {
+      "key": "N039",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[dryly] A voice on a twenty-year-old tape. His lawyers will say it's a fake. They'll say Sakai was a gangster with a grudge.",
+      "gap": 0.65,
+      "id": "s82-n039-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "fXOkhdQ54Fhbx1xUQ9SW",
+        "id": "O4AdzJnI5irCjmtBapUq"
+      }
+    },
+    {
+      "key": "N040",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Then you'll need a witness.",
+      "gap": 0.65,
+      "id": "s82-n040-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "weBFcRQDSkhNB4Ggs0Ob",
+        "id": "Xh2rKJaIngOHlkcsjIhD"
+      }
+    },
+    {
+      "key": "N041",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[quietly] Twenty years ago I was a police detective. An American insurance investigator named Daniel Voss proved the Shiohama fire was arson. I believed him. I was ordered to close the case, and I signed a report saying the fire was an accident. [pause] Weeks later he was found dead. I didn't ask any questions.",
+      "gap": 1.3,
+      "id": "s82-n041-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "pupM4KMzVXCPXbpHaiyF",
+        "id": "3mdowY2U9jQEGg1zSfVM"
+      }
+    },
+    {
+      "key": "N042",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[evenly] You understand what you're saying. You'll be named. Your part too.",
+      "gap": 0.65,
+      "id": "s82-n042-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "brDQ7srVNJAh05uJAKG1",
+        "id": "5iaXuqPP23BFMVke8b8s"
+      }
+    },
+    {
+      "key": "N043",
+      "scene": "82",
+      "frame": "neonoire-shot-108",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[firmly] Start with my part.",
+      "gap": 0.65,
+      "id": "s82-n043-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "p9MiyOjLNPqMbGy2DMUu",
+        "id": "4hl5jUqtp3fov60LrHth"
+      }
+    },
+    {
+      "key": "N044",
+      "scene": "82",
+      "frame": "neonoire-shot-109",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[gently] From the beginning.",
+      "gap": 1.3,
+      "id": "s82-n044-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "lcjCE6zY1WaX25kMKGwf",
+        "id": "n8NX4rXbogs9cC7cABVv"
+      }
+    },
+    {
+      "key": "N045",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[evenly] Two hours. He hasn't stopped.",
+      "gap": 1.3,
+      "id": "s82a-n045-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "oT8cF3ADAcf4A32ggcxG",
+        "id": "iTJGTVmwknocheR8sNA0"
+      }
+    },
+    {
+      "key": "N046",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] I know. I can see.",
+      "gap": 0.65,
+      "id": "s82a-n046-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "oKCkqygiQIDZsBihvJfu",
+        "id": "3XWm5LO64ppBZ5WxjLF1"
+      }
+    },
+    {
+      "key": "N047",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[evenly] Every page. Then the original goes in the safe downstairs, and nobody touches it. Including you.",
+      "gap": 1.3,
+      "id": "s82a-n047-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "pgPBD7E2PrhwIGWHohN3",
+        "id": "uPwYQwATG3flyvEIrNYC"
+      }
+    },
+    {
+      "key": "N048",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[sadly] It's all I have of him.",
+      "gap": 0.65,
+      "id": "s82a-n048-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "aEjtVak60Kpse0bcY92J",
+        "id": "UlhDGIclxtyBwTeLaCFk"
+      }
+    },
+    {
+      "key": "N049",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[evenly] Then I will take care of it. [pause] Kondo's files were in his desk. Six months of redevelopment money, and Kurose's name in most of it. And the grey car that left the Hive last night was found burnt out in Adachi at dawn. Registered to a security company. The company belongs to Kurose Development. [pause] Tomorrow we put it to them for comment. They will refuse to see a reporter.",
+      "gap": 0.65,
+      "id": "s82a-n049-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "mUcGtt26PntFUjzIG1Z4",
+        "id": "HULO4rC2uQtOYoUUEZZ1"
+      }
+    },
+    {
+      "key": "N050",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I'll go.",
+      "gap": 0.65,
+      "id": "s82a-n050-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "YL3XUjFKDjhdJ1109TNl",
+        "id": "T6Hb71oUxQWcmmGO4YS7"
+      }
+    },
+    {
+      "key": "N051",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[firmly] That is not your job.",
+      "gap": 0.65,
+      "id": "s82a-n051-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "p7qYZwrgBx83Q7br8rMi",
+        "id": "owOnMOJr7FpO5CYOs448"
+      }
+    },
+    {
+      "key": "N052",
+      "scene": "82A",
+      "frame": "neonoire-shot-301",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] It isn't yours either. He'll see me. [pause] He'll want to look at me.",
+      "gap": 0.65,
+      "id": "s82a-n052-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "U8w3gCFi5gVTSTg4kiu5",
+        "id": "Q7WzXHf9DfVsu44Qqoa2"
+      }
+    },
+    {
+      "key": "N053",
+      "scene": "82A",
+      "frame": "neonoire-shot-302",
+      "who": "HARADA",
+      "voice": "oiQsVLQVbTyIiNejyPfk",
+      "prompt": "[evenly] The copies. Not the original.",
+      "gap": 1.3,
+      "id": "s82a-n053-harada",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "zfqIil7L0EF3yJBKA1re",
+        "id": "dRJNF0nZ7xi8KqZtOlnm"
+      }
+    },
+    {
+      "key": "N054",
+      "scene": "83",
+      "frame": "neonoire-shot-111",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[gently] When my secretary said the daughter of Daniel Voss wanted to see me, I didn't believe her.",
+      "gap": 1.3,
+      "id": "s83-n054-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "dTw5Byurzi2nY5E3Tb7U",
+        "id": "2CVyNWxcJQaMcfhtkS7r"
+      }
+    },
+    {
+      "key": "N055",
+      "scene": "83",
+      "frame": "neonoire-shot-111",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[evenly] He sat where you're sitting. He looked at me the way you are. As if I'd done something.",
+      "gap": 1.3,
+      "id": "s83-n055-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0nlerOtF9r9Kpx7wYvwb",
+        "id": "tBIyIGQ7eXRALfjiE8uO"
+      }
+    },
+    {
+      "key": "N056",
+      "scene": "83",
+      "frame": "neonoire-shot-111",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Did you?",
+      "gap": 0.65,
+      "id": "s83-n056-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "NCDwoNoNsFaHIKwXSbzS",
+        "id": "S6Bk2TsnzpOiCuj71iaO"
+      }
+    },
+    {
+      "key": "N057",
+      "scene": "83",
+      "frame": "neonoire-shot-112",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[calmly] To him? I don't remember. [pause] Your father was a good man, Miss Voss. I mean that sincerely. There are not many. [pause] Good men are very expensive.",
+      "gap": 0.65,
+      "id": "s83-n057-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "P6bPSPPtR14Vb9c9p1Fy",
+        "id": "PeATSUJofN6b4eNK7xZ4"
+      }
+    },
+    {
+      "key": "N058",
+      "scene": "83",
+      "frame": "neonoire-shot-112",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[calmly] What is it you want?",
+      "gap": 1.3,
+      "id": "s83-n058-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "El2M35YaKZD19ElYtClC",
+        "id": "08LX61klHGC7M8IbXP7g"
+      }
+    },
+    {
+      "key": "N059",
+      "scene": "83",
+      "frame": "neonoire-shot-317",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] The Toto Shimbun will print tomorrow. They asked me to bring you the chance to reply.",
+      "gap": 1.3,
+      "id": "s83-n059-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0jsh2ylipsniB8sHp5YV",
+        "id": "PVg8xA17AdpKTJeZJubG"
+      }
+    },
+    {
+      "key": "N060",
+      "scene": "83",
+      "frame": "neonoire-shot-317",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I said I'd come.",
+      "gap": 0.65,
+      "id": "s83-n060-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "TlEJJdGQq64wfEMDeeZD",
+        "id": "x9KMyS9Ez37FzMJfkIqZ"
+      }
+    },
+    {
+      "key": "N061",
+      "scene": "83",
+      "frame": "neonoire-shot-317",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[curious] Why?",
+      "gap": 0.65,
+      "id": "s83-n061-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "gJhmsShm4wOcyKlfVzJs",
+        "id": "0tMmdSIjHZYaj7bBkipO"
+      }
+    },
+    {
+      "key": "N062",
+      "scene": "83",
+      "frame": "neonoire-shot-317",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I wanted to see your face.",
+      "gap": 0.65,
+      "id": "s83-n062-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "KBeJpbWj1MUexTcTJ2YQ",
+        "id": "hI0YbOi3ID0ttUhEnZDT"
+      }
+    },
+    {
+      "key": "N064",
+      "scene": "83",
+      "frame": "neonoire-shot-113",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[firmly] It's just a face.",
+      "gap": 0.65,
+      "id": "s83-n064-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "EpEmyChH83iMTFASq7RQ",
+        "id": "bkjfeKKxV8pnytpcu2Qw"
+      }
+    },
+    {
+      "key": "N065",
+      "scene": "83",
+      "frame": "neonoire-shot-114",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] My father kept notes. He wrote your name on every page. [pause] And now I know.",
+      "gap": 1.3,
+      "id": "s83-n065-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "hKM0r2gJNeywhTlNX6Y7",
+        "id": "3JiHhWphv5uR1lbUS2fh"
+      }
+    },
+    {
+      "key": "N066",
+      "scene": "83",
+      "frame": "neonoire-shot-115",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[dryly] It's very clean.",
+      "gap": 1.3,
+      "id": "s83-n066-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "XMNPGGsFl1taY8OuNnlu",
+        "id": "ODND6xgwpJoguJDN6hCf"
+      }
+    },
+    {
+      "key": "N067",
+      "scene": "83",
+      "frame": "neonoire-shot-116",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[calmly] Follow her.",
+      "gap": 1.3,
+      "id": "s83-n067-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "oNosO8DG2XaMjuAlCTFu",
+        "id": "2uooDq0OXgqd3JacdjdK"
+      }
+    },
+    {
+      "key": "N068",
+      "scene": "84",
+      "frame": "neonoire-shot-318",
+      "who": "KANEKO",
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "prompt": "[gruffly] Someone for you.",
+      "gap": 1.3,
+      "id": "s84-n068-kaneko",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "aOwzLUvmJtufDyK3gK1z",
+        "id": "VHdJgv4NL0TPHbpZsEcq"
+      }
+    },
+    {
+      "key": "N069",
+      "scene": "84",
+      "frame": "neonoire-shot-318",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] She asked me to come. Kaneko. She said I should see where Mara was.",
+      "gap": 1.3,
+      "id": "s84-n069-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "kvgBAd7v983MEZ6otmlG",
+        "id": "j2OWkz7lTwk46JkJRBBl"
+      }
+    },
+    {
+      "key": "N070",
+      "scene": "84",
+      "frame": "neonoire-shot-118",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] That's me.",
+      "gap": 1.3,
+      "id": "s84-n070-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "OeHVc5u5c66Ua1eKG5AH",
+        "id": "95Qj8ajInQCZkZYaItBJ"
+      }
+    },
+    {
+      "key": "N071",
+      "scene": "84",
+      "frame": "neonoire-shot-118",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[tenderly] She drew it after you left.",
+      "gap": 0.65,
+      "id": "s84-n071-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "oaS6DVoqrLPT6B72Fck8",
+        "id": "PhHsWvLgNbEdl3KE0kvL"
+      }
+    },
+    {
+      "key": "N072",
+      "scene": "84",
+      "frame": "neonoire-shot-118",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[sadly] She was here. The day I came.",
+      "gap": 0.65,
+      "id": "s84-n072-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Dig4ODMdLnutW4QmFVcv",
+        "id": "49gu30NSXzPa0DO7H5jN"
+      }
+    },
+    {
+      "key": "N073",
+      "scene": "84",
+      "frame": "neonoire-shot-118",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[flatly] Three feet away.",
+      "gap": 0.65,
+      "id": "s84-n073-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "h1MZmEvbr1n4HtnKcv1Z",
+        "id": "VZGWDa3Y8um9AFnY3vyt"
+      }
+    },
+    {
+      "key": "N074",
+      "scene": "84",
+      "frame": "neonoire-shot-118",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[bitterly] And you told her not to come out.",
+      "gap": 1.3,
+      "id": "s84-n074-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Xe2SnGTlc3yViXbcLy8a",
+        "id": "sczP5eVyV0ZepdwlkBrr"
+      }
+    },
+    {
+      "key": "N075",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[sadly] She told herself. [pause] She was protecting you. So was I.",
+      "gap": 0.65,
+      "id": "s84-n075-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "XeqIqgpTzD6EyqpYiHD0",
+        "id": "ktQ90V7hKTjlfiIJUc9E"
+      }
+    },
+    {
+      "key": "N076",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Ishida called me before it was on any news. He knew exactly where she was.",
+      "gap": 0.65,
+      "id": "s84-n076-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "8GSp4Kqmql8ZfkiLVKP7",
+        "id": "KjVH5CsiqGOfkSCSM2t5"
+      }
+    },
+    {
+      "key": "N077",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[quietly] I told him. [pause] Where she'd be, and when. He arranged the car. It was his driver. That's mine.",
+      "gap": 0.65,
+      "id": "s84-n077-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "6FI6Jv8aSaITT6dJ24lD",
+        "id": "S2jPZHQilNfycrZx6Wee"
+      }
+    },
+    {
+      "key": "N078",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I told you about the detective. The one who promised a car. You never asked who.",
+      "gap": 0.65,
+      "id": "s84-n078-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "2fCXLScDctDfJpyquLGY",
+        "id": "FkucETKpd92S9H9Fxsl9"
+      }
+    },
+    {
+      "key": "N079",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[flatly] No.",
+      "gap": 0.65,
+      "id": "s84-n079-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "YjBBEPqF0t6vSP8fDwOY",
+        "id": "woDfDqDLQHoz4jeoFy6F"
+      }
+    },
+    {
+      "key": "N080",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[firmly] I'm not going to tell you it wasn't yours.",
+      "gap": 1.3,
+      "id": "s84-n080-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "op4DaAJYqtdpgOn2h5ew",
+        "id": "XO8FHoOI8XBxgB1uWuC8"
+      }
+    },
+    {
+      "key": "N081",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[pleading] Don't.",
+      "gap": 0.65,
+      "id": "s84-n081-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "xJHROixzGSfFAQyqKGGH",
+        "id": "LzVNDH3tmG3nm2jYwQ1h"
+      }
+    },
+    {
+      "key": "N082",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[tenderly] She drew what she saw. All of it.",
+      "gap": 1.3,
+      "id": "s84-n082-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "vetn91ef5qwwk2rVf1Xp",
+        "id": "mU0RmVUzuenF9b2072eU"
+      }
+    },
+    {
+      "key": "N083",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[sadly] She never told me she'd kept them.",
+      "gap": 0.65,
+      "id": "s84-n083-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "U1Cc7eW4rJ3T3Ur65rqp",
+        "id": "DfvQi00IIyF2N0IjAWOt"
+      }
+    },
+    {
+      "key": "N084",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I'm taking these to Harada. Somebody has to look at them. [pause] I read his notebook.",
+      "gap": 0.65,
+      "id": "s84-n084-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "ru8QgIvU7Sk2XzW5hShV",
+        "id": "1tODWRytZHnrn1qkF26v"
+      }
+    },
+    {
+      "key": "N085",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] I know.",
+      "gap": 0.65,
+      "id": "s84-n085-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "8ehAeWcOz3dq20tAC3hP",
+        "id": "35eXOBdUlQXuPCdAycha"
+      }
+    },
+    {
+      "key": "N086",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] He didn't blame you.",
+      "gap": 0.65,
+      "id": "s84-n086-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "TWpIM1C2s9zn91Gah11r",
+        "id": "kxgF2KovTxZvaDoL4iWr"
+      }
+    },
+    {
+      "key": "N087",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[heavily] I know.",
+      "gap": 0.65,
+      "id": "s84-n087-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "CVQhlskV6yjx9oZf4OE2",
+        "id": "4bfZc7zLbB8cpsOKdNII"
+      }
+    },
+    {
+      "key": "N088",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[hesitantly] I don't know if I'm as good as he was.",
+      "gap": 0.65,
+      "id": "s84-n088-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "ZQigT3VvxmL2mvpjmvDu",
+        "id": "0ym0cVYMmFMCH3c4c7Dz"
+      }
+    },
+    {
+      "key": "N089",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[gently] I'm not asking you to be.",
+      "gap": 0.65,
+      "id": "s84-n089-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "uIlIBHN8iH47lzJa0M4y",
+        "id": "DlCwOQVbGLv3SnD0j3T6"
+      }
+    },
+    {
+      "key": "N090",
+      "scene": "84",
+      "frame": "neonoire-shot-119",
+      "who": "MASKED MAN",
+      "voice": "IUNPSr7i3o1XsExH6IGv",
+      "prompt": "[curtly] Position.",
+      "gap": 1.3,
+      "id": "s84-n090-maskedman",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "CQyqoOXz6cwBZUOHXxQz",
+        "id": "5fQKIbwZpgSS9Q5n98cr"
+      }
+    },
+    {
+      "key": "N091",
+      "scene": "86",
+      "frame": "neonoire-shot-124",
+      "who": "KANEKO",
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "prompt": "[urgently] Up. Through the back. The stairs by the dentist. Then go through the neighbours. Everyone will open a door.",
+      "gap": 1.3,
+      "id": "s86-n091-kaneko",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "wg3UFwHs865L1rNXvDQu",
+        "id": "DepkzRgGe9sRwV6kmGGs"
+      }
+    },
+    {
+      "key": "N092",
+      "scene": "86",
+      "frame": "neonoire-shot-124",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I know them.",
+      "gap": 0.65,
+      "id": "s86-n092-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "mRKv5S4P8S8n5y2UkBL6",
+        "id": "JlPPsyhgBbTH7QovS5ja"
+      }
+    },
+    {
+      "key": "N093",
+      "scene": "86",
+      "frame": "neonoire-shot-124",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[urgently] Come with us.",
+      "gap": 1.3,
+      "id": "s86-n093-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0SkoMyuQmBgP8RYZWxR9",
+        "id": "0KsN6d8XRYXpcQWns74P"
+      }
+    },
+    {
+      "key": "N094",
+      "scene": "86",
+      "frame": "neonoire-shot-125",
+      "who": "KANEKO",
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "prompt": "[dryly] I have lived here fifty years. They can come and find me.",
+      "gap": 0.65,
+      "id": "s86-n094-kaneko",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "FTZmlyRUfaJWWieakqwE",
+        "id": "3tSw9HQI9Ans3uTiGswd"
+      }
+    },
+    {
+      "key": "N095",
+      "scene": "86",
+      "frame": "neonoire-shot-125",
+      "who": "KANEKO",
+      "voice": "vUzt8mUMt5vwWOoJ6szl",
+      "prompt": "[urgently] Go now. They will help you.",
+      "gap": 0.65,
+      "id": "s86-n095-kaneko",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "V8wmmAewiUlo0GhaRK03",
+        "id": "i2gILkvS22tnSYUr83gk"
+      }
+    },
+    {
+      "key": "N096",
+      "scene": "92",
+      "frame": "neonoire-shot-137",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[urgently] Is Kaneko —",
+      "gap": 1.3,
+      "id": "s92-n096-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "N0aCTAUYGEh9JvYdjjvR",
+        "id": "K7ryOG7rKAKD9wxJOP3P"
+      }
+    },
+    {
+      "key": "N097",
+      "scene": "92",
+      "frame": "neonoire-shot-137",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] The Hive looks after its own.",
+      "gap": 0.65,
+      "id": "s92-n097-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "HVoIFDRl1kfQIeQrOBNu",
+        "id": "KhN4L2yhJPWp7ysGMQM0"
+      }
+    },
+    {
+      "key": "N098",
+      "scene": "92",
+      "frame": "neonoire-shot-138",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[sadly] Mara was safe here. Until us.",
+      "gap": 1.3,
+      "id": "s92-n098-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "zZ6viN0PNWGjdTYj2Zjo",
+        "id": "JVIhz2BtVI17QgvCLwUI"
+      }
+    },
+    {
+      "key": "N099",
+      "scene": "94",
+      "frame": "neonoire-shot-143",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[gently] It's only tea.",
+      "gap": 1.3,
+      "id": "s94-n099-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "tZHLfFyNDRPvvbpUPobD",
+        "id": "hDMwKHGujsVSbioR23AM"
+      }
+    },
+    {
+      "key": "N100",
+      "scene": "96",
+      "frame": "neonoire-shot-303",
+      "who": "YOUNG DETECTIVE",
+      "voice": "QQQk8imC2qHxHZySJvr0",
+      "prompt": "[evenly] Yes. [pause] Where? [pause] In his own car. Under the expressway. Sitting up, engine off. No marks. [pause] He left a statement.",
+      "gap": 1.3,
+      "id": "s96-n100-youngdetective",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "OLno18ffCKc3fVujLd8B",
+        "id": "2DQmHGVcX5BtN1r3VdHb"
+      }
+    },
+    {
+      "key": "N101",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Harada says the prosecutors want you to testify.",
+      "gap": 1.3,
+      "id": "s98-n101-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "TzimbLuadTXg7aX6uJxb",
+        "id": "5bTBSSjIzCLIS3qLe5Me"
+      }
+    },
+    {
+      "key": "N102",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Yes.",
+      "gap": 0.65,
+      "id": "s98-n102-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "PB8snop193LHm3389ZhR",
+        "id": "6EfB0guNDqJYy3lGwYbX"
+      }
+    },
+    {
+      "key": "N103",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] And your licence?",
+      "gap": 0.65,
+      "id": "s98-n103-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "2kXNq90ROPythC661ye2",
+        "id": "K7izRNP9Ksk0SYic8Seh"
+      }
+    },
+    {
+      "key": "N104",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] Gone. [pause] It should have gone twenty years ago.",
+      "gap": 0.65,
+      "id": "s98-n104-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "JuaDljMOozpG0IZgMsdc",
+        "id": "QAp9lg2ik6lnUajQBUY2"
+      }
+    },
+    {
+      "key": "N105",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Ishida left a statement. He acted alone.",
+      "gap": 0.65,
+      "id": "s98-n105-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "pCqzGlaR9Kt3VqDAWvl1",
+        "id": "zddd0nIgW2IdFBK0R2II"
+      }
+    },
+    {
+      "key": "N106",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] Is that what it says?",
+      "gap": 0.65,
+      "id": "s98-n106-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Qfo0DHW4IAuOILIwwfBi",
+        "id": "n807it5kWz5MrJj9x6sS"
+      }
+    },
+    {
+      "key": "N107",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[dryly] That's what the police say it says.",
+      "gap": 0.65,
+      "id": "s98-n107-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Zp5ULVNsvHoLw5DNppiB",
+        "id": "J6hpE1yc2yEtFznxsOUh"
+      }
+    },
+    {
+      "key": "N108",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Harada has Mara's drawings. The pages from the floor of the bar. She says they're the only eyewitness there is.",
+      "gap": 0.65,
+      "id": "s98-n108-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0QZUFmpjUnykiYl1pQDs",
+        "id": "TnNP714J3LjAIoGTmn5u"
+      }
+    },
+    {
+      "key": "N109",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[tenderly] She'd have liked that. Being asked.",
+      "gap": 0.65,
+      "id": "s98-n109-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "E7O6keMyzLCoeCC3B3b4",
+        "id": "rmkLyOPNkDprVBvdvfu9"
+      }
+    },
+    {
+      "key": "N110",
+      "scene": "98",
+      "frame": "neonoire-shot-155",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[firmly] Nobody asked her. She drew it anyway.",
+      "gap": 0.65,
+      "id": "s98-n110-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "BS8BjyXUsUHAoDoW5lom",
+        "id": "F7A1GZUPAwys8htQmHZu"
+      }
+    },
+    {
+      "key": "N111",
+      "scene": "98",
+      "frame": "neonoire-shot-156",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[gently] This is yours.",
+      "gap": 1.3,
+      "id": "s98-n111-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "zbgIxLqPDkiiTeC5F6yx",
+        "id": "AX9ssbkrZsAYsF9A8efJ"
+      }
+    },
+    {
+      "key": "N112",
+      "scene": "98",
+      "frame": "neonoire-shot-156",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[gently] She said your father gave it to her. She said you only claim it was yours.",
+      "gap": 1.3,
+      "id": "s98-n112-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "7By4aOzd5IrE96WJH3rG",
+        "id": "I4kytM5jqXM0X9e8Nddy"
+      }
+    },
+    {
+      "key": "N113",
+      "scene": "98",
+      "frame": "neonoire-shot-156",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[voice breaking] Liar. It was mine.",
+      "gap": 1.3,
+      "id": "s98-n113-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0BUnFSZJNqbZB9xM9SsX",
+        "id": "YeZtcVZZbnsulLk0wBGa"
+      }
+    },
+    {
+      "key": "N114",
+      "scene": "98",
+      "frame": "neonoire-shot-156",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[heavily] At the end, she asked me to tell you something.",
+      "gap": 1.3,
+      "replace": "s98-jack-sorry",
+      "id": "s98-jack-sorry",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "SZ8zZZMFN1zLbFCW8SCy",
+        "id": "Awfwor2vP9fTbdOPIwW2"
+      }
+    },
+    {
+      "key": "N115",
+      "scene": "98",
+      "frame": "neonoire-shot-156",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[tenderly] She said to tell you she was sorry.",
+      "gap": 1.3,
+      "id": "s98-n115-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "lCot38qajPKAkYAWnSJQ",
+        "id": "Id5Nw2pGoMglhZTyAfQ6"
+      }
+    },
+    {
+      "key": "N116",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[sadly] I couldn't say anything in the rain.",
+      "gap": 0.65,
+      "id": "s98-n116-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0RXMOcGM6a5RElKMFKMd",
+        "id": "JMDfhufslbz4SwOcgew6"
+      }
+    },
+    {
+      "key": "N117",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] No. [pause] Neither could I.",
+      "gap": 0.65,
+      "id": "s98-n117-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "tEh9LUKL5C5dd0X4026w",
+        "id": "zLt63bGl5AAkfEqHP2p7"
+      }
+    },
+    {
+      "key": "N118",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[wistfully] I don't know what we are.",
+      "gap": 1.3,
+      "id": "s98-n118-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "80ZWVZ9NtqtIUnCNryg7",
+        "id": "llc541nYBPqQjyjmX0sx"
+      }
+    },
+    {
+      "key": "N119",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[earnestly] Neither do I.",
+      "gap": 0.65,
+      "id": "s98-n119-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "M66XwVsiPZqs5on84lvT",
+        "id": "JqYd2TO9TB68ROD93rXg"
+      }
+    },
+    {
+      "key": "N120",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[dryly] I still have your lighter.",
+      "gap": 0.65,
+      "id": "s98-n120-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "r0rnTLfOJmOAoquezakF",
+        "id": "aJzGsN0mUqpdHqg1mt44"
+      }
+    },
+    {
+      "key": "N121",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[gently] I know.",
+      "gap": 0.65,
+      "id": "s98-n121-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "ZTec0hmcbVCjBsTTjWSu",
+        "id": "S8fruEbp0MDVeu8EsLer"
+      }
+    },
+    {
+      "key": "N122",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[warmly] Kaneko's opening a new place. Near the station, under the arches. She's taking the sign.",
+      "gap": 1.3,
+      "id": "s98-n122-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "kACkofxuihITwgBCTqId",
+        "id": "dAjJMEmBCDkZTvhnWLwn"
+      }
+    },
+    {
+      "key": "N123",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[warmly] She says she opens at six.",
+      "gap": 1.3,
+      "id": "s98-n123-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "grgGwuFjCXDh6d1LBm7W",
+        "id": "Ctwi9S0x2WIValJagvmb"
+      }
+    },
+    {
+      "key": "X01",
+      "scene": "20",
+      "frame": "neonoire-shot-194",
+      "who": "MARA",
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "prompt": "[desperately] Is she okay? Is she — does she know you're —",
+      "gap": 1.3,
+      "retire": "s20-jack-is-she-okay-is-she-does",
+      "id": "s20-x01-mara",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "w8UAGWFmaLHlqGrCjADe",
+        "id": "sDWNHGVWTGuhzCZAkFIp"
+      }
+    },
+    {
+      "key": "X02",
+      "scene": "83",
+      "frame": "neonoire-shot-317",
+      "who": "KUROSE",
+      "voice": "N7WASm2wYJmE5JmsJPLJ",
+      "prompt": "[dryly] And they sent you.",
+      "gap": 0.65,
+      "id": "s83-x02-kurose",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "jBZYNJbPeNhhRipOkG9X",
+        "id": "60jMSQF9YCjclNJkyJNX"
+      }
+    },
+    {
+      "key": "L01",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[dryly] Is that what you were holding?",
+      "gap": 0.6,
+      "id": "s14a-l01-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "n0Rp4TvGAC9ck0wmpOXC",
+        "id": "pi0IXLfT0BBihmWSNce5"
+      }
+    },
+    {
+      "key": "L02",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] It's what I had.",
+      "gap": 0.65,
+      "id": "s14a-l02-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "holQCDJdGvL8HYbRpSwG",
+        "id": "YjjaLdbOqEh1JRCNElWq"
+      }
+    },
+    {
+      "key": "L03",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Forty metres. [short pause] Twenty minutes. You never once lost me.",
+      "gap": 1.3,
+      "id": "s14a-l03-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "UdqLP5Zc92bzBc0okh2d",
+        "id": "L3vzW4sl2Bmyo34jLRHD"
+      }
+    },
+    {
+      "key": "L04",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[curious] Is that bad?",
+      "gap": 0.65,
+      "id": "s14a-l04-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "hFpFT3tkO46fjLcZAS5h",
+        "id": "VZDewyXoN8o6K4V6j9eE"
+      }
+    },
+    {
+      "key": "L05",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] It's what a professional does.",
+      "gap": 0.65,
+      "id": "s14a-l05-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "oWxqfK4xunuh0BoxStZd",
+        "id": "SlEEXsXQZ13jWSvU0CI0"
+      }
+    },
+    {
+      "key": "L06",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[curious] Who did you think I was?",
+      "gap": 0.65,
+      "id": "s14a-l06-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "GWWWK3XyEMZ09u9N03Kl",
+        "id": "la8VWVU56umSEIrlSeu4"
+      }
+    },
+    {
+      "key": "L07",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] Somebody who'd be worse company.",
+      "gap": 0.65,
+      "id": "s14a-l07-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "1JyfuHqttS18Wvfyfxjw",
+        "id": "8hnFzHfxVP9xNyeS58Kn"
+      }
+    },
+    {
+      "key": "L08",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] You said you'd look. You didn't say where. I waited outside your office.",
+      "gap": 0.65,
+      "id": "s14a-l08-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "lqaaClNwcscjn1XOCZ8v",
+        "id": "QD237RJup5RanIVkZYEY"
+      }
+    },
+    {
+      "key": "L09",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] If you can follow me, so can they.",
+      "gap": 0.65,
+      "id": "s14a-l09-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "v6ZE5KpKGYY4agERhKfy",
+        "id": "d0fEeG95Ga25APWgUGpN"
+      }
+    },
+    {
+      "key": "L10",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] I brought food.",
+      "gap": 1.3,
+      "id": "s14a-l10-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "yG84orWkKr5XwU6gv0KB",
+        "id": "TftUA9QwLFx7tCRNYGnx"
+      }
+    },
+    {
+      "key": "L11",
+      "scene": "14A",
+      "frame": "neonoire-shot-336",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[tired] Park round the corner, then get in mine. [short pause] One car is a man waiting. Two is somebody watching.",
+      "gap": 1.3,
+      "id": "s14a-l11-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "cSFsfApBqsTRWgBxeQdt",
+        "id": "YOkztZIYgI14PDnglaIg"
+      }
+    },
+    {
+      "key": "L12",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[dryly] You were eating one when I came in. I assumed it was a lifestyle.",
+      "gap": 0.6,
+      "id": "s14a-l12-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "rjHQoA0OZZcyKHoB05mW",
+        "id": "CpBUyGZmvk4NbTp8fvIy"
+      }
+    },
+    {
+      "key": "L13",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] This is a stakeout. Nothing happens.",
+      "gap": 0.65,
+      "id": "s14a-l13-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "fHbGTwryGgUT9qXgWgDR",
+        "id": "8CQAKrjfODuGmLJ488pD"
+      }
+    },
+    {
+      "key": "L14",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] Then I won't miss anything.",
+      "gap": 0.65,
+      "id": "s14a-l14-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "n6MdFbgvbwRn6BpBaFgs",
+        "id": "ebTwI8NYgp4I3RiTW7qK"
+      }
+    },
+    {
+      "key": "L15",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[curious] What are we waiting for?",
+      "gap": 1.3,
+      "id": "s14a-l15-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "eoJGZklSLrQApyKkSZpQ",
+        "id": "AV13O4FEhtaml31Fr4uA"
+      }
+    },
+    {
+      "key": "L16",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Whoever comes back.",
+      "gap": 0.65,
+      "id": "s14a-l16-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "wVlAvFcNpvG07IFhqgh2",
+        "id": "jxLOVLfFiABVK11wdHy8"
+      }
+    },
+    {
+      "key": "L17",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] Back?",
+      "gap": 0.65,
+      "id": "s14a-l17-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Wd1a7yfq7A7IGQFzZ62L",
+        "id": "BQ9DEizCn7b6s2ceNzGl"
+      }
+    },
+    {
+      "key": "L18",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Someone came back to this street that night. [short pause] Nobody comes back for what they already have.",
+      "gap": 0.65,
+      "id": "s14a-l18-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "CbDhfrLwTewqe1FaqYUu",
+        "id": "uWSi43icYawxGQjXh7gn"
+      }
+    },
+    {
+      "key": "L19",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[curious] What didn't they have?",
+      "gap": 0.65,
+      "id": "s14a-l19-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "ytMX8CfeqnCbAK6jvxrI",
+        "id": "2lmisLItEiP54oNwQs95"
+      }
+    },
+    {
+      "key": "L20",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] I don't know yet.",
+      "gap": 0.65,
+      "id": "s14a-l20-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "SapjxCqG4OewO2bKXrrS",
+        "id": "t8b5AswFCSdSPzyuY9Y8"
+      }
+    },
+    {
+      "key": "L21",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[gently] Is that for luck?",
+      "gap": 1.3,
+      "id": "s14a-l21-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "6SmSVsvTZPkjpRBUHgPd",
+        "id": "c5TX6LsVw8dSA3P4SAyv"
+      }
+    },
+    {
+      "key": "L22",
+      "scene": "14A",
+      "frame": "neonoire-shot-337",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] It's so I don't lose it.",
+      "gap": 0.65,
+      "id": "s14a-l22-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "bFFfw4cJKrAAzQ3dbeTz",
+        "id": "iWXp8wyABmo2264qTLef"
+      }
+    },
+    {
+      "key": "L23",
+      "scene": "14A",
+      "frame": "neonoire-shot-339",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[weakly] I told her she always runs.",
+      "gap": 0.6,
+      "id": "s14a-l23-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "X4cPy3KIndrGsTTs1y8O",
+        "id": "0QP9RmZnuMJ8NL25Xcob"
+      }
+    },
+    {
+      "key": "L24",
+      "scene": "14A",
+      "frame": "neonoire-shot-339",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] You said.",
+      "gap": 0.65,
+      "id": "s14a-l24-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "M3UwV5dGKxuKSeWO8Saj",
+        "id": "IX07Wo4gum1Tsy02WPby"
+      }
+    },
+    {
+      "key": "L25",
+      "scene": "14A",
+      "frame": "neonoire-shot-339",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[voice breaking] It's the last thing I —",
+      "gap": 0.65,
+      "id": "s14a-l25-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "QK2b38bG84g6eHfR2wWS",
+        "id": "ZLYLuHKiB9DXbOHWf7Hn"
+      }
+    },
+    {
+      "key": "L26",
+      "scene": "14A",
+      "frame": "neonoire-shot-339",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Runners don't pack. They leave with what they're wearing. Your sister had a suitcase zipped under the bed and a flight booked home. [pause] [gently] Whatever happened to her, she wasn't running from you.",
+      "gap": 0.15,
+      "id": "s14a-l26-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "zkw1edfYgfM2tHiz5cDl",
+        "id": "CrJ0Kdlzzb4dyqM62Uno"
+      }
+    },
+    {
+      "key": "L27",
+      "scene": "14A",
+      "frame": "neonoire-shot-339",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[pleading] You don't know that.",
+      "gap": 0.65,
+      "id": "s14a-l27-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "Fg5BAZv4bKuNG7u3ToVy",
+        "id": "QYgGdxkDjtUtB3Fny5QA"
+      }
+    },
+    {
+      "key": "L28",
+      "scene": "14A",
+      "frame": "neonoire-shot-339",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] No. [pause] But I'd bet on it.",
+      "gap": 0.65,
+      "id": "s14a-l28-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "2GiN0NDKo8D5E1PURBKB",
+        "id": "FyRKyD2p2DwIBis1blxr"
+      }
+    },
+    {
+      "key": "L29",
+      "scene": "14A",
+      "frame": "neonoire-shot-342",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[curious] Is that routine? Watching a bar after a shooting?",
+      "gap": 0.6,
+      "id": "s14a-l29-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "CU2SYCiFfwgArEFctTfU",
+        "id": "TFSm178VRen4dSGuj3RQ"
+      }
+    },
+    {
+      "key": "L30",
+      "scene": "14A",
+      "frame": "neonoire-shot-342",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Probably.",
+      "gap": 0.65,
+      "id": "s14a-l30-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "2iZYKuiFZ6pJJqFez3Cb",
+        "id": "WHBQctos74NfiIwMDtVX"
+      }
+    },
+    {
+      "key": "L31",
+      "scene": "14A",
+      "frame": "neonoire-shot-342",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] You don't think so.",
+      "gap": 1.3,
+      "id": "s14a-l31-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "8bEPSQmRV58q89eek4Jx",
+        "id": "47mCk4HtUSFWXGNWRZ9j"
+      }
+    },
+    {
+      "key": "L32",
+      "scene": "14A",
+      "frame": "neonoire-shot-342",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] I think it's a plate number.",
+      "gap": 0.65,
+      "id": "s14a-l32-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "5WkvhkPJYEAJWvISDUo4",
+        "id": "4Yk7n2qVBkKUjfUG49E8"
+      }
+    },
+    {
+      "key": "L33",
+      "scene": "14A",
+      "frame": "neonoire-shot-343",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Call me when you go somewhere.",
+      "gap": 0.6,
+      "id": "s14a-l33-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "DmdQvStblUAl6b9TGTbn",
+        "id": "t02ik6ybV87aZZdxaUeh"
+      }
+    },
+    {
+      "key": "L34",
+      "scene": "14A",
+      "frame": "neonoire-shot-343",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] I will.",
+      "gap": 0.65,
+      "id": "s14a-l34-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "d3cy1ProtYjQ4I3PX3Cl",
+        "id": "ds1NxiSEd9IzFGTIdWcq"
+      }
+    },
+    {
+      "key": "L35",
+      "scene": "14A",
+      "frame": "neonoire-shot-343",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[dryly] That's a lie.",
+      "gap": 0.65,
+      "id": "s14a-l35-jack",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "5x2sKNFjZTzHvTI7fiO0",
+        "id": "UiXrXfr6UFx9MXUAjWhr"
+      }
+    },
+    {
+      "key": "L36",
+      "scene": "14A",
+      "frame": "neonoire-shot-343",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[flatly] Yes.",
+      "gap": 0.65,
+      "id": "s14a-l36-vera",
+      "generation": {
+        "flow": "kvzIYLAVhQxuu2koUOll",
+        "session": "0bidCAEMWlR3GuLJgQzM",
+        "id": "J7esslIUbWCpbA5pfzrF"
+      }
+    }
+  ]
+}

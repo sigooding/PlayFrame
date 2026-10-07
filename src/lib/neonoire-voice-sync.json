@@ -1,0 +1,59 @@
+{
+  "note": "Recorded dialogue of 7 October 2026 (the 160 lines the games read with text-to-speech). frames holds the digest of the audio each already-voiced bundle frame carried before; bundle-refresh replaces a frame's audio (and lengthens its duration to fit) only while the saved audio still matches. Frames that had no dialogue are filled by the plain rule.",
+  "frames": {
+    "neonoire-shot-10": {
+      "audio": "09bc49510ebafdffe3de1cf3784ee3cd5751826474559e92af7edb0e8680cfe0"
+    },
+    "neonoire-shot-166": {
+      "audio": "af3e3d316ee949b93153d05affa29811620b448fa92e298710245465294d797c"
+    },
+    "neonoire-shot-251": {
+      "audio": "9ffa93bc102bbf35231de6344c60798e9570869893df17a4fead4c49ac912f9b"
+    },
+    "neonoire-shot-247": {
+      "audio": "bc850a60a1ca8e223caf86681cfbd969925ad071318a8c9f349c25c3e72e4141"
+    },
+    "neonoire-shot-184": {
+      "audio": "e2ea85e4e457ed32a088de351c8bac52275a48b38b7f5ca20f57898d053775b0"
+    },
+    "neonoire-shot-185": {
+      "audio": "d80c00589c0273bca239b2c1a0e6d9d2f52924f5f358493856fd43766a345f2e"
+    },
+    "neonoire-shot-194": {
+      "audio": "7f0cc80c050d99f85f1a2e29c9cbdb8ec1678e9c0a25bd8a0599d6273d335921"
+    },
+    "neonoire-shot-284": {
+      "audio": "6a1df7a027c09fecac4f261a34e951bd3d6a0466d6d9cd2b384fd0fe2ed2e390"
+    },
+    "neonoire-shot-197": {
+      "audio": "bfb9378e360caf98aa8da44b0e09673ffad5df0585a470a961ab7361e076cf13"
+    },
+    "neonoire-shot-202": {
+      "audio": "25cd96baa1177eb0e11ef830ef55cd74447d3c2f1cc990eabdf7b5b7722358d1"
+    },
+    "neonoire-shot-291": {
+      "audio": "ec10b7712df5a8550c2687793d7c8e013a867c895ab6eaade5471571e154b13f"
+    },
+    "neonoire-shot-273": {
+      "audio": "b5135858e7c80b8bede049d5ae0b7584b37104dcb2b3f7af201cd075ee84fa87"
+    },
+    "neonoire-shot-210": {
+      "audio": "153525f9dd2279eaf5081d8270b77eb30f67c0c040a53e5fc1648d0f93b2447f"
+    },
+    "neonoire-shot-233": {
+      "audio": "3b34297ef7282af64c5d99cfe14395666b90bf857195d6ed721db0afd50d54df"
+    },
+    "neonoire-shot-239": {
+      "audio": "d9922bccc8faf7fecc264451c99d6fd2c605b5e158550e0b36c5028fe35be334"
+    },
+    "neonoire-shot-113": {
+      "audio": "ab683c6e5b92a49a324a6928d7d43d3b90e19157dfe4c2956c65472a0a3f620a"
+    },
+    "neonoire-shot-156": {
+      "audio": "8f9e4d293a2eecd0fc874fc41406fd99caa3ceed78491f81d2fa27f2971598ba"
+    },
+    "neonoire-shot-157": {
+      "audio": "020dfdf0847c7a1f144cea3f2034b93cf210a59aafb9312be3717076d9fd0028"
+    }
+  }
+}
