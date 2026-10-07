@@ -24,6 +24,11 @@ export async function listProjects() {
     }
     rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
   }
+  if (!rows.some(row => row.id === hangarProject.id)) {
+    // The cold open is a bundled project, so it belongs in the project list rather than only behind Templates.
+    await db.insert(filmProjects).values(hangarProject).onConflictDoNothing();
+    rows = await db.select().from(filmProjects).orderBy(asc(filmProjects.createdAt), asc(filmProjects.id));
+  }
   return Promise.all(rows.map(row => refreshNeonoireFrames(serialize(row))));
 }
 

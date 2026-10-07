@@ -677,7 +677,7 @@ try {
     (async () => {
       const id = ${JSON.stringify(project.id)};
       const initial = await api.listProjects();
-      assert.equal(initial.length, 5, 'Fresh local databases must seed all five projects');
+      assert.equal(initial.length, 6, 'Fresh local databases must seed all six projects (the five starters plus the bundled cold open)');
       assert(initial.some(p => p.title === "Nobody's Witness"), 'the film is seeded alongside the series');
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
@@ -689,10 +689,10 @@ try {
       assert.equal(again.script, 'My preserved words');
       assert.equal(again.title, 'My edited Rapture');
       assert.equal(again.shareId, shared.shareId);
-      assert.equal((await api.listProjects()).length, 5, 'Opening repeatedly must not duplicate');
+      assert.equal((await api.listProjects()).length, 6, 'Opening repeatedly must not duplicate');
       assert.deepEqual(await api.getProject(originalSample.id), originalSample, 'Other projects are untouched');
       await api.deleteProject(id);
-      assert.equal((await api.listProjects()).length, 4, 'Ordinary page loads respect deletion');
+      assert.equal((await api.listProjects()).length, 5, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
       assert.equal(restored.frames.length, 526);

@@ -1194,7 +1194,7 @@ try {
     const api = require(${JSON.stringify(services)});
     (async () => {
       const id = ${JSON.stringify(project.id)};
-      assert.equal((await api.listProjects()).length, 5, 'A fresh workspace seeds all five projects');
+      assert.equal((await api.listProjects()).length, 6, "A fresh workspace seeds all six projects");
       const opened = await api.openNeonoireProject();
       assert.equal(opened.frames.length, ${EXPECTED_SHOTS});
       assert.equal(opened.scenes.length, 103);
@@ -1207,7 +1207,7 @@ try {
       const again = await api.openNeonoireProject();
       assert.equal(again.title, 'NEONOIRE — my pass');
       assert.equal(again.frames.find(f => f.id === frame.id).title, 'My own title', 'An edited frame is never overwritten');
-      assert.equal((await api.listProjects()).length, 5, 'Opening repeatedly must not duplicate');
+      assert.equal((await api.listProjects()).length, 6, 'Opening repeatedly must not duplicate');
 
       // A slot still waiting for its keyframe is filled in when the pass lands, and nothing else is.
       const awaiting = again.frames.find(f => !f.image);
@@ -1222,9 +1222,9 @@ try {
       assert(!refilled.title.includes('keyframe missing'), 'The filled-in frame loses its placeholder title');
 
       await api.deleteProject(id);
-      assert.equal((await api.listProjects()).length, 4, 'Ordinary page loads respect deletion');
+      assert.equal((await api.listProjects()).length, 5, 'Ordinary page loads respect deletion');
       await api.openNeonoireProject();
-      assert.equal((await api.listProjects()).length, 5, 'Opening it again is deliberate');
+      assert.equal((await api.listProjects()).length, 6, 'Opening it again is deliberate');
     })().catch(error => { console.error(error); process.exit(1); });
   `], { cwd: root, env: { ...process.env, DATABASE_URL: "", NODE_ENV: "test", FRAME_LOCAL_DB_FILE: databaseFile }, stdio: "inherit", timeout: 30000 });
 } finally { rmSync(databaseFile, { force: true }); }
