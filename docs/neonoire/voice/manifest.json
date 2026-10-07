@@ -508,14 +508,27 @@
       "file": "/audio/neonoire/s1/15-oldman-strained-don-t-let-them-have.mp3",
       "offset": 2,
       "duration": 2.19,
-      "voice": "y7NkiaxPRjIzeTdRhHDC",
+      "voice": "oBCsFZ1GTHU9VCiEZSXY",
       "model": "eleven_v4",
       "generation": {
-        "flow": "3PHvMwiCPgs8R7eUX4pm",
-        "session": "MaBVyaaAxfDK7we594Q5",
-        "id": "h2bhyYHAGMH5Fyy6SY1M"
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "0Xa3hltiUNQ8DsIQQuk8",
+        "id": "GUOcpVwtNiqFOY8VJBWW"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/15-oldman-strained-don-t-let-them-have-v1.mp3",
+          "prompt": "[strained] Don't let them have it.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "3PHvMwiCPgs8R7eUX4pm",
+            "session": "MaBVyaaAxfDK7we594Q5",
+            "id": "h2bhyYHAGMH5Fyy6SY1M"
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s2-maskedman-shitsurei-shimasu",
@@ -7303,15 +7316,28 @@
       "text": "You're not a reporter.",
       "file": "/audio/neonoire/s53a/297-harada-you-re-not-a-reporter.mp3",
       "offset": 0.6,
-      "duration": 1.57,
-      "voice": "hpp4J3VqNfWAUOO0d1Us",
+      "duration": 1.49,
+      "voice": "oiQsVLQVbTyIiNejyPfk",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "LnD8DehFKOWFO6YnuMV1",
-        "id": ""
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "7uEaB4G2LgKSseXIzqws",
+        "id": "o9LPiYZ3Nxw8s2c3b6l3"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/297-harada-you-re-not-a-reporter-v1.mp3",
+          "prompt": "You're not a reporter.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "LnD8DehFKOWFO6YnuMV1",
+            "id": ""
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s53a-vera-my-sister-was-in-that-bar",
@@ -7337,15 +7363,28 @@
       "text": "We have had a letter from lawyers already. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.",
       "file": "/audio/neonoire/s53a/297-harada-we-have-had-a-letter-from.mp3",
       "offset": 5.51,
-      "duration": 11.73,
-      "voice": "hpp4J3VqNfWAUOO0d1Us",
+      "duration": 11.65,
+      "voice": "oiQsVLQVbTyIiNejyPfk",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "Wwn8CrXhQCOhZFbqsoDb",
-        "id": ""
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "S5LqeMCwvQ1Vi9rNEoZh",
+        "id": "gabsC3GjtiRltlHzNVMO"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/297-harada-we-have-had-a-letter-from-v1.mp3",
+          "prompt": "We have had a letter from lawyers already. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "Wwn8CrXhQCOhZFbqsoDb",
+            "id": ""
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s53a-vera-the-police-say-it-s-a",
@@ -7372,15 +7411,28 @@
       "prompt": "[dryly] The police say what they are told.",
       "file": "/audio/neonoire/s53a/297-harada-the-police-say-what-they-are.mp3",
       "offset": 21.05,
-      "duration": 2.35,
-      "voice": "hpp4J3VqNfWAUOO0d1Us",
+      "duration": 2.43,
+      "voice": "oiQsVLQVbTyIiNejyPfk",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "HgGi0dU7Di9k3nVsiKsc",
-        "id": ""
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ly44eQP6AFR22LmOlHOl",
+        "id": "sRsoTZs8wRi9Sqewi5VL"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/297-harada-the-police-say-what-they-are-v1.mp3",
+          "prompt": "[dryly] The police say what they are told.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "HgGi0dU7Di9k3nVsiKsc",
+            "id": ""
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s53a-vera-did-he-say-who-he-was",
@@ -7406,15 +7458,28 @@
       "text": "One o'clock, Kanda, an old man who wanted to talk. He told two people. Me. And a detective.",
       "file": "/audio/neonoire/s53a/297-harada-one-o-clock-kanda-an-old.mp3",
       "offset": 26.66,
-      "duration": 8.05,
-      "voice": "hpp4J3VqNfWAUOO0d1Us",
+      "duration": 7.89,
+      "voice": "oiQsVLQVbTyIiNejyPfk",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "8U7FgnsP7AKCPySkMZ4Q",
-        "id": ""
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "OCyLgZHPGpAbS6JVbQZm",
+        "id": "WyUSc9wSKp6oR23VgWnT"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/297-harada-one-o-clock-kanda-an-old-v1.mp3",
+          "prompt": "One o'clock, Kanda, an old man who wanted to talk. He told two people. Me. And a detective.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "8U7FgnsP7AKCPySkMZ4Q",
+            "id": ""
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s53a-vera-which-detective",
@@ -7441,15 +7506,28 @@
       "prompt": "[short pause] He didn't say. He said the detective had promised to keep a car nearby. There was no car.",
       "file": "/audio/neonoire/s53a/297-harada-he-didn-t-say-he-said.mp3",
       "offset": 37.32,
-      "duration": 6.03,
-      "voice": "hpp4J3VqNfWAUOO0d1Us",
+      "duration": 5.8,
+      "voice": "oiQsVLQVbTyIiNejyPfk",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "VE0XYRbwJuyx181H7kDv",
-        "id": ""
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "f9N8EyUT8VlYqf48FCER",
+        "id": "tdjwhc0xwGyt8hK9WSE9"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/297-harada-he-didn-t-say-he-said-v1.mp3",
+          "prompt": "[short pause] He didn't say. He said the detective had promised to keep a car nearby. There was no car.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "VE0XYRbwJuyx181H7kDv",
+            "id": ""
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s53a-vera-will-you-print-it",
@@ -7476,15 +7554,28 @@
       "prompt": "[short pause] Print what? A dead man's diary? Bring me something with a name on it.",
       "file": "/audio/neonoire/s53a/298-harada-print-what-a-dead-man-s.mp3",
       "offset": 3.02,
-      "duration": 4.75,
-      "voice": "hpp4J3VqNfWAUOO0d1Us",
+      "duration": 4.91,
+      "voice": "oiQsVLQVbTyIiNejyPfk",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "dnKqSVkOYmqoyjD0BrP4",
-        "id": ""
+        "flow": "daOh3TQNIdZc0D7em06b",
+        "session": "ix4mAIzRYrHPhqOxyQo6",
+        "id": "xuBdbZib18cQp9uOvLeJ"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/298-harada-print-what-a-dead-man-s-v1.mp3",
+          "prompt": "[short pause] Print what? A dead man's diary? Bring me something with a name on it.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "dnKqSVkOYmqoyjD0BrP4",
+            "id": ""
+          },
+          "archivedAt": "2026-10-07"
+        }
+      ]
     },
     {
       "id": "s1-hive1-kaneko",

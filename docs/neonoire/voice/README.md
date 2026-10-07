@@ -95,3 +95,9 @@ The renderer preserves edited within-scene order and leaves **Static** shots sti
 
 **Reaching the games.** In nobodys-witness: `node tools/import-playframe.mjs --from <PlayFrame checkout>` (copies the new takes into `public/voice/`, rewrites `src/story/story.json`). In scarlett-witness: copy that `src/story/story.json` to `src/film/story.json`, then `node tools/build-film-story.mjs`. Both games ship their own copy of every voice file, so a swap (or any new take) has to be re-imported.
 
+
+## One voice per character (7 October 2026, later)
+
+Harada's six newspaper-office lines (scenes 297, 298) had been recorded with an earlier voice (`hpp4J3VqNfWAUOO0d1Us`), so Harada sounded like two people; the scene 1 old man's "Don't let them have it." used the 29 September Sakai preview (`y7NkiaxPRjIzeTdRhHDC`), which is no longer in the workspace, while "After twenty years." used the saved **Sakai - NEONOIRE**. All seven were re-recorded in the saved voices (`Harada - NEONOIRE`, `Sakai - NEONOIRE`), same words and tags, under their old ids; the old takes are in `archive/*-v1.mp3` and each line's `history`. Plan: [`elevenlabs-plan-unify-2026-10-07.json`](elevenlabs-plan-unify-2026-10-07.json). `sync-voices.mjs` now merges with what earlier passes recorded (a frame changed in two passes keeps both digests; its baseline stays the oldest), and `bundle-refresh` accepts one digest or a list, so a saved workspace on either version takes the new takes.
+
+Still borrowed (drafts): Mrs. Sakai and Mrs. Noda on Kaneko's voice, Mr. Noda on Okada's, the old tobacconist on the barber's, the bartender on the journalist's, the vending machine on a premade voice, the Mother on a library voice.
