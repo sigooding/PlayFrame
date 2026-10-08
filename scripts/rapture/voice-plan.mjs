@@ -158,5 +158,8 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     writeFileSync(resolve(root, SCRIPT), buildScript(plan));
     const credits = plan.lines.reduce((n, l) => n + l.prompt.length, 0);
     console.log(`${plan.lines.length} lines, ${credits} characters (about ${credits} credits at one take each) -> ${PLAN}`);
+    // The repeat risk (voice-screen.mjs): a direction longer than a line of three words or fewer invited "Rules. Rules", "No, no", "Us" x5.
+    const risky = plan.lines.filter(l => l.text.split(/\s+/).length <= 3 && l.tag.split(/[\s,]+/).filter(Boolean).length > 1);
+    if (risky.length) console.log(`${risky.length} lines of three words or fewer carry a direction of more than one word (they came back clean; screen any new take with voice-screen.mjs)${process.argv.includes("--risky") ? `: ${risky.map(l => l.key).join(" ")}` : " (--risky lists them)"}`);
   }
 }

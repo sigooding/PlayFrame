@@ -410,7 +410,8 @@
      "id": "AuAAa3ot8BLK8eQEmeDZ"
     },
     "heard": "No, no"
-   }
+   },
+   "heard": "No"
   },
   {
    "id": "ep1-02-col-you-haven-t-heard-what-i",
@@ -662,7 +663,8 @@
      "id": "ZHWk9L4N52YxrIWxRYST"
     },
     "heard": "Did them. Did them"
-   }
+   },
+   "heard": "Did them"
   },
   {
    "id": "ep1-02-deborah-the-pressure-s-gone-again",
@@ -834,7 +836,8 @@
      "id": "JXOf8QspoPcGkDlmaOVj"
     },
     "heard": "Why? Why? Why?"
-   }
+   },
+   "heard": "Why?"
   },
   {
    "id": "ep1-02-maureen-can-i-ask-you-something-religious",
@@ -1638,7 +1641,8 @@
      "id": "C1JI9VjETcyBYCDzIaq7"
     },
     "heard": "Hmm. Hmm."
-   }
+   },
+   "heard": "Hmm."
   },
   {
    "id": "ep1-03-kath-to-teach-moral-justice",
@@ -1810,7 +1814,8 @@
      "id": "4TqIT5u1OMyxxxHviP8C"
     },
     "heard": "Might. Might"
-   }
+   },
+   "heard": "Might"
   },
   {
    "id": "ep1-03-kath-that-s-a-purpose-that",
@@ -2429,7 +2434,8 @@
      "id": "VSB8w67DTMVF0xRjkKJl"
     },
     "heard": "To who? To who?"
-   }
+   },
+   "heard": "To who?"
   },
   {
    "id": "ep1-03-kath-do-we-go-in",
@@ -2775,7 +2781,8 @@
      "id": "FwoNWnvfiP4PJarrxLFF"
     },
     "heard": "You do not have to say anything. You do not have to say anything. But it may harm your defense if you do not mention when questioned something which you later rely on in court."
-   }
+   },
+   "heard": "You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court."
   },
   {
    "id": "ep1-03-man-in-blue-coat-there-s-no-court",
@@ -2895,7 +2902,8 @@
      "id": "KoSGCSzdPcpZqZnlW3SA"
     },
     "heard": "Who? Who?"
-   }
+   },
+   "heard": "Who?"
   },
   {
    "id": "ep1-03-ray-the-birds",
@@ -3042,7 +3050,8 @@
      "id": "53cH9hja9aBgkUl8QxLo"
     },
     "heard": "You little sod. You little sod"
-   }
+   },
+   "heard": "You little sod"
   },
   {
    "id": "ep1-04-nina-don-t-you-start",
@@ -3137,7 +3146,8 @@
      "id": "GpeRHTfKU5oU3eu5KcED"
     },
     "heard": "Course. Course"
-   }
+   },
+   "heard": "Course"
   },
   {
    "id": "ep1-07-jodie-it-s-not-that-sort-of",
@@ -3260,7 +3270,8 @@
      "id": "Veko03gELXMB7HgDAI5m"
     },
     "heard": "It, it was already"
-   }
+   },
+   "heard": "It was already"
   },
   {
    "id": "ep1-07-jodie-mm",
@@ -3301,7 +3312,8 @@
      "id": "z85jfW8uadhxtovvi3IP"
     },
     "heard": "うん、うん。"
-   }
+   },
+   "heard": "うーん。"
   },
   {
    "id": "ep1-07-danny-rules",
@@ -3343,7 +3355,8 @@
      "id": "MDqtohN0fsdz46cr0570"
     },
     "heard": "Rules. Rules"
-   }
+   },
+   "heard": "Rules"
   },
   {
    "id": "ep1-07-jodie-nothing-off-anyone-who-s-still",
@@ -3548,7 +3561,8 @@
      "id": "a9ngQDQkM4m5v6AQtq3T"
     },
     "heard": "They're gone. They're gone"
-   }
+   },
+   "heard": "They're gone"
   },
   {
    "id": "ep1-07-jodie-you-don-t-know-that",
@@ -3779,7 +3793,8 @@
      "id": "73TJApP7I4WNdfjJzVKJ"
     },
     "heard": "One in ten one in ten one in twenty?"
-   }
+   },
+   "heard": "One in ten? One in twenty?"
   },
   {
    "id": "ep1-07-danny-do-the-cistern-jodie",
@@ -4093,7 +4108,8 @@
      "id": "hmrn4CxPBtE70ZIVRyHR"
     },
     "heard": "Exactly. Exactly"
-   }
+   },
+   "heard": "Exactly"
   },
   {
    "id": "ep1-07-danny-don-t-tell-anyone-about-the",
@@ -4545,7 +4561,8 @@
      "id": "AAyPCFESIfRXCvDhjwxE"
     },
     "heard": "No, no"
-   }
+   },
+   "heard": "No"
   },
   {
    "id": "ep1-08-kath-then-there-isn-t-a-form",
@@ -4614,7 +4631,8 @@
      "id": "vjixvWxaSjW8Cw3HAUeG"
     },
     "heard": "Cath. Cath"
-   }
+   },
+   "heard": "Cath"
   },
   {
    "id": "ep1-08-kath-mm",
@@ -4710,7 +4728,8 @@
      "id": "Rp2vA0QHD3K7IMkfKslD"
     },
     "heard": "Us, us, us, us, us."
-   }
+   },
+   "heard": "Us"
   }
  ],
  "recorded": 166,

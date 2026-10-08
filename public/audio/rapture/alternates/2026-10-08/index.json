@@ -1,6 +1,6 @@
 {
  "date": "2026-10-08",
- "note": "Clean re-recordings of lines whose first take repeated itself that were not used; nothing here is in the episode. Swap one in by re-running voice-rerecord.mjs with a record that names it.",
+ "note": "Clean re-recordings of lines whose first take repeated itself that were not used (takes), and re-recordings that repeated themselves again (repeats, kept as evidence of which directions invite it). Nothing here is in the episode. To use one, name it in a record for voice-rerecord.mjs.",
  "takes": [
   {
    "id": "ep1-02-nina-no",
@@ -154,6 +154,20 @@
     "flow": "S7eFZW866dnQgWMpXbpE",
     "session": "zCFiYn37vF2WjiLvDgIF",
     "id": "gY5LALiQIGjWE3vtBLBz"
+   }
+  },
+  {
+   "id": "ep1-03-ray-to-who",
+   "key": "R089",
+   "file": "/audio/rapture/alternates/2026-10-08/R089-alt2.mp3",
+   "prompt": "[Curious] To who?",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "gUYVdBXniPsqbl5JDOSj",
+    "id": "lsvaliKn1EDiqfSGgN40"
    }
   },
   {
@@ -409,6 +423,34 @@
    }
   },
   {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/R119-alt2.mp3",
+   "prompt": "Rules.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "TrhJddnouLD1CNAGZk8M",
+    "id": "hxtLaQENU80RLfXGL8nt"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/R119-alt3.mp3",
+   "prompt": "Rules.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "mhMxanmxyFZqUa329cp2",
+    "id": "VOhJU8hVVhYNkMw0ABub"
+   }
+  },
+  {
    "id": "ep1-07-danny-they-re-gone",
    "key": "R126",
    "file": "/audio/rapture/alternates/2026-10-08/R126-alt1.mp3",
@@ -574,6 +616,106 @@
     "flow": "S7eFZW866dnQgWMpXbpE",
     "session": "QMligNWtuIJFYWBV8YK8",
     "id": "tLYc9ACJcwBRgrRGYNij"
+   }
+  }
+ ],
+ "repeats": [
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R095-repeat1.mp3",
+   "prompt": "[Reproachful] Kath.",
+   "duration": 2.08,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "O2AzGmT9c08OqDo19CUh",
+    "id": "eoj3JBjTTIlx1M7WTtZu"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R095-repeat2.mp3",
+   "prompt": "[Reproachful] Kath.",
+   "duration": 2.08,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "Lff3nDQFMzyHu8fVAYaj",
+    "id": "ASPKMDx9prqrjzjPIUiF"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R095-repeat3.mp3",
+   "prompt": "[Reproachful] Kath.",
+   "duration": 2,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "GfU0n2oktAtYyKjO4VVf",
+    "id": "TFexHqld2TKtovMKAIAi"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat1.mp3",
+   "prompt": "[Low, steady, serious, said once] Rules.",
+   "duration": 2.48,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "wgOnkij2lUFJp4JsRAaA",
+    "id": "4Go9h8trxqPN5fNminDZ"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat2.mp3",
+   "prompt": "[Low, steady, serious, said once] Rules.",
+   "duration": 3.68,
+   "phrases": 3,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "HA3lmqlv9VmrnSbnQtJz",
+    "id": "rxxXnnxe41Rf1h2ViW5Q"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat3.mp3",
+   "prompt": "[Low and serious, a single word] Rules.",
+   "duration": 2.72,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "QM0YPDFy1Hnuq4cUeMHd",
+    "id": "7CW6USnCOCvNWLLmZq6f"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat4.mp3",
+   "prompt": "[Low and serious, a single word] Rules.",
+   "duration": 2.48,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "Qsqss0pr9yWkiK8ewNFn",
+    "id": "ptS6kbUwxygy6SsDlbOq"
    }
   }
  ]

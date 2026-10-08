@@ -72,7 +72,7 @@ if (install) {
   writeFileSync(manifestPath, JSON.stringify(manifest, null, 1) + "\n");
   const altDir = `/audio/rapture/alternates/${record.date}`;
   mkdirSync(pub(altDir), { recursive: true });
-  const index = [];
+  const index = [], repeats = [];
   for (const rec of record.lines) {
     for (const alt of rec.alternates) {
       const from = resolve(dir, "alt", alt.take);
@@ -80,8 +80,20 @@ if (install) {
       copyFileSync(from, pub(`${altDir}/${alt.take}`));
       index.push({ id: rec.id, key: rec.key, file: `${altDir}/${alt.take}`, prompt: alt.prompt, duration: alt.duration, ...screenTake(from, rec.text), generation: alt.generation });
     }
+    // The re-recordings that repeated themselves again are kept too, in repeats/, so nothing generated lives only on ElevenLabs.
+    for (const rep of rec.repeats || []) {
+      const from = resolve(dir, "repeats", rep.take);
+      if (!existsSync(from)) throw new Error(`no staged repeat ${from}`);
+      mkdirSync(pub(`${altDir}/repeats`), { recursive: true });
+      copyFileSync(from, pub(`${altDir}/repeats/${rep.take}`));
+      repeats.push({ id: rec.id, key: rec.key, file: `${altDir}/repeats/${rep.take}`, prompt: rep.prompt, duration: rep.duration, ...screenTake(from, rec.text), generation: rep.generation });
+    }
   }
-  writeFileSync(pub(`${altDir}/index.json`), JSON.stringify({ date: record.date, note: "Clean re-recordings of lines whose first take repeated itself that were not used; nothing here is in the episode. Swap one in by re-running voice-rerecord.mjs with a record that names it.", takes: index }, null, 1) + "\n");
-  console.log(`${index.length} alternates kept in ${altDir}`);
+  writeFileSync(pub(`${altDir}/index.json`), JSON.stringify({
+    date: record.date,
+    note: "Clean re-recordings of lines whose first take repeated itself that were not used (takes), and re-recordings that repeated themselves again (repeats, kept as evidence of which directions invite it). Nothing here is in the episode. To use one, name it in a record for voice-rerecord.mjs.",
+    takes: index, repeats,
+  }, null, 1) + "\n");
+  console.log(`${index.length} alternates and ${repeats.length} repeats kept in ${altDir}`);
 }
 console.log(`${done} takes ${archive ? "archived" : "replaced"}`);

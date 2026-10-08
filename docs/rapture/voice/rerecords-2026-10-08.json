@@ -12,14 +12,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-02/12-nina-no.mp3",
-    "tag": "Flat, immediate",
-    "prompt": "[Flat, immediate] No.",
-    "duration": 1.6,
-    "rmsdb": -22.1,
+    "tag": "Flat",
+    "prompt": "[Flat] No.",
+    "duration": 0.88,
+    "rmsdb": -24.7,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "MO6yXE6TVY9Jp6w3w6V5",
-     "id": "AuAAa3ot8BLK8eQEmeDZ"
+     "session": "MR7YKg8ynssmHrK7Q2jW",
+     "id": "dORrwsbRdD3gvqBzt0Ur"
     },
     "heard": "No, no"
    },
@@ -66,14 +66,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-02/21-nina-did-them.mp3",
-    "tag": "Flat, not turning",
-    "prompt": "[Flat, not turning] Did them.",
-    "duration": 1.92,
-    "rmsdb": -25.2,
+    "tag": "Flat",
+    "prompt": "[Flat] Did them.",
+    "duration": 1.12,
+    "rmsdb": -25.3,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "rMzf5wEQPm3UfvpD99SH",
-     "id": "ZHWk9L4N52YxrIWxRYST"
+     "session": "SDtyN4mIqiAG7ZNymaUX",
+     "id": "hDY4G0wI7hRDzWAAgxhB"
     },
     "heard": "Did them. Did them"
    },
@@ -120,14 +120,14 @@
    "defect": "said three times",
    "old": {
     "file": "/audio/rapture/ep1/ep1-02/27-nina-why.mp3",
-    "tag": "Flat, deadpan",
-    "prompt": "[Flat, deadpan] Why.",
-    "duration": 3.04,
+    "tag": "Flat",
+    "prompt": "[Flat] Why.",
+    "duration": 1.04,
     "rmsdb": -24.6,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "Hp5GXHhSFJ8eTbSAe5pA",
-     "id": "JXOf8QspoPcGkDlmaOVj"
+     "session": "wUeDhXq2B6cwgzn7FQgy",
+     "id": "mDbysMcwO0Tly4PVNWXR"
     },
     "heard": "Why? Why? Why?"
    },
@@ -174,14 +174,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-03/18-ray-mm.mp3",
-    "tag": "Dry, noncommittal",
-    "prompt": "[Dry, noncommittal] Mm.",
-    "duration": 2.08,
-    "rmsdb": -24.4,
+    "tag": "Dry",
+    "prompt": "[Dry] Mm.",
+    "duration": 1.12,
+    "rmsdb": -24.5,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "cn6ol7vEcnJ4GrnLU1sy",
-     "id": "C1JI9VjETcyBYCDzIaq7"
+     "session": "qczC2MdggRZwOa2uxikE",
+     "id": "L5mlSDhfTfaO8ymRMisU"
     },
     "heard": "Hmm. Hmm."
    },
@@ -228,14 +228,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-03/24-ray-might.mp3",
-    "tag": "Dry, noncommittal",
-    "prompt": "[Dry, noncommittal] Might.",
-    "duration": 2.24,
-    "rmsdb": -23.8,
+    "tag": "Dry",
+    "prompt": "[Dry] Might.",
+    "duration": 1.2,
+    "rmsdb": -24.1,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "876l92mrUv0NqIQwAc6i",
-     "id": "4TqIT5u1OMyxxxHviP8C"
+     "session": "Tem3XC6wJx5RLSY7DoA0",
+     "id": "RcvDTkgowvP74vmQoBzz"
     },
     "heard": "Might. Might"
    },
@@ -282,14 +282,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-03/47-ray-to-who.mp3",
-    "tag": "Dry, genuinely curious",
-    "prompt": "[Dry, genuinely curious] To who?",
-    "duration": 2.24,
-    "rmsdb": -22.1,
+    "tag": "Curious",
+    "prompt": "[Curious] To who?",
+    "duration": 1.12,
+    "rmsdb": -21.9,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "MegtWjvKLpyXoh3Tbu6z",
-     "id": "VSB8w67DTMVF0xRjkKJl"
+     "session": "SYE07tUSLuGaQJ7wYi3P",
+     "id": "DIsd98U8fKMaHFTnVDrX"
     },
     "heard": "To who? To who?"
    },
@@ -313,6 +313,16 @@
       "session": "zCFiYn37vF2WjiLvDgIF",
       "id": "gY5LALiQIGjWE3vtBLBz"
      }
+    },
+    {
+     "take": "R089-alt2.mp3",
+     "prompt": "[Curious] To who?",
+     "duration": 1.04,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "gUYVdBXniPsqbl5JDOSj",
+      "id": "lsvaliKn1EDiqfSGgN40"
+     }
     }
    ]
   },
@@ -326,14 +336,14 @@
    "defect": "read as \"Ca- calf\"",
    "old": {
     "file": "/audio/rapture/ep1/ep1-03/53-ray-kath.mp3",
-    "tag": "Dry, reproachful",
-    "prompt": "[Dry, reproachful] Kath.",
-    "duration": 1.92,
-    "rmsdb": -27.6,
+    "tag": "Dry",
+    "prompt": "[Dry] Kath.",
+    "duration": 1.2,
+    "rmsdb": -26,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "N7nAX3xyK4CSFXTqVpSz",
-     "id": "GQKeUVvbyuSSWR7SH2ca"
+     "session": "3iQncHdEIVjmQ4BMY8MF",
+     "id": "D9VeSv8i5WuialxSGqsT"
     },
     "heard": "Ca- calf"
    },
@@ -398,6 +408,38 @@
       "id": "kFpIw0hc5x9Cki7oP9R5"
      }
     }
+   ],
+   "repeats": [
+    {
+     "take": "R095-repeat1.mp3",
+     "prompt": "[Reproachful] Kath.",
+     "duration": 2.08,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "O2AzGmT9c08OqDo19CUh",
+      "id": "eoj3JBjTTIlx1M7WTtZu"
+     }
+    },
+    {
+     "take": "R095-repeat2.mp3",
+     "prompt": "[Reproachful] Kath.",
+     "duration": 2.08,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "Lff3nDQFMzyHu8fVAYaj",
+      "id": "ASPKMDx9prqrjzjPIUiF"
+     }
+    },
+    {
+     "take": "R095-repeat3.mp3",
+     "prompt": "[Reproachful] Kath.",
+     "duration": 2,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "GfU0n2oktAtYyKjO4VVf",
+      "id": "TFexHqld2TKtovMKAIAi"
+     }
+    }
    ]
   },
   {
@@ -410,14 +452,14 @@
    "defect": "first sentence said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-03/59-kath-you-do-not-have-to-say.mp3",
-    "tag": "Reciting from memory, absolutely sincere, deadpan",
-    "prompt": "[Reciting from memory, absolutely sincere, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
-    "duration": 10.56,
-    "rmsdb": -21.2,
+    "tag": "Reciting, deadpan",
+    "prompt": "[Reciting, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
+    "duration": 7.76,
+    "rmsdb": -23,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "iolpOpiqw7TL76ZA4jEJ",
-     "id": "FwoNWnvfiP4PJarrxLFF"
+     "session": "sxnap3qOHSt1BvKDx28l",
+     "id": "pnAioC4jrYmXjx6rIvtX"
     },
     "heard": "You do not have to say anything. You do not have to say anything. But it may harm your defense if you do not mention when questioned something which you later rely on in court."
    },
@@ -464,14 +506,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-03/63-kath-who.mp3",
-    "tag": "Earnest, puzzled",
-    "prompt": "[Earnest, puzzled] Who?",
-    "duration": 2.16,
-    "rmsdb": -22.8,
+    "tag": "Puzzled",
+    "prompt": "[Puzzled] Who?",
+    "duration": 1.04,
+    "rmsdb": -24.3,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "XSNfwpxDPCbWwPES8Iad",
-     "id": "KoSGCSzdPcpZqZnlW3SA"
+     "session": "BpAadU4DswjffdZsbK9m",
+     "id": "wC2uBga9yvrCaqB1eByc"
     },
     "heard": "Who? Who?"
    },
@@ -518,14 +560,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-04/02-nina-you-little-sod.mp3",
-    "tag": "Almost fond, dry",
-    "prompt": "[Almost fond, dry] You little sod.",
-    "duration": 3.52,
-    "rmsdb": -25.9,
+    "tag": "Fond",
+    "prompt": "[Fond] You little sod.",
+    "duration": 1.92,
+    "rmsdb": -24.5,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "2MlR5OvDq6XayKWm1Vhu",
-     "id": "53cH9hja9aBgkUl8QxLo"
+     "session": "L7W1dHQcxXaRd5dEk52u",
+     "id": "le4QCSPKqNadRyVVB04X"
     },
     "heard": "You little sod. You little sod"
    },
@@ -572,14 +614,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-06/01-martin-course.mp3",
-    "tag": "Resigned, aggrieved, to nobody",
-    "prompt": "[Resigned, aggrieved, to nobody] Course.",
-    "duration": 2.32,
-    "rmsdb": -23.9,
+    "tag": "Resigned",
+    "prompt": "[Resigned] Course.",
+    "duration": 1.28,
+    "rmsdb": -24.6,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "OLfMmNLHySxDf2KkyQVx",
-     "id": "GpeRHTfKU5oU3eu5KcED"
+     "session": "z2gGqCTWpohtFskp6VjW",
+     "id": "QHFXisBrxzYUU3NUwv5p"
     },
     "heard": "Course. Course"
    },
@@ -626,14 +668,14 @@
    "defect": "stammered (\"It, it was already\")",
    "old": {
     "file": "/audio/rapture/ep1/ep1-07/04-danny-it-was-already.mp3",
-    "tag": "Caught out, embarrassed, trailing off",
-    "prompt": "[Caught out, embarrassed, trailing off] It was already —",
-    "duration": 2.24,
-    "rmsdb": -23.3,
+    "tag": "Embarrassed",
+    "prompt": "[Embarrassed] It was already —",
+    "duration": 1.92,
+    "rmsdb": -21,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "M3QQBhvC96BfhkqS8teO",
-     "id": "Veko03gELXMB7HgDAI5m"
+     "session": "NOiKzqvLuaQtHcwQ3CDh",
+     "id": "RBnQSgYGnPAz9REYyCvW"
     },
     "heard": "It, it was already"
    },
@@ -680,14 +722,14 @@
    "defect": "two hums",
    "old": {
     "file": "/audio/rapture/ep1/ep1-07/05-jodie-mm.mp3",
-    "tag": "Dry, noncommittal",
-    "prompt": "[Dry, noncommittal] Mm.",
-    "duration": 1.84,
-    "rmsdb": -30.3,
+    "tag": "Flat",
+    "prompt": "[Flat] Mm.",
+    "duration": 0.96,
+    "rmsdb": -27.5,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "FQGtLx7s3BCHoM35ixxi",
-     "id": "z85jfW8uadhxtovvi3IP"
+     "session": "ABUIXAhoyQ3tefDg4sBZ",
+     "id": "lOu10tV9dizTXshD6iwG"
     },
     "heard": "うん、うん。"
    },
@@ -734,14 +776,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-07/06-danny-rules.mp3",
-    "tag": "Low, steady, serious",
-    "prompt": "[Low, steady, serious] Rules.",
-    "duration": 2.56,
-    "rmsdb": -22.8,
+    "tag": "Serious",
+    "prompt": "[Serious] Rules.",
+    "duration": 1.2,
+    "rmsdb": -21.8,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "QH5XS88Fc2SsFf7tHBTY",
-     "id": "MDqtohN0fsdz46cr0570"
+     "session": "yZEaEszCO7lYLjh5fPUG",
+     "id": "PqRx4HdPPQgerCR499Fn"
     },
     "heard": "Rules. Rules"
    },
@@ -765,6 +807,68 @@
       "session": "moElCi4Fjtd9AuT8ElIG",
       "id": "XOu9p1autbJ7r57VLVLA"
      }
+    },
+    {
+     "take": "R119-alt2.mp3",
+     "prompt": "Rules.",
+     "duration": 1.04,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "TrhJddnouLD1CNAGZk8M",
+      "id": "hxtLaQENU80RLfXGL8nt"
+     }
+    },
+    {
+     "take": "R119-alt3.mp3",
+     "prompt": "Rules.",
+     "duration": 1.04,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "mhMxanmxyFZqUa329cp2",
+      "id": "VOhJU8hVVhYNkMw0ABub"
+     }
+    }
+   ],
+   "repeats": [
+    {
+     "take": "R119-repeat1.mp3",
+     "prompt": "[Low, steady, serious, said once] Rules.",
+     "duration": 2.48,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "wgOnkij2lUFJp4JsRAaA",
+      "id": "4Go9h8trxqPN5fNminDZ"
+     }
+    },
+    {
+     "take": "R119-repeat2.mp3",
+     "prompt": "[Low, steady, serious, said once] Rules.",
+     "duration": 3.68,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "HA3lmqlv9VmrnSbnQtJz",
+      "id": "rxxXnnxe41Rf1h2ViW5Q"
+     }
+    },
+    {
+     "take": "R119-repeat3.mp3",
+     "prompt": "[Low and serious, a single word] Rules.",
+     "duration": 2.72,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "QM0YPDFy1Hnuq4cUeMHd",
+      "id": "7CW6USnCOCvNWLLmZq6f"
+     }
+    },
+    {
+     "take": "R119-repeat4.mp3",
+     "prompt": "[Low and serious, a single word] Rules.",
+     "duration": 2.48,
+     "generation": {
+      "flow": "S7eFZW866dnQgWMpXbpE",
+      "session": "Qsqss0pr9yWkiK8ewNFn",
+      "id": "ptS6kbUwxygy6SsDlbOq"
+     }
     }
    ]
   },
@@ -778,14 +882,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-07/13-danny-they-re-gone.mp3",
-    "tag": "Uneasy, convincing himself",
-    "prompt": "[Uneasy, convincing himself] They're gone.",
-    "duration": 2.96,
-    "rmsdb": -22.7,
+    "tag": "Uneasy",
+    "prompt": "[Uneasy] They're gone.",
+    "duration": 1.44,
+    "rmsdb": -23.3,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "an6kefdzGq6MURdUdYrK",
-     "id": "a9ngQDQkM4m5v6AQtq3T"
+     "session": "JJ7wRdQq12EgdiIepyZS",
+     "id": "XPNzAWk7WK3onPOWOMxQ"
     },
     "heard": "They're gone. They're gone"
    },
@@ -832,14 +936,14 @@
    "defect": "\"one in ten\" said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-07/21-jodie-one-in-ten-one-in-twenty.mp3",
-    "tag": "Idle, working it out",
-    "prompt": "[Idle, working it out] One in ten? One in twenty?",
-    "duration": 3.84,
-    "rmsdb": -27,
+    "tag": "Idle",
+    "prompt": "[Idle] One in ten? One in twenty?",
+    "duration": 2.48,
+    "rmsdb": -25.5,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "7GNuAU8B0xOBN1aH8iAF",
-     "id": "73TJApP7I4WNdfjJzVKJ"
+     "session": "2bAKTUrr4U78aKw9dojf",
+     "id": "m82HutPvIUXYWo3Seima"
     },
     "heard": "One in ten one in ten one in twenty?"
    },
@@ -886,14 +990,14 @@
    "defect": "said twice",
    "old": {
     "file": "/audio/rapture/ep1/ep1-07/32-jodie-exactly.mp3",
-    "tag": "Genuinely pleased",
-    "prompt": "[Genuinely pleased] Exactly.",
-    "duration": 2.8,
-    "rmsdb": -22.1,
+    "tag": "Pleased",
+    "prompt": "[Pleased] Exactly.",
+    "duration": 1.36,
+    "rmsdb": -22.6,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "8h7WLkEHEIFAiC5vgAX6",
-     "id": "hmrn4CxPBtE70ZIVRyHR"
+     "session": "MlgYBk1ysxHvNIQNoO9n",
+     "id": "2EmNjzbz4tijo9QePc7B"
     },
     "heard": "Exactly. Exactly"
    },
@@ -940,14 +1044,14 @@
    "defect": "said twice (\"No, no\")",
    "old": {
     "file": "/audio/rapture/ep1/ep1-08/15-ray-no.mp3",
-    "tag": "Immediate, flat",
-    "prompt": "[Immediate, flat] No.",
-    "duration": 1.6,
-    "rmsdb": -21.3,
+    "tag": "Flat",
+    "prompt": "[Flat] No.",
+    "duration": 0.96,
+    "rmsdb": -24.3,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "JBopJP4vOlCOgoWxj98J",
-     "id": "AAyPCFESIfRXCvDhjwxE"
+     "session": "lZQlrESirhrvdE46njyU",
+     "id": "4shnN5u61iJzfE5NVmiq"
     },
     "heard": "No, no"
    },
@@ -994,14 +1098,14 @@
    "defect": "said twice (\"Cath. Cath\")",
    "old": {
     "file": "/audio/rapture/ep1/ep1-08/17-ray-kath.mp3",
-    "tag": "Dry, after a long pause",
-    "prompt": "[Dry, after a long pause] Kath.",
-    "duration": 2.96,
-    "rmsdb": -28.9,
+    "tag": "Dry",
+    "prompt": "[Dry] Kath.",
+    "duration": 1.12,
+    "rmsdb": -26.5,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "lZAapaHEz7jDhske75Am",
-     "id": "vjixvWxaSjW8Cw3HAUeG"
+     "session": "a97HSSB267qF4MLrQJhA",
+     "id": "kogCdgvqwRIfyHDQ2jOI"
     },
     "heard": "Cath. Cath"
    },
@@ -1048,14 +1152,14 @@
    "defect": "said five times",
    "old": {
     "file": "/audio/rapture/ep1/ep1-08/20-kath-us.mp3",
-    "tag": "No hesitation whatsoever, completely sincere",
-    "prompt": "[No hesitation whatsoever, completely sincere] Us.",
-    "duration": 5.28,
-    "rmsdb": -22.5,
+    "tag": "Sincere",
+    "prompt": "[Sincere] Us.",
+    "duration": 1.04,
+    "rmsdb": -25.8,
     "generation": {
      "flow": "S7eFZW866dnQgWMpXbpE",
-     "session": "f8W2jfq95mwC95mBPV6g",
-     "id": "Rp2vA0QHD3K7IMkfKslD"
+     "session": "RmIR8aVd5gf0gC2tThj8",
+     "id": "lzWBmYYJhA9gyAB0uP9j"
     },
     "heard": "Us, us, us, us, us."
    },
