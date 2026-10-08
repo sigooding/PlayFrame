@@ -1,4 +1,13 @@
 {
+ "title": "Nobody's Witness: voice alternates, 7 October 2026",
+ "heading": "Voice alternates: 7 October 2026",
+ "intro": [
+  "<strong>What this is.</strong> Every take generated for the 160 lines that were reading with browser text-to-speech, and every voice design made for them, that is <em>not</em> in the game. The green <span class=\"chip game\">in the game</span> take is what plays now; the others are here in case one is better.",
+  "<strong>Level</strong> is the average loudness of the speech in dBFS (higher is louder). Jack and Vera speak at about &minus;22 to &minus;26; the hushed first-round reads sit near &minus;33 to &minus;36, about 10 dB lower, so they get a red meter.",
+  "<strong>To use one:</strong> copy its command and run it in the repo (needs <code>FFMPEG</code>), then <code>npm run build:neonoire</code>. The take it replaces is archived, never lost."
+ ],
+ "voicesIntro": "The design previews of each voice made for this audit. The saved voice is marked <span class=\"chip game\">in use</span>; the others can still be saved from their id while ElevenLabs keeps the preview (designs from 29 September were still there on 7 October).",
+ "footer": "Generated in ElevenLabs flow kvzIYLAVhQxuu2koUOll, model eleven_v4. Index: <a href=\"index.json\" style=\"color:var(--accent)\">index.json</a>.",
  "date": "2026-10-07",
  "flow": "kvzIYLAVhQxuu2koUOll",
  "model": "eleven_v4",
@@ -15,7 +24,7 @@
     "voice": "4Rn2L1CRjYh93G56jNXI",
     "file": "/audio/neonoire/s14a/336-vera-gently-i-brought-food.mp3",
     "duration": 1.57,
-    "rmsdb": -28.0,
+    "rmsdb": -28,
     "voiced": 0.49,
     "generation": {
      "flow": "kvzIYLAVhQxuu2koUOll",
@@ -377,7 +386,7 @@
       "id": "NsxVJCRqqjzgv6api2dU"
      },
      "duration": 1.72,
-     "rmsdb": -34.0,
+     "rmsdb": -34,
      "voiced": 0.27
     },
     {
@@ -392,7 +401,7 @@
       "id": "fodOlM5OQTNnRNPW40OF"
      },
      "duration": 0.99,
-     "rmsdb": -29.0,
+     "rmsdb": -29,
      "voiced": 0.43
     }
    ]
@@ -661,7 +670,7 @@
       "id": "4zxDOoO8u3bxKZ23hSDr"
      },
      "duration": 1.23,
-     "rmsdb": -37.0,
+     "rmsdb": -37,
      "voiced": 0.74
     }
    ]
@@ -714,7 +723,7 @@
     "voice": "6wGe4cP3pH5TRuKntC6Z",
     "file": "/audio/neonoire/s80/99-ishida-calmly-where-is-it-sakai-s.mp3",
     "duration": 2.43,
-    "rmsdb": -25.0,
+    "rmsdb": -25,
     "voiced": 0.33,
     "generation": {
      "flow": "kvzIYLAVhQxuu2koUOll",
@@ -996,7 +1005,7 @@
       "id": "yYBlQ6pBEA5ZoYbbZpkA"
      },
      "duration": 2.77,
-     "rmsdb": -31.0,
+     "rmsdb": -31,
      "voiced": 0.27
     }
    ]
@@ -1152,7 +1161,7 @@
       "id": "IFXNqerUUzIYg6h5JDAf"
      },
      "duration": 2.12,
-     "rmsdb": -28.0,
+     "rmsdb": -28,
      "voiced": 0.56
     },
     {
@@ -1183,7 +1192,7 @@
     "voice": "4Rn2L1CRjYh93G56jNXI",
     "file": "/audio/neonoire/s83/113-vera-firmly-it-s-just-a-face.mp3",
     "duration": 1.96,
-    "rmsdb": -28.0,
+    "rmsdb": -28,
     "voiced": 0.41,
     "generation": {
      "flow": "kvzIYLAVhQxuu2koUOll",
@@ -1204,7 +1213,7 @@
       "id": "tO0ke3qK2T0NX1bDtHRJ"
      },
      "duration": 1.8,
-     "rmsdb": -36.0,
+     "rmsdb": -36,
      "voiced": 0.07
     },
     {
@@ -1345,7 +1354,7 @@
       "id": "Xzlgp6INNiHee3NGpVmr"
      },
      "duration": 1.23,
-     "rmsdb": -39.0,
+     "rmsdb": -39,
      "voiced": 0.18
     }
    ]
@@ -1412,7 +1421,7 @@
       "id": "4rMnj2Xv5fSAs0yH4mIM"
      },
      "duration": 2.59,
-     "rmsdb": -29.0,
+     "rmsdb": -29,
      "voiced": 0.3
     },
     {
@@ -1569,7 +1578,7 @@
     "voice": "MZhx7pKflsc0sAwciDEy",
     "file": "/audio/neonoire/s84/119-jack-flatly-no.mp3",
     "duration": 1.07,
-    "rmsdb": -26.0,
+    "rmsdb": -26,
     "voiced": 0.39,
     "generation": {
      "flow": "kvzIYLAVhQxuu2koUOll",
@@ -1627,7 +1636,7 @@
       "id": "My8IeT51QFL5vAwFpQ2J"
      },
      "duration": 2.59,
-     "rmsdb": -37.0,
+     "rmsdb": -37,
      "voiced": 0.21
     }
    ]
@@ -1700,8 +1709,8 @@
       "session": "3jesewbBfMac9oSsTz6N",
       "id": "ZvweVfrP0yVHtNUHaKSQ"
      },
-     "duration": 3.0,
-     "rmsdb": -29.0,
+     "duration": 3,
+     "rmsdb": -29,
      "voiced": 0.51
     }
    ]
@@ -1754,7 +1763,7 @@
     "voice": "MZhx7pKflsc0sAwciDEy",
     "file": "/audio/neonoire/s84/119-jack-evenly-i-know.mp3",
     "duration": 1.07,
-    "rmsdb": -22.0,
+    "rmsdb": -22,
     "voiced": 0.53,
     "generation": {
      "flow": "kvzIYLAVhQxuu2koUOll",
@@ -2033,7 +2042,7 @@
       "session": "xT4k3N8zDABYx3eBsLlM",
       "id": "kKLUeUaK5Hh40FmCB6wg"
      },
-     "duration": 11.0,
+     "duration": 11,
      "rmsdb": -27.2,
      "voiced": 0.45
     }
@@ -2367,7 +2376,7 @@
       "id": "NXMHmI5eQXxncMc5gIjA"
      },
      "duration": 2.77,
-     "rmsdb": -31.0,
+     "rmsdb": -31,
      "voiced": 0.54
     }
    ]
@@ -2459,7 +2468,7 @@
      "file": "voices/sakai--oBCsFZ1GTHU9VCiEZSXY--picked.mp3",
      "picked": true,
      "duration": 21.79,
-     "rmsdb": -22.0
+     "rmsdb": -22
     },
     {
      "generatedVoiceId": "QE6aMCEn68qHO8T1onkx",
@@ -2502,7 +2511,7 @@
      "file": "voices/sakai-tape--PlY4VSq9NVa3ZX2tC74p.mp3",
      "picked": false,
      "duration": 10.45,
-     "rmsdb": -25.0
+     "rmsdb": -25
     }
    ]
   },
@@ -2546,7 +2555,7 @@
      "file": "voices/harada--oiQsVLQVbTyIiNejyPfk--picked.mp3",
      "picked": true,
      "duration": 13.56,
-     "rmsdb": -20.0
+     "rmsdb": -20
     },
     {
      "generatedVoiceId": "6w0c8yqj5i203OOtJbjn",
