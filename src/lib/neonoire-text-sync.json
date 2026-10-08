@@ -1,0 +1,230 @@
+{
+  "note": "Corrected shot wording and running order (9 October 2026: scenes 1 and 2's descriptions and titles rewritten to the pictures and the current screenplay; shot 24 moved before the two shots, with the journalist's \"Where is he?\" over it) and the screenplay line of 8 October (scene 86). frames holds, per field, the digests of the values earlier bundles shipped; sceneOrders the frame orders earlier bundles shipped per scene; priorScriptHashes the earlier default screenplays. bundle-refresh replaces a field, a scene's order or the script only while the saved one still matches.",
+  "priorScriptHashes": [
+    "f6557aa6e9a8553a234071bcd8237ee913dca657738190b006c93b394a794535"
+  ],
+  "frames": {
+    "neonoire-shot-377": {
+      "title": [
+        "eb4faae1a95d928fbe08e4e24138d5fdf77dd2c635a07e79ab3862673d23034b"
+      ],
+      "description": [
+        "cebb1ae9d58cc8830d4bca8255503672860d577cb45522c5ebb989a0a16010f1"
+      ]
+    },
+    "neonoire-shot-01": {
+      "description": [
+        "926f104287fee315de159a7cfb7e8924f36d2fa5bbf77d7126de3ffaf9695fa4"
+      ]
+    },
+    "neonoire-shot-02": {
+      "title": [
+        "835d756ba137048b5587dab3630d7ad98bfe172fe2cafef8a7a95c241d008bda"
+      ],
+      "description": [
+        "e2c66af1625a341cb2eeb9cb7e5f38b01e4e7b5064903963c31b4bd7c9d0e20f"
+      ]
+    },
+    "neonoire-shot-03": {
+      "description": [
+        "ba7ffd6a34f2f55c8f17270f672573d770ad00a06d5a6c631f578f9c5ac0713e"
+      ]
+    },
+    "neonoire-shot-04": {
+      "title": [
+        "e55d01ba7996c618b7db37c1f45d86cf7061e5e4dd341406502691fb908db1c4"
+      ],
+      "description": [
+        "a6ec10d9e9499027b2cd4f20a30b31f493ee55892df4c478d4092123ad4c44e4"
+      ]
+    },
+    "neonoire-shot-05": {
+      "title": [
+        "4724ea66f97649a0406e4ccd95339078ee93fa891972c1d2dd03043c915b37a4"
+      ],
+      "description": [
+        "4fca02eae8c3aa5e3c21e10067661e1d93b5ce93b1562a76c1edca6fae7f548f"
+      ]
+    },
+    "neonoire-shot-328": {
+      "description": [
+        "42f8803f8a7b09b66a8ba1296c512ad7c2bc0a9919b03d50c3bbae5adfe9a11f"
+      ]
+    },
+    "neonoire-shot-329": {
+      "title": [
+        "410d4f0f0c914725364a2d2d004740513d8455d893c3eb72c024960029c52f25"
+      ],
+      "description": [
+        "bece8ed5f9e0abc6431d3bbe514058f6f29499022550eab0dfe350382e0a1422"
+      ]
+    },
+    "neonoire-shot-06": {
+      "description": [
+        "d8e1f2e8f6cb877eab451f0213ac64186af0e7159f203704082818d221992b01"
+      ]
+    },
+    "neonoire-shot-383": {
+      "description": [
+        "50a0098e325c2ff610bad92fbfe9eaab13ee4ec5ccae8f97e5fd12856de404ae"
+      ]
+    },
+    "neonoire-shot-07": {
+      "description": [
+        "fdee64002f2d38d324650e877d432a889d14cbc956db65cd4933279aa202c3e3"
+      ]
+    },
+    "neonoire-shot-330": {
+      "description": [
+        "f939a986edfbca1a47fe4917b1f89bf0d91aa1453030e63b1717df9ae74e112a"
+      ]
+    },
+    "neonoire-shot-09": {
+      "description": [
+        "773f4320f141b40cc71f146ff37ca77e3701e5c67d9690941e9ac88ec1031ad3"
+      ]
+    },
+    "neonoire-shot-331": {
+      "description": [
+        "61ad788a5f3dca4f52398d6b73adb3d8d6405e41f7b2fcc042a996eb69689e9d"
+      ]
+    },
+    "neonoire-shot-332": {
+      "description": [
+        "c74969bfe4f0e045fa9da432fb261235572c38aba237a95c21a6ca1865ab1a3a"
+      ]
+    },
+    "neonoire-shot-333": {
+      "description": [
+        "6cedf36600ef53259469ddaff4333e1528ad3ea59201c87d8761f02e62cbfcf5"
+      ]
+    },
+    "neonoire-shot-10": {
+      "description": [
+        "407705e8a215866d4b88bfa1934220870e184b3b5094e6ca78d9c5424071c72a"
+      ]
+    },
+    "neonoire-shot-12": {
+      "title": [
+        "ca1af4658d381d2408ee5342cc06e970a4beec52b3e35a4bd39d2377c9481a5b"
+      ],
+      "description": [
+        "d9eb8acb95eb3a8421404d47c85cc75ae33c4932af86bbe8437cb7ae5143ff5e"
+      ]
+    },
+    "neonoire-shot-13": {
+      "title": [
+        "a31cf92d5cc64488a90bdc66b179145d139430d3177ad07cbf803a8ef93a96eb"
+      ],
+      "description": [
+        "27d769ecc9e27943d839daa21e536d3d00eeb90a20f2abffcc8e95717d627269"
+      ]
+    },
+    "neonoire-shot-14": {
+      "description": [
+        "e1cb31ab10885a1251677aaaae1ed7577864dab6d609495d4eceb7edd0266c65"
+      ]
+    },
+    "neonoire-shot-15": {
+      "description": [
+        "d8fc5055128a3ed7cc1b9931a65b00cf3e8643ca0b2c28e0ee04ca6bde6cc7a6"
+      ]
+    },
+    "neonoire-shot-16": {
+      "description": [
+        "25defa1c357342f4a51f5cb5f9382c2cda65ff2780af453f2b118d49a70db071"
+      ]
+    },
+    "neonoire-shot-17": {
+      "description": [
+        "c838ae7e6a73c02fd2ca5b59b85c140701a1bf84f96d1901ca668fc1c1d8cbf3"
+      ]
+    },
+    "neonoire-shot-18": {
+      "title": [
+        "261e79ea3a3d054468439d938fcbe58497227f3e2f9495ca746475d72d7b6a2d"
+      ],
+      "description": [
+        "24964b7eb473a49cf9360d1656963c7a0c4c9997a2fddf916ebc8b3c304eaa4d"
+      ]
+    },
+    "neonoire-shot-19": {
+      "description": [
+        "90a9b02bbfdccb31ab01921b645c2cc045cd8db31e12730e52e8fbb77ddd1b3d"
+      ]
+    },
+    "neonoire-shot-20": {
+      "description": [
+        "3ab754118a99eb12c98170af7edf2aa742fd415d7fdd3bdcd34b2e8d3cd7359f"
+      ]
+    },
+    "neonoire-shot-21": {
+      "description": [
+        "313489f8b0442167cb5264fbb4a4424c5a4add10a79fa522285793d3dbbd8bc9"
+      ]
+    },
+    "neonoire-shot-22": {
+      "title": [
+        "bb17e87f8c874f243eafc7603536d9cbfd25878b25f2fe46e641887af333348a"
+      ],
+      "description": [
+        "e59b6380002cd0d43771421759529edf5f41ae12e686ee9d9471fadbf3346d27"
+      ]
+    },
+    "neonoire-shot-25": {
+      "description": [
+        "305609390cd488f778b5464d509a6202abaf710871d4d6c6b6ae3c18679fe0d1"
+      ]
+    },
+    "neonoire-shot-23": {
+      "description": [
+        "329fddb10c357726cfb42db7ad619d88187cbb3bb0d45c445075f33743d5e82b"
+      ]
+    },
+    "neonoire-shot-26": {
+      "description": [
+        "c2591a8cbcb26fa9fcf4a91771a9f534af388e5f3c84b1f6f0bf44080ea50e51"
+      ]
+    },
+    "neonoire-shot-24": {
+      "description": [
+        "d5db4ce6514c3203847d62b90c99c277dcf0b8af44c49de242bb210eb4b26372"
+      ],
+      "notes": [
+        "76678855a05fd0dbd4d871dfd141796f42d11bc74dc02b3188685eea04309baf"
+      ]
+    },
+    "neonoire-shot-308": {
+      "description": [
+        "c3579e553eec9e47d6daf9baf381deea67d9095047d69baeda4744fd602540c2"
+      ]
+    },
+    "neonoire-shot-27": {
+      "description": [
+        "540cd398c641604c68a69950b038bd050ac55ef4d30b0ad7430c136f879c0375"
+      ]
+    },
+    "neonoire-shot-28": {
+      "description": [
+        "07cc16a3a767e2291cd6a418a9b7fd3c287e707b86c902f4f9c5a12c419b7cd3"
+      ]
+    }
+  },
+  "sceneOrders": {
+    "neonoire-s2": [
+      [
+        "neonoire-shot-19",
+        "neonoire-shot-20",
+        "neonoire-shot-21",
+        "neonoire-shot-22",
+        "neonoire-shot-25",
+        "neonoire-shot-23",
+        "neonoire-shot-26",
+        "neonoire-shot-24",
+        "neonoire-shot-308",
+        "neonoire-shot-27",
+        "neonoire-shot-28"
+      ]
+    ]
+  }
+}

@@ -18,7 +18,7 @@ Scene 2 is part of the director-ordered clean-slate regeneration: **every frame 
 ---
 
 19. MEDIUM WIDE — 24mm, static, eye level — the bar.
-Six stools and a counter. Shelves of bottles glowing amber. On a high shelf an old CRT television plays a late-night variety show with the sound low. Rain drums on the roof. No one behind the counter; the door to the back stands half open.
+Six stools and a counter. Shelves of bottles glowing amber. High above the back doorway an old CRT television plays a late-night variety show, sound low. Rain drums on the roof. Nobody behind the counter; crates are stacked by the half-open back door.
 SCRIPT: "Six stools and a counter. Shelves of bottles glowing amber."
 CAST: —
 LIGHT: Practical night
@@ -27,7 +27,7 @@ IMAGE: 19-the-bar.jpg
 NOTE: Someone is moving crates in the back room and is never seen. The bar must feel like it has other lives in it: a radio through a wall, laundry upstairs, a lit window across the street. Fresh pass 30 September 2026: regenerated with the bar sheet attached; the room matches its sheet and stands empty.
 
 20. MEDIUM — 50mm, static, eye level — the journalist.
-In the corner: a JOURNALIST in his forties, an untouched beer in front of him, a notebook closed beside it. He checks his watch. Checks the door. He is not waiting for the person he says he is waiting for.
+On a stool at the counter, alone: the JOURNALIST, forties, glasses, grey jacket, a beer gone flat in his hand and a brown leather notebook closed beside it. He checks his watch. Somewhere in the back, crates clatter.
 SCRIPT: "A man in a raincoat on the far stool, a notebook beside a beer gone flat: the JOURNALIST (40s)."
 CAST: The Journalist
 LIGHT: Practical night
@@ -36,7 +36,7 @@ IMAGE: 20-the-journalist.jpg
 NOTE: He is killed in four shots' time and the film gives him no backstory here. Play the waiting as habit, not nerves. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration). Fresh pass 30 September 2026: regenerated with the bar sheet and his new sheet attached, wardrobe and notebook locked; retake queued — the screenplay seats him on a stool at the counter corner, not at a window table.
 
 21. WIDE — 35mm, static, eye level — the door bangs open.
-Mara, soaked, too out of breath to speak, stands in the doorway with the rain behind her.
+Mara bursts in out of the rain, soaked and out of breath, the key in her fist. The door stands open behind her on the wet street. From the counter: "Miss Voss?"
 SCRIPT: "Mara bursts in, the key in her fist."
 CAST: Mara Voss
 LIGHT: Practical night
@@ -44,17 +44,18 @@ TIME: 6
 IMAGE: 21-mara-bursts-in.jpg
 NOTE: She brings the street's weather in with her. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration). Keep her soaked hair, small red enamel bird clip and jacket exactly as in scene 1 — this is the same night, minutes later. Fresh pass 30 September 2026: regenerated with the bar sheet and both cast sheets; the rain falls through the open door behind her and the room holds.
 
-22. MEDIUM — 50mm, static, eye level — the journalist looks, then away.
-He glances up, startled, then away. Not his business.
+22. MEDIUM — 50mm, static, eye level — he knows her name.
+The journalist turns on his stool to look at her, startled. He knows her name. Mara stands dripping in the doorway behind him.
 SCRIPT: "He knows her name."
 CAST: The Journalist, Mara Voss
 LIGHT: Practical night
 TIME: 6
 IMAGE: 22-not-his-business.jpg
+TITLE: He knows her name
 NOTE: His decision not to help is the last decision he makes. No emphasis, no irony, no push-in. The bar CRT in frame is never static: it carries the same variety show as shots 19 and 26 (director's rule, 26 September 2026; screen composited from shot 26, no regeneration). Fresh pass 30 September 2026: regenerated with the bar sheet and both cast sheets; retake queued with shot 20 for the counter-stool seating.
 
 23. FULL — 35mm, static, low angle — Mara hides behind the counter.
-She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.
+Mara is behind the counter before she knows she's moved. She crouches low at the far end, out of sight of the door, and opens her hand: the key. She closes her fist on it again.
 SCRIPT: "Mara is behind the counter before she knows she's moved."
 CAST: Mara Voss
 LIGHT: Practical night
@@ -63,8 +64,8 @@ IMAGE: 23-behind-the-counter.jpg
 NOTE: The key returns here for a beat only, then goes back into her fist. Do not light it specially — it is not yet a magic object. Fresh pass 30 September 2026: regenerated with the bar sheet and her sheet; she crouches behind the far end with the key unlit and no handbag.
 
 24. POV — 24mm, static, low angle — from the floor.
-We see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.
-SCRIPT: "Behind the counter, Mara folds herself into the gap between the crates and the ice bin."
+From where she hides, at floor level: a crate of empty bottles, the underside of the counter, and the journalist's legs on his stool, his brown shoes on the footrest. Above her, out of sight, he asks: "Where is he?"
+SCRIPT: "Where is he?"
 CAST: The Journalist
 LIGHT: Practical night
 TIME: 10
@@ -72,7 +73,7 @@ IMAGE: 24-from-the-floor.jpg
 NOTE: This framing is the law of the rest of the scene: shoes, ankles, and what the floor sees. The audience knows exactly as much as she does and no more. Fresh pass 30 September 2026: regenerated with the bar sheet and his sheet; retake queued — the legs read detached under the stool and the CRT's blue ceiling wash is missing.
 
 25. FULL — 35mm, static, low angle — two pairs of shoes.
-The door opens again. Softly, this time. Two pairs of black shoes step inside, wet and silent. The journalist's shoes shift; he stands.
+Floor level. Behind her the door has opened, softly, on the rain. Two pairs of wet black boots step inside and stop. By the stool, the journalist's brown shoes shift. A polite voice: "Shitsurei shimasu." ("Excuse me.")
 SCRIPT: "Before she can answer, the door opens behind her. Rain noise."
 CAST: The Journalist, The Masked Men
 LIGHT: Practical night
@@ -81,7 +82,7 @@ IMAGE: 25-two-pairs-of-shoes.jpg
 NOTE: No faces, no full figures — shoes and the bottom of the frame only. The softness of the door is the whole threat. Fresh pass 30 September 2026: regenerated with the bar sheet, the masked-men sheet and the journalist sheet; two wet black pairs in, his brown shoes shifting by the stool base.
 
 26. MEDIUM — 50mm, static, eye level — the two suppressed shots.
-No answer. Two suppressed shots. The stool tips over; the journalist hits the floor on the far side of the counter. We see only his hand. On the TV, the studio audience laughs.
+Two shots. Across the room a stool lies tipped on the floor, and beyond it only a hand. On the high shelf the television audience laughs.
 SCRIPT: "Two shots. On the high shelf, the television audience laughs."
 CAST: The Journalist, The Masked Men
 LIGHT: Practical night
@@ -90,7 +91,7 @@ IMAGE: 26-the-variety-show.jpg
 NOTE: The TV is in the frame and the murder is not. The laugh track lands on the cut and holds — this is the film's coldest joke and it is never underlined. Fresh pass 30 September 2026: regenerated with the bar sheet; the tipped stool and the laughing CRT land, retake queued — the hand on the floor must lie at the far side of the counter in his locked pale-blue/charcoal cuff, not by the window in a cream one.
 
 27. MEDIUM — 50mm, static, low angle — the notebook left.
-The floor's law holds: from the gap between the crates and the ice bin the room is a strip of wet shoes, one black-gloved hand flat on the counter edge, and the brown leather-wrap notebook lying untouched on the floorboards a few feet off, beside one outstretched hand. Nobody reaches for it. One pair of shoes turns toward the door. In the gap at the frame's edge, a small red enamel bird clip has slid out of the woman's wet hair and gone half-hidden against a crate, and she presses her own hands over her mouth and does not breathe.
+From the gap between the crates and the ice bin: Mara, both hands over her mouth. The journalist's notebook lies on the floorboards beside her; the red clip has come to rest against a crate. Beyond, a man's black shoes and a gloved hand on the counter. "Second position done." He takes one step toward the counter, hears one word in his earpiece, and turns and goes. Nobody picks up the notebook.
 SCRIPT: "He takes one step toward the counter. A voice in his earpiece: one word. He turns and goes."
 CAST: The Masked Men, Mara Voss, The Journalist
 LIGHT: Practical night
@@ -99,7 +100,7 @@ IMAGE: 27-the-notebook.jpg
 NOTE: RETAKE LANDED 1 October 2026 — regenerated on the rewritten scene 2 with `sheets/mara.jpg`, `sheets/masked-man.jpg` and, under the director's 30 September override, the bar style sheet `sheets/kanda-bar.jpg` (NIGHT panels); installed over `s2/27-the-notebook.jpg`. **Nobody takes the notebook** — the revision cut the beat, so the frame's information is now that they leave it: what they came for was never the book, or they would have had it. The clip sliding loose in the gap is the only thing that moves on her side of the counter, and it is the film's first close-up's setup. Two attempts were thrown away before this one: the first showed the masked man in full figure, which breaks the rule shot 25 sets for the rest of the scene, and the second put her face in the shot with the wrong hair. The notebook keeps the same brown leather wrap and strap closure as shot 20's counter copy; no detached shoes, no faces.
 
 28. CLOSE-UP — 85mm, static, eye level — Mara in the blue TV glow.
-She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.
+The door swings shut. Mara stays exactly where she is, her hand pressed flat on the bottles to keep them quiet. The television laughs again. Hold on her face in its blue light: she understands that this was not random.
 SCRIPT: "The door swings shut. The television laughs again."
 CAST: Mara Voss
 LIGHT: Practical night
@@ -128,7 +129,7 @@ The keyframes are generated ten at a time in screenplay order, so a pass can str
 > The revision's first named close-up, numbered in the coverage block after story pass 2; the existing frames keep their numbers and images.
 
 308. INSERT — 85mm, static, low angle — What comes loose.
-A hair clip slides out of her wet hair and skitters under the shelf; the dark gap between crates and ice bin swallows it. Behind it, her hand stays pressed flat to the bottles to stop them clinking.
+A hair clip slides out of her wet hair and skitters under the shelf: the small red bird, alone on the dark floorboards. Her hand stays pressed flat on the crate of bottles to stop them clinking. She doesn't breathe.
 SCRIPT: "A hair clip slides out of her wet hair and skitters under the shelf. She doesn't breathe."
 CAST: Mara Voss
 LIGHT: Practical night

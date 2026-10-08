@@ -6,6 +6,7 @@ import restorationSync from "./neonoire-restoration-sync.json";
 import scene6Sync from "./neonoire-scene6-sync.json";
 import coverageSync from "./neonoire-coverage-sync.json";
 import voiceSync from "./neonoire-voice-sync.json";
+import textSync from "./neonoire-text-sync.json";
 
 const digest = (text: string) => createHash("sha256").update(text).digest("hex");
 const notesDigest = (text: string) => digest(text.replace(/(?:Generation )?Pass \d+ of \d+[^\n]*/g, "").trim());
@@ -65,10 +66,13 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   const bundled = new Map(bundle.frames.map(frame => [frame.id, frame]));
   const knownRestorationScript = restorationSync.scriptHashes.includes(digest(existing.script))
     || digest(existing.script) === directorSync.scriptHash;
+  // 8–9 October 2026: a line of the screenplay changed (scene 86). A workspace still on the default text just before it is treated as
+  // current, exactly as it was the day before, and takes the new text (scripts/neonoire/sync-text.mjs records those defaults).
+  const onCurrentText = existing.script === bundle.script || textSync.priorScriptHashes.includes(digest(existing.script));
   // 2 October 2026: the interview scene (6) was rewritten. A workspace still on the default text before it, or already on
   // the new text, gets the new shot text, recorded dialogue and the seven new placeholder slots; edited fields stay.
   const onPriorDefault = scene6Sync.priorScriptHashes.includes(digest(existing.script));
-  const scene6Current = onPriorDefault || existing.script === bundle.script;
+  const scene6Current = onPriorDefault || onCurrentText;
   // 2 October 2026: a scene added to the screenplay (14A) reaches a saved workspace on a default text whole, once and
   // together with its slots: the scene goes right after the nearest earlier bundle scene the workspace already has.
   // A workspace already on the new text that lacks the scene deleted it, and keeps it deleted.
@@ -85,7 +89,7 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     }
   }
   const scene6Frames = scene6Sync.frames as Record<string, Record<string, string>>;
-  const restoreDefaults = knownRestorationScript || existing.script === bundle.script || scene6Sync.priorScriptHashes.includes(digest(existing.script));
+  const restoreDefaults = knownRestorationScript || onCurrentText || scene6Sync.priorScriptHashes.includes(digest(existing.script));
   const restoredFrames = restorationSync.frames as Record<string, Record<string, string>>;
   const restoredScenes = restorationSync.scenes as Record<string, Record<string, string>>;
   const fieldDigest = (value: unknown) => digest(JSON.stringify(value ?? null));
@@ -127,6 +131,12 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
         if (prior[key] && fieldDigest(frame[key]) === prior[key] && JSON.stringify(next[key]) !== JSON.stringify(arrived[key])) next = { ...next, [key]: arrived[key] };
       }
     }
+    // 9 October 2026: corrected shot wording (scenes 1 and 2 rewritten to their pictures and the current screenplay). A title,
+    // description or note still exactly as an earlier bundle shipped it takes the bundle's; one the writer changed is kept.
+    const retold = (textSync.frames as Record<string, Partial<Record<"title" | "description" | "notes", string[]>>>)[frame.id];
+    if (retold) for (const key of ["title", "description", "notes"] as const) {
+      if (retold[key]?.includes(fieldDigest(next[key])) && next[key] !== arrived[key]) next = { ...next, [key]: arrived[key] };
+    }
     const rewritten = scene6Frames[frame.id];
     if (scene6Current && rewritten) {
       for (const key of Object.keys(rewritten) as (keyof typeof arrived)[]) {
@@ -158,7 +168,7 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   // batch: a workspace that holds any of a batch has had it, so a frame the director deleted is not reinstated,
   // and a workspace whose script was edited receives none of the new frames.
   const coverageBatches = ((coverageSync as { batches?: string[][] }).batches || [coverageSync.newFrameIds]) as string[][];
-  const coverageCurrent = existing.script === bundle.script
+  const coverageCurrent = onCurrentText
     || scene6Sync.priorScriptHashes.includes(digest(existing.script))
     || (coverageSync.priorScriptHashes as string[]).includes(digest(existing.script));
   for (const coverageIds of coverageBatches) {
@@ -185,6 +195,17 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     const rank = new Map(bundle.frames.map((frame, index) => [frame.id, index]));
     frames.sort((a, b) => rank.get(a.id)! - rank.get(b.id)!);
   }
+  // 9 October 2026: a scene whose frames still run in exactly an order an earlier bundle shipped takes the bundle's order (scene 2:
+  // shot 24, the journalist still on his stool, now plays before the two shots). A scene the director reordered keeps its order.
+  for (const [sceneId, priorOrders] of Object.entries(textSync.sceneOrders as Record<string, string[][]>)) {
+    const slots = frames.flatMap((frame, index) => frame.sceneId === sceneId ? [index] : []);
+    const saved = slots.map(index => frames[index].id);
+    const wanted = bundle.frames.filter(frame => frame.sceneId === sceneId).map(frame => frame.id);
+    if (!priorOrders.some(ids => JSON.stringify(ids) === JSON.stringify(saved))) continue;
+    if (saved.length !== wanted.length || [...saved].sort().join() !== [...wanted].sort().join()) continue;
+    const byId = new Map(slots.map(index => [frames[index].id, frames[index]]));
+    frames = frames.map((frame, index) => frame.sceneId === sceneId ? byId.get(wanted[slots.indexOf(index)])! : frame);
+  }
   const existingIds = new Set(existing.frames.map(frame => frame.id));
   if (restoreDefaults && restorationSync.priorFrameIds.every(id => existingIds.has(id))
     && bundle.scenes.every(scene => newSceneIds.has(scene.id) || scenesNow.some(old => old.id === scene.id))) {
@@ -207,7 +228,7 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     return next;
   });
   const patch: ProjectPatch = {};
-  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || digest(existing.script) === directorSync.scriptHash || scene6Sync.priorScriptHashes.includes(digest(existing.script)))) patch.script = bundle.script;
+  if (bundle.script !== undefined && existing.script !== bundle.script && (knownRestorationScript || onCurrentText || digest(existing.script) === directorSync.scriptHash || scene6Sync.priorScriptHashes.includes(digest(existing.script)))) patch.script = bundle.script;
   if (frames.length !== existing.frames.length || frames.some((frame, index) => frame !== existing.frames[index])) patch.frames = frames;
   if (scenes.length !== existing.scenes.length || scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
   return Object.keys(patch).length ? patch : null;
