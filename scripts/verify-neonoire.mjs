@@ -1470,6 +1470,34 @@ pass("director main shots: final nine approved, seven replacements installed, no
   pass(`recorded dialogue: ${manifest.lines.length} line(s) on the frames, files present, offsets and durations fit, voices.json names Jack and Vera`);
 }
 
+// ---------------------------------------------------------------- voice effects and body falls
+// A take's `fx` names a treatment scripts/neonoire/voice-fx.mjs knows (the animatic applies it, the games bake it at import), the
+// lines the screenplay marks recorded or filtered carry one, and the 8 October body-fall effects are on disk.
+{
+  const { FX } = await import(pathToFileURL(join(root, "scripts/neonoire/voice-fx.mjs")).href);
+  const manifest = readManifest(root);
+  const withFx = manifest.lines.filter(line => line.fx);
+  for (const line of withFx) assert(FX[line.fx], `${line.id}: fx "${line.fx}" is one of ${Object.keys(FX).join(", ")}`);
+  const fxOf = id => manifest.lines.find(line => line.id === id)?.fx;
+  assert.equal(fxOf("s4-mara-bright-it-s-mara-you-know"), "phone", "Mara's voicemail greeting ('recorded; bright') is heard through Vera's phone");
+  assert.equal(fxOf("s11-ishida-tired-it-s-late-jack"), "phone");
+  assert.equal(fxOf("s4-newsreporter-measured-police-in-kanda-are-investigating"), "tv");
+  assert.equal(fxOf("s82-n033-sakai"), "tape");
+  // `(in Japanese; quietly; subtitled: "Excuse me.")` over "Shitsurei shimasu.": the take keeps the spoken words, `sub` is what is shown
+  const script = readFileSync(join(root, "Neonoire (3).fountain"), "utf8").split("\n");
+  const subtitled = script.flatMap((row, i) => { const m = /^\(.*subtitled:\s*"([^"]+)"\)\s*$/.exec(row.trim()); return m ? [{ sub: m[1], said: (script[i + 1] || "").trim() }] : []; });
+  assert(subtitled.length >= 2, "the screenplay subtitles both 'Shitsurei shimasu.' lines");
+  for (const { sub, said } of subtitled) {
+    const takes = manifest.lines.filter(line => line.text === said);
+    assert(takes.length && takes.every(take => take.sub === sub), `the screenplay subtitles "${said}" as "${sub}": the take${takes.length === 1 ? "" : "s"} carr${takes.length === 1 ? "ies" : "y"} sub "${sub}"`);
+  }
+  for (const name of ["body-fall-street", "body-fall-bar", "body-fall-doorway", "body-fall"]) {
+    const file = join(root, "public/audio/neonoire/sfx", `${name}.mp3`);
+    assert(existsSync(file) && statSync(file).size > 10000, `public/audio/neonoire/sfx/${name}.mp3 is a real effect`);
+  }
+  pass(`voice effects: ${withFx.length} phone/tv/tape lines name a known treatment (the games bake them), the voicemail greeting is one of them, the ${subtitled.length} subtitled lines carry their subtitle, the four body-fall effects are on disk`);
+}
+
 // ---------------------------------------------------------------- director's global rules
 // Four rules the 30 September 2026 revision set over the whole film; each is checked against the
 // draft and the bundle, not just against prose.

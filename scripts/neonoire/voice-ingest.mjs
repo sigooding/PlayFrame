@@ -10,6 +10,8 @@
 // --ja "日本語…"   the line is SPOKEN in Japanese: `text` stays the English (the subtitle), `textJa` holds what is said and
 //                  language is "ja". --ja-prompt keeps the tagged Japanese that was sent to ElevenLabs.
 // --fx phone|tv|tape   a filter the animatic applies to the clean take (a phone line, a television, an old cassette).
+// --sub "Excuse me."   the English subtitle of a line whose `text` is the foreign words as the screenplay writes them ("Shitsurei shimasu.",
+//                  "(in Japanese; quietly; subtitled: ...)"): the animatic burns it instead of `text`, and the games show it under the line.
 // --gen flow/session/generation   the ElevenLabs ids of the take, kept for provenance.
 // --file may also be an https URL: download it at once, generation links expire after two hours.
 // Needs ffmpeg for the duration (FFMPEG=/path/to/ffmpeg, or `pip install imageio-ffmpeg`).
@@ -74,7 +76,7 @@ const entry = {
   id, frameId: args.frame, character: args.character.toUpperCase(), text: plain, ...(args["ja-prompt"] ? { prompt: args["ja-prompt"] } : plain !== args.text ? { prompt: args.text } : {}), file: finalRel,
   offset: Number(args.offset ?? existing?.offset ?? 0.4), ...(duration ? { duration } : {}),
   voice: args.voice || voices.characters[args.character.toUpperCase()]?.voiceId || undefined,
-  model: args.model || voices.speechModel, ...(args.ja ? { textJa: args.ja, language: "ja" } : existing?.textJa ? { textJa: existing.textJa, language: existing.language } : {}), ...(args.fx ? { fx: args.fx } : existing?.fx ? { fx: existing.fx } : {}), ...(generation ? { generation } : {}), status: args.status || "take",
+  model: args.model || voices.speechModel, ...(args.ja ? { textJa: args.ja, language: "ja" } : existing?.textJa ? { textJa: existing.textJa, language: existing.language } : {}), ...(args.fx ? { fx: args.fx } : existing?.fx ? { fx: existing.fx } : {}), ...(args.sub ? { sub: args.sub } : existing?.sub ? { sub: existing.sub } : {}), ...(generation ? { generation } : {}), status: args.status || "take",
 };
 if (existing) {
   // Same id, same file path: the new take replaces the old one in place; the old take stays in `history`.
