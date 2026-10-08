@@ -755,7 +755,7 @@
       "sceneId": "rapture-ep1-mugging",
       "title": "Bag",
       "description": "STATIC TWO-SHOT — 50mm, locked off",
-      "image": "/images/rapture/shot-06.jpg",
+      "image": "/images/rapture/shot-04.jpg",
       "shotType": "Two-shot",
       "movement": "Static",
       "lens": "50mm",
@@ -787,7 +787,7 @@
       "sceneId": "rapture-ep1-mugging",
       "title": "The knife, shaking",
       "description": "INSERT — 85mm, static",
-      "image": "/images/rapture/shot-07.jpg",
+      "image": "/images/rapture/shot-06.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -807,7 +807,7 @@
       "sceneId": "rapture-ep1-mugging",
       "title": "Like a bus pass",
       "description": "STATIC — 50mm, on the old woman",
-      "image": "/images/rapture/shot-10.jpg",
+      "image": "/images/rapture/shot-05.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -859,7 +859,7 @@
       "sceneId": "rapture-ep1-mugging",
       "title": "Both hands on the bag",
       "description": "INSERT — 85mm, static",
-      "image": "/images/rapture/shot-12.jpg",
+      "image": "/images/rapture/shot-07.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -889,9 +889,9 @@
     {
       "id": "rapture-ep1mug-09",
       "sceneId": "rapture-ep1-mugging",
-      "title": "He isn't there (keyframe missing)",
+      "title": "He isn't there",
       "description": "STATIC WIDE — 28mm, locked off, as 1",
-      "image": "",
+      "image": "/images/rapture/shot-10.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -900,11 +900,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/09-he-isn-t-there.jpg is not in public/images/rapture, so this card holds slot 9 of 15. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, as 1. And he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC WIDE — 28mm, locked off, as 1\nAnd he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out.",
+      "notes": "STATIC WIDE — 28mm, locked off, as 1. And he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out. (Study reused from the earlier alley board, shot-10: she stands alone in the empty alley.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC WIDE — 28mm, locked off, as 1\nAnd he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out.",
       "audio": [
         {
           "id": "sfx-ep1mug-09-traffic-distant",
@@ -921,9 +921,9 @@
     {
       "id": "rapture-ep1mug-10",
       "sceneId": "rapture-ep1-mugging",
-      "title": "The knife rings (keyframe missing)",
+      "title": "The knife rings",
       "description": "INSERT — 85mm, low, static",
-      "image": "",
+      "image": "/images/rapture/shot-09.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -932,11 +932,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/10-the-knife-rings.jpg is not in public/images/rapture, so this card holds slot 10 of 15. Add the study and rebuild.\n\nINSERT — 85mm, low, static. The knife drops. Hits the pavement. Rings. Lies still.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. INSERT — 85mm, low, static\nThe knife drops. Hits the pavement. Rings. Lies still.",
+      "notes": "INSERT — 85mm, low, static. The knife drops. Hits the pavement. Rings. Lies still. (Study reused from the earlier alley board, shot-09: the knife on the wet cobbles.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. INSERT — 85mm, low, static\nThe knife drops. Hits the pavement. Rings. Lies still.",
       "audio": [
         {
           "id": "sfx-ep1mug-10-knife-ring",
@@ -953,9 +953,9 @@
     {
       "id": "rapture-ep1mug-11",
       "sceneId": "rapture-ep1-mugging",
-      "title": "Offering it to nobody (keyframe missing)",
+      "title": "Offering it to nobody",
       "description": "STATIC — 35mm, locked off",
-      "image": "",
+      "image": "/images/rapture/shot-12.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "35mm",
@@ -964,18 +964,18 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/11-offering-it-to-nobody.jpg is not in public/images/rapture, so this card holds slot 11 of 15. Add the study and rebuild.\n\nSTATIC — 35mm, locked off. The old woman stands in an empty street with her arm out, offering her handbag to nobody.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. STATIC — 35mm, locked off\nThe Old Woman stands in an empty street with her arm out, offering her handbag to nobody."
+      "notes": "STATIC — 35mm, locked off. The old woman stands in an empty street with her arm out, offering her handbag to nobody. (Study reused from the earlier alley board, shot-12: the woman far down the alley with her arm out.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. STATIC — 35mm, locked off\nThe Old Woman stands in an empty street with her arm out, offering her handbag to nobody."
     },
     {
       "id": "rapture-ep1mug-12",
       "sceneId": "rapture-ep1-mugging",
-      "title": "Embarrassed (keyframe missing)",
+      "title": "Embarrassed",
       "description": "STATIC — 50mm, on the old woman",
-      "image": "",
+      "image": "/images/rapture/shot-15.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -984,18 +984,18 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/12-embarrassed.jpg is not in public/images/rapture, so this card holds slot 12 of 15. Add the study and rebuild.\n\nSTATIC — 50mm, on the old woman. She looks behind her. She looks up, briefly, instinctively, and is slightly embarrassed to have done it. There is no one to tell. She looks at the patch of pavement where he was. Concern. For him.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. STATIC — 50mm, on the old woman\nShe looks behind her. She looks up — briefly, instinctively — and is slightly embarrassed to have done it. There is no one to tell. She looks at the patch of pavement where he was. Concern. For him."
+      "notes": "STATIC — 50mm, on the old woman. She looks behind her. She looks up, briefly, instinctively, and is slightly embarrassed to have done it. There is no one to tell. She looks at the patch of pavement where he was. Concern. For him. (Study reused from the earlier alley board, shot-15: she looks aside, alone.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. STATIC — 50mm, on the old woman\nShe looks behind her. She looks up — briefly, instinctively — and is slightly embarrassed to have done it. There is no one to tell. She looks at the patch of pavement where he was. Concern. For him."
     },
     {
       "id": "rapture-ep1mug-13",
       "sceneId": "rapture-ep1-mugging",
-      "title": "The tissue (keyframe missing)",
+      "title": "The tissue",
       "description": "STATIC — 35mm, low",
-      "image": "",
+      "image": "/images/rapture/shot-17.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "35mm",
@@ -1004,18 +1004,18 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/13-the-tissue.jpg is not in public/images/rapture, so this card holds slot 13 of 15. Add the study and rebuild.\n\nSTATIC — 35mm, low. She clips her bag shut. Takes a tissue from her sleeve. Crouches carefully, one hand on her knee, picks up the knife in the tissue, and puts it in her handbag.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC — 35mm, low\nShe clips her bag shut. Takes a tissue from her sleeve. Crouches carefully, one hand on her knee, picks up the knife in the tissue, and puts it in her handbag."
+      "notes": "STATIC — 35mm, low. She clips her bag shut. Takes a tissue from her sleeve. Crouches carefully, one hand on her knee, picks up the knife in the tissue, and puts it in her handbag. (Study reused from the earlier alley board, shot-17: she crouches to the knife.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC — 35mm, low\nShe clips her bag shut. Takes a tissue from her sleeve. Crouches carefully, one hand on her knee, picks up the knife in the tissue, and puts it in her handbag."
     },
     {
       "id": "rapture-ep1mug-14",
       "sceneId": "rapture-ep1-mugging",
       "title": "Walks on",
       "description": "STATIC WIDE — 28mm, locked off",
-      "image": "/images/rapture/shot-19.jpg",
+      "image": "/images/rapture/shot-18.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -1087,9 +1087,9 @@
     {
       "id": "rapture-ep1stj-01",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Pebbledash (keyframe missing)",
+      "title": "Pebbledash",
       "description": "STATIC WIDE — 35mm, locked off — EXT. ST JUDE'S HOUSE — MORNING",
-      "image": "",
+      "image": "/images/rapture/a1s1-01.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "35mm",
@@ -1098,18 +1098,18 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/01-pebbledash.jpg is not in public/images/rapture, so this card holds slot 1 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off — EXT. ST JUDE'S HOUSE — MORNING. Pebbledash. A wheelie bin on its side. A hand-painted sign: ST JUDE'S. Noise from inside.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 35mm, locked off — EXT. ST JUDE'S HOUSE — MORNING\nPebbledash. A wheelie bin on its side. A hand-painted sign: ST JUDE'S. Noise from inside."
+      "notes": "STATIC WIDE — 35mm, locked off — EXT. ST JUDE'S HOUSE — MORNING. Pebbledash. A wheelie bin on its side. A hand-painted sign: ST JUDE'S. Noise from inside. (Legacy study a1s1-01 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 35mm, locked off — EXT. ST JUDE'S HOUSE — MORNING\nPebbledash. A wheelie bin on its side. A hand-painted sign: ST JUDE'S. Noise from inside."
     },
     {
       "id": "rapture-ep1stj-02",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "This means you, Terry (keyframe missing)",
+      "title": "This means you, Terry",
       "description": "INSERT — 85mm, static",
-      "image": "",
+      "image": "/images/rapture/a1s1-01.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -1118,18 +1118,18 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/02-this-means-you-terry.jpg is not in public/images/rapture, so this card holds slot 2 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static. Beneath the sign, smaller: NO VISITORS BEFORE 10. THIS MEANS YOU, TERRY.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. INSERT — 85mm, static\nBeneath the sign, smaller: NO VISITORS BEFORE 10. THIS MEANS YOU, TERRY."
+      "notes": "INSERT — 85mm, static. Beneath the sign, smaller: NO VISITORS BEFORE 10. THIS MEANS YOU, TERRY. (Legacy study a1s1-01 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. INSERT — 85mm, static\nBeneath the sign, smaller: NO VISITORS BEFORE 10. THIS MEANS YOU, TERRY."
     },
     {
       "id": "rapture-ep1stj-03",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Bedlam in the hall (keyframe missing)",
+      "title": "Bedlam in the hall",
       "description": "STATIC WIDE — 28mm, locked off — INT. HALL — CONTINUOUS",
-      "image": "",
+      "image": "/images/rapture/a1s1-02.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -1138,7 +1138,7 @@
       "style": "cinematic",
       "duration": 15,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1198,14 +1198,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/03-bedlam-in-the-hall.jpg is not in public/images/rapture, so this card holds slot 3 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off — INT. HALL — CONTINUOUS. Bedlam. Brian (50s) and Terry (50s) block the corridor, mid-dispute. Sister Nina Doyle (45, sleeves up, a crate of tins on her hip) is trying to get past. BRIAN: It's got my name on it. TERRY: That's not your name, that's nail varnish. BRIAN: In my handwriting. TERRY: It's my nail varnish. BRIAN: Why've you got nail varnish, Terry?\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 15s is a working total-shot estimate for animatic playback (the board's 14s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 5 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.1s, 6.64s, 9.06s, 11.48s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC WIDE — 28mm, locked off — INT. HALL — CONTINUOUS\nBedlam. Brian (50s) and Terry (50s) block the corridor, mid-dispute. Sister Nina Doyle (45, sleeves up, a crate of tins on her hip) is trying to get past.\n   BRIAN: It's got my name on it.\n   TERRY: That's not your name, that's nail varnish.\n   BRIAN: In my handwriting.\n   TERRY: It's my nail varnish.\n   BRIAN: Why've you got nail varnish, Terry?"
+      "notes": "STATIC WIDE — 28mm, locked off — INT. HALL — CONTINUOUS. Bedlam. Brian (50s) and Terry (50s) block the corridor, mid-dispute. Sister Nina Doyle (45, sleeves up, a crate of tins on her hip) is trying to get past. BRIAN: It's got my name on it. TERRY: That's not your name, that's nail varnish. BRIAN: In my handwriting. TERRY: It's my nail varnish. BRIAN: Why've you got nail varnish, Terry? (Legacy study a1s1-02 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 15s is a working total-shot estimate for animatic playback (the board's 14s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 5 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.1s, 6.64s, 9.06s, 11.48s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC WIDE — 28mm, locked off — INT. HALL — CONTINUOUS\nBedlam. Brian (50s) and Terry (50s) block the corridor, mid-dispute. Sister Nina Doyle (45, sleeves up, a crate of tins on her hip) is trying to get past.\n   BRIAN: It's got my name on it.\n   TERRY: That's not your name, that's nail varnish.\n   BRIAN: In my handwriting.\n   TERRY: It's my nail varnish.\n   BRIAN: Why've you got nail varnish, Terry?"
     },
     {
       "id": "rapture-ep1stj-04",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Four in the drawer (keyframe missing)",
+      "title": "Four in the drawer",
       "description": "STATIC MEDIUM — 50mm, locked off, as she walks into frame",
-      "image": "",
+      "image": "/images/rapture/a1s1-02.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1214,7 +1214,7 @@
       "style": "cinematic",
       "duration": 10,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1253,14 +1253,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/04-four-in-the-drawer.jpg is not in public/images/rapture, so this card holds slot 4 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, as she walks into frame. Nina, not stopping. NINA: Brian. It's a charger. There's four in the lounge drawer. BRIAN: Not with the fast bit. NINA: Then get up earlier.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 10s is a working total-shot estimate for animatic playback (the board's 9s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 3 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 4.54s, 7.12s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. STATIC MEDIUM — 50mm, locked off, as she walks into frame\nNina, not stopping.\n   NINA: Brian. It's a charger. There's four in the lounge drawer.\n   BRIAN: Not with the fast bit.\n   NINA: Then get up earlier."
+      "notes": "STATIC MEDIUM — 50mm, locked off, as she walks into frame. Nina, not stopping. NINA: Brian. It's a charger. There's four in the lounge drawer. BRIAN: Not with the fast bit. NINA: Then get up earlier. (Legacy study a1s1-02 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 10s is a working total-shot estimate for animatic playback (the board's 9s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 3 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 4.54s, 7.12s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. STATIC MEDIUM — 50mm, locked off, as she walks into frame\nNina, not stopping.\n   NINA: Brian. It's a charger. There's four in the lounge drawer.\n   BRIAN: Not with the fast bit.\n   NINA: Then get up earlier."
     },
     {
       "id": "rapture-ep1stj-05",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Four weeks Thursday (keyframe missing)",
+      "title": "Four weeks Thursday",
       "description": "STATIC WIDE — 35mm, locked off, the foot of the stairs",
-      "image": "",
+      "image": "/images/rapture/a1s1-03.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "35mm",
@@ -1269,7 +1269,7 @@
       "style": "cinematic",
       "duration": 19,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1338,14 +1338,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/05-four-weeks-thursday.jpg is not in public/images/rapture, so this card holds slot 5 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off, the foot of the stairs. Col (30s, freshly shaved, pleased with himself) comes down the stairs with a mug. COL: Four weeks Thursday. NINA: I know. COL: So I was thinking. Given that. The room at the back — NINA: No. COL: You haven't heard what I — NINA: You want Deborah's room because it's got the aerial. No.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 19s is a working total-shot estimate for animatic playback (the board's 14s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.1s, 4.88s, 10.1s, 11.48s, 13.98s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC WIDE — 35mm, locked off, the foot of the stairs\nCol (30s, freshly shaved, pleased with himself) comes down the stairs with a mug.\n   COL: Four weeks Thursday.\n   NINA: I know.\n   COL: So I was thinking. Given that. The room at the back —\n   NINA: No.\n   COL: You haven't heard what I —\n   NINA: You want Deborah's room because it's got the aerial. No."
+      "notes": "STATIC WIDE — 35mm, locked off, the foot of the stairs. Col (30s, freshly shaved, pleased with himself) comes down the stairs with a mug. COL: Four weeks Thursday. NINA: I know. COL: So I was thinking. Given that. The room at the back — NINA: No. COL: You haven't heard what I — NINA: You want Deborah's room because it's got the aerial. No. (Legacy study a1s1-03 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 19s is a working total-shot estimate for animatic playback (the board's 14s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.1s, 4.88s, 10.1s, 11.48s, 13.98s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC WIDE — 35mm, locked off, the foot of the stairs\nCol (30s, freshly shaved, pleased with himself) comes down the stairs with a mug.\n   COL: Four weeks Thursday.\n   NINA: I know.\n   COL: So I was thinking. Given that. The room at the back —\n   NINA: No.\n   COL: You haven't heard what I —\n   NINA: You want Deborah's room because it's got the aerial. No."
     },
     {
       "id": "rapture-ep1stj-06",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Filed for later (keyframe missing)",
+      "title": "Filed for later",
       "description": "STATIC MEDIUM — 50mm, locked off, on Col",
-      "image": "",
+      "image": "/images/rapture/a1s1-03.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1354,20 +1354,20 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
         "rapture-col"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/06-filed-for-later.jpg is not in public/images/rapture, so this card holds slot 6 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, on Col. She's gone. Col looks wounded, briefly, then files it for another attempt.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC MEDIUM — 50mm, locked off, on Col\nShe's gone. Col looks wounded, briefly, then files it for another attempt."
+      "notes": "STATIC MEDIUM — 50mm, locked off, on Col. She's gone. Col looks wounded, briefly, then files it for another attempt. (Legacy study a1s1-03 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC MEDIUM — 50mm, locked off, on Col\nShe's gone. Col looks wounded, briefly, then files it for another attempt."
     },
     {
       "id": "rapture-ep1stj-07",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "The fax machine (keyframe missing)",
+      "title": "The fax machine",
       "description": "STATIC MEDIUM — 35mm, locked off — INT. OFFICE — CONTINUOUS",
-      "image": "",
+      "image": "/images/rapture/a1s1-04.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "35mm",
@@ -1376,7 +1376,7 @@
       "style": "cinematic",
       "duration": 12,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1404,14 +1404,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/07-the-fax-machine.jpg is not in public/images/rapture, so this card holds slot 7 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 35mm, locked off — INT. OFFICE — CONTINUOUS. Paperwork in drifts. A fax machine that has no business existing. Nina on the landline, pleasant, fluent, lying. NINA: Fourteen. ... No, fourteen. ... Then your records are wrong, love. ... Mm. ... Send someone. Tuesday's no good.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. STATIC MEDIUM — 35mm, locked off — INT. OFFICE — CONTINUOUS\nPaperwork in drifts. A fax machine that has no business existing. Nina on the landline, pleasant, fluent, lying.\n   NINA: Fourteen. ... No, fourteen. ... Then your records are wrong, love. ... Mm. ... Send someone. Tuesday's no good."
+      "notes": "STATIC MEDIUM — 35mm, locked off — INT. OFFICE — CONTINUOUS. Paperwork in drifts. A fax machine that has no business existing. Nina on the landline, pleasant, fluent, lying. NINA: Fourteen. ... No, fourteen. ... Then your records are wrong, love. ... Mm. ... Send someone. Tuesday's no good. (Legacy study a1s1-04 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n7. STATIC MEDIUM — 35mm, locked off — INT. OFFICE — CONTINUOUS\nPaperwork in drifts. A fax machine that has no business existing. Nina on the landline, pleasant, fluent, lying.\n   NINA: Fourteen. ... No, fourteen. ... Then your records are wrong, love. ... Mm. ... Send someone. Tuesday's no good."
     },
     {
       "id": "rapture-ep1stj-08",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Twenty-two (keyframe missing)",
+      "title": "Twenty-two",
       "description": "INSERT — 85mm, static, on the ledger",
-      "image": "",
+      "image": "/images/rapture/a1s1-05.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -1420,13 +1420,13 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/08-twenty-two.jpg is not in public/images/rapture, so this card holds slot 8 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, on the ledger. She hangs up and writes 22 in a ledger without pausing.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. INSERT — 85mm, static, on the ledger\nShe hangs up and writes 22 in a ledger without pausing.",
+      "notes": "INSERT — 85mm, static, on the ledger. She hangs up and writes 22 in a ledger without pausing. (Legacy study a1s1-05 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. INSERT — 85mm, static, on the ledger\nShe hangs up and writes 22 in a ledger without pausing.",
       "audio": [
         {
           "id": "sfx-ep1stj-08-pen-clipboard",
@@ -1443,9 +1443,9 @@
     {
       "id": "rapture-ep1stj-09",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Let me take that (keyframe missing)",
+      "title": "Let me take that",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. HALL — CONTINUOUS",
-      "image": "",
+      "image": "/images/rapture/a1s1-06.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1454,7 +1454,7 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1502,14 +1502,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/09-let-me-take-that.jpg is not in public/images/rapture, so this card holds slot 9 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. HALL — CONTINUOUS. Crate back on her hip. A Volunteer (20s, lanyard, keen) appears beside her. VOLUNTEER: Let me take that. NINA: No. VOLUNTEER: It's heavy. NINA: I know.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.3s, 3.76s, 5.7s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC MEDIUM — 50mm, locked off — INT. HALL — CONTINUOUS\nCrate back on her hip. A Volunteer (20s, lanyard, keen) appears beside her.\n   VOLUNTEER: Let me take that.\n   NINA: No.\n   VOLUNTEER: It's heavy.\n   NINA: I know."
+      "notes": "STATIC MEDIUM — 50mm, locked off — INT. HALL — CONTINUOUS. Crate back on her hip. A Volunteer (20s, lanyard, keen) appears beside her. VOLUNTEER: Let me take that. NINA: No. VOLUNTEER: It's heavy. NINA: I know. (Legacy study a1s1-06 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.3s, 3.76s, 5.7s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC MEDIUM — 50mm, locked off — INT. HALL — CONTINUOUS\nCrate back on her hip. A Volunteer (20s, lanyard, keen) appears beside her.\n   VOLUNTEER: Let me take that.\n   NINA: No.\n   VOLUNTEER: It's heavy.\n   NINA: I know."
     },
     {
       "id": "rapture-ep1stj-10",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Did them (keyframe missing)",
+      "title": "Did them",
       "description": "STATIC WIDE — 35mm, locked off, the hall",
-      "image": "",
+      "image": "/images/rapture/a1s1-06.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "35mm",
@@ -1518,7 +1518,7 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1546,14 +1546,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/10-did-them.jpg is not in public/images/rapture, so this card holds slot 10 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off, the hall. She's past him. VOLUNTEER: I'll do the upstairs bins! NINA: Did them. He stands there with his hands in his pockets.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 2 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.78s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC WIDE — 35mm, locked off, the hall\nShe's past him.\n   VOLUNTEER: I'll do the upstairs bins!\n   NINA: Did them.\nHe stands there with his hands in his pockets."
+      "notes": "STATIC WIDE — 35mm, locked off, the hall. She's past him. VOLUNTEER: I'll do the upstairs bins! NINA: Did them. He stands there with his hands in his pockets. (Legacy study a1s1-06 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 2 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.78s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC WIDE — 35mm, locked off, the hall\nShe's past him.\n   VOLUNTEER: I'll do the upstairs bins!\n   NINA: Did them.\nHe stands there with his hands in his pockets."
     },
     {
       "id": "rapture-ep1stj-11",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Forty minutes (keyframe missing)",
+      "title": "Forty minutes",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — CONTINUOUS",
-      "image": "",
+      "image": "/images/rapture/a1s1-07.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1562,7 +1562,7 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1631,14 +1631,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/11-forty-minutes.jpg is not in public/images/rapture, so this card holds slot 11 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — CONTINUOUS. She dumps the crate. Deborah (60s, cardigan, arms folded, born to complain) is waiting for her. DEBORAH: The pressure's gone again. NINA: I'll look at it. DEBORAH: It's him upstairs. Forty minutes. NINA: It's not him upstairs. DEBORAH: Forty. I timed it. NINA: Why.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 16s is a working total-shot estimate for animatic playback (the board's 14s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.1s, 5.04s, 8.58s, 10.92s, 13.82s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — CONTINUOUS\nShe dumps the crate. Deborah (60s, cardigan, arms folded, born to complain) is waiting for her.\n   DEBORAH: The pressure's gone again.\n   NINA: I'll look at it.\n   DEBORAH: It's him upstairs. Forty minutes.\n   NINA: It's not him upstairs.\n   DEBORAH: Forty. I timed it.\n   NINA: Why."
+      "notes": "STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — CONTINUOUS. She dumps the crate. Deborah (60s, cardigan, arms folded, born to complain) is waiting for her. DEBORAH: The pressure's gone again. NINA: I'll look at it. DEBORAH: It's him upstairs. Forty minutes. NINA: It's not him upstairs. DEBORAH: Forty. I timed it. NINA: Why. (Legacy study a1s1-07 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 16s is a working total-shot estimate for animatic playback (the board's 14s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.1s, 5.04s, 8.58s, 10.92s, 13.82s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n11. STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — CONTINUOUS\nShe dumps the crate. Deborah (60s, cardigan, arms folded, born to complain) is waiting for her.\n   DEBORAH: The pressure's gone again.\n   NINA: I'll look at it.\n   DEBORAH: It's him upstairs. Forty minutes.\n   NINA: It's not him upstairs.\n   DEBORAH: Forty. I timed it.\n   NINA: Why."
     },
     {
       "id": "rapture-ep1stj-12",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "The tap coughs (keyframe missing)",
+      "title": "The tap coughs",
       "description": "INSERT — 85mm, static, the tap",
-      "image": "",
+      "image": "/images/rapture/a1s1-08.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -1647,11 +1647,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/12-the-tap-coughs.jpg is not in public/images/rapture, so this card holds slot 12 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, the tap. Behind them the tap coughs air. Water. Nothing. Water.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. INSERT — 85mm, static, the tap\nBehind them the tap coughs air. Water. Nothing. Water.",
+      "notes": "INSERT — 85mm, static, the tap. Behind them the tap coughs air. Water. Nothing. Water. (Legacy study a1s1-08 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. INSERT — 85mm, static, the tap\nBehind them the tap coughs air. Water. Nothing. Water.",
       "audio": [
         {
           "id": "sfx-ep1stj-12-tap-cough",
@@ -1668,9 +1668,9 @@
     {
       "id": "rapture-ep1stj-13",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Twenty residents (keyframe missing)",
+      "title": "Twenty residents",
       "description": "STATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS",
-      "image": "",
+      "image": "/images/rapture/a1s1-09.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -1679,14 +1679,14 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
         "rapture-nina",
         "rapture-maureen"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/13-twenty-residents.jpg is not in public/images/rapture, so this card holds slot 13 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS. A long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS\nA long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning.",
+      "notes": "STATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS. A long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning. (Legacy study a1s1-09 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS\nA long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning.",
       "audio": [
         {
           "id": "sfx-ep1stj-13-radio-jingle",
@@ -1703,9 +1703,9 @@
     {
       "id": "rapture-ep1stj-14",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Something religious (keyframe missing)",
+      "title": "Something religious",
       "description": "STATIC MEDIUM — 50mm, locked off, two-shot across the table",
-      "image": "",
+      "image": "/images/rapture/a1s1-10.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1714,7 +1714,7 @@
       "style": "cinematic",
       "duration": 16,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1763,14 +1763,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/14-something-religious.jpg is not in public/images/rapture, so this card holds slot 14 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, two-shot across the table. MAUREEN: Can I ask you something religious? NINA: You can ask. MAUREEN: If someone's took something off you. And you take it back. But you take a bit more, for the inconvenience. Is that stealing? NINA: Yes.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 16s is a working total-shot estimate for animatic playback (the board's 12s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.42s, 5.6s, 14.18s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC MEDIUM — 50mm, locked off, two-shot across the table\n   MAUREEN: Can I ask you something religious?\n   NINA: You can ask.\n   MAUREEN: If someone's took something off you. And you take it back. But you take a bit more, for the inconvenience. Is that stealing?\n   NINA: Yes."
+      "notes": "STATIC MEDIUM — 50mm, locked off, two-shot across the table. MAUREEN: Can I ask you something religious? NINA: You can ask. MAUREEN: If someone's took something off you. And you take it back. But you take a bit more, for the inconvenience. Is that stealing? NINA: Yes. (Legacy study a1s1-10 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 16s is a working total-shot estimate for animatic playback (the board's 12s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.42s, 5.6s, 14.18s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC MEDIUM — 50mm, locked off, two-shot across the table\n   MAUREEN: Can I ask you something religious?\n   NINA: You can ask.\n   MAUREEN: If someone's took something off you. And you take it back. But you take a bit more, for the inconvenience. Is that stealing?\n   NINA: Yes."
     },
     {
       "id": "rapture-ep1stj-15",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Put it back (keyframe missing)",
+      "title": "Put it back",
       "description": "STATIC MEDIUM — 50mm, locked off, as before",
-      "image": "",
+      "image": "/images/rapture/a1s1-11.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1779,7 +1779,7 @@
       "style": "cinematic",
       "duration": 18,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1848,14 +1848,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/15-put-it-back.jpg is not in public/images/rapture, so this card holds slot 15 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, as before. MAUREEN: Even the inconvenience bit? NINA: Especially the inconvenience bit. Maureen, considering this. MAUREEN: What if I put it back. NINA: Put it back, Maureen. MAUREEN: I'm only asking hypothetical. NINA: Put it back.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 18s is a working total-shot estimate for animatic playback (the board's 12s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.18s, 6.56s, 10.82s, 13s, 15.9s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC MEDIUM — 50mm, locked off, as before\n   MAUREEN: Even the inconvenience bit?\n   NINA: Especially the inconvenience bit.\nMaureen, considering this.\n   MAUREEN: What if I put it back.\n   NINA: Put it back, Maureen.\n   MAUREEN: I'm only asking hypothetical.\n   NINA: Put it back."
+      "notes": "STATIC MEDIUM — 50mm, locked off, as before. MAUREEN: Even the inconvenience bit? NINA: Especially the inconvenience bit. Maureen, considering this. MAUREEN: What if I put it back. NINA: Put it back, Maureen. MAUREEN: I'm only asking hypothetical. NINA: Put it back. (Legacy study a1s1-11 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 18s is a working total-shot estimate for animatic playback (the board's 12s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked.\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.18s, 6.56s, 10.82s, 13s, 15.9s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC MEDIUM — 50mm, locked off, as before\n   MAUREEN: Even the inconvenience bit?\n   NINA: Especially the inconvenience bit.\nMaureen, considering this.\n   MAUREEN: What if I put it back.\n   NINA: Put it back, Maureen.\n   MAUREEN: I'm only asking hypothetical.\n   NINA: Put it back."
     },
     {
       "id": "rapture-ep1stj-16",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Mid-anecdote (keyframe missing)",
+      "title": "Mid-anecdote",
       "description": "STATIC WIDE — 28mm, locked off, down the table, Terry at the far end",
-      "image": "",
+      "image": "/images/rapture/a1s1-12.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -1864,7 +1864,7 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -1883,14 +1883,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/16-mid-anecdote.jpg is not in public/images/rapture, so this card holds slot 16 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, down the table, Terry at the far end. Nina stands and reaches for a stack of plates. At the far end, Terry is mid-anecdote. TERRY: — so I said to him, that's not a dog, mate, that's a —\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. STATIC WIDE — 28mm, locked off, down the table, Terry at the far end\nNina stands and reaches for a stack of plates. At the far end, Terry is mid-anecdote.\n   TERRY: — so I said to him, that's not a dog, mate, that's a —"
+      "notes": "STATIC WIDE — 28mm, locked off, down the table, Terry at the far end. Nina stands and reaches for a stack of plates. At the far end, Terry is mid-anecdote. TERRY: — so I said to him, that's not a dog, mate, that's a — (Legacy study a1s1-12 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. STATIC WIDE — 28mm, locked off, down the table, Terry at the far end\nNina stands and reaches for a stack of plates. At the far end, Terry is mid-anecdote.\n   TERRY: — so I said to him, that's not a dog, mate, that's a —"
     },
     {
       "id": "rapture-ep1stj-17",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Nothing (keyframe missing)",
+      "title": "Nothing",
       "description": "STATIC WIDE — 28mm, locked off, as 16",
-      "image": "",
+      "image": "/images/rapture/a1s1-13.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "24mm",
@@ -1899,13 +1899,13 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/17-nothing.jpg is not in public/images/rapture, so this card holds slot 17 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, as 15. Nothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. STATIC WIDE — 28mm, locked off, as 16\nNothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table.",
+      "notes": "STATIC WIDE — 28mm, locked off, as 15. Nothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table. (Legacy study a1s1-13 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. STATIC WIDE — 28mm, locked off, as 16\nNothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table.",
       "audio": [
         {
           "id": "sfx-ep1stj-17-radio-jingle",
@@ -1922,9 +1922,9 @@
     {
       "id": "rapture-ep1stj-18",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "The knife spins (keyframe missing)",
+      "title": "The knife spins",
       "description": "INSERT — 85mm, static, the plate rim",
-      "image": "",
+      "image": "/images/rapture/a1s1-16.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -1933,11 +1933,11 @@
       "style": "cinematic",
       "duration": 3,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/18-the-knife-spins.jpg is not in public/images/rapture, so this card holds slot 18 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, the plate rim. A knife spinning slowly on a plate rim.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. INSERT — 85mm, static, the plate rim\nA knife spinning slowly on a plate rim.",
+      "notes": "INSERT — 85mm, static, the plate rim. A knife spinning slowly on a plate rim. (Legacy study a1s1-16 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. INSERT — 85mm, static, the plate rim\nA knife spinning slowly on a plate rim.",
       "audio": [
         {
           "id": "sfx-ep1stj-18-knife-ring",
@@ -1954,9 +1954,9 @@
     {
       "id": "rapture-ep1stj-19",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Still angled toward Terry (keyframe missing)",
+      "title": "Still angled toward Terry",
       "description": "STATIC MEDIUM — 50mm, locked off, on Nina",
-      "image": "",
+      "image": "/images/rapture/a1s1-14.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -1965,20 +1965,20 @@
       "style": "cinematic",
       "duration": 8,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/19-still-angled-toward-terry.jpg is not in public/images/rapture, so this card holds slot 19 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, on Nina. Nina stands with both hands on the plates, still angled toward where Terry was. She does not move.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. STATIC MEDIUM — 50mm, locked off, on Nina\nNina stands with both hands on the plates, still angled toward where Terry was. She does not move."
+      "notes": "STATIC MEDIUM — 50mm, locked off, on Nina. Nina stands with both hands on the plates, still angled toward where Terry was. She does not move. (Legacy study a1s1-14 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. STATIC MEDIUM — 50mm, locked off, on Nina\nNina stands with both hands on the plates, still angled toward where Terry was. She does not move."
     },
     {
       "id": "rapture-ep1stj-20",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "The cup settles (keyframe missing)",
+      "title": "The cup settles",
       "description": "INSERT — 85mm, static, a cup and saucer",
-      "image": "",
+      "image": "/images/rapture/a1s1-15.jpg",
       "shotType": "Insert",
       "movement": "Static",
       "lens": "85mm",
@@ -1987,11 +1987,11 @@
       "style": "cinematic",
       "duration": 4,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/20-the-cup-settles.jpg is not in public/images/rapture, so this card holds slot 20 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, a cup and saucer. A cup rocks on its saucer. Settles.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. INSERT — 85mm, static, a cup and saucer\nA cup rocks on its saucer. Settles.",
+      "notes": "INSERT — 85mm, static, a cup and saucer. A cup rocks on its saucer. Settles. (Legacy study a1s1-15 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. INSERT — 85mm, static, a cup and saucer\nA cup rocks on its saucer. Settles.",
       "audio": [
         {
           "id": "sfx-ep1stj-20-cup-rattle",
@@ -2008,9 +2008,9 @@
     {
       "id": "rapture-ep1stj-21",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "All that food (keyframe missing)",
+      "title": "All that food",
       "description": "STATIC MEDIUM — 50mm, locked off, on Nina",
-      "image": "",
+      "image": "/images/rapture/a1s1-17.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -2019,7 +2019,7 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
@@ -2037,14 +2037,14 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/21-all-that-food.jpg is not in public/images/rapture, so this card holds slot 21 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, on Nina. She looks at twenty untouched breakfasts. All that food. NINA: Oh, for —\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. STATIC MEDIUM — 50mm, locked off, on Nina\nShe looks at twenty untouched breakfasts. All that food.\n   NINA: Oh, for —"
+      "notes": "STATIC MEDIUM — 50mm, locked off, on Nina. She looks at twenty untouched breakfasts. All that food. NINA: Oh, for — (Legacy study a1s1-17 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. STATIC MEDIUM — 50mm, locked off, on Nina\nShe looks at twenty untouched breakfasts. All that food.\n   NINA: Oh, for —"
     },
     {
       "id": "rapture-ep1stj-22",
       "sceneId": "rapture-ep1-st-judes",
-      "title": "Radio off (keyframe missing)",
+      "title": "Radio off",
       "description": "STATIC MEDIUM — 35mm, locked off — INT. KITCHEN — CONTINUOUS",
-      "image": "",
+      "image": "/images/rapture/a1s1-18.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "35mm",
@@ -2053,13 +2053,13 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/22-radio-off.jpg is not in public/images/rapture, so this card holds slot 22 of 22. Add the study and rebuild.\n\nSTATIC MEDIUM — 35mm, locked off — INT. KITCHEN — CONTINUOUS. She crosses to the radio, mid-jingle, and turns it off. Silence.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. STATIC MEDIUM — 35mm, locked off — INT. KITCHEN — CONTINUOUS\nShe crosses to the radio, mid-jingle, and turns it off. Silence."
+      "notes": "STATIC MEDIUM — 35mm, locked off — INT. KITCHEN — CONTINUOUS. She crosses to the radio, mid-jingle, and turns it off. Silence. (Legacy study a1s1-18 reused: the nearest existing picture of this beat, from the earlier St Jude's reference board; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. STATIC MEDIUM — 35mm, locked off — INT. KITCHEN — CONTINUOUS\nShe crosses to the radio, mid-jingle, and turns it off. Silence."
     },
     {
       "id": "rapture-ep1c1-01",
@@ -3262,9 +3262,9 @@
     {
       "id": "rapture-ep1wu-01",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Ten to go (keyframe missing)",
+      "title": "Ten to go",
       "description": "STATIC WIDE — 35mm, locked off — INT. DINING ROOM — LATER",
-      "image": "",
+      "image": "/images/rapture/a1s1-17.jpg",
       "shotType": "Wide",
       "movement": "Static",
       "lens": "35mm",
@@ -3273,13 +3273,13 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 01-ten-to-go.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 1 of 23. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off — INT. DINING ROOM — LATER. Half the plates are cleared. Nina works down the table with a bin bag, scraping full English breakfasts into it. Methodical. Ten to go.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 35mm, locked off — INT. DINING ROOM — LATER\nHalf the plates are cleared. Nina works down the table with a bin bag, scraping full English breakfasts into it. Methodical. Ten to go."
+      "notes": "STATIC WIDE — 35mm, locked off — INT. DINING ROOM — LATER. Half the plates are cleared. Nina works down the table with a bin bag, scraping full English breakfasts into it. Methodical. Ten to go. (Legacy study a1s1-17 reused: the same dining room, plates on the table; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 35mm, locked off — INT. DINING ROOM — LATER\nHalf the plates are cleared. Nina works down the table with a bin bag, scraping full English breakfasts into it. Methodical. Ten to go."
     },
     {
       "id": "rapture-ep1wu-02",
@@ -3362,9 +3362,9 @@
     {
       "id": "rapture-ep1wu-05",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "The gas meter (keyframe missing)",
+      "title": "The gas meter",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — LATER",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/05-water-butt.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -3373,13 +3373,13 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 05-the-gas-meter.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 5 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — LATER. She turns the gas off at the meter. Checks it. Turns it again to be sure.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — LATER\nShe turns the gas off at the meter. Checks it. Turns it again to be sure."
+      "notes": "STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — LATER. She turns the gas off at the meter. Checks it. Turns it again to be sure. (Legacy study 05-water-butt reused: the utility room by the back door; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC MEDIUM — 50mm, locked off — INT. UTILITY ROOM — LATER\nShe turns the gas off at the meter. Checks it. Turns it again to be sure."
     },
     {
       "id": "rapture-ep1wu-06",
@@ -3462,9 +3462,9 @@
     {
       "id": "rapture-ep1wu-09",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Dial tone (keyframe missing)",
+      "title": "Dial tone",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/11-filing.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -3473,13 +3473,13 @@
       "style": "cinematic",
       "duration": 6,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 09-dial-tone.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 9 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER. She picks up the landline. Dial tone. Dials three digits. Listens. Nothing. Puts it down. Picks it up. Same. Puts it down.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER\nShe picks up the landline. Dial tone. Dials three digits. Listens. Nothing.\nPuts it down. Picks it up. Same. Puts it down.",
+      "notes": "STATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER. She picks up the landline. Dial tone. Dials three digits. Listens. Nothing. Puts it down. Picks it up. Same. Puts it down. (Legacy study 11-filing reused: the office; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER\nShe picks up the landline. Dial tone. Dials three digits. Listens. Nothing.\nPuts it down. Picks it up. Same. Puts it down.",
       "audio": [
         {
           "id": "sfx-ep1wu-09-landline-dead",
@@ -3496,9 +3496,9 @@
     {
       "id": "rapture-ep1wu-10",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Squared to the edge (keyframe missing)",
+      "title": "Squared to the edge",
       "description": "STATIC MEDIUM — 35mm, locked off — INT. HALL — LATER",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/15-fire-exit.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "35mm",
@@ -3507,13 +3507,13 @@
       "style": "cinematic",
       "duration": 5,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 10-squared-to-the-edge.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 10 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 35mm, locked off — INT. HALL — LATER. She pins a note to the noticeboard and squares it with the edge.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC MEDIUM — 35mm, locked off — INT. HALL — LATER\nShe pins a note to the noticeboard and squares it with the edge."
+      "notes": "STATIC MEDIUM — 35mm, locked off — INT. HALL — LATER. She pins a note to the noticeboard and squares it with the edge. (Legacy study 15-fire-exit reused: the corridor, the clipboard on the wall; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC MEDIUM — 35mm, locked off — INT. HALL — LATER\nShe pins a note to the noticeboard and squares it with the edge."
     },
     {
       "id": "rapture-ep1wu-11",
@@ -3594,9 +3594,9 @@
     {
       "id": "rapture-ep1wu-14",
       "sceneId": "rapture-ep1-washing-up",
-      "title": "Four containers (keyframe missing)",
+      "title": "Four containers",
       "description": "STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — LATER",
-      "image": "",
+      "image": "/images/rapture/ep1-washing-up/02-kitchen.jpg",
       "shotType": "Medium",
       "movement": "Static",
       "lens": "50mm",
@@ -3605,7 +3605,7 @@
       "style": "cinematic",
       "duration": 7,
       "durationIsEstimate": true,
-      "status": "Needs review",
+      "status": "Draft",
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [
@@ -3623,7 +3623,7 @@
           "model": "eleven_v4"
         }
       ],
-      "notes": "KEYFRAME MISSING — 14-four-containers.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 14 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. KITCHEN — LATER. She fills four water containers at the tap. The flow is weak and discoloured. She frowns at it. NINA: Don't you start.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — LATER\nShe fills four water containers at the tap. The flow is weak and discoloured. She frowns at it.\n   NINA: Don't you start."
+      "notes": "STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — LATER. She fills four water containers at the tap. The flow is weak and discoloured. She frowns at it. NINA: Don't you start. (Legacy study 02-kitchen reused: the kitchen sink; draw this shot when the pictures are made.)\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC MEDIUM — 50mm, locked off — INT. KITCHEN — LATER\nShe fills four water containers at the tap. The flow is weak and discoloured. She frowns at it.\n   NINA: Don't you start."
     },
     {
       "id": "rapture-ep1wu-15",
@@ -20151,7 +20151,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 23 shots, 153s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), 16 placeholder cards still to generate, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 158s, moved here from episode two), fully studied, the cops' second beat (6 shots, 92s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 162-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 308-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 161-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (24 shots, 367-second estimate), every shot studied, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 297-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 379-second estimate), fully studied, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The mugging cold open (15 shots, 81s, static locked off, sodium streetlight, the knife starts its journey); St Jude's and the rapture (22 shots, 193s, Nina's locked-off daylight grammar, the rapture happens with no flash); the episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Six ordered boards (storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 100 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-mugging.md, ep1-st-judes.md, ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 23 shots, 153s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), 11 placeholder cards still to generate, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 158s, moved here from episode two), fully studied, the cops' second beat (6 shots, 92s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 162-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 308-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 161-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (24 shots, 367-second estimate), every shot studied, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 297-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 379-second estimate), fully studied, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The mugging cold open (15 shots, 81s, static locked off, sodium streetlight, the knife starts its journey); St Jude's and the rapture (22 shots, 193s, Nina's locked-off daylight grammar, the rapture happens with no flash); the episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Six ordered boards (storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 100 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-mugging.md, ep1-st-judes.md, ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",

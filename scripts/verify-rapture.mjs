@@ -23,10 +23,10 @@ execFileSync(process.execPath, ["scripts/rapture/build-project.mjs", "--check"],
 
 const exportsFile = join(cache, "project.mjs");
 await build({
-  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations"; export * from "./src/lib/structure"; export { bundledAudioUpdates } from "./src/lib/bundle-refresh";', resolveDir: root },
+  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations"; export * from "./src/lib/structure"; export { bundledAudioUpdates, bundledPictureUpdates } from "./src/lib/bundle-refresh";', resolveDir: root },
   outfile: exportsFile, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning",
 });
-const { validatePatch, sanitizeImport, isUuid, sceneHeadings, normaliseSlugline, episodeNumberOf, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, bundledAudioUpdates, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
+const { validatePatch, sanitizeImport, isUuid, sceneHeadings, normaliseSlugline, episodeNumberOf, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, bundledAudioUpdates, bundledPictureUpdates, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
 
 // The bundled workspace has to fit inside the app's own ceilings: validatePatch rejects anything
 // above them and sanitizeImport truncates to them, so a series that outgrows a cap cannot be
@@ -685,9 +685,40 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
   const gap = eightSecond[7].offset - (eightSecond[6].offset + eightSecond[6].duration);
   assert(Math.abs(gap - 8) < 0.05, "\"An eight-second pause\" separates \"We should arrest ourselves.\" from \"It's what we signed up for.\"");
   assert.equal(project.frames.find(f => f.id === "rapture-ep1mug-04").audio[0].text, "Bag.");
-  pass(`${attached} more of episode one's lines sit on the four re-boarded scenes (mugging 3, St Jude's 39, the first cops scene 66, washing-up 4): each board follows the draft beat for beat; the studies that still fit are reused (mugging 10 of 15 shots, washing-up 7 of 23, the first cops scene 19 of 19, St Jude's none) and the rest are placeholder cards`);
+  pass(`${attached} more of episode one's lines sit on the four re-boarded scenes (mugging 3, St Jude's 39, the first cops scene 66, washing-up 4): each board follows the draft beat for beat; the studies that still fit are reused (mugging 15 of 15 (shots 9-13 on the alley board's own studies), St Jude's 22 of 22 (the earlier St Jude's reference studies a1s1-01 to 18, the nearest existing pictures), washing-up 12 of 23, the first cops scene 19 of 19) and the rest are placeholder cards`);
 }
 
+// A saved workspace whose St Jude's, mugging and washing-up cards are still placeholders takes the pictures laid on them (and only those), once.
+{
+  const target = project.frames.find(f => f.id === "rapture-ep1stj-07");
+  const card = { ...target, image: "", title: target.title + " (keyframe missing)", status: "Needs review", notes: "KEYFRAME MISSING — ep1-st-judes/07-the-fax-machine.jpg is not in public/images/rapture/ep1-st-judes, so this card holds slot 7 of 22. Add the study and rebuild.\n\n" + target.notes };
+  const edited = { ...card, id: "rapture-ep1stj-08", notes: card.notes.replace(/\n\n.*/s, "\n\nThe writer's own words, wholly rewritten. ".repeat(3)) };
+  const saved = { ...project, frames: project.frames.map(f => f.id === card.id ? card : f.id === "rapture-ep1stj-08" ? { ...f, image: "", title: f.title + " (keyframe missing)", status: "Needs review", notes: "KEYFRAME MISSING — x.jpg\n\nThe writer's own words, wholly rewritten." } : f) };
+  const patch = bundledPictureUpdates(saved, project);
+  assert(patch, "the cards take their pictures");
+  const got = new Map(patch.frames.map(f => [f.id, f]));
+  assert.equal(got.get(card.id).image, target.image);
+  assert.equal(got.get(card.id).title, target.title);
+  assert.equal(got.get(card.id).notes, target.notes, "an untouched card takes the bundle's notes, which say which study it is");
+  assert.equal(got.get(card.id).status, target.status);
+  assert.equal(got.get("rapture-ep1stj-08").image, project.frames.find(f => f.id === "rapture-ep1stj-08").image, "an edited card takes the picture");
+  assert.equal(got.get("rapture-ep1stj-08").notes, "KEYFRAME MISSING — x.jpg\n\nThe writer's own words, wholly rewritten.", "and keeps its own words");
+  assert.equal(bundledPictureUpdates({ ...saved, frames: patch.frames }, project), null, "a second read changes nothing");
+  assert.equal(bundledPictureUpdates(project, project), null, "the bundle itself has nothing to take");
+  void edited;
+  pass("saved workspaces take the pictures laid on their placeholder cards once, keep any card the writer rewrote");
+}
+// No picture was drawn for the re-boarded scenes: existing studies were laid on every shot they show (8 October 2026, night). What is still missing is a placeholder card.
+{
+  const none = project.frames.filter(f => !f.image);
+  const count = id => none.filter(f => f.sceneId === id).length;
+  assert.equal(count("rapture-ep1-mugging"), 0, "the mugging has a study on every shot");
+  assert.equal(count("rapture-ep1-st-judes"), 0, "St Jude's has a study on every shot (the earlier reference studies, reused)");
+  assert.equal(count("rapture-ep1-washing-up"), 11, "washing-up: 12 of 23 shots have a study");
+  assert.equal(none.length, 40, "40 shots have no picture yet: washing-up 11, therapy class 26, the first raid 1, the intake floor 2");
+  assert(project.frames.filter(f => f.sceneId === "rapture-ep1-st-judes").every(f => /^\/images\/rapture\/a1s1-\d\d\.jpg$/.test(f.image) && /Legacy study a1s1-\d\d reused/.test(f.notes)), "St Jude's studies are the legacy ones and say so");
+  pass("40 shots still have no picture (washing-up 11, therapy class 26, first raid 1, intake floor 2); the mugging and St Jude's have a study on every shot, reused, and say so");
+}
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
 assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 184 + 132 + 162 + 308 + 161 + 81 + 193 + 262 + 297 + 379 + 271 + 158 + 92 + 153 + 308 + 377 + 367 + 103 * 5);

@@ -483,7 +483,7 @@ const washingUp = washingUpBlocks.map(([, n, rawBody], i) => {
   const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
-  const file = `/images/rapture/ep1-washing-up/${plan.image}`;
+  const file = plan.image.startsWith("../") ? `/images/rapture/${plan.image.slice(3)}` : `/images/rapture/ep1-washing-up/${plan.image}`;   // "../x.jpg": a study from another board folder, reused
   const missing = !existsSync(resolve(root, `public${file}`));
   return {
     id: `rapture-ep1wu-${String(n).padStart(2, "0")}`, sceneId: washingUpSceneId,

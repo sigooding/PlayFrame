@@ -90,10 +90,10 @@ Those four scenes were written after their boards (the boards said so: "referenc
 
 | Scene | Board | Shots | Lines on frames | Pictures |
 | --- | --- | --- | --- | --- |
-| The mugging (`ep1-01`) | `docs/rapture/scenes/ep1-mugging.md` | 15 | 3 on 3 frames | 10 reused from the alley board (same street, cashpoint, woman, knife); shots 9-13 (he isn't there, the knife rings, the tissue...) are placeholder cards |
-| St Jude's (`ep1-02`) | `ep1-st-judes.md` | 22 | 39 on 11 frames | none fits (the old board was a two-hander in another house): all 22 are placeholder cards |
+| The mugging (`ep1-01`) | `docs/rapture/scenes/ep1-mugging.md` | 15 | 3 on 3 frames | all 15 on the alley board's studies (same street, cashpoint, woman, knife); shots 9-13 (he isn't there, the knife rings, the tissue...) took `shot-10`, `09`, `12`, `15` and `17` in the later pass |
+| St Jude's (`ep1-02`) | `ep1-st-judes.md` | 22 | 39 on 11 frames | the old two-hander board's studies do not fit, but the earlier St Jude's reference studies `a1s1-01` to `18` show this house and these beats and are laid on all 22 shots (later pass) |
 | The first cops scene (`ep1-03`) | `ep1-cops-first-beat.md` | 19 | 66 on 10 frames | all 19 legacy car-park keyframes |
-| The washing-up (`ep1-04`) | `ep1-washing-up.md` | 23 | 4 on 4 frames | 7 reused (kitchen, hall, her room, the pendant, the corridor, the road); the rest are placeholder cards |
+| The washing-up (`ep1-04`) | `ep1-washing-up.md` | 23 | 4 on 4 frames | 12 on existing studies (kitchen, hall, her room, the pendant, the corridor, the road, and in the later pass the dining room, the utility room, the office, the corridor clipboard, the kitchen sink); 11 are placeholder cards |
 
 So **165 of episode one's 166 lines are on frames**; the one left is Martin's line in the storage unit (`ep1-06`), a scene whose board has not been rewritten. Placeholder cards are the established "keyframe missing" cards (`Needs review`, the file name to add in the note, the slot held): add the picture at the named path and rebuild. Frames are lengthened, never shortened (the first cops scene grew most: 231 → 262 s, because its dialogue runs longer than its old estimate). `verify:rapture` asserts all of it, including the draft's written holds (four seconds before Kath's first word, eight before "It's what we signed up for"). The pictures themselves are the open work: nothing was drawn.
 

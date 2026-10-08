@@ -1,6 +1,6 @@
 # LET THE RAPTURES COMMENCE
 
-> **Board for the draft.** The screenplay page for this scene is [ep1-02-st-judes-house.md](../screenplay/ep1-02-st-judes-house.md): the ensemble breakfast in the episode-one draft of 21 September 2026, with the rapture landing mid-anecdote on Terry. This board follows it beat for beat. The earlier two-hander board is kept in [archive/ep1-st-judes-two-hander-v1.md](archive/ep1-st-judes-two-hander-v1.md); none of its studies fits this page (a different house, a different cast), so every shot here is a placeholder card until it is drawn.
+> **Board for the draft.** The screenplay page for this scene is [ep1-02-st-judes-house.md](../screenplay/ep1-02-st-judes-house.md): the ensemble breakfast in the episode-one draft of 21 September 2026, with the rapture landing mid-anecdote on Terry. This board follows it beat for beat. The earlier two-hander board is kept in [archive/ep1-st-judes-two-hander-v1.md](archive/ep1-st-judes-two-hander-v1.md); none of its studies fits this page (a different house, a different cast). The 22 shots lie on the earlier St Jude's reference studies `a1s1-01` to `a1s1-18` (`public/images/rapture/`), which show this house and these beats: the nearest existing pictures, not drawn for this board, and each card says so; draw the shots when the pictures are made.
 
 ## EPISODE ONE — ST JUDE'S AND THE RAPTURE
 
