@@ -3491,5 +3491,26 @@
   "flow": "S7eFZW866dnQgWMpXbpE",
   "prompt": "[Earnest] Will you?",
   "duration": 1.12
+ },
+ "S500": {
+  "session": "zf7gTpJB0twBo3yGa9b8",
+  "generation": "RBSPJfE1gUY4QR1mNl0W",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Brian's not coming.",
+  "duration": 1.36
+ },
+ "S501": {
+  "session": "lVLXIs68iEpxZn4i5poK",
+  "generation": "kx3Vv5XmYhWwFEi2QqNs",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant] Why not?",
+  "duration": 1.36
+ },
+ "S502": {
+  "session": "fBi1PGB8cUACXkgy44wR",
+  "generation": "HdBotHhibT8yaW0XOQNR",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] He went out Tuesday.",
+  "duration": 1.44
  }
 }
