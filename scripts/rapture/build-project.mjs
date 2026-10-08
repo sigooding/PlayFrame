@@ -634,11 +634,14 @@ const copsSecondBeatFrames = copsSecondBeatBlocks.map(([, n, rawBody], i) => {
 const copsSecondBeatTotal = copsSecondBeatFrames.reduce((n, f) => n + f.duration, 0);
 
 const muggingBlocks = [...muggingScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(muggingBlocks.length, 19, "Mugging screenplay source must have 19 numbered shots");
-assert.equal(muggingPlan.length, 19, "Mugging plan must cover all 19 shots");
+assert.equal(muggingBlocks.length, 15, "Mugging board must have 15 numbered shots");
+assert.equal(muggingPlan.length, 15, "Mugging plan must cover all 15 shots");
+const muggingDialogue = dialogueFor("ep1-01", muggingBlocks.map(([, , body]) => body), voiceManifest);
 const muggingFrames = muggingBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Mugging shot order must be contiguous");
   const plan = muggingPlan[i];
+  const dialogue = muggingDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/${plan.image}`;
@@ -650,21 +653,25 @@ const muggingFrames = muggingBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
     angle: "Eye level", lighting: plan.lighting,
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Flat, deadpan, the camera keeps operating; the violence is texture",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${muggingPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: legacy reference keyframe; review against the current grammar before production.\n\n"}${muggingGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${muggingPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\n"}${muggingGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked.")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
 const muggingTotal = muggingFrames.reduce((n, f) => n + f.duration, 0);
 
 const stJudesBlocks = [...stJudesScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(stJudesBlocks.length, 19, "St Jude's screenplay source must have 19 numbered shots");
-assert.equal(stJudesPlan.length, 19, "St Jude's plan must cover all 19 shots");
+assert.equal(stJudesBlocks.length, 22, "St Jude's board must have 22 numbered shots");
+assert.equal(stJudesPlan.length, 22, "St Jude's plan must cover all 22 shots");
+const stJudesDialogue = dialogueFor("ep1-02", stJudesBlocks.map(([, , body]) => body), voiceManifest);
 const stJudesFrames = stJudesBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "St Jude's shot order must be contiguous");
   const plan = stJudesPlan[i];
+  const dialogue = stJudesDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/${plan.image}`;
@@ -676,11 +683,12 @@ const stJudesFrames = stJudesBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
     angle: "Eye level", lighting: plan.lighting,
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Dry, procedural, never amazed or afraid; the rapture is texture",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${stJudesPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: legacy reference keyframe; review against the current grammar before production.\n\n"}${stJudesGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${stJudesPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${stJudesGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked.")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
 const stJudesTotal = stJudesFrames.reduce((n, f) => n + f.duration, 0);
@@ -711,13 +719,13 @@ const copsSecondBeatScene = {
 };
 const muggingScene = {
   id: muggingSceneId, title: "The mugging", location: "EXT. SIDE STREET", time: "EARLY MORNING",
-  description: "Cold open, written in the episode-one draft of 21 September 2026: still dark, sodium light, a cashpoint glowing to itself. She hands the bag over the way you'd hand over a bus pass and he isn't there mid-reach. The knife drops, rings, lies still; she looks up, is embarrassed to have done it, and bags the knife in a tissue. It starts its journey through her handbag and the support group. No mechanism revealed, no cast assigned. The nineteen-shot alley board is superseded by this page and has not been re-boarded.",
+  description: "Cold open, written in the episode-one draft of 21 September 2026: still dark, sodium light, a cashpoint glowing to itself. She hands the bag over the way you'd hand over a bus pass and he isn't there mid-reach. The knife drops, rings, lies still; she looks up, is embarrassed to have done it, and bags the knife in a tissue. It starts its journey through her handbag and the support group. No mechanism revealed, no cast assigned. Boarded in fifteen shots beat for beat from this page; the earlier nineteen-shot alley board is archived and eight of its studies are reused where the picture fits, the rest are placeholder cards.",
   characters: [], actId: "rapture-episode-1",
   kind: "Cold open", lighting: "Practical night", lightingNotes: muggingGrammar, style: "cinematic",
 };
 const stJudesScene = {
   id: stJudesSceneId, title: "St Jude's and the rapture", location: "INT./EXT. ST JUDE'S HOUSE", time: "MORNING",
-  description: "Written in the episode-one draft: pebbledash, a wheelie bin on its side, and a sign that means Terry personally. The charger, four weeks Thursday, fourteen on the phone and twenty-two in the ledger, the upstairs bins already done, forty minutes of water pressure timed, and Maureen's hypothetical. Then twenty residents at breakfast and the rapture mid-anecdote — no flash, no sound, no score, the radio carries on and the dog stays under the table. All that food. The nineteen-shot board predates this page and has not been re-boarded.",
+  description: "Written in the episode-one draft: pebbledash, a wheelie bin on its side, and a sign that means Terry personally. The charger, four weeks Thursday, fourteen on the phone and twenty-two in the ledger, the upstairs bins already done, forty minutes of water pressure timed, and Maureen's hypothetical. Then twenty residents at breakfast and the rapture mid-anecdote — no flash, no sound, no score, the radio carries on and the dog stays under the table. All that food. Boarded in twenty-two shots beat for beat from this page; the earlier two-hander board is archived and none of its studies fits, so every card is a placeholder until drawn.",
   characters: ["nina", "brian", "terry", "col", "deborah", "maureen"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: stJudesGrammar, style: "cinematic",
 };
