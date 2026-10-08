@@ -15,7 +15,7 @@ Shots 233 and 264 are **16:9, 1920×1080, full-bleed**, numbered in boarding ord
 
 233. MEDIUM — 35mm, static, low level — behind the counter.
 Late, no customers, the CRT dark: Jack slides the cracked cassette case across the counter and Okada lifts the cash drawer's tray to put the tape underneath — behind the counter, like the girl's clip.
-SCRIPT: "Behind the counter. Like the girl's clip."
+SCRIPT: "Jack slides the cassette case across the counter."
 CAST: Jack, Okada
 LIGHT: Practical night
 TIME: 12
@@ -27,7 +27,7 @@ NOTE: The clip Okada names is the red bird clip of shot 194; the tape returns in
 
 264. INSERT — 50mm, static, high angle — the cassette.
 Okada's hand slides the cracked cassette into the drawer under the counter. The label is the Shiohama tape. The bar is empty. The CRT is off.
-SCRIPT: "Behind the counter. Like the girl's clip."
+SCRIPT: "Then he takes it, lifts the lid of the old cash drawer, removes the tray, and puts the tape underneath."
 CAST: Okada
 LIGHT: Practical night
 TIME: 4

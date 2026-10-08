@@ -39,7 +39,7 @@ NOTE: Coverage, shot 261, the corridor angle shot 179's note asked for. Retaken 
 
 268. WIDE — 35mm, static, eye level — same wood.
 A narrow upstairs corridor of wood doors and wood panel, cold blue. Paper panels on the doors are torn in a line of holes. Jack walks away from camera. No one else.
-SCRIPT: "The paper screens along one wall burst apart in a line of holes."
+SCRIPT: "Jack is already through the bathroom door."
 CAST: Jack
 LIGHT: Low key
 TIME: 5
