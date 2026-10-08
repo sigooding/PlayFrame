@@ -478,5 +478,41 @@
   "generation": "6XVYgmhROoSMHblkgc6L",
   "flow": "ZP4ByZuSmCPZ2E7b8XKB",
   "long": true
+ },
+ "pen-clipboard--v3": {
+  "prompt": "A pen scratching quickly on paper on a clipboard, three short bursts of writing then a firm tap of the pen, loud, close-mic, dry, no room, no voice",
+  "duration": 4,
+  "session": "Za61GvY2u1ngUIw20r2y",
+  "generation": "tBdrWFTItYYohXIE049L",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true,
+  "retake": "first two takes were near-silent (peak -30 and -17 dB); re-prompted louder and closer"
+ },
+ "pen-clipboard--v4": {
+  "prompt": "A pen scratching quickly on paper on a clipboard, three short bursts of writing then a firm tap of the pen, loud, close-mic, dry, no room, no voice",
+  "duration": 4,
+  "session": "gkwmEXaM5KHiMFUQqHFi",
+  "generation": "DpLLW2SPQ5K9MYErMVcS",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true,
+  "retake": "first two takes were near-silent (peak -30 and -17 dB); re-prompted louder and closer"
+ },
+ "footsteps-wet--v3": {
+  "prompt": "Slow footsteps of one person in shoes walking on wet pavement, each step a distinct wet slap with a small splash, clear and close, steady pace, no voice, no music, no traffic",
+  "duration": 5,
+  "session": "1ZtfdzllBo0HPJCkflRL",
+  "generation": "08hjMX7tt5UCx0Vstylo",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true,
+  "retake": "first two takes were near-silent (peak -30 and -17 dB); re-prompted louder and closer"
+ },
+ "footsteps-wet--v4": {
+  "prompt": "Slow footsteps of one person in shoes walking on wet pavement, each step a distinct wet slap with a small splash, clear and close, steady pace, no voice, no music, no traffic",
+  "duration": 5,
+  "session": "KExDBalKuLJlJ4gi3FN3",
+  "generation": "mTxsjOFgxTcxL3TLUprC",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true,
+  "retake": "first two takes were near-silent (peak -30 and -17 dB); re-prompted louder and closer"
  }
 }

@@ -16,6 +16,8 @@
     "verify:hangar": "node scripts/verify-hangar.mjs",
     "export:episode": "node scripts/export-episode.mjs",
     "verify:rapture": "node scripts/verify-rapture.mjs",
+    "build:sfx": "node scripts/sfx/build-library.mjs",
+    "verify:sfx": "node scripts/verify-sfx.mjs",
     "verify:rapture:browser": "node scripts/verify-rapture-browser.mjs",
     "build:neonoire": "node scripts/neonoire/build-project.mjs",
     "split:neonoire": "node scripts/neonoire/split-opening.mjs",
