@@ -1,0 +1,62 @@
+{
+ "S255--alt1": {
+  "session": "vFsotfxGPU2n2HpBpCTy",
+  "generation": "NZ4Um7hWNEEJNq6ou9LI",
+  "prompt": "[Tired] Why not?",
+  "duration": 1.52
+ },
+ "S255--alt2": {
+  "session": "70AokRYoQCwKzJBjJGN2",
+  "generation": "klpBRtPRYt0pWt8D6KxK",
+  "prompt": "[Tired] Why not?",
+  "duration": 1.44
+ },
+ "S337--alt1": {
+  "session": "VhptxRXapOE7leo8VEol",
+  "generation": "n9RvGFlRFTwo0KrWFQnu",
+  "prompt": "[Tired] Right.",
+  "duration": 1.28
+ },
+ "S337--alt2": {
+  "session": "WQjb5T52GCIzWhn5b4aY",
+  "generation": "eO1QD6f5ZD0RaDuynOgb",
+  "prompt": "[Tired] Right.",
+  "duration": 1.2
+ },
+ "S385--alt1": {
+  "session": "ZpzLsapFdD0qfNQVur1s",
+  "generation": "9b8jYTFPu9RcVcKIOIKw",
+  "prompt": "[Hissing] Shh.",
+  "duration": 2
+ },
+ "S385--alt2": {
+  "session": "lsKCkt8FSjl9bgJ6IfUr",
+  "generation": "RVQOdIIaV99dR1HgkGbA",
+  "prompt": "[Hissing] Shh.",
+  "duration": 1.28
+ },
+ "S412--alt1": {
+  "session": "vHEDosUt9BuwiQpqaAHJ",
+  "generation": "7iWRCCqTK4gudT6j5vAG",
+  "prompt": "[Dry] They do.",
+  "duration": 1.2
+ },
+ "S412--alt2": {
+  "session": "2c0H3F55W5lBzf6q7yXX",
+  "generation": "TutgeY2CLlhzjZXXac9U",
+  "prompt": "[Dry] They do.",
+  "duration": 1.28
+ },
+ "S444--alt1": {
+  "session": "5eedUZbhl1osLvvPI1zI",
+  "generation": "8RDvoiUfsZrOG4ZXoUbt",
+  "prompt": "[Brisk] Who's Linda?",
+  "duration": 1.04
+ },
+ "S444--alt2": {
+  "session": "wNEFGiNGdk0cReZkpnMp",
+  "generation": "4PAoNxPWe8PcP2DmloVG",
+  "prompt": "[Brisk] Who's Linda?",
+  "duration": 1.04
+ }
+}
