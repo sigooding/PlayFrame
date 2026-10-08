@@ -686,7 +686,29 @@
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "STATIC WIDE — 28mm, locked off. Still dark. Sodium light. Bins. A cashpoint glowing to itself. Traffic somewhere else. Hold. Five seconds. (Study reused from the alley board: same street, same cashpoint.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 28mm, locked off\nStill dark. Sodium light. Bins. A cashpoint glowing to itself. Traffic somewhere else. The street is empty.\nHold. Five seconds."
+      "notes": "STATIC WIDE — 28mm, locked off. Still dark. Sodium light. Bins. A cashpoint glowing to itself. Traffic somewhere else. Hold. Five seconds. (Study reused from the alley board: same street, same cashpoint.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC WIDE — 28mm, locked off\nStill dark. Sodium light. Bins. A cashpoint glowing to itself. Traffic somewhere else. The street is empty.\nHold. Five seconds.",
+      "audio": [
+        {
+          "id": "sfx-ep1mug-01-cashpoint-hum",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cashpoint-hum.mp3",
+          "offset": 0,
+          "duration": 10,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-ep1mug-01-traffic-distant",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/traffic-distant.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1mug-02",
@@ -882,7 +904,19 @@
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/09-he-isn-t-there.jpg is not in public/images/rapture, so this card holds slot 9 of 15. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, as 1. And he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC WIDE — 28mm, locked off, as 1\nAnd he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out."
+      "notes": "KEYFRAME MISSING — ep1-mugging/09-he-isn-t-there.jpg is not in public/images/rapture, so this card holds slot 9 of 15. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, as 1. And he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC WIDE — 28mm, locked off, as 1\nAnd he isn't there. No flash. No sound. The traffic in the next street carries on. The old woman stands alone in the frame, her arm out.",
+      "audio": [
+        {
+          "id": "sfx-ep1mug-09-traffic-distant",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/traffic-distant.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1mug-10",
@@ -902,7 +936,19 @@
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-mugging/10-the-knife-rings.jpg is not in public/images/rapture, so this card holds slot 10 of 15. Add the study and rebuild.\n\nINSERT — 85mm, low, static. The knife drops. Hits the pavement. Rings. Lies still.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. INSERT — 85mm, low, static\nThe knife drops. Hits the pavement. Rings. Lies still."
+      "notes": "KEYFRAME MISSING — ep1-mugging/10-the-knife-rings.jpg is not in public/images/rapture, so this card holds slot 10 of 15. Add the study and rebuild.\n\nINSERT — 85mm, low, static. The knife drops. Hits the pavement. Rings. Lies still.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. INSERT — 85mm, low, static\nThe knife drops. Hits the pavement. Rings. Lies still.",
+      "audio": [
+        {
+          "id": "sfx-ep1mug-10-knife-ring",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/knife-ring.mp3",
+          "offset": 0.4,
+          "duration": 2.48,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1mug-11",
@@ -982,7 +1028,19 @@
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "STATIC WIDE — 28mm, locked off. She walks on at her own pace. (Study reused: she walks away from camera.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC WIDE — 28mm, locked off\nShe walks on at her own pace."
+      "notes": "STATIC WIDE — 28mm, locked off. She walks on at her own pace. (Study reused: she walks away from camera.)\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 7s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. STATIC WIDE — 28mm, locked off\nShe walks on at her own pace.",
+      "audio": [
+        {
+          "id": "sfx-ep1mug-14-traffic-distant",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/traffic-distant.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1mug-15",
@@ -1002,7 +1060,29 @@
       "transition": "Cut",
       "mood": "Flat, deadpan, the camera keeps operating; the violence is texture",
       "characters": [],
-      "notes": "STATIC WIDE — 28mm, locked off, as 1. The street, empty, lit orange. Title card: LET THE RAPTURES COMMENCE. Hold.\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC WIDE — 28mm, locked off, as 1\nThe street, empty, lit orange. Title card: LET THE RAPTURES COMMENCE.\nHold."
+      "notes": "STATIC WIDE — 28mm, locked off, as 1. The street, empty, lit orange. Title card: LET THE RAPTURES COMMENCE. Hold.\n\nImage: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\nStatic, locked off. Sodium streetlight and shopfront spill. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound, no score, no reaction cut. Dry, deadpan British black comedy — the mugging is treated with exactly the same flatness as everything else in the series.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n15. STATIC WIDE — 28mm, locked off, as 1\nThe street, empty, lit orange. Title card: LET THE RAPTURES COMMENCE.\nHold.",
+      "audio": [
+        {
+          "id": "sfx-ep1mug-15-cashpoint-hum",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cashpoint-hum.mp3",
+          "offset": 0,
+          "duration": 10,
+          "gain": 0.25,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-ep1mug-15-traffic-distant",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/traffic-distant.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.25,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-01",
@@ -1304,6 +1384,16 @@
       ],
       "audio": [
         {
+          "id": "sfx-ep1stj-07-fax-machine",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/fax-machine.mp3",
+          "offset": 0.4,
+          "duration": 8,
+          "gain": 0.45,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
           "id": "ep1-02-nina-fourteen-no-fourteen-then-your-records",
           "character": "NINA",
           "text": "Fourteen. ... No, fourteen. ... Then your records are wrong, love. ... Mm. ... Send someone. Tuesday's no good.",
@@ -1336,7 +1426,19 @@
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/08-twenty-two.jpg is not in public/images/rapture, so this card holds slot 8 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, on the ledger. She hangs up and writes 22 in a ledger without pausing.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. INSERT — 85mm, static, on the ledger\nShe hangs up and writes 22 in a ledger without pausing."
+      "notes": "KEYFRAME MISSING — ep1-st-judes/08-twenty-two.jpg is not in public/images/rapture, so this card holds slot 8 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, on the ledger. She hangs up and writes 22 in a ledger without pausing.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. INSERT — 85mm, static, on the ledger\nShe hangs up and writes 22 in a ledger without pausing.",
+      "audio": [
+        {
+          "id": "sfx-ep1stj-08-pen-clipboard",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/pen-clipboard.mp3",
+          "offset": 0.3,
+          "duration": 4,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-09",
@@ -1549,7 +1651,19 @@
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/12-the-tap-coughs.jpg is not in public/images/rapture, so this card holds slot 12 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, the tap. Behind them the tap coughs air. Water. Nothing. Water.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. INSERT — 85mm, static, the tap\nBehind them the tap coughs air. Water. Nothing. Water."
+      "notes": "KEYFRAME MISSING — ep1-st-judes/12-the-tap-coughs.jpg is not in public/images/rapture, so this card holds slot 12 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, the tap. Behind them the tap coughs air. Water. Nothing. Water.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. INSERT — 85mm, static, the tap\nBehind them the tap coughs air. Water. Nothing. Water.",
+      "audio": [
+        {
+          "id": "sfx-ep1stj-12-tap-cough",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/tap-cough.mp3",
+          "offset": 0,
+          "duration": 5,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-13",
@@ -1572,7 +1686,19 @@
         "rapture-nina",
         "rapture-maureen"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/13-twenty-residents.jpg is not in public/images/rapture, so this card holds slot 13 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS. A long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS\nA long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning."
+      "notes": "KEYFRAME MISSING — ep1-st-judes/13-twenty-residents.jpg is not in public/images/rapture, so this card holds slot 13 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS. A long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC WIDE — 28mm, locked off — INT. DINING ROOM — CONTINUOUS\nA long table. Twenty residents. Toast, tea, a dog under the table, a local radio station going in the kitchen next door. Genuine bedlam. Nina finally sits. Maureen (40s) has been waiting for this moment all morning.",
+      "audio": [
+        {
+          "id": "sfx-ep1stj-13-radio-jingle",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/radio-jingle.mp3",
+          "offset": 0,
+          "duration": 6,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-14",
@@ -1779,7 +1905,19 @@
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/17-nothing.jpg is not in public/images/rapture, so this card holds slot 17 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, as 15. Nothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. STATIC WIDE — 28mm, locked off, as 16\nNothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table."
+      "notes": "KEYFRAME MISSING — ep1-st-judes/17-nothing.jpg is not in public/images/rapture, so this card holds slot 17 of 22. Add the study and rebuild.\n\nSTATIC WIDE — 28mm, locked off, as 15. Nothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n17. STATIC WIDE — 28mm, locked off, as 16\nNothing. The table is empty. Twenty chairs pushed back. Full plates. A knife spinning slowly on a plate rim. No flash. No sound. The radio carries on in the kitchen. The dog is still under the table.",
+      "audio": [
+        {
+          "id": "sfx-ep1stj-17-radio-jingle",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/radio-jingle.mp3",
+          "offset": 0,
+          "duration": 6,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-18",
@@ -1799,7 +1937,19 @@
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/18-the-knife-spins.jpg is not in public/images/rapture, so this card holds slot 18 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, the plate rim. A knife spinning slowly on a plate rim.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. INSERT — 85mm, static, the plate rim\nA knife spinning slowly on a plate rim."
+      "notes": "KEYFRAME MISSING — ep1-st-judes/18-the-knife-spins.jpg is not in public/images/rapture, so this card holds slot 18 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, the plate rim. A knife spinning slowly on a plate rim.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n18. INSERT — 85mm, static, the plate rim\nA knife spinning slowly on a plate rim.",
+      "audio": [
+        {
+          "id": "sfx-ep1stj-18-knife-ring",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/knife-ring.mp3",
+          "offset": 0.2,
+          "duration": 2.48,
+          "gain": 0.5,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-19",
@@ -1841,7 +1991,19 @@
       "transition": "Cut",
       "mood": "Dry, procedural, never amazed or afraid; the rapture is texture",
       "characters": [],
-      "notes": "KEYFRAME MISSING — ep1-st-judes/20-the-cup-settles.jpg is not in public/images/rapture, so this card holds slot 20 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, a cup and saucer. A cup rocks on its saucer. Settles.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. INSERT — 85mm, static, a cup and saucer\nA cup rocks on its saucer. Settles."
+      "notes": "KEYFRAME MISSING — ep1-st-judes/20-the-cup-settles.jpg is not in public/images/rapture, so this card holds slot 20 of 22. Add the study and rebuild.\n\nINSERT — 85mm, static, a cup and saucer. A cup rocks on its saucer. Settles.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina; she walks into frames and out of them. Long lenses for the road. Only the vision breaks the grammar. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid. The rapture happens with no flash, no sound, no score — the camera keeps operating as though the subject has merely walked out of frame.\n\nTiming: 4s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. INSERT — 85mm, static, a cup and saucer\nA cup rocks on its saucer. Settles.",
+      "audio": [
+        {
+          "id": "sfx-ep1stj-20-cup-rattle",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cup-rattle.mp3",
+          "offset": 0.2,
+          "duration": 4,
+          "gain": 0.8,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1stj-21",
@@ -2022,7 +2184,19 @@
       "transition": "Cut",
       "mood": "Dry, deadpan; the violence is a form",
       "characters": [],
-      "notes": "STATIC WIDE — 35mm, locked off, across the car park — EXT. SUPERMARKET CAR PARK — CONTINUOUS. The car, alone, across two bays in a hundred empty spaces.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 35mm, locked off, across the car park — EXT. SUPERMARKET CAR PARK — CONTINUOUS\nThe car, alone, across two bays in a hundred empty spaces."
+      "notes": "STATIC WIDE — 35mm, locked off, across the car park — EXT. SUPERMARKET CAR PARK — CONTINUOUS. The car, alone, across two bays in a hundred empty spaces.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 35mm, locked off, across the car park — EXT. SUPERMARKET CAR PARK — CONTINUOUS\nThe car, alone, across two bays in a hundred empty spaces.",
+      "audio": [
+        {
+          "id": "sfx-ep1c1-02-traffic-distant",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/traffic-distant.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c1-03",
@@ -2292,7 +2466,19 @@
       "transition": "Cut",
       "mood": "Dry, deadpan; the violence is a form",
       "characters": [],
-      "notes": "STATIC WIDE — 35mm, locked off, across the car park. Outside, a shopping trolley rolls slowly across the car park on its own. Neither of them looks at it.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC WIDE — 35mm, locked off, across the car park\nOutside, a shopping trolley rolls slowly across the car park on its own. Neither of them looks at it."
+      "notes": "STATIC WIDE — 35mm, locked off, across the car park. Outside, a shopping trolley rolls slowly across the car park on its own. Neither of them looks at it.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC WIDE — 35mm, locked off, across the car park\nOutside, a shopping trolley rolls slowly across the car park on its own. Neither of them looks at it.",
+      "audio": [
+        {
+          "id": "sfx-ep1c1-06-trolley-roll",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/trolley-roll.mp3",
+          "offset": 0.3,
+          "duration": 5,
+          "gain": 0.6,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c1-07",
@@ -2427,7 +2613,19 @@
       "transition": "Cut",
       "mood": "Dry, deadpan; the violence is a form",
       "characters": [],
-      "notes": "STATIC WIDE — 35mm, locked off — EXT. SUPERMARKET — CONTINUOUS. The glass doors are already smashed. A man in a blue coat (30s, black, thin) walks up. Looks around. Sees the police car. Considers it. Decides, correctly, that it doesn't matter any more. Goes in.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. STATIC WIDE — 35mm, locked off — EXT. SUPERMARKET — CONTINUOUS\nThe glass doors are already smashed. A man in a blue coat (30s, black, thin) walks up. Looks around. Sees the police car. Considers it. Decides, correctly, that it doesn't matter any more. Goes in."
+      "notes": "STATIC WIDE — 35mm, locked off — EXT. SUPERMARKET — CONTINUOUS. The glass doors are already smashed. A man in a blue coat (30s, black, thin) walks up. Looks around. Sees the police car. Considers it. Decides, correctly, that it doesn't matter any more. Goes in.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n8. STATIC WIDE — 35mm, locked off — EXT. SUPERMARKET — CONTINUOUS\nThe glass doors are already smashed. A man in a blue coat (30s, black, thin) walks up. Looks around. Sees the police car. Considers it. Decides, correctly, that it doesn't matter any more. Goes in.",
+      "audio": [
+        {
+          "id": "sfx-ep1c1-08-glass-crunch-steps",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/glass-crunch-steps.mp3",
+          "offset": 1.5,
+          "duration": 4,
+          "gain": 0.5,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c1-09",
@@ -2552,7 +2750,19 @@
       "transition": "Cut",
       "mood": "Dry, deadpan; the violence is a form",
       "characters": [],
-      "notes": "STATIC MEDIUM — 35mm, locked off, through the shop glass. Through the glass: the man loading a trolley with slabs of bottled water. Methodical. A great deal of it.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC MEDIUM — 35mm, locked off, through the shop glass\nThrough the glass: the man loading a trolley with slabs of bottled water. Methodical. A great deal of it."
+      "notes": "STATIC MEDIUM — 35mm, locked off, through the shop glass. Through the glass: the man loading a trolley with slabs of bottled water. Methodical. A great deal of it.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. STATIC MEDIUM — 35mm, locked off, through the shop glass\nThrough the glass: the man loading a trolley with slabs of bottled water. Methodical. A great deal of it.",
+      "audio": [
+        {
+          "id": "sfx-ep1c1-10-hangar-room-tone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/hangar-room-tone.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c1-11",
@@ -2682,6 +2892,16 @@
       ],
       "audio": [
         {
+          "id": "sfx-ep1c1-12-car-doors-open",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/car-doors-open.mp3",
+          "offset": 0.1,
+          "duration": 2,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
           "id": "ep1-03-ray-police-stay-where-you-are",
           "character": "RAY",
           "text": "Police! Stay where you are!",
@@ -2715,7 +2935,19 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "HANDHELD — 35mm — the violence. The man tries to run. He gets about four feet, because he's pushing a quarter of a tonne of water. He's already stopping, hands coming up —\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. HANDHELD — 35mm — the violence\nThe man tries to run. He gets about four feet, because he's pushing a quarter of a tonne of water. He's already stopping, hands coming up —"
+      "notes": "HANDHELD — 35mm — the violence. The man tries to run. He gets about four feet, because he's pushing a quarter of a tonne of water. He's already stopping, hands coming up —\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. HANDHELD — 35mm — the violence\nThe man tries to run. He gets about four feet, because he's pushing a quarter of a tonne of water. He's already stopping, hands coming up —",
+      "audio": [
+        {
+          "id": "sfx-ep1c1-13-trolley-roll",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/trolley-roll.mp3",
+          "offset": 0,
+          "duration": 5,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c1-14",
@@ -2738,7 +2970,38 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "HANDHELD — 35mm. Kath fires the taser anyway. He goes down rigid. The trolley goes with him. Slabs of water burst across the tarmac.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD — 35mm\nKath fires the taser anyway.\nHe goes down rigid. The trolley goes with him. Slabs of water burst across the tarmac."
+      "notes": "HANDHELD — 35mm. Kath fires the taser anyway. He goes down rigid. The trolley goes with him. Slabs of water burst across the tarmac.\n\nImage: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n14. HANDHELD — 35mm\nKath fires the taser anyway.\nHe goes down rigid. The trolley goes with him. Slabs of water burst across the tarmac.",
+      "audio": [
+        {
+          "id": "sfx-ep1c1-14-taser-zap",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/taser-zap.mp3",
+          "offset": 0.4,
+          "duration": 2.48,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-ep1c1-14-body-fall",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/neonoire/sfx/body-fall.mp3",
+          "offset": 2.3,
+          "duration": 1.3,
+          "gain": 0.6
+        },
+        {
+          "id": "sfx-ep1c1-14-water-bottles-burst",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/water-bottles-burst.mp3",
+          "offset": 2.5,
+          "duration": 4,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c1-15",
@@ -3216,7 +3479,19 @@
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 09-dial-tone.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 9 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER. She picks up the landline. Dial tone. Dials three digits. Listens. Nothing. Puts it down. Picks it up. Same. Puts it down.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER\nShe picks up the landline. Dial tone. Dials three digits. Listens. Nothing.\nPuts it down. Picks it up. Same. Puts it down."
+      "notes": "KEYFRAME MISSING — 09-dial-tone.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 9 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER. She picks up the landline. Dial tone. Dials three digits. Listens. Nothing. Puts it down. Picks it up. Same. Puts it down.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. STATIC MEDIUM — 50mm, locked off — INT. OFFICE — LATER\nShe picks up the landline. Dial tone. Dials three digits. Listens. Nothing.\nPuts it down. Picks it up. Same. Puts it down.",
+      "audio": [
+        {
+          "id": "sfx-ep1wu-09-landline-dead",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/landline-dead.mp3",
+          "offset": 0.2,
+          "duration": 6,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1wu-10",
@@ -3302,7 +3577,19 @@
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 13-it-catches.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 13 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, through the windscreen. She drops the bonnet, wipes her hands on a rag, gets in. Turns the key. Nothing. Turns it again. It catches. No reaction whatsoever.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC MEDIUM — 50mm, locked off, through the windscreen\nShe drops the bonnet, wipes her hands on a rag, gets in. Turns the key. Nothing. Turns it again. It catches.\nNo reaction whatsoever."
+      "notes": "KEYFRAME MISSING — 13-it-catches.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 13 of 23. Add the study and rebuild.\n\nSTATIC MEDIUM — 50mm, locked off, through the windscreen. She drops the bonnet, wipes her hands on a rag, gets in. Turns the key. Nothing. Turns it again. It catches. No reaction whatsoever.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n13. STATIC MEDIUM — 50mm, locked off, through the windscreen\nShe drops the bonnet, wipes her hands on a rag, gets in. Turns the key. Nothing. Turns it again. It catches.\nNo reaction whatsoever.",
+      "audio": [
+        {
+          "id": "sfx-ep1wu-13-engine-start-old",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/engine-start-old.mp3",
+          "offset": 0.3,
+          "duration": 8,
+          "gain": 0.8,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1wu-14",
@@ -3502,7 +3789,19 @@
       "characters": [
         "rapture-nina"
       ],
-      "notes": "KEYFRAME MISSING — 21-loading-the-bus.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 21 of 23. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off — EXT. YARD — LATER. She loads the bus. Water first. The dog gets in without being invited. She locks the front door. Tries the handle. Tries it again.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. STATIC WIDE — 35mm, locked off — EXT. YARD — LATER\nShe loads the bus. Water first. The dog gets in without being invited.\nShe locks the front door. Tries the handle. Tries it again."
+      "notes": "KEYFRAME MISSING — 21-loading-the-bus.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 21 of 23. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off — EXT. YARD — LATER. She loads the bus. Water first. The dog gets in without being invited. She locks the front door. Tries the handle. Tries it again.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n21. STATIC WIDE — 35mm, locked off — EXT. YARD — LATER\nShe loads the bus. Water first. The dog gets in without being invited.\nShe locks the front door. Tries the handle. Tries it again.",
+      "audio": [
+        {
+          "id": "sfx-ep1wu-21-door-lock-handle",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/door-lock-handle.mp3",
+          "offset": 3,
+          "duration": 5,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1wu-22",
@@ -3522,7 +3821,19 @@
       "transition": "Cut",
       "mood": "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
       "characters": [],
-      "notes": "KEYFRAME MISSING — 22-full-of-nothing.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 22 of 23. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off, the lane. The bus pulls out and away down the lane. The house sits behind it, sunlit, full of nothing.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. STATIC WIDE — 35mm, locked off, the lane\nThe bus pulls out and away down the lane. The house sits behind it, sunlit, full of nothing."
+      "notes": "KEYFRAME MISSING — 22-full-of-nothing.jpg is not in public/images/rapture/ep1-washing-up, so this card holds slot 22 of 23. Add the study and rebuild.\n\nSTATIC WIDE — 35mm, locked off, the lane. The bus pulls out and away down the lane. The house sits behind it, sunlit, full of nothing.\n\nLocked off, wide, deep focus, daylight, symmetrical. The camera never follows Nina. Long lenses for the road. Only the vision is handheld. Dry and procedural; Nina is unimpressed throughout, never amazed or afraid.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n22. STATIC WIDE — 35mm, locked off, the lane\nThe bus pulls out and away down the lane. The house sits behind it, sunlit, full of nothing.",
+      "audio": [
+        {
+          "id": "sfx-ep1wu-22-gravel-tyres",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/gravel-tyres.mp3",
+          "offset": 0.3,
+          "duration": 6,
+          "gain": 0.6,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1wu-23",
@@ -5010,7 +5321,19 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "STATIC WIDE — 24mm, exterior, from across the road. The car, alone, parked across two bays in an empty street. Interior light on.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 24mm, exterior, from across the road\nThe car, alone, parked across two bays in an empty street. Interior light on."
+      "notes": "STATIC WIDE — 24mm, exterior, from across the road. The car, alone, parked across two bays in an empty street. Interior light on.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 24mm, exterior, from across the road\nThe car, alone, parked across two bays in an empty street. Interior light on.",
+      "audio": [
+        {
+          "id": "sfx-ep1c2-02-traffic-distant",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/traffic-distant.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "rapture-ep1c2-03",
