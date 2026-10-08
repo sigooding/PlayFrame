@@ -2723,11 +2723,21 @@
   "duration": 5.76
  },
  "S385": {
-  "session": "0uCPOzYvqOAg5mzLXmPw",
-  "generation": "FT8y6wkOLnPcYLRU6HXQ",
-  "flow": "S7eFZW866dnQgWMpXbpE",
+  "session": "lsKCkt8FSjl9bgJ6IfUr",
+  "generation": "RVQOdIIaV99dR1HgkGbA",
   "prompt": "[Hissing] Shh.",
-  "duration": 2.08
+  "duration": 1.28,
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "rerecorded": {
+   "was": {
+    "session": "0uCPOzYvqOAg5mzLXmPw",
+    "generation": "FT8y6wkOLnPcYLRU6HXQ",
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "prompt": "[Hissing] Shh.",
+    "duration": 2.08
+   },
+   "why": "first take 2.08 s, screened as a repeat (2 phrases for 1); the second alternate is 1.28 s and clean"
+  }
  },
  "S386": {
   "session": "GBhHvxaM5xdHgR0VZuh7",
