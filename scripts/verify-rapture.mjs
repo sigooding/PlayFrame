@@ -40,7 +40,7 @@ pass(`the bundled series fits the app's ceilings (${project.frames.length}/${MAX
 assert(isUuid(project.id));
 assert.equal(project.acts.length, 8);
 assert.equal(project.characters.length, 27, "22 series cast plus Brian, Terry, Col, Deborah and Maureen from the episode-one draft");
-assert.equal(project.frames.length, 526, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 24 kitchen from the retained episode-four Nina thread (22a terminal into bus), plus 19 mugging, 19 St Jude's, 21 Danny and Jodie, 6 cops second beat and 26 washing up FIX 4 in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 122 legacy slots (119 keyframes, 3 missing)");
+assert.equal(project.frames.length, 522, "13 Number Fourteen plus 31 lockup plus 17 interview, 15 angel, 16 Pat cold open dusk, 35 Pat house, 17 scout-hut, 36 housing estate, 32 doorstep and 24 kitchen from the retained episode-four Nina thread (22a terminal into bus), plus 19 mugging, 19 St Jude's, 21 Danny and Jodie, 6 cops second beat, 19 cops first beat and 23 washing up in episode one, plus 26 therapy class and 51 Night at Pat's in episode five, plus 103 legacy slots (100 keyframes, 3 missing)");
 assert.equal(project.scenes.length, 42);
 assert.equal(project.moodboards.length, 16);
 const ep4 = project.frames.filter(f => f.sceneId === "rapture-ep4-number-fourteen");
@@ -57,7 +57,7 @@ const legacy = project.frames.filter(f => f.id.startsWith("rapture-board-"));
 assert.equal(ep4.length, 13);
 assert.equal(coldOpen.length, 17);
 assert.equal(lockup.length, 31);
-assert.equal(legacy.length, 122);
+assert.equal(legacy.length, 103);
 // Five starters since NEONOIRE joined the samples; the first four and their order must not change.
 assert.equal(starterProjects.length, 5);
 assert.equal(starterProjects.filter(p => p.id === project.id).length, 1);
@@ -67,7 +67,7 @@ validatePatch(project);
 const imported = sanitizeImport(JSON.parse(JSON.stringify(project)));
 validatePatch(imported);
 assert.equal(imported.script, project.script);
-assert.equal(imported.frames.length, 526);
+assert.equal(imported.frames.length, 522);
 assert.deepEqual(imported.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]), project.frames.map(f => [f.id, f.sceneId, f.characters, f.durationIsEstimate]));
 pass("portable bundle validates and survives the existing backup/import path");
 
@@ -213,11 +213,12 @@ for (const id of inScript.keys()) assert(fullScenes.has(id), `A scene with no wr
   const mugging = project.scenes.find(s => s.id === "rapture-ep1-mugging");
   assert.equal(mugging.time, "EARLY MORNING", "The cold open moved from the retired board's alley night to the draft's side street");
   assert.equal(project.scenes.find(s => s.id === "rapture-ep1-no").time, "DAY", "The 1980 tag is a day scene with the curtains shut mid-afternoon");
-  // The draft rewrites the mugging and St Jude's; the boards behind them were not re-shot, and the
-  // workspace must say so rather than let a stale card read as coverage of the new page.
-  for (const id of ["rapture-ep1-mugging", "rapture-ep1-st-judes"]) {
+  // The draft rewrote the mugging, St Jude's, the washing-up and the first cops scene; their boards were re-boarded from it (8 October 2026,
+  // later), so each scene must say how many shots follow the page and that the earlier board is archived.
+  for (const [id, shots] of [["rapture-ep1-mugging", "fifteen"], ["rapture-ep1-st-judes", "twenty-two"], ["rapture-ep1-cops", "nineteen"]]) {
     const scene = project.scenes.find(candidate => candidate.id === id);
-    assert(/not been re-boarded|predates this page/.test(scene.description), `${scene.title} must say its board predates the draft`);
+    assert(new RegExp(`Boarded in ${shots} shots`).test(scene.description), `${scene.title} must say it is boarded from the draft in ${shots} shots`);
+    assert(!/not been re-boarded|predates this page|WRITTEN, NOT BOARDED/.test(scene.description), `${scene.title} no longer claims to be stale`);
   }
   pass("episode one's draft of 21 September 2026 is the screenplay: eight pages, verbatim, in the draft's own order, with the St Jude's residents cast");
 }
@@ -247,9 +248,9 @@ assert.equal(ep4[11].shotType, "Medium");
 assert.equal(ep4[11].lens, "35mm");
 assert(ep4.every(f => f.movement === "Handheld" && ["Medium", "Close-up"].includes(f.shotType)));
 assert(project.scenes.filter(s => !fullScenes.has(s.id)).every(s => s.description.startsWith("OUTLINE ONLY")));
-// Episode one's draft writes three scenes this workspace has never boarded. They carry a page and a
+// Episode one's draft writes two scenes this workspace has never boarded. They carry a page and a
 // grammar, so they must not be labelled as outlines — and they must not claim to be boarded either.
-for (const id of ["rapture-ep1-cops", "rapture-ep1-storage", "rapture-ep1-no"]) {
+for (const id of ["rapture-ep1-storage", "rapture-ep1-no"]) {
   const scene = project.scenes.find(candidate => candidate.id === id);
   assert(scene.description.startsWith("WRITTEN, NOT BOARDED"), `${scene.title} is written now, so it is neither an outline nor a board`);
   assert(!scene.title.endsWith("— outline"), `${scene.title} must not be titled as an outline`);
@@ -264,7 +265,7 @@ assert(!project.scenes.filter(s => s.actId === "rapture-episode-8").some(s => s.
 pass("all dialogue and pauses preserved; only two wide framings tightened; Pat/Max boundaries intact");
 
 // Legacy boards: nine scenes, scene order across the project, numeric order inside each board.
-assert.equal(new Set(legacy.map(f => f.sceneId)).size, 6);
+assert.equal(new Set(legacy.map(f => f.sceneId)).size, 5);
 assert.equal(new Set(project.frames.map(f => f.sceneId)).size, 23);
 const sceneOrder = new Map(project.scenes.map((s, i) => [s.id, i]));
 let lastScene = -1;
@@ -278,7 +279,7 @@ for (const frame of legacy) {
   const [, prefix, n] = /^rapture-board-(.+)-(\d+)$/.exec(frame.id);
   (boards[prefix] = boards[prefix] || []).push([Number(n), frame]);
 }
-assert.equal(Object.keys(boards).length, 6);
+assert.equal(Object.keys(boards).length, 5);
 const missing = [];
 for (const [prefix, slots] of Object.entries(boards)) {
   slots.sort((a, b) => a[0] - b[0]);
@@ -291,7 +292,7 @@ for (const [prefix, slots] of Object.entries(boards)) {
 assert.deepEqual(missing.sort(), ["ep2s2-15.jpg", "ep2s3-15.jpg", "ep2s3-16.jpg"]);
 assert(legacy.every(f => f.image === "" ? (f.title.endsWith("(keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING")) : f.notes.startsWith("LEGACY BOARD")));
 assert(legacy.every(f => f.status === "Needs review" && f.durationIsEstimate === true && f.duration === 5));
-pass("six legacy boards in scene order, numeric within each board, three missing-keyframe cards holding their slots; the retired washing-up, mugging and St Jude's boards are no longer wired");
+pass("five legacy boards in scene order, numeric within each board, three missing-keyframe cards holding their slots; the washing-up, mugging, St Jude's and first cops boards are re-boarded from the draft and no longer legacy");
 
 // The first wrong lockup: numbered, scripted, keyframes pending, shot 29 truncated.
 lockup.forEach((frame, i) => assert.equal(frame.id, `rapture-ep2-lockup-${String(i + 1).padStart(2, "0")}`, "Lockup numbering must be contiguous"));
@@ -577,7 +578,7 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
 }
 
 // Episodes two to five: the twelve shot boards that have no screenplay draft (docs/rapture/voice/manifest-scenes.json: 502 lines) carry their
-// own dialogue, each line on the frame of the shot it is written in, so 151 frames speak in all (12 of episode one's, 139 of these).
+// own dialogue, each line on the frame of the shot it is written in, so 179 frames speak in all (40 of episode one's, 139 of these).
 {
   const voice = JSON.parse(read("docs/rapture/voice/manifest-scenes.json"));
   const plan = JSON.parse(read("docs/rapture/voice/elevenlabs-plan-scenes.json"));
@@ -593,8 +594,8 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
   assert.deepEqual(boards.map(b => b.lines.length), [24, 25, 46, 45, 17, 70, 36, 9, 43, 36, 78, 73], "the spoken lines of each board");
   assert.deepEqual(boards.flatMap(b => b.lines).map(l => [l.id, l.shot, l.text]), voice.lines.map(l => [l.id, l.shot, l.text]), "the boards say what was recorded");
   const spoken = project.frames.filter(f => f.audio?.length);
-  const ep25 = spoken.filter(f => !/^rapture-ep1(dj|c2)-/.test(f.id));
-  assert.equal(spoken.length, 151, "151 frames speak: 12 of episode one's two boards and 139 of episodes two to five");
+  const ep25 = spoken.filter(f => !/^rapture-ep1/.test(f.id));
+  assert.equal(spoken.length, 179, "179 frames speak: 12 of episode one's two verbatim boards, 28 of its four re-boarded scenes and 139 of episodes two to five");
   const clips = ep25.flatMap(frame => frame.audio.map(clip => ({ frame, clip })));
   assert.equal(clips.length, 502, "every recorded line of episodes two to five is on a frame, once");
   const order = new Map(project.scenes.map((s, i) => [s.id, i]));
@@ -647,14 +648,46 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
   assert.equal(Object.keys(alt).length, 10);
   for (const name of Object.keys(alt)) assert(existsSync(join(root, `public/audio/rapture/scenes/alternates/${name}.mp3`)), `${name} is kept`);
   assert.equal(new Set(voice.lines.map(l => l.voiceId)).size, 20, "twenty voices speak in episodes two to five");
-  assert.deepEqual(JSON.parse(JSON.stringify(imported.frames.filter(f => f.audio?.length && !/^rapture-ep1(dj|c2)-/.test(f.id)).map(f => [f.id, f.audio]))), ep25.map(f => [f.id, f.audio]), "the dialogue survives sanitizeImport unchanged");
+  assert.deepEqual(JSON.parse(JSON.stringify(imported.frames.filter(f => f.audio?.length && !/^rapture-ep1/.test(f.id)).map(f => [f.id, f.audio]))), ep25.map(f => [f.id, f.audio]), "the dialogue survives sanitizeImport unchanged");
   pass(`${clips.length} recorded lines of episodes two to five sit on ${ep25.length} frames of 12 boards, in each board's order with its written holds, lengthened never shortened; every take screened (4 flags cleared by alternates, 1 re-recorded)`);
 }
-
+// Episode one's four scenes that were re-boarded from the draft (8 October 2026, later): the mugging (15 shots), St Jude's (22), the first cops
+// scene (19) and the washing-up (23) carry 112 more of the 166 lines, so 165 of episode one's 166 are on frames; the one left is Martin's
+// storage-unit line, a scene with no board written from the draft.
+{
+  const voice = JSON.parse(read("docs/rapture/voice/manifest.json"));
+  const want = { "rapture-ep1-mugging": ["ep1-01", 15, 3, 3], "rapture-ep1-st-judes": ["ep1-02", 22, 11, 39], "rapture-ep1-cops": ["ep1-03", 19, 10, 66], "rapture-ep1-washing-up": ["ep1-04", 23, 4, 4] };
+  let attached = 0;
+  for (const [sceneId, [page, shots, speaking, takes]] of Object.entries(want)) {
+    const sceneFrames = project.frames.filter(f => f.sceneId === sceneId);
+    assert.equal(sceneFrames.length, shots, `${sceneId}: one frame per board shot`);
+    const spokenHere = sceneFrames.filter(f => f.audio?.length);
+    assert.equal(spokenHere.length, speaking, `${sceneId}: the frames that speak`);
+    const clips = spokenHere.flatMap(f => f.audio);
+    const lines = voice.lines.filter(l => l.page === page);
+    assert.equal(clips.length, takes);
+    assert.deepEqual(clips.map(c => c.id), lines.map(l => l.id), `${sceneId}: every recorded line of ${page} is on a frame, once, in the draft's order`);
+    for (const frame of spokenHere) {
+      const cs = frame.audio, last = cs[cs.length - 1];
+      assert(cs.every((c, i) => i === 0 || c.offset >= cs[i - 1].offset + cs[i - 1].duration - 1e-9), `${frame.id}: lines do not overlap`);
+      assert(last.offset + last.duration + 0.6 <= frame.duration + 1e-9, `${frame.id}: the last word has 0.6s of air`);
+      for (const c of cs) assert(existsSync(join(root, "public" + c.src)), `${c.src} is on disk`);
+    }
+    attached += clips.length;
+  }
+  assert.equal(attached, 112);
+  const first = project.frames.find(f => f.id === "rapture-ep1c1-01").audio;
+  assert.equal(first[0].offset, 4, "\"Four seconds of nothing\" comes before Kath's first word");
+  const eightSecond = project.frames.find(f => f.id === "rapture-ep1c1-03").audio;
+  const gap = eightSecond[7].offset - (eightSecond[6].offset + eightSecond[6].duration);
+  assert(Math.abs(gap - 8) < 0.05, "\"An eight-second pause\" separates \"We should arrest ourselves.\" from \"It's what we signed up for.\"");
+  assert.equal(project.frames.find(f => f.id === "rapture-ep1mug-04").audio[0].text, "Bag.");
+  pass(`${attached} more of episode one's lines sit on the four re-boarded scenes (mugging 3, St Jude's 39, the first cops scene 66, washing-up 4): each board follows the draft beat for beat; the studies that still fit are reused (mugging 10 of 15 shots, washing-up 7 of 23, the first cops scene 19 of 19, St Jude's none) and the rest are placeholder cards`);
+}
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 184 + 132 + 162 + 308 + 161 + 120 + 111 + 297 + 379 + 271 + 158 + 92 + 136 + 308 + 377 + 367 + 122 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 184 + 132 + 162 + 308 + 161 + 81 + 193 + 262 + 297 + 379 + 271 + 158 + 92 + 153 + 308 + 377 + 367 + 103 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -788,7 +821,7 @@ assert.equal(new Set(ep4.map(f => f.image)).size, 13);
 assert(ep4.every(f => f.image.startsWith("/images/rapture/ep4/") && !f.title.endsWith("— reference") && !f.notes.includes("REFERENCE ONLY")), "Every boarded shot must carry its own dedicated keyframe");
 assert(ep4.every(f => f.status === "Draft"));
 assert(legacy.every(f => f.image === "" || f.image.startsWith("/images/rapture/")), "Legacy keyframes live under /images/rapture/");
-assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 119);
+assert.equal(new Set(legacy.map(f => f.image).filter(Boolean)).size, 100);
 assert.equal(project.moodboards[0].items.length, 13, "The Number Fourteen board covers all thirteen studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-lockup" && b.items.length === 31), "The lockup board covers all thirty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-estate" && b.items.length === 36), "The estate board covers all thirty-six studies");
@@ -797,7 +830,7 @@ assert(project.moodboards.some(b => b.id === "rapture-look-kitchen" && b.items.l
 assert(project.moodboards.some(b => b.id === "rapture-look-danny-jodie" && b.items.length === 21), "The raid board covers all twenty-one studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-cops-second" && b.items.length === 6), "The cops board covers all six studies");
 assert(project.moodboards.some(b => b.id === "rapture-look-therapy" && b.items.length === 0), "The therapy-class board exists and honestly holds no studies yet");
-pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-four kitchen studies from the retained Nina thread, 119 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
+pass(`${paths.length} image references on disk; thirteen Number Fourteen studies, thirty-one lockup studies, thirty-six estate, thirty-two doorstep and twenty-four kitchen studies from the retained Nina thread, 100 ordered legacy keyframes, and honest placeholder cards for remaining washing-up, therapy-class and other shots still to generate`);
 
 // Exercise real Drizzle service calls against an isolated local adapter file, not the user's workspace.
 const services = join(cache, "services.cjs");
@@ -819,13 +852,13 @@ try {
       const originalSample = initial.find(p => p.title === 'The Last Light');
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
-      assert.equal(opened.frames.length, 526);
-      assert.equal(opened.frames.filter(f => f.audio && f.audio.length).length, 151, 'a fresh workspace has the recorded dialogue on the 151 frames that carry it');
+      assert.equal(opened.frames.length, 522);
+      assert.equal(opened.frames.filter(f => f.audio && f.audio.length).length, 179, 'a fresh workspace has the recorded dialogue on the 179 frames that carry it');
       // An older saved workspace (no dialogue yet) is given the takes on its next read, once, and nothing else of the writer changes.
       const silent = opened.frames.map(({ audio, ...frame }) => (frame.id === 'rapture-ep1dj-06' ? { ...frame, duration: 40, notes: 'my notes' } : frame));
       await api.updateProject(id, { frames: silent });
       const refreshed = await api.getProject(id);
-      assert.equal(refreshed.frames.filter(f => f.audio && f.audio.length).length, 151, 'a saved workspace without dialogue receives it');
+      assert.equal(refreshed.frames.filter(f => f.audio && f.audio.length).length, 179, 'a saved workspace without dialogue receives it');
       const own = refreshed.frames.find(f => f.id === 'rapture-ep1dj-06');
       assert.equal(own.duration, 40, 'a frame the writer made longer is not shortened');
       assert.equal(own.notes, 'my notes', 'the writer notes stay');
@@ -843,7 +876,7 @@ try {
       assert.equal((await api.listProjects()).length, 5, 'Ordinary page loads respect deletion');
       const restored = await api.openRaptureProject();
       assert.equal(restored.id, id);
-      assert.equal(restored.frames.length, 526);
+      assert.equal(restored.frames.length, 522);
       assert.equal(restored.shareId, null);
       const copy = await api.importProject(api.sanitizeImport(restored));
       assert.notEqual(copy.id, id, 'Import creates a separate copy');
