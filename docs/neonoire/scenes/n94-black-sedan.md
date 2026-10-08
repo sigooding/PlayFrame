@@ -14,7 +14,7 @@ All four shots (141–143 and 368) are **16:9, 1920×1080, full-bleed**. Since t
 ---
 
 141. WIDE — 24mm, static, eye level — only tea.
-At the foot of the station steps, in the rain, a black sedan waits at the kerb with its engine running and its wipers going; its rear door has opened from inside and spills warm amber light across the wet asphalt onto cream leather. Nobody is in frame. Behind, on the second floor of the station, exactly one window is lit where somebody is still working.
+At the foot of the station steps, in the rain, a black sedan waits at the kerb with its engine running and its wipers going. Its rear door has opened from inside, spilling warm amber light onto the wet asphalt. Nobody gets out. On the second floor of the station, one window is still lit.
 SCRIPT: "At the foot of the steps, a black sedan waits at the kerb, engine running, wipers going."
 CAST: —
 LIGHT: Low key

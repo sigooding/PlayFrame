@@ -54,7 +54,7 @@ IMAGE: 97-where-to-find-them.jpg
 NOTE: One of the scene's two close-ups. Carries "Twenty years ago. Daniel. Was that you?" and both of Ishida's answers, then the long look while the room waits for a blow that never comes, and finally "Where is it? Sakai's thing."
 
 100. WIDE — 24mm, static, eye level — past the desks, past the clock.
-The master's camera again: Jack walks away from us down the long aisle toward the rear door and the clock; the two young detectives at the far end watch him go; Ishida, foreground right, has turned his head to follow him.
+Jack walks away from us down the long aisle of the detectives' room toward the rear door and the clock. The two young detectives at the far end watch him go; in the foreground Ishida turns his head to follow him.
 SCRIPT: "Jack turns and walks away down the long room, past the desks, past the clock."
 CAST: Jack, Detective Ishida
 LIGHT: Natural daylight

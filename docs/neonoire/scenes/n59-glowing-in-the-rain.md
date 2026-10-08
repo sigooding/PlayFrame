@@ -52,7 +52,7 @@ IMAGE: 365-the-altar.jpg
 NOTE: Relief pass one, 4 October 2026. The altar follows `s29/204-the-tea-she-does-not-want-to-pour.jpg` — the same corner of the same room, the altar gold against the drained interior — with the widow gone. The framed photograph is held to `s1/07-old-man.jpg`: the man of the cold open, the one the film never names on screen. One photograph, nothing else added. No people. REVIEWED AT FULL SIZE, INSTALLED 4 OCTOBER 2026: the altar gold against the drained interior holds, and the framed man holds to `s1/07-old-man.jpg` — flat cap, grey hair, the cold open's face; this is the photograph 364's wide must agree with. Unclosed caveat: the photograph sits on a low wooden stand beside the altar shelf rather than on the shelf itself.
 
 366. INSERT — 35mm, static, high angle — teacup on its side.
-On the tatami: a single white teacup on its side, the small ring of spilled tea drying in the grey light. Nothing else in frame.
+On the tatami: a white teacup on its side, the small ring of spilled tea drying in the grey light.
 SCRIPT: "A teacup on its side on the tatami."
 CAST: —
 LIGHT: Overcast soft

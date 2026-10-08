@@ -108,7 +108,7 @@ NOTE: Coverage, shot 346. Generated from the storeroom masters `s20/191-prove-it
 ## Coverage pass — 4 October 2026
 
 371. MEDIUM CLOSE-UP — 85mm, static, eye level — Mara calls herself a coward.
-A close single on Mara as the small, bitter laugh breaks and fails: her loose hair falls forward, her sleeve brushes her mouth, the brown borrowed cardigan matches the storeroom master. The red bird clip is on the closed sketchbook in her lap, not in her hair; Jack stays outside this frame.
+Close on Mara as the small, bitter laugh breaks: her loose hair falls forward and she presses her sleeve to her mouth. The red bird clip lies on the closed sketchbook in her lap.
 SCRIPT: "I called her a coward. (small, bitter laugh) And I'm the one hiding in a storeroom."
 CAST: Mara Voss
 LIGHT: Practical night
@@ -118,7 +118,7 @@ IMAGE: 371-the-coward-line.jpg
 NOTE: Coverage pass two (4 October 2026). A complementary close single on the existing scene 20 line in shot 284, not a replacement: the same futon, flour sacks, low bulb and brown cardigan, with Mara's clip off her hair after the scene 2 loss. Generated against `s20/191-prove-it.jpg`, `s20/284-i-called-her-a-coward.jpg`, `s20/345-the-book-into-her-lap.jpg` and `sheets/mara-hiding.jpg`. The soft, bitter laugh is held in her face; no extra character, weapon or new prop.
 
 372. INSERT — 85mm, static, high angle — the red bird on the sketchbook.
-The closed sketchbook rests in Mara's lap. The small red enamel sparrow clip lies by itself on the plain cover, her fingertips just at its edge; no lettering on the book and no clip in her hair.
+The closed sketchbook in Mara's lap. The small red bird clip lies alone on its plain cover, her fingertips just touching its edge.
 SCRIPT: "She pulls the sketchbook into her lap."
 CAST: Mara Voss
 LIGHT: Practical night

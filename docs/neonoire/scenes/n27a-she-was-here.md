@@ -60,7 +60,7 @@ IMAGE: 373-okada-polishes-the-glass.jpg
 NOTE: Coverage pass two (4 October 2026). Generated from `s27a/290-daylight-again.jpg`, `sheets/okada.jpg` and `sheets/vera.jpg`. This is a new arrival angle within the established daytime bar, not the later scene-8 cleanup: the rubber mat is down, there is no umbrella, and the CRT remains dark. Okada is the same older proprietor; Vera is dry and wears her charcoal coat. The glass can be polished already, as the screenplay says.
 
 374. CLOSE-UP — 50mm, static, low angle — her face in the dead glass.
-From the floor behind the far end of the counter, Vera looks up. Her face sits low in frame, with its single faint reflection in the blank dark CRT above; the same bottles and counter underside hold the scene 2 geography. The television is off, never static or glowing blue.
+From the floor behind the far end of the counter, Vera looks up. Her face is reflected, faintly, in the dark screen of the switched-off television above her: the same counter, the same bottles, the same floor Mara hid on.
 SCRIPT: "Vera looks up at the dead television. Somewhere in the dark glass, her own face."
 CAST: Vera Voss
 LIGHT: Overcast soft

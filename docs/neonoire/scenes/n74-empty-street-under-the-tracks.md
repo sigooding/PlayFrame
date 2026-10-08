@@ -15,7 +15,7 @@ Vera: canonical face, rain-ruined makeup, soaked wine-red silk dress; RIGHT foot
 ---
 
 75. WIDE — 50mm, static, low level — twenty metres apart, then she approaches.
-A low level locked camera at 70cm watches the empty shuttered street beside the elevated railway. Two cold ivory vending machines stand to screen-left; a shallow corrugated shop awning is to screen-right. Vera stops twenty metres from Jack, then crosses toward him: wine-red soaked dress, running mascara, RIGHT foot bare and LEFT shoe on. Jack is still, in a wet charcoal knee-length coat over an off-white open-neck shirt, dark unwashed hands at his sides. She remains screen-left of him.
+The empty shuttered street under the elevated railway, seen from low down. Vera stops twenty metres from Jack, then crosses toward him: the wine-red dress soaked, mascara running, one shoe gone. Jack stands still in his wet charcoal coat, his dirty hands at his sides.
 SCRIPT: "Vera slows. Stops. Twenty metres apart."
 CAST: Vera Voss, Jack
 LIGHT: Practical night
@@ -25,7 +25,7 @@ IMAGE: 74-twenty-metres-apart.jpg
 NOTE: Replacement regenerated in session two. The keyframe now pictures the scripted opening separation itself: Vera small by the two machines screen-left, Jack small under the awning screen-right, the empty shining street carrying a third of the frame between them — the twenty-metre gap is on screen, not deferred to production staging. She says Don't; he stops. No score. No blood, no injury smear on the asphalt.
 
 76. WIDE — 50mm, static, low level — one desperate blow, then the hands fall.
-Low level locked 50mm full-body two-shot at 70cm, with room around both figures. Vera has crossed to Jack and presses one desperate fist into his chest. He takes it without lifting his hands. Wet ash-blonde hair, thin washed mascara trails, same dark wine-red calf-length silk dress, RIGHT foot bare and LEFT red court heel. Hold the same setup through the weaker blows, her folding to the pavement, the brief grasp of his coat and her rejection. He kneels but does not touch her again.
+Vera reaches Jack and drives one desperate fist into his chest. He takes it without lifting his hands. Weaker blows follow; she folds to the pavement, grasps his coat for a moment, then the rejection: she pushes him away. He kneels, but does not touch her again.
 SCRIPT: "She hits him. Not a big cinematic slap. One desperate blow against his chest with her fist."
 CAST: Vera Voss, Jack
 LIGHT: Practical night

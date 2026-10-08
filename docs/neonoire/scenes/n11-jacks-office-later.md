@@ -79,7 +79,7 @@ NOTE: Coverage, shot 252. The lighter is the same dented brushed-steel one as s7
 ## Coverage pass — 4 October 2026
 
 375. INSERT — 85mm, static, high angle — Jack sets down the receiver.
-A desk-only close insert as Jack returns the black rotary receiver to its cradle after the call. His hand and charcoal sleeve enter the warm lamp pool; the closed steel lighter and the photograph edge sit on the same dark-walnut desk. No face, door or television is in frame.
+Close on the desk: Jack's hand sets the black rotary receiver back in its cradle. In the warm pool of the lamp, the closed steel lighter and the edge of the photograph.
 SCRIPT: "Jack holds the receiver a moment longer. He sets it down."
 CAST: Jack
 LIGHT: Practical night
