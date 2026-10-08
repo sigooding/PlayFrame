@@ -11,7 +11,10 @@
       "audio": "9ffa93bc102bbf35231de6344c60798e9570869893df17a4fead4c49ac912f9b"
     },
     "neonoire-shot-247": {
-      "audio": "bc850a60a1ca8e223caf86681cfbd969925ad071318a8c9f349c25c3e72e4141"
+      "audio": [
+        "bc850a60a1ca8e223caf86681cfbd969925ad071318a8c9f349c25c3e72e4141",
+        "e771b70381818295c99e5559c53815d8ee399fac0c4b4c79c59db75df49f3f48"
+      ]
     },
     "neonoire-shot-184": {
       "audio": "e2ea85e4e457ed32a088de351c8bac52275a48b38b7f5ca20f57898d053775b0"
@@ -83,7 +86,28 @@
       "audio": "4ebb452a23f591f47219dfd8a8c6ff3f53316b5d8de65db9757f36e677e5a1a1"
     },
     "neonoire-shot-214": {
-      "audio": "88b5d960c480c26394588c917f2252c44216977b7806422006f7e3f857f77b54"
+      "audio": [
+        "88b5d960c480c26394588c917f2252c44216977b7806422006f7e3f857f77b54",
+        "43142a1693600df9e4008da60d77516848b1c4af198b7dc3e3ff5a6a8722607a"
+      ]
+    },
+    "neonoire-shot-167": {
+      "audio": "89fd4402e0ccedcaf00fe53c343c3b6831627bc9f25d6f8d0ecc0c9a7e58617f"
+    },
+    "neonoire-shot-168": {
+      "audio": "6fd15462a15e83b62195a995d8d54eddec63c39d4c7d1fac1aa35c369023bcb5"
+    },
+    "neonoire-shot-270": {
+      "audio": "2350b4d0bca1a10a19699a4b403fdb5e3d397e11c0994e81f0cacbfbb7f4e15b"
+    },
+    "neonoire-shot-189": {
+      "audio": "d8c534ac0ea981b90666c6e56144d1a8d51947050b48228e9043e9170628c3f4"
+    },
+    "neonoire-shot-275": {
+      "audio": "b34710c8ebc782e086c99d478ebf963b5102b4a48b909c09868991dd68457edf"
+    },
+    "neonoire-shot-229": {
+      "audio": "6a8d35fb16a180e3f8bdcf964648b62d2e321ad109e86c4a7409ab4784ab1bbf"
     }
   }
 }

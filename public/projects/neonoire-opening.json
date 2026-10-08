@@ -5009,7 +5009,7 @@
           "text": "Your father.",
           "src": "/audio/neonoire/s10/167-jack-softly-your-father.mp3",
           "offset": 15,
-          "duration": 1.31,
+          "duration": 1.41,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         },
@@ -5019,7 +5019,7 @@
           "text": "He died. That year. Here.",
           "src": "/audio/neonoire/s10/167-vera-quietly-he-died-pause-that-year.mp3",
           "offset": 16.8,
-          "duration": 3.63,
+          "duration": 3.97,
           "voice": "4Rn2L1CRjYh93G56jNXI",
           "model": "eleven_v4"
         }
@@ -5054,7 +5054,7 @@
           "text": "I'm sorry.",
           "src": "/audio/neonoire/s10/168-jack-quietly-i-m-sorry.mp3",
           "offset": 0.5,
-          "duration": 1.31,
+          "duration": 1.49,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         },
@@ -5540,7 +5540,7 @@
           "text": "Why come back?",
           "src": "/audio/neonoire/s12/247-jack-quietly-why-come-back.mp3",
           "offset": 20.6,
-          "duration": 1.57,
+          "duration": 1.49,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         }
@@ -5664,7 +5664,7 @@
           "text": "That was for America. She'd booked a flight. Next month.",
           "src": "/audio/neonoire/s14/270-vera-quietly-that-was-for-america-she.mp3",
           "offset": 0.5,
-          "duration": 4.13,
+          "duration": 3.97,
           "voice": "4Rn2L1CRjYh93G56jNXI",
           "model": "eleven_v4"
         },
@@ -5714,7 +5714,7 @@
           "text": "I told her to go, then. Go home. Those were the last things I said to her.",
           "src": "/audio/neonoire/s14/270-vera-quietly-i-told-her-to-go.mp3",
           "offset": 36.5,
-          "duration": 5.25,
+          "duration": 5.8,
           "voice": "4Rn2L1CRjYh93G56jNXI",
           "model": "eleven_v4"
         }
@@ -6595,7 +6595,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 47,
+      "duration": 49,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -6642,7 +6642,7 @@
           "text": "I'm looking for his daughter. The younger one.",
           "src": "/audio/neonoire/s17/189-jack-quietly-i-m-looking-for-his.mp3",
           "offset": 21.6,
-          "duration": 3,
+          "duration": 2.85,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         },
@@ -6661,7 +6661,7 @@
           "character": "KANEKO",
           "text": "Everything is going. We are just slower.",
           "src": "/audio/neonoire/s13/181-kaneko-everything-is-going-we-are-just.mp3",
-          "offset": 29,
+          "offset": 31.3,
           "duration": 3.47,
           "voice": "vUzt8mUMt5vwWOoJ6szl",
           "model": "eleven_v4"
@@ -6671,7 +6671,7 @@
           "character": "JACK",
           "text": "She's twenty-four now. And someone wants to kill her.",
           "src": "/audio/neonoire/s17/189-jack-she-s-twenty-four-now-and.mp3",
-          "offset": 31.4,
+          "offset": 35.42,
           "duration": 3.97,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
@@ -6681,7 +6681,7 @@
           "character": "KANEKO",
           "text": "Eat. Then go. There is no one here but us.",
           "src": "/audio/neonoire/s17/189-kaneko-gruffly-eat-then-go-pause-there.mp3",
-          "offset": 36.4,
+          "offset": 40.04,
           "duration": 4.83,
           "voice": "vUzt8mUMt5vwWOoJ6szl",
           "model": "eleven_v4"
@@ -6691,8 +6691,8 @@
           "character": "JACK",
           "text": "He always paid too much, too.",
           "src": "/audio/neonoire/s17/189-jack-quietly-he-always-paid-too-much.mp3",
-          "offset": 43.8,
-          "duration": 2.43,
+          "offset": 45.52,
+          "duration": 2.69,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         }
@@ -9994,7 +9994,7 @@
           "text": "Stay. Whatever you hear.",
           "src": "/audio/neonoire/s44/214-jack-stay-whatever-you-hear.mp3",
           "offset": 0.6,
-          "duration": 2.59,
+          "duration": 2.51,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         },
@@ -10014,7 +10014,7 @@
           "text": "I'll get him.",
           "src": "/audio/neonoire/s44/214-jack-i-ll-get-him.mp3",
           "offset": 6.06,
-          "duration": 1.15,
+          "duration": 1.41,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         }
@@ -10487,7 +10487,7 @@
           "text": "I won't.",
           "src": "/audio/neonoire/s53/275-jack-i-won-t.mp3",
           "offset": 4.46,
-          "duration": 1.23,
+          "duration": 1.41,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         }
@@ -11144,7 +11144,7 @@
       "lens": "35mm",
       "lighting": "Practical night",
       "style": "neonoire",
-      "duration": 43,
+      "duration": 44,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -11241,7 +11241,7 @@
           "text": "And then I tell her everything.",
           "src": "/audio/neonoire/s60/229-jack-and-then-i-tell-her-everything.mp3",
           "offset": 40.25,
-          "duration": 2.12,
+          "duration": 2.59,
           "voice": "MZhx7pKflsc0sAwciDEy",
           "model": "eleven_v4"
         }

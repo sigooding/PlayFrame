@@ -1,0 +1,266 @@
+{
+  "note": "Hushed takes re-recorded at speaking volume (8 October 2026). Twelve Jack and Vera takes from earlier passes used [quietly] or [softly], which read as whispers about 10 dB under their speaking level (see the README). Each is re-recorded under its old id with the same wording and a tag that stays at speaking volume; the old take is archived and kept in the line's history. Two samples were generated per line and measured; the first is used unless the second is at least 0.5 dB louder (only Q05 took its second). The unused samples are kept as alternates in public/audio/neonoire/alternates/2026-10-08/. Mara's four [weakly] scene 71 lines are not touched: weak may be intended, so alternates are offered instead.",
+  "model": "eleven_v4",
+  "flow": "N9gMYgRFua7NaOhKH5Cd",
+  "generated": "2026-10-08",
+  "lines": [
+    {
+      "key": "Q01",
+      "scene": "44",
+      "frame": "neonoire-shot-214",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[firmly] I'll get him.",
+      "gap": 0.65,
+      "replace": "s44-jack-i-ll-get-him",
+      "id": "s44-jack-i-ll-get-him",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "foYKdmYmyS8AI3PG96OQ",
+        "id": "5zxPUOPo1ijvKl8rmXov"
+      }
+    },
+    {
+      "key": "Q02",
+      "scene": "10",
+      "frame": "neonoire-shot-167",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[gently] Your father.",
+      "gap": 0.65,
+      "replace": "s10-jack-softly-your-father",
+      "id": "s10-jack-softly-your-father",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "CxbIBUrP0iSfaq3v6d2O",
+        "id": "p4K3nUg5kll3k0Y5GsYx"
+      }
+    },
+    {
+      "key": "Q03",
+      "scene": "53",
+      "frame": "neonoire-shot-275",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[earnestly] I won't.",
+      "gap": 0.65,
+      "replace": "s53-jack-i-won-t",
+      "id": "s53-jack-i-won-t",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "WCk2Ajftb9St3Uz5W9yk",
+        "id": "aul6gy5S2hhyZjZbfwyv"
+      }
+    },
+    {
+      "key": "Q04",
+      "scene": "44",
+      "frame": "neonoire-shot-214",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[firmly] Stay. Whatever you hear.",
+      "gap": 0.65,
+      "replace": "s44-jack-stay-whatever-you-hear",
+      "id": "s44-jack-stay-whatever-you-hear",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "FhbS5wSmyL1fn4vRLfyK",
+        "id": "opamgTz2xxmnPLb0PS1p"
+      }
+    },
+    {
+      "key": "Q05",
+      "scene": "17",
+      "frame": "neonoire-shot-189",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[sadly] He always paid too much, too.",
+      "gap": 0.65,
+      "replace": "s17-jack-quietly-he-always-paid-too-much",
+      "id": "s17-jack-quietly-he-always-paid-too-much",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "TyWNnoZtjeCJqz2exU8T",
+        "id": "h5M5KZkqQ3769UOZj4hm"
+      }
+    },
+    {
+      "key": "Q06",
+      "scene": "60",
+      "frame": "neonoire-shot-229",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] And then I tell her everything.",
+      "gap": 0.65,
+      "replace": "s60-jack-and-then-i-tell-her-everything",
+      "id": "s60-jack-and-then-i-tell-her-everything",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "mcjIuCkvw2P3LLQGvXIO",
+        "id": "BCyiuWrJUm7oJIM0Vo1e"
+      }
+    },
+    {
+      "key": "Q07",
+      "scene": "12",
+      "frame": "neonoire-shot-247",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] Why come back?",
+      "gap": 0.65,
+      "replace": "s12-jack-quietly-why-come-back",
+      "id": "s12-jack-quietly-why-come-back",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "dImSEEHz45vt8WcVUA1O",
+        "id": "efJ4e8icRRPE062Rgeh5"
+      }
+    },
+    {
+      "key": "Q08",
+      "scene": "17",
+      "frame": "neonoire-shot-189",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[evenly] I'm looking for his daughter. The younger one.",
+      "gap": 0.65,
+      "replace": "s17-jack-quietly-i-m-looking-for-his",
+      "id": "s17-jack-quietly-i-m-looking-for-his",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "dGy2xi4ucZOOAFT6ZIT0",
+        "id": "8ZJflaGF8FVAqYc4kgoc"
+      }
+    },
+    {
+      "key": "Q09",
+      "scene": "10",
+      "frame": "neonoire-shot-168",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[earnestly] I'm sorry.",
+      "gap": 0.65,
+      "replace": "s10-jack-quietly-i-m-sorry",
+      "id": "s10-jack-quietly-i-m-sorry",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "WRuSkww06wT8Dt30xlDe",
+        "id": "HciS6NHHC1A626TYATAF"
+      }
+    },
+    {
+      "key": "Q10",
+      "scene": "10",
+      "frame": "neonoire-shot-167",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[sadly] He died. [pause] That year. Here.",
+      "gap": 0.65,
+      "replace": "s10-vera-quietly-he-died-pause-that-year",
+      "id": "s10-vera-quietly-he-died-pause-that-year",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "82fbLNcTq8NvBxxoVh9y",
+        "id": "qt7RmO66lOY2xMdPG6p9"
+      }
+    },
+    {
+      "key": "Q11",
+      "scene": "14",
+      "frame": "neonoire-shot-270",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[evenly] That was for America. She'd booked a flight. Next month.",
+      "gap": 0.65,
+      "replace": "s14-vera-quietly-that-was-for-america-she",
+      "id": "s14-vera-quietly-that-was-for-america-she",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "KtBRLsoAeWe7CGSOMG2L",
+        "id": "bBnaQwfdtfbtUNJpPSVs"
+      }
+    },
+    {
+      "key": "Q12",
+      "scene": "14",
+      "frame": "neonoire-shot-270",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[sadly] I told her to go, then. Go home. Those were the last things I said to her.",
+      "gap": 0.65,
+      "replace": "s14-vera-quietly-i-told-her-to-go",
+      "id": "s14-vera-quietly-i-told-her-to-go",
+      "generation": {
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "Cm5113C57AxRldHcg3ib",
+        "id": "f4csl1LzkbhO7GwSV1P4"
+      }
+    }
+  ],
+  "frameOrder": {
+    "neonoire-shot-214": [
+      "s44-jack-stay-whatever-you-hear",
+      "s44-mrsnoda-my-husband",
+      "s44-jack-i-ll-get-him"
+    ],
+    "neonoire-shot-167": [
+      "s10-vera-to-go-home",
+      "s10-jack-wearily-it-s-good-advice",
+      "s10-vera-is-it-yours-too",
+      "s10-jack-do-you-have-photographs-of-her",
+      "s10-vera-that-s-us-pause-before-we",
+      "s10-jack-softly-your-father",
+      "s10-vera-quietly-he-died-pause-that-year"
+    ],
+    "neonoire-shot-275": [
+      "s53-vera-don-t-go-anywhere-else-without",
+      "s53-jack-i-won-t"
+    ],
+    "neonoire-shot-189": [
+      "s17-kaneko-dryly-you-got-old",
+      "s17-jack-so-did-you",
+      "s17-kaneko-i-was-already-old-you-were",
+      "s17-jack-quietly-i-m-looking-for-his",
+      "s17-kaneko-flatly-the-little-one-she-was",
+      "s13-kaneko-everything-is-going-we-are-just",
+      "s17-jack-she-s-twenty-four-now-and",
+      "s17-kaneko-gruffly-eat-then-go-pause-there",
+      "s17-jack-quietly-he-always-paid-too-much"
+    ],
+    "neonoire-shot-229": [
+      "s60-mara-she-was-right-there-she-was",
+      "s60-jack-you-did-the-right-thing",
+      "s60-mara-did-i-she-said-she-d",
+      "s60-jack-if-she-found-this-place-other",
+      "s60-mara-i-know",
+      "s60-mara-find-what-it-opens-and-then",
+      "s60-jack-tomorrow-night-i-m-moving-you",
+      "s60-mara-and-then",
+      "s60-jack-and-then-i-tell-her-everything"
+    ],
+    "neonoire-shot-247": [
+      "s12-barber-grumbling-police-again",
+      "s12-jack-not-for-a-long-time",
+      "s12-barber-i-told-them-i-was-asleep",
+      "s12-jack-one-car",
+      "s12-barber-one-car-twice-pause-it-left",
+      "s12-jack-quietly-why-come-back"
+    ],
+    "neonoire-shot-168": [
+      "s10-jack-quietly-i-m-sorry",
+      "s10-vera-it-was-a-long-time-ago",
+      "s10-jack-yes",
+      "s10-jack-businesslike-ten-thousand-yen-a-day",
+      "s10-vera-so-you-ll-look",
+      "s10-jack-i-ll-look"
+    ],
+    "neonoire-shot-270": [
+      "s14-vera-quietly-that-was-for-america-she",
+      "s14-jack-you-didn-t-want-her-to",
+      "s14-vera-i-didn-t-want-her-to",
+      "s14-vera-voice-breaking-it-was-about-dad",
+      "s14-vera-bitterly-she-said-i-was-the",
+      "s14-vera-quietly-i-told-her-to-go"
+    ]
+  }
+}
