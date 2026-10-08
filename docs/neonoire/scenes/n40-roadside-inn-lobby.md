@@ -39,7 +39,7 @@ NOTE: Coverage, shot 262, retaken in the consistency pass of 26 September 2026. 
 
 269. MEDIUM — 35mm, static, eye level — staff side.
 The camera is behind Mr. Noda. He crouches on the staff side of the counter, his back to us, the counter between him and the lobby. Past it: the pink payphone, the chairs, the stairs, and baseball on the CRT.
-SCRIPT: "Mr. Noda throws himself behind the counter."
+SCRIPT: "The souvenir case shatters. The CRT keeps playing baseball."
 CAST: Mr. Noda
 LIGHT: Low key
 TIME: 5

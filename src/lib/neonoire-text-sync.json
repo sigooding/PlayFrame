@@ -15,6 +15,9 @@
     "neonoire-shot-01": {
       "description": [
         "926f104287fee315de159a7cfb7e8924f36d2fa5bbf77d7126de3ffaf9695fa4"
+      ],
+      "notes": [
+        "799693c728717546f4baa56aa966b8b92824543553e7c252107669179d04342b"
       ]
     },
     "neonoire-shot-02": {
@@ -23,6 +26,9 @@
       ],
       "description": [
         "e2c66af1625a341cb2eeb9cb7e5f38b01e4e7b5064903963c31b4bd7c9d0e20f"
+      ],
+      "notes": [
+        "6a8a796d2b956d38708ace8d47a32af913fe4fa6103021f52ed64e10b6ae1b7e"
       ]
     },
     "neonoire-shot-03": {
@@ -207,6 +213,31 @@
     "neonoire-shot-28": {
       "description": [
         "07cc16a3a767e2291cd6a418a9b7fd3c287e707b86c902f4f9c5a12c419b7cd3"
+      ]
+    },
+    "neonoire-shot-258": {
+      "notes": [
+        "aa5848136e0dcc5cf58e2135bbc68411c76f158cd368f2817b1acbd37d7795ac"
+      ]
+    },
+    "neonoire-shot-269": {
+      "notes": [
+        "a6f50f6666da15ec15a9b22ac050f5b7452b126cc32a680bf4e0a97f95aa9c20"
+      ]
+    },
+    "neonoire-shot-268": {
+      "notes": [
+        "a04055333131db5c12fbd41a9ccbd736a7d5560fc1bc91008d0eac9b85b21f55"
+      ]
+    },
+    "neonoire-shot-233": {
+      "notes": [
+        "a582774aa74b1be26dc5fd53f5bbd4cf5bf4a2babcc370ad43bba724f4b75973"
+      ]
+    },
+    "neonoire-shot-264": {
+      "notes": [
+        "b2e8577bf567aa87cb786c240d0d524f1d320647556b30ef05ca330e337350a1"
       ]
     }
   },

@@ -27,7 +27,7 @@ NOTE: The stamped number 114 is shot 258. The two sketches on the back wall are 
 
 258. INSERT — 85mm, static, high angle — the stamp.
 Under the bare bulb, a hand in a brown cardigan holds the coin-locker key. The oval tag reads 87. The metal of the key is stamped 114.
-SCRIPT: "The number on the worn tag, still legible: 114."
+SCRIPT: "Mara opens her fist. The coin-locker key on its worn tag."
 CAST: Mara Voss
 LIGHT: Practical night
 TIME: 4

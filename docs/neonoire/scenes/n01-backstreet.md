@@ -29,7 +29,7 @@ Follow `scripts/neonoire/cold-open-look.mjs` and [the revision checklist](../pas
 
 1. ESTABLISHING — 24mm, static, eye level — EXT. BACKSTREET, KANDA.
 Rain. A narrow Kanda backstreet of shuttered shops that could belong to any year of the last forty: hand-painted signs, tangled wires, wet black asphalt. On the left a closed barber's with its striped pole; on the right the old vending machine throws cold white light through the rain. Nobody in the street.
-SCRIPT: "A narrow street of shuttered shops. A vending machine hums on the corner."
+SCRIPT: "A narrow street of shuttered shops."
 CAST: —
 LIGHT: Practical night
 TIME: 8
@@ -38,7 +38,7 @@ NOTE: Hold the empty street long enough that the audience notices they are alone
 
 2. INSERT — 85mm, static, eye level — the corner vending machine.
 The vending machine up close: chipped white paint, rows of lit cans behind rain-streaked glass, water running off its roof onto the asphalt. Its hum is the loudest thing in the street.
-SCRIPT: "High up, one lit window, a radio playing behind it."
+SCRIPT: "A vending machine hums on the corner."
 CAST: —
 LIGHT: Practical night
 TIME: 6
