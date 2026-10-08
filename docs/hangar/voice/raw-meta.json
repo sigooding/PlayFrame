@@ -1,0 +1,266 @@
+{
+ "H01--s1": {
+  "prompt": "[Tense, steady] Red Leader, I've got something on my right wing.",
+  "duration": 3.04,
+  "session": "jqLfxG3gUqQuWvKk4d63",
+  "generation": "hgwXoBtVwm3fm5AwL1PI",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H01--s2": {
+  "prompt": "[Tense, steady] Red Leader, I've got something on my right wing.",
+  "duration": 2.96,
+  "session": "V6K1nQpzkbMX2GVUQJSe",
+  "generation": "a5ZIeeA9k3Slnvg5RuHH",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H02--s1": {
+  "prompt": "[Clipped] Say again, Red Two.",
+  "duration": 1.68,
+  "session": "jJKzc7nrvH1BeTqWqvST",
+  "generation": "ie01AoFtOQvw2RR7x22Y",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H02--s2": {
+  "prompt": "[Clipped] Say again, Red Two.",
+  "duration": 1.6,
+  "session": "hkBMVhIW2aYL8mJIueOu",
+  "generation": "mXADGJGnImSjzm470yBE",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H03--s1": {
+  "prompt": "[Tense, incredulous] No markings. It's glowing. I bank, it banks. It's copying me.",
+  "duration": 5.84,
+  "session": "3F5yWMWozXgVDWFEsQD5",
+  "generation": "hf9DYArz1XEjAB0qjiVY",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H03--s2": {
+  "prompt": "[Tense, incredulous] No markings. It's glowing. I bank, it banks. It's copying me.",
+  "duration": 5.68,
+  "session": "mhDHMmrDiVrvsaj8XLSq",
+  "generation": "pHwCXGVL3oHsISTAZWmE",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H04--s1": {
+  "prompt": "[Clipped, dismissive] Could be a Jerry trick. Take it down.",
+  "duration": 2.16,
+  "session": "57GPVpGcN47pFY1jZGt8",
+  "generation": "lS8eMZ2CMYUVjhfvfleI",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H04--s2": {
+  "prompt": "[Clipped, dismissive] Could be a Jerry trick. Take it down.",
+  "duration": 2.24,
+  "session": "KGUnS4SvVtrap0nzkitr",
+  "generation": "6lhO7BF3CUB60JPkbvol",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H05--s1": {
+  "prompt": "[Uneasy, puzzled] It's not doing anything. It's just flying with me.",
+  "duration": 3.76,
+  "session": "WL0sqJbl3Bs14uHS1sey",
+  "generation": "tyIrmBxq7yoPKIJfqJxv",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H05--s2": {
+  "prompt": "[Uneasy, puzzled] It's not doing anything. It's just flying with me.",
+  "duration": 3.52,
+  "session": "I9LUhBPhb2L9kFNM93vU",
+  "generation": "9qoS8HbSgiFBp43Uyx8n",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H06--s1": {
+  "prompt": "[Cold] That's an order.",
+  "duration": 1.36,
+  "session": "P1iK8FavpS6t9oOD5Ez0",
+  "generation": "PBgfq6uUC9QmSHgrW0Cr",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H06--s2": {
+  "prompt": "[Cold] That's an order.",
+  "duration": 1.36,
+  "session": "5GjcvxZzGma6QdqmTPHV",
+  "generation": "cBbG7ZMGrBf16PZRyL98",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H07--s1": {
+  "prompt": "[Formal, measured] The question before this committee is what else has been kept from the American people.",
+  "duration": 5.2,
+  "session": "vICE6uOJ2YV1TGdvvOYu",
+  "generation": "D3L6TymeQ45q5zuuZe0R",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H07--s2": {
+  "prompt": "[Formal, measured] The question before this committee is what else has been kept from the American people.",
+  "duration": 5.04,
+  "session": "xGWvpiZyW7PrwXzPHmj6",
+  "generation": "Z7HhIa0S1RmoJQ1q2SNA",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H08--s1": {
+  "prompt": "[Curious, earnest] Don't you want to know what's in it?",
+  "duration": 1.84,
+  "session": "3ZWopuMzYh9flnJjxkAH",
+  "generation": "gE47NqkTWiGqaKNjT4zq",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H08--s2": {
+  "prompt": "[Curious, earnest] Don't you want to know what's in it?",
+  "duration": 1.84,
+  "session": "omW4krtTUAt1XqthzU0H",
+  "generation": "6x3kRnKSHM6TQNBQzGiq",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H09--s1": {
+  "prompt": "[Flat] Nope.",
+  "duration": 1.12,
+  "session": "Cv9PT2QjC1Poubnf10RQ",
+  "generation": "TCCwe4u0q2emI4ZqWBBA",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H09--s2": {
+  "prompt": "[Flat] Nope.",
+  "duration": 1.12,
+  "session": "4bmq8wyRHiviAzmS9wfR",
+  "generation": "wTYxNUwJwu9XUfM6Fwkk",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H10--s1": {
+  "prompt": "[Dry, wry] Thirty years driving. First time anybody paid me to skip a scale.",
+  "duration": 4.8,
+  "session": "2M4EILKpEx7j9kOKYUQS",
+  "generation": "bASIlYLilBKCNagfWV5S",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H10--s2": {
+  "prompt": "[Dry, wry] Thirty years driving. First time anybody paid me to skip a scale.",
+  "duration": 4.72,
+  "session": "v5YdDCPPnREFzKX5qZsE",
+  "generation": "UMveahb9RN79NdFdfTxI",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H11--s1": {
+  "prompt": "[Flat] Load's shifting.",
+  "duration": 1.68,
+  "session": "f4cEGJMmpZY1WNNNiosJ",
+  "generation": "a5f6xosvwK5Brnzdbx13",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H11--s2": {
+  "prompt": "[Flat] Load's shifting.",
+  "duration": 1.6,
+  "session": "QZnz7TVEnFb4mSAFw077",
+  "generation": "22MW7LHNvcCycFDt5DvD",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H12--s1": {
+  "prompt": "[Absent, rhythmic] One-two-three... four. One-two-three... four.",
+  "duration": 4.48,
+  "session": "nmMOpFszOF7r58iSZUko",
+  "generation": "7w7nbUuZhOuo7YSPEZ76",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H13--s1": {
+  "prompt": "[Dry] There. Settled.",
+  "duration": 2,
+  "session": "fSc9Um3RQtIgZVQPuMod",
+  "generation": "y5EKVfvJxS8fzDauoHSr",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H13--s2": {
+  "prompt": "[Dry] There. Settled.",
+  "duration": 2,
+  "session": "bmTVLOhXahzdfpyRgYZ8",
+  "generation": "OqvCtTnDGxj4pHGMDbNU",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H14--s1": {
+  "prompt": "[Drowsy, determined] Come on. Two more miles.",
+  "duration": 2.4,
+  "session": "UU1Eg6n5dK0AAwK1yC7z",
+  "generation": "8dGXakeT1pFbsyy4xDXw",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H14--s2": {
+  "prompt": "[Drowsy, determined] Come on. Two more miles.",
+  "duration": 2.64,
+  "session": "YPP22k0vftVUgeH3i69L",
+  "generation": "5MRL63MAkX1v6VlthzdO",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H15--s1": {
+  "prompt": "[Flat] Where is it?",
+  "duration": 1.28,
+  "session": "dyTBiFuzNVoR2w5SJQUV",
+  "generation": "6HaPyfDzvgJXJUcmNovw",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H15--s2": {
+  "prompt": "[Flat] Where is it?",
+  "duration": 1.28,
+  "session": "mRqlPQ04PnpYOAimgRsL",
+  "generation": "OOfQTWyDhrxChW3lWI6e",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H16--s1": {
+  "prompt": "[Shaken, breathless] Down there. Some lady in a wagon, she just came right at me.",
+  "duration": 4.48,
+  "session": "OX37VqlmpdZ85DRCmqUa",
+  "generation": "buiJe32iNBzxGgFtCnYW",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H16--s2": {
+  "prompt": "[Shaken, breathless] Down there. Some lady in a wagon, she just came right at me.",
+  "duration": 4.48,
+  "session": "zFyr1MAc3EdRweari2u6",
+  "generation": "eY0Y3o5Hj54HHeP22JbS",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H17--s1": {
+  "prompt": "[Distant] One-two-three... four.",
+  "duration": 2.72,
+  "session": "UsNgnlXjjd7kMuuF8Fx7",
+  "generation": "mfhVkjmibzssEaGNkazS",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ },
+ "H17--s2": {
+  "prompt": "[Distant] One-two-three... four.",
+  "duration": 2.64,
+  "session": "Dzp8QjaGvCc4FY0bylcD",
+  "generation": "XENIwDdvbn3FKcCEZjPy",
+  "flow": "zuerBNN2PTasdWo0PVB1",
+  "model": "eleven_v4"
+ }
+}

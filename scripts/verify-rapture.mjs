@@ -11,7 +11,10 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const cache = join(root, "node_modules/.cache/verify-rapture");
 mkdirSync(cache, { recursive: true });
 const read = file => readFileSync(join(root, file), "utf8");
-const project = JSON.parse(read("public/projects/let-the-raptures-commence.json"));
+const bundle = JSON.parse(read("public/projects/let-the-raptures-commence.json"));
+// The dialogue checks below look at speech only; the sound effects (ids starting `sfx-`, scripts/rapture/sound.mjs) have their own block.
+const isEffect = clip => clip.id.startsWith("sfx-");
+const project = { ...bundle, frames: bundle.frames.map(({ audio, ...frame }) => { const speech = (audio || []).filter(clip => !isEffect(clip)); return speech.length ? { ...frame, audio: speech } : frame; }) };
 const source = read("docs/rapture/scenes/ep4-number-fourteen.md");
 const original = read("docs/rapture/scenes/archive/ep4-number-fourteen-v1.md");
 const pass = message => console.log(`  PASS  ${message}`);
@@ -853,17 +856,28 @@ try {
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
       assert.equal(opened.frames.length, 522);
-      assert.equal(opened.frames.filter(f => f.audio && f.audio.length).length, 179, 'a fresh workspace has the recorded dialogue on the 179 frames that carry it');
+      const speaks = f => (f.audio || []).some(c => !c.id.startsWith('sfx-')), effected = f => (f.audio || []).some(c => c.id.startsWith('sfx-'));
+      assert.equal(opened.frames.filter(speaks).length, 179, 'a fresh workspace has the recorded dialogue on the 179 frames that carry it');
+      assert.equal(opened.frames.filter(effected).length, 24, 'and the sound effects on the 24 frames that carry them');
       // An older saved workspace (no dialogue yet) is given the takes on its next read, once, and nothing else of the writer changes.
       const silent = opened.frames.map(({ audio, ...frame }) => (frame.id === 'rapture-ep1dj-06' ? { ...frame, duration: 40, notes: 'my notes' } : frame));
       await api.updateProject(id, { frames: silent });
       const refreshed = await api.getProject(id);
-      assert.equal(refreshed.frames.filter(f => f.audio && f.audio.length).length, 179, 'a saved workspace without dialogue receives it');
+      assert.equal(refreshed.frames.filter(speaks).length, 179, 'a saved workspace without dialogue receives it');
+      assert.equal(refreshed.frames.filter(effected).length, 24, 'and its sound effects');
       const own = refreshed.frames.find(f => f.id === 'rapture-ep1dj-06');
       assert.equal(own.duration, 40, 'a frame the writer made longer is not shortened');
       assert.equal(own.notes, 'my notes', 'the writer notes stay');
       assert.equal(own.audio.length, 4);
       assert.deepEqual((await api.getProject(id)).frames, refreshed.frames, 'a second read changes nothing');
+      // A frame that has its dialogue but none of the effects (a workspace saved before them) takes the effects once and keeps its length.
+      const bare = refreshed.frames.map(f => (f.id === 'rapture-ep1stj-07' ? { ...f, duration: f.duration + 3, audio: f.audio.filter(c => !c.id.startsWith('sfx-')) } : f));
+      await api.updateProject(id, { frames: bare });
+      const regained = (await api.getProject(id)).frames.find(f => f.id === 'rapture-ep1stj-07');
+      assert.equal(regained.audio.filter(c => c.id.startsWith('sfx-')).length, 1, 'a frame with dialogue and no effects takes the bundle effects');
+      assert.equal(regained.duration, refreshed.frames.find(f => f.id === 'rapture-ep1stj-07').duration + 3, 'and keeps its own length');
+      assert.equal(regained.audio.filter(c => !c.id.startsWith('sfx-')).length, 1, 'and its dialogue');
+      assert.deepEqual((await api.getProject(id)).frames.find(f => f.id === 'rapture-ep1stj-07'), regained, 'and a second read changes nothing');
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();
@@ -900,12 +914,39 @@ if (process.argv.includes("--live")) {
   }
   const served = await fetch(`${base}/projects/let-the-raptures-commence.json`);
   assert.equal(served.status, 200);
-  assert.deepEqual(await served.json(), project);
+  assert.deepEqual(await served.json(), bundle);
   for (const path of paths) {
     const image = await fetch(`${base}${path}`);
     assert.equal(image.status, 200, `Image is not served: ${path}`);
     assert(image.headers.get("content-type")?.startsWith("image/"));
   }
   pass("all ten app tabs, portable JSON and every bundled image serve successfully");
+}
+// Sound effects (8 October 2026): the shared library (docs/sfx/README.md) on the re-boarded scenes and the cops' second beat.
+{
+  const library = JSON.parse(read("docs/sfx/library.json"));
+  const byFile = new Map(library.effects.map(e => [e.file, e]));
+  const withEffects = bundle.frames.filter(f => (f.audio || []).some(isEffect));
+  const clips = withEffects.flatMap(frame => frame.audio.filter(isEffect).map(clip => ({ frame, clip })));
+  assert.equal(withEffects.length, 24, "24 frames carry sound effects");
+  assert.equal(clips.length, 28, "28 effects on them");
+  assert(withEffects.every(f => /^rapture-ep1(mug|stj|c1|c2|wu)-/.test(f.id)), "only the re-boarded scenes and the cops' second beat have effects");
+  assert.equal(new Set(clips.map(x => x.clip.id)).size, clips.length, "effect ids are unique");
+  for (const { frame, clip } of clips) {
+    const effect = byFile.get(clip.src);
+    assert(effect && effect.projects.rapture, `${clip.id}: a library effect tagged for the Rapture`);
+    assert(existsSync(join(root, "public", clip.src)), `${clip.id}: on disk`);
+    assert(clip.character === "SFX" && clip.text === "" && clip.gain >= 0.1 && clip.gain <= 1, `${clip.id}: no subtitle text, a level under the speech`);
+    assert(clip.offset >= 0 && clip.offset < frame.duration, `${clip.id}: starts inside its frame`);
+  }
+  const reused = new Set(clips.map(x => byFile.get(x.clip.src).source));
+  assert(reused.has("neonoire"), "a NEONOIRE effect (the body fall) is reused in the Rapture");
+  const sorted = bundle.frames.filter(f => f.audio).every(f => f.audio.every((c, i) => i === 0 || c.offset >= f.audio[i - 1].offset));
+  assert(sorted, "every frame's audio is in order of offset");
+  const speech = project.frames.filter(f => f.audio?.length).length;
+  assert.equal(speech, 179, "the effects did not change which frames speak");
+  const round = sanitizeImport(JSON.parse(JSON.stringify(bundle)));
+  assert.deepEqual(JSON.parse(JSON.stringify(round.frames.filter(f => (f.audio || []).some(isEffect)).map(f => [f.id, f.audio.filter(isEffect)]))), withEffects.map(f => [f.id, f.audio.filter(isEffect)]), "the effects, gains included, survive sanitizeImport unchanged");
+  pass(`${clips.length} shared effects on ${withEffects.length} frames of the re-boarded scenes (a NEONOIRE effect among them), levels under the speech, saved workspaces take them once`);
 }
 console.log("Rapture checks passed.");

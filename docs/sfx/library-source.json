@@ -111,7 +111,7 @@
    "id": "trolley-roll",
    "title": "Empty trolley rolling across a car park",
    "projects": {
-    "rapture": "the trolley neither of them looks at",
+    "rapture": "the trolley neither of them looks at (first cops scene shot 6); the trolley that will not stop (shot 13)",
     "neonoire": "a Tokyo back-street cart or bicycle rolling past"
    }
   },
@@ -165,7 +165,7 @@
    "id": "knife-ring",
    "title": "Knife dropping on pavement, one ring",
    "projects": {
-    "rapture": "the knife that rings and lies still (mugging, shot 10)"
+    "rapture": "the knife that rings and lies still (mugging shot 10); the knife spinning on the plate rim (St Jude's shot 18)"
    }
   },
   {
@@ -224,7 +224,7 @@
    "title": "Footsteps on wet pavement at night",
    "projects": {
     "neonoire": "the lanes in the rain",
-    "rapture": "the mugging's walk and the night drives"
+    "rapture": "wet-pavement walks and drives if a scene is re-boarded for rain (the mugging is dry, so it does not use it)"
    }
   },
   {
@@ -243,6 +243,33 @@
     "hangar": "the swerve (horn, tyre shriek, gravel)",
     "rapture": "the bus on the open road"
    }
+  },
+  {
+   "id": "cockpit-drone",
+   "title": "Cockpit engine drone with radio hiss",
+   "loop": true,
+   "projects": {
+    "hangar": "shots 1 and 2, the 1944 cockpit under the black screen: engine drone, wind, headset hiss (gone for the silence after the gunfire)"
+   },
+   "prompt": "Inside the cockpit of a WWII propeller fighter in flight: steady radial engine drone, wind rushing past the canopy, and a faint continuous radio hiss and static from the headset, seamless, no voice, no music"
+  },
+  {
+   "id": "gunfire-bursts",
+   "title": "Two bursts of gunfire, then nothing",
+   "loop": false,
+   "projects": {
+    "hangar": "shot 3: two short bursts, then true silence (never show what he shot)"
+   },
+   "prompt": "Two short bursts of aircraft machine gun fire from a WWII fighter, a quick rattling burst, a half second pause, a second burst, then it stops dead, dry, close, no echo, no voice, no music"
+  },
+  {
+   "id": "mirror-snap-cap",
+   "title": "Mirror snaps off, cap lands on the road",
+   "loop": false,
+   "projects": {
+    "hangar": "shot 19: the wagon's side mirror snaps off and the nurse's cap flies out of the window"
+   },
+   "prompt": "A car side mirror snapping off with a sharp metal crack, glass skittering across asphalt, and a soft fabric slap of a small cap landing on the road, dry, close, no voice, no music"
   }
  ],
  "reused": [

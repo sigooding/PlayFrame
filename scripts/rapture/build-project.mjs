@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dialogueFor, dialogueByShot, TAIL } from "./voice-frames.mjs";
+import { attachSound } from "./sound.mjs";
 import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, copsFirstBeatSceneId, copsFirstBeatPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards, copsFirstBeatGrammar, storageGrammar, tagGrammar } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -1149,6 +1150,9 @@ for (let i = 1; i < scriptedScenes.length; i++) {
   assert(before !== undefined && after !== undefined && before <= after, "The screenplay must run in episode order");
 }
 
+// 8 October 2026: the shared sound-effect library on the re-boarded scenes (sound.mjs); effects never lengthen a frame
+const sound = attachSound(frames, root);
+
 const project = {
   id: projectId, title: "Let the Raptures Commence",
   description: "8 × 45min British black comedy. Four billion people sorted by a child's layout decision. Eight episode outlines, and Episode One is now written: docs/rapture/ep1-screenplay.md (draft of 21 September 2026) is carried page by page in docs/rapture/screenplay/ and is what the Screenplay tab shows — cold open on the side street, St Jude's and the rapture at breakfast, the cops' first beat in the supermarket car park, ST JUDE'S - AFTER, Martin at the storage facility three months earlier, Danny and Jodie, the cops at night and the 1980 tag. The mugging (19 shots), St Jude's (19) and washing up (26, FIX 4 — the pendant is her mother's, she always had it) boards predate that page and are not re-boarded; the cops' first beat, Martin and the tag are written and not boarded at all. Also in the revised 42-minute order: Danny and Jodie (21) and the cops' second beat (6); ep3 cold open angels 15 shots; ep4 Pat cold open dusk 16 shots continuous into Scene 2 the old lady 35 shots, then Nina's thread retained and fully boarded — the housing estate (36), the doorstep (32) and the kitchen (24); ep5 therapy class 26 shots and the night at Pat's 51 shots, no CCTV, two grammars only. Fixes: prologue 12 pockets the tracker plus the 24f flash, shot 31 cut ERROR to UNDO?, Ep1 Sc3 shot 18 cut with 23-24 in her own room, Martin's auction marked pre-rapture, Ep3 meeting trimmed to recruitment only.",
@@ -1177,5 +1181,5 @@ if (process.argv.includes("--check")) {
 } else {
   mkdirSync(dirname(output), { recursive: true });
   writeFileSync(output, encoded);
-  console.log(`Wrote ${output} (${Math.round(Buffer.byteLength(encoded) / 1024)} KB).`);
+  console.log(`Wrote ${output} (${Math.round(Buffer.byteLength(encoded) / 1024)} KB; ${sound.effects} effects on ${sound.frames} frames).`);
 }

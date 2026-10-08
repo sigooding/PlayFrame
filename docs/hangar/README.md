@@ -27,3 +27,27 @@ The review's faults are being fixed on the evidence: **six of the boards named i
 ## Refreshing a saved copy (7 October 2026)
 
 A copy already in a workspace is brought up to the current bundle every time it is read (`hangarUpdates` in `src/lib/hangar.ts`, run from `src/lib/projects.ts`). A field is replaced only when its saved value is still one the bundle shipped before; anything the owner wrote, any custom picture, and any frame or scene they added or deleted is left alone. The shipped values are kept as hashes in `src/lib/hangar-sync.json`. **Before changing the bundle, run `npm run sync:hangar`** (records the committed version), then `npm run build:hangar`; `verify:hangar` tests the refresh against the first shipped version.
+
+## Voices and sound (8 October 2026)
+
+**The 17 spoken lines are recorded, in American voices, and the shared sound-effect library is laid on the frames. Nobody has listened.** The lines are the `NAME: (delivery) words` cues in the shot notes; `scripts/hangar/sound.mjs` stops the build if a cue is reworded after it was recorded.
+
+| Speaker | Voice | Where it comes from |
+|---|---|---|
+| Trucker | Jack (`MZhx7pKflsc0sAwciDEy`) | NEONOIRE's saved voice, reused |
+| Mom (the nurse) | Vera (`4Rn2L1CRjYh93G56jNXI`) | NEONOIRE's saved voice, reused |
+| Red Leader | Daniel (`oOJyrMKhBUCGET6PTTAu`) | NEONOIRE's saved voice, reused |
+| Red Two | Cavendish (`Cx1u6YPIa1SPiAbYj3gJ`) | stock, found with `use_cases: characters_animation` |
+| The Airman | Rick - Calm & Basic (`PoqlHoqJoAfdQ0g8bLK3`) | stock, same filter |
+| The TV (Senate hearing) | Clyde - Vintage Male Radio Announcer (`QMJTqaMXmGnG8TCm8WQG`) | stock, library label Use: Character |
+| The Agent | Callum - Husky Trickster (`N2lVS1w4EtoT3dr4eOWO`) | stock, premade, characters_animation |
+
+**The director's rule: stock voices must be of the character type**, so every stock voice here came back from the voice search filtered to the `characters_animation` use case (the workspace is at its custom-voice limit, so nothing was designed). Why each voice was picked is in `docs/hangar/voice/manifest.json` (`voices`); the speakers who share a scene have different voices (Red Two and Red Leader; the Trucker and the Agent). Directions are v4 short bracketed ones, one word on a line of three words or fewer, no hush words (`voice-data.mjs`). Red Two, Red Leader and the TV carry `fx` (`radio`, `radio`, `tv`) in the manifest: the takes on disk are clean, the animatic applies the chain (`scripts/neonoire/voice-fx.mjs` has a new `radio` chain) and the scarlett-witness reel bakes it. **The Airman's counted "One-two-three... four." lines (H12, H17) are deliberately 12 dB under his speaking lines** (-34 dB against -22: under his breath, barely audible); the first sample of each line is the one on the frame, the second is in `public/audio/hangar/alternates/` (H12's second sample never finished generating).
+
+**Sound.** 48 effects from the shared library (`docs/sfx/README.md`) on 35 frames: the cockpit drone and gunfire for the 1944 black screen (three effects were made for this: `cockpit-drone`, `gunfire-bursts`, `mirror-snap-cap`), the hangar room tone, the crate knocks, the three-quick-one-slow clicks, the swerve, the crash, the flares and the creek. The table is `SOUND` in `scripts/hangar/voice-data.mjs` (shot → [effect, seconds, gain]). **A frame's audio entries now have an optional `gain`** (0.02 to 2; the storyboard player, the animatic and the importer honour it): beds sit at 0.2 to 0.5 under speech. Effects have no text (the animatic burns subtitles for any entry that has some) and an id that starts `sfx-`. Frames are lengthened, never shortened, so each last word has 0.6 s of air (shots 2, 5, 13 and 29 grew: 298 s to 300.6 s in all). Left without sound on purpose: shots 10 (diesel and air brakes), 22 (wood on metal), 26 (her engine fading) and 35 (silence; hold).
+
+**Saved copies.** A frame with no audio takes the bundle's on its next read, once, and is lengthened; a frame that has audio of its own but none of the bundle's `sfx-` entries takes the effects and keeps its length (`bundledAudioUpdates`, called from `hangarUpdates`); `verify:hangar` replays both.
+
+**Files.** `scripts/hangar/voice-data.mjs` (voices, lines, offsets, the sound table), `voice-batch.mjs` (ingests the raw takes into `public/audio/hangar/shot-NN/`, measures and repeat-screens them, writes `docs/hangar/voice/manifest.json`; needs `FFMPEG`), `sound.mjs` (lays it all on the frames), `docs/hangar/voice/raw-meta.json` (every ElevenLabs generation: prompt, session, generation id). To re-record a line: archive the old take under `public/audio/hangar/archive/`, commit, change `voice-data.mjs`, regenerate, `voice-batch.mjs`, `npm run build:hangar`.
+
+**Reel.** The cold open and the Rapture play as reels in scarlett-witness, marked "(work in progress)" (its `docs/playframe-reels.md`).

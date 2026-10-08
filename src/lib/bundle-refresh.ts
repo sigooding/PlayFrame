@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { framesInSceneOrder } from "./frame-order";
-import type { FilmProject, ProjectPatch } from "./types";
+import type { FilmProject, FrameAudio, ProjectPatch } from "./types";
 import directorSync from "./neonoire-director-sync.json";
 import restorationSync from "./neonoire-restoration-sync.json";
 import scene6Sync from "./neonoire-scene6-sync.json";
@@ -213,20 +213,30 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   return Object.keys(patch).length ? patch : null;
 }
 
+/** Sound-effect entries carry an id that starts `sfx-` (scripts/hangar/sound.mjs, scripts/rapture/sound.mjs); dialogue ids never do. */
+const isEffect = (clip: FrameAudio) => clip.id.startsWith("sfx-");
+
 /**
- * 8 October 2026: recorded dialogue reaching a saved workspace (the Rapture series: episode one's two verbatim boards, then the twelve boards
- * of episodes two to five). A frame that has
- * none yet takes the bundle's takes and is lengthened, never shortened, so they fit. A frame that already has dialogue, a frame the bundle
- * has none for and everything else the writer changed are left alone, and a second read changes nothing.
+ * 8 October 2026: recorded dialogue and sound effects reaching a saved workspace (the Rapture series: episode one's two verbatim boards, then
+ * the twelve boards of episodes two to five, then its sound effects; the cold open's voices and effects). A frame that has no audio yet takes
+ * the bundle's and is lengthened, never shortened, so the takes fit. A frame that has dialogue but none of the bundle's `sfx-` entries takes
+ * those, sorted in by offset, and keeps its own length (effects never lengthen a frame). A frame the bundle has no audio for, a frame whose
+ * audio the writer has already got effects in, and everything else the writer changed are left alone, and a second read changes nothing.
  */
 export function bundledAudioUpdates(existing: FilmProject, bundle: Pick<FilmProject, "frames">): ProjectPatch | null {
   const bundled = new Map(bundle.frames.map(frame => [frame.id, frame]));
   let changed = false;
   const frames = existing.frames.map(frame => {
     const arrived = bundled.get(frame.id);
-    if (!arrived?.audio?.length || frame.audio?.length) return frame;
+    if (!arrived?.audio?.length) return frame;
+    if (!frame.audio?.length) {
+      changed = true;
+      return { ...frame, audio: arrived.audio, duration: Math.max(frame.duration, arrived.duration) };
+    }
+    const effects = arrived.audio.filter(isEffect);
+    if (!effects.length || frame.audio.some(isEffect)) return frame;
     changed = true;
-    return { ...frame, audio: arrived.audio, duration: Math.max(frame.duration, arrived.duration) };
+    return { ...frame, audio: [...frame.audio, ...effects].sort((a, b) => a.offset - b.offset) };
   });
   return changed ? { frames } : null;
 }
