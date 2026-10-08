@@ -3,7 +3,7 @@
   "model": "eleven_v4",
   "designModel": "eleven_ttv_v3",
   "date": "2026-10-08",
-  "note": "One saved ElevenLabs voice per character (name '<Character> - RAPTURES'). Every voice was designed from the show bible's cast text with the character's own screenplay lines as the preview text, and picked BLIND, by measured pitch, range, brightness and pace: nobody has listened to any of them. The unpicked previews are kept as audio in public/audio/rapture/voices/ and on the page public/audio/rapture/index.html. Pitch figures come from scripts/rapture/voice-measure.py.",
+  "note": "One saved ElevenLabs voice per character (name '<Character> - RAPTURES'). Every voice was designed from the show bible's cast text with the character's own screenplay lines as the preview text, and picked BLIND, by measured pitch, range, brightness and pace: nobody has listened to any of them. The unpicked previews are kept as audio in public/audio/rapture/voices/ and on the page public/audio/rapture/index.html. Pitch figures come from scripts/rapture/voice-measure.py. Episodes 2-5 (added 8 October, later): the workspace is full at 30 custom voices, so their 14 new voices are premade or library voices used as they are (key `source`), picked blind by measured pitch and by their descriptions; the 16 voices designed first (never saved) are auditions in public/audio/rapture/voices/eps2-5/ and docs/rapture/voice/casting-eps2-5.json. `boardSpeakers` maps each board's speaker cue to a voice.",
   "speakers": {
     "NINA": "nina",
     "KATH": "kath",
@@ -265,7 +265,7 @@
       "gender": "male",
       "age": "40",
       "description": "Male, 40, English. A father scavenging for water who has rules and cannot let anyone be right about them. Out of his depth, not brave, trying to sound in charge; swears without much conviction. Tired, ordinary, a little rueful; hushed and hissing when he is frightened.",
-      "text": "It was already — Rules. And? They're gone. Everyone's gone. Out. Now. One time it wasn't a cat. What's a header tank? Don't tell anyone about the door. Do the cistern, Jodie.",
+      "text": "It was already \u2014 Rules. And? They're gone. Everyone's gone. Out. Now. One time it wasn't a cat. What's a header tank? Don't tell anyone about the door. Do the cistern, Jodie.",
       "why": "The first preview is close to monotone (range 33 Hz) and the third is the darkest and slowest; this one keeps some variation (72 Hz) at 93 Hz and a middling brightness.",
       "rounds": [
         {
@@ -491,7 +491,7 @@
       "gender": "male",
       "age": "50s",
       "description": "Male, 50s, English. A deep, gravelly bass-baritone man's voice; a resident of a house for people the system gave up on. Indignant and blustering, a man in the middle of an anecdote who will not be told the facts; loud and pleased with himself.",
-      "text": "That's not your name, that's nail varnish. It's my nail varnish. So I said to him, that's not a dog, mate, that's a —",
+      "text": "That's not your name, that's nail varnish. It's my nail varnish. So I said to him, that's not a dog, mate, that's a \u2014",
       "why": "Second round: about 100 Hz and the roughest of the three (voiced share 0.34): gravel against Col's smooth baritone.",
       "rounds": [
         {
@@ -599,7 +599,7 @@
       "gender": "male",
       "age": "30s",
       "description": "Male, 30s, English, a smooth warm baritone, freshly shaved and pleased with himself. Hopeful and a little ingratiating, asking for the room at the back; wounded for a moment when refused, then filing it for another attempt.",
-      "text": "Four weeks Thursday. I know. So I was thinking. Given that. The room at the back — No. You haven't heard what I — You want Deborah's room because it's got the aerial.",
+      "text": "Four weeks Thursday. I know. So I was thinking. Given that. The room at the back \u2014 No. You haven't heard what I \u2014 You want Deborah's room because it's got the aerial.",
       "why": "The darkest (centroid 949 Hz) and smoothest: warm against Terry's rasp, though both sit near 95 Hz.",
       "rounds": [
         {
@@ -717,7 +717,7 @@
       "gender": "male",
       "age": "early twenties",
       "description": "Male, early twenties, English, a light nervous tenor. Tight and hurried: wired and considerably more frightened than the person he is robbing; in another mood, a keen volunteer in a lanyard eager to help. The voice cracks slightly under strain.",
-      "text": "Bag. Come on. Come on — Just give it — Let me take that. No. It's heavy. I know. I'll do the upstairs bins! Did them.",
+      "text": "Bag. Come on. Come on \u2014 Just give it \u2014 Let me take that. No. It's heavy. I know. I'll do the upstairs bins! Did them.",
       "doubling": "The nineteen-year-old mugger (scene 1) and the keen volunteer (scene 2) are played by one voice: three lines each, never in a scene together.",
       "why": "The first preview stopped after 6 s of a 8 s text; of the other two this has the louder, clearer read (-19.8 dB) and a range of 188 Hz.",
       "rounds": [
@@ -836,7 +836,7 @@
       "gender": "male",
       "age": "40s",
       "description": "Male, 40s, English. A failed musician, aggrieved rather than grieving: a denim jacket that was correct in 1994, hair long at the back on principle, nothing written in eleven years. Wounded dignity and put-upon pedantry, hesitant and out of practice at talking to people, a little defensive.",
-      "text": "Hello. You knocked. Nobody's knocked. Right. Right. Is that meant to help? In where? Have you got a warrant? It's a collection. It's not — I'm not one of these that just — Whose? Why? I'm coming up with you.",
+      "text": "Hello. You knocked. Nobody's knocked. Right. Right. Is that meant to help? In where? Have you got a warrant? It's a collection. It's not \u2014 I'm not one of these that just \u2014 Whose? Why? I'm coming up with you.",
       "note": "One line in episode one ('Course.'), a large part from episode four: the preview text is Martin's own lines from the episode-four doorstep board.",
       "why": "About 133 Hz, the highest of the three, with a wider range (97 Hz): the most expressive, for a talker who is out of practice.",
       "rounds": [
@@ -888,6 +888,243 @@
           ]
         }
       ]
+    },
+    "blank": {
+      "id": "HVls8FPCdrYsty3uUV9E",
+      "name": "Rafe - Warm British Conversational Voice",
+      "character": "Alan, Graham and Neil (the cheerful blanks) and the lockup's MAN",
+      "gender": "male",
+      "age": "50s",
+      "description": "A warm, neutral RP British voice, conversational. Reads as mild, cheerful and helpful; one voice shared by the three blanks (Alan, Graham, Neil), who never share a scene, so the show's 'people who do what they are told' sound alike on purpose.",
+      "why": "Warm and mild at about 160 Hz, so he sits apart from every man he shares a scene with (Danny 93, Ray 113, Malcolm 102).",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "hariel": {
+      "id": "hD1kd7mrzoibcCXm4eGc",
+      "name": "Adam - well-spoken, cultured British man",
+      "character": "Hariel",
+      "gender": "male",
+      "age": "40s",
+      "description": "Middle-aged, calm, well-spoken and cultured British man.",
+      "why": "The plummy, unbothered baritone (103 Hz, narrow range) against Soqed's younger voice.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "soqed": {
+      "id": "JlptfLxaUpd8pZcw9dKd",
+      "name": "Kelvin - Calm Young British Male",
+      "character": "Soqed",
+      "gender": "male",
+      "age": "30s",
+      "description": "Neutral young professional British male with a southern English accent.",
+      "why": "Younger and lighter than Hariel; the junior angel who is a step behind.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "reek": {
+      "id": "2EVscXwJhGYuLiX1PgKA",
+      "name": "Chris - British conversational companion",
+      "character": "Reek",
+      "gender": "male",
+      "age": "40s",
+      "description": "A 40-year-old man with a gentle accent from Yorkshire, England, conversational: plain and a little regional, for the Hell intake clerk.",
+      "why": "The plain, level, slightly regional voice (130 Hz); the closest to the brief's 'flat, weary, procedural'.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "tamsin": {
+      "id": "pPoztmvzd5p26S3MsNrV",
+      "name": "Olivia - Warm, British Female",
+      "character": "Tamsin",
+      "gender": "female",
+      "age": "20s",
+      "description": "A warm, natural British female voice with a youthful, friendly and versatile delivery.",
+      "why": "Youthful and bright (213 Hz, 1692 Hz bright): the keen intake investigator.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "woman-14": {
+      "id": "Xb7hH8MSUJpSbSDYk0k2",
+      "name": "Alice - Clear, Engaging Educator",
+      "character": "The woman at Number 14",
+      "gender": "female",
+      "age": "50s",
+      "description": "ElevenLabs premade voice: clear, friendly British woman, middle-aged. Directed brisk and clipped for the council-complaining neighbour.",
+      "why": "A premade voice with a wide, quick range (190 Hz) that can be pushed brisk.",
+      "source": "premade",
+      "note": "A premade ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "pat": {
+      "id": "tiLGT9eftokjCKvXtgmt",
+      "name": "Annabel - Soft British female",
+      "character": "Pat",
+      "gender": "female",
+      "age": "70s",
+      "description": "A softly spoken British female voice with a warm, natural tone and a slightly lower register; calm, intimate delivery. The demon disguised as a sweet old lady.",
+      "why": "The softest and warmest British voice found (163 Hz, 1074 Hz bright); no old British woman was among the voices found, so age is carried by the direction.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "malcolm": {
+      "id": "jAW0IMxOTz75sgLAYWp6",
+      "name": "Desmond (UK) - Distinguished Persuasion",
+      "character": "Malcolm",
+      "gender": "male",
+      "age": "70s",
+      "description": "A gravelly, 75+ British voice. The demon in an overcommitted disguise as an old man in a cardigan.",
+      "why": "The only old gravelly British man among the voices found (102 Hz, rough: voiced 0.37).",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "hi-vis": {
+      "id": "whDz1N3rMLec3YLzIcW5",
+      "name": "Barnaby Finch - Charismatic British Man",
+      "character": "The hi-vis man (scout hut MAN, therapy-class HI-VIS)",
+      "gender": "male",
+      "age": "40s",
+      "description": "Natural British charm and a conversational tone, middle-aged: upbeat and a little officious, for the self-appointed facilitator with the clipboard.",
+      "why": "Upbeat and conversational at 164 Hz; apart from Carl (121) and Derek (113).",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "pauline": {
+      "id": "DcADU5DwsQtYalQf4OwN",
+      "name": "Eleanor - Warm British/Midlands Narrator",
+      "character": "Pauline (scout hut WOMAN, therapy class)",
+      "gender": "female",
+      "age": "40s",
+      "description": "A pleasant, clear, mature British female voice (43) with soft Midlands roots and crisp London tones; articulate and comforting. Directed earnest and practical.",
+      "why": "Soft, clear and mature (155 Hz); sits apart from Sue (250) and Jodie (176).",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "sue": {
+      "id": "u2wkVgwUc370otuP3Znh",
+      "name": "Cora - British Corporate Announcer",
+      "character": "Sue",
+      "gender": "female",
+      "age": "50s",
+      "description": "Powerful, energetic British announcer voice. Directed clipped and indignant for the woman who has been careful for forty years and wants it noted.",
+      "why": "The hardest, highest, most projecting British woman found (250 Hz, voiced 0.88): blameless and furious.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "carl": {
+      "id": "IGf4PfRIZaNgvyDUBzOh",
+      "name": "Jordan - Deep, British, Calm Tone",
+      "character": "Carl",
+      "gender": "male",
+      "age": "30s",
+      "description": "Slightly deep, very calm voice with a hint of British accent; some describe it as posh. Directed guarded and flat.",
+      "why": "The flattest British man found (pitch range 22 Hz): guarded, gives nothing away.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "derek": {
+      "id": "J6fZJ9oZVkfNAzrfGJiQ",
+      "name": "David - North London British Narrator",
+      "character": "Derek",
+      "gender": "male",
+      "age": "60s",
+      "description": "A professional British male voice with a natural North London character. Calm, clear, warm and authoritative, measured delivery. Directed slow and certain.",
+      "why": "Warm, measured and authoritative (113 Hz): the sober man who dispenses wisdom. Close to Carl (121) in pitch, apart in accent and pace; swap one if they blur.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    },
+    "sweating-man": {
+      "id": "bTrXJpbeuC5KgriLhQeC",
+      "name": "Peter",
+      "character": "The sweating man in the therapy class",
+      "gender": "male",
+      "age": "40s",
+      "description": "Young British male with a tenor pitch, eager and energetic. Directed nervous and rushing.",
+      "why": "The only tenor found; the class's other men sit at 93-121 Hz.",
+      "source": "library",
+      "note": "A library ElevenLabs voice used as it is (no saved slot: the workspace's 30 custom voices are full). Chosen blind from the preview's measures; nobody has listened.",
+      "rounds": []
+    }
+  },
+  "boardSpeakers": {
+    "ep2-lockup": {
+      "NINA": "nina",
+      "MAN": "blank",
+      "ALAN": "blank"
+    },
+    "ep3-cold-open": {
+      "HARIEL": "hariel",
+      "SOQED": "soqed"
+    },
+    "ep4-cold-open": {
+      "REEK": "reek",
+      "GRAHAM": "blank",
+      "TAMSIN": "tamsin"
+    },
+    "ep4-doorstep": {
+      "MARTIN": "martin",
+      "NINA": "nina"
+    },
+    "ep4-housing-estate": {
+      "ALAN": "blank",
+      "NINA": "nina"
+    },
+    "ep4-kitchen": {
+      "MARTIN": "martin",
+      "NINA": "nina"
+    },
+    "ep4-number-fourteen": {
+      "DANNY": "danny",
+      "JODIE": "jodie",
+      "THE WOMAN": "woman-14"
+    },
+    "ep4-pat-cold-open": {
+      "PAT": "pat",
+      "MALCOLM": "malcolm",
+      "GRAHAM": "blank"
+    },
+    "ep4-pat-house": {
+      "PAT": "pat",
+      "JODIE": "jodie",
+      "DANNY": "danny",
+      "MALCOLM": "malcolm"
+    },
+    "ep4-scout-hut": {
+      "MAN": "hi-vis",
+      "JODIE": "jodie",
+      "DANNY": "danny",
+      "WOMAN": "pauline"
+    },
+    "ep5-pats-night": {
+      "KATH": "kath",
+      "RAY": "ray",
+      "DANNY": "danny",
+      "JODIE": "jodie",
+      "PAT": "pat",
+      "MALCOLM": "malcolm",
+      "NEIL": "blank"
+    },
+    "ep5-therapy-class": {
+      "HI-VIS": "hi-vis",
+      "SUE": "sue",
+      "CARL": "carl",
+      "PAULINE": "pauline",
+      "DEREK": "derek",
+      "DANNY": "danny",
+      "JODIE": "jodie",
+      "MAN": "sweating-man"
     }
   }
 }
