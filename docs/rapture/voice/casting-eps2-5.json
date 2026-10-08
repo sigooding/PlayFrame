@@ -1,0 +1,821 @@
+{
+ "project": "Let the Raptures Commence",
+ "date": "2026-10-08",
+ "status": "PICKED, NOT SAVED: the ElevenLabs workspace is at its custom-voice limit (30 of 30), so creative_save_designed_voice refuses all 16. Nothing below can be recorded until 16 slots are free (or fewer, if characters are made to share a voice).",
+ "note": "Episodes 2-5 add 16 speaking characters that episode one's 13 voices do not cover. Each was designed from the show's cast text (eleven_ttv_v3, three previews per character), measured with scripts/rapture/voice-measure.py and picked BLIND on pitch, range, brightness and pace, with every voice in a scene kept apart from the others in it. Nobody has listened. Preview audio: public/audio/rapture/voices/eps2-5/<key>-<i>.mp3. The generated_voice_ids stay valid for saving only for a limited time; if they have gone, redesign from the descriptions in the first round of voices.json's style. Scout hut MAN is the hi-vis man and its WOMAN is Pauline; the lockup's MAN is Alan.",
+ "speakers": {
+  "ep2-lockup": {
+   "NINA": "nina",
+   "MAN": "alan",
+   "ALAN": "alan"
+  },
+  "ep3-cold-open": {
+   "HARIEL": "hariel",
+   "SOQED": "soqed"
+  },
+  "ep4-cold-open": {
+   "REEK": "reek",
+   "GRAHAM": "graham",
+   "TAMSIN": "tamsin"
+  },
+  "ep4-doorstep": {
+   "MARTIN": "martin",
+   "NINA": "nina"
+  },
+  "ep4-housing-estate": {
+   "ALAN": "alan",
+   "NINA": "nina"
+  },
+  "ep4-kitchen": {
+   "MARTIN": "martin",
+   "NINA": "nina"
+  },
+  "ep4-number-fourteen": {
+   "DANNY": "danny",
+   "JODIE": "jodie",
+   "THE WOMAN": "woman-14"
+  },
+  "ep4-pat-cold-open": {
+   "PAT": "pat",
+   "MALCOLM": "malcolm",
+   "GRAHAM": "graham"
+  },
+  "ep4-pat-house": {
+   "PAT": "pat",
+   "JODIE": "jodie",
+   "DANNY": "danny",
+   "MALCOLM": "malcolm"
+  },
+  "ep4-scout-hut": {
+   "MAN": "hi-vis",
+   "JODIE": "jodie",
+   "DANNY": "danny",
+   "WOMAN": "pauline"
+  },
+  "ep5-pats-night": {
+   "KATH": "kath",
+   "RAY": "ray",
+   "DANNY": "danny",
+   "JODIE": "jodie",
+   "PAT": "pat",
+   "MALCOLM": "malcolm",
+   "NEIL": "neil"
+  },
+  "ep5-therapy-class": {
+   "HI-VIS": "hi-vis",
+   "SUE": "sue",
+   "CARL": "carl",
+   "PAULINE": "pauline",
+   "DEREK": "derek",
+   "DANNY": "danny",
+   "JODIE": "jodie",
+   "MAN": "sweating-man"
+  }
+ },
+ "casting": {
+  "alan": {
+   "character": "Alan",
+   "boards": "ep2-lockup (MAN, ALAN), ep4-housing-estate",
+   "picked": "P8p993I5ZAkgRgm2mIZd",
+   "why": "Closest to the brief's mild mid-range baritone (97.6 Hz); the other two sit at 90.",
+   "previews": [
+    {
+     "id": "P8p993I5ZAkgRgm2mIZd",
+     "picked": true,
+     "file": "voices/eps2-5/alan-0.mp3",
+     "centroid_hz": 999.0,
+     "median_hz": 97.6,
+     "p10_hz": 80.8,
+     "p90_hz": 135.6,
+     "voiced": 0.61,
+     "active_s": 9.83,
+     "dur_s": 21.0,
+     "level_db": -19.3
+    },
+    {
+     "id": "xZQjB9rPHnRpqe7ojM1Y",
+     "picked": false,
+     "file": "voices/eps2-5/alan-1.mp3",
+     "centroid_hz": 1157.0,
+     "median_hz": 89.9,
+     "p10_hz": 74.4,
+     "p90_hz": 122.1,
+     "voiced": 0.54,
+     "active_s": 11.3,
+     "dur_s": 25.39,
+     "level_db": -20.4
+    },
+    {
+     "id": "8iEjCnerH3vYYtOj30Cj",
+     "picked": false,
+     "file": "voices/eps2-5/alan-2.mp3",
+     "centroid_hz": 860.0,
+     "median_hz": 90.9,
+     "p10_hz": 75.1,
+     "p90_hz": 130.1,
+     "voiced": 0.6,
+     "active_s": 11.26,
+     "dur_s": 24.27,
+     "level_db": -19.8
+    }
+   ]
+  },
+  "hariel": {
+   "character": "Hariel",
+   "boards": "ep3-cold-open",
+   "picked": "yyIAEshDj4IExzGdww1k",
+   "why": "Darkest and smoothest of the three (centroid 986 Hz, voiced 0.54): the unbothered plummy baritone, against Soqed's brighter, lighter voice.",
+   "previews": [
+    {
+     "id": "ylUwNhbFUM7TNBgbkboe",
+     "picked": false,
+     "file": "voices/eps2-5/hariel-0.mp3",
+     "centroid_hz": 1195.0,
+     "median_hz": 97.0,
+     "p10_hz": 73.4,
+     "p90_hz": 215.1,
+     "voiced": 0.49,
+     "active_s": 16.54,
+     "dur_s": 29.88,
+     "level_db": -20.5
+    },
+    {
+     "id": "SiQWmh0ozpJZ1fpRJlQD",
+     "picked": false,
+     "file": "voices/eps2-5/hariel-1.mp3",
+     "centroid_hz": 1221.0,
+     "median_hz": 94.7,
+     "p10_hz": 73.8,
+     "p90_hz": 141.6,
+     "voiced": 0.43,
+     "active_s": 16.46,
+     "dur_s": 30.04,
+     "level_db": -20.6
+    },
+    {
+     "id": "yyIAEshDj4IExzGdww1k",
+     "picked": true,
+     "file": "voices/eps2-5/hariel-2.mp3",
+     "centroid_hz": 986.0,
+     "median_hz": 100.6,
+     "p10_hz": 73.7,
+     "p90_hz": 170.2,
+     "voiced": 0.54,
+     "active_s": 16.51,
+     "dur_s": 28.68,
+     "level_db": -19.9
+    }
+   ]
+  },
+  "soqed": {
+   "character": "Soqed",
+   "boards": "ep3-cold-open",
+   "picked": "9Q8YYGhG1h0FfCqSZp3j",
+   "why": "Brightest (centroid 1489 Hz) and 13 Hz above Hariel: the lighter, higher tenor a step behind.",
+   "previews": [
+    {
+     "id": "9Q8YYGhG1h0FfCqSZp3j",
+     "picked": true,
+     "file": "voices/eps2-5/soqed-0.mp3",
+     "centroid_hz": 1489.0,
+     "median_hz": 113.5,
+     "p10_hz": 91.4,
+     "p90_hz": 150.9,
+     "voiced": 0.6,
+     "active_s": 13.1,
+     "dur_s": 30.04,
+     "level_db": -21.5
+    },
+    {
+     "id": "B1YSFFSDdAoxU1iqVaYe",
+     "picked": false,
+     "file": "voices/eps2-5/soqed-1.mp3",
+     "centroid_hz": 1462.0,
+     "median_hz": 114.3,
+     "p10_hz": 90.4,
+     "p90_hz": 150.9,
+     "voiced": 0.57,
+     "active_s": 14.17,
+     "dur_s": 29.31,
+     "level_db": -20.5
+    },
+    {
+     "id": "PvUTbg7aRiAnaUqHZNa6",
+     "picked": false,
+     "file": "voices/eps2-5/soqed-2.mp3",
+     "centroid_hz": 1208.0,
+     "median_hz": 118.1,
+     "p10_hz": 92.3,
+     "p90_hz": 219.2,
+     "voiced": 0.62,
+     "active_s": 13.8,
+     "dur_s": 29.81,
+     "level_db": -20.5
+    }
+   ]
+  },
+  "reek": {
+   "character": "Reek",
+   "boards": "ep4-cold-open",
+   "picked": "T0vufmhBoeTEZtC6k5t1",
+   "why": "Flattest delivery (pitch range 26 Hz) and clearer than the other flat one (reek-2): the weary procedural voice.",
+   "previews": [
+    {
+     "id": "T0vufmhBoeTEZtC6k5t1",
+     "picked": true,
+     "file": "voices/eps2-5/reek-0.mp3",
+     "centroid_hz": 1401.0,
+     "median_hz": 87.4,
+     "p10_hz": 79.6,
+     "p90_hz": 105.3,
+     "voiced": 0.5,
+     "active_s": 17.77,
+     "dur_s": 36.44,
+     "level_db": -21.1
+    },
+    {
+     "id": "x7lZJiuxhjySMsX4dDDk",
+     "picked": false,
+     "file": "voices/eps2-5/reek-1.mp3",
+     "centroid_hz": 1235.0,
+     "median_hz": 89.4,
+     "p10_hz": 76.6,
+     "p90_hz": 118.5,
+     "voiced": 0.42,
+     "active_s": 18.49,
+     "dur_s": 35.87,
+     "level_db": -20.4
+    },
+    {
+     "id": "qJP7mvKaa942nZgxWG4B",
+     "picked": false,
+     "file": "voices/eps2-5/reek-2.mp3",
+     "centroid_hz": 1032.0,
+     "median_hz": 83.8,
+     "p10_hz": 75.8,
+     "p90_hz": 101.3,
+     "voiced": 0.55,
+     "active_s": 19.87,
+     "dur_s": 35.4,
+     "level_db": -20.2
+    }
+   ]
+  },
+  "tamsin": {
+   "character": "Tamsin",
+   "boards": "ep4-cold-open",
+   "picked": "fvVq73RT32GZNZIbB84P",
+   "why": "Bright (centroid 1685 Hz) at 258 Hz; the first is 302 Hz, shrill for the brief's keen investigator.",
+   "previews": [
+    {
+     "id": "uTJ941ZREgRSvAPnjVej",
+     "picked": false,
+     "file": "voices/eps2-5/tamsin-0.mp3",
+     "centroid_hz": 1673.0,
+     "median_hz": 301.9,
+     "p10_hz": 222.2,
+     "p90_hz": 390.2,
+     "voiced": 0.79,
+     "active_s": 11.26,
+     "dur_s": 21.32,
+     "level_db": -21.1
+    },
+    {
+     "id": "fvVq73RT32GZNZIbB84P",
+     "picked": true,
+     "file": "voices/eps2-5/tamsin-1.mp3",
+     "centroid_hz": 1685.0,
+     "median_hz": 258.1,
+     "p10_hz": 188.2,
+     "p90_hz": 355.6,
+     "voiced": 0.73,
+     "active_s": 13.0,
+     "dur_s": 23.95,
+     "level_db": -20.7
+    },
+    {
+     "id": "eP7K8CrLfzW2FOThB7n2",
+     "picked": false,
+     "file": "voices/eps2-5/tamsin-2.mp3",
+     "centroid_hz": 1377.0,
+     "median_hz": 254.0,
+     "p10_hz": 200.0,
+     "p90_hz": 400.0,
+     "voiced": 0.79,
+     "active_s": 11.35,
+     "dur_s": 22.52,
+     "level_db": -20.7
+    }
+   ]
+  },
+  "graham": {
+   "character": "Graham",
+   "boards": "ep4-cold-open, ep4-pat-cold-open",
+   "picked": "P9yEK5Q9Eeg7t9vK4p2w",
+   "why": "Reedy and bright (centroid 1474 Hz, median 170 Hz): keeps him apart from Reek (87) in one scene and Malcolm (124) and Pat (246) in the other.",
+   "previews": [
+    {
+     "id": "P9yEK5Q9Eeg7t9vK4p2w",
+     "picked": true,
+     "file": "voices/eps2-5/graham-0.mp3",
+     "centroid_hz": 1474.0,
+     "median_hz": 170.2,
+     "p10_hz": 103.2,
+     "p90_hz": 400.0,
+     "voiced": 0.58,
+     "active_s": 16.12,
+     "dur_s": 30.12,
+     "level_db": -21.0
+    },
+    {
+     "id": "J3FluaiHQzPon6wp2OWy",
+     "picked": false,
+     "file": "voices/eps2-5/graham-1.mp3",
+     "centroid_hz": 1565.0,
+     "median_hz": 130.1,
+     "p10_hz": 93.0,
+     "p90_hz": 355.6,
+     "voiced": 0.49,
+     "active_s": 16.69,
+     "dur_s": 28.68,
+     "level_db": -20.8
+    },
+    {
+     "id": "8UGFDGxmoj2cn2SigmA5",
+     "picked": false,
+     "file": "voices/eps2-5/graham-2.mp3",
+     "centroid_hz": 1256.0,
+     "median_hz": 168.4,
+     "p10_hz": 100.0,
+     "p90_hz": 372.1,
+     "voiced": 0.54,
+     "active_s": 15.65,
+     "dur_s": 29.81,
+     "level_db": -20.7
+    }
+   ]
+  },
+  "neil": {
+   "character": "Neil",
+   "boards": "ep5-pats-night",
+   "picked": "mA922eP7r0NiP3ORuqVB",
+   "why": "Steady and clean (voiced 0.71) at 138 Hz, above the other men of the scene: Danny 93, Ray 113, Malcolm 124.",
+   "previews": [
+    {
+     "id": "mA922eP7r0NiP3ORuqVB",
+     "picked": true,
+     "file": "voices/eps2-5/neil-0.mp3",
+     "centroid_hz": 1124.0,
+     "median_hz": 137.9,
+     "p10_hz": 87.9,
+     "p90_hz": 225.4,
+     "voiced": 0.71,
+     "active_s": 12.46,
+     "dur_s": 19.15,
+     "level_db": -21.1
+    },
+    {
+     "id": "EgF0o9rUTX09jsVajUZI",
+     "picked": false,
+     "file": "voices/eps2-5/neil-1.mp3",
+     "centroid_hz": 1157.0,
+     "median_hz": 122.1,
+     "p10_hz": 82.5,
+     "p90_hz": 200.0,
+     "voiced": 0.69,
+     "active_s": 15.26,
+     "dur_s": 22.75,
+     "level_db": -19.7
+    },
+    {
+     "id": "tIP2usdKKFJELKtnxr8y",
+     "picked": false,
+     "file": "voices/eps2-5/neil-2.mp3",
+     "centroid_hz": 965.0,
+     "median_hz": 131.1,
+     "p10_hz": 74.1,
+     "p90_hz": 246.2,
+     "voiced": 0.65,
+     "active_s": 13.77,
+     "dur_s": 22.6,
+     "level_db": -21.8
+    }
+   ]
+  },
+  "woman-14": {
+   "character": "The Woman at Number 14",
+   "boards": "ep4-number-fourteen",
+   "picked": "CrmgYxSwy6DSccBE2q08",
+   "why": "Brisk and nasal (centroid 1935 Hz) at 208 Hz; the first is 276 Hz and 2241 Hz bright, too brittle.",
+   "previews": [
+    {
+     "id": "I5fnfHGDvfVs9XVO30rA",
+     "picked": false,
+     "file": "voices/eps2-5/woman-14-0.mp3",
+     "centroid_hz": 2241.0,
+     "median_hz": 275.9,
+     "p10_hz": 177.8,
+     "p90_hz": 381.0,
+     "voiced": 0.58,
+     "active_s": 15.23,
+     "dur_s": 23.41,
+     "level_db": -22.6
+    },
+    {
+     "id": "CrmgYxSwy6DSccBE2q08",
+     "picked": true,
+     "file": "voices/eps2-5/woman-14-1.mp3",
+     "centroid_hz": 1935.0,
+     "median_hz": 207.8,
+     "p10_hz": 148.1,
+     "p90_hz": 284.7,
+     "voiced": 0.55,
+     "active_s": 17.08,
+     "dur_s": 23.48,
+     "level_db": -22.3
+    },
+    {
+     "id": "Su7EM8zQ3jz6MnM04Xds",
+     "picked": false,
+     "file": "voices/eps2-5/woman-14-2.mp3",
+     "centroid_hz": 1562.0,
+     "median_hz": 231.9,
+     "p10_hz": 150.9,
+     "p90_hz": 320.0,
+     "voiced": 0.62,
+     "active_s": 16.05,
+     "dur_s": 25.31,
+     "level_db": -22.7
+    }
+   ]
+  },
+  "pat": {
+   "character": "Pat",
+   "boards": "ep4-pat-cold-open, ep4-pat-house, ep5-pats-night",
+   "picked": "ns9xHgScVWL4t0j04jZd",
+   "why": "Highest and cleanest old woman (246 Hz, voiced 0.71) and 53 Hz above Kath, 70 above Jodie, the women she shares scenes with.",
+   "previews": [
+    {
+     "id": "ns9xHgScVWL4t0j04jZd",
+     "picked": true,
+     "file": "voices/eps2-5/pat-0.mp3",
+     "centroid_hz": 1722.0,
+     "median_hz": 246.2,
+     "p10_hz": 172.0,
+     "p90_hz": 381.0,
+     "voiced": 0.71,
+     "active_s": 16.5,
+     "dur_s": 36.68,
+     "level_db": -22.2
+    },
+    {
+     "id": "hB5Dat1k5FdGhdurtJHY",
+     "picked": false,
+     "file": "voices/eps2-5/pat-1.mp3",
+     "centroid_hz": 1809.0,
+     "median_hz": 216.2,
+     "p10_hz": 131.1,
+     "p90_hz": 372.1,
+     "voiced": 0.6,
+     "active_s": 20.43,
+     "dur_s": 34.93,
+     "level_db": -22.3
+    },
+    {
+     "id": "VLcFWjnfe71JYXzcC6gY",
+     "picked": false,
+     "file": "voices/eps2-5/pat-2.mp3",
+     "centroid_hz": 1312.0,
+     "median_hz": 219.2,
+     "p10_hz": 150.9,
+     "p90_hz": 355.6,
+     "voiced": 0.73,
+     "active_s": 19.61,
+     "dur_s": 39.47,
+     "level_db": -22.4
+    }
+   ]
+  },
+  "malcolm": {
+   "character": "Malcolm",
+   "boards": "ep4-pat-cold-open, ep4-pat-house, ep5-pats-night",
+   "picked": "4TXxwkBTss7hfwYlPZLF",
+   "why": "Lowest and roughest of the three (124 Hz, widest range 212 Hz): the gravelly old man.",
+   "previews": [
+    {
+     "id": "FbROgboF6bmGYhIwdn3q",
+     "picked": false,
+     "file": "voices/eps2-5/malcolm-0.mp3",
+     "centroid_hz": 1494.0,
+     "median_hz": 142.9,
+     "p10_hz": 105.3,
+     "p90_hz": 243.9,
+     "voiced": 0.56,
+     "active_s": 14.5,
+     "dur_s": 23.88,
+     "level_db": -21.5
+    },
+    {
+     "id": "4TXxwkBTss7hfwYlPZLF",
+     "picked": true,
+     "file": "voices/eps2-5/malcolm-1.mp3",
+     "centroid_hz": 1511.0,
+     "median_hz": 124.0,
+     "p10_hz": 87.4,
+     "p90_hz": 299.7,
+     "voiced": 0.53,
+     "active_s": 17.79,
+     "dur_s": 32.91,
+     "level_db": -20.8
+    },
+    {
+     "id": "OX5NGeT8HvvfNRg7KxNc",
+     "picked": false,
+     "file": "voices/eps2-5/malcolm-2.mp3",
+     "centroid_hz": 1346.0,
+     "median_hz": 136.8,
+     "p10_hz": 96.2,
+     "p90_hz": 271.2,
+     "voiced": 0.51,
+     "active_s": 16.26,
+     "dur_s": 23.07,
+     "level_db": -21.7
+    }
+   ]
+  },
+  "hi-vis": {
+   "character": "The hi-vis man",
+   "boards": "ep4-scout-hut (MAN), ep5-therapy-class (HI-VIS)",
+   "picked": "FeDaYtkR705gapcdu54I",
+   "why": "Mid-range (140 Hz, 1477 Hz bright): clear of Carl and Derek (110-115 Hz) and of the sweating man (190 Hz).",
+   "previews": [
+    {
+     "id": "82BIKoFqEekPq3qUHXPE",
+     "picked": false,
+     "file": "voices/eps2-5/hi-vis-0.mp3",
+     "centroid_hz": 1361.0,
+     "median_hz": 155.3,
+     "p10_hz": 110.3,
+     "p90_hz": 347.8,
+     "voiced": 0.58,
+     "active_s": 13.7,
+     "dur_s": 24.35,
+     "level_db": -21.2
+    },
+    {
+     "id": "FeDaYtkR705gapcdu54I",
+     "picked": true,
+     "file": "voices/eps2-5/hi-vis-1.mp3",
+     "centroid_hz": 1477.0,
+     "median_hz": 140.4,
+     "p10_hz": 100.0,
+     "p90_hz": 218.9,
+     "voiced": 0.47,
+     "active_s": 15.85,
+     "dur_s": 23.64,
+     "level_db": -21.0
+    },
+    {
+     "id": "83gJwJx6H0ZoaJ4JUBnf",
+     "picked": false,
+     "file": "voices/eps2-5/hi-vis-2.mp3",
+     "centroid_hz": 1190.0,
+     "median_hz": 145.5,
+     "p10_hz": 107.0,
+     "p90_hz": 228.6,
+     "voiced": 0.55,
+     "active_s": 16.15,
+     "dur_s": 23.95,
+     "level_db": -22.1
+    }
+   ]
+  },
+  "pauline": {
+   "character": "Pauline",
+   "boards": "ep4-scout-hut (WOMAN), ep5-therapy-class",
+   "picked": "9n6knMglHH2G2qeL8bKD",
+   "why": "The soft, dark one (centroid 1008 Hz) at 188 Hz: against Jodie's bright flat 176 Hz and Sue's hard 258 Hz.",
+   "previews": [
+    {
+     "id": "nj6j96RrzDsKJOzzPOmU",
+     "picked": false,
+     "file": "voices/eps2-5/pauline-0.mp3",
+     "centroid_hz": 1175.0,
+     "median_hz": 192.8,
+     "p10_hz": 149.5,
+     "p90_hz": 259.8,
+     "voiced": 0.69,
+     "active_s": 15.29,
+     "dur_s": 30.43,
+     "level_db": -19.5
+    },
+    {
+     "id": "ADw9bcTybhLJ91zqTsuR",
+     "picked": false,
+     "file": "voices/eps2-5/pauline-1.mp3",
+     "centroid_hz": 1297.0,
+     "median_hz": 170.2,
+     "p10_hz": 148.1,
+     "p90_hz": 210.5,
+     "voiced": 0.67,
+     "active_s": 15.65,
+     "dur_s": 30.93,
+     "level_db": -19.9
+    },
+    {
+     "id": "9n6knMglHH2G2qeL8bKD",
+     "picked": true,
+     "file": "voices/eps2-5/pauline-2.mp3",
+     "centroid_hz": 1008.0,
+     "median_hz": 188.2,
+     "p10_hz": 146.8,
+     "p90_hz": 254.0,
+     "voiced": 0.69,
+     "active_s": 15.66,
+     "dur_s": 29.57,
+     "level_db": -19.8
+    }
+   ]
+  },
+  "sue": {
+   "character": "Sue",
+   "boards": "ep5-therapy-class",
+   "picked": "GqvO9kr64X9BedHlAP4b",
+   "why": "Highest, hardest and brightest (258 Hz, 1660 Hz): the clipped, indignant voice that rises.",
+   "previews": [
+    {
+     "id": "GqvO9kr64X9BedHlAP4b",
+     "picked": true,
+     "file": "voices/eps2-5/sue-0.mp3",
+     "centroid_hz": 1660.0,
+     "median_hz": 258.1,
+     "p10_hz": 207.8,
+     "p90_hz": 390.2,
+     "voiced": 0.75,
+     "active_s": 14.31,
+     "dur_s": 25.16,
+     "level_db": -22.5
+    },
+    {
+     "id": "gIPbELVJTsa7vwi5sdRO",
+     "picked": false,
+     "file": "voices/eps2-5/sue-1.mp3",
+     "centroid_hz": 1711.0,
+     "median_hz": 202.5,
+     "p10_hz": 154.1,
+     "p90_hz": 275.9,
+     "voiced": 0.66,
+     "active_s": 17.38,
+     "dur_s": 28.45,
+     "level_db": -21.1
+    },
+    {
+     "id": "SY7yk4x9X7u1L9scwxrP",
+     "picked": false,
+     "file": "voices/eps2-5/sue-2.mp3",
+     "centroid_hz": 1388.0,
+     "median_hz": 242.4,
+     "p10_hz": 172.0,
+     "p90_hz": 355.6,
+     "voiced": 0.71,
+     "active_s": 17.45,
+     "dur_s": 27.95,
+     "level_db": -22.2
+    }
+   ]
+  },
+  "carl": {
+   "character": "Carl",
+   "boards": "ep5-therapy-class",
+   "picked": "wFF6BgZSziFDR3yJo1mP",
+   "why": "Brighter than the second (centroid 1130 Hz at 112 Hz); close to Derek in pitch, apart in brightness and pace (Derek is the slowest voice of the set). Preview 1 was not downloaded (a retyped link failed).",
+   "previews": [
+    {
+     "id": "wFF6BgZSziFDR3yJo1mP",
+     "picked": true,
+     "file": "voices/eps2-5/carl-0.mp3",
+     "centroid_hz": 1130.0,
+     "median_hz": 111.9,
+     "p10_hz": 87.9,
+     "p90_hz": 146.8,
+     "voiced": 0.59,
+     "active_s": 11.11,
+     "dur_s": 16.85,
+     "level_db": -19.3
+    },
+    {
+     "id": "NewCZyUSpgh7zewmXHqn",
+     "picked": false,
+     "file": null
+    },
+    {
+     "id": "mDNss7PAjC3p5zmpC9GP",
+     "picked": false,
+     "file": "voices/eps2-5/carl-2.mp3",
+     "centroid_hz": 986.0,
+     "median_hz": 107.7,
+     "p10_hz": 82.5,
+     "p90_hz": 134.5,
+     "voiced": 0.58,
+     "active_s": 11.77,
+     "dur_s": 19.07,
+     "level_db": -19.8
+    }
+   ]
+  },
+  "derek": {
+   "character": "Derek",
+   "boards": "ep5-therapy-class",
+   "picked": "t9tinj4x1VbNCazJZDrK",
+   "why": "Darkest and slowest (centroid 897 Hz, 28 s): the resonant, sure, insufferable baritone; the 96 Hz one sat on top of Danny (93).",
+   "previews": [
+    {
+     "id": "pJ7xkmAwfzFTnNTJfiHw",
+     "picked": false,
+     "file": "voices/eps2-5/derek-0.mp3",
+     "centroid_hz": 1073.0,
+     "median_hz": 109.6,
+     "p10_hz": 82.9,
+     "p90_hz": 213.3,
+     "voiced": 0.54,
+     "active_s": 16.87,
+     "dur_s": 28.45,
+     "level_db": -20.7
+    },
+    {
+     "id": "iIIdt8rH38zr3Of9Qk2O",
+     "picked": false,
+     "file": "voices/eps2-5/derek-1.mp3",
+     "centroid_hz": 1196.0,
+     "median_hz": 96.4,
+     "p10_hz": 76.2,
+     "p90_hz": 134.9,
+     "voiced": 0.57,
+     "active_s": 16.48,
+     "dur_s": 25.0,
+     "level_db": -20.4
+    },
+    {
+     "id": "t9tinj4x1VbNCazJZDrK",
+     "picked": true,
+     "file": "voices/eps2-5/derek-2.mp3",
+     "centroid_hz": 897.0,
+     "median_hz": 115.1,
+     "p10_hz": 81.6,
+     "p90_hz": 164.9,
+     "voiced": 0.57,
+     "active_s": 18.74,
+     "dur_s": 28.29,
+     "level_db": -20.4
+    }
+   ]
+  },
+  "sweating-man": {
+   "character": "The sweating man",
+   "boards": "ep5-therapy-class (MAN)",
+   "picked": "hNvrrKBvVmdOQxaNwHkR",
+   "why": "Fastest (18.7 s: he rushes) and highest (190 Hz) of the three: the strained, thin tenor.",
+   "previews": [
+    {
+     "id": "hNvrrKBvVmdOQxaNwHkR",
+     "picked": true,
+     "file": "voices/eps2-5/sweating-man-0.mp3",
+     "centroid_hz": 1453.0,
+     "median_hz": 190.5,
+     "p10_hz": 113.5,
+     "p90_hz": 301.9,
+     "voiced": 0.63,
+     "active_s": 12.66,
+     "dur_s": 18.68,
+     "level_db": -20.1
+    },
+    {
+     "id": "cMcMQCMzK41HnsxVtSoq",
+     "picked": false,
+     "file": "voices/eps2-5/sweating-man-1.mp3",
+     "centroid_hz": 1470.0,
+     "median_hz": 124.0,
+     "p10_hz": 96.4,
+     "p90_hz": 170.2,
+     "voiced": 0.51,
+     "active_s": 15.37,
+     "dur_s": 23.95,
+     "level_db": -20.9
+    },
+    {
+     "id": "0Wh3qImhsvWixBU3fkYh",
+     "picked": false,
+     "file": "voices/eps2-5/sweating-man-2.mp3",
+     "centroid_hz": 1295.0,
+     "median_hz": 158.4,
+     "p10_hz": 100.0,
+     "p90_hz": 250.0,
+     "voiced": 0.59,
+     "active_s": 15.75,
+     "dur_s": 26.2,
+     "level_db": -20.7
+    }
+   ]
+  }
+ }
+}
