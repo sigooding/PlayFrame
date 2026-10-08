@@ -14,10 +14,13 @@ const voices = JSON.parse(readFileSync(resolve(root, "docs/rapture/voice/voices.
 const manifest = JSON.parse(readFileSync(resolve(root, "docs/rapture/voice/manifest.json"), "utf8"));
 const plan = JSON.parse(readFileSync(resolve(root, "docs/rapture/voice/elevenlabs-plan-ep1.json"), "utf8"));
 const pages = readEpisode(root).filter(page => page.lines.length);
+// Episodes two to five: the twelve shot boards (docs/rapture/voice/manifest-scenes.json), played after episode one's pages.
+const sceneManifest = JSON.parse(readFileSync(resolve(root, "docs/rapture/voice/manifest-scenes.json"), "utf8"));
+const boards = JSON.parse(readFileSync(resolve(root, "docs/rapture/voice/elevenlabs-plan-scenes.json"), "utf8")).boards;
 
 const rel = file => file.replace(/^\/audio\/rapture\//, "");
 const meanBy = new Map();
-for (const line of manifest.lines) { const m = meanBy.get(line.voice) ?? []; m.push(line.rmsdb); meanBy.set(line.voice, m); }
+for (const line of [...manifest.lines, ...sceneManifest.lines]) { const m = meanBy.get(line.voice) ?? []; m.push(line.rmsdb); meanBy.set(line.voice, m); }
 const mean = voice => { const m = meanBy.get(voice); return m ? m.reduce((a, b) => a + b, 0) / m.length : null; };
 const quietest = Math.min(...[...meanBy.keys()].map(mean));
 const gain = {};
@@ -37,8 +40,12 @@ const data = {
       const row = plan.lines.find(p => p.id === l.id);
       return { id: l.id, speaker: l.speaker, voice: row.voice, text: l.text, tag: row.tag, gap: l.gap, gapKind: l.gapKind, gapNote: l.gapNote || "", file: rec ? rel(rec.file) : null, duration: rec?.duration ?? null, db: rec?.rmsdb ?? null };
     }),
-  })),
-  gain, recorded: manifest.recorded, planned: manifest.planned,
+  })).concat(boards.map(board => ({
+    id: board.id, title: board.title, lines: sceneManifest.lines.filter(l => l.page === board.id).map(l => (
+      { id: l.id, speaker: l.speaker, voice: l.voice, text: l.text, tag: l.tag, gap: l.gap, gapKind: l.gapKind, gapNote: l.gapNote || "", file: rel(l.file), duration: l.duration, db: l.rmsdb }
+    )),
+  }))),
+  gain, recorded: manifest.recorded + sceneManifest.recorded, planned: manifest.planned + sceneManifest.planned,
 };
 const json = JSON.stringify(data).replace(/<\//g, "<\\/");
 
@@ -77,8 +84,8 @@ button:hover { background:var(--accent); color:var(--bg); } button.on { backgrou
 <body>
 <main>
 <h1>Let the Raptures Commence: voices</h1>
-<p class="muted">Episode one, the draft of 21 September 2026. <span id="count"></span></p>
-<p><strong>Nobody has listened to any of this.</strong> Every voice was designed from the show bible's cast text and picked <em>blind</em>, by measured pitch, range, brightness and pace. The cast section lists every preview of every voice so you can pick by ear; the table read plays the recorded lines in screenplay order with the pauses the script spells out (the rest are estimates). Jodie is a light young adult voice: the design tool refuses a child's.</p>
+<p class="muted">Episode one (the draft of 21 September 2026), then episodes two to five (the twelve shot boards, which carry their own dialogue). <span id="count"></span></p>
+<p><strong>Nobody has listened to any of this.</strong> Every voice was designed from the show bible's cast text and picked <em>blind</em>, by measured pitch, range, brightness and pace. The cast section lists every preview of every voice so you can pick by ear; the table read plays the recorded lines in screenplay order with the pauses the script spells out (the rest are estimates). Jodie is a light young adult voice: the design tool refuses a child's. Episodes two to five add 14 characters; the workspace's 30 custom-voice slots were full, so they speak in ready-made ElevenLabs voices used as they are (picked blind from measured previews; the 16 designs made for them are auditions in <code>voices/eps2-5/</code>, never saved).</p>
 
 <h2>Table read</h2>
 <p class="muted">Press <em>Play scene</em>, or any line. Lines play at their place on the scene's timeline; the written pauses ("Four seconds of nothing", "An eight-second pause") are locked, the others are guesses for the action between lines.</p>

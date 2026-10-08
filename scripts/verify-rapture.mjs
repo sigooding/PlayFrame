@@ -315,7 +315,7 @@ assert(coStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe
 assert(coStudies.every(f => f.status === "Draft" && f.image.startsWith("/images/rapture/ep4-cold-open/")), "Generated cold-open studies are draft keyframes in the right folder");
 assert(coldOpen.every((f, i) => f.id === "rapture-ep4co-" + String(i + 1).padStart(2, "0")), "Cold-open numbering must be contiguous");
 assert(coldOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "Cold-open cameras never move and all timings are estimates");
-assert.equal(coldOpen.reduce((n, f) => n + f.duration, 0), 172);
+assert.equal(coldOpen.reduce((n, f) => n + f.duration, 0), 184, "Graham's interview: the board's 172s, 12s of it added to hold the recorded dialogue");
 assert(coldOpen[2].notes.includes("(6s)") && coldOpen[14].notes.includes("(12s)"), "The six-second pause and twelve-second hold stay locked in the timing notes");
 assert(coldOpen[0].notes.includes("11:04:22") && coldOpen[9].notes.includes("15:31:52") && coldOpen[15].notes.includes("16:21:05"), "The burnt-in timecode values are reproduced verbatim");
 assert.equal(coldOpen.filter(f => f.notes.includes("most firms come unstuck")).length, 2, "Shot 15 repeats the shot-10 clause exactly");
@@ -339,7 +339,7 @@ assert(angelStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyfr
 assert(angelOpen.every((f, i) => f.id === "rapture-ep3co-" + String(i + 1).padStart(2, "0")), "Angel cold-open numbering must be contiguous");
 assert(angelOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "The angels' cameras never move and all timings are estimates");
 assert(angelOpen.every(f => ["Wide", "Medium", "Insert", "Two-shot"].includes(f.shotType)), "The angel grammar stays composed");
-assert.equal(angelOpen.reduce((n, f) => n + f.duration, 0), 125);
+assert.equal(angelOpen.reduce((n, f) => n + f.duration, 0), 132, "The angels' cold open: the board's 125s, 7s of it added to hold the recorded dialogue");
 assert(angelOpen[11].shotType === "Insert" && angelOpen[11].notes.includes("Nothing wrong with them"), "The eyes insert keeps its joke intact");
 assert(angelOpen[0].notes.includes("(8s)"), "The eight-second pause stays locked in the timing notes");
 assert(angelOpen[0].notes.includes("Where would you keep a computer") && angelOpen[9].notes.includes("He's nobody's") && angelOpen[12].notes.includes("Because they haven't"), "The angel dialogue survives verbatim into the notes");
@@ -362,7 +362,7 @@ assert(patMissing.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.
 assert(patStudies.every(f => f.status === "Draft" && !f.title.endsWith("(keyframe missing)") && f.image.startsWith("/images/rapture/ep4-pat-cold-open/")), "Pat studies are draft keyframes in the right folder");
 assert(patOpen.every((f, i) => f.id === "rapture-ep4pco-" + String(i + 1).padStart(2, "0")), "Pat cold-open numbering must be contiguous");
 assert(patOpen.every(f => f.movement === "Static" && f.durationIsEstimate === true), "Pat cameras never move and all timings are estimates");
-assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 151);
+assert.equal(patOpen.reduce((n, f) => n + f.duration, 0), 162, "Pat's cold open: the board's 151s, 11s of it added to hold the recorded dialogue");
 assert(patOpen[0].notes.includes("(10s)") && patOpen[10].notes.includes("(10s)") && patOpen[13].notes.includes("(12s)"), "The two ten-second holds and the twelve-second hold stay locked in the timing notes");
 assert(patOpen[0].notes.includes("16:12:04") && patOpen[1].notes.includes("17:40:19") && patOpen[13].notes.includes("19:51:32"), "The burnt-in evening timecode values are reproduced verbatim");
 assert(patOpen[13].notes.includes("smiles at the window") && patOpen[13].notes.includes("nobody at the window"), "Shot 14 keeps the smile and its empty window");
@@ -380,7 +380,7 @@ assert.equal(patHouseStudies.length, 35, "All thirty-five Scene 2 shots carry th
 assert.equal(patHouseMissingCards.length, 0, "No Scene 2 placeholder cards remain");
 assert(patHouseMissingCards.every(f => f.title.endsWith(" (keyframe missing)") && f.notes.startsWith("KEYFRAME MISSING") && f.status === "Needs review"), "Scene 2 placeholder cards hold their numbered slots honestly");
 assert(patHouse.every((f, i) => f.id === "rapture-ep4ph-" + String(i + 1).padStart(2, "0")), "Scene 2 numbering must be contiguous");
-assert.equal(patHouse.reduce((n, f) => n + f.duration, 0), 305);
+assert.equal(patHouse.reduce((n, f) => n + f.duration, 0), 308, "Pat's house: the board's 305s, 3s of it added to hold the recorded dialogue");
 const frontShots = [0, 1, 2, 4, 5, 6, 7, 10, 11, 22, 23, 24, 25, 26, 27, 28, 29];
 const demonShots = [30, 31];
 assert(patHouse.every((f, i) => (frontShots.includes(i) || demonShots.includes(i)) ? f.movement === "Static" : f.movement === "Handheld"), "Her grammar and the demon grammar never move; the Crane grammar always does");
@@ -405,7 +405,7 @@ assert(scoutHut.every((f, i) => f.id === "rapture-ep4hut-" + String(i + 1).padSt
 assert(scoutHut.every(f => f.movement === "Handheld" && f.durationIsEstimate === true), "The scout hut is all handheld and all estimates");
 assert(["Medium", "Close-up", "Insert", "Two-shot", "Medium close-up", "Wide"].every(t => t !== "x") || true);
 assert(scoutHut[16].shotType === "Wide" && scoutHut.slice(0, 16).every(f => f.shotType !== "Wide"), "Shot 17 is the only wide, and it is earned");
-assert.equal(scoutHut.reduce((n, f) => n + f.duration, 0), 159);
+assert.equal(scoutHut.reduce((n, f) => n + f.duration, 0), 161, "The scout hut: the board's 159s, 2s of it added to hold the recorded dialogue");
 assert(scoutHut[1].notes.includes("DANNY: Tomorrow.") && scoutHut[6].notes.includes("(Pause.)"), "Tomorrow and the untimed pause stay in the notes");
 assert(scoutHut[13].notes.includes("She does though"), "Jodie's last word survives");
 assert(scoutHut[15].notes.includes("Not in his handwriting"), "The rota insert keeps its point");
@@ -485,7 +485,7 @@ assert(kitchen.every(f => f.movement === "Static"), "Locked off all the way thro
 assert(kitchen.every((f, i) => (f.lighting === "Natural daylight") === (i >= 21)), "Fluorescent in the house, daylight on the street");
 assert(kitchen.every((f, i) => (f.lightingNotes.includes("a hair wrong") !== (i >= 21)) && (f.lightingNotes.includes("symmetrical, dead centre") === (i >= 21))), "Every kitchen frame inherits exactly one grammar");
 assert(kitchen.every(f => f.characters.every(id => ["rapture-nina", "rapture-martin"].includes(id))), "Nobody else is in the kitchen");
-assert.equal(kitchen.reduce((n, f) => n + f.duration, 0), 365, "The kitchen's editorial estimate is 365 seconds (353 + 12 for 22a)");
+assert.equal(kitchen.reduce((n, f) => n + f.duration, 0), 367, "The kitchen: the editorial estimate of 365 seconds (353 + 12 for 22a), 2s of it added to hold the recorded dialogue");
 assert.deepEqual(kitchen.map((f, i) => f.shotType === "Insert" ? i : -1).filter(i => i >= 0), [1, 8], "The tap and the untouched mug are the only inserts; the machine is never cut to");
 assert(kitchen[14].duration >= 16, "The eight-second wait in shot 15 cannot be cut for length without asking first");
 assert(kitchen[14].notes.includes("eight seconds"), "The wait is written into the card so it survives to the animatic");
@@ -528,9 +528,9 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
   assert.equal(voice.planned, 166);
   const wanted = voice.lines.filter(l => l.page === "ep1-07" || l.page === "ep1-08");
   assert.equal(wanted.length, 53, "33 lines of Danny and Jodie and 20 of the cops' second beat");
-  const voiced = project.frames.filter(f => f.audio?.length);
+  const voiced = project.frames.filter(f => f.audio?.length && /^rapture-ep1(dj|c2)-/.test(f.id));
   assert.deepEqual(voiced.map(f => f.id), ["rapture-ep1dj-02", "rapture-ep1dj-05", "rapture-ep1dj-06", "rapture-ep1dj-09", "rapture-ep1dj-10", "rapture-ep1dj-12", "rapture-ep1dj-16", "rapture-ep1dj-19", "rapture-ep1dj-20", "rapture-ep1c2-01", "rapture-ep1c2-03", "rapture-ep1c2-05"], "the twelve frames that speak, in scene order");
-  assert(project.frames.filter(f => !voiced.includes(f)).every(f => f.audio === undefined), "every other frame stays silent");
+  assert(project.frames.filter(f => !voiced.includes(f) && /^rapture-ep1(dj|c2)-/.test(f.id)).every(f => f.audio === undefined), "every other frame of the two boards stays silent");
   const attached = voiced.flatMap(frame => frame.audio.map(clip => ({ frame, clip })));
   assert.deepEqual(attached.map(x => x.clip.id), wanted.map(l => l.id), "every recorded line of the two pages is on a frame, once, in the draft's order");
   for (const { frame, clip } of attached) {
@@ -558,7 +558,7 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
   assert(Math.abs(c1[6].offset - (c1[5].offset + c1[5].duration) - 6) < 0.05, "\"(Pause. Six seconds.)\" separates \"They do.\" from \"I only tasered him.\"");
   assert(!byId.get("rapture-ep1c2-03").notes.includes("lengthened") && byId.get("rapture-ep1c2-01").notes.includes("lengthened so the recorded dialogue fits"), "a frame's note says so when the dialogue lengthened it");
   // The portable file carries the dialogue through the existing backup/import path.
-  assert.deepEqual(JSON.parse(JSON.stringify(imported.frames.filter(f => f.audio?.length).map(f => [f.id, f.audio]))), voiced.map(f => [f.id, f.audio]), "the dialogue survives sanitizeImport unchanged");
+  assert.deepEqual(JSON.parse(JSON.stringify(imported.frames.filter(f => f.audio?.length && /^rapture-ep1(dj|c2)-/.test(f.id)).map(f => [f.id, f.audio]))), voiced.map(f => [f.id, f.audio]), "the dialogue survives sanitizeImport unchanged");
   // Every take has been through the repeat screen (voice-screen.mjs); a flagged one needs a transcript that matches its line.
   for (const line of voice.lines) {
     assert(Number.isInteger(line.phrases) && Number.isInteger(line.expected), `${line.id}: run voice-screen.mjs --fill`);
@@ -576,10 +576,85 @@ pass("Episode One revised running order: Danny and Jodie (21) and cops second be
   pass(`${attached.length} recorded lines sit on ${voiced.length} frames (Danny and Jodie ${attached.filter(x => x.frame.sceneId === "rapture-ep1-danny-jodie").length}, the cops' second beat ${attached.filter(x => x.frame.sceneId === "rapture-ep1-cops-second").length}), in the draft's order with its written holds, lengthened never shortened; all 166 takes screened, ${rerecorded.length} re-recorded and archived`);
 }
 
+// Episodes two to five: the twelve shot boards that have no screenplay draft (docs/rapture/voice/manifest-scenes.json: 502 lines) carry their
+// own dialogue, each line on the frame of the shot it is written in, so 151 frames speak in all (12 of episode one's, 139 of these).
+{
+  const voice = JSON.parse(read("docs/rapture/voice/manifest-scenes.json"));
+  const plan = JSON.parse(read("docs/rapture/voice/elevenlabs-plan-scenes.json"));
+  const { TAIL } = await import(pathToFileURL(join(root, "scripts/rapture/voice-frames.mjs")));
+  const { sameWords } = await import(pathToFileURL(join(root, "scripts/rapture/voice-screen.mjs")));
+  const { BOARDS, readBoards } = await import(pathToFileURL(join(root, "scripts/rapture/board-script.mjs")));
+  assert.equal(voice.recorded, 502);
+  assert.equal(voice.planned, 502);
+  assert.equal(plan.lines.length, 502);
+  assert.deepEqual(voice.lines.map(l => l.id), plan.lines.map(l => l.id), "every planned line is recorded, in the plan's order");
+  // The boards themselves are the authority: a reworded or added line stops here until it is re-recorded.
+  const boards = readBoards(root);
+  assert.deepEqual(boards.map(b => b.lines.length), [24, 25, 46, 45, 17, 70, 36, 9, 43, 36, 78, 73], "the spoken lines of each board");
+  assert.deepEqual(boards.flatMap(b => b.lines).map(l => [l.id, l.shot, l.text]), voice.lines.map(l => [l.id, l.shot, l.text]), "the boards say what was recorded");
+  const spoken = project.frames.filter(f => f.audio?.length);
+  const ep25 = spoken.filter(f => !/^rapture-ep1(dj|c2)-/.test(f.id));
+  assert.equal(spoken.length, 151, "151 frames speak: 12 of episode one's two boards and 139 of episodes two to five");
+  const clips = ep25.flatMap(frame => frame.audio.map(clip => ({ frame, clip })));
+  assert.equal(clips.length, 502, "every recorded line of episodes two to five is on a frame, once");
+  const order = new Map(project.scenes.map((s, i) => [s.id, i]));
+  for (const board of BOARDS) {
+    const lines = voice.lines.filter(l => l.page === board.id);
+    const onBoard = clips.filter(x => x.frame.sceneId === board.sceneId);
+    assert.deepEqual(onBoard.map(x => x.clip.id), lines.map(l => l.id), `${board.id}: every line is on a frame of ${board.sceneId}, once, in the board's order`);
+  }
+  for (const { frame, clip } of clips) {
+    const line = voice.lines.find(l => l.id === clip.id);
+    assert.equal(clip.text, line.text, `${clip.id}: the frame carries the board's words`);
+    assert.equal(clip.character, line.speaker);
+    assert.equal(clip.src, line.file);
+    assert.equal(clip.duration, line.duration);
+    assert.equal(clip.voice, line.voiceId);
+    assert.equal(clip.model, "eleven_v4");
+    assert(existsSync(join(root, "public" + clip.src)), `${clip.src} is on disk`);
+    assert(frame.notes.includes(`\n${line.shot}. `) || frame.notes.includes(`${line.shot}. `), `${clip.id}: the frame is the shot the line is written in (shot ${line.shot})`);
+  }
+  for (const frame of ep25) {
+    const cs = frame.audio;
+    assert(cs.every((c, i) => c.offset >= 0 && (i === 0 || c.offset >= cs[i - 1].offset + cs[i - 1].duration - 1e-9)), `${frame.id}: lines do not overlap and run in order`);
+    const last = cs[cs.length - 1];
+    assert(last.offset + last.duration + TAIL <= frame.duration + 1e-9, `${frame.id}: the last word has ${TAIL}s of air before the cut`);
+    const was = frame.notes.match(/\(the board's (\d+)s, lengthened/);
+    if (was) assert(frame.duration > Number(was[1]), `${frame.id}: the note says lengthened, so it is longer than the board's estimate`);
+    assert(frame.notes.includes("Recorded dialogue: "), `${frame.id}: the note lists where the takes sit`);
+  }
+  // A board that writes a hold puts it before the first word (Pat's night, the therapy class, the doorstep)
+  for (const line of voice.lines.filter(l => l.gapKind === "written")) {
+    const x = clips.find(c => c.clip.id === line.id);
+    const first = x.frame.audio[0] === x.clip;
+    if (first) assert(Math.abs(x.clip.offset - line.gap) < 1e-9, `${line.id}: the written hold of ${line.gap}s comes before the first word of its frame`);
+  }
+  // Every take has been through the repeat screen; a flagged one has a transcript that matches its line or is cleared with a reason.
+  for (const line of voice.lines) {
+    assert(Number.isInteger(line.phrases) && Number.isInteger(line.expected), `${line.id}: screened`);
+    assert(line.phrases <= line.expected || (line.heard && sameWords(line.text, line.heard)) || line.cleared, `${line.id} has ${line.phrases} phrases for a line of ${line.expected} and nothing that clears it`);
+    assert(existsSync(join(root, "public" + line.file)), `${line.file} is on disk`);
+  }
+  const flaggedKept = voice.lines.filter(l => l.phrases > l.expected);
+  assert.deepEqual(flaggedKept.map(l => l.key), ["S255", "S337", "S412", "S444"], "the four first takes the screen flagged and the alternates cleared");
+  for (const line of flaggedKept) assert(existsSync(join(root, line.cleared.match(/\((public[^)]+)\)/)[1])), `${line.id}: the cleared alternate is kept`);
+  // The one take that was replaced: S385 ("Shh.") said it twice; its first take is archived beside the nine alternates.
+  const rerecorded = voice.lines.filter(l => l.rerecorded);
+  assert.deepEqual(rerecorded.map(l => l.key), ["S385"]);
+  const v1 = readFileSync(join(root, "public/audio/rapture/scenes/alternates/S385--v1.mp3"));
+  assert(!v1.equals(readFileSync(join(root, "public" + rerecorded[0].file))), "S385: the archive holds the first take, not the one in use");
+  const alt = JSON.parse(read("docs/rapture/voice/scenes-alt-meta.json"));
+  assert.equal(Object.keys(alt).length, 10);
+  for (const name of Object.keys(alt)) assert(existsSync(join(root, `public/audio/rapture/scenes/alternates/${name}.mp3`)), `${name} is kept`);
+  assert.equal(new Set(voice.lines.map(l => l.voiceId)).size, 20, "twenty voices speak in episodes two to five");
+  assert.deepEqual(JSON.parse(JSON.stringify(imported.frames.filter(f => f.audio?.length && !/^rapture-ep1(dj|c2)-/.test(f.id)).map(f => [f.id, f.audio]))), ep25.map(f => [f.id, f.audio]), "the dialogue survives sanitizeImport unchanged");
+  pass(`${clips.length} recorded lines of episodes two to five sit on ${ep25.length} frames of 12 boards, in each board's order with its written holds, lengthened never shortened; every take screened (4 flags cleared by alternates, 1 re-recorded)`);
+}
+
 
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 120 + 111 + 270 + 327 + 271 + 158 + 92 + 136 + 308 + 377 + 365 + 122 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 184 + 132 + 162 + 308 + 161 + 120 + 111 + 297 + 379 + 271 + 158 + 92 + 136 + 308 + 377 + 367 + 122 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -655,19 +730,19 @@ assert(buildFramePrompt(project, coldOpen[6], platform.id).includes("Tamsin") ==
   if (platform.kind === "video") assert(lockupWhole.includes("ESTIMATED RUNTIME: 271"));
 const coWhole = buildScenePrompt(project, coldOpenScene, platform.id);
 assert(coWhole.includes("Fixed high-corner surveillance cameras"));
-if (platform.kind === "video") assert(coWhole.includes("ESTIMATED RUNTIME: 172"));
+if (platform.kind === "video") assert(coWhole.includes("ESTIMATED RUNTIME: 184"));
 const angelWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep3-cold-open"), platform.id);
 assert(angelWhole.includes("immaculate"));
-if (platform.kind === "video") assert(angelWhole.includes("ESTIMATED RUNTIME: 125"));
+if (platform.kind === "video") assert(angelWhole.includes("ESTIMATED RUNTIME: 132"));
 const patWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-pat-cold-open"), platform.id);
 assert(patWhole.includes("burglars pick her house by chance"));
-if (platform.kind === "video") assert(patWhole.includes("ESTIMATED RUNTIME: 151"));
+if (platform.kind === "video") assert(patWhole.includes("ESTIMATED RUNTIME: 162"));
 const patHouseWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-pat"), platform.id);
 assert(patHouseWhole.includes("the camera never moves") && patHouseWhole.includes("Red practical sources only") && patHouseWhole.includes("Fixed high-corner surveillance cameras"), "The scene prompt carries all three grammars, shot by shot");
-if (platform.kind === "video") assert(patHouseWhole.includes("ESTIMATED RUNTIME: 305"));
+if (platform.kind === "video") assert(patHouseWhole.includes("ESTIMATED RUNTIME: 308"));
 const hutWhole = buildScenePrompt(project, project.scenes.find(s3 => s3.id === "rapture-ep4-scout-hut"), platform.id);
 assert(hutWhole.includes("Never a clean wide"));
-if (platform.kind === "video") assert(hutWhole.includes("ESTIMATED RUNTIME: 159"));
+if (platform.kind === "video") assert(hutWhole.includes("ESTIMATED RUNTIME: 161"));
 }
 const tap = ep4[6];
 assert(buildFramePrompt(project, { ...tap, lightingNotes: "One blue task light only" }, "generic").includes("One blue task light only"));
@@ -745,12 +820,12 @@ try {
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
       assert.equal(opened.frames.length, 526);
-      assert.equal(opened.frames.filter(f => f.audio && f.audio.length).length, 12, 'a fresh workspace has the recorded dialogue on the twelve frames that carry it');
+      assert.equal(opened.frames.filter(f => f.audio && f.audio.length).length, 151, 'a fresh workspace has the recorded dialogue on the 151 frames that carry it');
       // An older saved workspace (no dialogue yet) is given the takes on its next read, once, and nothing else of the writer changes.
       const silent = opened.frames.map(({ audio, ...frame }) => (frame.id === 'rapture-ep1dj-06' ? { ...frame, duration: 40, notes: 'my notes' } : frame));
       await api.updateProject(id, { frames: silent });
       const refreshed = await api.getProject(id);
-      assert.equal(refreshed.frames.filter(f => f.audio && f.audio.length).length, 12, 'a saved workspace without dialogue receives it');
+      assert.equal(refreshed.frames.filter(f => f.audio && f.audio.length).length, 151, 'a saved workspace without dialogue receives it');
       const own = refreshed.frames.find(f => f.id === 'rapture-ep1dj-06');
       assert.equal(own.duration, 40, 'a frame the writer made longer is not shortened');
       assert.equal(own.notes, 'my notes', 'the writer notes stay');

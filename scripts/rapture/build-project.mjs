@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { dialogueFor, TAIL } from "./voice-frames.mjs";
+import { dialogueFor, dialogueByShot, TAIL } from "./voice-frames.mjs";
 import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards, copsFirstBeatGrammar, storageGrammar, tagGrammar } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -27,6 +27,8 @@ const muggingScreenplay = read("docs/rapture/scenes/ep1-mugging.md");
 const stJudesScreenplay = read("docs/rapture/scenes/ep1-st-judes.md");
 // The recorded dialogue of episode one (docs/rapture/voice/): laid over the frames of the two boards that carry the draft verbatim.
 const voiceManifest = JSON.parse(read("docs/rapture/voice/manifest.json"));
+// Episodes two to five: the recorded dialogue of the twelve shot boards that have no screenplay draft (docs/rapture/voice/manifest-scenes.json).
+const sceneManifest = JSON.parse(read("docs/rapture/voice/manifest-scenes.json"));
 
 // ---------------------------------------------------------------- episode one's screenplay pages
 // The episode-one draft of 21 September 2026 (docs/rapture/ep1-screenplay.md) is the Screenplay
@@ -898,6 +900,40 @@ const lockupScene = {
 scenes.splice(scenes.findIndex(s => s.id === "rapture-ep3-arrivals"), 0, lockupScene);
 assert(legacyBoards.every(board => scenes.some(s => s.id === board.scene)), "Every legacy board must attach to a listed scene");
 
+// ---------------------------------------------------------------- episodes two to five: recorded dialogue on the boards' frames
+// Each board's lines (the manifest knows the shot every line is written in) go on that shot's frame, spaced as the board's own timeline spaces
+// them. A frame is lengthened, never shortened, so the last word has TAIL seconds of air. The editorial totals asserted above stay the boards';
+// the lengthened totals are what the project description reports. A board that was reworded or a take that was re-recorded stops the build.
+const numberFourteenEstimate = numberFourteen.reduce((n, f) => n + f.duration, 0);
+const sceneBoards = [
+  ["ep2-lockup", lockupFrames, lockupBlocks], ["ep3-cold-open", ep3ColdOpen, ep3ColdOpenBlocks], ["ep4-cold-open", coldOpen, coldOpenBlocks],
+  ["ep4-doorstep", doorstep, doorstepBlocks], ["ep4-housing-estate", estate, estateBlocks], ["ep4-kitchen", kitchen, kitchenBlocks],
+  ["ep4-number-fourteen", numberFourteen, blocks], ["ep4-pat-cold-open", patOpen, patColdOpenBlocks], ["ep4-pat-house", patHouse, patHouseBlocks],
+  ["ep4-scout-hut", scoutHut, scoutHutBlocks], ["ep5-pats-night", patsNight, patsNightBlocks], ["ep5-therapy-class", therapyClass, therapyClassBlocks],
+];
+let sceneTakes = 0, sceneLengthened = 0;
+for (const [boardId, boardFrames, boardBlocks] of sceneBoards) {
+  assert.equal(boardFrames.length, boardBlocks.length, `${boardId}: one frame per numbered shot`);
+  const dialogue = dialogueByShot(boardId, boardBlocks.map(block => block[1]), sceneManifest);
+  boardFrames.forEach((frame, i) => {
+    const { audio, needed } = dialogue[i];
+    if (!audio.length) return;
+    const was = frame.duration;
+    frame.audio = audio;
+    frame.duration = Math.max(was, needed);
+    const timing = new RegExp(`Timing: ${was}s is a working total-shot estimate for animatic playback`);
+    assert(timing.test(frame.notes), `${frame.id}: the timing sentence has changed shape`);
+    frame.notes = frame.notes.replace(timing, `Timing: ${frame.duration}s is a working total-shot estimate for animatic playback${frame.duration > was ? ` (the board's ${was}s, lengthened so the recorded dialogue fits with ${TAIL}s of air after the last word)` : ""}`);
+    const paragraph = `Recorded dialogue: ${audio.length} take${audio.length === 1 ? "" : "s"} (eleven_v4, docs/rapture/voice/) at ${audio.map(a => `${a.offset}s`).join(", ")}: the board's words, spaced as its own timeline spaces them.`;
+    const at = frame.notes.indexOf("\n\nNUMBERED SCRIPT");
+    assert(at > 0, `${frame.id}: no numbered script to put the recorded dialogue before`);
+    frame.notes = `${frame.notes.slice(0, at)}\n\n${paragraph}${frame.notes.slice(at)}`;
+    sceneTakes += audio.length;
+    if (frame.duration > was) sceneLengthened++;
+  });
+}
+assert.equal(sceneTakes, sceneManifest.lines.length, "Every recorded line of episodes two to five belongs on a frame");
+
 const legacyFrames = [];
 for (const board of legacyBoards) {
   const { numbers, last } = boardSlots.get(board.prefix);
@@ -1089,7 +1125,7 @@ for (const c of characters) {
   for (const relation of c.relations || []) assert((relation.note || "").length <= 120, `Shorten relationship note: ${c.name} → ${relation.targetId}`);
 }
 for (const scene of scenes) assert(scene.title.length <= 300 && scene.location.length <= 300 && scene.time.length <= 100, `Scene field over the app's limit: ${scene.title}`);
-assert.equal(numberFourteen.reduce((n, f) => n + f.duration, 0), 175, "Update the timing note when editorial estimates change");
+assert.equal(numberFourteenEstimate, 175, "Update the timing note when editorial estimates change");
 const output = resolve(root, "public/projects/let-the-raptures-commence.json");
 const encoded = JSON.stringify(project, null, 2) + "\n";
 if (process.argv.includes("--check")) {
