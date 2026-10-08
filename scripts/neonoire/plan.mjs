@@ -1336,7 +1336,7 @@ export const shotTitle = image => {
  * in the app without its production direction travelling with it.
  */
 export function parseBoard(markdown, scene) {
-  const fields = ["SCRIPT", "CAST", "LIGHT", "TIME", "IMAGE", "PATH", "NOTE", "ID"];
+  const fields = ["SCRIPT", "CAST", "LIGHT", "TIME", "IMAGE", "PATH", "NOTE", "ID", "TITLE"];
   const shots = [];
   let current = null;
   const flush = () => {
@@ -1350,7 +1350,7 @@ export function parseBoard(markdown, scene) {
     if (!prose.length) throw new Error(`Scene ${scene.n} shot ${current.n} has no description`);
     shots.push({
       n: current.n, id: field("ID") || `neonoire-shot-${String(current.n).padStart(2, "0")}`, scene, shotType: current.shotType, lens: current.lens, movement: current.movement,
-      angle: current.angle, image, ...(field("PATH") ? { path: field("PATH") } : {}), title: shotTitle(image), duration,
+      angle: current.angle, image, ...(field("PATH") ? { path: field("PATH") } : {}), title: field("TITLE") || shotTitle(image), duration,
       description: prose[0],
       script: field("SCRIPT").replace(/^"|"$/g, ""),
       cast: field("CAST") === "—" || !field("CAST") ? [] : field("CAST").split(",").map(name => name.trim()),

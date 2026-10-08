@@ -244,4 +244,55 @@ const clips = voice.lines.filter(line => line.frameId === "neonoire-shot-202").s
 assert(clips.every((line, index) => !index || line.offset >= clips[index - 1].offset + clips[index - 1].duration));
 assert(normal(current["25"]).includes(normal(clips[0].text)));
 pass("three original voice takes recovered/re-pinned, stale father recollection archived, restored master audio sequenced without overlaps");
+
+// 9 October 2026: scenes 1 and 2's shot wording was rewritten to their pictures and the current screenplay, shot 24 (the journalist
+// still on his stool) moved before the two shots with his "Where is he?" over it, and the 8 October line of scene 86 ("They don't know
+// me.") reaches a workspace still on the default text before it. A field, an order or a script the writer changed is kept.
+const textBefore = JSON.parse(read("docs/neonoire/baseline/text-pre-2026-10-09.json"));
+const preVera = project.script.replace("VERA\nThey don't know me.", "VERA\nI know them.");
+assert.notEqual(preVera, project.script, "the 8 October line is in the bundle's script");
+const s2Order = project.frames.filter(frame => frame.sceneId === "neonoire-s2").map(frame => frame.shotNumber);
+assert.deepEqual(s2Order, [19, 20, 21, 22, 25, 23, 24, 26, 308, 27, 28], "scene 2 plays 24 (him still on his stool) before 26 (the two shots)");
+assert.equal(project.frames.find(frame => frame.id === "neonoire-shot-24").audio?.[0]?.text, "Where is he?", "and asks \"Where is he?\" over it");
+assert.equal(project.frames.find(frame => frame.id === "neonoire-shot-22").title, "He knows her name");
+const oldText = () => {
+  const saved = structuredClone(project);
+  saved.script = preVera;
+  for (const [id, prior] of Object.entries(textBefore.frames)) {
+    const frame = saved.frames.find(f => f.id === id);
+    for (const [key, value] of Object.entries(prior)) { if (value === null) delete frame[key]; else frame[key] = structuredClone(value); }
+  }
+  const order = textBefore.sceneOrders["neonoire-s2"];
+  const slots = saved.frames.flatMap((frame, index) => frame.sceneId === "neonoire-s2" ? [index] : []);
+  const byId = new Map(saved.frames.map(frame => [frame.id, frame]));
+  slots.forEach((index, k) => { saved.frames[index] = byId.get(order[k]); });
+  return saved;
+};
+const beforeText = oldText();
+assert.deepEqual(beforeText.frames.filter(frame => frame.sceneId === "neonoire-s2").map(frame => frame.shotNumber), [19, 20, 21, 22, 25, 23, 26, 24, 308, 27, 28]);
+const textPatch = bundledFrameUpdates(beforeText, project);
+assert.equal(textPatch.script, project.script, "a workspace on the default text before the 8 October line takes it");
+assert.deepEqual(textPatch.frames.map(frame => frame.id), project.frames.map(frame => frame.id), "scene 2 takes the corrected order");
+for (const id of Object.keys(textBefore.frames)) {
+  const got = textPatch.frames.find(f => f.id === id), want = project.frames.find(f => f.id === id);
+  for (const key of ["title", "description", "notes", "audio"]) assert.deepEqual(got[key], want[key], `${id} takes the corrected ${key}`);
+}
+assert.equal(bundledFrameUpdates({ ...beforeText, ...textPatch }, project), null, "the correction is idempotent");
+const keptText = oldText();
+keptText.frames.find(frame => frame.id === "neonoire-shot-22").description = "My own words for this shot.";
+keptText.frames.find(frame => frame.id === "neonoire-shot-18").title = "My title";
+const keptTextPatch = bundledFrameUpdates(keptText, project);
+assert.equal(keptTextPatch.frames.find(frame => frame.id === "neonoire-shot-22").description, "My own words for this shot.", "a writer's description is kept");
+assert.equal(keptTextPatch.frames.find(frame => frame.id === "neonoire-shot-22").title, "He knows her name", "while the untouched title beside it is corrected");
+assert.equal(keptTextPatch.frames.find(frame => frame.id === "neonoire-shot-18").title, "My title", "a writer's title is kept");
+const reordered = oldText();
+const s2Slots = reordered.frames.flatMap((frame, index) => frame.sceneId === "neonoire-s2" ? [index] : []);
+[reordered.frames[s2Slots[0]], reordered.frames[s2Slots[1]]] = [reordered.frames[s2Slots[1]], reordered.frames[s2Slots[0]]];
+const reorderedPatch = bundledFrameUpdates(reordered, project);
+assert.deepEqual(reorderedPatch.frames.filter(frame => frame.sceneId === "neonoire-s2").map(frame => frame.shotNumber), [20, 19, 21, 22, 25, 23, 26, 24, 308, 27, 28], "a scene the director reordered keeps its order");
+const customText = oldText(); customText.script += "\nWriter's extra scene.\n";
+const customTextPatch = bundledFrameUpdates(customText, project);
+assert.equal(customTextPatch?.script, undefined, "an edited script is never replaced");
+assert.equal(customTextPatch.frames.find(frame => frame.id === "neonoire-shot-27").description, project.frames.find(frame => frame.id === "neonoire-shot-27").description, "but the untouched shot wording is still corrected");
+pass(`a saved workspace on the earlier default takes the 8 October line, the corrected wording of ${Object.keys(textBefore.frames).length} cold-open shots and scene 2's corrected order; a writer's wording, order and script are kept`);
 console.log("Full-page revision-restoration checks passed.");

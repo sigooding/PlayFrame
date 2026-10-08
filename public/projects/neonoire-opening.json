@@ -1865,8 +1865,8 @@
       "id": "neonoire-shot-377",
       "shotNumber": 377,
       "sceneId": "neonoire-s1",
-      "title": "The hive remembered",
-      "description": "Night, cold steady rain. The nine-storey block of balconies, laundry and wires wedged between dark glass towers, the railway viaduct curling at its shoulder, a hundred small windows lit amber and sick fluorescent green. Nobody in frame, no readable text. Over it, Kaneko's five narration takes in English.",
+      "title": "The Hive, remembered",
+      "description": "Night, in cold steady rain: the Hive, a nine-storey block of balconies, laundry and wires wedged between dark glass towers, the railway viaduct curving past its shoulder, a hundred small windows lit amber and fluorescent green. Over it, Kaneko remembers the place in five passages of narration.",
       "image": "/images/neonoire/s1/377-the-hive-remembered.jpg",
       "shotType": "Establishing",
       "movement": "Static",
@@ -1939,7 +1939,7 @@
       "shotNumber": 1,
       "sceneId": "neonoire-s1",
       "title": "Backstreet",
-      "description": "A narrow street of shuttered shops that could belong to any year of the last forty. Hand-painted signs, tangled wires overhead, wet black asphalt, and at the corner the old vending machine throwing cold white light across the road with rain falling through it in columns. Nobody in frame.",
+      "description": "Rain. A narrow Kanda backstreet of shuttered shops that could belong to any year of the last forty: hand-painted signs, tangled wires, wet black asphalt. On the left a closed barber's with its striped pole; on the right the old vending machine throws cold white light through the rain. Nobody in the street.",
       "image": "/images/neonoire/s1/01-backstreet.jpg",
       "shotType": "Establishing",
       "movement": "Static",
@@ -1959,8 +1959,8 @@
       "id": "neonoire-shot-02",
       "shotNumber": 2,
       "sceneId": "neonoire-s1",
-      "title": "Vending",
-      "description": "Rain falls through the machine's cold white face in visible columns. Its hum is the loudest thing here. Chipped paint, a grid of glowing cans behind rain-streaked glass, water running off the metal onto the asphalt.",
+      "title": "The vending machine",
+      "description": "The vending machine up close: chipped white paint, rows of lit cans behind rain-streaked glass, water running off its roof onto the asphalt. Its hum is the loudest thing in the street.",
       "image": "/images/neonoire/s1/02-vending.jpg",
       "shotType": "Insert",
       "movement": "Static",
@@ -1981,7 +1981,7 @@
       "shotNumber": 3,
       "sceneId": "neonoire-s1",
       "title": "Mara walks",
-      "description": "MARA VOSS (24) walks fast down the street, arms folded, soaked, no umbrella, her hair flat with rain and held back by the red enamel bird clip. Her phone lights up in her hand: VERA. She watches it ring.",
+      "description": "MARA VOSS, 24, walks fast up the street toward us: arms folded, soaked, no umbrella, the red bird clip in her wet hair. The phone in her hand lights up.",
       "image": "/images/neonoire/s1/03-mara-walks.jpg",
       "shotType": "Medium wide",
       "movement": "Static",
@@ -2003,8 +2003,8 @@
       "id": "neonoire-shot-04",
       "shotNumber": 4,
       "sceneId": "neonoire-s1",
-      "title": "Mara phone",
-      "description": "Her phone buzzes; the screen shows the caller, VERA. Rain on the glass and on her hands. She looks at it. Lets it ring.",
+      "title": "Mara's phone",
+      "description": "Close on Mara and the phone: the screen says VERA. Rain on the glass and on her hands. She watches it ring.",
       "image": "/images/neonoire/s1/04-mara-phone.jpg",
       "shotType": "Close-up",
       "movement": "Static",
@@ -2038,8 +2038,8 @@
       "id": "neonoire-shot-05",
       "shotNumber": 5,
       "sceneId": "neonoire-s1",
-      "title": "Phone off",
-      "description": "She answers nobody: \"Not tonight.\" Then she switches the phone off and shoves it down into her purse, her eyes already back on the empty street.",
+      "title": "Not tonight",
+      "description": "\"Not tonight.\" She declines the call and pushes the phone down into her bag, her eyes already back on the street.",
       "image": "/images/neonoire/s1/05-phone-off.jpg",
       "shotType": "Medium close-up",
       "movement": "Static",
@@ -2062,7 +2062,7 @@
       "shotNumber": 328,
       "sceneId": "neonoire-s1",
       "title": "The scrap",
-      "description": "The note in her hands. Her handwriting, in biro: 1.00 Sakai. Underneath is an address. Beneath that, underlined twice: \"just listen.\"",
+      "description": "The scrap of paper in her wet hands, in her own handwriting: 1.00 SAKAI, an address underneath, and below that, underlined twice, JUST LISTEN.",
       "image": "/images/neonoire/s1/328-the-scrap.jpg",
       "shotType": "Insert",
       "movement": "Static",
@@ -2084,8 +2084,8 @@
       "id": "neonoire-shot-329",
       "shotNumber": 329,
       "sceneId": "neonoire-s1",
-      "title": "The lane the watch",
-      "description": "She looks down the lane. At the far end, the bar sign. She checks her watch (12.45). Early.",
+      "title": "Down the lane",
+      "description": "Over her shoulder, down the lane: at the far end the bar sign glows. She checks her watch. 12.45. Early.",
       "image": "/images/neonoire/s1/329-the-lane-the-watch.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2108,7 +2108,7 @@
       "shotNumber": 6,
       "sceneId": "neonoire-s1",
       "title": "Barbershop doorway",
-      "description": "Mara slips into the barbershop doorway, behind a parked scooter and stacked beer crates, and presses back into the shadow out of the rain. The crates hide her from anyone in the lane. She is not sure she wants to walk in at all.",
+      "description": "The rain thickens. Mara slips into the barbershop doorway behind a parked scooter and a stack of beer crates and presses back into the shadow. From the lane, the crates hide her. She isn't sure she wants to walk in at all.",
       "image": "/images/neonoire/s1/06-barbershop-doorway.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2131,7 +2131,7 @@
       "shotNumber": 383,
       "sceneId": "neonoire-s1",
       "title": "The empty lane",
-      "description": "From the barbershop end, the whole lane in the rain: the recessed doorway with its pole, the scooter and the crates on the left, the vending machine on the right, shuttered shops running away to the road mouth at the far end. Nobody in frame. The pedestrian crossing chimes for no one.",
+      "description": "The lane from the barbershop doorway, empty in the rain: the scooter and the crates on the left, the vending machine on the right, shuttered shops running to the road at the far end. Somewhere nearby a pedestrian crossing chimes for no one.",
       "image": "/images/neonoire/s1/383-the-empty-lane.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2152,7 +2152,7 @@
       "shotNumber": 7,
       "sceneId": "neonoire-s1",
       "title": "Old man",
-      "description": "An OLD MAN (70s) in a cheap raincoat and a grey flat cap comes in from the road, one hand pressed to his side as if something is hidden there. He keeps looking back.",
+      "description": "An OLD MAN in his seventies, in a cheap raincoat and a grey flat cap, comes into the lane from the road, one hand pressed to his side as if something is hidden there. He keeps looking back.",
       "image": "/images/neonoire/s1/07-old-man.jpg",
       "shotType": "Full",
       "movement": "Static",
@@ -2176,7 +2176,7 @@
       "shotNumber": 330,
       "sceneId": "neonoire-s1",
       "title": "The red clip",
-      "description": "She leans out of the shadow. The red bird clip catches the street light.",
+      "description": "Mara leans out of the shadow of the doorway. The red bird clip in her hair catches the street light.",
       "image": "/images/neonoire/s1/330-the-red-clip.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2199,7 +2199,7 @@
       "shotNumber": 9,
       "sceneId": "neonoire-s1",
       "title": "Old man stops",
-      "description": "He has seen the red clip. He stops, six metres short of her doorway; for one second his whole face changes.",
+      "description": "He sees the clip and stops, six metres short of her doorway. For one second his whole face changes.",
       "image": "/images/neonoire/s1/09-old-man-stops.jpg",
       "shotType": "Medium close-up",
       "movement": "Static",
@@ -2222,7 +2222,7 @@
       "shotNumber": 331,
       "sceneId": "neonoire-s1",
       "title": "He refuses",
-      "description": "Then he shakes his head. Barely. A man refusing a stranger. And he turns his back on her, slowly, to face the road.",
+      "description": "Then he shakes his head, barely: a man refusing a stranger. He turns his back on her, slowly, to face the road.",
       "image": "/images/neonoire/s1/331-he-refuses.jpg",
       "shotType": "Medium close-up",
       "movement": "Static",
@@ -2245,7 +2245,7 @@
       "shotNumber": 332,
       "sceneId": "neonoire-s1",
       "title": "The sedan blocks the lane",
-      "description": "Behind him, at the mouth of the lane, headlights. A black sedan pulls across the opening and stops, blocking it. Its high beams shine straight down the lane, lighting the rain in long white columns.",
+      "description": "Behind him, at the mouth of the lane, a black sedan pulls across the opening and stops, blocking it. Its high beams shine straight down the lane and light the rain in long white columns. The old man stands facing it.",
       "image": "/images/neonoire/s1/332-the-sedan-blocks-the-lane.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2268,7 +2268,7 @@
       "shotNumber": 333,
       "sceneId": "neonoire-s1",
       "title": "The white light",
-      "description": "The old man doesn't move. He stands between them and Mara's doorway, a small figure in the white light, his shadow stretching long down the lane toward her.",
+      "description": "Two masked men get out and walk in, black shapes against the glare. They don't run. The old man doesn't move: a small figure in the white light, standing between them and Mara's doorway, his shadow stretching back toward her. \"After twenty years.\"",
       "image": "/images/neonoire/s1/333-the-white-light.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2303,7 +2303,7 @@
       "shotNumber": 10,
       "sceneId": "neonoire-s1",
       "title": "The shot",
-      "description": "The old man stands between the two masked men and Mara's doorway in the white of the high beams, a small figure with his shadow stretching down the lane toward her. A suppressed shot, flat and ordinary, like a door closing; he folds onto the street.",
+      "description": "A suppressed shot, flat and ordinary, like a door closing. The old man lies face down on the wet street. The two masked men walk on toward him through the rain, the sedan's headlights behind them.",
       "image": "/images/neonoire/s1/10-the-shot.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2325,8 +2325,8 @@
       "id": "neonoire-shot-12",
       "shotNumber": 12,
       "sceneId": "neonoire-s1",
-      "title": "Masked man radio",
-      "description": "One of the masked men touches his earpiece and speaks quietly into it. Only his eyes are visible above the mask: flat, unhurried, bored.",
+      "title": "First position done",
+      "description": "One of the masked men touches his earpiece: \"First position done. Moving to second.\" Only his eyes show above the mask: flat, unhurried, bored.",
       "image": "/images/neonoire/s1/12-masked-man-radio.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2360,8 +2360,8 @@
       "id": "neonoire-shot-13",
       "shotNumber": 13,
       "sceneId": "neonoire-s1",
-      "title": "Taillights gone",
-      "description": "Same camera as the arrival, down the lane toward the alley mouth. The sedan reverses out of the mouth, unhurried, backing onto the wet two-lane road beyond; its headlights swing away, white reverse lamps with the red taillights smearing on the wet road, and the alley falls dark. No people in frame. Mara doesn't move.",
+      "title": "Tail-lights gone",
+      "description": "They walk back to the sedan without hurrying and never look at the doorway. At the far end of the lane its tail-lights smear red on the wet road as it pulls away, the long way round the block. The lane is empty.",
       "image": "/images/neonoire/s1/13-taillights-gone.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2382,7 +2382,7 @@
       "shotNumber": 14,
       "sceneId": "neonoire-s1",
       "title": "She kneels",
-      "description": "In the middle of the same lane, under the barbershop pole and across from the vending machine, she kneels on the wet asphalt beside the old man lying on his side: \"It's okay — I'll get someone. Ambulance. I'll call. Ambulance.\" Her bag has slid off her shoulder and spilled beside her; her hands shake too hard to turn the phone on. The sedan is gone and the lane behind them is empty.",
+      "description": "Mara runs to the old man and kneels beside him on the wet asphalt, the phone in her shaking hand. Her bag has slid off her shoulder and spilled beside her; she doesn't notice. \"Mr. Sakai? It's okay, I'll get someone. Ambulance. I'll call.\"",
       "image": "/images/neonoire/s1/14-she-kneels.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2428,7 +2428,7 @@
       "shotNumber": 15,
       "sceneId": "neonoire-s1",
       "title": "The grip",
-      "description": "The old man grips her wrist, stronger than he should be, and presses something small and cold into her palm, folding her fingers around it: \"Don't let them have it.\"",
+      "description": "His hand comes out of his coat with something small in it. He presses it into her palm and closes her fingers over it: \"Don't let them have it.\"",
       "image": "/images/neonoire/s1/15-the-grip.jpg",
       "shotType": "Close-up",
       "movement": "Static",
@@ -2474,7 +2474,7 @@
       "shotNumber": 16,
       "sceneId": "neonoire-s1",
       "title": "The key",
-      "description": "A small numbered key on a worn plastic tag. A coin-locker key, held in the palm of her hand, rain falling on it.",
+      "description": "In her open palm, in the rain: a small key on a worn white tag stamped 114.",
       "image": "/images/neonoire/s1/16-the-key.jpg",
       "shotType": "Insert",
       "movement": "Static",
@@ -2497,7 +2497,7 @@
       "shotNumber": 17,
       "sceneId": "neonoire-s1",
       "title": "She runs",
-      "description": "Mara runs away from the camera down the middle of the lane toward the amber glow of the bar at its far end, one arm flapping, and does not stop. The sedan is gone, there is nobody else in the lane, and the old man's still shape lies small and far behind her. In the near foreground, where it slid off her shoulder when she ran to the old man, her purse lies open with its contents spilled across the wet road; she left it there and nobody picks it up. The barbershop pole is on the left, the vending machine on the right. There is no snagged strap and nothing on the pole.",
+      "description": "Mara runs away from us down the middle of the lane toward the amber bar sign at the far end. In the foreground her bag lies open where it fell, its contents spilled across the wet road. The old man's still shape lies in the lane.",
       "image": "/images/neonoire/s1/17-she-runs.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2519,8 +2519,8 @@
       "id": "neonoire-shot-18",
       "shotNumber": 18,
       "sceneId": "neonoire-s1",
-      "title": "The flashlight",
-      "description": "The abandoned bag is the subject: a woman's dark-brown structured leather handbag lies open on the wet asphalt with its contents spread from it, the street's cold light pooling in the shallow water around it. Beyond it, soft and out of focus, the lane is empty: no men, no car, no one in the barbershop doorway. The street carries on as though nothing has happened.",
+      "title": "Her bag in the rain",
+      "description": "Behind her, on the street: her bag, lying open in the rain with its contents spilled. Beyond it the lane is empty: no men, no car, nobody in the barbershop doorway.",
       "image": "/images/neonoire/s1/18-the-flashlight.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2541,7 +2541,7 @@
       "shotNumber": 19,
       "sceneId": "neonoire-s2",
       "title": "The bar",
-      "description": "Six stools and a counter. Shelves of bottles glowing amber. On a high shelf an old CRT television plays a late-night variety show with the sound low. Rain drums on the roof. No one behind the counter; the door to the back stands half open.",
+      "description": "Six stools and a counter. Shelves of bottles glowing amber. High above the back doorway an old CRT television plays a late-night variety show, sound low. Rain drums on the roof. Nobody behind the counter; crates are stacked by the half-open back door.",
       "image": "/images/neonoire/s2/19-the-bar.jpg",
       "shotType": "Medium wide",
       "movement": "Static",
@@ -2562,7 +2562,7 @@
       "shotNumber": 20,
       "sceneId": "neonoire-s2",
       "title": "The journalist",
-      "description": "In the corner: a JOURNALIST in his forties, an untouched beer in front of him, a notebook closed beside it. He checks his watch. Checks the door. He is not waiting for the person he says he is waiting for.",
+      "description": "On a stool at the counter, alone: the JOURNALIST, forties, glasses, grey jacket, a beer gone flat in his hand and a brown leather notebook closed beside it. He checks his watch. Somewhere in the back, crates clatter.",
       "image": "/images/neonoire/s2/20-the-journalist.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2585,7 +2585,7 @@
       "shotNumber": 21,
       "sceneId": "neonoire-s2",
       "title": "Mara bursts in",
-      "description": "Mara, soaked, too out of breath to speak, stands in the doorway with the rain behind her.",
+      "description": "Mara bursts in out of the rain, soaked and out of breath, the key in her fist. The door stands open behind her on the wet street. From the counter: \"Miss Voss?\"",
       "image": "/images/neonoire/s2/21-mara-bursts-in.jpg",
       "shotType": "Wide",
       "movement": "Static",
@@ -2619,8 +2619,8 @@
       "id": "neonoire-shot-22",
       "shotNumber": 22,
       "sceneId": "neonoire-s2",
-      "title": "Not his business",
-      "description": "He glances up, startled, then away. Not his business.",
+      "title": "He knows her name",
+      "description": "The journalist turns on his stool to look at her, startled. He knows her name. Mara stands dripping in the doorway behind him.",
       "image": "/images/neonoire/s2/22-not-his-business.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2644,7 +2644,7 @@
       "shotNumber": 25,
       "sceneId": "neonoire-s2",
       "title": "Two pairs of shoes",
-      "description": "The door opens again. Softly, this time. Two pairs of black shoes step inside, wet and silent. The journalist's shoes shift; he stands.",
+      "description": "Floor level. Behind her the door has opened, softly, on the rain. Two pairs of wet black boots step inside and stop. By the stool, the journalist's brown shoes shift. A polite voice: \"Shitsurei shimasu.\" (\"Excuse me.\")",
       "image": "/images/neonoire/s2/25-two-pairs-of-shoes.jpg",
       "shotType": "Full",
       "movement": "Static",
@@ -2672,16 +2672,6 @@
           "duration": 1.07,
           "voice": "IUNPSr7i3o1XsExH6IGv",
           "model": "eleven_v4"
-        },
-        {
-          "id": "s2-journalist-where-is-he",
-          "character": "JOURNALIST",
-          "text": "Where is he?",
-          "src": "/audio/neonoire/s2/25-journalist-where-is-he.mp3",
-          "offset": 6,
-          "duration": 0.99,
-          "voice": "EEYUewEB5w5R0IPnszO5",
-          "model": "eleven_v4"
         }
       ]
     },
@@ -2690,7 +2680,7 @@
       "shotNumber": 23,
       "sceneId": "neonoire-s2",
       "title": "Behind the counter",
-      "description": "She stands dripping, looking for somewhere to go. There is nowhere. She slips behind the far end of the counter and crouches out of sight of the door, her back against the shelves. She opens her hand: the key. She closes it again.",
+      "description": "Mara is behind the counter before she knows she's moved. She crouches low at the far end, out of sight of the door, and opens her hand: the key. She closes her fist on it again.",
       "image": "/images/neonoire/s2/23-behind-the-counter.jpg",
       "shotType": "Full",
       "movement": "Static",
@@ -2709,11 +2699,46 @@
       "notes": "Image: AI-generated storyboard study from pass 3; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nCold-open fresh pass: Fresh cold-open pass (30 September 2026), 16:9 full-bleed 1920×1080, generated from the screenplay text with CHARACTER SHEETS ONLY as image references — sheets/mara.jpg and sheets/mara-face.jpg for Mara, sheets/sakai.jpg for the old man, sheets/masked-man.jpg for the two masked men, sheets/journalist.jpg for the journalist; no scene masters, no layout sheet, no earlier frame attached. STREET (scene 1): a narrow street of shuttered tiny shops with hand-painted signs in Kanda, Tokyo, at night in cold steady rain — patient rain, not a storm — wet black asphalt, tangled overhead wires; on it a closed barber's with a recessed dark doorway, closed brown wooden door, faded awning and ONE unlit red-white-blue striped pole at the doorway's right edge; at the corner one old off-white vending machine humming, its cold white light falling through the rain in columns; high up, one lit window, a radio playing behind it; at the far end a dark car idling, lights low; at the near end the amber glow of a small open bar, the only warm light down the street. The two masked men walk in and out on foot; nothing reverses, nothing swings headlights down the lane. BAR (scene 2): one narrow room, dark worn wooden counter with six round stools along the left, shelves of bottles glowing amber behind it, a rain-streaked street window and the entrance door on the right, a small boxy CRT high above the rear doorway playing a late-night variety show, crates of empty bottles and a half-open back door with thin warm light at the far end, nobody behind the counter; by the director's override of 30 September 2026 the bar frames also attach the location style sheet sheets/kanda-bar.jpg (NIGHT panels) as the room reference. LIGHT AND TEXTURE: sodium orange against sick fluorescent green, soft halation around every practical, blacks slightly crushed, fine 35mm grain, muted restrained colour in the manner of Ozu's Tokyo Story — never glossy, never cyberpunk, never a storm; ordinary steady rain. Mara matches sheets/mara.jpg exactly: 24, American, pale blue eyes, long ash-blonde hair soaked flat, small red enamel bird clip above her right temple, indigo denim jacket over a grey tee, black jeans, white trainers, thin black cord necklace, no umbrella; her dark-brown structured leather handbag hangs from her right shoulder to her left hip until it slides off her shoulder and spills across the wet street when she runs to the old man; she leaves it there, open in the rain. The small brass key she is given carries a stamped number tag worn almost smooth — the number is NOT legible in scene 1. Sakai matches sheets/sakai.jpg; the masked men match sheets/masked-man.jpg (exactly two, only eyes above the masks); the journalist matches sheets/journalist.jpg (ordinary, forties, never a hero). Violence stays distant and non-graphic: no muzzle flash, no blood, no weapon in frame. No captions, subtitles, watermarks or legible brand names. Approved by the director on 30 September 2026 as the film's main images (status Ready); the frames before this pass were draft studies, these are the coverage the film opens on. The five frames the retake round of 1 October 2026 regenerated (3, 6, 17, 18, 27) hold that status by the same bundle rule, and approval of their new pixels is the director's to give.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThe key returns here for a beat only, then goes back into her fist. Do not light it specially — it is not yet a magic object. Fresh pass 30 September 2026: regenerated with the bar sheet and her sheet; she crouches behind the far end with the key unlit and no handbag.\n\nSCRIPT — the draft's own words for this shot:\n\"Mara is behind the counter before she knows she's moved.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 3 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 23; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order."
     },
     {
+      "id": "neonoire-shot-24",
+      "shotNumber": 24,
+      "sceneId": "neonoire-s2",
+      "title": "From the floor",
+      "description": "From where she hides, at floor level: a crate of empty bottles, the underside of the counter, and the journalist's legs on his stool, his brown shoes on the footrest. Above her, out of sight, he asks: \"Where is he?\"",
+      "image": "/images/neonoire/s2/24-from-the-floor.jpg",
+      "shotType": "POV",
+      "movement": "Static",
+      "angle": "Low angle",
+      "lens": "24mm",
+      "lighting": "Practical night",
+      "style": "neonoire",
+      "duration": 10,
+      "durationIsEstimate": true,
+      "status": "Ready",
+      "transition": "Cut",
+      "mood": "Cold and quiet: a gap between crates and an ice bin, a laugh track, and a young woman understanding she is inside something.",
+      "characters": [
+        "neonoire-journalist"
+      ],
+      "notes": "Image: AI-generated storyboard study from pass 3; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nCold-open fresh pass: Fresh cold-open pass (30 September 2026), 16:9 full-bleed 1920×1080, generated from the screenplay text with CHARACTER SHEETS ONLY as image references — sheets/mara.jpg and sheets/mara-face.jpg for Mara, sheets/sakai.jpg for the old man, sheets/masked-man.jpg for the two masked men, sheets/journalist.jpg for the journalist; no scene masters, no layout sheet, no earlier frame attached. STREET (scene 1): a narrow street of shuttered tiny shops with hand-painted signs in Kanda, Tokyo, at night in cold steady rain — patient rain, not a storm — wet black asphalt, tangled overhead wires; on it a closed barber's with a recessed dark doorway, closed brown wooden door, faded awning and ONE unlit red-white-blue striped pole at the doorway's right edge; at the corner one old off-white vending machine humming, its cold white light falling through the rain in columns; high up, one lit window, a radio playing behind it; at the far end a dark car idling, lights low; at the near end the amber glow of a small open bar, the only warm light down the street. The two masked men walk in and out on foot; nothing reverses, nothing swings headlights down the lane. BAR (scene 2): one narrow room, dark worn wooden counter with six round stools along the left, shelves of bottles glowing amber behind it, a rain-streaked street window and the entrance door on the right, a small boxy CRT high above the rear doorway playing a late-night variety show, crates of empty bottles and a half-open back door with thin warm light at the far end, nobody behind the counter; by the director's override of 30 September 2026 the bar frames also attach the location style sheet sheets/kanda-bar.jpg (NIGHT panels) as the room reference. LIGHT AND TEXTURE: sodium orange against sick fluorescent green, soft halation around every practical, blacks slightly crushed, fine 35mm grain, muted restrained colour in the manner of Ozu's Tokyo Story — never glossy, never cyberpunk, never a storm; ordinary steady rain. Mara matches sheets/mara.jpg exactly: 24, American, pale blue eyes, long ash-blonde hair soaked flat, small red enamel bird clip above her right temple, indigo denim jacket over a grey tee, black jeans, white trainers, thin black cord necklace, no umbrella; her dark-brown structured leather handbag hangs from her right shoulder to her left hip until it slides off her shoulder and spills across the wet street when she runs to the old man; she leaves it there, open in the rain. The small brass key she is given carries a stamped number tag worn almost smooth — the number is NOT legible in scene 1. Sakai matches sheets/sakai.jpg; the masked men match sheets/masked-man.jpg (exactly two, only eyes above the masks); the journalist matches sheets/journalist.jpg (ordinary, forties, never a hero). Violence stays distant and non-graphic: no muzzle flash, no blood, no weapon in frame. No captions, subtitles, watermarks or legible brand names. Approved by the director on 30 September 2026 as the film's main images (status Ready); the frames before this pass were draft studies, these are the coverage the film opens on. The five frames the retake round of 1 October 2026 regenerated (3, 6, 17, 18, 27) hold that status by the same bundle rule, and approval of their new pixels is the director's to give.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThis framing is the law of the rest of the scene: shoes, ankles, and what the floor sees. The audience knows exactly as much as she does and no more. Fresh pass 30 September 2026: regenerated with the bar sheet and his sheet; retake queued — the legs read detached under the stool and the CRT's blue ceiling wash is missing.\n\nSCRIPT — the draft's own words for this shot:\n\"Where is he?\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 3 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 24; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order.",
+      "audio": [
+        {
+          "id": "s2-journalist-where-is-he",
+          "character": "JOURNALIST",
+          "text": "Where is he?",
+          "src": "/audio/neonoire/s2/25-journalist-where-is-he.mp3",
+          "offset": 2,
+          "duration": 0.99,
+          "voice": "EEYUewEB5w5R0IPnszO5",
+          "model": "eleven_v4"
+        }
+      ]
+    },
+    {
       "id": "neonoire-shot-26",
       "shotNumber": 26,
       "sceneId": "neonoire-s2",
       "title": "The variety show",
-      "description": "No answer. Two suppressed shots. The stool tips over; the journalist hits the floor on the far side of the counter. We see only his hand. On the TV, the studio audience laughs.",
+      "description": "Two shots. Across the room a stool lies tipped on the floor, and beyond it only a hand. On the high shelf the television audience laughs.",
       "image": "/images/neonoire/s2/26-the-variety-show.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2733,34 +2758,11 @@
       "notes": "Image: AI-generated storyboard study from pass 3; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nCold-open fresh pass: Fresh cold-open pass (30 September 2026), 16:9 full-bleed 1920×1080, generated from the screenplay text with CHARACTER SHEETS ONLY as image references — sheets/mara.jpg and sheets/mara-face.jpg for Mara, sheets/sakai.jpg for the old man, sheets/masked-man.jpg for the two masked men, sheets/journalist.jpg for the journalist; no scene masters, no layout sheet, no earlier frame attached. STREET (scene 1): a narrow street of shuttered tiny shops with hand-painted signs in Kanda, Tokyo, at night in cold steady rain — patient rain, not a storm — wet black asphalt, tangled overhead wires; on it a closed barber's with a recessed dark doorway, closed brown wooden door, faded awning and ONE unlit red-white-blue striped pole at the doorway's right edge; at the corner one old off-white vending machine humming, its cold white light falling through the rain in columns; high up, one lit window, a radio playing behind it; at the far end a dark car idling, lights low; at the near end the amber glow of a small open bar, the only warm light down the street. The two masked men walk in and out on foot; nothing reverses, nothing swings headlights down the lane. BAR (scene 2): one narrow room, dark worn wooden counter with six round stools along the left, shelves of bottles glowing amber behind it, a rain-streaked street window and the entrance door on the right, a small boxy CRT high above the rear doorway playing a late-night variety show, crates of empty bottles and a half-open back door with thin warm light at the far end, nobody behind the counter; by the director's override of 30 September 2026 the bar frames also attach the location style sheet sheets/kanda-bar.jpg (NIGHT panels) as the room reference. LIGHT AND TEXTURE: sodium orange against sick fluorescent green, soft halation around every practical, blacks slightly crushed, fine 35mm grain, muted restrained colour in the manner of Ozu's Tokyo Story — never glossy, never cyberpunk, never a storm; ordinary steady rain. Mara matches sheets/mara.jpg exactly: 24, American, pale blue eyes, long ash-blonde hair soaked flat, small red enamel bird clip above her right temple, indigo denim jacket over a grey tee, black jeans, white trainers, thin black cord necklace, no umbrella; her dark-brown structured leather handbag hangs from her right shoulder to her left hip until it slides off her shoulder and spills across the wet street when she runs to the old man; she leaves it there, open in the rain. The small brass key she is given carries a stamped number tag worn almost smooth — the number is NOT legible in scene 1. Sakai matches sheets/sakai.jpg; the masked men match sheets/masked-man.jpg (exactly two, only eyes above the masks); the journalist matches sheets/journalist.jpg (ordinary, forties, never a hero). Violence stays distant and non-graphic: no muzzle flash, no blood, no weapon in frame. No captions, subtitles, watermarks or legible brand names. Approved by the director on 30 September 2026 as the film's main images (status Ready); the frames before this pass were draft studies, these are the coverage the film opens on. The five frames the retake round of 1 October 2026 regenerated (3, 6, 17, 18, 27) hold that status by the same bundle rule, and approval of their new pixels is the director's to give.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThe TV is in the frame and the murder is not. The laugh track lands on the cut and holds — this is the film's coldest joke and it is never underlined. Fresh pass 30 September 2026: regenerated with the bar sheet; the tipped stool and the laughing CRT land, retake queued — the hand on the floor must lie at the far side of the counter in his locked pale-blue/charcoal cuff, not by the window in a cream one.\n\nSCRIPT — the draft's own words for this shot:\n\"Two shots. On the high shelf, the television audience laughs.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 8s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 3 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 26; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order."
     },
     {
-      "id": "neonoire-shot-24",
-      "shotNumber": 24,
-      "sceneId": "neonoire-s2",
-      "title": "From the floor",
-      "description": "We see only what she sees: the underside of the counter, a crate of empty bottles, the journalist's shoes beneath his stool, and the TV's flickering blue glow on the ceiling.",
-      "image": "/images/neonoire/s2/24-from-the-floor.jpg",
-      "shotType": "POV",
-      "movement": "Static",
-      "angle": "Low angle",
-      "lens": "24mm",
-      "lighting": "Practical night",
-      "style": "neonoire",
-      "duration": 10,
-      "durationIsEstimate": true,
-      "status": "Ready",
-      "transition": "Cut",
-      "mood": "Cold and quiet: a gap between crates and an ice bin, a laugh track, and a young woman understanding she is inside something.",
-      "characters": [
-        "neonoire-journalist"
-      ],
-      "notes": "Image: AI-generated storyboard study from pass 3; continuity, framing and production approval pending — check the wardrobe against the cast sheets before approving.\n\nCold-open fresh pass: Fresh cold-open pass (30 September 2026), 16:9 full-bleed 1920×1080, generated from the screenplay text with CHARACTER SHEETS ONLY as image references — sheets/mara.jpg and sheets/mara-face.jpg for Mara, sheets/sakai.jpg for the old man, sheets/masked-man.jpg for the two masked men, sheets/journalist.jpg for the journalist; no scene masters, no layout sheet, no earlier frame attached. STREET (scene 1): a narrow street of shuttered tiny shops with hand-painted signs in Kanda, Tokyo, at night in cold steady rain — patient rain, not a storm — wet black asphalt, tangled overhead wires; on it a closed barber's with a recessed dark doorway, closed brown wooden door, faded awning and ONE unlit red-white-blue striped pole at the doorway's right edge; at the corner one old off-white vending machine humming, its cold white light falling through the rain in columns; high up, one lit window, a radio playing behind it; at the far end a dark car idling, lights low; at the near end the amber glow of a small open bar, the only warm light down the street. The two masked men walk in and out on foot; nothing reverses, nothing swings headlights down the lane. BAR (scene 2): one narrow room, dark worn wooden counter with six round stools along the left, shelves of bottles glowing amber behind it, a rain-streaked street window and the entrance door on the right, a small boxy CRT high above the rear doorway playing a late-night variety show, crates of empty bottles and a half-open back door with thin warm light at the far end, nobody behind the counter; by the director's override of 30 September 2026 the bar frames also attach the location style sheet sheets/kanda-bar.jpg (NIGHT panels) as the room reference. LIGHT AND TEXTURE: sodium orange against sick fluorescent green, soft halation around every practical, blacks slightly crushed, fine 35mm grain, muted restrained colour in the manner of Ozu's Tokyo Story — never glossy, never cyberpunk, never a storm; ordinary steady rain. Mara matches sheets/mara.jpg exactly: 24, American, pale blue eyes, long ash-blonde hair soaked flat, small red enamel bird clip above her right temple, indigo denim jacket over a grey tee, black jeans, white trainers, thin black cord necklace, no umbrella; her dark-brown structured leather handbag hangs from her right shoulder to her left hip until it slides off her shoulder and spills across the wet street when she runs to the old man; she leaves it there, open in the rain. The small brass key she is given carries a stamped number tag worn almost smooth — the number is NOT legible in scene 1. Sakai matches sheets/sakai.jpg; the masked men match sheets/masked-man.jpg (exactly two, only eyes above the masks); the journalist matches sheets/journalist.jpg (ordinary, forties, never a hero). Violence stays distant and non-graphic: no muzzle flash, no blood, no weapon in frame. No captions, subtitles, watermarks or legible brand names. Approved by the director on 30 September 2026 as the film's main images (status Ready); the frames before this pass were draft studies, these are the coverage the film opens on. The five frames the retake round of 1 October 2026 regenerated (3, 6, 17, 18, 27) hold that status by the same bundle rule, and approval of their new pixels is the director's to give.\n\nKanda bar location continuity: OKADA'S SMALL KANDA BAR — location style sheet sheets/kanda-bar.jpg (four panels from the boarded masters, NOT the hotel lounge). Same narrow room in every visit: from the customer aisle, dark worn counter and amber bottle shelves with handwritten menu strips on the LEFT, six red-brown round stools along it, rain-streaked street window and door on the RIGHT, small CRT high above the rear doorway, crates at the far end and the tight hiding space behind the counter. Low, static, level camera; do not mirror the layout, widen the room or replace the wood with a modern cocktail bar. NIGHT (scene 2): only shelf amber, door light and blue CRT variety show; stools down, wet floor. After the journalist is killed one stool tips; no glamorised violence. DAY (scenes 8, 27A, 81): flat grey window daylight, shelf practicals still amber, stools up, CRT switched OFF (not static), chairs up by the window, a new black rubber mat where the journalist fell. Scene 64 NIGHT is later, after the cleanup: keep the mat, CRT OFF and cash drawer beneath the same counter, not the scene 2 variety show. Okada follows sheets/okada.jpg, white rolled sleeves and navy apron. Preserve the shot-specific screenplay actions and props; use the sheet for architecture and lighting, not as a new shot to substitute for a boarded frame. AI-generated draft studies, not approved coverage.\n\nThis framing is the law of the rest of the scene: shoes, ankles, and what the floor sees. The audience knows exactly as much as she does and no more. Fresh pass 30 September 2026: regenerated with the bar sheet and his sheet; retake queued — the legs read detached under the stool and the CRT's blue ceiling wash is missing.\n\nSCRIPT — the draft's own words for this shot:\n\"Behind the counter, Mara folds herself into the gap between the crates and the ice bin.\"\n\nThe room lights itself: amber bottles, the blue flicker of a CRT on a high shelf, one door light behind the counter. The camera never moves and stays where a customer would stand. The film's law for the scene is the floor: shoes, ankles, and what the counter hides. The variety show's laugh track is the only score.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 10s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 3 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 24; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order."
-    },
-    {
       "id": "neonoire-shot-308",
       "shotNumber": 308,
       "sceneId": "neonoire-s2",
       "title": "Clip under the shelf",
-      "description": "A hair clip slides out of her wet hair and skitters under the shelf; the dark gap between crates and ice bin swallows it. Behind it, her hand stays pressed flat to the bottles to stop them clinking.",
+      "description": "A hair clip slides out of her wet hair and skitters under the shelf: the small red bird, alone on the dark floorboards. Her hand stays pressed flat on the crate of bottles to stop them clinking. She doesn't breathe.",
       "image": "/images/neonoire/s2/308-clip-under-the-shelf.jpg",
       "shotType": "Insert",
       "movement": "Static",
@@ -2783,7 +2785,7 @@
       "shotNumber": 27,
       "sceneId": "neonoire-s2",
       "title": "The notebook",
-      "description": "The floor's law holds: from the gap between the crates and the ice bin the room is a strip of wet shoes, one black-gloved hand flat on the counter edge, and the brown leather-wrap notebook lying untouched on the floorboards a few feet off, beside one outstretched hand. Nobody reaches for it. One pair of shoes turns toward the door. In the gap at the frame's edge, a small red enamel bird clip has slid out of the woman's wet hair and gone half-hidden against a crate, and she presses her own hands over her mouth and does not breathe.",
+      "description": "From the gap between the crates and the ice bin: Mara, both hands over her mouth. The journalist's notebook lies on the floorboards beside her; the red clip has come to rest against a crate. Beyond, a man's black shoes and a gloved hand on the counter. \"Second position done.\" He takes one step toward the counter, hears one word in his earpiece, and turns and goes. Nobody picks up the notebook.",
       "image": "/images/neonoire/s2/27-the-notebook.jpg",
       "shotType": "Medium",
       "movement": "Static",
@@ -2820,7 +2822,7 @@
       "shotNumber": 28,
       "sceneId": "neonoire-s2",
       "title": "The blue glow",
-      "description": "She stays exactly where she is, shaking so hard the bottles in the crate beside her begin to clink; she presses her hand flat against them to make them stop. The TV audience laughs again. Hold on her face in the blue glow: a young woman who has just understood that this was not random.",
+      "description": "The door swings shut. Mara stays exactly where she is, her hand pressed flat on the bottles to keep them quiet. The television laughs again. Hold on her face in its blue light: she understands that this was not random.",
       "image": "/images/neonoire/s2/28-the-blue-glow.jpg",
       "shotType": "Close-up",
       "movement": "Static",
@@ -17056,7 +17058,7 @@
         {
           "id": "neonoire-look-kanda-item-2",
           "image": "/images/neonoire/s1/02-vending.jpg",
-          "caption": "Vending — Insert, 85mm. AI-generated study."
+          "caption": "The vending machine — Insert, 85mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-3",
@@ -17066,12 +17068,12 @@
         {
           "id": "neonoire-look-kanda-item-4",
           "image": "/images/neonoire/s1/04-mara-phone.jpg",
-          "caption": "Mara phone — Close-up, 85mm. AI-generated study."
+          "caption": "Mara's phone — Close-up, 85mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-5",
           "image": "/images/neonoire/s1/05-phone-off.jpg",
-          "caption": "Phone off — Medium close-up, 50mm. AI-generated study."
+          "caption": "Not tonight — Medium close-up, 50mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-6",
@@ -17096,12 +17098,12 @@
         {
           "id": "neonoire-look-kanda-item-10",
           "image": "/images/neonoire/s1/12-masked-man-radio.jpg",
-          "caption": "Masked man radio — Medium, 50mm. AI-generated study."
+          "caption": "First position done — Medium, 50mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-11",
           "image": "/images/neonoire/s1/13-taillights-gone.jpg",
-          "caption": "Taillights gone — Wide, 35mm. AI-generated study."
+          "caption": "Tail-lights gone — Wide, 35mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-12",
@@ -17126,7 +17128,7 @@
         {
           "id": "neonoire-look-kanda-item-16",
           "image": "/images/neonoire/s1/18-the-flashlight.jpg",
-          "caption": "The flashlight — Medium, 50mm. AI-generated study."
+          "caption": "Her bag in the rain — Medium, 50mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-17",
@@ -17146,7 +17148,7 @@
         {
           "id": "neonoire-look-kanda-item-20",
           "image": "/images/neonoire/s2/22-not-his-business.jpg",
-          "caption": "Not his business — Medium, 50mm. AI-generated study."
+          "caption": "He knows her name — Medium, 50mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-21",
@@ -17191,7 +17193,7 @@
         {
           "id": "neonoire-look-kanda-item-29",
           "image": "/images/neonoire/s1/329-the-lane-the-watch.jpg",
-          "caption": "The lane the watch — Wide, 35mm. AI-generated study."
+          "caption": "Down the lane — Wide, 35mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-30",
@@ -17216,7 +17218,7 @@
         {
           "id": "neonoire-look-kanda-item-34",
           "image": "/images/neonoire/s1/377-the-hive-remembered.jpg",
-          "caption": "The hive remembered — Establishing, 24mm. AI-generated study."
+          "caption": "The Hive, remembered — Establishing, 24mm. AI-generated study."
         },
         {
           "id": "neonoire-look-kanda-item-35",
