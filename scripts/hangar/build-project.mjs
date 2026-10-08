@@ -10,6 +10,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { attachSound, checkCues } from "./sound.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const out = resolve(root, "public/projects/hangar-cold-open.json");
@@ -256,6 +257,11 @@ const shots = [
 });
 assert.equal(details.length, shots.length, "one set of details per shot");
 
+// 8 October 2026: the recorded voices and the shared sound effects go on the frames (sound.mjs, voice-data.mjs). A frame is lengthened,
+// never shortened, so the last word has air; the notes are untouched because the video prompts parse them.
+checkCues(cues);
+const sound = attachSound(shots, root);
+
 const notes = [
   ["start-here", "Start here: what this is", "Working title only. This is the cold open of an animated 1970s feature about a boy, a small machine nobody can name, and the people hunting for it. It runs about six minutes: a pilot's voice in 1944, a hangar emptied in 1975, a truck on a back road, a near-miss, a crate that falls, and a crate that is empty. The Screenplay tab holds the pages; the Storyboard has " + shots.length + " painted boards drawn against the continuity sheets in public/images/hangar/. Acts one to three come next.", ["Read first"]],
   ["look", "The look: Painted Americana '75", "Painted, not photographed: warm dashboard amber against deep blue night, gouache fog in the hollows, soft hand-painted skies. Characters are drawn plainly and with weight, with strong silhouettes and believable acting, in the manner of 1950s to 1970s American animation (wood paneling, station wagons, diner chrome, AM radios).\n\nThe Iron Giant for the people, Studio Ghibli for the places. People and vehicles have real mass: no squash and stretch, no cartoon takes; motion is drawn with smears, not blur. Backgrounds are layered multiplane paintings with atmosphere in every layer: fog, cloud, wet leaves, weathered paint. Light always comes from something in the world: dashboard amber, hangar sodium, road-flare crimson, moon blue. Gentle film grain, soft halation on lamps, 16:9 full-bleed. The camera is patient and leaves room for silence. It is the house style 'Painted Americana '75' in every shot's style picker, and every scene and shot in this workspace already carries it.", ["Look", "Style"]],
@@ -290,8 +296,8 @@ assert.equal(script.match(/ #\d+#/g).length, scenes.length, "one #n# marker per 
 const json = JSON.stringify(project, null, 2) + "\n";
 if (process.argv.includes("--check")) {
   assert.equal(readFileSync(out, "utf8"), json, "public/projects/hangar-cold-open.json has drifted: run npm run build:hangar");
-  console.log(`Hangar bundle is current (${scenes.length} scenes, ${shots.length} shots).`);
+  console.log(`Hangar bundle is current (${scenes.length} scenes, ${shots.length} shots, ${sound.lines} spoken lines, ${sound.effects} effects on ${sound.framesWithSound} frames).`);
 } else {
   writeFileSync(out, json);
-  console.log(`Wrote ${out}: ${scenes.length} scenes, ${shots.length} shots, ${cast.length} characters.`);
+  console.log(`Wrote ${out}: ${scenes.length} scenes, ${shots.length} shots, ${cast.length} characters, ${sound.lines} spoken lines, ${sound.effects} effects on ${sound.framesWithSound} frames.`);
 }

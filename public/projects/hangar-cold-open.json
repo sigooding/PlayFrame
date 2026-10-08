@@ -175,7 +175,59 @@
         "hangar-red-two",
         "hangar-red-leader"
       ],
-      "notes": "Sound: Engine drone, radio hiss, wind. Red Two close and breathy; Red Leader tinny and far. The clicks do not arrive until the next shot.\nFraming: Hold black for the whole radio exchange. No title, no credit, no music.\nRED TWO: (hushed) Red Leader, I've got something on my right wing.\nRED LEADER: (clipped) Say again, Red Two.\nRED TWO: (hushed) No markings. It's glowing. I bank, it banks. It's copying me.\nScript: \"BLACK SCREEN. Before any picture, a radio hiss and the drone of an engine.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Engine drone, radio hiss, wind. Red Two close and breathy; Red Leader tinny and far. The clicks do not arrive until the next shot.\nFraming: Hold black for the whole radio exchange. No title, no credit, no music.\nRED TWO: (hushed) Red Leader, I've got something on my right wing.\nRED LEADER: (clipped) Say again, Red Two.\nRED TWO: (hushed) No markings. It's glowing. I bank, it banks. It's copying me.\nScript: \"BLACK SCREEN. Before any picture, a radio hiss and the drone of an engine.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-01-cockpit-drone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cockpit-drone.mp3",
+          "offset": 0,
+          "duration": 20,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-01-h01-red-two",
+          "character": "Red Two",
+          "text": "Red Leader, I've got something on my right wing.",
+          "src": "/audio/hangar/shot-01/01-red-two-red-leader-ive-got-something.mp3",
+          "offset": 2,
+          "duration": 3.04,
+          "voice": "Cavendish",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "hangar-01-h02-red-leader",
+          "character": "Red Leader",
+          "text": "Say again, Red Two.",
+          "src": "/audio/hangar/shot-01/02-red-leader-say-again-red-two.mp3",
+          "offset": 6.2,
+          "duration": 1.68,
+          "voice": "Daniel - NEONOIRE",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "hangar-01-h03-red-two",
+          "character": "Red Two",
+          "text": "No markings. It's glowing. I bank, it banks. It's copying me.",
+          "src": "/audio/hangar/shot-01/03-red-two-no-markings-its-glowing-i.mp3",
+          "offset": 8.9,
+          "duration": 5.84,
+          "voice": "Cavendish",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "sfx-hangar-01-cockpit-drone-2",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cockpit-drone.mp3",
+          "offset": 20,
+          "duration": 20,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-02",
@@ -192,14 +244,66 @@
       "lightingNotes": "Still pure black.",
       "style": "hangar",
       "mood": "Wonder tipping into unease.",
-      "duration": 12,
+      "duration": 13.6,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
       "characters": [
         "hangar-red-two"
       ],
-      "notes": "Sound: The clicks arrive in his headset: three quick, one slow, close and dry, like a relay or a tongue on teeth. This exact recording is reused in the trailer and in the woods. Filter it slightly, as if heard through a headset.\nFraming: Still black. The first thing we ever see is nothing.\nRED LEADER: (clipped) Could be a Jerry trick. Take it down.\nRED TWO: (hushed) It's not doing anything. It's just flying with me.\nRED LEADER: (clipped) That's an order.\nScript: \"In his headset, a strange clicking, in a distinct rhythm: three quick, one slow.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: The clicks arrive in his headset: three quick, one slow, close and dry, like a relay or a tongue on teeth. This exact recording is reused in the trailer and in the woods. Filter it slightly, as if heard through a headset.\nFraming: Still black. The first thing we ever see is nothing.\nRED LEADER: (clipped) Could be a Jerry trick. Take it down.\nRED TWO: (hushed) It's not doing anything. It's just flying with me.\nRED LEADER: (clipped) That's an order.\nScript: \"In his headset, a strange clicking, in a distinct rhythm: three quick, one slow.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-02-cockpit-drone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cockpit-drone.mp3",
+          "offset": 0,
+          "duration": 20,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-02-click-pattern",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/click-pattern.mp3",
+          "offset": 0.8,
+          "duration": 2.48,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-02-h04-red-leader",
+          "character": "Red Leader",
+          "text": "Could be a Jerry trick. Take it down.",
+          "src": "/audio/hangar/shot-02/01-red-leader-could-be-a-jerry-trick.mp3",
+          "offset": 4,
+          "duration": 2.16,
+          "voice": "Daniel - NEONOIRE",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "hangar-02-h05-red-two",
+          "character": "Red Two",
+          "text": "It's not doing anything. It's just flying with me.",
+          "src": "/audio/hangar/shot-02/02-red-two-its-not-doing-anything-its.mp3",
+          "offset": 7,
+          "duration": 3.76,
+          "voice": "Cavendish",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "hangar-02-h06-red-leader",
+          "character": "Red Leader",
+          "text": "That's an order.",
+          "src": "/audio/hangar/shot-02/03-red-leader-thats-an-order.mp3",
+          "offset": 11.6,
+          "duration": 1.36,
+          "voice": "Daniel - NEONOIRE",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-03",
@@ -224,7 +328,19 @@
         "hangar-red-two",
         "hangar-red-leader"
       ],
-      "notes": "Sound: Two short bursts, then true silence: drop the engine and the hiss out entirely for a full beat. The silence is the cut.\nFraming: Hold black through the exchange, the pause and the gunfire. Do not cut to a picture of what he shot, ever.\nScript: \"A long pause. Then gunfire. Then silence.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Two short bursts, then true silence: drop the engine and the hiss out entirely for a full beat. The silence is the cut.\nFraming: Hold black through the exchange, the pause and the gunfire. Do not cut to a picture of what he shot, ever.\nScript: \"A long pause. Then gunfire. Then silence.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-03-gunfire-bursts",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/gunfire-bursts.mp3",
+          "offset": 3,
+          "duration": 4,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-04",
@@ -246,7 +362,19 @@
       "status": "Draft",
       "transition": "Fade in",
       "characters": [],
-      "notes": "Sound: Idle generators, boots, a forklift's reversing beeper, insects. No score.\nFraming: Open high over the apron and crane down to the hangar doors: the truck reversed up to the doors with its trailer's rear doors at the opening and the cab pointing away, soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.\nScript: \"Fade up on Wright-Patterson at night.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Idle generators, boots, a forklift's reversing beeper, insects. No score.\nFraming: Open high over the apron and crane down to the hangar doors: the truck reversed up to the doors with its trailer's rear doors at the opening and the cab pointing away, soldiers small against enormous doors, a flag hanging limp, crates moving out in a slow line.\nScript: \"Fade up on Wright-Patterson at night.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-04-forklift-yard",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/forklift-yard.mp3",
+          "offset": 0,
+          "duration": 10,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-05",
@@ -263,12 +391,34 @@
       "lightingNotes": "The television's blue-white flicker is the only light inside the booth; the rest of the room is dim and warm brown.",
       "style": "hangar",
       "mood": "Official voices explaining nothing.",
-      "duration": 6,
+      "duration": 6.6,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Muffled hearing audio from the booth's television, a gavel; the emptied hangar beyond.\nFraming: Locked-off insert on a small curved-glass TV with rabbit ears: a committee table, a gavel. Nobody in the booth looks up.\nTV: (muffled) ...the question before this committee is what else has been kept from the American people.\nScript: \"A TV in the guard booth shows a Senate hearing while airmen quietly empty the hangar.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Muffled hearing audio from the booth's television, a gavel; the emptied hangar beyond.\nFraming: Locked-off insert on a small curved-glass TV with rabbit ears: a committee table, a gavel. Nobody in the booth looks up.\nTV: (muffled) ...the question before this committee is what else has been kept from the American people.\nScript: \"A TV in the guard booth shows a Senate hearing while airmen quietly empty the hangar.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-05-hangar-room-tone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/hangar-room-tone.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-05-h07-tv",
+          "character": "TV",
+          "text": "...the question before this committee is what else has been kept from the American people.",
+          "src": "/audio/hangar/shot-05/01-tv-the-question-before-this-committee.mp3",
+          "offset": 0.8,
+          "duration": 5.2,
+          "voice": "Clyde - Vintage Male Radio Announcer",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-06",
@@ -290,7 +440,19 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: The echo of an emptied hangar. The crate is silent.\nFraming: Low angle from the floor so the crate looms. The stencil is weathered and legible. The coffee ring in the lid is visible but not yet explained. No push-in; nobody reads it aloud.\nScript: \"One crate sits apart from the others, stenciled WRIGHT FIELD 1944 - INERT. Nobody reads it aloud.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: The echo of an emptied hangar. The crate is silent.\nFraming: Low angle from the floor so the crate looms. The stencil is weathered and legible. The coffee ring in the lid is visible but not yet explained. No push-in; nobody reads it aloud.\nScript: \"One crate sits apart from the others, stenciled WRIGHT FIELD 1944 - INERT. Nobody reads it aloud.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-06-hangar-room-tone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/hangar-room-tone.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.5,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-07",
@@ -314,7 +476,29 @@
       "characters": [
         "hangar-sergeant"
       ],
-      "notes": "Sound: Ceramic on wood, a small tick.\nFraming: Top-down insert: the cup sits exactly in the ring worn into the lid. He lifts it away as the shot ends.\nScript: \"sets his coffee cup on the lid, right into a ring worn into the wood.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Ceramic on wood, a small tick.\nFraming: Top-down insert: the cup sits exactly in the ring worn into the lid. He lifts it away as the shot ends.\nScript: \"sets his coffee cup on the lid, right into a ring worn into the wood.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-07-hangar-room-tone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/hangar-room-tone.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-07-cup-rattle",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/cup-rattle.mp3",
+          "offset": 1.2,
+          "duration": 4,
+          "gain": 0.5,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-08",
@@ -338,7 +522,19 @@
       "characters": [
         "hangar-sergeant"
       ],
-      "notes": "Sound: A held breath. The hangar's emptiness. No knock yet: the crate stays silent here.\nFraming: Hold on the hand and the lid. He does not look at the crate. Nothing answers.\nScript: \"he rests his hand flat on the lid, the way you would steady a sleeping animal.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: A held breath. The hangar's emptiness. No knock yet: the crate stays silent here.\nFraming: Hold on the hand and the lid. He does not look at the crate. Nothing answers.\nScript: \"he rests his hand flat on the lid, the way you would steady a sleeping animal.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-08-hangar-room-tone",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/hangar-room-tone.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-09",
@@ -363,7 +559,39 @@
         "hangar-airman",
         "hangar-trucker"
       ],
-      "notes": "Sound: A pen scratching the clipboard; the truck idling.\nFraming: Two-shot at shoulder height. The trucker never looks up from signing; the airman's eyes go past him to the crate.\nAIRMAN: Don't you want to know what's in it?\nTRUCKER: (flat) Nope.\nScript: \"Don't you want to know what's in it?\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: A pen scratching the clipboard; the truck idling.\nFraming: Two-shot at shoulder height. The trucker never looks up from signing; the airman's eyes go past him to the crate.\nAIRMAN: Don't you want to know what's in it?\nTRUCKER: (flat) Nope.\nScript: \"Don't you want to know what's in it?\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-09-pen-clipboard",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/pen-clipboard.mp3",
+          "offset": 0.4,
+          "duration": 4,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-09-h08-airman",
+          "character": "Airman",
+          "text": "Don't you want to know what's in it?",
+          "src": "/audio/hangar/shot-09/01-airman-dont-you-want-to-know.mp3",
+          "offset": 1.2,
+          "duration": 1.84,
+          "voice": "Rick - Calm & Basic",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "hangar-09-h09-trucker",
+          "character": "Trucker",
+          "text": "Nope.",
+          "src": "/audio/hangar/shot-09/02-trucker-nope.mp3",
+          "offset": 4,
+          "duration": 1.12,
+          "voice": "Jack (Narrator Lead)",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-10",
@@ -409,7 +637,19 @@
       "status": "Draft",
       "transition": "Dissolve",
       "characters": [],
-      "notes": "Sound: Crickets under the engine; wind swelling.\nFraming: Crane up from the road to reveal the sweep of the hills in layered painted ridgelines of blue (Ghibli depth). The trailer is a small lit box on a very large night.\nScript: \"It turns onto a twisting two-lane and climbs into the Ohio hills\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Crickets under the engine; wind swelling.\nFraming: Crane up from the road to reveal the sweep of the hills in layered painted ridgelines of blue (Ghibli depth). The trailer is a small lit box on a very large night.\nScript: \"It turns onto a twisting two-lane and climbs into the Ohio hills\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-11-crickets-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crickets-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-12",
@@ -434,7 +674,29 @@
         "hangar-trucker",
         "hangar-airman"
       ],
-      "notes": "Sound: AM radio low under it (an old ballad), gearbox, tyres.\nFraming: Medium two-shot from the dash. American left-hand-drive truck: the trucker sits on the truck's LEFT, so from the dash looking back at them he is on the viewer's RIGHT and the airman on the viewer's LEFT. The airman's clothes are civilian and too neat; the trucker wears a cap and his brown leather jacket; the wheel is large in frame.\nTRUCKER: (dry) Thirty years driving. First time anybody paid me to skip a scale.\nScript: \"First time anybody paid me to skip a scale.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: AM radio low under it (an old ballad), gearbox, tyres.\nFraming: Medium two-shot from the dash. American left-hand-drive truck: the trucker sits on the truck's LEFT, so from the dash looking back at them he is on the viewer's RIGHT and the airman on the viewer's LEFT. The airman's clothes are civilian and too neat; the trucker wears a cap and his brown leather jacket; the wheel is large in frame.\nTRUCKER: (dry) Thirty years driving. First time anybody paid me to skip a scale.\nScript: \"First time anybody paid me to skip a scale.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-12-crickets-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crickets-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.25,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-12-h10-trucker",
+          "character": "Trucker",
+          "text": "Thirty years driving. First time anybody paid me to skip a scale.",
+          "src": "/audio/hangar/shot-12/01-trucker-thirty-years-driving-first-time.mp3",
+          "offset": 1,
+          "duration": 4.8,
+          "voice": "Jack (Narrator Lead)",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-13",
@@ -451,7 +713,7 @@
       "lightingNotes": "Dash glow on the backs of their heads; the red of the rear-view mirror; the black trailer visible through the sliding rear window.",
       "style": "hangar",
       "mood": "Something small and wrong.",
-      "duration": 6,
+      "duration": 6.1,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "J-cut",
@@ -459,7 +721,39 @@
         "hangar-trucker",
         "hangar-airman"
       ],
-      "notes": "Sound: Knock. Knock: dull, wooden, inside the trailer.\nFraming: Over the shoulder, looking back through the rear window at the dark trailer. The knock is heard before anyone looks.\nTRUCKER: (flat) Load's shifting.\nScript: \"A knock from the trailer. Then another. They both look back.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Knock. Knock: dull, wooden, inside the trailer.\nFraming: Over the shoulder, looking back through the rear window at the dark trailer. The knock is heard before anyone looks.\nTRUCKER: (flat) Load's shifting.\nScript: \"A knock from the trailer. Then another. They both look back.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-13-crate-knock",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crate-knock.mp3",
+          "offset": 0.7,
+          "duration": 1.48,
+          "gain": 0.8,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-13-crate-knock-2",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crate-knock.mp3",
+          "offset": 2.3,
+          "duration": 1.48,
+          "gain": 0.8,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-13-h11-trucker",
+          "character": "Trucker",
+          "text": "Load's shifting.",
+          "src": "/audio/hangar/shot-13/01-trucker-loads-shifting.mp3",
+          "offset": 3.8,
+          "duration": 1.68,
+          "voice": "Jack (Narrator Lead)",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-14",
@@ -483,7 +777,29 @@
       "characters": [
         "hangar-airman"
       ],
-      "notes": "Sound: Knocks and taps in unison: three quick, one slow.\nFraming: Close on his hand tapping his knee. He is the passenger on the truck's right, so the wheel is on his LEFT — it sits across the cab at the left of frame, never under his hand. The taps lock to the knocks coming off-screen.\nAIRMAN: (murmured) One-two-three... four. One-two-three... four.\nScript: \"One-two-three... four. One-two-three... four.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s3/14-one-two-three-four--v1.jpg. The wheel reads across the cab at the left of frame, unmistakably the driver's; the tapping hand is the young passenger's."
+      "notes": "Sound: Knocks and taps in unison: three quick, one slow.\nFraming: Close on his hand tapping his knee. He is the passenger on the truck's right, so the wheel is on his LEFT — it sits across the cab at the left of frame, never under his hand. The taps lock to the knocks coming off-screen.\nAIRMAN: (murmured) One-two-three... four. One-two-three... four.\nScript: \"One-two-three... four. One-two-three... four.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s3/14-one-two-three-four--v1.jpg. The wheel reads across the cab at the left of frame, unmistakably the driver's; the tapping hand is the young passenger's.",
+      "audio": [
+        {
+          "id": "sfx-hangar-14-knock-three-quick",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/knock-three-quick.mp3",
+          "offset": 0.4,
+          "duration": 3,
+          "gain": 0.8,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-14-h12-airman",
+          "character": "Airman",
+          "text": "One-two-three... four. One-two-three... four.",
+          "src": "/audio/hangar/shot-14/01-airman-one-two-three-four-one.mp3",
+          "offset": 1.2,
+          "duration": 4.48,
+          "voice": "Rick - Calm & Basic",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-15",
@@ -507,7 +823,29 @@
       "characters": [
         "hangar-airman"
       ],
-      "notes": "Sound: Three quick knocks. Silence where the fourth should be: take the engine down for half a second.\nFraming: Extreme close-up of his raised finger, then his eyes. Hold longer than is comfortable.\nTRUCKER: (flat) There. Settled.\nScript: \"Three quick knocks. The slow one never arrives.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Three quick knocks. Silence where the fourth should be: take the engine down for half a second.\nFraming: Extreme close-up of his raised finger, then his eyes. Hold longer than is comfortable.\nTRUCKER: (flat) There. Settled.\nScript: \"Three quick knocks. The slow one never arrives.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-15-knock-three-quick",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/knock-three-quick.mp3",
+          "offset": 0.6,
+          "duration": 3,
+          "gain": 0.8,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-15-h13-trucker",
+          "character": "Trucker",
+          "text": "There. Settled.",
+          "src": "/audio/hangar/shot-15/01-trucker-there-settled.mp3",
+          "offset": 5,
+          "duration": 2,
+          "voice": "Jack (Narrator Lead)",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-16",
@@ -531,7 +869,19 @@
       "characters": [
         "hangar-mom"
       ],
-      "notes": "Sound: Gravel under a tyre; a ballad on the wagon's radio, faint.\nFraming: Locked wide at the bend, the yellow centre line running through the shot. The wagon drifts over it a beat too long; Ohio hardwoods in full summer leaf crowd both sides — no redwood trunks, no bare winter branches.\nScript: \"A station wagon comes around the bend, drifting over the center line.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s4/16-headlights-round-bend--v1.jpg. Ohio hardwoods in full leaf, and the yellow centre line and the drift the shot is named for are in the frame."
+      "notes": "Sound: Gravel under a tyre; a ballad on the wagon's radio, faint.\nFraming: Locked wide at the bend, the yellow centre line running through the shot. The wagon drifts over it a beat too long; Ohio hardwoods in full summer leaf crowd both sides — no redwood trunks, no bare winter branches.\nScript: \"A station wagon comes around the bend, drifting over the center line.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s4/16-headlights-round-bend--v1.jpg. Ohio hardwoods in full leaf, and the yellow centre line and the drift the shot is named for are in the frame.",
+      "audio": [
+        {
+          "id": "sfx-hangar-16-gravel-tyres",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/gravel-tyres.mp3",
+          "offset": 0,
+          "duration": 6,
+          "gain": 0.5,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-17",
@@ -555,7 +905,19 @@
       "characters": [
         "hangar-mom"
       ],
-      "notes": "Sound: Night air through the open window, her own breath, the wagon's radio ballad.\nFraming: Close on her eyes. The window beside her is fully down — no glass in the frame — and the night air is lifting her hair. A slow blink; the lids drop. She wears the same white cap with its one thin red band as the sheet, and a hospital ID clipped to her coat, blurred but readable as a badge (the evidence seed).\nMOM: (drowsy) Come on. Two more miles.\nScript: \"Come on. Two more miles.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s4/17-two-more-miles--v1.jpg. The window is fully down and the night air is in her hair; she wears the banded cap and the badge clip from the continuity sheet."
+      "notes": "Sound: Night air through the open window, her own breath, the wagon's radio ballad.\nFraming: Close on her eyes. The window beside her is fully down — no glass in the frame — and the night air is lifting her hair. A slow blink; the lids drop. She wears the same white cap with its one thin red band as the sheet, and a hospital ID clipped to her coat, blurred but readable as a badge (the evidence seed).\nMOM: (drowsy) Come on. Two more miles.\nScript: \"Come on. Two more miles.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s4/17-two-more-miles--v1.jpg. The window is fully down and the night air is in her hair; she wears the banded cap and the badge clip from the continuity sheet.",
+      "audio": [
+        {
+          "id": "hangar-17-h14-mom",
+          "character": "Mom",
+          "text": "Come on. Two more miles.",
+          "src": "/audio/hangar/shot-17/01-mom-come-on-two-more-miles.mp3",
+          "offset": 1,
+          "duration": 2.4,
+          "voice": "Vera",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-18",
@@ -580,7 +942,29 @@
         "hangar-mom",
         "hangar-trucker"
       ],
-      "notes": "Sound: Horn, tyre shriek, gravel.\nFraming: Handheld, low. Truck and wagon pass head-on in opposite directions, one showing its front and the other its tail, the wagon drifting into the truck's lane; the nurse is alone in the wagon. The wagon's flank slides past the truck's cab by a hand's width. Draw the motion with smears, not blur; keep the weight of both vehicles.\nScript: \"Both drivers yank the wheel.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s4/18-yank-the-wheel--v1.jpg. Truck front, wagon tail, opposite directions, the wagon through the truck's lane; the nurse is alone in the wagon and the trucker alone in the cab."
+      "notes": "Sound: Horn, tyre shriek, gravel.\nFraming: Handheld, low. Truck and wagon pass head-on in opposite directions, one showing its front and the other its tail, the wagon drifting into the truck's lane; the nurse is alone in the wagon. The wagon's flank slides past the truck's cab by a hand's width. Draw the motion with smears, not blur; keep the weight of both vehicles.\nScript: \"Both drivers yank the wheel.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s4/18-yank-the-wheel--v1.jpg. Truck front, wagon tail, opposite directions, the wagon through the truck's lane; the nurse is alone in the wagon and the trucker alone in the cab.",
+      "audio": [
+        {
+          "id": "sfx-hangar-18-truck-horn",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/truck-horn.mp3",
+          "offset": 0.2,
+          "duration": 3,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-18-gravel-tyres",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/gravel-tyres.mp3",
+          "offset": 1.2,
+          "duration": 6,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-19",
@@ -604,7 +988,19 @@
       "characters": [
         "hangar-mom"
       ],
-      "notes": "Sound: Snap of metal, a glass skitter, the cap's soft slap.\nFraming: Insert, low: the mirror snaps off and skitters; the cap spins down onto the asphalt. Keep both clearly in frame so the audience remembers them.\nScript: \"its side mirror snaps off and her nurse's cap flies out of the window.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Snap of metal, a glass skitter, the cap's soft slap.\nFraming: Insert, low: the mirror snaps off and skitters; the cap spins down onto the asphalt. Keep both clearly in frame so the audience remembers them.\nScript: \"its side mirror snaps off and her nurse's cap flies out of the window.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-19-mirror-snap-cap",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/mirror-snap-cap.mp3",
+          "offset": 0.3,
+          "duration": 3,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-20",
@@ -628,7 +1024,19 @@
       "characters": [
         "hangar-trucker"
       ],
-      "notes": "Sound: Tyre howl, chains rattling.\nFraming: Tracking wide beside the trailer as it fishtails; follow the rear doors.\nScript: \"The trailer fishtails\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Tyre howl, chains rattling.\nFraming: Tracking wide beside the trailer as it fishtails; follow the rear doors.\nScript: \"The trailer fishtails\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-20-tyre-howl-chains",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/tyre-howl-chains.mp3",
+          "offset": 0,
+          "duration": 4,
+          "gain": 0.7,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-21",
@@ -650,7 +1058,19 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: The missing fourth knock, huge and near; the metal bang of the doors bursting.\nFraming: Medium at the trailer's rear doors. The slow knock lands from inside at the same instant the skid peaks; the latch lets go. Never show the inside. Neither a push nor a bump: it must read both ways.\nScript: \"the missing slow knock lands, hard.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: The missing fourth knock, huge and near; the metal bang of the doors bursting.\nFraming: Medium at the trailer's rear doors. The slow knock lands from inside at the same instant the skid peaks; the latch lets go. Never show the inside. Neither a push nor a bump: it must read both ways.\nScript: \"the missing slow knock lands, hard.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-21-crate-knock",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crate-knock.mp3",
+          "offset": 0.3,
+          "duration": 1.48,
+          "gain": 1,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-22",
@@ -694,7 +1114,19 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Impacts: each tree a different thud, then splintering. No clicks.\nFraming: Wide tracking down with the crate. The trees are hard dark verticals; boards peel away.\nScript: \"The crate tumbles down the wooded bank, slamming into trees and shedding boards.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Impacts: each tree a different thud, then splintering. No clicks.\nFraming: Wide tracking down with the crate. The trees are hard dark verticals; boards peel away.\nScript: \"The crate tumbles down the wooded bank, slamming into trees and shedding boards.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-23-car-tumble-trees",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/car-tumble-trees.mp3",
+          "offset": 0.2,
+          "duration": 6,
+          "gain": 0.9,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-24",
@@ -716,7 +1148,39 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Muffled thumps; a rattle like breath. No click.\nFraming: POV from inside, handheld, thrown with the crate. Nothing recognizable. Never reveal what is in there.\nScript: \"The camera rides inside with it: darkness, flashes of light through the cracks, nothing you can make out.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Muffled thumps; a rattle like breath. No click.\nFraming: POV from inside, handheld, thrown with the crate. Nothing recognizable. Never reveal what is in there.\nScript: \"The camera rides inside with it: darkness, flashes of light through the cracks, nothing you can make out.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-24-crate-knock",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crate-knock.mp3",
+          "offset": 0.8,
+          "duration": 1.48,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-24-crate-knock-2",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crate-knock.mp3",
+          "offset": 2.6,
+          "duration": 1.48,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-24-crate-knock-3",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crate-knock.mp3",
+          "offset": 4.2,
+          "duration": 1.48,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-25",
@@ -738,7 +1202,29 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Silence, then crickets fading up, then the creek.\nFraming: Wide, locked off. Moonlight only: no moon disc in frame, no red light on the crate and nothing red in the water that could read as blood. The crate is the prop sheet's — steel straps, stenciled boards, no hinged fittings. Hold for five full seconds before the crickets begin.\nScript: \"It lands by the creek, split open.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s5/25-by-the-creek--v1.jpg. Nothing red in or on the water and nothing but straw in the crate. Caveat, honestly: the moonlit blue reads brighter than this scene's almost-none note — the content is right and the key is the director's call."
+      "notes": "Sound: Silence, then crickets fading up, then the creek.\nFraming: Wide, locked off. Moonlight only: no moon disc in frame, no red light on the crate and nothing red in the water that could read as blood. The crate is the prop sheet's — steel straps, stenciled boards, no hinged fittings. Hold for five full seconds before the crickets begin.\nScript: \"It lands by the creek, split open.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.\nRetake (7 October 2026): the corrected take is installed; the outgoing study is archived at public/images/hangar/archive/s5/25-by-the-creek--v1.jpg. Nothing red in or on the water and nothing but straw in the crate. Caveat, honestly: the moonlit blue reads brighter than this scene's almost-none note — the content is right and the key is the director's call.",
+      "audio": [
+        {
+          "id": "sfx-hangar-25-crickets-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crickets-night.mp3",
+          "offset": 3,
+          "duration": 12,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-25-creek-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/creek-night.mp3",
+          "offset": 6,
+          "duration": 12,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-26",
@@ -787,7 +1273,39 @@
         "hangar-trucker",
         "hangar-agent"
       ],
-      "notes": "Sound: Flare hiss and crackle, tyres on gravel.\nFraming: Medium on the trucker's shaking hand and the flare; the sedan skids in behind him.\nScript: \"The Trucker lights road flares.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Flare hiss and crackle, tyres on gravel.\nFraming: Medium on the trucker's shaking hand and the flare; the sedan skids in behind him.\nScript: \"The Trucker lights road flares.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-27-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-27-gravel-tyres",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/gravel-tyres.mp3",
+          "offset": 0.3,
+          "duration": 6,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-27-car-doors-open",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/car-doors-open.mp3",
+          "offset": 3.6,
+          "duration": 2,
+          "gain": 0.6,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-28",
@@ -811,7 +1329,19 @@
       "characters": [
         "hangar-agent"
       ],
-      "notes": "Sound: Gravel, the flare, a pocket button.\nFraming: Close, high angle. A gloved hand lifts the white nurse's cap with its one red band and the round chrome side mirror (the same two objects as the insert); the pocket closes over them. Hold on the empty asphalt after.\nScript: \"picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Gravel, the flare, a pocket button.\nFraming: Close, high angle. A gloved hand lifts the white nurse's cap with its one red band and the round chrome side mirror (the same two objects as the insert); the pocket closes over them. Hold on the empty asphalt after.\nScript: \"picks up the nurse's cap, white on the black asphalt in the red light, and the snapped-off mirror beside it. He pockets both.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-28-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-29",
@@ -828,7 +1358,7 @@
       "lightingNotes": "Red from below; the agent's face never fully lit; the sedan's lights behind.",
       "style": "hangar",
       "mood": "Authority meeting fear.",
-      "duration": 8,
+      "duration": 8.3,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -836,7 +1366,39 @@
         "hangar-agent",
         "hangar-trucker"
       ],
-      "notes": "Sound: Flare hiss, gravel underfoot, the sedan's engine ticking as it cools.\nFraming: Two-shot. The trucker points down the bank; the agent looks at the cap in his hand.\nAGENT: Where is it?\nTRUCKER: (shaking) Down there. Some lady in a wagon, she just came right at me.\nScript: \"Down there. Some lady in a wagon, she just came right at me.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Flare hiss, gravel underfoot, the sedan's engine ticking as it cools.\nFraming: Two-shot. The trucker points down the bank; the agent looks at the cap in his hand.\nAGENT: Where is it?\nTRUCKER: (shaking) Down there. Some lady in a wagon, she just came right at me.\nScript: \"Down there. Some lady in a wagon, she just came right at me.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-29-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-29-h15-agent",
+          "character": "Agent",
+          "text": "Where is it?",
+          "src": "/audio/hangar/shot-29/01-agent-where-is-it.mp3",
+          "offset": 1,
+          "duration": 1.28,
+          "voice": "Callum - Husky Trickster",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "hangar-29-h16-trucker",
+          "character": "Trucker",
+          "text": "Down there. Some lady in a wagon, she just came right at me.",
+          "src": "/audio/hangar/shot-29/02-trucker-down-there-some-lady-in.mp3",
+          "offset": 3.2,
+          "duration": 4.48,
+          "voice": "Jack (Narrator Lead)",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-30",
@@ -861,7 +1423,29 @@
         "hangar-agent",
         "hangar-airman"
       ],
-      "notes": "Sound: Boots on leaves, flare hiss, the creek growing louder.\nFraming: Crane down from the road, following three figures down the bank; the flares are moving red stars.\nScript: \"Then the two agents and the Airman start down the bank through red fog.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Boots on leaves, flare hiss, the creek growing louder.\nFraming: Crane down from the road, following three figures down the bank; the flares are moving red stars.\nScript: \"Then the two agents and the Airman start down the bank through red fog.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-30-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-30-creek-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/creek-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-31",
@@ -885,7 +1469,29 @@
       "characters": [
         "hangar-agent"
       ],
-      "notes": "Sound: The creek; one crackling flare.\nFraming: Medium wide. The three arrive; the lid lies in pieces; a long beat of nothing.\nScript: \"The crate is empty.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: The creek; one crackling flare.\nFraming: Medium wide. The three arrive; the lid lies in pieces; a long beat of nothing.\nScript: \"The crate is empty.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-31-creek-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/creek-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-31-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-32",
@@ -907,7 +1513,19 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Straw rustling; a flare's hiss.\nFraming: Close, high angle into the hollow: a bowl-shaped dent pressed into straw. No limbs, fur, head or tail; nothing curled up; imply no form beyond the hollow itself. The same strapped pine crate as the prop sheet.\nScript: \"A small hollow is pressed into thirty-year-old packing straw, where something lay curled up.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Straw rustling; a flare's hiss.\nFraming: Close, high angle into the hollow: a bowl-shaped dent pressed into straw. No limbs, fur, head or tail; nothing curled up; imply no form beyond the hollow itself. The same strapped pine crate as the prop sheet.\nScript: \"A small hollow is pressed into thirty-year-old packing straw, where something lay curled up.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-32-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-33",
@@ -929,7 +1547,19 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: Running water.\nFraming: Insert on the board bobbing in the creek: INERT. No push-in.\nScript: \"A broken board stenciled INERT lies half-sunk in the creek.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Running water.\nFraming: Insert on the board bobbing in the creek: INERT. No push-in.\nScript: \"A broken board stenciled INERT lies half-sunk in the creek.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-33-creek-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/creek-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.5,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-34",
@@ -953,7 +1583,19 @@
       "characters": [
         "hangar-agent"
       ],
-      "notes": "Sound: A flare crackle; an agent's breath. No score.\nFraming: Extreme close tracking along the wall, lit by a hissing red road flare held low (a flare, never a flashlight); the marks fill the frame edge to edge. Let the sheer number sink in: thousands.\nScript: \"the light rakes across rows of tiny scratched marks, thousands of them, covering every inch.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: A flare crackle; an agent's breath. No score.\nFraming: Extreme close tracking along the wall, lit by a hissing red road flare held low (a flare, never a flashlight); the marks fill the frame edge to edge. Let the sheer number sink in: thousands.\nScript: \"the light rakes across rows of tiny scratched marks, thousands of them, covering every inch.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-34-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.4,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-35",
@@ -997,7 +1639,29 @@
       "status": "Draft",
       "transition": "Cut",
       "characters": [],
-      "notes": "Sound: The creek and the flare; nothing else.\nFraming: Locked close on the deep far corner of the crate, almost lost in shadow, with the few uncrossed marks tucked into it and the lit wall around them crowded with crossed marks. The light is a red flare, never a flashlight. Slowly the eye finds the few uncrossed marks. No one in frame looks here.\nScript: \"The flare does not reach the far corner, where a few marks are still uncrossed.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: The creek and the flare; nothing else.\nFraming: Locked close on the deep far corner of the crate, almost lost in shadow, with the few uncrossed marks tucked into it and the lit wall around them crowded with crossed marks. The light is a red flare, never a flashlight. Slowly the eye finds the few uncrossed marks. No one in frame looks here.\nScript: \"The flare does not reach the far corner, where a few marks are still uncrossed.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-36-creek-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/creek-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-36-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.2,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-37",
@@ -1019,7 +1683,29 @@
       "status": "Draft",
       "transition": "J-cut",
       "characters": [],
-      "notes": "Sound: Three quick clicks, one slow, receding: the same recording as 1944, now with woods around it.\nFraming: Wide of the woods from the crate site. The sound crosses left to right and recedes; nothing is seen.\nScript: \"Far off in the woods, faintly: three quick clicks and one slow, moving away.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Three quick clicks, one slow, receding: the same recording as 1944, now with woods around it.\nFraming: Wide of the woods from the crate site. The sound crosses left to right and recedes; nothing is seen.\nScript: \"Far off in the woods, faintly: three quick clicks and one slow, moving away.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-37-crickets-night",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/crickets-night.mp3",
+          "offset": 0,
+          "duration": 12,
+          "gain": 0.25,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "sfx-hangar-37-click-pattern",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/click-pattern.mp3",
+          "offset": 1,
+          "duration": 2.48,
+          "gain": 0.35,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     },
     {
       "id": "hangar-shot-38",
@@ -1043,7 +1729,29 @@
       "characters": [
         "hangar-airman"
       ],
-      "notes": "Sound: A whisper; the clicks fading beneath it.\nFraming: Close on the airman. His head turns a fraction toward the sound; his lips move: \"One-two-three... four.\"\nAIRMAN: (barely audible) One-two-three... four.\nScript: \"The agents don't notice. The Airman does.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: A whisper; the clicks fading beneath it.\nFraming: Close on the airman. His head turns a fraction toward the sound; his lips move: \"One-two-three... four.\"\nAIRMAN: (barely audible) One-two-three... four.\nScript: \"The agents don't notice. The Airman does.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-38-click-pattern",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/click-pattern.mp3",
+          "offset": 0.4,
+          "duration": 2.48,
+          "gain": 0.15,
+          "model": "eleven_text_to_sound_v2"
+        },
+        {
+          "id": "hangar-38-h17-airman",
+          "character": "Airman",
+          "text": "One-two-three... four.",
+          "src": "/audio/hangar/shot-38/01-airman-one-two-three-four.mp3",
+          "offset": 1.2,
+          "duration": 2.72,
+          "voice": "Rick - Calm & Basic",
+          "model": "eleven_v4"
+        }
+      ]
     },
     {
       "id": "hangar-shot-39",
@@ -1065,7 +1773,19 @@
       "status": "Draft",
       "transition": "Fade out",
       "characters": [],
-      "notes": "Sound: Hiss, then silence. Option: one last click as the title lands.\nFraming: Extreme close-up of the flare's end as it gutters; cut to black; hold; the title card fades up on black.\nScript: \"The flare sputters out.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described."
+      "notes": "Sound: Hiss, then silence. Option: one last click as the title lands.\nFraming: Extreme close-up of the flare's end as it gutters; cut to black; hold; the title card fades up on black.\nScript: \"The flare sputters out.\"\n\nStyle: Painted Americana '75 (hand-drawn characters with weight over gouache backgrounds, dashboard amber against blue night). The painted board on this card was made against the continuity sheets in public/images/hangar/ (docs/hangar/README.md). The thing in the crate is never named, shown or described.",
+      "audio": [
+        {
+          "id": "sfx-hangar-39-flare-hiss",
+          "character": "SFX",
+          "text": "",
+          "src": "/audio/sfx/flare-hiss.mp3",
+          "offset": 0,
+          "duration": 8,
+          "gain": 0.3,
+          "model": "eleven_text_to_sound_v2"
+        }
+      ]
     }
   ],
   "characters": [
