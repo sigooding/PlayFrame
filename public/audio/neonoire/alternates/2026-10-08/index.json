@@ -1,0 +1,3247 @@
+{
+ "title": "Nobody's Witness: voice alternates, 8 October 2026",
+ "heading": "Voice alternates: 8 October 2026",
+ "intro": [
+  "<strong>What this is.</strong> Everything generated on 8 October 2026 that is not in the game, plus the green row for each line. <em>Q01&ndash;Q12</em>: the twelve Jack and Vera lines re-recorded at speaking volume, with the sample that was not used and the hushed take they replaced. <em>M, J, V01, W</em>: three alternate readings each of the peak lines (Mara in scene 71, Jack and Vera in scene 98, Vera in scene 74). <em>B01&ndash;B12 and V01</em>: the laugh and cry/upset lines where the script says someone laughs, cries or breaks (scenes 6, 36, 58, 60, 69, 71, 74, 84, 98): the take now in the game, the five other samples (single-word tags and the longer descriptive directions) and the take it replaced. <em>Voices</em>: three new design previews for each voice that was picked blind. Pick by ear.",
+  "<strong>Level</strong> is the average loudness of the speech in dBFS (higher is louder; measured as the mean frame level within 30 dB of the peak). Jack and Vera speak at about &minus;18 to &minus;25 in the game; <code>[weakly]</code>, <code>[quietly]</code> and <code>[softly]</code> read about 10 dB under that, so they get a red meter. Mara&rsquo;s four <code>[weakly]</code> lines in scene 71 are left in the game on purpose: weak may be what the scene wants. <code>[angrily]</code> runs about 5 dB hotter than the rest, and the descriptive directions sometimes run much longer than the line (a held laugh or sob), which the duration shows.",
+  "<strong>To use one:</strong> copy its command and run it in the repo (needs <code>FFMPEG</code>), then <code>npm run build:neonoire</code> and re-import into the two games (voice README, &ldquo;Reaching the games&rdquo;). The take it replaces is archived, never lost. A voice preview is not a take: tell Claude which one you want and the line will be re-recorded in it."
+ ],
+ "voicesIntro": "Three new design previews of each voice that was picked blind on 7 October (nobody had listened). The row marked <span class=\"chip game\">in use</span> is the voice in the game (its preview is in the 7 October folder); the others are new and can be saved from their id while ElevenLabs keeps the preview.",
+ "footer": "Generated in ElevenLabs flows N9gMYgRFua7NaOhKH5Cd (the re-recorded lines), WoTyA0We8iBvpB8WJWmy (the peak-line readings) and D252fi9yoELaY35Dn0PJ (the laugh and cry samples and the body-fall effects), model eleven_v4; voice previews eleven_ttv_v3. Index: <a href=\"index.json\" style=\"color:var(--accent)\">index.json</a>.",
+ "date": "2026-10-08",
+ "flow": "WoTyA0We8iBvpB8WJWmy",
+ "flows": [
+  "N9gMYgRFua7NaOhKH5Cd",
+  "WoTyA0We8iBvpB8WJWmy",
+  "D252fi9yoELaY35Dn0PJ"
+ ],
+ "model": "eleven_v4",
+ "note": "Everything generated on 8 October 2026 that is not in the game: the unused sample and the old hushed take of each of the 12 re-recorded Jack and Vera lines (Q01-Q12), three alternate readings each of the peak lines (M01-M04 Mara scene 71, J01-J02 Jack scene 98, V01 Vera scene 98, W01-W06 Vera scene 74) and three new design previews for each of the seven voices that were picked blind. rmsdb is the mean frame level (dBFS) within 30 dB of the peak, measured with the same recipe for every file here, in the game or not. The laugh and cry pass (B01-B12, V01) was added later the same day: 13 lines, six samples each (three single-word-tag, three descriptive-direction), one of which went into the game.",
+ "lines": {
+  "Q01": {
+   "id": "s44-jack-i-ll-get-him",
+   "scene": "44",
+   "frame": "neonoire-shot-214",
+   "who": "JACK",
+   "text": "I'll get him.",
+   "final": {
+    "prompt": "[firmly] I'll get him.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s44/214-jack-i-ll-get-him.mp3",
+    "rmsdb": -22,
+    "voiced": 0.63,
+    "duration": 1.36,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "foYKdmYmyS8AI3PG96OQ",
+     "id": "5zxPUOPo1ijvKl8rmXov"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q01--firmly--second.mp3",
+     "prompt": "[firmly] I'll get him.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "pCSJfndWlmvETgZOGaHz",
+      "id": "feHL8RoNsnh3bNu0HStU"
+     },
+     "rmsdb": -22,
+     "voiced": 0.62,
+     "duration": 1.36
+    },
+    {
+     "file": "takes/Q01--quietly--was.mp3",
+     "prompt": "[quietly] I'll get him.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "bTEUHp1wWCth67lYtJoy",
+      "id": ""
+     },
+     "rmsdb": -33.6,
+     "voiced": 0.64,
+     "duration": 1.12
+    }
+   ]
+  },
+  "Q02": {
+   "id": "s10-jack-softly-your-father",
+   "scene": "10",
+   "frame": "neonoire-shot-167",
+   "who": "JACK",
+   "text": "Your father.",
+   "final": {
+    "prompt": "[gently] Your father.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s10/167-jack-softly-your-father.mp3",
+    "rmsdb": -23.9,
+    "voiced": 0.62,
+    "duration": 1.36,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "CxbIBUrP0iSfaq3v6d2O",
+     "id": "p4K3nUg5kll3k0Y5GsYx"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q02--gently--second.mp3",
+     "prompt": "[gently] Your father.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "irzXIBMcZS7FYcBaKNVs",
+      "id": "tCQ40FdMEF7tTbjsZiTD"
+     },
+     "rmsdb": -25.2,
+     "voiced": 0.56,
+     "duration": 1.44
+    },
+    {
+     "file": "takes/Q02--softly--was.mp3",
+     "prompt": "[softly] Your father.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "cvKzD8RNKmUmkmhR72WO",
+      "session": "K0hLIltktc07MtWoASLu",
+      "id": "3hWN7lJvru9ml6wETmfZ"
+     },
+     "rmsdb": -32,
+     "voiced": 0.72,
+     "duration": 1.28
+    }
+   ]
+  },
+  "Q03": {
+   "id": "s53-jack-i-won-t",
+   "scene": "53",
+   "frame": "neonoire-shot-275",
+   "who": "JACK",
+   "text": "I won't.",
+   "final": {
+    "prompt": "[earnestly] I won't.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s53/275-jack-i-won-t.mp3",
+    "rmsdb": -21.2,
+    "voiced": 0.68,
+    "duration": 1.36,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "WCk2Ajftb9St3Uz5W9yk",
+     "id": "aul6gy5S2hhyZjZbfwyv"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q03--earnestly--second.mp3",
+     "prompt": "[earnestly] I won't.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "nZHhkrotP6ib7JZC7g6X",
+      "id": "j9xmN84jPa0JvFsLIL5R"
+     },
+     "rmsdb": -21.2,
+     "voiced": 0.68,
+     "duration": 1.36
+    },
+    {
+     "file": "takes/Q03--quietly--was.mp3",
+     "prompt": "[quietly] I won't.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "ZKObDOzxnhZiECbVKuUm",
+      "id": ""
+     },
+     "rmsdb": -32.9,
+     "voiced": 0.7,
+     "duration": 1.2
+    }
+   ]
+  },
+  "Q04": {
+   "id": "s44-jack-stay-whatever-you-hear",
+   "scene": "44",
+   "frame": "neonoire-shot-214",
+   "who": "JACK",
+   "text": "Stay. Whatever you hear.",
+   "final": {
+    "prompt": "[firmly] Stay. Whatever you hear.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s44/214-jack-stay-whatever-you-hear.mp3",
+    "rmsdb": -20.8,
+    "voiced": 0.62,
+    "duration": 2.48,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "FhbS5wSmyL1fn4vRLfyK",
+     "id": "opamgTz2xxmnPLb0PS1p"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q04--firmly--second.mp3",
+     "prompt": "[firmly] Stay. Whatever you hear.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "5LlXxUJbn7TqrnI5ch0M",
+      "id": "1sRuWcOIeRBMlYlpuP4m"
+     },
+     "rmsdb": -20.9,
+     "voiced": 0.66,
+     "duration": 2.4
+    },
+    {
+     "file": "takes/Q04--quietly--was.mp3",
+     "prompt": "[quietly] Stay. Whatever you hear.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "NrV9SrIZoSpfkhzRtW2q",
+      "id": ""
+     },
+     "rmsdb": -30.7,
+     "voiced": 0.62,
+     "duration": 2.56
+    }
+   ]
+  },
+  "Q05": {
+   "id": "s17-jack-quietly-he-always-paid-too-much",
+   "scene": "17",
+   "frame": "neonoire-shot-189",
+   "who": "JACK",
+   "text": "He always paid too much, too.",
+   "final": {
+    "prompt": "[sadly] He always paid too much, too.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s17/189-jack-quietly-he-always-paid-too-much.mp3",
+    "rmsdb": -24.7,
+    "voiced": 0.74,
+    "duration": 2.64,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "TyWNnoZtjeCJqz2exU8T",
+     "id": "h5M5KZkqQ3769UOZj4hm"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q05--sadly--first.mp3",
+     "prompt": "[sadly] He always paid too much, too.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the second)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "x6oNyBpN4OtWZGDyOdhI",
+      "id": "fSk5hUwo3fqB7PlX55b6"
+     },
+     "rmsdb": -26.1,
+     "voiced": 0.77,
+     "duration": 2.56
+    },
+    {
+     "file": "takes/Q05--quietly--was.mp3",
+     "prompt": "[quietly] He always paid too much, too.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "JJ4QW4ir4zwem0vGOseG",
+      "session": "OUPBCLxQkB747YF8m35B",
+      "id": "6wYbH3fIP2YsBbK5KTP4"
+     },
+     "rmsdb": -32.9,
+     "voiced": 0.79,
+     "duration": 2.4
+    }
+   ]
+  },
+  "Q06": {
+   "id": "s60-jack-and-then-i-tell-her-everything",
+   "scene": "60",
+   "frame": "neonoire-shot-229",
+   "who": "JACK",
+   "text": "And then I tell her everything.",
+   "final": {
+    "prompt": "[evenly] And then I tell her everything.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s60/229-jack-and-then-i-tell-her-everything.mp3",
+    "rmsdb": -24.1,
+    "voiced": 0.7,
+    "duration": 2.56,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "mcjIuCkvw2P3LLQGvXIO",
+     "id": "BCyiuWrJUm7oJIM0Vo1e"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q06--evenly--second.mp3",
+     "prompt": "[evenly] And then I tell her everything.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "oSXZcLcFPQzWgmlb8nrg",
+      "id": "dsVl0Y24YuXYQWFsawrg"
+     },
+     "rmsdb": -25.5,
+     "voiced": 0.8,
+     "duration": 2.56
+    },
+    {
+     "file": "takes/Q06--quietly--was.mp3",
+     "prompt": "[quietly] And then I tell her everything.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "y0oKH710XfNGSHGS1KNM",
+      "id": ""
+     },
+     "rmsdb": -32.7,
+     "voiced": 0.82,
+     "duration": 2.08
+    }
+   ]
+  },
+  "Q07": {
+   "id": "s12-jack-quietly-why-come-back",
+   "scene": "12",
+   "frame": "neonoire-shot-247",
+   "who": "JACK",
+   "text": "Why come back?",
+   "final": {
+    "prompt": "[evenly] Why come back?",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s12/247-jack-quietly-why-come-back.mp3",
+    "rmsdb": -20.6,
+    "voiced": 0.62,
+    "duration": 1.44,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "dImSEEHz45vt8WcVUA1O",
+     "id": "efJ4e8icRRPE062Rgeh5"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q07--evenly--second.mp3",
+     "prompt": "[evenly] Why come back?",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "2x94HCwcHVXBqxipYtcr",
+      "id": "asLJ1vRlpmqUH45x6sgb"
+     },
+     "rmsdb": -21.2,
+     "voiced": 0.64,
+     "duration": 1.44
+    },
+    {
+     "file": "takes/Q07--quietly--was.mp3",
+     "prompt": "[quietly] Why come back?",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "clnOd1X24tHxxhxgPUg2",
+      "session": "YtovuopHAdtz6MJMTSA2",
+      "id": "EIVrgzyA6vJEYFhmgufh"
+     },
+     "rmsdb": -28.8,
+     "voiced": 0.62,
+     "duration": 1.52
+    }
+   ]
+  },
+  "Q08": {
+   "id": "s17-jack-quietly-i-m-looking-for-his",
+   "scene": "17",
+   "frame": "neonoire-shot-189",
+   "who": "JACK",
+   "text": "I'm looking for his daughter. The younger one.",
+   "final": {
+    "prompt": "[evenly] I'm looking for his daughter. The younger one.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s17/189-jack-quietly-i-m-looking-for-his.mp3",
+    "rmsdb": -20.9,
+    "voiced": 0.72,
+    "duration": 2.8,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "dGy2xi4ucZOOAFT6ZIT0",
+     "id": "8ZJflaGF8FVAqYc4kgoc"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q08--evenly--second.mp3",
+     "prompt": "[evenly] I'm looking for his daughter. The younger one.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "StLk8upMVmc2ztqIVJoy",
+      "id": "cZ5xMc6nm8xhizcn2Fgi"
+     },
+     "rmsdb": -21.4,
+     "voiced": 0.69,
+     "duration": 2.88
+    },
+    {
+     "file": "takes/Q08--quietly--was.mp3",
+     "prompt": "[quietly] I'm looking for his daughter. The younger one.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "JJ4QW4ir4zwem0vGOseG",
+      "session": "Ho8ZkzcAQo5vz8R1i9yx",
+      "id": "difLUKhGox3meZrzuh7p"
+     },
+     "rmsdb": -29.7,
+     "voiced": 0.68,
+     "duration": 2.96
+    }
+   ]
+  },
+  "Q09": {
+   "id": "s10-jack-quietly-i-m-sorry",
+   "scene": "10",
+   "frame": "neonoire-shot-168",
+   "who": "JACK",
+   "text": "I'm sorry.",
+   "final": {
+    "prompt": "[earnestly] I'm sorry.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s10/168-jack-quietly-i-m-sorry.mp3",
+    "rmsdb": -23.4,
+    "voiced": 0.75,
+    "duration": 1.44,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "WRuSkww06wT8Dt30xlDe",
+     "id": "HciS6NHHC1A626TYATAF"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q09--earnestly--second.mp3",
+     "prompt": "[earnestly] I'm sorry.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "FYTq5aArPbwFGKWCvu0A",
+      "id": "itajLfh5Tnw8lcI1atc6"
+     },
+     "rmsdb": -23.7,
+     "voiced": 0.67,
+     "duration": 1.52
+    },
+    {
+     "file": "takes/Q09--quietly--was.mp3",
+     "prompt": "[quietly] I'm sorry.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "cvKzD8RNKmUmkmhR72WO",
+      "session": "EzBtOGFgcF4hSakoyY2a",
+      "id": "x8IKYt4kQdvAWeQgTvs7"
+     },
+     "rmsdb": -29.9,
+     "voiced": 0.64,
+     "duration": 1.28
+    }
+   ]
+  },
+  "Q10": {
+   "id": "s10-vera-quietly-he-died-pause-that-year",
+   "scene": "10",
+   "frame": "neonoire-shot-167",
+   "who": "VERA",
+   "text": "He died. That year. Here.",
+   "final": {
+    "prompt": "[sadly] He died. [pause] That year. Here.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s10/167-vera-quietly-he-died-pause-that-year.mp3",
+    "rmsdb": -27.1,
+    "voiced": 0.48,
+    "duration": 3.92,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "82fbLNcTq8NvBxxoVh9y",
+     "id": "qt7RmO66lOY2xMdPG6p9"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q10--sadly--second.mp3",
+     "prompt": "[sadly] He died. [pause] That year. Here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "dLTMtyBrq86JKLgNm3Qs",
+      "id": "Dk1JrglimkP7pC5v8Tsm"
+     },
+     "rmsdb": -27.3,
+     "voiced": 0.49,
+     "duration": 3.76
+    },
+    {
+     "file": "takes/Q10--quietly--was.mp3",
+     "prompt": "[quietly] He died. [pause] That year. Here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "cvKzD8RNKmUmkmhR72WO",
+      "session": "40SroEM3pTvYhXjn239D",
+      "id": "b3ABb3wZKk8u198BQrKF"
+     },
+     "rmsdb": -30.4,
+     "voiced": 0.48,
+     "duration": 3.6
+    }
+   ]
+  },
+  "Q11": {
+   "id": "s14-vera-quietly-that-was-for-america-she",
+   "scene": "14",
+   "frame": "neonoire-shot-270",
+   "who": "VERA",
+   "text": "That was for America. She'd booked a flight. Next month.",
+   "final": {
+    "prompt": "[evenly] That was for America. She'd booked a flight. Next month.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s14/270-vera-quietly-that-was-for-america-she.mp3",
+    "rmsdb": -24.4,
+    "voiced": 0.63,
+    "duration": 3.92,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "KtBRLsoAeWe7CGSOMG2L",
+     "id": "bBnaQwfdtfbtUNJpPSVs"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q11--evenly--second.mp3",
+     "prompt": "[evenly] That was for America. She'd booked a flight. Next month.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "XSUrXhV6Two5cV4LEdmk",
+      "id": "1afivRfSa9Q21z588Gxb"
+     },
+     "rmsdb": -24.3,
+     "voiced": 0.62,
+     "duration": 3.92
+    },
+    {
+     "file": "takes/Q11--quietly--was.mp3",
+     "prompt": "[quietly] That was for America. She'd booked a flight. Next month.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "JJ4QW4ir4zwem0vGOseG",
+      "session": "XC7Hs5sHIp1a7myzY2jw",
+      "id": "VODGgfaLi128LVjRXYNk"
+     },
+     "rmsdb": -29.3,
+     "voiced": 0.59,
+     "duration": 4.08
+    }
+   ]
+  },
+  "Q12": {
+   "id": "s14-vera-quietly-i-told-her-to-go",
+   "scene": "14",
+   "frame": "neonoire-shot-270",
+   "who": "VERA",
+   "text": "I told her to go, then. Go home. Those were the last things I said to her.",
+   "final": {
+    "prompt": "[sadly] I told her to go, then. Go home. Those were the last things I said to her.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s14/270-vera-quietly-i-told-her-to-go.mp3",
+    "rmsdb": -25.5,
+    "voiced": 0.66,
+    "duration": 5.76,
+    "generation": {
+     "flow": "N9gMYgRFua7NaOhKH5Cd",
+     "session": "Cm5113C57AxRldHcg3ib",
+     "id": "f4csl1LzkbhO7GwSV1P4"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/Q12--sadly--second.mp3",
+     "prompt": "[sadly] I told her to go, then. Go home. Those were the last things I said to her.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "second",
+     "note": "the other sample of the same prompt (the game uses the first)",
+     "generation": {
+      "flow": "N9gMYgRFua7NaOhKH5Cd",
+      "session": "fw8CGBY83ZyULu8YY5CM",
+      "id": "VJhoW5tCyuNxWkt9s0rb"
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.64,
+     "duration": 5.68
+    },
+    {
+     "file": "takes/Q12--quietly--was.mp3",
+     "prompt": "[quietly] I told her to go, then. Go home. Those were the last things I said to her.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "hushed",
+     "note": "the hushed take that was in the game until 8 October (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "JJ4QW4ir4zwem0vGOseG",
+      "session": "T93SGT3dNlXtsnUfhP8k",
+      "id": "AI0K9qtAwndAKdiyqMb2"
+     },
+     "rmsdb": -30.1,
+     "voiced": 0.67,
+     "duration": 5.2
+    }
+   ]
+  },
+  "M01": {
+   "id": "s71-mara-weakly-jack",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "MARA",
+   "text": "Jack.",
+   "final": {
+    "prompt": "[weakly] Jack.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s71/240-mara-weakly-jack.mp3",
+    "rmsdb": -31.5,
+    "voiced": 0.62,
+    "duration": 1.2,
+    "generation": {
+     "flow": "zwWk8o7dCHdeYJNtHmVm",
+     "session": "LJFUYwNbWch4qQj3JpfA",
+     "id": "rE3CWltxZY2BfTtLPNaL"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/M01--tenderly--s1.mp3",
+     "prompt": "[tenderly] Jack.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 1 of 3 with [tenderly]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "QknTHWyKxecGBJo82SaA",
+      "id": "hQTT2UXgcCAVAHxN3UN7"
+     },
+     "rmsdb": -30.6,
+     "voiced": 0.46,
+     "duration": 1.36
+    },
+    {
+     "file": "takes/M01--tenderly--s2.mp3",
+     "prompt": "[tenderly] Jack.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 2 of 3 with [tenderly]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "6a6GztaDkIdJvUDojSHx",
+      "id": "Da28XGEZgKfQzFz5YJfr"
+     },
+     "rmsdb": -30.1,
+     "voiced": 0.52,
+     "duration": 1.28
+    },
+    {
+     "file": "takes/M01--tenderly--s3.mp3",
+     "prompt": "[tenderly] Jack.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 3 of 3 with [tenderly]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "iOoXzJIUxCwuofFt0ggq",
+      "id": "MeQaNHRqT8Nhgsnxfc2K"
+     },
+     "rmsdb": -30.1,
+     "voiced": 0.52,
+     "duration": 1.28
+    }
+   ]
+  },
+  "M02": {
+   "id": "s71-mara-weakly-everyone-s-awake",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "MARA",
+   "text": "Everyone's awake.",
+   "final": {
+    "prompt": "[weakly] Everyone's awake.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s71/240-mara-weakly-everyone-s-awake.mp3",
+    "rmsdb": -29.6,
+    "voiced": 0.7,
+    "duration": 2,
+    "generation": {
+     "flow": "zwWk8o7dCHdeYJNtHmVm",
+     "session": "NGspo1cJLtaqCxzgxwON",
+     "id": "mOzmOiUTbEC6TYiEsE0B"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/M02--in-wonder--s1.mp3",
+     "prompt": "[in wonder] Everyone's awake.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 1 of 3 with [in wonder]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "KIyn5bfom0lzcD7Zlxbd",
+      "id": "16P25ERNItwkmfSpc7MF"
+     },
+     "rmsdb": -24.6,
+     "voiced": 0.74,
+     "duration": 1.76
+    },
+    {
+     "file": "takes/M02--in-wonder--s2.mp3",
+     "prompt": "[in wonder] Everyone's awake.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 2 of 3 with [in wonder]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "3J31DhxJkWSKYjd3lkoD",
+      "id": "7c4PET3WrZLjDvsLwBE0"
+     },
+     "rmsdb": -25.2,
+     "voiced": 0.68,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/M02--in-wonder--s3.mp3",
+     "prompt": "[in wonder] Everyone's awake.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 3 of 3 with [in wonder]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "G637LvuDMzRDk6rAQBiU",
+      "id": "YyPXpimTQVhztOz4BoiT"
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.72,
+     "duration": 1.84
+    }
+   ]
+  },
+  "M03": {
+   "id": "s71-mara-weakly-tell-her-i-m-sorry",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "MARA",
+   "text": "Tell her I'm sorry.",
+   "final": {
+    "prompt": "[weakly] Tell her I'm sorry.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s71/240-mara-weakly-tell-her-i-m-sorry.mp3",
+    "rmsdb": -28.9,
+    "voiced": 0.78,
+    "duration": 2.24,
+    "generation": {
+     "flow": "zwWk8o7dCHdeYJNtHmVm",
+     "session": "QAPhjZiyTt5b592QZF2n",
+     "id": "ffm8OX3Pqwsd8ldDxohs"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/M03--voice-breaking--s1.mp3",
+     "prompt": "[voice breaking] Tell her I'm sorry.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 1 of 3 with [voice breaking]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "fhyCineEwJawHvzDgZD9",
+      "id": "fXxEkjesRvwoHi5VJ1w4"
+     },
+     "rmsdb": -27.3,
+     "voiced": 0.69,
+     "duration": 2
+    },
+    {
+     "file": "takes/M03--voice-breaking--s2.mp3",
+     "prompt": "[voice breaking] Tell her I'm sorry.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 2 of 3 with [voice breaking]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "L64Tl9ASBbRWKJqTfdZE",
+      "id": "Zm4VqUnfkQuSq8TIhYnA"
+     },
+     "rmsdb": -26.3,
+     "voiced": 0.7,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/M03--voice-breaking--s3.mp3",
+     "prompt": "[voice breaking] Tell her I'm sorry.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 3 of 3 with [voice breaking]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "X1EFqlRPrtz24hOGfXq2",
+      "id": "MBMDGe51Z4X6QsNXtHu0"
+     },
+     "rmsdb": -26.5,
+     "voiced": 0.74,
+     "duration": 1.84
+    }
+   ]
+  },
+  "M04": {
+   "id": "s71-mara-weakly-tell-her",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "MARA",
+   "text": "Tell her.",
+   "final": {
+    "prompt": "[weakly] Tell her.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s71/240-mara-weakly-tell-her.mp3",
+    "rmsdb": -27.7,
+    "voiced": 0.64,
+    "duration": 1.44,
+    "generation": {
+     "flow": "zwWk8o7dCHdeYJNtHmVm",
+     "session": "1GatGXKscPpRovBwbsmV",
+     "id": "1oZ80fpcPbvQsTOq9lxh"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/M04--pleading--s1.mp3",
+     "prompt": "[pleading] Tell her.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 1 of 3 with [pleading]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "6Ryn1RbWzC5ct76K3qmS",
+      "id": "P8gCjDncwDa7cgx9xljD"
+     },
+     "rmsdb": -22.7,
+     "voiced": 0.66,
+     "duration": 1.36
+    },
+    {
+     "file": "takes/M04--pleading--s2.mp3",
+     "prompt": "[pleading] Tell her.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 2 of 3 with [pleading]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "plQSmqJco0z9BTCxZwcE",
+      "id": "QEH7pPyEI5nYCsC7sq5k"
+     },
+     "rmsdb": -22.3,
+     "voiced": 0.68,
+     "duration": 1.36
+    },
+    {
+     "file": "takes/M04--pleading--s3.mp3",
+     "prompt": "[pleading] Tell her.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "reading",
+     "note": "sample 3 of 3 with [pleading]; the game has [weakly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "j9NVvUYY3IgdoRr8II9S",
+      "id": "ED1dGo7speZ3YNJMjDpm"
+     },
+     "rmsdb": -22.8,
+     "voiced": 0.66,
+     "duration": 1.36
+    }
+   ]
+  },
+  "J01": {
+   "id": "s98-jack-sorry",
+   "scene": "98",
+   "frame": "neonoire-shot-156",
+   "who": "JACK",
+   "text": "At the end, she asked me to tell you something.",
+   "final": {
+    "prompt": "[heavily] At the end, she asked me to tell you something.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s98/156-jack-tell-her-sorry.mp3",
+    "rmsdb": -25.2,
+    "voiced": 0.73,
+    "duration": 3.36,
+    "generation": {
+     "flow": "kvzIYLAVhQxuu2koUOll",
+     "session": "SZ8zZZMFN1zLbFCW8SCy",
+     "id": "Awfwor2vP9fTbdOPIwW2"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/J01--sadly--s1.mp3",
+     "prompt": "[sadly] At the end, she asked me to tell you something.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "reading",
+     "note": "sample 1 of 3 with [sadly]; the game has [heavily]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "b4yOusJxTAeH1BqJmMio",
+      "id": "EbVHSFEcxyGJ9CpSNOpw"
+     },
+     "rmsdb": -24.3,
+     "voiced": 0.68,
+     "duration": 3.52
+    },
+    {
+     "file": "takes/J01--sadly--s2.mp3",
+     "prompt": "[sadly] At the end, she asked me to tell you something.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "reading",
+     "note": "sample 2 of 3 with [sadly]; the game has [heavily]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "dB4wUefEloP7Y1zdKvom",
+      "id": "ck7x9t0hCCrj37qziCZ9"
+     },
+     "rmsdb": -23.3,
+     "voiced": 0.7,
+     "duration": 3.44
+    },
+    {
+     "file": "takes/J01--sadly--s3.mp3",
+     "prompt": "[sadly] At the end, she asked me to tell you something.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "reading",
+     "note": "sample 3 of 3 with [sadly]; the game has [heavily]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "cKhbyc4X8T0amxsaxg3I",
+      "id": "KeFpErlxTtTsTb8GSvWA"
+     },
+     "rmsdb": -24.8,
+     "voiced": 0.7,
+     "duration": 3.44
+    }
+   ]
+  },
+  "J02": {
+   "id": "s98-n115-jack",
+   "scene": "98",
+   "frame": "neonoire-shot-156",
+   "who": "JACK",
+   "text": "She said to tell you she was sorry.",
+   "final": {
+    "prompt": "[tenderly] She said to tell you she was sorry.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s98/156-jack-tenderly-she-said-to-tell-you.mp3",
+    "rmsdb": -24,
+    "voiced": 0.8,
+    "duration": 2.56,
+    "generation": {
+     "flow": "kvzIYLAVhQxuu2koUOll",
+     "session": "lCot38qajPKAkYAWnSJQ",
+     "id": "Id5Nw2pGoMglhZTyAfQ6"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/J02--voice-breaking--s1.mp3",
+     "prompt": "[voice breaking] She said to tell you she was sorry.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "reading",
+     "note": "sample 1 of 3 with [voice breaking]; the game has [tenderly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "IW4QzkKU8XvEWCv5f6tJ",
+      "id": "F8tj3ki8lXZDS5l7m3bJ"
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.82,
+     "duration": 2.72
+    },
+    {
+     "file": "takes/J02--voice-breaking--s2.mp3",
+     "prompt": "[voice breaking] She said to tell you she was sorry.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "reading",
+     "note": "sample 2 of 3 with [voice breaking]; the game has [tenderly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "bq3LbU4iWoKIoDhQnlHZ",
+      "id": "q1cmfgEqiqsGGKNSO4ah"
+     },
+     "rmsdb": -24.3,
+     "voiced": 0.84,
+     "duration": 2.56
+    },
+    {
+     "file": "takes/J02--voice-breaking--s3.mp3",
+     "prompt": "[voice breaking] She said to tell you she was sorry.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "reading",
+     "note": "sample 3 of 3 with [voice breaking]; the game has [tenderly]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "iG4B3JzePhdxIjw4WId6",
+      "id": "fOnoc9inw4pMMYSYcTNp"
+     },
+     "rmsdb": -23.7,
+     "voiced": 0.84,
+     "duration": 2.48
+    }
+   ]
+  },
+  "V01": {
+   "id": "s98-n113-vera",
+   "scene": "98",
+   "frame": "neonoire-shot-156",
+   "who": "VERA",
+   "text": "Liar. It was mine.",
+   "final": {
+    "prompt": "[A short broken laugh, then her voice cracking with hurt] Liar. It was mine.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s98/156-vera-voice-breaking-liar-it-was-mine.mp3",
+    "rmsdb": -21,
+    "voiced": 0.65,
+    "duration": 3.52,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "JcVqVaSbr8Gc5Xdz116L",
+     "id": "qpzZSQj6ETPiPDMAYyH4"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/V01--crying--s1.mp3",
+     "prompt": "[crying] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [crying]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "kf8wNXriqSMEJtJN1ALI",
+      "id": "jN3oa1LlY0UujKtmENvf"
+     },
+     "rmsdb": -21.1,
+     "voiced": 0.69,
+     "duration": 3.52
+    },
+    {
+     "file": "takes/V01--crying--s2.mp3",
+     "prompt": "[crying] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [crying]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "ygDveNtOHzTIZC7LG9qB",
+      "id": "Mxac69YkmOKuU4jhgctE"
+     },
+     "rmsdb": -21.1,
+     "voiced": 0.68,
+     "duration": 3.04
+    },
+    {
+     "file": "takes/V01--crying--s3.mp3",
+     "prompt": "[crying] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [crying]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "BP2OFAPU27M5MjI2zfU6",
+      "id": "dFSg30SbeM59H93Hjooo"
+     },
+     "rmsdb": -21.9,
+     "voiced": 0.72,
+     "duration": 3.2
+    },
+    {
+     "file": "takes/V01--laughs--s1.mp3",
+     "prompt": "[laughs] [voice breaking] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "elDsw46lvJ1wq5JclAMd",
+      "id": "Qaali8Fu9Q0CHboamOqj"
+     },
+     "rmsdb": -22.3,
+     "voiced": 0.71,
+     "duration": 3.6
+    },
+    {
+     "file": "takes/V01--laughs--s2.mp3",
+     "prompt": "[laughs] [voice breaking] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "IHxQ6XCE14Lujo7TXLyz",
+      "id": "OaKXOkqueE6GxaVLRZrs"
+     },
+     "rmsdb": -22.3,
+     "voiced": 0.68,
+     "duration": 3.6
+    },
+    {
+     "file": "takes/V01--laughs--s3.mp3",
+     "prompt": "[laughs] [voice breaking] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "dsN6XvyAu1gk1gHGefIo",
+      "id": "XblVLGQOlfREEfVaOlvV"
+     },
+     "rmsdb": -22,
+     "voiced": 0.65,
+     "duration": 3.92
+    },
+    {
+     "file": "takes/V01d--described--s2.mp3",
+     "prompt": "[A short broken laugh, then her voice cracking with hurt] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "YPaRHZzi8L7B08XhtPX0",
+      "id": "KJVKSScMT9wBsYX5FyEW"
+     },
+     "rmsdb": -23.1,
+     "voiced": 0.73,
+     "duration": 3.68
+    },
+    {
+     "file": "takes/V01d--described--s3.mp3",
+     "prompt": "[A short broken laugh, then her voice cracking with hurt] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "Vf02FYy9oZQDjqsrx2AB",
+      "id": "Ay4hCrm8ovXvU3slXBVd"
+     },
+     "rmsdb": -20.8,
+     "voiced": 0.67,
+     "duration": 4.56
+    },
+    {
+     "file": "takes/V01--voice-breaking--was.mp3",
+     "prompt": "[voice breaking] Liar. It was mine.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "kvzIYLAVhQxuu2koUOll",
+      "session": "0BUnFSZJNqbZB9xM9SsX",
+      "id": "YeZtcVZZbnsulLk0wBGa"
+     },
+     "rmsdb": -20.9,
+     "voiced": 0.68,
+     "duration": 2.64
+    }
+   ]
+  },
+  "W01": {
+   "id": "s74-vera-you-knew",
+   "scene": "74",
+   "frame": "neonoire-shot-74",
+   "who": "VERA",
+   "text": "You knew.",
+   "final": {
+    "prompt": "[trembling voice] You knew.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/74-vera-you-knew.mp3",
+    "rmsdb": -22.2,
+    "voiced": 0.65,
+    "duration": 1.68,
+    "generation": {
+     "flow": "f2ZXvDiE6UcQ0GE33bux",
+     "session": "Ge4sz4b0NhWn5ezH87Hs",
+     "id": "enTElOdJi36zTB8R1LuN"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/W01--flatly--s1.mp3",
+     "prompt": "[flatly] You knew.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [flatly]; the game has [trembling voice]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "oz4LpxW69cWnFGKDRcxy",
+      "id": "4cYFcRnNi9sQCx35G28f"
+     },
+     "rmsdb": -20.9,
+     "voiced": 0.55,
+     "duration": 1.12
+    },
+    {
+     "file": "takes/W01--flatly--s2.mp3",
+     "prompt": "[flatly] You knew.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [flatly]; the game has [trembling voice]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "LIzHdHUVoptif2QddoXY",
+      "id": "Vr5YqAIIX3G4dlwTsboi"
+     },
+     "rmsdb": -19.5,
+     "voiced": 0.52,
+     "duration": 1.12
+    },
+    {
+     "file": "takes/W01--flatly--s3.mp3",
+     "prompt": "[flatly] You knew.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [flatly]; the game has [trembling voice]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "vVRPeCVB5aDy9MaPpSvG",
+      "id": "bVWh3yqkUJ0jH9zKb0S1"
+     },
+     "rmsdb": -22,
+     "voiced": 0.53,
+     "duration": 1.28
+    }
+   ]
+  },
+  "W02": {
+   "id": "s74-vera-where-she-was",
+   "scene": "74",
+   "frame": "neonoire-shot-75",
+   "who": "VERA",
+   "text": "You knew where she was.",
+   "final": {
+    "prompt": "[voice breaking] You knew where she was.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/75-vera-where-she-was.mp3",
+    "rmsdb": -21.2,
+    "voiced": 0.67,
+    "duration": 2.08,
+    "generation": {
+     "flow": "6y2RZzU9nWY3F6mlIy8y",
+     "session": "j550kCrNLe25XqBXRNN0",
+     "id": "CwoIh6dFvPFzS9BE3a6T"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/W02--angrily--s1.mp3",
+     "prompt": "[angrily] You knew where she was.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [angrily]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "juzdvulhZxN1OxdrnlyE",
+      "id": "k7KnyO4bsiVV4yj9fTMO"
+     },
+     "rmsdb": -18.3,
+     "voiced": 0.85,
+     "duration": 1.84
+    },
+    {
+     "file": "takes/W02--angrily--s2.mp3",
+     "prompt": "[angrily] You knew where she was.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [angrily]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "tobJPteOnXslb30lNtme",
+      "id": "05mIykKMXa5XP61Mo5HS"
+     },
+     "rmsdb": -17.1,
+     "voiced": 0.76,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/W02--angrily--s3.mp3",
+     "prompt": "[angrily] You knew where she was.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [angrily]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "CTSSW2FfgFYTK8uiNDgi",
+      "id": "XWF4YOEurz5ksyRFsJoP"
+     },
+     "rmsdb": -18,
+     "voiced": 0.79,
+     "duration": 1.84
+    }
+   ]
+  },
+  "W03": {
+   "id": "s74-vera-why-didnt-you",
+   "scene": "74",
+   "frame": "neonoire-shot-75",
+   "who": "VERA",
+   "text": "Why didn't you tell me?",
+   "final": {
+    "prompt": "[crying] Why didn't you tell me?",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/75-vera-why-didnt-you.mp3",
+    "rmsdb": -21.5,
+    "voiced": 0.69,
+    "duration": 2.88,
+    "generation": {
+     "flow": "f2ZXvDiE6UcQ0GE33bux",
+     "session": "qYBGbAlTovcCYVD5j6hb",
+     "id": "FHnxUEkuHZhaHYffKAOg"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/W03--pleading--s1.mp3",
+     "prompt": "[pleading] Why didn't you tell me?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [pleading]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "BZpGvgpXQkYhXggSA8fL",
+      "id": "izUTXDeskXzCS39TZ1dD"
+     },
+     "rmsdb": -20.9,
+     "voiced": 0.74,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/W03--pleading--s2.mp3",
+     "prompt": "[pleading] Why didn't you tell me?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [pleading]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "HDJKb3O7junBJot7rlAn",
+      "id": "TLvPVOOpUuw1tu1xUpbW"
+     },
+     "rmsdb": -22.2,
+     "voiced": 0.74,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/W03--pleading--s3.mp3",
+     "prompt": "[pleading] Why didn't you tell me?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [pleading]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "CzzcKSdKpv7CnvlNslRS",
+      "id": "W8LpjjA8BunyXxT10Ke1"
+     },
+     "rmsdb": -21.4,
+     "voiced": 0.74,
+     "duration": 1.92
+    }
+   ]
+  },
+  "W04": {
+   "id": "s74-vera-waiting-for-me",
+   "scene": "74",
+   "frame": "neonoire-shot-75",
+   "who": "VERA",
+   "text": "She was waiting for me.",
+   "final": {
+    "prompt": "[voice breaking] [crying] She was waiting for me.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/75-vera-waiting-for-me.mp3",
+    "rmsdb": -25.5,
+    "voiced": 0.62,
+    "duration": 2.56,
+    "generation": {
+     "flow": "f2ZXvDiE6UcQ0GE33bux",
+     "session": "6ZN7qMu23p3C33vNLdpo",
+     "id": "1empNO41mKEaYtC9CkjZ"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/W04--sobbing--s1.mp3",
+     "prompt": "[sobbing] She was waiting for me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [sobbing]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "asI6i2GRvkgJh5pxSaao",
+      "id": "MOcWAOhdlDgjl8cJwpYi"
+     },
+     "rmsdb": -23.5,
+     "voiced": 0.69,
+     "duration": 2.8
+    },
+    {
+     "file": "takes/W04--sobbing--s2.mp3",
+     "prompt": "[sobbing] She was waiting for me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [sobbing]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "vBMnQZBo2LFvlEfOOp6B",
+      "id": "vYHH7dj2YXdzRyQJilZS"
+     },
+     "rmsdb": -23.5,
+     "voiced": 0.67,
+     "duration": 2.8
+    },
+    {
+     "file": "takes/W04--sobbing--s3.mp3",
+     "prompt": "[sobbing] She was waiting for me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [sobbing]; the game has [voice breaking]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "TVLAAdTEu7aalf3mUFuj",
+      "id": "dxwWA5nMHOlOCLOMMHSE"
+     },
+     "rmsdb": -23.3,
+     "voiced": 0.72,
+     "duration": 2.24
+    }
+   ]
+  },
+  "W05": {
+   "id": "s74-vera-waiting-for-you",
+   "scene": "74",
+   "frame": "neonoire-shot-75",
+   "who": "VERA",
+   "text": "And I was waiting for you.",
+   "final": {
+    "prompt": "[crying] And I was waiting for you.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/75-vera-waiting-for-you.mp3",
+    "rmsdb": -22.9,
+    "voiced": 0.72,
+    "duration": 2.48,
+    "generation": {
+     "flow": "6y2RZzU9nWY3F6mlIy8y",
+     "session": "uL57Hrc2D2mKhNpBU1uW",
+     "id": "VdJdiaMc07NvUGxesEv1"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/W05--bitterly--s1.mp3",
+     "prompt": "[bitterly] And I was waiting for you.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [bitterly]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "ybLlpzs9AivyWTuK4CtD",
+      "id": "Ib75OlSK0LtBByRhAkCj"
+     },
+     "rmsdb": -23,
+     "voiced": 0.83,
+     "duration": 2.16
+    },
+    {
+     "file": "takes/W05--bitterly--s2.mp3",
+     "prompt": "[bitterly] And I was waiting for you.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [bitterly]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "ah0CRlmDYjorByskyzHE",
+      "id": "789D91AYLtWyAle2uXf0"
+     },
+     "rmsdb": -22.7,
+     "voiced": 0.83,
+     "duration": 2.08
+    },
+    {
+     "file": "takes/W05--bitterly--s3.mp3",
+     "prompt": "[bitterly] And I was waiting for you.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [bitterly]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "pDP3nq71RgqIwrAz9h9t",
+      "id": "UrdKmfzEpoddOLsnxzYb"
+     },
+     "rmsdb": -24.8,
+     "voiced": 0.79,
+     "duration": 2.24
+    }
+   ]
+  },
+  "W06": {
+   "id": "s74-vera-with-her",
+   "scene": "74",
+   "frame": "neonoire-shot-75",
+   "who": "VERA",
+   "text": "And you were with her.",
+   "final": {
+    "prompt": "[crying] And you were with her.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/75-vera-with-her.mp3",
+    "rmsdb": -24.3,
+    "voiced": 0.72,
+    "duration": 2.24,
+    "generation": {
+     "flow": "6y2RZzU9nWY3F6mlIy8y",
+     "session": "pvjx59gHVS0WVMAHIOk5",
+     "id": "SKe0yhDUgnvpY4hooi6u"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/W06--coldly--s1.mp3",
+     "prompt": "[coldly] And you were with her.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 1 of 3 with [coldly]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "AEk5XfYMOq1oBwu5jEhY",
+      "id": "YpB7r8bplMPchjk2vtEX"
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.71,
+     "duration": 1.84
+    },
+    {
+     "file": "takes/W06--coldly--s2.mp3",
+     "prompt": "[coldly] And you were with her.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 2 of 3 with [coldly]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "tSyFbu6rC3sDppX63IVr",
+      "id": "8IT9h3YzFPsFiS4D3p3c"
+     },
+     "rmsdb": -24.5,
+     "voiced": 0.72,
+     "duration": 2.08
+    },
+    {
+     "file": "takes/W06--coldly--s3.mp3",
+     "prompt": "[coldly] And you were with her.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "reading",
+     "note": "sample 3 of 3 with [coldly]; the game has [crying]",
+     "generation": {
+      "flow": "WoTyA0We8iBvpB8WJWmy",
+      "session": "eJSrDuDkpgF37CfwRZio",
+      "id": "iDFBmRLzi4nPAXFUh8pB"
+     },
+     "rmsdb": -24.1,
+     "voiced": 0.75,
+     "duration": 2
+    }
+   ]
+  },
+  "B01": {
+   "id": "s36-vera-did-you-find-anything",
+   "scene": "36",
+   "frame": "neonoire-shot-210",
+   "who": "VERA",
+   "text": "Did you find anything?",
+   "final": {
+    "prompt": "[A small breath of a laugh, warm and teasing, then sincere] Did you find anything?",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s36/210-vera-did-you-find-anything.mp3",
+    "rmsdb": -23.1,
+    "voiced": 0.54,
+    "duration": 2.88,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "fPqB5YmukikDJkxYserj",
+     "id": "IxIwXQk7UyN4fQ2CUzvB"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B01--chuckles--s1.mp3",
+     "prompt": "[chuckles] Did you find anything?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "DIkE3VUHAZnCu1i8KiZo",
+      "id": "HEJDH8TmK3STBP9t6akQ"
+     },
+     "rmsdb": -24,
+     "voiced": 0.63,
+     "duration": 2.48
+    },
+    {
+     "file": "takes/B01--chuckles--s2.mp3",
+     "prompt": "[chuckles] Did you find anything?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "sKYWHhVE185GANMwqY6m",
+      "id": "LV8hana8F2hFgv0FPI9W"
+     },
+     "rmsdb": -23.6,
+     "voiced": 0.62,
+     "duration": 2.32
+    },
+    {
+     "file": "takes/B01--chuckles--s3.mp3",
+     "prompt": "[chuckles] Did you find anything?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "zHp2JhSevJ8xYa00fA1P",
+      "id": "r5npydDowghIi8gf7TOL"
+     },
+     "rmsdb": -23.5,
+     "voiced": 0.64,
+     "duration": 2.32
+    },
+    {
+     "file": "takes/B01d--described--s1.mp3",
+     "prompt": "[A small breath of a laugh, warm and teasing, then sincere] Did you find anything?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "3WV4ga7J9CCzpuoQUkvT",
+      "id": "wsu4ZACUXzYK8Dd7mw9v"
+     },
+     "rmsdb": -23.8,
+     "voiced": 0.55,
+     "duration": 2.96
+    },
+    {
+     "file": "takes/B01d--described--s2.mp3",
+     "prompt": "[A small breath of a laugh, warm and teasing, then sincere] Did you find anything?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "jsrCEnSc62NOCevkRqP6",
+      "id": "1fV0oKx6U99z87H5NwoT"
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.51,
+     "duration": 3.28
+    },
+    {
+     "file": "takes/B01--plain--was.mp3",
+     "prompt": "Did you find anything?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "zwWk8o7dCHdeYJNtHmVm",
+      "session": "kz7xkMfd3trC6pRieZ16",
+      "id": "Y2VhKwccmCQ51ylD19oT"
+     },
+     "rmsdb": -19.7,
+     "voiced": 0.75,
+     "duration": 1.28
+    }
+   ]
+  },
+  "B02": {
+   "id": "s58-vera-my-sister-would-love-this-place",
+   "scene": "58",
+   "frame": "neonoire-shot-227",
+   "who": "VERA",
+   "text": "My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+   "final": {
+    "prompt": "[A single laugh through tears, wiping her eyes, then warm and wistful] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s58/227-vera-my-sister-would-love-this-place.mp3",
+    "rmsdb": -23.6,
+    "voiced": 0.62,
+    "duration": 12.08,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "rKoMRHYZOoEJqBxNUOrT",
+     "id": "bjwJGGRSc3jnAxcMVj8O"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B02--laughs--s1.mp3",
+     "prompt": "[laughs] [tearfully] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "JYWGG1mZsAdB4e0GbcGp",
+      "id": "nkEsoHglFfXZcEjYkAW0"
+     },
+     "rmsdb": -23.1,
+     "voiced": 0.67,
+     "duration": 10
+    },
+    {
+     "file": "takes/B02--laughs--s2.mp3",
+     "prompt": "[laughs] [tearfully] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "HPOaToPOJFgS8SFroEiX",
+      "id": "veCW4kclheCgapGqbIRG"
+     },
+     "rmsdb": -22.7,
+     "voiced": 0.67,
+     "duration": 10.16
+    },
+    {
+     "file": "takes/B02--laughs--s3.mp3",
+     "prompt": "[laughs] [tearfully] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "xy3GH5r660QxbRoPPuxU",
+      "id": "cbCGHFhpN1Oj2StAJUQp"
+     },
+     "rmsdb": -22.9,
+     "voiced": 0.7,
+     "duration": 10.08
+    },
+    {
+     "file": "takes/B02d--described--s2.mp3",
+     "prompt": "[A single laugh through tears, wiping her eyes, then warm and wistful] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "mcOBMQMF2R3lSbVIXBOa",
+      "id": "o6H05zDxiVrcHeSu0tzE"
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.65,
+     "duration": 15.92
+    },
+    {
+     "file": "takes/B02d--described--s3.mp3",
+     "prompt": "[A single laugh through tears, wiping her eyes, then warm and wistful] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "LEcBRVKYqdnjlxtNa5Ai",
+      "id": "rl6BGQH1ZFBrtfRUI0K7"
+     },
+     "rmsdb": -23.2,
+     "voiced": 0.49,
+     "duration": 18.32
+    },
+    {
+     "file": "takes/B02--short-pause--was.mp3",
+     "prompt": "[short pause] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "MGwGy8cjRyJK5Hg85chr",
+      "id": ""
+     },
+     "rmsdb": -23.1,
+     "voiced": 0.74,
+     "duration": 8.08
+    }
+   ]
+  },
+  "B03": {
+   "id": "s69-mara-oh-oh-i-see",
+   "scene": "69",
+   "frame": "neonoire-shot-279",
+   "who": "MARA",
+   "text": "Oh. Oh, I see.",
+   "final": {
+    "prompt": "[laughs] Oh. Oh, I see.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s69/279-mara-oh-oh-i-see.mp3",
+    "rmsdb": -25.7,
+    "voiced": 0.62,
+    "duration": 3.44,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "zfdESSbSFw3hA26OSuiY",
+     "id": "O7fqJWB5iYsYyrJnB2W6"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B03--laughs--s2.mp3",
+     "prompt": "[laughs] Oh. Oh, I see.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "xiBU1206PAHP46TwWBLI",
+      "id": "OBtZH7UOWHY0Go3kIEhj"
+     },
+     "rmsdb": -25.5,
+     "voiced": 0.56,
+     "duration": 3.36
+    },
+    {
+     "file": "takes/B03--laughs--s3.mp3",
+     "prompt": "[laughs] Oh. Oh, I see.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "L1lkcuJXpGH18w2VlAiS",
+      "id": "mKtbkmaCgeVqEWXbJRUg"
+     },
+     "rmsdb": -25.6,
+     "voiced": 0.56,
+     "duration": 3.68
+    },
+    {
+     "file": "takes/B03d--described--s1.mp3",
+     "prompt": "[A delighted little laugh, teasing and warm] Oh. Oh, I see.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "iGNS5e5flj0ixU7qAPCv",
+      "id": "4N08Sec1YlIOWWw3gd80"
+     },
+     "rmsdb": -22.1,
+     "voiced": 0.69,
+     "duration": 4.96
+    },
+    {
+     "file": "takes/B03d--described--s2.mp3",
+     "prompt": "[A delighted little laugh, teasing and warm] Oh. Oh, I see.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "KCt0D0aBxjPbl2EMEGyg",
+      "id": "Xh3Rj9H6OTKy28RD8XgQ"
+     },
+     "rmsdb": -23.5,
+     "voiced": 0.71,
+     "duration": 6.56
+    },
+    {
+     "file": "takes/B03d--described--s3.mp3",
+     "prompt": "[A delighted little laugh, teasing and warm] Oh. Oh, I see.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "OFAuDL9gIRaPJ0CRl05o",
+      "id": "EiMML6UVVFNLSoRnUVXi"
+     },
+     "rmsdb": -23.3,
+     "voiced": 0.69,
+     "duration": 5.92
+    },
+    {
+     "file": "takes/B03--plain--was.mp3",
+     "prompt": "Oh. Oh, I see.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "zwWk8o7dCHdeYJNtHmVm",
+      "session": "kK59JwLX9sncVuw3xSx1",
+      "id": "hohAC6qP1uDTZ8fe2cOS"
+     },
+     "rmsdb": -24.6,
+     "voiced": 0.65,
+     "duration": 2.48
+    }
+   ]
+  },
+  "B04": {
+   "id": "s98-vera-rain",
+   "scene": "98",
+   "frame": "neonoire-shot-157",
+   "who": "VERA",
+   "text": "You could have told me that in the rain.",
+   "final": {
+    "prompt": "[Thick with tears, steadying her voice, hurt but not angry] You could have told me that in the rain.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s98/157-vera-in-the-rain.mp3",
+    "rmsdb": -22.6,
+    "voiced": 0.74,
+    "duration": 2.64,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "ZDpOCYeQq9ovMN6IplDe",
+     "id": "7vpYYRItdTyycjXp5nTt"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B04--tearfully--s1.mp3",
+     "prompt": "[tearfully] You could have told me that in the rain.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "sAP7NvhqLdGfLx836SaT",
+      "id": "NXsvlw4B9TodRkEtLE20"
+     },
+     "rmsdb": -22.4,
+     "voiced": 0.75,
+     "duration": 2.56
+    },
+    {
+     "file": "takes/B04--tearfully--s2.mp3",
+     "prompt": "[tearfully] You could have told me that in the rain.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "5fMa7AhuN4PuIPgDVgdz",
+      "id": "mTwKYzAKDOkPrpkI2bpz"
+     },
+     "rmsdb": -21.8,
+     "voiced": 0.83,
+     "duration": 2.48
+    },
+    {
+     "file": "takes/B04--tearfully--s3.mp3",
+     "prompt": "[tearfully] You could have told me that in the rain.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "ZcuSlf5VjA80Jff2saS1",
+      "id": "hmEm3udPUNY0099240vZ"
+     },
+     "rmsdb": -24,
+     "voiced": 0.75,
+     "duration": 2.64
+    },
+    {
+     "file": "takes/B04d--described--s1.mp3",
+     "prompt": "[Thick with tears, steadying her voice, hurt but not angry] You could have told me that in the rain.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "CNfRItb5vJEHeEMuwykX",
+      "id": "V4PUreI0Sip2I2efULxr"
+     },
+     "rmsdb": -23.3,
+     "voiced": 0.76,
+     "duration": 2.48
+    },
+    {
+     "file": "takes/B04d--described--s3.mp3",
+     "prompt": "[Thick with tears, steadying her voice, hurt but not angry] You could have told me that in the rain.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "Y3UKtZeJ0XRcVQJyfWkE",
+      "id": "IdOLXYyXH2SSe5wk7ZrB"
+     },
+     "rmsdb": -24.6,
+     "voiced": 0.75,
+     "duration": 2.64
+    },
+    {
+     "file": "takes/B04--plain--was.mp3",
+     "prompt": "You could have told me that in the rain.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "vN8Ah5lIPjcsihFxK7dl",
+      "session": "G6sW785uwvXRE3FDuAmJ",
+      "id": "blujDVEm1hbU3WHyuX8a"
+     },
+     "rmsdb": -18.5,
+     "voiced": 0.82,
+     "duration": 1.95
+    }
+   ]
+  },
+  "B05": {
+   "id": "s71-jack-yes-everyone-s-awake-help-s",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "JACK",
+   "text": "Yes. Everyone's awake. Help's coming.",
+   "final": {
+    "prompt": "[Trembling, forcing a steady voice, restrained panic] Yes. Everyone's awake. Help's coming.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s71/240-jack-yes-everyone-s-awake-help-s.mp3",
+    "rmsdb": -22.4,
+    "voiced": 0.54,
+    "duration": 5.04,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "9s5TK2oWzWasHzZ26tya",
+     "id": "fcp8zzQC5YtQEGzRYJWe"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B05--trembling-voice--s1.mp3",
+     "prompt": "[trembling voice] Yes. Everyone's awake. Help's coming.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "S49BegRnD12n05BWQrmn",
+      "id": "HPluYBzZD52iqRrEwKtM"
+     },
+     "rmsdb": -21.6,
+     "voiced": 0.56,
+     "duration": 4
+    },
+    {
+     "file": "takes/B05--trembling-voice--s2.mp3",
+     "prompt": "[trembling voice] Yes. Everyone's awake. Help's coming.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "1wn8yVaS4DyavbWY2ZyE",
+      "id": "XpKJbM4ICX3LGgDd2DYr"
+     },
+     "rmsdb": -22.5,
+     "voiced": 0.61,
+     "duration": 3.76
+    },
+    {
+     "file": "takes/B05--trembling-voice--s3.mp3",
+     "prompt": "[trembling voice] Yes. Everyone's awake. Help's coming.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "yCYNno8SIi2qBeaNdNp0",
+      "id": "pdrXr5vd18Modzxid0KK"
+     },
+     "rmsdb": -22.7,
+     "voiced": 0.6,
+     "duration": 3.92
+    },
+    {
+     "file": "takes/B05d--described--s1.mp3",
+     "prompt": "[Trembling, forcing a steady voice, restrained panic] Yes. Everyone's awake. Help's coming.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "qCnwsNX6vbPPEhYMY8MY",
+      "id": "Bv3LCs6ddhZY7xoNi4NS"
+     },
+     "rmsdb": -23.2,
+     "voiced": 0.59,
+     "duration": 4.88
+    },
+    {
+     "file": "takes/B05d--described--s2.mp3",
+     "prompt": "[Trembling, forcing a steady voice, restrained panic] Yes. Everyone's awake. Help's coming.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "ac4zSABpLtRmNMDixbBq",
+      "id": "Xq1NDrXKZah46e9k7nNa"
+     },
+     "rmsdb": -22.9,
+     "voiced": 0.53,
+     "duration": 5.04
+    },
+    {
+     "file": "takes/B05--plain--was.mp3",
+     "prompt": "Yes. Everyone's awake. Help's coming.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "zwWk8o7dCHdeYJNtHmVm",
+      "session": "bPAuVhURXKeddsDA0fuJ",
+      "id": "cti2XFtE88IFHTshiczZ"
+     },
+     "rmsdb": -20.6,
+     "voiced": 0.72,
+     "duration": 2.96
+    }
+   ]
+  },
+  "B06": {
+   "id": "s71-jack-i-m-here",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "JACK",
+   "text": "I'm here.",
+   "final": {
+    "prompt": "[voice breaking] I'm here.",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s71/240-jack-i-m-here.mp3",
+    "rmsdb": -24.1,
+    "voiced": 0.55,
+    "duration": 2.08,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "m3wn4F29Iu76ehzRSi3I",
+     "id": "tNd2OHwM9hGCAUcTPJKm"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B06--voice-breaking--s2.mp3",
+     "prompt": "[voice breaking] I'm here.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "yGpWOyOqsDHSx0dJvi6P",
+      "id": "3p9GBh2g8D9N0qWz5YjM"
+     },
+     "rmsdb": -25.5,
+     "voiced": 0.5,
+     "duration": 2.08
+    },
+    {
+     "file": "takes/B06--voice-breaking--s3.mp3",
+     "prompt": "[voice breaking] I'm here.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "ITGU85kAhxbjBaeVG8C6",
+      "id": "rPYrNyDMCJOTuPVms5Lt"
+     },
+     "rmsdb": -23.9,
+     "voiced": 0.45,
+     "duration": 2.16
+    },
+    {
+     "file": "takes/B06d--described--s1.mp3",
+     "prompt": "[Voice cracking, tender and desperate] I'm here.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "zGIklyUdxlj0vZeVaErr",
+      "id": "fCe3rLO34J2YQ4PdXTxP"
+     },
+     "rmsdb": -25.2,
+     "voiced": 0.64,
+     "duration": 3.12
+    },
+    {
+     "file": "takes/B06d--described--s2.mp3",
+     "prompt": "[Voice cracking, tender and desperate] I'm here.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "1sCVVlSUvTYw53x0dXzX",
+      "id": "iIo59vJXTczmd1PDYE8F"
+     },
+     "rmsdb": -24.7,
+     "voiced": 0.62,
+     "duration": 3.12
+    },
+    {
+     "file": "takes/B06d--described--s3.mp3",
+     "prompt": "[Voice cracking, tender and desperate] I'm here.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "oKhNcPxYSTKpOJMv5JhD",
+      "id": "2L9f91CUVYrkBi1g5lvs"
+     },
+     "rmsdb": -25.2,
+     "voiced": 0.62,
+     "duration": 3.12
+    },
+    {
+     "file": "takes/B06--plain--was.mp3",
+     "prompt": "I'm here.",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "zwWk8o7dCHdeYJNtHmVm",
+      "session": "pq1SOVc4PwVETGPW2WfU",
+      "id": "hhdKi1m2rpiUwOirhrqB"
+     },
+     "rmsdb": -15.6,
+     "voiced": 0.7,
+     "duration": 0.88
+    }
+   ]
+  },
+  "B07": {
+   "id": "s71-jack-you-ll-tell-her-tonight-i",
+   "scene": "71",
+   "frame": "neonoire-shot-240",
+   "who": "JACK",
+   "text": "You'll tell her. Tonight. I'll bring her here, you can —",
+   "final": {
+    "prompt": "[Pleading, voice breaking, cut off mid-sentence by grief] You'll tell her. Tonight. I'll bring her here, you can —",
+    "voice": "MZhx7pKflsc0sAwciDEy",
+    "file": "/audio/neonoire/s71/240-jack-you-ll-tell-her-tonight-i.mp3",
+    "rmsdb": -21,
+    "voiced": 0.76,
+    "duration": 3.76,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "I4jcg45JngOk2bnpN3Co",
+     "id": "dGOD4tAQp7iwZVLYiZu4"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B07--pleading--s1.mp3",
+     "prompt": "[pleading] [voice breaking] You'll tell her. Tonight. I'll bring her here, you can —",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "RQk1v6ZtbYmQzYfxb5da",
+      "id": "OQln2WGxzLhtrsEORGEq"
+     },
+     "rmsdb": -21.8,
+     "voiced": 0.67,
+     "duration": 4.4
+    },
+    {
+     "file": "takes/B07--pleading--s2.mp3",
+     "prompt": "[pleading] [voice breaking] You'll tell her. Tonight. I'll bring her here, you can —",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "V77cdKMGO6iLLuIl7gSG",
+      "id": "mtfqSmCDAxXoPRMWPXEt"
+     },
+     "rmsdb": -21,
+     "voiced": 0.71,
+     "duration": 4.4
+    },
+    {
+     "file": "takes/B07--pleading--s3.mp3",
+     "prompt": "[pleading] [voice breaking] You'll tell her. Tonight. I'll bring her here, you can —",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "wZEVqKeMS8XLVhp8nsKi",
+      "id": "EKeDHpgSNRadTnOFJQmT"
+     },
+     "rmsdb": -21.9,
+     "voiced": 0.71,
+     "duration": 4.4
+    },
+    {
+     "file": "takes/B07d--described--s1.mp3",
+     "prompt": "[Pleading, voice breaking, cut off mid-sentence by grief] You'll tell her. Tonight. I'll bring her here, you can —",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "kORbDALohkNZGQyZJjiS",
+      "id": "xxeNrOYo3jT2CHH4W1RE"
+     },
+     "rmsdb": -19.3,
+     "voiced": 0.71,
+     "duration": 3.84
+    },
+    {
+     "file": "takes/B07d--described--s3.mp3",
+     "prompt": "[Pleading, voice breaking, cut off mid-sentence by grief] You'll tell her. Tonight. I'll bring her here, you can —",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "PoUpSThHfu3I8Cd1rTsQ",
+      "id": "qqzHkV5Ia7wqzTDB1GBN"
+     },
+     "rmsdb": -20.1,
+     "voiced": 0.71,
+     "duration": 3.92
+    },
+    {
+     "file": "takes/B07--plain--was.mp3",
+     "prompt": "You'll tell her. Tonight. I'll bring her here, you can —",
+     "voice": "MZhx7pKflsc0sAwciDEy",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "zwWk8o7dCHdeYJNtHmVm",
+      "session": "ciMJq3aeWdXVUTceHKFX",
+      "id": "IO3Ojx2ocFeWQVs9bmgY"
+     },
+     "rmsdb": -19.8,
+     "voiced": 0.7,
+     "duration": 4.08
+    }
+   ]
+  },
+  "B08": {
+   "id": "s60-mara-did-i-she-said-she-d",
+   "scene": "60",
+   "frame": "neonoire-shot-229",
+   "who": "MARA",
+   "text": "Did I? She said she'd bring me here. When she finds me. She was so happy.",
+   "final": {
+    "prompt": "[Barely holding back tears, small and bewildered, a wistful tremble] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s60/229-mara-did-i-she-said-she-d.mp3",
+    "rmsdb": -26.4,
+    "voiced": 0.58,
+    "duration": 7.36,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "i7hbLU2kKeBVX2i3xOod",
+     "id": "OnuEbRg8KmEXDDxhfl6H"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B08--tearfully--s1.mp3",
+     "prompt": "[short pause] [tearfully] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "URhrsO3xcC2FIaqrOrFR",
+      "id": "ZjacCl6nQNshGRCfdAXZ"
+     },
+     "rmsdb": -24.3,
+     "voiced": 0.58,
+     "duration": 7.04
+    },
+    {
+     "file": "takes/B08--tearfully--s2.mp3",
+     "prompt": "[short pause] [tearfully] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "4dlFQD6nOZwzkzf3eF9F",
+      "id": "KFMRLGf6GfI9tx2u3LcY"
+     },
+     "rmsdb": -26.2,
+     "voiced": 0.62,
+     "duration": 6.88
+    },
+    {
+     "file": "takes/B08--tearfully--s3.mp3",
+     "prompt": "[short pause] [tearfully] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "R4cme2til4AttNeXvtgw",
+      "id": "sOfXosDRQG9PcqfQsybf"
+     },
+     "rmsdb": -25,
+     "voiced": 0.64,
+     "duration": 6.48
+    },
+    {
+     "file": "takes/B08d--described--s1.mp3",
+     "prompt": "[Barely holding back tears, small and bewildered, a wistful tremble] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "ubJYl27YYu826Uto8Wkf",
+      "id": "YQuMkrkv693PRB0J3XoK"
+     },
+     "rmsdb": -26.6,
+     "voiced": 0.54,
+     "duration": 8.8
+    },
+    {
+     "file": "takes/B08d--described--s3.mp3",
+     "prompt": "[Barely holding back tears, small and bewildered, a wistful tremble] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "ZQ8EhrAlNdOvG4hGCXiJ",
+      "id": "dN8XzyBNmHwlKdjqYsvR"
+     },
+     "rmsdb": -28.2,
+     "voiced": 0.58,
+     "duration": 7.36
+    },
+    {
+     "file": "takes/B08--short-pause--was.mp3",
+     "prompt": "[short pause] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "4eASwOuKsZr6fGQUt5if",
+      "id": ""
+     },
+     "rmsdb": -24.4,
+     "voiced": 0.65,
+     "duration": 6.4
+    }
+   ]
+  },
+  "B09": {
+   "id": "s60-mara-find-what-it-opens-and-then",
+   "scene": "60",
+   "frame": "neonoire-shot-229",
+   "who": "MARA",
+   "text": "Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+   "final": {
+    "prompt": "[Exhausted and tearful, a fragile determination rising] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+    "voice": "2NE3noNVoL0UyxXHLs7w",
+    "file": "/audio/neonoire/s60/229-mara-find-what-it-opens-and-then.mp3",
+    "rmsdb": -20.5,
+    "voiced": 0.67,
+    "duration": 7.2,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "yP2onUVHw3cTSYVMIoT8",
+     "id": "7UHPhIKJE7Pn3xPJmMbu"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B09--tearfully--s1.mp3",
+     "prompt": "[tearfully] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "bk9JHhgXXBGNuDG6TjfY",
+      "id": "4tAr8cVPSoyxoXkAHONZ"
+     },
+     "rmsdb": -20,
+     "voiced": 0.67,
+     "duration": 7.2
+    },
+    {
+     "file": "takes/B09--tearfully--s2.mp3",
+     "prompt": "[tearfully] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "CamMntU7G1maCO6vBh6W",
+      "id": "aivk1AMJVKKmTciuhibG"
+     },
+     "rmsdb": -20.8,
+     "voiced": 0.67,
+     "duration": 7.28
+    },
+    {
+     "file": "takes/B09--tearfully--s3.mp3",
+     "prompt": "[tearfully] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "7Hc88Gxw42TtPsZLMjOt",
+      "id": "xL1AL34Myl7HrWvSHrP0"
+     },
+     "rmsdb": -20.6,
+     "voiced": 0.64,
+     "duration": 7.6
+    },
+    {
+     "file": "takes/B09d--described--s1.mp3",
+     "prompt": "[Exhausted and tearful, a fragile determination rising] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "yXRZgZ66ztStBUsBieMV",
+      "id": "DwbMNDcBgPp2BzkKu4ZM"
+     },
+     "rmsdb": -20.3,
+     "voiced": 0.67,
+     "duration": 7.28
+    },
+    {
+     "file": "takes/B09d--described--s3.mp3",
+     "prompt": "[Exhausted and tearful, a fragile determination rising] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "a6xciLkuA143FUmNjZXh",
+      "id": "0PCG0GPpFUuy7TdSsAd5"
+     },
+     "rmsdb": -20.1,
+     "voiced": 0.7,
+     "duration": 6.96
+    },
+    {
+     "file": "takes/B09--plain--was.mp3",
+     "prompt": "Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+     "voice": "2NE3noNVoL0UyxXHLs7w",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "0MHWfZQKpkIuVIcuUTLd",
+      "session": "M3ifDXb44uOUG0Vi9zif",
+      "id": ""
+     },
+     "rmsdb": -21.3,
+     "voiced": 0.69,
+     "duration": 7.52
+    }
+   ]
+  },
+  "B10": {
+   "id": "s74-vera-dont",
+   "scene": "74",
+   "frame": "neonoire-shot-74",
+   "who": "VERA",
+   "text": "Don't.",
+   "final": {
+    "prompt": "[Crying, almost silent, voice shaking] Don't.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s74/74-vera-dont.mp3",
+    "rmsdb": -28.5,
+    "voiced": 0.48,
+    "duration": 1.2,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "UrQwJgRf5SB0IFjNGMDk",
+     "id": "DgXeOrPYhKl5Nw9oDeP2"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B10--crying--s1.mp3",
+     "prompt": "[crying] Don't.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "g7Vzw6kUwHzT3yVYG2So",
+      "id": "dbE7ofau16KjSOynTEll"
+     },
+     "rmsdb": -26.5,
+     "voiced": 0.48,
+     "duration": 1.84
+    },
+    {
+     "file": "takes/B10--crying--s2.mp3",
+     "prompt": "[crying] Don't.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "cd4RK9tv53k8NJ9d5Cru",
+      "id": "YowYeksFSvkaV5QzGx6V"
+     },
+     "rmsdb": -27.1,
+     "voiced": 0.44,
+     "duration": 2
+    },
+    {
+     "file": "takes/B10--crying--s3.mp3",
+     "prompt": "[crying] Don't.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "atwFtf0XBFHeeDYbHlUo",
+      "id": "hta8wNreMAI3xWCv3epM"
+     },
+     "rmsdb": -27.5,
+     "voiced": 0.5,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/B10d--described--s2.mp3",
+     "prompt": "[Crying, almost silent, voice shaking] Don't.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "gewLyFaqge15L8Q7R5Dm",
+      "id": "3VHKhANhmtKnYidKnxH5"
+     },
+     "rmsdb": -26.7,
+     "voiced": 0.38,
+     "duration": 2.16
+    },
+    {
+     "file": "takes/B10d--described--s3.mp3",
+     "prompt": "[Crying, almost silent, voice shaking] Don't.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "R1oxsIrTF42Y1QP670Ln",
+      "id": "D3mPJhWAIxSR7RSaSGwL"
+     },
+     "rmsdb": -29,
+     "voiced": 0.5,
+     "duration": 1.76
+    },
+    {
+     "file": "takes/B10--trembling-voice--was.mp3",
+     "prompt": "[trembling voice] Don't.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "6y2RZzU9nWY3F6mlIy8y",
+      "session": "kMhBsDnlu8fmINWC2wqK",
+      "id": "AmmAtHkLS3iS3iiBU0SS"
+     },
+     "rmsdb": -26,
+     "voiced": 0.49,
+     "duration": 1.44
+    }
+   ]
+  },
+  "B11": {
+   "id": "s84-n070-vera",
+   "scene": "84",
+   "frame": "neonoire-shot-118",
+   "who": "VERA",
+   "text": "That's me.",
+   "final": {
+    "prompt": "[tearfully] That's me.",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s84/118-vera-gently-that-s-me.mp3",
+    "rmsdb": -26.4,
+    "voiced": 0.52,
+    "duration": 1.76,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "JRZWqzP6J34L9y0teAjo",
+     "id": "uxXUDAuUKarH5SEVwZ7X"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B11--tearfully--s1.mp3",
+     "prompt": "[tearfully] That's me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "D76ZkVQQxuZs03LdiVOn",
+      "id": "CK1v131FbROWeOMnH7Dl"
+     },
+     "rmsdb": -27.4,
+     "voiced": 0.61,
+     "duration": 1.44
+    },
+    {
+     "file": "takes/B11--tearfully--s3.mp3",
+     "prompt": "[tearfully] That's me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "8D5q2hmk9OUlcOMPpOAP",
+      "id": "2jH2Q1P98d3TI8AmmmPh"
+     },
+     "rmsdb": -27.8,
+     "voiced": 0.5,
+     "duration": 1.92
+    },
+    {
+     "file": "takes/B11d--described--s1.mp3",
+     "prompt": "[Stunned realisation, eyes filling, voice catching] That's me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 1 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "S5g2FZQzSHPv4T1qD8gO",
+      "id": "3BemjkrfqgKlyZ1shG4l"
+     },
+     "rmsdb": -22.8,
+     "voiced": 0.59,
+     "duration": 4.4
+    },
+    {
+     "file": "takes/B11d--described--s2.mp3",
+     "prompt": "[Stunned realisation, eyes filling, voice catching] That's me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "I0vjgNh8OkS67HT70V3q",
+      "id": "BuQhDztf678vzBLIHvDS"
+     },
+     "rmsdb": -22.3,
+     "voiced": 0.6,
+     "duration": 3.28
+    },
+    {
+     "file": "takes/B11d--described--s3.mp3",
+     "prompt": "[Stunned realisation, eyes filling, voice catching] That's me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "wiQaE9y8WTNZr9bOWNgc",
+      "id": "JLY3zXqSw57BTsuJX65R"
+     },
+     "rmsdb": -22.2,
+     "voiced": 0.6,
+     "duration": 4
+    },
+    {
+     "file": "takes/B11--gently--was.mp3",
+     "prompt": "[gently] That's me.",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "kvzIYLAVhQxuu2koUOll",
+      "session": "OeHVc5u5c66Ua1eKG5AH",
+      "id": "95Qj8ajInQCZkZYaItBJ"
+     },
+     "rmsdb": -23.9,
+     "voiced": 0.5,
+     "duration": 1.28
+    }
+   ]
+  },
+  "B12": {
+   "id": "s6-vera-you-would-have-told-me-if",
+   "scene": "6",
+   "frame": "neonoire-shot-62",
+   "who": "VERA",
+   "text": "You would have told me if she was dead. Wouldn't you?",
+   "final": {
+    "prompt": "[Controlled until the last word, then her voice cracks, pleading] You would have told me if she was dead. Wouldn't you?",
+    "voice": "4Rn2L1CRjYh93G56jNXI",
+    "file": "/audio/neonoire/s6/62-vera-you-would-have-told-me-if.mp3",
+    "rmsdb": -20.7,
+    "voiced": 0.68,
+    "duration": 3.76,
+    "generation": {
+     "flow": "D252fi9yoELaY35Dn0PJ",
+     "session": "fbDsBBXz7EoqaUitjepL",
+     "id": "IJrFHLi4Cc74d813WUhY"
+    }
+   },
+   "alternates": [
+    {
+     "file": "takes/B12--voice-breaking--s1.mp3",
+     "prompt": "[voice breaking] You would have told me if she was dead. Wouldn't you?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 1 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "bhFyBgVTY6xh9wezhTsh",
+      "id": "j5BqAK4fRIiR1RUFAxdt"
+     },
+     "rmsdb": -23.4,
+     "voiced": 0.62,
+     "duration": 3.84
+    },
+    {
+     "file": "takes/B12--voice-breaking--s2.mp3",
+     "prompt": "[voice breaking] You would have told me if she was dead. Wouldn't you?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 2 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "nf9fHwdQsZbDoIgoid6U",
+      "id": "QWuvOX5Fmp67yF1yKMAc"
+     },
+     "rmsdb": -22.9,
+     "voiced": 0.65,
+     "duration": 3.84
+    },
+    {
+     "file": "takes/B12--voice-breaking--s3.mp3",
+     "prompt": "[voice breaking] You would have told me if she was dead. Wouldn't you?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "tag",
+     "note": "sample 3 of 3; single-word tag",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "0PclQ6QHcpVJAod8Rnoc",
+      "id": "PQT7z8xlqeCVv1vl2NPL"
+     },
+     "rmsdb": -24.1,
+     "voiced": 0.63,
+     "duration": 3.68
+    },
+    {
+     "file": "takes/B12d--described--s2.mp3",
+     "prompt": "[Controlled until the last word, then her voice cracks, pleading] You would have told me if she was dead. Wouldn't you?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 2 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "WDw31mwpqxeq4nsucpoQ",
+      "id": "Iy0v8b9gMvU5LFCT60sk"
+     },
+     "rmsdb": -21.6,
+     "voiced": 0.67,
+     "duration": 3.6
+    },
+    {
+     "file": "takes/B12d--described--s3.mp3",
+     "prompt": "[Controlled until the last word, then her voice cracks, pleading] You would have told me if she was dead. Wouldn't you?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "described",
+     "note": "sample 3 of 3; descriptive direction, the v4 best-practice style (another sample of this style is in the game)",
+     "generation": {
+      "flow": "D252fi9yoELaY35Dn0PJ",
+      "session": "a7UAiW2WUvEdgime1j5s",
+      "id": "ie6qlw077jmNi9NdQADX"
+     },
+     "rmsdb": -21.9,
+     "voiced": 0.65,
+     "duration": 3.76
+    },
+    {
+     "file": "takes/B12--plain--was.mp3",
+     "prompt": "You would have told me if she was dead. Wouldn't you?",
+     "voice": "4Rn2L1CRjYh93G56jNXI",
+     "round": "was",
+     "note": "the take that was in the game until the laugh and cry pass (also archived in docs/neonoire/voice/archive/)",
+     "generation": {
+      "flow": "HQ55MFSYZEvpBwUrW7Ds",
+      "session": "F4OmxH6Bv87HQgfBSd1T",
+      "id": "MXiiqrEpPiEeyiLO0D6q"
+     },
+     "rmsdb": -20.7,
+     "voiced": 0.72,
+     "duration": 3.12
+    }
+   ]
+  }
+ },
+ "voices": [
+  {
+   "character": "SAKAI",
+   "role": "the old man (scene 1 and the old Sakai takes); re-designed 7 Oct 2026 after the 29 Sept voice was deleted (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "oBCsFZ1GTHU9VCiEZSXY",
+   "design": {
+    "description": "Male, 70s, dying of cancer, former bubble-era land clearer. Rough, worn, breathy voice; careful, practised, halting English of a man who rehearsed it. Slow and deliberate, weary, without menace now.",
+    "text": "Miss Voss. Your father did not kill himself. I can prove it. I have kept his papers for twenty years. I am old and I am ill and I do not want to carry them any more. Please telephone.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "oBCsFZ1GTHU9VCiEZSXY",
+     "file": "../2026-10-07/voices/sakai--oBCsFZ1GTHU9VCiEZSXY--picked.mp3",
+     "picked": true,
+     "duration": 21.79,
+     "rmsdb": -22
+    },
+    {
+     "generatedVoiceId": "1oDVgebCaMGnZ2WNDqwC",
+     "file": "voices/sakai--1oDVgebCaMGnZ2WNDqwC.mp3",
+     "picked": false,
+     "duration": 19.64,
+     "rmsdb": -22
+    },
+    {
+     "generatedVoiceId": "bBI34aHpikFNS6A7kN46",
+     "file": "voices/sakai--bBI34aHpikFNS6A7kN46.mp3",
+     "picked": false,
+     "duration": 20.11,
+     "rmsdb": -21.3
+    },
+    {
+     "generatedVoiceId": "FykGtlVUNkb3mokd2LYQ",
+     "file": "voices/sakai--FykGtlVUNkb3mokd2LYQ.mp3",
+     "picked": false,
+     "duration": 23.56,
+     "rmsdb": -20.6
+    }
+   ]
+  },
+  {
+   "character": "SAKAI (TAPE)",
+   "role": "Sakai twenty years younger on the cassette (scene 82) (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "QQyMyGyBbWgRljZdGD3r",
+   "design": {
+    "description": "Male, 40s, rough-voiced former land clearer, Japanese, recorded on an old cassette tape twenty years ago: gruff, wary, a little defensive, low and hoarse, speaking to a smooth superior he does not like. Neutral English placeholder for a character who speaks Japanese.",
+    "text": "There are still people in the building. Old people. They won't sign. And if it isn't? Don't make me say it more clearly.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "QQyMyGyBbWgRljZdGD3r",
+     "file": "../2026-10-07/voices/sakai-tape--QQyMyGyBbWgRljZdGD3r--picked.mp3",
+     "picked": true,
+     "duration": 8.2,
+     "rmsdb": -23.2
+    },
+    {
+     "generatedVoiceId": "rxswd7wLdvEjlUAPbjTm",
+     "file": "voices/sakai-tape--rxswd7wLdvEjlUAPbjTm.mp3",
+     "picked": false,
+     "duration": 9.8,
+     "rmsdb": -24.1
+    },
+    {
+     "generatedVoiceId": "8AVADyclgsYyYSW9RMrC",
+     "file": "voices/sakai-tape--8AVADyclgsYyYSW9RMrC.mp3",
+     "picked": false,
+     "duration": 7.71,
+     "rmsdb": -21.8
+    },
+    {
+     "generatedVoiceId": "h9POx3wwg8jxbLslMv8i",
+     "file": "voices/sakai-tape--h9POx3wwg8jxbLslMv8i.mp3",
+     "picked": false,
+     "duration": 10.84,
+     "rmsdb": -21.9
+    }
+   ]
+  },
+  {
+   "character": "YOUNG DETECTIVE",
+   "role": "the young detective on the phone (scene 96); also stands in for the Young Officer (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "QQQk8imC2qHxHZySJvr0",
+   "design": {
+    "description": "Young Japanese police officer, early 20s, male, speaking English with a light Japanese accent. Polite but bored, flat professional courtesy, a little nasal, clipped; grows guarded and quietly careful when he turns away.",
+    "text": "Your sister's age? Adults sometimes go away for a few days. Especially foreigners. It's usually — Yes. That name. Yes — the sister is here now. Someone will be right with you.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "QQQk8imC2qHxHZySJvr0",
+     "file": "../2026-10-07/voices/young-detective--QQQk8imC2qHxHZySJvr0--picked.mp3",
+     "picked": true,
+     "duration": 15.49,
+     "rmsdb": -23.3
+    },
+    {
+     "generatedVoiceId": "aJdI6v3Dw3gF6EZvuAIq",
+     "file": "voices/young-detective--aJdI6v3Dw3gF6EZvuAIq.mp3",
+     "picked": false,
+     "duration": 21.47,
+     "rmsdb": -22.4
+    },
+    {
+     "generatedVoiceId": "i5GpPXbi5hnrAVs0iO0Y",
+     "file": "voices/young-detective--i5GpPXbi5hnrAVs0iO0Y.mp3",
+     "picked": false,
+     "duration": 17.4,
+     "rmsdb": -20.9
+    },
+    {
+     "generatedVoiceId": "8zbSa8WQExUjf1MMmb8F",
+     "file": "voices/young-detective--8zbSa8WQExUjf1MMmb8F.mp3",
+     "picked": false,
+     "duration": 15.88,
+     "rmsdb": -20.1
+    }
+   ]
+  },
+  {
+   "character": "HARADA",
+   "role": "the newspaper editor (scenes 82, 82A); designed 29 Sept 2026, saved 7 Oct (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "oiQsVLQVbTyIiNejyPfk",
+   "design": {
+    "description": "Female, 50s, veteran newspaper editor, grey-haired, sleeves rolled. Dry, brisk, authoritative, sceptical; smoker's edge to a low voice; gives nothing away until she decides to. Neutral English placeholder for a character who speaks Japanese.",
+    "text": "Print what? A dead man's diary? Bring me something with a name on it. Kondo was six months on the redevelopment money. Who owns what. Whose friends sit on which committee. He never touched a gang in his life.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "oiQsVLQVbTyIiNejyPfk",
+     "file": "../2026-10-07/voices/harada--oiQsVLQVbTyIiNejyPfk--picked.mp3",
+     "picked": true,
+     "duration": 13.56,
+     "rmsdb": -20
+    },
+    {
+     "generatedVoiceId": "eAarwZT1gvOn3r1I4xhu",
+     "file": "voices/harada--eAarwZT1gvOn3r1I4xhu.mp3",
+     "picked": false,
+     "duration": 12.93,
+     "rmsdb": -19.4
+    },
+    {
+     "generatedVoiceId": "MDVnyj5TcvamSxg3wtJL",
+     "file": "voices/harada--MDVnyj5TcvamSxg3wtJL.mp3",
+     "picked": false,
+     "duration": 16.67,
+     "rmsdb": -20.7
+    },
+    {
+     "generatedVoiceId": "2ulpPbXbHxuxBJTMDZMs",
+     "file": "voices/harada--2ulpPbXbHxuxBJTMDZMs.mp3",
+     "picked": false,
+     "duration": 14.37,
+     "rmsdb": -20.3
+    }
+   ]
+  },
+  {
+   "character": "DANIEL",
+   "role": "Daniel Voss reading his notebook (scene 79); designed 29 Sept 2026, saved 7 Oct (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "oOJyrMKhBUCGET6PTTAu",
+   "design": {
+    "description": "Male, 41, American insurance investigator, writing in his notebook late at night. Neat, careful, decent, quietly tired and afraid he is right. Plain American accent, warm underneath, measured, never dramatic. Reads like a man talking to himself.",
+    "text": "Shiohama. Third visit. The residents say men came in the spring with flowers, and then in the summer with iron bars. The fire began in two places at once. Fires don't do that.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "oOJyrMKhBUCGET6PTTAu",
+     "file": "../2026-10-07/voices/daniel--oOJyrMKhBUCGET6PTTAu--picked.mp3",
+     "picked": true,
+     "duration": 12.28,
+     "rmsdb": -19.5
+    },
+    {
+     "generatedVoiceId": "xKMqy1ILmBe8xzYy4iOa",
+     "file": "voices/daniel--xKMqy1ILmBe8xzYy4iOa.mp3",
+     "picked": false,
+     "duration": 11.73,
+     "rmsdb": -20.6
+    },
+    {
+     "generatedVoiceId": "Zv6WbImPM0mDxt201nLk",
+     "file": "voices/daniel--Zv6WbImPM0mDxt201nLk.mp3",
+     "picked": false,
+     "duration": 11.15,
+     "rmsdb": -20
+    },
+    {
+     "generatedVoiceId": "5Ql51ooZp1ErE9BODztq",
+     "file": "voices/daniel--5Ql51ooZp1ErE9BODztq.mp3",
+     "picked": false,
+     "duration": 11.39,
+     "rmsdb": -19.7
+    }
+   ]
+  },
+  {
+   "character": "MRS. SAKAI",
+   "role": "the estranged wife (scene 29); designed to replace the draft borrowing of Kaneko's voice (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "RWRdNUkZ6UAfbVJPXrFG",
+   "design": {
+    "description": "Japanese woman in her late sixties speaking English with a natural Japanese accent. Weary, dry and guarded, a woman who has been disappointed by one man for fifty years and has stopped expecting anything. Soft, slightly nasal and breathy, unhurried, a little rueful, never theatrical. A lighter, higher and softer voice than a gravelly old woman; not gruff, not sharp.",
+    "text": "He started going to temple last year. Him. Temple. He sat there for hours. I thought he'd gone soft in the head. Last month he wrote a letter. In English. Him. He made me check the spelling. To an American girl.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "RWRdNUkZ6UAfbVJPXrFG",
+     "file": "../2026-10-07/voices/mrs-sakai--RWRdNUkZ6UAfbVJPXrFG--picked.mp3",
+     "picked": true,
+     "duration": 25.39,
+     "rmsdb": -18.6
+    },
+    {
+     "generatedVoiceId": "s6M2Xj5oYaTR7aFoIs9E",
+     "file": "voices/mrs-sakai--s6M2Xj5oYaTR7aFoIs9E.mp3",
+     "picked": false,
+     "duration": 28.37,
+     "rmsdb": -22.2
+    },
+    {
+     "generatedVoiceId": "MyHygWocAJWyn55BUk2J",
+     "file": "voices/mrs-sakai--MyHygWocAJWyn55BUk2J.mp3",
+     "picked": false,
+     "duration": 29.31,
+     "rmsdb": -20.6
+    },
+    {
+     "generatedVoiceId": "bumkgeXkWhDnojfSPXSV",
+     "file": "voices/mrs-sakai--bumkgeXkWhDnojfSPXSV.mp3",
+     "picked": false,
+     "duration": 29.73,
+     "rmsdb": -20.3
+    }
+   ]
+  },
+  {
+   "character": "MRS. NODA",
+   "role": "the inn's landlady (scenes 32, 33, 37, 44); designed to replace the draft borrowing of Kaneko's voice (the voice in use first, then three new previews from the same design prompt)",
+   "designed": "2026-10-08",
+   "picked": "Alk407KbdehWA59k1BZv",
+   "design": {
+    "description": "Japanese woman in her late fifties speaking English with a natural Japanese accent. Practical, brisk and kindly, a small-inn landlady who has seen every kind of guest and is unsurprised by all of them. Dry humour delivered deadpan. Warm mid-register, a little husky from long evenings, quick and conversational, easy smile in the voice. Not gravelly, not frail.",
+    "text": "Upstairs, at the end. The bath is shared, I'm sorry. I'll show you. The light doesn't work properly. Kitchen. If you want tea, just take it. The back door sticks. My husband says he'll fix it. He's said so since the Olympics.",
+    "model": "eleven_ttv_v3",
+    "language": "en"
+   },
+   "previews": [
+    {
+     "generatedVoiceId": "Alk407KbdehWA59k1BZv",
+     "file": "../2026-10-07/voices/mrs-noda--Alk407KbdehWA59k1BZv--picked.mp3",
+     "picked": true,
+     "duration": 18.99,
+     "rmsdb": -18.8
+    },
+    {
+     "generatedVoiceId": "ky8h2dldyX0zRsA7lmNY",
+     "file": "voices/mrs-noda--ky8h2dldyX0zRsA7lmNY.mp3",
+     "picked": false,
+     "duration": 17.08,
+     "rmsdb": -21.3
+    },
+    {
+     "generatedVoiceId": "tgIUpA59vI1F4G8la817",
+     "file": "voices/mrs-noda--tgIUpA59vI1F4G8la817.mp3",
+     "picked": false,
+     "duration": 22.28,
+     "rmsdb": -22.2
+    },
+    {
+     "generatedVoiceId": "dEuIgCEqVSlQApnERnkh",
+     "file": "voices/mrs-noda--dEuIgCEqVSlQApnERnkh.mp3",
+     "picked": false,
+     "duration": 17.79,
+     "rmsdb": -21.9
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+:root { --bg:#14161a; --card:#1d2026; --line:#2c313a; --ink:#e8e6e1; --dim:#9aa1ab; --accent:#e3a83b; --good:#5fbf8a; --warn:#d9694a; color-scheme: dark; }
+@media (prefers-color-scheme: light) { :root { --bg:#f4f1ea; --card:#fffdf8; --line:#ddd6c8; --ink:#1d1b17; --dim:#6b665b; --accent:#a8660a; --good:#2e7d55; --warn:#b4472a; color-scheme: light; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; }
+header, main { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 28px; }
+h1 { font-size: 1.5rem; margin: 0 0 4px; } h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+p { margin: 6px 0; color: var(--dim); } p strong { color: var(--ink); }
+.bar { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 4px; position:sticky; top:0; background:var(--bg); padding:8px 0; z-index:2; }
+.bar input, .bar select { background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:inherit; min-width:0; }
+.bar input { flex:1 1 220px; }
+.scene { margin:24px 0 6px; font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); }
+.line { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:10px 0; }
+.line h3 { margin:0 0 2px; font-size:1rem; font-weight:600; } .line .who { color:var(--accent); }
+.line .meta { color:var(--dim); font-size:.8rem; margin-bottom:6px; }
+.take { display:grid; grid-template-columns: 1fr; gap:4px; padding:8px 0; border-top:1px solid var(--line); }
+.take .top { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; font-size:.9rem; }
+.chip { font-size:.7rem; letter-spacing:.04em; text-transform:uppercase; padding:2px 8px; border-radius:99px; border:1px solid var(--line); color:var(--dim); }
+.chip.game { background:var(--good); border-color:var(--good); color:#06140d; font-weight:700; }
+.tag { font-family: ui-monospace,Menlo,Consolas,monospace; font-size:.85rem; }
+.db { font-variant-numeric: tabular-nums; font-size:.85rem; }
+.meter { height:6px; width:90px; background:var(--line); border-radius:3px; overflow:hidden; display:inline-block; vertical-align:middle; }
+.meter i { display:block; height:100%; background:var(--good); }
+.meter.low i { background:var(--warn); }
+audio { width:100%; height:34px; }
+.note { color:var(--dim); font-size:.8rem; }
+code { background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:2px 6px; font-size:.78rem; word-break:break-all; }
+button { background:transparent; color:var(--accent); border:1px solid var(--line); border-radius:6px; padding:2px 8px; font:inherit; font-size:.78rem; cursor:pointer; }
+.voice { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:10px 0; }
+.voice h3 { margin:0; font-size:1rem; } .voice .role { color:var(--dim); font-size:.85rem; margin-bottom:6px; }
+.prev { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; padding:6px 0; border-top:1px solid var(--line); }
+.prev code { flex:0 0 auto; }
+footer { max-width:980px; margin:40px auto; padding:0 16px; color:var(--dim); font-size:.8rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>{{HEADING}}</h1>
+  {{INTRO}}
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search the lines (a word, a name)…" aria-label="Search lines">
+    <select id="who" aria-label="Speaker"><option value="">All speakers</option></select>
+    <select id="scene" aria-label="Scene"><option value="">All scenes</option></select>
+  </div>
+</header>
+<main>
+  <section id="lines"></section>
+  <h2>Voices</h2>
+  <p>{{VOICES_INTRO}}</p>
+  <section id="voices"></section>
+</main>
+<footer>{{FOOTER}}</footer>
+<script>
+const DATA = {{DATA}};
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+const meter = db => { const m = el('span', 'meter' + (db < -29.5 ? ' low' : '')); const i = el('i'); i.style.width = Math.max(4, Math.min(100, (db + 42) / 22 * 100)) + '%'; m.append(i); return m; };
+const LABEL = { first: 'first round', retake: 're-take', variant: 'variant', test: 'tag test', second: 'second sample', hushed: 'was in the game', was: 'was in the game', reading: 'other reading', tag: 'single-word tag', described: 'descriptive direction' };
+function takeRow(src, chip, chipClass, prompt, db, secs, note, cmd) {
+  const row = el('div', 'take'), top = el('div', 'top');
+  const c = el('span', 'chip ' + (chipClass || ''), chip); top.append(c);
+  top.append(el('span', 'tag', prompt));
+  const d = el('span', 'db', db.toFixed(1) + ' dB '); d.append(meter(db)); top.append(d, el('span', 'db', secs.toFixed(1) + ' s'));
+  row.append(top);
+  const a = el('audio'); a.controls = true; a.preload = 'none'; a.src = src; row.append(a);
+  if (note) row.append(el('div', 'note', note));
+  if (cmd) { const w = el('div', 'note'); const code = el('code', '', cmd); const b = el('button', '', 'copy'); b.onclick = () => navigator.clipboard?.writeText(cmd).then(() => { b.textContent = 'copied'; setTimeout(() => b.textContent = 'copy', 1200); }); w.append(code, ' ', b); row.append(w); }
+  return row;
+}
+const gameSrc = L => '../..' + L.final.file.slice('/audio/neonoire'.length);
+const keys = Object.keys(DATA.lines);
+const whoSel = $('#who'), sceneSel = $('#scene');
+[...new Set(keys.map(k => DATA.lines[k].who))].sort().forEach(w => whoSel.append(new Option(w, w)));
+[...new Set(keys.map(k => DATA.lines[k].scene))].sort((a, b) => parseInt(a) - parseInt(b) || a.localeCompare(b)).forEach(s => sceneSel.append(new Option('Scene ' + s, s)));
+function render() {
+  const q = $('#q').value.trim().toLowerCase(), who = whoSel.value, scene = sceneSel.value;
+  const host = $('#lines'); host.replaceChildren();
+  let last = null;
+  const sorted = keys.slice().sort((a, b) => { const A = DATA.lines[a], B = DATA.lines[b]; return parseInt(A.scene) - parseInt(B.scene) || A.scene.localeCompare(B.scene) || parseInt(A.frame.replace(/\D/g, '')) - parseInt(B.frame.replace(/\D/g, '')) || a.localeCompare(b); });
+  let shown = 0;
+  for (const k of sorted) {
+    const L = DATA.lines[k];
+    if (who && L.who !== who) continue; if (scene && L.scene !== scene) continue;
+    if (q && !(L.text + ' ' + L.who + ' ' + k).toLowerCase().includes(q)) continue;
+    if (L.scene !== last) { host.append(el('div', 'scene', 'Scene ' + L.scene)); last = L.scene; }
+    const card = el('div', 'line'); const h = el('h3'); h.append(el('span', 'who', L.who + ' '), document.createTextNode('“' + L.text + '”')); card.append(h);
+    card.append(el('div', 'meta', k + ' · ' + L.id + ' · ' + L.frame.replace('neonoire-shot-', 'shot ') + (L.final.fx ? ' · through a ' + L.final.fx : '')));
+    card.append(takeRow(gameSrc(L), 'in the game', 'game', L.final.prompt.slice(0, L.final.prompt.indexOf(']') + 1) || 'no tag', L.final.rmsdb, L.final.duration, ''));
+    for (const alt of L.alternates) card.append(takeRow(alt.file, LABEL[alt.round] || alt.round, '', alt.prompt.slice(0, alt.prompt.indexOf(']') + 1) || 'no tag', alt.rmsdb, alt.duration, alt.note, 'node scripts/neonoire/voice-swap.mjs --set ' + DATA.date + ' --key ' + k + ' --take ' + alt.file));
+    host.append(card); shown++;
+  }
+  if (!shown) host.append(el('p', '', 'Nothing matches.'));
+}
+for (const e of ['input', 'change']) { $('#q').addEventListener(e, render); whoSel.addEventListener(e, render); sceneSel.addEventListener(e, render); }
+render();
+const vh = $('#voices');
+for (const v of DATA.voices) {
+  const box = el('div', 'voice'); box.append(el('h3', '', v.character), el('div', 'role', v.role + ' · designed ' + v.designed));
+  for (const p of v.previews) {
+    const r = el('div', 'prev'); if (p.picked) r.append(el('span', 'chip game', 'in use')); r.append(el('code', '', p.generatedVoiceId), el('span', 'db', p.rmsdb.toFixed(1) + ' dB · ' + p.duration.toFixed(1) + ' s'));
+    const a = el('audio'); a.controls = true; a.preload = 'none'; a.src = p.file; r.append(a); box.append(r);
+  }
+  vh.append(box);
+}
+</script>
+</body>
+</html>

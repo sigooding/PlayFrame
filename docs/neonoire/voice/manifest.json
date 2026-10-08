@@ -37,17 +37,31 @@
       "frameId": "neonoire-shot-157",
       "character": "VERA",
       "text": "You could have told me that in the rain.",
+      "prompt": "[Thick with tears, steadying her voice, hurt but not angry] You could have told me that in the rain.",
       "file": "/audio/neonoire/s98/157-vera-in-the-rain.mp3",
       "offset": 9,
-      "duration": 1.95,
+      "duration": 2.69,
       "voice": "4Rn2L1CRjYh93G56jNXI",
-      "model": "eleven_multilingual_v2",
-      "status": "pilot",
+      "model": "eleven_v4",
       "generation": {
-        "flow": "vN8Ah5lIPjcsihFxK7dl",
-        "session": "G6sW785uwvXRE3FDuAmJ",
-        "id": "blujDVEm1hbU3WHyuX8a"
-      }
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "ZDpOCYeQq9ovMN6IplDe",
+        "id": "7vpYYRItdTyycjXp5nTt"
+      },
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/157-vera-in-the-rain-v1.mp3",
+          "prompt": "You could have told me that in the rain.",
+          "model": "eleven_multilingual_v2",
+          "generation": {
+            "flow": "vN8Ah5lIPjcsihFxK7dl",
+            "session": "G6sW785uwvXRE3FDuAmJ",
+            "id": "blujDVEm1hbU3WHyuX8a"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s62-jack-tomorrow",
@@ -216,18 +230,31 @@
       "frameId": "neonoire-shot-74",
       "character": "VERA",
       "text": "Don't.",
+      "prompt": "[Crying, almost silent, voice shaking] Don't.",
       "file": "/audio/neonoire/s74/74-vera-dont.mp3",
       "offset": 7,
-      "duration": 1.49,
+      "duration": 1.23,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
-      "status": "take",
-      "prompt": "[trembling voice] Don't.",
       "generation": {
-        "flow": "6y2RZzU9nWY3F6mlIy8y",
-        "session": "kMhBsDnlu8fmINWC2wqK",
-        "id": "AmmAtHkLS3iS3iiBU0SS"
-      }
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "UrQwJgRf5SB0IFjNGMDk",
+        "id": "DgXeOrPYhKl5Nw9oDeP2"
+      },
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/74-vera-dont-v1.mp3",
+          "prompt": "[trembling voice] Don't.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "6y2RZzU9nWY3F6mlIy8y",
+            "session": "kMhBsDnlu8fmINWC2wqK",
+            "id": "AmmAtHkLS3iS3iiBU0SS"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s74-vera-you-knew",
@@ -545,7 +572,8 @@
         "session": "AjtYR5XTmvCclaizlfkS",
         "id": "asWjWd14MboN67Cmpnx7"
       },
-      "status": "take"
+      "status": "take",
+      "sub": "Excuse me."
     },
     {
       "id": "s1-maskedman-first-position-done-moving-to-second",
@@ -597,7 +625,8 @@
         "session": "rGwanz29n16sUMPaNksO",
         "id": "DmfbPxxXFC1eKqWN1Xkl"
       },
-      "status": "take"
+      "status": "take",
+      "fx": "phone"
     },
     {
       "id": "s4-vera-tired-it-s-me-again-i",
@@ -1316,17 +1345,31 @@
       "frameId": "neonoire-shot-62",
       "character": "VERA",
       "text": "You would have told me if she was dead. Wouldn't you?",
+      "prompt": "[Controlled until the last word, then her voice cracks, pleading] You would have told me if she was dead. Wouldn't you?",
       "file": "/audio/neonoire/s6/62-vera-you-would-have-told-me-if.mp3",
       "offset": 11.61,
-      "duration": 3.16,
+      "duration": 3.79,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "HQ55MFSYZEvpBwUrW7Ds",
-        "session": "F4OmxH6Bv87HQgfBSd1T",
-        "id": "MXiiqrEpPiEeyiLO0D6q"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "fbDsBBXz7EoqaUitjepL",
+        "id": "IJrFHLi4Cc74d813WUhY"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/62-vera-you-would-have-told-me-if-v1.mp3",
+          "prompt": "You would have told me if she was dead. Wouldn't you?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "HQ55MFSYZEvpBwUrW7Ds",
+            "session": "F4OmxH6Bv87HQgfBSd1T",
+            "id": "MXiiqrEpPiEeyiLO0D6q"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s6-ishida-of-course",
@@ -1861,54 +1904,93 @@
       "frameId": "neonoire-shot-167",
       "character": "JACK",
       "text": "Your father.",
-      "prompt": "[softly] Your father.",
+      "prompt": "[gently] Your father.",
       "file": "/audio/neonoire/s10/167-jack-softly-your-father.mp3",
       "offset": 15,
-      "duration": 1.31,
+      "duration": 1.41,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "cvKzD8RNKmUmkmhR72WO",
-        "session": "K0hLIltktc07MtWoASLu",
-        "id": "3hWN7lJvru9ml6wETmfZ"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "CxbIBUrP0iSfaq3v6d2O",
+        "id": "p4K3nUg5kll3k0Y5GsYx"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/167-jack-softly-your-father-v1.mp3",
+          "prompt": "[softly] Your father.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "cvKzD8RNKmUmkmhR72WO",
+            "session": "K0hLIltktc07MtWoASLu",
+            "id": "3hWN7lJvru9ml6wETmfZ"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s10-vera-quietly-he-died-pause-that-year",
       "frameId": "neonoire-shot-167",
       "character": "VERA",
       "text": "He died. That year. Here.",
-      "prompt": "[quietly] He died. [pause] That year. Here.",
+      "prompt": "[sadly] He died. [pause] That year. Here.",
       "file": "/audio/neonoire/s10/167-vera-quietly-he-died-pause-that-year.mp3",
       "offset": 16.8,
-      "duration": 3.63,
+      "duration": 3.97,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "cvKzD8RNKmUmkmhR72WO",
-        "session": "40SroEM3pTvYhXjn239D",
-        "id": "b3ABb3wZKk8u198BQrKF"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "82fbLNcTq8NvBxxoVh9y",
+        "id": "qt7RmO66lOY2xMdPG6p9"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/167-vera-quietly-he-died-pause-that-year-v1.mp3",
+          "prompt": "[quietly] He died. [pause] That year. Here.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "cvKzD8RNKmUmkmhR72WO",
+            "session": "40SroEM3pTvYhXjn239D",
+            "id": "b3ABb3wZKk8u198BQrKF"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s10-jack-quietly-i-m-sorry",
       "frameId": "neonoire-shot-168",
       "character": "JACK",
       "text": "I'm sorry.",
-      "prompt": "[quietly] I'm sorry.",
+      "prompt": "[earnestly] I'm sorry.",
       "file": "/audio/neonoire/s10/168-jack-quietly-i-m-sorry.mp3",
       "offset": 0.5,
-      "duration": 1.31,
+      "duration": 1.49,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "cvKzD8RNKmUmkmhR72WO",
-        "session": "EzBtOGFgcF4hSakoyY2a",
-        "id": "x8IKYt4kQdvAWeQgTvs7"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "WRuSkww06wT8Dt30xlDe",
+        "id": "HciS6NHHC1A626TYATAF"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/168-jack-quietly-i-m-sorry-v1.mp3",
+          "prompt": "[quietly] I'm sorry.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "cvKzD8RNKmUmkmhR72WO",
+            "session": "EzBtOGFgcF4hSakoyY2a",
+            "id": "x8IKYt4kQdvAWeQgTvs7"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s10-vera-it-was-a-long-time-ago",
@@ -2281,7 +2363,7 @@
       "character": "KANEKO",
       "text": "Everything is going. We are just slower.",
       "file": "/audio/neonoire/s13/181-kaneko-everything-is-going-we-are-just.mp3",
-      "offset": 29,
+      "offset": 31.3,
       "duration": 3.47,
       "voice": "vUzt8mUMt5vwWOoJ6szl",
       "model": "eleven_v4",
@@ -2452,18 +2534,31 @@
       "frameId": "neonoire-shot-247",
       "character": "JACK",
       "text": "Why come back?",
-      "prompt": "[quietly] Why come back?",
+      "prompt": "[evenly] Why come back?",
       "file": "/audio/neonoire/s12/247-jack-quietly-why-come-back.mp3",
       "offset": 20.6,
-      "duration": 1.57,
+      "duration": 1.49,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "clnOd1X24tHxxhxgPUg2",
-        "session": "YtovuopHAdtz6MJMTSA2",
-        "id": "EIVrgzyA6vJEYFhmgufh"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "dImSEEHz45vt8WcVUA1O",
+        "id": "efJ4e8icRRPE062Rgeh5"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/247-jack-quietly-why-come-back-v1.mp3",
+          "prompt": "[quietly] Why come back?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "clnOd1X24tHxxhxgPUg2",
+            "session": "YtovuopHAdtz6MJMTSA2",
+            "id": "EIVrgzyA6vJEYFhmgufh"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s14-jack-when-were-you-last-here",
@@ -2553,18 +2648,31 @@
       "frameId": "neonoire-shot-270",
       "character": "VERA",
       "text": "That was for America. She'd booked a flight. Next month.",
-      "prompt": "[quietly] That was for America. She'd booked a flight. Next month.",
+      "prompt": "[evenly] That was for America. She'd booked a flight. Next month.",
       "file": "/audio/neonoire/s14/270-vera-quietly-that-was-for-america-she.mp3",
       "offset": 0.5,
-      "duration": 4.13,
+      "duration": 3.97,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "JJ4QW4ir4zwem0vGOseG",
-        "session": "XC7Hs5sHIp1a7myzY2jw",
-        "id": "VODGgfaLi128LVjRXYNk"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "KtBRLsoAeWe7CGSOMG2L",
+        "id": "bBnaQwfdtfbtUNJpPSVs"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/270-vera-quietly-that-was-for-america-she-v1.mp3",
+          "prompt": "[quietly] That was for America. She'd booked a flight. Next month.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "JJ4QW4ir4zwem0vGOseG",
+            "session": "XC7Hs5sHIp1a7myzY2jw",
+            "id": "VODGgfaLi128LVjRXYNk"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s14-jack-you-didn-t-want-her-to",
@@ -2642,18 +2750,31 @@
       "frameId": "neonoire-shot-270",
       "character": "VERA",
       "text": "I told her to go, then. Go home. Those were the last things I said to her.",
-      "prompt": "[quietly] I told her to go, then. Go home. Those were the last things I said to her.",
+      "prompt": "[sadly] I told her to go, then. Go home. Those were the last things I said to her.",
       "file": "/audio/neonoire/s14/270-vera-quietly-i-told-her-to-go.mp3",
       "offset": 36.5,
-      "duration": 5.25,
+      "duration": 5.8,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "JJ4QW4ir4zwem0vGOseG",
-        "session": "T93SGT3dNlXtsnUfhP8k",
-        "id": "AI0K9qtAwndAKdiyqMb2"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "Cm5113C57AxRldHcg3ib",
+        "id": "f4csl1LzkbhO7GwSV1P4"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/270-vera-quietly-i-told-her-to-go-v1.mp3",
+          "prompt": "[quietly] I told her to go, then. Go home. Those were the last things I said to her.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "JJ4QW4ir4zwem0vGOseG",
+            "session": "T93SGT3dNlXtsnUfhP8k",
+            "id": "AI0K9qtAwndAKdiyqMb2"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s14-jack-she-drew-this-a-lot",
@@ -2789,18 +2910,31 @@
       "frameId": "neonoire-shot-189",
       "character": "JACK",
       "text": "I'm looking for his daughter. The younger one.",
-      "prompt": "[quietly] I'm looking for his daughter. The younger one.",
+      "prompt": "[evenly] I'm looking for his daughter. The younger one.",
       "file": "/audio/neonoire/s17/189-jack-quietly-i-m-looking-for-his.mp3",
       "offset": 21.6,
-      "duration": 3,
+      "duration": 2.85,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "JJ4QW4ir4zwem0vGOseG",
-        "session": "Ho8ZkzcAQo5vz8R1i9yx",
-        "id": "difLUKhGox3meZrzuh7p"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "dGy2xi4ucZOOAFT6ZIT0",
+        "id": "8ZJflaGF8FVAqYc4kgoc"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/189-jack-quietly-i-m-looking-for-his-v1.mp3",
+          "prompt": "[quietly] I'm looking for his daughter. The younger one.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "JJ4QW4ir4zwem0vGOseG",
+            "session": "Ho8ZkzcAQo5vz8R1i9yx",
+            "id": "difLUKhGox3meZrzuh7p"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s17-kaneko-flatly-the-little-one-she-was",
@@ -2826,7 +2960,7 @@
       "character": "JACK",
       "text": "She's twenty-four now. And someone wants to kill her.",
       "file": "/audio/neonoire/s17/189-jack-she-s-twenty-four-now-and.mp3",
-      "offset": 31.4,
+      "offset": 35.42,
       "duration": 3.97,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
@@ -2844,7 +2978,7 @@
       "text": "Eat. Then go. There is no one here but us.",
       "prompt": "[gruffly] Eat. Then go. [pause] There is no one here but us.",
       "file": "/audio/neonoire/s17/189-kaneko-gruffly-eat-then-go-pause-there.mp3",
-      "offset": 36.4,
+      "offset": 40.04,
       "duration": 4.83,
       "voice": "vUzt8mUMt5vwWOoJ6szl",
       "model": "eleven_v4",
@@ -2860,18 +2994,31 @@
       "frameId": "neonoire-shot-189",
       "character": "JACK",
       "text": "He always paid too much, too.",
-      "prompt": "[quietly] He always paid too much, too.",
+      "prompt": "[sadly] He always paid too much, too.",
       "file": "/audio/neonoire/s17/189-jack-quietly-he-always-paid-too-much.mp3",
-      "offset": 43.8,
-      "duration": 2.43,
+      "offset": 45.52,
+      "duration": 2.69,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "JJ4QW4ir4zwem0vGOseG",
-        "session": "OUPBCLxQkB747YF8m35B",
-        "id": "6wYbH3fIP2YsBbK5KTP4"
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "TyWNnoZtjeCJqz2exU8T",
+        "id": "h5M5KZkqQ3769UOZj4hm"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/189-jack-quietly-he-always-paid-too-much-v1.mp3",
+          "prompt": "[quietly] He always paid too much, too.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "JJ4QW4ir4zwem0vGOseG",
+            "session": "OUPBCLxQkB747YF8m35B",
+            "id": "6wYbH3fIP2YsBbK5KTP4"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s18-kaneko-urgently-come-back-alone-after-the",
@@ -5182,17 +5329,31 @@
       "frameId": "neonoire-shot-210",
       "character": "VERA",
       "text": "Did you find anything?",
+      "prompt": "[A small breath of a laugh, warm and teasing, then sincere] Did you find anything?",
       "file": "/audio/neonoire/s36/210-vera-did-you-find-anything.mp3",
       "offset": 15.2,
-      "duration": 1.31,
+      "duration": 2.93,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "kz7xkMfd3trC6pRieZ16",
-        "id": "Y2VhKwccmCQ51ylD19oT"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "fPqB5YmukikDJkxYserj",
+        "id": "IxIwXQk7UyN4fQ2CUzvB"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/210-vera-did-you-find-anything-v1.mp3",
+          "prompt": "Did you find anything?",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "zwWk8o7dCHdeYJNtHmVm",
+            "session": "kz7xkMfd3trC6pRieZ16",
+            "id": "Y2VhKwccmCQ51ylD19oT"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s36-jack-maybe-i-ll-know-tomorrow",
@@ -5200,7 +5361,7 @@
       "character": "JACK",
       "text": "Maybe. I'll know tomorrow.",
       "file": "/audio/neonoire/s36/210-jack-maybe-i-ll-know-tomorrow.mp3",
-      "offset": 18.08,
+      "offset": 18.78,
       "duration": 2.27,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
@@ -5694,17 +5855,31 @@
       "frameId": "neonoire-shot-279",
       "character": "MARA",
       "text": "Oh. Oh, I see.",
+      "prompt": "[laughs] Oh. Oh, I see.",
       "file": "/audio/neonoire/s69/279-mara-oh-oh-i-see.mp3",
       "offset": 0.4,
-      "duration": 2.51,
+      "duration": 3.47,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
       "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "kK59JwLX9sncVuw3xSx1",
-        "id": "hohAC6qP1uDTZ8fe2cOS"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "zfdESSbSFw3hA26OSuiY",
+        "id": "O7fqJWB5iYsYyrJnB2W6"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/279-mara-oh-oh-i-see-v1.mp3",
+          "prompt": "Oh. Oh, I see.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "zwWk8o7dCHdeYJNtHmVm",
+            "session": "kK59JwLX9sncVuw3xSx1",
+            "id": "hohAC6qP1uDTZ8fe2cOS"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s69-jack-it-s-not",
@@ -5712,7 +5887,7 @@
       "character": "JACK",
       "text": "It's not —",
       "file": "/audio/neonoire/s69/279-jack-it-s-not.mp3",
-      "offset": 3.48,
+      "offset": 4.52,
       "duration": 1.41,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
@@ -5730,7 +5905,7 @@
       "text": "It is. It's fine. It's good. She deserves someone who looks for things.",
       "prompt": "It is. It's fine. It's good. [pause] She deserves someone who looks for things.",
       "file": "/audio/neonoire/s69/279-mara-it-is-it-s-fine-it.mp3",
-      "offset": 5.24,
+      "offset": 6.58,
       "duration": 6.03,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
@@ -5770,7 +5945,8 @@
           },
           "archivedAt": "2026-10-07"
         }
-      ]
+      ],
+      "sub": "Excuse me."
     },
     {
       "id": "s70-mara-that-s-them",
@@ -5899,17 +6075,31 @@
       "frameId": "neonoire-shot-240",
       "character": "JACK",
       "text": "Yes. Everyone's awake. Help's coming.",
+      "prompt": "[Trembling, forcing a steady voice, restrained panic] Yes. Everyone's awake. Help's coming.",
       "file": "/audio/neonoire/s71/240-jack-yes-everyone-s-awake-help-s.mp3",
       "offset": 8.2,
-      "duration": 3,
+      "duration": 5.07,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "bPAuVhURXKeddsDA0fuJ",
-        "id": "cti2XFtE88IFHTshiczZ"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "9s5TK2oWzWasHzZ26tya",
+        "id": "fcp8zzQC5YtQEGzRYJWe"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/240-jack-yes-everyone-s-awake-help-s-v1.mp3",
+          "prompt": "Yes. Everyone's awake. Help's coming.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "zwWk8o7dCHdeYJNtHmVm",
+            "session": "bPAuVhURXKeddsDA0fuJ",
+            "id": "cti2XFtE88IFHTshiczZ"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s71-mara-weakly-jack",
@@ -5918,7 +6108,7 @@
       "text": "Jack.",
       "prompt": "[weakly] Jack.",
       "file": "/audio/neonoire/s71/240-mara-weakly-jack.mp3",
-      "offset": 12.76,
+      "offset": 13.92,
       "duration": 1.23,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
@@ -5934,17 +6124,31 @@
       "frameId": "neonoire-shot-240",
       "character": "JACK",
       "text": "I'm here.",
+      "prompt": "[voice breaking] I'm here.",
       "file": "/audio/neonoire/s71/240-jack-i-m-here.mp3",
-      "offset": 14.66,
-      "duration": 0.91,
+      "offset": 15.8,
+      "duration": 2.12,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "pq1SOVc4PwVETGPW2WfU",
-        "id": "hhdKi1m2rpiUwOirhrqB"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "m3wn4F29Iu76ehzRSi3I",
+        "id": "tNd2OHwM9hGCAUcTPJKm"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/240-jack-i-m-here-v1.mp3",
+          "prompt": "I'm here.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "zwWk8o7dCHdeYJNtHmVm",
+            "session": "pq1SOVc4PwVETGPW2WfU",
+            "id": "hhdKi1m2rpiUwOirhrqB"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s71-mara-weakly-tell-her-i-m-sorry",
@@ -5953,7 +6157,7 @@
       "text": "Tell her I'm sorry.",
       "prompt": "[weakly] Tell her I'm sorry.",
       "file": "/audio/neonoire/s71/240-mara-weakly-tell-her-i-m-sorry.mp3",
-      "offset": 16.74,
+      "offset": 18.57,
       "duration": 2.27,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
@@ -5969,17 +6173,31 @@
       "frameId": "neonoire-shot-240",
       "character": "JACK",
       "text": "You'll tell her. Tonight. I'll bring her here, you can —",
+      "prompt": "[Pleading, voice breaking, cut off mid-sentence by grief] You'll tell her. Tonight. I'll bring her here, you can —",
       "file": "/audio/neonoire/s71/240-jack-you-ll-tell-her-tonight-i.mp3",
-      "offset": 19.88,
-      "duration": 4.13,
+      "offset": 21.49,
+      "duration": 3.79,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "zwWk8o7dCHdeYJNtHmVm",
-        "session": "ciMJq3aeWdXVUTceHKFX",
-        "id": "IO3Ojx2ocFeWQVs9bmgY"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "I4jcg45JngOk2bnpN3Co",
+        "id": "dGOD4tAQp7iwZVLYiZu4"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/240-jack-you-ll-tell-her-tonight-i-v1.mp3",
+          "prompt": "You'll tell her. Tonight. I'll bring her here, you can —",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "zwWk8o7dCHdeYJNtHmVm",
+            "session": "ciMJq3aeWdXVUTceHKFX",
+            "id": "IO3Ojx2ocFeWQVs9bmgY"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s71-mara-weakly-tell-her",
@@ -5988,7 +6206,7 @@
       "text": "Tell her.",
       "prompt": "[weakly] Tell her.",
       "file": "/audio/neonoire/s71/240-mara-weakly-tell-her.mp3",
-      "offset": 23.76,
+      "offset": 25.93,
       "duration": 1.49,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
@@ -6528,18 +6746,31 @@
       "frameId": "neonoire-shot-214",
       "character": "JACK",
       "text": "Stay. Whatever you hear.",
-      "prompt": "[quietly] Stay. Whatever you hear.",
+      "prompt": "[firmly] Stay. Whatever you hear.",
       "file": "/audio/neonoire/s44/214-jack-stay-whatever-you-hear.mp3",
       "offset": 0.6,
-      "duration": 2.59,
+      "duration": 2.51,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "NrV9SrIZoSpfkhzRtW2q",
-        "id": ""
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "FhbS5wSmyL1fn4vRLfyK",
+        "id": "opamgTz2xxmnPLb0PS1p"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/214-jack-stay-whatever-you-hear-v1.mp3",
+          "prompt": "[quietly] Stay. Whatever you hear.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "NrV9SrIZoSpfkhzRtW2q",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s44-mrsnoda-my-husband",
@@ -6576,18 +6807,31 @@
       "frameId": "neonoire-shot-214",
       "character": "JACK",
       "text": "I'll get him.",
-      "prompt": "[quietly] I'll get him.",
+      "prompt": "[firmly] I'll get him.",
       "file": "/audio/neonoire/s44/214-jack-i-ll-get-him.mp3",
       "offset": 6.06,
-      "duration": 1.15,
+      "duration": 1.41,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "bTEUHp1wWCth67lYtJoy",
-        "id": ""
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "foYKdmYmyS8AI3PG96OQ",
+        "id": "5zxPUOPo1ijvKl8rmXov"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/214-jack-i-ll-get-him-v1.mp3",
+          "prompt": "[quietly] I'll get him.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "bTEUHp1wWCth67lYtJoy",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s45-vendingmachine-thank-you-very-much",
@@ -6859,18 +7103,31 @@
       "frameId": "neonoire-shot-275",
       "character": "JACK",
       "text": "I won't.",
-      "prompt": "[quietly] I won't.",
+      "prompt": "[earnestly] I won't.",
       "file": "/audio/neonoire/s53/275-jack-i-won-t.mp3",
       "offset": 4.46,
-      "duration": 1.23,
+      "duration": 1.41,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "ZKObDOzxnhZiECbVKuUm",
-        "id": ""
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "WCk2Ajftb9St3Uz5W9yk",
+        "id": "aul6gy5S2hhyZjZbfwyv"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/275-jack-i-won-t-v1.mp3",
+          "prompt": "[quietly] I won't.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "ZKObDOzxnhZiECbVKuUm",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s54-vera-my-father-worked-near-here-a",
@@ -7017,18 +7274,31 @@
       "frameId": "neonoire-shot-227",
       "character": "VERA",
       "text": "My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
-      "prompt": "[short pause] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+      "prompt": "[A single laugh through tears, wiping her eyes, then warm and wistful] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
       "file": "/audio/neonoire/s58/227-vera-my-sister-would-love-this-place.mp3",
       "offset": 0.6,
-      "duration": 8.12,
+      "duration": 12.12,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "MGwGy8cjRyJK5Hg85chr",
-        "id": ""
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "rKoMRHYZOoEJqBxNUOrT",
+        "id": "bjwJGGRSc3jnAxcMVj8O"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/227-vera-my-sister-would-love-this-place-v1.mp3",
+          "prompt": "[short pause] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "MGwGy8cjRyJK5Hg85chr",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s58-kaneko-yes-bring-her",
@@ -7037,7 +7307,7 @@
       "text": "Yes. Bring her.",
       "prompt": "[gently] Yes. Bring her.",
       "file": "/audio/neonoire/s58/227-kaneko-yes-bring-her.mp3",
-      "offset": 10.02,
+      "offset": 13.37,
       "duration": 2.19,
       "voice": "vUzt8mUMt5vwWOoJ6szl",
       "model": "eleven_v4",
@@ -7212,18 +7482,31 @@
       "frameId": "neonoire-shot-229",
       "character": "MARA",
       "text": "Did I? She said she'd bring me here. When she finds me. She was so happy.",
-      "prompt": "[short pause] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+      "prompt": "[Barely holding back tears, small and bewildered, a wistful tremble] Did I? She said she'd bring me here. When she finds me. She was so happy.",
       "file": "/audio/neonoire/s60/229-mara-did-i-she-said-she-d.mp3",
       "offset": 7.75,
-      "duration": 6.43,
+      "duration": 7.39,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "4eASwOuKsZr6fGQUt5if",
-        "id": ""
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "i7hbLU2kKeBVX2i3xOod",
+        "id": "OnuEbRg8KmEXDDxhfl6H"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/229-mara-did-i-she-said-she-d-v1.mp3",
+          "prompt": "[short pause] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "4eASwOuKsZr6fGQUt5if",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s60-jack-if-she-found-this-place-other",
@@ -7265,17 +7548,31 @@
       "frameId": "neonoire-shot-229",
       "character": "MARA",
       "text": "Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+      "prompt": "[Exhausted and tearful, a fragile determination rising] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
       "file": "/audio/neonoire/s60/229-mara-find-what-it-opens-and-then.mp3",
       "offset": 21.01,
-      "duration": 7.55,
+      "duration": 7.24,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "M3ifDXb44uOUG0Vi9zif",
-        "id": ""
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "yP2onUVHw3cTSYVMIoT8",
+        "id": "7UHPhIKJE7Pn3xPJmMbu"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/229-mara-find-what-it-opens-and-then-v1.mp3",
+          "prompt": "Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "M3ifDXb44uOUG0Vi9zif",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s60-jack-tomorrow-night-i-m-moving-you",
@@ -7316,18 +7613,31 @@
       "frameId": "neonoire-shot-229",
       "character": "JACK",
       "text": "And then I tell her everything.",
-      "prompt": "[quietly] And then I tell her everything.",
+      "prompt": "[evenly] And then I tell her everything.",
       "file": "/audio/neonoire/s60/229-jack-and-then-i-tell-her-everything.mp3",
       "offset": 40.25,
-      "duration": 2.12,
+      "duration": 2.59,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
       "generation": {
-        "flow": "0MHWfZQKpkIuVIcuUTLd",
-        "session": "y0oKH710XfNGSHGS1KNM",
-        "id": ""
+        "flow": "N9gMYgRFua7NaOhKH5Cd",
+        "session": "mcjIuCkvw2P3LLQGvXIO",
+        "id": "BCyiuWrJUm7oJIM0Vo1e"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/229-jack-and-then-i-tell-her-everything-v1.mp3",
+          "prompt": "[quietly] And then I tell her everything.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "0MHWfZQKpkIuVIcuUTLd",
+            "session": "y0oKH710XfNGSHGS1KNM",
+            "id": ""
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s61-ishida-the-inn-i-heard-this-morning",
@@ -8855,18 +9165,31 @@
       "frameId": "neonoire-shot-118",
       "character": "VERA",
       "text": "That's me.",
-      "prompt": "[gently] That's me.",
+      "prompt": "[tearfully] That's me.",
       "file": "/audio/neonoire/s84/118-vera-gently-that-s-me.mp3",
       "offset": 1.3,
-      "duration": 1.31,
+      "duration": 1.8,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "kvzIYLAVhQxuu2koUOll",
-        "session": "OeHVc5u5c66Ua1eKG5AH",
-        "id": "95Qj8ajInQCZkZYaItBJ"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "JRZWqzP6J34L9y0teAjo",
+        "id": "uxXUDAuUKarH5SEVwZ7X"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/118-vera-gently-that-s-me-v1.mp3",
+          "prompt": "[gently] That's me.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "kvzIYLAVhQxuu2koUOll",
+            "session": "OeHVc5u5c66Ua1eKG5AH",
+            "id": "95Qj8ajInQCZkZYaItBJ"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s84-n071-jack",
@@ -9629,18 +9952,31 @@
       "frameId": "neonoire-shot-156",
       "character": "VERA",
       "text": "Liar. It was mine.",
-      "prompt": "[voice breaking] Liar. It was mine.",
+      "prompt": "[A short broken laugh, then her voice cracking with hurt] Liar. It was mine.",
       "file": "/audio/neonoire/s98/156-vera-voice-breaking-liar-it-was-mine.mp3",
       "offset": 10.54,
-      "duration": 2.69,
+      "duration": 3.55,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "kvzIYLAVhQxuu2koUOll",
-        "session": "0BUnFSZJNqbZB9xM9SsX",
-        "id": "YeZtcVZZbnsulLk0wBGa"
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "JcVqVaSbr8Gc5Xdz116L",
+        "id": "qpzZSQj6ETPiPDMAYyH4"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/156-vera-voice-breaking-liar-it-was-mine-v1.mp3",
+          "prompt": "[voice breaking] Liar. It was mine.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "kvzIYLAVhQxuu2koUOll",
+            "session": "0BUnFSZJNqbZB9xM9SsX",
+            "id": "YeZtcVZZbnsulLk0wBGa"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s98-n115-jack",
@@ -9667,7 +10003,7 @@
       "text": "I couldn't say anything in the rain.",
       "prompt": "[sadly] I couldn't say anything in the rain.",
       "file": "/audio/neonoire/s98/157-jack-sadly-i-couldn-t-say-anything.mp3",
-      "offset": 11.6,
+      "offset": 12.34,
       "duration": 2.69,
       "voice": "MZhx7pKflsc0sAwciDEy",
       "model": "eleven_v4",
@@ -9685,7 +10021,7 @@
       "text": "No. Neither could I.",
       "prompt": "[gently] No. [pause] Neither could I.",
       "file": "/audio/neonoire/s98/157-vera-gently-no-pause-neither-could-i.mp3",
-      "offset": 14.94,
+      "offset": 15.68,
       "duration": 3.16,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",

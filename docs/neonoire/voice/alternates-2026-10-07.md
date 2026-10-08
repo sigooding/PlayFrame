@@ -44,4 +44,6 @@ Unpicked previews stay valid for a long time (the 29 September ones were still t
 
 ## Still hushed (older takes, not part of this pass)
 
+**Update, 8 October 2026: the twelve Jack and Vera takes below were re-recorded at speaking volume (see the voice README); only Mara's four `[weakly]` lines remain, on purpose.**
+
 These takes from earlier passes carry `[quietly]`, `[softly]` or `[weakly]` and measure −29 to −35 dB, the same hush the pass above removed from the 160 new lines. They were left alone; re-recording them is about 700 credits: `s44-jack-i-ll-get-him`, `s10-jack-softly-your-father`, `s53-jack-i-won-t`, `s44-jack-stay-whatever-you-hear`, `s17-jack-quietly-he-always-paid-too-much`, `s60-jack-and-then-i-tell-her-everything`, `s12-jack-quietly-why-come-back`, `s17-jack-quietly-i-m-looking-for-his`, `s10-jack-quietly-i-m-sorry`, `s10-vera-quietly-he-died-pause-that-year`, `s14-vera-quietly-that-was-for-america-she`, `s14-vera-quietly-i-told-her-to-go`, and Mara's four `[weakly]` lines in scene 71 (`s71-mara-weakly-jack`, `…-everyone-s-awake`, `…-tell-her-i-m-sorry`, `…-tell-her`; those may be meant to be weak).

@@ -26,6 +26,7 @@ import { fileURLToPath } from "node:url";
 
 import { orderAnimaticFrames, animaticSceneTag, cameraMove } from "../animatic/timeline.mjs";
 import { readManifest } from "./voice.mjs";
+import { FX } from "./voice-fx.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const argv = process.argv.slice(2);
@@ -68,18 +69,15 @@ let segmentsTotal = 0;
 let voiced = 0;
 const sceneSpan = {}; // scene tag -> [start, end] seconds in the cut, for music cues
 // Filters for lines that are heard through something: the clean take stays clean on disk, the animatic colours it.
-// Set with `voice-ingest --fx`; the real treatment is done in the editor, this is a fair sketch of it.
-const FX = {
-  phone: "highpass=f=400,lowpass=f=3000,acompressor=threshold=0.04:ratio=6,volume=1.6",
-  tv: "highpass=f=300,lowpass=f=5000,aecho=0.8:0.6:35:0.25,volume=1.2",
-  tape: "highpass=f=350,lowpass=f=4200,vibrato=f=5:d=0.03,volume=1.4",
-};
+// Set with `voice-ingest --fx`; the chains live in voice-fx.mjs, which the games' importers use to bake the same treatment.
 const fxByFile = new Map(readManifest(root).lines.filter(l => l.fx).map(l => [l.file, l.fx]));
+// A line spoken in another language whose `text` is the foreign words carries its English subtitle in `sub` ("Shitsurei shimasu." -> "Excuse me.").
+const subByFile = new Map(readManifest(root).lines.filter(l => l.sub).map(l => [l.file, l.sub]));
 const tight = args.hold === undefined;
 const subs = args["no-subs"] === undefined;
 const speakers = args.speakers !== undefined;
 const srtTime = t => { const ms = Math.round(t * 1000); const p = (n, w = 2) => String(n).padStart(w, "0"); return `${p(Math.floor(ms / 3600000))}:${p(Math.floor(ms / 60000) % 60)}:${p(Math.floor(ms / 1000) % 60)},${p(ms % 1000, 3)}`; };
-const cueText = c => (speakers ? `${c.character}: ` : "") + (c.text || "");
+const cueText = c => (speakers ? `${c.character}: ` : "") + (subByFile.get(c.src) || c.text || "");
 const cues = [];
 const silentMax = Number(args["silent-max"] || 4);
 const LEAD = Number(args.lead || 0.7), TAIL = Number(args.tail || 0.9);

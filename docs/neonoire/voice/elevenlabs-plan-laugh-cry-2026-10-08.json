@@ -1,0 +1,293 @@
+{
+  "note": "Laugh and cry/upset readings (8 October 2026, later). The screenplay says a line is laughed, cried or choked out and the earlier take was flat or tagged too lightly: scene 6 'You would have told me if she was dead', 36 'Did you find anything?' (she almost laughs), 58 'My sister would love this place' (she laughs once, wiping her eyes), 60 Mara's two lines (face swollen from crying), 69 'Oh. Oh, I see.' (Mara's first real smile), 71 Jack's three lines holding the dying Mara, 74 'Don't.' (crying almost silently), 84 'That's me.', 98 'Liar. It was mine.' (Vera laughs, broken) and 'You could have told me that in the rain.' (the last take still on the old pilot model). Re-recorded under their old ids; the old takes are archived. Three samples were generated in two styles, single-word tags and the longer descriptive directions the v4 best-practice guide uses; the game takes the descriptive one unless it ran more than 1.4x the single-tag length (then the single-tag one), the sample whose level is closest to the takes around it. Every other sample is kept as an alternate in public/audio/neonoire/alternates/2026-10-08/.",
+  "model": "eleven_v4",
+  "flow": "D252fi9yoELaY35Dn0PJ",
+  "generated": "2026-10-08",
+  "lines": [
+    {
+      "key": "B01",
+      "scene": "36",
+      "frame": "neonoire-shot-210",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[A small breath of a laugh, warm and teasing, then sincere] Did you find anything?",
+      "gap": 0.65,
+      "replace": "s36-vera-did-you-find-anything",
+      "id": "s36-vera-did-you-find-anything",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "fPqB5YmukikDJkxYserj",
+        "id": "IxIwXQk7UyN4fQ2CUzvB"
+      }
+    },
+    {
+      "key": "B02",
+      "scene": "58",
+      "frame": "neonoire-shot-227",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[A single laugh through tears, wiping her eyes, then warm and wistful] My sister would love this place. She's never seen it. She only knows it from my stories. When I find her, I'll bring her here.",
+      "gap": 0.65,
+      "replace": "s58-vera-my-sister-would-love-this-place",
+      "id": "s58-vera-my-sister-would-love-this-place",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "rKoMRHYZOoEJqBxNUOrT",
+        "id": "bjwJGGRSc3jnAxcMVj8O"
+      }
+    },
+    {
+      "key": "B03",
+      "scene": "69",
+      "frame": "neonoire-shot-279",
+      "who": "MARA",
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "prompt": "[laughs] Oh. Oh, I see.",
+      "gap": 0.65,
+      "replace": "s69-mara-oh-oh-i-see",
+      "id": "s69-mara-oh-oh-i-see",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "zfdESSbSFw3hA26OSuiY",
+        "id": "O7fqJWB5iYsYyrJnB2W6"
+      }
+    },
+    {
+      "key": "V01",
+      "scene": "98",
+      "frame": "neonoire-shot-156",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[A short broken laugh, then her voice cracking with hurt] Liar. It was mine.",
+      "gap": 0.65,
+      "replace": "s98-n113-vera",
+      "id": "s98-n113-vera",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "JcVqVaSbr8Gc5Xdz116L",
+        "id": "qpzZSQj6ETPiPDMAYyH4"
+      }
+    },
+    {
+      "key": "B04",
+      "scene": "98",
+      "frame": "neonoire-shot-157",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[Thick with tears, steadying her voice, hurt but not angry] You could have told me that in the rain.",
+      "gap": 0.65,
+      "replace": "s98-vera-rain",
+      "id": "s98-vera-rain",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "ZDpOCYeQq9ovMN6IplDe",
+        "id": "7vpYYRItdTyycjXp5nTt"
+      }
+    },
+    {
+      "key": "B05",
+      "scene": "71",
+      "frame": "neonoire-shot-240",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[Trembling, forcing a steady voice, restrained panic] Yes. Everyone's awake. Help's coming.",
+      "gap": 0.65,
+      "replace": "s71-jack-yes-everyone-s-awake-help-s",
+      "id": "s71-jack-yes-everyone-s-awake-help-s",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "9s5TK2oWzWasHzZ26tya",
+        "id": "fcp8zzQC5YtQEGzRYJWe"
+      }
+    },
+    {
+      "key": "B06",
+      "scene": "71",
+      "frame": "neonoire-shot-240",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[voice breaking] I'm here.",
+      "gap": 0.65,
+      "replace": "s71-jack-i-m-here",
+      "id": "s71-jack-i-m-here",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "m3wn4F29Iu76ehzRSi3I",
+        "id": "tNd2OHwM9hGCAUcTPJKm"
+      }
+    },
+    {
+      "key": "B07",
+      "scene": "71",
+      "frame": "neonoire-shot-240",
+      "who": "JACK",
+      "voice": "MZhx7pKflsc0sAwciDEy",
+      "prompt": "[Pleading, voice breaking, cut off mid-sentence by grief] You'll tell her. Tonight. I'll bring her here, you can —",
+      "gap": 0.65,
+      "replace": "s71-jack-you-ll-tell-her-tonight-i",
+      "id": "s71-jack-you-ll-tell-her-tonight-i",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "I4jcg45JngOk2bnpN3Co",
+        "id": "dGOD4tAQp7iwZVLYiZu4"
+      }
+    },
+    {
+      "key": "B08",
+      "scene": "60",
+      "frame": "neonoire-shot-229",
+      "who": "MARA",
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "prompt": "[Barely holding back tears, small and bewildered, a wistful tremble] Did I? She said she'd bring me here. When she finds me. She was so happy.",
+      "gap": 0.65,
+      "replace": "s60-mara-did-i-she-said-she-d",
+      "id": "s60-mara-did-i-she-said-she-d",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "i7hbLU2kKeBVX2i3xOod",
+        "id": "OnuEbRg8KmEXDDxhfl6H"
+      }
+    },
+    {
+      "key": "B09",
+      "scene": "60",
+      "frame": "neonoire-shot-229",
+      "who": "MARA",
+      "voice": "2NE3noNVoL0UyxXHLs7w",
+      "prompt": "[Exhausted and tearful, a fragile determination rising] Find what it opens. And then this ends. I don't want to hide any more. I want my sister.",
+      "gap": 0.65,
+      "replace": "s60-mara-find-what-it-opens-and-then",
+      "id": "s60-mara-find-what-it-opens-and-then",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "yP2onUVHw3cTSYVMIoT8",
+        "id": "7UHPhIKJE7Pn3xPJmMbu"
+      }
+    },
+    {
+      "key": "B10",
+      "scene": "74",
+      "frame": "neonoire-shot-74",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[Crying, almost silent, voice shaking] Don't.",
+      "gap": 0.65,
+      "replace": "s74-vera-dont",
+      "id": "s74-vera-dont",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "UrQwJgRf5SB0IFjNGMDk",
+        "id": "DgXeOrPYhKl5Nw9oDeP2"
+      }
+    },
+    {
+      "key": "B11",
+      "scene": "84",
+      "frame": "neonoire-shot-118",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[tearfully] That's me.",
+      "gap": 0.65,
+      "replace": "s84-n070-vera",
+      "id": "s84-n070-vera",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "JRZWqzP6J34L9y0teAjo",
+        "id": "uxXUDAuUKarH5SEVwZ7X"
+      }
+    },
+    {
+      "key": "B12",
+      "scene": "6",
+      "frame": "neonoire-shot-62",
+      "who": "VERA",
+      "voice": "4Rn2L1CRjYh93G56jNXI",
+      "prompt": "[Controlled until the last word, then her voice cracks, pleading] You would have told me if she was dead. Wouldn't you?",
+      "gap": 0.65,
+      "replace": "s6-vera-you-would-have-told-me-if",
+      "id": "s6-vera-you-would-have-told-me-if",
+      "generation": {
+        "flow": "D252fi9yoELaY35Dn0PJ",
+        "session": "fbDsBBXz7EoqaUitjepL",
+        "id": "IJrFHLi4Cc74d813WUhY"
+      }
+    }
+  ],
+  "frameOrder": {
+    "neonoire-shot-210": [
+      "s36-vera-mara",
+      "s36-jack-it-s-me",
+      "s36-vera-where-are-you-you-sound-like",
+      "s36-jack-the-countryside-there-s-no-signal",
+      "s36-vera-did-you-find-anything",
+      "s36-jack-maybe-i-ll-know-tomorrow",
+      "s36-vera-come-back-safe",
+      "s36-jack-it-s-just-an-inn-there",
+      "s36-vera-come-back-safe-anyway"
+    ],
+    "neonoire-shot-227": [
+      "s58-vera-my-sister-would-love-this-place",
+      "s58-kaneko-yes-bring-her"
+    ],
+    "neonoire-shot-279": [
+      "s69-mara-oh-oh-i-see",
+      "s69-jack-it-s-not",
+      "s69-mara-it-is-it-s-fine-it"
+    ],
+    "neonoire-shot-156": [
+      "s98-n111-jack",
+      "s98-n112-jack",
+      "s98-n113-vera",
+      "s98-jack-sorry",
+      "s98-n115-jack"
+    ],
+    "neonoire-shot-157": [
+      "s98-vera-rain",
+      "s98-n116-jack",
+      "s98-n117-vera",
+      "s98-n118-vera",
+      "s98-n119-jack",
+      "s98-n120-vera",
+      "s98-n121-jack",
+      "s98-n122-vera",
+      "s98-n123-vera"
+    ],
+    "neonoire-shot-240": [
+      "s71-jack-desperately-stay-with-me-mara-stay",
+      "s71-mara-weakly-everyone-s-awake",
+      "s71-jack-yes-everyone-s-awake-help-s",
+      "s71-mara-weakly-jack",
+      "s71-jack-i-m-here",
+      "s71-mara-weakly-tell-her-i-m-sorry",
+      "s71-jack-you-ll-tell-her-tonight-i",
+      "s71-mara-weakly-tell-her"
+    ],
+    "neonoire-shot-229": [
+      "s60-mara-she-was-right-there-she-was",
+      "s60-jack-you-did-the-right-thing",
+      "s60-mara-did-i-she-said-she-d",
+      "s60-jack-if-she-found-this-place-other",
+      "s60-mara-i-know",
+      "s60-mara-find-what-it-opens-and-then",
+      "s60-jack-tomorrow-night-i-m-moving-you",
+      "s60-mara-and-then",
+      "s60-jack-and-then-i-tell-her-everything"
+    ],
+    "neonoire-shot-74": [
+      "s74-vera-dont",
+      "s74-vera-you-knew"
+    ],
+    "neonoire-shot-118": [
+      "s84-n070-vera",
+      "s84-n071-jack",
+      "s84-n072-vera",
+      "s84-n073-jack",
+      "s84-n074-vera"
+    ],
+    "neonoire-shot-62": [
+      "s6-ishida-go-home-miss-voss-keep-your",
+      "s6-vera-you-would-have-told-me-if",
+      "s6-ishida-of-course"
+    ]
+  }
+}
