@@ -11,6 +11,8 @@
 // ("Hold. Four seconds."). A frame is lengthened, never shortened, so the last word has TAIL seconds of air before the cut: the board's
 // durations are working estimates and the recorded lines are the first thing that is not.
 
+import { BOARDS, readBoard } from "./board-script.mjs";
+
 /** Air left after the last spoken word before the frame cuts (the NEONOIRE convention). */
 export const TAIL = 0.6;
 /** A beat before a frame's first word, unless the draft writes a hold before the line. */
@@ -40,6 +42,42 @@ export function dialogueFor(page, bodies, manifest) {
   }));
   if (next !== lines.length) throw new Error(`${page}: the board holds ${next} lines of dialogue but ${lines.length} are recorded`);
   return claimed.map(shot => {
+    if (!shot.length) return { audio: [], needed: 0 };
+    const first = shot[0];
+    const lead = first.gapKind === "written" ? first.gap : LEAD;
+    const audio = shot.map(line => ({
+      id: line.id, character: line.speaker, text: line.text, src: line.file,
+      offset: Math.round((lead + line.offset - first.offset) * 100) / 100, duration: line.duration, voice: line.voiceId, model: line.model,
+    }));
+    const last = audio[audio.length - 1];
+    return { audio, needed: Math.ceil(last.offset + last.duration + TAIL) };
+  });
+}
+
+/**
+ * Episodes two to five: the same job for the shot boards that have no screenplay draft (docs/rapture/scenes/*.md), where the board itself is the
+ * authority and each manifest line (docs/rapture/voice/manifest-scenes.json) knows the shot it is written in.
+ *
+ * @param boardId   the board's page id in the manifest ("ep4-kitchen")
+ * @param shots     the heading label of each of the board's shots, in order ("1", "2", ... "22a")
+ * @param manifest  docs/rapture/voice/manifest-scenes.json
+ * @returns one { audio, needed } per shot, as dialogueFor does
+ */
+export function dialogueByShot(boardId, shots, manifest) {
+  const board = BOARDS.find(b => b.id === boardId);
+  if (!board) throw new Error(`${boardId} is not a board`);
+  const lines = manifest.lines.filter(line => line.page === boardId);
+  // The board may have been reworded since the takes were recorded: the same lines in the same order with the same words, or stop.
+  const current = readBoard(board);
+  if (current.length !== lines.length) throw new Error(`${boardId}: the board now has ${current.length} spoken lines but ${lines.length} are recorded`);
+  current.forEach((row, i) => {
+    const line = lines[i];
+    if (row.id !== line.id || row.shot !== line.shot || words(row.text) !== words(line.text)) throw new Error(`${boardId}: line ${i + 1} of the board is ${row.speaker}: ${JSON.stringify(row.text)} (shot ${row.shot}) but the recorded line is ${line.speaker}: ${JSON.stringify(line.text)} (shot ${line.shot}); re-record it or fix the board`);
+  });
+  const known = new Set(shots);
+  for (const line of lines) if (!known.has(line.shot)) throw new Error(`${boardId}: recorded line ${line.id} belongs to shot ${line.shot}, which the frames do not have`);
+  return shots.map(label => {
+    const shot = lines.filter(line => line.shot === label);
     if (!shot.length) return { audio: [], needed: 0 };
     const first = shot[0];
     const lead = first.gapKind === "written" ? first.gap : LEAD;
