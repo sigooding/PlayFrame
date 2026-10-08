@@ -20,10 +20,10 @@ execFileSync(process.execPath, ["scripts/rapture/build-project.mjs", "--check"],
 
 const exportsFile = join(cache, "project.mjs");
 await build({
-  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations"; export * from "./src/lib/structure";', resolveDir: root },
+  stdin: { contents: 'export * from "./src/lib/validation"; export * from "./src/lib/prompt"; export * from "./src/lib/export"; export * from "./src/lib/seed"; export * from "./src/lib/relations"; export * from "./src/lib/structure"; export { bundledAudioUpdates } from "./src/lib/bundle-refresh";', resolveDir: root },
   outfile: exportsFile, bundle: true, platform: "node", format: "esm", tsconfig: join(root, "tsconfig.json"), logLevel: "warning",
 });
-const { validatePatch, sanitizeImport, isUuid, sceneHeadings, normaliseSlugline, episodeNumberOf, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
+const { validatePatch, sanitizeImport, isUuid, sceneHeadings, normaliseSlugline, episodeNumberOf, PLATFORMS, buildFramePrompt, buildScenePrompt, describeLocation, shotListCsv, starterProjects, converseRelation, scenesInScript, bundledAudioUpdates, MAX_ACTS, MAX_SCENES, MAX_FRAMES, MAX_NOTES } = await import(pathToFileURL(exportsFile));
 
 // The bundled workspace has to fit inside the app's own ceilings: validatePatch rejects anything
 // above them and sanitizeImport truncates to them, so a series that outgrows a cap cannot be
@@ -504,8 +504,8 @@ const dannyJodie = project.frames.filter(f => f.sceneId === "rapture-ep1-danny-j
 const copsSecond = project.frames.filter(f => f.sceneId === "rapture-ep1-cops-second");
 assert.equal(dannyJodie.length, 21, "Danny and Jodie first appearance is 21 shots");
 assert.equal(copsSecond.length, 6, "Cops second beat is 6 shots");
-assert.equal(dannyJodie.reduce((n, f) => n + f.duration, 0), 148, "Danny and Jodie total 148s");
-assert.equal(copsSecond.reduce((n, f) => n + f.duration, 0), 90, "Cops second beat total 90s");
+assert.equal(dannyJodie.reduce((n, f) => n + f.duration, 0), 158, "Danny and Jodie total 158s: the board's 148s of estimates, 10s of them added to hold the recorded dialogue");
+assert.equal(copsSecond.reduce((n, f) => n + f.duration, 0), 92, "Cops second beat total 92s: the board's 90s, 2s of it added to hold the recorded dialogue");
 assert(dannyJodie.every(f => f.movement === "Handheld"), "Danny and Jodie all handheld");
 assert(copsSecond.every(f => f.movement === "Static"), "Cops second beat all static");
 assert(project.scenes.find(s => s.id === "rapture-ep1-danny-jodie").actId === "rapture-episode-1", "Danny and Jodie in episode one");
@@ -515,9 +515,71 @@ assert(project.scenes.findIndex(s => s.id === "rapture-ep1-danny-jodie") < proje
 assert(project.scenes.findIndex(s => s.id === "rapture-ep1-cops-second") < project.scenes.findIndex(s => s.id === "rapture-ep1-no"), "Cops second beat precedes 1980 tag");
 pass("Episode One revised running order: Danny and Jodie (21) and cops second beat (6) boarded, Martin marked pre-rapture flashback");
 
+// ---------------------------------------------------------------- recorded dialogue
+// Episode one's draft is voiced (docs/rapture/voice/manifest.json: 166 lines). The two boards that carry the draft verbatim, Danny and Jodie
+// (page ep1-07) and the cops' second beat (ep1-08), hold its 53 lines on twelve of their 27 frames; no other frame has dialogue.
+{
+  const voice = JSON.parse(read("docs/rapture/voice/manifest.json"));
+  const { TAIL } = await import(pathToFileURL(join(root, "scripts/rapture/voice-frames.mjs")));
+  const { sameWords } = await import(pathToFileURL(join(root, "scripts/rapture/voice-screen.mjs")));
+  const { dannyJodiePlan, copsSecondBeatPlan } = await import(pathToFileURL(join(root, "scripts/rapture/plan.mjs")));
+  const estimate = id => (id.startsWith("rapture-ep1dj-") ? dannyJodiePlan : copsSecondBeatPlan)[Number(id.slice(-2)) - 1].duration;
+  assert.equal(voice.recorded, 166);
+  assert.equal(voice.planned, 166);
+  const wanted = voice.lines.filter(l => l.page === "ep1-07" || l.page === "ep1-08");
+  assert.equal(wanted.length, 53, "33 lines of Danny and Jodie and 20 of the cops' second beat");
+  const voiced = project.frames.filter(f => f.audio?.length);
+  assert.deepEqual(voiced.map(f => f.id), ["rapture-ep1dj-02", "rapture-ep1dj-05", "rapture-ep1dj-06", "rapture-ep1dj-09", "rapture-ep1dj-10", "rapture-ep1dj-12", "rapture-ep1dj-16", "rapture-ep1dj-19", "rapture-ep1dj-20", "rapture-ep1c2-01", "rapture-ep1c2-03", "rapture-ep1c2-05"], "the twelve frames that speak, in scene order");
+  assert(project.frames.filter(f => !voiced.includes(f)).every(f => f.audio === undefined), "every other frame stays silent");
+  const attached = voiced.flatMap(frame => frame.audio.map(clip => ({ frame, clip })));
+  assert.deepEqual(attached.map(x => x.clip.id), wanted.map(l => l.id), "every recorded line of the two pages is on a frame, once, in the draft's order");
+  for (const { frame, clip } of attached) {
+    const line = voice.lines.find(l => l.id === clip.id);
+    assert.equal(clip.text, line.text, `${clip.id}: the frame carries the draft's words`);
+    assert.equal(clip.character, line.speaker);
+    assert.equal(clip.src, line.file);
+    assert.equal(clip.duration, line.duration);
+    assert.equal(clip.voice, line.voiceId);
+    assert.equal(clip.model, "eleven_v4");
+    assert(existsSync(join(root, "public" + clip.src)), `${clip.src} is on disk`);
+    assert(frame.sceneId === "rapture-ep1-danny-jodie" || frame.sceneId === "rapture-ep1-cops-second");
+  }
+  for (const frame of voiced) {
+    const clips = frame.audio;
+    assert(clips.every((c, i) => c.offset >= 0 && (i === 0 || c.offset >= clips[i - 1].offset + clips[i - 1].duration)), `${frame.id}: lines do not overlap and run in order`);
+    const last = clips[clips.length - 1];
+    assert(last.offset + last.duration + TAIL <= frame.duration + 1e-9, `${frame.id}: the last word has ${TAIL}s of air before the cut`);
+    assert(frame.duration >= estimate(frame.id), `${frame.id}: lengthened, never shortened`);
+  }
+  const byId = new Map(project.frames.map(f => [f.id, f]));
+  const c1 = byId.get("rapture-ep1c2-01").audio, c5 = byId.get("rapture-ep1c2-05").audio;
+  assert.equal(c1[0].offset, 4, "\"Hold. Four seconds.\" comes before Kath's first word");
+  assert.equal(c5[0].offset, 5, "\"Hold. Five seconds.\" comes before Ray's \"Kath.\"");
+  assert(Math.abs(c1[6].offset - (c1[5].offset + c1[5].duration) - 6) < 0.05, "\"(Pause. Six seconds.)\" separates \"They do.\" from \"I only tasered him.\"");
+  assert(!byId.get("rapture-ep1c2-03").notes.includes("lengthened") && byId.get("rapture-ep1c2-01").notes.includes("lengthened so the recorded dialogue fits"), "a frame's note says so when the dialogue lengthened it");
+  // The portable file carries the dialogue through the existing backup/import path.
+  assert.deepEqual(JSON.parse(JSON.stringify(imported.frames.filter(f => f.audio?.length).map(f => [f.id, f.audio]))), voiced.map(f => [f.id, f.audio]), "the dialogue survives sanitizeImport unchanged");
+  // Every take has been through the repeat screen (voice-screen.mjs); a flagged one needs a transcript that matches its line.
+  for (const line of voice.lines) {
+    assert(Number.isInteger(line.phrases) && Number.isInteger(line.expected), `${line.id}: run voice-screen.mjs --fill`);
+    assert(line.phrases <= line.expected || (line.heard && sameWords(line.text, line.heard)), `${line.id} has ${line.phrases} phrases for a line of ${line.expected} and no transcript that clears it`);
+    assert(existsSync(join(root, "public" + line.file)), `${line.file} is on disk`);
+  }
+  const rerecorded = voice.lines.filter(l => l.rerecorded);
+  assert.equal(rerecorded.length, 20, "twenty takes were re-recorded on 8 October");
+  for (const line of rerecorded) {
+    assert(line.rerecorded.archived.startsWith("/audio/rapture/archive/ep1/") && existsSync(join(root, "public" + line.rerecorded.archived)), `${line.id}: the replaced take is kept`);
+    assert(!readFileSync(join(root, "public" + line.rerecorded.archived)).equals(readFileSync(join(root, "public" + line.file))), `${line.id}: the archive holds the old take, not the new one`);
+  }
+  const alternates = JSON.parse(read("public/audio/rapture/alternates/2026-10-08/index.json"));
+  assert(alternates.takes.length > 0 && [...alternates.takes, ...alternates.repeats].every(t => existsSync(join(root, "public" + t.file))), "every alternate and repeat in the index is on disk");
+  pass(`${attached.length} recorded lines sit on ${voiced.length} frames (Danny and Jodie ${attached.filter(x => x.frame.sceneId === "rapture-ep1-danny-jodie").length}, the cops' second beat ${attached.filter(x => x.frame.sceneId === "rapture-ep1-cops-second").length}), in the draft's order with its written holds, lengthened never shortened; all 166 takes screened, ${rerecorded.length} re-recorded and archived`);
+}
+
+
 assert(project.frames.every(f => f.durationIsEstimate === true));
 assert.equal(ep4.reduce((n, f) => n + f.duration, 0), 175);
-assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 120 + 111 + 270 + 327 + 271 + 148 + 90 + 136 + 308 + 377 + 365 + 122 * 5);
+assert.equal(project.frames.reduce((n, f) => n + f.duration, 0), 175 + 172 + 125 + 151 + 305 + 159 + 120 + 111 + 270 + 327 + 271 + 158 + 92 + 136 + 308 + 377 + 365 + 122 * 5);
 for (const frame of project.frames) {
   assert(frame.duration > pauses(frame.notes).reduce((n, p) => n + p, 0));
 }
@@ -683,6 +745,17 @@ try {
       const opened = await api.openRaptureProject();
       assert.equal(opened.id, id);
       assert.equal(opened.frames.length, 526);
+      assert.equal(opened.frames.filter(f => f.audio && f.audio.length).length, 12, 'a fresh workspace has the recorded dialogue on the twelve frames that carry it');
+      // An older saved workspace (no dialogue yet) is given the takes on its next read, once, and nothing else of the writer changes.
+      const silent = opened.frames.map(({ audio, ...frame }) => (frame.id === 'rapture-ep1dj-06' ? { ...frame, duration: 40, notes: 'my notes' } : frame));
+      await api.updateProject(id, { frames: silent });
+      const refreshed = await api.getProject(id);
+      assert.equal(refreshed.frames.filter(f => f.audio && f.audio.length).length, 12, 'a saved workspace without dialogue receives it');
+      const own = refreshed.frames.find(f => f.id === 'rapture-ep1dj-06');
+      assert.equal(own.duration, 40, 'a frame the writer made longer is not shortened');
+      assert.equal(own.notes, 'my notes', 'the writer notes stay');
+      assert.equal(own.audio.length, 4);
+      assert.deepEqual((await api.getProject(id)).frames, refreshed.frames, 'a second read changes nothing');
       await api.updateProject(id, { title: 'My edited Rapture', script: 'My preserved words' });
       const shared = await api.shareProject(id, true);
       const again = await api.openRaptureProject();

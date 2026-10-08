@@ -212,3 +212,20 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
   if (scenes.length !== existing.scenes.length || scenes.some((scene, index) => scene !== existing.scenes[index])) patch.scenes = scenes;
   return Object.keys(patch).length ? patch : null;
 }
+
+/**
+ * 8 October 2026: recorded dialogue reaching a saved workspace (the Rapture series: episode one's two verbatim boards). A frame that has
+ * none yet takes the bundle's takes and is lengthened, never shortened, so they fit. A frame that already has dialogue, a frame the bundle
+ * has none for and everything else the writer changed are left alone, and a second read changes nothing.
+ */
+export function bundledAudioUpdates(existing: FilmProject, bundle: Pick<FilmProject, "frames">): ProjectPatch | null {
+  const bundled = new Map(bundle.frames.map(frame => [frame.id, frame]));
+  let changed = false;
+  const frames = existing.frames.map(frame => {
+    const arrived = bundled.get(frame.id);
+    if (!arrived?.audio?.length || frame.audio?.length) return frame;
+    changed = true;
+    return { ...frame, audio: arrived.audio, duration: Math.max(frame.duration, arrived.duration) };
+  });
+  return changed ? { frames } : null;
+}
