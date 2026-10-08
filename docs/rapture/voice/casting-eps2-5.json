@@ -1,7 +1,7 @@
 {
  "project": "Let the Raptures Commence",
  "date": "2026-10-08",
- "status": "PICKED, NOT SAVED: the ElevenLabs workspace is at its custom-voice limit (30 of 30), so creative_save_designed_voice refuses all 16. Nothing below can be recorded until 16 slots are free (or fewer, if characters are made to share a voice).",
+ "status": "AUDITIONS ONLY, NEVER SAVED: the ElevenLabs workspace is at its custom-voice limit (30 of 30), so creative_save_designed_voice refused all 16. Episodes 2-5 were recorded on 8 October 2026 in ready-made ElevenLabs voices instead (docs/rapture/voice/voices.json, `boardSpeakers`); these designs, their measures and picks stay as candidates if slots are freed.",
  "note": "Episodes 2-5 add 16 speaking characters that episode one's 13 voices do not cover. Each was designed from the show's cast text (eleven_ttv_v3, three previews per character), measured with scripts/rapture/voice-measure.py and picked BLIND on pitch, range, brightness and pace, with every voice in a scene kept apart from the others in it. Nobody has listened. Preview audio: public/audio/rapture/voices/eps2-5/<key>-<i>.mp3. The generated_voice_ids stay valid for saving only for a limited time; if they have gone, redesign from the descriptions in the first round of voices.json's style. Scout hut MAN is the hi-vis man and its WOMAN is Pauline; the lockup's MAN is Alan.",
  "speakers": {
   "ep2-lockup": {

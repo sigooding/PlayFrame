@@ -57,8 +57,35 @@ Take the line's `prompt` and `voiceId` from the plan (change the direction in `s
 
 **ElevenLabs does not keep generations for long** (signed links last two hours): download every take you generate, the unused ones too. Everything generated for episode one is in the repo: the 166 first takes, the 20 replacements, 44 alternates, 7 repeats, 45 voice previews.
 
+## Episodes two to five (8 October 2026, later)
+
+**All 502 spoken lines of the twelve shot boards in `docs/rapture/scenes/` are recorded**, one `eleven_v4` take each (about 25 MB), and sit on 139 frames: with episode one's 12, 151 frames of the workspace now speak (555 takes). The boards have no screenplay draft, so each board is its own authority and a line belongs to the shot it is written in. **Nobody has listened**: the voices were picked blind from measured previews, the directions are unheard.
+
+| Piece | Where |
+| --- | --- |
+| Reads each board's `SPEAKER: (direction) words` lines (502, 12 boards), with the pauses a board spells out | `scripts/rapture/board-script.mjs` (`--list`) |
+| Adds a v4 direction to every line and writes the plan (`--check` fails if it is stale, `--risky` lists lines whose direction is longer than the line) | `scripts/rapture/scenes-plan.mjs` → [`elevenlabs-plan-scenes.json`](elevenlabs-plan-scenes.json), [`elevenlabs-script-scenes.md`](elevenlabs-script-scenes.md) |
+| Every recorded line: text, prompt, voice, file, duration, level, shot, offset on the board's timeline, ElevenLabs generation, repeat screen | [`manifest-scenes.json`](manifest-scenes.json) |
+| Ingests the raw takes: final path, measure, screen, lay out | `FFMPEG=... node scripts/rapture/scenes-batch.mjs` |
+| The takes | `public/audio/rapture/scenes/<board>/NN-<speaker>-<words>.mp3` |
+| Every ElevenLabs generation of each raw take (session, id, prompt) | [`scenes-raw-meta.json`](scenes-raw-meta.json) |
+| Alternates (10) and S385's replaced first take | `public/audio/rapture/scenes/alternates/`, [`scenes-alt-meta.json`](scenes-alt-meta.json) |
+| Which voice speaks each character on each board | [`voices.json`](voices.json) (`boardSpeakers`) |
+| The 16 designs made first and never saved (auditions) | [`casting-eps2-5.json`](casting-eps2-5.json), `public/audio/rapture/voices/eps2-5/` (47 previews) |
+| Lays the dialogue over the frames | `dialogueByShot()` in `scripts/rapture/voice-frames.mjs`, called for the 12 boards at the end of `build-project.mjs` |
+
+**Voices.** The workspace is at its 30 custom-voice limit and there is no delete tool, so the 16 designs made for these boards could not be saved. Twenty voices speak: six are episode one's saved designs (Nina, Martin, Danny, Jodie, Kath, Ray), and fourteen are ready-made ElevenLabs voices (library and premade; none needs a slot) picked blind from their previews and from the measures of the designs. Alan, Graham, Neil and the lockup's MAN share one voice (`blank`; they never share a scene, so the show's people who do what they are told sound alike on purpose), and the scout hut's MAN is the hi-vis man. `voices.json` has the reason for each. The designs stay as auditions.
+
+**Directions.** The same v4 rules as episode one. The board's own parentheticals set the direction where they say something a voice can do (`(furious, controlled)` → `[Furious, controlled]`; `PAREN` in `scenes-plan.mjs` maps or drops each one); otherwise the speaker's default. A line of three words or fewer, or a direction as long as the line, gets a one-word direction: a longer direction on a short line is what made episode one's takes say it twice. The hush words are refused as before.
+
+**The repeat screen.** Every take was screened (`voice-screen.mjs`, no transcript). Eight flags in all: S049, S219 and S220 were re-recorded early with a different direction. Of the five that came with the last batches, **S385 ("Shh.", 2.08 s) was replaced** by a 1.28 s take (the first is `scenes/alternates/S385--v1.mp3`), and four short lines (S255, S337, S412, S444) were left, because two fresh takes of the same direction ran the same length and passed the screen: the flag is a breath read as a second phrase (`cleared` in the manifest, alternates kept). About 80 of the 502 were screened only, not transcribed.
+
+**On the frames.** Each line is laid on the frame of its shot with the spacing its board's own timeline gives it, the first word a beat (0.6 s) after the cut or after the hold the board writes; a frame is lengthened, never shortened, so the last word has 0.6 s of air. Eight boards grew: the angels' cold open 125 → 132 s, Graham's interview 172 → 184, Pat's cold open 151 → 162, Pat's house 305 → 308, the scout hut 159 → 161, the kitchen 365 → 367, the therapy class 270 → 297, the night at Pat's 327 → 379; the lockup, Number Fourteen, the estate and the doorstep needed nothing. The whole project is 4,348 s (was 4,232). `build-project.mjs` stops if a board is reworded or a take re-recorded without the manifest following (`dialogueByShot` compares the board with the manifest line by line), and `verify:rapture` checks all of it. Saved workspaces take the new dialogue on their next read through `bundledAudioUpdates` (a frame with none gets the bundle's takes and is lengthened, never shortened).
+
+**Not done.** Sighs, laughs, off-screen noises and "(pause)" breaths the boards imply are not recorded. Levels are as made (voices differ by several dB; the listening page turns each voice down to the quietest's level). The ready-made voices are not Raptures-specific and could be replaced by saved designs once slots are free: the 16 designs are the first candidates, and `voice-rerecord.mjs` is the way to swap a voice line by line. Episode one's scenes written after their boards still need re-boarding (see below).
+
 ## Not done
 
 - **Only two of episode one's scenes have their takes on frames**, because only their boards carry the draft verbatim: Danny and Jodie (`ep1-danny-jodie.md`, "beat for beat, with trims only") and the cops' second beat (`ep1-cops-second-beat.md`). Their 53 lines sit on 12 of the two scenes' 27 frames (the other 15 are inserts, wides and silent beats); the mugging, St Jude's, the first cops scene and the washing-up were written after their boards and have not been re-boarded, and a take on the wrong frame would mislead. How the lines are laid out is described above under "On the frames".
-- Nobody has listened: the blind picks, the directions, the 4-second and 8-second silences and the levels are all unheard. Episodes two to five have dialogue only in their scene boards (about 450 lines: Martin, Pat, Graham, Tamsin, Reek, Alan, the therapy class...), not in a screenplay, and no voices yet.
+- Nobody has listened: the blind picks, the directions, the 4-second and 8-second silences and the levels are all unheard. Episodes two to five's boards are voiced (see above).
 - Sighs, laughs and other non-verbal sounds the draft does not write out are not recorded.

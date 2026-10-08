@@ -214,7 +214,8 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
 }
 
 /**
- * 8 October 2026: recorded dialogue reaching a saved workspace (the Rapture series: episode one's two verbatim boards). A frame that has
+ * 8 October 2026: recorded dialogue reaching a saved workspace (the Rapture series: episode one's two verbatim boards, then the twelve boards
+ * of episodes two to five). A frame that has
  * none yet takes the bundle's takes and is lengthened, never shortened, so they fit. A frame that already has dialogue, a frame the bundle
  * has none for and everything else the writer changed are left alone, and a second read changes nothing.
  */
