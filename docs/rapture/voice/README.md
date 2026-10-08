@@ -84,8 +84,21 @@ Take the line's `prompt` and `voiceId` from the plan (change the direction in `s
 
 **Not done.** Sighs, laughs, off-screen noises and "(pause)" breaths the boards imply are not recorded. Levels are as made (voices differ by several dB; the listening page turns each voice down to the quietest's level). The ready-made voices are not Raptures-specific and could be replaced by saved designs once slots are free: the 16 designs are the first candidates, and `voice-rerecord.mjs` is the way to swap a voice line by line. Episode one's scenes written after their boards still need re-boarding (see below).
 
+## Re-boarded: the mugging, St Jude's, the washing-up and the first cops scene (8 October 2026, night)
+
+Those four scenes were written after their boards (the boards said so: "reference only, not re-boarded"), so their takes could not go on frames. Each now has a board written from the draft page beat for beat, with the draft's words verbatim and each line on the shot it is written in. The old boards are in `docs/rapture/scenes/archive/` (`ep1-mugging-alley-v1.md`, `ep1-st-judes-two-hander-v1.md`, `ep1-washing-up-fix4-v1.md`; the first cops scene never had a board file, its legacy keyframes `a2s1-01..19` are now laid on the shots they show).
+
+| Scene | Board | Shots | Lines on frames | Pictures |
+| --- | --- | --- | --- | --- |
+| The mugging (`ep1-01`) | `docs/rapture/scenes/ep1-mugging.md` | 15 | 3 on 3 frames | 10 reused from the alley board (same street, cashpoint, woman, knife); shots 9-13 (he isn't there, the knife rings, the tissue...) are placeholder cards |
+| St Jude's (`ep1-02`) | `ep1-st-judes.md` | 22 | 39 on 11 frames | none fits (the old board was a two-hander in another house): all 22 are placeholder cards |
+| The first cops scene (`ep1-03`) | `ep1-cops-first-beat.md` | 19 | 66 on 10 frames | all 19 legacy car-park keyframes |
+| The washing-up (`ep1-04`) | `ep1-washing-up.md` | 23 | 4 on 4 frames | 7 reused (kitchen, hall, her room, the pendant, the corridor, the road); the rest are placeholder cards |
+
+So **165 of episode one's 166 lines are on frames**; the one left is Martin's line in the storage unit (`ep1-06`), a scene whose board has not been rewritten. Placeholder cards are the established "keyframe missing" cards (`Needs review`, the file name to add in the note, the slot held): add the picture at the named path and rebuild. Frames are lengthened, never shortened (the first cops scene grew most: 231 → 262 s, because its dialogue runs longer than its old estimate). `verify:rapture` asserts all of it, including the draft's written holds (four seconds before Kath's first word, eight before "It's what we signed up for"). The pictures themselves are the open work: nothing was drawn.
+
 ## Not done
 
-- **Only two of episode one's scenes have their takes on frames**, because only their boards carry the draft verbatim: Danny and Jodie (`ep1-danny-jodie.md`, "beat for beat, with trims only") and the cops' second beat (`ep1-cops-second-beat.md`). Their 53 lines sit on 12 of the two scenes' 27 frames (the other 15 are inserts, wides and silent beats); the mugging, St Jude's, the first cops scene and the washing-up were written after their boards and have not been re-boarded, and a take on the wrong frame would mislead. How the lines are laid out is described above under "On the frames".
+- **Martin's one line in the storage unit (`ep1-06`) is not on a frame**: that scene's board has not been rewritten from the draft. The other seven scenes of episode one are boarded from it (see "Re-boarded" above); Danny and Jodie and the cops' second beat carry it verbatim already.
 - Nobody has listened: the blind picks, the directions, the 4-second and 8-second silences and the levels are all unheard. Episodes two to five's boards are voiced (see above).
 - Sighs, laughs and other non-verbal sounds the draft does not write out are not recorded.

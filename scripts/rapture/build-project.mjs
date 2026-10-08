@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dialogueFor, dialogueByShot, TAIL } from "./voice-frames.mjs";
-import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards, copsFirstBeatGrammar, storageGrammar, tagGrammar } from "./plan.mjs";
+import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, copsFirstBeatSceneId, copsFirstBeatPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards, copsFirstBeatGrammar, storageGrammar, tagGrammar } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const read = name => readFileSync(resolve(root, name), "utf8");
@@ -24,6 +24,7 @@ const lockupScreenplay = read("docs/rapture/scenes/ep2-first-wrong-lockup.md");
 const dannyJodieScreenplay = read("docs/rapture/scenes/ep1-danny-jodie.md");
 const copsSecondBeatScreenplay = read("docs/rapture/scenes/ep1-cops-second-beat.md");
 const muggingScreenplay = read("docs/rapture/scenes/ep1-mugging.md");
+const copsFirstBeatScreenplay = read("docs/rapture/scenes/ep1-cops-first-beat.md");
 const stJudesScreenplay = read("docs/rapture/scenes/ep1-st-judes.md");
 // The recorded dialogue of episode one (docs/rapture/voice/): laid over the frames of the two boards that carry the draft verbatim.
 const voiceManifest = JSON.parse(read("docs/rapture/voice/manifest.json"));
@@ -464,9 +465,12 @@ const therapyClass = therapyClassBlocks.map(([, n, rawBody], i) => {
 assert.equal(therapyClass.reduce((n, f) => n + f.duration, 0), 270, "Update timing when therapy class estimates change");
 
 // Washing up — Episode One Scene 3, 26 shots, FIX 4 pendant mother's always had it
+// Timing note shared by the two boards: the estimate, the lengthening the recorded dialogue asks for, and where the takes sit.
+const timingNote = (plan, duration, dialogue, locked) => `Timing: ${duration}s is a working total-shot estimate for animatic playback${duration > plan.duration ? ` (the board's ${plan.duration}s, lengthened so the recorded dialogue fits with ${TAIL}s of air after the last word)` : ""}. ${locked}${dialogue.audio.length ? `\n\nRecorded dialogue: ${dialogue.audio.length} take${dialogue.audio.length === 1 ? "" : "s"} (eleven_v4, docs/rapture/voice/) at ${dialogue.audio.map(a => `${a.offset}s`).join(", ")}: the draft's words, spaced as its own timeline spaces them.` : ""}`;
 const washingUpBlocks = [...washingUpScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(washingUpBlocks.length, 26, "Washing up source must have 26 numbered shots");
-assert.equal(washingUpPlan.length, 26, "Washing up plan must cover all 26 shots");
+assert.equal(washingUpBlocks.length, 23, "Washing up board must have 23 numbered shots");
+assert.equal(washingUpPlan.length, 23, "Washing up plan must cover all 23 shots");
+const washingUpDialogue = dialogueFor("ep1-04", washingUpBlocks.map(([, , body]) => body), voiceManifest);
 // Source lens 65mm is outside the app's library; 85mm is the closest option and the exact lens
 // stays in the card notes, exactly as the lockup scene already handles it.
 const washingUpLens = { "35mm": "35mm", "50mm": "50mm", "65mm": "85mm", "85mm": "85mm" };
@@ -474,6 +478,8 @@ const washingUp = washingUpBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Washing up shot order must be contiguous");
   assert(washingUpLens[washingUpPlan[i].lens], `No library lens mapped for washing up source lens: ${washingUpPlan[i].lens}`);
   const plan = washingUpPlan[i];
+  const dialogue = washingUpDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/ep1-washing-up/${plan.image}`;
@@ -485,14 +491,15 @@ const washingUp = washingUpBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: "Static", lens: washingUpLens[plan.lens],
     angle: "Eye level", lighting: "Natural daylight",
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Dry, procedural, daylight, locked off symmetrical; only vision handheld",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-washing-up, so this card holds slot ${n} of ${washingUpPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${(plan.lensSource || plan.lens) !== washingUpLens[plan.lens] ? `\n\nSource lens: ${plan.lensSource || plan.lens}; closest library lens ${washingUpLens[plan.lens]} shown.` : ""}${missing ? "" : "\n\nImage: AI-generated storyboard study; continuity and production approval pending."}\n\n${washingUpGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only pauses in script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-washing-up, so this card holds slot ${n} of ${washingUpPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${(plan.lensSource || plan.lens) !== washingUpLens[plan.lens] ? `\n\nSource lens: ${plan.lensSource || plan.lens}; closest library lens ${washingUpLens[plan.lens]} shown.` : ""}${missing ? "" : "\n\nImage: AI-generated storyboard study; continuity and production approval pending."}\n\n${washingUpGrammar}\n\n${timingNote(plan, duration, dialogue, "Only pauses in script are locked.")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
-assert.equal(washingUp.reduce((n, f) => n + f.duration, 0), washingUpPlan.reduce((n, p) => n + p.duration, 0), "Update timing when washing up estimates change");
+assert.equal(washingUp.reduce((n, f) => n + Math.min(f.duration, washingUpPlan[Number(f.id.slice(-2)) - 1].duration), 0), washingUpPlan.reduce((n, p) => n + p.duration, 0), "Update timing when washing up estimates change");
 
 // The night at Pat's — Episode Five, 51 shots, no CCTV, two grammars only
 const patsNightBlocks = [...patsNightScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
@@ -573,8 +580,6 @@ const dannyJodieBlocks = [...dannyJodieScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(
 assert.equal(dannyJodieBlocks.length, 21, "Danny and Jodie source must have 21 numbered shots");
 assert.equal(dannyJodiePlan.length, 21, "Danny and Jodie plan must cover all 21 shots");
 const dannyJodieLensMap = { "28mm": "24mm", "35mm": "35mm", "50mm": "50mm", "85mm": "85mm", "100mm": "85mm" };
-// Timing note shared by the two boards: the estimate, the lengthening the recorded dialogue asks for, and where the takes sit.
-const timingNote = (plan, duration, dialogue, locked) => `Timing: ${duration}s is a working total-shot estimate for animatic playback${duration > plan.duration ? ` (the board's ${plan.duration}s, lengthened so the recorded dialogue fits with ${TAIL}s of air after the last word)` : ""}. ${locked}${dialogue.audio.length ? `\n\nRecorded dialogue: ${dialogue.audio.length} take${dialogue.audio.length === 1 ? "" : "s"} (eleven_v4, docs/rapture/voice/) at ${dialogue.audio.map(a => `${a.offset}s`).join(", ")}: the draft's words, spaced as its own timeline spaces them.` : ""}`;
 const dannyJodieDialogue = dialogueFor("ep1-07", dannyJodieBlocks.map(([, , body]) => body), voiceManifest);
 const dannyJodieFrames = dannyJodieBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Danny and Jodie shot order must be contiguous");
@@ -634,11 +639,14 @@ const copsSecondBeatFrames = copsSecondBeatBlocks.map(([, n, rawBody], i) => {
 const copsSecondBeatTotal = copsSecondBeatFrames.reduce((n, f) => n + f.duration, 0);
 
 const muggingBlocks = [...muggingScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(muggingBlocks.length, 19, "Mugging screenplay source must have 19 numbered shots");
-assert.equal(muggingPlan.length, 19, "Mugging plan must cover all 19 shots");
+assert.equal(muggingBlocks.length, 15, "Mugging board must have 15 numbered shots");
+assert.equal(muggingPlan.length, 15, "Mugging plan must cover all 15 shots");
+const muggingDialogue = dialogueFor("ep1-01", muggingBlocks.map(([, , body]) => body), voiceManifest);
 const muggingFrames = muggingBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Mugging shot order must be contiguous");
   const plan = muggingPlan[i];
+  const dialogue = muggingDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/${plan.image}`;
@@ -650,21 +658,54 @@ const muggingFrames = muggingBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
     angle: "Eye level", lighting: plan.lighting,
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Flat, deadpan, the camera keeps operating; the violence is texture",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${muggingPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: legacy reference keyframe; review against the current grammar before production.\n\n"}${muggingGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${muggingPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study reused from the earlier alley board where the picture still fits; continuity and production approval pending.\n\n"}${muggingGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked.")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
+const copsFirstBlocks = [...copsFirstBeatScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
+assert.equal(copsFirstBlocks.length, 19, "Cops first beat board must have 19 numbered shots");
+assert.equal(copsFirstBeatPlan.length, 19, "Cops first beat plan must cover all 19 shots");
+const copsFirstDialogue = dialogueFor("ep1-03", copsFirstBlocks.map(([, , body]) => body), voiceManifest);
+const copsFirstFrames = copsFirstBlocks.map(([, n, rawBody], i) => {
+  assert.equal(Number(n), i + 1, "Cops first beat shot order must be contiguous");
+  const plan = copsFirstBeatPlan[i];
+  const dialogue = copsFirstDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
+  const body = rawBody.trimEnd();
+  const source = `${n}. ${body}`;
+  const file = `/images/rapture/${plan.image}`;
+  const missing = !existsSync(resolve(root, `public${file}`));
+  return {
+    id: `rapture-ep1c1-${String(n).padStart(2, "0")}`, sceneId: copsFirstBeatSceneId,
+    title: `${plan.title}${missing ? " (keyframe missing)" : ""}`,
+    description: body.split("\n")[0].trim(),
+    image: missing ? "" : file,
+    shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
+    angle: "Eye level", lighting: plan.lighting,
+    style: "cinematic", duration, durationIsEstimate: true,
+    status: missing ? "Needs review" : "Draft", transition: "Cut",
+    mood: "Dry, deadpan; the violence is a form",
+    characters: plan.characters.map(characterId),
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${copsFirstBeatPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: legacy car-park keyframe (a2s1) laid on the shot it fits; review against the current grammar before production.\n\n"}${copsSecondBeatGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked.")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+  };
+});
+const copsFirstTotal = copsFirstFrames.reduce((n, f) => n + f.duration, 0);
 const muggingTotal = muggingFrames.reduce((n, f) => n + f.duration, 0);
 
 const stJudesBlocks = [...stJudesScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
-assert.equal(stJudesBlocks.length, 19, "St Jude's screenplay source must have 19 numbered shots");
-assert.equal(stJudesPlan.length, 19, "St Jude's plan must cover all 19 shots");
+assert.equal(stJudesBlocks.length, 22, "St Jude's board must have 22 numbered shots");
+assert.equal(stJudesPlan.length, 22, "St Jude's plan must cover all 22 shots");
+const stJudesDialogue = dialogueFor("ep1-02", stJudesBlocks.map(([, , body]) => body), voiceManifest);
 const stJudesFrames = stJudesBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "St Jude's shot order must be contiguous");
   const plan = stJudesPlan[i];
+  const dialogue = stJudesDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/${plan.image}`;
@@ -676,11 +717,12 @@ const stJudesFrames = stJudesBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
     angle: "Eye level", lighting: plan.lighting,
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Dry, procedural, never amazed or afraid; the rapture is texture",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${stJudesPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: legacy reference keyframe; review against the current grammar before production.\n\n"}${stJudesGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture, so this card holds slot ${n} of ${stJudesPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${stJudesGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked.")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
 const stJudesTotal = stJudesFrames.reduce((n, f) => n + f.duration, 0);
@@ -711,13 +753,13 @@ const copsSecondBeatScene = {
 };
 const muggingScene = {
   id: muggingSceneId, title: "The mugging", location: "EXT. SIDE STREET", time: "EARLY MORNING",
-  description: "Cold open, written in the episode-one draft of 21 September 2026: still dark, sodium light, a cashpoint glowing to itself. She hands the bag over the way you'd hand over a bus pass and he isn't there mid-reach. The knife drops, rings, lies still; she looks up, is embarrassed to have done it, and bags the knife in a tissue. It starts its journey through her handbag and the support group. No mechanism revealed, no cast assigned. The nineteen-shot alley board is superseded by this page and has not been re-boarded.",
+  description: "Cold open, written in the episode-one draft of 21 September 2026: still dark, sodium light, a cashpoint glowing to itself. She hands the bag over the way you'd hand over a bus pass and he isn't there mid-reach. The knife drops, rings, lies still; she looks up, is embarrassed to have done it, and bags the knife in a tissue. It starts its journey through her handbag and the support group. No mechanism revealed, no cast assigned. Boarded in fifteen shots beat for beat from this page; the earlier nineteen-shot alley board is archived and eight of its studies are reused where the picture fits, the rest are placeholder cards.",
   characters: [], actId: "rapture-episode-1",
   kind: "Cold open", lighting: "Practical night", lightingNotes: muggingGrammar, style: "cinematic",
 };
 const stJudesScene = {
   id: stJudesSceneId, title: "St Jude's and the rapture", location: "INT./EXT. ST JUDE'S HOUSE", time: "MORNING",
-  description: "Written in the episode-one draft: pebbledash, a wheelie bin on its side, and a sign that means Terry personally. The charger, four weeks Thursday, fourteen on the phone and twenty-two in the ledger, the upstairs bins already done, forty minutes of water pressure timed, and Maureen's hypothetical. Then twenty residents at breakfast and the rapture mid-anecdote — no flash, no sound, no score, the radio carries on and the dog stays under the table. All that food. The nineteen-shot board predates this page and has not been re-boarded.",
+  description: "Written in the episode-one draft: pebbledash, a wheelie bin on its side, and a sign that means Terry personally. The charger, four weeks Thursday, fourteen on the phone and twenty-two in the ledger, the upstairs bins already done, forty minutes of water pressure timed, and Maureen's hypothetical. Then twenty residents at breakfast and the rapture mid-anecdote — no flash, no sound, no score, the radio carries on and the dog stays under the table. All that food. Boarded in twenty-two shots beat for beat from this page; the earlier two-hander board is archived and none of its studies fits, so every card is a placeholder until drawn.",
   characters: ["nina", "brian", "terry", "col", "deborah", "maureen"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: stJudesGrammar, style: "cinematic",
 };
@@ -727,7 +769,7 @@ const stJudesScene = {
 // board belonging to the older outline.
 const copsFirstBeatScene = {
   id: "rapture-ep1-cops", title: "The cops — birds, arrest ourselves, the taser", location: "INT. POLICE CAR (PARKED)", time: "DAY",
-  description: "WRITTEN, NOT BOARDED — no numbered shot board yet. Written in the episode-one draft: a patrol car across two bays in a car park full of abandoned cars. There's no birds; some of them'll have been in cages; we should arrest ourselves; it's what we signed up for; to teach moral justice — you did — sounds like me. Then the man in the blue coat, a quarter of a tonne of water, the taser fired at a man already stopping, the caution recited to nobody, and there's no court yet. The ordered legacy reference board (a1s4) belongs to the older outline, is not approved coverage, and stays needs review.",
+  description: "Written in the episode-one draft: a patrol car across two bays in a car park full of abandoned cars. There's no birds; some of them'll have been in cages; we should arrest ourselves; it's what we signed up for; to teach moral justice — you did — sounds like me. Then the man in the blue coat, a quarter of a tonne of water, the taser fired at a man already stopping, the caution recited to nobody, and there's no court yet. Boarded in nineteen shots beat for beat from this page (docs/rapture/scenes/ep1-cops-first-beat.md); the nineteen legacy car-park keyframes (a2s1) show this scene and are laid on the shots they fit, status Needs review.",
   characters: ["kath", "ray"].map(characterId), actId: "rapture-episode-1",
   kind: "Standard", lighting: "Natural daylight", lightingNotes: copsFirstBeatGrammar, style: "cinematic",
 };
@@ -861,10 +903,10 @@ const scenes = outlinePlan.map(([ep, key, title, location, time, cast, descripti
   const noIdx = scenes.findIndex(s => s.id === tagScene.id);
   if (noIdx !== -1) scenes[noIdx] = tagScene;
 }
-// The three written-but-unboarded episode-one scenes keep any legacy reference board they arrived
+// The two written-but-unboarded episode-one scenes keep any legacy reference board they arrived
 // with, so their titles must not claim to be outlines and their descriptions must not claim to be
 // unwritten: the page is the source, the board is reference material from the older outline.
-for (const id of ["rapture-ep1-cops", "rapture-ep1-storage", "rapture-ep1-no"]) {
+for (const id of ["rapture-ep1-storage", "rapture-ep1-no"]) {
   const scene = scenes.find(candidate => candidate.id === id);
   assert(scene && scene.description.startsWith("WRITTEN, NOT BOARDED"), `Episode one's written scene lost its status: ${id}`);
   assert(!scene.title.endsWith("— outline"), `A written scene must not be titled as an outline: ${scene.title}`);
@@ -962,12 +1004,12 @@ for (const board of legacyBoards) {
 assert(legacyFrames.every(frame => frame.status === "Needs review" && frame.durationIsEstimate === true), "Legacy boards stay estimates awaiting review");
 // Storyboard and shot list follow scene order, with each board in numeric order inside its scene.
 const framesByScene = new Map();
-for (const frame of [...washingUp, ...dannyJodieFrames, ...copsSecondBeatFrames, ...muggingFrames, ...stJudesFrames, ...patOpen, ...patHouse, ...scoutHut, ...therapyClass, ...patsNight, ...estate, ...doorstep, ...kitchen, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
+for (const frame of [...washingUp, ...dannyJodieFrames, ...copsSecondBeatFrames, ...muggingFrames, ...copsFirstFrames, ...stJudesFrames, ...patOpen, ...patHouse, ...scoutHut, ...therapyClass, ...patsNight, ...estate, ...doorstep, ...kitchen, ...coldOpen, ...ep3ColdOpen, ...numberFourteen, ...lockupFrames, ...legacyFrames]) {
   if (!framesByScene.has(frame.sceneId)) framesByScene.set(frame.sceneId, []);
   framesByScene.get(frame.sceneId).push(frame);
 }
 const frames = scenes.flatMap(s => framesByScene.get(s.id) || []);
-assert.equal(frames.length, washingUp.length + dannyJodieFrames.length + copsSecondBeatFrames.length + muggingFrames.length + stJudesFrames.length + patOpen.length + patHouse.length + scoutHut.length + therapyClass.length + patsNight.length + estate.length + doorstep.length + kitchen.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
+assert.equal(frames.length, washingUp.length + dannyJodieFrames.length + copsSecondBeatFrames.length + muggingFrames.length + copsFirstFrames.length + stJudesFrames.length + patOpen.length + patHouse.length + scoutHut.length + therapyClass.length + patsNight.length + estate.length + doorstep.length + kitchen.length + coldOpen.length + ep3ColdOpen.length + numberFourteen.length + lockupFrames.length + legacyFrames.length, "Every frame must belong to a listed scene");
 const missingKeyframes = legacyFrames.filter(frame => !frame.image).map(frame => frame.description.match(/(\S+\.jpg)/)[1]);
 
 const notes = sections.map(({ title, text }, i) => ({
