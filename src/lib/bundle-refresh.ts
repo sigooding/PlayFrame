@@ -240,3 +240,26 @@ export function bundledAudioUpdates(existing: FilmProject, bundle: Pick<FilmProj
   });
   return changed ? { frames } : null;
 }
+
+/**
+ * 8 October 2026 (night): pictures reaching a saved workspace. A saved frame that is still a "keyframe missing" card, whose bundled
+ * counterpart now has a picture (a study laid on the shot: the St Jude's, mugging and washing-up cards took existing studies), takes the
+ * picture, loses the suffix on its title and takes the bundle's status and notes, unless the writer has rewritten the card: its saved notes
+ * (the placeholder paragraph aside) must still begin the way the bundle's do. Everything else is left alone and a second read changes nothing.
+ */
+export function bundledPictureUpdates(existing: FilmProject, bundle: Pick<FilmProject, "frames">): ProjectPatch | null {
+  const bundled = new Map(bundle.frames.map(frame => [frame.id, frame]));
+  let changed = false;
+  const frames = existing.frames.map(frame => {
+    const arrived = bundled.get(frame.id);
+    if (!arrived?.image || !isAwaitingKeyframe(frame)) return frame;
+    changed = true;
+    const rest = frame.notes.replace(/^KEYFRAME MISSING[^\n]*\n\n/, "");
+    const unedited = rest.slice(0, 60) === arrived.notes.slice(0, 60);
+    return {
+      ...frame, image: arrived.image, title: frame.title.replace(/\s*\(keyframe missing\)$/, ""),
+      status: frame.status === "Needs review" ? arrived.status : frame.status, notes: unedited ? arrived.notes : frame.notes,
+    };
+  });
+  return changed ? { frames } : null;
+}

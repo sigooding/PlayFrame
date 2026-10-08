@@ -8,7 +8,7 @@ import { neonoireProject } from "./neonoire";
 import { hangarProject, hangarUpdates } from "./hangar";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
-import { bundledAudioUpdates, bundledFrameUpdates } from "./bundle-refresh";
+import { bundledAudioUpdates, bundledFrameUpdates, bundledPictureUpdates } from "./bundle-refresh";
 
 function serialize(row: typeof filmProjects.$inferSelect): FilmProject {
   return { ...row, moodboards: row.moodboards ?? [], createdAt: row.createdAt.toISOString(), updatedAt: row.updatedAt.toISOString() };
@@ -50,11 +50,18 @@ export async function openRaptureProject() {
   return project;
 }
 
+/** The series workspace takes the bundle's recorded dialogue and effects, then the pictures laid on its placeholder cards, once each. */
+function raptureUpdates(existing: FilmProject): ProjectPatch | null {
+  const audio = bundledAudioUpdates(existing, raptureProject);
+  const pictures = bundledPictureUpdates(audio ? { ...existing, ...audio } : existing, raptureProject);
+  return pictures ?? audio;
+}
+
 /** Delivered images, recorded dialogue and default-order migrations never replace a writer's screenplay or shot edits. */
 async function refreshNeonoireFrames(existing: FilmProject): Promise<FilmProject> {
   const patch = existing.id === hangarProject.id ? hangarUpdates(existing)
     : existing.id === neonoireProject.id ? bundledFrameUpdates(existing, neonoireProject)
-    : existing.id === raptureProject.id ? bundledAudioUpdates(existing, raptureProject) : null;
+    : existing.id === raptureProject.id ? raptureUpdates(existing) : null;
   if (!patch) return existing;
   const [row] = await db.update(filmProjects).set({ ...patch, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
   return row ? serialize(row) : existing;
