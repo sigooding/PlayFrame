@@ -9573,19 +9573,32 @@
       "id": "s86-n092-vera",
       "frameId": "neonoire-shot-124",
       "character": "VERA",
-      "text": "I know them.",
-      "prompt": "[evenly] I know them.",
+      "text": "They don't know me.",
+      "prompt": "[Uneasy] They don't know me.",
       "file": "/audio/neonoire/s86/124-vera-evenly-i-know-them.mp3",
       "offset": 8.3,
-      "duration": 1.15,
+      "duration": 1.65,
       "voice": "4Rn2L1CRjYh93G56jNXI",
       "model": "eleven_v4",
       "generation": {
-        "flow": "kvzIYLAVhQxuu2koUOll",
-        "session": "mRKv5S4P8S8n5y2UkBL6",
-        "id": "JlPPsyhgBbTH7QovS5ja"
+        "flow": "7uk70t36qk2Zos2bgjUN",
+        "session": "6WqtYJnsc85TJkZVLgoJ",
+        "id": "9f8hECFoJdytj5rQWmgQ"
       },
-      "status": "take"
+      "status": "take",
+      "history": [
+        {
+          "file": "docs/neonoire/voice/archive/124-vera-evenly-i-know-them-v1.mp3",
+          "prompt": "[evenly] I know them.",
+          "model": "eleven_v4",
+          "generation": {
+            "flow": "kvzIYLAVhQxuu2koUOll",
+            "session": "mRKv5S4P8S8n5y2UkBL6",
+            "id": "JlPPsyhgBbTH7QovS5ja"
+          },
+          "archivedAt": "2026-10-08"
+        }
+      ]
     },
     {
       "id": "s86-n093-jack",

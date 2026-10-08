@@ -67,7 +67,7 @@ for (const number of ["85", "87", "91", "92"]) assert.equal(withoutAlarm(number)
 assert(current["91"].includes("A train. It arrives") && current["91"].includes("rung by rung"));
 assert(!/train/i.test(before["89"]), "No lost stairwell train to invent or move");
 for (const [number, inserted] of [
-  ["86", "VERA\nI know them.\n\nJack looks at her.\n\n"],
+  ["86", "VERA\nThey don't know me.\n\nJack looks at her.\n\n"],
   ["88", "In the black, Vera's hand finds the wall, low, where a child's hand would reach. She starts to move. Jack follows the sound of her.\n\n"],
   ["90", "Vera leads them to a door with a sumo match murmuring behind it. It opens before she can knock: the OLD WOMAN from 55.\n\n"],
 ]) assert.equal(withoutAlarm(number).replace(inserted, ""), before[number], `${number} is revised by addition, not cuts`);

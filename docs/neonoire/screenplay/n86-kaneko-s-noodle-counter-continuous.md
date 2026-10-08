@@ -17,7 +17,7 @@ KANEKO
 Up. Through the back. The stairs by the dentist. Then go through the neighbours. Everyone will open a door.
 
 VERA
-I know them.
+They don't know me.
 
 Jack looks at her.
 
