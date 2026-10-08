@@ -514,5 +514,45 @@
   "flow": "ZP4ByZuSmCPZ2E7b8XKB",
   "long": true,
   "retake": "first two takes were near-silent (peak -30 and -17 dB); re-prompted louder and closer"
+ },
+ "cockpit-drone--v1": {
+  "prompt": "Inside the cockpit of a WWII propeller fighter in flight: steady radial engine drone, wind rushing past the canopy, and a faint continuous radio hiss and static from the headset, seamless, no voice, no music",
+  "duration": 20,
+  "session": "ktdsrJvYgh5wu2bToztl",
+  "generation": "Qha4RbzEv6Hy4jDpUWeV",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true
+ },
+ "cockpit-drone--v2": {
+  "prompt": "Inside the cockpit of a WWII propeller fighter in flight: steady radial engine drone, wind rushing past the canopy, and a faint continuous radio hiss and static from the headset, seamless, no voice, no music",
+  "duration": 20,
+  "session": "YUc2FanT9gWF1PdP26J3",
+  "generation": "DHU8XEmYMgGdgSl4u883",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true
+ },
+ "gunfire-bursts--v1": {
+  "prompt": "Two short bursts of aircraft machine gun fire from a WWII fighter, a quick rattling burst, a half second pause, a second burst, then it stops dead, dry, close, no echo, no voice, no music",
+  "duration": 4,
+  "session": "PTYgFXjAKl3DpPUDt5vB",
+  "generation": "YNlG8JMBTj77qoAl3JB6",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true
+ },
+ "mirror-snap-cap--v1": {
+  "prompt": "A car side mirror snapping off with a sharp metal crack, glass skittering across asphalt, and a soft fabric slap of a small cap landing on the road, dry, close, no voice, no music",
+  "duration": 3,
+  "session": "nR5bTpOtjZCBukVSxck3",
+  "generation": "Qg7JPg7qUAZ3ltxBYsqd",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true
+ },
+ "mirror-snap-cap--v2": {
+  "prompt": "A car side mirror snapping off with a sharp metal crack, glass skittering across asphalt, and a soft fabric slap of a small cap landing on the road, dry, close, no voice, no music",
+  "duration": 3,
+  "session": "zmeZNQIPepfQFFxtHwYh",
+  "generation": "MLLHoofhuKbeqVITkDPq",
+  "flow": "ZP4ByZuSmCPZ2E7b8XKB",
+  "long": true
  }
 }

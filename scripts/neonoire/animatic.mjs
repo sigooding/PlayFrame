@@ -71,6 +71,9 @@ const sceneSpan = {}; // scene tag -> [start, end] seconds in the cut, for music
 // Filters for lines that are heard through something: the clean take stays clean on disk, the animatic colours it.
 // Set with `voice-ingest --fx`; the chains live in voice-fx.mjs, which the games' importers use to bake the same treatment.
 const fxByFile = new Map(readManifest(root).lines.filter(l => l.fx).map(l => [l.file, l.fx]));
+// the cold open's radio and television voices (docs/hangar/voice/manifest.json) take the same treatment
+const hangarManifest = resolve(root, "docs/hangar/voice/manifest.json");
+if (existsSync(hangarManifest)) for (const l of JSON.parse(readFileSync(hangarManifest, "utf8")).lines) if (l.fx) fxByFile.set(l.file, l.fx);
 // A line spoken in another language whose `text` is the foreign words carries its English subtitle in `sub` ("Shitsurei shimasu." -> "Excuse me.").
 const subByFile = new Map(readManifest(root).lines.filter(l => l.sub).map(l => [l.file, l.sub]));
 const tight = args.hold === undefined;
@@ -127,7 +130,7 @@ for (let [i, frame] of frames.entries()) {
   for (const c of clips) inputs.push("-i", localMedia(c.src));
   let filter = "";
   const labels = [];
-  clips.forEach((c, k) => { const fx = FX[fxByFile.get(c.src)]; filter += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=mono${fx ? "," + fx : ""},adelay=${Math.round(c.offset * 1000)}|${Math.round(c.offset * 1000)}[d${k}];`; labels.push(`[d${k}]`); });
+  clips.forEach((c, k) => { const fx = FX[fxByFile.get(c.src)]; filter += `[${k + 1}:a]aresample=44100,aformat=channel_layouts=mono${fx ? "," + fx : ""}${c.gain && c.gain !== 1 ? `,volume=${c.gain}` : ""},adelay=${Math.round(c.offset * 1000)}|${Math.round(c.offset * 1000)}[d${k}];`; labels.push(`[d${k}]`); });
   if (clips.length) filter += `${labels.join("")}amix=inputs=${clips.length}:normalize=0,apad,atrim=0:${frame.duration}[a]`;
   else filter = `anullsrc=r=44100:cl=mono,atrim=0:${frame.duration}[a]`;
   const cam = camera && image && existsSync(image) ? cameraMove(frame, frame.duration, i) : null;

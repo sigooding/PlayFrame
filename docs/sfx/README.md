@@ -6,45 +6,52 @@ One library for the three stories in PlayFrame: **NEONOIRE** (Nobody's Witness),
 
 ## What is here
 
-35 effects: 30 new (ElevenLabs `eleven_text_to_sound_v2`, 8 October 2026) and 5 that NEONOIRE already had, offered to the other two stories without being copied or touched (`rain`, `shop-chime`, `suppressed-shot`, `vending-machine-buzz`, `body-fall`; they still play from `public/audio/neonoire/`). Counts per story: NEONOIRE 19, Hangar 19, Rapture 28; 25 of 35 are tagged for more than one.
+<!-- counts:start -->
+38 effects: 33 new (ElevenLabs `eleven_text_to_sound_v2`, 8 October 2026) and 5 that NEONOIRE already had, offered to the other two stories without being copied or touched (`rain`, `shop-chime`, `suppressed-shot`, `vending-machine-buzz`, `body-fall`; they still play from `public/audio/neonoire/`). Counts per story: NEONOIRE 19, Hangar 22, Rapture 28; 25 of 38 are tagged for more than one.
+<!-- counts:end -->
 
+<!-- table:start -->
 | id | what | length | fits | from |
 |---|---|---|---|---|
-| `click-pattern` | Three quick clicks, one slow | 2.48 s | Hangar | new, 8 Oct |
-| `crate-knock` | One knock inside the crate | 1.48 s | Hangar | new, 8 Oct |
-| `knock-three-quick` | Three quick knocks, a gap where the fourth should be | 3 s | Hangar | new, 8 Oct |
-| `hangar-room-tone` | Empty hangar room tone | 12 s (loops) | Hangar, Rapture, NEONOIRE | new, 8 Oct |
-| `flare-hiss` | Road flare hiss and crackle | 8 s (loops) | Hangar, NEONOIRE | new, 8 Oct |
-| `creek-night` | Creek at night | 12 s (loops) | Hangar, Rapture | new, 8 Oct |
-| `crickets-night` | Night crickets | 12 s (loops) | Hangar, Rapture | new, 8 Oct |
-| `tyre-howl-chains` | Tyres howling, chains rattling | 4 s | Hangar | new, 8 Oct |
-| `forklift-yard` | Forklift beeper, generator, boots | 10 s (loops) | Hangar, Rapture | new, 8 Oct |
-| `gravel-tyres` | Tyres on gravel, engine idling | 6 s | Hangar, Rapture | new, 8 Oct |
-| `car-tumble-trees` | Car tumbling down a wooded slope | 6 s | Hangar | new, 8 Oct |
-| `engine-start-old` | Old diesel engine fails once, catches | 8 s | Rapture, Hangar | new, 8 Oct |
-| `taser-zap` | Taser discharge and the fall | 2.48 s | Rapture | new, 8 Oct |
-| `trolley-roll` | Empty trolley rolling across a car park | 5 s | Rapture, NEONOIRE | new, 8 Oct |
-| `water-bottles-burst` | Slabs of water bottles bursting across tarmac | 4 s | Rapture | new, 8 Oct |
-| `car-doors-open` | Two car doors opening at once | 2 s | Rapture, NEONOIRE, Hangar | new, 8 Oct |
-| `glass-crunch-steps` | Footsteps on broken glass | 4 s | Rapture, NEONOIRE | new, 8 Oct |
-| `tap-cough` | Tap coughing air, brown water, clear | 5 s | Rapture | new, 8 Oct |
-| `fax-machine` | Old fax machine handshake and print | 8 s | Rapture, NEONOIRE | new, 8 Oct |
-| `radio-jingle` | Kitchen radio, local station jingle | 6 s | Rapture | new, 8 Oct |
-| `knife-ring` | Knife dropping on pavement, one ring | 2.48 s | Rapture | new, 8 Oct |
-| `cup-rattle` | Cup rocking on a saucer, settling | 4 s | Rapture, NEONOIRE, Hangar | new, 8 Oct |
-| `cashpoint-hum` | Cashpoint hum, quiet street | 10 s (loops) | Rapture, NEONOIRE | new, 8 Oct |
-| `traffic-distant` | Traffic in the next street | 12 s (loops) | Rapture, NEONOIRE | new, 8 Oct |
-| `landline-dead` | Landline: dial tone, three digits, dead | 6 s | Rapture, NEONOIRE | new, 8 Oct |
-| `door-lock-handle` | Keys in a lock, handle tried twice | 5 s | Rapture, NEONOIRE | new, 8 Oct |
-| `train-over-arch` | Train over a brick arch | 8 s | NEONOIRE, Rapture | new, 8 Oct |
-| `footsteps-wet` | Footsteps on wet pavement at night | 5 s | NEONOIRE, Rapture | new, 8 Oct |
-| `pen-clipboard` | Pen scratching a clipboard | 4 s | Hangar, NEONOIRE, Rapture | new, 8 Oct |
-| `truck-horn` | Truck air horn | 3 s | Hangar, Rapture | new, 8 Oct |
+| `click-pattern` | Three quick clicks, one slow | 2.48 s | Hangar | new |
+| `crate-knock` | One knock inside the crate | 1.48 s | Hangar | new |
+| `knock-three-quick` | Three quick knocks, a gap where the fourth should be | 3 s | Hangar | new |
+| `hangar-room-tone` | Empty hangar room tone | 12 s (loops) | Hangar, Rapture, NEONOIRE | new |
+| `flare-hiss` | Road flare hiss and crackle | 8 s (loops) | Hangar, NEONOIRE | new |
+| `creek-night` | Creek at night | 12 s (loops) | Hangar, Rapture | new |
+| `crickets-night` | Night crickets | 12 s (loops) | Hangar, Rapture | new |
+| `tyre-howl-chains` | Tyres howling, chains rattling | 4 s | Hangar | new |
+| `forklift-yard` | Forklift beeper, generator, boots | 10 s (loops) | Hangar, Rapture | new |
+| `gravel-tyres` | Tyres on gravel, engine idling | 6 s | Hangar, Rapture | new |
+| `car-tumble-trees` | Car tumbling down a wooded slope | 6 s | Hangar | new |
+| `engine-start-old` | Old diesel engine fails once, catches | 8 s | Rapture, Hangar | new |
+| `taser-zap` | Taser discharge and the fall | 2.48 s | Rapture | new |
+| `trolley-roll` | Empty trolley rolling across a car park | 5 s | Rapture, NEONOIRE | new |
+| `water-bottles-burst` | Slabs of water bottles bursting across tarmac | 4 s | Rapture | new |
+| `car-doors-open` | Two car doors opening at once | 2 s | Rapture, NEONOIRE, Hangar | new |
+| `glass-crunch-steps` | Footsteps on broken glass | 4 s | Rapture, NEONOIRE | new |
+| `tap-cough` | Tap coughing air, brown water, clear | 5 s | Rapture | new |
+| `fax-machine` | Old fax machine handshake and print | 8 s | Rapture, NEONOIRE | new |
+| `radio-jingle` | Kitchen radio, local station jingle | 6 s | Rapture | new |
+| `knife-ring` | Knife dropping on pavement, one ring | 2.48 s | Rapture | new |
+| `cup-rattle` | Cup rocking on a saucer, settling | 4 s | Rapture, NEONOIRE, Hangar | new |
+| `cashpoint-hum` | Cashpoint hum, quiet street | 10 s (loops) | Rapture, NEONOIRE | new |
+| `traffic-distant` | Traffic in the next street | 12 s (loops) | Rapture, NEONOIRE | new |
+| `landline-dead` | Landline: dial tone, three digits, dead | 6 s | Rapture, NEONOIRE | new |
+| `door-lock-handle` | Keys in a lock, handle tried twice | 5 s | Rapture, NEONOIRE | new |
+| `train-over-arch` | Train over a brick arch | 8 s | NEONOIRE, Rapture | new |
+| `footsteps-wet` | Footsteps on wet pavement at night | 5 s | NEONOIRE, Rapture | new |
+| `pen-clipboard` | Pen scratching a clipboard | 4 s | Hangar, NEONOIRE, Rapture | new |
+| `truck-horn` | Truck air horn | 3 s | Hangar, Rapture | new |
+| `cockpit-drone` | Cockpit engine drone with radio hiss | 20 s (loops) | Hangar | new |
+| `gunfire-bursts` | Two bursts of gunfire, then nothing | 4 s | Hangar | new |
+| `mirror-snap-cap` | Mirror snaps off, cap lands on the road | 3 s | Hangar | new |
 | `rain` | Heavy night rain (NEONOIRE) | 2 s | NEONOIRE, Rapture | NEONOIRE (reused) |
 | `shop-chime` | Two-note shop door chime (NEONOIRE) | 5 s | NEONOIRE, Rapture | NEONOIRE (reused) |
 | `suppressed-shot` | Suppressed pistol shot (NEONOIRE) | 2 s | NEONOIRE, Hangar | NEONOIRE (reused) |
 | `vending-machine-buzz` | Vending machine buzz (NEONOIRE) | 2 s | NEONOIRE, Rapture, Hangar | NEONOIRE (reused) |
 | `body-fall` | Body falling on a hard floor (NEONOIRE) | 1.3 s | NEONOIRE, Rapture, Hangar | NEONOIRE (reused) |
+<!-- table:end -->
 
 `docs/sfx/library.json` has, per effect, the file, length, level, the prompt, the ElevenLabs flow/session/generation it came from, every kept take and a sentence per story saying where it goes.
 

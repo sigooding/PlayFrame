@@ -36,7 +36,7 @@ for (const e of source.new) {
   const byPeak = -3 - best.peak, byMean = LOOP_MEAN - best.mean;
   const gain = Math.min(MAX_BOOST, e.loop ? Math.min(byPeak, byMean) : byPeak);
   const fade = e.loop ? "" : `,afade=t=out:st=${Math.max(0, best.duration - 0.04)}:d=0.04`;
-  const r = run(["-v", "error", "-y", "-i", best.file, "-af", `volume=${gain}dB${fade}`, "-c:a", "libmp3lame", "-q:a", "2", out]);
+  const r = run(["-v", "error", "-y", "-i", best.file, "-af", `volume=${gain}dB,alimiter=limit=0.708:level=disabled${fade}`, "-c:a", "libmp3lame", "-q:a", "2", out]);
   if (r.status !== 0) throw new Error(`ffmpeg failed on ${e.id}: ${r.stderr}`);
   const g = generations[`${e.id}--v${best.n}`];
   effects.push({
@@ -59,6 +59,21 @@ const library = {
   effects,
 };
 writeFileSync(resolve(root, "docs/sfx/library.json"), JSON.stringify(library, null, 1) + "\n");
+
+// the README's effects table and counts are generated here so they cannot drift from library.json
+const storyName = { neonoire: "NEONOIRE", hangar: "Hangar", rapture: "Rapture" };
+const readmePath = resolve(root, "docs/sfx/README.md");
+if (existsSync(readmePath)) {
+  const rows = effects.filter(e => e.file).map(e => `| \`${e.id}\` | ${e.title} | ${e.duration} s${e.loop ? " (loops)" : ""} | ${Object.keys(e.projects).map(p => storyName[p]).join(", ")} | ${e.source === "new" ? "new" : "NEONOIRE (reused)"} |`);
+  const shared = effects.filter(e => e.file && Object.keys(e.projects).length > 1).length, total = effects.filter(e => e.file).length;
+  const fresh = effects.filter(e => e.source === "new" && e.file).length;
+  const counts = `${total} effects: ${fresh} new (ElevenLabs \`eleven_text_to_sound_v2\`, 8 October 2026) and ${total - fresh} that NEONOIRE already had, offered to the other two stories without being copied or touched (\`rain\`, \`shop-chime\`, \`suppressed-shot\`, \`vending-machine-buzz\`, \`body-fall\`; they still play from \`public/audio/neonoire/\`). Counts per story: NEONOIRE ${library.counts.neonoire}, Hangar ${library.counts.hangar}, Rapture ${library.counts.rapture}; ${shared} of ${total} are tagged for more than one.`;
+  let md = readFileSync(readmePath, "utf8");
+  const swap = (name, body) => { md = md.replace(new RegExp(`<!-- ${name}:start -->[\\s\\S]*?<!-- ${name}:end -->`), `<!-- ${name}:start -->\n${body}\n<!-- ${name}:end -->`); };
+  swap("counts", counts);
+  swap("table", "| id | what | length | fits | from |\n|---|---|---|---|---|\n" + rows.join("\n"));
+  writeFileSync(readmePath, md);
+}
 
 const data = JSON.stringify(library).replace(/<\//g, "<\\/");
 const html = `<!doctype html>

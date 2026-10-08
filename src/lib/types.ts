@@ -99,6 +99,8 @@ export interface FrameAudio {
   /** The ElevenLabs voice and model the take was made with, so it can be regenerated. */
   voice?: string;
   model?: string;
+  /** Playback level, 0.02 to 2 (default 1): a sound effect or bed sits under the speech at 0.2 to 0.6. Not a normalisation, the take is as made. */
+  gain?: number;
 }
 
 export interface StoryFrame {

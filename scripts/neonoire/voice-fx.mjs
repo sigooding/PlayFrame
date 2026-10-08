@@ -1,5 +1,5 @@
 // The treatment for lines that are heard through something: a phone, a television, an old cassette.
-// The manifest's `fx` field (phone | tv | tape, set with `voice-ingest --fx`) names the treatment; the take on disk stays clean.
+// The manifest's `fx` field (phone | tv | tape | radio, set with `voice-ingest --fx`) names the treatment; the take on disk stays clean.
 //
 //   animatic.mjs     applies the chain while it mixes the cut (this is what the animatic has always done)
 //   the games        the importers bake it into their own copy of the take with bakeFx(), so every engine plays the filtered line
@@ -15,6 +15,8 @@ export const FX = {
   phone: "highpass=f=400,lowpass=f=3000,acompressor=threshold=0.04:ratio=6,volume=1.6",
   tv: "highpass=f=300,lowpass=f=5000,aecho=0.8:0.6:35:0.25,volume=1.2",
   tape: "highpass=f=350,lowpass=f=4200,vibrato=f=5:d=0.03,volume=1.4",
+  // a 1944 cockpit radio: narrow, compressed, a little rough (the Hangar cold open's Red Leader and Red Two)
+  radio: "highpass=f=450,lowpass=f=2800,acompressor=threshold=0.05:ratio=8,volume=1.7",
 };
 
 const meanVolume = (ffmpeg, file) => {
@@ -30,7 +32,7 @@ const meanVolume = (ffmpeg, file) => {
  * scale: the treatment changes the sound of the voice, not how loud it plays against the others.
  */
 export function bakeFx(ffmpeg, src, dest, fx) {
-  if (!FX[fx]) throw new Error(`unknown fx "${fx}" (phone, tv or tape)`);
+  if (!FX[fx]) throw new Error(`unknown fx "${fx}" (phone, tv, tape or radio)`);
   const dir = mkdtempSync(join(tmpdir(), "voicefx-"));
   try {
     const filtered = join(dir, "filtered.wav");

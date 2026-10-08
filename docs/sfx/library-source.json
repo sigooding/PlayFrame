@@ -243,6 +243,33 @@
     "hangar": "the swerve (horn, tyre shriek, gravel)",
     "rapture": "the bus on the open road"
    }
+  },
+  {
+   "id": "cockpit-drone",
+   "title": "Cockpit engine drone with radio hiss",
+   "loop": true,
+   "projects": {
+    "hangar": "shots 1 and 2, the 1944 cockpit under the black screen: engine drone, wind, headset hiss (gone for the silence after the gunfire)"
+   },
+   "prompt": "Inside the cockpit of a WWII propeller fighter in flight: steady radial engine drone, wind rushing past the canopy, and a faint continuous radio hiss and static from the headset, seamless, no voice, no music"
+  },
+  {
+   "id": "gunfire-bursts",
+   "title": "Two bursts of gunfire, then nothing",
+   "loop": false,
+   "projects": {
+    "hangar": "shot 3: two short bursts, then true silence (never show what he shot)"
+   },
+   "prompt": "Two short bursts of aircraft machine gun fire from a WWII fighter, a quick rattling burst, a half second pause, a second burst, then it stops dead, dry, close, no echo, no voice, no music"
+  },
+  {
+   "id": "mirror-snap-cap",
+   "title": "Mirror snaps off, cap lands on the road",
+   "loop": false,
+   "projects": {
+    "hangar": "shot 19: the wagon's side mirror snaps off and the nurse's cap flies out of the window"
+   },
+   "prompt": "A car side mirror snapping off with a sharp metal crack, glass skittering across asphalt, and a soft fabric slap of a small cap landing on the road, dry, close, no voice, no music"
   }
  ],
  "reused": [

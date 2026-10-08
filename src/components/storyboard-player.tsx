@@ -30,6 +30,7 @@ export function StoryboardPlayer({ project, frames: suppliedFrames, onClose }: {
     const now = elapsedRef.current;
     for (const clip of frame.audio) {
       const player = new Audio(clip.src);
+      player.volume = Math.min(1, Math.max(0, clip.gain ?? 1));
       players.push(player);
       const start = () => { player.currentTime = Math.max(0, elapsedRef.current - clip.offset); player.play().catch(() => {}); };
       const end = clip.offset + (clip.duration ?? 0);

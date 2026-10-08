@@ -22,7 +22,7 @@ const nodeColors = ["sage", "sand", "rose", "clay", "ink"];
 export const isUuid = (value: string) => /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
 const string = (value: unknown, max = 20000): value is string => typeof value === "string" && value.length <= max;
 const audioSrc = (value: unknown): value is string => string(value, 300) && /^\/audio\/[A-Za-z0-9._\/-]+\.(mp3|wav|m4a|ogg)$/.test(value) && !value.includes("..");
-const audioOk = (a: FrameAudio) => a && string(a.id, 100) && string(a.character, 120) && string(a.text, 2000) && audioSrc(a.src) && Number.isFinite(a.offset) && a.offset >= 0 && a.offset <= 3600 && (a.duration === undefined || (Number.isFinite(a.duration) && a.duration > 0 && a.duration <= 600)) && (a.voice === undefined || string(a.voice, 100)) && (a.model === undefined || string(a.model, 100));
+const audioOk = (a: FrameAudio) => a && string(a.id, 100) && string(a.character, 120) && string(a.text, 2000) && audioSrc(a.src) && Number.isFinite(a.offset) && a.offset >= 0 && a.offset <= 3600 && (a.duration === undefined || (Number.isFinite(a.duration) && a.duration > 0 && a.duration <= 600)) && (a.voice === undefined || string(a.voice, 100)) && (a.model === undefined || string(a.model, 100)) && (a.gain === undefined || (Number.isFinite(a.gain) && a.gain >= 0.02 && a.gain <= 2));
 const image = (value: unknown): value is string => string(value, 6_000_000) && (value.startsWith("/images/") || /^https?:\/\//i.test(value) || /^data:image\/(jpeg|png|webp);base64,/.test(value) || value === "");
 const optionalIn = (value: unknown, list: readonly string[]) => value === undefined || value === "" || value === null || (typeof value === "string" && list.includes(value));
 const optionalId = (value: unknown) => value === undefined || value === null || value === "" || string(value, 100);
@@ -99,6 +99,7 @@ const sanitizeAudio = (value: unknown): FrameAudio[] | undefined => {
       offset: Math.min(3600, Math.round(offset * 100) / 100),
       duration: Number.isFinite(duration) && duration > 0 ? Math.min(600, Math.round(duration * 100) / 100) : undefined,
       voice: text(a.voice, 100) || undefined, model: text(a.model, 100) || undefined,
+      gain: Number.isFinite(Number(a.gain)) && Number(a.gain) >= 0.02 && Number(a.gain) <= 2 ? Math.round(Number(a.gain) * 100) / 100 : undefined,
     };
   }).filter((a): a is FrameAudio => a !== null);
   return clips.length ? clips : undefined;
