@@ -1,0 +1,722 @@
+{
+ "date": "2026-10-08",
+ "note": "Clean re-recordings of lines whose first take repeated itself that were not used (takes), and re-recordings that repeated themselves again (repeats, kept as evidence of which directions invite it). Nothing here is in the episode. To use one, name it in a record for voice-rerecord.mjs.",
+ "takes": [
+  {
+   "id": "ep1-02-nina-no",
+   "key": "R015",
+   "file": "/audio/rapture/alternates/2026-10-08/R015-alt1.mp3",
+   "prompt": "[Flat] No.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "tNuqhvVDH4JuV0kpJ4da",
+    "id": "HjxIAEFW2IaqZ5RqRCvQ"
+   }
+  },
+  {
+   "id": "ep1-02-nina-no",
+   "key": "R015",
+   "file": "/audio/rapture/alternates/2026-10-08/R015-alt2.mp3",
+   "prompt": "[Flat] No.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "BksRsgHwgO3B5lqPDnJY",
+    "id": "RXOEzEePSq6fLbohozSf"
+   }
+  },
+  {
+   "id": "ep1-02-nina-did-them",
+   "key": "R024",
+   "file": "/audio/rapture/alternates/2026-10-08/R024-alt1.mp3",
+   "prompt": "[Flat] Did them.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "0mDZwrIhxjWyvHW8W9aN",
+    "id": "urR6tFexD9t6r5lBV9oA"
+   }
+  },
+  {
+   "id": "ep1-02-nina-did-them",
+   "key": "R024",
+   "file": "/audio/rapture/alternates/2026-10-08/R024-alt2.mp3",
+   "prompt": "[Flat] Did them.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "iC32OyfMb2eeINA9fMUT",
+    "id": "VSZG4MlSwk1uFKOR6LCY"
+   }
+  },
+  {
+   "id": "ep1-02-nina-why",
+   "key": "R030",
+   "file": "/audio/rapture/alternates/2026-10-08/R030-alt1.mp3",
+   "prompt": "[Flat] Why.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "h9ezeKAwO5QKGiSFB9hy",
+    "id": "s1F5TxqO3nyySrFhhzqy"
+   }
+  },
+  {
+   "id": "ep1-02-nina-why",
+   "key": "R030",
+   "file": "/audio/rapture/alternates/2026-10-08/R030-alt2.mp3",
+   "prompt": "[Flat] Why.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "su5wsUuP3xtbjm2y9lJ8",
+    "id": "89arp9avv6zTu26vl0HZ"
+   }
+  },
+  {
+   "id": "ep1-03-ray-mm",
+   "key": "R060",
+   "file": "/audio/rapture/alternates/2026-10-08/R060-alt1.mp3",
+   "prompt": "[Dry] Mm.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "uqjR6fzp9T92ONuOQw7A",
+    "id": "f1wvrrFOrR6jyfiVOrhv"
+   }
+  },
+  {
+   "id": "ep1-03-ray-mm",
+   "key": "R060",
+   "file": "/audio/rapture/alternates/2026-10-08/R060-alt2.mp3",
+   "prompt": "[Dry] Mm.",
+   "duration": 1.2,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "3lLPVY3m3QhZLnR5Nu68",
+    "id": "s6W6lpeQnOrmiGYVjs23"
+   }
+  },
+  {
+   "id": "ep1-03-ray-might",
+   "key": "R066",
+   "file": "/audio/rapture/alternates/2026-10-08/R066-alt1.mp3",
+   "prompt": "[Dry] Might.",
+   "duration": 1.2,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "rydv7wOXXj0vuYhUwptK",
+    "id": "LpJpyoFNRfEhEUhZl9qo"
+   }
+  },
+  {
+   "id": "ep1-03-ray-might",
+   "key": "R066",
+   "file": "/audio/rapture/alternates/2026-10-08/R066-alt2.mp3",
+   "prompt": "[Dry] Might.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "fECvwrqGYoNV2t4ENHGv",
+    "id": "rReYfoocu1heBkkRy34h"
+   }
+  },
+  {
+   "id": "ep1-03-ray-to-who",
+   "key": "R089",
+   "file": "/audio/rapture/alternates/2026-10-08/R089-alt1.mp3",
+   "prompt": "[Curious] To who?",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "zCFiYn37vF2WjiLvDgIF",
+    "id": "gY5LALiQIGjWE3vtBLBz"
+   }
+  },
+  {
+   "id": "ep1-03-ray-to-who",
+   "key": "R089",
+   "file": "/audio/rapture/alternates/2026-10-08/R089-alt2.mp3",
+   "prompt": "[Curious] To who?",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "gUYVdBXniPsqbl5JDOSj",
+    "id": "lsvaliKn1EDiqfSGgN40"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/R095-alt1.mp3",
+   "prompt": "[Dry] Kath.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "BT1akKLV3xT5PDTN8VQ0",
+    "id": "7ozk6PGfADtVzNO358Td"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/R095-alt2.mp3",
+   "prompt": "[Dry] Kath.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "wBmtIjz7MnRPD4Qlvjv4",
+    "id": "AtyIwZ12Pqw6ONU4cc69"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/R095-alt3.mp3",
+   "prompt": "Kath.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "DDcuwLtu1J5yikS11QqS",
+    "id": "x9dYvcdbpfXZzPEhyvPk"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/R095-alt4.mp3",
+   "prompt": "Kath.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "4FCvTwCeYZsdrH6JeObd",
+    "id": "iDtdkBel6b6xWW757Wpg"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/R095-alt5.mp3",
+   "prompt": "Kath.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "omwDnDbv9JiKqim28nLR",
+    "id": "kFpIw0hc5x9Cki7oP9R5"
+   }
+  },
+  {
+   "id": "ep1-03-kath-you-do-not-have-to-say",
+   "key": "R101",
+   "file": "/audio/rapture/alternates/2026-10-08/R101-alt1.mp3",
+   "prompt": "[Reciting, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
+   "duration": 7.68,
+   "phrases": 2,
+   "expected": 2,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "UuXuF0dAowTiuqIWLID8",
+    "id": "c49FtDNy1ly7wgx5W4NC"
+   }
+  },
+  {
+   "id": "ep1-03-kath-you-do-not-have-to-say",
+   "key": "R101",
+   "file": "/audio/rapture/alternates/2026-10-08/R101-alt2.mp3",
+   "prompt": "[Reciting, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
+   "duration": 7.92,
+   "phrases": 2,
+   "expected": 2,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "aA3wU2uUXTpZ5pBlX5LE",
+    "id": "puM41m0LL3tTbjBOeZcX"
+   }
+  },
+  {
+   "id": "ep1-03-kath-who",
+   "key": "R105",
+   "file": "/audio/rapture/alternates/2026-10-08/R105-alt1.mp3",
+   "prompt": "[Puzzled] Who?",
+   "duration": 0.88,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "GHLLKKpsWHj11H75xGK4",
+    "id": "XDWaFWZlhF5p3e9fQYR7"
+   }
+  },
+  {
+   "id": "ep1-03-kath-who",
+   "key": "R105",
+   "file": "/audio/rapture/alternates/2026-10-08/R105-alt2.mp3",
+   "prompt": "[Puzzled] Who?",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "6JKoT1wsx5u3DCEW5s60",
+    "id": "jLUuHefsPTNIHxSWYPJ2"
+   }
+  },
+  {
+   "id": "ep1-04-nina-you-little-sod",
+   "key": "R110",
+   "file": "/audio/rapture/alternates/2026-10-08/R110-alt1.mp3",
+   "prompt": "[Fond] You little sod.",
+   "duration": 2,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "5e8MxDa5zPFJSyEDXVxX",
+    "id": "w9cIzHqwkKEtiSh7Vsf2"
+   }
+  },
+  {
+   "id": "ep1-04-nina-you-little-sod",
+   "key": "R110",
+   "file": "/audio/rapture/alternates/2026-10-08/R110-alt2.mp3",
+   "prompt": "[Fond] You little sod.",
+   "duration": 1.92,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "saD7I6KluAs5Idw53Zor",
+    "id": "LAju7FuzkjsifGcGvE7u"
+   }
+  },
+  {
+   "id": "ep1-06-martin-course",
+   "key": "R113",
+   "file": "/audio/rapture/alternates/2026-10-08/R113-alt1.mp3",
+   "prompt": "[Resigned] Course.",
+   "duration": 1.28,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "SYYsctjsg761Zdp8MIBy",
+    "id": "gxEdOx2P8ElWV3rGzvwZ"
+   }
+  },
+  {
+   "id": "ep1-06-martin-course",
+   "key": "R113",
+   "file": "/audio/rapture/alternates/2026-10-08/R113-alt2.mp3",
+   "prompt": "[Resigned] Course.",
+   "duration": 1.2,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "crLktfwnCnhUFWkBTL0L",
+    "id": "iLsOpRSaWE2dkIJgXIk7"
+   }
+  },
+  {
+   "id": "ep1-07-danny-it-was-already",
+   "key": "R117",
+   "file": "/audio/rapture/alternates/2026-10-08/R117-alt1.mp3",
+   "prompt": "[Embarrassed] It was already —",
+   "duration": 2,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "uyPlJYjAzrZmatACQNN3",
+    "id": "j4RTlsULcGwWBxiTr5pC"
+   }
+  },
+  {
+   "id": "ep1-07-danny-it-was-already",
+   "key": "R117",
+   "file": "/audio/rapture/alternates/2026-10-08/R117-alt2.mp3",
+   "prompt": "[Embarrassed] It was already —",
+   "duration": 1.92,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "x2Tf8cWKgspVaq0rvmhb",
+    "id": "aWhWBQyAHNtyPPNfJny3"
+   }
+  },
+  {
+   "id": "ep1-07-jodie-mm",
+   "key": "R118",
+   "file": "/audio/rapture/alternates/2026-10-08/R118-alt1.mp3",
+   "prompt": "[Flat] Mm.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "eUNgmbXGsyJK0MrdbQ01",
+    "id": "vB6WUbKhKSbd42Js5e8H"
+   }
+  },
+  {
+   "id": "ep1-07-jodie-mm",
+   "key": "R118",
+   "file": "/audio/rapture/alternates/2026-10-08/R118-alt2.mp3",
+   "prompt": "[Flat] Mm.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "rnNcSLyfBfnDYGR2RpuH",
+    "id": "HgEj3bSggaq4WixhyNwT"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/R119-alt1.mp3",
+   "prompt": "[Serious] Rules.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "moElCi4Fjtd9AuT8ElIG",
+    "id": "XOu9p1autbJ7r57VLVLA"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/R119-alt2.mp3",
+   "prompt": "Rules.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "TrhJddnouLD1CNAGZk8M",
+    "id": "hxtLaQENU80RLfXGL8nt"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/R119-alt3.mp3",
+   "prompt": "Rules.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "mhMxanmxyFZqUa329cp2",
+    "id": "VOhJU8hVVhYNkMw0ABub"
+   }
+  },
+  {
+   "id": "ep1-07-danny-they-re-gone",
+   "key": "R126",
+   "file": "/audio/rapture/alternates/2026-10-08/R126-alt1.mp3",
+   "prompt": "[Uneasy] They're gone.",
+   "duration": 1.44,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "pnmrMEjw8sUdeu9qKtS3",
+    "id": "nAnWD3BW8CD3TVDDCHjN"
+   }
+  },
+  {
+   "id": "ep1-07-danny-they-re-gone",
+   "key": "R126",
+   "file": "/audio/rapture/alternates/2026-10-08/R126-alt2.mp3",
+   "prompt": "[Uneasy] They're gone.",
+   "duration": 1.44,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "B3vBlRSbmJKywN6kN4iv",
+    "id": "15NoABvSY4mJsBRmTKtS"
+   }
+  },
+  {
+   "id": "ep1-07-jodie-one-in-ten-one-in-twenty",
+   "key": "R134",
+   "file": "/audio/rapture/alternates/2026-10-08/R134-alt1.mp3",
+   "prompt": "[Idle] One in ten? One in twenty?",
+   "duration": 2.64,
+   "phrases": 2,
+   "expected": 2,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "H6TBaLNWYfEppEOi3IUn",
+    "id": "CPFl4Ox8QAcq4OpAGGzU"
+   }
+  },
+  {
+   "id": "ep1-07-jodie-one-in-ten-one-in-twenty",
+   "key": "R134",
+   "file": "/audio/rapture/alternates/2026-10-08/R134-alt2.mp3",
+   "prompt": "[Idle] One in ten? One in twenty?",
+   "duration": 2.48,
+   "phrases": 2,
+   "expected": 2,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "RwU5SX2qcfCSnKQig9xZ",
+    "id": "5BFsYh6uWrayTrmZYZid"
+   }
+  },
+  {
+   "id": "ep1-07-jodie-exactly",
+   "key": "R145",
+   "file": "/audio/rapture/alternates/2026-10-08/R145-alt1.mp3",
+   "prompt": "[Pleased] Exactly.",
+   "duration": 1.36,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "DZbB18YzmjvBJYQunKZg",
+    "id": "sEWBgG5bFwmpCaewpJMy"
+   }
+  },
+  {
+   "id": "ep1-07-jodie-exactly",
+   "key": "R145",
+   "file": "/audio/rapture/alternates/2026-10-08/R145-alt2.mp3",
+   "prompt": "[Pleased] Exactly.",
+   "duration": 1.44,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "CWpk4sWZOWK5PT6xNfCC",
+    "id": "AMi2sBLRLoRWCDTVnq6r"
+   }
+  },
+  {
+   "id": "ep1-08-ray-no",
+   "key": "R161",
+   "file": "/audio/rapture/alternates/2026-10-08/R161-alt1.mp3",
+   "prompt": "[Flat] No.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "qSubDe0XoCyEejwOmvxq",
+    "id": "2ZYYNACtGPNoGHtaKXSP"
+   }
+  },
+  {
+   "id": "ep1-08-ray-no",
+   "key": "R161",
+   "file": "/audio/rapture/alternates/2026-10-08/R161-alt2.mp3",
+   "prompt": "[Flat] No.",
+   "duration": 0.96,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "iEyDA9UYtCemZrzIF7n3",
+    "id": "wYAdH85D9PpziGVnXTfP"
+   }
+  },
+  {
+   "id": "ep1-08-ray-kath",
+   "key": "R163",
+   "file": "/audio/rapture/alternates/2026-10-08/R163-alt1.mp3",
+   "prompt": "[Dry] Kath.",
+   "duration": 1.2,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "her5Lj9DlwxtEOJSAtJp",
+    "id": "xmhJNyxaBmF1Pn16CYjt"
+   }
+  },
+  {
+   "id": "ep1-08-ray-kath",
+   "key": "R163",
+   "file": "/audio/rapture/alternates/2026-10-08/R163-alt2.mp3",
+   "prompt": "[Dry] Kath.",
+   "duration": 1.12,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "NN1CwHrXDdu7XKTJFZQX",
+    "id": "LnOgrmIA9bulAgIPaxmO"
+   }
+  },
+  {
+   "id": "ep1-08-kath-us",
+   "key": "R166",
+   "file": "/audio/rapture/alternates/2026-10-08/R166-alt1.mp3",
+   "prompt": "[Sincere] Us.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "bm6XjNqBm4ghExLJqMZa",
+    "id": "86iDmAUmm4Q7domEY50O"
+   }
+  },
+  {
+   "id": "ep1-08-kath-us",
+   "key": "R166",
+   "file": "/audio/rapture/alternates/2026-10-08/R166-alt2.mp3",
+   "prompt": "[Sincere] Us.",
+   "duration": 1.04,
+   "phrases": 1,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "QMligNWtuIJFYWBV8YK8",
+    "id": "tLYc9ACJcwBRgrRGYNij"
+   }
+  }
+ ],
+ "repeats": [
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R095-repeat1.mp3",
+   "prompt": "[Reproachful] Kath.",
+   "duration": 2.08,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "O2AzGmT9c08OqDo19CUh",
+    "id": "eoj3JBjTTIlx1M7WTtZu"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R095-repeat2.mp3",
+   "prompt": "[Reproachful] Kath.",
+   "duration": 2.08,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "Lff3nDQFMzyHu8fVAYaj",
+    "id": "ASPKMDx9prqrjzjPIUiF"
+   }
+  },
+  {
+   "id": "ep1-03-ray-kath",
+   "key": "R095",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R095-repeat3.mp3",
+   "prompt": "[Reproachful] Kath.",
+   "duration": 2,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "GfU0n2oktAtYyKjO4VVf",
+    "id": "TFexHqld2TKtovMKAIAi"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat1.mp3",
+   "prompt": "[Low, steady, serious, said once] Rules.",
+   "duration": 2.48,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "wgOnkij2lUFJp4JsRAaA",
+    "id": "4Go9h8trxqPN5fNminDZ"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat2.mp3",
+   "prompt": "[Low, steady, serious, said once] Rules.",
+   "duration": 3.68,
+   "phrases": 3,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "HA3lmqlv9VmrnSbnQtJz",
+    "id": "rxxXnnxe41Rf1h2ViW5Q"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat3.mp3",
+   "prompt": "[Low and serious, a single word] Rules.",
+   "duration": 2.72,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "QM0YPDFy1Hnuq4cUeMHd",
+    "id": "7CW6USnCOCvNWLLmZq6f"
+   }
+  },
+  {
+   "id": "ep1-07-danny-rules",
+   "key": "R119",
+   "file": "/audio/rapture/alternates/2026-10-08/repeats/R119-repeat4.mp3",
+   "prompt": "[Low and serious, a single word] Rules.",
+   "duration": 2.48,
+   "phrases": 2,
+   "expected": 1,
+   "generation": {
+    "flow": "S7eFZW866dnQgWMpXbpE",
+    "session": "Qsqss0pr9yWkiK8ewNFn",
+    "id": "ptS6kbUwxygy6SsDlbOq"
+   }
+  }
+ ]
+}

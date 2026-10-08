@@ -32,7 +32,7 @@ export const DIRECTIONS = {
     "Pleased with himself, a little proud",
     "Flat, unimpressed",
     "Hopeful, smooth, working up to it",
-    "Flat, immediate",
+    "Flat",
     "Wounded, protesting",
     "Flat, knowing, final",
     "Pleasant, fluent, on the phone, lying without effort",
@@ -41,13 +41,13 @@ export const DIRECTIONS = {
     "Keen, trying again",
     "Flat",
     "Calling after her, eager",
-    "Flat, not turning",
+    "Flat",
     "Flat, aggrieved",
     "Flat, patient",
     "Aggrieved certainty",
     "Flat",
     "Aggrieved, precise",
-    "Flat, deadpan",
+    "Flat",
     "Innocent, polite, hopeful",
     "Dry, wary",
     "Innocent, reasonable, putting a hypothetical",
@@ -65,39 +65,39 @@ export const DIRECTIONS = {
     "Flat, sincere", "Dry, patient", "Earnest", "Dry, mild grievance", "Earnest, a little defensive", "Dry, flat", "Earnest, patient",
     "Dry, flat, after a long pause", "Earnest, genuinely asking", "Dry, flat, final", "Earnest, reasoning it out", "Dry, grudging",
     "Earnest, logical", "Dry, patient", "Earnest, deadpan, perfectly serious", "Dry, flat, after a long pause", "Earnest, with conviction",
-    "Dry, noncommittal", "Earnest, sincere", "Dry, curious", "Flat, matter-of-fact", "Dry, after a pause", "Earnest, hopeful",
-    "Dry, noncommittal", "Earnest, satisfied", "Dry, not unkindly", "Earnest, noticing", "Dry, flat", "Earnest, puzzled",
+    "Dry", "Earnest, sincere", "Dry, curious", "Flat, matter-of-fact", "Dry, after a pause", "Earnest, hopeful",
+    "Dry", "Earnest, satisfied", "Dry, not unkindly", "Earnest, noticing", "Dry, flat", "Earnest, puzzled",
     "Dry, mild grievance", "Earnest, genuinely asking", "Dry, flat", "Earnest, after a pause", "Dry, flat", "Earnest, deadpan, triumphant",
     "Dictating aloud, meticulous, official", "Dry, correcting", "Dictating, stubborn", "Dry, insisting", "Dictating, meticulous",
     "Dry, correcting", "Earnest, patient, explaining", "Dry, after a pause, firm", "Earnest, noticing", "Dry, flat", "Earnest, certain",
-    "Dry, genuinely curious", "Earnest, asking", "Dry, flat, procedural", "Earnest, accepting", "Dry, matter-of-fact",
-    "Entirely official, loud, formal", "Dry, reproachful", "Earnest, defending herself", "Dry, flat", "Earnest, firm",
-    "Dry, patient, matter-of-fact", "Earnest, after a pause, genuinely asking", "Reciting from memory, absolutely sincere, deadpan",
-    "Barely audible, exhausted, flat", "Earnest, matter-of-fact", "Dry, flat, after a long silence", "Earnest, puzzled", "Dry, patient",
+    "Curious", "Earnest, asking", "Dry, flat, procedural", "Earnest, accepting", "Dry, matter-of-fact",
+    "Entirely official, loud, formal", "Dry", "Earnest, defending herself", "Dry, flat", "Earnest, firm",
+    "Dry, patient, matter-of-fact", "Earnest, after a pause, genuinely asking", "Reciting, deadpan",
+    "Barely audible, exhausted, flat", "Earnest, matter-of-fact", "Dry, flat, after a long silence", "Puzzled", "Dry, patient",
     "Earnest, pointing it out", "Dry, flat, after a long pause",
   ],
   "ep1-04": [
     "Flat, to the dog",
-    "Almost fond, dry",
+    "Fond",
     "Flat warning, to the tap",
     "Flat, to the ceiling, composing herself",
   ],
   "ep1-06": [
-    "Resigned, aggrieved, to nobody",
+    "Resigned",
   ],
   "ep1-07": [
-    "Matter-of-fact, bored", "Defensive", "Bored, certain", "Caught out, embarrassed, trailing off", "Dry, noncommittal",
-    "Low, steady, serious", "Recited, bored, in a flat sing-song", "Expectant", "Bored, sing-song", "Matter-of-fact, noticing",
-    "Dismissive", "Patient, pointing it out", "Uneasy, convincing himself", "Flat", "Insistent", "Flat", "Calling, not loud, idle",
-    "Distracted, flat", "Idle curiosity", "Distracted", "Idle, working it out", "Firm, tired", "Urgent, tense", "Calm, bored",
+    "Matter-of-fact, bored", "Defensive", "Bored, certain", "Embarrassed", "Flat",
+    "Serious", "Recited, bored, in a flat sing-song", "Expectant", "Bored, sing-song", "Matter-of-fact, noticing",
+    "Dismissive", "Patient, pointing it out", "Uneasy", "Flat", "Insistent", "Flat", "Calling, not loud, idle",
+    "Distracted, flat", "Idle curiosity", "Distracted", "Idle", "Firm, tired", "Urgent, tense", "Calm, bored",
     "Urgent, tense", "Calm, bored", "Hissing through his teeth, tense", "Flat, vindicated", "Out of breath, defensive",
-    "Matter-of-fact, pleased with herself", "Blank, genuinely asking", "Genuinely pleased", "Gruff, trying to keep some dignity",
+    "Matter-of-fact, pleased with herself", "Blank, genuinely asking", "Pleased", "Gruff, trying to keep some dignity",
   ],
   "ep1-08": [
     "Earnest, hopeful", "Dry, flat", "Earnest", "Dry, flat", "Earnest, a little defensive", "Dry, flat",
     "Earnest, uncertain, after a long pause", "Dry, flat", "Earnest, reasoning it out", "Dry, flat", "Dry, flat, mild grievance",
-    "Earnest, warning", "Dry, defensive", "Earnest, testing him", "Immediate, flat", "Earnest, settled", "Dry, after a long pause",
-    "Earnest, absent", "Dry, genuinely wondering", "No hesitation whatsoever, completely sincere",
+    "Earnest, warning", "Dry, defensive", "Earnest, testing him", "Flat", "Earnest, settled", "Dry",
+    "Earnest, absent", "Dry, genuinely wondering", "Sincere",
   ],
   "ep1-09": [],
 };
@@ -158,5 +158,8 @@ if (process.argv[1] && resolve(process.argv[1]) === new URL(import.meta.url).pat
     writeFileSync(resolve(root, SCRIPT), buildScript(plan));
     const credits = plan.lines.reduce((n, l) => n + l.prompt.length, 0);
     console.log(`${plan.lines.length} lines, ${credits} characters (about ${credits} credits at one take each) -> ${PLAN}`);
+    // The repeat risk (voice-screen.mjs): a direction longer than a line of three words or fewer invited "Rules. Rules", "No, no", "Us" x5.
+    const risky = plan.lines.filter(l => l.text.split(/\s+/).length <= 3 && l.tag.split(/[\s,]+/).filter(Boolean).length > 1);
+    if (risky.length) console.log(`${risky.length} lines of three words or fewer carry a direction of more than one word (they came back clean; screen any new take with voice-screen.mjs)${process.argv.includes("--risky") ? `: ${risky.map(l => l.key).join(" ")}` : " (--risky lists them)"}`);
   }
 }
