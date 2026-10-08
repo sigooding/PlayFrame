@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { dialogueFor, TAIL } from "./voice-frames.mjs";
 import { projectId, sceneId, coldOpenSceneId, ep3ColdOpenSceneId, patColdOpenSceneId, patHouseSceneId, scoutHutSceneId, estateSceneId, doorstepSceneId, kitchenSceneId, therapyClassSceneId, washingUpSceneId, patsNightSceneId, lockupSceneId, ep1DannyJodieSceneId, ep1CopsSecondBeatSceneId, muggingSceneId, stJudesSceneId, createdAt, characterId, characters, grammar, coldOpenGrammar, patColdOpenGrammar, patHouseFrontGrammar, patHouseTwoGrammar, angelGrammar, scoutHutGrammar, estateGrammar, doorstepGrammar, doorstepHerGrammar, doorstepHisGrammar, kitchenGrammar, kitchenHisGrammar, kitchenHerGrammar, therapyClassGrammar, washingUpGrammar, patsNightGrammar, lockupGrammar, dannyJodieGrammar, copsSecondBeatGrammar, muggingGrammar, stJudesGrammar, redLight, shotPlan, coldOpenPlan, ep3ColdOpenPlan, patColdOpenPlan, patHousePlan, scoutHutPlan, estatePlan, doorstepPlan, kitchenPlan, therapyClassPlan, washingUpPlan, patsNightPlan, lockupPlan, dannyJodiePlan, copsSecondBeatPlan, muggingPlan, stJudesPlan, outlinePlan, legacyBoards, referenceBoards, copsFirstBeatGrammar, storageGrammar, tagGrammar } from "./plan.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -24,6 +25,8 @@ const dannyJodieScreenplay = read("docs/rapture/scenes/ep1-danny-jodie.md");
 const copsSecondBeatScreenplay = read("docs/rapture/scenes/ep1-cops-second-beat.md");
 const muggingScreenplay = read("docs/rapture/scenes/ep1-mugging.md");
 const stJudesScreenplay = read("docs/rapture/scenes/ep1-st-judes.md");
+// The recorded dialogue of episode one (docs/rapture/voice/): laid over the frames of the two boards that carry the draft verbatim.
+const voiceManifest = JSON.parse(read("docs/rapture/voice/manifest.json"));
 
 // ---------------------------------------------------------------- episode one's screenplay pages
 // The episode-one draft of 21 September 2026 (docs/rapture/ep1-screenplay.md) is the Screenplay
@@ -568,9 +571,14 @@ const dannyJodieBlocks = [...dannyJodieScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(
 assert.equal(dannyJodieBlocks.length, 21, "Danny and Jodie source must have 21 numbered shots");
 assert.equal(dannyJodiePlan.length, 21, "Danny and Jodie plan must cover all 21 shots");
 const dannyJodieLensMap = { "28mm": "24mm", "35mm": "35mm", "50mm": "50mm", "85mm": "85mm", "100mm": "85mm" };
+// Timing note shared by the two boards: the estimate, the lengthening the recorded dialogue asks for, and where the takes sit.
+const timingNote = (plan, duration, dialogue, locked) => `Timing: ${duration}s is a working total-shot estimate for animatic playback${duration > plan.duration ? ` (the board's ${plan.duration}s, lengthened so the recorded dialogue fits with ${TAIL}s of air after the last word)` : ""}. ${locked}${dialogue.audio.length ? `\n\nRecorded dialogue: ${dialogue.audio.length} take${dialogue.audio.length === 1 ? "" : "s"} (eleven_v4, docs/rapture/voice/) at ${dialogue.audio.map(a => `${a.offset}s`).join(", ")}: the draft's words, spaced as its own timeline spaces them.` : ""}`;
+const dannyJodieDialogue = dialogueFor("ep1-07", dannyJodieBlocks.map(([, , body]) => body), voiceManifest);
 const dannyJodieFrames = dannyJodieBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Danny and Jodie shot order must be contiguous");
   const plan = dannyJodiePlan[i];
+  const dialogue = dannyJodieDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/ep1-danny-jodie/${plan.image}`;
@@ -583,11 +591,12 @@ const dannyJodieFrames = dannyJodieBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens,
     angle: plan.angle || "Eye level", lighting: plan.lighting,
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Dry, deadpan, tight and dark; she's better at it and knows it without cruelty",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-danny-jodie, so this card holds slot ${n} of ${dannyJodiePlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${dannyJodieLensMap[plan.lens] === plan.lens ? "" : `\n\nSource lens: ${plan.lens}; closest library lens ${lens} shown.`}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${dannyJodieGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-danny-jodie, so this card holds slot ${n} of ${dannyJodiePlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}${dannyJodieLensMap[plan.lens] === plan.lens ? "" : `\n\nSource lens: ${plan.lens}; closest library lens ${lens} shown.`}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${dannyJodieGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked (none timed in this scene).")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
 const dannyJodieTotal = dannyJodieFrames.reduce((n, f) => n + f.duration, 0);
@@ -595,9 +604,12 @@ const dannyJodieTotal = dannyJodieFrames.reduce((n, f) => n + f.duration, 0);
 const copsSecondBeatBlocks = [...copsSecondBeatScreenplay.matchAll(/^(\d+)\. ([\s\S]*?)(?=^\d+\. |$(?![\s\S]))/gm)];
 assert.equal(copsSecondBeatBlocks.length, 6, "Cops second beat source must have 6 numbered shots");
 assert.equal(copsSecondBeatPlan.length, 6, "Cops second beat plan must cover all 6 shots");
+const copsSecondBeatDialogue = dialogueFor("ep1-08", copsSecondBeatBlocks.map(([, , body]) => body), voiceManifest);
 const copsSecondBeatFrames = copsSecondBeatBlocks.map(([, n, rawBody], i) => {
   assert.equal(Number(n), i + 1, "Cops second beat shot order must be contiguous");
   const plan = copsSecondBeatPlan[i];
+  const dialogue = copsSecondBeatDialogue[i];
+  const duration = Math.max(plan.duration, dialogue.needed);
   const body = rawBody.trimEnd();
   const source = `${n}. ${body}`;
   const file = `/images/rapture/ep1-cops-second/${plan.image}`;
@@ -609,11 +621,12 @@ const copsSecondBeatFrames = copsSecondBeatBlocks.map(([, n, rawBody], i) => {
     image: missing ? "" : file,
     shotType: plan.shotType, movement: plan.movement, lens: plan.lens,
     angle: "Eye level", lighting: plan.lighting,
-    style: "cinematic", duration: plan.duration, durationIsEstimate: true,
+    style: "cinematic", duration, durationIsEstimate: true,
     status: missing ? "Needs review" : "Draft", transition: "Cut",
     mood: "Dry, deadpan, worse note than it started; the bottle untouched",
     characters: plan.characters.map(characterId),
-    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-cops-second, so this card holds slot ${n} of ${copsSecondBeatPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${copsSecondBeatGrammar}\n\nTiming: ${plan.duration}s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
+    ...(dialogue.audio.length ? { audio: dialogue.audio } : {}),
+    notes: `${missing ? `KEYFRAME MISSING — ${plan.image} is not in public/images/rapture/ep1-cops-second, so this card holds slot ${n} of ${copsSecondBeatPlan.length}. Add the study and rebuild.\n\n` : ""}${plan.note}\n\n${missing ? "" : "Image: AI-generated storyboard study; continuity and production approval pending.\n\n"}${copsSecondBeatGrammar}\n\n${timingNote(plan, duration, dialogue, "Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).")}\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n${source}`,
   };
 });
 const copsSecondBeatTotal = copsSecondBeatFrames.reduce((n, f) => n + f.duration, 0);

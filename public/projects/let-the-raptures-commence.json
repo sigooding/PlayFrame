@@ -2990,7 +2990,39 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "HANDHELD — 28mm, close, the back door. He's got a screwdriver. It isn't going well. She watches. JODIE: It's not that sort of lock. DANNY: It is. JODIE: It's the other sort.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. HANDHELD — 28mm, close, the back door\nHe's got a screwdriver in the frame. It isn't going well. She watches.\n   JODIE: It's not that sort of lock.\n   DANNY: It is.\n   JODIE: It's the other sort."
+      "audio": [
+        {
+          "id": "ep1-07-jodie-it-s-not-that-sort-of",
+          "character": "JODIE",
+          "text": "It's not that sort of lock.",
+          "src": "/audio/rapture/ep1/ep1-07/01-jodie-it-s-not-that-sort-of.mp3",
+          "offset": 0.6,
+          "duration": 1.84,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-it-is",
+          "character": "DANNY",
+          "text": "It is.",
+          "src": "/audio/rapture/ep1/ep1-07/02-danny-it-is.mp3",
+          "offset": 2.94,
+          "duration": 1.28,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-it-s-the-other-sort",
+          "character": "JODIE",
+          "text": "It's the other sort.",
+          "src": "/audio/rapture/ep1/ep1-07/03-jodie-it-s-the-other-sort.mp3",
+          "offset": 4.72,
+          "duration": 1.76,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD — 28mm, close, the back door. He's got a screwdriver. It isn't going well. She watches. JODIE: It's not that sort of lock. DANNY: It is. JODIE: It's the other sort.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 3 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.94s, 4.72s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. HANDHELD — 28mm, close, the back door\nHe's got a screwdriver in the frame. It isn't going well. She watches.\n   JODIE: It's not that sort of lock.\n   DANNY: It is.\n   JODIE: It's the other sort."
     },
     {
       "id": "rapture-ep1dj-03",
@@ -3058,7 +3090,29 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "HANDHELD CLOSE — 50mm. Danny holding a screwdriver, looking at an open door. DANNY: It was already — JODIE: Mm.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. HANDHELD CLOSE — 50mm\nDanny holding a screwdriver, looking at an open door.\n   DANNY: It was already —\n   JODIE: Mm."
+      "audio": [
+        {
+          "id": "ep1-07-danny-it-was-already",
+          "character": "DANNY",
+          "text": "It was already —",
+          "src": "/audio/rapture/ep1/ep1-07/04-danny-it-was-already.mp3",
+          "offset": 0.6,
+          "duration": 1.92,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-mm",
+          "character": "JODIE",
+          "text": "Mm.",
+          "src": "/audio/rapture/ep1/ep1-07/05-jodie-mm.mp3",
+          "offset": 3.02,
+          "duration": 0.96,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD CLOSE — 50mm. Danny holding a screwdriver, looking at an open door. DANNY: It was already — JODIE: Mm.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 2 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.02s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. HANDHELD CLOSE — 50mm\nDanny holding a screwdriver, looking at an open door.\n   DANNY: It was already —\n   JODIE: Mm."
     },
     {
       "id": "rapture-ep1dj-06",
@@ -3072,7 +3126,7 @@
       "angle": "Eye level",
       "lighting": "Practical night",
       "style": "cinematic",
-      "duration": 12,
+      "duration": 15,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3081,7 +3135,49 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "INT. KITCHEN — HANDHELD, 28mm, red torchlight. Close and shifting. Cupboard door, corner of worktop, half a calendar. Never the room. DANNY: (low) Rules. JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs. DANNY: And? JODIE: And check the cistern.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. INT. KITCHEN — HANDHELD, 28mm, red torchlight\nInside. Close and shifting. A cupboard door, a corner of worktop, half a calendar. Never the room.\n   DANNY: (low) Rules.\n   JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs.\n   DANNY: And?\n   JODIE: And check the cistern."
+      "audio": [
+        {
+          "id": "ep1-07-danny-rules",
+          "character": "DANNY",
+          "text": "Rules.",
+          "src": "/audio/rapture/ep1/ep1-07/06-danny-rules.mp3",
+          "offset": 0.6,
+          "duration": 1.2,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-nothing-off-anyone-who-s-still",
+          "character": "JODIE",
+          "text": "Nothing off anyone who's still alive. Nothing off the dead that's got a name on it. No upstairs.",
+          "src": "/audio/rapture/ep1/ep1-07/07-jodie-nothing-off-anyone-who-s-still.mp3",
+          "offset": 2.3,
+          "duration": 6.56,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-and",
+          "character": "DANNY",
+          "text": "And?",
+          "src": "/audio/rapture/ep1/ep1-07/08-danny-and.mp3",
+          "offset": 9.36,
+          "duration": 1.12,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-and-check-the-cistern",
+          "character": "JODIE",
+          "text": "And check the cistern.",
+          "src": "/audio/rapture/ep1/ep1-07/09-jodie-and-check-the-cistern.mp3",
+          "offset": 10.98,
+          "duration": 2.48,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "INT. KITCHEN — HANDHELD, 28mm, red torchlight. Close and shifting. Cupboard door, corner of worktop, half a calendar. Never the room. DANNY: (low) Rules. JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs. DANNY: And? JODIE: And check the cistern.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 15s is a working total-shot estimate for animatic playback (the board's 12s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.3s, 9.36s, 10.98s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. INT. KITCHEN — HANDHELD, 28mm, red torchlight\nInside. Close and shifting. A cupboard door, a corner of worktop, half a calendar. Never the room.\n   DANNY: (low) Rules.\n   JODIE: (recited, bored) Nothing off anyone still alive. Nothing off the dead that's got a name on it. No upstairs.\n   DANNY: And?\n   JODIE: And check the cistern."
     },
     {
       "id": "rapture-ep1dj-07",
@@ -3146,7 +3242,39 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "HANDHELD CLOSE — 50mm, on JODIE. She's looking at the ceiling. JODIE: There's a coat on the bannister. DANNY: So? JODIE: It's a going-out coat.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. HANDHELD CLOSE — 50mm, on JODIE\nShe's looking at the ceiling.\n   JODIE: There's a coat on the bannister.\n   DANNY: So?\n   JODIE: It's a going-out coat."
+      "audio": [
+        {
+          "id": "ep1-07-jodie-there-s-a-coat-on-the",
+          "character": "JODIE",
+          "text": "There's a coat on the bannister.",
+          "src": "/audio/rapture/ep1/ep1-07/10-jodie-there-s-a-coat-on-the.mp3",
+          "offset": 0.6,
+          "duration": 2.08,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-so",
+          "character": "DANNY",
+          "text": "So?",
+          "src": "/audio/rapture/ep1/ep1-07/11-danny-so.mp3",
+          "offset": 3.18,
+          "duration": 1.04,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-it-s-a-going-out-coat",
+          "character": "JODIE",
+          "text": "It's a going-out coat.",
+          "src": "/audio/rapture/ep1/ep1-07/12-jodie-it-s-a-going-out-coat.mp3",
+          "offset": 4.72,
+          "duration": 1.84,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD CLOSE — 50mm, on JODIE. She's looking at the ceiling. JODIE: There's a coat on the bannister. DANNY: So? JODIE: It's a going-out coat.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 3 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 3.18s, 4.72s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n9. HANDHELD CLOSE — 50mm, on JODIE\nShe's looking at the ceiling.\n   JODIE: There's a coat on the bannister.\n   DANNY: So?\n   JODIE: It's a going-out coat."
     },
     {
       "id": "rapture-ep1dj-10",
@@ -3160,7 +3288,7 @@
       "angle": "Eye level",
       "lighting": "Practical night",
       "style": "cinematic",
-      "duration": 8,
+      "duration": 9,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3169,7 +3297,49 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "HANDHELD — 28mm. He stops. Listens. House still. DANNY: They're gone. JODIE: You don't know that. DANNY: Everyone's gone. JODIE: Not everyone.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 8s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. HANDHELD — 28mm\nHe stops. Listens. The house is completely still.\n   DANNY: They're gone.\n   JODIE: You don't know that.\n   DANNY: Everyone's gone.\n   JODIE: Not everyone."
+      "audio": [
+        {
+          "id": "ep1-07-danny-they-re-gone",
+          "character": "DANNY",
+          "text": "They're gone.",
+          "src": "/audio/rapture/ep1/ep1-07/13-danny-they-re-gone.mp3",
+          "offset": 0.6,
+          "duration": 1.44,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-you-don-t-know-that",
+          "character": "JODIE",
+          "text": "You don't know that.",
+          "src": "/audio/rapture/ep1/ep1-07/14-jodie-you-don-t-know-that.mp3",
+          "offset": 2.54,
+          "duration": 1.44,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-everyone-s-gone",
+          "character": "DANNY",
+          "text": "Everyone's gone.",
+          "src": "/audio/rapture/ep1/ep1-07/15-danny-everyone-s-gone.mp3",
+          "offset": 4.48,
+          "duration": 1.6,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-not-everyone",
+          "character": "JODIE",
+          "text": "Not everyone.",
+          "src": "/audio/rapture/ep1/ep1-07/16-jodie-not-everyone.mp3",
+          "offset": 6.58,
+          "duration": 1.36,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD — 28mm. He stops. Listens. House still. DANNY: They're gone. JODIE: You don't know that. DANNY: Everyone's gone. JODIE: Not everyone.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 9s is a working total-shot estimate for animatic playback (the board's 8s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.54s, 4.48s, 6.58s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n10. HANDHELD — 28mm\nHe stops. Listens. The house is completely still.\n   DANNY: They're gone.\n   JODIE: You don't know that.\n   DANNY: Everyone's gone.\n   JODIE: Not everyone."
     },
     {
       "id": "rapture-ep1dj-11",
@@ -3205,7 +3375,7 @@
       "angle": "Eye level",
       "lighting": "Practical night",
       "style": "cinematic",
-      "duration": 12,
+      "duration": 15,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3214,7 +3384,69 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "HANDHELD CLOSE — 50mm. She stops. Not moved. Assessing. JODIE: (calling, not loud) Dad. DANNY: (o.s.) What. JODIE: How many people d'you reckon are still here? DANNY: (o.s.) Don't know. JODIE: One in ten? One in twenty? DANNY: (o.s.) Do the cistern, Jodie.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 12s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. HANDHELD CLOSE — 50mm\nShe stops. Not moved. Assessing.\n   JODIE: (calling, not loud) Dad.\n   DANNY: (o.s.) What.\n   JODIE: How many people d'you reckon are still here?\n   DANNY: (o.s.) Don't know.\n   JODIE: One in ten? One in twenty?\n   DANNY: (o.s.) Do the cistern, Jodie."
+      "audio": [
+        {
+          "id": "ep1-07-jodie-dad",
+          "character": "JODIE",
+          "text": "Dad.",
+          "src": "/audio/rapture/ep1/ep1-07/17-jodie-dad.mp3",
+          "offset": 0.6,
+          "duration": 1.2,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-what",
+          "character": "DANNY",
+          "text": "What.",
+          "src": "/audio/rapture/ep1/ep1-07/18-danny-what.mp3",
+          "offset": 2.3,
+          "duration": 1.36,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-how-many-people-d-you-reckon",
+          "character": "JODIE",
+          "text": "How many people d'you reckon are still here?",
+          "src": "/audio/rapture/ep1/ep1-07/19-jodie-how-many-people-d-you-reckon.mp3",
+          "offset": 4.16,
+          "duration": 2.48,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-don-t-know",
+          "character": "DANNY",
+          "text": "Don't know.",
+          "src": "/audio/rapture/ep1/ep1-07/20-danny-don-t-know.mp3",
+          "offset": 7.14,
+          "duration": 1.36,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-one-in-ten-one-in-twenty",
+          "character": "JODIE",
+          "text": "One in ten? One in twenty?",
+          "src": "/audio/rapture/ep1/ep1-07/21-jodie-one-in-ten-one-in-twenty.mp3",
+          "offset": 9,
+          "duration": 2.48,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-do-the-cistern-jodie",
+          "character": "DANNY",
+          "text": "Do the cistern, Jodie.",
+          "src": "/audio/rapture/ep1/ep1-07/22-danny-do-the-cistern-jodie.mp3",
+          "offset": 11.98,
+          "duration": 2,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD CLOSE — 50mm. She stops. Not moved. Assessing. JODIE: (calling, not loud) Dad. DANNY: (o.s.) What. JODIE: How many people d'you reckon are still here? DANNY: (o.s.) Don't know. JODIE: One in ten? One in twenty? DANNY: (o.s.) Do the cistern, Jodie.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 15s is a working total-shot estimate for animatic playback (the board's 12s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.3s, 4.16s, 7.14s, 9s, 11.98s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n12. HANDHELD CLOSE — 50mm\nShe stops. Not moved. Assessing.\n   JODIE: (calling, not loud) Dad.\n   DANNY: (o.s.) What.\n   JODIE: How many people d'you reckon are still here?\n   DANNY: (o.s.) Don't know.\n   JODIE: One in ten? One in twenty?\n   DANNY: (o.s.) Do the cistern, Jodie."
     },
     {
       "id": "rapture-ep1dj-13",
@@ -3292,7 +3524,7 @@
       "angle": "Eye level",
       "lighting": "Practical night",
       "style": "cinematic",
-      "duration": 10,
+      "duration": 13,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3301,7 +3533,59 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "HANDHELD — 28mm, foot of the stairs. Two of them, close, whispering. DANNY: Out. Now. JODIE: It'll be a cat. DANNY: Out. JODIE: It's always a cat. DANNY: (hissing) One time it wasn't a cat.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. HANDHELD — 28mm, foot of the stairs\nThe two of them, close, whispering.\n   DANNY: Out. Now.\n   JODIE: It'll be a cat.\n   DANNY: Out.\n   JODIE: It's always a cat.\n   DANNY: (hissing) One time it wasn't a cat."
+      "audio": [
+        {
+          "id": "ep1-07-danny-out-now",
+          "character": "DANNY",
+          "text": "Out. Now.",
+          "src": "/audio/rapture/ep1/ep1-07/23-danny-out-now.mp3",
+          "offset": 0.6,
+          "duration": 1.52,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-it-ll-be-a-cat",
+          "character": "JODIE",
+          "text": "It'll be a cat.",
+          "src": "/audio/rapture/ep1/ep1-07/24-jodie-it-ll-be-a-cat.mp3",
+          "offset": 2.62,
+          "duration": 1.6,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-out",
+          "character": "DANNY",
+          "text": "Out.",
+          "src": "/audio/rapture/ep1/ep1-07/25-danny-out.mp3",
+          "offset": 4.72,
+          "duration": 0.96,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-it-s-always-a-cat",
+          "character": "JODIE",
+          "text": "It's always a cat.",
+          "src": "/audio/rapture/ep1/ep1-07/26-jodie-it-s-always-a-cat.mp3",
+          "offset": 6.18,
+          "duration": 2,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-one-time-it-wasn-t-a",
+          "character": "DANNY",
+          "text": "One time it wasn't a cat.",
+          "src": "/audio/rapture/ep1/ep1-07/27-danny-one-time-it-wasn-t-a.mp3",
+          "offset": 8.68,
+          "duration": 3.52,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD — 28mm, foot of the stairs. Two of them, close, whispering. DANNY: Out. Now. JODIE: It'll be a cat. DANNY: Out. JODIE: It's always a cat. DANNY: (hissing) One time it wasn't a cat.\n\nSource lens: 24mm; closest library lens 24mm shown.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 13s is a working total-shot estimate for animatic playback (the board's 10s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 5 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.62s, 4.72s, 6.18s, 8.68s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n16. HANDHELD — 28mm, foot of the stairs\nThe two of them, close, whispering.\n   DANNY: Out. Now.\n   JODIE: It'll be a cat.\n   DANNY: Out.\n   JODIE: It's always a cat.\n   DANNY: (hissing) One time it wasn't a cat."
     },
     {
       "id": "rapture-ep1dj-17",
@@ -3367,7 +3651,59 @@
         "rapture-danny",
         "rapture-jodie"
       ],
-      "notes": "EXT. ALLEY — HANDHELD, 35mm. Both against a wall, breathing hard. Bags between feet. JODIE: It was a cat. DANNY: You don't know that. JODIE: (holding up cistern bottle) We could've had the upstairs one. Header tank's better. DANNY: (a beat) What's a header tank? JODIE: (genuinely pleased) Exactly.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. EXT. ALLEY — HANDHELD, 35mm\nBoth against a wall, breathing hard. Bags between their feet.\n   JODIE: It was a cat.\n   DANNY: You don't know that.\n   JODIE: (holding up the cistern bottle) We could've had the upstairs one. Header tank's better.\n   DANNY: (a beat) What's a header tank?\n   JODIE: (genuinely pleased) Exactly."
+      "audio": [
+        {
+          "id": "ep1-07-jodie-it-was-a-cat",
+          "character": "JODIE",
+          "text": "It was a cat.",
+          "src": "/audio/rapture/ep1/ep1-07/28-jodie-it-was-a-cat.mp3",
+          "offset": 0.6,
+          "duration": 1.52,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-you-don-t-know-that",
+          "character": "DANNY",
+          "text": "You don't know that.",
+          "src": "/audio/rapture/ep1/ep1-07/29-danny-you-don-t-know-that.mp3",
+          "offset": 2.62,
+          "duration": 1.52,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-we-could-ve-had-the-upstairs",
+          "character": "JODIE",
+          "text": "We could've had the upstairs one. Header tank's better.",
+          "src": "/audio/rapture/ep1/ep1-07/30-jodie-we-could-ve-had-the-upstairs.mp3",
+          "offset": 4.64,
+          "duration": 3.2,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-danny-what-s-a-header-tank",
+          "character": "DANNY",
+          "text": "What's a header tank?",
+          "src": "/audio/rapture/ep1/ep1-07/31-danny-what-s-a-header-tank.mp3",
+          "offset": 9.04,
+          "duration": 2,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-07-jodie-exactly",
+          "character": "JODIE",
+          "text": "Exactly.",
+          "src": "/audio/rapture/ep1/ep1-07/32-jodie-exactly.mp3",
+          "offset": 11.54,
+          "duration": 1.36,
+          "voice": "6Ra5KS7u015QzJdh4Tmt",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "EXT. ALLEY — HANDHELD, 35mm. Both against a wall, breathing hard. Bags between feet. JODIE: It was a cat. DANNY: You don't know that. JODIE: (holding up cistern bottle) We could've had the upstairs one. Header tank's better. DANNY: (a beat) What's a header tank? JODIE: (genuinely pleased) Exactly.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 15s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 5 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.62s, 4.64s, 9.04s, 11.54s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n19. EXT. ALLEY — HANDHELD, 35mm\nBoth against a wall, breathing hard. Bags between their feet.\n   JODIE: It was a cat.\n   DANNY: You don't know that.\n   JODIE: (holding up the cistern bottle) We could've had the upstairs one. Header tank's better.\n   DANNY: (a beat) What's a header tank?\n   JODIE: (genuinely pleased) Exactly."
     },
     {
       "id": "rapture-ep1dj-20",
@@ -3389,7 +3725,19 @@
       "characters": [
         "rapture-danny"
       ],
-      "notes": "HANDHELD CLOSE — 50mm, on DANNY. A man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it. DANNY: Don't tell anyone about the door.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. HANDHELD CLOSE — 50mm, on DANNY\nA man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it.\n   DANNY: Don't tell anyone about the door."
+      "audio": [
+        {
+          "id": "ep1-07-danny-don-t-tell-anyone-about-the",
+          "character": "DANNY",
+          "text": "Don't tell anyone about the door.",
+          "src": "/audio/rapture/ep1/ep1-07/33-danny-don-t-tell-anyone-about-the.mp3",
+          "offset": 0.6,
+          "duration": 2.32,
+          "voice": "j4PypwVZQekOFpCUNphu",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "HANDHELD CLOSE — 50mm, on DANNY. A man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it. DANNY: Don't tell anyone about the door.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nHandheld, tight, dark, red practical light. Never a clean wide. Dry, deadpan British black comedy, never grief or a horror performance.\n\nTiming: 6s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed in this scene).\n\nRecorded dialogue: 1 take (eleven_v4, docs/rapture/voice/) at 0.6s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n20. HANDHELD CLOSE — 50mm, on DANNY\nA man who has just been overtaken by his eleven-year-old and is deciding whether to acknowledge it.\n   DANNY: Don't tell anyone about the door."
     },
     {
       "id": "rapture-ep1dj-21",
@@ -3426,7 +3774,7 @@
       "angle": "Eye level",
       "lighting": "Practical night",
       "style": "cinematic",
-      "duration": 30,
+      "duration": 32,
       "durationIsEstimate": true,
       "status": "Draft",
       "transition": "Cut",
@@ -3435,7 +3783,109 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "STATIC TWO-SHOT — 32mm, locked off, through the windscreen. Dark. Both lit by dashboard. Kath eating. Ray not. Hold four seconds. KATH: He'll be all right, that lad. RAY: Which lad? KATH: The one from the car park. RAY: He was thirty-odd. KATH: He looked younger. RAY: They do. Pause six seconds. KATH: I only tasered him. RAY: I know. KATH: People get tasered. RAY: They do.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 30s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC TWO-SHOT — 32mm, locked off, through the windscreen\nDark. Both of them lit by the dashboard. Kath eating. Ray not.\n\nHold. Four seconds.\n   KATH: He'll be all right, that lad.\n   RAY: Which lad?\n   KATH: The one from the car park.\n   RAY: He was thirty-odd.\n   KATH: He looked younger.\n   RAY: They do.\n\n(Pause. Six seconds.)\n   KATH: I only tasered him.\n   RAY: I know.\n   KATH: People get tasered.\n   RAY: They do."
+      "audio": [
+        {
+          "id": "ep1-08-kath-he-ll-be-all-right-that",
+          "character": "KATH",
+          "text": "He'll be all right, that lad.",
+          "src": "/audio/rapture/ep1/ep1-08/01-kath-he-ll-be-all-right-that.mp3",
+          "offset": 4,
+          "duration": 2.32,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-which-lad",
+          "character": "RAY",
+          "text": "Which lad?",
+          "src": "/audio/rapture/ep1/ep1-08/02-ray-which-lad.mp3",
+          "offset": 6.82,
+          "duration": 1.12,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-the-one-from-the-car-park",
+          "character": "KATH",
+          "text": "The one from the car park.",
+          "src": "/audio/rapture/ep1/ep1-08/03-kath-the-one-from-the-car-park.mp3",
+          "offset": 8.44,
+          "duration": 2,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-he-was-thirty-odd",
+          "character": "RAY",
+          "text": "He was thirty-odd.",
+          "src": "/audio/rapture/ep1/ep1-08/04-ray-he-was-thirty-odd.mp3",
+          "offset": 10.94,
+          "duration": 1.76,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-he-looked-younger",
+          "character": "KATH",
+          "text": "He looked younger.",
+          "src": "/audio/rapture/ep1/ep1-08/05-kath-he-looked-younger.mp3",
+          "offset": 13.2,
+          "duration": 1.68,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-they-do",
+          "character": "RAY",
+          "text": "They do.",
+          "src": "/audio/rapture/ep1/ep1-08/06-ray-they-do.mp3",
+          "offset": 15.38,
+          "duration": 1.44,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-i-only-tasered-him",
+          "character": "KATH",
+          "text": "I only tasered him.",
+          "src": "/audio/rapture/ep1/ep1-08/07-kath-i-only-tasered-him.mp3",
+          "offset": 22.82,
+          "duration": 2.72,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-i-know",
+          "character": "RAY",
+          "text": "I know.",
+          "src": "/audio/rapture/ep1/ep1-08/08-ray-i-know.mp3",
+          "offset": 26.04,
+          "duration": 1.12,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-people-get-tasered",
+          "character": "KATH",
+          "text": "People get tasered.",
+          "src": "/audio/rapture/ep1/ep1-08/09-kath-people-get-tasered.mp3",
+          "offset": 27.66,
+          "duration": 1.84,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-they-do-2",
+          "character": "RAY",
+          "text": "They do.",
+          "src": "/audio/rapture/ep1/ep1-08/10-ray-they-do-2.mp3",
+          "offset": 30,
+          "duration": 1.36,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "STATIC TWO-SHOT — 32mm, locked off, through the windscreen. Dark. Both lit by dashboard. Kath eating. Ray not. Hold four seconds. KATH: He'll be all right, that lad. RAY: Which lad? KATH: The one from the car park. RAY: He was thirty-odd. KATH: He looked younger. RAY: They do. Pause six seconds. KATH: I only tasered him. RAY: I know. KATH: People get tasered. RAY: They do.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 32s is a working total-shot estimate for animatic playback (the board's 30s, lengthened so the recorded dialogue fits with 0.6s of air after the last word). Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nRecorded dialogue: 10 takes (eleven_v4, docs/rapture/voice/) at 4s, 6.82s, 8.44s, 10.94s, 13.2s, 15.38s, 22.82s, 26.04s, 27.66s, 30s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n1. STATIC TWO-SHOT — 32mm, locked off, through the windscreen\nDark. Both of them lit by the dashboard. Kath eating. Ray not.\n\nHold. Four seconds.\n   KATH: He'll be all right, that lad.\n   RAY: Which lad?\n   KATH: The one from the car park.\n   RAY: He was thirty-odd.\n   KATH: He looked younger.\n   RAY: They do.\n\n(Pause. Six seconds.)\n   KATH: I only tasered him.\n   RAY: I know.\n   KATH: People get tasered.\n   RAY: They do."
     },
     {
       "id": "rapture-ep1c2-02",
@@ -3458,7 +3908,7 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "STATIC WIDE — 24mm, exterior, from across the road. The car, alone, parked across two bays in an empty street. Interior light on.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 24mm, exterior, from across the road\nThe car, alone, parked across two bays in an empty street. Interior light on."
+      "notes": "STATIC WIDE — 24mm, exterior, from across the road. The car, alone, parked across two bays in an empty street. Interior light on.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 5s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n2. STATIC WIDE — 24mm, exterior, from across the road\nThe car, alone, parked across two bays in an empty street. Interior light on."
     },
     {
       "id": "rapture-ep1c2-03",
@@ -3481,7 +3931,69 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "STATIC TWO-SHOT — as 1. RAY: There's a form. KATH: Ray. RAY: I'm only saying there's a form. KATH: (a beat) Have you got the form? RAY: (immediately) No. Pause. KATH: Then there isn't a form.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC TWO-SHOT — as 1\n   RAY: There's a form.\n   KATH: Ray.\n   RAY: I'm only saying there's a form.\n   KATH: (a beat) Have you got the form?\n   RAY: (immediately) No.\n\n(Pause.)\n   KATH: Then there isn't a form."
+      "audio": [
+        {
+          "id": "ep1-08-ray-there-s-a-form",
+          "character": "RAY",
+          "text": "There's a form.",
+          "src": "/audio/rapture/ep1/ep1-08/11-ray-there-s-a-form.mp3",
+          "offset": 0.6,
+          "duration": 1.44,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-ray",
+          "character": "KATH",
+          "text": "Ray.",
+          "src": "/audio/rapture/ep1/ep1-08/12-kath-ray.mp3",
+          "offset": 2.54,
+          "duration": 1.28,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-i-m-only-saying-there-s",
+          "character": "RAY",
+          "text": "I'm only saying there's a form.",
+          "src": "/audio/rapture/ep1/ep1-08/13-ray-i-m-only-saying-there-s.mp3",
+          "offset": 4.32,
+          "duration": 2.4,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-have-you-got-the-form",
+          "character": "KATH",
+          "text": "Have you got the form?",
+          "src": "/audio/rapture/ep1/ep1-08/14-kath-have-you-got-the-form.mp3",
+          "offset": 7.92,
+          "duration": 1.44,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-no",
+          "character": "RAY",
+          "text": "No.",
+          "src": "/audio/rapture/ep1/ep1-08/15-ray-no.mp3",
+          "offset": 9.46,
+          "duration": 0.96,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-then-there-isn-t-a-form",
+          "character": "KATH",
+          "text": "Then there isn't a form.",
+          "src": "/audio/rapture/ep1/ep1-08/16-kath-then-there-isn-t-a-form.mp3",
+          "offset": 10.92,
+          "duration": 2,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "STATIC TWO-SHOT — as 1. RAY: There's a form. KATH: Ray. RAY: I'm only saying there's a form. KATH: (a beat) Have you got the form? RAY: (immediately) No. Pause. KATH: Then there isn't a form.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 25s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nRecorded dialogue: 6 takes (eleven_v4, docs/rapture/voice/) at 0.6s, 2.54s, 4.32s, 7.92s, 9.46s, 10.92s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n3. STATIC TWO-SHOT — as 1\n   RAY: There's a form.\n   KATH: Ray.\n   RAY: I'm only saying there's a form.\n   KATH: (a beat) Have you got the form?\n   RAY: (immediately) No.\n\n(Pause.)\n   KATH: Then there isn't a form."
     },
     {
       "id": "rapture-ep1c2-04",
@@ -3501,7 +4013,7 @@
       "transition": "Cut",
       "mood": "Dry, deadpan, worse note than it started; the bottle untouched",
       "characters": [],
-      "notes": "INSERT — 85mm, static. The bottle in the cup holder. Neither has drunk any of it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. INSERT — 85mm, static\nThe bottle in the cup holder. Neither of them has drunk any of it."
+      "notes": "INSERT — 85mm, static. The bottle in the cup holder. Neither has drunk any of it.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 3s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n4. INSERT — 85mm, static\nThe bottle in the cup holder. Neither of them has drunk any of it."
     },
     {
       "id": "rapture-ep1c2-05",
@@ -3524,7 +4036,49 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "STATIC TWO-SHOT — as 1. Hold five seconds. RAY: Kath. KATH: Mm. RAY: Who do you think's in charge now? KATH: (no hesitation) Us.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 17s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC TWO-SHOT — as 1\nHold. Five seconds.\n   RAY: Kath.\n   KATH: Mm.\n   RAY: Who do you think's in charge now?\n   KATH: (no hesitation whatsoever) Us."
+      "audio": [
+        {
+          "id": "ep1-08-ray-kath",
+          "character": "RAY",
+          "text": "Kath.",
+          "src": "/audio/rapture/ep1/ep1-08/17-ray-kath.mp3",
+          "offset": 5,
+          "duration": 1.12,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-mm",
+          "character": "KATH",
+          "text": "Mm.",
+          "src": "/audio/rapture/ep1/ep1-08/18-kath-mm.mp3",
+          "offset": 6.62,
+          "duration": 1.12,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-ray-who-do-you-think-s-in",
+          "character": "RAY",
+          "text": "Who do you think's in charge now?",
+          "src": "/audio/rapture/ep1/ep1-08/19-ray-who-do-you-think-s-in.mp3",
+          "offset": 8.24,
+          "duration": 2.08,
+          "voice": "1QDq54sFWbbwMSTMXMrP",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "ep1-08-kath-us",
+          "character": "KATH",
+          "text": "Us.",
+          "src": "/audio/rapture/ep1/ep1-08/20-kath-us.mp3",
+          "offset": 10.42,
+          "duration": 1.04,
+          "voice": "7hD74BZPwJkVPaSckQ7M",
+          "model": "eleven_v4"
+        }
+      ],
+      "notes": "STATIC TWO-SHOT — as 1. Hold five seconds. RAY: Kath. KATH: Mm. RAY: Who do you think's in charge now? KATH: (no hesitation) Us.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 17s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nRecorded dialogue: 4 takes (eleven_v4, docs/rapture/voice/) at 5s, 6.62s, 8.24s, 10.42s: the draft's words, spaced as its own timeline spaces them.\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n5. STATIC TWO-SHOT — as 1\nHold. Five seconds.\n   RAY: Kath.\n   KATH: Mm.\n   RAY: Who do you think's in charge now?\n   KATH: (no hesitation whatsoever) Us."
     },
     {
       "id": "rapture-ep1c2-06",
@@ -3547,7 +4101,7 @@
         "rapture-kath",
         "rapture-ray"
       ],
-      "notes": "STATIC WIDE — 24mm, exterior — same framing as shot 2. The car in an empty street, interior light on, two people sat in it. Hold. CUT.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (none timed except 4s and 6s holds).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC WIDE — 24mm, exterior — same framing as shot 2\nThe car in an empty street, interior light on, two people sat in it.\nHold. CUT."
+      "notes": "STATIC WIDE — 24mm, exterior — same framing as shot 2. The car in an empty street, interior light on, two people sat in it. Hold. CUT.\n\nImage: AI-generated storyboard study; continuity and production approval pending.\n\nStatic two-shot from the bonnet, plus a wide from across the road. The same bottle of water in the cup holder, untouched. Dry, deadpan British black comedy, never a punchline.\n\nTiming: 10s is a working total-shot estimate for animatic playback. Only the pauses in the script are locked (the 4s, 6s and 5s holds are written).\n\nNUMBERED SCRIPT — dialogue and action remain in sequence:\n6. STATIC WIDE — 24mm, exterior — same framing as shot 2\nThe car in an empty street, interior light on, two people sat in it.\nHold. CUT."
     },
     {
       "id": "rapture-board-ep2s1-01",
@@ -12874,7 +13428,7 @@
         "Production",
         "Read first"
       ],
-      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 26 shots, 136s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), fully studied, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 148s, moved here from episode two), fully studied, the cops' second beat (6 shots, 90s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 305-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 159-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (24 shots, 365-second estimate), every shot studied, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 270-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 327-second estimate), fully studied, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The mugging cold open (19 shots, 120s, static locked off, sodium streetlight, the knife starts its journey); St Jude's and the rapture (19 shots, 111s, Nina's locked-off daylight grammar, the rapture happens with no flash); the episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Six ordered boards (storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 119 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-mugging.md, ep1-st-judes.md, ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
+      "content": "8 × 45min British black comedy. Eight episode outlines and a cast bible are supplied; this is NOT eight completed 45-minute scripts.\n\n**Episode One, revised running order — roughly 42 minutes before the tag.** The mugging, St Jude's and the rapture, washing up (Nina Sc 3, 26 shots, 136s, FIX 4: the pendant is her mother's and she always had it, never found on Deborah's bedside; shot 18 is cut and holds its slot, shots 23-24 are her own room drawer and a practical decision), fully studied, the cops' first beat, the pendant and first-vision outline retained as SUPERSEDED (folded into washing up), Martin's storage unit marked PRE-RAPTURE flashback because the machine has to have sat in Max's room for eight weeks, Danny and Jodie's first appearance (21 shots, 158s, moved here from episode two), fully studied, the cops' second beat (6 shots, 92s exactly, ninety seconds as instructed), fully studied, then the 1980 tag ending on NO.\n\n**Episode Four.** The Pat-and-Malcolm dusk cold open (16 shots, 151-second estimate, Graham already chained under the floor), fully studied runs continuously into Scene 2, the old-lady sequence (35 shots, 305-second estimate, two grammars never blended within a shot), fully studied; Scene 3 the scout hut (17 shots, 159-second estimate), fully studied; Number Fourteen (13 shots, 175-second estimate, fully boarded); then Nina's thread, retained and fully boarded — Scene 4 the housing estate at dusk (36 shots, 308-second estimate), every shot studied, the hour wrong for the first time and her grammar otherwise untouched; Scene 5 the doorstep (32 shots, 377-second estimate), every shot studied, two grammars in one building, hers on the street and his indoors, never blended inside a shot and never resolved by the film; Scene 6 the kitchen (24 shots, 365-second estimate), every shot studied, his grammar for twenty-one frames and hers only once they are outside, and it is where the 2011 auction becomes the show's engine. From the kitchen's final frame the beige terminal and CRT travel in the back of the bus with Martin's guitar case beside them, and every later bus frame has to show them.\n\n**Episode Five.** The therapy class (26 shots, 270-second estimate), 0 AI studies on disk and 26 placeholder cards still to generate: one question, fourteen self-serving answers, and a dead dog that ends the argument, with the three protections held on the cards — the long silence at 13, the doctrine visibly invented on the spot at 14, and Carl never saying what he did. It moved from episode six so maintain-order has two episodes to harden, which pushed the episode-three meeting back to recruitment only. Then the night at Pat's (51 shots, 327-second estimate), fully studied, which replaces the previous Pat's-house version and the episode-five basement, rescue and scent outlines: no CCTV anywhere, two grammars only, the cops static through the windscreen on 32mm with handheld only for violence and Danny and Jodie handheld, close, dark, red torchlight, the demons seen only ever in someone's torch beam.\n\n**Also numbered.** The mugging cold open (19 shots, 120s, static locked off, sodium streetlight, the knife starts its journey); St Jude's and the rapture (19 shots, 111s, Nina's locked-off daylight grammar, the rapture happens with no flash); the episode-three angels' cold open (15 shots, 125-second estimate, immaculate advert grammar), fully studied; Graham's interview, an episode-three scene since the restructure (17 shots, 172-second estimate), fully studied; the first wrong lockup (31 shots, 271-second estimate, one dedicated keyframe per shot). Each explicit pause remains exactly as written; every other duration is a visibly marked working estimate.\n\n**Supplied fixes, recorded against the outlines.** The 1980 prologue pockets the tracker at shot 12 instead of leaving it under a radiator, adds one half-second 16mm flash as shot 24f inside the fame montage — his hands fastening something round a laughing girl's neck, the object never clear — and shot 31 is cut so the sequence runs 30 to 32, ERROR to UNDO?; the prologue therefore ends on a refusal rather than a plant. Max's machine shows ERROR and cuts straight to UNDO?. Martin's auction is marked PRE-RAPTURE. The episode-three meeting is trimmed to recruitment only, with the grandma-and-the-dog story and the nun rumour moved to the episode-five therapy class.\n\n**Legacy reference boards.** Six ordered boards (storage facility, police/car park, Limbo, first raid, Hell intake, Wave 3 night drive) are attached to their scenes as ordered keyframes, status Needs review — 119 keyframes plus 3 cards holding the slots of missing files (ep2s2-15.jpg, ep2s3-15.jpg, ep2s3-16.jpg). The washing-up board (a1s3-01 to a1s3-37) is retired: those files stay on disk unreferenced because the scene is now boarded from its own numbered source. Shot type, movement, lens and the 5s durations on the legacy boards are working placeholders; review every keyframe against the current grammar before production. Nothing outside Number Fourteen is approved coverage. Unpictured roles have deliberate initials placeholders, not missing files.\n\nThe full current source is docs/rapture/show-bible.md, indexed by docs/rapture/canon.md. The screenplay sources live in docs/rapture/scenes/: ep1-mugging.md, ep1-st-judes.md, ep1-washing-up.md, ep1-danny-jodie.md, ep1-cops-second-beat.md, ep2-first-wrong-lockup.md, ep3-cold-open.md, ep4-pat-cold-open.md, ep4-pat-house.md, ep4-scout-hut.md, ep4-number-fourteen.md, ep4-housing-estate.md, ep4-doorstep.md, ep4-kitchen.md, ep5-therapy-class.md and ep5-pats-night.md, with the original Number Fourteen and the dialogue-free Pat-alone open preserved in scenes/archive/. The bundle is generated by scripts/rapture/build-project.mjs from scripts/rapture/plan.mjs — edit the plan and the sources, then run npm run build:rapture. Use Export → Project backup to retain your edits; re-opening the bundled workspace never overwrites a saved project.",
       "connections": [
         {
           "targetId": "rapture-ep4-number-fourteen",

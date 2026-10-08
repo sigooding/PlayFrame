@@ -8,7 +8,7 @@ import { neonoireProject } from "./neonoire";
 import { hangarProject, hangarUpdates } from "./hangar";
 import type { FilmProject, ProjectPatch } from "./types";
 import type { sanitizeImport } from "./validation";
-import { bundledFrameUpdates } from "./bundle-refresh";
+import { bundledAudioUpdates, bundledFrameUpdates } from "./bundle-refresh";
 
 function serialize(row: typeof filmProjects.$inferSelect): FilmProject {
   return { ...row, moodboards: row.moodboards ?? [], createdAt: row.createdAt.toISOString(), updatedAt: row.updatedAt.toISOString() };
@@ -50,10 +50,11 @@ export async function openRaptureProject() {
   return project;
 }
 
-/** Delivered images and default-order migrations never replace a writer's screenplay or shot edits. */
+/** Delivered images, recorded dialogue and default-order migrations never replace a writer's screenplay or shot edits. */
 async function refreshNeonoireFrames(existing: FilmProject): Promise<FilmProject> {
   const patch = existing.id === hangarProject.id ? hangarUpdates(existing)
-    : existing.id === neonoireProject.id ? bundledFrameUpdates(existing, neonoireProject) : null;
+    : existing.id === neonoireProject.id ? bundledFrameUpdates(existing, neonoireProject)
+    : existing.id === raptureProject.id ? bundledAudioUpdates(existing, raptureProject) : null;
   if (!patch) return existing;
   const [row] = await db.update(filmProjects).set({ ...patch, updatedAt: new Date() }).where(eq(filmProjects.id, existing.id)).returning();
   return row ? serialize(row) : existing;

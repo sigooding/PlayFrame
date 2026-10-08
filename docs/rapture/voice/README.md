@@ -18,6 +18,7 @@ Episode one, the draft of 21 September 2026 ([`../ep1-screenplay.md`](../ep1-scr
 | Pitch, range, brightness, pace and level of a clip | `FFMPEG=... python3 -I scripts/rapture/voice-measure.py clip.mp3 [words]` |
 | Screens takes for a repeated word, merges speech-to-text transcripts | `FFMPEG=... node scripts/rapture/voice-screen.mjs` (`--fill`, `--heard file.json`) |
 | Replaces faulty takes: archive first, then install | `FFMPEG=... node scripts/rapture/voice-rerecord.mjs --dir <staging> --archive` then `--install` |
+| Lays the dialogue over the frames of the two verbatim boards | `scripts/rapture/voice-frames.mjs` (called by `build-project.mjs`; `verify:rapture` checks it) |
 | Renders the listening page | `node scripts/rapture/voice-page.mjs` |
 
 ## The cast
@@ -33,6 +34,12 @@ Two findings to keep:
 Directions are written the v4 best-practice way, short natural-language directions in brackets in front of the line, the voice and the emotion together: `[Dry, flat, after a long pause] Some of them'll have been in cages.` Kath is `Earnest`, Ray `Dry`, Nina `Flat`; the writer's own parentheticals in the screenplay ("(not stopping)", "(hissing)", "(a beat)") are honoured. The register is one dry comedy throughout ("no pathos beats"), so most lines are plain. **No hushed directions** (`quietly`, `softly`, `weakly`, `whisper`, `murmur`): the NEONOIRE finding (voice README there) is that they read about 10 dB under speaking level, and `voice-plan.mjs` refuses them. The shortest lines read quietest (a one-word "Mm." has few loud frames); the quietest take of 166 is Jodie's "Mm." at -30 dB and the man in the blue coat's "(barely) There's no court." reads -27 dB, on purpose. Voices differ by up to 7 dB (Terry -19.7 dB on average, the man in the blue coat -26.9), so the listening page turns each voice down to the quietest voice's level; the files themselves are as ElevenLabs made them. The whole episode cost about 7,400 credits (one take per line, about a credit a character).
 
 **Pauses.** The screenplay locks the pauses it writes out ("Four seconds of nothing", "A long pause" = 4 s, "An eight-second pause", "A six-second pause", "Five seconds"); `(pause)` is 1.2 s, `(a beat)` 0.7 s, `(immediately)` 0.1 s. Every other gap is a table-read estimate (0.5 s between speakers, 0.8 s for one speaker's next line, more where the page describes action between two lines, capped at 6 s). Each manifest line's `offset` is its start on its own page's timeline; `gapKind` says whether the gap before it is `written` or `estimated`.
+
+## On the frames
+
+`scripts/rapture/voice-frames.mjs`, called by `scripts/rapture/build-project.mjs`, puts the 53 lines of page ep1-07 (Danny and Jodie, 21 shots) and ep1-08 (the cops' second beat, 6 shots) on their frames. It reads each board shot's indented `SPEAKER: text` lines, matches them in order to the manifest's lines for the page and **stops the build** if a speaker or a word differs (the one declared trim: the board says "anyone still alive", the draft "anyone who's still alive"). Inside a frame every line keeps the spacing the page's own timeline gives it; the first word comes 0.6 s after the cut, or after the hold the draft writes ("Hold. Four seconds." before Kath's first line, "Hold. Five seconds." before Ray's "Kath."; the six-second pause is kept). A frame grows when its words do not fit (never shrinks), so the last word has 0.6 s of air: five frames grew, Danny and Jodie from 148 to 158 s and the cops' second beat from 90 to 92 s. A frame's note says so. The offsets come from the page's table-read estimates (0.5 s between speakers, more where the page describes action), so they are estimates like the rest of the timing; the written pauses are exact.
+
+A saved workspace that has no dialogue on these frames receives it on its next read (`bundledAudioUpdates`); nothing else it holds changes.
 
 ## The repeat fault, and the re-records (8 October)
 
@@ -52,6 +59,6 @@ Take the line's `prompt` and `voiceId` from the plan (change the direction in `s
 
 ## Not done
 
-- **The takes are not attached to the storyboard frames yet.** Only two of episode one's boards carry the draft verbatim (Danny and Jodie, `ep1-danny-jodie.md`, "beat for beat, with trims only"; the cops' second beat, `ep1-cops-second-beat.md`, all six shots and every pause); the mugging, St Jude's, the first cops scene and the washing-up were written after their boards and have not been re-boarded, and a take on the wrong frame would mislead. Attaching `audio` to those 27 frames (the NEONOIRE way: `attachAudio` in the builder and `verify:rapture`) is the next step; the other scenes follow when they are re-boarded.
+- **Only two of episode one's scenes have their takes on frames**, because only their boards carry the draft verbatim: Danny and Jodie (`ep1-danny-jodie.md`, "beat for beat, with trims only") and the cops' second beat (`ep1-cops-second-beat.md`). Their 53 lines sit on 12 of the two scenes' 27 frames (the other 15 are inserts, wides and silent beats); the mugging, St Jude's, the first cops scene and the washing-up were written after their boards and have not been re-boarded, and a take on the wrong frame would mislead. How the lines are laid out is described above under "On the frames".
 - Nobody has listened: the blind picks, the directions, the 4-second and 8-second silences and the levels are all unheard. Episodes two to five have dialogue only in their scene boards (about 450 lines: Martin, Pat, Graham, Tamsin, Reek, Alan, the therapy class...), not in a screenplay, and no voices yet.
 - Sighs, laughs and other non-verbal sounds the draft does not write out are not recorded.
