@@ -1,0 +1,297 @@
+{
+ "note": "The shared sound-effect library for NEONOIRE (Nobody's Witness), the Hangar cold open (untitled) and Let the Raptures Commence. `scripts/sfx/build-library.mjs` picks the strongest measured variation of each new effect, levels it into public/audio/sfx/<id>.mp3 and writes library.json and the listening page. `projects` lists where the effect fits (reuse across stories is the point) and says where, per project. The other variations stay in public/audio/sfx/alternates/. Nobody has listened to the new ones: the pick is by measured energy, not by ear, and nothing is wired into an animatic or a game yet.",
+ "new": [
+  {
+   "id": "click-pattern",
+   "title": "Three quick clicks, one slow",
+   "loop": false,
+   "projects": {
+    "hangar": "the clicks in the headset, the trailer, the woods and the trailer-end title"
+   },
+   "prompt": "Three quick dry clicks then one slow click, like a relay or a tongue on teeth, close-mic, dry, no reverb, no voice"
+  },
+  {
+   "id": "crate-knock",
+   "title": "One knock inside the crate",
+   "projects": {
+    "hangar": "the knock from the crate"
+   }
+  },
+  {
+   "id": "knock-three-quick",
+   "title": "Three quick knocks, a gap where the fourth should be",
+   "projects": {
+    "hangar": "the missing fourth knock"
+   }
+  },
+  {
+   "id": "hangar-room-tone",
+   "title": "Empty hangar room tone",
+   "loop": true,
+   "projects": {
+    "hangar": "the emptied hangar",
+    "rapture": "the empty supermarket, the storage unit",
+    "neonoire": "the emptied Hive"
+   }
+  },
+  {
+   "id": "flare-hiss",
+   "title": "Road flare hiss and crackle",
+   "loop": true,
+   "projects": {
+    "hangar": "the woods and the sedan",
+    "neonoire": "night-lane scenes lit by a flare or lighter, never the lighter in 14A"
+   }
+  },
+  {
+   "id": "creek-night",
+   "title": "Creek at night",
+   "loop": true,
+   "projects": {
+    "hangar": "the creek, the woods",
+    "rapture": "open-road and countryside shots"
+   }
+  },
+  {
+   "id": "crickets-night",
+   "title": "Night crickets",
+   "loop": true,
+   "projects": {
+    "hangar": "the road and the farm",
+    "rapture": "the open road at the end of the washing-up"
+   }
+  },
+  {
+   "id": "tyre-howl-chains",
+   "title": "Tyres howling, chains rattling",
+   "projects": {
+    "hangar": "the swerve"
+   }
+  },
+  {
+   "id": "forklift-yard",
+   "title": "Forklift beeper, generator, boots",
+   "loop": true,
+   "projects": {
+    "hangar": "the yard",
+    "rapture": "Martin's storage facility"
+   }
+  },
+  {
+   "id": "gravel-tyres",
+   "title": "Tyres on gravel, engine idling",
+   "projects": {
+    "hangar": "the wagon on the gravel",
+    "rapture": "the minibus pulling out of the yard"
+   }
+  },
+  {
+   "id": "car-tumble-trees",
+   "title": "Car tumbling down a wooded slope",
+   "projects": {
+    "hangar": "the crash through the trees"
+   }
+  },
+  {
+   "id": "engine-start-old",
+   "title": "Old diesel engine fails once, catches",
+   "projects": {
+    "rapture": "Nina's minibus (washing-up, shot 13)",
+    "hangar": "the truck pulling away"
+   }
+  },
+  {
+   "id": "taser-zap",
+   "title": "Taser discharge and the fall",
+   "projects": {
+    "rapture": "Kath fires the taser (first cops scene, shot 14)"
+   }
+  },
+  {
+   "id": "trolley-roll",
+   "title": "Empty trolley rolling across a car park",
+   "projects": {
+    "rapture": "the trolley neither of them looks at",
+    "neonoire": "a Tokyo back-street cart or bicycle rolling past"
+   }
+  },
+  {
+   "id": "water-bottles-burst",
+   "title": "Slabs of water bottles bursting across tarmac",
+   "projects": {
+    "rapture": "the man in the blue coat goes down with the trolley"
+   }
+  },
+  {
+   "id": "car-doors-open",
+   "title": "Two car doors opening at once",
+   "projects": {
+    "rapture": "both police doors open (shot 12)",
+    "neonoire": "Jack's car, scene 14A",
+    "hangar": "the agent's sedan"
+   }
+  },
+  {
+   "id": "glass-crunch-steps",
+   "title": "Footsteps on broken glass",
+   "projects": {
+    "rapture": "the smashed supermarket doors",
+    "neonoire": "demolition rubble and broken glass in the plaza scenes"
+   }
+  },
+  {
+   "id": "tap-cough",
+   "title": "Tap coughing air, brown water, clear",
+   "projects": {
+    "rapture": "St Jude's, the tap that coughs (four times in the draft)"
+   }
+  },
+  {
+   "id": "fax-machine",
+   "title": "Old fax machine handshake and print",
+   "projects": {
+    "rapture": "St Jude's office",
+    "neonoire": "Harada's newspaper office"
+   }
+  },
+  {
+   "id": "radio-jingle",
+   "title": "Kitchen radio, local station jingle",
+   "projects": {
+    "rapture": "the radio that carries on in the kitchen (St Jude's), turned off by Nina"
+   }
+  },
+  {
+   "id": "knife-ring",
+   "title": "Knife dropping on pavement, one ring",
+   "projects": {
+    "rapture": "the knife that rings and lies still (mugging, shot 10)"
+   }
+  },
+  {
+   "id": "cup-rattle",
+   "title": "Cup rocking on a saucer, settling",
+   "projects": {
+    "rapture": "the cup that rocks and settles (St Jude's, shot 20)",
+    "neonoire": "the cups trembling under the arch",
+    "hangar": "ceramic on wood, a small tick"
+   }
+  },
+  {
+   "id": "cashpoint-hum",
+   "title": "Cashpoint hum, quiet street",
+   "loop": true,
+   "projects": {
+    "rapture": "the cashpoint glowing to itself (mugging)",
+    "neonoire": "night street machines"
+   }
+  },
+  {
+   "id": "traffic-distant",
+   "title": "Traffic in the next street",
+   "loop": true,
+   "projects": {
+    "rapture": "the traffic that carries on after he is gone (mugging, shot 9)",
+    "neonoire": "distance beyond the lane"
+   }
+  },
+  {
+   "id": "landline-dead",
+   "title": "Landline: dial tone, three digits, dead",
+   "projects": {
+    "rapture": "St Jude's office (washing-up, shot 9)",
+    "neonoire": "phone scenes; the line that does not connect"
+   }
+  },
+  {
+   "id": "door-lock-handle",
+   "title": "Keys in a lock, handle tried twice",
+   "projects": {
+    "rapture": "Nina locks St Jude's and tries the handle (washing-up, shot 21)",
+    "neonoire": "Jack's office door, the apartment doors"
+   }
+  },
+  {
+   "id": "train-over-arch",
+   "title": "Train over a brick arch",
+   "projects": {
+    "neonoire": "the arch counter, scene 22 (cups trembling)",
+    "rapture": "a station or railway bridge if one is boarded"
+   }
+  },
+  {
+   "id": "footsteps-wet",
+   "title": "Footsteps on wet pavement at night",
+   "projects": {
+    "neonoire": "the lanes in the rain",
+    "rapture": "the mugging's walk and the night drives"
+   }
+  },
+  {
+   "id": "pen-clipboard",
+   "title": "Pen scratching a clipboard",
+   "projects": {
+    "hangar": "the sergeant signing the manifest",
+    "neonoire": "Harada's desk, Ishida's napkin",
+    "rapture": "the ledger (22), the clipboard"
+   }
+  },
+  {
+   "id": "truck-horn",
+   "title": "Truck air horn",
+   "projects": {
+    "hangar": "the swerve (horn, tyre shriek, gravel)",
+    "rapture": "the bus on the open road"
+   }
+  }
+ ],
+ "reused": [
+  {
+   "id": "rain",
+   "file": "/audio/neonoire/sfx/rain.mp3",
+   "title": "Heavy night rain (NEONOIRE)",
+   "projects": {
+    "neonoire": "the lanes (original use)",
+    "rapture": "any wet-night scene; the mugging is dry, so only if re-boarded"
+   }
+  },
+  {
+   "id": "shop-chime",
+   "file": "/audio/neonoire/sfx/shop-chime.mp3",
+   "title": "Two-note shop door chime (NEONOIRE)",
+   "projects": {
+    "neonoire": "the shops (original use)",
+    "rapture": "the supermarket doors, if someone goes in"
+   }
+  },
+  {
+   "id": "suppressed-shot",
+   "file": "/audio/neonoire/sfx/suppressed-shot.mp3",
+   "title": "Suppressed pistol shot (NEONOIRE)",
+   "projects": {
+    "neonoire": "scenes 1, 2, 70 (original use)",
+    "hangar": "no gunfire in the cold open; kept for the agent if the director adds it"
+   }
+  },
+  {
+   "id": "vending-machine-buzz",
+   "file": "/audio/neonoire/sfx/vending-machine-buzz.mp3",
+   "title": "Vending machine buzz (NEONOIRE)",
+   "projects": {
+    "neonoire": "the lane (original use)",
+    "rapture": "the supermarket entrance, the hotel corridor",
+    "hangar": "the booth, the yard office"
+   }
+  },
+  {
+   "id": "body-fall",
+   "file": "/audio/neonoire/sfx/body-fall.mp3",
+   "title": "Body falling on a hard floor (NEONOIRE)",
+   "projects": {
+    "neonoire": "scenes 1, 2, 70 (original use)",
+    "rapture": "the man in the blue coat hits the tarmac (with taser-zap)",
+    "hangar": "the airman, the crash"
+   }
+  }
+ ]
+}
