@@ -25,7 +25,10 @@
    },
    "gap": 0,
    "gapKind": "start",
-   "offset": 0
+   "offset": 0,
+   "phrases": 2,
+   "expected": 1,
+   "heard": "Bag"
   },
   {
    "id": "ep1-01-mugger-come-on-come-on",
@@ -50,7 +53,9 @@
    "gap": 1.38,
    "gapKind": "estimated",
    "gapNote": "action between the lines (13 words)",
-   "offset": 2.82
+   "offset": 2.82,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-01-mugger-just-give-it",
@@ -75,7 +80,9 @@
    "gap": 1.08,
    "gapKind": "estimated",
    "gapNote": "action between the lines (8 words)",
-   "offset": 5.9
+   "offset": 5.9,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-brian-it-s-got-my-name-on",
@@ -99,7 +106,9 @@
    },
    "gap": 0,
    "gapKind": "start",
-   "offset": 0
+   "offset": 0,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-terry-that-s-not-your-name-that",
@@ -123,7 +132,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 2.5
+   "offset": 2.5,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-02-brian-in-my-handwriting",
@@ -147,7 +158,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 6.04
+   "offset": 6.04,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-terry-it-s-my-nail-varnish",
@@ -171,7 +184,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 8.46
+   "offset": 8.46,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-brian-why-ve-you-got-nail-varnish",
@@ -195,7 +210,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 10.88
+   "offset": 10.88,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-02-nina-brian-it-s-a-charger-there",
@@ -219,7 +236,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 13.86
+   "offset": 13.86,
+   "phrases": 2,
+   "expected": 3
   },
   {
    "id": "ep1-02-brian-not-with-the-fast-bit",
@@ -243,7 +262,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 17.8
+   "offset": 17.8,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-then-get-up-earlier",
@@ -267,7 +288,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 20.38
+   "offset": 20.38,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-col-four-weeks-thursday",
@@ -292,7 +315,9 @@
    "gap": 1.44,
    "gapKind": "estimated",
    "gapNote": "action between the lines (14 words)",
-   "offset": 23.42
+   "offset": 23.42,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-i-know",
@@ -316,7 +341,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 25.92
+   "offset": 25.92,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-col-so-i-was-thinking-given-that",
@@ -340,7 +367,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 27.7
+   "offset": 27.7,
+   "phrases": 3,
+   "expected": 3
   },
   {
    "id": "ep1-02-nina-no",
@@ -351,20 +380,37 @@
    "voice": "nina",
    "voiceId": "MKE7TA5PSD9kf6qwdXug",
    "text": "No.",
-   "prompt": "[Flat, immediate] No.",
-   "tag": "Flat, immediate",
+   "prompt": "[Flat] No.",
+   "tag": "Flat",
    "file": "/audio/rapture/ep1/ep1-02/12-nina-no.mp3",
-   "duration": 1.6,
-   "rmsdb": -22.1,
+   "duration": 0.88,
+   "rmsdb": -24.7,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "MO6yXE6TVY9Jp6w3w6V5",
-    "id": "AuAAa3ot8BLK8eQEmeDZ"
+    "session": "MR7YKg8ynssmHrK7Q2jW",
+    "id": "dORrwsbRdD3gvqBzt0Ur"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 32.92
+   "offset": 32.92,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-02/12-nina-no--v1.mp3",
+    "tag": "Flat, immediate",
+    "prompt": "[Flat, immediate] No.",
+    "duration": 1.6,
+    "rmsdb": -22.1,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "MO6yXE6TVY9Jp6w3w6V5",
+     "id": "AuAAa3ot8BLK8eQEmeDZ"
+    },
+    "heard": "No, no"
+   }
   },
   {
    "id": "ep1-02-col-you-haven-t-heard-what-i",
@@ -388,7 +434,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 35.02
+   "offset": 34.3,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-you-want-deborah-s-room-because",
@@ -412,7 +460,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 37.52
+   "offset": 36.8,
+   "phrases": 2,
+   "expected": 2
   },
   {
    "id": "ep1-02-nina-fourteen-no-fourteen-then-your-records",
@@ -437,7 +487,9 @@
    "gap": 2.4,
    "gapKind": "estimated",
    "gapNote": "action between the lines (30 words)",
-   "offset": 43.68
+   "offset": 42.96,
+   "phrases": 6,
+   "expected": 8
   },
   {
    "id": "ep1-02-volunteer-let-me-take-that",
@@ -462,7 +514,9 @@
    "gap": 2.04,
    "gapKind": "estimated",
    "gapNote": "action between the lines (24 words)",
-   "offset": 54.2
+   "offset": 53.48,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-no-2",
@@ -486,7 +540,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 55.9
+   "offset": 55.18,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-volunteer-it-s-heavy",
@@ -510,7 +566,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 57.36
+   "offset": 56.64,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-i-know-2",
@@ -534,7 +592,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 59.3
+   "offset": 58.58,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-volunteer-i-ll-do-the-upstairs-bins",
@@ -559,7 +619,9 @@
    "gap": 0.78,
    "gapKind": "estimated",
    "gapNote": "action between the lines (3 words)",
-   "offset": 61.2
+   "offset": 60.48,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-did-them",
@@ -570,20 +632,37 @@
    "voice": "nina",
    "voiceId": "MKE7TA5PSD9kf6qwdXug",
    "text": "Did them.",
-   "prompt": "[Flat, not turning] Did them.",
-   "tag": "Flat, not turning",
+   "prompt": "[Flat] Did them.",
+   "tag": "Flat",
    "file": "/audio/rapture/ep1/ep1-02/21-nina-did-them.mp3",
-   "duration": 1.92,
-   "rmsdb": -25.2,
+   "duration": 1.12,
+   "rmsdb": -25.3,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "rMzf5wEQPm3UfvpD99SH",
-    "id": "ZHWk9L4N52YxrIWxRYST"
+    "session": "SDtyN4mIqiAG7ZNymaUX",
+    "id": "hDY4G0wI7hRDzWAAgxhB"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 63.38
+   "offset": 62.66,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-02/21-nina-did-them--v1.mp3",
+    "tag": "Flat, not turning",
+    "prompt": "[Flat, not turning] Did them.",
+    "duration": 1.92,
+    "rmsdb": -25.2,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "rMzf5wEQPm3UfvpD99SH",
+     "id": "ZHWk9L4N52YxrIWxRYST"
+    },
+    "heard": "Did them. Did them"
+   }
   },
   {
    "id": "ep1-02-deborah-the-pressure-s-gone-again",
@@ -608,7 +687,9 @@
    "gap": 2.1,
    "gapKind": "estimated",
    "gapNote": "action between the lines (25 words)",
-   "offset": 67.4
+   "offset": 65.88,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-i-ll-look-at-it",
@@ -632,7 +713,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 69.9
+   "offset": 68.38,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-deborah-it-s-him-upstairs-forty-minutes",
@@ -656,7 +739,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 71.84
+   "offset": 70.32,
+   "phrases": 2,
+   "expected": 2
   },
   {
    "id": "ep1-02-nina-it-s-not-him-upstairs",
@@ -680,7 +765,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 75.38
+   "offset": 73.86,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-deborah-forty-i-timed-it",
@@ -704,7 +791,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 77.72
+   "offset": 76.2,
+   "phrases": 2,
+   "expected": 2
   },
   {
    "id": "ep1-02-nina-why",
@@ -715,20 +804,37 @@
    "voice": "nina",
    "voiceId": "MKE7TA5PSD9kf6qwdXug",
    "text": "Why.",
-   "prompt": "[Flat, deadpan] Why.",
-   "tag": "Flat, deadpan",
+   "prompt": "[Flat] Why.",
+   "tag": "Flat",
    "file": "/audio/rapture/ep1/ep1-02/27-nina-why.mp3",
-   "duration": 3.04,
+   "duration": 1.04,
    "rmsdb": -24.6,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "Hp5GXHhSFJ8eTbSAe5pA",
-    "id": "JXOf8QspoPcGkDlmaOVj"
+    "session": "wUeDhXq2B6cwgzn7FQgy",
+    "id": "mDbysMcwO0Tly4PVNWXR"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 80.62
+   "offset": 79.1,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said three times",
+    "archived": "/audio/rapture/archive/ep1/ep1-02/27-nina-why--v1.mp3",
+    "tag": "Flat, deadpan",
+    "prompt": "[Flat, deadpan] Why.",
+    "duration": 3.04,
+    "rmsdb": -24.6,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "Hp5GXHhSFJ8eTbSAe5pA",
+     "id": "JXOf8QspoPcGkDlmaOVj"
+    },
+    "heard": "Why? Why? Why?"
+   }
   },
   {
    "id": "ep1-02-maureen-can-i-ask-you-something-religious",
@@ -753,7 +859,9 @@
    "gap": 3.36,
    "gapKind": "estimated",
    "gapNote": "action between the lines (46 words)",
-   "offset": 87.02
+   "offset": 83.5,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-you-can-ask",
@@ -777,7 +885,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 89.84
+   "offset": 86.32,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-maureen-if-someone-s-took-something-off",
@@ -801,7 +911,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 92.02
+   "offset": 88.5,
+   "phrases": 4,
+   "expected": 5
   },
   {
    "id": "ep1-02-nina-yes",
@@ -825,7 +937,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 100.6
+   "offset": 97.08,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-maureen-even-the-inconvenience-bit",
@@ -849,7 +963,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 102.14
+   "offset": 98.62,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-especially-the-inconvenience-bit",
@@ -873,7 +989,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 104.72
+   "offset": 101.2,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-maureen-what-if-i-put-it-back",
@@ -897,7 +1015,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 108.1
+   "offset": 104.58,
+   "phrases": 2,
+   "expected": 1,
+   "heard": "What if I put it back?"
   },
   {
    "id": "ep1-02-nina-put-it-back-maureen",
@@ -921,7 +1042,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 112.36
+   "offset": 108.84,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-02-maureen-i-m-only-asking-hypothetical",
@@ -945,7 +1068,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 114.54
+   "offset": 111.02,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-nina-put-it-back",
@@ -969,7 +1094,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 117.44
+   "offset": 113.92,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-02-terry-so-i-said-to-him-that",
@@ -994,7 +1121,9 @@
    "gap": 1.56,
    "gapKind": "estimated",
    "gapNote": "action between the lines (16 words)",
-   "offset": 120.2
+   "offset": 116.68,
+   "phrases": 2,
+   "expected": 4
   },
   {
    "id": "ep1-02-nina-oh-for",
@@ -1019,7 +1148,9 @@
    "gap": 4.86,
    "gapKind": "estimated",
    "gapNote": "action between the lines (71 words)",
-   "offset": 128.98
+   "offset": 125.46,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-03-kath-there-s-no-birds",
@@ -1044,7 +1175,9 @@
    "gap": 4,
    "gapKind": "written",
    "gapNote": "Four seconds of nothing.",
-   "offset": 4
+   "offset": 4,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-there-s-birds",
@@ -1068,7 +1201,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 6.02
+   "offset": 6.02,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-not-that-many",
@@ -1092,7 +1227,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 7.96
+   "offset": 7.96,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-they-weren-t-raptured-kath",
@@ -1116,7 +1253,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 9.98
+   "offset": 9.98,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-03-kath-i-m-not-saying-they-were",
@@ -1140,7 +1279,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 12.72
+   "offset": 12.72,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-you-are-saying-that",
@@ -1164,7 +1305,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 15.38
+   "offset": 15.38,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-i-m-saying-there-s-less",
@@ -1188,7 +1331,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 17.64
+   "offset": 17.64,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-some-of-them-ll-have-been",
@@ -1213,7 +1358,9 @@
    "gap": 4,
    "gapKind": "written",
    "gapNote": "A long pause.",
-   "offset": 24.28
+   "offset": 24.28,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-why-are-we-still-policing",
@@ -1238,7 +1385,9 @@
    "gap": 1.26,
    "gapKind": "estimated",
    "gapNote": "action between the lines (11 words)",
-   "offset": 28.1
+   "offset": 28.1,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-because-it-s-what-we-signed",
@@ -1262,7 +1411,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 30.84
+   "offset": 30.84,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-everyone-that-s-left-is-guilty",
@@ -1286,7 +1437,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 33.74
+   "offset": 33.74,
+   "phrases": 2,
+   "expected": 2
   },
   {
    "id": "ep1-03-ray-technically",
@@ -1310,7 +1463,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 37.92
+   "offset": 37.92,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-so-we-should-arrest-everyone",
@@ -1334,7 +1489,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 40.34
+   "offset": 40.34,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-we-can-t-arrest-everyone",
@@ -1358,7 +1515,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 43.24
+   "offset": 43.24,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-we-should-arrest-ourselves",
@@ -1382,7 +1541,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 45.82
+   "offset": 45.82,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-it-s-what-we-signed-up",
@@ -1407,7 +1568,9 @@
    "gap": 8,
    "gapKind": "written",
    "gapNote": "An eight-second pause.",
-   "offset": 55.82
+   "offset": 55.82,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-we-re-here-for-a-reason",
@@ -1432,7 +1595,9 @@
    "gap": 1.56,
    "gapKind": "estimated",
    "gapNote": "action between the lines (16 words)",
-   "offset": 59.62
+   "offset": 59.62,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-mm",
@@ -1443,20 +1608,37 @@
    "voice": "ray",
    "voiceId": "1QDq54sFWbbwMSTMXMrP",
    "text": "Mm.",
-   "prompt": "[Dry, noncommittal] Mm.",
-   "tag": "Dry, noncommittal",
+   "prompt": "[Dry] Mm.",
+   "tag": "Dry",
    "file": "/audio/rapture/ep1/ep1-03/18-ray-mm.mp3",
-   "duration": 2.08,
-   "rmsdb": -24.4,
+   "duration": 1.12,
+   "rmsdb": -24.5,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "cn6ol7vEcnJ4GrnLU1sy",
-    "id": "C1JI9VjETcyBYCDzIaq7"
+    "session": "qczC2MdggRZwOa2uxikE",
+    "id": "L5mlSDhfTfaO8ymRMisU"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 62.2
+   "offset": 62.2,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-03/18-ray-mm--v1.mp3",
+    "tag": "Dry, noncommittal",
+    "prompt": "[Dry, noncommittal] Mm.",
+    "duration": 2.08,
+    "rmsdb": -24.4,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "cn6ol7vEcnJ4GrnLU1sy",
+     "id": "C1JI9VjETcyBYCDzIaq7"
+    },
+    "heard": "Hmm. Hmm."
+   }
   },
   {
    "id": "ep1-03-kath-to-teach-moral-justice",
@@ -1480,7 +1662,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 64.78
+   "offset": 63.82,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-who-told-you-that",
@@ -1504,7 +1688,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 67.76
+   "offset": 66.8,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-you-did",
@@ -1528,7 +1714,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 69.62
+   "offset": 68.66,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-sounds-like-me",
@@ -1553,7 +1741,9 @@
    "gap": 1.7,
    "gapKind": "estimated",
    "gapNote": "(pause)",
-   "offset": 72.36
+   "offset": 71.4,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-the-man-upstairs-might-still-save",
@@ -1577,7 +1767,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 75.1
+   "offset": 74.14,
+   "phrases": 2,
+   "expected": 2
   },
   {
    "id": "ep1-03-ray-might",
@@ -1588,20 +1780,37 @@
    "voice": "ray",
    "voiceId": "1QDq54sFWbbwMSTMXMrP",
    "text": "Might.",
-   "prompt": "[Dry, noncommittal] Might.",
-   "tag": "Dry, noncommittal",
+   "prompt": "[Dry] Might.",
+   "tag": "Dry",
    "file": "/audio/rapture/ep1/ep1-03/24-ray-might.mp3",
-   "duration": 2.24,
-   "rmsdb": -23.8,
+   "duration": 1.2,
+   "rmsdb": -24.1,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "876l92mrUv0NqIQwAc6i",
-    "id": "4TqIT5u1OMyxxxHviP8C"
+    "session": "Tem3XC6wJx5RLSY7DoA0",
+    "id": "RcvDTkgowvP74vmQoBzz"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 79.76
+   "offset": 78.8,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-03/24-ray-might--v1.mp3",
+    "tag": "Dry, noncommittal",
+    "prompt": "[Dry, noncommittal] Might.",
+    "duration": 2.24,
+    "rmsdb": -23.8,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "876l92mrUv0NqIQwAc6i",
+     "id": "4TqIT5u1OMyxxxHviP8C"
+    },
+    "heard": "Might. Might"
+   }
   },
   {
    "id": "ep1-03-kath-that-s-a-purpose-that",
@@ -1625,7 +1834,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 82.5
+   "offset": 80.5,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-03-ray-eat-your-sandwich",
@@ -1649,7 +1860,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 85.16
+   "offset": 83.16,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-you-ve-not-eaten",
@@ -1674,7 +1887,9 @@
    "gap": 1.74,
    "gapKind": "estimated",
    "gapNote": "action between the lines (19 words)",
-   "offset": 88.5
+   "offset": 86.5,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-i-m-not-hungry",
@@ -1698,7 +1913,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 90.52
+   "offset": 88.52,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-i-ve-never-seen-you-eat",
@@ -1722,7 +1939,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 92.54
+   "offset": 90.54,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-you-ve-seen-me-eat",
@@ -1746,7 +1965,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 95.2
+   "offset": 93.2,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-when",
@@ -1770,7 +1991,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 97.38
+   "offset": 95.38,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-gav-s-leaving-do",
@@ -1794,7 +2017,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 99
+   "offset": 97,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-that-was-a-buffet",
@@ -1819,7 +2044,9 @@
    "gap": 1.7,
    "gapKind": "estimated",
    "gapNote": "(pause)",
-   "offset": 102.22
+   "offset": 100.22,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-so",
@@ -1843,7 +2070,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 104.88
+   "offset": 102.88,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-anyone-can-stand-at-a-buffet",
@@ -1867,7 +2096,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 106.42
+   "offset": 104.42,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-male-thirties-blue-coat-entered-the",
@@ -1892,7 +2123,9 @@
    "gap": 3.54,
    "gapKind": "estimated",
    "gapNote": "action between the lines (49 words)",
-   "offset": 112.2
+   "offset": 110.2,
+   "phrases": 3,
+   "expected": 4
   },
   {
    "id": "ep1-03-ray-twenty-past",
@@ -1916,7 +2149,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 117.66
+   "offset": 115.66,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-approximately-quarter-past",
@@ -1940,7 +2175,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 119.6
+   "offset": 117.6,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-it-s-twenty-past",
@@ -1964,7 +2201,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 122.42
+   "offset": 120.42,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-via-a-door-that-was-already",
@@ -1988,7 +2227,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 124.6
+   "offset": 122.6,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-it-wasn-t-open-it-was",
@@ -2012,7 +2253,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 128.06
+   "offset": 126.06,
+   "phrases": 2,
+   "expected": 2
   },
   {
    "id": "ep1-03-kath-open-is-smashed-ray",
@@ -2036,7 +2279,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 131.28
+   "offset": 129.28,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-03-ray-not-in-a-statement-it-isn",
@@ -2061,7 +2306,9 @@
    "gap": 1.7,
    "gapKind": "estimated",
    "gapNote": "(pause)",
-   "offset": 135.38
+   "offset": 133.38,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-that-s-more-than-he-needs",
@@ -2086,7 +2333,9 @@
    "gap": 1.74,
    "gapKind": "estimated",
    "gapNote": "action between the lines (19 words)",
-   "offset": 139.12
+   "offset": 137.12,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-that-s-a-lot-of-water",
@@ -2110,7 +2359,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 141.62
+   "offset": 139.62,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-he-s-selling-that",
@@ -2134,7 +2385,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 143.88
+   "offset": 141.88,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-to-who",
@@ -2145,21 +2398,38 @@
    "voice": "ray",
    "voiceId": "1QDq54sFWbbwMSTMXMrP",
    "text": "To who?",
-   "prompt": "[Dry, genuinely curious] To who?",
-   "tag": "Dry, genuinely curious",
+   "prompt": "[Curious] To who?",
+   "tag": "Curious",
    "file": "/audio/rapture/ep1/ep1-03/47-ray-to-who.mp3",
-   "duration": 2.24,
-   "rmsdb": -22.1,
+   "duration": 1.12,
+   "rmsdb": -21.9,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "MegtWjvKLpyXoh3Tbu6z",
-    "id": "VSB8w67DTMVF0xRjkKJl"
+    "session": "SYE07tUSLuGaQJ7wYi3P",
+    "id": "DIsd98U8fKMaHFTnVDrX"
    },
    "gap": 1.2,
    "gapKind": "estimated",
    "gapNote": "(a beat)",
-   "offset": 146.52
+   "offset": 144.52,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-03/47-ray-to-who--v1.mp3",
+    "tag": "Dry, genuinely curious",
+    "prompt": "[Dry, genuinely curious] To who?",
+    "duration": 2.24,
+    "rmsdb": -22.1,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "MegtWjvKLpyXoh3Tbu6z",
+     "id": "VSB8w67DTMVF0xRjkKJl"
+    },
+    "heard": "To who? To who?"
+   }
   },
   {
    "id": "ep1-03-kath-do-we-go-in",
@@ -2183,7 +2453,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 149.26
+   "offset": 146.14,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-that-s-entering-premises",
@@ -2207,7 +2479,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 151.04
+   "offset": 147.92,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-right",
@@ -2231,7 +2505,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 153.46
+   "offset": 150.34,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-we-ll-have-him-on-the",
@@ -2255,7 +2531,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 155.24
+   "offset": 152.12,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-police-stay-where-you-are",
@@ -2280,7 +2558,9 @@
    "gap": 2.04,
    "gapKind": "estimated",
    "gapNote": "action between the lines (24 words)",
-   "offset": 158.96
+   "offset": 155.84,
+   "phrases": 1,
+   "expected": 2
   },
   {
    "id": "ep1-03-ray-kath",
@@ -2291,21 +2571,38 @@
    "voice": "ray",
    "voiceId": "1QDq54sFWbbwMSTMXMrP",
    "text": "Kath.",
-   "prompt": "[Dry, reproachful] Kath.",
-   "tag": "Dry, reproachful",
+   "prompt": "[Dry] Kath.",
+   "tag": "Dry",
    "file": "/audio/rapture/ep1/ep1-03/53-ray-kath.mp3",
-   "duration": 1.92,
-   "rmsdb": -27.6,
+   "duration": 1.2,
+   "rmsdb": -26,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "N7nAX3xyK4CSFXTqVpSz",
-    "id": "GQKeUVvbyuSSWR7SH2ca"
+    "session": "3iQncHdEIVjmQ4BMY8MF",
+    "id": "D9VeSv8i5WuialxSGqsT"
    },
    "gap": 3.48,
    "gapKind": "estimated",
    "gapNote": "action between the lines (48 words)",
-   "offset": 164.52
+   "offset": 161.4,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "read as \"Ca- calf\"",
+    "archived": "/audio/rapture/archive/ep1/ep1-03/53-ray-kath--v1.mp3",
+    "tag": "Dry, reproachful",
+    "prompt": "[Dry, reproachful] Kath.",
+    "duration": 1.92,
+    "rmsdb": -27.6,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "N7nAX3xyK4CSFXTqVpSz",
+     "id": "GQKeUVvbyuSSWR7SH2ca"
+    },
+    "heard": "Ca- calf"
+   }
   },
   {
    "id": "ep1-03-kath-he-was-running",
@@ -2329,7 +2626,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 166.94
+   "offset": 163.1,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-that-s-a-form",
@@ -2353,7 +2652,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 169.04
+   "offset": 165.2,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-it-s-not-a-form",
@@ -2377,7 +2678,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 171.06
+   "offset": 167.22,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-discharge-of-a-taser-is-a",
@@ -2401,7 +2704,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 173.4
+   "offset": 169.56,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-who-s-it-going-to",
@@ -2426,7 +2731,9 @@
    "gap": 1.7,
    "gapKind": "estimated",
    "gapNote": "(pause)",
-   "offset": 177.66
+   "offset": 173.82,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-you-do-not-have-to-say",
@@ -2437,21 +2744,38 @@
    "voice": "kath",
    "voiceId": "7hD74BZPwJkVPaSckQ7M",
    "text": "You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
-   "prompt": "[Reciting from memory, absolutely sincere, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
-   "tag": "Reciting from memory, absolutely sincere, deadpan",
+   "prompt": "[Reciting, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
+   "tag": "Reciting, deadpan",
    "file": "/audio/rapture/ep1/ep1-03/59-kath-you-do-not-have-to-say.mp3",
-   "duration": 10.56,
-   "rmsdb": -21.2,
+   "duration": 7.76,
+   "rmsdb": -23,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "iolpOpiqw7TL76ZA4jEJ",
-    "id": "FwoNWnvfiP4PJarrxLFF"
+    "session": "sxnap3qOHSt1BvKDx28l",
+    "id": "pnAioC4jrYmXjx6rIvtX"
    },
    "gap": 1.86,
    "gapKind": "estimated",
    "gapNote": "action between the lines (21 words)",
-   "offset": 181.2
+   "offset": 177.36,
+   "phrases": 2,
+   "expected": 2,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "first sentence said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-03/59-kath-you-do-not-have-to-say--v1.mp3",
+    "tag": "Reciting from memory, absolutely sincere, deadpan",
+    "prompt": "[Reciting from memory, absolutely sincere, deadpan] You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court.",
+    "duration": 10.56,
+    "rmsdb": -21.2,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "iolpOpiqw7TL76ZA4jEJ",
+     "id": "FwoNWnvfiP4PJarrxLFF"
+    },
+    "heard": "You do not have to say anything. You do not have to say anything. But it may harm your defense if you do not mention when questioned something which you later rely on in court."
+   }
   },
   {
    "id": "ep1-03-man-in-blue-coat-there-s-no-court",
@@ -2475,7 +2799,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 192.26
+   "offset": 185.62,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-there-s-no-court-yet",
@@ -2499,7 +2825,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 194.92
+   "offset": 188.28,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-they-ll-have-gone-south",
@@ -2524,7 +2852,9 @@
    "gap": 4,
    "gapKind": "written",
    "gapNote": "Four seconds.",
-   "offset": 200.76
+   "offset": 194.12,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-who",
@@ -2535,20 +2865,37 @@
    "voice": "kath",
    "voiceId": "7hD74BZPwJkVPaSckQ7M",
    "text": "Who?",
-   "prompt": "[Earnest, puzzled] Who?",
-   "tag": "Earnest, puzzled",
+   "prompt": "[Puzzled] Who?",
+   "tag": "Puzzled",
    "file": "/audio/rapture/ep1/ep1-03/63-kath-who.mp3",
-   "duration": 2.16,
-   "rmsdb": -22.8,
+   "duration": 1.04,
+   "rmsdb": -24.3,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "XSNfwpxDPCbWwPES8Iad",
-    "id": "KoSGCSzdPcpZqZnlW3SA"
+    "session": "BpAadU4DswjffdZsbK9m",
+    "id": "wC2uBga9yvrCaqB1eByc"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 202.94
+   "offset": 196.3,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-03/63-kath-who--v1.mp3",
+    "tag": "Earnest, puzzled",
+    "prompt": "[Earnest, puzzled] Who?",
+    "duration": 2.16,
+    "rmsdb": -22.8,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "XSNfwpxDPCbWwPES8Iad",
+     "id": "KoSGCSzdPcpZqZnlW3SA"
+    },
+    "heard": "Who? Who?"
+   }
   },
   {
    "id": "ep1-03-ray-the-birds",
@@ -2572,7 +2919,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 205.6
+   "offset": 197.84,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-kath-it-s-july",
@@ -2596,7 +2945,9 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 207.46
+   "offset": 199.7,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-03-ray-some-of-them-go-early",
@@ -2621,7 +2972,9 @@
    "gap": 4,
    "gapKind": "written",
    "gapNote": "A long pause.",
-   "offset": 212.9
+   "offset": 205.14,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-04-nina-i-know",
@@ -2645,7 +2998,9 @@
    },
    "gap": 0,
    "gapKind": "start",
-   "offset": 0
+   "offset": 0,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-04-nina-you-little-sod",
@@ -2656,21 +3011,38 @@
    "voice": "nina",
    "voiceId": "MKE7TA5PSD9kf6qwdXug",
    "text": "You little sod.",
-   "prompt": "[Almost fond, dry] You little sod.",
-   "tag": "Almost fond, dry",
+   "prompt": "[Fond] You little sod.",
+   "tag": "Fond",
    "file": "/audio/rapture/ep1/ep1-04/02-nina-you-little-sod.mp3",
-   "duration": 3.52,
-   "rmsdb": -25.9,
+   "duration": 1.92,
+   "rmsdb": -24.5,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "2MlR5OvDq6XayKWm1Vhu",
-    "id": "53cH9hja9aBgkUl8QxLo"
+    "session": "L7W1dHQcxXaRd5dEk52u",
+    "id": "le4QCSPKqNadRyVVB04X"
    },
    "gap": 3.24,
    "gapKind": "estimated",
    "gapNote": "action between the lines (44 words)",
-   "offset": 4.44
+   "offset": 4.44,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-04/02-nina-you-little-sod--v1.mp3",
+    "tag": "Almost fond, dry",
+    "prompt": "[Almost fond, dry] You little sod.",
+    "duration": 3.52,
+    "rmsdb": -25.9,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "2MlR5OvDq6XayKWm1Vhu",
+     "id": "53cH9hja9aBgkUl8QxLo"
+    },
+    "heard": "You little sod. You little sod"
+   }
   },
   {
    "id": "ep1-04-nina-don-t-you-start",
@@ -2695,7 +3067,9 @@
    "gap": 6,
    "gapKind": "estimated",
    "gapNote": "action between the lines (144 words)",
-   "offset": 13.96
+   "offset": 12.36,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-04-nina-that-s-not-an-address",
@@ -2720,7 +3094,9 @@
    "gap": 6,
    "gapKind": "estimated",
    "gapNote": "action between the lines (199 words)",
-   "offset": 21.48
+   "offset": 19.88,
+   "phrases": 1,
+   "expected": 1
   },
   {
    "id": "ep1-06-martin-course",
@@ -2731,20 +3107,37 @@
    "voice": "martin",
    "voiceId": "9Vo4wCDSj6XOyFtYl4dG",
    "text": "Course.",
-   "prompt": "[Resigned, aggrieved, to nobody] Course.",
-   "tag": "Resigned, aggrieved, to nobody",
+   "prompt": "[Resigned] Course.",
+   "tag": "Resigned",
    "file": "/audio/rapture/ep1/ep1-06/01-martin-course.mp3",
-   "duration": 2.32,
-   "rmsdb": -23.9,
+   "duration": 1.28,
+   "rmsdb": -24.6,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "OLfMmNLHySxDf2KkyQVx",
-    "id": "GpeRHTfKU5oU3eu5KcED"
+    "session": "z2gGqCTWpohtFskp6VjW",
+    "id": "QHFXisBrxzYUU3NUwv5p"
    },
    "gap": 0,
    "gapKind": "start",
-   "offset": 0
+   "offset": 0,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-06/01-martin-course--v1.mp3",
+    "tag": "Resigned, aggrieved, to nobody",
+    "prompt": "[Resigned, aggrieved, to nobody] Course.",
+    "duration": 2.32,
+    "rmsdb": -23.9,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "OLfMmNLHySxDf2KkyQVx",
+     "id": "GpeRHTfKU5oU3eu5KcED"
+    },
+    "heard": "Course. Course"
+   }
   },
   {
    "id": "ep1-07-jodie-it-s-not-that-sort-of",
@@ -2768,7 +3161,10 @@
    },
    "gap": 0,
    "gapKind": "start",
-   "offset": 0
+   "offset": 0,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It's not that sort of lock"
   },
   {
    "id": "ep1-07-danny-it-is",
@@ -2792,7 +3188,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 2.34
+   "offset": 2.34,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It is!"
   },
   {
    "id": "ep1-07-jodie-it-s-the-other-sort",
@@ -2816,7 +3215,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 4.12
+   "offset": 4.12,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It's the other sort"
   },
   {
    "id": "ep1-07-danny-it-was-already",
@@ -2827,21 +3229,38 @@
    "voice": "danny",
    "voiceId": "j4PypwVZQekOFpCUNphu",
    "text": "It was already —",
-   "prompt": "[Caught out, embarrassed, trailing off] It was already —",
-   "tag": "Caught out, embarrassed, trailing off",
+   "prompt": "[Embarrassed] It was already —",
+   "tag": "Embarrassed",
    "file": "/audio/rapture/ep1/ep1-07/04-danny-it-was-already.mp3",
-   "duration": 2.24,
-   "rmsdb": -23.3,
+   "duration": 1.92,
+   "rmsdb": -21,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "M3QQBhvC96BfhkqS8teO",
-    "id": "Veko03gELXMB7HgDAI5m"
+    "session": "NOiKzqvLuaQtHcwQ3CDh",
+    "id": "RBnQSgYGnPAz9REYyCvW"
    },
    "gap": 2.76,
    "gapKind": "estimated",
    "gapNote": "action between the lines (36 words)",
-   "offset": 8.64
+   "offset": 8.64,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "stammered (\"It, it was already\")",
+    "archived": "/audio/rapture/archive/ep1/ep1-07/04-danny-it-was-already--v1.mp3",
+    "tag": "Caught out, embarrassed, trailing off",
+    "prompt": "[Caught out, embarrassed, trailing off] It was already —",
+    "duration": 2.24,
+    "rmsdb": -23.3,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "M3QQBhvC96BfhkqS8teO",
+     "id": "Veko03gELXMB7HgDAI5m"
+    },
+    "heard": "It, it was already"
+   }
   },
   {
    "id": "ep1-07-jodie-mm",
@@ -2852,20 +3271,37 @@
    "voice": "jodie",
    "voiceId": "6Ra5KS7u015QzJdh4Tmt",
    "text": "Mm.",
-   "prompt": "[Dry, noncommittal] Mm.",
-   "tag": "Dry, noncommittal",
+   "prompt": "[Flat] Mm.",
+   "tag": "Flat",
    "file": "/audio/rapture/ep1/ep1-07/05-jodie-mm.mp3",
-   "duration": 1.84,
-   "rmsdb": -30.3,
+   "duration": 0.96,
+   "rmsdb": -27.5,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "FQGtLx7s3BCHoM35ixxi",
-    "id": "z85jfW8uadhxtovvi3IP"
+    "session": "ABUIXAhoyQ3tefDg4sBZ",
+    "id": "lOu10tV9dizTXshD6iwG"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 11.38
+   "offset": 11.06,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "two hums",
+    "archived": "/audio/rapture/archive/ep1/ep1-07/05-jodie-mm--v1.mp3",
+    "tag": "Dry, noncommittal",
+    "prompt": "[Dry, noncommittal] Mm.",
+    "duration": 1.84,
+    "rmsdb": -30.3,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "FQGtLx7s3BCHoM35ixxi",
+     "id": "z85jfW8uadhxtovvi3IP"
+    },
+    "heard": "うん、うん。"
+   }
   },
   {
    "id": "ep1-07-danny-rules",
@@ -2876,21 +3312,38 @@
    "voice": "danny",
    "voiceId": "j4PypwVZQekOFpCUNphu",
    "text": "Rules.",
-   "prompt": "[Low, steady, serious] Rules.",
-   "tag": "Low, steady, serious",
+   "prompt": "[Serious] Rules.",
+   "tag": "Serious",
    "file": "/audio/rapture/ep1/ep1-07/06-danny-rules.mp3",
-   "duration": 2.56,
-   "rmsdb": -22.8,
+   "duration": 1.2,
+   "rmsdb": -21.8,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "QH5XS88Fc2SsFf7tHBTY",
-    "id": "MDqtohN0fsdz46cr0570"
+    "session": "yZEaEszCO7lYLjh5fPUG",
+    "id": "PqRx4HdPPQgerCR499Fn"
    },
    "gap": 1.62,
    "gapKind": "estimated",
    "gapNote": "action between the lines (17 words)",
-   "offset": 14.84
+   "offset": 13.64,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-07/06-danny-rules--v1.mp3",
+    "tag": "Low, steady, serious",
+    "prompt": "[Low, steady, serious] Rules.",
+    "duration": 2.56,
+    "rmsdb": -22.8,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "QH5XS88Fc2SsFf7tHBTY",
+     "id": "MDqtohN0fsdz46cr0570"
+    },
+    "heard": "Rules. Rules"
+   }
   },
   {
    "id": "ep1-07-jodie-nothing-off-anyone-who-s-still",
@@ -2914,7 +3367,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 17.9
+   "offset": 15.34,
+   "phrases": 3,
+   "expected": 3,
+   "heard": "Nothing off anyone who's still alive. Nothing off the dead that's got a name on it. No upstairs"
   },
   {
    "id": "ep1-07-danny-and",
@@ -2938,7 +3394,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 24.96
+   "offset": 22.4,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "And?"
   },
   {
    "id": "ep1-07-jodie-and-check-the-cistern",
@@ -2962,7 +3421,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 26.58
+   "offset": 24.02,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "And check the cistern"
   },
   {
    "id": "ep1-07-jodie-there-s-a-coat-on-the",
@@ -2987,7 +3449,10 @@
    "gap": 3.18,
    "gapKind": "estimated",
    "gapNote": "action between the lines (43 words)",
-   "offset": 32.24
+   "offset": 29.68,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "There's a coat on the banister"
   },
   {
    "id": "ep1-07-danny-so",
@@ -3011,7 +3476,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 34.82
+   "offset": 32.26,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "So?"
   },
   {
    "id": "ep1-07-jodie-it-s-a-going-out-coat",
@@ -3035,7 +3503,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 36.36
+   "offset": 33.8,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It's a going out coat"
   },
   {
    "id": "ep1-07-danny-they-re-gone",
@@ -3046,21 +3517,38 @@
    "voice": "danny",
    "voiceId": "j4PypwVZQekOFpCUNphu",
    "text": "They're gone.",
-   "prompt": "[Uneasy, convincing himself] They're gone.",
-   "tag": "Uneasy, convincing himself",
+   "prompt": "[Uneasy] They're gone.",
+   "tag": "Uneasy",
    "file": "/audio/rapture/ep1/ep1-07/13-danny-they-re-gone.mp3",
-   "duration": 2.96,
-   "rmsdb": -22.7,
+   "duration": 1.44,
+   "rmsdb": -23.3,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "an6kefdzGq6MURdUdYrK",
-    "id": "a9ngQDQkM4m5v6AQtq3T"
+    "session": "JJ7wRdQq12EgdiIepyZS",
+    "id": "XPNzAWk7WK3onPOWOMxQ"
    },
    "gap": 1.08,
    "gapKind": "estimated",
    "gapNote": "action between the lines (8 words)",
-   "offset": 39.28
+   "offset": 36.72,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-07/13-danny-they-re-gone--v1.mp3",
+    "tag": "Uneasy, convincing himself",
+    "prompt": "[Uneasy, convincing himself] They're gone.",
+    "duration": 2.96,
+    "rmsdb": -22.7,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "an6kefdzGq6MURdUdYrK",
+     "id": "a9ngQDQkM4m5v6AQtq3T"
+    },
+    "heard": "They're gone. They're gone"
+   }
   },
   {
    "id": "ep1-07-jodie-you-don-t-know-that",
@@ -3084,7 +3572,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 42.74
+   "offset": 38.66,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "You don't know that"
   },
   {
    "id": "ep1-07-danny-everyone-s-gone",
@@ -3108,7 +3599,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 44.68
+   "offset": 40.6,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Everyone's gone"
   },
   {
    "id": "ep1-07-jodie-not-everyone",
@@ -3132,7 +3626,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 46.78
+   "offset": 42.7,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Not everyone"
   },
   {
    "id": "ep1-07-jodie-dad",
@@ -3157,7 +3654,10 @@
    "gap": 1.98,
    "gapKind": "estimated",
    "gapNote": "action between the lines (23 words)",
-   "offset": 50.12
+   "offset": 46.04,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Dad"
   },
   {
    "id": "ep1-07-danny-what",
@@ -3181,7 +3681,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 51.82
+   "offset": 47.74,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "What?"
   },
   {
    "id": "ep1-07-jodie-how-many-people-d-you-reckon",
@@ -3205,7 +3708,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 53.68
+   "offset": 49.6,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "How many people do you reckon are still here?"
   },
   {
    "id": "ep1-07-danny-don-t-know",
@@ -3229,7 +3735,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 56.66
+   "offset": 52.58,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Don't know"
   },
   {
    "id": "ep1-07-jodie-one-in-ten-one-in-twenty",
@@ -3240,20 +3749,37 @@
    "voice": "jodie",
    "voiceId": "6Ra5KS7u015QzJdh4Tmt",
    "text": "One in ten? One in twenty?",
-   "prompt": "[Idle, working it out] One in ten? One in twenty?",
-   "tag": "Idle, working it out",
+   "prompt": "[Idle] One in ten? One in twenty?",
+   "tag": "Idle",
    "file": "/audio/rapture/ep1/ep1-07/21-jodie-one-in-ten-one-in-twenty.mp3",
-   "duration": 3.84,
-   "rmsdb": -27,
+   "duration": 2.48,
+   "rmsdb": -25.5,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "7GNuAU8B0xOBN1aH8iAF",
-    "id": "73TJApP7I4WNdfjJzVKJ"
+    "session": "2bAKTUrr4U78aKw9dojf",
+    "id": "m82HutPvIUXYWo3Seima"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 58.52
+   "offset": 54.44,
+   "phrases": 2,
+   "expected": 2,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "\"one in ten\" said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-07/21-jodie-one-in-ten-one-in-twenty--v1.mp3",
+    "tag": "Idle, working it out",
+    "prompt": "[Idle, working it out] One in ten? One in twenty?",
+    "duration": 3.84,
+    "rmsdb": -27,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "7GNuAU8B0xOBN1aH8iAF",
+     "id": "73TJApP7I4WNdfjJzVKJ"
+    },
+    "heard": "One in ten one in ten one in twenty?"
+   }
   },
   {
    "id": "ep1-07-danny-do-the-cistern-jodie",
@@ -3277,7 +3803,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 62.86
+   "offset": 57.42,
+   "phrases": 1,
+   "expected": 2,
+   "heard": "Do the cistern, Jodie"
   },
   {
    "id": "ep1-07-danny-out-now",
@@ -3302,7 +3831,10 @@
    "gap": 2.46,
    "gapKind": "estimated",
    "gapNote": "action between the lines (31 words)",
-   "offset": 67.32
+   "offset": 61.88,
+   "phrases": 1,
+   "expected": 2,
+   "heard": "Out. Now"
   },
   {
    "id": "ep1-07-jodie-it-ll-be-a-cat",
@@ -3326,7 +3858,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 69.34
+   "offset": 63.9,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It'll be a cat"
   },
   {
    "id": "ep1-07-danny-out",
@@ -3350,7 +3885,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 71.44
+   "offset": 66,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Out!"
   },
   {
    "id": "ep1-07-jodie-it-s-always-a-cat",
@@ -3374,7 +3912,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 72.9
+   "offset": 67.46,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It's always a cat"
   },
   {
    "id": "ep1-07-danny-one-time-it-wasn-t-a",
@@ -3398,7 +3939,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 75.4
+   "offset": 69.96,
+   "phrases": 2,
+   "expected": 1,
+   "heard": "One time it wasn't a cat"
   },
   {
    "id": "ep1-07-jodie-it-was-a-cat",
@@ -3423,7 +3967,10 @@
    "gap": 2.94,
    "gapKind": "estimated",
    "gapNote": "action between the lines (39 words)",
-   "offset": 81.86
+   "offset": 76.42,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "It was a cat"
   },
   {
    "id": "ep1-07-danny-you-don-t-know-that",
@@ -3447,7 +3994,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 83.88
+   "offset": 78.44,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "You don't know that"
   },
   {
    "id": "ep1-07-jodie-we-could-ve-had-the-upstairs",
@@ -3471,7 +4021,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 85.9
+   "offset": 80.46,
+   "phrases": 2,
+   "expected": 2,
+   "heard": "We could have had the upstairs one. Header tank's better"
   },
   {
    "id": "ep1-07-danny-what-s-a-header-tank",
@@ -3496,7 +4049,10 @@
    "gap": 1.2,
    "gapKind": "estimated",
    "gapNote": "(a beat)",
-   "offset": 90.3
+   "offset": 84.86,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "What's a header tank?"
   },
   {
    "id": "ep1-07-jodie-exactly",
@@ -3507,20 +4063,37 @@
    "voice": "jodie",
    "voiceId": "6Ra5KS7u015QzJdh4Tmt",
    "text": "Exactly.",
-   "prompt": "[Genuinely pleased] Exactly.",
-   "tag": "Genuinely pleased",
+   "prompt": "[Pleased] Exactly.",
+   "tag": "Pleased",
    "file": "/audio/rapture/ep1/ep1-07/32-jodie-exactly.mp3",
-   "duration": 2.8,
-   "rmsdb": -22.1,
+   "duration": 1.36,
+   "rmsdb": -22.6,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "8h7WLkEHEIFAiC5vgAX6",
-    "id": "hmrn4CxPBtE70ZIVRyHR"
+    "session": "MlgYBk1ysxHvNIQNoO9n",
+    "id": "2EmNjzbz4tijo9QePc7B"
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 92.8
+   "offset": 87.36,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice",
+    "archived": "/audio/rapture/archive/ep1/ep1-07/32-jodie-exactly--v1.mp3",
+    "tag": "Genuinely pleased",
+    "prompt": "[Genuinely pleased] Exactly.",
+    "duration": 2.8,
+    "rmsdb": -22.1,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "8h7WLkEHEIFAiC5vgAX6",
+     "id": "hmrn4CxPBtE70ZIVRyHR"
+    },
+    "heard": "Exactly. Exactly"
+   }
   },
   {
    "id": "ep1-07-danny-don-t-tell-anyone-about-the",
@@ -3545,7 +4118,10 @@
    "gap": 1.5,
    "gapKind": "estimated",
    "gapNote": "action between the lines (15 words)",
-   "offset": 97.1
+   "offset": 90.22,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Don't tell anyone about the door"
   },
   {
    "id": "ep1-08-kath-he-ll-be-all-right-that",
@@ -3570,7 +4146,10 @@
    "gap": 4,
    "gapKind": "written",
    "gapNote": "Four seconds.",
-   "offset": 4
+   "offset": 4,
+   "phrases": 1,
+   "expected": 2,
+   "heard": "He'll be all right, that lad"
   },
   {
    "id": "ep1-08-ray-which-lad",
@@ -3594,7 +4173,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 6.82
+   "offset": 6.82,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Which lad?"
   },
   {
    "id": "ep1-08-kath-the-one-from-the-car-park",
@@ -3618,7 +4200,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 8.44
+   "offset": 8.44,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "The one from the car park"
   },
   {
    "id": "ep1-08-ray-he-was-thirty-odd",
@@ -3642,7 +4227,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 10.94
+   "offset": 10.94,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "He was thirty odd"
   },
   {
    "id": "ep1-08-kath-he-looked-younger",
@@ -3666,7 +4254,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 13.2
+   "offset": 13.2,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "He looked younger"
   },
   {
    "id": "ep1-08-ray-they-do",
@@ -3690,7 +4281,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 15.38
+   "offset": 15.38,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "They do"
   },
   {
    "id": "ep1-08-kath-i-only-tasered-him",
@@ -3715,7 +4309,10 @@
    "gap": 6,
    "gapKind": "written",
    "gapNote": "A six-second pause.",
-   "offset": 22.82
+   "offset": 22.82,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "I only tasered him"
   },
   {
    "id": "ep1-08-ray-i-know",
@@ -3739,7 +4336,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 26.04
+   "offset": 26.04,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "I know"
   },
   {
    "id": "ep1-08-kath-people-get-tasered",
@@ -3763,7 +4363,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 27.66
+   "offset": 27.66,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "People get tasered"
   },
   {
    "id": "ep1-08-ray-they-do-2",
@@ -3787,7 +4390,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 30
+   "offset": 30,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "They do"
   },
   {
    "id": "ep1-08-ray-there-s-a-form",
@@ -3812,7 +4418,10 @@
    "gap": 1.44,
    "gapKind": "estimated",
    "gapNote": "action between the lines (14 words)",
-   "offset": 32.8
+   "offset": 32.8,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "There's a form"
   },
   {
    "id": "ep1-08-kath-ray",
@@ -3836,7 +4445,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 34.74
+   "offset": 34.74,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Ray"
   },
   {
    "id": "ep1-08-ray-i-m-only-saying-there-s",
@@ -3860,7 +4472,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 36.52
+   "offset": 36.52,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "I'm only saying there's a form"
   },
   {
    "id": "ep1-08-kath-have-you-got-the-form",
@@ -3885,7 +4500,10 @@
    "gap": 1.2,
    "gapKind": "estimated",
    "gapNote": "(a beat)",
-   "offset": 40.12
+   "offset": 40.12,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Have you got the form?"
   },
   {
    "id": "ep1-08-ray-no",
@@ -3896,21 +4514,38 @@
    "voice": "ray",
    "voiceId": "1QDq54sFWbbwMSTMXMrP",
    "text": "No.",
-   "prompt": "[Immediate, flat] No.",
-   "tag": "Immediate, flat",
+   "prompt": "[Flat] No.",
+   "tag": "Flat",
    "file": "/audio/rapture/ep1/ep1-08/15-ray-no.mp3",
-   "duration": 1.6,
-   "rmsdb": -21.3,
+   "duration": 0.96,
+   "rmsdb": -24.3,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "JBopJP4vOlCOgoWxj98J",
-    "id": "AAyPCFESIfRXCvDhjwxE"
+    "session": "lZQlrESirhrvdE46njyU",
+    "id": "4shnN5u61iJzfE5NVmiq"
    },
    "gap": 0.1,
    "gapKind": "estimated",
    "gapNote": "(immediately)",
-   "offset": 41.66
+   "offset": 41.66,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice (\"No, no\")",
+    "archived": "/audio/rapture/archive/ep1/ep1-08/15-ray-no--v1.mp3",
+    "tag": "Immediate, flat",
+    "prompt": "[Immediate, flat] No.",
+    "duration": 1.6,
+    "rmsdb": -21.3,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "JBopJP4vOlCOgoWxj98J",
+     "id": "AAyPCFESIfRXCvDhjwxE"
+    },
+    "heard": "No, no"
+   }
   },
   {
    "id": "ep1-08-kath-then-there-isn-t-a-form",
@@ -3934,7 +4569,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 43.76
+   "offset": 43.12,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Then there isn't a form"
   },
   {
    "id": "ep1-08-ray-kath",
@@ -3945,21 +4583,38 @@
    "voice": "ray",
    "voiceId": "1QDq54sFWbbwMSTMXMrP",
    "text": "Kath.",
-   "prompt": "[Dry, after a long pause] Kath.",
-   "tag": "Dry, after a long pause",
+   "prompt": "[Dry] Kath.",
+   "tag": "Dry",
    "file": "/audio/rapture/ep1/ep1-08/17-ray-kath.mp3",
-   "duration": 2.96,
-   "rmsdb": -28.9,
+   "duration": 1.12,
+   "rmsdb": -26.5,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "lZAapaHEz7jDhske75Am",
-    "id": "vjixvWxaSjW8Cw3HAUeG"
+    "session": "a97HSSB267qF4MLrQJhA",
+    "id": "kogCdgvqwRIfyHDQ2jOI"
    },
    "gap": 5,
    "gapKind": "written",
    "gapNote": "Five seconds.",
-   "offset": 50.76
+   "offset": 50.12,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said twice (\"Cath. Cath\")",
+    "archived": "/audio/rapture/archive/ep1/ep1-08/17-ray-kath--v1.mp3",
+    "tag": "Dry, after a long pause",
+    "prompt": "[Dry, after a long pause] Kath.",
+    "duration": 2.96,
+    "rmsdb": -28.9,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "lZAapaHEz7jDhske75Am",
+     "id": "vjixvWxaSjW8Cw3HAUeG"
+    },
+    "heard": "Cath. Cath"
+   }
   },
   {
    "id": "ep1-08-kath-mm",
@@ -3983,7 +4638,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 54.22
+   "offset": 51.74,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "うーん。"
   },
   {
    "id": "ep1-08-ray-who-do-you-think-s-in",
@@ -4007,7 +4665,10 @@
    },
    "gap": 0.5,
    "gapKind": "estimated",
-   "offset": 55.84
+   "offset": 53.36,
+   "phrases": 1,
+   "expected": 1,
+   "heard": "Who do you think's in charge now?"
   },
   {
    "id": "ep1-08-kath-us",
@@ -4018,21 +4679,38 @@
    "voice": "kath",
    "voiceId": "7hD74BZPwJkVPaSckQ7M",
    "text": "Us.",
-   "prompt": "[No hesitation whatsoever, completely sincere] Us.",
-   "tag": "No hesitation whatsoever, completely sincere",
+   "prompt": "[Sincere] Us.",
+   "tag": "Sincere",
    "file": "/audio/rapture/ep1/ep1-08/20-kath-us.mp3",
-   "duration": 5.28,
-   "rmsdb": -22.5,
+   "duration": 1.04,
+   "rmsdb": -25.8,
    "model": "eleven_v4",
    "generation": {
     "flow": "S7eFZW866dnQgWMpXbpE",
-    "session": "f8W2jfq95mwC95mBPV6g",
-    "id": "Rp2vA0QHD3K7IMkfKslD"
+    "session": "RmIR8aVd5gf0gC2tThj8",
+    "id": "lzWBmYYJhA9gyAB0uP9j"
    },
    "gap": 0.1,
    "gapKind": "estimated",
    "gapNote": "(no hesitation whatsoever)",
-   "offset": 58.02
+   "offset": 55.54,
+   "phrases": 1,
+   "expected": 1,
+   "rerecorded": {
+    "date": "2026-10-08",
+    "defect": "said five times",
+    "archived": "/audio/rapture/archive/ep1/ep1-08/20-kath-us--v1.mp3",
+    "tag": "No hesitation whatsoever, completely sincere",
+    "prompt": "[No hesitation whatsoever, completely sincere] Us.",
+    "duration": 5.28,
+    "rmsdb": -22.5,
+    "generation": {
+     "flow": "S7eFZW866dnQgWMpXbpE",
+     "session": "f8W2jfq95mwC95mBPV6g",
+     "id": "Rp2vA0QHD3K7IMkfKslD"
+    },
+    "heard": "Us, us, us, us, us."
+   }
   }
  ],
  "recorded": 166,
