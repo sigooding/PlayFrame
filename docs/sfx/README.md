@@ -78,3 +78,11 @@ One library for the three stories in PlayFrame: **NEONOIRE** (Nobody's Witness),
 ## Using one
 
 Play `/audio/sfx/<id>.mp3` at its own length; ambiences loop. To use an effect in a story, add it to that story's frame audio at the offset the shot needs (the animatic and the Rapture frames take any `/audio/...` path); retag in `library-source.json` first so the library says where it went.
+
+## Where the effects are placed (8 October 2026)
+
+* **The Hangar cold open:** 48 effects on 35 frames (`SOUND` in `scripts/hangar/voice-data.mjs`; `docs/hangar/README.md`, "Voices and sound").
+* **The Rapture:** 28 effects on 24 frames of the re-boarded episode-one scenes and the cops' second beat (`SOUND` in `scripts/rapture/sound.mjs`), one of them NEONOIRE's body fall under the taser.
+* **NEONOIRE's frames are not touched.** Its dialogue is synced into saved workspaces by digests and into the games by the voice manifest; placing effects there needs its own pass (the library tags say where each would go).
+* **A frame's `gain`.** A frame audio entry may carry `gain` (0.02 to 2), honoured by the storyboard player, the animatic and the scarlett-witness reels; the effect file is as made and the level lives with the frame. Effect entries have an id that starts `sfx-` and no text.
+* **Reels.** The Hangar and the Rapture play in scarlett-witness as "(work in progress)" reels with these effects (its `docs/playframe-reels.md`): beds loop in the engine at their gain, one-shots ride a beat.

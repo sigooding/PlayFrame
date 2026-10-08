@@ -1140,7 +1140,7 @@ pass(`cast links are reciprocal; Jack has a distinct profile and Daniel has the 
 
 // The series workspace that shipped before this one is untouched by any of it.
 assert.equal(bundle.id, "74a9cb34-9e80-4a04-a614-000000000014");
-assert.equal(bundle.frames.length, 526);
+assert.equal(bundle.frames.length, 522);   // 526 until the four episode-one scenes were re-boarded (8 October 2026)
 assert.equal(bundle.scenes.length, 42);
 assert(starterProjects.some(p => p.id === project.id), "A fresh workspace seeds NEONOIRE");
 pass("the series bundle is unchanged, and NEONOIRE ships beside it as its own project");
