@@ -44,7 +44,10 @@
       ]
     },
     "neonoire-shot-210": {
-      "audio": "153525f9dd2279eaf5081d8270b77eb30f67c0c040a53e5fc1648d0f93b2447f"
+      "audio": [
+        "153525f9dd2279eaf5081d8270b77eb30f67c0c040a53e5fc1648d0f93b2447f",
+        "d0c9e34645667a97fef780a1e488a6f169a9096a409948ed17564a65f4dd8085"
+      ]
     },
     "neonoire-shot-233": {
       "audio": "3b34297ef7282af64c5d99cfe14395666b90bf857195d6ed721db0afd50d54df"
@@ -56,10 +59,16 @@
       "audio": "ab683c6e5b92a49a324a6928d7d43d3b90e19157dfe4c2956c65472a0a3f620a"
     },
     "neonoire-shot-156": {
-      "audio": "8f9e4d293a2eecd0fc874fc41406fd99caa3ceed78491f81d2fa27f2971598ba"
+      "audio": [
+        "8f9e4d293a2eecd0fc874fc41406fd99caa3ceed78491f81d2fa27f2971598ba",
+        "e1acc083fbd518c3ea60213dea6544a54cb711bac56af3262a55cf0e7ba600a1"
+      ]
     },
     "neonoire-shot-157": {
-      "audio": "020dfdf0847c7a1f144cea3f2034b93cf210a59aafb9312be3717076d9fd0028"
+      "audio": [
+        "020dfdf0847c7a1f144cea3f2034b93cf210a59aafb9312be3717076d9fd0028",
+        "2d7c53fa8622e7f9a44f399fcae7965f0bb28f8b40cd243a29fab3cb1e21d3bf"
+      ]
     },
     "neonoire-shot-15": {
       "audio": "5db4f1ba2fb74494f88c638f6f4f264e1c143f72f2c8f94d8acf5cc9a242cea2"
@@ -107,7 +116,28 @@
       "audio": "b34710c8ebc782e086c99d478ebf963b5102b4a48b909c09868991dd68457edf"
     },
     "neonoire-shot-229": {
-      "audio": "6a8d35fb16a180e3f8bdcf964648b62d2e321ad109e86c4a7409ab4784ab1bbf"
+      "audio": [
+        "6a8d35fb16a180e3f8bdcf964648b62d2e321ad109e86c4a7409ab4784ab1bbf",
+        "37204a73a52caaa15c7fee12e4c13a40acce3c353d641448fb19b01dc19c172e"
+      ]
+    },
+    "neonoire-shot-62": {
+      "audio": "4d236d6992d975546e3b81aed2c074257b00fba50d4fff225ee509a77bddba5c"
+    },
+    "neonoire-shot-227": {
+      "audio": "abf37ef8153dcff01f0595e2068ffd52a457f1b2632812e7fc7a4f0a0ba65bb1"
+    },
+    "neonoire-shot-279": {
+      "audio": "da324533c91c4bb5703a8858ca28fb0fee42b931786b802ae050b8365491f777"
+    },
+    "neonoire-shot-240": {
+      "audio": "67257e3be4271a1ddebdfdeb9176b25fc58b787ef19457a747401d62dc458824"
+    },
+    "neonoire-shot-74": {
+      "audio": "93e77b3aaf95bc850cb67880aec43ea7d071e09a8b9215f8e6ab72f389b5a304"
+    },
+    "neonoire-shot-118": {
+      "audio": "14cc5bce44ebdda1c11cf433ed003a86c8c96e267bad879ed8042ee09d6d7590"
     }
   }
 }

@@ -64,7 +64,7 @@ const DATA = {"date":"2026-10-07","flow":"kvzIYLAVhQxuu2koUOll","model":"eleven_
 const $ = (s, r = document) => r.querySelector(s);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
 const meter = db => { const m = el('span', 'meter' + (db < -29.5 ? ' low' : '')); const i = el('i'); i.style.width = Math.max(4, Math.min(100, (db + 42) / 22 * 100)) + '%'; m.append(i); return m; };
-const LABEL = { first: 'first round', retake: 're-take', variant: 'variant', test: 'tag test', second: 'second sample', hushed: 'was in the game', reading: 'other reading' };
+const LABEL = { first: 'first round', retake: 're-take', variant: 'variant', test: 'tag test', second: 'second sample', hushed: 'was in the game', was: 'was in the game', reading: 'other reading', tag: 'single-word tag', described: 'descriptive direction' };
 function takeRow(src, chip, chipClass, prompt, db, secs, note, cmd) {
   const row = el('div', 'take'), top = el('div', 'top');
   const c = el('span', 'chip ' + (chipClass || ''), chip); top.append(c);
