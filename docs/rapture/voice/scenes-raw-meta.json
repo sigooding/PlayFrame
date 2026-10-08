@@ -3071,5 +3071,425 @@
   "flow": "S7eFZW866dnQgWMpXbpE",
   "prompt": "[Brisk] It's voluntary.",
   "duration": 1.04
+ },
+ "S479": {
+  "session": "DQ7WzDIJZOkE7I3mIAgK",
+  "generation": "1ageJCbmEZZufFUY89uS",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] They've not left us behind. They've kept us back.",
+  "duration": 3.04
+ },
+ "S480": {
+  "session": "GwAMXlTp2kfFYvSO489m",
+  "generation": "nrbVO8vJXv9YTuKkZfej",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Nervous, rushing] Kept us back for what?",
+  "duration": 1.84
+ },
+ "S481": {
+  "session": "UvkugF8sp22IPbhwEZYd",
+  "generation": "TvCeygaj4sioeZZlCORq",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Making it up, warming to it] Work. There's work wants doing. Someone's got to keep order.",
+  "duration": 4.16
+ },
+ "S482": {
+  "session": "hRiNlDrgYXknaj0uicqk",
+  "generation": "hgKn341XI4XeDJ3fQ5Zx",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Cautious] That'd make sense of it.",
+  "duration": 2
+ },
+ "S483": {
+  "session": "U84zpk274qWmv9JWFk7r",
+  "generation": "FqIl9nwDjNSb7H9yOIev",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest] It would, actually.",
+  "duration": 1.84
+ },
+ "S484": {
+  "session": "X67tEC8BpFbUlfHnniOR",
+  "generation": "3Uo3lDkonpNjwvvEEB1v",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Relieved] We're here to do the Lord's work.",
+  "duration": 2.4
+ },
+ "S485": {
+  "session": "F9XajKl5abp9QqVgtBWu",
+  "generation": "NdhfTlWz8wzw3LvkDXuV",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Maintain order.",
+  "duration": 1.36
+ },
+ "S486": {
+  "session": "XdttknqpNLeLyOCsuMGf",
+  "generation": "gzIjg9FxCN1EkcELEiM6",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Resonant, certain] I've had a moment of clarity.",
+  "duration": 2.32
+ },
+ "S487": {
+  "session": "pjsRsQHEcntwOJZeVyol",
+  "generation": "3oxlWhBx67njcahbq8Zq",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Put-upon] Here we go.",
+  "duration": 1.76
+ },
+ "S488": {
+  "session": "3eVJ2YQbbXnw0BiQDR7c",
+  "generation": "h2saG1hLxHYdqUjO4PLe",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Resonant, certain] And what I've realised is, I've done this before.",
+  "duration": 3.44
+ },
+ "S489": {
+  "session": "6BflEOGLRvubqzzVmLzz",
+  "generation": "QcoG4gaSkCDijnzkd3Xo",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Done what?",
+  "duration": 1.04
+ },
+ "S490": {
+  "session": "SkqQYNla8RdsnVg8koWN",
+  "generation": "p4WCs25hk1opKyoCO7Yf",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Resonant, certain] All of it. Everything gone, nothing left, no idea how you get through the day.",
+  "duration": 5.6
+ },
+ "S491": {
+  "session": "aZi7feoN3FJWFxoEKeUR",
+  "generation": "47AhqZYOehz5vtz8X1Sq",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Resonant, certain] I did it in 2003.",
+  "duration": 2.56
+ },
+ "S493": {
+  "session": "BowXBkpIfQ3GxrLm3DP9",
+  "generation": "GvnnVrX44I4gTngtDnsZ",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Sincere] And?",
+  "duration": 1.04
+ },
+ "S494": {
+  "session": "4AbDJunw47Vs4bUZt4e9",
+  "generation": "ggDJfqOgJfKgEAxfpRzm",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Guarded, flat] That's not the same as a divorce.",
+  "duration": 2.48
+ },
+ "S495": {
+  "session": "8daMBq8tjpkU1wlVcsEh",
+  "generation": "gQdS731Xsz76ptKNSFat",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Resonant, certain] It's very similar, actually.",
+  "duration": 2.32
+ },
+ "S496": {
+  "session": "1T115GyAEjn6KUfAt4dd",
+  "generation": "1LB1eRkMcRUOibXhNRRo",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Resonant, certain] One day at a time. That's all any of it is. You don't think about tomorrow and you turn up.",
+  "duration": 6.8
+ },
+ "S497": {
+  "session": "7VhWTsqIFtyi204Bse1p",
+  "generation": "XRBUMQFNwiZI65079UYk",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Tight] That's good, that.",
+  "duration": 1.44
+ },
+ "S498": {
+  "session": "Idh8ELfbE1RCD3GgXO5n",
+  "generation": "zZvEt3n54EfTfT5pynZi",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Certain] I know.",
+  "duration": 1.2
+ },
+ "S499": {
+  "session": "4nSkAdBb5dkf07fHwACQ",
+  "generation": "Zk45W9eZpu93QlYYbSQP",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant] Where's Brian?",
+  "duration": 1.44
+ },
+ "S458": {
+  "session": "Rhv3JInT7CIV5bPwpQjk",
+  "generation": "inkPxASRTkdeM5fFqM5Z",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] I'll look into it.",
+  "duration": 1.2
+ },
+ "S459": {
+  "session": "g4uWSNABVDiM7gCc3hZU",
+  "generation": "6evSyfioE4XxZoEC60CQ",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Carl.",
+  "duration": 0.88
+ },
+ "S460": {
+  "session": "XuL8xLWOExiJPRZeZPAb",
+  "generation": "QBxA0DnJxNmNsvRtmPXY",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Flat] I don't know.",
+  "duration": 1.2
+ },
+ "S461": {
+  "session": "smf8asgW6mQeXUylx2eQ",
+  "generation": "qxFoiqRjqrVolAdJOQ2L",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] You must have a theory.",
+  "duration": 1.6
+ },
+ "S462": {
+  "session": "lDtmcQb8UuDe5V8MkX7b",
+  "generation": "oBk9YAC6G8jY4R5W15dC",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Flat] I haven't.",
+  "duration": 1.2
+ },
+ "S463": {
+  "session": "9XI0bKsRPOlB17L6g1Mh",
+  "generation": "Al3viftjT4CPea2twxm1",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant, clipped] Everyone's got a theory.",
+  "duration": 1.84
+ },
+ "S464": {
+  "session": "L4n2PUVb0A3NKtEdPB7x",
+  "generation": "IUDyO2I9HO1bxm3mzmCZ",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Rushed] I've not done anything either.",
+  "duration": 1.68
+ },
+ "S465": {
+  "session": "feI1KnTOxxdxV4B1kF0K",
+  "generation": "hiRyHCNiIhn9lv5WVZ0X",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Guarded, flat] Nothing they'd take you for.",
+  "duration": 1.84
+ },
+ "S467": {
+  "session": "SBDDguAKEq4UXMaVUhbu",
+  "generation": "18TIXsHX2GgBnTTjNXqE",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Go on.",
+  "duration": 0.8
+ },
+ "S468": {
+  "session": "3ae2ysI9M5vL5EuFqCa2",
+  "generation": "tvqWcAb0Pr3emtc8qZlP",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Nervous, rushing] Rosemary next door. Seventy-eight. She had her dog put down.",
+  "duration": 4.96
+ },
+ "S469": {
+  "session": "tuKyoC2o5RfR34xgU8fZ",
+  "generation": "h7Z41R5U3PgEeZqIAB0l",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Why?",
+  "duration": 0.88
+ },
+ "S470": {
+  "session": "dSRu0Z0XpBactxUtuPyc",
+  "generation": "UEeMzr6ryUAR8ZtdudkG",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Nervous, rushing] It went on her rug. New rug. Dog was eleven. She had it put down on the Thursday.",
+  "duration": 5.6
+ },
+ "S471": {
+  "session": "RHPOePjuPuE1CdVwaVZV",
+  "generation": "wSzvYJlQw0rryBsSPUHL",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] And?",
+  "duration": 0.72
+ },
+ "S472": {
+  "session": "2PY7ohsRAGonE8nFGveg",
+  "generation": "GJcux6JhcouFYBAhla6C",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Nervous, rushing] She went up. Straight up. I watched her go.",
+  "duration": 3.68
+ },
+ "S473": {
+  "session": "pD3YjJFF3PPp6agpfJiF",
+  "generation": "kr3onHHqkBPsJFWMYr7z",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Nervous, rushing] I've never done anything near that bad.",
+  "duration": 2.64
+ },
+ "S474": {
+  "session": "BmAPn5ao6nXWF3UP3xno",
+  "generation": "wzqMNP1i1sGTr8B4jdzo",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Thoughtful, dawning] So it's not about being good.",
+  "duration": 3.12
+ },
+ "S475": {
+  "session": "Pa1XPMrqsrcMUL5MuhR9",
+  "generation": "OfwwVYPDB98W87ecglbU",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] Then what's it about?",
+  "duration": 1.76
+ },
+ "S476": {
+  "session": "V6dEXuzb917XPzzsr9o9",
+  "generation": "qG5DbIqkMYTWqy7eCPSy",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] It's not what we've done.",
+  "duration": 1.6
+ },
+ "S477": {
+  "session": "cltTajcrANPJJLs991nG",
+  "generation": "b98O7D5KsZPja8YFTRq9",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant] No?",
+  "duration": 0.96
+ },
+ "S478": {
+  "session": "jMNWoN5j5MSg46Xbicso",
+  "generation": "1G10uZ1c4iSNEKSXBwnV",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] It's what we're for.",
+  "duration": 1.28
+ },
+ "S436": {
+  "session": "Lf80zeAxJS48uTrsp4n5",
+  "generation": "dqv2Uk8WUEhRrqgVlp5e",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Flat] Right.",
+  "duration": 0.96
+ },
+ "S437": {
+  "session": "AEzhSByPeAAgD96CpcVs",
+  "generation": "yMq9npMRIN7aDeGZJkTD",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk, upbeat] But I'm writing down who doesn't.",
+  "duration": 1.92
+ },
+ "S439": {
+  "session": "9Vlbi6N1hdQEmD7gKavi",
+  "generation": "eBdL1ah70whOr1HUw5cE",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Nothing?",
+  "duration": 0.88
+ },
+ "S440": {
+  "session": "S2xHR7Z2YBadNtPnbuMd",
+  "generation": "0HbpF2WQaL5G6F2jdOfS",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant, clipped] Nothing. Not a thing. I've never even had a parking ticket.",
+  "duration": 4.08
+ },
+ "S441": {
+  "session": "LTji542zW0dVGiWZLWoV",
+  "generation": "Ss4kDVtIRj02qtk6t9pb",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] You had that thing with the cat.",
+  "duration": 2.08
+ },
+ "S442": {
+  "session": "ODPCd8pMxwu2y8c4K3LU",
+  "generation": "OVm3pCpYhzXZ6obbsyBV",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant] That was an accident and I put a note through the door.",
+  "duration": 3.36
+ },
+ "S443": {
+  "session": "UcorLAV110OZ7b2tozzE",
+  "generation": "U25QVO7GVPfNdQYORv3s",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant, clipped] Forty years I've been careful. Forty years. And they took Linda.",
+  "duration": 4.96
+ },
+ "S444": {
+  "session": "TKZq2Tlj7Z6palz1IbQH",
+  "generation": "xU7VNzumSVSSjRryx3ZM",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] Who's Linda?",
+  "duration": 1.04
+ },
+ "S445": {
+  "session": "sIAGoRqLCeT4bx6we5oW",
+  "generation": "42evXAKW6BGVSTPakyeV",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant, clipped] From work. Linda. She was horrible.",
+  "duration": 3.36
+ },
+ "S446": {
+  "session": "NgxSjMvTHlgI9UJbALVm",
+  "generation": "vYkADO1ab7d81iwSndgD",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Indignant, clipped] So what was it all for?",
+  "duration": 1.84
+ },
+ "S447": {
+  "session": "MmrOn2lcKDEc6l8Uwb5d",
+  "generation": "WOel6GRxPHi8Z4XLPzim",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] I think it's a mistake.",
+  "duration": 1.84
+ },
+ "S448": {
+  "session": "QP9pXqZ6vqPXaPYwX8MO",
+  "generation": "3hfkusDTHSnim1nHr8CI",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] A mistake.",
+  "duration": 1.12
+ },
+ "S449": {
+  "session": "ekAoPW7FqOeZrPVSQ195",
+  "generation": "rHsKql7pIFqajZ3f8cqV",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] A clerical thing. Like a mix-up.",
+  "duration": 2.48
+ },
+ "S451": {
+  "session": "dI02WCsX17EJ5N4EfOcz",
+  "generation": "fjOPPX9o5CmguapMXubp",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] How do you know?",
+  "duration": 1.44
+ },
+ "S452": {
+  "session": "JQZczIsbjFfns3FHyTVl",
+  "generation": "vTHjQx9GFl1iuLw6tfQ7",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Authoritative] Because.",
+  "duration": 1.28
+ },
+ "S453": {
+  "session": "2QD1vXiKtTrRKlwLgOMl",
+  "generation": "gyRoSteUFtztI5L0WlfX",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] So who would you write to?",
+  "duration": 2.16
+ },
+ "S454": {
+  "session": "bE08Qh8jGc2aFEqaFnEW",
+  "generation": "r29t38jASUoI6ggNPR6i",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Thrown] About what?",
+  "duration": 1.36
+ },
+ "S455": {
+  "session": "fahNj4ssl1vavvX8Mkdd",
+  "generation": "rMey1VisJeZSAi0DjeUk",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest, reasonable] About being left. Who do you write to.",
+  "duration": 2.96
+ },
+ "S456": {
+  "session": "EHEh7XGnNG6jzzH7Vbld",
+  "generation": "XEuvccKOdTpnpTmA3ozM",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Brisk] I'll find out.",
+  "duration": 1.2
+ },
+ "S457": {
+  "session": "wfddBvskmUJcpFhbVeWT",
+  "generation": "flno4wKu4E65EVJdekfT",
+  "flow": "S7eFZW866dnQgWMpXbpE",
+  "prompt": "[Earnest] Will you?",
+  "duration": 1.12
  }
 }
