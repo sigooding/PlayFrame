@@ -4708,9 +4708,9 @@
    "voiceId": "tiLGT9eftokjCKvXtgmt",
    "text": "Won't he.",
    "screenplayDirection": "genuinely interested for the first time",
-   "tag": "Genuinely",
+   "tag": "Interested",
    "tagFrom": "board",
-   "prompt": "[Genuinely] Won't he.",
+   "prompt": "[Interested] Won't he.",
    "gap": 0.5,
    "gapKind": "estimated"
   },
@@ -5268,9 +5268,9 @@
    "voiceId": "whDz1N3rMLec3YLzIcW5",
    "text": "Twelve.",
    "screenplayDirection": "writing, genuinely impressed",
-   "tag": "Genuinely",
+   "tag": "Impressed",
    "tagFrom": "board",
-   "prompt": "[Genuinely] Twelve.",
+   "prompt": "[Impressed] Twelve.",
    "gap": 0.5,
    "gapKind": "estimated"
   },
