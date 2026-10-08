@@ -1,0 +1,893 @@
+{
+  "project": "Let the Raptures Commence",
+  "model": "eleven_v4",
+  "designModel": "eleven_ttv_v3",
+  "date": "2026-10-08",
+  "note": "One saved ElevenLabs voice per character (name '<Character> - RAPTURES'). Every voice was designed from the show bible's cast text with the character's own screenplay lines as the preview text, and picked BLIND, by measured pitch, range, brightness and pace: nobody has listened to any of them. The unpicked previews are kept as audio in public/audio/rapture/voices/ and on the page public/audio/rapture/index.html. Pitch figures come from scripts/rapture/voice-measure.py.",
+  "speakers": {
+    "NINA": "nina",
+    "KATH": "kath",
+    "RAY": "ray",
+    "JODIE": "jodie",
+    "DANNY": "danny",
+    "MAUREEN": "maureen",
+    "BRIAN": "brian",
+    "TERRY": "terry",
+    "COL": "col",
+    "DEBORAH": "deborah",
+    "MUGGER": "young-man",
+    "VOLUNTEER": "young-man",
+    "MAN IN BLUE COAT": "blue-coat",
+    "MARTIN": "martin"
+  },
+  "voices": {
+    "nina": {
+      "id": "MKE7TA5PSD9kf6qwdXug",
+      "name": "Nina - RAPTURES",
+      "character": "Sister Nina Doyle",
+      "gender": "female",
+      "age": "45",
+      "description": "Female, 45, English. Stubborn, self-sufficient and unimpressed; says a thing once and acts as though it is settled. Dry, flat, deadpan delivery, brisk and practical; pleasant and fluent when she is lying to authority, gentle with the genuinely broken, brutal with anyone coasting. Never amazed and never afraid.",
+      "text": "Brian. It's a charger. There's four in the lounge drawer. Then get up earlier. You want Deborah's room because it's got the aerial. No. Put it back, Maureen. Put it back. I'll look at it. It's not him upstairs. Why.",
+      "why": "Narrowest pitch range of the three (72 Hz against 100 and 130): the flattest, most deadpan reading.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnk6b6eaq9kwmzfgwddt2x",
+          "previews": [
+            {
+              "id": "JOQAbeXiaDs6oX2itg2i",
+              "file": "voices/nina-0.mp3",
+              "picked": false,
+              "centroid_hz": 1503,
+              "median_hz": 197.5,
+              "p10_hz": 150.9,
+              "p90_hz": 280.7,
+              "voiced": 0.67,
+              "active_s": 10.27,
+              "dur_s": 14.6,
+              "level_db": -19.1,
+              "wps": 3.89
+            },
+            {
+              "id": "MKE7TA5PSD9kf6qwdXug",
+              "file": "voices/nina-1.mp3",
+              "picked": true,
+              "centroid_hz": 1586,
+              "median_hz": 170.2,
+              "p10_hz": 141.6,
+              "p90_hz": 213.3,
+              "voiced": 0.66,
+              "active_s": 10.49,
+              "dur_s": 15.88,
+              "level_db": -20.9,
+              "wps": 3.81
+            },
+            {
+              "id": "d2xmTTvRwBRFJBogloyI",
+              "file": "voices/nina-2.mp3",
+              "picked": false,
+              "centroid_hz": 1231,
+              "median_hz": 173.9,
+              "p10_hz": 142.9,
+              "p90_hz": 242.4,
+              "voiced": 0.66,
+              "active_s": 10.26,
+              "dur_s": 15.73,
+              "level_db": -20.8,
+              "wps": 3.9
+            }
+          ]
+        }
+      ]
+    },
+    "kath": {
+      "id": "7hD74BZPwJkVPaSckQ7M",
+      "name": "Kath - RAPTURES",
+      "character": "PC Kath Bridges",
+      "gender": "female",
+      "age": "30s",
+      "description": "Female, 30s, English police constable. Sincere and literal, never frightened and never amazed; her only emotion is mild grievance. Dry, deadpan, ordinary talk with long pauses and no punchlines: the police are stupid in the manner of Dirk Gently or Common Side Effects, noticing the wrong details at length. Recites official wording with total conviction.",
+      "text": "There's no birds. Not that many. I'm not saying they were raptured. I'm saying there's less of them. Why are we still policing? Everyone that's left is guilty though. Surely. So we should arrest everyone. We should arrest ourselves.",
+      "why": "193 Hz, a tone above Nina (170 Hz) and the most voiced of the three; the other two sit at 174 and 198 Hz.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnnxg8e4992ckd3edv1jq4",
+          "previews": [
+            {
+              "id": "7hD74BZPwJkVPaSckQ7M",
+              "file": "voices/kath-0.mp3",
+              "picked": true,
+              "centroid_hz": 1251,
+              "median_hz": 192.8,
+              "p10_hz": 152.4,
+              "p90_hz": 250,
+              "voiced": 0.71,
+              "active_s": 10.33,
+              "dur_s": 16.67,
+              "level_db": -20.3,
+              "wps": 3.78
+            },
+            {
+              "id": "gwRTTkz7u2iB1cefIgKB",
+              "file": "voices/kath-1.mp3",
+              "picked": false,
+              "centroid_hz": 1358,
+              "median_hz": 173.9,
+              "p10_hz": 145.5,
+              "p90_hz": 200,
+              "voiced": 0.65,
+              "active_s": 10.62,
+              "dur_s": 18.13,
+              "level_db": -20,
+              "wps": 3.67
+            },
+            {
+              "id": "LSSN5fPUJfS64pgDUDxw",
+              "file": "voices/kath-2.mp3",
+              "picked": false,
+              "centroid_hz": 1200,
+              "median_hz": 197.5,
+              "p10_hz": 157.2,
+              "p90_hz": 246.2,
+              "voiced": 0.6,
+              "active_s": 10.51,
+              "dur_s": 17.08,
+              "level_db": -21.8,
+              "wps": 3.71
+            }
+          ]
+        }
+      ]
+    },
+    "ray": {
+      "id": "1QDq54sFWbbwMSTMXMrP",
+      "name": "Ray - RAPTURES",
+      "character": "PC Ray Okonjo",
+      "gender": "male",
+      "age": "30s",
+      "description": "Male, 30s, Black British police constable. Deadpan and patient, never frightened and never amazed; his only emotion is mild grievance. Dry, low-key, ordinary talk with long pauses and no punchlines: stupid in the manner of Dirk Gently or Common Side Effects, noticing the wrong details at length. Keeps the paperwork religiously and says 'that's a form' without a flicker.",
+      "text": "There's birds. They weren't raptured, Kath. You are saying that. Some of them'll have been in cages. Because it's what we signed up for. Technically. We can't arrest everyone. Who told you that? Might. Eat your sandwich.",
+      "why": "A steady 113 Hz with the narrowest range (79 Hz); the other two jump an octave (range 170 and 200 Hz).",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnp8chfw49e7r87atb7p1g",
+          "previews": [
+            {
+              "id": "HbNIdfNI0fFJjDYlF1P6",
+              "file": "voices/ray-0.mp3",
+              "picked": false,
+              "centroid_hz": 1641,
+              "median_hz": 99.4,
+              "p10_hz": 80,
+              "p90_hz": 250.4,
+              "voiced": 0.47,
+              "active_s": 9.63,
+              "dur_s": 15.96,
+              "level_db": -21,
+              "wps": 3.84
+            },
+            {
+              "id": "bwouA6OjWE5yReHRvPza",
+              "file": "voices/ray-1.mp3",
+              "picked": false,
+              "centroid_hz": 1304,
+              "median_hz": 98.2,
+              "p10_hz": 84.2,
+              "p90_hz": 285.4,
+              "voiced": 0.43,
+              "active_s": 9.74,
+              "dur_s": 19.57,
+              "level_db": -20.3,
+              "wps": 3.8
+            },
+            {
+              "id": "1QDq54sFWbbwMSTMXMrP",
+              "file": "voices/ray-2.mp3",
+              "picked": true,
+              "centroid_hz": 1133,
+              "median_hz": 113.5,
+              "p10_hz": 78.4,
+              "p90_hz": 157.5,
+              "voiced": 0.53,
+              "active_s": 9.75,
+              "dur_s": 16.85,
+              "level_db": -20.4,
+              "wps": 3.79
+            }
+          ]
+        }
+      ]
+    },
+    "jodie": {
+      "id": "6Ra5KS7u015QzJdh4Tmt",
+      "name": "Jodie - RAPTURES",
+      "character": "Jodie (11)",
+      "gender": "female",
+      "age": "young adult stand-in",
+      "description": "Female, early twenties, English, a light and dry voice. Matter-of-fact, bored and precise: better at crime than the man she works with and knows it, without cruelty. Recites rules in a flat sing-song, unbothered by almost everything, deadpan, with a flash of real pleasure when she is right.",
+      "text": "It's not that sort of lock. It's the other sort. Nothing off anyone who's still alive. Nothing off the dead that's got a name on it. No upstairs. And check the cistern. It'll be a cat. It's always a cat. Header tank's better. Exactly.",
+      "standIn": "ElevenLabs refused to design the voice of an eleven-year-old girl (the first request, 'Girl, 11, English...', was blocked by its safety check), so Jodie is a light young adult voice. Replace it with a child actor's voice when there is one.",
+      "why": "The brightest of the three (centroid 1742 Hz) and the highest, with a narrow range: a light, flat sing-song.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnrh2xfchbkhftpan3x8sv",
+          "previews": [
+            {
+              "id": "6Ra5KS7u015QzJdh4Tmt",
+              "file": "voices/jodie-0.mp3",
+              "picked": true,
+              "centroid_hz": 1742,
+              "median_hz": 175.8,
+              "p10_hz": 160,
+              "p90_hz": 205.1,
+              "voiced": 0.63,
+              "active_s": 10.88,
+              "dur_s": 19.72,
+              "level_db": -21.9,
+              "wps": 4.04
+            },
+            {
+              "id": "sUDoxt9MQKoOFuI19T9P",
+              "file": "voices/jodie-1.mp3",
+              "picked": false,
+              "centroid_hz": 1599,
+              "median_hz": 166.7,
+              "p10_hz": 149.4,
+              "p90_hz": 195.1,
+              "voiced": 0.61,
+              "active_s": 12.02,
+              "dur_s": 20.04,
+              "level_db": -22.3,
+              "wps": 3.66
+            },
+            {
+              "id": "A5eJ2NXTZYetPo8srzEO",
+              "file": "voices/jodie-2.mp3",
+              "picked": false,
+              "centroid_hz": 1254,
+              "median_hz": 172,
+              "p10_hz": 153.8,
+              "p90_hz": 202.5,
+              "voiced": 0.59,
+              "active_s": 11.43,
+              "dur_s": 18.36,
+              "level_db": -23.6,
+              "wps": 3.85
+            }
+          ]
+        }
+      ]
+    },
+    "danny": {
+      "id": "j4PypwVZQekOFpCUNphu",
+      "name": "Danny - RAPTURES",
+      "character": "Danny",
+      "gender": "male",
+      "age": "40",
+      "description": "Male, 40, English. A father scavenging for water who has rules and cannot let anyone be right about them. Out of his depth, not brave, trying to sound in charge; swears without much conviction. Tired, ordinary, a little rueful; hushed and hissing when he is frightened.",
+      "text": "It was already — Rules. And? They're gone. Everyone's gone. Out. Now. One time it wasn't a cat. What's a header tank? Don't tell anyone about the door. Do the cistern, Jodie.",
+      "why": "The first preview is close to monotone (range 33 Hz) and the third is the darkest and slowest; this one keeps some variation (72 Hz) at 93 Hz and a middling brightness.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dns014fcsawcfz7r42px06",
+          "previews": [
+            {
+              "id": "yzKRg8BhcDzThbdhHCkC",
+              "file": "voices/danny-0.mp3",
+              "picked": false,
+              "centroid_hz": 1500,
+              "median_hz": 97.6,
+              "p10_hz": 89.4,
+              "p90_hz": 122,
+              "voiced": 0.55,
+              "active_s": 9.94,
+              "dur_s": 20.43,
+              "level_db": -21.3,
+              "wps": 3.22
+            },
+            {
+              "id": "j4PypwVZQekOFpCUNphu",
+              "file": "voices/danny-1.mp3",
+              "picked": true,
+              "centroid_hz": 1404,
+              "median_hz": 93,
+              "p10_hz": 82.1,
+              "p90_hz": 153.8,
+              "voiced": 0.53,
+              "active_s": 10.71,
+              "dur_s": 23.17,
+              "level_db": -19.8,
+              "wps": 2.99
+            },
+            {
+              "id": "EMcYYnily0kouR2vOHNL",
+              "file": "voices/danny-2.mp3",
+              "picked": false,
+              "centroid_hz": 997,
+              "median_hz": 93.6,
+              "p10_hz": 78,
+              "p90_hz": 132.2,
+              "voiced": 0.67,
+              "active_s": 11.48,
+              "dur_s": 22.67,
+              "level_db": -19.8,
+              "wps": 2.79
+            }
+          ]
+        }
+      ]
+    },
+    "maureen": {
+      "id": "x95G261LnexUXW4hcvsO",
+      "name": "Maureen - RAPTURES",
+      "character": "Maureen",
+      "gender": "female",
+      "age": "40s",
+      "description": "Female, 40s, English, a resident of a house for people the system gave up on. Innocent-sounding and sly at once: putting a very reasonable hypothetical question she has plainly already acted on. Plain, slightly pleading, working-class English; says 'took' for 'taken'.",
+      "text": "Can I ask you something religious? If someone's took something off you. And you take it back. But you take a bit more, for the inconvenience. Is that stealing? Even the inconvenience bit? What if I put it back. I'm only asking hypothetical.",
+      "why": "The highest and brightest (242 Hz): the contrast with Nina's 170 Hz carries their long exchange.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnsc6qfv79m22spjhpazb1",
+          "previews": [
+            {
+              "id": "x95G261LnexUXW4hcvsO",
+              "file": "voices/maureen-0.mp3",
+              "picked": true,
+              "centroid_hz": 1721,
+              "median_hz": 242.4,
+              "p10_hz": 170.2,
+              "p90_hz": 390.2,
+              "voiced": 0.6,
+              "active_s": 11.39,
+              "dur_s": 18.6,
+              "level_db": -21.9,
+              "wps": 3.78
+            },
+            {
+              "id": "AVdtcW72U017aripx618",
+              "file": "voices/maureen-1.mp3",
+              "picked": false,
+              "centroid_hz": 1620,
+              "median_hz": 186,
+              "p10_hz": 145.5,
+              "p90_hz": 288.8,
+              "voiced": 0.56,
+              "active_s": 12.14,
+              "dur_s": 17.01,
+              "level_db": -21.4,
+              "wps": 3.54
+            },
+            {
+              "id": "fvdcLrq2G9qxC7V9oY6S",
+              "file": "voices/maureen-2.mp3",
+              "picked": false,
+              "centroid_hz": 1423,
+              "median_hz": 225.4,
+              "p10_hz": 158.4,
+              "p90_hz": 363.6,
+              "voiced": 0.57,
+              "active_s": 12.1,
+              "dur_s": 17.63,
+              "level_db": -22.2,
+              "wps": 3.55
+            }
+          ]
+        }
+      ]
+    },
+    "brian": {
+      "id": "GcBRywFYERJnQDmLM5ns",
+      "name": "Brian - RAPTURES",
+      "character": "Brian",
+      "gender": "male",
+      "age": "50s",
+      "description": "Male, 50s, English. A man's voice, a dry mid-range tenor with a slightly nasal edge; a resident of a house for people the system gave up on. Aggrieved and petty, stubborn and plaintive; insists his phone charger has his name on it in his handwriting.",
+      "text": "It's got my name on it. That's not your name, that's nail varnish. In my handwriting. It's my nail varnish. Why've you got nail varnish, Terry? Not with the fast bit.",
+      "why": "Second round: about 140 Hz (a tenor) with the narrowest range of the three (88 Hz), bright and a little nasal.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnwj5heq1aafqvkx4n32dh",
+          "rejected": "first round: asked for 'a thin, slightly nasal voice'; all three came out at 205 to 274 Hz, higher than the women's voices",
+          "description": "Male, 50s, English, a resident of a house for people the system gave up on. A thin, slightly nasal voice, aggrieved and petty, stubborn and plaintive; insists his phone charger has his name on it in his handwriting.",
+          "previews": [
+            {
+              "id": "wjBLZEo9g7K1AFA2Mv0Q",
+              "file": "voices/brian-r1-0.mp3",
+              "picked": false,
+              "centroid_hz": 1931,
+              "median_hz": 271.2,
+              "p10_hz": 173,
+              "p90_hz": 355.6,
+              "voiced": 0.66,
+              "active_s": 9.29,
+              "dur_s": 14.6,
+              "level_db": -22.4,
+              "wps": 3.34
+            },
+            {
+              "id": "BgiqAhfjkEd1xcoeUAUJ",
+              "file": "voices/brian-r1-1.mp3",
+              "picked": false,
+              "centroid_hz": 1890,
+              "median_hz": 202.5,
+              "p10_hz": 141.6,
+              "p90_hz": 333.3,
+              "voiced": 0.65,
+              "active_s": 10.24,
+              "dur_s": 14.84,
+              "level_db": -20.9,
+              "wps": 3.03
+            },
+            {
+              "id": "yKmsCOZzq24AX5T9cLVz",
+              "file": "voices/brian-r1-2.mp3",
+              "picked": false,
+              "centroid_hz": 1526,
+              "median_hz": 242.4,
+              "p10_hz": 133,
+              "p90_hz": 333.3,
+              "voiced": 0.73,
+              "active_s": 10.96,
+              "dur_s": 14.68,
+              "level_db": -21.7,
+              "wps": 2.83
+            }
+          ]
+        },
+        {
+          "view": "viewstate_01m4dnzt7bf66bhysbedatn0mg",
+          "previews": [
+            {
+              "id": "Upvu5ntoSrQt2A3jx9Bu",
+              "file": "voices/brian-0.mp3",
+              "picked": false,
+              "centroid_hz": 1594,
+              "median_hz": 168.4,
+              "p10_hz": 106.7,
+              "p90_hz": 266.7,
+              "voiced": 0.71,
+              "active_s": 9.29,
+              "dur_s": 15.57,
+              "level_db": -22.2,
+              "wps": 3.34
+            },
+            {
+              "id": "GcBRywFYERJnQDmLM5ns",
+              "file": "voices/brian-1.mp3",
+              "picked": true,
+              "centroid_hz": 1590,
+              "median_hz": 141.6,
+              "p10_hz": 97.6,
+              "p90_hz": 186,
+              "voiced": 0.57,
+              "active_s": 9.03,
+              "dur_s": 12.36,
+              "level_db": -20.5,
+              "wps": 3.43
+            },
+            {
+              "id": "24IDUWJpQKqyID4HW3yu",
+              "file": "voices/brian-2.mp3",
+              "picked": false,
+              "centroid_hz": 1232,
+              "median_hz": 156.9,
+              "p10_hz": 98.8,
+              "p90_hz": 216.2,
+              "voiced": 0.66,
+              "active_s": 8.41,
+              "dur_s": 11.81,
+              "level_db": -21.4,
+              "wps": 3.69
+            }
+          ]
+        }
+      ]
+    },
+    "terry": {
+      "id": "DgrzLtp7QeKHZo6bnBfM",
+      "name": "Terry - RAPTURES",
+      "character": "Terry",
+      "gender": "male",
+      "age": "50s",
+      "description": "Male, 50s, English. A deep, gravelly bass-baritone man's voice; a resident of a house for people the system gave up on. Indignant and blustering, a man in the middle of an anecdote who will not be told the facts; loud and pleased with himself.",
+      "text": "That's not your name, that's nail varnish. It's my nail varnish. So I said to him, that's not a dog, mate, that's a —",
+      "why": "Second round: about 100 Hz and the roughest of the three (voiced share 0.34): gravel against Col's smooth baritone.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dnx0eseg3brne0tkhhagg5",
+          "rejected": "first round: asked for 'a heavier, gruffer voice'; two of three came out at 232 to 271 Hz, the third at 186 Hz",
+          "description": "Male, 50s, English, a resident of a house for people the system gave up on. A heavier, gruffer voice, indignant and blustering, a man in the middle of an anecdote who will not be told the facts; loud and pleased with himself.",
+          "previews": [
+            {
+              "id": "0M86sym9WNtsyA0oMNsh",
+              "file": "voices/terry-r1-0.mp3",
+              "picked": false,
+              "centroid_hz": 1681,
+              "median_hz": 264.5,
+              "p10_hz": 185.4,
+              "p90_hz": 363.6,
+              "voiced": 0.67,
+              "active_s": 6.06,
+              "dur_s": 9.4,
+              "level_db": -22.6,
+              "wps": 3.96
+            },
+            {
+              "id": "nMzclukZhvxKHMA0mChO",
+              "file": "voices/terry-r1-1.mp3",
+              "picked": false,
+              "centroid_hz": 1673,
+              "median_hz": 183.9,
+              "p10_hz": 135.6,
+              "p90_hz": 239.5,
+              "voiced": 0.65,
+              "active_s": 6.18,
+              "dur_s": 8.52,
+              "level_db": -21,
+              "wps": 3.88
+            },
+            {
+              "id": "QYVnyOhINWkNkqg1ho0b",
+              "file": "voices/terry-r1-2.mp3",
+              "picked": false,
+              "centroid_hz": 1366,
+              "median_hz": 195.1,
+              "p10_hz": 132.2,
+              "p90_hz": 320,
+              "voiced": 0.73,
+              "active_s": 5.3,
+              "dur_s": 7.81,
+              "level_db": -23.1,
+              "wps": 4.53
+            }
+          ]
+        },
+        {
+          "view": "viewstate_01m4dp02mffvc8brprtcc69pyg",
+          "previews": [
+            {
+              "id": "WT5dIYan35C9MWsBT7o2",
+              "file": "voices/terry-0.mp3",
+              "picked": false,
+              "centroid_hz": 1687,
+              "median_hz": 228.6,
+              "p10_hz": 77.7,
+              "p90_hz": 407.2,
+              "voiced": 0.5,
+              "active_s": 7.05,
+              "dur_s": 10.37,
+              "level_db": -21.9,
+              "wps": 3.4
+            },
+            {
+              "id": "DgrzLtp7QeKHZo6bnBfM",
+              "file": "voices/terry-1.mp3",
+              "picked": true,
+              "centroid_hz": 1488,
+              "median_hz": 101.9,
+              "p10_hz": 75.1,
+              "p90_hz": 373,
+              "voiced": 0.34,
+              "active_s": 7.33,
+              "dur_s": 10.03,
+              "level_db": -20.4,
+              "wps": 3.27
+            },
+            {
+              "id": "L6is8HIfZ0aFysfoBF5B",
+              "file": "voices/terry-2.mp3",
+              "picked": false,
+              "centroid_hz": 1208,
+              "median_hz": 111.1,
+              "p10_hz": 74.1,
+              "p90_hz": 400,
+              "voiced": 0.49,
+              "active_s": 8.42,
+              "dur_s": 10.45,
+              "level_db": -22.7,
+              "wps": 2.85
+            }
+          ]
+        }
+      ]
+    },
+    "col": {
+      "id": "VxvV8pDrnPCuO2RAfNPT",
+      "name": "Col - RAPTURES",
+      "character": "Col",
+      "gender": "male",
+      "age": "30s",
+      "description": "Male, 30s, English, a smooth warm baritone, freshly shaved and pleased with himself. Hopeful and a little ingratiating, asking for the room at the back; wounded for a moment when refused, then filing it for another attempt.",
+      "text": "Four weeks Thursday. I know. So I was thinking. Given that. The room at the back — No. You haven't heard what I — You want Deborah's room because it's got the aerial.",
+      "why": "The darkest (centroid 949 Hz) and smoothest: warm against Terry's rasp, though both sit near 95 Hz.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dp0b90f0at0cp2qyvcgxmc",
+          "previews": [
+            {
+              "id": "BiHFW8z2ccVz5Y95PDBk",
+              "file": "voices/col-0.mp3",
+              "picked": false,
+              "centroid_hz": 1089,
+              "median_hz": 93.6,
+              "p10_hz": 80.4,
+              "p90_hz": 127,
+              "voiced": 0.65,
+              "active_s": 7,
+              "dur_s": 11.96,
+              "level_db": -19.4,
+              "wps": 4.71
+            },
+            {
+              "id": "JYzEvUZGmVVh95Va8iZf",
+              "file": "voices/col-1.mp3",
+              "picked": false,
+              "centroid_hz": 1102,
+              "median_hz": 97,
+              "p10_hz": 73.2,
+              "p90_hz": 122.1,
+              "voiced": 0.65,
+              "active_s": 7.52,
+              "dur_s": 12.93,
+              "level_db": -18.7,
+              "wps": 4.39
+            },
+            {
+              "id": "VxvV8pDrnPCuO2RAfNPT",
+              "file": "voices/col-2.mp3",
+              "picked": true,
+              "centroid_hz": 949,
+              "median_hz": 90.7,
+              "p10_hz": 75.5,
+              "p90_hz": 109.6,
+              "voiced": 0.66,
+              "active_s": 7.44,
+              "dur_s": 12.36,
+              "level_db": -19.7,
+              "wps": 4.44
+            }
+          ]
+        }
+      ]
+    },
+    "deborah": {
+      "id": "GulyJOEpf2iQEwA0JbBQ",
+      "name": "Deborah - RAPTURES",
+      "character": "Deborah",
+      "gender": "female",
+      "age": "60s",
+      "description": "Female, 60s, English, in a cardigan with her arms folded: born to complain. A dry, lowish, clipped voice, flat aggrieved precision; she timed it and states the figure as proof.",
+      "text": "The pressure's gone again. I'll look at it. It's him upstairs. Forty minutes. It's not him upstairs. Forty. I timed it. Why.",
+      "why": "The lowest (about 148 Hz) and darkest of the three, so she sits apart from Nina (170) and Maureen (242); also the quietest of the three (-24.4 dB), which is worth watching.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dp35aqehdsb74qnx234ejn",
+          "previews": [
+            {
+              "id": "DFkcQmJoSQXhiJaNQ2gA",
+              "file": "voices/deborah-0.mp3",
+              "picked": false,
+              "centroid_hz": 1716,
+              "median_hz": 177.8,
+              "p10_hz": 141.6,
+              "p90_hz": 238.8,
+              "voiced": 0.58,
+              "active_s": 7.16,
+              "dur_s": 12.93,
+              "level_db": -23.4,
+              "wps": 3.07
+            },
+            {
+              "id": "VYvvQJQwLDMfl8SEGjFu",
+              "file": "voices/deborah-1.mp3",
+              "picked": false,
+              "centroid_hz": 1584,
+              "median_hz": 145.5,
+              "p10_hz": 111.1,
+              "p90_hz": 222.2,
+              "voiced": 0.54,
+              "active_s": 6.93,
+              "dur_s": 13.71,
+              "level_db": -22.4,
+              "wps": 3.17
+            },
+            {
+              "id": "GulyJOEpf2iQEwA0JbBQ",
+              "file": "voices/deborah-2.mp3",
+              "picked": true,
+              "centroid_hz": 1425,
+              "median_hz": 147.5,
+              "p10_hz": 126.9,
+              "p90_hz": 250.4,
+              "voiced": 0.57,
+              "active_s": 7.96,
+              "dur_s": 16.2,
+              "level_db": -24.4,
+              "wps": 2.76
+            }
+          ]
+        }
+      ]
+    },
+    "young-man": {
+      "id": "VEkdjbZePBMpRNikFz36",
+      "name": "Young Man - RAPTURES",
+      "character": "the Mugger and the Volunteer",
+      "gender": "male",
+      "age": "early twenties",
+      "description": "Male, early twenties, English, a light nervous tenor. Tight and hurried: wired and considerably more frightened than the person he is robbing; in another mood, a keen volunteer in a lanyard eager to help. The voice cracks slightly under strain.",
+      "text": "Bag. Come on. Come on — Just give it — Let me take that. No. It's heavy. I know. I'll do the upstairs bins! Did them.",
+      "doubling": "The nineteen-year-old mugger (scene 1) and the keen volunteer (scene 2) are played by one voice: three lines each, never in a scene together.",
+      "why": "The first preview stopped after 6 s of a 8 s text; of the other two this has the louder, clearer read (-19.8 dB) and a range of 188 Hz.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dp3dyyfq99jwvpdtnzd9bb",
+          "previews": [
+            {
+              "id": "lvWIFhsbr1MbiTKSEgwr",
+              "file": "voices/young-man-0.mp3",
+              "picked": false,
+              "centroid_hz": 1859,
+              "median_hz": 130.1,
+              "p10_hz": 106,
+              "p90_hz": 166.3,
+              "voiced": 0.33,
+              "active_s": 3.43,
+              "dur_s": 6.35,
+              "level_db": -25.1,
+              "wps": 7.58
+            },
+            {
+              "id": "VEkdjbZePBMpRNikFz36",
+              "file": "voices/young-man-1.mp3",
+              "picked": true,
+              "centroid_hz": 1706,
+              "median_hz": 124,
+              "p10_hz": 108,
+              "p90_hz": 296.3,
+              "voiced": 0.3,
+              "active_s": 5.32,
+              "dur_s": 11.23,
+              "level_db": -19.8,
+              "wps": 4.89
+            },
+            {
+              "id": "yQX8wIHA8stucayBPMzN",
+              "file": "voices/young-man-2.mp3",
+              "picked": false,
+              "centroid_hz": 1983,
+              "median_hz": 125,
+              "p10_hz": 103.6,
+              "p90_hz": 350.5,
+              "voiced": 0.27,
+              "active_s": 7.93,
+              "dur_s": 11.39,
+              "level_db": -24.9,
+              "wps": 3.28
+            }
+          ]
+        }
+      ]
+    },
+    "blue-coat": {
+      "id": "mdtAjZ4ZGxLtj8Wh94vZ",
+      "name": "Man in Blue Coat - RAPTURES",
+      "character": "the man in the blue coat",
+      "gender": "male",
+      "age": "30s",
+      "description": "Male, 30s, Black British, thin, face down on wet tarmac after being tasered, twitching. Barely audible, flat and exhausted, stating a plain fact with no fight left in him.",
+      "text": "You do not have to say anything, but it may harm your defence if you do not mention when questioned something which you later rely on in court. There's no court.",
+      "why": "Lowest pitch (86 Hz), furthest from Ray's 113 Hz in their scene.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dp45adew6amq978srjzgns",
+          "previews": [
+            {
+              "id": "wx2bjBARmKm5UczUmlHf",
+              "file": "voices/blue-coat-0.mp3",
+              "picked": false,
+              "centroid_hz": 1853,
+              "median_hz": 92.5,
+              "p10_hz": 86.5,
+              "p90_hz": 101.1,
+              "voiced": 0.56,
+              "active_s": 8.09,
+              "dur_s": 11.39,
+              "level_db": -20.8,
+              "wps": 3.83
+            },
+            {
+              "id": "mdtAjZ4ZGxLtj8Wh94vZ",
+              "file": "voices/blue-coat-1.mp3",
+              "picked": true,
+              "centroid_hz": 1460,
+              "median_hz": 86,
+              "p10_hz": 80,
+              "p90_hz": 110.7,
+              "voiced": 0.52,
+              "active_s": 8.91,
+              "dur_s": 14.11,
+              "level_db": -19.5,
+              "wps": 3.48
+            },
+            {
+              "id": "yVrqDEjY1ayYLgsncIXX",
+              "file": "voices/blue-coat-2.mp3",
+              "picked": false,
+              "centroid_hz": 1166,
+              "median_hz": 88.9,
+              "p10_hz": 83.8,
+              "p90_hz": 97.7,
+              "voiced": 0.61,
+              "active_s": 7.61,
+              "dur_s": 12.28,
+              "level_db": -18.6,
+              "wps": 4.07
+            }
+          ]
+        }
+      ]
+    },
+    "martin": {
+      "id": "9Vo4wCDSj6XOyFtYl4dG",
+      "name": "Martin - RAPTURES",
+      "character": "Martin",
+      "gender": "male",
+      "age": "40s",
+      "description": "Male, 40s, English. A failed musician, aggrieved rather than grieving: a denim jacket that was correct in 1994, hair long at the back on principle, nothing written in eleven years. Wounded dignity and put-upon pedantry, hesitant and out of practice at talking to people, a little defensive.",
+      "text": "Hello. You knocked. Nobody's knocked. Right. Right. Is that meant to help? In where? Have you got a warrant? It's a collection. It's not — I'm not one of these that just — Whose? Why? I'm coming up with you.",
+      "note": "One line in episode one ('Course.'), a large part from episode four: the preview text is Martin's own lines from the episode-four doorstep board.",
+      "why": "About 133 Hz, the highest of the three, with a wider range (97 Hz): the most expressive, for a talker who is out of practice.",
+      "rounds": [
+        {
+          "view": "viewstate_01m4dp4m7weyctdnwwez5329pj",
+          "previews": [
+            {
+              "id": "opjniD5kVaViijTqnB07",
+              "file": "voices/martin-0.mp3",
+              "picked": false,
+              "centroid_hz": 1385,
+              "median_hz": 125,
+              "p10_hz": 90.4,
+              "p90_hz": 163.3,
+              "voiced": 0.59,
+              "active_s": 8.95,
+              "dur_s": 24.27,
+              "level_db": -21.3,
+              "wps": 4.47
+            },
+            {
+              "id": "9Vo4wCDSj6XOyFtYl4dG",
+              "file": "voices/martin-1.mp3",
+              "picked": true,
+              "centroid_hz": 1321,
+              "median_hz": 133.3,
+              "p10_hz": 91.4,
+              "p90_hz": 188.2,
+              "voiced": 0.56,
+              "active_s": 9.35,
+              "dur_s": 24.84,
+              "level_db": -19.8,
+              "wps": 4.28
+            },
+            {
+              "id": "byVEjj7fVwPbPymja20I",
+              "file": "voices/martin-2.mp3",
+              "picked": false,
+              "centroid_hz": 1106,
+              "median_hz": 127,
+              "p10_hz": 87.9,
+              "p90_hz": 200,
+              "voiced": 0.63,
+              "active_s": 8.85,
+              "dur_s": 21.08,
+              "level_db": -20.7,
+              "wps": 4.52
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
