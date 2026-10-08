@@ -14,7 +14,7 @@ All three shots (87–89) are **16:9, 1920×1080, full-bleed**. **Jack is recast
 ---
 
 87. WIDE — 35mm, static, eye level — the desk lamp, the static.
-The office from a locked seated-height camera: the green-shaded lamp is the only warm light and the CRT's grey static the only moving one. Jack sits at the desk in his soaked charcoal overcoat, hair wet and falling forward, hands dark and unwashed on the desktop beside Daniel Voss's worn green cloth-covered notebook. He does not move.
+Jack's office: the green-shaded lamp is the only warm light, the television's grey static the only thing that moves. Jack sits at the desk in his soaked coat, hair wet and falling forward, his dirty hands on the desk beside Daniel Voss's worn green notebook. He does not move.
 SCRIPT: "The desk lamp. Static on the TV. Jack sits in his wet coat at the desk. He still hasn't washed his hands."
 CAST: Jack
 LIGHT: Low key

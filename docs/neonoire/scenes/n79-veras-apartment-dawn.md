@@ -14,7 +14,7 @@ All three shots (93–95), and coverage shot 286 below, are **16:9, 1920×1080, 
 ---
 
 93. WIDE — 35mm, static, low level — two empty cups.
-The scene 4 master in grey dawn: Vera kneels on the floor at the low table between the two empty ivory cups, turning the notebook's pages. Lamp and television off; the room is lit only by the window.
+Vera's apartment in grey dawn: she kneels at the low table between the two empty cups, turning the notebook's pages. The lamp and the television are off; only the window lights the room.
 SCRIPT: "Vera sits at the low table in the dawn light. Beside her, the two cups from the beginning of the film, both empty now."
 CAST: Vera Voss
 LIGHT: Blue hour
@@ -52,7 +52,7 @@ NOTE: Rhymes with scene 76's shot 86 (the lighter held to her chest) without the
 ---
 
 286. INSERT — 85mm, static, high angle — smoothed flat.
-Grey dawn window light only: looking down over Vera's shoulder at the low table, her two hands — and only her two hands — hold open the creased sheet of cheap lined paper, laborious elderly English, signed T. SAKAI. To the right, exactly two empty ivory cups. The wine-red silk dress sleeve creased at the wrist.
+Over Vera's shoulder at the low table, in grey dawn light: her two hands hold open the creased sheet of cheap lined paper, written in laborious, elderly English and signed T. SAKAI. Beside it, the two empty cups.
 SCRIPT: "It is the letter she threw away. Smoothed flat by someone else's hands."
 CAST: Vera Voss
 LIGHT: Blue hour

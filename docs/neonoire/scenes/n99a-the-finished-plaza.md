@@ -43,13 +43,14 @@ NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — the 
 ---
 
 306. MEDIUM — 35mm, static, eye level — the hoarding.
-Ordinary pedestrians cross the pale paving exactly like the painted people in the model. A strip of new grass and a bench nobody sits on. No hoarding, no readable company slogan, no fountain.
+Ordinary people cross the pale new plaza exactly like the painted figures in the model. A strip of new grass, and a bench nobody sits on.
 SCRIPT: "Real people cross it now, exactly like the painted ones. A strip of new grass. A bench nobody sits on."
 CAST: —
 LIGHT: Natural daylight
 TIME: 8
 ID: neonoire-shot-306
 IMAGE: 306-the-hoarding.jpg
+TITLE: Like the painted ones
 NOTE: INSTALLED 30 September 2026 in the remaining-boards pass, batch 2 — the hoarding is out of the film: the banner that read KUROSE DEVELOPMENT. TOMORROW'S TOKYO. retired with the cut scene 97, and the frame's content is "real people cross it now, exactly like the painted ones" — four or five ordinary pedestrians in winter coats crossing the pale paving, unhurried, the whole company name withheld. No fountain, no hoarding, no readable signage. Delivered 16:9 full-bleed 1920×1080; generated with 305 and 307 in the same session. Production approval pending.
 
 ---

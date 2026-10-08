@@ -54,7 +54,7 @@ IMAGE: 107-her-dead-reporter.jpg
 NOTE: One of the scene's two close-ups, held over "That's Kurose", the lawyers, Jack's confession about Daniel Voss and "Start with my part." She takes the notebook from her drawer on the cut.
 
 110. WIDE — 24mm, static, eye level — not silent.
-The master's camera again. Through the glass wall and past the busy desks and flickering TVs, Jack leans forward, talking, one hand open, while Harada writes in her notebook. We don't hear a word.
+Through the glass wall of the newsroom, past the busy desks and flickering televisions: Jack leans forward, talking, one hand open, while Harada writes in her notebook. We don't hear a word.
 SCRIPT: "We watch him through the glass wall of her office, among the busy desks and flickering televisions: a man, for the first time in twenty years, not silent."
 CAST: Jack, Harada
 LIGHT: Overcast soft

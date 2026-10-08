@@ -21,7 +21,7 @@ IMAGE: 77-the-red-shoe.jpg
 NOTE: Replacement generated from s73/72-the-lost-heel.jpg — same puddle, same shoe, same light. RIGHT shoe lost, LEFT shoe still with Vera elsewhere. No high-angle 85mm product photograph; low level normal-lens patient still life. No second shoe or hand reaching into frame.
 
 80. WIDE — 50mm, static, low level — the empty lounge, her umbrella.
-Return to exactly the low level 80cm camera of the new hotel master. The walnut slatted bar, brass footrail, oxblood stools, olive wall, left piano and rain-streaked window remain in place, but Vera and the pianist have gone. Chairs are up on the lounge tables. The folded pale-blue umbrella still leans against the same empty neighbouring bar stool. One amber table lamp remains; shelf lights are down. No person anywhere.
+The hotel lounge, later: Vera and the pianist are gone and the chairs are up on the tables. The pale-blue umbrella still leans against the bar stool where she left it. One amber lamp is still on. Nobody is left.
 SCRIPT: "The hotel lounge, empty, the chairs up. The pale blue umbrella still leaning against the bar stool."
 CAST: —
 LIGHT: Practical night
@@ -31,7 +31,7 @@ IMAGE: 78-the-empty-lounge.jpg
 NOTE: Replacement generated from s72/69-the-wait.jpg, not the previous lounge study. Same camera position, same umbrella, no new layout. Phone, lighter and glass no longer present; nobody comes to collect the umbrella. A return to the place where she made herself pretty, without an explanatory close-up.
 
 81. WIDE — 50mm, static, low level — the Hive, shut down.
-Low level locked camera at 70cm, normal 50mm lens, square to the intact Hive's old noodle-shop shutter. Its hand-painted sign glows faint amber beneath an ordinary dark glass tower. Rain and quiet architectural layers, no people or silhouettes, no burning wreckage, no demolition.
+The Hive at night: the noodle shop's shutter down, its old hand-painted sign still faintly glowing beneath a dark glass tower. Rain. No one.
 SCRIPT: "The Hive at night, the noodle shop shutter down, its old sign still faintly glowing."
 CAST: —
 LIGHT: Practical night
@@ -51,7 +51,7 @@ IMAGE: 80-the-machine-waits.jpg
 NOTE: Replacement generated in session two from NEW s73/70-not-elegantly-badly.jpg, not a legacy style key. Machine proportions, red side panel, right-hand payment panel, green shutter, kerb and cold light all match the run master. No red shoe relocated to a new puddle or inserted unnecessarily; this is the machine, not a repeat of shot 79.
 
 83. INSERT — 50mm, static, low level — snow in a shop window.
-From a low level locked camera at 70cm, a small old boxy CRT sits inside a dark shop window showing only grey static. Wet glass reflects indistinct empty street architecture, not a person. Enough window frame remains around the television to read as a place, not a floating screen. Restrained muted colour surrounds the grey snow.
+A small old television in a dark shop window, showing only grey static. The wet glass reflects the empty street.
 SCRIPT: "A small television in a shop window, showing only static."
 CAST: —
 LIGHT: Practical night

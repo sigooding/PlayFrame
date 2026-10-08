@@ -14,7 +14,7 @@ The single shot (239) is **16:9, 1920×1080, full-bleed**, numbered in boarding 
 ---
 
 239. WIDE — 35mm, static, eye level — position.
-The back door of the Hive into the rain; the grey sedan beside the pillars, twenty metres, its rear door held open. The DRIVER in his dark coat lifts his wrist to his mouth and murmurs into his sleeve — position. Just before, bowing slightly, he said shitsurei shimasu (excuse me), the phrase the masked man used over Sakai; Mara stops dead, and the word into his sleeve confirms it (script pass of 29 September 2026). Jack looks at the driver; the driver looks at Jack; in that look both men understand. Jack's hand starts to turn Mara back toward the door.
+The back door of the Hive, in the rain. The grey sedan waits by the pillars twenty metres off, its rear door held open. The DRIVER bows slightly: "Shitsurei shimasu." The words the masked man used over Sakai. Mara stops dead. He lifts his wrist and murmurs into his sleeve: "Position." Jack looks at the driver; the driver looks at Jack; both men understand. Jack starts to turn Mara back toward the door.
 SCRIPT: "Jack looks at the driver. The driver looks at Jack. And in that look, both men understand."
 CAST: Jack, Mara Voss
 LIGHT: Practical night

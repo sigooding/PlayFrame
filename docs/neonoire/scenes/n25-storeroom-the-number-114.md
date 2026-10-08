@@ -42,7 +42,7 @@ The master begins with Kaneko bringing rice: Eat / Has anyone come / Nobody come
 ## Coverage pass — 4 October 2026
 
 369. INSERT — 85mm, static, high angle — the drawing.
-The loose pencilled page is held flat under the flour scoop: a floor-level drawing of the bar's underside, a bottle crate, two pairs of shoes and a falling stool. Only the tiny 1:07 and EXCUSE ME are legible; no new writing is introduced.
+Held flat under the flour scoop, a loose page in pencil: the underside of the bar, a bottle crate, two pairs of shoes, a falling stool. Written small beside them: 1:07, and EXCUSE ME.
 SCRIPT: "Beside the futon, held down by a flour scoop: a stack of loose pages covered in pencil."
 CAST: —
 LIGHT: Practical night
@@ -52,7 +52,7 @@ IMAGE: 369-the-drawing.jpg
 NOTE: Coverage pass two (4 October 2026). The drawing is a new insert between 202 and the key exchange, composed to the screenplay's floor-level drawing description. Generated from `s25/200-the-number-114.jpg`, `s2/24-from-the-floor.jpg` and `sheets/mara-hiding.jpg`. Full-size review confirms the only legible writing is **1:07** and **EXCUSE ME**; keep both small block-capital annotations exact. This is the bar seen from the floor of scene 2, drawn on the page now in scene 25—not a new location or person.
 
 370. INSERT — 85mm, static, high angle — the tag reads 114.
-Under the same bare storeroom bulb, Mara's open palm steadies the coin-locker key. The number 114 is legible on the worn oval tag itself; the key blade carries no second number.
+Under the bare storeroom bulb, Mara's open palm holds the coin-locker key. The worn oval tag reads 114.
 SCRIPT: "The number on the worn tag, still legible: 114."
 CAST: Mara Voss
 LIGHT: Practical night

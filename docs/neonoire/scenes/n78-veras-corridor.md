@@ -14,7 +14,7 @@ All three shots (90–92) are **16:9, 1920×1080, full-bleed**. The building is 
 ---
 
 90. WIDE — 35mm, static, eye level — the walkway at dawn.
-A locked camera down the length of the third-floor walkway: steel doors and meters at left, a fluorescent fitting still on, the rusted railing at right dripping in a line of drops, grey rooftops and the elevated line beyond. Vera stands barefoot in her open doorway, still in the red dress, looking down at the plain envelope on the concrete by the mat.
+Down the length of the third-floor walkway at dawn: steel doors and meters, a fluorescent light still on, the rusted railing dripping, grey rooftops and the elevated line beyond. Vera stands barefoot in her open doorway, still in the red dress, looking down at the plain envelope by the mat.
 SCRIPT: "Grey light. An open-air walkway along the third floor. Rain dripping from the railing."
 CAST: Vera Voss
 LIGHT: Blue hour
