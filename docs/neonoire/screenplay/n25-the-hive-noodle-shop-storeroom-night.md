@@ -47,9 +47,7 @@ You drew this.
 MARA
 It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening.
 (beat)
-That's what he said when he came into the bar. "Excuse me." Like a customer. He said it in the lane too, before --
-
-She doesn't finish.
+That's what he said when he came into the bar. "Excuse me." Like a customer.
 
 Jack sets the page down exactly where it was.
 

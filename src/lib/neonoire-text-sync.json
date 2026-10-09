@@ -1,7 +1,8 @@
 {
-  "note": "Corrected shot wording and running order (9 October 2026: scenes 1 and 2's descriptions and titles rewritten to the pictures and the current screenplay; shot 24 moved before the two shots, with the journalist's \"Where is he?\" over it) and the screenplay line of 8 October (scene 86). frames holds, per field, the digests of the values earlier bundles shipped; sceneOrders the frame orders earlier bundles shipped per scene; priorScriptHashes the earlier default screenplays. bundle-refresh replaces a field, a scene's order or the script only while the saved one still matches.",
+  "note": "Corrected shot wording and running order (9 October 2026: scenes 1 and 2's descriptions and titles rewritten to the pictures and the current screenplay; shot 24 moved before the two shots, with the journalist's \"Where is he?\" over it), the screenplay line of 8 October (scene 86) and the story fixes of 9 October (the Hive's height, the red clip going back into Vera's pocket, Mara's lane line, the envelope on the mat, the sedan's open door, with the boards of shots 142, 316 and 377 and scene 78's summary). frames holds, per field, the digests of the values earlier bundles shipped; sceneOrders the frame orders earlier bundles shipped per scene; scenes the digests of earlier scene descriptions; priorScriptHashes the earlier default screenplays. bundle-refresh replaces a field, a scene's order or the script only while the saved one still matches.",
   "priorScriptHashes": [
-    "f6557aa6e9a8553a234071bcd8237ee913dca657738190b006c93b394a794535"
+    "f6557aa6e9a8553a234071bcd8237ee913dca657738190b006c93b394a794535",
+    "59a43c45a1ce91bc81acca0b8d2c339863fe007f869792be42651ec9a93e688b"
   ],
   "frames": {
     "neonoire-shot-377": {
@@ -9,7 +10,11 @@
         "eb4faae1a95d928fbe08e4e24138d5fdf77dd2c635a07e79ab3862673d23034b"
       ],
       "description": [
-        "cebb1ae9d58cc8830d4bca8255503672860d577cb45522c5ebb989a0a16010f1"
+        "cebb1ae9d58cc8830d4bca8255503672860d577cb45522c5ebb989a0a16010f1",
+        "f7e152e64369105b4412a38098eb31f5a439d2e48fd565c7b5c759c5200b6ef0"
+      ],
+      "notes": [
+        "8105905799b2319b90e2f38cf6b45a56f5f40f71a4d77d3cab4b4c747390272f"
       ]
     },
     "neonoire-shot-01": {
@@ -347,6 +352,16 @@
       "description": [
         "a1305bfec501d45ee974edf22ff87bcb9f12139a3c9a3751d76f7a7bbbb4bf82"
       ]
+    },
+    "neonoire-shot-316": {
+      "notes": [
+        "9500d3a0a56ba898a977dd580f64cd0de80fb3f994759432fcc34356b23c8d86"
+      ]
+    },
+    "neonoire-shot-142": {
+      "notes": [
+        "adc28481baf1d858887334b5ba9035c24e6d389bce8cd359ee16024cf3348f4a"
+      ]
     }
   },
   "sceneOrders": {
@@ -365,5 +380,12 @@
         "neonoire-shot-28"
       ]
     ]
+  },
+  "scenes": {
+    "neonoire-s78": {
+      "description": [
+        "3df33cf8242ba20c83a693ed4c878a0b5021d721009c2b86fbe0e341329b8dfc"
+      ]
+    }
   }
 }

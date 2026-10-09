@@ -57,7 +57,7 @@ JACK
 (quietly)
 Why come back?
 
-Jack doesn't answer. He looks down the street at the drains, the doorways, the gutter: everywhere a small thing could fall.
+Nobody answers. He looks down the street at the drains, the doorways, the gutter: everywhere a small thing could fall.
 
 The barber shrugs and pulls the shutter down.
 

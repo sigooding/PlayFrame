@@ -70,7 +70,7 @@ She made it up from what I said. It's not real.
 
 Jack turns a page. The sign, in careful ink. Every stroke of the kanji correct.
 
-He has seen this sign. Twice this week. Once in a photograph on Vera's shelf. Once in a box in his own cupboard.
+He has seen this sign. Twice this week. Once in the photograph from Vera's shelf, on his own desk. Once in a box in his own cupboard.
 
 JACK
 Can I borrow this?

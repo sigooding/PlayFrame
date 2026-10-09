@@ -6487,11 +6487,11 @@
       "id": "s25-mara-it-s-the-only-thing-i",
       "frameId": "neonoire-shot-202",
       "character": "MARA",
-      "text": "It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening. That's what he said when he came into the bar. \"Excuse me.\" Like a customer. He said it in the lane too, before —",
-      "prompt": "It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening. [pause] That's what he said when he came into the bar. \"Excuse me.\" Like a customer. He said it in the lane too, before —",
+      "text": "It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening. That's what he said when he came into the bar. \"Excuse me.\" Like a customer.",
+      "prompt": "It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening. [pause] That's what he said when he came into the bar. \"Excuse me.\" Like a customer.",
       "file": "/audio/neonoire/s25/202-mara-it-s-the-only-thing-i.mp3",
       "offset": 33.06,
-      "duration": 14.84,
+      "duration": 11.95,
       "voice": "2NE3noNVoL0UyxXHLs7w",
       "model": "eleven_v4",
       "generation": {
@@ -6499,7 +6499,13 @@
         "session": "yNuY5UmpZzvIkMSQUfgm",
         "id": "7i6K3gXZbJI7URV91aHH"
       },
-      "status": "take"
+      "status": "take",
+      "trimmed": {
+        "from": 14.84,
+        "at": 11.95,
+        "why": "9 October 2026: the line \"He said it in the lane too, before --\" left the screenplay (the masked men no longer say it in the lane); the take was cut in the pause after \"Like a customer.\"",
+        "archived": "docs/neonoire/voice/archive/202-mara-it-s-the-only-thing-i-v1.mp3"
+      }
     },
     {
       "id": "s6-ishida-name-height-what-she-was-wearing",

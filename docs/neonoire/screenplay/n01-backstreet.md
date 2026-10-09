@@ -45,7 +45,7 @@ EXT. BACKSTREET, KANDA - NIGHT #1#
 
 .INSERT - THE HIVE, REMEMBERED
 
-Night. Rain. A nine-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green. Over it, an old woman's voice, unhurried, speaking to us in English.
+Night. Rain. An eleven-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green. Over it, an old woman's voice, unhurried, speaking to us in English.
 
 KANEKO (V.O.)
 This is how I remember it.

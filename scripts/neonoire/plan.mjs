@@ -229,7 +229,7 @@ export const SCENES = [
     page: "n78-vera-s-apartment-building-corridor-dawn.md", board: "n78-veras-corridor.md",
     cast: ["Vera Voss"],
     grammar: "Grey dawn on the third-floor walkway, rain dripping from the railing. 35mm wide, 50mm doormat, 85mm name. Vera barefoot, still in the red dress, unslept.",
-    description: "Dawn, as revised 30 September 2026. Jack comes to the corridor, does not knock, sets Daniel's notebook on the mat, squares it to the door, and goes. Vera opens her door onto the open-air walkway, still in the red dress, unslept. On the doormat, a plain envelope with no name. Inside, the cloth-covered notebook — and inside its cover, DANIEL VOSS. BOARDED — 4 shots (90–92, and 316, the notebook squared to the door).",
+    description: "Dawn, as revised 30 September 2026. Jack comes to the corridor, does not knock, sets the envelope on the mat, squares it to the door, and goes. Vera opens her door onto the open-air walkway, still in the red dress, unslept. On the doormat, a plain envelope with no name. Inside, the cloth-covered notebook — and inside its cover, DANIEL VOSS. BOARDED — 4 shots (90–92, and 316, the notebook squared to the door).",
     lightingNotes: "Flat grey-blue dawn, no sun; one fluorescent fitting still on over a door. Wet concrete, rusted railing, the elevated line beyond.",
   },
   {

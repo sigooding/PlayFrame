@@ -32,7 +32,10 @@
       "audio": "bfb9378e360caf98aa8da44b0e09673ffad5df0585a470a961ab7361e076cf13"
     },
     "neonoire-shot-202": {
-      "audio": "25cd96baa1177eb0e11ef830ef55cd74447d3c2f1cc990eabdf7b5b7722358d1"
+      "audio": [
+        "25cd96baa1177eb0e11ef830ef55cd74447d3c2f1cc990eabdf7b5b7722358d1",
+        "be0dcce3df9856aec89175993542f5619080d5a6dd58daca747d5fd645e0c534"
+      ]
     },
     "neonoire-shot-291": {
       "audio": "ec10b7712df5a8550c2687793d7c8e013a867c895ab6eaade5471571e154b13f"
