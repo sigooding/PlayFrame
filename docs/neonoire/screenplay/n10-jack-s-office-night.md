@@ -105,7 +105,7 @@ So you'll look.
 JACK
 I'll look.
 
-She gathers the photographs. Leaves the red bird clip where it is. He doesn't give it back, and she doesn't ask.
+She gathers the photographs, and the red bird clip with them. He watches it go back into her pocket. He doesn't ask for it.
 
 At the door, she stops.
 

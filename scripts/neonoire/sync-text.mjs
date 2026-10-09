@@ -8,7 +8,8 @@
 // bundle-refresh replaces that field only while the saved value still matches one of the recorded digests. For every scene whose
 // frames ran in another order, the prior order is recorded; a saved scene still in exactly that order takes the bundle's. For every
 // prior bundle whose screenplay differs, its script digest is recorded, so a workspace still on that text takes the new one and is
-// otherwise treated as current. Earlier entries are kept: a field changed twice keeps both digests (a workspace may hold either).
+// otherwise treated as current. A scene whose description changed is recorded the same way as a frame's field. Earlier entries are
+// kept: a field changed twice keeps both digests (a workspace may hold either).
 // Recorded dialogue has its own fingerprints (scripts/neonoire/sync-voices.mjs).
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -27,6 +28,8 @@ const earlier = existsSync(syncFile) ? JSON.parse(readFileSync(syncFile, "utf8")
 const priorScriptHashes = [...earlier.priorScriptHashes];
 const frames = structuredClone(earlier.frames);
 const sceneOrders = structuredClone(earlier.sceneOrders);
+const scenes = structuredClone(earlier.scenes ?? {});
+const scenesNow = new Map(next.scenes.map(scene => [scene.id, scene]));
 const order = (bundle, sceneId) => bundle.frames.filter(frame => frame.sceneId === sceneId).map(frame => frame.id);
 
 for (const prior of priors) {
@@ -42,6 +45,13 @@ for (const prior of priors) {
       if (!known.includes(value)) frames[old.id] = { ...frames[old.id], [key]: [...known, value] };
     }
   }
+  for (const old of prior.scenes) {
+    const scene = scenesNow.get(old.id);
+    if (!scene || JSON.stringify(old.description ?? null) === JSON.stringify(scene.description ?? null)) continue;
+    const known = scenes[old.id]?.description ?? [];
+    const value = fieldDigest(old.description);
+    if (!known.includes(value)) scenes[old.id] = { description: [...known, value] };
+  }
   for (const scene of next.scenes) {
     const was = order(prior, scene.id), is = order(next, scene.id);
     if (!was.length || JSON.stringify(was) === JSON.stringify(is)) continue;
@@ -52,9 +62,10 @@ for (const prior of priors) {
 }
 
 writeFileSync(syncFile, JSON.stringify({
-  note: "Corrected shot wording and running order (9 October 2026: scenes 1 and 2's descriptions and titles rewritten to the pictures and the current screenplay; shot 24 moved before the two shots, with the journalist's \"Where is he?\" over it) and the screenplay line of 8 October (scene 86). frames holds, per field, the digests of the values earlier bundles shipped; sceneOrders the frame orders earlier bundles shipped per scene; priorScriptHashes the earlier default screenplays. bundle-refresh replaces a field, a scene's order or the script only while the saved one still matches.",
+  note: "Corrected shot wording and running order (9 October 2026: scenes 1 and 2's descriptions and titles rewritten to the pictures and the current screenplay; shot 24 moved before the two shots, with the journalist's \"Where is he?\" over it), the screenplay line of 8 October (scene 86) and the story fixes of 9 October (the Hive's height, the red clip going back into Vera's pocket, Mara's lane line, the envelope on the mat, the sedan's open door, with the boards of shots 142, 316 and 377 and scene 78's summary). frames holds, per field, the digests of the values earlier bundles shipped; sceneOrders the frame orders earlier bundles shipped per scene; scenes the digests of earlier scene descriptions; priorScriptHashes the earlier default screenplays. bundle-refresh replaces a field, a scene's order or the script only while the saved one still matches.",
   priorScriptHashes,
   frames,
   sceneOrders,
+  scenes,
 }, null, 2) + "\n");
-console.log(`${Object.keys(frames).length} frames with corrected text, ${Object.keys(sceneOrders).length} scene order(s), ${priorScriptHashes.length} earlier screenplay(s)`);
+console.log(`${Object.keys(frames).length} frames with corrected text, ${Object.keys(sceneOrders).length} scene order(s), ${Object.keys(scenes).length} scene description(s), ${priorScriptHashes.length} earlier screenplay(s)`);

@@ -53,7 +53,7 @@ The revision opens the scene on Jack's door, not Vera's.
 
 316. MEDIUM CLOSE-UP — 50mm, static, low angle — Squared to the door.
 On the doormat of the third-floor door, a cloth-covered notebook: a hand sets it down and squares it to the panel, and the footsteps go. Grey dawn, dripping railings.
-SCRIPT: "He sets Daniel's notebook on the mat, squares it to the door, and goes."
+SCRIPT: "He sets the envelope on the mat, squares it to the door, and goes."
 CAST: Jack
 LIGHT: Blue hour
 TIME: 6

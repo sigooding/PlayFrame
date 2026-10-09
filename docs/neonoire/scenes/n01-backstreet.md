@@ -259,8 +259,8 @@ NOTE: LANDED 3 OCTOBER 2026 — generated on SAKAI's and the MASKED MEN's sheets
 RETAKE 6 October 2026 (director: the car scene needs redoing; go by the logic of the scene) — the 3 October study had the sedan nose-on inside the lane and the old man standing beside the doorway. Regenerated with the camera crouched in the barbershop doorway (scooter and crates in the left foreground, vending machine right), the old man in the lane between the camera and the men, two silhouetted men walking in, the sedan BROADSIDE across the lane mouth. Earlier study archived as `archive/s1/333-the-white-light--v1.jpg`. Shots 10, 12 and 13 were then retaken by the director in the scarlett-witness checkout (see the bible, item 20); their earlier studies are archived as `archive/s1/10-the-shot--v5.jpg`, `12-masked-man-radio--v4.jpg` and `13-taillights-gone--v5.jpg`.
 
 377. ESTABLISHING — 24mm, static, eye level — the Hive, remembered.
-Night, in cold steady rain: the Hive, a nine-storey block of balconies, laundry and wires wedged between dark glass towers, the railway viaduct curving past its shoulder, a hundred small windows lit amber and fluorescent green. Over it, Kaneko remembers the place in five passages of narration.
-SCRIPT: "Night. Rain. A nine-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green."
+Night, in cold steady rain: the Hive, an eleven-storey block of balconies, laundry and wires wedged between dark glass towers, the railway viaduct curving past its shoulder, a hundred small windows lit amber and fluorescent green. Over it, Kaneko remembers the place in five passages of narration.
+SCRIPT: "Night. Rain. An eleven-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green."
 CAST: —
 LIGHT: Practical night
 TIME: 20

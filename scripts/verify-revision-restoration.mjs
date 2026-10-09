@@ -1,6 +1,6 @@
 // Full-page preservation, not just clipped worksheet summaries.
 import assert from "node:assert/strict";
-import { readFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, mkdirSync } from "node:fs";
 import { createRequire } from "node:module";
 import { build } from "esbuild";
 
@@ -249,7 +249,13 @@ pass("three original voice takes recovered/re-pinned, stale father recollection 
 // still on his stool) moved before the two shots with his "Where is he?" over it, and the 8 October line of scene 86 ("They don't know
 // me.") reaches a workspace still on the default text before it. A field, an order or a script the writer changed is kept.
 const textBefore = JSON.parse(read("docs/neonoire/baseline/text-pre-2026-10-09.json"));
-const preVera = project.script.replace("VERA\nThey don't know me.", "VERA\nI know them.");
+// The story fixes of the same day (item 24) are undone first, so this is exactly the default screenplay before the 8 October line.
+const storyBefore = JSON.parse(read("docs/neonoire/baseline/story-fixes-pre-2026-10-09.json"));
+const preStoryFixes = storyBefore.script.reduce((text, [now, was]) => {
+  assert.equal(text.split(now).length, 2, `the story fix "${now.slice(0, 40)}" is in the bundle's script once`);
+  return text.replace(now, was);
+}, project.script);
+const preVera = preStoryFixes.replace("VERA\nThey don't know me.", "VERA\nI know them.");
 assert.notEqual(preVera, project.script, "the 8 October line is in the bundle's script");
 const s2Order = project.frames.filter(frame => frame.sceneId === "neonoire-s2").map(frame => frame.shotNumber);
 assert.deepEqual(s2Order, [19, 20, 21, 22, 25, 23, 24, 26, 308, 27, 28], "scene 2 plays 24 (him still on his stool) before 26 (the two shots)");
@@ -295,4 +301,44 @@ const customTextPatch = bundledFrameUpdates(customText, project);
 assert.equal(customTextPatch?.script, undefined, "an edited script is never replaced");
 assert.equal(customTextPatch.frames.find(frame => frame.id === "neonoire-shot-27").description, project.frames.find(frame => frame.id === "neonoire-shot-27").description, "but the untouched shot wording is still corrected");
 pass(`a saved workspace on the earlier default takes the 8 October line, the corrected wording of ${Object.keys(textBefore.frames).length} cold-open shots and scene 2's corrected order; a writer's wording, order and script are kept`);
+
+// 9 October 2026, later: seven contradictions fixed in the screenplay (bible item 24): the Hive's height, the red clip, scene 12's
+// "Nobody answers.", the photograph on Jack's desk, the tell no longer said in the lane (Mara's take cut at its pause), the envelope
+// on the mat, the sedan's door already open in 94. A workspace on the default before them takes the script, three quoted beats,
+// shot 377's description, Mara's shorter take and scene 78's summary; anything the writer changed is kept.
+for (const [now] of storyBefore.script) assert(project.script.includes(now), `the bundle's script carries "${now.slice(0, 40)}"`);
+assert(!/He said it in the lane too/.test(project.script) && !/Over a dying man/.test(project.script), "the lane's tell is gone from 25 and 70");
+const mara202 = voice.lines.find(line => line.id === "s25-mara-it-s-the-only-thing-i");
+assert(mara202.text.endsWith("Like a customer.") && mara202.duration < 12.5 && mara202.trimmed?.archived, "Mara's take ends at \"Like a customer.\" and its full take is archived");
+assert(existsSync(mara202.trimmed.archived), "the archived take is on disk");
+assert.equal(project.frames.find(frame => frame.id === "neonoire-shot-202").audio.find(clip => clip.text?.startsWith("It's the only thing"))?.text, mara202.text, "frame 202 carries the shorter take");
+const storyText = () => {
+  const saved = structuredClone(project);
+  saved.script = preStoryFixes;
+  for (const [id, prior] of Object.entries(storyBefore.frames)) {
+    const frame = saved.frames.find(f => f.id === id);
+    for (const [key, value] of Object.entries(prior)) { if (value === null) delete frame[key]; else frame[key] = structuredClone(value); }
+  }
+  for (const [id, prior] of Object.entries(storyBefore.scenes)) Object.assign(saved.scenes.find(scene => scene.id === id), structuredClone(prior));
+  return saved;
+};
+const beforeStory = storyText();
+const storyPatch = bundledFrameUpdates(beforeStory, project);
+assert.equal(storyPatch.script, project.script, "a workspace on the default before the story fixes takes them");
+for (const [id, prior] of Object.entries(storyBefore.frames)) {
+  const got = storyPatch.frames.find(f => f.id === id), want = project.frames.find(f => f.id === id);
+  for (const key of Object.keys(prior)) assert.deepEqual(got[key], want[key], `${id} takes the corrected ${key}`);
+}
+assert.equal(storyPatch.scenes.find(scene => scene.id === "neonoire-s78").description, project.scenes.find(scene => scene.id === "neonoire-s78").description, "scene 78's summary puts the envelope on the mat");
+assert.equal(bundledFrameUpdates({ ...beforeStory, ...storyPatch }, project), null, "the story fixes are idempotent");
+const keptStory = storyText();
+keptStory.scenes.find(scene => scene.id === "neonoire-s78").description = "My own summary.";
+keptStory.frames.find(frame => frame.id === "neonoire-shot-316").notes = "My own note.";
+keptStory.script += "\nWriter's extra line.\n";
+const keptStoryPatch = bundledFrameUpdates(keptStory, project);
+assert.equal(keptStoryPatch?.script, undefined, "an edited script is never replaced");
+assert.equal(keptStoryPatch.scenes?.find(scene => scene.id === "neonoire-s78").description ?? "My own summary.", "My own summary.", "a writer's scene summary is kept");
+assert.equal(keptStoryPatch.frames.find(frame => frame.id === "neonoire-shot-316").notes, "My own note.", "a writer's note is kept");
+assert.equal(keptStoryPatch.frames.find(frame => frame.id === "neonoire-shot-142").notes, project.frames.find(frame => frame.id === "neonoire-shot-142").notes, "while the untouched note beside it is corrected");
+pass(`a saved workspace on the default before the 9 October story fixes takes the screenplay, ${Object.keys(storyBefore.frames).length} frames' corrected fields (Mara's shorter take among them) and scene 78's summary; a writer's summary, note and script are kept`);
 console.log("Full-page revision-restoration checks passed.");

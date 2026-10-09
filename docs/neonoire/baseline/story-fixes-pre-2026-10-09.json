@@ -1,0 +1,172 @@
+{
+  "note": "9 October 2026 story fixes (story bible Part 9 item 24): what the bundle shipped just before them. script holds [now, was] pairs that turn the current screenplay back into the earlier default; frames and scenes the earlier values of every field that changed. scripts/verify-revision-restoration.mjs builds a saved workspace from it and replays the refresh.",
+  "script": [
+    [
+      "An eleven-storey block of balconies",
+      "A nine-storey block of balconies"
+    ],
+    [
+      "She gathers the photographs, and the red bird clip with them. He watches it go back into her pocket. He doesn't ask for it.",
+      "She gathers the photographs. Leaves the red bird clip where it is. He doesn't give it back, and she doesn't ask."
+    ],
+    [
+      "Nobody answers. He looks down the street at the drains",
+      "Jack doesn't answer. He looks down the street at the drains"
+    ],
+    [
+      "Once in the photograph from Vera's shelf, on his own desk.",
+      "Once in a photograph on Vera's shelf."
+    ],
+    [
+      "\"Excuse me.\" Like a customer.\n\n",
+      "\"Excuse me.\" Like a customer. He said it in the lane too, before --\n\nShe doesn't finish.\n\n"
+    ],
+    [
+      "From the floor of a bar, before two shots.",
+      "In the rain. Over a dying man."
+    ],
+    [
+      "He sets the envelope on the mat, squares it to the door, and goes.",
+      "He sets Daniel's notebook on the mat, squares it to the door, and goes."
+    ],
+    [
+      "Its rear door stands open: warm amber light, leather.",
+      "The rear door opens from inside. Warm amber light. Leather."
+    ],
+    [
+      "Ishida stands in the rain. He looks back up",
+      "Ishida stops in the rain. He looks back up"
+    ]
+  ],
+  "frames": {
+    "neonoire-shot-377": {
+      "description": "Night, in cold steady rain: the Hive, a nine-storey block of balconies, laundry and wires wedged between dark glass towers, the railway viaduct curving past its shoulder, a hundred small windows lit amber and fluorescent green. Over it, Kaneko remembers the place in five passages of narration.",
+      "notes": "Image: AI-generated coverage-pass frame (4 October 2026), one of the 20 new frames in shots 369–388 — boards 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388 installed. Coverage pass two (4 October 2026) — fourteen new frames, 369–382, after the first relief pass (364–368): scene 25's pencil drawing and the now-scripted 114 tag; scene 20's Mara single and red-bird clip on the closed sketchbook; scene 27A's Okada at the glass as Vera arrives and Vera reflected in the switched-off CRT; scene 11's receiver settling onto Jack's desk; and scene 36's matching Jack-side payphone intercut. No frame is renumbered or replaced. The corrected 375 desk-only retake is installed; the first 375 generation is retained only in the ignored review artifacts and is not a library alternate. Shot 377 (5 October 2026, scene 1) is the prologue's establishing frame, the Hive remembered at night under Kaneko's narration. Shots 378–382 (6 October 2026, scene 90) board the five rooms of the Hive's escape — the barber's shop, the laundry, the shrine hatch, the plank between two balconies and the pipe gallery — each showing how the residents help. All fourteen are full-bleed 1920×1080 studies, production approval pending. Production approval pending.\n\nPROLOGUE, 5 October 2026 (director: \"both, and in Kaneko's voice\"). A scripted .INSERT at the head of scene 1 carrying KANEKO (V.O.), five takes in English (narration to the audience, unlike her subtitled Japanese in scenes 17 and 20 — a director's call to re-record in Japanese). The frame is a text-to-image draft (no Hive night exterior existed to reuse); it is the film's only Hive exterior with no figure in it. The long hold on one board is the known weak point: a long-hold coverage pass wants slow tracks along the lit windows (flowered wallpaper, a calendar, a mirror) to give scene 99A's \"tracked along the lit windows\" its antecedent. Production approval pending.\n\nSCRIPT — the draft's own words for this shot:\n\"Night. Rain. A nine-storey block of balconies and wires wedged between glass towers, a railway curling around its shoulder, a hundred small windows lit amber and green.\"\n\nWide and patient, sodium orange against sick fluorescent green, cold steady rain and blacks slightly crushed. The camera keeps operating after the violence as though the subject has merely walked out of frame. No flash, no sound design tricks, no score, no reaction cut; the killing is two flat sounds in rain and the scene leaves the street the way the car does.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 20s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 38 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 377; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order."
+    },
+    "neonoire-shot-202": {
+      "audio": [
+        {
+          "id": "s13-kaneko-gruffly-eat",
+          "character": "KANEKO",
+          "text": "Eat.",
+          "src": "/audio/neonoire/s13/181-kaneko-gruffly-eat.mp3",
+          "offset": 0.5,
+          "duration": 1.07,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s13-mara-hesitantly-thank-you-has-anyone-come",
+          "character": "MARA",
+          "text": "Thank you. Has anyone... come? Asking?",
+          "src": "/audio/neonoire/s13/181-mara-hesitantly-thank-you-has-anyone-come.mp3",
+          "offset": 2.22,
+          "duration": 4.68,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s13-kaneko-flatly-nobody-comes-here-who-isn",
+          "character": "KANEKO",
+          "text": "Nobody comes here who isn't lost.",
+          "src": "/audio/neonoire/s13/181-kaneko-flatly-nobody-comes-here-who-isn.mp3",
+          "offset": 7.55,
+          "duration": 2.51,
+          "voice": "vUzt8mUMt5vwWOoJ6szl",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-mr-sakai-said-twenty-years-before",
+          "character": "MARA",
+          "text": "Mr. Sakai said \"twenty years.\" Before they shot him. Like he'd been expecting them for twenty years.",
+          "src": "/audio/neonoire/s25/202-mara-mr-sakai-said-twenty-years-before.mp3",
+          "offset": 10.71,
+          "duration": 7.39,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-he-probably-had",
+          "character": "JACK",
+          "text": "He probably had.",
+          "src": "/audio/neonoire/s25/202-jack-he-probably-had.mp3",
+          "offset": 18.75,
+          "duration": 1.72,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-n009-mara",
+          "character": "MARA",
+          "text": "He knew me. He saw me in the doorway and stopped. And at the end he pressed the key into my hand. \"Don't let them have it.\"",
+          "src": "/audio/neonoire/s25/202-mara-tearfully-he-knew-me-he-saw.mp3",
+          "offset": 21.12,
+          "duration": 9.33,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-you-drew-this",
+          "character": "JACK",
+          "text": "You drew this.",
+          "src": "/audio/neonoire/s25/202-jack-you-drew-this.mp3",
+          "offset": 31.1,
+          "duration": 1.31,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-it-s-the-only-thing-i",
+          "character": "MARA",
+          "text": "It's the only thing I know how to do with it. If I don't put it on paper it just keeps happening. That's what he said when he came into the bar. \"Excuse me.\" Like a customer. He said it in the lane too, before —",
+          "src": "/audio/neonoire/s25/202-mara-it-s-the-only-thing-i.mp3",
+          "offset": 33.06,
+          "duration": 14.84,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-and-then-in-the-bar-the",
+          "character": "MARA",
+          "text": "And then in the bar, the man said, \"Where is he?\" He was waiting for the old man. They were supposed to meet.",
+          "src": "/audio/neonoire/s25/202-mara-and-then-in-the-bar-the.mp3",
+          "offset": 48.55,
+          "duration": 7.39,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-jack-sakai-was-bringing-him-something",
+          "character": "JACK",
+          "text": "Sakai was bringing him something.",
+          "src": "/audio/neonoire/s25/202-jack-sakai-was-bringing-him-something.mp3",
+          "offset": 56.59,
+          "duration": 2.12,
+          "voice": "MZhx7pKflsc0sAwciDEy",
+          "model": "eleven_v4"
+        },
+        {
+          "id": "s25-mara-this",
+          "character": "MARA",
+          "text": "This.",
+          "src": "/audio/neonoire/s25/202-mara-this.mp3",
+          "offset": 59.36,
+          "duration": 0.84,
+          "voice": "2NE3noNVoL0UyxXHLs7w",
+          "model": "eleven_v4"
+        }
+      ]
+    },
+    "neonoire-shot-316": {
+      "notes": "Image: AI-generated 30 September 2026 revision board (shots 308–320), delivered in the remaining-boards pass — boards 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320 of the block installed. Generated under the cold-open fresh pass's rules (30 September 2026): the screenplay text and the CHARACTER SHEETS are the only image references — no scene masters, no earlier frame, no bar or layout sheet attached; the boards' own camera, lens and lighting lines are followed, and every frame is delivered 16:9 full-bleed 1920×1080. No captions, no legible text beyond what the board names, no watermarks. Production approval pending.\n\nScenes 77–79 — the envelope and the notebook (25 September 2026): 16:9 full-bleed (1920×1080), no letterbox. Static, level cameras; 35mm for rooms, 50mm inserts, 85mm for the rare close-up. 35mm Kodak Vision3 500T grain, soft halation, blacks slightly crushed. JACK (48): white American (recast 25 September 2026) — sheets/jack.jpg and jack-face.jpg: lean, long angular face, hollow cheeks, deep-set tired grey-green eyes, dark brown hair swept back and greying at the temples, salt-and-pepper stubble; soaked charcoal knee-length overcoat over an off-white open-collar shirt; hands still dirty and unwashed from the Hive (non-graphic). Not Daniel Voss. JACK'S OFFICE MASTER s77/85-the-desk-lamp.jpg: frosted glass door lettered JACK at left, slept-on brown sofa and blanket, worn wooden desk, green-shaded brass lamp (only warm light), black rotary phone, grey filing cabinets with a small CRT showing static at right, venetian blinds over rain and the elevated railway. THE NOTEBOOK: small, worn, faded dark-green cloth cover, frayed corners, cream pages of neat slanted blue-ink handwriting, DANIEL VOSS in capitals inside the cover; the plain white envelope carries no name. VERA VOSS: sheets/vera.jpg / vera-face.jpg identity; same wine-red silk broad-strap cowl-neck calf-length dress as s72/69-the-wait.jpg, now creased, water-stained and dried stiff; hair dried tangled; faint dried mascara shadows, no fresh tears; BAREFOOT (the left shoe is off indoors from scene 78). CORRIDOR MASTER s78/88-the-walkway.jpg: third-floor open-air walkway of scene 3's old block, steel doors and meters left, rusted dripping railing right, elevated line beyond, flat grey-blue dawn. APARTMENT: s4/33-the-apartment.jpg geometry and apartmentLook, now in dawn window light only; lamp and CRT off; NO paper pendant; umbrella stand EMPTY (the umbrella is at the hotel); exactly two ivory cups, both empty. No invented text beyond the name, no subtitles or watermarks. AI-generated draft studies, not approved coverage.\n\nThe notebook is the one Jack wrapped in newspaper in scene 77 and could not write on: no envelope now, and 'squares it to the door' is the whole man. INSTALLED 30 September 2026 in the remaining-boards pass, batch 1 — screenplay text and the Jack sheet only, no corridor master attached; delivered 16:9 full-bleed 1920×1080. The hand leaves the frame and the coat is already stepping away. Caveat logged: the cloth book reads a little thick at this distance and must not read as a parcel. Production approval pending.\n\nSCRIPT — the draft's own words for this shot:\n\"He sets Daniel's notebook on the mat, squares it to the door, and goes.\"\n\nGrey dawn on the third-floor walkway, rain dripping from the railing. 35mm wide, 50mm doormat, 85mm name. Vera barefoot, still in the red dress, unslept.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 6s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 32 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 316; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order."
+    },
+    "neonoire-shot-142": {
+      "notes": "Image: AI-generated first boarding of scenes 93–96 (26 September 2026), Ishida's last night and the cleared desk, generated with the Ishida sheet, the Kurose scene 83 master and scene 1 and scene 7 frames as references. Production approval pending.\n\nScenes 93–96 — Ishida's last night (26 September 2026): 16:9 full-bleed (1920×1080), no letterbox. STATION EXTERIOR by night in rain (scene 93, master s93/137-he-knows-this-car.jpg): a squat 1980s concrete police station, lit glass entrance, red lamp, a few front steps; a black sedan at the kerb, engine running, wipers beating, echoing the cold open's car (s1/08-sedan-arrives.jpg). BACK SEAT (scene 94, master s94/139-only-tea.jpg): warm amber light, cream leather, rain on the windows; KUROSE held to the scene 83 master (silver hair, dark navy suit and tie) with a small brushed-steel flask, never looking at Ishida. ISHIDA follows sheets/ishida.jpg: charcoal suit, grey open-collar shirt, NO TIE, soaked shoulders. STREET (scene 95): a deliberate rhyme of shot 13 (s1/13-taillights-gone.jpg), taillights smearing red. DETECTIVES' ROOM by MORNING (scene 96): scene 80's room (s80/94-the-long-room.jpg), nearly empty in grey daylight, the SINGLE round black-rim clock (s7/68-the-clock.jpg), the bottom drawer empty (rhyming s7/64-the-bottom-drawer.jpg), and the green-dial radio going into the box; THE YOUNG DETECTIVE (no sheet): Japanese, late twenties, white shirt, dark tie. Nothing is explained. AI-generated draft studies, not approved coverage.\n\nRETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over its own filename, and released from the pin. One of the scene's two close-ups. SCENE-LOGIC CALL: the frame's title and its old description come from the retired line \"Where are we going?\" and from \"Ishida looks out of the window. Tokyo slides past in the rain\" — both cut, and with them the cup in his hands and the legible noodle-shop sign through the glass. The page's beat at this frame is the look back, so the close-up is that: the last thing he does before he gets in. He says nothing and nothing is explained.\n\nSCRIPT — the draft's own words for this shot:\n\"Ishida stops in the rain. He looks back up at the station, at one lit window on the second floor where somebody is still working.\"\n\n24mm for the steps and the rain; 50mm at the open door; 85mm on the cup and the watch. No dialogue, no score, no explanation of the choice; the lit window is the last word the scene gets.\n\nTokyo as a memory that is still happening. The city lights the characters, not the sky: vending machines, shop signs, train windows, fluorescent tubes. Sodium orange against a sick fluorescent green. Soft halation around every light, blacks slightly crushed. It should look like film, and feel like something remembered. Rain is never glamorous — no lightning, no storms, cold, steady, patient rain that turns the streets black and reflective. Wide and patient; close-ups are rare, so they count. Nothing is explained.\n\nTiming: 12s is a working estimate for animatic playback. The draft locks no durations.\n\nGeneration Pass 15 of 39 — ten keyframes at a time, numbered in boarding order. Stable Shot 142; 366 active shots (retired numbers remain gaps); display and playback follow screenplay scene order."
+    }
+  },
+  "scenes": {
+    "neonoire-s78": {
+      "description": "Dawn, as revised 30 September 2026. Jack comes to the corridor, does not knock, sets Daniel's notebook on the mat, squares it to the door, and goes. Vera opens her door onto the open-air walkway, still in the red dress, unslept. On the doormat, a plain envelope with no name. Inside, the cloth-covered notebook — and inside its cover, DANIEL VOSS. BOARDED — 4 shots (90–92, and 316, the notebook squared to the door)."
+    }
+  }
+}

@@ -25,7 +25,7 @@ NOTE: RETAKE LANDED 4 OCTOBER 2026 — regenerated from the rewritten scene over
 
 142. CLOSE-UP — 85mm, static, eye level — where are we going.
 Ishida in the rain, stopped at the kerb beside the open rear door: his shoulders and his grey hair soaked flat, grey open-collar shirt, no tie, the car's amber light drawing one edge along his wet cheek. He is looking back up at the police station, at one lit window on the second floor where somebody is still working.
-SCRIPT: "Ishida stops in the rain. He looks back up at the station, at one lit window on the second floor where somebody is still working."
+SCRIPT: "Ishida stands in the rain. He looks back up at the station, at one lit window on the second floor where somebody is still working."
 CAST: Detective Ishida
 LIGHT: Low key
 TIME: 12

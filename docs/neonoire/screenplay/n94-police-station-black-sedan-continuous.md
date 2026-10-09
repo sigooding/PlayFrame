@@ -11,9 +11,9 @@ EXT. POLICE STATION / INT. BLACK SEDAN - CONTINUOUS #94#
 
 At the foot of the steps, a black sedan waits at the kerb, engine running, wipers going.
 
-The rear door opens from inside. Warm amber light. Leather.
+Its rear door stands open: warm amber light, leather.
 
-Ishida stops in the rain. He looks back up at the station, at one lit window on the second floor where somebody is still working.
+Ishida stands in the rain. He looks back up at the station, at one lit window on the second floor where somebody is still working.
 
 From inside the car, a man's clean hand holds out a cup of tea. The watch from the model.
 

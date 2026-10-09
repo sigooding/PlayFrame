@@ -22,7 +22,7 @@ He says it the way you would to a passenger.
 
 Mara stops dead.
 
-She has heard those words before. In the rain. Over a dying man.
+She has heard those words before. From the floor of a bar, before two shots.
 
 MARA
 (whispering)

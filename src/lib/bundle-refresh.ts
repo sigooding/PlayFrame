@@ -221,6 +221,10 @@ export function bundledFrameUpdates(existing: FilmProject, bundle: Pick<FilmProj
     const arrived = scenesById.get(scene.id);
     let next = scene.number === undefined && arrived?.number ? { ...scene, number: arrived.number } : scene;
     if (arrived && digest(scene.description) === sceneDefaults[scene.id] && arrived.description !== scene.description) next = { ...next, description: arrived.description };
+    // 9 October 2026: a scene description still exactly as an earlier bundle shipped it takes the bundle's (scene 78: the envelope,
+    // not the notebook, goes on the mat). One the writer changed is kept.
+    const retoldScene = (textSync.scenes as Record<string, { description?: string[] }>)[scene.id];
+    if (arrived && retoldScene?.description?.includes(fieldDigest(next.description)) && next.description !== arrived.description) next = { ...next, description: arrived.description };
     const prior = restoredScenes[scene.id];
     if (restoreDefaults && prior && arrived) for (const key of ["description", "location", "title", "time", "characters"] as const) {
       if (prior[key] && fieldDigest(scene[key]) === prior[key] && JSON.stringify(next[key]) !== JSON.stringify(arrived[key])) next = { ...next, [key]: arrived[key] };
